@@ -141,7 +141,14 @@ async function renderSubject(key,tab){
     </div>`;
   document.getElementById('lib-modules').innerHTML='<div class="lib-spinner"></div>';
   try{
-    const url=`${SB_URL}/rest/v1/materiali?materia=eq.${key}&tab=eq.${ct}&attivo=eq.true&order=posizione.asc,creato_il.asc&select=*`;
+    // Per le risorse: usa risorse condivise (fil-contemporanea per filosofia, sto-medievale per storia)
+    let fetchKey=key;
+    if(ct==='interdisciplinare'){
+      const g=MATERIE[key]?.g;
+      if(g==='Filosofia') fetchKey='fil-contemporanea';
+      else if(g==='Storia') fetchKey='sto-medievale';
+    }
+    const url=`${SB_URL}/rest/v1/materiali?materia=eq.${fetchKey}&tab=eq.${ct}&attivo=eq.true&order=posizione.asc,creato_il.asc&select=*`;
     const res=await fetch(url,{headers:{'apikey':SB_KEY,'Authorization':'Bearer '+SB_KEY}});
     const rows=await res.json();
     if(!rows||!rows.length){
@@ -236,7 +243,67 @@ async function delMod(id,key){
   if(!confirm('Eliminare questo materiale?')) return;
   try{const r=await fetch(`${SB_URL}/rest/v1/materiali?id=eq.${id}`,{method:'DELETE',headers:{'apikey':SB_KEY,'Authorization':'Bearer '+SB_KEY,'Prefer':'return=minimal'}});if(r.ok||r.status===204)renderSubject(key);}catch(e){alert('Errore di connessione.');}
 }
-function showCodesGuide(){alert('GESTIONE CODICI — SQL Editor su supabase.com\n\n▸ Tutte le materie:\nINSERT INTO codici (codice, nome, ruolo, materie)\nVALUES (\'MARIO-001\', \'Mario Rossi\', \'studente\', \'all\');\n\n▸ Materie specifiche:\nINSERT INTO codici (codice, nome, ruolo, materie)\nVALUES (\'MARIO-002\', \'Mario Rossi\', \'studente\', \'["fil-antica","fil-moderna"]\');\n\nChiavi:\nfil-antica · fil-medievale · fil-moderna · fil-contemporanea\nsto-preistoria · sto-medievale · sto-moderna · sto-contemporanea\nciv-costituzione · civ-istituzioni\n\n▸ Disabilitare:\nUPDATE codici SET attivo=FALSE WHERE codice=\'MARIO-001\';');}
+function showCodesGuide(){document.getElementById('codes-overlay').classList.add('on');loadCodes();}
+function closeCodesModal(){document.getElementById('codes-overlay').classList.remove('on');}
+async function loadCodes(){
+  const body=document.getElementById('codes-body');
+  body.innerHTML='<div class="lib-spinner"></div>';
+  try{
+    const res=await fetch(SB_URL+'/rest/v1/codici?select=*&order=creato_il.desc',{headers:{'apikey':SB_KEY,'Authorization':'Bearer '+SB_KEY}});
+    const rows=await res.json();
+    if(!rows||!rows.length){body.innerHTML='<p style="text-align:center;color:var(--stone);padding:2rem">Nessun codice ancora creato.</p>';return;}
+    let html='<div class="codes-list">';
+    rows.forEach(r=>{
+      const mat=r.materie==='all'?'Tutte le materie':r.materie;
+      const stato=r.attivo===false?'<span class="code-badge disabled">Disabilitato</span>':'<span class="code-badge active">Attivo</span>';
+      html+=`<div class="code-row">
+        <div class="code-main">
+          <span class="code-val">${r.codice}</span>
+          <span class="code-name">${r.nome}</span>
+          ${stato}
+        </div>
+        <div class="code-meta">${mat} · ${r.ruolo||'studente'}</div>
+        <div class="code-acts">
+          <button class="c-btn" onclick="toggleCode(${r.id},${r.attivo!==false})">${r.attivo===false?'Riattiva':'Disabilita'}</button>
+          <button class="c-btn del" onclick="deleteCode(${r.id})">Elimina</button>
+        </div>
+      </div>`;
+    });
+    html+='</div>';
+    body.innerHTML=html;
+  }catch(e){body.innerHTML='<p style="text-align:center;color:var(--stone);padding:2rem">Errore caricamento.</p>';}
+}
+async function toggleCode(id,isActive){
+  try{
+    await fetch(SB_URL+'/rest/v1/codici?id=eq.'+id,{method:'PATCH',headers:{'apikey':SB_KEY,'Authorization':'Bearer '+SB_KEY,'Content-Type':'application/json','Prefer':'return=minimal'},body:JSON.stringify({attivo:!isActive})});
+    loadCodes();
+  }catch(e){alert('Errore.');}
+}
+async function deleteCode(id){
+  if(!confirm('Eliminare questo codice?')) return;
+  try{
+    await fetch(SB_URL+'/rest/v1/codici?id=eq.'+id,{method:'DELETE',headers:{'apikey':SB_KEY,'Authorization':'Bearer '+SB_KEY,'Prefer':'return=minimal'}});
+    loadCodes();
+  }catch(e){alert('Errore.');}
+}
+async function createCode(){
+  const codice=document.getElementById('new-code').value.trim().toUpperCase();
+  const nome=document.getElementById('new-name').value.trim();
+  const ruolo=document.getElementById('new-role').value;
+  const materie=document.getElementById('new-mat').value;
+  const fb=document.getElementById('code-fb');
+  if(!codice||!nome){fb.textContent='Compila codice e nome.';fb.style.color='#c0392b';return;}
+  fb.textContent='Creazione...';fb.style.color='var(--stone)';
+  try{
+    const res=await fetch(SB_URL+'/rest/v1/codici',{method:'POST',headers:{'apikey':SB_KEY,'Authorization':'Bearer '+SB_KEY,'Content-Type':'application/json','Prefer':'return=minimal'},body:JSON.stringify({codice,nome,ruolo,materie,attivo:true})});
+    if(res.ok||res.status===201){
+      fb.textContent='✓ Codice creato!';fb.style.color='var(--forest)';
+      document.getElementById('new-code').value='';
+      document.getElementById('new-name').value='';
+      setTimeout(()=>{fb.textContent='';loadCodes();},1000);
+    } else throw new Error(res.status);
+  }catch(e){fb.textContent='Errore: '+e.message;fb.style.color='#c0392b';}
+}
 function openPricing(){document.getElementById('pricing-overlay').classList.add('on');}
 function closePricing(){document.getElementById('pricing-overlay').classList.remove('on');}
 function sendContact(){
@@ -265,90 +332,118 @@ function togglePwd(){
     ico.innerHTML='<path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.964-7.178z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>';
   }
 }
+let peekTab='slide';
 function openPeekModal(){
   document.getElementById('peek-overlay').classList.add('on');
-  loadPeekContent();
+  peekTab='slide';
+  loadPeekContent('slide');
 }
 function closePeekModal(){document.getElementById('peek-overlay').classList.remove('on');}
-async function loadPeekContent(){
+function switchPeekTab(tab){
+  peekTab=tab;
+  document.querySelectorAll('.peek-tab').forEach(t=>t.classList.toggle('active',t.dataset.tab===tab));
+  loadPeekContent(tab);
+}
+async function loadPeekContent(tab){
+  if(!tab) tab=peekTab||'slide';
   const body=document.getElementById('peek-body');
   body.innerHTML='<div class="lib-spinner"></div>';
   try{
     const res=await fetch(SB_URL+'/rest/v1/materiali?attivo=eq.true&order=materia.asc,posizione.asc&select=titolo,materia,tipo,tab,link',{headers:{'apikey':SB_KEY,'Authorization':'Bearer '+SB_KEY}});
     const rows=await res.json();
     if(!rows||!rows.length){body.innerHTML='<p style="text-align:center;color:var(--stone);font-size:.85rem;padding:2rem">Nessun contenuto ancora disponibile.</p>';return;}
-    // Sezione compiti separata
+
+    // ── Risorse condivise per gruppo ──
+    const SHARED_RISORSE={
+      'Filosofia': rows.filter(r=>r.materia==='fil-contemporanea'&&(r.tab==='interdisciplinare'||r.tipo==='interdisciplinare'||r.tipo==='link')),
+      'Storia': rows.filter(r=>r.materia==='sto-medievale'&&(r.tab==='interdisciplinare'||r.tipo==='interdisciplinare'||r.tipo==='link')),
+    };
+
     const compiti=rows.filter(r=>r.tab==='compiti'||r.tipo==='compito'||r.tipo==='homework');
-    // Sezione fonti
     const fonti=rows.filter(r=>r.tab==='fonti'||r.tipo==='fonte'||r.tipo==='source');
-    // Sezione risorse
     const risorse=rows.filter(r=>r.tab==='interdisciplinare'||r.tipo==='interdisciplinare'||r.tipo==='link');
-    // Sezione slide approfondite
     const approfondite=rows.filter(r=>r.tab==='esercizi'||r.tipo==='esercizio');
-    // Sezione slide principali
     const materiali=rows.filter(r=>r.tab==='materiali'||['pdf','quiz','video','materiale'].includes(r.tipo));
-    const groups={};
-    materiali.forEach(r=>{if(!groups[r.materia])groups[r.materia]=[];groups[r.materia].push(r);});
+
+    const mkItem=(item,i)=>{
+      const isFeat=i===0;
+      const isOpen=isFeat&&item.link&&item.link!=='#';
+      return `<div class="peek-item${isFeat?' featured':''}">
+        <div class="peek-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="${isFeat?'M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z':'M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z'}"></path></svg></div>
+        <div class="peek-item-title">${item.titolo}</div>
+        ${isOpen?`<a href="${item.link}" target="_blank" rel="noopener" class="peek-item-badge" onclick="event.stopPropagation()">Apri ↗</a>`:'<span class="peek-locked">🔒 riservato</span>'}
+      </div>`;
+    };
+
     let html='';
-    // Blocco slide per materia
-    Object.entries(groups).forEach(([mat,items])=>{
-      const m=MATERIE[mat];if(!m)return;
-      html+=`<div class="peek-subject">`;
-      html+=`<div class="peek-subject-title">${m.l} <span>${m.g}</span></div>`;
-      items.slice(0,4).forEach((item,i)=>{
-        const isFeat=i===0;
-        const isOpen=isFeat&&item.link&&item.link!=='#';
-        html+=`<div class="peek-item${isFeat?' featured':''}">
-          <div class="peek-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="${isFeat?'M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z':'M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z'}"></path></svg></div>
-          <div class="peek-item-title">${item.titolo}</div>
-          ${isOpen?`<a href="${item.link}" target="_blank" rel="noopener" class="peek-item-badge" onclick="event.stopPropagation()">Apri ↗</a>`:'<span class="peek-locked">🔒 riservato</span>'}
-        </div>`;
+
+    if(tab==='slide'){
+      const groups={};
+      materiali.forEach(r=>{if(!groups[r.materia])groups[r.materia]=[];groups[r.materia].push(r);});
+      Object.entries(groups).forEach(([mat,items])=>{
+        const m=MATERIE[mat];if(!m)return;
+        html+=`<div class="peek-subject"><div class="peek-subject-title">${m.l} <span>${m.g}</span></div>`;
+        items.slice(0,3).forEach((item,i)=>{html+=mkItem(item,i);});
+        if(items.length>3)html+=`<div class="peek-more">+ altri ${items.length-3} contenuti...</div>`;
+        html+='</div>';
       });
-      if(items.length>4){html+=`<div style="font-size:.74rem;color:var(--stone-light);padding:.4rem .8rem">+ altri ${items.length-4} contenuti...</div>`;}
-      html+='</div>';
-    });
-    // Blocco fonti
-    if(fonti.length){
-      html+=`<div class="peek-subject"><div class="peek-subject-title" style="background:rgba(154,124,46,.12)">📄 Fonti <span>Tutte le materie</span></div>`;
-      fonti.slice(0,3).forEach((item,i)=>{
-        const isOpen=i===0&&item.link&&item.link!=='#';
-        html+=`<div class="peek-item${i===0?' featured':''}"><div class="peek-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"></path></svg></div><div class="peek-item-title">${item.titolo}</div>${isOpen?`<a href="${item.link}" target="_blank" rel="noopener" class="peek-item-badge" onclick="event.stopPropagation()">Apri ↗</a>`:'<span class="peek-locked">🔒 riservato</span>'}</div>`;
+      if(!html)html='<p style="text-align:center;color:var(--stone);font-size:.85rem;padding:2rem">Nessuna slide disponibile.</p>';
+    } else if(tab==='fonti'){
+      if(fonti.length){
+        const fgroups={};
+        fonti.forEach(r=>{if(!fgroups[r.materia])fgroups[r.materia]=[];fgroups[r.materia].push(r);});
+        Object.entries(fgroups).forEach(([mat,items])=>{
+          const m=MATERIE[mat];if(!m)return;
+          html+=`<div class="peek-subject"><div class="peek-subject-title">${m.l} <span>${m.g}</span></div>`;
+          items.slice(0,3).forEach((item,i)=>{html+=mkItem(item,i);});
+          if(items.length>3)html+=`<div class="peek-more">+ altre ${items.length-3} fonti...</div>`;
+          html+='</div>';
+        });
+      } else html='<p style="text-align:center;color:var(--stone);font-size:.85rem;padding:2rem">Nessuna fonte disponibile.</p>';
+    } else if(tab==='approfondite'){
+      if(approfondite.length){
+        const agroups={};
+        approfondite.forEach(r=>{if(!agroups[r.materia])agroups[r.materia]=[];agroups[r.materia].push(r);});
+        Object.entries(agroups).forEach(([mat,items])=>{
+          const m=MATERIE[mat];if(!m)return;
+          html+=`<div class="peek-subject"><div class="peek-subject-title">${m.l} <span>${m.g}</span></div>`;
+          items.slice(0,3).forEach((item,i)=>{html+=mkItem(item,i);});
+          if(items.length>3)html+=`<div class="peek-more">+ altre ${items.length-3} slide...</div>`;
+          html+='</div>';
+        });
+      } else html='<p style="text-align:center;color:var(--stone);font-size:.85rem;padding:2rem">Nessuna slide approfondita disponibile.</p>';
+    } else if(tab==='risorse'){
+      // Mostra risorse per gruppo condiviso
+      ['Filosofia','Storia'].forEach(gruppo=>{
+        const items=SHARED_RISORSE[gruppo]||[];
+        if(items.length){
+          html+=`<div class="peek-subject"><div class="peek-subject-title">Risorse ${gruppo} <span>${gruppo}</span></div>`;
+          items.forEach((item,i)=>{html+=mkItem(item,i);});
+          html+='</div>';
+        }
       });
-      if(fonti.length>3){html+=`<div style="font-size:.74rem;color:var(--stone-light);padding:.4rem .8rem">+ altre ${fonti.length-3} fonti...</div>`;}
-      html+='</div>';
+      // Risorse non in gruppi condivisi
+      const sharedIds=new Set([...SHARED_RISORSE['Filosofia'],...SHARED_RISORSE['Storia']].map(r=>r.titolo));
+      const altreRisorse=risorse.filter(r=>!sharedIds.has(r.titolo)&&r.materia!=='fil-contemporanea'&&r.materia!=='sto-medievale');
+      if(altreRisorse.length){
+        html+=`<div class="peek-subject"><div class="peek-subject-title">Altre Risorse <span>Educazione Civica</span></div>`;
+        altreRisorse.slice(0,4).forEach((item,i)=>{html+=mkItem(item,i);});
+        html+='</div>';
+      }
+      if(!html)html='<p style="text-align:center;color:var(--stone);font-size:.85rem;padding:2rem">Nessuna risorsa disponibile.</p>';
+    } else if(tab==='compiti'){
+      if(compiti.length){
+        const cgroups={};
+        compiti.forEach(r=>{if(!cgroups[r.materia])cgroups[r.materia]=[];cgroups[r.materia].push(r);});
+        Object.entries(cgroups).forEach(([mat,items])=>{
+          const m=MATERIE[mat];if(!m)return;
+          html+=`<div class="peek-subject"><div class="peek-subject-title">${m.l} <span>${m.g}</span></div>`;
+          items.forEach((item,i)=>{html+=mkItem(item,i);});
+          html+='</div>';
+        });
+      } else html='<div style="text-align:center;padding:2.5rem"><div style="font-size:2rem;margin-bottom:1rem">📝</div><p style="color:var(--stone);font-size:.85rem">Nessun compito assegnato al momento.</p></div>';
     }
-    // Blocco slide approfondite
-    if(approfondite.length){
-      html+=`<div class="peek-subject"><div class="peek-subject-title" style="background:rgba(122,158,117,.12)">🔍 Slide Approfondite <span>Tutte le materie</span></div>`;
-      approfondite.slice(0,3).forEach((item,i)=>{
-        const isOpen=i===0&&item.link&&item.link!=='#';
-        html+=`<div class="peek-item${i===0?' featured':''}"><div class="peek-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"></path></svg></div><div class="peek-item-title">${item.titolo}</div>${isOpen?`<a href="${item.link}" target="_blank" rel="noopener" class="peek-item-badge" onclick="event.stopPropagation()">Apri ↗</a>`:'<span class="peek-locked">🔒 riservato</span>'}</div>`;
-      });
-      if(approfondite.length>3){html+=`<div style="font-size:.74rem;color:var(--stone-light);padding:.4rem .8rem">+ altre ${approfondite.length-3} slide approfondite...</div>`;}
-      html+='</div>';
-    }
-    // Blocco risorse
-    if(risorse.length){
-      html+=`<div class="peek-subject"><div class="peek-subject-title" style="background:rgba(45,90,39,.12)">🔗 Risorse <span>Tutte le materie</span></div>`;
-      risorse.slice(0,3).forEach((item,i)=>{
-        const isOpen=i===0&&item.link&&item.link!=='#';
-        html+=`<div class="peek-item${i===0?' featured':''}"><div class="peek-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"></path></svg></div><div class="peek-item-title">${item.titolo}</div>${isOpen?`<a href="${item.link}" target="_blank" rel="noopener" class="peek-item-badge" onclick="event.stopPropagation()">Apri ↗</a>`:'<span class="peek-locked">🔒 riservato</span>'}</div>`;
-      });
-      if(risorse.length>3){html+=`<div style="font-size:.74rem;color:var(--stone-light);padding:.4rem .8rem">+ altre ${risorse.length-3} risorse...</div>`;}
-      html+='</div>';
-    }
-    // Blocco compiti
-    html+=`<div class="peek-subject"><div class="peek-subject-title" style="background:rgba(200,100,50,.1)">📝 Compiti <span>Tutte le materie</span></div>`;
-    if(compiti.length){
-      compiti.slice(0,3).forEach((item,i)=>{
-        const isOpen=i===0&&item.link&&item.link!=='#';
-        html+=`<div class="peek-item${i===0?' featured':''}"><div class="peek-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10"></path></svg></div><div class="peek-item-title">${item.titolo}</div>${isOpen?`<a href="${item.link}" target="_blank" rel="noopener" class="peek-item-badge" onclick="event.stopPropagation()">Apri ↗</a>`:'<span class="peek-locked">🔒 riservato</span>'}</div>`;
-      });
-      if(compiti.length>3){html+=`<div style="font-size:.74rem;color:var(--stone-light);padding:.4rem .8rem">+ altri ${compiti.length-3} compiti...</div>`;}
-    } else {
-      html+=`<div class="peek-item"><div class="peek-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z"></path></svg></div><div class="peek-item-title" style="color:var(--stone-light);font-style:italic">Nessun compito assegnato al momento</div></div>`;
-    }
-    html+='</div>';
-    body.innerHTML=html||'<p style="text-align:center;color:var(--stone);font-size:.85rem;padding:2rem">Nessun contenuto ancora disponibile.</p>';
+
+    body.innerHTML=html;
   }catch(e){body.innerHTML='<p style="text-align:center;color:var(--stone);font-size:.85rem;padding:2rem">Impossibile caricare i contenuti.</p>';}
 }
