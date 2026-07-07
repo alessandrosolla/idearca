@@ -286,7 +286,8 @@ footer{padding:3rem 6rem;border-top:1px solid var(--border);background:var(--whi
   .contacts-grid{grid-template-columns:1fr}
   footer{padding:2rem 1.5rem;flex-direction:column;align-items:flex-start}
   .lib-layout{grid-template-columns:1fr}.lib-sidebar{display:none}
-  .lib-content-head{padding:1.5rem 1.5rem 0}.modules-wrap{padding:1rem 1.5rem 2rem}
+  .lib-content{min-width:0}
+  .lib-content-head{padding:1.5rem 1.5rem 0;min-width:0}.modules-wrap{padding:1rem 1.5rem 2rem}
   .lib-topbar{padding:.8rem 1rem}.admin-bar{padding:.6rem 1rem}
   .lib-empty,.access-wall{margin:0 1.5rem}
   .mob-select-wrap{display:block}
