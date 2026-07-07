@@ -167,14 +167,16 @@ function openLightbox(src){document.getElementById('lightbox-img').src=src;docum
 
 function initTabsScrollHint(){
   const el=document.querySelector('#lib-head .lib-tabs');
-  const hint=el?.querySelector('.lib-tabs-hint');
+  const hint=document.querySelector('#lib-head .lib-tabs-hint');
   if(!el||!hint) return;
   const update=()=>{
     const atEnd=el.scrollLeft+el.clientWidth>=el.scrollWidth-4;
-    hint.classList.toggle('hide',atEnd);
+    const noOverflow=el.scrollWidth<=el.clientWidth+1;
+    hint.classList.toggle('hide',atEnd||noOverflow);
   };
   update();
   el.addEventListener('scroll',update);
+  window.addEventListener('resize',update);
 }
 
 async function renderSubject(key,tab){
@@ -188,6 +190,7 @@ async function renderSubject(key,tab){
   document.getElementById('lib-head').innerHTML=`
     <div class="lib-breadcrumb">${m.g} · ${m.p}</div>
     <h2 class="lib-content-title">${m.l}</h2>
+    <div class="lib-tabs-wrap">
     <div class="lib-tabs">
       <button class="lib-tab${ct==='materiali'?' active':''}" data-tab="materiali" onclick="switchTab('materiali')">Slide</button>
       <button class="lib-tab${ct==='fonti'?' active':''}" data-tab="fonti" onclick="switchTab('fonti')">Fonti</button>
@@ -195,7 +198,8 @@ async function renderSubject(key,tab){
       <button class="lib-tab${ct==='interdisciplinare'?' active':''}" data-tab="interdisciplinare" onclick="switchTab('interdisciplinare')">Risorse</button>
       <button class="lib-tab${ct==='compiti'?' active':''}" data-tab="compiti" onclick="switchTab('compiti')">Compiti</button>
       ${isAdmin?`<a class="lib-add-link" style="margin-left:auto;font-size:.72rem;color:var(--forest);cursor:pointer;text-decoration:none;display:flex;align-items:center;padding:.6rem 0" onclick="openUploadFor('${key}')">+ Aggiungi</a>`:''}
-      <span class="lib-tabs-hint" aria-hidden="true">›</span>
+    </div>
+    <span class="lib-tabs-hint" aria-hidden="true">›</span>
     </div>`;
   document.getElementById('lib-modules').innerHTML='<div class="lib-spinner"></div>';
   initTabsScrollHint();
