@@ -287,6 +287,8 @@ footer{padding:3rem 6rem;border-top:1px solid var(--border);background:var(--whi
   footer{padding:2rem 1.5rem;flex-direction:column;align-items:flex-start}
   .lib-layout{grid-template-columns:1fr}.lib-sidebar{display:none}
   .lib-content{min-width:0}
+  #page-library,.lib-layout,.lib-content{overflow-x:hidden;max-width:100vw}
+  .lib-tabs{max-width:100%}
   .lib-content-head{padding:1.5rem 1.5rem 0;min-width:0}.modules-wrap{padding:1rem 1.5rem 2rem}
   .lib-topbar{padding:.8rem 1rem}.admin-bar{padding:.6rem 1rem}
   .lib-empty,.access-wall{margin:0 1.5rem}
@@ -332,6 +334,11 @@ footer{padding:3rem 6rem;border-top:1px solid var(--border);background:var(--whi
 .lib-tab{padding:.65rem 1.5rem;font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:var(--stone);cursor:pointer;border:none;background:none;font-family:'Jost',sans-serif;transition:all .2s;border-bottom:2px solid transparent;margin-bottom:-2px}
 .lib-tab:hover{color:var(--forest)}
 .lib-tab.active{color:var(--forest);font-weight:500;border-bottom-color:var(--forest)}
+.lib-tabs-hint{display:none}
+@media(max-width:960px){
+  .lib-tabs{position:relative}
+  .lib-tabs-hint{display:flex;position:absolute;right:0;top:0;bottom:2px;align-items:center;padding-left:1.4rem;background:linear-gradient(to right,rgba(246,243,236,0),var(--cream) 55%);color:var(--gold);pointer-events:none;font-size:1.1rem;font-weight:600}
+}
 .t-fonte{background:#f5edf8;color:#6a2a7a;border:1px solid rgba(106,42,122,.16)}
 .t-esercizio{background:#fff0e6;color:#8a3a00;border:1px solid rgba(138,58,0,.16)}
 .t-interdisciplinare{background:#e8f0fe;color:#1a3a8a;border:1px solid rgba(26,58,138,.16)}
