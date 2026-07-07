@@ -331,6 +331,10 @@
 <div id="page-library">
   <div class="lib-topbar">
     <span class="lib-logo" onclick="logout()">Idea<em>rca</em></span>
+    <div class="lib-search-wrap">
+      <input type="text" id="lib-search-input" class="lib-search-input" placeholder="Cerca in tutti i materiali…" oninput="onSearchInput(this.value)" onfocus="if(this.value.trim().length>=2)document.getElementById('lib-search-results').classList.add('on')">
+      <div id="lib-search-results" class="lib-search-results"></div>
+    </div>
     <div class="lib-topbar-right">
       <div class="lib-user"><div class="lib-avatar" id="lib-avatar">—</div><div class="lib-username"><span>Connesso come</span><strong id="lib-uname">—</strong></div></div>
       <button class="lib-logout" onclick="logout()">Esci</button>
