@@ -8,7 +8,7 @@
   --border:rgba(45,90,39,0.13);--border-gold:rgba(154,124,46,0.2);
   --shadow:0 12px 56px rgba(28,43,26,0.1);--shadow-sm:0 2px 16px rgba(28,43,26,0.06)
 }
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;overflow-x:hidden;max-width:100%}
 body{font-family:'Jost',sans-serif;background:var(--cream);color:var(--ink);overflow-x:hidden}
 .rev{opacity:0;transform:translateY(30px);transition:opacity .8s ease,transform .8s ease}
 .rev.on{opacity:1;transform:none}
@@ -200,7 +200,8 @@ footer{padding:3rem 6rem;border-top:1px solid var(--border);background:var(--whi
 .lib-logo em{color:var(--forest);font-style:normal}
 .lib-topbar-right{display:flex;align-items:center;gap:1.4rem}
 .lib-search-wrap{position:relative;flex:1;max-width:420px;margin:0 2rem}
-.lib-search-input{width:100%;padding:.62rem 1rem;border:1px solid var(--border);border-radius:8px;background:var(--surface);font-size:.85rem;color:var(--ink);font-family:inherit;transition:border-color .2s,background .2s}
+.lib-search-icon{position:absolute;left:.85rem;top:50%;transform:translateY(-50%);color:var(--stone-light);pointer-events:none}
+.lib-search-input{width:100%;padding:.62rem 1rem .62rem 2.5rem;border:1px solid var(--border);border-radius:8px;background:var(--surface);font-size:.85rem;color:var(--ink);font-family:inherit;transition:border-color .2s,background .2s}
 .lib-search-input:focus{outline:none;border-color:var(--gold);background:var(--white)}
 .lib-search-results{display:none;position:absolute;top:calc(100% + 8px);left:0;right:0;background:var(--white);border:1px solid var(--border);border-radius:10px;box-shadow:var(--shadow);max-height:380px;overflow-y:auto;z-index:200}
 .lib-search-results.on{display:block}
@@ -289,6 +290,13 @@ footer{padding:3rem 6rem;border-top:1px solid var(--border);background:var(--whi
   .lib-topbar{padding:.8rem 1rem}.admin-bar{padding:.6rem 1rem}
   .lib-empty,.access-wall{margin:0 1.5rem}
   .mob-select-wrap{display:block}
+  .lib-tabs{overflow-x:auto;-webkit-overflow-scrolling:touch;flex-wrap:nowrap;scrollbar-width:none}
+  .lib-tabs::-webkit-scrollbar{display:none}
+  .lib-tab{flex:0 0 auto;padding:.65rem 1rem;font-size:.68rem;white-space:nowrap}
+  .lib-add-link{flex:0 0 auto;white-space:nowrap;padding-left:1rem}
+  .mod-item{gap:.9rem;padding:1.1rem 1.2rem;flex-wrap:wrap}
+  .mod-body{min-width:0}
+  .mod-title{word-break:break-word}
 }
 
 /* MATERIA MODALS */
