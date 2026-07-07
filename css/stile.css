@@ -199,6 +199,18 @@ footer{padding:3rem 6rem;border-top:1px solid var(--border);background:var(--whi
 .lib-logo:hover{color:var(--forest)}
 .lib-logo em{color:var(--forest);font-style:normal}
 .lib-topbar-right{display:flex;align-items:center;gap:1.4rem}
+.lib-search-wrap{position:relative;flex:1;max-width:420px;margin:0 2rem}
+.lib-search-input{width:100%;padding:.62rem 1rem;border:1px solid var(--border);border-radius:8px;background:var(--surface);font-size:.85rem;color:var(--ink);font-family:inherit;transition:border-color .2s,background .2s}
+.lib-search-input:focus{outline:none;border-color:var(--gold);background:var(--white)}
+.lib-search-results{display:none;position:absolute;top:calc(100% + 8px);left:0;right:0;background:var(--white);border:1px solid var(--border);border-radius:10px;box-shadow:var(--shadow);max-height:380px;overflow-y:auto;z-index:200}
+.lib-search-results.on{display:block}
+.search-result-item{padding:.75rem 1rem;cursor:pointer;border-bottom:1px solid var(--border);transition:background .15s}
+.search-result-item:last-child{border-bottom:none}
+.search-result-item:hover{background:var(--surface)}
+.search-result-title{font-size:.85rem;color:var(--ink);font-weight:500;margin-bottom:.15rem}
+.search-result-meta{font-size:.72rem;color:var(--stone-light)}
+.search-empty{padding:1rem;font-size:.8rem;color:var(--stone-light);text-align:center}
+@media(max-width:900px){.lib-search-wrap{display:none}}
 .lib-user{display:flex;align-items:center;gap:.75rem}
 .lib-avatar{width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,var(--forest),var(--forest-light));display:flex;align-items:center;justify-content:center;font-size:.78rem;font-weight:500;color:var(--white);flex-shrink:0}
 .lib-username{font-size:.8rem;color:var(--stone);line-height:1.2}
