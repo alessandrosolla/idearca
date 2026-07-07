@@ -183,6 +183,7 @@ async function renderSubject(key,tab){
       <button class="lib-tab${ct==='interdisciplinare'?' active':''}" data-tab="interdisciplinare" onclick="switchTab('interdisciplinare')">Risorse</button>
       <button class="lib-tab${ct==='compiti'?' active':''}" data-tab="compiti" onclick="switchTab('compiti')">Compiti</button>
       ${isAdmin?`<a class="lib-add-link" style="margin-left:auto;font-size:.72rem;color:var(--forest);cursor:pointer;text-decoration:none;display:flex;align-items:center;padding:.6rem 0" onclick="openUploadFor('${key}')">+ Aggiungi</a>`:''}
+      <span class="lib-tabs-hint" aria-hidden="true">›</span>
     </div>`;
   document.getElementById('lib-modules').innerHTML='<div class="lib-spinner"></div>';
   try{
