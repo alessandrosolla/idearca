@@ -338,6 +338,7 @@ footer{padding:3rem 6rem;border-top:1px solid var(--border);background:var(--whi
 @media(max-width:960px){
   .lib-tabs{position:relative}
   .lib-tabs-hint{display:flex;position:absolute;right:0;top:0;bottom:2px;align-items:center;padding-left:1.4rem;background:linear-gradient(to right,rgba(246,243,236,0),var(--cream) 55%);color:var(--gold);pointer-events:none;font-size:1.1rem;font-weight:600}
+  .lib-tabs-hint.hide{display:none}
 }
 .t-fonte{background:#f5edf8;color:#6a2a7a;border:1px solid rgba(106,42,122,.16)}
 .t-esercizio{background:#fff0e6;color:#8a3a00;border:1px solid rgba(138,58,0,.16)}
