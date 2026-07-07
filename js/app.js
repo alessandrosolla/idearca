@@ -143,12 +143,18 @@ async function renderSubject(key,tab){
   try{
     // Per le risorse: usa risorse condivise (fil-contemporanea per filosofia, sto-medievale per storia)
     let fetchKey=key;
+    let materiaFilter=`materia=eq.${fetchKey}`;
     if(ct==='interdisciplinare'){
       const g=MATERIE[key]?.g;
       if(g==='Filosofia') fetchKey='fil-contemporanea';
       else if(g==='Storia') fetchKey='sto-medievale';
+      materiaFilter=`materia=eq.${fetchKey}`;
+    } else if(ct==='compiti'){
+      const g=MATERIE[key]?.g;
+      const groupKeys=Object.keys(MATERIE).filter(k=>MATERIE[k].g===g);
+      materiaFilter=`materia=in.(${groupKeys.join(',')})`;
     }
-    const url=`${SB_URL}/rest/v1/materiali?materia=eq.${fetchKey}&tab=eq.${ct}&attivo=eq.true&order=posizione.asc,creato_il.asc&select=*`;
+    const url=`${SB_URL}/rest/v1/materiali?${materiaFilter}&tab=eq.${ct}&attivo=eq.true&order=posizione.asc,creato_il.asc&select=*`;
     const res=await fetch(url,{headers:{'apikey':SB_KEY,'Authorization':'Bearer '+SB_KEY}});
     const rows=await res.json();
     if(!rows||!rows.length){
