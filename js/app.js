@@ -165,6 +165,18 @@ function openMatModal(key){document.getElementById('mat-'+key).classList.add('on
 function closeMatModal(key){document.getElementById('mat-'+key).classList.remove('on');document.body.style.overflow='';}
 function openLightbox(src){document.getElementById('lightbox-img').src=src;document.getElementById('lightbox').classList.add('on');}
 
+function initTabsScrollHint(){
+  const el=document.querySelector('#lib-head .lib-tabs');
+  const hint=el?.querySelector('.lib-tabs-hint');
+  if(!el||!hint) return;
+  const update=()=>{
+    const atEnd=el.scrollLeft+el.clientWidth>=el.scrollWidth-4;
+    hint.classList.toggle('hide',atEnd);
+  };
+  update();
+  el.addEventListener('scroll',update);
+}
+
 async function renderSubject(key,tab){
   currentKey=key;
   if(tab) currentTab=tab;
@@ -186,6 +198,7 @@ async function renderSubject(key,tab){
       <span class="lib-tabs-hint" aria-hidden="true">›</span>
     </div>`;
   document.getElementById('lib-modules').innerHTML='<div class="lib-spinner"></div>';
+  initTabsScrollHint();
   try{
     // Per le risorse: usa risorse condivise (fil-contemporanea per filosofia, sto-medievale per storia)
     let fetchKey=key;
