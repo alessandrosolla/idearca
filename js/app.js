@@ -109,6 +109,51 @@ function navClick(el,key){
   renderSubject(key);
 }
 
+let searchDebounce=null;
+function escHtml(s){return (s||'').replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));}
+function onSearchInput(val){
+  clearTimeout(searchDebounce);
+  const q=val.trim();
+  const box=document.getElementById('lib-search-results');
+  if(q.length<2){box.classList.remove('on');box.innerHTML='';return;}
+  searchDebounce=setTimeout(()=>doSearch(q),300);
+}
+async function doSearch(q){
+  const box=document.getElementById('lib-search-results');
+  box.classList.add('on');
+  box.innerHTML='<div class="lib-spinner"></div>';
+  try{
+    const term=q.replace(/[%,()*]/g,' ').trim();
+    const url=`${SB_URL}/rest/v1/materiali?attivo=eq.true&or=(titolo.ilike.*${encodeURIComponent(term)}*,descrizione.ilike.*${encodeURIComponent(term)}*)&select=*&limit=20`;
+    const res=await fetch(url,{headers:{'apikey':SB_KEY,'Authorization':'Bearer '+SB_KEY}});
+    const rows=await res.json();
+    if(!rows||!rows.length){box.innerHTML=`<div class="search-empty">Nessun risultato per &laquo;${escHtml(q)}&raquo;.</div>`;return;}
+    const TAB_LABEL={materiali:'Slide',fonti:'Fonte',esercizi:'Slide Approfondita',interdisciplinare:'Risorsa',compiti:'Compito'};
+    box.innerHTML=rows.map(r=>{
+      const m=MATERIE[r.materia]||{l:r.materia,g:''};
+      return `<div class="search-result-item" onclick="goToSearchResult('${r.materia}','${r.tab}')">
+        <div class="search-result-title">${escHtml(r.titolo)}</div>
+        <div class="search-result-meta">${m.g?escHtml(m.g)+' · ':''}${escHtml(m.l||r.materia)} · ${TAB_LABEL[r.tab]||r.tab}</div>
+      </div>`;
+    }).join('');
+  }catch(e){
+    box.innerHTML='<div class="search-empty">Errore nella ricerca. Riprova.</div>';
+  }
+}
+function goToSearchResult(materia,tab){
+  document.getElementById('lib-search-results').classList.remove('on');
+  document.getElementById('lib-search-input').value='';
+  document.querySelectorAll('.lib-item').forEach(n=>n.classList.toggle('active',n.dataset.key===materia));
+  const mobSel=document.getElementById('mob-select');if(mobSel)mobSel.value=materia;
+  document.querySelectorAll('.lib-tab').forEach(t=>t.classList.toggle('active',t.dataset.tab===tab));
+  renderSubject(materia,tab);
+  document.getElementById('lib-head')?.scrollIntoView({behavior:'smooth',block:'start'});
+}
+document.addEventListener('click',e=>{
+  const wrap=document.querySelector('.lib-search-wrap');
+  if(wrap&&!wrap.contains(e.target)) document.getElementById('lib-search-results')?.classList.remove('on');
+});
+
 let currentKey=null,currentTab='materiali';
 const TAB_TYPES={materiali:['pdf','quiz','video','materiale'],fonti:['fonte','source'],esercizi:['esercizio','exercise'],interdisciplinare:['interdisciplinare','link'],compiti:['compito','homework']};
 function switchTab(tab){
