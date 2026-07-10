@@ -104,6 +104,7 @@ function buildNav(keys){
     ks.forEach(k=>{html+=`<div class="lib-item${first?' active':''}" data-key="${k}" onclick="navClick(this,'${k}')"><span class="lib-dot"></span>${MATERIE[k].l}</div>`;first=false;});
     html+='</div>';
   });
+  html+=`<div class="lib-group"><div class="lib-group-title">Strumenti</div><div class="lib-item" data-key="__map__" onclick="navClick(this,'__map__')"><span class="lib-dot"></span>Mappa Storica</div></div>`;
   document.getElementById('lib-nav').innerHTML=html;
 }
 function buildMobSelect(keys){
@@ -115,17 +116,34 @@ function buildMobSelect(keys){
     if(i===0) opt.selected=true;
     sel.appendChild(opt);
   });
+  const mapOpt=document.createElement('option');
+  mapOpt.value='__map__';mapOpt.textContent='🗺️ Mappa Storica';
+  sel.appendChild(mapOpt);
 }
 function mobChange(key){
   if(!key) return;
   document.querySelectorAll('.lib-item').forEach(n=>{n.classList.toggle('active',n.dataset.key===key);});
+  if(key==='__map__'){showMapView();return;}
+  hideMapView();
   renderSubject(key);
 }
 function navClick(el,key){
   document.querySelectorAll('.lib-item').forEach(n=>n.classList.remove('active'));
   el.classList.add('active');
   document.getElementById('mob-select').value=key;
+  if(key==='__map__'){showMapView();return;}
+  hideMapView();
   renderSubject(key);
+}
+function showMapView(){
+  document.getElementById('lib-content-head').style.display='none';
+  document.getElementById('lib-modules').style.display='none';
+  document.getElementById('lib-map-view').style.display='block';
+}
+function hideMapView(){
+  document.getElementById('lib-content-head').style.display='';
+  document.getElementById('lib-modules').style.display='';
+  document.getElementById('lib-map-view').style.display='none';
 }
 
 let searchDebounce=null;
