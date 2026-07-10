@@ -52,15 +52,18 @@ const IB_STRUCTURE={
 let ibArea='focused',ibOption=null;
 
 function openTracks(){
+  const s=JSON.parse(sessionStorage.getItem('ix')||'{}');
+  if(s.ruolo!=='docente')return; // accessibile solo in modalità docente
   document.getElementById('page-home').style.display='none';
+  document.getElementById('page-library').style.display='none';
   document.getElementById('page-tracks').style.display='block';
   document.documentElement.setAttribute('data-mode','intl');
   window.scrollTo(0,0);
 }
-function closeTracksToHome(){
+function exitIntlToLibrary(){
   document.getElementById('page-tracks').style.display='none';
   document.getElementById('page-ib').style.display='none';
-  document.getElementById('page-home').style.display='block';
+  document.getElementById('page-library').style.display='block';
   document.documentElement.removeAttribute('data-mode');
   window.scrollTo(0,0);
 }
