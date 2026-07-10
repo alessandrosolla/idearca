@@ -410,10 +410,6 @@ html[data-theme="dark"] .theme-toggle .icon-moon{display:block}
 .peek-locked{font-size:.75rem;color:var(--stone-light);letter-spacing:.06em}
 
 /* ── PERCORSI INTERNAZIONALI (IB / English / AP) ── */
-.nav-intl-btn{display:flex;align-items:center;gap:.4rem;padding:.5rem 1.1rem;border-radius:20px;border:none;background:var(--forest);color:var(--white);font-family:'Jost',sans-serif;font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;transition:all .25s;margin-left:.7rem;white-space:nowrap}
-.nav-intl-btn:hover{background:var(--forest-deep);transform:translateY(-1px);box-shadow:0 4px 16px rgba(45,90,39,.25)}
-.nav-intl-btn svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:2;flex-shrink:0}
-@media(max-width:960px){.nav-intl-btn span{display:none}.nav-intl-btn{padding:.5rem;border-radius:50%}}
 
 .track-badge{font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;padding:.22rem .7rem;border-radius:20px;font-weight:500;display:inline-block;margin-bottom:.8rem}
 .track-badge.available{background:var(--gold-pale);color:var(--gold);border:1px solid var(--border-gold)}
