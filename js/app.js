@@ -73,8 +73,27 @@ function showLibrary(){
   const keys=getKeys(s.materie);
   buildNav(keys);
   buildMobSelect(keys);
+  loadLibStats(keys);
   if(keys.length) renderSubject(keys[0]);
   else document.getElementById('lib-modules').innerHTML='<div class="lib-empty">Nessuna materia disponibile.</div>';
+}
+async function loadLibStats(keys){
+  const elDesk=document.getElementById('lib-stats'),elMob=document.getElementById('lib-stats-mob');
+  if(!elDesk&&!elMob) return;
+  try{
+    const inList=keys.join(',');
+    const url=`${SB_URL}/rest/v1/materiali?materia=in.(${inList})&attivo=eq.true&select=materia`;
+    const res=await fetch(url,{headers:{'apikey':SB_KEY,'Authorization':'Bearer '+SB_KEY}});
+    const rows=await res.json();
+    const totale=rows.length;
+    const materieCoperte=new Set(rows.map(r=>r.materia)).size;
+    const testo=`${totale} document${totale===1?'o':'i'} · ${materieCoperte} materi${materieCoperte===1?'a':'e'} cop${materieCoperte===1?'erta':'erte'}`;
+    if(elDesk)elDesk.textContent=testo;
+    if(elMob)elMob.textContent=testo;
+  }catch(e){
+    if(elDesk)elDesk.textContent='';
+    if(elMob)elMob.textContent='';
+  }
 }
 function buildNav(keys){
   const groups={};
@@ -208,7 +227,7 @@ async function renderSubject(key,tab){
     </div>
     <span class="lib-tabs-hint" aria-hidden="true">›</span>
     </div>`;
-  document.getElementById('lib-modules').innerHTML='<div class="lib-spinner"></div>';
+  document.getElementById('lib-modules').innerHTML=Array(4).fill('<div class="skel-item"><div class="skel-bar skel-num"></div><div class="skel-bar skel-title"></div><div class="skel-bar skel-badge"></div></div>').join('');
   initTabsScrollHint();
   try{
     // Per le risorse: usa risorse condivise (fil-contemporanea per filosofia, sto-medievale per storia)
