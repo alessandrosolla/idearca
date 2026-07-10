@@ -136,12 +136,12 @@ function navClick(el,key){
   renderSubject(key);
 }
 function showMapView(){
-  document.getElementById('lib-content-head').style.display='none';
+  document.getElementById('lib-head').style.display='none';
   document.getElementById('lib-modules').style.display='none';
   document.getElementById('lib-map-view').style.display='block';
 }
 function hideMapView(){
-  document.getElementById('lib-content-head').style.display='';
+  document.getElementById('lib-head').style.display='';
   document.getElementById('lib-modules').style.display='';
   document.getElementById('lib-map-view').style.display='none';
 }
