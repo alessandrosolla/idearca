@@ -14,6 +14,126 @@ const MATERIE={
   'civ-istituzioni':{g:'Educazione Civica',l:'Istituzioni e Cittadinanza',p:'Italia ed Europa'},
 };
 const BADGE={pdf:{c:'t-pdf',l:'PDF'},quiz:{c:'t-quiz',l:'Quiz'},video:{c:'t-video',l:'Video'}};
+
+/* ══════════════════════════════════════════════════════════
+   PERCORSI INTERNAZIONALI — IB Diploma Programme (History)
+   Struttura ufficiale: Subject Brief, first assessment 2028.
+   Le "cases" (casi di studio) sono vuote di proposito: la scelta
+   dei contenuti storici è una decisione editoriale (fase 3),
+   non strutturale. Un solo esempio è marcato placeholder:true
+   solo per mostrare come si comporta la timeline una volta
+   che i contenuti reali vengono aggiunti.
+   ══════════════════════════════════════════════════════════ */
+const IB_STRUCTURE={
+  focused:{label:'Focused study',hours:50,options:{
+    'protest-change':{label:'Protest and change',cases:[
+      {key:'example',label:'Example case study (replace with your topic)',start:1948,end:1994,placeholder:true}
+    ]},
+    'independence-identity':{label:'Independence and identity',cases:[]},
+    'political-economic':{label:'Political and economic transitions',cases:[]},
+    'conflict-displacement':{label:'Conflict and displacement',cases:[]},
+    'climate-innovation':{label:'Climate and innovation',cases:[]}
+  }},
+  thematic:{label:'Thematic study',hours:80,options:{
+    'conflict':{label:'Conflict',note:'from 750 CE',cases:[]},
+    'innovation-transformation':{label:'Innovation and transformation',note:'from 750 CE',cases:[]},
+    'authoritarian-rule':{label:'Authoritarian rule',note:'from 1750 CE',cases:[]},
+    'popular-movements':{label:'Popular movements',note:'from 1750 CE',cases:[]}
+  }},
+  regional:{label:'Regional study',hours:90,hlOnly:true,options:{
+    'africa-me':{label:'Africa and the Middle East',cases:[]},
+    'americas':{label:'The Americas',cases:[]},
+    'asia-oceania':{label:'Asia and Oceania',cases:[]},
+    'europe':{label:'Europe',cases:[]}
+  }},
+  investigation:{label:'Historical investigation',hours:20,isIA:true,
+    desc:'A 2,200-word independent inquiry (the IA). Students formulate a historical question, identify and evaluate sources, and synthesize evidence into an argument. Internally assessed by the teacher, externally moderated by the IB.'}
+};
+let ibArea='focused',ibOption=null;
+
+function openTracks(){
+  document.getElementById('page-home').style.display='none';
+  document.getElementById('page-tracks').style.display='block';
+  document.documentElement.setAttribute('data-mode','intl');
+  window.scrollTo(0,0);
+}
+function closeTracksToHome(){
+  document.getElementById('page-tracks').style.display='none';
+  document.getElementById('page-ib').style.display='none';
+  document.getElementById('page-home').style.display='block';
+  document.documentElement.removeAttribute('data-mode');
+  window.scrollTo(0,0);
+}
+function openIBPage(){
+  document.getElementById('page-tracks').style.display='none';
+  document.getElementById('page-ib').style.display='block';
+  ibArea='focused';ibOption=null;
+  renderIBAreaTabs();
+  renderIBOptions();
+  window.scrollTo(0,0);
+}
+function backToTracks(){
+  document.getElementById('page-ib').style.display='none';
+  document.getElementById('page-tracks').style.display='block';
+  window.scrollTo(0,0);
+}
+function renderIBAreaTabs(){
+  const wrap=document.getElementById('ib-area-tabs');
+  wrap.innerHTML=Object.entries(IB_STRUCTURE).map(([key,a])=>
+    `<button class="lib-tab${ibArea===key?' active':''}" data-tab="${key}" onclick="selectIBArea('${key}')">${a.label}${a.hlOnly?' <span class="ib-hl-note">(HL)</span>':''}</button>`
+  ).join('');
+}
+function selectIBArea(key){
+  ibArea=key;ibOption=null;
+  renderIBAreaTabs();
+  renderIBOptions();
+}
+function renderIBOptions(){
+  const area=IB_STRUCTURE[ibArea];
+  const row=document.getElementById('ib-options-row');
+  if(area.isIA){row.innerHTML='';renderIBCases();return;}
+  const keys=Object.keys(area.options);
+  if(!ibOption||!area.options[ibOption])ibOption=keys[0];
+  row.innerHTML=keys.map(key=>{
+    const o=area.options[key];
+    const active=ibOption===key;
+    return `<span class="tag ib-opt${active?' active':''}" onclick="selectIBOption('${key}')">${o.label}${o.note?' · '+o.note:''}</span>`;
+  }).join('');
+  renderIBCases();
+}
+function selectIBOption(key){
+  ibOption=key;
+  renderIBOptions();
+}
+function renderIBCases(){
+  const wrap=document.getElementById('ib-cases-wrap');
+  const area=IB_STRUCTURE[ibArea];
+  if(area.isIA){
+    wrap.innerHTML=`<div class="lib-empty" style="border-style:solid">${area.desc}</div>`;
+    return;
+  }
+  const opt=area.options[ibOption];
+  if(!opt.cases||!opt.cases.length){
+    wrap.innerHTML=`<div class="lib-empty">No case studies added yet for &laquo;${opt.label}&raquo;.</div>`;
+    return;
+  }
+  wrap.innerHTML=opt.cases.map(c=>`
+    <div class="mod-item" style="cursor:default;flex-direction:column;align-items:stretch;gap:.4rem">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:1rem">
+        <div>
+          <div class="lib-breadcrumb" style="margin-bottom:.3rem">${area.label} · ${opt.label}</div>
+          <div class="mod-title">${c.label}</div>
+        </div>
+        ${c.placeholder?'<span class="ib-example-tag">example</span>':''}
+      </div>
+      <div class="ib-timeline">
+        <span class="ib-timeline-year start">${c.start}</span>
+        <div class="ib-timeline-bar"><span class="ib-timeline-dot start"></span><span class="ib-timeline-dot end"></span></div>
+        <span class="ib-timeline-year end">${c.end}</span>
+      </div>
+    </div>`).join('');
+}
+
 const go=id=>document.getElementById(id)?.scrollIntoView({behavior:'smooth'});
 function initReveal(){const obs=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('on');obs.unobserve(x.target)}}),{threshold:.1});document.querySelectorAll('.rev,.rev-l,.rev-r').forEach(el=>obs.observe(el));}
 function initParticles(){const c=document.getElementById('particles');if(!c)return;for(let i=0;i<20;i++){const p=document.createElement('div');p.className='particle';const s=Math.random()*5+2;p.style.cssText=`width:${s}px;height:${s}px;left:${Math.random()*100}%;animation-duration:${Math.random()*18+14}s;animation-delay:${Math.random()*16}s`;c.appendChild(p);}}
