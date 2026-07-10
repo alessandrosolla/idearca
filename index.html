@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Idearca — Filosofia, Storia &amp; Educazione Civica</title>
 <script>try{var t=localStorage.getItem('idearca-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
-<link rel="stylesheet" href="css/stile.css?v=10">
+<link rel="stylesheet" href="css/stile.css?v=11">
 </head>
 <body style="">
 <div id="page-home">
@@ -18,6 +18,10 @@
     <li><a onclick="openPricing()">Accesso</a></li>
   </ul>
   <button class="nav-cta" onclick="scrollToLogin()">Area studenti</button>
+  <button class="nav-intl-btn" onclick="openTracks()" title="International pathways · for recruiters">
+    <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke-linecap="round"></circle><path d="M3 12h18M12 3c2.5 2.5 3.8 5.7 3.8 9s-1.3 6.5-3.8 9c-2.5-2.5-3.8-5.7-3.8-9s1.3-6.5 3.8-9z" stroke-linecap="round"></path></svg>
+    <span>International</span>
+  </button>
   <button class="theme-toggle" id="theme-toggle-home" onclick="toggleTheme()" aria-label="Cambia tema" title="Cambia tema" style="margin-left:.8rem">
     <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>
     <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path></svg>
@@ -333,6 +337,70 @@
     <div id="up-fb" style="margin-top:.7rem;font-size:.78rem;min-height:1rem"></div>
   </div>
 </div>
+<!-- PAGINA SELEZIONE PERCORSO INTERNAZIONALE -->
+<div id="page-tracks" style="display:none;min-height:100vh">
+  <div class="lib-topbar">
+    <span class="lib-logo" onclick="closeTracksToHome()">Idea<em>rca</em></span>
+    <div class="lib-topbar-right">
+      <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme" title="Toggle theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path></svg>
+      </button>
+      <button class="lib-logout" onclick="closeTracksToHome()">← Italiano</button>
+    </div>
+  </div>
+  <section class="section" style="padding:5rem 6rem">
+    <div class="sec-head"><div><span class="sec-eye">International pathways</span><h2 class="sec-title">Choose a curriculum</h2></div></div>
+    <div class="materie-grid">
+      <div class="m-card" onclick="openIBPage()" style="cursor:pointer">
+        <span class="track-badge available">Available</span>
+        <span class="m-period">History · IB Diploma Programme</span>
+        <h3 class="m-name">IB School</h3>
+        <p class="m-desc">Focused, thematic and regional studies, built directly on the DP History curriculum — first assessment 2028.</p>
+        <div class="m-tags"><span class="tag">Sources</span><span class="tag">Essays</span><span class="tag">Investigation</span></div>
+        <p style="font-size:.75rem;color:var(--forest);margin-top:1rem;font-weight:500">Enter →</p>
+      </div>
+      <div class="m-card disabled">
+        <span class="track-badge soon">Coming soon</span>
+        <span class="m-period">National curriculum</span>
+        <h3 class="m-name">English School</h3>
+        <p class="m-desc">UK-style curriculum pathway — currently in preparation.</p>
+      </div>
+      <div class="m-card disabled">
+        <span class="track-badge soon">Coming soon</span>
+        <span class="m-period">United States</span>
+        <h3 class="m-name">AP School · USA</h3>
+        <p class="m-desc">Advanced Placement pathway — currently in preparation.</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- PAGINA IB HISTORY -->
+<div id="page-ib" style="display:none;min-height:100vh;background:var(--cream)">
+  <div class="lib-topbar">
+    <span class="lib-logo" onclick="backToTracks()">Idea<em>rca</em></span>
+    <div class="lib-topbar-right">
+      <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme" title="Toggle theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path></svg>
+      </button>
+      <button class="lib-logout" onclick="backToTracks()">← Pathways</button>
+    </div>
+  </div>
+  <div class="lib-content-head" style="padding:2.8rem 4rem 0">
+    <div class="lib-breadcrumb">IB Diploma Programme</div>
+    <h2 class="lib-content-title">History</h2>
+    <div class="lib-tabs-wrap">
+      <div class="lib-tabs" id="ib-area-tabs"></div>
+    </div>
+  </div>
+  <div class="modules-wrap" style="padding:1.2rem 4rem 3rem">
+    <div id="ib-options-row" style="display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1.5rem"></div>
+    <div id="ib-cases-wrap" class="mod-list"></div>
+  </div>
+</div>
+
 <div id="page-library">
   <div class="lib-topbar">
     <span class="lib-logo" onclick="logout()">Idea<em>rca</em></span>
@@ -414,7 +482,7 @@
     <div id="codes-body" style="padding:0 2rem 2rem;max-height:40vh;overflow-y:auto"></div>
   </div>
 </div>
-<script src="js/app.js?v=9"></script>
+<script src="js/app.js?v=10"></script>
 
 
 
