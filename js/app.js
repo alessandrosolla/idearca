@@ -18,38 +18,37 @@ const BADGE={pdf:{c:'t-pdf',l:'PDF'},quiz:{c:'t-quiz',l:'Quiz'},video:{c:'t-vide
 /* ══════════════════════════════════════════════════════════
    PERCORSI INTERNAZIONALI — IB Diploma Programme (History)
    Struttura ufficiale: Subject Brief, first assessment 2028.
-   Le "cases" (casi di studio) sono vuote di proposito: la scelta
-   dei contenuti storici è una decisione editoriale (fase 3),
-   non strutturale. Un solo esempio è marcato placeholder:true
-   solo per mostrare come si comporta la timeline una volta
-   che i contenuti reali vengono aggiunti.
+   Questo oggetto contiene SOLO la forma del curriculum (aree,
+   ore, opzioni) — è metadato fisso, non contenuto. Il contenuto
+   vero (casi, guide, fonti) vive in Supabase, tabella `materiali`,
+   con programma='ib' e materia="ib:<area>" o "ib:<area>:<opzione>".
    ══════════════════════════════════════════════════════════ */
 const IB_STRUCTURE={
+  guide:{label:'Course guide',noOptions:true,isGuide:true},
   focused:{label:'Focused study',hours:50,options:{
-    'protest-change':{label:'Protest and change',cases:[
-      {key:'example',label:'Example case study (replace with your topic)',start:1948,end:1994,placeholder:true}
-    ]},
-    'independence-identity':{label:'Independence and identity',cases:[]},
-    'political-economic':{label:'Political and economic transitions',cases:[]},
-    'conflict-displacement':{label:'Conflict and displacement',cases:[]},
-    'climate-innovation':{label:'Climate and innovation',cases:[]}
+    'protest-change':{label:'Protest and change'},
+    'independence-identity':{label:'Independence and identity'},
+    'political-economic':{label:'Political and economic transitions'},
+    'conflict-displacement':{label:'Conflict and displacement'},
+    'climate-innovation':{label:'Climate and innovation'}
   }},
   thematic:{label:'Thematic study',hours:80,options:{
-    'conflict':{label:'Conflict',note:'from 750 CE',cases:[]},
-    'innovation-transformation':{label:'Innovation and transformation',note:'from 750 CE',cases:[]},
-    'authoritarian-rule':{label:'Authoritarian rule',note:'from 1750 CE',cases:[]},
-    'popular-movements':{label:'Popular movements',note:'from 1750 CE',cases:[]}
+    'conflict':{label:'Conflict',note:'from 750 CE'},
+    'innovation-transformation':{label:'Innovation and transformation',note:'from 750 CE'},
+    'authoritarian-rule':{label:'Authoritarian rule',note:'from 1750 CE'},
+    'popular-movements':{label:'Popular movements',note:'from 1750 CE'}
   }},
   regional:{label:'Regional study',hours:90,hlOnly:true,options:{
-    'africa-me':{label:'Africa and the Middle East',cases:[]},
-    'americas':{label:'The Americas',cases:[]},
-    'asia-oceania':{label:'Asia and Oceania',cases:[]},
-    'europe':{label:'Europe',cases:[]}
+    'africa-me':{label:'Africa and the Middle East'},
+    'americas':{label:'The Americas'},
+    'asia-oceania':{label:'Asia and Oceania'},
+    'europe':{label:'Europe'}
   }},
-  investigation:{label:'Historical investigation',hours:20,isIA:true,
+  investigation:{label:'Historical investigation',hours:20,noOptions:true,isIA:true,
     desc:'A 2,200-word independent inquiry (the IA). Students formulate a historical question, identify and evaluate sources, and synthesize evidence into an argument. Internally assessed by the teacher, externally moderated by the IB.'}
 };
-let ibArea='focused',ibOption=null;
+let ibArea='guide',ibOption=null,ibCasesCache=[];
+const IB_BADGE={materiale:{c:'t-pdf',l:'Lezione'},fonte:{c:'t-fonte',l:'Fonte'},esercizio:{c:'t-esercizio',l:'Saggio'},interdisciplinare:{c:'t-interdisciplinare',l:'Skills'}};
 
 function openTracks(){
   const s=JSON.parse(sessionStorage.getItem('ix')||'{}');
@@ -70,7 +69,7 @@ function exitIntlToLibrary(){
 function openIBPage(){
   document.getElementById('page-tracks').style.display='none';
   document.getElementById('page-ib').style.display='block';
-  ibArea='focused';ibOption=null;
+  ibArea='guide';ibOption=null;
   renderIBAreaTabs();
   renderIBOptions();
   window.scrollTo(0,0);
@@ -83,7 +82,7 @@ function backToTracks(){
 function renderIBAreaTabs(){
   const wrap=document.getElementById('ib-area-tabs');
   wrap.innerHTML=Object.entries(IB_STRUCTURE).map(([key,a])=>
-    `<button class="lib-tab${ibArea===key?' active':''}" data-tab="${key}" onclick="selectIBArea('${key}')">${a.label}${a.hlOnly?' <span class="ib-hl-note">(HL)</span>':''}</button>`
+    `<button class="lib-tab${ibArea===key?' active':''}${a.isGuide?' ib-guide-tab':''}" onclick="selectIBArea('${key}')">${a.isGuide?'★ ':''}${a.label}${a.hlOnly?' <span class="ib-hl-note">(HL)</span>':''}</button>`
   ).join('');
 }
 function selectIBArea(key){
@@ -94,7 +93,7 @@ function selectIBArea(key){
 function renderIBOptions(){
   const area=IB_STRUCTURE[ibArea];
   const row=document.getElementById('ib-options-row');
-  if(area.isIA){row.innerHTML='';renderIBCases();return;}
+  if(area.noOptions){row.innerHTML='';renderIBCases();return;}
   const keys=Object.keys(area.options);
   if(!ibOption||!area.options[ibOption])ibOption=keys[0];
   row.innerHTML=keys.map(key=>{
@@ -108,33 +107,134 @@ function selectIBOption(key){
   ibOption=key;
   renderIBOptions();
 }
-function renderIBCases(){
+function ibKeyFor(area,option){return option?`ib:${area}:${option}`:`ib:${area}`;}
+async function renderIBCases(){
   const wrap=document.getElementById('ib-cases-wrap');
   const area=IB_STRUCTURE[ibArea];
-  if(area.isIA){
-    wrap.innerHTML=`<div class="lib-empty" style="border-style:solid">${area.desc}</div>`;
-    return;
-  }
-  const opt=area.options[ibOption];
-  if(!opt.cases||!opt.cases.length){
-    wrap.innerHTML=`<div class="lib-empty">No case studies added yet for &laquo;${opt.label}&raquo;.</div>`;
-    return;
-  }
-  wrap.innerHTML=opt.cases.map(c=>`
-    <div class="mod-item" style="cursor:default;flex-direction:column;align-items:stretch;gap:.4rem">
-      <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:1rem">
-        <div>
-          <div class="lib-breadcrumb" style="margin-bottom:.3rem">${area.label} · ${opt.label}</div>
-          <div class="mod-title">${c.label}</div>
+  wrap.innerHTML='<div class="lib-spinner"></div>';
+  const key=ibKeyFor(ibArea,area.noOptions?null:ibOption);
+  let rows=[];
+  try{
+    const res=await fetch(`${SB_URL}/rest/v1/materiali?programma=eq.ib&materia=eq.${encodeURIComponent(key)}&attivo=eq.true&order=posizione.asc`,{headers:{'apikey':SB_KEY,'Authorization':'Bearer '+SB_KEY}});
+    rows=await res.json();
+  }catch(e){rows=[];}
+  ibCasesCache=Array.isArray(rows)?rows:[];
+  const label=area.noOptions?area.label:area.options[ibOption].label;
+  const breadcrumb=area.noOptions?area.label:`${area.label} · ${area.options[ibOption].label}`;
+  let html=`<a class="lib-add-link" style="margin-bottom:1.3rem;display:inline-flex" onclick="openIBUpload('${ibArea}','${area.noOptions?'':ibOption}')">+ Aggiungi contenuto</a>`;
+  if(area.isIA) html+=`<div class="lib-empty" style="border-style:solid;margin-bottom:1.2rem">${area.desc}</div>`;
+  if(!ibCasesCache.length){
+    html+=`<div class="lib-empty">Nessun contenuto ancora per «${label}».</div>`;
+  }else{
+    html+='<div class="mod-list">'+ibCasesCache.map((r,i)=>{
+      const b=IB_BADGE[r.tipo]||{c:'t-pdf',l:'Extra'};
+      const hasTimeline=r.anno_inizio&&r.anno_fine;
+      const href=r.link&&r.link!=='#'?r.link:'javascript:void(0)';
+      const tgt=r.link&&r.link!=='#'?'target="_blank" rel="noopener"':'';
+      return `<a class="mod-item" href="${href}" ${tgt} style="flex-direction:column;align-items:stretch;gap:.6rem;animation-delay:${i*.06}s">
+        <div style="display:flex;align-items:center;gap:1.6rem">
+          <div class="mod-num">${String(i+1).padStart(2,'0')}</div>
+          <div class="mod-body">
+            <div class="lib-breadcrumb" style="margin-bottom:.2rem">${breadcrumb}</div>
+            <div class="mod-title">${r.titolo}</div>
+            <div class="mod-desc">${r.descrizione||''}</div>
+          </div>
+          <span class="mod-type ${b.c}">${b.l}</span>
+          <div class="mod-acts" onclick="event.preventDefault();event.stopPropagation()">
+            <button class="m-btn" onclick="editIBMod(${r.id})">✏️</button>
+            <button class="m-btn del" onclick="delIBMod(${r.id})">🗑</button>
+          </div>
         </div>
-        ${c.placeholder?'<span class="ib-example-tag">example</span>':''}
-      </div>
-      <div class="ib-timeline">
-        <span class="ib-timeline-year start">${c.start}</span>
-        <div class="ib-timeline-bar"><span class="ib-timeline-dot start"></span><span class="ib-timeline-dot end"></span></div>
-        <span class="ib-timeline-year end">${c.end}</span>
-      </div>
-    </div>`).join('');
+        ${hasTimeline?`<div class="ib-timeline" style="padding-left:4.2rem"><span class="ib-timeline-year start">${r.anno_inizio}</span><div class="ib-timeline-bar"><span class="ib-timeline-dot start"></span><span class="ib-timeline-dot end"></span></div><span class="ib-timeline-year end">${r.anno_fine}</span></div>`:''}
+      </a>`;
+    }).join('')+'</div>';
+  }
+  wrap.innerHTML=html;
+}
+function openIBUpload(area,option){
+  document.getElementById('ib-up-title').textContent='Aggiungi contenuto IB';
+  document.getElementById('ib-up-btn').textContent='Salva';
+  document.getElementById('ib-up-id').value='';
+  document.getElementById('ib-up-area').value=area||'guide';
+  populateIBOptSelect();
+  if(option)document.getElementById('ib-up-opt').value=option;
+  document.getElementById('ib-up-tipo').value='materiale';
+  document.getElementById('ib-up-tit').value='';
+  document.getElementById('ib-up-desc').value='';
+  document.getElementById('ib-up-link').value='';
+  document.getElementById('ib-up-start').value='';
+  document.getElementById('ib-up-end').value='';
+  document.getElementById('ib-up-fb').textContent='';
+  document.getElementById('ib-up-overlay').classList.add('on');
+}
+function onIBUpAreaChange(){populateIBOptSelect();}
+function populateIBOptSelect(){
+  const area=document.getElementById('ib-up-area').value;
+  const wrap=document.getElementById('ib-up-opt-wrap');
+  const sel=document.getElementById('ib-up-opt');
+  const a=IB_STRUCTURE[area];
+  if(a.noOptions){wrap.style.display='none';sel.innerHTML='';return;}
+  wrap.style.display='flex';
+  sel.innerHTML=Object.entries(a.options).map(([k,o])=>`<option value="${k}">${o.label}</option>`).join('');
+}
+function closeIBUpload(){document.getElementById('ib-up-overlay').classList.remove('on');}
+function editIBMod(id){
+  const r=ibCasesCache.find(x=>x.id===id);
+  if(!r)return;
+  const parts=r.materia.split(':'); // ['ib', area, option?]
+  const area=parts[1],option=parts[2]||'';
+  document.getElementById('ib-up-title').textContent='Modifica contenuto IB';
+  document.getElementById('ib-up-btn').textContent='Aggiorna';
+  document.getElementById('ib-up-id').value=r.id;
+  document.getElementById('ib-up-area').value=area;
+  populateIBOptSelect();
+  if(option)document.getElementById('ib-up-opt').value=option;
+  document.getElementById('ib-up-tipo').value=r.tipo||'materiale';
+  document.getElementById('ib-up-tit').value=r.titolo;
+  document.getElementById('ib-up-desc').value=r.descrizione||'';
+  document.getElementById('ib-up-link').value=r.link||'';
+  document.getElementById('ib-up-start').value=r.anno_inizio||'';
+  document.getElementById('ib-up-end').value=r.anno_fine||'';
+  document.getElementById('ib-up-fb').textContent='';
+  document.getElementById('ib-up-overlay').classList.add('on');
+}
+async function saveIBModule(){
+  const id=document.getElementById('ib-up-id').value;
+  const area=document.getElementById('ib-up-area').value;
+  const a=IB_STRUCTURE[area];
+  const option=a.noOptions?'':document.getElementById('ib-up-opt').value;
+  const materia=ibKeyFor(area,option||null);
+  const tipo=document.getElementById('ib-up-tipo').value;
+  const tit=document.getElementById('ib-up-tit').value.trim();
+  const desc=document.getElementById('ib-up-desc').value.trim();
+  const link=document.getElementById('ib-up-link').value.trim();
+  const startV=document.getElementById('ib-up-start').value;
+  const endV=document.getElementById('ib-up-end').value;
+  const anno_inizio=startV?parseInt(startV):null;
+  const anno_fine=endV?parseInt(endV):null;
+  const fb=document.getElementById('ib-up-fb');
+  if(!tit){fb.textContent='Inserisci il titolo.';fb.style.color='#c0392b';return;}
+  if(!link){fb.textContent='Inserisci il link.';fb.style.color='#c0392b';return;}
+  fb.textContent='Salvataggio...';fb.style.color='var(--stone)';
+  document.getElementById('ib-up-btn').disabled=true;
+  const payload={materia,titolo:tit,descrizione:desc,tipo,link,programma:'ib',anno_inizio,anno_fine};
+  try{
+    let res;
+    if(id){
+      res=await fetch(`${SB_URL}/rest/v1/materiali?id=eq.${id}`,{method:'PATCH',headers:{'apikey':SB_KEY,'Authorization':'Bearer '+SB_KEY,'Content-Type':'application/json','Prefer':'return=minimal'},body:JSON.stringify(payload)});
+    }else{
+      const pr=await fetch(`${SB_URL}/rest/v1/materiali?materia=eq.${encodeURIComponent(materia)}&select=posizione&order=posizione.desc&limit=1`,{headers:{'apikey':SB_KEY,'Authorization':'Bearer '+SB_KEY}});
+      const prr=await pr.json();const pos=(prr&&prr.length>0?(prr[0].posizione||0):0)+1;
+      res=await fetch(`${SB_URL}/rest/v1/materiali`,{method:'POST',headers:{'apikey':SB_KEY,'Authorization':'Bearer '+SB_KEY,'Content-Type':'application/json','Prefer':'return=minimal'},body:JSON.stringify({...payload,posizione:pos})});
+    }
+    if(res.ok||res.status===201||res.status===204){fb.textContent='✓ Salvato!';fb.style.color='var(--forest)';setTimeout(()=>{closeIBUpload();renderIBCases();},900);}
+    else throw new Error(res.status);
+  }catch(e){fb.textContent='Errore: '+e.message;fb.style.color='#c0392b';}
+  document.getElementById('ib-up-btn').disabled=false;
+}
+async function delIBMod(id){
+  if(!confirm('Eliminare questo contenuto?'))return;
+  try{const r=await fetch(`${SB_URL}/rest/v1/materiali?id=eq.${id}`,{method:'DELETE',headers:{'apikey':SB_KEY,'Authorization':'Bearer '+SB_KEY,'Prefer':'return=minimal'}});if(r.ok||r.status===204)renderIBCases();}catch(e){alert('Errore di connessione.');}
 }
 
 const go=id=>document.getElementById(id)?.scrollIntoView({behavior:'smooth'});
