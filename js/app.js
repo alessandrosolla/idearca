@@ -143,13 +143,18 @@ async function renderIBCases(){
         const i=counter;
         const b=IB_BADGE[r.tipo]||{c:'t-pdf',l:'Extra'};
         const hasTimeline=r.anno_inizio&&r.anno_fine;
-        const hasLink=r.link && r.link!=='#' && r.link.trim()!=='';
-        const href=hasLink?r.link:'javascript:void(0)';
         const titEsc=(r.titolo||'').replace(/'/g,"\\'");
-        const linkEsc=(r.link||'').replace(/'/g,"\\'");
-        const clickAttr=hasLink?`onclick="event.preventDefault();openViewer('${linkEsc}','${titEsc}')"`:`onclick="event.preventDefault()"`;
-        const badge=hasLink?`<span class="mod-type ${b.c}">${b.l}</span>`:`<span class="mod-type t-prep">In preparazione</span>`;
-        return `<a class="mod-item" href="${href}" ${clickAttr} style="flex-direction:column;align-items:stretch;gap:.6rem;animation-delay:${Math.min(i*.03,.6)}s">
+        const hasSlide=r.link && r.link!=='#' && r.link.trim()!=='';
+        const hasHw=r.link_compito && r.link_compito.trim()!=='';
+        const slideEsc=(r.link||'').replace(/'/g,"\\'");
+        const hwEsc=(r.link_compito||'').replace(/'/g,"\\'");
+        const slideBtn=hasSlide
+          ?`<button class="ib-open-btn" onclick="openViewer('${slideEsc}','${titEsc} \u2014 Slide')">\uD83D\uDCCA Slide</button>`
+          :`<span class="ib-open-btn prep">\uD83D\uDCCA Slide \u2014 in preparazione</span>`;
+        const hwBtn=hasHw
+          ?`<button class="ib-open-btn" onclick="openViewer('${hwEsc}','${titEsc} \u2014 Homework')">\uD83D\uDCDD Homework</button>`
+          :`<span class="ib-open-btn prep">\uD83D\uDCDD Homework \u2014 in preparazione</span>`;
+        return `<div class="mod-item" style="cursor:default;flex-direction:column;align-items:stretch;gap:.6rem;animation-delay:${Math.min(i*.03,.6)}s">
           <div style="display:flex;align-items:center;gap:1.6rem">
             <div class="mod-num">${String(i).padStart(2,'0')}</div>
             <div class="mod-body">
@@ -157,14 +162,15 @@ async function renderIBCases(){
               <div class="mod-title">${r.titolo}</div>
               <div class="mod-desc">${r.descrizione||''}</div>
             </div>
-            ${badge}
-            <div class="mod-acts" onclick="event.preventDefault();event.stopPropagation()">
+            <span class="mod-type ${b.c}">${b.l}</span>
+            <div class="mod-acts">
               <button class="m-btn" onclick="editIBMod(${r.id})">✏️</button>
               <button class="m-btn del" onclick="delIBMod(${r.id})">🗑</button>
             </div>
           </div>
+          <div class="ib-open-row">${slideBtn}${hwBtn}</div>
           ${hasTimeline?`<div class="ib-timeline" style="padding-left:4.2rem"><span class="ib-timeline-year start">${r.anno_inizio}</span><div class="ib-timeline-bar"><span class="ib-timeline-dot start"></span><span class="ib-timeline-dot end"></span></div><span class="ib-timeline-year end">${r.anno_fine}</span></div>`:''}
-        </a>`;
+        </div>`;
       }).join('');
       const groupTitle=g.blocco==='__none__'?'':`<div class="lib-group-title">${g.blocco}</div>`;
       return `<div class="ib-block">${groupTitle}<div class="mod-list">${itemsHtml}</div></div>`;
@@ -208,6 +214,7 @@ function openIBUpload(area,option){
   document.getElementById('ib-up-tit').value='';
   document.getElementById('ib-up-desc').value='';
   document.getElementById('ib-up-link').value='';
+  document.getElementById('ib-up-link-compito').value='';
   document.getElementById('ib-up-start').value='';
   document.getElementById('ib-up-end').value='';
   document.getElementById('ib-up-fb').textContent='';
@@ -240,6 +247,7 @@ function editIBMod(id){
   document.getElementById('ib-up-tit').value=r.titolo;
   document.getElementById('ib-up-desc').value=r.descrizione||'';
   document.getElementById('ib-up-link').value=r.link||'';
+  document.getElementById('ib-up-link-compito').value=r.link_compito||'';
   document.getElementById('ib-up-start').value=r.anno_inizio||'';
   document.getElementById('ib-up-end').value=r.anno_fine||'';
   document.getElementById('ib-up-fb').textContent='';
@@ -256,6 +264,7 @@ async function saveIBModule(){
   const tit=document.getElementById('ib-up-tit').value.trim();
   const desc=document.getElementById('ib-up-desc').value.trim();
   const link=document.getElementById('ib-up-link').value.trim();
+  const link_compito=document.getElementById('ib-up-link-compito').value.trim();
   const startV=document.getElementById('ib-up-start').value;
   const endV=document.getElementById('ib-up-end').value;
   const anno_inizio=startV?parseInt(startV):null;
@@ -264,7 +273,7 @@ async function saveIBModule(){
   if(!tit){fb.textContent='Inserisci il titolo.';fb.style.color='#c0392b';return;}
   fb.textContent='Salvataggio...';fb.style.color='var(--stone)';
   document.getElementById('ib-up-btn').disabled=true;
-  const payload={materia,titolo:tit,descrizione:desc,tipo,link,programma:'ib',blocco,anno_inizio,anno_fine};
+  const payload={materia,titolo:tit,descrizione:desc,tipo,link,link_compito,programma:'ib',blocco,anno_inizio,anno_fine};
   try{
     let res;
     if(id){
