@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Idearca — Filosofia, Storia &amp; Educazione Civica</title>
 <script>try{var t=localStorage.getItem('idearca-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
-<link rel="stylesheet" href="css/stile.css?v=15">
+<link rel="stylesheet" href="css/stile.css?v=16">
 </head>
 <body style="">
 <div id="page-home">
@@ -349,6 +349,7 @@
       </select>
     </div>
     <div class="up-f" id="ib-up-opt-wrap"><label>Opzione</label><select id="ib-up-opt"></select></div>
+    <div class="up-f"><label>Blocco (es. "1. Germania — Hitler")</label><input type="text" id="ib-up-blocco" placeholder="Lascia vuoto per contenuti fuori blocco"></div>
     <div class="up-f"><label>Tipo contenuto</label>
       <select id="ib-up-tipo">
         <option value="materiale">Lezione / Slide</option>
@@ -366,6 +367,29 @@
     </div>
     <div class="up-acts"><button class="btn-save" id="ib-up-btn" onclick="saveIBModule()">Salva</button><button class="btn-can" onclick="closeIBUpload()">Annulla</button></div>
     <div id="ib-up-fb" style="margin-top:.7rem;font-size:.78rem;min-height:1rem"></div>
+  </div>
+</div>
+<div class="up-modal" id="ib-bulk-overlay">
+  <div class="up-box">
+    <button onclick="closeBulkImport()" style="position:absolute;top:1rem;right:1.2rem;background:none;border:none;cursor:pointer;font-size:1.3rem;color:var(--stone);width:30px;height:30px;display:flex;align-items:center;justify-content:center;border-radius:50%;transition:background .2s" onmouseover="this.style.background='var(--surface)'" onmouseout="this.style.background='none'">✕</button>
+    <h3>Importa più righe</h3>
+    <p>Incolla righe copiate dallo Scheme of Work: due colonne, <b>Blocco</b> e <b>Argomento della lezione</b>, separate da tabulazione (come vengono copiando da Excel). Ogni riga diventa una lezione "in preparazione" — aggiungi il link con "Modifica" quando il materiale è pronto.</p>
+    <div class="up-f"><label>Area</label>
+      <select id="ib-bulk-area" onchange="populateBulkOptSelect()">
+        <option value="guide">Course guide</option>
+        <option value="focused">Focused study</option>
+        <option value="thematic">Thematic study</option>
+        <option value="regional">Regional study (HL)</option>
+        <option value="investigation">Historical investigation</option>
+      </select>
+    </div>
+    <div class="up-f" id="ib-bulk-opt-wrap"><label>Opzione</label><select id="ib-bulk-opt"></select></div>
+    <div class="up-f"><label>Righe (Blocco [TAB] Argomento)</label>
+      <textarea id="ib-bulk-text" style="height:180px;font-family:monospace;font-size:.78rem" placeholder="1. Germania — Hitler&#9;La debolezza della Repubblica di Weimar
+1. Germania — Hitler&#9;L'ascesa del partito nazista"></textarea>
+    </div>
+    <div class="up-acts"><button class="btn-save" id="ib-bulk-btn" onclick="bulkImportIB()">Importa</button><button class="btn-can" onclick="closeBulkImport()">Annulla</button></div>
+    <div id="ib-bulk-fb" style="margin-top:.7rem;font-size:.78rem;min-height:1rem"></div>
   </div>
 </div>
 <div class="doc-viewer-overlay" id="doc-viewer-overlay">
@@ -531,7 +555,7 @@
     <div id="codes-body" style="padding:0 2rem 2rem;max-height:40vh;overflow-y:auto"></div>
   </div>
 </div>
-<script src="js/app.js?v=14"></script>
+<script src="js/app.js?v=15"></script>
 
 
 
