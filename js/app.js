@@ -129,7 +129,9 @@ async function renderIBCases(){
     html+='<div class="mod-list">'+ibCasesCache.map((r,i)=>{
       const b=IB_BADGE[r.tipo]||{c:'t-pdf',l:'Extra'};
       const hasTimeline=r.anno_inizio&&r.anno_fine;
-      return `<div class="mod-item" role="button" tabindex="0" onclick="openIBViewerById(${r.id})" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openIBViewerById(${r.id})}" style="cursor:pointer;flex-direction:column;align-items:stretch;gap:.6rem;animation-delay:${i*.06}s">
+      const href=r.link&&r.link!=='#'?r.link:'javascript:void(0)';
+      const titEsc=(r.titolo||'').replace(/'/g,"\\'");
+      return `<a class="mod-item" href="${href}" target="_blank" rel="noopener" onclick="event.preventDefault();openViewer('${(r.link||'').replace(/'/g,"\\'")}','${titEsc}')" style="flex-direction:column;align-items:stretch;gap:.6rem;animation-delay:${i*.06}s">
         <div style="display:flex;align-items:center;gap:1.6rem">
           <div class="mod-num">${String(i+1).padStart(2,'0')}</div>
           <div class="mod-body">
@@ -144,27 +146,34 @@ async function renderIBCases(){
           </div>
         </div>
         ${hasTimeline?`<div class="ib-timeline" style="padding-left:4.2rem"><span class="ib-timeline-year start">${r.anno_inizio}</span><div class="ib-timeline-bar"><span class="ib-timeline-dot start"></span><span class="ib-timeline-dot end"></span></div><span class="ib-timeline-year end">${r.anno_fine}</span></div>`:''}
-      </div>`;
+      </a>`;
     }).join('')+'</div>';
   }
   wrap.innerHTML=html;
 }
-function openIBViewerById(id){
-  const r=ibCasesCache.find(x=>x.id===id);
-  if(!r||!r.link||r.link==='#')return;
-  document.getElementById('ib-viewer-title').textContent=r.titolo||'';
-  document.getElementById('ib-viewer-open').href=r.link;
-  document.getElementById('ib-viewer-frame').src=r.link;
-  document.getElementById('ib-viewer-overlay').classList.add('on');
+function toEmbedUrl(link){
+  if(!link) return link;
+  let m = link.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/embed\/)([\w-]+)/);
+  if(m) return `https://www.youtube.com/embed/${m[1]}`;
+  m = link.match(/drive\.google\.com\/file\/d\/([\w-]+)/);
+  if(m) return `https://drive.google.com/file/d/${m[1]}/preview`;
+  return link;
+}
+function openViewer(link,title){
+  if(!link||link==='#')return;
+  document.getElementById('doc-viewer-title').textContent=title||'';
+  document.getElementById('doc-viewer-open').href=link;
+  document.getElementById('doc-viewer-frame').src=toEmbedUrl(link);
+  document.getElementById('doc-viewer-overlay').classList.add('on');
   document.body.style.overflow='hidden';
 }
-function closeIBViewer(){
-  document.getElementById('ib-viewer-overlay').classList.remove('on');
-  document.getElementById('ib-viewer-frame').src='';
+function closeViewer(){
+  document.getElementById('doc-viewer-overlay').classList.remove('on');
+  document.getElementById('doc-viewer-frame').src='';
   document.body.style.overflow='';
 }
 document.addEventListener('keydown',e=>{
-  if(e.key==='Escape'&&document.getElementById('ib-viewer-overlay')?.classList.contains('on'))closeIBViewer();
+  if(e.key==='Escape'&&document.getElementById('doc-viewer-overlay')?.classList.contains('on'))closeViewer();
 });
 function openIBUpload(area,option){
   document.getElementById('ib-up-title').textContent='Aggiungi contenuto IB';
@@ -511,7 +520,9 @@ async function renderSubject(key,tab){
       const b=BADGE[r.tipo]||{c:'t-pdf',l:'Extra'};
       const href=r.link&&r.link!=='#'?r.link:'javascript:void(0)';
       const tgt=r.link&&r.link!=='#'?'target="_blank" rel="noopener"':'';
-      return `<a class="mod-item" href="${href}" ${tgt} style="animation-delay:${i*.06}s">
+      const titEsc=(r.titolo||'').replace(/'/g,"\\'");
+      const linkEsc=(r.link||'').replace(/'/g,"\\'");
+      return `<a class="mod-item" href="${href}" ${tgt} onclick="event.preventDefault();openViewer('${linkEsc}','${titEsc}')" style="animation-delay:${i*.06}s">
         <div class="mod-num">${String(i+1).padStart(2,'0')}</div>
         <div class="mod-body"><div class="mod-title">${r.titolo}</div><div class="mod-desc">${r.descrizione||''}</div></div>
         <span class="mod-type ${b.c}">${b.l}</span>
