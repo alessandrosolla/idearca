@@ -121,33 +121,54 @@ async function renderIBCases(){
   ibCasesCache=Array.isArray(rows)?rows:[];
   const label=area.noOptions?area.label:area.options[ibOption].label;
   const breadcrumb=area.noOptions?area.label:`${area.label} · ${area.options[ibOption].label}`;
-  let html=`<a class="lib-add-link" style="margin-bottom:1.3rem;display:inline-flex" onclick="openIBUpload('${ibArea}','${area.noOptions?'':ibOption}')">+ Aggiungi contenuto</a>`;
+  const optArg=area.noOptions?'':ibOption;
+  let html=`<div style="display:flex;gap:1.4rem;flex-wrap:wrap;margin-bottom:1.3rem">
+    <a class="lib-add-link" onclick="openIBUpload('${ibArea}','${optArg}')">+ Aggiungi contenuto</a>
+    <a class="lib-add-link" onclick="openBulkImport('${ibArea}','${optArg}')">+ Importa più righe</a>
+  </div>`;
   if(area.isIA) html+=`<div class="lib-empty" style="border-style:solid;margin-bottom:1.2rem">${area.desc}</div>`;
   if(!ibCasesCache.length){
     html+=`<div class="lib-empty">Nessun contenuto ancora per «${label}».</div>`;
   }else{
-    html+='<div class="mod-list">'+ibCasesCache.map((r,i)=>{
-      const b=IB_BADGE[r.tipo]||{c:'t-pdf',l:'Extra'};
-      const hasTimeline=r.anno_inizio&&r.anno_fine;
-      const href=r.link&&r.link!=='#'?r.link:'javascript:void(0)';
-      const titEsc=(r.titolo||'').replace(/'/g,"\\'");
-      return `<a class="mod-item" href="${href}" target="_blank" rel="noopener" onclick="event.preventDefault();openViewer('${(r.link||'').replace(/'/g,"\\'")}','${titEsc}')" style="flex-direction:column;align-items:stretch;gap:.6rem;animation-delay:${i*.06}s">
-        <div style="display:flex;align-items:center;gap:1.6rem">
-          <div class="mod-num">${String(i+1).padStart(2,'0')}</div>
-          <div class="mod-body">
-            <div class="lib-breadcrumb" style="margin-bottom:.2rem">${breadcrumb}</div>
-            <div class="mod-title">${r.titolo}</div>
-            <div class="mod-desc">${r.descrizione||''}</div>
+    const groups=[]; const idx={};
+    ibCasesCache.forEach(r=>{
+      const gk = (r.blocco && r.blocco.trim()) ? r.blocco.trim() : '__none__';
+      if(!(gk in idx)){idx[gk]=groups.length; groups.push({blocco:gk,items:[]});}
+      groups[idx[gk]].items.push(r);
+    });
+    let counter=0;
+    html+=groups.map(g=>{
+      const itemsHtml=g.items.map(r=>{
+        counter++;
+        const i=counter;
+        const b=IB_BADGE[r.tipo]||{c:'t-pdf',l:'Extra'};
+        const hasTimeline=r.anno_inizio&&r.anno_fine;
+        const hasLink=r.link && r.link!=='#' && r.link.trim()!=='';
+        const href=hasLink?r.link:'javascript:void(0)';
+        const titEsc=(r.titolo||'').replace(/'/g,"\\'");
+        const linkEsc=(r.link||'').replace(/'/g,"\\'");
+        const clickAttr=hasLink?`onclick="event.preventDefault();openViewer('${linkEsc}','${titEsc}')"`:`onclick="event.preventDefault()"`;
+        const badge=hasLink?`<span class="mod-type ${b.c}">${b.l}</span>`:`<span class="mod-type t-prep">In preparazione</span>`;
+        return `<a class="mod-item" href="${href}" ${clickAttr} style="flex-direction:column;align-items:stretch;gap:.6rem;animation-delay:${Math.min(i*.03,.6)}s">
+          <div style="display:flex;align-items:center;gap:1.6rem">
+            <div class="mod-num">${String(i).padStart(2,'0')}</div>
+            <div class="mod-body">
+              <div class="lib-breadcrumb" style="margin-bottom:.2rem">${breadcrumb}</div>
+              <div class="mod-title">${r.titolo}</div>
+              <div class="mod-desc">${r.descrizione||''}</div>
+            </div>
+            ${badge}
+            <div class="mod-acts" onclick="event.preventDefault();event.stopPropagation()">
+              <button class="m-btn" onclick="editIBMod(${r.id})">✏️</button>
+              <button class="m-btn del" onclick="delIBMod(${r.id})">🗑</button>
+            </div>
           </div>
-          <span class="mod-type ${b.c}">${b.l}</span>
-          <div class="mod-acts" onclick="event.preventDefault();event.stopPropagation()">
-            <button class="m-btn" onclick="editIBMod(${r.id})">✏️</button>
-            <button class="m-btn del" onclick="delIBMod(${r.id})">🗑</button>
-          </div>
-        </div>
-        ${hasTimeline?`<div class="ib-timeline" style="padding-left:4.2rem"><span class="ib-timeline-year start">${r.anno_inizio}</span><div class="ib-timeline-bar"><span class="ib-timeline-dot start"></span><span class="ib-timeline-dot end"></span></div><span class="ib-timeline-year end">${r.anno_fine}</span></div>`:''}
-      </a>`;
-    }).join('')+'</div>';
+          ${hasTimeline?`<div class="ib-timeline" style="padding-left:4.2rem"><span class="ib-timeline-year start">${r.anno_inizio}</span><div class="ib-timeline-bar"><span class="ib-timeline-dot start"></span><span class="ib-timeline-dot end"></span></div><span class="ib-timeline-year end">${r.anno_fine}</span></div>`:''}
+        </a>`;
+      }).join('');
+      const groupTitle=g.blocco==='__none__'?'':`<div class="lib-group-title">${g.blocco}</div>`;
+      return `<div class="ib-block">${groupTitle}<div class="mod-list">${itemsHtml}</div></div>`;
+    }).join('');
   }
   wrap.innerHTML=html;
 }
@@ -182,6 +203,7 @@ function openIBUpload(area,option){
   document.getElementById('ib-up-area').value=area||'guide';
   populateIBOptSelect();
   if(option)document.getElementById('ib-up-opt').value=option;
+  document.getElementById('ib-up-blocco').value='';
   document.getElementById('ib-up-tipo').value='materiale';
   document.getElementById('ib-up-tit').value='';
   document.getElementById('ib-up-desc').value='';
@@ -213,6 +235,7 @@ function editIBMod(id){
   document.getElementById('ib-up-area').value=area;
   populateIBOptSelect();
   if(option)document.getElementById('ib-up-opt').value=option;
+  document.getElementById('ib-up-blocco').value=r.blocco||'';
   document.getElementById('ib-up-tipo').value=r.tipo||'materiale';
   document.getElementById('ib-up-tit').value=r.titolo;
   document.getElementById('ib-up-desc').value=r.descrizione||'';
@@ -228,6 +251,7 @@ async function saveIBModule(){
   const a=IB_STRUCTURE[area];
   const option=a.noOptions?'':document.getElementById('ib-up-opt').value;
   const materia=ibKeyFor(area,option||null);
+  const blocco=document.getElementById('ib-up-blocco').value.trim();
   const tipo=document.getElementById('ib-up-tipo').value;
   const tit=document.getElementById('ib-up-tit').value.trim();
   const desc=document.getElementById('ib-up-desc').value.trim();
@@ -238,10 +262,9 @@ async function saveIBModule(){
   const anno_fine=endV?parseInt(endV):null;
   const fb=document.getElementById('ib-up-fb');
   if(!tit){fb.textContent='Inserisci il titolo.';fb.style.color='#c0392b';return;}
-  if(!link){fb.textContent='Inserisci il link.';fb.style.color='#c0392b';return;}
   fb.textContent='Salvataggio...';fb.style.color='var(--stone)';
   document.getElementById('ib-up-btn').disabled=true;
-  const payload={materia,titolo:tit,descrizione:desc,tipo,link,programma:'ib',anno_inizio,anno_fine};
+  const payload={materia,titolo:tit,descrizione:desc,tipo,link,programma:'ib',blocco,anno_inizio,anno_fine};
   try{
     let res;
     if(id){
@@ -255,6 +278,61 @@ async function saveIBModule(){
     else throw new Error(res.status);
   }catch(e){fb.textContent='Errore: '+e.message;fb.style.color='#c0392b';}
   document.getElementById('ib-up-btn').disabled=false;
+}
+function openBulkImport(area,option){
+  document.getElementById('ib-bulk-area').value=area||'guide';
+  populateBulkOptSelect();
+  if(option)document.getElementById('ib-bulk-opt').value=option;
+  document.getElementById('ib-bulk-text').value='';
+  document.getElementById('ib-bulk-fb').textContent='';
+  document.getElementById('ib-bulk-overlay').classList.add('on');
+}
+function populateBulkOptSelect(){
+  const area=document.getElementById('ib-bulk-area').value;
+  const wrap=document.getElementById('ib-bulk-opt-wrap');
+  const sel=document.getElementById('ib-bulk-opt');
+  const a=IB_STRUCTURE[area];
+  if(a.noOptions){wrap.style.display='none';sel.innerHTML='';return;}
+  wrap.style.display='flex';
+  sel.innerHTML=Object.entries(a.options).map(([k,o])=>`<option value="${k}">${o.label}</option>`).join('');
+}
+function closeBulkImport(){document.getElementById('ib-bulk-overlay').classList.remove('on');}
+async function bulkImportIB(){
+  const area=document.getElementById('ib-bulk-area').value;
+  const a=IB_STRUCTURE[area];
+  const option=a.noOptions?'':document.getElementById('ib-bulk-opt').value;
+  const materia=ibKeyFor(area,option||null);
+  const raw=document.getElementById('ib-bulk-text').value;
+  const lines=raw.split('\n').map(l=>l.replace(/\r$/,'')).filter(l=>l.trim());
+  const fb=document.getElementById('ib-bulk-fb');
+  if(!lines.length){fb.textContent='Incolla almeno una riga.';fb.style.color='#c0392b';return;}
+  const parsed=[];
+  for(const line of lines){
+    const parts=line.split('\t');
+    if(parts.length<2)continue;
+    const blocco=parts[0].trim(),titolo=parts[1].trim();
+    if(!titolo)continue;
+    if(/^blocco$/i.test(blocco)&&/^argomento/i.test(titolo))continue;
+    parsed.push({blocco,titolo});
+  }
+  if(!parsed.length){fb.textContent='Nessuna riga valida (serve Blocco [TAB] Argomento per riga).';fb.style.color='#c0392b';return;}
+  fb.textContent=`Importazione di ${parsed.length} righe...`;fb.style.color='var(--stone)';
+  document.getElementById('ib-bulk-btn').disabled=true;
+  try{
+    const pr=await fetch(`${SB_URL}/rest/v1/materiali?materia=eq.${encodeURIComponent(materia)}&select=posizione&order=posizione.desc&limit=1`,{headers:{'apikey':SB_KEY,'Authorization':'Bearer '+SB_KEY}});
+    const prr=await pr.json();
+    let pos=(prr&&prr.length>0?(prr[0].posizione||0):0);
+    const payloadRows=parsed.map(p=>{
+      pos+=1;
+      return {materia,titolo:p.titolo,descrizione:'',tipo:'materiale',link:'',programma:'ib',blocco:p.blocco,posizione:pos};
+    });
+    const res=await fetch(`${SB_URL}/rest/v1/materiali`,{method:'POST',headers:{'apikey':SB_KEY,'Authorization':'Bearer '+SB_KEY,'Content-Type':'application/json','Prefer':'return=minimal'},body:JSON.stringify(payloadRows)});
+    if(res.ok||res.status===201||res.status===204){
+      fb.textContent=`✓ Importate ${parsed.length} lezioni!`;fb.style.color='var(--forest)';
+      setTimeout(()=>{closeBulkImport();renderIBCases();},1000);
+    }else throw new Error(res.status);
+  }catch(e){fb.textContent='Errore: '+e.message;fb.style.color='#c0392b';}
+  document.getElementById('ib-bulk-btn').disabled=false;
 }
 async function delIBMod(id){
   if(!confirm('Eliminare questo contenuto?'))return;
