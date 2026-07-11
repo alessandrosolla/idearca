@@ -432,6 +432,9 @@ html[data-theme="dark"] .theme-toggle .icon-moon{display:block}
 .ib-timeline-dot.start{left:0}
 .ib-timeline-dot.end{right:0}
 .ib-example-tag{font-size:.58rem;letter-spacing:.1em;text-transform:uppercase;padding:.2rem .6rem;border-radius:20px;background:var(--surface);color:var(--stone-light);border:1px dashed var(--border);flex-shrink:0}
+.t-prep{background:var(--surface);color:var(--stone-light);border:1px dashed var(--border)}
+.ib-block{margin-bottom:1.6rem}
+.ib-block:last-child{margin-bottom:0}
 
 .doc-viewer-overlay{display:none;position:fixed;inset:0;z-index:900;background:var(--ink);flex-direction:column}
 .doc-viewer-overlay.on{display:flex}
