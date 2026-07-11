@@ -433,6 +433,16 @@ html[data-theme="dark"] .theme-toggle .icon-moon{display:block}
 .ib-timeline-dot.end{right:0}
 .ib-example-tag{font-size:.58rem;letter-spacing:.1em;text-transform:uppercase;padding:.2rem .6rem;border-radius:20px;background:var(--surface);color:var(--stone-light);border:1px dashed var(--border);flex-shrink:0}
 
+.ib-viewer-overlay{display:none;position:fixed;inset:0;z-index:900;background:var(--ink);flex-direction:column}
+.ib-viewer-overlay.on{display:flex}
+.ib-viewer-bar{display:flex;align-items:center;justify-content:space-between;padding:.85rem 1.4rem;background:var(--white);border-bottom:1px solid var(--border);flex-shrink:0}
+.ib-viewer-title{font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:60vw}
+.ib-viewer-acts{display:flex;align-items:center;gap:.6rem}
+.ib-viewer-btn{font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;padding:.5rem 1rem;border-radius:6px;border:1px solid var(--border);background:none;color:var(--stone);cursor:pointer;text-decoration:none;font-family:'Jost',sans-serif;transition:all .2s;white-space:nowrap}
+.ib-viewer-btn:hover{border-color:var(--forest);color:var(--forest)}
+.ib-viewer-frame{flex:1;width:100%;border:0;background:var(--surface)}
+@media(max-width:720px){.ib-viewer-title{max-width:40vw;font-size:.9rem}.ib-viewer-btn{padding:.5rem .7rem}}
+
 .tracks-hero{position:relative;overflow:hidden;background:linear-gradient(180deg,var(--surface) 0%,var(--parchment) 55%,var(--parchment) 100%)}
 .tracks-hero::before{content:'';position:absolute;right:-120px;top:-100px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(36,84,168,.12),transparent 70%);animation:qorb 12s ease-in-out infinite;pointer-events:none}
 .tracks-hero::after{content:'';position:absolute;left:-80px;bottom:-120px;width:320px;height:320px;border-radius:50%;background:radial-gradient(circle,rgba(179,144,63,.12),transparent 70%);animation:qorb 16s ease-in-out infinite reverse;pointer-events:none}
