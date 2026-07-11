@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Idearca — Filosofia, Storia &amp; Educazione Civica</title>
 <script>try{var t=localStorage.getItem('idearca-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
-<link rel="stylesheet" href="css/stile.css?v=11">
+<link rel="stylesheet" href="css/stile.css?v=12">
 </head>
 <body style="">
 <div id="page-home">
@@ -333,6 +333,41 @@
     <div id="up-fb" style="margin-top:.7rem;font-size:.78rem;min-height:1rem"></div>
   </div>
 </div>
+<div class="up-modal" id="ib-up-overlay">
+  <div class="up-box">
+    <button onclick="closeIBUpload()" style="position:absolute;top:1rem;right:1.2rem;background:none;border:none;cursor:pointer;font-size:1.3rem;color:var(--stone);width:30px;height:30px;display:flex;align-items:center;justify-content:center;border-radius:50%;transition:background .2s" onmouseover="this.style.background='var(--surface)'" onmouseout="this.style.background='none'">✕</button>
+    <h3 id="ib-up-title">Aggiungi contenuto IB</h3>
+    <p>Compila i campi. Il contenuto viene salvato nello stesso database, con etichetta internazionale.</p>
+    <input type="hidden" id="ib-up-id">
+    <div class="up-f"><label>Area</label>
+      <select id="ib-up-area" onchange="onIBUpAreaChange()">
+        <option value="guide">Course guide</option>
+        <option value="focused">Focused study</option>
+        <option value="thematic">Thematic study</option>
+        <option value="regional">Regional study (HL)</option>
+        <option value="investigation">Historical investigation</option>
+      </select>
+    </div>
+    <div class="up-f" id="ib-up-opt-wrap"><label>Opzione</label><select id="ib-up-opt"></select></div>
+    <div class="up-f"><label>Tipo contenuto</label>
+      <select id="ib-up-tipo">
+        <option value="materiale">Lezione / Slide</option>
+        <option value="fonte">Fonte</option>
+        <option value="esercizio">Saggio / Esercizio</option>
+        <option value="interdisciplinare">Skills section</option>
+      </select>
+    </div>
+    <div class="up-f"><label>Titolo</label><input type="text" id="ib-up-tit" placeholder="es. Germany — the emergence of the authoritarian state"></div>
+    <div class="up-f"><label>Descrizione</label><textarea id="ib-up-desc" placeholder="Breve riassunto mostrato nell'elenco"></textarea></div>
+    <div class="up-f"><label>Link al file</label><input type="url" id="ib-up-link" placeholder="https://drive.google.com/file/d/..."></div>
+    <div style="display:flex;gap:.8rem">
+      <div class="up-f" style="flex:1"><label>Anno inizio (opzionale)</label><input type="number" id="ib-up-start" placeholder="es. 1919"></div>
+      <div class="up-f" style="flex:1"><label>Anno fine (opzionale)</label><input type="number" id="ib-up-end" placeholder="es. 1945"></div>
+    </div>
+    <div class="up-acts"><button class="btn-save" id="ib-up-btn" onclick="saveIBModule()">Salva</button><button class="btn-can" onclick="closeIBUpload()">Annulla</button></div>
+    <div id="ib-up-fb" style="margin-top:.7rem;font-size:.78rem;min-height:1rem"></div>
+  </div>
+</div>
 <!-- PAGINA SELEZIONE PERCORSO INTERNAZIONALE -->
 <div id="page-tracks" style="display:none;min-height:100vh">
   <div class="lib-topbar">
@@ -387,7 +422,7 @@
   <div class="lib-content-head" style="padding:2.8rem 4rem 0">
     <div class="lib-breadcrumb">IB Diploma Programme</div>
     <h2 class="lib-content-title">History</h2>
-    <p class="ib-syllabus-note">Structure follows the official <strong>IB DP History Subject Brief</strong> — first assessment 2028. Every area, hour count and option below matches the published syllabus exactly.</p>
+    <p class="ib-syllabus-note">Structure follows the official <strong>IB DP History Subject Brief</strong> — first assessment 2028. Every area, hour count and option below matches the published syllabus exactly. <em>Course guide</em> is orientation content, not one of the 4 examined areas.</p>
     <div class="ib-stat-strip">
       <div class="ib-stat"><span class="ib-stat-num">50h</span><span class="ib-stat-label">Focused study<br>5 options</span></div>
       <div class="ib-stat"><span class="ib-stat-num">80h</span><span class="ib-stat-label">Thematic study<br>4 options</span></div>
@@ -486,7 +521,7 @@
     <div id="codes-body" style="padding:0 2rem 2rem;max-height:40vh;overflow-y:auto"></div>
   </div>
 </div>
-<script src="js/app.js?v=10"></script>
+<script src="js/app.js?v=11"></script>
 
 
 
