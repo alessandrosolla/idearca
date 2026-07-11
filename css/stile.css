@@ -21,12 +21,12 @@ html[data-theme="dark"]{
 }
 /* ── MODALITA' INTERNAZIONALE (percorsi IB / English / AP) ── */
 html[data-mode="intl"]{
-  --ink:#172440;--forest:#2f4d78;--forest-deep:#1c2f4d;
-  --forest-light:#5b7aa8;--sage-light:#c7d3e6;
+  --ink:#172440;--forest:#2454a8;--forest-deep:#173c7e;
+  --forest-light:#4d7cc9;--sage-light:#d8e4f5;
   --gold:#b3903f;--gold-light:#c9a856;--gold-pale:#e6d6ad;
   --parchment:#f7f8fb;--cream:#f2f4f8;--surface:#eef1f6;
   --white:#fff;--stone:#5b6b83;--stone-light:#8b98ab;
-  --border:rgba(47,77,120,0.14);--border-gold:rgba(179,144,63,0.22);
+  --border:rgba(36,84,168,0.16);--border-gold:rgba(179,144,63,0.22);
   --shadow:0 12px 56px rgba(23,36,64,0.12);--shadow-sm:0 2px 16px rgba(23,36,64,0.07);
 }
 html[data-mode="intl"][data-theme="dark"]{
@@ -430,3 +430,17 @@ html[data-theme="dark"] .theme-toggle .icon-moon{display:block}
 .ib-timeline-dot.start{left:0}
 .ib-timeline-dot.end{right:0}
 .ib-example-tag{font-size:.58rem;letter-spacing:.1em;text-transform:uppercase;padding:.2rem .6rem;border-radius:20px;background:var(--surface);color:var(--stone-light);border:1px dashed var(--border);flex-shrink:0}
+
+.tracks-hero{position:relative;overflow:hidden;background:linear-gradient(180deg,var(--surface) 0%,var(--parchment) 55%,var(--parchment) 100%)}
+.tracks-hero::before{content:'';position:absolute;right:-120px;top:-100px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(36,84,168,.12),transparent 70%);animation:qorb 12s ease-in-out infinite;pointer-events:none}
+.tracks-hero::after{content:'';position:absolute;left:-80px;bottom:-120px;width:320px;height:320px;border-radius:50%;background:radial-gradient(circle,rgba(179,144,63,.12),transparent 70%);animation:qorb 16s ease-in-out infinite reverse;pointer-events:none}
+.tracks-hero>*{position:relative;z-index:1}
+
+.ib-syllabus-note{font-size:.78rem;color:var(--stone);margin:.4rem 0 1.4rem;line-height:1.6;max-width:62ch}
+.ib-syllabus-note strong{color:var(--ink);font-weight:600}
+.ib-stat-strip{display:flex;margin-bottom:1.8rem;border:1px solid var(--border);border-radius:12px;overflow:hidden;background:var(--white)}
+.ib-stat{flex:1;padding:1.1rem 1.4rem;border-right:1px solid var(--border)}
+.ib-stat:last-child{border-right:none}
+.ib-stat-num{font-family:'Cormorant Garamond',serif;font-size:1.7rem;font-weight:600;color:var(--forest);display:block;line-height:1}
+.ib-stat-label{font-size:.68rem;color:var(--stone);line-height:1.5;display:block;margin-top:.3rem}
+@media(max-width:960px){.ib-stat-strip{flex-wrap:wrap}.ib-stat{flex:1 1 50%;border-bottom:1px solid var(--border)}}
