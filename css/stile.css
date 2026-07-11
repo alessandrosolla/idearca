@@ -433,6 +433,11 @@ html[data-theme="dark"] .theme-toggle .icon-moon{display:block}
 .ib-timeline-dot.end{right:0}
 .ib-example-tag{font-size:.58rem;letter-spacing:.1em;text-transform:uppercase;padding:.2rem .6rem;border-radius:20px;background:var(--surface);color:var(--stone-light);border:1px dashed var(--border);flex-shrink:0}
 .t-prep{background:var(--surface);color:var(--stone-light);border:1px dashed var(--border)}
+.ib-open-row{display:flex;gap:.6rem;padding-left:4.2rem;flex-wrap:wrap}
+.ib-open-btn{font-size:.7rem;padding:.4rem 1rem;border-radius:20px;border:1px solid var(--border);background:var(--white);color:var(--forest);cursor:pointer;display:inline-flex;align-items:center;gap:.4rem;transition:all .2s;font-family:'Jost',sans-serif}
+.ib-open-btn:hover{border-color:var(--forest);background:var(--surface)}
+.ib-open-btn.prep{color:var(--stone-light);border-style:dashed;cursor:default}
+.ib-open-btn.prep:hover{background:none;border-color:var(--border)}
 .ib-block{margin-bottom:1.6rem}
 .ib-block:last-child{margin-bottom:0}
 
