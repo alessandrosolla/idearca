@@ -125,6 +125,7 @@ async function renderIBCases(){
   let html=`<div style="display:flex;gap:1.4rem;flex-wrap:wrap;margin-bottom:1.3rem">
     <a class="lib-add-link" onclick="openIBUpload('${ibArea}','${optArg}')">+ Aggiungi contenuto</a>
     <a class="lib-add-link" onclick="openBulkImport('${ibArea}','${optArg}')">+ Importa più righe</a>
+    <a class="lib-add-link" style="color:#c0392b" onclick="clearIBPlaceholders('${ibArea}','${optArg}')">🗑 Elimina i placeholder vuoti</a>
   </div>`;
   if(area.isIA) html+=`<div class="lib-empty" style="border-style:solid;margin-bottom:1.2rem">${area.desc}</div>`;
   if(!ibCasesCache.length){
@@ -306,6 +307,24 @@ function populateBulkOptSelect(){
   sel.innerHTML=Object.entries(a.options).map(([k,o])=>`<option value="${k}">${o.label}</option>`).join('');
 }
 function closeBulkImport(){document.getElementById('ib-bulk-overlay').classList.remove('on');}
+async function clearIBPlaceholders(area, option){
+  const ok = confirm('Questo elimina tutte le righe SENZA slide né homework caricati, per questa opzione. Le righe con contenuti reali non vengono toccate. Continuare?');
+  if(!ok) return;
+  const a = IB_STRUCTURE[area];
+  const key = ibKeyFor(area, a.noOptions?null:option);
+  try{
+    const res = await fetch(`${SB_URL}/rest/v1/materiali?programma=eq.ib&materia=eq.${encodeURIComponent(key)}&select=id,link,link_compito`,{headers:{'apikey':SB_KEY,'Authorization':'Bearer '+SB_KEY}});
+    const rows = await res.json();
+    const emptyIds = rows.filter(r => (!r.link || r.link==='#' || r.link.trim()==='') && (!r.link_compito || r.link_compito.trim()==='')).map(r=>r.id);
+    if(!emptyIds.length){ alert('Nessun placeholder vuoto trovato — tutte le righe hanno già un contenuto.'); return; }
+    const idList = emptyIds.join(',');
+    const delRes = await fetch(`${SB_URL}/rest/v1/materiali?id=in.(${idList})`,{method:'DELETE',headers:{'apikey':SB_KEY,'Authorization':'Bearer '+SB_KEY}});
+    if(delRes.ok || delRes.status===204){
+      alert(`Eliminate ${emptyIds.length} righe senza contenuti. Le righe con slide/homework reali sono rimaste intatte.`);
+      renderIBCases();
+    } else throw new Error(delRes.status);
+  }catch(e){ alert('Errore: '+e.message); }
+}
 async function bulkImportIB(){
   const area=document.getElementById('ib-bulk-area').value;
   const a=IB_STRUCTURE[area];
