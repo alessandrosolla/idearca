@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Idearca — Filosofia, Storia &amp; Educazione Civica</title>
 <script>try{var t=localStorage.getItem('idearca-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
-<link rel="stylesheet" href="css/stile.css?v=12">
+<link rel="stylesheet" href="css/stile.css?v=13">
 </head>
 <body style="">
 <div id="page-home">
@@ -368,6 +368,16 @@
     <div id="ib-up-fb" style="margin-top:.7rem;font-size:.78rem;min-height:1rem"></div>
   </div>
 </div>
+<div class="ib-viewer-overlay" id="ib-viewer-overlay">
+  <div class="ib-viewer-bar">
+    <span class="ib-viewer-title" id="ib-viewer-title"></span>
+    <div class="ib-viewer-acts">
+      <a id="ib-viewer-open" href="#" target="_blank" rel="noopener" class="ib-viewer-btn">Open in new tab ↗</a>
+      <button class="ib-viewer-btn" onclick="closeIBViewer()">Close ✕</button>
+    </div>
+  </div>
+  <iframe id="ib-viewer-frame" class="ib-viewer-frame" src="" title="Document viewer"></iframe>
+</div>
 <!-- PAGINA SELEZIONE PERCORSO INTERNAZIONALE -->
 <div id="page-tracks" style="display:none;min-height:100vh">
   <div class="lib-topbar">
@@ -521,7 +531,7 @@
     <div id="codes-body" style="padding:0 2rem 2rem;max-height:40vh;overflow-y:auto"></div>
   </div>
 </div>
-<script src="js/app.js?v=11"></script>
+<script src="js/app.js?v=12"></script>
 
 
 
