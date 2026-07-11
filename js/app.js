@@ -129,9 +129,7 @@ async function renderIBCases(){
     html+='<div class="mod-list">'+ibCasesCache.map((r,i)=>{
       const b=IB_BADGE[r.tipo]||{c:'t-pdf',l:'Extra'};
       const hasTimeline=r.anno_inizio&&r.anno_fine;
-      const href=r.link&&r.link!=='#'?r.link:'javascript:void(0)';
-      const tgt=r.link&&r.link!=='#'?'target="_blank" rel="noopener"':'';
-      return `<a class="mod-item" href="${href}" ${tgt} style="flex-direction:column;align-items:stretch;gap:.6rem;animation-delay:${i*.06}s">
+      return `<div class="mod-item" role="button" tabindex="0" onclick="openIBViewerById(${r.id})" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openIBViewerById(${r.id})}" style="cursor:pointer;flex-direction:column;align-items:stretch;gap:.6rem;animation-delay:${i*.06}s">
         <div style="display:flex;align-items:center;gap:1.6rem">
           <div class="mod-num">${String(i+1).padStart(2,'0')}</div>
           <div class="mod-body">
@@ -146,11 +144,28 @@ async function renderIBCases(){
           </div>
         </div>
         ${hasTimeline?`<div class="ib-timeline" style="padding-left:4.2rem"><span class="ib-timeline-year start">${r.anno_inizio}</span><div class="ib-timeline-bar"><span class="ib-timeline-dot start"></span><span class="ib-timeline-dot end"></span></div><span class="ib-timeline-year end">${r.anno_fine}</span></div>`:''}
-      </a>`;
+      </div>`;
     }).join('')+'</div>';
   }
   wrap.innerHTML=html;
 }
+function openIBViewerById(id){
+  const r=ibCasesCache.find(x=>x.id===id);
+  if(!r||!r.link||r.link==='#')return;
+  document.getElementById('ib-viewer-title').textContent=r.titolo||'';
+  document.getElementById('ib-viewer-open').href=r.link;
+  document.getElementById('ib-viewer-frame').src=r.link;
+  document.getElementById('ib-viewer-overlay').classList.add('on');
+  document.body.style.overflow='hidden';
+}
+function closeIBViewer(){
+  document.getElementById('ib-viewer-overlay').classList.remove('on');
+  document.getElementById('ib-viewer-frame').src='';
+  document.body.style.overflow='';
+}
+document.addEventListener('keydown',e=>{
+  if(e.key==='Escape'&&document.getElementById('ib-viewer-overlay')?.classList.contains('on'))closeIBViewer();
+});
 function openIBUpload(area,option){
   document.getElementById('ib-up-title').textContent='Aggiungi contenuto IB';
   document.getElementById('ib-up-btn').textContent='Salva';
