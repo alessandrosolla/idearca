@@ -374,7 +374,7 @@
   <div class="up-box">
     <button onclick="closeBulkImport()" style="position:absolute;top:1rem;right:1.2rem;background:none;border:none;cursor:pointer;font-size:1.3rem;color:var(--stone);width:30px;height:30px;display:flex;align-items:center;justify-content:center;border-radius:50%;transition:background .2s" onmouseover="this.style.background='var(--surface)'" onmouseout="this.style.background='none'">✕</button>
     <h3>Importa più righe</h3>
-    <p>Incolla righe copiate dallo Scheme of Work: <b>Blocco</b> e <b>Argomento della lezione</b>, separate da tabulazione (come vengono copiando da Excel). Puoi aggiungere due colonne facoltative, il <b>link della slide</b> e il <b>link dell'homework</b>: se ci sono, la lezione nasce già completa; se le lasci vuote nasce "in preparazione" e attacchi i file dopo con "Modifica".</p>
+    <p>Incolla righe copiate dallo Scheme of Work: due colonne, <b>Blocco</b> e <b>Argomento della lezione</b>, separate da tabulazione (come vengono copiando da Excel). Ogni riga diventa una lezione "in preparazione" — aggiungi il link con "Modifica" quando il materiale è pronto.</p>
     <div class="up-f"><label>Area</label>
       <select id="ib-bulk-area" onchange="populateBulkOptSelect()">
         <option value="guide">Course guide</option>
@@ -385,9 +385,9 @@
       </select>
     </div>
     <div class="up-f" id="ib-bulk-opt-wrap"><label>Opzione</label><select id="ib-bulk-opt"></select></div>
-    <div class="up-f"><label>Righe (Blocco [TAB] Argomento [TAB] link slide [TAB] link homework)</label>
+    <div class="up-f"><label>Righe (Blocco [TAB] Argomento)</label>
       <textarea id="ib-bulk-text" style="height:180px;font-family:monospace;font-size:.78rem" placeholder="1. Germania — Hitler&#9;La debolezza della Repubblica di Weimar
-1. Germania — Hitler&#9;L'ascesa del partito nazista&#9;https://.../slide.pdf&#9;https://.../homework.pdf"></textarea>
+1. Germania — Hitler&#9;L'ascesa del partito nazista"></textarea>
     </div>
     <div class="up-acts"><button class="btn-save" id="ib-bulk-btn" onclick="bulkImportIB()">Importa</button><button class="btn-can" onclick="closeBulkImport()">Annulla</button></div>
     <div id="ib-bulk-fb" style="margin-top:.7rem;font-size:.78rem;min-height:1rem"></div>
@@ -556,7 +556,7 @@
     <div id="codes-body" style="padding:0 2rem 2rem;max-height:40vh;overflow-y:auto"></div>
   </div>
 </div>
-<script src="js/app.js?v=18"></script>
+<script src="js/app.js?v=17"></script>
 
 
 
