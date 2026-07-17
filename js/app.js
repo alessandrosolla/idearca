@@ -339,12 +339,11 @@ async function bulkImportIB(){
     const parts=line.split('\t');
     if(parts.length<2)continue;
     const blocco=parts[0].trim(),titolo=parts[1].trim();
-    const link=(parts[2]||'').trim(),link_compito=(parts[3]||'').trim();
     if(!titolo)continue;
     if(/^blocco$/i.test(blocco)&&/^argomento/i.test(titolo))continue;
-    parsed.push({blocco,titolo,link,link_compito});
+    parsed.push({blocco,titolo});
   }
-  if(!parsed.length){fb.textContent='Nessuna riga valida (serve almeno Blocco [TAB] Argomento per riga).';fb.style.color='#c0392b';return;}
+  if(!parsed.length){fb.textContent='Nessuna riga valida (serve Blocco [TAB] Argomento per riga).';fb.style.color='#c0392b';return;}
   fb.textContent=`Importazione di ${parsed.length} righe...`;fb.style.color='var(--stone)';
   document.getElementById('ib-bulk-btn').disabled=true;
   try{
@@ -353,7 +352,7 @@ async function bulkImportIB(){
     let pos=(prr&&prr.length>0?(prr[0].posizione||0):0);
     const payloadRows=parsed.map(p=>{
       pos+=1;
-      return {materia,titolo:p.titolo,descrizione:'',tipo:'materiale',link:p.link,link_compito:p.link_compito,programma:'ib',blocco:p.blocco,posizione:pos};
+      return {materia,titolo:p.titolo,descrizione:'',tipo:'materiale',link:'',programma:'ib',blocco:p.blocco,posizione:pos};
     });
     const res=await fetch(`${SB_URL}/rest/v1/materiali`,{method:'POST',headers:{'apikey':SB_KEY,'Authorization':'Bearer '+SB_KEY,'Content-Type':'application/json','Prefer':'return=minimal'},body:JSON.stringify(payloadRows)});
     if(res.ok||res.status===201||res.status===204){
