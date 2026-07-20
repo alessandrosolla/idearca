@@ -125,7 +125,7 @@ async function renderIBCases(){
   let html=`<div style="display:flex;gap:1.4rem;flex-wrap:wrap;margin-bottom:1.3rem">
     <a class="lib-add-link" onclick="openIBUpload('${ibArea}','${optArg}')">+ Aggiungi contenuto</a>
     <a class="lib-add-link" onclick="openBulkImport('${ibArea}','${optArg}')">+ Importa più righe</a>
-    <a class="lib-add-link" style="color:#c0392b" onclick="clearIBPlaceholders('${ibArea}','${optArg}')">🗑 Elimina i placeholder vuoti</a>
+    <a class="lib-add-link" style="color:#c0392b" onclick="clearIBPlaceholders('${ibArea}','${optArg}')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" width="15" height="15"><path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9M18.16 5.79L16.5 21a2.25 2.25 0 01-2.244 2H9.744A2.25 2.25 0 017.5 21L5.84 5.79m12.32 0a48 48 0 00-12.32 0"></path></svg> Elimina i placeholder vuoti</a>
   </div>`;
   if(area.isIA) html+=`<div class="lib-empty" style="border-style:solid;margin-bottom:1.2rem">${area.desc}</div>`;
   if(!ibCasesCache.length){
@@ -165,8 +165,8 @@ async function renderIBCases(){
             </div>
             <span class="mod-type ${b.c}">${b.l}</span>
             <div class="mod-acts">
-              <button class="m-btn" onclick="editIBMod(${r.id})">✏️</button>
-              <button class="m-btn del" onclick="delIBMod(${r.id})">🗑</button>
+              <button class="m-btn" onclick="editIBMod(${r.id})"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" width="15" height="15"><path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931z"></path></svg></button>
+              <button class="m-btn del" onclick="delIBMod(${r.id})"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" width="15" height="15"><path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9M18.16 5.79L16.5 21a2.25 2.25 0 01-2.244 2H9.744A2.25 2.25 0 017.5 21L5.84 5.79m12.32 0a48 48 0 00-12.32 0"></path></svg></button>
             </div>
           </div>
           <div class="ib-open-row">${slideBtn}${hwBtn}</div>
@@ -339,11 +339,12 @@ async function bulkImportIB(){
     const parts=line.split('\t');
     if(parts.length<2)continue;
     const blocco=parts[0].trim(),titolo=parts[1].trim();
+    const link=(parts[2]||'').trim(),link_compito=(parts[3]||'').trim();
     if(!titolo)continue;
     if(/^blocco$/i.test(blocco)&&/^argomento/i.test(titolo))continue;
-    parsed.push({blocco,titolo});
+    parsed.push({blocco,titolo,link,link_compito});
   }
-  if(!parsed.length){fb.textContent='Nessuna riga valida (serve Blocco [TAB] Argomento per riga).';fb.style.color='#c0392b';return;}
+  if(!parsed.length){fb.textContent='Nessuna riga valida (serve almeno Blocco [TAB] Argomento per riga).';fb.style.color='#c0392b';return;}
   fb.textContent=`Importazione di ${parsed.length} righe...`;fb.style.color='var(--stone)';
   document.getElementById('ib-bulk-btn').disabled=true;
   try{
@@ -352,7 +353,7 @@ async function bulkImportIB(){
     let pos=(prr&&prr.length>0?(prr[0].posizione||0):0);
     const payloadRows=parsed.map(p=>{
       pos+=1;
-      return {materia,titolo:p.titolo,descrizione:'',tipo:'materiale',link:'',programma:'ib',blocco:p.blocco,posizione:pos};
+      return {materia,titolo:p.titolo,descrizione:'',tipo:'materiale',link:p.link,link_compito:p.link_compito,programma:'ib',blocco:p.blocco,posizione:pos};
     });
     const res=await fetch(`${SB_URL}/rest/v1/materiali`,{method:'POST',headers:{'apikey':SB_KEY,'Authorization':'Bearer '+SB_KEY,'Content-Type':'application/json','Prefer':'return=minimal'},body:JSON.stringify(payloadRows)});
     if(res.ok||res.status===201||res.status===204){
@@ -370,7 +371,11 @@ async function delIBMod(id){
 const go=id=>document.getElementById(id)?.scrollIntoView({behavior:'smooth'});
 function initReveal(){const obs=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('on');obs.unobserve(x.target)}}),{threshold:.1});document.querySelectorAll('.rev,.rev-l,.rev-r').forEach(el=>obs.observe(el));}
 function initParticles(){const c=document.getElementById('particles');if(!c)return;for(let i=0;i<20;i++){const p=document.createElement('div');p.className='particle';const s=Math.random()*5+2;p.style.cssText=`width:${s}px;height:${s}px;left:${Math.random()*100}%;animation-duration:${Math.random()*18+14}s;animation-delay:${Math.random()*16}s`;c.appendChild(p);}}
-window.addEventListener('scroll',()=>document.getElementById('main-nav')?.classList.toggle('scrolled',window.scrollY>50));
+window.addEventListener('scroll',()=>{
+  document.getElementById('main-nav')?.classList.toggle('scrolled',window.scrollY>50);
+  const bar=document.getElementById('scroll-progress');
+  if(bar){const h=document.documentElement.scrollHeight-window.innerHeight;bar.style.width=(h>0?(window.scrollY/h)*100:0)+'%';}
+},{passive:true});
 function scrollToLogin(){document.getElementById('login-section').scrollIntoView({behavior:'smooth',block:'center'});}
 function resetMsg(){document.getElementById('codice').classList.remove('err','ok');const m=document.getElementById('msg');m.textContent='';m.className='msg';}
 /* ── CHIAVE: getKeys gestisce TUTTI i formati ── */
@@ -518,7 +523,7 @@ async function doSearch(q){
     const res=await fetch(url,{headers:{'apikey':SB_KEY,'Authorization':'Bearer '+SB_KEY}});
     const rows=await res.json();
     if(!rows||!rows.length){box.innerHTML=`<div class="search-empty">Nessun risultato per &laquo;${escHtml(q)}&raquo;.</div>`;return;}
-    const TAB_LABEL={materiali:'Slide',fonti:'Fonte',esercizi:'Slide Approfondita',interdisciplinare:'Risorsa',compiti:'Compito'};
+    const TAB_LABEL={materiali:'Slide',fonti:'Fonte',esercizi:'Approfondimento',interdisciplinare:'Risorsa',compiti:'Compito'};
     box.innerHTML=rows.map(r=>{
       const m=MATERIE[r.materia]||{l:r.materia,g:''};
       return `<div class="search-result-item" onclick="goToSearchResult('${r.materia}','${r.tab}')">
@@ -591,7 +596,7 @@ async function renderSubject(key,tab){
     <div class="lib-tabs">
       <button class="lib-tab${ct==='materiali'?' active':''}" data-tab="materiali" onclick="switchTab('materiali')">Slide</button>
       <button class="lib-tab${ct==='fonti'?' active':''}" data-tab="fonti" onclick="switchTab('fonti')">Fonti</button>
-      <button class="lib-tab${ct==='esercizi'?' active':''}" data-tab="esercizi" onclick="switchTab('esercizi')">Slide Approfondite</button>
+      <button class="lib-tab${ct==='esercizi'?' active':''}" data-tab="esercizi" onclick="switchTab('esercizi')">Approfondimenti</button>
       <button class="lib-tab${ct==='interdisciplinare'?' active':''}" data-tab="interdisciplinare" onclick="switchTab('interdisciplinare')">Risorse</button>
       <button class="lib-tab${ct==='compiti'?' active':''}" data-tab="compiti" onclick="switchTab('compiti')">Compiti</button>
       ${isAdmin?`<a class="lib-add-link" style="margin-left:auto;font-size:.72rem;color:var(--forest);cursor:pointer;text-decoration:none;display:flex;align-items:center;padding:.6rem 0" onclick="openUploadFor('${key}')">+ Aggiungi</a>`:''}
@@ -633,8 +638,8 @@ async function renderSubject(key,tab){
         <div class="mod-body"><div class="mod-title">${r.titolo}</div><div class="mod-desc">${r.descrizione||''}</div></div>
         <span class="mod-type ${b.c}">${b.l}</span>
         ${isAdmin?`<div class="mod-acts" onclick="event.preventDefault();event.stopPropagation()">
-          <button class="m-btn" onclick="editMod(${r.id},'${key}','${r.titolo.replace(/'/g,"\'")}','${(r.descrizione||'').replace(/'/g,"\'")}','${r.tipo}','${r.link}')">✏️</button>
-          <button class="m-btn del" onclick="delMod(${r.id},'${key}')">🗑</button>
+          <button class="m-btn" onclick="editMod(${r.id},'${key}','${r.titolo.replace(/'/g,"\'")}','${(r.descrizione||'').replace(/'/g,"\'")}','${r.tipo}','${r.link}')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" width="15" height="15"><path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931z"></path></svg></button>
+          <button class="m-btn del" onclick="delMod(${r.id},'${key}')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" width="15" height="15"><path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9M18.16 5.79L16.5 21a2.25 2.25 0 01-2.244 2H9.744A2.25 2.25 0 017.5 21L5.84 5.79m12.32 0a48 48 0 00-12.32 0"></path></svg></button>
         </div>`:''}
       </a>`;
     }).join('');
@@ -839,7 +844,7 @@ async function loadPeekContent(tab){
       return `<div class="peek-item${isFeat?' featured':''}">
         <div class="peek-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="${isFeat?'M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z':'M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z'}"></path></svg></div>
         <div class="peek-item-title">${item.titolo}</div>
-        ${isOpen?`<a href="${item.link}" target="_blank" rel="noopener" class="peek-item-badge" onclick="event.stopPropagation()">Apri ↗</a>`:'<span class="peek-locked">🔒 riservato</span>'}
+        ${isOpen?`<a href="${item.link}" target="_blank" rel="noopener" class="peek-item-badge" onclick="event.stopPropagation()">Apri ↗</a>`:'<span class="peek-locked"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"></path></svg>riservato</span>'}
       </div>`;
     };
 
@@ -879,7 +884,7 @@ async function loadPeekContent(tab){
           if(items.length>3)html+=`<div class="peek-more">+ altre ${items.length-3} slide...</div>`;
           html+='</div>';
         });
-      } else html='<p style="text-align:center;color:var(--stone);font-size:.85rem;padding:2rem">Nessuna slide approfondita disponibile.</p>';
+      } else html='<p style="text-align:center;color:var(--stone);font-size:.85rem;padding:2rem">Nessun approfondimento disponibile.</p>';
     } else if(tab==='risorse'){
       // Mostra risorse per gruppo condiviso
       ['Filosofia','Storia'].forEach(gruppo=>{
@@ -909,7 +914,7 @@ async function loadPeekContent(tab){
           items.forEach((item,i)=>{html+=mkItem(item,i);});
           html+='</div>';
         });
-      } else html='<div style="text-align:center;padding:2.5rem"><div style="font-size:2rem;margin-bottom:1rem">📝</div><p style="color:var(--stone);font-size:.85rem">Nessun compito assegnato al momento.</p></div>';
+      } else html='<div style="text-align:center;padding:2.5rem"><svg viewBox="0 0 24 24" fill="none" stroke="var(--stone-light)" stroke-width="1.4" style="width:34px;height:34px;margin:0 auto 1rem"><path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.931-8.931zM19.5 7.125L16.875 4.5"></path></svg><p style="color:var(--stone);font-size:.85rem">Nessun compito assegnato al momento.</p></div>';
     }
 
     body.innerHTML=html;
