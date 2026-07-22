@@ -609,7 +609,9 @@ async function renderSubject(key,tab){
     // Per le risorse: usa risorse condivise (fil-contemporanea per filosofia, sto-medievale per storia)
     let fetchKey=key;
     let materiaFilter=`materia=eq.${fetchKey}`;
-    if(ct==='compiti'){
+    if(ct==='interdisciplinare' && MATERIE[key]?.g==='Filosofia'){
+      fetchKey='fil-contemporanea'; materiaFilter=`materia=eq.${fetchKey}`;
+    } else if(ct==='compiti'){
       const g=MATERIE[key]?.g;
       const groupKeys=Object.keys(MATERIE).filter(k=>MATERIE[k].g===g);
       materiaFilter=`materia=in.(${groupKeys.join(',')})`;
