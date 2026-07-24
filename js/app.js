@@ -1,6 +1,19 @@
 const SB_URL='https://mqjceddrbhpwqjomhohm.supabase.co';
 const SB_KEY='sb_publishable_D7vDsaervKNJNgdJwknDpQ_Vuuf9CeJ';
-const ADMIN='PALETTA123!';
+/* ── LOGIN DOCENTE ──────────────────────────────────────────
+   Il docente entra con un vero login verificato dai server di
+   Supabase (Supabase Auth). L'email qui sotto NON è un segreto
+   (le email non lo sono); la password è controllata dal server
+   e non compare da nessuna parte nel codice.
+   IMPORTANTE: crea su Supabase un utente con ESATTAMENTE questa
+   email. Se preferisci un'altra email, cambiala qui e usala anche
+   quando crei l'utente su Supabase.
+   ──────────────────────────────────────────────────────────── */
+const ADMIN_EMAIL='alessandro.solla.00@gmail.com';
+let ATK=sessionStorage.getItem('atk')||''; // token temporaneo del docente autenticato
+/* Intestazioni per le operazioni di SCRITTURA: usano il token del
+   docente autenticato. Senza login docente valido, il server rifiuta. */
+function wHead(extra){return Object.assign({'apikey':SB_KEY,'Authorization':'Bearer '+(ATK||SB_KEY)},extra||{});}
 const MATERIE={
   'fil-antica':{g:'Filosofia',l:'Filosofia Antica',p:'VIII – III sec. a.C.'},
   'fil-medievale':{g:'Filosofia',l:'Filosofia Medievale',p:'I – XIV sec. d.C.'},
@@ -278,11 +291,11 @@ async function saveIBModule(){
   try{
     let res;
     if(id){
-      res=await fetch(`${SB_URL}/rest/v1/materiali?id=eq.${id}`,{method:'PATCH',headers:{'apikey':SB_KEY,'Authorization':'Bearer '+SB_KEY,'Content-Type':'application/json','Prefer':'return=minimal'},body:JSON.stringify(payload)});
+      res=await fetch(`${SB_URL}/rest/v1/materiali?id=eq.${id}`,{method:'PATCH',headers:wHead({'Content-Type':'application/json','Prefer':'return=minimal'}),body:JSON.stringify(payload)});
     }else{
       const pr=await fetch(`${SB_URL}/rest/v1/materiali?materia=eq.${encodeURIComponent(materia)}&select=posizione&order=posizione.desc&limit=1`,{headers:{'apikey':SB_KEY,'Authorization':'Bearer '+SB_KEY}});
       const prr=await pr.json();const pos=(prr&&prr.length>0?(prr[0].posizione||0):0)+1;
-      res=await fetch(`${SB_URL}/rest/v1/materiali`,{method:'POST',headers:{'apikey':SB_KEY,'Authorization':'Bearer '+SB_KEY,'Content-Type':'application/json','Prefer':'return=minimal'},body:JSON.stringify({...payload,posizione:pos})});
+      res=await fetch(`${SB_URL}/rest/v1/materiali`,{method:'POST',headers:wHead({'Content-Type':'application/json','Prefer':'return=minimal'}),body:JSON.stringify({...payload,posizione:pos})});
     }
     if(res.ok||res.status===201||res.status===204){fb.textContent='✓ Salvato!';fb.style.color='var(--forest)';setTimeout(()=>{closeIBUpload();renderIBCases();},900);}
     else throw new Error(res.status);
@@ -318,7 +331,7 @@ async function clearIBPlaceholders(area, option){
     const emptyIds = rows.filter(r => (!r.link || r.link==='#' || r.link.trim()==='') && (!r.link_compito || r.link_compito.trim()==='')).map(r=>r.id);
     if(!emptyIds.length){ alert('Nessun placeholder vuoto trovato — tutte le righe hanno già un contenuto.'); return; }
     const idList = emptyIds.join(',');
-    const delRes = await fetch(`${SB_URL}/rest/v1/materiali?id=in.(${idList})`,{method:'DELETE',headers:{'apikey':SB_KEY,'Authorization':'Bearer '+SB_KEY}});
+    const delRes = await fetch(`${SB_URL}/rest/v1/materiali?id=in.(${idList})`,{method:'DELETE',headers:wHead()});
     if(delRes.ok || delRes.status===204){
       alert(`Eliminate ${emptyIds.length} righe senza contenuti. Le righe con slide/homework reali sono rimaste intatte.`);
       renderIBCases();
@@ -355,7 +368,7 @@ async function bulkImportIB(){
       pos+=1;
       return {materia,titolo:p.titolo,descrizione:'',tipo:'materiale',link:p.link,link_compito:p.link_compito,programma:'ib',blocco:p.blocco,posizione:pos};
     });
-    const res=await fetch(`${SB_URL}/rest/v1/materiali`,{method:'POST',headers:{'apikey':SB_KEY,'Authorization':'Bearer '+SB_KEY,'Content-Type':'application/json','Prefer':'return=minimal'},body:JSON.stringify(payloadRows)});
+    const res=await fetch(`${SB_URL}/rest/v1/materiali`,{method:'POST',headers:wHead({'Content-Type':'application/json','Prefer':'return=minimal'}),body:JSON.stringify(payloadRows)});
     if(res.ok||res.status===201||res.status===204){
       fb.textContent=`✓ Importate ${parsed.length} lezioni!`;fb.style.color='var(--forest)';
       setTimeout(()=>{closeBulkImport();renderIBCases();},1000);
@@ -365,7 +378,7 @@ async function bulkImportIB(){
 }
 async function delIBMod(id){
   if(!confirm('Eliminare questo contenuto?'))return;
-  try{const r=await fetch(`${SB_URL}/rest/v1/materiali?id=eq.${id}`,{method:'DELETE',headers:{'apikey':SB_KEY,'Authorization':'Bearer '+SB_KEY,'Prefer':'return=minimal'}});if(r.ok||r.status===204)renderIBCases();}catch(e){alert('Errore di connessione.');}
+  try{const r=await fetch(`${SB_URL}/rest/v1/materiali?id=eq.${id}`,{method:'DELETE',headers:wHead({'Prefer':'return=minimal'})});if(r.ok||r.status===204)renderIBCases();}catch(e){alert('Errore di connessione.');}
 }
 
 const go=id=>document.getElementById(id)?.scrollIntoView({behavior:'smooth'});
@@ -397,25 +410,37 @@ function getKeys(materie){
 }
 async function login(){
   const btn=document.getElementById('login-btn'),input=document.getElementById('codice'),msg=document.getElementById('msg');
-  const code=input.value.trim().toUpperCase().replace(/\s+/g,'');
+  const raw=input.value.trim();
+  const code=raw.toUpperCase().replace(/\s+/g,'');
   if(!code){msg.textContent='Inserisci il codice.';msg.className='msg err';input.classList.add('err');return;}
   btn.disabled=true;btn.textContent='Verifica in corso...';
-  if(code===ADMIN.toUpperCase()){
-    sessionStorage.setItem('ix',JSON.stringify({code,nome:'Alessandro Solla',ruolo:'docente',materie:'all'}));
-    input.classList.add('ok');msg.textContent='Accesso docente confermato.';msg.className='msg ok';
-    setTimeout(()=>{document.getElementById('form-state').style.display='none';document.getElementById('welcome-name').textContent='Alessandro Solla';document.getElementById('success-state').classList.add('on');},600);
-    btn.disabled=false;btn.textContent='Entra nella piattaforma';return;
-  }
   try{
-    const res=await fetch(`${SB_URL}/rest/v1/codici?codice=eq.${encodeURIComponent(code)}&select=*`,{headers:{'apikey':SB_KEY,'Authorization':'Bearer '+SB_KEY}});
+    // 1) Prova come STUDENTE: la verifica avviene tramite una funzione
+    //    sicura lato server (verify_code), senza mai esporre l'elenco dei codici.
+    const res=await fetch(`${SB_URL}/rest/v1/rpc/verify_code`,{method:'POST',headers:{'apikey':SB_KEY,'Authorization':'Bearer '+SB_KEY,'Content-Type':'application/json'},body:JSON.stringify({p_code:code})});
     const rows=await res.json();
-    if(!rows||!rows.length) throw {m:'Codice non riconosciuto. Contatta il docente.'};
-    const r=rows[0];
-    if(r.attivo===false) throw {m:'Codice disabilitato. Contatta il docente.'};
-    if(r.scadenza&&new Date(r.scadenza)<new Date()) throw {m:'Codice scaduto. Contatta il docente.'};
-    sessionStorage.setItem('ix',JSON.stringify({code,nome:r.nome,ruolo:r.ruolo,materie:r.materie}));
-    input.classList.add('ok');msg.textContent='Accesso confermato: '+r.nome;msg.className='msg ok';
-    setTimeout(()=>{document.getElementById('form-state').style.display='none';document.getElementById('welcome-name').textContent=r.nome;document.getElementById('success-state').classList.add('on');},600);
+    if(Array.isArray(rows)&&rows.length){
+      const r=rows[0];
+      if(r.attivo===false) throw {m:'Codice disabilitato. Contatta il docente.'};
+      if(r.scadenza&&new Date(r.scadenza)<new Date()) throw {m:'Codice scaduto. Contatta il docente.'};
+      ATK='';sessionStorage.removeItem('atk');
+      sessionStorage.setItem('ix',JSON.stringify({code,nome:r.nome,ruolo:r.ruolo,materie:r.materie}));
+      input.classList.add('ok');msg.textContent='Accesso confermato: '+r.nome;msg.className='msg ok';
+      setTimeout(()=>{document.getElementById('form-state').style.display='none';document.getElementById('welcome-name').textContent=r.nome;document.getElementById('success-state').classList.add('on');},600);
+      btn.disabled=false;btn.textContent='Entra nella piattaforma';return;
+    }
+    // 2) Prova come DOCENTE: login vero verificato dai server Supabase
+    //    (email fissa + password digitata nel campo). La password non è nel codice.
+    const auth=await fetch(`${SB_URL}/auth/v1/token?grant_type=password`,{method:'POST',headers:{'apikey':SB_KEY,'Content-Type':'application/json'},body:JSON.stringify({email:ADMIN_EMAIL,password:raw})});
+    if(auth.ok){
+      const data=await auth.json();
+      ATK=data.access_token;sessionStorage.setItem('atk',ATK);
+      sessionStorage.setItem('ix',JSON.stringify({nome:'Alessandro Solla',ruolo:'docente',materie:'all'}));
+      input.classList.add('ok');msg.textContent='Accesso docente confermato.';msg.className='msg ok';
+      setTimeout(()=>{document.getElementById('form-state').style.display='none';document.getElementById('welcome-name').textContent='Alessandro Solla';document.getElementById('success-state').classList.add('on');},600);
+      btn.disabled=false;btn.textContent='Entra nella piattaforma';return;
+    }
+    throw {m:'Codice non riconosciuto. Contatta il docente.'};
   }catch(e){input.classList.add('err');msg.textContent=e.m||'Errore di connessione.';msg.className='msg err';input.value='';setTimeout(()=>input.focus(),100);}
   btn.disabled=false;btn.textContent='Entra nella piattaforma';
 }
@@ -648,6 +673,7 @@ async function renderSubject(key,tab){
 }
 
 function logout(){
+  ATK='';sessionStorage.removeItem('atk');
   sessionStorage.removeItem('ix');
   document.getElementById('page-library').style.display='none';
   document.getElementById('page-home').style.display='block';
@@ -698,11 +724,11 @@ async function saveModule(){
   document.getElementById('up-btn').disabled=true;
   try{
     let res;
-    if(id){res=await fetch(`${SB_URL}/rest/v1/materiali?id=eq.${id}`,{method:'PATCH',headers:{'apikey':SB_KEY,'Authorization':'Bearer '+SB_KEY,'Content-Type':'application/json','Prefer':'return=minimal'},body:JSON.stringify({materia:mat,titolo:tit,descrizione:desc,tipo,link,tab:tabVal})});}
+    if(id){res=await fetch(`${SB_URL}/rest/v1/materiali?id=eq.${id}`,{method:'PATCH',headers:wHead({'Content-Type':'application/json','Prefer':'return=minimal'}),body:JSON.stringify({materia:mat,titolo:tit,descrizione:desc,tipo,link,tab:tabVal})});}
     else{
       const pr=await fetch(`${SB_URL}/rest/v1/materiali?materia=eq.${mat}&select=posizione&order=posizione.desc&limit=1`,{headers:{'apikey':SB_KEY,'Authorization':'Bearer '+SB_KEY}});
       const prr=await pr.json();const pos=(prr&&prr.length>0?(prr[0].posizione||0):0)+1;
-      res=await fetch(`${SB_URL}/rest/v1/materiali`,{method:'POST',headers:{'apikey':SB_KEY,'Authorization':'Bearer '+SB_KEY,'Content-Type':'application/json','Prefer':'return=minimal'},body:JSON.stringify({materia:mat,titolo:tit,descrizione:desc,tipo,link,posizione:pos,tab:tabVal})});
+      res=await fetch(`${SB_URL}/rest/v1/materiali`,{method:'POST',headers:wHead({'Content-Type':'application/json','Prefer':'return=minimal'}),body:JSON.stringify({materia:mat,titolo:tit,descrizione:desc,tipo,link,posizione:pos,tab:tabVal})});
     }
     if(res.ok||res.status===201||res.status===204){fb.textContent='✓ Salvato!';fb.style.color='var(--forest)';setTimeout(()=>{closeUpload();renderSubject(mat);},900);}
     else throw new Error(res.status);
@@ -711,7 +737,7 @@ async function saveModule(){
 }
 async function delMod(id,key){
   if(!confirm('Eliminare questo materiale?')) return;
-  try{const r=await fetch(`${SB_URL}/rest/v1/materiali?id=eq.${id}`,{method:'DELETE',headers:{'apikey':SB_KEY,'Authorization':'Bearer '+SB_KEY,'Prefer':'return=minimal'}});if(r.ok||r.status===204)renderSubject(key);}catch(e){alert('Errore di connessione.');}
+  try{const r=await fetch(`${SB_URL}/rest/v1/materiali?id=eq.${id}`,{method:'DELETE',headers:wHead({'Prefer':'return=minimal'})});if(r.ok||r.status===204)renderSubject(key);}catch(e){alert('Errore di connessione.');}
 }
 function showCodesGuide(){document.getElementById('codes-overlay').classList.add('on');loadCodes();}
 function closeCodesModal(){document.getElementById('codes-overlay').classList.remove('on');}
@@ -719,7 +745,7 @@ async function loadCodes(){
   const body=document.getElementById('codes-body');
   body.innerHTML='<div class="lib-spinner"></div>';
   try{
-    const res=await fetch(SB_URL+'/rest/v1/codici?select=*&order=creato_il.desc',{headers:{'apikey':SB_KEY,'Authorization':'Bearer '+SB_KEY}});
+    const res=await fetch(SB_URL+'/rest/v1/codici?select=*&order=creato_il.desc',{headers:wHead()});
     const rows=await res.json();
     if(!rows||!rows.length){body.innerHTML='<p style="text-align:center;color:var(--stone);padding:2rem">Nessun codice ancora creato.</p>';return;}
     let html='<div class="codes-list">';
@@ -745,14 +771,14 @@ async function loadCodes(){
 }
 async function toggleCode(id,isActive){
   try{
-    await fetch(SB_URL+'/rest/v1/codici?id=eq.'+id,{method:'PATCH',headers:{'apikey':SB_KEY,'Authorization':'Bearer '+SB_KEY,'Content-Type':'application/json','Prefer':'return=minimal'},body:JSON.stringify({attivo:!isActive})});
+    await fetch(SB_URL+'/rest/v1/codici?id=eq.'+id,{method:'PATCH',headers:wHead({'Content-Type':'application/json','Prefer':'return=minimal'}),body:JSON.stringify({attivo:!isActive})});
     loadCodes();
   }catch(e){alert('Errore.');}
 }
 async function deleteCode(id){
   if(!confirm('Eliminare questo codice?')) return;
   try{
-    await fetch(SB_URL+'/rest/v1/codici?id=eq.'+id,{method:'DELETE',headers:{'apikey':SB_KEY,'Authorization':'Bearer '+SB_KEY,'Prefer':'return=minimal'}});
+    await fetch(SB_URL+'/rest/v1/codici?id=eq.'+id,{method:'DELETE',headers:wHead({'Prefer':'return=minimal'})});
     loadCodes();
   }catch(e){alert('Errore.');}
 }
@@ -765,7 +791,7 @@ async function createCode(){
   if(!codice||!nome){fb.textContent='Compila codice e nome.';fb.style.color='#c0392b';return;}
   fb.textContent='Creazione...';fb.style.color='var(--stone)';
   try{
-    const res=await fetch(SB_URL+'/rest/v1/codici',{method:'POST',headers:{'apikey':SB_KEY,'Authorization':'Bearer '+SB_KEY,'Content-Type':'application/json','Prefer':'return=minimal'},body:JSON.stringify({codice,nome,ruolo,materie,attivo:true})});
+    const res=await fetch(SB_URL+'/rest/v1/codici',{method:'POST',headers:wHead({'Content-Type':'application/json','Prefer':'return=minimal'}),body:JSON.stringify({codice,nome,ruolo,materie,attivo:true})});
     if(res.ok||res.status===201){
       fb.textContent='✓ Codice creato!';fb.style.color='var(--forest)';
       document.getElementById('new-code').value='';
