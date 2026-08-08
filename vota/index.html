@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vota — Idearca</title>
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0;min-height:100%}
+  body{
+    background:#FBF7F0;color:#1F1B16;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    display:flex;align-items:flex-start;justify-content:center;padding:1.5rem 1.1rem 3rem;
+    -webkit-font-smoothing:antialiased;
+  }
+  .foglio{width:100%;max-width:520px}
+  .kicker{font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:#5A5148;font-weight:700}
+  h1{font-family:Georgia,"Times New Roman",serif;font-size:1.7rem;margin:.4rem 0 1.4rem}
+  .domanda{
+    background:#fff;border:1px solid #E3DACB;border-radius:12px;padding:1.4rem 1.3rem;
+    font-size:1.28rem;line-height:1.4;font-weight:600;margin-bottom:1.1rem;
+  }
+  input[type=text]{
+    font:inherit;font-size:1.15rem;width:100%;padding:.9rem 1rem;
+    border:1px solid #E3DACB;border-radius:10px;background:#fff;
+  }
+  button{
+    font:inherit;font-weight:700;cursor:pointer;
+    border:1px solid #E3DACB;border-radius:10px;background:#fff;color:#1F1B16;
+    padding:1rem 1.1rem;width:100%;font-size:1.05rem;text-align:left;
+    margin-bottom:.6rem;line-height:1.35;
+  }
+  button:active{transform:scale(.99)}
+  button.primario{background:#1F1B16;color:#fff;border-color:#1F1B16;text-align:center}
+  .aiuto{font-size:.86rem;color:#5A5148;line-height:1.6;margin-top:.8rem}
+  .esito{
+    background:#fff;border:1px solid #E3DACB;border-left:4px solid #4FA82F;
+    border-radius:10px;padding:1.2rem 1.3rem;font-size:1rem;line-height:1.55;
+  }
+  .attesa{
+    border:1px dashed #D8CDBA;border-radius:12px;padding:2.4rem 1.4rem;
+    text-align:center;color:#5A5148;line-height:1.6;
+  }
+  .puntino{display:inline-block;width:8px;height:8px;border-radius:50%;
+    background:#8A7355;margin:0 2px;animation:p 1.2s infinite}
+  .puntino:nth-child(2){animation-delay:.2s}
+  .puntino:nth-child(3){animation-delay:.4s}
+  @keyframes p{0%,60%,100%{opacity:.25}30%{opacity:1}}
+  .err{color:#C0453B;font-size:.9rem;margin-top:.6rem;min-height:1.2rem}
+</style>
+</head>
+<body>
+<div class="foglio" id="foglio"></div>
+
+<script>
+/* ══════════════════════════════════════════════════════════
+   VOTA — Idearca
+   Pagina per gli studenti. Non legge nessuna tabella: chiede
+   allo "sportello" del database qual è la domanda proiettata in
+   questo momento, e manda la risposta dallo stesso sportello.
+   Nessun nome, nessun accesso: la risposta è anonima.
+   ══════════════════════════════════════════════════════════ */
+
+const SB_URL = 'https://mqjceddrbhpwqjomhohm.supabase.co';
+const SB_KEY = 'sb_publishable_D7vDsaervKNJNgdJw';
+
+const el = document.getElementById('foglio');
+let codice = (new URLSearchParams(location.search).get('c') || '').trim();
+let domanda = null;         // domanda attualmente proiettata
+let giaRisposto = false;
+let orologio = null;
+
+function esc(s){ return (s||'').replace(/[&<>"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+function intest(){ return {'apikey':SB_KEY,'Authorization':'Bearer '+SB_KEY,'Content-Type':'application/json'}; }
+
+/* ricorda a quali domande si ha già risposto, così ricaricando la
+   pagina non si vota due volte la stessa */
+function segnaRisposta(id){
+  try{
+    const v = JSON.parse(localStorage.getItem('voti') || '[]');
+    if(!v.includes(id)){ v.push(id); localStorage.setItem('voti', JSON.stringify(v.slice(-80))); }
+  }catch(_){}
+}
+function haGiaRisposto(id){
+  try{ return JSON.parse(localStorage.getItem('voti') || '[]').includes(id); }catch(_){ return false; }
+}
+
+/* ---------- schermate ---------- */
+function schermataCodice(errore){
+  el.innerHTML = `
+    <div class="kicker">Idearca</div>
+    <h1>Entra nella votazione</h1>
+    <input type="text" id="c" inputmode="numeric" autocomplete="off"
+           placeholder="Codice a 6 cifre" value="${esc(codice)}" maxlength="8">
+    <div class="err">${esc(errore||'')}</div>
+    <button class="primario" onclick="entra()">Entra</button>
+    <p class="aiuto">Il codice è proiettato sulla lavagna. Non serve nessun accesso e la tua
+    risposta è anonima: nessuno può sapere che cosa hai scritto tu.</p>`;
+  const i = document.getElementById('c');
+  i.focus();
+  i.addEventListener('keydown', e=>{ if(e.key === 'Enter') entra(); });
+}
+
+function schermataAttesa(){
+  el.innerHTML = `
+    <div class="kicker">Codice ${esc(codice)}</div>
+    <h1>Sei dentro</h1>
+    <div class="attesa">
+      In attesa della prossima domanda<br>
+      <span class="puntino"></span><span class="puntino"></span><span class="puntino"></span>
+      <div style="margin-top:1rem;font-size:.86rem">Lascia aperta questa pagina.</div>
+    </div>`;
+}
+
+function schermataDomanda(d){
+  const opzioni = Array.isArray(d.opzioni) ? d.opzioni : [];
+  el.innerHTML = `
+    <div class="kicker">Codice ${esc(codice)}</div>
+    <div class="domanda">${esc(d.testo)}</div>
+    ${d.tipo === 'scelta'
+      ? opzioni.map((o,i)=>`<button onclick="invia(${JSON.stringify(String(o)).replace(/"/g,'&quot;')})">${esc(String(o))}</button>`).join('')
+      : `<input type="text" id="risposta" maxlength="40" autocomplete="off"
+              placeholder="Una o due parole">
+         <div class="err" id="err"></div>
+         <button class="primario" onclick="inviaTesto()">Invia</button>
+         <p class="aiuto">Scrivi poche parole: compariranno sullo schermo insieme a quelle
+         dei tuoi compagni, e più una parola viene ripetuta più diventa grande.</p>`}`;
+  const i = document.getElementById('risposta');
+  if(i){ i.focus(); i.addEventListener('keydown', e=>{ if(e.key === 'Enter') inviaTesto(); }); }
+}
+
+function schermataInviata(){
+  el.innerHTML = `
+    <div class="kicker">Codice ${esc(codice)}</div>
+    <h1>Risposta inviata</h1>
+    <div class="esito">La tua risposta è arrivata. Guarda lo schermo per i risultati.<br>
+      <span style="color:#5A5148;font-size:.9rem">Resta qui: quando comparirà la prossima domanda
+      la vedrai automaticamente.</span></div>`;
+}
+
+/* ---------- rete ---------- */
+async function entra(){
+  const v = document.getElementById('c').value.trim();
+  if(!v){ schermataCodice('Scrivi il codice.'); return; }
+  codice = v;
+  const d = await chiediDomanda();
+  if(d === null){ schermataCodice('Codice non valido, o la votazione non è aperta.'); return; }
+  history.replaceState(null,'', '?c='+encodeURIComponent(codice));
+  aggiorna(d);
+  avviaOrologio();
+}
+
+async function chiediDomanda(){
+  try{
+    const res = await fetch(SB_URL+'/rest/v1/rpc/menti_domanda_attiva', {
+      method:'POST', headers:intest(), body: JSON.stringify({p_codice: codice})
+    });
+    if(!res.ok) return null;
+    const righe = await res.json();
+    return Array.isArray(righe) && righe.length ? righe[0] : undefined;   // undefined = nessuna domanda ora
+  }catch(_){ return null; }
+}
+
+function aggiorna(d){
+  if(d === undefined || d === null){ if(!domanda) schermataAttesa(); return; }
+  if(domanda && d.domanda_id === domanda.domanda_id) return;   // stessa domanda, non ridisegnare
+  domanda = d;
+  giaRisposto = haGiaRisposto(d.domanda_id);
+  if(giaRisposto) schermataInviata(); else schermataDomanda(d);
+}
+
+function avviaOrologio(){
+  if(orologio) clearInterval(orologio);
+  orologio = setInterval(async ()=>{
+    const d = await chiediDomanda();
+    if(d === null) return;
+    if(d === undefined){
+      if(domanda){ domanda = null; schermataAttesa(); }
+      return;
+    }
+    aggiorna(d);
+  }, 2500);
+}
+
+function inviaTesto(){
+  const i = document.getElementById('risposta');
+  const v = (i.value || '').trim();
+  if(!v){ document.getElementById('err').textContent = 'Scrivi qualcosa.'; return; }
+  invia(v);
+}
+
+async function invia(valore){
+  if(!domanda || giaRisposto) return;
+  giaRisposto = true;
+  try{
+    const res = await fetch(SB_URL+'/rest/v1/rpc/menti_vota', {
+      method:'POST', headers:intest(),
+      body: JSON.stringify({p_codice: codice, p_domanda: domanda.domanda_id, p_valore: valore})
+    });
+    const ok = res.ok && (await res.json()) === true;
+    if(ok){ segnaRisposta(domanda.domanda_id); schermataInviata(); }
+    else{
+      giaRisposto = false;
+      const e = document.getElementById('err');
+      if(e) e.textContent = 'La domanda è stata chiusa: aspetta la prossima.';
+    }
+  }catch(err){
+    giaRisposto = false;
+    const e = document.getElementById('err');
+    if(e) e.textContent = 'Errore di rete, riprova.';
+  }
+}
+
+/* ---------- avvio ---------- */
+if(codice){ entra(); } else { schermataCodice(); }
+</script>
+</body>
+</html>

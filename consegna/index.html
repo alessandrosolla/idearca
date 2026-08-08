@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Consegna un compito — Idearca</title>
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0;min-height:100%}
+  body{
+    background:#FBF7F0;color:#1F1B16;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    display:flex;justify-content:center;padding:1.6rem 1.1rem 3.5rem;
+    -webkit-font-smoothing:antialiased;
+  }
+  .foglio{width:100%;max-width:560px}
+  .kicker{font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:#5A5148;font-weight:700}
+  h1{font-family:Georgia,"Times New Roman",serif;font-size:1.8rem;margin:.4rem 0 .6rem}
+  .intro{color:#5A5148;font-size:.95rem;line-height:1.6;margin-bottom:1.6rem}
+  label{display:block;font-size:.82rem;font-weight:700;margin:1rem 0 .35rem}
+  input,textarea{font:inherit;width:100%;padding:.75rem .9rem;border:1px solid #E3DACB;
+    border-radius:10px;background:#fff}
+  textarea{min-height:9rem;resize:vertical;line-height:1.5}
+  .due{display:flex;gap:.7rem}
+  .due>div{flex:1}
+  button{font:inherit;font-weight:700;cursor:pointer;border:1px solid #1F1B16;
+    border-radius:10px;background:#1F1B16;color:#fff;padding:.95rem 1.1rem;width:100%;
+    font-size:1.02rem;margin-top:1.4rem}
+  button:disabled{opacity:.55;cursor:default}
+  .aiuto{font-size:.82rem;color:#5A5148;margin-top:.4rem;line-height:1.55}
+  .err{color:#C0453B;font-size:.9rem;margin-top:.7rem;min-height:1.2rem}
+  .esito{background:#fff;border:1px solid #E3DACB;border-left:4px solid #4FA82F;
+    border-radius:10px;padding:1.4rem 1.4rem;line-height:1.6}
+  .file{border:1px dashed #D8CDBA;border-radius:10px;padding:.9rem 1rem;background:#fff}
+  .file input{border:none;padding:0;background:none}
+  .anteprima{margin-top:.7rem;display:none}
+  .anteprima img{max-width:100%;max-height:190px;border-radius:8px;display:block}
+  .peso{font-size:.8rem;color:#5A5148;margin-top:.4rem}
+</style>
+</head>
+<body>
+<div class="foglio" id="foglio">
+
+  <div class="kicker">Idearca</div>
+  <h1>Consegna un compito</h1>
+  <p class="intro">Quello che invii lo legge solo il professore. Nessun altro studente
+  può vedere la tua consegna.</p>
+
+  <div class="due">
+    <div>
+      <label for="nome">Nome e cognome</label>
+      <input type="text" id="nome" maxlength="80" autocomplete="name">
+    </div>
+    <div>
+      <label for="classe">Classe</label>
+      <input type="text" id="classe" maxlength="20" placeholder="3A">
+    </div>
+  </div>
+
+  <label for="attivita">Di quale compito si tratta</label>
+  <input type="text" id="attivita" maxlength="120" placeholder="es. Debate — le crociate">
+
+  <label for="testo">La tua risposta</label>
+  <textarea id="testo" maxlength="20000" placeholder="Scrivi qui."></textarea>
+
+  <label for="file">Allegato (facoltativo)</label>
+  <div class="file">
+    <input type="file" id="file" accept="image/*,application/pdf" onchange="scegliFile()">
+    <div class="anteprima" id="anteprima"><img id="img"><div class="peso" id="peso"></div></div>
+  </div>
+  <p class="aiuto">Puoi allegare una foto del quaderno o un PDF. Le foto vengono rimpicciolite
+  qui sul telefono prima di partire: restano leggibili e pesano dieci volte meno.</p>
+
+  <div class="err" id="err"></div>
+  <button id="invia" onclick="invia()">Invia la consegna</button>
+</div>
+
+<script>
+/* ══════════════════════════════════════════════════════════
+   CONSEGNA — Idearca
+   Gli studenti possono solo imbucare: le regole del database
+   consentono l'inserimento ma non la lettura, quindi nessuno può
+   vedere le consegne altrui né le proprie.
+   ══════════════════════════════════════════════════════════ */
+
+const SB_URL = 'https://mqjceddrbhpwqjomhohm.supabase.co';
+const SB_KEY = 'sb_publishable_D7vDsaervKNJNgdJw';
+const LATO_MAX = 1600;      // pixel del lato lungo dopo la compressione
+const PESO_MAX = 12 * 1024 * 1024;
+
+let allegato = null;        // {blob, nome}
+
+function err(m){ document.getElementById('err').textContent = m || ''; }
+
+/* ---------- compressione della foto ----------
+   Una foto scattata col telefono pesa 3-4 MB. Ridimensionata a
+   1600 pixel e salvata in JPEG scende a 200-300 KB restando
+   perfettamente leggibile: è ciò che permette di tenere anni di
+   consegne nello spazio gratuito. */
+function comprimi(file){
+  return new Promise((risolvi, rifiuta)=>{
+    const img = new Image();
+    const url = URL.createObjectURL(file);
+    img.onload = ()=>{
+      URL.revokeObjectURL(url);
+      const s = Math.min(1, LATO_MAX / Math.max(img.width, img.height));
+      const c = document.createElement('canvas');
+      c.width = Math.round(img.width * s);
+      c.height = Math.round(img.height * s);
+      c.getContext('2d').drawImage(img, 0, 0, c.width, c.height);
+      c.toBlob(b => b ? risolvi(b) : rifiuta(new Error('conversione fallita')), 'image/jpeg', 0.72);
+    };
+    img.onerror = ()=>{ URL.revokeObjectURL(url); rifiuta(new Error('immagine non leggibile')); };
+    img.src = url;
+  });
+}
+
+function pesoLeggibile(n){
+  return n < 1024*1024 ? Math.round(n/1024) + ' KB' : (n/1024/1024).toFixed(1) + ' MB';
+}
+
+async function scegliFile(){
+  err('');
+  const f = document.getElementById('file').files[0];
+  const box = document.getElementById('anteprima');
+  if(!f){ allegato = null; box.style.display='none'; return; }
+  if(f.size > PESO_MAX){ err('Il file è troppo grande (oltre 12 MB).'); document.getElementById('file').value=''; return; }
+
+  if(f.type.startsWith('image/')){
+    try{
+      const b = await comprimi(f);
+      allegato = {blob: b, nome: f.name.replace(/\.[^.]+$/,'') + '.jpg'};
+      document.getElementById('img').src = URL.createObjectURL(b);
+      document.getElementById('peso').textContent =
+        'Da ' + pesoLeggibile(f.size) + ' a ' + pesoLeggibile(b.size) + ' dopo la compressione.';
+      box.style.display = 'block';
+    }catch(e){
+      allegato = {blob: f, nome: f.name};
+      document.getElementById('peso').textContent = 'Allegato: ' + pesoLeggibile(f.size);
+      document.getElementById('img').removeAttribute('src');
+      box.style.display = 'block';
+    }
+  }else{
+    allegato = {blob: f, nome: f.name};
+    document.getElementById('img').removeAttribute('src');
+    document.getElementById('peso').textContent = f.name + ' · ' + pesoLeggibile(f.size);
+    box.style.display = 'block';
+  }
+}
+
+function pulisciNome(s){
+  return (s||'file').normalize('NFD').replace(/[̀-ͯ]/g,'')
+    .replace(/[^a-zA-Z0-9._-]+/g,'-').replace(/-+/g,'-').slice(0,60);
+}
+
+async function invia(){
+  err('');
+  const nome = document.getElementById('nome').value.trim();
+  const classe = document.getElementById('classe').value.trim();
+  const attivita = document.getElementById('attivita').value.trim();
+  const testo = document.getElementById('testo').value.trim();
+
+  if(!nome){ err('Scrivi il tuo nome.'); return; }
+  if(!testo && !allegato){ err('Scrivi qualcosa, oppure allega un file.'); return; }
+
+  const bottone = document.getElementById('invia');
+  bottone.disabled = true; bottone.textContent = 'Invio in corso…';
+
+  try{
+    let percorso = null;
+    if(allegato){
+      percorso = (classe ? pulisciNome(classe) : 'senza-classe') + '/' +
+                 Date.now() + '-' + pulisciNome(nome) + '-' + pulisciNome(allegato.nome);
+      const su = await fetch(SB_URL + '/storage/v1/object/consegne/' + encodeURI(percorso), {
+        method:'POST',
+        headers:{'apikey':SB_KEY, 'Authorization':'Bearer '+SB_KEY,
+                 'Content-Type': allegato.blob.type || 'application/octet-stream'},
+        body: allegato.blob
+      });
+      if(!su.ok){
+        const t = await su.text();
+        throw new Error('Il file non è stato accettato. ' + t.slice(0,140));
+      }
+    }
+
+    const res = await fetch(SB_URL + '/rest/v1/consegne', {
+      method:'POST',
+      headers:{'apikey':SB_KEY, 'Authorization':'Bearer '+SB_KEY,
+               'Content-Type':'application/json', 'Prefer':'return=minimal'},
+      body: JSON.stringify({studente:nome, classe:classe||null, attivita:attivita||null,
+                            testo:testo||null, file_path:percorso,
+                            file_nome: allegato ? allegato.nome : null})
+    });
+    if(!res.ok){ const t = await res.text(); throw new Error(t.slice(0,160)); }
+
+    document.getElementById('foglio').innerHTML = `
+      <div class="kicker">Idearca</div>
+      <h1>Consegna inviata</h1>
+      <div class="esito">Grazie ${nome.split(' ')[0]}, il professore l'ha ricevuta.<br>
+        <span style="color:#5A5148;font-size:.9rem">Se ti accorgi di un errore, invia di nuovo:
+        vedrà entrambe le versioni con l'orario.</span></div>`;
+    window.scrollTo(0,0);
+
+  }catch(e){
+    err('Non è stato possibile inviare. ' + e.message);
+    bottone.disabled = false; bottone.textContent = 'Invia la consegna';
+  }
+}
+</script>
+</body>
+</html>

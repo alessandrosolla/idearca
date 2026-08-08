@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Votazioni — Idearca</title>
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%}
+  body{
+    background:#FBF7F0;color:#1F1B16;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1000px;margin:0 auto;padding:1.8rem 1.3rem 4rem}
+  .kicker{font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:#5A5148;font-weight:700}
+  h1{font-family:Georgia,"Times New Roman",serif;font-size:1.9rem;margin:.4rem 0 1.3rem}
+  h2{font-size:1rem;margin:2rem 0 .7rem}
+
+  button{font:inherit;font-weight:600;cursor:pointer;border:1px solid #E3DACB;
+    border-radius:9px;background:#fff;color:#1F1B16;padding:.55rem .9rem}
+  button:hover{border-color:#8A7355}
+  button.primario{background:#1F1B16;color:#fff;border-color:#1F1B16}
+  button.rosso{color:#C0453B}
+  input,select,textarea{font:inherit;padding:.6rem .8rem;border:1px solid #E3DACB;
+    border-radius:9px;background:#fff;width:100%}
+  .riga{display:flex;gap:.6rem;align-items:center;flex-wrap:wrap;margin-bottom:.7rem}
+
+  .codice{display:flex;align-items:center;gap:1rem;background:#fff;border:1px solid #E3DACB;
+    border-radius:12px;padding:1rem 1.2rem;margin-bottom:1.2rem;flex-wrap:wrap}
+  .codice b{font-size:2rem;letter-spacing:.22em;font-variant-numeric:tabular-nums}
+  .codice .via{font-size:.85rem;color:#5A5148}
+
+  .elenco{border:1px solid #E3DACB;border-radius:12px;overflow:hidden;background:#fff}
+  .voce{display:flex;gap:.8rem;align-items:center;padding:.75rem .95rem;border-bottom:1px solid #EFE7DA}
+  .voce:last-child{border-bottom:none}
+  .voce.attiva{background:#FFFBF0}
+  .voce .tipo{font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;font-weight:700;
+    color:#fff;background:#8A7355;border-radius:99px;padding:.18rem .5rem;white-space:nowrap}
+  .voce .testo{flex:1;font-size:.95rem;line-height:1.35}
+  .voce .n{font-size:.8rem;color:#5A5148;white-space:nowrap}
+
+  .vuoto{border:1px dashed #D8CDBA;border-radius:12px;padding:2rem 1.4rem;
+    text-align:center;color:#5A5148;line-height:1.6}
+  .avviso{background:#fff;border:1px solid #E3DACB;border-left:4px solid #C0453B;
+    border-radius:9px;padding:1.1rem 1.3rem;line-height:1.6}
+
+  /* ---------- proiezione ---------- */
+  .proiezione{position:fixed;inset:0;background:#FBF7F0;display:none;
+    flex-direction:column;padding:2.2rem 2.6rem;z-index:60}
+  .proiezione.on{display:flex}
+  .proiezione .alto{display:flex;align-items:center;gap:1.5rem;margin-bottom:1.5rem}
+  .proiezione .alto .cod{font-size:1.05rem;color:#5A5148}
+  .proiezione .alto .cod b{font-size:1.7rem;letter-spacing:.2em;color:#1F1B16}
+  .proiezione .alto .spazio{flex:1}
+  .proiezione h3{font-family:Georgia,"Times New Roman",serif;font-size:2.6rem;
+    line-height:1.2;margin:0 0 1.6rem;font-weight:700}
+  .proiezione .risultati{flex:1;overflow:hidden;display:flex;align-items:center;justify-content:center}
+
+  .nuvola{display:flex;flex-wrap:wrap;gap:.4rem 1.1rem;align-items:baseline;
+    justify-content:center;line-height:1.15}
+  .nuvola span{font-weight:700}
+
+  .barre{width:100%;max-width:900px}
+  .barra{margin-bottom:1.1rem}
+  .barra .et{display:flex;justify-content:space-between;font-size:1.35rem;
+    font-weight:600;margin-bottom:.35rem}
+  .barra .traccia{height:34px;background:#EFE7DA;border-radius:8px;overflow:hidden}
+  .barra .riempi{height:100%;border-radius:8px;transition:width .4s ease}
+</style>
+</head>
+<body>
+
+<div class="wrap" id="regia"></div>
+
+<div class="proiezione" id="proiezione">
+  <div class="alto">
+    <div class="cod">Vota su <b id="p-codice"></b><br>
+      <span style="font-size:.9rem">idearca — pagina «vota»</span></div>
+    <span class="spazio"></span>
+    <span id="p-conta" style="font-size:1.1rem;color:#5A5148"></span>
+    <button onclick="precedente()">‹ Prec</button>
+    <button onclick="successiva()">Succ ›</button>
+    <button onclick="chiudiProiezione()">Esci</button>
+  </div>
+  <h3 id="p-domanda"></h3>
+  <div class="risultati" id="p-risultati"></div>
+</div>
+
+<script>
+/* ══════════════════════════════════════════════════════════
+   VOTAZIONI — Idearca
+   Regia e proiezione. Solo il docente vede questa pagina: le
+   policy del database non lasciano leggere domande e risposte a
+   nessun altro. Gli studenti passano dagli sportelli, che
+   espongono soltanto la domanda in corso.
+   ══════════════════════════════════════════════════════════ */
+
+const SB_URL = 'https://mqjceddrbhpwqjomhohm.supabase.co';
+const SB_KEY = 'sb_publishable_D7vDsaervKNJNgdJw';
+const COLORI = ['#C0453B','#2C6FB5','#4FA82F','#E8862B','#8A5CB5','#4EB49A'];
+
+let sessione = null;
+let domande = [];
+let risposte = {};        // domanda_id -> [valori]
+let orologio = null;
+
+function token(){ try{ return sessionStorage.getItem('atk')||''; }catch(_){ return ''; } }
+function intest(extra){ return Object.assign({'apikey':SB_KEY,'Authorization':'Bearer '+token()}, extra||{}); }
+function esc(s){ return (s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+
+/* ---------- caricamento ---------- */
+async function avvia(){
+  const r = document.getElementById('regia');
+  if(!token()){
+    r.innerHTML = '<div class="kicker">Idearca · Didattica</div><h1>Votazioni</h1>' +
+      '<div class="avviso"><strong>Non sei entrato come docente.</strong><br>' +
+      'Solo tu puoi creare le domande e vedere le risposte. Apri il sito, accedi con la tua password, poi torna qui.</div>';
+    return;
+  }
+  const res = await fetch(SB_URL+'/rest/v1/menti_sessioni?select=*&aperta=eq.true&order=creato_il.desc&limit=1',
+                          {headers:intest()});
+  if(!res.ok){
+    r.innerHTML = '<div class="avviso"><strong>Il database ha rifiutato la lettura.</strong><br>' +
+                  'La sessione da docente potrebbe essere scaduta: rientra dal sito.</div>';
+    return;
+  }
+  const righe = await res.json();
+  sessione = righe[0] || null;
+  if(sessione) await caricaDomande();
+  disegnaRegia();
+}
+
+async function caricaDomande(){
+  const res = await fetch(SB_URL+'/rest/v1/menti_domande?select=*&sessione_id=eq.'+sessione.id+'&order=posizione.asc',
+                          {headers:intest()});
+  domande = res.ok ? await res.json() : [];
+  await caricaRisposte();
+}
+
+async function caricaRisposte(){
+  if(!domande.length){ risposte = {}; return; }
+  const ids = domande.map(d=>d.id).join(',');
+  const res = await fetch(SB_URL+'/rest/v1/menti_risposte?select=domanda_id,valore&domanda_id=in.('+ids+')',
+                          {headers:intest()});
+  risposte = {};
+  if(res.ok) for(const r of await res.json()){
+    (risposte[r.domanda_id] = risposte[r.domanda_id] || []).push(r.valore);
+  }
+}
+
+/* ---------- regia ---------- */
+function disegnaRegia(){
+  const r = document.getElementById('regia');
+  if(!sessione){
+    r.innerHTML = `
+      <div class="kicker">Idearca · Didattica</div><h1>Votazioni</h1>
+      <div class="vuoto"><strong>Nessuna votazione aperta.</strong><br>
+        Creane una: verrà generato un codice a sei cifre che gli studenti digitano dal telefono.<br><br>
+        <button class="primario" onclick="creaSessione()">Crea una votazione</button></div>`;
+    return;
+  }
+  r.innerHTML = `
+    <div class="kicker">Idearca · Didattica</div><h1>Votazioni</h1>
+    <div class="codice">
+      <div><span class="via">Gli studenti entrano con il codice</span><br><b>${esc(sessione.codice)}</b></div>
+      <div class="via">su<br><strong>${location.origin}${location.pathname.replace(/votazioni\/.*$/,'vota/')}</strong></div>
+      <span style="flex:1"></span>
+      <button onclick="proietta()" class="primario">▶ Proietta</button>
+      <button class="rosso" onclick="chiudiSessione()">Chiudi votazione</button>
+    </div>
+
+    <h2>Aggiungi una domanda</h2>
+    <div class="riga">
+      <select id="n-tipo" style="max-width:14rem" onchange="mostraOpzioni()">
+        <option value="nuvola">Nuvola di parole</option>
+        <option value="scelta">Scelta multipla</option>
+      </select>
+    </div>
+    <div class="riga"><input type="text" id="n-testo" placeholder="Il testo della domanda"></div>
+    <div class="riga" id="n-opz-riga" style="display:none">
+      <input type="text" id="n-opzioni" placeholder="Opzioni separate da punto e virgola: Sì; No; Dipende">
+    </div>
+    <div class="riga"><button class="primario" onclick="aggiungiDomanda()">Aggiungi</button></div>
+
+    <h2>Domande (${domande.length})</h2>
+    ${domande.length ? '<div class="elenco">' + domande.map(d=>`
+      <div class="voce ${sessione.domanda_attiva===d.id?'attiva':''}">
+        <span class="tipo">${d.tipo==='nuvola'?'Nuvola':'Scelta'}</span>
+        <span class="testo">${esc(d.testo)}</span>
+        <span class="n">${(risposte[d.id]||[]).length} risposte</span>
+        <button onclick="attiva(${d.id})">${sessione.domanda_attiva===d.id?'In corso':'Proietta'}</button>
+        <button class="rosso" onclick="eliminaDomanda(${d.id})">✕</button>
+      </div>`).join('') + '</div>'
+      : '<div class="vuoto">Nessuna domanda. Aggiungine una qui sopra.</div>'}`;
+  mostraOpzioni();
+}
+
+function mostraOpzioni(){
+  const s = document.getElementById('n-tipo');
+  const r = document.getElementById('n-opz-riga');
+  if(s && r) r.style.display = (s.value === 'scelta') ? '' : 'none';
+}
+
+/* ---------- azioni ---------- */
+async function creaSessione(){
+  for(let tentativo=0; tentativo<6; tentativo++){
+    const codice = String(Math.floor(100000 + Math.random()*900000));
+    const res = await fetch(SB_URL+'/rest/v1/menti_sessioni', {
+      method:'POST',
+      headers:intest({'Content-Type':'application/json','Prefer':'return=representation'}),
+      body: JSON.stringify({codice, aperta:true})
+    });
+    if(res.ok){ sessione = (await res.json())[0]; domande=[]; risposte={}; disegnaRegia(); return; }
+    if(res.status !== 409) break;   // 409 = codice già usato: si riprova
+  }
+  alert('Non è stato possibile creare la votazione. La sessione da docente potrebbe essere scaduta.');
+}
+
+async function aggiungiDomanda(){
+  const tipo = document.getElementById('n-tipo').value;
+  const testo = document.getElementById('n-testo').value.trim();
+  if(!testo){ alert('Scrivi il testo della domanda.'); return; }
+  let opzioni = [];
+  if(tipo === 'scelta'){
+    opzioni = document.getElementById('n-opzioni').value.split(';').map(s=>s.trim()).filter(Boolean);
+    if(opzioni.length < 2){ alert('Servono almeno due opzioni, separate da punto e virgola.'); return; }
+  }
+  const res = await fetch(SB_URL+'/rest/v1/menti_domande', {
+    method:'POST', headers:intest({'Content-Type':'application/json','Prefer':'return=minimal'}),
+    body: JSON.stringify({sessione_id: sessione.id, tipo, testo, opzioni, posizione: domande.length+1})
+  });
+  if(!res.ok){ alert('Non è stato possibile aggiungere la domanda.'); return; }
+  document.getElementById('n-testo').value = '';
+  if(document.getElementById('n-opzioni')) document.getElementById('n-opzioni').value = '';
+  await caricaDomande(); disegnaRegia();
+}
+
+async function eliminaDomanda(id){
+  if(!confirm('Eliminare la domanda e tutte le sue risposte?')) return;
+  await fetch(SB_URL+'/rest/v1/menti_domande?id=eq.'+id, {method:'DELETE', headers:intest()});
+  await caricaDomande(); disegnaRegia();
+}
+
+async function attiva(id){
+  const res = await fetch(SB_URL+'/rest/v1/menti_sessioni?id=eq.'+sessione.id, {
+    method:'PATCH', headers:intest({'Content-Type':'application/json','Prefer':'return=representation'}),
+    body: JSON.stringify({domanda_attiva: id})
+  });
+  if(res.ok){ sessione = (await res.json())[0]; disegnaRegia(); }
+}
+
+async function chiudiSessione(){
+  if(!confirm('Chiudere la votazione? Gli studenti non potranno più rispondere.')) return;
+  await fetch(SB_URL+'/rest/v1/menti_sessioni?id=eq.'+sessione.id, {
+    method:'PATCH', headers:intest({'Content-Type':'application/json','Prefer':'return=minimal'}),
+    body: JSON.stringify({aperta:false})
+  });
+  sessione = null; domande = []; risposte = {}; disegnaRegia();
+}
+
+/* ---------- proiezione ---------- */
+function proietta(){
+  if(!domande.length){ alert('Aggiungi almeno una domanda.'); return; }
+  if(!sessione.domanda_attiva) attiva(domande[0].id);
+  document.getElementById('proiezione').classList.add('on');
+  document.getElementById('p-codice').textContent = sessione.codice;
+  aggiornaProiezione();
+  if(orologio) clearInterval(orologio);
+  orologio = setInterval(async ()=>{ await caricaRisposte(); aggiornaProiezione(); }, 2500);
+  const el = document.documentElement;
+  const chiedi = el.requestFullscreen || el.webkitRequestFullscreen;
+  if(chiedi) Promise.resolve(chiedi.call(el)).catch(()=>{});
+}
+
+function chiudiProiezione(){
+  document.getElementById('proiezione').classList.remove('on');
+  if(orologio){ clearInterval(orologio); orologio = null; }
+  if(document.fullscreenElement || document.webkitFullscreenElement){
+    (document.exitFullscreen || document.webkitExitFullscreen).call(document);
+  }
+  disegnaRegia();
+}
+
+function indiceAttivo(){ return domande.findIndex(d => d.id === sessione.domanda_attiva); }
+async function precedente(){ const i = indiceAttivo(); if(i>0){ await attiva(domande[i-1].id); aggiornaProiezione(); } }
+async function successiva(){ const i = indiceAttivo(); if(i>=0 && i<domande.length-1){ await attiva(domande[i+1].id); aggiornaProiezione(); } }
+
+function aggiornaProiezione(){
+  const d = domande.find(x => x.id === sessione.domanda_attiva);
+  if(!d) return;
+  document.getElementById('p-domanda').textContent = d.testo;
+  const v = risposte[d.id] || [];
+  document.getElementById('p-conta').textContent = v.length + (v.length === 1 ? ' risposta' : ' risposte');
+  document.getElementById('p-risultati').innerHTML =
+    d.tipo === 'nuvola' ? nuvola(v) : barre(d, v);
+}
+
+/* La grandezza di una parola cresce con la radice della sua
+   frequenza: con la proporzione diretta la parola più ripetuta
+   schiaccerebbe tutte le altre fino a renderle illeggibili. */
+function nuvola(valori){
+  if(!valori.length) return '<div class="vuoto" style="border:none">In attesa delle prime risposte…</div>';
+  const conte = {};
+  for(const v of valori){
+    const k = v.trim().toLowerCase().replace(/\s+/g,' ');
+    if(k) conte[k] = (conte[k]||0) + 1;
+  }
+  const voci = Object.entries(conte).sort((a,b)=>b[1]-a[1]).slice(0,45);
+  const max = voci[0][1];
+  return '<div class="nuvola">' + voci.map(([parola,n],i)=>{
+    const dim = 1.5 + 4.2 * Math.sqrt(n/max);
+    return `<span style="font-size:${dim.toFixed(2)}rem;color:${COLORI[i % COLORI.length]}"
+             title="${n}">${esc(parola)}</span>`;
+  }).join('') + '</div>';
+}
+
+function barre(d, valori){
+  const opzioni = Array.isArray(d.opzioni) ? d.opzioni : [];
+  const conte = {}; for(const o of opzioni) conte[o] = 0;
+  for(const v of valori) if(v in conte) conte[v]++;
+  const tot = valori.length || 1;
+  const max = Math.max(1, ...Object.values(conte));
+  return '<div class="barre">' + opzioni.map((o,i)=>{
+    const n = conte[o];
+    return `<div class="barra">
+      <div class="et"><span>${esc(o)}</span><span>${n} · ${Math.round(n/tot*100)}%</span></div>
+      <div class="traccia"><div class="riempi" style="width:${Math.round(n/max*100)}%;background:${COLORI[i % COLORI.length]}"></div></div>
+    </div>`;
+  }).join('') + '</div>';
+}
+
+document.addEventListener('keydown', e=>{
+  if(!document.getElementById('proiezione').classList.contains('on')) return;
+  if(e.key === 'ArrowRight') successiva();
+  if(e.key === 'ArrowLeft')  precedente();
+  if(e.key === 'Escape')     chiudiProiezione();
+});
+
+avvia();
+</script>
+</body>
+</html>
