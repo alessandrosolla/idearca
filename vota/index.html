@@ -62,7 +62,7 @@
    ══════════════════════════════════════════════════════════ */
 
 const SB_URL = 'https://mqjceddrbhpwqjomhohm.supabase.co';
-const SB_KEY = 'sb_publishable_D7vDsaervKNJNgdJw';
+const SB_KEY = 'sb_publishable_D7vDsaervKNJNgdJwknDpQ_Vuuf9CeJ';
 
 const el = document.getElementById('foglio');
 let codice = (new URLSearchParams(location.search).get('c') || '').trim();
@@ -108,7 +108,8 @@ function schermataAttesa(){
     <div class="attesa">
       In attesa della prossima domanda<br>
       <span class="puntino"></span><span class="puntino"></span><span class="puntino"></span>
-      <div style="margin-top:1rem;font-size:.86rem">Lascia aperta questa pagina.</div>
+      <div style="margin-top:1rem;font-size:.86rem">Lascia aperta questa pagina.<br>
+        Se non arriva nulla, controlla di aver digitato il codice giusto.</div>
     </div>`;
 }
 
@@ -144,21 +145,27 @@ async function entra(){
   if(!v){ schermataCodice('Scrivi il codice.'); return; }
   codice = v;
   const d = await chiediDomanda();
-  if(d === null){ schermataCodice('Codice non valido, o la votazione non è aperta.'); return; }
+  if(d && d.guasto){
+    schermataCodice('Non riesco a contattare il server (' + d.guasto + '). Riprova fra un momento.');
+    return;
+  }
   history.replaceState(null,'', '?c='+encodeURIComponent(codice));
   aggiorna(d);
   avviaOrologio();
 }
 
+/* Tre esiti distinti, e vanno tenuti separati: prima un guasto di
+   rete veniva mostrato come «codice non valido», e questo ha
+   nascosto per giorni una chiave dell'API sbagliata. */
 async function chiediDomanda(){
   try{
     const res = await fetch(SB_URL+'/rest/v1/rpc/menti_domanda_attiva', {
       method:'POST', headers:intest(), body: JSON.stringify({p_codice: codice})
     });
-    if(!res.ok) return null;
+    if(!res.ok) return {guasto: res.status};
     const righe = await res.json();
     return Array.isArray(righe) && righe.length ? righe[0] : undefined;   // undefined = nessuna domanda ora
-  }catch(_){ return null; }
+  }catch(_){ return {guasto: 'rete'}; }
 }
 
 function aggiorna(d){
@@ -173,7 +180,7 @@ function avviaOrologio(){
   if(orologio) clearInterval(orologio);
   orologio = setInterval(async ()=>{
     const d = await chiediDomanda();
-    if(d === null) return;
+    if(d && d.guasto) return;
     if(d === undefined){
       if(domanda){ domanda = null; schermataAttesa(); }
       return;
