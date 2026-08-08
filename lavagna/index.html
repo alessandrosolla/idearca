@@ -2,7 +2,7 @@
 <html lang="it">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
 <title>Lavagna — Idearca</title>
 <style>
   *{box-sizing:border-box}
@@ -16,30 +16,33 @@
 
   /* ---------- barra degli strumenti ---------- */
   .bar{
-    display:flex;align-items:center;gap:.55rem;flex-wrap:wrap;
-    padding:.55rem .8rem;background:#fff;border-bottom:1px solid #E3DACB;
+    display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;
+    padding:.5rem .75rem;background:#fff;border-bottom:1px solid #E3DACB;
     flex:0 0 auto;
   }
   .bar button{
     font:inherit;font-size:.85rem;font-weight:600;
-    padding:.44rem .8rem;border:1px solid #E3DACB;border-radius:7px;
+    padding:.44rem .78rem;border:1px solid #E3DACB;border-radius:7px;
     background:#fff;color:#1F1B16;cursor:pointer;line-height:1.2;
+    touch-action:manipulation;
   }
   .bar button:hover{border-color:#8A7355}
   .bar button.on{background:#1F1B16;color:#fff;border-color:#1F1B16}
-  .sep{width:1px;height:24px;background:#E3DACB;margin:0 .2rem}
+  .sep{width:1px;height:24px;background:#E3DACB;margin:0 .15rem}
   .colore{
-    width:26px;height:26px;border-radius:50%;border:2px solid #fff;
+    width:28px;height:28px;border-radius:50%;border:2px solid #fff;
     box-shadow:0 0 0 1px #C9BCA6;cursor:pointer;padding:0;
   }
-  .colore.on{box-shadow:0 0 0 2px #1F1B16}
+  .colore.on{box-shadow:0 0 0 3px #1F1B16}
+  .sp{width:30px;height:28px;padding:0!important;display:grid;place-items:center}
+  .sp i{display:block;background:#1F1B16;border-radius:99px}
   .spazio{flex:1}
-  .stato{font-size:.78rem;color:#5A5148;min-width:9rem;text-align:right}
+  .stato{font-size:.78rem;color:#5A5148;min-width:8rem;text-align:right}
 
   /* ---------- area di scrittura ---------- */
-  .area{position:relative;flex:1 1 auto;overflow:hidden}
+  .area{position:relative;flex:1 1 auto;overflow:hidden;background:#FBF7F0}
   #testo{
-    position:absolute;inset:0;padding:2.2rem 2.6rem;margin:0;
+    position:absolute;inset:0;padding:2rem 2.4rem;margin:0;
     font-size:30px;line-height:1.5;overflow:auto;outline:none;
     white-space:pre-wrap;word-wrap:break-word;
   }
@@ -47,19 +50,11 @@
     content:"Scrivi qui — il testo è grande per essere letto dal fondo dell'aula.";
     color:#B9AE9C;
   }
-  #tela{position:absolute;inset:0;touch-action:none}
-  /* In modalità testo la tela lascia passare i clic verso il testo. */
+  /* La tela sta sopra al testo. Il puntatore la attraversa quando
+     siamo in modalità testo, e attraversa il testo quando si disegna. */
+  #tela{position:absolute;inset:0;width:100%;height:100%;touch-action:none}
   body.modo-testo #tela{pointer-events:none}
-  body.modo-penna #testo{pointer-events:none}
-
-  .avviso{
-    position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
-    background:#fff;border:1px solid #E3DACB;border-radius:10px;
-    padding:1.5rem 1.8rem;max-width:30rem;text-align:center;
-    box-shadow:0 8px 30px rgba(0,0,0,.09);
-  }
-  .avviso h2{margin:0 0 .5rem;font-size:1.1rem}
-  .avviso p{margin:0;color:#5A5148;font-size:.92rem;line-height:1.55}
+  body.modo-disegno #testo{pointer-events:none;user-select:none}
 
   @media print{.bar{display:none}}
 </style>
@@ -69,6 +64,7 @@
 <div class="bar">
   <button id="b-testo" class="on" onclick="modo('testo')">✏️ Testo</button>
   <button id="b-penna" onclick="modo('penna')">🖊 Penna</button>
+  <button id="b-gomma" onclick="modo('gomma')">🧽 Gomma</button>
 
   <span class="sep"></span>
   <button class="colore on" data-c="#1F1B16" style="background:#1F1B16" title="Nero"></button>
@@ -77,9 +73,15 @@
   <button class="colore" data-c="#4FA82F" style="background:#4FA82F" title="Verde"></button>
 
   <span class="sep"></span>
-  <button id="b-gomma" onclick="modo('gomma')">🧽 Gomma</button>
+  <button class="sp" data-w="4"  title="Tratto sottile"><i style="width:16px;height:4px"></i></button>
+  <button class="sp on" data-w="8"  title="Tratto medio"><i style="width:16px;height:8px"></i></button>
+  <button class="sp" data-w="14" title="Tratto spesso"><i style="width:16px;height:13px"></i></button>
+
+  <span class="sep"></span>
   <button onclick="annulla()">↶ Annulla</button>
-  <button onclick="pulisci()">Pulisci tutto</button>
+  <button onclick="pulisci()">Pulisci</button>
+  <button id="b-palmo" onclick="palmo()" title="Ignora il tocco del dito e accetta solo la penna">✋ Solo penna</button>
+  <button id="b-pieno" onclick="schermoIntero()">⛶ Schermo intero</button>
 
   <span class="spazio"></span>
   <span class="stato" id="stato"></span>
@@ -94,69 +96,148 @@
 <script>
 /* ══════════════════════════════════════════════════════════
    LAVAGNA — Idearca
-   I tratti della penna NON vengono salvati come immagine ma
-   come elenco di punti in coordinate relative (0-1). Pesano
-   pochi KB e si ridisegnano nitidi a qualunque risoluzione,
-   compresa quella della LIM.
+   I tratti si salvano come coordinate relative (0-1), non come
+   immagine: pochi KB per lezione e resa nitida a qualunque
+   risoluzione, LIM compresa.
    ══════════════════════════════════════════════════════════ */
 
 const SB_URL = 'https://mqjceddrbhpwqjomhohm.supabase.co';
 const SB_KEY = 'sb_publishable_D7vDsaervKNJNgdJw';
 
-const tela  = document.getElementById('tela');
-const ctx   = tela.getContext('2d');
+const tela    = document.getElementById('tela');
+const ctx     = tela.getContext('2d');
 const elTesto = document.getElementById('testo');
 const elStato = document.getElementById('stato');
 
-let tratti = [];        // [{c:colore, w:spessore, p:[[x,y],…]}]
-let inCorso = null;     // il tratto che si sta disegnando adesso
-let colore = '#1F1B16';
+let tratti  = [];       // [{c:colore, w:spessore, p:[[x,y],…]}]
+let inCorso = null;     // tratto che si sta disegnando adesso
+let idAttivo = null;    // identificativo del puntatore che sta disegnando
+let colore  = '#1F1B16';
+let spessore = 8;
 let modoAttuale = 'testo';
+let soloPenna = false;  // rifiuto del palmo
 
-/* ---------- dimensionamento nitido su schermi retina ---------- */
+/* ---------- dimensionamento nitido ----------
+   Si misura il CONTENITORE, mai la tela: la larghezza in pixel
+   della tela determina anche la sua dimensione sullo schermo, e
+   misurando sé stessa si innescava un anello di retroazione che
+   la moltiplicava per il dpr a ogni ridimensionamento, fino a
+   farle chiedere gigabyte di memoria e bloccare la pagina.
+   Il dpr è limitato a 2: oltre non si vede differenza e la
+   memoria cresce col quadrato. */
+const elArea = document.getElementById('area');
+let dim = {w:0, h:0};
+
 function ridimensiona(){
-  const r = tela.getBoundingClientRect();
-  const dpr = window.devicePixelRatio || 1;
+  const r = elArea.getBoundingClientRect();
+  if(r.width === 0 || r.height === 0) return;   // non ancora visibile
+  const dpr = Math.min(window.devicePixelRatio || 1, 2);
+  dim = {w: r.width, h: r.height};
+  tela.style.width  = r.width  + 'px';
+  tela.style.height = r.height + 'px';
   tela.width  = Math.round(r.width  * dpr);
   tela.height = Math.round(r.height * dpr);
-  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
   ridisegna();
 }
 window.addEventListener('resize', ridimensiona);
+document.addEventListener('fullscreenchange', ()=>setTimeout(ridimensiona,60));
+
+/* Prepara il contesto: tutte le coordinate sono in pixel CSS. */
+function preparaContesto(){
+  const dpr = Math.min(window.devicePixelRatio || 1, 2);
+  ctx.setTransform(dpr,0,0,dpr,0,0);
+  ctx.lineCap  = 'round';
+  ctx.lineJoin = 'round';
+}
 
 function ridisegna(){
-  const r = tela.getBoundingClientRect();
-  ctx.clearRect(0, 0, r.width, r.height);
-  ctx.lineCap = 'round';
-  ctx.lineJoin = 'round';
-  for(const t of tratti){
-    if(t.p.length < 2) continue;
-    ctx.strokeStyle = t.c;
-    ctx.lineWidth = t.w;
-    ctx.beginPath();
-    ctx.moveTo(t.p[0][0]*r.width, t.p[0][1]*r.height);
-    for(let i=1;i<t.p.length;i++) ctx.lineTo(t.p[i][0]*r.width, t.p[i][1]*r.height);
-    ctx.stroke();
+  preparaContesto();
+  ctx.clearRect(0,0,dim.w,dim.h);
+  for(const t of tratti) disegnaTratto(t, dim);
+}
+
+function disegnaTratto(t, d){
+  if(!t.p.length) return;
+  ctx.strokeStyle = t.c;
+  ctx.lineWidth   = t.w;
+  ctx.beginPath();
+  if(t.p.length === 1){          // un punto solo: un pallino
+    ctx.arc(t.p[0][0]*d.w, t.p[0][1]*d.h, t.w/2, 0, Math.PI*2);
+    ctx.fillStyle = t.c; ctx.fill(); return;
   }
+  ctx.moveTo(t.p[0][0]*d.w, t.p[0][1]*d.h);
+  for(let i=1;i<t.p.length;i++) ctx.lineTo(t.p[i][0]*d.w, t.p[i][1]*d.h);
+  ctx.stroke();
+}
+
+/* Durante il tratto disegna SOLO l'ultimo segmento invece di
+   ridisegnare tutta la lavagna: è ciò che tiene l'inchiostro
+   attaccato alla punta invece di farlo inseguire. */
+function disegnaUltimoSegmento(t, d){
+  const n = t.p.length;
+  if(n < 2) return;
+  preparaContesto();
+  ctx.strokeStyle = t.c;
+  ctx.lineWidth   = t.w;
+  ctx.beginPath();
+  ctx.moveTo(t.p[n-2][0]*d.w, t.p[n-2][1]*d.h);
+  ctx.lineTo(t.p[n-1][0]*d.w, t.p[n-1][1]*d.h);
+  ctx.stroke();
 }
 
 /* ---------- modalità ---------- */
 function modo(m){
   modoAttuale = m;
-  document.body.className = (m === 'testo') ? 'modo-testo' : 'modo-penna';
+  document.body.className = (m === 'testo') ? 'modo-testo' : 'modo-disegno';
   document.getElementById('b-testo').classList.toggle('on', m==='testo');
   document.getElementById('b-penna').classList.toggle('on', m==='penna');
   document.getElementById('b-gomma').classList.toggle('on', m==='gomma');
   tela.style.cursor = (m==='gomma') ? 'cell' : (m==='penna' ? 'crosshair' : 'default');
+  if(m === 'testo') elTesto.focus();
 }
 
 document.querySelectorAll('.colore').forEach(b=>{
-  b.onclick = ()=>{
+  b.addEventListener('click', ()=>{
     colore = b.dataset.c;
     document.querySelectorAll('.colore').forEach(x=>x.classList.remove('on'));
     b.classList.add('on');
     if(modoAttuale !== 'penna') modo('penna');
-  };
+  });
+});
+
+document.querySelectorAll('.sp').forEach(b=>{
+  b.addEventListener('click', ()=>{
+    spessore = parseFloat(b.dataset.w);
+    document.querySelectorAll('.sp').forEach(x=>x.classList.remove('on'));
+    b.classList.add('on');
+    if(modoAttuale !== 'penna') modo('penna');
+  });
+});
+
+function palmo(){
+  soloPenna = !soloPenna;
+  document.getElementById('b-palmo').classList.toggle('on', soloPenna);
+}
+
+/* ---------- schermo intero ---------- */
+function schermoIntero(){
+  const b = document.getElementById('b-pieno');
+  if(!document.fullscreenElement){
+    const p = document.documentElement.requestFullscreen
+            ? document.documentElement.requestFullscreen()
+            : Promise.reject(new Error('non supportato'));
+    Promise.resolve(p).then(()=>{ b.textContent = '⛶ Esci'; b.classList.add('on'); })
+      .catch(()=>alert('Lo schermo intero è stato bloccato dal browser.\n\nSe stai usando la lavagna dentro il sito, aprila dal suo indirizzo diretto:\n' + location.href));
+  }else{
+    document.exitFullscreen();
+    b.textContent = '⛶ Schermo intero'; b.classList.remove('on');
+  }
+}
+document.addEventListener('fullscreenchange', ()=>{
+  const b = document.getElementById('b-pieno');
+  const pieno = !!document.fullscreenElement;
+  b.textContent = pieno ? '⛶ Esci' : '⛶ Schermo intero';
+  b.classList.toggle('on', pieno);
 });
 
 /* ---------- disegno ---------- */
@@ -165,29 +246,53 @@ function posizione(e){
   return [(e.clientX - r.left)/r.width, (e.clientY - r.top)/r.height];
 }
 
+function accettabile(e){
+  // Con "solo penna" attivo si ignora il dito: è il rifiuto del palmo.
+  if(soloPenna && e.pointerType === 'touch') return false;
+  return true;
+}
+
 tela.addEventListener('pointerdown', e=>{
   if(modoAttuale === 'testo') return;
-  tela.setPointerCapture(e.pointerId);
-  if(modoAttuale === 'gomma'){ cancellaVicino(posizione(e)); return; }
-  inCorso = { c: colore, w: 3.2, p: [posizione(e)] };
-  tratti.push(inCorso);
-});
+  if(!accettabile(e)) return;
+  if(idAttivo !== null) return;          // un solo puntatore alla volta
+  idAttivo = e.pointerId;
+  e.preventDefault();
+  try{ tela.setPointerCapture(e.pointerId); }catch(_){}
 
-tela.addEventListener('pointermove', e=>{
-  if(modoAttuale === 'gomma' && e.buttons){ cancellaVicino(posizione(e)); return; }
-  if(!inCorso) return;
-  inCorso.p.push(posizione(e));
+  if(modoAttuale === 'gomma'){ cancellaVicino(posizione(e)); return; }
+  inCorso = { c: colore, w: spessore, p: [posizione(e)] };
+  tratti.push(inCorso);
   ridisegna();
 });
 
-['pointerup','pointercancel','pointerleave'].forEach(ev=>{
-  tela.addEventListener(ev, ()=>{ inCorso = null; segnaModifica(); });
+tela.addEventListener('pointermove', e=>{
+  if(e.pointerId !== idAttivo) return;
+  e.preventDefault();
+  if(modoAttuale === 'gomma'){ cancellaVicino(posizione(e)); return; }
+  if(!inCorso) return;
+  inCorso.p.push(posizione(e));
+  disegnaUltimoSegmento(inCorso, dim);
 });
 
-/* La gomma elimina il tratto intero che si trova sotto il dito:
-   così l'archivio resta pulito, senza tratti bianchi sovrapposti. */
+/* Il tratto si chiude SOLO qui. In precedenza chiudevo anche su
+   pointerleave: ma setPointerCapture fa scattare quell'evento
+   subito dopo il pointerdown, e il tratto moriva appena nato —
+   era il motivo per cui la penna non disegnava. */
+function fineTratto(e){
+  if(e && e.pointerId !== idAttivo) return;
+  if(idAttivo !== null){ try{ tela.releasePointerCapture(idAttivo); }catch(_){} }
+  idAttivo = null;
+  if(inCorso){ inCorso = null; segnaModifica(); }
+}
+tela.addEventListener('pointerup', fineTratto);
+tela.addEventListener('pointercancel', fineTratto);
+window.addEventListener('blur', ()=>fineTratto());
+
+/* La gomma elimina il tratto intero sotto il dito: l'archivio
+   resta pulito, senza tratti bianchi sovrapposti. */
 function cancellaVicino([x,y]){
-  const soglia = 0.012;
+  const soglia = 0.015;
   const prima = tratti.length;
   tratti = tratti.filter(t => !t.p.some(([px,py]) =>
     Math.abs(px-x) < soglia && Math.abs(py-y) < soglia));
@@ -197,7 +302,7 @@ function cancellaVicino([x,y]){
 function annulla(){ tratti.pop(); ridisegna(); segnaModifica(); }
 
 function pulisci(){
-  if(!confirm('Cancellare testo e disegno? L\'operazione non si può annullare.')) return;
+  if(!confirm('Cancellare testo e disegno? Non si può annullare.')) return;
   tratti = []; elTesto.innerText = ''; ridisegna(); segnaModifica();
 }
 
@@ -212,7 +317,9 @@ window.addEventListener('beforeunload', e=>{
 });
 
 /* ---------- archiviazione ---------- */
-function token(){ return sessionStorage.getItem('atk') || ''; }
+function token(){
+  try{ return sessionStorage.getItem('atk') || ''; }catch(_){ return ''; }
+}
 
 async function archivia(){
   const testo = elTesto.innerText.trim();
@@ -220,7 +327,7 @@ async function archivia(){
 
   const atk = token();
   if(!atk){
-    alert('Per archiviare devi essere entrato come docente.\n\nApri il sito, accedi con la tua password, e poi torna sulla lavagna.');
+    alert('Per archiviare devi essere entrato come docente.\n\nApri il sito, accedi con la tua password, poi torna sulla lavagna.');
     return;
   }
 
@@ -251,7 +358,7 @@ async function archivia(){
       const t = await res.text();
       aggiornaStato('errore');
       alert('Non è stato possibile archiviare.\n\n' + t.slice(0,300) +
-            '\n\nSe dice che il permesso è negato, la sessione da docente è scaduta: rientra dal sito.');
+            '\n\nSe parla di permessi, la sessione da docente è scaduta: rientra dal sito.');
     }
   }catch(err){
     aggiornaStato('errore di rete');
@@ -260,11 +367,17 @@ async function archivia(){
 }
 
 /* ---------- avvio ---------- */
-ridimensiona();
-modo('testo');
-if(!token()){
-  aggiornaStato('non sei entrato come docente');
+/* Il primo dimensionamento aspetta che il riquadro abbia una
+   dimensione reale: dentro un iframe appena mostrato può valere
+   ancora zero, e la tela resterebbe di 300x150 pixel. */
+function avvia(){
+  const r = elArea.getBoundingClientRect();
+  if(r.width === 0 || r.height === 0){ requestAnimationFrame(avvia); return; }
+  ridimensiona();
 }
+avvia();
+modo('testo');
+if(!token()) aggiornaStato('non sei entrato come docente');
 </script>
 </body>
 </html>
