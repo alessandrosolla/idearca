@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lavagna — Idearca</title>
+<style>
+  *{box-sizing:border-box}
+  html,body{height:100%;margin:0}
+  body{
+    background:#FBF7F0;color:#1F1B16;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    display:flex;flex-direction:column;overflow:hidden;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  /* ---------- barra degli strumenti ---------- */
+  .bar{
+    display:flex;align-items:center;gap:.55rem;flex-wrap:wrap;
+    padding:.55rem .8rem;background:#fff;border-bottom:1px solid #E3DACB;
+    flex:0 0 auto;
+  }
+  .bar button{
+    font:inherit;font-size:.85rem;font-weight:600;
+    padding:.44rem .8rem;border:1px solid #E3DACB;border-radius:7px;
+    background:#fff;color:#1F1B16;cursor:pointer;line-height:1.2;
+  }
+  .bar button:hover{border-color:#8A7355}
+  .bar button.on{background:#1F1B16;color:#fff;border-color:#1F1B16}
+  .sep{width:1px;height:24px;background:#E3DACB;margin:0 .2rem}
+  .colore{
+    width:26px;height:26px;border-radius:50%;border:2px solid #fff;
+    box-shadow:0 0 0 1px #C9BCA6;cursor:pointer;padding:0;
+  }
+  .colore.on{box-shadow:0 0 0 2px #1F1B16}
+  .spazio{flex:1}
+  .stato{font-size:.78rem;color:#5A5148;min-width:9rem;text-align:right}
+
+  /* ---------- area di scrittura ---------- */
+  .area{position:relative;flex:1 1 auto;overflow:hidden}
+  #testo{
+    position:absolute;inset:0;padding:2.2rem 2.6rem;margin:0;
+    font-size:30px;line-height:1.5;overflow:auto;outline:none;
+    white-space:pre-wrap;word-wrap:break-word;
+  }
+  #testo:empty::before{
+    content:"Scrivi qui — il testo è grande per essere letto dal fondo dell'aula.";
+    color:#B9AE9C;
+  }
+  #tela{position:absolute;inset:0;touch-action:none}
+  /* In modalità testo la tela lascia passare i clic verso il testo. */
+  body.modo-testo #tela{pointer-events:none}
+  body.modo-penna #testo{pointer-events:none}
+
+  .avviso{
+    position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+    background:#fff;border:1px solid #E3DACB;border-radius:10px;
+    padding:1.5rem 1.8rem;max-width:30rem;text-align:center;
+    box-shadow:0 8px 30px rgba(0,0,0,.09);
+  }
+  .avviso h2{margin:0 0 .5rem;font-size:1.1rem}
+  .avviso p{margin:0;color:#5A5148;font-size:.92rem;line-height:1.55}
+
+  @media print{.bar{display:none}}
+</style>
+</head>
+<body class="modo-testo">
+
+<div class="bar">
+  <button id="b-testo" class="on" onclick="modo('testo')">✏️ Testo</button>
+  <button id="b-penna" onclick="modo('penna')">🖊 Penna</button>
+
+  <span class="sep"></span>
+  <button class="colore on" data-c="#1F1B16" style="background:#1F1B16" title="Nero"></button>
+  <button class="colore" data-c="#C0453B" style="background:#C0453B" title="Rosso"></button>
+  <button class="colore" data-c="#2C6FB5" style="background:#2C6FB5" title="Blu"></button>
+  <button class="colore" data-c="#4FA82F" style="background:#4FA82F" title="Verde"></button>
+
+  <span class="sep"></span>
+  <button id="b-gomma" onclick="modo('gomma')">🧽 Gomma</button>
+  <button onclick="annulla()">↶ Annulla</button>
+  <button onclick="pulisci()">Pulisci tutto</button>
+
+  <span class="spazio"></span>
+  <span class="stato" id="stato"></span>
+  <button onclick="archivia()" style="background:#1F1B16;color:#fff;border-color:#1F1B16">Archivia</button>
+</div>
+
+<div class="area" id="area">
+  <div id="testo" contenteditable="true" spellcheck="false"></div>
+  <canvas id="tela"></canvas>
+</div>
+
+<script>
+/* ══════════════════════════════════════════════════════════
+   LAVAGNA — Idearca
+   I tratti della penna NON vengono salvati come immagine ma
+   come elenco di punti in coordinate relative (0-1). Pesano
+   pochi KB e si ridisegnano nitidi a qualunque risoluzione,
+   compresa quella della LIM.
+   ══════════════════════════════════════════════════════════ */
+
+const SB_URL = 'https://mqjceddrbhpwqjomhohm.supabase.co';
+const SB_KEY = 'sb_publishable_D7vDsaervKNJNgdJw';
+
+const tela  = document.getElementById('tela');
+const ctx   = tela.getContext('2d');
+const elTesto = document.getElementById('testo');
+const elStato = document.getElementById('stato');
+
+let tratti = [];        // [{c:colore, w:spessore, p:[[x,y],…]}]
+let inCorso = null;     // il tratto che si sta disegnando adesso
+let colore = '#1F1B16';
+let modoAttuale = 'testo';
+
+/* ---------- dimensionamento nitido su schermi retina ---------- */
+function ridimensiona(){
+  const r = tela.getBoundingClientRect();
+  const dpr = window.devicePixelRatio || 1;
+  tela.width  = Math.round(r.width  * dpr);
+  tela.height = Math.round(r.height * dpr);
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  ridisegna();
+}
+window.addEventListener('resize', ridimensiona);
+
+function ridisegna(){
+  const r = tela.getBoundingClientRect();
+  ctx.clearRect(0, 0, r.width, r.height);
+  ctx.lineCap = 'round';
+  ctx.lineJoin = 'round';
+  for(const t of tratti){
+    if(t.p.length < 2) continue;
+    ctx.strokeStyle = t.c;
+    ctx.lineWidth = t.w;
+    ctx.beginPath();
+    ctx.moveTo(t.p[0][0]*r.width, t.p[0][1]*r.height);
+    for(let i=1;i<t.p.length;i++) ctx.lineTo(t.p[i][0]*r.width, t.p[i][1]*r.height);
+    ctx.stroke();
+  }
+}
+
+/* ---------- modalità ---------- */
+function modo(m){
+  modoAttuale = m;
+  document.body.className = (m === 'testo') ? 'modo-testo' : 'modo-penna';
+  document.getElementById('b-testo').classList.toggle('on', m==='testo');
+  document.getElementById('b-penna').classList.toggle('on', m==='penna');
+  document.getElementById('b-gomma').classList.toggle('on', m==='gomma');
+  tela.style.cursor = (m==='gomma') ? 'cell' : (m==='penna' ? 'crosshair' : 'default');
+}
+
+document.querySelectorAll('.colore').forEach(b=>{
+  b.onclick = ()=>{
+    colore = b.dataset.c;
+    document.querySelectorAll('.colore').forEach(x=>x.classList.remove('on'));
+    b.classList.add('on');
+    if(modoAttuale !== 'penna') modo('penna');
+  };
+});
+
+/* ---------- disegno ---------- */
+function posizione(e){
+  const r = tela.getBoundingClientRect();
+  return [(e.clientX - r.left)/r.width, (e.clientY - r.top)/r.height];
+}
+
+tela.addEventListener('pointerdown', e=>{
+  if(modoAttuale === 'testo') return;
+  tela.setPointerCapture(e.pointerId);
+  if(modoAttuale === 'gomma'){ cancellaVicino(posizione(e)); return; }
+  inCorso = { c: colore, w: 3.2, p: [posizione(e)] };
+  tratti.push(inCorso);
+});
+
+tela.addEventListener('pointermove', e=>{
+  if(modoAttuale === 'gomma' && e.buttons){ cancellaVicino(posizione(e)); return; }
+  if(!inCorso) return;
+  inCorso.p.push(posizione(e));
+  ridisegna();
+});
+
+['pointerup','pointercancel','pointerleave'].forEach(ev=>{
+  tela.addEventListener(ev, ()=>{ inCorso = null; segnaModifica(); });
+});
+
+/* La gomma elimina il tratto intero che si trova sotto il dito:
+   così l'archivio resta pulito, senza tratti bianchi sovrapposti. */
+function cancellaVicino([x,y]){
+  const soglia = 0.012;
+  const prima = tratti.length;
+  tratti = tratti.filter(t => !t.p.some(([px,py]) =>
+    Math.abs(px-x) < soglia && Math.abs(py-y) < soglia));
+  if(tratti.length !== prima){ ridisegna(); segnaModifica(); }
+}
+
+function annulla(){ tratti.pop(); ridisegna(); segnaModifica(); }
+
+function pulisci(){
+  if(!confirm('Cancellare testo e disegno? L\'operazione non si può annullare.')) return;
+  tratti = []; elTesto.innerText = ''; ridisegna(); segnaModifica();
+}
+
+/* ---------- stato ---------- */
+let modificata = false;
+function segnaModifica(){ modificata = true; aggiornaStato('non archiviata'); }
+elTesto.addEventListener('input', segnaModifica);
+function aggiornaStato(t){ elStato.textContent = t; }
+
+window.addEventListener('beforeunload', e=>{
+  if(modificata){ e.preventDefault(); e.returnValue = ''; }
+});
+
+/* ---------- archiviazione ---------- */
+function token(){ return sessionStorage.getItem('atk') || ''; }
+
+async function archivia(){
+  const testo = elTesto.innerText.trim();
+  if(!testo && !tratti.length){ alert('La lavagna è vuota.'); return; }
+
+  const atk = token();
+  if(!atk){
+    alert('Per archiviare devi essere entrato come docente.\n\nApri il sito, accedi con la tua password, e poi torna sulla lavagna.');
+    return;
+  }
+
+  const oggi = new Date().toLocaleDateString('it-IT', {day:'2-digit', month:'long', year:'numeric'});
+  const titolo = prompt('Titolo della lezione da archiviare:', 'Lezione del ' + oggi);
+  if(titolo === null) return;
+
+  aggiornaStato('archiviazione…');
+  try{
+    const res = await fetch(SB_URL + '/rest/v1/lavagne', {
+      method:'POST',
+      headers:{
+        'apikey': SB_KEY,
+        'Authorization': 'Bearer ' + atk,
+        'Content-Type': 'application/json',
+        'Prefer': 'return=minimal'
+      },
+      body: JSON.stringify({
+        titolo: titolo.trim() || ('Lezione del ' + oggi),
+        testo: testo,
+        tratti: tratti
+      })
+    });
+    if(res.ok){
+      modificata = false;
+      aggiornaStato('archiviata ✓');
+    }else{
+      const t = await res.text();
+      aggiornaStato('errore');
+      alert('Non è stato possibile archiviare.\n\n' + t.slice(0,300) +
+            '\n\nSe dice che il permesso è negato, la sessione da docente è scaduta: rientra dal sito.');
+    }
+  }catch(err){
+    aggiornaStato('errore di rete');
+    alert('Errore di rete: ' + err.message);
+  }
+}
+
+/* ---------- avvio ---------- */
+ridimensiona();
+modo('testo');
+if(!token()){
+  aggiornaStato('non sei entrato come docente');
+}
+</script>
+</body>
+</html>
