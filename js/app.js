@@ -487,7 +487,7 @@ function buildNav(keys){
     ks.forEach(k=>{html+=`<div class="lib-item${first?' active':''}" data-key="${k}" onclick="navClick(this,'${k}')"><span class="lib-dot"></span>${MATERIE[k].l}</div>`;first=false;});
     html+='</div>';
   });
-  html+=`<div class="lib-group"><div class="lib-group-title">Didattica</div><div class="lib-item" data-key="__metodo__" onclick="navClick(this,'__metodo__')"><span class="lib-dot"></span>Metodologie didattiche</div><div class="lib-item" data-key="__lavagna__" onclick="navClick(this,'__lavagna__')"><span class="lib-dot"></span>Lavagna</div></div>`;
+  html+=`<div class="lib-group"><div class="lib-group-title">Didattica</div><div class="lib-item" data-key="__metodo__" onclick="navClick(this,'__metodo__')"><span class="lib-dot"></span>Metodologie didattiche</div><div class="lib-item" data-key="__lavagna__" onclick="navClick(this,'__lavagna__')"><span class="lib-dot"></span>Lavagna</div><div class="lib-item" data-key="__inbox__" onclick="navClick(this,'__inbox__')"><span class="lib-dot"></span>Inbox</div></div>`;
   html+=`<div class="lib-group"><div class="lib-group-title">Strumenti</div><div class="lib-item" data-key="__map__" onclick="navClick(this,'__map__')"><span class="lib-dot"></span>Mappa Storica</div></div>`;
   document.getElementById('lib-nav').innerHTML=html;
 }
@@ -503,6 +503,9 @@ function buildMobSelect(keys){
   const metOpt=document.createElement('option');
   metOpt.value='__metodo__';metOpt.textContent='🎓 Metodologie didattiche';
   sel.appendChild(metOpt);
+  const inbOpt=document.createElement('option');
+  inbOpt.value='__inbox__';inbOpt.textContent='📥 Inbox';
+  sel.appendChild(inbOpt);
   const lavOpt=document.createElement('option');
   lavOpt.value='__lavagna__';lavOpt.textContent='🖊 Lavagna';
   sel.appendChild(lavOpt);
@@ -516,6 +519,7 @@ function mobChange(key){
   if(key==='__map__'){showMapView();return;}
   if(key==='__metodo__'){showMetodoView();return;}
   if(key==='__lavagna__'){showLavagnaView();return;}
+  if(key==='__inbox__'){showInboxView();return;}
   hideMapView();
   renderSubject(key);
 }
@@ -526,6 +530,7 @@ function navClick(el,key){
   if(key==='__map__'){showMapView();return;}
   if(key==='__metodo__'){showMetodoView();return;}
   if(key==='__lavagna__'){showLavagnaView();return;}
+  if(key==='__inbox__'){showInboxView();return;}
   hideMapView();
   renderSubject(key);
 }
@@ -534,6 +539,7 @@ function showMapView(){
   document.getElementById('lib-modules').style.display='none';
   document.getElementById('lib-metodo-view').style.display='none';
   document.getElementById('lib-map-view').style.display='block';
+  document.getElementById('lib-inbox-view').style.display='none';
 }
 function showMetodoView(){
   document.getElementById('lib-head').style.display='none';
@@ -541,11 +547,23 @@ function showMetodoView(){
   document.getElementById('lib-map-view').style.display='none';
   document.getElementById('lib-lavagna-view').style.display='none';
   document.getElementById('lib-metodo-view').style.display='block';
+  document.getElementById('lib-inbox-view').style.display='none';
 }
 /* La lavagna si carica solo la prima volta che la si apre: cosi'
    non tiene aperta una sessione di scrittura per chi non la usa,
    e una volta caricata conserva quello che c'e' scritto sopra
    anche se si passa ad altre sezioni e si torna indietro. */
+function showInboxView(){
+  document.getElementById('lib-head').style.display='none';
+  document.getElementById('lib-modules').style.display='none';
+  document.getElementById('lib-map-view').style.display='none';
+  document.getElementById('lib-metodo-view').style.display='none';
+  document.getElementById('lib-lavagna-view').style.display='none';
+  const f=document.getElementById('lib-inbox-frame');
+  /* si ricarica a ogni apertura, cosi' mostra sempre l'archivio aggiornato */
+  f.src='inbox/index.html?'+Date.now();
+  document.getElementById('lib-inbox-view').style.display='block';
+}
 function showLavagnaView(){
   document.getElementById('lib-head').style.display='none';
   document.getElementById('lib-modules').style.display='none';
@@ -554,6 +572,7 @@ function showLavagnaView(){
   const f=document.getElementById('lib-lavagna-frame');
   if(!f.src) f.src='lavagna/index.html';
   document.getElementById('lib-lavagna-view').style.display='block';
+  document.getElementById('lib-inbox-view').style.display='none';
 }
 /* Nasconde tutte le viste a pieno schermo e riporta a galla la
    libreria: la chiamano sia navClick sia mobChange. */
@@ -563,6 +582,7 @@ function hideMapView(){
   document.getElementById('lib-map-view').style.display='none';
   document.getElementById('lib-metodo-view').style.display='none';
   document.getElementById('lib-lavagna-view').style.display='none';
+  document.getElementById('lib-inbox-view').style.display='none';
 }
 
 let searchDebounce=null;

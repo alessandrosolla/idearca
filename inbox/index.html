@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Inbox — Idearca</title>
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%}
+  body{
+    background:#FBF7F0;color:#1F1B16;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1040px;margin:0 auto;padding:2rem 1.4rem 4rem}
+  .kicker{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:#5A5148;font-weight:600}
+  h1{font-family:Georgia,"Times New Roman",serif;font-size:2rem;margin:.5rem 0 1.4rem}
+
+  .tabs{display:flex;gap:.5rem;border-bottom:1px solid #E3DACB;margin-bottom:1.5rem}
+  .tabs button{
+    font:inherit;font-size:.92rem;font-weight:700;background:none;border:none;
+    padding:.7rem 1rem;cursor:pointer;color:#5A5148;border-bottom:3px solid transparent;
+    margin-bottom:-1px;
+  }
+  .tabs button.on{color:#1F1B16;border-bottom-color:#1F1B16}
+
+  .barra{display:flex;gap:.6rem;align-items:center;margin-bottom:1.1rem;flex-wrap:wrap}
+  input[type=search]{
+    font:inherit;padding:.55rem .8rem;border:1px solid #E3DACB;border-radius:8px;
+    background:#fff;min-width:15rem;flex:1
+  }
+  .conta{font-size:.82rem;color:#5A5148}
+
+  .griglia{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:1rem}
+  .scheda{background:#fff;border:1px solid #E3DACB;border-radius:10px;overflow:hidden;display:flex;flex-direction:column}
+  .scheda canvas{display:block;width:100%;height:150px;background:#FBF7F0;border-bottom:1px solid #EFE7DA}
+  .scheda .corpo{padding:.8rem .9rem;flex:1}
+  .scheda h3{margin:0 0 .25rem;font-size:.98rem;line-height:1.3}
+  .scheda .meta{font-size:.76rem;color:#5A5148}
+  .scheda .estratto{font-size:.82rem;color:#5A5148;margin-top:.5rem;
+    display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+  .scheda .azioni{display:flex;gap:.4rem;padding:.6rem .9rem;border-top:1px solid #EFE7DA}
+  .scheda .azioni button{
+    font:inherit;font-size:.8rem;font-weight:600;padding:.4rem .7rem;
+    border:1px solid #E3DACB;border-radius:7px;background:#fff;cursor:pointer
+  }
+  .scheda .azioni button:hover{border-color:#8A7355}
+  .rosso{color:#C0453B}
+
+  table{width:100%;border-collapse:collapse;font-size:.9rem;background:#fff;
+    border:1px solid #E3DACB;border-radius:10px;overflow:hidden}
+  th,td{text-align:left;padding:.7rem .8rem;border-bottom:1px solid #EFE7DA;vertical-align:top}
+  th{font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:#5A5148}
+  tr.nuovo td{background:#FFFBF0}
+  .tbl-scroll{overflow-x:auto}
+
+  .vuoto{border:1px dashed #D8CDBA;border-radius:10px;padding:2.4rem 1.5rem;
+    text-align:center;color:#5A5148;font-size:.9rem;line-height:1.6}
+  .avviso{background:#fff;border:1px solid #E3DACB;border-left:4px solid #C0453B;
+    border-radius:8px;padding:1.1rem 1.3rem;font-size:.92rem;line-height:1.6}
+
+  /* finestra di lettura */
+  .velo{position:fixed;inset:0;background:rgba(31,27,22,.55);display:none;
+    align-items:center;justify-content:center;padding:1.5rem;z-index:50}
+  .velo.on{display:flex}
+  .finestra{background:#FBF7F0;border-radius:12px;width:100%;max-width:1000px;
+    max-height:92vh;display:flex;flex-direction:column;overflow:hidden}
+  .finestra header{display:flex;align-items:center;gap:1rem;padding:.9rem 1.2rem;
+    background:#fff;border-bottom:1px solid #E3DACB}
+  .finestra header h2{margin:0;font-size:1.05rem;flex:1}
+  .finestra header button{font:inherit;font-weight:700;border:1px solid #E3DACB;
+    background:#fff;border-radius:8px;padding:.45rem .8rem;cursor:pointer}
+  .finestra .contenuto{overflow:auto;padding:1.2rem}
+  .finestra pre{white-space:pre-wrap;font:inherit;font-size:1.05rem;margin:0 0 1rem}
+  #tela-grande{width:100%;background:#fff;border:1px solid #E3DACB;border-radius:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="kicker">Idearca · Didattica</div>
+  <h1>Inbox</h1>
+
+  <div class="tabs">
+    <button id="t-lavagne" class="on" onclick="scheda('lavagne')">Le mie lavagne</button>
+    <button id="t-consegne" onclick="scheda('consegne')">Consegne</button>
+  </div>
+
+  <div class="barra">
+    <input type="search" id="cerca" placeholder="Cerca per titolo, nome, attività…" oninput="disegna()">
+    <span class="conta" id="conta"></span>
+    <button onclick="carica()" style="font:inherit;font-size:.82rem;font-weight:600;padding:.5rem .8rem;border:1px solid #E3DACB;border-radius:8px;background:#fff;cursor:pointer">↻ Aggiorna</button>
+  </div>
+
+  <div id="contenitore"></div>
+</div>
+
+<div class="velo" id="velo" onclick="if(event.target===this) chiudi()">
+  <div class="finestra">
+    <header>
+      <h2 id="f-titolo"></h2>
+      <button onclick="chiudi()">Chiudi</button>
+    </header>
+    <div class="contenuto">
+      <pre id="f-testo"></pre>
+      <canvas id="tela-grande" height="560"></canvas>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ══════════════════════════════════════════════════════════
+   INBOX — Idearca
+   Legge le lavagne archiviate e le consegne degli studenti.
+   Serve il token del docente: le policy del database non
+   lasciano leggere queste tabelle a nessun altro.
+   ══════════════════════════════════════════════════════════ */
+
+const SB_URL = 'https://mqjceddrbhpwqjomhohm.supabase.co';
+const SB_KEY = 'sb_publishable_D7vDsaervKNJNgdJw';
+
+let schedaAttiva = 'lavagne';
+let lavagne = [];
+let consegne = [];
+
+function token(){
+  try{ return sessionStorage.getItem('atk') || ''; }catch(_){ return ''; }
+}
+function intestazioni(){
+  return {'apikey': SB_KEY, 'Authorization': 'Bearer ' + token()};
+}
+function dataIt(s){
+  if(!s) return '';
+  return new Date(s).toLocaleString('it-IT',
+    {day:'2-digit', month:'short', year:'numeric', hour:'2-digit', minute:'2-digit'});
+}
+function esc(s){
+  return (s||'').replace(/[&<>"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+}
+
+/* ---------- disegno dell'anteprima ----------
+   I tratti si inquadrano sul loro rettangolo di ingombro. Così
+   l'anteprima funziona qualunque sia il sistema di coordinate con
+   cui la lavagna è stata salvata. */
+function disegnaTratti(canvas, tratti){
+  const ctx = canvas.getContext('2d');
+  const dpr = Math.min(window.devicePixelRatio || 1, 2);
+  const L = canvas.clientWidth || 300, A = canvas.clientHeight || 150;
+  canvas.width = Math.round(L*dpr); canvas.height = Math.round(A*dpr);
+  ctx.setTransform(dpr,0,0,dpr,0,0);
+  ctx.clearRect(0,0,L,A);
+  if(!Array.isArray(tratti) || !tratti.length) return;
+
+  let x0=Infinity,y0=Infinity,x1=-Infinity,y1=-Infinity;
+  for(const t of tratti) for(const p of (t.p||[])){
+    if(p[0]<x0)x0=p[0]; if(p[1]<y0)y0=p[1];
+    if(p[0]>x1)x1=p[0]; if(p[1]>y1)y1=p[1];
+  }
+  if(!isFinite(x0)) return;
+  const m = 12;
+  const s = Math.min((L-2*m)/Math.max(x1-x0,1e-6), (A-2*m)/Math.max(y1-y0,1e-6));
+  const dx = L/2 - (x0+x1)/2*s, dy = A/2 - (y0+y1)/2*s;
+
+  ctx.lineCap='round'; ctx.lineJoin='round';
+  for(const t of tratti){
+    const p = t.p||[]; if(!p.length) continue;
+    ctx.strokeStyle = t.c || '#1F1B16';
+    ctx.lineWidth = Math.max((t.w||4)*s, 0.8);
+    ctx.beginPath();
+    ctx.moveTo(p[0][0]*s+dx, p[0][1]*s+dy);
+    for(let i=1;i<p.length;i++) ctx.lineTo(p[i][0]*s+dx, p[i][1]*s+dy);
+    ctx.stroke();
+  }
+}
+
+/* ---------- caricamento ---------- */
+async function carica(){
+  const cont = document.getElementById('contenitore');
+  if(!token()){
+    cont.innerHTML = '<div class="avviso"><strong>Non sei entrato come docente.</strong><br>' +
+      'L\'archivio e le consegne sono leggibili solo da te: le regole del database non li mostrano a nessun altro. ' +
+      'Apri il sito, accedi con la tua password, poi torna qui.</div>';
+    document.getElementById('conta').textContent = '';
+    return;
+  }
+  cont.innerHTML = '<div class="vuoto">Caricamento…</div>';
+  try{
+    const [rl, rc] = await Promise.all([
+      fetch(SB_URL+'/rest/v1/lavagne?select=*&order=creato_il.desc',  {headers:intestazioni()}),
+      fetch(SB_URL+'/rest/v1/consegne?select=*&order=creato_il.desc', {headers:intestazioni()})
+    ]);
+    lavagne  = rl.ok ? await rl.json() : [];
+    consegne = rc.ok ? await rc.json() : [];
+    if(!rl.ok){
+      cont.innerHTML = '<div class="avviso"><strong>Il database ha rifiutato la lettura.</strong><br>' +
+        'Di solito significa che la sessione da docente è scaduta: rientra dal sito e riprova.</div>';
+      return;
+    }
+    disegna();
+  }catch(err){
+    cont.innerHTML = '<div class="avviso"><strong>Errore di rete.</strong><br>'+esc(err.message)+'</div>';
+  }
+}
+
+function scheda(s){
+  schedaAttiva = s;
+  document.getElementById('t-lavagne').classList.toggle('on', s==='lavagne');
+  document.getElementById('t-consegne').classList.toggle('on', s==='consegne');
+  disegna();
+}
+
+function disegna(){
+  const q = document.getElementById('cerca').value.trim().toLowerCase();
+  const cont = document.getElementById('contenitore');
+  if(!token()) return;
+
+  if(schedaAttiva === 'lavagne'){
+    const righe = lavagne.filter(r => !q || (r.titolo||'').toLowerCase().includes(q) || (r.testo||'').toLowerCase().includes(q));
+    document.getElementById('conta').textContent = righe.length + ' di ' + lavagne.length;
+    if(!righe.length){
+      cont.innerHTML = lavagne.length
+        ? '<div class="vuoto">Nessuna lavagna corrisponde alla ricerca.</div>'
+        : '<div class="vuoto"><strong>L\'archivio è vuoto.</strong><br>Le lezioni compaiono qui quando premi <em>Archivia</em> sulla lavagna.</div>';
+      return;
+    }
+    cont.innerHTML = '<div class="griglia">' + righe.map(r => `
+      <div class="scheda">
+        <canvas data-id="${r.id}" height="150"></canvas>
+        <div class="corpo">
+          <h3>${esc(r.titolo)}</h3>
+          <div class="meta">${dataIt(r.creato_il)}${r.materia ? ' · '+esc(r.materia) : ''}</div>
+          ${r.testo ? '<div class="estratto">'+esc(r.testo)+'</div>' : ''}
+        </div>
+        <div class="azioni">
+          <button onclick="apri(${r.id})">Apri</button>
+          <button class="rosso" onclick="elimina(${r.id})">Elimina</button>
+        </div>
+      </div>`).join('') + '</div>';
+    righe.forEach(r=>{
+      const c = cont.querySelector('canvas[data-id="'+r.id+'"]');
+      if(c) disegnaTratti(c, r.tratti);
+    });
+
+  }else{
+    const righe = consegne.filter(r => !q ||
+      (r.studente||'').toLowerCase().includes(q) ||
+      (r.attivita||'').toLowerCase().includes(q) ||
+      (r.testo||'').toLowerCase().includes(q));
+    document.getElementById('conta').textContent = righe.length + ' di ' + consegne.length;
+    if(!righe.length){
+      cont.innerHTML = consegne.length
+        ? '<div class="vuoto">Nessuna consegna corrisponde alla ricerca.</div>'
+        : '<div class="vuoto"><strong>Nessuna consegna ancora.</strong><br>' +
+          'Gli studenti potranno consegnare dalla pagina dedicata, che sto costruendo.<br>' +
+          'Le loro consegne compariranno qui, e nessuno potrà leggere quelle degli altri.</div>';
+      return;
+    }
+    cont.innerHTML = '<div class="tbl-scroll"><table><tr>' +
+      '<th>Studente</th><th>Attività</th><th>Testo</th><th>Allegato</th><th>Quando</th></tr>' +
+      righe.map(r => `<tr class="${r.letto?'':'nuovo'}">
+        <td><strong>${esc(r.studente)}</strong>${r.classe? '<br><span class="meta">'+esc(r.classe)+'</span>':''}</td>
+        <td>${esc(r.attivita||'—')}</td>
+        <td>${esc((r.testo||'').slice(0,180))}${(r.testo||'').length>180?'…':''}</td>
+        <td>${r.file_path ? '<button onclick="scarica(\''+esc(r.file_path)+'\')">Apri</button>' : '—'}</td>
+        <td>${dataIt(r.creato_il)}</td>
+      </tr>`).join('') + '</table></div>';
+  }
+}
+
+/* ---------- lettura di una lavagna ---------- */
+function apri(id){
+  const r = lavagne.find(x => x.id === id);
+  if(!r) return;
+  document.getElementById('f-titolo').textContent = r.titolo + ' · ' + dataIt(r.creato_il);
+  document.getElementById('f-testo').textContent = r.testo || '';
+  document.getElementById('velo').classList.add('on');
+  setTimeout(()=>disegnaTratti(document.getElementById('tela-grande'), r.tratti), 30);
+}
+function chiudi(){ document.getElementById('velo').classList.remove('on'); }
+document.addEventListener('keydown', e=>{ if(e.key === 'Escape') chiudi(); });
+
+async function elimina(id){
+  const r = lavagne.find(x => x.id === id);
+  if(!confirm('Eliminare «' + (r ? r.titolo : id) + '»?\nNon si può annullare.')) return;
+  const res = await fetch(SB_URL+'/rest/v1/lavagne?id=eq.'+id, {method:'DELETE', headers:intestazioni()});
+  if(res.ok || res.status === 204){ lavagne = lavagne.filter(x => x.id !== id); disegna(); }
+  else alert('Non è stato possibile eliminare. La sessione da docente potrebbe essere scaduta.');
+}
+
+/* Gli allegati stanno in un contenitore privato: si chiede al
+   database un indirizzo temporaneo invece di rendere il file
+   pubblico. */
+async function scarica(percorso){
+  try{
+    const res = await fetch(SB_URL+'/storage/v1/object/sign/consegne/'+encodeURI(percorso), {
+      method:'POST',
+      headers:Object.assign({'Content-Type':'application/json'}, intestazioni()),
+      body: JSON.stringify({expiresIn: 3600})
+    });
+    if(!res.ok){ alert('Non è stato possibile aprire l\'allegato.'); return; }
+    const d = await res.json();
+    window.open(SB_URL + '/storage/v1' + d.signedURL, '_blank');
+  }catch(err){ alert('Errore: ' + err.message); }
+}
+
+carica();
+</script>
+</body>
+</html>
