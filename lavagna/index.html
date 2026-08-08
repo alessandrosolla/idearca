@@ -20,21 +20,25 @@
     padding:.5rem .75rem;background:#fff;border-bottom:1px solid #E3DACB;
     flex:0 0 auto;
   }
+  /* Ogni pulsante è almeno 44px: sotto quella misura il dito
+     sbaglia bersaglio, ed è la lamentela tipica sul tablet. */
   .bar button{
-    font:inherit;font-size:.85rem;font-weight:600;
-    padding:.44rem .78rem;border:1px solid #E3DACB;border-radius:7px;
+    font:inherit;font-size:.9rem;font-weight:600;
+    min-height:44px;min-width:44px;
+    padding:.5rem .85rem;border:1px solid #E3DACB;border-radius:9px;
     background:#fff;color:#1F1B16;cursor:pointer;line-height:1.2;
     touch-action:manipulation;
   }
   .bar button:hover{border-color:#8A7355}
   .bar button.on{background:#1F1B16;color:#fff;border-color:#1F1B16}
-  .sep{width:1px;height:24px;background:#E3DACB;margin:0 .15rem}
+  .sep{width:1px;height:32px;background:#E3DACB;margin:0 .15rem}
   .colore{
-    width:28px;height:28px;border-radius:50%;border:2px solid #fff;
-    box-shadow:0 0 0 1px #C9BCA6;cursor:pointer;padding:0;
+    width:44px;height:44px;min-width:44px;border-radius:50%;
+    border:3px solid #fff;box-shadow:0 0 0 1px #C9BCA6;
+    cursor:pointer;padding:0;
   }
-  .colore.on{box-shadow:0 0 0 3px #1F1B16}
-  .sp{width:30px;height:28px;padding:0!important;display:grid;place-items:center}
+  .colore.on{box-shadow:0 0 0 4px #1F1B16}
+  .sp{width:44px;height:44px;padding:0!important;display:grid;place-items:center}
   .sp i{display:block;background:#1F1B16;border-radius:99px}
   .spazio{flex:1}
   .stato{font-size:.78rem;color:#5A5148;min-width:8rem;text-align:right}
@@ -56,6 +60,14 @@
   body.modo-testo #tela{pointer-events:none}
   body.modo-disegno #testo{pointer-events:none;user-select:none}
 
+  /* Su tablet in verticale la barra andrebbe a capo su tre righe
+     mangiando la lavagna: sotto gli 880px restano le sole icone. */
+  @media (max-width:880px){
+    .bar{gap:.35rem;padding:.4rem .5rem}
+    .bar button{padding:.5rem .6rem;font-size:0}
+    .bar button::first-letter{font-size:1.35rem}
+    .colore,.sp{font-size:0}
+  }
   @media print{.bar{display:none}}
 </style>
 </head>
@@ -141,6 +153,7 @@ function ridimensiona(){
 }
 window.addEventListener('resize', ridimensiona);
 document.addEventListener('fullscreenchange', ()=>setTimeout(ridimensiona,60));
+document.addEventListener('webkitfullscreenchange', ()=>setTimeout(ridimensiona,60));
 
 /* Prepara il contesto: tutte le coordinate sono in pixel CSS. */
 function preparaContesto(){
@@ -161,12 +174,13 @@ function disegnaTratto(t, d){
   ctx.strokeStyle = t.c;
   ctx.lineWidth   = t.w;
   ctx.beginPath();
+  ctx.lineWidth = t.w * d.w;
   if(t.p.length === 1){          // un punto solo: un pallino
-    ctx.arc(t.p[0][0]*d.w, t.p[0][1]*d.h, t.w/2, 0, Math.PI*2);
+    ctx.arc(t.p[0][0]*d.w, t.p[0][1]*d.w, t.w*d.w/2, 0, Math.PI*2);
     ctx.fillStyle = t.c; ctx.fill(); return;
   }
-  ctx.moveTo(t.p[0][0]*d.w, t.p[0][1]*d.h);
-  for(let i=1;i<t.p.length;i++) ctx.lineTo(t.p[i][0]*d.w, t.p[i][1]*d.h);
+  ctx.moveTo(t.p[0][0]*d.w, t.p[0][1]*d.w);
+  for(let i=1;i<t.p.length;i++) ctx.lineTo(t.p[i][0]*d.w, t.p[i][1]*d.w);
   ctx.stroke();
 }
 
@@ -178,10 +192,10 @@ function disegnaUltimoSegmento(t, d){
   if(n < 2) return;
   preparaContesto();
   ctx.strokeStyle = t.c;
-  ctx.lineWidth   = t.w;
+  ctx.lineWidth   = t.w * d.w;
   ctx.beginPath();
-  ctx.moveTo(t.p[n-2][0]*d.w, t.p[n-2][1]*d.h);
-  ctx.lineTo(t.p[n-1][0]*d.w, t.p[n-1][1]*d.h);
+  ctx.moveTo(t.p[n-2][0]*d.w, t.p[n-2][1]*d.w);
+  ctx.lineTo(t.p[n-1][0]*d.w, t.p[n-1][1]*d.w);
   ctx.stroke();
 }
 
@@ -223,13 +237,13 @@ function palmo(){
 function schermoIntero(){
   const b = document.getElementById('b-pieno');
   if(!document.fullscreenElement){
-    const p = document.documentElement.requestFullscreen
-            ? document.documentElement.requestFullscreen()
-            : Promise.reject(new Error('non supportato'));
+    const el = document.documentElement;
+    const chiedi = el.requestFullscreen || el.webkitRequestFullscreen;
+    const p = chiedi ? chiedi.call(el) : Promise.reject(new Error('non supportato'));
     Promise.resolve(p).then(()=>{ b.textContent = '⛶ Esci'; b.classList.add('on'); })
       .catch(()=>alert('Lo schermo intero è stato bloccato dal browser.\n\nSe stai usando la lavagna dentro il sito, aprila dal suo indirizzo diretto:\n' + location.href));
   }else{
-    document.exitFullscreen();
+    (document.exitFullscreen || document.webkitExitFullscreen).call(document);
     b.textContent = '⛶ Schermo intero'; b.classList.remove('on');
   }
 }
@@ -241,9 +255,15 @@ document.addEventListener('fullscreenchange', ()=>{
 });
 
 /* ---------- disegno ---------- */
+/* Coordinate normalizzate SOLO sulla larghezza, per x e per y.
+   Normalizzando y sull'altezza, ogni cambio di proporzione
+   dell'area — la tastiera del tablet che si apre, una rotazione,
+   lo schermo intero — schiacciava il disegno: un quadrato
+   diventava un rettangolo. Cosi' invece resta proporzionato, e
+   al massimo la parte bassa esce dallo schermo. */
 function posizione(e){
   const r = tela.getBoundingClientRect();
-  return [(e.clientX - r.left)/r.width, (e.clientY - r.top)/r.height];
+  return [(e.clientX - r.left)/r.width, (e.clientY - r.top)/r.width];
 }
 
 function accettabile(e){
@@ -261,7 +281,7 @@ tela.addEventListener('pointerdown', e=>{
   try{ tela.setPointerCapture(e.pointerId); }catch(_){}
 
   if(modoAttuale === 'gomma'){ cancellaVicino(posizione(e)); return; }
-  inCorso = { c: colore, w: spessore, p: [posizione(e)] };
+  inCorso = { c: colore, w: spessore / Math.max(dim.w,1), p: [posizione(e)] };
   tratti.push(inCorso);
   ridisegna();
 });
