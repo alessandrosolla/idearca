@@ -110,9 +110,45 @@ function token(){ try{ return sessionStorage.getItem('atk')||''; }catch(_){ retu
 function intest(extra){ return Object.assign({'apikey':SB_KEY,'Authorization':'Bearer '+token()}, extra||{}); }
 function esc(s){ return (s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
 
+
+/* ---------- validità del token ----------
+   Il token d'accesso di Supabase dura un'ora. Prima si salvava al
+   login e non si rinnovava mai: passata l'ora, ogni funzione da
+   docente falliva con un rifiuto del database. Qui si legge la
+   scadenza scritta dentro il token stesso e lo si rinnova un
+   minuto prima che scada, senza che l'utente se ne accorga. */
+function scadenzaToken(){
+  try{
+    const t = sessionStorage.getItem('atk') || '';
+    const c = JSON.parse(atob(t.split('.')[1].replace(/-/g,'+').replace(/_/g,'/')));
+    return (c.exp || 0) * 1000;
+  }catch(_){ return 0; }
+}
+async function assicuraToken(){
+  const s = scadenzaToken();
+  if(!s) return false;                       // non c'è token
+  if(Date.now() < s - 60000) return true;    // ancora buono
+  let rtk = '';
+  try{ rtk = sessionStorage.getItem('rtk') || ''; }catch(_){}
+  if(!rtk) return false;
+  try{
+    const r = await fetch(SB_URL+'/auth/v1/token?grant_type=refresh_token', {
+      method:'POST', headers:{'apikey':SB_KEY,'Content-Type':'application/json'},
+      body: JSON.stringify({refresh_token: rtk})
+    });
+    if(!r.ok) return false;
+    const d = await r.json();
+    if(!d.access_token) return false;
+    sessionStorage.setItem('atk', d.access_token);
+    if(d.refresh_token) sessionStorage.setItem('rtk', d.refresh_token);
+    return true;
+  }catch(_){ return false; }
+}
+
 /* ---------- caricamento ---------- */
 async function avvia(){
   const r = document.getElementById('regia');
+  await assicuraToken();
   if(!token()){
     r.innerHTML = '<div class="kicker">Idearca · Didattica</div><h1>Votazioni</h1>' +
       '<div class="avviso"><strong>Non sei entrato come docente.</strong><br>' +
@@ -312,7 +348,7 @@ function proietta(){
   document.getElementById('p-codice').textContent = sessione.codice;
   aggiornaProiezione();
   if(orologio) clearInterval(orologio);
-  orologio = setInterval(async ()=>{ await caricaRisposte(); aggiornaProiezione(); }, 2500);
+  orologio = setInterval(async ()=>{ await assicuraToken(); await caricaRisposte(); aggiornaProiezione(); }, 2500);
   const el = document.documentElement;
   const chiedi = el.requestFullscreen || el.webkitRequestFullscreen;
   if(chiedi) Promise.resolve(chiedi.call(el)).catch(()=>{});

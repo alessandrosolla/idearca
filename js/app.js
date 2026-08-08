@@ -423,7 +423,7 @@ async function login(){
       const r=rows[0];
       if(r.attivo===false) throw {m:'Codice disabilitato. Contatta il docente.'};
       if(r.scadenza&&new Date(r.scadenza)<new Date()) throw {m:'Codice scaduto. Contatta il docente.'};
-      ATK='';sessionStorage.removeItem('atk');
+      ATK='';sessionStorage.removeItem('atk');sessionStorage.removeItem('rtk');
       sessionStorage.setItem('ix',JSON.stringify({code,nome:r.nome,ruolo:r.ruolo,materie:r.materie}));
       input.classList.add('ok');msg.textContent='Accesso confermato: '+r.nome;msg.className='msg ok';
       setTimeout(()=>{document.getElementById('form-state').style.display='none';document.getElementById('welcome-name').textContent=r.nome;document.getElementById('success-state').classList.add('on');},600);
@@ -435,6 +435,10 @@ async function login(){
     if(auth.ok){
       const data=await auth.json();
       ATK=data.access_token;sessionStorage.setItem('atk',ATK);
+      /* Si conserva anche il token di rinnovo: quello d'accesso
+         scade dopo un'ora, e senza rinnovo ogni funzione da
+         docente smetteva di colpo di funzionare. */
+      if(data.refresh_token) sessionStorage.setItem('rtk', data.refresh_token);
       sessionStorage.setItem('ix',JSON.stringify({nome:'Alessandro Solla',ruolo:'docente',materie:'all'}));
       input.classList.add('ok');msg.textContent='Accesso docente confermato.';msg.className='msg ok';
       setTimeout(()=>{document.getElementById('form-state').style.display='none';document.getElementById('welcome-name').textContent='Alessandro Solla';document.getElementById('success-state').classList.add('on');},600);
@@ -750,7 +754,7 @@ async function renderSubject(key,tab){
 }
 
 function logout(){
-  ATK='';sessionStorage.removeItem('atk');
+  ATK='';sessionStorage.removeItem('atk');sessionStorage.removeItem('rtk');
   sessionStorage.removeItem('ix');
   document.getElementById('page-library').style.display='none';
   document.getElementById('page-home').style.display='block';
