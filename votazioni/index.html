@@ -87,6 +87,7 @@
   <div class="risultati" id="p-risultati"></div>
 </div>
 
+<script src="banca.js"></script>
 <script>
 /* ══════════════════════════════════════════════════════════
    VOTAZIONI — Idearca
@@ -170,7 +171,17 @@ function disegnaRegia(){
       <button class="rosso" onclick="chiudiSessione()">Chiudi votazione</button>
     </div>
 
-    <h2>Aggiungi una domanda</h2>
+    <h2>Carica un capitolo pronto</h2>
+    <div class="riga">
+      <select id="banca-sel" style="max-width:26rem" onchange="anteprimaBanca()">
+        <option value="">— scegli un capitolo —</option>
+        ${(typeof BANCA!=='undefined'?BANCA:[]).map((b,i)=>`<option value="${i}">${esc(b.titolo)}</option>`).join('')}
+      </select>
+      <button class="primario" onclick="importaBanca()">Carica</button>
+    </div>
+    <div id="banca-ant"></div>
+
+    <h2>Oppure aggiungi una domanda tua</h2>
     <div class="riga">
       <select id="n-tipo" style="max-width:14rem" onchange="mostraOpzioni()">
         <option value="nuvola">Nuvola di parole</option>
@@ -257,6 +268,40 @@ async function chiudiSessione(){
     body: JSON.stringify({aperta:false})
   });
   sessione = null; domande = []; risposte = {}; disegnaRegia();
+}
+
+/* ---------- capitoli pronti ---------- */
+function anteprimaBanca(){
+  const i = document.getElementById('banca-sel').value;
+  const box = document.getElementById('banca-ant');
+  if(i === ''){ box.innerHTML = ''; return; }
+  const b = BANCA[i];
+  box.innerHTML = '<div class="elenco" style="margin-bottom:1rem">' + b.domande.map(d=>`
+    <div class="voce">
+      <span class="tipo">${d.tipo==='nuvola'?'Nuvola':'Scelta'}</span>
+      <span class="testo">${esc(d.testo)}
+        ${d.giusta!==undefined ? '<br><span style="font-size:.8rem;color:#4FA82F">risposta attesa: '+esc(d.opzioni[d.giusta])+'</span>' : ''}
+      </span>
+    </div>`).join('') + '</div>';
+}
+
+/* Le domande si inseriscono tutte insieme in una sola richiesta.
+   La risposta attesa NON viene salvata: serve a te qui in regia,
+   la correzione la fai a voce dopo aver mostrato i risultati. */
+async function importaBanca(){
+  const i = document.getElementById('banca-sel').value;
+  if(i === ''){ alert('Scegli prima un capitolo.'); return; }
+  const b = BANCA[i];
+  const corpo = b.domande.map((d,k)=>({
+    sessione_id: sessione.id, tipo: d.tipo, testo: d.testo,
+    opzioni: d.opzioni || [], posizione: domande.length + k + 1
+  }));
+  const res = await fetch(SB_URL+'/rest/v1/menti_domande', {
+    method:'POST', headers:intest({'Content-Type':'application/json','Prefer':'return=minimal'}),
+    body: JSON.stringify(corpo)
+  });
+  if(!res.ok){ alert('Non e\' stato possibile caricare il capitolo.'); return; }
+  await caricaDomande(); disegnaRegia();
 }
 
 /* ---------- proiezione ---------- */
