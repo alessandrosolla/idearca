@@ -2430,6 +2430,55 @@ const BANCA = [
               'Chi costruisce sistemi ricavandoli dalla propria mente'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: la scienza deve servire a qualcosa o basta a se stessa? Una parola.'}
+  ]},
+{
+  titolo: 'Filosofia moderna · 8 — Galileo Galilei',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: che cosa conta di più, un\'autorità o un\'osservazione? Una parola.'},
+
+    {tipo:'scelta', testo:'Come Galilei tiene insieme Bibbia e scienza?',
+     opzioni:['Sono due libri di Dio: uno insegna la salvezza, l\'altro le leggi',
+              'La scienza va corretta ogni volta che contraddice le Scritture',
+              'La Bibbia parla in modo adatto a chi non sa di astronomia',
+              'Fra i due non può esserci contrasto, perché entrambi vengono da Dio'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa rimprovera Galilei agli aristotelici del suo tempo?',
+     opzioni:['Consultano i libri invece di guardare la natura reale',
+              'Difendono un maestro che non hanno mai davvero capito',
+              'Rifiutano di usare la matematica per studiare i fenomeni',
+              'Confondono l\'autorità di Aristotele con quella della Bibbia'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa afferma il principio d\'inerzia?',
+     opzioni:['Un corpo conserva quiete o moto uniforme senza forze esterne',
+              'Il moto continua anche quando la forza che lo causa è cessata',
+              'La quiete non è più lo stato naturale dei corpi terrestri',
+              'Ogni corpo tende a raggiungere il proprio luogo naturale'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa dimostrano i satelliti di Giove?',
+     opzioni:['Un corpo in moto può avere altri corpi che gli orbitano attorno',
+              'La Terra non è l\'unico centro di rotazione dell\'universo',
+              'Il sistema di Copernico spiega meglio i moti osservati',
+              'Il cielo contiene molti più corpi di quanti se ne vedano'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è la «sensata esperienza» galileiana?',
+     opzioni:['L\'osservazione ordinata dei fatti, guidata da un\'ipotesi',
+              'L\'esperienza quotidiana che i sensi ci offrono ogni giorno',
+              'La verifica sperimentale di ciò che il calcolo ha previsto',
+              'La misura esatta dei fenomeni compiuta con strumenti'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché Galilei rifiuta il finalismo nella scienza?',
+     opzioni:['Della natura possiamo sapere come opera, non perché',
+              'Le cause finali sono utili solo a lodare la grandezza di Dio',
+              'Nessun fine naturale si può misurare o dimostrare',
+              'Attribuire fini alla natura significa giudicarla da uomini'], giusta:0},
+
+    {tipo:'scelta', testo:'Quali proprietà dei corpi sono oggettive per Galilei?',
+     opzioni:['Figura, grandezza, luogo, tempo e movimento del corpo',
+              'Quelle che restano identiche per chiunque le osservi',
+              'Quelle che si possono esprimere in termini matematici',
+              'Colori, sapori e suoni, che i sensi colgono direttamente'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: uno scienziato deve abiurare per salvarsi? Una parola.'}
   ]
 }
 ];
