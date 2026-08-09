@@ -1548,6 +1548,104 @@ const BANCA = [
               'Vi si trovano le università migliori del continente'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: la tolleranza è un valore o una convenienza economica? Una parola.'}
+  ]},
+{
+  titolo: 'Storia moderna · 6 — Rivoluzioni inglesi e assolutismi',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: chi deve avere l\'ultima parola in uno Stato? Una parola.'},
+
+    {tipo:'scelta', testo:'Che cosa chiede al re la Petition of Rights del 1628?',
+     opzioni:['Nessuna tassa e nessun arresto senza il Parlamento',
+              'La convocazione del Parlamento almeno ogni tre anni',
+              'La rinuncia del re a comandare l\'esercito del regno',
+              'Il rispetto della fede anglicana in tutto il paese'], giusta:0},
+
+    {tipo:'scelta', testo:'Chi sono i Roundheads della guerra civile inglese?',
+     opzioni:['I sostenitori del Parlamento: borghesi e puritani',
+              'I nobili anglicani rimasti fedeli alla corona',
+              'I soldati irlandesi arruolati dal re Carlo I',
+              'I radicali che chiedevano il voto per tutti'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché la decapitazione di Carlo I è un fatto senza precedenti?',
+     opzioni:['Un re viene processato e giustiziato dal suo popolo',
+              'Un re viene ucciso senza alcun processo pubblico',
+              'Un re viene deposto e costretto a fuggire all\'estero',
+              'Un re viene scomunicato e privato della corona'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché il 1688 si chiama «Gloriosa Rivoluzione»?',
+     opzioni:['Il re cambia senza che si versi una goccia di sangue',
+              'Il Parlamento vince dopo anni di guerra contro il re',
+              'La monarchia viene abolita e nasce una repubblica',
+              'Il popolo insorge e caccia il sovrano cattolico'], giusta:0},
+
+    {tipo:'scelta', testo:'A che cosa serve Versailles nel disegno di Luigi XIV?',
+     opzioni:['A tenere i nobili a corte, lontani dai loro feudi',
+              'A mostrare la ricchezza della Francia agli stranieri',
+              'A spostare la capitale del regno fuori da Parigi',
+              'A riunire in un solo luogo i ministri del governo'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa comporta la revoca dell\'Editto di Nantes nel 1685?',
+     opzioni:['Duecentomila ugonotti lasciano la Francia per sempre',
+              'La Chiesa francese si rende autonoma da Roma',
+              'Le manifatture reali passano sotto il controllo regio',
+              'I protestanti perdono le loro piazzeforti militari'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa porta Pietro il Grande dal viaggio in Europa?',
+     opzioni:['Tecnici europei per rifare esercito e marina russi',
+              'L\'idea di spostare la capitale sul mar Baltico',
+              'Il modello di monarchia costituzionale inglese',
+              'L\'alfabeto civile e le prime scuole di Stato'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: si modernizza meglio con la forza o col consenso? Una parola.'}
+  ]},
+{
+  titolo: 'Storia moderna · 7 — L\'Europa nel primo Settecento',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: che cosa fa crescere la popolazione di un paese? Una parola.'},
+
+    {tipo:'scelta', testo:'Che cosa causa soprattutto il balzo demografico del Settecento?',
+     opzioni:['Meno epidemie, più cibo e matrimoni più precoci',
+              'La scoperta del vaccino contro il vaiolo umano',
+              'La fine delle grandi guerre di religione europee',
+              'L\'arrivo di nuove popolazioni dalle colonie'], giusta:0},
+
+    {tipo:'scelta', testo:'In che cosa consiste la rotazione quadriennale inglese?',
+     opzioni:['Si alternano cereali e leguminose, senza lasciare a riposo',
+              'Si lascia riposare un campo su quattro ogni anno',
+              'Si cambia coltura ogni quattro anni sullo stesso campo',
+              'Si semina il mais al posto del frumento e della segale'], giusta:0},
+
+    {tipo:'scelta', testo:'Che effetto sociale hanno le enclosures?',
+     opzioni:['I contadini senza terra emigrano verso le città',
+              'I piccoli proprietari ottengono fondi più compatti',
+              'I signori perdono i diritti feudali sulle campagne',
+              'Le terre comuni vengono divise fra tutti gli abitanti'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché il mercante-imprenditore ricorre al lavoro a domicilio?',
+     opzioni:['Nelle campagne i salari sono bassi e le regole poche',
+              'Le famiglie contadine lavorano meglio degli artigiani',
+              'Le corporazioni cittadine gli impongono nuove tasse',
+              'Nelle città mancano gli operai per filare e tessere'], giusta:0},
+
+    {tipo:'scelta', testo:'Chi paga le imposte nella società di Antico regime?',
+     opzioni:['Il Terzo stato, mentre clero e nobiltà ne sono esenti',
+              'Tutti gli ordini, ma con aliquote molto diverse',
+              'I contadini soltanto, che versano anche le decime',
+              'La borghesia, che in cambio ottiene le cariche'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è l\'«economia morale» di cui parla Thompson?',
+     opzioni:['Il patto non scritto: il re garantisce il pane a buon prezzo',
+              'La condanna morale della speculazione sui cereali',
+              'L\'obbligo per i ricchi di soccorrere i poveri affamati',
+              'Il divieto di esportare il grano nelle annate scarse'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché la guerra dei Sette anni è il primo conflitto globale?',
+     opzioni:['Si combatte in Europa, America, Asia e Africa insieme',
+              'Vi partecipano per la prima volta tutte le potenze',
+              'Ridisegna gli equilibri fra tutti gli Stati del mondo',
+              'Vi si affrontano due schieramenti in ogni continente'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: il progresso di pochi vale il sacrificio di molti? Una parola.'}
   ]
 }
 ];
