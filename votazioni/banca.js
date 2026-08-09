@@ -1744,6 +1744,104 @@ const BANCA = [
               'Contro l\'impiego dei bambini dentro le fabbriche'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: chi paga il prezzo del progresso tecnico? Una parola.'}
+  ]},
+{
+  titolo: 'Storia moderna · 10 — La Rivoluzione americana',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: quando una tassa diventa ingiusta? Una parola.'},
+
+    {tipo:'scelta', testo:'Che cosa impongono i Navigation Acts alle colonie?',
+     opzioni:['Di commerciare solo con Londra e su navi inglesi',
+              'Di pagare un dazio su tutte le merci esportate',
+              'Di rifornire la flotta britannica di legname',
+              'Di non produrre manufatti che facciano concorrenza'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché Londra inasprisce le tasse coloniali dopo il 1763?',
+     opzioni:['Vuole far pagare alle colonie la guerra dei Sette anni',
+              'Vuole punire le colonie che commerciavano di contrabbando',
+              'Vuole finanziare l\'esercito che difende i nuovi confini',
+              'Vuole ridurre il debito accumulato dalla corona inglese'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa significa «no taxation without representation»?',
+     opzioni:['Chi non ha deputati a Londra non può essere tassato',
+              'Chi paga le tasse deve poter controllare come si spendono',
+              'Chi governa una colonia deve essere scelto dai coloni',
+              'Chi vive in America non deve nulla al re d\'Inghilterra'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa provoca il Boston Tea Party?',
+     opzioni:['Le Leggi Intollerabili: Boston chiusa e Massachusetts occupato',
+              'L\'immediato invio di truppe britanniche nella città',
+              'La revoca del monopolio della Compagnia delle Indie',
+              'La convocazione del Primo Congresso continentale'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa sostiene Thomas Paine nel Common Sense?',
+     opzioni:['Giorgio III ha rotto il patto: ribellarsi è legittimo',
+              'Le colonie possono governarsi meglio da sole che da Londra',
+              'La monarchia è di per sé una forma di governo assurda',
+              'L\'America deve allearsi con la Francia contro l\'Inghilterra'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché Saratoga è una svolta nella guerra?',
+     opzioni:['La vittoria convince la Francia a schierarsi con gli americani',
+              'L\'esercito britannico perde il controllo delle colonie del Nord',
+              'Washington dimostra di saper battere le truppe regolari',
+              'Il Congresso può finalmente rientrare a Philadelphia'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è la contraddizione maggiore della nuova repubblica?',
+     opzioni:['Proclama tutti uguali ma non abolisce la schiavitù',
+              'Afferma la sovranità popolare ma il voto è censitario',
+              'Garantisce i diritti ma toglie le terre ai nativi',
+              'Separa i poteri ma dà molta forza al presidente'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: un principio vale anche se chi lo scrive non lo applica? Una parola.'}
+  ]},
+{
+  titolo: 'Storia moderna · 11 — La Rivoluzione francese',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: una rivoluzione può fermarsi al punto giusto? Una parola.'},
+
+    {tipo:'scelta', testo:'Perché la Francia di Luigi XVI è vicina al fallimento?',
+     opzioni:['Le guerre costano e i privilegiati non pagano imposte',
+              'Il raccolto del 1788 è andato quasi completamente perduto',
+              'Il re ha speso troppo per mantenere la corte di Versailles',
+              'Il commercio con le colonie si è quasi del tutto fermato'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché il Terzo stato vuole il voto per testa?',
+     opzioni:['Per ordine sarebbe sempre battuto da clero e nobiltà',
+              'Perché rappresenta il novantasette per cento dei francesi',
+              'Per poter approvare da solo la nuova Costituzione',
+              'Perché così avevano votato gli Stati Generali del 1614'], giusta:0},
+
+    {tipo:'scelta', testo:'A che cosa si impegnano i deputati nella sala della Pallacorda?',
+     opzioni:['A non sciogliersi prima di aver dato una Costituzione',
+              'A non riconoscere più l\'autorità del re sull\'Assemblea',
+              'A votare per testa qualunque cosa dica il sovrano',
+              'A restare uniti finché non cadranno i privilegi'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa provoca la Grande paura nelle campagne?',
+     opzioni:['I contadini assaltano i castelli e bruciano gli archivi',
+              'I contadini smettono di pagare le decime alla Chiesa',
+              'I nobili fuggono in massa oltre i confini del regno',
+              'Le città restano senza rifornimenti di grano'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa cambia dopo la fuga di Varennes?',
+     opzioni:['Il re appare un traditore e si chiede la repubblica',
+              'Il re viene subito arrestato e messo sotto processo',
+              'L\'Austria dichiara guerra alla Francia rivoluzionaria',
+              'La Costituzione del 1791 viene giudicata superata'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa consente la legge dei sospetti?',
+     opzioni:['Arrestare senza mandato chi non aiuta la rivoluzione',
+              'Condannare a morte chiunque abbia servito la monarchia',
+              'Processare i deputati che criticano il Comitato',
+              'Requisire i beni di chi è fuggito dalla Francia'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché i deputati organizzano il colpo del 9 termidoro?',
+     opzioni:['Temono di finire ghigliottinati come i condannati prima di loro',
+              'Vogliono restaurare la monarchia costituzionale del 1791',
+              'Ritengono che il Terrore non serva più dopo Fleurus',
+              'Non condividono più le misure economiche dei giacobini'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: la violenza è mai giustificata da un ideale? Una parola.'}
   ]
 }
 ];
