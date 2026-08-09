@@ -64,7 +64,7 @@ materiale che gli studenti hanno davvero studiato.
 
 ## A che punto siamo
 
-Fatti **26 capitoli su 120**.
+Fatti **42 capitoli su 120**.
 
 ### Filosofia antica — 12 capitoli · completata
 - [x] Dagli Ionici agli atomisti · `1c7OT1XyooG6hVjQKbwMQHiuLMgIFz3V_`
@@ -98,23 +98,23 @@ Fatti **26 capitoli su 120**.
 - [x] Tommaso d'Aquino · `1ukN0ZPO2z3ppLrFdWkcIjppbIp6v02Y7`
 - [x] Filosofia nel 1300 · `1cNIV0pkGPVaEbXw-SN4utGmO1BptnnZt`
 
-### Storia moderna — 16 capitoli · da fare
-- [ ] Carlo V · `1KUqqoE-7zG1RyP3u_EeUln6022FoljVS`
-- [ ] Riforma e Controriforma · `1cSig5Yj_VA0afH9pwgPUKABAHU4uRKKe`
-- [ ] Economia, guerre, inizio declino Spagnolo · `1lmfBNnYlYRcBHrAb2rrswbYrgk9fsFvB`
-- [ ] "Crisi" del Seicento e innovazioni · `1_WLlJpePl6a0zfCKcm2B8tXXLyKuia3A`
-- [ ] Guerra dei Trent'anni · `1t27xEZ738IHNjj4BhxDiqfuoa2P7i6Df`
-- [ ] Rivoluzioni e assolutismi nel Seicento · `1BIfCmTCOMofX7tF0XZG20b-MHp5exOj6`
-- [ ] Europa nel primo Settecento · `1tRSwzbFRNiBZ85xDin_E2PX59qwJmPgn`
-- [ ] La civiltà dei lumi · `17q9ksDI2Uo2KzoaIOzwYw7YIIg9sI6QR`
-- [ ] La I rivoluzione industriale · `1Gf4aSBpzll4ih1A7OcParkeqtL8vT2DD`
-- [ ] Rivoluzione Americana · `1PptPjIM1hUV8iCjCbgfBai-NjSMXUR3o`
-- [ ] Rivoluzione francese · `1rOxP13rD8mu72IesD5vQ4XOFZ0MNyztr`
-- [ ] Età Napoleonica · `1OctQ66FvCkS9moO-8YJVuYcKZgcyHIlx`
-- [ ] La restaurazione · `1mt-FHKjraVu45bhbyRqX2t0MXFucjVSJ`
-- [ ] Espansione USA ed età delle nazioni · `1y4pplyKp998eJ9WRYvsH5lBToTtG9s9c`
-- [ ] Economia del "Ottocento · `181oOnweq09e2PVozpXOkVvl2KCKM5T-e`
-- [ ] Il 1848 · `1EhPgItLGgqYBKe9v-L98XiVLSvjZz1rQ`
+### Storia moderna — 16 capitoli · completata
+- [x] Carlo V · `1KUqqoE-7zG1RyP3u_EeUln6022FoljVS`
+- [x] Riforma e Controriforma · `1cSig5Yj_VA0afH9pwgPUKABAHU4uRKKe`
+- [x] Economia, guerre, inizio declino Spagnolo · `1lmfBNnYlYRcBHrAb2rrswbYrgk9fsFvB`
+- [x] "Crisi" del Seicento e innovazioni · `1_WLlJpePl6a0zfCKcm2B8tXXLyKuia3A`
+- [x] Guerra dei Trent'anni · `1t27xEZ738IHNjj4BhxDiqfuoa2P7i6Df`
+- [x] Rivoluzioni e assolutismi nel Seicento · `1BIfCmTCOMofX7tF0XZG20b-MHp5exOj6`
+- [x] Europa nel primo Settecento · `1tRSwzbFRNiBZ85xDin_E2PX59qwJmPgn`
+- [x] La civiltà dei lumi · `17q9ksDI2Uo2KzoaIOzwYw7YIIg9sI6QR`
+- [x] La I rivoluzione industriale · `1Gf4aSBpzll4ih1A7OcParkeqtL8vT2DD`
+- [x] Rivoluzione Americana · `1PptPjIM1hUV8iCjCbgfBai-NjSMXUR3o`
+- [x] Rivoluzione francese · `1rOxP13rD8mu72IesD5vQ4XOFZ0MNyztr`
+- [x] Età Napoleonica · `1OctQ66FvCkS9moO-8YJVuYcKZgcyHIlx`
+- [x] La restaurazione · `1mt-FHKjraVu45bhbyRqX2t0MXFucjVSJ`
+- [x] Espansione USA ed età delle nazioni · `1y4pplyKp998eJ9WRYvsH5lBToTtG9s9c`
+- [x] Economia del "Ottocento · `181oOnweq09e2PVozpXOkVvl2KCKM5T-e`
+- [x] Il 1848 · `1EhPgItLGgqYBKe9v-L98XiVLSvjZz1rQ`
 
 ### Filosofia moderna — 29 capitoli · da fare
 - [ ] Cultura Umanistico-Rinascimentale · `1aQFcTgS-w0Hxj-dD999CMhlNjmfZKQRQ`

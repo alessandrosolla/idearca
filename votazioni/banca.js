@@ -2038,6 +2038,55 @@ const BANCA = [
               'La religione e la legge servono a chi detiene il potere'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: si cambia il mondo con l\'esempio o con il conflitto? Una parola.'}
+  ]},
+{
+  titolo: 'Storia moderna · 16 — Il 1848, primavera dei popoli',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: una rivoluzione sconfitta è servita a qualcosa? Una parola.'},
+
+    {tipo:'scelta', testo:'Che cosa prepara l\'esplosione del 1848?',
+     opzioni:['Due anni di cattivi raccolti, carestia e disoccupazione',
+              'Il Manifesto di Marx ed Engels uscito quel febbraio',
+              'Il fallimento dei moti del 1820-21 e del 1831',
+              'La debolezza dei governi dopo la morte di Metternich'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è la vera novità del 1848 rispetto ai moti precedenti?',
+     opzioni:['Le masse popolari combattono accanto alla borghesia',
+              'La rivoluzione si diffonde in poche settimane ovunque',
+              'Per la prima volta partecipano anche le donne',
+              'I rivoluzionari chiedono l\'indipendenza nazionale'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa spezza il fronte rivoluzionario in Francia?',
+     opzioni:['La repressione degli operai nelle giornate di giugno',
+              'La vittoria dei conservatori alle elezioni di aprile',
+              'La chiusura degli ateliers nationaux decisa dal governo',
+              'L\'elezione di Luigi Napoleone alla presidenza'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché fallisce l\'Assemblea di Francoforte?',
+     opzioni:['Il re di Prussia rifiuta una corona offerta dai rivoluzionari',
+              'I deputati non si accordano sul ruolo da dare all\'Austria',
+              'Gli eserciti dei principi sciolgono l\'assemblea con la forza',
+              'Le Costituzioni concesse vengono tutte revocate nel 1849'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa piega la rivoluzione ungherese di Kossuth?',
+     opzioni:['L\'intervento dell\'esercito dello zar Nicola I',
+              'Il tradimento dei croati alleati con gli Asburgo',
+              'L\'abdicazione di Ferdinando I e l\'arrivo di Francesco Giuseppe',
+              'La riconquista austriaca di Praga e poi di Vienna'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché lo Statuto albertino conta più delle altre Costituzioni del 1848?',
+     opzioni:['È l\'unica che non viene ritirata dopo la restaurazione',
+              'È la prima concessa da un sovrano della penisola italiana',
+              'È la sola che prevede due Camere e un suffragio allargato',
+              'È quella su cui giura anche il papa Pio IX a Roma'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché la prima guerra d\'indipendenza si perde?',
+     opzioni:['Papa e Borboni ritirano le truppe e il Piemonte resta solo',
+              'L\'esercito sardo era troppo piccolo per battere l\'Austria',
+              'Radetzky si era rinchiuso nelle fortezze del Quadrilatero',
+              'Carlo Alberto rinuncia alla guerra dopo le prime sconfitte'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: che cosa lascia una sconfitta a chi verrà dopo? Una parola.'}
   ]
 }
 ];
