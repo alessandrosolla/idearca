@@ -3508,6 +3508,55 @@ const BANCA = [
               'Le prime due restano legate al sensibile, la terza no'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: può esistere un sistema che spiega tutto? Una parola.'}
+  ]},
+{
+  titolo: 'Storia contemporanea · 1 — Il Risorgimento e la prima guerra d\'indipendenza',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: che cosa rende un popolo una nazione? Una parola.'},
+
+    {tipo:'scelta', testo:'Su che cosa fondano i patrioti l\'identità italiana?',
+     opzioni:['Su lingua, cultura e religione comuni, non su uno Stato',
+              'Sull\'eredità di Roma, dei Comuni e del Rinascimento',
+              'Sui grandi scrittori che hanno dato una lingua all\'Italia',
+              'Su un passato condiviso che nessuno Stato ha mai unito'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa vuole la Giovine Italia di Mazzini?',
+     opzioni:['Una repubblica unitaria, non un\'alleanza fra sovrani',
+              'Un\'Italia una, indipendente, libera e sovrana',
+              'Un\'insurrezione preceduta dall\'educazione del popolo',
+              'Uno Stato unico fondato sui princìpi democratici'], giusta:0},
+
+    {tipo:'scelta', testo:'Quale lezione trae Mazzini dai suoi fallimenti?',
+     opzioni:['Non aveva mai affrontato la questione agraria e i contadini',
+              'Il popolo delle campagne non risponde all\'appello patriottico',
+              'Le insurrezioni per bande vengono scoperte dalla polizia',
+              'Senza un esercito regolare non si caccia l\'Austria'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa propone il neoguelfismo di Gioberti?',
+     opzioni:['Una confederazione di Stati sotto la guida morale del papa',
+              'Che ogni sovrano resti al suo posto ma conceda riforme',
+              'Di conciliare l\'idea di nazione con la fede cattolica',
+              'Che il pontefice rifondi eticamente la politica italiana'], giusta:0},
+
+    {tipo:'scelta', testo:'Su che cosa punta invece Cesare Balbo?',
+     opzioni:['Sulla diplomazia dei Savoia: compensare l\'Austria nei Balcani',
+              'Su una trattativa invece che su un\'insurrezione popolare',
+              'Sull\'unica dinastia italiana libera da vincoli europei',
+              'Sull\'idea che l\'Austria possa espandersi altrove'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché Pio IX ritira le truppe dalla guerra del 1848?',
+     opzioni:['Non può muovere guerra a una potenza cattolica come l\'Austria',
+              'Teme di perdere l\'appoggio dei cattolici di tutta Europa',
+              'Capisce che la guerra porterebbe all\'unità della penisola',
+              'Non vuole compromettere il proprio ruolo di padre comune'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa resta al Piemonte dopo la sconfitta di Novara?',
+     opzioni:['Lo Statuto albertino, che Vittorio Emanuele II non ritira',
+              'L\'unica Costituzione sopravvissuta ai moti del 1848',
+              'Il ruolo di punto di riferimento per tutti i patrioti',
+              'Una base costituzionale su cui costruire lo Stato futuro'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: si costruisce una nazione col sogno o con la diplomazia? Una parola.'}
   ]
 }
 ];
