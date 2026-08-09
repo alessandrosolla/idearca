@@ -2626,6 +2626,104 @@ const BANCA = [
               'La libertà umana vale più del male che essa produce'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: la libertà vale il prezzo che ci fa pagare? Una parola.'}
+  ]},
+{
+  titolo: 'Filosofia moderna · 12 — Hobbes',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: senza leggi, come ci comporteremmo? Una parola.'},
+
+    {tipo:'scelta', testo:'Che cos\'è il ragionamento per Hobbes?',
+     opzioni:['Un calcolo: si addizionano e si sottraggono concetti',
+              'L\'uso dei segni con cui il linguaggio nomina le cose',
+              'La ricerca delle cause che generano i fenomeni',
+              'Una deduzione che va dalle premesse alle conclusioni'], giusta:0},
+
+    {tipo:'scelta', testo:'Di che cosa possiamo avere conoscenza certa?',
+     opzioni:['Solo di ciò che l\'uomo stesso costruisce: matematica e politica',
+              'Solo delle cause che siamo capaci di risalire dagli effetti',
+              'Solo dei corpi, perché sono le uniche cose che esistono',
+              'Solo di ciò che si può dedurre come in geometria'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa risponde Hobbes al cogito di Cartesio?',
+     opzioni:['La cosa che pensa potrebbe benissimo essere il corpo',
+              'Nulla di ciò che esiste può essere detto incorporeo',
+              'Anche l\'anima è fatta di particelle sottilissime',
+              'Il pensiero è movimento prodotto da corpi esterni'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché nello stato di natura scoppia la guerra di tutti contro tutti?',
+     opzioni:['Gli uomini sono ugualmente vulnerabili e i beni non bastano',
+              'Ciascuno vanta un diritto illimitato su qualunque cosa',
+              'Manca un potere capace di far rispettare i patti stretti',
+              'Nessuno riconosce ciò che è giusto e ciò che è ingiusto'], giusta:0},
+
+    {tipo:'scelta', testo:'Che differenza c\'è fra diritto naturale e legge naturale?',
+     opzioni:['Il primo è l\'istinto illimitato, la seconda una regola di prudenza',
+              'Il primo va superato, la seconda indica come farlo',
+              'Il primo appartiene a ciascuno, la seconda vale per tutti',
+              'Il primo viene dalla natura, la seconda dalla ragione umana'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché per Hobbes il potere sovrano non può essere diviso?',
+     opzioni:['Dividerlo porta all\'oligarchia oppure alla guerra civile',
+              'Ogni limite renderebbe il sovrano parte del contratto',
+              'Un potere diviso non riuscirebbe a garantire la pace',
+              'Il Leviatano dev\'essere irresistibile per essere obbedito'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa afferma il giuspositivismo di Hobbes?',
+     opzioni:['È giusto ciò che la legge comanda, non il contrario',
+              'La morale non esiste prima che nasca lo Stato civile',
+              'Non ha senso cercare una giustizia oltre il diritto vigente',
+              'Il sovrano stabilisce che cosa sia il bene e che cosa il male'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: quanta libertà vale la sicurezza? Una parola.'}
+  ]},
+{
+  titolo: 'Filosofia moderna · 13 — Locke',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: nasciamo con qualche idea già dentro di noi? Una parola.'},
+
+    {tipo:'scelta', testo:'Con quale argomento Locke nega le idee innate?',
+     opzioni:['Bambini e uomini incolti non le pensano affatto',
+              'Ogni idea deriva dall\'esperienza dei nostri sensi',
+              'Un\'idea che nessuno pensa non esiste in quella mente',
+              'Anche le idee innate arriverebbero con l\'età della ragione'], giusta:0},
+
+    {tipo:'scelta', testo:'Che differenza c\'è fra idee semplici e complesse?',
+     opzioni:['Le prime la mente le riceve, le seconde le costruisce',
+              'Le prime vengono dai sensi, le seconde dalla riflessione',
+              'Le prime sono chiare, le seconde spesso oscure e confuse',
+              'Le prime non si possono inventare, le seconde sì'], giusta:0},
+
+    {tipo:'scelta', testo:'Quali sono le qualità secondarie dei corpi?',
+     opzioni:['Colori, suoni e sapori: esistono solo per chi percepisce',
+              'Estensione e figura, che restano anche senza osservatore',
+              'Quelle che svaniscono appena cessa la nostra sensazione',
+              'Quelle che dipendono dal moto delle particelle dei corpi'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa sono le idee generali per Locke?',
+     opzioni:['Segni che stanno per gruppi di cose particolari simili',
+              'Concetti che la mente forma astraendo dalle differenze',
+              'Nomi comodi per non dover nominare ogni individuo',
+              'Costruzioni utili al linguaggio ma prive di realtà'], giusta:0},
+
+    {tipo:'scelta', testo:'In che cosa lo stato di natura di Locke differisce da quello di Hobbes?',
+     opzioni:['Gli uomini sono uguali nei diritti e guidati dalla ragione',
+              'Non è una guerra, ma una convivenza pacifica e fragile',
+              'È già regolato da una legge naturale che tutti conoscono',
+              'Vi esistono già la proprietà e il diritto di difenderla'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa fonda il diritto di proprietà?',
+     opzioni:['Il lavoro: chi lavora una cosa vi mette qualcosa di sé',
+              'Il fatto che ognuno è padrone della propria persona',
+              'La legge dello Stato, che riconosce ciò che è di ciascuno',
+              'L\'occupazione di ciò che Dio ha dato in comune a tutti'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché i cittadini di Locke conservano il diritto di resistenza?',
+     opzioni:['Hanno dato al sovrano un mandato che resta revocabile',
+              'La sovranità appartiene sempre e comunque al popolo',
+              'Il contratto è bilaterale e vincola anche chi governa',
+              'Esiste una legge naturale superiore a quelle dello Stato'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: si può tollerare chi non tollera? Una parola.'}
   ]
 }
 ];
