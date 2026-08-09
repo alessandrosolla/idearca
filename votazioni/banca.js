@@ -763,6 +763,105 @@ const BANCA = [
               'Sposando la figlia del sultano d\'Egitto'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: le crociate sono state un fallimento? Una parola.'}
+  ]},
+{
+  titolo: 'Storia medievale · 4 — L\'Italia comunale e l\'Impero',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: che cosa tiene insieme una città? Una parola.'},
+
+    {tipo:'scelta', testo:'Su che cosa si fonda il Comune?',
+     opzioni:['Su un giuramento pubblico fra cittadini',
+              'Su una concessione firmata dal vescovo',
+              'Su un privilegio rilasciato dall\'imperatore',
+              'Su un\'elezione a suffragio fra i nobili'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché il podestà doveva essere forestiero?',
+     opzioni:['Per restare imparziale fra le famiglie',
+              'Per portare con sé un esercito proprio',
+              'Perché lo imponeva la legge imperiale',
+              'Perché nessun cittadino accettava l\'incarico'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa distingue guelfi e ghibellini in Italia?',
+     opzioni:['Chi sta col papa e chi con l\'imperatore',
+              'Chi sta coi nobili e chi coi mercanti',
+              'Chi vuole la pace e chi vuole la guerra',
+              'Chi abita in città e chi nel contado'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa stabilisce la Constitutio de regalibus?',
+     opzioni:['Moneta, tasse e giustizia solo all\'imperatore',
+              'Moneta, tasse e giustizia restano ai Comuni',
+              'Ogni città elegge da sé il proprio podestà',
+              'I vescovi tornano a governare le città'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa succede a Milano nel 1162?',
+     opzioni:['Barbarossa la rade al suolo dopo l\'assedio',
+              'Milano sconfigge Barbarossa in campo aperto',
+              'Milano accetta il podestà imperiale',
+              'Milano fonda la città di Alessandria'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è il carroccio?',
+     opzioni:['Un carro con le insegne e la campana',
+              'Una macchina per abbattere le mura',
+              'Il seggio su cui sedeva il podestà',
+              'Il carro che portava le tasse al re'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa ottengono i Comuni con la Pace di Costanza?',
+     opzioni:['Autonomia interna, sovranità formale al re',
+              'Indipendenza piena e rottura con l\'Impero',
+              'Il diritto di eleggere loro l\'imperatore',
+              'L\'esenzione da ogni tributo per cent\'anni'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: perché i fanti hanno battuto i cavalieri a Legnano? Una parola.'}
+  ]
+},
+{
+  titolo: 'Storia medievale · 5 — Papato, Impero e monarchie nazionali',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: che cosa rende legittimo il potere di un re? Una parola.'},
+
+    {tipo:'scelta', testo:'Con quale immagine Innocenzo III spiega il rapporto papa-imperatore?',
+     opzioni:['Il papa è il sole, l\'imperatore la luna',
+              'Il papa è la luna, l\'imperatore il sole',
+              'Il papa è il pastore, l\'imperatore il gregge',
+              'Il papa è la testa, l\'imperatore le braccia'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché Innocenzo III appoggia Federico II?',
+     opzioni:['Lo credeva un candidato facile da controllare',
+              'Era il legittimo erede per diritto di sangue',
+              'Glielo avevano chiesto i principi tedeschi',
+              'Aveva promesso di partire per la crociata'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa creano le Costituzioni melfitane?',
+     opzioni:['Uno Stato con funzionari e giustizia regia',
+              'Una monarchia elettiva coi baroni al comando',
+              'Una repubblica di città autonome in Sicilia',
+              'Un regno diviso in feudi ereditari'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché Federico II fonda l\'Università di Napoli?',
+     opzioni:['Per formare i funzionari del proprio Stato',
+              'Per fare concorrenza a quella di Bologna',
+              'Per ospitare i maestri cacciati da Parigi',
+              'Per obbedire a una richiesta del papa'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa fa Federico II del carroccio di Milano?',
+     opzioni:['Lo manda a Roma trainato da un elefante',
+              'Lo brucia sul campo davanti ai prigionieri',
+              'Lo restituisce in cambio della resa',
+              'Lo conserva nel castello di Melfi'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa sono i Vespri Siciliani?',
+     opzioni:['La rivolta del 1282 contro gli Angioini',
+              'La rivolta dei baroni contro Federico II',
+              'La congiura che uccise il figlio di Manfredi',
+              'Il patto fra Sicilia e Aragona del 1302'], giusta:0},
+
+    {tipo:'scelta', testo:'Che principio afferma la Magna Carta del 1215?',
+     opzioni:['Nessuna tassa senza il consenso dei baroni',
+              'Ogni suddito ha diritto di voto in Parlamento',
+              'Il re viene eletto dall\'assemblea dei nobili',
+              'La Chiesa non paga tributi alla corona'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: Federico II, «stupore del mondo» o sconfitto? Una parola.'}
   ]
 }
 ];
