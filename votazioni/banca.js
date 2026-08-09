@@ -2724,6 +2724,104 @@ const BANCA = [
               'Esiste una legge naturale superiore a quelle dello Stato'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: si può tollerare chi non tollera? Una parola.'}
+  ]},
+{
+  titolo: 'Filosofia moderna · 14 — Berkeley',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: le cose esistono anche quando nessuno le guarda? Una parola.'},
+
+    {tipo:'scelta', testo:'A quale scopo Berkeley usa l\'empirismo di Locke?',
+     opzioni:['A demolire il materialismo e a difendere la religione',
+              'A dimostrare che tutto ciò che esiste è idea o spirito',
+              'A togliere all\'ateismo la base su cui si era fondato',
+              'A rendere evidente l\'esistenza di Dio a chiunque'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché Berkeley nega che esistano idee astratte?',
+     opzioni:['Nessuno riesce a pensare un uomo che non sia un uomo preciso',
+              'La mente non possiede il potere di separare ciò che è unito',
+              'Ogni idea che si presenta alla mente è sempre particolare',
+              'Credere nelle idee astratte è la radice di molti errori'], giusta:0},
+
+    {tipo:'scelta', testo:'Come funzionano allora le idee generali?',
+     opzioni:['Un\'idea particolare fa da segno per tutte quelle affini',
+              'L\'universalità sta nell\'uso del segno, non nell\'idea',
+              'Il geometra usa un triangolo qualsiasi per dimostrare',
+              'Il nome comune sostituisce l\'elenco dei casi singoli'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa afferma la formula «esse est percipi»?',
+     opzioni:['L\'essere di una cosa consiste nell\'essere percepita',
+              'Le cose non sono altro che collezioni di nostre idee',
+              'Un oggetto non percepito sarebbe un pensato non pensato',
+              'Non ha senso parlare di esistenza fuori da una mente'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché Berkeley respinge la distinzione fra qualità primarie e secondarie?',
+     opzioni:['Non si dà estensione senza colore né figura senza grandezza',
+              'Anche figura e movimento sono idee presenti nella mente',
+              'Nessuna qualità è più oggettiva delle altre qualità',
+              'Le qualità primarie non rappresentano nulla di reale'], giusta:0},
+
+    {tipo:'scelta', testo:'Come distingue Berkeley le sensazioni dalle fantasie?',
+     opzioni:['Le sensazioni sono più vive, ordinate e non dipendono da noi',
+              'Le sensazioni ci vengono impresse da uno Spirito superiore',
+              'Sulle fantasie il nostro spirito può agire liberamente',
+              'Le sensazioni seguono regole fisse che possiamo prevedere'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa sono le leggi naturali, per Berkeley?',
+     opzioni:['Le regole con cui Dio produce in noi le sensazioni',
+              'Il linguaggio attraverso cui Dio parla agli uomini',
+              'La grammatica che la scienza studia nei fenomeni',
+              'L\'ordine che permette di orientarsi nella vita'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: che cosa resta del mondo se togliamo la materia? Una parola.'}
+  ]},
+{
+  titolo: 'Filosofia moderna · 15 — Hume',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: perché siamo sicuri che domani sorgerà il sole? Una parola.'},
+
+    {tipo:'scelta', testo:'Che differenza c\'è fra impressioni e idee?',
+     opzioni:['Le impressioni hanno forza e vivacità che le idee non hanno',
+              'Le idee sono copie sbiadite di impressioni già avute',
+              'Le impressioni sono attuali, le idee soltanto ricordate',
+              'Ogni idea deriva sempre da un\'impressione corrispondente'], giusta:0},
+
+    {tipo:'scelta', testo:'Come spiega Hume le idee generali?',
+     opzioni:['Un\'idea particolare fa da segno per abitudine acquisita',
+              'La mente astrae ciò che più oggetti hanno in comune',
+              'L\'immaginazione collega fra loro le idee che si somigliano',
+              'Il nome comune richiama un gruppo di idee affini'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché il legame causale non si può conoscere a priori?',
+     opzioni:['Prima di provarlo, ogni effetto è ugualmente pensabile',
+              'Nessun ragionamento ricava l\'effetto dalla sola causa',
+              'Solo l\'esperienza ci dice che cosa segue a che cosa',
+              'La ragione da sola non arriva a nessuna previsione'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché il «congiungimento costante» non basta a fondare la causalità?',
+     opzioni:['Dal fatto che è sempre accaduto non segue che debba accadere',
+              'L\'esperienza riguarda il passato e non dice nulla del futuro',
+              'Occorrerebbe supporre che la natura non cambi mai',
+              'La ripetizione dei casi non produce nessuna necessità'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è allora il principio di causalità?',
+     opzioni:['Una credenza che nasce in noi dall\'abitudine',
+              'Un sentimento naturale che la ragione non giustifica',
+              'Un\'aspettativa utile per orientarsi nella vita pratica',
+              'Un\'associazione che l\'immaginazione compie da sé'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è l\'io, secondo Hume?',
+     opzioni:['Un fascio di percezioni che si susseguono senza sostegno',
+              'Un\'abitudine a considerare uniti i nostri stati di coscienza',
+              'Una successione di stati come attori su un palcoscenico',
+              'Nulla di cui si possa avere un\'impressione unitaria'], giusta:0},
+
+    {tipo:'scelta', testo:'Che rapporto c\'è fra ragione e passione nella morale di Hume?',
+     opzioni:['La ragione non muove ad agire: lo fa solo la passione',
+              'La ragione può soltanto constatare ciò che sentiamo',
+              'Solo un impulso contrario può fermare una passione',
+              'La ragione mostra quando un desiderio è irragionevole'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: la morale nasce dalla ragione o dal sentire? Una parola.'}
   ]
 }
 ];
