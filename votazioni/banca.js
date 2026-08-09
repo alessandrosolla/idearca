@@ -2479,6 +2479,55 @@ const BANCA = [
               'Colori, sapori e suoni, che i sensi colgono direttamente'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: uno scienziato deve abiurare per salvarsi? Una parola.'}
+  ]},
+{
+  titolo: 'Filosofia moderna · 9 — Cartesio',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: di che cosa sei assolutamente certo? Una parola.'},
+
+    {tipo:'scelta', testo:'Che cosa cerca Cartesio quando esce dal collegio di La Flèche?',
+     opzioni:['Un metodo per distinguere il vero dal falso, non altre nozioni',
+              'Una scienza capace di unificare tutti i saperi conosciuti',
+              'La certezza che i suoi maestri non erano riusciti a dargli',
+              'Un sapere utile alla vita e non soltanto speculativo'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa prescrive la regola dell\'analisi?',
+     opzioni:['Dividere ogni difficoltà in quante più parti è possibile',
+              'Accettare solo ciò che si presenta chiaro e distinto',
+              'Procedere per gradi dalle cose semplici a quelle complesse',
+              'Rivedere tutto il percorso per non tralasciare nulla'], giusta:0},
+
+    {tipo:'scelta', testo:'A che cosa serve l\'ipotesi del genio maligno?',
+     opzioni:['A rendere dubbie anche le verità della matematica',
+              'A spingere il dubbio fino al suo limite estremo',
+              'A mostrare che i sensi possono sempre ingannarci',
+              'A mettere in dubbio l\'esistenza del mondo esterno'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché il cogito resiste a ogni dubbio?',
+     opzioni:['Per dubitare bisogna pensare, e per pensare bisogna esistere',
+              'Chi afferma di non esistere si contraddice nel dirlo',
+              'Il pensiero è l\'unica cosa che nessuno può togliermi',
+              'Anche se tutto fosse falso, resterebbe vero che penso'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa obietta Hobbes al cogito?',
+     opzioni:['Dal fatto che penso non segue che io sia uno spirito',
+              'Il cogito è la conclusione di un sillogismo nascosto',
+              'La regola dell\'evidenza viene prima del cogito stesso',
+              'La sostanza che pensa potrebbe essere il cervello'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché Cartesio ha bisogno di dimostrare che Dio esiste?',
+     opzioni:['Solo un Dio che non inganna garantisce il mondo esterno',
+              'Senza Dio non si spiega da dove venga l\'idea di infinito',
+              'La certezza dell\'io da sola non basta a fondare la scienza',
+              'Occorre un principio che sia superiore al genio maligno'], giusta:0},
+
+    {tipo:'scelta', testo:'Da che cosa nasce l\'errore, secondo Cartesio?',
+     opzioni:['La volontà giudica là dove l\'intelletto non vede chiaro',
+              'L\'intelletto umano è limitato e non coglie ogni cosa',
+              'I sensi trasmettono alla mente informazioni ingannevoli',
+              'Le passioni deviano il giudizio dalla via della ragione'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: siamo la nostra mente o anche il nostro corpo? Una parola.'}
   ]
 }
 ];
