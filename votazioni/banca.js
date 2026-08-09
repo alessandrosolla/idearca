@@ -2185,6 +2185,104 @@ const BANCA = [
               'L\'anima è una funzione dell\'organismo, come la vista'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: la virtù ha bisogno di un premio per avere senso? Una parola.'}
+  ]},
+{
+  titolo: 'Filosofia moderna · 3 — Rinascimento e religione',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: siamo liberi di scegliere il nostro destino? Una parola.'},
+
+    {tipo:'scelta', testo:'Perché il platonismo rinascimentale non diventa una vera riforma religiosa?',
+     opzioni:['Resta una sapienza per dotti, non parla alla vita di tutti',
+              'Torna ai teologi antichi invece che alla parola di Cristo',
+              'Non mette mai in discussione l\'autorità della Chiesa',
+              'Riguarda la dottrina e non i costumi dei credenti'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa denuncia Erasmo nell\'Elogio della pazzia?',
+     opzioni:['La distanza fra la fede autentica e le sue forme corrotte',
+              'L\'ignoranza di chi non sa leggere il Vangelo in greco',
+              'La vendita delle indulgenze e la ricchezza dei prelati',
+              'L\'inutilità della teologia insegnata nelle università'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è la posizione di Erasmo sulla guerra?',
+     opzioni:['La rifiuta sempre, anche quando è detta giusta',
+              'La ammette solo per difendere la fede cristiana',
+              'La considera un male necessario fra gli Stati',
+              'La condanna perché rovina i commerci e la cultura'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa sostiene Erasmo nel «De libero arbitrio»?',
+     opzioni:['La salvezza nasce dalla collaborazione fra l\'uomo e Dio',
+              'L\'uomo è libero di scegliere fra il bene e il male',
+              'Senza libertà la dignità umana non ha più alcun senso',
+              'La grazia divina non basta da sola a salvare nessuno'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché Lutero considera la ragione nemica della fede?',
+     opzioni:['Ragionare è iniziativa dell\'uomo, la fede è abbandono a Dio',
+              'La ragione non può dimostrare nessuna verità rivelata',
+              'La scolastica aveva tradito il messaggio del Vangelo',
+              'La ragione porta a fidarsi delle opere invece che di Dio'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa risponde Lutero a chi lo accusa di fare di Dio l\'autore del male?',
+     opzioni:['Dio non deve nulla a nessuno: giusto è ciò che vuole',
+              'Il male serve alla compiutezza complessiva del creato',
+              'Dio permette il male ma non lo vuole direttamente',
+              'L\'uomo pecca per propria colpa, non per volere divino'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché in Calvino la predestinazione non porta all\'inerzia?',
+     opzioni:['Il successo nel lavoro può essere segno del favore divino',
+              'Il lavoro è comunque un dovere imposto da Dio all\'uomo',
+              'Nessuno sa se è salvo, quindi conviene comportarsi bene',
+              'La fede nei meriti di Cristo spinge ad agire nel mondo'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: chi deve interpretare un testo sacro? Una parola.'}
+  ]},
+{
+  titolo: 'Filosofia moderna · 4 — Rinascimento e politica',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: chi governa deve essere una brava persona? Una parola.'},
+
+    {tipo:'scelta', testo:'Che cosa intende Machiavelli con «verità effettuale»?',
+     opzioni:['La politica com\'è davvero, non come dovrebbe essere',
+              'Il giudizio che la storia dà delle azioni dei governanti',
+              'L\'efficacia con cui un principe raggiunge i propri scopi',
+              'La realtà che si nasconde dietro le apparenze del potere'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché Machiavelli guarda alla Roma repubblicana?',
+     opzioni:['Vi trova il momento di massima unità e libertà italiana',
+              'Vi vede il modello di uno Stato retto dalla sola virtù',
+              'Ritiene che ogni comunità debba tornare alle proprie origini',
+              'Considera i suoi ordinamenti i migliori mai realizzati'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa significa che il principe deve «poter esser non buono»?',
+     opzioni:['Deve saper usare il male quando la necessità lo impone',
+              'Non deve lasciarsi frenare da nessuno scrupolo morale',
+              'Deve apparire virtuoso anche quando non lo è affatto',
+              'Deve considerare tutti gli uomini malvagi e ingiusti'], giusta:0},
+
+    {tipo:'scelta', testo:'Che rapporto c\'è fra fortuna e virtù in Machiavelli?',
+     opzioni:['La fortuna decide metà delle cose, la virtù può arginarla',
+              'La virtù serve a prevedere i colpi che la fortuna prepara',
+              'La fortuna colpisce dove non trova un ordine che le resista',
+              'La virtù rende l\'uomo indipendente dai casi della sorte'], giusta:0},
+
+    {tipo:'scelta', testo:'Su che cosa fonda Grozio il diritto naturale?',
+     opzioni:['Sulla razionalità che costituisce la natura dell\'uomo',
+              'Sulla volontà con cui Dio ha ordinato il mondo umano',
+              'Sul consenso che tutti i popoli danno a certe norme',
+              'Sull\'istinto di socievolezza presente in ogni persona'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa cambia il contrattualismo di Grozio?',
+     opzioni:['Il potere del sovrano viene dai cittadini, non da Dio',
+              'Il sovrano resta comunque vincolato al diritto naturale',
+              'Le leggi dello Stato valgono solo se sono ragionevoli',
+              'I sudditi possono revocare il potere che hanno concesso'], giusta:0},
+
+    {tipo:'scelta', testo:'Da quale osservazione nasce l\'Utopia di Moro?',
+     opzioni:['I contadini inglesi, cacciati dai pascoli, finiscono a rubare',
+              'La proprietà privata genera per sua natura disuguaglianza',
+              'Le leggi puniscono i poveri invece di rimuoverne le cause',
+              'L\'aristocrazia terriera si arricchisce a spese del popolo'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: immaginare una società perfetta serve a qualcosa? Una parola.'}
   ]
 }
 ];
