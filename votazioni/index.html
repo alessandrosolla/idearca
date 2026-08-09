@@ -83,7 +83,15 @@
     <span id="p-conta" style="font-size:1.1rem;color:#5A5148"></span>
     <button onclick="precedente()">‹ Prec</button>
     <button onclick="successiva()">Succ ›</button>
+    <button onclick="qrGrande()">⛶ QR grande</button>
     <button onclick="chiudiProiezione()">Esci</button>
+  </div>
+  <div id="qr-velo" onclick="this.style.display='none'"
+       style="display:none;position:fixed;inset:0;background:#fff;z-index:70;
+              flex-direction:column;align-items:center;justify-content:center;cursor:pointer">
+    <canvas id="qr-max"></canvas>
+    <div id="qr-max-url" style="margin-top:1.4rem;font-size:1.6rem;font-weight:600"></div>
+    <div style="margin-top:.5rem;color:#5A5148">tocca per chiudere</div>
   </div>
   <h3 id="p-domanda"></h3>
   <div class="risultati" id="p-risultati"></div>
@@ -327,6 +335,20 @@ async function chiudiSessione(){
   sessione = null; domande = []; risposte = {}; disegnaRegia();
 }
 
+/* Il QR a tutto schermo: serve quando venticinque persone devono
+   inquadrarlo insieme dal fondo dell'aula. */
+function qrGrande(){
+  const velo = document.getElementById('qr-velo');
+  const base = location.origin + location.pathname.replace(/votazioni\/.*$/,'vota/');
+  const lato = Math.min(window.innerWidth, window.innerHeight) - 220;
+  try{
+    QR.disegna(document.getElementById('qr-max'), base + '?c=' + sessione.codice, Math.max(300, lato));
+    document.getElementById('qr-max-url').textContent =
+      base.replace(/^https?:\/\//,'') + '   ·   codice ' + sessione.codice;
+    velo.style.display = 'flex';
+  }catch(e){ alert('Non riesco a generare il QR: ' + e.message); }
+}
+
 /* ---------- capitoli pronti ---------- */
 function anteprimaBanca(){
   const i = document.getElementById('banca-sel').value;
@@ -374,7 +396,11 @@ async function proietta(){
   document.getElementById('p-url').textContent = base.replace(/^https?:\/\//,'');
   /* Il QR porta il codice già dentro l'indirizzo: chi inquadra si
      trova dentro senza digitare nulla. */
-  try{ QR.disegna(document.getElementById('p-qr'), base + '?c=' + sessione.codice, 300); }catch(_){}
+  /* La misura segue l'altezza dello schermo: su un proiettore da
+     aula un quadrato da 300 pixel e' illeggibile dal fondo. */
+  const lato = Math.max(220, Math.min(Math.round(window.innerHeight * 0.34), 460));
+  try{ QR.disegna(document.getElementById('p-qr'), base + '?c=' + sessione.codice, lato); }
+  catch(e){ document.getElementById('p-url').textContent += '  (QR non disponibile)'; }
   aggiornaProiezione();
   if(orologio) clearInterval(orologio);
   orologio = setInterval(async ()=>{ await assicuraToken(); await caricaRisposte(); aggiornaProiezione(); }, 2500);
