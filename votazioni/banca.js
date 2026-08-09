@@ -2332,6 +2332,104 @@ const BANCA = [
               'Impotenza, insipienza e odio, propri delle cose finite'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: la scienza nasce contro la magia o da essa? Una parola.'}
+  ]},
+{
+  titolo: 'Filosofia moderna · 6 — La rivoluzione scientifica',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: che cosa ci fa abbandonare un\'idea in cui credevamo? Una parola.'},
+
+    {tipo:'scelta', testo:'Che cosa diventa la natura per la nuova scienza?',
+     opzioni:['Un ordine oggettivo di leggi esprimibili in matematica',
+              'Un insieme di forze vive che l\'uomo può dominare',
+              'Una macchina che funziona senza alcun fine interno',
+              'Un libro che Dio ha scritto perché l\'uomo lo legga'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché il sistema geocentrico era rimasto saldo per secoli?',
+     opzioni:['Senso comune, Aristotele, metafisica e teologia lo confermavano',
+              'Nessuno disponeva di strumenti capaci di smentirlo',
+              'La Chiesa puniva chi osava metterlo in discussione',
+              'I calcoli astronomici che ne derivavano funzionavano bene'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa resta conservatore nel sistema di Copernico?',
+     opzioni:['L\'universo chiuso, le sfere reali e i moti circolari',
+              'L\'idea che la Terra occupi una posizione privilegiata',
+              'La convinzione che il modello sia solo un calcolo utile',
+              'Il rifiuto di attribuire alla Terra un moto su se stessa'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa fa Osiander alla prima edizione di Copernico?',
+     opzioni:['Vi premette che il sistema è solo un\'ipotesi di calcolo',
+              'Ne cambia il titolo per attenuarne la portata dirompente',
+              'Ne firma la prefazione senza il consenso dell\'autore',
+              'Vi aggiunge una difesa contro le obiezioni dei teologi'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è il contributo decisivo di Tycho Brahe?',
+     opzioni:['Nega che le sfere celesti siano corpi solidi e reali',
+              'Colloca i pianeti attorno al Sole e il Sole attorno alla Terra',
+              'Raccoglie le osservazioni su cui lavorerà poi Keplero',
+              'Sostituisce alle orbite circolari il concetto matematico di orbita'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa afferma la seconda legge di Keplero?',
+     opzioni:['Il raggio che unisce pianeta e Sole copre aree uguali in tempi uguali',
+              'Le orbite dei pianeti sono ellissi con il Sole in uno dei fuochi',
+              'I pianeti vicini al Sole compiono la rivoluzione più in fretta',
+              'Il quadrato del periodo è proporzionale al cubo della distanza'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa aggiunge Bruno alla rivoluzione astronomica?',
+     opzioni:['Abbatte i confini del cosmo: l\'universo è infinito e senza centro',
+              'Sostiene che esistano infiniti mondi abitati da esseri razionali',
+              'Nega ogni differenza di sostanza fra il cielo e la Terra',
+              'Ricava l\'infinità del mondo dall\'infinita potenza di Dio'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: sapere di non essere al centro ci diminuisce? Una parola.'}
+  ]},
+{
+  titolo: 'Filosofia moderna · 7 — Francesco Bacone',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: che cosa ci impedisce di vedere le cose come sono? Una parola.'},
+
+    {tipo:'scelta', testo:'Che cosa significa la formula «sapere è potere»?',
+     opzioni:['Conoscendo le leggi della natura l\'uomo estende il suo dominio',
+              'La scienza serve a produrre invenzioni utili alla comunità',
+              'Chi possiede il sapere finisce per comandare sugli altri',
+              'Si vince la natura soltanto obbedendo alle sue regole'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché per Bacone l\'esperimento vale più della semplice osservazione?',
+     opzioni:['Nell\'esperimento è lo scienziato a interrogare la natura',
+              'I sensi da soli registrano i fatti in modo passivo',
+              'Solo l\'esperimento permette di misurare i fenomeni',
+              'L\'osservazione non riesce a cogliere le forze nascoste'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa sono gli «idoli della spelonca»?',
+     opzioni:['I pregiudizi che ciascuno si forma per carattere ed educazione',
+              'Gli errori comuni a tutti gli uomini per la loro stessa natura',
+              'Le distorsioni che il linguaggio comune impone al pensiero',
+              'Le dottrine filosofiche che presentano mondi immaginari'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa sono gli «idoli del teatro»?',
+     opzioni:['I sistemi filosofici che costruiscono mondi di finzione',
+              'Le parole che designano cose che non esistono affatto',
+              'Le dimostrazioni che sembrano valide ma non lo sono',
+              'Le opinioni che la folla accetta senza mai verificarle'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché la verità è «figlia del tempo»?',
+     opzioni:['Il mondo di oggi è più vecchio, quindi sa più degli antichi',
+              'Ogni epoca corregge gli errori di quella che l\'ha preceduta',
+              'Le conoscenze si accumulano grazie a nuovi esperimenti',
+              'Nessuna autorità può stabilire ciò che è vero e ciò che è falso'], giusta:0},
+
+    {tipo:'scelta', testo:'A che cosa serve l\'«istanza cruciale»?',
+     opzioni:['A decidere fra due ipotesi che sembrano ugualmente probabili',
+              'A verificare se l\'ipotesi formulata regge alla prova dei fatti',
+              'A escludere tutte le cause incompatibili con il fenomeno',
+              'A confermare in via definitiva la legge che si è trovata'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa rappresentano le api nella metafora di Bacone?',
+     opzioni:['Il metodo che raccoglie dati e poi li elabora con la ragione',
+              'Gli scienziati che lavorano insieme per un fine comune',
+              'Chi accumula esperienze senza saperle mai ordinare',
+              'Chi costruisce sistemi ricavandoli dalla propria mente'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: la scienza deve servire a qualcosa o basta a se stessa? Una parola.'}
   ]
 }
 ];
