@@ -2528,6 +2528,104 @@ const BANCA = [
               'Le passioni deviano il giudizio dalla via della ragione'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: siamo la nostra mente o anche il nostro corpo? Una parola.'}
+  ]},
+{
+  titolo: 'Filosofia moderna · 10 — Spinoza',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: siamo davvero liberi di volere quello che vogliamo? Una parola.'},
+
+    {tipo:'scelta', testo:'Perché Spinoza conclude che esiste una sola sostanza?',
+     opzioni:['Ciò che dipende da altro per esistere non è sostanza',
+              'Due sostanze si limiterebbero l\'una con l\'altra',
+              'La sostanza è causa di sé e non ha bisogno di nulla',
+              'Ogni sostanza dovrebbe avere attributi tutti suoi'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa significa la formula «Deus sive Natura»?',
+     opzioni:['Dio e la natura sono la stessa identica sostanza',
+              'Dio non sta fuori dal mondo che ha prodotto',
+              'La natura è l\'insieme di tutto ciò che esiste',
+              'Dio si manifesta nell\'ordine geometrico del cosmo'], giusta:0},
+
+    {tipo:'scelta', testo:'Che rapporto c\'è fra natura naturante e natura naturata?',
+     opzioni:['La seconda è nella prima: la causa non è fuori dall\'effetto',
+              'La prima produce la seconda come Dio produce il creato',
+              'Sono la sostanza vista come causa e come effetto',
+              'La prima è Dio con i suoi attributi, la seconda sono i modi'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa afferma il parallelismo psico-fisico?',
+     opzioni:['A ogni moto del corpo corrisponde un\'idea nella mente',
+              'Mente e corpo non possono agire l\'una sull\'altro',
+              'Il corpo è il volto esterno di ciò che la mente è dentro',
+              'La causa di un\'idea è sempre e soltanto un\'altra idea'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è il conatus?',
+     opzioni:['Lo sforzo con cui ogni cosa tende a conservare il proprio essere',
+              'Il desiderio consapevole che muove ogni azione umana',
+              'La forza che spinge l\'uomo verso ciò che gli giova',
+              'L\'appetito che riguarda insieme la mente e il corpo'], giusta:0},
+
+    {tipo:'scelta', testo:'In che cosa consiste la libertà per Spinoza?',
+     opzioni:['Nel comprendere le cause necessarie che ci determinano',
+              'Nel sottrarsi al dominio delle passioni con la ragione',
+              'Nel riconoscere di essere una parte finita dell\'infinito',
+              'Nell\'agire secondo le sole leggi della propria natura'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è il terzo genere di conoscenza?',
+     opzioni:['Vedere le cose singole alla luce dell\'unica sostanza',
+              'Collegare i fenomeni secondo rapporti di causa ed effetto',
+              'Cogliere il mondo dal punto di vista dell\'eternità',
+              'Comprendere l\'ordine necessario di tutto ciò che esiste'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: capire perché soffriamo ci fa soffrire di meno? Una parola.'}
+  ]},
+{
+  titolo: 'Filosofia moderna · 11 — Leibniz',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: perché esiste il male, se il mondo ha un ordine? Una parola.'},
+
+    {tipo:'scelta', testo:'Che cosa distingue l\'ordine di Leibniz da quello di Spinoza?',
+     opzioni:['È contingente, frutto di una scelta e non di necessità',
+              'Ammette accanto alle cause anche i fini della natura',
+              'Lascia spazio alla libertà di Dio e a quella dell\'uomo',
+              'Non coincide con Dio ma è stato da lui prodotto'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa caratterizza le verità di fatto?',
+     opzioni:['Il loro contrario resta sempre logicamente possibile',
+              'Riguardano ciò che accade realmente nel mondo',
+              'Si fondano sul principio di ragion sufficiente',
+              'Non si possono ricavare senza ricorrere all\'esperienza'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa significa che la ragion sufficiente «inclina senza necessitare»?',
+     opzioni:['Spiega con certezza perché accade, ma il contrario resta possibile',
+              'Rende un evento probabile senza però renderlo inevitabile',
+              'Determina la scelta ma non toglie la libertà a chi sceglie',
+              'Vale per le verità di fatto e non per quelle di ragione'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è una monade?',
+     opzioni:['Una sostanza semplice, inestesa e indivisibile: un atomo spirituale',
+              'Il punto di vista da cui una parte rispecchia tutto l\'universo',
+              'L\'elemento ultimo di cui sono fatti i corpi e le anime',
+              'Una forza che non riceve nulla dall\'esterno di se stessa'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa sono le «piccole percezioni»?',
+     opzioni:['Rappresentazioni confuse di cui non siamo consapevoli',
+              'Le percezioni proprie delle monadi meno elevate',
+              'I gradi minimi attraverso cui la natura non fa salti',
+              'Gli stati che precedono la vera e propria appercezione'], giusta:0},
+
+    {tipo:'scelta', testo:'Che problema risolve l\'armonia prestabilita?',
+     opzioni:['L\'accordo fra anima e corpo, che non possono agire l\'uno sull\'altra',
+              'La comunicazione fra monadi che non hanno alcuna finestra',
+              'L\'intervento continuo di Dio richiesto dagli occasionalisti',
+              'La coincidenza fra le leggi meccaniche e quelle spirituali'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché questo è il migliore dei mondi possibili?',
+     opzioni:['Non tutti i beni stanno insieme: Dio sceglie il male minore',
+              'Contiene la minor quantità di male fra i mondi pensabili',
+              'Dio, essendo perfetto, non poteva sceglierne uno peggiore',
+              'La libertà umana vale più del male che essa produce'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: la libertà vale il prezzo che ci fa pagare? Una parola.'}
   ]
 }
 ];
