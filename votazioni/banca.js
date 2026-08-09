@@ -911,6 +911,55 @@ const BANCA = [
               'Una pestilenza decimò il loro esercito'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: che cosa avrebbe imparato l\'Europa se avesse ascoltato Marco Polo? Una parola.'}
+  ]},
+{
+  titolo: 'Storia medievale · 7 — La crisi del Trecento',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: la parola «crisi» che cosa ti fa venire in mente? Una parola.'},
+
+    {tipo:'scelta', testo:'Che cosa significa «crisi» nel senso originario greco?',
+     opzioni:['Separare e giudicare: una fase di passaggio',
+              'Cadere in rovina senza più risollevarsi',
+              'Mancare del necessario per sopravvivere',
+              'Combattere fra due parti in conflitto'], giusta:0},
+
+    {tipo:'scelta', testo:'Quale effetto ebbe la piccola glaciazione sull\'agricoltura?',
+     opzioni:['Distrusse i raccolti di cereali per anni',
+              'Rese coltivabili le terre del Nord Europa',
+              'Favorì la diffusione della vite in Germania',
+              'Allungò la stagione utile per la semina'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché falliscono i Bardi e i Peruzzi di Firenze?',
+     opzioni:['I re a cui avevano prestato non restituiscono',
+              'Un incendio distrusse i loro depositi d\'oro',
+              'I clienti ritirarono tutti i loro depositi',
+              'Il Comune di Firenze confiscò i loro beni'], giusta:0},
+
+    {tipo:'scelta', testo:'Come arriva la peste in Europa?',
+     opzioni:['Dai mercanti genovesi in fuga da Caffa',
+              'Dalle navi arabe che approdano a Venezia',
+              'Dai crociati di ritorno dalla Terrasanta',
+              'Dai pellegrini reduci da Santiago'], giusta:0},
+
+    {tipo:'scelta', testo:'Quanta popolazione europea muore nell\'epidemia del 1348?',
+     opzioni:['Circa un terzo del totale',
+              'Circa un decimo del totale',
+              'Circa la metà del totale',
+              'Circa due terzi del totale'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché dopo la peste i salari dei contadini salgono?',
+     opzioni:['I lavoratori sono pochi e possono trattare',
+              'I signori diventano più generosi per pietà',
+              'Il re impone per legge salari più alti',
+              'La terra rende molto di più di prima'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa chiedevano i Ciompi nel 1378?',
+     opzioni:['Una propria Arte e voce nel governo',
+              'La fine della servitù della gleba',
+              'L\'abolizione della tassa sul macinato',
+              'Il ritorno dei Medici al potere'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: come può un secolo così terribile produrre Giotto e Boccaccio? Una parola.'}
   ]
 }
 ];
