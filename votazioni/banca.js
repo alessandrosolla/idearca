@@ -3704,6 +3704,104 @@ const BANCA = [
               'La Chiesa rifiuta ogni collaborazione col Regno d\'Italia'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: che cosa serve per «fare gli italiani»? Una parola.'}
+  ]},
+{
+  titolo: 'Storia contemporanea · 5 — L\'Europa nell\'età di Bismarck',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: si può togliere consenso a un avversario dandogli ragione? Una parola.'},
+
+    {tipo:'scelta', testo:'Perché il Secondo Reich è federale solo in apparenza?',
+     opzioni:['Il Bundesrat è controllato dalla Prussia e blocca le leggi',
+              'Il cancelliere risponde all\'imperatore e non al Parlamento',
+              'La Prussia guida di fatto tutti e venticinque gli Stati',
+              'Il suffragio è universale ma la democrazia resta limitata'], giusta:0},
+
+    {tipo:'scelta', testo:'Come finisce il Kulturkampf contro i cattolici?',
+     opzioni:['Il partito cattolico raddoppia quasi i propri consensi',
+              'Bismarck ammorbidisce le leggi e cerca un\'intesa',
+              'La repressione ottiene l\'effetto opposto a quello voluto',
+              'Lo scontro si chiude con una sconfitta del cancelliere'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è la logica delle leggi sociali di Bismarck?',
+     opzioni:['Concedere dall\'alto per togliere seguito ai socialisti',
+              'Riconoscere alcuni bisogni senza legittimare i partiti operai',
+              'Ammansire le masse invece di limitarsi a reprimerle',
+              'Dare ai lavoratori ciò che non hanno dovuto conquistare'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è l\'obiettivo del sistema di alleanze di Bismarck?',
+     opzioni:['Impedire che la Francia trovi alleati per la rivincita',
+              'Tenere isolata Parigi dopo la sconfitta di Sedan',
+              'Fare della Germania l\'arbitro degli equilibri europei',
+              'Evitare che una guerra torni a coinvolgere il Reich'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa cambia con la Weltpolitik di Guglielmo II?',
+     opzioni:['Si abbandona l\'equilibrio per un\'espansione aggressiva',
+              'Il Reich punta su colonie e flotta invece che su intese',
+              'Non si rinnova l\'accordo con la Russia, che va con la Francia',
+              'La Germania smette di fare da ago della bilancia'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa rivela l\'affare Dreyfus?',
+     opzioni:['La Francia è spaccata fra un\'anima progressista e una reazionaria',
+              'L\'esercito preferisce coprire un errore piuttosto che ammetterlo',
+              'L\'antisemitismo è radicato in larga parte della società',
+              'La società civile può avere ragione delle istituzioni'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché il Congresso di Berlino non pacifica i Balcani?',
+     opzioni:['Umilia la Russia e lascia intatta la rivalità con l\'Austria',
+              'Ridimensiona le conquiste russe senza risolvere le cause',
+              'Assegna la Bosnia all\'Austria, che la Russia rivendicava',
+              'Lascia irrisolta la questione dei popoli slavi'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: la pace costruita sugli equilibri quanto può durare? Una parola.'}
+  ]},
+{
+  titolo: 'Storia contemporanea · 6 — La seconda rivoluzione industriale',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: quale invenzione ha cambiato di più la vita quotidiana? Una parola.'},
+
+    {tipo:'scelta', testo:'Che cosa provoca la Grande Depressione del 1873?',
+     opzioni:['Si produce più di quanto il mercato riesca ad assorbire',
+              'I cereali americani a basso costo invadono l\'Europa',
+              'Il crollo della Borsa di Vienna si estende alle altre',
+              'I prezzi calano e le fabbriche cominciano a chiudere'], giusta:0},
+
+    {tipo:'scelta', testo:'Come reagiscono gli Stati alla crisi?',
+     opzioni:['Con dazi sulle importazioni, tranne la Gran Bretagna',
+              'Abbandonando il libero scambio per il protezionismo',
+              'Ancorando le valute all\'oro per dare stabilità',
+              'Difendendo le produzioni nazionali dalla concorrenza'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa distingue la seconda rivoluzione industriale dalla prima?',
+     opzioni:['Le scoperte nascono da ricerca scientifica organizzata',
+              'Non più inventori solitari ma laboratori d\'impresa',
+              'Servono ingegneri e chimici formati nei politecnici',
+              'La scienza precede e guida l\'applicazione industriale'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché l\'acciaio diventa il materiale simbolo dell\'epoca?',
+     opzioni:['È più resistente del ferro e più flessibile della ghisa',
+              'Un nuovo processo lo rende economico e producibile in serie',
+              'Serve per ponti, navi, binari, macchine e grattacieli',
+              'Sostituisce i materiali usati nella prima rivoluzione'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è un trust?',
+     opzioni:['La fusione di più società sotto un\'unica direzione',
+              'Una concentrazione che tende a diventare monopolio',
+              'Ciò che la Standard Oil realizzò nel settore petrolifero',
+              'La forma che lo Sherman Act del 1890 volle colpire'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è il capitalismo finanziario?',
+     opzioni:['Le banche finanziano l\'industria e ne entrano nel capitale',
+              'Un intreccio in cui industriali e banchieri si siedono insieme',
+              'Il modo di reperire i capitali enormi delle nuove industrie',
+              'Un sistema in cui il risparmio dei clienti finisce in azioni'], giusta:0},
+
+    {tipo:'scelta', testo:'Su che cosa si basa il «sistema americano di fabbrica»?',
+     opzioni:['Su componenti standardizzate e fra loro intercambiabili',
+              'Sull\'assemblaggio rapido di pezzi tutti uguali fra loro',
+              'Sulla riduzione degli sprechi e sull\'uniformità del prodotto',
+              'Su nastri che portano il pezzo davanti a ciascun operaio'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: il progresso tecnico rende gli uomini più liberi? Una parola.'}
   ]
 }
 ];
