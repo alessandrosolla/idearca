@@ -3263,6 +3263,104 @@ const BANCA = [
               'Come una realtà che ha in sé dei fini e non solo cause'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: desiderare ciò che non si può avere è una condanna? Una parola.'}
+  ]},
+{
+  titolo: 'Filosofia moderna · 25 — Fichte',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: la libertà è un dato di fatto o una conquista? Una parola.'},
+
+    {tipo:'scelta', testo:'Perché i post-kantiani rifiutano la cosa in sé?',
+     opzioni:['Sarebbe qualcosa di non pensato, e quindi impensabile',
+              'Ogni oggetto esiste solo in rapporto a chi lo rappresenta',
+              'Non si può ammettere ciò di cui non si ha coscienza',
+              'Kant stesso l\'aveva definita una x del tutto sconosciuta'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa fa Fichte, tolta di mezzo la cosa in sé?',
+     opzioni:['Fa dell\'Io un principio creatore e infinito di tutto',
+              'Sposta il discorso dalla conoscenza alla metafisica',
+              'Sostiene che fuori dello spirito non esiste nulla',
+              'Attribuisce all\'Io non solo il pensiero ma la realtà'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa significa «Tathandlung»?',
+     opzioni:['L\'Io è insieme l\'attività che agisce e il suo prodotto',
+              'L\'essere dell\'Io deriva dal suo stesso agire',
+              'L\'Io si crea da sé ponendo se stesso',
+              'In principio non c\'è l\'essere ma l\'azione'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché l\'Io deve porre il non-io?',
+     opzioni:['Senza un ostacolo da vincere non ci sarebbe sforzo né libertà',
+              'Un soggetto senza oggetto non avrebbe alcun senso',
+              'Serve un limite perché l\'Io possa realizzarsi come morale',
+              'Il mondo esiste come teatro dell\'azione dell\'uomo'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è lo Streben?',
+     opzioni:['Lo sforzo infinito con cui l\'io finito tende all\'Io assoluto',
+              'La tensione che non raggiunge mai il proprio traguardo',
+              'La perfezione intesa come cammino e non come risultato',
+              'Il divenire liberi, che vale più dell\'essere liberi'], giusta:0},
+
+    {tipo:'scelta', testo:'Da che cosa dipende la scelta fra idealismo e dogmatismo?',
+     opzioni:['Da quel che si è come uomo: dal senso della propria libertà',
+              'Dal partire dal soggetto oppure dall\'oggetto per spiegare',
+              'Dall\'ammettere o negare che la libertà sia reale',
+              'Dal considerarsi liberi o determinati dalle cose'], giusta:0},
+
+    {tipo:'scelta', testo:'Su che cosa fonda Fichte il primato della Germania nei Discorsi?',
+     opzioni:['Sulla lingua originaria rimasta intatta, non sulle armi',
+              'Su un primato culturale e spirituale, non politico',
+              'Sull\'aver dato all\'Europa la Riforma, Leibniz e Kant',
+              'Sull\'essere il popolo che si è conservato integro'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: la filosofia che scegliamo dice chi siamo? Una parola.'}
+  ]},
+{
+  titolo: 'Filosofia moderna · 26 — Schelling',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: la natura è viva o è soltanto materia? Una parola.'},
+
+    {tipo:'scelta', testo:'Che cos\'è l\'Assoluto per Schelling?',
+     opzioni:['L\'identità indistinta di spirito e natura, prima di ogni differenza',
+              'Il fondamento comune del soggetto e dell\'oggetto',
+              'Ciò che non si riduce né all\'Io di Fichte né alla sostanza',
+              'L\'unità in cui conscio e inconscio non sono ancora separati'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché Schelling rifiuta il finalismo teologico?',
+     opzioni:['Un Dio-architetto esterno toglie autonomia alla natura',
+              'La finalità dev\'essere interna e non imposta da fuori',
+              'La natura si organizza da sé, non è un\'opera d\'arte',
+              'Il progetto non può stare nella mente di un artefice'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è l\'anima del mondo?',
+     opzioni:['Lo spirito inconscio che dall\'interno organizza la natura',
+              'Il principio che tiene unito l\'organico e l\'inorganico',
+              'La forza vivificatrice presente in tutto l\'universo',
+              'Ciò che rende la natura un solo grande organismo'], giusta:0},
+
+    {tipo:'scelta', testo:'In che senso la natura è «preistoria dello spirito»?',
+     opzioni:['È spirito addormentato che si sveglia solo nell\'uomo',
+              'È il passato trascendentale di ogni coscienza',
+              'Con l\'uomo la natura ritorna finalmente a se stessa',
+              'I suoi prodotti sono tentativi falliti di riflettere sé'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché l\'arte rivela l\'Assoluto meglio della filosofia?',
+     opzioni:['Vi si uniscono subito ispirazione inconscia ed esecuzione consapevole',
+              'Il genio produce forme finite cariche di senso infinito',
+              'Solo lì spirito e natura si armonizzano senza attendere',
+              'È il luogo dove ciò che è separato arde in un\'unica fiamma'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa cambia con l\'idea del «Dio che diviene»?',
+     opzioni:['L\'Assoluto non è più identità ferma ma realtà in movimento',
+              'In Dio convivono un fondo oscuro e la ragione che lo vince',
+              'La storia diventa il modo in cui Dio si rivela a se stesso',
+              'Il male trova posto dentro il divino invece che fuori'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa contesta Schelling a Hegel nella filosofia positiva?',
+     opzioni:['Che l\'esistenza delle cose non si può dedurre dalla ragione',
+              'Che il reale non coincide senza residui con il razionale',
+              'Che davanti alla nuda realtà la ragione resta attonita',
+              'Che pensare l\'essenza è diverso dal constatare l\'esistenza'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: esiste qualcosa che la ragione non potrà mai spiegare? Una parola.'}
   ]
 }
 ];
