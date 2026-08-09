@@ -1450,6 +1450,104 @@ const BANCA = [
               'L\'accesso a tutte le cariche pubbliche del regno'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: la tolleranza si concede per convinzione o per stanchezza? Una parola.'}
+  ]},
+{
+  titolo: 'Storia moderna · 4 — La crisi del Seicento e la rivoluzione scientifica',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: da una crisi può nascere qualcosa di buono? Una parola.'},
+
+    {tipo:'scelta', testo:'Perché si dice che la crisi del Seicento non è uniforme?',
+     opzioni:['Colpisce i paesi in modi diversi, e la Francia cresce',
+              'Riguarda solo l\'economia e non la vita politica',
+              'Dura pochi anni e poi tutto torna come prima',
+              'Si limita all\'Europa mediterranea e alla Spagna'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa cambia con la cosiddetta rivoluzione militare?',
+     opzioni:['Le armi da fuoco soppiantano la cavalleria corazzata',
+              'Gli eserciti mercenari sostituiscono quelli regolari',
+              'Le città vengono circondate da mura alte e sottili',
+              'Le guerre diventano più brevi e meno costose'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa attenua le carestie nella seconda metà del Seicento?',
+     opzioni:['Le nuove colture americane: patata, mais e riso',
+              'Il ritorno di un clima più caldo su tutta l\'Europa',
+              'L\'uso dei concimi e degli attrezzi più moderni',
+              'La riduzione delle imposte imposte dai sovrani'], giusta:0},
+
+    {tipo:'scelta', testo:'Che effetto ha la Fronda sulla monarchia francese?',
+     opzioni:['Luigi XIV impara a tenere la nobiltà sotto controllo',
+              'Il Parlamento di Parigi ottiene nuovi poteri di veto',
+              'La nobiltà riconquista i privilegi che aveva perduto',
+              'Mazarino è costretto a lasciare il governo del regno'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa rovescia il metodo sperimentale?',
+     opzioni:['Il principio di autorità: gli antichi vanno verificati',
+              'L\'idea che la matematica descriva bene la natura',
+              'La convinzione che la Terra stia ferma al centro',
+              'L\'uso degli strumenti costruiti dagli artigiani'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa unifica la legge di gravitazione di Newton?',
+     opzioni:['La fisica del cielo e quella della Terra, sotto una legge',
+              'Il calcolo infinitesimale e la geometria di Cartesio',
+              'Le orbite dei pianeti e le fasi osservate di Venere',
+              'La teoria di Copernico e le osservazioni di Galileo'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa distingue Locke da Hobbes?',
+     opzioni:['Per Locke la delega al governo è sempre revocabile',
+              'Per Locke lo Stato nasce da un patto fra gli uomini',
+              'Per Locke il sovrano riceve il potere da Dio stesso',
+              'Per Locke lo stato di natura è una guerra continua'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: quando è giusto ribellarsi a chi governa? Una parola.'}
+  ]},
+{
+  titolo: 'Storia moderna · 5 — La guerra dei Trent\'anni e l\'Olanda',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: che cosa rende possibile una pace duratura? Una parola.'},
+
+    {tipo:'scelta', testo:'Perché la pace di Augusta non aveva risolto il problema tedesco?',
+     opzioni:['Riconosceva luterani e cattolici, ma non i calvinisti',
+              'Lasciava ai sudditi la scelta della propria religione',
+              'Non era mai stata accettata dai principi protestanti',
+              'Attribuiva all\'imperatore il diritto di scegliere la fede'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa scatena la defenestrazione di Praga del 1618?',
+     opzioni:['Ferdinando II toglie ai boemi la libertà di culto',
+              'I nobili boemi si rifiutano di pagare le imposte',
+              'L\'imperatore scioglie l\'Unione evangelica dei principi',
+              'Federico V rivendica la corona imperiale per sé'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché la Francia cattolica entra in guerra a fianco dei protestanti?',
+     opzioni:['Richelieu vuole abbattere la potenza degli Asburgo',
+              'Vuole difendere la libertà religiosa in tutta Europa',
+              'Deve rispettare i patti stretti con la corona svedese',
+              'Cerca di ottenere la corona imperiale per il suo re'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa afferma la pace di Westfalia sugli Stati?',
+     opzioni:['Nessuno può interferire nei loro affari interni',
+              'Ognuno deve garantire la libertà di culto ai sudditi',
+              'Tutti riconoscono l\'autorità superiore dell\'imperatore',
+              'I confini stabiliti non potranno più essere mutati'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa provoca in Spagna il programma di Olivares?',
+     opzioni:['La rivolta della Catalogna e del Portogallo nel 1640',
+              'La bancarotta dello Stato e la fine dei pagamenti',
+              'L\'espulsione dei moriscos dalle terre della corona',
+              'La tregua di dodici anni firmata con gli Olandesi'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'ha di nuovo la VOC fondata nel 1602?',
+     opzioni:['È la prima grande società ad azioni acquistabili da tutti',
+              'È la prima compagnia autorizzata a commerciare in Asia',
+              'È la prima impresa a possedere una flotta di navi veloci',
+              'È la prima banca pubblica che garantisce i pagamenti'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché le Province Unite attirano tanti stranieri?',
+     opzioni:['Vi si può professare liberamente la propria fede',
+              'Vi si pagano imposte più basse che altrove in Europa',
+              'Vi si ottiene la cittadinanza dopo pochi anni di lavoro',
+              'Vi si trovano le università migliori del continente'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: la tolleranza è un valore o una convenienza economica? Una parola.'}
   ]
 }
 ];
