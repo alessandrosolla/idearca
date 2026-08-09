@@ -960,6 +960,55 @@ const BANCA = [
               'Il ritorno dei Medici al potere'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: come può un secolo così terribile produrre Giotto e Boccaccio? Una parola.'}
+  ]},
+{
+  titolo: 'Storia medievale · 8 — La crisi dei poteri universali',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: che cosa succede quando due autorità pretendono di comandare? Una parola.'},
+
+    {tipo:'scelta', testo:'Che cosa istituisce Bonifacio VIII nel 1300?',
+     opzioni:['Il primo Giubileo della storia cristiana',
+              'Il primo tribunale contro gli eretici',
+              'La prima università fondata da un papa',
+              'Il primo concilio ecumenico a Roma'], giusta:0},
+
+    {tipo:'scelta', testo:'Come reagisce Filippo il Bello alla bolla Unam Sanctam?',
+     opzioni:['Manda i suoi uomini a schiaffeggiare il papa',
+              'Fa incoronare un antipapa a Parigi',
+              'Rinuncia a tassare il clero francese',
+              'Parte per una crociata contro Roma'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché si parla di «cattività» avignonese?',
+     opzioni:['Richiama la prigionia degli ebrei a Babilonia',
+              'I papi erano prigionieri del re di Francia',
+              'Avignone era circondata da mura invalicabili',
+              'I cardinali non potevano lasciare la città'], giusta:0},
+
+    {tipo:'scelta', testo:'A quanti papi contemporanei si arriva con lo Scisma?',
+     opzioni:['Tre, dopo il Concilio di Pisa del 1409',
+              'Due, e mai più di due in nessun momento',
+              'Quattro, uno per ciascun grande regno',
+              'Cinque, prima del Concilio di Costanza'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa stabilisce la Bolla d\'Oro del 1356?',
+     opzioni:['Sette principi eleggono l\'imperatore',
+              'L\'imperatore designa il proprio erede',
+              'Il papa conferma l\'elezione imperiale',
+              'Le città libere votano per l\'imperatore'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché gli Inglesi vincono a Crécy e Poitiers?',
+     opzioni:['Gli arcieri col long bow battono la cavalleria',
+              'Hanno più cavalieri pesanti dei Francesi',
+              'Usano per primi i cannoni da assedio',
+              'Il re di Francia tradisce i suoi alleati'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa ottiene Giovanna d\'Arco nel 1429?',
+     opzioni:['Libera Orléans e fa incoronare Carlo VII',
+              'Riconquista Parigi occupata dagli Inglesi',
+              'Ottiene la pace firmata a Troyes',
+              'Costringe gli Inglesi a lasciare Calais'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: le guerre distruggono le nazioni o le creano? Una parola.'}
   ]
 }
 ];
