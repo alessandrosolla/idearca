@@ -4243,6 +4243,104 @@ const BANCA = [
               'Ogni forma di opposizione diventa fuori legge'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: di chi è la responsabilità quando una libertà si perde? Una parola.'}
+  ]},
+{
+  titolo: 'Storia contemporanea · 16 — La crisi del 1929',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: il mercato si corregge da solo? Una parola.'},
+
+    {tipo:'scelta', testo:'Quali squilibri si nascondono dietro la prosperità degli anni Venti?',
+     opzioni:['Si produce più di quanto i salari permettano di comprare',
+              'Le azioni si comprano a credito facendo salire i prezzi',
+              'Una bolla finanziaria cresce senza che nessuno la fermi',
+              'La produzione corre più veloce della domanda reale'], giusta:0},
+
+    {tipo:'scelta', testo:'Come si trasmette al mondo la crisi americana?',
+     opzioni:['Le banche USA richiamano i prestiti e fermano le importazioni',
+              'L\'Europa si prosciuga di capitali e perde i suoi mercati',
+              'Il credito internazionale si blocca e il commercio crolla',
+              'Chi dipendeva dai finanziamenti americani resta senza'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché la deflazione peggiora la crisi?',
+     opzioni:['Chi ha debiti deve restituirli con moneta diventata più cara',
+              'Il calo dei prezzi scoraggia chiunque voglia investire',
+              'La spirale dei prezzi in discesa non si ferma da sola',
+              'Sembra un vantaggio ma strangola le imprese indebitate'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché falliscono le misure di Hoover?',
+     opzioni:['Confida che il mercato si aggiusti e alza i dazi doganali',
+              'Il protezionismo del 1930 aggrava la crisi mondiale',
+              'La ricetta liberista non affronta il calo della domanda',
+              'Si aspetta una ripresa spontanea che non arriva mai'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa prevede il New Deal di Roosevelt?',
+     opzioni:['Lavori pubblici, salario minimo e garanzia sui depositi',
+              'Un intervento diretto dello Stato nell\'economia',
+              'Dighe, strade e opere per dare lavoro ai disoccupati',
+              'Regole nuove per banche, agricoltura e sindacati'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa sostiene Keynes contro il liberismo?',
+     opzioni:['In recessione lo Stato deve spendere per sostenere la domanda',
+              'Il mercato lasciato a se stesso non esce dalla crisi',
+              'Il problema non è la produzione ma la domanda aggregata',
+              'Si può spendere anche in deficit per far ripartire l\'economia'], giusta:0},
+
+    {tipo:'scelta', testo:'Quale legame c\'è fra la crisi e l\'ascesa di Hitler?',
+     opzioni:['La disoccupazione decuplica i consensi del partito nazista',
+              'Sei milioni di senza lavoro cercano una risposta radicale',
+              'Weimar non sa rispondere e chi promette tutto guadagna voti',
+              'Dal due al trentasette per cento in quattro anni'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: la disperazione economica quanto pesa sulle scelte politiche? Una parola.'}
+  ]},
+{
+  titolo: 'Storia contemporanea · 17 — L\'Unione Sovietica di Stalin',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: quanto può costare la modernizzazione di un paese? Una parola.'},
+
+    {tipo:'scelta', testo:'Come Stalin batte Trockij nella lotta per la successione?',
+     opzioni:['Da segretario controlla le nomine e piega il partito a sé',
+              'Si allea con altri contro Trockij e poi elimina anche loro',
+              'Usa la macchina organizzativa invece delle idee',
+              'Ha in mano lo strumento che decide le carriere di tutti'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa propone Stalin col «socialismo in un solo paese»?',
+     opzioni:['Costruire prima il socialismo in URSS e poi pensare al mondo',
+              'Rinunciare per ora a esportare la rivoluzione altrove',
+              'Una linea più pragmatica di quella di Trockij',
+              'Concentrare le forze all\'interno invece che all\'estero'], giusta:0},
+
+    {tipo:'scelta', testo:'A che cosa servono i piani quinquennali?',
+     opzioni:['A pianificare dallo Stato l\'intera economia per cinque anni',
+              'A recuperare in dieci anni il ritardo industriale accumulato',
+              'A fissare gli obiettivi di produzione di ogni settore',
+              'A trasformare un paese agricolo in potenza industriale'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché Stalin impone la collettivizzazione?',
+     opzioni:['Serve cibo a basso prezzo per finanziare l\'industria',
+              'Le campagne devono pagare il costo delle fabbriche',
+              'Lo Stato vuole fissare quote e prezzi dei raccolti',
+              'La produzione agricola va razionalizzata dall\'alto'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è l\'Holodomor?',
+     opzioni:['La carestia ucraina causata dalle requisizioni di grano',
+              'Milioni di morti di fame mentre il regime nega tutto',
+              'Il prezzo pagato dall\'Ucraina per l\'industrializzazione',
+              'Una fame provocata da decisioni politiche, non dal clima'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa distingue il Gulag dai lager nazisti?',
+     opzioni:['Punisce oppositori politici, non stermina per appartenenza',
+              'Serve a sfruttare il lavoro forzato dei condannati',
+              'Colpisce chi è dichiarato nemico del popolo, non una razza',
+              'Non nasce con lo scopo dichiarato di uccidere'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché i vecchi bolscevichi confessano ai processi di Mosca?',
+     opzioni:['Sono torturati e minacciati nei loro stessi familiari',
+              'Cedono davanti alla pressione e alle promesse di clemenza',
+              'Ammettono complotti che non sono mai esistiti',
+              'Il regime ottiene con la forza le parole che gli servono'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: si può giustificare un fine con qualsiasi mezzo? Una parola.'}
   ]
 }
 ];
