@@ -4341,6 +4341,104 @@ const BANCA = [
               'Il regime ottiene con la forza le parole che gli servono'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: si può giustificare un fine con qualsiasi mezzo? Una parola.'}
+  ]},
+{
+  titolo: 'Storia contemporanea · 18 — Il nazismo',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: come si difende una democrazia da chi la vuole distruggere? Una parola.'},
+
+    {tipo:'scelta', testo:'Che cosa significa «Lebensraum» nell\'ideologia nazista?',
+     opzioni:['La Germania avrebbe bisogno di espandersi verso oriente',
+              'Uno «spazio vitale» da prendere ai popoli slavi',
+              'La giustificazione ideologica della futura aggressione',
+              'La pretesa che al Reich servano nuovi territori per vivere'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa afferma il Führerprinzip?',
+     opzioni:['Il capo incarna la volontà del popolo e non risponde a nessuno',
+              'La democrazia è corruzione e il comando dev\'essere unico',
+              'Nessun limite può essere posto a chi guida la nazione',
+              'Il Führer decide senza dover rendere conto a un Parlamento'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché Hindenburg nomina Hitler cancelliere?',
+     opzioni:['Nessun governo regge e conservatori e industriali premono',
+              'Si illude, come altri, di poter controllare il nuovo cancelliere',
+              'Il partito nazista è ormai la prima forza del Parlamento',
+              'La situazione politica è bloccata e non si vedono alternative'], giusta:0},
+
+    {tipo:'scelta', testo:'A che cosa serve l\'incendio del Reichstag?',
+     opzioni:['A giustificare un decreto che sopprime le libertà civili',
+              'A dare la colpa ai comunisti e metterli fuori legge',
+              'A creare l\'emergenza che permette i pieni poteri di polizia',
+              'A fornire il pretesto per la stretta autoritaria'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa stabilisce la legge dei pieni poteri?',
+     opzioni:['Il potere di fare le leggi passa dal Parlamento al governo',
+              'Hitler può governare per decreto per quattro anni',
+              'Il Reichstag rinuncia da sé alla propria funzione',
+              'La Repubblica di Weimar viene di fatto abolita per legge'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché Hitler elimina i capi delle SA?',
+     opzioni:['Chiedono una «seconda rivoluzione» che esercito e industriali temono',
+              'Sono indisciplinati e la loro base popolare è scomoda',
+              'Servono le SS, un corpo fedele soltanto al Führer',
+              'Il sostegno dei generali vale più di quello delle squadre'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa stabiliscono le leggi di Norimberga?',
+     opzioni:['Gli ebrei cessano di essere cittadini del Reich tedesco',
+              'Sono vietati i matrimoni e i rapporti fra ebrei e «ariani»',
+              'Mezzo milione di persone perde ogni diritto civile',
+              'La discriminazione razziale diventa legge dello Stato'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: perché tanti scelsero di non opporsi finché erano in tempo? Una parola.'}
+  ]},
+{
+  titolo: 'Storia contemporanea · 19 — La guerra di Spagna e l\'espansionismo',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: cedere a chi minaccia evita la guerra? Una parola.'},
+
+    {tipo:'scelta', testo:'Che cosa scatena la guerra civile spagnola?',
+     opzioni:['Un colpo di Stato militare contro il governo del Fronte popolare',
+              'La sollevazione guidata da Franco a partire dal Marocco',
+              'Metà dell\'esercito insorge, l\'altra metà resta fedele',
+              'Il rifiuto dei militari di accettare il risultato del voto'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché la guerra di Spagna diventa un affare internazionale?',
+     opzioni:['Germania e Italia armano Franco, l\'URSS aiuta la Repubblica',
+              'Trentacinquemila volontari da tutto il mondo vanno a combattere',
+              'Le dittature vi sperimentano armi e tattiche nuove',
+              'Diventa lo scontro fra fascismo e antifascismo in miniatura'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché Guernica segna una svolta?',
+     opzioni:['È la prima distruzione sistematica di una città dall\'aria',
+              'Una popolazione civile viene colpita di proposito',
+              'Il bombardamento avviene nel giorno di mercato',
+              'Anticipa il modo in cui si combatterà la guerra totale'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è l\'appeasement?',
+     opzioni:['Cedere alle richieste di Hitler sperando di evitare la guerra',
+              'La linea seguita da Londra e Parigi fino al 1939',
+              'La rinuncia a reagire a ogni violazione dei trattati',
+              'La politica che Churchill definì disonore senza pace'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa si decide alla Conferenza di Monaco?',
+     opzioni:['I Sudeti passano alla Germania senza consultare Praga',
+              'Quattro potenze dispongono del territorio di un quinto paese',
+              'Chamberlain crede di aver comprato la pace cedendo una regione',
+              'Si sacrifica la Cecoslovacchia per evitare il conflitto'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché il patto Ribbentrop-Molotov sorprende il mondo?',
+     opzioni:['Nazisti e comunisti, nemici dichiarati, si accordano fra loro',
+              'Contiene una clausola segreta che spartisce la Polonia',
+              'Toglie a Hitler il timore di combattere su due fronti',
+              'Due regimi che si combattevano per ideologia firmano insieme'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché il marzo 1939 segna la fine dell\'appeasement?',
+     opzioni:['Hitler prende la Cecoslovacchia: non ci sono più tedeschi da «liberare»',
+              'L\'aggressione non ha più nemmeno una scusa nazionale',
+              'Londra e Parigi capiscono di essere state ingannate',
+              'Si garantisce la Polonia perché la prossima non passi'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: chi tace davanti a un sopruso ne diventa complice? Una parola.'}
   ]
 }
 ];
