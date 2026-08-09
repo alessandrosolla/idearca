@@ -53,9 +53,12 @@
     display:flex;align-items:center;gap:.9rem;
     transition:transform .12s ease, box-shadow .12s ease}
   button:active{transform:scale(.985);box-shadow:0 1px 6px rgba(27,24,21,.1)}
+  /* Gli stessi colori della proiezione, nello stesso ordine: la
+     lettera e la tinta identificano l'opzione su entrambi gli
+     schermi. La lettera resta, così non dipende dal solo colore. */
   button .lettera{
-    flex:0 0 auto;width:2.4rem;height:2.4rem;border-radius:50%;
-    display:grid;place-items:center;background:#F2ECE1;font-weight:800;font-size:1.1rem}
+    flex:0 0 auto;width:2.5rem;height:2.5rem;border-radius:50%;
+    display:grid;place-items:center;color:#fff;font-weight:800;font-size:1.15rem}
   button.primario{background:#1B1815;color:#fff;justify-content:center;text-align:center}
 
   .aiuto{font-size:.88rem;color:var(--tenue);line-height:1.6;margin-top:.9rem}
@@ -89,6 +92,7 @@
 const SB_URL = 'https://mqjceddrbhpwqjomhohm.supabase.co';
 const SB_KEY = 'sb_publishable_D7vDsaervKNJNgdJwknDpQ_Vuuf9CeJ';
 
+const TINTE = ['#256abf','#c14e20','#127553','#946100','#c23c6d','#5a4bc4'];
 const el = document.getElementById('foglio');
 let codice = (new URLSearchParams(location.search).get('c') || '').trim();
 let domanda = null;         // domanda attualmente proiettata
@@ -148,7 +152,8 @@ function schermataDomanda(d){
     <div class="domanda">${esc(d.testo)}</div>
     ${d.tipo === 'scelta'
       ? opzioni.map((o,i)=>`<button data-v="${esc(String(o))}">
-            <span class="lettera">${LETTERE[i]}</span><span>${esc(String(o))}</span></button>`).join('')
+            <span class="lettera" style="background:${TINTE[i]}">${LETTERE[i]}</span>
+            <span>${esc(String(o))}</span></button>`).join('')
       : `<input type="text" id="risposta" maxlength="40" autocomplete="off"
               placeholder="Scrivi una o due parole">
          <div class="err" id="err"></div>

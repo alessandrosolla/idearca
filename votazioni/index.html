@@ -46,99 +46,119 @@
     border-radius:9px;padding:1.1rem 1.3rem;line-height:1.6}
 
   /* ══════════════ PROIEZIONE ══════════════
-     Impianto: fondo caldo con una velatura fredda in alto a
-     destra, così lo schermo non è una parete bianca; contenuti
-     su schede bianche con ombra bassa, che li stacca senza
-     bordi; tipografia grande e con molta aria.
-     Colore: barre in tinta unica — la lunghezza porta già
-     l'informazione e un colore per opzione sarebbe rumore. Il
-     verde compare solo alla rivelazione, accompagnato da un
-     segno di spunta e non lasciato solo al colore. */
+     Fondo scuro: in aula la luce si abbassa, e su fondo scuro i
+     colori delle opzioni si staccano invece di annegare nel
+     bianco. I passi usati sono quelli della tavolozza pensati
+     per superfici scure, non gli stessi del sito schiariti.
+
+     Impianto a due colonne sopra il formato panoramico: la
+     domanda a sinistra, i risultati a destra. Prima era tutto
+     impilato in verticale e usciva dallo schermo — con sei
+     opzioni bisognava scorrere, cosa che una proiezione non può
+     chiedere.
+
+     Un colore per opzione, sempre nello stesso ordine, identico
+     sul telefono degli studenti: si può dire «chi ha votato il
+     blu?». La lettera resta, così l'identità non è mai affidata
+     al solo colore. */
   .proiezione{
-    position:fixed;inset:0;display:none;flex-direction:column;
-    padding:2rem 2.8rem 1.6rem;z-index:60;
+    position:fixed;inset:0;display:none;z-index:60;
+    grid-template-rows:auto 1fr;gap:1.2rem;
+    padding:1.5rem 2rem 1.6rem;overflow:hidden;
     background:
-      radial-gradient(1200px 620px at 88% -8%, #E8F0FC 0%, rgba(232,240,252,0) 62%),
-      radial-gradient(900px 520px at 4% 108%, #FBEFE4 0%, rgba(251,239,228,0) 60%),
-      #FBF7F0;
-    --serie:#2a78d6; --serie-scuro:#1c5cab;
-    --traccia:#EDE6DA; --inchiostro:#1B1815; --tenue:#6B6257;
-    --giusta:#0ca30c; --carta:#fff;
+      radial-gradient(1100px 700px at 82% -12%, #1E2A44 0%, rgba(30,42,68,0) 65%),
+      radial-gradient(900px 600px at -6% 112%, #2A1F2E 0%, rgba(42,31,46,0) 62%),
+      #12141A;
+    color:#fff;
+    --carta:rgba(255,255,255,.055);
+    --bordo:rgba(255,255,255,.10);
+    --tenue:#8A867E; --secondario:#B9B5AC;
+    --giusta:#0ca30c;
+    --a:#3987e5; --b:#d95926; --c:#199e70; --d:#c98500; --e:#d55181; --f:#9085e9;
   }
-  .proiezione.on{display:flex}
+  .proiezione.on{display:grid}
 
-  /* ---- barra alta ---- */
-  .proiezione .alto{display:flex;align-items:center;gap:1.4rem;margin-bottom:1.6rem}
+  /* ---- riga alta ---- */
+  .alto{display:flex;align-items:center;gap:.85rem;min-width:0}
   .scheda-qr{
-    display:flex;align-items:center;gap:1.1rem;background:var(--carta);
-    border-radius:18px;padding:.7rem .95rem;box-shadow:0 2px 14px rgba(31,27,22,.07)}
-  .scheda-qr canvas{border-radius:10px;display:block}
-  .scheda-qr .via{font-size:.9rem;color:var(--tenue);line-height:1.5}
+    display:flex;align-items:center;gap:.9rem;background:#fff;
+    border-radius:14px;padding:.55rem .7rem}
+  .scheda-qr canvas{border-radius:6px;display:block}
+  .scheda-qr .via{font-size:.78rem;color:#5A5148;line-height:1.4;color:#5A5148}
   .pillola-codice{
-    display:inline-block;margin-top:.25rem;background:var(--inchiostro);color:#fff;
-    border-radius:99px;padding:.2rem .8rem;font-size:1.5rem;font-weight:700;
-    letter-spacing:.16em;font-variant-numeric:tabular-nums}
-  .proiezione .alto .spazio{flex:1}
-  .proiezione .alto button{
-    min-height:56px;font-size:1.02rem;border-radius:14px;border:none;
-    background:var(--carta);box-shadow:0 2px 10px rgba(31,27,22,.07);font-weight:700}
-  .proiezione .alto button:disabled{opacity:.35;box-shadow:none}
-  .proiezione .alto button.chiave{background:var(--inchiostro);color:#fff}
-
+    display:block;margin-top:.2rem;color:#12141A;
+    font-size:1.45rem;font-weight:800;letter-spacing:.14em;
+    font-variant-numeric:tabular-nums}
+  .alto .spazio{flex:1}
+  .alto button{
+    min-height:46px;font-size:.92rem;border-radius:12px;font-weight:700;
+    background:var(--carta);border:1px solid var(--bordo);color:#fff;padding:.5rem .9rem}
+  .alto button:hover{background:rgba(255,255,255,.11);border-color:rgba(255,255,255,.2)}
+  .alto button:disabled{opacity:.3}
+  .alto button.chiave{background:#fff;color:#12141A;border-color:#fff}
   .contatore{
-    background:var(--carta);border-radius:14px;padding:.55rem 1rem;text-align:center;
-    box-shadow:0 2px 10px rgba(31,27,22,.07);line-height:1.25}
-  .contatore .grande{font-size:1.5rem;font-weight:800;font-variant-numeric:tabular-nums}
-  .contatore .piccolo{font-size:.76rem;color:var(--tenue);letter-spacing:.06em;text-transform:uppercase}
+    background:var(--carta);border:1px solid var(--bordo);border-radius:12px;
+    padding:.4rem .85rem;text-align:center;line-height:1.2}
+  .contatore .grande{font-size:1.35rem;font-weight:800;font-variant-numeric:tabular-nums}
+  .contatore .piccolo{font-size:.62rem;color:var(--tenue);letter-spacing:.1em;text-transform:uppercase}
+  .contatore.pulsa .grande{animation:pulsa .5s ease}
+  @keyframes pulsa{0%{transform:scale(1)}45%{transform:scale(1.22);color:#8ec5ff}100%{transform:scale(1)}}
 
-  /* ---- domanda ---- */
-  .proiezione .tipo-dom{
-    display:inline-flex;align-items:center;gap:.5rem;background:var(--carta);
-    border-radius:99px;padding:.35rem .9rem;font-size:.85rem;font-weight:700;
-    color:var(--tenue);letter-spacing:.08em;text-transform:uppercase;
-    box-shadow:0 2px 10px rgba(31,27,22,.06);margin-bottom:.9rem}
+  /* ---- corpo a due colonne ---- */
+  .corpo{display:grid;grid-template-columns:minmax(0,0.86fr) minmax(0,1.14fr);
+    gap:2.4rem;align-items:center;min-height:0;overflow:hidden}
+  @media (max-aspect-ratio:13/10){ .corpo{grid-template-columns:1fr;gap:1.2rem;align-content:start} }
+
+  .colonna-domanda{min-width:0}
+  .tipo-dom{
+    display:inline-flex;align-items:center;gap:.45rem;
+    background:var(--carta);border:1px solid var(--bordo);border-radius:99px;
+    padding:.3rem .8rem;font-size:.72rem;font-weight:700;color:var(--secondario);
+    letter-spacing:.1em;text-transform:uppercase;margin-bottom:1rem}
   .proiezione h3{
     font-family:Georgia,"Times New Roman",serif;
-    font-size:clamp(1.9rem,3.1vw,3.2rem);line-height:1.15;margin:0 0 1.8rem;
-    font-weight:700;max-width:24ch;letter-spacing:-.01em}
-  .proiezione .risultati{flex:1;overflow:hidden;display:flex;
+    font-size:clamp(1.5rem,2.5vw,2.9rem);line-height:1.14;margin:0;
+    font-weight:700;letter-spacing:-.015em;text-wrap:balance}
+
+  .risultati{min-width:0;min-height:0;height:100%;display:flex;
     align-items:center;justify-content:center}
 
-  /* ---- barre ---- */
-  .barre{width:100%;max-width:1180px;display:flex;flex-direction:column;gap:1rem}
+  /* ---- barre: riempiono l'altezza disponibile, non la superano ---- */
+  .barre{width:100%;height:100%;display:flex;flex-direction:column;
+    justify-content:center;gap:clamp(.4rem,1.1vh,.9rem)}
   .barra{
-    background:var(--carta);border-radius:18px;padding:1rem 1.2rem;
-    box-shadow:0 2px 12px rgba(31,27,22,.06);
-    transition:opacity .35s ease, transform .35s ease, box-shadow .35s ease}
-  .barra .et{display:flex;align-items:center;gap:1rem;margin-bottom:.65rem}
+    flex:0 1 auto;display:flex;flex-direction:column;justify-content:center;
+    gap:.4rem;min-height:0;
+    transition:opacity .4s ease, transform .4s ease}
+  .barra .et{display:flex;align-items:center;gap:.75rem;min-width:0}
   .lettera{
-    flex:0 0 auto;width:2.6rem;height:2.6rem;border-radius:50%;
-    display:grid;place-items:center;font-weight:800;font-size:1.25rem;
-    background:#F2ECE1;color:var(--inchiostro);transition:background .35s,color .35s}
-  .barra .testo{flex:1;font-size:clamp(1.05rem,1.45vw,1.5rem);line-height:1.3}
-  .barra .num{font-size:clamp(1.05rem,1.45vw,1.5rem);color:var(--tenue);
+    flex:0 0 auto;width:clamp(1.9rem,2.4vw,2.5rem);height:clamp(1.9rem,2.4vw,2.5rem);
+    border-radius:50%;display:grid;place-items:center;
+    font-weight:800;font-size:clamp(.9rem,1.15vw,1.2rem);color:#12141A;
+    transition:background .35s}
+  .barra .testo{flex:1;font-size:clamp(.95rem,1.35vw,1.45rem);line-height:1.25;min-width:0}
+  .barra .num{font-size:clamp(.95rem,1.35vw,1.45rem);color:var(--secondario);
     font-variant-numeric:tabular-nums;white-space:nowrap}
-  .barra .num b{color:var(--inchiostro);font-size:1.18em}
-  .barra .traccia{height:clamp(20px,2.6vh,32px);background:var(--traccia);border-radius:99px}
-  .barra .riempi{height:100%;background:var(--serie);border-radius:99px;
-    transition:width .6s cubic-bezier(.2,.8,.2,1), background .35s ease}
+  .barra .num b{color:#fff;font-size:1.15em}
+  .barra .traccia{height:clamp(12px,2.2vh,26px);background:rgba(255,255,255,.09);
+    border-radius:99px;overflow:hidden}
+  .barra .riempi{height:100%;border-radius:99px;width:0;
+    transition:width .65s cubic-bezier(.2,.85,.25,1), background .35s ease}
 
-  /* rivelazione: verde più segno di spunta, mai il colore da solo */
-  .barra.giusta{box-shadow:0 4px 22px rgba(12,163,12,.22);transform:translateY(-2px)}
-  .barra.giusta .lettera{background:var(--giusta);color:#fff}
-  .barra.giusta .riempi{background:var(--giusta)}
-  .barra.giusta .testo::after{content:" ✓";color:var(--giusta);font-weight:800}
-  .barra.sbagliata{opacity:.45}
+  .barra.giusta .testo::after{content:" ✓";color:#7ee787;font-weight:800}
+  .barra.giusta .lettera{background:var(--giusta)!important;color:#fff}
+  .barra.giusta .riempi{background:var(--giusta)!important}
+  .barra.sbagliata{opacity:.32}
 
-  /* ---- nuvola ---- */
-  .nuvola{display:flex;flex-wrap:wrap;gap:.5rem 1.4rem;align-items:baseline;
-    justify-content:center;line-height:1.08;max-width:94%}
-  .nuvola span{font-weight:800;letter-spacing:-.02em;animation:entra .45s ease both}
-  @keyframes entra{from{opacity:0;transform:translateY(10px) scale(.94)}to{opacity:1;transform:none}}
-  .legenda{position:absolute;bottom:1.3rem;left:2.8rem;font-size:.85rem;color:var(--tenue)}
+  /* ---- nuvola: piu ripetuta = piu grande e piu chiara ---- */
+  .nuvola{display:flex;flex-wrap:wrap;gap:.4rem 1.3rem;align-items:baseline;
+    justify-content:center;line-height:1.06;max-width:100%}
+  .nuvola span{font-weight:800;letter-spacing:-.02em;animation:entra .5s ease both}
+  @keyframes entra{from{opacity:0;transform:translateY(12px) scale(.92)}to{opacity:1;transform:none}}
+  .legenda{position:absolute;bottom:1rem;right:2rem;font-size:.78rem;color:var(--tenue)}
 
-  .attesa-risposte{color:var(--tenue);font-size:1.35rem;text-align:center;line-height:1.8}
-  .attesa-risposte .emo{font-size:3.2rem;display:block;margin-bottom:.6rem}
+  .attesa-risposte{color:var(--secondario);font-size:1.2rem;text-align:center;line-height:1.7}
+  .attesa-risposte .emo{font-size:3rem;display:block;margin-bottom:.5rem}
 
 </style>
 </head>
@@ -150,31 +170,35 @@
   <div class="alto">
     <div class="scheda-qr">
       <canvas id="p-qr"></canvas>
-      <div class="via">Inquadra, oppure vai su<br>
-        <span id="p-url" style="color:#1B1815;font-weight:600"></span>
+      <div class="via">Inquadra, oppure<br><span id="p-url" style="font-weight:600"></span>
         <span class="pillola-codice" id="p-codice"></span></div>
     </div>
     <span class="spazio"></span>
-    <div class="contatore"><div class="grande" id="p-conta">0</div>
+    <div class="contatore" id="p-box-conta"><div class="grande" id="p-conta">0</div>
       <div class="piccolo">risposte</div></div>
     <div class="contatore"><div class="grande" id="p-passo">1/1</div>
       <div class="piccolo">domanda</div></div>
-    <button onclick="qrGrande()">⛶ QR grande</button>
+    <button onclick="qrGrande()">⛶ QR</button>
     <button id="p-prec" onclick="precedente()">‹ Indietro</button>
     <button id="p-succ" class="chiave" onclick="successiva()">Avanti ›</button>
     <button onclick="chiudiProiezione()">Esci</button>
+  </div>
+
+  <div class="corpo">
+    <div class="colonna-domanda">
+      <div><span class="tipo-dom" id="p-tipo"></span></div>
+      <h3 id="p-domanda"></h3>
+    </div>
+    <div class="risultati" id="p-risultati"></div>
   </div>
 
   <div id="qr-velo" onclick="this.style.display='none'"
        style="display:none;position:fixed;inset:0;background:#fff;z-index:70;
               flex-direction:column;align-items:center;justify-content:center;cursor:pointer">
     <canvas id="qr-max"></canvas>
-    <div id="qr-max-url" style="margin-top:1.4rem;font-size:1.6rem;font-weight:600"></div>
+    <div id="qr-max-url" style="margin-top:1.4rem;font-size:1.6rem;font-weight:600;color:#12141A"></div>
     <div style="margin-top:.5rem;color:#5A5148">tocca per chiudere</div>
   </div>
-  <div><span class="tipo-dom" id="p-tipo"></span></div>
-  <h3 id="p-domanda"></h3>
-  <div class="risultati" id="p-risultati"></div>
 </div>
 
 <script src="qr.js"></script>
@@ -552,8 +576,15 @@ function aggiornaProiezione(){
   const succ = document.getElementById('p-succ');
   succ.textContent = daRivelare ? '✓ Mostra la risposta' : 'Avanti ›';
   succ.disabled = !daRivelare && (i >= domande.length-1);
+  const prima = +document.getElementById('p-conta').dataset.n || 0;
   document.getElementById('p-risultati').innerHTML =
     d.tipo === 'nuvola' ? nuvola(v) : barre(d, v);
+  if(d.tipo !== 'nuvola') animaBarre();
+  /* il contatore pulsa quando arrivano risposte nuove: da lontano
+     è il segnale che la classe sta rispondendo */
+  const box = document.getElementById('p-box-conta');
+  if(v.length > prima){ box.classList.remove('pulsa'); void box.offsetWidth; box.classList.add('pulsa'); }
+  document.getElementById('p-conta').dataset.n = v.length;
 }
 
 /* La grandezza di una parola cresce con la radice della sua
@@ -563,7 +594,9 @@ function aggiornaProiezione(){
    proporzione diretta la parola più ripetuta schiaccerebbe le
    altre. Il colore segue la stessa scala, dal passo più chiaro
    che regge il contrasto fino al più scuro. */
-const RAMPA = ['#3987e5','#2a78d6','#256abf','#1c5cab','#184f95','#0d366b'];
+/* Su fondo scuro la scala va al contrario: più una parola è
+   ripetuta, più diventa chiara e quindi più stacca. */
+const RAMPA = ['#5598e7','#6da7ec','#86b6ef','#9ec5f4','#b7d3f6','#cde2fb'];
 
 function nuvola(valori){
   if(!valori.length) return '<div class="attesa-risposte"><span class="emo">💬</span>' +
@@ -591,26 +624,51 @@ function nuvola(valori){
 
 /* Barre in tinta unica: la lunghezza porta già l'informazione, e
    un colore per opzione sarebbe decorazione che confonde. */
+/* Un colore per opzione, sempre nello stesso ordine: la lettera
+   e il colore identificano la stessa cosa sul telefono e sullo
+   schermo. La lettera resta, così l'identità non dipende mai dal
+   solo colore — serve a chi non distingue le tinte. */
+const TINTE = ['var(--a)','var(--b)','var(--c)','var(--d)','var(--e)','var(--f)'];
+const LETTERE = 'ABCDEF';
+
 function barre(d, valori){
   const opzioni = Array.isArray(d.opzioni) ? d.opzioni : [];
   const conte = {}; for(const o of opzioni) conte[o] = 0;
   for(const v of valori) if(v in conte) conte[v]++;
   const tot = valori.length;
   const max = Math.max(1, ...Object.values(conte));
-  const LETTERE = 'ABCDEF';
   const giusta = rivelate.has(d.id) ? rispostaAttesa(d.testo) : null;
 
-  return '<div class="barre">' + opzioni.map((o,k)=>{
+  const html = '<div class="barre">' + opzioni.map((o,k)=>{
     const n = conte[o];
     const perc = tot ? Math.round(n/tot*100) : 0;
     const stato = giusta ? (o === giusta ? ' giusta' : ' sbagliata') : '';
     return '<div class="barra' + stato + '">' +
-      '<div class="et"><span class="lettera">' + LETTERE[k] + '</span>' +
-      '<span class="testo">' + esc(o) + '</span>' +
-      '<span class="num"><b>' + n + '</b> · ' + perc + '%</span></div>' +
-      '<div class="traccia"><div class="riempi" style="width:' +
-      Math.round(n/max*100) + '%"></div></div></div>';
+      '<div class="et">' +
+        '<span class="lettera" style="background:' + TINTE[k] + '">' + LETTERE[k] + '</span>' +
+        '<span class="testo">' + esc(o) + '</span>' +
+        '<span class="num"><b>' + n + '</b> · ' + perc + '%</span>' +
+      '</div>' +
+      '<div class="traccia"><div class="riempi" data-w="' + Math.round(n/max*100) +
+      '" style="background:' + TINTE[k] + '"></div></div></div>';
   }).join('') + '</div>';
+  return html;
+}
+
+/* Le larghezze si applicano dopo l'inserimento nel documento,
+   altrimenti il browser non ha uno stato di partenza da cui
+   animare e le barre comparirebbero di scatto.
+
+   Si usa un temporizzatore e non requestAnimationFrame: quello
+   non scatta quando la scheda non è in primo piano, e le barre
+   restavano a larghezza zero — cioè invisibili — proprio nel caso
+   di una proiezione su un secondo schermo. */
+function animaBarre(){
+  setTimeout(()=>{
+    document.querySelectorAll('#p-risultati .riempi').forEach(el=>{
+      el.style.width = el.dataset.w + '%';
+    });
+  }, 30);
 }
 
 document.addEventListener('keydown', e=>{
