@@ -8,45 +8,70 @@
   *{box-sizing:border-box}
   html,body{margin:0;min-height:100%}
   body{
-    background:#FBF7F0;color:#1F1B16;
+    background:
+      radial-gradient(700px 420px at 90% -10%, #E8F0FC 0%, rgba(232,240,252,0) 62%),
+      radial-gradient(600px 400px at 0% 106%, #FBEFE4 0%, rgba(251,239,228,0) 60%),
+      #FBF7F0;
+    color:#1B1815;
     font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
-    display:flex;align-items:flex-start;justify-content:center;padding:1.5rem 1.1rem 3rem;
+    display:flex;justify-content:center;padding:1.3rem 1rem 3rem;
     -webkit-font-smoothing:antialiased;
+    --serie:#2a78d6; --tenue:#6B6257; --carta:#fff;
   }
   .foglio{width:100%;max-width:520px}
-  .kicker{font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:#5A5148;font-weight:700}
-  h1{font-family:Georgia,"Times New Roman",serif;font-size:1.7rem;margin:.4rem 0 1.4rem}
+
+  .cima{display:flex;align-items:center;gap:.6rem;margin-bottom:1.1rem}
+  .cima .marchio{font-family:Georgia,serif;font-weight:700;font-size:1.05rem}
+  .cima .pill{margin-left:auto;background:#1B1815;color:#fff;border-radius:99px;
+    padding:.25rem .75rem;font-size:.86rem;font-weight:700;letter-spacing:.12em;
+    font-variant-numeric:tabular-nums}
+
+  h1{font-family:Georgia,"Times New Roman",serif;font-size:1.75rem;margin:.2rem 0 1.2rem;
+    line-height:1.2}
+
+  .tipo{display:inline-flex;align-items:center;gap:.4rem;background:var(--carta);
+    border-radius:99px;padding:.3rem .8rem;font-size:.76rem;font-weight:700;
+    color:var(--tenue);letter-spacing:.08em;text-transform:uppercase;
+    box-shadow:0 2px 10px rgba(27,24,21,.06);margin-bottom:.7rem}
+
   .domanda{
-    background:#fff;border:1px solid #E3DACB;border-radius:12px;padding:1.4rem 1.3rem;
-    font-size:1.28rem;line-height:1.4;font-weight:600;margin-bottom:1.1rem;
-  }
+    background:var(--carta);border-radius:20px;padding:1.4rem 1.3rem;
+    font-size:1.3rem;line-height:1.35;font-weight:600;margin-bottom:1.2rem;
+    box-shadow:0 3px 18px rgba(27,24,21,.07)}
+
   input[type=text]{
-    font:inherit;font-size:1.15rem;width:100%;padding:.9rem 1rem;
-    border:1px solid #E3DACB;border-radius:10px;background:#fff;
-  }
+    font:inherit;font-size:1.2rem;width:100%;padding:1rem 1.1rem;
+    border:2px solid #E7DFD1;border-radius:16px;background:var(--carta);outline:none}
+  input[type=text]:focus{border-color:var(--serie)}
+
   button{
-    font:inherit;font-weight:700;cursor:pointer;
-    border:1px solid #E3DACB;border-radius:10px;background:#fff;color:#1F1B16;
-    padding:1rem 1.1rem;width:100%;font-size:1.05rem;text-align:left;
-    margin-bottom:.6rem;line-height:1.35;
-  }
-  button:active{transform:scale(.99)}
-  button.primario{background:#1F1B16;color:#fff;border-color:#1F1B16;text-align:center}
-  .aiuto{font-size:.86rem;color:#5A5148;line-height:1.6;margin-top:.8rem}
-  .esito{
-    background:#fff;border:1px solid #E3DACB;border-left:4px solid #4FA82F;
-    border-radius:10px;padding:1.2rem 1.3rem;font-size:1rem;line-height:1.55;
-  }
-  .attesa{
-    border:1px dashed #D8CDBA;border-radius:12px;padding:2.4rem 1.4rem;
-    text-align:center;color:#5A5148;line-height:1.6;
-  }
-  .puntino{display:inline-block;width:8px;height:8px;border-radius:50%;
-    background:#8A7355;margin:0 2px;animation:p 1.2s infinite}
+    font:inherit;font-weight:700;cursor:pointer;width:100%;
+    border:none;border-radius:18px;background:var(--carta);color:#1B1815;
+    padding:1.05rem 1.1rem;font-size:1.06rem;text-align:left;
+    margin-bottom:.7rem;line-height:1.35;
+    box-shadow:0 3px 14px rgba(27,24,21,.07);
+    display:flex;align-items:center;gap:.9rem;
+    transition:transform .12s ease, box-shadow .12s ease}
+  button:active{transform:scale(.985);box-shadow:0 1px 6px rgba(27,24,21,.1)}
+  button .lettera{
+    flex:0 0 auto;width:2.4rem;height:2.4rem;border-radius:50%;
+    display:grid;place-items:center;background:#F2ECE1;font-weight:800;font-size:1.1rem}
+  button.primario{background:#1B1815;color:#fff;justify-content:center;text-align:center}
+
+  .aiuto{font-size:.88rem;color:var(--tenue);line-height:1.6;margin-top:.9rem}
+  .esito{background:var(--carta);border-radius:20px;padding:1.5rem 1.4rem;
+    line-height:1.6;box-shadow:0 3px 18px rgba(27,24,21,.07)}
+  .esito .emo{font-size:3rem;display:block;margin-bottom:.5rem}
+  .attesa{background:var(--carta);border-radius:20px;padding:2.4rem 1.4rem;
+    text-align:center;color:var(--tenue);line-height:1.7;
+    box-shadow:0 3px 18px rgba(27,24,21,.07)}
+  .attesa .emo{font-size:3rem;display:block;margin-bottom:.6rem}
+  .puntino{display:inline-block;width:9px;height:9px;border-radius:50%;
+    background:var(--serie);margin:0 3px;animation:p 1.2s infinite}
   .puntino:nth-child(2){animation-delay:.2s}
   .puntino:nth-child(3){animation-delay:.4s}
-  @keyframes p{0%,60%,100%{opacity:.25}30%{opacity:1}}
-  .err{color:#C0453B;font-size:.9rem;margin-top:.6rem;min-height:1.2rem}
+  @keyframes p{0%,60%,100%{opacity:.2;transform:translateY(0)}30%{opacity:1;transform:translateY(-3px)}}
+  .err{color:#C0453B;font-size:.92rem;margin-top:.7rem;min-height:1.2rem;font-weight:600}
 </style>
 </head>
 <body>
@@ -88,7 +113,7 @@ function haGiaRisposto(id){
 /* ---------- schermate ---------- */
 function schermataCodice(errore){
   el.innerHTML = `
-    <div class="kicker">Idearca</div>
+    <div class="cima"><span class="marchio">Idearca</span></div>
     <h1>Entra nella votazione</h1>
     <input type="text" id="c" inputmode="numeric" autocomplete="off"
            placeholder="Codice a 6 cifre" value="${esc(codice)}" maxlength="8">
@@ -103,9 +128,10 @@ function schermataCodice(errore){
 
 function schermataAttesa(){
   el.innerHTML = `
-    <div class="kicker">Codice ${esc(codice)}</div>
-    <h1>Sei dentro</h1>
+    <div class="cima"><span class="marchio">Idearca</span><span class="pill">${esc(codice)}</span></div>
+    <h1>Ci sei 🎉</h1>
     <div class="attesa">
+      <span class="emo">⏳</span>
       In attesa della prossima domanda<br>
       <span class="puntino"></span><span class="puntino"></span><span class="puntino"></span>
       <div style="margin-top:1rem;font-size:.86rem">Lascia aperta questa pagina.<br>
@@ -115,26 +141,34 @@ function schermataAttesa(){
 
 function schermataDomanda(d){
   const opzioni = Array.isArray(d.opzioni) ? d.opzioni : [];
+  const LETTERE = 'ABCDEF';
   el.innerHTML = `
-    <div class="kicker">Codice ${esc(codice)}</div>
+    <div class="cima"><span class="marchio">Idearca</span><span class="pill">${esc(codice)}</span></div>
+    <span class="tipo">${d.tipo === 'nuvola' ? '💬 Una parola' : '📊 Scegli una risposta'}</span>
     <div class="domanda">${esc(d.testo)}</div>
     ${d.tipo === 'scelta'
-      ? opzioni.map((o,i)=>`<button onclick="invia(${JSON.stringify(String(o)).replace(/"/g,'&quot;')})">${esc(String(o))}</button>`).join('')
+      ? opzioni.map((o,i)=>`<button data-v="${esc(String(o))}">
+            <span class="lettera">${LETTERE[i]}</span><span>${esc(String(o))}</span></button>`).join('')
       : `<input type="text" id="risposta" maxlength="40" autocomplete="off"
-              placeholder="Una o due parole">
+              placeholder="Scrivi una o due parole">
          <div class="err" id="err"></div>
          <button class="primario" onclick="inviaTesto()">Invia</button>
-         <p class="aiuto">Scrivi poche parole: compariranno sullo schermo insieme a quelle
-         dei tuoi compagni, e più una parola viene ripetuta più diventa grande.</p>`}`;
+         <p class="aiuto">Compariranno sullo schermo insieme a quelle dei tuoi compagni:
+         più una parola viene ripetuta, più diventa grande.</p>`}`;
+  /* Il valore viaggia in un attributo invece che dentro onclick:
+     con le virgolette nel testo di un'opzione il codice inline si
+     sarebbe spezzato. */
+  el.querySelectorAll('button[data-v]').forEach(b=>
+    b.addEventListener('click', ()=> invia(b.dataset.v)));
   const i = document.getElementById('risposta');
   if(i){ i.focus(); i.addEventListener('keydown', e=>{ if(e.key === 'Enter') inviaTesto(); }); }
 }
 
 function schermataInviata(){
   el.innerHTML = `
-    <div class="kicker">Codice ${esc(codice)}</div>
-    <h1>Risposta inviata</h1>
-    <div class="esito">La tua risposta è arrivata. Guarda lo schermo per i risultati.<br>
+    <div class="cima"><span class="marchio">Idearca</span><span class="pill">${esc(codice)}</span></div>
+    <h1>Fatto ✅</h1>
+    <div class="esito"><span class="emo">📨</span>La tua risposta è arrivata. Guarda lo schermo.<br>
       <span style="color:#5A5148;font-size:.9rem">Resta qui: quando comparirà la prossima domanda
       la vedrai automaticamente.</span></div>`;
 }
