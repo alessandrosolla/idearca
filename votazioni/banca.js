@@ -3949,6 +3949,104 @@ const BANCA = [
               'Tensioni fra le nazioni che il progresso non attenua'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: il benessere basta a garantire la pace? Una parola.'}
+  ]},
+{
+  titolo: 'Storia contemporanea · 10 — Guglielmo II e i blocchi contrapposti',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: le alleanze difendono o preparano la guerra? Una parola.'},
+
+    {tipo:'scelta', testo:'Perché Guglielmo II si libera di Bismarck?',
+     opzioni:['Vuole una Germania protagonista, non un cauto equilibrio',
+              'Ha un temperamento e una visione opposti a quelli del cancelliere',
+              'Ritiene finita la stagione della diplomazia prudente',
+              'Intende guidare personalmente la politica del Reich'], giusta:0},
+
+    {tipo:'scelta', testo:'In che cosa consiste la Weltpolitik?',
+     opzioni:['Flotta, colonie e appoggio a Vienna per contare nel mondo',
+              'Una politica estera aggressiva su scala planetaria',
+              'La sfida navale lanciata direttamente alla Gran Bretagna',
+              'L\'abbandono dell\'equilibrio a favore dell\'espansione'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è l\'effetto della Weltpolitik sugli altri Stati?',
+     opzioni:['Gran Bretagna, Francia e Russia si avvicinano fra loro',
+              'Nasce per reazione un secondo blocco contrapposto',
+              'Londra abbandona la sua politica di isolamento',
+              'Le potenze mettono da parte le vecchie rivalità coloniali'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché l\'adesione italiana alla Triplice è ambigua?',
+     opzioni:['Trento e Trieste restano austriache e l\'Italia le rivendica',
+              'Roma è alleata di chi occupa terre che considera proprie',
+              'L\'Italia si riserva di intervenire solo se le conviene',
+              'Il patto lega a Vienna un paese che vi è rivale'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa ottiene la rivoluzione russa del 1905?',
+     opzioni:['Nicola II è costretto a concedere un parlamento, la Duma',
+              'Lo zar cede dopo la sconfitta contro il Giappone',
+              'Le proteste ottengono una prima apertura costituzionale',
+              'Si apre la stagione delle riforme agrarie di Stolypin'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa provoca l\'annessione austriaca della Bosnia nel 1908?',
+     opzioni:['Rottura con la Russia e rabbia dei nazionalisti serbi',
+              'Una crisi che allontana definitivamente Vienna da Pietroburgo',
+              'Il risentimento di chi voleva unire tutti i serbi',
+              'Un\'ulteriore tensione nella regione già più instabile d\'Europa'], giusta:0},
+
+    {tipo:'scelta', testo:'Che effetto hanno le guerre balcaniche del 1912-13?',
+     opzioni:['La Serbia si ingrandisce molto e l\'Austria si allarma',
+              'L\'Impero ottomano perde quasi tutti i territori europei',
+              'Cresce lo Stato che l\'Austria considera il proprio nemico',
+              'La regione resta pronta a esplodere alla prima scintilla'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: bastava un attentato o la guerra era già decisa? Una parola.'}
+  ]},
+{
+  titolo: 'Storia contemporanea · 11 — L\'Italia giolittiana',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: governare bene significa scegliere o mediare? Una parola.'},
+
+    {tipo:'scelta', testo:'In che consiste il pragmatismo di Giolitti?',
+     opzioni:['Adattare le scelte alla realtà invece che a princìpi astratti',
+              'Costruire maggioranze diverse a seconda del provvedimento',
+              'Coinvolgere socialisti o cattolici secondo l\'opportunità',
+              'Governare senza legarsi a una linea politica definita'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa cambia Giolitti negli scioperi rispetto a Crispi?',
+     opzioni:['Lo Stato resta neutrale e non manda l\'esercito',
+              'I conflitti sindacali non vengono più repressi con le armi',
+              'Si lascia che una protesta si esaurisca da sola',
+              'Il governo non prende le parti degli industriali'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa prevede il patto Gentiloni del 1913?',
+     opzioni:['I cattolici votano i liberali in cambio di alcune garanzie',
+              'Per la prima volta liberali e cattolici vanno insieme al voto',
+              'Il mondo cattolico entra nella politica del Regno d\'Italia',
+              'Si supera di fatto il divieto imposto da Pio IX'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa comporta il suffragio del 1912?',
+     opzioni:['Gli elettori passano da tre a quasi nove milioni',
+              'Votano anche gli analfabeti che abbiano superato i trent\'anni',
+              'La base elettorale sale dal nove al ventiquattro per cento',
+              'Le elezioni del 1913 diventano le prime di massa'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa rende possibile il decollo industriale italiano?',
+     opzioni:['Lo Stato committente e le banche che finanziano le imprese',
+              'Le commesse pubbliche per ferrovie e flotta militare',
+              'I dazi che proteggono i settori industriali nascenti',
+              'Un sistema bancario che investe nelle grandi aziende'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché Salvemini chiama Giolitti «ministro della malavita»?',
+     opzioni:['Per governare si appoggia ai notabili e talvolta alla mafia',
+              'Non riforma il Sud perché ne ha bisogno per le maggioranze',
+              'I metodi elettorali usati nel Mezzogiorno sono inaccettabili',
+              'Lascia intatto il potere dei latifondisti meridionali'], giusta:0},
+
+    {tipo:'scelta', testo:'Quale conseguenza politica ha la guerra di Libia?',
+     opzioni:['Il partito socialista si radicalizza e Mussolini emerge',
+              'Cresce il nazionalismo come forza politica organizzata',
+              'Il sistema di Giolitti perde consensi a destra e a sinistra',
+              'La linea del dialogo con i socialisti diventa impraticabile'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: modernizzare metà del paese è un successo? Una parola.'}
   ]
 }
 ];
