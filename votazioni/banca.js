@@ -4439,6 +4439,55 @@ const BANCA = [
               'Si garantisce la Polonia perché la prossima non passi'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: chi tace davanti a un sopruso ne diventa complice? Una parola.'}
+  ]},
+{
+  titolo: 'Storia contemporanea · 20 — L\'Italia fascista',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: si può ottenere consenso senza convincere? Una parola.'},
+
+    {tipo:'scelta', testo:'Su che cosa si regge il consenso al fascismo, oltre alla repressione?',
+     opzioni:['Ordine, opere pubbliche, orgoglio nazionale e pace con la Chiesa',
+              'La promessa di stabilità dopo anni di disordini sociali',
+              'Il mito dell\'efficienza e della modernizzazione del paese',
+              'Un culto del capo che entra in ogni casa attraverso la radio'], giusta:0},
+
+    {tipo:'scelta', testo:'A che cosa serve l\'Opera Nazionale Balilla?',
+     opzioni:['A inquadrare i giovani dai sei anni con formazione anche ideologica',
+              'A dividere i ragazzi per età in organizzazioni del regime',
+              'A far crescere una generazione secondo i valori fascisti',
+              'A rendere quasi obbligatoria l\'adesione fin dall\'infanzia'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa risolvono i Patti Lateranensi?',
+     opzioni:['La questione romana aperta dal 1870 fra Stato e Chiesa',
+              'Il mancato riconoscimento reciproco fra Italia e Santa Sede',
+              'Una frattura che il liberalismo non aveva saputo sanare',
+              'Il conflitto che teneva i cattolici lontani dallo Stato'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa comporta in pratica il corporativismo?',
+     opzioni:['I lavoratori perdono il diritto di sciopero e ogni potere reale',
+              'Le corporazioni restano organismi soprattutto burocratici',
+              'Chi ci guadagna davvero sono i grandi industriali',
+              'La collaborazione annunciata nasconde una sconfitta operaia'], giusta:0},
+
+    {tipo:'scelta', testo:'Quale prezzo ha la «quota 90»?',
+     opzioni:['Prezzi più alti, esportazioni colpite e salari compressi',
+              'La lira forte penalizza chi vende all\'estero',
+              'La stabilità monetaria si paga con meno lavoro e meno reddito',
+              'Rivalutare la moneta soffoca l\'economia che esporta'], giusta:0},
+
+    {tipo:'scelta', testo:'Che conseguenza ha la guerra d\'Etiopia?',
+     opzioni:['Le sanzioni isolano l\'Italia e la spingono verso la Germania',
+              'La Società delle Nazioni condanna ma non colpisce davvero',
+              'Mussolini raggiunge il massimo consenso e perde gli alleati',
+              'Il fronte con Francia e Gran Bretagna si rompe'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa colpisce delle leggi razziali del 1938?',
+     opzioni:['Nessuno si oppone: il re firma e la Chiesa non protesta',
+              'Il fascismo importa un razzismo che prima non aveva',
+              'Quarantasettemila italiani perdono lavoro, scuola, diritti',
+              'Una società intera accetta senza reagire l\'esclusione di altri'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: che cosa avresti fatto tu nel 1938? Una parola.'}
   ]
 }
 ];
