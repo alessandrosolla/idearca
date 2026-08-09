@@ -1156,6 +1156,153 @@ const BANCA = [
               'L\'avidità dei mercanti genovesi e veneziani'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: si può giudicare il passato con i valori di oggi? Una parola.'}
+  ]},
+{
+  titolo: 'Filosofia medievale · 1 — La filosofia nel Medioevo',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: la fede aiuta la ragione o la ostacola? Una parola.'},
+
+    {tipo:'scelta', testo:'Che cosa significa che la filosofia è «ancilla theologiae»?',
+     opzioni:['Serve alla teologia per approfondire la fede',
+              'Sostituisce la teologia nelle scuole del tempo',
+              'Va tenuta separata dalle questioni religiose',
+              'Deve essere insegnata solo dopo la teologia'], giusta:0},
+
+    {tipo:'scelta', testo:'Come risolve Boezio il conflitto fra prescienza divina e libertà?',
+     opzioni:['Dio non vede nel tempo: vede tutto nell\'eternità',
+              'Dio conosce le scelte ma decide di non guardarle',
+              'La libertà umana è solo un\'illusione della mente',
+              'Dio prevede gli eventi ma non le nostre intenzioni'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa scrive Boezio in carcere, prima di essere giustiziato?',
+     opzioni:['La Consolazione della filosofia, in prosa e versi',
+              'La traduzione latina dell\'Organon di Aristotele',
+              'Un commento all\'Isagoge del filosofo Porfirio',
+              'Il Periphyseon, sistema in cinque libri'], giusta:0},
+
+    {tipo:'scelta', testo:'Su che cosa si regge l\'argomento ontologico di Anselmo?',
+     opzioni:['Chi esiste davvero è maggiore di chi è solo pensato',
+              'L\'ordine del mondo rimanda per forza a un ordinatore',
+              'Ogni cosa che si muove è mossa da qualcosa d\'altro',
+              'La perfezione del creato dimostra un creatore perfetto'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa obietta Gaunilone ad Anselmo?',
+     opzioni:['Allora esisterebbe anche l\'isola più perfetta pensabile',
+              'Che la fede non ha alcun bisogno di essere dimostrata',
+              'Che lo stolto del Salmo non capisce affatto la parola Dio',
+              'Che l\'esistenza non è una qualità come le altre'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa sostiene il concettualismo di Abelardo sugli universali?',
+     opzioni:['Sono concetti mentali con un fondamento nelle cose',
+              'Sono sostanze reali che esistono oltre gli individui',
+              'Sono soltanto nomi, cioè semplici suoni di voce',
+              'Sono idee poste da Dio nella mente di ciascuno'], giusta:0},
+
+    {tipo:'scelta', testo:'Dove sta il peccato, secondo l\'etica di Abelardo?',
+     opzioni:['Nel consenso interiore, non nell\'atto compiuto',
+              'Nell\'atto esterno, comunque lo si sia compiuto',
+              'Nel danno che l\'azione produce agli altri uomini',
+              'Nella disobbedienza a un\'autorità riconosciuta'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: conta di più l\'intenzione o il risultato di un\'azione? Una parola.'}
+  ]},
+{
+  titolo: 'Filosofia medievale · 2 — Tommaso d\'Aquino',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: si può dimostrare Dio con la ragione? Una parola.'},
+
+    {tipo:'scelta', testo:'Perché il ritorno di Aristotele nel XIII secolo crea un problema?',
+     opzioni:['È un pagano e certe sue tesi urtano la fede',
+              'I suoi testi arrivano in arabo e nessuno li traduce',
+              'La Chiesa ne aveva vietato la lettura nelle scuole',
+              'Contraddice apertamente la filosofia di Platone'], giusta:0},
+
+    {tipo:'scelta', testo:'Che rapporto pone Tommaso fra fede e ragione?',
+     opzioni:['Sono autonome, e non possono contraddirsi',
+              'La fede guida ogni passo della ricerca razionale',
+              'Sono due verità separate, che possono divergere',
+              'La ragione va abbandonata dove arriva la fede'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché Tommaso rifiuta l\'argomento ontologico di Anselmo?',
+     opzioni:['L\'esistenza va provata partendo dall\'esperienza',
+              'Il concetto di Dio è troppo alto per la nostra mente',
+              'Dio non ha bisogno di prove per essere creduto',
+              'Il ragionamento vale per tutto, non solo per Dio'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa hanno in comune tutte e cinque le vie?',
+     opzioni:['Negano che la catena delle cause vada all\'infinito',
+              'Partono dal concetto di essere perfettissimo',
+              'Si fondano sui testi rivelati dell\'Antico Testamento',
+              'Dimostrano insieme esistenza e bontà di Dio'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa distingue le creature da Dio, per Tommaso?',
+     opzioni:['Nelle creature essenza ed essere restano distinti',
+              'Le creature non hanno né una forma né una materia',
+              'Le creature sono composte di materia e di forma',
+              'Dio possiede tutte le perfezioni delle creature'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è la legge naturale?',
+     opzioni:['La ragione umana che partecipa alla legge eterna',
+              'L\'insieme dei comandamenti rivelati nella Bibbia',
+              'Il diritto che ogni popolo si dà per convenzione',
+              'L\'ordine con cui Dio governa il mondo materiale'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è il fine dello Stato, secondo Tommaso?',
+     opzioni:['Il bene comune, non l\'interesse di chi governa',
+              'La difesa dell\'ordine voluto dalla Chiesa di Roma',
+              'La salvezza eterna di tutti i sudditi battezzati',
+              'L\'accordo fra i cittadini che lo hanno fondato'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una legge ingiusta va comunque obbedita? Una parola.'}
+  ]},
+{
+  titolo: 'Filosofia medievale · 3 — La filosofia nel Trecento',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: che cosa vuol dire spiegare qualcosa nel modo più semplice? Una parola.'},
+
+    {tipo:'scelta', testo:'Che cosa contestano a Tommaso i pensatori del XIV secolo?',
+     opzioni:['Di aver legato Dio troppo alla logica di Aristotele',
+              'Di aver dato alla fede più peso che alla ragione',
+              'Di aver ignorato del tutto le opere di Aristotele',
+              'Di aver reso la teologia una scienza dei soli dotti'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa sostiene Duns Scoto contro l\'analogia tomista?',
+     opzioni:['L\'essere si dice allo stesso modo di Dio e delle cose',
+              'Di Dio si può parlare soltanto negando ciò che non è',
+              'Nessuna parola umana può riferirsi in qualche modo a Dio',
+              'Le parole applicate a Dio hanno un senso del tutto diverso'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa afferma il primato della volontà in Duns Scoto?',
+     opzioni:['Dio è libero, non vincolato da alcuna necessità logica',
+              'L\'uomo sceglie sempre ciò che il suo intelletto gli mostra',
+              'La volontà divina coincide perfettamente con la ragione',
+              'Il bene morale si conosce con la sola ragione naturale'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa prescrive il rasoio di Ockham?',
+     opzioni:['Non moltiplicare gli enti oltre il necessario',
+              'Non credere a ciò che i sensi non hanno colto',
+              'Non usare la ragione nelle questioni di fede',
+              'Non fidarsi dell\'autorità dei filosofi antichi'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa sono gli universali, per Ockham?',
+     opzioni:['Segni mentali che stanno per molte cose singole',
+              'Concetti dotati di un vero fondamento nelle cose',
+              'Forme presenti negli individui che li realizzano',
+              'Sostanze reali che esistono fuori della nostra anima'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa comporta la «potentia absoluta» divina?',
+     opzioni:['Dio avrebbe potuto stabilire una morale diversa',
+              'Dio conosce in anticipo ogni scelta delle creature',
+              'Dio non può fare nulla contro la propria natura',
+              'Dio mantiene per sempre l\'ordine che ha stabilito'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa sostiene Ockham sul rapporto fra Chiesa e Stato?',
+     opzioni:['Sono poteri separati, ciascuno nella propria sfera',
+              'Il potere spirituale sta sopra a quello temporale',
+              'L\'imperatore riceve la propria autorità dal papa',
+              'Lo Stato deve far rispettare la legge di Dio'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: separare fede e ragione le indebolisce o le libera? Una parola.'}
   ]
 }
 ];

@@ -64,7 +64,7 @@ materiale che gli studenti hanno davvero studiato.
 
 ## A che punto siamo
 
-Fatti **23 capitoli su 120**.
+Fatti **26 capitoli su 120**.
 
 ### Filosofia antica — 12 capitoli · completata
 - [x] Dagli Ionici agli atomisti · `1c7OT1XyooG6hVjQKbwMQHiuLMgIFz3V_`
@@ -93,10 +93,10 @@ Fatti **23 capitoli su 120**.
 - [x] Impero ottomano · `1mCmQ_2RE_xKc1MZTdY7Z-GDR9u0saN26`
 - [x] Il nuovo mondo · `1UG9wSAtQWsd4PYjP2Jf-gcQ3Tv1YXral`
 
-### Filosofia medievale — 3 capitoli · da fare
-- [ ] Filosofia medievale · `1hmD5IK736UdZiIP0xJoSHeSZGkzD-V1-`
-- [ ] Tommaso d'Aquino · `1ukN0ZPO2z3ppLrFdWkcIjppbIp6v02Y7`
-- [ ] Filosofia nel 1300 · `1cNIV0pkGPVaEbXw-SN4utGmO1BptnnZt`
+### Filosofia medievale — 3 capitoli · completata
+- [x] Filosofia medievale · `1hmD5IK736UdZiIP0xJoSHeSZGkzD-V1-`
+- [x] Tommaso d'Aquino · `1ukN0ZPO2z3ppLrFdWkcIjppbIp6v02Y7`
+- [x] Filosofia nel 1300 · `1cNIV0pkGPVaEbXw-SN4utGmO1BptnnZt`
 
 ### Storia moderna — 16 capitoli · da fare
 - [ ] Carlo V · `1KUqqoE-7zG1RyP3u_EeUln6022FoljVS`
