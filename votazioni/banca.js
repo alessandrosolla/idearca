@@ -4047,6 +4047,104 @@ const BANCA = [
               'La linea del dialogo con i socialisti diventa impraticabile'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: modernizzare metà del paese è un successo? Una parola.'}
+  ]},
+{
+  titolo: 'Storia contemporanea · 12 — La Grande Guerra',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: come può un attentato trascinare un continente in guerra? Una parola.'},
+
+    {tipo:'scelta', testo:'Perché l\'Austria dichiara guerra alla Serbia?',
+     opzioni:['Coglie l\'occasione per eliminare uno Stato che teme',
+              'L\'ultimatum era scritto perché non potesse essere accettato',
+              'Vuole fermare l\'unione dei popoli slavi del sud',
+              'L\'attentato è il pretesto di una decisione già presa'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa prevedeva il piano Schlieffen?',
+     opzioni:['Battere la Francia in sei settimane passando dal Belgio',
+              'Evitare di combattere su due fronti contemporaneamente',
+              'Colpire Parigi prima che la Russia potesse mobilitarsi',
+              'Aggirare le difese francesi attraverso un paese neutrale'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa comporta la «guerra totale»?',
+     opzioni:['L\'intera società viene coinvolta, non solo gli eserciti',
+              'Le fabbriche lavorano giorno e notte per il fronte',
+              'Le donne sostituiscono gli uomini nei posti di lavoro',
+              'Lo Stato razione i viveri e controlla l\'informazione'], giusta:0},
+
+    {tipo:'scelta', testo:'Come entra in guerra l\'Italia?',
+     opzioni:['Con un patto segreto firmato senza consultare il Parlamento',
+              'Dopo aver contrattato che cosa avrebbe ottenuto in cambio',
+              'Per volontà di una minoranza contro un paese neutralista',
+              'Passando dalla Triplice all\'Intesa in cambio di promesse'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa insegnano Verdun e la Somme?',
+     opzioni:['La guerra di logoramento uccide senza spostare i confini',
+              'Dieci mesi di battaglia non fanno guadagnare nulla a nessuno',
+              'Il costo umano è enorme e il risultato militare è nullo',
+              'Gli assalti frontali sono inutili contro le mitragliatrici'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché il 1917 è l\'anno della svolta?',
+     opzioni:['Gli Stati Uniti entrano in guerra mentre la Russia ne esce',
+              'Arrivano milioni di soldati freschi e un\'economia enorme',
+              'Un fronte si chiude e un altro riceve nuove forze',
+              'La bilancia si sposta a favore dell\'Intesa'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa lascia in eredità il Trattato di Versailles?',
+     opzioni:['Una Germania umiliata, disarmata e schiacciata dai debiti',
+              'La clausola che le addossa tutta la colpa della guerra',
+              'Centotrentadue miliardi di marchi d\'oro da pagare',
+              'Un risentimento che il nazismo saprà sfruttare'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una pace punitiva prepara la pace o la guerra? Una parola.'}
+  ]},
+{
+  titolo: 'Storia contemporanea · 13 — La Rivoluzione russa',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: che cosa spinge un popolo a rovesciare chi lo governa? Una parola.'},
+
+    {tipo:'scelta', testo:'Che cosa fa cadere lo zar nel febbraio 1917?',
+     opzioni:['Una rivolta spontanea per il pane a cui i soldati non sparano',
+              'Le proteste degli operai di Pietrogrado dilagate ovunque',
+              'Il rifiuto dei militari di reprimere la folla in piazza',
+              'Tre anni di guerra, fame e sfiducia generale nel regime'], giusta:0},
+
+    {tipo:'scelta', testo:'In che consiste la «doppia autorità» dopo febbraio?',
+     opzioni:['Governo provvisorio e Soviet convivono con obiettivi opposti',
+              'Uno vuole continuare la guerra, l\'altro chiede la pace',
+              'Accanto al governo esiste chi controlla davvero l\'esercito',
+              'Due poteri paralleli si contendono la guida del paese'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa chiede Lenin nelle tesi di aprile?',
+     opzioni:['Pace subito, terra ai contadini, tutto il potere ai Soviet',
+              'Nessun appoggio al governo provvisorio in carica',
+              'La nazionalizzazione delle banche e la fine della guerra',
+              'Che i Soviet, e non il governo, guidino la rivoluzione'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è il «partito di avanguardia» di Lenin?',
+     opzioni:['Un gruppo ristretto di rivoluzionari di professione e disciplinati',
+              'Non un partito di massa ma un\'organizzazione selezionata',
+              'Chi guida il proletariato invece di limitarsi a rappresentarlo',
+              'Una struttura compatta capace di decidere e agire in fretta'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché Lenin accetta la durissima pace di Brest-Litovsk?',
+     opzioni:['La Russia deve sopravvivere per poter fare la rivoluzione',
+              'Uscire dalla guerra vale più dei territori che si perdono',
+              'Senza pace il nuovo potere non avrebbe retto un altro anno',
+              'È un prezzo enorme ma inevitabile per consolidarsi'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché i bolscevichi vincono la guerra civile?',
+     opzioni:['Hanno il centro del paese, un esercito saldo e i contadini',
+              'L\'Armata rossa organizzata da Trockij è più disciplinata',
+              'Chi ha ricevuto la terra non vuole il ritorno dei vecchi padroni',
+              'Controllano Mosca, Pietrogrado e le comunicazioni'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché Lenin introduce la NEP nel 1921?',
+     opzioni:['Le requisizioni forzate hanno prodotto fame e rivolte',
+              'Persino i marinai di Kronstadt si erano ribellati',
+              'Il comunismo di guerra aveva bloccato la produzione',
+              'Serve un passo indietro perché l\'economia riparta'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una rivoluzione può mantenere le promesse che ha fatto? Una parola.'}
   ]
 }
 ];
