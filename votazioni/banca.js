@@ -3655,6 +3655,55 @@ const BANCA = [
               'Per costringere l\'impero ad aprirsi alle merci straniere'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: il progresso di un paese può nascere da un\'umiliazione? Una parola.'}
+  ]},
+{
+  titolo: 'Storia contemporanea · 4 — L\'Unità d\'Italia e la Destra storica',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: uno Stato nuovo nasce già unito? Una parola.'},
+
+    {tipo:'scelta', testo:'In che cosa la strategia di Cavour si oppone a quella di Mazzini?',
+     opzioni:['Punta sulla diplomazia e sull\'alleanza con una potenza',
+              'Non crede che il popolo italiano insorgerà da solo',
+              'Vuole cacciare l\'Austria con l\'aiuto della Francia',
+              'Preferisce trattare invece che organizzare rivolte'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa ottiene Cavour dalla guerra di Crimea?',
+     opzioni:['Fa entrare la questione italiana nell\'agenda europea',
+              'Un posto al Congresso di Parigi accanto alle potenze',
+              'La simpatia di Napoleone III per la causa italiana',
+              'Credito internazionale per il piccolo regno sabaudo'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa prevedono gli accordi di Plombières?',
+     opzioni:['La Francia interviene se l\'Austria attacca il Piemonte',
+              'In cambio dell\'aiuto francese si cedono Nizza e Savoia',
+              'Si punta a un regno dell\'Alta Italia, non a uno Stato unico',
+              'Cavour dovrà provocare l\'Austria perché dichiari guerra'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché Cavour si dimette dopo Villafranca?',
+     opzioni:['Napoleone III tratta con l\'Austria senza consultarlo',
+              'L\'armistizio lascia il Veneto in mano agli austriaci',
+              'La guerra si ferma prima di aver raggiunto lo scopo',
+              'La Francia abbandona il Piemonte a metà dell\'opera'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa chiede Garibaldi per sé dopo Teano?',
+     opzioni:['Nulla: consegna i territori al re e si ritira a Caprera',
+              'Solo che i suoi volontari entrino nell\'esercito regolare',
+              'Nessuna carica, nessun titolo e nessuna ricompensa',
+              'Il riconoscimento dei suoi uomini, che gli viene negato'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è il brigantaggio meridionale?',
+     opzioni:['Un misto di criminalità, protesta contadina e nostalgia borbonica',
+              'La reazione del Sud a tasse, leva obbligatoria e nuovo Stato',
+              'Una rivolta armata contro un governo sentito come straniero',
+              'Un fenomeno represso con lo stato d\'assedio e le fucilazioni'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa stabilisce il «Non expedit» di Pio IX?',
+     opzioni:['I cattolici non devono essere né eletti né elettori',
+              'Il papa non riconosce l\'annessione di Roma all\'Italia',
+              'I fedeli devono astenersi dalle elezioni del nuovo Stato',
+              'La Chiesa rifiuta ogni collaborazione col Regno d\'Italia'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: che cosa serve per «fare gli italiani»? Una parola.'}
   ]
 }
 ];
