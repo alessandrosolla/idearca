@@ -1842,6 +1842,104 @@ const BANCA = [
               'Non condividono più le misure economiche dei giacobini'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: la violenza è mai giustificata da un ideale? Una parola.'}
+  ]},
+{
+  titolo: 'Storia moderna · 12 — L\'età napoleonica',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: un uomo solo può cambiare la storia? Una parola.'},
+
+    {tipo:'scelta', testo:'Che cosa rende possibile il colpo di Stato del 18 brumaio?',
+     opzioni:['Il Direttorio è screditato e la borghesia vuole ordine',
+              'L\'esercito francese era rimasto senza un comandante',
+              'I giacobini avevano ripreso il controllo di Parigi',
+              'La Francia stava perdendo la guerra su tutti i fronti'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa afferma anzitutto il Codice civile del 1804?',
+     opzioni:['L\'uguaglianza dei cittadini davanti alla legge dello Stato',
+              'Il diritto di ogni francese a partecipare alla vita politica',
+              'L\'obbligo per lo Stato di garantire il lavoro a tutti',
+              'La supremazia della legge civile su quella religiosa'], giusta:0},
+
+    {tipo:'scelta', testo:'Quale contraddizione contiene il Codice civile?',
+     opzioni:['Proclama l\'uguaglianza ma subordina la moglie al marito',
+              'Difende la proprietà ma vieta di lasciarla in eredità',
+              'Riconosce la libertà di culto ma non quella di stampa',
+              'Afferma la laicità ma nasce dal concordato con il papa'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa vuole dire Napoleone incoronandosi da solo?',
+     opzioni:['Che il suo potere non dipende in nulla dal pontefice',
+              'Che la Francia non riconosce più l\'autorità di Roma',
+              'Che l\'Impero nasce dalla volontà del popolo francese',
+              'Che nessun sovrano europeo è pari all\'imperatore'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché il blocco continentale si rivela un boomerang?',
+     opzioni:['Danneggia più l\'economia europea di quella britannica',
+              'Spinge la Russia a stringere un\'alleanza con Londra',
+              'Costringe Napoleone a occupare militarmente la Spagna',
+              'Provoca la carestia nei porti francesi dell\'Atlantico'], giusta:0},
+
+    {tipo:'scelta', testo:'Con quale tattica i Russi logorano la Grande Armée?',
+     opzioni:['Si ritirano bruciando tutto, senza dare battaglia',
+              'Attaccano di continuo le colonne in marcia',
+              'Attendono l\'inverno chiusi dentro le fortezze',
+              'Tagliano le vie di rifornimento verso occidente'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è l\'effetto paradossale delle conquiste napoleoniche?',
+     opzioni:['Diffondono la Rivoluzione e insieme risvegliano i nazionalismi',
+              'Portano il Codice civile in paesi che poi lo rifiutano',
+              'Abbattono l\'Antico regime ma creano una nuova nobiltà',
+              'Uniscono l\'Europa sotto un solo dominio che non dura'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: si può portare la libertà a un popolo con le armi? Una parola.'}
+  ]},
+{
+  titolo: 'Storia moderna · 13 — La Restaurazione',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: si può cancellare un\'idea con la forza? Una parola.'},
+
+    {tipo:'scelta', testo:'Che cosa afferma il principio di legittimità?',
+     opzioni:['Regnano di diritto le dinastie che c\'erano prima del 1789',
+              'Nessuno Stato può prevalere sugli altri in Europa',
+              'Le grandi potenze possono intervenire contro le rivolte',
+              'Un sovrano è legittimo se il suo popolo lo riconosce'], giusta:0},
+
+    {tipo:'scelta', testo:'Come riesce Talleyrand a salvare la Francia sconfitta?',
+     opzioni:['Usa a proprio favore il principio di legittimità',
+              'Offre allo zar il proprio appoggio in Polonia',
+              'Sfrutta i contrasti fra Austria e Prussia a Vienna',
+              'Ottiene l\'appoggio della Gran Bretagna sui confini'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché Metternich chiama l\'Italia «un\'espressione geografica»?',
+     opzioni:['È solo un nome sulla carta, non uno Stato reale',
+              'È divisa fra troppe dinastie che si fanno guerra',
+              'È controllata dall\'Austria direttamente o per parentela',
+              'Non ha mai avuto una lingua comune a tutti gli abitanti'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa distingue Burke da de Maistre?',
+     opzioni:['Burke accetta riforme graduali, purché rispettino il passato',
+              'Burke difende la monarchia costituzionale all\'inglese',
+              'Burke non attribuisce a Dio l\'origine delle istituzioni',
+              'Burke condanna la Rivoluzione solo per i suoi eccessi'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è la nazione, per il pensiero dell\'Ottocento?',
+     opzioni:['Una comunità unita da lingua, cultura e storia comuni',
+              'L\'insieme dei cittadini che vivono sotto le stesse leggi',
+              'Il popolo che si è dato liberamente una Costituzione',
+              'Il territorio governato da una medesima dinastia'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è il limite principale della Carboneria?',
+     opzioni:['Riunisce solo élite colte, senza programmi per il popolo',
+              'Non riesce a diffondersi al di fuori dell\'Italia',
+              'Ha obiettivi troppo diversi da un paese all\'altro',
+              'Viene subito smantellata dalla polizia austriaca'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché la rivoluzione greca riesce dove falliscono i moti del 1820-21?',
+     opzioni:['Le grandi potenze intervengono a favore dei ribelli',
+              'I Greci sono più organizzati militarmente dei carbonari',
+              'L\'Impero ottomano era ormai troppo debole per resistere',
+              'L\'Europa romantica sostiene la causa della Grecia classica'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: che cosa tiene insieme un popolo? Una parola.'}
   ]
 }
 ];
