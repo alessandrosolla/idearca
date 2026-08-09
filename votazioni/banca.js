@@ -1303,6 +1303,104 @@ const BANCA = [
               'Lo Stato deve far rispettare la legge di Dio'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: separare fede e ragione le indebolisce o le libera? Una parola.'}
+  ]},
+{
+  titolo: 'Storia moderna · 1 — Carlo V e la Riforma protestante',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: si può comprare il perdono? Scrivi una parola.'},
+
+    {tipo:'scelta', testo:'Come arriva Carlo V a governare un impero così vasto?',
+     opzioni:['Per eredità: quattro nonni, quattro territori diversi',
+              'Per conquista militare dei regni vicini alla Spagna',
+              'Perché il papa gliene affidò il governo da giovane',
+              'Per il matrimonio con l\'erede al trono di Spagna'], giusta:0},
+
+    {tipo:'scelta', testo:'Come ottiene Carlo l\'elezione imperiale del 1519?',
+     opzioni:['Compra i voti degli elettori col denaro dei Fugger',
+              'Viene designato per testamento dal nonno Massimiliano',
+              'Ottiene l\'appoggio decisivo del papa contro la Francia',
+              'Vince la guerra contro il rivale Francesco di Francia'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché nel 1527 i lanzichenecchi saccheggiano Roma?',
+     opzioni:['Carlo V non era riuscito a pagare i suoi mercenari',
+              'L\'imperatore aveva ordinato di punire il papa ribelle',
+              'Volevano distruggere le chiese in nome della Riforma',
+              'Il papa aveva rifiutato di incoronare l\'imperatore'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa afferma il principio luterano «sola fide»?',
+     opzioni:['Salva la fede, non le opere né le indulgenze',
+              'Salva la sola Bibbia, non la parola dei pontefici',
+              'Salva la grazia divina, e nessun merito dell\'uomo',
+              'Salva chi crede e fa opere buone durante la vita'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché la stampa è decisiva per la Riforma?',
+     opzioni:['Porta le tesi in tedesco fino ai villaggi in pochi giorni',
+              'Permette di stampare la Bibbia in latino a basso prezzo',
+              'Consente al papa di rispondere a Lutero con rapidità',
+              'Sostituisce la predicazione orale dei frati mendicanti'], giusta:0},
+
+    {tipo:'scelta', testo:'Come reagisce Lutero alla rivolta dei contadini del 1525?',
+     opzioni:['La condanna e invita i principi a reprimerla nel sangue',
+              'La appoggia, riconoscendovi il suo stesso messaggio',
+              'Tace, per non compromettere la protezione dei principi',
+              'Cerca di mediare fra i contadini e i principi tedeschi'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa stabilisce la Pace di Augusta del 1555?',
+     opzioni:['Ogni principe sceglie la religione del suo territorio',
+              'Ogni suddito è libero di scegliere la propria fede',
+              'Il luteranesimo è vietato in tutto il Sacro Romano Impero',
+              'L\'imperatore riconosce il primato religioso del papa'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: dividersi su un\'idea è una sconfitta o una libertà? Una parola.'}
+  ]},
+{
+  titolo: 'Storia moderna · 2 — Riforma e Controriforma',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: chi decide che cosa si può leggere? Una parola.'},
+
+    {tipo:'scelta', testo:'Che cosa afferma la predestinazione di Calvino?',
+     opzioni:['Dio ha già scelto chi si salva, e l\'uomo non lo sa',
+              'Solo chi lavora e risparmia ottiene la salvezza',
+              'Ognuno può guadagnarsi la salvezza con la fede',
+              'La salvezza dipende dalle opere fatte in vita'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è il Concistoro istituito da Calvino a Ginevra?',
+     opzioni:['Una magistratura che sorveglia i costumi dei cittadini',
+              'L\'assemblea che elegge i pastori della città',
+              'Il tribunale che processò e condannò Michele Serveto',
+              'Il consiglio che governa la Repubblica di Ginevra'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché Enrico VIII rompe con Roma?',
+     opzioni:['Il papa gli nega il divorzio da Caterina d\'Aragona',
+              'Vuole confiscare i beni della Chiesa d\'Inghilterra',
+              'Ha aderito alla dottrina luterana della sola fede',
+              'Il papa aveva appoggiato la Spagna contro di lui'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa stabilisce il Concilio di Trento sulla disciplina?',
+     opzioni:['I vescovi risiedano in diocesi; nascono i seminari',
+              'La Vulgata latina è l\'unica versione biblica valida',
+              'I sacramenti restano sette e il papa ha il primato',
+              'La tradizione della Chiesa vale quanto la Scrittura'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa distingue la Compagnia di Gesù dagli altri ordini?',
+     opzioni:['Un quarto voto: obbedienza assoluta al pontefice',
+              'La povertà totale imposta a ciascun suo membro',
+              'Il rifiuto di ogni incarico politico presso le corti',
+              'La scelta di predicare soltanto nelle terre lontane'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché la Chiesa proibisce la Bibbia in volgare?',
+     opzioni:['Per restare l\'unica interprete autorizzata della Scrittura',
+              'Perché le traduzioni protestanti contenevano molti errori',
+              'Per impedire la diffusione delle idee di Lutero in Italia',
+              'Perché il latino era ritenuto la sola lingua sacra'], giusta:0},
+
+    {tipo:'scelta', testo:'A che cosa serve l\'arte barocca nella Controriforma?',
+     opzioni:['A convincere attraverso i sensi, non con la sola parola',
+              'A mostrare la ricchezza della Chiesa contro i riformati',
+              'A illustrare ai fedeli i passi principali del Vangelo',
+              'A sostituire le immagini distrutte dai protestanti'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: la censura protegge o impoverisce una società? Una parola.'}
   ]
 }
 ];
