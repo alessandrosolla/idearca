@@ -3361,6 +3361,104 @@ const BANCA = [
               'Che pensare l\'essenza è diverso dal constatare l\'esistenza'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: esiste qualcosa che la ragione non potrà mai spiegare? Una parola.'}
+  ]},
+{
+  titolo: 'Filosofia moderna · 27 — Hegel: i fondamenti del sistema',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: tutto ciò che accade ha una sua ragione? Una parola.'},
+
+    {tipo:'scelta', testo:'Che cosa rimprovera il giovane Hegel al mondo ebraico?',
+     opzioni:['Di aver posto Dio lontano, rompendo l\'unità con la natura',
+              'Di aver costruito una religione fatta di comandi esterni',
+              'Di essersi chiuso in ostilità verso gli altri popoli',
+              'Di aver scelto un Dio geloso che esige fedeltà esclusiva'], giusta:0},
+
+    {tipo:'scelta', testo:'In che senso il finito non esiste, per Hegel?',
+     opzioni:['Esiste solo come momento e parte dell\'infinito',
+              'È un\'espressione parziale dell\'unico organismo reale',
+              'Non ha una realtà autonoma separata dal tutto',
+              'Vale come la parte vale rispetto all\'intero'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa distingue l\'Assoluto di Hegel da quello di Spinoza?',
+     opzioni:['È soggetto spirituale in divenire, non sostanza immobile',
+              'È un risultato, non un punto di partenza già dato',
+              'Si completa attraverso il proprio stesso sviluppo',
+              'Non è statico ma dialettico nella sua struttura'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa afferma la seconda parte del celebre aforisma?',
+     opzioni:['La realtà non è caos: è il dispiegarsi di una struttura razionale',
+              'Ciò che esiste non poteva essere diverso da com\'è',
+              'Nel mondo si realizza un ordine necessario e non casuale',
+              'Ogni momento della realtà nasce da quelli che lo precedono'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa significa la metafora della nòttola di Minerva?',
+     opzioni:['La filosofia comprende una realtà solo quando è già compiuta',
+              'Il pensiero arriva sempre dopo che i fatti sono accaduti',
+              'La filosofia non guida il mondo: ne prende atto',
+              'Capire ciò che è viene prima di dire ciò che dovrebbe essere'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa vuol dire «Aufhebung»?',
+     opzioni:['Un superamento che insieme toglie e conserva ciò che supera',
+              'La sintesi mantiene il vero della tesi e dell\'antitesi',
+              'Il positivo che nasce dalla negazione del negativo',
+              'Un progresso che porta più in alto ciò che c\'era prima'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa contesta Hegel all\'Assoluto di Schelling?',
+     opzioni:['È un\'unità indistinta in cui ogni differenza si perde',
+              'È una notte in cui tutte le vacche appaiono nere',
+              'Manca di vita e di movimento dialettico interno',
+              'Non è soggetto ma soltanto identità immobile'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: capire il mondo basta, o bisogna cambiarlo? Una parola.'}
+  ]},
+{
+  titolo: 'Filosofia moderna · 28 — Hegel: la Fenomenologia dello spirito',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: abbiamo bisogno degli altri per sapere chi siamo? Una parola.'},
+
+    {tipo:'scelta', testo:'Che cosa descrive la Fenomenologia?',
+     opzioni:['Il cammino con cui la coscienza scopre di essere spirito',
+              'La storia dello spirito che appare via via a se stesso',
+              'Il percorso che porta la coscienza al sapere assoluto',
+              'Le tappe attraverso cui l\'uomo conquista la verità'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché la certezza sensibile è la conoscenza più povera?',
+     opzioni:['Sa solo che c\'è un «questo», e non riesce nemmeno a dirlo',
+              'Non può esprimere il suo oggetto senza usare un concetto',
+              'La sua pretesa di concretezza finisce nell\'indeterminato',
+              'Coglie il qui e ora ma nient\'altro di ciò che vede'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché l\'appetito non basta all\'autocoscienza?',
+     opzioni:['Per sapersi tale ha bisogno di un\'altra autocoscienza',
+              'Consumare le cose non dà nessun riconoscimento',
+              'Gli oggetti non possono confermarci che siamo liberi',
+              'Solo un altro uomo può riconoscerci come persone'], giusta:0},
+
+    {tipo:'scelta', testo:'Come si rovescia il rapporto fra servo e signore?',
+     opzioni:['Il signore gode del lavoro altrui e finisce per dipenderne',
+              'Il servo, trasformando le cose, conquista l\'indipendenza',
+              'Chi comanda si scopre più legato di chi obbedisce',
+              'La servitù, nel suo compimento, diventa vera libertà'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché il lavoro ha un valore formativo?',
+     opzioni:['Dando forma alle cose il servo dà forma anche a se stesso',
+              'Nell\'opera prodotta il servo intuisce la propria indipendenza',
+              'Il prodotto permane e riflette chi lo ha realizzato',
+              'È un desiderio trattenuto che invece di consumare costruisce'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è la coscienza infelice?',
+     opzioni:['La coscienza lacerata fra la propria finitezza e l\'infinito',
+              'Chi cerca l\'Assoluto e lo sente irraggiungibile',
+              'La coscienza che non sa ancora di essere tutta la realtà',
+              'La scissione fra ciò che muta e ciò che non muta mai'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché il singolo non raggiunge da solo l\'universalità?',
+     opzioni:['L\'universale sta nelle istituzioni in cui un popolo si realizza',
+              'Ogni legge che trova in sé finisce per valere solo per lui',
+              'Chi giudica le leggi si mette al di sopra di esse',
+              'Ciò che chiama dovere è quasi sempre il proprio interesse'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: chi lavora è più libero o meno libero di chi comanda? Una parola.'}
   ]
 }
 ];
