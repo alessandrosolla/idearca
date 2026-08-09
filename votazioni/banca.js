@@ -130,7 +130,7 @@ const BANCA = [
               'Che viaggiassero di città in città'], giusta:0},
 
     {tipo:'scelta', testo:'Nell\'interpretazione soggettivista, «l\'uomo è misura di tutte le cose» significa che:',
-     opzioni:['Se a me pare freddo e a te caldo, valgono entrambe',
+     opzioni:['Se a me pare freddo e a te caldo, vale per due',
               'L\'uomo occupa il centro dell\'universo intero',
               'Solo i sapienti giudicano che cosa sia vero',
               'Le unità di misura sono pure convenzioni'], giusta:0},
@@ -166,6 +166,205 @@ const BANCA = [
               'Che nessuno riesce davvero a metterlo in pratica'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: la virtù si può insegnare? Rispondi con una parola.'}
+  ]},
+{
+  titolo: 'Filosofia antica · 4 — Socrate',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: che cosa significa per te «essere saggio»? Una parola.'},
+
+    {tipo:'scelta', testo:'In che cosa consiste il «problema socratico»?',
+     opzioni:['Non scrisse nulla: lo conosciamo solo da altri',
+              'Socrate scrisse molto ma è andato tutto perduto',
+              'Le sue opere furono bruciate dopo la condanna',
+              'I suoi scritti furono attribuiti ad altri autori'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è l\'elenchos socratico?',
+     opzioni:['L\'interrogatorio che smonta le convinzioni altrui',
+              'Il discorso lungo che convince l\'assemblea',
+              'La preghiera rivolta al dio prima del dialogo',
+              'L\'esercizio di memoria praticato dai suoi discepoli'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché la maieutica si chiama così?',
+     opzioni:['Aiuta l\'anima a partorire ciò che ha già',
+              'Nutre l\'anima con le nozioni che le mancano',
+              'Guarisce l\'anima come farebbe un medico',
+              'Purifica l\'anima con un rito di iniziazione'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa afferma l\'intellettualismo etico di Socrate?',
+     opzioni:['Chi conosce il bene lo fa: sbaglia per ignoranza',
+              'Chi conosce il bene può comunque scegliere il male',
+              'Il bene si impara con l\'abitudine, non col ragionamento',
+              'Il bene cambia secondo la città in cui si vive'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è la caratteristica del daìmon di Socrate?',
+     opzioni:['Non comanda mai: si limita a vietare',
+              'Gli detta le risposte da dare agli avversari',
+              'Gli appare in sogno la notte prima del processo',
+              'Gli impone di occuparsi della vita politica'], giusta:0},
+
+    {tipo:'scelta', testo:'Con quale argomento le Leggi convincono Socrate a non fuggire?',
+     opzioni:['Ha goduto settant\'anni di un patto tacito',
+              'La fuga sarebbe stata scoperta e punita più duramente',
+              'I giudici avrebbero perseguitato la sua famiglia',
+              'Un oracolo gli aveva vietato di lasciare la città'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è l\'akrasia, l\'obiezione mossa a Socrate?',
+     opzioni:['Si fa il male pur sapendo benissimo che è male',
+              'Si fa il bene senza sapere di averlo fatto',
+              'Si conosce il bene ma non lo si sa spiegare',
+              'Si cambia idea sul bene a seconda dell\'età'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: «una vita senza ricerca non merita di essere vissuta». Sei d\'accordo? Una parola.'}
+  ]
+},
+{
+  titolo: 'Filosofia antica · 5 — Platone: le Idee, l\'anima, la città',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: esiste qualcosa di perfetto? Rispondi con una parola.'},
+
+    {tipo:'scelta', testo:'Che rapporto lega le cose sensibili alle Idee?',
+     opzioni:['Le cose partecipano dell\'Idea, ne sono copie',
+              'Le cose e le Idee sono la medesima realtà',
+              'Le Idee derivano per astrazione dalle cose',
+              'Le Idee sono i nomi che diamo alle cose'], giusta:0},
+
+    {tipo:'scelta', testo:'Che posto occupa l\'Idea del Bene nella gerarchia?',
+     opzioni:['Al vertice: dà essere e verità alle altre',
+              'Alla base: è la più semplice fra le Idee',
+              'Al centro: fa da tramite fra Idee e cose',
+              'Fuori dalla scala: non è una vera Idea'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è l\'anamnesi platonica?',
+     opzioni:['Conoscere è ricordare le Idee già viste',
+              'Conoscere è raccogliere dati con i cinque sensi',
+              'Conoscere è ripetere quanto insegna il maestro',
+              'Conoscere è dedurre tutto da pochi principi'], giusta:0},
+
+    {tipo:'scelta', testo:'Nel mito della caverna, che cosa rappresenta il sole?',
+     opzioni:['L\'Idea del Bene, che illumina le altre',
+              'Il fuoco acceso alle spalle dei prigionieri',
+              'La ragione individuale di ciascun uomo',
+              'Il maestro che libera dalle catene'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché nel Simposio Eros è un dèmone e non un dio?',
+     opzioni:['Figlio di Poros e Penia: desidera ciò che non ha',
+              'È nato dopo gli dèi e prima degli uomini',
+              'È stato scacciato dall\'Olimpo per via di una colpa',
+              'È il più giovane fra gli dèi dell\'amore'], giusta:0},
+
+    {tipo:'scelta', testo:'A quale parte dell\'anima corrisponde la classe dei guerrieri?',
+     opzioni:['All\'irascibile: la sua virtù è il coraggio',
+              'Alla razionale, la cui virtù è la saggezza',
+              'Alla concupiscibile, la cui virtù è la temperanza',
+              'A nessuna: i guerrieri stanno fuori dallo schema'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa insegna la frase di Lachesi nel mito di Er?',
+     opzioni:['La colpa è di chi sceglie, non del dio',
+              'Il destino è già scritto e nessuno lo cambia',
+              'Gli dèi puniscono chi ha vissuto ingiustamente',
+              'L\'anima dimentica tutto prima di rinascere'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: chi dovrebbe governare? Rispondi con una parola.'}
+  ]
+},
+{
+  titolo: 'Filosofia antica · 6 — L\'ultimo Platone',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: che cosa vuol dire dire il falso? Una parola.'},
+
+    {tipo:'scelta', testo:'Nel Sofista, che cos\'è il non-essere?',
+     opzioni:['Il diverso: «non è Y» significa «è altro»',
+              'Il nulla assoluto, come sosteneva Parmenide',
+              'Un\'illusione prodotta dai sensi ingannevoli',
+              'La materia informe che il dio deve plasmare'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché il problema del falso metteva in crisi Platone?',
+     opzioni:['Se il non-essere non è, la menzogna non è',
+              'Se il falso esiste, allora le Idee non esistono',
+              'Se il falso è utile, i sofisti avrebbero ragione',
+              'Se tutti mentono, il dialogo diventa inutile'], giusta:0},
+
+    {tipo:'scelta', testo:'In che cosa consiste la diaíresis?',
+     opzioni:['Dividere un genere in specie, fino a definire',
+              'Confutare l\'avversario mostrandone le contraddizioni',
+              'Ricordare le Idee contemplate prima di nascere',
+              'Contare quante opinioni diverse esistono su un tema'], giusta:0},
+
+    {tipo:'scelta', testo:'Nel Teeteto, perché «opinione vera» non basta a definire la conoscenza?',
+     opzioni:['Si può avere per caso, senza ragionamento',
+              'Le opinioni vere in realtà non esistono affatto',
+              'Nessuno riesce mai a distinguere il vero dal falso',
+              'L\'opinione riguarda le Idee e non le cose'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa fa il Demiurgo nel Timeo?',
+     opzioni:['Plasma la materia caotica sulle Idee',
+              'Crea dal nulla il cielo, la terra e gli uomini',
+              'Governa il cosmo restando fuori dal tempo',
+              'Distrugge il mondo per poi ricostruirlo uguale'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa cambia nelle Leggi rispetto alla Repubblica?',
+     opzioni:['Governano le leggi scritte, non i filosofi-re',
+              'Governano i più ricchi al posto dei più saggi',
+              'Il potere passa interamente all\'assemblea',
+              'Lo Stato viene abolito a favore delle famiglie'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'era il «confilosofare» dell\'Accademia?',
+     opzioni:['Ricerca in comune, col disaccordo ammesso',
+              'Lezione del maestro che i discepoli trascrivevano',
+              'Rito di iniziazione riservato a pochi eletti',
+              'Gara di eloquenza fra le scuole rivali di Atene'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: è un difetto cambiare idea? Rispondi con una parola.'}
+  ]
+},
+{
+  titolo: 'Filosofia antica · 7 — Aristotele: logica e metafisica',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: perché una cosa esiste? Una parola.'},
+
+    {tipo:'scelta', testo:'Qual è la critica di Aristotele alle Idee platoniche?',
+     opzioni:['Raddoppiano gli enti e non spiegano il moto',
+              'Sono troppo poche per spiegare tutte le cose',
+              'Non si possono nominare con parole precise',
+              'Sono accessibili solo dopo la morte dell\'anima'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è il termine medio di un sillogismo?',
+     opzioni:['Sta in entrambe le premesse, non in conclusione',
+              'È il soggetto che compare nella conclusione',
+              'È il predicato che compare nella conclusione',
+              'È la premessa considerata più probabile'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché il principio di non contraddizione non si può dimostrare?',
+     opzioni:['Chi prova a negarlo lo sta già usando',
+              'Perché nessuno finora ci è mai riuscito',
+              'Perché vale solo per gli enti materiali',
+              'Perché Aristotele lo prese dai matematici'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è la sostanza prima per Aristotele?',
+     opzioni:['L\'individuo concreto: questo uomo, o cavallo',
+              'La specie a cui l\'individuo appartiene',
+              'La materia di cui una cosa è composta',
+              'L\'Idea eterna di cui la cosa è copia'], giusta:0},
+
+    {tipo:'scelta', testo:'Quale delle quattro cause conta di più per Aristotele?',
+     opzioni:['La finale: la natura agisce per uno scopo',
+              'La materiale: senza materia non c\'è nulla',
+              'L\'efficiente: senza chi agisce non accade nulla',
+              'La formale: senza forma la cosa è indeterminata'], giusta:0},
+
+    {tipo:'scelta', testo:'Come spiega Aristotele il movimento, contro Parmenide?',
+     opzioni:['È passaggio dalla potenza all\'atto, non dal nulla',
+              'È un\'apparenza che la ragione deve smascherare',
+              'È l\'urto fra atomi che si muovono nel vuoto',
+              'È l\'effetto dell\'attrazione fra i quattro elementi'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è l\'anima secondo l\'ilemorfismo?',
+     opzioni:['La forma del corpo, non sostanza separata',
+              'Una sostanza immortale imprigionata nel corpo',
+              'Un soffio materiale diffuso in tutto il corpo',
+              'Il ricordo delle Idee contemplate prima di nascere'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: Platone o Aristotele? Rispondi con una parola.'}
   ]
 }
 ];
