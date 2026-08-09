@@ -862,6 +862,55 @@ const BANCA = [
               'La Chiesa non paga tributi alla corona'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: Federico II, «stupore del mondo» o sconfitto? Una parola.'}
+  ]},
+{
+  titolo: 'Storia medievale · 6 — Le civiltà extraeuropee',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: che cosa rende «avanzata» una civiltà? Una parola.'},
+
+    {tipo:'scelta', testo:'Su che cosa si basava il calendario maya?',
+     opzioni:['Sull\'anno solare di trecentosessantacinque giorni',
+              'Sulle fasi della luna e sui mesi lunari',
+              'Sul ciclo delle piene dei fiumi locali',
+              'Sui regni dei sovrani che si succedevano'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché gli Aztechi erano in guerra permanente?',
+     opzioni:['Servivano prigionieri da sacrificare agli dèi',
+              'Volevano estendere i confini fino al mare',
+              'Dovevano difendersi dalle tribù del nord',
+              'Cercavano nuove miniere d\'oro e d\'argento'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa sono i quipu degli Inca?',
+     opzioni:['Cordicelle annodate per registrare i dati',
+              'Le stazioni di posta lungo le strade andine',
+              'I terrazzamenti coltivati sui fianchi dei monti',
+              'I sacerdoti che servivano il dio Sole'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa mancava a tutte le civiltà precolombiane?',
+     opzioni:['La ruota, il cavallo e gli attrezzi di metallo',
+              'La scrittura, il calendario e la matematica',
+              'Le città fortificate e le strade lastricate',
+              'L\'agricoltura irrigua e l\'allevamento'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa significa «Sahel» in arabo?',
+     opzioni:['Costa: il Sahara è l\'oceano, il Sahel la riva',
+              'Deserto: la terra dove non cresce nulla',
+              'Fiume: il corso d\'acqua che porta l\'oro',
+              'Mercato: il luogo dove finiscono le carovane'], giusta:0},
+
+    {tipo:'scelta', testo:'Quali invenzioni vengono dalla Cina dei Song?',
+     opzioni:['Polvere da sparo, stampa, bussola e ghisa',
+              'Carta moneta, vetro soffiato e orologio',
+              'Aratro pesante, mulino a vento e staffa',
+              'Astrolabio, numeri arabi e algebra'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché i Mongoli non arrivarono a Vienna?',
+     opzioni:['Morì il khan e tornarono a eleggerne un altro',
+              'Furono sconfitti dai principi tedeschi',
+              'Le mura della città resistettero all\'assedio',
+              'Una pestilenza decimò il loro esercito'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: che cosa avrebbe imparato l\'Europa se avesse ascoltato Marco Polo? Una parola.'}
   ]
 }
 ];
