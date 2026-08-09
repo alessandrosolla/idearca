@@ -1058,6 +1058,104 @@ const BANCA = [
               'Piero de\' Medici, per riprendere Firenze'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: l\'equilibrio fra Stati è forza o fragilità? Una parola.'}
+  ]},
+{
+  titolo: 'Storia medievale · 10 — La frontiera mediterranea e gli Ottomani',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: che cosa succede quando cade un impero millenario? Una parola.'},
+
+    {tipo:'scelta', testo:'Perché l\'Impero bizantino non riesce più a difendersi?',
+     opzioni:['Il territorio ridotto non produce tasse a sufficienza',
+              'Ha perso ogni contatto con l\'Occidente cristiano',
+              'La popolazione si era convertita all\'islam',
+              'I suoi eserciti erano fatti solo di mercenari'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa prepara Maometto II per prendere Costantinopoli?',
+     opzioni:['Cannoni capaci di abbattere le mura millenarie',
+              'Una flotta più numerosa di quella veneziana',
+              'Un\'alleanza segreta con i mercanti genovesi',
+              'Un lungo blocco navale per affamare la città'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa accade il 29 maggio 1453?',
+     opzioni:['Cade Costantinopoli e muore l\'ultimo imperatore',
+              'Gli Ottomani vengono respinti sotto le mura',
+              'I Veneziani riconquistano la città ai Turchi',
+              'Il patriarca ortodosso fugge a Mosca'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è il devsirme ottomano?',
+     opzioni:['Il prelievo di bambini cristiani dai Balcani',
+              'La tassa pagata dai sudditi non musulmani',
+              'Il codice di leggi emanato da Maometto II',
+              'Il consiglio che affiancava il sultano'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa garantisce il sistema dei millet?',
+     opzioni:['Autonomia interna a ogni comunità religiosa',
+              'Uguaglianza fiscale fra tutti i sudditi',
+              'Libertà di commercio in tutto l\'Impero',
+              'Il diritto di eleggere i governatori locali'], giusta:0},
+
+    {tipo:'scelta', testo:'Dove si ferma l\'avanzata di Solimano nel 1529?',
+     opzioni:['Sotto le mura di Vienna, che resiste',
+              'A Mohács, dove è sconfitto dagli Ungheresi',
+              'A Belgrado, che non riesce a espugnare',
+              'A Rodi, difesa dai Cavalieri di San Giovanni'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa accade in Spagna nel 1492, oltre alla caduta di Granada?',
+     opzioni:['Gli ebrei vengono espulsi e Colombo salpa',
+              'Nasce l\'Inquisizione affidata a Torquemada',
+              'Ferdinando e Isabella si sposano unendo i regni',
+              'La Spagna conquista il regno di Napoli'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: la tolleranza conviene o indebolisce uno Stato? Una parola.'}
+  ]},
+{
+  titolo: 'Storia medievale · 11 — Il Nuovo Mondo',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: «scoperta» o «conquista»? Scrivi la parola che scegli.'},
+
+    {tipo:'scelta', testo:'Perché gli Europei cercano nuove rotte per l\'Oriente?',
+     opzioni:['Gli Ottomani controllano le vie di terra',
+              'Le spezie asiatiche stavano per esaurirsi',
+              'Le navi non reggevano più il Mediterraneo',
+              'Il papa aveva vietato i commerci con l\'islam'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa apre la circumnavigazione di Bartolomeo Diaz (1487-88)?',
+     opzioni:['La rotta africana verso l\'Oceano Indiano',
+              'Il primo scalo portoghese in India',
+              'La colonizzazione dell\'isola di Madera',
+              'Il passaggio dall\'Atlantico al Pacifico'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa ottiene Colombo con le Capitolazioni di Santa Fe?',
+     opzioni:['Titoli di ammiraglio e viceré, più un decimo',
+              'Cinque navi armate a spese della corona',
+              'Il monopolio del commercio delle spezie',
+              'Il perdono dei debiti verso i Genovesi'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché il continente si chiama America e non Colombia?',
+     opzioni:['Vespucci capì per primo che era terra nuova',
+              'Vespucci vi sbarcò prima di Colombo',
+              'Colombo rifiutò di dare il proprio nome',
+              'Waldseemüller ignorava chi fosse Colombo'], giusta:0},
+
+    {tipo:'scelta', testo:'Su che cosa punta Cortés per abbattere l\'Impero azteco?',
+     opzioni:['Sull\'odio dei popoli sottomessi dagli Aztechi',
+              'Sulla superiorità numerica dei suoi soldati',
+              'Sul blocco navale del porto di Tenochtitlán',
+              'Sull\'appoggio militare del re di Spagna'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa causò il crollo maggiore della popolazione indigena?',
+     opzioni:['Le malattie europee, contro cui non c\'era immunità',
+              'Le battaglie campali contro i conquistadores',
+              'La fuga di massa verso le regioni interne',
+              'La carestia seguita alla fine dell\'agricoltura'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa denuncia Bartolomé de Las Casas?',
+     opzioni:['I massacri e i lavori forzati imposti agli indigeni',
+              'La spartizione del mondo fatta a Tordesillas',
+              'L\'arrivo degli schiavi africani nelle Americhe',
+              'L\'avidità dei mercanti genovesi e veneziani'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: si può giudicare il passato con i valori di oggi? Una parola.'}
   ]
 }
 ];
