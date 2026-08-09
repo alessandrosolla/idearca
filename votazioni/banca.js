@@ -4145,6 +4145,104 @@ const BANCA = [
               'Serve un passo indietro perché l\'economia riparta'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: una rivoluzione può mantenere le promesse che ha fatto? Una parola.'}
+  ]},
+{
+  titolo: 'Storia contemporanea · 14 — Il dopoguerra in Europa',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: che cosa resta di un continente dopo quattro anni di guerra? Una parola.'},
+
+    {tipo:'scelta', testo:'Quale problema creano i nuovi confini disegnati a Parigi?',
+     opzioni:['Milioni di persone finiscono in Stati che non sentono propri',
+              'I confini politici non coincidono con quelli etnici',
+              'Ogni nuovo Stato si ritrova dentro minoranze scontente',
+              'Nascono risentimenti destinati a durare nel tempo'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è il punto debole della Costituzione di Weimar?',
+     opzioni:['L\'articolo che permette al presidente di governare per decreto',
+              'Una norma d\'emergenza che potrà essere usata contro di essa',
+              'Un sistema ibrido fra presidenziale e parlamentare',
+              'La possibilità di sospendere il Parlamento in caso di crisi'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è la leggenda della «pugnalata alle spalle»?',
+     opzioni:['L\'idea che la Germania non fu battuta ma tradita dai politici',
+              'Una versione diffusa dai militari per scaricare le colpe',
+              'La convinzione che l\'esercito fosse ancora imbattuto nel 1918',
+              'Un racconto falso che avvelena la giovane repubblica'], giusta:0},
+
+    {tipo:'scelta', testo:'Chi paga di più l\'iperinflazione del 1923?',
+     opzioni:['La classe media, che vede azzerati i risparmi di una vita',
+              'Chi aveva messo da parte denaro invece di beni',
+              'Le famiglie che vivevano di rendita e di stipendio fisso',
+              'Chi si fidava della moneta più che della proprietà'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché in Europa occidentale il biennio rosso non diventa rivoluzione?',
+     opzioni:['La classe media teme i rivoluzionari più dei padroni',
+              'I partiti socialisti sono divisi fra riformisti e rivoluzionari',
+              'I governi rispondono con la forza alle agitazioni',
+              'Manca l\'alleanza fra ceto medio e proletariato'], giusta:0},
+
+    {tipo:'scelta', testo:'Come funziona il piano Dawes?',
+     opzioni:['Gli USA prestano alla Germania che paga Francia e Gran Bretagna',
+              'Si crea un circolo in cui il denaro americano torna in America',
+              'I capitali stranieri permettono di versare le riparazioni',
+              'La Germania riceve prestiti per poter onorare i debiti'], giusta:0},
+
+    {tipo:'scelta', testo:'Quale strategia adotta Gandhi in India?',
+     opzioni:['La non violenza e la disobbedienza civile contro il dominio',
+              'Il boicottaggio dei prodotti inglesi come arma politica',
+              'Una resistenza passiva che coinvolge milioni di persone',
+              'La lotta senza armi contro chi possiede tutte le armi'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: bastano cinque anni di calma a guarire un continente? Una parola.'}
+  ]},
+{
+  titolo: 'Storia contemporanea · 15 — Dal dopoguerra al fascismo',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: una democrazia può cadere senza colpo di Stato? Una parola.'},
+
+    {tipo:'scelta', testo:'Che cosa sperimenta D\'Annunzio a Fiume?',
+     opzioni:['Riti, discorsi dal balcone e camicie nere: un laboratorio',
+              'Uno stile politico che il fascismo farà proprio',
+              'Un\'occupazione durata quindici mesi contro il governo',
+              'La forza del gesto contro le decisioni della diplomazia'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché il biennio rosso favorisce il fascismo?',
+     opzioni:['I proprietari, spaventati, cercano chi li protegga',
+              'Le occupazioni di fabbriche e terre allarmano la borghesia',
+              'Lo Stato appare incapace di garantire l\'ordine',
+              'Chi teme la rivoluzione preferisce le squadre alla legge'], giusta:0},
+
+    {tipo:'scelta', testo:'Contro chi si dirige la violenza squadrista?',
+     opzioni:['Sindacati, cooperative e sedi socialiste e popolari',
+              'Le organizzazioni in cui i lavoratori si erano riuniti',
+              'Tutto ciò che rappresentava il movimento operaio',
+              'Le Case del Popolo e le leghe contadine'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché la marcia su Roma non è un vero colpo di Stato?',
+     opzioni:['È il re a conferire l\'incarico, rifiutando lo stato d\'assedio',
+              'Mussolini arriva in treno dopo essere stato chiamato',
+              'Il potere viene consegnato, non conquistato con le armi',
+              'La monarchia avalla il passaggio invece di opporsi'], giusta:0},
+
+    {tipo:'scelta', testo:'A che cosa serve la legge Acerbo?',
+     opzioni:['Chi supera il venticinque per cento prende due terzi dei seggi',
+              'Garantire ai fascisti la maggioranza assoluta in Parlamento',
+              'Trasformare una minoranza di voti in un dominio dell\'aula',
+              'Vincere le elezioni del 1924 senza doverle davvero vincere'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché la secessione aventiniana fallisce?',
+     opzioni:['Le opposizioni lasciano l\'aula senza avere un piano alternativo',
+              'Protestare abbandonando il Parlamento lo lascia ai fascisti',
+              'Manca una proposta politica capace di sostituire il governo',
+              'Il gesto morale non si traduce in nessuna azione concreta'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa cambia con le leggi fascistissime?',
+     opzioni:['Si aboliscono stampa libera e partiti: nasce la dittatura',
+              'Nascono polizia segreta e tribunale per i reati politici',
+              'Lo Stato liberale viene smantellato pezzo per pezzo',
+              'Ogni forma di opposizione diventa fuori legge'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: di chi è la responsabilità quando una libertà si perde? Una parola.'}
   ]
 }
 ];
