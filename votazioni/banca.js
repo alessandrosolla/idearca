@@ -3067,6 +3067,104 @@ const BANCA = [
               'Il concetto di Dio non contiene la sua realtà effettiva'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: che cosa resta della metafisica dopo Kant? Una parola.'}
+  ]},
+{
+  titolo: 'Filosofia moderna · 21 — Kant: la Critica della ragion pratica',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: fare la cosa giusta per interesse vale lo stesso? Una parola.'},
+
+    {tipo:'scelta', testo:'Che cosa vuol dire che la legge morale è un «fatto della ragione»?',
+     opzioni:['Non si dimostra: la coscienza la trova già in sé',
+              'Ogni uomo sa che certe cose vanno fatte e altre no',
+              'È un dato immediato, non il risultato di un ragionamento',
+              'La Critica non la fonda, ne analizza solo le condizioni'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa distingue l\'imperativo categorico da quello ipotetico?',
+     opzioni:['Comanda senza condizioni, non in vista di uno scopo',
+              'Vale per chiunque e in qualunque circostanza si agisca',
+              'Non dipende dal fatto che si voglia un certo risultato',
+              'Ha la forma del «devi», non quella del «se vuoi»'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa chiede la prima formula dell\'imperativo categorico?',
+     opzioni:['Che la massima della tua azione possa valere per tutti',
+              'Che ciò che fai resti valido se lo facessero tutti',
+              'Che il tuo criterio possa diventare una legge universale',
+              'Che nessuna eccezione venga fatta a proprio vantaggio'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché la legge morale deve essere formale?',
+     opzioni:['Un contenuto preciso la legherebbe a casi particolari',
+              'Solo così può valere sempre e per chiunque agisca',
+              'Prescrivere cose concrete toglierebbe libertà a chi agisce',
+              'Non dice che cosa fare, ma come si deve volere'], giusta:0},
+
+    {tipo:'scelta', testo:'Che differenza c\'è fra legalità e moralità?',
+     opzioni:['La prima guarda l\'atto, la seconda l\'intenzione con cui è fatto',
+              'La prima si accontenta che l\'azione sia conforme al dovere',
+              'Solo la seconda richiede di agire per puro rispetto della legge',
+              'Chi paga le tasse per paura è legale ma non morale'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è l\'autonomia morale?',
+     opzioni:['La volontà razionale si dà da sé la propria legge',
+              'Nessuna forza esterna può fondare il dovere dell\'uomo',
+              'Non il bene fonda la legge, ma la legge fonda il bene',
+              'L\'uomo è insieme legislatore e suddito di se stesso'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché Kant postula l\'esistenza di Dio?',
+     opzioni:['Serve che qualcuno faccia corrispondere felicità e virtù',
+              'In questo mondo il merito e la felicità non coincidono',
+              'Senza di lui il sommo bene non sarebbe nemmeno pensabile',
+              'La ragione pratica ammette ciò che la teorica non prova'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: la morale ha bisogno della religione? Una parola.'}
+  ]},
+{
+  titolo: 'Filosofia moderna · 22 — Kant: la Critica del Giudizio',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: la bellezza sta nelle cose o in chi guarda? Una parola.'},
+
+    {tipo:'scelta', testo:'Quale problema affronta la terza Critica?',
+     opzioni:['L\'abisso fra la natura necessaria e la libertà morale',
+              'Il rapporto fra il mondo che conosciamo e quello in cui agiamo',
+              'La possibilità che la natura venga incontro ai fini dell\'uomo',
+              'La mancanza di un ponte fra le prime due Critiche'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa distingue il giudizio riflettente da quello determinante?',
+     opzioni:['Nel primo l\'universale va cercato, nel secondo è già dato',
+              'Il primo interpreta la natura, il secondo la determina',
+              'Il primo esprime un bisogno umano, il secondo conosce',
+              'Il primo non ha alcun valore scientifico, il secondo sì'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa vuol dire che il bello piace «senza interesse»?',
+     opzioni:['Non ci importa che l\'oggetto esista o sia nostro',
+              'Il piacere estetico è puramente contemplativo',
+              'Non desideriamo possedere ciò che troviamo bello',
+              'Ci basta l\'immagine, non la cosa in se stessa'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è la «finalità senza scopo»?',
+     opzioni:['La forma appare ordinata senza rimandare a nessun fine',
+              'Il bello sembra fatto apposta, ma non serve a nulla',
+              'Un gioco di armonie che non rinvia ad alcun concetto',
+              'L\'oggetto piace per come è fatto, non per ciò che fa'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché il giudizio di gusto può pretendere di valere per tutti?',
+     opzioni:['Il gioco fra immaginazione e intelletto è uguale in ogni uomo',
+              'Esiste un senso comune estetico condiviso da chiunque',
+              'La stessa struttura mentale produce lo stesso accordo',
+              'La forma dell\'oggetto colpisce tutti allo stesso modo'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è il genio, secondo Kant?',
+     opzioni:['Il talento per cui la natura stessa dà la regola all\'arte',
+              'Chi crea opere originali che diventano modello per altri',
+              'Chi produce il bello senza saper spiegare come lo fa',
+              'Una capacità che, a differenza della scienza, non si insegna'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa ci rivela il sublime dinamico?',
+     opzioni:['Che la nostra dignità morale non si piega alle forze naturali',
+              'Che siamo materialmente piccoli ma spiritualmente grandi',
+              'Che la vera sublimità sta nell\'animo di chi giudica',
+              'Che la legge morale è il sublime per eccellenza'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: la natura ha uno scopo o siamo noi a cercarglielo? Una parola.'}
   ]
 }
 ];
