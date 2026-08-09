@@ -3851,6 +3851,104 @@ const BANCA = [
               'L\'esercito apre il fuoco su una folla priva di armi'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: si risponde alla fame con le riforme o con l\'esercito? Una parola.'}
+  ]},
+{
+  titolo: 'Storia contemporanea · 8 — L\'età dell\'imperialismo',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: con quali parole si giustifica un dominio? Una parola.'},
+
+    {tipo:'scelta', testo:'Che cosa distingue l\'imperialismo dal vecchio colonialismo?',
+     opzioni:['Si conquista l\'entroterra, non solo i porti e le rotte',
+              'Sono gli Stati a governare, non più le compagnie private',
+              'Le colonie vengono amministrate e presidiate militarmente',
+              'La conquista diventa sistematica invece che commerciale'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa afferma il darwinismo sociale?',
+     opzioni:['Le razze «superiori» avrebbero il diritto di dominare le altre',
+              'La selezione naturale varrebbe anche fra i popoli umani',
+              'Il più forte prevale per legge di natura anche nella storia',
+              'La teoria di Darwin si applicherebbe alle società umane'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa stabilisce la Conferenza di Berlino?',
+     opzioni:['Per rivendicare un territorio occorre occuparlo militarmente',
+              'Non bastano le esplorazioni: serve una presenza effettiva',
+              'I grandi fiumi africani restano aperti alla navigazione',
+              'Il Congo diventa proprietà personale di Leopoldo II'], giusta:0},
+
+    {tipo:'scelta', testo:'Su che cosa si regge il regime di Leopoldo II in Congo?',
+     opzioni:['Quote obbligatorie di caucciù imposte a ogni villaggio',
+              'Mutilazioni e fucilazioni per chi non consegna abbastanza',
+              'Uno sfruttamento che costa dieci milioni di vite',
+              'La violenza sistematica come metodo di produzione'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa introducono i britannici nella seconda guerra boera?',
+     opzioni:['I campi di concentramento in cui muoiono ventiseimila civili',
+              'Una risposta durissima alla guerriglia dei coloni olandesi',
+              'L\'internamento di donne e bambini per fiaccare i combattenti',
+              'Una pratica che darà il nome a un\'istituzione del Novecento'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa vogliono i Boxer?',
+     opzioni:['Cacciare tutti gli stranieri e colpire i cristiani in Cina',
+              'Liberare il paese dalle potenze che se lo sono spartito',
+              'Restaurare l\'autonomia dell\'impero contro l\'Occidente',
+              'Reagire alle umiliazioni subite dopo le guerre dell\'oppio'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché i confini tracciati a tavolino lasciano un\'eredità pesante?',
+     opzioni:['Chiudono nello stesso Stato etnie rivali e ne separano di affini',
+              'Ignorano lingue, culture e antichi confini dei regni africani',
+              'Producono conflitti che durano fino ai nostri giorni',
+              'Sono disegnati con la squadra senza guardare chi ci vive'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: scuole e ferrovie compensano una conquista? Una parola.'}
+  ]},
+{
+  titolo: 'Storia contemporanea · 9 — La belle époque',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: si può chiamare «bella» un\'epoca che finisce in guerra? Una parola.'},
+
+    {tipo:'scelta', testo:'Perché l\'espressione «belle époque» nasce solo dopo?',
+     opzioni:['Fu coniata dopo la guerra, per contrasto con l\'angoscia del conflitto',
+              'Solo guardando indietro quegli anni parvero felici',
+              'Chi la visse non poteva sapere che cosa stesse per accadere',
+              'Il nome esprime il rimpianto di un mondo perduto'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è la transizione demografica?',
+     opzioni:['Il passaggio da molte nascite e molte morti a poche di entrambe',
+              'Il calo della mortalità grazie a vaccini, igiene e medicina',
+              'La crescita della popolazione europea nel corso dell\'Ottocento',
+              'Lo spostamento degli abitanti dalle campagne verso le città'], giusta:0},
+
+    {tipo:'scelta', testo:'Da dove parte la maggior parte degli emigranti italiani?',
+     opzioni:['Dal Sud e dalle isole, che danno più della metà del totale',
+              'Da un paese in cui manca lavoro e la terra non basta',
+              'Dalle regioni meridionali colpite dalla crisi agricola',
+              'Da quelle zone dove l\'industria non è mai arrivata'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa introduce la catena di montaggio di Ford?',
+     opzioni:['Ogni operaio ripete un solo gesto e il costo del prodotto crolla',
+              'Una produzione in serie che rende l\'auto accessibile a molti',
+              'L\'organizzazione scientifica del lavoro applicata alla fabbrica',
+              'Un metodo che aumenta la resa ma svuota di senso il lavoro'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa mettono in crisi Planck, Einstein e Freud?',
+     opzioni:['La fiducia positivista che la scienza spieghi tutto il reale',
+              'L\'idea che spazio, tempo ed energia siano come sembrano',
+              'La convinzione che l\'uomo sia padrone dei propri comportamenti',
+              'Le certezze su cui si reggeva la scienza dell\'Ottocento'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è un partito di massa?',
+     opzioni:['Un\'organizzazione con iscritti, sezioni, programma e giornale',
+              'Una struttura stabile che non dipende più da poche élite',
+              'Il modo in cui le masse entrano nella vita politica',
+              'La forma assunta dai socialdemocratici in tutta Europa'], giusta:0},
+
+    {tipo:'scelta', testo:'Quali ombre attraversano la belle époque?',
+     opzioni:['Nazionalismo aggressivo, razzismo «scientifico» e antisemitismo',
+              'Una corsa agli armamenti che nessuno riesce a fermare',
+              'Teorie che giustificano il dominio di un popolo sugli altri',
+              'Tensioni fra le nazioni che il progresso non attenua'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: il benessere basta a garantire la pace? Una parola.'}
   ]
 }
 ];
