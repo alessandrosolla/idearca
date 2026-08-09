@@ -4488,6 +4488,55 @@ const BANCA = [
               'Una società intera accetta senza reagire l\'esclusione di altri'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: che cosa avresti fatto tu nel 1938? Una parola.'}
+  ]},
+{
+  titolo: 'Storia contemporanea · 21 — La Seconda guerra mondiale',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: che cosa resta del mondo dopo settanta milioni di morti? Una parola.'},
+
+    {tipo:'scelta', testo:'Su che cosa si basa la guerra lampo tedesca?',
+     opzioni:['Velocità e concentrazione: si sfonda in pochi punti e si aggira',
+              'Carri armati e aviazione che agiscono insieme',
+              'Una tattica opposta a quella delle trincee del 1914',
+              'Il movimento rapido invece del logoramento del nemico'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché Hitler non riesce a invadere la Gran Bretagna?',
+     opzioni:['La RAF non viene distrutta e il cielo resta britannico',
+              'Radar e caccia migliori vanificano gli attacchi tedeschi',
+              'Senza il dominio dell\'aria lo sbarco è impossibile',
+              'È il primo fallimento militare del Reich'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa ferma l\'operazione Barbarossa?',
+     opzioni:['L\'inverno russo coglie i tedeschi senza equipaggiamento',
+              'L\'avanzata si blocca alle porte di Mosca',
+              'Le distanze e il clima vanificano la superiorità iniziale',
+              'La resistenza sovietica regge oltre le previsioni'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa viene deciso alla Conferenza di Wannsee?',
+     opzioni:['Lo sterminio sistematico di tutti gli ebrei d\'Europa',
+              'Si passa dalla persecuzione al genocidio pianificato',
+              'La cosiddetta «soluzione finale» diventa un programma',
+              'Le SS organizzano l\'uccisione su scala industriale'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché Stalingrado è la svolta della guerra?',
+     opzioni:['È la prima grande sconfitta dell\'esercito tedesco',
+              'Novantamila soldati si arrendono con il loro comandante',
+              'Da quel momento l\'iniziativa passa agli Alleati',
+              'L\'URSS dimostra di poter fermare e respingere l\'invasore'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché l\'8 settembre 1943 è una tragedia per l\'Italia?',
+     opzioni:['Il re fugge senza ordini e l\'esercito si dissolve',
+              'I soldati restano soli davanti all\'ex alleato tedesco',
+              'Il paese si spacca e comincia una guerra civile',
+              'L\'armistizio arriva senza che nulla sia stato preparato'], giusta:0},
+
+    {tipo:'scelta', testo:'Quale eredità lascia la Resistenza all\'Italia?',
+     opzioni:['Il fondamento morale su cui nascerà la Repubblica',
+              'Una Costituzione scritta da chi aveva combattuto il fascismo',
+              'La dignità riconquistata da un paese che si era arreso nel 1922',
+              'Trecentomila partigiani e trentacinquemila caduti'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: «mai più» è una promessa che si può mantenere? Una parola.'}
   ]
 }
 ];
