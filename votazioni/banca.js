@@ -3165,6 +3165,104 @@ const BANCA = [
               'Che la legge morale è il sublime per eccellenza'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: la natura ha uno scopo o siamo noi a cercarglielo? Una parola.'}
+  ]},
+{
+  titolo: 'Filosofia moderna · 23 — Kant: religione, diritto e storia',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: la pace fra i popoli è un sogno o un compito? Una parola.'},
+
+    {tipo:'scelta', testo:'Che rapporto pone Kant fra morale e religione?',
+     opzioni:['È la morale a fondare la fede, non il contrario',
+              'La religione razionale è il nucleo di ogni fede autentica',
+              'Anche la rivelazione va passata al vaglio della ragione',
+              'La fede completa la morale senza mai precederla'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché il male radicale non toglie all\'uomo la responsabilità?',
+     opzioni:['Nasce da una scelta libera, non da una necessità di natura',
+              'Accanto ad esso resta una disposizione originaria al bene',
+              'L\'uomo conosce la legge morale e sceglie di eluderla',
+              'Non dipende da come siamo fatti fisicamente'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è il diritto per Kant?',
+     opzioni:['Le condizioni per cui la libertà di ognuno sta con quella altrui',
+              'Il corrispettivo giuridico dell\'imperativo categorico morale',
+              'Il limite reciproco che rende possibile la libertà di tutti',
+              'L\'ordine che regola la coesistenza fra soggetti liberi'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è il contratto originario?',
+     opzioni:['Un\'idea a priori della ragione, non un fatto accaduto',
+              'Il modello ideale cui ogni politica reale deve tendere',
+              'Ciò che rende concettualmente possibile lo Stato',
+              'Una necessità della ragione, non una data della storia'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché lo Stato di Kant è detto «formale»?',
+     opzioni:['Non dice che cosa fare, ma come farlo senza ledere gli altri',
+              'Non si occupa della felicità, che è cosa personale',
+              'Garantisce le condizioni, non i fini di chi vi vive',
+              'Lascia a ciascuno la scelta dei propri scopi di vita'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché una costituzione repubblicana favorisce la pace?',
+     opzioni:['Chi deve subire la guerra è anche chi la deve approvare',
+              'I cittadini ci pensano due volte prima di dichiararla',
+              'Il sovrano assoluto invece non ne paga mai il prezzo',
+              'Libertà e uguaglianza giuridica frenano ogni avventura'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è l\'«insocievole socievolezza»?',
+     opzioni:['La spinta a unirsi che convive con quella a contrastarsi',
+              'Il conflitto che fa progredire l\'umanità nella storia',
+              'La tendenza opposta che impedisce all\'uomo di adagiarsi',
+              'Ciò che distingue gli uomini da un gregge di pecore'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: il conflitto ci fa crescere o ci distrugge? Una parola.'}
+  ]},
+{
+  titolo: 'Filosofia moderna · 24 — Il Romanticismo',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: si capisce di più con la ragione o con il sentimento? Una parola.'},
+
+    {tipo:'scelta', testo:'Che cosa rifiutano davvero i romantici?',
+     opzioni:['La ragione degli illuministi, non la ragione in quanto tale',
+              'Una ragione che chiude le porte all\'infinito e alla metafisica',
+              'Il modo scientifico di guardare la realtà umana profonda',
+              'L\'idea che tutto si possa spiegare con l\'esperienza'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché l\'arte è così importante per i romantici?',
+     opzioni:['È una via all\'assoluto che precede e completa la filosofia',
+              'L\'artista intuisce ciò che il ragionamento non raggiunge',
+              'La musica fa vivere direttamente l\'esperienza dell\'infinito',
+              'La creazione non imita modelli ma nasce dalla libertà'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è la Sehnsucht?',
+     opzioni:['Il desiderio struggente di un assoluto che sempre sfugge',
+              'La brama di ciò che non si potrà mai raggiungere',
+              'Un desiderio che ha per oggetto il desiderio stesso',
+              'L\'inquietudine che può rovesciarsi nel senso di vuoto'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è l\'ironia romantica?',
+     opzioni:['La coscienza che ogni cosa finita è nulla di fronte all\'infinito',
+              'Il non prendere sul serio ciò che è soltanto provvisorio',
+              'La superiorità di chi sa relativizzare tutto l\'esistente',
+              'Il distacco da ogni manifestazione particolare dell\'assoluto'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa esprime il titanismo?',
+     opzioni:['La sfida di chi combatte pur sapendo che perderà',
+              'La ribellione contro forze più grandi dell\'uomo',
+              'L\'atteggiamento di Prometeo che ruba il fuoco agli dèi',
+              'L\'orgoglio che convive con il sentirsi schiacciati'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa distingue la nazione romantica dal popolo illuminista?',
+     opzioni:['Non nasce da un patto ma da lingua, storia e costumi comuni',
+              'Non si sceglie: ci si trova a farne parte dalla nascita',
+              'Ha un\'anima collettiva che precede le scelte dei singoli',
+              'Si fonda su ciò che unisce di fatto, non su ciò che si decide'], giusta:0},
+
+    {tipo:'scelta', testo:'Come concepiscono la natura i romantici?',
+     opzioni:['Come un tutto vivente e animato, non come una macchina',
+              'Come un organismo in cui le parti valgono per il tutto',
+              'Come una forza spirituale retta da opposizioni interne',
+              'Come una realtà che ha in sé dei fini e non solo cause'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: desiderare ciò che non si può avere è una condanna? Una parola.'}
   ]
 }
 ];
