@@ -1401,6 +1401,55 @@ const BANCA = [
               'A sostituire le immagini distrutte dai protestanti'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: la censura protegge o impoverisce una società? Una parola.'}
+  ]},
+{
+  titolo: 'Storia moderna · 3 — Economia, guerre e il declino spagnolo',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: avere molto oro rende ricco un paese? Una parola.'},
+
+    {tipo:'scelta', testo:'Che cosa provoca la rivoluzione dei prezzi del Cinquecento?',
+     opzioni:['L\'argento americano che svaluta la moneta europea',
+              'Le carestie che fanno mancare i prodotti agricoli',
+              'Le guerre continue che distruggono i raccolti',
+              'La crescita della popolazione in tutta l\'Europa'], giusta:0},
+
+    {tipo:'scelta', testo:'Chi ci rimette con l\'aumento dei prezzi?',
+     opzioni:['Salariati e signori che vivono di rendite fisse',
+              'I mercanti che comprano e rivendono le merci',
+              'I contadini che vendono i propri prodotti',
+              'Gli imprenditori che investono nelle manifatture'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa distingue l\'economia inglese e olandese da quella spagnola?',
+     opzioni:['Reinvestono i guadagni invece di spenderli in lusso',
+              'Dispongono di miniere d\'argento più produttive',
+              'Non devono sostenere il costo di guerre continue',
+              'Hanno colonie più estese nel continente americano'], giusta:0},
+
+    {tipo:'scelta', testo:'Come nascono le Province Unite?',
+     opzioni:['Le province protestanti del Nord si staccano dalla Spagna',
+              'Guglielmo d\'Orange conquista militarmente le Fiandre',
+              'La Spagna cede il territorio dopo la pace di Westfalia',
+              'Le province si uniscono contro la minaccia francese'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché il 1588 segna una svolta per la Spagna?',
+     opzioni:['L\'Invincibile Armata è perduta e l\'Inghilterra si afferma',
+              'La bancarotta costringe Filippo II a sospendere i pagamenti',
+              'I Paesi Bassi del Nord proclamano la loro indipendenza',
+              'La flotta ottomana torna a minacciare il Mediterraneo'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa accade nella notte di San Bartolomeo?',
+     opzioni:['I cattolici massacrano gli ugonotti riuniti a Parigi',
+              'Enrico di Guisa fa uccidere gli ugonotti a Wassy',
+              'Enrico di Borbone abiura per poter salire al trono',
+              'Enrico III viene ucciso da un monaco fanatico'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa concede l\'Editto di Nantes agli ugonotti?',
+     opzioni:['Libertà di culto, pari diritti e piazzeforti sicure',
+              'Il diritto di eleggere i propri rappresentanti locali',
+              'La restituzione dei beni confiscati durante le guerre',
+              'L\'accesso a tutte le cariche pubbliche del regno'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: la tolleranza si concede per convinzione o per stanchezza? Una parola.'}
   ]
 }
 ];
