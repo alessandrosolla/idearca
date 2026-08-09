@@ -2283,6 +2283,55 @@ const BANCA = [
               'L\'aristocrazia terriera si arricchisce a spese del popolo'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: immaginare una società perfetta serve a qualcosa? Una parola.'}
+  ]},
+{
+  titolo: 'Filosofia moderna · 5 — Telesio, Bruno, Campanella',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: la natura è una macchina o un essere vivo? Una parola.'},
+
+    {tipo:'scelta', testo:'Che cosa distingue la filosofia della natura dalla magia?',
+     opzioni:['Non pretende di forzare i segreti naturali con i riti',
+              'Non ammette che la natura sia animata da forze vitali',
+              'Studia la natura con l\'osservazione e con l\'esperienza',
+              'Rinuncia a ogni pretesa di dominare le forze naturali'], giusta:0},
+
+    {tipo:'scelta', testo:'Quali sono i tre princìpi della natura secondo Telesio?',
+     opzioni:['Il caldo, il freddo e la materia su cui essi agiscono',
+              'Il fuoco, la terra e l\'anima che li tiene insieme',
+              'Il Sole, la Terra e il movimento che li congiunge',
+              'La forma, la materia e il moto che le unisce'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è il bene supremo nella morale di Telesio?',
+     opzioni:['Conservare il proprio spirito vitale, come ogni essere',
+              'Provare piacere ed evitare per quanto possibile il dolore',
+              'Tenere le passioni entro la misura che la virtù impone',
+              'Vivere secondo la natura, cioè secondo la ragione'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa significa in Bruno «mens insita omnibus»?',
+     opzioni:['Dio è l\'anima presente dentro a tutte le cose del mondo',
+              'Dio resta al di sopra del cosmo e non si può conoscere',
+              'Dio si manifesta nelle forme che plasmano la materia',
+              'Dio coincide senza residui con la natura nel suo insieme'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa rappresenta il mito di Atteone per Bruno?',
+     opzioni:['L\'anima che, cercando la natura, diventa natura essa stessa',
+              'Il filosofo punito da chi difende le credenze tradizionali',
+              'Il desiderio infinito che consuma chi cerca l\'assoluto',
+              'La ragione che si perde quando pretende di vedere Dio'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è la «conoscenza innata» in Campanella?',
+     opzioni:['Il sapere originario che l\'anima ha di se stessa',
+              'L\'insieme delle verità che Dio ha posto in ogni mente',
+              'La sensibilità di cui è dotato ogni ente della natura',
+              'La religione naturale presente in tutti gli uomini'], giusta:0},
+
+    {tipo:'scelta', testo:'Quali sono le tre primalità dell\'essere per Campanella?',
+     opzioni:['Potenza, sapienza e amore, illimitate soltanto in Dio',
+              'Necessità, fato e armonia con cui Dio governa il mondo',
+              'Potenza, sapienza e amore, cui si oppone il non essere',
+              'Impotenza, insipienza e odio, propri delle cose finite'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: la scienza nasce contro la magia o da essa? Una parola.'}
   ]
 }
 ];
