@@ -1646,6 +1646,104 @@ const BANCA = [
               'Vi si affrontano due schieramenti in ogni continente'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: il progresso di pochi vale il sacrificio di molti? Una parola.'}
+  ]},
+{
+  titolo: 'Storia moderna · 8 — La civiltà dei Lumi',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: pensare con la propria testa costa fatica? Una parola.'},
+
+    {tipo:'scelta', testo:'Che cosa mette al centro l\'Illuminismo?',
+     opzioni:['La ragione come unico criterio per giudicare tutto',
+              'La scienza sperimentale come sola forma di sapere',
+              'La libertà individuale contro il potere dello Stato',
+              'La tolleranza fra le diverse confessioni religiose'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa rende rivoluzionaria l\'Enciclopedia?',
+     opzioni:['Dà pari dignità al sapere dotto e a quello manuale',
+              'Raccoglie per la prima volta tutte le scienze note',
+              'Viene scritta in francese e non più in lingua latina',
+              'È stampata a basso prezzo e la comprano in molti'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è la garanzia contro l\'assolutismo, secondo Montesquieu?',
+     opzioni:['Tenere separati legislativo, esecutivo e giudiziario',
+              'Affidare al popolo la scelta di chi deve governare',
+              'Sottoporre il sovrano alle leggi che egli stesso emana',
+              'Adattare le leggi al clima e ai costumi di ogni paese'], giusta:0},
+
+    {tipo:'scelta', testo:'A chi appartiene la sovranità secondo Rousseau?',
+     opzioni:['Al popolo, che la esprime nella volontà generale',
+              'Al sovrano, che la riceve col patto degli uomini',
+              'Alla legge, superiore a governanti e governati',
+              'Alla maggioranza dei cittadini che sanno leggere'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è la «minorità» di cui parla Kant?',
+     opzioni:['La pigrizia di lasciare che altri pensino per noi',
+              'L\'ignoranza in cui la Chiesa tiene i suoi fedeli',
+              'La condizione dei sudditi privi di diritti politici',
+              'L\'età in cui non si può ancora usare la ragione'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa esprime il motto «tutto per il popolo, niente con il popolo»?',
+     opzioni:['I sovrani riformano ma non cedono nulla del potere',
+              'I filosofi guidano i re senza mai governare loro stessi',
+              'Il popolo riceve benefici che non ha mai richiesto',
+              'Le riforme servono più alle casse dello Stato che ai sudditi'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché Beccaria giudica inutile la tortura?',
+     opzioni:['Chi è torturato confessa qualunque cosa gli si chieda',
+              'Non è proporzionata alla gravità del reato commesso',
+              'Non riesce a dissuadere nessuno dal commettere reati',
+              'Colpisce spesso persone che risulteranno innocenti'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: si possono fare riforme dall\'alto senza il popolo? Una parola.'}
+  ]},
+{
+  titolo: 'Storia moderna · 9 — La prima rivoluzione industriale',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: una macchina che sostituisce l\'uomo è un bene? Una parola.'},
+
+    {tipo:'scelta', testo:'Perché la rivoluzione industriale comincia in Gran Bretagna?',
+     opzioni:['Solo lì si trovano insieme carbone, colonie e Parlamento',
+              'Solo lì gli inventori ricevevano premi dallo Stato',
+              'Solo lì la popolazione era cresciuta tanto rapidamente',
+              'Solo lì i contadini avevano lasciato le campagne'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa afferma Adam Smith con la «mano invisibile»?',
+     opzioni:['Gli interessi individuali producono il bene di tutti',
+              'Lo Stato deve guidare con discrezione l\'economia',
+              'La ricchezza nasce dal lavoro e non dal commercio',
+              'La divisione del lavoro moltiplica ciò che si produce'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché le invenzioni tessili si susseguono «a botta e risposta»?',
+     opzioni:['Ogni miglioramento crea una strozzatura nella fase seguente',
+              'Ogni inventore cercava di superare i propri concorrenti',
+              'Ogni brevetto scadeva dopo pochi anni dalla concessione',
+              'Ogni macchina nuova richiedeva operai più specializzati'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa cambia la macchina a vapore rispetto all\'energia idraulica?',
+     opzioni:['Le fabbriche non devono più sorgere lungo i fiumi',
+              'Il moto del pistone diventa finalmente rotatorio',
+              'Il consumo di carbone si riduce in modo notevole',
+              'La forza prodotta può muovere macchine più grandi'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché il coke di Darby è così importante?',
+     opzioni:['Sostituisce il carbone di legna, che stava finendo',
+              'Permette di scaldare i forni a temperature più alte',
+              'Rende la ghisa più resistente e più malleabile',
+              'Costa meno del ferro importato dalla Scandinavia'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa distingue l\'operaio di fabbrica dal lavoratore a domicilio?',
+     opzioni:['Il ritmo del suo lavoro glielo impone la macchina',
+              'Non possiede gli strumenti con cui lavora ogni giorno',
+              'Riceve un salario invece di essere pagato a cottimo',
+              'Svolge una sola mansione anziché l\'intero ciclo'], giusta:0},
+
+    {tipo:'scelta', testo:'Contro che cosa si rivolgono i luddisti?',
+     opzioni:['Contro le macchine, accusate di togliere il lavoro',
+              'Contro i padroni che pagavano salari troppo bassi',
+              'Contro il governo che vietava i primi sindacati',
+              'Contro l\'impiego dei bambini dentro le fabbriche'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: chi paga il prezzo del progresso tecnico? Una parola.'}
   ]
 }
 ];
