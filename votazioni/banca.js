@@ -2822,6 +2822,104 @@ const BANCA = [
               'La ragione mostra quando un desiderio è irragionevole'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: la morale nasce dalla ragione o dal sentire? Una parola.'}
+  ]},
+{
+  titolo: 'Filosofia moderna · 16 — Vico',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: si conosce meglio ciò che si è fatto o ciò che si osserva? Una parola.'},
+
+    {tipo:'scelta', testo:'Che cosa afferma il principio «verum ipsum factum»?',
+     opzioni:['Si conosce davvero soltanto ciò che si è capaci di fare',
+              'Chi produce una cosa ne conosce gli elementi costitutivi',
+              'Il vero e il fatto sono per gli antichi la stessa parola',
+              'La conoscenza piena appartiene a chi è causa di qualcosa'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa può conoscere pienamente l\'uomo, per Vico?',
+     opzioni:['La matematica e la storia, che sono sue creazioni',
+              'La natura, che Dio ha creato e l\'uomo può indagare',
+              'La propria essenza, di cui ha coscienza immediata',
+              'Le leggi che regolano il mondo delle nazioni civili'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa rimprovera Vico a Cartesio?',
+     opzioni:['Il cogito dà coscienza di esistere, non scienza dell\'essere',
+              'Avere creduto che l\'uomo possa conoscere la propria essenza',
+              'Avere confuso la coscienza, che hanno tutti, con la scienza',
+              'Avere fondato tutto il sapere su un\'evidenza soggettiva'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è la «boria dei dotti»?',
+     opzioni:['Misurare il passato con le categorie mentali del presente',
+              'La presunzione dei filosofi di spiegare ogni cosa',
+              'Il disprezzo dei razionalisti verso il senso comune',
+              'Proiettare le proprie astrazioni sui popoli primitivi'], giusta:0},
+
+    {tipo:'scelta', testo:'Come collaborano filologia e filosofia nella Scienza nuova?',
+     opzioni:['La prima accerta i fatti, la seconda ne trova le leggi',
+              'La prima dà la coscienza del certo, la seconda la scienza del vero',
+              'Insieme «inverano il certo» e «accertano il vero»',
+              'Senza la seconda i fatti restano dettagli senza ordine'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa distingue Vico dai giusnaturalisti?',
+     opzioni:['Per lui il diritto naturale cambia con le età della storia',
+              'Per lui il diritto non si fonda sulla ragione ma sulla forza',
+              'Per lui ogni epoca possiede il proprio diritto naturale',
+              'Per lui il diritto è una conquista e non un dato eterno'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa afferma l\'eterogenesi dei fini?',
+     opzioni:['I fini che gli uomini cercano servono a fini più alti',
+              'Dagli impulsi individuali nascono le istituzioni civili',
+              'La storia usa i propositi dei singoli per i propri scopi',
+              'Nessuno ottiene esattamente ciò che si era proposto'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: la storia si ripete o non torna mai indietro? Una parola.'}
+  ]},
+{
+  titolo: 'Filosofia moderna · 17 — I caratteri dell\'Illuminismo',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: perché è più comodo farsi dire cosa pensare? Una parola.'},
+
+    {tipo:'scelta', testo:'Che cos\'è anzitutto l\'Illuminismo?',
+     opzioni:['Un modo di usare la ragione, non un insieme di teorie',
+              'L\'impegno a servirsi del proprio intelletto in pubblico',
+              'Un movimento che vuole riformare il modo di vivere',
+              'La fiducia che la ragione possa migliorare la società'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa distingue il «filosofo» illuminista dal sapiente di prima?',
+     opzioni:['Vive fra gli uomini e vuole riformare la realtà, non contemplarla',
+              'Porta davanti alla ragione politica, religione e costumi',
+              'Unisce la riflessione all\'attività pratica ed economica',
+              'Non si occupa più delle questioni ultime della metafisica'], giusta:0},
+
+    {tipo:'scelta', testo:'In che senso l\'Illuminismo va oltre il Rinascimento?',
+     opzioni:['Toglie all\'umanesimo ogni residuo di carattere religioso',
+              'Rende l\'uomo l\'unico artefice del proprio destino',
+              'Colloca Dio in una sfera lontana dalle vicende del mondo',
+              'Accelera in modo decisivo la laicizzazione della cultura'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa oppongono gli illuministi allo «spirito di sistema»?',
+     opzioni:['L\'esigenza di connettere i saperi senza chiuderli in un sistema',
+              'Il metodo analitico di Newton, che parte dai casi particolari',
+              'Il rifiuto dei problemi che la ragione non può risolvere',
+              'La convinzione che le questioni ultime siano irrilevanti'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa afferma il deismo?',
+     opzioni:['Dio ordina il mondo ma resta estraneo alle vicende umane',
+              'Dio si conosce con la sola ragione, senza rivelazione',
+              'Dio è l\'orologiaio che ha dato al mondo le sue leggi',
+              'Dio esiste, ma non è quello delle religioni storiche'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è il «bifrontismo» storico dell\'Illuminismo?',
+     opzioni:['Guarda al passato con pessimismo e al futuro con fiducia',
+              'Distrugge le vecchie credenze e insieme costruisce il nuovo',
+              'Vede nella storia sia superstizione sia cammino di civiltà',
+              'Condanna la tradizione ma crede nel progresso della ragione'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa caratterizza lo Stato di diritto?',
+     opzioni:['Governano le leggi impersonali e non la volontà degli uomini',
+              'Nessuna religione riceve un trattamento privilegiato',
+              'I diritti dei cittadini sono garantiti contro ogni tirannia',
+              'Il potere è limitato da norme che valgono per tutti'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: la ragione basta a rendere migliori gli uomini? Una parola.'}
   ]
 }
 ];
