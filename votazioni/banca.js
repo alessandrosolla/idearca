@@ -1940,6 +1940,104 @@ const BANCA = [
               'L\'Europa romantica sostiene la causa della Grecia classica'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: che cosa tiene insieme un popolo? Una parola.'}
+  ]},
+{
+  titolo: 'Storia moderna · 14 — L\'età dei popoli e delle nazioni',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: l\'indipendenza basta a rendere liberi? Una parola.'},
+
+    {tipo:'scelta', testo:'Perché i creoli sono scontenti nelle colonie spagnole?',
+     opzioni:['Sono ricchi ma esclusi dalle cariche di governo',
+              'Sono costretti a pagare imposte più alte degli altri',
+              'Non possono possedere terra nelle colonie americane',
+              'Sono discriminati perché nati da unioni miste'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa innesca l\'indipendenza latinoamericana?',
+     opzioni:['Napoleone depone il re di Spagna e crea un vuoto di potere',
+              'La Gran Bretagna arma i ribelli per aprirsi i mercati',
+              'Le rivoluzioni americana e francese ispirano le colonie',
+              'La rivolta di Riego indebolisce la corona spagnola'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché fallisce il progetto panamericano di Bolívar?',
+     opzioni:['Le élite locali si dividono per rivalità fra loro',
+              'La Spagna riconquista buona parte del continente',
+              'I caudillos prendono il potere con colpi di Stato',
+              'Gli Stati Uniti si oppongono a una grande federazione'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa afferma la dottrina Monroe?',
+     opzioni:['L\'Europa non colonizzi né intervenga nelle Americhe',
+              'Gli Stati Uniti guidino tutti i popoli del continente',
+              'Ogni Stato americano è libero di darsi le proprie leggi',
+              'Gli Stati Uniti non entreranno in nessuna guerra europea'], giusta:0},
+
+    {tipo:'scelta', testo:'Quale contraddizione segna la democrazia jacksoniana?',
+     opzioni:['Allarga il voto ai bianchi e deporta i nativi a ovest',
+              'Riconosce i sindacati ma vieta di scioperare',
+              'Proclama l\'uguaglianza ma il voto resta censitario',
+              'Organizza i partiti ma esclude le donne dalla politica'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché la ferrovia crea un circolo economico virtuoso?',
+     opzioni:['Fa crescere la domanda di ferro, carbone e macchine',
+              'Riduce moltissimo il costo del trasporto delle merci',
+              'Attira capitali stranieri verso i paesi che la costruiscono',
+              'Permette di raggiungere in poche ore città lontane'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa ottiene il Reform Act del 1832?',
+     opzioni:['Abolisce i borghi marci e dà deputati alle città industriali',
+              'Introduce il suffragio universale per tutti i maschi adulti',
+              'Concede il voto segreto e le elezioni annuali richieste',
+              'Riconosce agli operai il diritto di eleggere i deputati'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: perché in Inghilterra si riforma e altrove si fa la rivoluzione? Una parola.'}
+  ]},
+{
+  titolo: 'Storia moderna · 15 — Società industriale e socialismo',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: la ricchezza di alcuni nasce dal lavoro di altri? Una parola.'},
+
+    {tipo:'scelta', testo:'Che cosa crea la Rivoluzione industriale sul piano sociale?',
+     opzioni:['Due classi nuove: chi possiede le macchine e chi vi lavora',
+              'Una borghesia di mercanti, banchieri e professionisti',
+              'Una massa di contadini costretti a lasciare le campagne',
+              'Un ceto medio che investe i risparmi nelle imprese'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché nelle fabbriche si impiegano tanti bambini?',
+     opzioni:['Costano poco, entrano ovunque e non si ribellano',
+              'Le famiglie non riescono a vivere con un solo salario',
+              'Le macchine richiedono mani piccole e movimenti rapidi',
+              'Nessuna legge lo vietava prima della metà del secolo'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa cambia nella città industriale rispetto a quella di prima?',
+     opzioni:['Ricchi e poveri non abitano più negli stessi quartieri',
+              'La popolazione cresce senza alcun piano urbanistico',
+              'Le case vengono costruite in fretta e senza fognature',
+              'I centri storici si svuotano a favore delle periferie'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa aggrava la carestia irlandese del 1845?',
+     opzioni:['Londra continua a esportare il grano prodotto nell\'isola',
+              'La peronospora distrugge il raccolto per quattro anni',
+              'Un milione di irlandesi emigra lasciando i campi incolti',
+              'I dazi sui cereali tengono alto il prezzo del pane'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa dimostra Robert Owen a New Lanark?',
+     opzioni:['Trattare bene gli operai fa crescere anche i profitti',
+              'Una fabbrica può funzionare senza padrone alcuno',
+              'Ridurre l\'orario non danneggia affatto la produzione',
+              'L\'istruzione degli operai migliora la loro condizione'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa intende Proudhon con «la proprietà è un furto»?',
+     opzioni:['Il capitalista si appropria della ricchezza prodotta dagli operai',
+              'La proprietà privata va abolita e resa collettiva a tutti',
+              'Ogni possesso nasce da una violenza commessa nel passato',
+              'Chi non lavora la terra non ha diritto di possederla'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa afferma il materialismo storico di Marx?',
+     opzioni:['I rapporti economici, non le idee, muovono la storia',
+              'La storia procede per fasi che si succedono sempre uguali',
+              'Ogni epoca è segnata dal conflitto fra due classi opposte',
+              'La religione e la legge servono a chi detiene il potere'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: si cambia il mondo con l\'esempio o con il conflitto? Una parola.'}
   ]
 }
 ];
