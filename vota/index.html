@@ -156,11 +156,21 @@ async function codiceEsiste(){
   }catch(_){ return 'sconosciuto'; }
 }
 
+/* Due porte d'ingresso: il modulo, e il codice gia' scritto
+   nell'indirizzo quando si arriva dal QR. Prima erano la stessa
+   funzione, che cercava subito il campo del modulo: arrivando dal
+   QR quel campo non esiste ancora, la funzione usciva e la pagina
+   restava bianca. */
 async function entra(){
   const campo = document.getElementById('c');
-  if(!campo){ return; }
+  if(!campo){ return entraCon(codice); }
   const v = campo.value.trim();
   if(!v){ schermataCodice('Scrivi il codice.'); return; }
+  return entraCon(v);
+}
+
+async function entraCon(v){
+  if(!v){ schermataCodice(); return; }
   codice = v;
   const esiste = await codiceEsiste();
   if(esiste === false){
@@ -241,8 +251,18 @@ async function invia(valore){
   }
 }
 
-/* ---------- avvio ---------- */
-if(codice){ entra(); } else { schermataCodice(); }
+/* ---------- avvio ----------
+   Qualunque cosa vada storta, si mostra il modulo del codice: una
+   pagina bianca non lascia allo studente nemmeno un appiglio. */
+(async function(){
+  try{
+    if(codice) await entraCon(codice);
+    else schermataCodice();
+  }catch(e){
+    schermataCodice('Qualcosa non ha funzionato. Prova a digitare il codice.');
+  }
+  if(!document.getElementById('foglio').innerHTML.trim()) schermataCodice();
+})();
 </script>
 </body>
 </html>
