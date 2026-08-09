@@ -1009,6 +1009,55 @@ const BANCA = [
               'Costringe gli Inglesi a lasciare Calais'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: le guerre distruggono le nazioni o le creano? Una parola.'}
+  ]},
+{
+  titolo: 'Storia medievale · 9 — L\'Italia degli Stati regionali',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: perché una città rinuncia a governarsi da sé? Una parola.'},
+
+    {tipo:'scelta', testo:'Come nasce di solito la Signoria?',
+     opzioni:['I cittadini stessi prolungano la carica di un uomo',
+              'Un esercito straniero occupa la città',
+              'L\'imperatore la impone dall\'alto per decreto',
+              'Il vescovo cede il potere al signore locale'], giusta:0},
+
+    {tipo:'scelta', testo:'Quando la Signoria diventa Principato?',
+     opzioni:['Quando il titolo è ereditario e riconosciuto',
+              'Quando il signore conquista una seconda città',
+              'Quando il Comune viene abolito per legge',
+              'Quando il signore assume il titolo di re'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa stabilisce la Serrata veneziana del 1297?',
+     opzioni:['Solo le famiglie del Libro d\'Oro governano',
+              'Il doge resta in carica soltanto un anno',
+              'I mercanti stranieri non entrano in laguna',
+              'Il Consiglio dei Dieci elegge il doge'], giusta:0},
+
+    {tipo:'scelta', testo:'Come governa Cosimo de\' Medici a Firenze?',
+     opzioni:['Tiene le istituzioni e mette i suoi negli uffici',
+              'Abolisce il Comune e si proclama duca',
+              'Si fa nominare podestà a vita dall\'arengo',
+              'Governa tramite un consiglio di banchieri'], giusta:0},
+
+    {tipo:'scelta', testo:'Come finisce la congiura dei Pazzi del 1478?',
+     opzioni:['Giuliano ucciso, Lorenzo salvo e più forte',
+              'Entrambi i fratelli Medici vengono uccisi',
+              'I Medici sono cacciati da Firenze',
+              'Il papa scomunica l\'intera città'], giusta:0},
+
+    {tipo:'scelta', testo:'Su quale principio si regge la Pace di Lodi?',
+     opzioni:['Se uno cresce troppo, gli altri si coalizzano',
+              'Ogni Stato rinuncia a mantenere un esercito',
+              'Il papa arbitra ogni controversia fra Stati',
+              'I confini vengono ridisegnati ogni dieci anni'], giusta:0},
+
+    {tipo:'scelta', testo:'Chi invita Carlo VIII a scendere in Italia nel 1494?',
+     opzioni:['Ludovico il Moro, per usarlo contro i rivali',
+              'Il papa Alessandro VI, per punire Napoli',
+              'La Repubblica di Venezia, per fermare Milano',
+              'Piero de\' Medici, per riprendere Firenze'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: l\'equilibrio fra Stati è forza o fragilità? Una parola.'}
   ]
 }
 ];
