@@ -64,7 +64,7 @@ materiale che gli studenti hanno davvero studiato.
 
 ## A che punto siamo
 
-Fatti **42 capitoli su 120**.
+Fatti **71 capitoli su 120**.
 
 ### Filosofia antica — 12 capitoli · completata
 - [x] Dagli Ionici agli atomisti · `1c7OT1XyooG6hVjQKbwMQHiuLMgIFz3V_`
@@ -116,36 +116,36 @@ Fatti **42 capitoli su 120**.
 - [x] Economia del "Ottocento · `181oOnweq09e2PVozpXOkVvl2KCKM5T-e`
 - [x] Il 1848 · `1EhPgItLGgqYBKe9v-L98XiVLSvjZz1rQ`
 
-### Filosofia moderna — 29 capitoli · da fare
-- [ ] Cultura Umanistico-Rinascimentale · `1aQFcTgS-w0Hxj-dD999CMhlNjmfZKQRQ`
-- [ ] Ritorno a Platone e Aristotele · `11Z4tPlTJsQ-S4Rn-kYxEkRLJnUjqd7na`
-- [ ] Rinascimento e religione · `15PtTiBGDrYerjoYektE3F2ltzfb-0RLR`
-- [ ] Rinascimento e politica · `1D6PnTSW4RVr7Ms2oCczdO5wCV4Ej18DI`
-- [ ] Telesio, Campanella, Bruno · `1clCG0HpoyJAPW0Tlcare7I5tLXNWKmrR`
-- [ ] Rivoluzione scientifica · `1bJLZXEfG02Ue6lJNm6mfz62DTSN2DYwS`
-- [ ] Bacone · `10SioTsEVo32XOg6CUd_OOQPCAX5G8ctn`
-- [ ] Galileo · `1bXr2Jm5rpLxGI9R7w5Ldf4DhXDAnkAWh`
-- [ ] Cartesio · `1GwdAzclOxs44oICkBk6zgsC7S1RUBswb`
-- [ ] Spinoza · `1x16XsXGU815axGZva4Q7vJX1N39cSU_s`
-- [ ] Leibniz · `1E3mdyk0NSgZDGR50E_6Z84Xa7QY2RKjP`
-- [ ] Hobbes · `1cgupegfu0tt8x-9PTlRZ1LqeG6rHUHTD`
-- [ ] Locke · `1reygC5QRABIfXSGUda0JTEgJx7h47tOQ`
-- [ ] Berkeley · `18U_1S0__Ne9xH2TA2erZB0DkRghjX1Nb`
-- [ ] Hume · `1y-zrJOm7F2eIpf6HefSPVuNE1ebWQ70e`
-- [ ] Vico · `1IFiorViSYMZMUXLiiMbqCKDWL8ETMB9n`
-- [ ] Illuminismo · `1TNk_DhpW7ZzHLWEjApqPyTYvNz9M55Pw`
-- [ ] Rosseau · `1lN9BqI-qVc4N86XSXCV6yc7roLm7DAhQ`
-- [ ] Kant. Vita e progetto generale · `1tMTINSm0bRjvBIIHxc16FIHGAs6jw3Pg`
-- [ ] Kant. Critica della ragion pura · `1Id9rk1F_XkZgqbznRW4842OCX_rrcSQ-`
-- [ ] Kant. Critica della ragion pratica · `1J_4_wRhq9ax22DU4pY6ePFTR6I5f2ZXo`
-- [ ] Kant. Critica del giudizio · `14g6rKfE9PmM7nTjHbJyTBmZFbIdb7zn_`
-- [ ] Kant. Politica e religione · `1C1FSNgPi9nemDN-eHapdgkXB0iPXnhRn`
-- [ ] Romanticismo · `1-v1DPkXtPomXARH7TxsKTnWMa6aKhdE0`
-- [ ] Fichte · `1WQigdM_vqYwq2fIkV__fJKFm-hMnZhIc`
-- [ ] Schelling · `1GWYjkd71ZJDiMb1cSUSBJC5MvzsgRlhC`
-- [ ] Hegel. Fondamenta del pensiero · `1A7URiSg5H4X6A2PsNFeDN3nKkMrlJDKL`
-- [ ] Hegel. Fenomenologia · `19bMT2rT3l2Mj7MBEKVnmW0RnnlcQwfXa`
-- [ ] Enciclopedia delle scienze in compendio · `1X_RN7vPqlcG_Kijpn0M_2Hh-_eEYZCJy`
+### Filosofia moderna — 29 capitoli · completata
+- [x] Cultura Umanistico-Rinascimentale · `1aQFcTgS-w0Hxj-dD999CMhlNjmfZKQRQ`
+- [x] Ritorno a Platone e Aristotele · `11Z4tPlTJsQ-S4Rn-kYxEkRLJnUjqd7na`
+- [x] Rinascimento e religione · `15PtTiBGDrYerjoYektE3F2ltzfb-0RLR`
+- [x] Rinascimento e politica · `1D6PnTSW4RVr7Ms2oCczdO5wCV4Ej18DI`
+- [x] Telesio, Campanella, Bruno · `1clCG0HpoyJAPW0Tlcare7I5tLXNWKmrR`
+- [x] Rivoluzione scientifica · `1bJLZXEfG02Ue6lJNm6mfz62DTSN2DYwS`
+- [x] Bacone · `10SioTsEVo32XOg6CUd_OOQPCAX5G8ctn`
+- [x] Galileo · `1bXr2Jm5rpLxGI9R7w5Ldf4DhXDAnkAWh`
+- [x] Cartesio · `1GwdAzclOxs44oICkBk6zgsC7S1RUBswb`
+- [x] Spinoza · `1x16XsXGU815axGZva4Q7vJX1N39cSU_s`
+- [x] Leibniz · `1E3mdyk0NSgZDGR50E_6Z84Xa7QY2RKjP`
+- [x] Hobbes · `1cgupegfu0tt8x-9PTlRZ1LqeG6rHUHTD`
+- [x] Locke · `1reygC5QRABIfXSGUda0JTEgJx7h47tOQ`
+- [x] Berkeley · `18U_1S0__Ne9xH2TA2erZB0DkRghjX1Nb`
+- [x] Hume · `1y-zrJOm7F2eIpf6HefSPVuNE1ebWQ70e`
+- [x] Vico · `1IFiorViSYMZMUXLiiMbqCKDWL8ETMB9n`
+- [x] Illuminismo · `1TNk_DhpW7ZzHLWEjApqPyTYvNz9M55Pw`
+- [x] Rosseau · `1lN9BqI-qVc4N86XSXCV6yc7roLm7DAhQ`
+- [x] Kant. Vita e progetto generale · `1tMTINSm0bRjvBIIHxc16FIHGAs6jw3Pg`
+- [x] Kant. Critica della ragion pura · `1Id9rk1F_XkZgqbznRW4842OCX_rrcSQ-`
+- [x] Kant. Critica della ragion pratica · `1J_4_wRhq9ax22DU4pY6ePFTR6I5f2ZXo`
+- [x] Kant. Critica del giudizio · `14g6rKfE9PmM7nTjHbJyTBmZFbIdb7zn_`
+- [x] Kant. Politica e religione · `1C1FSNgPi9nemDN-eHapdgkXB0iPXnhRn`
+- [x] Romanticismo · `1-v1DPkXtPomXARH7TxsKTnWMa6aKhdE0`
+- [x] Fichte · `1WQigdM_vqYwq2fIkV__fJKFm-hMnZhIc`
+- [x] Schelling · `1GWYjkd71ZJDiMb1cSUSBJC5MvzsgRlhC`
+- [x] Hegel. Fondamenta del pensiero · `1A7URiSg5H4X6A2PsNFeDN3nKkMrlJDKL`
+- [x] Hegel. Fenomenologia · `19bMT2rT3l2Mj7MBEKVnmW0RnnlcQwfXa`
+- [x] Enciclopedia delle scienze in compendio · `1X_RN7vPqlcG_Kijpn0M_2Hh-_eEYZCJy`
 
 ### Storia contemporanea — 28 capitoli · da fare
 - [ ] Italia risorgimentale e I guerra di indipendenza · `1HN5hMHhnC6MMxT6HEvNDsIsadE4x6fM0`

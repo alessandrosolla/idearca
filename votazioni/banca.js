@@ -3459,6 +3459,55 @@ const BANCA = [
               'Ciò che chiama dovere è quasi sempre il proprio interesse'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: chi lavora è più libero o meno libero di chi comanda? Una parola.'}
+  ]},
+{
+  titolo: 'Filosofia moderna · 29 — Hegel: l\'Enciclopedia',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: lo Stato serve i cittadini o li precede? Una parola.'},
+
+    {tipo:'scelta', testo:'Perché per Hegel logica e metafisica coincidono?',
+     opzioni:['Le categorie non sono pensieri nostri ma strutture del reale',
+              'La logica studia l\'ossatura razionale del mondo stesso',
+              'I concetti puri sono insieme determinazioni dell\'essere',
+              'Studiare il pensiero significa studiare ciò che esiste'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché il pensiero comincia dal divenire?',
+     opzioni:['Essere e nulla si dileguano subito l\'uno nell\'altro',
+              'Un essere senza determinazioni coincide con il nulla',
+              'Il divenire è l\'unità dialettica di essere e nulla',
+              'Solo il movimento mette in relazione i due concetti'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché la natura è il momento «negativo» del sistema?',
+     opzioni:['È l\'Idea che esiste fuori di sé e non corrisponde al proprio concetto',
+              'Raccoglie tutto ciò che è contingente e accidentale',
+              'Nel suo modo di esistere resta una contraddizione irrisolta',
+              'È l\'Idea decaduta dalla propria forma originaria'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa distingue l\'eticità dalla moralità?',
+     opzioni:['Il bene non resta interiore ma si realizza nelle istituzioni',
+              'La moralità è volere privato, l\'eticità è costume condiviso',
+              'L\'eticità supera il dover essere astratto della coscienza',
+              'Nell\'eticità il bene è concreto e non più solo voluto'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché Hegel chiama la società civile un «campo di battaglia»?',
+     opzioni:['Vi si scontrano gli interessi particolari di tutti contro tutti',
+              'È il momento in cui l\'unità familiare si disperde',
+              'Ciascuno vi persegue il proprio bisogno senza guardare gli altri',
+              'Vi domina il particolare, che solo lo Stato saprà orientare'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è l\'«astuzia della ragione»?',
+     opzioni:['La storia usa le passioni dei singoli per fini che li superano',
+              'Gli eroi credono di seguire se stessi e servono il tutto',
+              'Chi ha compiuto il suo compito storico viene poi scartato',
+              'I fini universali si realizzano attraverso interessi privati'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa distingue arte, religione e filosofia?',
+     opzioni:['Hanno lo stesso contenuto ma forme diverse di coglierlo',
+              'La prima intuisce, la seconda rappresenta, la terza concepisce',
+              'Solo la filosofia raggiunge l\'Assoluto nel puro concetto',
+              'Le prime due restano legate al sensibile, la terza no'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: può esistere un sistema che spiega tutto? Una parola.'}
   ]
 }
 ];
