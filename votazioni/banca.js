@@ -2920,6 +2920,55 @@ const BANCA = [
               'Il potere è limitato da norme che valgono per tutti'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: la ragione basta a rendere migliori gli uomini? Una parola.'}
+  ]},
+{
+  titolo: 'Filosofia moderna · 18 — Rousseau',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: il progresso ci ha resi migliori? Una parola.'},
+
+    {tipo:'scelta', testo:'Che cosa sostiene Rousseau nel primo Discorso?',
+     opzioni:['Le arti e le scienze hanno corrotto i costumi degli uomini',
+              'La causa vera della corruzione è la disuguaglianza fra gli uomini',
+              'Le scienze nascono dai vizi e non certo dalle virtù umane',
+              'Le buone maniere insegnano ad apparire invece che a essere'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è lo stato di natura per Rousseau?',
+     opzioni:['Un\'ipotesi razionale che serve a giudicare il presente',
+              'Una condizione che forse non è mai esistita davvero',
+              'Il momento in cui i bisogni erano pari alle risorse',
+              'Uno stato di innocenza, né buono né cattivo in sé'], giusta:0},
+
+    {tipo:'scelta', testo:'Che differenza c\'è fra amore di sé e amor proprio?',
+     opzioni:['Il primo è naturale conservazione, il secondo culto della propria immagine',
+              'Il primo appartiene all\'uomo naturale, il secondo a quello sociale',
+              'Il primo non fa male a nessuno, il secondo genera conflitti',
+              'Il primo è istinto, il secondo è un prodotto della vita in comune'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa segna la «grande rivoluzione» nella storia umana?',
+     opzioni:['La proprietà privata, nata con l\'agricoltura e la metallurgia',
+              'La divisione delle terre fra chi le lavora e chi le possiede',
+              'La comparsa della prima distinzione fra i ricchi e i poveri',
+              'La fine dell\'indipendenza di ciascuno dagli altri uomini'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché lo Stato nasce, secondo Rousseau, da un patto ingiusto?',
+     opzioni:['I ricchi lo propongono per mettere al sicuro ciò che possiedono',
+              'I poveri accettano credendo di guadagnarci la propria libertà',
+              'Serve a rendere legale un sopruso già avvenuto di fatto',
+              'Nasce dalla guerra dello stato civile e non da quello naturale'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa distingue la volontà generale dalla volontà di tutti?',
+     opzioni:['La prima mira al bene comune, la seconda somma gli interessi privati',
+              'La prima appartiene al corpo politico, la seconda ai singoli',
+              'La prima è sempre giusta, la seconda può creare privilegi',
+              'Fra le due c\'è una differenza di qualità, non di quantità'], giusta:0},
+
+    {tipo:'scelta', testo:'In che consiste l\'«educazione negativa» dell\'Emilio?',
+     opzioni:['Non insegnare la virtù, ma proteggere dal vizio e dall\'errore',
+              'Lasciare che tutto si sviluppi in modo spontaneo dall\'interno',
+              'Fare in modo che ogni acquisizione sia una scoperta personale',
+              'Evitare che la società corrompa la natura originaria del bambino'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: la libertà si perde o si guadagna vivendo insieme? Una parola.'}
   ]
 }
 ];
