@@ -3802,6 +3802,55 @@ const BANCA = [
               'Su nastri che portano il pezzo davanti a ciascun operaio'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: il progresso tecnico rende gli uomini più liberi? Una parola.'}
+  ]},
+{
+  titolo: 'Storia contemporanea · 7 — La Sinistra storica e la crisi di fine secolo',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: un governo può stare in piedi senza un programma? Una parola.'},
+
+    {tipo:'scelta', testo:'Perché il 1876 è detto «rivoluzione parlamentare»?',
+     opzioni:['Il governo cambia per un voto in aula, non per elezioni',
+              'La Sinistra arriva al potere senza che il paese voti',
+              'Quindici anni di governo della Destra finiscono in un giorno',
+              'Il Parlamento rovescia il governo sulla questione ferroviaria'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa cambia con la riforma elettorale del 1882?',
+     opzioni:['Gli elettori passano da seicentomila a circa due milioni',
+              'Vota chi sa leggere e scrivere, non solo chi ha un reddito',
+              'La base elettorale sale dal due al sette per cento',
+              'Si adotta il collegio che favorisce i partiti organizzati'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è il trasformismo?',
+     opzioni:['Maggioranze costruite su accordi personali, non su programmi',
+              'La scomparsa dei confini fra Destra e Sinistra moderate',
+              'Un sistema in cui si vota in cambio di favori al collegio',
+              'La pratica per cui le decisioni si prendono fuori dall\'aula'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché il protezionismo del 1887 danneggia il Sud?',
+     opzioni:['La Francia risponde coi dazi e il Sud perde il suo mercato',
+              'Il Mezzogiorno è agricolo e non trae vantaggio dall\'industria',
+              'I prodotti industriali costano di più anche a chi non li produce',
+              'Il divario fra le due parti del paese si allarga ancora'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa significa la disfatta di Adua del 1896?',
+     opzioni:['Un grande esercito europeo è battuto per la prima volta in Africa',
+              'L\'Italia rinuncia al sogno di conquistare l\'Etiopia',
+              'Seimila caduti costringono Crispi a lasciare il governo',
+              'Il Negus Menelik II annienta le truppe italiane'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa hanno di nuovo i Fasci siciliani?',
+     opzioni:['Sono organizzazioni di massa con un programma politico',
+              'Contadini e operai si uniscono in leghe con centomila iscritti',
+              'Le rivendicazioni si legano per la prima volta al socialismo',
+              'Non è una rivolta improvvisa ma una struttura stabile'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa scandalizza dopo i fatti di Milano del 1898?',
+     opzioni:['Il re decora il generale che aveva fatto sparare sulla folla',
+              'Si arrestano deputati socialisti insieme ai manifestanti',
+              'Una protesta per il pane viene scambiata per una rivoluzione',
+              'L\'esercito apre il fuoco su una folla priva di armi'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: si risponde alla fame con le riforme o con l\'esercito? Una parola.'}
   ]
 }
 ];
