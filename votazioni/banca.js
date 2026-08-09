@@ -2087,6 +2087,104 @@ const BANCA = [
               'Carlo Alberto rinuncia alla guerra dopo le prime sconfitte'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: che cosa lascia una sconfitta a chi verrà dopo? Una parola.'}
+  ]},
+{
+  titolo: 'Filosofia moderna · 1 — La cultura umanistico-rinascimentale',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: siamo noi a scegliere chi diventare? Una parola.'},
+
+    {tipo:'scelta', testo:'Che cosa cambia nel Rinascimento riguardo a chi produce cultura?',
+     opzioni:['Passa dalla Chiesa ai laici, protetti dai mecenati',
+              'Passa dalle università alle nuove accademie cittadine',
+              'Passa dai chierici ai professori stipendiati dai Comuni',
+              'Passa dai monasteri alle botteghe degli artisti'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché tornare al latino classico è una scelta progressista?',
+     opzioni:['Rimette in circolo la civiltà antica e unisce l\'Europa colta',
+              'Permette di leggere i testi greci tradotti dagli umanisti',
+              'Rompe con il latino oscuro dei filosofi della scolastica',
+              'Rende la cultura accessibile a un pubblico più ampio'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa significa «homo faber fortunae suae»?',
+     opzioni:['L\'uomo si costruisce da sé il proprio destino nel mondo',
+              'L\'uomo può conoscere la natura e piegarla ai suoi fini',
+              'L\'uomo è artefice della propria salvezza senza la grazia',
+              'L\'uomo vale per quello che fa, non per la sua nascita'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché Pico chiama l\'uomo «microcosmo»?',
+     opzioni:['Riassume in sé tutti i gradi dell\'essere, dalla bestia all\'angelo',
+              'È il centro attorno a cui ruota l\'intero universo creato',
+              'Contiene in piccolo la stessa struttura del mondo fisico',
+              'È l\'unica creatura che riflette l\'immagine del suo creatore'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è la «prospettiva storica» nata con l\'Umanesimo?',
+     opzioni:['Il senso della distanza che separa il passato dal presente',
+              'L\'idea che la storia proceda in linea retta verso il meglio',
+              'Il metodo che restituisce ai testi la loro forma originaria',
+              'La convinzione che ogni epoca vada giudicata da sé'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa distingue la filosofia della natura dalla magia?',
+     opzioni:['Cerca princìpi propri della natura, non riti che la piegano',
+              'Studia la natura senza attribuirle alcuna forza vitale',
+              'Ricorre all\'esperimento invece che alla sola osservazione',
+              'Nega che nella natura sia presente la potenza divina'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa insegna lo scetticismo di Montaigne?',
+     opzioni:['A liberarsi dalla presunzione di sapere con certezza',
+              'Ad accettare senza lamenti la condizione che ci è data',
+              'A conoscere gli uomini partendo dalla propria esperienza',
+              'A considerare la vita come un problema sempre aperto'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: mettere l\'uomo al centro è una conquista o una presunzione? Una parola.'}
+  ]},
+{
+  titolo: 'Filosofia moderna · 2 — Il ritorno a Platone e ad Aristotele',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: sapere di non sapere è una debolezza? Una parola.'},
+
+    {tipo:'scelta', testo:'Perché gli umanisti riscoprono Platone?',
+     opzioni:['Lo vedono come l\'opposto della filosofia scolastica',
+              'Ne ricevono finalmente tutti i Dialoghi in greco',
+              'Lo giudicano il pensiero antico più vicino al cristianesimo',
+              'Ritengono che le sue idee derivino da quelle di Mosè'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché si parla di neoplatonismo e non di platonismo?',
+     opzioni:['Platone viene letto attraverso Plotino e i suoi seguaci',
+              'Le traduzioni disponibili erano ancora molto imprecise',
+              'Al pensiero greco si aggiungono elementi cristiani',
+              'Si privilegia l\'aspetto mistico rispetto a quello politico'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa sostengono gli averroisti sull\'intelletto?',
+     opzioni:['Ne esiste uno solo, cui i singoli soltanto partecipano',
+              'Quello passivo è mortale, quello attivo coincide con Dio',
+              'È una funzione del corpo e muore insieme ad esso',
+              'È ciò che rende ogni uomo immortale dopo la morte'], giusta:0},
+
+    {tipo:'scelta', testo:'A che cosa serve, storicamente, la teoria della doppia verità?',
+     opzioni:['Permette di sostenere tesi nuove senza finire sotto processo',
+              'Separa in modo definitivo la teologia dalla filosofia',
+              'Dimostra che la ragione è più affidabile della fede',
+              'Consente di credere e ragionare senza contraddirsi'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è la «dotta ignoranza» di Cusano?',
+     opzioni:['Sapere di non poter raggiungere ciò che non ha proporzione con noi',
+              'Rinunciare a conoscere Dio, che resta comunque inconoscibile',
+              'Riconoscere che ogni sapere umano è soltanto congettura',
+              'Ammettere i propri limiti prima di cominciare a indagare'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché Ficino chiama l\'anima «copula mundi»?',
+     opzioni:['Sta al centro fra il mondo spirituale e quello corporeo',
+              'Tiene unite le diverse parti del creato con l\'amore',
+              'È l\'unica realtà che partecipa insieme di Dio e del corpo',
+              'Congiunge il cammino che sale a Dio e quello che ne discende'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché per Pomponazzi l\'immortalità dell\'anima è indimostrabile?',
+     opzioni:['L\'anima conosce solo partendo da ciò che i sensi le danno',
+              'L\'anima non possiede organi propri con cui pensare',
+              'L\'anima umana non può diventare un\'intelligenza angelica',
+              'L\'anima è una funzione dell\'organismo, come la vista'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: la virtù ha bisogno di un premio per avere senso? Una parola.'}
   ]
 }
 ];
