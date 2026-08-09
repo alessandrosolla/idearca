@@ -140,10 +140,33 @@ function schermataInviata(){
 }
 
 /* ---------- rete ---------- */
+/* Verifica che il codice esista davvero. Senza questo controllo
+   chi sbaglia una cifra finisce sulla schermata d'attesa e resta
+   lì tutta l'ora convinto di essere dentro: il database risponde
+   con un elenco vuoto sia per un codice inesistente sia per un
+   codice giusto senza domande proiettate. */
+async function codiceEsiste(){
+  try{
+    const res = await fetch(SB_URL+'/rest/v1/rpc/menti_sessione_aperta', {
+      method:'POST', headers:intest(), body: JSON.stringify({p_codice: codice})
+    });
+    if(res.status === 404) return 'sconosciuto';   // funzione non ancora installata
+    if(!res.ok) return 'sconosciuto';
+    return (await res.json()) === true;
+  }catch(_){ return 'sconosciuto'; }
+}
+
 async function entra(){
-  const v = document.getElementById('c').value.trim();
+  const campo = document.getElementById('c');
+  if(!campo){ return; }
+  const v = campo.value.trim();
   if(!v){ schermataCodice('Scrivi il codice.'); return; }
   codice = v;
+  const esiste = await codiceEsiste();
+  if(esiste === false){
+    schermataCodice('Codice non valido. Controlla le cifre proiettate sullo schermo.');
+    return;
+  }
   const d = await chiediDomanda();
   if(d && d.guasto){
     schermataCodice('Non riesco a contattare il server (' + d.guasto + '). Riprova fra un momento.');

@@ -75,8 +75,8 @@
 
 <div class="proiezione" id="proiezione">
   <div class="alto">
-    <div class="cod">Vota su <b id="p-codice"></b><br>
-      <span style="font-size:.9rem">idearca — pagina «vota»</span></div>
+    <div class="cod"><span id="p-url" style="font-size:1.15rem;color:#1F1B16;font-weight:600"></span><br>
+      <span style="font-size:.95rem">codice</span> <b id="p-codice"></b></div>
     <span class="spazio"></span>
     <span id="p-conta" style="font-size:1.1rem;color:#5A5148"></span>
     <button onclick="precedente()">‹ Prec</button>
@@ -205,6 +205,17 @@ function disegnaRegia(){
       <span style="flex:1"></span>
       <button onclick="proietta()" class="primario">▶ Proietta</button>
       <button class="rosso" onclick="chiudiSessione()">Chiudi votazione</button>
+    </div>
+
+    <div class="vuoto" style="text-align:left;border-style:solid;border-color:#E3DACB;background:#fff;margin-bottom:1.4rem">
+      <strong>Come funziona</strong><br>
+      1. Aggiungi le domande qui sotto, a mano o caricando un capitolo pronto.<br>
+      2. Premi <strong>▶ Proietta</strong>: parte lo schermo intero con la prima domanda.<br>
+      3. I ragazzi aprono <strong>${(location.origin + location.pathname.replace(/votazioni\/.*$/,'vota/')).replace(/^https?:\/\//,'')}</strong>
+         e digitano il codice <strong>${esc(sessione.codice)}</strong>. Non serve nessun accesso.<br>
+      4. Le risposte compaiono da sole. Con le frecce <strong>←</strong> e <strong>→</strong> passi alla domanda dopo,
+         con <strong>Esc</strong> esci.<br><br>
+      <span style="font-size:.88rem">Finché non premi Proietta, chi entra col codice vede «in attesa»: è normale.</span>
     </div>
 
     <h2>Carica un capitolo pronto</h2>
@@ -341,11 +352,16 @@ async function importaBanca(){
 }
 
 /* ---------- proiezione ---------- */
-function proietta(){
+async function proietta(){
   if(!domande.length){ alert('Aggiungi almeno una domanda.'); return; }
-  if(!sessione.domanda_attiva) attiva(domande[0].id);
+  /* Si attende l'attivazione: prima non lo si faceva e lo schermo
+     restava vuoto fino al primo aggiornamento, dando l'impressione
+     che il pulsante non funzionasse. */
+  if(!sessione.domanda_attiva) await attiva(domande[0].id);
   document.getElementById('proiezione').classList.add('on');
   document.getElementById('p-codice').textContent = sessione.codice;
+  document.getElementById('p-url').textContent =
+    (location.origin + location.pathname.replace(/votazioni\/.*$/,'vota/')).replace(/^https?:\/\//,'');
   aggiornaProiezione();
   if(orologio) clearInterval(orologio);
   orologio = setInterval(async ()=>{ await assicuraToken(); await caricaRisposte(); aggiornaProiezione(); }, 2500);
