@@ -614,6 +614,155 @@ const BANCA = [
               'La ragione dimostra i dogmi della fede'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: il male esiste davvero, o è solo un\'assenza? Una parola.'}
+  ]},
+{
+  titolo: 'Storia medievale · 1 — La ripresa dopo l\'anno Mille',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: che cosa immagini quando senti «anno Mille»? Una parola.'},
+
+    {tipo:'scelta', testo:'I «terrori dell\'anno Mille» sono un fatto storico?',
+     opzioni:['No: è una leggenda inventata nell\'Ottocento',
+              'Sì: le cronache del tempo li descrivono',
+              'Sì: la Chiesa annunciò la fine del mondo',
+              'No: se ne parlò solo qualche decennio dopo'], giusta:0},
+
+    {tipo:'scelta', testo:'Quale innovazione moltiplica per cinque la forza di tiro del cavallo?',
+     opzioni:['Il collare rigido appoggiato sulle spalle',
+              'La ferratura degli zoccoli con i chiodi',
+              'Il versoio che rivolta la zolla arata',
+              'La rotazione dei campi su tre anni'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è il vantaggio della rotazione triennale?',
+     opzioni:['Riposa un terzo dei campi invece di metà',
+              'Riposa metà dei campi invece di un terzo',
+              'Consente di seminare lo stesso cereale',
+              'Elimina del tutto il bisogno di riposo'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa significa «Stadtluft macht frei»?',
+     opzioni:['Un servo in città un anno e un giorno è libero',
+              'Chi respira l\'aria di città diventa più sano',
+              'In città non si pagano tributi al signore',
+              'Il signore non può entrare dentro le mura'], giusta:0},
+
+    {tipo:'scelta', testo:'Quali sono le quattro città marinare italiane?',
+     opzioni:['Venezia, Genova, Pisa, Amalfi',
+              'Venezia, Genova, Napoli, Bari',
+              'Venezia, Ancona, Pisa, Palermo',
+              'Genova, Livorno, Amalfi, Messina'], giusta:0},
+
+    {tipo:'scelta', testo:'A che cosa serviva la lettera di cambio?',
+     opzioni:['Pagare a distanza senza portare monete',
+              'Cambiare le monete di paesi diversi',
+              'Registrare i debiti verso la Chiesa',
+              'Certificare il peso dell\'oro in un sacco'], giusta:0},
+
+    {tipo:'scelta', testo:'Dove si incontravano il commercio del Nord e quello del Sud?',
+     opzioni:['Alle fiere della Champagne, in Francia',
+              'Ai mercati di Costantinopoli, in Oriente',
+              'Nei porti della Sicilia normanna',
+              'Alle fiere di Firenze, in Toscana'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: qual è stata la causa più importante della ripresa? Una parola.'}
+  ]
+},
+{
+  titolo: 'Storia medievale · 2 — La lotta per le investiture',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: chi dovrebbe comandare, il potere politico o quello religioso? Una parola.'},
+
+    {tipo:'scelta', testo:'Perché i vescovi stavano al centro dello scontro?',
+     opzioni:['Erano signori feudali con terre ed eserciti',
+              'Erano gli unici a saper leggere e scrivere',
+              'Erano eletti direttamente dai fedeli',
+              'Erano parenti stretti dell\'imperatore'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è la simonia?',
+     opzioni:['La compravendita delle cariche di Chiesa',
+              'La convivenza dei preti con le donne',
+              'La nomina dei vescovi da parte del re',
+              'La vendita delle terre di un monastero'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è la novità del monastero di Cluny?',
+     opzioni:['Dipende dal papa, non dal signore locale',
+              'Dipende dal vescovo della sua diocesi',
+              'Accoglie soltanto monaci di nobile origine',
+              'Rifiuta ogni proprietà anche collettiva'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa stabilisce il Decretum del 1059?',
+     opzioni:['Il papa lo eleggono i cardinali, non l\'imperatore',
+              'Il papa lo elegge il popolo romano riunito',
+              'L\'imperatore conferma l\'elezione del papa',
+              'Il papa designa da vivo il proprio successore'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa afferma il Dictatus papae del 1075?',
+     opzioni:['Il papa può deporre l\'imperatore',
+              'L\'imperatore può deporre il papa',
+              'Il papa e l\'imperatore sono pari grado',
+              'I vescovi li nomina il popolo cristiano'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché Enrico IV va a Canossa?',
+     opzioni:['I principi tedeschi stavano per deporlo',
+              'Voleva chiedere aiuto militare al papa',
+              'Il papa lo aveva convocato per giudizio',
+              'Cercava rifugio dopo una sconfitta in guerra'], giusta:0},
+
+    {tipo:'scelta', testo:'Che compromesso trova il Concordato di Worms?',
+     opzioni:['All\'imperatore il feudo, al papa il pastorale',
+              'All\'imperatore tutto, al papa nulla',
+              'Al papa tutto, all\'imperatore nulla',
+              'Ai principi tedeschi la scelta dei vescovi'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: chi ha vinto davvero questo scontro? Una parola.'}
+  ]
+},
+{
+  titolo: 'Storia medievale · 3 — Le crociate',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: che cosa spinge una persona a partire per la guerra? Una parola.'},
+
+    {tipo:'scelta', testo:'Che cosa prometteva Urbano II a chi partiva?',
+     opzioni:['L\'assoluzione totale di tutti i peccati',
+              'Un feudo da amministrare in Terrasanta',
+              'Il pagamento delle spese del viaggio',
+              'Il titolo di cavaliere al ritorno'], giusta:0},
+
+    {tipo:'scelta', testo:'Quale causa sociale spingeva i cavalieri a partire?',
+     opzioni:['I cadetti restavano esclusi dall\'eredità',
+              'I nobili erano perseguitati dai re',
+              'I cavalieri non trovavano più guerre',
+              'Le famiglie li obbligavano a partire'], giusta:0},
+
+    {tipo:'scelta', testo:'Come finisce la crociata dei pezzenti?',
+     opzioni:['Distrutta dai Turchi già in Anatolia',
+              'Conquista Gerusalemme prima degli altri',
+              'Si ferma in Ungheria e torna indietro',
+              'Si unisce all\'esercito regolare a Nicea'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa accade a Gerusalemme il 14 luglio 1099?',
+     opzioni:['I crociati la prendono e fanno un massacro',
+              'I crociati la ottengono trattando col sultano',
+              'I bizantini la riconquistano per primi',
+              'Saladino la difende e respinge l\'assedio'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa succede nel 1187 ai Corni di Hattin?',
+     opzioni:['Saladino batte i crociati e riprende Gerusalemme',
+              'I crociati sconfiggono Saladino in campo aperto',
+              'Federico Barbarossa muore attraversando un fiume',
+              'Riccardo Cuor di Leone conquista l\'isola di Cipro'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché la Quarta Crociata finisce a Costantinopoli?',
+     opzioni:['I crociati non potevano pagare le navi veneziane',
+              'Il papa aveva ordinato di punire i bizantini',
+              'La strada per Gerusalemme era stata chiusa',
+              'L\'imperatore bizantino li aveva attaccati per primo'], giusta:0},
+
+    {tipo:'scelta', testo:'Come ottiene Gerusalemme Federico II nel 1229?',
+     opzioni:['Trattando col sultano, senza combattere',
+              'Vincendo una grande battaglia in Egitto',
+              'Pagando un riscatto ai Mamelucchi',
+              'Sposando la figlia del sultano d\'Egitto'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: le crociate sono state un fallimento? Una parola.'}
   ]
 }
 ];
