@@ -2969,6 +2969,104 @@ const BANCA = [
               'Evitare che la società corrompa la natura originaria del bambino'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: la libertà si perde o si guadagna vivendo insieme? Una parola.'}
+  ]},
+{
+  titolo: 'Filosofia moderna · 19 — Kant: il progetto filosofico',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: conoscere i propri limiti è una perdita o un guadagno? Una parola.'},
+
+    {tipo:'scelta', testo:'Che cosa significa «criticare», in senso kantiano?',
+     opzioni:['Interrogarsi sul fondamento, la validità e i limiti di un\'esperienza',
+              'Giudicare una dottrina prima di accettarla come vera',
+              'Chiedersi che cosa rende possibile una certa conoscenza',
+              'Stabilire fin dove la ragione umana può spingersi'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché il criticismo è una «filosofia del limite»?',
+     opzioni:['Tracciare il confine di un\'esperienza ne garantisce la validità dentro',
+              'Riconosce che ogni possibilità umana è finita e condizionata',
+              'Segna le colonne d\'Ercole oltre cui la ragione non può andare',
+              'Mostra che non si può conoscere nulla al di là dell\'esperienza'], giusta:0},
+
+    {tipo:'scelta', testo:'In che consiste il dogmatismo che Kant combatte?',
+     opzioni:['Accettare dottrine senza chiedersi se la ragione possa fondarle',
+              'Pretendere di dimostrare verità sul mondo che sta oltre i sensi',
+              'Costruire sistemi metafisici che nessuna esperienza conferma',
+              'Fidarsi dell\'autorità invece che del proprio intelletto'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa accetta e che cosa rifiuta Kant di Hume?',
+     opzioni:['Accetta la sveglia dal sonno dogmatico, rifiuta l\'esito scettico',
+              'Accetta i limiti della ragione, rifiuta che la scienza sia infondata',
+              'Accetta la critica alla metafisica, rifiuta la rinuncia alla certezza',
+              'Accetta il ruolo dell\'esperienza, rifiuta l\'abitudine come fondamento'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa sono spazio e tempo nella dissertazione del 1770?',
+     opzioni:['Intuizioni pure: forme con cui la mente ordina i dati dei sensi',
+              'Condizioni soggettive che precedono ogni esperienza possibile',
+              'Le forme della conoscenza sensibile, distinte dalla materia',
+              'Leggi indipendenti dalla sensazione ma necessarie a riceverla'], giusta:0},
+
+    {tipo:'scelta', testo:'Che differenza c\'è fra fenomeno e noumeno?',
+     opzioni:['Il primo è la cosa come appare, il secondo come è in sé',
+              'Il primo lo coglie la sensibilità, il secondo l\'intelletto',
+              'Il primo dipende dal soggetto, il secondo no',
+              'Il primo si può conoscere, il secondo resta problematico'], giusta:0},
+
+    {tipo:'scelta', testo:'A quale domanda risponde la Critica della ragion pratica?',
+     opzioni:['Che cosa devo fare: le condizioni e i limiti della morale',
+              'Che cosa posso sperare, oltre a ciò che posso sapere',
+              'Che cosa posso sapere della realtà attraverso la scienza',
+              'Che cos\'è l\'uomo, come essere che agisce nel mondo'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: la ragione può giudicare se stessa? Una parola.'}
+  ]},
+{
+  titolo: 'Filosofia moderna · 20 — Kant: la Critica della ragion pura',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: vediamo il mondo com\'è o come possiamo vederlo? Una parola.'},
+
+    {tipo:'scelta', testo:'Che cosa sono i giudizi sintetici a priori?',
+     opzioni:['Proposizioni insieme feconde e valide in modo necessario',
+              'Giudizi che dicono qualcosa di nuovo senza venire dai sensi',
+              'I princìpi su cui si reggono la matematica e la fisica',
+              'Enunciati universali che l\'esperienza non può smentire'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché i giudizi analitici non bastano alla scienza?',
+     opzioni:['Sono certi ma non aggiungono nulla a ciò che già sappiamo',
+              'Il predicato è già contenuto nel concetto del soggetto',
+              'Valgono sempre, ma non ci fanno conoscere il mondo',
+              'Si ottengono per semplice analisi di un\'idea data'], giusta:0},
+
+    {tipo:'scelta', testo:'In che consiste la «rivoluzione copernicana» di Kant?',
+     opzioni:['È la realtà a modellarsi sulle forme della nostra mente',
+              'Il soggetto non riceve passivamente ciò che conosce',
+              'Conosciamo delle cose quello che noi stessi vi mettiamo',
+              'Il rapporto fra chi conosce e l\'oggetto viene rovesciato'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è il noumeno nel suo senso legittimo?',
+     opzioni:['Un concetto-limite che circoscrive le pretese del conoscere',
+              'La realtà pensata a prescindere dalle nostre forme a priori',
+              'Il correlato necessario di ogni fenomeno che ci appare',
+              'Ciò che solo un intelletto divino potrebbe intuire'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa sono le categorie?',
+     opzioni:['Concetti puri con cui l\'intelletto unifica ciò che i sensi danno',
+              'Le dodici funzioni supreme presenti in ogni giudizio',
+              'Forme del pensiero e non forme dell\'essere delle cose',
+              'Strutture innate che rendono pensabile ogni oggetto'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa dimostrano le antinomie della ragione?',
+     opzioni:['Che la totalità del mondo non è mai oggetto di esperienza',
+              'Che tesi opposte si possono sostenere con eguale forza',
+              'Che l\'idea di mondo non ha alcuna validità conoscitiva',
+              'Che la ragione entra in conflitto con se stessa'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché Kant respinge la prova ontologica di Dio?',
+     opzioni:['L\'esistenza non è un predicato che si aggiunga a un concetto',
+              'Da ciò che è pensato non si passa a ciò che è reale',
+              'Cento talleri pensati e reali hanno lo stesso contenuto',
+              'Il concetto di Dio non contiene la sua realtà effettiva'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: che cosa resta della metafisica dopo Kant? Una parola.'}
   ]
 }
 ];
