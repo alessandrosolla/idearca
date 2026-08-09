@@ -3557,6 +3557,104 @@ const BANCA = [
               'Una base costituzionale su cui costruire lo Stato futuro'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: si costruisce una nazione col sogno o con la diplomazia? Una parola.'}
+  ]},
+{
+  titolo: 'Storia contemporanea · 2 — L\'Europa fra il 1850 e il 1870',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: in politica contano i princìpi o gli interessi? Una parola.'},
+
+    {tipo:'scelta', testo:'Che cosa cambia nel nazionalismo dopo il 1848?',
+     opzioni:['Non è più liberale: serve a imporsi sulle altre nazioni',
+              'Diventa uno strumento di potenza invece che di libertà',
+              'Si stacca dagli ideali con cui era nato nel 1848',
+              'Viene usato dai governi invece che dai rivoluzionari'], giusta:0},
+
+    {tipo:'scelta', testo:'Su che cosa poggia il consenso di Napoleone III?',
+     opzioni:['Sui contadini e la piccola borghesia che venerano il nome',
+              'Su plebisciti in cui il popolo approva ma non decide',
+              'Sul suffragio universale unito al controllo della stampa',
+              'Sulla leggenda dello zio più che su un programma'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa ottiene il Piemonte dalla guerra di Crimea?',
+     opzioni:['Porta la questione italiana al tavolo delle grandi potenze',
+              'Un posto al Congresso di Parigi accanto ai vincitori',
+              'L\'amicizia della Francia in vista della guerra all\'Austria',
+              'Il riconoscimento del suo ruolo nella politica europea'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa nasce dopo la sconfitta di Sedan?',
+     opzioni:['La Terza Repubblica, e a Parigi l\'insurrezione della Comune',
+              'Un armistizio che costa alla Francia l\'Alsazia-Lorena',
+              'La fine del Secondo Impero e la cattura dell\'imperatore',
+              'Un governo rivoluzionario che dura poche settimane'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché la Gran Bretagna evita le rivoluzioni?',
+     opzioni:['Riforma prima che il malcontento arrivi a esplodere',
+              'Estende il voto e riduce l\'orario di lavoro per tempo',
+              'La sua classe politica concede prima di essere costretta',
+              'Dimostra che si può modernizzare senza rovesciare nulla'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa intende Bismarck con «ferro e sangue»?',
+     opzioni:['Le grandi questioni si risolvono con la forza, non coi voti',
+              'L\'errore del 1848 fu credere nei discorsi parlamentari',
+              'L\'unità tedesca si farà con l\'esercito e non col consenso',
+              'La guerra è uno strumento legittimo della politica'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa stabilisce il Compromesso del 1867?',
+     opzioni:['L\'Impero si divide in Austria e Ungheria, con un solo sovrano',
+              'Francesco Giuseppe è imperatore d\'Austria e re d\'Ungheria',
+              'Gli ungheresi ottengono uno Stato proprio dentro l\'Impero',
+              'Nasce la duplice monarchia che durerà fino al 1918'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: unire un popolo con la guerra lascia cicatrici? Una parola.'}
+  ]},
+{
+  titolo: 'Storia contemporanea · 3 — Guerra civile americana, Giappone e Cina',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: un paese può reggersi su due economie opposte? Una parola.'},
+
+    {tipo:'scelta', testo:'Perché Nord e Sud degli Stati Uniti hanno interessi opposti?',
+     opzioni:['L\'industria del Nord vuole dazi, le piantagioni il libero scambio',
+              'Il Nord chiede un potere federale forte, il Sud l\'autonomia',
+              'Uno vive di lavoro salariato, l\'altro di lavoro schiavo',
+              'I due modelli economici non possono convivere a lungo'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché l\'elezione di Lincoln scatena la secessione?',
+     opzioni:['Vuole vietare la schiavitù nei territori dell\'Ovest',
+              'Il Sud legge la vittoria repubblicana come una minaccia',
+              'I sudisti temono che la schiavitù sia messa in discussione',
+              'Cambia gli equilibri politici a favore degli Stati del Nord'], giusta:0},
+
+    {tipo:'scelta', testo:'Che effetto ha il Proclama di emancipazione del 1863?',
+     opzioni:['Centinaia di migliaia di neri si arruolano coi nordisti',
+              'Gli schiavi degli Stati confederati vengono dichiarati liberi',
+              'Cambia il senso della guerra e rafforza l\'esercito dell\'Unione',
+              'Toglie al Sud la manodopera su cui reggeva l\'economia'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché la Ricostruzione non mantiene le sue promesse?',
+     opzioni:['Gli ex schiavi restano senza terra e senza vera libertà',
+              'Nasce il Ku Klux Klan e il terrore razzista si diffonde',
+              'Nel 1877 le truppe federali lasciano gli Stati del Sud',
+              'La segregazione riprende nonostante i nuovi emendamenti'], giusta:0},
+
+    {tipo:'scelta', testo:'Come finisce l\'isolamento del Giappone?',
+     opzioni:['Navi da guerra americane impongono l\'apertura dei porti',
+              'Il commodoro Perry si presenta nella baia di Tokyo',
+              'I trattati ineguali del 1858 aprono il paese agli stranieri',
+              'Due secoli di chiusura cadono sotto la minaccia dei cannoni'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa rende straordinaria l\'era Meiji?',
+     opzioni:['In trent\'anni si passa dal feudalesimo alla potenza industriale',
+              'Lo Stato finanzia direttamente le industrie strategiche',
+              'Il Giappone diventa il primo paese industriale dell\'Asia',
+              'Si adottano leva, scuola obbligatoria e uguaglianza giuridica'], giusta:0},
+
+    {tipo:'scelta', testo:'Per che cosa la Gran Bretagna muove guerra alla Cina?',
+     opzioni:['Per poter continuare a vendervi l\'oppio prodotto in India',
+              'Perché Pechino aveva vietato quel commercio nei suoi porti',
+              'Per riequilibrare i conti del commercio con l\'Oriente',
+              'Per costringere l\'impero ad aprirsi alle merci straniere'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: il progresso di un paese può nascere da un\'umiliazione? Una parola.'}
   ]
 }
 ];
