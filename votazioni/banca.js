@@ -365,6 +365,255 @@ const BANCA = [
               'Il ricordo delle Idee contemplate prima di nascere'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: Platone o Aristotele? Rispondi con una parola.'}
+  ]},
+{
+  titolo: 'Filosofia antica · 8 — Aristotele: etica e politica',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: che cos\'è per te la felicità? Una parola.'},
+
+    {tipo:'scelta', testo:'Come definisce Aristotele l\'eudaimonia?',
+     opzioni:['Attività dell\'anima secondo virtù',
+              'Somma dei piaceri provati in vita',
+              'Assenza completa di ogni turbamento',
+              'Riconoscimento ottenuto dagli altri'], giusta:0},
+
+    {tipo:'scelta', testo:'Come si acquistano le virtù etiche?',
+     opzioni:['Con l\'abitudine: agendo ripetutamente così',
+              'Con l\'insegnamento ricevuto dal maestro',
+              'Per dono di natura fin dalla nascita',
+              'Per grazia concessa dalla divinità'], giusta:0},
+
+    {tipo:'scelta', testo:'Il giusto mezzo è la mediocrità?',
+     opzioni:['No: è eccellenza fra due vizi opposti',
+              'Sì: è la via di mezzo più comoda',
+              'Sì: sta fra il troppo e il troppo poco',
+              'No: è il punto medio fra due numeri'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è la frónesis?',
+     opzioni:['Trovare il giusto mezzo nel caso concreto',
+              'Contemplare i principi eterni e immutabili',
+              'Costruire un oggetto seguendo una regola',
+              'Ricordare le norme apprese da giovani'], giusta:0},
+
+    {tipo:'scelta', testo:'Quale delle tre amicizie è la vera per Aristotele?',
+     opzioni:['Quella per virtù: si ama l\'altro per ciò che è',
+              'Quella per utilità: si resta insieme se conviene',
+              'Quella per piacere: si sta bene in compagnia',
+              'Quella per parentela: il sangue non si sceglie'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa vuol dire che l\'uomo è zòon politikón?',
+     opzioni:['Vive nella polis per natura, non per patto',
+              'Vive nella polis per un accordo stipulato',
+              'Deve occuparsi per dovere della politica',
+              'Sceglie i governanti attraverso il voto'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa distingue le costituzioni rette da quelle deviate?',
+     opzioni:['Le rette governano per il bene comune',
+              'Le rette hanno un solo capo al vertice',
+              'Le rette sono scritte in un documento',
+              'Le rette durano più a lungo nel tempo'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: vita contemplativa o vita politica? Una parola.'}
+  ]
+},
+{
+  titolo: 'Filosofia antica · 9 — Epicureismo e scetticismo',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: di che cosa hai più paura, in una parola?'},
+
+    {tipo:'scelta', testo:'Che cosa cambia nella filosofia con l\'ellenismo?',
+     opzioni:['Al centro va il singolo, non più la polis',
+              'Al centro va la polis, non più il singolo',
+              'Al centro va la natura, non più l\'uomo',
+              'Al centro va la logica, non più l\'etica'], giusta:0},
+
+    {tipo:'scelta', testo:'Per Epicuro, da dove nasce l\'errore?',
+     opzioni:['Dal giudizio che aggiungiamo alla sensazione',
+              'Dalla sensazione, che inganna sempre',
+              'Dalla ragione, che va oltre l\'esperienza',
+              'Dalla memoria, che deforma il ricordo'], giusta:0},
+
+    {tipo:'scelta', testo:'A che cosa serve il clinamen nella fisica di Epicuro?',
+     opzioni:['A spiegare gli incontri fra atomi e la libertà',
+              'A spiegare il peso che fa cadere gli atomi',
+              'A spiegare perché il vuoto non si riempie',
+              'A spiegare la forma sferica degli atomi'], giusta:0},
+
+    {tipo:'scelta', testo:'Quali piaceri preferisce Epicuro?',
+     opzioni:['I catastematici: quelli stabili, in quiete',
+              'I cinestetici: quelli intensi, in movimento',
+              'Quelli del corpo, più immediati e sicuri',
+              'Quelli rari, perché più preziosi degli altri'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa dice il tetrafarmaco sulla morte?',
+     opzioni:['Quando c\'è lei non ci siamo noi',
+              'Va accolta come un passaggio necessario',
+              'Va temuta perché nessuno sa che cosa segue',
+              'Va rimandata il più a lungo possibile'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è l\'epoché degli scettici?',
+     opzioni:['Sospendere il giudizio su ogni cosa',
+              'Negare con decisione ogni affermazione',
+              'Affermare che tutte le opinioni sono vere',
+              'Rinviare la decisione a un momento migliore'], giusta:0},
+
+    {tipo:'scelta', testo:'Come risolve Carneade il problema dell\'agire?',
+     opzioni:['Si segue il plausibile, senza dirlo vero',
+              'Si segue la maggioranza dei sapienti',
+              'Si segue l\'abitudine dei propri padri',
+              'Si segue ciò che appare più piacevole'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: la filosofia serve a vivere meglio? Una parola.'}
+  ]
+},
+{
+  titolo: 'Filosofia antica · 10 — Lo stoicismo',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: che cosa dipende davvero da te? Una parola.'},
+
+    {tipo:'scelta', testo:'Che cos\'è il Logos per gli stoici?',
+     opzioni:['Il principio razionale che anima il cosmo',
+              'Il discorso con cui si convince l\'assemblea',
+              'La legge scritta che regola la città',
+              'L\'anima immortale di ciascun uomo'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa sono gli adiaphora?',
+     opzioni:['Salute e ricchezza: né beni né mali',
+              'Le virtù dell\'anima, uniche cose buone',
+              'I vizi che rovinano il carattere',
+              'Le leggi che cambiano da città a città'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa sono le passioni secondo gli stoici?',
+     opzioni:['Giudizi falsi, e quindi correggibili',
+              'Forze naturali che travolgono la ragione',
+              'Movimenti del corpo del tutto involontari',
+              'Doni della divinità da assecondare'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa significa apatheia?',
+     opzioni:['Dominio razionale, non insensibilità',
+              'Insensibilità totale verso ogni cosa',
+              'Indifferenza morale verso il prossimo',
+              'Rinuncia a qualunque forma di azione'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è la rappresentazione catalettica?',
+     opzioni:['Quella che coglie l\'oggetto com\'è davvero',
+              'Quella che inganna e va sempre respinta',
+              'Quella che nasce dal solo ragionamento',
+              'Quella che il saggio sospende per prudenza'], giusta:0},
+
+    {tipo:'scelta', testo:'Su che cosa si fonda il cosmopolitismo stoico?',
+     opzioni:['Tutti partecipano dello stesso Logos',
+              'Tutti obbediscono alle stesse leggi scritte',
+              'Tutti discendono dagli stessi antenati',
+              'Tutti parlano in fondo la stessa lingua'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché per Epitteto lo schiavo può essere libero?',
+     opzioni:['Il padrone incatena il corpo, non i giudizi',
+              'Il padrone prima o poi lo affrancherà',
+              'La legge romana gli riconosce dei diritti',
+              'La schiavitù è solo una condizione passeggera'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: si può essere felici in carcere? Una parola.'}
+  ]
+},
+{
+  titolo: 'Filosofia antica · 11 — Il neoplatonismo e Plotino',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: da dove viene tutto? Una parola.'},
+
+    {tipo:'scelta', testo:'Perché dell\'Uno non si può dire nulla?',
+     opzioni:['Ogni predicato vi introdurrebbe una divisione',
+              'Nessuno lo ha mai visto né contemplato',
+              'La sua natura è tenuta segreta ai profani',
+              'Il linguaggio umano è troppo povero'], giusta:0},
+
+    {tipo:'scelta', testo:'Quali sono le tre ipostasi, nell\'ordine?',
+     opzioni:['Uno, Intelletto, Anima',
+              'Uno, Anima, Intelletto',
+              'Anima, Intelletto, Materia',
+              'Intelletto, Uno, Materia'], giusta:0},
+
+    {tipo:'scelta', testo:'Con quale immagine Plotino spiega l\'emanazione?',
+     opzioni:['Il sole che irradia senza perdere luce',
+              'L\'artigiano che plasma la materia grezza',
+              'Il seme che germoglia e diventa pianta',
+              'Il fiume che si divide in tanti rami'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è il male per Plotino?',
+     opzioni:['Privazione di essere, non un principio',
+              'Un principio eterno che lotta col bene',
+              'Una scelta libera della volontà umana',
+              'Una punizione inflitta dalla divinità'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è l\'estasi plotiniana?',
+     opzioni:['Contatto con l\'Uno oltre il pensiero',
+              'Ragionamento che dimostra l\'esistenza dell\'Uno',
+              'Visione concessa soltanto dopo la morte',
+              'Rito celebrato dalla comunità dei discepoli'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa distingue l\'emanazione dalla creazione cristiana?',
+     opzioni:['È necessaria, non un atto di volontà',
+              'È libera, mentre la creazione è necessaria',
+              'Parte da una materia già esistente',
+              'Riguarda solo le anime, non il mondo'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa sostiene Giustino sui filosofi greci?',
+     opzioni:['Il Logos operava già in loro senza saperlo',
+              'Erano tutti nemici della vera religione',
+              'Copiarono le loro dottrine dalla Bibbia',
+              'Vanno letti solo dopo aver ricevuto il battesimo'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: si può conoscere ciò di cui non si può parlare? Una parola.'}
+  ]
+},
+{
+  titolo: 'Filosofia antica · 12 — Agostino d\'Ippona',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: che cos\'è il tempo? Rispondi con una parola.'},
+
+    {tipo:'scelta', testo:'Che cosa dimostra il «si fallor, sum»?',
+     opzioni:['Chi dubita esiste, proprio perché dubita',
+              'Chi dubita non potrà mai sapere nulla',
+              'Chi si inganna va comunque perdonato',
+              'Chi crede non ha bisogno di dimostrare'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è l\'illuminazione agostiniana?',
+     opzioni:['Dio illumina la mente come il sole gli occhi',
+              'L\'anima ricorda le Idee viste prima di nascere',
+              'I sensi raccolgono i dati che la mente ordina',
+              'Il maestro trasmette il sapere al discepolo'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché Agostino abbandona il manicheismo?',
+     opzioni:['Se Dio è buono, il male non può essere principio',
+              'Perché i manichei rifiutavano di battezzarlo',
+              'Perché sua madre Monica glielo aveva proibito',
+              'Perché ad Ambrogio la dottrina non piaceva'], giusta:0},
+
+    {tipo:'scelta', testo:'Dove esiste il tempo, secondo le Confessioni?',
+     opzioni:['Nell\'anima: memoria, attenzione, attesa',
+              'Nel cielo: nel moto regolare degli astri',
+              'In Dio: che lo scandisce dall\'eternità',
+              'Nelle cose: che nascono e poi muoiono'], giusta:0},
+
+    {tipo:'scelta', testo:'Come rispecchia l\'anima la Trinità?',
+     opzioni:['Memoria, intelletto e volontà',
+              'Ragione, coraggio e desiderio',
+              'Nascita, vita e morte del corpo',
+              'Fede, speranza e carità cristiane'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa distingue le due città di Agostino?',
+     opzioni:['L\'amore di Dio contro l\'amore di sé',
+              'La Chiesa contro lo Stato terreno',
+              'I ricchi contro i poveri della terra',
+              'I cristiani contro i pagani di Roma'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa significa «credo ut intelligam»?',
+     opzioni:['La fede precede e guida la ragione',
+              'La ragione va prima di ogni fede',
+              'La fede sostituisce del tutto la ragione',
+              'La ragione dimostra i dogmi della fede'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: il male esiste davvero, o è solo un\'assenza? Una parola.'}
   ]
 }
 ];
