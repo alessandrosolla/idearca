@@ -75,8 +75,10 @@
 
 <div class="proiezione" id="proiezione">
   <div class="alto">
-    <div class="cod"><span id="p-url" style="font-size:1.15rem;color:#1F1B16;font-weight:600"></span><br>
-      <span style="font-size:.95rem">codice</span> <b id="p-codice"></b></div>
+    <canvas id="p-qr" style="border-radius:8px;background:#fff"></canvas>
+    <div class="cod"><span style="font-size:1rem">Inquadra il codice</span><br>
+      <span id="p-url" style="font-size:1.05rem;color:#1F1B16;font-weight:600"></span><br>
+      <span style="font-size:.95rem">oppure digita</span> <b id="p-codice"></b></div>
     <span class="spazio"></span>
     <span id="p-conta" style="font-size:1.1rem;color:#5A5148"></span>
     <button onclick="precedente()">‹ Prec</button>
@@ -87,6 +89,7 @@
   <div class="risultati" id="p-risultati"></div>
 </div>
 
+<script src="qr.js"></script>
 <script src="banca.js"></script>
 <script>
 /* ══════════════════════════════════════════════════════════
@@ -202,6 +205,7 @@ function disegnaRegia(){
     <div class="codice">
       <div><span class="via">Gli studenti entrano con il codice</span><br><b>${esc(sessione.codice)}</b></div>
       <div class="via">su<br><strong>${location.origin}${location.pathname.replace(/votazioni\/.*$/,'vota/')}</strong></div>
+      <canvas id="r-qr"></canvas>
       <span style="flex:1"></span>
       <button onclick="proietta()" class="primario">▶ Proietta</button>
       <button class="rosso" onclick="chiudiSessione()">Chiudi votazione</button>
@@ -211,8 +215,9 @@ function disegnaRegia(){
       <strong>Come funziona</strong><br>
       1. Aggiungi le domande qui sotto, a mano o caricando un capitolo pronto.<br>
       2. Premi <strong>▶ Proietta</strong>: parte lo schermo intero con la prima domanda.<br>
-      3. I ragazzi aprono <strong>${(location.origin + location.pathname.replace(/votazioni\/.*$/,'vota/')).replace(/^https?:\/\//,'')}</strong>
-         e digitano il codice <strong>${esc(sessione.codice)}</strong>. Non serve nessun accesso.<br>
+      3. I ragazzi <strong>inquadrano il QR</strong> proiettato e sono dentro subito, senza digitare nulla.
+         In alternativa aprono <strong>${(location.origin + location.pathname.replace(/votazioni\/.*$/,'vota/')).replace(/^https?:\/\//,'')}</strong>
+         e scrivono il codice <strong>${esc(sessione.codice)}</strong>. Non serve nessun accesso.<br>
       4. Le risposte compaiono da sole. Con le frecce <strong>←</strong> e <strong>→</strong> passi alla domanda dopo,
          con <strong>Esc</strong> esci.<br><br>
       <span style="font-size:.88rem">Finché non premi Proietta, chi entra col codice vede «in attesa»: è normale.</span>
@@ -252,6 +257,11 @@ function disegnaRegia(){
       </div>`).join('') + '</div>'
       : '<div class="vuoto">Nessuna domanda. Aggiungine una qui sopra.</div>'}`;
   mostraOpzioni();
+  const q = document.getElementById('r-qr');
+  if(q && typeof QR !== 'undefined'){
+    const base = location.origin + location.pathname.replace(/votazioni\/.*$/,'vota/');
+    try{ QR.disegna(q, base + '?c=' + sessione.codice, 130); }catch(_){}
+  }
 }
 
 function mostraOpzioni(){
@@ -360,8 +370,11 @@ async function proietta(){
   if(!sessione.domanda_attiva) await attiva(domande[0].id);
   document.getElementById('proiezione').classList.add('on');
   document.getElementById('p-codice').textContent = sessione.codice;
-  document.getElementById('p-url').textContent =
-    (location.origin + location.pathname.replace(/votazioni\/.*$/,'vota/')).replace(/^https?:\/\//,'');
+  const base = location.origin + location.pathname.replace(/votazioni\/.*$/,'vota/');
+  document.getElementById('p-url').textContent = base.replace(/^https?:\/\//,'');
+  /* Il QR porta il codice già dentro l'indirizzo: chi inquadra si
+     trova dentro senza digitare nulla. */
+  try{ QR.disegna(document.getElementById('p-qr'), base + '?c=' + sessione.codice, 300); }catch(_){}
   aggiornaProiezione();
   if(orologio) clearInterval(orologio);
   orologio = setInterval(async ()=>{ await assicuraToken(); await caricaRisposte(); aggiornaProiezione(); }, 2500);
