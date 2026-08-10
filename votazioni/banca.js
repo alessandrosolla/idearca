@@ -4978,6 +4978,104 @@ const BANCA = [
               'Ne è malato ogni uomo, anche chi non se ne accorge'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: la libertà è un dono o un peso? Una parola.'}
+  ]},
+{
+  titolo: 'Filosofia contemporanea · 3 — La Sinistra hegeliana e Feuerbach',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: chi ha inventato chi, Dio l\'uomo o l\'uomo Dio? Una parola.'},
+
+    {tipo:'scelta', testo:'Perché la scuola di Hegel si spacca dopo il 1831?',
+     opzioni:['Lo stesso sistema si può leggere come difesa o come critica',
+              'Se il reale è razionale, si conserva o si trasforma?',
+              'Alcuni vedono nella filosofia il salvataggio della religione, altri la sua fine',
+              'La Destra guarda al contenuto, la Sinistra alla forma'], giusta:0},
+
+    {tipo:'scelta', testo:'In che cosa consiste il «rovesciamento» di Feuerbach?',
+     opzioni:['Ciò che è concreto torna a essere soggetto e non predicato',
+              'La filosofia non parte dall\'Assoluto ma dal finito reale',
+              'L\'idealismo aveva scambiato il pensiero con l\'essere',
+              'Non è l\'astratto a produrre il reale, ma il contrario'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è Dio secondo Feuerbach?',
+     opzioni:['La proiezione delle qualità umane portate all\'infinito',
+              'Lo specchio in cui l\'uomo vede il proprio cuore',
+              'Il desiderio umano trasformato in realtà esistente',
+              'Un altro essere in cui l\'uomo riconosce se stesso'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché la religione è un\'«antropologia capovolta»?',
+     opzioni:['Presenta come divino ciò che in realtà è umano',
+              'L\'uomo si conosce in Dio prima di conoscersi in sé',
+              'Ogni dogma nasconde una verità sull\'uomo, non su Dio',
+              'Scambia il soggetto con il predicato del discorso'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è l\'alienazione religiosa?',
+     opzioni:['L\'uomo si sottomette a una potenza che ha creato lui stesso',
+              'Quanto più mette in Dio, tanto più toglie a se stesso',
+              'Dio diventa il polo positivo e l\'uomo quello negativo',
+              'La proiezione smette di essere innocente e fa male'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché l\'ateismo di Feuerbach è «positivo»?',
+     opzioni:['Non toglie soltanto Dio: restituisce all\'uomo ciò che è suo',
+              'Al posto di Dio mette l\'Uomo come nuovo valore assoluto',
+              'Vuole trasformare i teologi in antropologi e in filantropi',
+              'Sostituisce l\'amore per Dio con l\'amore per gli uomini'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa vuol dire «l\'uomo è ciò che mangia»?',
+     opzioni:['Lo spirito non migliora se non migliorano le condizioni materiali',
+              'Non siamo pura coscienza ma corpi con bisogni concreti',
+              'La filosofia deve tenere conto anche di come si vive',
+              'Chi ha fame non può essere educato con le sole idee'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: che cosa perde l\'uomo quando adora qualcosa? Una parola.'}
+  ]},
+{
+  titolo: 'Filosofia contemporanea · 4 — Karl Marx',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: basta capire il mondo o bisogna cambiarlo? Una parola.'},
+
+    {tipo:'scelta', testo:'Che cosa distingue il marxismo dalle altre filosofie?',
+     opzioni:['Non vuole solo interpretare la realtà ma trasformarla',
+              'Tiene insieme filosofia, economia, storia e politica',
+              'La teoria nasce per diventare azione, non per restare libro',
+              'Non si lascia chiudere in nessuna disciplina particolare'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché per Marx lo Stato liberale è una falsa universalità?',
+     opzioni:['Dichiara tutti uguali per legge lasciandoli disuguali di fatto',
+              'Il cittadino è libero in cielo e sfruttato sulla terra',
+              'Difende gli interessi di una classe fingendo di servire tutti',
+              'L\'uguaglianza formale copre e conferma quella sostanziale'], giusta:0},
+
+    {tipo:'scelta', testo:'Da che cosa nasce l\'alienazione del lavoro?',
+     opzioni:['Dalla proprietà privata dei mezzi con cui si produce',
+              'Chi lavora non possiede né gli strumenti né il risultato',
+              'Il prodotto torna contro l\'operaio come potenza estranea',
+              'L\'uomo diventa mezzo per il profitto di qualcun altro'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa rimprovera Marx a Feuerbach?',
+     opzioni:['Ha pensato l\'uomo come natura e non come storia e società',
+              'L\'uomo non è un\'essenza fissa ma l\'insieme dei suoi rapporti',
+              'La critica alla religione resta parola se non cambia la società',
+              'Ha capovolto l\'idealismo ma si è fermato a metà strada'], giusta:0},
+
+    {tipo:'scelta', testo:'Che rapporto c\'è fra struttura e sovrastruttura?',
+     opzioni:['Il modo di produrre condiziona diritto, politica e cultura',
+              'Le idee dominanti sono le idee di chi domina l\'economia',
+              'Ciò che una società pensa dipende da come essa vive',
+              'La base materiale non riflette la cultura: la produce'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è il plusvalore?',
+     opzioni:['Il valore prodotto dall\'operaio e non pagato dal salario',
+              'La differenza fra ciò che si produce e ciò che si riceve',
+              'Il lavoro svolto oltre quello necessario a mantenersi',
+              'Ciò che il capitalista trattiene e chiama profitto'], giusta:0},
+
+    {tipo:'scelta', testo:'Quali contraddizioni portano il capitalismo alla crisi?',
+     opzioni:['Produce più di quanto si possa vendere e concentra la ricchezza',
+              'Le crisi di sovrapproduzione tornano ciclicamente',
+              'Le macchine crescono e il saggio di profitto tende a calare',
+              'Pochi accumulano mentre la massa dei proletari cresce'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: il lavoro rende liberi o rende strumenti? Una parola.'}
   ]
 }
 ];
