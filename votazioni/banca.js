@@ -4537,6 +4537,55 @@ const BANCA = [
               'Trecentomila partigiani e trentacinquemila caduti'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: «mai più» è una promessa che si può mantenere? Una parola.'}
+  ]},
+{
+  titolo: 'Storia contemporanea · 22 — La guerra fredda',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: può esistere una guerra senza combattimenti? Una parola.'},
+
+    {tipo:'scelta', testo:'Che cosa caratterizza la guerra fredda?',
+     opzioni:['Le due superpotenze si combattono ovunque tranne che fra loro',
+              'Corsa agli armamenti, propaganda e guerre per procura',
+              'Uno scontro permanente che non diventa mai conflitto diretto',
+              'Un confronto che dura quasi mezzo secolo senza dichiarazioni'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa si decide a Yalta nel 1945?',
+     opzioni:['L\'Europa viene divisa in sfere d\'influenza fra i vincitori',
+              'La Germania sarà occupata e suddivisa in quattro zone',
+              'All\'URSS spetta di fatto il controllo dell\'Europa orientale',
+              'Si promettono elezioni libere che a est non si terranno mai'], giusta:0},
+
+    {tipo:'scelta', testo:'In che cosa consiste la dottrina del containment?',
+     opzioni:['Impedire nuove conquiste comuniste senza liberare i paesi già presi',
+              'Sostenere chi resiste alla pressione sovietica nel mondo',
+              'Bloccare l\'espansione dell\'URSS invece di attaccarla',
+              'Una strategia che guiderà la politica americana per decenni'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è lo scopo reale del piano Marshall?',
+     opzioni:['Stabilizzare le democrazie per fermare l\'avanzata comunista',
+              'Legare l\'Europa occidentale agli Stati Uniti',
+              'Far ripartire l\'economia dei paesi a rischio di crisi politica',
+              'Usare gli aiuti come strumento di influenza politica'], giusta:0},
+
+    {tipo:'scelta', testo:'Come rispondono gli occidentali al blocco di Berlino?',
+     opzioni:['Con un ponte aereo che rifornisce la città per quasi un anno',
+              'Portando due milioni di tonnellate di merci per via aerea',
+              'Senza usare la forza ma senza cedere di un passo',
+              'Con aerei che atterrano ogni pochi minuti giorno e notte'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa stabilisce l\'articolo 5 della NATO?',
+     opzioni:['Un attacco a un membro è considerato attacco a tutti',
+              'La difesa collettiva è il fondamento dell\'alleanza',
+              'Nessun paese aderente potrà essere lasciato solo',
+              'L\'aggressione a uno solo chiama in causa l\'intero patto'], giusta:0},
+
+    {tipo:'scelta', testo:'Che effetto ha la destalinizzazione di Kruscev?',
+     opzioni:['I paesi satelliti si agitano e l\'Ungheria viene repressa',
+              'Denunciare i crimini di Stalin apre speranze che poi si spengono',
+              'Le aperture del 1956 fanno esplodere le tensioni a est',
+              'Chi crede in un cambiamento reale scopre che i limiti restano'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: un mondo diviso in due è più stabile o più pericoloso? Una parola.'}
   ]
 }
 ];
