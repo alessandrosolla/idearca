@@ -468,7 +468,11 @@ function showLibrary(){
   const initials=(s.nome||'U').split(' ').map(w=>w[0]).join('').slice(0,2).toUpperCase();
   document.getElementById('lib-avatar').textContent=initials;
   document.getElementById('lib-uname').textContent=s.nome||'Utente';
-  if(s.ruolo==='docente') document.getElementById('admin-bar').style.display='flex';
+  const docente = s.ruolo==='docente';
+  if(docente) document.getElementById('admin-bar').style.display='flex';
+  /* la barra del docente ruba 52px in alto: le viste a pieno schermo
+     devono saperlo per non sbordare */
+  document.getElementById('page-library').classList.toggle('con-admin', docente);
   const keys=getKeys(s.materie);
   buildNav(keys);
   buildMobSelect(keys);

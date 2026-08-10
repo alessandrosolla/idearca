@@ -21,7 +21,7 @@ punto non spuntato.
   slide di storia e di filosofia.
 - [x] **9. Consegne**: manca il pulsante per gli studenti; e il docente deve
   poter aprire e chiudere finestre temporali.
-- [ ] **10. Metodologie didattiche** deve occupare tutta la pagina, non un
+- [x] **10. Metodologie didattiche** deve occupare tutta la pagina, non un
   riquadro.
 - [ ] **11. Dieci consigli** da recruiter e da designer, su sito e didattica.
 
