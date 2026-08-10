@@ -5174,6 +5174,104 @@ const BANCA = [
               'Una appartiene al passato, l\'altra è la tendenza del futuro'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: evoluzione e progresso sono la stessa cosa? Una parola.'}
+  ]},
+{
+  titolo: 'Filosofia contemporanea · 7 — Bergson e Weber: la reazione al positivismo',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: il tempo dell\'orologio è lo stesso tempo che vivi? Una parola.'},
+
+    {tipo:'scelta', testo:'Che cosa contesta lo spiritualismo al positivismo?',
+     opzioni:['Ha studiato i fatti esterni dimenticando la vita della coscienza',
+              'Il mondo interiore non si lascia misurare come la natura',
+              'Della realtà umana la scienza coglie solo la parte esteriore',
+              'Ciò che sentiamo dentro non compare in nessun esperimento'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa distingue la durata reale dal tempo della scienza?',
+     opzioni:['È qualitativa, continua e non torna mai indietro',
+              'Non è fatta di istanti uguali ma di momenti irripetibili',
+              'I suoi momenti non si sommano: si compenetrano fra loro',
+              'Somiglia a un gomitolo, non a una collana di perle'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è lo slancio vitale?',
+     opzioni:['La spinta creatrice che attraversa la materia e si divide',
+              'Una forza che spiega l\'evoluzione meglio del caso e del fine',
+              'L\'unità originaria da cui nascono direzioni divergenti',
+              'Ciò che rende la vita imprevedibile e sempre nuova'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché l\'intelligenza non basta a capire la vita?',
+     opzioni:['È fatta per maneggiare la materia, non per seguire il divenire',
+              'Taglia in pezzi separati ciò che invece scorre continuo',
+              'Serve all\'azione pratica più che alla comprensione',
+              'Pensa per concetti fissi mentre la vita non sta ferma'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa distingue le società chiuse da quelle aperte?',
+     opzioni:['Le prime conservano se stesse, le seconde guardano a tutta l\'umanità',
+              'In una vige l\'abitudine del gruppo, nell\'altra una morale universale',
+              'Una difende i propri confini, l\'altra continua lo slancio creatore',
+              'Cambia l\'ampiezza del noi a cui ci si sente obbligati'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è un tipo ideale secondo Weber?',
+     opzioni:['Uno schema costruito che serve a misurare la realtà, non a copiarla',
+              'Un concetto che porta al limite ciò che si osserva in molti casi',
+              'Non si trova mai puro nei fatti, eppure aiuta a capirli',
+              'Uno strumento che non giudica: vale per le chiese e per i bordelli'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa significa «disincantamento del mondo»?',
+     opzioni:['Nulla resta misterioso: tutto in linea di principio è calcolabile',
+              'La magia non serve più perché il mondo si domina con la ragione',
+              'Il progresso della razionalità svuota la realtà di incanto',
+              'Sapere di poter sapere tutto cambia il modo di vivere'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: che cosa si perde quando tutto diventa calcolabile? Una parola.'}
+  ]},
+{
+  titolo: 'Filosofia contemporanea · 8 — Nietzsche: la demistificazione',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: che cosa resta in piedi se cadono tutte le certezze? Una parola.'},
+
+    {tipo:'scelta', testo:'Che cos\'è l\'apollineo per Nietzsche?',
+     opzioni:['La forma bella con cui i Greci rendono sopportabile l\'orrore',
+              'Il bisogno di dare misura e armonia a ciò che spaventa',
+              'Un sogno luminoso costruito sopra il terrore dell\'esistenza',
+              'La trasfigurazione del dolore in immagini serene'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa rappresenta il dionisiaco?',
+     opzioni:['L\'ebbrezza in cui l\'individuo si scioglie nel flusso della vita',
+              'L\'accettazione della vita anche nel suo lato crudele',
+              'Il caos, la musica e l\'estasi contro la forma composta',
+              'La forza vitale che nessuna misura riesce a contenere'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché Socrate segna la decadenza secondo Nietzsche?',
+     opzioni:['Pretende di ridurre la vita alla ragione e di spiegarla tutta',
+              'All\'uomo tragico sostituisce l\'uomo che vuole capire',
+              'Con lui la conoscenza comincia a fare violenza alla vita',
+              'Il mito cede il posto al ragionamento e la tragedia muore'], giusta:0},
+
+    {tipo:'scelta', testo:'In che cosa consiste la «filosofia del martello»?',
+     opzioni:['Smascherare le illusioni mostrando da quali forze nascono',
+              'Dietro morale e religione si cercano interessi e paure',
+              'Nessuna credenza viene accolta senza chiederne l\'origine',
+              'Un metodo che demolisce prima di poter costruire'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa significa l\'annuncio della morte di Dio?',
+     opzioni:['È finita la fede in un fondamento assoluto che garantisce il senso',
+              'Non è una tesi sull\'esistenza di Dio ma una diagnosi storica',
+              'Il mondo resta senza l\'ordine che qualcuno gli assicurava',
+              'Siamo stati noi a ucciderlo, dice l\'uomo folle al mercato'], giusta:0},
+
+    {tipo:'scelta', testo:'Che differenza c\'è fra nichilismo passivo e attivo?',
+     opzioni:['Uno si rassegna al vuoto, l\'altro distrugge per poter creare',
+              'La stanchezza di chi non vuole più nulla contro la volontà nuova',
+              'Il primo subisce la perdita, il secondo la usa come occasione',
+              'Solo uno dei due apre la strada a valori diversi'], giusta:0},
+
+    {tipo:'scelta', testo:'Chi è l\'oltre-uomo?',
+     opzioni:['Chi crea i propri valori e si prende tutta la responsabilità di sé',
+              'Non un tipo biologico ma un modo nuovo di stare al mondo',
+              'Colui che dice sì alla vita senza cercare garanzie fuori di essa',
+              'Chi ha superato la morale nata dal risentimento dei deboli'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: chi decide che cosa vale, se non c\'è più un fondamento? Una parola.'}
   ]
 }
 ];
