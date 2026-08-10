@@ -1,42 +1,27 @@
-# Lavori in corso — lista del 10 agosto 2026
+# Lavori in corso
 
-Elenco dato dal professore. Si procede **uno alla volta**, in loop.
-Chi riprende da una sessione nuova legge questo file e continua dal primo
-punto non spuntato.
+## Fatto (10 agosto 2026)
+Undici punti della prima lista, pagina «Chi sono / Cosa è Idearca»,
+licenza, README, sezione «Prove», ruolo osservatore, permessi per gli
+studenti, numeri contati dal sito.
 
-## I punti
+## Da fare, in quest'ordine
 
-- [x] **1. La striscia bianca in cima.** Scorrendo verso l'alto oltre il bordo
-  compare il colore chiaro della pagina, che stona con l'hero verde scuro.
-- [x] **2. La didascalia del quadro.** «Raffaello — La Scuola di Atene» va
-  illuminata e resa cliccabile, per vedere l'opera intera.
-- [x] **3. «Dai una occhiata» ben visibile** — è la porta d'ingresso per un
-  recruiter. E la finestra che apre è confusa e incompleta: va rifatta.
-- [x] **4. «Scopri i contenuti»** deve comportarsi come «Dai una occhiata».
-- [x] **5. Il pulsante «Accedi con il tuo codice»** a sinistra non serve a nulla.
-- [x] **6. Il footer bianco** va portato nella stessa palette dell'inizio.
-- [x] **7. La pagina della libreria** va ristrutturata: più moderna, con le
-  materie ben distinte fra loro.
-- [x] **8. Linea del tempo** dentro Didattica, con gli eventi principali delle
-  slide di storia e di filosofia.
-- [x] **9. Consegne**: manca il pulsante per gli studenti; e il docente deve
-  poter aprire e chiudere finestre temporali.
-- [x] **10. Metodologie didattiche** deve occupare tutta la pagina, non un
-  riquadro.
-- [x] **11. Dieci consigli** da recruiter e da designer, su sito e didattica.
+1. **Statistiche nell'hub docente** — tabella `accessi` su Supabase
+   (chi entra, quando, da dove), pannello con totali, ultimi 7 giorni,
+   codici più attivi, materie e strumenti più aperti, pulsante Azzera.
+   Serve una migrazione: `sql/05-statistiche.sql`.
+2. **«Chi sono» modificabile dal sito** — tabella `profilo`, pannello
+   di modifica visibile solo al docente.
+3. **I sigilli ridisegnati** — da cinque tratti a trenta o quaranta,
+   proporzioni vere, tutto disegnato a mano in SVG.
+4. **La scaletta delle diciassette prove**, dentro la sezione Prove:
+   - votazioni a squadre (sorteggio casuale, punto al sapere,
+     a schermo sia punteggio sia risposte)
+   - timer da proiettare + estrattore di studenti
+   - ricostruttore di sillogismi
+   - poi il resto, uno per volta
 
-## Da fare a mano su Supabase
-
-Il punto 9 ha bisogno di una migrazione: apri Supabase → SQL Editor →
-New query → incolla `sql/04-finestre-consegna.sql` → RUN.
-Finché non la esegui, la pagina di consegna dice (correttamente)
-che non c'è nulla da consegnare.
-
-## Esito
-
-Tutti e undici i punti chiusi. I consigli stanno in `CONSIGLI.md`.
-
-## Come si lavora
-
-Un punto alla volta. Dopo ogni punto: prova, commit, push su `origin main`.
-Il professore ha dato consenso permanente a pubblicare senza chiedere.
+## Nota sul telefono
+Molti guarderanno il sito dal telefono. Ogni cosa nuova va provata
+anche stretta, non solo sul monitor.
