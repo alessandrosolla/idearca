@@ -469,10 +469,19 @@ function showLibrary(){
   document.getElementById('lib-avatar').textContent=initials;
   document.getElementById('lib-uname').textContent=s.nome||'Utente';
   const docente = s.ruolo==='docente';
-  if(docente) document.getElementById('admin-bar').style.display='flex';
+  const osservatore = s.ruolo==='osservatore';
+  document.documentElement.setAttribute('data-ruolo', s.ruolo||'studente');
+  if(docente||osservatore){
+    document.getElementById('admin-bar').style.display='flex';
+    /* all'osservatore mostro la barra ma tolgo tutto cio' che scrive:
+       deve poter guardare dappertutto senza poter cambiare niente */
+    document.getElementById('admin-bar').classList.toggle('sola-lettura', osservatore);
+    document.querySelector('.admin-label').textContent =
+      osservatore ? 'Sola lettura' : 'Modalità docente';
+  }
   /* la barra del docente ruba 52px in alto: le viste a pieno schermo
      devono saperlo per non sbordare */
-  document.getElementById('page-library').classList.toggle('con-admin', docente);
+  document.getElementById('page-library').classList.toggle('con-admin', docente||osservatore);
   const keys=getKeys(s.materie);
   buildNav(keys);
   buildMobSelect(keys);
@@ -558,15 +567,35 @@ const AREE={
 };
 function coloreArea(g){return (AREE[g]||{col:'var(--stone)'}).col;}
 
+/* ── I TRE MODI DI ENTRARE ──────────────────────────────────
+   docente     → vede tutto e modifica
+   osservatore → vede tutto ma non tocca niente (per chi valuta
+                 il lavoro: un recruiter, un dirigente, un collega)
+   studente    → vede i materiali e gli strumenti che lo riguardano
+   ──────────────────────────────────────────────────────────── */
+function ruoloCorrente(){
+  const s=JSON.parse(sessionStorage.getItem('ix')||'{}');
+  return s.ruolo||'studente';
+}
+function eDocente(){ return ruoloCorrente()==='docente'; }
+function eOsservatore(){ return ruoloCorrente()==='osservatore'; }
+/* l'osservatore vede le stesse cose del docente, ma in sola lettura */
+function vedeRoba(){ return eDocente()||eOsservatore(); }
+
 function vociExtra(){
+  /* `chi` dice a chi la voce è destinata:
+       tutti   → chiunque abbia un codice
+       docente → solo chi insegna (e chi guarda in sola lettura)
+     Lavagna, metodologie e inbox erano visibili anche agli studenti,
+     che poi ci sbattevano contro un «non sei entrato come docente». */
   return [
-    {g:'Didattica',k:'__metodo__',  l:'Metodologie didattiche', p:'Debate, jigsaw, attività'},
-    {g:'Didattica',k:'__consegna__',l:'Consegna un compito',    p:'Per gli studenti'},
-    {g:'Didattica',k:'__inbox__',   l:'Inbox',                  p:'Consegne degli studenti'},
-    {g:'Didattica',k:'__voti__',    l:'Votazioni',              p:'120 capitoli pronti'},
-    {g:'Strumenti',k:'__tempo__',   l:'Linea del tempo',        p:'Storia e filosofia a confronto'},
-    {g:'Strumenti',k:'__lavagna__', l:'Lavagna',                p:'Da proiettare in aula'},
-    {g:'Strumenti',k:'__map__',     l:'Mappa storica',          p:'Atlante interattivo'}
+    {g:'Didattica',k:'__metodo__',  l:'Metodologie didattiche', p:'Debate, jigsaw, attività', chi:'docente'},
+    {g:'Didattica',k:'__consegna__',l:'Consegna un compito',    p:'Per gli studenti',         chi:'tutti'},
+    {g:'Didattica',k:'__inbox__',   l:'Inbox',                  p:'Consegne degli studenti',  chi:'docente'},
+    {g:'Didattica',k:'__voti__',    l:'Votazioni',              p:'120 capitoli pronti',      chi:'tutti'},
+    {g:'Strumenti',k:'__tempo__',   l:'Linea del tempo',        p:'Storia e filosofia a confronto', chi:'tutti'},
+    {g:'Strumenti',k:'__lavagna__', l:'Lavagna',                p:'Da proiettare in aula',    chi:'docente'},
+    {g:'Strumenti',k:'__map__',     l:'Mappa storica',          p:'Atlante interattivo',      chi:'tutti'}
   ];
 }
 
@@ -593,6 +622,7 @@ function buildNav(keys){
     ks.forEach(k=>{
       const info=MATERIE[k]||extraMap[k];
       if(!info)return;
+      if(info.chi==='docente' && !vedeRoba()) return;
       const attiva=first&&!!MATERIE[k];
       if(MATERIE[k])first=false;
       html+=`<button class="lib-item${attiva?' active':''}" data-key="${k}" onclick="navClick(this,'${k}')">
@@ -604,6 +634,11 @@ function buildNav(keys){
     html+='</div></div>';
   });
   document.getElementById('lib-nav').innerHTML=html;
+  /* un gruppo senza voci (Didattica per uno studente, se tutto
+     e' riservato) sparisce invece di restare come titolo vuoto */
+  document.querySelectorAll('.lib-group').forEach(g=>{
+    if(!g.querySelector('.lib-item')) g.remove();
+  });
 }
 function buildMobSelect(keys){
   const sel=document.getElementById('mob-select');
@@ -671,6 +706,7 @@ function showMapView(){
   document.getElementById('lib-head').style.display='none';
   document.getElementById('lib-modules').style.display='none';
   document.getElementById('lib-metodo-view').style.display='none';
+  document.getElementById('lib-lavagna-view').style.display='none';
   document.getElementById('lib-map-view').style.display='block';
   document.getElementById('lib-inbox-view').style.display='none';
   document.getElementById('lib-voti-view').style.display='none';

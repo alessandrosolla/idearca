@@ -1017,3 +1017,13 @@ html[data-theme="dark"] #main-nav:not(.scrolled){background:transparent;border-b
 
 
 
+
+/* ── SOLA LETTURA ───────────────────────────────────────────
+   Chi entra come osservatore (un recruiter, un dirigente) vede
+   tutta la piattaforma ma non trova nessun pulsante che scriva:
+   niente «Aggiungi», niente matita, niente cestino. */
+.admin-bar.sola-lettura .adm-btn{display:none}
+.admin-bar.sola-lettura{background:linear-gradient(90deg,#243b52,#1b2c3d)}
+.admin-bar.sola-lettura .admin-label::before{background:#8fb8d8}
+html[data-ruolo="osservatore"] .mod-acts,
+html[data-ruolo="osservatore"] .lib-add-link{display:none !important}
