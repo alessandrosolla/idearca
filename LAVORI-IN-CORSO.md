@@ -17,7 +17,7 @@ punto non spuntato.
 - [x] **6. Il footer bianco** va portato nella stessa palette dell'inizio.
 - [x] **7. La pagina della libreria** va ristrutturata: più moderna, con le
   materie ben distinte fra loro.
-- [ ] **8. Linea del tempo** dentro Didattica, con gli eventi principali delle
+- [x] **8. Linea del tempo** dentro Didattica, con gli eventi principali delle
   slide di storia e di filosofia.
 - [ ] **9. Consegne**: manca il pulsante per gli studenti; e il docente deve
   poter aprire e chiudere finestre temporali.
