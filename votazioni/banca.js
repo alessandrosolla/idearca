@@ -4586,6 +4586,104 @@ const BANCA = [
               'Chi crede in un cambiamento reale scopre che i limiti restano'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: un mondo diviso in due è più stabile o più pericoloso? Una parola.'}
+  ]},
+{
+  titolo: 'Storia contemporanea · 23 — La coesistenza pacifica',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: la paura di distruggersi basta a garantire la pace? Una parola.'},
+
+    {tipo:'scelta', testo:'Su che cosa si fonda la coesistenza pacifica?',
+     opzioni:['Entrambe le potenze hanno la bomba: la guerra distruggerebbe tutti',
+              'La certezza della distruzione reciproca funziona da deterrente',
+              'Si può competere in economia e ideologia senza spararsi',
+              'Nessuno dei due blocchi può permettersi lo scontro diretto'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché viene costruito il muro di Berlino?',
+     opzioni:['Per fermare la fuga di chi lascia la Germania orientale',
+              'Ogni anno decine di migliaia passavano a Berlino Ovest',
+              'Il regime dell\'Est perdeva la propria popolazione',
+              'Occorreva chiudere l\'unico varco rimasto aperto'], giusta:0},
+
+    {tipo:'scelta', testo:'Come si risolve la crisi dei missili di Cuba?',
+     opzioni:['Mosca ritira i missili, Washington rinuncia a invadere l\'isola',
+              'Un accordo che comprende anche i missili americani in Turchia',
+              'Entrambe le parti cedono qualcosa per evitare la catastrofe',
+              'Dopo tredici giorni si trova un compromesso in parte segreto'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa rende possibili i «trenta gloriosi»?',
+     opzioni:['Ricostruzione, aiuti americani, tecnologia e materie prime a basso costo',
+              'Una domanda repressa dalla guerra che si libera tutta insieme',
+              'Trent\'anni di crescita senza precedenti nella storia europea',
+              'Petrolio a buon mercato e innovazione che si sommano'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è il lato oscuro del miracolo economico italiano?',
+     opzioni:['Quattro milioni di persone lasciano il Sud e il divario si allarga',
+              'Le città crescono in modo caotico e senza regole',
+              'Interi paesi del Mezzogiorno si svuotano di abitanti',
+              'La ricchezza si concentra dove c\'era già industria'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa garantisce il Welfare State?',
+     opzioni:['Sanità, istruzione, pensioni e sussidi come diritti di tutti',
+              'Una protezione pubblica che accompagna il cittadino tutta la vita',
+              'Servizi universali finanziati dallo Stato e non dal singolo',
+              'Un modello nato in Europa e portato al massimo in Scandinavia'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa decide il Concilio Vaticano II?',
+     opzioni:['La messa si celebra nelle lingue nazionali e non più in latino',
+              'La Chiesa apre al dialogo con le altre confessioni e religioni',
+              'Si riconosce la libertà religiosa e ci si rivolge ai poveri',
+              'Un aggiornamento che avvicina la Chiesa al mondo moderno'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: il benessere ci ha resi più liberi o più conformisti? Una parola.'}
+  ]},
+{
+  titolo: 'Storia contemporanea · 24 — Il Sessantotto, la distensione e le crisi',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: perché una generazione decide di contestare tutto? Una parola.'},
+
+    {tipo:'scelta', testo:'Che cosa contesta il movimento del Sessantotto?',
+     opzioni:['Autorità, guerra in Vietnam, consumismo e razzismo insieme',
+              'Un modello che produce benessere ma svuota di senso la vita',
+              'Università rigide e una società chiusa al dialogo',
+              'Tutto ciò che i giovani non hanno scelto e subiscono'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa rende unico il maggio francese?',
+     opzioni:['Studenti e operai insieme paralizzano il paese con dieci milioni di scioperanti',
+              'La protesta arriva a mettere in crisi il generale De Gaulle',
+              'Gli accordi salariali dividono i sindacati dagli studenti',
+              'La rivolta esce dalle università e diventa sciopero generale'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa ottiene il movimento per i diritti civili americano?',
+     opzioni:['Leggi che vietano la discriminazione e garantiscono il voto',
+              'La fine legale della segregazione razziale negli Stati Uniti',
+              'Il riconoscimento dei diritti conquistato senza violenza',
+              'Due leggi fondamentali approvate a metà degli anni Sessanta'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché Nixon apre alla Cina di Mao?',
+     opzioni:['Vuole usarla come contrappeso contro l\'Unione Sovietica',
+              'Il realismo suggerisce di trattare anche col nemico ideologico',
+              'La guerra in Vietnam ha mostrato i limiti dell\'intervento diretto',
+              'Conviene dividere i due grandi paesi comunisti'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa dimostra la vicenda del Watergate?',
+     opzioni:['Anche un presidente deve cedere davanti a giudici e stampa libera',
+              'Il controllo del potere funziona se esiste chi può indagare',
+              'La democrazia americana regge alla prova di uno scandalo',
+              'Nessuna carica mette al riparo da chi cerca la verità'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è la stagflazione?',
+     opzioni:['Economia ferma e prezzi che salgono nello stesso momento',
+              'Una combinazione che le ricette keynesiane non sanno curare',
+              'Disoccupazione e inflazione che crescono insieme',
+              'Il fenomeno che chiude la stagione dei trenta gloriosi'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa propone il neoliberismo?',
+     opzioni:['Lo Stato si ritiri: il mercato sa regolarsi da solo',
+              'Tagliare tasse e spesa pubblica per far ripartire l\'economia',
+              'Privatizzazioni e riduzione della protezione sociale',
+              'Meno intervento pubblico e più libertà economica'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: quanto Stato serve in economia? Una parola.'}
   ]
 }
 ];
