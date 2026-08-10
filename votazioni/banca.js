@@ -5076,6 +5076,104 @@ const BANCA = [
               'Pochi accumulano mentre la massa dei proletari cresce'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: il lavoro rende liberi o rende strumenti? Una parola.'}
+  ]},
+{
+  titolo: 'Filosofia contemporanea · 5 — Il Positivismo: Comte e Mill',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: la scienza può rispondere a tutte le domande? Una parola.'},
+
+    {tipo:'scelta', testo:'Che cosa significa «positivo» nel positivismo?',
+     opzioni:['Ciò che è reale e sperimentabile, e insieme utile alla vita',
+              'Non le astrazioni della metafisica ma i fatti osservabili',
+              'Un sapere che serve a fare, non soltanto a discutere',
+              'Ciò che si può verificare invece di ciò che si immagina'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa afferma la legge dei tre stadi di Comte?',
+     opzioni:['La conoscenza passa da spiegazioni divine ad astratte a scientifiche',
+              'Ogni sapere attraversa le stesse tre tappe nello stesso ordine',
+              'Prima si cercano cause ultime, poi essenze, poi solo leggi',
+              'Ciascuno le ripercorre nella propria vita, da bambino a adulto'], giusta:0},
+
+    {tipo:'scelta', testo:'A che cosa rinuncia la mente nello stadio positivo?',
+     opzioni:['A chiedersi il perché ultimo delle cose e la loro origine',
+              'Cerca come i fenomeni si succedono, non da dove vengano',
+              'Smette di indagare l\'essenza intima della realtà',
+              'Si accontenta di leggi costanti invece che di cause prime'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché la sociologia sta al vertice delle scienze?',
+     opzioni:['Il suo oggetto è il più complesso e arriva per ultimo alla scienza',
+              'Studia i fenomeni che dipendono da tutti gli altri',
+              'Deve rimettere ordine in una società che rischia di dissolversi',
+              'Le scienze si ordinano dal semplice al complicato'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa esprime la formula «scienza, previsione, azione»?',
+     opzioni:['Conoscere le leggi permette di prevedere e quindi di agire',
+              'Il sapere serve a dare all\'uomo un potere sulla natura',
+              'Senza previsione la conoscenza resterebbe inutile',
+              'Ogni legge scoperta si trasforma prima o poi in tecnica'], giusta:0},
+
+    {tipo:'scelta', testo:'Come Mill corregge l\'utilitarismo di Bentham?',
+     opzioni:['Non conta solo quanto piacere si prova ma di quale specie',
+              'Meglio Socrate scontento che uno sciocco soddisfatto',
+              'I piaceri dell\'intelligenza valgono più di quelli del corpo',
+              'La felicità non si misura soltanto con una somma'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa stabilisce il principio del danno di Mill?',
+     opzioni:['Si può limitare la libertà di uno solo per proteggere gli altri',
+              'Su se stesso ciascun individuo è sovrano assoluto',
+              'Lo Stato non deve entrare nella vita privata delle persone',
+              'Nessuno può essere costretto per il suo presunto bene'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: fin dove arriva la mia libertà? Una parola.'}
+  ]},
+{
+  titolo: 'Filosofia contemporanea · 6 — Darwin, Spencer e l\'evoluzionismo',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: la natura ha un progetto o procede per tentativi? Una parola.'},
+
+    {tipo:'scelta', testo:'Su quali due fatti si regge la teoria di Darwin?',
+     opzioni:['Gli individui variano fra loro e le risorse non bastano per tutti',
+              'Nascono più esseri di quanti l\'ambiente possa mantenerne',
+              'Piccole differenze casuali rendono alcuni più capaci di vivere',
+              'Chi nasce con un vantaggio ha più probabilità di sopravvivere'], giusta:0},
+
+    {tipo:'scelta', testo:'Come funziona la selezione naturale?',
+     opzioni:['Le variazioni utili si accumulano perché vengono ereditate',
+              'Sopravvive chi si adatta meglio, non chi è più forte',
+              'La natura fa in grande ciò che l\'allevatore fa in piccolo',
+              'Nel tempo lunghissimo le differenze diventano nuove specie'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa sostiene Darwin su uomo e animali?',
+     opzioni:['Fra le loro facoltà mentali c\'è differenza di grado, non di natura',
+              'Anche l\'uomo rientra nella stessa storia degli altri viventi',
+              'Nulla lo separa in modo radicale dai mammiferi superiori',
+              'Le sue capacità si spiegano con gli stessi meccanismi'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è il darwinismo sociale?',
+     opzioni:['Applicare la lotta per la vita ai rapporti fra gli uomini',
+              'Dividere la società fra adatti e non adatti alla sopravvivenza',
+              'Usare la biologia per giustificare disuguaglianze e razzismi',
+              'Una deriva ideologica che Darwin stesso non condivideva'], giusta:0},
+
+    {tipo:'scelta', testo:'Che funzione ha l\'Inconoscibile in Spencer?',
+     opzioni:['Assegna un territorio alla religione e uno diverso alla scienza',
+              'La realtà ultima resta un mistero che nessuno può conoscere',
+              'Impedisce a fede e ricerca di invadere il campo dell\'altra',
+              'La nostra conoscenza resta chiusa dentro il relativo'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa dice la legge dell\'evoluzione di Spencer?',
+     opzioni:['Ogni realtà va dal semplice omogeneo al complesso differenziato',
+              'La stessa legge vale per gli astri, i viventi e le società',
+              'Il progresso consiste nel differenziarsi progressivo delle parti',
+              'Ciò che era indistinto si articola in organi specializzati'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa distingue società militare e società industriale?',
+     opzioni:['Nella prima lo Stato comanda l\'individuo, nella seconda accade il contrario',
+              'Si passa dalla cooperazione imposta a quella volontaria',
+              'Alla centralizzazione forzata subentra la libertà dei singoli',
+              'Una appartiene al passato, l\'altra è la tendenza del futuro'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: evoluzione e progresso sono la stessa cosa? Una parola.'}
   ]
 }
 ];
