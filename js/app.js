@@ -563,7 +563,8 @@ const AREE={
   'Storia':           {col:'#2d5a27'},
   'Educazione Civica':{col:'#a1542f'},
   'Didattica':        {col:'#3f6d8c'},
-  'Strumenti':        {col:'#6b6459'}
+  'Strumenti':        {col:'#6b6459'},
+  'Prove':            {col:'#7a4b8c'}
 };
 function coloreArea(g){return (AREE[g]||{col:'var(--stone)'}).col;}
 
@@ -595,7 +596,8 @@ function vociExtra(){
     {g:'Didattica',k:'__voti__',    l:'Votazioni',              p:'120 capitoli pronti',      chi:'tutti'},
     {g:'Strumenti',k:'__tempo__',   l:'Linea del tempo',        p:'Storia e filosofia a confronto', chi:'tutti'},
     {g:'Strumenti',k:'__lavagna__', l:'Lavagna',                p:'Da proiettare in aula',    chi:'docente'},
-    {g:'Strumenti',k:'__map__',     l:'Mappa storica',          p:'Atlante interattivo',      chi:'tutti'}
+    {g:'Strumenti',k:'__map__',     l:'Mappa storica',          p:'Atlante interattivo',      chi:'tutti'},
+    {g:'Prove',    k:'__prove__',   l:'Banco di lavoro',        p:'Strumenti in costruzione', chi:'docente'}
   ];
 }
 
@@ -671,6 +673,7 @@ function mobChange(key){
   if(key==='__map__'){showMapView();return;}
   if(key==='__metodo__'){showMetodoView();return;}
   if(key==='__tempo__'){showTempoView();return;}
+  if(key==='__prove__'){showProveView();return;}
   if(key==='__consegna__'){showConsegnaView();return;}
   if(key==='__lavagna__'){showLavagnaView();return;}
   if(key==='__inbox__'){showInboxView();return;}
@@ -695,6 +698,7 @@ function navClick(el,key){
   if(key==='__map__'){showMapView();return;}
   if(key==='__metodo__'){showMetodoView();return;}
   if(key==='__tempo__'){showTempoView();return;}
+  if(key==='__prove__'){showProveView();return;}
   if(key==='__consegna__'){showConsegnaView();return;}
   if(key==='__lavagna__'){showLavagnaView();return;}
   if(key==='__inbox__'){showInboxView();return;}
@@ -712,6 +716,7 @@ function showMapView(){
   document.getElementById('lib-voti-view').style.display='none';
   document.getElementById('lib-tempo-view').style.display='none';
   document.getElementById('lib-consegna-view').style.display='none';
+  document.getElementById('lib-prove-view').style.display='none';
 }
 function showMetodoView(){
   document.getElementById('lib-head').style.display='none';
@@ -723,6 +728,7 @@ function showMetodoView(){
   document.getElementById('lib-voti-view').style.display='none';
   document.getElementById('lib-tempo-view').style.display='none';
   document.getElementById('lib-consegna-view').style.display='none';
+  document.getElementById('lib-prove-view').style.display='none';
 }
 /* La lavagna si carica solo la prima volta che la si apre: cosi'
    non tiene aperta una sessione di scrittura per chi non la usa,
@@ -744,6 +750,23 @@ function showConsegnaView(){
   const f=document.getElementById('lib-consegna-frame');
   f.src='consegna/index.html?'+Date.now();
   document.getElementById('lib-consegna-view').style.display='block';
+  document.getElementById('lib-prove-view').style.display='none';
+}
+/* Il banco di lavoro: gli strumenti mentre li costruiamo.
+   Lo vede solo chi insegna. */
+function showProveView(){
+  document.getElementById('lib-head').style.display='none';
+  document.getElementById('lib-modules').style.display='none';
+  document.getElementById('lib-map-view').style.display='none';
+  document.getElementById('lib-metodo-view').style.display='none';
+  document.getElementById('lib-tempo-view').style.display='none';
+  document.getElementById('lib-lavagna-view').style.display='none';
+  document.getElementById('lib-inbox-view').style.display='none';
+  document.getElementById('lib-voti-view').style.display='none';
+  document.getElementById('lib-consegna-view').style.display='none';
+  const f=document.getElementById('lib-prove-frame');
+  if(!f.getAttribute('src')) f.src='prove/index.html';
+  document.getElementById('lib-prove-view').style.display='block';
 }
 function showTempoView(){
   document.getElementById('lib-head').style.display='none';
@@ -757,6 +780,7 @@ function showTempoView(){
   if(!f.getAttribute('src')) f.src='tempo/index.html';
   document.getElementById('lib-tempo-view').style.display='block';
   document.getElementById('lib-consegna-view').style.display='none';
+  document.getElementById('lib-prove-view').style.display='none';
 }
 function showVotiView(){
   document.getElementById('lib-head').style.display='none';
@@ -770,6 +794,7 @@ function showVotiView(){
   document.getElementById('lib-voti-view').style.display='block';
   document.getElementById('lib-tempo-view').style.display='none';
   document.getElementById('lib-consegna-view').style.display='none';
+  document.getElementById('lib-prove-view').style.display='none';
 }
 function showInboxView(){
   document.getElementById('lib-head').style.display='none';
@@ -784,6 +809,7 @@ function showInboxView(){
   document.getElementById('lib-voti-view').style.display='none';
   document.getElementById('lib-tempo-view').style.display='none';
   document.getElementById('lib-consegna-view').style.display='none';
+  document.getElementById('lib-prove-view').style.display='none';
 }
 function showLavagnaView(){
   document.getElementById('lib-head').style.display='none';
@@ -797,6 +823,7 @@ function showLavagnaView(){
   document.getElementById('lib-voti-view').style.display='none';
   document.getElementById('lib-tempo-view').style.display='none';
   document.getElementById('lib-consegna-view').style.display='none';
+  document.getElementById('lib-prove-view').style.display='none';
 }
 /* Nasconde tutte le viste a pieno schermo e riporta a galla la
    libreria: la chiamano sia navClick sia mobChange. */
@@ -810,6 +837,7 @@ function hideMapView(){
   document.getElementById('lib-voti-view').style.display='none';
   document.getElementById('lib-tempo-view').style.display='none';
   document.getElementById('lib-consegna-view').style.display='none';
+  document.getElementById('lib-prove-view').style.display='none';
 }
 
 let searchDebounce=null;

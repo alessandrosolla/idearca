@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="it"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Prove — Idearca</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Jost',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  background:#faf8f3;color:#1c2b1a;font-weight:300;-webkit-font-smoothing:antialiased}
+.w{max-width:960px;margin:0 auto;padding:2.4rem 1.8rem 4rem}
+.k{font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:#8a9e87;font-weight:600}
+h1{font-family:'Cormorant Garamond',Georgia,serif;font-size:2.7rem;font-weight:400;margin:.35rem 0 .7rem}
+.s{font-size:.93rem;line-height:1.75;color:#5a6b58;max-width:66ch}
+.nota{margin:1.6rem 0 2.4rem;padding:1.1rem 1.3rem;border-left:3px solid #9a7c2e;
+  background:#f6f3ec;border-radius:0 10px 10px 0;font-size:.87rem;line-height:1.7;color:#5a6b58}
+.g{font-size:.63rem;letter-spacing:.2em;text-transform:uppercase;color:#9a7c2e;font-weight:700;
+  margin:2.4rem 0 1rem;display:flex;align-items:center;gap:.7rem}
+.g::after{content:'';flex:1;height:1px;background:rgba(45,90,39,.13)}
+.griglia{display:grid;grid-template-columns:repeat(auto-fill,minmax(272px,1fr));gap:.9rem}
+.p{border:1px solid rgba(45,90,39,.13);border-radius:12px;padding:1.1rem 1.2rem;background:#fff;
+  border-top:3px solid var(--c,#8a9e87);display:flex;flex-direction:column;gap:.35rem}
+.p b{font-size:.95rem;font-weight:500;line-height:1.3}
+.p p{font-size:.8rem;line-height:1.6;color:#5a6b58}
+.stato{margin-top:.5rem;font-size:.58rem;letter-spacing:.14em;text-transform:uppercase;
+  font-weight:700;color:var(--c,#8a9e87)}
+.p.pronto{--c:#2d5a27}.p.corso{--c:#9a7c2e}.p.attesa{--c:#8a9e87}.p.studio{--c:#3f6d8c}
+a.p{text-decoration:none;color:inherit;transition:transform .2s,box-shadow .2s}
+a.p:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(28,43,26,.1)}
+</style></head>
+<body><div class="w">
+  <div class="k">Idearca · Riservato al docente</div>
+  <h1>Prove</h1>
+  <p class="s">Il banco di lavoro. Qui finiscono gli strumenti mentre li costruiamo:
+  quelli che funzionano passano in Didattica o in Strumenti, gli altri restano qui
+  o vengono buttati. Nessuno studente vede questa sezione.</p>
+
+  <div class="nota">Si procede uno per volta. Un attrezzo entra in questa pagina
+  solo quando è utilizzabile in aula: niente segnaposto vuoti.</div>
+
+  <div class="g">In lavorazione</div>
+  <div class="griglia">
+    <div class="p corso"><b>Votazioni a squadre</b>
+      <p>Due squadre che si sfidano sulle stesse domande, con punteggio a schermo.
+      Costruito sopra il sistema di voto che già funziona.</p>
+      <span class="stato">Il prossimo</span></div>
+  </div>
+
+  <div class="g">In studio — logica e argomentazione</div>
+  <div class="griglia">
+    <div class="p studio"><b>Mappa argomentativa</b>
+      <p>Premesse che portano a una conclusione, con le fallacie da riconoscere.</p><span class="stato">Da progettare</span></div>
+    <div class="p studio"><b>Ricostruttore di sillogismi</b>
+      <p>Si trascinano le premesse, lo strumento dice se la forma è valida.</p><span class="stato">Da progettare</span></div>
+    <div class="p studio"><b>Palestra di logica</b>
+      <p>Tabelle di verità generate da sé sulle proposizioni scritte dallo studente.</p><span class="stato">Da progettare</span></div>
+    <div class="p studio"><b>Analizzatore di testo</b>
+      <p>Si incolla un brano, si evidenziano tesi, argomenti e obiezioni.</p><span class="stato">Da progettare</span></div>
+  </div>
+
+  <div class="g">In studio — filosofia</div>
+  <div class="griglia">
+    <div class="p studio"><b>Linea del tempo delle idee</b>
+      <p>Come cambiano «sostanza», «anima», «Stato» da Platone a Hegel.</p><span class="stato">Da progettare</span></div>
+    <div class="p studio"><b>Confrontatore di filosofi</b>
+      <p>Due colonne, la stessa domanda, due risposte a confronto.</p><span class="stato">Da progettare</span></div>
+    <div class="p studio"><b>Glossario ipertestuale</b>
+      <p>Ogni termine apre la definizione e i punti dei testi in cui compare.</p><span class="stato">Da progettare</span></div>
+    <div class="p studio"><b>Simulatore socratico</b>
+      <p>Un interlocutore che fa solo domande e non dà mai risposte.</p><span class="stato">Da progettare</span></div>
+  </div>
+
+  <div class="g">In studio — storia</div>
+  <div class="griglia">
+    <div class="p studio"><b>Linea del tempo sincronica</b>
+      <p>Che cosa accadeva nello stesso anno in parti diverse del mondo.</p><span class="stato">Da progettare</span></div>
+    <div class="p studio"><b>Macchina del contesto</b>
+      <p>Si inserisce un anno: che cosa si leggeva, si ascoltava, si indossava.</p><span class="stato">Da progettare</span></div>
+    <div class="p studio"><b>Diario immersivo</b>
+      <p>Fonti in prima persona, collocate sulla mappa nel punto in cui furono scritte.</p><span class="stato">Da progettare</span></div>
+    <div class="p studio"><b>Grafici animati</b>
+      <p>Popolazione, prodotto interno, migrazioni che si muovono nel tempo.</p><span class="stato">Da progettare</span></div>
+  </div>
+
+  <div class="g">In studio — l'ora di lezione</div>
+  <div class="griglia">
+    <div class="p studio"><b>Timer da proiettare</b>
+      <p>Grande, leggibile dall'ultimo banco.</p><span class="stato">Da progettare</span></div>
+    <div class="p studio"><b>Estrattore di studenti</b>
+      <p>Sorteggio con la classe che guarda.</p><span class="stato">Da progettare</span></div>
+    <div class="p studio"><b>Penna che raddrizza</b>
+      <p>Si traccia a mano libera, diventa una freccia o un riquadro puliti.</p><span class="stato">Da progettare</span></div>
+    <div class="p studio"><b>Generatore di mappe concettuali</b>
+      <p>Da un testo incollato a uno schema.</p><span class="stato">Da progettare</span></div>
+    <div class="p studio"><b>Wiki di classe</b>
+      <p>Costruita dagli studenti, corretta dal docente.</p><span class="stato">Da progettare</span></div>
+  </div>
+</div></body></html>

@@ -158,7 +158,10 @@ nav.scrolled{box-shadow:0 4px 32px rgba(28,43,26,0.07)}
 .hero-img-veil{position:absolute;inset:0;background:linear-gradient(155deg,rgba(237,242,235,.9) 0%,rgba(237,242,235,.68) 50%,rgba(237,242,235,.85) 100%);z-index:1}
 /* La didascalia del quadro: non più una scritta spenta in un angolo ma un
    invito acceso. Si clicca e l'affresco si apre intero. */
-.hero-img-credit{position:absolute;bottom:1rem;right:1.1rem;z-index:4;
+/* La didascalia stava in fondo all'immagine, cioe' sotto la piega:
+   per cliccarla bisognava scorrere. Ora sta in alto, dove il quadro
+   si vede appena la pagina si apre. */
+.hero-img-credit{position:absolute;top:5.4rem;right:1.1rem;z-index:4;
   display:inline-flex;align-items:center;gap:.5rem;
   font-family:'Jost',sans-serif;font-size:.6rem;letter-spacing:.11em;text-transform:uppercase;
   color:#e6d2a0;background:rgba(12,26,14,.5);border:1px solid rgba(196,164,78,.38);
@@ -199,7 +202,7 @@ nav.scrolled{box-shadow:0 4px 32px rgba(28,43,26,0.07)}
   .opera-x{top:1rem;right:1rem;transform:none;position:fixed}
   .opera-x:hover{transform:rotate(90deg)}
   .opera-img{max-height:52vh}
-  .hero-img-credit{font-size:.55rem;padding:.4rem .7rem;right:.8rem;bottom:.8rem}
+  .hero-img-credit{font-size:.55rem;padding:.4rem .7rem;right:.8rem;top:4.6rem}
 }
 .hero-geo{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none;z-index:2}
 .hero-geo svg{width:90%;height:90%;opacity:.05}
