@@ -5272,6 +5272,104 @@ const BANCA = [
               'Chi ha superato la morale nata dal risentimento dei deboli'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: chi decide che cosa vale, se non c\'è più un fondamento? Una parola.'}
+  ]},
+{
+  titolo: 'Filosofia contemporanea · 9 — Nietzsche: Zarathustra e l\'eterno ritorno',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: rivivresti la tua vita identica, all\'infinito? Una parola.'},
+
+    {tipo:'scelta', testo:'Che tipo di libro è Così parlò Zarathustra?',
+     opzioni:['Un poema profetico in prosa, fatto di immagini e parabole',
+              'Non un trattato ma un annuncio scritto come una scrittura sacra',
+              'Un testo che insegna per figure invece che per argomenti',
+              'Una poesia che pensa e un pensiero che si fa poesia'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa significa che il superuomo è «fedele alla terra»?',
+     opzioni:['Non cerca il senso in un altro mondo ma in questo, col corpo',
+              'Rifiuta ogni speranza collocata al di là della vita',
+              'Non separa l\'anima dal corpo che siamo per intero',
+              'Diffida di chi promette compensi dopo la morte'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa rappresentano le tre metamorfosi dello spirito?',
+     opzioni:['Il passaggio da chi obbedisce a chi si ribella a chi crea',
+              'Dal «tu devi» all\'«io voglio» fino all\'«io sono»',
+              'Il leone abbatte i vecchi valori ma non ne sa fare di nuovi',
+              'Solo il fanciullo sa giocare e inventare valori diversi'], giusta:0},
+
+    {tipo:'scelta', testo:'Chi è «l\'ultimo uomo»?',
+     opzioni:['Chi non regge il vuoto e si accontenta di piccole sicurezze',
+              'Il rovescio del superuomo: mediocrità al posto di grandezza',
+              'Ha inventato la felicità e ammicca soddisfatto di sé',
+              'Preferisce il comfort al rischio di creare qualcosa'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è il significato etico dell\'eterno ritorno?',
+     opzioni:['Agisci in modo da poter volere che quell\'attimo torni per sempre',
+              'Ogni scelta va misurata sulla voglia di riviverla infinite volte',
+              'Il criterio non è il dovere ma la pienezza dell\'istante',
+              'Vivere così che nessun momento sia da rimpiangere'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è davvero la volontà di potenza?',
+     opzioni:['Spinta di ogni vivente a crescere e a superare se stesso',
+              'Non comando sugli altri ma capacità creativa ed espansiva',
+              'Si misura da quanta resistenza si riesce a trasformare in forza',
+              'L\'opposto della rinuncia e della volontà del nulla'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa afferma il prospettivismo?',
+     opzioni:['Ogni conoscenza è un\'interpretazione fatta da un punto di vista',
+              'Non esiste uno sguardo assoluto sulle cose, nemmeno nella scienza',
+              'Non ci sono fatti nudi ma sempre letture della realtà',
+              'Una tesi vale per quanto favorisce la vita, non per la sua purezza'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: si può vivere senza garanzie? Una parola.'}
+  ]},
+{
+  titolo: 'Filosofia contemporanea · 10 — Freud e la psicoanalisi',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: quanto conosci davvero di te stesso? Una parola.'},
+
+    {tipo:'scelta', testo:'Come nasce l\'idea dell\'inconscio?',
+     opzioni:['Da sintomi corporei senza alcuna lesione organica che li spieghi',
+              'Dall\'isteria, che la medicina dell\'Ottocento non sapeva collocare',
+              'Da malattie che nascono nella psiche e non nel corpo',
+              'Da ricordi dimenticati che continuano però a far male'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è l\'inconscio in senso propriamente freudiano?',
+     opzioni:['Non ciò che è distratto ma ciò che una forza tiene fuori',
+              'Il materiale attivamente escluso dalla coscienza',
+              'Contenuti che la rimozione impedisce di ricordare',
+              'Ciò che non torna alla mente per quanto ci si sforzi'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è il transfert?',
+     opzioni:['Il paziente riversa sull\'analista i sentimenti verso i genitori',
+              'Rivivere nella cura affetti antichi rivolti a un\'altra persona',
+              'Un legame ambivalente che può aiutare o ostacolare l\'analisi',
+              'Amore e ostilità infantili spostati sulla figura del medico'], giusta:0},
+
+    {tipo:'scelta', testo:'Che rapporto c\'è fra Es, Io e Super-io?',
+     opzioni:['L\'Io media fra il desiderio, la norma interiorizzata e la realtà',
+              'Tre padroni severi si contendono la stessa personalità',
+              'Il piacere spinge, la coscienza morale frena, il mondo limita',
+              'La parte organizzata deve tenere insieme spinte opposte'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è un sogno per Freud?',
+     opzioni:['La realizzazione travestita di un desiderio rimosso',
+              'La via maestra che porta a conoscere l\'inconscio',
+              'Dietro la scena che ricordiamo c\'è un contenuto nascosto',
+              'La censura trasforma ciò che è inaccettabile in immagini'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa insegnano lapsus e dimenticanze?',
+     opzioni:['Nella mente nulla accade per caso: tutto ha una causa',
+              'Anche gli errori banali hanno un senso da decifrare',
+              'Fra intenzione cosciente e pensiero rimosso nasce un compromesso',
+              'Ciò che chiamiamo distrazione dice qualcosa di noi'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché la civiltà produce disagio?',
+     opzioni:['Chiede di rinunciare a pulsioni in cambio di sicurezza',
+              'Il prezzo della vita comune è una repressione permanente',
+              'Ci protegge dalla natura ma limita ciò che desideriamo',
+              'Il malessere non si toglie: appartiene alla struttura stessa'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: quanta libertà vale la nostra sicurezza? Una parola.'}
   ]
 }
 ];
