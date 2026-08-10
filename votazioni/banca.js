@@ -5762,6 +5762,104 @@ const BANCA = [
               'Le categorie sono prodotto: la sorgente è l\'atto stesso'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: l\'arte serve a conoscere o a qualcos\'altro? Una parola.'}
+  ]},
+{
+  titolo: 'Filosofia contemporanea · 19 — La Scuola di Francoforte e la critica al capitalismo',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: la ragione ci ha resi davvero più liberi? Una parola.'},
+
+    {tipo:'scelta', testo:'Che nesso vede Weber fra calvinismo e capitalismo?',
+     opzioni:['Il successo nel lavoro diventa segno di essere fra i salvati',
+              'Si lavora senza godere, perché il guadagno è un dovere',
+              'L\'ascesi non si vive fuori dal mondo ma dentro il mestiere',
+              'Una fede produce un comportamento economico e poi svanisce'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è la «gabbia d\'acciaio»?',
+     opzioni:['Un sistema razionale che nessuno controlla ma che vincola tutti',
+              'Burocrazia ed economia diventano strutture impersonali',
+              'L\'ordine che ci libera dall\'arbitrio finisce per imprigionarci',
+              'L\'individuo nasce dentro un cosmo già organizzato'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è l\'egemonia in Gramsci?',
+     opzioni:['Il dominio che si regge sul consenso e non sulla forza',
+              'Chi comanda dirige anche la cultura e la morale di un paese',
+              'Prima di prendere il potere bisogna conquistare le teste',
+              'Scuola, stampa e chiesa contano quanto la polizia'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è la reificazione secondo Lukács?',
+     opzioni:['I rapporti fra uomini diventano cose che dominano gli uomini',
+              'Ciò che abbiamo prodotto ci si presenta come forza estranea',
+              'Le relazioni sociali assumono l\'aspetto di oggetti naturali',
+              'Il feticismo della merce esteso a tutta la vita sociale'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è la tesi della «Dialettica dell\'illuminismo»?',
+     opzioni:['La ragione che voleva liberare si rovescia in dominio',
+              'Il progetto illuminista produce una nuova forma di barbarie',
+              'Una ragione che calcola i mezzi non sa più scegliere i fini',
+              'Il mito era già ragione e la ragione ridiventa mito'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa denuncia Adorno con «industria culturale»?',
+     opzioni:['La cultura di massa è merce standardizzata, non voce del popolo',
+              'Il divertimento diventa rinuncia a pensare la realtà',
+              'Si crede di scegliere fra opzioni già decise da altri',
+              'Vengono prodotti insieme i prodotti e i bisogni di averli'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è l\'aura per Benjamin?',
+     opzioni:['L\'unicità dell\'opera legata al suo qui e ora irripetibile',
+              'Ciò che la fotografia e il cinema fanno svanire',
+              'La lontananza che un originale conserva anche se vicino',
+              'Il legame dell\'opera con la tradizione e con il rito'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: chi decide che cosa desideri? Una parola.'}
+  ]},
+{
+  titolo: 'Filosofia contemporanea · 20 — Strutturalismo, Foucault e decostruzione',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: siamo noi a parlare la lingua o è lei a parlare noi? Una parola.'},
+
+    {tipo:'scelta', testo:'Su quale idea si fonda il metodo strutturalista?',
+     opzioni:['Ogni elemento vale per la posizione che occupa nel sistema',
+              'Una lingua non è una somma di parole ma un gioco di differenze',
+              'Si studia l\'insieme nel suo funzionamento, non la sua storia',
+              'Le regole che contano non sono quelle di cui siamo consapevoli'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa scopre Lévi-Strauss nei miti?',
+     opzioni:['Non sono invenzioni libere ma seguono strutture inconsce',
+              'Lavorano su coppie opposte come crudo e cotto, natura e cultura',
+              'Sono i miti a pensarsi negli uomini, non il contrario',
+              'Hanno una forma che si ripete con variazioni, come la musica'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa afferma il «pensiero selvaggio»?',
+     opzioni:['Il pensiero primitivo non è inferiore: classifica in modo rigoroso',
+              'Esiste una scienza del concreto diversa ma non povera',
+              'Le culture lontane non sono tappe arretrate della nostra',
+              'Le stesse operazioni logiche lavorano su materiali diversi'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è l\'episteme secondo Foucault?',
+     opzioni:['Il sistema di regole che decide che cosa in un\'epoca si può pensare',
+              'Un sapere implicito che nessuno ha scelto e che condiziona tutti',
+              'Ciò che rende possibili le teorie prima ancora che nascano',
+              'Cambia per rotture improvvise, non per progresso graduale'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa significa «morte dell\'uomo» in Foucault?',
+     opzioni:['Il soggetto fondatore è una costruzione storica recente',
+              'Psicoanalisi, linguistica ed etnologia hanno eroso quella figura',
+              'L\'uomo come centro del sapere è nato tardi e può finire',
+              'Non è un lamento ma l\'apertura di uno spazio nuovo'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa mostra il Panopticon?',
+     opzioni:['Chi si sente osservato finisce per sorvegliarsi da solo',
+              'Il potere moderno non picchia: dispone gli spazi e gli sguardi',
+              'Scuola, ospedale e fabbrica ripetono la stessa architettura',
+              'Basta l\'incertezza di essere visti per ottenere obbedienza'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa indica la «différance» di Derrida?',
+     opzioni:['Ogni segno rimanda ad altri segni e il senso è sempre rinviato',
+              'Non esiste un significato pieno che chiuda la catena',
+              'Un termine che si vede scritto ma non si sente pronunciare',
+              'La presenza piena della verità è una finzione della metafisica'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: quanto di ciò che pensi hai scelto tu? Una parola.'}
   ]
 }
 ];
