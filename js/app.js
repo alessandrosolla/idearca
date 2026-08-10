@@ -1246,8 +1246,8 @@ async function caricaVetrina(){
       <div class="peek-nums">
         ${num(righe.length,'materiali','#2d5a27')}
         ${num(materie,'materie','#9a7c2e')}
-        ${num('120','capitoli con domande','#a1542f')}
-        ${num('1080','domande pronte','#3f6d8c')}
+        ${num('120','capitoli con domande','#7a4b8c')}
+        ${num('1080','domande pronte','#7a4b8c')}
       </div>
 
       <section class="peek-sec">
@@ -1256,9 +1256,9 @@ async function caricaVetrina(){
         sono quelli veri, contati adesso dall'archivio.</p>
         <div class="peek-grid">
           ${card(slide,'Slide di lezione','Un capitolo per volta, con la tavola delle date, il glossario e le domande per l\'orale.','#2d5a27')}
-          ${card(fonti,'Fonti','Documenti veri da leggere in classe: editti, lettere, trattati, pagine di filosofi.','#9a7c2e')}
-          ${card(appro,'Approfondimenti','Una scheda di ripasso per ogni capitolo: tavola sinottica, glossario, domande.','#a1542f')}
-          ${card(compiti+risorse,'Compiti e risorse','Consegne assegnate agli studenti e collegamenti scelti: video, mappe, archivi.','#3f6d8c')}
+          ${card(fonti,'Fonti','Documenti veri da leggere in classe: editti, lettere, trattati, pagine di filosofi.','#2d5a27')}
+          ${card(appro,'Approfondimenti','Una scheda di ripasso per ogni capitolo: tavola sinottica, glossario, domande.','#2d5a27')}
+          ${card(compiti+risorse,'Compiti e risorse','Consegne assegnate agli studenti e collegamenti scelti: video, mappe, archivi.','#2d5a27')}
           ${card('1080','Domande per le votazioni','Scritte una per una: nove per ogni capitolo, con i distrattori costruiti sugli errori che gli studenti fanno davvero.','#7a4b8c')}
           ${card('312','Eventi in linea del tempo','Storia e filosofia affiancate sullo stesso asse, dal 3500 a.C. a oggi.','#2f7a6a')}
         </div>

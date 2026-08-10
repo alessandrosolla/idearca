@@ -6,18 +6,14 @@
 <title>Chi sono · Cosa è Idearca — Alessandro Solla</title>
 <meta name="description" content="Alessandro Solla, docente abilitato di Storia e Filosofia (A-19). Che cos'è Idearca: una piattaforma didattica progettata, scritta e mantenuta da me.">
 <link rel="icon" type="image/svg+xml" href="../favicon.svg">
-<link rel="stylesheet" href="../css/stile.css?v=20260811b">
+<link rel="stylesheet" href="../css/stile.css?v=20260811c">
 <style>
-body{background:linear-gradient(180deg,#f3f1e8 0%,#eef1e9 40%,#f4f2ea 100%)}
+body{background:
+  radial-gradient(1100px 520px at 50% -8%, rgba(45,90,39,.09), transparent 62%),
+  repeating-linear-gradient(112deg, rgba(45,90,39,.028) 0 1px, transparent 1px 26px),
+  linear-gradient(180deg,#f3f1e8 0%,#eef1e9 42%,#f4f2ea 100%);
+  background-attachment:fixed}
 .pg{max-width:900px;margin:0 auto;padding:7rem 2rem 5rem;position:relative;z-index:1}
-/* Due fregi ai lati: a sinistra un colonnato, a destra un ramo
-   d'alloro con la sfera del sapere. Riempiono i margini senza
-   rubare attenzione: stanno al 12% e non si cliccano. */
-.fregio{position:fixed;top:12%;height:76vh;width:120px;pointer-events:none;z-index:0;opacity:.12}
-.fregio svg{width:100%;height:100%}
-.fregio-sx{left:2vw;color:#2d5a27}
-.fregio-dx{right:2vw;color:#9a7c2e}
-@media(max-width:1280px){.fregio{display:none}}
 .tappa span a{color:var(--forest)}
 .tappa .pub{display:inline-block;margin-top:.4rem;font-size:.74rem;letter-spacing:.06em;
   color:var(--gold);font-weight:600}
@@ -118,25 +114,6 @@ h3.sotto::before{content:'';width:22px;height:3px;border-radius:2px;
   </ul>
 </nav>
 
-<div class="fregio fregio-sx" aria-hidden="true">
-  <svg viewBox="0 0 120 900" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
-    <path d="M20 96h80M28 96v640M92 96v640M16 88h88l-10-14H26z"/>
-    <path d="M40 96v640M52 96v640M68 96v640M80 96v640"/>
-    <path d="M20 736h80l8 18H12z"/>
-    <circle cx="60" cy="52" r="22"/><path d="M60 30v44M38 52h44"/>
-    <path d="M30 800c14-18 46-18 60 0M30 830c14-18 46-18 60 0M30 860c14-18 46-18 60 0"/>
-  </svg>
-</div>
-<div class="fregio fregio-dx" aria-hidden="true">
-  <svg viewBox="0 0 120 900" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
-    <path d="M60 60v700"/>
-    <path d="M60 96c-26 12-34 40-34 40s26 14 34-2c8 16 34 2 34 2s-8-28-34-40z"/>
-    <path d="M60 260c-26 12-34 40-34 40s26 14 34-2c8 16 34 2 34 2s-8-28-34-40z"/>
-    <path d="M60 424c-26 12-34 40-34 40s26 14 34-2c8 16 34 2 34 2s-8-28-34-40z"/>
-    <circle cx="60" cy="620" r="30"/><path d="M60 590v60M30 620h60"/>
-    <path d="M26 760h68M34 780h52M42 800h36"/>
-  </svg>
-</div>
 <div class="pg">
 
   <span class="pg-eye" id="chi">Chi sono</span>
@@ -225,8 +202,8 @@ h3.sotto::before{content:'';width:22px;height:3px;border-radius:2px;
   <div class="numeroni">
     <div class="numerone" style="--a:#2d5a27"><b data-numero="materiali">522</b><span>materiali</span></div>
     <div class="numerone" style="--a:#9a7c2e"><b data-numero="materie">8</b><span>materie</span></div>
-    <div class="numerone" style="--a:#a1542f"><b data-numero="capitoli">120</b><span>capitoli con domande</span></div>
-    <div class="numerone" style="--a:#3f6d8c"><b data-numero="domande">1080</b><span>domande pronte</span></div>
+    <div class="numerone" style="--a:#7a4b8c"><b data-numero="capitoli">120</b><span>capitoli con domande</span></div>
+    <div class="numerone" style="--a:#7a4b8c"><b data-numero="domande">1080</b><span>domande pronte</span></div>
   </div>
 
   <h3 class="sotto">Di che cosa è fatta</h3>
@@ -234,10 +211,10 @@ h3.sotto::before{content:'';width:22px;height:3px;border-radius:2px;
     <div class="pezzo" style="--a:#2d5a27"><b>L'archivio</b>
       <p>Slide, fonti, approfondimenti e compiti per filosofia, storia ed educazione
       civica, ordinati per periodo e non per data di caricamento.</p></div>
-    <div class="pezzo" style="--a:#9a7c2e"><b>Le votazioni in aula</b>
+    <div class="pezzo" style="--a:#7a4b8c"><b>Le votazioni in aula</b>
       <p>Gli studenti rispondono dal telefono inquadrando un QR, i risultati compaiono
       alla lavagna. Centoventi capitoli hanno già le domande scritte.</p></div>
-    <div class="pezzo" style="--a:#a1542f"><b>Gli strumenti</b>
+    <div class="pezzo" style="--a:#2f7a6a"><b>Gli strumenti</b>
       <p>Lavagna da proiettare, atlante storico interattivo, linea del tempo che
       affianca gli eventi alle idee.</p></div>
     <div class="pezzo" style="--a:#3f6d8c"><b>Le consegne</b>
@@ -281,6 +258,6 @@ h3.sotto::before{content:'';width:22px;height:3px;border-radius:2px;
 })();
 try{const t=localStorage.getItem('idearca-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}
 </script>
-<script src="../js/numeri.js?v=20260811b" data-base="../"></script>
+<script src="../js/numeri.js?v=20260811c" data-base="../"></script>
 </body>
 </html>

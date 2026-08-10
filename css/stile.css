@@ -1080,3 +1080,20 @@ html[data-ruolo="osservatore"] .lib-add-link{display:none !important}
   .stars-svg-wrap>svg{min-width:760px;height:auto}
   .stars-intro{font-size:.88rem}
 }
+
+/* ── IL RIQUADRO DELLE RIPETIZIONI SUL TELEFONO ─────────────
+   Usciva dai bordi per due motivi insieme: la griglia restava a
+   due colonne, e l'indirizzo di posta — una parola lunga senza
+   spazi — allargava il pulsante oltre il contenitore. Serve sia
+   la colonna unica sia il permesso di andare a capo dentro le
+   parole lunghe. */
+@media(max-width:860px){
+  .rip-cta{display:block;padding:1.7rem 1.2rem;border-radius:14px}
+  .rip-cta-copy{margin-bottom:1.4rem}
+  .rip-cta-copy h3{font-size:1.45rem;line-height:1.15}
+  .rip-cta-actions{display:flex;flex-direction:column;gap:.7rem}
+}
+.rip-cta,.rip-cta-copy,.rip-cta-actions,.rip-btn,.rip-btn-txt{min-width:0}
+.rip-btn{flex-wrap:nowrap}
+.rip-btn-txt{flex:1;min-width:0}
+.rip-btn-txt strong,.rip-btn-txt small{display:block;overflow-wrap:anywhere;word-break:break-word}
