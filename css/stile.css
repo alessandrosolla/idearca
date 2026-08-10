@@ -167,14 +167,18 @@ nav.scrolled{box-shadow:0 4px 32px rgba(28,43,26,0.07)}
    allunga e scopre il titolo dell'opera. */
 .hero-img-credit{position:absolute;left:1.4rem;top:calc(68px + 1.4rem);z-index:4;
   display:inline-flex;align-items:center;gap:.6rem;cursor:pointer;
-  padding:.42rem;border-radius:100px;max-width:2.5rem;overflow:hidden;
+  padding:.4rem;border-radius:100px;max-width:2.6rem;overflow:hidden;
   background:rgba(12,26,14,.42);border:1px solid rgba(196,164,78,.35);
   -webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);
   font-family:'Jost',sans-serif;font-size:.68rem;color:#e6d2a0;white-space:nowrap;
   transition:max-width .45s cubic-bezier(.2,.8,.3,1),background .3s,border-color .3s,padding .3s}
-.hic-cerchio{flex:none;width:1.6rem;height:1.6rem;border-radius:50%;
-  display:flex;align-items:center;justify-content:center;
-  background:rgba(196,164,78,.2);color:#e8d9a0;transition:background .3s}
+/* dentro il cerchio un ritaglio del quadro stesso: si capisce a
+   colpo d'occhio che si sta guardando La Scuola di Atene */
+.hic-cerchio{flex:none;width:1.75rem;height:1.75rem;border-radius:50%;
+  border:1px solid rgba(232,217,160,.55);
+  background:url('https://wsrv.nl/?url=upload.wikimedia.org/wikipedia/commons/thumb/4/49/%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg/1280px-%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg&w=200&q=70&output=webp') center 34%/200% no-repeat;
+  transition:box-shadow .3s,transform .3s}
+.hero-img-credit:hover .hic-cerchio{box-shadow:0 0 0 2px rgba(212,178,86,.5);transform:scale(1.06)}
 .hic-testo{padding-right:.7rem;opacity:0;transition:opacity .35s .1s}
 .hic-testo em{font-style:italic}
 .hero-img-credit:hover,.hero-img-credit:focus-visible{max-width:26rem;
@@ -638,7 +642,8 @@ html[data-theme="dark"] .theme-toggle .icon-moon{display:block}
 .peek-head{padding:2.2rem 2.4rem 1.4rem;border-bottom:1px solid var(--border)}
 .peek-title{font-family:'Cormorant Garamond',serif;font-size:2.4rem;font-weight:400;
   color:var(--ink);line-height:1.05;margin:.4rem 0 .7rem}
-.peek-lede{font-size:.9rem;line-height:1.8;color:var(--stone);font-weight:300;max-width:62ch}
+.peek-lede{font-size:.92rem;line-height:1.8;color:var(--stone);font-weight:300;max-width:64ch}
+.peek-lede strong{color:var(--ink);font-weight:500}
 .peek-scroll{padding:1.6rem 2.4rem 2rem;overflow-y:auto;flex:1}
 .peek-foot{padding:1.1rem 2.4rem;border-top:1px solid var(--border);background:var(--parchment);
   display:flex;gap:.8rem;align-items:center;flex-wrap:wrap}

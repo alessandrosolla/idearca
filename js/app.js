@@ -1251,7 +1251,9 @@ async function caricaVetrina(){
       </div>
 
       <section class="peek-sec">
-        <div class="peek-sec-title">Di che cosa è fatta</div>
+        <div class="peek-sec-title">Quanto contiene</div>
+        <p class="peek-sec-nota">Il materiale è diviso in quattro scaffali. I numeri
+        sono quelli veri, contati adesso dall'archivio.</p>
         <div class="peek-grid">
           ${card(slide,'Slide di lezione','Un capitolo per volta, con la tavola delle date, il glossario e le domande per l\'orale.','#2d5a27')}
           ${card(fonti,'Fonti','Documenti veri da leggere in classe: editti, lettere, trattati, pagine di filosofi.','#9a7c2e')}
@@ -1261,7 +1263,9 @@ async function caricaVetrina(){
       </section>
 
       <section class="peek-sec">
-        <div class="peek-sec-title">Gli strumenti per l'aula</div>
+        <div class="peek-sec-title">Che cosa si può fare in classe</div>
+        <p class="peek-sec-nota">Oltre all'archivio, Idearca è quello che accende il
+        proiettore: strumenti costruiti per l'ora di lezione.</p>
         <div class="peek-tools">
           ${tool('voto','Votazioni in classe','Gli studenti rispondono dal telefono con un QR, i risultati compaiono alla LIM. 120 capitoli già pronti.')}
           ${tool('attivita','Attività strutturate','Debate e jigsaw con tempi, regole e fonti: si aprono e si portano in classe così come sono.')}
@@ -1287,19 +1291,15 @@ async function caricaVetrina(){
       </section>`:''}
 
       <section class="peek-sec">
-        <div class="peek-sec-title">Prova gli strumenti</div>
-        <p class="peek-sec-nota">Questi funzionano davvero, subito, senza registrarsi.</p>
+        <div class="peek-sec-title">Provalo adesso</div>
+        <p class="peek-sec-nota">Uno strumento vero, funzionante, senza registrarsi.</p>
         <div class="peek-open">
           <a class="peek-open-card" style="--a:#3f6d8c" href="tempo/index.html" target="_blank" rel="noopener">
             <span class="peek-open-tipo">Strumento</span>
             <span class="peek-open-tit">Linea del tempo</span>
             <span class="peek-open-mat">312 eventi, storia e filosofia a confronto</span>
             <span class="peek-open-apri">Aprila <b>&#8599;</b></span></a>
-          <a class="peek-open-card" style="--a:#a1542f" href="metodologie/index.html" target="_blank" rel="noopener">
-            <span class="peek-open-tipo">Strumento</span>
-            <span class="peek-open-tit">Attivit&agrave; per la classe</span>
-            <span class="peek-open-mat">Debate e jigsaw con tempi, regole e fonti</span>
-            <span class="peek-open-apri">Aprile <b>&#8599;</b></span></a>
+          
         </div>
       </section>
     `;
