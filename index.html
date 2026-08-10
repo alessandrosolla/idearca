@@ -22,7 +22,7 @@
 <meta name="twitter:description" content="Materiali strutturati di Filosofia, Storia ed Educazione Civica — piattaforma didattica di Alessandro Solla.">
 <meta name="twitter:image" content="https://alessandrosolla.github.io/idearca/og-image.png">
 <script>document.documentElement.setAttribute('data-page','home');try{var t=localStorage.getItem('idearca-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
-<link rel="stylesheet" href="css/stile.css?v=20260810a">
+<link rel="stylesheet" href="css/stile.css?v=20260810b">
 </head>
 <body style="">
 <div id="scroll-progress" aria-hidden="true"></div>
@@ -56,7 +56,10 @@
   </div>
   <div class="hero-right" id="login-section">
     <div class="hero-img-veil"></div>
-    <span class="hero-img-credit">Raffaello — La Scuola di Atene (1509–1511)</span>
+    <button class="hero-img-credit" onclick="apriOpera()" title="Guarda l'opera intera" aria-label="Guarda l'opera intera: Raffaello, La Scuola di Atene">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" width="12" height="12" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"></path></svg>
+      <span>Raffaello — La Scuola di Atene <em>(1509–1511)</em></span>
+    </button>
     <div class="hero-geo">
       <svg viewBox="0 0 500 500" fill="none">
         <circle cx="250" cy="250" r="230" stroke="#2d5a27" stroke-width=".6" class="geo-ring" style="animation-delay:.1s"></circle>
@@ -247,6 +250,24 @@
   <div class="foot-links"><a onclick="window.scrollTo({top:0,behavior:&#39;smooth&#39;})">Home</a><a onclick="go(&#39;materie-section&#39;)">Materie</a><a onclick="go(&#39;ripetizioni-section&#39;)">Ripetizioni</a><a onclick="openPricing()">Accesso</a><a onclick="go(&#39;contacts-section&#39;)">Contatti</a></div>
   <span class="foot-note">© 2025 Idearca — tutti i diritti riservati</span>
 </footer>
+
+<!-- L'OPERA A TUTTO SCHERMO -->
+<div class="opera-overlay" id="opera-overlay" onclick="if(event.target===this)chiudiOpera()" role="dialog" aria-modal="true" aria-label="Raffaello, La Scuola di Atene">
+  <figure class="opera-box">
+    <button class="opera-x" onclick="chiudiOpera()" aria-label="Chiudi">✕</button>
+    <div class="opera-img-wrap"><img class="opera-img" id="opera-img" alt="Raffaello Sanzio, La Scuola di Atene, affresco della Stanza della Segnatura"></div>
+    <figcaption class="opera-cap">
+      <div class="opera-cap-head">
+        <strong>La Scuola di Atene</strong>
+        <span>Raffaello Sanzio · 1509–1511 · Stanza della Segnatura, Musei Vaticani</span>
+      </div>
+      <p>Sotto la volta, due uomini camminano al centro e discutono. Platone alza un dito
+      verso il cielo, Aristotele tende la mano aperta verso la terra: le idee o le cose,
+      il modello o l'esperienza. Attorno a loro cinquanta filosofi continuano la stessa
+      lite da duemila anni. È il motivo per cui questa piattaforma si chiama Idearca.</p>
+    </figcaption>
+  </figure>
+</div>
 
 <!-- LIGHTBOX -->
 <div class="lightbox" id="lightbox" onclick="this.classList.remove(&#39;on&#39;)"><img id="lightbox-img" src="./index_files/index_24.html" alt=""></div>
@@ -645,7 +666,7 @@
     <div id="codes-body" style="padding:0 2rem 2rem;max-height:40vh;overflow-y:auto"></div>
   </div>
 </div>
-<script src="js/app.js?v=20260810a"></script>
+<script src="js/app.js?v=20260810b"></script>
 <script src="js/d3-array.min.js?v=20260720"></script>
 <script src="js/d3-geo.min.js?v=20260720"></script>
 <script src="js/globe.js?v=20260720"></script>

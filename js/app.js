@@ -685,6 +685,26 @@ function openMatModal(key){document.getElementById('mat-'+key).classList.add('on
 function closeMatModal(key){document.getElementById('mat-'+key).classList.remove('on');document.body.style.overflow='';}
 function openLightbox(src){document.getElementById('lightbox-img').src=src;document.getElementById('lightbox').classList.add('on');}
 
+/* ── L'AFFRESCO DI RAFFAELLO ────────────────────────────────
+   L'immagine grande (quasi un megabyte) non viene scaricata
+   all'apertura del sito: parte solo la prima volta che qualcuno
+   clicca sulla didascalia. Chi non la apre non la paga.
+   ──────────────────────────────────────────────────────────── */
+const OPERA_SRC='https://wsrv.nl/?url=upload.wikimedia.org/wikipedia/commons/thumb/4/49/%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg/1920px-%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg&w=1800&q=82&output=webp';
+function apriOpera(){
+  const img=document.getElementById('opera-img');
+  if(!img.getAttribute('src')) img.src=OPERA_SRC;
+  document.getElementById('opera-overlay').classList.add('on');
+  document.body.style.overflow='hidden';
+}
+function chiudiOpera(){
+  document.getElementById('opera-overlay').classList.remove('on');
+  document.body.style.overflow='';
+}
+document.addEventListener('keydown',e=>{
+  if(e.key==='Escape'&&document.getElementById('opera-overlay')?.classList.contains('on')) chiudiOpera();
+});
+
 function initTabsScrollHint(){
   const el=document.querySelector('#lib-head .lib-tabs');
   const hint=document.querySelector('#lib-head .lib-tabs-hint');

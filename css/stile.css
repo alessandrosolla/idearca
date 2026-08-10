@@ -137,7 +137,51 @@ nav.scrolled{box-shadow:0 4px 32px rgba(28,43,26,0.07)}
 .hero-right::before{content:'';position:absolute;inset:0;background:#edf2eb url('https://wsrv.nl/?url=upload.wikimedia.org/wikipedia/commons/thumb/4/49/%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg/1280px-%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg&w=900&q=72&output=webp') center 18%/cover no-repeat;filter:sepia(.2) saturate(.9) brightness(.96);transition:transform 9s ease;transform:scale(1.06)}
 .hero-right:hover::before{transform:scale(1.0)}
 .hero-img-veil{position:absolute;inset:0;background:linear-gradient(155deg,rgba(237,242,235,.9) 0%,rgba(237,242,235,.68) 50%,rgba(237,242,235,.85) 100%);z-index:1}
-.hero-img-credit{position:absolute;bottom:.8rem;right:1rem;font-size:.58rem;letter-spacing:.09em;color:rgba(90,107,88,.45);z-index:2;text-transform:uppercase;font-family:'Jost',sans-serif}
+/* La didascalia del quadro: non più una scritta spenta in un angolo ma un
+   invito acceso. Si clicca e l'affresco si apre intero. */
+.hero-img-credit{position:absolute;bottom:1rem;right:1.1rem;z-index:4;
+  display:inline-flex;align-items:center;gap:.5rem;
+  font-family:'Jost',sans-serif;font-size:.6rem;letter-spacing:.11em;text-transform:uppercase;
+  color:#e6d2a0;background:rgba(12,26,14,.5);border:1px solid rgba(196,164,78,.38);
+  padding:.46rem .8rem;border-radius:100px;cursor:pointer;
+  -webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);
+  box-shadow:0 2px 18px rgba(0,0,0,.28);
+  transition:color .25s,border-color .25s,background .25s,box-shadow .25s,transform .25s}
+.hero-img-credit em{font-style:normal;opacity:.65}
+.hero-img-credit svg{flex:none;opacity:.8;transition:opacity .25s,transform .25s}
+.hero-img-credit:hover{color:#fff6df;border-color:rgba(212,178,86,.9);background:rgba(20,41,22,.75);
+  box-shadow:0 4px 26px rgba(196,164,78,.32);transform:translateY(-2px)}
+.hero-img-credit:hover svg{opacity:1;transform:scale(1.12)}
+.hero-img-credit:focus-visible{outline:2px solid var(--gold-light);outline-offset:3px}
+
+/* L'affresco a tutto schermo */
+.opera-overlay{display:none;position:fixed;inset:0;z-index:950;
+  background:rgba(8,16,9,.94);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);
+  align-items:center;justify-content:center;padding:2.5rem 2rem;overflow-y:auto}
+.opera-overlay.on{display:flex;animation:operaIn .3s ease both}
+@keyframes operaIn{from{opacity:0}to{opacity:1}}
+.opera-box{max-width:1180px;width:100%;margin:auto;position:relative;
+  display:flex;flex-direction:column;gap:1.2rem;animation:operaUp .45s cubic-bezier(.2,.8,.3,1) both}
+@keyframes operaUp{from{opacity:0;transform:translateY(22px) scale(.985)}to{opacity:1;transform:none}}
+.opera-img-wrap{border-radius:8px;overflow:hidden;box-shadow:0 30px 90px rgba(0,0,0,.6);background:#0c1a0e;min-height:120px}
+.opera-img{display:block;width:100%;height:auto;max-height:74vh;object-fit:contain;background:#0c1a0e}
+.opera-cap{color:#dfe7da;max-width:74ch}
+.opera-cap-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:.4rem 1rem;margin-bottom:.6rem}
+.opera-cap-head strong{font-family:'Cormorant Garamond',serif;font-size:1.55rem;font-weight:500;color:#f4efe2}
+.opera-cap-head span{font-size:.67rem;letter-spacing:.14em;text-transform:uppercase;color:#c4a44e}
+.opera-cap p{font-size:.92rem;line-height:1.8;font-weight:300;color:#bccab8}
+.opera-x{position:absolute;top:-.4rem;right:0;transform:translateY(-100%);
+  width:38px;height:38px;border-radius:50%;border:1px solid rgba(255,255,255,.22);
+  background:rgba(255,255,255,.07);color:#e8eee4;font-size:1rem;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;transition:all .22s}
+.opera-x:hover{background:rgba(255,255,255,.16);border-color:rgba(255,255,255,.4);transform:translateY(-100%) rotate(90deg)}
+@media(max-width:860px){
+  .opera-overlay{padding:4.5rem 1rem 2rem}
+  .opera-x{top:1rem;right:1rem;transform:none;position:fixed}
+  .opera-x:hover{transform:rotate(90deg)}
+  .opera-img{max-height:52vh}
+  .hero-img-credit{font-size:.55rem;padding:.4rem .7rem;right:.8rem;bottom:.8rem}
+}
 .hero-geo{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none;z-index:2}
 .hero-geo svg{width:90%;height:90%;opacity:.05}
 .geo-ring{stroke-dasharray:1200;stroke-dashoffset:1200;animation:drawring 2.5s ease forwards}
@@ -532,7 +576,7 @@ html[data-theme="dark"] .theme-toggle .icon-moon{display:block}
 /* velo scuro sul Raffaello */
 .hero.night .hero-right::before{filter:sepia(.28) saturate(.85) brightness(.62) contrast(1.02)}
 .hero.night .hero-img-veil{background:linear-gradient(155deg,rgba(12,26,14,.62) 0%,rgba(12,26,14,.28) 45%,rgba(12,26,14,.72) 100%)}
-.hero.night .hero-img-credit{color:rgba(230,238,226,.5)}
+.hero.night .hero-img-credit{color:#e6d2a0}
 .hero.night .hero-geo svg{opacity:.13}
 /* particelle: da .06 quasi invisibile a pulviscolo dorato leggibile */
 .hero.night .particle{background:var(--gold-light)}
