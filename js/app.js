@@ -400,6 +400,21 @@ window.addEventListener('scroll',()=>{
   const bar=document.getElementById('scroll-progress');
   if(bar){const h=document.documentElement.scrollHeight-window.innerHeight;bar.style.width=(h>0?(window.scrollY/h)*100:0)+'%';}
 },{passive:true});
+/* Il cassetto del menu sul telefono. */
+function apriMenu(){
+  document.getElementById('menu-mobile').classList.add('on');
+  document.getElementById('hamburger').setAttribute('aria-expanded','true');
+  document.body.style.overflow='hidden';
+}
+function chiudiMenu(){
+  document.getElementById('menu-mobile').classList.remove('on');
+  document.getElementById('hamburger').setAttribute('aria-expanded','false');
+  document.body.style.overflow='';
+}
+document.addEventListener('keydown',e=>{
+  if(e.key==='Escape'&&document.getElementById('menu-mobile')?.classList.contains('on')) chiudiMenu();
+});
+
 function scrollToLogin(){document.getElementById('login-section').scrollIntoView({behavior:'smooth',block:'center'});}
 function resetMsg(){document.getElementById('codice').classList.remove('err','ok');const m=document.getElementById('msg');m.textContent='';m.className='msg';}
 /* ── CHIAVE: getKeys gestisce TUTTI i formati ── */
@@ -1251,14 +1266,21 @@ async function caricaVetrina(){
       </div>
 
       <section class="peek-sec">
-        <div class="peek-sec-title">Quanto contiene</div>
-        <p class="peek-sec-nota">Il materiale è diviso in quattro scaffali. I numeri
-        sono quelli veri, contati adesso dall'archivio.</p>
-        <div class="peek-grid">
+        <div class="peek-sec-title">Quello che ho raccolto</div>
+        <p class="peek-sec-nota">L'archivio dei materiali, diviso per scaffale.
+        I numeri sono quelli veri, contati adesso.</p>
+        <div class="peek-grid peek-grid-4">
           ${card(slide,'Slide di lezione','Un capitolo per volta, con la tavola delle date, il glossario e le domande per l\'orale.','#2d5a27')}
           ${card(fonti,'Fonti','Documenti veri da leggere in classe: editti, lettere, trattati, pagine di filosofi.','#2d5a27')}
           ${card(appro,'Approfondimenti','Una scheda di ripasso per ogni capitolo: tavola sinottica, glossario, domande.','#2d5a27')}
           ${card(compiti+risorse,'Compiti e risorse','Consegne assegnate agli studenti e collegamenti scelti: video, mappe, archivi.','#2d5a27')}
+        </div>
+      </section>
+
+      <section class="peek-sec">
+        <div class="peek-sec-title">Quello che ho scritto a mano</div>
+        <p class="peek-sec-nota">Non raccolto altrove: composto una voce per volta.</p>
+        <div class="peek-grid">
           ${card('1080','Domande per le votazioni','Scritte una per una: nove per ogni capitolo, con i distrattori costruiti sugli errori che gli studenti fanno davvero.','#7a4b8c')}
           ${card('312','Eventi in linea del tempo','Storia e filosofia affiancate sullo stesso asse, dal 3500 a.C. a oggi.','#2f7a6a')}
         </div>

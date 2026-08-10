@@ -22,7 +22,7 @@
 <meta name="twitter:description" content="Materiali strutturati di Filosofia, Storia ed Educazione Civica — piattaforma didattica di Alessandro Solla.">
 <meta name="twitter:image" content="https://alessandrosolla.github.io/idearca/og-image.png">
 <script>document.documentElement.setAttribute('data-page','home');try{var t=localStorage.getItem('idearca-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
-<link rel="stylesheet" href="css/stile.css?v=20260811c">
+<link rel="stylesheet" href="css/stile.css?v=20260811f">
 </head>
 <body style="">
 <div id="scroll-progress" aria-hidden="true"></div>
@@ -36,12 +36,27 @@
     <li><a href="chi/index.html">Chi sono</a></li>
     
   </ul>
+  <button class="nav-hamburger" onclick="apriMenu()" aria-label="Apri il menu" aria-expanded="false" id="hamburger">
+    <span></span><span></span><span></span>
+  </button>
   <button class="nav-cta" onclick="scrollToLogin()">Area studenti</button>
   <button class="theme-toggle" id="theme-toggle-home" onclick="toggleTheme()" aria-label="Cambia tema" title="Cambia tema" style="margin-left:.8rem">
     <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>
     <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path></svg>
   </button>
 </nav>
+<!-- Il menu del telefono: le voci non sparivano in un cassetto,
+     sparivano e basta. Ora c'e' un cassetto. -->
+<div class="menu-mobile" id="menu-mobile" onclick="if(event.target===this)chiudiMenu()">
+  <div class="menu-mobile-foglio">
+    <button class="menu-mobile-x" onclick="chiudiMenu()" aria-label="Chiudi">&#10005;</button>
+    <a onclick="chiudiMenu();go('materie-section')">Materie</a>
+    <a onclick="chiudiMenu();go('ripetizioni-section')">Ripetizioni</a>
+    <a href="chi/index.html">Chi sono</a>
+    <a onclick="chiudiMenu();go('contacts-section')">Contatti</a>
+    <button class="menu-mobile-cta" onclick="chiudiMenu();scrollToLogin()">Area studenti</button>
+  </div>
+</div>
 <section class="hero night">
   <div class="hero-left">
     <span class="eyebrow">Filosofia · Storia · Educazione Civica</span>
@@ -695,8 +710,8 @@
     <div id="codes-body" style="padding:0 2rem 2rem;max-height:40vh;overflow-y:auto"></div>
   </div>
 </div>
-<script src="js/numeri.js?v=20260811c"></script>
-<script src="js/app.js?v=20260811c"></script>
+<script src="js/numeri.js?v=20260811f"></script>
+<script src="js/app.js?v=20260811f"></script>
 <script src="js/d3-array.min.js?v=20260720"></script>
 <script src="js/d3-geo.min.js?v=20260720"></script>
 <script src="js/globe.js?v=20260720"></script>

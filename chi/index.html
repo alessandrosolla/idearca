@@ -6,14 +6,24 @@
 <title>Chi sono · Cosa è Idearca — Alessandro Solla</title>
 <meta name="description" content="Alessandro Solla, docente abilitato di Storia e Filosofia (A-19). Che cos'è Idearca: una piattaforma didattica progettata, scritta e mantenuta da me.">
 <link rel="icon" type="image/svg+xml" href="../favicon.svg">
-<link rel="stylesheet" href="../css/stile.css?v=20260811c">
+<link rel="stylesheet" href="../css/stile.css?v=20260811f">
 <style>
-body{background:
-  radial-gradient(1100px 520px at 50% -8%, rgba(45,90,39,.09), transparent 62%),
-  repeating-linear-gradient(112deg, rgba(45,90,39,.028) 0 1px, transparent 1px 26px),
-  linear-gradient(180deg,#f3f1e8 0%,#eef1e9 42%,#f4f2ea 100%);
-  background-attachment:fixed}
+body{background:linear-gradient(180deg,#f5f3ea 0%,#eff2ea 45%,#f5f3eb 100%)}
 .pg{max-width:900px;margin:0 auto;padding:7rem 2rem 5rem;position:relative;z-index:1}
+/* Le due tavole ai lati: si tracciano da sole man mano che si
+   scende, e scorrono un po' più lente della pagina. */
+.tavola{position:fixed;top:0;height:100vh;width:210px;pointer-events:none;z-index:0;
+  display:flex;align-items:center;will-change:transform}
+.tavola svg{width:100%;height:88%;opacity:.34}
+.tavola-sx{left:1.4vw;color:#2d5a27}
+.tavola-dx{right:1.4vw;color:#9a7c2e}
+.tavola svg *{stroke-dasharray:var(--l,900);stroke-dashoffset:var(--l,900)}
+.tavola.tracciata svg *{stroke-dashoffset:0;transition:stroke-dashoffset 1.5s cubic-bezier(.3,.7,.3,1)}
+@media(max-width:1340px){.tavola{display:none}}
+@media(prefers-reduced-motion:reduce){
+  .tavola svg *{stroke-dashoffset:0}
+  .tavola{transition:none}
+}
 .tappa span a{color:var(--forest)}
 .tappa .pub{display:inline-block;margin-top:.4rem;font-size:.74rem;letter-spacing:.06em;
   color:var(--gold);font-weight:600}
@@ -76,7 +86,10 @@ h3.sotto::before{content:'';width:22px;height:3px;border-radius:2px;
   font-weight:600;color:var(--a);line-height:1}
 .numerone span{font-size:.6rem;letter-spacing:.13em;text-transform:uppercase;color:var(--stone)}
 
-.pezzi{display:grid;grid-template-columns:repeat(2,1fr);gap:.9rem;margin-top:1.2rem}
+.pezzi{display:grid;grid-template-columns:repeat(2,1fr);gap:.9rem;margin:.5rem 0 1.8rem}
+.gruppo-et{display:flex;align-items:center;gap:.6rem;margin:1.8rem 0 0;
+  font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:var(--stone)}
+.gruppo-et span{width:14px;height:3px;border-radius:2px;background:var(--a);display:block}
 .pezzo{border:1px solid color-mix(in srgb,var(--a) 24%,transparent);border-top:3px solid var(--a);
   border-radius:12px;padding:1.2rem 1.3rem;
   background:linear-gradient(150deg,color-mix(in srgb,var(--a) 10%,#fbfaf5),#fbfaf5);
@@ -113,6 +126,94 @@ h3.sotto::before{content:'';width:22px;height:3px;border-radius:2px;
     <li><a href="../index.html">Torna al sito</a></li>
   </ul>
 </nav>
+
+<!-- ══ LE DUE TAVOLE ══════════════════════════════════════
+     A sinistra il tempio greco: stilobate, colonne scanalate,
+     capitelli, architrave con triglifi e metope, timpano.
+     A destra la sfera armillare: cerchi, meridiani, eclittica,
+     il sostegno e il ramo d'alloro. Sono disegnate a linee — un
+     centinaio in tutto — e si scoprono mentre si scorre, come
+     se qualcuno le stesse tracciando adesso. ══════════════════ -->
+<div class="tavola tavola-sx" aria-hidden="true">
+  <svg viewBox="0 0 200 1000" fill="none" stroke="currentColor" stroke-width="1.3"
+       stroke-linecap="round" stroke-linejoin="round" preserveAspectRatio="xMidYMid meet">
+    <!-- timpano -->
+    <path d="M14 178 L100 96 L186 178"/><path d="M22 190 L100 116 L178 190"/>
+    <path d="M40 178h120"/><path d="M56 168l44-42 44 42"/>
+    <circle cx="100" cy="152" r="9"/><path d="M100 143v18M91 152h18"/>
+    <!-- cornice e architrave -->
+    <path d="M10 190h180M10 202h180M14 214h172M18 226h164"/>
+    <!-- triglifi e metope -->
+    <path d="M28 202v24M34 202v24M40 202v24"/>
+    <path d="M64 202v24M70 202v24M76 202v24"/>
+    <path d="M100 202v24M106 202v24M112 202v24"/>
+    <path d="M136 202v24M142 202v24M148 202v24"/>
+    <path d="M172 202v24M178 202v24"/>
+    <!-- capitelli -->
+    <path d="M26 226h32l-4 14H30zM32 240h20"/>
+    <path d="M84 226h32l-4 14H88zM90 240h20"/>
+    <path d="M142 226h32l-4 14h-24zM148 240h20"/>
+    <!-- colonna 1: fusto con scanalature -->
+    <path d="M34 240v560M50 240v560"/>
+    <path d="M37 244v552M40 246v548M43 244v552M46 246v548"/>
+    <path d="M31 800h22M29 812h26M27 824h30"/>
+    <!-- colonna 2 -->
+    <path d="M92 240v560M108 240v560"/>
+    <path d="M95 244v552M98 246v548M101 244v552M104 246v548"/>
+    <path d="M89 800h22M87 812h26M85 824h30"/>
+    <!-- colonna 3 -->
+    <path d="M150 240v560M166 240v560"/>
+    <path d="M153 244v552M156 246v548M159 244v552M162 246v548"/>
+    <path d="M147 800h22M145 812h26M143 824h30"/>
+    <!-- stilobate -->
+    <path d="M14 836h172M8 850h184M2 864h196"/>
+    <!-- gradini -->
+    <path d="M10 878h180M6 892h188M2 906h196"/>
+    <!-- meandro greco -->
+    <path d="M20 934h14v22h-8v-14h22v22h-8v-14h22v22h-8v-14h22v22h-8v-14h22v22h-8v-14h22v22h-8v-14h14"/>
+    <path d="M20 970h160"/>
+  </svg>
+</div>
+
+<div class="tavola tavola-dx" aria-hidden="true">
+  <svg viewBox="0 0 200 1000" fill="none" stroke="currentColor" stroke-width="1.3"
+       stroke-linecap="round" stroke-linejoin="round" preserveAspectRatio="xMidYMid meet">
+    <!-- sfera armillare -->
+    <circle cx="100" cy="300" r="86"/>
+    <circle cx="100" cy="300" r="74"/>
+    <ellipse cx="100" cy="300" rx="86" ry="30"/>
+    <ellipse cx="100" cy="300" rx="86" ry="56"/>
+    <ellipse cx="100" cy="300" rx="30" ry="86"/>
+    <ellipse cx="100" cy="300" rx="56" ry="86"/>
+    <path d="M14 300h172M100 214v172"/>
+    <path d="M39 239 L161 361M161 239 L39 361"/>
+    <circle cx="100" cy="300" r="13"/><circle cx="100" cy="300" r="5"/>
+    <!-- graduazioni sull'anello -->
+    <path d="M100 214v10M100 376v10M14 300h10M176 300h10"/>
+    <path d="M139 226l-5 9M61 226l5 9M139 374l-5-9M61 374l5-9"/>
+    <path d="M175 261l-9 4M25 261l9 4M175 339l-9-4M25 339l9-4"/>
+    <!-- sostegno -->
+    <path d="M100 386v92"/><path d="M76 478h48"/>
+    <path d="M70 478c0 18 14 26 30 26s30-8 30-26"/>
+    <path d="M100 504v34M74 538h52M66 552h68"/>
+    <!-- ramo d'alloro -->
+    <path d="M100 590v300"/>
+    <path d="M100 620c-24 4-32 22-32 22s22 10 32-4"/>
+    <path d="M100 620c24 4 32 22 32 22s-22 10-32-4"/>
+    <path d="M100 672c-24 4-32 22-32 22s22 10 32-4"/>
+    <path d="M100 672c24 4 32 22 32 22s-22 10-32-4"/>
+    <path d="M100 724c-24 4-32 22-32 22s22 10 32-4"/>
+    <path d="M100 724c24 4 32 22 32 22s-22 10-32-4"/>
+    <path d="M100 776c-24 4-32 22-32 22s22 10 32-4"/>
+    <path d="M100 776c24 4 32 22 32 22s-22 10-32-4"/>
+    <path d="M100 828c-24 4-32 22-32 22s22 10 32-4"/>
+    <path d="M100 828c24 4 32 22 32 22s-22 10-32-4"/>
+    <!-- volumi impilati -->
+    <path d="M56 902h88v14H56zM52 916h96v14H52zM60 930h80v14H60z"/>
+    <path d="M64 902v14M78 902v14M122 902v14M60 916v14M74 916v14M126 916v14"/>
+    <path d="M56 958h88M62 970h76"/>
+  </svg>
+</div>
 
 <div class="pg">
 
@@ -207,19 +308,24 @@ h3.sotto::before{content:'';width:22px;height:3px;border-radius:2px;
   </div>
 
   <h3 class="sotto">Di che cosa è fatta</h3>
+  <p class="gruppo-et"><span style="--a:#2d5a27"></span>Quello che ho raccolto</p>
   <div class="pezzi">
     <div class="pezzo" style="--a:#2d5a27"><b>L'archivio</b>
       <p>Slide, fonti, approfondimenti e compiti per filosofia, storia ed educazione
-      civica, ordinati per periodo e non per data di caricamento.</p></div>
-    <div class="pezzo" style="--a:#7a4b8c"><b>Le votazioni in aula</b>
-      <p>Gli studenti rispondono dal telefono inquadrando un QR, i risultati compaiono
-      alla lavagna. Centoventi capitoli hanno già le domande scritte.</p></div>
-    <div class="pezzo" style="--a:#2f7a6a"><b>Gli strumenti</b>
-      <p>Lavagna da proiettare, atlante storico interattivo, linea del tempo che
-      affianca gli eventi alle idee.</p></div>
-    <div class="pezzo" style="--a:#3f6d8c"><b>Le consegne</b>
+      civica, ordinati per periodo del programma e non per data di caricamento.</p></div>
+    <div class="pezzo" style="--a:#2d5a27"><b>Le consegne</b>
       <p>Gli studenti caricano il compito dal telefono dentro finestre temporali che
       apro io. Solo io leggo: nessuno vede quello degli altri.</p></div>
+  </div>
+
+  <p class="gruppo-et"><span style="--a:#7a4b8c"></span>Quello che ho scritto a mano</p>
+  <div class="pezzi">
+    <div class="pezzo" style="--a:#7a4b8c"><b>Le votazioni in aula</b>
+      <p>Gli studenti rispondono dal telefono inquadrando un QR, i risultati compaiono
+      alla lavagna. Centoventi capitoli hanno già le domande scritte: 1080 in tutto.</p></div>
+    <div class="pezzo" style="--a:#2f7a6a"><b>La linea del tempo</b>
+      <p>Trecentododici eventi con storia e filosofia affiancate sullo stesso asse,
+      dal 3500 a.C. a oggi: si vede che le idee non nascono in una stanza vuota.</p></div>
   </div>
 
   <h3 class="sotto">Come è costruita</h3>
@@ -248,6 +354,39 @@ h3.sotto::before{content:'';width:22px;height:3px;border-radius:2px;
 /* Se un giorno metti una foto in img/ritratto.jpg compare da sola,
    al posto delle iniziali. Piccola e tonda: in un curriculum online
    una foto grande toglie spazio a quello che hai fatto. */
+/* Ogni linea si traccia da sé: misuro quanto è lunga, la parto
+   invisibile e poi la scopro. Poi, scorrendo, le due tavole si
+   muovono a velocità diverse dal testo — così la pagina acquista
+   profondità senza che nulla si metta a lampeggiare. */
+(function tavole(){
+  const tav=[...document.querySelectorAll('.tavola')];
+  if(!tav.length) return;
+  tav.forEach(t=>{
+    t.querySelectorAll('svg *').forEach((el,i)=>{
+      let l=900; try{ l=Math.ceil(el.getTotalLength())||900; }catch(e){}
+      el.style.setProperty('--l', l);
+      el.style.transitionDelay=(i*14)+'ms';
+    });
+    /* il doppio requestAnimationFrame da solo non basta: se la
+       scheda non e' in primo piano il browser lo mette in pausa e
+       il disegno resta invisibile. Un timer di scorta lo accende
+       comunque. */
+    requestAnimationFrame(()=>requestAnimationFrame(()=>t.classList.add('tracciata')));
+    setTimeout(()=>t.classList.add('tracciata'), 120);
+  });
+  let atteso=false;
+  addEventListener('scroll',()=>{
+    if(atteso) return;
+    atteso=true;
+    requestAnimationFrame(()=>{
+      const y=scrollY;
+      tav[0].style.transform='translateY('+(-y*0.09)+'px)';
+      if(tav[1]) tav[1].style.transform='translateY('+(y*0.06)+'px)';
+      atteso=false;
+    });
+  },{passive:true});
+})();
+
 (function(){
   const img=new Image();
   img.onload=()=>{
@@ -258,6 +397,6 @@ h3.sotto::before{content:'';width:22px;height:3px;border-radius:2px;
 })();
 try{const t=localStorage.getItem('idearca-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}
 </script>
-<script src="../js/numeri.js?v=20260811c" data-base="../"></script>
+<script src="../js/numeri.js?v=20260811f" data-base="../"></script>
 </body>
 </html>

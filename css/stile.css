@@ -549,13 +549,13 @@ html[data-theme="dark"] .theme-toggle .icon-moon{display:block}
 .access-wall h3{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:300;color:var(--stone)}
 .access-wall p{font-size:.82rem;color:var(--stone-light);line-height:1.65;max-width:36ch}
 @media(max-width:960px){
-  nav{padding:1rem 1.5rem}.nav-links{display:none}
+  nav{padding:1rem 1.1rem}.nav-links{display:none}.nav-hamburger{display:flex}.nav-cta{display:none}
   .hero{grid-template-columns:1fr}.hero-left{padding:5.5rem 1.5rem 3rem}
   .hero-headline{font-size:3rem}.hero-right{padding:2.5rem 1.5rem}
   .illus-strip{grid-template-columns:1fr}
   .intro-strip{grid-template-columns:1fr}.intro-item{border-right:none;border-bottom:1px solid var(--border)}.intro-item:last-child{border-bottom:none}
   .section,.contacts{padding:3.5rem 1.5rem}.quote-band{padding:4rem 1.5rem}
-  .rip-section{padding:3.5rem 1.5rem}
+  .rip-section{padding:3.2rem .9rem}
   .materie-grid{grid-template-columns:1fr}.quote-inner{grid-template-columns:1fr;gap:3rem}
   .sec-head{flex-direction:column;align-items:flex-start;gap:.8rem}
   .contacts-grid{grid-template-columns:1fr}
@@ -668,8 +668,9 @@ html[data-theme="dark"] .theme-toggle .icon-moon{display:block}
   font-weight:600;margin-bottom:.9rem;display:flex;align-items:center;gap:.7rem}
 .peek-sec-title::after{content:'';flex:1;height:1px;background:var(--border)}
 
-.peek-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.8rem}
-@media(max-width:820px){.peek-grid{grid-template-columns:repeat(2,1fr)}}
+.peek-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:.8rem}
+.peek-grid-4{grid-template-columns:repeat(2,1fr)}
+@media(max-width:640px){.peek-grid,.peek-grid-4{grid-template-columns:1fr}}
 .peek-card{border:1px solid color-mix(in srgb,var(--a,var(--forest)) 22%,transparent);border-left:3px solid var(--a,var(--forest));
   border-radius:10px;padding:1rem 1.1rem;
   background:linear-gradient(150deg,color-mix(in srgb,var(--a,var(--forest)) 9%,#fbfaf5),#fbfaf5);
@@ -1088,12 +1089,46 @@ html[data-ruolo="osservatore"] .lib-add-link{display:none !important}
    la colonna unica sia il permesso di andare a capo dentro le
    parole lunghe. */
 @media(max-width:860px){
-  .rip-cta{display:block;padding:1.7rem 1.2rem;border-radius:14px}
-  .rip-cta-copy{margin-bottom:1.4rem}
-  .rip-cta-copy h3{font-size:1.45rem;line-height:1.15}
-  .rip-cta-actions{display:flex;flex-direction:column;gap:.7rem}
+  .rip-section{padding:3.2rem .9rem}
+  .rip-cta{display:block;padding:2rem 1.5rem 2.1rem;border-radius:16px}
+  .rip-cta-copy{margin-bottom:1.7rem}
+  .rip-cta-copy h3{font-size:1.7rem;line-height:1.12;margin-bottom:.8rem}
+  .rip-cta-copy>p{font-size:.92rem;line-height:1.7;margin-bottom:1.3rem}
+  .rip-cta-actions{display:flex;flex-direction:column;gap:.85rem}
+  .rip-btn{padding:1.05rem 1.1rem;gap:.95rem;border-radius:14px}
+  .rip-btn-ic{width:42px;height:42px}
+  .rip-btn-txt strong{font-size:.97rem}
+  .rip-btn-txt small{font-size:.82rem;line-height:1.45}
 }
 .rip-cta,.rip-cta-copy,.rip-cta-actions,.rip-btn,.rip-btn-txt{min-width:0}
 .rip-btn{flex-wrap:nowrap}
 .rip-btn-txt{flex:1;min-width:0}
 .rip-btn-txt strong,.rip-btn-txt small{display:block;overflow-wrap:anywhere;word-break:break-word}
+
+/* ── IL MENU DEL TELEFONO ───────────────────────────────────
+   Sotto gli 860 pixel le voci di navigazione sparivano senza
+   lasciare nulla al loro posto: dal telefono non si poteva
+   raggiungere né Materie né Ripetizioni né Chi sono. */
+.nav-hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;
+  cursor:pointer;padding:.5rem;margin-left:auto}
+.nav-hamburger span{display:block;width:23px;height:2px;border-radius:2px;background:var(--ink);
+  transition:transform .3s,opacity .3s}
+#main-nav:not(.scrolled) .nav-hamburger span{background:#f4f1e8}
+.menu-mobile{display:none;position:fixed;inset:0;z-index:400;
+  background:rgba(10,20,11,.55);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}
+.menu-mobile.on{display:block}
+.menu-mobile-foglio{position:absolute;top:0;right:0;bottom:0;width:min(78vw,320px);
+  background:linear-gradient(165deg,#13291a,#0c1a0e);padding:5rem 1.8rem 2rem;
+  display:flex;flex-direction:column;gap:.3rem;
+  box-shadow:-20px 0 60px rgba(0,0,0,.4);animation:menuEntra .32s cubic-bezier(.2,.8,.3,1) both}
+@keyframes menuEntra{from{transform:translateX(100%)}to{transform:none}}
+.menu-mobile-foglio a{font-family:'Jost',sans-serif;font-size:.95rem;letter-spacing:.1em;
+  text-transform:uppercase;color:#e6eee2;text-decoration:none;cursor:pointer;
+  padding:1rem .3rem;border-bottom:1px solid rgba(255,255,255,.1)}
+.menu-mobile-foglio a:active{color:var(--gold-light)}
+.menu-mobile-cta{margin-top:1.6rem;font-family:'Jost',sans-serif;font-size:.78rem;
+  letter-spacing:.14em;text-transform:uppercase;padding:1rem;border-radius:4px;cursor:pointer;
+  border:none;background:linear-gradient(135deg,#c4a44e,#9a7c2e);color:#12240f;font-weight:600}
+.menu-mobile-x{position:absolute;top:1.3rem;right:1.4rem;width:38px;height:38px;border-radius:50%;
+  border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.07);color:#e8eee4;
+  font-size:1rem;cursor:pointer}
