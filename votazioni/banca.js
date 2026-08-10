@@ -5468,6 +5468,104 @@ const BANCA = [
               'Comprendere un testo cambia anche chi lo sta leggendo'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: la tecnica è uno strumento o un destino? Una parola.'}
+  ]},
+{
+  titolo: 'Filosofia contemporanea · 13 — Jaspers e Sartre: la filosofia dell\'esistenza',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: chi decide chi sei? Una parola.'},
+
+    {tipo:'scelta', testo:'Che cosa accomuna i filosofi dell\'esistenza?',
+     opzioni:['Mettono al centro l\'individuo concreto invece dei sistemi',
+              'Prendono sul serio la finitezza, il limite e la morte',
+              'La libertà non è un dato ma un compito da assumere',
+              'Nessun sistema può contenere l\'esistenza di ciascuno'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa non può fare la scienza secondo Jaspers?',
+     opzioni:['Dire perché valga la pena vivere e quali valori seguire',
+              'Il senso della scienza non si dimostra scientificamente',
+              'Conosce parti del mondo ma non ne abbraccia la totalità',
+              'Orienta nel mondo ma non dà una direzione alla vita'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa sono le situazioni-limite?',
+     opzioni:['Dolore, morte, lotta e colpa: limiti che non si possono togliere',
+              'Confini contro cui l\'esistenza urta e non può oltrepassare',
+              'Sperimentarle e esistere, per Jaspers, sono la stessa cosa',
+              'Situazioni che non si risolvono ma vanno solo affrontate'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è il naufragio in Jaspers?',
+     opzioni:['Lo scacco della ragione che apre al di là di se stessa',
+              'Ogni tentativo di afferrare l\'essere fallisce, ma non invano',
+              'Il fallimento diventa la porta verso la trascendenza',
+              'L\'essere eccede sempre l\'orizzonte in cui lo cerchiamo'], giusta:0},
+
+    {tipo:'scelta', testo:'Che differenza c\'è fra essere in-sé e per-sé?',
+     opzioni:['Le cose sono ciò che sono; la coscienza è ciò che non è ancora',
+              'L\'in-sé è pieno e identico, il per-sé introduce il nulla',
+              'Una realtà riposa in se stessa, l\'altra è sempre fuori di sé',
+              'Solo con la coscienza entrano nel mondo mancanza e possibilità'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa significa «l\'esistenza precede l\'essenza»?',
+     opzioni:['Nessuna natura ci precede: diventiamo ciò che scegliamo',
+              'L\'uomo non è progettato da nessuno prima di esistere',
+              'Siamo condannati a essere liberi, anche non scegliendo',
+              'Ogni definizione di noi arriva dopo le nostre azioni'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è la malafede secondo Sartre?',
+     opzioni:['Fingere di essere una cosa per non rispondere delle proprie scelte',
+              'Trattare se stessi come se si avesse un\'identità fissa',
+              'Il cameriere che recita il ruolo come fosse la sua natura',
+              'Sapere di essere liberi e negarlo a se stessi'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: l\'altro è un limite o una possibilità? Una parola.'}
+  ]},
+{
+  titolo: 'Filosofia contemporanea · 14 — L\'Esistenzialismo: caratteri generali',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: perché il Novecento diventa il secolo dell\'angoscia? Una parola.'},
+
+    {tipo:'scelta', testo:'In quale clima nasce l\'esistenzialismo?',
+     opzioni:['Fra le due guerre, quando crollano le grandi certezze ottocentesche',
+              'Dopo un conflitto che ha reso evidenti morte, colpa e nulla',
+              'Quando idealismo e positivismo non convincono più nessuno',
+              'In un\'Europa che ha perso fiducia nel progresso'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa significa che l\'esistenza è un modo d\'essere «proprio dell\'uomo»?',
+     opzioni:['L\'uomo non è dato una volta per tutte come le altre cose',
+              'Esistere significa stare fuori di sé, aperti a un oltre',
+              'Solo l\'uomo deve decidere che cosa fare del proprio essere',
+              'Le cose sono, l\'uomo invece ha da essere'], giusta:0},
+
+    {tipo:'scelta', testo:'Contro quali filosofie polemizza l\'esistenzialismo?',
+     opzioni:['Quelle che sciolgono il singolo in un processo impersonale',
+              'Quelle che dimenticano la finitezza e i limiti dell\'uomo',
+              'Quelle che riducono l\'esistenza a un fatto già determinato',
+              'Quelle che scambiano l\'uomo per l\'Assoluto'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa aggiunge la letteratura all\'esistenzialismo?',
+     opzioni:['Racconta l\'assurdo e la scelta invece di limitarsi a definirli',
+              'Kafka mostra la minaccia inafferrabile dell\'insignificanza',
+              'Camus chiama assurdo il divorzio fra ragione e realtà',
+              'Dostoevskij mette i personaggi davanti al peso di scegliere'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché la deiezione non è un difetto morale?',
+     opzioni:['È una struttura dell\'esistenza, non una colpa da correggere',
+              'Perdersi nelle cose appartiene al nostro modo di stare al mondo',
+              'L\'autenticità non la elimina: la assume consapevolmente',
+              'La quotidianità è già sempre così, per chiunque'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché in Jaspers la scelta non è mai illimitata?',
+     opzioni:['Si sceglie sempre dentro una situazione che non abbiamo scelto',
+              'Le condizioni di fatto restringono ciò che possiamo volere',
+              'La libertà si esercita accettando l\'unica possibilità reale',
+              'Nessuno decide da un punto neutro fuori dalla storia'], giusta:0},
+
+    {tipo:'scelta', testo:'Su che cosa divergono Heidegger, Jaspers e Sartre?',
+     opzioni:['Sull\'esito: il nulla, la trascendenza o la libertà assoluta',
+              'Concordano sul limite ma non su ciò che lo oltrepassa',
+              'Uno cerca l\'essere, uno la trascendenza, uno nessuna delle due',
+              'La finitezza è comune, la risposta che le danno no'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: si vive meglio con o senza certezze? Una parola.'}
   ]
 }
 ];
