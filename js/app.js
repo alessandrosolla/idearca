@@ -76,7 +76,7 @@ function openTracks(){
   const s=JSON.parse(sessionStorage.getItem('ix')||'{}');
   if(s.ruolo!=='docente')return; // accessibile solo in modalità docente
   document.getElementById('page-home').style.display='none';
-  document.getElementById('page-library').style.display='none';
+  document.getElementById('page-library').classList.remove('aperta');
   document.getElementById('page-tracks').style.display='block';
   document.documentElement.setAttribute('data-mode','intl');
   segnaPagina('tracks');
@@ -85,7 +85,7 @@ function openTracks(){
 function exitIntlToLibrary(){
   document.getElementById('page-tracks').style.display='none';
   document.getElementById('page-ib').style.display='none';
-  document.getElementById('page-library').style.display='block';
+  document.getElementById('page-library').classList.add('aperta');
   document.documentElement.removeAttribute('data-mode');
   segnaPagina('library');
   window.scrollTo(0,0);
@@ -461,7 +461,7 @@ async function login(){
 }
 function showLibrary(){
   document.getElementById('page-home').style.display='none';
-  document.getElementById('page-library').style.display='block';
+  document.getElementById('page-library').classList.add('aperta');
   segnaPagina('library');
   window.scrollTo(0,0);
   const s=JSON.parse(sessionStorage.getItem('ix')||'{}');
@@ -511,6 +511,44 @@ async function loadLibStats(keys){
    capire dove ci si trovava bisognava leggere. Ora ogni area ha
    il suo colore e ogni materia porta scritto il secolo che copre.
    ──────────────────────────────────────────────────────────── */
+
+/* ── I SIGILLI ──────────────────────────────────────────────
+   Ogni materia porta il proprio segno, disegnato a mano in SVG e
+   stampato in filigrana dietro l'intestazione. Non è decorazione
+   a caso: sono i simboli con cui quella materia si riconosce —
+   il meandro dei Greci, l'arco a sesto acuto dei medievali, la
+   rosa dei venti di chi attraversa gli oceani.
+   Restano al 7% di opacità: si vedono senza farsi leggere.
+   ──────────────────────────────────────────────────────────── */
+const SIGILLI={
+  'fil-antica':
+    '<path d="M14 78h72M22 78V34M78 78V34M18 34h66l-8-8H26z"/><path d="M30 34v44M42 34v44M58 34v44M70 34v44"/><path d="M50 26V12M40 18h20"/>',
+  'fil-medievale':
+    '<path d="M50 12C34 30 28 46 28 62v24h44V62c0-16-6-32-22-50z"/><path d="M50 34c-8 10-11 20-11 28v24M50 34c8 10 11 20 11 28v24"/><path d="M28 86h44"/>',
+  'fil-moderna':
+    '<circle cx="50" cy="50" r="30"/><ellipse cx="50" cy="50" rx="30" ry="11"/><ellipse cx="50" cy="50" rx="11" ry="30"/><circle cx="50" cy="50" r="4"/><path d="M50 8v6M50 86v6M8 50h6M86 50h6"/>',
+  'fil-contemporanea':
+    '<path d="M12 62c8-20 16-20 24 0s16 20 24 0 16-20 24 0"/><path d="M12 38c8-20 16-20 24 0s16 20 24 0 16-20 24 0"/><circle cx="50" cy="50" r="5"/>',
+  'sto-preistoria':
+    '<path d="M50 14L18 34v44h64V34z"/><path d="M18 34h64"/><path d="M30 78V50h12v28M58 78V50h12v28"/><path d="M50 14v-6"/><path d="M12 86h76"/>',
+  'sto-medievale':
+    '<path d="M20 86V38h60v48z"/><path d="M20 38V24h10v8h10v-8h10v8h10v-8h10v14"/><path d="M42 86V62a8 8 0 0116 0v24"/><path d="M32 50h8M60 50h8"/>',
+  'sto-moderna':
+    '<circle cx="50" cy="50" r="32"/><path d="M50 18l7 25 25 7-25 7-7 25-7-25-25-7 25-7z"/><circle cx="50" cy="50" r="5"/>',
+  'sto-contemporanea':
+    '<circle cx="38" cy="58" r="16"/><circle cx="38" cy="58" r="5"/><path d="M38 42v-6M38 80v-6M22 58h-6M60 58h-6M27 47l-4-4M53 73l4 4M27 69l-4 4M53 43l4-4"/><path d="M62 34h24M62 44h24M62 54h16"/>',
+  'civ-costituzione':
+    '<path d="M20 34h60M50 20v14M26 34l-10 26h20zM74 34l-10 26h20z"/><path d="M16 60a10 10 0 0020 0M64 60a10 10 0 0020 0"/><path d="M50 34v46M34 86h32"/>',
+  'civ-istituzioni':
+    '<path d="M50 14L16 32h68z"/><path d="M22 32v42M38 32v42M62 32v42M78 32v42"/><path d="M14 74h72M10 86h80"/>'
+};
+function sigilloDi(key){
+  const d=SIGILLI[key];
+  if(!d) return '';
+  return '<svg class="lib-sigillo" viewBox="0 0 100 100" fill="none" stroke="currentColor" '
+       + 'stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+d+'</svg>';
+}
+
 const AREE={
   'Filosofia':        {col:'#9a7c2e'},
   'Storia':           {col:'#2d5a27'},
@@ -522,13 +560,13 @@ function coloreArea(g){return (AREE[g]||{col:'var(--stone)'}).col;}
 
 function vociExtra(){
   return [
-    {g:'Didattica',k:'__metodo__', l:'Metodologie didattiche', p:'Debate, jigsaw, attività'},
-    {g:'Didattica',k:'__tempo__',  l:'Linea del tempo',        p:'Storia e filosofia a confronto'},
-    {g:'Didattica',k:'__lavagna__',l:'Lavagna',                p:'Da proiettare in aula'},
-    {g:'Didattica',k:'__consegna__',l:'Consegna un compito',   p:'Per gli studenti'},
-    {g:'Didattica',k:'__inbox__',  l:'Inbox',                  p:'Consegne degli studenti'},
-    {g:'Didattica',k:'__voti__',   l:'Votazioni',              p:'120 capitoli pronti'},
-    {g:'Strumenti',k:'__map__',    l:'Mappa storica',          p:'Atlante interattivo'}
+    {g:'Didattica',k:'__metodo__',  l:'Metodologie didattiche', p:'Debate, jigsaw, attività'},
+    {g:'Didattica',k:'__consegna__',l:'Consegna un compito',    p:'Per gli studenti'},
+    {g:'Didattica',k:'__inbox__',   l:'Inbox',                  p:'Consegne degli studenti'},
+    {g:'Didattica',k:'__voti__',    l:'Votazioni',              p:'120 capitoli pronti'},
+    {g:'Strumenti',k:'__tempo__',   l:'Linea del tempo',        p:'Storia e filosofia a confronto'},
+    {g:'Strumenti',k:'__lavagna__', l:'Lavagna',                p:'Da proiettare in aula'},
+    {g:'Strumenti',k:'__map__',     l:'Mappa storica',          p:'Atlante interattivo'}
   ];
 }
 
@@ -540,10 +578,18 @@ function buildNav(keys){
   const extraMap={};vociExtra().forEach(v=>extraMap[v.k]=v);
   let html='';let first=true;
 
-  Object.entries(groups).forEach(([g,ks])=>{
+  /* I gruppi si richiudono. Con dieci materie piu' sette strumenti
+     la colonna diventava un elenco lungo e indistinto: adesso resta
+     aperto quello in cui si sta lavorando, gli altri stanno buoni. */
+  Object.entries(groups).forEach(([g,ks],i)=>{
     const col=coloreArea(g);
-    html+=`<div class="lib-group" style="--area:${col}">
-      <div class="lib-group-title"><i class="lib-group-chip"></i>${g}</div>`;
+    const chiuso = i>0 ? ' chiuso' : '';
+    html+=`<div class="lib-group${chiuso}" style="--area:${col}" data-gruppo="${g}">
+      <button class="lib-group-title" onclick="apriGruppo(this)" aria-expanded="${i===0}">
+        <i class="lib-group-chip"></i><span>${g}</span>
+        <i class="lib-group-freccia" aria-hidden="true"></i>
+      </button>
+      <div class="lib-group-voci">`;
     ks.forEach(k=>{
       const info=MATERIE[k]||extraMap[k];
       if(!info)return;
@@ -555,7 +601,7 @@ function buildNav(keys){
         <span class="lib-count" data-count="${k}"></span>
       </button>`;
     });
-    html+='</div>';
+    html+='</div></div>';
   });
   document.getElementById('lib-nav').innerHTML=html;
 }
@@ -597,7 +643,17 @@ function mobChange(key){
   hideMapView();
   renderSubject(key);
 }
+function apriGruppo(bottone){
+  const g=bottone.closest('.lib-group');
+  const eraChiuso=g.classList.contains('chiuso');
+  g.classList.toggle('chiuso',!eraChiuso);
+  bottone.setAttribute('aria-expanded', String(eraChiuso));
+}
+
 function navClick(el,key){
+  /* se si arriva qui da una ricerca o dal menu del telefono, il
+     gruppo giusto deve aprirsi da solo */
+  el.closest('.lib-group')?.classList.remove('chiuso');
   document.querySelectorAll('.lib-item').forEach(n=>n.classList.remove('active'));
   el.classList.add('active');
   document.getElementById('mob-select').value=key;
@@ -828,6 +884,7 @@ async function renderSubject(key,tab){
   const areaCol=coloreArea(m.g);
   document.getElementById('lib-head').innerHTML=`
     <div class="lib-head-inner" style="--area:${areaCol}">
+      ${sigilloDi(key)}
       <div class="lib-breadcrumb"><i class="lib-area-chip"></i>${m.g}</div>
       <h2 class="lib-content-title">${m.l}</h2>
       <div class="lib-period">${m.p}</div>
@@ -890,7 +947,7 @@ async function renderSubject(key,tab){
 function logout(){
   ATK='';sessionStorage.removeItem('atk');sessionStorage.removeItem('rtk');
   sessionStorage.removeItem('ix');
-  document.getElementById('page-library').style.display='none';
+  document.getElementById('page-library').classList.remove('aperta');
   document.getElementById('page-home').style.display='block';
   segnaPagina('home');
   document.getElementById('admin-bar').style.display='none';
