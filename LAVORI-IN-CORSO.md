@@ -12,7 +12,7 @@ punto non spuntato.
   illuminata e resa cliccabile, per vedere l'opera intera.
 - [x] **3. «Dai una occhiata» ben visibile** — è la porta d'ingresso per un
   recruiter. E la finestra che apre è confusa e incompleta: va rifatta.
-- [ ] **4. «Scopri i contenuti»** deve comportarsi come «Dai una occhiata».
+- [x] **4. «Scopri i contenuti»** deve comportarsi come «Dai una occhiata».
 - [ ] **5. Il pulsante «Accedi con il tuo codice»** a sinistra non serve a nulla.
 - [ ] **6. Il footer bianco** va portato nella stessa palette dell'inizio.
 - [ ] **7. La pagina della libreria** va ristrutturata: più moderna, con le
