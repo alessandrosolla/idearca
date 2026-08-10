@@ -64,7 +64,7 @@ materiale che gli studenti hanno davvero studiato.
 
 ## A che punto siamo
 
-Fatti **99 capitoli su 120**.
+Fatti **tutti e 120 i capitoli**. Lavoro concluso.
 
 ### Filosofia antica — 12 capitoli · completata
 - [x] Dagli Ionici agli atomisti · `1c7OT1XyooG6hVjQKbwMQHiuLMgIFz3V_`
@@ -177,28 +177,28 @@ Fatti **99 capitoli su 120**.
 - [x] Italia Repubblicana · `1DnaiuQ4PMW3I08aPiQCX3RoYE8KLrxEN`
 - [x] Italia contemporanea · `1vs-dfBJSzAxaTWhTFC7Mf2O8tDM4b8mr`
 
-### Filosofia contemporanea — 21 capitoli · da fare
-- [ ] Schopenauer · `1pbwJJz-6cEExZVafzOd3IAWXBbQPoQyv`
-- [ ] Kierkegard · `1I0jHBVRR5i2yYWlhbyPYsgU3cL9cRM4v`
-- [ ] Sinistra Hegeliana e Feuerbach · `13sfMISymu6kSLUImPNx1lCBc867Dmtof`
-- [ ] Positivismo. Comte e Mill · `1XI_7KrRSyrNyUZ8l1k-0Cy0WGK_YbjZW`
-- [ ] Positivismo evoluzionista. Darwin e Spencer · `1Nes5fprwtAJpoEbZVVz6X9SVs967uuVE`
-- [ ] Bergson e Weber · `1z9SCIRPhphD7CQJdhVqgo61L4baXb6vt`
-- [ ] Nietsche. La fase del cammello e del leone · `16TVAloxhf19Gv0yv6qFWFA82Ct1a2WaI`
-- [ ] Nietzsche. Super-uomo · `1zYm9XXqF_v50k2eX8JF-q8nGF_hgbjmh`
-- [ ] Freud · `1tviT1_v5iwbZ3Z_Kn-9HilqTsulg2PfF`
-- [ ] Husserl · `1k85ZoRxE0SCotJBXWxIDdSMSDBWLsTK6`
-- [ ] Esistenzialismo · `14Y-8CZPKHInHLtoYsvYN4JXaFDXsiIYL`
-- [ ] Crisi delle scienze · `1_EeM3nu0g3YsUZsTHFdQSoqX7GjS--2t`
-- [ ] Pragmatismo · `1ifgKaYH8R9J5cEOATEWCIor5G1BRrGn5`
-- [ ] Neoidealismo Italiano · `1aL6j8ECvydhltVjkT_EPr-qSyYO0b1kf`
-- [ ] Heiddeger · `1C6e7wcIUfDNuDVko25nUKf42pLHzNZoV`
-- [ ] Jaspers e Sartre · `1o7MSAWhRS-V_U29Q3VJbz6A-QQfs6kNg`
-- [ ] Critica al capitalismo e Scuola di Francoforte · `12ZHHWs6uVi1SGsewiu3ueeY3g2qthoGp`
-- [ ] Wittgenstein · `1pQmZGdenkydITWE4HogvYrDTu-2L_fxb`
-- [ ] Strutturalismo e decostruzionismo · `15CwZRShTLBvZZdDjUt1aPBzkK13Uns8B`
-- [ ] Arendt · `1cMeBHDKH_tu3pqQSWw9E9F3vtBrXhVDd`
-- [ ] Karl Marx · `1EtYgYiBCUEd96uc-XFmM-5WusMuAmhxc`
+### Filosofia contemporanea — 21 capitoli · completata
+- [x] Schopenauer · `1pbwJJz-6cEExZVafzOd3IAWXBbQPoQyv`
+- [x] Kierkegard · `1I0jHBVRR5i2yYWlhbyPYsgU3cL9cRM4v`
+- [x] Sinistra Hegeliana e Feuerbach · `13sfMISymu6kSLUImPNx1lCBc867Dmtof`
+- [x] Positivismo. Comte e Mill · `1XI_7KrRSyrNyUZ8l1k-0Cy0WGK_YbjZW`
+- [x] Positivismo evoluzionista. Darwin e Spencer · `1Nes5fprwtAJpoEbZVVz6X9SVs967uuVE`
+- [x] Bergson e Weber · `1z9SCIRPhphD7CQJdhVqgo61L4baXb6vt`
+- [x] Nietsche. La fase del cammello e del leone · `16TVAloxhf19Gv0yv6qFWFA82Ct1a2WaI`
+- [x] Nietzsche. Super-uomo · `1zYm9XXqF_v50k2eX8JF-q8nGF_hgbjmh`
+- [x] Freud · `1tviT1_v5iwbZ3Z_Kn-9HilqTsulg2PfF`
+- [x] Husserl · `1k85ZoRxE0SCotJBXWxIDdSMSDBWLsTK6`
+- [x] Esistenzialismo · `14Y-8CZPKHInHLtoYsvYN4JXaFDXsiIYL`
+- [x] Crisi delle scienze · `1_EeM3nu0g3YsUZsTHFdQSoqX7GjS--2t`
+- [x] Pragmatismo · `1ifgKaYH8R9J5cEOATEWCIor5G1BRrGn5`
+- [x] Neoidealismo Italiano · `1aL6j8ECvydhltVjkT_EPr-qSyYO0b1kf`
+- [x] Heiddeger · `1C6e7wcIUfDNuDVko25nUKf42pLHzNZoV`
+- [x] Jaspers e Sartre · `1o7MSAWhRS-V_U29Q3VJbz6A-QQfs6kNg`
+- [x] Critica al capitalismo e Scuola di Francoforte · `12ZHHWs6uVi1SGsewiu3ueeY3g2qthoGp`
+- [x] Wittgenstein · `1pQmZGdenkydITWE4HogvYrDTu-2L_fxb`
+- [x] Strutturalismo e decostruzionismo · `15CwZRShTLBvZZdDjUt1aPBzkK13Uns8B`
+- [x] Arendt · `1cMeBHDKH_tu3pqQSWw9E9F3vtBrXhVDd`
+- [x] Karl Marx · `1EtYgYiBCUEd96uc-XFmM-5WusMuAmhxc`
 
 Al termine di ogni materia va avvisato il professore. Durante il lavoro, no:
 ha chiesto di non essere interrotto capitolo per capitolo.
