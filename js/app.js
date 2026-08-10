@@ -1259,6 +1259,8 @@ async function caricaVetrina(){
           ${card(fonti,'Fonti','Documenti veri da leggere in classe: editti, lettere, trattati, pagine di filosofi.','#9a7c2e')}
           ${card(appro,'Approfondimenti','Una scheda di ripasso per ogni capitolo: tavola sinottica, glossario, domande.','#a1542f')}
           ${card(compiti+risorse,'Compiti e risorse','Consegne assegnate agli studenti e collegamenti scelti: video, mappe, archivi.','#3f6d8c')}
+          ${card('1080','Domande per le votazioni','Scritte una per una: nove per ogni capitolo, con i distrattori costruiti sugli errori che gli studenti fanno davvero.','#7a4b8c')}
+          ${card('312','Eventi in linea del tempo','Storia e filosofia affiancate sullo stesso asse, dal 3500 a.C. a oggi.','#2f7a6a')}
         </div>
       </section>
 
@@ -1294,6 +1296,11 @@ async function caricaVetrina(){
         <div class="peek-sec-title">Provalo adesso</div>
         <p class="peek-sec-nota">Uno strumento vero, funzionante, senza registrarsi.</p>
         <div class="peek-open">
+          <a class="peek-open-card" style="--a:#6b6459" href="https://geacron.com/map/atlas/mapal.html?lang=it" target="_blank" rel="noopener">
+            <span class="peek-open-tipo">Strumento</span>
+            <span class="peek-open-tit">Mappa storica</span>
+            <span class="peek-open-mat">I confini del mondo che cambiano, anno per anno</span>
+            <span class="peek-open-apri">Aprila <b>&#8599;</b></span></a>
           <a class="peek-open-card" style="--a:#3f6d8c" href="tempo/index.html" target="_blank" rel="noopener">
             <span class="peek-open-tipo">Strumento</span>
             <span class="peek-open-tit">Linea del tempo</span>

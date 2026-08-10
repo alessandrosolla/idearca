@@ -176,7 +176,7 @@ nav.scrolled{box-shadow:0 4px 32px rgba(28,43,26,0.07)}
    colpo d'occhio che si sta guardando La Scuola di Atene */
 .hic-cerchio{flex:none;width:1.75rem;height:1.75rem;border-radius:50%;
   border:1px solid rgba(232,217,160,.55);
-  background:url('https://wsrv.nl/?url=upload.wikimedia.org/wikipedia/commons/thumb/4/49/%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg/1280px-%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg&w=200&q=70&output=webp') center 34%/200% no-repeat;
+  background:url('https://wsrv.nl/?url=upload.wikimedia.org/wikipedia/commons/thumb/4/49/%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg/1280px-%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg&w=200&q=70&output=webp') 50% 38%/235% no-repeat;
   transition:box-shadow .3s,transform .3s}
 .hero-img-credit:hover .hic-cerchio{box-shadow:0 0 0 2px rgba(212,178,86,.5);transform:scale(1.06)}
 .hic-testo{padding-right:.7rem;opacity:0;transition:opacity .35s .1s}
@@ -636,10 +636,12 @@ html[data-theme="dark"] .theme-toggle .icon-moon{display:block}
 .btn-peek-hint{margin:.6rem 0 0;text-align:center;font-size:.71rem;line-height:1.55;color:var(--stone);font-weight:300}
 
 /* ── LA VETRINA (anteprima senza codice) ───────────────────── */
-.peek-modal{max-width:860px;width:100%;padding:0;overflow:hidden;border-radius:16px;
-  display:flex;flex-direction:column;max-height:88vh}
+.peek-modal{max-width:880px;width:100%;padding:0;overflow:hidden;border-radius:16px;
+  display:flex;flex-direction:column;max-height:88vh;
+  background:linear-gradient(180deg,#f6f4ec 0%,#eef1e9 55%,#f4f2ea 100%)}
 .peek-x{top:1.1rem;right:1.1rem}
-.peek-head{padding:2.2rem 2.4rem 1.4rem;border-bottom:1px solid var(--border)}
+.peek-head{padding:2.2rem 2.4rem 1.4rem;border-bottom:1px solid var(--border);
+  background:linear-gradient(120deg,rgba(45,90,39,.07),rgba(154,124,46,.05))}
 .peek-title{font-family:'Cormorant Garamond',serif;font-size:2.4rem;font-weight:400;
   color:var(--ink);line-height:1.05;margin:.4rem 0 .7rem}
 .peek-lede{font-size:.92rem;line-height:1.8;color:var(--stone);font-weight:300;max-width:64ch}
@@ -666,9 +668,11 @@ html[data-theme="dark"] .theme-toggle .icon-moon{display:block}
   font-weight:600;margin-bottom:.9rem;display:flex;align-items:center;gap:.7rem}
 .peek-sec-title::after{content:'';flex:1;height:1px;background:var(--border)}
 
-.peek-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:.8rem}
-.peek-card{border:1px solid var(--border);border-left:3px solid var(--a,var(--forest));
-  border-radius:10px;padding:1rem 1.1rem;background:var(--white);
+.peek-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.8rem}
+@media(max-width:820px){.peek-grid{grid-template-columns:repeat(2,1fr)}}
+.peek-card{border:1px solid color-mix(in srgb,var(--a,var(--forest)) 22%,transparent);border-left:3px solid var(--a,var(--forest));
+  border-radius:10px;padding:1rem 1.1rem;
+  background:linear-gradient(150deg,color-mix(in srgb,var(--a,var(--forest)) 9%,#fbfaf5),#fbfaf5);
   transition:border-color .22s,transform .22s,box-shadow .22s}
 .peek-card:hover{border-color:var(--border-gold);transform:translateY(-2px);box-shadow:var(--shadow-sm)}
 .peek-card-top{display:flex;align-items:baseline;gap:.55rem;margin-bottom:.35rem}
@@ -679,7 +683,7 @@ html[data-theme="dark"] .theme-toggle .icon-moon{display:block}
 .peek-tools{display:grid;grid-template-columns:repeat(2,1fr);gap:.8rem}
 .peek-tool{display:flex;gap:.8rem;align-items:flex-start;border:1px solid var(--border);
   border-radius:10px;padding:.9rem 1rem;background:var(--white)}
-.peek-tool{border-left:3px solid var(--gold)}
+.peek-tool{border-left:3px solid var(--gold);background:linear-gradient(150deg,rgba(154,124,46,.07),#fbfaf5)}
 .peek-tool-ic{width:36px;height:36px;flex:none;border-radius:10px;
   background:linear-gradient(135deg,rgba(154,124,46,.16),rgba(45,90,39,.1));
   border:1px solid var(--border-gold);display:flex;align-items:center;justify-content:center;color:var(--gold)}
@@ -690,7 +694,8 @@ html[data-theme="dark"] .theme-toggle .icon-moon{display:block}
 .peek-sec-nota{font-size:.79rem;line-height:1.65;color:var(--stone);font-weight:300;margin:-.3rem 0 .9rem;max-width:60ch}
 .peek-open{display:grid;grid-template-columns:repeat(2,1fr);gap:.8rem}
 .peek-open-card{display:flex;flex-direction:column;gap:.28rem;text-decoration:none;
-  padding:1rem 1.1rem 0.9rem;border-radius:10px;background:var(--white);
+  padding:1rem 1.1rem 0.9rem;border-radius:10px;
+  background:linear-gradient(160deg,color-mix(in srgb,var(--a,var(--forest)) 8%,#fbfaf5),#fbfaf5);
   border:1px solid var(--border);border-top:3px solid var(--a,var(--forest));
   transition:transform .22s,box-shadow .22s,border-color .22s}
 .peek-open-card:hover{transform:translateY(-3px);box-shadow:0 10px 32px rgba(28,43,26,.12);
@@ -1042,3 +1047,36 @@ html[data-theme="dark"] #main-nav:not(.scrolled){background:transparent;border-b
 .admin-bar.sola-lettura .admin-label::before{background:#8fb8d8}
 html[data-ruolo="osservatore"] .mod-acts,
 html[data-ruolo="osservatore"] .lib-add-link{display:none !important}
+
+/* I numeri veri accanto al pulsante: la prova che dietro
+   l'invito c'è del lavoro, non una promessa. */
+.hero-numeri{display:flex;gap:1.9rem;flex-wrap:wrap;margin-top:.4rem}
+.hero-numeri span{display:flex;flex-direction:column;gap:.1rem;
+  font-size:.61rem;letter-spacing:.16em;text-transform:uppercase;color:var(--stone-light)}
+.hero-numeri b{font-family:'Cormorant Garamond',serif;font-size:1.65rem;font-weight:600;
+  letter-spacing:0;text-transform:none;line-height:1;color:var(--gold-light)}
+.hero.night .hero-numeri span{color:#93a790}
+@media(max-width:760px){.hero-numeri{gap:1.2rem}.hero-numeri b{font-size:1.35rem}}
+
+/* ── DAL TELEFONO ───────────────────────────────────────────
+   Il riquadro delle ripetizioni era una griglia a due colonne
+   senza alcuna regola per gli schermi stretti: sul telefono le
+   due colonne restavano affiancate e il testo usciva dal verde.
+   La costellazione dei filosofi, pensata per un monitor largo,
+   sul telefono diventava un francobollo illeggibile: le si da'
+   respiro e la si fa scorrere in orizzontale. */
+@media(max-width:820px){
+  .rip-cta{grid-template-columns:1fr;gap:1.5rem;padding:1.9rem 1.3rem;border-radius:14px}
+  .rip-cta-copy h3{font-size:1.55rem}
+  .rip-cta-copy>p{font-size:.87rem;margin-bottom:1.1rem}
+  .rip-cta-actions{gap:.7rem}
+  .rip-btn{padding:.95rem 1rem;gap:.85rem}
+  .rip-btn-ic{width:38px;height:38px}
+  .rip-btn-txt strong{font-size:.92rem}
+  .rip-btn-txt small{font-size:.78rem}
+}
+@media(max-width:700px){
+  .stars-svg-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .stars-svg-wrap>svg{min-width:760px;height:auto}
+  .stars-intro{font-size:.88rem}
+}
