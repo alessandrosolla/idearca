@@ -5370,6 +5370,104 @@ const BANCA = [
               'Il malessere non si toglie: appartiene alla struttura stessa'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: quanta libertà vale la nostra sicurezza? Una parola.'}
+  ]},
+{
+  titolo: 'Filosofia contemporanea · 11 — Husserl e la fenomenologia',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: le cose sono come appaiono? Una parola.'},
+
+    {tipo:'scelta', testo:'Che cosa chiede il motto «alle cose stesse»?',
+     opzioni:['Descrivere come i fenomeni si danno, senza teorie preconfezionate',
+              'Partire da ciò che appare invece che da spiegazioni già pronte',
+              'Guardare l\'esperienza prima di interpretarla con dei sistemi',
+              'Una filosofia che osserva invece di costruire ipotesi'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché Husserl critica lo psicologismo?',
+     opzioni:['Se le leggi logiche fossero fatti mentali potrebbero essere diverse',
+              'Confonde la domanda su come pensiamo con quella sulla validità',
+              'Le verità della logica non dipendono da chi le pensa',
+              'Ridurre la logica alla psiche ne distrugge la necessità'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa fa l\'epoché fenomenologica?',
+     opzioni:['Sospende il giudizio sull\'esistenza del mondo senza negarlo',
+              'Mette il mondo tra parentesi per studiare come appare',
+              'Non è scetticismo: nessuno dubita, si cambia sguardo',
+              'Neutralizza la fiducia spontanea nella realtà delle cose'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa resta dopo l\'epoché?',
+     opzioni:['La coscienza stessa, che non può essere messa tra parentesi',
+              'Il campo dei vissuti con le loro strutture essenziali',
+              'Ciò che regge alla sospensione, come il cogito al dubbio',
+              'Non il mondo reale ma il mondo come fenomeno'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa significa che la coscienza è intenzionale?',
+     opzioni:['Non esiste un pensare vuoto: si pensa sempre qualcosa',
+              'Ogni atto della coscienza è rivolto verso un oggetto',
+              'Non è un contenitore ma un movimento verso il mondo',
+              'A ogni cogito corrisponde sempre un cogitatum'], giusta:0},
+
+    {tipo:'scelta', testo:'Che differenza c\'è fra noesi e noema?',
+     opzioni:['L\'atto con cui guardo e la cosa così come mi si mostra',
+              'Il percepire da una parte, il percepito dall\'altra',
+              'Uno è il modo del vissuto, l\'altro il suo contenuto',
+              'Il noema non è la cosa in sé ma come essa si dà'], giusta:0},
+
+    {tipo:'scelta', testo:'In che cosa consiste la crisi delle scienze europee?',
+     opzioni:['La scienza ha dimenticato l\'uomo da cui nasce e per cui esiste',
+              'Al mondo vissuto è stato sostituito un mondo di formule',
+              'Le costruzioni teoriche sono state scambiate per la realtà',
+              'Si è perso di vista il terreno concreto da cui si parte'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: che cosa la scienza non riesce a misurare? Una parola.'}
+  ]},
+{
+  titolo: 'Filosofia contemporanea · 12 — Heidegger e l\'ermeneutica',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: che cosa vuol dire, per te, «esistere»? Una parola.'},
+
+    {tipo:'scelta', testo:'Perché Heidegger chiama l\'uomo «Esserci»?',
+     opzioni:['È l\'unico ente a cui importa del proprio essere',
+              'Non è una cosa fra le cose: il suo modo di essere è esistere',
+              'La sua essenza sta nelle possibilità, non in una natura fissa',
+              'È l\'ente che può porre la domanda sull\'essere'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa significa «essere-nel-mondo»?',
+     opzioni:['Non siamo soggetti chiusi che poi incontrano le cose',
+              'Ci troviamo già presso il mondo prima di conoscerlo',
+              'Il rapporto pratico con le cose precede quello teorico',
+              'Non è una collocazione fisica ma un\'apertura originaria'], giusta:0},
+
+    {tipo:'scelta', testo:'Come si mostrano anzitutto le cose del mondo?',
+     opzioni:['Come strumenti che rimandano ad altri strumenti e a uno scopo',
+              'Non come dati neutri ma come qualcosa che serve a qualcosa',
+              'Un martello richiama il chiodo, l\'opera, la mano che lo usa',
+              'Nessun mezzo esiste isolato: sta dentro una rete di rimandi'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è il «Si» (das Man)?',
+     opzioni:['La vita anonima in cui ognuno è tutti e nessuno è se stesso',
+              'Si dice, si fa, si pensa: nessuno risponde di nulla',
+              'Un livellamento che rassicura togliendo ogni differenza',
+              'Il modo quotidiano in cui si sfugge alle proprie possibilità'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché l\'angoscia apre l\'esistenza autentica?',
+     opzioni:['Togliendo senso a tutto, smaschera la finzione del Si',
+              'Non ha un oggetto: davanti a lei restiamo soli con noi stessi',
+              'Fa crollare le sicurezze quotidiane e lascia scoperti',
+              'Rivela che siamo gettati e che nulla ci è garantito'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché la morte è la possibilità «più propria»?',
+     opzioni:['Nessuno può morire al posto mio: è mia e basta',
+              'È certa nel se e indeterminata nel quando',
+              'Assumerla dà unità e serietà a tutta l\'esistenza',
+              'Non è un evento futuro ma un modo di essere presente'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è la «fusione degli orizzonti» di Gadamer?',
+     opzioni:['Capire non è uscire dal proprio tempo ma farlo incontrare con l\'altro',
+              'Il passato e il presente si parlano e ne nasce qualcosa di nuovo',
+              'Le nostre precomprensioni non ostacolano: rendono possibile capire',
+              'Comprendere un testo cambia anche chi lo sta leggendo'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: la tecnica è uno strumento o un destino? Una parola.'}
   ]
 }
 ];
