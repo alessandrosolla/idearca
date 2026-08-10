@@ -1152,19 +1152,19 @@ async function caricaVetrina(){
       {tipo:'Slide di lezione', materia:'Filosofia antica',    col:ORO,   r:primo('fil-antica','materiali')},
       {tipo:'Slide di lezione', materia:'Storia contemporanea',col:VERDE, r:primo('sto-contemporanea','materiali')},
       {tipo:'Fonte',            materia:'Storia medievale',    col:VERDE, r:primo('sto-medievale','fonti')},
-      {tipo:'Verifica',         materia:'Filosofia antica',    col:ORO,   r:primo('fil-antica','esercizi')}
+      {tipo:'Approfondimento',  materia:'Filosofia antica',    col:ORO,   r:primo('fil-antica','esercizi')}
     ].filter(c=>c.r);
 
-    const num=(n,l)=>`<div class="peek-num"><b>${n}</b><span>${l}</span></div>`;
-    const card=(n,h,p)=>`<div class="peek-card"><div class="peek-card-top">
+    const num=(n,l,c)=>`<div class="peek-num" style="--a:${c}"><b>${n}</b><span>${l}</span></div>`;
+    const card=(n,h,p,c)=>`<div class="peek-card" style="--a:${c}"><div class="peek-card-top">
         <span class="peek-card-n">${n}</span><span class="peek-card-h">${h}</span></div><p>${p}</p></div>`;
     /* icone disegnate, non emoji: le emoji cambiano forma da un
        sistema all'altro e su Windows sembrano adesivi */
     const ICONE={
-      voto:'<path d="M9 12l2 2 4-4"/><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 2v4M16 2v4"/>',
-      attivita:'<path d="M12 3v18M5 7l7-4 7 4"/><path d="M5 7l-2 7a4 4 0 008 0L9 7M19 7l-2 7a4 4 0 008 0l-2-7"/>',
-      mappa:'<path d="M9 4L3 7v13l6-3 6 3 6-3V4l-6 3-6-3z"/><path d="M9 4v13M15 7v13"/>',
-      consegne:'<path d="M3 14v5a2 2 0 002 2h14a2 2 0 002-2v-5"/><path d="M12 3v12M8 11l4 4 4-4"/>'
+      voto:'<path d="M5 20V10M12 20V4M19 20v-7"/><path d="M3 20h18"/>',
+      attivita:'<path d="M12 4v16"/><path d="M4 8h16"/><circle cx="7" cy="14" r="3"/><circle cx="17" cy="14" r="3"/>',
+      mappa:'<path d="M9 4 3 7v13l6-3 6 3 6-3V4l-6 3z"/><path d="M9 4v13M15 7v13"/>',
+      consegne:'<path d="M4 13v6a1 1 0 001 1h14a1 1 0 001-1v-6"/><path d="M12 4v10M8 10l4 4 4-4"/>'
     };
     const tool=(k,t,d)=>`<div class="peek-tool">
         <span class="peek-tool-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -1174,19 +1174,19 @@ async function caricaVetrina(){
 
     body.innerHTML=`
       <div class="peek-nums">
-        ${num(righe.length,'materiali')}
-        ${num(materie,'materie')}
-        ${num('120','capitoli con domande')}
-        ${num('1080','domande pronte')}
+        ${num(righe.length,'materiali','#2d5a27')}
+        ${num(materie,'materie','#9a7c2e')}
+        ${num('120','capitoli con domande','#a1542f')}
+        ${num('1080','domande pronte','#3f6d8c')}
       </div>
 
       <section class="peek-sec">
         <div class="peek-sec-title">Di che cosa è fatta</div>
         <div class="peek-grid">
-          ${card(slide,'Slide di lezione','Un capitolo per volta, con la tavola delle date, il glossario e le domande per l\'orale.')}
-          ${card(fonti,'Fonti','Documenti veri da leggere in classe: editti, lettere, trattati, pagine di filosofi.')}
-          ${card(appro,'Verifiche e approfondimenti','Materiale per il ripasso e per la valutazione, capitolo per capitolo.')}
-          ${card(compiti+risorse,'Compiti e risorse','Consegne assegnate agli studenti e collegamenti scelti: video, mappe, archivi.')}
+          ${card(slide,'Slide di lezione','Un capitolo per volta, con la tavola delle date, il glossario e le domande per l\'orale.','#2d5a27')}
+          ${card(fonti,'Fonti','Documenti veri da leggere in classe: editti, lettere, trattati, pagine di filosofi.','#9a7c2e')}
+          ${card(appro,'Approfondimenti','Una scheda di ripasso per ogni capitolo: tavola sinottica, glossario, domande.','#a1542f')}
+          ${card(compiti+risorse,'Compiti e risorse','Consegne assegnate agli studenti e collegamenti scelti: video, mappe, archivi.','#3f6d8c')}
         </div>
       </section>
 
