@@ -6,6 +6,28 @@ const SB_KEY='sb_publishable_D7vDsaervKNJNgdJwknDpQ_Vuuf9CeJ';
    mostra quando si tira lo scroll oltre il bordo. Sull'home
    dev'essere il verde notte dell'hero, altrove la crema.
    ──────────────────────────────────────────────────────────── */
+/* ── CONTARE, NON SEGUIRE ───────────────────────────────────
+   Registriamo tre cose: chi entra, quali materie si aprono,
+   quali strumenti si accendono. Nessun indirizzo, nessun
+   identificatore del dispositivo, nessuna cronologia: solo
+   conteggi, e li legge il docente soltanto.
+   La scrittura non blocca mai la pagina: se fallisce, pazienza.
+   ──────────────────────────────────────────────────────────── */
+function registraUso(tipo, dettaglio){
+  try{
+    const s=JSON.parse(sessionStorage.getItem('ix')||'{}');
+    if(!s.code) return;
+    fetch(SB_URL+'/rest/v1/usi',{
+      method:'POST',
+      headers:{'apikey':SB_KEY,'Authorization':'Bearer '+SB_KEY,
+               'Content-Type':'application/json','Prefer':'return=minimal'},
+      body:JSON.stringify({tipo, dettaglio:dettaglio||null,
+                           codice:s.code, nome:s.nome||null, ruolo:s.ruolo||null}),
+      keepalive:true
+    }).catch(()=>{});
+  }catch(e){}
+}
+
 function segnaPagina(nome){
   document.documentElement.setAttribute('data-page',nome);
 }
@@ -88,6 +110,7 @@ function exitIntlToLibrary(){
   document.getElementById('page-library').classList.add('aperta');
   document.documentElement.removeAttribute('data-mode');
   segnaPagina('library');
+  registraUso('accesso');
   window.scrollTo(0,0);
 }
 function openIBPage(){
@@ -685,15 +708,16 @@ function buildMobSelect(keys){
 function mobChange(key){
   if(!key) return;
   document.querySelectorAll('.lib-item').forEach(n=>{n.classList.toggle('active',n.dataset.key===key);});
-  if(key==='__map__'){showMapView();return;}
-  if(key==='__metodo__'){showMetodoView();return;}
-  if(key==='__tempo__'){showTempoView();return;}
-  if(key==='__prove__'){showProveView();return;}
-  if(key==='__consegna__'){showConsegnaView();return;}
-  if(key==='__lavagna__'){showLavagnaView();return;}
-  if(key==='__inbox__'){showInboxView();return;}
-  if(key==='__voti__'){showVotiView();return;}
+  if(key==='__map__'){registraUso('strumento','map');showMapView();return;}
+  if(key==='__metodo__'){registraUso('strumento','metodo');showMetodoView();return;}
+  if(key==='__tempo__'){registraUso('strumento','tempo');showTempoView();return;}
+  if(key==='__prove__'){registraUso('strumento','prove');showProveView();return;}
+  if(key==='__consegna__'){registraUso('strumento','consegna');showConsegnaView();return;}
+  if(key==='__lavagna__'){registraUso('strumento','lavagna');showLavagnaView();return;}
+  if(key==='__inbox__'){registraUso('strumento','inbox');showInboxView();return;}
+  if(key==='__voti__'){registraUso('strumento','voti');showVotiView();return;}
   hideMapView();
+  registraUso('materia', key);
   renderSubject(key);
 }
 function apriGruppo(bottone){
@@ -710,14 +734,14 @@ function navClick(el,key){
   document.querySelectorAll('.lib-item').forEach(n=>n.classList.remove('active'));
   el.classList.add('active');
   document.getElementById('mob-select').value=key;
-  if(key==='__map__'){showMapView();return;}
-  if(key==='__metodo__'){showMetodoView();return;}
-  if(key==='__tempo__'){showTempoView();return;}
-  if(key==='__prove__'){showProveView();return;}
-  if(key==='__consegna__'){showConsegnaView();return;}
-  if(key==='__lavagna__'){showLavagnaView();return;}
-  if(key==='__inbox__'){showInboxView();return;}
-  if(key==='__voti__'){showVotiView();return;}
+  if(key==='__map__'){registraUso('strumento','map');showMapView();return;}
+  if(key==='__metodo__'){registraUso('strumento','metodo');showMetodoView();return;}
+  if(key==='__tempo__'){registraUso('strumento','tempo');showTempoView();return;}
+  if(key==='__prove__'){registraUso('strumento','prove');showProveView();return;}
+  if(key==='__consegna__'){registraUso('strumento','consegna');showConsegnaView();return;}
+  if(key==='__lavagna__'){registraUso('strumento','lavagna');showLavagnaView();return;}
+  if(key==='__inbox__'){registraUso('strumento','inbox');showInboxView();return;}
+  if(key==='__voti__'){registraUso('strumento','voti');showVotiView();return;}
   hideMapView();
   renderSubject(key);
 }
@@ -1336,4 +1360,119 @@ async function caricaVetrina(){
   }catch(e){
     body.innerHTML='<p style="text-align:center;color:var(--stone);font-size:.85rem;padding:2.5rem">Non è stato possibile caricare l\'anteprima. Riprova fra poco.</p>';
   }
+}
+
+
+/* ══════════════════════════════════════════════════════════
+   LE STATISTICHE D'USO
+   Il conto lo fa il database e restituisce un oggetto solo: qui
+   si disegna e basta. Serve il token del docente — le regole non
+   mostrano nulla a nessun altro.
+   ══════════════════════════════════════════════════════════ */
+const NOMI_STRUMENTO={map:'Mappa storica',metodo:'Metodologie',tempo:'Linea del tempo',
+  lavagna:'Lavagna',inbox:'Inbox',voti:'Votazioni',consegna:'Consegna un compito',prove:'Prove'};
+
+function apriStatistiche(){
+  document.getElementById('stat-overlay').classList.add('on');
+  document.body.style.overflow='hidden';
+  aggiornaStatistiche();
+}
+function chiudiStatistiche(){
+  document.getElementById('stat-overlay').classList.remove('on');
+  document.body.style.overflow='';
+}
+document.addEventListener('keydown',e=>{
+  if(e.key==='Escape'&&document.getElementById('stat-overlay')?.classList.contains('on')) chiudiStatistiche();
+});
+
+async function aggiornaStatistiche(){
+  const box=document.getElementById('stat-corpo');
+  box.innerHTML='<div class="lib-spinner"></div>';
+  try{
+    const res=await fetch(SB_URL+'/rest/v1/rpc/statistiche_uso',{
+      method:'POST', headers:wHead({'Content-Type':'application/json'}), body:'{}'});
+    if(!res.ok) throw new Error(await res.text());
+    const d=await res.json();
+    if(!d){ box.innerHTML=avvisoStat(); return; }
+    box.innerHTML=disegnaStatistiche(d);
+  }catch(e){ box.innerHTML=avvisoStat(e.message); }
+}
+
+function avvisoStat(msg){
+  return '<div class="lib-empty" style="text-align:left;line-height:1.75">'
+    + '<strong>Non riesco a leggere le statistiche.</strong><br>'
+    + 'Di solito significa una cosa sola: la migrazione <code>sql/05-statistiche.sql</code> '
+    + 'non è ancora stata eseguita su Supabase, oppure la sessione da docente è scaduta.'
+    + (msg?'<br><span style="font-size:.78rem;opacity:.7">'+escHtml(msg).slice(0,180)+'</span>':'')
+    + '</div>';
+}
+
+function disegnaStatistiche(d){
+  const n=x=>Number(x||0).toLocaleString('it-IT');
+  const dataIt=s=>s? new Date(s).toLocaleDateString('it-IT',{day:'numeric',month:'long',year:'numeric'}) : '—';
+
+  const num=(v,l,c)=>`<div class="peek-num" style="--a:${c}"><b>${n(v)}</b><span>${l}</span></div>`;
+
+  /* la colonnina dei giorni: la più alta fa da riferimento */
+  const giorni=d.per_giorno||[];
+  const max=Math.max(1,...giorni.map(g=>g.quante));
+  const barre=giorni.length
+    ? `<div class="stat-giorni">${giorni.map(g=>{
+        const h=Math.round(g.quante/max*100);
+        const gg=new Date(g.giorno).toLocaleDateString('it-IT',{day:'numeric',month:'numeric'});
+        return `<div class="stat-giorno" title="${gg}: ${g.quante}">
+                  <i style="height:${Math.max(6,h)}%"></i><span>${gg}</span></div>`;}).join('')}</div>`
+    : '<p class="peek-sec-nota">Ancora nessun accesso negli ultimi quattordici giorni.</p>';
+
+  const classifica=(righe,etichetta,trasforma)=>{
+    if(!righe||!righe.length) return '<p class="peek-sec-nota">Ancora niente.</p>';
+    const massimo=Math.max(...righe.map(r=>r.quante));
+    return '<div class="stat-lista">'+righe.map(r=>`
+      <div class="stat-riga">
+        <span class="stat-et">${escHtml(trasforma?trasforma(r):(r.dettaglio||r.codice))}</span>
+        <span class="stat-barra"><i style="width:${Math.round(r.quante/massimo*100)}%"></i></span>
+        <span class="stat-n">${n(r.quante)}</span>
+      </div>`).join('')+'</div>';
+  };
+
+  return `
+    <div class="peek-nums">
+      ${num(d.accessi_totali,'accessi in tutto','#2d5a27')}
+      ${num(d.accessi_7giorni,'ultimi 7 giorni','#7a4b8c')}
+      ${num(d.accessi_oggi,'oggi','#9a7c2e')}
+      ${num(d.persone,'codici diversi','#2f7a6a')}
+    </div>
+
+    <section class="peek-sec">
+      <div class="peek-sec-title">Gli ultimi quattordici giorni</div>
+      ${barre}
+      <p class="peek-sec-nota" style="margin-top:.8rem">Si conta dal ${dataIt(d.primo_giorno)}.</p>
+    </section>
+
+    <section class="peek-sec">
+      <div class="peek-sec-title">Chi entra di più</div>
+      ${classifica(d.per_codice,'codice', r=> (r.nome? r.nome+' · ' : '')+r.codice)}
+    </section>
+
+    <section class="peek-sec">
+      <div class="peek-sec-title">Le materie più aperte</div>
+      ${classifica(d.per_materia,'materia', r=> (MATERIE[r.dettaglio]?.l)||r.dettaglio)}
+    </section>
+
+    <section class="peek-sec">
+      <div class="peek-sec-title">Gli strumenti più usati</div>
+      ${classifica(d.per_strumento,'strumento', r=> NOMI_STRUMENTO[r.dettaglio]||r.dettaglio)}
+    </section>`;
+}
+
+async function azzeraStatistiche(){
+  if(!confirm('Azzero tutte le statistiche? I conteggi ripartono da zero e non si possono recuperare.')) return;
+  try{
+    const res=await fetch(SB_URL+'/rest/v1/rpc/azzera_statistiche',{
+      method:'POST', headers:wHead({'Content-Type':'application/json'}), body:'{}'});
+    if(!res.ok) throw new Error(await res.text());
+    const quante=await res.json();
+    alert('Azzerate: '+quante+' righe cancellate.');
+    aggiornaStatistiche();
+  }catch(e){ alert('Non è stato possibile azzerare. '+e.message.slice(0,140)); }
 }

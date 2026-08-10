@@ -22,7 +22,7 @@
 <meta name="twitter:description" content="Materiali strutturati di Filosofia, Storia ed Educazione Civica — piattaforma didattica di Alessandro Solla.">
 <meta name="twitter:image" content="https://alessandrosolla.github.io/idearca/og-image.png">
 <script>document.documentElement.setAttribute('data-page','home');try{var t=localStorage.getItem('idearca-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
-<link rel="stylesheet" href="css/stile.css?v=20260811h">
+<link rel="stylesheet" href="css/stile.css?v=20260811i">
 </head>
 <body style="">
 <div id="scroll-progress" aria-hidden="true"></div>
@@ -613,6 +613,7 @@
   <div class="admin-bar" id="admin-bar" style="display:none">
     <span class="admin-label">Modalità docente</span>
     <button class="adm-btn" onclick="openUpload()">+ Aggiungi materiale</button>
+    <button class="adm-btn" onclick="apriStatistiche()">Statistiche</button>
     <button class="adm-btn" onclick="showCodesGuide()">Gestisci codici</button>
     <button class="adm-btn" onclick="openTracks()">🌐 Percorsi Internazionali</button>
   </div>
@@ -710,14 +711,32 @@
     <div id="codes-body" style="padding:0 2rem 2rem;max-height:40vh;overflow-y:auto"></div>
   </div>
 </div>
-<script src="js/numeri.js?v=20260811h"></script>
-<script src="js/app.js?v=20260811h"></script>
+<script src="js/numeri.js?v=20260811i"></script>
+<script src="js/app.js?v=20260811i"></script>
 <script src="js/d3-array.min.js?v=20260720"></script>
 <script src="js/d3-geo.min.js?v=20260720"></script>
 <script src="js/globe.js?v=20260720"></script>
 <script src="js/filosofi.js?v=20260720"></script>
 
 
+
+<!-- STATISTICHE D'USO -->
+<div class="overlay" id="stat-overlay" onclick="if(event.target===this)chiudiStatistiche()" role="dialog" aria-modal="true" aria-label="Statistiche d'uso">
+  <div class="modal peek-modal">
+    <button class="modal-x peek-x" onclick="chiudiStatistiche()">&#10005;</button>
+    <header class="peek-head">
+      <span class="modal-eye">Riservato al docente</span>
+      <h2 class="peek-title">Come viene usata</h2>
+      <p class="peek-lede">Quante volte si entra, con quali codici, quali materie e
+      quali strumenti si aprono. Nessun indirizzo e nessuna cronologia: solo conteggi.</p>
+    </header>
+    <div class="peek-scroll" id="stat-corpo"><div class="lib-spinner"></div></div>
+    <footer class="peek-foot">
+      <button class="btn-secondary" onclick="aggiornaStatistiche()">Aggiorna</button>
+      <button class="btn-text" style="margin-left:auto;color:#c0453b" onclick="azzeraStatistiche()">Azzera tutto</button>
+    </footer>
+  </div>
+</div>
 
 <!-- ANTEPRIMA APERTA — la vetrina di chi arriva senza codice -->
 <div class="overlay" id="peek-overlay" onclick="if(event.target===this)closePeekModal()" role="dialog" aria-modal="true" aria-label="Anteprima di Idearca">

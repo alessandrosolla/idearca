@@ -1132,3 +1132,21 @@ html[data-ruolo="osservatore"] .lib-add-link{display:none !important}
 .menu-mobile-x{position:absolute;top:1.3rem;right:1.4rem;width:38px;height:38px;border-radius:50%;
   border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.07);color:#e8eee4;
   font-size:1rem;cursor:pointer}
+
+/* ── LE STATISTICHE ─────────────────────────────────────────
+   Barre e colonnine disegnate con il CSS: nessuna libreria di
+   grafici per quattro classifiche. */
+.stat-giorni{display:flex;align-items:flex-end;gap:.35rem;height:120px;
+  padding:.6rem .2rem 0;border-bottom:1px solid var(--border)}
+.stat-giorno{flex:1;display:flex;flex-direction:column;align-items:center;gap:.35rem;height:100%;justify-content:flex-end}
+.stat-giorno i{display:block;width:100%;max-width:26px;border-radius:4px 4px 0 0;
+  background:linear-gradient(180deg,var(--forest),var(--forest-deep));transition:height .5s}
+.stat-giorno span{font-size:.55rem;color:var(--stone-light);white-space:nowrap}
+.stat-lista{display:flex;flex-direction:column;gap:.45rem}
+.stat-riga{display:grid;grid-template-columns:minmax(0,11rem) 1fr auto;gap:.8rem;align-items:center}
+.stat-et{font-size:.82rem;color:var(--ink);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.stat-barra{height:9px;border-radius:20px;background:var(--surface);overflow:hidden}
+.stat-barra i{display:block;height:100%;border-radius:20px;
+  background:linear-gradient(90deg,var(--gold),var(--forest));transition:width .5s}
+.stat-n{font-size:.8rem;font-weight:600;color:var(--forest);min-width:2.2rem;text-align:right}
+@media(max-width:640px){.stat-riga{grid-template-columns:minmax(0,7rem) 1fr auto;gap:.5rem}}
