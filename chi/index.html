@@ -6,54 +6,75 @@
 <title>Chi sono · Cosa è Idearca — Alessandro Solla</title>
 <meta name="description" content="Alessandro Solla, docente abilitato di Storia e Filosofia (A-19). Che cos'è Idearca: una piattaforma didattica progettata, scritta e mantenuta da me.">
 <link rel="icon" type="image/svg+xml" href="../favicon.svg">
-<link rel="stylesheet" href="../css/stile.css?v=20260810t">
+<link rel="stylesheet" href="../css/stile.css?v=20260810y">
 <style>
 .pg{max-width:900px;margin:0 auto;padding:7rem 2rem 5rem}
 .pg-eye{font-size:.63rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:600}
 .pg h1{font-family:'Cormorant Garamond',serif;font-size:3.1rem;font-weight:400;line-height:1.02;margin:.5rem 0 1rem}
 .pg .lede{font-size:1.05rem;line-height:1.85;color:var(--stone);font-weight:300;max-width:62ch}
 
-.intesta{display:grid;grid-template-columns:130px 1fr;gap:2rem;align-items:center;
-  margin:2.4rem 0 3rem;padding:1.8rem;border-radius:16px;
-  background:linear-gradient(115deg,rgba(45,90,39,.09),rgba(154,124,46,.05));
-  border:1px solid var(--border)}
+.intesta{position:relative;overflow:hidden;display:grid;grid-template-columns:130px 1fr;
+  gap:2rem;align-items:center;margin:2.4rem 0 3rem;padding:2rem;border-radius:18px;
+  background:linear-gradient(118deg,rgba(45,90,39,.17) 0%,rgba(154,124,46,.11) 48%,rgba(161,84,47,.07) 100%);
+  border:1px solid rgba(45,90,39,.2);border-left:5px solid var(--forest)}
+.intesta::before{content:'';position:absolute;inset:0;pointer-events:none;
+  background:repeating-linear-gradient(118deg,rgba(45,90,39,.05) 0 1px,transparent 1px 14px)}
+.intesta>*{position:relative}
 .ritratto{width:130px;height:130px;border-radius:50%;object-fit:cover;
   border:3px solid var(--white);box-shadow:0 8px 30px rgba(28,43,26,.16)}
 .ritratto-vuoto{width:130px;height:130px;border-radius:50%;display:flex;align-items:center;
-  justify-content:center;background:var(--forest);color:#fff;
-  font-family:'Cormorant Garamond',serif;font-size:2.6rem;letter-spacing:.02em}
+  justify-content:center;color:#fff;font-family:'Cormorant Garamond',serif;
+  font-size:2.6rem;letter-spacing:.02em;
+  background:linear-gradient(140deg,#2d5a27,#9a7c2e);
+  box-shadow:0 10px 34px rgba(45,90,39,.32)}
 .intesta h2{font-family:'Cormorant Garamond',serif;font-size:1.9rem;font-weight:500;margin-bottom:.25rem}
 .intesta .ruolo{font-size:.85rem;color:var(--forest);font-weight:500;margin-bottom:.7rem}
 .intesta p{font-size:.9rem;line-height:1.75;color:var(--stone);font-weight:300}
 .intesta .contatti{margin-top:.9rem;display:flex;gap:1.2rem;flex-wrap:wrap;font-size:.82rem}
 .intesta .contatti a{color:var(--forest);text-decoration:none;border-bottom:1px solid var(--border-gold)}
 
-h2.sez{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:400;
-  margin:3.4rem 0 1.2rem;padding-bottom:.6rem;border-bottom:1px solid var(--border)}
+h2.sez{font-family:'Cormorant Garamond',serif;font-size:2.4rem;font-weight:400;
+  margin:4rem 0 1.3rem;padding:1.4rem 1.6rem;border-radius:14px;color:#f4f1e8;
+  background:linear-gradient(115deg,#2d5a27,#1a3a16 65%,#9a7c2e)}
 h3.sotto{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);
-  font-weight:600;margin:2rem 0 .9rem}
+  font-weight:700;margin:2.4rem 0 1rem;display:flex;align-items:center;gap:.7rem}
+h3.sotto::before{content:'';width:22px;height:3px;border-radius:2px;
+  background:linear-gradient(90deg,#2d5a27,#9a7c2e)}
 .pg p{font-size:.94rem;line-height:1.85;color:var(--stone);font-weight:300;margin-bottom:1rem;max-width:66ch}
 .pg strong{color:var(--ink);font-weight:500}
 
 .tappe{list-style:none;border-left:2px solid var(--border);padding-left:1.6rem;margin:1rem 0 0}
 .tappa{position:relative;padding-bottom:1.6rem}
-.tappa::before{content:'';position:absolute;left:-1.95rem;top:.45rem;width:9px;height:9px;
-  border-radius:50%;background:var(--forest);border:2px solid var(--cream)}
+.tappe{border-left:2px solid transparent;
+  border-image:linear-gradient(to bottom,#2d5a27,#9a7c2e,#a1542f) 1}
+.tappa::before{content:'';position:absolute;left:-1.95rem;top:.45rem;width:11px;height:11px;
+  border-radius:50%;background:var(--forest);border:2.5px solid var(--cream);
+  box-shadow:0 0 0 3px rgba(45,90,39,.14)}
+.tappa:nth-child(2)::before{background:#6f8f2e;box-shadow:0 0 0 3px rgba(111,143,46,.14)}
+.tappa:nth-child(3)::before{background:#9a7c2e;box-shadow:0 0 0 3px rgba(154,124,46,.16)}
+.tappa:nth-child(4)::before{background:#a1542f;box-shadow:0 0 0 3px rgba(161,84,47,.14)}
 .tappa .quando{font-size:.68rem;letter-spacing:.13em;text-transform:uppercase;color:var(--gold);font-weight:600}
 .tappa b{display:block;font-size:.98rem;font-weight:500;color:var(--ink);margin:.15rem 0 .2rem}
 .tappa span{font-size:.85rem;color:var(--stone)}
 .tappa em{font-style:normal;color:var(--forest);font-weight:500}
 
 .numeroni{display:grid;grid-template-columns:repeat(4,1fr);gap:.8rem;margin:1.6rem 0 2rem}
-.numerone{border-radius:12px;padding:1.1rem .7rem;text-align:center;background:var(--white);
-  border:1px solid var(--border);border-top:3px solid var(--a)}
+.numerone{border-radius:14px;padding:1.25rem .7rem 1.1rem;text-align:center;
+  background:linear-gradient(160deg,color-mix(in srgb,var(--a) 13%,var(--white)),var(--white));
+  border:1px solid color-mix(in srgb,var(--a) 28%,transparent);border-top:3px solid var(--a);
+  transition:transform .2s}
+.numerone:hover{transform:translateY(-3px)}
 .numerone b{display:block;font-family:'Cormorant Garamond',serif;font-size:2.1rem;
   font-weight:600;color:var(--a);line-height:1}
 .numerone span{font-size:.6rem;letter-spacing:.13em;text-transform:uppercase;color:var(--stone)}
 
 .pezzi{display:grid;grid-template-columns:repeat(2,1fr);gap:.9rem;margin-top:1.2rem}
-.pezzo{border:1px solid var(--border);border-left:3px solid var(--a);border-radius:10px;
-  padding:1.1rem 1.2rem;background:var(--white)}
+.pezzo{border:1px solid color-mix(in srgb,var(--a) 24%,transparent);border-top:3px solid var(--a);
+  border-radius:12px;padding:1.2rem 1.3rem;
+  background:linear-gradient(150deg,color-mix(in srgb,var(--a) 8%,var(--white)),var(--white));
+  transition:transform .2s,box-shadow .2s}
+.pezzo:hover{transform:translateY(-3px);box-shadow:0 12px 34px rgba(28,43,26,.11)}
+.pezzo b{color:var(--a)}
 .pezzo b{display:block;font-size:.92rem;font-weight:500;color:var(--ink);margin-bottom:.3rem}
 .pezzo p{font-size:.82rem;line-height:1.65;margin:0}
 
@@ -90,18 +111,20 @@ h3.sotto{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var
   <span class="pg-eye" id="chi">Chi sono</span>
   <h1>Alessandro Solla</h1>
   <p class="lede">Insegno Storia e Filosofia. Idearca è lo strumento che mi sono
-  costruito per farlo: l'ho progettato, scritto e lo mantengo da solo.</p>
+  costruito per farlo: l'ho progettato, l'ho realizzato e lo mantengo da solo.</p>
 
   <div class="intesta">
     <div class="ritratto-vuoto" id="ritratto">AS</div>
     <div>
       <h2>Alessandro Solla</h2>
       <div class="ruolo">Docente abilitato — classe di concorso A-19, Storia e Filosofia</div>
-      <p>Laurea magistrale in Storia e società con 110 e lode, conseguita in un solo
-      anno. Attualmente iscritto alla magistrale in Filosofia e forme del sapere.
-      Ho lavorato come tutor per l'inclusione all'Università di Cagliari, affiancando
-      studenti con disabilità e BES: è lì che ho imparato che un materiale didattico
-      o è accessibile a tutti, o non è un buon materiale.</p>
+      <p>Laurea magistrale in Storia e società con <strong>110 e lode</strong>,
+      conseguita in un solo anno. Attualmente iscritto alla magistrale in Filosofia
+      e forme del sapere. Ho contribuito a progetti di <strong>storia pubblica e
+      digitale, con pubblicazioni su UNICApress</strong>. Ho lavorato come tutor per
+      l'inclusione all'Università di Cagliari, affiancando studenti con disabilità e
+      BES: è lì che ho imparato che un materiale didattico o è accessibile a tutti,
+      o non è un buon materiale.</p>
       <div class="contatti">
         <a href="mailto:alessandrosolla02@gmail.com">alessandrosolla02@gmail.com</a>
         <a href="https://github.com/alessandrosolla/idearca" target="_blank" rel="noopener">Il codice di Idearca su GitHub</a>
@@ -122,7 +145,7 @@ h3.sotto{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var
       <span>Università degli Studi di Cagliari — <em>110 e lode, in un solo anno</em></span></li>
     <li class="tappa"><span class="quando">2021 – 2024</span>
       <b>Laurea triennale in Scienze politiche</b>
-      <span>Università degli Studi di Cagliari — votazione 100</span></li>
+      <span>Università degli Studi di Cagliari</span></li>
   </ul>
 
   <h3 class="sotto">Esperienza</h3>
@@ -142,8 +165,8 @@ h3.sotto{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var
   <h2 class="sez" id="cosa">Cosa è Idearca</h2>
 
   <p>Idearca è una piattaforma didattica. Non è un blog, non è un sito vetrina e
-  non è un tema comprato: è un'applicazione web <strong>progettata, programmata e
-  mantenuta da me</strong>, riga per riga, mentre insegnavo.</p>
+  non è un tema comprato: è un'applicazione web <strong>progettata, costruita e
+  mantenuta da me</strong>, mentre insegnavo.</p>
 
   <p>È nata da un problema pratico. Avevo centinaia di materiali sparsi fra cartelle,
   chiavette e allegati di posta, e in aula perdevo minuti a cercarli. Serviva un
@@ -151,10 +174,10 @@ h3.sotto{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var
   come dal proiettore della classe.</p>
 
   <div class="numeroni">
-    <div class="numerone" style="--a:#2d5a27"><b>522</b><span>materiali</span></div>
-    <div class="numerone" style="--a:#9a7c2e"><b>8</b><span>materie</span></div>
-    <div class="numerone" style="--a:#a1542f"><b>120</b><span>capitoli con domande</span></div>
-    <div class="numerone" style="--a:#3f6d8c"><b>1080</b><span>domande pronte</span></div>
+    <div class="numerone" style="--a:#2d5a27"><b data-numero="materiali">522</b><span>materiali</span></div>
+    <div class="numerone" style="--a:#9a7c2e"><b data-numero="materie">8</b><span>materie</span></div>
+    <div class="numerone" style="--a:#a1542f"><b data-numero="capitoli">120</b><span>capitoli con domande</span></div>
+    <div class="numerone" style="--a:#3f6d8c"><b data-numero="domande">1080</b><span>domande pronte</span></div>
   </div>
 
   <h3 class="sotto">Di che cosa è fatta</h3>
@@ -179,11 +202,7 @@ h3.sotto{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var
   (PostgreSQL): l'archivio dei materiali, i codici di accesso, le lavagne archiviate,
   le consegne, le sessioni di voto. Il sito è pubblicato con GitHub Pages.</p>
 
-  <p>La scelta di cui vado più fiero non si vede: <strong>i permessi stanno nel
-  database, non nelle pagine</strong>. Uno studente non può leggere le consegne dei
-  compagni non perché la pagina non gliele mostri, ma perché è il database a
-  rifiutargliele — anche se provasse ad aggirare il sito. Allo stesso modo, un compito
-  consegnato fuori dalla finestra temporale viene respinto dal server, non dal modulo.</p>
+
 
   <p>Altri due dettagli che raccontano il metodo. La lavagna non salva immagini ma
   <strong>elenchi di tratti</strong> — coordinate e colori: pochi kilobyte per lezione
@@ -213,5 +232,6 @@ h3.sotto{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var
 })();
 try{const t=localStorage.getItem('idearca-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}
 </script>
+<script src="../js/numeri.js?v=20260810y" data-base="../"></script>
 </body>
 </html>

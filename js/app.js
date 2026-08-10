@@ -1211,12 +1211,18 @@ async function caricaVetrina(){
     const primo=(materia,tab)=>righe
       .filter(r=>r.materia===materia&&r.tab===tab&&r.link&&r.link!=='#')
       .sort((a,b)=>(a.posizione||0)-(b.posizione||0))[0];
-    const ORO='#9a7c2e', VERDE='#2d5a27';
+    const ORO='#9a7c2e', VERDE='#2d5a27', TERRA='#a1542f', BLU='#3f6d8c';
+    /* Un esempio per ogni scaffale: chi valuta il lavoro deve poter
+       aprire almeno una cosa di ogni tipo, non quattro slide uguali. */
     const campioni=[
-      {tipo:'Slide di lezione', materia:'Filosofia antica',    col:ORO,   r:primo('fil-antica','materiali')},
-      {tipo:'Slide di lezione', materia:'Storia contemporanea',col:VERDE, r:primo('sto-contemporanea','materiali')},
-      {tipo:'Fonte',            materia:'Storia medievale',    col:VERDE, r:primo('sto-medievale','fonti')},
-      {tipo:'Approfondimento',  materia:'Filosofia antica',    col:ORO,   r:primo('fil-antica','esercizi')}
+      {tipo:'Slide di lezione', materia:'Filosofia antica',     col:ORO,   r:primo('fil-antica','materiali')},
+      {tipo:'Slide di lezione', materia:'Storia contemporanea', col:VERDE, r:primo('sto-contemporanea','materiali')},
+      {tipo:'Fonte',            materia:'Storia medievale',     col:VERDE, r:primo('sto-medievale','fonti')},
+      {tipo:'Fonte',            materia:'Filosofia antica',     col:ORO,   r:primo('fil-antica','fonti')},
+      {tipo:'Approfondimento',  materia:'Filosofia antica',     col:ORO,   r:primo('fil-antica','esercizi')},
+      {tipo:'Approfondimento',  materia:'Storia medievale',     col:VERDE, r:primo('sto-medievale','esercizi')},
+      {tipo:'Compito',          materia:'Filosofia antica',     col:TERRA, r:primo('fil-antica','compiti')},
+      {tipo:'Risorsa',          materia:'Storia contemporanea', col:BLU,   r:primo('sto-contemporanea','interdisciplinare')}
     ].filter(c=>c.r);
 
     const num=(n,l,c)=>`<div class="peek-num" style="--a:${c}"><b>${n}</b><span>${l}</span></div>`;
@@ -1265,9 +1271,10 @@ async function caricaVetrina(){
       </section>
 
       ${campioni.length?`<section class="peek-sec">
-        <div class="peek-sec-title">Guarda dentro un documento</div>
-        <p class="peek-sec-nota">Questi quattro sono aperti a tutti: si aprono adesso, senza codice.
-        Sono materiale di lezione vero, non esempi preparati per la vetrina.</p>
+        <div class="peek-sec-title">Guarda dentro: un esempio di ogni tipo</div>
+        <p class="peek-sec-nota">Uno per ogni scaffale &mdash; slide, fonti, approfondimenti,
+        compiti, risorse. Si aprono adesso, senza codice, e sono materiale di lezione vero:
+        non esempi preparati per la vetrina.</p>
         <div class="peek-open">
           ${campioni.map(c=>`<a class="peek-open-card" style="--a:${c.col}"
               href="${esc(c.r.link)}" target="_blank" rel="noopener">
@@ -1278,6 +1285,23 @@ async function caricaVetrina(){
           </a>`).join('')}
         </div>
       </section>`:''}
+
+      <section class="peek-sec">
+        <div class="peek-sec-title">Prova gli strumenti</div>
+        <p class="peek-sec-nota">Questi funzionano davvero, subito, senza registrarsi.</p>
+        <div class="peek-open">
+          <a class="peek-open-card" style="--a:#3f6d8c" href="tempo/index.html" target="_blank" rel="noopener">
+            <span class="peek-open-tipo">Strumento</span>
+            <span class="peek-open-tit">Linea del tempo</span>
+            <span class="peek-open-mat">312 eventi, storia e filosofia a confronto</span>
+            <span class="peek-open-apri">Aprila <b>&#8599;</b></span></a>
+          <a class="peek-open-card" style="--a:#a1542f" href="metodologie/index.html" target="_blank" rel="noopener">
+            <span class="peek-open-tipo">Strumento</span>
+            <span class="peek-open-tit">Attivit&agrave; per la classe</span>
+            <span class="peek-open-mat">Debate e jigsaw con tempi, regole e fonti</span>
+            <span class="peek-open-apri">Aprile <b>&#8599;</b></span></a>
+        </div>
+      </section>
     `;
     vetrinaFatta=true;
   }catch(e){

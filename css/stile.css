@@ -161,19 +161,26 @@ nav.scrolled{box-shadow:0 4px 32px rgba(28,43,26,0.07)}
 /* La didascalia stava in fondo all'immagine, cioe' sotto la piega:
    per cliccarla bisognava scorrere. Ora sta in alto, dove il quadro
    si vede appena la pagina si apre. */
-.hero-img-credit{position:absolute;top:5.4rem;right:1.1rem;z-index:4;
-  display:inline-flex;align-items:center;gap:.5rem;
-  font-family:'Jost',sans-serif;font-size:.6rem;letter-spacing:.11em;text-transform:uppercase;
-  color:#e6d2a0;background:rgba(12,26,14,.5);border:1px solid rgba(196,164,78,.38);
-  padding:.46rem .8rem;border-radius:100px;cursor:pointer;
-  -webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);
-  box-shadow:0 2px 18px rgba(0,0,0,.28);
-  transition:color .25s,border-color .25s,background .25s,box-shadow .25s,transform .25s}
-.hero-img-credit em{font-style:normal;opacity:.65}
-.hero-img-credit svg{flex:none;opacity:.8;transition:opacity .25s,transform .25s}
-.hero-img-credit:hover{color:#fff6df;border-color:rgba(212,178,86,.9);background:rgba(20,41,22,.75);
-  box-shadow:0 4px 26px rgba(196,164,78,.32);transform:translateY(-2px)}
-.hero-img-credit:hover svg{opacity:1;transform:scale(1.12)}
+/* La didascalia del quadro. Non un cartellino appiccicato:
+   un cerchio discreto in basso a sinistra dell'immagine — dove
+   non c'e' nulla e si vede senza scorrere — che avvicinandosi si
+   allunga e scopre il titolo dell'opera. */
+.hero-img-credit{position:absolute;left:1.4rem;top:calc(68px + 1.4rem);z-index:4;
+  display:inline-flex;align-items:center;gap:.6rem;cursor:pointer;
+  padding:.42rem;border-radius:100px;max-width:2.5rem;overflow:hidden;
+  background:rgba(12,26,14,.42);border:1px solid rgba(196,164,78,.35);
+  -webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);
+  font-family:'Jost',sans-serif;font-size:.68rem;color:#e6d2a0;white-space:nowrap;
+  transition:max-width .45s cubic-bezier(.2,.8,.3,1),background .3s,border-color .3s,padding .3s}
+.hic-cerchio{flex:none;width:1.6rem;height:1.6rem;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  background:rgba(196,164,78,.2);color:#e8d9a0;transition:background .3s}
+.hic-testo{padding-right:.7rem;opacity:0;transition:opacity .35s .1s}
+.hic-testo em{font-style:italic}
+.hero-img-credit:hover,.hero-img-credit:focus-visible{max-width:26rem;
+  background:rgba(12,26,14,.78);border-color:rgba(212,178,86,.8)}
+.hero-img-credit:hover .hic-testo,.hero-img-credit:focus-visible .hic-testo{opacity:1}
+.hero-img-credit:hover .hic-cerchio{background:rgba(212,178,86,.42)}
 .hero-img-credit:focus-visible{outline:2px solid var(--gold-light);outline-offset:3px}
 
 /* L'affresco a tutto schermo */
@@ -202,7 +209,7 @@ nav.scrolled{box-shadow:0 4px 32px rgba(28,43,26,0.07)}
   .opera-x{top:1rem;right:1rem;transform:none;position:fixed}
   .opera-x:hover{transform:rotate(90deg)}
   .opera-img{max-height:52vh}
-  .hero-img-credit{font-size:.55rem;padding:.4rem .7rem;right:.8rem;top:4.6rem}
+  .hero-img-credit{left:.9rem;top:calc(68px + .9rem)}
 }
 .hero-geo{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none;z-index:2}
 .hero-geo svg{width:90%;height:90%;opacity:.05}
