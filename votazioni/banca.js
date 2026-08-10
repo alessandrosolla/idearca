@@ -5860,6 +5860,55 @@ const BANCA = [
               'La presenza piena della verità è una finzione della metafisica'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: quanto di ciò che pensi hai scelto tu? Una parola.'}
+  ]},
+{
+  titolo: 'Filosofia contemporanea · 21 — Hannah Arendt',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: chi commette il male è sempre un mostro? Una parola.'},
+
+    {tipo:'scelta', testo:'Quali sono i due elementi costitutivi del totalitarismo?',
+     opzioni:['Un\'ideologia presentata come legge assoluta e il terrore',
+              'Una verità storica indiscutibile applicata con la violenza',
+              'Il terrore non serve a reprimere: è l\'essenza del regime',
+              'Chi ostacola la legge della natura o della storia viene eliminato'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché il totalitarismo è qualcosa di nuovo?',
+     opzioni:['Non vuole solo obbedienza: vuole cambiare la natura umana',
+              'Il suo bersaglio è la capacità di iniziare qualcosa di nuovo',
+              'Non si accontenta di uno Stato: è un movimento senza confini',
+              'I campi servono a dimostrare che tutto è possibile'], giusta:0},
+
+    {tipo:'scelta', testo:'Che differenza c\'è fra lavoro, opera e azione?',
+     opzioni:['Il primo serve a vivere, la seconda costruisce, la terza fonda storie',
+              'Uno produce ciò che si consuma, l\'altra ciò che dura',
+              'Solo l\'azione avviene fra le persone e non sulle cose',
+              'L\'azione è l\'unica attività veramente libera'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è la natalità per Arendt?',
+     opzioni:['Ogni uomo che nasce porta nel mondo un inizio assoluto',
+              'Non la morte ma la nascita sta al centro della filosofia',
+              'La capacità di cominciare ciò che nessuno aveva previsto',
+              'Il fondamento per cui la storia non è mai già decisa'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché la pluralità è la condizione della politica?',
+     opzioni:['Siamo abbastanza uguali per capirci e abbastanza diversi da doverci parlare',
+              'Sulla terra non abita l\'Uomo ma gli uomini al plurale',
+              'Senza differenze non servirebbero né parola né azione',
+              'La politica nasce nello spazio che sta fra le persone'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa rivela lo spazio pubblico?',
+     opzioni:['Mostra chi siamo, mentre il lavoro dice solo che cosa siamo',
+              'È il luogo in cui appariamo agli altri con parole e gesti',
+              'Solo lì l\'uomo può essere libero davanti a testimoni',
+              'Ciascuno vi si espone e diventa riconoscibile'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa significa «banalità del male»?',
+     opzioni:['Si può fare del male enorme semplicemente smettendo di pensare',
+              'Eichmann non era un demonio ma un funzionario ordinato',
+              'Non serve odio: bastano gli ordini e le frasi fatte',
+              'Chiunque rinunci a interrogarsi può diventarne esecutore'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: pensare basta a impedire il male? Una parola.'}
   ]
 }
 ];
