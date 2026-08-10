@@ -5664,6 +5664,104 @@ const BANCA = [
               'Non esiste un linguaggio privato comprensibile a uno solo'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: quanti problemi nascono solo da come parliamo? Una parola.'}
+  ]},
+{
+  titolo: 'Filosofia contemporanea · 17 — Il pragmatismo: Peirce, James, Dewey',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: un\'idea vale per quello che dice o per quello che fa? Una parola.'},
+
+    {tipo:'scelta', testo:'Qual è il principio di fondo del pragmatismo?',
+     opzioni:['Il significato di un\'idea sta nei suoi effetti pratici',
+              'Un concetto vale per la differenza che fa nell\'agire',
+              'La filosofia deve servire alla vita, non speculare a vuoto',
+              'Il pensiero si giudica da ciò che produce, non da come suona'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è una credenza per Peirce?',
+     opzioni:['Un\'abitudine che ci rende pronti ad agire in un certo modo',
+              'Non un\'opinione qualsiasi ma una regola per la condotta',
+              'Ciò che orienta il comportamento anche senza pensarci',
+              'Il punto in cui il dubbio smette di irritarci'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché solo il metodo scientifico è affidabile per Peirce?',
+     opzioni:['Perché è l\'unico capace di correggersi da solo',
+              'Non si aggrappa alle convinzioni né obbedisce a un\'autorità',
+              'Mette le ipotesi alla prova dei fatti invece di difenderle',
+              'Ammette di poter sbagliare e proprio per questo progredisce'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è l\'abduzione?',
+     opzioni:['Inventare un\'ipotesi capace di spiegare ciò che si osserva',
+              'Dalla cenere si risale al fuoco che l\'ha prodotta',
+              'Il ragionamento che aggiunge conoscenza invece di riordinarla',
+              'Un\'ipotesi provvisoria che attende conferma sperimentale'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa afferma James sulla verità?',
+     opzioni:['Un\'idea non è vera: diventa vera se si verifica nei fatti',
+              'La verità è un processo, non una proprietà immobile',
+              'È vero ciò che funziona e ci porta dove volevamo andare',
+              'Possedere il vero è un mezzo per altre soddisfazioni vitali'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è la «volontà di credere»?',
+     opzioni:['Dove la prova manca, abbiamo il diritto di scegliere che cosa credere',
+              'Su Dio e sui valori nessun esperimento può decidere',
+              'A volte credere in qualcosa contribuisce a renderlo vero',
+              'La nostra natura passionale deve decidere lo stesso'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché per Dewey la scuola forma alla democrazia?',
+     opzioni:['Si impara a partecipare partecipando, non ascoltando regole',
+              'Educare significa costruire la vita sociale, non solo il singolo',
+              'L\'insegnamento parte dagli interessi concreti del bambino',
+              'Il metodo dell\'indagine è lo stesso metodo della convivenza'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: che cosa rende un\'idea davvero buona? Una parola.'}
+  ]},
+{
+  titolo: 'Filosofia contemporanea · 18 — Croce e Gentile: il neoidealismo italiano',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: un filosofo può restare neutrale davanti al potere? Una parola.'},
+
+    {tipo:'scelta', testo:'Che cosa unisce e poi divide Croce e Gentile?',
+     opzioni:['Insieme rilanciano l\'idealismo, poi il fascismo li separa',
+              'Condividono una rivista e un progetto, non una scelta politica',
+              'Uno entra nel regime, l\'altro firma il manifesto degli antifascisti',
+              'La stessa battaglia culturale porta a due destini opposti'], giusta:0},
+
+    {tipo:'scelta', testo:'Quali sono le quattro forme dello spirito in Croce?',
+     opzioni:['Arte e filosofia sul piano teorico, economia ed etica su quello pratico',
+              'Intuizione e concetto, utile individuale e bene universale',
+              'Il particolare e l\'universale, ciascuno nel conoscere e nell\'agire',
+              'Quattro attività distinte in cui lo spirito umano si esprime'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è la dialettica dei distinti?',
+     opzioni:['Le forme dello spirito si distinguono senza annullarsi a vicenda',
+              'Il bello non è il contrario del vero: sta su un altro piano',
+              'Ogni categoria implica le altre ma conserva la sua autonomia',
+              'L\'opposizione vale dentro ciascuna forma, non fra le forme'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa afferma l\'estetica di Croce?',
+     opzioni:['Non esiste intuizione che non sia già espressione',
+              'Arte e espressione coincidono: dentro e fuori non si separano',
+              'Il sentimento è materia informe a cui l\'arte dà forma',
+              'Chi non sa esprimere non ha davvero intuito'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché Croce rifiuta la «morte dell\'arte» di Hegel?',
+     opzioni:['L\'arte è forma autonoma, non un gradino verso la filosofia',
+              'Non è inferiore al pensiero: è semplicemente altro da esso',
+              'Quella tesi è un elogio funebre scritto dalla filosofia',
+              'Bello e vero non stanno in gerarchia fra loro'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa significa «ogni vera storia è storia contemporanea»?',
+     opzioni:['Il passato si comprende a partire dalle domande del presente',
+              'Non si racconta ciò che fu: si capisce ciò che ci riguarda',
+              'La storia vive nell\'interesse di chi la scrive oggi',
+              'Fuori dal corso della storia non c\'è nessuna verità'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è l\'attualismo di Gentile?',
+     opzioni:['La realtà è l\'atto vivente del pensare, non il pensiero già fatto',
+              'Il pensiero pensante non si può oggettivare senza perderlo',
+              'Nulla esiste fuori dell\'atto in cui il soggetto pensa',
+              'Le categorie sono prodotto: la sorgente è l\'atto stesso'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: l\'arte serve a conoscere o a qualcos\'altro? Una parola.'}
   ]
 }
 ];
