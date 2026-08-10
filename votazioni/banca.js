@@ -5566,6 +5566,104 @@ const BANCA = [
               'La finitezza è comune, la risposta che le danno no'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: si vive meglio con o senza certezze? Una parola.'}
+  ]},
+{
+  titolo: 'Filosofia contemporanea · 15 — La crisi delle certezze nelle scienze',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: la matematica è scoperta o inventata? Una parola.'},
+
+    {tipo:'scelta', testo:'Che cosa mettono in crisi le geometrie non euclidee?',
+     opzioni:['L\'idea che esista una sola geometria vera dello spazio',
+              'Il quinto postulato non è necessario: se ne può fare a meno',
+              'La geometria euclidea diventa una possibilità fra altre',
+              'Lo spazio potrebbe essere curvo e non piatto come si credeva'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa afferma Hilbert sulla geometria?',
+     opzioni:['Punto e retta non vanno definiti: conta come si comportano',
+              'Un sistema di assiomi funziona anche con tavoli e sedie',
+              'La geometria è una costruzione formale, non una descrizione',
+              'Ciò che importa sono le relazioni, non gli oggetti nominati'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa dimostra il teorema di Gödel?',
+     opzioni:['Un sistema ricco non può essere insieme coerente e completo',
+              'La matematica non può fondare se stessa dall\'interno',
+              'Restano sempre verità che il sistema non riesce a dimostrare',
+              'Il programma di dare fondamenti assoluti è irrealizzabile'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa cade con la relatività ristretta?',
+     opzioni:['Lo spazio e il tempo assoluti che Newton dava per certi',
+              'Due eventi simultanei per me possono non esserlo per te',
+              'Il tempo scorre diversamente a seconda del moto',
+              'Non esiste un orologio universale valido per tutti'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è la gravità nella relatività generale?',
+     opzioni:['Non una forza ma la curvatura dello spazio-tempo',
+              'La massa deforma la geometria in cui i corpi si muovono',
+              'I pianeti seguono la forma dello spazio, non un\'attrazione',
+              'Ciò che Newton chiamava forza diventa geometria'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa introduce l\'ipotesi dei quanti di Planck?',
+     opzioni:['L\'energia non scorre continua ma passa a pacchetti discreti',
+              'Esiste una quantità minima sotto la quale non si scende',
+              'La natura procede a salti e non in modo graduale',
+              'Il continuo della fisica classica viene messo da parte'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa afferma il principio di indeterminazione?',
+     opzioni:['Non si possono conoscere insieme posizione e velocità di una particella',
+              'Non è un limite degli strumenti ma della realtà stessa',
+              'Misurare significa disturbare ciò che si vuole misurare',
+              'La particella non possiede valori definiti prima della misura'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una scienza senza certezze è più debole o più onesta? Una parola.'}
+  ]},
+{
+  titolo: 'Filosofia contemporanea · 16 — Wittgenstein e l\'analisi del linguaggio',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: le parole descrivono il mondo o lo costruiscono? Una parola.'},
+
+    {tipo:'scelta', testo:'Che cos\'è la fallacia naturalistica di Moore?',
+     opzioni:['Definire «buono» identificandolo con una proprietà naturale',
+              'Confondere ciò che è piacevole o utile con ciò che è bene',
+              'Chiedersi se una cosa piacevole sia buona ha ancora senso',
+              'Ricavare un dover essere da come stanno i fatti'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa mostra la teoria delle descrizioni di Russell?',
+     opzioni:['La forma grammaticale di una frase può ingannare sul suo senso',
+              'Parlare del re di Francia non è privo di senso: è falso',
+              'L\'analisi logica rivela una struttura diversa da quella apparente',
+              'Una frase può sembrare nominare qualcosa che non esiste'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa afferma il Tractatus sul linguaggio?',
+     opzioni:['Le proposizioni hanno senso se raffigurano stati di cose possibili',
+              'Fra la struttura della frase e quella del fatto c\'è corrispondenza',
+              'Capire una proposizione è sapere che cosa accade se è vera',
+              'Il mondo è la totalità dei fatti e il linguaggio li rispecchia'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché la metafisica è «insensata» nel Tractatus?',
+     opzioni:['Le sue proposizioni non raffigurano nulla di verificabile',
+              'Non ci sono condizioni che le rendano vere o false',
+              'Parla di ciò che sta fuori dai limiti del dicibile',
+              'Nasce dal fraintendere la logica del nostro linguaggio'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa intende Wittgenstein per «mistico»?',
+     opzioni:['Ciò che non si può dire ma si mostra: etica, senso, valore',
+              'Non è insensato: è semplicemente fuori dal linguaggio',
+              'Anche risolte tutte le domande scientifiche, resterebbe intatto',
+              'Il campo di cui bisogna tacere, non quello che non conta'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa sono i giochi linguistici?',
+     opzioni:['Le molte attività in cui parlare si intreccia con il vivere',
+              'Ogni uso del linguaggio ha regole proprie, come ogni gioco',
+              'Non solo descrivere: anche pregare, ordinare, ringraziare',
+              'Non esiste una funzione unica che le comprenda tutte'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa cambia con «il significato è l\'uso»?',
+     opzioni:['Una parola vale per come la si usa, non per ciò che nomina',
+              'Capire non è avere un\'immagine in mente ma saper adoperare',
+              'Il senso dipende dal contesto e dalla pratica condivisa',
+              'Non esiste un linguaggio privato comprensibile a uno solo'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: quanti problemi nascono solo da come parliamo? Una parola.'}
   ]
 }
 ];
