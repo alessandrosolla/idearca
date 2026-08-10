@@ -9,94 +9,116 @@
 :root{
   --ink:#1c2b1a;--stone:#5a6b58;--stone-light:#8a9e87;
   --cream:#faf8f3;--surface:#edf2eb;--white:#fff;
-  --border:rgba(45,90,39,.14);
+  --border:rgba(45,90,39,.13);
   --storia:#2d5a27;--filosofia:#9a7c2e;
 }
 body{font-family:'Jost',-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;
-  background:var(--cream);color:var(--ink);-webkit-font-smoothing:antialiased}
-.wrap{max-width:1180px;margin:0 auto;padding:2.6rem 2rem 5rem}
+  background:var(--cream);color:var(--ink);-webkit-font-smoothing:antialiased;font-weight:300}
+.wrap{max-width:1140px;margin:0 auto;padding:2.4rem 1.8rem 5rem}
 
-.kicker{font-size:.63rem;letter-spacing:.22em;text-transform:uppercase;color:var(--stone-light);font-weight:600}
-h1{font-family:'Cormorant Garamond',Georgia,serif;font-size:2.8rem;font-weight:400;margin:.4rem 0 .7rem;line-height:1.05}
-.sub{font-size:.95rem;line-height:1.8;color:var(--stone);font-weight:300;max-width:66ch}
+/* ── testata ── */
+.kicker{font-size:.6rem;letter-spacing:.22em;text-transform:uppercase;color:var(--stone-light);font-weight:600}
+h1{font-family:'Cormorant Garamond',Georgia,serif;font-size:2.9rem;font-weight:400;margin:.35rem 0 .6rem;line-height:1.02}
+.sub{font-size:.94rem;line-height:1.75;color:var(--stone);max-width:64ch}
 
-/* ── i comandi ── */
-.barra{position:sticky;top:0;z-index:20;background:rgba(250,248,243,.94);
-  -webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);
-  border-bottom:1px solid var(--border);margin:2rem -2rem 0;padding:.9rem 2rem;
-  display:flex;gap:.5rem;align-items:center;flex-wrap:wrap}
-.filtro{font:inherit;font-size:.7rem;letter-spacing:.11em;text-transform:uppercase;
-  padding:.45rem .95rem;border-radius:100px;border:1.4px solid var(--border);
-  background:var(--white);color:var(--stone);cursor:pointer;transition:all .2s}
+.numeri{display:flex;gap:2.4rem;flex-wrap:wrap;margin-top:1.6rem;padding-top:1.4rem;border-top:1px solid var(--border)}
+.numero b{display:block;font-family:'Cormorant Garamond',Georgia,serif;font-size:1.75rem;font-weight:600;line-height:1}
+.numero span{font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;color:var(--stone-light)}
+.numero.st b{color:var(--storia)} .numero.fi b{color:var(--filosofia)}
+
+/* ── comandi ── */
+.barra{position:sticky;top:0;z-index:30;background:rgba(250,248,243,.95);
+  -webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--border);margin:1.8rem -1.8rem 0;padding:.85rem 1.8rem;
+  display:flex;gap:.45rem;align-items:center;flex-wrap:wrap}
+.filtro{font:inherit;font-size:.68rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;
+  padding:.42rem .9rem;border-radius:100px;border:1.3px solid var(--border);
+  background:var(--white);color:var(--stone);cursor:pointer;transition:all .18s;white-space:nowrap}
 .filtro:hover{border-color:var(--stone-light);color:var(--ink)}
 .filtro.on{background:var(--ink);border-color:var(--ink);color:var(--cream)}
 .filtro.on[data-m="s"]{background:var(--storia);border-color:var(--storia)}
 .filtro.on[data-m="f"]{background:var(--filosofia);border-color:var(--filosofia)}
-.sep{width:1px;height:22px;background:var(--border);margin:0 .35rem}
-.conteggio{margin-left:auto;font-size:.7rem;color:var(--stone-light)}
+.sep{width:1px;height:20px;background:var(--border);margin:0 .3rem}
+.conteggio{margin-left:auto;font-size:.68rem;color:var(--stone-light);letter-spacing:.06em}
+
+/* ── intestazioni delle due colonne ── */
+.colonne{position:sticky;top:53px;z-index:25;display:grid;grid-template-columns:1fr 76px 1fr;
+  background:linear-gradient(to bottom,var(--cream) 72%,transparent);padding:1.1rem 0 .8rem}
+.col-tit{font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;font-weight:700}
+.col-tit.s{grid-column:1;text-align:right;padding-right:1.1rem;color:var(--storia)}
+.col-tit.f{grid-column:3;padding-left:1.1rem;color:var(--filosofia)}
 
 /* ── l'asse ── */
-.tempo{position:relative;margin-top:2.4rem;padding-bottom:2rem}
-.tempo::before{content:'';position:absolute;left:50%;top:0;bottom:0;width:2px;
-  transform:translateX(-50%);background:linear-gradient(to bottom,transparent,var(--border) 4%,var(--border) 96%,transparent)}
+.tempo{position:relative;padding-bottom:2rem}
+.tempo::before{content:'';position:absolute;left:50%;top:0;bottom:0;width:1px;
+  transform:translateX(-50%);background:var(--border)}
 
-.era{position:relative;text-align:center;margin:2.6rem 0 1.8rem;z-index:2}
-.era span{display:inline-block;background:var(--cream);padding:.3rem 1.1rem;
-  font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:var(--stone-light);font-weight:600;
-  border:1px solid var(--border);border-radius:100px}
+.era{position:relative;z-index:2;display:grid;grid-template-columns:1fr auto 1fr;
+  align-items:center;gap:1rem;margin:2.2rem 0 1.4rem}
+.era::before,.era::after{content:'';height:1px;background:var(--border)}
+.era-et{display:flex;align-items:baseline;gap:.6rem;background:var(--cream);padding:0 .9rem;white-space:nowrap}
+.era-et b{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.2rem;font-weight:600}
+.era-et span{font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--stone-light)}
 
-.riga{position:relative;display:grid;grid-template-columns:1fr 88px 1fr;
-  align-items:start;margin-bottom:.9rem}
-.riga .vuoto{}
-.anno{grid-column:2;justify-self:center;position:relative;z-index:3;
-  font-family:'Cormorant Garamond',Georgia,serif;font-size:.9rem;font-weight:600;
-  background:var(--cream);padding:.28rem 0;width:100%;text-align:center;color:var(--stone)}
-.card{border:1px solid var(--border);border-radius:12px;padding:.95rem 1.15rem;
-  background:var(--white);position:relative;
-  transition:transform .22s,box-shadow .22s,border-color .22s}
-.card:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(28,43,26,.09)}
-.riga.s .card{grid-column:1;border-left:3px solid var(--storia);margin-right:.6rem}
-.riga.f .card{grid-column:3;border-right:3px solid var(--filosofia);margin-left:.6rem;text-align:right}
-.riga.s .anno{color:var(--storia)}
-.riga.f .anno{color:var(--filosofia)}
-.card b{display:block;font-size:.93rem;font-weight:500;line-height:1.35;margin-bottom:.3rem}
-.card p{font-size:.79rem;line-height:1.65;color:var(--stone);font-weight:300}
-.tag{display:inline-block;font-size:.55rem;letter-spacing:.15em;text-transform:uppercase;
-  font-weight:600;margin-bottom:.35rem}
-.riga.s .tag{color:var(--storia)}
-.riga.f .tag{color:var(--filosofia)}
-/* il puntino sull'asse */
-.riga::after{content:'';position:absolute;left:50%;top:.62rem;width:9px;height:9px;
-  border-radius:50%;transform:translateX(-50%);z-index:4;border:2px solid var(--cream)}
+.riga{position:relative;display:grid;grid-template-columns:1fr 76px 1fr;margin-bottom:.7rem}
+/* il pallino sta da solo sull'asse: niente piu' testo che ci finisce sotto */
+.riga::after{content:'';position:absolute;left:50%;top:1.55rem;width:11px;height:11px;
+  border-radius:50%;transform:translateX(-50%);z-index:3;
+  border:2.5px solid var(--cream);box-shadow:0 0 0 1px var(--border)}
 .riga.s::after{background:var(--storia)}
 .riga.f::after{background:var(--filosofia)}
 
+.card{position:relative;border:1px solid var(--border);border-radius:14px;
+  padding:1rem 1.2rem 1.05rem;background:var(--white);
+  transition:transform .2s,box-shadow .2s,border-color .2s}
+.card:hover{transform:translateY(-2px);box-shadow:0 10px 34px rgba(28,43,26,.1)}
+.riga.s .card{grid-column:1;margin-right:1.1rem;border-right:3px solid var(--storia)}
+.riga.f .card{grid-column:3;margin-left:1.1rem;border-left:3px solid var(--filosofia)}
+
+/* l'anno vive dentro la scheda, in grande */
+.c-testa{display:flex;align-items:baseline;gap:.6rem;margin-bottom:.3rem}
+.c-anno{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.5rem;font-weight:600;line-height:1}
+.c-tag{font-size:.55rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700}
+.riga.s .c-anno,.riga.s .c-tag{color:var(--storia)}
+.riga.f .c-anno,.riga.f .c-tag{color:var(--filosofia)}
+.card b{display:block;font-size:.97rem;font-weight:500;line-height:1.3;margin-bottom:.32rem;color:var(--ink)}
+.card p{font-size:.8rem;line-height:1.65;color:var(--stone)}
+
 .vuoto-msg{text-align:center;color:var(--stone);font-size:.9rem;padding:4rem 1rem}
 
-@media(max-width:820px){
-  .wrap{padding:1.8rem 1.1rem 4rem}
-  h1{font-size:2.1rem}
-  .barra{margin:1.4rem -1.1rem 0;padding:.8rem 1.1rem}
-  .conteggio{width:100%;margin:.3rem 0 0}
-  .tempo::before{left:9px}
-  .riga{grid-template-columns:26px 1fr;gap:0}
-  .riga .anno{grid-column:2;justify-self:start;text-align:left;padding:0 0 .2rem;width:auto;background:none}
-  .riga.s .card,.riga.f .card{grid-column:2;margin:0 0 .2rem;text-align:left;
+@media(max-width:860px){
+  .wrap{padding:1.6rem 1rem 4rem}
+  h1{font-size:2.05rem}
+  .numeri{gap:1.4rem}
+  .barra{margin:1.2rem -1rem 0;padding:.75rem 1rem}
+  .conteggio{width:100%;margin:.35rem 0 0}
+  .colonne{display:none}
+  .tempo::before{left:7px}
+  .riga{grid-template-columns:26px 1fr}
+  .riga.s .card,.riga.f .card{grid-column:2;margin:0;
     border-left:3px solid var(--storia);border-right:1px solid var(--border)}
   .riga.f .card{border-left-color:var(--filosofia)}
-  .riga::after{left:9px;top:.35rem}
-  .era{text-align:left;padding-left:26px}
+  .riga::after{left:7px;top:1.35rem}
+  .era{grid-template-columns:auto 1fr;padding-left:26px}
+  .era::before{display:none}
 }
 </style>
 </head>
 <body>
 <div class="wrap">
 
-  <div class="kicker">Idearca · Didattica</div>
+  <div class="kicker">Idearca · Strumenti</div>
   <h1>Linea del tempo</h1>
   <p class="sub">Gli snodi che compaiono nelle slide, messi uno accanto all'altro.
-  A sinistra quello che accadeva, a destra quello che si pensava: si vede subito
-  che le idee non nascono in una stanza vuota.</p>
+  A sinistra quello che accadeva, a destra quello che si pensava negli stessi anni:
+  si vede subito che le idee non nascono in una stanza vuota.</p>
+
+  <div class="numeri">
+    <div class="numero"><b id="n-tot">—</b><span>eventi</span></div>
+    <div class="numero st"><b id="n-sto">—</b><span>storia</span></div>
+    <div class="numero fi"><b id="n-fil">—</b><span>filosofia</span></div>
+    <div class="numero"><b id="n-arco">—</b><span>anni coperti</span></div>
+  </div>
 
   <div class="barra">
     <button class="filtro on" data-m="tutto" onclick="filtra('tutto')">Tutto</button>
@@ -111,29 +133,34 @@ h1{font-family:'Cormorant Garamond',Georgia,serif;font-size:2.8rem;font-weight:4
     <span class="conteggio" id="conteggio"></span>
   </div>
 
+  <div class="colonne"><span class="col-tit s">Storia</span><span class="col-tit f">Filosofia</span></div>
   <div class="tempo" id="tempo"></div>
 </div>
 
 <script src="eventi.js"></script>
 <script>
-/* Le quattro epoche del programma, con i loro confini.
-   Servono sia a raggruppare sia a filtrare. */
 const EPOCHE=[
-  {id:'antica',        l:'Mondo antico',            da:-4000, a:475},
-  {id:'medievale',     l:'Medioevo',                da:476,   a:1491},
-  {id:'moderna',       l:'Età moderna',             da:1492,  a:1814},
-  {id:'contemporanea', l:'Età contemporanea',       da:1815,  a:3000}
+  {id:'antica',        l:'Mondo antico',      da:-4000, a:475},
+  {id:'medievale',     l:'Medioevo',          da:476,   a:1491},
+  {id:'moderna',       l:'Età moderna',       da:1492,  a:1814},
+  {id:'contemporanea', l:'Età contemporanea', da:1815,  a:3000}
 ];
 const NOMI={s:'Storia', f:'Filosofia'};
-
 let mSel='tutto', eSel='tutte';
 
-function annoScritto(a){
-  return a<0 ? Math.abs(a)+' a.C.' : String(a);
-}
-function epocaDi(a){
-  return EPOCHE.find(e=>a>=e.da&&a<=e.a) || EPOCHE[EPOCHE.length-1];
-}
+const annoScritto = a => a<0 ? Math.abs(a)+' a.C.' : String(a);
+const epocaDi = a => EPOCHE.find(e=>a>=e.da&&a<=e.a) || EPOCHE[EPOCHE.length-1];
+const esc = t => String(t).replace(/[<>&]/g,c=>({'<':'&lt;','>':'&gt;','&':'&amp;'}[c]));
+
+/* i numeri in testata: si contano una volta sola, su tutto l'archivio */
+(function intestazione(){
+  const st=EVENTI.filter(e=>e.m==='s').length, fi=EVENTI.filter(e=>e.m==='f').length;
+  const anni=EVENTI.map(e=>e.a);
+  document.getElementById('n-tot').textContent=EVENTI.length;
+  document.getElementById('n-sto').textContent=st;
+  document.getElementById('n-fil').textContent=fi;
+  document.getElementById('n-arco').textContent=(Math.max(...anni)-Math.min(...anni)).toLocaleString('it-IT');
+})();
 
 function disegna(){
   const scelti=EVENTI
@@ -143,25 +170,29 @@ function disegna(){
 
   const box=document.getElementById('tempo');
   document.getElementById('conteggio').textContent =
-    scelti.length ? scelti.length+' event'+(scelti.length===1?'o':'i') : '';
+    scelti.length ? scelti.length+' event'+(scelti.length===1?'o in vista':'i in vista') : '';
 
   if(!scelti.length){
     box.innerHTML='<p class="vuoto-msg">Nessun evento con questi filtri.</p>';
     return;
   }
 
+  /* quanti eventi per epoca: il numero va nel divisorio */
+  const perEpoca={};
+  scelti.forEach(ev=>{const id=epocaDi(ev.a).id;perEpoca[id]=(perEpoca[id]||0)+1;});
+
   let html='', epocaCorrente='';
   scelti.forEach(ev=>{
     const ep=epocaDi(ev.a);
     if(ep.id!==epocaCorrente){
       epocaCorrente=ep.id;
-      html+='<div class="era"><span>'+ep.l+'</span></div>';
+      html+='<div class="era"><div class="era-et"><b>'+ep.l+'</b><span>'
+          + perEpoca[ep.id]+(perEpoca[ep.id]===1?' evento':' eventi')+'</span></div></div>';
     }
-    html+='<div class="riga '+ev.m+'">'
-      + '<div class="anno">'+annoScritto(ev.a)+'</div>'
-      + '<div class="card"><span class="tag">'+NOMI[ev.m]+'</span>'
-      + '<b>'+ev.t+'</b><p>'+ev.d+'</p></div>'
-      + '</div>';
+    html+='<div class="riga '+ev.m+'"><div class="card">'
+      + '<div class="c-testa"><span class="c-anno">'+annoScritto(ev.a)+'</span>'
+      + '<span class="c-tag">'+NOMI[ev.m]+'</span></div>'
+      + '<b>'+esc(ev.t)+'</b><p>'+esc(ev.d)+'</p></div></div>';
   });
   box.innerHTML=html;
 }
@@ -176,7 +207,6 @@ function periodo(e){
   document.querySelectorAll('.filtro[data-e]').forEach(b=>b.classList.toggle('on',b.dataset.e===e));
   disegna();
 }
-
 disegna();
 </script>
 </body>
