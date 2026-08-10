@@ -85,7 +85,13 @@ html[data-mode="intl"][data-theme="dark"]{
   --white:#1c2740;--stone:#a3b0c7;--stone-light:#7385a3;
   --border:rgba(255,255,255,0.09);--border-gold:rgba(217,187,110,0.22);
 }
-html{scroll-behavior:smooth;overflow-x:hidden;max-width:100%;transition:background .25s}
+/* Il colore che si vede oltre i bordi della pagina.
+   Quando si tira lo scroll oltre l'inizio o oltre la fine, il browser scopre
+   la tela sotto al documento: se resta crema, sull'home stona con l'hero verde.
+   Lo teniamo agganciato alla pagina aperta. */
+html{scroll-behavior:smooth;overflow-x:hidden;max-width:100%;
+     background:var(--cream);transition:background .25s}
+html[data-page="home"]{background:#0f1f10}
 body{font-family:'Jost',sans-serif;background:var(--cream);color:var(--ink);overflow-x:hidden;transition:background .25s,color .25s}
 .rev{opacity:0;transform:translateY(30px);transition:opacity .8s ease,transform .8s ease}
 .rev.on{opacity:1;transform:none}

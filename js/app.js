@@ -1,5 +1,14 @@
 const SB_URL='https://mqjceddrbhpwqjomhohm.supabase.co';
 const SB_KEY='sb_publishable_D7vDsaervKNJNgdJwknDpQ_Vuuf9CeJ';
+
+/* ── QUALE PAGINA È APERTA ──────────────────────────────────
+   Serve a una cosa sola, ma visibile: il colore che il browser
+   mostra quando si tira lo scroll oltre il bordo. Sull'home
+   dev'essere il verde notte dell'hero, altrove la crema.
+   ──────────────────────────────────────────────────────────── */
+function segnaPagina(nome){
+  document.documentElement.setAttribute('data-page',nome);
+}
 /* ── LOGIN DOCENTE ──────────────────────────────────────────
    Il docente entra con un vero login verificato dai server di
    Supabase (Supabase Auth). L'email qui sotto NON è un segreto
@@ -70,6 +79,7 @@ function openTracks(){
   document.getElementById('page-library').style.display='none';
   document.getElementById('page-tracks').style.display='block';
   document.documentElement.setAttribute('data-mode','intl');
+  segnaPagina('tracks');
   window.scrollTo(0,0);
 }
 function exitIntlToLibrary(){
@@ -77,6 +87,7 @@ function exitIntlToLibrary(){
   document.getElementById('page-ib').style.display='none';
   document.getElementById('page-library').style.display='block';
   document.documentElement.removeAttribute('data-mode');
+  segnaPagina('library');
   window.scrollTo(0,0);
 }
 function openIBPage(){
@@ -451,6 +462,7 @@ async function login(){
 function showLibrary(){
   document.getElementById('page-home').style.display='none';
   document.getElementById('page-library').style.display='block';
+  segnaPagina('library');
   window.scrollTo(0,0);
   const s=JSON.parse(sessionStorage.getItem('ix')||'{}');
   const initials=(s.nome||'U').split(' ').map(w=>w[0]).join('').slice(0,2).toUpperCase();
@@ -758,6 +770,7 @@ function logout(){
   sessionStorage.removeItem('ix');
   document.getElementById('page-library').style.display='none';
   document.getElementById('page-home').style.display='block';
+  segnaPagina('home');
   document.getElementById('admin-bar').style.display='none';
   document.getElementById('form-state').style.display='block';
   document.getElementById('success-state').classList.remove('on');
