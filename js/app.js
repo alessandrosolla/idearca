@@ -489,22 +489,68 @@ async function loadLibStats(keys){
     const testo=`${totale} document${totale===1?'o':'i'} · ${materieCoperte} materi${materieCoperte===1?'a':'e'} cop${materieCoperte===1?'erta':'erte'}`;
     if(elDesk)elDesk.textContent=testo;
     if(elMob)elMob.textContent=testo;
+    /* quante schede ha ciascuna materia: si vede accanto al nome,
+       così si capisce a colpo d'occhio dove c'è più roba */
+    const perMateria={};
+    rows.forEach(r=>{perMateria[r.materia]=(perMateria[r.materia]||0)+1;});
+    document.querySelectorAll('.lib-count[data-count]').forEach(el=>{
+      const n=perMateria[el.dataset.count];
+      if(n) el.textContent=n;
+    });
   }catch(e){
     if(elDesk)elDesk.textContent='';
     if(elMob)elMob.textContent='';
   }
 }
+/* ── LE AREE ────────────────────────────────────────────────
+   Prima le materie erano dieci voci grigie tutte uguali: per
+   capire dove ci si trovava bisognava leggere. Ora ogni area ha
+   il suo colore e ogni materia porta scritto il secolo che copre.
+   ──────────────────────────────────────────────────────────── */
+const AREE={
+  'Filosofia':        {col:'#9a7c2e'},
+  'Storia':           {col:'#2d5a27'},
+  'Educazione Civica':{col:'#a1542f'},
+  'Didattica':        {col:'#3f6d8c'},
+  'Strumenti':        {col:'#6b6459'}
+};
+function coloreArea(g){return (AREE[g]||{col:'var(--stone)'}).col;}
+
+function vociExtra(){
+  return [
+    {g:'Didattica',k:'__metodo__', l:'Metodologie didattiche', p:'Debate, jigsaw, attività'},
+    {g:'Didattica',k:'__lavagna__',l:'Lavagna',                p:'Da proiettare in aula'},
+    {g:'Didattica',k:'__inbox__',  l:'Inbox',                  p:'Consegne degli studenti'},
+    {g:'Didattica',k:'__voti__',   l:'Votazioni',              p:'120 capitoli pronti'},
+    {g:'Strumenti',k:'__map__',    l:'Mappa storica',          p:'Atlante interattivo'}
+  ];
+}
+
 function buildNav(keys){
   const groups={};
   keys.forEach(k=>{const g=MATERIE[k].g;if(!groups[g])groups[g]=[];groups[g].push(k);});
+  vociExtra().forEach(v=>{if(!groups[v.g])groups[v.g]=[];groups[v.g].push(v.k);});
+
+  const extraMap={};vociExtra().forEach(v=>extraMap[v.k]=v);
   let html='';let first=true;
+
   Object.entries(groups).forEach(([g,ks])=>{
-    html+=`<div class="lib-group"><div class="lib-group-title">${g}</div>`;
-    ks.forEach(k=>{html+=`<div class="lib-item${first?' active':''}" data-key="${k}" onclick="navClick(this,'${k}')"><span class="lib-dot"></span>${MATERIE[k].l}</div>`;first=false;});
+    const col=coloreArea(g);
+    html+=`<div class="lib-group" style="--area:${col}">
+      <div class="lib-group-title"><i class="lib-group-chip"></i>${g}</div>`;
+    ks.forEach(k=>{
+      const info=MATERIE[k]||extraMap[k];
+      if(!info)return;
+      const attiva=first&&!!MATERIE[k];
+      if(MATERIE[k])first=false;
+      html+=`<button class="lib-item${attiva?' active':''}" data-key="${k}" onclick="navClick(this,'${k}')">
+        <span class="lib-dot"></span>
+        <span class="lib-item-txt"><b>${info.l}</b><small>${info.p||''}</small></span>
+        <span class="lib-count" data-count="${k}"></span>
+      </button>`;
+    });
     html+='</div>';
   });
-  html+=`<div class="lib-group"><div class="lib-group-title">Didattica</div><div class="lib-item" data-key="__metodo__" onclick="navClick(this,'__metodo__')"><span class="lib-dot"></span>Metodologie didattiche</div><div class="lib-item" data-key="__lavagna__" onclick="navClick(this,'__lavagna__')"><span class="lib-dot"></span>Lavagna</div><div class="lib-item" data-key="__inbox__" onclick="navClick(this,'__inbox__')"><span class="lib-dot"></span>Inbox</div><div class="lib-item" data-key="__voti__" onclick="navClick(this,'__voti__')"><span class="lib-dot"></span>Votazioni</div></div>`;
-  html+=`<div class="lib-group"><div class="lib-group-title">Strumenti</div><div class="lib-item" data-key="__map__" onclick="navClick(this,'__map__')"><span class="lib-dot"></span>Mappa Storica</div></div>`;
   document.getElementById('lib-nav').innerHTML=html;
 }
 function buildMobSelect(keys){
@@ -727,10 +773,14 @@ async function renderSubject(key,tab){
   const s=JSON.parse(sessionStorage.getItem('ix')||'{}');
   const m=MATERIE[key];if(!m)return;
   const isAdmin=s.ruolo==='docente';
+  const areaCol=coloreArea(m.g);
   document.getElementById('lib-head').innerHTML=`
-    <div class="lib-breadcrumb">${m.g} · ${m.p}</div>
-    <h2 class="lib-content-title">${m.l}</h2>
-    <div class="lib-tabs-wrap">
+    <div class="lib-head-inner" style="--area:${areaCol}">
+      <div class="lib-breadcrumb"><i class="lib-area-chip"></i>${m.g}</div>
+      <h2 class="lib-content-title">${m.l}</h2>
+      <div class="lib-period">${m.p}</div>
+    </div>
+    <div class="lib-tabs-wrap" style="--area:${areaCol}">
     <div class="lib-tabs">
       <button class="lib-tab${ct==='materiali'?' active':''}" data-tab="materiali" onclick="switchTab('materiali')">Slide</button>
       <button class="lib-tab${ct==='fonti'?' active':''}" data-tab="fonti" onclick="switchTab('fonti')">Fonti</button>

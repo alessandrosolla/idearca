@@ -367,19 +367,52 @@ html[data-theme="dark"] .theme-toggle .icon-moon{display:block}
 .lib-stats-mob{display:none;padding-top:.6rem;font-size:.72rem;color:var(--stone-light)}
 @media(max-width:960px){.lib-stats-mob{display:block}}
 .lib-sidebar-head h3{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:300;color:var(--stone)}
-.lib-group{margin-top:1.4rem}
+/* ── LA BARRA DELLE MATERIE ─────────────────────────────────
+   Ogni area ha il suo colore (--area, messo dal JS) e ogni materia
+   dice sotto al nome che secoli copre e quante schede contiene. */
+.lib-group{margin-top:1.6rem}
 .lib-group:first-child{margin-top:0}
-.lib-group-title{font-size:.6rem;letter-spacing:.22em;text-transform:uppercase;color:var(--stone-light);padding:.2rem .6rem .5rem;font-weight:500;display:flex;align-items:center;gap:.5rem}
+.lib-group-title{font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--stone);padding:.2rem .5rem .55rem;font-weight:600;
+  display:flex;align-items:center;gap:.55rem}
 .lib-group-title::after{content:'';flex:1;height:1px;background:var(--border)}
-.lib-item{display:flex;align-items:center;gap:.7rem;padding:.6rem .85rem;font-size:.81rem;color:var(--stone);cursor:pointer;border-radius:6px;margin-bottom:.1rem;transition:all .22s;border-left:3px solid transparent}
+.lib-group-chip{width:7px;height:7px;border-radius:2px;flex:none;
+  background:var(--area,var(--stone));display:block}
+.lib-item{width:100%;text-align:left;font-family:'Jost',sans-serif;
+  display:flex;align-items:center;gap:.65rem;padding:.55rem .7rem;
+  color:var(--stone);cursor:pointer;border-radius:8px;margin-bottom:.15rem;
+  background:none;border:none;border-left:3px solid transparent;
+  transition:background .2s,color .2s,border-color .2s}
 .lib-item:hover{background:var(--surface);color:var(--ink)}
-.lib-item.active{background:linear-gradient(90deg,rgba(45,90,39,.08),transparent);color:var(--forest);font-weight:500;border-left-color:var(--forest)}
-.lib-dot{width:5px;height:5px;border-radius:50%;background:var(--border);flex-shrink:0;transition:all .2s}
-.lib-item.active .lib-dot{background:var(--forest);box-shadow:0 0 6px rgba(45,90,39,.4)}
+.lib-item.active{background:var(--surface);
+  background:color-mix(in srgb,var(--area,var(--forest)) 9%,transparent);
+  color:var(--ink);border-left-color:var(--area,var(--forest))}
+.lib-item-txt{flex:1;min-width:0;display:flex;flex-direction:column;gap:.1rem}
+.lib-item-txt b{font-size:.81rem;font-weight:400;line-height:1.25;color:inherit}
+.lib-item.active .lib-item-txt b{font-weight:600}
+.lib-item-txt small{font-size:.63rem;color:var(--stone-light);letter-spacing:.02em;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lib-dot{width:6px;height:6px;border-radius:50%;flex:none;
+  background:var(--border);transition:background .2s,box-shadow .2s}
+.lib-item:hover .lib-dot{background:var(--area,var(--forest));opacity:.5}
+.lib-item.active .lib-dot{background:var(--area,var(--forest));
+  box-shadow:0 0 0 3px color-mix(in srgb,var(--area,var(--forest)) 18%,transparent)}
+.lib-count{flex:none;font-size:.6rem;color:var(--stone-light);
+  background:var(--surface);border:1px solid var(--border);
+  border-radius:20px;padding:.1rem .45rem;min-width:1.7rem;text-align:center;line-height:1.5}
+.lib-count:empty{display:none}
+.lib-item.active .lib-count{color:var(--area,var(--forest));
+  border-color:color-mix(in srgb,var(--area,var(--forest)) 35%,transparent);
+  background:color-mix(in srgb,var(--area,var(--forest)) 10%,transparent)}
 .lib-content{background:var(--cream)}
 .lib-content-head{padding:2.8rem 4rem 0;margin-bottom:1.5rem}
-.lib-breadcrumb{font-size:.67rem;letter-spacing:.16em;text-transform:uppercase;color:var(--stone-light);margin-bottom:.6rem}
-.lib-content-title{font-family:'Cormorant Garamond',serif;font-size:2.3rem;font-weight:300;color:var(--ink);margin-bottom:.35rem}
+.lib-head-inner{padding-left:1.1rem;border-left:3px solid var(--area,var(--forest));margin-bottom:1.4rem}
+.lib-breadcrumb{font-size:.64rem;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--area,var(--stone));font-weight:600;margin-bottom:.45rem;
+  display:flex;align-items:center;gap:.5rem}
+.lib-area-chip{width:7px;height:7px;border-radius:2px;background:var(--area,var(--forest));display:block;flex:none}
+.lib-content-title{font-family:'Cormorant Garamond',serif;font-size:2.3rem;font-weight:300;color:var(--ink);margin-bottom:.3rem;line-height:1.05}
+.lib-period{font-size:.76rem;color:var(--stone);font-weight:300}
 .lib-content-meta{display:flex;align-items:center;gap:1.2rem;flex-wrap:wrap}
 .lib-count{font-size:.78rem;color:var(--stone)}
 .lib-add-link{font-size:.72rem;color:var(--forest);cursor:pointer;display:flex;align-items:center;gap:.3rem;transition:opacity .2s;text-decoration:none}
@@ -483,7 +516,7 @@ html[data-theme="dark"] .theme-toggle .icon-moon{display:block}
 .lib-tabs{display:flex;border-bottom:2px solid var(--border);margin-bottom:0}
 .lib-tab{padding:.65rem 1.5rem;font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:var(--stone);cursor:pointer;border:none;background:none;font-family:'Jost',sans-serif;transition:all .2s;border-bottom:2px solid transparent;margin-bottom:-2px}
 .lib-tab:hover{color:var(--forest)}
-.lib-tab.active{color:var(--forest);font-weight:500;border-bottom-color:var(--forest)}
+.lib-tab.active{color:var(--area,var(--forest));font-weight:600;border-bottom-color:var(--area,var(--forest))}
 .lib-tabs-hint{display:none}
 @media(max-width:960px){
   .lib-tabs-hint{display:flex;align-items:center;justify-content:center;flex:0 0 20px;color:var(--gold);font-size:1.1rem;font-weight:600;background:var(--cream)}
