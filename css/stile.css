@@ -489,8 +489,91 @@ html[data-theme="dark"] .theme-toggle .icon-moon{display:block}
 .t-esercizio{background:#fff0e6;color:#8a3a00;border:1px solid rgba(138,58,0,.16)}
 .t-interdisciplinare{background:#e8f0fe;color:#1a3a8a;border:1px solid rgba(26,58,138,.16)}
 @media(max-width:960px){.mat-slides{grid-template-columns:1fr}.mat-body{padding:1.5rem}}
-.btn-peek{width:100%;padding:.82rem;background:transparent;color:var(--forest);font-family:'Jost',sans-serif;font-size:.73rem;letter-spacing:.14em;text-transform:uppercase;border:1.5px solid rgba(45,90,39,.3);cursor:pointer;border-radius:4px;transition:all .25s;display:flex;align-items:center;justify-content:center;gap:.55rem;margin-top:.5rem}
-.btn-peek:hover{border-color:var(--forest);background:var(--surface);transform:translateY(-1px)}
+/* «Dai una occhiata»: per chi arriva senza codice è l'unica porta aperta,
+   quindi deve vedersi. Bordo dorato pieno, non un contorno timido. */
+.btn-peek{width:100%;padding:.92rem 1rem;cursor:pointer;border-radius:6px;
+  background:linear-gradient(135deg,rgba(154,124,46,.1),rgba(154,124,46,.03));
+  color:var(--gold);border:1.6px solid var(--gold);
+  font-family:'Jost',sans-serif;font-size:.76rem;letter-spacing:.15em;text-transform:uppercase;font-weight:500;
+  display:flex;align-items:center;justify-content:center;gap:.6rem;
+  box-shadow:0 3px 18px rgba(154,124,46,.16);
+  transition:background .25s,color .25s,box-shadow .25s,transform .25s}
+.btn-peek svg{flex:none;transition:transform .25s}
+.btn-peek-arrow{transition:transform .25s;opacity:.75}
+.btn-peek:hover{background:var(--gold);color:#fff;transform:translateY(-2px);
+  box-shadow:0 8px 30px rgba(154,124,46,.34)}
+.btn-peek:hover .btn-peek-arrow{transform:translateX(4px);opacity:1}
+.btn-peek:focus-visible{outline:2px solid var(--gold-light);outline-offset:3px}
+.btn-peek-hint{margin:.6rem 0 0;text-align:center;font-size:.71rem;line-height:1.55;color:var(--stone);font-weight:300}
+
+/* ── LA VETRINA (anteprima senza codice) ───────────────────── */
+.peek-modal{max-width:860px;width:100%;padding:0;overflow:hidden;border-radius:16px;
+  display:flex;flex-direction:column;max-height:88vh}
+.peek-x{top:1.1rem;right:1.1rem}
+.peek-head{padding:2.2rem 2.4rem 1.4rem;border-bottom:1px solid var(--border)}
+.peek-title{font-family:'Cormorant Garamond',serif;font-size:2.4rem;font-weight:400;
+  color:var(--ink);line-height:1.05;margin:.4rem 0 .7rem}
+.peek-lede{font-size:.9rem;line-height:1.8;color:var(--stone);font-weight:300;max-width:62ch}
+.peek-scroll{padding:1.6rem 2.4rem 2rem;overflow-y:auto;flex:1}
+.peek-foot{padding:1.1rem 2.4rem;border-top:1px solid var(--border);background:var(--parchment);
+  display:flex;gap:.8rem;align-items:center;flex-wrap:wrap}
+.peek-foot .btn-primary,.peek-foot .btn-secondary{font-size:.72rem;padding:.8rem 1.6rem}
+
+/* i numeri in cima */
+.peek-nums{display:grid;grid-template-columns:repeat(4,1fr);gap:.7rem;margin-bottom:2rem}
+.peek-num{background:var(--surface);border:1px solid var(--border);border-radius:10px;
+  padding:1rem .7rem;text-align:center}
+.peek-num b{display:block;font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:600;
+  color:var(--forest);line-height:1}
+.peek-num span{display:block;margin-top:.3rem;font-size:.6rem;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--stone)}
+
+.peek-sec{margin-bottom:2rem}
+.peek-sec:last-child{margin-bottom:0}
+.peek-sec-title{font-size:.63rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);
+  font-weight:600;margin-bottom:.9rem;display:flex;align-items:center;gap:.7rem}
+.peek-sec-title::after{content:'';flex:1;height:1px;background:var(--border)}
+
+.peek-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:.8rem}
+.peek-card{border:1px solid var(--border);border-radius:10px;padding:1rem 1.1rem;background:var(--white);
+  transition:border-color .22s,transform .22s,box-shadow .22s}
+.peek-card:hover{border-color:var(--border-gold);transform:translateY(-2px);box-shadow:var(--shadow-sm)}
+.peek-card-top{display:flex;align-items:baseline;gap:.55rem;margin-bottom:.35rem}
+.peek-card-n{font-family:'Cormorant Garamond',serif;font-size:1.35rem;font-weight:600;color:var(--forest)}
+.peek-card-h{font-size:.86rem;font-weight:500;color:var(--ink)}
+.peek-card p{font-size:.77rem;line-height:1.65;color:var(--stone);font-weight:300}
+
+.peek-tools{display:grid;grid-template-columns:repeat(2,1fr);gap:.8rem}
+.peek-tool{display:flex;gap:.8rem;align-items:flex-start;border:1px solid var(--border);
+  border-radius:10px;padding:.9rem 1rem;background:var(--white)}
+.peek-tool-ic{width:32px;height:32px;flex:none;border-radius:8px;background:var(--surface);
+  border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:.95rem}
+.peek-tool b{display:block;font-size:.83rem;font-weight:500;color:var(--ink);margin-bottom:.15rem}
+.peek-tool span{font-size:.75rem;line-height:1.6;color:var(--stone);font-weight:300}
+
+.peek-open{display:flex;flex-direction:column;gap:.5rem}
+.peek-open-row{display:flex;align-items:center;gap:.9rem;padding:.7rem .9rem;border-radius:8px;
+  border:1px solid var(--border);background:var(--white);transition:border-color .2s,background .2s}
+.peek-open-row:hover{border-color:var(--forest);background:var(--surface)}
+.peek-open-tag{font-size:.57rem;letter-spacing:.13em;text-transform:uppercase;color:var(--gold);
+  flex:none;width:8.5rem}
+.peek-open-t{flex:1;font-size:.85rem;color:var(--ink)}
+.peek-open-go{font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;padding:.28rem .75rem;
+  border-radius:20px;background:var(--forest);color:#fff;text-decoration:none;white-space:nowrap;
+  transition:background .2s}
+.peek-open-go:hover{background:var(--forest-deep)}
+
+@media(max-width:760px){
+  .peek-head{padding:1.8rem 1.3rem 1.1rem}
+  .peek-title{font-size:1.9rem}
+  .peek-scroll{padding:1.2rem 1.3rem 1.6rem}
+  .peek-foot{padding:1rem 1.3rem}
+  .peek-foot .btn-primary,.peek-foot .btn-secondary{flex:1;text-align:center}
+  .peek-nums{grid-template-columns:repeat(2,1fr)}
+  .peek-grid,.peek-tools{grid-template-columns:1fr}
+  .peek-open-tag{width:auto}
+  .peek-open-row{flex-wrap:wrap;gap:.4rem .8rem}
+}
 
 .peek-subject{margin-bottom:1.5rem}
 .peek-subject-title{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;color:var(--ink);margin-bottom:.6rem;padding-bottom:.4rem;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:.5rem}

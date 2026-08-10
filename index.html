@@ -22,7 +22,7 @@
 <meta name="twitter:description" content="Materiali strutturati di Filosofia, Storia ed Educazione Civica — piattaforma didattica di Alessandro Solla.">
 <meta name="twitter:image" content="https://alessandrosolla.github.io/idearca/og-image.png">
 <script>document.documentElement.setAttribute('data-page','home');try{var t=localStorage.getItem('idearca-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
-<link rel="stylesheet" href="css/stile.css?v=20260810b">
+<link rel="stylesheet" href="css/stile.css?v=20260810c">
 </head>
 <body style="">
 <div id="scroll-progress" aria-hidden="true"></div>
@@ -86,12 +86,14 @@
         </div>
         <button class="btn-enter-card" id="login-btn" onclick="login()">Entra nella piattaforma</button>
         <div class="msg" id="msg"></div>
-                <button class="btn-peek" onclick="openPeekModal()">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.964-7.178z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-          Dai una occhiata
+        <div class="card-divider">non hai un codice?</div>
+        <button class="btn-peek" onclick="openPeekModal()">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" width="17" height="17" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.964-7.178z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+          <span>Dai una occhiata</span>
+          <span class="btn-peek-arrow" aria-hidden="true">→</span>
         </button>
-        <div class="card-divider">oppure</div>
-        <p class="card-foot">Non hai un codice? <a onclick="openPricing()">Scopri come accedere →</a></p>
+        <p class="btn-peek-hint">Entra senza codice: numeri, materiali e strumenti — con qualche documento da aprire davvero.</p>
+        <p class="card-foot" style="margin-top:1rem">Vuoi un accesso completo? <a onclick="openPricing()">Scopri come →</a></p>
       </div>
       <div class="success-state" id="success-state">
         <div class="s-ring"><svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path></svg></div>
@@ -666,7 +668,7 @@
     <div id="codes-body" style="padding:0 2rem 2rem;max-height:40vh;overflow-y:auto"></div>
   </div>
 </div>
-<script src="js/app.js?v=20260810b"></script>
+<script src="js/app.js?v=20260810c"></script>
 <script src="js/d3-array.min.js?v=20260720"></script>
 <script src="js/d3-geo.min.js?v=20260720"></script>
 <script src="js/globe.js?v=20260720"></script>
@@ -674,25 +676,27 @@
 
 
 
-<!-- PEEK MODAL -->
-<div class="overlay" id="peek-overlay" onclick="if(event.target===this)closePeekModal()">
-  <div class="modal" style="max-width:720px;padding:0;overflow:hidden;border-radius:16px">
-    <div style="padding:2rem 2rem 0">
-      <button class="modal-x" onclick="closePeekModal()" style="top:1.2rem;right:1.2rem">✕</button>
-      <span class="modal-eye">Anteprima contenuti</span>
-      <h2 class="modal-title" style="margin-bottom:.8rem">Cosa trovi dentro</h2>
-      <div class="peek-tabs">
-        <button class="peek-tab active" data-tab="slide" onclick="switchPeekTab('slide')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h12a2.25 2.25 0 002.25-2.25V3M3 3h18M12 16.5v4.5m-3 0h6"></path></svg>Slide</button>
-        <button class="peek-tab" data-tab="fonti" onclick="switchPeekTab('fonti')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"></path></svg>Fonti</button>
-        <button class="peek-tab" data-tab="approfondite" onclick="switchPeekTab('approfondite')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"></path></svg>Approfondimenti</button>
-        <button class="peek-tab" data-tab="risorse" onclick="switchPeekTab('risorse')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"></path></svg>Risorse</button>
-        <button class="peek-tab" data-tab="compiti" onclick="switchPeekTab('compiti')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.931-8.931z"></path></svg>Compiti</button>
-      </div>
+<!-- ANTEPRIMA APERTA — la vetrina di chi arriva senza codice -->
+<div class="overlay" id="peek-overlay" onclick="if(event.target===this)closePeekModal()" role="dialog" aria-modal="true" aria-label="Anteprima di Idearca">
+  <div class="modal peek-modal">
+    <button class="modal-x peek-x" onclick="closePeekModal()">&#10005;</button>
+
+    <header class="peek-head">
+      <span class="modal-eye">Anteprima aperta &middot; senza codice</span>
+      <h2 class="peek-title">Dentro Idearca</h2>
+      <p class="peek-lede">Una piattaforma didattica progettata, scritta e mantenuta da una
+      persona sola: l&#39;archivio dei materiali di tre materie, gli strumenti che uso in aula
+      e le attivit&agrave; gi&agrave; pronte da portare in classe.</p>
+    </header>
+
+    <div class="peek-scroll" id="peek-body">
+      <div class="lib-spinner"></div>
     </div>
-    <div id="peek-body" style="padding:1.2rem 2rem 2rem;max-height:60vh;overflow-y:auto"></div>
-    <div style="padding:1.2rem 2rem;border-top:1px solid var(--border);text-align:center">
-      <button class="btn-primary" onclick="closePeekModal();scrollToLogin()" style="font-size:.72rem">Accedi con il codice →</button>
-    </div>
+
+    <footer class="peek-foot">
+      <button class="btn-primary" onclick="closePeekModal();scrollToLogin()">Accedi con il codice &rarr;</button>
+      <button class="btn-secondary" onclick="closePeekModal();go('contacts-section')">Scrivimi</button>
+    </footer>
   </div>
 </div>
  

@@ -10,7 +10,7 @@ punto non spuntato.
   compare il colore chiaro della pagina, che stona con l'hero verde scuro.
 - [x] **2. La didascalia del quadro.** «Raffaello — La Scuola di Atene» va
   illuminata e resa cliccabile, per vedere l'opera intera.
-- [ ] **3. «Dai una occhiata» ben visibile** — è la porta d'ingresso per un
+- [x] **3. «Dai una occhiata» ben visibile** — è la porta d'ingresso per un
   recruiter. E la finestra che apre è confusa e incompleta: va rifatta.
 - [ ] **4. «Scopri i contenuti»** deve comportarsi come «Dai una occhiata».
 - [ ] **5. Il pulsante «Accedi con il tuo codice»** a sinistra non serve a nulla.

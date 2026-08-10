@@ -942,118 +942,107 @@ function togglePwd(){
     ico.innerHTML='<path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.964-7.178z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>';
   }
 }
-let peekTab='slide';
+/* ── LA VETRINA ─────────────────────────────────────────────
+   Chi arriva senza codice — uno studente curioso, un collega, o
+   qualcuno che sta valutando il mio lavoro — deve capire in venti
+   secondi che cos'è questa piattaforma e quanto è grande.
+   Prima l'elenco crudo delle righe del database: illeggibile.
+   Adesso: i numeri, di che cosa è fatta, che strumenti offre, e
+   qualche documento vero da aprire subito.
+   ──────────────────────────────────────────────────────────── */
 function openPeekModal(){
   document.getElementById('peek-overlay').classList.add('on');
-  peekTab='slide';
-  loadPeekContent('slide');
+  document.body.style.overflow='hidden';
+  caricaVetrina();
 }
-function closePeekModal(){document.getElementById('peek-overlay').classList.remove('on');}
-function switchPeekTab(tab){
-  peekTab=tab;
-  document.querySelectorAll('.peek-tab').forEach(t=>t.classList.toggle('active',t.dataset.tab===tab));
-  loadPeekContent(tab);
+function closePeekModal(){
+  document.getElementById('peek-overlay').classList.remove('on');
+  document.body.style.overflow='';
 }
-async function loadPeekContent(tab){
-  if(!tab) tab=peekTab||'slide';
+document.addEventListener('keydown',e=>{
+  if(e.key==='Escape'&&document.getElementById('peek-overlay')?.classList.contains('on')) closePeekModal();
+});
+
+let vetrinaFatta=false;
+async function caricaVetrina(){
+  if(vetrinaFatta) return;
   const body=document.getElementById('peek-body');
-  body.innerHTML='<div class="lib-spinner"></div>';
   try{
-    const res=await fetch(SB_URL+'/rest/v1/materiali?attivo=eq.true&order=materia.asc,posizione.asc&select=titolo,materia,tipo,tab,link',{headers:{'apikey':SB_KEY,'Authorization':'Bearer '+SB_KEY}});
-    const rows=await res.json();
-    if(!rows||!rows.length){body.innerHTML='<p style="text-align:center;color:var(--stone);font-size:.85rem;padding:2rem">Nessun contenuto ancora disponibile.</p>';return;}
+    const res=await fetch(SB_URL+'/rest/v1/materiali?attivo=is.true&select=titolo,materia,tipo,tab,link,posizione&limit=2000',
+      {headers:{'apikey':SB_KEY,'Authorization':'Bearer '+SB_KEY}});
+    const tutte=await res.json();
+    if(!Array.isArray(tutte)||!tutte.length) throw new Error('vuoto');
 
-    // ── Risorse condivise per gruppo ──
-    const SHARED_RISORSE={
-      'Filosofia': rows.filter(r=>r.materia==='fil-contemporanea'&&(r.tab==='interdisciplinare'||r.tipo==='interdisciplinare'||r.tipo==='link')),
-      'Storia': rows.filter(r=>r.materia==='sto-medievale'&&(r.tab==='interdisciplinare'||r.tipo==='interdisciplinare'||r.tipo==='link')),
-    };
+    /* i percorsi internazionali stanno in un ramo a parte: qui contiamo
+       il programma italiano, quello che si vede entrando */
+    const righe=tutte.filter(r=>!String(r.materia||'').startsWith('ib:'));
+    const conta=t=>righe.filter(r=>r.tab===t).length;
+    const materie=new Set(righe.map(r=>r.materia)).size;
 
-    const compiti=rows.filter(r=>r.tab==='compiti'||r.tipo==='compito'||r.tipo==='homework');
-    const fonti=rows.filter(r=>r.tab==='fonti'||r.tipo==='fonte'||r.tipo==='source');
-    const risorse=rows.filter(r=>r.tab==='interdisciplinare'||r.tipo==='interdisciplinare'||r.tipo==='link');
-    const approfondite=rows.filter(r=>r.tab==='esercizi'||r.tipo==='esercizio');
-    const materiali=rows.filter(r=>r.tab==='materiali'||['pdf','quiz','video','materiale'].includes(r.tipo));
+    const slide=conta('materiali'), fonti=conta('fonti'),
+          appro=conta('esercizi'), risorse=conta('interdisciplinare'),
+          compiti=righe.filter(r=>r.tab==='compiti'||r.tab==='compito').length;
 
-    const mkItem=(item,i)=>{
-      const isFeat=i===0;
-      const isOpen=isFeat&&item.link&&item.link!=='#';
-      return `<div class="peek-item${isFeat?' featured':''}">
-        <div class="peek-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="${isFeat?'M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z':'M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z'}"></path></svg></div>
-        <div class="peek-item-title">${item.titolo}</div>
-        ${isOpen?`<a href="${item.link}" target="_blank" rel="noopener" class="peek-item-badge" onclick="event.stopPropagation()">Apri ↗</a>`:'<span class="peek-locked"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"></path></svg>riservato</span>'}
-      </div>`;
-    };
+    /* qualche documento vero, aperto a tutti: il primo di ogni scaffale.
+       Scelta stabile — chi torna ritrova gli stessi. */
+    const primo=(materia,tab)=>righe
+      .filter(r=>r.materia===materia&&r.tab===tab&&r.link&&r.link!=='#')
+      .sort((a,b)=>(a.posizione||0)-(b.posizione||0))[0];
+    const campioni=[
+      {tag:'Slide · Filosofia',   r:primo('fil-antica','materiali')},
+      {tag:'Slide · Storia',      r:primo('sto-contemporanea','materiali')},
+      {tag:'Fonte · Storia',      r:primo('sto-medievale','fonti')},
+      {tag:'Verifica · Filosofia',r:primo('fil-antica','esercizi')}
+    ].filter(c=>c.r);
 
-    let html='';
+    const num=(n,l)=>`<div class="peek-num"><b>${n}</b><span>${l}</span></div>`;
+    const card=(n,h,p)=>`<div class="peek-card"><div class="peek-card-top">
+        <span class="peek-card-n">${n}</span><span class="peek-card-h">${h}</span></div><p>${p}</p></div>`;
+    const tool=(ic,t,d)=>`<div class="peek-tool"><div class="peek-tool-ic">${ic}</div>
+        <div><b>${t}</b><span>${d}</span></div></div>`;
+    const esc=s=>String(s||'').replace(/[<>&"]/g,c=>({'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;'}[c]));
 
-    if(tab==='slide'){
-      const groups={};
-      materiali.forEach(r=>{if(!groups[r.materia])groups[r.materia]=[];groups[r.materia].push(r);});
-      Object.entries(groups).forEach(([mat,items])=>{
-        const m=MATERIE[mat];if(!m)return;
-        html+=`<div class="peek-subject"><div class="peek-subject-title">${m.l} <span>${m.g}</span></div>`;
-        items.slice(0,3).forEach((item,i)=>{html+=mkItem(item,i);});
-        if(items.length>3)html+=`<div class="peek-more">+ altri ${items.length-3} contenuti...</div>`;
-        html+='</div>';
-      });
-      if(!html)html='<p style="text-align:center;color:var(--stone);font-size:.85rem;padding:2rem">Nessuna slide disponibile.</p>';
-    } else if(tab==='fonti'){
-      if(fonti.length){
-        const fgroups={};
-        fonti.forEach(r=>{if(!fgroups[r.materia])fgroups[r.materia]=[];fgroups[r.materia].push(r);});
-        Object.entries(fgroups).forEach(([mat,items])=>{
-          const m=MATERIE[mat];if(!m)return;
-          html+=`<div class="peek-subject"><div class="peek-subject-title">${m.l} <span>${m.g}</span></div>`;
-          items.slice(0,3).forEach((item,i)=>{html+=mkItem(item,i);});
-          if(items.length>3)html+=`<div class="peek-more">+ altre ${items.length-3} fonti...</div>`;
-          html+='</div>';
-        });
-      } else html='<p style="text-align:center;color:var(--stone);font-size:.85rem;padding:2rem">Nessuna fonte disponibile.</p>';
-    } else if(tab==='approfondite'){
-      if(approfondite.length){
-        const agroups={};
-        approfondite.forEach(r=>{if(!agroups[r.materia])agroups[r.materia]=[];agroups[r.materia].push(r);});
-        Object.entries(agroups).forEach(([mat,items])=>{
-          const m=MATERIE[mat];if(!m)return;
-          html+=`<div class="peek-subject"><div class="peek-subject-title">${m.l} <span>${m.g}</span></div>`;
-          items.slice(0,3).forEach((item,i)=>{html+=mkItem(item,i);});
-          if(items.length>3)html+=`<div class="peek-more">+ altre ${items.length-3} slide...</div>`;
-          html+='</div>';
-        });
-      } else html='<p style="text-align:center;color:var(--stone);font-size:.85rem;padding:2rem">Nessun approfondimento disponibile.</p>';
-    } else if(tab==='risorse'){
-      // Mostra risorse per gruppo condiviso
-      ['Filosofia','Storia'].forEach(gruppo=>{
-        const items=SHARED_RISORSE[gruppo]||[];
-        if(items.length){
-          html+=`<div class="peek-subject"><div class="peek-subject-title">Risorse ${gruppo} <span>${gruppo}</span></div>`;
-          items.forEach((item,i)=>{html+=mkItem(item,i);});
-          html+='</div>';
-        }
-      });
-      // Risorse non in gruppi condivisi
-      const sharedIds=new Set([...SHARED_RISORSE['Filosofia'],...SHARED_RISORSE['Storia']].map(r=>r.titolo));
-      const altreRisorse=risorse.filter(r=>!sharedIds.has(r.titolo)&&r.materia!=='fil-contemporanea'&&r.materia!=='sto-medievale');
-      if(altreRisorse.length){
-        html+=`<div class="peek-subject"><div class="peek-subject-title">Altre Risorse <span>Educazione Civica</span></div>`;
-        altreRisorse.slice(0,4).forEach((item,i)=>{html+=mkItem(item,i);});
-        html+='</div>';
-      }
-      if(!html)html='<p style="text-align:center;color:var(--stone);font-size:.85rem;padding:2rem">Nessuna risorsa disponibile.</p>';
-    } else if(tab==='compiti'){
-      if(compiti.length){
-        const cgroups={};
-        compiti.forEach(r=>{if(!cgroups[r.materia])cgroups[r.materia]=[];cgroups[r.materia].push(r);});
-        Object.entries(cgroups).forEach(([mat,items])=>{
-          const m=MATERIE[mat];if(!m)return;
-          html+=`<div class="peek-subject"><div class="peek-subject-title">${m.l} <span>${m.g}</span></div>`;
-          items.forEach((item,i)=>{html+=mkItem(item,i);});
-          html+='</div>';
-        });
-      } else html='<div style="text-align:center;padding:2.5rem"><svg viewBox="0 0 24 24" fill="none" stroke="var(--stone-light)" stroke-width="1.4" style="width:34px;height:34px;margin:0 auto 1rem"><path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.931-8.931zM19.5 7.125L16.875 4.5"></path></svg><p style="color:var(--stone);font-size:.85rem">Nessun compito assegnato al momento.</p></div>';
-    }
+    body.innerHTML=`
+      <div class="peek-nums">
+        ${num(righe.length,'materiali')}
+        ${num(materie,'materie')}
+        ${num('120','capitoli con domande')}
+        ${num('1080','domande pronte')}
+      </div>
 
-    body.innerHTML=html;
-  }catch(e){body.innerHTML='<p style="text-align:center;color:var(--stone);font-size:.85rem;padding:2rem">Impossibile caricare i contenuti.</p>';}
+      <section class="peek-sec">
+        <div class="peek-sec-title">Di che cosa è fatta</div>
+        <div class="peek-grid">
+          ${card(slide,'Slide di lezione','Un capitolo per volta, con la tavola delle date, il glossario e le domande per l\'orale.')}
+          ${card(fonti,'Fonti','Documenti veri da leggere in classe: editti, lettere, trattati, pagine di filosofi.')}
+          ${card(appro,'Verifiche e approfondimenti','Materiale per il ripasso e per la valutazione, capitolo per capitolo.')}
+          ${card(compiti+risorse,'Compiti e risorse','Consegne assegnate agli studenti e collegamenti scelti: video, mappe, archivi.')}
+        </div>
+      </section>
+
+      <section class="peek-sec">
+        <div class="peek-sec-title">Gli strumenti per l'aula</div>
+        <div class="peek-tools">
+          ${tool('🗳️','Votazioni in classe','Gli studenti rispondono dal telefono con un QR, i risultati compaiono alla LIM. 120 capitoli già pronti.')}
+          ${tool('⚖️','Attività strutturate','Debate e jigsaw con tempi, regole e fonti: si aprono e si portano in classe così come sono.')}
+          ${tool('🗺️','Mappa storica','Un atlante interattivo per vedere come cambiano i confini, anno per anno.')}
+          ${tool('📥','Consegne','Gli studenti caricano il compito dal telefono; solo il docente legge, nessuno vede quello degli altri.')}
+        </div>
+      </section>
+
+      ${campioni.length?`<section class="peek-sec">
+        <div class="peek-sec-title">Aprine uno adesso</div>
+        <div class="peek-open">
+          ${campioni.map(c=>`<div class="peek-open-row">
+            <span class="peek-open-tag">${c.tag}</span>
+            <span class="peek-open-t">${esc(c.r.titolo)}</span>
+            <a class="peek-open-go" href="${esc(c.r.link)}" target="_blank" rel="noopener">Apri ↗</a>
+          </div>`).join('')}
+        </div>
+      </section>`:''}
+    `;
+    vetrinaFatta=true;
+  }catch(e){
+    body.innerHTML='<p style="text-align:center;color:var(--stone);font-size:.85rem;padding:2.5rem">Non è stato possibile caricare l\'anteprima. Riprova fra poco.</p>';
+  }
 }
