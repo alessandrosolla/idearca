@@ -14,7 +14,7 @@ punto non spuntato.
   recruiter. E la finestra che apre è confusa e incompleta: va rifatta.
 - [x] **4. «Scopri i contenuti»** deve comportarsi come «Dai una occhiata».
 - [x] **5. Il pulsante «Accedi con il tuo codice»** a sinistra non serve a nulla.
-- [ ] **6. Il footer bianco** va portato nella stessa palette dell'inizio.
+- [x] **6. Il footer bianco** va portato nella stessa palette dell'inizio.
 - [ ] **7. La pagina della libreria** va ristrutturata: più moderna, con le
   materie ben distinte fra loro.
 - [ ] **8. Linea del tempo** dentro Didattica, con gli eventi principali delle
