@@ -4880,6 +4880,104 @@ const BANCA = [
               'Il Mezzogiorno resta indietro da più di un secolo'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: che cosa serve davvero all\'Italia per crescere? Una parola.'}
+  ]},
+{
+  titolo: 'Filosofia contemporanea · 1 — Schopenhauer',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: che cosa vuole davvero chi desidera qualcosa? Una parola.'},
+
+    {tipo:'scelta', testo:'Che cosa significa il «velo di Maya»?',
+     opzioni:['Il mondo che vediamo è una parvenza, non la realtà vera',
+              'Ciò che chiamiamo realtà somiglia più a un sogno',
+              'Fra noi e le cose c\'è sempre uno schermo che deforma',
+              'Il fenomeno nasconde invece di rivelare ciò che è'], giusta:0},
+
+    {tipo:'scelta', testo:'Come Schopenhauer rovescia Kant?',
+     opzioni:['Il fenomeno non è la realtà conoscibile ma un\'illusione',
+              'Dove Kant vedeva un limite invalicabile lui trova un passaggio',
+              'La cosa in sé smette di essere un semplice concetto-limite',
+              'Restano tre forme a priori al posto delle dodici categorie'], giusta:0},
+
+    {tipo:'scelta', testo:'Attraverso che cosa arriviamo alla cosa in sé?',
+     opzioni:['Attraverso il corpo, che viviamo dall\'interno e non solo osserviamo',
+              'Perché di noi stessi non abbiamo soltanto una rappresentazione',
+              'Sentiamo dentro di noi l\'impulso che muove ogni cosa',
+              'Il corpo è la porta che nessun altro oggetto ci apre'], giusta:0},
+
+    {tipo:'scelta', testo:'Quali sono i caratteri della volontà di vivere?',
+     opzioni:['Cieca, unica, eterna, senza causa e senza alcuno scopo',
+              'Non è volontà cosciente ma impulso che non sa perché',
+              'Sta fuori dallo spazio e dal tempo, quindi non si divide',
+              'Vuole soltanto se stessa: la vita che vuole la vita'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché per Schopenhauer volere è soffrire?',
+     opzioni:['Desiderare significa mancare di qualcosa, e mancare è dolore',
+              'Il piacere è solo la fine momentanea di una sofferenza',
+              'Ogni desiderio appagato ne lascia dieci insoddisfatti',
+              'Quando il desiderio tace non arriva la pace ma la noia'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa permette l\'esperienza dell\'arte?',
+     opzioni:['Contemplare le idee eterne dimenticando per un attimo il volere',
+              'Guardare la vita invece di viverla e di soffrirla',
+              'Diventare puro occhio del mondo, senza più brame personali',
+              'Una liberazione autentica, ma provvisoria e destinata a finire'], giusta:0},
+
+    {tipo:'scelta', testo:'Su che cosa si fonda la morale secondo Schopenhauer?',
+     opzioni:['Sulla pietà, che ci fa sentire l\'unità di tutti i viventi',
+              'Non su un comando della ragione ma su un sentimento',
+              'Sul riconoscere che chi soffre davanti a me sono io stesso',
+              'Su un\'esperienza vissuta, non su un imperativo astratto'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: si può essere felici o solo meno infelici? Una parola.'}
+  ]},
+{
+  titolo: 'Filosofia contemporanea · 2 — Kierkegaard',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: che cosa provi davanti a una scelta che non puoi rimandare? Una parola.'},
+
+    {tipo:'scelta', testo:'Che cosa rimprovera Kierkegaard alla filosofia di Hegel?',
+     opzioni:['Costruisce un sistema perfetto ma dimentica l\'uomo concreto',
+              'Le alternative della vita non si conciliano in una sintesi',
+              'L\'individuo non si lascia ridurre a un momento dello Spirito',
+              'Chi si costruisce un castello poi vive dentro un fienile'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché la possibilità, per Kierkegaard, paralizza?',
+     opzioni:['Ogni possibilità è anche la possibilità che non accada',
+              'Chi può tutto rischia di non decidere mai nulla',
+              'Nel possibile è possibile il bene quanto il terribile',
+              'Aprirsi al futuro significa aprirsi anche al nulla'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché fallisce lo stadio estetico?',
+     opzioni:['Chi sceglie di non scegliere non arriva ad avere un\'identità',
+              'Il piacere ripetuto finisce per diventare noia',
+              'Vivere nell\'attimo disperde la vita in mille frammenti',
+              'Dietro la vita brillante di don Giovanni c\'è il vuoto'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa caratterizza lo stadio etico?',
+     opzioni:['L\'uomo si costruisce impegnandosi in una scelta stabile',
+              'Il matrimonio ne è il simbolo: una fedeltà rinnovata ogni giorno',
+              'Non si è ciò che si è, ma ciò che si sceglie di diventare',
+              'Ci si sottopone a una regola valida per tutti gli uomini'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa mostra la figura di Abramo?',
+     opzioni:['La fede può chiedere di sospendere perfino la legge morale',
+              'Davanti a Dio il singolo si trova in una solitudine totale',
+              'Ciò che gli è chiesto non si può spiegare a nessun altro',
+              'Credere significa accettare uno scandalo per la ragione'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa distingue l\'angoscia dalla paura?',
+     opzioni:['La paura ha un oggetto preciso, l\'angoscia nessuno',
+              'L\'angoscia è la vertigine di essere liberi di sbagliare',
+              'Non temiamo una cosa, ma tutto ciò che potrebbe accadere',
+              'La conosce solo l\'uomo, non l\'animale né l\'angelo'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché la disperazione è la «malattia mortale»?',
+     opzioni:['Non uccide l\'io: lo costringe a vivere la propria morte',
+              'L\'io non riesce né a essere sé stesso né a rinunciarci',
+              'È un rapporto con sé che non si può sciogliere né evitare',
+              'Ne è malato ogni uomo, anche chi non se ne accorge'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: la libertà è un dono o un peso? Una parola.'}
   ]
 }
 ];
