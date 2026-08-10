@@ -19,11 +19,18 @@ punto non spuntato.
   materie ben distinte fra loro.
 - [x] **8. Linea del tempo** dentro Didattica, con gli eventi principali delle
   slide di storia e di filosofia.
-- [ ] **9. Consegne**: manca il pulsante per gli studenti; e il docente deve
+- [x] **9. Consegne**: manca il pulsante per gli studenti; e il docente deve
   poter aprire e chiudere finestre temporali.
 - [ ] **10. Metodologie didattiche** deve occupare tutta la pagina, non un
   riquadro.
 - [ ] **11. Dieci consigli** da recruiter e da designer, su sito e didattica.
+
+## Da fare a mano su Supabase
+
+Il punto 9 ha bisogno di una migrazione: apri Supabase → SQL Editor →
+New query → incolla `sql/04-finestre-consegna.sql` → RUN.
+Finché non la esegui, la pagina di consegna dice (correttamente)
+che non c'è nulla da consegnare.
 
 ## Come si lavora
 

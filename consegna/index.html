@@ -18,8 +18,12 @@
   h1{font-family:Georgia,"Times New Roman",serif;font-size:1.8rem;margin:.4rem 0 .6rem}
   .intro{color:#5A5148;font-size:.95rem;line-height:1.6;margin-bottom:1.6rem}
   label{display:block;font-size:.82rem;font-weight:700;margin:1rem 0 .35rem}
-  input,textarea{font:inherit;width:100%;padding:.75rem .9rem;border:1px solid #E3DACB;
-    border-radius:10px;background:#fff}
+  input,textarea,select{font:inherit;width:100%;padding:.75rem .9rem;border:1px solid #E3DACB;
+    border-radius:10px;background:#fff;color:#1F1B16}
+  select:disabled{background:#F1EBE0;color:#8A8070}
+  .chiuso{background:#fff;border:1px solid #E3DACB;border-left:4px solid #C0453B;
+    border-radius:10px;padding:1.3rem 1.4rem;line-height:1.65;margin-top:1.2rem}
+  .chiuso strong{display:block;margin-bottom:.35rem;font-size:1.02rem}
   textarea{min-height:9rem;resize:vertical;line-height:1.5}
   .due{display:flex;gap:.7rem}
   .due>div{flex:1}
@@ -58,7 +62,8 @@
   </div>
 
   <label for="attivita">Di quale compito si tratta</label>
-  <input type="text" id="attivita" maxlength="120" placeholder="es. Debate — le crociate">
+  <select id="attivita"><option value="">Sto controllando…</option></select>
+  <p class="aiuto" id="finestra-info"></p>
 
   <label for="testo">La tua risposta</label>
   <textarea id="testo" maxlength="20000" placeholder="Scrivi qui."></textarea>
@@ -153,14 +158,76 @@ function pulisciNome(s){
     .replace(/[^a-zA-Z0-9._-]+/g,'-').replace(/-+/g,'-').slice(0,60);
 }
 
+/* ── LE FINESTRE APERTE ─────────────────────────────────────
+   Non si consegna quando si vuole: il docente apre e chiude.
+   Qui chiediamo al database che cosa è aperto adesso. Se non c'è
+   niente, il modulo resta spento: non ha senso far scrivere una
+   pagina intera a qualcuno per poi rifiutargliela.
+   Il controllo vero però non sta qui — sta nelle regole del
+   database, che rifiutano l'inserimento fuori finestra.
+   ──────────────────────────────────────────────────────────── */
+let finestre = [];
+
+function quandoScade(iso){
+  if(!iso) return 'senza scadenza';
+  const d = new Date(iso);
+  return 'entro ' + d.toLocaleDateString('it-IT',{day:'numeric',month:'long'})
+       + ' alle ' + d.toLocaleTimeString('it-IT',{hour:'2-digit',minute:'2-digit'});
+}
+
+async function caricaFinestre(){
+  const sel = document.getElementById('attivita');
+  const info = document.getElementById('finestra-info');
+  try{
+    const res = await fetch(SB_URL + '/rest/v1/rpc/finestre_aperte', {
+      method:'POST',
+      headers:{'apikey':SB_KEY,'Authorization':'Bearer '+SB_KEY,'Content-Type':'application/json'},
+      body:'{}'
+    });
+    if(!res.ok) throw new Error(await res.text());
+    finestre = await res.json();
+  }catch(e){
+    finestre = [];
+  }
+
+  if(!finestre.length){
+    document.getElementById('foglio').innerHTML = `
+      <div class="kicker">Idearca</div>
+      <h1>Consegna un compito</h1>
+      <div class="chiuso">
+        <strong>Al momento non c'è nulla da consegnare.</strong>
+        Le consegne si aprono quando il professore le apre, e si chiudono alla scadenza.
+        Riprova quando te lo dice a lezione.
+      </div>`;
+    return;
+  }
+
+  sel.innerHTML = finestre.map(f =>
+    `<option value="${f.id}">${f.titolo.replace(/</g,'&lt;')}</option>`).join('');
+  mostraIstruzioni();
+  sel.onchange = mostraIstruzioni;
+
+  function mostraIstruzioni(){
+    const f = finestre.find(x => String(x.id) === sel.value) || finestre[0];
+    const pezzi = [];
+    if(f.istruzioni) pezzi.push(f.istruzioni);
+    pezzi.push('Si consegna ' + quandoScade(f.chiude_il) + '.');
+    info.textContent = pezzi.join(' ');
+  }
+}
+caricaFinestre();
+
 async function invia(){
   err('');
   const nome = document.getElementById('nome').value.trim();
   const classe = document.getElementById('classe').value.trim();
-  const attivita = document.getElementById('attivita').value.trim();
+  const sel = document.getElementById('attivita');
+  const finestraId = sel.value ? Number(sel.value) : null;
+  const attivita = sel.options[sel.selectedIndex] ? sel.options[sel.selectedIndex].text : '';
   const testo = document.getElementById('testo').value.trim();
 
   if(!nome){ err('Scrivi il tuo nome.'); return; }
+  if(!finestraId){ err('Scegli a quale compito si riferisce la consegna.'); return; }
   if(!testo && !allegato){ err('Scrivi qualcosa, oppure allega un file.'); return; }
 
   const bottone = document.getElementById('invia');
@@ -189,7 +256,8 @@ async function invia(){
                'Content-Type':'application/json', 'Prefer':'return=minimal'},
       body: JSON.stringify({studente:nome, classe:classe||null, attivita:attivita||null,
                             testo:testo||null, file_path:percorso,
-                            file_nome: allegato ? allegato.nome : null})
+                            file_nome: allegato ? allegato.nome : null,
+                            finestra_id: finestraId})
     });
     if(!res.ok){ const t = await res.text(); throw new Error(t.slice(0,160)); }
 

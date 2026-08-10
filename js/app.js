@@ -521,6 +521,7 @@ function vociExtra(){
     {g:'Didattica',k:'__metodo__', l:'Metodologie didattiche', p:'Debate, jigsaw, attività'},
     {g:'Didattica',k:'__tempo__',  l:'Linea del tempo',        p:'Storia e filosofia a confronto'},
     {g:'Didattica',k:'__lavagna__',l:'Lavagna',                p:'Da proiettare in aula'},
+    {g:'Didattica',k:'__consegna__',l:'Consegna un compito',   p:'Per gli studenti'},
     {g:'Didattica',k:'__inbox__',  l:'Inbox',                  p:'Consegne degli studenti'},
     {g:'Didattica',k:'__voti__',   l:'Votazioni',              p:'120 capitoli pronti'},
     {g:'Strumenti',k:'__map__',    l:'Mappa storica',          p:'Atlante interattivo'}
@@ -585,6 +586,7 @@ function mobChange(key){
   if(key==='__map__'){showMapView();return;}
   if(key==='__metodo__'){showMetodoView();return;}
   if(key==='__tempo__'){showTempoView();return;}
+  if(key==='__consegna__'){showConsegnaView();return;}
   if(key==='__lavagna__'){showLavagnaView();return;}
   if(key==='__inbox__'){showInboxView();return;}
   if(key==='__voti__'){showVotiView();return;}
@@ -598,6 +600,7 @@ function navClick(el,key){
   if(key==='__map__'){showMapView();return;}
   if(key==='__metodo__'){showMetodoView();return;}
   if(key==='__tempo__'){showTempoView();return;}
+  if(key==='__consegna__'){showConsegnaView();return;}
   if(key==='__lavagna__'){showLavagnaView();return;}
   if(key==='__inbox__'){showInboxView();return;}
   if(key==='__voti__'){showVotiView();return;}
@@ -612,6 +615,7 @@ function showMapView(){
   document.getElementById('lib-inbox-view').style.display='none';
   document.getElementById('lib-voti-view').style.display='none';
   document.getElementById('lib-tempo-view').style.display='none';
+  document.getElementById('lib-consegna-view').style.display='none';
 }
 function showMetodoView(){
   document.getElementById('lib-head').style.display='none';
@@ -622,6 +626,7 @@ function showMetodoView(){
   document.getElementById('lib-inbox-view').style.display='none';
   document.getElementById('lib-voti-view').style.display='none';
   document.getElementById('lib-tempo-view').style.display='none';
+  document.getElementById('lib-consegna-view').style.display='none';
 }
 /* La lavagna si carica solo la prima volta che la si apre: cosi'
    non tiene aperta una sessione di scrittura per chi non la usa,
@@ -629,6 +634,21 @@ function showMetodoView(){
    anche se si passa ad altre sezioni e si torna indietro. */
 /* La linea del tempo e' una pagina statica: si carica una volta
    sola, la prima che la si apre. */
+/* La pagina di consegna: si ricarica ogni volta, perche' quali
+   finestre siano aperte cambia di ora in ora. */
+function showConsegnaView(){
+  document.getElementById('lib-head').style.display='none';
+  document.getElementById('lib-modules').style.display='none';
+  document.getElementById('lib-map-view').style.display='none';
+  document.getElementById('lib-metodo-view').style.display='none';
+  document.getElementById('lib-tempo-view').style.display='none';
+  document.getElementById('lib-lavagna-view').style.display='none';
+  document.getElementById('lib-inbox-view').style.display='none';
+  document.getElementById('lib-voti-view').style.display='none';
+  const f=document.getElementById('lib-consegna-frame');
+  f.src='consegna/index.html?'+Date.now();
+  document.getElementById('lib-consegna-view').style.display='block';
+}
 function showTempoView(){
   document.getElementById('lib-head').style.display='none';
   document.getElementById('lib-modules').style.display='none';
@@ -640,6 +660,7 @@ function showTempoView(){
   const f=document.getElementById('lib-tempo-frame');
   if(!f.getAttribute('src')) f.src='tempo/index.html';
   document.getElementById('lib-tempo-view').style.display='block';
+  document.getElementById('lib-consegna-view').style.display='none';
 }
 function showVotiView(){
   document.getElementById('lib-head').style.display='none';
@@ -652,6 +673,7 @@ function showVotiView(){
   f.src='votazioni/index.html?'+Date.now();
   document.getElementById('lib-voti-view').style.display='block';
   document.getElementById('lib-tempo-view').style.display='none';
+  document.getElementById('lib-consegna-view').style.display='none';
 }
 function showInboxView(){
   document.getElementById('lib-head').style.display='none';
@@ -665,6 +687,7 @@ function showInboxView(){
   document.getElementById('lib-inbox-view').style.display='block';
   document.getElementById('lib-voti-view').style.display='none';
   document.getElementById('lib-tempo-view').style.display='none';
+  document.getElementById('lib-consegna-view').style.display='none';
 }
 function showLavagnaView(){
   document.getElementById('lib-head').style.display='none';
@@ -677,6 +700,7 @@ function showLavagnaView(){
   document.getElementById('lib-inbox-view').style.display='none';
   document.getElementById('lib-voti-view').style.display='none';
   document.getElementById('lib-tempo-view').style.display='none';
+  document.getElementById('lib-consegna-view').style.display='none';
 }
 /* Nasconde tutte le viste a pieno schermo e riporta a galla la
    libreria: la chiamano sia navClick sia mobChange. */
@@ -689,6 +713,7 @@ function hideMapView(){
   document.getElementById('lib-inbox-view').style.display='none';
   document.getElementById('lib-voti-view').style.display='none';
   document.getElementById('lib-tempo-view').style.display='none';
+  document.getElementById('lib-consegna-view').style.display='none';
 }
 
 let searchDebounce=null;
