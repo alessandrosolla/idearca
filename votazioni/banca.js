@@ -4684,6 +4684,202 @@ const BANCA = [
               'Meno intervento pubblico e più libertà economica'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: quanto Stato serve in economia? Una parola.'}
+  ]},
+{
+  titolo: 'Storia contemporanea · 25 — La fine della guerra fredda',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: si può riformare un sistema senza farlo crollare? Una parola.'},
+
+    {tipo:'scelta', testo:'Perché il sistema sovietico entra in crisi negli anni Ottanta?',
+     opzioni:['Senza mercato non c\'è competizione, e quindi non c\'è innovazione',
+              'L\'economia ristagna mentre l\'Occidente corre con l\'informatica',
+              'La guerra in Afghanistan divora risorse enormi',
+              'Le spese militari superano ogni possibilità del bilancio'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa vuole ottenere Gorbačëv con le sue riforme?',
+     opzioni:['Salvare il sistema comunista rendendolo efficiente e umano',
+              'Riformare per sopravvivere, non per abbattere il socialismo',
+              'Correggere ciò che non funziona senza cambiare il modello',
+              'Rendere l\'Unione Sovietica capace di reggere il confronto'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché la glasnost sfugge di mano?',
+     opzioni:['Libera critiche e nazionalismi che nessuno riesce più a fermare',
+              'Chi può parlare comincia a chiedere molto più del previsto',
+              'Le repubbliche sovietiche iniziano a rivendicare l\'indipendenza',
+              'La trasparenza mette a nudo tutto ciò che non funzionava'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa cambia con l\'abbandono della dottrina Brežnev?',
+     opzioni:['I paesi satelliti sanno che nessun carro armato verrà a salvarli',
+              'Mosca rinuncia a intervenire militarmente nell\'Europa dell\'Est',
+              'Ogni paese è libero di scegliere la propria strada politica',
+              'I regimi comunisti dell\'Est restano soli davanti ai loro popoli'], giusta:0},
+
+    {tipo:'scelta', testo:'Come cade materialmente il muro di Berlino?',
+     opzioni:['Un annuncio confuso in TV spinge la folla ai valichi',
+              'Le guardie, senza ordini precisi, lasciano passare tutti',
+              'Un errore su una data manda in strada migliaia di persone',
+              'Nessuno decide di aprirlo: viene aperto dai berlinesi stessi'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa distingue Tienanmen dalle rivoluzioni europee del 1989?',
+     opzioni:['In Cina il partito non cede e reprime con l\'esercito',
+              'Il regime sceglie il capitalismo ma non la democrazia',
+              'Dove l\'Europa cambia senza sangue, Pechino usa i carri armati',
+              'La protesta viene schiacciata invece di essere accolta'], giusta:0},
+
+    {tipo:'scelta', testo:'Come finisce l\'Unione Sovietica?',
+     opzioni:['Gorbačëv si dimette e la bandiera scende dal Cremlino',
+              'Un golpe fallito indebolisce il centro e rafforza Eltsin',
+              'Le repubbliche si dichiarano sovrane una dopo l\'altra',
+              'Undici ex repubbliche danno vita a una nuova comunità'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: un impero può finire senza una guerra? Una parola.'}
+  ]},
+{
+  titolo: 'Storia contemporanea · 26 — L\'Italia repubblicana',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: che cosa tiene insieme un paese appena uscito da una guerra? Una parola.'},
+
+    {tipo:'scelta', testo:'Perché il referendum del 2 giugno 1946 è una data storica?',
+     opzioni:['Per la prima volta votano anche le donne italiane',
+              'Il popolo sceglie fra monarchia e repubblica',
+              'La Repubblica vince e Umberto II parte per l\'esilio',
+              'Si elegge insieme l\'Assemblea che scriverà la Costituzione'], giusta:0},
+
+    {tipo:'scelta', testo:'Su quali principi si regge la Costituzione del 1948?',
+     opzioni:['Uguaglianza, lavoro, pluralismo, ripudio della guerra',
+              'I poteri sono divisi perché nessuno possa più prendersi tutto',
+              'Non basta essere uguali per legge: bisogna esserlo davvero',
+              'La Repubblica è fondata sul lavoro, non sulla nascita'], giusta:0},
+
+    {tipo:'scelta', testo:'Che scelta compie l\'Italia con De Gasperi dopo il 1948?',
+     opzioni:['Si colloca stabilmente nel campo occidentale',
+              'Accetta il Piano Marshall ed entra nella NATO',
+              'Governa al centro tenendo fuori le due estreme',
+              'Partecipa fin dall\'inizio alla costruzione europea'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa cambia il miracolo economico (1958-1963)?',
+     opzioni:['Un paese agricolo diventa potenza industriale in dieci anni',
+              'Milioni di persone lasciano il Sud per le fabbriche del Nord',
+              'La televisione insegna l\'italiano a chi parlava solo dialetto',
+              'Automobile ed elettrodomestici entrano nelle case comuni'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è la strategia della tensione?',
+     opzioni:['Stragi per creare caos e giustificare una svolta autoritaria',
+              'Attentati neofascisti coperti da settori deviati dello Stato',
+              'La violenza usata come strumento politico contro la democrazia',
+              'Piazza Fontana apre un decennio di bombe e di paura'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché le Brigate Rosse rapiscono Aldo Moro?',
+     opzioni:['Per colpire l\'accordo fra DC e PCI che stava nascendo',
+              'Vogliono spezzare il compromesso storico sul nascere',
+              'Moro è l\'uomo che sta avvicinando i comunisti al governo',
+              'Il bersaglio non è un uomo ma un\'intesa politica'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa travolge Tangentopoli fra il 1992 e il 1994?',
+     opzioni:['Il sistema dei partiti nato nel 1948 si dissolve',
+              'DC e PSI scompaiono sotto il peso delle inchieste',
+              'Emerge un finanziamento illegale che riguarda tutti',
+              'Finisce la Prima Repubblica e se ne apre un\'altra'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: la corruzione è un difetto delle persone o del sistema? Una parola.'}
+  ]},
+{
+  titolo: 'Storia contemporanea · 27 — Globalizzazione e nuove crisi',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: il mondo più connesso è anche più giusto? Una parola.'},
+
+    {tipo:'scelta', testo:'Che cosa significa globalizzazione?',
+     opzioni:['Merci, capitali, notizie e persone circolano quasi senza confini',
+              'Le economie del mondo diventano un unico sistema collegato',
+              'Ciò che accade in una borsa si sente ovunque in poche ore',
+              'Le distanze contano meno di quanto siano mai contate prima'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è il paradosso della globalizzazione?',
+     opzioni:['Riduce le distanze fra paesi ma le aumenta dentro i paesi',
+              'Milioni escono dalla povertà mentre altri perdono il lavoro',
+              'Le fabbriche si spostano dove il lavoro costa di meno',
+              'Chi guadagna e chi perde non vivono negli stessi luoghi'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa cambia l\'11 settembre 2001?',
+     opzioni:['La minaccia non è più uno Stato ma una rete senza territorio',
+              'Gli Stati Uniti si scoprono vulnerabili in casa propria',
+              'Comincia una guerra al terrorismo senza confini né fine',
+              'Da un attentato nascono due guerre lunghe vent\'anni'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa rende singolare il modello cinese?',
+     opzioni:['Apre l\'economia al mercato ma non apre la politica',
+              'Cresce a ritmi enormi restando guidata da un partito unico',
+              'Il gatto conta se prende i topi, non di che colore sia',
+              'Diventa la fabbrica del mondo senza diventare una democrazia'], giusta:0},
+
+    {tipo:'scelta', testo:'Come nasce la crisi finanziaria del 2008?',
+     opzioni:['Da prestiti concessi a chi non poteva restituirli',
+              'Le banche rivendono ad altre banche un rischio nascosto',
+              'Una bolla immobiliare gonfiata scoppia e travolge tutto',
+              'Il fallimento di una grande banca americana blocca il credito'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché cresce il populismo dopo il 2008?',
+     opzioni:['Molti si sentono abbandonati e cercano un colpevole semplice',
+              'Alla complessità dei problemi si risponde promettendo chiarezza',
+              'Il popolo autentico viene contrapposto alle élite corrotte',
+              'La rabbia per la crisi trova finalmente una voce politica'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa rivela l\'invasione dell\'Ucraina del 2022?',
+     opzioni:['In Europa la guerra fra Stati non era affatto finita',
+              'L\'ordine nato dopo il 1991 non regge più le tensioni',
+              'I confini possono ancora essere cambiati con la forza',
+              'La più grande guerra sul continente dal 1945 è realtà'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: quali problemi nessuno Stato può risolvere da solo? Una parola.'}
+  ]},
+{
+  titolo: 'Storia contemporanea · 28 — L\'Italia della Seconda Repubblica',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: perché in Italia i governi durano così poco? Una parola.'},
+
+    {tipo:'scelta', testo:'Che cosa dovrebbe garantire il bipolarismo della Seconda Repubblica?',
+     opzioni:['Due schieramenti che si alternano, così l\'elettore sceglie chi governa',
+              'Il vincitore delle elezioni è noto già la sera del voto',
+              'Non servono accordi fra i partiti dopo che si è votato',
+              'Chi governa ha una maggioranza uscita dalle urne'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è il nodo irrisolto del berlusconismo?',
+     opzioni:['Chi governa il paese possiede anche le televisioni che lo informano',
+              'Il conflitto di interessi non viene mai davvero affrontato',
+              'Un partito personale nasce dall\'azienda del suo fondatore',
+              'Potere politico e potere mediatico stanno nelle stesse mani'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa misura lo spread salito oltre 550 punti nel 2011?',
+     opzioni:['Quanta fiducia i mercati hanno nel debito pubblico italiano',
+              'La differenza fra i titoli italiani e quelli tedeschi',
+              'Quanto interesse l\'Italia deve pagare per farsi prestare denaro',
+              'Il giudizio degli investitori sui conti dello Stato'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché il governo Monti è impopolare nonostante i risultati?',
+     opzioni:['Riduce lo spread ma chiede sacrifici pesanti a molte famiglie',
+              'La riforma delle pensioni allunga l\'età del ritiro dal lavoro',
+              'L\'austerità rassicura i mercati e deprime l\'economia reale',
+              'Alle elezioni successive ottiene appena il dieci per cento'], giusta:0},
+
+    {tipo:'scelta', testo:'Da che cosa nasce il Movimento 5 Stelle?',
+     opzioni:['Dalla sfiducia verso i partiti e dalla rete come luogo politico',
+              'Da un blog che diventa prima movimento e poi partito',
+              'Dall\'idea che i cittadini possano decidere direttamente',
+              'Dalla protesta contro la corruzione della classe dirigente'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa cambia Salvini nella Lega dal 2013?',
+     opzioni:['Da partito del Nord diventa partito sovranista nazionale',
+              'Il nemico non è più Roma ma Bruxelles e l\'immigrazione',
+              'Cerca voti anche al Sud, che prima attaccava duramente',
+              'Sposta il conflitto dal territorio ai confini dello Stato'], giusta:0},
+
+    {tipo:'scelta', testo:'Quali sono oggi le sfide strutturali dell\'Italia?',
+     opzioni:['Debito altissimo, poche nascite, divario Nord-Sud, crescita lenta',
+              'Una popolazione che invecchia e non viene rimpiazzata',
+              'Un debito enorme che limita ogni scelta di bilancio',
+              'Il Mezzogiorno resta indietro da più di un secolo'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: che cosa serve davvero all\'Italia per crescere? Una parola.'}
   ]
 }
 ];

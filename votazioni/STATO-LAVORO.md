@@ -64,7 +64,7 @@ materiale che gli studenti hanno davvero studiato.
 
 ## A che punto siamo
 
-Fatti **71 capitoli su 120**.
+Fatti **99 capitoli su 120**.
 
 ### Filosofia antica — 12 capitoli · completata
 - [x] Dagli Ionici agli atomisti · `1c7OT1XyooG6hVjQKbwMQHiuLMgIFz3V_`
@@ -147,35 +147,35 @@ Fatti **71 capitoli su 120**.
 - [x] Hegel. Fenomenologia · `19bMT2rT3l2Mj7MBEKVnmW0RnnlcQwfXa`
 - [x] Enciclopedia delle scienze in compendio · `1X_RN7vPqlcG_Kijpn0M_2Hh-_eEYZCJy`
 
-### Storia contemporanea — 28 capitoli · da fare
-- [ ] Italia risorgimentale e I guerra di indipendenza · `1HN5hMHhnC6MMxT6HEvNDsIsadE4x6fM0`
-- [ ] Europa 1850-1870 · `12MGMgvz-XYW4vFEHRtCflFpwkAu5SPhV`
-- [ ] Guerra civile USA, Giappone, Cina · `1mobsaRKKG0cL2Zz9RaaZoBAhFlIHx_ZX`
-- [ ] L'Unità d'Italia · `1WKlt47dPWsoVYTLcuekfe1Lu-MkvTjtu`
-- [ ] L'Europa di Bismarck · `1PzoB8q6tcO7G-TBfe-tDPw2es80KIWrc`
-- [ ] Seconda rivoluzione industriale · `1H5kSpo5AUxkGCVcwvmNR73MKJBlpjhGZ`
-- [ ] Italia e sinistra storica · `1qCn1Bbp6SwENVECFTG7fZF7Wlv8ZDXvK`
-- [ ] Imperialismo · `1IqSU_mI2EyxXFqRLXZSUoQ7nm9lettiR`
-- [ ] Belle epoque · `1ckwtnKZi-wSfuWPSwZzljsunA5HaEpZq`
-- [ ] La Germania di Guglielmo II · `1maexnlpWM9dLcXw2lf5pyNcadvCj7nvC`
-- [ ] Italia Giolittiana · `1V_BowSR0-gsigzHLOcqN_xoKAMeGMwSX`
-- [ ] La Grande guerra · `10QX9baiFmCy3zqyXLAmPOK9-s6LF_3dV`
-- [ ] Rivoluzione Russa · `1RYn6GGzha9R81cDhLwEWvhWu-jcSSzx4`
-- [ ] Dopoguerra · `1u57UBS-vMx9ZVneR9J4WEbu7FU4vQByo`
-- [ ] Italia nel dopoguerra e nascita fascismo · `1rquIb4W8Sw5XHbFOX7AwwyoKT5vBddUK`
-- [ ] Crisi del 1929 · `1GRD-j4RZuVnalLnhlzlqBV6Wja0yDv5c`
-- [ ] Stalinismo · `11JtlF9ItH1b-guDMdAEqHQnljUvhd9VV`
-- [ ] Nazismo · `1GMLezQ-ujyLsRESAiADctEd2Um3rERYg`
-- [ ] Guerra civile Spagnola · `1N_gUHf3Et1XA7d8-oiNmxD1TRF0bocBx`
-- [ ] L'Italia fascista · `1M-u5D3OsK58nkpyPC3piiCkvgUmt0XYd`
-- [ ] Seconda guerra mondiale · `1CTG0d6DcSFDKnpCyzOna8zub0pBoLbFf`
-- [ ] Guerra fredda · `10mb7zJGcYQbEGNAA9gUUKpQmQYBndjZG`
-- [ ] Coesistenza pacifica · `10xrCCSaRE_OL-FivVqhidVE6aWPUM5GC`
-- [ ] Sessantotto e distensione · `1dm0x7_DxxMYKfPipvrfKqKm_HUNI3BPe`
-- [ ] Crollo del blocco sovietico · `1rQMEW7nkUGBH8Ytw1gzcD8Lq6_dC2gQ5`
-- [ ] Il mondo contemporaneo · `1C3Cys_5XsR8nqigiokvhT87V_VNqErV3`
-- [ ] Italia Repubblicana · `1DnaiuQ4PMW3I08aPiQCX3RoYE8KLrxEN`
-- [ ] Italia contemporanea · `1vs-dfBJSzAxaTWhTFC7Mf2O8tDM4b8mr`
+### Storia contemporanea — 28 capitoli · completata
+- [x] Italia risorgimentale e I guerra di indipendenza · `1HN5hMHhnC6MMxT6HEvNDsIsadE4x6fM0`
+- [x] Europa 1850-1870 · `12MGMgvz-XYW4vFEHRtCflFpwkAu5SPhV`
+- [x] Guerra civile USA, Giappone, Cina · `1mobsaRKKG0cL2Zz9RaaZoBAhFlIHx_ZX`
+- [x] L'Unità d'Italia · `1WKlt47dPWsoVYTLcuekfe1Lu-MkvTjtu`
+- [x] L'Europa di Bismarck · `1PzoB8q6tcO7G-TBfe-tDPw2es80KIWrc`
+- [x] Seconda rivoluzione industriale · `1H5kSpo5AUxkGCVcwvmNR73MKJBlpjhGZ`
+- [x] Italia e sinistra storica · `1qCn1Bbp6SwENVECFTG7fZF7Wlv8ZDXvK`
+- [x] Imperialismo · `1IqSU_mI2EyxXFqRLXZSUoQ7nm9lettiR`
+- [x] Belle epoque · `1ckwtnKZi-wSfuWPSwZzljsunA5HaEpZq`
+- [x] La Germania di Guglielmo II · `1maexnlpWM9dLcXw2lf5pyNcadvCj7nvC`
+- [x] Italia Giolittiana · `1V_BowSR0-gsigzHLOcqN_xoKAMeGMwSX`
+- [x] La Grande guerra · `10QX9baiFmCy3zqyXLAmPOK9-s6LF_3dV`
+- [x] Rivoluzione Russa · `1RYn6GGzha9R81cDhLwEWvhWu-jcSSzx4`
+- [x] Dopoguerra · `1u57UBS-vMx9ZVneR9J4WEbu7FU4vQByo`
+- [x] Italia nel dopoguerra e nascita fascismo · `1rquIb4W8Sw5XHbFOX7AwwyoKT5vBddUK`
+- [x] Crisi del 1929 · `1GRD-j4RZuVnalLnhlzlqBV6Wja0yDv5c`
+- [x] Stalinismo · `11JtlF9ItH1b-guDMdAEqHQnljUvhd9VV`
+- [x] Nazismo · `1GMLezQ-ujyLsRESAiADctEd2Um3rERYg`
+- [x] Guerra civile Spagnola · `1N_gUHf3Et1XA7d8-oiNmxD1TRF0bocBx`
+- [x] L'Italia fascista · `1M-u5D3OsK58nkpyPC3piiCkvgUmt0XYd`
+- [x] Seconda guerra mondiale · `1CTG0d6DcSFDKnpCyzOna8zub0pBoLbFf`
+- [x] Guerra fredda · `10mb7zJGcYQbEGNAA9gUUKpQmQYBndjZG`
+- [x] Coesistenza pacifica · `10xrCCSaRE_OL-FivVqhidVE6aWPUM5GC`
+- [x] Sessantotto e distensione · `1dm0x7_DxxMYKfPipvrfKqKm_HUNI3BPe`
+- [x] Crollo del blocco sovietico · `1rQMEW7nkUGBH8Ytw1gzcD8Lq6_dC2gQ5`
+- [x] Il mondo contemporaneo · `1C3Cys_5XsR8nqigiokvhT87V_VNqErV3`
+- [x] Italia Repubblicana · `1DnaiuQ4PMW3I08aPiQCX3RoYE8KLrxEN`
+- [x] Italia contemporanea · `1vs-dfBJSzAxaTWhTFC7Mf2O8tDM4b8mr`
 
 ### Filosofia contemporanea — 21 capitoli · da fare
 - [ ] Schopenauer · `1pbwJJz-6cEExZVafzOd3IAWXBbQPoQyv`
