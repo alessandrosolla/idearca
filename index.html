@@ -22,7 +22,7 @@
 <meta name="twitter:description" content="Materiali strutturati di Filosofia, Storia ed Educazione Civica — piattaforma didattica di Alessandro Solla.">
 <meta name="twitter:image" content="https://alessandrosolla.github.io/idearca/og-image.png">
 <script>document.documentElement.setAttribute('data-page','home');try{var t=localStorage.getItem('idearca-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
-<link rel="stylesheet" href="css/stile.css?v=20260810k">
+<link rel="stylesheet" href="css/stile.css?v=20260810n">
 </head>
 <body style="">
 <div id="scroll-progress" aria-hidden="true"></div>
@@ -49,9 +49,17 @@
     <h1 class="hero-headline"><span class="hl-1">Pensa.</span><em class="hl-2">Comprendi.</em><strong class="hl-3">Ricorda.</strong></h1>
     <p class="hero-sub">Materiali strutturati per ogni periodo del programma. Slide, schemi e verifiche — per studenti, corsisti e chiunque voglia approfondire con serietà.</p>
     <div class="hero-ctas">
-      <button class="btn-primary" onclick="openPeekModal()">Dai una occhiata</button>
-      <button class="btn-secondary" onclick="openPricing()">Vedi i piani</button>
-      <button class="btn-text" onclick="go(&#39;contacts-section&#39;)">Scrivimi →</button>
+      <button class="btn-occhiata" onclick="openPeekModal()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" width="19" height="19" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.964-7.178z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+        <span>Dai una occhiata</span>
+        <em>→</em>
+      </button>
+      <p class="hero-ctas-sotto">Entra senza codice &mdash; 522 materiali, 1080 domande, gli strumenti d&rsquo;aula.</p>
+      <div class="hero-ctas-minori">
+        <button class="btn-text" onclick="openPricing()">Vedi i piani</button>
+        <span class="hero-ctas-sep">&middot;</span>
+        <button class="btn-text" onclick="go(&#39;contacts-section&#39;)">Scrivimi</button>
+      </div>
     </div>
   </div>
   <div class="hero-right" id="login-section">
@@ -678,7 +686,7 @@
     <div id="codes-body" style="padding:0 2rem 2rem;max-height:40vh;overflow-y:auto"></div>
   </div>
 </div>
-<script src="js/app.js?v=20260810k"></script>
+<script src="js/app.js?v=20260810n"></script>
 <script src="js/d3-array.min.js?v=20260720"></script>
 <script src="js/d3-geo.min.js?v=20260720"></script>
 <script src="js/globe.js?v=20260720"></script>
@@ -694,9 +702,9 @@
     <header class="peek-head">
       <span class="modal-eye">Anteprima aperta &middot; senza codice</span>
       <h2 class="peek-title">Dentro Idearca</h2>
-      <p class="peek-lede">Una piattaforma didattica progettata, scritta e mantenuta da una
-      persona sola: l&#39;archivio dei materiali di tre materie, gli strumenti che uso in aula
-      e le attivit&agrave; gi&agrave; pronte da portare in classe.</p>
+      <p class="peek-lede">L&#39;archivio completo di filosofia, storia ed educazione civica &mdash;
+      slide, fonti, verifiche &mdash; insieme agli strumenti che porto in aula e alle attivit&agrave;
+      gi&agrave; pronte da svolgere in classe.</p>
     </header>
 
     <div class="peek-scroll" id="peek-body">

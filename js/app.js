@@ -1090,17 +1090,28 @@ async function caricaVetrina(){
     const primo=(materia,tab)=>righe
       .filter(r=>r.materia===materia&&r.tab===tab&&r.link&&r.link!=='#')
       .sort((a,b)=>(a.posizione||0)-(b.posizione||0))[0];
+    const ORO='#9a7c2e', VERDE='#2d5a27';
     const campioni=[
-      {tag:'Slide · Filosofia',   r:primo('fil-antica','materiali')},
-      {tag:'Slide · Storia',      r:primo('sto-contemporanea','materiali')},
-      {tag:'Fonte · Storia',      r:primo('sto-medievale','fonti')},
-      {tag:'Verifica · Filosofia',r:primo('fil-antica','esercizi')}
+      {tipo:'Slide di lezione', materia:'Filosofia antica',    col:ORO,   r:primo('fil-antica','materiali')},
+      {tipo:'Slide di lezione', materia:'Storia contemporanea',col:VERDE, r:primo('sto-contemporanea','materiali')},
+      {tipo:'Fonte',            materia:'Storia medievale',    col:VERDE, r:primo('sto-medievale','fonti')},
+      {tipo:'Verifica',         materia:'Filosofia antica',    col:ORO,   r:primo('fil-antica','esercizi')}
     ].filter(c=>c.r);
 
     const num=(n,l)=>`<div class="peek-num"><b>${n}</b><span>${l}</span></div>`;
     const card=(n,h,p)=>`<div class="peek-card"><div class="peek-card-top">
         <span class="peek-card-n">${n}</span><span class="peek-card-h">${h}</span></div><p>${p}</p></div>`;
-    const tool=(ic,t,d)=>`<div class="peek-tool"><div class="peek-tool-ic">${ic}</div>
+    /* icone disegnate, non emoji: le emoji cambiano forma da un
+       sistema all'altro e su Windows sembrano adesivi */
+    const ICONE={
+      voto:'<path d="M9 12l2 2 4-4"/><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 2v4M16 2v4"/>',
+      attivita:'<path d="M12 3v18M5 7l7-4 7 4"/><path d="M5 7l-2 7a4 4 0 008 0L9 7M19 7l-2 7a4 4 0 008 0l-2-7"/>',
+      mappa:'<path d="M9 4L3 7v13l6-3 6 3 6-3V4l-6 3-6-3z"/><path d="M9 4v13M15 7v13"/>',
+      consegne:'<path d="M3 14v5a2 2 0 002 2h14a2 2 0 002-2v-5"/><path d="M12 3v12M8 11l4 4 4-4"/>'
+    };
+    const tool=(k,t,d)=>`<div class="peek-tool">
+        <span class="peek-tool-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">${ICONE[k]}</svg></span>
         <div><b>${t}</b><span>${d}</span></div></div>`;
     const esc=s=>String(s||'').replace(/[<>&"]/g,c=>({'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;'}[c]));
 
@@ -1125,21 +1136,25 @@ async function caricaVetrina(){
       <section class="peek-sec">
         <div class="peek-sec-title">Gli strumenti per l'aula</div>
         <div class="peek-tools">
-          ${tool('🗳️','Votazioni in classe','Gli studenti rispondono dal telefono con un QR, i risultati compaiono alla LIM. 120 capitoli già pronti.')}
-          ${tool('⚖️','Attività strutturate','Debate e jigsaw con tempi, regole e fonti: si aprono e si portano in classe così come sono.')}
-          ${tool('🗺️','Mappa storica','Un atlante interattivo per vedere come cambiano i confini, anno per anno.')}
-          ${tool('📥','Consegne','Gli studenti caricano il compito dal telefono; solo il docente legge, nessuno vede quello degli altri.')}
+          ${tool('voto','Votazioni in classe','Gli studenti rispondono dal telefono con un QR, i risultati compaiono alla LIM. 120 capitoli già pronti.')}
+          ${tool('attivita','Attività strutturate','Debate e jigsaw con tempi, regole e fonti: si aprono e si portano in classe così come sono.')}
+          ${tool('mappa','Mappa storica','Un atlante interattivo per vedere come cambiano i confini, anno per anno.')}
+          ${tool('consegne','Consegne','Gli studenti caricano il compito dal telefono; solo il docente legge, nessuno vede quello degli altri.')}
         </div>
       </section>
 
       ${campioni.length?`<section class="peek-sec">
-        <div class="peek-sec-title">Aprine uno adesso</div>
+        <div class="peek-sec-title">Guarda dentro un documento</div>
+        <p class="peek-sec-nota">Questi quattro sono aperti a tutti: si aprono adesso, senza codice.
+        Sono materiale di lezione vero, non esempi preparati per la vetrina.</p>
         <div class="peek-open">
-          ${campioni.map(c=>`<div class="peek-open-row">
-            <span class="peek-open-tag">${c.tag}</span>
-            <span class="peek-open-t">${esc(c.r.titolo)}</span>
-            <a class="peek-open-go" href="${esc(c.r.link)}" target="_blank" rel="noopener">Apri ↗</a>
-          </div>`).join('')}
+          ${campioni.map(c=>`<a class="peek-open-card" style="--a:${c.col}"
+              href="${esc(c.r.link)}" target="_blank" rel="noopener">
+            <span class="peek-open-tipo">${c.tipo}</span>
+            <span class="peek-open-tit">${esc(c.r.titolo)}</span>
+            <span class="peek-open-mat">${c.materia}</span>
+            <span class="peek-open-apri">Apri il documento <b>↗</b></span>
+          </a>`).join('')}
         </div>
       </section>`:''}
     `;

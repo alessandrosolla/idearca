@@ -126,7 +126,26 @@ nav.scrolled{box-shadow:0 4px 32px rgba(28,43,26,0.07)}
 .hero-headline em{display:block;font-style:italic;color:var(--forest)}
 .hero-headline strong{display:block;font-weight:600;color:var(--forest-deep)}
 .hero-sub{font-size:.96rem;line-height:1.9;color:var(--stone);max-width:46ch;margin-bottom:3.2rem;font-weight:300;animation:aup .9s ease .28s both}
-.hero-ctas{display:flex;gap:1rem;align-items:center;flex-wrap:wrap;animation:aup .9s ease .4s both}
+/* Una sola azione forte. «Vedi i piani» e «Scrivimi» scendono a
+   comprimari: chi arriva senza codice deve inciampare in una porta
+   sola, non scegliere fra tre. */
+.hero-ctas{display:flex;flex-direction:column;align-items:flex-start;gap:.75rem;animation:aup .9s ease .4s both}
+.btn-occhiata{display:inline-flex;align-items:center;gap:.75rem;cursor:pointer;
+  padding:1.15rem 2.6rem;border-radius:4px;border:none;
+  font-family:'Jost',sans-serif;font-size:.86rem;font-weight:600;
+  letter-spacing:.17em;text-transform:uppercase;
+  background:linear-gradient(135deg,#c4a44e 0%,#9a7c2e 100%);color:#12240f;
+  box-shadow:0 8px 34px rgba(196,164,78,.32);
+  transition:transform .25s,box-shadow .25s,filter .25s}
+.btn-occhiata em{font-style:normal;transition:transform .25s}
+.btn-occhiata:hover{transform:translateY(-3px);filter:brightness(1.07);
+  box-shadow:0 14px 46px rgba(196,164,78,.48)}
+.btn-occhiata:hover em{transform:translateX(5px)}
+.btn-occhiata:focus-visible{outline:2px solid #e8d9a0;outline-offset:4px}
+.hero-ctas-sotto{font-size:.78rem;color:var(--stone-light);font-weight:300;margin:0;letter-spacing:.01em}
+.hero-ctas-minori{display:flex;align-items:center;gap:.9rem;margin-top:.3rem}
+.hero-ctas-sep{color:var(--stone-light);opacity:.5}
+.hero.night .hero-ctas-sotto{color:#9db199}
 .btn-primary{padding:.9rem 2.6rem;background:var(--forest);color:var(--white);font-family:'Jost',sans-serif;font-size:.73rem;letter-spacing:.16em;text-transform:uppercase;border:none;cursor:pointer;border-radius:2px;transition:all .3s;box-shadow:0 4px 24px rgba(45,90,39,.28)}
 .btn-primary:hover{background:var(--forest-deep);transform:translateY(-2px);box-shadow:0 8px 32px rgba(45,90,39,.36)}
 .btn-secondary{padding:.88rem 1.8rem;background:transparent;color:var(--forest);font-family:'Jost',sans-serif;font-size:.73rem;letter-spacing:.14em;text-transform:uppercase;border:1.5px solid rgba(45,90,39,.25);cursor:pointer;border-radius:2px;transition:all .25s}
@@ -594,22 +613,31 @@ html[data-theme="dark"] .theme-toggle .icon-moon{display:block}
 .peek-tools{display:grid;grid-template-columns:repeat(2,1fr);gap:.8rem}
 .peek-tool{display:flex;gap:.8rem;align-items:flex-start;border:1px solid var(--border);
   border-radius:10px;padding:.9rem 1rem;background:var(--white)}
-.peek-tool-ic{width:32px;height:32px;flex:none;border-radius:8px;background:var(--surface);
-  border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:.95rem}
+.peek-tool-ic{width:34px;height:34px;flex:none;border-radius:9px;background:var(--surface);
+  border:1px solid var(--border);display:flex;align-items:center;justify-content:center;color:var(--forest)}
+.peek-tool-ic svg{width:17px;height:17px}
 .peek-tool b{display:block;font-size:.83rem;font-weight:500;color:var(--ink);margin-bottom:.15rem}
 .peek-tool span{font-size:.75rem;line-height:1.6;color:var(--stone);font-weight:300}
 
-.peek-open{display:flex;flex-direction:column;gap:.5rem}
-.peek-open-row{display:flex;align-items:center;gap:.9rem;padding:.7rem .9rem;border-radius:8px;
-  border:1px solid var(--border);background:var(--white);transition:border-color .2s,background .2s}
-.peek-open-row:hover{border-color:var(--forest);background:var(--surface)}
-.peek-open-tag{font-size:.57rem;letter-spacing:.13em;text-transform:uppercase;color:var(--gold);
-  flex:none;width:8.5rem}
-.peek-open-t{flex:1;font-size:.85rem;color:var(--ink)}
-.peek-open-go{font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;padding:.28rem .75rem;
-  border-radius:20px;background:var(--forest);color:#fff;text-decoration:none;white-space:nowrap;
-  transition:background .2s}
-.peek-open-go:hover{background:var(--forest-deep)}
+.peek-sec-nota{font-size:.79rem;line-height:1.65;color:var(--stone);font-weight:300;margin:-.3rem 0 .9rem;max-width:60ch}
+.peek-open{display:grid;grid-template-columns:repeat(2,1fr);gap:.8rem}
+.peek-open-card{display:flex;flex-direction:column;gap:.28rem;text-decoration:none;
+  padding:1rem 1.1rem 0.9rem;border-radius:10px;background:var(--white);
+  border:1px solid var(--border);border-top:3px solid var(--a,var(--forest));
+  transition:transform .22s,box-shadow .22s,border-color .22s}
+.peek-open-card:hover{transform:translateY(-3px);box-shadow:0 10px 32px rgba(28,43,26,.12);
+  border-color:var(--a,var(--forest));border-top-color:var(--a,var(--forest))}
+.peek-open-tipo{font-size:.56rem;letter-spacing:.16em;text-transform:uppercase;
+  font-weight:600;color:var(--a,var(--forest))}
+.peek-open-tit{font-family:'Cormorant Garamond',serif;font-size:1.18rem;font-weight:500;
+  color:var(--ink);line-height:1.2}
+.peek-open-mat{font-size:.72rem;color:var(--stone-light)}
+.peek-open-apri{margin-top:.55rem;padding-top:.55rem;border-top:1px solid var(--border);
+  font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;color:var(--stone);
+  display:flex;align-items:center;gap:.4rem;transition:color .2s}
+.peek-open-apri b{transition:transform .2s;font-weight:400}
+.peek-open-card:hover .peek-open-apri{color:var(--a,var(--forest))}
+.peek-open-card:hover .peek-open-apri b{transform:translate(3px,-3px)}
 
 @media(max-width:760px){
   .peek-head{padding:1.8rem 1.3rem 1.1rem}
@@ -619,8 +647,7 @@ html[data-theme="dark"] .theme-toggle .icon-moon{display:block}
   .peek-foot .btn-primary,.peek-foot .btn-secondary{flex:1;text-align:center}
   .peek-nums{grid-template-columns:repeat(2,1fr)}
   .peek-grid,.peek-tools{grid-template-columns:1fr}
-  .peek-open-tag{width:auto}
-  .peek-open-row{flex-wrap:wrap;gap:.4rem .8rem}
+  .peek-open{grid-template-columns:1fr}
 }
 
 .peek-subject{margin-bottom:1.5rem}
