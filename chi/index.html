@@ -6,20 +6,21 @@
 <title>Chi sono · Cosa è Idearca — Alessandro Solla</title>
 <meta name="description" content="Alessandro Solla, docente abilitato di Storia e Filosofia (A-19). Che cos'è Idearca: una piattaforma didattica progettata, scritta e mantenuta da me.">
 <link rel="icon" type="image/svg+xml" href="../favicon.svg">
-<link rel="stylesheet" href="../css/stile.css?v=20260811f">
+<link rel="stylesheet" href="../css/stile.css?v=20260811h">
 <style>
 body{background:linear-gradient(180deg,#f5f3ea 0%,#eff2ea 45%,#f5f3eb 100%)}
-.pg{max-width:900px;margin:0 auto;padding:7rem 2rem 5rem;position:relative;z-index:1}
+.pg{max-width:860px;margin:0 auto;padding:7rem 2rem 5rem;position:relative;z-index:1}
 /* Le due tavole ai lati: si tracciano da sole man mano che si
    scende, e scorrono un po' più lente della pagina. */
-.tavola{position:fixed;top:0;height:100vh;width:210px;pointer-events:none;z-index:0;
+.tavola{position:fixed;top:0;height:100vh;width:200px;pointer-events:none;z-index:0;
   display:flex;align-items:center;will-change:transform}
 .tavola svg{width:100%;height:88%;opacity:.34}
 .tavola-sx{left:1.4vw;color:#2d5a27}
 .tavola-dx{right:1.4vw;color:#9a7c2e}
 .tavola svg *{stroke-dasharray:var(--l,900);stroke-dashoffset:var(--l,900)}
 .tavola.tracciata svg *{stroke-dashoffset:0;transition:stroke-dashoffset 1.5s cubic-bezier(.3,.7,.3,1)}
-@media(max-width:1340px){.tavola{display:none}}
+@media(max-width:1180px){.tavola{width:170px}.tavola svg{opacity:.3}}
+@media(max-width:1020px){.tavola{display:none}}
 @media(prefers-reduced-motion:reduce){
   .tavola svg *{stroke-dashoffset:0}
   .tavola{transition:none}
@@ -135,83 +136,131 @@ h3.sotto::before{content:'';width:22px;height:3px;border-radius:2px;
      centinaio in tutto — e si scoprono mentre si scorre, come
      se qualcuno le stesse tracciando adesso. ══════════════════ -->
 <div class="tavola tavola-sx" aria-hidden="true">
-  <svg viewBox="0 0 200 1000" fill="none" stroke="currentColor" stroke-width="1.3"
+  <svg viewBox="0 0 200 1000" fill="none" stroke="currentColor" stroke-width="1.15"
        stroke-linecap="round" stroke-linejoin="round" preserveAspectRatio="xMidYMid meet">
-    <!-- timpano -->
-    <path d="M14 178 L100 96 L186 178"/><path d="M22 190 L100 116 L178 190"/>
-    <path d="M40 178h120"/><path d="M56 168l44-42 44 42"/>
-    <circle cx="100" cy="152" r="9"/><path d="M100 143v18M91 152h18"/>
-    <!-- cornice e architrave -->
-    <path d="M10 190h180M10 202h180M14 214h172M18 226h164"/>
-    <!-- triglifi e metope -->
-    <path d="M28 202v24M34 202v24M40 202v24"/>
-    <path d="M64 202v24M70 202v24M76 202v24"/>
-    <path d="M100 202v24M106 202v24M112 202v24"/>
-    <path d="M136 202v24M142 202v24M148 202v24"/>
-    <path d="M172 202v24M178 202v24"/>
-    <!-- capitelli -->
-    <path d="M26 226h32l-4 14H30zM32 240h20"/>
-    <path d="M84 226h32l-4 14H88zM90 240h20"/>
-    <path d="M142 226h32l-4 14h-24zM148 240h20"/>
-    <!-- colonna 1: fusto con scanalature -->
-    <path d="M34 240v560M50 240v560"/>
-    <path d="M37 244v552M40 246v548M43 244v552M46 246v548"/>
-    <path d="M31 800h22M29 812h26M27 824h30"/>
+    <!-- acroteri agli angoli e al colmo -->
+    <path d="M100 78c-5 6-3 12 0 14 3-2 5-8 0-14"/><path d="M100 92v6"/>
+    <path d="M12 172c-5 5-4 10-1 12 3-2 4-7 1-12"/><path d="M188 172c5 5 4 10 1 12-3-2-4-7-1-12"/>
+    <!-- timpano: falde e cornice inclinata -->
+    <path d="M10 180 L100 96 L190 180"/><path d="M18 190 L100 114 L182 190"/>
+    <path d="M26 180h148"/>
+    <!-- gruppo scolpito dentro il frontone -->
+    <path d="M100 126v30M94 138l6-6 6 6"/>
+    <path d="M78 150c-4-8-2-14 2-16 4 2 6 8 2 16"/><path d="M80 150v10"/>
+    <path d="M122 150c4-8 2-14-2-16-4 2-6 8-2 16"/><path d="M120 150v10"/>
+    <path d="M58 162c-3-6-1-10 2-11 3 1 4 5 1 11"/><path d="M142 162c3-6 1-10-2-11-3 1-4 5-1 11"/>
+    <path d="M46 170h20M134 170h20"/>
+    <!-- dentelli sotto la cornice -->
+    <path d="M12 192h176"/>
+    <path d="M18 192v8M26 192v8M34 192v8M42 192v8M50 192v8M58 192v8M66 192v8M74 192v8M82 192v8M90 192v8M98 192v8M106 192v8M114 192v8M122 192v8M130 192v8M138 192v8M146 192v8M154 192v8M162 192v8M170 192v8M178 192v8"/>
+    <path d="M12 200h176M14 210h172"/>
+    <!-- fregio: triglifi con scanalature, metope vuote -->
+    <path d="M14 210h172M14 236h172"/>
+    <path d="M22 210v26M28 210v26M34 210v26"/>
+    <path d="M60 210v26M66 210v26M72 210v26"/>
+    <path d="M98 210v26M104 210v26M110 210v26"/>
+    <path d="M136 210v26M142 210v26M148 210v26"/>
+    <path d="M172 210v26M178 210v26"/>
+    <!-- architrave con regule e gocce -->
+    <path d="M14 236h172M16 248h168"/>
+    <path d="M22 248v5M26 248v5M30 248v5M34 248v5"/>
+    <path d="M60 248v5M64 248v5M68 248v5M72 248v5"/>
+    <path d="M98 248v5M102 248v5M106 248v5M110 248v5"/>
+    <path d="M136 248v5M140 248v5M144 248v5M148 248v5"/>
+    <!-- capitello 1: abaco, echino, anelli -->
+    <path d="M24 256h34M26 256v8h30v-8"/><path d="M28 264c2 8 26 8 28 0"/>
+    <path d="M30 274h24M31 279h22"/>
+    <!-- capitello 2 -->
+    <path d="M83 256h34M85 256v8h30v-8"/><path d="M87 264c2 8 26 8 28 0"/>
+    <path d="M89 274h24M90 279h22"/>
+    <!-- capitello 3 -->
+    <path d="M142 256h34M144 256v8h30v-8"/><path d="M146 264c2 8 26 8 28 0"/>
+    <path d="M148 274h24M149 279h22"/>
+    <!-- colonna 1: fusto rastremato con otto scanalature -->
+    <path d="M33 284c-1 180-1 360 0 512M53 284c1 180 1 360 0 512"/>
+    <path d="M36 288c-1 178-1 356 0 504M39 290c-1 176-1 352 0 500M42 288c-1 178-1 356 0 504M45 290c-1 176-1 352 0 500M48 288c-1 178-1 356 0 504M51 292c-1 174-1 348 0 496"/>
     <!-- colonna 2 -->
-    <path d="M92 240v560M108 240v560"/>
-    <path d="M95 244v552M98 246v548M101 244v552M104 246v548"/>
-    <path d="M89 800h22M87 812h26M85 824h30"/>
+    <path d="M92 284c-1 180-1 360 0 512M112 284c1 180 1 360 0 512"/>
+    <path d="M95 288c-1 178-1 356 0 504M98 290c-1 176-1 352 0 500M101 288c-1 178-1 356 0 504M104 290c-1 176-1 352 0 500M107 288c-1 178-1 356 0 504M110 292c-1 174-1 348 0 496"/>
     <!-- colonna 3 -->
-    <path d="M150 240v560M166 240v560"/>
-    <path d="M153 244v552M156 246v548M159 244v552M162 246v548"/>
-    <path d="M147 800h22M145 812h26M143 824h30"/>
-    <!-- stilobate -->
-    <path d="M14 836h172M8 850h184M2 864h196"/>
-    <!-- gradini -->
-    <path d="M10 878h180M6 892h188M2 906h196"/>
-    <!-- meandro greco -->
-    <path d="M20 934h14v22h-8v-14h22v22h-8v-14h22v22h-8v-14h22v22h-8v-14h22v22h-8v-14h22v22h-8v-14h14"/>
-    <path d="M20 970h160"/>
+    <path d="M151 284c-1 180-1 360 0 512M171 284c1 180 1 360 0 512"/>
+    <path d="M154 288c-1 178-1 356 0 504M157 290c-1 176-1 352 0 500M160 288c-1 178-1 356 0 504M163 290c-1 176-1 352 0 500M166 288c-1 178-1 356 0 504M169 292c-1 174-1 348 0 496"/>
+    <!-- basi -->
+    <path d="M29 796h28M27 806h32M25 816h36"/>
+    <path d="M88 796h28M86 806h32M84 816h36"/>
+    <path d="M147 796h28M145 806h32M143 816h36"/>
+    <!-- crepidoma: tre gradini -->
+    <path d="M16 826h168M10 842h180M4 858h192"/>
+    <path d="M16 826v16M184 826v16M10 842v16M190 842v16"/>
+    <!-- lastricato -->
+    <path d="M4 874h192M40 858v16M80 858v16M120 858v16M160 858v16"/>
+    <!-- fregio a meandro -->
+    <path d="M16 902h16v24h-9v-15h25v24h-9v-15h25v24h-9v-15h25v24h-9v-15h25v24h-9v-15h25v24h-9v-15h16"/>
+    <path d="M16 940h168M16 894h168"/>
+    <!-- civetta di Atena -->
+    <path d="M100 960c-9 0-15 7-15 15s6 15 15 15 15-7 15-15-6-15-15-15z"/>
+    <circle cx="94" cy="972" r="3.2"/><circle cx="106" cy="972" r="3.2"/>
+    <path d="M100 976l-3 4h6z"/><path d="M89 962l-3-6 6 2M111 962l3-6-6 2"/>
+    <path d="M94 988v4M106 988v4"/>
   </svg>
 </div>
 
 <div class="tavola tavola-dx" aria-hidden="true">
-  <svg viewBox="0 0 200 1000" fill="none" stroke="currentColor" stroke-width="1.3"
+  <svg viewBox="0 0 200 1000" fill="none" stroke="currentColor" stroke-width="1.15"
        stroke-linecap="round" stroke-linejoin="round" preserveAspectRatio="xMidYMid meet">
-    <!-- sfera armillare -->
-    <circle cx="100" cy="300" r="86"/>
-    <circle cx="100" cy="300" r="74"/>
-    <ellipse cx="100" cy="300" rx="86" ry="30"/>
-    <ellipse cx="100" cy="300" rx="86" ry="56"/>
-    <ellipse cx="100" cy="300" rx="30" ry="86"/>
-    <ellipse cx="100" cy="300" rx="56" ry="86"/>
-    <path d="M14 300h172M100 214v172"/>
-    <path d="M39 239 L161 361M161 239 L39 361"/>
-    <circle cx="100" cy="300" r="13"/><circle cx="100" cy="300" r="5"/>
-    <!-- graduazioni sull'anello -->
-    <path d="M100 214v10M100 376v10M14 300h10M176 300h10"/>
-    <path d="M139 226l-5 9M61 226l5 9M139 374l-5-9M61 374l5-9"/>
-    <path d="M175 261l-9 4M25 261l9 4M175 339l-9-4M25 339l9-4"/>
-    <!-- sostegno -->
-    <path d="M100 386v92"/><path d="M76 478h48"/>
-    <path d="M70 478c0 18 14 26 30 26s30-8 30-26"/>
-    <path d="M100 504v34M74 538h52M66 552h68"/>
-    <!-- ramo d'alloro -->
-    <path d="M100 590v300"/>
-    <path d="M100 620c-24 4-32 22-32 22s22 10 32-4"/>
-    <path d="M100 620c24 4 32 22 32 22s-22 10-32-4"/>
-    <path d="M100 672c-24 4-32 22-32 22s22 10 32-4"/>
-    <path d="M100 672c24 4 32 22 32 22s-22 10-32-4"/>
-    <path d="M100 724c-24 4-32 22-32 22s22 10 32-4"/>
-    <path d="M100 724c24 4 32 22 32 22s-22 10-32-4"/>
-    <path d="M100 776c-24 4-32 22-32 22s22 10 32-4"/>
-    <path d="M100 776c24 4 32 22 32 22s-22 10-32-4"/>
-    <path d="M100 828c-24 4-32 22-32 22s22 10 32-4"/>
-    <path d="M100 828c24 4 32 22 32 22s-22 10-32-4"/>
-    <!-- volumi impilati -->
-    <path d="M56 902h88v14H56zM52 916h96v14H52zM60 930h80v14H60z"/>
-    <path d="M64 902v14M78 902v14M122 902v14M60 916v14M74 916v14M126 916v14"/>
-    <path d="M56 958h88M62 970h76"/>
+    <!-- sfera armillare: anello meridiano esterno -->
+    <circle cx="100" cy="270" r="88"/><circle cx="100" cy="270" r="82"/>
+    <!-- fascia zodiacale inclinata, con tacche -->
+    <ellipse cx="100" cy="270" rx="88" ry="30" transform="rotate(-23 100 270)"/>
+    <ellipse cx="100" cy="270" rx="88" ry="22" transform="rotate(-23 100 270)"/>
+    <!-- equatore e tropici -->
+    <ellipse cx="100" cy="270" rx="88" ry="26"/>
+    <ellipse cx="100" cy="240" rx="76" ry="20"/>
+    <ellipse cx="100" cy="300" rx="76" ry="20"/>
+    <!-- coluri: due meridiani ortogonali -->
+    <ellipse cx="100" cy="270" rx="26" ry="88"/>
+    <ellipse cx="100" cy="270" rx="54" ry="88"/>
+    <!-- asse polare con punte -->
+    <path d="M100 168v204"/><path d="M96 176l4-8 4 8M96 364l4 8 4-8"/>
+    <!-- graduazioni sull'anello meridiano -->
+    <path d="M100 182v9M100 349v9M12 270h9M179 270h9"/>
+    <path d="M138 195l-5 8M62 195l5 8M138 345l-5-8M62 345l5-8"/>
+    <path d="M173 232l-8 4M27 232l8 4M173 308l-8-4M27 308l8-4"/>
+    <path d="M158 208l-6 6M42 208l6 6M158 332l-6-6M42 332l6-6"/>
+    <!-- globo interno -->
+    <circle cx="100" cy="270" r="16"/><ellipse cx="100" cy="270" rx="16" ry="6"/>
+    <path d="M92 258c4 3 12 3 16 0M92 282c4-3 12-3 16 0"/>
+    <!-- sostegno tornito -->
+    <path d="M100 372v26"/><path d="M92 398h16M90 404h20"/>
+    <path d="M88 404c0 10 5 14 12 14s12-4 12-14"/>
+    <path d="M96 418h8v14h-8z"/><path d="M92 432h16M90 440h20"/>
+    <path d="M100 440v22"/><path d="M86 462h28M80 470h40M74 478h52"/>
+    <path d="M74 478c0 10 12 14 26 14s26-4 26-14"/>
+    <path d="M68 492h64M62 500h76"/>
+    <!-- ramo d'alloro con bacche -->
+    <path d="M100 540c0 90 0 180 0 268"/>
+    <path d="M100 560c-26 2-36 20-36 20s24 12 36-3"/><circle cx="70" cy="574" r="2.4"/>
+    <path d="M100 560c26 2 36 20 36 20s-24 12-36-3"/><circle cx="130" cy="574" r="2.4"/>
+    <path d="M100 606c-26 2-36 20-36 20s24 12 36-3"/><circle cx="70" cy="620" r="2.4"/>
+    <path d="M100 606c26 2 36 20 36 20s-24 12-36-3"/><circle cx="130" cy="620" r="2.4"/>
+    <path d="M100 652c-26 2-36 20-36 20s24 12 36-3"/><circle cx="70" cy="666" r="2.4"/>
+    <path d="M100 652c26 2 36 20 36 20s-24 12-36-3"/><circle cx="130" cy="666" r="2.4"/>
+    <path d="M100 698c-26 2-36 20-36 20s24 12 36-3"/><circle cx="70" cy="712" r="2.4"/>
+    <path d="M100 698c26 2 36 20 36 20s-24 12-36-3"/><circle cx="130" cy="712" r="2.4"/>
+    <path d="M100 744c-24 2-33 18-33 18s22 11 33-3"/><path d="M100 744c24 2 33 18 33 18s-22 11-33-3"/>
+    <path d="M100 786c-20 2-28 16-28 16s19 9 28-3"/><path d="M100 786c20 2 28 16 28 16s-19 9-28-3"/>
+    <!-- nervature delle foglie -->
+    <path d="M78 570l16 6M122 570l-16 6M78 616l16 6M122 616l-16 6"/>
+    <!-- volumi impilati, con nervi e segnalibri -->
+    <path d="M54 856h92v16H54zM50 872h100v16H50zM58 888h84v16H58z"/>
+    <path d="M62 856v16M76 856v16M124 856v16M58 872v16M72 872v16M128 872v16M66 888v16M80 888v16M120 888v16"/>
+    <path d="M100 872v16M104 888v16"/>
+    <path d="M138 904v16l-5-5-5 5v-16"/>
+    <!-- calamaio e penna -->
+    <path d="M62 946h26v18a13 9 0 01-26 0z"/><path d="M62 946a13 5 0 0026 0"/>
+    <path d="M112 962c14-26 24-34 30-36-2 8-8 22-24 40z"/><path d="M118 958l10-12"/>
+    <path d="M108 968l-6 6"/>
+    <path d="M50 986h100"/>
   </svg>
 </div>
 
@@ -397,6 +446,6 @@ h3.sotto::before{content:'';width:22px;height:3px;border-radius:2px;
 })();
 try{const t=localStorage.getItem('idearca-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}
 </script>
-<script src="../js/numeri.js?v=20260811f" data-base="../"></script>
+<script src="../js/numeri.js?v=20260811h" data-base="../"></script>
 </body>
 </html>
