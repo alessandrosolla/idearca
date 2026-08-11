@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Simulatore socratico — Idearca</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Jost',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  background:#faf8f3;color:#1c2b1a;font-weight:300;-webkit-font-smoothing:antialiased}
+.w{max-width:800px;margin:0 auto;padding:2rem 1.5rem 4rem}
+.k{font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:#8a9e87;font-weight:600}
+h1{font-family:'Cormorant Garamond',Georgia,serif;font-size:2.4rem;font-weight:400;margin:.3rem 0 .5rem}
+.sub{font-size:.92rem;line-height:1.7;color:#5a6b58;max-width:64ch}
+.et{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:#9a7c2e;
+  font-weight:700;margin:1.8rem 0 .7rem;display:flex;align-items:center;gap:.6rem}
+.et::after{content:'';flex:1;height:1px;background:rgba(45,90,39,.13)}
+
+.avviso{padding:1rem 1.2rem;border-left:3px solid #9a7c2e;background:#f6f3ec;
+  border-radius:0 10px 10px 0;font-size:.85rem;line-height:1.7;color:#5a6b58}
+.avviso b{color:#8a6a1e;font-weight:600}
+
+.dialogo{border:1px solid rgba(45,90,39,.14);border-radius:14px;background:#fff;
+  padding:1.1rem;min-height:230px;max-height:52vh;overflow-y:auto}
+.battuta{display:flex;gap:.75rem;margin-bottom:.95rem}
+.battuta:last-child{margin-bottom:0}
+.chi{flex:none;width:30px;height:30px;border-radius:50%;display:flex;align-items:center;
+  justify-content:center;font-size:.62rem;font-weight:700;letter-spacing:.04em}
+.socrate .chi{background:rgba(154,124,46,.15);color:#8a6a1e}
+.io .chi{background:rgba(45,90,39,.12);color:#2d5a27}
+.testo{flex:1;font-size:.94rem;line-height:1.7;padding-top:.25rem}
+.socrate .testo{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.1rem;color:#2a352a}
+.io .testo{color:#3d4a3b}
+.marca{display:inline-block;font-size:.55rem;letter-spacing:.13em;text-transform:uppercase;
+  font-weight:700;color:#8a9e87;background:rgba(138,158,135,.14);padding:.1rem .45rem;
+  border-radius:100px;margin-left:.4rem;vertical-align:.12em}
+
+.riga{display:flex;gap:.55rem;margin-top:.8rem}
+#dico{flex:1;font:inherit;font-size:.95rem;padding:.75rem 1rem;border-radius:12px;
+  border:1.5px solid rgba(45,90,39,.18);background:#fff;color:#1c2b1a;outline:none;
+  font-weight:400;resize:none;line-height:1.5}
+#dico:focus{border-color:#2d5a27}
+.b{font:inherit;font-size:.8rem;padding:.6rem 1.3rem;border-radius:100px;cursor:pointer;
+  border:1.5px solid rgba(45,90,39,.22);background:#fff;color:#2d5a27;font-weight:500;transition:all .16s}
+.b:hover{background:#2d5a27;color:#fff;border-color:#2d5a27}
+.b.pieno{background:#2d5a27;color:#fff;border-color:#2d5a27}
+.b.pieno:hover{background:#1c3f18}
+.barra{display:flex;gap:.5rem;flex-wrap:wrap;margin-top:.7rem}
+
+.riepilogo{margin-top:1.2rem;border-radius:14px;padding:1.15rem 1.3rem;background:#fff;
+  border:1px solid rgba(45,90,39,.14);border-left:5px solid #2d5a27}
+.riepilogo h3{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.4rem;font-weight:600;
+  color:#2d5a27;margin-bottom:.5rem}
+.riepilogo ol{padding-left:1.1rem;font-size:.87rem;line-height:1.75;color:#3d4a3b}
+.riepilogo li{margin-bottom:.3rem}
+.riepilogo p{font-size:.84rem;line-height:1.7;color:#5a6b58;margin-top:.7rem;
+  padding-top:.7rem;border-top:1px solid rgba(45,90,39,.1)}
+
+.spunti{display:flex;gap:.45rem;flex-wrap:wrap}
+.mini{font:inherit;font-size:.73rem;padding:.4rem .9rem;border-radius:100px;cursor:pointer;
+  border:1px solid rgba(45,90,39,.2);background:#fff;color:#2d5a27;transition:all .16s;text-align:left}
+.mini:hover{background:#2d5a27;color:#fff;border-color:#2d5a27}
+.regole{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:.6rem}
+.rg{border:1px solid rgba(45,90,39,.13);border-radius:10px;padding:.7rem .85rem;background:#fff}
+.rg b{display:block;font-size:.8rem;font-weight:600;color:#8a6a1e;margin-bottom:.2rem}
+.rg p{font-size:.74rem;line-height:1.55;color:#5a6b58}
+.rg code{font-family:ui-monospace,Menlo,monospace;font-size:.68rem;color:#2d5a27;
+  background:rgba(45,90,39,.07);padding:.05rem .3rem;border-radius:4px}
+@media(max-width:640px){
+  .w{padding:1.4rem 1rem 3rem}h1{font-size:1.9rem}
+  .regole{grid-template-columns:1fr}
+  .riga{flex-direction:column}
+}
+</style>
+</head>
+<body>
+<div class="w">
+  <div class="k">Idearca · Prove</div>
+  <h1>Simulatore socratico</h1>
+  <p class="sub">Un interlocutore che fa <strong>soltanto domande</strong>. Non ti dirà mai
+  se hai ragione, perché non lo sa: non capisce quello che scrivi. Riconosce la
+  <em>forma</em> delle tue frasi — un «sempre», un «è giusto», un «quindi» — e su quella
+  incalza. È meno di un maestro e più di uno specchio.</p>
+
+  <div class="avviso" style="margin-top:1.2rem"><b>Come funziona, detto subito.</b>
+  Non c'è nessuna intelligenza qui dentro: ci sono nove regole scritte a mano, elencate
+  in fondo alla pagina. Sapere come funziona non rovina l'esercizio — lo migliora, perché
+  la domanda che ti arriva l'avresti dovuta farti da solo, e adesso sai quali sono.</p>
+
+  <div class="et">Da dove partire</div>
+  <div class="spunti" id="spunti"></div>
+
+  <div class="et">Il dialogo</div>
+  <div class="dialogo" id="dialogo"></div>
+  <div class="riga">
+    <textarea id="dico" rows="2" placeholder="Scrivi che cosa sostieni, in una frase."
+      onkeydown="if(event.key==='Enter'&&!event.shiftKey){event.preventDefault();parla()}"></textarea>
+    <button class="b pieno" onclick="parla()">Rispondi</button>
+  </div>
+  <div class="barra">
+    <button class="b" onclick="riepiloga()">Che cosa ho sostenuto?</button>
+    <button class="b" onclick="ricomincia()">Ricomincia</button>
+  </div>
+
+  <div id="somma"></div>
+
+  <div class="et">Le nove regole</div>
+  <div class="regole" id="regole"></div>
+</div>
+
+<script>
+/* ══════════════════════════════════════════════════════════
+   IL SIMULATORE SOCRATICO
+   La regola sopra ogni altra: non risponde mai. Nemmeno quando
+   l'utente chiede espressamente. Socrate dichiarava di non
+   sapere, e questo qui non sa davvero — riconosce forme, non
+   contenuti, e le regole sono in fondo alla pagina perché
+   nascondere il meccanismo lo renderebbe un oracolo, che è
+   esattamente il contrario del punto.
+   ══════════════════════════════════════════════════════════ */
+
+const REGOLE=[
+{k:'universale', n:'L\'universale', spia:'tutti, sempre, mai, nessuno, ogni',
+ come:'Cerca un contro-esempio: una regola senza eccezioni è una promessa grossa.',
+ re:/\b(tutti|tutte|ogni|sempre|mai|nessuno|nessuna|qualsiasi|chiunque|ovunque)\b/i,
+ dom:(p,f)=>[
+  `Hai detto «${p}». Ti viene in mente un solo caso in cui non valga? Se ti viene, la regola va riscritta; se non ti viene, dimmi perché non possa darsene uno.`,
+  `«${p}» non lascia scampo. Chi volesse smentirti, che cosa dovrebbe esibire?`,
+  `Sei sicuro di «${p}», o è un modo di dire «quasi sempre»? Perché fra i due c'è di mezzo tutta la questione.`]},
+
+{k:'valutativo', n:'Il giudizio di valore', spia:'giusto, bello, buono, sbagliato, grave',
+ come:'Chiede il criterio, non un altro esempio. È la mossa che apre quasi tutti i dialoghi platonici.',
+ re:/\b(giust[oaie]|ingiust[oaie]|bell[oaie]|brutt[oaie]|buon[oaie]|cattiv[oaie]|male|bene|sbagliat[oaie]|corrett[oaie]|important[ei]|grave|gravi|equo|immoral[ei]|moral[ei])\b/i,
+ dom:(p,f)=>[
+  `Chiami in causa «${p}». Prima di proseguire: che cosa rende una cosa ${p}? Non un esempio — la regola per riconoscerla.`,
+  `Se dovessi spiegare a qualcuno che non lo sa che cosa vuol dire «${p}», da dove cominceresti?`,
+  `Due persone che usassero «${p}» in modi diversi, come farebbero ad accorgersene?`]},
+
+{k:'causale', n:'Il nesso', spia:'perché, quindi, dunque, siccome',
+ come:'Separa la premessa dalla conclusione e chiede se il legame regga.',
+ re:/\b(perch[éeè]|poich[éeè]|siccome|quindi|dunque|perci[òo]|allora|infatti|di conseguenza)\b/i,
+ dom:(p,f)=>[
+  `C'è un «${p}» in mezzo alla frase: stai facendo discendere una cosa da un'altra. Se la prima fosse vera e la seconda falsa, che cosa dovrebbe essere andato storto?`,
+  `Quel «${p}» regge tutto il peso. È l'unica strada che porta lì, o ce ne sarebbero altre?`,
+  `Chi accettasse la tua premessa e rifiutasse la conclusione, dove starebbe sbagliando?`]},
+
+{k:'ovvieta', n:'L\'ovvio', spia:'è ovvio, si sa, è naturale, tutti sanno',
+ come:'Quello che si dà per scontato è il posto dove si nascondono le premesse non dette.',
+ re:/\b(ovvi[oa]|ovviamente|evidente|evidentemente|naturale|naturalmente|normale|si sa|tutti sanno|tutti dicono|si dice|risaputo|chiaramente)\b/i,
+ dom:(p,f)=>[
+  `Dici «${p}». Ovvio a chi? Chi non lo trovasse tale starebbe sbagliando in che cosa, esattamente?`,
+  `Le cose ovvie sono quelle che nessuno controlla più. Prova a difendere «${p}» come se l'altro non fosse d'accordo.`,
+  `«${p}» era ovvio anche cento anni fa? E fra cento anni?`]},
+
+{k:'dovere', n:'Il dovere', spia:'bisogna, si deve, dovrebbe, occorre',
+ come:'Chiede se il dovere discenda da un fine — e allora è condizionato — o valga comunque.',
+ re:/\b(bisogn[ao]|si deve|dovrebbe|dovrebbero|dovremmo|devono|occorre|va fatt[oa]|andrebbe|doveroso)\b/i,
+ dom:(p,f)=>[
+  `Da che cosa segue quel «${p}»? Da uno scopo che hai in mente, oppure vale anche per chi quello scopo non ce l'ha?`,
+  `«${p}» chi? Tutti, o chi si trova in una certa condizione?`,
+  `Se qualcuno rispondesse «e perché mai?», che cosa gli diresti che non sia un altro «${p}»?`]},
+
+{k:'comparativo', n:'Il confronto', spia:'più, meno, meglio, peggio',
+ come:'Ogni comparazione presuppone una misura, e la misura si può contestare.',
+ re:/\b(pi[ùu]|meno|megli[oa]|peggi[oa]|maggior[ei]|minor[ei]|superior[ei]|inferior[ei])\b/i,
+ dom:(p,f)=>[
+  `«${p}» secondo quale misura? Chi misurasse diversamente potrebbe dire l'opposto senza contraddirti.`,
+  `Hai messo due cose su una scala. Chi l'ha stabilita, quella scala?`,
+  `C'è un caso in cui la stessa cosa sarebbe «${p}» sotto un aspetto e il contrario sotto un altro?`]},
+
+{k:'caso', n:'Il caso singolo', spia:'una volta, ho visto, un mio amico',
+ come:'Il salto dall\'aneddoto alla regola è il più frequente e il meno notato.',
+ re:/\b(una volta|ho visto|ho conosciut[oa]|mi [èe] capitato|un mio amico|una mia amica|conosco uno|conosco una|per esperienza|a me [èe] successo)\b/i,
+ dom:(p,f)=>[
+  `Stai partendo da un caso che hai visto. Quanti casi contrari ti servirebbero per cambiare idea? Se la risposta è «nessuno», non era da lì che veniva la tua convinzione.`,
+  `Da quel caso alla regola c'è un salto. Che cosa ti fa pensare che quel caso fosse tipico e non l'eccezione?`,
+  `Chi avesse visto il caso opposto avrebbe una ragione altrettanto buona della tua?`]},
+
+{k:'tensione', n:'La tensione', spia:'ma, però, tuttavia, anche se',
+ come:'Dove c\'è un «ma» ci sono due cose che l\'utente tiene insieme a fatica.',
+ re:/\b(ma|per[òo]|tuttavia|anche se|nonostante|eppure|d'altra parte|comunque)\b/i,
+ dom:(p,f)=>[
+  `Con quel «${p}» tieni insieme due cose che tirano in direzioni opposte. Se dovessi rinunciare a una, quale lasceresti andare?`,
+  `Il «${p}» dice che sei già in dubbio. Su che cosa, precisamente?`,
+  `Quale delle due metà della tua frase difenderesti se ti costringessero a sceglierne una?`]},
+
+{k:'definizione', n:'La definizione', spia:'è, significa, vuol dire, consiste in',
+ come:'Mette alla prova la definizione con un caso di confine, come nel Teeteto.',
+ re:/\b(significa|vuol dire|consiste|si definisce|[èe] semplicemente|non [èe] altro che)\b/i,
+ dom:(p,f)=>[
+  `Hai dato una definizione. Prova a immaginare un caso che ci rientri secondo le tue parole e che però non chiameresti così: se lo trovi, la definizione è larga.`,
+  `E un caso che tu chiameresti così ma che la tua definizione lascia fuori? Se lo trovi, è stretta.`,
+  `La tua definizione usa parole che a loro volta andrebbero definite. Quale delle due è la più difficile?`]}
+];
+
+/* le domande di riserva, quando la frase non fa scattare nessuna regola */
+const RISERVA=[
+ 'Che cosa dovrebbe accadere perché tu cambiassi idea su questo?',
+ 'Chi la pensa al contrario, secondo te che ragione ha? Non che errore: che ragione.',
+ 'Se dovessi dirlo a qualcuno che non sa nulla dell\'argomento, come lo diresti?',
+ 'Questa è una cosa che hai pensato tu, o una che hai sentito? E se l\'hai sentita, l\'hai controllata?',
+ 'Qual è la parte di quello che hai detto di cui sei meno sicuro?',
+ 'Che cosa stai dando per scontato, che qualcun altro potrebbe non dare?',
+ 'Se avessi ragione, che altro dovrebbe essere vero di conseguenza?'
+];
+
+const SPUNTI=[
+ 'La libertà è fare quello che si vuole.',
+ 'Copiare a scuola non fa male a nessuno.',
+ 'Una legge ingiusta va comunque rispettata.',
+ 'L\'arte non si può giudicare: è tutta soggettiva.',
+ 'Bisogna sempre dire la verità.'
+];
+
+let detti=[], turni=0, ultimeRegole=[];
+
+const esc = t => String(t).replace(/[<>&]/g,c=>({'<':'&lt;','>':'&gt;','&':'&amp;'}[c]));
+
+/* ── quali regole scattano su questa frase ─────────────────
+   Si prende la prima che non sia già stata usata di recente:
+   incalzare tre volte di fila sullo stesso punto stanca e
+   smette di insegnare qualcosa. */
+function analizza(frase){
+  const scattate=[];
+  for(const r of REGOLE){
+    const m=frase.match(r.re);
+    if(m) scattate.push({r, parola:m[0]});
+  }
+  return scattate;
+}
+
+function scegliDomanda(frase){
+  const scattate=analizza(frase);
+  const fresche=scattate.filter(s=>!ultimeRegole.includes(s.r.k));
+  const pool=fresche.length?fresche:scattate;
+  if(!pool.length){
+    return {testo:RISERVA[turni % RISERVA.length], marca:null};
+  }
+  const scelta=pool[Math.floor(Math.random()*pool.length)];
+  const varianti=scelta.r.dom(scelta.parola.toLowerCase(), frase);
+  ultimeRegole.push(scelta.r.k);
+  if(ultimeRegole.length>2) ultimeRegole.shift();
+  return {testo:varianti[Math.floor(Math.random()*varianti.length)], marca:scelta.r.n};
+}
+
+/* ogni tanto si torna indietro: è l'élenchos, mettere una
+   affermazione accanto a un'altra e chiedere se stiano insieme */
+function confronto(){
+  if(detti.length<3) return null;
+  const i=Math.floor(Math.random()*(detti.length-2));
+  const a=detti[i], b=detti[detti.length-1];
+  if(a===b) return null;
+  return {testo:`Un momento. Prima hai detto: «${a}». Adesso dici: «${b}». Stanno insieme queste due? Se sì, spiegami come; se no, a quale rinunci.`,
+          marca:'Confronto'};
+}
+
+let battute=[];
+function aggiungi(chi,testo,marca){
+  battute.push({chi,testo,marca});
+  disegnaDialogo();
+}
+function disegnaDialogo(){
+  const d=document.getElementById('dialogo');
+  d.innerHTML = battute.length ? battute.map(b=>`
+    <div class="battuta ${b.chi}">
+      <div class="chi">${b.chi==='socrate'?'ΣΩ':'io'}</div>
+      <div class="testo">${esc(b.testo)}${b.marca?`<span class="marca">${b.marca}</span>`:''}</div>
+    </div>`).join('')
+    : '<div class="battuta socrate"><div class="chi">ΣΩ</div><div class="testo">Dimmi una cosa che sostieni. Una frase sola, e che si possa negare.</div></div>';
+  d.scrollTop=d.scrollHeight;
+}
+
+function parla(){
+  const campo=document.getElementById('dico');
+  const frase=campo.value.trim();
+  if(!frase) return;
+  campo.value='';
+  aggiungi('io', frase, null);
+  detti.push(frase);
+  turni++;
+
+  /* ogni quattro turni si rimette in fila quello che si è detto */
+  const c = (turni%4===0) ? confronto() : null;
+  const d = c || scegliDomanda(frase);
+  setTimeout(()=>aggiungi('socrate', d.testo, d.marca), 260);
+}
+
+function spunto(i){
+  document.getElementById('dico').value=SPUNTI[i];
+  parla();
+}
+
+function riepiloga(){
+  const s=document.getElementById('somma');
+  if(!detti.length){
+    s.innerHTML='<div class="riepilogo"><h3>Non hai ancora sostenuto niente</h3>'
+      +'<p>Scrivi una frase e ricomincia da lì.</p></div>';
+    return;
+  }
+  s.innerHTML='<div class="riepilogo"><h3>Che cosa hai sostenuto</h3>'
+    +'<ol>'+detti.map(d=>`<li>${esc(d)}</li>`).join('')+'</ol>'
+    +'<p>Questo è l\'elenco dei tuoi impegni, nell\'ordine in cui li hai presi. '
+    +'Rileggilo tutto insieme: la domanda da farsi non è se ciascuno regga da solo, '
+    +'ma se reggano <em>tutti e ' + detti.length + ' nello stesso momento</em>. '
+    +'Era questo il mestiere di Socrate, e non serviva altro.</p></div>';
+  s.scrollIntoView({behavior:'smooth',block:'nearest'});
+}
+
+function ricomincia(){
+  detti=[]; battute=[]; turni=0; ultimeRegole=[];
+  document.getElementById('somma').innerHTML='';
+  disegnaDialogo();
+}
+
+document.getElementById('spunti').innerHTML = SPUNTI.map((s,i)=>
+  `<button class="mini" onclick="spunto(${i})">${esc(s)}</button>`).join('');
+document.getElementById('regole').innerHTML = REGOLE.map(r=>
+  `<div class="rg"><b>${r.n}</b><p>${r.come}<br><code>${esc(r.spia)}</code></p></div>`).join('');
+disegnaDialogo();
+</script>
+</body>
+</html>
