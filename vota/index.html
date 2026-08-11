@@ -75,6 +75,14 @@
   .puntino:nth-child(3){animation-delay:.4s}
   @keyframes p{0%,60%,100%{opacity:.2;transform:translateY(0)}30%{opacity:1;transform:translateY(-3px)}}
   .err{color:#C0453B;font-size:.92rem;margin-top:.7rem;min-height:1.2rem;font-weight:600}
+
+  /* la fascia che dice a quale squadra si appartiene */
+  #fascia-squadra{position:fixed;left:0;right:0;top:0;z-index:50;
+    padding:.55rem 1rem;text-align:center;font-weight:700;letter-spacing:.14em;
+    text-transform:uppercase;font-size:.72rem;color:#fff}
+  body[data-squadra="rossi"] #fascia-squadra{background:linear-gradient(90deg,#a8322a,#c0453b)}
+  body[data-squadra="blu"]   #fascia-squadra{background:linear-gradient(90deg,#254b78,#3f6d8c)}
+  body[data-squadra] .schermo{padding-top:3.2rem}
 </style>
 </head>
 <body>
@@ -96,6 +104,9 @@ const TINTE = ['#256abf','#c14e20','#127553','#946100','#c23c6d','#5a4bc4'];
 const el = document.getElementById('foglio');
 let codice = (new URLSearchParams(location.search).get('c') || '').trim();
 let domanda = null;         // domanda attualmente proiettata
+/* La squadra viene assegnata dal server, non scelta qui: resta
+   valida per tutta la sessione e non si può cambiare ricaricando. */
+let squadra = sessionStorage.getItem('menti-squadra-'+codice) || null;
 let giaRisposto = false;
 let orologio = null;
 
@@ -268,14 +279,56 @@ function inviaTesto(){
   invia(v);
 }
 
+/* ---------- la squadra ----------
+   Si chiede una volta sola, la prima volta che serve. Il server
+   bilancia i due gruppi: chi ricarica la pagina non cambia colore. */
+async function chiediSquadra(){
+  if(squadra) return squadra;
+  try{
+    const res = await fetch(SB_URL+'/rest/v1/rpc/menti_assegna_squadra', {
+      method:'POST', headers:intest(), body: JSON.stringify({p_codice: codice})
+    });
+    if(!res.ok) return null;
+    const s = await res.json();
+    if(s === 'rossi' || s === 'blu'){
+      squadra = s;
+      try{ sessionStorage.setItem('menti-squadra-'+codice, s); }catch(e){}
+      mostraSquadra();
+      return s;
+    }
+  }catch(e){}
+  return null;
+}
+
+function mostraSquadra(){
+  if(!squadra) return;
+  document.body.setAttribute('data-squadra', squadra);
+  let f = document.getElementById('fascia-squadra');
+  if(!f){
+    f = document.createElement('div');
+    f.id = 'fascia-squadra';
+    document.body.appendChild(f);
+  }
+  f.textContent = squadra === 'rossi' ? 'Squadra rossa' : 'Squadra blu';
+}
+
 async function invia(valore){
   if(!domanda || giaRisposto) return;
   giaRisposto = true;
   try{
-    const res = await fetch(SB_URL+'/rest/v1/rpc/menti_vota', {
-      method:'POST', headers:intest(),
-      body: JSON.stringify({p_codice: codice, p_domanda: domanda.domanda_id, p_valore: valore})
-    });
+    /* se la sessione è a squadre passo dalla funzione nuova,
+       altrimenti resta quella di sempre */
+    const sq = await chiediSquadra();
+    const res = sq
+      ? await fetch(SB_URL+'/rest/v1/rpc/menti_vota_squadra', {
+          method:'POST', headers:intest(),
+          body: JSON.stringify({p_codice: codice, p_domanda: domanda.domanda_id,
+                                p_valore: valore, p_squadra: sq})
+        })
+      : await fetch(SB_URL+'/rest/v1/rpc/menti_vota', {
+          method:'POST', headers:intest(),
+          body: JSON.stringify({p_codice: codice, p_domanda: domanda.domanda_id, p_valore: valore})
+        });
     const ok = res.ok && (await res.json()) === true;
     if(ok){ segnaRisposta(domanda.domanda_id); schermataInviata(); }
     else{
@@ -295,6 +348,7 @@ async function invia(valore){
    pagina bianca non lascia allo studente nemmeno un appiglio. */
 (async function(){
   try{
+    if(squadra) mostraSquadra();
     if(codice) await entraCon(codice);
     else schermataCodice();
   }catch(e){
