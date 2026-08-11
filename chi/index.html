@@ -6,7 +6,7 @@
 <title>Chi sono · Cosa è Idearca — Alessandro Solla</title>
 <meta name="description" content="Alessandro Solla, docente abilitato di Storia e Filosofia (A-19). Che cos'è Idearca: una piattaforma didattica progettata, scritta e mantenuta da me.">
 <link rel="icon" type="image/svg+xml" href="../favicon.svg">
-<link rel="stylesheet" href="../css/stile.css?v=20260811r">
+<link rel="stylesheet" href="../css/stile.css?v=20260811s">
 <style>
 body{background:linear-gradient(180deg,#f5f3ea 0%,#eff2ea 45%,#f5f3eb 100%)}
 /* La pagina era scritta solo per il tema chiaro: al buio il testo
@@ -150,7 +150,7 @@ h3.sotto::before{content:'';width:22px;height:3px;border-radius:2px;
   border:1px solid rgba(192,69,59,.4);background:rgba(192,69,59,.1);color:#c0453b;
   font-size:.7rem;cursor:pointer;line-height:1}
 .tappa-x:hover{background:#c0453b;color:#fff}
-.tappa-aggiungi{list-style:none;position:relative;padding-bottom:.5rem}
+.tappa-aggiungi{list-style:none;position:relative;padding-bottom:1.4rem}
 .tappa-aggiungi::before{display:none}
 .tappa-aggiungi button{font-family:'Jost',sans-serif;font-size:.72rem;letter-spacing:.1em;
   text-transform:uppercase;padding:.55rem 1.1rem;border-radius:100px;cursor:pointer;
@@ -498,7 +498,7 @@ h3.sotto::before{content:'';width:22px;height:3px;border-radius:2px;
 })();
 try{const t=localStorage.getItem('idearca-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}
 </script>
-<script src="../js/numeri.js?v=20260811r" data-base="../"></script>
+<script src="../js/numeri.js?v=20260811s" data-base="../"></script>
 
 <div class="barra-modifica" id="barra-modifica">
   <span class="bm-et">Modalità docente</span>
@@ -582,15 +582,17 @@ function voceHtml(v, modifica){
 }
 
 function disegnaLista(ul, voci, modifica){
-  ul.innerHTML = voci.map(v=>voceHtml(v,modifica)).join('')
-    + (modifica ? '<li class="tappa-aggiungi"><button onclick="aggiungiVoce(this)">+ Aggiungi una voce</button></li>' : '');
+  /* il pulsante sta in cima: le cose nuove sono le piu' recenti e
+     nelle cronologie il piu' recente sta in alto */
+  ul.innerHTML = (modifica ? '<li class="tappa-aggiungi"><button onclick="aggiungiVoce(this)">+ Aggiungi una voce in cima</button></li>' : '')
+    + voci.map(v=>voceHtml(v,modifica)).join('');
   ul.classList.toggle('in-modifica', !!modifica);
 }
 
 function aggiungiVoce(bottone){
   const li=bottone.closest('.tappa-aggiungi');
-  li.insertAdjacentHTML('beforebegin', voceHtml({quando:'2026',titolo:'Nuova voce',testo:'Che cosa hai fatto.'}, true));
-  const nuova=li.previousElementSibling;
+  li.insertAdjacentHTML('afterend', voceHtml({quando:'2026',titolo:'Nuova voce',testo:'Che cosa hai fatto.'}, true));
+  const nuova=li.nextElementSibling;
   nuova.querySelector('b').focus();
   document.getSelection().selectAllChildren(nuova.querySelector('b'));
 }

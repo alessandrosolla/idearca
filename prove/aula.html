@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Strumenti d'aula — Idearca</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Jost',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  background:#faf8f3;color:#1c2b1a;font-weight:300;-webkit-font-smoothing:antialiased}
+.w{max-width:1000px;margin:0 auto;padding:2rem 1.6rem 4rem}
+.k{font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:#8a9e87;font-weight:600}
+h1{font-family:'Cormorant Garamond',Georgia,serif;font-size:2.5rem;font-weight:400;margin:.3rem 0 .5rem}
+.sub{font-size:.92rem;line-height:1.7;color:#5a6b58;max-width:64ch}
+.schede{display:flex;gap:.5rem;margin:1.8rem 0 1.4rem;border-bottom:1px solid rgba(45,90,39,.13)}
+.schede button{font:inherit;font-size:.78rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
+  background:none;border:none;padding:.75rem 1.1rem;cursor:pointer;color:#5a6b58;
+  border-bottom:3px solid transparent;margin-bottom:-1px}
+.schede button.on{color:#1c2b1a;border-bottom-color:#9a7c2e}
+.pannello{display:none}.pannello.on{display:block}
+
+/* ── TIMER ── */
+.orologio{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(5rem,22vw,15rem);
+  line-height:.95;text-align:center;font-weight:600;letter-spacing:-.02em;
+  font-variant-numeric:tabular-nums;color:#2d5a27;margin:1rem 0 .4rem;transition:color .3s}
+.orologio.poco{color:#c79a2e}
+.orologio.finito{color:#c0453b;animation:pulsa 1s ease-in-out infinite}
+@keyframes pulsa{50%{opacity:.35}}
+.barra-tempo{height:10px;border-radius:10px;background:#edf2eb;overflow:hidden;margin-bottom:1.6rem}
+.barra-tempo i{display:block;height:100%;background:linear-gradient(90deg,#9a7c2e,#2d5a27);
+  transition:width 1s linear}
+.riga{display:flex;gap:.6rem;flex-wrap:wrap;justify-content:center;margin-bottom:1rem}
+.b{font:inherit;font-size:.8rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;
+  padding:.75rem 1.4rem;border-radius:100px;cursor:pointer;border:1.5px solid rgba(45,90,39,.28);
+  background:#fff;color:#2d5a27;transition:all .2s}
+.b:hover{border-color:#2d5a27;background:#edf2eb}
+.b.pieno{background:#2d5a27;color:#fff;border-color:#2d5a27}
+.b.pieno:hover{background:#1a3a16}
+.etichetta{font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:#8a9e87;
+  text-align:center;margin-bottom:.5rem;font-weight:600}
+.avviso-suono{text-align:center;font-size:.78rem;color:#5a6b58;margin-top:.8rem}
+
+/* ── ESTRATTORE ── */
+.elenco{width:100%;min-height:11rem;font:inherit;font-size:.92rem;line-height:1.7;
+  padding:.9rem 1rem;border:1px solid rgba(45,90,39,.16);border-radius:12px;background:#fff;resize:vertical}
+.estratto{text-align:center;padding:2.6rem 1rem;border-radius:16px;background:#fff;
+  border:1px solid rgba(45,90,39,.14);margin:1.2rem 0;min-height:11rem;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.6rem}
+.estratto .nome{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(2.2rem,7vw,4.2rem);
+  font-weight:600;line-height:1.05;color:#2d5a27}
+.estratto .nome.gira{opacity:.45}
+.estratto small{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:#8a9e87}
+.gia-usciti{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1rem;justify-content:center}
+.gia-usciti span{font-size:.72rem;padding:.28rem .7rem;border-radius:100px;
+  background:#edf2eb;color:#5a6b58;border:1px solid rgba(45,90,39,.12)}
+.opzione{display:flex;align-items:center;gap:.55rem;font-size:.84rem;color:#5a6b58;justify-content:center;margin-top:.6rem}
+
+/* proiezione: solo il numero, niente altro */
+body.proietta .w>*:not(.pannello),body.proietta .schede,
+body.proietta .pannello:not(.on),body.proietta .nascondi{display:none}
+body.proietta{background:#0f1f10}
+body.proietta .orologio{color:#e8d9a0;font-size:min(38vw,44vh)}
+body.proietta .orologio.poco{color:#e0c470}
+body.proietta .orologio.finito{color:#e08b7e}
+body.proietta .estratto{background:transparent;border:none}
+body.proietta .estratto .nome{color:#e8d9a0;font-size:min(16vw,20vh)}
+body.proietta .estratto small,body.proietta .gia-usciti span{color:#8fa88b}
+body.proietta .barra-tempo{background:rgba(255,255,255,.1)}
+body.proietta .w{padding-top:6vh}
+body.proietta .b{background:rgba(255,255,255,.08);color:#e8eee4;border-color:rgba(255,255,255,.2)}
+body.proietta .b.pieno{background:#c4a44e;color:#12240f;border-color:#c4a44e}
+</style>
+</head>
+<body>
+<div class="w">
+  <div class="k nascondi">Idearca · Prove</div>
+  <h1 class="nascondi">Strumenti d'aula</h1>
+  <p class="sub nascondi">Due cose che servono ogni ora e che di solito si arrangiano
+  col telefono personale: un tempo che tutti vedono, e un sorteggio che nessuno può
+  accusare di essere truccato.</p>
+
+  <div class="schede nascondi">
+    <button class="on" id="s-timer" onclick="scheda('timer')">Timer</button>
+    <button id="s-sorteggio" onclick="scheda('sorteggio')">Sorteggio</button>
+  </div>
+
+  <!-- ══════════ TIMER ══════════ -->
+  <div class="pannello on" id="p-timer">
+    <div class="etichetta nascondi">Quanto dura l'attività</div>
+    <div class="riga nascondi">
+      <button class="b" onclick="imposta(60)">1 min</button>
+      <button class="b" onclick="imposta(180)">3 min</button>
+      <button class="b" onclick="imposta(300)">5 min</button>
+      <button class="b" onclick="imposta(600)">10 min</button>
+      <button class="b" onclick="imposta(900)">15 min</button>
+      <button class="b" onclick="imposta(1200)">20 min</button>
+    </div>
+
+    <div class="orologio" id="orologio">05:00</div>
+    <div class="barra-tempo"><i id="barra" style="width:100%"></i></div>
+
+    <div class="riga">
+      <button class="b pieno" id="via" onclick="viaOStop()">Via</button>
+      <button class="b" onclick="aggiungi(60)">+1 min</button>
+      <button class="b" onclick="azzera()">Azzera</button>
+      <button class="b" onclick="proietta()">Schermo intero</button>
+    </div>
+    <p class="avviso-suono nascondi" id="avviso-suono">Alla fine suona e lampeggia.</p>
+  </div>
+
+  <!-- ══════════ SORTEGGIO ══════════ -->
+  <div class="pannello" id="p-sorteggio">
+    <div class="etichetta nascondi">Un nome per riga</div>
+    <textarea class="elenco nascondi" id="nomi" placeholder="Scrivi qui i nomi della classe, uno per riga.
+Restano salvati su questo computer: la prossima volta li ritrovi."></textarea>
+
+    <div class="estratto">
+      <small id="quanti">nessun nome</small>
+      <div class="nome" id="nome">—</div>
+    </div>
+
+    <div class="riga">
+      <button class="b pieno" onclick="sorteggia()">Sorteggia</button>
+      <button class="b" onclick="ricomincia()">Ricomincia il giro</button>
+      <button class="b" onclick="proietta()">Schermo intero</button>
+    </div>
+    <label class="opzione nascondi">
+      <input type="checkbox" id="senza-ripetizioni" checked onchange="salvaNomi()">
+      Non ripescare chi è già uscito, finché non escono tutti
+    </label>
+    <div class="gia-usciti" id="usciti"></div>
+  </div>
+</div>
+
+<script>
+/* ══════════════════════════════════════════════════════════
+   STRUMENTI D'AULA
+   Nessun database e nessuna registrazione: tutto avviene qui,
+   e l'elenco dei nomi resta su questo computer soltanto — non
+   parte, non viene salvato altrove, non riguarda nessun altro.
+   ══════════════════════════════════════════════════════════ */
+
+/* ── il tempo ────────────────────────────────────────────── */
+let totale=300, restano=300, marcia=null;
+
+function scrivi(){
+  const m=Math.floor(Math.max(0,restano)/60), s=Math.max(0,restano)%60;
+  const o=document.getElementById('orologio');
+  o.textContent=String(m).padStart(2,'0')+':'+String(s).padStart(2,'0');
+  o.classList.toggle('poco', restano<=30 && restano>0);
+  o.classList.toggle('finito', restano<=0);
+  document.getElementById('barra').style.width=(totale?Math.max(0,restano)/totale*100:0)+'%';
+  document.title = marcia ? o.textContent+' — Idearca' : "Strumenti d'aula — Idearca";
+}
+function imposta(sec){ ferma(); totale=sec; restano=sec; scrivi(); }
+function aggiungi(sec){ totale+=sec; restano+=sec; scrivi(); }
+function azzera(){ ferma(); restano=totale; scrivi(); }
+function ferma(){ clearInterval(marcia); marcia=null; document.getElementById('via').textContent='Via'; }
+
+function viaOStop(){
+  if(marcia){ ferma(); scrivi(); return; }
+  if(restano<=0) restano=totale;
+  document.getElementById('via').textContent='Ferma';
+  marcia=setInterval(()=>{
+    restano--; scrivi();
+    if(restano<=0){ ferma(); suona(); }
+  },1000);
+  scrivi();
+}
+
+/* Il suono: tre note generate al volo. Nessun file da scaricare,
+   e funziona anche senza rete. */
+function suona(){
+  try{
+    const ac=new (window.AudioContext||window.webkitAudioContext)();
+    [0,0.28,0.56].forEach((ritardo,i)=>{
+      const o=ac.createOscillator(), g=ac.createGain();
+      o.type='sine'; o.frequency.value=[880,1046,1318][i];
+      g.gain.setValueAtTime(0.0001, ac.currentTime+ritardo);
+      g.gain.exponentialRampToValueAtTime(0.25, ac.currentTime+ritardo+0.02);
+      g.gain.exponentialRampToValueAtTime(0.0001, ac.currentTime+ritardo+0.24);
+      o.connect(g); g.connect(ac.destination);
+      o.start(ac.currentTime+ritardo); o.stop(ac.currentTime+ritardo+0.26);
+    });
+  }catch(e){}
+}
+
+/* ── il sorteggio ────────────────────────────────────────── */
+let usciti=[];
+
+function elenco(){
+  return document.getElementById('nomi').value.split('\n')
+    .map(r=>r.trim()).filter(Boolean);
+}
+function salvaNomi(){
+  try{
+    localStorage.setItem('idearca-nomi', document.getElementById('nomi').value);
+    localStorage.setItem('idearca-nomi-senzarip', document.getElementById('senza-ripetizioni').checked?'1':'0');
+  }catch(e){}
+  aggiornaConto();
+}
+function aggiornaConto(){
+  const n=elenco().length;
+  document.getElementById('quanti').textContent =
+    n ? (usciti.length ? usciti.length+' di '+n+' già usciti' : n+' nomi in gioco') : 'nessun nome';
+  document.getElementById('usciti').innerHTML = usciti.map(u=>'<span>'+u.replace(/[<>&]/g,'')+'</span>').join('');
+}
+
+function sorteggia(){
+  const tutti=elenco();
+  if(!tutti.length){ document.getElementById('nome').textContent='scrivi i nomi'; return; }
+  const senzaRip=document.getElementById('senza-ripetizioni').checked;
+  let candidati = senzaRip ? tutti.filter(n=>!usciti.includes(n)) : tutti;
+  if(!candidati.length){ usciti=[]; candidati=tutti; }
+
+  /* la ruota gira mezzo secondo: il sorteggio si vede accadere,
+     e nessuno può pensare che il nome fosse già deciso */
+  const el=document.getElementById('nome');
+  el.classList.add('gira');
+  let giri=0;
+  const rullo=setInterval(()=>{
+    el.textContent=candidati[Math.floor(Math.random()*candidati.length)];
+    if(++giri>11){
+      clearInterval(rullo);
+      const scelto=candidati[Math.floor(Math.random()*candidati.length)];
+      el.textContent=scelto; el.classList.remove('gira');
+      if(senzaRip && !usciti.includes(scelto)) usciti.push(scelto);
+      aggiornaConto();
+    }
+  },45);
+}
+function ricomincia(){ usciti=[]; document.getElementById('nome').textContent='—'; aggiornaConto(); }
+
+/* ── comuni ─────────────────────────────────────────────── */
+function scheda(quale){
+  ['timer','sorteggio'].forEach(s=>{
+    document.getElementById('p-'+s).classList.toggle('on', s===quale);
+    document.getElementById('s-'+s).classList.toggle('on', s===quale);
+  });
+}
+function proietta(){
+  document.body.classList.toggle('proietta');
+  if(document.body.classList.contains('proietta')){
+    document.documentElement.requestFullscreen?.().catch(()=>{});
+  }else{
+    document.exitFullscreen?.().catch(()=>{});
+  }
+}
+document.addEventListener('keydown',e=>{
+  if(e.key==='Escape'&&document.body.classList.contains('proietta')) proietta();
+  if(e.code==='Space'&&document.getElementById('p-timer').classList.contains('on')
+     && e.target.tagName!=='TEXTAREA'){ e.preventDefault(); viaOStop(); }
+});
+
+/* all'avvio: riprendo i nomi lasciati l'ultima volta */
+(function(){
+  try{
+    const salvati=localStorage.getItem('idearca-nomi');
+    if(salvati) document.getElementById('nomi').value=salvati;
+    if(localStorage.getItem('idearca-nomi-senzarip')==='0')
+      document.getElementById('senza-ripetizioni').checked=false;
+  }catch(e){}
+  document.getElementById('nomi').addEventListener('input', salvaNomi);
+  aggiornaConto(); scrivi();
+})();
+</script>
+</body>
+</html>
