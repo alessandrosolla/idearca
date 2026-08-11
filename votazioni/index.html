@@ -160,6 +160,26 @@
   .attesa-risposte{color:var(--secondario);font-size:1.2rem;text-align:center;line-height:1.7}
   .attesa-risposte .emo{font-size:3rem;display:block;margin-bottom:.5rem}
 
+
+/* il tabellone delle squadre, in basso sopra la proiezione */
+#tabellone{position:fixed;left:0;right:0;bottom:0;z-index:40;display:flex;
+  background:rgba(12,26,14,.94);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);
+  border-top:2px solid rgba(255,255,255,.12)}
+.tab-sq{flex:1;padding:.9rem 1.4rem;display:grid;
+  grid-template-columns:auto auto 1fr;grid-template-rows:auto auto;
+  gap:.2rem .9rem;align-items:center;transition:background .4s}
+.tab-sq.avanti{background:rgba(255,255,255,.07)}
+.tab-nome{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700}
+.tab-rossi .tab-nome{color:#e8837a}
+.tab-blu .tab-nome{color:#8fb8d8}
+.tab-punti{grid-row:1/3;font-family:'Cormorant Garamond',Georgia,serif;
+  font-size:2.6rem;font-weight:600;line-height:1;color:#f4f1e8}
+.tab-barra{grid-column:3;grid-row:1;height:8px;border-radius:8px;
+  background:rgba(255,255,255,.12);overflow:hidden}
+.tab-barra i{display:block;height:100%;border-radius:8px;transition:width .6s}
+.tab-rossi .tab-barra i{background:linear-gradient(90deg,#a8322a,#e8837a)}
+.tab-blu   .tab-barra i{background:linear-gradient(90deg,#254b78,#8fb8d8)}
+.tab-det{grid-column:3;grid-row:2;font-size:.72rem;color:rgba(230,238,226,.6)}
 </style>
 </head>
 <body>
@@ -201,7 +221,8 @@
   </div>
 </div>
 
-<script src="qr.js"></script>
+<script src="qr.js">
+</script>
 <script src="banca.js"></script>
 <script>
 /* ══════════════════════════════════════════════════════════
@@ -319,7 +340,11 @@ function disegnaRegia(){
       <div class="kicker">Idearca · Didattica</div><h1>Votazioni</h1>
       <div class="vuoto"><strong>Nessuna votazione aperta.</strong><br>
         Creane una: verrà generato un codice a sei cifre che gli studenti digitano dal telefono.<br><br>
-        <button class="primario" onclick="creaSessione()">Crea una votazione</button></div>`;
+        <button class="primario" onclick="creaSessione()">Crea una votazione</button>
+        <label style="display:flex;align-items:center;gap:.5rem;margin-top:.9rem;font-size:.86rem;color:#5a6b58;justify-content:center">
+          <input type="checkbox" id="a-squadre" onchange="cambiaModalita()">
+          Sfida a squadre: gli studenti vengono divisi a sorte in rossi e blu
+        </label></div>`;
     return;
   }
   r.innerHTML = `
@@ -396,13 +421,19 @@ function mostraOpzioni(){
 }
 
 /* ---------- azioni ---------- */
+/* Se la votazione e' una sfida, gli studenti vengono divisi a sorte
+   quando entrano e alla lavagna compare il tabellone. */
+let aSquadre = false;
+function cambiaModalita(){
+  aSquadre = document.getElementById('a-squadre')?.checked || false;
+}
 async function creaSessione(){
   for(let tentativo=0; tentativo<6; tentativo++){
     const codice = String(Math.floor(100000 + Math.random()*900000));
     const res = await fetch(SB_URL+'/rest/v1/menti_sessioni', {
       method:'POST',
       headers:intest({'Content-Type':'application/json','Prefer':'return=representation'}),
-      body: JSON.stringify({codice, aperta:true})
+      body: JSON.stringify({codice, aperta:true, a_squadre: !!aSquadre})
     });
     if(res.ok){ sessione = (await res.json())[0]; domande=[]; risposte={}; disegnaRegia(); return; }
     if(res.status !== 409) break;   // 409 = codice già usato: si riprova
@@ -493,10 +524,20 @@ async function importaBanca(){
   const mescola = a => { const c = a.slice();
     for(let j=c.length-1;j>0;j--){ const k2 = Math.floor(Math.random()*(j+1)); [c[j],c[k2]]=[c[k2],c[j]]; }
     return c; };
-  const corpo = b.domande.map((d,k)=>({
-    sessione_id: sessione.id, tipo: d.tipo, testo: d.testo,
-    opzioni: d.opzioni ? mescola(d.opzioni) : [], posizione: domande.length + k + 1
-  }));
+  /* Dopo il mescolamento si annota DOVE e' finita la risposta
+     giusta: senza questo il database non potrebbe assegnare punti,
+     perche' la risposta corretta la conosce solo questo file. */
+  const corpo = b.domande.map((d,k)=>{
+    let opz = [], giusta = null;
+    if(d.opzioni && d.opzioni.length){
+      const corretta = d.opzioni[typeof d.giusta === 'number' ? d.giusta : 0];
+      opz = mescola(d.opzioni);
+      giusta = opz.indexOf(corretta);
+      if(giusta < 0) giusta = null;
+    }
+    return {sessione_id: sessione.id, tipo: d.tipo, testo: d.testo,
+            opzioni: opz, giusta, posizione: domande.length + k + 1};
+  });
   const res = await fetch(SB_URL+'/rest/v1/menti_domande', {
     method:'POST', headers:intest({'Content-Type':'application/json','Prefer':'return=minimal'}),
     body: JSON.stringify(corpo)
@@ -525,7 +566,7 @@ async function proietta(){
   catch(e){ document.getElementById('p-url').textContent += '  (QR non disponibile)'; }
   aggiornaProiezione();
   if(orologio) clearInterval(orologio);
-  orologio = setInterval(async ()=>{ await assicuraToken(); await caricaRisposte(); aggiornaProiezione(); }, 2500);
+  orologio = setInterval(async ()=>{ await assicuraToken(); await caricaRisposte(); aggiornaProiezione(); aggiornaTabellone(); }, 2500);
   const el = document.documentElement;
   const chiedi = el.requestFullscreen || el.webkitRequestFullscreen;
   if(chiedi) Promise.resolve(chiedi.call(el)).catch(()=>{});
@@ -679,6 +720,49 @@ document.addEventListener('keydown', e=>{
 });
 
 avvia();
+
+/* ══════════════════════════════════════════════════════════
+   IL TABELLONE
+   I punti li conta il server: qui si disegnano soltanto. Si
+   aggiorna insieme alle risposte, ogni volta che si ricarica.
+   ══════════════════════════════════════════════════════════ */
+async function aggiornaTabellone(){
+  if(!sessione || !sessione.a_squadre) return;
+  try{
+    const res = await fetch(SB_URL+'/rest/v1/rpc/menti_punteggio', {
+      method:'POST', headers:intest({'Content-Type':'application/json'}),
+      body: JSON.stringify({p_codice: sessione.codice})
+    });
+    if(!res.ok) return;
+    disegnaTabellone(await res.json());
+  }catch(e){}
+}
+
+function disegnaTabellone(p){
+  if(!p) return;
+  let box = document.getElementById('tabellone');
+  if(!box){
+    box = document.createElement('div');
+    box.id = 'tabellone';
+    document.body.appendChild(box);
+  }
+  const r = p.rossi || {punti:0,giuste:0,risposte:0};
+  const b = p.blu   || {punti:0,giuste:0,risposte:0};
+  const massimo = Math.max(1, r.punti, b.punti);
+  const guida = r.punti === b.punti ? 'pari' : (r.punti > b.punti ? 'rossi' : 'blu');
+  box.innerHTML =
+    '<div class="tab-sq tab-rossi' + (guida==='rossi'?' avanti':'') + '">'
+    + '<span class="tab-nome">Rossi</span>'
+    + '<span class="tab-punti">' + r.punti + '</span>'
+    + '<span class="tab-barra"><i style="width:' + Math.round(r.punti/massimo*100) + '%"></i></span>'
+    + '<span class="tab-det">' + r.giuste + ' giuste su ' + r.risposte + '</span></div>'
+    + '<div class="tab-sq tab-blu' + (guida==='blu'?' avanti':'') + '">'
+    + '<span class="tab-nome">Blu</span>'
+    + '<span class="tab-punti">' + b.punti + '</span>'
+    + '<span class="tab-barra"><i style="width:' + Math.round(b.punti/massimo*100) + '%"></i></span>'
+    + '<span class="tab-det">' + b.giuste + ' giuste su ' + b.risposte + '</span></div>';
+}
+
 </script>
 </body>
 </html>
