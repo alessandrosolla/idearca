@@ -6,7 +6,7 @@
 <title>Chi sono · Cosa è Idearca — Alessandro Solla</title>
 <meta name="description" content="Alessandro Solla, docente abilitato di Storia e Filosofia (A-19). Che cos'è Idearca: una piattaforma didattica progettata, scritta e mantenuta da me.">
 <link rel="icon" type="image/svg+xml" href="../favicon.svg">
-<link rel="stylesheet" href="../css/stile.css?v=20260811p">
+<link rel="stylesheet" href="../css/stile.css?v=20260811q">
 <style>
 body{background:linear-gradient(180deg,#f5f3ea 0%,#eff2ea 45%,#f5f3eb 100%)}
 /* La pagina era scritta solo per il tema chiaro: al buio il testo
@@ -485,7 +485,7 @@ h3.sotto::before{content:'';width:22px;height:3px;border-radius:2px;
 })();
 try{const t=localStorage.getItem('idearca-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}
 </script>
-<script src="../js/numeri.js?v=20260811p" data-base="../"></script>
+<script src="../js/numeri.js?v=20260811q" data-base="../"></script>
 
 <div class="barra-modifica" id="barra-modifica">
   <span class="bm-et">Modalità docente</span>
@@ -524,7 +524,20 @@ async function caricaProfilo(){
 caricaProfilo();
 
 /* la barra compare solo a chi ha una sessione da docente aperta */
-if(token()) document.getElementById('barra-modifica').classList.add('on');
+if(token()){
+  document.getElementById('barra-modifica').classList.add('on');
+}else{
+  /* se qualcuno arriva qui da un'altra scheda la sessione non c'e':
+     meglio dirlo che lasciarlo cercare un pulsante che non esiste */
+  const q=new URLSearchParams(location.search);
+  if(q.get('modifica')==='1'){
+    const b=document.getElementById('barra-modifica');
+    b.classList.add('on');
+    b.innerHTML='<span class="bm-et">Per modificare</span>'
+      + '<span class="bm-esito">Entra come docente dalla home, poi torna qui '
+      + 'dalla stessa scheda con il pulsante «Modifica Chi sono».</span>';
+  }
+}
 
 function campi(){ return [...document.querySelectorAll('[data-campo]')]; }
 
