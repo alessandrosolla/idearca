@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Glossario ipertestuale — Idearca</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Jost',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  background:#faf8f3;color:#1c2b1a;font-weight:300;-webkit-font-smoothing:antialiased}
+.w{max-width:1000px;margin:0 auto;padding:2rem 1.5rem 4rem}
+.k{font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:#8a9e87;font-weight:600}
+h1{font-family:'Cormorant Garamond',Georgia,serif;font-size:2.4rem;font-weight:400;margin:.3rem 0 .5rem}
+.sub{font-size:.92rem;line-height:1.7;color:#5a6b58;max-width:64ch}
+.et{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:#9a7c2e;
+  font-weight:700;margin:1.7rem 0 .7rem;display:flex;align-items:center;gap:.6rem}
+.et::after{content:'';flex:1;height:1px;background:rgba(45,90,39,.13)}
+
+#cerca{width:100%;font:inherit;font-size:1rem;padding:.75rem 1rem;border-radius:100px;
+  border:1.5px solid rgba(45,90,39,.18);background:#fff;color:#1c2b1a;outline:none;font-weight:400}
+#cerca:focus{border-color:#2d5a27}
+
+.impianto{display:grid;grid-template-columns:250px 1fr;gap:1.1rem;margin-top:1rem;align-items:start}
+.indice{border:1px solid rgba(45,90,39,.13);border-radius:12px;background:#fff;
+  max-height:74vh;overflow-y:auto;padding:.45rem}
+.gruppo{font-size:.58rem;letter-spacing:.16em;text-transform:uppercase;color:#9a7c2e;
+  font-weight:700;padding:.6rem .7rem .3rem}
+.voce-i{display:block;width:100%;text-align:left;font:inherit;font-size:.84rem;
+  padding:.4rem .7rem;border:none;background:none;color:#3d4a3b;cursor:pointer;border-radius:7px;
+  border-left:2px solid transparent}
+.voce-i:hover{background:rgba(45,90,39,.06)}
+.voce-i.attiva{background:rgba(45,90,39,.1);color:#2d5a27;font-weight:600;border-left-color:#2d5a27}
+.voce-i small{display:block;font-size:.68rem;color:#a8b3a6;font-weight:400}
+
+.scheda{border:1px solid rgba(45,90,39,.14);border-radius:14px;background:#fff;padding:1.4rem 1.6rem;
+  border-top:3px solid #9a7c2e}
+.lemma{font-family:'Cormorant Garamond',Georgia,serif;font-size:2.1rem;font-weight:600;line-height:1.1}
+.orig{font-size:.86rem;color:#8a6a1e;margin:.15rem 0 .1rem;font-weight:500}
+.lett{font-size:.78rem;color:#8a9e87;font-style:italic;margin-bottom:.9rem}
+.def{font-size:.98rem;line-height:1.8;color:#2a352a}
+.def em{font-style:italic;color:#5a6b58}
+
+a.rim{color:#2d5a27;text-decoration:none;border-bottom:1.5px dotted rgba(45,90,39,.45);
+  cursor:pointer;font-weight:400;padding-bottom:.05rem}
+a.rim:hover{background:rgba(45,90,39,.09);border-bottom-style:solid}
+
+.luoghi{margin-top:1.1rem;padding-top:.9rem;border-top:1px solid rgba(45,90,39,.12)}
+.lu{display:flex;gap:.8rem;padding:.6rem 0;border-bottom:1px dashed rgba(45,90,39,.12)}
+.lu:last-child{border-bottom:none}
+.lu-chi{flex:none;width:135px}
+.lu-chi b{display:block;font-size:.84rem;font-weight:600;color:#1c2b1a}
+.lu-chi span{display:block;font-size:.7rem;color:#8a9e87;line-height:1.4;margin-top:.1rem}
+.lu-cosa{flex:1;font-size:.85rem;line-height:1.65;color:#3d4a3b}
+.lu-cosa q{font-family:'Cormorant Garamond',Georgia,serif;font-size:.98rem;color:#2d5a27;
+  font-style:italic;display:block;margin-bottom:.25rem}
+.lu-cosa q::before{content:'«'}.lu-cosa q::after{content:'»'}
+
+.vicini{margin-top:1rem;padding-top:.85rem;border-top:1px solid rgba(45,90,39,.12);
+  display:flex;gap:.4rem;flex-wrap:wrap;align-items:center}
+.vicini b{font-size:.58rem;letter-spacing:.14em;text-transform:uppercase;color:#9a7c2e;
+  font-weight:700;margin-right:.2rem}
+.vic{font:inherit;font-size:.75rem;padding:.32rem .8rem;border-radius:100px;cursor:pointer;
+  border:1px solid rgba(45,90,39,.2);background:#fff;color:#2d5a27;transition:all .16s}
+.vic:hover{background:#2d5a27;color:#fff;border-color:#2d5a27}
+
+.briciole{display:flex;gap:.35rem;flex-wrap:wrap;align-items:center;margin-bottom:.8rem;
+  font-size:.72rem;color:#8a9e87;min-height:1.2rem}
+.briciole button{font:inherit;font-size:.72rem;border:none;background:none;color:#8a9e87;
+  cursor:pointer;padding:.1rem .3rem;border-radius:5px}
+.briciole button:hover{background:rgba(45,90,39,.07);color:#2d5a27}
+.vuoto{color:#b3bdb1;font-size:.9rem;padding:2rem 0;text-align:center}
+@media(max-width:780px){
+  .w{padding:1.4rem 1rem 3rem}h1{font-size:1.9rem}
+  .impianto{grid-template-columns:1fr}
+  .indice{max-height:230px}
+  .scheda{padding:1.1rem 1.15rem}
+  .lu{flex-direction:column;gap:.2rem}.lu-chi{width:auto}
+}
+</style>
+</head>
+<body>
+<div class="w">
+  <div class="k">Idearca · Prove</div>
+  <h1>Glossario ipertestuale</h1>
+  <p class="sub">Le parole della filosofia non si spiegano una per volta: si spiegano
+  l'una con l'altra. Qui ogni definizione <strong>rimanda alle altre</strong>, e sotto
+  stanno i luoghi dei testi in cui la parola compare davvero — perché una definizione
+  senza il punto in cui è stata scritta è un'etichetta.</p>
+
+  <div class="et">Cerca</div>
+  <input id="cerca" placeholder="Scrivi una parola — anche il greco: ousia, logos, aretè…"
+    oninput="disegnaIndice()">
+
+  <div class="impianto">
+    <div class="indice" id="indice"></div>
+    <div>
+      <div class="briciole" id="briciole"></div>
+      <div class="scheda" id="scheda"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ══════════════════════════════════════════════════════════
+   IL GLOSSARIO IPERTESTUALE
+   La regola che tiene insieme tutto: nessuna definizione può
+   spiegare una parola usandone una che il glossario non abbia.
+   Ogni {rimando} fra graffe è un termine di questo elenco, e
+   all'avvio si controlla che esista davvero — se qualcuno
+   scrive un rinvio a vuoto, la pagina lo dice invece di
+   mostrare un link morto.
+   ══════════════════════════════════════════════════════════ */
+
+const T={
+'arche':{l:'Archè', o:'ἀρχή', lt:'principio, inizio, comando',
+ alt:'arche archè', area:'Presocratici',
+ d:'Il {principio} da cui tutto viene e in cui tutto torna. La domanda dei primi filosofi non è «chi ha fatto il mondo» ma «di che cosa è fatto»: cercano un elemento che resti mentre tutto il resto cambia. Che sia acqua, aria o {apeiron}, la mossa è la stessa — spiegare il molteplice con l\'uno, senza chiamare in causa gli dèi.',
+ luoghi:[
+  {chi:'Talete', op:'in Aristotele, Metafisica A 3', q:'Il principio di tutte le cose è l\'acqua',
+   c:'La prima proposizione filosofica che ci sia stata tramandata. Non importa che sia sbagliata: importa che sia una risposta che si può discutere.'},
+  {chi:'Anassimandro', op:'fr. 1 DK', q:'Donde le cose hanno origine, là hanno anche la dissoluzione',
+   c:'L\'unico frammento che ci resta, ed è già una legge di compensazione: le cose si pagano l\'un l\'altra la pena dell\'ingiustizia.'},
+  {chi:'Eraclito', op:'fr. 30 DK', q:'Questo mondo nessuno degli dèi né degli uomini lo fece',
+   c:'Il principio non è una cosa ma una misura: fuoco che si accende e si spegne secondo {logos}.'}],
+ vicini:['apeiron','logos','physis','principio']},
+
+'apeiron':{l:'Àpeiron', o:'ἄπειρον', lt:'senza limite, indeterminato',
+ alt:'apeiron', area:'Presocratici',
+ d:'L\'{arche} secondo Anassimandro: non uno degli elementi, ma qualcosa di indeterminato da cui gli elementi si separano. Il ragionamento è fine — se il principio fosse acqua, il fuoco non potrebbe esistere, perché l\'acqua lo spegnerebbe. Dunque il principio non può essere nessuna delle cose che genera.',
+ luoghi:[
+  {chi:'Anassimandro', op:'in Simplicio, Fisica 24, 13', q:'Principio degli esseri è l\'infinito',
+   c:'Il primo concetto filosofico che non abbia un corrispettivo visibile: si arriva all\'apeiron solo per argomento, non guardando.'}],
+ vicini:['arche','physis','principio']},
+
+'logos':{l:'Logos', o:'λόγος', lt:'parola, discorso, ragione, rapporto',
+ alt:'logos', area:'Presocratici · Stoicismo',
+ d:'Una parola che tiene insieme il dire e il calcolare: è insieme il discorso, la ragione che vi si esprime e la proporzione fra le cose. In Eraclito è la legge secondo cui gli opposti si tengono; negli stoici è la ragione che percorre il mondo; nel Vangelo di Giovanni diventa il Verbo. Non è {doxa}: il logos è comune, l\'opinione è privata.',
+ luoghi:[
+  {chi:'Eraclito', op:'fr. 2 DK', q:'Il logos è comune, ma i più vivono come se avessero un pensiero proprio',
+   c:'La legge è pubblica, e chi dorme si costruisce un mondo suo. Il rimprovero non è all\'ignoranza ma alla distrazione.'},
+  {chi:'Eraclito', op:'fr. 50 DK', q:'Non me, ma il logos avendo ascoltato, è saggio convenire che tutto è uno',
+   c:'Il filosofo si toglie di mezzo: non chiede di essere creduto, chiede che si ascolti la cosa.'},
+  {chi:'Marco Aurelio', op:'Colloqui con se stesso, IV 4', q:'',
+   c:'Se l\'intelligenza è comune, comune è anche la ragione: e allora siamo cittadini di una stessa città.'}],
+ vicini:['arche','doxa','dialettica','physis']},
+
+'physis':{l:'Physis', o:'φύσις', lt:'natura, ciò che cresce da sé',
+ alt:'physis fisis nomos', area:'Presocratici · Sofisti',
+ d:'La natura intesa non come paesaggio ma come <em>modo di venire alla luce</em>: physis è ciò che ha in sé il principio del proprio movimento. I sofisti la oppongono al <em>nomos</em>, la legge posta dagli uomini, e da quella coppia nasce la domanda politica: le nostre regole sono naturali o convenzionali? Se sono convenzionali, si possono cambiare.',
+ luoghi:[
+  {chi:'Eraclito', op:'fr. 123 DK', q:'La natura ama nascondersi',
+   c:'Non si dà da vedere: va cercata sotto ciò che appare.'},
+  {chi:'Antifonte', op:'Sulla verità', q:'',
+   c:'Le prescrizioni delle leggi sono aggiunte, quelle della natura necessarie: violando le prime si sfugge alla pena se nessuno vede, violando le seconde no.'},
+  {chi:'Aristotele', op:'Fisica II 1, 192b', q:'La natura è principio e causa del muoversi e dello stare fermo',
+   c:'Definizione che dura duemila anni: naturale è ciò che si muove da sé, artificiale ciò che è mosso.'}],
+ vicini:['arche','logos','sostanza','forma']},
+
+'doxa':{l:'Doxa', o:'δόξα', lt:'opinione, apparenza, ciò che pare',
+ alt:'doxa', area:'Parmenide · Platone',
+ d:'L\'opinione: quello che pare a ciascuno. Per Parmenide è la via sbagliata, opposta alla verità. Per Platone è più interessante — sta <em>in mezzo</em> fra sapere e ignoranza, e può anche essere vera senza per questo essere {episteme}: le manca il discorso che la giustifica. Un\'opinione vera è come una statua di Dedalo, che se non la si lega scappa via.',
+ luoghi:[
+  {chi:'Parmenide', op:'fr. 1 DK', q:'Le opinioni dei mortali, in cui non c\'è vera certezza',
+   c:'La dea presenta due vie e ne raccomanda una sola.'},
+  {chi:'Platone', op:'Menone, 97e-98a', q:'',
+   c:'Le opinioni vere finché restano al loro posto sono una bella cosa; ma non vogliono restarci a lungo, e scappano dall\'anima dell\'uomo, sicché non valgono molto finché non le si leghi con un ragionamento.'},
+  {chi:'Platone', op:'Repubblica V, 478d', q:'',
+   c:'Chi ama gli spettacoli ha opinione, non conoscenza: si diletta delle molte cose belle e non sopporta chi gli dica che il bello è uno.'}],
+ vicini:['episteme','idea','dialettica']},
+
+'episteme':{l:'Epistème', o:'ἐπιστήμη', lt:'scienza, sapere fondato',
+ alt:'episteme epistème', area:'Platone · Aristotele',
+ d:'Il sapere che sa anche <em>perché</em>. Si distingue dalla {doxa} non perché sia più sicuro di fatto, ma perché sa rendere ragione di sé. Per Aristotele si ha scienza di una cosa quando se ne conosce la causa e si sa che non può essere altrimenti: da qui l\'idea che la scienza riguardi l\'{universale}, mai il singolo caso.',
+ luoghi:[
+  {chi:'Platone', op:'Teeteto, 201c-210b', q:'',
+   c:'Tre definizioni provate e tre fallite: opinione vera accompagnata da discorso resta la più promettente, e il dialogo si chiude senza conclusione.'},
+  {chi:'Aristotele', op:'Analitici secondi I 2, 71b', q:'Crediamo di conoscere quando conosciamo la causa per cui la cosa è',
+   c:'Sapere che è non basta: bisogna sapere perché, e che non poteva andare diversamente.'}],
+ vicini:['doxa','universale','aporia','dialettica']},
+
+'idea':{l:'Idea', o:'ἰδέα / εἶδος', lt:'aspetto, figura, ciò che si vede',
+ alt:'idea eidos', area:'Platone',
+ d:'La parola greca vuol dire <em>aspetto visibile</em>, ed è ironico: l\'idea platonica è precisamente ciò che gli occhi non vedono. È il modello unico ed eterno di cui le cose sensibili sono copie imperfette. Non sta nella mente — sta fuori, e la mente la raggiunge. Aristotele la contesterà proprio qui: separarla non spiega nulla, {sostanza} è questo cavallo, non la cavallinità.',
+ luoghi:[
+  {chi:'Platone', op:'Fedone, 100c', q:'',
+   c:'Se qualcosa è bello oltre al bello in sé, non è bello per altra ragione se non perché partecipa di quel bello.'},
+  {chi:'Platone', op:'Repubblica VII, 514a-517a', q:'',
+   c:'La caverna: i prigionieri prendono le ombre per le cose. Chi esce resta accecato, e tornando dentro fa ridere — o lo uccidono.'},
+  {chi:'Aristotele', op:'Metafisica A 9, 990b', q:'',
+   c:'Le idee raddoppiano il numero delle cose da spiegare: è come se uno, dovendo contare pochi oggetti, credesse di riuscirci meglio dopo averli moltiplicati.'}],
+ vicini:['doxa','sostanza','universale','forma']},
+
+'maieutica':{l:'Maieutica', o:'μαιευτική', lt:'arte della levatrice',
+ alt:'maieutica', area:'Socrate',
+ d:'Il metodo di Socrate: non insegnare, ma far partorire. Chi interroga non mette dentro niente — tira fuori quello che l\'altro già portava senza saperlo, e insieme lo aiuta a riconoscere quando ciò che ha partorito è aria. Precede l\'{aporia}: prima si demolisce la falsa sicurezza, poi si cerca.',
+ luoghi:[
+  {chi:'Platone', op:'Teeteto, 149a-151d', q:'',
+   c:'Socrate figlio di levatrice: assiste anime invece che corpi, e la sua arte più grande è distinguere il parto vero dal fantasma.'},
+  {chi:'Platone', op:'Menone, 82b-85b', q:'',
+   c:'Lo schiavo che non ha mai studiato geometria arriva da solo a raddoppiare il quadrato: guidato da domande, mai da risposte.'}],
+ vicini:['aporia','dialettica','doxa']},
+
+'aporia':{l:'Aporìa', o:'ἀπορία', lt:'senza via d\'uscita, strada che non passa',
+ alt:'aporia aporìa', area:'Socrate · Aristotele',
+ d:'Il vicolo cieco in cui finiscono molti dialoghi socratici: si scopre di non sapere quello che si credeva di sapere. Non è un fallimento — è il risultato. Chi crede di sapere non cerca; chi si accorge di non sapere comincia. In Aristotele diventa metodo: si espongono prima le difficoltà, poi si scioglie.',
+ luoghi:[
+  {chi:'Platone', op:'Menone, 80a-b', q:'',
+   c:'Menone paragona Socrate alla torpedine marina, che intorpidisce chi la tocca: «mi hai stregato, e ora non so più che cosa sia la virtù, io che ne ho parlato mille volte».'},
+  {chi:'Aristotele', op:'Metafisica B 1, 995a', q:'',
+   c:'Chi vuole sciogliere deve prima aver ben stretto il nodo: chi cerca senza aver percorso le difficoltà non sa nemmeno dove andare.'}],
+ vicini:['maieutica','dialettica','doxa']},
+
+'dialettica':{l:'Dialettica', o:'διαλεκτική', lt:'arte del discutere',
+ alt:'dialettica dialektike', area:'Platone · Aristotele · Hegel',
+ d:'La parola cambia mestiere tre volte. In Platone è la scienza suprema, che sale dalle ipotesi al principio e divide i generi secondo le loro giunture naturali. In Aristotele scende di grado: ragionare da premesse probabili, non necessarie — utile ma non {episteme}. In Hegel diventa il movimento delle cose stesse, per cui ogni posizione genera il proprio contrario e si risolve in un terzo che li conserva entrambi.',
+ luoghi:[
+  {chi:'Platone', op:'Repubblica VII, 533c', q:'',
+   c:'Solo il metodo dialettico procede eliminando le ipotesi fino al principio stesso, per rendere sicuro il risultato.'},
+  {chi:'Aristotele', op:'Topici I 1, 100a', q:'',
+   c:'Dialettico è il ragionamento che parte da premesse fondate sull\'opinione: da ciò che appare a tutti, o ai più, o ai sapienti.'},
+  {chi:'Hegel', op:'Enciclopedia, § 81', q:'',
+   c:'La dialettica è il trapassare di ogni determinazione finita nel proprio opposto: non un procedimento che si applica alle cose, ma il modo in cui le cose vanno.'}],
+ vicini:['aporia','maieutica','episteme','aufhebung']},
+
+'sostanza':{l:'Sostanza', o:'οὐσία / substantia', lt:'ciò che sta sotto',
+ alt:'sostanza ousia usia substantia', area:'Aristotele · Cartesio · Spinoza',
+ d:'Ciò che sta per sé, mentre tutto il resto sta in altro. Per Aristotele sostanza prima è l\'individuo concreto — questo uomo, questo cavallo — {sinolo} di {forma} e materia. Cartesio la ridefinisce come ciò che per esistere non ha bisogno d\'altro, e ne ricava due sostanze incomunicanti; Spinoza applica la stessa definizione fino in fondo e ne ricava una sola. Hume dirà che non c\'è affatto, e Kant che è una {categoria}.',
+ luoghi:[
+  {chi:'Aristotele', op:'Categorie 5, 2a', q:'',
+   c:'Sostanza in senso proprio e primo è ciò che non si dice di un soggetto né è in un soggetto: per esempio, questo uomo determinato.'},
+  {chi:'Cartesio', op:'Principi I 51', q:'',
+   c:'Per sostanza non possiamo intendere altro che una cosa che esiste in modo da non aver bisogno di nessun\'altra per esistere.'},
+  {chi:'Spinoza', op:'Etica I, prop. 14', q:'',
+   c:'Oltre Dio non può darsi né concepirsi alcuna sostanza. La coerenza con la definizione cartesiana porta dove Cartesio non voleva.'},
+  {chi:'Hegel', op:'Fenomenologia, Prefazione', q:'',
+   c:'Il vero va inteso non come sostanza ma altrettanto come soggetto: la parola finisce a significare il contrario di ciò da cui era partita.'}],
+ vicini:['sinolo','forma','essenza','categoria','universale']},
+
+'sinolo':{l:'Sìnolo', o:'σύνολον', lt:'il tutto insieme',
+ alt:'sinolo synolon', area:'Aristotele',
+ d:'L\'individuo concreto come unione inseparabile di {forma} e materia. Non è un pezzo più un altro pezzo: la forma non è aggiunta alla materia, è il suo essere così. Chiedere se siano una cosa sola, dice Aristotele, è come chiedere se lo siano la cera e la sua impronta.',
+ luoghi:[
+  {chi:'Aristotele', op:'Metafisica Z 10-11', q:'',
+   c:'Il sinolo si genera e si corrompe; la forma no, perché non viene prodotta ma è ciò che si trasmette alla materia.'},
+  {chi:'Aristotele', op:'De anima II 1, 412b', q:'',
+   c:'Non si deve cercare se anima e corpo siano una cosa sola, come non lo si cerca per la cera e l\'impronta.'}],
+ vicini:['sostanza','forma','anima','potenza']},
+
+'forma':{l:'Forma e materia', o:'μορφή / ὕλη', lt:'figura / legname, materiale',
+ alt:'forma materia morphe hyle ile', area:'Aristotele',
+ d:'La coppia con cui Aristotele spiega ogni cosa senza doverla separare dal mondo, come faceva l\'{idea} platonica. La materia è ciò di cui una cosa è fatta, la forma è ciò che la fa essere quella cosa. La statua non è il bronzo, e non è nemmeno una figura che stia da un\'altra parte: è bronzo <em>informato</em>. Materia sta alla forma come {potenza} sta ad atto.',
+ luoghi:[
+  {chi:'Aristotele', op:'Fisica II 3, 194b', q:'',
+   c:'In un senso si dice causa ciò di cui una cosa è fatta e che permane: il bronzo della statua. In un altro senso, la forma e il modello.'},
+  {chi:'Aristotele', op:'Metafisica H 6, 1045b', q:'',
+   c:'La materia prossima e la forma sono la stessa cosa: l\'una in potenza, l\'altra in atto. Non serve nulla che le leghi.'}],
+ vicini:['sinolo','sostanza','potenza','idea','anima']},
+
+'potenza':{l:'Potenza e atto', o:'δύναμις / ἐνέργεια', lt:'capacità / essere all\'opera',
+ alt:'potenza atto dynamis energeia dinamis', area:'Aristotele',
+ d:'La soluzione di Aristotele al problema che aveva bloccato Parmenide: come può il non essere diventare essere? Distinguendo. Il seme non è la quercia in atto, ma non è nemmeno il nulla: è quercia in potenza. Il divenire smette di essere una contraddizione e diventa il passaggio ordinato dall\'una all\'altra. L\'atto è prima della potenza per {sostanza}, anche se la potenza viene prima nel tempo.',
+ luoghi:[
+  {chi:'Aristotele', op:'Metafisica Θ 8, 1049b', q:'',
+   c:'L\'atto è anteriore alla potenza: perché il seme diventi uomo occorre già un uomo.'},
+  {chi:'Aristotele', op:'De anima II 1, 412a', q:'',
+   c:'L\'anima è atto primo di un corpo naturale che ha la vita in potenza: primo, come la scienza in chi dorme.'}],
+ vicini:['forma','sinolo','anima','sostanza']},
+
+'anima':{l:'Anima', o:'ψυχή / anima', lt:'soffio, respiro',
+ alt:'anima psyche psiche', area:'Platone · Aristotele · Cartesio',
+ d:'Ciò per cui un corpo è vivo. Per Platone è una {sostanza} a sé, immortale, che nel corpo sta come in un carcere; per Aristotele è la {forma} del corpo vivente, e come tale non sopravvive. Il cristianesimo deve tenere insieme le due esigenze; Cartesio la rifà sostanza separata e resta con il problema di come possa muovere un braccio.',
+ luoghi:[
+  {chi:'Platone', op:'Fedone, 64a', q:'',
+   c:'Chi filosofa davvero non si occupa d\'altro che di morire ed essere morto: la filosofia è esercizio di separazione.'},
+  {chi:'Aristotele', op:'De anima II 1, 412a', q:'L\'anima è atto primo di un corpo naturale che ha la vita in potenza',
+   c:'Non una cosa dentro un\'altra cosa: la vista sta all\'occhio come l\'anima sta al corpo.'},
+  {chi:'Cartesio', op:'Meditazioni, VI', q:'',
+   c:'Io non sono presente nel mio corpo come un pilota nella sua nave: sono strettissimamente congiunto — ma come, non lo dice.'}],
+ vicini:['sinolo','forma','potenza','sostanza','cogito']},
+
+'virtu':{l:'Virtù', o:'ἀρετή / virtus', lt:'eccellenza, il fare bene la propria funzione',
+ alt:'virtu virtù arete aretè areté', area:'Socrate · Aristotele',
+ d:'Non la bontà morale in senso moderno: l\'<em>eccellenza</em> di qualcosa nel fare ciò per cui è fatto. C\'è una virtù del coltello (tagliare) e una del cavallo. La virtù dell\'uomo sarà l\'eccellenza in ciò che gli è proprio — per Aristotele l\'attività secondo ragione, e la si acquista per abitudine, non per lezione. Sta in mezzo fra due eccessi.',
+ luoghi:[
+  {chi:'Aristotele', op:'Etica Nicomachea II 1, 1103a', q:'',
+   c:'Nessuna virtù etica nasce in noi per natura: le acquistiamo esercitandole prima, come per le arti. Suonando la cetra si diventa citaredi.'},
+  {chi:'Aristotele', op:'Etica Nicomachea II 6, 1106b', q:'',
+   c:'La virtù è medietà fra due vizi, l\'uno per eccesso l\'altro per difetto — ma secondo la sostanza è un culmine.'},
+  {chi:'Platone', op:'Protagora, 352b-c', q:'',
+   c:'Socrate: nessuno sbaglia volendo. Se sapesse davvero che è male, non lo farebbe — tesi che Aristotele contesterà.'}],
+ vicini:['eudaimonia','episteme','maieutica']},
+
+'eudaimonia':{l:'Eudaimonìa', o:'εὐδαιμονία', lt:'avere un buon demone; felicità, riuscita',
+ alt:'eudaimonia eudemonia felicita', area:'Aristotele',
+ d:'Il fine a cui tutto tende e che non si vuole mai per altro. Si traduce «felicità», ma non è uno stato d\'animo: è una <em>vita</em> riuscita, giudicabile solo per intero. Non basta sentirsi bene — servono {virtù}, tempo, e una quota di fortuna che non dipende da noi. Per questo, dice Aristotele, nessuno chiama felice un uomo finché è vivo.',
+ luoghi:[
+  {chi:'Aristotele', op:'Etica Nicomachea I 7, 1098a', q:'',
+   c:'Il bene dell\'uomo è l\'attività dell\'anima secondo virtù, e in una vita compiuta: una rondine non fa primavera.'},
+  {chi:'Aristotele', op:'Etica Nicomachea I 10, 1100a', q:'',
+   c:'Le vicende umane cambiano molte volte: chi è felice oggi può finire come Priamo. Bisogna aspettare la fine.'}],
+ vicini:['virtu','sostanza']},
+
+'universale':{l:'Universale', o:'καθόλου / universale', lt:'detto di molti',
+ alt:'universale katholou', area:'Aristotele · Scolastica',
+ d:'Ciò che si predica di molti individui: «uomo» rispetto a Socrate e Callia. Esiste davvero, o è solo un nome? La domanda apre la disputa che attraversa tutto il Medioevo: realisti (esiste, ed è {idea} o {forma}), nominalisti (esistono solo gli individui, l\'universale è un flatus vocis), concettualisti (esiste nella mente). La posta non è astratta: se gli universali non esistono, non esiste nemmeno la {episteme}, che è sempre del generale.',
+ luoghi:[
+  {chi:'Porfirio', op:'Isagoge, proemio', q:'',
+   c:'Se i generi e le specie sussistano o stiano solo nei pensieri, e se sussistendo siano corporei o incorporei: pone la domanda e dichiara di non volerla affrontare. Ci penseranno per otto secoli.'},
+  {chi:'Guglielmo di Ockham', op:'Summa logicae I 15', q:'',
+   c:'Nessun universale è qualcosa che esista fuori dell\'anima: è un segno che sta per molti. Il rasoio applicato all\'inventario del mondo.'},
+  {chi:'Tommaso d\'Aquino', op:'De ente et essentia', q:'',
+   c:'La soluzione di mezzo: l\'universale è nella cosa come natura, nella mente come concetto, in Dio come idea. Tre modi, un solo contenuto.'}],
+ vicini:['idea','forma','episteme','essenza']},
+
+'essenza':{l:'Essenza ed esistenza', o:'essentia / esse', lt:'ciò che una cosa è / che essa è',
+ alt:'essenza esistenza essentia esse', area:'Scolastica',
+ d:'Si può sapere perfettamente <em>che cosa</em> sia una fenice senza sapere <em>se</em> ce ne sia una. Da questa osservazione Tommaso ricava la distinzione: nelle creature l\'essenza non include l\'esistenza, che è ricevuta; solo in Dio le due coincidono, e per questo Dio non è una {sostanza} fra le altre ma l\'atto stesso dell\'essere.',
+ luoghi:[
+  {chi:'Avicenna', op:'Metafisica I 5', q:'',
+   c:'L\'esistenza è un accidente che sopravviene all\'essenza: la formula che Tommaso correggerà, ma da cui parte.'},
+  {chi:'Tommaso d\'Aquino', op:'De ente et essentia, IV', q:'',
+   c:'Posso sapere che cosa sia un uomo o una fenice e ignorare se abbia essere nella realtà delle cose.'}],
+ vicini:['sostanza','universale','idea']},
+
+'cogito':{l:'Cogito', o:'cogito, ergo sum', lt:'penso, dunque sono',
+ alt:'cogito sum', area:'Cartesio',
+ d:'Il punto che resiste al dubbio più radicale: posso dubitare dei sensi, della matematica, dell\'esistenza del mondo — ma non del fatto che sto dubitando, e dubitare è pensare. Non è un sillogismo, è un\'evidenza colta ogni volta che la si pensa. Da qui Cartesio ricava anche il criterio: se questo è certo, è certo perché chiaro e distinto.',
+ luoghi:[
+  {chi:'Cartesio', op:'Discorso sul metodo, IV', q:'Penso, dunque sono',
+   c:'Verità così ferma e sicura che le più stravaganti supposizioni degli scettici non erano capaci di scuoterla.'},
+  {chi:'Cartesio', op:'Meditazioni, II', q:'',
+   c:'Io sono, io esisto: è certo, ogni volta che lo pronuncio o lo concepisco nella mente. La certezza dura quanto l\'atto.'},
+  {chi:'Hume', op:'Trattato I, IV, 6', q:'',
+   c:'La replica, un secolo dopo: entro in me stesso e inciampo sempre in qualche percezione particolare, mai in me stesso.'}],
+ vicini:['anima','sostanza','apriori','fenomeno']},
+
+'apriori':{l:'A priori e a posteriori', o:'', lt:'prima / dopo l\'esperienza',
+ alt:'apriori a priori a posteriori', area:'Kant',
+ d:'A posteriori è ciò che si sa solo avendo guardato; a priori ciò che vale prima e indipendentemente da ogni esperienza, e si riconosce da due segni: necessità e universalità. La domanda di Kant non è se esistano giudizi a priori, ma se ne esistano di <em>sintetici</em> — che aggiungano qualcosa invece di limitarsi a esplicitare il soggetto. La sua risposta è sì, e cambia tutto.',
+ luoghi:[
+  {chi:'Kant', op:'Critica della ragion pura, Introduzione', q:'',
+   c:'Che ogni nostra conoscenza cominci con l\'esperienza non significa che derivi tutta dall\'esperienza. Distinzione su cui si regge l\'intero edificio.'},
+  {chi:'Kant', op:'Critica della ragion pura, B 19', q:'Come sono possibili giudizi sintetici a priori?',
+   c:'La domanda in una riga. Risposta: perché le forme dell\'esperienza le mettiamo noi, e possiamo conoscerle senza consultarla.'}],
+ vicini:['fenomeno','categoria','cogito','episteme']},
+
+'categoria':{l:'Categoria', o:'κατηγορία', lt:'accusa, predicazione, ciò che si dice di',
+ alt:'categoria kategoria', area:'Aristotele · Kant',
+ d:'In Aristotele sono i modi fondamentali in cui si dice l\'essere: {sostanza}, quantità, qualità, relazione e altri sei. Sono divisioni della realtà, ricavate dal linguaggio. In Kant cambiano lato: restano dodici, ma diventano funzioni dell\'intelletto — non come il mondo è fatto, ma come noi siamo fatti per pensarlo. Valgono necessariamente per i {fenomeno|fenomeni} e per nient\'altro.',
+ luoghi:[
+  {chi:'Aristotele', op:'Categorie 4, 1b', q:'',
+   c:'Delle espressioni dette senza connessione, ciascuna significa o sostanza, o quantità, o qualità, o relazione, o dove, o quando…'},
+  {chi:'Kant', op:'Critica della ragion pura, B 105', q:'',
+   c:'Le categorie sono concetti puri dell\'intelletto che si riferiscono a priori a oggetti dell\'intuizione in generale.'}],
+ vicini:['sostanza','apriori','fenomeno','universale']},
+
+'fenomeno':{l:'Fenomeno e noumeno', o:'φαινόμενον / νοούμενον', lt:'ciò che appare / ciò che è pensato',
+ alt:'fenomeno noumeno phainomenon nooumenon', area:'Kant',
+ d:'Il fenomeno non è l\'apparenza ingannevole: è l\'oggetto come ci si dà, l\'unico che possiamo conoscere, ed è pienamente reale. Il noumeno è la cosa come sarebbe indipendentemente da noi: pensabile, mai conoscibile. Non è un mondo dietro il mondo — è un <em>concetto limite</em>, che serve a segnare il confine e a impedire che si scambino le {categoria|categorie} per proprietà delle cose.',
+ luoghi:[
+  {chi:'Kant', op:'Critica della ragion pura, B XXVI', q:'',
+   c:'Non possiamo conoscere gli oggetti come cose in sé, ma solo come fenomeni: e tuttavia dobbiamo poterli almeno pensare come cose in sé.'},
+  {chi:'Kant', op:'Critica della ragion pura, B 310', q:'',
+   c:'Il concetto di noumeno è puramente limitativo: non un oggetto in più, un cartello che dice fin qui.'}],
+ vicini:['apriori','categoria','doxa','idea']},
+
+'imperativo':{l:'Imperativo categorico', o:'', lt:'comando incondizionato',
+ alt:'imperativo categorico', area:'Kant',
+ d:'Un comando che non dipende da ciò che si vuole ottenere. Gli imperativi ipotetici dicono «se vuoi X, fai Y»; quello categorico dice «fai Y», e basta. Non prescrive contenuti ma una <em>forma</em>: che la regola del tuo agire possa valere per chiunque senza contraddirsi. Da qui la seconda formula: l\'uomo va trattato sempre anche come fine, mai soltanto come mezzo.',
+ luoghi:[
+  {chi:'Kant', op:'Fondazione della metafisica dei costumi, II', q:'Agisci solo secondo quella massima che tu possa insieme volere che divenga legge universale',
+   c:'La prova non è delle conseguenze: è se la regola, generalizzata, si distrugga da sé. La promessa falsa generalizzata abolisce la promessa.'},
+  {chi:'Kant', op:'Fondazione, II', q:'',
+   c:'Agisci in modo da trattare l\'umanità, nella tua persona come in quella di ogni altro, sempre anche come fine e mai semplicemente come mezzo.'},
+  {chi:'Hegel', op:'Lineamenti, § 135', q:'',
+   c:'L\'obiezione: il criterio è vuoto. Da esso non esce nessun dovere determinato finché non si dia già per buono un contenuto.'}],
+ vicini:['apriori','virtu','aufhebung']},
+
+'aufhebung':{l:'Aufhebung', o:'', lt:'togliere, conservare e innalzare, tutto insieme',
+ alt:'aufhebung aufheben superamento', area:'Hegel',
+ d:'Il verbo tedesco <em>aufheben</em> significa insieme abolire e conservare, e Hegel ci costruisce sopra: nella {dialettica} il momento superato non viene cancellato ma tolto <em>come pretesa di bastare a sé</em>, e conservato come parte di un intero più ampio. Si traduce «superamento», ma il doppio senso si perde. È il motivo per cui in Hegel l\'errore non è uno scarto: è un momento necessario.',
+ luoghi:[
+  {chi:'Hegel', op:'Scienza della logica, I', q:'',
+   c:'Aufheben ha nella lingua il doppio senso di conservare e di far cessare: e il termine tolto è insieme conservato, avendo perduto solo la sua immediatezza.'},
+  {chi:'Hegel', op:'Fenomenologia, Prefazione', q:'Il vero è l\'intero',
+   c:'L\'intero però è solo l\'essenza che si compie mediante il proprio sviluppo: l\'assoluto è essenzialmente risultato.'}],
+ vicini:['dialettica','sostanza','alienazione']},
+
+'alienazione':{l:'Alienazione', o:'Entfremdung', lt:'farsi estraneo',
+ alt:'alienazione entfremdung estraniazione', area:'Hegel · Marx',
+ d:'Il processo per cui qualcosa che è mio mi diventa estraneo e mi si rivolta contro. In Hegel è un momento necessario dello spirito, che deve uscire da sé per tornarvi arricchito. In Marx smette di essere logico e diventa storico e rimediabile: l\'operaio è estraniato dal prodotto, dal proprio lavoro, dagli altri e da sé — e più produce, più povero diventa il suo mondo interiore.',
+ luoghi:[
+  {chi:'Hegel', op:'Fenomenologia, VI B', q:'',
+   c:'Lo spirito si estrania da sé nella cultura, e in quell\'estraneità acquista la propria effettualità.'},
+  {chi:'Marx', op:'Manoscritti del 1844', q:'',
+   c:'L\'operaio diventa tanto più povero quanta più ricchezza produce: il prodotto del suo lavoro gli sta di fronte come un essere estraneo.'}],
+ vicini:['aufhebung','dialettica','nichilismo']},
+
+'nichilismo':{l:'Nichilismo', o:'', lt:'dal latino nihil, nulla',
+ alt:'nichilismo nihil', area:'Nietzsche',
+ d:'Non l\'idea che nulla esista, ma che i valori supremi si siano svalutati: manca la risposta al «perché». Nietzsche lo chiama il più inquietante degli ospiti perché non arriva da fuori — è l\'esito della nostra stessa onestà, che ha applicato alla morale e alla religione la richiesta di verità che quelle avevano insegnato. Distingue un nichilismo passivo, che si arrende, da uno attivo, che sgombra il terreno.',
+ luoghi:[
+  {chi:'Nietzsche', op:'Frammenti postumi 1885-87', q:'Che cosa significa nichilismo? Che i valori supremi si svalutano. Manca lo scopo, manca la risposta al perché',
+   c:'La definizione più netta che ne abbia dato, in due righe di appunti mai pubblicati.'},
+  {chi:'Nietzsche', op:'La gaia scienza, § 125', q:'',
+   c:'L\'uomo folle con la lanterna in pieno mattino: «Dio è morto, e noi lo abbiamo ucciso» — e nessuno al mercato capisce di che parli. È arrivato troppo presto.'},
+  {chi:'Nietzsche', op:'Genealogia della morale, III', q:'',
+   c:'L\'uomo preferisce volere il nulla piuttosto che non volere: l\'ascetismo come ultima risorsa di una volontà che non sopporta il vuoto.'}],
+ vicini:['alienazione','doxa','virtu']},
+
+'principio':{l:'Principio', o:'ἀρχή / principium', lt:'ciò da cui una cosa comincia o dipende',
+ alt:'principio principium', area:'Trasversale',
+ d:'Parola che porta due sensi da tenere distinti: principio come <em>inizio</em> nel tempo (da dove è cominciato) e principio come <em>fondamento</em> (da che cosa dipende). L\'{arche} dei presocratici li tiene insieme; la filosofia successiva li separa, e quasi tutte le confusioni sulle prove dell\'esistenza di Dio nascono dal non averlo fatto.',
+ luoghi:[
+  {chi:'Aristotele', op:'Metafisica Δ 1', q:'',
+   c:'Elenca sei sensi di «principio»: comune a tutti è essere ciò da cui una cosa è, o si genera, o si conosce.'},
+  {chi:'Tommaso d\'Aquino', op:'Summa theologiae I, q. 46', q:'',
+   c:'Che il mondo abbia avuto un inizio non è dimostrabile: si crede. Che dipenda da Dio si dimostra. I due principî non coincidono.'}],
+ vicini:['arche','apeiron','essenza']}
+};
+
+let corrente='arche', storia=[];
+
+/* ── i rimandi {chiave} dentro le definizioni ─────────────── */
+function rendi(testo){
+  /* {chiave} mostra il lemma; {chiave|testo} mostra il testo dato,
+     e serve per i plurali e per le forme flesse. */
+  return testo.replace(/\{([a-z]+)(\|[^}]+)?\}/g, (tutto,k,mostra)=>{
+    const t=T[k];
+    if(!t) return '<b style="color:#c0453b" title="rimando a vuoto">'+k+'?</b>';
+    const testoLink = mostra ? mostra.slice(1) : t.l.toLowerCase();
+    return `<a class="rim" onclick="vai('${k}')">${testoLink}</a>`;
+  });
+}
+
+function vai(k){
+  if(!T[k]) return;
+  if(corrente && corrente!==k) storia.push(corrente);
+  if(storia.length>5) storia=storia.slice(-5);   /* la scia non cresce all'infinito */
+  corrente=k; disegna();
+  document.querySelector('.scheda').scrollIntoView({block:'nearest',behavior:'smooth'});
+}
+function indietro(i){ corrente=storia[i]; storia=storia.slice(0,i); disegna(); }
+
+/* ── indice, filtrato dalla ricerca ───────────────────────── */
+const senzaAccenti = s => s.normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase();
+function disegnaIndice(){
+  const q=senzaAccenti(document.getElementById('cerca').value.trim());
+  const voci=Object.entries(T).filter(([k,t])=>{
+    if(!q) return true;
+    return senzaAccenti(k+' '+t.l+' '+t.o+' '+t.lt+' '+t.area+' '+(t.alt||'')).includes(q);
+  });
+  const perArea={};
+  voci.forEach(([k,t])=>{ (perArea[t.area]=perArea[t.area]||[]).push([k,t]); });
+  const ordine=['Presocratici','Presocratici · Stoicismo','Presocratici · Sofisti','Parmenide · Platone',
+    'Socrate','Socrate · Aristotele','Platone','Platone · Aristotele','Platone · Aristotele · Hegel',
+    'Aristotele','Aristotele · Cartesio · Spinoza','Aristotele · Scolastica','Aristotele · Kant',
+    'Platone · Aristotele · Cartesio','Scolastica','Cartesio','Kant','Hegel','Hegel · Marx','Nietzsche','Trasversale'];
+  const aree=Object.keys(perArea).sort((a,b)=>{
+    const ia=ordine.indexOf(a), ib=ordine.indexOf(b);
+    return (ia<0?99:ia)-(ib<0?99:ib);
+  });
+  document.getElementById('indice').innerHTML = voci.length
+    ? aree.map(a=>`<div class="gruppo">${a}</div>`+perArea[a].map(([k,t])=>
+        `<button class="voce-i${k===corrente?' attiva':''}" onclick="vai('${k}')">${t.l}
+          ${t.o?`<small>${t.o}</small>`:''}</button>`).join('')).join('')
+    : '<div class="gruppo">Nessuna voce</div>';
+}
+
+function disegna(){
+  disegnaIndice();
+  const t=T[corrente];
+  document.getElementById('briciole').innerHTML = storia.length
+    ? storia.map((k,i)=>`<button onclick="indietro(${i})">${T[k].l}</button>`).join('<span>›</span>')
+      +'<span>›</span><span style="color:#2d5a27">'+t.l+'</span>'
+    : '';
+  document.getElementById('scheda').innerHTML=`
+    <div class="lemma">${t.l}</div>
+    ${t.o?`<div class="orig">${t.o}</div>`:''}
+    <div class="lett">${t.lt}</div>
+    <div class="def">${rendi(t.d)}</div>
+    <div class="luoghi">
+      <div class="et" style="margin:0 0 .5rem">I luoghi</div>
+      ${t.luoghi.map(l=>`<div class="lu">
+        <div class="lu-chi"><b>${l.chi}</b><span>${l.op}</span></div>
+        <div class="lu-cosa">${l.q?`<q>${l.q}</q>`:''}${l.c}</div></div>`).join('')}
+    </div>
+    <div class="vicini"><b>Vicini</b>
+      ${t.vicini.filter(v=>T[v]).map(v=>`<button class="vic" onclick="vai('${v}')">${T[v].l}</button>`).join('')}
+    </div>`;
+}
+
+/* ── il controllo dei rinvii ───────────────────────────────
+   All'avvio si verifica che ogni {rimando} e ogni «vicino»
+   puntino a una voce esistente. Un glossario ipertestuale con
+   i link rotti è peggio di un glossario senza link. */
+(function controlla(){
+  const rotti=[];
+  for(const [k,t] of Object.entries(T)){
+    (t.d.match(/\{([a-z]+)(\|[^}]+)?\}/g)||[]).forEach(m=>{
+      const c=m.slice(1,-1).split('|')[0]; if(!T[c]) rotti.push(k+' → {'+c+'}');
+    });
+    t.vicini.forEach(v=>{ if(!T[v]) rotti.push(k+' → vicino '+v); });
+  }
+  window.__rinviiRotti=rotti;
+  if(rotti.length) console.warn('Rinvii a vuoto nel glossario:', rotti);
+})();
+
+disegna();
+</script>
+</body>
+</html>
