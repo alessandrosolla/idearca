@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mappa argomentativa — Idearca</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Jost',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  background:#faf8f3;color:#1c2b1a;font-weight:300;-webkit-font-smoothing:antialiased}
+.w{max-width:940px;margin:0 auto;padding:2rem 1.5rem 4rem}
+.k{font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:#8a9e87;font-weight:600}
+h1{font-family:'Cormorant Garamond',Georgia,serif;font-size:2.4rem;font-weight:400;margin:.3rem 0 .5rem}
+.sub{font-size:.92rem;line-height:1.7;color:#5a6b58;max-width:64ch}
+
+.et{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:#9a7c2e;
+  font-weight:700;margin:1.9rem 0 .7rem;display:flex;align-items:center;gap:.6rem}
+.et::after{content:'';flex:1;height:1px;background:rgba(45,90,39,.13)}
+
+/* la tesi: sta in cima, tutto il resto le risponde */
+.tesi{border:1px solid rgba(45,90,39,.16);border-top:3px solid #9a7c2e;border-radius:12px;
+  padding:1rem 1.1rem;background:#fdfbf4}
+.tesi label{display:block;font-size:.58rem;letter-spacing:.14em;text-transform:uppercase;
+  color:#9a7c2e;font-weight:700;margin-bottom:.4rem}
+textarea,input[type=text]{width:100%;font:inherit;font-size:.95rem;line-height:1.5;
+  border:none;outline:none;background:none;color:#1c2b1a;font-weight:400;resize:none;overflow:hidden}
+textarea::placeholder,input::placeholder{color:#b3bdb1}
+
+.arg{border:1px solid rgba(45,90,39,.14);border-left:3px solid #2d5a27;border-radius:10px;
+  padding:.85rem 1rem;background:#fff;margin-bottom:.7rem}
+.arg.contro{border-left-color:#c0453b}
+.arg-cap{display:flex;align-items:center;gap:.6rem;margin-bottom:.5rem}
+.arg-n{font-size:.58rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:#2d5a27}
+.arg.contro .arg-n{color:#c0453b}
+.arg-cap .sp{flex:1}
+.prem{display:flex;gap:.55rem;align-items:flex-start;margin:.3rem 0}
+.prem i{flex:none;width:16px;height:16px;border-radius:50%;background:rgba(45,90,39,.1);
+  color:#2d5a27;font-style:normal;font-size:.6rem;font-weight:700;margin-top:.28rem;
+  display:flex;align-items:center;justify-content:center}
+.arg.contro .prem i{background:rgba(192,69,59,.12);color:#c0453b}
+
+.x{font:inherit;font-size:.72rem;border:none;background:none;color:#b3bdb1;cursor:pointer;
+  padding:.1rem .35rem;border-radius:5px;line-height:1}
+.x:hover{color:#c0453b;background:rgba(192,69,59,.08)}
+.mini{font:inherit;font-size:.68rem;padding:.32rem .7rem;border-radius:100px;cursor:pointer;
+  border:1px solid rgba(45,90,39,.2);background:#fff;color:#2d5a27;transition:all .16s}
+.mini:hover{background:#2d5a27;color:#fff;border-color:#2d5a27}
+.b{font:inherit;font-size:.78rem;padding:.55rem 1.1rem;border-radius:100px;cursor:pointer;
+  border:1.5px solid rgba(45,90,39,.22);background:#fff;color:#2d5a27;transition:all .16s;font-weight:500}
+.b:hover{background:#2d5a27;color:#fff;border-color:#2d5a27}
+.b.rosso{color:#c0453b;border-color:rgba(192,69,59,.3)}
+.b.rosso:hover{background:#c0453b;color:#fff;border-color:#c0453b}
+.barra{display:flex;gap:.5rem;flex-wrap:wrap;margin-top:.9rem}
+
+/* la fallacia appiccicata a un argomento */
+.fall{margin-top:.55rem;padding:.55rem .7rem;border-radius:8px;
+  background:rgba(154,124,46,.09);border-left:2px solid #9a7c2e;font-size:.78rem;line-height:1.55}
+.fall b{font-weight:600;color:#8a6a1e}
+select{font:inherit;font-size:.7rem;padding:.3rem .5rem;border-radius:7px;
+  border:1px solid rgba(45,90,39,.18);background:#faf8f3;color:#1c2b1a;cursor:pointer}
+
+/* l'esito della lettura */
+.esito{border-radius:14px;padding:1.2rem 1.3rem;margin-top:1.4rem;
+  border:1px solid rgba(45,90,39,.14);background:#fff;border-left:5px solid #8a9e87}
+.esito.bene{border-left-color:#2d5a27;background:linear-gradient(150deg,rgba(45,90,39,.07),#fff)}
+.esito.male{border-left-color:#c0453b;background:linear-gradient(150deg,rgba(192,69,59,.06),#fff)}
+.esito-t{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.5rem;font-weight:600;margin-bottom:.5rem}
+.esito.bene .esito-t{color:#2d5a27}.esito.male .esito-t{color:#c0453b}
+.rl{list-style:none;display:flex;flex-direction:column;gap:.45rem}
+.rl li{display:flex;gap:.65rem;align-items:flex-start;font-size:.86rem;line-height:1.6}
+.rl i{flex:none;width:18px;height:18px;border-radius:50%;font-style:normal;font-size:.65rem;
+  font-weight:700;display:flex;align-items:center;justify-content:center;margin-top:.15rem}
+.rl li.ok i{background:rgba(45,90,39,.12);color:#2d5a27}
+.rl li.ko i{background:rgba(192,69,59,.14);color:#c0453b}
+.rl li.ko{color:#8a3229}
+.nota{font-size:.81rem;line-height:1.65;color:#5a6b58;margin-top:.9rem;
+  padding-top:.8rem;border-top:1px solid rgba(45,90,39,.1)}
+
+/* il prontuario delle fallacie */
+.cat{display:grid;grid-template-columns:repeat(auto-fill,minmax(258px,1fr));gap:.6rem}
+.cf{border:1px solid rgba(45,90,39,.13);border-radius:10px;padding:.7rem .85rem;background:#fff}
+.cf b{display:block;font-size:.82rem;font-weight:600;margin-bottom:.2rem;color:#8a6a1e}
+.cf p{font-size:.75rem;line-height:1.55;color:#5a6b58}
+.cf em{display:block;margin-top:.35rem;font-size:.73rem;color:#8a9e87;font-style:italic}
+
+.esempi{display:flex;gap:.5rem;flex-wrap:wrap}
+@media(max-width:640px){
+  .w{padding:1.4rem 1rem 3rem}h1{font-size:1.9rem}
+  .cat{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<div class="w">
+  <div class="k">Idearca · Prove</div>
+  <h1>Mappa argomentativa</h1>
+  <p class="sub">Una tesi in cima, sotto le ragioni che la reggono e le obiezioni che
+  la scalzano. Lo strumento non giudica se la tesi è vera — non è affare suo: guarda
+  come <strong>sta in piedi il ragionamento</strong> e dice dove cede.</p>
+
+  <div class="et">Prova con una di queste</div>
+  <div class="esempi" id="esempi"></div>
+
+  <div class="et">La tesi</div>
+  <div class="tesi">
+    <label>Che cosa si sostiene</label>
+    <textarea id="tesi" rows="2" placeholder="Per esempio: la pena di morte va abolita."
+      oninput="scrivi('tesi',this.value);cresci(this)"></textarea>
+  </div>
+
+  <div class="et">Le ragioni e le obiezioni</div>
+  <div id="argomenti"></div>
+  <div class="barra">
+    <button class="b" onclick="aggiungiArg(false)">+ Una ragione a favore</button>
+    <button class="b rosso" onclick="aggiungiArg(true)">+ Un'obiezione</button>
+  </div>
+
+  <div class="esito" id="esito"></div>
+
+  <div class="et">Il prontuario delle fallacie</div>
+  <p class="sub" style="margin-bottom:.9rem">Dodici modi di sbagliare che hanno un nome
+  da secoli. Riconoscerne uno in un discorso altrui è metà del lavoro; riconoscerlo nel
+  proprio è l'altra metà.</p>
+  <div class="cat" id="catalogo"></div>
+
+  <div class="barra" style="margin-top:1.6rem">
+    <button class="b" onclick="svuota()">Ricomincia da capo</button>
+  </div>
+</div>
+
+<script>
+/* ══════════════════════════════════════════════════════════
+   LA MAPPA ARGOMENTATIVA
+   Non c'è nessun giudizio sul contenuto: lo strumento non sa
+   se la pena di morte vada abolita, e non deve saperlo. Guarda
+   la forma — se la tesi è sorretta, se una ragione è rimasta
+   nuda, se un'obiezione non ha ricevuto risposta, se la tesi
+   si sta appoggiando a se stessa. Sono le domande che uno
+   studente deve imparare a farsi da solo.
+   ══════════════════════════════════════════════════════════ */
+
+const FALLACIE=[
+ {k:'ad-hominem', n:'Attacco alla persona',
+  d:'Si risponde a chi parla invece che a quello che dice.',
+  e:'«Non dar retta: è uno che non ha mai lavorato un giorno.»'},
+ {k:'autorita', n:'Argomento d\'autorità',
+  d:'Vale perché lo ha detto un grande nome, non perché regga da sé.',
+  e:'«Lo diceva Aristotele» — che però sui corpi in caduta sbagliava.'},
+ {k:'dicotomia', n:'Falsa dicotomia',
+  d:'Si offrono due sole strade quando ce ne sono altre.',
+  e:'«O sei con noi o sei contro di noi.»'},
+ {k:'circolo', n:'Petizione di principio',
+  d:'La conclusione è già dentro le premesse: il ragionamento gira a vuoto.',
+  e:'«È il migliore perché nessuno è più bravo di lui.»'},
+ {k:'fretta', n:'Generalizzazione affrettata',
+  d:'Da pochi casi si salta a tutti i casi.',
+  e:'«Ne ho conosciuti due, e non ne vale uno.»'},
+ {k:'posthoc', n:'Falsa causa',
+  d:'È venuto dopo, dunque è venuto a causa di.',
+  e:'«Da quando l\'hanno eletto piove sempre.»'},
+ {k:'paglia', n:'Uomo di paglia',
+  d:'Si confuta una versione indebolita di quello che l\'altro sostiene.',
+  e:'«Vuoi tagliare le spese militari: dunque vuoi lasciarci indifesi.»'},
+ {k:'pendio', n:'Pendio scivoloso',
+  d:'Da un primo passo si fa discendere una rovina che nessuno ha mostrato.',
+  e:'«Se passa questa legge finiremo in dittatura.»'},
+ {k:'maggioranza', n:'Appello alla maggioranza',
+  d:'Vero perché lo pensano in tanti. La verità non si vota.',
+  e:'«Lo dicono tutti, qualcosa di vero ci sarà.»'},
+ {k:'ignoranza', n:'Appello all\'ignoranza',
+  d:'Vero perché nessuno ha dimostrato il contrario.',
+  e:'«Nessuno ha provato che non esistano: dunque esistono.»'},
+ {k:'equivoco', n:'Equivoco',
+  d:'Una parola cambia significato a metà del ragionamento.',
+  e:'«La legge è uguale per tutti; la gravità è una legge; dunque…»'},
+ {k:'analogia', n:'Falsa analogia',
+  d:'Due cose si somigliano in un punto e si conclude che si somiglino in tutto.',
+  e:'«Lo Stato è come una famiglia, dunque deve avere un padre.»'}
+];
+const nomeFallacia = k => (FALLACIE.find(f=>f.k===k)||{}).n || '';
+
+const ESEMPI=[
+ {n:'Un ragionamento che tiene',
+  tesi:'Le targhe alterne non riducono lo smog in modo apprezzabile.',
+  argomenti:[
+    {contro:false, premesse:['Nelle città che le hanno adottate le centraline non hanno registrato cali stabili delle polveri sottili.','Chi ha due auto le usa a giorni alterni, e il numero di viaggi resta lo stesso.'], fallacia:null,
+     obiezioni:[{t:'Ma nei giorni di blocco l\'aria è più respirabile.', r:'Il miglioramento c\'è ma dura il giorno stesso e dipende dal vento più che dal blocco.'}]},
+    {contro:false, premesse:['La quota di polveri prodotta dal traffico privato è minore di quella prodotta dal riscaldamento domestico.'], fallacia:null, obiezioni:[]}
+  ]},
+ {n:'Un ragionamento che gira a vuoto',
+  tesi:'I classici vanno letti a scuola.',
+  argomenti:[
+    {contro:false, premesse:['I classici vanno letti a scuola perché a scuola vanno letti i classici.'], fallacia:'circolo', obiezioni:[]}
+  ]},
+ {n:'Un\'obiezione lasciata cadere',
+  tesi:'Il voto in condotta va abolito.',
+  argomenti:[
+    {contro:false, premesse:['Misura l\'obbedienza, non l\'apprendimento.'], fallacia:null,
+     obiezioni:[{t:'Senza voto in condotta viene meno l\'unico strumento contro chi rende impossibile la lezione.', r:''}]}
+  ]},
+ {n:'Tutto il peso su una ragione sola',
+  tesi:'Gli smartphone vanno vietati in classe.',
+  argomenti:[
+    {contro:false, premesse:['Ne ho visti due che copiavano al compito.'], fallacia:'fretta', obiezioni:[]}
+  ]}
+];
+
+let mappa={tesi:'', argomenti:[]};
+let prossimoId=1;
+
+/* ── memoria ──────────────────────────────────────────────── */
+function salva(){ try{ localStorage.setItem('idearca-argomenti', JSON.stringify(mappa)); }catch(e){} }
+function riprendi(){
+  try{ const g=localStorage.getItem('idearca-argomenti');
+       if(g){ mappa=JSON.parse(g); mappa.argomenti.forEach(a=>a.id=prossimoId++); } }catch(e){}
+}
+
+function scrivi(campo,val){ mappa[campo]=val; salva(); leggi(); }
+function cresci(t){ t.style.height='auto'; t.style.height=(t.scrollHeight)+'px'; }
+
+/* ── modifiche alla mappa ─────────────────────────────────── */
+function aggiungiArg(contro){
+  mappa.argomenti.push({id:prossimoId++, contro, premesse:[''], fallacia:null, obiezioni:[]});
+  disegna(); salva();
+}
+function togliArg(id){ mappa.argomenti=mappa.argomenti.filter(a=>a.id!==id); disegna(); salva(); }
+function arg(id){ return mappa.argomenti.find(a=>a.id===id); }
+
+function aggiungiPrem(id){ arg(id).premesse.push(''); disegna(); salva(); }
+function togliPrem(id,i){ const a=arg(id); a.premesse.splice(i,1);
+  if(!a.premesse.length) a.premesse.push(''); disegna(); salva(); }
+function scriviPrem(id,i,v){ arg(id).premesse[i]=v; salva(); leggi(); }
+
+function aggiungiObi(id){ arg(id).obiezioni.push({t:'',r:''}); disegna(); salva(); }
+function togliObi(id,i){ arg(id).obiezioni.splice(i,1); disegna(); salva(); }
+function scriviObi(id,i,campo,v){ arg(id).obiezioni[i][campo]=v; salva(); leggi(); }
+
+function segnaFallacia(id,k){ arg(id).fallacia = k||null; disegna(); salva(); }
+
+function svuota(){ mappa={tesi:'',argomenti:[]}; document.getElementById('tesi').value=''; disegna(); salva(); }
+
+function carica(i){
+  const e=ESEMPI[i];
+  mappa={tesi:e.tesi, argomenti:e.argomenti.map(a=>({
+    id:prossimoId++, contro:a.contro, premesse:a.premesse.slice(),
+    fallacia:a.fallacia, obiezioni:a.obiezioni.map(o=>({t:o.t,r:o.r}))}))};
+  document.getElementById('tesi').value=e.tesi;
+  cresci(document.getElementById('tesi'));
+  disegna(); salva();
+}
+
+/* ── disegno ──────────────────────────────────────────────── */
+const esc = t => String(t).replace(/[<>&"]/g,c=>({'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;'}[c]));
+
+function disegna(){
+  const opz = k => '<option value="">nessuna fallacia</option>'
+    + FALLACIE.map(f=>`<option value="${f.k}"${k===f.k?' selected':''}>${f.n}</option>`).join('');
+
+  document.getElementById('argomenti').innerHTML = mappa.argomenti.map((a,n)=>{
+    const premesse = a.premesse.map((p,i)=>`
+      <div class="prem"><i>${i+1}</i>
+        <textarea rows="1" placeholder="Perché?"
+          oninput="scriviPrem(${a.id},${i},this.value);cresci(this)">${esc(p)}</textarea>
+        <button class="x" onclick="togliPrem(${a.id},${i})" title="Togli">✕</button></div>`).join('');
+
+    const obiezioni = a.obiezioni.map((o,i)=>`
+      <div class="fall" style="background:rgba(192,69,59,.06);border-left-color:#c0453b">
+        <div class="prem" style="margin:0">
+          <textarea rows="1" placeholder="L'obiezione che qualcuno farebbe…"
+            oninput="scriviObi(${a.id},${i},'t',this.value);cresci(this)">${esc(o.t)}</textarea>
+          <button class="x" onclick="togliObi(${a.id},${i})" title="Togli">✕</button></div>
+        <div class="prem" style="margin:.35rem 0 0">
+          <i style="background:rgba(45,90,39,.1);color:#2d5a27">↳</i>
+          <textarea rows="1" placeholder="…e la risposta che le si dà"
+            oninput="scriviObi(${a.id},${i},'r',this.value);cresci(this)">${esc(o.r)}</textarea></div>
+      </div>`).join('');
+
+    const f = a.fallacia ? FALLACIE.find(x=>x.k===a.fallacia) : null;
+
+    return `<div class="arg${a.contro?' contro':''}">
+      <div class="arg-cap">
+        <span class="arg-n">${a.contro?'Obiezione alla tesi':'Ragione '+(n+1)}</span>
+        <span class="sp"></span>
+        <select onchange="segnaFallacia(${a.id},this.value)">${opz(a.fallacia)}</select>
+        <button class="x" onclick="togliArg(${a.id})" title="Togli">✕</button>
+      </div>
+      ${premesse}
+      ${f?`<div class="fall"><b>${f.n}.</b> ${f.d}</div>`:''}
+      ${obiezioni}
+      <div class="barra" style="margin-top:.6rem">
+        <button class="mini" onclick="aggiungiPrem(${a.id})">+ premessa</button>
+        <button class="mini" onclick="aggiungiObi(${a.id})">+ obiezione</button>
+      </div>
+    </div>`;
+  }).join('');
+
+  document.querySelectorAll('#argomenti textarea').forEach(cresci);
+  leggi();
+}
+
+/* ── LA LETTURA ────────────────────────────────────────────
+   Sei domande sulla forma. Nessuna riguarda il contenuto:
+   sono tutte cose che si vedono guardando come è montata la
+   mappa, ed è appunto quello che si vuole insegnare a vedere. */
+function leggi(){
+  const box=document.getElementById('esito');
+  const tesi=(mappa.tesi||'').trim();
+  const pieni = a => a.premesse.filter(p=>p.trim()).length;
+  const aFavore = mappa.argomenti.filter(a=>!a.contro);
+  const contro  = mappa.argomenti.filter(a=>a.contro);
+
+  if(!tesi && !mappa.argomenti.length){
+    box.className='esito';
+    box.innerHTML='<div class="esito-t">La mappa è vuota</div>'
+      +'<p class="nota">Si comincia dalla tesi: una frase sola, che si possa negare. '
+      +'Se non si riesce a negarla, non è una tesi — è un\'esclamazione.</p>';
+    return;
+  }
+
+  const r=[];
+
+  r.push({ok:!!tesi, t:'C\'è una tesi',
+    s:tesi?'La tesi è scritta: tutto il resto le risponde.'
+          :'Senza una tesi le ragioni non reggono niente. Scrivila per prima.'});
+
+  r.push({ok:aFavore.length>0, t:'La tesi è sorretta',
+    s:aFavore.length?`Ci sono ${aFavore.length} ragion${aFavore.length===1?'e':'i'} a favore.`
+      :'Nessuna ragione a favore: per ora la tesi è solo affermata, non argomentata.'});
+
+  /* una ragione con una premessa sola non è sbagliata, ma è fragile:
+     basta togliere quella e cade tutto */
+  const nude = aFavore.filter(a=>pieni(a)===0);
+  const sole = aFavore.filter(a=>pieni(a)===1);
+  r.push({ok:nude.length===0, t:'Ogni ragione dice qualcosa',
+    s:nude.length?`${nude.length} ragion${nude.length===1?'e è rimasta vuota':'i sono rimaste vuote'}: c'è la casella ma non il pensiero.`
+      :(sole.length?`Attenzione: ${sole.length} ragion${sole.length===1?'e si regge':'i si reggono'} su una premessa sola. Togli quella e cade tutto.`
+                  :'Ogni ragione porta più di una premessa.')});
+
+  /* Il caso sfacciato: una premessa che ricopia la tesi con le stesse
+     parole. Attenzione a che cosa sa fare questo controllo — confronta
+     parole, non significati. «I classici vanno letti» e «i classici si
+     leggono» per lui sono due frasi diverse, e infatti non la prende.
+     La petizione di principio vera si riconosce solo leggendo: per
+     quella c'è la casella delle fallacie, che la mette a mano. */
+  const normale = t => t.toLowerCase().replace(/[^a-zàèéìòù ]/g,' ').replace(/\s+/g,' ').trim();
+  const parole = t => new Set(normale(t).split(' ').filter(p=>p.length>3));
+  const ricopia = (a,b) => {
+    const A=parole(a), B=parole(b);
+    if(A.size<2||B.size<2) return false;
+    let c=0; A.forEach(p=>{ if(B.has(p)) c++; });
+    return c / Math.min(A.size,B.size) >= .6;
+  };
+  const circolari=[];
+  aFavore.forEach((a,n)=>a.premesse.forEach(p=>{
+    if(p.trim() && tesi && ricopia(p,tesi)) circolari.push(n+1);
+  }));
+  r.push({ok:circolari.length===0, t:'Nessuna premessa ricopia la tesi',
+    s:circolari.length?`La ragione ${[...new Set(circolari)].join(' e la ')} ridice la tesi con le stesse parole invece di sostenerla: è una petizione di principio, e il ragionamento gira a vuoto.`
+      :'Nessuna premessa ripete la tesi parola per parola. Il controllo si ferma qui: confronta le parole, non i significati, e una circolarità detta con altri termini gli sfugge. Quella si vede solo leggendo.'});
+
+  /* un'obiezione senza risposta è un buco dichiarato */
+  let senzaRisposta=0, obTot=0;
+  mappa.argomenti.forEach(a=>a.obiezioni.forEach(o=>{
+    if(o.t.trim()){ obTot++; if(!o.r.trim()) senzaRisposta++; } }));
+  r.push({ok:senzaRisposta===0, t:'Alle obiezioni è stata data risposta',
+    s:!obTot?'Nessuna obiezione registrata. Un ragionamento che non si è mai messo alla prova è più debole di quanto sembri: prova a scrivere l\'obiezione più forte che ti farebbero.'
+      :(senzaRisposta?`${senzaRisposta} obiezion${senzaRisposta===1?'e è rimasta':'i sono rimaste'} senza risposta. Lasciarla lì è onesto, ma è un buco dichiarato.`
+                     :`Tutte e ${obTot} le obiezioni hanno una risposta.`)});
+
+  const conFallacia = mappa.argomenti.filter(a=>a.fallacia);
+  r.push({ok:conFallacia.length===0, t:'Nessuna fallacia segnalata',
+    s:conFallacia.length?`Segnalate: ${conFallacia.map(a=>nomeFallacia(a.fallacia)).join(', ')}. Un ragionamento con una fallacia dentro può avere lo stesso una conclusione vera, ma non è quella fallacia a portarcela.`
+      :'Nessun passaggio è stato marcato come fallace.'});
+
+  const rotte=r.filter(x=>!x.ok);
+  const bene=rotte.length===0;
+  box.className='esito '+(bene?'bene':'male');
+  box.innerHTML='<div class="esito-t">'
+    +(bene?'La mappa sta in piedi'
+          :'La mappa ha '+rotte.length+(rotte.length===1?' punto che cede':' punti che cedono'))+'</div>'
+    +'<ul class="rl">'+r.map(x=>`<li class="${x.ok?'ok':'ko'}"><i>${x.ok?'✓':'✕'}</i><span><b>${x.t}.</b> ${x.s}</span></li>`).join('')+'</ul>'
+    +'<p class="nota">'+(bene
+      ? 'Reggere non vuol dire aver ragione: una mappa ben costruita può sostenere una tesi falsa, se le premesse sono false. Qui si guarda l\'impalcatura, non il muro.'
+      : 'Nessuno di questi è un errore di contenuto: sono tutti buchi che si vedono senza sapere niente dell\'argomento. È il primo controllo da fare, sul proprio testo prima che su quello altrui.')
+    +'</p>';
+}
+
+/* ── avvio ────────────────────────────────────────────────── */
+document.getElementById('catalogo').innerHTML = FALLACIE.map(f=>
+  `<div class="cf"><b>${f.n}</b><p>${f.d}</p><em>${esc(f.e)}</em></div>`).join('');
+document.getElementById('esempi').innerHTML = ESEMPI.map((e,i)=>
+  `<button class="mini" onclick="carica(${i})">${e.n}</button>`).join('');
+
+riprendi();
+if(mappa.tesi){ document.getElementById('tesi').value=mappa.tesi; }
+disegna();
+cresci(document.getElementById('tesi'));
+</script>
+</body>
+</html>
