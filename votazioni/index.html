@@ -180,6 +180,16 @@
 .tab-rossi .tab-barra i{background:linear-gradient(90deg,#a8322a,#e8837a)}
 .tab-blu   .tab-barra i{background:linear-gradient(90deg,#254b78,#8fb8d8)}
 .tab-det{grid-column:3;grid-row:2;font-size:.72rem;color:rgba(230,238,226,.6)}
+
+.sfida{display:flex;gap:.75rem;align-items:flex-start;margin-bottom:1.4rem;
+  padding:1rem 1.15rem;border-radius:12px;cursor:pointer;
+  border:1px solid #E3DACB;background:#fff;transition:all .22s}
+.sfida:hover{border-color:#9a7c2e}
+.sfida.accesa{border-color:#9a7c2e;
+  background:linear-gradient(120deg,rgba(168,50,42,.07),rgba(63,109,140,.07))}
+.sfida input{margin-top:.2rem;width:18px;height:18px;flex:none;cursor:pointer}
+.sfida b{display:block;font-weight:600;margin-bottom:.15rem}
+.sfida span{font-size:.86rem;line-height:1.55;color:#5A5148}
 </style>
 </head>
 <body>
@@ -358,6 +368,14 @@ function disegnaRegia(){
       <button class="rosso" onclick="chiudiSessione()">Chiudi votazione</button>
     </div>
 
+    <label class="sfida${sessione.a_squadre?' accesa':''}">
+      <input type="checkbox" id="a-squadre" ${sessione.a_squadre?'checked':''} onchange="cambiaModalita()">
+      <span><b>Sfida a squadre</b>
+      ${sessione.a_squadre
+        ? 'Attiva: chi entra viene diviso a sorte in rossi e blu, e alla lavagna compare il tabellone.'
+        : 'Spegni e accendi quando vuoi. Chi entra viene diviso a sorte in rossi e blu.'}</span>
+    </label>
+
     <div class="vuoto" style="text-align:left;border-style:solid;border-color:#E3DACB;background:#fff;margin-bottom:1.4rem">
       <strong>Come funziona</strong><br>
       1. Aggiungi le domande qui sotto, a mano o caricando un capitolo pronto.<br>
@@ -424,8 +442,25 @@ function mostraOpzioni(){
 /* Se la votazione e' una sfida, gli studenti vengono divisi a sorte
    quando entrano e alla lavagna compare il tabellone. */
 let aSquadre = false;
-function cambiaModalita(){
+/* Se la votazione esiste già, la casella la modifica sul momento:
+   si può trasformare una votazione normale in una sfida a metà ora,
+   senza rifare il codice e senza far rientrare nessuno. */
+async function cambiaModalita(){
   aSquadre = document.getElementById('a-squadre')?.checked || false;
+  if(!sessione) return;
+  const res = await fetch(SB_URL+'/rest/v1/menti_sessioni?id=eq.'+sessione.id, {
+    method:'PATCH',
+    headers:intest({'Content-Type':'application/json','Prefer':'return=representation'}),
+    body: JSON.stringify({a_squadre: aSquadre})
+  });
+  if(res.ok){
+    sessione = (await res.json())[0] || sessione;
+    if(!aSquadre) document.getElementById('tabellone')?.remove();
+    disegnaRegia();
+  }else{
+    alert('Non è stato possibile cambiare modalità. Hai eseguito la migrazione 07?');
+    document.getElementById('a-squadre').checked = !aSquadre;
+  }
 }
 async function creaSessione(){
   for(let tentativo=0; tentativo<6; tentativo++){
