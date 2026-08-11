@@ -7,6 +7,15 @@ studenti, numeri contati dal sito.
 
 ## Da fare, in quest'ordine
 
+1. ~~Statistiche nell'hub docente~~ — fatto (migrazione 05)
+2. ~~«Chi sono» modificabile dal sito~~ — fatto (migrazione 06)
+3. **I sigilli ridisegnati** — con lo stesso dettaglio delle tavole
+4. **Le votazioni a squadre** — sorteggio casuale, punto al sapere,
+   a schermo sia punteggio sia risposte
+5. Timer da proiettare + estrattore di studenti
+6. Ricostruttore di sillogismi
+
+## Vecchio elenco (superato)
 1. **Statistiche nell'hub docente** — tabella `accessi` su Supabase
    (chi entra, quando, da dove), pannello con totali, ultimi 7 giorni,
    codici più attivi, materie e strumenti più aperti, pulsante Azzera.
