@@ -22,12 +22,13 @@
 --  tutto -> RUN. Si può rieseguire senza danni.
 -- ============================================================
 
-do $$
+do $controllo$
 begin
   if to_regclass('public.menti_sessioni') is null then
     raise exception 'Manca il sistema di voto: esegui prima 02-lavagna-inbox-votazioni.sql';
   end if;
-end $$;
+end
+$controllo$;
 
 
 -- ============================================================
@@ -63,7 +64,7 @@ create or replace function public.menti_vota_squadra(
 language plpgsql
 security definer
 set search_path = public
-as $$
+as $fnvota$
 declare ok boolean;
 begin
   -- si vota solo su una domanda che è davvero quella proiettata
@@ -75,14 +76,24 @@ begin
     and s.domanda_attiva = p_domanda
   limit 1;
 
-  if ok is null then return false; end if;
-  if p_squadra is not null and p_squadra not in ('rossi','blu') then return false; end if;
-  if length(coalesce(p_valore,'')) = 0 or length(p_valore) > 200 then return false; end if;
+  if ok is null then
+    return false;
+  end if;
+
+  if p_squadra is not null and p_squadra not in ('rossi','blu') then
+    return false;
+  end if;
+
+  if p_valore is null or length(p_valore) = 0 or length(p_valore) > 200 then
+    return false;
+  end if;
 
   insert into public.menti_risposte (domanda_id, valore, squadra)
   values (p_domanda, p_valore, p_squadra);
+
   return true;
-end $$;
+end
+$fnvota$;
 
 revoke all on function public.menti_vota_squadra(text,bigint,text,text) from public;
 grant execute on function public.menti_vota_squadra(text,bigint,text,text) to anon, authenticated;
@@ -101,7 +112,7 @@ language sql
 stable
 security definer
 set search_path = public
-as $$
+as $fnpunti$
 with sess as (
   select id from public.menti_sessioni
   where upper(codice) = upper(trim(p_codice)) limit 1
@@ -150,7 +161,7 @@ select jsonb_build_object(
         ) as x
         from valutate group by domanda_id) y), '[]'::jsonb)
 );
-$$;
+$fnpunti$;
 
 revoke all on function public.menti_punteggio(text) from public;
 grant execute on function public.menti_punteggio(text) to anon, authenticated;
@@ -181,26 +192,34 @@ returns text
 language plpgsql
 security definer
 set search_path = public
-as $$
+as $fnsquadra$
 declare s_id bigint; n_rossi int; n_blu int; scelta text;
 begin
   select id into s_id from public.menti_sessioni
   where upper(codice) = upper(trim(p_codice)) and aperta = true limit 1;
-  if s_id is null then return null; end if;
+  if s_id is null then
+    return null;
+  end if;
 
   select count(*) filter (where squadra='rossi'),
          count(*) filter (where squadra='blu')
     into n_rossi, n_blu
   from public.menti_squadre where sessione_id = s_id;
 
-  if    n_rossi > n_blu   then scelta := 'blu';
-  elsif n_blu   > n_rossi then scelta := 'rossi';
-  else  scelta := case when random() < 0.5 then 'rossi' else 'blu' end;
+  if n_rossi > n_blu then
+    scelta := 'blu';
+  elsif n_blu > n_rossi then
+    scelta := 'rossi';
+  else
+    scelta := case when random() < 0.5 then 'rossi' else 'blu' end;
   end if;
 
-  insert into public.menti_squadre (sessione_id, squadra) values (s_id, scelta);
+  insert into public.menti_squadre (sessione_id, squadra)
+  values (s_id, scelta);
+
   return scelta;
-end $$;
+end
+$fnsquadra$;
 
 revoke all on function public.menti_assegna_squadra(text) from public;
 grant execute on function public.menti_assegna_squadra(text) to anon, authenticated;
