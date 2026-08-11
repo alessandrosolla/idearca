@@ -6,7 +6,7 @@
 <title>Chi sono · Cosa è Idearca — Alessandro Solla</title>
 <meta name="description" content="Alessandro Solla, docente abilitato di Storia e Filosofia (A-19). Che cos'è Idearca: una piattaforma didattica progettata, scritta e mantenuta da me.">
 <link rel="icon" type="image/svg+xml" href="../favicon.svg">
-<link rel="stylesheet" href="../css/stile.css?v=20260811n">
+<link rel="stylesheet" href="../css/stile.css?v=20260811p">
 <style>
 body{background:linear-gradient(180deg,#f5f3ea 0%,#eff2ea 45%,#f5f3eb 100%)}
 /* La pagina era scritta solo per il tema chiaro: al buio il testo
@@ -130,6 +130,19 @@ h3.sotto::before{content:'';width:22px;height:3px;border-radius:2px;
   padding:1.2rem 1.4rem;border-radius:0 10px 10px 0;margin:1.6rem 0}
 .avviso p{margin:0;font-size:.88rem}
 
+.barra-modifica{display:none;position:fixed;left:50%;bottom:1.4rem;transform:translateX(-50%);
+  z-index:60;gap:.6rem;align-items:center;padding:.7rem 1rem;border-radius:100px;
+  background:rgba(18,36,17,.95);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);
+  box-shadow:0 10px 40px rgba(0,0,0,.3)}
+.barra-modifica.on{display:flex}
+.bm-et{font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;color:#c4a44e;font-weight:600}
+.barra-modifica button{font-family:'Jost',sans-serif;font-size:.72rem;letter-spacing:.1em;
+  text-transform:uppercase;padding:.5rem 1rem;border-radius:100px;cursor:pointer;
+  border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.08);color:#eef3ea}
+.barra-modifica button:hover{background:rgba(255,255,255,.18)}
+.bm-esito{font-size:.72rem;color:#b7c4b3;max-width:20rem}
+.in-modifica{outline:2px dashed var(--gold);outline-offset:4px;border-radius:4px;
+  background:rgba(196,164,78,.07)}
 .torna{display:inline-flex;align-items:center;gap:.5rem;margin-top:3rem;
   font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--forest);
   text-decoration:none;border:1.5px solid var(--forest);padding:.75rem 1.6rem;border-radius:3px}
@@ -294,15 +307,15 @@ h3.sotto::before{content:'';width:22px;height:3px;border-radius:2px;
 
   <span class="pg-eye" id="chi">Chi sono</span>
   <h1>Alessandro Solla</h1>
-  <p class="lede">Insegno Storia e Filosofia. Idearca è lo strumento che mi sono
+  <p class="lede" data-campo="lede">Insegno Storia e Filosofia. Idearca è lo strumento che mi sono
   costruito per farlo: l'ho progettato, l'ho realizzato e lo mantengo da solo.</p>
 
   <div class="intesta">
     <div class="ritratto-vuoto" id="ritratto">AS</div>
     <div>
       <h2>Alessandro Solla</h2>
-      <div class="ruolo">Docente abilitato — classe di concorso A-19, Storia e Filosofia</div>
-      <p>Laurea magistrale in Storia e società conseguita <strong>in un solo
+      <div class="ruolo" data-campo="ruolo">Docente abilitato — classe di concorso A-19, Storia e Filosofia</div>
+      <p data-campo="presentazione">Laurea magistrale in Storia e società conseguita <strong>in un solo
       anno</strong>. Ho contribuito a progetti di <strong>storia pubblica e digitale,
       con due pubblicazioni su UNICApress</strong>. Ho lavorato come tutor per
       l'inclusione all'Università di Cagliari, affiancando studenti con disabilità e
@@ -366,11 +379,11 @@ h3.sotto::before{content:'';width:22px;height:3px;border-radius:2px;
 
   <h2 class="sez" id="cosa">Cosa è Idearca</h2>
 
-  <p>Idearca è una piattaforma didattica. Non è un blog, non è un sito vetrina e
+  <p data-campo="cosa1">Idearca è una piattaforma didattica. Non è un blog, non è un sito vetrina e
   non è un tema comprato: è un'applicazione web <strong>progettata, costruita e
   mantenuta da me</strong>, mentre insegnavo.</p>
 
-  <p>È nata da un problema pratico. Avevo centinaia di materiali sparsi fra cartelle,
+  <p data-campo="cosa2">È nata da un problema pratico. Avevo centinaia di materiali sparsi fra cartelle,
   chiavette e allegati di posta, e in aula perdevo minuti a cercarli. Serviva un
   posto solo, ordinato per programma, che funzionasse dal telefono di uno studente
   come dal proiettore della classe.</p>
@@ -472,6 +485,93 @@ h3.sotto::before{content:'';width:22px;height:3px;border-radius:2px;
 })();
 try{const t=localStorage.getItem('idearca-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}
 </script>
-<script src="../js/numeri.js?v=20260811n" data-base="../"></script>
+<script src="../js/numeri.js?v=20260811p" data-base="../"></script>
+
+<div class="barra-modifica" id="barra-modifica">
+  <span class="bm-et">Modalità docente</span>
+  <button id="bm-avvia" onclick="avviaModifica()">Modifica la pagina</button>
+  <button id="bm-salva" onclick="salvaProfilo()" style="display:none">Salva</button>
+  <button id="bm-annulla" onclick="annullaModifica()" style="display:none">Annulla</button>
+  <span class="bm-esito" id="bm-esito"></span>
+</div>
+
+<script>
+/* ══════════════════════════════════════════════════════════
+   LA PAGINA CHE SI CORREGGE DA SOLA
+   I pezzi segnati con data-campo possono essere riscritti dal
+   sito: si salvano nel database e da lì tornano a ogni visita.
+   Se il database non risponde, resta il testo scritto nel file:
+   la pagina non è mai vuota.
+   Il permesso non lo decide questo script — lo decidono le regole
+   del database, che accettano scritture solo dal docente.
+   ══════════════════════════════════════════════════════════ */
+const SB='https://mqjceddrbhpwqjomhohm.supabase.co';
+const KEY='sb_publishable_D7vDsaervKNJNgdJwknDpQ_Vuuf9CeJ';
+const token=()=>sessionStorage.getItem('atk')||'';
+const capo=(extra)=>Object.assign({'apikey':KEY,'Authorization':'Bearer '+(token()||KEY)},extra||{});
+let originali={};
+
+async function caricaProfilo(){
+  try{
+    const r=await fetch(SB+'/rest/v1/profilo?select=chiave,valore',{headers:capo()});
+    if(!r.ok) return;
+    (await r.json()).forEach(riga=>{
+      const el=document.querySelector('[data-campo="'+riga.chiave+'"]');
+      if(el) el.innerHTML=riga.valore;
+    });
+  }catch(e){}
+}
+caricaProfilo();
+
+/* la barra compare solo a chi ha una sessione da docente aperta */
+if(token()) document.getElementById('barra-modifica').classList.add('on');
+
+function campi(){ return [...document.querySelectorAll('[data-campo]')]; }
+
+function avviaModifica(){
+  originali={};
+  campi().forEach(el=>{
+    originali[el.dataset.campo]=el.innerHTML;
+    el.setAttribute('contenteditable','true');
+    el.classList.add('in-modifica');
+  });
+  document.getElementById('bm-avvia').style.display='none';
+  document.getElementById('bm-salva').style.display='';
+  document.getElementById('bm-annulla').style.display='';
+  document.getElementById('bm-esito').textContent='Clicca su un testo e riscrivilo.';
+  campi()[0]?.focus();
+}
+
+function chiudiModifica(){
+  campi().forEach(el=>{el.removeAttribute('contenteditable');el.classList.remove('in-modifica');});
+  document.getElementById('bm-avvia').style.display='';
+  document.getElementById('bm-salva').style.display='none';
+  document.getElementById('bm-annulla').style.display='none';
+}
+
+function annullaModifica(){
+  campi().forEach(el=>{ if(originali[el.dataset.campo]!==undefined) el.innerHTML=originali[el.dataset.campo]; });
+  chiudiModifica();
+  document.getElementById('bm-esito').textContent='Modifiche annullate.';
+}
+
+async function salvaProfilo(){
+  const esito=document.getElementById('bm-esito');
+  esito.textContent='Salvo…';
+  const righe=campi().map(el=>({chiave:el.dataset.campo, valore:el.innerHTML.trim(), aggiornato_il:new Date().toISOString()}));
+  try{
+    const r=await fetch(SB+'/rest/v1/profilo?on_conflict=chiave',{
+      method:'POST',
+      headers:capo({'Content-Type':'application/json','Prefer':'resolution=merge-duplicates,return=minimal'}),
+      body:JSON.stringify(righe)
+    });
+    if(!r.ok) throw new Error((await r.text()).slice(0,150));
+    chiudiModifica();
+    esito.textContent='Salvato. Lo vedranno tutti da adesso.';
+  }catch(e){
+    esito.textContent='Non salvato: '+e.message;
+  }
+}
+</script>
 </body>
 </html>
