@@ -563,31 +563,196 @@ async function loadLibStats(keys){
    Ogni materia porta il proprio segno, disegnato a mano in SVG e
    stampato in filigrana dietro l'intestazione. Non è decorazione
    a caso: sono i simboli con cui quella materia si riconosce —
-   il meandro dei Greci, l'arco a sesto acuto dei medievali, la
+   il tempio dorico, l'arco a sesto acuto, la sfera armillare, la
    rosa dei venti di chi attraversa gli oceani.
-   Restano al 7% di opacità: si vedono senza farsi leggere.
+
+   Ognuno sta in un riquadro di 100×100 e conta fra i venti e i
+   quaranta tratti: le proporzioni sono quelle vere, non lo schizzo
+   di prima. Il disegno viene mostrato a 215px sul monitor e a 145
+   sul telefono, al 20% di opacità: da lì viene la regola che si
+   sono dati questi tratti — nessun dettaglio più sottile di due
+   unità, o a quella dimensione impasta e sporca soltanto.
    ──────────────────────────────────────────────────────────── */
 const SIGILLI={
-  'fil-antica':
-    '<path d="M14 78h72M22 78V34M78 78V34M18 34h66l-8-8H26z"/><path d="M30 34v44M42 34v44M58 34v44M70 34v44"/><path d="M50 26V12M40 18h20"/>',
-  'fil-medievale':
-    '<path d="M50 12C34 30 28 46 28 62v24h44V62c0-16-6-32-22-50z"/><path d="M50 34c-8 10-11 20-11 28v24M50 34c8 10 11 20 11 28v24"/><path d="M28 86h44"/>',
-  'fil-moderna':
-    '<circle cx="50" cy="50" r="30"/><ellipse cx="50" cy="50" rx="30" ry="11"/><ellipse cx="50" cy="50" rx="11" ry="30"/><circle cx="50" cy="50" r="4"/><path d="M50 8v6M50 86v6M8 50h6M86 50h6"/>',
-  'fil-contemporanea':
-    '<path d="M12 62c8-20 16-20 24 0s16 20 24 0 16-20 24 0"/><path d="M12 38c8-20 16-20 24 0s16 20 24 0 16-20 24 0"/><circle cx="50" cy="50" r="5"/>',
-  'sto-preistoria':
-    '<path d="M50 14L18 34v44h64V34z"/><path d="M18 34h64"/><path d="M30 78V50h12v28M58 78V50h12v28"/><path d="M50 14v-6"/><path d="M12 86h76"/>',
-  'sto-medievale':
-    '<path d="M20 86V38h60v48z"/><path d="M20 38V24h10v8h10v-8h10v8h10v-8h10v14"/><path d="M42 86V62a8 8 0 0116 0v24"/><path d="M32 50h8M60 50h8"/>',
-  'sto-moderna':
-    '<circle cx="50" cy="50" r="32"/><path d="M50 18l7 25 25 7-25 7-7 25-7-25-25-7 25-7z"/><circle cx="50" cy="50" r="5"/>',
-  'sto-contemporanea':
-    '<circle cx="38" cy="58" r="16"/><circle cx="38" cy="58" r="5"/><path d="M38 42v-6M38 80v-6M22 58h-6M60 58h-6M27 47l-4-4M53 73l4 4M27 69l-4 4M53 43l4-4"/><path d="M62 34h24M62 44h24M62 54h16"/>',
-  'civ-costituzione':
-    '<path d="M20 34h60M50 20v14M26 34l-10 26h20zM74 34l-10 26h20z"/><path d="M16 60a10 10 0 0020 0M64 60a10 10 0 0020 0"/><path d="M50 34v46M34 86h32"/>',
-  'civ-istituzioni':
-    '<path d="M50 14L16 32h68z"/><path d="M22 32v42M38 32v42M62 32v42M78 32v42"/><path d="M14 74h72M10 86h80"/>'
+
+  /* Tempio dorico. Tre gradini di stilobate, sei colonne scanalate
+     con capitello a echino, architrave, fregio a triglifi, timpano
+     con acroteri. */
+  'fil-antica':`
+    <path d="M12 32L50 14l38 18"/><path d="M16 31L50 16l34 15"/>
+    <path d="M50 14v-3M12 32v-2M88 32v-2"/>
+    <circle cx="50" cy="25" r="3"/>
+    <path d="M12 32h76M12 35h76M12 32v3M88 32v3"/>
+    <path d="M14 35h72M14 41h72M14 35v6M86 35v6"/>
+    <path d="M20 40v-4M26 40v-4M32 40v-4M38 40v-4M44 40v-4M50 40v-4M56 40v-4M62 40v-4M68 40v-4M74 40v-4M80 40v-4"/>
+    <path d="M14 44h72M14 41v3M86 41v3"/>
+    <path d="M17 48L15.5 44h9L23 48M29 48L27.5 44h9L35 48M41 48L39.5 44h9L47 48"/>
+    <path d="M53 48L51.5 44h9L59 48M65 48L63.5 44h9L71 48M77 48L75.5 44h9L83 48"/>
+    <path d="M17 80V48M23 80V48M29 80V48M35 80V48M41 80V48M47 80V48"/>
+    <path d="M53 80V48M59 80V48M65 80V48M71 80V48M77 80V48M83 80V48"/>
+    <path d="M20 78V50M32 78V50M44 78V50M56 78V50M68 78V50M80 78V50"/>
+    <path d="M16 80h68M13 84h74M10 88h80"/>
+    <path d="M16 80v4M84 80v4M13 84v4M87 84v4"/>`,
+
+  /* Arco a sesto acuto. Ghimberga, due archivolti, colonnine con
+     capitello e base, e dentro il traforo: due lancette con il loro
+     trifoglio e un quadrilobo nel timpano. Gli archi sono a due
+     centri, come si costruivano col compasso. */
+  'fil-medievale':`
+    <path d="M19 52A46.7 46.7 0 0 1 50 8"/><path d="M81 52A46.7 46.7 0 0 0 50 8"/>
+    <path d="M24 52A40.8 40.8 0 0 1 50 14"/><path d="M76 52A40.8 40.8 0 0 0 50 14"/>
+    <path d="M29 52A34.9 34.9 0 0 1 50 20"/><path d="M71 52A34.9 34.9 0 0 0 50 20"/>
+    <path d="M16 52h6M78 52h6"/>
+    <path d="M22 52h9v4h-9zM69 52h9v4h-9z"/>
+    <path d="M25 84V56M30 84V56M70 84V56M75 84V56"/>
+    <path d="M21 84h13M66 84h13M19 87h17M64 87h17"/>
+    <path d="M50 84V44"/>
+    <path d="M33 58A26.6 26.6 0 0 1 40 40"/><path d="M47 58A26.6 26.6 0 0 0 40 40"/>
+    <path d="M53 58A26.6 26.6 0 0 1 60 40"/><path d="M67 58A26.6 26.6 0 0 0 60 40"/>
+    <path d="M33 84V58M47 84V58M53 84V58M67 84V58"/>
+    <circle cx="40" cy="47" r="2.6"/><circle cx="60" cy="47" r="2.6"/>
+    <circle cx="50" cy="30" r="7.5"/>
+    <circle cx="50" cy="25.6" r="3.2"/><circle cx="54.4" cy="30" r="3.2"/>
+    <circle cx="50" cy="34.4" r="3.2"/><circle cx="45.6" cy="30" r="3.2"/>`,
+
+  /* Sfera armillare. Cerchio meridiano graduato con otto tacche,
+     orizzonte, coluro, eclittica inclinata di 23,5°, i due tropici,
+     la Terra al centro e l'asse polare che esce dai poli. */
+  'fil-moderna':`
+    <circle cx="50" cy="50" r="34"/><circle cx="50" cy="50" r="31"/>
+    <ellipse cx="50" cy="50" rx="34" ry="12"/><ellipse cx="50" cy="50" rx="31" ry="10"/>
+    <ellipse cx="50" cy="50" rx="12" ry="34"/><ellipse cx="50" cy="50" rx="10" ry="31"/>
+    <ellipse cx="50" cy="50" rx="31" ry="11" transform="rotate(-23.5 50 50)"/>
+    <ellipse cx="50" cy="38" rx="26" ry="8"/><ellipse cx="50" cy="62" rx="26" ry="8"/>
+    <path d="M81 50h3M50 81v3M19 50h-3M50 19v-3"/>
+    <path d="M71.9 71.9L74 74M28.1 71.9L26 74M28.1 28.1L26 26M71.9 28.1L74 26"/>
+    <circle cx="50" cy="50" r="5"/>
+    <path d="M50 16V8M50 84v8"/>
+    <path d="M38 92h24M42 92l-4 6M58 92l4 6"/>`,
+
+  /* Il cerchio non chiude più e il centro non c'è: al suo posto una
+     rete di nodi, dove ogni punto ne regge altri e nessuno regge
+     tutto. Il pensiero contemporaneo disegnato come sta: per
+     collegamenti, non per gerarchia. */
+  'fil-contemporanea':`
+    <path d="M55.9 16.5A34 34 0 0 1 83.5 44.1"/>
+    <path d="M83.5 55.9A34 34 0 0 1 55.9 83.5"/>
+    <path d="M44.1 83.5A34 34 0 0 1 16.5 55.9"/>
+    <path d="M16.5 44.1A34 34 0 0 1 44.1 16.5"/>
+    <path d="M50 26L30 36M50 26L70 36M50 26V48"/>
+    <path d="M30 36L22 54M30 36L50 48M70 36L50 48M70 36L78 54"/>
+    <path d="M22 54L50 48M22 54L34 70M50 48L78 54"/>
+    <path d="M50 48L34 70M50 48L66 70M78 54L66 70"/>
+    <path d="M34 70L50 78M66 70L50 78M34 70h32"/>
+    <circle cx="50" cy="26" r="2.6"/><circle cx="30" cy="36" r="2.6"/>
+    <circle cx="70" cy="36" r="2.6"/><circle cx="22" cy="54" r="2.6"/>
+    <circle cx="78" cy="54" r="2.6"/><circle cx="34" cy="70" r="2.6"/>
+    <circle cx="66" cy="70" r="2.6"/><circle cx="50" cy="78" r="2.6"/>
+    <circle cx="50" cy="48" r="4"/>`,
+
+  /* Trilite: due ritti sbozzati a mano e l'architrave che li lega,
+     con due pietre più basse dietro, le coppelle incise sopra e il
+     sole che ci passa attraverso. Le pietre non sono squadrate —
+     nessun lato è parallelo all'altro. */
+  'sto-preistoria':`
+    <path d="M23 84L21 42l12-2 2 44z"/>
+    <path d="M65 84L63 40l12 2-2 42z"/>
+    <path d="M16 42l68-2-1-9-66 2z"/>
+    <path d="M40 84V54l6-1v31M54 84V53l6 1v30"/>
+    <path d="M26 52v10M28 66v8M67 50v11M70 65v9"/>
+    <circle cx="28" cy="37" r="1.8"/><circle cx="42" cy="36.5" r="1.8"/>
+    <circle cx="58" cy="36" r="1.8"/><circle cx="72" cy="35.5" r="1.8"/>
+    <circle cx="50" cy="18" r="7"/>
+    <path d="M59 18h3M50 27v3M41 18h-3M50 9V6"/>
+    <path d="M56.4 24.4l2.1 2.1M43.6 24.4l-2.1 2.1M43.6 11.6l-2.1-2.1M56.4 11.6l2.1-2.1"/>
+    <path d="M8 84h84M13 88h74"/>`,
+
+  /* Castello. Mastio e due torri merlate, corsi di pietra, feritoie
+     a croce, saracinesca sotto l'arco della porta e lo stendardo in
+     cima. I merli sono contati, non accennati. */
+  'sto-medievale':`
+    <path d="M34 34V28h5v4h4v-4h5v4h4v-4h5v4h4v-4h5v6"/>
+    <path d="M16 44V38h5v4h4v-4h5v4h4v2"/>
+    <path d="M84 44V38h-5v4h-4v-4h-5v4h-4v2"/>
+    <path d="M34 34V84M66 34V84M16 44V84M84 44V84"/>
+    <path d="M34 46h32M34 58h32M34 70h32"/>
+    <path d="M16 54h18M16 66h18M16 78h18M66 54h18M66 66h18M66 78h18"/>
+    <path d="M24 56v9M22 60h4M76 56v9M74 60h4"/>
+    <path d="M40 44v9M38 48h4M60 44v9M58 48h4"/>
+    <path d="M42 84V66A8 8 0 0 1 58 66V84"/>
+    <path d="M46 84V64M50 84V62M54 84V64M42 78h16M42 72h16"/>
+    <path d="M50 28V16M50 16l13 3.5-13 3.5"/>
+    <path d="M12 84h76M8 88h84"/>`,
+
+  /* Rosa dei venti. Quattro punte maggiori e quattro minori, ognuna
+     piegata a metà come sulle carte nautiche, dentro un cerchio
+     graduato ogni trenta gradi. */
+  'sto-moderna':`
+    <circle cx="50" cy="50" r="38"/><circle cx="50" cy="50" r="34"/>
+    <path d="M65.6 34.4L47.9 47.9L52.1 52.1z"/><path d="M34.4 34.4L47.9 52.1L52.1 47.9z"/>
+    <path d="M65.6 65.6L47.9 52.1L52.1 47.9z"/><path d="M34.4 65.6L47.9 47.9L52.1 52.1z"/>
+    <path d="M50 20L46 50h8z"/><path d="M50 80L46 50h8z"/>
+    <path d="M80 50L50 46v8z"/><path d="M20 50L50 46v8z"/>
+    <path d="M50 20V50M50 80V50M80 50H50M20 50H50"/>
+    <path d="M84 50h4M50 84v4M16 50h-4M50 16v-4"/>
+    <path d="M79.4 67L82.9 69M67 79.4L69 82.9M33 79.4L31 82.9M20.6 67L17.1 69"/>
+    <path d="M20.6 33L17.1 31M33 20.6L31 17.1M67 20.6L69 17.1M79.4 33L82.9 31"/>
+    <circle cx="50" cy="50" r="5"/>`,
+
+  /* L'età della macchina: una ruota dentata a otto denti, con mozzo,
+     razze e ribattini, e due ciminiere che fumano dietro. */
+  'sto-contemporanea':`
+    <path d="M71.7 40.2L77.6 39.1L77.6 48.9L71.7 47.8"/>
+    <path d="M68 56.6L72.9 60.1L66.1 66.9L62.6 62"/>
+    <path d="M53.8 65.7L54.9 71.6L45.1 71.6L46.2 65.7"/>
+    <path d="M37.4 62L33.9 66.9L27.1 60.1L32 56.6"/>
+    <path d="M28.3 47.8L22.4 48.9L22.4 39.1L28.3 40.2"/>
+    <path d="M32 31.4L27.1 27.9L33.9 21.1L37.4 26"/>
+    <path d="M46.2 22.3L45.1 16.4L54.9 16.4L53.8 22.3"/>
+    <path d="M62.6 26L66.1 21.1L72.9 27.9L68 31.4"/>
+    <circle cx="50" cy="44" r="22"/><circle cx="50" cy="44" r="7"/><circle cx="50" cy="44" r="3"/>
+    <path d="M55 49L65.6 59.6M45 49L34.4 59.6M45 39L34.4 28.4M55 39L65.6 28.4"/>
+    <circle cx="64" cy="44" r="1.3"/><circle cx="57" cy="56.1" r="1.3"/>
+    <circle cx="43" cy="56.1" r="1.3"/><circle cx="36" cy="44" r="1.3"/>
+    <circle cx="43" cy="31.9" r="1.3"/><circle cx="57" cy="31.9" r="1.3"/>
+    <path d="M11 86V54h7v32M82 86V58h7v28"/>
+    <path d="M11 54c-3-6 3-9 0-15M82 58c-3-6 3-9 0-15"/>
+    <path d="M6 86h88M10 90h80"/>`,
+
+  /* La bilancia posata sulla carta. Il giogo, l'indice, tre catene
+     per piatto e i due piatti che pendono uguali: la legge sta in
+     equilibrio finché qualcuno non la muove. */
+  'civ-costituzione':`
+    <circle cx="50" cy="20" r="3"/><path d="M50 23v3"/>
+    <path d="M18 30h64"/><path d="M44 30h12"/>
+    <path d="M50 26v52"/>
+    <path d="M50 30l-4 7h8z"/>
+    <path d="M18 30L11 46M18 30v16M18 30l7 16"/>
+    <path d="M82 30L75 46M82 30v16M82 30l7 16"/>
+    <path d="M8 46h20M28 46A11 11 0 0 1 8 46"/>
+    <path d="M72 46h20M92 46A11 11 0 0 1 72 46"/>
+    <path d="M42 78h16M38 82h24"/>
+    <path d="M20 80c10-5 22-5 30 1c8-6 20-6 30-1"/>
+    <path d="M20 80v7c10-5 22-5 30 1c8-6 20-6 30-1v-7"/>
+    <path d="M50 81v7"/>`,
+
+  /* Palazzo delle istituzioni: cupola con lanterna, tamburo a
+     colonne, timpano, sei colonne di portico su tre gradini e due
+     ali basse ai lati. */
+  'civ-istituzioni':`
+    <circle cx="50" cy="18" r="2"/><path d="M50 20v4"/>
+    <path d="M47 32h6M48 32v-5h4v5"/>
+    <path d="M36 46A14 14 0 0 1 64 46"/><path d="M40 46A10 10 0 0 1 60 46"/>
+    <path d="M34 46h32M36 46v8M64 46v8M34 54h32"/>
+    <path d="M40 54v-8M46 54v-8M54 54v-8M60 54v-8"/>
+    <path d="M26 64L50 52l24 12"/><path d="M30 63L50 53.5l20 9.5"/>
+    <path d="M24 64h52M24 68h52M24 64v4M76 64v4"/>
+    <path d="M25.5 84V68M30.5 84V68M34.5 84V68M39.5 84V68M43.5 84V68M48.5 84V68"/>
+    <path d="M52.5 84V68M57.5 84V68M61.5 84V68M66.5 84V68M70.5 84V68M75.5 84V68"/>
+    <path d="M25 84h6M34 84h6M43 84h6M52 84h6M61 84h6M70 84h6"/>
+    <path d="M14 84V72h10v12M76 84V72h10v12"/>
+    <path d="M17 80h4M79 80h4"/>
+    <path d="M20 84h60M17 88h66M14 92h72"/>`
 };
 function sigilloDi(key){
   const d=SIGILLI[key];
