@@ -78,7 +78,8 @@ select{font:inherit;font-size:.9rem;padding:.45rem .6rem;border-radius:8px;
   <h1>Ricostruttore di sillogismi</h1>
   <p class="sub">Si compongono due premesse e una conclusione. Lo strumento non dice
   soltanto se il ragionamento tiene: dice <strong>quale regola è stata violata</strong>,
-  che è l'unica cosa che si impari davvero.</p>
+  che è l'unica cosa che si impari davvero. I termini si scrivono al plurale e con
+  l'articolo — «i greci», «gli uomini» — e le frasi si compongono da sole.</p>
 
   <div class="et">Prova con uno di questi</div>
   <div class="esempi" id="esempi"></div>
@@ -97,7 +98,7 @@ select{font:inherit;font-size:.9rem;padding:.45rem .6rem;border-radius:8px;
     </div>
     <div class="termine" style="--c:#a1542f">
       <label>Termine maggiore (P)</label>
-      <input id="t-P" value="mortali" oninput="ricalcola()">
+      <input id="t-P" value="i mortali" oninput="ricalcola()">
       <small>predicato della conclusione</small>
     </div>
   </div>
@@ -138,28 +139,35 @@ select{font:inherit;font-size:.9rem;padding:.45rem .6rem;border-radius:8px;
 /* Le quattro forme. `dist` dice se la proposizione distribuisce
    (cioè parla di TUTTI gli individui di) il soggetto e il predicato:
    è il nodo su cui si reggono metà delle regole. */
+/* I modelli sono tutti al plurale e tutti in minuscola: al plurale
+   perché «è gli uomini» non si dice e un solo modo di scrivere i
+   termini deve andare bene in tutte e quattro le forme; in minuscola
+   perché la maiuscola la mette chi compone la frase, e la conclusione
+   comincia con «Dunque,». */
 const FORME={
-  A:{nome:'Universale affermativa', modello:'Tutti __S__ sono __P__',
+  A:{nome:'Universale affermativa', modello:'tutti __S__ sono __P__',
      neg:false, part:false, dist:{s:true,  p:false}},
-  E:{nome:'Universale negativa',    modello:'Nessuno fra __S__ è __P__',
+  E:{nome:'Universale negativa',    modello:'__S__ non sono mai __P__',
      neg:true,  part:false, dist:{s:true,  p:true }},
-  I:{nome:'Particolare affermativa',modello:'Qualcuno fra __S__ è __P__',
+  I:{nome:'Particolare affermativa',modello:'alcuni fra __S__ sono __P__',
      neg:false, part:true,  dist:{s:false, p:false}},
-  O:{nome:'Particolare negativa',   modello:'Qualcuno fra __S__ non è __P__',
+  O:{nome:'Particolare negativa',   modello:'alcuni fra __S__ non sono __P__',
      neg:true,  part:true,  dist:{s:false, p:true }}
 };
 
 const ESEMPI=[
-  {n:'Barbara — il classico', S:'i greci', M:'gli uomini', P:'mortali',
+  {n:'Barbara — il classico', S:'i greci', M:'gli uomini', P:'i mortali',
    f1:'A', o1:'MP', f2:'A', o2:'SM', f3:'A'},
-  {n:'Celarent', S:'i gatti', M:'i rettili', P:'a sangue freddo',
+  {n:'Celarent', S:'i gatti', M:'i rettili', P:'gli animali a sangue freddo',
    f1:'E', o1:'MP', f2:'A', o2:'SM', f3:'E'},
-  {n:'Medio non distribuito', S:'i filosofi', M:'i greci', P:'mortali',
+  {n:'Medio non distribuito', S:'i filosofi', M:'i greci', P:'i mortali',
    f1:'A', o1:'PM', f2:'A', o2:'SM', f3:'A'},
-  {n:'Due premesse negative', S:'i sofisti', M:'i matematici', P:'infallibili',
+  {n:'Due premesse negative', S:'i sofisti', M:'i matematici', P:'gli infallibili',
    f1:'E', o1:'MP', f2:'E', o2:'SM', f3:'E'},
-  {n:'Conclusione troppo ampia', S:'i greci', M:'gli uomini', P:'mortali',
-   f1:'A', o1:'MP', f2:'I', o2:'SM', f3:'A'}
+  {n:'Conclusione troppo ampia', S:'i greci', M:'gli uomini', P:'i mortali',
+   f1:'A', o1:'MP', f2:'I', o2:'SM', f3:'A'},
+  {n:'Darapti — valido a una condizione', S:'i filosofi', M:'i greci', P:'i mortali',
+   f1:'A', o1:'MP', f2:'A', o2:'MS', f3:'I'}
 ];
 
 function riempiSelect(){
@@ -195,9 +203,17 @@ const T=()=>({S:document.getElementById('t-S').value.trim()||'S',
               M:document.getElementById('t-M').value.trim()||'M',
               P:document.getElementById('t-P').value.trim()||'P'});
 
+/* I termini si scrivono con l'articolo, perché da soggetto serve
+   («tutti i greci»). Da predicato l'articolo va invece tolto:
+   «sono uomini», non «sono gli uomini». */
+const senzaArticolo = s => s.replace(/^l['’]\s*/i,'').replace(/^(gli|il|lo|la|le|i)\s+/i,'');
+const maiuscola = s => s.charAt(0).toUpperCase()+s.slice(1);
+
 function frase(forma, sog, pred){
   const t=T();
-  return FORME[forma].modello.replace('__S__', t[sog]).replace('__P__', t[pred]);
+  return FORME[forma].modello
+    .replace('__S__', t[sog])
+    .replace('__P__', senzaArticolo(t[pred]));
 }
 
 /* Una proposizione, con dentro quali termini distribuisce.
@@ -228,12 +244,20 @@ function ricalcola(){
   const P2=proposizione(f2, o2[0], o2[1]);
   const C =proposizione(f3, 'S', 'P');
 
-  document.getElementById('fr1').textContent=frase(f1,o1[0],o1[1]);
-  document.getElementById('fr2').textContent=frase(f2,o2[0],o2[1]);
-  document.getElementById('fr3').textContent='Dunque, '+frase(f3,'S','P').toLowerCase();
+  document.getElementById('fr1').textContent=maiuscola(frase(f1,o1[0],o1[1]));
+  document.getElementById('fr2').textContent=maiuscola(frase(f2,o2[0],o2[1]));
+  document.getElementById('fr3').textContent='Dunque, '+frase(f3,'S','P');
+
+  /* Le sei regole promuovono ventiquattro modi, non quindici. I nove
+     in più (Darapti, Barbari, Felapton, Bramantip…) cavano una
+     conclusione particolare da due premesse universali: reggono solo
+     se i termini non sono vuoti, cioè se qualcuno esiste davvero.
+     La tradizione li accetta, la logica moderna no. Non li bocciamo:
+     lo diciamo, che è la cosa da imparare. */
+  const perSubalternazione = !P1.part && !P2.part && C.part;
 
   const esiti=controlla(P1,P2,C);
-  disegnaEsito(esiti, f1+f2+f3, figura(o1,o2));
+  disegnaEsito(esiti, f1+f2+f3, figura(o1,o2), perSubalternazione);
 }
 
 /* ── LE SEI REGOLE ─────────────────────────────────────────
@@ -285,20 +309,25 @@ function controlla(P1,P2,C){
   return r;
 }
 
-function disegnaEsito(regole, modo, fig){
+function disegnaEsito(regole, modo, fig, perSubalternazione){
   const rotte=regole.filter(r=>!r.ok);
   const valido=rotte.length===0;
+  const condizionato=valido && perSubalternazione;
   const box=document.getElementById('esito');
   box.className='esito '+(valido?'valido':'invalido');
   box.innerHTML=
-    '<div class="esito-titolo">'+(valido?'Il ragionamento è valido':'Il ragionamento non tiene')+'</div>'
+    '<div class="esito-titolo">'
+    + (valido ? (condizionato?'Il ragionamento è valido, a una condizione':'Il ragionamento è valido')
+              : 'Il ragionamento non tiene')+'</div>'
     + '<div class="sigla">Modo '+modo+' · '+fig+'ª figura'
     + (valido?'' : ' · '+rotte.map(r=>r.errore).join(' · '))+'</div>'
     + '<ul class="regole">'
     + regole.map(r=>'<li class="regola '+(r.ok?'ok':'ko')+'"><i>'+(r.ok?'✓':'✕')+'</i>'
         + '<span><b>'+r.nome+'.</b> '+r.spiega+'</span></li>').join('')
     + '</ul>'
-    + (valido
+    + (condizionato
+      ? '<p class="nota">Le sei regole sono tutte rispettate, ma qui da due premesse universali si cava una conclusione particolare: si passa da «tutti» a «qualcuno». Il passaggio vale solo se quel qualcuno esiste davvero. «Tutti i quadrati rotondi sono figure, tutti i quadrati rotondi hanno quattro lati, dunque <em>qualche</em> figura ha quattro lati»: le regole non protestano, eppure di quadrati rotondi non ce n\'è nessuno. Aristotele accettava questi modi, la logica moderna li respinge.</p>'
+      : valido
       ? '<p class="nota">Valido non vuol dire vero: se le premesse sono false, una forma corretta porta lo stesso a una conclusione falsa. La logica garantisce il passaggio, non il punto di partenza.</p>'
       : '<p class="nota">Un ragionamento può essere sbagliato e avere lo stesso una conclusione vera — per caso. È il motivo per cui si studia la forma e non solo il risultato.</p>');
 }
