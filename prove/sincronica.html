@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Linea del tempo sincronica — Idearca</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Jost',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  background:#faf8f3;color:#1c2b1a;font-weight:300;-webkit-font-smoothing:antialiased}
+.w{max-width:1020px;margin:0 auto;padding:2rem 1.5rem 4rem}
+.k{font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:#8a9e87;font-weight:600}
+h1{font-family:'Cormorant Garamond',Georgia,serif;font-size:2.4rem;font-weight:400;margin:.3rem 0 .5rem}
+.sub{font-size:.92rem;line-height:1.7;color:#5a6b58;max-width:66ch}
+.et{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:#9a7c2e;
+  font-weight:700;margin:1.8rem 0 .8rem;display:flex;align-items:center;gap:.6rem}
+.et::after{content:'';flex:1;height:1px;background:rgba(45,90,39,.13)}
+
+/* la barra degli anni: una riga sola, scorrevole sul telefono */
+.anni{display:flex;gap:.4rem;overflow-x:auto;padding-bottom:.5rem;scrollbar-width:thin}
+.an{flex:none;font:inherit;font-size:.8rem;padding:.55rem 1rem;border-radius:100px;cursor:pointer;
+  border:1.5px solid rgba(45,90,39,.2);background:#fff;color:#2d5a27;transition:all .16s;
+  font-weight:600;white-space:nowrap}
+.an:hover{border-color:#2d5a27}
+.an.attivo{background:#2d5a27;color:#fff;border-color:#2d5a27}
+
+.titolo-t{font-family:'Cormorant Garamond',Georgia,serif;font-size:2rem;font-weight:600;
+  margin:1.2rem 0 .2rem;color:#1c2b1a}
+.occhiello{font-size:.86rem;line-height:1.7;color:#5a6b58;max-width:68ch;margin-bottom:1rem}
+
+.mondo{display:grid;grid-template-columns:repeat(auto-fill,minmax(295px,1fr));gap:.7rem}
+.reg{border:1px solid rgba(45,90,39,.14);border-top:3px solid var(--c);border-radius:12px;
+  padding:.9rem 1.05rem;background:#fff}
+.reg h3{font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;color:var(--c);
+  font-weight:700;margin-bottom:.5rem;display:flex;align-items:center;gap:.4rem}
+.reg h3::before{content:'';width:8px;height:8px;border-radius:50%;background:var(--c);flex:none}
+.reg .fatto{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.12rem;line-height:1.4;
+  color:#1c2b1a;font-weight:600;margin-bottom:.35rem}
+.reg p{font-size:.83rem;line-height:1.65;color:#3d4a3b}
+.reg .quando{display:inline-block;font-size:.6rem;letter-spacing:.1em;color:#8a9e87;
+  font-weight:600;margin-top:.45rem}
+
+.perno{margin-top:1.1rem;border-radius:14px;padding:1.15rem 1.35rem;background:#fff;
+  border:1px solid rgba(45,90,39,.14);border-left:5px solid #9a7c2e}
+.perno h3{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.4rem;font-weight:600;
+  color:#8a6a1e;margin-bottom:.4rem}
+.perno p{font-size:.88rem;line-height:1.75;color:#3d4a3b}
+.perno p+p{margin-top:.6rem}
+
+.dom{margin-top:.9rem;padding:.85rem 1rem;border-radius:10px;background:#f6f3ec;
+  font-size:.85rem;line-height:1.7;color:#5a6b58}
+.dom b{color:#8a6a1e;font-weight:600;display:block;margin-bottom:.2rem}
+
+.frecce{display:flex;gap:.5rem;margin-top:1rem;justify-content:space-between}
+.b{font:inherit;font-size:.78rem;padding:.55rem 1.1rem;border-radius:100px;cursor:pointer;
+  border:1.5px solid rgba(45,90,39,.22);background:#fff;color:#2d5a27;font-weight:500;transition:all .16s}
+.b:hover{background:#2d5a27;color:#fff;border-color:#2d5a27}
+.b:disabled{opacity:.35;cursor:default}
+.b:disabled:hover{background:#fff;color:#2d5a27;border-color:rgba(45,90,39,.22)}
+@media(max-width:640px){
+  .w{padding:1.4rem 1rem 3rem}h1{font-size:1.9rem}.titolo-t{font-size:1.6rem}
+  .mondo{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<div class="w">
+  <div class="k">Idearca · Prove</div>
+  <h1>Linea del tempo sincronica</h1>
+  <p class="sub">Si sceglie un momento e si guarda tutto il pianeta insieme. I manuali
+  raccontano una storia per volta e la portano avanti per secoli, così si finisce per
+  credere che mentre in Europa accadeva qualcosa, <strong>altrove non accadesse
+  niente</strong>. Qui le colonne stanno affiancate, e si vede che non è mai stato vero.</p>
+
+  <div class="et">Il momento</div>
+  <div class="anni" id="anni"></div>
+
+  <div class="titolo-t" id="titolo"></div>
+  <div class="occhiello" id="occhiello"></div>
+  <div class="mondo" id="mondo"></div>
+  <div class="perno" id="perno"></div>
+
+  <div class="frecce">
+    <button class="b" id="prima" onclick="muovi(-1)">&larr; Prima</button>
+    <button class="b" id="dopo" onclick="muovi(1)">Dopo &rarr;</button>
+  </div>
+</div>
+
+<script>
+/* ══════════════════════════════════════════════════════════
+   LA LINEA DEL TEMPO SINCRONICA
+   Il taglio è orizzontale, non verticale: invece di seguire
+   un filo per secoli, si ferma il tempo e si guarda in giro.
+   Le colonne hanno tutte lo stesso peso in pagina — è una
+   scelta, e si vede: nessuna regione è «lo sfondo» di un'altra.
+   ══════════════════════════════════════════════════════════ */
+
+const AREE={
+ 'Europa':            '#2d5a27',
+ 'Mediterraneo e Vicino Oriente': '#9a7c2e',
+ 'Asia orientale':    '#a1542f',
+ 'India':             '#7a4b8c',
+ 'Africa':            '#3f6d8c',
+ 'Americhe':          '#6b6459'
+};
+
+const TAGLI=[
+{
+ anno:'500 a.C. circa', occhiello:'Il secolo in cui, in quattro punti del mondo che non si conoscevano, qualcuno smette di spiegare le cose con gli dèi.',
+ mondo:[
+  {a:'Europa', t:'Atene inventa la democrazia', q:'508-507 a.C.',
+   d:'Clistene riordina i cittadini per residenza invece che per famiglia, spezzando il potere dei clan aristocratici. A Roma, quasi negli stessi anni, viene cacciato l\'ultimo re e nasce la repubblica.'},
+  {a:'Mediterraneo e Vicino Oriente', t:'L\'impero persiano al suo culmine', q:'522-486 a.C.',
+   d:'Dario I governa dall\'Egeo all\'Indo: il più grande impero visto fino ad allora. La strada regia da Susa a Sardi si percorre in una settimana coi corrieri a cavallo.'},
+  {a:'India', t:'Il Buddha predica', q:'morte tradizionale 483 a.C.',
+   d:'Siddhartha Gautama insegna una via che non passa per i sacrifici né per le caste. Negli stessi decenni Mahavira fonda il giainismo: due religioni senza dèi creatori.'},
+  {a:'Asia orientale', t:'Confucio gira gli stati in guerra', q:'551-479 a.C.',
+   d:'Offre consigli di governo a principi che non lo ascoltano. Il suo tema è come si tenga insieme una società quando l\'ordine antico è crollato — la stessa domanda che si fanno ad Atene.'},
+  {a:'Africa', t:'Il regno di Kush governa da Meroe', q:'VI secolo a.C.',
+   d:'I sovrani nubiani, che un secolo e mezzo prima avevano regnato sull\'Egitto come XXV dinastia, spostano la capitale a Meroe e sviluppano una scrittura propria, ancora oggi solo in parte decifrata.'},
+  {a:'Americhe', t:'Monte Albán si popola', q:'500 a.C. circa',
+   d:'Gli Zapotechi fondano sull\'altopiano di Oaxaca una città su una collina spianata a mano. Gli Olmechi, la prima grande cultura mesoamericana, sono ormai in declino.'}],
+ perno:{t:'L\'età assiale',
+  p:['Karl Jaspers ha chiamato «età assiale» i secoli fra l\'800 e il 200 a.C., in cui in Grecia, in India, in Cina e in Israele compaiono quasi insieme il pensiero razionale, le religioni universali e l\'idea che l\'individuo possa mettere in discussione la tradizione in cui è nato.',
+     'La tesi è discussa — le date non combaciano perfettamente, e le somiglianze si possono sempre forzare. Ma resta il fatto grezzo: fra il VI e il V secolo a.C., in luoghi che non comunicavano, si comincia a chiedere «perché» invece di ripetere «così si è sempre fatto».'],
+  dom:'Se questi pensatori non si sono mai letti fra loro, che cosa può spiegare che si muovano insieme? E se non c\'è nessuna spiegazione, la coincidenza è ancora interessante?'}
+},
+{
+ anno:'221 a.C.', occhiello:'L\'anno in cui la Cina diventa uno e il Mediterraneo sta per diventare romano.',
+ mondo:[
+  {a:'Asia orientale', t:'Qin Shi Huang unifica la Cina', q:'221 a.C.',
+   d:'Il primo imperatore chiude tre secoli di guerre fra stati. Unifica scrittura, pesi, misure e perfino la distanza fra le ruote dei carri, perché i solchi delle strade combacino. Fa bruciare i libri che non servono al nuovo ordine.'},
+  {a:'Europa', t:'Roma e Cartagine fra due guerre', q:'241-218 a.C.',
+   d:'Finita la prima guerra punica, Roma ha preso la Sicilia. Fra tre anni Annibale attraverserà le Alpi con gli elefanti. Nessuno dei due sa ancora che uno dei due sparirà.'},
+  {a:'India', t:'L\'impero Maurya dopo Ashoka', q:'268-232 a.C.',
+   d:'Ashoka aveva conquistato il Kalinga e, davanti alla strage, si era convertito al buddhismo: fece incidere sulla roccia editti di tolleranza in tutto l\'impero. Morto lui, la costruzione comincia a cedere.'},
+  {a:'Mediterraneo e Vicino Oriente', t:'Alessandria è la capitale del sapere', q:'III secolo a.C.',
+   d:'I Tolomei raccolgono nella Biblioteca ogni libro che passi dal porto. Qui Eratostene misura la circonferenza della Terra con un\'ombra e un pozzo, sbagliando di poco.'},
+  {a:'Americhe', t:'I Maya costruiscono El Mirador', q:'III secolo a.C.',
+   d:'Nel Petén sorge una delle piramidi più grandi del mondo antico per volume. Il periodo preclassico maya è già urbano, monumentale e organizzato, mille anni prima di quello che i manuali chiamano il loro apogeo.'},
+  {a:'Africa', t:'Cartagine, potenza africana', q:'III secolo a.C.',
+   d:'Prima di essere l\'avversaria di Roma, è la maggiore città del Mediterraneo occidentale: fenicia d\'origine, africana di sede, con un entroterra agricolo che i romani studieranno e copieranno.'}],
+ perno:{t:'Due imperi che non si sanno',
+  p:['Nel 221 a.C. esistono contemporaneamente due delle più grandi macchine amministrative mai costruite, agli estremi opposti dell\'Eurasia, e nessuna delle due sa dell\'altra. Si sfioreranno per la prima volta due secoli dopo, quando la seta cinese comincerà ad arrivare a Roma passando di mano in mano.',
+     'La Cina unificata da Qin durerà, con altri nomi, duemila anni. L\'impero romano ne durerà meno della metà in Occidente. Sono due risposte diverse alla stessa domanda: come si tiene insieme un territorio troppo grande per essere percorso a cavallo.'],
+  dom:'Che differenza fa, per la storia successiva, che la Cina si sia riunificata quasi ogni volta che è caduta e l\'Europa no?'}
+},
+{
+ anno:'1 d.C. circa', occhiello:'Il momento da cui abbiamo deciso, molto più tardi, di contare gli anni.',
+ mondo:[
+  {a:'Asia orientale', t:'La dinastia Han si spezza a metà', q:'9 d.C.',
+   d:'Wang Mang usurpa il trono e tenta una riforma agraria radicale, nazionalizzando la terra. Fallisce fra rivolte e inondazioni del Fiume Giallo, e gli Han tornano. La Cina ha in questo momento circa sessanta milioni di abitanti, quanto l\'impero romano.'},
+  {a:'Europa', t:'Augusto ha inventato l\'impero', q:'27 a.C.-14 d.C.',
+   d:'Senza mai chiamarsi re: conserva le magistrature repubblicane e le tiene tutte insieme. Il trucco funziona così bene che durerà tre secoli prima di essere abbandonato.'},
+  {a:'Mediterraneo e Vicino Oriente', t:'Una provincia periferica agitata', q:'6 d.C.',
+   d:'La Giudea passa sotto amministrazione romana diretta. È una delle tante province difficili dell\'impero, e nulla di quanto vi accade in questi anni sembra ai contemporanei degno di essere registrato.'},
+  {a:'India', t:'I Kushan aprono la via della seta', q:'I secolo d.C.',
+   d:'Un impero a cavallo fra Asia centrale e India settentrionale controlla i passi. Da qui il buddhismo comincia a viaggiare verso la Cina, e l\'arte del Gandhara scolpisce Buddha con panneggi greci.'},
+  {a:'Americhe', t:'Teotihuacán comincia a crescere', q:'I secolo d.C.',
+   d:'Nella valle del Messico si alza una città pianificata a griglia, con la Piramide del Sole. Arriverà a centomila abitanti: una delle più grandi del mondo, e non sappiamo come i suoi abitanti la chiamassero né che lingua parlassero.'},
+  {a:'Africa', t:'Aksum si affaccia sul Mar Rosso', q:'I secolo d.C.',
+   d:'Nell\'attuale Etiopia cresce un regno commerciale che batte moneta propria — cosa che pochissimi stati al mondo facevano — e collega l\'India al Mediterraneo.'}],
+ perno:{t:'Chi decide dove sta lo zero',
+  p:['L\'anno 1 non è stato riconosciuto da nessuno mentre accadeva. Il conteggio lo introduce Dionigi il Piccolo nel 525, cinque secoli dopo, e si diffonde in Europa solo dall\'VIII secolo. Nel resto del mondo si contava dal regno del sovrano, dalla fondazione della città, dall\'Egira, dalla creazione.',
+     'Che oggi quasi tutto il pianeta usi questa numerazione non è un fatto astronomico: è un fatto di potere. Vale la pena dirlo agli studenti, perché è il caso più invisibile di tutti — la data in cima al compito.'],
+  dom:'Se dovessi scegliere un altro anno zero per la storia del mondo, quale sceglieresti, e che cosa diresti di stare misurando?'}
+},
+{
+ anno:'800', occhiello:'Il Natale in cui l\'Europa si dà un imperatore, mentre Baghdad è la città più colta del mondo.',
+ mondo:[
+  {a:'Mediterraneo e Vicino Oriente', t:'Baghdad, la casa della sapienza', q:'786-809',
+   d:'Sotto Hārūn al-Rashīd la capitale abbaside ha forse un milione di abitanti. Vi si traducono in arabo Aristotele, Galeno, Tolomeo ed Euclide: sono queste traduzioni che quattro secoli dopo restituiranno l\'Aristotele perduto all\'Europa latina.'},
+  {a:'Asia orientale', t:'Chang\'an, la città più grande del mondo', q:'VIII secolo',
+   d:'La capitale dei Tang è una griglia di due milioni di abitanti, con quartieri persiani, mercanti sogdiani, chiese nestoriane e moschee. La stampa a blocchi di legno è già in uso.'},
+  {a:'Europa', t:'Carlo Magno incoronato a Roma', q:'25 dicembre 800',
+   d:'Un re franco viene incoronato imperatore dal papa. L\'Europa occidentale, che da tre secoli non aveva un centro, ne ha di nuovo uno — fragile, e destinato a spezzarsi fra i suoi nipoti in una sola generazione.'},
+  {a:'Americhe', t:'Le città maya cominciano a svuotarsi', q:'VIII-IX secolo',
+   d:'Nelle terre basse meridionali le grandi città smettono una dopo l\'altra di erigere stele datate. Siccità prolungate, guerre e sovrappopolazione: il collasso classico maya è in corso proprio in questi decenni.'},
+  {a:'Africa', t:'Il regno del Ghana controlla l\'oro', q:'VIII-IX secolo',
+   d:'Fra il Niger e il Senegal un regno prospera sul commercio transahariano: oro verso nord, sale verso sud. Le carovane attraversano il deserto in due mesi, e l\'oro africano finirà nelle monete di mezzo Mediterraneo.'},
+  {a:'India', t:'Il tempio di Kailasa scavato nella roccia', q:'VIII secolo',
+   d:'A Ellora si ricava un tempio intero da un unico blocco di basalto, scavando dall\'alto verso il basso: duecentomila tonnellate di roccia asportate, senza possibilità di correggere un errore.'}],
+ perno:{t:'Il centro non era qui',
+  p:['Se nell\'800 un viaggiatore avesse voluto vedere le città più grandi, le biblioteche più fornite e la matematica più avanzata, non sarebbe venuto in Europa. Sarebbe andato a Chang\'an e a Baghdad.',
+     'Chiamare «secoli bui» questo periodo ha senso solo guardando un angolo di mondo, e sapendo poco anche di quello. La cifra araba che gli studenti usano per scrivere la data del compito ha fatto la strada India-Baghdad-Spagna-Europa proprio in questi secoli.'],
+  dom:'Perché la periodizzazione che studiamo (antico, medievale, moderno) funziona così male fuori dall\'Europa? Che cosa dovremmo cambiare per usarla in Cina?'}
+},
+{
+ anno:'1492', occhiello:'L\'anno che chiude un mondo e ne apre un altro — ma non per tutti nello stesso senso.',
+ mondo:[
+  {a:'Europa', t:'Granada cade, gli ebrei vengono espulsi', q:'gennaio-marzo 1492',
+   d:'Finisce dopo otto secoli la presenza musulmana in Spagna. In marzo il decreto dell\'Alhambra dà agli ebrei quattro mesi per convertirsi o partire: se ne vanno in decine di migliaia, molti verso l\'impero ottomano, che li accoglie.'},
+  {a:'Americhe', t:'Tre caravelle su un\'isola dei Caraibi', q:'12 ottobre 1492',
+   d:'Per Colombo è l\'Asia raggiunta da ovest, e morirà credendolo. Per i Taino di Guanahaní è l\'arrivo di stranieri: entro cinquant\'anni saranno quasi estinti, soprattutto per le malattie.'},
+  {a:'Mediterraneo e Vicino Oriente', t:'L\'impero ottomano è la potenza del Mediterraneo', q:'1481-1512',
+   d:'Bayezid II regna su un impero che ha preso Costantinopoli quarant\'anni prima. Manda le navi a raccogliere gli ebrei cacciati dalla Spagna, e si dice si sia stupito che un re impoverisse il proprio regno per arricchire il suo.'},
+  {a:'Asia orientale', t:'La Cina Ming si è già ritirata dal mare', q:'dal 1433',
+   d:'Sessant\'anni prima le flotte di Zheng He, con navi grandi il quadruplo di quelle di Colombo, erano arrivate in Africa orientale. Poi la corte decise che non conveniva, e i cantieri furono smantellati.'},
+  {a:'India', t:'Vasco da Gama non è ancora partito', q:'1498',
+   d:'Il subcontinente è al centro dei commerci dell\'oceano Indiano da secoli, con reti che vanno dall\'Africa all\'Indonesia. Fra sei anni arriveranno i portoghesi, e per la prima volta qualcuno proverà a controllare quel mare con le armi.'},
+  {a:'Africa', t:'Il Songhai è al culmine', q:'1493',
+   d:'Askia Muhammad prende il potere in un impero che comprende Timbuctù, con le sue scuole coraniche e le sue biblioteche private di migliaia di volumi.'}],
+ perno:{t:'Un anno cardine per chi',
+  p:['Il 1492 è un cardine vero, ma non perché qualcuno abbia «scoperto» qualcosa: perché due sistemi biologici separati da dodicimila anni tornano in contatto. Mais, patate e pomodori vanno da una parte; vaiolo e morbillo dall\'altra, e uccidono forse il novanta per cento degli abitanti delle Americhe nel secolo successivo.',
+     'La cucina italiana senza pomodoro, quella irlandese senza patata, quella indiana senza peperoncino: tutte queste cose nascono dopo il 1492. È il caso in cui la storia si mangia, letteralmente.'],
+  dom:'La parola «scoperta» descrive un fatto o prende una posizione? Quale altra parola useresti, e che cosa perderesti scegliendola?'}
+},
+{
+ anno:'1789', occhiello:'Mentre a Parigi cade la Bastiglia, tre quarti del mondo hanno altre urgenze.',
+ mondo:[
+  {a:'Europa', t:'La Rivoluzione francese', q:'14 luglio 1789',
+   d:'In agosto la Dichiarazione dei diritti dell\'uomo afferma che gli uomini nascono liberi e uguali. Nelle colonie francesi dei Caraibi, intanto, lavorano centinaia di migliaia di schiavi, e la contraddizione esploderà a Haiti due anni dopo.'},
+  {a:'Americhe', t:'Washington primo presidente', q:'30 aprile 1789',
+   d:'Entra in vigore la costituzione degli Stati Uniti, che per contare gli abitanti ai fini della rappresentanza vale ogni schiavo come tre quinti di persona: il compromesso che tiene insieme il paese e ne prepara la guerra civile.'},
+  {a:'Asia orientale', t:'La Cina di Qianlong è il paese più ricco del mondo', q:'1735-1796',
+   d:'L\'impero Qing ha raddoppiato la popolazione in un secolo e produce forse un terzo di tutte le merci del pianeta. Nel 1793 respingerà la missione commerciale britannica di Macartney scrivendo che l\'impero non ha bisogno di nulla.'},
+  {a:'India', t:'La Compagnia delle Indie riscuote le tasse del Bengala', q:'dal 1765',
+   d:'Una società per azioni londinese ha ottenuto il diritto di esigere le imposte di trenta milioni di persone, e mantiene un esercito privato più grande di quello di molti stati europei.'},
+  {a:'Africa', t:'La tratta atlantica al suo massimo', q:'1780-1790',
+   d:'È il decennio con il maggior numero di deportati di tutta la storia della tratta: oltre ottantamila persone l\'anno attraversano l\'Atlantico incatenate, negli stessi mesi in cui a Parigi si scrive che gli uomini nascono liberi.'},
+  {a:'Mediterraneo e Vicino Oriente', t:'L\'impero ottomano perde il Mar Nero', q:'1774-1792',
+   d:'Le guerre con la Russia di Caterina si chiudono con la perdita della Crimea. Comincia il lungo secolo in cui l\'impero sarà chiamato «il malato d\'Europa» — da chi aspetta l\'eredità.'}],
+ perno:{t:'La stessa parola, due significati',
+  p:['«Tutti gli uomini nascono liberi e uguali» viene scritto negli stessi anni in cui la tratta atlantica tocca il suo massimo storico, e da paesi che ne sono i protagonisti. Non è ipocrisia semplice: è che «uomo» in quelle frasi non significava ancora tutti.',
+     'A estendere il significato ci penseranno gli schiavi di Haiti, che dal 1791 prendono alla lettera la dichiarazione e fondano la prima repubblica nera del mondo — e per questo verranno isolati e costretti a pagare alla Francia un\'indennità che finiranno di versare nel 1947.'],
+  dom:'Un principio vale anche quando chi lo scrive non lo applica a sé? E chi decide, poi, fin dove arriva?'}
+},
+{
+ anno:'1900', occhiello:'L\'anno in cui l\'Europa governa un quarto delle terre emerse e crede che durerà.',
+ mondo:[
+  {a:'Asia orientale', t:'La rivolta dei Boxer', q:'1900',
+   d:'Un movimento popolare contro le potenze straniere assedia le legazioni a Pechino. Otto eserciti — europei, americano e giapponese — intervengono insieme, saccheggiano la capitale e impongono un\'indennità che peserà per decenni.'},
+  {a:'Europa', t:'Freud pubblica L\'interpretazione dei sogni', q:'1899, datato 1900',
+   d:'Ne vende 351 copie in sei anni. Nello stesso anno Planck introduce il quanto d\'azione per far tornare i conti sulla radiazione, senza credere di aver aperto una porta.'},
+  {a:'Africa', t:'Il continente è quasi tutto spartito', q:'1884-1914',
+   d:'Dopo la conferenza di Berlino restano indipendenti solo l\'Etiopia, che nel 1896 ad Adua ha sconfitto l\'Italia, e la Liberia. Nello Stato Libero del Congo di Leopoldo II la popolazione crolla di milioni di persone.'},
+  {a:'India', t:'Carestia e ferrovie', q:'1899-1900',
+   d:'La grande carestia colpisce decine di milioni di persone mentre il grano continua a essere esportato. L\'India ha allora la quarta rete ferroviaria del mondo, costruita per portare le merci ai porti.'},
+  {a:'Americhe', t:'Gli Stati Uniti diventano potenza coloniale', q:'1898-1902',
+   d:'Vinta la guerra contro la Spagna, prendono Filippine, Portorico e Guam. Nelle Filippine segue una guerra contro chi credeva di aver combattuto per l\'indipendenza.'},
+  {a:'Mediterraneo e Vicino Oriente', t:'La ferrovia dell\'Hegiaz', q:'1900',
+   d:'L\'impero ottomano comincia a costruire con capitali e ingegneri tedeschi la ferrovia da Damasco a Medina. Il Vicino Oriente sta diventando il tavolo su cui le potenze europee giocano la partita successiva.'}],
+ perno:{t:'La fiducia di un mondo che stava per finire',
+  p:['Nel 1900 le esposizioni universali celebrano un progresso che sembra irreversibile, e in Europa si diffonde l\'idea che le guerre fra grandi potenze siano ormai troppo costose per essere combattute. Quattordici anni dopo comincerà quella che ne ucciderà venti milioni.',
+     'Nello stesso anno, Planck e Freud pubblicano due cose che nessuno nota e che smonteranno l\'idea che la natura sia continua e la mente trasparente a se stessa. Le rivoluzioni vere, di solito, vendono poche copie.'],
+  dom:'Che cosa oggi ci sembra altrettanto stabile? E che cosa sta vendendo 351 copie?'}
+}
+];
+
+let i=0;
+
+function vai(n){ i=Math.max(0,Math.min(TAGLI.length-1,n)); disegna(); }
+function muovi(d){ vai(i+d); }
+
+function disegna(){
+  const t=TAGLI[i];
+  document.getElementById('anni').innerHTML = TAGLI.map((x,n)=>
+    `<button class="an${n===i?' attivo':''}" onclick="vai(${n})">${x.anno}</button>`).join('');
+  document.getElementById('titolo').textContent=t.anno;
+  document.getElementById('occhiello').textContent=t.occhiello;
+
+  /* le regioni si mostrano nell'ordine in cui sono scritte nel taglio,
+     che non è sempre lo stesso: se l'Europa fosse sempre prima, la
+     pagina direbbe con la disposizione il contrario di quel che dice
+     col testo */
+  document.getElementById('mondo').innerHTML = t.mondo.map(m=>`
+    <div class="reg" style="--c:${AREE[m.a]||'#8a9e87'}">
+      <h3>${m.a}</h3>
+      <div class="fatto">${m.t}</div>
+      <p>${m.d}</p>
+      <span class="quando">${m.q}</span>
+    </div>`).join('');
+
+  document.getElementById('perno').innerHTML =
+    `<h3>${t.perno.t}</h3>${t.perno.p.map(p=>`<p>${p}</p>`).join('')}`
+    + `<div class="dom"><b>Da chiedere alla classe</b>${t.perno.dom}</div>`;
+
+  document.getElementById('prima').disabled = i===0;
+  document.getElementById('dopo').disabled = i===TAGLI.length-1;
+  document.querySelector('.an.attivo')?.scrollIntoView({inline:'center',block:'nearest',behavior:'smooth'});
+}
+
+disegna();
+</script>
+</body>
+</html>
