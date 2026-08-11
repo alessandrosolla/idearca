@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Analizzatore di testo — Idearca</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Jost',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  background:#faf8f3;color:#1c2b1a;font-weight:300;-webkit-font-smoothing:antialiased}
+.w{max-width:1040px;margin:0 auto;padding:2rem 1.5rem 4rem}
+.k{font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:#8a9e87;font-weight:600}
+h1{font-family:'Cormorant Garamond',Georgia,serif;font-size:2.4rem;font-weight:400;margin:.3rem 0 .5rem}
+.sub{font-size:.92rem;line-height:1.7;color:#5a6b58;max-width:64ch}
+.et{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:#9a7c2e;
+  font-weight:700;margin:1.9rem 0 .7rem;display:flex;align-items:center;gap:.6rem}
+.et::after{content:'';flex:1;height:1px;background:rgba(45,90,39,.13)}
+
+textarea#fonte{width:100%;min-height:130px;font:inherit;font-size:.92rem;line-height:1.65;
+  padding:.9rem 1rem;border:1px solid rgba(45,90,39,.16);border-radius:12px;background:#fff;
+  color:#1c2b1a;font-weight:400;resize:vertical;outline:none}
+textarea#fonte:focus{border-color:#8a9e87}
+
+.b{font:inherit;font-size:.78rem;padding:.55rem 1.15rem;border-radius:100px;cursor:pointer;
+  border:1.5px solid rgba(45,90,39,.22);background:#fff;color:#2d5a27;font-weight:500;transition:all .16s}
+.b:hover{background:#2d5a27;color:#fff;border-color:#2d5a27}
+.barra{display:flex;gap:.5rem;flex-wrap:wrap;margin-top:.8rem;align-items:center}
+
+/* i pennelli: si sceglie un colore e si passa sulle frasi */
+.pennelli{display:flex;gap:.45rem;flex-wrap:wrap;margin-bottom:.9rem}
+.pen{font:inherit;font-size:.73rem;padding:.45rem .95rem;border-radius:100px;cursor:pointer;
+  border:1.5px solid var(--c);background:#fff;color:var(--c);font-weight:600;transition:all .16s;
+  display:flex;align-items:center;gap:.4rem}
+.pen::before{content:'';width:9px;height:9px;border-radius:50%;background:var(--c)}
+.pen.attivo{background:var(--c);color:#fff}
+.pen.attivo::before{background:#fff}
+
+/* il brano, frase per frase */
+.brano{border:1px solid rgba(45,90,39,.14);border-radius:12px;padding:1.2rem 1.35rem;
+  background:#fff;font-size:1rem;line-height:1.95;font-weight:400}
+.fr{cursor:pointer;padding:.1rem .15rem;border-radius:4px;transition:background .13s,box-shadow .13s;
+  border-bottom:2px solid transparent}
+.fr:hover{background:rgba(45,90,39,.05)}
+.fr.m{border-bottom-color:var(--c);background:var(--bg)}
+.fr.m:hover{filter:brightness(.97)}
+
+/* lo scheletro estratto */
+.scheletro{display:grid;grid-template-columns:1fr 1fr;gap:.7rem}
+.gr{border:1px solid rgba(45,90,39,.13);border-left:3px solid var(--c);border-radius:10px;
+  padding:.75rem .9rem;background:#fff}
+.gr h3{font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--c);
+  font-weight:700;margin-bottom:.45rem;display:flex;gap:.45rem;align-items:center}
+.gr h3 span{background:var(--c);color:#fff;border-radius:100px;padding:.05rem .42rem;font-size:.62rem}
+.gr li{font-size:.83rem;line-height:1.6;color:#3d4a3b;margin-bottom:.35rem;list-style:none;
+  padding-left:.8rem;position:relative}
+.gr li::before{content:'—';position:absolute;left:0;color:var(--c);opacity:.5}
+.gr.vuoto li{color:#b3bdb1;font-style:italic}
+
+.esito{border-radius:14px;padding:1.2rem 1.3rem;margin-top:1.4rem;
+  border:1px solid rgba(45,90,39,.14);background:#fff;border-left:5px solid #8a9e87}
+.esito.bene{border-left-color:#2d5a27;background:linear-gradient(150deg,rgba(45,90,39,.07),#fff)}
+.esito.male{border-left-color:#c0453b;background:linear-gradient(150deg,rgba(192,69,59,.06),#fff)}
+.esito-t{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.5rem;font-weight:600;margin-bottom:.5rem}
+.esito.bene .esito-t{color:#2d5a27}.esito.male .esito-t{color:#c0453b}
+.rl{list-style:none;display:flex;flex-direction:column;gap:.45rem}
+.rl li{display:flex;gap:.65rem;align-items:flex-start;font-size:.86rem;line-height:1.6}
+.rl i{flex:none;width:18px;height:18px;border-radius:50%;font-style:normal;font-size:.65rem;
+  font-weight:700;display:flex;align-items:center;justify-content:center;margin-top:.15rem}
+.rl li.ok i{background:rgba(45,90,39,.12);color:#2d5a27}
+.rl li.ko i{background:rgba(192,69,59,.14);color:#c0453b}
+.rl li.ko{color:#8a3229}
+.nota{font-size:.81rem;line-height:1.65;color:#5a6b58;margin-top:.9rem;
+  padding-top:.8rem;border-top:1px solid rgba(45,90,39,.1)}
+
+/* la barra delle proporzioni */
+.prop{display:flex;height:16px;border-radius:100px;overflow:hidden;margin:.8rem 0 .5rem;
+  border:1px solid rgba(45,90,39,.12);background:#f0ede5}
+.prop div{transition:width .3s}
+.leg{display:flex;gap:.9rem;flex-wrap:wrap;font-size:.7rem;color:#5a6b58}
+.leg span{display:flex;align-items:center;gap:.32rem}
+.leg i{width:8px;height:8px;border-radius:50%;font-style:normal}
+
+.esempi{display:flex;gap:.5rem;flex-wrap:wrap}
+.mini{font:inherit;font-size:.72rem;padding:.4rem .9rem;border-radius:100px;cursor:pointer;
+  border:1px solid rgba(45,90,39,.2);background:#fff;color:#2d5a27;transition:all .16s}
+.mini:hover{background:#2d5a27;color:#fff;border-color:#2d5a27}
+@media(max-width:700px){
+  .w{padding:1.4rem 1rem 3rem}h1{font-size:1.9rem}
+  .scheletro{grid-template-columns:1fr}
+  .brano{font-size:.95rem;line-height:1.9}
+}
+</style>
+</head>
+<body>
+<div class="w">
+  <div class="k">Idearca · Prove</div>
+  <h1>Analizzatore di testo</h1>
+  <p class="sub">Si incolla un brano e si passa il pennello sulle frasi: questa è la tesi,
+  questa la sostiene, questa obietta. Lo strumento non riconosce niente da solo —
+  <strong>lo scheletro lo tira fuori chi legge</strong>. Quello che fa è tenere il conto e
+  mostrare che cosa è rimasto scoperto.</p>
+
+  <div class="et">Prova con uno di questi</div>
+  <div class="esempi" id="esempi"></div>
+
+  <div class="et">Il brano</div>
+  <textarea id="fonte" placeholder="Incolla qui il testo da analizzare…"></textarea>
+  <div class="barra">
+    <button class="b" onclick="spezza()">Spezza in frasi</button>
+    <button class="b" onclick="pulisci()">Togli tutte le marcature</button>
+  </div>
+
+  <div id="lavoro" style="display:none">
+    <div class="et">Il pennello</div>
+    <div class="pennelli" id="pennelli"></div>
+    <div class="brano" id="brano"></div>
+
+    <div class="prop" id="prop"></div>
+    <div class="leg" id="leg"></div>
+
+    <div class="et">Lo scheletro</div>
+    <div class="scheletro" id="scheletro"></div>
+
+    <div class="esito" id="esito"></div>
+  </div>
+</div>
+
+<script>
+/* ══════════════════════════════════════════════════════════
+   L'ANALIZZATORE DI TESTO
+   Non c'è nessun riconoscimento automatico, ed è una scelta.
+   Una macchina che dicesse «questa è la tesi» toglierebbe allo
+   studente l'unica operazione che conta. Qui la macchina fa il
+   mestiere che le riesce: divide in frasi, tiene il conto, e
+   dice che cosa manca. Il giudizio resta a chi legge.
+   ══════════════════════════════════════════════════════════ */
+
+const RUOLI=[
+ {k:'tesi',      n:'Tesi',        c:'#9a7c2e', bg:'rgba(154,124,46,.14)',
+  d:'quello che il testo vuole farti accettare'},
+ {k:'argomento', n:'Argomento',   c:'#2d5a27', bg:'rgba(45,90,39,.12)',
+  d:'una ragione che sostiene la tesi'},
+ {k:'obiezione', n:'Obiezione',   c:'#c0453b', bg:'rgba(192,69,59,.11)',
+  d:'una ragione contraria, che il testo riporta'},
+ {k:'risposta',  n:'Risposta',    c:'#3f6d8c', bg:'rgba(63,109,140,.12)',
+  d:'come il testo ribatte all\'obiezione'},
+ {k:'esempio',   n:'Esempio',     c:'#7a4b8c', bg:'rgba(122,75,140,.12)',
+  d:'un caso concreto, che illustra ma non dimostra'},
+ {k:'',          n:'Cancella',    c:'#8a9e87', bg:'transparent',
+  d:'toglie la marcatura'}
+];
+const ruolo = k => RUOLI.find(r=>r.k===k);
+
+const ESEMPI=[
+ {n:'Un testo ben costruito', t:
+`La settimana corta a scuola non migliora l'apprendimento. Gli istituti che sono passati a quattro giorni riportano gli stessi risultati nelle prove standardizzate degli istituti rimasti a sei. Le ore non spariscono: si accumulano nelle giornate rimaste, che diventano di sette o otto ore. Un ragazzo di quindici anni, dopo la sesta ora, non impara più niente: sta seduto. C'è chi obietta che il giorno libero in più permette di studiare con calma. È vero per gli studenti che hanno già un metodo, ma quelli sono anche gli unici che non ne avevano bisogno. Chi fatica usa quel giorno per recuperare sonno, non programma di studio. Il liceo di Rovereto, che ha provato la settimana corta per tre anni, è tornato indietro nel 2019.`},
+
+ {n:'Un testo che afferma e basta', t:
+`Il latino va tolto dal liceo scientifico. È una lingua morta. Nel mondo di oggi servono le competenze digitali. I ragazzi lo odiano. Nessuno lo usa dopo la maturità. È tempo di ammodernare la scuola italiana e di guardare avanti invece che indietro.`},
+
+ {n:'Un testo che si difende bene', t:
+`Le prove Invalsi vanno mantenute. Senza una misura uguale per tutti, la valutazione dipende dal singolo insegnante, e un sette a Bolzano non vale un sette a Crotone. Si dice che i test misurino solo quello che è misurabile, e che la parte migliore dell'insegnamento sfugga alla misura. L'obiezione è giusta, ma vale contro chi pretende che il test dica tutto: come termometro di una parte, resta l'unico strumento che abbiamo. Si dice anche che gli insegnanti finiscano per addestrare al test invece che insegnare. Questo accade davvero, e accade dove i risultati vengono usati per premiare o punire le scuole: è un problema dell'uso, non dello strumento. In Finlandia le prove nazionali esistono e nessuno addestra, perché nessuno viene licenziato per un punteggio.`}
+];
+
+let frasi=[];          /* [{t:'…', r:'tesi'|…|''}] */
+let pennello='tesi';
+
+/* ── dividere in frasi ────────────────────────────────────
+   Le abbreviazioni con il punto (ecc., cfr., a.C.) romperebbero
+   la divisione: si tengono da parte prima di tagliare. */
+const ABBR=['ecc','cfr','av','ca','sec','pag','pp','vol','fig','n','art','cap',
+            'sig','prof','dott','a\\.C','d\\.C','p\\.es','vd','ibid','op','cit'];
+const SEGNO='\u0001';   /* sta al posto del punto che non deve tagliare */
+function inFrasi(testo){
+  let t=testo.replace(/\s+/g,' ').trim();
+  if(!t) return [];
+  /* il punto delle abbreviazioni diventa un segnaposto che non taglia,
+     e ridiventa punto dopo il taglio */
+  ABBR.forEach(a=>{ t=t.replace(new RegExp('\\b('+a+')\\.','gi'), '$1'+SEGNO); });
+  const pezzi = t.split(/(?<=[.!?\u2026])\s+(?=[\u00abA-Z\u00c0\u00c8\u00c9\u00cc\u00d2\u00d9"'])/);
+  return pezzi.map(p=>p.split(SEGNO).join('.').trim()).filter(p=>p.length);
+}
+
+function spezza(){
+  const t=document.getElementById('fonte').value;
+  const nuove=inFrasi(t);
+  if(!nuove.length){ alertaVuoto(); return; }
+  /* le marcature già date su frasi identiche si conservano */
+  const vecchie={}; frasi.forEach(f=>{ if(f.r) vecchie[f.t]=f.r; });
+  frasi=nuove.map(t=>({t, r:vecchie[t]||''}));
+  document.getElementById('lavoro').style.display='';
+  disegna(); salva();
+}
+function alertaVuoto(){
+  document.getElementById('lavoro').style.display='';
+  document.getElementById('brano').innerHTML='<span style="color:#b3bdb1">Non c\'è niente da spezzare: incolla prima un testo.</span>';
+  document.getElementById('scheletro').innerHTML='';
+  document.getElementById('esito').innerHTML='';
+  document.getElementById('prop').innerHTML='';
+  document.getElementById('leg').innerHTML='';
+}
+function pulisci(){ frasi.forEach(f=>f.r=''); disegna(); salva(); }
+function scegli(k){ pennello=k; disegna(); }
+function marca(i){
+  frasi[i].r = (frasi[i].r===pennello) ? '' : pennello;   /* ripassare toglie */
+  disegna(); salva();
+}
+function carica(i){
+  document.getElementById('fonte').value=ESEMPI[i].t;
+  frasi=[]; spezza();
+}
+
+function salva(){ try{ localStorage.setItem('idearca-testo',
+  JSON.stringify({fonte:document.getElementById('fonte').value, frasi})); }catch(e){} }
+function riprendi(){
+  try{ const g=JSON.parse(localStorage.getItem('idearca-testo')||'null');
+    if(g&&g.frasi&&g.frasi.length){ document.getElementById('fonte').value=g.fonte||'';
+      frasi=g.frasi; document.getElementById('lavoro').style.display=''; disegna(); }
+  }catch(e){}
+}
+
+const esc = t => String(t).replace(/[<>&]/g,c=>({'<':'&lt;','>':'&gt;','&':'&amp;'}[c]));
+
+/* ── disegno ──────────────────────────────────────────────── */
+function disegna(){
+  document.getElementById('pennelli').innerHTML = RUOLI.map(r=>
+    `<button class="pen${pennello===r.k?' attivo':''}" style="--c:${r.c}"
+      title="${r.d}" onclick="scegli('${r.k}')">${r.n}</button>`).join('');
+
+  document.getElementById('brano').innerHTML = frasi.map((f,i)=>{
+    const r=ruolo(f.r);
+    const st = f.r ? `--c:${r.c};--bg:${r.bg}` : '';
+    return `<span class="fr${f.r?' m':''}" style="${st}" onclick="marca(${i})"
+      title="${f.r?r.n:'non marcata'}">${esc(f.t)}</span> `;
+  }).join('');
+
+  const conta = k => frasi.filter(f=>f.r===k).length;
+  const tot = frasi.length || 1;
+
+  /* la barra delle proporzioni: quanto del testo argomenta davvero */
+  document.getElementById('prop').innerHTML = RUOLI.filter(r=>r.k).map(r=>{
+    const n=conta(r.k); return n?`<div style="width:${n/tot*100}%;background:${r.c}"></div>`:'';
+  }).join('') + (()=>{ const n=frasi.filter(f=>!f.r).length;
+    return n?`<div style="width:${n/tot*100}%;background:#dcd8cd"></div>`:''; })();
+
+  document.getElementById('leg').innerHTML = RUOLI.filter(r=>r.k).map(r=>
+    `<span><i style="background:${r.c}"></i>${r.n} ${conta(r.k)}</span>`).join('')
+    + `<span><i style="background:#dcd8cd"></i>Non marcate ${frasi.filter(f=>!f.r).length}</span>`;
+
+  document.getElementById('scheletro').innerHTML = RUOLI.filter(r=>r.k).map(r=>{
+    const voci=frasi.filter(f=>f.r===r.k);
+    return `<div class="gr${voci.length?'':' vuoto'}" style="--c:${r.c}">
+      <h3>${r.n}<span>${voci.length}</span></h3>
+      <ul>${voci.length?voci.map(v=>`<li>${esc(v.t)}</li>`).join('')
+                       :'<li>niente di marcato</li>'}</ul></div>`;
+  }).join('');
+
+  leggi();
+}
+
+/* ── LA LETTURA ───────────────────────────────────────────
+   Cinque domande che si possono fare contando, senza capire
+   niente del contenuto. È il minimo che si deve pretendere da
+   un testo che vuole convincere. */
+function leggi(){
+  const box=document.getElementById('esito');
+  const conta = k => frasi.filter(f=>f.r===k).length;
+  const marcate = frasi.filter(f=>f.r).length;
+  const tot=frasi.length;
+
+  if(!tot){ box.innerHTML=''; return; }
+  if(!marcate){
+    box.className='esito';
+    box.innerHTML='<div class="esito-t">Il brano è diviso, ora va letto</div>'
+      +`<p class="nota">${tot} frasi. Scegli un pennello qui sopra e passa sulle frasi: `
+      +'la prima domanda da farsi è sempre «qual è la tesi?». Se non la si trova, è già una risposta.</p>';
+    return;
+  }
+
+  const r=[];
+  const nTesi=conta('tesi'), nArg=conta('argomento'), nObi=conta('obiezione'),
+        nRis=conta('risposta'), nEs=conta('esempio');
+
+  r.push({ok:nTesi>0, t:'Il testo ha una tesi',
+    s:!nTesi?'Nessuna frase è stata marcata come tesi. O non l\'hai ancora trovata, o il testo non ne ha una: dice cose senza sostenerne nessuna.'
+      :nTesi===1?'Una tesi sola, come dev\'essere.'
+      :`${nTesi} frasi marcate come tesi. Può darsi che siano riformulazioni della stessa, ma controlla: se sono tesi diverse, il testo ne difende due e probabilmente nessuna bene.`});
+
+  r.push({ok:nArg>0, t:'La tesi è sostenuta',
+    s:!nArg?'Nessun argomento. Una tesi senza ragioni è un\'opinione dichiarata: si può condividerla, non discuterla.'
+      :`${nArg} argoment${nArg===1?'o':'i'} a sostegno.`});
+
+  r.push({ok:nObi>0, t:'Il testo si fa obiettare',
+    s:!nObi?'Nessuna obiezione riportata. Un testo che non nomina mai la posizione avversaria sta parlando a chi è già d\'accordo.'
+      :`${nObi} obiezion${nObi===1?'e riportata':'i riportate'}: il testo mette in conto di poter avere torto.`});
+
+  r.push({ok:nObi===0||nRis>=nObi, t:'Alle obiezioni segue una risposta',
+    s:!nObi?'Non ci sono obiezioni, quindi non ci sono risposte da dare.'
+      :nRis>=nObi?'Ogni obiezione riportata riceve una replica.'
+      :`${nObi} obiezion${nObi===1?'e':'i'} ma ${nRis} rispost${nRis===1?'a':'e'}: ${nObi-nRis} restano in piedi. Riportare un'obiezione e lasciarla cadere è peggio che non nominarla.`});
+
+  /* l'esempio non è un argomento: è il punto che gli studenti
+     confondono più spesso, e vale la pena dirlo qui */
+  r.push({ok:!(nEs>0&&nEs>=nArg), t:'Gli esempi non fanno le veci degli argomenti',
+    s:!nEs?'Nessun esempio marcato.'
+      :nEs>=nArg&&nArg>0?`${nEs} esempi contro ${nArg} argoment${nArg===1?'o':'i'}: il testo mostra più di quanto dimostri. Un caso concreto rende chiara una tesi, non la rende vera.`
+      :nEs>=nArg?`${nEs} esempi e nessun argomento: il testo illustra soltanto. Un caso concreto rende chiara una tesi, non la rende vera.`
+      :`${nEs} esempi, che accompagnano gli argomenti senza sostituirli.`});
+
+  const rotte=r.filter(x=>!x.ok);
+  const bene=rotte.length===0;
+  const quota=Math.round(marcate/tot*100);
+  box.className='esito '+(bene?'bene':'male');
+  box.innerHTML='<div class="esito-t">'
+    +(bene?'Il testo regge alla lettura'
+          :'Il testo ha '+rotte.length+(rotte.length===1?' punto scoperto':' punti scoperti'))+'</div>'
+    +'<ul class="rl">'+r.map(x=>`<li class="${x.ok?'ok':'ko'}"><i>${x.ok?'✓':'✕'}</i><span><b>${x.t}.</b> ${x.s}</span></li>`).join('')+'</ul>'
+    +`<p class="nota">Hai marcato ${marcate} frasi su ${tot} — il ${quota}% del brano. `
+    +(quota<40?'Il resto è cornice: attacchi, transizioni, ripetizioni. In un testo che vuole convincere è normale che ci sia, ma se la cornice supera di molto il quadro, conviene chiedersi che cosa stia coprendo.'
+             :'La parte che porta il ragionamento è quasi tutto il testo: è scritto stretto.')
+    +'</p>';
+}
+
+document.getElementById('esempi').innerHTML = ESEMPI.map((e,i)=>
+  `<button class="mini" onclick="carica(${i})">${e.n}</button>`).join('');
+document.getElementById('fonte').addEventListener('input',salva);
+riprendi();
+</script>
+</body>
+</html>
