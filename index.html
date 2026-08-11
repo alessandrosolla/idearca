@@ -22,7 +22,7 @@
 <meta name="twitter:description" content="Materiali strutturati di Filosofia, Storia ed Educazione Civica — piattaforma didattica di Alessandro Solla.">
 <meta name="twitter:image" content="https://alessandrosolla.github.io/idearca/og-image.png">
 <script>document.documentElement.setAttribute('data-page','home');try{var t=localStorage.getItem('idearca-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
-<link rel="stylesheet" href="css/stile.css?v=20260811k">
+<link rel="stylesheet" href="css/stile.css?v=20260811m">
 </head>
 <body style="">
 <div id="scroll-progress" aria-hidden="true"></div>
@@ -33,7 +33,7 @@
   <ul class="nav-links">
     <li><a onclick="go(&#39;materie-section&#39;)">Materie</a></li>
     <li><a onclick="go(&#39;ripetizioni-section&#39;)">Ripetizioni</a></li>
-    <li><a href="chi/index.html">Chi sono</a></li>
+    <li><a onclick="go('chi-section')">Chi sono</a></li>
     
   </ul>
   <button class="nav-hamburger" onclick="apriMenu()" aria-label="Apri il menu" aria-expanded="false" id="hamburger">
@@ -52,7 +52,7 @@
     <button class="menu-mobile-x" onclick="chiudiMenu()" aria-label="Chiudi">&#10005;</button>
     <a onclick="chiudiMenu();go('materie-section')">Materie</a>
     <a onclick="chiudiMenu();go('ripetizioni-section')">Ripetizioni</a>
-    <a href="chi/index.html">Chi sono</a>
+    <a onclick="chiudiMenu();go('chi-section')">Chi sono</a>
     <a onclick="chiudiMenu();go('contacts-section')">Contatti</a>
     <button class="menu-mobile-cta" onclick="chiudiMenu();scrollToLogin()">Area studenti</button>
   </div>
@@ -255,6 +255,30 @@
     </div>
   </div>
 </section>
+<!-- ══ CHI SONO, in breve ═════════════════════════════════
+     Il menu era incoerente: «Materie» e «Ripetizioni» scorrevano
+     la pagina, «Chi sono» portava altrove. Ora anche questa voce
+     scorre e si ferma qui; la pagina completa resta, ma la si
+     raggiunge da un pulsante, non dal menu. ═══════════════════ -->
+<section class="section chi-banda" id="chi-section">
+  <div class="chi-banda-inner">
+    <div class="chi-banda-ritratto"><span>AS</span></div>
+    <div class="chi-banda-testo">
+      <span class="sec-eye">Chi c&#39;&egrave; dietro</span>
+      <h2 class="sec-title">Alessandro Solla</h2>
+      <p class="chi-banda-ruolo">Docente abilitato &mdash; classe di concorso A-19, Storia e Filosofia</p>
+      <p>Laurea magistrale in Storia e societ&agrave; conseguita <strong>in un solo anno</strong>,
+      due pubblicazioni di storia pubblica su UNICApress, tre anni di ripetizioni private
+      e un anno da tutor per l&#39;inclusione all&#39;Universit&agrave; di Cagliari.
+      Idearca l&#39;ho progettata e costruita da solo, mentre insegnavo.</p>
+      <div class="chi-banda-azioni">
+        <a class="btn-secondary" href="chi/index.html">La pagina completa &rarr;</a>
+        <button class="btn-text" onclick="openPeekModal()">Cosa contiene Idearca</button>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="contacts" id="contacts-section">
   <span class="sec-eye">Contatti</span>
   <h2 class="sec-title rev">Scrivimi</h2>
@@ -276,7 +300,7 @@
 </section>
 <footer>
   <div class="foot-brand"><span class="foot-logo">Idea<em>rca</em></span><span class="foot-tagline">Filosofia · Storia · Educazione Civica</span></div>
-  <div class="foot-links"><a onclick="window.scrollTo({top:0,behavior:&#39;smooth&#39;})">Home</a><a onclick="go(&#39;materie-section&#39;)">Materie</a><a onclick="go(&#39;ripetizioni-section&#39;)">Ripetizioni</a><a href="chi/index.html">Chi sono</a><a onclick="openPricing()">Accesso</a><a onclick="go(&#39;contacts-section&#39;)">Contatti</a></div>
+  <div class="foot-links"><a onclick="window.scrollTo({top:0,behavior:&#39;smooth&#39;})">Home</a><a onclick="go(&#39;materie-section&#39;)">Materie</a><a onclick="go(&#39;ripetizioni-section&#39;)">Ripetizioni</a><a onclick="go('chi-section')">Chi sono</a><a onclick="openPricing()">Accesso</a><a onclick="go(&#39;contacts-section&#39;)">Contatti</a></div>
   <span class="foot-note">© 2025 Idearca — tutti i diritti riservati</span>
 </footer>
 
@@ -711,8 +735,8 @@
     <div id="codes-body" style="padding:0 2rem 2rem;max-height:40vh;overflow-y:auto"></div>
   </div>
 </div>
-<script src="js/numeri.js?v=20260811k"></script>
-<script src="js/app.js?v=20260811k"></script>
+<script src="js/numeri.js?v=20260811m"></script>
+<script src="js/app.js?v=20260811m"></script>
 <script src="js/d3-array.min.js?v=20260720"></script>
 <script src="js/d3-geo.min.js?v=20260720"></script>
 <script src="js/globe.js?v=20260720"></script>

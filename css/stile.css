@@ -167,21 +167,22 @@ nav.scrolled{box-shadow:0 4px 32px rgba(28,43,26,0.07)}
    allunga e scopre il titolo dell'opera. */
 .hero-img-credit{position:absolute;left:1.4rem;top:calc(68px + 1.4rem);z-index:4;
   display:inline-flex;align-items:center;gap:.6rem;cursor:pointer;
-  padding:.4rem;border-radius:100px;max-width:2.6rem;overflow:hidden;
+  padding:.4rem;border-radius:100px;overflow:hidden;
+  width:2.55rem;height:2.55rem;max-width:2.55rem;box-sizing:border-box;
   background:rgba(12,26,14,.42);border:1px solid rgba(196,164,78,.35);
   -webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);
   font-family:'Jost',sans-serif;font-size:.68rem;color:#e6d2a0;white-space:nowrap;
   transition:max-width .45s cubic-bezier(.2,.8,.3,1),background .3s,border-color .3s,padding .3s}
 /* dentro il cerchio un ritaglio del quadro stesso: si capisce a
    colpo d'occhio che si sta guardando La Scuola di Atene */
-.hic-cerchio{flex:none;width:1.75rem;height:1.75rem;border-radius:50%;
+.hic-cerchio{flex:none;width:1.75rem;height:1.75rem;border-radius:50%;box-sizing:border-box;
   border:1px solid rgba(232,217,160,.55);
   background:url('https://wsrv.nl/?url=upload.wikimedia.org/wikipedia/commons/thumb/4/49/%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg/1280px-%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg&w=200&q=70&output=webp') 50% 47%/250% no-repeat;
   transition:box-shadow .3s,transform .3s}
 .hero-img-credit:hover .hic-cerchio{box-shadow:0 0 0 2px rgba(212,178,86,.5);transform:scale(1.06)}
 .hic-testo{padding-right:.7rem;opacity:0;transition:opacity .35s .1s}
 .hic-testo em{font-style:italic}
-.hero-img-credit:hover,.hero-img-credit:focus-visible{max-width:26rem;
+.hero-img-credit:hover,.hero-img-credit:focus-visible{max-width:26rem;width:auto;
   background:rgba(12,26,14,.78);border-color:rgba(212,178,86,.8)}
 .hero-img-credit:hover .hic-testo,.hero-img-credit:focus-visible .hic-testo{opacity:1}
 .hero-img-credit:hover .hic-cerchio{background:rgba(212,178,86,.42)}
@@ -1211,6 +1212,44 @@ html[data-theme="dark"] .peek-foot{background:#141a12}
   .illus-strip,.intro-strip{scroll-padding-inline:1rem}
 }
 @media(max-width:760px){
-  .materie-grid{gap:.8rem}
+  /* anche le materie diventano una fila che scorre: tre schede
+     impilate erano altre tre schermate da percorrere */
+  .materie-grid{display:flex;overflow-x:auto;gap:.8rem;
+    scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;
+    scrollbar-width:none;padding-bottom:.4rem}
+  .materie-grid::-webkit-scrollbar{display:none}
+  .materie-grid>*{flex:0 0 80%;scroll-snap-align:center}
   .mat-card{padding:1.3rem}
+  /* un segno discreto che invita a trascinare */
+  .sec-head::after{content:'scorri di lato →';display:block;width:100%;
+    font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--stone-light);margin-top:.2rem}
+}
+
+/* ── LA BANDA «CHI SONO» IN HOMEPAGE ────────────────────────
+   Riassume in cinque righe e manda alla pagina completa. Serve a
+   rendere il menu coerente: tutte le voci scorrono, nessuna
+   porta via di sorpresa. */
+.chi-banda{background:var(--parchment);padding:4.5rem 6rem}
+.chi-banda-inner{max-width:1000px;margin:0 auto;display:grid;
+  grid-template-columns:150px 1fr;gap:2.6rem;align-items:center}
+.chi-banda-ritratto{width:150px;height:150px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(140deg,#2d5a27,#9a7c2e);
+  box-shadow:0 12px 40px rgba(45,90,39,.3)}
+.chi-banda-ritratto span{font-family:'Cormorant Garamond',serif;font-size:3rem;color:#fff}
+.chi-banda-ruolo{font-size:.85rem;color:var(--forest);font-weight:500;margin:-.4rem 0 .9rem}
+.chi-banda-testo>p{font-size:.94rem;line-height:1.85;color:var(--stone);font-weight:300;max-width:62ch}
+.chi-banda-testo strong{color:var(--ink);font-weight:500}
+.chi-banda-azioni{display:flex;gap:1.2rem;align-items:center;flex-wrap:wrap;margin-top:1.5rem}
+.chi-banda-azioni a{text-decoration:none;display:inline-block}
+html[data-theme="dark"] .chi-banda{background:#171d15}
+@media(max-width:960px){.chi-banda{padding:3.5rem 1.5rem}}
+@media(max-width:760px){
+  .chi-banda{padding:2.6rem 1.1rem}
+  .chi-banda-inner{grid-template-columns:1fr;gap:1.4rem;justify-items:center;text-align:center}
+  .chi-banda-ritratto{width:110px;height:110px}
+  .chi-banda-ritratto span{font-size:2.2rem}
+  .chi-banda-azioni{justify-content:center}
+  .chi-banda-testo>p{text-align:left}
 }
