@@ -9,12 +9,35 @@ studenti, numeri contati dal sito.
 
 1. ~~Statistiche nell'hub docente~~ — fatto (migrazione 05)
 2. ~~«Chi sono» modificabile dal sito~~ — fatto (migrazione 06)
-3. **I sigilli ridisegnati** — con lo stesso dettaglio delle tavole.
-   È l'unico punto della lista rimasto aperto.
+3. ~~I sigilli ridisegnati~~ — fatto: tutti e dieci, 315 tratti in
+   tutto, media 32 a sigillo. Guardati a vista rendendoli in PNG.
 4. ~~Le votazioni a squadre~~ — fatto (migrazione 07)
 5. ~~Timer da proiettare + estrattore di studenti~~ — fatto
 6. ~~Ricostruttore di sillogismi~~ — fatto
 7. ~~Palestra di logica (tavole di verità)~~ — fatto
+
+## La scaletta delle diciassette prove
+
+Fatte (8): timer, sorteggio, palestra di logica, ricostruttore di
+sillogismi, votazioni a squadre, mappa argomentativa, analizzatore di
+testo, linea del tempo delle idee, confrontatore di filosofi.
+
+Rimaste (9), in quest'ordine:
+
+1. **Glossario ipertestuale** — ogni termine apre la definizione e i
+   punti dei testi in cui compare.
+2. **Simulatore socratico** — un interlocutore che fa solo domande.
+   Va fatto a regole, non a sorte: deve incalzare sul punto debole.
+3. **Linea del tempo sincronica** — che cosa accadeva nello stesso
+   anno in parti diverse del mondo.
+4. **Macchina del contesto** — si inserisce un anno: che cosa si
+   leggeva, si ascoltava, si indossava.
+5. **Diario immersivo** — fonti in prima persona sulla mappa.
+6. **Grafici animati** — popolazione, prodotto interno, migrazioni.
+7. **Penna che raddrizza** — a mano libera diventa freccia o riquadro.
+8. **Generatore di mappe concettuali** — da un testo a uno schema.
+9. **Wiki di classe** — l'unica che vuole il database: va aggiunta una
+   migrazione, non basta una pagina sola.
 
 ## Le prove, come stanno (11 agosto 2026)
 
