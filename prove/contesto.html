@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Macchina del contesto — Idearca</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Jost',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  background:#faf8f3;color:#1c2b1a;font-weight:300;-webkit-font-smoothing:antialiased}
+.w{max-width:1000px;margin:0 auto;padding:2rem 1.5rem 4rem}
+.k{font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:#8a9e87;font-weight:600}
+h1{font-family:'Cormorant Garamond',Georgia,serif;font-size:2.4rem;font-weight:400;margin:.3rem 0 .5rem}
+.sub{font-size:.92rem;line-height:1.7;color:#5a6b58;max-width:66ch}
+.et{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:#9a7c2e;
+  font-weight:700;margin:1.8rem 0 .8rem;display:flex;align-items:center;gap:.6rem}
+.et::after{content:'';flex:1;height:1px;background:rgba(45,90,39,.13)}
+
+.quadrante{border:1px solid rgba(45,90,39,.16);border-radius:14px;background:#fff;
+  padding:1.2rem 1.4rem}
+.anno-riga{display:flex;gap:1rem;align-items:center;flex-wrap:wrap}
+#anno{font-family:'Cormorant Garamond',Georgia,serif;font-size:3.4rem;font-weight:600;
+  width:5.4ch;border:none;border-bottom:2px solid rgba(45,90,39,.2);background:none;
+  color:#2d5a27;outline:none;text-align:center;padding:0}
+#anno:focus{border-bottom-color:#2d5a27}
+#cursore{flex:1;min-width:200px;accent-color:#2d5a27;height:5px;cursor:pointer}
+.epoca{font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:#8a6a1e;
+  font-weight:700;background:rgba(154,124,46,.12);padding:.25rem .8rem;border-radius:100px}
+.salti{display:flex;gap:.4rem;flex-wrap:wrap;margin-top:.9rem}
+.mini{font:inherit;font-size:.71rem;padding:.35rem .8rem;border-radius:100px;cursor:pointer;
+  border:1px solid rgba(45,90,39,.2);background:#fff;color:#2d5a27;transition:all .16s}
+.mini:hover{background:#2d5a27;color:#fff;border-color:#2d5a27}
+
+.carte{display:grid;grid-template-columns:repeat(auto-fill,minmax(292px,1fr));gap:.7rem;margin-top:1rem}
+.ca{border:1px solid rgba(45,90,39,.14);border-top:3px solid var(--c);border-radius:12px;
+  padding:.9rem 1.05rem;background:#fff}
+.ca h3{font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;color:var(--c);
+  font-weight:700;margin-bottom:.45rem}
+.ca p{font-size:.85rem;line-height:1.7;color:#3d4a3b}
+
+.tempo{margin-top:.8rem;border-radius:14px;padding:1.1rem 1.3rem;background:#fff;
+  border:1px solid rgba(45,90,39,.14);border-left:5px solid #3f6d8c}
+.tempo h3{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.35rem;font-weight:600;
+  color:#3f6d8c;margin-bottom:.5rem}
+.due{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:.3rem}
+.due h4{font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;
+  margin-bottom:.4rem}
+.gia h4{color:#2d5a27}.no h4{color:#c0453b}
+.due ul{list-style:none}
+.due li{font-size:.83rem;line-height:1.6;color:#3d4a3b;padding-left:1rem;position:relative;
+  margin-bottom:.2rem}
+.gia li::before{content:'✓';position:absolute;left:0;color:#2d5a27;font-size:.7rem;top:.15rem}
+.no li::before{content:'✕';position:absolute;left:0;color:#c0453b;font-size:.7rem;top:.15rem}
+.due li b{font-weight:600}
+.due li span{color:#8a9e87;font-size:.75rem}
+
+.chiosa{margin-top:.8rem;padding:.9rem 1.1rem;border-radius:10px;background:#f6f3ec;
+  font-size:.85rem;line-height:1.7;color:#5a6b58;border-left:3px solid #9a7c2e}
+.chiosa b{color:#8a6a1e;font-weight:600}
+@media(max-width:640px){
+  .w{padding:1.4rem 1rem 3rem}h1{font-size:1.9rem}
+  .carte{grid-template-columns:1fr}.due{grid-template-columns:1fr}
+  #anno{font-size:2.6rem}
+}
+</style>
+</head>
+<body>
+<div class="w">
+  <div class="k">Idearca · Prove</div>
+  <h1>Macchina del contesto</h1>
+  <p class="sub">Si mette un anno e si guarda com'era la giornata di chi ci viveva: che cosa
+  leggeva, che cosa ascoltava, che cosa aveva addosso, quanto ci metteva ad andare da Roma a
+  Milano. Serve a togliere <strong>la data dall'astratto</strong>: 1650 non è un numero, è
+  un posto in cui qualcuno si è svegliato la mattina.</p>
+
+  <div class="quadrante" style="margin-top:1.2rem">
+    <div class="anno-riga">
+      <input id="anno" type="text" inputmode="numeric" value="1650" maxlength="4">
+      <input id="cursore" type="range" min="1500" max="2025" value="1650">
+      <span class="epoca" id="epoca"></span>
+    </div>
+    <div class="salti" id="salti"></div>
+  </div>
+
+  <p class="sub" style="font-size:.78rem;margin-top:.9rem;color:#8a9e87">Le sei schede
+  descrivono <em>l'epoca intera</em>, non il singolo anno: al 1650 la scheda dei libri cita già
+  Newton, che arriverà nel 1687. Il pannello azzurro qui sotto è invece esatto all'anno — ed è
+  lì che si vede la differenza fra «in quel secolo si leggeva» e «quel giorno esisteva».</p>
+
+  <div class="carte" id="carte"></div>
+  <div class="tempo" id="tempo"></div>
+  <div class="chiosa" id="chiosa"></div>
+</div>
+
+<script>
+/* ══════════════════════════════════════════════════════════
+   LA MACCHINA DEL CONTESTO
+   Le epoche sono contigue e coprono tutto l'arco senza buchi:
+   qualunque anno si scriva, una risposta c'è. Le cose materiali
+   cambiano più lentamente delle date dei manuali, e questo è
+   proprio il punto — la vita quotidiana del 1655 e quella del
+   1690 si somigliano molto più di quanto si somiglino i due
+   capitoli che le raccontano.
+   ══════════════════════════════════════════════════════════ */
+
+const EPOCHE=[
+{da:1500, a:1570, n:'Primo Cinquecento',
+ leggeva:'L\'<em>Orlando furioso</em> (1516) è il libro che tutti citano; <em>Il Cortegiano</em> insegna come stare al mondo. La stampa ha appena cinquant\'anni e un libro costa ancora come settimane di lavoro: si legge ad alta voce, in gruppo, e chi legge da solo e in silenzio fa una cosa che stupisce.',
+ ascoltava:'Polifonia in chiesa, frottole e madrigali nelle corti. In casa si suona il liuto. La musica stampata esiste da poco (Petrucci, 1501) e resta rara: quasi tutto si impara a orecchio e si perde.',
+ indossava:'Lana e lino; la seta dice chi sei. Le leggi suntuarie stabiliscono per legge chi può portare quale stoffa. Il nero è il colore più caro di tutti, perché tingere bene di nero è difficilissimo.',
+ mangiava:'Pane, minestre, legumi. La carne è rara per i più. Il mais e i fagioli americani stanno appena entrando nei campi; pomodoro e patata sono curiosità da orto botanico, non cibo.',
+ spostava:'A piedi si fanno trenta chilometri al giorno. Da Roma a Milano ci vogliono due settimane buone, e la si considera velocità normale.',
+ nuovo:'La stampa a caratteri mobili sta cambiando che cosa si può sapere e in quanti lo possono sapere.'},
+
+{da:1570, a:1650, n:'Tardo Cinquecento e primo Seicento',
+ leggeva:'La <em>Gerusalemme liberata</em> (1581) e il <em>Don Chisciotte</em> (1605). Dal 1559 c\'è l\'Indice dei libri proibiti, e nel 1633 il <em>Dialogo</em> di Galileo ci finisce dentro: il libro circola lo stesso, stampato all\'estero.',
+ ascoltava:'Nasce l\'opera: l\'<em>Orfeo</em> di Monteverdi è del 1607. A Cremona gli Amati stanno dando al violino la forma che avrà per sempre.',
+ indossava:'La gorgiera inamidata, che obbliga a tenere il mento alto. Nero spagnolo per gli uomini di rango. Vestirsi richiede aiuto: gli abiti si allacciano sulla schiena.',
+ mangiava:'La polenta di mais si impone nel nord e diventerà, un secolo dopo, anche la causa della pellagra. Caffè e cioccolata arrivano nelle corti come medicine esotiche.',
+ spostava:'Carrozza per chi può, a vela per mare. La peste del 1630 chiude le strade: a Milano muore un terzo della città.',
+ nuovo:'Il cannocchiale (1609) mostra che la Luna ha le montagne e Giove le lune. Cominciano a uscire fogli di notizie a scadenza regolare.'},
+
+{da:1650, a:1730, n:'Secondo Seicento e primo Settecento',
+ leggeva:'Le gazzette diventano un\'abitudine. I <em>Principia</em> di Newton (1687) li leggono in pochi e li capiscono in pochissimi. In Inghilterra nasce il romanzo moderno: <em>Robinson Crusoe</em> è del 1719.',
+ ascoltava:'Corelli, Vivaldi a Venezia, Bach in Germania. Il concerto per solista è la forma nuova: per la prima volta la musica mette in scena un individuo contro un gruppo.',
+ indossava:'La parrucca incipriata, alta e costosa. Per gli uomini compare l\'abito a tre pezzi — giustacuore, veste, calzoni — che è l\'antenato diretto del completo di oggi.',
+ mangiava:'Aprono le botteghe del caffè, e sono la prima cosa che somigli a un luogo pubblico dove si discute. Lo zucchero, prodotto da schiavi nelle Antille, smette di essere un lusso.',
+ spostava:'Diligenze con orari fissi. I giovani inglesi ricchi cominciano il Grand Tour: l\'Italia diventa una tappa obbligata e un\'industria.',
+ nuovo:'Il caffè come istituzione sociale, e il giornale che esce tutti i giorni.'},
+
+{da:1730, a:1800, n:'Settecento',
+ leggeva:'L\'<em>Encyclopédie</em> (1751-1772) prova a mettere tutto il sapere in ordine alfabetico. Rousseau si legge come oggi si guarda una serie. Nascono le biblioteche circolanti: il libro si può prendere in prestito invece che comprare.',
+ ascoltava:'Haydn e Mozart. Il pianoforte scalza il clavicembalo perché può fare piano e forte, cioè può commuovere.',
+ indossava:'Sete e ricami fino alla Rivoluzione; poi, di colpo, austerità e colori scuri. Il nero borghese nasce come dichiarazione politica prima che come eleganza.',
+ mangiava:'La patata vince le resistenze dopo le carestie e diventa cibo di massa. A Napoli si comincia a mettere il pomodoro sulla pasta: le prime ricette di salsa sono di fine secolo.',
+ spostava:'Strade migliori e servizi postali regolari, ma sempre a cavallo. Watt sta perfezionando la macchina a vapore, che però muove ancora solo pompe.',
+ nuovo:'La vaccinazione contro il vaiolo (Jenner, 1796): per la prima volta si può prevenire una malattia invece di curarla.'},
+
+{da:1800, a:1860, n:'Primo Ottocento',
+ leggeva:'<em>I promessi sposi</em> (1827 e 1840). I romanzi escono a puntate sui giornali e si aspetta la puntata come si aspetta un episodio. Ma in Italia, al 1861, tre persone su quattro non sanno leggere.',
+ ascoltava:'L\'opera è musica popolare, non musica colta: Rossini, Bellini, Donizetti, Verdi. Le arie si cantano per strada e si suonano con l\'organetto.',
+ indossava:'La crinolina dagli anni Cinquanta, che allarga la gonna fino a rendere difficile passare da una porta. Il cilindro per gli uomini. Il cotone industriale fa crollare i prezzi.',
+ mangiava:'Polenta nel nord, e con la polenta la pellagra, che viene da una dieta di solo mais. Pane e companatico altrove. La pasta si diffonde da Napoli verso il resto della penisola.',
+ spostava:'La ferrovia cambia tutto: la prima linea italiana, Napoli-Portici, è del 1839. Quello che richiedeva settimane richiede giorni.',
+ nuovo:'La fotografia (1839) e il telegrafo: per la prima volta un\'immagine si fissa da sola, e una notizia corre più veloce di chi la porta.'},
+
+{da:1860, a:1900, n:'Secondo Ottocento',
+ leggeva:'<em>Pinocchio</em> (1883) e <em>Cuore</em> (1886) crescono con la scuola dell\'obbligo. I quotidiani tirano centinaia di migliaia di copie e diventano la prima cosa che tutti leggono insieme.',
+ ascoltava:'Verdi e poi Puccini. In ogni paese c\'è una banda municipale, ed è lì che la gente sente l\'orchestra. Nelle case borghesi entra il pianoforte verticale.',
+ indossava:'La tournure sostituisce la crinolina; per gli uomini il completo grigio che oggi chiameremmo normale. La macchina da cucire porta il vestito confezionato.',
+ mangiava:'Si emigra per fame: fra il 1876 e il 1900 partono più di cinque milioni di italiani. Quella che oggi si chiama dieta mediterranea era la dieta di chi non poteva permettersi altro.',
+ spostava:'Ferrovia capillare, tram a cavalli nelle città, e dagli anni Novanta la bicicletta, che è la prima libertà di movimento personale a buon mercato.',
+ nuovo:'Elettricità, telefono, cinema (1895), automobile. Quattro cose che nascono nello stesso ventennio.'},
+
+{da:1900, a:1925, n:'Primo Novecento',
+ leggeva:'I quotidiani sono di massa. D\'Annunzio è una celebrità come oggi lo sono i cantanti. Il manifesto futurista esce sul Figaro nel 1909 e si prende gioco di tutto quello che c\'era prima.',
+ ascoltava:'Il grammofono porta la musica dentro casa. Caruso incide dal 1902 e vende milioni di dischi: per la prima volta si può riascoltare la stessa esecuzione.',
+ indossava:'Dopo la guerra il corsetto sparisce e le gonne si accorciano. Le donne che hanno lavorato in fabbrica non tornano ai vestiti di prima.',
+ mangiava:'Razionamento durante la guerra. Zucchero e carne restano lussi per la maggioranza anche dopo.',
+ spostava:'Tram elettrici in città, automobile per pochissimi. Il primo volo dei Wright è del 1903, e nel 1919 si attraversa già l\'Atlantico.',
+ nuovo:'La radio: le prime trasmissioni pubbliche italiane sono del 1924. E l\'influenza spagnola, che fra il 1918 e il 1920 uccide più della guerra appena finita.'},
+
+{da:1925, a:1950, n:'Fra le due guerre e la ricostruzione',
+ leggeva:'Censura di regime, e traduzioni fatte passare di nascosto. Einaudi nasce nel 1933. Dopo la guerra il neorealismo racconta un paese che non si era mai visto scritto.',
+ ascoltava:'La radio è il centro della casa e dello Stato. Sanremo comincia nel 1951, e la canzone italiana diventa una cosa che si ascolta tutti insieme la stessa sera.',
+ indossava:'Autarchia: si producono fibre dal latte e dalla ginestra perché la lana manca. Dopo la guerra il cappotto si rivolta, cioè si scuce e si ricuce al rovescio per farlo sembrare nuovo.',
+ mangiava:'Tessera annonaria e code. Il pane bianco torna sulle tavole solo negli anni Cinquanta.',
+ spostava:'Bicicletta e treno. La Vespa è del 1946 e mette due ruote a motore alla portata di chi non aveva mai avuto niente di motorizzato.',
+ nuovo:'La penicillina, che dal 1943 rende curabile quello che uccideva. E la plastica, che comincia a sostituire tutto.'},
+
+{da:1950, a:1975, n:'Il boom',
+ leggeva:'I tascabili economici mettono i classici in edicola. I fotoromanzi vendono più dei romanzi. L\'analfabetismo scende sotto il dieci per cento, anche grazie alla televisione.',
+ ascoltava:'Il giradischi a 45 giri e il juke-box. Poi i cantautori, che pretendono di essere ascoltati come si legge un testo.',
+ indossava:'La minigonna dagli anni Sessanta. I jeans arrivano come divisa di una generazione: è la prima volta che i giovani non si vestono come i genitori in versione ridotta.',
+ mangiava:'Entra il frigorifero, e con lui la possibilità di conservare. La carne tutti i giorni diventa un fatto normale per molti, ed è una novità storica assoluta.',
+ spostava:'La Fiat 600 (1955) e l\'Autostrada del Sole (1964). L\'Italia si accorcia: in un giorno si va da Milano a Napoli.',
+ nuovo:'La televisione, dal 1954. E la lavatrice, che restituisce alle donne un giorno a settimana.'},
+
+{da:1975, a:2000, n:'Fine Novecento',
+ leggeva:'<em>Il nome della rosa</em> (1980) vende milioni di copie e dimostra che un romanzo difficile può essere popolare. I quotidiani cominciano il loro lento calo.',
+ ascoltava:'La musicassetta, che si registra e si regala: la compilation è una lettera. Il walkman (1979) rende la musica una cosa privata anche in mezzo alla gente. Poi il CD.',
+ indossava:'Le griffe e il Made in Italy diventano un\'industria da esportazione. L\'abbigliamento sportivo esce dalla palestra e non ci torna più.',
+ mangiava:'Surgelati e supermercato. Nello stesso momento la cucina regionale, che era povertà, diventa patrimonio e orgoglio.',
+ spostava:'L\'automobile per tutti, e alla fine del periodo i voli a basso costo, che rendono normale una cosa che era stata di lusso per un secolo.',
+ nuovo:'Il personal computer, il telefono cellulare, e dal 1991 il web — che fino al 1996 quasi nessuno usa.'},
+
+{da:2000, a:2025, n:'Oggi',
+ leggeva:'Si legge molto, ma quasi tutto su uno schermo e in pezzi corti. I quotidiani hanno perso più della metà delle copie in vent\'anni.',
+ ascoltava:'Dagli mp3 allo streaming: la musica smette di essere una cosa che si possiede e diventa un servizio che si affitta.',
+ indossava:'Fast fashion, con vestiti che costano meno di un pasto e durano una stagione. E, per reazione, il ritorno dell\'usato.',
+ mangiava:'Il cibo arriva a casa in venti minuti. Quello che si mangia diventa una dichiarazione di identità come una volta lo era il vestito.',
+ spostava:'Voli a poco prezzo fino al 2020, quando una pandemia ferma il mondo per la prima volta dal 1945.',
+ nuovo:'Lo smartphone (2007), che mette in tasca tutto insieme. I social network. E dal 2022 i modelli linguistici, che scrivono.'}
+];
+
+/* Le novità con la loro data: servono a rispondere alla domanda
+   più utile di tutte, «che cosa non c'era ancora». */
+const NOVITA=[
+ {y:1450, n:'La stampa a caratteri mobili'},
+ {y:1492, n:'Il contatto fra Europa e Americhe'},
+ {y:1543, n:'L\'idea che la Terra giri intorno al Sole'},
+ {y:1609, n:'Il cannocchiale'},
+ {y:1620, n:'Il termometro'},
+ {y:1650, n:'La bottega del caffè'},
+ {y:1687, n:'La gravitazione di Newton'},
+ {y:1709, n:'Il pianoforte'},
+ {y:1751, n:'L\'Encyclopédie'},
+ {y:1769, n:'La macchina a vapore di Watt'},
+ {y:1796, n:'Il vaccino contro il vaiolo'},
+ {y:1804, n:'La locomotiva'},
+ {y:1839, n:'La fotografia'},
+ {y:1844, n:'Il telegrafo elettrico'},
+ {y:1859, n:'L\'evoluzione per selezione naturale'},
+ {y:1876, n:'Il telefono'},
+ {y:1879, n:'La lampadina'},
+ {y:1885, n:'L\'automobile'},
+ {y:1895, n:'Il cinema'},
+ {y:1900, n:'La psicoanalisi'},
+ {y:1903, n:'L\'aeroplano'},
+ {y:1905, n:'La relatività'},
+ {y:1924, n:'La radio in Italia'},
+ {y:1928, n:'La penicillina'},
+ {y:1945, n:'La bomba atomica'},
+ {y:1946, n:'La Vespa'},
+ {y:1953, n:'La struttura del DNA'},
+ {y:1954, n:'La televisione in Italia'},
+ {y:1969, n:'L\'uomo sulla Luna'},
+ {y:1971, n:'Il microprocessore'},
+ {y:1979, n:'Il walkman'},
+ {y:1991, n:'Il web'},
+ {y:2007, n:'Lo smartphone'},
+ {y:2022, n:'I modelli linguistici che scrivono'}
+];
+
+const SALTI=[1500,1600,1650,1700,1789,1861,1900,1945,1968,2000,2025];
+const CATEGORIE=[
+ ['leggeva','Che cosa si leggeva','#9a7c2e'],
+ ['ascoltava','Che cosa si ascoltava','#7a4b8c'],
+ ['indossava','Che cosa si indossava','#a1542f'],
+ ['mangiava','Che cosa si mangiava','#2d5a27'],
+ ['spostava','Come ci si spostava','#3f6d8c'],
+ ['nuovo','Che cosa era nuovo','#6b6459']
+];
+
+const campo=document.getElementById('anno'), cursore=document.getElementById('cursore');
+
+function epocaDi(y){
+  /* le epoche sono contigue: l'ultima che comincia prima o
+     nell'anno cercato è quella giusta */
+  let e=EPOCHE[0];
+  for(const x of EPOCHE) if(y>=x.da) e=x;
+  return e;
+}
+
+function disegna(){
+  let y=parseInt(campo.value,10);
+  if(isNaN(y)) y=1650;
+  y=Math.max(1500,Math.min(2025,y));
+  cursore.value=y;
+
+  const e=epocaDi(y);
+  document.getElementById('epoca').textContent=e.n;
+
+  document.getElementById('carte').innerHTML = CATEGORIE.map(([k,t,c])=>
+    `<div class="ca" style="--c:${c}"><h3>${t}</h3><p>${e[k]}</p></div>`).join('');
+
+  /* già c'era / non c'era ancora: le cinque più vicine da ogni lato */
+  const gia = NOVITA.filter(n=>n.y<=y).slice(-5).reverse();
+  const no  = NOVITA.filter(n=>n.y>y).slice(0,5);
+  document.getElementById('tempo').innerHTML=
+    `<h3>Nel ${y}, per chi c'era</h3>
+     <div class="due">
+      <div class="gia"><h4>Era già arrivato</h4><ul>${
+        gia.length?gia.map(n=>{const d=y-n.y;
+          return `<li><b>${n.n}</b> <span>— ${d===0?'da quest\'anno':'da '+d+' ann'+(d===1?'o':'i')}</span></li>`;}).join('')
+                  :'<li><span>niente di questo elenco</span></li>'}</ul></div>
+      <div class="no"><h4>Non esisteva ancora</h4><ul>${
+        no.length?no.map(n=>{const d=n.y-y;
+          return `<li><b>${n.n}</b> <span>— ${d===1?'manca un anno':'mancano '+d+' anni'}</span></li>`;}).join('')
+                 :'<li><span>tutto quello che è in elenco è già qui</span></li>'}</ul></div>
+     </div>`;
+
+  document.getElementById('chiosa').innerHTML=
+    `<b>Una cosa da far notare.</b> Chi aveva sedici anni nel ${y} è nato nel ${y-16}, `
+    + `e i suoi nonni raccontavano il ${y-70} come noi raccontiamo il ${2025-70}. `
+    + `Il passato di ogni epoca ha la stessa profondità del nostro: nessuno ha mai vissuto `
+    + `all'inizio della storia.`;
+}
+
+campo.addEventListener('input',disegna);
+campo.addEventListener('blur',()=>{ let y=parseInt(campo.value,10);
+  if(isNaN(y)) y=1650; campo.value=Math.max(1500,Math.min(2025,y)); disegna(); });
+cursore.addEventListener('input',()=>{ campo.value=cursore.value; disegna(); });
+
+document.getElementById('salti').innerHTML = SALTI.map(y=>
+  `<button class="mini" onclick="campo.value=${y};disegna()">${y}</button>`).join('');
+disegna();
+</script>
+</body>
+</html>
