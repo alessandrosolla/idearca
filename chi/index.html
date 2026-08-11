@@ -6,7 +6,7 @@
 <title>Chi sono · Cosa è Idearca — Alessandro Solla</title>
 <meta name="description" content="Alessandro Solla, docente abilitato di Storia e Filosofia (A-19). Che cos'è Idearca: una piattaforma didattica progettata, scritta e mantenuta da me.">
 <link rel="icon" type="image/svg+xml" href="../favicon.svg">
-<link rel="stylesheet" href="../css/stile.css?v=20260811s">
+<link rel="stylesheet" href="../css/stile.css?v=20260811t">
 <style>
 body{background:linear-gradient(180deg,#f5f3ea 0%,#eff2ea 45%,#f5f3eb 100%)}
 /* La pagina era scritta solo per il tema chiaro: al buio il testo
@@ -74,7 +74,8 @@ html[data-theme="dark"] .numerone span{color:#a8b5a4}
   box-shadow:0 10px 34px rgba(45,90,39,.32)}
 .intesta h2{font-family:'Cormorant Garamond',serif;font-size:1.9rem;font-weight:500;margin-bottom:.25rem}
 .intesta .ruolo{font-size:.85rem;color:var(--forest);font-weight:500;margin-bottom:.7rem}
-.intesta p{font-size:.9rem;line-height:1.75;color:var(--stone);font-weight:300}
+.intesta p{font-size:.9rem;line-height:1.75;color:var(--stone);font-weight:300;
+  text-align:justify;hyphens:auto;-webkit-hyphens:auto}
 .intesta .contatti{margin-top:.9rem;display:flex;gap:1.2rem;flex-wrap:wrap;font-size:.82rem}
 .intesta .contatti a{color:var(--forest);text-decoration:none;border-bottom:1px solid var(--border-gold)}
 
@@ -164,7 +165,10 @@ h3.sotto::before{content:'';width:22px;height:3px;border-radius:2px;
 @media(max-width:780px){
   .pg{padding:5.5rem 1.2rem 3.5rem}
   .pg h1{font-size:2.2rem}
-  .intesta{grid-template-columns:1fr;text-align:center;justify-items:center}
+  /* sul telefono il ritratto sta in cima e il testo resta dritto:
+     centrato diventava una scala di righe di lunghezze diverse */
+  .intesta{grid-template-columns:1fr;justify-items:center;text-align:left}
+  .intesta h2,.intesta .ruolo{text-align:center;width:100%}
   .numeroni{grid-template-columns:repeat(2,1fr)}
   .pezzi{grid-template-columns:1fr}
 }
@@ -320,8 +324,8 @@ h3.sotto::before{content:'';width:22px;height:3px;border-radius:2px;
 
   <span class="pg-eye" id="chi">Chi sono</span>
   <h1>Alessandro Solla</h1>
-  <p class="lede" data-campo="lede">Insegno Storia e Filosofia. Idearca è lo strumento che mi sono
-  costruito per farlo: l'ho progettato, l'ho realizzato e lo mantengo da solo.</p>
+  <p class="lede" data-campo="lede">Insegno Storia e Filosofia. Idearca è nata da un'esigenza
+  della mia aula: l'ho pensata, costruita e la porto avanti io, lezione dopo lezione.</p>
 
   <div class="intesta">
     <div class="ritratto-vuoto" id="ritratto">AS</div>
@@ -498,7 +502,7 @@ h3.sotto::before{content:'';width:22px;height:3px;border-radius:2px;
 })();
 try{const t=localStorage.getItem('idearca-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}
 </script>
-<script src="../js/numeri.js?v=20260811s" data-base="../"></script>
+<script src="../js/numeri.js?v=20260811t" data-base="../"></script>
 
 <div class="barra-modifica" id="barra-modifica">
   <span class="bm-et">Modalità docente</span>

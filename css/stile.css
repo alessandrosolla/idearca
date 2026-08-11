@@ -1222,8 +1222,8 @@ html[data-theme="dark"] .peek-foot{background:#141a12}
   .materie-grid::-webkit-scrollbar{display:none}
   .materie-grid>*{flex:0 0 80%;scroll-snap-align:center}
   .mat-card{padding:1.3rem}
-  /* un segno discreto che invita a trascinare */
-  .sec-head::after{content:'scorri di lato →';display:block;width:100%;
+  /* l'invito compare solo nelle sezioni che davvero scorrono */
+  #materie-section .sec-head::after{content:'scorri di lato →';display:block;width:100%;
     font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;
     color:var(--stone-light);margin-top:.2rem}
 }
@@ -1254,4 +1254,47 @@ html[data-theme="dark"] .chi-banda{background:#171d15}
   .chi-banda-ritratto span{font-size:2.2rem}
   .chi-banda-azioni{justify-content:center}
   .chi-banda-testo>p{text-align:left}
+}
+
+/* ── RIPETIZIONI SUL TELEFONO ───────────────────────────────
+   Le tre schede impilate erano tre schermate. Adesso scorrono di
+   lato come le materie, con l'aggancio che le ferma al centro. */
+@media(max-width:760px){
+  .rip-paths{display:flex;overflow-x:auto;gap:.8rem;
+    scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;
+    scrollbar-width:none;padding-bottom:.5rem;margin-bottom:1.2rem}
+  .rip-paths::-webkit-scrollbar{display:none}
+  .rip-path{flex:0 0 84%;scroll-snap-align:center;margin:0}
+  .rip-section .sec-head::after{content:'scorri di lato →';display:block;width:100%;
+    font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--stone-light);margin-top:.2rem}
+  .rip-lead{margin-bottom:1.2rem}
+}
+
+/* ── LA VETRINA SUL TELEFONO ────────────────────────────────
+   Era illeggibile: testo piccolissimo e intestazione che copriva
+   il contenuto mentre si scorreva. */
+@media(max-width:760px){
+  .peek-modal{max-height:92vh;border-radius:14px}
+  .peek-head{padding:1.4rem 1.2rem 1rem;position:sticky;top:0;z-index:3;
+    background:linear-gradient(180deg,#f6f4ec 82%,rgba(246,244,236,.94));
+    border-bottom:1px solid var(--border)}
+  .peek-title{font-size:1.7rem;margin:.3rem 0 .5rem}
+  .peek-lede{font-size:.92rem;line-height:1.7}
+  .peek-scroll{padding:1.1rem 1.2rem 1.4rem}
+  .peek-nums{grid-template-columns:repeat(2,1fr);gap:.6rem}
+  .peek-num b{font-size:1.9rem}
+  .peek-num span{font-size:.62rem}
+  .peek-sec-title{font-size:.68rem}
+  .peek-sec-nota{font-size:.86rem;line-height:1.6}
+  .peek-card p,.peek-tool span{font-size:.88rem;line-height:1.6}
+  .peek-card-h{font-size:.95rem}
+  .peek-card-n{font-size:1.6rem}
+  .peek-tool b{font-size:.92rem}
+  .peek-open-tit{font-size:1.25rem}
+  .peek-open-mat{font-size:.8rem}
+  .peek-open-apri,.peek-open-tipo{font-size:.7rem}
+  .peek-foot{padding:.9rem 1.2rem;gap:.6rem}
+  .peek-foot .btn-primary,.peek-foot .btn-secondary{flex:1;font-size:.74rem;padding:.85rem .8rem}
+  html[data-theme="dark"] .peek-head{background:linear-gradient(180deg,#1b2118 82%,rgba(27,33,24,.94))}
 }
