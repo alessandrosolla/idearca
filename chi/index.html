@@ -6,9 +6,35 @@
 <title>Chi sono · Cosa è Idearca — Alessandro Solla</title>
 <meta name="description" content="Alessandro Solla, docente abilitato di Storia e Filosofia (A-19). Che cos'è Idearca: una piattaforma didattica progettata, scritta e mantenuta da me.">
 <link rel="icon" type="image/svg+xml" href="../favicon.svg">
-<link rel="stylesheet" href="../css/stile.css?v=20260811i">
+<link rel="stylesheet" href="../css/stile.css?v=20260811k">
 <style>
 body{background:linear-gradient(180deg,#f5f3ea 0%,#eff2ea 45%,#f5f3eb 100%)}
+/* La pagina era scritta solo per il tema chiaro: al buio il testo
+   diventava quasi bianco su fondo quasi bianco e spariva. */
+html[data-theme="dark"] body{background:linear-gradient(180deg,#141a12 0%,#12180f 45%,#161c13 100%)}
+html[data-theme="dark"] .intesta{
+  background:linear-gradient(118deg,rgba(111,174,97,.14) 0%,rgba(212,178,86,.09) 48%,rgba(200,120,80,.05) 100%);
+  border-color:rgba(255,255,255,.1);border-left-color:#6fae61}
+html[data-theme="dark"] .intesta::before{background:repeating-linear-gradient(118deg,rgba(255,255,255,.03) 0 1px,transparent 1px 14px)}
+html[data-theme="dark"] .numerone,
+html[data-theme="dark"] .pezzo{background:linear-gradient(150deg,color-mix(in srgb,var(--a) 16%,#1b2118),#1b2118)}
+html[data-theme="dark"] .avviso{background:rgba(212,178,86,.1)}
+html[data-theme="dark"] .tavola-sx{color:#6fae61}
+html[data-theme="dark"] .tavola-dx{color:#d4b256}
+html[data-theme="dark"] .tavola svg{opacity:.22}
+html[data-theme="dark"] .tappa::before{border-color:#141a12}
+html[data-theme="dark"] .ritratto-vuoto{background:linear-gradient(140deg,#4a7c43,#a08a3e)}
+/* i titoli ereditavano il verde scuro del tema chiaro e sparivano:
+   al buio glielo diciamo esplicitamente */
+html[data-theme="dark"] .pg h1,
+html[data-theme="dark"] .intesta h2,
+html[data-theme="dark"] .tappa b,
+html[data-theme="dark"] .pezzo b,
+html[data-theme="dark"] .pg strong{color:#eef3ea}
+html[data-theme="dark"] .intesta p,
+html[data-theme="dark"] .tappa span,
+html[data-theme="dark"] .pg p{color:#b7c4b3}
+html[data-theme="dark"] .numerone span{color:#a8b5a4}
 .pg{max-width:860px;margin:0 auto;padding:7rem 2rem 5rem;position:relative;z-index:1}
 /* Le due tavole ai lati: si tracciano da sole man mano che si
    scende, e scorrono un po' più lente della pagina. */
@@ -446,6 +472,6 @@ h3.sotto::before{content:'';width:22px;height:3px;border-radius:2px;
 })();
 try{const t=localStorage.getItem('idearca-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}
 </script>
-<script src="../js/numeri.js?v=20260811i" data-base="../"></script>
+<script src="../js/numeri.js?v=20260811k" data-base="../"></script>
 </body>
 </html>
