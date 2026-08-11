@@ -8,75 +8,115 @@
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:'Jost',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
   background:#faf8f3;color:#1c2b1a;font-weight:300;-webkit-font-smoothing:antialiased}
-.w{max-width:1000px;margin:0 auto;padding:2rem 1.6rem 4rem}
+.w{max-width:940px;margin:0 auto;padding:2rem 1.5rem 4rem}
 .k{font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:#8a9e87;font-weight:600}
-h1{font-family:'Cormorant Garamond',Georgia,serif;font-size:2.5rem;font-weight:400;margin:.3rem 0 .5rem}
-.sub{font-size:.92rem;line-height:1.7;color:#5a6b58;max-width:64ch}
-.schede{display:flex;gap:.5rem;margin:1.8rem 0 1.4rem;border-bottom:1px solid rgba(45,90,39,.13)}
-.schede button{font:inherit;font-size:.78rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
-  background:none;border:none;padding:.75rem 1.1rem;cursor:pointer;color:#5a6b58;
+h1{font-family:'Cormorant Garamond',Georgia,serif;font-size:2.4rem;font-weight:400;margin:.3rem 0 .4rem}
+.sub{font-size:.9rem;line-height:1.7;color:#5a6b58;max-width:62ch}
+
+.schede{display:flex;gap:.4rem;margin:1.6rem 0 1.6rem;border-bottom:1px solid rgba(45,90,39,.13)}
+.schede button{font:inherit;font-size:.76rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
+  background:none;border:none;padding:.7rem 1.1rem;cursor:pointer;color:#5a6b58;
   border-bottom:3px solid transparent;margin-bottom:-1px}
 .schede button.on{color:#1c2b1a;border-bottom-color:#9a7c2e}
 .pannello{display:none}.pannello.on{display:block}
 
-/* ── TIMER ── */
-.orologio{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(5rem,22vw,15rem);
-  line-height:.95;text-align:center;font-weight:600;letter-spacing:-.02em;
-  font-variant-numeric:tabular-nums;color:#2d5a27;margin:1rem 0 .4rem;transition:color .3s}
-.orologio.poco{color:#c79a2e}
-.orologio.finito{color:#c0453b;animation:pulsa 1s ease-in-out infinite}
-@keyframes pulsa{50%{opacity:.35}}
-.barra-tempo{height:10px;border-radius:10px;background:#edf2eb;overflow:hidden;margin-bottom:1.6rem}
-.barra-tempo i{display:block;height:100%;background:linear-gradient(90deg,#9a7c2e,#2d5a27);
-  transition:width 1s linear}
-.riga{display:flex;gap:.6rem;flex-wrap:wrap;justify-content:center;margin-bottom:1rem}
-.b{font:inherit;font-size:.8rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;
-  padding:.75rem 1.4rem;border-radius:100px;cursor:pointer;border:1.5px solid rgba(45,90,39,.28);
-  background:#fff;color:#2d5a27;transition:all .2s}
+.b{font:inherit;font-size:.76rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;
+  padding:.68rem 1.25rem;border-radius:100px;cursor:pointer;border:1.5px solid rgba(45,90,39,.25);
+  background:#fff;color:#2d5a27;transition:all .18s;white-space:nowrap}
 .b:hover{border-color:#2d5a27;background:#edf2eb}
 .b.pieno{background:#2d5a27;color:#fff;border-color:#2d5a27}
 .b.pieno:hover{background:#1a3a16}
-.etichetta{font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:#8a9e87;
-  text-align:center;margin-bottom:.5rem;font-weight:600}
-.avviso-suono{text-align:center;font-size:.78rem;color:#5a6b58;margin-top:.8rem}
+.b.piccolo{font-size:.68rem;padding:.48rem .9rem}
+.riga{display:flex;gap:.5rem;flex-wrap:wrap;justify-content:center;align-items:center}
+.et{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:#8a9e87;font-weight:600;
+  text-align:center;margin-bottom:.7rem}
 
-/* ── ESTRATTORE ── */
-.elenco{width:100%;min-height:11rem;font:inherit;font-size:.92rem;line-height:1.7;
-  padding:.9rem 1rem;border:1px solid rgba(45,90,39,.16);border-radius:12px;background:#fff;resize:vertical}
-.estratto{text-align:center;padding:2.6rem 1rem;border-radius:16px;background:#fff;
-  border:1px solid rgba(45,90,39,.14);margin:1.2rem 0;min-height:11rem;
-  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.6rem}
-.estratto .nome{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(2.2rem,7vw,4.2rem);
-  font-weight:600;line-height:1.05;color:#2d5a27}
-.estratto .nome.gira{opacity:.45}
-.estratto small{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:#8a9e87}
-.gia-usciti{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1rem;justify-content:center}
-.gia-usciti span{font-size:.72rem;padding:.28rem .7rem;border-radius:100px;
+/* ══ TIMER: quadrante ad anello ══ */
+.quadrante{position:relative;width:min(360px,74vw);aspect-ratio:1;margin:0 auto 1.6rem}
+.quadrante svg{width:100%;height:100%;transform:rotate(-90deg)}
+.anello-sfondo{fill:none;stroke:#e6ece3;stroke-width:9}
+.anello{fill:none;stroke:url(#sfuma);stroke-width:9;stroke-linecap:round;
+  transition:stroke-dashoffset 1s linear}
+.dentro{position:absolute;inset:0;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;gap:.15rem;pointer-events:none}
+.orologio{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(3rem,13vw,4.6rem);
+  line-height:1;font-weight:600;font-variant-numeric:tabular-nums;color:#1c2b1a;letter-spacing:-.02em}
+.stato-timer{font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:#8a9e87;font-weight:600}
+.quadrante.poco .orologio{color:#c79a2e}
+.quadrante.finito .orologio{color:#c0453b}
+.quadrante.finito{animation:pulsa 1.1s ease-in-out infinite}
+@keyframes pulsa{50%{opacity:.42}}
+
+.durate{display:flex;gap:.4rem;flex-wrap:wrap;justify-content:center;margin-bottom:1.4rem}
+.durata{font:inherit;font-size:.74rem;font-weight:600;padding:.5rem .95rem;border-radius:100px;
+  cursor:pointer;border:1.5px solid rgba(45,90,39,.2);background:#fff;color:#5a6b58;transition:all .18s}
+.durata:hover{border-color:#2d5a27;color:#2d5a27}
+.durata.scelta{background:#2d5a27;border-color:#2d5a27;color:#fff}
+.aggiunte{display:flex;gap:.4rem;justify-content:center;margin-top:1rem}
+
+/* ══ SORTEGGIO: la ruota ══ */
+.classi{display:flex;gap:.5rem;align-items:center;flex-wrap:wrap;justify-content:center;margin-bottom:1rem}
+select,input[type=text]{font:inherit;font-size:.88rem;padding:.55rem .8rem;border-radius:10px;
+  border:1px solid rgba(45,90,39,.18);background:#fff;color:#1c2b1a}
+.elenco{width:100%;min-height:8rem;font:inherit;font-size:.9rem;line-height:1.65;
+  padding:.85rem 1rem;border:1px solid rgba(45,90,39,.16);border-radius:12px;background:#fff;resize:vertical}
+.gestione{display:none;margin-bottom:1.2rem}
+.gestione.on{display:block}
+
+.ruota-zona{position:relative;width:min(380px,80vw);aspect-ratio:1;margin:0 auto 1.2rem}
+.ruota-zona svg{width:100%;height:100%;overflow:visible}
+#ruota{transition:transform 4.4s cubic-bezier(.12,.72,.06,1)}
+.freccia{position:absolute;top:-6px;left:50%;transform:translateX(-50%);
+  width:0;height:0;border-left:14px solid transparent;border-right:14px solid transparent;
+  border-top:24px solid #1c2b1a;filter:drop-shadow(0 2px 4px rgba(0,0,0,.25));z-index:3}
+.mozzo{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+  width:26%;height:26%;border-radius:50%;background:#faf8f3;
+  border:3px solid #1c2b1a;display:flex;align-items:center;justify-content:center;
+  font-family:'Cormorant Garamond',Georgia,serif;font-size:1.1rem;color:#5a6b58;z-index:2}
+.uscito{text-align:center;margin:1rem 0 1.2rem;min-height:4.6rem}
+.uscito .nome{font-family:'Cormorant Garamond',Georgia,serif;
+  font-size:clamp(2rem,6.5vw,3.6rem);font-weight:600;color:#2d5a27;line-height:1.1}
+.uscito small{display:block;font-size:.64rem;letter-spacing:.18em;text-transform:uppercase;
+  color:#8a9e87;margin-bottom:.3rem}
+.gia{display:flex;flex-wrap:wrap;gap:.35rem;justify-content:center;margin-top:1rem}
+.gia span{font-size:.7rem;padding:.25rem .65rem;border-radius:100px;
   background:#edf2eb;color:#5a6b58;border:1px solid rgba(45,90,39,.12)}
-.opzione{display:flex;align-items:center;gap:.55rem;font-size:.84rem;color:#5a6b58;justify-content:center;margin-top:.6rem}
+.opzione{display:flex;align-items:center;gap:.5rem;font-size:.82rem;color:#5a6b58;
+  justify-content:center;margin-top:.8rem}
+.vuoto{text-align:center;color:#8a9e87;font-size:.88rem;padding:2rem 1rem}
 
-/* proiezione: solo il numero, niente altro */
-body.proietta .w>*:not(.pannello),body.proietta .schede,
-body.proietta .pannello:not(.on),body.proietta .nascondi{display:none}
+/* ══ proiezione ══ */
 body.proietta{background:#0f1f10}
-body.proietta .orologio{color:#e8d9a0;font-size:min(38vw,44vh)}
-body.proietta .orologio.poco{color:#e0c470}
-body.proietta .orologio.finito{color:#e08b7e}
-body.proietta .estratto{background:transparent;border:none}
-body.proietta .estratto .nome{color:#e8d9a0;font-size:min(16vw,20vh)}
-body.proietta .estratto small,body.proietta .gia-usciti span{color:#8fa88b}
-body.proietta .barra-tempo{background:rgba(255,255,255,.1)}
-body.proietta .w{padding-top:6vh}
+body.proietta .nascondi,body.proietta .schede,body.proietta .pannello:not(.on),
+body.proietta .gestione,body.proietta .durate,body.proietta .gia,body.proietta .opzione{display:none}
+body.proietta .w{padding-top:3vh;max-width:none}
+body.proietta .quadrante{width:min(70vh,86vw)}
+body.proietta .orologio{color:#e8d9a0;font-size:min(17vw,22vh)}
+body.proietta .quadrante.poco .orologio{color:#e0c470}
+body.proietta .quadrante.finito .orologio{color:#e08b7e}
+body.proietta .stato-timer{color:#8fa88b}
+body.proietta .anello-sfondo{stroke:rgba(255,255,255,.12)}
+body.proietta .ruota-zona{width:min(62vh,82vw)}
+body.proietta .mozzo{background:#0f1f10;border-color:#e8d9a0;color:#c8d6c4}
+body.proietta .freccia{border-top-color:#e8d9a0}
+body.proietta .uscito .nome{color:#e8d9a0;font-size:min(9vw,12vh)}
+body.proietta .uscito small{color:#8fa88b}
 body.proietta .b{background:rgba(255,255,255,.08);color:#e8eee4;border-color:rgba(255,255,255,.2)}
 body.proietta .b.pieno{background:#c4a44e;color:#12240f;border-color:#c4a44e}
+
+@media(max-width:640px){
+  .w{padding:1.4rem 1rem 3rem}
+  h1{font-size:1.9rem}
+  .durate{gap:.32rem}
+  .durata{font-size:.68rem;padding:.45rem .75rem}
+}
 </style>
 </head>
 <body>
 <div class="w">
   <div class="k nascondi">Idearca · Prove</div>
   <h1 class="nascondi">Strumenti d'aula</h1>
-  <p class="sub nascondi">Due cose che servono ogni ora e che di solito si arrangiano
-  col telefono personale: un tempo che tutti vedono, e un sorteggio che nessuno può
+  <p class="sub nascondi">Un tempo che tutti vedono e un sorteggio che nessuno può
   accusare di essere truccato.</p>
 
   <div class="schede nascondi">
@@ -86,152 +126,328 @@ body.proietta .b.pieno{background:#c4a44e;color:#12240f;border-color:#c4a44e}
 
   <!-- ══════════ TIMER ══════════ -->
   <div class="pannello on" id="p-timer">
-    <div class="etichetta nascondi">Quanto dura l'attività</div>
-    <div class="riga nascondi">
-      <button class="b" onclick="imposta(60)">1 min</button>
-      <button class="b" onclick="imposta(180)">3 min</button>
-      <button class="b" onclick="imposta(300)">5 min</button>
-      <button class="b" onclick="imposta(600)">10 min</button>
-      <button class="b" onclick="imposta(900)">15 min</button>
-      <button class="b" onclick="imposta(1200)">20 min</button>
-    </div>
+    <div class="et nascondi">Quanto dura</div>
+    <div class="durate nascondi" id="durate"></div>
 
-    <div class="orologio" id="orologio">05:00</div>
-    <div class="barra-tempo"><i id="barra" style="width:100%"></i></div>
+    <div class="quadrante" id="quadrante">
+      <svg viewBox="0 0 200 200" aria-hidden="true">
+        <defs><linearGradient id="sfuma" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#9a7c2e"/><stop offset="1" stop-color="#2d5a27"/>
+        </linearGradient></defs>
+        <circle class="anello-sfondo" cx="100" cy="100" r="88"/>
+        <circle class="anello" id="anello" cx="100" cy="100" r="88"
+                stroke-dasharray="552.9" stroke-dashoffset="0"/>
+      </svg>
+      <div class="dentro">
+        <div class="orologio" id="orologio">05:00</div>
+        <div class="stato-timer" id="stato-timer">pronto</div>
+      </div>
+    </div>
 
     <div class="riga">
       <button class="b pieno" id="via" onclick="viaOStop()">Via</button>
-      <button class="b" onclick="aggiungi(60)">+1 min</button>
       <button class="b" onclick="azzera()">Azzera</button>
       <button class="b" onclick="proietta()">Schermo intero</button>
     </div>
-    <p class="avviso-suono nascondi" id="avviso-suono">Alla fine suona e lampeggia.</p>
+    <div class="aggiunte nascondi">
+      <button class="b piccolo" onclick="aggiungi(60)">+1 min</button>
+      <button class="b piccolo" onclick="aggiungi(300)">+5 min</button>
+      <button class="b piccolo" onclick="aggiungi(600)">+10 min</button>
+      <button class="b piccolo" onclick="aggiungi(-60)">−1 min</button>
+    </div>
   </div>
 
   <!-- ══════════ SORTEGGIO ══════════ -->
   <div class="pannello" id="p-sorteggio">
-    <div class="etichetta nascondi">Un nome per riga</div>
-    <textarea class="elenco nascondi" id="nomi" placeholder="Scrivi qui i nomi della classe, uno per riga.
-Restano salvati su questo computer: la prossima volta li ritrovi."></textarea>
-
-    <div class="estratto">
-      <small id="quanti">nessun nome</small>
-      <div class="nome" id="nome">—</div>
+    <div class="classi nascondi">
+      <select id="scelta-classe" onchange="cambiaClasse()"></select>
+      <button class="b piccolo" onclick="apriGestione()">Nuova classe</button>
+      <button class="b piccolo" id="b-modifica" onclick="apriGestione(true)">Modifica</button>
+      <button class="b piccolo" id="b-elimina" onclick="eliminaClasse()">Elimina</button>
     </div>
 
-    <div class="riga">
-      <button class="b pieno" onclick="sorteggia()">Sorteggia</button>
-      <button class="b" onclick="ricomincia()">Ricomincia il giro</button>
-      <button class="b" onclick="proietta()">Schermo intero</button>
+    <div class="gestione nascondi" id="gestione">
+      <div class="riga" style="justify-content:flex-start;margin-bottom:.6rem">
+        <input type="text" id="nome-classe" maxlength="40" placeholder="Nome della classe — es. 3ª A">
+      </div>
+      <textarea class="elenco" id="nomi" placeholder="Un nome per riga."></textarea>
+      <div class="riga" style="justify-content:flex-start;margin-top:.6rem">
+        <button class="b pieno piccolo" onclick="salvaClasse()">Salva la classe</button>
+        <button class="b piccolo" onclick="chiudiGestione()">Annulla</button>
+      </div>
     </div>
-    <label class="opzione nascondi">
-      <input type="checkbox" id="senza-ripetizioni" checked onchange="salvaNomi()">
-      Non ripescare chi è già uscito, finché non escono tutti
-    </label>
-    <div class="gia-usciti" id="usciti"></div>
+
+    <div id="zona-ruota">
+      <div class="ruota-zona">
+        <div class="freccia"></div>
+        <svg viewBox="-110 -110 220 220"><g id="ruota"></g></svg>
+        <div class="mozzo" id="mozzo">—</div>
+      </div>
+      <div class="uscito">
+        <small id="conta">nessuna classe</small>
+        <div class="nome" id="nome">—</div>
+      </div>
+      <div class="riga">
+        <button class="b pieno" id="b-gira" onclick="gira()">Gira la ruota</button>
+        <button class="b" onclick="ricomincia()">Ricomincia il giro</button>
+        <button class="b" onclick="proietta()">Schermo intero</button>
+      </div>
+      <label class="opzione nascondi">
+        <input type="checkbox" id="senza-rip" checked onchange="salvaImpostazioni()">
+        Chi è già uscito non torna, finché non escono tutti
+      </label>
+      <div class="gia" id="gia"></div>
+    </div>
+    <div class="vuoto nascondi" id="nessuna" style="display:none">
+      Non c'è ancora nessuna classe. Creane una: i nomi restano su questo computer.
+    </div>
   </div>
 </div>
 
 <script>
 /* ══════════════════════════════════════════════════════════
    STRUMENTI D'AULA
-   Nessun database e nessuna registrazione: tutto avviene qui,
-   e l'elenco dei nomi resta su questo computer soltanto — non
-   parte, non viene salvato altrove, non riguarda nessun altro.
+   Nessun database: le classi restano su questo computer, dentro
+   il browser. Non partono, non finiscono online, non riguardano
+   nessun altro.
    ══════════════════════════════════════════════════════════ */
 
-/* ── il tempo ────────────────────────────────────────────── */
+/* ─────────────── IL TEMPO ─────────────── */
+const DURATE=[60,120,180,300,600,900,1200,1800];
 let totale=300, restano=300, marcia=null;
+const CIRCONFERENZA=2*Math.PI*88;
+
+function disegnaDurate(){
+  document.getElementById('durate').innerHTML=DURATE.map(d=>{
+    const et = d<60 ? d+'s' : (d/60)+' min';
+    return `<button class="durata${d===totale?' scelta':''}" onclick="imposta(${d})">${et}</button>`;
+  }).join('');
+}
 
 function scrivi(){
-  const m=Math.floor(Math.max(0,restano)/60), s=Math.max(0,restano)%60;
-  const o=document.getElementById('orologio');
-  o.textContent=String(m).padStart(2,'0')+':'+String(s).padStart(2,'0');
-  o.classList.toggle('poco', restano<=30 && restano>0);
-  o.classList.toggle('finito', restano<=0);
-  document.getElementById('barra').style.width=(totale?Math.max(0,restano)/totale*100:0)+'%';
-  document.title = marcia ? o.textContent+' — Idearca' : "Strumenti d'aula — Idearca";
+  const v=Math.max(0,restano);
+  const m=Math.floor(v/60), s=v%60;
+  document.getElementById('orologio').textContent=
+    String(m).padStart(2,'0')+':'+String(s).padStart(2,'0');
+  const q=document.getElementById('quadrante');
+  q.classList.toggle('poco', v<=30 && v>0);
+  q.classList.toggle('finito', v<=0);
+  document.getElementById('stato-timer').textContent =
+    v<=0 ? 'tempo scaduto' : (marcia ? 'in corso' : 'in pausa');
+  /* l'anello si svuota in senso orario */
+  const quota = totale ? v/totale : 0;
+  document.getElementById('anello').style.strokeDashoffset = (CIRCONFERENZA*(1-quota)).toFixed(1);
+  document.title = marcia ? document.getElementById('orologio').textContent+' — Idearca'
+                          : "Strumenti d'aula — Idearca";
 }
-function imposta(sec){ ferma(); totale=sec; restano=sec; scrivi(); }
-function aggiungi(sec){ totale+=sec; restano+=sec; scrivi(); }
+function imposta(sec){ ferma(); totale=sec; restano=sec; disegnaDurate(); scrivi(); }
+function aggiungi(sec){
+  totale=Math.max(30,totale+sec); restano=Math.max(0,restano+sec);
+  if(restano>totale) totale=restano;
+  disegnaDurate(); scrivi();
+}
 function azzera(){ ferma(); restano=totale; scrivi(); }
 function ferma(){ clearInterval(marcia); marcia=null; document.getElementById('via').textContent='Via'; }
-
 function viaOStop(){
   if(marcia){ ferma(); scrivi(); return; }
   if(restano<=0) restano=totale;
-  document.getElementById('via').textContent='Ferma';
-  marcia=setInterval(()=>{
-    restano--; scrivi();
-    if(restano<=0){ ferma(); suona(); }
-  },1000);
+  document.getElementById('via').textContent='Pausa';
+  marcia=setInterval(()=>{ restano--; scrivi(); if(restano<=0){ ferma(); suona(); } },1000);
   scrivi();
 }
-
-/* Il suono: tre note generate al volo. Nessun file da scaricare,
-   e funziona anche senza rete. */
 function suona(){
   try{
     const ac=new (window.AudioContext||window.webkitAudioContext)();
-    [0,0.28,0.56].forEach((ritardo,i)=>{
+    [0,.28,.56].forEach((rit,i)=>{
       const o=ac.createOscillator(), g=ac.createGain();
       o.type='sine'; o.frequency.value=[880,1046,1318][i];
-      g.gain.setValueAtTime(0.0001, ac.currentTime+ritardo);
-      g.gain.exponentialRampToValueAtTime(0.25, ac.currentTime+ritardo+0.02);
-      g.gain.exponentialRampToValueAtTime(0.0001, ac.currentTime+ritardo+0.24);
+      g.gain.setValueAtTime(.0001, ac.currentTime+rit);
+      g.gain.exponentialRampToValueAtTime(.25, ac.currentTime+rit+.02);
+      g.gain.exponentialRampToValueAtTime(.0001, ac.currentTime+rit+.24);
       o.connect(g); g.connect(ac.destination);
-      o.start(ac.currentTime+ritardo); o.stop(ac.currentTime+ritardo+0.26);
+      o.start(ac.currentTime+rit); o.stop(ac.currentTime+rit+.26);
     });
   }catch(e){}
 }
 
-/* ── il sorteggio ────────────────────────────────────────── */
-let usciti=[];
+/* ─────────────── LE CLASSI ─────────────── */
+/* Non un elenco sciolto di nomi ma gruppi con un nome proprio:
+   si sceglie la classe e si sorteggia dentro quella. */
+let classi=[], classeAperta=null, usciti=[], inRotazione=false, angolo=0;
 
-function elenco(){
-  return document.getElementById('nomi').value.split('\n')
-    .map(r=>r.trim()).filter(Boolean);
+function leggiClassi(){
+  try{ classi=JSON.parse(localStorage.getItem('idearca-classi')||'[]'); }catch(e){ classi=[]; }
+  if(!Array.isArray(classi)) classi=[];
 }
-function salvaNomi(){
+function scriviClassi(){
+  try{ localStorage.setItem('idearca-classi', JSON.stringify(classi)); }catch(e){}
+}
+function salvaImpostazioni(){
+  try{ localStorage.setItem('idearca-senzarip', document.getElementById('senza-rip').checked?'1':'0'); }catch(e){}
+}
+
+function disegnaScelta(){
+  const sel=document.getElementById('scelta-classe');
+  sel.innerHTML = classi.map((c,i)=>
+    `<option value="${i}"${i===classeAperta?' selected':''}>${esc(c.nome)} · ${c.nomi.length}</option>`).join('')
+    || '<option>nessuna classe</option>';
+  const ce = classi.length>0;
+  document.getElementById('zona-ruota').style.display = ce ? '' : 'none';
+  document.getElementById('nessuna').style.display = ce ? 'none' : '';
+  document.getElementById('b-modifica').style.display = ce ? '' : 'none';
+  document.getElementById('b-elimina').style.display = ce ? '' : 'none';
+  document.getElementById('scelta-classe').style.display = ce ? '' : 'none';
+}
+function esc(t){ return String(t).replace(/[<>&"]/g,c=>({'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;'}[c])); }
+
+function classeCorrente(){ return classi[classeAperta]||null; }
+
+function cambiaClasse(){
+  classeAperta=Number(document.getElementById('scelta-classe').value)||0;
+  usciti=[]; angolo=0;
+  document.getElementById('ruota').style.transition='none';
+  document.getElementById('ruota').style.transform='rotate(0deg)';
+  setTimeout(()=>document.getElementById('ruota').style.transition='',30);
+  document.getElementById('nome').textContent='—';
+  document.getElementById('mozzo').textContent='—';
+  disegnaRuota(); aggiornaConto();
+  try{ localStorage.setItem('idearca-classe-aperta', String(classeAperta)); }catch(e){}
+}
+
+function apriGestione(modifica){
+  const g=document.getElementById('gestione');
+  g.classList.add('on');
+  const c = modifica ? classeCorrente() : null;
+  document.getElementById('nome-classe').value = c ? c.nome : '';
+  document.getElementById('nomi').value = c ? c.nomi.join('\n') : '';
+  g.dataset.modifica = modifica ? '1' : '';
+  document.getElementById('nome-classe').focus();
+}
+function chiudiGestione(){ document.getElementById('gestione').classList.remove('on'); }
+
+function salvaClasse(){
+  const nome=document.getElementById('nome-classe').value.trim() || 'Classe senza nome';
+  const nomi=document.getElementById('nomi').value.split('\n').map(r=>r.trim()).filter(Boolean);
+  if(!nomi.length){ alert('Scrivi almeno un nome.'); return; }
+  if(document.getElementById('gestione').dataset.modifica==='1' && classeCorrente()){
+    classi[classeAperta]={nome,nomi};
+  }else{
+    classi.push({nome,nomi}); classeAperta=classi.length-1;
+  }
+  scriviClassi(); chiudiGestione(); disegnaScelta(); cambiaClasse();
+}
+
+function eliminaClasse(){
+  const c=classeCorrente(); if(!c) return;
+  if(!confirm('Elimino la classe «'+c.nome+'»? I nomi si perdono.')) return;
+  classi.splice(classeAperta,1);
+  classeAperta = classi.length ? 0 : null;
+  scriviClassi(); disegnaScelta();
+  if(classi.length) cambiaClasse(); else { disegnaRuota(); aggiornaConto(); }
+}
+
+/* ─────────────── LA RUOTA ─────────────── */
+const TINTE=['#2d5a27','#9a7c2e','#3f6d8c','#a1542f','#4a7c43','#7a4b8c','#2f7a6a','#b08d3a'];
+
+function disegnaRuota(){
+  const g=document.getElementById('ruota');
+  const c=classeCorrente();
+  if(!c||!c.nomi.length){ g.innerHTML=''; return; }
+  const n=c.nomi.length, passo=360/n, R=100;
+  const rad=a=>(a-90)*Math.PI/180;
+  let html='';
+  c.nomi.forEach((nome,i)=>{
+    const a1=i*passo, a2=(i+1)*passo;
+    const x1=R*Math.cos(rad(a1)), y1=R*Math.sin(rad(a1));
+    const x2=R*Math.cos(rad(a2)), y2=R*Math.sin(rad(a2));
+    const grande = passo>180 ? 1 : 0;
+    html+=`<path d="M0 0 L${x1.toFixed(2)} ${y1.toFixed(2)} A${R} ${R} 0 ${grande} 1 ${x2.toFixed(2)} ${y2.toFixed(2)} Z"
+             fill="${TINTE[i%TINTE.length]}" stroke="#faf8f3" stroke-width="1"/>`;
+    /* il nome corre lungo il raggio, leggibile finché i nomi non sono troppi */
+    if(n<=26){
+      const am=a1+passo/2;
+      const tx=(R*0.62)*Math.cos(rad(am)), ty=(R*0.62)*Math.sin(rad(am));
+      const ruotaT = am>180 ? am+90 : am-90;
+      const corto = nome.length>13 ? nome.slice(0,12)+'…' : nome;
+      html+=`<text x="${tx.toFixed(2)}" y="${ty.toFixed(2)}" fill="#fff"
+               font-size="${n>18?6.5:(n>12?7.5:9)}" font-family="Jost,sans-serif" font-weight="500"
+               text-anchor="middle" dominant-baseline="middle"
+               transform="rotate(${ruotaT.toFixed(2)} ${tx.toFixed(2)} ${ty.toFixed(2)})">${esc(corto)}</text>`;
+    }
+  });
+  g.innerHTML=html;
+}
+
+function candidati(){
+  const c=classeCorrente(); if(!c) return [];
+  const senzaRip=document.getElementById('senza-rip').checked;
+  const liberi = senzaRip ? c.nomi.filter(n=>!usciti.includes(n)) : c.nomi.slice();
+  return liberi.length ? liberi : c.nomi.slice();
+}
+
+function gira(){
+  const c=classeCorrente();
+  if(!c||!c.nomi.length||inRotazione) return;
+  const liberi=candidati();
+  if(liberi.length===c.nomi.length) usciti=usciti.filter(n=>false);
+
+  const scelto=liberi[Math.floor(Math.random()*liberi.length)];
+  const indice=c.nomi.indexOf(scelto);
+  const n=c.nomi.length, passo=360/n;
+
+  /* dove deve fermarsi: il centro dello spicchio scelto sotto la
+     freccia, più qualche giro intero perché si veda girare */
+  const centro=indice*passo+passo/2;
+  const giri=5+Math.floor(Math.random()*2);
+  const bersaglio = giri*360 - centro;
+  angolo = angolo + ((bersaglio - angolo) % 360 + 360) % 360 + giri*360;
+
+  inRotazione=true;
+  document.getElementById('b-gira').disabled=true;
+  document.getElementById('nome').textContent='…';
+  document.getElementById('mozzo').textContent='…';
+  document.getElementById('ruota').style.transform='rotate('+angolo+'deg)';
+
+  setTimeout(()=>{
+    inRotazione=false;
+    document.getElementById('b-gira').disabled=false;
+    document.getElementById('nome').textContent=scelto;
+    document.getElementById('mozzo').textContent='★';
+    if(document.getElementById('senza-rip').checked && !usciti.includes(scelto)) usciti.push(scelto);
+    aggiornaConto(); tin();
+  },4500);
+}
+
+function tin(){
   try{
-    localStorage.setItem('idearca-nomi', document.getElementById('nomi').value);
-    localStorage.setItem('idearca-nomi-senzarip', document.getElementById('senza-ripetizioni').checked?'1':'0');
+    const ac=new (window.AudioContext||window.webkitAudioContext)();
+    const o=ac.createOscillator(), g=ac.createGain();
+    o.type='triangle'; o.frequency.value=1046;
+    g.gain.setValueAtTime(.0001,ac.currentTime);
+    g.gain.exponentialRampToValueAtTime(.2,ac.currentTime+.02);
+    g.gain.exponentialRampToValueAtTime(.0001,ac.currentTime+.4);
+    o.connect(g); g.connect(ac.destination); o.start(); o.stop(ac.currentTime+.42);
   }catch(e){}
+}
+
+function ricomincia(){
+  usciti=[];
+  document.getElementById('nome').textContent='—';
+  document.getElementById('mozzo').textContent='—';
   aggiornaConto();
 }
+
 function aggiornaConto(){
-  const n=elenco().length;
-  document.getElementById('quanti').textContent =
-    n ? (usciti.length ? usciti.length+' di '+n+' già usciti' : n+' nomi in gioco') : 'nessun nome';
-  document.getElementById('usciti').innerHTML = usciti.map(u=>'<span>'+u.replace(/[<>&]/g,'')+'</span>').join('');
+  const c=classeCorrente();
+  const el=document.getElementById('conta');
+  if(!c){ el.textContent='nessuna classe'; document.getElementById('gia').innerHTML=''; return; }
+  el.textContent = usciti.length
+    ? c.nome+' · '+usciti.length+' di '+c.nomi.length+' già usciti'
+    : c.nome+' · '+c.nomi.length+' nomi';
+  document.getElementById('gia').innerHTML=usciti.map(u=>'<span>'+esc(u)+'</span>').join('');
 }
 
-function sorteggia(){
-  const tutti=elenco();
-  if(!tutti.length){ document.getElementById('nome').textContent='scrivi i nomi'; return; }
-  const senzaRip=document.getElementById('senza-ripetizioni').checked;
-  let candidati = senzaRip ? tutti.filter(n=>!usciti.includes(n)) : tutti;
-  if(!candidati.length){ usciti=[]; candidati=tutti; }
-
-  /* la ruota gira mezzo secondo: il sorteggio si vede accadere,
-     e nessuno può pensare che il nome fosse già deciso */
-  const el=document.getElementById('nome');
-  el.classList.add('gira');
-  let giri=0;
-  const rullo=setInterval(()=>{
-    el.textContent=candidati[Math.floor(Math.random()*candidati.length)];
-    if(++giri>11){
-      clearInterval(rullo);
-      const scelto=candidati[Math.floor(Math.random()*candidati.length)];
-      el.textContent=scelto; el.classList.remove('gira');
-      if(senzaRip && !usciti.includes(scelto)) usciti.push(scelto);
-      aggiornaConto();
-    }
-  },45);
-}
-function ricomincia(){ usciti=[]; document.getElementById('nome').textContent='—'; aggiornaConto(); }
-
-/* ── comuni ─────────────────────────────────────────────── */
+/* ─────────────── comuni ─────────────── */
 function scheda(quale){
   ['timer','sorteggio'].forEach(s=>{
     document.getElementById('p-'+s).classList.toggle('on', s===quale);
@@ -240,28 +456,26 @@ function scheda(quale){
 }
 function proietta(){
   document.body.classList.toggle('proietta');
-  if(document.body.classList.contains('proietta')){
-    document.documentElement.requestFullscreen?.().catch(()=>{});
-  }else{
-    document.exitFullscreen?.().catch(()=>{});
-  }
+  if(document.body.classList.contains('proietta')) document.documentElement.requestFullscreen?.().catch(()=>{});
+  else document.exitFullscreen?.().catch(()=>{});
 }
 document.addEventListener('keydown',e=>{
+  if(e.target.matches('input,textarea')) return;
   if(e.key==='Escape'&&document.body.classList.contains('proietta')) proietta();
-  if(e.code==='Space'&&document.getElementById('p-timer').classList.contains('on')
-     && e.target.tagName!=='TEXTAREA'){ e.preventDefault(); viaOStop(); }
+  if(e.code==='Space'){
+    e.preventDefault();
+    document.getElementById('p-timer').classList.contains('on') ? viaOStop() : gira();
+  }
 });
 
-/* all'avvio: riprendo i nomi lasciati l'ultima volta */
-(function(){
-  try{
-    const salvati=localStorage.getItem('idearca-nomi');
-    if(salvati) document.getElementById('nomi').value=salvati;
-    if(localStorage.getItem('idearca-nomi-senzarip')==='0')
-      document.getElementById('senza-ripetizioni').checked=false;
-  }catch(e){}
-  document.getElementById('nomi').addEventListener('input', salvaNomi);
-  aggiornaConto(); scrivi();
+(function avvio(){
+  leggiClassi();
+  const salvata=Number(localStorage.getItem('idearca-classe-aperta'));
+  classeAperta = classi.length ? (classi[salvata]?salvata:0) : null;
+  if(localStorage.getItem('idearca-senzarip')==='0')
+    document.getElementById('senza-rip').checked=false;
+  disegnaDurate(); scrivi();
+  disegnaScelta(); disegnaRuota(); aggiornaConto();
 })();
 </script>
 </body>
