@@ -93,6 +93,10 @@
   <button class="sp" data-w="14" title="Tratto spesso"><i style="width:16px;height:13px"></i></button>
 
   <span class="sep"></span>
+  <button id="b-raddrizza" onclick="commutaRaddrizza()" title="Le figure tracciate a mano libera diventano linee, rettangoli, cerchi">⊹ Raddrizza</button>
+  <button id="b-freccia" onclick="commutaFreccia()" title="Aggiunge la punta in fondo alle linee dritte">→ Freccia</button>
+
+  <span class="sep"></span>
   <button onclick="zoomPasso(1/1.25)" title="Rimpicciolisci">−</button>
   <span class="zoom" id="zoom-etichetta">100%</span>
   <button onclick="zoomPasso(1.25)" title="Ingrandisci">+</button>
@@ -412,7 +416,10 @@ function finePuntatore(e){
   if(attivi.size < 2) pizzico = null;
   if(attivi.size === 0){
     if(trascino){ trascino = null; document.body.classList.remove('trascina'); }
-    if(inCorso){ inCorso = null; segnaModifica(); }
+    if(inCorso){
+      if(raddrizza) raddrizzaTratto(inCorso);
+      inCorso = null; segnaModifica(); ridisegna();
+    }
   }
 }
 tela.addEventListener('pointerup', finePuntatore);
@@ -537,6 +544,150 @@ avvia();
 modo('testo');
 applicaVista();
 if(!token()) aggiornaStato('non sei entrato come docente');
+
+/* ══════════════════════════════════════════════════════════
+   LA PENNA CHE RADDRIZZA
+   Alla lavagna, col dito o col mouse, non esce una linea dritta
+   nemmeno volendo. Qui il tratto appena finito viene misurato e,
+   se somiglia a una figura, i suoi punti vengono sostituiti con
+   quelli puliti.
+
+   Il tratto resta un elenco di punti come tutti gli altri: gomma,
+   annulla, zoom e archiviazione non sanno nemmeno che e' successo
+   qualcosa. E' il motivo per cui l'aggancio e' di tre righe.
+
+   Le soglie non sono a occhio: sono quelle misurate costruendo lo
+   strumento a parte, su duecentoventi tracce tremolanti finte.
+   ══════════════════════════════════════════════════════════ */
+let raddrizza = false, freccia = false;
+
+function commutaRaddrizza(){
+  raddrizza = !raddrizza;
+  document.getElementById('b-raddrizza').classList.toggle('on', raddrizza);
+}
+function commutaFreccia(){
+  freccia = !freccia;
+  document.getElementById('b-freccia').classList.toggle('on', freccia);
+  if(freccia && !raddrizza) commutaRaddrizza();
+}
+
+const _dist = (p,a,b)=>{
+  const dx=b[0]-a[0], dy=b[1]-a[1], len=dx*dx+dy*dy;
+  if(!len) return Math.hypot(p[0]-a[0], p[1]-a[1]);
+  let t=((p[0]-a[0])*dx + (p[1]-a[1])*dy)/len;
+  t=Math.max(0,Math.min(1,t));
+  return Math.hypot(p[0]-(a[0]+t*dx), p[1]-(a[1]+t*dy));
+};
+/* Ramer-Douglas-Peucker: tiene solo i punti che, tolti, sposterebbero
+   la linea piu' della tolleranza */
+function _rdp(pts,eps){
+  if(pts.length<3) return pts.slice();
+  let max=0, idx=0;
+  for(let i=1;i<pts.length-1;i++){
+    const d=_dist(pts[i],pts[0],pts[pts.length-1]);
+    if(d>max){ max=d; idx=i; }
+  }
+  if(max>eps) return _rdp(pts.slice(0,idx+1),eps).slice(0,-1).concat(_rdp(pts.slice(idx),eps));
+  return [pts[0],pts[pts.length-1]];
+}
+const _riq = pts=>{
+  const xs=pts.map(p=>p[0]), ys=pts.map(p=>p[1]);
+  const x0=Math.min(...xs),x1=Math.max(...xs),y0=Math.min(...ys),y1=Math.max(...ys);
+  return {x0,y0,x1,y1,w:x1-x0,h:y1-y0,cx:(x0+x1)/2,cy:(y0+y1)/2,diag:Math.hypot(x1-x0,y1-y0)};
+};
+/* Douglas-Peucker puo' lasciare due vertici a un passo l'uno dall'altro
+   sullo stesso angolo: contarli entrambi trasforma un rettangolo in un
+   pentagono */
+function _unisci(v,soglia){
+  if(v.length<3) return v;
+  const out=[v[0]];
+  for(let i=1;i<v.length;i++){
+    const u=out[out.length-1];
+    if(Math.hypot(v[i][0]-u[0], v[i][1]-u[1])>soglia) out.push(v[i]);
+  }
+  while(out.length>3 && Math.hypot(out[0][0]-out[out.length-1][0], out[0][1]-out[out.length-1][1])<=soglia) out.pop();
+  return out;
+}
+const _area = v=>{
+  let a=0;
+  for(let i=0;i<v.length;i++){ const p=v[i], q=v[(i+1)%v.length]; a+=p[0]*q[1]-q[0]*p[1]; }
+  return Math.abs(a)/2;
+};
+/* undici gradi, non diciotto: con diciotto un lato a settantatre gradi
+   passa per verticale e un trapezio diventa un rettangolo */
+function _ortogonale(v){
+  for(let i=0;i<v.length;i++){
+    const a=v[i], b=v[(i+1)%v.length];
+    const ang=Math.abs(Math.atan2(b[1]-a[1], b[0]-a[0])*180/Math.PI)%180;
+    if(!(ang<11 || ang>169 || Math.abs(ang-90)<11)) return false;
+  }
+  return true;
+}
+
+function raddrizzaTratto(t){
+  const pts=t.p;
+  if(pts.length<4) return;
+  const r=_riq(pts);
+  if(r.diag < 12/vista.s) return;          /* un puntino resta un puntino */
+
+  const primo=pts[0], ultimo=pts[pts.length-1];
+  const chiuso = Math.hypot(ultimo[0]-primo[0], ultimo[1]-primo[1]) < r.diag*0.28 && pts.length>10;
+  const eps=r.diag*0.045;
+
+  if(!chiuso){
+    let max=0;
+    pts.forEach(p=>{ max=Math.max(max,_dist(p,primo,ultimo)); });
+    const s=_rdp(pts,eps);
+    if(s.length<=2 || max < r.diag*0.06){
+      t.p = freccia ? _conPunta(primo,ultimo,r.diag) : [primo,ultimo];
+    } else {
+      t.p = freccia ? s.slice(0,-1).concat(_conPunta(s[s.length-2],ultimo,r.diag))
+                    : s;
+    }
+    return;
+  }
+
+  let v=_rdp(pts.concat([primo]),eps);
+  if(v.length>1 && Math.hypot(v[0][0]-v[v.length-1][0], v[0][1]-v[v.length-1][1])<eps) v=v.slice(0,-1);
+  v=_unisci(v, r.diag*0.07);
+  const riemp=_area(v)/Math.max(1,r.w*r.h);
+
+  if(v.length>=4 && riemp>0.86 && _ortogonale(v)){ t.p=_rett(r); return; }
+  if(v.length===3){ t.p=v.concat([v[0]]); return; }
+  if(v.length===4){
+    if(_ortogonale(v) && riemp>0.86) t.p=_rett(r); else t.p=v.concat([v[0]]);
+    return;
+  }
+  /* I raggi vanno misurati sul riquadro normalizzato, non in pixel:
+     altrimenti passa solo il cerchio e un'ellisse schiacciata viene
+     scambiata per un poligono. La soglia 0,045 sta nel vuoto fra
+     ovali (sotto 0,03) ed esagoni (0,06). */
+  const ax=Math.max(r.w,1)/2, ay=Math.max(r.h,1)/2;
+  const rag=pts.map(p=>Math.hypot((p[0]-r.cx)/ax, (p[1]-r.cy)/ay));
+  const m=rag.reduce((a,b)=>a+b,0)/rag.length;
+  const sc=Math.sqrt(rag.reduce((a,b)=>a+(b-m)**2,0)/rag.length)/m;
+  t.p = sc<0.045 ? _ellisse(r) : v.concat([v[0]]);
+}
+
+const _rett = r => [[r.x0,r.y0],[r.x1,r.y0],[r.x1,r.y1],[r.x0,r.y1],[r.x0,r.y0]];
+function _ellisse(r){
+  const out=[];
+  for(let i=0;i<=60;i++){
+    const a=i/60*2*Math.PI;
+    out.push([r.cx + r.w/2*Math.cos(a), r.cy + r.h/2*Math.sin(a)]);
+  }
+  return out;
+}
+/* La punta si disegna con lo stesso tratto, tornando indietro sul
+   vertice: cosi' resta un elenco di punti come tutti gli altri. */
+function _conPunta(da,a,diag){
+  const ang=Math.atan2(a[1]-da[1], a[0]-da[0]);
+  const l=Math.max(10, diag*0.09);
+  const b1=[a[0]-l*Math.cos(ang-Math.PI/7), a[1]-l*Math.sin(ang-Math.PI/7)];
+  const b2=[a[0]-l*Math.cos(ang+Math.PI/7), a[1]-l*Math.sin(ang+Math.PI/7)];
+  return [da,a,b1,a,b2];
+}
+
 </script>
 </body>
 </html>
