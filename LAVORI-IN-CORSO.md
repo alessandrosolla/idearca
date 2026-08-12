@@ -16,27 +16,29 @@ studenti, numeri contati dal sito.
 6. ~~Ricostruttore di sillogismi~~ — fatto
 7. ~~Palestra di logica (tavole di verità)~~ — fatto
 
-## La scaletta delle diciassette prove — chiusa
+## La scaletta delle prove — chiusa
 
-Tutte fatte e provate (16): timer, sorteggio, palestra di logica,
+Tutte fatte e provate (17): timer, sorteggio, palestra di logica,
 ricostruttore di sillogismi, votazioni a squadre, mappa argomentativa,
 analizzatore di testo, linea del tempo delle idee, confrontatore di
 filosofi, glossario ipertestuale, simulatore socratico, linea del tempo
 sincronica, penna che raddrizza, macchina del contesto, generatore di
-mappe concettuali, diario immersivo, grafici animati.
+mappe concettuali, diario immersivo, grafici animati, libreria degli anni.
 
-**Wiki di classe** — messa da parte per scelta. È l'unica che vuole il
-database: servirebbe una migrazione `sql/08-wiki.sql` con le voci, le
-revisioni e il visto del docente. Se un giorno si riprende, il lavoro
-comincia da lì.
+**Wiki di classe** — tolta dalla lista, non si fa.
 
-## Quello che resta da guardare a mano
+## La libreria degli anni
 
-La resa sul telefono. Per tutta la costruzione screenshot e
-ridimensionamento della finestra sono andati in timeout in Chrome:
-i `@media` ci sono in ogni pagina, ma nessuno li ha visti in funzione.
-È l'unica verifica che manca, e va fatta con un telefono vero.
+Uno scaffale con un libro per anno scolastico. Si salva nella tabella
+`profilo` che c'è già (migrazione 06), sotto la chiave `libreria`: nessuna
+migrazione nuova. Lettura pubblica, scrittura riservata al docente dalle
+regole del database. Una copia resta nel browser, ma è il pulsante
+«Salva online» che la rende visibile a tutti e la conserva cambiando
+computer.
 
-## Nota sul telefono
-Molti guarderanno il sito dal telefono. Ogni cosa nuova va provata
-anche stretta, non solo sul monitor.
+## Il telefono
+
+Provate tutte e diciassette le pagine dentro una finestra da 390px:
+nessuna sborda in orizzontale, nessun elemento esce dal bordo. Resta da
+guardare con un occhio umano su un telefono vero — la misura dice che
+non si rompe, non che è bello.

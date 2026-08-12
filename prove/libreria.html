@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>La libreria degli anni — Idearca</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Jost',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  background:#faf8f3;color:#1c2b1a;font-weight:300;-webkit-font-smoothing:antialiased}
+.w{max-width:1020px;margin:0 auto;padding:2rem 1.5rem 4rem}
+.k{font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:#8a9e87;font-weight:600}
+h1{font-family:'Cormorant Garamond',Georgia,serif;font-size:2.4rem;font-weight:400;margin:.3rem 0 .5rem}
+.sub{font-size:.92rem;line-height:1.7;color:#5a6b58;max-width:64ch}
+.et{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:#9a7c2e;
+  font-weight:700;margin:1.7rem 0 .7rem;display:flex;align-items:center;gap:.6rem}
+.et::after{content:'';flex:1;height:1px;background:rgba(45,90,39,.13)}
+.b{font:inherit;font-size:.77rem;padding:.5rem 1.05rem;border-radius:100px;cursor:pointer;
+  border:1.5px solid rgba(45,90,39,.22);background:#fff;color:#2d5a27;font-weight:500;transition:all .16s}
+.b:hover{background:#2d5a27;color:#fff;border-color:#2d5a27}
+.b.rosso{color:#c0453b;border-color:rgba(192,69,59,.3)}
+.b.rosso:hover{background:#c0453b;color:#fff;border-color:#c0453b}
+.riga{display:flex;gap:.5rem;flex-wrap:wrap;align-items:center;margin-top:.8rem}
+
+/* ── LO SCAFFALE ──────────────────────────────────────── */
+.scaffale{perspective:1400px;perspective-origin:50% 40%;margin-top:.4rem}
+.ripiano{position:relative;display:flex;align-items:flex-end;gap:5px;
+  min-height:250px;padding:0 26px;transform-style:preserve-3d}
+/* l'asse di legno */
+.asse{position:relative;height:20px;border-radius:0 0 5px 5px;
+  background:linear-gradient(#b08857,#8a6a41 42%,#6d5334);
+  box-shadow:0 12px 26px rgba(28,43,26,.22), inset 0 2px 0 rgba(255,255,255,.22)}
+.asse::after{content:'';position:absolute;inset:0 0 auto 0;height:4px;
+  background:linear-gradient(90deg,rgba(255,255,255,.15),transparent 30%,rgba(255,255,255,.1) 70%,transparent)}
+.fondale{position:absolute;left:0;right:0;bottom:20px;height:250px;border-radius:6px 6px 0 0;
+  background:linear-gradient(#e6e0d2,#d9d2c0);
+  box-shadow:inset 0 -18px 24px rgba(90,70,45,.16);z-index:-1}
+
+.libro{position:relative;width:var(--sp);height:var(--h);cursor:pointer;
+  transform-origin:50% 100%;transition:transform .32s cubic-bezier(.2,.9,.3,1.2), filter .32s;
+  flex:none;border-radius:2px 3px 3px 2px;
+  background:linear-gradient(90deg,
+    color-mix(in srgb,var(--c) 72%,#000) 0 3px,
+    var(--c) 3px,
+    color-mix(in srgb,var(--c) 88%,#fff) 58%,
+    color-mix(in srgb,var(--c) 70%,#000) 100%);
+  box-shadow:0 2px 5px rgba(0,0,0,.25), inset -2px 0 4px rgba(0,0,0,.18);
+  display:flex;align-items:center;justify-content:center;overflow:hidden}
+.libro:hover{transform:translateY(-14px) rotate(-1.2deg);filter:brightness(1.08)}
+.libro.vuota{opacity:.55}
+/* i fregi in alto e in basso sul dorso */
+.libro::before,.libro::after{content:'';position:absolute;left:12%;right:12%;height:1.5px;
+  background:rgba(255,235,190,.45)}
+.libro::before{top:14px}.libro::after{bottom:14px}
+.dorso{writing-mode:vertical-rl;text-orientation:mixed;transform:rotate(180deg);
+  font-family:'Cormorant Garamond',Georgia,serif;font-size:.95rem;font-weight:600;
+  color:rgba(255,240,214,.94);letter-spacing:.06em;text-shadow:0 1px 2px rgba(0,0,0,.4);
+  white-space:nowrap;padding:26px 0;pointer-events:none}
+.dorso small{font-size:.62rem;font-family:'Jost',sans-serif;font-weight:600;
+  letter-spacing:.14em;opacity:.72}
+
+/* il libro che esce dallo scaffale */
+.libro.esce{transform:translateY(-30px) translateZ(90px) rotateY(-16deg);z-index:4;
+  box-shadow:0 26px 42px rgba(28,43,26,.35)}
+
+/* ── IL VOLUME APERTO ─────────────────────────────────── */
+.leggio{position:fixed;inset:0;background:rgba(28,25,20,.62);backdrop-filter:blur(3px);
+  display:flex;align-items:center;justify-content:center;padding:1.2rem;z-index:40;
+  opacity:0;pointer-events:none;transition:opacity .3s}
+.leggio.aperto{opacity:1;pointer-events:auto}
+.volume{position:relative;width:min(940px,100%);height:min(76vh,600px);
+  perspective:2200px;transform-style:preserve-3d}
+.pagine{position:absolute;inset:0;display:grid;grid-template-columns:1fr 1fr;
+  background:#fdfbf4;border-radius:5px;overflow:hidden;
+  box-shadow:0 30px 70px rgba(0,0,0,.45);
+  transform:scale(.86) translateY(14px);opacity:0;
+  transition:transform .5s cubic-bezier(.2,.8,.3,1) .18s, opacity .4s .18s}
+.leggio.aperto .pagine{transform:scale(1) translateY(0);opacity:1}
+/* la piega centrale */
+.pagine::after{content:'';position:absolute;left:50%;top:0;bottom:0;width:34px;margin-left:-17px;
+  background:linear-gradient(90deg,transparent,rgba(120,95,60,.16) 42%,rgba(120,95,60,.22) 50%,
+    rgba(120,95,60,.16) 58%,transparent);pointer-events:none}
+.pagina{padding:2rem 2.1rem;overflow-y:auto}
+.pagina.sx{border-right:1px solid rgba(150,125,85,.16)}
+
+/* la copertina che si apre sul dorso */
+.copertina{position:absolute;left:0;top:0;width:50%;height:100%;z-index:3;
+  transform-origin:left center;transform-style:preserve-3d;
+  transform:rotateY(0deg);transition:transform .82s cubic-bezier(.4,.05,.25,1);
+  border-radius:4px 3px 3px 4px;
+  background:linear-gradient(125deg,
+    color-mix(in srgb,var(--c) 86%,#fff),
+    var(--c) 46%,
+    color-mix(in srgb,var(--c) 74%,#000));
+  box-shadow:0 20px 50px rgba(0,0,0,.4);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.5rem;
+  backface-visibility:hidden}
+.leggio.aperto .copertina{transform:rotateY(-168deg)}
+.copertina .marchio{font-size:.6rem;letter-spacing:.24em;text-transform:uppercase;
+  color:rgba(255,240,214,.6);font-weight:600}
+.copertina .anno-cop{font-family:'Cormorant Garamond',Georgia,serif;font-size:3rem;
+  font-weight:600;color:rgba(255,243,220,.96);line-height:1;text-shadow:0 2px 6px rgba(0,0,0,.35)}
+.copertina .fregio{width:64px;height:1.5px;background:rgba(255,235,190,.5)}
+
+.chiudi{position:absolute;top:-14px;right:-8px;z-index:6;width:34px;height:34px;border-radius:50%;
+  border:none;background:#fdfbf4;color:#5a6b58;font-size:1rem;cursor:pointer;
+  box-shadow:0 4px 14px rgba(0,0,0,.3)}
+.chiudi:hover{background:#fff;color:#c0453b}
+
+/* contenuto delle pagine */
+.pg-anno{font-family:'Cormorant Garamond',Georgia,serif;font-size:2.3rem;font-weight:600;line-height:1}
+.pg-cl{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:#9a7c2e;
+  font-weight:700;margin:.35rem 0 .9rem}
+.pg-nota{font-size:.9rem;line-height:1.8;color:#3d4a3b}
+.pg-tit{font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;color:#8a9e87;
+  font-weight:700;margin-bottom:.8rem}
+.voce{padding:.6rem 0;border-bottom:1px dashed rgba(150,125,85,.22)}
+.voce:last-child{border-bottom:none}
+.voce .vd{font-size:.66rem;letter-spacing:.1em;color:#9a7c2e;font-weight:700}
+.voce .vt{font-size:.95rem;font-weight:500;line-height:1.35;margin:.1rem 0 .15rem}
+.voce .vx{font-size:.82rem;line-height:1.65;color:#5a6b58}
+.voce a{color:#2d5a27}
+.niente{color:#b3aa96;font-size:.87rem;line-height:1.7;font-style:italic}
+
+/* modifica */
+.mod{margin-top:.9rem;padding-top:.8rem;border-top:1px solid rgba(150,125,85,.2)}
+.mod input,.mod textarea{width:100%;font:inherit;font-size:.84rem;padding:.45rem .6rem;
+  border:1px solid rgba(150,125,85,.3);border-radius:7px;background:#fffdf7;margin-bottom:.35rem;
+  outline:none;resize:vertical}
+.mod input:focus,.mod textarea:focus{border-color:#9a7c2e}
+.mini{font:inherit;font-size:.71rem;padding:.32rem .75rem;border-radius:100px;cursor:pointer;
+  border:1px solid rgba(45,90,39,.2);background:#fff;color:#2d5a27}
+.mini:hover{background:#2d5a27;color:#fff}
+.mini.rosso{color:#c0453b;border-color:rgba(192,69,59,.3)}
+.mini.rosso:hover{background:#c0453b;color:#fff}
+.esito{font-size:.78rem;color:#5a6b58;margin-left:.4rem}
+.avviso{margin-top:1.3rem;padding:.95rem 1.15rem;border-left:3px solid #9a7c2e;background:#f6f3ec;
+  border-radius:0 10px 10px 0;font-size:.83rem;line-height:1.7;color:#5a6b58}
+.avviso b{color:#8a6a1e;font-weight:600}
+
+@media(max-width:700px){
+  .w{padding:1.4rem 1rem 3rem}h1{font-size:1.9rem}
+  .volume{height:82vh}
+  .pagine{grid-template-columns:1fr;overflow-y:auto}
+  .pagina.sx{border-right:none;border-bottom:1px solid rgba(150,125,85,.16)}
+  .pagine::after{display:none}
+  .copertina{width:100%}
+  .leggio.aperto .copertina{transform:rotateX(-168deg);transform-origin:center top}
+  .ripiano{min-height:200px}
+}
+@media(prefers-reduced-motion:reduce){
+  .libro,.copertina,.pagine{transition:none}
+}
+</style>
+</head>
+<body>
+<div class="w">
+  <div class="k">Idearca · Prove</div>
+  <h1>La libreria degli anni</h1>
+  <p class="sub">Uno scaffale vero: un libro per ogni anno scolastico. Il dorso si ingrossa
+  man mano che l'anno si riempie — <strong>un anno con trenta cose dentro è un libro più
+  spesso</strong> — e cliccandolo il volume esce, si gira e si apre.</p>
+
+  <div class="et">Lo scaffale</div>
+  <div class="scaffale">
+    <div class="ripiano" id="ripiano"></div>
+    <div class="asse"></div>
+  </div>
+
+  <div class="riga" id="comandi"></div>
+  <div class="avviso" id="avviso"></div>
+</div>
+
+<div class="leggio" id="leggio" onclick="if(event.target===this)chiudi()">
+  <div class="volume" id="volume">
+    <button class="chiudi" onclick="chiudi()" title="Chiudi il libro">✕</button>
+    <div class="pagine">
+      <div class="pagina sx" id="pgSx"></div>
+      <div class="pagina dx" id="pgDx"></div>
+    </div>
+    <div class="copertina" id="copertina"></div>
+  </div>
+</div>
+
+<script>
+/* ══════════════════════════════════════════════════════════
+   LA LIBRERIA DEGLI ANNI
+   Il dorso non ha uno spessore a caso: cresce con quello che
+   l'anno contiene. Uno scaffale così, guardato di sfuggita,
+   dice già quali anni sono stati pieni e quali vuoti — cosa
+   che un elenco di cartelle non dice mai.
+
+   Dove si salva: nella tabella «profilo», che c'è già dalla
+   migrazione 06, sotto la chiave «libreria». Nessuna migrazione
+   nuova da eseguire. Lettura pubblica, scrittura riservata al
+   docente: i permessi li decidono le regole del database, non
+   questo file. Se il database non risponde si lavora lo stesso,
+   sulla copia tenuta nel browser.
+   ══════════════════════════════════════════════════════════ */
+
+const SB='https://mqjceddrbhpwqjomhohm.supabase.co';
+const KEY='sb_publishable_D7vDsaervKNJNgdJwknDpQ_Vuuf9CeJ';
+const token=()=>sessionStorage.getItem('atk')||'';
+const capo=e=>Object.assign({'apikey':KEY,'Authorization':'Bearer '+(token()||KEY)},e||{});
+const docente=()=>!!token();
+
+/* i colori delle rilegature: tinte da biblioteca, non da grafico */
+const RILEGATURE=['#7d3b2e','#2f4f3a','#8a6a1e','#3f5a72','#5c3a5e','#6b4a2f',
+                  '#43604a','#8a4a3c','#2f4a5c','#6d5c2e'];
+
+let libreria=[], apertoOra=-1;
+
+/* ── memoria ──────────────────────────────────────────────── */
+function salvaLocale(){
+  try{ localStorage.setItem('idearca-libreria', JSON.stringify(libreria)); }catch(e){}
+}
+function leggiLocale(){
+  try{ const g=localStorage.getItem('idearca-libreria');
+       if(g) libreria=JSON.parse(g); }catch(e){}
+}
+async function leggiServer(){
+  try{
+    const r=await fetch(SB+'/rest/v1/profilo?chiave=eq.libreria&select=valore',{headers:capo()});
+    if(!r.ok) return false;
+    const d=await r.json();
+    if(d.length && d[0].valore){
+      libreria=JSON.parse(d[0].valore);
+      salvaLocale();
+      return true;
+    }
+  }catch(e){}
+  return false;
+}
+async function salvaServer(){
+  const e=document.getElementById('esitoSalva');
+  if(!docente()){ if(e) e.textContent='Solo il docente può salvare online.'; return; }
+  if(e) e.textContent='Salvo…';
+  try{
+    const r=await fetch(SB+'/rest/v1/profilo?on_conflict=chiave',{
+      method:'POST',
+      headers:capo({'Content-Type':'application/json','Prefer':'resolution=merge-duplicates,return=minimal'}),
+      body:JSON.stringify([{chiave:'libreria', valore:JSON.stringify(libreria),
+                            aggiornato_il:new Date().toISOString()}])
+    });
+    if(!r.ok) throw new Error((await r.text()).slice(0,140));
+    if(e) e.textContent='Salvato. Resta anche cambiando computer.';
+  }catch(err){
+    if(e) e.textContent='Non salvato online: '+err.message+' — la copia nel browser però c\'è.';
+  }
+}
+
+/* ── lo scaffale ──────────────────────────────────────────── */
+const esc = t => String(t??'').replace(/[<>&"]/g,c=>({'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;'}[c]));
+
+/* Lo spessore racconta il contenuto: 30px vuoto, poi cresce con le
+   voci e si ferma a 76 — oltre, i libri non starebbero sullo scaffale. */
+const spessore = a => Math.min(76, 30 + (a.voci?.length||0)*5);
+/* altezze leggermente diverse, come in uno scaffale vero, ma
+   stabili: derivate dall'anno, non sorteggiate a ogni disegno */
+function altezza(a){
+  let h=0; for(const c of (a.anno||'')) h=(h*31+c.charCodeAt(0))&0xffff;
+  return 196+(h%42);
+}
+
+function disegnaScaffale(){
+  const r=document.getElementById('ripiano');
+  if(!libreria.length){
+    r.innerHTML='<div class="niente" style="padding:3.4rem 0;align-self:center">'
+      +'Lo scaffale è vuoto. Il primo libro è l\'anno che stai facendo adesso.</div>';
+  } else {
+    r.innerHTML='<div class="fondale"></div>'+libreria.map((a,i)=>{
+      const vuoto=!(a.voci&&a.voci.length);
+      return `<div class="libro${vuoto?' vuota':''}" style="--sp:${spessore(a)}px;--h:${altezza(a)}px;--c:${a.colore}"
+        onclick="apri(${i})" title="${esc(a.anno)} — ${(a.voci||[]).length} voci">
+        <div class="dorso">${esc(a.anno)}${a.titolo?' · '+esc(a.titolo):''}
+          <small>${(a.voci||[]).length||'—'}</small></div>
+      </div>`;
+    }).join('');
+  }
+
+  document.getElementById('comandi').innerHTML = docente()
+    ? `<button class="b" onclick="nuovoAnno()">+ Aggiungi un anno</button>
+       <button class="b" onclick="salvaServer()">Salva online</button>
+       <span class="esito" id="esitoSalva"></span>`
+    : `<span class="esito">Per aggiungere o correggere, entra come docente dalla home e torna qui.</span>`;
+
+  const tot=libreria.reduce((s,a)=>s+((a.voci||[]).length),0);
+  document.getElementById('avviso').innerHTML= docente()
+    ? `<b>Dove finisce quello che scrivi.</b> Nella tabella <em>profilo</em> del database,
+       sotto la chiave «libreria»: la stessa che tiene la pagina «Chi sono», quindi non c'è
+       nessuna migrazione nuova da eseguire. Una copia resta anche nel browser, così puoi
+       lavorare anche se il database non risponde — ma è la copia online quella che vedono
+       tutti, e ci arriva solo premendo <em>Salva online</em>.`
+    : `<b>${libreria.length} ann${libreria.length===1?'o':'i'}, ${tot} voc${tot===1?'e':'i'}.</b>
+       Clicca un dorso per aprire l'anno.`;
+}
+
+/* ── aprire e chiudere ────────────────────────────────────── */
+function apri(i){
+  apertoOra=i;
+  const a=libreria[i];
+  const libri=document.querySelectorAll('.libro');
+  libri.forEach((l,k)=>l.classList.toggle('esce',k===i));
+
+  const cop=document.getElementById('copertina');
+  cop.style.setProperty('--c',a.colore);
+  cop.innerHTML=`<div class="marchio">Idearca</div>
+    <div class="anno-cop">${esc(a.anno)}</div>
+    <div class="fregio"></div>
+    ${a.titolo?`<div class="marchio" style="letter-spacing:.1em">${esc(a.titolo)}</div>`:''}`;
+
+  disegnaPagine();
+  /* il libro esce dallo scaffale, e solo dopo si apre il volume:
+     è la sequenza che rende credibile il gesto */
+  setTimeout(()=>document.getElementById('leggio').classList.add('aperto'), 240);
+}
+
+function chiudi(){
+  document.getElementById('leggio').classList.remove('aperto');
+  document.querySelectorAll('.libro').forEach(l=>l.classList.remove('esce'));
+  apertoOra=-1;
+}
+document.addEventListener('keydown',e=>{ if(e.key==='Escape') chiudi(); });
+
+function disegnaPagine(){
+  const a=libreria[apertoOra];
+  if(!a) return;
+  const voci=(a.voci||[]);
+
+  document.getElementById('pgSx').innerHTML=`
+    <div class="pg-anno">${esc(a.anno)}</div>
+    ${a.classi?`<div class="pg-cl">${esc(a.classi)}</div>`:''}
+    ${a.nota?`<div class="pg-nota">${esc(a.nota)}</div>`
+             :'<div class="niente">Nessuna nota per quest\'anno.</div>'}
+    ${docente()?`<div class="mod">
+      <div class="pg-tit">Il frontespizio</div>
+      <input id="mAnno"   value="${esc(a.anno)}"   placeholder="Anno scolastico — es. 2025/26">
+      <input id="mTitolo" value="${esc(a.titolo)}" placeholder="Un titolo, se ti va">
+      <input id="mClassi" value="${esc(a.classi)}" placeholder="Le classi — es. 3ªA, 4ªB">
+      <textarea id="mNota" rows="4" placeholder="Che anno è stato">${esc(a.nota)}</textarea>
+      <div class="riga" style="margin-top:.2rem">
+        <button class="mini" onclick="salvaFrontespizio()">Aggiorna</button>
+        <button class="mini" onclick="cambiaColore()">Cambia rilegatura</button>
+        <button class="mini rosso" onclick="togliAnno()">Elimina l'anno</button>
+      </div></div>`:''}`;
+
+  document.getElementById('pgDx').innerHTML=`
+    <div class="pg-tit">Che cosa ho fatto — ${voci.length} voc${voci.length===1?'e':'i'}</div>
+    ${voci.length ? voci.map((v,k)=>`
+      <div class="voce">
+        <div class="vd">${esc(v.data)}</div>
+        <div class="vt">${esc(v.titolo)}</div>
+        ${v.testo?`<div class="vx">${esc(v.testo)}</div>`:''}
+        ${v.link?`<div class="vx"><a href="${esc(v.link)}" target="_blank" rel="noopener">${esc(v.link)}</a></div>`:''}
+        ${docente()?`<div style="margin-top:.3rem"><button class="mini rosso" onclick="togliVoce(${k})">Togli</button></div>`:''}
+      </div>`).join('')
+     : '<div class="niente">Ancora niente scritto in questo anno.</div>'}
+    ${docente()?`<div class="mod">
+      <div class="pg-tit">Aggiungi una voce</div>
+      <input id="vData"   placeholder="Quando — es. ottobre 2025">
+      <input id="vTitolo" placeholder="Che cosa">
+      <textarea id="vTesto" rows="3" placeholder="Due righe, se servono"></textarea>
+      <input id="vLink"   placeholder="Un collegamento, se c'è">
+      <button class="mini" onclick="aggiungiVoce()">Aggiungi alla pagina</button>
+    </div>`:''}`;
+}
+
+/* ── modifiche ────────────────────────────────────────────── */
+function nuovoAnno(){
+  const ora=new Date();
+  const y=ora.getMonth()>=8?ora.getFullYear():ora.getFullYear()-1;
+  const proposta=y+'/'+String((y+1)%100).padStart(2,'0');
+  const anno={anno:proposta, titolo:'', classi:'', nota:'', voci:[],
+              colore:RILEGATURE[libreria.length%RILEGATURE.length]};
+  libreria.push(anno);
+  libreria.sort((a,b)=>a.anno.localeCompare(b.anno));
+  salvaLocale(); disegnaScaffale();
+  apri(libreria.indexOf(anno));
+}
+function salvaFrontespizio(){
+  const a=libreria[apertoOra]; if(!a) return;
+  a.anno=document.getElementById('mAnno').value.trim()||a.anno;
+  a.titolo=document.getElementById('mTitolo').value.trim();
+  a.classi=document.getElementById('mClassi').value.trim();
+  a.nota=document.getElementById('mNota').value.trim();
+  salvaLocale(); disegnaScaffale(); disegnaPagine();
+}
+function cambiaColore(){
+  const a=libreria[apertoOra]; if(!a) return;
+  const i=RILEGATURE.indexOf(a.colore);
+  a.colore=RILEGATURE[(i+1)%RILEGATURE.length];
+  document.getElementById('copertina').style.setProperty('--c',a.colore);
+  salvaLocale(); disegnaScaffale();
+  document.querySelectorAll('.libro')[apertoOra]?.classList.add('esce');
+}
+function togliAnno(){
+  const a=libreria[apertoOra]; if(!a) return;
+  if(!confirm('Elimino l\'anno '+a.anno+' e tutte le sue '+(a.voci||[]).length+' voci?')) return;
+  libreria.splice(apertoOra,1);
+  salvaLocale(); chiudi(); disegnaScaffale();
+}
+function aggiungiVoce(){
+  const a=libreria[apertoOra]; if(!a) return;
+  const t=document.getElementById('vTitolo').value.trim();
+  if(!t) return;
+  (a.voci=a.voci||[]).push({
+    data:document.getElementById('vData').value.trim(),
+    titolo:t,
+    testo:document.getElementById('vTesto').value.trim(),
+    link:document.getElementById('vLink').value.trim()
+  });
+  salvaLocale(); disegnaPagine(); disegnaScaffale();
+  document.querySelectorAll('.libro')[apertoOra]?.classList.add('esce');
+}
+function togliVoce(k){
+  const a=libreria[apertoOra]; if(!a) return;
+  a.voci.splice(k,1);
+  salvaLocale(); disegnaPagine(); disegnaScaffale();
+  document.querySelectorAll('.libro')[apertoOra]?.classList.add('esce');
+}
+
+/* ── avvio ────────────────────────────────────────────────── */
+leggiLocale();
+disegnaScaffale();
+leggiServer().then(ok=>{ if(ok) disegnaScaffale(); });
+</script>
+</body>
+</html>
