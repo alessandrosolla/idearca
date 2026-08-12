@@ -1,0 +1,541 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Generatore di mappe concettuali — Idearca</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Jost',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  background:#faf8f3;color:#1c2b1a;font-weight:300;-webkit-font-smoothing:antialiased}
+.w{max-width:1040px;margin:0 auto;padding:2rem 1.5rem 4rem}
+.k{font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:#8a9e87;font-weight:600}
+h1{font-family:'Cormorant Garamond',Georgia,serif;font-size:2.3rem;font-weight:400;margin:.3rem 0 .5rem}
+.sub{font-size:.9rem;line-height:1.7;color:#5a6b58;max-width:66ch}
+.et{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:#9a7c2e;
+  font-weight:700;margin:1.7rem 0 .7rem;display:flex;align-items:center;gap:.6rem}
+.et::after{content:'';flex:1;height:1px;background:rgba(45,90,39,.13)}
+
+textarea{width:100%;min-height:120px;font:inherit;font-size:.9rem;line-height:1.65;
+  padding:.85rem 1rem;border:1px solid rgba(45,90,39,.16);border-radius:12px;background:#fff;
+  color:#1c2b1a;font-weight:400;resize:vertical;outline:none}
+textarea:focus{border-color:#8a9e87}
+.b{font:inherit;font-size:.77rem;padding:.55rem 1.1rem;border-radius:100px;cursor:pointer;
+  border:1.5px solid rgba(45,90,39,.22);background:#fff;color:#2d5a27;font-weight:500;transition:all .16s}
+.b:hover{background:#2d5a27;color:#fff;border-color:#2d5a27}
+.b.pieno{background:#2d5a27;color:#fff;border-color:#2d5a27}
+.b:disabled{opacity:.35;cursor:default}
+.b:disabled:hover{background:#fff;color:#2d5a27;border-color:rgba(45,90,39,.22)}
+.barra{display:flex;gap:.5rem;flex-wrap:wrap;margin-top:.7rem;align-items:center}
+.mini{font:inherit;font-size:.71rem;padding:.35rem .8rem;border-radius:100px;cursor:pointer;
+  border:1px solid rgba(45,90,39,.2);background:#fff;color:#2d5a27;transition:all .16s}
+.mini:hover{background:#2d5a27;color:#fff;border-color:#2d5a27}
+
+/* i legami trovati, da confermare a mano */
+.legami{display:flex;flex-direction:column;gap:.4rem}
+.lg{display:flex;gap:.5rem;align-items:center;flex-wrap:wrap;border:1px solid rgba(45,90,39,.13);
+  border-radius:10px;padding:.5rem .7rem;background:#fff;font-size:.83rem}
+.lg.spento{opacity:.42;background:#f4f2ec}
+.lg input[type=checkbox]{accent-color:#2d5a27;width:15px;height:15px;cursor:pointer;flex:none}
+.lg .da,.lg .a{font-weight:500;color:#1c2b1a}
+.lg .rel{font-size:.72rem;color:#8a6a1e;background:rgba(154,124,46,.12);padding:.1rem .5rem;
+  border-radius:100px;font-weight:600}
+.lg .sp{flex:1}
+.lg .x{font:inherit;font-size:.72rem;border:none;background:none;color:#b3bdb1;cursor:pointer;
+  padding:.1rem .35rem;border-radius:5px}
+.lg .x:hover{color:#c0453b;background:rgba(192,69,59,.08)}
+
+.telaio{border:1px solid rgba(45,90,39,.16);border-radius:14px;background:#fff;overflow:hidden;
+  margin-top:.7rem}
+svg{display:block;width:100%;height:480px;touch-action:none;cursor:grab}
+svg.trascino{cursor:grabbing}
+.nodo rect{fill:#fff;stroke:#2d5a27;stroke-width:1.6}
+.nodo.molti rect{fill:#f0f5ee;stroke-width:2.4}
+.nodo text{font-family:'Jost',sans-serif;font-size:12px;font-weight:500;fill:#1c2b1a;
+  text-anchor:middle;dominant-baseline:middle;pointer-events:none}
+.arco{stroke:#8a9e87;stroke-width:1.4;fill:none}
+.etichetta{font-family:'Jost',sans-serif;font-size:9.5px;fill:#8a6a1e;text-anchor:middle;
+  dominant-baseline:middle;pointer-events:none}
+.etichetta-fondo{fill:#faf8f3}
+
+.aggiungi{display:flex;gap:.4rem;flex-wrap:wrap;margin-top:.6rem;align-items:center}
+.aggiungi input,.aggiungi select{font:inherit;font-size:.8rem;padding:.42rem .7rem;border-radius:8px;
+  border:1px solid rgba(45,90,39,.18);background:#fff;color:#1c2b1a;outline:none}
+.aggiungi input{width:150px}
+
+.spiega{margin-top:1.1rem;padding:.95rem 1.15rem;border-left:3px solid #9a7c2e;background:#f6f3ec;
+  border-radius:0 10px 10px 0;font-size:.84rem;line-height:1.7;color:#5a6b58}
+.spiega b{color:#8a6a1e;font-weight:600}
+.vuoto{padding:2rem 1rem;text-align:center;color:#b3bdb1;font-size:.88rem}
+@media(max-width:640px){
+  .w{padding:1.4rem 1rem 3rem}h1{font-size:1.8rem}
+  svg{height:380px}.aggiungi input{width:110px}
+}
+</style>
+</head>
+<body>
+<div class="w">
+  <div class="k">Idearca · Prove</div>
+  <h1>Generatore di mappe concettuali</h1>
+  <p class="sub">Si incolla un testo e lo strumento cerca i <strong>legami dichiarati</strong>:
+  «X è Y», «X causa Y», «X si divide in Y». Non capisce il testo — riconosce quindici modi in
+  cui l'italiano scrive un rapporto fra due cose. Quello che trova è una proposta: si spunta
+  quello che regge, si butta il resto, si aggiunge quello che manca.</p>
+
+  <div class="et">Il testo</div>
+  <textarea id="fonte" placeholder="Incolla qui il testo da cui ricavare la mappa…"></textarea>
+  <div class="barra">
+    <button class="b pieno" onclick="estrai()">Cerca i legami</button>
+    <button class="b" onclick="svuota()">Ricomincia</button>
+    <span style="flex:1"></span>
+    <span id="esempi"></span>
+  </div>
+
+  <div id="lavoro" style="display:none">
+    <div class="et">I legami trovati — spunta quelli che tengono</div>
+    <div class="legami" id="legami"></div>
+
+    <div class="aggiungi">
+      <input id="nDa" placeholder="da…">
+      <select id="nRel"></select>
+      <input id="nA" placeholder="a…">
+      <button class="mini" onclick="aggiungiLegame()">+ aggiungi a mano</button>
+    </div>
+
+    <div class="et">La mappa</div>
+    <div class="telaio">
+      <svg id="mappa"></svg>
+    </div>
+    <div class="barra">
+      <button class="b" onclick="riordina()">Ridisponi</button>
+      <button class="b" onclick="scarica()">Salva PNG</button>
+      <span id="conto" style="font-size:.78rem;color:#8a9e87"></span>
+    </div>
+  </div>
+
+  <div class="spiega"><b>Che cosa sa fare e che cosa no.</b> Trova i rapporti che il testo
+  <em>dichiara</em> con una parola: è, comprende, causa, deriva da, si oppone a, e altri undici.
+  Non trova quelli impliciti, che sono la maggior parte e i più interessanti — quelli restano
+  da mettere a mano, ed è lì che si studia. Uno strumento che li indovinasse tutti farebbe la
+  mappa al posto tuo, che è il contrario di quello che serve.</div>
+</div>
+
+<script>
+/* ══════════════════════════════════════════════════════════
+   IL GENERATORE DI MAPPE CONCETTUALI
+   Estrae solo i legami esplicitamente scritti. È un limite
+   voluto: la mappa serve a costringere lo studente a decidere
+   che cosa dipende da che cosa, e una macchina che decidesse
+   al posto suo toglierebbe l'esercizio. Qui propone, e chi
+   studia conferma o cancella.
+   ══════════════════════════════════════════════════════════ */
+
+/* Le preposizioni articolate vanno elencate dalla più lunga alla più
+   corta: mettendo «da» prima di «dall'», l'alternativa breve vince e
+   il pezzo catturato comincia con «ll'abitudine». */
+const DA="(?:dall'|dagli|dalle|dallo|dalla|dai|dal|da)";
+const SU="(?:sull'|sugli|sulle|sullo|sulla|sui|sul|su)";
+const A ="(?:all'|agli|alle|allo|alla|ai|al|ad|a)";
+const DI="(?:dell'|degli|delle|dello|della|dei|del|di)";
+const C="(.{3,44}?)", F="(.{3,44})";
+const sch=(r,mezzo)=>({r, re:new RegExp('^'+C+'\\s+'+mezzo+'\\s*'+F+'$','i')});
+
+const SCHEMI=[
+ sch('è un',        "(?:è|sono)\\s+(?:un'|uno|una|un|il|lo|la|i|gli|le|dei|delle)\\s+"),
+ sch('è',           "(?:è|sono)\\s+"),
+ sch('comprende',   "(?:comprende|comprendono|include|includono|contiene|contengono|abbraccia)\\s+"),
+ sch('si divide in',"si\\s+(?:divide|dividono|distingue|distinguono|articola|articolano)\\s+in\\s+"),
+ sch('causa',       "(?:causa|causano|provoca|provocano|produce|producono|genera|generano|determina|determinano)\\s+"),
+ sch('deriva da',   "(?:deriva|derivano|nasce|nascono|discende|discendono|proviene|provengono)\\s+"+DA+"\\s*"),
+ sch('dipende da',  "(?:dipende|dipendono)\\s+"+DA+"\\s*"),
+ sch('si oppone a', "si\\s+(?:oppone|oppongono|contrappone|contrappongono)\\s+"+A+"\\s*"),
+ sch('serve a',     "(?:serve|servono)\\s+(?:ad|a|per)\\s+"),
+ sch('si fonda su', "si\\s+(?:fonda|fondano|basa|basano|regge|reggono)\\s+"+SU+"\\s*"),
+ sch('appartiene a',"(?:appartiene|appartengono|fa parte|fanno parte)\\s+(?:"+A+"|"+DI+")\\s*"),
+ sch('precede',     "(?:precede|precedono|anticipa|anticipano)\\s+"),
+ sch('segue',       "(?:segue|seguono|succede\\s+a|succedono\\s+a)\\s+"),
+ sch('influenza',   "(?:influenza|influenzano|ispira|ispirano|condiziona|condizionano)\\s+"),
+ sch('si chiama',   "(?:si chiama|si chiamano|si dice|si dicono|viene detto|viene detta)\\s+")
+];
+
+const RELAZIONI=SCHEMI.map(s=>s.r).concat(['si collega a']);
+
+const ESEMPI=[
+ {n:'Aristotele', t:
+`La sostanza è un composto di materia e forma. La materia è la possibilità di essere qualcosa. La forma è ciò che rende una cosa quella cosa. Il sinolo si divide in materia e forma. La filosofia prima si occupa dell'essere in quanto essere. La fisica si fonda sulla nozione di movimento. Il movimento deriva dal passaggio dalla potenza all'atto. L'atto precede la potenza. L'anima è la forma del corpo vivente. La virtù etica nasce dall'abitudine.`},
+ {n:'Rivoluzione industriale', t:
+`La rivoluzione industriale nasce dall'incontro fra macchina a vapore e industria tessile. La macchina a vapore deriva dai lavori di Watt. L'industria tessile si divide in filatura e tessitura. Il carbone serve ad alimentare le macchine. La ferrovia dipende dalla disponibilità di ferro e carbone. L'urbanizzazione deriva dalla concentrazione delle fabbriche. La questione sociale nasce dalle condizioni di lavoro. Il movimento operaio si oppone al liberismo economico.`},
+ {n:'Illuminismo', t:
+`L'illuminismo è un movimento di riforma della cultura. La ragione è lo strumento con cui si giudica ogni tradizione. L'Encyclopédie serve a raccogliere il sapere in forma ordinata. Il dispotismo illuminato deriva dall'incontro fra filosofi e sovrani. La separazione dei poteri si fonda sulla diffidenza verso il potere concentrato. Montesquieu influenza le costituzioni successive. La tolleranza si oppone al fanatismo religioso.`}
+];
+
+let legami=[], nodi=[], archi=[], trascinato=null, altezzaTela=480;
+const svg=document.getElementById('mappa');
+
+/* ── pulizia dei pezzi estratti ───────────────────────────── */
+const ELISI=/^(?:l'|un'|dell'|nell'|all'|dall'|sull'|quell')\s*/i;
+const ARTICOLI=/^(?:il|lo|la|i|gli|le|un|uno|una|dei|degli|delle|del|dello|della|al|allo|alla|ai|agli|alle|dal|dallo|dalla|dai|dagli|dalle|nel|nello|nella|nei|negli|nelle)\s+/i;
+/* i pronomi non sono concetti: «la forma è ciò che...» darebbe un nodo «ciò» */
+const VUOTE=new Set(['ciò','cio','quello','quella','questo','questa','esso','essa','loro','lui','lei',
+  'che','cui','tale','tali','quanto','coloro','chi','altro','altra','stesso','stessa','uno','una']);
+function ripulisci(t){
+  let s=t.trim().replace(/^[«"'(\s]+|[»"')\s.,;:]+$/g,'');
+  s=s.replace(ELISI,'').replace(ARTICOLI,'');
+  /* si taglia alla prima congiunzione che apre una subordinata:
+     tenere tutta la coda farebbe nodi lunghi quanto una riga */
+  s=s.split(/\s+(?:perché|poiché|mentre|quando|che|cui|dove|se)\s+/i)[0];
+  s=s.trim().replace(/[.,;:]+$/,'');
+  /* tagliando la subordinata resta spesso una preposizione appesa:
+     «lo strumento con cui...» diventava «strumento con» */
+  s=s.replace(/\s+(?:con|di|da|a|ad|in|su|per|tra|fra|e|o|il|lo|la|i|gli|le|del|della|dei|delle|al|alla)$/i,'');
+  const parole=s.split(/\s+/);
+  if(parole.length>6) s=parole.slice(0,6).join(' ')+'…';
+  return s;
+}
+const chiave = t => t.toLowerCase().replace(/[^a-zàèéìòù ]/g,'').replace(/\s+/g,' ').trim();
+
+/* ── estrazione ───────────────────────────────────────────── */
+const SEGNO='';
+const ABBR=['ecc','cfr','sec','pag','pp','vol','fig','art','cap','sig','prof','dott','a\\.C','d\\.C'];
+function inFrasi(testo){
+  let t=testo.replace(/\s+/g,' ').trim();
+  if(!t) return [];
+  ABBR.forEach(a=>{ t=t.replace(new RegExp('\\b('+a+')\\.','gi'), '$1'+SEGNO); });
+  return t.split(/(?<=[.!?…])\s+/).map(p=>p.split(SEGNO).join('.').trim()).filter(Boolean);
+}
+
+function estrai(){
+  const frasi=inFrasi(document.getElementById('fonte').value);
+  const trovati=[];
+  const visti=new Set();
+  for(const f of frasi){
+    const pulita=f.replace(/[.!?…]+$/,'').trim();
+    for(const s of SCHEMI){
+      const m=pulita.match(s.re);
+      if(!m) continue;
+      const da=ripulisci(m[1]), a=ripulisci(m[2]);
+      if(da.length<3||a.length<3) continue;
+      if(VUOTE.has(chiave(da))||VUOTE.has(chiave(a))) continue;
+      if(chiave(da)===chiave(a)) continue;
+      const id=chiave(da)+'|'+s.r+'|'+chiave(a);
+      if(visti.has(id)) continue;
+      visti.add(id);
+      trovati.push({da, a, rel:s.r, attivo:true, frase:f});
+      break;   /* uno schema per frase: il primo che calza è il più specifico */
+    }
+  }
+  legami=trovati;
+  document.getElementById('lavoro').style.display='';
+  disegnaLegami(); costruisci(); riordina();
+}
+
+function svuota(){
+  legami=[]; nodi=[]; archi=[];
+  document.getElementById('fonte').value='';
+  document.getElementById('lavoro').style.display='none';
+}
+
+function disegnaLegami(){
+  const el=document.getElementById('legami');
+  if(!legami.length){
+    el.innerHTML='<div class="vuoto">Nessun legame dichiarato trovato. '
+      +'Il testo può essere ottimo lo stesso: vuol dire che i rapporti li lascia impliciti. '
+      +'Aggiungili a mano qui sotto.</div>';
+    return;
+  }
+  el.innerHTML=legami.map((l,i)=>`
+    <div class="lg${l.attivo?'':' spento'}">
+      <input type="checkbox" ${l.attivo?'checked':''} onchange="accendi(${i},this.checked)">
+      <span class="da">${esc(l.da)}</span>
+      <span class="rel">${esc(l.rel)}</span>
+      <span class="a">${esc(l.a)}</span>
+      <span class="sp"></span>
+      <button class="x" onclick="togli(${i})">✕</button>
+    </div>`).join('');
+}
+const esc = t => String(t).replace(/[<>&]/g,c=>({'<':'&lt;','>':'&gt;','&':'&amp;'}[c]));
+
+function accendi(i,v){ legami[i].attivo=v; disegnaLegami(); costruisci(); riordina(); }
+function togli(i){ legami.splice(i,1); disegnaLegami(); costruisci(); riordina(); }
+function aggiungiLegame(){
+  const da=document.getElementById('nDa').value.trim();
+  const a=document.getElementById('nA').value.trim();
+  const rel=document.getElementById('nRel').value;
+  if(!da||!a) return;
+  legami.push({da, a, rel, attivo:true, frase:'(aggiunto a mano)'});
+  document.getElementById('nDa').value=''; document.getElementById('nA').value='';
+  disegnaLegami(); costruisci(); riordina();
+}
+
+/* ── dal legame al grafo ──────────────────────────────────── */
+function costruisci(){
+  const indice=new Map();
+  nodi=[]; archi=[];
+  const prendi = t => {
+    const k=chiave(t);
+    if(!indice.has(k)){
+      indice.set(k, nodi.length);
+      nodi.push({t, x:0, y:0, vx:0, vy:0, grado:0});
+    }
+    return indice.get(k);
+  };
+  legami.filter(l=>l.attivo).forEach(l=>{
+    const a=prendi(l.da), b=prendi(l.a);
+    nodi[a].grado++; nodi[b].grado++;
+    archi.push({a, b, rel:l.rel});
+  });
+  const L=svg.clientWidth||900, H=svg.clientHeight||480;
+  nodi.forEach((n,i)=>{
+    const ang=i/Math.max(1,nodi.length)*2*Math.PI;
+    n.x=L/2+Math.cos(ang)*Math.min(L,H)*0.3;
+    n.y=H/2+Math.sin(ang)*Math.min(L,H)*0.3;
+    n.w=Math.min(190, 22+n.t.length*6.6); n.h=26;
+  });
+  document.getElementById('conto').textContent =
+    nodi.length ? `${nodi.length} concetti, ${archi.length} legami` : '';
+}
+
+/* ── disposizione a forze, un gruppo per volta ─────────────
+   Un testo scolastico produce spesso legami che non si toccano fra
+   loro: sette coppie separate, non una rete. Una disposizione unica
+   le mescolerebbe e le frecce si incrocerebbero senza motivo. Quindi
+   si trovano i gruppi connessi, si dispone ognuno per conto suo, e
+   poi si impaginano come blocchi affiancati. */
+function gruppi(){
+  const visto=new Array(nodi.length).fill(false), out=[];
+  const vicini=nodi.map(()=>[]);
+  archi.forEach(e=>{ vicini[e.a].push(e.b); vicini[e.b].push(e.a); });
+  for(let i=0;i<nodi.length;i++){
+    if(visto[i]) continue;
+    const coda=[i], g=[]; visto[i]=true;
+    while(coda.length){
+      const k=coda.pop(); g.push(k);
+      vicini[k].forEach(v=>{ if(!visto[v]){ visto[v]=true; coda.push(v); } });
+    }
+    out.push(g);
+  }
+  return out;
+}
+
+function disponiGruppo(g){
+  const dentro=new Set(g);
+  const suoi=archi.filter(e=>dentro.has(e.a)&&dentro.has(e.b));
+  g.forEach((k,i)=>{
+    const ang=i/g.length*2*Math.PI - Math.PI/2;
+    const raggio=g.length===1?0:40+g.length*16;
+    nodi[k].x=Math.cos(ang)*raggio;
+    nodi[k].y=Math.sin(ang)*raggio;
+  });
+  for(let p=0;p<400;p++){
+    for(let i=0;i<g.length;i++) for(let j=i+1;j<g.length;j++){
+      const a=nodi[g[i]], b=nodi[g[j]];
+      let dx=b.x-a.x, dy=b.y-a.y;
+      const d=Math.hypot(dx,dy)||0.01;
+      const minimo=(a.w+b.w)/2+40;
+      if(d<minimo){
+        const f=(minimo-d)/d*0.6;
+        a.x-=dx*f*0.5; a.y-=dy*f*0.5; b.x+=dx*f*0.5; b.y+=dy*f*0.5;
+      }
+    }
+    suoi.forEach(e=>{
+      const a=nodi[e.a], b=nodi[e.b];
+      let dx=b.x-a.x, dy=b.y-a.y;
+      const d=Math.hypot(dx,dy)||0.01;
+      /* l'ingombro dei due riquadri misurato proprio lungo la
+         direzione del legame: due scatole larghe affiancate devono
+         stare più lontane di due scatole impilate */
+      const cs=Math.abs(dx)/d, sn=Math.abs(dy)/d;
+      const ra=(a.w/2)*cs+(a.h/2)*sn, rb=(b.w/2)*cs+(b.h/2)*sn;
+      /* e la distanza minima la detta l'etichetta: un legame chiamato
+         «si divide in» ha bisogno di più spazio di uno chiamato «è» */
+      const ideale=ra+rb+Math.max(74, e.rel.length*5+34);
+      const f=(d-ideale)/d*0.12;
+      a.x+=dx*f; a.y+=dy*f; b.x-=dx*f; b.y-=dy*f;
+    });
+  }
+  for(let giro=0;giro<40;giro++){
+    let mosso=false;
+    for(let i=0;i<g.length;i++) for(let j=i+1;j<g.length;j++){
+      const a=nodi[g[i]], b=nodi[g[j]];
+      const sx=(a.w+b.w)/2+12-Math.abs(a.x-b.x);
+      const sy=(a.h+b.h)/2+26-Math.abs(a.y-b.y);
+      if(sx<=0||sy<=0) continue;
+      mosso=true;
+      if(sx<sy){ const d=(a.x<b.x?-1:1)*sx/2; a.x+=d; b.x-=d; }
+      else     { const d=(a.y<b.y?-1:1)*sy/2; a.y+=d; b.y-=d; }
+    }
+    if(!mosso) break;
+  }
+  const xs=g.map(k=>nodi[k].x-nodi[k].w/2), xe=g.map(k=>nodi[k].x+nodi[k].w/2);
+  const ys=g.map(k=>nodi[k].y-nodi[k].h/2), ye=g.map(k=>nodi[k].y+nodi[k].h/2);
+  return {x0:Math.min(...xs), y0:Math.min(...ys),
+          w:Math.max(...xe)-Math.min(...xs), h:Math.max(...ye)-Math.min(...ys)};
+}
+
+function riordina(){
+  if(!nodi.length){ disegnaMappa(); return; }
+  svg.style.height='';
+  const L=svg.clientWidth||900, H=svg.clientHeight||480;
+  const G=gruppi().sort((a,b)=>b.length-a.length);
+  const blocchi=G.map(g=>({g, r:disponiGruppo(g)}));
+
+  const aria=26;
+  let x=aria, y=aria, altezzaRiga=0;
+  blocchi.forEach(b=>{
+    if(x>aria && x+b.r.w>L-aria){ x=aria; y+=altezzaRiga+aria; altezzaRiga=0; }
+    b.g.forEach(k=>{ nodi[k].x += x-b.r.x0; nodi[k].y += y-b.r.y0; });
+    x += b.r.w+aria;
+    altezzaRiga=Math.max(altezzaRiga, b.r.h);
+  });
+
+  /* La tela cresce invece di comprimere: schiacciare le righe per
+     farcele stare accorciava le frecce sotto la lunghezza della loro
+     etichetta, e la mappa diventava illeggibile proprio nei casi in
+     cui ha più roba da mostrare. */
+  const serve=Math.max(...nodi.map(n=>n.y+n.h/2))+aria;
+  const H2=Math.max(H, Math.ceil(serve));
+  altezzaTela=H2;
+  svg.style.height=H2+'px';
+  nodi.forEach(n=>{
+    n.x=Math.max(n.w/2+4, Math.min(L-n.w/2-4, n.x));
+    n.y=Math.max(n.h/2+12, Math.min(H2-n.h/2-4, n.y));
+  });
+  separa(L,H2);
+  disegnaMappa();
+}
+
+/* La repulsione a forze lavora su distanze fra centri, ma i nodi sono
+   rettangoli: due riquadri bassi e larghi possono restare accavallati
+   pur avendo i centri lontani. Questa passata li separa davvero,
+   spingendoli lungo il lato in cui si sovrappongono di meno. */
+function separa(L,H){
+  const aria=10;
+  for(let giro=0; giro<60; giro++){
+    let mosso=false;
+    for(let i=0;i<nodi.length;i++) for(let j=i+1;j<nodi.length;j++){
+      const a=nodi[i], b=nodi[j];
+      const sx=(a.w+b.w)/2+aria-Math.abs(a.x-b.x);
+      const sy=(a.h+b.h)/2+aria-Math.abs(a.y-b.y);
+      if(sx<=0||sy<=0) continue;
+      mosso=true;
+      if(sx<sy){
+        const d=(a.x<b.x?-1:1)*sx/2;
+        a.x+=d; b.x-=d;
+      } else {
+        const d=(a.y<b.y?-1:1)*sy/2;
+        a.y+=d; b.y-=d;
+      }
+    }
+    nodi.forEach(n=>{
+      n.x=Math.max(n.w/2+4, Math.min(L-n.w/2-4, n.x));
+      n.y=Math.max(n.h/2+12, Math.min(H-n.h/2-4, n.y));
+    });
+    if(!mosso) break;
+  }
+}
+
+/* Dove la retta che esce dal centro incontra il bordo del rettangolo.
+   Prima usavo metà larghezza in orizzontale e metà altezza in
+   verticale, che è giusto solo sulle diagonali: per due riquadri
+   affiancati il punto cadeva fuori dalla scatola e l'etichetta
+   finiva stampata sopra il testo del nodo. */
+function bordo(n,ang,fuori){
+  const dx=Math.cos(ang), dy=Math.sin(ang);
+  const tx = Math.abs(dx)>1e-6 ? (n.w/2)/Math.abs(dx) : Infinity;
+  const ty = Math.abs(dy)>1e-6 ? (n.h/2)/Math.abs(dy) : Infinity;
+  const t=Math.min(tx,ty)+fuori;
+  return {x:n.x+dx*t, y:n.y+dy*t};
+}
+
+function disegnaMappa(){
+  const L=svg.clientWidth||900, H=altezzaTela;
+  svg.setAttribute('viewBox',`0 0 ${L} ${H}`);
+  if(!nodi.length){
+    svg.innerHTML=`<text x="${L/2}" y="${H/2}" text-anchor="middle" fill="#b3bdb1"
+      font-family="Jost,sans-serif" font-size="14">Nessun concetto: spunta almeno un legame</text>`;
+    return;
+  }
+  const gradoMax=Math.max(...nodi.map(n=>n.grado));
+  let d='<defs><marker id="punta" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7"'
+    +' markerHeight="7" orient="auto-start-reverse">'
+    +'<path d="M0 0L10 5L0 10z" fill="#8a9e87"/></marker></defs>';
+
+  archi.forEach(e=>{
+    const a=nodi[e.a], b=nodi[e.b];
+    const ang=Math.atan2(b.y-a.y,b.x-a.x);
+    const A=bordo(a,ang,2), B=bordo(b,ang+Math.PI,9);
+    const ax=A.x, ay=A.y, bx=B.x, by=B.y;
+    d+=`<line class="arco" x1="${ax}" y1="${ay}" x2="${bx}" y2="${by}" marker-end="url(#punta)"/>`;
+    const mx=(ax+bx)/2, my=(ay+by)/2;
+    const largo=e.rel.length*5+8;
+    d+=`<rect class="etichetta-fondo" x="${mx-largo/2}" y="${my-7}" width="${largo}" height="14" rx="7"/>`;
+    d+=`<text class="etichetta" x="${mx}" y="${my}">${esc(e.rel)}</text>`;
+  });
+
+  nodi.forEach((n,i)=>{
+    const molti = gradoMax>1 && n.grado>=gradoMax*0.75;
+    d+=`<g class="nodo${molti?' molti':''}" data-i="${i}">`
+      +`<rect x="${n.x-n.w/2}" y="${n.y-n.h/2}" width="${n.w}" height="${n.h}" rx="8"/>`
+      +`<text x="${n.x}" y="${n.y}">${esc(n.t)}</text></g>`;
+  });
+  svg.innerHTML=d;
+}
+
+/* ── trascinamento dei nodi ───────────────────────────────── */
+function puntoSvg(e){
+  const r=svg.getBoundingClientRect();
+  const L=svg.clientWidth||900;
+  return {x:(e.clientX-r.left)*(L/r.width), y:(e.clientY-r.top)*(altezzaTela/r.height)};
+}
+svg.addEventListener('pointerdown',e=>{
+  const g=e.target.closest('.nodo'); if(!g) return;
+  trascinato=+g.dataset.i;
+  svg.setPointerCapture(e.pointerId);
+  svg.classList.add('trascino');
+});
+svg.addEventListener('pointermove',e=>{
+  if(trascinato===null) return;
+  const p=puntoSvg(e);
+  nodi[trascinato].x=p.x; nodi[trascinato].y=p.y;
+  disegnaMappa();
+});
+function molla(){ trascinato=null; svg.classList.remove('trascino'); }
+svg.addEventListener('pointerup',molla);
+svg.addEventListener('pointercancel',molla);
+
+function scarica(){
+  const L=svg.clientWidth||900, H=svg.clientHeight||480;
+  /* si ricopia lo stile a mano: i CSS esterni non entrano in un SVG staccato */
+  const stile='<style>'
+    +'.nodo rect{fill:#fff;stroke:#2d5a27;stroke-width:1.6}'
+    +'.nodo.molti rect{fill:#f0f5ee;stroke-width:2.4}'
+    +'.nodo text{font-family:sans-serif;font-size:12px;font-weight:500;fill:#1c2b1a;text-anchor:middle;dominant-baseline:middle}'
+    +'.arco{stroke:#8a9e87;stroke-width:1.4;fill:none}'
+    +'.etichetta{font-family:sans-serif;font-size:9.5px;fill:#8a6a1e;text-anchor:middle;dominant-baseline:middle}'
+    +'.etichetta-fondo{fill:#fff}</style>';
+  const testo='<svg xmlns="http://www.w3.org/2000/svg" width="'+(L*2)+'" height="'+(H*2)+'"'
+    +' viewBox="0 0 '+L+' '+H+'"><rect width="'+L+'" height="'+H+'" fill="#fff"/>'
+    +stile+svg.innerHTML+'</svg>';
+  const blob=new Blob([testo],{type:'image/svg+xml'});
+  const url=URL.createObjectURL(blob);
+  const img=new Image();
+  img.onload=()=>{
+    const c=document.createElement('canvas');
+    c.width=L*2; c.height=H*2;
+    const x=c.getContext('2d');
+    x.fillStyle='#fff'; x.fillRect(0,0,c.width,c.height);
+    x.drawImage(img,0,0);
+    const a=document.createElement('a');
+    a.download='mappa.png'; a.href=c.toDataURL('image/png'); a.click();
+    URL.revokeObjectURL(url);
+  };
+  img.src=url;
+}
+
+document.getElementById('nRel').innerHTML=RELAZIONI.map(r=>`<option>${r}</option>`).join('');
+document.getElementById('esempi').innerHTML=ESEMPI.map((e,i)=>
+  `<button class="mini" onclick="document.getElementById('fonte').value=ESEMPI[${i}].t;estrai()">${e.n}</button>`).join(' ');
+window.addEventListener('resize',()=>{ if(nodi.length) riordina(); });
+</script>
+</body>
+</html>
