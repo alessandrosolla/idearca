@@ -132,3 +132,76 @@ blockquote cite{display:block;margin-top:.5rem;font-size:.82rem;font-style:norma
   h1{font-size:1.7rem}
   .grid{grid-template-columns:1fr}
 }
+
+/* ══════════════════════════════════════════════════════════
+   LE DUE VISTE
+   La stessa pagina si legge come la legge la classe oppure
+   come la legge chi conduce. Il fondo cambia colore, cosi'
+   guardando lo schermo di sfuggita si sa sempre dove si e':
+   proiettare per sbaglio la vista docente vorrebbe dire
+   regalare alla classe il punto che deve trovare da sola.
+   ══════════════════════════════════════════════════════════ */
+.vista-barra{
+  position:sticky;top:0;z-index:20;
+  background:rgba(251,247,240,.94);backdrop-filter:blur(6px);
+  border-bottom:1px solid var(--rule);
+}
+.vista-int{
+  max-width:820px;margin:0 auto;padding:.55rem 1.5rem;
+  display:flex;gap:.4rem;align-items:center;flex-wrap:wrap;
+}
+.vista-b{
+  font:inherit;font-size:.72rem;font-weight:600;letter-spacing:.04em;
+  padding:.32rem .85rem;border-radius:100px;cursor:pointer;
+  border:1.5px solid var(--rule);background:#fff;color:var(--ink-soft);
+  transition:all .16s;
+}
+.vista-b:hover{border-color:var(--accent)}
+.vista-b.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+#vista-nota{font-size:.7rem;color:var(--ink-soft);margin-left:.4rem}
+
+/* il fondo cambia: verde chiarissimo per la classe, ocra per chi conduce */
+html[data-vista="studente"] body{background:var(--cream)}
+html[data-vista="docente"]  body{background:#F3EEE2}
+html[data-vista="docente"] .vista-barra{background:rgba(243,238,226,.94)}
+html[data-vista="docente"] .vista-int{border-left:none}
+
+/* i riquadri riservati */
+.solo-docente{display:none}
+html[data-vista="docente"] .solo-docente{display:block}
+html[data-vista="docente"] table.solo-docente{display:table}
+
+.doc{
+  background:#FFFDF6;border:1px solid #D9C89A;border-left-width:4px;
+  border-left-color:#9A7C2E;border-radius:6px;padding:1.1rem 1.3rem;margin:1.4rem 0;
+}
+.doc-t{
+  font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;
+  color:#8A6A1E;font-weight:700;margin-bottom:.5rem;
+  display:flex;align-items:center;gap:.45rem;
+}
+.doc-t::before{content:'';width:7px;height:7px;border-radius:50%;background:#9A7C2E;flex:none}
+.doc p:last-child{margin-bottom:0}
+.doc table{margin:.6rem 0 0}
+.doc .avv{font-size:.85rem;color:#8A6A1E;margin-top:.7rem;padding-top:.6rem;
+  border-top:1px dashed #D9C89A}
+
+/* i nodi del dibattito: la mappa delle domande che verranno fuori */
+.nodi{display:grid;gap:.55rem;margin:1rem 0 1.6rem}
+.nodo{
+  background:#fff;border:1px solid var(--rule);border-radius:6px;
+  padding:.75rem .95rem;display:flex;gap:.75rem;align-items:flex-start;
+}
+.nodo b{
+  flex:none;width:1.6rem;height:1.6rem;border-radius:50%;
+  background:var(--ink);color:#fff;font-size:.72rem;
+  display:flex;align-items:center;justify-content:center;margin-top:.1rem;
+}
+.nodo .q{font-weight:700;display:block;margin-bottom:.15rem}
+.nodo .d{font-size:.9rem;color:var(--ink-soft)}
+
+/* la griglia dei punti */
+table.punti td:last-child,table.punti th:last-child{text-align:center;width:4.5rem}
+table.punti tr.tot td{font-weight:700;border-top:2px solid var(--ink)}
+
+@media print{ .vista-barra{display:none} }
