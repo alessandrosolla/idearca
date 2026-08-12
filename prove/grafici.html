@@ -40,7 +40,7 @@ h1{font-family:'Cormorant Garamond',Georgia,serif;font-size:2.4rem;font-weight:4
   background:var(--tela);padding:1.1rem 1.2rem .8rem;margin-top:.8rem}
 .titolo{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.4rem;font-weight:600;line-height:1.2}
 .occhio{font-size:.8rem;color:var(--secondario);line-height:1.6;margin:.2rem 0 .9rem;max-width:62ch}
-svg{display:block;width:100%;overflow:visible}
+svg{display:block;width:100%;overflow:hidden}
 .gr-linea{fill:none;stroke-width:2;stroke-linejoin:round;stroke-linecap:round}
 .gr-griglia{stroke:var(--griglia);stroke-width:1;shape-rendering:crispEdges}
 .gr-base{stroke:var(--base);stroke-width:1;shape-rendering:crispEdges}
@@ -148,17 +148,44 @@ th{font-weight:600;color:var(--inchiostro);font-size:.72rem;letter-spacing:.06em
 const SERIE=[
 {
  k:'popolazione', n:'Popolazione',
- titolo:'La popolazione dei continenti, 1800-2020',
- occhio:'In due secoli l\'Asia si moltiplica per sette e l\'Africa per dodici; l\'Europa, che nel 1800 era un quarto del mondo, oggi è meno di un decimo. Con la scala logaritmica si vedono anche l\'Oceania e il ritmo di crescita, che sulla scala normale spariscono.',
+ titolo:'La popolazione dei continenti, 1500-2020',
+ occhio:'Guarda le Americhe fra il 1500 e il 1700: la popolazione crolla a un terzo. Non è una carestia né una guerra — sono le malattie portate dagli europei, contro cui nessuno aveva difese. È il calo demografico più rapido di cui abbiamo notizia, e sulla scala normale quasi non si vede: mettila logaritmica.',
  unita:'milioni di abitanti',
- fonte:'Stime da Angus Maddison e United Nations, World Population Prospects',
- anni:[1800,1850,1900,1950,1970,1990,2000,2010,2020],
+ fonte:'Stime da Angus Maddison, Colin McEvedy e United Nations, World Population Prospects',
+ anni:[1500,1600,1700,1800,1850,1900,1950,1970,2000,2020],
  dati:[
-  {n:'Asia',     v:[635,809,947,1405,2142,3226,3741,4210,4641]},
-  {n:'Africa',   v:[107,111,133,228,366,638,819,1055,1341]},
-  {n:'Americhe', v:[31,59,156,340,511,724,836,942,1023]},
-  {n:'Europa',   v:[203,276,408,549,657,721,727,736,748]},
-  {n:'Oceania',  v:[2,2,6,13,19,27,31,37,43]}
+  {n:'Asia',     v:[284,379,402,635,809,947,1405,2142,3741,4641]},
+  {n:'Africa',   v:[47,55,61,107,111,133,228,366,819,1341]},
+  {n:'Americhe', v:[39,15,12,31,59,156,340,511,836,1023]},
+  {n:'Europa',   v:[84,111,125,203,276,408,549,657,727,748]},
+  {n:'Oceania',  v:[3,3,3,2,2,6,13,19,31,43]}
+ ]},
+{
+ k:'vita', n:'Quanto si vive',
+ titolo:'Speranza di vita alla nascita, 1800-2020',
+ occhio:'Nel 1800 non c\'era un solo paese al mondo in cui si superassero i quarant\'anni di media. Il numero è basso soprattutto per la mortalità infantile: chi arrivava a vent\'anni poteva sperare in molti di più. La curva che sale più in fretta non è quella dei paesi ricchi — è quella dell\'Asia dopo il 1950.',
+ unita:'anni di vita attesi alla nascita',
+ fonte:'Our World in Data, su dati Riley, UN e Gapminder',
+ anni:[1800,1900,1950,1980,2000,2020],
+ dati:[
+  {n:'Europa occid.',  v:[34,46,67,74,78,82]},
+  {n:'Stati Uniti',    v:[39,49,68,74,77,79]},
+  {n:'America Latina', v:[29,31,51,65,72,75]},
+  {n:'Asia',           v:[28,28,42,61,69,74]},
+  {n:'Africa',         v:[26,27,37,50,53,64]}
+ ]},
+{
+ k:'citta', n:'Chi vive in città',
+ titolo:'La quota di popolazione urbana, 1500-2020',
+ occhio:'Per quasi tutta la storia dell\'umanità vivere in città è stata l\'eccezione: nel 1500 riguardava una persona su venti. Il sorpasso mondiale — più abitanti in città che in campagna — è avvenuto intorno al 2007, cioè ieri.',
+ unita:'per cento della popolazione',
+ fonte:'Our World in Data, su dati UN World Urbanization Prospects e Bairoch',
+ anni:[1500,1800,1900,1950,2000,2020],
+ dati:[
+  {n:'Americhe', v:[4,7,26,51,75,81]},
+  {n:'Europa',   v:[6,12,40,52,71,75]},
+  {n:'Asia',     v:[4,8,9,17,37,51]},
+  {n:'Africa',   v:[3,5,8,14,35,44]}
  ]},
 {
  k:'prodotto', n:'Prodotto interno',
@@ -266,7 +293,8 @@ function disegna(){
     if(s.anni.length>12 && i%3!==0 && i!==s.anni.length-1) return;
     d+=`<text class="gr-testo" x="${sc.xs(i)}" y="${H-M.b+18}" text-anchor="middle">${a}</text>`;
   });
-  d+=`<text class="gr-testo" x="${M.s-8}" y="${M.a-2}" text-anchor="end" style="font-size:10px">${esc(s.unita)}</text>`;
+  /* dentro il riquadro e ancorata a sinistra: prima usciva dal bordo */
+  d+=`<text class="gr-testo" x="${M.s}" y="${M.a-3}" text-anchor="start" style="font-size:10px">${esc(s.unita)}</text>`;
 
   /* ── le linee, disegnate fino all'anno corrente ── */
   attive().forEach(serie=>{

@@ -172,6 +172,38 @@ h3.sotto::before{content:'';width:22px;height:3px;border-radius:2px;
   .numeroni{grid-template-columns:repeat(2,1fr)}
   .pezzi{grid-template-columns:1fr}
 }
+
+/* ---- il blocco delle ripetizioni, arrivato dalla homepage ---- */
+.rip-blocco{margin-top:.6rem}
+.rip-blocco .sec-eye{font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;
+  color:#a1542f;font-weight:700}
+.rip-blocco .sec-title{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.9rem;
+  font-weight:600;margin:.15rem 0 .6rem}
+.rip-blocco .rip-lead{font-size:.95rem;line-height:1.8;margin-bottom:1.1rem}
+.rip-blocco .rip-paths{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:.7rem}
+.rip-blocco .rip-path{border:1px solid rgba(45,90,39,.14);border-radius:12px;padding:1rem 1.1rem;background:#fff}
+.rip-blocco .rip-path-ic{width:30px;height:30px;color:#a1542f;margin-bottom:.5rem}
+.rip-blocco .rip-path-ic svg{width:100%;height:100%}
+.rip-blocco .rip-path h3{font-size:1rem;font-weight:600;margin-bottom:.3rem}
+.rip-blocco .rip-path p{font-size:.86rem;line-height:1.65;color:#5a6b58;margin:0}
+.rip-blocco .rip-cta{margin-top:1.1rem;border:1px solid rgba(45,90,39,.14);border-radius:14px;
+  background:#fff;padding:1.2rem 1.3rem;display:grid;gap:1rem}
+.rip-blocco .rip-cta h3{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.4rem;
+  font-weight:600;margin-bottom:.3rem}
+.rip-blocco .rip-facts{list-style:none;padding:0;margin:.7rem 0 0;font-size:.86rem;color:#5a6b58}
+.rip-blocco .rip-facts li{display:flex;align-items:center;gap:.5rem;margin-bottom:.3rem}
+.rip-blocco .rip-facts svg{width:15px;height:15px;color:#2d5a27;flex:none}
+.rip-blocco .rip-btn{display:flex;align-items:center;gap:.7rem;text-decoration:none;
+  border:1.5px solid rgba(45,90,39,.2);border-radius:12px;padding:.8rem 1rem;color:inherit;
+  margin-bottom:.5rem;transition:all .16s}
+.rip-blocco .rip-btn:hover{border-color:#2d5a27;background:#fbfaf6}
+.rip-blocco .rip-btn-ic svg{width:22px;height:22px;color:#25D366}
+.rip-blocco .rip-btn-txt{display:flex;flex-direction:column}
+.rip-blocco .rip-btn-txt strong{font-size:.92rem;font-weight:600}
+.rip-blocco .rip-btn-txt small{font-size:.76rem;color:#8a9e87}
+.rip-blocco .rip-btn-arrow{width:18px;height:18px;margin-left:auto;color:#8a9e87;flex:none}
+.rip-blocco .rip-decor{display:none}
+@media(max-width:640px){ .rip-blocco .sec-title{font-size:1.6rem} }
 </style>
 </head>
 <body>
@@ -451,6 +483,55 @@ h3.sotto::before{content:'';width:22px;height:3px;border-radius:2px;
     <p>Il codice è pubblico e si può leggere per intero. I materiali didattici no:
     quelli stanno dietro i codici di accesso, e li vede solo chi ne ha diritto.</p>
   </div>
+
+  <p class="gruppo-et"><span style="--a:#a1542f"></span>Ripetizioni</p>
+<div id="ripetizioni" class="rip-blocco">
+  <div class="rip-decor" aria-hidden="true"></div>
+  <div class="sec-head"><div><span class="sec-eye">Lezioni private</span><h2 class="sec-title">Ripetizioni</h2></div></div>
+  <p class="rip-lead ">Lezioni private di <strong>Filosofia</strong>, <strong>Storia</strong> ed <strong>Educazione Civica</strong>, in presenza o online. Ogni percorso è costruito sulle esigenze dello studente — dal recupero mirato alla preparazione degli esami.</p>
+
+  <div class="rip-paths">
+    <div class="rip-path ">
+      <div class="rip-path-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div>
+      <h3>Recupero</h3>
+      <p>Colmare le lacune e ritrovare il filo del programma, un argomento alla volta, con schemi e verifiche mirate.</p>
+    </div>
+    <div class="rip-path ">
+      <div class="rip-path-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"></path></svg></div>
+      <h3>Maturità &amp; esami</h3>
+      <p>Preparazione strutturata per interrogazioni, tesine e colloquio d'esame, con collegamenti interdisciplinari.</p>
+    </div>
+    <div class="rip-path ">
+      <div class="rip-path-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"></path></svg></div>
+      <h3>Approfondimento</h3>
+      <p>Per chi vuole andare oltre il programma: lettura dei testi, dibattito filosofico e temi di attualità.</p>
+    </div>
+  </div>
+
+  <div class="rip-cta">
+    <div class="rip-cta-copy">
+      <h3>Iniziamo dal tuo obiettivo</h3>
+      <p>Scrivimi il tuo nome, la classe e cosa ti serve. Ti rispondo entro <strong>24–48 ore</strong> con un percorso su misura.</p>
+      <ul class="rip-facts">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path></svg>In presenza o online</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path></svg>Materiali della piattaforma inclusi</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path></svg>Prima lezione conoscitiva</li>
+      </ul>
+    </div>
+    <div class="rip-cta-actions">
+      <a class="rip-btn rip-btn-wa" href="https://wa.me/393406507839?text=Salve,%20vorrei%20informazioni%20sulle%20ripetizioni" target="_blank" rel="noopener">
+        <span class="rip-btn-ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg></span>
+        <span class="rip-btn-txt"><strong>Scrivimi su WhatsApp</strong><small>340 650 7839 · risposta rapida</small></span>
+        <svg class="rip-btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path></svg>
+      </a>
+      <a class="rip-btn rip-btn-mail" href="mailto:alessandro.solla.00@gmail.com?subject=Richiesta%20ripetizioni">
+        <span class="rip-btn-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"></path></svg></span>
+        <span class="rip-btn-txt"><strong>Scrivi una email</strong><small>alessandro.solla.00@gmail.com</small></span>
+        <svg class="rip-btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path></svg>
+      </a>
+    </div>
+  </div>
+</div>
 
   <a class="torna" href="../index.html">← Torna a Idearca</a>
 </div>

@@ -31,8 +31,7 @@
 <nav id="main-nav" class="">
   <span class="logo" onclick="window.scrollTo({top:0,behavior:&#39;smooth&#39;})">Idea<em>rca</em></span>
   <ul class="nav-links">
-    <li><a onclick="go(&#39;materie-section&#39;)">Materie</a></li>
-    <li><a onclick="go(&#39;ripetizioni-section&#39;)">Ripetizioni</a></li>
+    <li><a href="chi/index.html#ripetizioni">Ripetizioni</a></li>
     <li><a href="chi/index.html">Chi sono</a></li>
     
   </ul>
@@ -50,8 +49,7 @@
 <div class="menu-mobile" id="menu-mobile" onclick="if(event.target===this)chiudiMenu()">
   <div class="menu-mobile-foglio">
     <button class="menu-mobile-x" onclick="chiudiMenu()" aria-label="Chiudi">&#10005;</button>
-    <a onclick="chiudiMenu();go('materie-section')">Materie</a>
-    <a onclick="chiudiMenu();go('ripetizioni-section')">Ripetizioni</a>
+    <a href="chi/index.html#ripetizioni">Ripetizioni</a>
     <a href="chi/index.html">Chi sono</a>
     <a onclick="chiudiMenu();go('contacts-section')">Contatti</a>
     <button class="menu-mobile-cta" onclick="chiudiMenu();scrollToLogin()">Area studenti</button>
@@ -211,45 +209,18 @@
 <section class="section rip-section" id="ripetizioni-section">
   <div class="rip-decor" aria-hidden="true"></div>
   <div class="sec-head rev"><div><span class="sec-eye">Lezioni private</span><h2 class="sec-title">Ripetizioni</h2></div></div>
-  <p class="rip-lead rev d1">Lezioni private di <strong>Filosofia</strong>, <strong>Storia</strong> ed <strong>Educazione Civica</strong>, in presenza o online. Ogni percorso è costruito sulle esigenze dello studente — dal recupero mirato alla preparazione degli esami.</p>
-
-  <div class="rip-paths">
-    <div class="rip-path rev d1">
-      <div class="rip-path-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div>
-      <h3>Recupero</h3>
-      <p>Colmare le lacune e ritrovare il filo del programma, un argomento alla volta, con schemi e verifiche mirate.</p>
-    </div>
-    <div class="rip-path rev d2">
-      <div class="rip-path-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"></path></svg></div>
-      <h3>Maturità &amp; esami</h3>
-      <p>Preparazione strutturata per interrogazioni, tesine e colloquio d'esame, con collegamenti interdisciplinari.</p>
-    </div>
-    <div class="rip-path rev d3">
-      <div class="rip-path-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"></path></svg></div>
-      <h3>Approfondimento</h3>
-      <p>Per chi vuole andare oltre il programma: lettura dei testi, dibattito filosofico e temi di attualità.</p>
-    </div>
-  </div>
-
-  <div class="rip-cta rev">
+  <p class="rip-lead rev d1">Lezioni private di <strong>Filosofia</strong>, <strong>Storia</strong> ed
+  <strong>Educazione Civica</strong>, in presenza o online — recupero, maturità, approfondimento.
+  Il percorso si costruisce sulle esigenze dello studente.</p>
+  <div class="rip-cta rev" style="margin-top:1.4rem">
     <div class="rip-cta-copy">
-      <h3>Iniziamo dal tuo obiettivo</h3>
-      <p>Scrivimi il tuo nome, la classe e cosa ti serve. Ti rispondo entro <strong>24–48 ore</strong> con un percorso su misura.</p>
-      <ul class="rip-facts">
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path></svg>In presenza o online</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path></svg>Materiali della piattaforma inclusi</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path></svg>Prima lezione conoscitiva</li>
-      </ul>
+      <h3>Come funziona, e come ci si mette in contatto</h3>
+      <p>Tutto quello che serve sapere — i tre percorsi, che cosa è incluso, i recapiti —
+      sta nella pagina <strong>Chi sono</strong>, insieme al resto.</p>
     </div>
     <div class="rip-cta-actions">
-      <a class="rip-btn rip-btn-wa" href="https://wa.me/393406507839?text=Salve,%20vorrei%20informazioni%20sulle%20ripetizioni" target="_blank" rel="noopener">
-        <span class="rip-btn-ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg></span>
-        <span class="rip-btn-txt"><strong>Scrivimi su WhatsApp</strong><small>340 650 7839 · risposta rapida</small></span>
-        <svg class="rip-btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path></svg>
-      </a>
-      <a class="rip-btn rip-btn-mail" href="mailto:alessandro.solla.00@gmail.com?subject=Richiesta%20ripetizioni">
-        <span class="rip-btn-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"></path></svg></span>
-        <span class="rip-btn-txt"><strong>Scrivi una email</strong><small>alessandro.solla.00@gmail.com</small></span>
+      <a class="rip-btn rip-btn-mail" href="chi/index.html#ripetizioni">
+        <span class="rip-btn-txt"><strong>Vai alle ripetizioni</strong><small>percorsi, costi e contatti</small></span>
         <svg class="rip-btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path></svg>
       </a>
     </div>
@@ -276,7 +247,7 @@
 </section>
 <footer>
   <div class="foot-brand"><span class="foot-logo">Idea<em>rca</em></span><span class="foot-tagline">Filosofia · Storia · Educazione Civica</span></div>
-  <div class="foot-links"><a onclick="window.scrollTo({top:0,behavior:&#39;smooth&#39;})">Home</a><a onclick="go(&#39;materie-section&#39;)">Materie</a><a onclick="go(&#39;ripetizioni-section&#39;)">Ripetizioni</a><a href="chi/index.html">Chi sono</a><a onclick="openPricing()">Accesso</a><a onclick="go(&#39;contacts-section&#39;)">Contatti</a></div>
+  <div class="foot-links"><a onclick="window.scrollTo({top:0,behavior:&#39;smooth&#39;})">Home</a><a href="chi/index.html#ripetizioni">Ripetizioni</a><a href="chi/index.html">Chi sono</a><a onclick="openPricing()">Accesso</a><a onclick="go(&#39;contacts-section&#39;)">Contatti</a></div>
   <span class="foot-note">© 2025 Idearca — tutti i diritti riservati</span>
 </footer>
 
