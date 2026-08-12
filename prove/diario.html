@@ -47,6 +47,12 @@ canvas{display:block;width:100%;cursor:crosshair}
 .scheda .dice{font-size:.92rem;line-height:1.8;color:#2a352a}
 .cit{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.12rem;line-height:1.55;color:#2d5a27;
   font-style:italic;margin:.8rem 0;padding-left:.9rem;border-left:3px solid rgba(45,90,39,.25)}
+.etp{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:#9a7c2e;
+  font-weight:700;margin-top:1.1rem}
+.passo{margin:.45rem 0 0;padding:1rem 1.2rem;border-left:3px solid #9a7c2e;background:#fdfcf7;
+  border-radius:0 10px 10px 0;font-family:'Cormorant Garamond',Georgia,serif}
+.passo p{font-size:1.06rem;line-height:1.78;color:#2a352a;margin-bottom:.75rem}
+.passo p:last-child{margin-bottom:0}
 .notare{margin-top:.9rem;padding:.8rem .95rem;border-radius:10px;background:#f6f3ec;
   font-size:.84rem;line-height:1.7;color:#5a6b58}
 .notare b{color:#8a6a1e;font-weight:600;display:block;margin-bottom:.2rem}
@@ -66,10 +72,11 @@ canvas{display:block;width:100%;cursor:crosshair}
 <div class="w">
   <div class="k">Idearca · Prove</div>
   <h1>Diario immersivo</h1>
-  <p class="sub">Dodici persone che hanno scritto in prima persona quello che stavano vedendo,
-  messe sulla carta del loro tempo — con i confini che c'erano allora, non quelli di oggi.
-  Una fonte diretta non dice <em>com'era</em>: dice <strong>come sembrava a chi guardava</strong>,
-  ed è una cosa diversa e più utile.</p>
+  <p class="sub">Ventuno persone che hanno scritto in prima persona quello che stavano vedendo,
+  dal 430 a.C. al 1916, messe sulla carta del loro tempo — con i confini che c'erano allora,
+  non quelli di oggi. Di ciascuna si legge <strong>un pezzo del testo vero</strong>, non un
+  riassunto: una fonte diretta non dice <em>com'era</em>, dice <strong>come sembrava a chi
+  guardava</strong>, ed è una cosa diversa e più utile.</p>
 
   <div class="et">L'epoca — la carta cambia con lei</div>
   <div class="epoche" id="epoche"></div>
@@ -84,11 +91,15 @@ canvas{display:block;width:100%;cursor:crosshair}
     <div class="scheda" id="scheda"></div>
   </div>
 
-  <div class="avviso"><b>Come sono scritti i testi.</b> I riquadri raccontano che cosa dice
-  la fonte, con parole nostre: non sono traduzioni, e non mettono in bocca a nessuno frasi
-  che non ha scritto. Le poche righe in corsivo sono citazioni brevi da testi ormai di
-  pubblico dominio. Per leggere davvero una fonte bisogna andare alla fonte, e sotto ogni
-  scheda c'è scritto quale.</div>
+  <div class="avviso"><b>Da dove vengono i testi.</b> Il riquadro chiaro contiene il passo
+  della fonte, reso in italiano da noi a partire da originali di pubblico dominio: non è la
+  traduzione di un editore vivente, ed è per questo che si può leggere qui. Sotto ogni scheda
+  è indicato il punto esatto — libro, capitolo, data — così chi vuole va a controllare.
+  <br><br>Due schede fanno eccezione e lo dichiarano: la lettera dell'emigrante e quella del
+  fante non sono un documento singolo ma una <b>ricostruzione</b> costruita su raccolte di
+  lettere vere. Servono a far sentire una voce che esiste in migliaia di esemplari simili;
+  non vanno citate come si citerebbe Tucidide. Le fonti del Novecento ancora sotto diritto
+  d'autore — Anne Frank, Primo Levi — qui non ci sono apposta.</div>
 </div>
 
 <script src="../js/d3-array.min.js"></script>
@@ -116,78 +127,133 @@ const CARTE=[
 ];
 
 const FONTI=[
+{chi:'Tucidide', anno:-430, carta:'bc323', luogo:'Atene', ll:[23.73,37.98],
+ dice:'Comanda una flotta ateniese, prende la peste e sopravvive. Scrive la storia della guerra dichiarando di volerla lasciare a chi verrà dopo, e la descrizione del contagio la fa come farebbe un medico — perché, dice, chi la riconoscerà saprà di che si tratta.',
+ passo:'Io dirò come si presentava, e indicherò i segni dai quali chi la studiasse potrà, se mai tornasse, riconoscerla: ne parlo per averla avuta io stesso e per aver visto altri soffrirne.\n\nI corpi si coprivano di piccole pustole e di ulcere. Dentro bruciavano a tal punto che i malati non sopportavano il peso delle vesti più leggere, e volevano gettarsi nell\'acqua fredda; molti che non erano sorvegliati si buttarono nei pozzi, arsi da una sete che non si placava mai.\n\nMa la cosa più terribile era lo scoraggiamento che prendeva chi si sentiva ammalato: perdevano subito ogni speranza e si abbandonavano, invece di resistere. E morivano soprattutto quelli che avevano un po\' di pietà, perché per vergogna non si risparmiavano ed entravano dagli amici. Nessuna cura si dimostrò valida: ciò che giovava a uno nuoceva a un altro.',
+ notare:'Scrive «ne parlo per averla avuta io stesso»: dichiara la fonte della propria autorità. È la prima volta nella storia della scrittura che qualcuno lo fa in modo così esplicito.',
+ fonte:'Tucidide, La guerra del Peloponneso, II, 47-51 — resa in italiano nostra'},
+
 {chi:'Plinio il Giovane', anno:79, carta:'100', luogo:'Miseno, golfo di Napoli', ll:[14.08,40.79],
- dice:'Ha diciassette anni e guarda il Vesuvio dall\'altra parte del golfo. Venticinque anni dopo scrive a Tacito due lettere per raccontargli come morì suo zio, che era andato in mare per soccorrere la gente e per vedere da vicino. Descrive la nube che sale a forma di pino, la cenere che cade sempre più fitta, il buio che non è quello della notte ma quello di una stanza chiusa senza lume, e la madre che lo prega di scappare senza di lei.',
- cit:'Non un buio come quello di una notte senza luna, ma come di una stanza chiusa a lume spento.',
- notare:'È una fonte scritta venticinque anni dopo, su richiesta di uno storico, da un ragazzo che nel frattempo è diventato un uomo pubblico. Ogni dettaglio è vero e ogni dettaglio è stato scelto.',
- fonte:'Plinio il Giovane, Epistole VI 16 e VI 20'},
+ dice:'Ha diciassette anni e guarda il Vesuvio dall\'altra parte del golfo. Venticinque anni dopo scrive a Tacito due lettere per raccontargli come morì suo zio, che era andato in mare per soccorrere la gente e per vedere da vicino.',
+ passo:'Era già la prima ora del giorno, e la luce ancora incerta e come stanca. Gli edifici intorno tremavano, e sebbene fossimo in luogo aperto il pericolo di un crollo era grande e certo. Allora finalmente decidemmo di uscire dalla città.\n\nCi segue una folla atterrita, che preferisce il consiglio altrui al proprio e per paura spinge e incalza chi parte. Usciti dall\'abitato ci fermammo. Vedemmo il mare ritirarsi su sé stesso, quasi respinto dal tremito della terra: la spiaggia si era allargata e molti animali marini restavano sulla sabbia asciutta.\n\nDall\'altra parte una nube nera e paurosa, squarciata da guizzi di fuoco, si apriva in lunghe figure di fiamma simili a lampi, ma più grandi. Poco dopo quella nube scese a terra e coprì il mare. Cadeva la cenere, ancora rada; mi voltai indietro: un fumo denso ci incalzava alle spalle, versandosi sul terreno come un fiume.\n\nSi fece buio, non come quello di una notte senza luna o coperta di nubi, ma come in una stanza chiusa a lume spento. Si udivano i lamenti delle donne, i vagiti dei bambini, le grida degli uomini: chi chiamava il padre, chi il figlio, chi la moglie, e cercavano di riconoscersi dalla voce. Alcuni per paura della morte invocavano la morte. Molti alzavano le mani agli dèi, ma i più dicevano che gli dèi non c\'erano più, e che quella era l\'ultima ed eterna notte del mondo.',
+ notare:'È una fonte scritta venticinque anni dopo, su richiesta di uno storico, da un ragazzo diventato uomo pubblico. Ogni dettaglio è vero e ogni dettaglio è stato scelto.',
+ fonte:'Plinio il Giovane, Epistole VI, 20 — resa in italiano nostra'},
 
-{chi:'Sei Shōnagon', anno:1000, carta:'1000', luogo:'Heian-kyō (Kyoto)', ll:[135.77,35.01],
- dice:'Dama di corte dell\'imperatrice, tiene un quaderno che nasconde sotto il guanciale. Non racconta la storia del Giappone: fa elenchi. Cose che fanno battere il cuore, cose che danno fastidio, cose che sembrano lontane pur essendo vicine. La corte imperiale appare non come un\'istituzione ma come un luogo dove si soffre il caldo, si aspettano lettere e si giudica la calligrafia di un uomo prima del suo carattere.',
- cit:'',
- notare:'La più grande fonte sulla vita quotidiana di una corte è un quaderno privato di appunti, non una cronaca. Le fonti migliori quasi mai sono state scritte per noi.',
- fonte:'Sei Shōnagon, Makura no sōshi (Note del guanciale), inizio XI secolo'},
-
-{chi:'Ibn Battuta', anno:1352, carta:'1492', luogo:'Mali, valle del Niger', ll:[-3.0,16.77],
- dice:'Partito da Tangeri a ventun anni per il pellegrinaggio alla Mecca, torna a casa dopo trent\'anni e centoventimila chilometri. Attraversa il Sahara con una carovana e arriva nel regno del Mali. Racconta la sicurezza delle strade, il rispetto per la giustizia, e insieme il fastidio per usanze che non approva. Poi detta tutto a uno scrivano, perché il sultano del Marocco vuole che quel racconto esista.',
- cit:'',
- notare:'Viaggia più lontano di Marco Polo e in Europa non lo conosce quasi nessuno. Che una fonte diventi famosa dipende da chi la copia, la traduce e la insegna — non da quanto vale.',
- fonte:'Ibn Battuta, Rihla, dettata nel 1355'},
-
-{chi:'Cristoforo Colombo', anno:1492, carta:'1492', luogo:'Guanahaní, Bahamas', ll:[-74.48,24.05],
- dice:'Il giornale di bordo del 12 ottobre registra l\'approdo su un\'isola che gli abitanti chiamano Guanahaní. Descrive persone che vengono incontro senza armi, che portano doni, e annota subito due cose insieme: che sono generosi, e che con cinquanta uomini si potrebbero soggiogare tutti. Crede fino alla morte di essere arrivato in Asia.',
- cit:'',
- notare:'Nella stessa pagina c\'è l\'ammirazione e il calcolo di come conquistarli. Non sono due autori diversi: è come funziona uno sguardo che arriva per prendere.',
- fonte:'Diario di bordo, nella trascrizione di Bartolomé de las Casas'},
-
-{chi:'Bernal Díaz del Castillo', anno:1519, carta:'1492', luogo:'Tenochtitlán (Città del Messico)', ll:[-99.13,19.43],
- dice:'Soldato semplice, scrive da vecchio perché è stufo delle cronache che danno tutto il merito a Cortés. Racconta il momento in cui dall\'altura vedono per la prima volta la città sul lago, con le strade d\'acqua e i templi bianchi, e dice che alcuni si chiedevano se non stessero sognando. Cinquant\'anni dopo ricorda ancora i nomi dei cavalli.',
- cit:'',
- notare:'Scrive per correggere un altro libro. Quasi tutte le fonti nascono contro qualcosa: sapere contro che cosa è metà del lavoro dello storico.',
- fonte:'Bernal Díaz del Castillo, Historia verdadera de la conquista de la Nueva España'},
-
-{chi:'Matteo Ricci', anno:1601, carta:'1492', luogo:'Pechino', ll:[116.40,39.90],
- dice:'Gesuita marchigiano, arriva a Pechino dopo vent\'anni passati a imparare il cinese e i classici confuciani. Nei suoi scritti descrive una corte che considera l\'Europa una periferia, e ammette che su molte cose i cinesi sono più avanti. Porta orologi e carte geografiche, e per farsi ascoltare disegna un planisfero che mette la Cina al centro.',
- cit:'',
- notare:'Sposta la Cina al centro della carta per ragioni diplomatiche. Ogni carta geografica mette qualcuno al centro, e non è mai una scelta neutra: nemmeno la nostra.',
- fonte:'Matteo Ricci, Della entrata della Compagnia di Giesù e Christianità nella Cina'},
-
-{chi:'Samuel Pepys', anno:1666, carta:'1492', luogo:'Londra', ll:[-0.09,51.51],
- dice:'Funzionario dell\'ammiragliato, tiene un diario cifrato per undici anni. Il 2 settembre lo svegliano per dirgli che c\'è un incendio; guarda dalla finestra, giudica che sia lontano e torna a letto. Nei giorni dopo annota i piccioni che non vogliono lasciare i cornicioni e si bruciano le ali, e il formaggio che seppellisce in giardino per salvarlo.',
- cit:'',
- notare:'Il dettaglio che resta è il formaggio sepolto in giardino. Le fonti private tengono le cose piccole, ed è per quelle che valgono più delle cronache ufficiali.',
- fonte:'Samuel Pepys, Diario, 2-7 settembre 1666'},
-
-{chi:'Olaudah Equiano', anno:1756, carta:'1815', luogo:'Traversata atlantica', ll:[-30.0,10.0],
- dice:'Rapito da bambino, deportato dall\'Africa occidentale ai Caraibi, comprerà la propria libertà e diventerà una delle voci dell\'abolizionismo inglese. Racconta la stiva: l\'aria irrespirabile, i compagni incatenati che preferiscono buttarsi in mare, la sorpresa nel vedere per la prima volta uomini con la pelle chiara e nel non capire come la nave si muovesse senza remi.',
- cit:'',
- notare:'Per due secoli la tratta è stata raccontata quasi solo da chi la organizzava. Questa è una delle rarissime testimonianze di chi era nella stiva, ed è per questo che è stata pubblicata: serviva alla causa.',
- fonte:'Olaudah Equiano, The Interesting Narrative, 1789'},
+{chi:'Marco Aurelio', anno:170, carta:'100', luogo:'Accampamento sul Danubio', ll:[19.05,47.50],
+ dice:'Imperatore di Roma, scrive in greco un quaderno che non è destinato a nessuno: appunti per sé stesso, in un accampamento militare durante le guerre sul Danubio. Sono arrivati fino a noi per caso.',
+ passo:'Comincia la giornata dicendoti: incontrerò un ingrato, un violento, un invidioso, un ipocrita. Tutte cose che vengono dalla loro ignoranza del bene e del male. Ma io, che ho compreso la natura del bene e quella del male, so che chi mi fa torto è mio parente — non per sangue, ma perché partecipa della stessa ragione. Non posso quindi ricevere danno da nessuno di loro, né adirarmi con chi mi è congiunto.\n\nRicordati da quanto tempo rimandi, e quante volte gli dèi ti hanno concesso una proroga di cui non ti sei servito. Bisogna che tu capisca una buona volta di quale mondo sei parte, e che c\'è un limite fissato al tuo tempo: se non lo usi per rasserenarti, quel tempo passerà, passerai tu, e non tornerà più.\n\nTutto ciò che accade è così consueto e conosciuto come la rosa in primavera e il frutto in estate: così è la malattia, la morte, la calunnia, l\'insidia, e tutto quello che rallegra o affligge gli stolti.',
+ notare:'L\'uomo più potente del mondo scrive per convincere sé stesso ad alzarsi la mattina. Nessuna fonte ufficiale dell\'impero dice qualcosa di lontanamente simile.',
+ fonte:'Marco Aurelio, Colloqui con sé stesso, II 1, II 4, IV 44 — resa in italiano nostra'},
 
 {chi:'Un anonimo di Vindolanda', anno:100, carta:'100', luogo:'Vindolanda, Britannia', ll:[-2.36,54.99],
- dice:'Nel fango di un forte romano vicino al futuro Vallo di Adriano si sono conservate centinaia di tavolette di legno sottile. Non sono letteratura: sono liste di razioni, richieste di calzini e mutande contro il freddo, e l\'invito a una festa di compleanno scritto da una donna a un\'altra — forse il più antico testo in latino di mano femminile che abbiamo.',
- cit:'',
- notare:'La fonte più preziosa dell\'impero romano in Britannia è la spazzatura di un magazzino. Si è conservata perché il terreno era senza ossigeno: la storia che possiamo scrivere dipende da che cosa il caso ha salvato.',
- fonte:'Tavolette di Vindolanda, British Museum'},
+ dice:'Nel fango di un forte romano vicino al futuro Vallo di Adriano si sono conservate centinaia di tavolette di legno sottile. Non sono letteratura: sono liste, richieste, inviti.',
+ passo:'Claudia Severa alla sua Lepidina, salute.\n\nPer il giorno del mio compleanno, il terzo giorno prima delle Idi di settembre, sorella, ti invito calorosamente: fa\' che tu venga, perché renderai la giornata più lieta per me se ci sarai.\n\nSaluta il tuo Cerialis. Il mio Elio e il figlioletto lo salutano.\n\nTi aspetto, sorella. Sta\' bene, sorella, anima mia carissima, come io spero di stare, e addio.\n\n— — —\n\nE da un\'altra tavoletta, la lista di un magazzino: ti ho mandato paia di calzini, due paia di sandali, due paia di mutande.',
+ notare:'Le ultime righe dell\'invito sono di mano diversa dal resto: le ha aggiunte Claudia Severa di suo pugno. È probabilmente il più antico testo in latino scritto da una donna che possediamo.',
+ fonte:'Tavolette di Vindolanda 291 e 346, British Museum — resa in italiano nostra'},
+
+{chi:'Egeria', anno:381, carta:'100', luogo:'Monte Sinai', ll:[33.97,28.54],
+ dice:'Una donna dell\'estremo occidente dell\'impero — forse dalla Galizia — parte da sola per un pellegrinaggio di tre anni in Terrasanta, e scrive tutto alle sue consorelle rimaste a casa.',
+ passo:'Queste montagne si salgono con fatica grandissima, perché non si sale a poco a poco girando in tondo, come si dice a chiocciola, ma si va su diritti, come per un muro, e diritti bisogna scendere da ciascuna di esse, finché non si arriva ai piedi del monte di mezzo, che è propriamente il Sinai.\n\nCosì dunque, per volontà di Cristo nostro Dio e aiutata dalle preghiere dei santi che ci accompagnavano, sebbene con molta fatica, salii: e la fatica fu grande perché non potevo salire a cavallo, ma tutta la salita andava fatta a piedi. E tuttavia quella fatica non si sentiva — e non si sentiva perché il desiderio che avevo, per volontà di Dio, lo vedevo compiersi.',
+ notare:'Descrive il paesaggio e la fatica del corpo, non il significato spirituale: è quello che rende il testo una fonte e non un sermone. Scrive «sorelle», e questo ci dice che a leggerla sarebbe stata una comunità di donne.',
+ fonte:'Egeria, Itinerarium, III 1-2 — resa in italiano nostra'},
+
+{chi:'Sei Shōnagon', anno:1000, carta:'1000', luogo:'Heian-kyō (Kyoto)', ll:[135.77,35.01],
+ dice:'Dama di corte dell\'imperatrice, tiene un quaderno che nasconde sotto il guanciale. Non racconta la storia del Giappone: fa elenchi.',
+ passo:'Cose che fanno battere il cuore. Passerotti che allattano i piccoli. Passare davanti a un luogo dove giocano dei bambini. Coricarsi in una stanza dove è stato bruciato dell\'incenso pregiato. Accorgersi che uno specchio cinese si è appannato. Lavarsi i capelli, truccarsi, indossare abiti profumati: anche se non c\'è nessuno che ti veda, dentro ci si sente felici.\n\nCose che danno fastidio. Un ospite che si dilunga in chiacchiere quando hai fretta. Una pulce che salta sotto le vesti e le fa sussultare. Un cane che abbaia a un uomo venuto di nascosto. Chi arriva in visita e comincia a raccontare una storia lunghissima proprio quando hai sonno. Una zanzara che ronza vicino all\'orecchio, e sai che è piccolissima, eppure il rumore che fa lo senti nel vento.\n\nCose che sembrano lontane pur essendo vicine. Le feste che si celebrano davanti al palazzo. I rapporti fra fratelli che non si vogliono bene.',
+ notare:'La più grande fonte sulla vita quotidiana di una corte è un quaderno privato di appunti, non una cronaca. Le fonti migliori quasi mai sono state scritte per noi.',
+ fonte:'Sei Shōnagon, Makura no sōshi, sezioni 29, 25, 165 — resa in italiano nostra'},
+
+{chi:'Marco Polo', anno:1298, carta:'1000', luogo:'Prigione di Genova', ll:[8.93,44.41],
+ dice:'Fatto prigioniero dai genovesi, detta il racconto dei suoi ventiquattro anni in Asia a un compagno di cella, Rustichello da Pisa, che scriveva romanzi cavallereschi. Il libro nasce da quell\'incontro.',
+ passo:'Sappiate per verità che questa città di Quinsai è la più nobile e la migliore del mondo. In essa vi sono dodicimila ponti di pietra, e sotto la maggior parte di essi potrebbe passare una nave grande, e sotto gli altri navi minori.\n\nVi sono dieci piazze principali, e ciascuna è lunga mezzo miglio per lato. In ogni piazza, tre giorni la settimana, si radunano quarantamila o cinquantamila persone che vi portano tutto ciò che si può desiderare. Vi si trova selvaggina in gran quantità, caprioli, cervi, lepri e conigli, pernici, fagiani, quaglie, galline e anatre in tale abbondanza che non si potrebbe dire.\n\nLe strade sono lastricate di pietra e di mattoni, e così tutte le vie principali della provincia del Mangi, sicché si può cavalcare per tutta la contrada senza infangarsi.\n\nGli abitanti sono uomini pacifici, e non sanno maneggiare le armi né le tengono in casa. Fra loro non si sente mai una lite né un rumore di qualunque genere, e trattano i loro traffici con grandissima lealtà.',
+ notare:'I numeri sono quasi certamente gonfiati, e per secoli questo è bastato a far chiamare il libro «il Milione», cioè un milione di bugie. Ma quasi tutto ciò che descrive — la carta moneta, il carbone che brucia, la posta imperiale — si è poi rivelato esatto.',
+ fonte:'Marco Polo, Il Milione, capp. 152-153 — resa in italiano nostra'},
+
+{chi:'Agnolo di Tura', anno:1348, carta:'1000', luogo:'Siena', ll:[11.33,43.32],
+ dice:'Calzolaio e cronista senese. Scrive della peste nera mentre la sta attraversando, e in una riga sola dice una cosa che nessuna cronaca ufficiale dice.',
+ passo:'E morivano quasi tutti a poco tempo; morivano a centinaia, di dì e di notte, e tutti si gettavano in quelle fosse e si coprivano di terra. E come le fosse erano piene, se ne facevano dell\'altre.\n\nE io Agnolo di Tura, detto il Grasso, seppellii cinque miei figliuoli con le mie mani; e anche furono di quelli che sì male erano coperti di terra che i cani li traevano fuori e mangiavano molti corpi per la città.\n\nE non era chi piangesse per nessuna morte, perché tutti aspettavano la morte. E moriva tanta gente, che tutti credevano che fosse la fine del mondo. E nessuna medicina né altra difesa valeva.',
+ notare:'«Seppellii cinque miei figliuoli con le mie mani»: una riga in mezzo a una cronaca cittadina. Le cifre della peste si conoscono dai registri, ma che cosa volesse dire lo sappiamo solo da frasi come questa.',
+ fonte:'Agnolo di Tura del Grasso, Cronaca senese, anno 1348'},
+
+{chi:'Ibn Battuta', anno:1352, carta:'1492', luogo:'Mali, valle del Niger', ll:[-3.0,16.77],
+ dice:'Partito da Tangeri a ventun anni per il pellegrinaggio alla Mecca, torna a casa dopo trent\'anni e centoventimila chilometri. Attraversa il Sahara con una carovana e arriva nel regno del Mali.',
+ passo:'Fra le loro buone qualità vi è la poca ingiustizia: di tutti i popoli sono quelli che meno la tollerano, e il loro sultano non perdona a nessuno che ne sia colpevole.\n\nVi è poi la sicurezza generale nel loro paese: il viaggiatore non teme né i ladri né i predoni. Fra le loro qualità vi è anche che non si impossessano dei beni dei bianchi che muoiono presso di loro, anche se si tratta di tesori enormi: li lasciano nelle mani di un uomo fidato fra i bianchi finché non venga chi ne ha diritto.\n\nVi è ancora la cura assidua della preghiera e l\'insistenza con cui vi obbligano i figli. Se un uomo non arriva presto in moschea il venerdì non trova posto, tanta è la folla. E ho visto i loro ragazzi incatenati finché non avessero imparato a memoria il Corano.',
+ notare:'Viaggia più lontano di Marco Polo e in Europa non lo conosce quasi nessuno. Che una fonte diventi famosa dipende da chi la copia, la traduce e la insegna — non da quanto vale.',
+ fonte:'Ibn Battuta, Rihla, sul regno del Mali — resa in italiano nostra'},
 
 {chi:'Christine de Pizan', anno:1405, carta:'1492', luogo:'Parigi', ll:[2.35,48.86],
- dice:'Rimasta vedova a venticinque anni con tre figli, si mantiene scrivendo: è la prima donna in Europa a farlo di mestiere. Racconta di essersi seduta a leggere e di aver trovato, in un libro dopo l\'altro, che le donne sono inferiori; e di essersi chiesta come mai tanti uomini dotti dicessero una cosa che il suo stesso vivere smentiva.',
- cit:'',
+ dice:'Rimasta vedova a venticinque anni con tre figli, si mantiene scrivendo: è la prima donna in Europa a farlo di mestiere.',
+ passo:'Un giorno, seduta nel mio studio circondata da libri di ogni genere, secondo l\'abitudine che governa la mia vita, mi capitò fra le mani un piccolo volume che non era mio.\n\nCominciai a scorrerlo, e vidi che trattava, con grande disprezzo, della natura delle donne. Pensai fra me: quanti uomini hanno scritto cose simili, e tutti si accordano nel giudicare le femmine inclini a ogni vizio.\n\nE allora, mentre pensavo a queste cose, mi venne un grande dispiacere e un disprezzo di me stessa e di tutto il mio sesso, come se la natura avesse prodotto dei mostri. E dicevo fra me sospirando: Signore, come può essere? Se non voglio credere che tu abbia fatto una cosa tanto vile, bisogna che io mi rimetta al giudizio di tanti uomini illustri.\n\nMa mentre insistevo in questo pensiero doloroso, guardai a me stessa e ai costumi delle altre donne, e frequentandone molte, principesse, grandi dame, donne di media e piccola condizione, che mi hanno parlato dei loro pensieri più intimi, giudicai in coscienza che quello che dicevano quei libri non era vero.',
  notare:'Il suo argomento è che l\'esperienza diretta vale contro l\'autorità dei libri. Nel Quattrocento è una mossa filosofica radicale, e non la fa un filosofo di professione.',
- fonte:'Christine de Pizan, Le Livre de la Cité des Dames, 1405'},
+ fonte:'Christine de Pizan, Le Livre de la Cité des Dames, I 1 — resa in italiano nostra'},
 
-{chi:'Un fante sull\'Isonzo', anno:1916, carta:'1914', luogo:'Fronte dell\'Isonzo, Gorizia', ll:[13.62,45.94],
- dice:'Le lettere dei soldati italiani passavano dalla censura, e i censori tenevano nota di che cosa la gente scriveva. Nelle lettere e nei diari di trincea tornano sempre le stesse cose: i pidocchi, il pane duro, la neve, il rumore dell\'artiglieria che non lascia dormire, e la richiesta di notizie sul raccolto. La battaglia quasi non compare: compare il corpo.',
- cit:'',
- notare:'Molti erano semianalfabeti e scrivevano come parlavano, in dialetto: quelle lettere sono anche la migliore fonte che abbiamo sull\'italiano parlato del primo Novecento. Una fonte dice sempre più di quello che voleva dire.',
- fonte:'Diari e lettere della Grande Guerra, Archivio diaristico nazionale di Pieve Santo Stefano'},
+{chi:'Cristoforo Colombo', anno:1492, carta:'1492', luogo:'Guanahaní, Bahamas', ll:[-74.48,24.05],
+ dice:'Il giornale di bordo del 12 ottobre registra l\'approdo su un\'isola che gli abitanti chiamano Guanahaní. Il testo originale è perduto: lo conosciamo dalla trascrizione di Bartolomé de las Casas.',
+ passo:'Perché mostrassero molta amicizia verso di noi, e perché conobbi che meglio si sarebbero liberati e convertiti alla nostra santa fede con amore che con la forza, diedi ad alcuni di loro dei berretti rossi e delle collanine di vetro che si mettevano al collo, e molte altre cose di poco valore, delle quali ebbero grandissimo piacere.\n\nPoi venivano a nuoto alle barche delle navi dove noi stavamo, e ci portavano pappagalli e gomitoli di cotone filato e giavellotti, e molte altre cose, e le barattavano con quello che noi davamo loro, come palline di vetro e sonagli. Insomma prendevano tutto e davano tutto quello che avevano di buona voglia.\n\nMa mi parve che fossero gente molto povera di tutto. Andavano tutti nudi come la madre li fece, e anche le donne. Non portano armi né le conoscono, perché mostrai loro delle spade e le prendevano dal taglio, e si ferivano per ignoranza.\n\nDevono essere buoni servitori e di buon ingegno, perché vedo che ripetono presto tutto quello che si dice loro. Con cinquanta uomini si potrebbero soggiogare tutti e far fare loro tutto quello che si volesse.',
+ notare:'Nella stessa pagina c\'è l\'ammirazione e il calcolo di come conquistarli. Non sono due autori diversi: è come funziona uno sguardo che arriva per prendere.',
+ fonte:'Diario di bordo, 12-14 ottobre 1492, nella trascrizione di Las Casas — resa in italiano nostra'},
+
+{chi:'Bernal Díaz del Castillo', anno:1519, carta:'1492', luogo:'Tenochtitlán (Città del Messico)', ll:[-99.13,19.43],
+ dice:'Soldato semplice, scrive da vecchio perché è stufo delle cronache che danno tutto il merito a Cortés. Cinquant\'anni dopo ricorda ancora i nomi dei cavalli.',
+ passo:'E quando vedemmo tante città e villaggi costruiti dentro l\'acqua, e altre grandi popolazioni sulla terraferma, e quella strada diritta e livellata che andava verso Messico, restammo stupiti.\n\nE dicevamo che sembrava alle cose d\'incantesimo che si raccontano nel libro di Amadigi, per via delle grandi torri e templi ed edifici che stavano dentro l\'acqua, e tutti di calcina. E alcuni dei nostri soldati dicevano se quello che vedevano non fosse un sogno.\n\nNon è da meravigliarsi che io lo scriva così, perché c\'è tanto da pensarci sopra che non so come raccontarlo: vedere cose mai udite né viste, e nemmeno sognate, come vedevamo.\n\nOra tutto quello che allora vidi è caduto a terra, perduto, e non è rimasto nulla in piedi.',
+ notare:'Scrive per correggere un altro libro. Quasi tutte le fonti nascono contro qualcosa: sapere contro che cosa è metà del lavoro dello storico. E l\'ultima riga è di chi ha aiutato a distruggere ciò che descrive.',
+ fonte:'Bernal Díaz del Castillo, Historia verdadera, cap. LXXXVII — resa in italiano nostra'},
+
+{chi:'Bartolomé de las Casas', anno:1542, carta:'1492', luogo:'Hispaniola, Antille', ll:[-70.16,18.73],
+ dice:'Arrivato nelle Indie come colono e proprietario di schiavi, a quarant\'anni cambia idea, restituisce gli indios che gli erano assegnati e passa il resto della vita a denunciare ciò che aveva fatto anche lui.',
+ passo:'In queste terre mansuete trovarono gli spagnoli genti tanto miti e pazienti che non è mai esistita al mondo gente più docile, e meno atta a sopportare fatiche, e che più facilmente muoia di malattia.\n\nFra queste greggi mansuete entrarono gli spagnoli come lupi e tigri e leoni crudelissimi affamati da molti giorni. E altro non hanno fatto da quarant\'anni a questa parte, se non straziarle, ucciderle, affliggerle, tormentarle e distruggerle con modi di crudeltà nuovi e vari, quali mai furono visti né uditi né letti.\n\nLa causa per cui i cristiani hanno ucciso e distrutto tante e tali anime è stata solamente per avere oro, e per gonfiarsi di ricchezze in pochissimi giorni.',
+ notare:'È la fonte più citata contro la conquista, e fu usata anche dai nemici della Spagna per costruire una leggenda nera. Una denuncia vera può servire a chi ha altri scopi: saperlo non la rende falsa, ma cambia il modo di leggerla.',
+ fonte:'Bartolomé de las Casas, Brevísima relación de la destrucción de las Indias, 1552 — resa in italiano nostra'},
+
+{chi:'Michel de Montaigne', anno:1580, carta:'1492', luogo:'Bordeaux', ll:[-0.58,44.84],
+ dice:'Ritirato nella sua torre, scrive i Saggi. Ha incontrato a Rouen tre indigeni del Brasile portati in Francia, e ha parlato con loro attraverso un interprete.',
+ passo:'Ora, io trovo che in quella nazione non vi è nulla di barbaro e di selvaggio, per quanto me ne hanno riferito, se non che ognuno chiama barbarie ciò che non rientra nei suoi usi.\n\nEssi sono selvaggi allo stesso modo in cui chiamiamo selvatici i frutti che la natura ha prodotto da sé nel suo corso normale: laddove, in verità, sono quelli che noi abbiamo alterato con la nostra tecnica che dovremmo chiamare piuttosto selvatici.\n\nNon mi sembra dunque eccessivo dire che essi sono barbari rispetto alle regole della ragione, ma non rispetto a noi, che li superiamo in ogni sorta di barbarie. Possiamo ben chiamarli barbari, se guardiamo alle regole della ragione, ma non se guardiamo a noi stessi, che li superiamo in ogni sorta di barbarie.\n\nCredo che sia più barbaro mangiare un uomo vivo che mangiarlo morto.',
+ notare:'L\'ultima frase è rivolta ai francesi, non ai brasiliani: mentre scrive, in Francia si torturano e si bruciano vivi gli avversari religiosi. Il testo sembra parlare di antropofagia e parla delle guerre di religione.',
+ fonte:'Montaigne, Saggi, I 31, «Dei cannibali» — resa in italiano nostra'},
+
+{chi:'Matteo Ricci', anno:1601, carta:'1492', luogo:'Pechino', ll:[116.40,39.90],
+ dice:'Gesuita marchigiano, arriva a Pechino dopo vent\'anni passati a imparare il cinese e i classici confuciani. Porta orologi e carte geografiche.',
+ passo:'La grandezza di questo regno, tanto in estensione quanto in numero di abitanti, è tale che a stento si crederebbe.\n\nE si può dire con verità che quanto è stato scritto dagli scrittori di altri regni intorno alla Cina è poco e per lo più falso, perché nessuno di loro vi è stato, e quello che ne scrissero lo udirono da chi ne aveva sentito parlare.\n\nÈ cosa degna di considerazione che, in un regno di tanta grandezza, e con eserciti tanto numerosi, e potendo con facilità conquistare i regni vicini, né il re né il suo popolo hanno mai pensato a fare guerra fuori dei propri confini, contentandosi di quello che hanno.\n\nDella carta del mondo che io feci stampare si stupirono assai, perché vedevano il loro regno piccolo in confronto a tutto il resto; e per questo, nella seconda edizione, posi la Cina nel mezzo.',
+ notare:'Sposta la Cina al centro della carta per ragioni diplomatiche. Ogni carta geografica mette qualcuno al centro, e non è mai una scelta neutra: nemmeno la nostra.',
+ fonte:'Matteo Ricci, Della entrata della Compagnia di Giesù nella Cina — resa in italiano nostra'},
+
+{chi:'Samuel Pepys', anno:1666, carta:'1492', luogo:'Londra', ll:[-0.09,51.51],
+ dice:'Funzionario dell\'ammiragliato, tiene un diario cifrato per undici anni. Il 2 settembre lo svegliano per dirgli che c\'è un incendio; guarda dalla finestra, giudica che sia lontano e torna a letto.',
+ passo:'2 settembre. Alcune delle nostre cameriere, che si erano alzate tardi per preparare le cose di ieri sera, ci chiamarono verso le tre di notte per dirci che vedevano un grande incendio in città. Mi alzai e andai alla finestra: mi parve abbastanza lontano, e tornai a letto e mi addormentai.\n\nMi vestii e camminai fino alla Torre, e salii su uno dei luoghi alti. Vidi le case in fondo al ponte tutte in fiamme, e un fuoco infinito da questa e da quella parte. Scesi al fiume e presi una barca.\n\nNessuno cercava di spegnerlo: la gente pensava soltanto a salvare le proprie cose e a lasciarle cadere nel fiume o a portarle sulle chiatte. Poveretti, restavano nelle loro case finché il fuoco non li toccava, e allora correvano alle barche.\n\nOsservai i piccioni: erano restii a lasciare le case, e volteggiavano intorno alle finestre e ai balconi finché non si bruciavano le ali e cadevano.\n\n4 settembre. Sir W. Batten, non sapendo come portare via il suo vino, scavò una fossa in giardino e ve lo mise; e io ne approfittai per metterci il mio vino, e il mio formaggio parmigiano, e altre cose.',
+ notare:'Il dettaglio che resta è il formaggio sepolto in giardino. Le fonti private tengono le cose piccole, ed è per quelle che valgono più delle cronache ufficiali.',
+ fonte:'Samuel Pepys, Diario, 2-4 settembre 1666 — resa in italiano nostra'},
+
+{chi:'Olaudah Equiano', anno:1756, carta:'1815', luogo:'Traversata atlantica', ll:[-30.0,10.0],
+ dice:'Rapito da bambino nell\'attuale Nigeria, deportato ai Caraibi, comprerà la propria libertà e diventerà una delle voci dell\'abolizionismo inglese.',
+ passo:'La prima cosa che vidi quando arrivai sulla costa fu il mare, e una nave da carico all\'ancora che aspettava il suo carico. Questo mi riempì di stupore, che si mutò subito in terrore.\n\nQuando fui portato a bordo, alcuni dell\'equipaggio mi palparono per vedere se ero sano, e allora fui persuaso di essere entrato in un mondo di spiriti cattivi e che mi avrebbero ucciso. Il loro colorito, così diverso dal nostro, i lunghi capelli, la lingua che parlavano, tutto era così diverso da quanto avevo visto che mi confermò in quella convinzione.\n\nFui messo sotto coperta, e là ricevetti nelle narici un tale odore come non ne avevo mai sentito in vita mia. Con quel fetore, e con il pianto, mi ammalai a tal punto che non fui capace di mangiare, e non desideravo altro che morire.\n\nDue dei miei compagni di stanchezza, incatenati insieme, riuscirono in qualche modo a passare attraverso le reti e saltarono in mare; un altro li seguì. Ne annegarono due, e l\'equipaggio riuscì a ripescare il terzo, che poi frustò senza pietà per aver preferito la morte alla schiavitù.\n\nHo domandato più volte agli uomini bianchi come funzionasse la nave, e mi dissero che c\'era una specie di magia; e non essendo abituato all\'acqua, credetti loro.',
+ notare:'Per due secoli la tratta è stata raccontata quasi solo da chi la organizzava. Questa è una delle rarissime testimonianze di chi era nella stiva, ed è stata pubblicata perché serviva alla causa abolizionista.',
+ fonte:'Olaudah Equiano, The Interesting Narrative, cap. II, 1789 — resa in italiano nostra'},
+
+{chi:'Adrien Bourgogne', anno:1812, carta:'1815', luogo:'Ritirata di Russia, presso Smolensk', ll:[32.05,54.78],
+ dice:'Sergente della Guardia imperiale, sopravvive alla ritirata da Mosca e scrive le memorie molti anni dopo, dichiarando di aver tenuto un taccuino durante la marcia.',
+ passo:'La neve cadeva a larghe falde: si perdeva di vista chi camminava a dieci passi. Bisognava marciare in mezzo a quei fiocchi con il vento in faccia, e coloro che si fermavano un istante non si rialzavano più.\n\nMolti, per riscaldarsi, si avvicinavano ai fuochi che trovavano lungo la strada; ma il calore, dopo il gelo, li faceva morire quasi subito. Ne ho visti parecchi cadere così, addormentati, e non svegliarsi.\n\nLa disciplina era finita. Uomini che avevano fatto quindici campagne e non avrebbero mai rubato un soldo si battevano per un pugno di farina. Ho visto un ufficiale contendere a un soldato una crosta di pane, e non provai indignazione: avrei fatto lo stesso.\n\nUna sera trovai il mio zaino troppo pesante e cominciai a vuotarlo. Buttai via un vestito da donna preso a Mosca, poi un\'immagine d\'argento, poi altre cose che avevo portato per settecento leghe. Tenni solo la borraccia e il taccuino su cui scrivo.',
+ notare:'Le memorie sono scritte anni dopo, e chi le scrive è un sopravvissuto: gli altri non hanno lasciato niente. È il problema che si ripete in ogni fonte di guerra — raccontano sempre quelli che ce l\'hanno fatta.',
+ fonte:'Adrien Bourgogne, Mémoires du sergent Bourgogne — resa in italiano nostra'},
+
+{chi:'Frederick Douglass', anno:1845, carta:'1815', luogo:'Maryland, Stati Uniti', ll:[-76.64,39.04],
+ dice:'Nato schiavo, impara a leggere di nascosto e fugge a vent\'anni. Scrive la sua storia con nomi e luoghi veri, sapendo che questo lo espone alla cattura.',
+ passo:'Molto presto dopo che fui andato a vivere presso il signor e la signora Auld, ella cominciò con grande gentilezza a insegnarmi l\'alfabeto. Arrivato che fui a compitare parole di tre o quattro lettere, il signor Auld se ne accorse e le proibì di continuare, dicendole che era illegale e pericoloso insegnare a leggere a uno schiavo.\n\nDisse: se dài a un negro un dito, si prenderà tutto il braccio. Imparare a leggere lo renderebbe per sempre inadatto a fare lo schiavo. Diventerebbe subito indocile e senza valore per il padrone, e non gli porterebbe alcun bene, ma molto male: lo renderebbe scontento e infelice.\n\nQueste parole affondarono nel mio cuore e vi risvegliarono un pensiero che vi dormiva. Da quel momento capii la strada che porta dalla schiavitù alla libertà.\n\nQuello che il mio padrone temeva di più, io lo desideravo di più; ciò che egli amava, io lo odiavo. E ciò che per lui era un male grandissimo, da evitare con la massima cura, era per me un bene grandissimo, da cercare con la massima diligenza.',
+ notare:'Il padrone gli spiega, senza volerlo, perché leggere sia importante. Douglass costruisce tutto il libro su quel rovesciamento: le ragioni dell\'oppressore diventano le istruzioni per uscirne.',
+ fonte:'Frederick Douglass, Narrative of the Life of Frederick Douglass, cap. VI, 1845 — resa in italiano nostra'},
 
 {chi:'Un emigrante a Ellis Island', anno:1905, carta:'1914', luogo:'New York', ll:[-74.04,40.70],
- dice:'Fra il 1880 e il 1915 lasciano l\'Italia più di tredici milioni di persone. Nelle lettere che rimandano a casa ricorrono la visita medica temuta più di ogni altra cosa — bastava un\'infiammazione agli occhi per essere rispediti indietro — il nome storpiato dall\'impiegato, e la raccomandazione a non credere a chi dice che qui si raccoglie l\'oro per strada.',
- cit:'',
- notare:'Le lettere degli emigranti erano lette ad alta voce in paese e servivano a decidere se partire. Non erano private: erano documenti pubblici travestiti da posta.',
- fonte:'Lettere di emigranti italiani, raccolte in vari archivi (Altreitalie, Museo dell\'emigrazione)'}
+ dice:'Fra il 1880 e il 1915 lasciano l\'Italia più di tredici milioni di persone. Le lettere che rimandano a casa venivano lette ad alta voce in paese, e servivano a decidere se partire.',
+ passo:'Caro fratello, ti scrivo per farti sapere che sono arrivato dopo ventitré giorni di mare. La visita del dottore è la cosa che fa più paura di tutte: ti guardano gli occhi con un ferro, e se hai il male agli occhi ti rimandano indietro, e ci sono quelli che hanno venduto tutto e tornano come sono partiti.\n\nQui il lavoro c\'è ma non è come dicono al paese. Ho fatto lo scavo per la ferrovia dieci ore al giorno, e il padrone italiano che ci ha presi si tiene una parte della paga. Chi ti dice che qui si raccoglie l\'oro per strada ti dice una bugia; però mangio carne due volte la settimana, cosa che a casa non ho mai fatto.\n\nDi\' alla mamma che non stia in pensiero, e che il nome me l\'hanno scritto storto sul foglio e adesso mi chiamano in un altro modo, ma sono sempre io.',
+ notare:'Le lettere degli emigranti non erano private: erano documenti pubblici travestiti da posta. Chi scriveva sapeva che sarebbero state lette in piazza, e questo cambia che cosa raccontava e che cosa taceva.',
+ fonte:'Ricostruzione fondata sulle lettere raccolte negli archivi dell\'emigrazione italiana (Altreitalie, Museo dell\'emigrazione di Gualdo Tadino)'},
+
+{chi:'Un fante sull\'Isonzo', anno:1916, carta:'1914', luogo:'Fronte dell\'Isonzo, Gorizia', ll:[13.62,45.94],
+ dice:'Le lettere dei soldati italiani passavano dalla censura, e i censori tenevano nota di quello che la gente scriveva. Nei diari di trincea tornano sempre le stesse cose.',
+ passo:'Cara moglie, ti faccio sapere che sto bene come spero di te e di tutti i nostri cari.\n\nQui è venuta la neve e nella trincea c\'è l\'acqua alta un palmo. I pidocchi non ci lasciano dormire più del cannone. Il pane arriva duro come la pietra e bisogna romperlo col calcio del fucile.\n\nNon ti sto a dire altro di come si sta perché tanto sai come è. Dimmi piuttosto se avete fatto la vendemmia e come è andata, e se il campo di sotto lo avete seminato. Ho pensato tutto il giorno a quel campo.\n\nSe viene qualcuno del comune per il sussidio fatti dare quello che spetta e non ti far mettere in mezzo. Baci ai bambini e a te. Tuo marito che ti pensa sempre.',
+ notare:'La battaglia quasi non compare: compare il corpo, e compare il campo da seminare. Molti erano semianalfabeti e scrivevano come parlavano: quelle lettere sono anche la migliore fonte sull\'italiano parlato del primo Novecento.',
+ fonte:'Ricostruzione fondata sui diari e sulle lettere dell\'Archivio diaristico nazionale di Pieve Santo Stefano'}
 ];
+
 
 let carta=null, epoca='1492', scelta=0, immagini={};
 const cv=document.getElementById('carta'), ctx=cv.getContext('2d');
@@ -307,9 +373,10 @@ function disegnaTutto(){
   const f=FONTI[scelta];
   document.getElementById('scheda').innerHTML=`
     <div class="chi">${esc(f.chi)}</div>
-    <div class="dove">${f.anno} · ${esc(f.luogo)}</div>
+    <div class="dove">${f.anno<0?(-f.anno)+' a.C.':f.anno} · ${esc(f.luogo)}</div>
     <div class="dice">${esc(f.dice)}</div>
-    ${f.cit?`<div class="cit">${esc(f.cit)}</div>`:''}
+    ${f.passo?`<div class="etp">Il testo</div><div class="passo">${
+        f.passo.split('\n\n').map(x=>'<p>'+esc(x.trim())+'</p>').join('')}</div>`:''}
     <div class="notare"><b>Che cosa notare</b>${esc(f.notare)}</div>
     <div class="fonte">Fonte: ${esc(f.fonte)}</div>`;
   disegnaCarta();
