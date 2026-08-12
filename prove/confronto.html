@@ -57,7 +57,40 @@ h1{font-family:'Cormorant Garamond',Georgia,serif;font-size:2.4rem;font-weight:4
   border:1px solid rgba(45,90,39,.2);background:#fff;color:#2d5a27;transition:all .16s}
 .mini:hover{background:#2d5a27;color:#fff;border-color:#2d5a27}
 .barra{display:flex;gap:.5rem;flex-wrap:wrap;margin-top:.7rem}
+/* l'interruttore fra i due modi */
+.tagli{display:flex;gap:.45rem;margin:1.3rem 0 .3rem;padding:.3rem;border-radius:100px;
+  background:#eef2ea;border:1px solid rgba(45,90,39,.12);width:fit-content;max-width:100%;flex-wrap:wrap}
+.tg{font:inherit;font-size:.82rem;padding:.55rem 1.15rem;border-radius:100px;cursor:pointer;
+  border:0;background:transparent;color:#5a6b58;font-weight:600;transition:all .16s;white-space:nowrap}
+.tg:hover{color:#2d5a27}
+.tg.attivo{background:#2d5a27;color:#fff;box-shadow:0 1px 3px rgba(28,43,26,.16)}
+
+/* la rassegna: tutte le domande in cui i due compaiono insieme */
+.riga{border:1px solid rgba(45,90,39,.14);border-radius:12px;background:#fff;margin-bottom:.7rem;
+  padding:.95rem 1.15rem;border-left:3px solid #8a9e87}
+.riga.diverso{border-left-color:#7a4b8c}
+.riga.uguale{border-left-color:#9a7c2e;background:#fdfbf4}
+.riga .qd{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.22rem;font-weight:600;
+  color:#1c2b1a;margin-bottom:.6rem}
+.due{display:grid;grid-template-columns:1fr 1fr;gap:.7rem}
+.mezzo{font-size:.84rem;line-height:1.65;color:#3d4a3b}
+.mezzo .q{font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700;
+  display:block;margin-bottom:.25rem}
+.mezzo .pz{font-weight:600;color:#1c2b1a}
+.esito{margin-top:.65rem;padding-top:.55rem;border-top:1px dashed rgba(45,90,39,.2);
+  font-size:.82rem;line-height:1.65;color:#5a6b58}
+.esito b{font-weight:600;color:#8a6a1e}
+.somma{margin:1.1rem 0;padding:1.05rem 1.25rem;border-radius:12px;background:#fff;
+  border:1px solid rgba(45,90,39,.14);border-left:5px solid #2d5a27}
+.somma h3{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.35rem;font-weight:600;
+  color:#2d5a27;margin-bottom:.4rem}
+.somma p{font-size:.86rem;line-height:1.75;color:#3d4a3b}
+.vuoto{padding:1.1rem 1.25rem;border-radius:12px;background:#f6f3ec;font-size:.86rem;
+  line-height:1.7;color:#5a6b58}
+
 @media(max-width:680px){
+  .due{grid-template-columns:1fr}
+  .tagli{width:100%}.tg{flex:1;text-align:center}
   .w{padding:1.4rem 1rem 3rem}h1{font-size:1.9rem}
   .scelte,.confronto{grid-template-columns:1fr}
 }
@@ -67,13 +100,21 @@ h1{font-family:'Cormorant Garamond',Georgia,serif;font-size:2.4rem;font-weight:4
 <div class="w">
   <div class="k">Idearca · Prove</div>
   <h1>Confrontatore di filosofi</h1>
-  <p class="sub">La stessa domanda, due risposte, una accanto all'altra. Serve a vedere una
+  <p class="sub">Dodici domande, trentun filosofi, due modi di incrociarli. Serve a vedere una
   cosa che nei manuali si perde: <strong>due filosofi non discordano su tutto</strong>. Di
   solito condividono quasi ogni premessa e si separano in un punto solo — trovare quel punto
-  è capire tutti e due.</p>
+  è capire tutti e due. E capita l'opposto: che diano la stessa risposta partendo da premesse
+  che non stanno insieme, e allora l'accordo è più interessante del disaccordo.</p>
 
-  <div class="et">La domanda</div>
-  <div class="dom" id="domande"></div>
+  <div class="tagli">
+    <button class="tg" id="tg-una" onclick="cambiaModo('una')">Una domanda, due filosofi</button>
+    <button class="tg" id="tg-tutte" onclick="cambiaModo('tutte')">Due filosofi, tutte le domande</button>
+  </div>
+
+  <div id="modo-una">
+    <div class="et">La domanda</div>
+    <div class="dom" id="domande"></div>
+  </div>
 
   <div class="et">I due che rispondono</div>
   <div class="scelte">
@@ -87,8 +128,10 @@ h1{font-family:'Cormorant Garamond',Georgia,serif;font-size:2.4rem;font-weight:4
 
   <div class="confronto" id="confronto"></div>
   <div class="perno" id="perno"></div>
+  <div id="rassegna"></div>
 </div>
 
+<script src="confronto-dati.js"></script>
 <script>
 /* ══════════════════════════════════════════════════════════
    IL CONFRONTATORE
@@ -100,97 +143,28 @@ h1{font-family:'Cormorant Garamond',Georgia,serif;font-size:2.4rem;font-weight:4
    per ragioni incompatibili: è il caso più istruttivo di tutti.
    ══════════════════════════════════════════════════════════ */
 
-const DOMANDE=[
-{
- k:'anima', q:'L\'anima sopravvive al corpo?',
- r:{
-  'Platone':{a:'427-347 a.C.', pos:'Sì', f:'Il corpo è la tomba dell\'anima.',
-   d:'L\'anima preesiste alla nascita e continua dopo la morte. Il corpo è un impedimento: la filosofia è un esercizio di morte, cioè di separazione.',
-   nodo:'L\'anima è una sostanza a sé, che si trova nel corpo come un prigioniero in una cella.'},
-  'Aristotele':{a:'384-322 a.C.', pos:'No', f:'L\'anima è la forma del corpo vivente.',
-   d:'Chiedere se anima e corpo siano separabili è come chiedere se lo siano la cera e l\'impronta. Sciolto il composto, non resta l\'individuo.',
-   nodo:'L\'anima non è una cosa ma una funzione: il modo in cui questo corpo è vivo.'},
-  'Tommaso d\'Aquino':{a:'1225-1274', pos:'Sì', f:'Forma sostanziale, e insieme sussistente.',
-   d:'Prende da Aristotele l\'anima come forma, ma osserva che l\'intendere non usa organi: perciò quell\'operazione, e con essa l\'anima, può sussistere separata. Separata però è incompleta, e attende il corpo.',
-   nodo:'Un\'operazione che non dipende dalla materia prova un\'anima che non dipende dalla materia.'},
-  'Cartesio':{a:'1596-1650', pos:'Sì', f:'Posso dubitare del corpo, non del pensiero.',
-   d:'Ciò che posso concepire distintamente separato, è separato. Penso me stesso senza estensione: dunque sono una cosa pensante, e il corpo è altro da me.',
-   nodo:'Ciò che si concepisce chiaramente separato può esistere separato: il criterio è nella mente, non nell\'esperienza.'},
-  'Hume':{a:'1711-1776', pos:'No', f:'Entro in me stesso e non trovo mai me stesso.',
-   d:'Trovo un caldo, un freddo, un dolore: mai l\'io che li avrebbe. Se non c\'è un io ora, non c\'è nulla che possa sopravvivere dopo.',
-   nodo:'Vale solo ciò che si trova nell\'esperienza, e nell\'esperienza non si trova nessun soggetto.'},
-  'Kant':{a:'1724-1804', pos:'Non si può sapere', f:'L\'io penso non è un oggetto che conosco.',
-   d:'Che ogni rappresentazione sia mia è una condizione formale del conoscere. Ricavarne che io sia una sostanza semplice e immortale è un paralogismo: si scambia una funzione per una cosa.',
-   nodo:'Si conosce solo ciò che può darsi nell\'esperienza, e l\'io non vi si dà mai come oggetto.'}
- }},
-{
- k:'giustizia', q:'Che cos\'è la giustizia?',
- r:{
-  'Platone':{a:'427-347 a.C.', pos:'Un ordine che non decidiamo noi', f:'Fare la propria parte e non impicciarsi delle altre.',
-   d:'Nella città come nell\'anima, giustizia è l\'ordine in cui ogni parte fa il suo e comanda la migliore. Non è una convenzione: è una struttura, e si può sbagliare a stabilirla.',
-   nodo:'C\'è un ordine giusto che esiste indipendentemente da ciò che gli uomini decidono.'},
-  'Aristotele':{a:'384-322 a.C.', pos:'Un ordine che non decidiamo noi', f:'Ai pari cose pari, ai diversi cose diverse.',
-   d:'La giustizia distributiva ripartisce onori e beni secondo il merito; quella correttiva ristabilisce l\'equilibrio rotto da un torto, senza guardare a chi sia stato. E c\'è l\'equità, che corregge la legge dove è troppo generale.',
-   nodo:'Giustizia è proporzione: il difficile non è il principio, è stabilire secondo quale merito.'},
-  'Hobbes':{a:'1588-1679', pos:'Una convenzione fra uomini', f:'Dove non c\'è potere comune, non c\'è ingiustizia.',
-   d:'Prima del patto non esistono giusto e ingiusto: sono qualità del discorso, non degli uomini soli. Giusto è tenere i patti, e i patti valgono solo se c\'è una spada che li fa valere.',
-   nodo:'La giustizia non precede il potere: nasce con esso.'},
-  'Rousseau':{a:'1712-1778', pos:'Una convenzione fra uomini', f:'Obbedire alla legge che ci si è prescritti.',
-   d:'La legge è giusta quando viene da tutti e si applica a tutti. Non è la volontà di tutti, che è la somma degli interessi privati: è quello che resta quando le differenze si compensano.',
-   nodo:'Giusto è ciò che il corpo intero vuole per il corpo intero, e nessuno può volerlo per lui.'},
-  'Kant':{a:'1724-1804', pos:'Una forma valida per chiunque', f:'Agisci come se la tua massima dovesse farsi legge.',
-   d:'Una condotta è giusta se la sua regola può essere voluta da chiunque senza contraddirsi. Le persone vanno trattate sempre anche come fine, mai soltanto come mezzo.',
-   nodo:'Il criterio è formale: non guarda alle conseguenze ma alla forma della regola.'},
-  'Hegel':{a:'1770-1831', pos:'Un ordine storico concreto', f:'La libertà che ha preso corpo nelle istituzioni.',
-   d:'Il dovere astratto di Kant non dice ancora nulla di che cosa fare: si riempie solo dentro una famiglia, una società, uno Stato concreti. Giustizia è quando quelle istituzioni sono all\'altezza della libertà.',
-   nodo:'Nessun criterio astratto basta: il giusto si dà solo dentro una comunità storica determinata.'}
- }},
-{
- k:'certezza', q:'Si può conoscere qualcosa con certezza?',
- r:{
-  'Cartesio':{a:'1596-1650', pos:'Sì', f:'Penso, dunque sono.',
-   d:'Dubito di tutto finché trovo qualcosa di cui non posso dubitare: che sto dubitando. Da quel punto fermo, e dal criterio di chiarezza che vi si legge, si ricostruisce il resto.',
-   nodo:'La certezza si trova dentro, e da lì si esce verso il mondo.'},
-  'Hume':{a:'1711-1776', pos:'No, non sui fatti', f:'Che domani sorga il sole non è necessario.',
-   d:'Le verità certe riguardano relazioni fra idee e non dicono nulla del mondo. Tutto ciò che riguarda i fatti riposa sull\'abitudine: abbiamo visto mille volte, e ci aspettiamo la milleunesima. Non è una prova.',
-   nodo:'La necessità non si vede mai: la mettiamo noi, per abitudine.'},
-  'Kant':{a:'1724-1804', pos:'Solo entro l\'esperienza', f:'L\'oggetto si regola sul pensiero.',
-   d:'Spazio, tempo e categorie sono le nostre condizioni: valgono necessariamente per tutto ciò che possiamo incontrare, perché siamo noi a metterle. Perciò ci sono verità necessarie sull\'esperienza, e nessuna sulla cosa in sé.',
-   nodo:'Si può essere certi di ciò che noi stessi abbiamo messo nell\'oggetto — e di nient\'altro.'},
-  'Hegel':{a:'1770-1831', pos:'Sì', f:'Il vero è l\'intero.',
-   d:'Nessuna proposizione isolata è vera: lo diventa nel posto che occupa nel percorso. La certezza immediata del «questo, qui, ora» è la più povera di tutte, e si dissolve appena la si dice.',
-   nodo:'La verità non è un punto di partenza ma un risultato, e comprende gli errori attraversati.'},
-  'Nietzsche':{a:'1844-1900', pos:'No, non sui fatti', f:'Non ci sono fatti, solo interpretazioni.',
-   d:'Le verità sono metafore di cui si è dimenticata l\'origine. La domanda seria non è se una cosa sia vera, ma perché si abbia tanto bisogno che lo sia, e a chi giovi.',
-   nodo:'Dietro ogni pretesa di verità c\'è una volontà: la si può ricostruire storicamente.'}
- }},
-{
- k:'stato', q:'A che serve lo Stato?',
- r:{
-  'Aristotele':{a:'384-322 a.C.', pos:'È una comunità naturale', f:'Nasce per vivere, esiste per vivere bene.',
-   d:'La polis non è un\'invenzione utile: viene prima dell\'individuo come il tutto viene prima della parte. Fuori di essa si è o bestie o dèi.',
-   nodo:'La comunità politica è naturale: non va giustificata, va fatta bene.'},
-  'Hobbes':{a:'1588-1679', pos:'È una costruzione volontaria', f:'Fuori, la vita è solitaria, misera, brutale e breve.',
-   d:'Nello stato di natura ognuno ha diritto a tutto, e perciò nessuno ha nulla al sicuro. Si cede tutto il potere a un sovrano: assoluto, perché un potere diviso è già guerra civile.',
-   nodo:'L\'individuo viene prima della comunità, e la comunità è un artificio che lo protegge.'},
-  'Locke':{a:'1632-1704', pos:'È una costruzione volontaria', f:'Il potere è un mandato, e i mandati si revocano.',
-   d:'Vita, libertà e proprietà esistono prima dello Stato, solo mal difese. Si entra nella società per tutelarle: dunque il potere è limitato a quello scopo, e tradendolo si scioglie.',
-   nodo:'I diritti precedono lo Stato, e perciò lo misurano.'},
-  'Rousseau':{a:'1712-1778', pos:'È una costruzione volontaria', f:'Ciascuno si dà a tutti e quindi a nessuno.',
-   d:'Non si cede il potere a un terzo: lo si tiene tutti insieme. La sovranità sta nel popolo, non si aliena e non si rappresenta.',
-   nodo:'La libertà non è assenza di legge ma coincidenza fra chi obbedisce e chi comanda.'},
-  'Kant':{a:'1724-1804', pos:'È una costruzione volontaria', f:'Una costituzione buona anche per un popolo di diavoli.',
-   d:'Lo Stato di diritto non chiede virtù: chiede un congegno in cui le spinte egoistiche si bilancino. Il compito non finisce dentro i confini: la pace fra Stati è un dovere.',
-   nodo:'Le istituzioni devono funzionare a prescindere dalla bontà di chi le abita.'},
-  'Hegel':{a:'1770-1831', pos:'È una comunità naturale', f:'Lo Stato non è la somma degli individui.',
-   d:'L\'individuo isolato che stipula il patto non è mai esistito: si è figli, allievi e cittadini prima di poter scegliere. Lo Stato è il luogo dove la libertà smette di essere un\'idea.',
-   nodo:'Non c\'è nessuno stato di natura: si è sempre già dentro istituzioni che ci hanno formati.'}
- }}
-];
 
-let domanda=DOMANDE[0], a='', b='';
+let domanda=DOMANDE[0], a='', b='', modo='una';
 
-function nomi(){ return Object.keys(domanda.r); }
+/* Nel modo «una domanda» i nomi disponibili sono quelli che
+   rispondono a quella domanda. Nel modo «tutte» sono tutti i
+   filosofi del corpus, perché la coppia va scelta prima di
+   sapere su che cosa si incontreranno. */
+const TUTTI = [...new Set(DOMANDE.flatMap(d=>Object.keys(d.r)))]
+  .sort((x,y)=>x.localeCompare(y,'it'));
+
+function nomi(){ return modo==='tutte' ? TUTTI : Object.keys(domanda.r); }
+
+function cambiaModo(m){
+  modo=m;
+  document.getElementById('tg-una').classList.toggle('attivo', m==='una');
+  document.getElementById('tg-tutte').classList.toggle('attivo', m==='tutte');
+  document.getElementById('modo-una').style.display = m==='una'?'':'none';
+  ['confronto','perno'].forEach(x=>
+    document.getElementById(x).style.display = m==='una'?'':'none');
+  document.getElementById('rassegna').style.display = m==='tutte'?'':'none';
+  imponi();
+}
 
 /* Quando è il codice a decidere la coppia (non l'utente col menu),
    i menu vanno svuotati prima: altrimenti disegna() legge la scelta
@@ -205,9 +179,21 @@ function scegliDomanda(k){
   const n=nomi(); a=n[0]; b=n[1];
   imponi();
 }
+function vaiA(x){ b=x; imponi(); }
 function scambia(){ const t=a; a=b; b=t; imponi(); }
 function sorteggia(){
   const n=nomi().slice();
+  if(modo==='tutte'){
+    /* Su trentuno autori la maggior parte delle coppie non si
+       incontra mai: sorteggiarne una a caso darebbe quasi sempre
+       una schermata vuota. Si sorteggia fra le coppie che
+       esistono davvero. */
+    const coppie=[];
+    for(let i=0;i<n.length;i++) for(let j=i+1;j<n.length;j++)
+      if(DOMANDE.some(d=>d.r[n[i]]&&d.r[n[j]])) coppie.push([n[i],n[j]]);
+    const c=coppie[Math.floor(Math.random()*coppie.length)];
+    a=c[0]; b=c[1]; imponi(); return;
+  }
   const i=Math.floor(Math.random()*n.length); a=n.splice(i,1)[0];
   b=n[Math.floor(Math.random()*n.length)];
   imponi();
@@ -230,6 +216,8 @@ function disegna(){
   const opz = sel => n.map(x=>`<option${x===sel?' selected':''}>${x}</option>`).join('');
   document.getElementById('uno').innerHTML=opz(a);
   document.getElementById('due').innerHTML=opz(b);
+
+  if(modo==='tutte'){ disegnaRassegna(); return; }
 
   const A=domanda.r[a], B=domanda.r[b];
   const col=(nome,v,c)=>`<div class="col" style="--c:${c}">
@@ -270,6 +258,56 @@ function disegna(){
    maiuscola iniziale va tolta, il punto finale pure */
 const scorcia = t => t.charAt(0).toLowerCase()+t.slice(1).replace(/\.$/,'')+'.';
 
+/* ── la rassegna ──────────────────────────────────────────
+   Il conto in fondo è la parte che serve: due filosofi che si
+   incontrano su otto domande e concordano su sei sono una
+   cosa; due che concordano su zero sono un'altra, e il numero
+   lo dice prima di qualunque commento. */
+function disegnaRassegna(){
+  const box=document.getElementById('rassegna');
+  if(a===b){
+    box.innerHTML='<div class="vuoto">È lo stesso filosofo. Scegline due diversi: '
+      +'il confronto serve a trovare dove due strade si dividono.</div>';
+    return;
+  }
+  const insieme=DOMANDE.filter(d=>d.r[a]&&d.r[b]);
+  if(!insieme.length){
+    const conA=TUTTI.filter(x=>x!==a && DOMANDE.some(d=>d.r[a]&&d.r[x]));
+    box.innerHTML='<div class="vuoto"><b>'+a+'</b> e <b>'+b+'</b> non compaiono mai nella stessa '
+      +'domanda: sono due autori che qui lavorano su terreni diversi.'
+      + (conA.length ? '<br><br><b>'+a+'</b> si incontra invece con: '
+          + conA.map(x=>'<button class="mini" onclick="vaiA('+JSON.stringify(x).replace(/"/g,'&quot;')
+              +')">'+x+'</button>').join(' ')
+        : '')
+      +'</div>';
+    return;
+  }
+  const uguali=insieme.filter(d=>d.r[a].pos===d.r[b].pos);
+  box.innerHTML =
+    '<div class="somma"><h3>'+a+' e '+b+'</h3>'
+    + '<p>Si incontrano su <b>'+insieme.length+'</b> domand'+(insieme.length===1?'a':'e')
+    + ' di '+DOMANDE.length+'. Danno la stessa risposta di fondo in <b>'+uguali.length+'</b> cas'
+    + (uguali.length===1?'o':'i')+'.'
+    + (uguali.length ? ' Nei riquadri dorati vale la pena guardare i due «su che cosa si regge»: '
+        +'la stessa tesi può poggiare su premesse che non stanno insieme.' : '')
+    + '</p></div>'
+    + insieme.map(d=>{
+        const A=d.r[a], B=d.r[b], pari=A.pos===B.pos;
+        const mezzo=(nome,v,c)=>'<div class="mezzo"><span class="q" style="color:'+c+'">'+nome+'</span>'
+          +'<span class="pz">'+v.pos+'.</span> «'+v.f+'»</div>';
+        return '<div class="riga '+(pari?'uguale':'diverso')+'">'
+          + '<div class="qd">'+d.q+'</div>'
+          + '<div class="due">'+mezzo(a,A,'#2d5a27')+mezzo(b,B,'#7a4b8c')+'</div>'
+          + '<div class="esito">'
+          + (pari ? '<b>Stessa risposta, ragioni diverse.</b> '+a+' ci arriva perché '+scorcia(A.nodo)
+                    +' '+b+' perché '+scorcia(B.nodo)
+                  : '<b>Si dividono qui.</b> '+a+' parte da questo: '+scorcia(A.nodo)
+                    +' '+b+' da questo: '+scorcia(B.nodo))
+          + '</div></div>';
+      }).join('');
+}
+
+cambiaModo('una');
 scegliDomanda(DOMANDE[0].k);
 </script>
 </body>
