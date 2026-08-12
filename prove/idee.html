@@ -3,34 +3,51 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Linea del tempo delle idee — Idearca</title>
+<title>Linea del tempo — Idearca</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:'Jost',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
   background:#faf8f3;color:#1c2b1a;font-weight:300;-webkit-font-smoothing:antialiased}
-.w{max-width:900px;margin:0 auto;padding:2rem 1.5rem 4rem}
+.w{max-width:1020px;margin:0 auto;padding:2rem 1.5rem 4rem}
 .k{font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:#8a9e87;font-weight:600}
 h1{font-family:'Cormorant Garamond',Georgia,serif;font-size:2.4rem;font-weight:400;margin:.3rem 0 .5rem}
-.sub{font-size:.92rem;line-height:1.7;color:#5a6b58;max-width:64ch}
+.sub{font-size:.92rem;line-height:1.7;color:#5a6b58;max-width:66ch}
 .et{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:#9a7c2e;
-  font-weight:700;margin:1.9rem 0 .8rem;display:flex;align-items:center;gap:.6rem}
+  font-weight:700;margin:1.8rem 0 .8rem;display:flex;align-items:center;gap:.6rem}
 .et::after{content:'';flex:1;height:1px;background:rgba(45,90,39,.13)}
 
-.parole{display:flex;gap:.5rem;flex-wrap:wrap}
-.pa{font:inherit;font-size:.8rem;padding:.5rem 1.15rem;border-radius:100px;cursor:pointer;
+/* ── il cambio di taglio ───────────────────────────────
+   Due modi di guardare la stessa materia. Il bottone non è
+   un filtro: cambia la domanda che la pagina fa.           */
+.tagli{display:flex;gap:.45rem;margin-top:1.3rem;padding:.3rem;border-radius:100px;
+  background:#eef2ea;border:1px solid rgba(45,90,39,.12);width:fit-content;max-width:100%;flex-wrap:wrap}
+.tg{font:inherit;font-size:.82rem;padding:.55rem 1.15rem;border-radius:100px;cursor:pointer;
+  border:0;background:transparent;color:#5a6b58;font-weight:600;transition:all .16s;white-space:nowrap}
+.tg:hover{color:#2d5a27}
+.tg.attivo{background:#2d5a27;color:#fff;box-shadow:0 1px 3px rgba(28,43,26,.16)}
+.spiega{font-size:.82rem;line-height:1.7;color:#5a6b58;max-width:70ch;margin-top:.7rem}
+
+.vista{display:none}
+.vista.viva{display:block}
+
+/* ── vista diacronica: una parola nel tempo ───────────── */
+.parole{display:flex;gap:.45rem;flex-wrap:wrap}
+.pa{font:inherit;font-size:.79rem;padding:.45rem 1.05rem;border-radius:100px;cursor:pointer;
   border:1.5px solid rgba(45,90,39,.2);background:#fff;color:#2d5a27;transition:all .16s;font-weight:500}
 .pa:hover{border-color:#2d5a27}
 .pa.attiva{background:#2d5a27;color:#fff;border-color:#2d5a27}
+.pa .fam{font-size:.6rem;opacity:.6;margin-left:.35rem;letter-spacing:.06em}
 
-.dom{margin:1.2rem 0 .4rem;padding:1rem 1.2rem;border-left:3px solid #9a7c2e;
+.dom-p{margin:1.2rem 0 .4rem;padding:1rem 1.2rem;border-left:3px solid #9a7c2e;
   background:#f6f3ec;border-radius:0 10px 10px 0;font-size:.9rem;line-height:1.7;color:#5a6b58}
-.dom b{color:#8a6a1e;font-weight:600}
+.dom-p b{color:#8a6a1e;font-weight:600}
 
-.filtro{display:flex;gap:.5rem;align-items:center;margin:1rem 0 .2rem;font-size:.78rem;color:#5a6b58}
+.filtro{display:flex;gap:1.1rem;align-items:center;margin:1rem 0 .2rem;font-size:.78rem;
+  color:#5a6b58;flex-wrap:wrap}
 .filtro label{display:flex;align-items:center;gap:.4rem;cursor:pointer}
 input[type=checkbox]{accent-color:#2d5a27;width:15px;height:15px;cursor:pointer}
+.nota{font-size:.78rem;line-height:1.65;color:#8a9e87;margin-top:.5rem;max-width:70ch}
 
-/* la linea: verticale, che sul telefono si legge come sul monitor */
 .linea{position:relative;margin-top:1rem;padding-left:2.1rem}
 .linea::before{content:'';position:absolute;left:.62rem;top:.6rem;bottom:.6rem;width:2px;
   background:linear-gradient(#dcd8cd,#c8d2c5)}
@@ -43,7 +60,7 @@ input[type=checkbox]{accent-color:#2d5a27;width:15px;height:15px;cursor:pointer}
 .voce.salto .card{border-left-color:#9a7c2e;background:#fdfbf4}
 .cap{display:flex;align-items:baseline;gap:.6rem;flex-wrap:wrap;margin-bottom:.4rem}
 .nome{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.3rem;font-weight:600;color:#1c2b1a}
-.anni{font-size:.68rem;letter-spacing:.1em;color:#8a9e87;font-weight:600}
+.anni-v{font-size:.68rem;letter-spacing:.1em;color:#8a9e87;font-weight:600}
 .formula{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.06rem;line-height:1.5;
   color:#2d5a27;margin-bottom:.4rem;font-style:italic}
 .voce.salto .formula{color:#8a6a1e}
@@ -59,207 +76,168 @@ input[type=checkbox]{accent-color:#2d5a27;width:15px;height:15px;cursor:pointer}
 .coda h3{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.35rem;font-weight:600;
   color:#2d5a27;margin-bottom:.4rem}
 .coda p{font-size:.86rem;line-height:1.75;color:#3d4a3b}
+
+/* ── vista sincronica: un momento, tutto il mondo ─────── */
+.anni{display:flex;gap:.4rem;overflow-x:auto;padding-bottom:.5rem;scrollbar-width:thin}
+.an{flex:none;font:inherit;font-size:.8rem;padding:.55rem 1rem;border-radius:100px;cursor:pointer;
+  border:1.5px solid rgba(45,90,39,.2);background:#fff;color:#2d5a27;transition:all .16s;
+  font-weight:600;white-space:nowrap}
+.an:hover{border-color:#2d5a27}
+.an.attivo{background:#2d5a27;color:#fff;border-color:#2d5a27}
+
+.titolo-t{font-family:'Cormorant Garamond',Georgia,serif;font-size:2rem;font-weight:600;
+  margin:1.2rem 0 .2rem;color:#1c2b1a}
+.occhiello{font-size:.86rem;line-height:1.7;color:#5a6b58;max-width:68ch;margin-bottom:1rem}
+
+.mondo{display:grid;grid-template-columns:repeat(auto-fill,minmax(295px,1fr));gap:.7rem}
+.reg{border:1px solid rgba(45,90,39,.14);border-top:3px solid var(--c);border-radius:12px;
+  padding:.9rem 1.05rem;background:#fff}
+.reg h3{font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;color:var(--c);
+  font-weight:700;margin-bottom:.5rem;display:flex;align-items:center;gap:.4rem}
+.reg h3::before{content:'';width:8px;height:8px;border-radius:50%;background:var(--c);flex:none}
+.reg .fatto{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.12rem;line-height:1.4;
+  color:#1c2b1a;font-weight:600;margin-bottom:.35rem}
+.reg p{font-size:.83rem;line-height:1.65;color:#3d4a3b}
+.reg .quando{display:inline-block;font-size:.6rem;letter-spacing:.1em;color:#8a9e87;
+  font-weight:600;margin-top:.45rem}
+
+.perno{margin-top:1.1rem;border-radius:14px;padding:1.15rem 1.35rem;background:#fff;
+  border:1px solid rgba(45,90,39,.14);border-left:5px solid #9a7c2e}
+.perno h3{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.4rem;font-weight:600;
+  color:#8a6a1e;margin-bottom:.4rem}
+.perno p{font-size:.88rem;line-height:1.75;color:#3d4a3b}
+.perno p+p{margin-top:.6rem}
+
+.dom{margin-top:.9rem;padding:.85rem 1rem;border-radius:10px;background:#f6f3ec;
+  font-size:.85rem;line-height:1.7;color:#5a6b58}
+.dom b{color:#8a6a1e;font-weight:600;display:block;margin-bottom:.2rem}
+
+.frecce{display:flex;gap:.5rem;margin-top:1rem;justify-content:space-between}
+.b{font:inherit;font-size:.78rem;padding:.55rem 1.1rem;border-radius:100px;cursor:pointer;
+  border:1.5px solid rgba(45,90,39,.22);background:#fff;color:#2d5a27;font-weight:500;transition:all .16s}
+.b:hover{background:#2d5a27;color:#fff;border-color:#2d5a27}
+.b:disabled{opacity:.35;cursor:default}
+.b:disabled:hover{background:#fff;color:#2d5a27;border-color:rgba(45,90,39,.22)}
+
+/* l'incrocio fra le due viste */
+.ponte{margin-top:1.1rem;padding:.9rem 1.1rem;border-radius:10px;background:#f6f3ec;
+  font-size:.83rem;line-height:1.7;color:#5a6b58}
+.ponte b{color:#8a6a1e;font-weight:600}
+.ponte button{font:inherit;font-size:.83rem;color:#2d5a27;background:none;border:0;
+  border-bottom:1px solid rgba(45,90,39,.4);cursor:pointer;padding:0;font-weight:600}
+
 @media(max-width:640px){
-  .w{padding:1.4rem 1rem 3rem}h1{font-size:1.9rem}
+  .w{padding:1.4rem 1rem 3rem}h1{font-size:1.9rem}.titolo-t{font-size:1.6rem}
+  .mondo{grid-template-columns:1fr}
   .linea{padding-left:1.7rem}.linea::before{left:.45rem}
   .voce::before{left:-1.46rem}.voce.salto::before{left:-1.52rem}
   .nome{font-size:1.15rem}
+  .tagli{width:100%}.tg{flex:1;text-align:center}
 }
 </style>
 </head>
 <body>
 <div class="w">
   <div class="k">Idearca · Prove</div>
-  <h1>Linea del tempo delle idee</h1>
-  <p class="sub">Una parola sola, seguita per venticinque secoli. Non è una galleria di
-  ritratti: serve a vedere che <strong>le stesse parole cambiano di sotto</strong>, e che
-  ogni filosofo di solito non risponde al mondo — risponde a quello prima di lui.</p>
+  <h1>Linea del tempo</h1>
+  <p class="sub">Il tempo si può tagliare in due modi, e i due tagli dicono cose diverse.
+  <strong>Per lungo</strong>: si prende una parola e la si segue per venticinque secoli,
+  per vedere che cambia di sotto. <strong>Per largo</strong>: si ferma un anno e si guarda
+  tutto il pianeta insieme, per vedere che non è mai successo niente in un posto solo.</p>
 
-  <div class="et">La parola</div>
-  <div class="parole" id="parole"></div>
-
-  <div class="dom" id="domanda"></div>
-
-  <div class="filtro">
-    <label><input type="checkbox" id="soloSalti" onchange="disegna()"> Mostra solo i punti di rottura</label>
+  <div class="tagli">
+    <button class="tg" id="tg-idee" onclick="cambiaVista('idee')">Una parola nel tempo</button>
+    <button class="tg" id="tg-mondo" onclick="cambiaVista('mondo')">Un anno in tutto il mondo</button>
   </div>
-  <p class="sub" style="font-size:.78rem;margin-top:.5rem;color:#8a9e87">L'ordine segue la
-  discendenza delle idee, non le date di nascita: fra contemporanei viene prima chi è
-  risposto e dopo chi risponde. Locke e Leibniz, per dire, vissero negli stessi anni.</p>
+  <p class="spiega" id="spiega"></p>
 
-  <div class="linea" id="linea"></div>
-  <div class="coda" id="coda"></div>
+  <!-- ══ vista diacronica ══ -->
+  <div class="vista" id="vista-idee">
+    <div class="et">La parola</div>
+    <div class="parole" id="parole"></div>
+
+    <div class="dom-p" id="domanda"></div>
+
+    <div class="filtro">
+      <label><input type="checkbox" id="soloSalti" onchange="disegnaIdee()"> Solo i punti di rottura</label>
+      <label><input type="checkbox" id="soloFormule" onchange="disegnaIdee()"> Solo le formule, senza spiegazione</label>
+    </div>
+    <p class="nota">L'ordine segue la discendenza delle idee, non le date di nascita: fra
+    contemporanei viene prima chi è risposto e dopo chi risponde. Locke e Leibniz, per dire,
+    vissero negli stessi anni.</p>
+
+    <div class="linea" id="linea"></div>
+    <div class="coda" id="coda"></div>
+    <div class="ponte" id="ponte-idee"></div>
+  </div>
+
+  <!-- ══ vista sincronica ══ -->
+  <div class="vista" id="vista-mondo">
+    <div class="et">Il momento</div>
+    <div class="anni" id="anni"></div>
+
+    <div class="titolo-t" id="titolo"></div>
+    <div class="occhiello" id="occhiello"></div>
+    <div class="mondo" id="mondo"></div>
+    <div class="perno" id="perno"></div>
+
+    <div class="frecce">
+      <button class="b" id="prima" onclick="muovi(-1)">&larr; Prima</button>
+      <button class="b" id="dopo" onclick="muovi(1)">Dopo &rarr;</button>
+    </div>
+    <div class="ponte" id="ponte-mondo"></div>
+  </div>
 </div>
 
+<script src="idee-dati.js"></script>
 <script>
 /* ══════════════════════════════════════════════════════════
-   LA LINEA DEL TEMPO DELLE IDEE
-   La voce che conta non è «che cosa diceva»: è «che cosa
-   cambia rispetto a prima». Uno studente che impara le tesi
-   una per una si ritrova un elenco; uno che impara i salti si
-   ritrova una storia, e le tesi se le ricorda da sé.
-   I punti segnati come rottura sono quelli in cui il senso
-   della parola non si sposta ma si rovescia.
+   LA LINEA DEL TEMPO
+   Una pagina sola con due tagli, perché sono la stessa
+   materia guardata da due lati e tenerli separati faceva
+   perdere proprio la cosa interessante: che mentre Cartesio
+   spaccava il mondo in due sostanze, in Cina cadeva una
+   dinastia e a Potosí si scavava l'argento che pagava tutto.
+
+   La voce che conta, nella vista per lungo, non è «che cosa
+   diceva»: è «che cosa cambia rispetto a prima». Uno studente
+   che impara le tesi una per una si ritrova un elenco; uno
+   che impara i salti si ritrova una storia, e le tesi se le
+   ricorda da sé.
    ══════════════════════════════════════════════════════════ */
 
-const PAROLE=[
-{
- k:'sostanza', n:'Sostanza',
- dom:'Che cosa <b>regge</b> davvero le cose? Quando tutto quello che vedo cambia, che cosa resta sotto — e c\'è qualcosa sotto?',
- coda:{t:'Da sostrato a processo',
-  p:'In venticinque secoli la parola ha fatto un giro completo. Nasce per indicare ciò che <em>sta sotto</em> e non cambia; passa per l\'individuo concreto, per Dio, per l\'io; viene dichiarata una finzione dell\'immaginazione; torna come regola della mente e non come cosa; e finisce con Hegel a significare l\'esatto contrario di ciò da cui era partita — non più il fondo immobile, ma il movimento stesso. Chi impara «sostanza» come un vocabolo solo ha già perso la storia.'},
- voci:[
-  {n:'Platone', a:'427-347 a.C.', f:'L\'essere vero è l\'idea, non la cosa che vedi.',
-   d:'Ciò che regge davvero non è il tavolo di legno, che si consuma, ma l\'idea di tavolo: eterna, immutabile, separata. Il mondo sensibile ne è una copia scadente.',
-   s:'', tap:'Il punto di partenza'},
-  {n:'Aristotele', a:'384-322 a.C.', f:'Sostanza è questo uomo, questo cavallo.',
-   d:'Sostanza prima è l\'individuo concreto, sinolo di materia e forma. Le idee separate di Platone non spiegano nulla: raddoppiano i problemi invece di risolverli.',
-   s:'Rovescia il maestro. Per Platone il vero essere era <b>separato</b> dalle cose; per Aristotele è la cosa stessa, e la forma sta dentro, non in un cielo a parte.', salto:true},
-  {n:'Plotino', a:'204-270', f:'Prima dell\'essere c\'è l\'Uno.',
-   d:'L\'Uno è al di là dell\'essere e del pensiero; da esso procedono per emanazione l\'Intelletto, l\'Anima, il mondo. Le sostanze sono gradi di una discesa.',
-   s:'Introduce una gerarchia che in Aristotele non c\'era: la sostanza non è più un piano solo, è una scala che degrada dall\'alto.'},
-  {n:'Tommaso d\'Aquino', a:'1225-1274', f:'Nelle creature essenza ed esistenza non coincidono.',
-   d:'Una cosa può essere pensata (essenza) senza per questo esistere. Solo in Dio l\'essenza è l\'esistenza: per tutto il resto, esistere è un dono ricevuto.',
-   s:'Aggiunge ad Aristotele una domanda che il greco non si poneva: non solo <b>che cos\'è</b> una cosa, ma <b>perché c\'è</b> invece di non esserci.', salto:true},
-  {n:'Cartesio', a:'1596-1650', f:'Sostanza è ciò che per esistere non ha bisogno d\'altro.',
-   d:'Da questa definizione discendono due sostanze create e incomunicanti: la res cogitans, che pensa e non occupa spazio, e la res extensa, che occupa spazio e non pensa.',
-   s:'Cambia il criterio. Per Aristotele la sostanza si riconosceva guardando il mondo; qui si ricava da una <b>definizione</b>, e da quella definizione il mondo esce spaccato in due.', salto:true},
-  {n:'Spinoza', a:'1632-1677', f:'Di sostanza ce n\'è una sola: Dio, ossia la Natura.',
-   d:'Se sostanza è ciò che non ha bisogno d\'altro, allora ce n\'è per forza una sola e infinita. Pensiero ed estensione non sono due sostanze ma due attributi della stessa; noi siamo modi finiti.',
-   s:'Prende la definizione di Cartesio e la applica <b>fino in fondo</b>: se il criterio è quello, due sostanze sono una di troppo. La coerenza porta al panteismo.', salto:true},
-  {n:'Leibniz', a:'1646-1716', f:'Le sostanze sono infinite, semplici e senza finestre.',
-   d:'Le monadi non hanno parti, non ricevono nulla dall\'esterno, e ognuna rispecchia da un suo punto di vista l\'universo intero. L\'accordo fra loro è armonia prestabilita.',
-   s:'Risponde a Spinoza per la via opposta: non una sola sostanza, ma <b>infinite</b>. In comune l\'idea che il mondo debba essere del tutto intelligibile.'},
-  {n:'Locke', a:'1632-1704', f:'La sostanza è un non so che, supposto sotto le qualità.',
-   d:'Delle cose conosciamo colore, peso, figura. Che sotto queste qualità ci sia un supporto lo supponiamo per abitudine, ma non lo esperiamo mai.',
-   s:'Per la prima volta la sostanza non viene definita meglio: viene <b>messa in dubbio</b>. Da concetto fondativo diventa un\'ipotesi comoda.', salto:true},
-  {n:'Hume', a:'1711-1776', f:'Non c\'è nessuna sostanza: ci sono fasci di percezioni.',
-   d:'Cerco l\'io e trovo solo una percezione dopo l\'altra; cerco la sostanza e trovo solo qualità che stanno insieme per abitudine. L\'unità la mette l\'immaginazione, non il mondo.',
-   s:'Porta il dubbio di Locke alla conclusione: il «non so che» <b>non c\'è affatto</b>. Con la sostanza cade anche l\'io.', salto:true},
-  {n:'Kant', a:'1724-1804', f:'La sostanza è una categoria: una regola della mente, non una cosa.',
-   d:'Non troviamo la permanenza nel mondo, ce la mettiamo: senza di essa non potremmo nemmeno accorgerci che qualcosa cambia. Vale per l\'esperienza, non per la cosa in sé.',
-   s:'Risponde a Hume salvando la sostanza a un <b>prezzo</b>: resta necessaria, ma smette di essere una proprietà delle cose e diventa una condizione del conoscere.', salto:true},
-  {n:'Hegel', a:'1770-1831', f:'La sostanza è soggetto.',
-   d:'L\'assoluto non è un sostrato immobile su cui accadono le cose: è il processo stesso, che diventa se stesso passando attraverso il proprio contrario. Il vero è l\'intero, e l\'intero è il risultato.',
-   s:'Rovescia il punto di partenza. Sostanza aveva sempre voluto dire <b>ciò che non si muove</b>: qui vuol dire il movimento.', salto:true}
- ]},
-
-{
- k:'anima', n:'Anima',
- dom:'Che cosa sono <b>io</b>? Qualcosa che sta dentro un corpo e potrebbe uscirne, oppure il modo in cui questo corpo è vivo?',
- coda:{t:'Da cosa a funzione, e poi a domanda aperta',
-  p:'L\'anima comincia come un\'entità: qualcosa che c\'è, che entra nel corpo e ne esce. Aristotele la trasforma in una funzione — non una cosa dentro un\'altra, ma il modo di essere vivo di un corpo. Il cristianesimo deve tenere insieme le due cose, perché serve un\'anima che sopravviva. Cartesio la fa di nuovo sostanza, e paga il conto con un problema che non risolverà: come fa una cosa che non è nello spazio a muovere un braccio. Hume la cerca e non la trova. Kant dice che la si può pensare ma non conoscere. Alla fine la domanda resta più netta di tutte le risposte.'},
- voci:[
-  {n:'Platone', a:'427-347 a.C.', f:'L\'anima è immortale, e nel corpo sta come in un carcere.',
-   d:'Preesiste alla nascita e sopravvive alla morte; conoscere è ricordare quello che ha visto prima. È tripartita: razionale, irascibile, concupiscibile — e la giustizia è che comandi la prima.',
-   s:'', tap:'Il punto di partenza'},
-  {n:'Aristotele', a:'384-322 a.C.', f:'L\'anima è la forma di un corpo che ha la vita in potenza.',
-   d:'Non è un\'altra cosa dentro il corpo: è ciò che fa di quella materia un vivente, come la vista è la forma dell\'occhio. Chiedere se anima e corpo siano una cosa sola è come chiedere se lo siano la cera e la sua impronta.',
-   s:'Toglie all\'anima lo statuto di <b>cosa</b> e le dà quello di <b>funzione</b>. Il prezzo è che, così definita, non può sopravvivere al corpo.', salto:true},
-  {n:'Agostino', a:'354-430', f:'Non uscire fuori: nell\'uomo interiore abita la verità.',
-   d:'L\'anima si conosce conoscendo se stessa, e nella propria memoria trova qualcosa che la supera. L\'interiorità diventa il luogo della ricerca, non un pezzo dell\'inventario del mondo.',
-   s:'Sposta il baricentro: l\'anima non è più oggetto di indagine fra gli altri, è il <b>punto da cui</b> si indaga.', salto:true},
-  {n:'Tommaso d\'Aquino', a:'1225-1274', f:'Forma del corpo, e insieme sussistente.',
-   d:'Prende da Aristotele l\'anima come forma, ma le riconosce un\'operazione — l\'intendere — che non dipende da un organo. Perciò può sussistere separata, pur restando fatta per stare unita al corpo.',
-   s:'Tiene insieme due esigenze che <b>tirano in direzioni opposte</b>: l\'anima aristotelica non sopravvive, quella cristiana deve. La soluzione è stretta e lo sa.'},
-  {n:'Cartesio', a:'1596-1650', f:'Sono una cosa che pensa.',
-   d:'Posso dubitare di avere un corpo, non di pensare. Dunque io sono anzitutto pensiero, e il corpo è un\'altra sostanza — una macchina, che potrei in linea di principio non avere.',
-   s:'Torna a fare dell\'anima una <b>sostanza separata</b>, ma per una via nuova: non per fede né per osservazione, per dubbio. E si carica il problema di spiegare come le due comunichino.', salto:true},
-  {n:'Hume', a:'1711-1776', f:'Entro in me stesso e non trovo mai me stesso.',
-   d:'Trovo un caldo, un freddo, una luce, un dolore: mai l\'io che li avrebbe. L\'identità personale è un\'abitudine dell\'immaginazione, che lega percezioni diverse come se fossero una cosa sola.',
-   s:'Applica all\'io il metodo di Cartesio — guardare dentro — e ottiene il <b>risultato contrario</b>: chi guarda non c\'è.', salto:true},
-  {n:'Kant', a:'1724-1804', f:'L\'«io penso» accompagna tutto, ma non è un oggetto che conosco.',
-   d:'Che ogni mia rappresentazione sia mia è una condizione dell\'esperienza. Ma da questa condizione formale non segue che io sia una sostanza semplice e immortale: dedurlo è un paralogismo.',
-   s:'Non sceglie fra Cartesio e Hume: dichiara che <b>la domanda era mal posta</b>. L\'io è necessario come funzione, indimostrabile come cosa.', salto:true},
-  {n:'Hegel', a:'1770-1831', f:'Lo spirito non è dentro: è quello che fa.',
-   d:'L\'anima singola è un momento di un processo più ampio, che si realizza nelle istituzioni, nel diritto, nell\'arte, nella storia. L\'interiorità pura, senza opere, è vuota.',
-   s:'Porta l\'io <b>fuori</b>: dopo secoli passati a cercarlo guardando dentro, lo si cerca in ciò che ha prodotto.', salto:true}
- ]},
-
-{
- k:'stato', n:'Stato',
- dom:'Perché dovrei <b>obbedire</b>? Che cosa rende legittimo un potere, e che cosa lo rende soltanto forte?',
- coda:{t:'Da ordine naturale a costruzione, e ritorno',
-  p:'Per i greci la città è naturale come il fatto che l\'uomo parli: non si domanda perché ci sia, si domanda come debba essere fatta bene. Con Machiavelli la domanda diventa tecnica, e la morale esce dalla porta. Con Hobbes lo Stato smette di essere naturale e diventa un artificio, costruito da individui che prima erano soli: da lì in poi ogni teoria deve dire da che patto nasce e che cosa promette in cambio. Hegel chiude il cerchio dichiarando che quella somma di individui non è mai esistita, e che siamo figli delle istituzioni prima che loro padri.'},
- voci:[
-  {n:'Platone', a:'427-347 a.C.', f:'Giustizia è che ciascuno faccia la sua parte.',
-   d:'La città giusta ha tre classi come l\'anima ha tre parti, e sta bene quando comanda chi sa — il filosofo. Il criterio non è il consenso: è la competenza.',
-   s:'', tap:'Il punto di partenza'},
-  {n:'Aristotele', a:'384-322 a.C.', f:'L\'uomo è per natura un animale politico.',
-   d:'La polis non è un\'invenzione: viene prima dell\'individuo come il tutto viene prima della parte. Il suo fine non è vivere, ma vivere bene, e le costituzioni si giudicano da questo.',
-   s:'Contro il progetto ideale di Platone, guarda le <b>costituzioni esistenti</b> e le classifica. La politica diventa una scienza dell\'esperienza.'},
-  {n:'Agostino', a:'354-430', f:'Due amori hanno fatto due città.',
-   d:'La città terrena e la città di Dio si intrecciano nella storia e si separeranno alla fine. Nessun impero, per giusto che sia, coincide col regno.',
-   s:'Toglie allo Stato l\'<b>ultima parola</b>: resta necessario, ma smette di essere il luogo in cui l\'uomo si compie.', salto:true},
-  {n:'Machiavelli', a:'1469-1527', f:'Andare drieto alla verità effettuale della cosa.',
-   d:'Non come si dovrebbe vivere, ma come si vive. Il principe deve saper non essere buono quando serve, perché fra tanti che non lo sono chi lo è sempre va in rovina.',
-   s:'Separa la politica dalla morale. Per due millenni si era chiesto <b>quale Stato sia giusto</b>: qui si chiede quale <b>si mantenga</b>.', salto:true},
-  {n:'Hobbes', a:'1588-1679', f:'Fuori dallo Stato, la vita è solitaria, misera, brutale e breve.',
-   d:'Nello stato di natura ognuno ha diritto a tutto, e perciò nessuno ha niente in sicurezza. Se ne esce con un patto che trasferisce il potere a un sovrano: assoluto, perché un potere diviso ricade nella guerra.',
-   s:'Lo Stato smette di essere <b>naturale</b> e diventa un artificio. Da qui in poi va giustificato: nessuno può più darlo per scontato.', salto:true},
-  {n:'Locke', a:'1632-1704', f:'Il potere è un mandato, e i mandati si revocano.',
-   d:'Nello stato di natura ci sono già diritti — vita, libertà, proprietà — solo mal difesi. Si entra nella società per tutelarli, dunque il potere è limitato a questo, e se lo tradisce si può resistere.',
-   s:'Accetta il patto di Hobbes e ne <b>rovescia l\'esito</b>: se lo Stato nasce per proteggere diritti preesistenti, non può essere assoluto senza smentirsi.', salto:true},
-  {n:'Rousseau', a:'1712-1778', f:'Obbedire alla legge che ci si è prescritti è libertà.',
-   d:'La sovranità sta nel popolo, è inalienabile e non si rappresenta. Ciascuno si dà a tutti e quindi a nessuno, e obbedendo alla volontà generale obbedisce a se stesso.',
-   s:'Sposta la sovranità dal sovrano al <b>popolo</b>, e con essa il problema: non più chi comanda, ma come si sappia che cosa vuole davvero il corpo intero.', salto:true},
-  {n:'Kant', a:'1724-1804', f:'Una costituzione che faccia stare insieme anche un popolo di diavoli.',
-   d:'Lo Stato di diritto non chiede che gli uomini siano buoni: chiede istituzioni fatte in modo che le loro spinte egoistiche si bilancino. E la pace fra Stati non è un sogno, è un compito.',
-   s:'Toglie alla politica il bisogno della <b>virtù</b>: se il congegno è ben fatto, funziona lo stesso.'},
-  {n:'Hegel', a:'1770-1831', f:'Lo Stato non è la somma degli individui.',
-   d:'L\'individuo isolato che stipula il patto non è mai esistito: si è già figli, allievi, cittadini prima di poter scegliere. Lo Stato è eticità realizzata, il luogo in cui la libertà prende forma concreta.',
-   s:'Nega la premessa di tutta la tradizione contrattualista: <b>non c\'è nessuno stato di natura</b> da cui partire, e quindi nessun patto originario.', salto:true}
- ]},
-
-{
- k:'verita', n:'Verità',
- dom:'Che cosa vuol dire che una cosa è <b>vera</b>? Che corrisponde a com\'è il mondo — e se non potessi mai confrontarle?',
- coda:{t:'Da scoperta a costruzione',
-  p:'La verità nasce come qualcosa che sta là e va raggiunta: si scopre, si vede, ci si adegua. Il criterio è fuori. Con Cartesio comincia a spostarsi dentro — è vero ciò che appare chiaro e distinto — e con Kant il rovesciamento è compiuto: non è il pensiero a doversi conformare all\'oggetto, ma l\'oggetto a doversi conformare alle condizioni del pensiero. Nietzsche fa l\'ultimo passo e chiede che cosa resti quando anche quelle condizioni si scoprono avere una storia.'},
- voci:[
-  {n:'Parmenide', a:'515-450 a.C. ca.', f:'L\'essere è, il non essere non è.',
-   d:'C\'è una via della verità e una dell\'opinione, e sono incompatibili. I sensi mostrano nascita, mutamento, molteplicità: il pensiero dimostra che sono impossibili. Va creduto il pensiero.',
-   s:'', tap:'Il punto di partenza'},
-  {n:'Platone', a:'427-347 a.C.', f:'Vero è chi vede le idee; in mezzo sta l\'opinione.',
-   d:'Fra sapere e ignoranza c\'è la doxa, che può anche essere corretta ma non sa rendere ragione di sé. La conoscenza è opinione vera <em>più il discorso</em> che la giustifica.',
-   s:'Ammette un <b>grado intermedio</b> che Parmenide escludeva: si può avere ragione senza sapere perché, e non è ancora sapere.'},
-  {n:'Aristotele', a:'384-322 a.C.', f:'Dire di ciò che è che è, e di ciò che non è che non è.',
-   d:'La verità non sta nelle cose ma nel giudizio: è una proprietà di ciò che diciamo, non di ciò di cui parliamo. Una definizione così sobria da reggere ancora oggi.',
-   s:'Toglie alla verità l\'aura e la rende una <b>relazione</b> fra discorso e mondo, verificabile caso per caso.', salto:true},
-  {n:'Tommaso d\'Aquino', a:'1225-1274', f:'Adaequatio rei et intellectus.',
-   d:'Verità è l\'adeguarsi dell\'intelletto alla cosa. Nelle cose stesse c\'è una verità derivata: sono vere in quanto conformi all\'idea che ne ha il loro creatore.',
-   s:'Formalizza Aristotele e vi aggiunge un <b>fondamento</b>: le cose sono conoscibili perché sono state pensate prima di essere fatte.'},
-  {n:'Cartesio', a:'1596-1650', f:'È vero ciò che concepisco in modo chiaro e distinto.',
-   d:'Il criterio non è più il confronto con la cosa — che non posso fare, perché non esco mai dalle mie idee — ma un carattere dell\'idea stessa.',
-   s:'Sposta il criterio <b>dentro</b>. Da qui nasce il problema moderno: se il metro è nella mia mente, come so che misura il mondo?', salto:true},
-  {n:'Hume', a:'1711-1776', f:'Che domani sorga il sole non è una verità necessaria.',
-   d:'Le sole verità certe riguardano relazioni fra idee — la matematica — e non dicono nulla sul mondo. Tutto ciò che riguarda i fatti si regge sull\'abitudine, e l\'abitudine non è una prova.',
-   s:'Divide le verità in due tipi e mostra che quelle <b>utili</b> non sono certe, e quelle certe non sono utili.', salto:true},
-  {n:'Kant', a:'1724-1804', f:'Non il pensiero attorno all\'oggetto, ma l\'oggetto attorno al pensiero.',
-   d:'Le condizioni della nostra esperienza — spazio, tempo, categorie — valgono necessariamente per tutto ciò che possiamo incontrare, perché siamo noi a metterle. Perciò ci sono verità necessarie sul mondo dell\'esperienza, e nessuna sulla cosa in sé.',
-   s:'La rivoluzione copernicana: risponde a Hume <b>cambiando la direzione</b> del rapporto fra mente e mondo.', salto:true},
-  {n:'Hegel', a:'1770-1831', f:'Il vero è l\'intero.',
-   d:'Nessuna proposizione presa da sola è vera: lo diventa nel posto che occupa dentro il tutto. Anche l\'errore ha una funzione, come momento superato di un percorso.',
-   s:'Toglie alla verità il carattere <b>puntuale</b>: non è una proprietà di singole frasi, è una proprietà del sistema.', salto:true},
-  {n:'Nietzsche', a:'1844-1900', f:'Verità: un esercito mobile di metafore, logorate dall\'uso.',
-   d:'Le verità sono illusioni di cui si è dimenticato che lo sono, metafore consumate come monete che hanno perso l\'effigie. Non c\'è un fatto nudo: c\'è sempre un\'interpretazione, e dietro l\'interpretazione un interesse.',
-   s:'Chiede della verità quello che la verità chiedeva alle cose: <b>da dove viene, chi ci guadagna</b>. La domanda diventa genealogica.', salto:true}
- ]}
-];
-
+let vista='idee';
 let parola=PAROLE[0];
+let i=0;
 
-const esc = t => String(t);   /* i testi sono nostri: contengono tag voluti */
+const SPIEGA={
+ idee:'Le voci non sono ritratti: ciascuna dice <b>che cosa cambia</b> rispetto a quella prima. I pallini dorati segnano i punti in cui il senso della parola non si sposta, si rovescia.',
+ mondo:'Le colonne hanno tutte lo stesso peso in pagina, ed è una scelta: nessuna regione fa da sfondo a un\'altra. In fondo, una domanda da portare in classe.'
+};
 
-function scegli(k){ parola=PAROLE.find(p=>p.k===k); disegna(); }
+function cambiaVista(v){
+  vista=v;
+  document.getElementById('vista-idee').classList.toggle('viva', v==='idee');
+  document.getElementById('vista-mondo').classList.toggle('viva', v==='mondo');
+  document.getElementById('tg-idee').classList.toggle('attivo', v==='idee');
+  document.getElementById('tg-mondo').classList.toggle('attivo', v==='mondo');
+  document.getElementById('spiega').innerHTML = SPIEGA[v];
+  if(v==='idee') disegnaIdee(); else disegnaMondo();
+  window.scrollTo({top:0,behavior:'smooth'});
+}
 
-function disegna(){
+/* ── vista per lungo ─────────────────────────────────── */
+
+function scegli(k){ parola=PAROLE.find(p=>p.k===k); disegnaIdee(); }
+
+function disegnaIdee(){
   document.getElementById('parole').innerHTML = PAROLE.map(p=>
     `<button class="pa${p.k===parola.k?' attiva':''}" onclick="scegli('${p.k}')">${p.n}</button>`).join('');
 
   document.getElementById('domanda').innerHTML = parola.dom;
 
   const soloSalti = document.getElementById('soloSalti').checked;
+  const nude = document.getElementById('soloFormule').checked;
   const voci = soloSalti ? parola.voci.filter(v=>v.salto) : parola.voci;
 
   document.getElementById('linea').innerHTML = voci.map(v=>`
@@ -267,13 +245,13 @@ function disegna(){
       <div class="card">
         <div class="cap">
           <span class="nome">${v.n}</span>
-          <span class="anni">${v.a}</span>
+          <span class="anni-v">${v.a}</span>
           ${v.tap?`<span class="tappa">${v.tap}</span>`:''}
           ${v.salto?'<span class="tappa">Rottura</span>':''}
         </div>
         <div class="formula">«${v.f}»</div>
-        <div class="dice">${v.d}</div>
-        ${v.s?`<div class="salto-t"><b>Che cosa cambia:</b> ${v.s}</div>`:''}
+        ${nude?'':`<div class="dice">${v.d}</div>`}
+        ${(!nude && v.s)?`<div class="salto-t"><b>Che cosa cambia:</b> ${v.s}</div>`:''}
       </div>
     </div>`).join('');
 
@@ -282,10 +260,50 @@ function disegna(){
     `<h3>${parola.coda.t}</h3><p>${parola.coda.p}</p>`
     + `<p style="margin-top:.7rem;color:#8a9e87;font-size:.8rem">`
     + `${parola.voci.length} tappe, di cui ${nSalti} punti di rottura.`
-    + (soloSalti?' Stai vedendo solo questi ultimi.':'')+`</p>`;
+    + (soloSalti?' Stai vedendo solo questi ultimi.':'')
+    + (nude?' Le spiegazioni sono nascoste: prova a farle dire alla classe.':'')+`</p>`;
+
+  document.getElementById('ponte-idee').innerHTML =
+    `<b>L'altro taglio.</b> Questa colonna è verticale: segue un filo e lascia fuori tutto il resto. `
+    + `Per vedere che cosa accadeva altrove mentre questi pensavano, `
+    + `<button onclick="cambiaVista('mondo')">passa al taglio orizzontale</button>.`;
 }
 
-disegna();
+/* ── vista per largo ─────────────────────────────────── */
+
+function vai(n){ i=Math.max(0,Math.min(TAGLI.length-1,n)); disegnaMondo(); }
+function muovi(d){ vai(i+d); }
+
+function disegnaMondo(){
+  const t=TAGLI[i];
+  document.getElementById('anni').innerHTML = TAGLI.map((x,n)=>
+    `<button class="an${n===i?' attivo':''}" onclick="vai(${n})">${x.anno}</button>`).join('');
+  document.getElementById('titolo').textContent=t.anno;
+  document.getElementById('occhiello').textContent=t.occhiello;
+
+  document.getElementById('mondo').innerHTML = t.mondo.map(m=>`
+    <div class="reg" style="--c:${AREE[m.a]||'#8a9e87'}">
+      <h3>${m.a}</h3>
+      <div class="fatto">${m.t}</div>
+      <p>${m.d}</p>
+      <span class="quando">${m.q}</span>
+    </div>`).join('');
+
+  document.getElementById('perno').innerHTML =
+    `<h3>${t.perno.t}</h3>${t.perno.p.map(p=>`<p>${p}</p>`).join('')}`
+    + `<div class="dom"><b>Da chiedere alla classe</b>${t.perno.dom}</div>`;
+
+  document.getElementById('prima').disabled = i===0;
+  document.getElementById('dopo').disabled = i===TAGLI.length-1;
+  document.querySelector('.an.attivo')?.scrollIntoView({inline:'center',block:'nearest',behavior:'smooth'});
+
+  document.getElementById('ponte-mondo').innerHTML =
+    `<b>L'altro taglio.</b> Qui il tempo è fermo e lo sguardo gira. `
+    + `Per prendere invece una parola sola e seguirla lungo tutti questi secoli, `
+    + `<button onclick="cambiaVista('idee')">passa al taglio verticale</button>.`;
+}
+
+cambiaVista('idee');
 </script>
 </body>
 </html>
