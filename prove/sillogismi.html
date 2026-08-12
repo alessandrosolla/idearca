@@ -3,336 +3,364 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Ricostruttore di sillogismi — Idearca</title>
+<title>Il ragionamento tiene? — Idearca</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:'Jost',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
   background:#faf8f3;color:#1c2b1a;font-weight:300;-webkit-font-smoothing:antialiased}
-.w{max-width:900px;margin:0 auto;padding:2rem 1.5rem 4rem}
+.w{max-width:940px;margin:0 auto;padding:2rem 1.5rem 4rem}
 .k{font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:#8a9e87;font-weight:600}
 h1{font-family:'Cormorant Garamond',Georgia,serif;font-size:2.4rem;font-weight:400;margin:.3rem 0 .5rem}
 .sub{font-size:.92rem;line-height:1.7;color:#5a6b58;max-width:64ch}
-
 .et{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:#9a7c2e;
-  font-weight:700;margin:1.8rem 0 .7rem;display:flex;align-items:center;gap:.6rem}
+  font-weight:700;margin:1.7rem 0 .7rem;display:flex;align-items:center;gap:.6rem}
 .et::after{content:'';flex:1;height:1px;background:rgba(45,90,39,.13)}
 
-/* i tre termini */
-.termini{display:grid;grid-template-columns:repeat(3,1fr);gap:.7rem}
-.termine{border:1px solid rgba(45,90,39,.14);border-top:3px solid var(--c);
-  border-radius:12px;padding:.85rem .95rem;background:#fff}
-.termine label{display:block;font-size:.58rem;letter-spacing:.14em;text-transform:uppercase;
-  color:var(--c);font-weight:700;margin-bottom:.35rem}
-.termine input{width:100%;font:inherit;font-size:.95rem;border:none;outline:none;
-  background:none;color:#1c2b1a;font-weight:400}
-.termine small{display:block;font-size:.68rem;color:#8a9e87;margin-top:.25rem}
+/* i tre gruppi */
+.gruppi{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem}
+.gr{border:1px solid rgba(45,90,39,.14);border-top:3px solid var(--c);border-radius:11px;
+  padding:.7rem .85rem;background:#fff}
+.gr label{display:flex;align-items:center;gap:.4rem;font-size:.6rem;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--c);font-weight:700;margin-bottom:.3rem}
+.gr label::before{content:'';width:10px;height:10px;border-radius:50%;background:var(--c);flex:none}
+.gr input{width:100%;font:inherit;font-size:.98rem;border:none;outline:none;background:none;
+  color:#1c2b1a;font-weight:500}
 
-/* le proposizioni */
-.prop{display:flex;gap:.5rem;align-items:center;flex-wrap:wrap;
-  border:1px solid rgba(45,90,39,.14);border-radius:12px;padding:.8rem .95rem;
-  background:#fff;margin-bottom:.6rem}
-.prop.concl{border-left:3px solid #9a7c2e;background:#fdfbf4}
-.prop-et{font-size:.58rem;letter-spacing:.14em;text-transform:uppercase;
-  color:#8a9e87;font-weight:700;width:100%}
-select{font:inherit;font-size:.9rem;padding:.45rem .6rem;border-radius:8px;
-  border:1px solid rgba(45,90,39,.18);background:#faf8f3;color:#1c2b1a;cursor:pointer}
-.frase{width:100%;font-size:1.02rem;line-height:1.5;color:#2d5a27;margin-top:.5rem;
-  font-family:'Cormorant Garamond',Georgia,serif}
+/* le tre frasi */
+.frasi{display:flex;flex-direction:column;gap:.5rem}
+.fr{border:1px solid rgba(45,90,39,.14);border-radius:11px;padding:.75rem .95rem;background:#fff;
+  display:flex;gap:.45rem;align-items:center;flex-wrap:wrap}
+.fr.concl{border-left:3px solid #9a7c2e;background:#fdfbf4}
+.fr .et-fr{font-size:.58rem;letter-spacing:.14em;text-transform:uppercase;color:#8a9e87;
+  font-weight:700;width:100%}
+.fr.concl .et-fr{color:#9a7c2e}
+select{font:inherit;font-size:.9rem;padding:.4rem .55rem;border-radius:8px;
+  border:1px solid rgba(45,90,39,.2);background:#faf8f3;color:#1c2b1a;cursor:pointer;font-weight:500}
+select:focus{outline:none;border-color:#2d5a27}
+.letta{width:100%;font-family:'Cormorant Garamond',Georgia,serif;font-size:1.15rem;
+  line-height:1.45;color:#2d5a27;margin-top:.45rem}
+.fr.concl .letta{color:#8a6a1e}
 
 /* l'esito */
-.esito{border-radius:14px;padding:1.3rem 1.4rem;margin-top:1.6rem;
-  border:1px solid rgba(45,90,39,.14);background:#fff;border-left:5px solid #8a9e87}
-.esito.valido{border-left-color:#2d5a27;background:linear-gradient(150deg,rgba(45,90,39,.07),#fff)}
-.esito.invalido{border-left-color:#c0453b;background:linear-gradient(150deg,rgba(192,69,59,.06),#fff)}
-.esito-titolo{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.6rem;
-  font-weight:600;margin-bottom:.2rem}
-.esito.valido .esito-titolo{color:#2d5a27}
-.esito.invalido .esito-titolo{color:#c0453b}
-.sigla{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:#8a9e87;
-  font-weight:600;margin-bottom:.9rem}
-.regole{list-style:none;display:flex;flex-direction:column;gap:.5rem;margin-top:.4rem}
-.regola{display:flex;gap:.7rem;align-items:flex-start;font-size:.88rem;line-height:1.6}
-.regola i{flex:none;width:20px;height:20px;border-radius:50%;font-style:normal;
-  display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700;margin-top:.1rem}
-.regola.ok i{background:rgba(45,90,39,.12);color:#2d5a27}
-.regola.ko i{background:rgba(192,69,59,.14);color:#c0453b}
-.regola.ko{color:#8a3229}
-.regola b{font-weight:600}
-.nota{font-size:.82rem;line-height:1.65;color:#5a6b58;margin-top:1rem;
-  padding-top:.9rem;border-top:1px solid rgba(45,90,39,.1)}
+.esito{border-radius:14px;padding:1.2rem 1.35rem;margin-top:1.2rem;background:#fff;
+  border:1px solid rgba(45,90,39,.14);border-left:5px solid #8a9e87}
+.esito.tiene{border-left-color:#2d5a27;background:linear-gradient(150deg,rgba(45,90,39,.07),#fff)}
+.esito.cade{border-left-color:#c0453b;background:linear-gradient(150deg,rgba(192,69,59,.06),#fff)}
+.esito-t{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.65rem;font-weight:600;line-height:1.15}
+.esito.tiene .esito-t{color:#2d5a27}.esito.cade .esito-t{color:#c0453b}
+.esito-s{font-size:.9rem;line-height:1.75;color:#3d4a3b;margin-top:.5rem}
 
-.esempi{display:flex;gap:.5rem;flex-wrap:wrap}
-.esempio{font:inherit;font-size:.74rem;padding:.5rem 1rem;border-radius:100px;cursor:pointer;
-  border:1.5px solid rgba(45,90,39,.2);background:#fff;color:#2d5a27;transition:all .18s}
-.esempio:hover{background:#2d5a27;color:#fff;border-color:#2d5a27}
-@media(max-width:640px){
-  .w{padding:1.4rem 1rem 3rem}
-  h1{font-size:1.9rem}
-  .termini{grid-template-columns:1fr}
+.prova{display:grid;grid-template-columns:270px 1fr;gap:1.1rem;margin-top:1rem;align-items:center}
+.disegno{background:#fdfcf8;border:1px solid rgba(45,90,39,.12);border-radius:12px;padding:.5rem}
+svg{display:block;width:100%;height:auto}
+.spiega{font-size:.87rem;line-height:1.75;color:#3d4a3b}
+.spiega b{font-weight:600}
+.spiega ul{margin:.5rem 0 0;padding-left:1.1rem}
+.spiega li{margin-bottom:.3rem}
+.legenda{display:flex;gap:.8rem;flex-wrap:wrap;font-size:.72rem;color:#5a6b58;margin-top:.5rem;
+  justify-content:center}
+.legenda span{display:flex;align-items:center;gap:.3rem}
+.legenda i{width:9px;height:9px;border-radius:50%}
+
+.opz{display:flex;gap:.5rem;align-items:center;margin-top:.8rem;font-size:.82rem;color:#5a6b58}
+.opz label{display:flex;align-items:center;gap:.4rem;cursor:pointer}
+input[type=checkbox]{accent-color:#2d5a27;width:15px;height:15px;cursor:pointer}
+
+.esempi{display:flex;gap:.45rem;flex-wrap:wrap}
+.mini{font:inherit;font-size:.73rem;padding:.4rem .9rem;border-radius:100px;cursor:pointer;
+  border:1px solid rgba(45,90,39,.2);background:#fff;color:#2d5a27;transition:all .16s}
+.mini:hover{background:#2d5a27;color:#fff;border-color:#2d5a27}
+.avviso{margin-top:1.2rem;padding:.95rem 1.15rem;border-left:3px solid #9a7c2e;background:#f6f3ec;
+  border-radius:0 10px 10px 0;font-size:.83rem;line-height:1.7;color:#5a6b58}
+.avviso b{color:#8a6a1e;font-weight:600}
+@media(max-width:700px){
+  .w{padding:1.4rem 1rem 3rem}h1{font-size:1.9rem}
+  .gruppi{grid-template-columns:1fr}
+  .prova{grid-template-columns:1fr}
 }
 </style>
 </head>
 <body>
 <div class="w">
   <div class="k">Idearca · Prove</div>
-  <h1>Ricostruttore di sillogismi</h1>
-  <p class="sub">Si compongono due premesse e una conclusione. Lo strumento non dice
-  soltanto se il ragionamento tiene: dice <strong>quale regola è stata violata</strong>,
-  che è l'unica cosa che si impari davvero. I termini si scrivono al plurale e con
-  l'articolo — «i greci», «gli uomini» — e le frasi si compongono da sole.</p>
+  <h1>Il ragionamento tiene?</h1>
+  <p class="sub">Si scrivono due premesse e una conclusione, in italiano. Lo strumento non
+  applica regole a memoria: <strong>prova tutti i modi in cui il mondo potrebbe essere fatto</strong>.
+  Se ne trova uno in cui le premesse sono vere e la conclusione è falsa, il ragionamento non
+  tiene — e te lo disegna.</p>
 
   <div class="et">Prova con uno di questi</div>
   <div class="esempi" id="esempi"></div>
 
-  <div class="et">I tre termini</div>
-  <div class="termini">
-    <div class="termine" style="--c:#2d5a27">
-      <label>Termine minore (S)</label>
-      <input id="t-S" value="i greci" oninput="ricalcola()">
-      <small>soggetto della conclusione</small>
-    </div>
-    <div class="termine" style="--c:#9a7c2e">
-      <label>Termine medio (M)</label>
-      <input id="t-M" value="gli uomini" oninput="ricalcola()">
-      <small>compare solo nelle premesse</small>
-    </div>
-    <div class="termine" style="--c:#a1542f">
-      <label>Termine maggiore (P)</label>
-      <input id="t-P" value="i mortali" oninput="ricalcola()">
-      <small>predicato della conclusione</small>
-    </div>
+  <div class="et">I tre gruppi di cui parli</div>
+  <div class="gruppi">
+    <div class="gr" style="--c:#2d5a27"><label>Primo gruppo</label>
+      <input id="gA" value="greci" oninput="disegna()"></div>
+    <div class="gr" style="--c:#9a7c2e"><label>Secondo gruppo</label>
+      <input id="gB" value="uomini" oninput="disegna()"></div>
+    <div class="gr" style="--c:#a1542f"><label>Terzo gruppo</label>
+      <input id="gC" value="mortali" oninput="disegna()"></div>
   </div>
 
   <div class="et">Il ragionamento</div>
-  <div class="prop" id="p1">
-    <span class="prop-et">Premessa maggiore — contiene P e M</span>
-    <select id="f1" onchange="ricalcola()"></select>
-    <select id="s1" onchange="ricalcola()"></select>
-    <select id="d1" onchange="ricalcola()"></select>
-    <div class="frase" id="fr1"></div>
-  </div>
-  <div class="prop" id="p2">
-    <span class="prop-et">Premessa minore — contiene S e M</span>
-    <select id="f2" onchange="ricalcola()"></select>
-    <select id="s2" onchange="ricalcola()"></select>
-    <select id="d2" onchange="ricalcola()"></select>
-    <div class="frase" id="fr2"></div>
-  </div>
-  <div class="prop concl" id="p3">
-    <span class="prop-et">Conclusione — da S a P</span>
-    <select id="f3" onchange="ricalcola()"></select>
-    <div class="frase" id="fr3"></div>
+  <div class="frasi" id="frasi"></div>
+
+  <div class="opz">
+    <label><input type="checkbox" id="nonVuoti" onchange="disegna()">
+      Do per scontato che i tre gruppi non siano vuoti (che qualche greco esista davvero)</label>
   </div>
 
   <div class="esito" id="esito"></div>
+
+  <div class="avviso"><b>Perché disegna i cerchi.</b> Le regole del sillogismo si imparano a
+  memoria e si dimenticano. Un controesempio no: se vedi tre cerchi disposti in modo che le tue
+  premesse siano vere e la tua conclusione falsa, hai capito una volta per tutte perché quel
+  ragionamento non funziona. È lo stesso motivo per cui in matematica un controesempio vale più
+  di una dimostrazione: chiude la questione e si ricorda.</div>
 </div>
 
 <script>
 /* ══════════════════════════════════════════════════════════
-   IL RICOSTRUTTORE DI SILLOGISMI
-   Non c'è nessun elenco di forme valide da consultare: la
-   validità viene ricavata ogni volta dalle regole classiche.
-   È una scelta didattica, non tecnica — un elenco direbbe «sì»
-   o «no», le regole dicono perché.
+   IL RAGIONAMENTO TIENE?
+   Niente regole imparate a memoria, niente lettere S, M, P,
+   niente figure. La validità si calcola provando tutti i mondi
+   possibili: con tre gruppi il diagramma di Venn ha sette zone,
+   e ogni mondo dice quali zone hanno dentro qualcuno. Sono 128
+   mondi in tutto, si provano tutti in un lampo.
+
+   Valido vuol dire: in NESSUNO dei mondi in cui le premesse sono
+   vere la conclusione è falsa. Se un mondo così esiste, quello è
+   il controesempio - e si può disegnare, che è tutto il punto.
    ══════════════════════════════════════════════════════════ */
 
-/* Le quattro forme. `dist` dice se la proposizione distribuisce
-   (cioè parla di TUTTI gli individui di) il soggetto e il predicato:
-   è il nodo su cui si reggono metà delle regole. */
-/* I modelli sono tutti al plurale e tutti in minuscola: al plurale
-   perché «è gli uomini» non si dice e un solo modo di scrivere i
-   termini deve andare bene in tutte e quattro le forme; in minuscola
-   perché la maiuscola la mette chi compone la frase, e la conclusione
-   comincia con «Dunque,». */
-const FORME={
-  A:{nome:'Universale affermativa', modello:'tutti __S__ sono __P__',
-     neg:false, part:false, dist:{s:true,  p:false}},
-  E:{nome:'Universale negativa',    modello:'__S__ non sono mai __P__',
-     neg:true,  part:false, dist:{s:true,  p:true }},
-  I:{nome:'Particolare affermativa',modello:'alcuni fra __S__ sono __P__',
-     neg:false, part:true,  dist:{s:false, p:false}},
-  O:{nome:'Particolare negativa',   modello:'alcuni fra __S__ non sono __P__',
-     neg:true,  part:true,  dist:{s:false, p:true }}
-};
+/* le sette zone del diagramma, per appartenenza ai tre gruppi.
+   Il bit 1 è il primo gruppo, il 2 il secondo, il 4 il terzo. */
+const ZONE=[1,2,3,4,5,6,7];
+const dentro=(zona,gruppo)=>!!(zona & (1<<gruppo));
 
-const ESEMPI=[
-  {n:'Barbara — il classico', S:'i greci', M:'gli uomini', P:'i mortali',
-   f1:'A', o1:'MP', f2:'A', o2:'SM', f3:'A'},
-  {n:'Celarent', S:'i gatti', M:'i rettili', P:'gli animali a sangue freddo',
-   f1:'E', o1:'MP', f2:'A', o2:'SM', f3:'E'},
-  {n:'Medio non distribuito', S:'i filosofi', M:'i greci', P:'i mortali',
-   f1:'A', o1:'PM', f2:'A', o2:'SM', f3:'A'},
-  {n:'Due premesse negative', S:'i sofisti', M:'i matematici', P:'gli infallibili',
-   f1:'E', o1:'MP', f2:'E', o2:'SM', f3:'E'},
-  {n:'Conclusione troppo ampia', S:'i greci', M:'gli uomini', P:'i mortali',
-   f1:'A', o1:'MP', f2:'I', o2:'SM', f3:'A'},
-  {n:'Darapti — valido a una condizione', S:'i filosofi', M:'i greci', P:'i mortali',
-   f1:'A', o1:'MP', f2:'A', o2:'MS', f3:'I'}
+/* dove sta il centro di ogni zona nel disegno */
+const CENTRI={1:[-78,-52], 2:[78,-52], 3:[0,-64], 4:[0,86], 5:[-52,34], 6:[52,34], 7:[0,4]};
+
+/* L'articolo maschile plurale: «gli» davanti a vocale, s+consonante,
+   gn, ps, pn, x, y, z; «i» in tutti gli altri casi. Senza questo si
+   leggeva «tutti i uomini», che in una pagina di logica stona il doppio. */
+function art(parola){
+  const w=String(parola||'').trim().toLowerCase();
+  if(/^[aeiouàèéìòù]/.test(w)) return 'gli';
+  if(/^(s[bcdfglmnpqrtvz]|gn|ps|pn|x|y|z|i[aeou])/.test(w)) return 'gli';
+  return 'i';
+}
+const conArt = p => art(p)+' '+p;
+
+const FORME=[
+ {k:'tutti',   n:'Tutti i ...  sono ...',   testo:(a,b)=>`Tutti ${conArt(a)} sono ${b}`},
+ {k:'nessuno', n:'Nessun ...  è ...',       testo:(a,b)=>`Nessuno fra ${conArt(a)} è fra ${conArt(b)}`},
+ {k:'qualche', n:'Qualche ...  è ...',      testo:(a,b)=>`Alcuni fra ${conArt(a)} sono ${b}`},
+ {k:'qualcheNo',n:'Qualche ...  non è ...', testo:(a,b)=>`Alcuni fra ${conArt(a)} non sono ${b}`}
 ];
 
-function riempiSelect(){
-  const opzForme = Object.entries(FORME)
-    .map(([k,v])=>`<option value="${k}">${k} — ${v.nome}</option>`).join('');
-  ['f1','f2','f3'].forEach(id=>document.getElementById(id).innerHTML=opzForme);
-
-  /* le premesse possono disporre i termini in due modi: è questo
-     che genera le quattro figure del sillogismo */
-  document.getElementById('s1').innerHTML =
-    '<option value="MP">M soggetto, P predicato</option><option value="PM">P soggetto, M predicato</option>';
-  document.getElementById('s2').innerHTML =
-    '<option value="SM">S soggetto, M predicato</option><option value="MS">M soggetto, S predicato</option>';
-  document.getElementById('d1').style.display='none';
-  document.getElementById('d2').style.display='none';
-
-  document.getElementById('esempi').innerHTML = ESEMPI.map((e,i)=>
-    `<button class="esempio" onclick="carica(${i})">${e.n}</button>`).join('');
+/* una frase è vera in un mondo? Il mondo è l'insieme delle zone abitate. */
+function vera(f, mondo){
+  const {forma,a,b}=f;
+  const zoneA = ZONE.filter(z=>mondo.has(z) && dentro(z,a));
+  switch(forma){
+    case 'tutti':    return zoneA.every(z=>dentro(z,b));
+    case 'nessuno':  return zoneA.every(z=>!dentro(z,b));
+    case 'qualche':  return zoneA.some(z=>dentro(z,b));
+    case 'qualcheNo':return zoneA.some(z=>!dentro(z,b));
+  }
 }
+
+/* tutti i mondi: ogni sottoinsieme delle sette zone */
+function mondi(){
+  const out=[];
+  for(let m=0;m<128;m++){
+    const s=new Set();
+    ZONE.forEach((z,i)=>{ if(m & (1<<i)) s.add(z); });
+    out.push(s);
+  }
+  return out;
+}
+const TUTTI_I_MONDI=mondi();
+
+const gruppoAbitato=(mondo,g)=>ZONE.some(z=>mondo.has(z)&&dentro(z,g));
+
+/* ── il verdetto ──────────────────────────────────────────
+   Si cerca un mondo in cui le due premesse valgono e la
+   conclusione no. Fra i controesempi si tiene il più semplice,
+   cioè quello con meno zone abitate: è il più facile da leggere. */
+function verifica(p1,p2,c,nonVuoti){
+  let contro=null, premesseMaiVere=true;
+  for(const mondo of TUTTI_I_MONDI){
+    if(nonVuoti && ![0,1,2].every(g=>gruppoAbitato(mondo,g))) continue;
+    if(!vera(p1,mondo) || !vera(p2,mondo)) continue;
+    premesseMaiVere=false;
+    if(!vera(c,mondo)){
+      if(!contro || mondo.size<contro.size) contro=mondo;
+    }
+  }
+  return {valido:!contro, contro, premesseMaiVere};
+}
+
+const ESEMPI=[
+ {n:'Il classico', A:'greci',B:'uomini',C:'mortali',
+  p1:{forma:'tutti',a:0,b:1}, p2:{forma:'tutti',a:1,b:2}, c:{forma:'tutti',a:0,b:2}},
+ {n:'Sembra giusto ma non lo è', A:'cani',B:'mammiferi',C:'gatti',
+  p1:{forma:'tutti',a:0,b:1}, p2:{forma:'tutti',a:2,b:1}, c:{forma:'tutti',a:2,b:0}},
+ {n:'Due negazioni non concludono', A:'sofisti',B:'matematici',C:'infallibili',
+  p1:{forma:'nessuno',a:1,b:2}, p2:{forma:'nessuno',a:0,b:1}, c:{forma:'nessuno',a:0,b:2}},
+ {n:'Il salto da alcuni a tutti', A:'greci',B:'uomini',C:'mortali',
+  p1:{forma:'tutti',a:1,b:2}, p2:{forma:'qualche',a:0,b:1}, c:{forma:'tutti',a:0,b:2}},
+ {n:'Vale solo se qualcuno esiste', A:'filosofi',B:'greci',C:'mortali',
+  p1:{forma:'tutti',a:1,b:2}, p2:{forma:'tutti',a:1,b:0}, c:{forma:'qualche',a:0,b:2}}
+];
+
+let P1={forma:'tutti',a:0,b:1}, P2={forma:'tutti',a:1,b:2}, C={forma:'tutti',a:0,b:2};
+
+const nomi = () => [document.getElementById('gA').value.trim()||'primi',
+                    document.getElementById('gB').value.trim()||'secondi',
+                    document.getElementById('gC').value.trim()||'terzi'];
+const COLORI=['#2d5a27','#9a7c2e','#a1542f'];
+const esc = t => String(t).replace(/[<>&]/g,x=>({'<':'&lt;','>':'&gt;','&':'&amp;'}[x]));
 
 function carica(i){
   const e=ESEMPI[i];
-  document.getElementById('t-S').value=e.S;
-  document.getElementById('t-M').value=e.M;
-  document.getElementById('t-P').value=e.P;
-  document.getElementById('f1').value=e.f1; document.getElementById('s1').value=e.o1;
-  document.getElementById('f2').value=e.f2; document.getElementById('s2').value=e.o2;
-  document.getElementById('f3').value=e.f3;
-  ricalcola();
+  document.getElementById('gA').value=e.A;
+  document.getElementById('gB').value=e.B;
+  document.getElementById('gC').value=e.C;
+  P1={...e.p1}; P2={...e.p2}; C={...e.c};
+  document.getElementById('nonVuoti').checked = i===4;
+  disegna();
+}
+function cambia(quale,campo,val){
+  const f = quale==='p1'?P1 : quale==='p2'?P2 : C;
+  f[campo] = campo==='forma' ? val : +val;
+  disegna();
 }
 
-const T=()=>({S:document.getElementById('t-S').value.trim()||'S',
-              M:document.getElementById('t-M').value.trim()||'M',
-              P:document.getElementById('t-P').value.trim()||'P'});
-
-/* I termini si scrivono con l'articolo, perché da soggetto serve
-   («tutti i greci»). Da predicato l'articolo va invece tolto:
-   «sono uomini», non «sono gli uomini». */
-const senzaArticolo = s => s.replace(/^l['’]\s*/i,'').replace(/^(gli|il|lo|la|le|i)\s+/i,'');
-const maiuscola = s => s.charAt(0).toUpperCase()+s.slice(1);
-
-function frase(forma, sog, pred){
-  const t=T();
-  return FORME[forma].modello
-    .replace('__S__', t[sog])
-    .replace('__P__', senzaArticolo(t[pred]));
+function rigaFrase(quale, f, etichetta, concl){
+  const N=nomi();
+  const opzF=FORME.map(x=>`<option value="${x.k}"${f.forma===x.k?' selected':''}>${x.n}</option>`).join('');
+  const opzG=(sel)=>N.map((n,i)=>`<option value="${i}"${sel===i?' selected':''}>${esc(n)}</option>`).join('');
+  return `<div class="fr${concl?' concl':''}">
+    <span class="et-fr">${etichetta}</span>
+    <select onchange="cambia('${quale}','forma',this.value)">${opzF}</select>
+    <select onchange="cambia('${quale}','a',this.value)">${opzG(f.a)}</select>
+    <span style="color:#8a9e87">→</span>
+    <select onchange="cambia('${quale}','b',this.value)">${opzG(f.b)}</select>
+    <div class="letta">${concl?'Dunque, ':''}${esc(
+      (t=>concl ? t.charAt(0).toLowerCase()+t.slice(1) : t)
+      (FORME.find(x=>x.k===f.forma).testo(N[f.a],N[f.b])))}${concl?'.':''}</div>
+  </div>`;
 }
 
-/* Una proposizione, con dentro quali termini distribuisce.
-   Serve a rispondere alla domanda che regge tutto: di quel termine
-   sto parlando di tutti gli individui, o solo di qualcuno? */
-function proposizione(forma, sog, pred){
-  const f=FORME[forma];
-  const distribuiti=new Set();
-  if(f.dist.s) distribuiti.add(sog);
-  if(f.dist.p) distribuiti.add(pred);
-  return {forma, sog, pred, neg:f.neg, part:f.part, distribuiti};
-}
+function disegna(){
+  document.getElementById('frasi').innerHTML =
+      rigaFrase('p1',P1,'Prima premessa')
+    + rigaFrase('p2',P2,'Seconda premessa')
+    + rigaFrase('c', C, 'Conclusione', true);
 
-function figura(o1,o2){
-  /* 1ª: M-P, S-M · 2ª: P-M, S-M · 3ª: M-P, M-S · 4ª: P-M, M-S */
-  if(o1==='MP' && o2==='SM') return 1;
-  if(o1==='PM' && o2==='SM') return 2;
-  if(o1==='MP' && o2==='MS') return 3;
-  return 4;
-}
-
-function ricalcola(){
-  const f1=document.getElementById('f1').value, o1=document.getElementById('s1').value;
-  const f2=document.getElementById('f2').value, o2=document.getElementById('s2').value;
-  const f3=document.getElementById('f3').value;
-
-  const P1=proposizione(f1, o1[0], o1[1]);
-  const P2=proposizione(f2, o2[0], o2[1]);
-  const C =proposizione(f3, 'S', 'P');
-
-  document.getElementById('fr1').textContent=maiuscola(frase(f1,o1[0],o1[1]));
-  document.getElementById('fr2').textContent=maiuscola(frase(f2,o2[0],o2[1]));
-  document.getElementById('fr3').textContent='Dunque, '+frase(f3,'S','P');
-
-  /* Le sei regole promuovono ventiquattro modi, non quindici. I nove
-     in più (Darapti, Barbari, Felapton, Bramantip…) cavano una
-     conclusione particolare da due premesse universali: reggono solo
-     se i termini non sono vuoti, cioè se qualcuno esiste davvero.
-     La tradizione li accetta, la logica moderna no. Non li bocciamo:
-     lo diciamo, che è la cosa da imparare. */
-  const perSubalternazione = !P1.part && !P2.part && C.part;
-
-  const esiti=controlla(P1,P2,C);
-  disegnaEsito(esiti, f1+f2+f3, figura(o1,o2), perSubalternazione);
-}
-
-/* ── LE SEI REGOLE ─────────────────────────────────────────
-   Sono quelle della logica classica. Ognuna, se violata, ha un
-   nome proprio: dirlo allo studente vale più di un «non valido». */
-function controlla(P1,P2,C){
-  const distNellePremesse = t => P1.distribuiti.has(t) || P2.distribuiti.has(t);
-  const r=[];
-
-  r.push({ok: distNellePremesse('M'),
-    nome:'Il medio dev\'essere distribuito almeno una volta',
-    spiega:'Se in nessuna delle due premesse si parla di TUTTI gli individui del termine medio, le due premesse possono riferirsi a gruppi diversi e non si toccano mai.',
-    errore:'Medio non distribuito'});
-
-  const guai=[];
-  if(C.distribuiti.has('S') && !distNellePremesse('S')) guai.push('minore (S)');
-  if(C.distribuiti.has('P') && !distNellePremesse('P')) guai.push('maggiore (P)');
-  r.push({ok: guai.length===0,
-    nome:'Nessun termine può essere distribuito nella conclusione se non lo era in una premessa',
-    spiega: guai.length ? 'Qui si conclude su tutti gli individui del termine '+guai.join(' e ')+', ma le premesse ne avevano parlato solo in parte: la conclusione dice più di quanto le sia stato dato.'
-                        : 'La conclusione non dice più di quanto le premesse concedano.',
-    errore:'Termine illecito'});
-
-  r.push({ok: !(P1.neg && P2.neg),
-    nome:'Da due premesse negative non segue nulla',
-    spiega:'Sapere che due gruppi sono entrambi esclusi da un terzo non dice niente sul loro rapporto reciproco.',
-    errore:'Due negative'});
-
-  const unaNeg = P1.neg || P2.neg;
-  r.push({ok: unaNeg === C.neg,
-    nome:'La conclusione è negativa se e solo se lo è una premessa',
-    spiega: unaNeg && !C.neg ? 'Una premessa nega, ma la conclusione afferma: l\'esclusione non può sparire per strada.'
-          : (!unaNeg && C.neg ? 'Entrambe le premesse affermano, ma la conclusione nega: l\'esclusione arriva dal nulla.'
-                              : 'Qualità delle premesse e della conclusione si corrispondono.'),
-    errore:'Qualità non rispettata'});
-
-  r.push({ok: !(P1.part && P2.part),
-    nome:'Da due premesse particolari non segue nulla',
-    spiega:'«Qualcuno» e «qualcuno» possono essere due gruppi di persone del tutto diversi.',
-    errore:'Due particolari'});
-
-  const unaPart = P1.part || P2.part;
-  r.push({ok: !(unaPart && !C.part),
-    nome:'Se una premessa è particolare, la conclusione dev\'essere particolare',
-    spiega: unaPart && !C.part ? 'Una premessa parla solo di qualcuno, ma la conclusione parla di tutti: il salto non è consentito.'
-                               : 'La quantità della conclusione non eccede quella delle premesse.',
-    errore:'Quantità non rispettata'});
-
-  return r;
-}
-
-function disegnaEsito(regole, modo, fig, perSubalternazione){
-  const rotte=regole.filter(r=>!r.ok);
-  const valido=rotte.length===0;
-  const condizionato=valido && perSubalternazione;
+  const nonVuoti=document.getElementById('nonVuoti').checked;
+  const r=verifica(P1,P2,C,nonVuoti);
+  const N=nomi();
   const box=document.getElementById('esito');
-  box.className='esito '+(valido?'valido':'invalido');
-  box.innerHTML=
-    '<div class="esito-titolo">'
-    + (valido ? (condizionato?'Il ragionamento è valido, a una condizione':'Il ragionamento è valido')
-              : 'Il ragionamento non tiene')+'</div>'
-    + '<div class="sigla">Modo '+modo+' · '+fig+'ª figura'
-    + (valido?'' : ' · '+rotte.map(r=>r.errore).join(' · '))+'</div>'
-    + '<ul class="regole">'
-    + regole.map(r=>'<li class="regola '+(r.ok?'ok':'ko')+'"><i>'+(r.ok?'✓':'✕')+'</i>'
-        + '<span><b>'+r.nome+'.</b> '+r.spiega+'</span></li>').join('')
-    + '</ul>'
-    + (condizionato
-      ? '<p class="nota">Le sei regole sono tutte rispettate, ma qui da due premesse universali si cava una conclusione particolare: si passa da «tutti» a «qualcuno». Il passaggio vale solo se quel qualcuno esiste davvero. «Tutti i quadrati rotondi sono figure, tutti i quadrati rotondi hanno quattro lati, dunque <em>qualche</em> figura ha quattro lati»: le regole non protestano, eppure di quadrati rotondi non ce n\'è nessuno. Aristotele accettava questi modi, la logica moderna li respinge.</p>'
-      : valido
-      ? '<p class="nota">Valido non vuol dire vero: se le premesse sono false, una forma corretta porta lo stesso a una conclusione falsa. La logica garantisce il passaggio, non il punto di partenza.</p>'
-      : '<p class="nota">Un ragionamento può essere sbagliato e avere lo stesso una conclusione vera — per caso. È il motivo per cui si studia la forma e non solo il risultato.</p>');
+
+  if(r.premesseMaiVere){
+    box.className='esito';
+    box.innerHTML=`<div class="esito-t">Queste due premesse non stanno in piedi insieme</div>
+      <div class="esito-s">Non esiste nessun modo di fare il mondo in cui siano vere tutte e due.
+      Da premesse impossibili si ricava qualunque cosa, quindi la domanda sulla conclusione non
+      ha senso. Prova a cambiarne una.</div>`;
+    return;
+  }
+
+  if(r.valido){
+    box.className='esito tiene';
+    box.innerHTML=`<div class="esito-t">Il ragionamento tiene</div>
+      <div class="esito-s">Ho provato tutti i modi possibili di disporre i tre gruppi:
+      <strong>in nessuno di essi</strong> le due premesse sono vere e la conclusione falsa.
+      Se le premesse sono vere, la conclusione lo è per forza.</div>
+      <div class="esito-s" style="margin-top:.6rem;color:#5a6b58">
+      Attenzione: <em>tiene</em> non vuol dire <em>vero</em>. Se una premessa è falsa, un
+      ragionamento che tiene porta lo stesso a una conclusione falsa. Qui si controlla il
+      passaggio, non il punto di partenza.</div>`
+      + (nonVuoti ? `<div class="esito-s" style="margin-top:.6rem;color:#8a6a1e">
+        Tiene <strong>perché hai spuntato</strong> che i gruppi non sono vuoti. Togli la spunta
+        e guarda che cosa succede.</div>` : '');
+    return;
+  }
+
+  /* c'è un controesempio: si disegna */
+  const m=r.contro;
+  box.className='esito cade';
+  box.innerHTML=`<div class="esito-t">Il ragionamento non tiene</div>
+    <div class="esito-s">Ecco un mondo in cui <strong>le tue due premesse sono vere</strong>
+    e <strong>la tua conclusione è falsa</strong>. Basta questo: se un caso così è possibile,
+    la conclusione non segue.</div>
+    <div class="prova">
+      <div>
+        <div class="disegno">${venn(m,N)}</div>
+        <div class="legenda">${N.map((n,i)=>
+          `<span><i style="background:${COLORI[i]}"></i>${esc(n)}</span>`).join('')}</div>
+      </div>
+      <div class="spiega">${racconta(m,N)}</div>
+    </div>`;
 }
 
-riempiSelect(); carica(0);
+/* ── il racconto del controesempio, in italiano ────────────── */
+function racconta(mondo,N){
+  const abitate=ZONE.filter(z=>mondo.has(z));
+  const descrivi=z=>{
+    const dentroA=[0,1,2].filter(g=>dentro(z,g)).map(g=>N[g]);
+    const fuori=[0,1,2].filter(g=>!dentro(z,g)).map(g=>N[g]);
+    if(!fuori.length) return `qualcuno che è insieme ${dentroA.join(', ')}`;
+    return `qualcuno che è ${dentroA.join(' e ')}, ma non ${fuori.join(' né ')}`;
+  };
+  let s='<b>In questo mondo esiste:</b><ul>';
+  abitate.forEach(z=>{ s+=`<li>${descrivi(z)};</li>`; });
+  s+='</ul>';
+  s+=`<p style="margin-top:.6rem">Controlla tu stesso: le due premesse reggono, la conclusione no.
+      È il modo più rapido per capire dove il ragionamento perde il filo.</p>`;
+  if(!document.getElementById('nonVuoti').checked){
+    const conSpunta=verifica(P1,P2,C,true);
+    if(conSpunta.valido) s+=`<p style="margin-top:.6rem;color:#8a6a1e"><b>Però attenzione:</b>
+      se dài per scontato che i tre gruppi non siano vuoti, questo ragionamento
+      <strong>tiene</strong>. Spunta la casella qui sopra e riguarda. È una differenza vera:
+      Aristotele lo accettava, la logica di oggi no.</p>`;
+  }
+  return s;
+}
+
+/* ── il disegno ────────────────────────────────────────────── */
+function venn(mondo,N){
+  const R=78;
+  const c=[[-42,-24],[42,-24],[0,46]];
+  let s=`<svg viewBox="-150 -130 300 270" role="img" aria-label="diagramma dei tre gruppi">`;
+  c.forEach((p,i)=>{
+    s+=`<circle cx="${p[0]}" cy="${p[1]}" r="${R}" fill="${COLORI[i]}" fill-opacity=".07"
+         stroke="${COLORI[i]}" stroke-width="1.8"/>`;
+  });
+  /* un pallino in ogni zona abitata: si vede a colpo d'occhio
+     chi c'è e chi non c'è */
+  ZONE.forEach(z=>{
+    if(!mondo.has(z)) return;
+    const [x,y]=CENTRI[z];
+    s+=`<circle cx="${x}" cy="${y}" r="6.5" fill="#1c2b1a"/>`;
+    s+=`<circle cx="${x}" cy="${y}" r="6.5" fill="none" stroke="#fdfcf8" stroke-width="1.6"/>`;
+  });
+  const et=[[-108,-96],[108,-96],[0,140]];
+  c.forEach((p,i)=>{
+    s+=`<text x="${et[i][0]}" y="${et[i][1]}" text-anchor="middle"
+         font-family="Jost,sans-serif" font-size="13" font-weight="600"
+         fill="${COLORI[i]}">${esc(N[i])}</text>`;
+  });
+  s+='</svg>';
+  return s;
+}
+
+document.getElementById('esempi').innerHTML = ESEMPI.map((e,i)=>
+  `<button class="mini" onclick="carica(${i})">${esc(e.n)}</button>`).join('');
+disegna();
 </script>
 </body>
 </html>
