@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lettura annotata — Idearca</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Jost',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  background:#faf8f3;color:#1c2b1a;font-weight:300;-webkit-font-smoothing:antialiased}
+.w{max-width:1080px;margin:0 auto;padding:2rem 1.5rem 4rem}
+.k{font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:#8a9e87;font-weight:600}
+h1{font-family:'Cormorant Garamond',Georgia,serif;font-size:2.4rem;font-weight:400;margin:.3rem 0 .5rem}
+.sub{font-size:.92rem;line-height:1.7;color:#5a6b58;max-width:66ch}
+.et{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:#9a7c2e;
+  font-weight:700;margin:1.6rem 0 .7rem;display:flex;align-items:center;gap:.6rem}
+.et::after{content:'';flex:1;height:1px;background:rgba(45,90,39,.13)}
+.b{font:inherit;font-size:.77rem;padding:.5rem 1.05rem;border-radius:100px;cursor:pointer;
+  border:1.5px solid rgba(45,90,39,.22);background:#fff;color:#2d5a27;font-weight:500;transition:all .16s}
+.b:hover{background:#2d5a27;color:#fff;border-color:#2d5a27}
+.b.pieno{background:#2d5a27;color:#fff;border-color:#2d5a27}
+.b.acceso{background:#2d5a27;color:#fff;border-color:#2d5a27}
+.b.rosso{color:#c0453b;border-color:rgba(192,69,59,.3)}
+.b.rosso:hover{background:#c0453b;color:#fff}
+.riga{display:flex;gap:.5rem;flex-wrap:wrap;align-items:center}
+input,textarea,select{font:inherit;font-size:.86rem;padding:.48rem .7rem;border-radius:9px;
+  border:1px solid rgba(45,90,39,.2);background:#fff;color:#1c2b1a;outline:none;width:100%}
+input:focus,textarea:focus{border-color:#2d5a27}
+textarea{resize:vertical;line-height:1.5}
+
+/* chi sei */
+.tessera{border:1px solid rgba(45,90,39,.16);border-radius:12px;background:#fff;padding:.9rem 1.1rem}
+.tessera .due{display:grid;grid-template-columns:2fr 1fr;gap:.5rem}
+
+/* il brano */
+.impianto{display:grid;grid-template-columns:1fr 340px;gap:1rem;align-items:start;margin-top:.8rem}
+.brano{border:1px solid rgba(45,90,39,.14);border-radius:14px;background:#fff;padding:1.6rem 1.8rem}
+.brano .tit{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.9rem;font-weight:600;line-height:1.15}
+.brano .aut{font-size:.75rem;letter-spacing:.1em;color:#9a7c2e;font-weight:600;margin:.2rem 0 .3rem}
+.consegna{font-size:.84rem;line-height:1.7;color:#5a6b58;background:#f6f3ec;border-left:3px solid #9a7c2e;
+  border-radius:0 9px 9px 0;padding:.7rem .9rem;margin:.8rem 0 1.2rem}
+.testo{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.16rem;line-height:2.05;color:#22301f}
+.fr{cursor:pointer;border-radius:4px;padding:.06rem .1rem;transition:background .14s;
+  border-bottom:2px solid transparent}
+.fr:hover{background:rgba(45,90,39,.07)}
+.fr.scelta{background:rgba(45,90,39,.13);border-bottom-color:#2d5a27}
+.fr[data-n]{border-bottom-color:var(--c)}
+.fr .pallini{display:inline-flex;gap:2px;vertical-align:.35em;margin-left:.22rem}
+.fr .pallini i{width:6px;height:6px;border-radius:50%;background:var(--c);display:block}
+
+/* colonna laterale */
+.lato{position:sticky;top:1rem;display:flex;flex-direction:column;gap:.7rem}
+.scatola{border:1px solid rgba(45,90,39,.14);border-radius:12px;background:#fff;padding:.9rem 1rem}
+.scatola h3{font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:#9a7c2e;
+  font-weight:700;margin-bottom:.55rem}
+.tipi{display:grid;grid-template-columns:1fr 1fr;gap:.35rem;margin-bottom:.5rem}
+.tp{font:inherit;font-size:.73rem;padding:.42rem .5rem;border-radius:8px;cursor:pointer;
+  border:1.5px solid var(--c);background:#fff;color:var(--c);font-weight:600;text-align:left;
+  display:flex;align-items:center;gap:.35rem}
+.tp::before{content:'';width:8px;height:8px;border-radius:50%;background:var(--c);flex:none}
+.tp.attivo{background:var(--c);color:#fff}
+.tp.attivo::before{background:#fff}
+
+.nota{border-left:3px solid var(--c);background:#fdfcf8;border-radius:0 8px 8px 0;
+  padding:.5rem .65rem;margin-bottom:.4rem}
+.nota .chi{font-size:.68rem;color:#8a9e87;font-weight:600;display:flex;gap:.4rem;align-items:center}
+.nota .chi b{color:var(--c);text-transform:uppercase;letter-spacing:.08em;font-size:.6rem}
+.nota .txt{font-size:.83rem;line-height:1.6;color:#3d4a3b;margin-top:.15rem}
+.nota .rep{margin-top:.4rem;padding-top:.4rem;border-top:1px dashed rgba(45,90,39,.2);
+  font-size:.8rem;line-height:1.6;color:#2d5a27}
+.nota .rep b{font-weight:600}
+.vuoto{color:#b3bdb1;font-size:.84rem;line-height:1.6;font-style:italic}
+
+/* la mappa del docente */
+.mappa{display:flex;flex-direction:column;gap:.25rem;max-height:230px;overflow-y:auto}
+.mr{display:flex;align-items:center;gap:.5rem;font-size:.76rem;cursor:pointer;padding:.15rem .3rem;
+  border-radius:6px}
+.mr:hover{background:rgba(45,90,39,.06)}
+.mr .n{flex:none;width:1.6rem;color:#8a9e87;font-size:.68rem}
+.mr .barra{flex:1;height:12px;border-radius:100px;background:#eee9dd;overflow:hidden;display:flex}
+.mr .barra div{height:100%}
+.mr .q{flex:none;font-weight:600;color:#2d5a27;min-width:1.4rem;text-align:right}
+.mr.caldo .q{color:#c0453b}
+
+.legenda{display:flex;gap:.7rem;flex-wrap:wrap;font-size:.7rem;color:#5a6b58;margin-top:.5rem}
+.legenda span{display:flex;align-items:center;gap:.3rem}
+.legenda i{width:8px;height:8px;border-radius:50%}
+
+.avviso{margin-top:1.2rem;padding:.95rem 1.15rem;border-left:3px solid #9a7c2e;background:#f6f3ec;
+  border-radius:0 10px 10px 0;font-size:.83rem;line-height:1.7;color:#5a6b58}
+.avviso b{color:#8a6a1e;font-weight:600}
+.esito{font-size:.78rem;color:#5a6b58}
+@media(max-width:820px){
+  .w{padding:1.4rem 1rem 3rem}h1{font-size:1.9rem}
+  .impianto{grid-template-columns:1fr}
+  .lato{position:static}
+  .brano{padding:1.1rem 1.15rem}
+  .testo{font-size:1.08rem;line-height:1.95}
+}
+</style>
+</head>
+<body>
+<div class="w">
+  <div class="k">Idearca · Prove</div>
+  <h1>Lettura annotata</h1>
+  <p class="sub">Un brano su cui la classe scrive insieme. Si clicca una frase e ci si attacca
+  un dubbio, un'osservazione, un collegamento. Non è un compito da consegnare: è un testo che
+  <strong>porta i segni di chi l'ha letto</strong>, e dice al docente su quale riga la classe
+  si è fermata — prima della lezione, non dopo la verifica.</p>
+
+  <div class="et">Chi sei</div>
+  <div class="tessera">
+    <div class="due">
+      <input id="chi" placeholder="Nome e cognome" oninput="salvaChi()">
+      <input id="classe" placeholder="Classe" oninput="salvaChi()">
+    </div>
+    <div class="riga" style="margin-top:.5rem">
+      <select id="scegliBrano" onchange="apriBrano(this.value)" style="flex:1"></select>
+      <span class="esito" id="statoDocente"></span>
+    </div>
+  </div>
+
+  <div class="impianto">
+    <div class="brano" id="brano"></div>
+    <div class="lato" id="lato"></div>
+  </div>
+
+  <div class="avviso" id="avviso"></div>
+</div>
+
+<script>
+/* ══════════════════════════════════════════════════════════
+   LETTURA ANNOTATA
+   Perché le annotazioni sono visibili a tutti: un dubbio scritto
+   in privato al docente resta un fatto fra due persone; lo stesso
+   dubbio scritto sul margine, dove lo leggono i compagni, quasi
+   sempre riceve una risposta da un compagno prima che dal docente.
+   È il pezzo di didattica che questa pagina prova a comprare.
+
+   Il docente vede in più una cosa sola, ma è quella che conta:
+   la mappa di quante note sono cadute su ogni frase. Se metà
+   classe si è fermata sulla stessa riga, quella riga va rifatta.
+   ══════════════════════════════════════════════════════════ */
+
+const SB='https://mqjceddrbhpwqjomhohm.supabase.co';
+const KEY='sb_publishable_D7vDsaervKNJNgdJwknDpQ_Vuuf9CeJ';
+const token=()=>sessionStorage.getItem('atk')||'';
+const capo=e=>Object.assign({'apikey':KEY,'Authorization':'Bearer '+(token()||KEY)},e||{});
+const docente=()=>!!token();
+
+const TIPI=[
+ {k:'dubbio',       n:'Non ho capito',   c:'#c0453b'},
+ {k:'importante',   n:'Qui sta il punto',c:'#9a7c2e'},
+ {k:'commento',     n:'Osservazione',    c:'#2d5a27'},
+ {k:'collegamento', n:'Si collega a…',   c:'#3f6d8c'}
+];
+const tipoDi = k => TIPI.find(t=>t.k===k)||TIPI[2];
+
+let brani=[], brano=null, frasi=[], note=[], sceltaFrase=-1, tipoScelto='dubbio';
+
+/* ── dividere in frasi ────────────────────────────────────
+   Stesso criterio dell'analizzatore: le abbreviazioni col punto
+   non devono tagliare. L'indice della frase è quello che finisce
+   nel database, quindi questa funzione non va cambiata a cuor
+   leggero: cambiarla sposterebbe le note già salvate. */
+const SEGNO='';
+const ABBR=['ecc','cfr','sec','pag','pp','vol','fig','art','cap','sig','prof','dott','a\\.C','d\\.C'];
+function inFrasi(testo){
+  let t=String(testo||'').replace(/\s+/g,' ').trim();
+  if(!t) return [];
+  ABBR.forEach(a=>{ t=t.replace(new RegExp('\\b('+a+')\\.','gi'),'$1'+SEGNO); });
+  return t.split(/(?<=[.!?…])\s+/)
+          .map(p=>p.split(SEGNO).join('.').trim()).filter(Boolean);
+}
+
+const esc = t => String(t??'').replace(/[<>&]/g,c=>({'<':'&lt;','>':'&gt;','&':'&amp;'}[c]));
+
+/* ── memoria di chi sei ───────────────────────────────────── */
+function salvaChi(){
+  try{ localStorage.setItem('idearca-lettore', JSON.stringify({
+    chi:document.getElementById('chi').value, classe:document.getElementById('classe').value})); }catch(e){}
+}
+(function riprendiChi(){
+  try{ const g=JSON.parse(localStorage.getItem('idearca-lettore')||'null');
+    if(g){ document.getElementById('chi').value=g.chi||'';
+           document.getElementById('classe').value=g.classe||''; } }catch(e){}
+})();
+
+/* ── caricamento ──────────────────────────────────────────── */
+async function caricaBrani(){
+  try{
+    const r=await fetch(SB+'/rest/v1/rpc/brani_aperti',{
+      method:'POST', headers:capo({'Content-Type':'application/json'}), body:'{}'});
+    if(!r.ok) throw new Error(await r.text());
+    brani=await r.json();
+  }catch(e){ brani=[]; }
+
+  const sel=document.getElementById('scegliBrano');
+  document.getElementById('statoDocente').textContent = docente() ? 'Vista docente' : '';
+  if(!brani.length){
+    sel.innerHTML='<option>Nessun brano aperto</option>';
+    document.getElementById('brano').innerHTML=
+      '<div class="vuoto">Al momento non c\'è nessun brano da leggere. '
+      +'Si aprono quando il professore li apre.</div>';
+    document.getElementById('lato').innerHTML='';
+    return;
+  }
+  sel.innerHTML=brani.map(b=>{
+    const o=document.createElement('option');
+    o.value=b.id; o.textContent=b.titolo+(b.autore?' — '+b.autore:'');
+    return o.outerHTML;
+  }).join('');
+  apriBrano(brani[0].id);
+}
+
+async function apriBrano(id){
+  brano=brani.find(b=>String(b.id)===String(id));
+  if(!brano) return;
+  frasi=inFrasi(brano.testo);
+  sceltaFrase=-1;
+  await caricaNote();
+  disegna();
+}
+
+async function caricaNote(){
+  if(!brano){ note=[]; return; }
+  try{
+    const r=await fetch(SB+'/rest/v1/annotazioni?brano_id=eq.'+brano.id
+      +'&select=id,frase,studente,tipo,testo,risposta,creato_il&order=creato_il.asc',
+      {headers:capo()});
+    note = r.ok ? await r.json() : [];
+  }catch(e){ note=[]; }
+}
+
+/* ── disegno ──────────────────────────────────────────────── */
+function disegna(){
+  if(!brano) return;
+  const perFrase={};
+  note.forEach(n=>{ (perFrase[n.frase]=perFrase[n.frase]||[]).push(n); });
+
+  /* il testo: ogni frase è cliccabile e porta i pallini delle note */
+  const corpo=frasi.map((f,i)=>{
+    const qui=perFrase[i]||[];
+    const dom=qui.filter(n=>n.tipo==='dubbio').length;
+    /* il colore del sottolineato è quello del tipo più frequente */
+    let c='transparent';
+    if(qui.length){
+      const conteggi={};
+      qui.forEach(n=>conteggi[n.tipo]=(conteggi[n.tipo]||0)+1);
+      const top=Object.entries(conteggi).sort((a,b)=>b[1]-a[1])[0][0];
+      c=tipoDi(top).c;
+    }
+    const pallini=qui.length
+      ? '<span class="pallini">'+qui.slice(0,5).map(n=>
+          `<i style="--c:${tipoDi(n.tipo).c}"></i>`).join('')+'</span>' : '';
+    return `<span class="fr${i===sceltaFrase?' scelta':''}" style="--c:${c}"
+      ${qui.length?`data-n="${qui.length}"`:''} onclick="scegliFrase(${i})"
+      title="${qui.length?qui.length+' note':'Clicca per annotare'}">${esc(f)}${pallini}</span> `;
+  }).join('');
+
+  document.getElementById('brano').innerHTML=`
+    <div class="tit">${esc(brano.titolo)}</div>
+    <div class="aut">${esc(brano.autore||'')}${brano.autore&&brano.fonte?' · ':''}${esc(brano.fonte||'')}</div>
+    ${brano.consegna?`<div class="consegna">${esc(brano.consegna)}</div>`:''}
+    <div class="testo">${corpo}</div>`;
+
+  disegnaLato(perFrase);
+
+  const dubbi=note.filter(n=>n.tipo==='dubbio').length;
+  document.getElementById('avviso').innerHTML = docente()
+    ? `<b>Che cosa stai guardando.</b> ${note.length} not${note.length===1?'a':'e'} da
+       ${new Set(note.map(n=>n.studente)).size} letto${new Set(note.map(n=>n.studente)).size===1?'re':'ri'},
+       di cui ${dubbi} «non ho capito». La mappa qui a lato ordina le frasi per quante note hanno
+       raccolto: le righe in cima sono quelle su cui la classe si è fermata, ed è da lì che
+       conviene far ripartire la lezione.`
+    : `<b>Le note le vedono tutti.</b> È il punto dell'esercizio: un dubbio scritto sul margine,
+       dove lo leggono i compagni, di solito riceve una risposta prima di quella del professore.
+       Scrivi anche quando non sei sicuro — soprattutto quando non sei sicuro.`;
+}
+
+function disegnaLato(perFrase){
+  const L=document.getElementById('lato');
+  let html='';
+
+  /* il pannello per scrivere */
+  html+=`<div class="scatola"><h3>${sceltaFrase<0?'Scegli una frase':'Frase '+(sceltaFrase+1)}</h3>`;
+  if(sceltaFrase<0){
+    html+='<div class="vuoto">Clicca una frase del brano per annotarla.</div>';
+  } else {
+    html+=`<div style="font-size:.8rem;line-height:1.55;color:#5a6b58;font-style:italic;
+             margin-bottom:.6rem;padding-left:.6rem;border-left:2px solid rgba(45,90,39,.2)">
+             ${esc(frasi[sceltaFrase].slice(0,120))}${frasi[sceltaFrase].length>120?'…':''}</div>
+      <div class="tipi">`+TIPI.map(t=>
+        `<button class="tp${t.k===tipoScelto?' attivo':''}" style="--c:${t.c}"
+           onclick="tipoScelto='${t.k}';disegna()">${t.n}</button>`).join('')+`</div>
+      <textarea id="testoNota" rows="3" placeholder="Che cosa vuoi dire su questa frase?"></textarea>
+      <div class="riga" style="margin-top:.5rem">
+        <button class="b pieno" onclick="invia()">Attacca la nota</button>
+        <span class="esito" id="esitoNota"></span>
+      </div>`;
+  }
+  html+='</div>';
+
+  /* le note della frase scelta, o tutte */
+  const mostra = sceltaFrase<0 ? note : (perFrase[sceltaFrase]||[]);
+  html+=`<div class="scatola"><h3>${sceltaFrase<0
+      ? 'Tutte le note ('+note.length+')' : 'Note su questa frase ('+mostra.length+')'}</h3>`;
+  html+= mostra.length ? mostra.map(n=>{
+      const t=tipoDi(n.tipo);
+      return `<div class="nota" style="--c:${t.c}">
+        <div class="chi"><b>${t.n}</b>${esc(n.studente)}</div>
+        <div class="txt">${esc(n.testo)}</div>
+        ${n.risposta?`<div class="rep"><b>Il professore:</b> ${esc(n.risposta)}</div>`:''}
+        ${docente()?`<div class="riga" style="margin-top:.4rem">
+           <button class="b" style="font-size:.68rem;padding:.28rem .7rem"
+             onclick="rispondi(${n.id})">${n.risposta?'Cambia risposta':'Rispondi'}</button>
+           <button class="b rosso" style="font-size:.68rem;padding:.28rem .7rem"
+             onclick="cancella(${n.id})">Togli</button></div>`:''}
+      </div>`;
+    }).join('') : '<div class="vuoto">Ancora nessuna nota.</div>';
+  html+='</div>';
+
+  /* la mappa: solo per il docente */
+  if(docente()){
+    const righe=frasi.map((f,i)=>({i, note:(perFrase[i]||[])}))
+                     .filter(r=>r.note.length)
+                     .sort((a,b)=>b.note.length-a.note.length);
+    const max=Math.max(1,...righe.map(r=>r.note.length));
+    html+=`<div class="scatola"><h3>Dove si è fermata la classe</h3>`;
+    html+= righe.length ? `<div class="mappa">`+righe.map(r=>{
+        const conteggi={};
+        r.note.forEach(n=>conteggi[n.tipo]=(conteggi[n.tipo]||0)+1);
+        const barra=TIPI.filter(t=>conteggi[t.k]).map(t=>
+          `<div style="width:${conteggi[t.k]/max*100}%;background:${t.c}"></div>`).join('');
+        return `<div class="mr${r.note.length>=max*0.7?' caldo':''}" onclick="scegliFrase(${r.i})"
+          title="${esc(frasi[r.i].slice(0,90))}">
+          <span class="n">${r.i+1}</span><span class="barra">${barra}</span>
+          <span class="q">${r.note.length}</span></div>`;
+      }).join('')+'</div>'
+      : '<div class="vuoto">Nessuna nota ancora.</div>';
+    html+='<div class="legenda">'+TIPI.map(t=>
+      `<span><i style="background:${t.c}"></i>${t.n}</span>`).join('')+'</div></div>';
+  }
+
+  L.innerHTML=html;
+}
+
+function scegliFrase(i){
+  sceltaFrase = (sceltaFrase===i) ? -1 : i;
+  disegna();
+  if(sceltaFrase>=0) document.getElementById('testoNota')?.focus();
+}
+
+/* ── scrivere ─────────────────────────────────────────────── */
+async function invia(){
+  const chi=document.getElementById('chi').value.trim();
+  const testo=(document.getElementById('testoNota')?.value||'').trim();
+  const e=document.getElementById('esitoNota');
+  if(!chi){ e.textContent='Scrivi il tuo nome in cima.'; document.getElementById('chi').focus(); return; }
+  if(!testo){ e.textContent='La nota è vuota.'; return; }
+  e.textContent='Attacco…';
+  try{
+    const r=await fetch(SB+'/rest/v1/annotazioni',{
+      method:'POST',
+      headers:capo({'Content-Type':'application/json','Prefer':'return=minimal'}),
+      body:JSON.stringify({brano_id:brano.id, frase:sceltaFrase, studente:chi,
+                           tipo:tipoScelto, testo})
+    });
+    if(!r.ok) throw new Error((await r.text()).slice(0,150));
+    await caricaNote(); disegna();
+  }catch(err){
+    const e2=document.getElementById('esitoNota');
+    if(e2) e2.textContent='Non inviata: '+err.message;
+  }
+}
+
+async function rispondi(id){
+  const n=note.find(x=>x.id===id); if(!n) return;
+  const r=prompt('La tua risposta a «'+n.studente+'»:', n.risposta||'');
+  if(r===null) return;
+  try{
+    await fetch(SB+'/rest/v1/annotazioni?id=eq.'+id,{
+      method:'PATCH',
+      headers:capo({'Content-Type':'application/json','Prefer':'return=minimal'}),
+      body:JSON.stringify({risposta:r.trim()||null})});
+    await caricaNote(); disegna();
+  }catch(e){}
+}
+async function cancella(id){
+  if(!confirm('Tolgo questa nota?')) return;
+  try{
+    await fetch(SB+'/rest/v1/annotazioni?id=eq.'+id,{method:'DELETE',headers:capo()});
+    await caricaNote(); disegna();
+  }catch(e){}
+}
+
+caricaBrani();
+/* le note degli altri arrivano da sole: in aula si vede la pagina
+   riempirsi mentre la classe legge */
+setInterval(async()=>{ if(brano && !document.hidden){ await caricaNote(); disegna(); } }, 12000);
+</script>
+</body>
+</html>
