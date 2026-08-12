@@ -62,32 +62,51 @@ h1{font-family:'Cormorant Garamond',Georgia,serif;font-size:2.4rem;font-weight:4
   .carte{grid-template-columns:1fr}.due{grid-template-columns:1fr}
   #anno{font-size:2.6rem}
 }
+
+/* il riquadro «com'era esserci» e i collegamenti fuori */
+.ca.esserci ul{margin:0;padding-left:1.05rem}
+.ca.esserci li{font-size:.85rem;line-height:1.65;color:#3d4a3b;margin-bottom:.4rem}
+.ca.esserci li:last-child{margin-bottom:0}
+.appro{display:flex;flex-wrap:wrap;gap:.45rem;align-items:center;margin-top:.9rem}
+.appro b{font-size:.58rem;letter-spacing:.14em;text-transform:uppercase;color:#9a7c2e;
+  font-weight:700;margin-right:.2rem}
+.wk{font:inherit;font-size:.76rem;padding:.32rem .85rem;border-radius:100px;
+  border:1px solid rgba(45,90,39,.2);background:#fff;color:#2d5a27;text-decoration:none;
+  transition:all .16s;display:inline-block}
+.wk:hover{background:#2d5a27;color:#fff;border-color:#2d5a27}
+.wk::after{content:' ↗';font-size:.62rem;opacity:.6}
+.gia .wk,.no .wk{border:0;background:none;padding:0;border-radius:0;
+  border-bottom:1px solid rgba(45,90,39,.35);font-weight:inherit;font-size:inherit}
+.gia .wk:hover,.no .wk:hover{background:none;color:#1c2b1a}
 </style>
 </head>
 <body>
 <div class="w">
   <div class="k">Idearca · Prove</div>
   <h1>Macchina del contesto</h1>
-  <p class="sub">Si mette un anno e si guarda com'era la giornata di chi ci viveva: che cosa
-  leggeva, che cosa ascoltava, che cosa aveva addosso, quanto ci metteva ad andare da Roma a
-  Milano. Serve a togliere <strong>la data dall'astratto</strong>: 1650 non è un numero, è
-  un posto in cui qualcuno si è svegliato la mattina.</p>
+  <p class="sub">Si mette un anno — dal 500 a.C. a oggi — e si guarda com'era la giornata di
+  chi ci viveva: che cosa leggeva, che cosa ascoltava, che cosa aveva addosso, quanto ci
+  metteva ad andare da un posto all'altro. Serve a togliere <strong>la data
+  dall'astratto</strong>: 1650 non è un numero, è un posto in cui qualcuno si è svegliato
+  la mattina.</p>
 
   <div class="quadrante" style="margin-top:1.2rem">
     <div class="anno-riga">
-      <input id="anno" type="text" inputmode="numeric" value="1650" maxlength="4">
-      <input id="cursore" type="range" min="1500" max="2025" value="1650">
+      <input id="anno" type="text" inputmode="numeric" value="1650" maxlength="5">
+      <input id="cursore" type="range" min="-500" max="2025" value="1650">
       <span class="epoca" id="epoca"></span>
     </div>
     <div class="salti" id="salti"></div>
   </div>
 
-  <p class="sub" style="font-size:.78rem;margin-top:.9rem;color:#8a9e87">Le sei schede
-  descrivono <em>l'epoca intera</em>, non il singolo anno: al 1650 la scheda dei libri cita già
-  Newton, che arriverà nel 1687. Il pannello azzurro qui sotto è invece esatto all'anno — ed è
-  lì che si vede la differenza fra «in quel secolo si leggeva» e «quel giorno esisteva».</p>
+  <p class="sub" style="font-size:.78rem;margin-top:.9rem;color:#8a9e87">Le schede descrivono
+  <em>l'epoca intera</em>, non il singolo anno: al 1650 la scheda dei libri cita già Newton,
+  che arriverà nel 1687. Il pannello azzurro qui sotto è invece esatto all'anno — ed è lì che
+  si vede la differenza fra «in quel secolo si leggeva» e «quel giorno esisteva». Nel campo si
+  può scrivere anche un anno negativo: -450 vale 450 a.C.</p>
 
   <div class="carte" id="carte"></div>
+  <div class="appro" id="appro"></div>
   <div class="tempo" id="tempo"></div>
   <div class="chiosa" id="chiosa"></div>
 </div>
@@ -104,13 +123,95 @@ h1{font-family:'Cormorant Garamond',Georgia,serif;font-size:2.4rem;font-weight:4
    ══════════════════════════════════════════════════════════ */
 
 const EPOCHE=[
+{da:-500, a:-200, n:`Età classica`,
+ leggeva:`Quasi nessuno legge, e chi lo fa legge ad alta voce: i rotoli di papiro non hanno spazi fra le parole né punteggiatura. Ad Atene si ascoltano le tragedie a teatro, una volta l anno, tutti insieme. I poemi di Omero si sanno a memoria prima di essere libri.`,
+ ascoltava:`Aulos e lira. La musica non si scrive: si impara accanto a chi la sa. Nelle feste si canta in coro, e il coro è la città che parla di sé.`,
+ indossava:`Lana e lino drappeggiati e fermati con spille, non cuciti addosso: chitone e himation. Il colore costa, e la porpora costa quanto l argento perché serve un mucchio di murici per un solo mantello.`,
+ mangiava:`Pane d orzo, olive, formaggio, pesce salato, vino allungato con acqua. La carne si mangia quando si sacrifica: mangiarla è un atto religioso prima che alimentare.`,
+ spostava:`A piedi e per mare, e per mare solo da aprile a ottobre. D inverno il Mediterraneo si chiude e le notizie si fermano.`,
+ nuovo:`La moneta coniata, che ha meno di due secoli, e la scrittura alfabetica usata anche per cose non sacre: leggi, conti, epitaffi.`,
+ vita:[`Su tre bambini nati, uno non arriva ai cinque anni.`,`Chi supera i vent anni ha buone probabilità di arrivare ai cinquanta.`,`Ad Atene forse un uomo su tre sa leggere; le donne quasi mai.`,`Circa un abitante su quattro dell Attica è schiavo.`],
+ wiki:[[`Democrazia_ateniese`,`La democrazia ateniese`],[`Papiro`,`Il papiro`],[`Dracma`,`La dracma`],[`Trireme`,`La trireme`]]},
+
+{da:-200, a:200, n:`Età romana`,
+ leggeva:`Roma ha librerie e copisterie: un libro è un rotolo copiato a mano da uno schiavo istruito. Si affiggono manifesti elettorali sui muri, e a Pompei se ne leggono ancora. Le notizie ufficiali si espongono nel foro.`,
+ ascoltava:`Cetra e tibia, e negli anfiteatri l organo idraulico. Nelle case ricche si tiene un lettore o un musicista fra la servitù: la musica è una persona, non un oggetto.`,
+ indossava:`Tunica per tutti, toga per i cittadini nelle occasioni pubbliche — pesante, scomoda, e proprio per questo un segno. La lana si tinge di guado e robbia; la seta arriva dalla Cina e costa come l oro.`,
+ mangiava:`Grano, olio, vino: la triade. Nelle città molti non hanno cucina e comprano cibo caldo alle taverne. Il garum, salsa di pesce fermentato, sta su quasi ogni tavola.`,
+ spostava:`Ottantacinquemila chilometri di strade lastricate. Un corriere imperiale fa settanta chilometri al giorno cambiando cavalli; una nave da Alessandria a Roma impiega due o tre settimane.`,
+ nuovo:`Il calcestruzzo, che permette cupole che nessuno aveva mai costruito, e gli acquedotti che portano acqua corrente in città di un milione di abitanti.`,
+ vita:[`Roma supera il milione di abitanti: nessuna città europea tornerà a tanto prima del 1800.`,`La speranza di vita alla nascita è intorno ai venticinque anni, schiacciata dalla mortalità infantile.`,`Nelle città forse una persona su cinque sa leggere qualcosa.`,`Un terzo della popolazione italica è in condizione servile.`],
+ wiki:[[`Impero_romano`,`L impero romano`],[`Strade_romane`,`Le strade romane`],[`Garum`,`Il garum`],[`Acquedotto_romano`,`Gli acquedotti`]]},
+
+{da:200, a:500, n:`Tarda antichità`,
+ leggeva:`Il rotolo cede il posto al codice, cioè al libro con le pagine: si può cercare un punto senza srotolare tutto, e questo cambia il modo di studiare. È una delle ragioni per cui i testi cristiani circolano bene.`,
+ ascoltava:`Il canto liturgico prende forma nelle chiese. Gli spettacoli pubblici si diradano, e con essi la musica di massa dell età precedente.`,
+ indossava:`Braghe e maniche lunghe, che i romani avevano considerato roba da barbari, diventano normali. Il vestito segue il freddo e non più la cittadinanza.`,
+ mangiava:`Le città si svuotano e l approvvigionamento si accorcia: si mangia quello che cresce vicino. Le grandi rotte del grano si interrompono a pezzi.`,
+ spostava:`Le strade restano ma la manutenzione no. Viaggiare torna pericoloso, e i viaggi lunghi diventano pellegrinaggi: si parte per un motivo che valga il rischio.`,
+ nuovo:`Il codice rilegato, la staffa che arriva dall Asia e cambierà il modo di combattere a cavallo, e i primi monasteri, che diventeranno biblioteche senza volerlo.`,
+ vita:[`La popolazione dell impero cala di forse un quarto fra epidemie, guerre e carestie.`,`Roma scende sotto i centomila abitanti nel VI secolo.`,`Chi sa leggere è quasi sempre un ecclesiastico o un funzionario.`,`Egeria, una donna, viaggia sola per tre anni fino al Sinai e ne scrive: succede, ed è raro abbastanza da essersi conservato.`],
+ wiki:[[`Tarda_antichità`,`La tarda antichità`],[`Codice_(filologia)`,`Il codice`],[`Egeria_(pellegrina)`,`Egeria`],[`Monachesimo`,`Il monachesimo`]]},
+
+{da:500, a:800, n:`Alto medioevo`,
+ leggeva:`Quasi nessuno. I libri si copiano nei monasteri, uno alla volta, e servono anni. La pergamena è pelle di pecora: per una Bibbia ci vuole un gregge. Si comincia a mettere spazi fra le parole, e leggere in silenzio diventa possibile.`,
+ ascoltava:`Canto monodico nelle chiese, canzoni non scritte fuori. Quello che il popolo cantava non ci è arrivato, perché nessuno aveva ragione di scriverlo.`,
+ indossava:`Lana filata in casa, dal gregge al telaio senza passare dal mercato. Il colore lo dà quello che cresce nei prati. Le fibbie e le spille sono l unico lusso possibile, e infatti si ritrovano nelle tombe.`,
+ mangiava:`Pane scuro, minestre di legumi, formaggio, poca carne salvo caccia. Le carestie tornano ogni pochi anni ed è normale che tornino.`,
+ spostava:`A piedi. Un esercito fa venti chilometri al giorno, un mercante meno. La distanza torna a essere quella che era prima di Roma, e ci resterà per secoli.`,
+ nuovo:`L aratro pesante e il collare rigido, che permettono di arare le terre grasse del nord: due invenzioni senza data e senza autore che valgono più di molte battaglie.`,
+ vita:[`Nessuna città dell Occidente latino arriva a ventimila abitanti.`,`Nove persone su dieci lavorano la terra.`,`Un contadino consuma quasi tutto quello che produce: il mercato riguarda pochissimi.`,`Un manoscritto costa quanto una piccola fattoria.`],
+ wiki:[[`Alto_Medioevo`,`L alto medioevo`],[`Pergamena`,`La pergamena`],[`Aratro`,`L aratro pesante`],[`Scriptorium`,`Lo scriptorium`]]},
+
+{da:800, a:1000, n:`Età carolingia e dopo`,
+ leggeva:`Carlo Magno fa copiare i testi antichi e impone una scrittura leggibile, la minuscola carolina — è la forma da cui discendono le nostre lettere minuscole. Buona parte dei classici latini ci è arrivata grazie a queste copie.`,
+ ascoltava:`Il canto detto gregoriano si organizza e comincia a essere annotato con segni sopra le parole: i primi tentativi di scrivere la musica.`,
+ indossava:`Lana e lino, e per i potenti stoffe bizantine importate. Il mantello con la fibbia sulla spalla è il segno del guerriero libero.`,
+ mangiava:`Pane, birra o vino annacquato, poco altro. La rotazione dei campi migliora lentamente e i raccolti crescono, ma una gelata basta a rimettere tutto in discussione.`,
+ spostava:`Le vie fluviali contano più delle strade. Le incursioni normanne, saracene e ungare rendono insicuri i percorsi per un secolo.`,
+ nuovo:`La minuscola carolina, il mulino ad acqua che si moltiplica in tutta Europa, e le prime scuole cattedrali fuori dai monasteri.`,
+ vita:[`L Europa comincia una crescita demografica che durerà tre secoli.`,`Un mulino ad acqua fa il lavoro di quaranta persone, e nel 1086 in Inghilterra se ne contano più di seimila.`,`Il latino resta la lingua scritta, ma quello che si parla per strada è già altro.`,`Il primo documento in volgare italiano, il placito di Capua, è dell anno 960.`],
+ wiki:[[`Rinascita_carolingia`,`La rinascita carolingia`],[`Minuscola_carolina`,`La minuscola carolina`],[`Mulino_ad_acqua`,`Il mulino ad acqua`],[`Placiti_cassinesi`,`Il placito di Capua`]]},
+
+{da:1000, a:1200, n:`Rinascita dopo il Mille`,
+ leggeva:`Nascono le università: Bologna nel 1088, Parigi poco dopo. Il libro esce dai monasteri ed entra nelle scuole, dove si legge per discutere. Compaiono i primi testi in volgare.`,
+ ascoltava:`Guido d Arezzo inventa il rigo musicale e i nomi delle note: per la prima volta si può imparare un canto senza sentirlo da qualcuno. Nascono i trovatori.`,
+ indossava:`Tessuti più fini, perché i telai migliorano e le fiere di Champagne portano stoffe fiamminghe in tutta Europa. La moda comincia a cambiare abbastanza in fretta da essere notata.`,
+ mangiava:`Più cereali, più terra dissodata, più gente. Nelle città si vende cibo cotto e comincia il mestiere del fornaio come mestiere pubblico.`,
+ spostava:`Ponti, ospizi di montagna, strade riaperte. Le crociate mettono in movimento decine di migliaia di persone: molti vedono il mare per la prima volta.`,
+ nuovo:`Il rigo musicale, la bussola che arriva dalla Cina, la cifra araba con lo zero che entra nei conti dei mercanti.`,
+ vita:[`La popolazione europea quasi raddoppia fra il 950 e il 1250.`,`Nascono i comuni: per la prima volta dopo Roma, città che si governano da sé.`,`Una cattedrale gotica richiede tre o quattro generazioni: chi la comincia sa che non la vedrà finita.`,`Studiare a Bologna significa vivere lontano da casa per anni, e le lettere agli studenti chiedono quasi sempre soldi.`],
+ wiki:[[`Università_di_Bologna`,`La più antica università`],[`Guido_d'Arezzo`,`Guido d Arezzo`],[`Comune_medievale`,`Il comune medievale`],[`Numeri_arabi`,`Le cifre arabe`]]},
+
+{da:1200, a:1350, n:`Due secoli pieni, poi la peste`,
+ leggeva:`Dante scrive la Commedia in volgare e la fa leggere a chi il latino non lo sa. Gli occhiali compaiono in Italia intorno al 1290 e allungano di vent anni la vita da lettore di chi copia e studia.`,
+ ascoltava:`La polifonia si complica; a Firenze e a Parigi si scrive musica che senza notazione sarebbe impossibile suonare.`,
+ indossava:`Nasce il vestito tagliato e cucito sulla persona invece che drappeggiato: è qui che comincia la moda nel senso moderno. Le leggi suntuarie provano subito a frenarla.`,
+ mangiava:`Le spezie arrivano da Oriente e costano quanto l argento. Nelle città si mangia meglio che nelle campagne, ed è la prima volta.`,
+ spostava:`Compagnie mercantili con filiali fisse, lettere di cambio, contabilità in partita doppia: si sposta il denaro senza spostare le monete.`,
+ nuovo:`Gli occhiali, l orologio meccanico sulle torri civiche — che impone a tutti la stessa ora — e la carta, che costa molto meno della pergamena.`,
+ vita:[`Fra il 1347 e il 1351 muore fra un terzo e metà degli europei.`,`Dopo la peste i salari salgono, perché le braccia scarseggiano: una catastrofe che migliora le condizioni dei sopravvissuti.`,`Firenze, Venezia, Milano e Parigi superano i centomila abitanti.`,`L orologio pubblico divide la giornata in ore uguali: prima le ore d estate erano più lunghe di quelle d inverno.`],
+ wiki:[[`Peste_nera`,`La peste nera`],[`Occhiali`,`Gli occhiali`],[`Orologio_meccanico`,`L orologio meccanico`],[`Partita_doppia`,`La partita doppia`]]},
+
+{da:1350, a:1500, n:`Quattrocento`,
+ leggeva:`Gli umanisti vanno a caccia di manoscritti antichi nei monasteri e ne ritrovano di perduti. Poi, intorno al 1450, Gutenberg: in cinquant anni si stampano milioni di volumi, più libri che in tutto il millennio precedente.`,
+ ascoltava:`I fiamminghi dominano la musica d Europa. Le corti italiane comprano cantori come oggi si comprano calciatori.`,
+ indossava:`Velluti e broccati; a Firenze la lana e la seta sono l industria che fa la città. Il vestito diventa un investimento e si lascia in eredità.`,
+ mangiava:`Zucchero come medicina e come lusso. Le carestie continuano, ma il rapporto fra terra e persone dopo la peste è migliore che nel Trecento.`,
+ spostava:`La caravella permette di risalire il vento: senza di essa i viaggi atlantici non sarebbero possibili. I portoghesi scendono lungo l Africa, un pezzo per volta.`,
+ nuovo:`La stampa a caratteri mobili. E, alla fine del secolo, la notizia che oltre l Atlantico c è terra.`,
+ vita:[`Un libro stampato costa un ottavo di un manoscritto, e il prezzo continua a scendere.`,`Nel 1500 in Europa esistono più di duecentocinquanta città con una tipografia.`,`Chi sa leggere è forse il cinque per cento, ma nelle città mercantili molto di più.`,`Le prime notizie sulle Americhe circolano in opuscoli di poche pagine: la stampa nasce insieme alla notizia.`],
+ wiki:[[`Stampa_a_caratteri_mobili`,`La stampa a caratteri mobili`],[`Umanesimo_rinascimentale`,`L umanesimo`],[`Caravella`,`La caravella`],[`Poggio_Bracciolini`,`Il cacciatore di manoscritti`]]},
+
 {da:1500, a:1570, n:'Primo Cinquecento',
  leggeva:'L\'<em>Orlando furioso</em> (1516) è il libro che tutti citano; <em>Il Cortegiano</em> insegna come stare al mondo. La stampa ha appena cinquant\'anni e un libro costa ancora come settimane di lavoro: si legge ad alta voce, in gruppo, e chi legge da solo e in silenzio fa una cosa che stupisce.',
  ascoltava:'Polifonia in chiesa, frottole e madrigali nelle corti. In casa si suona il liuto. La musica stampata esiste da poco (Petrucci, 1501) e resta rara: quasi tutto si impara a orecchio e si perde.',
  indossava:'Lana e lino; la seta dice chi sei. Le leggi suntuarie stabiliscono per legge chi può portare quale stoffa. Il nero è il colore più caro di tutti, perché tingere bene di nero è difficilissimo.',
  mangiava:'Pane, minestre, legumi. La carne è rara per i più. Il mais e i fagioli americani stanno appena entrando nei campi; pomodoro e patata sono curiosità da orto botanico, non cibo.',
  spostava:'A piedi si fanno trenta chilometri al giorno. Da Roma a Milano ci vogliono due settimane buone, e la si considera velocità normale.',
- nuovo:'La stampa a caratteri mobili sta cambiando che cosa si può sapere e in quanti lo possono sapere.'},
+ nuovo:'La stampa a caratteri mobili sta cambiando che cosa si può sapere e in quanti lo possono sapere.',
+ vita:[`In Italia vivono circa dieci milioni di persone.`,`Un lavoratore su venti sa leggere; nelle città di più.`,`Un libro stampato costa come due settimane di lavoro di un muratore.`,`Chi arriva a vent anni può sperare di vederne cinquanta.`],
+ wiki:[[`Orlando_furioso`,`L Orlando furioso`],[`Leggi_suntuarie`,`Le leggi suntuarie`],[`Ottaviano_Petrucci`,`Il primo editore di musica`],[`Scambio_colombiano`,`Lo scambio colombiano`]]},
 
 {da:1570, a:1650, n:'Tardo Cinquecento e primo Seicento',
  leggeva:'La <em>Gerusalemme liberata</em> (1581) e il <em>Don Chisciotte</em> (1605). Dal 1559 c\'è l\'Indice dei libri proibiti, e nel 1633 il <em>Dialogo</em> di Galileo ci finisce dentro: il libro circola lo stesso, stampato all\'estero.',
@@ -118,7 +219,9 @@ const EPOCHE=[
  indossava:'La gorgiera inamidata, che obbliga a tenere il mento alto. Nero spagnolo per gli uomini di rango. Vestirsi richiede aiuto: gli abiti si allacciano sulla schiena.',
  mangiava:'La polenta di mais si impone nel nord e diventerà, un secolo dopo, anche la causa della pellagra. Caffè e cioccolata arrivano nelle corti come medicine esotiche.',
  spostava:'Carrozza per chi può, a vela per mare. La peste del 1630 chiude le strade: a Milano muore un terzo della città.',
- nuovo:'Il cannocchiale (1609) mostra che la Luna ha le montagne e Giove le lune. Cominciano a uscire fogli di notizie a scadenza regolare.'},
+ nuovo:'Il cannocchiale (1609) mostra che la Luna ha le montagne e Giove le lune. Cominciano a uscire fogli di notizie a scadenza regolare.',
+ vita:[`La peste del 1630 ucciderà un milanese su tre.`,`Le università italiane hanno più studenti stranieri che italiani.`,`Il Dialogo di Galileo esce dall Indice solo nel 1835.`,`Un contadino lavora dall alba al tramonto e non ha orologio.`],
+ wiki:[[`Indice_dei_libri_proibiti`,`L Indice dei libri proibiti`],[`L'Orfeo`,`L Orfeo di Monteverdi`],[`Peste_del_1630`,`La peste del 1630`],[`Gorgiera`,`La gorgiera`]]},
 
 {da:1650, a:1730, n:'Secondo Seicento e primo Settecento',
  leggeva:'Le gazzette diventano un\'abitudine. I <em>Principia</em> di Newton (1687) li leggono in pochi e li capiscono in pochissimi. In Inghilterra nasce il romanzo moderno: <em>Robinson Crusoe</em> è del 1719.',
@@ -126,7 +229,9 @@ const EPOCHE=[
  indossava:'La parrucca incipriata, alta e costosa. Per gli uomini compare l\'abito a tre pezzi — giustacuore, veste, calzoni — che è l\'antenato diretto del completo di oggi.',
  mangiava:'Aprono le botteghe del caffè, e sono la prima cosa che somigli a un luogo pubblico dove si discute. Lo zucchero, prodotto da schiavi nelle Antille, smette di essere un lusso.',
  spostava:'Diligenze con orari fissi. I giovani inglesi ricchi cominciano il Grand Tour: l\'Italia diventa una tappa obbligata e un\'industria.',
- nuovo:'Il caffè come istituzione sociale, e il giornale che esce tutti i giorni.'},
+ nuovo:'Il caffè come istituzione sociale, e il giornale che esce tutti i giorni.',
+ vita:[`Nel 1700 a Londra ci sono più di duemila botteghe del caffè.`,`I Principia di Newton escono in millecinquecento copie.`,`Il Grand Tour dura in media due anni.`,`A Versailles vivono migliaia di persone e mancano i gabinetti.`],
+ wiki:[[`Caffè_(locale)`,`La bottega del caffè`],[`Philosophiae_Naturalis_Principia_Mathematica`,`I Principia`],[`Grand_Tour`,`Il Grand Tour`],[`Antonio_Vivaldi`,`Vivaldi`]]},
 
 {da:1730, a:1800, n:'Settecento',
  leggeva:'L\'<em>Encyclopédie</em> (1751-1772) prova a mettere tutto il sapere in ordine alfabetico. Rousseau si legge come oggi si guarda una serie. Nascono le biblioteche circolanti: il libro si può prendere in prestito invece che comprare.',
@@ -134,7 +239,9 @@ const EPOCHE=[
  indossava:'Sete e ricami fino alla Rivoluzione; poi, di colpo, austerità e colori scuri. Il nero borghese nasce come dichiarazione politica prima che come eleganza.',
  mangiava:'La patata vince le resistenze dopo le carestie e diventa cibo di massa. A Napoli si comincia a mettere il pomodoro sulla pasta: le prime ricette di salsa sono di fine secolo.',
  spostava:'Strade migliori e servizi postali regolari, ma sempre a cavallo. Watt sta perfezionando la macchina a vapore, che però muove ancora solo pompe.',
- nuovo:'La vaccinazione contro il vaiolo (Jenner, 1796): per la prima volta si può prevenire una malattia invece di curarla.'},
+ nuovo:'La vaccinazione contro il vaiolo (Jenner, 1796): per la prima volta si può prevenire una malattia invece di curarla.',
+ vita:[`L Encyclopédie impiega vent anni e coinvolge centoquaranta autori.`,`La patata salva dalla fame e per decenni viene rifiutata per sospetto.`,`Jenner prova il vaccino su un bambino di otto anni.`,`Un viaggio Parigi-Lione richiede cinque giorni di diligenza.`],
+ wiki:[[`Encyclopédie`,`L Encyclopédie`],[`Vaiolo`,`Il vaiolo e il vaccino`],[`Pianoforte`,`Il pianoforte`],[`Cesare_Beccaria`,`Dei delitti e delle pene`]]},
 
 {da:1800, a:1860, n:'Primo Ottocento',
  leggeva:'<em>I promessi sposi</em> (1827 e 1840). I romanzi escono a puntate sui giornali e si aspetta la puntata come si aspetta un episodio. Ma in Italia, al 1861, tre persone su quattro non sanno leggere.',
@@ -142,7 +249,9 @@ const EPOCHE=[
  indossava:'La crinolina dagli anni Cinquanta, che allarga la gonna fino a rendere difficile passare da una porta. Il cilindro per gli uomini. Il cotone industriale fa crollare i prezzi.',
  mangiava:'Polenta nel nord, e con la polenta la pellagra, che viene da una dieta di solo mais. Pane e companatico altrove. La pasta si diffonde da Napoli verso il resto della penisola.',
  spostava:'La ferrovia cambia tutto: la prima linea italiana, Napoli-Portici, è del 1839. Quello che richiedeva settimane richiede giorni.',
- nuovo:'La fotografia (1839) e il telegrafo: per la prima volta un\'immagine si fissa da sola, e una notizia corre più veloce di chi la porta.'},
+ nuovo:'La fotografia (1839) e il telegrafo: per la prima volta un\'immagine si fissa da sola, e una notizia corre più veloce di chi la porta.',
+ vita:[`Nel 1861 tre italiani su quattro non sanno leggere.`,`La pellagra colpisce centinaia di migliaia di persone nel nord.`,`La prima ferrovia italiana è lunga sette chilometri.`,`Un operaio tessile lavora dodici o quattordici ore al giorno.`],
+ wiki:[[`I_promessi_sposi`,`I promessi sposi`],[`Pellagra`,`La pellagra`],[`Napoli-Portici`,`La prima ferrovia italiana`],[`Dagherrotipia`,`La fotografia`]]},
 
 {da:1860, a:1900, n:'Secondo Ottocento',
  leggeva:'<em>Pinocchio</em> (1883) e <em>Cuore</em> (1886) crescono con la scuola dell\'obbligo. I quotidiani tirano centinaia di migliaia di copie e diventano la prima cosa che tutti leggono insieme.',
@@ -150,7 +259,9 @@ const EPOCHE=[
  indossava:'La tournure sostituisce la crinolina; per gli uomini il completo grigio che oggi chiameremmo normale. La macchina da cucire porta il vestito confezionato.',
  mangiava:'Si emigra per fame: fra il 1876 e il 1900 partono più di cinque milioni di italiani. Quella che oggi si chiama dieta mediterranea era la dieta di chi non poteva permettersi altro.',
  spostava:'Ferrovia capillare, tram a cavalli nelle città, e dagli anni Novanta la bicicletta, che è la prima libertà di movimento personale a buon mercato.',
- nuovo:'Elettricità, telefono, cinema (1895), automobile. Quattro cose che nascono nello stesso ventennio.'},
+ nuovo:'Elettricità, telefono, cinema (1895), automobile. Quattro cose che nascono nello stesso ventennio.',
+ vita:[`Fra il 1876 e il 1900 emigrano più di cinque milioni di italiani.`,`La legge Coppino del 1877 rende obbligatorie le prime due classi.`,`Nel 1895 i Lumière proiettano a Parigi davanti a trentatré paganti.`,`In molti paesi la banda municipale è l unica orchestra che si sia mai sentita.`],
+ wiki:[[`Emigrazione_italiana`,`L emigrazione italiana`],[`Legge_Coppino`,`La scuola obbligatoria`],[`Fratelli_Lumière`,`I fratelli Lumière`],[`Pinocchio`,`Pinocchio`]]},
 
 {da:1900, a:1925, n:'Primo Novecento',
  leggeva:'I quotidiani sono di massa. D\'Annunzio è una celebrità come oggi lo sono i cantanti. Il manifesto futurista esce sul Figaro nel 1909 e si prende gioco di tutto quello che c\'era prima.',
@@ -158,7 +269,9 @@ const EPOCHE=[
  indossava:'Dopo la guerra il corsetto sparisce e le gonne si accorciano. Le donne che hanno lavorato in fabbrica non tornano ai vestiti di prima.',
  mangiava:'Razionamento durante la guerra. Zucchero e carne restano lussi per la maggioranza anche dopo.',
  spostava:'Tram elettrici in città, automobile per pochissimi. Il primo volo dei Wright è del 1903, e nel 1919 si attraversa già l\'Atlantico.',
- nuovo:'La radio: le prime trasmissioni pubbliche italiane sono del 1924. E l\'influenza spagnola, che fra il 1918 e il 1920 uccide più della guerra appena finita.'},
+ nuovo:'La radio: le prime trasmissioni pubbliche italiane sono del 1924. E l\'influenza spagnola, che fra il 1918 e il 1920 uccide più della guerra appena finita.',
+ vita:[`L influenza del 1918 uccide più della guerra appena finita.`,`Caruso è il primo artista a vendere un milione di dischi.`,`Nel 1919 si attraversa l Atlantico in volo per la prima volta.`,`Le donne italiane voteranno solo nel 1946.`],
+ wiki:[[`Influenza_spagnola`,`L influenza spagnola`],[`Enrico_Caruso`,`Caruso`],[`Manifesto_del_futurismo`,`Il manifesto futurista`],[`EIAR`,`La prima radio italiana`]]},
 
 {da:1925, a:1950, n:'Fra le due guerre e la ricostruzione',
  leggeva:'Censura di regime, e traduzioni fatte passare di nascosto. Einaudi nasce nel 1933. Dopo la guerra il neorealismo racconta un paese che non si era mai visto scritto.',
@@ -166,7 +279,9 @@ const EPOCHE=[
  indossava:'Autarchia: si producono fibre dal latte e dalla ginestra perché la lana manca. Dopo la guerra il cappotto si rivolta, cioè si scuce e si ricuce al rovescio per farlo sembrare nuovo.',
  mangiava:'Tessera annonaria e code. Il pane bianco torna sulle tavole solo negli anni Cinquanta.',
  spostava:'Bicicletta e treno. La Vespa è del 1946 e mette due ruote a motore alla portata di chi non aveva mai avuto niente di motorizzato.',
- nuovo:'La penicillina, che dal 1943 rende curabile quello che uccideva. E la plastica, che comincia a sostituire tutto.'},
+ nuovo:'La penicillina, che dal 1943 rende curabile quello che uccideva. E la plastica, che comincia a sostituire tutto.',
+ vita:[`Nel 1943 la penicillina passa dai laboratori agli ospedali militari.`,`La tessera annonaria dà settanta grammi di pane al giorno nel 1944.`,`La Vespa costa poco più di tre mesi di stipendio operaio.`,`Nel 1951 il primo festival di Sanremo si ascolta solo alla radio.`],
+ wiki:[[`Penicillina`,`La penicillina`],[`Tessera_annonaria`,`La tessera annonaria`],[`Piaggio_Vespa`,`La Vespa`],[`Neorealismo_(cinema)`,`Il neorealismo`]]},
 
 {da:1950, a:1975, n:'Il boom',
  leggeva:'I tascabili economici mettono i classici in edicola. I fotoromanzi vendono più dei romanzi. L\'analfabetismo scende sotto il dieci per cento, anche grazie alla televisione.',
@@ -174,7 +289,9 @@ const EPOCHE=[
  indossava:'La minigonna dagli anni Sessanta. I jeans arrivano come divisa di una generazione: è la prima volta che i giovani non si vestono come i genitori in versione ridotta.',
  mangiava:'Entra il frigorifero, e con lui la possibilità di conservare. La carne tutti i giorni diventa un fatto normale per molti, ed è una novità storica assoluta.',
  spostava:'La Fiat 600 (1955) e l\'Autostrada del Sole (1964). L\'Italia si accorcia: in un giorno si va da Milano a Napoli.',
- nuovo:'La televisione, dal 1954. E la lavatrice, che restituisce alle donne un giorno a settimana.'},
+ nuovo:'La televisione, dal 1954. E la lavatrice, che restituisce alle donne un giorno a settimana.',
+ vita:[`Nel 1954 in Italia ci sono meno di ventimila televisori; nel 1965 sono sei milioni.`,`Non è mai stato scritto che i giovani si vestissero diversamente dai padri prima dei jeans.`,`L Autostrada del Sole si costruisce in otto anni.`,`Il consumo di carne per persona triplica in vent anni.`],
+ wiki:[[`Televisione_in_Italia`,`La televisione in Italia`],[`Autostrada_del_Sole`,`L Autostrada del Sole`],[`Fiat_600`,`La Fiat 600`],[`Miracolo_economico_italiano`,`Il boom economico`]]},
 
 {da:1975, a:2000, n:'Fine Novecento',
  leggeva:'<em>Il nome della rosa</em> (1980) vende milioni di copie e dimostra che un romanzo difficile può essere popolare. I quotidiani cominciano il loro lento calo.',
@@ -182,7 +299,9 @@ const EPOCHE=[
  indossava:'Le griffe e il Made in Italy diventano un\'industria da esportazione. L\'abbigliamento sportivo esce dalla palestra e non ci torna più.',
  mangiava:'Surgelati e supermercato. Nello stesso momento la cucina regionale, che era povertà, diventa patrimonio e orgoglio.',
  spostava:'L\'automobile per tutti, e alla fine del periodo i voli a basso costo, che rendono normale una cosa che era stata di lusso per un secolo.',
- nuovo:'Il personal computer, il telefono cellulare, e dal 1991 il web — che fino al 1996 quasi nessuno usa.'},
+ nuovo:'Il personal computer, il telefono cellulare, e dal 1991 il web — che fino al 1996 quasi nessuno usa.',
+ vita:[`Il walkman esce nel 1979 e vende duecento milioni di pezzi.`,`Nel 1996 usa internet meno dell un per cento degli italiani.`,`Il nome della rosa vende oltre cinquanta milioni di copie nel mondo.`,`Il primo SMS è del 1992 e dice buon Natale.`],
+ wiki:[[`Walkman`,`Il walkman`],[`World_Wide_Web`,`Il web`],[`Il_nome_della_rosa`,`Il nome della rosa`],[`Musicassetta`,`La musicassetta`]]},
 
 {da:2000, a:2025, n:'Oggi',
  leggeva:'Si legge molto, ma quasi tutto su uno schermo e in pezzi corti. I quotidiani hanno perso più della metà delle copie in vent\'anni.',
@@ -190,49 +309,80 @@ const EPOCHE=[
  indossava:'Fast fashion, con vestiti che costano meno di un pasto e durano una stagione. E, per reazione, il ritorno dell\'usato.',
  mangiava:'Il cibo arriva a casa in venti minuti. Quello che si mangia diventa una dichiarazione di identità come una volta lo era il vestito.',
  spostava:'Voli a poco prezzo fino al 2020, quando una pandemia ferma il mondo per la prima volta dal 1945.',
- nuovo:'Lo smartphone (2007), che mette in tasca tutto insieme. I social network. E dal 2022 i modelli linguistici, che scrivono.'}
+ nuovo:'Lo smartphone (2007), che mette in tasca tutto insieme. I social network. E dal 2022 i modelli linguistici, che scrivono.',
+ vita:[`Nel 2020 una pandemia ferma il mondo per la prima volta dal 1945.`,`Un italiano guarda lo schermo del telefono in media più di due ore al giorno.`,`Un capo di fast fashion viene indossato in media sette volte.`,`Nel 2022 un programma comincia a scrivere testi che sembrano scritti da qualcuno.`],
+ wiki:[[`Smartphone`,`Lo smartphone`],[`Pandemia_di_COVID-19`,`La pandemia`],[`Fast_fashion`,`Il fast fashion`],[`Modello_linguistico_di_grandi_dimensioni`,`I modelli linguistici`]]}
 ];
 
 /* Le novità con la loro data: servono a rispondere alla domanda
    più utile di tutte, «che cosa non c'era ancora». */
 const NOVITA=[
- {y:1450, n:'La stampa a caratteri mobili'},
- {y:1492, n:'Il contatto fra Europa e Americhe'},
- {y:1543, n:'L\'idea che la Terra giri intorno al Sole'},
- {y:1609, n:'Il cannocchiale'},
- {y:1620, n:'Il termometro'},
- {y:1650, n:'La bottega del caffè'},
- {y:1687, n:'La gravitazione di Newton'},
- {y:1709, n:'Il pianoforte'},
- {y:1751, n:'L\'Encyclopédie'},
- {y:1769, n:'La macchina a vapore di Watt'},
- {y:1796, n:'Il vaccino contro il vaiolo'},
- {y:1804, n:'La locomotiva'},
- {y:1839, n:'La fotografia'},
- {y:1844, n:'Il telegrafo elettrico'},
- {y:1859, n:'L\'evoluzione per selezione naturale'},
- {y:1876, n:'Il telefono'},
- {y:1879, n:'La lampadina'},
- {y:1885, n:'L\'automobile'},
- {y:1895, n:'Il cinema'},
- {y:1900, n:'La psicoanalisi'},
- {y:1903, n:'L\'aeroplano'},
- {y:1905, n:'La relatività'},
- {y:1924, n:'La radio in Italia'},
- {y:1928, n:'La penicillina'},
- {y:1945, n:'La bomba atomica'},
- {y:1946, n:'La Vespa'},
- {y:1953, n:'La struttura del DNA'},
- {y:1954, n:'La televisione in Italia'},
- {y:1969, n:'L\'uomo sulla Luna'},
- {y:1971, n:'Il microprocessore'},
- {y:1979, n:'Il walkman'},
- {y:1991, n:'Il web'},
- {y:2007, n:'Lo smartphone'},
- {y:2022, n:'I modelli linguistici che scrivono'}
+ {y:-3200, n:'La scrittura', w:'Storia_della_scrittura'},
+ {y:-1200, n:'L\'alfabeto', w:'Alfabeto_fenicio'},
+ {y:-600, n:'La moneta coniata', w:'Moneta'},
+ {y:-500, n:'Il teatro', w:'Teatro_greco'},
+ {y:-300, n:'La geometria di Euclide', w:'Elementi_(Euclide)'},
+ {y:-250, n:'La biblioteca di Alessandria', w:'Biblioteca_di_Alessandria'},
+ {y:-100, n:'Il calcestruzzo romano', w:'Opus_caementicium'},
+ {y:105, n:'La carta', w:'Carta'},
+ {y:300, n:'Il libro con le pagine', w:'Codice_(filologia)'},
+ {y:600, n:'La staffa in Europa', w:'Staffa_(equitazione)'},
+ {y:628, n:'Le regole dello zero', w:'Brahmagupta'},
+ {y:800, n:'Il mulino ad acqua diffuso', w:'Mulino_ad_acqua'},
+ {y:850, n:'La polvere da sparo', w:'Polvere_da_sparo'},
+ {y:1000, n:'L\'aratro pesante e il collare rigido', w:'Aratro'},
+ {y:1030, n:'Il rigo musicale', w:'Guido_d\'Arezzo'},
+ {y:1088, n:'L\'università', w:'Università_di_Bologna'},
+ {y:1180, n:'La bussola in Europa', w:'Bussola'},
+ {y:1202, n:'Le cifre arabe nei conti', w:'Liber_abaci'},
+ {y:1286, n:'Gli occhiali', w:'Occhiali'},
+ {y:1300, n:'L\'orologio meccanico', w:'Orologio_meccanico'},
+ {y:1440, n:'La caravella', w:'Caravella'},
+ {y:1450, n:'La stampa a caratteri mobili', w:'Stampa_a_caratteri_mobili'},
+ {y:1492, n:'Il contatto fra Europa e Americhe', w:'Scambio_colombiano'},
+ {y:1543, n:'L\'idea che la Terra giri intorno al Sole', w:'Eliocentrismo'},
+ {y:1609, n:'Il cannocchiale', w:'Cannocchiale'},
+ {y:1620, n:'Il termometro', w:'Termometro'},
+ {y:1650, n:'La bottega del caffè', w:'Caffè_(locale)'},
+ {y:1687, n:'La gravitazione di Newton', w:'Legge_di_gravitazione_universale'},
+ {y:1709, n:'Il pianoforte', w:'Pianoforte'},
+ {y:1751, n:'L\'Encyclopédie', w:'Encyclopédie'},
+ {y:1769, n:'La macchina a vapore di Watt', w:'Macchina_a_vapore'},
+ {y:1796, n:'Il vaccino contro il vaiolo', w:'Vaiolo'},
+ {y:1804, n:'La locomotiva', w:'Locomotiva'},
+ {y:1839, n:'La fotografia', w:'Dagherrotipia'},
+ {y:1844, n:'Il telegrafo elettrico', w:'Telegrafo'},
+ {y:1859, n:'L\'evoluzione per selezione naturale', w:'Selezione_naturale'},
+ {y:1876, n:'Il telefono', w:'Telefono'},
+ {y:1879, n:'La lampadina', w:'Lampadina'},
+ {y:1885, n:'L\'automobile', w:'Automobile'},
+ {y:1895, n:'Il cinema', w:'Cinema'},
+ {y:1900, n:'La psicoanalisi', w:'Psicoanalisi'},
+ {y:1903, n:'L\'aeroplano', w:'Fratelli_Wright'},
+ {y:1905, n:'La relatività', w:'Relatività_ristretta'},
+ {y:1924, n:'La radio in Italia', w:'EIAR'},
+ {y:1928, n:'La penicillina', w:'Penicillina'},
+ {y:1945, n:'La bomba atomica', w:'Bomba_atomica'},
+ {y:1946, n:'La Vespa', w:'Piaggio_Vespa'},
+ {y:1953, n:'La struttura del DNA', w:'DNA'},
+ {y:1954, n:'La televisione in Italia', w:'Televisione_in_Italia'},
+ {y:1969, n:'L\'uomo sulla Luna', w:'Apollo_11'},
+ {y:1971, n:'Il microprocessore', w:'Microprocessore'},
+ {y:1979, n:'Il walkman', w:'Walkman'},
+ {y:1991, n:'Il web', w:'World_Wide_Web'},
+ {y:2007, n:'Lo smartphone', w:'Smartphone'},
+ {y:2022, n:'I modelli linguistici che scrivono', w:'Modello_linguistico_di_grandi_dimensioni'}
 ];
 
-const SALTI=[1500,1600,1650,1700,1789,1861,1900,1945,1968,2000,2025];
+const SALTI=[-450,-44,117,476,800,1088,1348,1492,1600,1789,1861,1900,1945,1969,2000,2025];
+const PRIMO=-500, ULTIMO=2025;
+
+/* Gli anni prima di Cristo si scrivono col segno meno nei dati
+   e con «a.C.» sullo schermo: chi usa la pagina non deve mai
+   vedere un meno davanti a un anno. */
+const anno = y => y<0 ? (-y)+' a.C.' : String(y);
+const wiki = (t,e) => '<a class="wk" target="_blank" rel="noopener" '
+  + 'href="https://it.wikipedia.org/wiki/'+encodeURIComponent(t)+'">'+e+'</a>';
 const CATEGORIE=[
  ['leggeva','Che cosa si leggeva','#9a7c2e'],
  ['ascoltava','Che cosa si ascoltava','#7a4b8c'],
@@ -255,45 +405,53 @@ function epocaDi(y){
 function disegna(){
   let y=parseInt(campo.value,10);
   if(isNaN(y)) y=1650;
-  y=Math.max(1500,Math.min(2025,y));
+  y=Math.max(PRIMO,Math.min(ULTIMO,y));
   cursore.value=y;
 
   const e=epocaDi(y);
   document.getElementById('epoca').textContent=e.n;
 
   document.getElementById('carte').innerHTML = CATEGORIE.map(([k,t,c])=>
-    `<div class="ca" style="--c:${c}"><h3>${t}</h3><p>${e[k]}</p></div>`).join('');
+    `<div class="ca" style="--c:${c}"><h3>${t}</h3><p>${e[k]}</p></div>`).join('')
+    + `<div class="ca esserci" style="--c:#8a6a1e"><h3>Com'era esserci</h3><ul>${
+        e.vita.map(v=>`<li>${v}</li>`).join('')}</ul></div>`;
+
+  document.getElementById('appro').innerHTML =
+    `<b>Per andare a fondo</b>` + e.wiki.map(([t,et])=>wiki(t,et)).join('');
 
   /* già c'era / non c'era ancora: le cinque più vicine da ogni lato */
   const gia = NOVITA.filter(n=>n.y<=y).slice(-5).reverse();
   const no  = NOVITA.filter(n=>n.y>y).slice(0,5);
   document.getElementById('tempo').innerHTML=
-    `<h3>Nel ${y}, per chi c'era</h3>
+    `<h3>Nel ${anno(y)}, per chi c'era</h3>
      <div class="due">
       <div class="gia"><h4>Era già arrivato</h4><ul>${
         gia.length?gia.map(n=>{const d=y-n.y;
-          return `<li><b>${n.n}</b> <span>— ${d===0?'da quest\'anno':'da '+d+' ann'+(d===1?'o':'i')}</span></li>`;}).join('')
+          return `<li><b>${n.w?wiki(n.w,n.n):n.n}</b> <span>— ${d===0?'da quest\'anno':'da '+d+' ann'+(d===1?'o':'i')}</span></li>`;}).join('')
                   :'<li><span>niente di questo elenco</span></li>'}</ul></div>
       <div class="no"><h4>Non esisteva ancora</h4><ul>${
         no.length?no.map(n=>{const d=n.y-y;
-          return `<li><b>${n.n}</b> <span>— ${d===1?'manca un anno':'mancano '+d+' anni'}</span></li>`;}).join('')
+          return `<li><b>${n.w?wiki(n.w,n.n):n.n}</b> <span>— ${d===1?'manca un anno':'mancano '+d+' anni'}</span></li>`;}).join('')
                  :'<li><span>tutto quello che è in elenco è già qui</span></li>'}</ul></div>
      </div>`;
 
+  /* Fra l anno 1 a.C. e l anno 1 non c è lo zero: sottrarre gli
+     anni senza tenerne conto sposta ogni conto di uno. */
+  const meno=(y,n)=>{ const r=y-n; return (y>0 && r<=0) ? r-1 : r; };
   document.getElementById('chiosa').innerHTML=
-    `<b>Una cosa da far notare.</b> Chi aveva sedici anni nel ${y} è nato nel ${y-16}, `
-    + `e i suoi nonni raccontavano il ${y-70} come noi raccontiamo il ${2025-70}. `
-    + `Il passato di ogni epoca ha la stessa profondità del nostro: nessuno ha mai vissuto `
-    + `all'inizio della storia.`;
+    `<b>Una cosa da far notare.</b> Chi aveva sedici anni nel ${anno(y)} è nato nel `
+    + `${anno(meno(y,16))}, e i suoi nonni raccontavano il ${anno(meno(y,70))} come noi `
+    + `raccontiamo il ${2025-70}. Il passato di ogni epoca ha la stessa profondità del `
+    + `nostro: nessuno ha mai vissuto all'inizio della storia.`;
 }
 
 campo.addEventListener('input',disegna);
 campo.addEventListener('blur',()=>{ let y=parseInt(campo.value,10);
-  if(isNaN(y)) y=1650; campo.value=Math.max(1500,Math.min(2025,y)); disegna(); });
+  if(isNaN(y)) y=1650; campo.value=Math.max(PRIMO,Math.min(ULTIMO,y)); disegna(); });
 cursore.addEventListener('input',()=>{ campo.value=cursore.value; disegna(); });
 
 document.getElementById('salti').innerHTML = SALTI.map(y=>
-  `<button class="mini" onclick="campo.value=${y};disegna()">${y}</button>`).join('');
+  `<button class="mini" onclick="campo.value=${y};disegna()">${anno(y)}</button>`).join('');
 disegna();
 </script>
 </body>
