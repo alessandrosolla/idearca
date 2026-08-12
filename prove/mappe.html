@@ -40,6 +40,11 @@ textarea:focus{border-color:#8a9e87}
 .lg .da,.lg .a{font-weight:500;color:#1c2b1a}
 .lg .rel{font-size:.72rem;color:#8a6a1e;background:rgba(154,124,46,.12);padding:.1rem .5rem;
   border-radius:100px;font-weight:600}
+.lg .sic{font-size:.63rem;letter-spacing:.06em;padding:.08rem .45rem;border-radius:100px;font-weight:600}
+.lg .sic.alta{background:rgba(45,90,39,.13);color:#2d5a27}
+.lg .sic.media{background:rgba(154,124,46,.15);color:#8a6a1e}
+.lg .sic.bassa{background:rgba(138,158,135,.16);color:#6f7d6d}
+.lg .sic.volte{background:rgba(63,109,140,.12);color:#3f6d8c}
 .lg .sp{flex:1}
 .lg .x{font:inherit;font-size:.72rem;border:none;background:none;color:#b3bdb1;cursor:pointer;
   padding:.1rem .35rem;border-radius:5px}
@@ -183,7 +188,7 @@ function ripulisci(t){
   s=s.replace(ELISI,'').replace(ARTICOLI,'');
   /* si taglia alla prima congiunzione che apre una subordinata:
      tenere tutta la coda farebbe nodi lunghi quanto una riga */
-  s=s.split(/\s+(?:perché|poiché|mentre|quando|che|cui|dove|se)\s+/i)[0];
+  s=s.split(/\s*:\s*|\s+(?:perché|poiché|mentre|quando|che|cui|dove|se)\s+/i)[0];
   s=s.trim().replace(/[.,;:]+$/,'');
   /* tagliando la subordinata resta spesso una preposizione appesa:
      «lo strumento con cui...» diventava «strumento con» */
@@ -204,27 +209,247 @@ function inFrasi(testo){
   return t.split(/(?<=[.!?…])\s+/).map(p=>p.split(SEGNO).join('.').trim()).filter(Boolean);
 }
 
+/* ══ LE PAROLE CHE NON SONO CONCETTI ════════════════════════
+   Senza questo elenco i nodi più grossi della mappa sarebbero
+   «della», «che» e «anche»: le parole più frequenti di un testo
+   italiano non dicono nulla di quel testo. */
+const STOP=new Set(`il lo la i gli le un uno una dei degli delle del dello della al allo alla ai agli alle
+dal dallo dalla dai dagli dalle nel nello nella nei negli nelle sul sullo sulla sui sugli sulle col coi
+e ed o od ma però tuttavia anche pure ancora già poi prima dopo mentre quando dove come quanto quale quali
+che chi cui non né sia sono era erano essere stato stata stati state ha hanno aveva avevano avere avuto
+si ci vi ne se lo la li le mi ti gli loro suo sua suoi sue mio mia miei mie nostro nostra vostro vostra
+questo questa questi queste quello quella quelli quelle stesso stessa stessi stesse altro altra altri altre
+di a da in con su per tra fra sopra sotto contro senza verso circa presso oltre dentro fuori
+molto poco più meno tanto troppo assai quasi solo soltanto proprio davvero infatti dunque quindi perciò
+perché poiché siccome affinché sebbene benché nonostante purché qualora ossia cioè ovvero
+essa esso essi esse egli ella lui lei coloro ciò
+uno due tre primo prima secondo seconda terzo terza ultimo ultima
+può possono deve devono viene vengono fare fatto fatta parte parti modo modi caso casi
+cosa cose volta volte anno anni secolo secoli tempo tempi punto punti forma forme`
+  .split(/\s+/).filter(Boolean));
+
+/* ══ I VERBI CHE LEGANO DUE CONCETTI ════════════════════════
+   Non c'è un dizionario dell'italiano qui dentro: c'è questo
+   elenco, scritto a partire da come sono fatti i testi di storia
+   e filosofia. Se fra due concetti compare uno di questi verbi,
+   la freccia prende il suo nome; altrimenti resta un legame
+   generico, dichiarato come debole. */
+const VERBI=[
+ {l:'è',            f:'è sono era erano fu furono sarà saranno'},
+ {l:'diventa',      f:'diventa diventano divenne divennero divenuto'},
+ {l:'causa',        f:'causa causano provoca provocano determina determinano produce producono genera generano'},
+ {l:'deriva da',    f:'deriva derivano nasce nascono discende discendono proviene provengono'},
+ {l:'comprende',    f:'comprende comprendono include includono contiene contengono raccoglie raccolgono'},
+ {l:'si divide in', f:'divide dividono distingue distinguono articola articolano suddivide suddividono'},
+ {l:'si oppone a',  f:'contrasta contrastano combatte combattono osteggia osteggiano avversa avversano'},
+ {l:'sostiene',     f:'sostiene sostengono afferma affermano difende difendono appoggia appoggiano'},
+ {l:'nega',         f:'nega negano rifiuta rifiutano respinge respingono critica criticano confuta confutano'},
+ {l:'influenza',    f:'influenza influenzano ispira ispirano condiziona condizionano segna segnano'},
+ {l:'precede',      f:'precede precedono anticipa anticipano apre aprono inaugura inaugurano'},
+ {l:'segue',        f:'segue seguono succede succedono chiude chiudono conclude concludono'},
+ {l:'conquista',    f:'conquista conquistano occupa occupano invade invadono annette annettono'},
+ {l:'sconfigge',    f:'sconfigge sconfiggono batte battono vince vincono abbatte abbattono'},
+ {l:'fonda',        f:'fonda fondano istituisce istituiscono crea creano costituisce costituiscono'},
+ {l:'distrugge',    f:'distrugge distruggono elimina eliminano cancella cancellano sopprime sopprimono'},
+ {l:'trasforma',    f:'trasforma trasformano cambia cambiano modifica modificano riforma riformano'},
+ {l:'permette',     f:'permette permettono consente consentono favorisce favoriscono agevola agevolano'},
+ {l:'impedisce',    f:'impedisce impediscono ostacola ostacolano blocca bloccano vieta vietano'},
+ {l:'porta a',      f:'porta portano conduce conducono sfocia sfociano sbocca sboccano'},
+ {l:'dipende da',   f:'dipende dipendono'},
+ {l:'si fonda su',  f:'basa basano poggia poggiano regge reggono'},
+ {l:'usa',          f:'usa usano utilizza utilizzano impiega impiegano adotta adottano'},
+ {l:'studia',       f:'studia studiano analizza analizzano esamina esaminano indaga indagano'},
+ {l:'riguarda',     f:'riguarda riguardano concerne concernono tratta trattano'},
+ /* questi non si riconoscono dalla desinenza e sono i piu' frequenti
+    di tutti: senza elencarli, «Kant vuole» resta un concetto solo */
+ {l:'vuole',        f:'vuole vogliono volle vollero'},
+ {l:'può',          f:'può possono poté poterono'},
+ {l:'deve',         f:'deve devono dovette dovettero'},
+ {l:'fa',           f:'fa fanno fece fecero'},
+ {l:'dice',         f:'dice dicono disse dissero'},
+ {l:'vede',         f:'vede vedono vide videro'},
+ {l:'viene da',     f:'viene vengono venne vennero'},
+ {l:'va',           f:'va vanno andò andarono'},
+ {l:'tenta',        f:'tenta tentano tentò tentarono cerca cercano cercò cercarono'},
+ {l:'sa',           f:'sa sanno seppe seppero conosce conoscono conobbe conobbero'}
+];
+const VERBO=new Map();
+VERBI.forEach(v=>v.f.split(/\s+/).forEach(f=>VERBO.set(f,v.l)));
+
+/* L'elenco sopra non basta: i manuali di storia sono scritti al
+   passato remoto, e «conquistò», «diffusero», «nacque» non ci sono
+   né ci potrebbero essere tutti. Si riconoscono dalla desinenza.
+   Se il verbo non è in elenco l'etichetta della freccia diventa il
+   verbo stesso, così com'è scritto nel testo: «conquistò» dice più
+   di «compare con». */
+const CODE=/(?:ò|ì|pose|posero|acque|acquero|ebbe|ebbero|obbe|obbero|isse|issero|usse|ussero|arono|erono|irono|ettero|ava|avano|eva|evano|iva|ivano|isce|iscono|ano|ono|ire|are|ere|sero|nne|nnero|ussero|osse|ossero|ar[lms][oiae]?|er[lms][oiae]?|ir[lms][oiae]?|arsi|ersi|irsi)$/;
+const NON_VERBI=new Set(['sono','anno','anni','uomo','uomini','mano','piano','trono','solo','pieno',
+ 'meno','seno','freno','regno','segno','sogno','ordine','origine','forse','corso','caso','peso',
+ 'senso','verso','universo','discorso','diverso','governo','moderno','interno','esterno','eterno',
+ 'masse','classe','spese','chiese','base','frase','fase','crisi','paese','mese','difese']);
+function sembraVerbo(w){
+  if(VERBO.has(w)) return true;
+  if(w.length<4 || NON_VERBI.has(w) || STOP.has(w)) return false;
+  return CODE.test(w);
+}
+
+const senzaAcc = t => t.toLowerCase()
+  .replace(/[àáâ]/g,'a').replace(/[èéê]/g,'e').replace(/[ìí]/g,'i')
+  .replace(/[òóô]/g,'o').replace(/[ùú]/g,'u');
+
+/* ══ I CONCETTI ═════════════════════════════════════════════
+   Si prendono i gruppi di parole piene consecutive (da una a tre)
+   e si contano. Un concetto è una cosa di cui il testo parla più
+   di una volta: se compare una volta sola non regge una mappa.
+   Fra «rivoluzione» e «rivoluzione industriale», se compaiono
+   sempre insieme, vince il gruppo lungo — è più informativo. */
+function estraiConcetti(frasi, quanti){
+  const conta=new Map();
+  frasi.forEach(f=>{
+    const tok=f.toLowerCase().replace(/[^a-zàèéìòùç' ]/g,' ').split(/\s+/).filter(Boolean);
+    let gruppo=[];
+    const chiudi=()=>{
+      for(let n=1;n<=Math.min(3,gruppo.length);n++)
+        for(let i=0;i+n<=gruppo.length;i++){
+          const g=gruppo.slice(i,i+n);
+          const k=g.join(' ');
+          if(k.length<4) continue;
+          const v=conta.get(k)||{n:0,parole:n};
+          v.n++; conta.set(k,v);
+        }
+      gruppo=[];
+    };
+    tok.forEach(w=>{ (STOP.has(w)||w.length<3||sembraVerbo(w)) ? chiudi() : gruppo.push(w); });
+    chiudi();
+  });
+
+  const tutte=[...conta.entries()].map(([k,v])=>({k, n:v.n, parole:v.parole}));
+  /* «un concetto compare almeno due volte» e' una buona regola su una
+     pagina, ma su cinque frasi non sopravvive quasi nulla e la mappa
+     esce vuota - come e' successo. Se la regola stretta lascia meno di
+     sei concetti, si allarga. */
+  let voci=tutte.filter(v=>v.n>=2);
+  if(voci.length<6) voci=tutte;
+
+  /* un gruppo corto che compare sempre e solo dentro uno lungo
+     non è un concetto a sé: è un pezzo di quello */
+  voci.sort((a,b)=>b.parole-a.parole || b.n-a.n);
+  const tenuti=[];
+  voci.forEach(v=>{
+    const dentro=tenuti.find(t=>t.parole>v.parole && (' '+t.k+' ').includes(' '+v.k+' ') && t.n>=v.n);
+    if(!dentro) tenuti.push(v);
+  });
+
+  tenuti.sort((a,b)=> (b.n*(1+0.45*(b.parole-1))) - (a.n*(1+0.45*(a.parole-1))) );
+  return tenuti.slice(0,quanti);
+}
+
+/* la forma da mostrare: la prima volta che il concetto compare nel
+   testo, con le maiuscole che aveva lì */
+function formaOriginale(testo, k){
+  const re=new RegExp('(^|[^a-zàèéìòù])('+k.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')(?![a-zàèéìòù])','i');
+  const m=testo.match(re);
+  if(!m) return k;
+  const t=m[2];
+  return /^[A-ZÀÈÉÌÒÙ]/.test(t) ? t : t.charAt(0).toUpperCase()+t.slice(1);
+}
+
+/* ══ L'ESTRAZIONE, IN TRE STADI ═════════════════════════════
+   1. i rapporti scritti a chiare lettere («X si divide in Y»):
+      pochi ma sicuri;
+   2. due concetti nella stessa frase con un verbo di legame in
+      mezzo: la freccia prende il nome del verbo;
+   3. due concetti nella stessa frase e basta: legame debole,
+      dichiarato tale, spento all'inizio.
+   Lo stadio 3 garantisce che una mappa esca sempre, anche da un
+   testo che non usa mai le forme dello stadio 1. */
 function estrai(){
-  const frasi=inFrasi(document.getElementById('fonte').value);
-  const trovati=[];
-  const visti=new Set();
-  for(const f of frasi){
-    const pulita=f.replace(/[.!?…]+$/,'').trim();
-    for(const s of SCHEMI){
-      const m=pulita.match(s.re);
-      if(!m) continue;
-      const da=ripulisci(m[1]), a=ripulisci(m[2]);
-      if(da.length<3||a.length<3) continue;
-      if(VUOTE.has(chiave(da))||VUOTE.has(chiave(a))) continue;
-      if(chiave(da)===chiave(a)) continue;
-      const id=chiave(da)+'|'+s.r+'|'+chiave(a);
-      if(visti.has(id)) continue;
-      visti.add(id);
-      trovati.push({da, a, rel:s.r, attivo:true, frase:f});
-      break;   /* uno schema per frase: il primo che calza è il più specifico */
+  const testo=document.getElementById('fonte').value;
+  const frasi=inFrasi(testo);
+  if(!frasi.length){ legami=[]; document.getElementById('lavoro').style.display='';
+                     disegnaLegami(); costruisci(); riordina(); return; }
+
+  const trovati=[], visti=new Map();
+  const aggiungi=(da,a,rel,conf,frase)=>{
+    if(!da||!a) return;
+    const kd=chiave(da), ka=chiave(a);
+    if(!kd||!ka||kd===ka) return;
+    if(VUOTE.has(kd)||VUOTE.has(ka)) return;
+    const id=kd+'|'+ka;
+    const gia=visti.get(id);
+    const peso={alta:3,media:2,bassa:1}[conf];
+    if(gia){
+      gia.volte++;
+      if(peso>{alta:3,media:2,bassa:1}[gia.conf]){ gia.rel=rel; gia.conf=conf; gia.frase=frase;
+        gia.attivo=conf!=='bassa'; }
+      return;
     }
-  }
-  legami=trovati;
+    const l={da, a, rel, conf, volte:1, attivo:conf!=='bassa', frase};
+    visti.set(id,l); trovati.push(l);
+  };
+
+  /* ── stadio 1 ── */
+  frasi.forEach(f=>{
+    const pulita=f.replace(/[.!?…]+$/,'').trim();
+    for(const sc of SCHEMI){
+      const m=pulita.match(sc.re);
+      if(!m) continue;
+      let da=ripulisci(m[1]);
+      const a=ripulisci(m[2]);
+      /* «Lo spazio e il tempo NON appartengono alle cose» finiva come
+         concetto «spazio e il tempo non» legato da «appartiene a»:
+         nome storpiato e senso capovolto, per giunta marcato come
+         sicuro. Il «non» va tolto dal concetto e messo sulla freccia. */
+      let rel=sc.r;
+      if(/(^|\s)non$/i.test(da)){ da=da.replace(/\s*non$/i,'').trim(); rel='non '+rel; }
+      if(da.length>=3 && a.length>=3) aggiungi(da,a,rel,'alta',f);
+      break;
+    }
+  });
+
+  /* ── stadi 2 e 3 ── */
+  const concetti=estraiConcetti(frasi, 14);
+  const mostra=new Map(concetti.map(c=>[c.k, formaOriginale(testo,c.k)]));
+
+  frasi.forEach(f=>{
+    const basso=' '+senzaAcc(f).replace(/[^a-z' ]/g,' ').replace(/\s+/g,' ')+' ';
+    /* dove compare ogni concetto in questa frase */
+    const qui=[];
+    concetti.forEach(c=>{
+      const pos=basso.indexOf(' '+senzaAcc(c.k)+' ');
+      if(pos>=0) qui.push({k:c.k, pos});
+    });
+    if(qui.length<2) return;
+    qui.sort((a,b)=>a.pos-b.pos);
+    for(let i=0;i<qui.length-1;i++){
+      const A=qui[i], B=qui[i+1];
+      const mezzo=basso.slice(A.pos+A.k.length+1, B.pos).split(/\s+/).filter(Boolean);
+      let rel=null, negato=false;
+      for(let m=0;m<mezzo.length;m++){
+        const w=mezzo[m];
+        if(!sembraVerbo(w)) continue;
+        /* «non appartengono» non è «appartiene a»: senza questo
+           controllo la freccia direbbe il contrario del testo */
+        negato = m>0 && (mezzo[m-1]==='non' || mezzo[m-1]==='né');
+        rel = VERBO.get(w) || w;
+        break;
+      }
+      aggiungi(mostra.get(A.k), mostra.get(B.k),
+               rel ? (negato?'non '+rel:rel) : 'compare con',
+               rel?'media':'bassa', f);
+    }
+  });
+
+  /* i legami più sostenuti dal testo vengono prima */
+  trovati.sort((a,b)=> ({alta:3,media:2,bassa:1}[b.conf]-{alta:3,media:2,bassa:1}[a.conf])
+                       || (b.volte-a.volte));
+  legami=trovati.slice(0,26);
+  /* Se restassero spenti tutti i legami deboli, da un testo che non
+     usa mai le forme esplicite non uscirebbe nessuna mappa - ed era
+     appunto il difetto da cui siamo partiti. Si accendono i primi
+     diciotto, forti o deboli che siano: l'etichetta dice quanto sono
+     sicuri, e togliere quelli che non convincono è un clic. */
+  legami.slice(0,18).forEach(l=>l.attivo=true);
   document.getElementById('lavoro').style.display='';
   disegnaLegami(); costruisci(); riordina();
 }
@@ -249,6 +474,8 @@ function disegnaLegami(){
       <span class="da">${esc(l.da)}</span>
       <span class="rel">${esc(l.rel)}</span>
       <span class="a">${esc(l.a)}</span>
+      <span class="sic ${l.conf||'alta'}">${({alta:'scritto nel testo',media:'dal verbo',bassa:'solo vicinanza'})[l.conf||'alta']}</span>
+      ${l.volte>1?`<span class="sic volte">${l.volte}×</span>`:''}
       <span class="sp"></span>
       <button class="x" onclick="togli(${i})">✕</button>
     </div>`).join('');
