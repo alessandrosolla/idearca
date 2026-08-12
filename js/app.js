@@ -969,7 +969,10 @@ function showProveView(){
   document.getElementById('lib-voti-view').style.display='none';
   document.getElementById('lib-consegna-view').style.display='none';
   const f=document.getElementById('lib-prove-frame');
-  if(!f.getAttribute('src')) f.src='prove/index.html';
+  /* con la marca temporale, come per le votazioni: il banco di lavoro
+     cambia spesso e senza questa chi era già entrato una volta
+     continuava a vedere la pagina rimasta in cache */
+  f.src='prove/index.html?'+Date.now();
   document.getElementById('lib-prove-view').style.display='block';
 }
 function showTempoView(){
