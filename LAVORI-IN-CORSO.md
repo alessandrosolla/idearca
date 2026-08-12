@@ -16,27 +16,26 @@ studenti, numeri contati dal sito.
 6. ~~Ricostruttore di sillogismi~~ — fatto
 7. ~~Palestra di logica (tavole di verità)~~ — fatto
 
-## La scaletta delle diciassette prove
+## La scaletta delle diciassette prove — chiusa
 
-Fatte e provate (14): timer, sorteggio, palestra di logica,
+Tutte fatte e provate (16): timer, sorteggio, palestra di logica,
 ricostruttore di sillogismi, votazioni a squadre, mappa argomentativa,
 analizzatore di testo, linea del tempo delle idee, confrontatore di
 filosofi, glossario ipertestuale, simulatore socratico, linea del tempo
 sincronica, penna che raddrizza, macchina del contesto, generatore di
-mappe concettuali.
+mappe concettuali, diario immersivo, grafici animati.
 
-Rimaste (3):
+**Wiki di classe** — messa da parte per scelta. È l'unica che vuole il
+database: servirebbe una migrazione `sql/08-wiki.sql` con le voci, le
+revisioni e il visto del docente. Se un giorno si riprende, il lavoro
+comincia da lì.
 
-1. **Diario immersivo** — fonti in prima persona collocate sulla mappa
-   nel punto in cui furono scritte. Serve una carta: si può disegnare
-   in SVG come i sigilli, oppure riusare il globo che c'è già in
-   `js/globe.js`.
-2. **Grafici animati** — popolazione, prodotto interno, migrazioni che
-   si muovono nel tempo. Prima di cominciare va caricata la guida
-   `dataviz`, che detta i colori e le forme dei grafici.
-3. **Wiki di classe** — l'unica che vuole il database: serve una
-   migrazione `sql/08-wiki.sql` con le voci, le revisioni e il visto
-   del docente. Non basta una pagina sola.
+## Quello che resta da guardare a mano
+
+La resa sul telefono. Per tutta la costruzione screenshot e
+ridimensionamento della finestra sono andati in timeout in Chrome:
+i `@media` ci sono in ogni pagina, ma nessuno li ha visti in funzione.
+È l'unica verifica che manca, e va fatta con un telefono vero.
 
 ## Nota sul telefono
 Molti guarderanno il sito dal telefono. Ogni cosa nuova va provata

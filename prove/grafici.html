@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Grafici animati — Idearca</title>
+<style>
+:root{
+  --piano:#faf8f3; --tela:#fcfcfb;
+  --inchiostro:#0b0b0b; --secondario:#52514e; --tenue:#898781;
+  --griglia:#e1e0d9; --base:#c3c2b7; --bordo:rgba(11,11,11,.10);
+  --s1:#2a78d6; --s2:#eb6834; --s3:#1baf7a; --s4:#eda100; --s5:#e87ba4;
+}
+:root[data-tema="scuro"]{
+  --piano:#0d0d0d; --tela:#1a1a19;
+  --inchiostro:#ffffff; --secondario:#c3c2b7; --tenue:#898781;
+  --griglia:#2c2c2a; --base:#383835; --bordo:rgba(255,255,255,.10);
+  --s1:#3987e5; --s2:#d95926; --s3:#199e70; --s4:#c98500; --s5:#d55181;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Jost',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  background:var(--piano);color:var(--inchiostro);font-weight:300;-webkit-font-smoothing:antialiased}
+.w{max-width:1000px;margin:0 auto;padding:2rem 1.5rem 4rem}
+.k{font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:#8a9e87;font-weight:600}
+h1{font-family:'Cormorant Garamond',Georgia,serif;font-size:2.4rem;font-weight:400;margin:.3rem 0 .5rem}
+.sub{font-size:.92rem;line-height:1.7;color:var(--secondario);max-width:66ch}
+.et{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:#9a7c2e;
+  font-weight:700;margin:1.7rem 0 .7rem;display:flex;align-items:center;gap:.6rem}
+.et::after{content:'';flex:1;height:1px;background:var(--griglia)}
+
+.b{font:inherit;font-size:.77rem;padding:.5rem 1.05rem;border-radius:100px;cursor:pointer;
+  border:1.5px solid var(--bordo);background:var(--tela);color:var(--inchiostro);
+  font-weight:500;transition:all .16s}
+.b:hover{border-color:var(--tenue)}
+.b.acceso{background:var(--inchiostro);color:var(--tela);border-color:var(--inchiostro)}
+.riga{display:flex;gap:.5rem;flex-wrap:wrap;align-items:center}
+
+/* il quadro */
+.quadro{position:relative;border:1px solid var(--bordo);border-radius:14px;
+  background:var(--tela);padding:1.1rem 1.2rem .8rem;margin-top:.8rem}
+.titolo{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.4rem;font-weight:600;line-height:1.2}
+.occhio{font-size:.8rem;color:var(--secondario);line-height:1.6;margin:.2rem 0 .9rem;max-width:62ch}
+svg{display:block;width:100%;overflow:visible}
+.gr-linea{fill:none;stroke-width:2;stroke-linejoin:round;stroke-linecap:round}
+.gr-griglia{stroke:var(--griglia);stroke-width:1;shape-rendering:crispEdges}
+.gr-base{stroke:var(--base);stroke-width:1;shape-rendering:crispEdges}
+.gr-testo{font-family:'Jost',sans-serif;font-size:11px;fill:var(--tenue)}
+.gr-etichetta{font-family:'Jost',sans-serif;font-size:11.5px;font-weight:600;fill:var(--secondario)}
+.gr-anello{stroke:var(--tela);stroke-width:2}
+.crocifilo{stroke:var(--base);stroke-width:1;shape-rendering:crispEdges;pointer-events:none}
+
+/* legenda: sempre, per due o più serie */
+.legenda{display:flex;gap:.9rem;flex-wrap:wrap;margin-top:.7rem;padding-top:.7rem;
+  border-top:1px solid var(--griglia)}
+.lg{display:flex;align-items:center;gap:.4rem;font-size:.78rem;color:var(--secondario);
+  cursor:pointer;background:none;border:none;font-family:inherit;padding:0}
+.lg i{width:16px;height:2px;border-radius:2px;background:var(--c);flex:none}
+.lg.spenta{opacity:.35}
+
+/* tooltip */
+.tip{position:absolute;pointer-events:none;background:var(--tela);border:1px solid var(--bordo);
+  border-radius:10px;padding:.5rem .65rem;box-shadow:0 6px 22px rgba(0,0,0,.13);
+  font-size:.78rem;opacity:0;transition:opacity .12s;z-index:5;min-width:132px}
+.tip.vedi{opacity:1}
+.tip .anno{font-weight:600;color:var(--inchiostro);margin-bottom:.3rem;font-size:.82rem}
+.tip .r{display:flex;align-items:center;gap:.4rem;margin-top:.16rem}
+.tip .r i{width:12px;height:2px;border-radius:2px;background:var(--c);flex:none}
+.tip .r b{font-weight:600;color:var(--inchiostro);margin-left:auto;font-variant-numeric:tabular-nums}
+.tip .r span{color:var(--secondario)}
+
+/* comandi dell'animazione */
+.comandi{display:flex;gap:.7rem;align-items:center;margin-top:.9rem;flex-wrap:wrap}
+#scorri{flex:1;min-width:170px;accent-color:var(--s1);height:5px;cursor:pointer}
+.anno-ora{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.7rem;font-weight:600;
+  min-width:3.4ch;font-variant-numeric:tabular-nums}
+
+/* tabella: il canale che non dipende dal colore */
+table{width:100%;border-collapse:collapse;margin-top:.8rem;font-size:.78rem}
+th,td{text-align:right;padding:.35rem .5rem;border-bottom:1px solid var(--griglia);
+  font-variant-numeric:tabular-nums;color:var(--secondario)}
+th:first-child,td:first-child{text-align:left}
+th{font-weight:600;color:var(--inchiostro);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase}
+.tab-avv{font-size:.75rem;color:var(--tenue);margin-top:.5rem;line-height:1.5}
+.nota{margin-top:1.2rem;padding:.95rem 1.15rem;border-left:3px solid #9a7c2e;background:var(--tela);
+  border-radius:0 10px 10px 0;font-size:.83rem;line-height:1.7;color:var(--secondario)}
+.nota b{color:#9a7c2e;font-weight:600}
+@media(max-width:640px){
+  .w{padding:1.4rem 1rem 3rem}h1{font-size:1.9rem}
+  .quadro{padding:.9rem .8rem .7rem}
+}
+</style>
+</head>
+<body>
+<div class="w">
+  <div class="k">Idearca · Prove</div>
+  <h1>Grafici animati</h1>
+  <p class="sub">Tre serie storiche che si muovono nel tempo. Il tasto avvia il disegno anno
+  per anno: <strong>si vede il momento in cui una curva scavalca l'altra</strong>, che in una
+  tabella non si vede mai. Ogni grafico ha una sola scala verticale — due scale diverse sullo
+  stesso riquadro fanno vedere legami che nei dati non ci sono.</p>
+
+  <div class="et">La serie</div>
+  <div class="riga" id="serie"></div>
+
+  <div class="quadro">
+    <div class="titolo" id="titolo"></div>
+    <div class="occhio" id="occhio"></div>
+    <svg id="tela" viewBox="0 0 720 340" preserveAspectRatio="xMidYMid meet"></svg>
+    <div class="tip" id="tip"></div>
+    <div class="legenda" id="legenda"></div>
+    <div class="comandi">
+      <button class="b" id="bAvvia" onclick="avviaFerma()">▶ Avvia</button>
+      <input id="scorri" type="range" min="0" max="8" value="8">
+      <span class="anno-ora" id="annoOra"></span>
+      <button class="b" id="bScala" onclick="logaritmica=!logaritmica;disegna()">Scala logaritmica</button>
+      <button class="b" id="bTab" onclick="tabella=!tabella;disegna()">Vedi i numeri</button>
+      <button class="b" onclick="cambiaTema()" id="bTema">Scuro</button>
+    </div>
+    <div id="zonaTabella"></div>
+  </div>
+
+  <div class="nota"><b>Sui numeri.</b> Sono stime, non misure: prima dei censimenti moderni
+  la popolazione di un continente si ricostruisce, non si conta. Le cifre del prodotto interno
+  sono in dollari internazionali del 1990, cioè già corretti per l'inflazione e per il diverso
+  costo della vita — altrimenti non si potrebbero confrontare due secoli fra loro. Le fonti
+  stanno sotto ogni grafico.</div>
+</div>
+
+<script>
+/* ══════════════════════════════════════════════════════════
+   I GRAFICI ANIMATI
+   Tre regole tenute ferme, che sono anche le tre cose che si
+   sbagliano più spesso:
+   1. una sola scala verticale per riquadro. Due scale diverse
+      sullo stesso grafico fanno leggere una correlazione che
+      nei dati non c'è;
+   2. il colore segue la serie, non la sua posizione: spegnere
+      l'Africa non ricolora l'Asia;
+   3. ogni valore che il tooltip mostra è raggiungibile anche
+      senza tooltip, dalla tabella qui sotto — perché col
+      tocco, o con la tastiera, il passaggio del mouse non
+      esiste.
+   La tavolozza non è quella di Idearca: quella, passata al
+   validatore, dava viola e blu indistinguibili per un daltonico
+   e ruggine e oro troppo vicini perfino a vista normale.
+   ══════════════════════════════════════════════════════════ */
+
+const SERIE=[
+{
+ k:'popolazione', n:'Popolazione',
+ titolo:'La popolazione dei continenti, 1800-2020',
+ occhio:'In due secoli l\'Asia si moltiplica per sette e l\'Africa per dodici; l\'Europa, che nel 1800 era un quarto del mondo, oggi è meno di un decimo. Con la scala logaritmica si vedono anche l\'Oceania e il ritmo di crescita, che sulla scala normale spariscono.',
+ unita:'milioni di abitanti',
+ fonte:'Stime da Angus Maddison e United Nations, World Population Prospects',
+ anni:[1800,1850,1900,1950,1970,1990,2000,2010,2020],
+ dati:[
+  {n:'Asia',     v:[635,809,947,1405,2142,3226,3741,4210,4641]},
+  {n:'Africa',   v:[107,111,133,228,366,638,819,1055,1341]},
+  {n:'Americhe', v:[31,59,156,340,511,724,836,942,1023]},
+  {n:'Europa',   v:[203,276,408,549,657,721,727,736,748]},
+  {n:'Oceania',  v:[2,2,6,13,19,27,31,37,43]}
+ ]},
+{
+ k:'prodotto', n:'Prodotto interno',
+ titolo:'Prodotto interno pro capite, 1820-2008',
+ occhio:'Nel 1820 la distanza fra l\'area più ricca e la più povera era di tre a uno. Nel 2008 è di diciotto a uno. La divaricazione non comincia con il colonialismo: comincia con l\'industrializzazione, e si vede il punto esatto in cui le curve si separano.',
+ unita:'dollari internazionali del 1990',
+ fonte:'Angus Maddison, The World Economy: Historical Statistics (OCSE)',
+ anni:[1820,1870,1900,1913,1950,1973,1990,2008],
+ dati:[
+  {n:'Stati Uniti',      v:[1257,2445,4091,5301,9561,16689,23201,31178]},
+  {n:'Europa occid.',    v:[1204,1960,2893,3457,4569,11417,15966,21672]},
+  {n:'America Latina',   v:[692,681,1113,1481,2506,4504,5055,6973]},
+  {n:'Asia',             v:[577,556,638,696,717,1718,2781,5611]},
+  {n:'Africa',           v:[420,500,601,637,890,1410,1425,1780]}
+ ]},
+{
+ k:'emigrazione', n:'Emigrazione italiana',
+ titolo:'Gli italiani che se ne andavano, 1876-1976',
+ occhio:'Un secolo di partenze, con il massimo nel 1913: ottocentosettantatremila persone in un anno solo, da un paese di trentacinque milioni. Poi la guerra chiude le frontiere, il fascismo scoraggia l\'espatrio, e nel dopoguerra riparte una seconda ondata che quasi nessuno ricorda.',
+ unita:'migliaia di partenze in un anno',
+ fonte:'ISTAT, Sommario di statistiche storiche',
+ anni:[1876,1885,1895,1900,1905,1910,1913,1915,1920,1925,1930,1935,1940,1946,1950,1955,1960,1965,1970,1976],
+ dati:[
+  {n:'Partenze', v:[108,157,293,353,726,651,873,146,614,280,280,58,52,111,200,297,383,283,152,97]}
+ ]}
+];
+
+const COLORI=['var(--s1)','var(--s2)','var(--s3)','var(--s4)','var(--s5)'];
+let iSerie=0, avanzamento=0, logaritmica=false, tabella=false, spente=new Set(), orologio=null;
+const svg=document.getElementById('tela'), tip=document.getElementById('tip');
+const M={s:58, d:96, a:14, b:34};   /* margini: sinistra, destra, alto, basso */
+const L=720, H=340;
+
+const S = () => SERIE[iSerie];
+const attive = () => S().dati.map((d,i)=>({...d, i})).filter(d=>!spente.has(d.i));
+
+function scale(){
+  const s=S();
+  const vis=s.anni.length;
+  const xs = a => M.s + (L-M.s-M.d) * (vis===1?0:(a/(vis-1)));
+  const tutti=attive().flatMap(d=>d.v);
+  let min=Math.min(...tutti), max=Math.max(...tutti);
+  if(logaritmica){ min=Math.max(1,min); }
+  else { min=0; }
+  max=max*1.06;
+  const y0=logaritmica?Math.log10(min):min, y1=logaritmica?Math.log10(max):max;
+  const ys = v => {
+    const t=logaritmica?Math.log10(Math.max(1,v)):v;
+    return H-M.b - (H-M.b-M.a)*((t-y0)/((y1-y0)||1));
+  };
+  return {xs,ys,y0,y1,min,max};
+}
+
+/* passo comodo: 1, 2, 2.5 o 5 per una potenza di dieci */
+function tacccheTonde(min,max,quante){
+  const campo=(max-min)||1;
+  const grezzo=campo/quante;
+  const mag=Math.pow(10,Math.floor(Math.log10(grezzo)));
+  const norm=grezzo/mag;
+  const passo=(norm<=1?1:norm<=2?2:norm<=2.5?2.5:norm<=5?5:10)*mag;
+  const out=[];
+  for(let v=Math.ceil(min/passo)*passo; v<=max+1e-9; v+=passo) out.push(+v.toFixed(6));
+  return out;
+}
+/* in scala logaritmica le tacche stanno sulle potenze di dieci */
+function tacchePotenze(min,max){
+  const out=[];
+  for(let e=Math.floor(Math.log10(Math.max(1,min))); Math.pow(10,e)<=max*1.0001; e++){
+    const b=Math.pow(10,e);
+    [1,2,5].forEach(k=>{ if(k*b>=min && k*b<=max) out.push(k*b); });
+  }
+  return out.length?out:[min,max];
+}
+
+const fmt = n => n>=1000 ? n.toLocaleString('it-IT') : String(n);
+const esc = t => String(t);
+
+function disegna(){
+  const s=S(), sc=scale();
+  document.getElementById('titolo').textContent=s.titolo;
+  document.getElementById('occhio').textContent=s.occhio;
+  document.getElementById('annoOra').textContent=s.anni[avanzamento];
+  document.getElementById('bScala').classList.toggle('acceso',logaritmica);
+  document.getElementById('bTab').classList.toggle('acceso',tabella);
+
+  const sc2=document.getElementById('scorri');
+  sc2.max=s.anni.length-1; sc2.value=avanzamento;
+
+  /* ── assi e griglia: sottili, continui, arretrati ── */
+  let d='';
+  /* Le tacche vanno su numeri tondi. Dividendo l'intervallo in cinque
+     parti uguali uscivano etichette come 984, 1.968, 2.952: numeri veri
+     ma che nessuno legge. */
+  const valoriTacche = logaritmica
+    ? tacchePotenze(sc.min, sc.max)
+    : tacccheTonde(sc.min, sc.max, 5);
+  valoriTacche.forEach(v=>{
+    const y = sc.ys(v);
+    if(y<M.a-2 || y>H-M.b+2) return;
+    d+=`<line class="gr-griglia" x1="${M.s}" y1="${y.toFixed(1)}" x2="${L-M.d}" y2="${y.toFixed(1)}"/>`;
+    d+=`<text class="gr-testo" x="${M.s-8}" y="${(y+4).toFixed(1)}" text-anchor="end">${fmt(Math.round(v))}</text>`;
+  });
+  d+=`<line class="gr-base" x1="${M.s}" y1="${H-M.b}" x2="${L-M.d}" y2="${H-M.b}"/>`;
+  s.anni.forEach((a,i)=>{
+    if(s.anni.length>12 && i%3!==0 && i!==s.anni.length-1) return;
+    d+=`<text class="gr-testo" x="${sc.xs(i)}" y="${H-M.b+18}" text-anchor="middle">${a}</text>`;
+  });
+  d+=`<text class="gr-testo" x="${M.s-8}" y="${M.a-2}" text-anchor="end" style="font-size:10px">${esc(s.unita)}</text>`;
+
+  /* ── le linee, disegnate fino all'anno corrente ── */
+  attive().forEach(serie=>{
+    const c=COLORI[serie.i%COLORI.length];
+    const punti=serie.v.slice(0,avanzamento+1).map((v,i)=>`${sc.xs(i).toFixed(1)},${sc.ys(v).toFixed(1)}`);
+    if(punti.length>1)
+      d+=`<polyline class="gr-linea" stroke="${c}" points="${punti.join(' ')}"/>`;
+    const ux=sc.xs(avanzamento), uy=sc.ys(serie.v[avanzamento]);
+    /* punto finale: anello nel colore della tela, così resta leggibile
+       dove due linee si incrociano */
+    d+=`<circle cx="${ux.toFixed(1)}" cy="${uy.toFixed(1)}" r="4.5" fill="${c}" class="gr-anello"/>`;
+    /* etichetta diritta: la legenda c'è comunque, questa la raddoppia */
+    d+=`<text class="gr-etichetta" x="${(ux+11).toFixed(1)}" y="${(uy+4).toFixed(1)}">${esc(serie.n)}</text>`;
+  });
+
+  /* superficie invisibile per il crocifilo */
+  d+=`<rect id="zonaTocco" x="${M.s}" y="${M.a}" width="${L-M.s-M.d}" height="${H-M.a-M.b}"
+        fill="transparent" style="cursor:crosshair"/>`;
+  d+=`<line id="croce" class="crocifilo" x1="0" y1="${M.a}" x2="0" y2="${H-M.b}" style="display:none"/>`;
+  svg.innerHTML=d;
+  agganciaCrocifilo();
+
+  /* ── legenda: sempre presente da due serie in su ── */
+  const lg=document.getElementById('legenda');
+  if(s.dati.length<2){ lg.innerHTML=''; lg.style.display='none'; }
+  else{
+    lg.style.display='';
+    lg.innerHTML='';
+    s.dati.forEach((serie,i)=>{
+      const b=document.createElement('button');
+      b.className='lg'+(spente.has(i)?' spenta':'');
+      b.style.setProperty('--c',COLORI[i%COLORI.length]);
+      b.onclick=()=>{ spente.has(i)?spente.delete(i):spente.add(i);
+                      if(spente.size===s.dati.length) spente.delete(i);
+                      disegna(); };
+      const ic=document.createElement('i');
+      const tx=document.createElement('span');
+      tx.textContent=serie.n;      /* mai innerHTML su un'etichetta */
+      b.append(ic,tx); lg.append(b);
+    });
+  }
+  disegnaTabella();
+}
+
+function disegnaTabella(){
+  const z=document.getElementById('zonaTabella');
+  if(!tabella){ z.innerHTML=''; return; }
+  const s=S();
+  z.innerHTML='';
+  const t=document.createElement('table');
+  const th=document.createElement('tr');
+  const a0=document.createElement('th'); a0.textContent='Anno'; th.append(a0);
+  s.dati.forEach(d=>{ const h=document.createElement('th'); h.textContent=d.n; th.append(h); });
+  t.append(th);
+  s.anni.forEach((a,i)=>{
+    const r=document.createElement('tr');
+    const c0=document.createElement('td'); c0.textContent=a; r.append(c0);
+    s.dati.forEach(d=>{ const c=document.createElement('td'); c.textContent=fmt(d.v[i]); r.append(c); });
+    t.append(r);
+  });
+  z.append(t);
+  const p=document.createElement('div');
+  p.className='tab-avv';
+  p.textContent=s.unita+'. '+s.fonte+'.';
+  z.append(p);
+}
+
+/* ── crocifilo e tooltip ────────────────────────────────── */
+function agganciaCrocifilo(){
+  const zona=document.getElementById('zonaTocco');
+  const croce=document.getElementById('croce');
+  const s=S(), sc=scale();
+  const muovi=e=>{
+    const r=svg.getBoundingClientRect();
+    const x=(e.clientX-r.left)*(L/r.width);
+    let vicino=0, dist=1e9;
+    s.anni.forEach((a,i)=>{ const d=Math.abs(sc.xs(i)-x); if(d<dist){dist=d;vicino=i;} });
+    croce.style.display='';
+    croce.setAttribute('x1',sc.xs(vicino)); croce.setAttribute('x2',sc.xs(vicino));
+    mostraTip(vicino, e);
+  };
+  zona.addEventListener('pointermove',muovi);
+  zona.addEventListener('pointerdown',muovi);
+  zona.addEventListener('pointerleave',()=>{
+    croce.style.display='none'; tip.classList.remove('vedi');
+  });
+}
+
+function mostraTip(i,e){
+  const s=S();
+  tip.innerHTML='';
+  const a=document.createElement('div');
+  a.className='anno'; a.textContent=s.anni[i];
+  tip.append(a);
+  /* un tooltip solo, con tutte le serie: il puntatore non deve
+     centrare la linea per ottenere un numero */
+  s.dati.forEach((serie,k)=>{
+    if(spente.has(k)) return;
+    const r=document.createElement('div');
+    r.className='r'; r.style.setProperty('--c',COLORI[k%COLORI.length]);
+    const ic=document.createElement('i');
+    const nm=document.createElement('span'); nm.textContent=serie.n;
+    const vl=document.createElement('b');    vl.textContent=fmt(serie.v[i]);
+    r.append(ic,nm,vl); tip.append(r);
+  });
+  const box=document.getElementById('tela').getBoundingClientRect();
+  const q=tip.closest('.quadro').getBoundingClientRect();
+  const sc=scale();
+  const px=box.left-q.left+sc.xs(i)*(box.width/L);
+  tip.style.left=Math.min(q.width-tip.offsetWidth-8, Math.max(8, px+14))+'px';
+  tip.style.top=(box.top-q.top+18)+'px';
+  tip.classList.add('vedi');
+}
+
+/* ── animazione ─────────────────────────────────────────── */
+function avviaFerma(){
+  if(orologio){ ferma(); return; }
+  if(avanzamento>=S().anni.length-1) avanzamento=0;
+  document.getElementById('bAvvia').textContent='❚❚ Ferma';
+  orologio=setInterval(()=>{
+    avanzamento++;
+    if(avanzamento>=S().anni.length-1){ avanzamento=S().anni.length-1; disegna(); ferma(); return; }
+    disegna();
+  }, 420);
+  disegna();
+}
+function ferma(){
+  clearInterval(orologio); orologio=null;
+  document.getElementById('bAvvia').textContent='▶ Avvia';
+}
+
+function scegli(i){
+  ferma(); iSerie=i; spente=new Set();
+  avanzamento=SERIE[i].anni.length-1;
+  document.querySelectorAll('#serie .b').forEach((b,k)=>b.classList.toggle('acceso',k===i));
+  disegna();
+}
+
+function cambiaTema(){
+  const scuro=document.documentElement.getAttribute('data-tema')==='scuro';
+  document.documentElement.setAttribute('data-tema', scuro?'chiaro':'scuro');
+  document.getElementById('bTema').textContent = scuro?'Scuro':'Chiaro';
+  disegna();
+}
+
+document.getElementById('scorri').addEventListener('input',e=>{
+  ferma(); avanzamento=+e.target.value; disegna();
+});
+document.getElementById('serie').innerHTML=SERIE.map((s,i)=>
+  `<button class="b${i===0?' acceso':''}" onclick="scegli(${i})">${s.n}</button>`).join('');
+if(window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches){
+  document.documentElement.setAttribute('data-tema','scuro');
+  document.getElementById('bTema').textContent='Chiaro';
+}
+scegli(0);
+</script>
+</body>
+</html>
