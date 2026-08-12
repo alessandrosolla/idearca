@@ -7,14 +7,14 @@
 --  su cui la classe lascia tracce, visibili a tutti.
 --
 --  Il docente non ottiene «chi ha fatto i compiti»: ottiene la
---  mappa di dove la classe si e' inceppata. Se quattordici note
+-- mappa di dove la classe si è inceppata. Se quattordici note
 --  su venti stanno sulla stessa frase, quella frase va rifatta
 --  a lezione — e lo si sa prima di entrare in aula.
 --
 --  COME SI USA: Supabase -> "SQL Editor" -> "New query" ->
---  incolla tutto -> RUN. Si puo' rieseguire senza danni.
+-- incolla tutto -> RUN. Si può rieseguire senza danni.
 --
---  PRESUPPONE: SICUREZZA-supabase-v2.sql gia' eseguito
+-- PRESUPPONE: SICUREZZA-supabase-v2.sql già eseguito
 --  (serve la funzione is_docente()).
 -- ============================================================
 
@@ -30,8 +30,8 @@ end $$;
 --  1) I BRANI
 -- ============================================================
 -- Il testo sta qui dentro per intero. Viene diviso in frasi dalla
--- pagina, non dal database: cosi' se un giorno si cambia il modo
--- di dividere non bisogna toccare i dati gia' salvati.
+-- pagina, non dal database: così se un giorno si cambia il modo
+-- di dividere non bisogna toccare i dati già salvati.
 
 create table if not exists public.brani (
   id         bigint generated always as identity primary key,
@@ -58,7 +58,7 @@ create policy "brani_gestione_docente"
   with check (public.is_docente());
 
 -- Gli studenti NON leggono la tabella: leggono la funzione qui
--- sotto, che restituisce solo i brani aperti. Cosi' un testo
+-- sotto, che restituisce solo i brani aperti. Così un testo
 -- preparato per la settimana prossima resta invisibile.
 
 
@@ -87,8 +87,8 @@ grant execute on function public.brani_aperti() to anon, authenticated;
 -- ============================================================
 --  3) LE ANNOTAZIONI
 -- ============================================================
--- `frase` e' l'indice della frase nel brano, contato dalla pagina
--- a partire da zero. `tipo` dice che genere di nota e': serve a
+-- `frase` è il numero della frase nel brano, contato dalla pagina
+-- a partire da zero. `tipo` dice che genere di nota è: serve a
 -- distinguere «non ho capito» da «qui sta il punto», che per il
 -- docente sono due informazioni opposte.
 
@@ -111,14 +111,14 @@ alter table public.annotazioni enable row level security;
 -- ============================================================
 --  4) LA DOMANDA CHIUSA IN UNA FUNZIONE
 -- ============================================================
--- ATTENZIONE, e' il punto in cui la migrazione 04 aveva sbagliato:
+-- ATTENZIONE, è il punto in cui la migrazione 04 aveva sbagliato:
 -- se la regola di inserimento facesse
 --     exists (select 1 from public.brani where id = ... and aperto)
 -- quella select girerebbe coi permessi dello studente, che su
 -- `brani` non ha alcuna regola di lettura. Risultato: nessuna riga
 -- vista, controllo fallito, annotazione respinta sempre.
--- Percio' la domanda sta dentro una funzione security definer, che
--- risponde soltanto si' o no.
+-- Perciò la domanda sta dentro una funzione security definer, che
+-- risponde soltanto sì o no.
 
 create or replace function public.brano_aperto(p_id bigint)
 returns boolean
@@ -138,8 +138,8 @@ grant execute on function public.brano_aperto(bigint) to anon, authenticated;
 --  5) LE REGOLE DELLE ANNOTAZIONI
 -- ============================================================
 
--- Chiunque legge le annotazioni di un brano aperto: e' il senso
--- dell'esercizio, gli studenti devono vedersi fra loro.
+-- Chiunque legge le annotazioni di un brano aperto: è il senso
+-- della prova: gli studenti devono vedersi fra loro.
 drop policy if exists "annotazioni_lettura" on public.annotazioni;
 create policy "annotazioni_lettura"
   on public.annotazioni for select
@@ -147,7 +147,7 @@ create policy "annotazioni_lettura"
   using (public.brano_aperto(brano_id) or public.is_docente());
 
 -- Si scrive solo su un brano aperto. I limiti di lunghezza sono
--- gia' nei check della tabella: qui basta la finestra.
+-- già nei check della tabella: qui basta la finestra.
 drop policy if exists "annotazioni_scrittura" on public.annotazioni;
 create policy "annotazioni_scrittura"
   on public.annotazioni for insert
@@ -173,7 +173,7 @@ create policy "annotazioni_cancella_docente"
 -- ============================================================
 --  6) UN BRANO DI PROVA
 -- ============================================================
--- Cosi' la pagina ha qualcosa da mostrare subito. Chiudilo o
+-- Così la pagina ha qualcosa da mostrare subito. Chiudilo o
 -- cancellalo quando vuoi.
 
 insert into public.brani (titolo, autore, fonte, consegna, testo, aperto)

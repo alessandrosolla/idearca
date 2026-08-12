@@ -6,19 +6,19 @@
 --      new row violates row-level security policy for table "consegne"
 --  Succedeva anche con una finestra regolarmente aperta.
 --
---  LA CAUSA: nella migrazione 04 la regola che autorizza l'invio
+-- LA CAUSA: nella migrazione 04 la regola che autorizza gli invii
 --  contiene questo controllo:
 --
 --      exists (select 1 from public.finestre_consegna f
 --              where f.id = consegne.finestra_id and f.attiva ...)
 --
 --  Sembra innocuo, ma quella select viene eseguita CON I PERMESSI
---  DELLO STUDENTE, e su finestre_consegna c'è una sola regola di
+-- DELLO STUDENTE, e su finestre_consegna vi è una sola regola di
 --  lettura: quella del docente. Lo studente quindi non vede
---  nessuna riga, l'exists risponde «falso» e la consegna viene
+-- nessuna riga, la verifica risponde «falso» e la consegna viene
 --  respinta — sempre, qualunque finestra sia aperta.
 --
---  Perché l'elenco delle consegne aperte invece si vedeva? Perché
+-- Perché la lista delle consegne aperte invece si vedeva? Perché
 --  quello passa dalla funzione finestre_aperte(), che è
 --  «security definer» e scavalca le regole di lettura. Il
 --  controllo dentro la policy no: quella parte non lo era.
@@ -58,8 +58,8 @@ select count(*) as finestre_aperte_adesso from public.finestre_aperte();
 -- ============================================================
 -- Risponde soltanto «sì» o «no» su una finestra per volta.
 -- Non restituisce titoli, istruzioni né classi: chi la chiama
--- non impara nulla che non sapesse già, perché l'id ce l'ha in
--- mano solo se gliel'ha dato l'elenco delle finestre aperte.
+-- non impara nulla che non sapesse già, perché il numero della finestra ce lo ha
+-- in mano solo se glielo ha dato la lista delle finestre aperte.
 
 create or replace function public.finestra_aperta(p_id bigint)
 returns boolean
