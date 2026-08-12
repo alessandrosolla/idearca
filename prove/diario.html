@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Diario immersivo — Idearca</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Jost',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  background:#faf8f3;color:#1c2b1a;font-weight:300;-webkit-font-smoothing:antialiased}
+.w{max-width:1060px;margin:0 auto;padding:2rem 1.5rem 4rem}
+.k{font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:#8a9e87;font-weight:600}
+h1{font-family:'Cormorant Garamond',Georgia,serif;font-size:2.4rem;font-weight:400;margin:.3rem 0 .5rem}
+.sub{font-size:.92rem;line-height:1.7;color:#5a6b58;max-width:66ch}
+.et{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:#9a7c2e;
+  font-weight:700;margin:1.7rem 0 .7rem;display:flex;align-items:center;gap:.6rem}
+.et::after{content:'';flex:1;height:1px;background:rgba(45,90,39,.13)}
+
+.epoche{display:flex;gap:.4rem;overflow-x:auto;padding-bottom:.4rem}
+.ep{flex:none;font:inherit;font-size:.76rem;padding:.45rem .95rem;border-radius:100px;cursor:pointer;
+  border:1.5px solid rgba(45,90,39,.2);background:#fff;color:#2d5a27;font-weight:600;white-space:nowrap;
+  transition:all .16s}
+.ep:hover{border-color:#2d5a27}
+.ep.attiva{background:#2d5a27;color:#fff;border-color:#2d5a27}
+
+.telaio{position:relative;border:1px solid rgba(45,90,39,.16);border-radius:14px;
+  background:#eef2ea;overflow:hidden;margin-top:.7rem}
+canvas{display:block;width:100%;cursor:crosshair}
+.carico{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  color:#8a9e87;font-size:.85rem;background:#eef2ea;transition:opacity .3s}
+.carico.via{opacity:0;pointer-events:none}
+
+.doppia{display:grid;grid-template-columns:1fr 1.15fr;gap:.8rem;margin-top:.8rem;align-items:start}
+.elenco{display:flex;flex-direction:column;gap:.35rem;max-height:430px;overflow-y:auto}
+.vo{text-align:left;font:inherit;font-size:.82rem;padding:.55rem .75rem;border-radius:9px;cursor:pointer;
+  border:1px solid rgba(45,90,39,.13);background:#fff;color:#3d4a3b;border-left:3px solid transparent;
+  transition:all .14s}
+.vo:hover{border-left-color:#8a9e87}
+.vo.attiva{border-left-color:#9a7c2e;background:#fdfbf4}
+.vo b{display:block;font-weight:600;color:#1c2b1a;font-size:.87rem}
+.vo span{font-size:.71rem;color:#8a9e87}
+
+.scheda{border:1px solid rgba(45,90,39,.14);border-top:3px solid #9a7c2e;border-radius:14px;
+  background:#fff;padding:1.2rem 1.35rem}
+.scheda .chi{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.7rem;font-weight:600;line-height:1.15}
+.scheda .dove{font-size:.72rem;letter-spacing:.1em;color:#8a6a1e;font-weight:600;margin:.2rem 0 .8rem}
+.scheda .dice{font-size:.92rem;line-height:1.8;color:#2a352a}
+.cit{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.12rem;line-height:1.55;color:#2d5a27;
+  font-style:italic;margin:.8rem 0;padding-left:.9rem;border-left:3px solid rgba(45,90,39,.25)}
+.notare{margin-top:.9rem;padding:.8rem .95rem;border-radius:10px;background:#f6f3ec;
+  font-size:.84rem;line-height:1.7;color:#5a6b58}
+.notare b{color:#8a6a1e;font-weight:600;display:block;margin-bottom:.2rem}
+.fonte{margin-top:.7rem;font-size:.73rem;color:#a8b3a6;line-height:1.5}
+
+.avviso{margin-top:1.2rem;padding:.95rem 1.15rem;border-left:3px solid #9a7c2e;background:#f6f3ec;
+  border-radius:0 10px 10px 0;font-size:.84rem;line-height:1.7;color:#5a6b58}
+.avviso b{color:#8a6a1e;font-weight:600}
+@media(max-width:760px){
+  .w{padding:1.4rem 1rem 3rem}h1{font-size:1.9rem}
+  .doppia{grid-template-columns:1fr}
+  .elenco{max-height:220px}
+}
+</style>
+</head>
+<body>
+<div class="w">
+  <div class="k">Idearca · Prove</div>
+  <h1>Diario immersivo</h1>
+  <p class="sub">Dodici persone che hanno scritto in prima persona quello che stavano vedendo,
+  messe sulla carta del loro tempo — con i confini che c'erano allora, non quelli di oggi.
+  Una fonte diretta non dice <em>com'era</em>: dice <strong>come sembrava a chi guardava</strong>,
+  ed è una cosa diversa e più utile.</p>
+
+  <div class="et">L'epoca — la carta cambia con lei</div>
+  <div class="epoche" id="epoche"></div>
+
+  <div class="telaio">
+    <canvas id="carta"></canvas>
+    <div class="carico" id="carico">Carico la carta…</div>
+  </div>
+
+  <div class="doppia">
+    <div class="elenco" id="elenco"></div>
+    <div class="scheda" id="scheda"></div>
+  </div>
+
+  <div class="avviso"><b>Come sono scritti i testi.</b> I riquadri raccontano che cosa dice
+  la fonte, con parole nostre: non sono traduzioni, e non mettono in bocca a nessuno frasi
+  che non ha scritto. Le poche righe in corsivo sono citazioni brevi da testi ormai di
+  pubblico dominio. Per leggere davvero una fonte bisogna andare alla fonte, e sotto ogni
+  scheda c'è scritto quale.</div>
+</div>
+
+<script src="../js/d3-array.min.js"></script>
+<script src="../js/d3-geo.min.js"></script>
+<script>
+/* ══════════════════════════════════════════════════════════
+   IL DIARIO IMMERSIVO
+   La carta non è quella di oggi: per ogni fonte si carica il
+   mondo com'era disegnato allora, dalle stesse otto carte
+   storiche che usa il globo della homepage. Vedere Colombo
+   sopra un'America senza confini, o il fronte dell'Isonzo
+   dentro un impero che oggi non esiste, vale più di dieci
+   righe di spiegazione.
+   ══════════════════════════════════════════════════════════ */
+
+const CARTE=[
+ {k:'bc323', f:'../data/world_bc323.json', l:'323 a.C.'},
+ {k:'100',   f:'../data/world_100.json',   l:'100 d.C.'},
+ {k:'1000',  f:'../data/world_1000.json',  l:'1000'},
+ {k:'1492',  f:'../data/world_1492.json',  l:'1492'},
+ {k:'1815',  f:'../data/world_1815.json',  l:'1815'},
+ {k:'1914',  f:'../data/world_1914.json',  l:'1914'},
+ {k:'1945',  f:'../data/world_1945.json',  l:'1945'},
+ {k:'2000',  f:'../data/world_2000.json',  l:'2000'}
+];
+
+const FONTI=[
+{chi:'Plinio il Giovane', anno:79, carta:'100', luogo:'Miseno, golfo di Napoli', ll:[14.08,40.79],
+ dice:'Ha diciassette anni e guarda il Vesuvio dall\'altra parte del golfo. Venticinque anni dopo scrive a Tacito due lettere per raccontargli come morì suo zio, che era andato in mare per soccorrere la gente e per vedere da vicino. Descrive la nube che sale a forma di pino, la cenere che cade sempre più fitta, il buio che non è quello della notte ma quello di una stanza chiusa senza lume, e la madre che lo prega di scappare senza di lei.',
+ cit:'Non un buio come quello di una notte senza luna, ma come di una stanza chiusa a lume spento.',
+ notare:'È una fonte scritta venticinque anni dopo, su richiesta di uno storico, da un ragazzo che nel frattempo è diventato un uomo pubblico. Ogni dettaglio è vero e ogni dettaglio è stato scelto.',
+ fonte:'Plinio il Giovane, Epistole VI 16 e VI 20'},
+
+{chi:'Sei Shōnagon', anno:1000, carta:'1000', luogo:'Heian-kyō (Kyoto)', ll:[135.77,35.01],
+ dice:'Dama di corte dell\'imperatrice, tiene un quaderno che nasconde sotto il guanciale. Non racconta la storia del Giappone: fa elenchi. Cose che fanno battere il cuore, cose che danno fastidio, cose che sembrano lontane pur essendo vicine. La corte imperiale appare non come un\'istituzione ma come un luogo dove si soffre il caldo, si aspettano lettere e si giudica la calligrafia di un uomo prima del suo carattere.',
+ cit:'',
+ notare:'La più grande fonte sulla vita quotidiana di una corte è un quaderno privato di appunti, non una cronaca. Le fonti migliori quasi mai sono state scritte per noi.',
+ fonte:'Sei Shōnagon, Makura no sōshi (Note del guanciale), inizio XI secolo'},
+
+{chi:'Ibn Battuta', anno:1352, carta:'1492', luogo:'Mali, valle del Niger', ll:[-3.0,16.77],
+ dice:'Partito da Tangeri a ventun anni per il pellegrinaggio alla Mecca, torna a casa dopo trent\'anni e centoventimila chilometri. Attraversa il Sahara con una carovana e arriva nel regno del Mali. Racconta la sicurezza delle strade, il rispetto per la giustizia, e insieme il fastidio per usanze che non approva. Poi detta tutto a uno scrivano, perché il sultano del Marocco vuole che quel racconto esista.',
+ cit:'',
+ notare:'Viaggia più lontano di Marco Polo e in Europa non lo conosce quasi nessuno. Che una fonte diventi famosa dipende da chi la copia, la traduce e la insegna — non da quanto vale.',
+ fonte:'Ibn Battuta, Rihla, dettata nel 1355'},
+
+{chi:'Cristoforo Colombo', anno:1492, carta:'1492', luogo:'Guanahaní, Bahamas', ll:[-74.48,24.05],
+ dice:'Il giornale di bordo del 12 ottobre registra l\'approdo su un\'isola che gli abitanti chiamano Guanahaní. Descrive persone che vengono incontro senza armi, che portano doni, e annota subito due cose insieme: che sono generosi, e che con cinquanta uomini si potrebbero soggiogare tutti. Crede fino alla morte di essere arrivato in Asia.',
+ cit:'',
+ notare:'Nella stessa pagina c\'è l\'ammirazione e il calcolo di come conquistarli. Non sono due autori diversi: è come funziona uno sguardo che arriva per prendere.',
+ fonte:'Diario di bordo, nella trascrizione di Bartolomé de las Casas'},
+
+{chi:'Bernal Díaz del Castillo', anno:1519, carta:'1492', luogo:'Tenochtitlán (Città del Messico)', ll:[-99.13,19.43],
+ dice:'Soldato semplice, scrive da vecchio perché è stufo delle cronache che danno tutto il merito a Cortés. Racconta il momento in cui dall\'altura vedono per la prima volta la città sul lago, con le strade d\'acqua e i templi bianchi, e dice che alcuni si chiedevano se non stessero sognando. Cinquant\'anni dopo ricorda ancora i nomi dei cavalli.',
+ cit:'',
+ notare:'Scrive per correggere un altro libro. Quasi tutte le fonti nascono contro qualcosa: sapere contro che cosa è metà del lavoro dello storico.',
+ fonte:'Bernal Díaz del Castillo, Historia verdadera de la conquista de la Nueva España'},
+
+{chi:'Matteo Ricci', anno:1601, carta:'1492', luogo:'Pechino', ll:[116.40,39.90],
+ dice:'Gesuita marchigiano, arriva a Pechino dopo vent\'anni passati a imparare il cinese e i classici confuciani. Nei suoi scritti descrive una corte che considera l\'Europa una periferia, e ammette che su molte cose i cinesi sono più avanti. Porta orologi e carte geografiche, e per farsi ascoltare disegna un planisfero che mette la Cina al centro.',
+ cit:'',
+ notare:'Sposta la Cina al centro della carta per ragioni diplomatiche. Ogni carta geografica mette qualcuno al centro, e non è mai una scelta neutra: nemmeno la nostra.',
+ fonte:'Matteo Ricci, Della entrata della Compagnia di Giesù e Christianità nella Cina'},
+
+{chi:'Samuel Pepys', anno:1666, carta:'1492', luogo:'Londra', ll:[-0.09,51.51],
+ dice:'Funzionario dell\'ammiragliato, tiene un diario cifrato per undici anni. Il 2 settembre lo svegliano per dirgli che c\'è un incendio; guarda dalla finestra, giudica che sia lontano e torna a letto. Nei giorni dopo annota i piccioni che non vogliono lasciare i cornicioni e si bruciano le ali, e il formaggio che seppellisce in giardino per salvarlo.',
+ cit:'',
+ notare:'Il dettaglio che resta è il formaggio sepolto in giardino. Le fonti private tengono le cose piccole, ed è per quelle che valgono più delle cronache ufficiali.',
+ fonte:'Samuel Pepys, Diario, 2-7 settembre 1666'},
+
+{chi:'Olaudah Equiano', anno:1756, carta:'1815', luogo:'Traversata atlantica', ll:[-30.0,10.0],
+ dice:'Rapito da bambino, deportato dall\'Africa occidentale ai Caraibi, comprerà la propria libertà e diventerà una delle voci dell\'abolizionismo inglese. Racconta la stiva: l\'aria irrespirabile, i compagni incatenati che preferiscono buttarsi in mare, la sorpresa nel vedere per la prima volta uomini con la pelle chiara e nel non capire come la nave si muovesse senza remi.',
+ cit:'',
+ notare:'Per due secoli la tratta è stata raccontata quasi solo da chi la organizzava. Questa è una delle rarissime testimonianze di chi era nella stiva, ed è per questo che è stata pubblicata: serviva alla causa.',
+ fonte:'Olaudah Equiano, The Interesting Narrative, 1789'},
+
+{chi:'Un anonimo di Vindolanda', anno:100, carta:'100', luogo:'Vindolanda, Britannia', ll:[-2.36,54.99],
+ dice:'Nel fango di un forte romano vicino al futuro Vallo di Adriano si sono conservate centinaia di tavolette di legno sottile. Non sono letteratura: sono liste di razioni, richieste di calzini e mutande contro il freddo, e l\'invito a una festa di compleanno scritto da una donna a un\'altra — forse il più antico testo in latino di mano femminile che abbiamo.',
+ cit:'',
+ notare:'La fonte più preziosa dell\'impero romano in Britannia è la spazzatura di un magazzino. Si è conservata perché il terreno era senza ossigeno: la storia che possiamo scrivere dipende da che cosa il caso ha salvato.',
+ fonte:'Tavolette di Vindolanda, British Museum'},
+
+{chi:'Christine de Pizan', anno:1405, carta:'1492', luogo:'Parigi', ll:[2.35,48.86],
+ dice:'Rimasta vedova a venticinque anni con tre figli, si mantiene scrivendo: è la prima donna in Europa a farlo di mestiere. Racconta di essersi seduta a leggere e di aver trovato, in un libro dopo l\'altro, che le donne sono inferiori; e di essersi chiesta come mai tanti uomini dotti dicessero una cosa che il suo stesso vivere smentiva.',
+ cit:'',
+ notare:'Il suo argomento è che l\'esperienza diretta vale contro l\'autorità dei libri. Nel Quattrocento è una mossa filosofica radicale, e non la fa un filosofo di professione.',
+ fonte:'Christine de Pizan, Le Livre de la Cité des Dames, 1405'},
+
+{chi:'Un fante sull\'Isonzo', anno:1916, carta:'1914', luogo:'Fronte dell\'Isonzo, Gorizia', ll:[13.62,45.94],
+ dice:'Le lettere dei soldati italiani passavano dalla censura, e i censori tenevano nota di che cosa la gente scriveva. Nelle lettere e nei diari di trincea tornano sempre le stesse cose: i pidocchi, il pane duro, la neve, il rumore dell\'artiglieria che non lascia dormire, e la richiesta di notizie sul raccolto. La battaglia quasi non compare: compare il corpo.',
+ cit:'',
+ notare:'Molti erano semianalfabeti e scrivevano come parlavano, in dialetto: quelle lettere sono anche la migliore fonte che abbiamo sull\'italiano parlato del primo Novecento. Una fonte dice sempre più di quello che voleva dire.',
+ fonte:'Diari e lettere della Grande Guerra, Archivio diaristico nazionale di Pieve Santo Stefano'},
+
+{chi:'Un emigrante a Ellis Island', anno:1905, carta:'1914', luogo:'New York', ll:[-74.04,40.70],
+ dice:'Fra il 1880 e il 1915 lasciano l\'Italia più di tredici milioni di persone. Nelle lettere che rimandano a casa ricorrono la visita medica temuta più di ogni altra cosa — bastava un\'infiammazione agli occhi per essere rispediti indietro — il nome storpiato dall\'impiegato, e la raccomandazione a non credere a chi dice che qui si raccoglie l\'oro per strada.',
+ cit:'',
+ notare:'Le lettere degli emigranti erano lette ad alta voce in paese e servivano a decidere se partire. Non erano private: erano documenti pubblici travestiti da posta.',
+ fonte:'Lettere di emigranti italiani, raccolte in vari archivi (Altreitalie, Museo dell\'emigrazione)'}
+];
+
+let carta=null, epoca='1492', scelta=0, immagini={};
+const cv=document.getElementById('carta'), ctx=cv.getContext('2d');
+let proiezione=null, percorso=null;
+
+function misura(){
+  const r=cv.getBoundingClientRect();
+  const dpr=window.devicePixelRatio||1;
+  const alt=Math.max(280, Math.min(460, r.width*0.5));
+  cv.width=Math.round(r.width*dpr);
+  cv.height=Math.round(alt*dpr);
+  cv.style.height=alt+'px';
+  ctx.setTransform(dpr,0,0,dpr,0,0);
+  proiezione=d3.geoNaturalEarth1().fitExtent([[6,6],[r.width-6,alt-6]],{type:'Sphere'});
+  percorso=d3.geoPath(proiezione,ctx);
+  disegnaCarta();
+}
+
+/* In alcune di queste carte i vertici dei poligoni girano al contrario.
+   Per d3 un anello avvolto al rovescio non è «l'Italia» ma «tutto il
+   globo tranne l'Italia»: il paese si mangia il mare e la carta esce
+   tutta color terra. Si riconoscono perché la loro area supera mezza
+   sfera. Si prova a invertirli; quelli che restano rotti si scartano.
+   È lo stesso rimedio del globo in homepage. */
+function raddrizza(d){
+  const MEZZA=2*Math.PI;
+  const inverti=g=>{
+    const polis = g.type==='MultiPolygon' ? g.coordinates : [g.coordinates];
+    polis.forEach(anelli=>anelli.forEach(a=>a.reverse()));
+  };
+  const prima=d.features.length;
+  d.features=d.features.filter(f=>{
+    if(!f.geometry) return true;
+    if(d3.geoArea(f)>MEZZA) inverti(f.geometry);
+    return d3.geoArea(f)<=MEZZA;
+  });
+  d.__scartate = prima-d.features.length;
+}
+
+function caricaCarta(k){
+  const c=CARTE.find(x=>x.k===k);
+  document.getElementById('carico').classList.remove('via');
+  if(immagini[k]){ carta=immagini[k]; document.getElementById('carico').classList.add('via'); disegnaCarta(); return; }
+  fetch(c.f).then(r=>r.json()).then(d=>{
+    raddrizza(d);
+    immagini[k]=d; carta=d;
+    document.getElementById('carico').classList.add('via');
+    disegnaCarta();
+  }).catch(()=>{
+    document.getElementById('carico').textContent='La carta non si è caricata.';
+  });
+}
+
+function disegnaCarta(){
+  if(!proiezione) return;
+  const r=cv.getBoundingClientRect(), alt=parseFloat(cv.style.height)||300;
+  ctx.clearRect(0,0,r.width,alt);
+  /* il mare */
+  ctx.beginPath(); percorso({type:'Sphere'});
+  ctx.fillStyle='#dfe8dc'; ctx.fill();
+  ctx.strokeStyle='rgba(45,90,39,.18)'; ctx.lineWidth=1; ctx.stroke();
+
+  if(carta){
+    /* Un tracciato per paese, non uno solo per tutti: mettendoli
+       insieme, la regola di riempimento non azzera li considera un'unica
+       figura e riempie tutto il globo, mare compreso. */
+    ctx.lineWidth=.5;
+    carta.features.forEach(f=>{
+      ctx.beginPath();
+      percorso(f);
+      ctx.fillStyle='#f3f0e6'; ctx.fill();
+      ctx.strokeStyle='rgba(45,90,39,.3)'; ctx.stroke();
+    });
+  }
+
+  /* le fonti dell'epoca scelta */
+  const qui=FONTI.filter(f=>f.carta===epoca);
+  qui.forEach((f)=>{
+    const p=proiezione(f.ll); if(!p) return;
+    const attiva = FONTI[scelta]===f;
+    ctx.beginPath(); ctx.arc(p[0],p[1], attiva?8:5, 0, 7);
+    ctx.fillStyle= attiva?'#9a7c2e':'#2d5a27';
+    ctx.fill();
+    ctx.lineWidth=2; ctx.strokeStyle='#fff'; ctx.stroke();
+    if(attiva){
+      ctx.beginPath(); ctx.arc(p[0],p[1],14,0,7);
+      ctx.strokeStyle='rgba(154,124,46,.5)'; ctx.lineWidth=1.5; ctx.stroke();
+    }
+  });
+}
+
+function scegliEpoca(k){
+  epoca=k;
+  const prima=FONTI.findIndex(f=>f.carta===k);
+  if(prima>=0) scelta=prima;
+  disegnaTutto();
+  caricaCarta(k);
+}
+function scegliFonte(i){ scelta=i; epoca=FONTI[i].carta; disegnaTutto(); caricaCarta(epoca); }
+
+const esc = t => String(t).replace(/[<>&]/g,c=>({'<':'&lt;','>':'&gt;','&':'&amp;'}[c]));
+
+function disegnaTutto(){
+  const usate=[...new Set(FONTI.map(f=>f.carta))];
+  document.getElementById('epoche').innerHTML = CARTE.filter(c=>usate.includes(c.k)).map(c=>{
+    const n=FONTI.filter(f=>f.carta===c.k).length;
+    return `<button class="ep${c.k===epoca?' attiva':''}" onclick="scegliEpoca('${c.k}')">${c.l} · ${n}</button>`;
+  }).join('');
+
+  document.getElementById('elenco').innerHTML = FONTI
+    .map((f,i)=>({f,i}))
+    .filter(x=>x.f.carta===epoca)
+    .map(x=>`<button class="vo${x.i===scelta?' attiva':''}" onclick="scegliFonte(${x.i})">
+        <b>${esc(x.f.chi)}</b><span>${x.f.anno<0?(-x.f.anno)+' a.C.':x.f.anno} · ${esc(x.f.luogo)}</span>
+      </button>`).join('');
+
+  const f=FONTI[scelta];
+  document.getElementById('scheda').innerHTML=`
+    <div class="chi">${esc(f.chi)}</div>
+    <div class="dove">${f.anno} · ${esc(f.luogo)}</div>
+    <div class="dice">${esc(f.dice)}</div>
+    ${f.cit?`<div class="cit">${esc(f.cit)}</div>`:''}
+    <div class="notare"><b>Che cosa notare</b>${esc(f.notare)}</div>
+    <div class="fonte">Fonte: ${esc(f.fonte)}</div>`;
+  disegnaCarta();
+}
+
+/* si può anche cliccare direttamente il punto sulla carta */
+cv.addEventListener('click',e=>{
+  const r=cv.getBoundingClientRect();
+  const x=e.clientX-r.left, y=e.clientY-r.top;
+  let vicino=-1, dist=18;
+  FONTI.forEach((f,i)=>{
+    if(f.carta!==epoca) return;
+    const p=proiezione(f.ll); if(!p) return;
+    const d=Math.hypot(p[0]-x,p[1]-y);
+    if(d<dist){ dist=d; vicino=i; }
+  });
+  if(vicino>=0) scegliFonte(vicino);
+});
+
+window.addEventListener('resize',misura);
+disegnaTutto();
+misura();
+caricaCarta(epoca);
+</script>
+</body>
+</html>
