@@ -94,8 +94,8 @@ create policy "consegne_invio_finestra_aperta"
   on public.consegne for insert
   to anon, authenticated
   with check (
-    length(coalesce(studente,'')) between 1 and 80
-    and length(coalesce(testo,'')) <= 20000
+    studente is not null and length(studente) between 1 and 80
+    and (testo is null or length(testo) <= 20000)
     and finestra_id is not null
     and public.finestra_aperta(finestra_id)
   );
@@ -116,7 +116,7 @@ begin
   select id into f_id from public.finestre_aperte() limit 1;
 
   if f_id is null then
-    raise notice 'Nessuna finestra aperta: la regola e'' a posto, ma per provarla apri una consegna dall''Inbox.';
+    raise notice $m$Nessuna finestra aperta: la regola è a posto, ma per provarla apri una consegna dall'Inbox.$m$;
     return;
   end if;
 
@@ -127,5 +127,5 @@ begin
 
   delete from public.consegne where id = nuova_id;
 
-  raise notice 'FUNZIONA: la consegna di prova e'' passata ed e'' stata cancellata.';
+  raise notice $m$FUNZIONA: la consegna di prova è passata ed è stata cancellata.$m$;
 end $$;

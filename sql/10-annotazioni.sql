@@ -182,16 +182,7 @@ select
   'Platone',
   'Repubblica, VII, 514a-515c',
   'Segna con «non ho capito» ogni frase che hai dovuto rileggere, e con «qui sta il punto» quella che secondo te regge tutto il resto.',
-  'Immagina degli uomini in una dimora sotterranea a forma di caverna, con l''entrata aperta alla luce per tutta la larghezza. '
-  || 'Vi si trovano fin da bambini, con le gambe e il collo legati, in modo da restare fermi e da guardare soltanto in avanti, '
-  || 'incapaci di volgere il capo a causa delle catene. Alle loro spalle, la luce di un fuoco che arde lontano e in alto. '
-  || 'Fra il fuoco e i prigionieri corre una strada rialzata, lungo la quale e'' stato costruito un muricciolo, come quei '
-  || 'paraventi che i burattinai pongono davanti a se'' per mostrare al di sopra le loro meraviglie. '
-  || 'Lungo quel muricciolo passano uomini che portano oggetti di ogni sorta, statue di uomini e altre figure di animali, '
-  || 'in pietra e in legno; e alcuni di questi portatori parlano, altri tacciono. '
-  || 'Strana immagine, dici, e strani prigionieri. Somigliano a noi, rispondo. '
-  || 'Credi che di se'' stessi e degli altri abbiano visto altro che le ombre proiettate dal fuoco sulla parete della caverna? '
-  || 'E se potessero parlare fra loro, non penseresti che diano il nome di cose reali alle ombre che vedono passare?',
+  $brano$Immagina degli uomini in una dimora sotterranea a forma di caverna, con l'entrata aperta alla luce per tutta la larghezza. Vi si trovano fin da bambini, con le gambe e il collo legati, in modo da restare fermi e da guardare soltanto in avanti, incapaci di volgere il capo a causa delle catene. Alle loro spalle, la luce di un fuoco che arde lontano e in alto. Fra il fuoco e i prigionieri corre una strada rialzata, lungo la quale è stato costruito un muricciolo, come quei paraventi che i burattinai pongono davanti a sé per mostrare al di sopra le loro meraviglie. Lungo quel muricciolo passano uomini che portano oggetti di ogni sorta, statue di uomini e altre figure di animali, in pietra e in legno; e alcuni di questi portatori parlano, altri tacciono. Strana immagine, dici, e strani prigionieri. Somigliano a noi, rispondo. Credi che di sé stessi e degli altri abbiano visto altro che le ombre proiettate dal fuoco sulla parete della caverna? E se potessero parlare fra loro, non penseresti che diano il nome di cose reali alle ombre che vedono passare?$brano$,
   true
 where not exists (select 1 from public.brani);
 
@@ -209,7 +200,7 @@ declare
 begin
   select id into b_id from public.brani_aperti() limit 1;
   if b_id is null then
-    raise notice 'Nessun brano aperto: le regole sono a posto, ma aggiungine uno dalla pagina.';
+    raise notice $m$Nessun brano aperto: le regole sono a posto, ma aggiungine uno dalla pagina.$m$;
     return;
   end if;
 
@@ -220,5 +211,5 @@ begin
 
   delete from public.annotazioni where id = nuova;
 
-  raise notice 'FUNZIONA: annotazione di prova inserita e cancellata.';
+  raise notice $m$FUNZIONA: annotazione di prova inserita e cancellata.$m$;
 end $$;
