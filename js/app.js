@@ -1460,7 +1460,7 @@ async function caricaVetrina(){
       <section class="peek-sec">
         <div class="peek-sec-title">Quello che ho raccolto</div>
         <p class="peek-sec-nota">L'archivio dei materiali, diviso per scaffale.
-        I numeri sono quelli veri, contati adesso.</p>
+        I numeri sono sempre aggiornati.</p>
         <div class="peek-grid peek-grid-4">
           ${card(slide,'Slide di lezione','Un capitolo per volta, con la tavola delle date, il glossario e le domande per l\'orale.','#2d5a27')}
           ${card(fonti,'Fonti','Documenti veri da leggere in classe: editti, lettere, trattati, pagine di filosofi.','#2d5a27')}
@@ -1470,8 +1470,8 @@ async function caricaVetrina(){
       </section>
 
       <section class="peek-sec">
-        <div class="peek-sec-title">Quello che ho scritto a mano</div>
-        <p class="peek-sec-nota">Non raccolto altrove: composto una voce per volta.</p>
+        <div class="peek-sec-title">Costruito per Idearca</div>
+        <p class="peek-sec-nota">Materiale che non esiste altrove: preparato apposta per queste lezioni.</p>
         <div class="peek-grid">
           ${card('1080','Domande per le votazioni','Scritte una per una: nove per ogni capitolo, con i distrattori costruiti sugli errori che gli studenti fanno davvero.','#7a4b8c')}
           ${card('312','Eventi in linea del tempo','Storia e filosofia affiancate sullo stesso asse, dal 3500 a.C. a oggi.','#2f7a6a')}
@@ -1493,8 +1493,7 @@ async function caricaVetrina(){
       ${campioni.length?`<section class="peek-sec">
         <div class="peek-sec-title">Guarda dentro: un esempio di ogni tipo</div>
         <p class="peek-sec-nota">Uno per ogni scaffale &mdash; slide, fonti, approfondimenti,
-        compiti, risorse. Si aprono adesso, senza codice, e sono materiale di lezione vero:
-        non esempi preparati per la vetrina.</p>
+        compiti, risorse. Si aprono adesso, senza codice: e' il materiale che uso in classe.</p>
         <div class="peek-open">
           ${campioni.map(c=>`<a class="peek-open-card" style="--a:${c.col}"
               href="${esc(c.r.link)}" target="_blank" rel="noopener">
