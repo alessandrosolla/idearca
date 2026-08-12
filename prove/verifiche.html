@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Generatore di verifiche — Idearca</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Jost',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  background:#faf8f3;color:#1c2b1a;font-weight:300;-webkit-font-smoothing:antialiased}
+.w{max-width:1040px;margin:0 auto;padding:2rem 1.5rem 4rem}
+.k{font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:#8a9e87;font-weight:600}
+h1{font-family:'Cormorant Garamond',Georgia,serif;font-size:2.4rem;font-weight:400;margin:.3rem 0 .5rem}
+.sub{font-size:.92rem;line-height:1.7;color:#5a6b58;max-width:66ch}
+.et{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:#9a7c2e;
+  font-weight:700;margin:1.6rem 0 .7rem;display:flex;align-items:center;gap:.6rem}
+.et::after{content:'';flex:1;height:1px;background:rgba(45,90,39,.13)}
+.b{font:inherit;font-size:.78rem;padding:.52rem 1.1rem;border-radius:100px;cursor:pointer;
+  border:1.5px solid rgba(45,90,39,.22);background:#fff;color:#2d5a27;font-weight:500;transition:all .16s}
+.b:hover{background:#2d5a27;color:#fff;border-color:#2d5a27}
+.b.pieno{background:#2d5a27;color:#fff;border-color:#2d5a27}
+.b.pieno:hover{background:#1c3f18}
+.b:disabled{opacity:.35;cursor:default}
+.b:disabled:hover{background:#fff;color:#2d5a27;border-color:rgba(45,90,39,.22)}
+.riga{display:flex;gap:.5rem;flex-wrap:wrap;align-items:center}
+
+.pannello{border:1px solid rgba(45,90,39,.14);border-radius:14px;background:#fff;padding:1.1rem 1.25rem}
+.campi{display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));gap:.7rem}
+.campo label{display:block;font-size:.6rem;letter-spacing:.13em;text-transform:uppercase;
+  color:#9a7c2e;font-weight:700;margin-bottom:.25rem}
+.campo input,.campo select{width:100%;font:inherit;font-size:.86rem;padding:.45rem .6rem;
+  border:1px solid rgba(45,90,39,.2);border-radius:8px;background:#faf8f3;outline:none}
+.campo input:focus,.campo select:focus{border-color:#2d5a27;background:#fff}
+
+.capitoli{max-height:290px;overflow-y:auto;border:1px solid rgba(45,90,39,.14);border-radius:10px;
+  background:#fff;padding:.4rem}
+.area{font-size:.58rem;letter-spacing:.15em;text-transform:uppercase;color:#9a7c2e;font-weight:700;
+  padding:.55rem .6rem .25rem;display:flex;align-items:center;gap:.5rem}
+.area button{font:inherit;font-size:.62rem;border:none;background:none;color:#2d5a27;cursor:pointer;
+  text-decoration:underline;padding:0}
+.cap{display:flex;align-items:flex-start;gap:.5rem;padding:.3rem .6rem;border-radius:7px;cursor:pointer;
+  font-size:.82rem;line-height:1.4}
+.cap:hover{background:rgba(45,90,39,.05)}
+.cap input{accent-color:#2d5a27;margin-top:.18rem;flex:none}
+.cap span.n{color:#a8b3a6;font-size:.72rem;margin-left:auto;flex:none;padding-left:.5rem}
+
+.conteggio{font-size:.83rem;color:#5a6b58;margin-top:.7rem}
+.conteggio b{color:#2d5a27;font-weight:600}
+.allarme{color:#c0453b}
+
+/* ── il foglio stampabile ─────────────────────────────── */
+.fogli{margin-top:1.2rem}
+.foglio{background:#fff;border:1px solid rgba(45,90,39,.14);border-radius:10px;
+  padding:2.2rem 2.4rem;margin-bottom:1rem;font-size:.9rem;line-height:1.55;color:#111}
+.intesta{display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;
+  border-bottom:2px solid #111;padding-bottom:.6rem;margin-bottom:.5rem}
+.intesta h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.5rem;font-weight:600;line-height:1.15}
+.intesta .meta{font-size:.72rem;color:#555;text-align:right;line-height:1.6;flex:none}
+.fila{display:inline-block;border:1.5px solid #111;border-radius:4px;padding:.05rem .5rem;
+  font-weight:700;font-size:.8rem;letter-spacing:.08em}
+.nomeriga{display:flex;gap:1.4rem;font-size:.78rem;color:#333;margin:.7rem 0 1.1rem;flex-wrap:wrap}
+.nomeriga span{border-bottom:1px solid #999;flex:1;min-width:130px;padding-bottom:.15rem}
+.istr{font-size:.76rem;color:#444;background:#f6f4ee;border-left:3px solid #999;
+  padding:.5rem .7rem;margin-bottom:1.1rem;line-height:1.6}
+.dom{margin-bottom:.95rem;break-inside:avoid}
+.dom .t{font-weight:600;display:flex;gap:.5rem;align-items:flex-start}
+.dom .t .num{flex:none;min-width:1.5rem}
+.dom .t .pt{margin-left:auto;font-weight:400;font-size:.74rem;color:#777;flex:none;padding-left:.6rem}
+.opz{margin:.3rem 0 0 2rem;list-style:none}
+.opz li{display:flex;gap:.5rem;padding:.09rem 0;font-size:.87rem}
+.opz li i{font-style:normal;font-weight:600;flex:none;min-width:1.1rem}
+.aperta{margin:.35rem 0 0 2rem}
+.aperta .rr{border-bottom:1px solid #bbb;height:1.15rem}
+
+/* la griglia delle risposte */
+.griglia{margin-top:1rem}
+.griglia table{border-collapse:collapse;font-size:.8rem}
+.griglia td,.griglia th{border:1px solid #999;padding:.22rem .5rem;text-align:center;min-width:2rem}
+.griglia th{background:#f0ede5;font-weight:600}
+.solo-corr{background:#fdf6e6;border-color:#c9a94e}
+
+@media print{
+  body{background:#fff}
+  .w{max-width:none;padding:0}
+  .nostampa{display:none !important}
+  .foglio{border:none;border-radius:0;margin:0;padding:1.2cm 1.4cm;
+          page-break-after:always;break-after:page}
+  .foglio:last-child{page-break-after:auto;break-after:auto}
+  @page{size:A4;margin:0}
+}
+@media(max-width:640px){
+  .w{padding:1.4rem 1rem 3rem}h1{font-size:1.9rem}
+  .foglio{padding:1.2rem 1.1rem}
+}
+</style>
+</head>
+<body>
+<div class="w">
+  <div class="nostampa">
+    <div class="k">Idearca · Prove</div>
+    <h1>Generatore di verifiche</h1>
+    <p class="sub">Le milleottanta domande della banca sono già scritte: qui si scelgono i
+    capitoli e ne esce un compito pronto da stampare, con la griglia di correzione a parte.
+    Puoi generare <strong>più file con le stesse domande in ordine diverso</strong> — e anche
+    le risposte mescolate — così chi copia dal vicino copia la risposta sbagliata.</p>
+
+    <div class="et">Da dove pescare</div>
+    <div class="riga" style="margin-bottom:.6rem">
+      <button class="b" onclick="tutti(true)">Segna tutto</button>
+      <button class="b" onclick="tutti(false)">Togli tutto</button>
+      <input id="cerca" placeholder="Filtra i capitoli…" oninput="disegnaCapitoli()"
+        style="flex:1;min-width:150px;font:inherit;font-size:.82rem;padding:.45rem .8rem;
+               border:1px solid rgba(45,90,39,.2);border-radius:100px;background:#fff;outline:none">
+    </div>
+    <div class="capitoli" id="capitoli"></div>
+    <div class="conteggio" id="conteggio"></div>
+
+    <div class="et">Come dev'essere il compito</div>
+    <div class="pannello">
+      <div class="campi">
+        <div class="campo"><label>Titolo</label>
+          <input id="fTitolo" value="Verifica di filosofia"></div>
+        <div class="campo"><label>Classe</label>
+          <input id="fClasse" placeholder="3ª A"></div>
+        <div class="campo"><label>Data</label>
+          <input id="fData" placeholder="12 ottobre 2026"></div>
+        <div class="campo"><label>Quante domande</label>
+          <input id="fQuante" type="number" min="1" max="60" value="15"></div>
+        <div class="campo"><label>File diversi</label>
+          <select id="fFile">
+            <option value="1">1 — tutti uguali</option>
+            <option value="2" selected>2 — fila A e B</option>
+            <option value="3">3 — A, B, C</option>
+            <option value="4">4 — A, B, C, D</option>
+          </select></div>
+        <div class="campo"><label>Punti per domanda</label>
+          <input id="fPunti" type="number" min="0.5" step="0.5" value="1"></div>
+        <div class="campo"><label>Domande aperte in coda</label>
+          <input id="fAperte" type="number" min="0" max="5" value="1"></div>
+        <div class="campo"><label>Righe per l'aperta</label>
+          <input id="fRighe" type="number" min="2" max="20" value="6"></div>
+      </div>
+      <div class="riga" style="margin-top:.8rem">
+        <label class="riga" style="font-size:.82rem;color:#5a6b58;gap:.4rem;cursor:pointer">
+          <input type="checkbox" id="fMescola" checked style="accent-color:#2d5a27">
+          Mescola anche l'ordine delle risposte</label>
+        <label class="riga" style="font-size:.82rem;color:#5a6b58;gap:.4rem;cursor:pointer">
+          <input type="checkbox" id="fGriglia" checked style="accent-color:#2d5a27">
+          Aggiungi la griglia da riempire</label>
+      </div>
+      <div class="riga" style="margin-top:.9rem">
+        <button class="b pieno" onclick="genera()">Genera il compito</button>
+        <button class="b" id="bStampa" onclick="window.print()" disabled>Stampa o salva in PDF</button>
+        <button class="b" id="bAltro" onclick="genera()" disabled>Rigenera con altre domande</button>
+        <span class="conteggio" id="esito"></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="fogli" id="fogli"></div>
+</div>
+
+<script src="../votazioni/banca.js"></script>
+<script>
+/* ══════════════════════════════════════════════════════════
+   IL GENERATORE DI VERIFICHE
+   Le domande esistono già: sono le stesse che vanno in aula
+   con le votazioni. Qui vengono impaginate su carta.
+
+   La cosa che fa risparmiare davvero non è la stampa: sono le
+   file. Con due file la stessa domanda porta il numero 4 su una
+   e il numero 11 sull'altra, e le risposte stanno in posizioni
+   diverse — copiare dal vicino smette di funzionare senza che
+   il docente debba scrivere due compiti.
+
+   La griglia di correzione sta su un foglio a parte, in fondo,
+   che non si consegna alla classe.
+   ══════════════════════════════════════════════════════════ */
+
+const LETTERE=['A','B','C','D','E'];
+let scelti=new Set();
+
+/* ── i capitoli, raggruppati per area ─────────────────────── */
+const areaDi = t => t.split('·')[0].trim();
+const numDomande = c => c.domande.filter(d=>d.tipo==='scelta').length;
+
+function disegnaCapitoli(){
+  const q=(document.getElementById('cerca').value||'').toLowerCase();
+  const per={};
+  BANCA.forEach((c,i)=>{
+    if(q && !c.titolo.toLowerCase().includes(q)) return;
+    (per[areaDi(c.titolo)]=per[areaDi(c.titolo)]||[]).push(i);
+  });
+  const el=document.getElementById('capitoli');
+  el.innerHTML=Object.entries(per).map(([area,idx])=>
+    `<div class="area">${area}
+       <button onclick="segnaArea('${area.replace(/'/g,"\\'")}',true)">tutti</button>
+       <button onclick="segnaArea('${area.replace(/'/g,"\\'")}',false)">nessuno</button></div>`
+    + idx.map(i=>{
+        const c=BANCA[i];
+        const titolo=c.titolo.split('·').slice(1).join('·').trim();
+        return `<label class="cap"><input type="checkbox" ${scelti.has(i)?'checked':''}
+          onchange="segna(${i},this.checked)"><span>${titolo}</span>
+          <span class="n">${numDomande(c)}</span></label>`;
+      }).join('')
+  ).join('') || '<div class="area">Nessun capitolo con quel filtro</div>';
+  aggiornaConto();
+}
+function segna(i,v){ v?scelti.add(i):scelti.delete(i); aggiornaConto(); }
+function tutti(v){ scelti = v ? new Set(BANCA.map((_,i)=>i)) : new Set(); disegnaCapitoli(); }
+function segnaArea(area,v){
+  BANCA.forEach((c,i)=>{ if(areaDi(c.titolo)===area){ v?scelti.add(i):scelti.delete(i); } });
+  disegnaCapitoli();
+}
+function aggiornaConto(){
+  const disp=[...scelti].reduce((s,i)=>s+numDomande(BANCA[i]),0);
+  const vuole=+document.getElementById('fQuante').value||0;
+  const el=document.getElementById('conteggio');
+  el.innerHTML = !scelti.size
+    ? 'Nessun capitolo scelto.'
+    : `<b>${scelti.size}</b> capitol${scelti.size===1?'o':'i'}, <b>${disp}</b> domande disponibili.`
+      + (vuole>disp ? ` <span class="allarme">Ne hai chieste ${vuole}: non bastano.</span>` : '');
+}
+
+/* ── il sorteggio ─────────────────────────────────────────
+   Fisher-Yates: ogni ordine ha la stessa probabilità. Mescolare
+   con sort(()=>Math.random()-0.5), che è la scorciatoia più
+   diffusa, dà ordini sbilanciati. */
+function mescola(a){
+  const v=a.slice();
+  for(let i=v.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [v[i],v[j]]=[v[j],v[i]]; }
+  return v;
+}
+
+const esc = t => String(t).replace(/[<>&]/g,c=>({'<':'&lt;','>':'&gt;','&':'&amp;'}[c]));
+
+let ultimo=null;
+function genera(){
+  const quante=+document.getElementById('fQuante').value||10;
+  const nFile=+document.getElementById('fFile').value||1;
+  const punti=+document.getElementById('fPunti').value||1;
+  const nAperte=+document.getElementById('fAperte').value||0;
+  const righe=+document.getElementById('fRighe').value||6;
+  const rimescola=document.getElementById('fMescola').checked;
+  const conGriglia=document.getElementById('fGriglia').checked;
+  const esito=document.getElementById('esito');
+
+  /* raccolgo le domande dei capitoli scelti, con la provenienza */
+  const pozzo=[];
+  scelti.forEach(i=>{
+    BANCA[i].domande.forEach(d=>{
+      if(d.tipo==='scelta') pozzo.push({...d, capitolo:BANCA[i].titolo});
+    });
+  });
+  if(!pozzo.length){ esito.textContent='Scegli almeno un capitolo con domande a scelta.'; return; }
+  if(pozzo.length<quante){
+    esito.innerHTML=`<span class="allarme">Servono ${quante} domande e nei capitoli scelti ce ne sono ${pozzo.length}.</span>`;
+    return;
+  }
+
+  /* le domande aperte: si pescano fra quelle da nuvola, che sono
+     già formulate come domande di apertura */
+  const aperte=[];
+  scelti.forEach(i=>BANCA[i].domande.forEach(d=>{ if(d.tipo==='nuvola') aperte.push(d.testo); }));
+
+  /* Un solo sorteggio di domande, poi ogni fila le rimescola:
+     le file devono contenere LE STESSE domande, o non sarebbero
+     più confrontabili in sede di voto. */
+  const base=mescola(pozzo).slice(0,quante);
+  const apertePescate=mescola(aperte).slice(0,nAperte);
+
+  const file=[];
+  for(let f=0;f<nFile;f++){
+    const ordine = f===0 ? base : mescola(base);
+    file.push(ordine.map(d=>{
+      /* «giusta» è un indice: se mescolo le opzioni devo seguirlo */
+      const idx=d.opzioni.map((t,k)=>({t,k}));
+      const disp = rimescola ? mescola(idx) : idx;
+      return {testo:d.testo, capitolo:d.capitolo,
+              opzioni:disp.map(o=>o.t),
+              giusta:disp.findIndex(o=>o.k===d.giusta)};
+    }));
+  }
+
+  ultimo={file, apertePescate, punti, righe, conGriglia};
+  disegnaFogli();
+  document.getElementById('bStampa').disabled=false;
+  document.getElementById('bAltro').disabled=false;
+  const totale=quante*punti;
+  esito.innerHTML=`Fatto: <b>${nFile}</b> fil${nFile===1?'a':'e'} da <b>${quante}</b> domande`
+    + (nAperte?` più ${apertePescate.length} apert${apertePescate.length===1?'a':'e'}`:'')
+    + `, totale <b>${totale%1?totale.toFixed(1):totale}</b> punti.`;
+}
+
+function disegnaFogli(){
+  const {file, apertePescate, punti, righe, conGriglia}=ultimo;
+  const titolo=document.getElementById('fTitolo').value||'Verifica';
+  const classe=document.getElementById('fClasse').value||'';
+  const data=document.getElementById('fData').value||'';
+  const totale=file[0].length*punti;
+
+  let out='';
+  file.forEach((dom,f)=>{
+    const lettera=LETTERE[f];
+    out+=`<div class="foglio">
+      <div class="intesta">
+        <div><h2>${esc(titolo)}</h2>
+          <div style="font-size:.76rem;color:#555;margin-top:.15rem">
+            ${esc(classe)}${classe&&data?' · ':''}${esc(data)}</div></div>
+        <div class="meta">${file.length>1?`<span class="fila">FILA ${lettera}</span><br>`:''}
+          Punteggio massimo: ${totale%1?totale.toFixed(1):totale}<br>
+          Domande: ${dom.length}${apertePescate.length?' + '+apertePescate.length+' aperte':''}</div>
+      </div>
+      <div class="nomeriga"><span>Cognome e nome</span><span>Voto</span></div>
+      <div class="istr">Una sola risposta è corretta. Segna la lettera scelta.
+        Le correzioni vanno fatte in modo che si capisca quale risposta vale.
+        ${file.length>1?'<strong>Attenzione:</strong> le file hanno le domande in ordine diverso.':''}</div>`;
+
+    dom.forEach((d,i)=>{
+      out+=`<div class="dom"><div class="t"><span class="num">${i+1}.</span>
+        <span>${esc(d.testo)}</span>
+        <span class="pt">${punti%1?punti.toFixed(1):punti} p.</span></div>
+        <ul class="opz">${d.opzioni.map((o,k)=>
+          `<li><i>${LETTERE[k]})</i><span>${esc(o)}</span></li>`).join('')}</ul></div>`;
+    });
+
+    apertePescate.forEach((t,i)=>{
+      out+=`<div class="dom"><div class="t"><span class="num">${dom.length+i+1}.</span>
+        <span>${esc(t.replace(/^Prima di cominciare:\s*/i,''))}</span>
+        <span class="pt">aperta</span></div>
+        <div class="aperta">${'<div class="rr"></div>'.repeat(righe)}</div></div>`;
+    });
+
+    if(conGriglia){
+      out+=`<div class="griglia"><div style="font-size:.7rem;color:#666;margin-bottom:.25rem">
+        Riporta qui le risposte</div><table><tr>`
+        + dom.map((_,i)=>`<th>${i+1}</th>`).join('')+'</tr><tr>'
+        + dom.map(()=>'<td>&nbsp;</td>').join('')+'</tr></table></div>';
+    }
+    out+='</div>';
+  });
+
+  /* il foglio del docente: non si consegna */
+  out+=`<div class="foglio solo-corr">
+    <div class="intesta"><div><h2>Griglia di correzione</h2>
+      <div style="font-size:.76rem;color:#555">${esc(titolo)} — ${esc(classe)} ${esc(data)}</div></div>
+      <div class="meta"><strong>Non consegnare<br>alla classe</strong></div></div>`;
+  file.forEach((dom,f)=>{
+    out+=`<div style="margin-top:.9rem"><div style="font-weight:600;font-size:.85rem;margin-bottom:.3rem">
+      ${file.length>1?'Fila '+LETTERE[f]:'Risposte'}</div>
+      <div class="griglia"><table><tr>`
+      + dom.map((_,i)=>`<th>${i+1}</th>`).join('')+'</tr><tr>'
+      + dom.map(d=>`<td><strong>${LETTERE[d.giusta]}</strong></td>`).join('')+'</tr></table></div></div>';
+  });
+  /* la provenienza serve a chi corregge: se metà classe sbaglia la 7,
+     si sa quale capitolo va ripreso */
+  out+=`<div style="margin-top:1.1rem"><div style="font-weight:600;font-size:.85rem;margin-bottom:.3rem">
+    Da dove viene ogni domanda <span style="font-weight:400;color:#666">(numerazione della fila A)</span></div>
+    <ol style="font-size:.76rem;line-height:1.7;color:#333;padding-left:1.4rem">`
+    + file[0].map(d=>`<li>${esc(d.capitolo)}</li>`).join('')+'</ol></div></div>';
+
+  document.getElementById('fogli').innerHTML=out;
+}
+
+document.getElementById('fQuante').addEventListener('input',aggiornaConto);
+disegnaCapitoli();
+</script>
+</body>
+</html>
