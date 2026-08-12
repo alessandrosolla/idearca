@@ -18,21 +18,25 @@ studenti, numeri contati dal sito.
 
 ## La scaletta delle diciassette prove
 
-Fatte e provate (12): timer, sorteggio, palestra di logica,
+Fatte e provate (14): timer, sorteggio, palestra di logica,
 ricostruttore di sillogismi, votazioni a squadre, mappa argomentativa,
 analizzatore di testo, linea del tempo delle idee, confrontatore di
 filosofi, glossario ipertestuale, simulatore socratico, linea del tempo
-sincronica, penna che raddrizza.
+sincronica, penna che raddrizza, macchina del contesto, generatore di
+mappe concettuali.
 
-Rimaste (5), in quest'ordine:
+Rimaste (3):
 
-1. **Macchina del contesto** — si inserisce un anno: che cosa si
-   leggeva, si ascoltava, si indossava.
-2. **Diario immersivo** — fonti in prima persona sulla mappa.
-3. **Grafici animati** — popolazione, prodotto interno, migrazioni.
-4. **Generatore di mappe concettuali** — da un testo a uno schema.
-5. **Wiki di classe** — l'unica che vuole il database: va aggiunta una
-   migrazione, non basta una pagina sola.
+1. **Diario immersivo** — fonti in prima persona collocate sulla mappa
+   nel punto in cui furono scritte. Serve una carta: si può disegnare
+   in SVG come i sigilli, oppure riusare il globo che c'è già in
+   `js/globe.js`.
+2. **Grafici animati** — popolazione, prodotto interno, migrazioni che
+   si muovono nel tempo. Prima di cominciare va caricata la guida
+   `dataviz`, che detta i colori e le forme dei grafici.
+3. **Wiki di classe** — l'unica che vuole il database: serve una
+   migrazione `sql/08-wiki.sql` con le voci, le revisioni e il visto
+   del docente. Non basta una pagina sola.
 
 ## Nota sul telefono
 Molti guarderanno il sito dal telefono. Ogni cosa nuova va provata
