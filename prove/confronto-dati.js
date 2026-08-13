@@ -33,7 +33,16 @@ const DOMANDE=[
    nodo:'Vale solo ciò che si trova nell\'esperienza, e nell\'esperienza non si trova nessun soggetto.'},
   'Kant':{a:'1724-1804', pos:'Non si può sapere', f:'L\'io penso non è un oggetto che conosco.',
    d:'Che ogni rappresentazione sia mia è una condizione formale del conoscere. Ricavarne che io sia una sostanza semplice e immortale è un paralogismo: si scambia una funzione per una cosa.',
-   nodo:'Si conosce solo ciò che può darsi nell\'esperienza, e l\'io non vi si dà mai come oggetto.'}
+   nodo:'Si conosce solo ciò che può darsi nell\'esperienza, e l\'io non vi si dà mai come oggetto.'},
+  [`Democrito`]:{a:`460-370 a.C. ca.`, pos:`No`, f:`L'anima è fatta di atomi lisci e rotondi.`,
+   d:`Sono atomi come tutti gli altri, solo più mobili e sparsi nel corpo. Alla morte si disperdono, e proprio per questo non c'è nulla da temere: la dissoluzione non è un evento che qualcuno subisca.`,
+   nodo:`Tutto ciò che esiste è composto, e ciò che è composto si scompone.`},
+  [`Epicuro`]:{a:`341-270 a.C.`, pos:`No`, f:`La morte non è nulla per noi.`,
+   d:`Quando ci siamo noi la morte non c'è, quando c'è lei non ci siamo noi. L'anima è un composto sottile che si scioglie: la paura dell'aldilà, che avvelena la vita, non ha oggetto.`,
+   nodo:`Un male esiste solo per un soggetto che possa provarlo, e dopo la morte quel soggetto non c'è.`},
+  [`Freud`]:{a:`1856-1939`, pos:`La domanda è mal posta`, f:`L'io non è padrone in casa propria.`,
+   d:`Prima di chiedersi se l'io sopravviva bisognerebbe chiedersi che cos'è mentre siamo vivi: non un punto semplice, ma un equilibrio fra istanze in conflitto, di cui conosciamo la parte più piccola.`,
+   nodo:`L'unità dell'io non è un dato di partenza ma un risultato precario.`}
  }},
 {
  k:'giustizia', q:'Che cos\'è la giustizia?',
@@ -55,7 +64,16 @@ const DOMANDE=[
    nodo:'Il criterio è formale: non guarda alle conseguenze ma alla forma della regola.'},
   'Hegel':{a:'1770-1831', pos:'Un ordine storico concreto', f:'La libertà che ha preso corpo nelle istituzioni.',
    d:'Il dovere astratto di Kant non dice ancora nulla di che cosa fare: si riempie solo dentro una famiglia, una società, uno Stato concreti. Giustizia è quando quelle istituzioni sono all\'altezza della libertà.',
-   nodo:'Nessun criterio astratto basta: il giusto si dà solo dentro una comunità storica determinata.'}
+   nodo:'Nessun criterio astratto basta: il giusto si dà solo dentro una comunità storica determinata.'},
+  [`Ulpiano`]:{a:`170-223`, pos:`Un ordine che non decidiamo noi`, f:`Dare a ciascuno il suo.`,
+   d:`Giustizia è la volontà costante e perpetua di attribuire a ciascuno ciò che gli spetta. La formula è entrata nel diritto romano e da lì in tutti i codici europei, e la sua forza è di funzionare senza dire che cosa spetti.`,
+   nodo:`Esiste un suo di ciascuno, riconoscibile prima della legge che lo registra.`},
+  [`Marx`]:{a:`1818-1883`, pos:`Dipende dai rapporti di produzione`, f:`Da ciascuno secondo le sue capacità, a ciascuno secondo i suoi bisogni.`,
+   d:`Discutere di giustizia distributiva senza toccare chi possiede i mezzi di produzione è discutere di come spartire ciò che è già stato spartito. Le idee di giustizia di un'epoca sono quelle che convengono a chi in quell'epoca comanda.`,
+   nodo:`Le concezioni morali sono prodotti storici delle condizioni materiali, non criteri che le giudicano dall'esterno.`},
+  [`John Rawls`]:{a:`1921-2002`, pos:`Una forma valida per chiunque`, f:`Scegliere le regole senza sapere chi si sarà.`,
+   d:`Dietro un velo di ignoranza — non sapendo se si nascerà ricchi o poveri, sani o malati, di maggioranza o di minoranza — si sceglierebbero libertà uguali per tutti e disuguaglianze ammesse solo se giovano ai più svantaggiati.`,
+   nodo:`Una regola è giusta se la si accetterebbe non sapendo quale posto si occuperà.`}
  }},
 {
  k:'certezza', q:'Si può conoscere qualcosa con certezza?',
@@ -74,7 +92,16 @@ const DOMANDE=[
    nodo:'La verità non è un punto di partenza ma un risultato, e comprende gli errori attraversati.'},
   'Nietzsche':{a:'1844-1900', pos:'No, non sui fatti', f:'Non ci sono fatti, solo interpretazioni.',
    d:'Le verità sono metafore di cui si è dimenticata l\'origine. La domanda seria non è se una cosa sia vera, ma perché si abbia tanto bisogno che lo sia, e a chi giovi.',
-   nodo:'Dietro ogni pretesa di verità c\'è una volontà: la si può ricostruire storicamente.'}
+   nodo:'Dietro ogni pretesa di verità c\'è una volontà: la si può ricostruire storicamente.'},
+  [`Protagora`]:{a:`490-420 a.C. ca.`, pos:`No, non sui fatti`, f:`L'uomo è misura di tutte le cose.`,
+   d:`Il vento è freddo per chi ha freddo e tiepido per chi non ne ha: non esiste un terzo punto di vista da cui stabilire chi abbia ragione. Restano discorsi più utili e meno utili, e insegnare serve a quello.`,
+   nodo:`Non è disponibile nessun punto di osservazione esterno a tutti i punti di vista.`},
+  [`Popper`]:{a:`1902-1994`, pos:`No, e non serve`, f:`Un cigno nero basta.`,
+   d:`Nessun numero di conferme dimostra una legge; una smentita la abbatte. La scienza non è il sapere certo ma quello che si espone al colpo, e vale per i rischi che accetta di correre.`,
+   nodo:`Si può fare a meno del fondamento purché si conservi il modo di correggersi.`},
+  [`Wittgenstein`]:{a:`1889-1951`, pos:`Dipende dal gioco`, f:`Il significato di una parola è il suo uso.`,
+   d:`Non c'è un unico modo in cui le parole toccano il mondo: ci sono molti giochi linguistici, ciascuno con le proprie regole di verifica. Chiedere «si può essere certi» senza dire di che cosa è una domanda senza contorno.`,
+   nodo:`Le domande filosofiche nascono quando il linguaggio gira a vuoto, fuori dall'uso che gli dà senso.`}
  }},
 {
  k:'stato', q:'A che serve lo Stato?',
@@ -96,7 +123,19 @@ const DOMANDE=[
    nodo:'Le istituzioni devono funzionare a prescindere dalla bontà di chi le abita.'},
   'Hegel':{a:'1770-1831', pos:'È una comunità naturale', f:'Lo Stato non è la somma degli individui.',
    d:'L\'individuo isolato che stipula il patto non è mai esistito: si è figli, allievi e cittadini prima di poter scegliere. Lo Stato è il luogo dove la libertà smette di essere un\'idea.',
-   nodo:'Non c\'è nessuno stato di natura: si è sempre già dentro istituzioni che ci hanno formati.'}
+   nodo:'Non c\'è nessuno stato di natura: si è sempre già dentro istituzioni che ci hanno formati.'},
+  [`Cicerone`]:{a:`106-43 a.C.`, pos:`È una comunità naturale`, f:`La repubblica è cosa del popolo.`,
+   d:`Non un raduno qualsiasi, ma un'unione tenuta insieme dal consenso sul diritto e dalla comunanza di interessi. E sopra le leggi delle città sta una legge di natura che nessun senato può abrogare.`,
+   nodo:`Esiste un diritto sopra il diritto positivo, e le leggi si giudicano da quello.`},
+  [`Montesquieu`]:{a:`1689-1755`, pos:`È una costruzione volontaria`, f:`Bisogna che il potere arresti il potere.`,
+   d:`Non conta solo chi comanda ma come il comando è distribuito: legislativo, esecutivo e giudiziario in mani diverse, perché chiunque abbia potere tende ad abusarne finché non trova un limite.`,
+   nodo:`La garanzia non va cercata nella virtù di chi governa ma nella forma delle istituzioni.`},
+  [`Max Weber`]:{a:`1864-1920`, pos:`La domanda è mal posta`, f:`Il monopolio della violenza legittima su un territorio.`,
+   d:`Chiedersi a che serva lo Stato è già prendere posizione. Si può invece dire come si riconosce, e in quali modi un potere si fa accettare: per tradizione, per carisma, per regola legale.`,
+   nodo:`Descrivere e valutare sono due operazioni distinte, e confonderle produce cattiva scienza.`},
+  [`Hannah Arendt`]:{a:`1906-1975`, pos:`A rendere possibile un mondo comune`, f:`Il primo diritto è il diritto ad avere diritti.`,
+   d:`I profughi fra le due guerre mostrano che i diritti dell'uomo, senza uno Stato che li riconosca, non valgono nulla: perso il posto in una comunità politica non resta l'uomo nudo, non resta nessuno.`,
+   nodo:`Si è esseri umani in senso pieno solo dentro una comunità che ci riconosca come tali.`}
  }}
 ,
 {
@@ -122,7 +161,13 @@ const DOMANDE=[
    nodo:`Si conosce solo entro l'esperienza; ciò che la oltrepassa si può pensare, non provare.`},
   [`Feuerbach`]:{a:`1804-1872`, pos:`No, ed è una proiezione`, f:`È l'uomo che ha fatto Dio a propria immagine.`,
    d:`Prendiamo le qualità che ammiriamo in noi, le portiamo all'infinito, le mettiamo fuori e le adoriamo. La domanda giusta non è se esista, ma di che cosa è fatto il bisogno che lo produce.`,
-   nodo:`Le idee religiose vanno spiegate a partire dagli uomini che le hanno.`}
+   nodo:`Le idee religiose vanno spiegate a partire dagli uomini che le hanno.`},
+  [`Plotino`]:{a:`204-270`, pos:`Sì, ma è al di là dell'essere`, f:`L'Uno non si dice: se ne dice ciò che non è.`,
+   d:`Il principio è oltre l'essere e oltre il pensiero, e da esso procedono per emanazione l'Intelletto, l'Anima, il mondo. Di lui si può dire soltanto ciò che non è, perché ogni predicato lo limiterebbe.`,
+   nodo:`Il fondamento eccede le categorie con cui si conosce tutto il resto.`},
+  [`Nietzsche`]:{a:`1844-1900`, pos:`La domanda è finita`, f:`Dio è morto, e noi lo abbiamo ucciso.`,
+   d:`Non un annuncio di ateismo ma la constatazione che una civiltà ha smesso di credere e continua a comportarsi come prima. Il problema non è più dimostrare o confutare: è che cosa regge i valori quando il loro sostegno è caduto.`,
+   nodo:`Le idee non si giudicano solo per la loro verità ma per ciò che tiene in piedi chi le ha.`}
  }},
 {
  k:`felicita`, q:`Che cos'è una vita riuscita?`,
@@ -150,7 +195,13 @@ const DOMANDE=[
    nodo:`Il desiderio è per natura insaziabile: la meta non c'è, c'è solo l'alternanza.`},
   [`Nietzsche`]:{a:`1844-1900`, pos:`Poter dire sì a ciò che si è vissuto`, f:`«Noi abbiamo inventato la felicità», dicono gli ultimi uomini.`,
    d:`Una vita organizzata per evitare ogni dolore produce un uomo piccolo e prudente. Ciò che conta è l'intensità, al punto da desiderare ancora tutto quello che è accaduto.`,
-   nodo:`Cercare direttamente il benessere è un sintomo di stanchezza, non un obiettivo.`}
+   nodo:`Cercare direttamente il benessere è un sintomo di stanchezza, non un obiettivo.`},
+  [`Marco Aurelio`]:{a:`121-180`, pos:`Padronanza di sé`, f:`Guarda dentro: là è la sorgente del bene.`,
+   d:`Scrive per convincersi ogni mattina che ciò che gli accade non dipende da lui e ciò che ne fa sì. È l'uomo più potente del mondo, e questo rende la sua conclusione più difficile da liquidare.`,
+   nodo:`Ciò che turba non sono le cose ma i giudizi che ne diamo.`},
+  [`Tommaso d'Aquino`]:{a:`1225-1274`, pos:`Non è raggiungibile quaggiù`, f:`Una beatitudine imperfetta è possibile ora.`,
+   d:`La vita virtuosa dà una felicità reale ma incompleta; quella piena è di un altro ordine. Le due non si contraddicono: stanno su due gradi, e il secondo non annulla il primo.`,
+   nodo:`Il bene umano è ordinato per gradi, e il grado inferiore resta un bene vero.`}
  }},
 {
  k:`liberta`, q:`Siamo davvero liberi?`,
@@ -178,7 +229,16 @@ const DOMANDE=[
    nodo:`Nessuna essenza precede l'esistenza: quindi nessuna scusa è disponibile.`},
   [`Freud`]:{a:`1856-1939`, pos:`Molto meno di quanto crediamo`, f:`L'io non è padrone in casa propria.`,
    d:`Le ragioni che ci diamo sono spesso ricostruzioni a posteriori di spinte che non conosciamo. Non si nega la scelta: si nega che chi sceglie sappia perché.`,
-   nodo:`La coscienza è una parte piccola e non la più decisiva della vita psichica.`}
+   nodo:`La coscienza è una parte piccola e non la più decisiva della vita psichica.`},
+  [`Lutero`]:{a:`1483-1546`, pos:`No, non dove conta`, f:`La volontà è un cavallo cavalcato.`,
+   d:`Nelle cose di quaggiù scegliamo; in ciò che decide della salvezza, no. Se dipendesse anche solo in parte dai nostri meriti, la grazia non sarebbe grazia — e sarebbe un commercio.`,
+   nodo:`Un dono che si meriti non è più un dono, e la coerenza del concetto vale più dell'intuizione morale.`},
+  [`John Stuart Mill`]:{a:`1806-1873`, pos:`Sì, entro un limite preciso`, f:`L'unico scopo per cui si può usare la forza è impedire il danno ad altri.`,
+   d:`Sul proprio corpo e sulla propria mente l'individuo è sovrano. Il suo bene non è ragione sufficiente per costringerlo: si può discutere, persuadere, supplicare, non obbligare.`,
+   nodo:`La libertà si definisce tracciando un confine verificabile, non descrivendo uno stato interiore.`},
+  [`Isaiah Berlin`]:{a:`1909-1997`, pos:`Dipende da quale libertà`, f:`Due concetti, e non si sommano.`,
+   d:`Negativa: quante porte mi restano aperte. Positiva: chi è il padrone di me. La seconda è nobile e consente di dire a qualcuno che il suo io vero vuole altro da ciò che dice di volere — ed è così che si giustificano le tirannie moderne.`,
+   nodo:`Due valori possono essere entrambi autentici e incompatibili fra loro.`}
  }},
 {
  k:`morale`, q:`Da dove viene il dovere morale?`,
@@ -203,7 +263,13 @@ const DOMANDE=[
    nodo:`Ogni valore è un prodotto storico e conserva le tracce di chi lo ha imposto.`},
   [`Hannah Arendt`]:{a:`1906-1975`, pos:`Dal giudicare, che si può smettere`, f:`La banalità del male.`,
    d:`Chi eseguiva gli ordini non era un mostro: aveva smesso di pensare a che cosa stesse facendo, sostituendo il giudizio con il rispetto della procedura. Il male più grande può non avere radici profonde.`,
-   nodo:`La moralità dipende da un esercizio — pensare a ciò che si fa — che può semplicemente cessare.`}
+   nodo:`La moralità dipende da un esercizio — pensare a ciò che si fa — che può semplicemente cessare.`},
+  [`Socrate`]:{a:`470-399 a.C.`, pos:`Dal sapere`, f:`Nessuno fa il male volontariamente.`,
+   d:`Chi sbaglia lo fa per ignoranza: se sapesse davvero che cosa gli conviene lo farebbe. Da qui l'insistenza sulle definizioni — non pedanteria, ma il convincimento che senza sapere che cos'è il coraggio non lo si possa avere.`,
+   nodo:`Conoscere il bene e volerlo sono la stessa cosa.`},
+  [`Schopenhauer`]:{a:`1788-1860`, pos:`Dalla compassione`, f:`Non fare male a nessuno, anzi aiuta tutti quanto puoi.`,
+   d:`Le costruzioni razionali non hanno mai mosso nessuno. Ciò che muove è il riconoscere immediatamente nell'altro la stessa volontà che sono io: in quel momento la separazione fra le persone si incrina.`,
+   nodo:`La distinzione fra me e l'altro è apparenza, e la morale nasce dal vederla cadere.`}
  }},
 {
  k:`conoscenza`, q:`Da dove viene quello che sappiamo?`,
@@ -231,7 +297,16 @@ const DOMANDE=[
    nodo:`Non serve fondare il sapere: basta saperlo correggere.`},
   [`Thomas Kuhn`]:{a:`1922-1996`, pos:`Da una comunità e dal suo paradigma`, f:`La scienza normale risolve rompicapi.`,
    d:`Per lunghi periodi i fondamenti non si discutono. Le anomalie si accumulano, arriva la crisi, e il quadro cambia in blocco: con esso cambiano i problemi che contano e il significato dei termini.`,
-   nodo:`Il soggetto che conosce non è un individuo ma un gruppo, con la sua storia.`}
+   nodo:`Il soggetto che conosce non è un individuo ma un gruppo, con la sua storia.`},
+  [`Agostino`]:{a:`354-430`, pos:`Da una luce interiore`, f:`Nessuno insegna davvero a nessuno.`,
+   d:`Che due più tre facciano cinque non lo si impara dai sensi e non lo si è inventato: lo si vede, come un occhio vede se c'è luce. Il maestro esterno non travasa nulla, richiama l'attenzione a un maestro interiore.`,
+   nodo:`Alcune verità si riconoscono, e riconoscere presuppone che ci fossero già.`},
+  [`Bacone`]:{a:`1561-1626`, pos:`Da un metodo, non dall'ingegno`, f:`Né formica né ragno: ape.`,
+   d:`L'empirico ammassa, il dogmatico tesse dalla propria sostanza. L'ape raccoglie e trasforma: molti casi, anche negativi, e da questi per gradi le leggi. E prima ancora, riconoscere gli idoli che deformano la mente.`,
+   nodo:`Il sapere è un'impresa collettiva e procedurale, non il risultato di una mente eccezionale.`},
+  [`Berkeley`]:{a:`1685-1753`, pos:`Solo dalle idee`, f:`Esistere è essere percepito.`,
+   d:`Se della materia non si ha mai esperienza diretta, che ragione c'è di ammetterla? Restano le idee e le menti che le hanno. Il mondo non diventa meno reale: diventa mentale.`,
+   nodo:`Non si deve ammettere nulla di cui non si possa avere esperienza, nemmeno come supporto.`}
  }},
 {
  k:`natura`, q:`L'uomo è naturalmente buono?`,
@@ -256,7 +331,13 @@ const DOMANDE=[
    nodo:`Nessuna caratteristica umana va presa come dato: va spiegata storicamente.`},
   [`Freud`]:{a:`1856-1939`, pos:`No, e la civiltà lo sa`, f:`Il prossimo non è solo un possibile aiuto: è una tentazione.`,
    d:`Sotto le buone maniere c'è una quota di aggressività che la civiltà deve continuamente arginare, rivolgendola all'interno sotto forma di senso di colpa. Il prezzo dell'ordine è il disagio.`,
-   nodo:`Le pulsioni non spariscono: si spostano, e il costo si paga altrove.`}
+   nodo:`Le pulsioni non spariscono: si spostano, e il costo si paga altrove.`},
+  [`Machiavelli`]:{a:`1469-1527`, pos:`No, e va messo in conto`, f:`Presupporre tutti gli uomini rei.`,
+   d:`Chi ordina una repubblica deve supporre che chiunque, potendo, agirà secondo il proprio interesse. Non è pessimismo morale: è il presupposto prudente di chi costruisce istituzioni destinate a durare più di chi le abita.`,
+   nodo:`Le istituzioni vanno progettate per il caso peggiore, non per l'uomo migliore.`},
+  [`Darwin`]:{a:`1809-1882`, pos:`Né buono né cattivo: selezionato`, f:`Nessuno esercita la selezione naturale.`,
+   d:`Le disposizioni umane, comprese quelle morali, sono il risultato di variazioni e sopravvivenze differenziali. L'istinto sociale e la simpatia non sono decorazioni: sono state utili, ed è per questo che ci sono.`,
+   nodo:`Un tratto si spiega con la sua storia, non con il suo valore.`}
  }},
 {
  k:`storia`, q:`La storia va da qualche parte?`,
@@ -284,7 +365,13 @@ const DOMANDE=[
    nodo:`Il punto di vista da cui si racconta decide che cosa si vede: non esiste una posizione neutra.`},
   [`Fernand Braudel`]:{a:`1902-1985`, pos:`Dipende a che velocità si guarda`, f:`Tre tempi sovrapposti.`,
    d:`Sotto la schiuma degli avvenimenti stanno i cicli economici di decenni, e sotto ancora le strutture quasi immobili: clima, suolo, rotte. Una battaglia è un increspamento in superficie.`,
-   nodo:`La domanda sul senso dipende dalla scala temporale che si sceglie, e la scelta non è innocente.`}
+   nodo:`La domanda sul senso dipende dalla scala temporale che si sceglie, e la scelta non è innocente.`},
+  [`Erodoto`]:{a:`484-425 a.C. ca.`, pos:`No, ma va conservata`, f:`Perché le imprese degli uomini non svaniscano col tempo.`,
+   d:`Raccoglie tutto: usanze persiane, misure egiziane, voci di mercanti. Riporta anche ciò a cui non crede, dicendo di avere il dovere di riferire ma non di credere. Il senso non è nella direzione ma nella memoria.`,
+   nodo:`Il compito dello storico è salvare i fatti dall'oblio, non spiegarne il disegno.`},
+  [`Ibn Khaldun`]:{a:`1332-1406`, pos:`No, gira in cerchio`, f:`La coesione del gruppo si consuma in quattro generazioni.`,
+   d:`I nomadi conquistano perché hanno solidarietà; nelle città il lusso la scioglie, e allora arrivano altri nomadi. Fonda la spiegazione su fattori economici, geografici e sociali, e chiama la sua una scienza nuova.`,
+   nodo:`Le vicende umane obbediscono a regolarità che si possono cercare come si cercano quelle naturali.`}
  }},
 {
  k:`arte`, q:`A che cosa serve l'arte?`,
@@ -309,6 +396,12 @@ const DOMANDE=[
    nodo:`Non è la verità a essere il valore supremo: è ciò che permette di continuare a vivere.`},
   [`Walter Benjamin`]:{a:`1892-1940`, pos:`Dipende da come si riproduce`, f:`L'aura svanisce nell'epoca della riproducibilità tecnica.`,
    d:`La fotografia e il cinema tolgono all'opera l'unicità del qui e ora. Si perde qualcosa — il valore rituale — ma si guadagna la possibilità di un'arte politica, che raggiunga le masse invece di essere contemplata.`,
-   nodo:`La tecnica con cui un'opera esiste cambia che cosa quell'opera può fare.`}
+   nodo:`La tecnica con cui un'opera esiste cambia che cosa quell'opera può fare.`},
+  [`Plotino`]:{a:`204-270`, pos:`A risalire verso il principio`, f:`L'artista non copia: guarda dove la natura ha guardato.`,
+   d:`Fidia non ha ritratto nessun modello: ha visto come sarebbe Zeus se volesse mostrarsi. Perciò l'arte non sta sotto la natura, come voleva Platone: attinge alla stessa fonte, e a volte più direttamente.`,
+   nodo:`La bellezza non è proporzione fra le parti ma presenza della forma nella materia.`},
+  [`Croce`]:{a:`1866-1952`, pos:`A conoscere in modo suo`, f:`L'arte è intuizione, e l'intuizione è già espressione.`,
+   d:`Non è ornamento del pensiero né veicolo di una morale: è una forma autonoma di conoscenza, quella dell'individuale. Chiedere che cosa insegni un'opera è chiederle di essere un'altra cosa.`,
+   nodo:`Le forme dello spirito sono distinte, e giudicarne una col metro di un'altra è un errore di categoria.`}
  }}
 ];
