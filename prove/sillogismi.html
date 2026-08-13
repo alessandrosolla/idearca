@@ -16,30 +16,58 @@ h1{font-family:'Cormorant Garamond',Georgia,serif;font-size:2.4rem;font-weight:4
   font-weight:700;margin:1.7rem 0 .7rem;display:flex;align-items:center;gap:.6rem}
 .et::after{content:'';flex:1;height:1px;background:rgba(45,90,39,.13)}
 
-/* i tre gruppi */
-.gruppi{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem}
-.gr{border:1px solid rgba(45,90,39,.14);border-top:3px solid var(--c);border-radius:11px;
-  padding:.7rem .85rem;background:#fff}
-.gr label{display:flex;align-items:center;gap:.4rem;font-size:.6rem;letter-spacing:.13em;
-  text-transform:uppercase;color:var(--c);font-weight:700;margin-bottom:.3rem}
-.gr label::before{content:'';width:10px;height:10px;border-radius:50%;background:var(--c);flex:none}
-.gr input{width:100%;font:inherit;font-size:.98rem;border:none;outline:none;background:none;
-  color:#1c2b1a;font-weight:500}
+/* ── I TRE GRUPPI, IN UNA RIGA SOLA ────────────────────────
+   Prima erano tre schede grandi staccate dalle frasi in cui i
+   nomi vengono usati, e ci si dimenticava a quale gruppo
+   corrispondesse quale colore. Adesso sono tre pastiglie
+   colorate: si scrive dentro, e il colore torna dentro le frasi
+   e dentro i cerchi del controesempio. ─────────────────────── */
+.gruppi{display:flex;flex-wrap:wrap;gap:.5rem}
+.gr{display:flex;align-items:center;gap:.45rem;border:1.5px solid var(--c);
+  border-radius:100px;padding:.35rem .95rem .35rem .8rem;background:#fff}
+.gr::before{content:'';width:11px;height:11px;border-radius:50%;background:var(--c);flex:none}
+.gr input{font:inherit;font-size:.95rem;border:none;outline:none;background:none;
+  color:#1c2b1a;font-weight:600;width:8.5ch;padding:0}
+.gr input:focus{border-bottom:1.5px solid var(--c)}
 
-/* le tre frasi */
-.frasi{display:flex;flex-direction:column;gap:.5rem}
-.fr{border:1px solid rgba(45,90,39,.14);border-radius:11px;padding:.75rem .95rem;background:#fff;
-  display:flex;gap:.45rem;align-items:center;flex-wrap:wrap}
+/* ── LE TRE FRASI ──────────────────────────────────────────
+   Una frase per riga, scritta per intero e leggibile a voce
+   alta. I pezzi che si possono cambiare sono dentro la frase e
+   si vedono perché sono sottolineati — non ci sono più i tre
+   menu con i puntini di sospensione, né la ripetizione della
+   frase già montata sotto di essi. Si leggeva due volte, e
+   nessuna delle due era italiano. ──────────────────────────── */
+.frasi{display:flex;flex-direction:column;gap:.45rem}
+.fr{border:1px solid rgba(45,90,39,.14);border-radius:12px;background:#fff;
+  padding:.7rem 1.1rem .9rem}
 .fr.concl{border-left:3px solid #9a7c2e;background:#fdfbf4}
-.fr .et-fr{font-size:.58rem;letter-spacing:.14em;text-transform:uppercase;color:#8a9e87;
-  font-weight:700;width:100%}
-.fr.concl .et-fr{color:#9a7c2e}
-select{font:inherit;font-size:.9rem;padding:.4rem .55rem;border-radius:8px;
-  border:1px solid rgba(45,90,39,.2);background:#faf8f3;color:#1c2b1a;cursor:pointer;font-weight:500}
-select:focus{outline:none;border-color:#2d5a27}
-.letta{width:100%;font-family:'Cormorant Garamond',Georgia,serif;font-size:1.15rem;
-  line-height:1.45;color:#2d5a27;margin-top:.45rem}
-.fr.concl .letta{color:#8a6a1e}
+.cap-fr{display:flex;align-items:center;gap:.7rem;flex-wrap:wrap;margin-bottom:.35rem}
+.fr .num{font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:#8a9e87;
+  font-weight:700;flex:none}
+.fr.concl .num{color:#9a7c2e}
+.forme{display:flex;gap:.25rem;flex-wrap:wrap}
+.fq{font:inherit;font-size:.7rem;font-weight:600;padding:.24rem .65rem;border-radius:100px;
+  cursor:pointer;border:1px solid rgba(45,90,39,.18);background:#faf8f3;color:#5a6b58;
+  transition:all .14s}
+.fq:hover{border-color:#2d5a27;color:#2d5a27}
+.fq.su{background:#2d5a27;border-color:#2d5a27;color:#fff}
+.fr.concl .fq.su{background:#9a7c2e;border-color:#9a7c2e}
+.riga{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.28rem;line-height:1.75;
+  color:#1c2b1a;flex:1}
+.fr.concl .riga{color:#8a6a1e}
+
+/* i pezzi scambiabili: sembrano parole, non moduli */
+.slot{position:relative;display:inline-block}
+.slot select{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.28rem;
+  font-weight:600;color:#2d5a27;border:none;background:none;cursor:pointer;
+  padding:0 1.1rem 0 .1rem;margin:0;-webkit-appearance:none;appearance:none;
+  border-bottom:1.5px dashed rgba(45,90,39,.45);border-radius:0;outline:none}
+.slot select:hover,.slot select:focus{border-bottom-style:solid;background:rgba(45,90,39,.06)}
+.slot::after{content:'⌄';position:absolute;right:.15rem;top:-.15rem;pointer-events:none;
+  color:#8a9e87;font-size:.9rem}
+.slot.g0 select{color:#2d5a27;border-bottom-color:rgba(45,90,39,.5)}
+.slot.g1 select{color:#9a7c2e;border-bottom-color:rgba(154,124,46,.5)}
+.slot.g2 select{color:#a1542f;border-bottom-color:rgba(161,84,47,.5)}
 
 /* l'esito */
 .esito{border-radius:14px;padding:1.2rem 1.35rem;margin-top:1.2rem;background:#fff;
@@ -75,8 +103,10 @@ input[type=checkbox]{accent-color:#2d5a27;width:15px;height:15px;cursor:pointer}
 .avviso b{color:#8a6a1e;font-weight:600}
 @media(max-width:700px){
   .w{padding:1.4rem 1rem 3rem}h1{font-size:1.9rem}
-  .gruppi{grid-template-columns:1fr}
   .prova{grid-template-columns:1fr}
+  .riga{font-size:1.14rem}
+  .slot select{font-size:1.14rem}
+  .gr input{width:7ch}
 }
 </style>
 </head>
@@ -84,22 +114,20 @@ input[type=checkbox]{accent-color:#2d5a27;width:15px;height:15px;cursor:pointer}
 <div class="w">
   <div class="k">Idearca · Prove</div>
   <h1>Il ragionamento tiene?</h1>
-  <p class="sub">Si scrivono due premesse e una conclusione, in italiano. Lo strumento non
-  applica regole a memoria: <strong>prova tutti i modi in cui il mondo potrebbe essere fatto</strong>.
-  Se ne trova uno in cui le premesse sono vere e la conclusione è falsa, il ragionamento non
-  tiene — e te lo disegna.</p>
+  <p class="sub">Tre frasi in italiano: due premesse e una conclusione. Si sceglie la forma
+  con le pastiglie e si cambiano i gruppi toccando le parole sottolineate. Lo strumento non
+  applica regole a memoria: <strong>prova tutti i modi in cui il mondo potrebbe essere
+  fatto</strong>. Se ne trova uno in cui le premesse sono vere e la conclusione è falsa, il
+  ragionamento non tiene — e te lo disegna.</p>
 
   <div class="et">Prova con uno di questi</div>
   <div class="esempi" id="esempi"></div>
 
-  <div class="et">I tre gruppi di cui parli</div>
+  <div class="et">Di chi stai parlando — scrivi i tre nomi</div>
   <div class="gruppi">
-    <div class="gr" style="--c:#2d5a27"><label>Primo gruppo</label>
-      <input id="gA" value="greci" oninput="disegna()"></div>
-    <div class="gr" style="--c:#9a7c2e"><label>Secondo gruppo</label>
-      <input id="gB" value="uomini" oninput="disegna()"></div>
-    <div class="gr" style="--c:#a1542f"><label>Terzo gruppo</label>
-      <input id="gC" value="mortali" oninput="disegna()"></div>
+    <div class="gr" style="--c:#2d5a27"><input id="gA" value="greci" oninput="disegna()" aria-label="Primo gruppo"></div>
+    <div class="gr" style="--c:#9a7c2e"><input id="gB" value="uomini" oninput="disegna()" aria-label="Secondo gruppo"></div>
+    <div class="gr" style="--c:#a1542f"><input id="gC" value="mortali" oninput="disegna()" aria-label="Terzo gruppo"></div>
   </div>
 
   <div class="et">Il ragionamento</div>
@@ -153,10 +181,10 @@ function art(parola){
 const conArt = p => art(p)+' '+p;
 
 const FORME=[
- {k:'tutti',   n:'Tutti i ...  sono ...',   testo:(a,b)=>`Tutti ${conArt(a)} sono ${b}`},
- {k:'nessuno', n:'Nessun ...  è ...',       testo:(a,b)=>`Nessuno fra ${conArt(a)} è fra ${conArt(b)}`},
- {k:'qualche', n:'Qualche ...  è ...',      testo:(a,b)=>`Alcuni fra ${conArt(a)} sono ${b}`},
- {k:'qualcheNo',n:'Qualche ...  non è ...', testo:(a,b)=>`Alcuni fra ${conArt(a)} non sono ${b}`}
+ {k:'tutti',   breve:'Tutti',      testo:(a,b)=>`Tutti ${conArt(a)} sono ${b}`},
+ {k:'nessuno', breve:'Nessuno',    testo:(a,b)=>`Nessuno fra ${conArt(a)} è fra ${conArt(b)}`},
+ {k:'qualche', breve:'Alcuni',     testo:(a,b)=>`Alcuni fra ${conArt(a)} sono ${b}`},
+ {k:'qualcheNo',breve:'Alcuni non',testo:(a,b)=>`Alcuni fra ${conArt(a)} non sono ${b}`}
 ];
 
 /* una frase è vera in un mondo? Il mondo è l'insieme delle zone abitate. */
@@ -238,19 +266,41 @@ function cambia(quale,campo,val){
   disegna();
 }
 
+/* Ogni forma si scrive come una frase con due buchi: il codice
+   monta la frase attorno ai due gruppi invece di affiancare tre
+   menu. `pre`, `mezzo` e `coda` sono i pezzi fissi. */
+const IMPIANTO={
+  tutti:    {pre:'Tutti ',    mezzo:' sono ',        coda:'',      art:[true,false]},
+  nessuno:  {pre:'Nessuno fra ', mezzo:' è fra ',    coda:'',      art:[true,true]},
+  qualche:  {pre:'Alcuni fra ',  mezzo:' sono ',     coda:'',      art:[true,false]},
+  qualcheNo:{pre:'Alcuni fra ',  mezzo:' non sono ', coda:'',      art:[true,false]}
+};
+
 function rigaFrase(quale, f, etichetta, concl){
   const N=nomi();
-  const opzF=FORME.map(x=>`<option value="${x.k}"${f.forma===x.k?' selected':''}>${x.n}</option>`).join('');
-  const opzG=(sel)=>N.map((n,i)=>`<option value="${i}"${sel===i?' selected':''}>${esc(n)}</option>`).join('');
+  const im=IMPIANTO[f.forma];
+  /* Le quattro forme sono quattro pastiglie, non un menu a
+     tendina: si vedono tutte insieme, si cambia con un colpo, e
+     soprattutto hanno un nome breve invece di uno scheletro con
+     i puntini di sospensione. */
+  const forme=FORME.map(x=>
+    `<button class="fq${f.forma===x.k?' su':''}" type="button"
+       onclick="cambia('${quale}','forma','${x.k}')">${x.breve}</button>`).join('');
+  const gruppo=(sel,campo)=>`<span class="slot g${sel}"><select
+      onchange="cambia('${quale}','${campo}',this.value)" aria-label="quale gruppo">${
+      N.map((n,i)=>`<option value="${i}"${sel===i?' selected':''}>${esc(n)}</option>`).join('')
+    }</select></span>`;
+  /* L'articolo si ricalcola a ogni disegno dal nome che sta lì
+     adesso: se lo si scrivesse una volta sola, cambiando gruppo
+     verrebbe fuori «Tutti gli greci». */
+  const primo   = im.art[0] ? art(N[f.a])+' ' : '';
+  const secondo = im.art[1] ? art(N[f.b])+' ' : '';
+  const pre = concl ? im.pre.charAt(0).toLowerCase()+im.pre.slice(1) : im.pre;
   return `<div class="fr${concl?' concl':''}">
-    <span class="et-fr">${etichetta}</span>
-    <select onchange="cambia('${quale}','forma',this.value)">${opzF}</select>
-    <select onchange="cambia('${quale}','a',this.value)">${opzG(f.a)}</select>
-    <span style="color:#8a9e87">→</span>
-    <select onchange="cambia('${quale}','b',this.value)">${opzG(f.b)}</select>
-    <div class="letta">${concl?'Dunque, ':''}${esc(
-      (t=>concl ? t.charAt(0).toLowerCase()+t.slice(1) : t)
-      (FORME.find(x=>x.k===f.forma).testo(N[f.a],N[f.b])))}${concl?'.':''}</div>
+    <div class="cap-fr"><span class="num">${etichetta}</span>
+      <span class="forme">${forme}</span></div>
+    <div class="riga">${concl?'Dunque ':''}${esc(pre)}${esc(primo)}${gruppo(f.a,'a')}${
+      esc(im.mezzo)}${esc(secondo)}${gruppo(f.b,'b')}${concl?'.':''}</div>
   </div>`;
 }
 
