@@ -790,18 +790,71 @@ function vociExtra(){
   /* `chi` dice a chi la voce è destinata:
        tutti   → chiunque abbia un codice
        docente → solo chi insegna (e chi guarda in sola lettura)
-     Lavagna, metodologie e inbox erano visibili anche agli studenti,
-     che poi ci sbattevano contro un «non sei entrato come docente». */
+     Questo elenco è l'unica fonte: da qui nascono sia la colonna
+     di sinistra sia il menu a tendina del telefono. Prima erano
+     due elenchi scritti a mano, e infatti avevano divergito —
+     sul telefono lo studente non trovava «Consegna un compito»
+     mentre gli comparivano Inbox e Lavagna, che non sono sue. */
   return [
-    {g:'Didattica',k:'__metodo__',  l:'Metodologie didattiche', p:'Debate, jigsaw, attività', chi:'docente'},
-    {g:'Didattica',k:'__consegna__',l:'Consegna un compito',    p:'Per gli studenti',         chi:'tutti'},
-    {g:'Didattica',k:'__inbox__',   l:'Inbox',                  p:'Consegne degli studenti',  chi:'docente'},
-    {g:'Didattica',k:'__voti__',    l:'Votazioni',              p:'120 capitoli pronti',      chi:'tutti'},
-    {g:'Strumenti',k:'__tempo__',   l:'Linea del tempo',        p:'Storia e filosofia a confronto', chi:'tutti'},
-    {g:'Strumenti',k:'__lavagna__', l:'Lavagna',                p:'Da proiettare in aula',    chi:'docente'},
-    {g:'Strumenti',k:'__map__',     l:'Mappa storica',          p:'Atlante interattivo',      chi:'tutti'},
-    {g:'Prove',    k:'__prove__',   l:'Banco di lavoro',        p:'Strumenti in costruzione', chi:'docente'}
+    {g:'Didattica',k:'__metodo__',  l:'Metodologie didattiche', p:'Debate, jigsaw, attività', chi:'docente', ic:'🎓'},
+    {g:'Didattica',k:'__consegna__',l:'Consegna un compito',    p:'Per gli studenti',         chi:'tutti',   ic:'📤'},
+    {g:'Didattica',k:'__inbox__',   l:'Inbox',                  p:'Consegne degli studenti',  chi:'docente', ic:'📥'},
+    {g:'Didattica',k:'__voti__',    l:'Votazioni',              p:'120 capitoli pronti',      chi:'tutti',   ic:'📊'},
+    {g:'Strumenti',k:'__tempo__',   l:'Linea del tempo',        p:'Storia e filosofia a confronto', chi:'tutti', ic:'🕰'},
+    {g:'Strumenti',k:'__glossario__',l:'Glossario ipertestuale',p:'Filosofia e storia',       chi:'tutti',   ic:'📖'},
+    {g:'Strumenti',k:'__testo__',   l:'Analizzatore di testo',  p:'Tesi, argomenti, obiezioni', chi:'tutti', ic:'🔍'},
+    {g:'Strumenti',k:'__map__',     l:'Mappa storica',          p:'Atlante interattivo',      chi:'tutti',   ic:'🗺'},
+    {g:'Strumenti',k:'__aula__',    l:'Timer e sorteggio',      p:'Da proiettare in aula',    chi:'docente', ic:'⏱'},
+    {g:'Strumenti',k:'__lavagna__', l:'Lavagna',                p:'Da proiettare in aula',    chi:'docente', ic:'🖊'},
+    {g:'Prove',    k:'__prove__',   l:'Banco di lavoro',        p:'Strumenti in costruzione', chi:'docente', ic:'🧪'}
   ];
+}
+
+/* ── LE VISTE A PIENO SCHERMO ───────────────────────────────
+   Ogni strumento è un riquadro che copre la libreria. `quando`
+   dice se ricaricarlo: «ogni volta» per ciò che cambia di ora in
+   ora (consegne, votazioni, inbox), «una volta» per le pagine
+   statiche — così la lavagna non perde quello che ci si è
+   scritto sopra passando ad altro e tornando indietro.
+   ──────────────────────────────────────────────────────────── */
+const VISTE={
+  __map__:      {vista:'lib-map-view',      uso:'map'},
+  __metodo__:   {vista:'lib-metodo-view',   uso:'metodo'},
+  __tempo__:    {vista:'lib-tempo-view',    uso:'tempo',    frame:'lib-tempo-frame',    src:'tempo/index.html',      quando:'una volta'},
+  __glossario__:{vista:'lib-glossario-view',uso:'glossario',frame:'lib-glossario-frame',src:'prove/glossario.html',  quando:'una volta'},
+  __testo__:    {vista:'lib-testo-view',    uso:'testo',    frame:'lib-testo-frame',    src:'prove/testo.html',      quando:'una volta'},
+  __aula__:     {vista:'lib-aula-view',     uso:'aula',     frame:'lib-aula-frame',     src:'prove/aula.html',       quando:'una volta'},
+  __lavagna__:  {vista:'lib-lavagna-view',  uso:'lavagna',  frame:'lib-lavagna-frame',  src:'lavagna/index.html',    quando:'una volta'},
+  __consegna__: {vista:'lib-consegna-view', uso:'consegna', frame:'lib-consegna-frame', src:'consegna/index.html',   quando:'ogni volta'},
+  __voti__:     {vista:'lib-voti-view',     uso:'voti',     frame:'lib-voti-frame',     src:'votazioni/index.html',  quando:'ogni volta'},
+  __inbox__:    {vista:'lib-inbox-view',    uso:'inbox',    frame:'lib-inbox-frame',    src:'inbox/index.html',      quando:'ogni volta'},
+  __prove__:    {vista:'lib-prove-view',    uso:'prove',    frame:'lib-prove-frame',    src:'prove/index.html',      quando:'ogni volta'}
+};
+
+/* Chiude tutto e riporta a galla la libreria. */
+function nascondiViste(){
+  document.getElementById('lib-head').style.display='';
+  document.getElementById('lib-modules').style.display='';
+  Object.values(VISTE).forEach(v=>{
+    const n=document.getElementById(v.vista); if(n) n.style.display='none';
+  });
+}
+
+/* Apre una vista. Torna true se la chiave era di uno strumento,
+   false se è una materia — così chi chiama sa se proseguire. */
+function mostraVista(k){
+  const v=VISTE[k]; if(!v) return false;
+  nascondiViste();
+  document.getElementById('lib-head').style.display='none';
+  document.getElementById('lib-modules').style.display='none';
+  if(v.frame){
+    const f=document.getElementById(v.frame);
+    if(f && (v.quando==='ogni volta' || !f.getAttribute('src')))
+      f.src = v.src + (v.quando==='ogni volta' ? '?'+Date.now() : '');
+  }
+  const n=document.getElementById(v.vista); if(n) n.style.display='block';
+  registraUso('strumento', v.uso);
+  return true;
 }
 
 function buildNav(keys){
@@ -854,34 +907,21 @@ function buildMobSelect(keys){
     if(i===0) opt.selected=true;
     sel.appendChild(opt);
   });
-  const metOpt=document.createElement('option');
-  metOpt.value='__metodo__';metOpt.textContent='🎓 Metodologie didattiche';
-  sel.appendChild(metOpt);
-  const votOpt=document.createElement('option');
-  votOpt.value='__voti__';votOpt.textContent='📊 Votazioni';
-  sel.appendChild(votOpt);
-  const inbOpt=document.createElement('option');
-  inbOpt.value='__inbox__';inbOpt.textContent='📥 Inbox';
-  sel.appendChild(inbOpt);
-  const lavOpt=document.createElement('option');
-  lavOpt.value='__lavagna__';lavOpt.textContent='🖊 Lavagna';
-  sel.appendChild(lavOpt);
-  const mapOpt=document.createElement('option');
-  mapOpt.value='__map__';mapOpt.textContent='🗺️ Mappa Storica';
-  sel.appendChild(mapOpt);
+  /* le stesse voci della colonna, con lo stesso filtro di ruolo:
+     se una voce non spetta a chi guarda, non compare da nessuna
+     delle due parti */
+  vociExtra().forEach(v=>{
+    if(v.chi==='docente' && !vedeRoba()) return;
+    const o=document.createElement('option');
+    o.value=v.k; o.textContent=(v.ic?v.ic+' ':'')+v.l;
+    sel.appendChild(o);
+  });
 }
 function mobChange(key){
   if(!key) return;
   document.querySelectorAll('.lib-item').forEach(n=>{n.classList.toggle('active',n.dataset.key===key);});
-  if(key==='__map__'){registraUso('strumento','map');showMapView();return;}
-  if(key==='__metodo__'){registraUso('strumento','metodo');showMetodoView();return;}
-  if(key==='__tempo__'){registraUso('strumento','tempo');showTempoView();return;}
-  if(key==='__prove__'){registraUso('strumento','prove');showProveView();return;}
-  if(key==='__consegna__'){registraUso('strumento','consegna');showConsegnaView();return;}
-  if(key==='__lavagna__'){registraUso('strumento','lavagna');showLavagnaView();return;}
-  if(key==='__inbox__'){registraUso('strumento','inbox');showInboxView();return;}
-  if(key==='__voti__'){registraUso('strumento','voti');showVotiView();return;}
-  hideMapView();
+  if(mostraVista(key)) return;
+  nascondiViste();
   registraUso('materia', key);
   renderSubject(key);
 }
@@ -899,40 +939,9 @@ function navClick(el,key){
   document.querySelectorAll('.lib-item').forEach(n=>n.classList.remove('active'));
   el.classList.add('active');
   document.getElementById('mob-select').value=key;
-  if(key==='__map__'){registraUso('strumento','map');showMapView();return;}
-  if(key==='__metodo__'){registraUso('strumento','metodo');showMetodoView();return;}
-  if(key==='__tempo__'){registraUso('strumento','tempo');showTempoView();return;}
-  if(key==='__prove__'){registraUso('strumento','prove');showProveView();return;}
-  if(key==='__consegna__'){registraUso('strumento','consegna');showConsegnaView();return;}
-  if(key==='__lavagna__'){registraUso('strumento','lavagna');showLavagnaView();return;}
-  if(key==='__inbox__'){registraUso('strumento','inbox');showInboxView();return;}
-  if(key==='__voti__'){registraUso('strumento','voti');showVotiView();return;}
-  hideMapView();
+  if(mostraVista(key)) return;
+  nascondiViste();
   renderSubject(key);
-}
-function showMapView(){
-  document.getElementById('lib-head').style.display='none';
-  document.getElementById('lib-modules').style.display='none';
-  document.getElementById('lib-metodo-view').style.display='none';
-  document.getElementById('lib-lavagna-view').style.display='none';
-  document.getElementById('lib-map-view').style.display='block';
-  document.getElementById('lib-inbox-view').style.display='none';
-  document.getElementById('lib-voti-view').style.display='none';
-  document.getElementById('lib-tempo-view').style.display='none';
-  document.getElementById('lib-consegna-view').style.display='none';
-  document.getElementById('lib-prove-view').style.display='none';
-}
-function showMetodoView(){
-  document.getElementById('lib-head').style.display='none';
-  document.getElementById('lib-modules').style.display='none';
-  document.getElementById('lib-map-view').style.display='none';
-  document.getElementById('lib-lavagna-view').style.display='none';
-  document.getElementById('lib-metodo-view').style.display='block';
-  document.getElementById('lib-inbox-view').style.display='none';
-  document.getElementById('lib-voti-view').style.display='none';
-  document.getElementById('lib-tempo-view').style.display='none';
-  document.getElementById('lib-consegna-view').style.display='none';
-  document.getElementById('lib-prove-view').style.display='none';
 }
 /* La lavagna si carica solo la prima volta che la si apre: cosi'
    non tiene aperta una sessione di scrittura per chi non la usa,
@@ -942,110 +951,10 @@ function showMetodoView(){
    sola, la prima che la si apre. */
 /* La pagina di consegna: si ricarica ogni volta, perche' quali
    finestre siano aperte cambia di ora in ora. */
-function showConsegnaView(){
-  document.getElementById('lib-head').style.display='none';
-  document.getElementById('lib-modules').style.display='none';
-  document.getElementById('lib-map-view').style.display='none';
-  document.getElementById('lib-metodo-view').style.display='none';
-  document.getElementById('lib-tempo-view').style.display='none';
-  document.getElementById('lib-lavagna-view').style.display='none';
-  document.getElementById('lib-inbox-view').style.display='none';
-  document.getElementById('lib-voti-view').style.display='none';
-  const f=document.getElementById('lib-consegna-frame');
-  f.src='consegna/index.html?'+Date.now();
-  document.getElementById('lib-consegna-view').style.display='block';
-  document.getElementById('lib-prove-view').style.display='none';
-}
 /* Il banco di lavoro: gli strumenti mentre li costruiamo.
    Lo vede solo chi insegna. */
-function showProveView(){
-  document.getElementById('lib-head').style.display='none';
-  document.getElementById('lib-modules').style.display='none';
-  document.getElementById('lib-map-view').style.display='none';
-  document.getElementById('lib-metodo-view').style.display='none';
-  document.getElementById('lib-tempo-view').style.display='none';
-  document.getElementById('lib-lavagna-view').style.display='none';
-  document.getElementById('lib-inbox-view').style.display='none';
-  document.getElementById('lib-voti-view').style.display='none';
-  document.getElementById('lib-consegna-view').style.display='none';
-  const f=document.getElementById('lib-prove-frame');
-  /* con la marca temporale, come per le votazioni: il banco di lavoro
-     cambia spesso e senza questa chi era già entrato una volta
-     continuava a vedere la pagina rimasta in cache */
-  f.src='prove/index.html?'+Date.now();
-  document.getElementById('lib-prove-view').style.display='block';
-}
-function showTempoView(){
-  document.getElementById('lib-head').style.display='none';
-  document.getElementById('lib-modules').style.display='none';
-  document.getElementById('lib-map-view').style.display='none';
-  document.getElementById('lib-metodo-view').style.display='none';
-  document.getElementById('lib-lavagna-view').style.display='none';
-  document.getElementById('lib-inbox-view').style.display='none';
-  document.getElementById('lib-voti-view').style.display='none';
-  const f=document.getElementById('lib-tempo-frame');
-  if(!f.getAttribute('src')) f.src='tempo/index.html';
-  document.getElementById('lib-tempo-view').style.display='block';
-  document.getElementById('lib-consegna-view').style.display='none';
-  document.getElementById('lib-prove-view').style.display='none';
-}
-function showVotiView(){
-  document.getElementById('lib-head').style.display='none';
-  document.getElementById('lib-modules').style.display='none';
-  document.getElementById('lib-map-view').style.display='none';
-  document.getElementById('lib-metodo-view').style.display='none';
-  document.getElementById('lib-lavagna-view').style.display='none';
-  document.getElementById('lib-inbox-view').style.display='none';
-  const f=document.getElementById('lib-voti-frame');
-  f.src='votazioni/index.html?'+Date.now();
-  document.getElementById('lib-voti-view').style.display='block';
-  document.getElementById('lib-tempo-view').style.display='none';
-  document.getElementById('lib-consegna-view').style.display='none';
-  document.getElementById('lib-prove-view').style.display='none';
-}
-function showInboxView(){
-  document.getElementById('lib-head').style.display='none';
-  document.getElementById('lib-modules').style.display='none';
-  document.getElementById('lib-map-view').style.display='none';
-  document.getElementById('lib-metodo-view').style.display='none';
-  document.getElementById('lib-lavagna-view').style.display='none';
-  const f=document.getElementById('lib-inbox-frame');
-  /* si ricarica a ogni apertura, cosi' mostra sempre l'archivio aggiornato */
-  f.src='inbox/index.html?'+Date.now();
-  document.getElementById('lib-inbox-view').style.display='block';
-  document.getElementById('lib-voti-view').style.display='none';
-  document.getElementById('lib-tempo-view').style.display='none';
-  document.getElementById('lib-consegna-view').style.display='none';
-  document.getElementById('lib-prove-view').style.display='none';
-}
-function showLavagnaView(){
-  document.getElementById('lib-head').style.display='none';
-  document.getElementById('lib-modules').style.display='none';
-  document.getElementById('lib-map-view').style.display='none';
-  document.getElementById('lib-metodo-view').style.display='none';
-  const f=document.getElementById('lib-lavagna-frame');
-  if(!f.src) f.src='lavagna/index.html';
-  document.getElementById('lib-lavagna-view').style.display='block';
-  document.getElementById('lib-inbox-view').style.display='none';
-  document.getElementById('lib-voti-view').style.display='none';
-  document.getElementById('lib-tempo-view').style.display='none';
-  document.getElementById('lib-consegna-view').style.display='none';
-  document.getElementById('lib-prove-view').style.display='none';
-}
 /* Nasconde tutte le viste a pieno schermo e riporta a galla la
    libreria: la chiamano sia navClick sia mobChange. */
-function hideMapView(){
-  document.getElementById('lib-head').style.display='';
-  document.getElementById('lib-modules').style.display='';
-  document.getElementById('lib-map-view').style.display='none';
-  document.getElementById('lib-metodo-view').style.display='none';
-  document.getElementById('lib-lavagna-view').style.display='none';
-  document.getElementById('lib-inbox-view').style.display='none';
-  document.getElementById('lib-voti-view').style.display='none';
-  document.getElementById('lib-tempo-view').style.display='none';
-  document.getElementById('lib-consegna-view').style.display='none';
-  document.getElementById('lib-prove-view').style.display='none';
-}
 
 let searchDebounce=null;
 function escHtml(s){return (s||'').replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));}
@@ -1537,7 +1446,8 @@ async function caricaVetrina(){
    mostrano nulla a nessun altro.
    ══════════════════════════════════════════════════════════ */
 const NOMI_STRUMENTO={map:'Mappa storica',metodo:'Metodologie',tempo:'Linea del tempo',
-  lavagna:'Lavagna',inbox:'Inbox',voti:'Votazioni',consegna:'Consegna un compito',prove:'Prove'};
+  lavagna:'Lavagna',inbox:'Inbox',voti:'Votazioni',consegna:'Consegna un compito',prove:'Prove',
+  glossario:'Glossario ipertestuale',testo:'Analizzatore di testo',aula:'Timer e sorteggio'};
 
 function apriStatistiche(){
   document.getElementById('stat-overlay').classList.add('on');
