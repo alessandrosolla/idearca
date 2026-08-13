@@ -76,6 +76,20 @@
   @keyframes p{0%,60%,100%{opacity:.2;transform:translateY(0)}30%{opacity:1;transform:translateY(-3px)}}
   .err{color:#C0453B;font-size:.92rem;margin-top:.7rem;min-height:1.2rem;font-weight:600}
 
+  /* la risposta scelta, nel colore della squadra */
+  button.mia{box-shadow:0 0 0 3px rgba(27,24,21,.25);transform:scale(.985)}
+  body[data-squadra="rossi"] button.mia{background:#c0453b;color:#fff;
+    box-shadow:0 0 0 3px rgba(168,50,42,.35)}
+  body[data-squadra="blu"] button.mia{background:#3f6d8c;color:#fff;
+    box-shadow:0 0 0 3px rgba(37,75,120,.35)}
+  .mia-risposta{border-radius:18px;padding:1.1rem 1.2rem;margin-bottom:.9rem;
+    font-size:1.15rem;font-weight:700;line-height:1.35;
+    background:var(--carta);color:#1B1815;box-shadow:0 3px 14px rgba(27,24,21,.08)}
+  .mr-et{display:block;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;
+    font-weight:700;opacity:.7;margin-bottom:.25rem}
+  body[data-squadra="rossi"] .mia-risposta{background:#c0453b;color:#fff}
+  body[data-squadra="blu"]   .mia-risposta{background:#3f6d8c;color:#fff}
+
   /* la fascia che dice a quale squadra si appartiene */
   #fascia-squadra{position:fixed;left:0;right:0;top:0;z-index:50;
     padding:.55rem 1rem;text-align:center;font-weight:700;letter-spacing:.14em;
@@ -175,16 +189,30 @@ function schermataDomanda(d){
      con le virgolette nel testo di un'opzione il codice inline si
      sarebbe spezzato. */
   el.querySelectorAll('button[data-v]').forEach(b=>
-    b.addEventListener('click', ()=> invia(b.dataset.v)));
+    b.addEventListener('click', ()=>{
+      /* La risposta si tinge subito del colore della squadra: fra
+         venticinque telefoni uguali è l'unico modo per accorgersi,
+         guardando quello del compagno, di stare giocando in due
+         squadre e non venticinque volte da soli. Senza squadre
+         resta la conferma neutra di sempre. */
+      el.querySelectorAll('button[data-v]').forEach(x=>x.classList.remove('mia'));
+      b.classList.add('mia');
+      invia(b.dataset.v, String(b.querySelector('span:last-child').textContent));
+    }));
   const i = document.getElementById('risposta');
   if(i){ i.focus(); i.addEventListener('keydown', e=>{ if(e.key === 'Enter') inviaTesto(); }); }
 }
 
-function schermataInviata(){
+function schermataInviata(scelta){
+  const nome = squadra === 'rossi' ? 'i rossi' : 'i blu';
   el.innerHTML = `
     <div class="cima"><span class="marchio">Idearca</span><span class="pill">${esc(codice)}</span></div>
     <h1>Fatto ✅</h1>
-    <div class="esito"><span class="emo">📨</span>La tua risposta è arrivata. Guarda lo schermo.<br>
+    ${scelta ? `<div class="mia-risposta"><span class="mr-et">La tua risposta${
+        squadra ? ', per '+nome : ''}</span>${esc(String(scelta))}</div>` : ''}
+    <div class="esito"><span class="emo">📨</span>${
+      squadra ? 'È arrivata e vale per la tua squadra.' : 'La tua risposta è arrivata.'
+    } Guarda lo schermo.<br>
       <span style="color:#5A5148;font-size:.9rem">Resta qui: quando comparirà la prossima domanda
       la vedrai automaticamente.</span></div>`;
 }
@@ -312,7 +340,7 @@ function mostraSquadra(){
   f.textContent = squadra === 'rossi' ? 'Squadra rossa' : 'Squadra blu';
 }
 
-async function invia(valore){
+async function invia(valore, etichetta){
   if(!domanda || giaRisposto) return;
   giaRisposto = true;
   try{
@@ -330,7 +358,7 @@ async function invia(valore){
           body: JSON.stringify({p_codice: codice, p_domanda: domanda.domanda_id, p_valore: valore})
         });
     const ok = res.ok && (await res.json()) === true;
-    if(ok){ segnaRisposta(domanda.domanda_id); schermataInviata(); }
+    if(ok){ segnaRisposta(domanda.domanda_id); schermataInviata(etichetta || valore); }
     else{
       giaRisposto = false;
       const e = document.getElementById('err');
