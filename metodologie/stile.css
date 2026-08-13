@@ -205,3 +205,37 @@ table.punti td:last-child,table.punti th:last-child{text-align:center;width:4.5r
 table.punti tr.tot td{font-weight:700;border-top:2px solid var(--ink)}
 
 @media print{ .vista-barra{display:none} }
+
+
+/* ══════════════════════════════════════════════════════════
+   LA SCENA E I CASI
+   Le attività cominciavano dalla mozione e passavano subito
+   alle domande di fondo. Per chi insegna funziona — sa già
+   chi sono Callicle o Salandra. Per uno studente no: si
+   discuteva di una tesi senza sapere chi l'avesse detta, a
+   chi, in che anno e perché la cosa scottasse. Questi due
+   blocchi vengono prima di tutto il resto.
+   ══════════════════════════════════════════════════════════ */
+.scena{border:1px solid rgba(45,90,39,.16);border-left:5px solid #2d5a27;
+  border-radius:0 14px 14px 0;background:#fff;padding:1.3rem 1.5rem;margin:1.4rem 0}
+.scena h2{margin-top:0}
+.scena-griglia{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+  gap:.6rem;margin:.9rem 0 1rem}
+.scena-c{border-radius:10px;padding:.7rem .85rem;background:#f6f5ef}
+.scena-c b{display:block;font-size:.58rem;letter-spacing:.14em;text-transform:uppercase;
+  color:#8a6a1e;font-weight:700;margin-bottom:.2rem}
+.scena-c span{font-size:.88rem;line-height:1.5;color:#2a352a}
+.scena p{margin-bottom:.6rem}
+.scena p:last-child{margin-bottom:0}
+.oggi{margin-top:.9rem;padding:.85rem 1rem;border-radius:10px;background:rgba(154,124,46,.1);
+  font-size:.88rem;line-height:1.7}
+.oggi b{color:#8a6a1e;font-weight:600}
+
+.casi{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:.7rem;margin:.9rem 0}
+.caso{border:1px solid rgba(45,90,39,.14);border-top:3px solid #9a7c2e;border-radius:12px;
+  padding:.9rem 1rem;background:#fff}
+.caso b{display:block;font-size:.95rem;font-weight:600;margin-bottom:.3rem;color:#1c2b1a}
+.caso span{display:block;font-size:.85rem;line-height:1.65;color:#3d4a3b}
+.caso em{display:block;font-style:normal;font-size:.78rem;line-height:1.6;color:#8a6a1e;
+  margin-top:.45rem;font-weight:500}
+@media(max-width:640px){ .scena{padding:1.05rem 1.1rem} .scena-griglia{grid-template-columns:1fr} }
