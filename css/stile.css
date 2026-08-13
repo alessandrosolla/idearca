@@ -1298,3 +1298,9 @@ html[data-theme="dark"] .chi-banda{background:#171d15}
   .peek-foot .btn-primary,.peek-foot .btn-secondary{flex:1;font-size:.74rem;padding:.85rem .8rem}
   html[data-theme="dark"] .peek-head{background:linear-gradient(180deg,#1b2118 82%,rgba(27,33,24,.94))}
 }
+
+/* Una consegna aperta si deve vedere dalla colonna, senza aprirla. */
+.lib-item.ha-novita .lib-dot{background:#2d5a27;box-shadow:0 0 0 3px rgba(45,90,39,.18)}
+.lib-item.ha-novita small{color:#2d5a27;font-weight:600}
+.lib-count-aperto{background:#2d5a27;color:#fff;border-radius:100px;padding:.05rem .45rem;
+  font-size:.66rem;font-weight:700}

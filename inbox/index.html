@@ -108,6 +108,15 @@
     border:1px solid #E3DACB;border-radius:8px;background:#FBF7F0;cursor:pointer}
   .fin-azioni button:hover{background:#F1EBE0}
   .fin-azioni .del{color:#C0453B;border-color:#EBD3D0}
+
+/* Dopo aver aperto una finestra la domanda successiva è sempre la
+   stessa: e adesso gli studenti dove devono guardare. Sta scritto
+   qui, sulla finestra stessa, invece che da nessuna parte. */
+.fin-dove{margin:.7rem 0 .2rem;padding:.75rem .9rem;border-radius:0 9px 9px 0;
+  border-left:3px solid #2d5a27;background:rgba(45,90,39,.07);
+  font-size:.82rem;line-height:1.65;color:#5a6b58}
+.fin-dove b{display:block;color:#2d5a27;font-weight:600;margin-bottom:.15rem}
+.fin-dove em{font-style:normal;font-weight:600;color:#1c2b1a}
 </style>
 </head>
 <body>
@@ -405,6 +414,14 @@ function pannelloFinestre(){
         <label>Si chiude<input type="datetime-local" value="${perInput(f.chiude_il)}"
           onchange="salvaFinestra(${f.id},{chiude_il:this.value?new Date(this.value).toISOString():null})"></label>
       </div>
+      ${st.c==='aperta' ? `<div class="fin-dove">
+        <b>Dove la trova la classe</b>
+        Dalla libreria, nella colonna a sinistra: <em>Didattica → Consegna un compito</em>.
+        Sul telefono la colonna non c'è: si apre il menu a tendina in cima e si sceglie
+        <em>Consegna un compito</em>. La voce compare a chiunque abbia un codice, anche
+        quando non c'è nulla di aperto; con questa finestra attiva le comparirà accanto
+        un pallino verde.
+      </div>` : ''}
       <div class="fin-azioni">
         <button onclick="salvaFinestra(${f.id},{attiva:${!f.attiva}})">${f.attiva?'Chiudi adesso':'Riapri'}</button>
         <button class="del" onclick="eliminaFinestra(${f.id})">Elimina</button>
@@ -415,8 +432,9 @@ function pannelloFinestre(){
   return `
   <div class="fin-nuova">
     <h3>Apri una consegna</h3>
-    <p>Scrivi come si chiama il compito. Gli studenti la troveranno nell'elenco
-    della pagina di consegna, e potranno inviare finché la lasci aperta.</p>
+    <p>Scrivi come si chiama il compito: è il nome che gli studenti vedranno
+    nell'elenco, quindi conviene che dica anche per quale classe è. Potranno
+    inviare finché la lasci aperta.</p>
     <input id="fin-titolo" maxlength="120" placeholder="es. Debate — le crociate, 3A">
     <textarea id="fin-istruzioni" maxlength="600" placeholder="Istruzioni (facoltative): che cosa devono consegnare, in che forma."></textarea>
     <label class="fin-scad">Chiude il <input type="datetime-local" id="fin-scadenza"></label>

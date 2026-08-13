@@ -892,12 +892,44 @@ function buildNav(keys){
     html+='</div></div>';
   });
   document.getElementById('lib-nav').innerHTML=html;
+  segnalaConsegneAperte();
   /* un gruppo senza voci (Didattica per uno studente, se tutto
      e' riservato) sparisce invece di restare come titolo vuoto */
   document.querySelectorAll('.lib-group').forEach(g=>{
     if(!g.querySelector('.lib-item')) g.remove();
   });
 }
+/* ── IL PALLINO SULLE CONSEGNE ──────────────────────────────
+   «Consegna un compito» c'è sempre, anche quando non c'è nulla
+   da consegnare: toglierla e rimetterla farebbe sparire una voce
+   che gli studenti devono imparare a trovare. Ma allora, quando
+   una finestra è davvero aperta, bisogna che si veda — altrimenti
+   il professore apre la consegna e nessuno se ne accorge.
+   Il conteggio arriva dalla stessa funzione che usa la pagina di
+   consegna, che risponde anche a chi non ha fatto l'accesso.
+   ──────────────────────────────────────────────────────────── */
+async function segnalaConsegneAperte(){
+  const voce=document.querySelector('.lib-item[data-key="__consegna__"]');
+  if(!voce) return;
+  let quante=0;
+  try{
+    const res=await fetch(SB_URL+'/rest/v1/rpc/finestre_aperte',{
+      method:'POST',
+      headers:{'apikey':SB_KEY,'Authorization':'Bearer '+SB_KEY,'Content-Type':'application/json'},
+      body:'{}'});
+    if(res.ok) quante=(await res.json()).length;
+  }catch(_){ return; }          /* offline: si lascia la voce com'è */
+  if(!quante) return;
+  voce.classList.add('ha-novita');
+  const c=voce.querySelector('.lib-count');
+  if(c){ c.textContent=quante; c.classList.add('lib-count-aperto'); }
+  voce.querySelector('small').textContent =
+    quante===1 ? 'Una consegna aperta adesso' : quante+' consegne aperte adesso';
+  /* e anche nel menu del telefono, dove il pallino non si vede */
+  const opt=document.querySelector('#mob-select option[value="__consegna__"]');
+  if(opt && !opt.textContent.includes('•')) opt.textContent+='  • '+quante;
+}
+
 function buildMobSelect(keys){
   const sel=document.getElementById('mob-select');
   sel.innerHTML='<option value="">— Scegli una materia —</option>';
