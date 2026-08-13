@@ -30,11 +30,14 @@
   .bar button:hover{border-color:#8A7355}
   .bar button.on{background:#1F1B16;color:#fff;border-color:#1F1B16}
   .sep{width:1px;height:32px;background:#E3DACB;margin:0 .1rem}
+  /* Con dieci colori i pastelli occupavano mezza barra: si
+     stringono un po' e restano comunque bersagli da dito. */
   .colore{
-    width:44px;height:44px;min-width:44px;border-radius:50%;
+    width:34px;height:34px;min-width:34px;border-radius:50%;
     border:3px solid #fff;box-shadow:0 0 0 1px #C9BCA6;cursor:pointer;padding:0;
   }
-  .colore.on{box-shadow:0 0 0 4px #1F1B16}
+  .colore.on{box-shadow:0 0 0 3px #1F1B16;transform:scale(1.12)}
+  .colore{transition:transform .12s}
   .sp{width:44px;height:44px;padding:0!important;display:grid;place-items:center}
   .sp i{display:block;background:#1F1B16;border-radius:99px}
   .spazio{flex:1}
@@ -61,6 +64,8 @@
   body.modo-disegno #testo{pointer-events:none;user-select:none}
   body.modo-mano #tela{cursor:grab}
   body.modo-mano.trascina #tela{cursor:grabbing}
+  /* mentre si sta tirando il rettangolo della gomma */
+  body.seleziona #tela{cursor:crosshair}
 
   @media (max-width:980px){
     .bar{gap:.3rem;padding:.35rem .45rem}
@@ -78,14 +83,21 @@
 <div class="bar">
   <button id="b-testo" class="on" onclick="modo('testo')">✏️ Testo</button>
   <button id="b-penna" onclick="modo('penna')">🖊 Penna</button>
-  <button id="b-gomma" onclick="modo('gomma')">🧽 Gomma</button>
+  <button id="b-gomma" onclick="modo('gomma')"
+    title="Sfrega per cancellare un tratto. Tieni premuto fermo mezzo secondo: si apre un rettangolo, e quello che ci racchiudi sparisce tutto insieme.">🧽 Gomma</button>
   <button id="b-mano" onclick="modo('mano')">✋ Mano</button>
 
   <span class="sep"></span>
   <button class="colore on" data-c="#1F1B16" style="background:#1F1B16" title="Nero"></button>
+  <button class="colore" data-c="#6B6459" style="background:#6B6459" title="Grigio"></button>
   <button class="colore" data-c="#C0453B" style="background:#C0453B" title="Rosso"></button>
+  <button class="colore" data-c="#D97A1F" style="background:#D97A1F" title="Arancio"></button>
+  <button class="colore" data-c="#9A7C2E" style="background:#9A7C2E" title="Oro"></button>
+  <button class="colore" data-c="#2D7A2B" style="background:#2D7A2B" title="Verde"></button>
+  <button class="colore" data-c="#1C8C8C" style="background:#1C8C8C" title="Verde acqua"></button>
   <button class="colore" data-c="#2C6FB5" style="background:#2C6FB5" title="Blu"></button>
-  <button class="colore" data-c="#4FA82F" style="background:#4FA82F" title="Verde"></button>
+  <button class="colore" data-c="#7A4B8C" style="background:#7A4B8C" title="Viola"></button>
+  <button class="colore" data-c="#B03A6E" style="background:#B03A6E" title="Magenta"></button>
 
   <span class="sep"></span>
   <button class="sp" data-w="4"  title="Tratto sottile"><i style="width:16px;height:4px"></i></button>
@@ -192,7 +204,34 @@ function ridisegna(){
   ctx.clearRect(0,0,dim.w,dim.h);
   preparaContesto();
   for(const t of tratti) disegnaTratto(t);
+  disegnaSelezione();
   applicaVista();
+}
+
+/* Il rettangolo di selezione e i tratti che ha preso: si vede
+   che cosa sparirà prima di lasciare il dito. */
+function disegnaSelezione(){
+  if(!selezione) return;
+  const presi = tocchiSelezione();
+  ctx.save();
+  ctx.lineWidth = 3 / vista.s;
+  ctx.strokeStyle = 'rgba(192,69,59,.85)';
+  for(const t of presi){
+    if(t.p.length < 2) continue;
+    ctx.beginPath();
+    ctx.moveTo(t.p[0][0], t.p[0][1]);
+    for(let i=1;i<t.p.length;i++) ctx.lineTo(t.p[i][0], t.p[i][1]);
+    ctx.stroke();
+  }
+  const x = Math.min(selezione.x0, selezione.x1), y = Math.min(selezione.y0, selezione.y1);
+  const w = Math.abs(selezione.x1-selezione.x0), h = Math.abs(selezione.y1-selezione.y0);
+  ctx.fillStyle = 'rgba(192,69,59,.10)';
+  ctx.fillRect(x, y, w, h);
+  ctx.setLineDash([8/vista.s, 6/vista.s]);
+  ctx.lineWidth = 1.5 / vista.s;
+  ctx.strokeStyle = 'rgba(192,69,59,.9)';
+  ctx.strokeRect(x, y, w, h);
+  ctx.restore();
 }
 
 function disegnaTratto(t){
@@ -360,7 +399,11 @@ tela.addEventListener('pointerdown', e=>{
     return;
   }
   if(!accettabile(e)){ attivi.delete(e.pointerId); return; }
-  if(modoAttuale === 'gomma'){ cancellaVicino(aMondo(e.clientX, e.clientY)); return; }
+  if(modoAttuale === 'gomma'){
+    avviaAttesaGomma(aMondo(e.clientX, e.clientY), schermo(e));
+    cancellaVicino(aMondo(e.clientX, e.clientY));
+    return;
+  }
 
   inCorso = { c: colore, w: spessore / vista.s, p: [aMondo(e.clientX, e.clientY)] };
   tratti.push(inCorso);
@@ -398,7 +441,16 @@ tela.addEventListener('pointermove', e=>{
     return;
   }
 
-  if(modoAttuale === 'gomma'){ cancellaVicino(aMondo(e.clientX, e.clientY)); return; }
+  if(modoAttuale === 'gomma'){
+    const p = aMondo(e.clientX, e.clientY);
+    if(selezione){ selezione.x1 = p[0]; selezione.y1 = p[1]; ridisegna(); return; }
+    if(attesaGomma){
+      const q = schermo(e);
+      if(Math.hypot(q.x-attesaGomma.da.x, q.y-attesaGomma.da.y) > FERMO) annullaAttesaGomma();
+    }
+    cancellaVicino(p);
+    return;
+  }
   if(!inCorso) return;
   inCorso.p.push(aMondo(e.clientX, e.clientY));
   disegnaUltimoSegmento(inCorso);
@@ -415,6 +467,8 @@ function finePuntatore(e){
 
   if(attivi.size < 2) pizzico = null;
   if(attivi.size === 0){
+    annullaAttesaGomma();
+    chiudiSelezione();
     if(trascino){ trascino = null; document.body.classList.remove('trascina'); }
     if(inCorso){
       if(raddrizza) raddrizzaTratto(inCorso);
@@ -425,6 +479,60 @@ function finePuntatore(e){
 tela.addEventListener('pointerup', finePuntatore);
 tela.addEventListener('pointercancel', finePuntatore);
 window.addEventListener('blur', ()=>finePuntatore());
+
+/* ── LA GOMMA HA DUE MODI ──────────────────────────────────
+   Sfregando, cancella il tratto che sta sotto il dito: è il modo
+   naturale e resta quello di prima. Ma cancellare mezza lavagna
+   un tratto per volta è una perdita di tempo, e allora: se si
+   tiene premuto fermi per mezzo secondo si apre un rettangolo di
+   selezione — si trascina per racchiudere quello che si vuole
+   togliere, e al rilascio se ne va tutto insieme.
+
+   La distinzione fra «tenere premuto» e «cominciare a sfregare»
+   la fa il movimento: se il dito si sposta più di qualche pixel
+   prima che scatti il mezzo secondo, era uno sfregamento.
+   ────────────────────────────────────────────────────────── */
+let attesaGomma = null;      // il timer del mezzo secondo
+let selezione   = null;      // {x0,y0,x1,y1} in coordinate del mondo
+const FERMO = 6;             // pixel di tolleranza per dire «fermo»
+
+function avviaAttesaGomma(punto, schermoIniziale){
+  annullaAttesaGomma();
+  attesaGomma = {
+    da: schermoIniziale,
+    timer: setTimeout(()=>{
+      attesaGomma = null;
+      selezione = {x0:punto[0], y0:punto[1], x1:punto[0], y1:punto[1]};
+      document.body.classList.add('seleziona');
+      ridisegna();
+    }, 500)
+  };
+}
+function annullaAttesaGomma(){
+  if(attesaGomma){ clearTimeout(attesaGomma.timer); attesaGomma = null; }
+}
+
+/* Un tratto è preso se almeno un suo punto cade nel rettangolo.
+   Basta toccarlo: chiedere che ci stia tutto dentro obbligherebbe
+   a inseguire le code lunghe dei tratti a mano libera. */
+function tocchiSelezione(){
+  if(!selezione) return [];
+  const a = Math.min(selezione.x0, selezione.x1), b = Math.max(selezione.x0, selezione.x1);
+  const c = Math.min(selezione.y0, selezione.y1), d = Math.max(selezione.y0, selezione.y1);
+  return tratti.filter(t => t.p.some(p => p[0]>=a && p[0]<=b && p[1]>=c && p[1]<=d));
+}
+
+function chiudiSelezione(){
+  if(!selezione) return;
+  const presi = new Set(tocchiSelezione());
+  selezione = null;
+  document.body.classList.remove('seleziona');
+  if(presi.size){
+    tratti = tratti.filter(t => !presi.has(t));
+    segnaModifica();
+  }
+  ridisegna();
+}
 
 /* La gomma elimina il tratto intero sotto il dito. La soglia è
    divisa per l'ingrandimento, così resta della stessa grandezza
