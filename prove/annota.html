@@ -97,6 +97,22 @@ textarea{resize:vertical;line-height:1.5}
   .brano{padding:1.1rem 1.15rem}
   .testo{font-size:1.08rem;line-height:1.95}
 }
+
+/* l'obiettivo e le domande guida */
+.obiettivo{font-size:.86rem;line-height:1.7;color:#2a352a;background:rgba(45,90,39,.07);
+  border-left:3px solid #2d5a27;border-radius:0 10px 10px 0;padding:.85rem 1rem;margin-bottom:.7rem}
+.obiettivo b{display:block;font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;
+  color:#2d5a27;font-weight:700;margin-bottom:.25rem}
+.guida{font-size:.85rem;line-height:1.65;color:#3d4a3b;background:#fff;
+  border:1px solid rgba(45,90,39,.14);border-radius:10px;padding:.9rem 1.05rem;margin-bottom:.9rem}
+.guida b{display:block;font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;
+  color:#8a6a1e;font-weight:700;margin-bottom:.5rem}
+.guida ol{margin:0 0 .5rem;padding-left:1.15rem}
+.guida li{margin-bottom:.35rem}
+.guida-min{display:block;font-size:.78rem;line-height:1.6;color:#8a9e87}
+
+/* il campo del nome quando manca */
+#chi.manca{border-color:#c0453b;background:#fdf6f5}
 </style>
 </head>
 <body>
@@ -111,7 +127,7 @@ textarea{resize:vertical;line-height:1.5}
   <div class="et">Chi sei</div>
   <div class="tessera">
     <div class="due">
-      <input id="chi" placeholder="Nome e cognome" oninput="salvaChi()">
+      <input id="chi" placeholder="Nome e cognome" oninput="salvaChi();controllaChi();disegna()">
       <input id="classe" placeholder="Classe" oninput="salvaChi()">
     </div>
     <div class="riga" style="margin-top:.5rem">
@@ -261,7 +277,14 @@ function disegna(){
   document.getElementById('brano').innerHTML=`
     <div class="tit">${esc(brano.titolo)}</div>
     <div class="aut">${esc(brano.autore||'')}${brano.autore&&brano.fonte?' · ':''}${esc(brano.fonte||'')}</div>
+    ${brano.obiettivo?`<div class="obiettivo"><b>Che cosa devi capire</b>${esc(brano.obiettivo)}</div>`:''}
     ${brano.consegna?`<div class="consegna">${esc(brano.consegna)}</div>`:''}
+    ${(brano.domande&&brano.domande.length)?`<div class="guida">
+        <b>Le domande che guidano la lettura</b>
+        <ol>${brano.domande.map(d=>`<li>${esc(d)}</li>`).join('')}</ol>
+        <span class="guida-min">Non vanno consegnate: servono a sapere che cosa cercare mentre
+        leggi. Le note più utili sono quelle che rispondono a una di queste.</span>
+      </div>`:''}
     <div class="testo">${corpo}</div>`;
 
   disegnaLato(perFrase);
@@ -284,7 +307,12 @@ function disegnaLato(perFrase){
 
   /* il pannello per scrivere */
   html+=`<div class="scatola"><h3>${sceltaFrase<0?'Scegli una frase':'Frase '+(sceltaFrase+1)}</h3>`;
-  if(sceltaFrase<0){
+  if(!chiValido()){
+    html+='<div class="vuoto"><b style="display:block;color:#8a6a1e;margin-bottom:.3rem">'
+        +'Prima scrivi il tuo nome</b>Le note restano firmate e le legge tutta la classe: '
+        +'senza nome non si capisce chi ha chiesto che cosa, e il professore non sa a chi '
+        +'rispondere. Nome e cognome nel campo in cima.</div>';
+  } else if(sceltaFrase<0){
     html+='<div class="vuoto">Clicca una frase del brano per annotarla.</div>';
   } else {
     html+=`<div style="font-size:.8rem;line-height:1.55;color:#5a6b58;font-style:italic;
@@ -351,12 +379,32 @@ function scegliFrase(i){
   if(sceltaFrase>=0) document.getElementById('testoNota')?.focus();
 }
 
+/* ── IL NOME, PRIMA DI TUTTO ────────────────────────────────
+   Tutta la classe entra con lo stesso codice: il nome è l'unica
+   cosa che distingue una nota dall'altra. Prima lo si chiedeva
+   al momento di inviare, e chi aveva già scritto la nota si
+   trovava respinto dopo aver fatto il lavoro. Adesso finché non
+   c'è un nome vero il pannello resta chiuso, e lo dice. */
+function chiValido(){
+  const n=(document.getElementById('chi')?.value||'').trim();
+  return n.length>=3 && /[a-zàèéìòùA-Z]/.test(n);
+}
+function controllaChi(){
+  const ok=chiValido();
+  document.body.classList.toggle('senza-nome', !ok);
+  const t=document.getElementById('chi');
+  if(t) t.classList.toggle('manca', !ok);
+  return ok;
+}
+
 /* ── scrivere ─────────────────────────────────────────────── */
 async function invia(){
   const chi=document.getElementById('chi').value.trim();
   const testo=(document.getElementById('testoNota')?.value||'').trim();
   const e=document.getElementById('esitoNota');
-  if(!chi){ e.textContent='Scrivi il tuo nome in cima.'; document.getElementById('chi').focus(); return; }
+  if(!chiValido()){
+    e.textContent='Scrivi nome e cognome in cima: le note restano firmate.';
+    document.getElementById('chi').focus(); controllaChi(); return; }
   if(!testo){ e.textContent='La nota è vuota.'; return; }
   e.textContent='Attacco…';
   try{
