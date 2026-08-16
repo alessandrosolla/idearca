@@ -864,4 +864,453 @@ const BANCA2 = [
     {tipo:'nuvola', testo:'Alla fine: una parola per dire a che cosa serve un errore.'}
   ]
 }
+,
+{
+  titolo: 'Filosofia contemporanea · 1 — Schopenhauer',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: quando ottieni una cosa che desideravi molto, che cosa provi il giorno dopo?'},
+
+    {tipo:'scelta', testo:'Che cosa vede l\'uomo, secondo Schopenhauer, finché resta nella rappresentazione?',
+     opzioni:['Un mondo ordinato dalle sue forme mentali, non il mondo vero',
+              'Il mondo esattamente come è fatto in sé stesso',
+              'Un mondo privo di ordine, disordinato e caotico',
+              'Solo le proprie idee, senza nessun oggetto esterno'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché il corpo è per Schopenhauer un caso speciale?',
+     opzioni:['Lo conosciamo da fuori come oggetto e da dentro come volontà',
+              'È l\'unico oggetto che non occupa spazio né tempo',
+              'È l\'unica cosa che non cambia mai nel corso della vita',
+              'È l\'unico oggetto che i sensi colgono senza errore'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa vuol dire che la volontà è «unica»?',
+     opzioni:['È la stessa in una quercia e in un milione di querce',
+              'Ogni individuo ne possiede una porzione diversa',
+              'Esiste una sola persona che la possiede davvero',
+              'Si manifesta una volta sola nella storia del mondo'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa significa che la volontà è «senza scopo»?',
+     opzioni:['Non ha nessuna meta oltre sé stessa: la vita vuole solo la vita',
+              'Non riesce a raggiungere gli scopi che si propone',
+              'Cambia scopo continuamente, senza mai fermarsi',
+              'Ha uno scopo che noi non riusciamo a conoscere'], giusta:0},
+
+    {tipo:'scelta', testo:'Come descrive Schopenhauer l\'oscillazione della vita umana?',
+     opzioni:['Fra il dolore del desiderio e la noia di averlo soddisfatto',
+              'Fra il piacere dei sensi e quello dell\'intelligenza',
+              'Fra la fatica del lavoro e il riposo che la ripaga',
+              'Fra la speranza del futuro e il ricordo del passato'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è la prima delle tre vie di liberazione dal dolore?',
+     opzioni:['L\'arte, che sospende per un momento il volere',
+              'La politica, che riordina la vita in comune',
+              'La scienza, che spiega le cause della sofferenza',
+              'Il lavoro, che distrae dalla propria condizione'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa fa l\'asceta, nell\'ultima via indicata da Schopenhauer?',
+     opzioni:['Smette di volere, spegnendo in sé la volontà di vivere',
+              'Cerca il piacere più intenso possibile fino alla fine',
+              'Si dedica al bene degli altri restando nel mondo',
+              'Contempla la natura per capirne le leggi nascoste'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché Schopenhauer chiama l\'intelletto una manifestazione «secondaria»?',
+     opzioni:['Perché nasce al servizio della volontà, che viene prima',
+              'Perché appare tardi nella storia dell\'evoluzione',
+              'Perché è meno affidabile dei sensi nel conoscere',
+              'Perché si sviluppa solo in alcuni uomini e non in tutti'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa c\'è dietro il velo.'}
+  ]
+},
+{
+  titolo: 'Filosofia contemporanea · 2 — Kierkegaard',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: hai mai avuto paura non di una cosa, ma di quello che potresti fare?'},
+
+    {tipo:'scelta', testo:'Che cosa vuol dire che per Kierkegaard l\'esistenza è possibilità?',
+     opzioni:['L\'uomo non ha un destino già scritto: è ciò che sceglie',
+              'L\'uomo può realizzare tutto quello che desidera',
+              'L\'uomo conosce in anticipo le proprie possibilità',
+              'L\'uomo è determinato dalla società in cui nasce'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché ogni scelta, per Kierkegaard, è dolorosa?',
+     opzioni:['Perché ogni «sì» porta con sé infiniti «no»',
+              'Perché non abbiamo mai abbastanza informazioni',
+              'Perché gli altri giudicheranno quello che decidiamo',
+              'Perché una scelta si può sempre annullare'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è l\'oggetto dell\'angoscia?',
+     opzioni:['Il nulla, cioè la possibilità come tale',
+              'Un pericolo reale e ben individuato',
+              'Il ricordo di un male già subito',
+              'Il giudizio degli altri sulla nostra vita'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché Kierkegaard dice che chi non prova angoscia «è angelo o bestia»?',
+     opzioni:['Perché l\'angoscia è il sentimento proprio dell\'uomo',
+              'Perché solo i santi e gli animali sono davvero liberi',
+              'Perché l\'angoscia è un difetto da curare',
+              'Perché gli uomini semplici non pensano al futuro'], giusta:0},
+
+    {tipo:'scelta', testo:'Davanti a che cosa si trova l\'uomo nell\'angoscia, e davanti a che cosa nella disperazione?',
+     opzioni:['Nell\'angoscia davanti al mondo, nella disperazione davanti a sé',
+              'Nell\'angoscia davanti a sé, nella disperazione davanti a Dio',
+              'Nell\'angoscia davanti alla morte, nella disperazione al dolore',
+              'Nell\'angoscia davanti agli altri, nella disperazione al futuro'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché dalla disperazione non si può fuggire?',
+     opzioni:['Sarebbe come cercare di sfuggire alla propria ombra',
+              'Perché nessuno ci aiuta quando siamo disperati',
+              'Perché la società non permette di cambiare vita',
+              'Perché non dura mai abbastanza per essere capita'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa richiede il passaggio allo stadio religioso?',
+     opzioni:['Un salto, non una dimostrazione: si crede senza garanzie',
+              'Un ragionamento che dimostri l\'esistenza di Dio',
+              'L\'appartenenza a una comunità che ne certifichi la fede',
+              'Il rispetto scrupoloso di tutte le regole morali'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa difende Kierkegaard contro il sistema di Hegel?',
+     opzioni:['Il singolo, che nessuna totalità può contenere',
+              'Lo Stato, che dà forma alla vita degli individui',
+              'La storia, che spiega ogni destino individuale',
+              'La ragione, che riconcilia tutte le contraddizioni'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa si prova davanti a una scelta vera.'}
+  ]
+},
+{
+  titolo: 'Filosofia contemporanea · 4 — Karl Marx',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: chi lavora otto ore al giorno, di chi è il prodotto che esce dalle sue mani?'},
+
+    {tipo:'scelta', testo:'Che cosa vuol dire che il lavoratore è alienato dal prodotto?',
+     opzioni:['Ciò che produce non gli appartiene e gli sta di fronte come estraneo',
+              'Non riesce a capire come funziona la macchina che usa',
+              'Non prova nessun interesse per il proprio mestiere',
+              'Non conosce i compagni con cui divide il lavoro'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché per Marx la religione è «l\'oppio dei popoli»?',
+     opzioni:['Consola della sofferenza invece di toglierne le cause',
+              'È stata inventata dai potenti per divertire il popolo',
+              'Impedisce agli uomini di conoscere la natura',
+              'Rende gli uomini violenti gli uni contro gli altri'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa intende Marx per «struttura» di una società?',
+     opzioni:['I rapporti di produzione, cioè come si produce e chi possiede',
+              'Le leggi e le istituzioni che la governano',
+              'Le idee e i valori condivisi dai suoi membri',
+              'Il modo in cui le città sono costruite e organizzate'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è il valore di una merce, nell\'analisi di Marx?',
+     opzioni:['Il lavoro socialmente necessario per produrla',
+              'Il prezzo che il compratore è disposto a pagare',
+              'L\'utilità che quella merce ha per chi la usa',
+              'La rarità della materia prima con cui è fatta'], giusta:0},
+
+    {tipo:'scelta', testo:'Da dove nasce il profitto del capitalista?',
+     opzioni:['Dal lavoro non pagato che resta dopo il salario',
+              'Dalla vendita della merce a un prezzo superiore al valore',
+              'Dal risparmio ottenuto comprando materie prime a poco',
+              'Dall\'interesse che le banche gli riconoscono'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa succede al saggio di profitto quando cresce la meccanizzazione?',
+     opzioni:['Tende a calare, perché il profitto nasce dal lavoro vivo',
+              'Cresce, perché le macchine producono di più',
+              'Resta identico, perché i prezzi si adeguano da soli',
+              'Diventa impossibile da calcolare per il capitalista'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è per Marx la coscienza di classe?',
+     opzioni:['Il momento in cui gli sfruttati si riconoscono come gruppo',
+              'La consapevolezza che ogni operaio ha del proprio mestiere',
+              'Il senso di appartenenza a una nazione',
+              'La cultura che il capitalista trasmette ai suoi dipendenti'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché per Marx la storia non è la storia delle idee?',
+     opzioni:['Perché le idee nascono dai rapporti materiali fra gli uomini',
+              'Perché gli uomini non hanno mai avuto idee originali',
+              'Perché le idee cambiano troppo in fretta per essere studiate',
+              'Perché solo pochi uomini colti hanno lasciato scritti'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa perde chi lavora in una catena di montaggio.'}
+  ]
+},
+{
+  titolo: 'Filosofia contemporanea · 8 — Nietzsche: la demistificazione',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: la storia serve a vivere meglio o può anche schiacciarci?'},
+
+    {tipo:'scelta', testo:'Perché Nietzsche scrive per aforismi invece che per sistemi?',
+     opzioni:['Perché il sistema è un\'illusione di controllo sulla realtà',
+              'Perché non aveva tempo di scrivere opere lunghe',
+              'Perché voleva rivolgersi a lettori senza istruzione',
+              'Perché l\'aforisma è la forma usata dai greci antichi'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa scopre Nietzsche dietro la «serena armonia» della Grecia classica?',
+     opzioni:['Un campo di battaglia fra due impulsi opposti',
+              'Una società pacifica basata sul commercio',
+              'Una religione severa che vietava le arti',
+              'Un popolo poco interessato alla bellezza'], giusta:0},
+
+    {tipo:'scelta', testo:'Quali arti Nietzsche associa al dionisiaco?',
+     opzioni:['La musica, la danza e la lirica',
+              'La scultura, l\'architettura e la poesia epica',
+              'La pittura, il mosaico e il ritratto',
+              'Il teatro comico e la commedia popolare'], giusta:0},
+
+    {tipo:'scelta', testo:'Secondo Nietzsche, di che cosa muore la tragedia greca?',
+     opzioni:['Di suicidio: la uccide il razionalismo che nasce dentro di essa',
+              'Di assassinio: la sopprimono i tiranni al potere',
+              'Di vecchiaia: il pubblico si stanca di andarci',
+              'Di povertà: le città non riescono più a finanziarla'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa introduce Socrate, per Nietzsche, nella cultura greca?',
+     opzioni:['L\'uomo teoretico, convinto che la vita vada capita per essere vissuta',
+              'L\'uomo religioso, che si affida agli oracoli della città',
+              'L\'uomo politico, che discute le leggi in assemblea',
+              'L\'uomo tragico, che accetta il proprio destino'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa fa la storia «monumentale», e qual è il suo pericolo?',
+     opzioni:['Cerca modelli nel passato, e rischia il fanatismo del mito',
+              'Conserva le radici, e rischia di mummificare il presente',
+              'Giudica il passato, e rischia di dimenticare da dove veniamo',
+              'Racconta i fatti in ordine, e rischia di annoiare chi legge'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è il pericolo della storia «antiquaria»?',
+     opzioni:['Venerare le radici fino a non riuscire più a creare nulla',
+              'Cercare eroi nel passato fino a idolatrarli',
+              'Condannare il passato dimenticando che ne siamo figli',
+              'Ridurre la storia a una raccolta di date da imparare'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché Nietzsche non è il filosofo del nazismo, come si è a lungo creduto?',
+     opzioni:['La sorella manipolò i suoi scritti inediti dopo la sua morte',
+              'Non scrisse mai nulla sulla politica del suo tempo',
+              'Le sue opere furono pubblicate solo nel dopoguerra',
+              'Il regime lo mise all\'indice fra gli autori proibiti'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire quando la storia diventa un peso.'}
+  ]
+},
+{
+  titolo: 'Filosofia contemporanea · 9 — Nietzsche: Zarathustra e l\'eterno ritorno',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: se un demone ti dicesse che rivivrai questa giornata infinite volte, che faccia faresti?'},
+
+    {tipo:'scelta', testo:'Che differenza c\'è fra il tempo lineare e il tempo ciclico di Nietzsche?',
+     opzioni:['Nel primo il presente vale come mezzo, nel secondo vale per sé',
+              'Nel primo il tempo scorre, nel secondo resta fermo',
+              'Nel primo il tempo è misurabile, nel secondo no',
+              'Nel primo esiste il futuro, nel secondo solo il passato'], giusta:0},
+
+    {tipo:'scelta', testo:'Come reagisce l\'uomo debole davanti all\'eterno ritorno?',
+     opzioni:['Con terrore: dovrebbe rivivere tutto, anche il dolore',
+              'Con indifferenza: non gli interessa il proprio passato',
+              'Con speranza: pensa che la prossima volta andrà meglio',
+              'Con curiosità: vuole sapere come finirà la storia'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa afferma la «favola del mondo vero» smascherata da Nietzsche?',
+     opzioni:['Che esiste un mondo perfetto altrove, per cui questo vale meno',
+              'Che il mondo che vediamo è l\'unico esistente',
+              'Che il mondo è nato da un caso senza ordine',
+              'Che il mondo si ripete identico all\'infinito'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa succede all\'idea di «mondo apparente» quando cade quella di «mondo vero»?',
+     opzioni:['Cade anch\'essa: resta solo la terra, con piena dignità',
+              'Diventa l\'unico mondo vero al posto dell\'altro',
+              'Resta in piedi, ma senza più nessun valore',
+              'Si trasforma in un terzo mondo, intermedio'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa distingue la morale dei signori da quella degli schiavi?',
+     opzioni:['La prima afferma la forza, la seconda fa virtù della debolezza',
+              'La prima obbedisce alle leggi, la seconda le infrange',
+              'La prima riguarda i ricchi, la seconda i poveri',
+              'La prima è antica, la seconda è nata nell\'Ottocento'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è la volontà di potenza, se non è dominio sugli altri?',
+     opzioni:['L\'energia con cui la vita supera sé stessa e si crea',
+              'L\'istinto di conservare la propria forma e sopravvivere',
+              'Il desiderio di comandare gli uomini più deboli',
+              'La forza con cui la ragione tiene a freno gli istinti'], giusta:0},
+
+    {tipo:'scelta', testo:'In che senso il nichilismo può essere «attivo»?',
+     opzioni:['Accelera il crollo delle vecchie credenze per fare spazio',
+              'Rinuncia a ogni valore e si ritira dal mondo',
+              'Sostituisce i vecchi idoli con idoli nuovi',
+              'Nega che i valori siano mai esistiti davvero'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa afferma il prospettivismo di Nietzsche?',
+     opzioni:['Non esistono fatti, ma solo interpretazioni',
+              'Ogni interpretazione vale quanto le altre, quindi nessuna conta',
+              'Solo la scienza offre un punto di vista affidabile',
+              'La verità esiste ma è riservata a pochi'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa vuol dire dire di sì alla propria vita.'}
+  ]
+},
+{
+  titolo: 'Filosofia contemporanea · 10 — Freud e la psicoanalisi',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: ti è mai sfuggita una parola che non volevi dire?'},
+
+    {tipo:'scelta', testo:'Quali sono i tre livelli della prima topica freudiana?',
+     opzioni:['Conscio, preconscio e inconscio',
+              'Es, Io e Super-io',
+              'Sensazione, memoria e ragione',
+              'Piacere, realtà e dovere'], giusta:0},
+
+    {tipo:'scelta', testo:'Che differenza c\'è fra preconscio e inconscio?',
+     opzioni:['Il preconscio si richiama con attenzione, l\'inconscio è sbarrato',
+              'Il preconscio riguarda i sogni, l\'inconscio la veglia',
+              'Il preconscio è personale, l\'inconscio è collettivo',
+              'Il preconscio nasce da adulti, l\'inconscio da bambini'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è la rimozione?',
+     opzioni:['La forza che tiene fuori dalla coscienza ciò che è intollerabile',
+              'La cancellazione definitiva di un ricordo doloroso',
+              'La sostituzione di un desiderio con un altro più accettabile',
+              'Il ritorno improvviso di un ricordo dimenticato'], giusta:0},
+
+    {tipo:'scelta', testo:'Come funziona il metodo delle libere associazioni?',
+     opzioni:['Il paziente segue il corso dei pensieri senza controllarli',
+              'L\'analista suggerisce parole e il paziente risponde',
+              'Il paziente racconta la propria vita in ordine cronologico',
+              'L\'analista interpreta i gesti invece delle parole'], giusta:0},
+
+    {tipo:'scelta', testo:'Che rapporto c\'è fra contenuto latente e contenuto manifesto di un sogno?',
+     opzioni:['Il latente è il desiderio, il manifesto la scena che ricordiamo',
+              'Il latente è ciò che ricordiamo, il manifesto ciò che dimentichiamo',
+              'Il latente riguarda il passato, il manifesto il futuro',
+              'Il latente è comune a tutti, il manifesto è personale'], giusta:0},
+
+    {tipo:'scelta', testo:'Quali sono, in ordine, le fasi della libido infantile?',
+     opzioni:['Orale, anale, fallica, latenza, genitale',
+              'Anale, orale, genitale, fallica, latenza',
+              'Orale, fallica, anale, genitale, latenza',
+              'Latenza, orale, anale, fallica, genitale'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è la sublimazione?',
+     opzioni:['L\'energia sessuale deviata verso mete come l\'arte o il lavoro',
+              'La rinuncia definitiva a ogni forma di desiderio',
+              'Il ritorno a una fase precedente dello sviluppo',
+              'Il passaggio di un ricordo dall\'inconscio al conscio'], giusta:0},
+
+    {tipo:'scelta', testo:'Su che cosa Adler si stacca da Freud?',
+     opzioni:['Mette al centro la volontà di potenza, non la libido',
+              'Nega che esista un inconscio nella mente umana',
+              'Ritiene che i sogni non abbiano alcun significato',
+              'Sostiene che le nevrosi siano di origine ereditaria'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa scopre chi si mette ad ascoltare i propri sogni.'}
+  ]
+},
+{
+  titolo: 'Filosofia contemporanea · 12 — Heidegger e l\'ermeneutica',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: quante cose fai in un giorno perché «si fa così»?'},
+
+    {tipo:'scelta', testo:'Qual è la domanda da cui parte Heidegger?',
+     opzioni:['Che cosa significa «essere»',
+              'Che cosa possiamo conoscere con certezza',
+              'Come si deve vivere per essere felici',
+              'Se Dio esista o non esista'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché Heidegger sceglie l\'uomo come punto di partenza?',
+     opzioni:['È l\'unico ente che si pone la domanda sul proprio essere',
+              'È l\'ente più complesso che esista in natura',
+              'È l\'unico ente capace di parlare una lingua',
+              'È l\'ente che si trova al centro del creato'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa vuol dire che l\'essenza dell\'Esserci è la sua esistenza?',
+     opzioni:['Non è una cosa data, ma un continuo stare fuori nel possibile',
+              'L\'uomo esiste prima di avere una natura biologica',
+              'L\'esistenza si dimostra prima di ogni altra cosa',
+              'L\'uomo è definito dal luogo e dal tempo in cui vive'], giusta:0},
+
+    {tipo:'scelta', testo:'Quali sono i tre sintomi della vita inautentica?',
+     opzioni:['Chiacchiera, curiosità, equivoco',
+              'Angoscia, noia, disperazione',
+              'Paura, fuga, dimenticanza',
+              'Abitudine, pigrizia, indifferenza'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è la «deiezione»?',
+     opzioni:['La caduta dell\'uomo nell\'assorbimento superficiale delle cose',
+              'Il rifiuto della società e il ritiro in solitudine',
+              'La perdita della memoria del proprio passato',
+              'La condanna morale che gli altri pronunciano su di noi'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa vuol dire «essere-per-la-morte»?',
+     opzioni:['Assumere la morte come possibilità propria e insuperabile',
+              'Vivere ossessionati dal pensiero di dover morire',
+              'Rinunciare a ogni progetto perché tanto si muore',
+              'Cercare di ritardare la morte con ogni mezzo'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa apre la «decisione anticipatrice»?',
+     opzioni:['Una libertà appassionata, che nasce dall\'accettare la finitudine',
+              'La certezza di quanto tempo ci resta da vivere',
+              'La possibilità di scegliere il momento della propria fine',
+              'Il distacco da ogni cosa e da ogni persona'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa mette al centro Heidegger analizzando la temporalità?',
+     opzioni:['Il futuro: l\'uomo è anzitutto progetto',
+              'Il passato: l\'uomo è anzitutto memoria',
+              'Il presente: l\'uomo è anzitutto percezione',
+              'L\'eternità: l\'uomo è anzitutto desiderio di durare'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa rende una vita «tua».'}
+  ]
+},
+{
+  titolo: 'Filosofia contemporanea · 13 — Jaspers e Sartre: la filosofia dell\'esistenza',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: c\'è qualcosa che nessuna scienza potrà mai spiegarti di te?'},
+
+    {tipo:'scelta', testo:'Che cosa può e che cosa non può fare la scienza, secondo Jaspers?',
+     opzioni:['Orienta nel mondo, ma non coglie l\'essere di chi esiste',
+              'Spiega la natura, ma non riesce a prevederne i fenomeni',
+              'Descrive i fatti, ma non sa metterli in ordine',
+              'Studia il passato, ma non può dire nulla del futuro'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché le situazioni-limite si chiamano così?',
+     opzioni:['Sono muri che non si possono né evitare né superare',
+              'Sono situazioni rare che capitano a pochissimi',
+              'Sono i limiti che la legge impone alla libertà',
+              'Sono i confini oltre i quali la scienza non indaga'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa rivela il naufragio, per Jaspers?',
+     opzioni:['Il fallimento di ogni pretesa di dominare l\'essere',
+              'Che l\'uomo non ha mai avuto alcuna libertà',
+              'Che la scienza è l\'unica via che resta',
+              'Che ogni scelta si equivale, quindi tanto vale non scegliere'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è l\'essere in-sé per Sartre?',
+     opzioni:['L\'essere pieno e opaco delle cose, che è semplicemente quello che è',
+              'L\'essere della coscienza, che sfugge a ogni definizione',
+              'L\'essere di Dio, che fonda tutti gli altri',
+              'L\'essere che l\'uomo raggiunge quando si realizza'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché Sartre dice che nell\'uomo c\'è un «nulla»?',
+     opzioni:['Perché la coscienza è mancanza, e per questo è libera',
+              'Perché l\'uomo non conta nulla nell\'universo',
+              'Perché dopo la morte non resta nulla di noi',
+              'Perché senza Dio la vita non ha nessun valore'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa segue, per Sartre, dal fatto che non esiste una natura umana?',
+     opzioni:['L\'uomo è condannato a inventarsi, senza scuse e senza alibi',
+              'L\'uomo può comportarsi come vuole senza conseguenze',
+              'Ogni uomo è determinato dall\'ambiente in cui cresce',
+              'Nessuno può essere giudicato per ciò che fa'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché Sartre dice che scegliendo per sé si sceglie per tutti?',
+     opzioni:['Ogni scelta propone un\'immagine di come dovrebbe essere l\'uomo',
+              'Perché le nostre azioni influenzano chi ci sta vicino',
+              'Perché la legge nasce dal comportamento della maggioranza',
+              'Perché siamo tutti membri di una stessa società'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché per Sartre il conflitto con gli altri non si risolve?',
+     opzioni:['Ognuno vorrebbe la solidità dell\'in-sé senza perdere la libertà',
+              'Perché gli uomini vogliono tutti le stesse cose materiali',
+              'Perché nessuno riesce davvero a comunicare con nessuno',
+              'Perché le società sono organizzate in modo ingiusto'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa vuol dire essere responsabili di sé.'}
+  ]
+}
 ];
