@@ -1650,4 +1650,566 @@ const BANCA2 = [
     {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa deve fare uno Stato che rispetta i suoi cittadini.'}
   ]
 }
+,
+{
+  titolo: 'Filosofia moderna · 17 — I caratteri dell\'Illuminismo',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: c\'è qualcosa che accetti solo perché te l\'hanno sempre detto?'},
+
+    {tipo:'scelta', testo:'Quali sono le tre premesse storiche dell\'Illuminismo?',
+     opzioni:['La civiltà borghese, il Rinascimento e la rivoluzione scientifica',
+              'La Riforma, le guerre di religione e l\'assolutismo',
+              'Le scoperte geografiche, la stampa e il colonialismo',
+              'La peste, la crisi del Trecento e la fine del feudalesimo'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa porta la civiltà borghese dentro l\'Illuminismo?',
+     opzioni:['Il valore del progresso sociale ed economico',
+              'Il rispetto per le gerarchie ereditarie',
+              'L\'idea che la ricchezza vada distribuita in parti uguali',
+              'La convinzione che il lavoro manuale sia superiore'], giusta:0},
+
+    {tipo:'scelta', testo:'Quali sono i due ruoli che la ragione svolge per gli illuministi?',
+     opzioni:['Eversivo verso i pregiudizi e direttivo verso il sapere nuovo',
+              'Contemplativo verso Dio e pratico verso la politica',
+              'Critico verso la scienza e fiducioso verso la tradizione',
+              'Analitico nei calcoli e intuitivo nelle scelte morali'], giusta:0},
+
+    {tipo:'scelta', testo:'In che senso la ragione illuminista è «eversiva»?',
+     opzioni:['Smonta pregiudizi, fanatismo e oscurantismo ereditati dal passato',
+              'Incita i popoli alla rivolta armata contro i sovrani',
+              'Rifiuta ogni forma di sapere organizzato',
+              'Nega che si possa raggiungere qualche verità'], giusta:0},
+
+    {tipo:'scelta', testo:'Come si allarga la tolleranza da Locke a Voltaire?',
+     opzioni:['Da tolleranza religiosa a tolleranza civile, che include atei e cattolici',
+              'Da tolleranza civile a tolleranza soltanto religiosa',
+              'Da una tolleranza universale a una riservata ai cristiani',
+              'Da una tolleranza teorica a una imposta per legge'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa escludeva la tolleranza di Locke?',
+     opzioni:['I cattolici e gli atei',
+              'I protestanti e gli ebrei',
+              'Gli stranieri e i mercanti',
+              'I contadini e gli analfabeti'], giusta:0},
+
+    {tipo:'scelta', testo:'Quali sono i tre valori sociali dell\'Illuminismo?',
+     opzioni:['Uguaglianza, libertà, tolleranza',
+              'Ordine, disciplina, obbedienza',
+              'Fede, speranza, carità',
+              'Onore, gloria, virtù militare'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è il fine politico dell\'Illuminismo?',
+     opzioni:['Uno Stato laico e di diritto che difenda i diritti naturali',
+              'Una monarchia assoluta che garantisca l\'ordine',
+              'Una repubblica retta dai soli filosofi',
+              'Una federazione di città indipendenti'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire contro che cosa serve, oggi, la ragione.'}
+  ]
+},
+{
+  titolo: 'Filosofia moderna · 18 — Rousseau',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: avere più cose ci ha resi più liberi o più dipendenti?'},
+
+    {tipo:'scelta', testo:'Qual è il paradosso del primo Discorso di Rousseau?',
+     opzioni:['Le arti e le scienze, che dovevano migliorarci, hanno corrotto i costumi',
+              'Le arti e le scienze hanno migliorato l\'uomo più del previsto',
+              'Le arti sono utili ma le scienze sono dannose',
+              'Il progresso è utile solo per chi lo può pagare'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa spinge l\'uomo fuori dallo stato originario?',
+     opzioni:['La libertà e la tendenza naturale a perfezionarsi',
+              'La scarsità di cibo e il freddo',
+              'L\'ordine dato da un capo più forte',
+              'La curiosità per le terre lontane'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa nasce con la «prima rivoluzione», secondo Rousseau?',
+     opzioni:['Le famiglie e le prime tribù, con i primi confronti fra persone',
+              'La proprietà privata della terra e la sua divisione',
+              'Le prime leggi scritte e i primi tribunali',
+              'Il commercio a lunga distanza e la moneta'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa provoca la «grande rivoluzione»?',
+     opzioni:['L\'agricoltura e la metallurgia, che impongono di dividere la terra',
+              'L\'invenzione della scrittura, che crea le classi colte',
+              'La nascita delle religioni organizzate',
+              'La costruzione delle prime città fortificate'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa cambia nelle opere della maturità rispetto ai Discorsi?',
+     opzioni:['Dalla denuncia della corruzione passa a progettare soluzioni concrete',
+              'Abbandona la politica per dedicarsi solo alla botanica',
+              'Rinnega quanto aveva scritto sulla disuguaglianza',
+              'Passa dalla filosofia al romanzo di puro intrattenimento'], giusta:0},
+
+    {tipo:'scelta', testo:'Che conseguenza ha attribuire all\'uomo, e non a Dio, la causa del male sociale?',
+     opzioni:['Che l\'uomo stesso ha il potere di porvi rimedio',
+              'Che il male è destinato a restare per sempre',
+              'Che la religione va abolita del tutto',
+              'Che nessuno può essere ritenuto responsabile'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa fa il maestro nell\'educazione negativa dell\'Emilio?',
+     opzioni:['Predispone l\'ambiente invece di imporre nozioni e precetti',
+              'Corregge ogni errore dell\'allievo appena si presenta',
+              'Insegna prima le regole morali e poi le nozioni',
+              'Lascia l\'allievo completamente a sé stesso'], giusta:0},
+
+    {tipo:'scelta', testo:'Come impara l\'allievo, in questo metodo?',
+     opzioni:['Subendo le conseguenze naturali delle proprie azioni',
+              'Ripetendo a memoria quanto il maestro gli detta',
+              'Osservando il comportamento degli adulti in società',
+              'Ricevendo premi quando si comporta bene'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa perde chi si abitua a confrontarsi con gli altri.'}
+  ]
+},
+{
+  titolo: 'Filosofia moderna · 24 — Il Romanticismo',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: hai mai desiderato una cosa che non sapresti nemmeno nominare?'},
+
+    {tipo:'scelta', testo:'Quali vie propongono i romantici per accedere all\'Assoluto?',
+     opzioni:['Il sentimento, l\'arte e l\'amore, oltre a una ragione dialettica',
+              'Il calcolo matematico e l\'osservazione sperimentale',
+              'La rivelazione religiosa e l\'obbedienza alla Chiesa',
+              'La tradizione tramandata e il rispetto delle autorità'], giusta:0},
+
+    {tipo:'scelta', testo:'Come vivono i romantici il rapporto con i propri limiti?',
+     opzioni:['Come uno Streben: uno sforzo continuo di superarli',
+              'La quiete raggiunta dopo aver ottenuto ciò che si voleva',
+              'Il rifiuto di ogni impegno nel mondo',
+              'La forza con cui la natura si conserva'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa nomina la Sehnsucht?',
+     opzioni:['Una nostalgia indefinibile per un assoluto che sfugge sempre',
+              'Il ricordo preciso della propria terra d\'origine',
+              'La tristezza che segue una perdita concreta',
+              'Il desiderio di una vita tranquilla e ordinata'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa mette a fuoco l\'ironia romantica?',
+     opzioni:['La sproporzione fra l\'infinito a cui si aspira e i mezzi finiti',
+              'Il ridicolo che si nasconde in ogni cosa seria',
+              'L\'incapacità degli altri di capire l\'artista',
+              'La distanza fra il passato glorioso e il presente'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa caratterizza l\'atteggiamento titanico?',
+     opzioni:['Sfidare forze superiori pur sapendo che si perderà',
+              'Rinunciare alla lotta quando la sconfitta è certa',
+              'Cercare la gloria senza correre rischi reali',
+              'Affidarsi al destino senza opporre resistenza'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa rifiuta l\'organicismo romantico?',
+     opzioni:['Il meccanicismo: la natura non è una macchina di parti isolate',
+              'L\'idea che la natura abbia leggi proprie',
+              'Lo studio scientifico degli esseri viventi',
+              'La convinzione che la natura sia in movimento'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa afferma il panteismo romantico?',
+     opzioni:['Il divino coincide con la natura e agisce dinamicamente in essa',
+              'Il divino è del tutto separato dal mondo naturale',
+              'Il divino esiste solo nella coscienza degli uomini',
+              'Il divino si manifesta unicamente nella storia'], giusta:0},
+
+    {tipo:'scelta', testo:'Come guardano i romantici alla storia?',
+     opzioni:['Come una concatenazione di eventi complessivamente positiva',
+              'Come una successione di fatti senza alcun senso',
+              'Come un lento decadere rispetto al mondo antico',
+              'Come un ciclo che si ripete sempre uguale'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa si prova a desiderare l\'infinito.'}
+  ]
+},
+{
+  titolo: 'Filosofia moderna · 25 — Fichte',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: sei più il risultato di quello che ti succede o di quello che fai?'},
+
+    {tipo:'scelta', testo:'Che differenza c\'è fra l\'Io di Kant e quello di Fichte?',
+     opzioni:['In Kant è finito e ordina il conoscere, in Fichte è infinito e crea',
+              'In Kant è infinito e creatore, in Fichte è finito e passivo',
+              'In Kant è individuale, in Fichte è collettivo',
+              'In Kant è materiale, in Fichte è spirituale'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa impediva a Kant, secondo Fichte, di arrivare all\'Io infinito?',
+     opzioni:['Il limite esterno della cosa in sé',
+              'Il rifiuto della matematica come modello',
+              'L\'attaccamento alla religione tradizionale',
+              'La convinzione che lo spazio fosse reale'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa vuol dire Tathandlung?',
+     opzioni:['L\'Io è insieme l\'azione e il suo prodotto: è ciò che fa',
+              'L\'azione morale deve precedere ogni conoscenza',
+              'Il pensiero deve tradursi in azione politica',
+              'Ogni azione lascia una traccia nella storia'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa significa la formula «esse sequitur operari»?',
+     opzioni:['L\'essere segue dall\'agire, non il contrario',
+              'L\'agire segue dall\'essere che ci è dato',
+              'L\'essere e l\'agire sono indipendenti fra loro',
+              'Chi agisce bene ottiene un essere migliore'], giusta:0},
+
+    {tipo:'scelta', testo:'Quali sono i due punti di partenza del «grande bivio filosofico»?',
+     opzioni:['Il soggetto per l\'idealismo, l\'oggetto per il dogmatismo',
+              'La natura per l\'idealismo, lo spirito per il dogmatismo',
+              'Dio per l\'idealismo, la materia per il dogmatismo',
+              'La ragione per l\'idealismo, la fede per il dogmatismo'], giusta:0},
+
+    {tipo:'scelta', testo:'A che cosa porta il dogmatismo, secondo Fichte?',
+     opzioni:['Al fatalismo: l\'Io diventa un prodotto delle forze naturali',
+              'Alla libertà assoluta del soggetto',
+              'Al dubbio su ogni conoscenza possibile',
+              'Alla fede religiosa come unica via'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché scegliere l\'idealismo non è solo una questione logica?',
+     opzioni:['È un atto morale: dipende dal tipo d\'uomo che si è',
+              'Perché nessuna delle due posizioni è dimostrabile',
+              'Perché la logica non riguarda la filosofia',
+              'Perché dipende dall\'epoca in cui si vive'], giusta:0},
+
+    {tipo:'scelta', testo:'Quali sono, in ordine, i gradi con cui il mondo viene interiorizzato?',
+     opzioni:['Sensazione, intuizione, intelletto, giudizio, ragione',
+              'Ragione, giudizio, intelletto, intuizione, sensazione',
+              'Intuizione, sensazione, ragione, intelletto, giudizio',
+              'Sensazione, intelletto, intuizione, ragione, giudizio'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire perché due persone scelgono filosofie diverse.'}
+  ]
+},
+{
+  titolo: 'Filosofia moderna · 27 — Hegel: i fondamenti del sistema',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: la filosofia deve dire come dovrebbe andare il mondo, o capire come va?'},
+
+    {tipo:'scelta', testo:'Qual è l\'obiettivo che percorre tutta l\'opera giovanile di Hegel?',
+     opzioni:['Superare la scissione fra individuo, natura e Dio',
+              'Dimostrare l\'esistenza di Dio con argomenti nuovi',
+              'Fondare una religione civile per il popolo tedesco',
+              'Riportare la filosofia alla forma dei dialoghi antichi'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è il finito per Hegel?',
+     opzioni:['Una manifestazione parziale e momentanea dell\'infinito',
+              'Una realtà indipendente accanto all\'infinito',
+              'Un\'illusione che il pensiero deve eliminare',
+              'Il solo oggetto di cui possiamo avere conoscenza'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa afferma la formula «ciò che è razionale è reale»?',
+     opzioni:['La realtà obbedisce a un\'architettura logica rigorosa',
+              'Tutto ciò che esiste è giusto e va accettato',
+              'Solo le idee chiare hanno diritto di esistere',
+              'La ragione umana crea da sé la realtà'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa contrappone Hegel all\'intuizione dei romantici?',
+     opzioni:['La fatica del concetto',
+              'Il sentimento educato dall\'arte',
+              'L\'osservazione empirica dei fatti',
+              'La fede nella rivelazione'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è, per Hegel, l\'unico compito della filosofia?',
+     opzioni:['Giustificare razionalmente la realtà che si è già dispiegata',
+              'Progettare la società futura nei suoi dettagli',
+              'Dettare al mondo come dovrebbe essere',
+              'Descrivere i fatti senza interpretarli'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa dice la metafora della nottola di Minerva?',
+     opzioni:['La filosofia comprende un\'epoca solo quando è ormai compiuta',
+              'La filosofia deve precedere e guidare la storia',
+              'La sapienza si raggiunge solo in vecchiaia',
+              'Il pensiero è più chiaro nelle ore notturne'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché la conciliazione hegeliana non è un semplice ritorno all\'unità?',
+     opzioni:['Perché conserva le differenze dentro un\'unità più alta',
+              'Perché cancella le differenze fino a farle sparire',
+              'Perché lascia le differenze dove sono, senza unirle',
+              'Perché rimanda l\'unità a un futuro indefinito'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa succede al finito quando lo si pensa da solo?',
+     opzioni:['Si rivela contraddittorio e rimanda alla totalità',
+              'Si mostra come l\'unica realtà solida',
+              'Diventa impossibile da conoscere',
+              'Si trasforma automaticamente in infinito'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire quando si capisce davvero un\'epoca.'}
+  ]
+},
+{
+  titolo: 'Filosofia moderna · 29 — Hegel: l\'Enciclopedia',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: che cosa tiene insieme una famiglia, e che cosa tiene insieme uno Stato?'},
+
+    {tipo:'scelta', testo:'Che cosa rappresenta la natura nel sistema hegeliano?',
+     opzioni:['Il momento in cui l\'Idea si aliena e si fa esteriorità',
+              'Il punto di arrivo di tutto il percorso dello Spirito',
+              'Una realtà indipendente che l\'Idea non tocca',
+              'Il primo grado della libertà umana'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché la natura, per Hegel, non possiede libertà?',
+     opzioni:['Obbedisce a una necessità gerarchica, senza scelta',
+              'Perché è governata dal caso e non da leggi',
+              'Perché è priva di ogni forma di ordine',
+              'Perché è stata creata da un Dio esterno'], giusta:0},
+
+    {tipo:'scelta', testo:'Quali sono, in ordine, i tre gradi dello spirito soggettivo?',
+     opzioni:['Anima, coscienza, spirito',
+              'Coscienza, anima, spirito',
+              'Spirito, anima, coscienza',
+              'Anima, spirito, coscienza'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa studia l\'antropologia, primo grado dello spirito soggettivo?',
+     opzioni:['L\'anima, cioè l\'emersione dello spirito dalla naturalità',
+              'Le società umane nella loro varietà storica',
+              'Il rapporto fra la coscienza e il mondo',
+              'Le forme più alte della conoscenza universale'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è la triade dello spirito oggettivo in campo etico?',
+     opzioni:['Famiglia, società civile, Stato',
+              'Individuo, popolo, umanità',
+              'Diritto, morale, religione',
+              'Lavoro, proprietà, contratto'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché la società civile è il momento dell\'antitesi?',
+     opzioni:['È la sfera del particolarismo e del conflitto di interessi',
+              'È il luogo dove i legami affettivi sono più forti',
+              'È il momento in cui lo Stato viene abolito',
+              'È la fase in cui gli uomini vivono ancora isolati'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa fa lo Stato etico, per Hegel?',
+     opzioni:['Risolve in sé il rapporto fra il singolo e il tutto',
+              'Arbitra i conflitti restando neutrale fra le parti',
+              'Garantisce che ognuno persegua il proprio interesse',
+              'Lascia alla famiglia il compito di educare i cittadini'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché l\'arte simbolica è, per Hegel, inadeguata?',
+     opzioni:['La forma sensibile non riesce ancora a contenere il contenuto',
+              'Il contenuto è troppo povero per la forma che lo esprime',
+              'Non riesce a essere compresa da chi non è iniziato',
+              'Appartiene a un\'epoca troppo recente per essere giudicata'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa dovrebbe fare uno Stato che funziona.'}
+  ]
+}
+,
+{
+  titolo: 'Filosofia antica · 5 — Platone: le Idee, l\'anima, la città',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: quando dici che due cose sono «belle», che cosa hanno in comune?'},
+
+    {tipo:'scelta', testo:'In quante fasi si divide il corpus delle opere di Platone?',
+     opzioni:['Tre: dialoghi socratici, maturità, vecchiaia',
+              'Due: dialoghi giovanili e dialoghi tardi',
+              'Quattro, una per ogni periodo dei suoi viaggi',
+              'Una sola: le opere furono scritte tutte insieme'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa fondò Platone nel 387 a.C.?',
+     opzioni:['L\'Accademia, una scuola dove si cercava il vero insieme',
+              'Il Liceo, dove si insegnava passeggiando',
+              'Il Giardino, aperto anche alle donne e agli schiavi',
+              'La Stoà, dove si insegnava sotto un portico'], giusta:0},
+
+    {tipo:'scelta', testo:'Quali caratteri ha un\'Idea platonica?',
+     opzioni:['Eterna, immutabile, semplice e separata dal sensibile',
+              'Mutevole, composta e legata al mondo dei sensi',
+              'Presente in ogni cosa e inseparabile da essa',
+              'Prodotta dalla mente umana quando pensa'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa vuol dire che le Idee sono «intelligibili»?',
+     opzioni:['Si colgono con l\'intelletto e sono inaccessibili ai sensi',
+              'Si possono spiegare a chiunque con parole semplici',
+              'Sono comprese solo da chi ha studiato molto',
+              'Si intuiscono all\'improvviso, senza ragionare'], giusta:0},
+
+    {tipo:'scelta', testo:'Con quali due termini Platone descrive il rapporto fra cose e Idee?',
+     opzioni:['Mimesis, cioè imitazione, e methexis, cioè partecipazione',
+              'Genesi, cioè nascita, e phthorá, cioè corruzione',
+              'Dýnamis, cioè potenza, e enérgheia, cioè atto',
+              'Doxa, cioè opinione, ed epistéme, cioè scienza'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa rappresentano i due cavalli della biga alata?',
+     opzioni:['Il bianco la parte volitiva, il nero le passioni corporee',
+              'Il bianco il corpo, il nero l\'anima razionale',
+              'Il bianco la vita, il nero la morte',
+              'Il bianco la ragione, il nero l\'intelletto'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché il prigioniero liberato deve tornare nella caverna?',
+     opzioni:['Per un dovere politico: liberare i compagni, rischiando la vita',
+              'Perché non riesce a sopportare a lungo la luce del sole',
+              'Perché fuori dalla caverna non c\'è nulla da fare',
+              'Perché deve recuperare gli oggetti che aveva lasciato'], giusta:0},
+
+    {tipo:'scelta', testo:'Come sono assegnate le classi sociali nella città ideale?',
+     opzioni:['In base alle attitudini naturali, non alla nascita o al censo',
+              'In base alla ricchezza posseduta dalla famiglia',
+              'Per estrazione a sorte fra tutti i cittadini',
+              'Per elezione da parte dell\'assemblea popolare'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa vede chi esce dalla caverna.'}
+  ]
+},
+{
+  titolo: 'Filosofia antica · 6 — L\'ultimo Platone',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: se dico una cosa falsa, di che cosa sto parlando?'},
+
+    {tipo:'scelta', testo:'Qual è il problema che il Parmenide solleva contro la teoria delle Idee?',
+     opzioni:['Se deve esistere un\'Idea per ogni cosa, ne servono anche di fango e sporcizia',
+              'Se le Idee sono eterne, non possono essere conosciute',
+              'Se le Idee sono molte, non possono essere semplici',
+              'Se le Idee sono perfette, non possono essere pensate'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa mostra l\'argomento del «terzo uomo»?',
+     opzioni:['La partecipazione genera una catena infinita di Idee intermedie',
+              'Che esistono tre generi di uomini nella città',
+              'Che l\'uomo non può conoscere sé stesso',
+              'Che ogni Idea richiede tre esempi per essere definita'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché il falso era un problema logico, prima della soluzione del Sofista?',
+     opzioni:['Se l\'essere fosse solo il reale, dire il falso sarebbe dire il nulla',
+              'Perché nessuno riusciva a distinguere il vero dal falso',
+              'Perché i sofisti negavano che esistesse la verità',
+              'Perché il linguaggio era considerato sempre ingannevole'], giusta:0},
+
+    {tipo:'scelta', testo:'Come Platone risolve il problema nel Sofista?',
+     opzioni:['Intende il non-essere come diversità, non come nulla assoluto',
+              'Ammette che il falso non esista davvero',
+              'Sostiene che ogni discorso è in parte vero',
+              'Affida al solo intelletto il compito di giudicare'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è, allora, dire il falso?',
+     opzioni:['Dire di una cosa ciò che è altro da ciò che essa è',
+              'Pronunciare parole prive di ogni significato',
+              'Parlare di cose che non esistono affatto',
+              'Contraddirsi nello spazio dello stesso discorso'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché serve un metodo per orientarsi fra le Idee?',
+     opzioni:['Perché le Idee comunicano con alcune ma non con tutte le altre',
+              'Perché le Idee sono troppo numerose per essere ricordate',
+              'Perché le Idee cambiano nel tempo come le cose',
+              'Perché ogni Idea è isolata e non comunica con nessuna'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa fa la diáiresis, passo dopo passo?',
+     opzioni:['Divide in due un\'Idea generale finché si arriva alla definizione',
+              'Somma le Idee particolari fino a ottenere quella generale',
+              'Confronta due Idee opposte per scegliere la migliore',
+              'Elimina le Idee che non hanno riscontro nell\'esperienza'], giusta:0},
+
+    {tipo:'scelta', testo:'Quali sono i tre elementi della cosmogonia del Timeo?',
+     opzioni:['Le Idee come modello, la chòra come materia, il Demiurgo artefice',
+              'Il caos iniziale, l\'ordine raggiunto e il ritorno al caos',
+              'Gli atomi indivisibili, il vuoto e il loro movimento',
+              'Il fuoco, l\'acqua e la terra mescolati dall\'amore'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire perché un filosofo torna sulle proprie idee.'}
+  ]
+},
+{
+  titolo: 'Filosofia antica · 7 — Aristotele: logica e metafisica',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: che differenza c\'è fra un seme e un albero?'},
+
+    {tipo:'scelta', testo:'Come divide Aristotele l\'universo?',
+     opzioni:['Mondo sublunare corruttibile e mondo celeste incorruttibile',
+              'Mondo delle Idee e mondo delle cose sensibili',
+              'Mondo degli dèi e mondo degli uomini',
+              'Mondo pieno e mondo vuoto'], giusta:0},
+
+    {tipo:'scelta', testo:'Di che cosa è fatto il mondo celeste, secondo Aristotele?',
+     opzioni:['Di etere, un quinto elemento incorruttibile e senza peso',
+              'Degli stessi quattro elementi del mondo terrestre',
+              'Di fuoco puro, il più leggero degli elementi',
+              'Di atomi indivisibili che si muovono nel vuoto'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché è necessario postulare un primo motore immobile?',
+     opzioni:['Per evitare di risalire all\'infinito nella catena delle cause',
+              'Perché lo dimostra l\'osservazione diretta del cielo',
+              'Perché la religione greca lo prescriveva',
+              'Perché senza di esso i pianeti cadrebbero'], giusta:0},
+
+    {tipo:'scelta', testo:'In che modo il primo motore muove l\'universo?',
+     opzioni:['Attraendolo come fine ultimo, senza essere mosso',
+              'Spingendolo con una forza meccanica costante',
+              'Creando ogni giorno il movimento dal nulla',
+              'Alternando periodi di quiete e di moto'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa pensa il primo motore?',
+     opzioni:['Sé stesso: è pensiero di pensiero',
+              'Il destino di ogni singolo uomo',
+              'L\'ordine complessivo dell\'universo',
+              'Nulla: è pura potenza inespressa'], giusta:0},
+
+    {tipo:'scelta', testo:'Quali sono i tre gradi dell\'anima?',
+     opzioni:['Nutritiva nelle piante, sensitiva negli animali, intellettiva in noi',
+              'Vegetale nelle piante, minerale nelle pietre, razionale nell\'uomo',
+              'Concupiscibile, irascibile e razionale, come voleva Platone',
+              'Sensibile negli animali, immaginativa nell\'uomo, divina negli dèi'], giusta:0},
+
+    {tipo:'scelta', testo:'A che cosa serve il phantasma?',
+     opzioni:['Unifica i dati separati dei cinque sensi in un\'immagine sola',
+              'Conserva i ricordi delle vite precedenti',
+              'Permette di prevedere il futuro nei sogni',
+              'Sostituisce la percezione quando i sensi mancano'], giusta:0},
+
+    {tipo:'scelta', testo:'Che rapporto c\'è fra intelletto attivo e passivo?',
+     opzioni:['L\'attivo illumina il fantasma, il passivo ne riceve le forme',
+              'Il passivo produce le idee, l\'attivo le conserva',
+              'Sono due nomi della stessa facoltà',
+              'L\'attivo appartiene all\'uomo, il passivo agli animali'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa distingue ciò che è in atto da ciò che è in potenza.'}
+  ]
+},
+{
+  titolo: 'Filosofia antica · 8 — Aristotele: etica e politica',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: perché studi? E perché quello che hai risposto?'},
+
+    {tipo:'scelta', testo:'Perché l\'etica di Aristotele si dice «descrittiva»?',
+     opzioni:['Analizza il comportamento umano invece di imporre divieti',
+              'Descrive le leggi delle varie città greche',
+              'Racconta la vita degli uomini virtuosi del passato',
+              'Elenca i doveri che ogni cittadino deve rispettare'], giusta:0},
+
+    {tipo:'scelta', testo:'Come si riconosce il bene sommo, fra tutti i fini?',
+     opzioni:['È cercato per sé stesso e mai come mezzo per altro',
+              'È il fine che richiede più fatica per essere raggiunto',
+              'È il fine che tutti raggiungono prima o poi',
+              'È il fine indicato dalla legge della città'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è la virtù, per Aristotele?',
+     opzioni:['Un abito mentale acquisito con l\'esercizio costante',
+              'Un singolo atto compiuto nel momento giusto',
+              'Una qualità che si riceve alla nascita',
+              'Un dono che gli dèi concedono a pochi'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa riguardano le virtù etiche?',
+     opzioni:['Il carattere: implicano l\'uso della ragione su emozioni e desideri',
+              'Il pensiero discorsivo e la ricerca scientifica',
+              'Il rapporto con gli dèi e il culto pubblico',
+              'La produzione di oggetti utili alla città'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è la più alta fra le virtù dianoetiche?',
+     opzioni:['La sapienza, che unisce scienza e intelletto',
+              'La saggezza pratica, che calcola il bene nelle circostanze',
+              'L\'arte, che sa produrre oggetti nuovi',
+              'La giustizia, che regola i rapporti fra i cittadini'], giusta:0},
+
+    {tipo:'scelta', testo:'Che differenza c\'è fra giustizia distributiva e retributiva?',
+     opzioni:['La prima dà a ciascuno secondo il merito, la seconda ripristina l\'equilibrio',
+              'La prima riguarda i beni, la seconda le persone',
+              'La prima vale in pace, la seconda in guerra',
+              'La prima è scritta nelle leggi, la seconda no'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché per Aristotele la pòlis viene prima dell\'individuo?',
+     opzioni:['Il tutto precede le parti: l\'individuo ha senso solo dentro la comunità',
+              'Perché la città è stata fondata prima che nascessero i cittadini',
+              'Perché le leggi valgono più delle persone',
+              'Perché la città è più numerosa dei singoli'], giusta:0},
+
+    {tipo:'scelta', testo:'Su quale classe si regge lo Stato misto di Aristotele?',
+     opzioni:['La classe media, né troppo ricca né troppo povera',
+              'L\'aristocrazia dei più virtuosi',
+              'Il popolo riunito in assemblea',
+              'I proprietari terrieri più ricchi'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire dove sta il giusto mezzo.'}
+  ]
+}
 ];
