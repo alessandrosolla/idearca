@@ -1272,31 +1272,48 @@ html[data-theme="dark"] .chi-banda{background:#171d15}
 }
 
 /* ── LA VETRINA SUL TELEFONO ────────────────────────────────
-   Era illeggibile: testo piccolissimo e intestazione che copriva
-   il contenuto mentre si scorreva. */
+   Sul telefono l'intestazione occupava metà schermo e al
+   contenuto restava una fessura di due dita, in cui le schede
+   comparivano tagliate a metà: si apriva la vetrina e non si
+   capiva che cosa si stesse guardando.
+
+   Qui la finestra smette di essere tre blocchi (testa fissa,
+   corpo che scorre, piede fisso) e diventa una pagina sola che
+   scorre tutta. Resta appiccicato solo il piede, perché i due
+   pulsanti sono il motivo per cui la vetrina esiste.
+   ────────────────────────────────────────────────────────── */
 @media(max-width:760px){
-  .peek-modal{max-height:92vh;border-radius:14px}
-  .peek-head{padding:1.4rem 1.2rem 1rem;position:sticky;top:0;z-index:3;
-    background:linear-gradient(180deg,#f6f4ec 82%,rgba(246,244,236,.94));
-    border-bottom:1px solid var(--border)}
-  .peek-title{font-size:1.7rem;margin:.3rem 0 .5rem}
-  .peek-lede{font-size:.92rem;line-height:1.7}
-  .peek-scroll{padding:1.1rem 1.2rem 1.4rem}
-  .peek-nums{grid-template-columns:repeat(2,1fr);gap:.6rem}
+  /* il velo perde i margini: la vetrina prende tutto lo schermo,
+     che sul telefono è l'unico modo per avere spazio */
+  /* align-items:center farebbe restringere la finestra al suo
+     contenuto: serve stretch perché height:100% valga davvero */
+  #peek-overlay{padding:0;align-items:stretch}
+  .peek-modal{max-height:none;height:100%;border-radius:0;
+    display:block;overflow-y:auto;-webkit-overflow-scrolling:touch}
+  .peek-head{padding:3rem 1.2rem 1rem;position:static;border-bottom:1px solid var(--border);
+    background:linear-gradient(120deg,rgba(45,90,39,.07),rgba(154,124,46,.05))}
+  .peek-x{top:.7rem;right:.7rem;z-index:4}
+  .peek-title{font-size:1.75rem;margin:.3rem 0 .5rem}
+  .peek-lede{font-size:.93rem;line-height:1.7}
+  .peek-scroll{padding:1.2rem 1.2rem 1.4rem;overflow:visible;flex:none}
+  .peek-nums{grid-template-columns:repeat(2,1fr);gap:.6rem;margin-bottom:1.6rem}
   .peek-num b{font-size:1.9rem}
   .peek-num span{font-size:.62rem}
   .peek-sec-title{font-size:.68rem}
-  .peek-sec-nota{font-size:.86rem;line-height:1.6}
-  .peek-card p,.peek-tool span{font-size:.88rem;line-height:1.6}
-  .peek-card-h{font-size:.95rem}
+  .peek-sec-nota{font-size:.88rem;line-height:1.65}
+  .peek-card p,.peek-tool span{font-size:.89rem;line-height:1.65}
+  .peek-card-h{font-size:.96rem}
   .peek-card-n{font-size:1.6rem}
-  .peek-tool b{font-size:.92rem}
+  .peek-tool b{font-size:.93rem}
   .peek-open-tit{font-size:1.25rem}
   .peek-open-mat{font-size:.8rem}
   .peek-open-apri,.peek-open-tipo{font-size:.7rem}
-  .peek-foot{padding:.9rem 1.2rem;gap:.6rem}
-  .peek-foot .btn-primary,.peek-foot .btn-secondary{flex:1;font-size:.74rem;padding:.85rem .8rem}
-  html[data-theme="dark"] .peek-head{background:linear-gradient(180deg,#1b2118 82%,rgba(27,33,24,.94))}
+  /* il piede resta a portata di pollice mentre si scorre */
+  .peek-foot{padding:.85rem 1.2rem;gap:.6rem;position:sticky;bottom:0;z-index:3;
+    background:var(--parchment);border-top:1px solid var(--border);
+    box-shadow:0 -6px 18px rgba(28,43,26,.09)}
+  .peek-foot .btn-primary,.peek-foot .btn-secondary{flex:1;font-size:.74rem;padding:.9rem .8rem}
+  html[data-theme="dark"] .peek-foot{background:#141a12}
 }
 
 /* Una consegna aperta si deve vedere dalla colonna, senza aprirla. */
