@@ -40,6 +40,36 @@ contenuto e non di codice:
   esserci» per epoca e centootto rimandi a Wikipedia verificati contro
   la loro API.
 
+## La lista del 12 agosto — chiusa (16 agosto 2026)
+
+1. **Ripetizioni invisibili** — tre righe erano bianche su bianco: il
+   blocco arrivava dalla homepage, dove stava su fondo scuro. Rimesso
+   nel quadrante verde per cui era stato scritto.
+2. **«I tre percorsi»** nella homepage non diceva niente a chi la
+   pagina non l'aveva ancora aperta: adesso i tre percorsi si nominano.
+3. **I debate** cominciano dai fatti. Ogni pagina ha «Prima di tutto»
+   (dove, quando, chi parla, la scena vera) e «Casi su cui litigare»
+   (quattro casi documentati, l'ultimo da portare in classe con la
+   fonte). Il regolamento è sceso in fondo.
+4. **Consegne** — sul telefono lo studente non trovava «Consegna un
+   compito»: il menu a tendina era un secondo elenco scritto a mano e
+   non filtrava per ruolo. Adesso nasce dalla stessa lista della
+   colonna. Quando una finestra è aperta compare un pallino verde col
+   numero; nell'Inbox, sotto ogni finestra, c'è scritto il percorso
+   esatto che deve fare la classe.
+5. **Lavagna** — dieci colori invece di quattro, e la gomma tenuta
+   premuta mezzo secondo apre un rettangolo di selezione.
+6. **Timer e sorteggio** passati negli Strumenti, solo docente.
+   **Analizzatore di testo**, **linea del tempo** e **glossario**
+   negli Strumenti per tutti.
+7. **«Il ragionamento tiene?»** rifatto: una frase per riga, leggibile
+   a voce alta, con le parole scambiabili dentro la frase. La logica
+   non è stata toccata.
+8. **Confrontatore** — da 31 a 51 filosofi. Le coppie che si
+   incontrano passano da 168 a 375.
+9. **Votazioni a squadre** — il verdetto finale a tutto schermo, e la
+   risposta dello studente nel colore della sua squadra.
+
 ## Sospeso, da decidere
 
 La vista docente nelle metodologie è nascosta con il CSS: chi apre il
