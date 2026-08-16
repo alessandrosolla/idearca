@@ -3278,4 +3278,453 @@ const BANCA2 = [
     {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa resta fuori dal pensiero.'}
   ]
 }
+,
+{
+  titolo: 'Filosofia contemporanea · 14 — L\'Esistenzialismo: caratteri generali',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: che cosa vuol dire, per una persona, «esistere», che non vale per una sedia?'},
+
+    {tipo:'scelta', testo:'Che cosa afferma il primo carattere, l\'esistenza come modo d\'essere dell\'uomo?',
+     opzioni:['È un modo d\'essere specifico, che non si riduce a quello delle cose',
+              'È la semplice presenza fisica di un corpo nel mondo',
+              'È una proprietà comune a tutti gli esseri viventi',
+              'È il tempo che passa fra la nascita e la morte'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa dice il secondo carattere, il rapporto con l\'Essere?',
+     opzioni:['L\'uomo non è autosufficiente: è aperto a un oltre — mondo, altri, Dio',
+              'L\'uomo si basta da solo e non ha bisogno di nulla',
+              'L\'uomo coincide con l\'essere e non se ne distingue',
+              'L\'uomo può conoscere l\'essere in modo completo'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa comporta il terzo carattere, scelta e progetto?',
+     opzioni:['L\'esistenza non è data ma è possibilità e rischio: l\'uomo è ciò che sceglie',
+              'L\'esistenza è già decisa fin dalla nascita',
+              'Le scelte contano meno delle circostanze in cui si vive',
+              'Ogni progetto va portato a termine, altrimenti non vale'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa difende il quarto carattere, la singolarità?',
+     opzioni:['Il primato del singolo concreto e irripetibile contro le totalità astratte',
+              'Il primato della collettività sul singolo individuo',
+              'L\'idea che ogni uomo sia uguale a tutti gli altri',
+              'La superiorità di alcuni individui su tutti gli altri'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa dice il quinto carattere, la finitudine?',
+     opzioni:['L\'esistenza sta fra nascita e morte, limitata e segnata dall\'angoscia',
+              'L\'esistenza è infinita nelle sue possibilità',
+              'L\'esistenza si conclude ma senza che ce ne accorgiamo',
+              'L\'esistenza è limitata soltanto dalle leggi della società'], giusta:0},
+
+    {tipo:'scelta', testo:'Quali sono i precursori dell\'esistenzialismo novecentesco?',
+     opzioni:['Kierkegaard, con il Singolo e l\'angoscia, e i pensatori russi',
+              'Hegel e la sua filosofia del sistema',
+              'Comte e il positivismo francese',
+              'Kant e la Critica della ragion pratica'], giusta:0},
+
+    {tipo:'scelta', testo:'Quale anno segna «l\'architettura» dell\'esistenzialismo, con Essere e tempo?',
+     opzioni:['Il 1927',
+              'Il 1919',
+              'Il 1932',
+              'Il 1943'], giusta:0},
+
+    {tipo:'scelta', testo:'Quali opere segnano l\'esplosione francese fra il 1938 e il 1943?',
+     opzioni:['La Nausea e L\'essere e il nulla di Sartre, Il mito di Sisifo di Camus',
+              'Essere e tempo di Heidegger e Filosofia di Jaspers',
+              'L\'Epistola ai romani di Barth e il Giornale metafisico di Marcel',
+              'Il Singolo e L\'angoscia di Kierkegaard'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa distingue una vita da un oggetto.'}
+  ]
+},
+{
+  titolo: 'Filosofia antica · 12 — Agostino d\'Ippona',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: dove sta il passato, adesso?'},
+
+    {tipo:'scelta', testo:'Che cosa insegnava il manicheismo sul male?',
+     opzioni:['Che esiste un principio del male eterno, in lotta con quello del bene',
+              'Che il male è soltanto assenza di bene',
+              'Che il male dipende dalle scelte libere degli uomini',
+              'Che il male non esiste in nessuna forma'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa risponde Agostino sulla natura del male?',
+     opzioni:['Non è una sostanza, ma privazione di bene',
+              'È una sostanza creata da un secondo dio',
+              'È l\'unica realtà davvero esistente',
+              'È l\'effetto necessario della materia'], giusta:0},
+
+    {tipo:'scelta', testo:'Da dove nasce allora il male morale?',
+     opzioni:['Dalla volontà libera dell\'uomo, che si allontana dal bene',
+              'Da un principio malvagio che agisce nel mondo',
+              'Dalla materia di cui è fatto il corpo umano',
+              'Da un errore dell\'intelletto che si può correggere'], giusta:0},
+
+    {tipo:'scelta', testo:'Contro chi è diretto il «si fallor, sum»?',
+     opzioni:['Contro gli scettici: anche sbagliando, devo esistere per sbagliare',
+              'Contro i manichei, che negavano la libertà',
+              'Contro i platonici, che negavano il corpo',
+              'Contro gli stoici, che negavano le passioni'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa afferma la dottrina dell\'illuminazione?',
+     opzioni:['La mente coglie le verità eterne perché Dio la illumina',
+              'Le verità si ricavano tutte dai dati dei sensi',
+              'Le verità sono innate e non hanno bisogno di nulla',
+              'Le verità si imparano soltanto dai maestri'], giusta:0},
+
+    {tipo:'scelta', testo:'Dove esistono passato e futuro, secondo le Confessioni?',
+     opzioni:['Nell\'anima: memoria del passato e attesa del futuro',
+              'Nel mondo esterno, indipendentemente da noi',
+              'In Dio soltanto, che li contiene entrambi',
+              'Da nessuna parte: solo il presente è reale in senso pieno'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa divide, secondo Agostino, la città di Dio da quella terrena?',
+     opzioni:['Due amori: quello di sé fino a Dio e quello di Dio fino a sé',
+              'Due territori: Roma e Gerusalemme',
+              'Due epoche: prima e dopo la venuta di Cristo',
+              'Due classi sociali: i potenti e i poveri'], giusta:0},
+
+    {tipo:'scelta', testo:'Che rapporto pone la formula «credo ut intelligam»?',
+     opzioni:['La fede apre la strada, ma la ragione poi lavora e comprende',
+              'La ragione precede sempre la fede e la fonda',
+              'La fede sostituisce del tutto la ragione',
+              'Fede e ragione non si incontrano mai'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire dove si trova il tempo.'}
+  ]
+},
+{
+  titolo: 'Filosofia medievale · 2 — Tommaso d\'Aquino',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: si può arrivare con la ragione a qualcosa che si crede per fede?'},
+
+    {tipo:'scelta', testo:'Perché la riscoperta di Aristotele crea un problema nel Duecento?',
+     opzioni:['Alcune sue tesi sembrano incompatibili con la fede cristiana',
+              'I suoi testi erano andati perduti e non si potevano leggere',
+              'La Chiesa aveva già adottato Aristotele come suo filosofo',
+              'Le sue opere erano scritte in una lingua sconosciuta'], giusta:0},
+
+    {tipo:'scelta', testo:'Come Tommaso ordina fede e ragione?',
+     opzioni:['Sono distinte ma non in contrasto: la grazia perfeziona la natura',
+              'Sono la stessa cosa detta in due modi diversi',
+              'Sono in contrasto insanabile e vanno tenute separate',
+              'La ragione deve essere abbandonata dove parla la fede'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché non basta il concetto di Dio a dimostrare che Dio esiste?',
+     opzioni:['Dal concetto di Dio non si può passare direttamente alla sua esistenza',
+              'Perché Anselmo non era un teologo autorevole',
+              'Perché il concetto di Dio è impossibile da formare',
+              'Perché l\'esistenza di Dio non va dimostrata affatto'], giusta:0},
+
+    {tipo:'scelta', testo:'Da dove partono le cinque vie di Tommaso?',
+     opzioni:['Partono da un fatto d\'esperienza e risalgono a una causa prima',
+              'Partono dal concetto di perfezione e ne deducono l\'esistenza',
+              'Partono dalla rivelazione e la confermano con la ragione',
+              'Partono dal consenso dei popoli su una divinità'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa distingue le creature da Dio?',
+     opzioni:['Nelle creature essenza ed esistenza sono distinte, in Dio coincidono',
+              'Le creature hanno un corpo, Dio non ne ha',
+              'Le creature sono molte, Dio è uno solo',
+              'Le creature sono nel tempo, Dio è fuori dallo spazio'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è la legge naturale per Tommaso?',
+     opzioni:['La partecipazione della creatura razionale alla legge eterna',
+              'L\'insieme delle leggi scritte dai sovrani',
+              'La regolarità con cui si comportano i corpi fisici',
+              'Il diritto che ogni popolo si dà da sé'], giusta:0},
+
+    {tipo:'scelta', testo:'A che cosa deve servire il potere politico, per Tommaso?',
+     opzioni:['Il bene comune, subordinato al fine ultimo dell\'uomo',
+              'La sola sicurezza materiale dei cittadini',
+              'L\'accrescimento della potenza del sovrano',
+              'La conversione forzata di tutti i sudditi'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa vuol dire che in Dio essenza ed esistenza coincidono?',
+     opzioni:['Dio non può non esistere: esistere fa parte di ciò che è',
+              'Dio esiste soltanto nel pensiero di chi lo concepisce',
+              'Dio esiste ma la sua essenza resta sconosciuta',
+              'Dio è esistito una volta e poi si è ritirato dal mondo'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa succede quando una legge è ingiusta.'}
+  ]
+},
+{
+  titolo: 'Filosofia contemporanea · 15 — La crisi delle certezze nelle scienze',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: quante rette parallele passano per un punto fuori da una retta?'},
+
+    {tipo:'scelta', testo:'Che cosa cambia con le geometrie non euclidee?',
+     opzioni:['Negando il quinto postulato si ottengono geometrie coerenti e diverse',
+              'Si dimostra che la geometria di Euclide contiene un errore',
+              'Si scopre che la geometria non serve a descrivere lo spazio',
+              'Si riduce la geometria a un capitolo dell\'aritmetica'], giusta:0},
+
+    {tipo:'scelta', testo:'Che conseguenza ha questo per la matematica?',
+     opzioni:['Gli assiomi diventano scelte convenzionali, non verità evidenti',
+              'La matematica perde ogni utilità pratica',
+              'La matematica va rifondata sull\'esperienza dei sensi',
+              'Ogni teorema deve essere verificato sperimentalmente'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa dimostra il teorema di incompletezza di Gödel?',
+     opzioni:['In un sistema coerente abbastanza ricco esistono verità indimostrabili',
+              'Che ogni sistema matematico contiene una contraddizione',
+              'Che la matematica può dimostrare qualunque enunciato',
+              'Che i numeri sono un\'invenzione della mente umana'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa succede alla simultaneità con la relatività ristretta?',
+     opzioni:['La simultaneità assoluta: tempo e spazio dipendono dall\'osservatore',
+              'La costanza della velocità della luce',
+              'La possibilità di misurare le distanze',
+              'Il principio di conservazione dell\'energia'], giusta:0},
+
+    {tipo:'scelta', testo:'Come spiega la relatività generale l\'attrazione fra i corpi?',
+     opzioni:['Una curvatura dello spazio-tempo prodotta dalla massa',
+              'Una forza di attrazione che agisce a distanza',
+              'Un campo di particelle che riempie lo spazio',
+              'Un effetto apparente della rotazione dei corpi'], giusta:0},
+
+    {tipo:'scelta', testo:'In che modo, secondo Planck, l\'energia viene scambiata?',
+     opzioni:['L\'energia non si scambia in modo continuo ma a pacchetti discreti',
+              'L\'energia si conserva soltanto nei sistemi chiusi',
+              'La luce è fatta esclusivamente di onde',
+              'La materia è divisibile all\'infinito'], giusta:0},
+
+    {tipo:'scelta', testo:'Che limite pone Heisenberg alla misura di una particella?',
+     opzioni:['Non si possono conoscere insieme con precisione posizione e quantità di moto',
+              'Le particelle si muovono in modo del tutto casuale',
+              'Ogni misura scientifica contiene un errore di calcolo',
+              'Le leggi fisiche cambiano da un luogo all\'altro'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa hanno in comune queste crisi, dalla geometria alla fisica?',
+     opzioni:['Cade l\'idea di un sapere assoluto e definitivo sulla realtà',
+              'Le scienze scoprono di essersi sbagliate su tutto',
+              'La matematica smette di essere utile alla fisica',
+              'Gli scienziati rinunciano a formulare nuove teorie'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire se una scienza senza certezze è più debole o più onesta.'}
+  ]
+},
+{
+  titolo: 'Filosofia contemporanea · 16 — Wittgenstein e l\'analisi del linguaggio',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: c\'è qualcosa che sai ma che non riesci a dire?'},
+
+    {tipo:'scelta', testo:'Che rapporto pone il Tractatus fra linguaggio e mondo?',
+     opzioni:['La proposizione è un\'immagine logica del fatto che rappresenta',
+              'Il linguaggio crea il mondo di cui parla',
+              'Il linguaggio e il mondo non hanno alcun rapporto',
+              'Il mondo è più semplice del linguaggio che lo descrive'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa hanno in comune una proposizione sensata e il fatto che raffigura?',
+     opzioni:['La stessa forma logica',
+              'La stessa lunghezza',
+              'Lo stesso contenuto materiale',
+              'Lo stesso ordine cronologico'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché le proposizioni della metafisica sono «insensate» nel Tractatus?',
+     opzioni:['Non raffigurano nessun fatto possibile del mondo',
+              'Sono grammaticalmente scorrette',
+              'Sono troppo difficili da capire',
+              'Contraddicono i risultati delle scienze'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è il «mistico» per il Wittgenstein del Tractatus?',
+     opzioni:['Ciò che si mostra ma non si può dire: valore, senso, etica',
+              'Un\'esperienza religiosa riservata a pochi',
+              'Ciò che la scienza scoprirà in futuro',
+              'Un errore del linguaggio che va corretto'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa cambia con l\'idea dei giochi linguistici?',
+     opzioni:['Il linguaggio non ha una sola funzione: ha molti usi, in molte pratiche',
+              'Il linguaggio serve solo a descrivere fatti',
+              'Il linguaggio va sostituito da un simbolismo formale',
+              'Il linguaggio è sempre uguale in ogni cultura'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa afferma la formula «il significato è l\'uso»?',
+     opzioni:['Il senso di una parola sta nel modo in cui viene impiegata',
+              'Il senso di una parola sta nell\'oggetto che nomina',
+              'Il senso di una parola sta nella sua origine storica',
+              'Il senso di una parola lo decide chi la pronuncia'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è, per il secondo Wittgenstein, una «somiglianza di famiglia»?',
+     opzioni:['Casi legati da tratti che si sovrappongono, senza un carattere comune a tutti',
+              'La proprietà che tutti i membri di una classe condividono',
+              'Il rapporto fra una parola e la sua traduzione',
+              'La parentela fra lingue che hanno la stessa origine'], giusta:0},
+
+    {tipo:'scelta', testo:'Come cambia il compito della filosofia, fra il primo e il secondo Wittgenstein?',
+     opzioni:['Da fissare i limiti del dire a sciogliere i nodi che il linguaggio crea',
+              'Da studiare il linguaggio a studiare la natura',
+              'Da descrivere il mondo a cambiarlo politicamente',
+              'Da analisi logica a ricerca storica sulle lingue'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire quanti problemi nascono da come parliamo.'}
+  ]
+},
+{
+  titolo: 'Filosofia contemporanea · 19 — La Scuola di Francoforte e la critica al capitalismo',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: quello che desideri, l\'hai scelto tu?'},
+
+    {tipo:'scelta', testo:'Che cos\'è la «teoria critica», rispetto alla teoria tradizionale?',
+     opzioni:['Non si limita a descrivere la società: ne mette in questione le basi',
+              'Descrive i fatti sociali senza giudicarli',
+              'Applica alla società i metodi delle scienze naturali',
+              'Studia soltanto le opere d\'arte e la cultura'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è la tesi della Dialettica dell\'illuminismo?',
+     opzioni:['La ragione che doveva liberare si è rovesciata in dominio',
+              'L\'illuminismo ha mantenuto tutte le sue promesse',
+              'La ragione non ha avuto alcun effetto sulla storia',
+              'Il dominio nasce dall\'abbandono della ragione'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è la ragione strumentale?',
+     opzioni:['Una ragione che calcola i mezzi e non discute più i fini',
+              'Una ragione che si occupa solo di questioni morali',
+              'Una ragione applicata esclusivamente alla tecnica',
+              'Una ragione che rinuncia a ogni calcolo'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa denuncia Adorno con l\'espressione «industria culturale»?',
+     opzioni:['La cultura prodotta in serie, che addormenta invece di risvegliare',
+              'La scomparsa dei prodotti culturali dal mercato',
+              'L\'eccessivo costo dei biglietti per teatri e concerti',
+              'La censura politica esercitata sugli artisti'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa succede ai rapporti fra persone, secondo Lukács?',
+     opzioni:['I rapporti fra persone assumono l\'aspetto di rapporti fra cose',
+              'Gli oggetti acquistano una volontà propria',
+              'Le idee vengono trasformate in oggetti concreti',
+              'Le merci perdono ogni valore di scambio'], giusta:0},
+
+    {tipo:'scelta', testo:'Su che cosa si regge il dominio di una classe, per Gramsci?',
+     opzioni:['Il consenso costruito nella cultura, prima ancora che con la forza',
+              'Il dominio militare di uno Stato su un altro',
+              'Il controllo diretto dell\'economia da parte dello Stato',
+              'L\'autorità che una classe esercita solo con la coercizione'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa perde un\'opera d\'arte quando viene riprodotta in serie?',
+     opzioni:['L\'unicità hic et nunc dell\'opera, che la riproduzione tecnica dissolve',
+              'La luce particolare con cui un quadro va illuminato',
+              'La fama che circonda un artista famoso',
+              'Il valore economico che un\'opera acquista nel tempo'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché il consumo, per i francofortesi, non è un atto libero?',
+     opzioni:['I bisogni vengono prodotti insieme alle merci che li soddisfano',
+              'Perché i prezzi sono decisi da pochi grandi produttori',
+              'Perché la legge impone che cosa si può comprare',
+              'Perché i beni disponibili sono sempre troppo pochi'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire chi decide che cosa desideri.'}
+  ]
+},
+{
+  titolo: 'Filosofia contemporanea · 20 — Strutturalismo, Foucault e decostruzione',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: quanto di quello che pensi hai davvero scelto tu?'},
+
+    {tipo:'scelta', testo:'Da dove nasce il significato, per lo strutturalismo?',
+     opzioni:['Il senso nasce dalle relazioni fra elementi, non dagli elementi presi da soli',
+              'Ogni elemento ha un significato proprio e indipendente',
+              'Il senso dipende dalle intenzioni di chi parla',
+              'Il senso si stabilisce per accordo fra gli studiosi'], giusta:0},
+
+    {tipo:'scelta', testo:'Che distinzione introduce Saussure sul linguaggio?',
+     opzioni:['Langue, il sistema condiviso, e parole, l\'uso individuale',
+              'Lingua scritta e lingua parlata',
+              'Lingua materna e lingua straniera',
+              'Grammatica e vocabolario'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa cerca Lévi-Strauss nei miti?',
+     opzioni:['Strutture ricorrenti che valgono al di là delle singole culture',
+              'La verità storica che i miti nasconderebbero',
+              'L\'autore originale di ciascun racconto',
+              'La prova che tutti i popoli discendono da uno solo'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa stabilisce, in un\'epoca, ciò che si può dire e sapere?',
+     opzioni:['Il sistema di regole che in un\'epoca decide che cosa si può dire e sapere',
+              'L\'insieme delle scoperte scientifiche di un secolo',
+              'La conoscenza personale che ogni individuo accumula',
+              'Il metodo con cui si verificano le ipotesi'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa mostra l\'analisi del Panopticon?',
+     opzioni:['Il potere funziona meglio quando ci si sente osservati, anche se nessuno guarda',
+              'Le prigioni moderne sono più umane di quelle antiche',
+              'Il potere agisce solo attraverso la punizione fisica',
+              'La sorveglianza è inefficace se non è continua'], giusta:0},
+
+    {tipo:'scelta', testo:'Che rapporto pone Foucault fra sapere e potere?',
+     opzioni:['Si sostengono a vicenda: ogni sapere è anche un modo di governare',
+              'Sono del tutto indipendenti l\'uno dall\'altro',
+              'Il sapere serve sempre a limitare il potere',
+              'Il potere ostacola sempre la crescita del sapere'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa fa la decostruzione di Derrida?',
+     opzioni:['Mostra le opposizioni gerarchiche su cui un testo si regge senza dirlo',
+              'Distrugge il testo per sostituirlo con uno nuovo',
+              'Riduce ogni testo al suo significato letterale',
+              'Ricostruisce le intenzioni originarie dell\'autore'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa vuol dire «morte dell\'uomo» in Foucault?',
+     opzioni:['L\'uomo come oggetto del sapere è una figura recente e passeggera',
+              'La specie umana è destinata a estinguersi presto',
+              'Gli uomini contano meno delle macchine che costruiscono',
+              'La filosofia deve smettere di occuparsi degli uomini'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire chi parla quando parli.'}
+  ]
+},
+{
+  titolo: 'Filosofia contemporanea · 21 — Hannah Arendt',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: si può fare del male terribile senza odiare nessuno?'},
+
+    {tipo:'scelta', testo:'Che cosa distingue il totalitarismo da una tirannia tradizionale?',
+     opzioni:['Non si limita a togliere la libertà: vuole trasformare la natura umana',
+              'Usa la forza più duramente delle vecchie tirannie',
+              'È guidato da un solo uomo invece che da un gruppo',
+              'Dura più a lungo di qualsiasi altro regime'], giusta:0},
+
+    {tipo:'scelta', testo:'Su quale condizione sociale fa leva il totalitarismo?',
+     opzioni:['L\'isolamento delle persone, private di legami e di uno spazio comune',
+              'La ricchezza diffusa in tutti i ceti della popolazione',
+              'La forza dei sindacati e delle associazioni',
+              'L\'alto livello di istruzione dei cittadini'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa distingue il lavoro dall\'opera, nella Vita activa?',
+     opzioni:['Il lavoro produce ciò che si consuma, l\'opera ciò che dura',
+              'Il lavoro è manuale, l\'opera è intellettuale',
+              'Il lavoro è retribuito, l\'opera è gratuita',
+              'Il lavoro è individuale, l\'opera è collettiva'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è l\'azione, la terza attività?',
+     opzioni:['Ciò che si fa fra le persone, con la parola, e apre qualcosa di nuovo',
+              'La produzione di oggetti destinati a durare',
+              'La cura del corpo e delle necessità quotidiane',
+              'La riflessione solitaria del filosofo'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa porta con sé, per Arendt, ogni nascita?',
+     opzioni:['La capacità di cominciare qualcosa di nuovo che ogni nascita porta',
+              'Il numero di nascite che si registrano in una popolazione',
+              'Il legame che unisce i figli ai genitori che li hanno avuti',
+              'La speranza che il futuro sia migliore di quanto è il passato'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché senza pluralità non ci sarebbe politica?',
+     opzioni:['Sulla terra vivono uomini al plurale, tutti diversi fra loro',
+              'Perché le decisioni si prendono sempre a maggioranza',
+              'Perché ogni Stato ha bisogno di avere molti abitanti',
+              'Perché le opinioni diverse vanno ricondotte a una sola'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa vuol dire «banalità del male»?',
+     opzioni:['Il male enorme può essere commesso da chi smette semplicemente di pensare',
+              'Il male è una cosa comune e quindi non va giudicato',
+              'Chi fa il male è sempre un mostro riconoscibile',
+              'Il male dipende soltanto dagli ordini ricevuti'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa colpisce Arendt nel processo a Eichmann?',
+     opzioni:['Un funzionario ordinario, non un mostro, incapace di pensare da sé',
+              'Un uomo mosso da un odio profondo e dichiarato',
+              'Un imputato che si difende con argomenti raffinati',
+              'Un colpevole che si pente pubblicamente delle sue azioni'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa impedisce a una persona di obbedire e basta.'}
+  ]
+}
 ];
