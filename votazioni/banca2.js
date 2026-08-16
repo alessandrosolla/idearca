@@ -2212,4 +2212,509 @@ const BANCA2 = [
     {tipo:'nuvola', testo:'Alla fine: una parola per dire dove sta il giusto mezzo.'}
   ]
 }
+,
+{
+  titolo: 'Filosofia moderna · 1 — La cultura umanistico-rinascimentale',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: tornare indietro a un modello antico è sempre un passo indietro?'},
+
+    {tipo:'scelta', testo:'Quale assetto politico fa da sfondo alla nascita del Rinascimento?',
+     opzioni:['I grandi regni nazionali in Europa e gli Stati regionali in Italia',
+              'L\'impero universale che riunisce tutta l\'Europa',
+              'Le città-Stato indipendenti in tutto il continente',
+              'Il ritorno del feudalesimo dopo la peste'], giusta:0},
+
+    {tipo:'scelta', testo:'Quale ceto sociale emerge e sostiene la nuova cultura?',
+     opzioni:['La borghesia cittadina, con nuove esigenze culturali e tecniche',
+              'La nobiltà feudale di campagna',
+              'Il clero regolare degli ordini monastici',
+              'I contadini liberi delle nuove terre'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa significa il «ritorno al principio» degli umanisti?',
+     opzioni:['Non nostalgia, ma ricerca della forza originaria per un nuovo inizio',
+              'Il desiderio di ricostruire l\'impero romano',
+              'Il rifiuto di ogni novità rispetto agli antichi',
+              'Il ritorno alla vita semplice delle origini'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa sostiene la «teoria della frattura» nel dibattito storiografico?',
+     opzioni:['Il Rinascimento rompe nettamente col Medioevo e apre un\'era nuova',
+              'Il Rinascimento è la naturale prosecuzione del tardo Medioevo',
+              'Il Rinascimento non è mai davvero esistito come epoca',
+              'Il Rinascimento riguarda solo l\'arte, non il pensiero'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa sostiene invece la «teoria della continuità»?',
+     opzioni:['Il Rinascimento affonda le radici nel tardo Medioevo, senza rotture',
+              'Il Rinascimento nasce solo dal contatto con il mondo arabo',
+              'Il Rinascimento è un\'invenzione degli storici dell\'Ottocento',
+              'Il Rinascimento comincia molto più tardi di quanto si creda'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è la posizione intermedia, quella dell\'«originalità nella continuità»?',
+     opzioni:['Il Rinascimento nasce dal Medioevo ma introduce una trasformazione radicale',
+              'Il Rinascimento e il Medioevo sono la stessa cosa con nomi diversi',
+              'Il Rinascimento è originale solo in Italia e non altrove',
+              'Il Rinascimento è continuo nell\'arte e discontinuo nella politica'], giusta:0},
+
+    {tipo:'scelta', testo:'Come cambia lo sguardo sulla natura?',
+     opzioni:['Da «ombra sbiadita» del mondo ideale a ambiente vitale da esplorare',
+              'Da luogo di lavoro a luogo di contemplazione religiosa',
+              'Da realtà ordinata a spazio governato dal caso',
+              'Da creatura di Dio a semplice materia inerte'], giusta:0},
+
+    {tipo:'scelta', testo:'A che cosa apre questa rivalutazione della natura?',
+     opzioni:['Alla ricerca delle sue leggi intrinseche, e quindi alla scienza moderna',
+              'Al ritorno delle pratiche magiche e astrologiche',
+              'All\'abbandono dello studio dei testi antichi',
+              'Alla nascita delle prime riserve naturali'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa si guadagna a rileggere gli antichi.'}
+  ]
+},
+{
+  titolo: 'Filosofia moderna · 3 — Rinascimento e religione',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: chi ha il diritto di dirti che cosa significa un testo?'},
+
+    {tipo:'scelta', testo:'In che senso il Rinascimento è anche rinnovamento religioso?',
+     opzioni:['Il ritorno alle possibilità originarie riguarda pure il rapporto con Dio',
+              'Perché nasce una religione nuova, diversa dal cristianesimo',
+              'Perché la Chiesa si dissolve nelle Chiese nazionali',
+              'Perché la religione viene sostituita dalla filosofia'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa cerca il ritorno alle origini in campo religioso?',
+     opzioni:['La cristianità primitiva, prima delle sovrastrutture successive',
+              'La religione dei filosofi greci prima del cristianesimo',
+              'Le pratiche religiose dell\'antico Egitto',
+              'Una religione naturale comune a tutti i popoli'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa mette al centro l\'umanesimo di Erasmo?',
+     opzioni:['Il pacifismo, l\'educazione civile e una fede semplice',
+              'La disciplina monastica e il ritiro dal mondo',
+              'L\'obbedienza incondizionata all\'autorità della Chiesa',
+              'La difesa armata della cristianità contro i turchi'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è il nodo filosofico centrale della Riforma protestante?',
+     opzioni:['La concezione della libertà umana davanti alla salvezza',
+              'La struttura gerarchica da dare alle nuove Chiese',
+              'La lingua in cui celebrare le funzioni religiose',
+              'Il rapporto fra la Chiesa e i principi tedeschi'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa ridefinisce la Riforma nel rapporto fra uomo e Dio?',
+     opzioni:['Lo rende diretto, senza la mediazione necessaria di un\'istituzione',
+              'Lo rende più lontano, affidandolo interamente ai sacerdoti',
+              'Lo sostituisce con un rapporto con la comunità civile',
+              'Lo riduce all\'osservanza esteriore dei riti'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è la Controriforma?',
+     opzioni:['La risposta istituzionale della Chiesa cattolica alla Riforma',
+              'Un secondo movimento riformatore nato in Francia',
+              'La riforma delle università tedesche del Cinquecento',
+              'Il ritorno della Chiesa alle sue origini apostoliche'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa vuol dire che l\'uomo è «artefice del suo destino»?',
+     opzioni:['La sua posizione nel mondo non è fissata: se la costruisce',
+              'Il suo destino è già stabilito e va solo accettato',
+              'Il destino dipende dalla fortuna e non dalle scelte',
+              'Ogni uomo nasce con un compito assegnato da Dio'], giusta:0},
+
+    {tipo:'scelta', testo:'Come si collega il rinnovamento spirituale al resto del Rinascimento?',
+     opzioni:['Sta in mezzo: dopo l\'uomo al centro, prima delle ricadute pratiche',
+              'È un capitolo isolato, senza rapporto con gli altri',
+              'Viene per ultimo, come conseguenza della politica',
+              'Precede ogni altra cosa e la determina'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa cambia quando ognuno può leggere da sé.'}
+  ]
+},
+{
+  titolo: 'Filosofia moderna · 4 — Rinascimento e politica',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: per capire la politica conviene guardare com\'è o come dovrebbe essere?'},
+
+    {tipo:'scelta', testo:'Quali sono le due grandi vie della riflessione politica rinascimentale?',
+     opzioni:['La prospettiva storicistica e quella giusnaturalistica',
+              'La prospettiva religiosa e quella militare',
+              'La prospettiva economica e quella giuridica',
+              'La prospettiva popolare e quella aristocratica'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa propone la prospettiva storicistica?',
+     opzioni:['Tornare alle origini storiche di una determinata società',
+              'Ricavare le regole dai principi universali della ragione',
+              'Progettare una società perfetta partendo da zero',
+              'Affidarsi alla tradizione religiosa di ciascun popolo'], giusta:0},
+
+    {tipo:'scelta', testo:'Su che cosa si fonda invece la prospettiva giusnaturalistica?',
+     opzioni:['Su regole che derivano dalla natura razionale dell\'uomo, valide ovunque',
+              'Sulle leggi effettivamente in vigore in ogni Stato',
+              'Sulla volontà del sovrano, che è fonte del diritto',
+              'Sui trattati che i popoli hanno stipulato fra loro'], giusta:0},
+
+    {tipo:'scelta', testo:'Quando un\'azione è buona, per il giusnaturalismo?',
+     opzioni:['Quando è in accordo con i principi della ragione',
+              'Quando produce il maggior vantaggio a chi la compie',
+              'Quando è permessa dalla legge dello Stato',
+              'Quando è approvata dalla maggioranza dei cittadini'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché il giusnaturalismo «abbandona la contingenza della storia»?',
+     opzioni:['Cerca fondamenti universali, validi in ogni tempo e luogo',
+              'Ritiene che la storia non si possa conoscere',
+              'Considera il passato sempre peggiore del presente',
+              'Vuole liberarsi dello studio delle istituzioni antiche'], giusta:0},
+
+    {tipo:'scelta', testo:'Quale via segue Machiavelli, fra le tre?',
+     opzioni:['Lo storicismo: analisi disincantata del presente a partire dalla storia',
+              'Il giusnaturalismo: regole ricavate dalla ragione universale',
+              'L\'utopia: progettazione di una società ideale',
+              'Il contrattualismo: fondazione dello Stato su un patto'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa caratterizza la terza via, quella utopica?',
+     opzioni:['Progetta una società perfetta, con beni comuni e senza proprietà',
+              'Descrive lo Stato così come funziona davvero',
+              'Ricava le leggi dalla natura razionale dell\'uomo',
+              'Ricostruisce la costituzione delle repubbliche antiche'], giusta:0},
+
+    {tipo:'scelta', testo:'Chi è l\'autore che rappresenta la via utopica?',
+     opzioni:['Thomas More, con l\'isola di Utopia',
+              'Niccolò Machiavelli, con il Principe',
+              'Ugo Grozio, con il diritto di guerra e di pace',
+              'Jean Bodin, con la teoria della sovranità'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire a che cosa serve immaginare una società perfetta.'}
+  ]
+},
+{
+  titolo: 'Filosofia moderna · 19 — Kant: il progetto filosofico',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: sapere fin dove non puoi arrivare è una perdita o un guadagno?'},
+
+    {tipo:'scelta', testo:'Fra quali due mondi culturali si colloca il criticismo kantiano?',
+     opzioni:['Fra l\'Illuminismo da cui parte e il Romanticismo che si annuncia',
+              'Fra il Rinascimento e la rivoluzione scientifica',
+              'Fra la scolastica medievale e l\'empirismo inglese',
+              'Fra il positivismo e l\'idealismo tedesco'], giusta:0},
+
+    {tipo:'scelta', testo:'In che senso Kant porta l\'Illuminismo alle sue estreme conseguenze?',
+     opzioni:['Applica la critica della ragione alla ragione stessa',
+              'Estende la ragione anche alle questioni religiose',
+              'Sostituisce la ragione con il sentimento',
+              'Riduce la ragione al solo calcolo matematico'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa vuol dire che il criticismo è una «filosofia del limite»?',
+     opzioni:['Traccia i confini di ciò che possiamo conoscere, non dubita di tutto',
+              'Sostiene che nulla può essere conosciuto con certezza',
+              'Limita la filosofia allo studio della morale',
+              'Vieta di occuparsi delle scienze della natura'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa sta entro il limite e che cosa sta oltre?',
+     opzioni:['Entro il limite la scienza certa, oltre il limite l\'inconoscibile',
+              'Entro il limite la fede, oltre il limite la scienza',
+              'Entro il limite l\'opinione, oltre il limite la verità',
+              'Entro il limite la logica, oltre il limite l\'esperienza'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa cambia con il «trascendentale»?',
+     opzioni:['Il fulcro passa dall\'oggetto in sé al soggetto che lo percepisce',
+              'Il fulcro passa dal soggetto all\'oggetto conosciuto',
+              'Il fulcro passa dalla ragione all\'esperienza sensibile',
+              'Il fulcro passa dalla scienza alla metafisica'], giusta:0},
+
+    {tipo:'scelta', testo:'A che cosa è strettamente legato il concetto di «trascendentale»?',
+     opzioni:['A quello di forma: riguarda le strutture a priori del conoscere',
+              'A quello di materia: riguarda i dati che i sensi ricevono',
+              'A quello di fine: riguarda lo scopo della conoscenza',
+              'A quello di sostanza: riguarda ciò che permane'], giusta:0},
+
+    {tipo:'scelta', testo:'Quali sono i tre pilastri del sistema kantiano?',
+     opzioni:['Critica della ragion pura, della ragion pratica, del Giudizio',
+              'Estetica, analitica e dialettica trascendentale del sapere',
+              'Logica formale, metafisica generale ed etica dei doveri',
+              'Filosofia della conoscenza, dell\'azione e della religione'], giusta:0},
+
+    {tipo:'scelta', testo:'Di che cosa si occupa ciascuna delle tre Critiche?',
+     opzioni:['Della conoscenza, della libertà morale e dei fini della natura',
+              'Della natura, della storia e della religione',
+              'Della logica, della fisica e della politica',
+              'Del passato, del presente e del futuro dell\'uomo'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa fa una ragione che giudica sé stessa.'}
+  ]
+},
+{
+  titolo: 'Filosofia moderna · 22 — Kant: la Critica del Giudizio',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: quando dici «è bello», stai dicendo qualcosa sull\'oggetto o su di te?'},
+
+    {tipo:'scelta', testo:'Che posto occupa la terza Critica fra le altre due?',
+     opzioni:['Fa da ponte fra la conoscenza della natura e la libertà morale',
+              'Sostituisce le prime due, che risultano superate',
+              'Precede logicamente le altre due e le fonda',
+              'Ripete in forma breve il contenuto delle prime due'], giusta:0},
+
+    {tipo:'scelta', testo:'Su che cosa si fonda la Critica del Giudizio?',
+     opzioni:['Sul sentimento, non su nuove leggi scientifiche o morali',
+              'Su nuove leggi della natura scoperte da Kant',
+              'Su nuovi doveri morali che si aggiungono ai precedenti',
+              'Sulla rivelazione religiosa e sulla tradizione'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa fa il giudizio riflettente, a differenza di quello determinante?',
+     opzioni:['Parte dal caso particolare e cerca la regola',
+              'Parte dalla regola e vi sussume il caso particolare',
+              'Giudica senza usare né regole né casi',
+              'Applica una regola già stabilita da altri'], giusta:0},
+
+    {tipo:'scelta', testo:'In che cosa si biforca il giudizio riflettente?',
+     opzioni:['Giudizio estetico sulla forma e giudizio teleologico sullo scopo',
+              'Giudizio logico e giudizio morale',
+              'Giudizio empirico e giudizio a priori',
+              'Giudizio individuale e giudizio universale'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa cerca il giudizio estetico?',
+     opzioni:['Una finalità senza scopo, colta nella forma dell\'oggetto',
+              'Lo scopo oggettivo che la natura persegue',
+              'L\'utilità che l\'oggetto ha per chi lo osserva',
+              'La regola tecnica con cui l\'oggetto è stato prodotto'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa distingue il bello dal sublime?',
+     opzioni:['Il bello ha forma definita e armonia, il sublime è informe e sgomenta',
+              'Il bello riguarda la natura, il sublime le opere d\'arte',
+              'Il bello è soggettivo, il sublime è oggettivo',
+              'Il bello si giudica con la ragione, il sublime con i sensi'], giusta:0},
+
+    {tipo:'scelta', testo:'Che tipo di piacere accompagna il sublime?',
+     opzioni:['Un piacere negativo, fatto insieme di attrazione e repulsione',
+              'Un piacere immediato e del tutto sereno',
+              'Un piacere che nasce dal possesso dell\'oggetto',
+              'Nessun piacere: il sublime provoca solo paura'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa afferma il giudizio teleologico sulla natura?',
+     opzioni:['La guardiamo come una totalità organizzata, dove ogni parte serve al tutto',
+              'La natura è un puro meccanismo privo di ogni ordine',
+              'La natura persegue consapevolmente i propri fini',
+              'La natura è opera diretta di un artefice intelligente'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire perché sul bello ci aspettiamo di essere d\'accordo.'}
+  ]
+},
+{
+  titolo: 'Filosofia moderna · 23 — Kant: religione, diritto e storia',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: litigare serve a qualcosa, nella storia di un popolo?'},
+
+    {tipo:'scelta', testo:'Che verità sull\'uomo riconosce la ragione, secondo Kant?',
+     opzioni:['Che nessun essere umano può essere usato come semplice mezzo',
+              'Che ogni uomo è per natura buono e pacifico',
+              'Che gli uomini sono uguali per legge ma non per natura',
+              'Che l\'uomo è l\'essere più forte fra tutti i viventi'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa distingue l\'uomo dagli altri esseri naturali?',
+     opzioni:['Gli altri sono mezzi destinati all\'uso, l\'uomo è fine',
+              'L\'uomo è più utile alla natura degli altri esseri',
+              'L\'uomo vive più a lungo degli altri animali',
+              'L\'uomo è l\'unico essere capace di soffrire'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è l\'insocievole socievolezza?',
+     opzioni:['La tendenza a unirsi e insieme quella a competere e dissociarsi',
+              'La difficoltà di alcune persone a stare in società',
+              'L\'obbligo di vivere insieme imposto dalla legge',
+              'Il desiderio di vivere in solitudine lontano dagli altri'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché questo attrito è utile, per Kant?',
+     opzioni:['Vince la pigrizia e costringe a darsi ordinamenti giuridici migliori',
+              'Rende gli uomini più forti fisicamente',
+              'Riduce la popolazione e quindi la fame',
+              'Impedisce che si formino Stati troppo grandi'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è il primo dei tre articoli definitivi della pace perpetua?',
+     opzioni:['La costituzione repubblicana dentro ogni Stato',
+              'La federazione di liberi Stati',
+              'Il diritto cosmopolitico di ospitalità',
+              'Il disarmo generale degli eserciti'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa prevede il secondo articolo?',
+     opzioni:['Una lega pacifica fra Stati liberi, per la reciproca sicurezza',
+              'Uno Stato mondiale unico che assorba tutti gli altri',
+              'L\'abolizione di ogni frontiera fra i popoli',
+              'Un tribunale che imponga la pace con la forza'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa afferma il diritto cosmopolitico?',
+     opzioni:['Ogni essere umano è cittadino del mondo e ha diritto all\'ospitalità',
+              'Ogni Stato può intervenire negli affari di un altro',
+              'I popoli devono adottare tutti la stessa costituzione',
+              'La cittadinanza va concessa a chiunque ne faccia richiesta'], giusta:0},
+
+    {tipo:'scelta', testo:'Su che cosa si fonda la costituzione repubblicana kantiana?',
+     opzioni:['Libertà, dipendenza da un\'unica legge comune e uguaglianza',
+              'Sovranità popolare esercitata direttamente in assemblea',
+              'Separazione fra la Chiesa e lo Stato',
+              'Elezione diretta di tutti i funzionari pubblici'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa serve perché la pace duri.'}
+  ]
+},
+{
+  titolo: 'Filosofia contemporanea · 3 — La Sinistra hegeliana e Feuerbach',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: quando immagini un essere perfetto, da dove prendi le sue qualità?'},
+
+    {tipo:'scelta', testo:'Come usa la Destra hegeliana la filosofia di Hegel in campo religioso?',
+     opzioni:['Come giustificazione razionale delle credenze tradizionali',
+              'Come strumento per ridurre la religione a mito',
+              'Come prova che la religione va abolita',
+              'Come argomento per fondare una nuova Chiesa'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa fa invece la Sinistra hegeliana con la religione?',
+     opzioni:['La riduce a mito, non riconducibile alla logica razionale',
+              'La difende come la forma più alta dello Spirito',
+              'La considera un ambito che la filosofia non deve toccare',
+              'La sostituisce con il culto dello Stato'], giusta:0},
+
+    {tipo:'scelta', testo:'Come leggono le due scuole la formula «il reale è razionale» in politica?',
+     opzioni:['La Destra la usa per legittimare l\'esistente, la Sinistra per trasformarlo',
+              'La Destra per trasformare l\'esistente, la Sinistra per conservarlo',
+              'Entrambe la usano per giustificare lo Stato prussiano',
+              'Entrambe la considerano priva di senso politico'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa rimprovera Feuerbach alla filosofia delle università?',
+     opzioni:['Di smarrire l\'uomo reale fra vuote astrazioni',
+              'Di occuparsi troppo di politica e poco di logica',
+              'Di essere troppo legata alle scienze naturali',
+              'Di rifiutare il confronto con la teologia'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è il bisogno fondamentale a cui risponde Feuerbach?',
+     opzioni:['Cogliere l\'uomo e la realtà nella loro essenza concreta e finita',
+              'Dimostrare che l\'assoluto è pensiero puro',
+              'Fondare la filosofia su basi matematiche',
+              'Conciliare la fede cristiana con la ragione moderna'], giusta:0},
+
+    {tipo:'scelta', testo:'Quali qualità l\'uomo proietta in Dio, secondo Feuerbach?',
+     opzioni:['Ragione, volontà e cuore, portate all\'infinito',
+              'Forza, bellezza e ricchezza',
+              'Giustizia, ordine e autorità',
+              'Memoria, immaginazione e linguaggio'], giusta:0},
+
+    {tipo:'scelta', testo:'Quale delle tre origini dell\'idea di Dio nasce dall\'opposizione individuo-specie?',
+     opzioni:['Il singolo si sente limitato, ma la specie è illimitata: Dio la personifica',
+              'L\'uomo desidera l\'infinito ma ha mezzi finiti',
+              'L\'uomo dipende dalle forze della natura e le venera',
+              'L\'uomo teme la morte e immagina di sopravvivere'], giusta:0},
+
+    {tipo:'scelta', testo:'Da che cosa nasce la seconda origine, l\'opposizione fra volere e potere?',
+     opzioni:['I desideri sono infiniti ma i mezzi per realizzarli sono limitati',
+              'La volontà umana è debole e va rafforzata',
+              'Chi ha potere impone la propria volontà agli altri',
+              'Il volere è individuale, il potere è collettivo'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa mette l\'uomo dentro l\'idea di Dio.'}
+  ]
+},
+{
+  titolo: 'Filosofia contemporanea · 5 — Il Positivismo: Comte e Mill',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: che cosa vuol dire spiegare qualcosa «scientificamente»?'},
+
+    {tipo:'scelta', testo:'Che cosa fa il positivismo con l\'eredità dell\'Illuminismo?',
+     opzioni:['La riorganizza fondandola sulla sola osservazione scientifica',
+              'La rifiuta come un errore da correggere',
+              'La conserva senza cambiare nulla',
+              'La sostituisce con il sentimento romantico'], giusta:0},
+
+    {tipo:'scelta', testo:'Quali sono i tre stadi della legge di Comte, in ordine?',
+     opzioni:['Teologico, metafisico, positivo',
+              'Metafisico, teologico, positivo',
+              'Positivo, teologico, metafisico',
+              'Teologico, positivo, metafisico'], giusta:0},
+
+    {tipo:'scelta', testo:'Come si spiegano i fenomeni nello stadio teologico?',
+     opzioni:['Con l\'azione di agenti soprannaturali',
+              'Con forze astratte ed essenze occulte',
+              'Con leggi ricavate dall\'osservazione',
+              'Con il caso e la necessità naturale'], giusta:0},
+
+    {tipo:'scelta', testo:'Quale modello sociale corrisponde allo stadio metafisico?',
+     opzioni:['La sovranità popolare e il dominio dei giuristi',
+              'La monarchia teocratica e militare',
+              'La società industriale organizzata dagli scienziati',
+              'La città-Stato retta dai filosofi'], giusta:0},
+
+    {tipo:'scelta', testo:'Quale facoltà domina in ciascuno dei tre stadi di Comte?',
+     opzioni:['Immaginazione, ragione speculativa, osservazione empirica',
+              'Osservazione empirica, immaginazione, ragione speculativa',
+              'Ragione speculativa, osservazione empirica, immaginazione',
+              'Immaginazione, osservazione empirica, ragione speculativa'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa studia la statica sociale?',
+     opzioni:['Le condizioni di esistenza di una società: istituzioni, famiglia, lingua',
+              'Le leggi che regolano lo sviluppo storico',
+              'Il modo in cui le società entrano in crisi',
+              'La distribuzione della ricchezza fra le classi'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa studia invece la dinamica sociale?',
+     opzioni:['Il progresso, cioè le leggi dello sviluppo storico',
+              'L\'ordine e l\'armonia fra le parti della società',
+              'Le istituzioni e il loro funzionamento interno',
+              'I rapporti fra Stati diversi'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è la sociocrazia immaginata da Comte?',
+     opzioni:['Un regime governato razionalmente dalla scienza sociologica',
+              'Il governo diretto del popolo riunito in assemblea',
+              'Una società senza Stato né autorità centrale',
+              'Il governo dei militari sostenuto dagli industriali'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire fin dove arriva la scienza.'}
+  ]
+},
+{
+  titolo: 'Filosofia contemporanea · 7 — Bergson e Weber: la reazione al positivismo',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: un\'ora di lezione e un\'ora con gli amici durano davvero uguale?'},
+
+    {tipo:'scelta', testo:'Quale idea greca viene distrutta dalla svolta di fine Ottocento?',
+     opzioni:['Che l\'anima sia uno specchio passivo della realtà',
+              'Che la natura sia governata da leggi fisse',
+              'Che l\'uomo sia un animale politico',
+              'Che il tempo sia circolare e non lineare'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa afferma Cassirer definendo l\'uomo «animale simbolico»?',
+     opzioni:['La conoscenza non copia la realtà: la costruisce con simboli',
+              'L\'uomo è l\'unico animale che sa parlare',
+              'I simboli hanno origine religiosa e non razionale',
+              'La matematica è l\'unico simbolismo affidabile'], giusta:0},
+
+    {tipo:'scelta', testo:'Dove sta la verità, per la scuola del Baden?',
+     opzioni:['Nella regola intrinseca del conoscere, non nell\'oggetto esterno',
+              'Nell\'oggetto, così come si presenta ai sensi',
+              'Nell\'accordo fra gli studiosi di una disciplina',
+              'Nella corrispondenza fra il pensiero e la parola'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è l\'obiettivo di Dilthey?',
+     opzioni:['Una critica della ragione storica: l\'uomo conosce la storia che fa',
+              'Una critica della ragione pura più rigorosa di quella di Kant',
+              'Ridurre le scienze dello spirito a scienze naturali',
+              'Dimostrare che la storia non è conoscibile'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è l\'Erlebnis, l\'esperienza vissuta?',
+     opzioni:['Il livello del singolo individuo e della sua psiche',
+              'L\'insieme delle istituzioni di un\'epoca',
+              'La cultura generale di un periodo storico',
+              'Il metodo con cui lo storico raccoglie i documenti'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa distingue Kultur e Zivilisation in Spengler?',
+     opzioni:['La prima è la fase creativa e viva, la seconda il declino tecnico',
+              'La prima riguarda l\'arte, la seconda la scienza',
+              'La prima è occidentale, la seconda orientale',
+              'La prima è antica, la seconda è moderna'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa lega, per Weber, l\'etica protestante al capitalismo?',
+     opzioni:['L\'ascesi intramondana: il lavoro come vocazione e prova della grazia',
+              'La condanna religiosa del prestito a interesse',
+              'La libertà di commercio concessa dai principi protestanti',
+              'La superiore istruzione dei paesi protestanti'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa comporta il risparmio ascetico nella spiegazione di Weber?',
+     opzioni:['Limitando i consumi, il capitale si accumula e viene reinvestito',
+              'La ricchezza viene distribuita ai poveri della comunità',
+              'Il denaro viene tesaurizzato senza mai essere impiegato',
+              'Il lusso diventa il segno visibile della grazia divina'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa si perde quando tutto diventa calcolabile.'}
+  ]
+}
 ];
