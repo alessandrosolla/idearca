@@ -1308,11 +1308,21 @@ html[data-theme="dark"] .chi-banda{background:#171d15}
   .peek-open-tit{font-size:1.25rem}
   .peek-open-mat{font-size:.8rem}
   .peek-open-apri,.peek-open-tipo{font-size:.7rem}
-  /* il piede resta a portata di pollice mentre si scorre */
-  .peek-foot{padding:.85rem 1.2rem;gap:.6rem;position:sticky;bottom:0;z-index:3;
+  /* Il piede resta a portata di pollice mentre si scorre, e i due
+     pulsanti stanno su una riga sola: impilati mangiavano due dita
+     di schermo al contenuto, che sul telefono è quello che manca. */
+  /* La direzione va dichiarata: il piede della vetrina è un
+     <footer>, e sotto i 760px il piè di pagina del sito impone
+     flex-direction:column a tutti i footer. Era quello a
+     impilare i due pulsanti. */
+  .peek-foot{padding:.75rem 1rem;gap:.5rem;position:sticky;bottom:0;z-index:3;
+    flex-direction:row;align-items:center;flex-wrap:nowrap;
     background:var(--parchment);border-top:1px solid var(--border);
     box-shadow:0 -6px 18px rgba(28,43,26,.09)}
-  .peek-foot .btn-primary,.peek-foot .btn-secondary{flex:1;font-size:.74rem;padding:.9rem .8rem}
+  .peek-foot .btn-primary{flex:1.6}
+  .peek-foot .btn-secondary{flex:1}
+  .peek-foot .btn-primary,.peek-foot .btn-secondary{font-size:.7rem;padding:.85rem .5rem;
+    white-space:nowrap;letter-spacing:.08em;min-width:0}
   html[data-theme="dark"] .peek-foot{background:#141a12}
 }
 
