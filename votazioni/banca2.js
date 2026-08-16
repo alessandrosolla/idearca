@@ -5691,4 +5691,397 @@ const BANCA2 = [
     {tipo:'nuvola', testo:'Alla fine: una parola per dire perché non si arrivò mai allo scontro diretto.'}
   ]
 }
+,
+{
+  titolo: 'Storia contemporanea · 3 — Guerra civile americana, Giappone e Cina',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: che cosa fa un annuncio che offre cento dollari per riportare indietro una persona?'},
+
+    {tipo:'scelta', testo:'Che cos\'è il «destino manifesto»?',
+     opzioni:['L\'idea che l\'espansione verso Ovest fosse una missione degli Stati Uniti',
+              'Il piano federale per abolire la schiavitù',
+              'La dottrina che vietava l\'ingerenza europea nelle Americhe',
+              'Il progetto di annettere il Canada e il Messico'], giusta:0},
+
+    {tipo:'scelta', testo:'A spese di chi avviene l\'espansione verso Ovest?',
+     opzioni:['Delle popolazioni native, sistematicamente respinte',
+              'Dei coloni francesi della Louisiana',
+              'Dei possedimenti spagnoli in Florida',
+              'Delle colonie britanniche del Nord'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché l\'espansione territoriale innesca un conflitto politico?',
+     opzioni:['Bisogna decidere se i nuovi Stati saranno schiavisti o abolizionisti',
+              'Le nuove terre non hanno risorse sufficienti',
+              'Gli Stati esistenti temono di perdere seggi al Congresso',
+              'L\'esercito federale non riesce a difendere i confini'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa mostrano gli annunci per gli schiavi fuggiti sui giornali dell\'Ottocento?',
+     opzioni:['La riduzione dell\'essere umano a merce, con tanto di taglia',
+              'Il tentativo dei giornali di denunciare la schiavitù',
+              'L\'esistenza di una rete legale per il riscatto',
+              'Il disinteresse dell\'opinione pubblica per il tema'], giusta:0},
+
+    {tipo:'scelta', testo:'Quale dramma psicologico rivelano quegli stessi annunci?',
+     opzioni:['La sistematica distruzione dei legami familiari',
+              'La paura dei proprietari di perdere denaro',
+              'L\'analfabetismo diffuso fra i sorveglianti',
+              'La difficoltà di spostarsi da uno Stato all\'altro'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa fa il discorso di Gettysburg del novembre 1863?',
+     opzioni:['Trasforma una disputa legale sulla secessione in una crociata morale',
+              'Annuncia la fine immediata delle ostilità',
+              'Dichiara l\'abolizione della schiavitù in tutti gli Stati',
+              'Propone un accordo di pace agli Stati confederati'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa succede in Giappone nel 1853?',
+     opzioni:['Arrivano le navi occidentali, in una prova di forza',
+              'Il Giappone dichiara guerra alla Cina',
+              'Comincia la restaurazione Meiji',
+              'Il Giappone firma un\'alleanza con la Russia'], giusta:0},
+
+    {tipo:'scelta', testo:'Che effetto ha quel trauma sul potere dello Shogun?',
+     opzioni:['Ne provoca il collasso, accusato di debolezza, e apre al ritorno imperiale',
+              'Lo rafforza, perché unisce il paese contro lo straniero',
+              'Lo lascia intatto per altri cinquant\'anni',
+              'Lo trasforma in una monarchia costituzionale'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa fa un\'umiliazione a un paese.'}
+  ]
+},
+{
+  titolo: 'Storia contemporanea · 10 — Guglielmo II e i blocchi contrapposti',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: se tutti si alleano per difendersi, perché finisce in guerra?'},
+
+    {tipo:'scelta', testo:'Chi compone la Triplice Alleanza del 1882?',
+     opzioni:['Germania, Austria-Ungheria e Italia',
+              'Gran Bretagna, Francia e Russia',
+              'Germania, Russia e Austria-Ungheria',
+              'Francia, Italia e Gran Bretagna'], giusta:0},
+
+    {tipo:'scelta', testo:'Chi compone la Triplice Intesa del 1907?',
+     opzioni:['Gran Bretagna, Francia e Russia',
+              'Germania, Austria-Ungheria e Italia',
+              'Francia, Russia e Italia',
+              'Gran Bretagna, Giappone e Stati Uniti'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa finisce con la formazione dei due blocchi?',
+     opzioni:['La politica di equilibrio di Bismarck: si va al conflitto',
+              'La corsa agli armamenti navali fra le potenze',
+              'L\'espansione coloniale in Africa e in Asia',
+              'Il sistema delle conferenze internazionali'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa paralizza l\'Impero austro-ungarico?',
+     opzioni:['La questione delle nazionalità e le richieste di autonomia',
+              'La mancanza di risorse economiche',
+              'Un esercito troppo piccolo per i suoi confini',
+              'Il conflitto religioso fra cattolici e protestanti'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa costringe la Russia zarista a concessioni democratiche?',
+     opzioni:['La sconfitta contro il Giappone e la rivoluzione del 1905',
+              'L\'ingresso nella Triplice Intesa',
+              'La pressione dell\'Impero austro-ungarico',
+              'Le rivolte nei Balcani del 1912'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa succede mentre l\'Europa si logora nelle proprie tensioni?',
+     opzioni:['Oltreoceano si delineano nuove potenze industriali',
+              'Le colonie africane ottengono l\'indipendenza',
+              'L\'Asia si chiude a ogni contatto con l\'Occidente',
+              'Il commercio mondiale si arresta del tutto'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è la rivolta dei Boxer?',
+     opzioni:['Un tentativo disperato di resistenza cinese alle potenze coloniali',
+              'Una rivolta contadina contro l\'imperatore cinese',
+              'Un movimento riformista guidato da Sun Yat-sen',
+              'Una guerra fra Cina e Giappone per la Corea'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa accade in Cina nel 1912?',
+     opzioni:['Finisce una storia millenaria: crolla l\'Impero e nasce la Repubblica',
+              'Comincia la guerra civile fra nazionalisti e comunisti',
+              'Il Giappone occupa la Manciuria',
+              'Le potenze europee si spartiscono il paese'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire dove si stava spostando il baricentro del mondo.'}
+  ]
+},
+{
+  titolo: 'Storia contemporanea · 20 — L\'Italia fascista',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: un\'idea può diventare per legge l\'unica ammessa?'},
+
+    {tipo:'scelta', testo:'Che cosa impone il totalitarismo fascista, sul piano ideologico?',
+     opzioni:['L\'ideologia fascista come base fondante esclusiva dello Stato',
+              'La convivenza di più correnti dentro il partito',
+              'Il rispetto formale del pluralismo parlamentare',
+              'La separazione fra ideologia e amministrazione'], giusta:0},
+
+    {tipo:'scelta', testo:'Quali sono le due negazioni su cui si regge?',
+     opzioni:['La negazione strutturale delle libertà e quella individuale del dissenso',
+              'La negazione della proprietà privata e del mercato',
+              'La negazione della religione e della famiglia',
+              'La negazione dell\'esercito e della monarchia'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa costruiscono le leggi «fascistissime» dal 1925?',
+     opzioni:['La struttura giuridica della dittatura e l\'ingabbiamento politico',
+              'Un sistema di garanzie per l\'opposizione',
+              'La riforma dell\'ordinamento giudiziario civile',
+              'Il decentramento dei poteri alle province'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa scrive Gramsci a proposito dei reati associativi?',
+     opzioni:['Pensiero e associazione politica diventano un reato codificato',
+              'La repressione riguarda soltanto la violenza di piazza',
+              'Il regime tollera le opinioni purché non organizzate',
+              'I tribunali ordinari restano indipendenti dal governo'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché la repressione fascista non è solo violenza fisica?',
+     opzioni:['È anche una perversione del diritto penale',
+              'È limitata ai soli capi dei partiti disciolti',
+              'Riguarda solo la stampa e non le persone',
+              'Si esercita esclusivamente nelle campagne'], giusta:0},
+
+    {tipo:'scelta', testo:'Come viene presentato il corporativismo sul piano teorico?',
+     opzioni:['Come una «terza via» fra capitalismo e socialismo',
+              'Come un ritorno alle corporazioni medievali',
+              'Come una forma di socialismo di Stato',
+              'Come un liberismo temperato dallo Stato'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è invece nella pratica?',
+     opzioni:['Uno strumento per irreggimentare le forze produttive',
+              'Un sistema di rappresentanza sindacale libera',
+              'Un metodo di pianificazione economica quinquennale',
+              'Un accordo fra Stato e cooperative agricole'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa denuncia Angelo Del Boca a proposito della Libia?',
+     opzioni:['La brutalità della colonizzazione italiana e le responsabilità di Graziani',
+              'L\'inefficienza economica dell\'impresa coloniale',
+              'Il disinteresse del regime per le colonie',
+              'La resistenza dell\'esercito agli ordini di Mussolini'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa l\'Italia non ha ancora guardato in faccia.'}
+  ]
+},
+{
+  titolo: 'Storia contemporanea · 23 — La coesistenza pacifica',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: se in Europa non si combatte, dove si combatte?'},
+
+    {tipo:'scelta', testo:'Che stato assume la guerra fredda in Europa dopo la rivolta ungherese?',
+     opzioni:['Sembra «congelarsi»',
+              'Si trasforma in conflitto aperto',
+              'Cessa del tutto in tutto il continente',
+              'Si sposta interamente sul terreno economico'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa succede nel frattempo nel resto del mondo?',
+     opzioni:['Il confronto bipolare prosegue nelle aree interessate',
+              'Ogni conflitto viene sospeso dall\'ONU',
+              'Le superpotenze si ritirano dalle aree periferiche',
+              'Nascono blocchi neutrali che sostituiscono i due schieramenti'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa rende globale la guerra fredda, fra il 1945 e il 1965?',
+     opzioni:['Il crollo degli imperi coloniali, avversati da entrambe',
+              'La costruzione del muro di Berlino',
+              'L\'entrata della Cina nelle Nazioni Unite',
+              'La corsa allo spazio fra Stati Uniti e URSS'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa segnala «l\'orologio dell\'apocalisse» degli scienziati?',
+     opzioni:['Il timore per la sopravvivenza dell\'intero genere umano',
+              'La distanza dell\'umanità da un nuovo conflitto convenzionale',
+              'La velocità con cui procede la corsa allo spazio',
+              'Il tempo che resta per fermare l\'inquinamento'], giusta:0},
+
+    {tipo:'scelta', testo:'Come giudicano gli scienziati la divisione bipolare?',
+     opzioni:['Un contesto ineludibile, ma pericoloso con quelle armi',
+              'Un fatto positivo che garantisce la stabilità',
+              'Un\'invenzione della propaganda dei governi',
+              'Una situazione destinata a durare per sempre'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa dice la fonte a proposito dei conflitti del mondo?',
+     opzioni:['Su tutti i conflitti domina la lotta fra comunismo e anticomunismo',
+              'I conflitti dipendono soltanto da cause locali',
+              'Nessun conflitto ha più ragioni ideologiche',
+              'La lotta ideologica riguarda solo l\'Europa'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa nasce in Medio Oriente nel 1948?',
+     opzioni:['Lo Stato d\'Israele, con le radici del conflitto arabo-israeliano',
+              'La Lega araba, come alleanza regionale',
+              'L\'OPEC, l\'organizzazione dei paesi produttori di petrolio',
+              'Il mandato britannico sulla Palestina'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa ottiene l\'India nel 1947?',
+     opzioni:['L\'indipendenza, che avvia il disfacimento degli imperi coloniali',
+              'L\'ingresso nel Commonwealth britannico',
+              'Un seggio permanente al Consiglio di sicurezza',
+              'L\'unificazione con il Pakistan'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa temevano gli scienziati più della guerra.'}
+  ]
+},
+{
+  titolo: 'Storia contemporanea · 24 — Il Sessantotto, la distensione e le crisi',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: che cosa cambia in una protesta se il mondo la vede in diretta?'},
+
+    {tipo:'scelta', testo:'Perché il Sessantotto è la prima generazione televisiva?',
+     opzioni:['Le immagini circolano in diretta e accendono la protesta per emulazione',
+              'Perché la protesta si organizza soltanto in televisione',
+              'Perché la televisione era controllata dagli studenti',
+              'Perché nessun altro mezzo di informazione esisteva'], giusta:0},
+
+    {tipo:'scelta', testo:'Quali due «spettri globali» attraversano la contestazione?',
+     opzioni:['L\'imperialismo in Vietnam e la minaccia nucleare',
+              'La fame nel mondo e la crisi petrolifera',
+              'Il razzismo europeo e la questione coloniale',
+              'La disoccupazione giovanile e l\'inflazione'], giusta:0},
+
+    {tipo:'scelta', testo:'Quali due omicidi segnano il 1968 negli Stati Uniti?',
+     opzioni:['Martin Luther King e Robert F. Kennedy',
+              'John F. Kennedy e Malcolm X',
+              'Martin Luther King e Malcolm X',
+              'Robert F. Kennedy e Medgar Evers'], giusta:0},
+
+    {tipo:'scelta', testo:'Come si chiude il maggio francese?',
+     opzioni:['Sconfitta politica ma vittoria sociale: riforme e aumenti',
+              'Vittoria politica: de Gaulle si dimette immediatamente',
+              'Repressione totale, senza alcuna concessione',
+              'Un accordo che porta gli studenti al governo'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è l\'obiettivo reale della Rivoluzione culturale cinese?',
+     opzioni:['Mao riprende il controllo del partito dopo i fallimenti economici',
+              'Modernizzare l\'industria pesante cinese',
+              'Aprire il paese agli scambi con l\'Occidente',
+              'Riconciliare la Cina con l\'Unione Sovietica'], giusta:0},
+
+    {tipo:'scelta', testo:'Chi sono i protagonisti di quella rivoluzione?',
+     opzioni:['Le Guardie rosse, masse di studenti fanatici',
+              'I quadri del partito e i funzionari statali',
+              'I contadini delle comuni agricole',
+              'I generali dell\'Esercito popolare'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa nasconde il miracolo economico italiano alla fine degli anni Sessanta?',
+     opzioni:['Una grave carenza di servizi e il divario Nord-Sud',
+              'Un calo generalizzato dei consumi privati',
+              'La chiusura delle grandi fabbriche del Nord',
+              'La fine dell\'emigrazione verso l\'estero'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa fa scoppiare la protesta universitaria in Italia?',
+     opzioni:['La popolazione studentesca decuplicata e gli atenei inadeguati',
+              'L\'aumento delle tasse universitarie deciso dal governo',
+              'La chiusura delle facoltà umanistiche',
+              'Il divieto di riunione imposto negli atenei'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa chiedeva davvero quella generazione.'}
+  ]
+},
+{
+  titolo: 'Storia contemporanea · 26 — L\'Italia repubblicana',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: che cosa impedisce a un paese diviso di finire in guerra civile?'},
+
+    {tipo:'scelta', testo:'Da che cosa nasce la Democrazia Cristiana?',
+     opzioni:['Dall\'eredità del Partito Popolare di don Sturzo, legata al mondo cattolico',
+              'Da una scissione del Partito Liberale',
+              'Dall\'esperienza del Partito d\'Azione',
+              'Dalla trasformazione del vecchio Partito Nazionale Fascista'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è il Partito d\'Azione?',
+     opzioni:['Anima liberale e socialista, forte nella Resistenza ma con scarso consenso',
+              'Il partito monarchico erede dello Statuto albertino',
+              'Il movimento erede diretto del fascismo',
+              'La formazione cattolica di sinistra nata nel 1946'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa promuove il Fronte dell\'Uomo Qualunque?',
+     opzioni:['Il disimpegno e la sfiducia verso la politica',
+              'Il ritorno immediato alla monarchia',
+              'L\'alleanza fra cattolici e socialisti',
+              'La partecipazione di massa alla vita pubblica'], giusta:0},
+
+    {tipo:'scelta', testo:'Su quale fondamento poggia la Costituzione del 1948?',
+     opzioni:['La lotta antifascista: il rifiuto dell\'autoritarismo condiviso da fedi diverse',
+              'Il rispetto della continuità con lo Statuto albertino',
+              'Un accordo fra le potenze vincitrici della guerra',
+              'La supremazia del potere esecutivo sugli altri'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa regola l\'articolo 7 della Costituzione?',
+     opzioni:['I rapporti fra Stato e Chiesa, con il consenso anche del PCI',
+              'Il diritto di sciopero dei lavoratori',
+              'L\'organizzazione delle regioni a statuto speciale',
+              'L\'elezione del Presidente della Repubblica'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa succede il 14 luglio 1948?',
+     opzioni:['Il neofascista Antonio Pallante spara a Palmiro Togliatti',
+              'Viene sciolta la coalizione di unità nazionale',
+              'La CGIL si divide in tre sindacati distinti',
+              'Il governo De Gasperi cade per la prima volta'], giusta:0},
+
+    {tipo:'scelta', testo:'Come si risolve quella crisi?',
+     opzioni:['I vertici di PCI e CGIL fermano l\'insurrezione',
+              'L\'esercito occupa le principali città del Nord',
+              'Il governo proclama lo stato d\'assedio',
+              'Si va a elezioni anticipate in autunno'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa succede il 12 dicembre 1969 a Milano?',
+     opzioni:['La bomba alla Banca Nazionale dell\'Agricoltura in piazza Fontana: 17 morti',
+              'Il rapimento di Aldo Moro da parte delle Brigate Rosse',
+              'L\'occupazione della Cattolica da parte degli studenti',
+              'Lo sciopero generale contro il governo di centro-sinistra'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa tenne in piedi la Repubblica nel 1948.'}
+  ]
+},
+{
+  titolo: 'Storia contemporanea · 27 — Globalizzazione e nuove crisi',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: quando cade un equilibrio a due, chi decide?'},
+
+    {tipo:'scelta', testo:'Che cosa lascia la fine del bipolarismo?',
+     opzioni:['Un mondo unipolare, la cui stabilità resta però da verificare',
+              'Un ritorno immediato all\'equilibrio multipolare',
+              'Un sistema governato dalle Nazioni Unite',
+              'La scomparsa di ogni conflitto armato'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa rappresentano le guerre balcaniche degli anni Novanta?',
+     opzioni:['Il banco di prova, fallito, per il nuovo ordine unipolare',
+              'Un conflitto puramente regionale senza conseguenze',
+              'L\'ultimo episodio della guerra fredda',
+              'Il primo intervento riuscito delle Nazioni Unite'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa solleva l\'analisi di Jože Pirjevec su Srebrenica?',
+     opzioni:['Dubbi sull\'intervento globale e sulle colpe dell\'ONU',
+              'Dubbi sul numero reale delle vittime',
+              'La necessità di sciogliere la NATO',
+              'La richiesta di un risarcimento ai paesi coinvolti'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa fa l\'Unione Europea di fronte al mondo unipolare?',
+     opzioni:['Si integra ancora di più, come risposta coesa del continente',
+              'Si divide in blocchi regionali contrapposti',
+              'Rinuncia a ogni politica estera comune',
+              'Si scioglie in una semplice area di libero scambio'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa sostiene Umberto Tulli sull\'Unione Europea?',
+     opzioni:['Non si definisce solo da sé: si riposiziona verso gli USA',
+              'È nata unicamente come progetto economico',
+              'Ha perso ogni rapporto con gli Stati Uniti',
+              'Deve la propria esistenza alla sola Germania'], giusta:0},
+
+    {tipo:'scelta', testo:'Quale regione viene indicata come laboratorio di trasformazione?',
+     opzioni:['L\'America Latina, con dinamiche sociali nuove',
+              'L\'Africa subsahariana',
+              'Il Sud-est asiatico',
+              'Il Medio Oriente'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa sostiene Ulrich Beck sugli errori del globalismo?',
+     opzioni:['Va destrutturato il mito del mercato infallibile',
+              'La globalizzazione è un fenomeno del tutto positivo',
+              'Il mercato mondiale non esiste davvero',
+              'Gli Stati nazionali sono destinati a scomparire'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa offre il Diario russo di Anna Politkovskaja?',
+     opzioni:['Una voce critica dall\'interno sulle contraddizioni della Russia',
+              'Una difesa della politica estera del Cremlino',
+              'Un\'analisi economica dei mercati energetici',
+              'Un resoconto ufficiale delle guerre balcaniche'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire dove si sta spostando il baricentro globale.'}
+  ]
+}
 ];
