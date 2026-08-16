@@ -257,3 +257,10 @@ table.punti tr.tot td{font-weight:700;border-top:2px solid var(--ink)}
 .tile-lucchetto{display:inline-flex;align-items:center;gap:.3rem;font-size:.6rem;
   letter-spacing:.12em;text-transform:uppercase;font-weight:700;margin-top:.5rem;
   background:rgba(255,255,255,.22);padding:.15rem .5rem;border-radius:100px}
+
+
+/* il pulsante che apre la griglia da stampare */
+.stampa{font:inherit;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;
+  font-weight:700;padding:.7rem 1.4rem;border-radius:100px;cursor:pointer;margin-top:.9rem;
+  border:1.5px solid #9a7c2e;background:#fff;color:#8a6a1e;transition:all .16s}
+.stampa:hover{background:#9a7c2e;color:#fff}
