@@ -5242,4 +5242,453 @@ const BANCA2 = [
     {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa costa salvare una rivoluzione.'}
   ]
 }
+,
+{
+  titolo: 'Storia contemporanea · 14 — Il dopoguerra in Europa',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: chi paga il conto di una guerra, dopo che è finita?'},
+
+    {tipo:'scelta', testo:'Che cosa succede all\'industria alla fine della guerra?',
+     opzioni:['Finisce la militarizzazione e la riconversione fallisce',
+              'La produzione cresce senza interruzioni',
+              'Le fabbriche passano tutte allo Stato',
+              'Le industrie si spostano nelle campagne'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa avverte Keynes nelle Conseguenze economiche della pace?',
+     opzioni:['Le riparazioni insostenibili distruggeranno l\'economia continentale',
+              'Le riparazioni sono troppo basse per risarcire i vincitori',
+              'L\'Europa si riprenderà da sola entro pochi anni',
+              'La Germania deve essere divisa in più Stati'], giusta:0},
+
+    {tipo:'scelta', testo:'Quale strategia sceglie la Gran Bretagna per stabilizzarsi?',
+     opzioni:['L\'ortodossia finanziaria: ritorno forzato al Gold Standard',
+              'Il pragmatismo: prestiti americani e svalutazione',
+              'L\'autarchia: chiusura totale agli scambi',
+              'La spesa pubblica in grandi lavori'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è il risultato di quella scelta britannica?',
+     opzioni:['Fatica cronica: disoccupazione, inflazione, stagnazione prolungata',
+              'Una rapida ripresa e la piena occupazione',
+              'La svalutazione immediata della sterlina',
+              'L\'uscita dal sistema monetario internazionale'], giusta:0},
+
+    {tipo:'scelta', testo:'Come si stabilizza invece la Francia dal 1924?',
+     opzioni:['Con prestiti statunitensi e governi di unità nazionale',
+              'Con il ritorno immediato al Gold Standard',
+              'Con l\'annessione della Ruhr',
+              'Con la riduzione delle riparazioni tedesche'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché gli Stati Uniti sono il nuovo motore globale degli anni Venti?',
+     opzioni:['Emergono come potenza indiscussa, con l\'esplosione dei colletti bianchi',
+              'Perché hanno subìto le perdite maggiori in guerra',
+              'Perché controllano militarmente l\'Europa',
+              'Perché adottano per primi il Gold Standard'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa stabilisce il Trattato di Locarno del 1925?',
+     opzioni:['Francia, Belgio e Germania riconoscono i confini reciproci',
+              'La Germania entra nella Società delle Nazioni',
+              'La guerra viene messa al bando come strumento politico',
+              'Le riparazioni tedesche vengono cancellate'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa succede alla Germania nel 1926?',
+     opzioni:['Entra nella Società delle Nazioni: finisce il suo isolamento',
+              'Viene occupata militarmente dalla Francia',
+              'Rifiuta di pagare le riparazioni di guerra',
+              'Firma un\'alleanza militare con l\'Unione Sovietica'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire quanto era solida la pace degli anni Venti.'}
+  ]
+},
+{
+  titolo: 'Storia contemporanea · 15 — Dal dopoguerra al fascismo',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: chi ha paura di perdere tutto, chi è disposto a sostenere?'},
+
+    {tipo:'scelta', testo:'Quali sono i due fronti che assediano lo Stato liberale?',
+     opzioni:['La minaccia proletaria e la frustrazione nazionalista',
+              'La monarchia e la Chiesa cattolica',
+              'L\'esercito e le corporazioni industriali',
+              'I contadini del Sud e gli operai del Nord'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa fanno operai e braccianti nel biennio rosso?',
+     opzioni:['Occupano le fabbriche al Nord e le terre al Sud',
+              'Fondano un partito unico dei lavoratori',
+              'Entrano nel governo con propri ministri',
+              'Emigrano in massa verso le Americhe'], giusta:0},
+
+    {tipo:'scelta', testo:'Su che cosa si fonda il mito della «vittoria mutilata»?',
+     opzioni:['La mancata annessione di Fiume e della Dalmazia, promesse a Londra',
+              'La sconfitta italiana a Caporetto',
+              'Il rifiuto dell\'Italia di firmare la pace',
+              'La perdita delle colonie africane'], giusta:0},
+
+    {tipo:'scelta', testo:'Come reagisce lo Stato giolittiano all\'occupazione delle fabbriche?',
+     opzioni:['Sceglie la mediazione: si torna alla normalità senza sangue',
+              'Manda l\'esercito a sgomberare gli stabilimenti',
+              'Nazionalizza le industrie occupate',
+              'Dichiara lo stato d\'assedio in tutto il Nord'], giusta:0},
+
+    {tipo:'scelta', testo:'Come reagiscono industriali e latifondisti a quella mediazione?',
+     opzioni:['Perdono fiducia nel governo liberale, giudicato debole e incapace',
+              'Approvano la scelta e sostengono Giolitti',
+              'Chiedono l\'intervento della Società delle Nazioni',
+              'Accettano le richieste dei lavoratori'], giusta:0},
+
+    {tipo:'scelta', testo:'Come vanno le elezioni del 1919 per i Fasci di combattimento?',
+     opzioni:['Un insuccesso totale',
+              'Una vittoria schiacciante',
+              'Un risultato che li porta al governo',
+              'Un pareggio con i socialisti'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa cambia Mussolini dopo quella sconfitta?',
+     opzioni:['Abbandona le idee radicali e si offre come milizia contro i socialisti',
+              'Scioglie i Fasci e si ritira dalla politica',
+              'Si allea con il Partito socialista',
+              'Chiede l\'appoggio della Società delle Nazioni'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa fa Vittorio Emanuele III davanti alla marcia su Roma?',
+     opzioni:['Rifiuta di firmare lo stato d\'assedio e affida a Mussolini il governo',
+              'Ordina all\'esercito di fermare le squadre fasciste',
+              'Abdica in favore del figlio',
+              'Convoca nuove elezioni generali'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire chi ha aperto la porta al fascismo.'}
+  ]
+},
+{
+  titolo: 'Storia contemporanea · 16 — La crisi del 1929',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: davanti a una crisi, lo Stato deve intervenire o farsi da parte?'},
+
+    {tipo:'scelta', testo:'Quali due «laboratori» risponderanno alla crisi?',
+     opzioni:['Gli Stati Uniti col New Deal e l\'Italia fascista',
+              'La Gran Bretagna e la Francia',
+              'La Germania e l\'Unione Sovietica',
+              'Il Giappone e la Cina'], giusta:0},
+
+    {tipo:'scelta', testo:'Su quale metodo politico si regge il New Deal?',
+     opzioni:['Il consenso democratico, cercato anche alla radio',
+              'La dittatura e la compressione dei diritti',
+              'Il controllo militare dell\'economia',
+              'L\'accordo segreto con le grandi banche'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è il primo passo dell\'effetto a catena in Italia?',
+     opzioni:['Il crollo di Wall Street e lo stop ai flussi finanziari',
+              'Il fallimento delle industrie meccaniche',
+              'La svalutazione della lira',
+              'La chiusura delle banche popolari'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché le banche italiane si indeboliscono per prime?',
+     opzioni:['Avevano concesso ampi prestiti all\'industria',
+              'Avevano investito tutto in titoli americani',
+              'Erano state nazionalizzate poco prima',
+              'Non avevano riserve auree sufficienti'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa rende «imperativo» l\'intervento dello Stato?',
+     opzioni:['Evitare il collasso totale del sistema produttivo',
+              'Rispettare gli accordi internazionali sul debito',
+              'Finanziare la guerra in Etiopia',
+              'Ridurre la disoccupazione nelle campagne'], giusta:0},
+
+    {tipo:'scelta', testo:'A che cosa servono i lavori pubblici del regime?',
+     opzioni:['Ridurre la disoccupazione e celebrare il regime',
+              'Modernizzare il sistema bancario',
+              'Aumentare le esportazioni verso l\'estero',
+              'Preparare il ritorno al libero mercato'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è l\'autarchia?',
+     opzioni:['Un sistema economico che deve bastare a sé stesso',
+              'Un\'alleanza doganale fra Stati amici',
+              'La libertà totale di commercio con l\'estero',
+              'L\'affidamento dell\'economia ai privati'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è il costo sociale della ristrutturazione fascista?',
+     opzioni:['L\'azzeramento dei diritti dei lavoratori',
+              'L\'aumento delle tasse sulla piccola proprietà',
+              'La riduzione delle spese militari',
+              'La chiusura delle grandi industrie del Nord'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa hanno in comune New Deal e autarchia.'}
+  ]
+},
+{
+  titolo: 'Storia contemporanea · 17 — L\'Unione Sovietica di Stalin',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: una costituzione scritta bene garantisce dei diritti?'},
+
+    {tipo:'scelta', testo:'Che cosa aboliscono i piani quinquennali?',
+     opzioni:['Ogni residuo di iniziativa economica privata, cioè la NEP',
+              'Il monopolio statale sul commercio estero',
+              'La proprietà collettiva della terra',
+              'Il ruolo del Partito nella pianificazione'], giusta:0},
+
+    {tipo:'scelta', testo:'Di quanto puntano ad aumentare la produzione industriale?',
+     opzioni:['Del 180%',
+              'Del 50%',
+              'Del 300%',
+              'Del 25%'], giusta:0},
+
+    {tipo:'scelta', testo:'Su quali settori si concentrano i piani?',
+     opzioni:['Industria pesante: acciaierie, carbone, petrolio, centrali elettriche',
+              'Industria leggera: tessile, alimentare, calzature',
+              'Agricoltura meccanizzata e allevamento',
+              'Commercio e servizi alle famiglie'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è lo stacanovismo?',
+     opzioni:['Una mobilitazione ideologica che esalta la competizione fra lavoratori',
+              'Un movimento sindacale per la riduzione dell\'orario',
+              'Un piano di formazione tecnica per gli operai',
+              'Una forma di protesta contro i ritmi di fabbrica'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa afferma l\'articolo 3 della Costituzione del 1936?',
+     opzioni:['Tutto il potere appartiene ai lavoratori',
+              'Il Partito comunista guida lo Stato',
+              'La proprietà privata è inviolabile',
+              'Le repubbliche possono uscire dall\'Unione'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è la nomenklatura?',
+     opzioni:['La nuova classe privilegiata dei dirigenti di partito',
+              'L\'elenco ufficiale dei lavoratori modello',
+              'Il registro delle imprese di Stato',
+              'L\'insieme dei detenuti nei campi di lavoro'], giusta:0},
+
+    {tipo:'scelta', testo:'Quale evento del dicembre 1934 innesca il Grande Terrore?',
+     opzioni:['L\'assassinio di Sergej Kirov',
+              'Il XVII Congresso del Partito',
+              'La fine del primo piano quinquennale',
+              'L\'espulsione di Trockij dall\'URSS'], giusta:0},
+
+    {tipo:'scelta', testo:'Quali due funzioni ha il sistema dei Gulag?',
+     opzioni:['Punire e rieducare i dissidenti, e sfruttarne il lavoro a costo zero',
+              'Ospitare i prigionieri di guerra e i disertori',
+              'Formare i quadri tecnici del Partito',
+              'Isolare i malati contagiosi dalle città'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire la distanza fra una carta e la sua prassi.'}
+  ]
+},
+{
+  titolo: 'Storia contemporanea · 18 — Il nazismo',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: la persecuzione comincia con la violenza o con una firma?'},
+
+    {tipo:'scelta', testo:'Quali sono i quattro pilastri del Mein Kampf?',
+     opzioni:['Antisemitismo, spazio vitale, militarismo, antidemocrazia',
+              'Autarchia, corporativismo, nazionalismo, colonialismo',
+              'Collettivizzazione, piani, partito unico, terrore',
+              'Libero mercato, imperialismo, nazionalismo, monarchia'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa stabilisce il punto 4 del programma nazista?',
+     opzioni:['La cittadinanza è vincolata all\'appartenenza al sangue tedesco',
+              'Ogni cittadino ha diritto al lavoro garantito',
+              'Le colonie perdute vanno riconquistate subito',
+              'Il parlamento va eletto a suffragio universale'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa avviene la Notte dei lunghi coltelli del 30 giugno 1934?',
+     opzioni:['Hitler fa massacrare i vertici delle SA per avere l\'appoggio dell\'esercito',
+              'Le SS incendiano le sinagoghe in tutta la Germania',
+              'Hindenburg viene costretto a dimettersi',
+              'Il Reichstag viene incendiato e sciolto'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è la Gestapo, e a chi risponde?',
+     opzioni:['La polizia segreta di Stato, impunita e fuori dalla magistratura',
+              'Il corpo d\'élite guidato da Himmler',
+              'L\'esercito regolare del Reich',
+              'La milizia di partito nata prima del 1933'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è la Gleichschaltung?',
+     opzioni:['La sincronizzazione culturale di tutta la società',
+              'La riorganizzazione dell\'esercito tedesco',
+              'Il piano di riarmo industriale del Reich',
+              'La riforma amministrativa dei Länder'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa fa il Ministero della Propaganda di Goebbels?',
+     opzioni:['Controlla radio, cinema, teatri e stampa',
+              'Cura solo i rapporti con la stampa estera',
+              'Gestisce l\'istruzione nelle università',
+              'Organizza le manifestazioni sportive del regime'], giusta:0},
+
+    {tipo:'scelta', testo:'Quali sono le tre fasi dell\'escalation antisemita dal 1933 al 1938?',
+     opzioni:['Emarginazione, segregazione legale, violenza di Stato',
+              'Violenza di Stato, emarginazione, segregazione',
+              'Segregazione, deportazione, sterminio',
+              'Boicottaggio, arruolamento, espulsione'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa succede nella Notte dei cristalli del 9 novembre 1938?',
+     opzioni:['Sinagoghe e negozi distrutti, 30.000 ebrei deportati, beni confiscati',
+              'Vengono promulgate le leggi razziali di Norimberga',
+              'Gli ebrei vengono espulsi dall\'amministrazione statale',
+              'Viene istituito il primo campo di concentramento'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire quando bisognava fermarsi.'}
+  ]
+},
+{
+  titolo: 'Storia contemporanea · 19 — La guerra di Spagna e l\'espansionismo',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: se un vicino si arma e nessuno lo ferma, che cosa succede?'},
+
+    {tipo:'scelta', testo:'Che cosa fa la Germania nel 1933?',
+     opzioni:['Esce dalla Società delle Nazioni e si riarma',
+              'Annette l\'Austria con un colpo di mano',
+              'Firma il patto Ribbentrop-Molotov',
+              'Occupa la regione dei Sudeti'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché fallisce il tentativo di annettere l\'Austria nel 1934?',
+     opzioni:['Per l\'intervento delle truppe italiane al Brennero',
+              'Per l\'opposizione della Società delle Nazioni',
+              'Per una rivolta popolare a Vienna',
+              'Per il veto dell\'Unione Sovietica'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa decide il plebiscito della Saar del 1935?',
+     opzioni:['La regione mineraria vota per il ritorno alla Germania',
+              'La regione sceglie l\'indipendenza',
+              'La regione resta sotto amministrazione francese',
+              'La regione viene divisa fra Francia e Germania'], giusta:0},
+
+    {tipo:'scelta', testo:'Come reagiscono le democrazie a queste mosse?',
+     opzioni:['Con proteste indignate ma senza agire insieme',
+              'Con un blocco navale immediato',
+              'Con la dichiarazione di guerra alla Germania',
+              'Con l\'espulsione della Germania da ogni trattato'], giusta:0},
+
+    {tipo:'scelta', testo:'Chi instaura un regime autoritario in Ungheria nel 1920?',
+     opzioni:['L\'ammiraglio Miklós Horthy',
+              'Il generale Józef Piłsudski',
+              'Béla Kun, con la rivoluzione comunista',
+              'Il maresciallo Pétain'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa fa Piłsudski in Polonia nel 1926?',
+     opzioni:['Guida un colpo di Stato militare contro un parlamento frammentato',
+              'Instaura una monarchia costituzionale',
+              'Firma un\'alleanza con l\'Unione Sovietica',
+              'Convoca elezioni libere per la prima volta'], giusta:0},
+
+    {tipo:'scelta', testo:'Quali due paesi resistono all\'onda autoritaria in Europa occidentale?',
+     opzioni:['Francia e Gran Bretagna, seppure indebolite',
+              'Spagna e Portogallo',
+              'Italia e Germania',
+              'Ungheria e Polonia'], giusta:0},
+
+    {tipo:'scelta', testo:'Quale politica adotta la Gran Bretagna, pur avendo istituzioni solide?',
+     opzioni:['Una politica estera di formale «non intervento»',
+              'L\'intervento armato a fianco della Spagna repubblicana',
+              'Un\'alleanza militare con l\'Unione Sovietica',
+              'Il riarmo immediato e la mobilitazione generale'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa costa non decidere.'}
+  ]
+},
+{
+  titolo: 'Storia contemporanea · 21 — La Seconda guerra mondiale',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: che cosa distingue una guerra da uno sterminio?'},
+
+    {tipo:'scelta', testo:'Come concepisce il nazismo l\'Europa orientale?',
+     opzioni:['Come un serbatoio di materie prime e forza lavoro',
+              'Come un\'area da industrializzare rapidamente',
+              'Come un territorio da lasciare autonomo',
+              'Come una zona di scambio commerciale'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa fanno le Einsatzgruppen?',
+     opzioni:['Compiono fucilazioni indiscriminate di civili nei villaggi sovietici',
+              'Coordinano i rifornimenti dell\'esercito regolare',
+              'Amministrano i territori occupati a est',
+              'Reclutano volontari nelle popolazioni locali'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa sostiene Hannah Arendt sui Lager, nelle Origini del totalitarismo?',
+     opzioni:['Servono a trasformare l\'uomo in qualcosa che neppure gli animali sono',
+              'Servono soltanto a eliminare gli oppositori politici',
+              'Sono una forma estrema di schiavitù conosciuta anche nell\'antichità',
+              'Sono nati come campi di lavoro e poi degenerati'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa impone il terrore, secondo quell\'analisi?',
+     opzioni:['L\'oblio: i sopravvissuti si sentono tagliati fuori dal mondo dei vivi',
+              'La sottomissione immediata di ogni popolazione',
+              'La collaborazione delle vittime con i carnefici',
+              'La fine di ogni forma di resistenza organizzata'], giusta:0},
+
+    {tipo:'scelta', testo:'Come tratta la Germania l\'Italia della RSI, pur formalmente alleata?',
+     opzioni:['A tutti gli effetti come un paese vinto e occupato',
+              'Come un alleato paritario nelle decisioni militari',
+              'Come uno Stato neutrale da rispettare',
+              'Come un protettorato con ampia autonomia'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa assume, nel Centro-Nord, la lotta al nazifascismo?',
+     opzioni:['I caratteri di una spietata guerra civile fra partigiani e repubblichini',
+              'La forma di uno scontro esclusivamente militare',
+              'Il carattere di una rivolta contadina',
+              'Le forme di una protesta pacifica e non violenta'], giusta:0},
+
+    {tipo:'scelta', testo:'Come si sottraggono alla giustizia le massime figure del Terzo Reich?',
+     opzioni:['Suicidandosi, come Hitler e Himmler',
+              'Fuggendo tutti in America Latina',
+              'Costituendosi spontaneamente agli Alleati',
+              'Nascondendosi nelle zone occupate dai sovietici'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è il quesito storico che resta aperto alla fine?',
+     opzioni:['Come giudicare crimini inauditi commessi da uno Stato',
+              'Chi abbia sparato il primo colpo del conflitto',
+              'Quanto sia costata la guerra in denaro',
+              'Se la guerra si potesse vincere prima'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa il diritto ha dovuto inventare dopo il 1945.'}
+  ]
+},
+{
+  titolo: 'Storia contemporanea · 22 — La guerra fredda',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: due potenze che non possono attaccarsi, dove si scontrano?'},
+
+    {tipo:'scelta', testo:'Chi pronuncia il discorso sulla «cortina di ferro»?',
+     opzioni:['Winston Churchill',
+              'Franklin D. Roosevelt',
+              'Harry Truman',
+              'George Marshall'], giusta:0},
+
+    {tipo:'scelta', testo:'Quale monito contiene quel discorso?',
+     opzioni:['Serve un\'unità europea in cui nessuna nazione forte resti emarginata',
+              'Serve un intervento militare immediato contro l\'URSS',
+              'Serve dividere la Germania in quattro Stati separati',
+              'Serve rinunciare a ogni alleanza militare'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché la Germania diventa il simbolo fisico della guerra fredda?',
+     opzioni:['Territorio e capitale sono frammentati in zone d\'influenza separate',
+              'Perché è il paese più armato d\'Europa',
+              'Perché ospita le sedi delle Nazioni Unite',
+              'Perché rifiuta di schierarsi con uno dei due blocchi'], giusta:0},
+
+    {tipo:'scelta', testo:'Come rispondono gli Alleati al blocco di Berlino?',
+     opzioni:['Con un ponte aereo, evitando lo scontro diretto',
+              'Con l\'invio di truppe a forzare i posti di blocco',
+              'Con l\'abbandono della zona occidentale della città',
+              'Con un ultimatum militare all\'Unione Sovietica'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa rende impensabile lo scontro diretto fra le superpotenze?',
+     opzioni:['L\'equilibrio del terrore prodotto dalla bomba atomica',
+              'Il divieto imposto dalle Nazioni Unite',
+              'La mancanza di eserciti sufficientemente grandi',
+              'Gli accordi commerciali che le legano'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa sono, di conseguenza, le «guerre controllate»?',
+     opzioni:['Conflitti periferici, la cui distruttività resta rigidamente regolata',
+              'Guerre combattute solo con armi convenzionali leggere',
+              'Esercitazioni militari congiunte fra i due blocchi',
+              'Conflitti dichiarati e conclusi dall\'ONU'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa succede in Asia fra il 1947 e il 1949?',
+     opzioni:['India indipendente, nascita di Israele, Repubblica Popolare Cinese',
+              'Guerra di Corea, rivoluzione cubana, indipendenza algerina',
+              'Nascita del Patto di Varsavia e della NATO',
+              'Fine della guerra civile in Grecia e in Turchia'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché la svolta cinese del 1949 è definita «sismica»?',
+     opzioni:['Cambia gli equilibri del continente a sfavore dell\'Occidente',
+              'Perché segna la fine dell\'Unione Sovietica in Asia',
+              'Perché porta la Cina nell\'orbita americana',
+              'Perché apre la strada al disarmo generale'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire perché non si arrivò mai allo scontro diretto.'}
+  ]
+}
 ];
