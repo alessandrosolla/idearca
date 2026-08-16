@@ -414,4 +414,454 @@ const BANCA2 = [
     {tipo:'nuvola', testo:'Alla fine: scrivi una cosa che non dipende da te e che smetterai di prendertela.'}
   ]
 }
+,
+{
+  titolo: 'Filosofia medievale · 1 — La filosofia nel Medioevo',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: una parola che ti viene in mente pensando alla filosofia del Medioevo.'},
+
+    {tipo:'scelta', testo:'Qual è la domanda al centro del problema degli universali?',
+     opzioni:['Ai termini generali come «uomo» corrisponde qualcosa di reale nelle cose?',
+              'Le parole del linguaggio comune sono adatte a parlare di Dio?',
+              'La ragione può dimostrare le verità rivelate dalla fede?',
+              'Gli antichi filosofi pagani potevano salvarsi senza il battesimo?'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa rispondono i realisti al problema degli universali?',
+     opzioni:['Esiste una realtà comune agli individui, indipendente dalla nostra mente',
+              'Gli universali sono soltanto suoni emessi dalla voce umana',
+              'Gli universali esistono solo nella mente di Dio e non altrove',
+              'La questione non si può decidere e va lasciata alla fede'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa rispondono i nominalisti?',
+     opzioni:['Alla natura reale sostituiscono concetti mentali, spostando il problema sul linguaggio',
+              'Gli universali sono le idee eterne che Platone poneva in un mondo separato',
+              'Ogni termine generale corrisponde a una sostanza presente nelle cose',
+              'Solo la rivelazione può dire quali termini generali siano veri'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa vuole dimostrare Anselmo con la prova ontologica?',
+     opzioni:['Che Dio esiste, partendo soltanto dal concetto di Dio',
+              'Che il mondo ha avuto un inizio nel tempo',
+              'Che la fede precede necessariamente la ragione',
+              'Che le creature sono meno perfette del loro creatore'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa afferma il rasoio di Ockham?',
+     opzioni:['Non bisogna moltiplicare gli enti senza necessità',
+              'Ogni conoscenza deve partire dalla rivelazione divina',
+              'Le cause naturali di un fatto sono sempre quattro',
+              'Il vero si riconosce dalla chiarezza dell\'idea'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa comporta, per Ockham, l\'onnipotenza divina?',
+     opzioni:['Il mondo è come è perché Dio lo ha voluto così, ma poteva essere diverso',
+              'Dio è tenuto a seguire le leggi della logica in ogni sua azione',
+              'Il mondo è necessariamente il migliore dei mondi possibili',
+              'Le leggi di natura sono eterne quanto Dio stesso'], giusta:0},
+
+    {tipo:'scelta', testo:'Che conseguenza ha la posizione di Ockham sul modo di studiare la natura?',
+     opzioni:['Se poteva essere diverso, il mondo va osservato e non dedotto',
+              'La natura si conosce meglio leggendo i testi degli antichi',
+              'Lo studio della natura è inutile perché tutto dipende da Dio',
+              'La matematica diventa l\'unico strumento davvero affidabile'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa separa Ockham rispetto alla scolastica precedente?',
+     opzioni:['Ritiene che fede e ragione abbiano campi distinti e non si dimostrino a vicenda',
+              'Nega che la fede possa avere un contenuto razionale qualsiasi',
+              'Sostiene che la teologia debba assorbire tutte le altre scienze',
+              'Afferma che la filosofia antica sia superiore alla rivelazione'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: in una parola, che cosa vuol dire «universale».'}
+  ]
+},
+{
+  titolo: 'Filosofia antica · 11 — Il neoplatonismo e Plotino',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: può esistere qualcosa che è al di là dell\'essere?'},
+
+    {tipo:'scelta', testo:'Che cos\'è l\'Uno per Plotino?',
+     opzioni:['Il principio che sta al di là dell\'essere e del pensiero',
+              'Il primo dei quattro elementi da cui deriva il cosmo',
+              'La mente divina che contiene tutte le idee',
+              'L\'anima del mondo che muove i corpi celesti'], giusta:0},
+
+    {tipo:'scelta', testo:'Come nascono le cose dall\'Uno, secondo Plotino?',
+     opzioni:['Per emanazione, come la luce da una sorgente, senza che l\'Uno si consumi',
+              'Per creazione volontaria, come un artigiano che fabbrica un oggetto',
+              'Per caduta accidentale di una parte dell\'Uno nella materia',
+              'Per generazione sessuale fra due principi opposti'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è l\'ordine dei gradi nella processione plotiniana?',
+     opzioni:['Uno, Intelletto, Anima, mondo sensibile',
+              'Materia, Anima, Intelletto, Uno',
+              'Uno, Anima, Materia, Intelletto',
+              'Intelletto, Uno, mondo sensibile, Anima'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché dell\'Uno si può dire soltanto ciò che non è?',
+     opzioni:['Ogni predicato lo limiterebbe, e l\'Uno è al di là di ogni determinazione',
+              'Il linguaggio umano è stato corrotto dal peccato originale',
+              'Solo gli iniziati ai misteri possono nominarlo apertamente',
+              'L\'Uno cambia continuamente e nessun nome resterebbe valido'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è la materia per Plotino?',
+     opzioni:['L\'ultimo grado della processione, dove la luce dell\'Uno si spegne',
+              'Il principio opposto all\'Uno, eterno e altrettanto potente',
+              'La sostanza di cui sono fatte le idee dell\'Intelletto',
+              'Una creazione diretta dell\'Uno, buona quanto le altre'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è il fine della vita per Plotino?',
+     opzioni:['Il ritorno dell\'anima all\'Uno, fino all\'unione estatica',
+              'La costruzione di una città giusta secondo ragione',
+              'La conoscenza completa delle cause naturali',
+              'La soddisfazione moderata dei desideri necessari'], giusta:0},
+
+    {tipo:'scelta', testo:'Che rapporto ha Plotino con Platone?',
+     opzioni:['Si considera un interprete di Platone e ne prolunga la dottrina in senso religioso',
+              'Rifiuta la teoria delle idee e torna alla fisica dei presocratici',
+              'Corregge Platone accogliendo la critica di Aristotele',
+              'Ne prende soltanto la dottrina politica e ne scarta il resto'], giusta:0},
+
+    {tipo:'scelta', testo:'Che influenza ha avuto il neoplatonismo sul pensiero successivo?',
+     opzioni:['Ha dato alla teologia cristiana il suo linguaggio filosofico',
+              'È rimasto una dottrina di scuola, senza seguito dopo il III secolo',
+              'Ha ispirato l\'atomismo moderno di Gassendi e di Newton',
+              'Ha determinato la nascita della logica formale medievale'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire da dove viene tutto.'}
+  ]
+}
+,
+{
+  titolo: 'Filosofia moderna · 6 — La rivoluzione scientifica',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: che cosa rende una spiegazione «scientifica»?'},
+
+    {tipo:'scelta', testo:'Che cosa afferma la teoria eliocentrica di Copernico?',
+     opzioni:['La Terra gira intorno al Sole e ruota su sé stessa',
+              'Il Sole e i pianeti girano intorno alla Terra ferma',
+              'L\'universo è infinito e non ha nessun centro',
+              'I pianeti si muovono su orbite ellittiche e non circolari'], giusta:0},
+
+    {tipo:'scelta', testo:'Quale correzione introduce Keplero rispetto a Copernico?',
+     opzioni:['Le orbite dei pianeti sono ellittiche, non circolari',
+              'Il centro dell\'universo è la Terra e non il Sole',
+              'I pianeti si muovono a velocità sempre costante',
+              'Le stelle fisse ruotano insieme ai pianeti'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa cambia nel modo di guardare la natura con la rivoluzione scientifica?',
+     opzioni:['La natura si studia misurando e sperimentando, non citando gli antichi',
+              'La natura viene considerata sacra e quindi non indagabile',
+              'Si torna al metodo di Aristotele dopo secoli di abbandono',
+              'Si rinuncia a cercare leggi generali e si descrivono i casi singoli'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è la matematizzazione della natura?',
+     opzioni:['L\'idea che i fenomeni si possano descrivere con dei numeri',
+              'L\'uso della matematica per calcolare le date del calendario',
+              'La convinzione che i numeri siano il principio di ogni cosa',
+              'La riduzione della geometria a una parte dell\'aritmetica'], giusta:0},
+
+    {tipo:'scelta', testo:'Quale strumento rende possibili le scoperte astronomiche del Seicento?',
+     opzioni:['Il cannocchiale',
+              'Il microscopio composto',
+              'Il barometro a mercurio',
+              'La macchina calcolatrice'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa distingue una legge scientifica moderna da una spiegazione aristotelica?',
+     opzioni:['Descrive come avviene un fenomeno, non a quale fine tenda',
+              'Si applica solo ai corpi celesti e non a quelli terrestri',
+              'Viene stabilita da un\'autorità e non discussa',
+              'Riguarda le qualità delle cose e non le loro quantità'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché la rivoluzione scientifica entra in conflitto con la Chiesa?',
+     opzioni:['Mette in discussione un\'immagine del cosmo legata al testo sacro',
+              'Nega apertamente l\'esistenza di Dio e dell\'anima',
+              'Sostiene che la Bibbia sia stata scritta molto tardi',
+              'Vieta ai religiosi di occuparsi di questioni naturali'], giusta:0},
+
+    {tipo:'scelta', testo:'Che ruolo hanno le accademie scientifiche del Seicento?',
+     opzioni:['Rendono la ricerca un lavoro collettivo e pubblicano i risultati',
+              'Sostituiscono le università come luogo di insegnamento',
+              'Custodiscono i risultati come segreti riservati ai soci',
+              'Si occupano soltanto della traduzione dei testi antichi'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa è cambiato nel modo di conoscere.'}
+  ]
+},
+{
+  titolo: 'Filosofia moderna · 9 — Cartesio',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: di quale cosa sei assolutamente sicuro?'},
+
+    {tipo:'scelta', testo:'Qual è l\'obiettivo di Cartesio nel Discorso sul metodo?',
+     opzioni:['Ricostruire il sapere su un fondamento di certezze assolute',
+              'Raccogliere in ordine alfabetico tutte le conoscenze del suo tempo',
+              'Dimostrare che la conoscenza certa è impossibile',
+              'Difendere la filosofia degli antichi dalle critiche moderne'], giusta:0},
+
+    {tipo:'scelta', testo:'Quale modello di sapere prende Cartesio come riferimento?',
+     opzioni:['La matematica, per il suo rigore',
+              'La medicina, per la sua utilità pratica',
+              'La teologia, per la sua certezza rivelata',
+              'La storia, per la ricchezza dei suoi esempi'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è il dubbio metodico?',
+     opzioni:['Un dubbio volontario, usato per trovare ciò che gli resiste',
+              'La convinzione che nulla possa essere conosciuto con certezza',
+              'L\'abitudine di sospendere il giudizio su ogni questione',
+              'Il rifiuto di ogni conoscenza che non venga dai sensi'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa mette in dubbio l\'ipotesi del genio maligno?',
+     opzioni:['Anche le verità logiche e matematiche',
+              'Soltanto le informazioni che vengono dai sensi',
+              'L\'esistenza degli altri uomini ma non la propria',
+              'La possibilità di distinguere il sonno dalla veglia'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché il cogito resiste anche al genio maligno?',
+     opzioni:['Anche se fossi ingannato su tutto, dovrei esistere per essere ingannato',
+              'Perché il pensiero è la sola cosa che gli angeli non possono toccare',
+              'Perché la matematica lo dimostra con evidenza geometrica',
+              'Perché i sensi lo confermano in ogni istante della veglia'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è il criterio di verità che Cartesio ricava dal cogito?',
+     opzioni:['È vero ciò che si concepisce in modo chiaro e distinto',
+              'È vero ciò su cui concordano tutti gli uomini di scienza',
+              'È vero ciò che si può verificare con un esperimento',
+              'È vero ciò che è stato rivelato e poi confermato dalla ragione'], giusta:0},
+
+    {tipo:'scelta', testo:'Che funzione ha Dio nel sistema di Cartesio?',
+     opzioni:['Garantisce che ciò che concepiamo chiaramente sia vero',
+              'Interviene di volta in volta a muovere i corpi',
+              'Serve solo come oggetto della fede, non della filosofia',
+              'Rappresenta il fine ultimo verso cui la natura tende'], giusta:0},
+
+    {tipo:'scelta', testo:'In quali due sostanze Cartesio divide la realtà creata?',
+     opzioni:['Res cogitans, che pensa, e res extensa, che occupa spazio',
+              'Materia e forma, come nella tradizione aristotelica',
+              'Atomi e vuoto, come negli antichi atomisti',
+              'Natura naturante e natura naturata'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: scrivi che cosa resta dopo aver dubitato di tutto.'}
+  ]
+},
+{
+  titolo: 'Filosofia moderna · 15 — Hume',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: come fai a sapere che domani il sole sorgerà?'},
+
+    {tipo:'scelta', testo:'Come Hume distingue le impressioni dalle idee?',
+     opzioni:['Le impressioni sono vivaci, le idee ne sono copie più deboli',
+              'Le impressioni riguardano il corpo, le idee riguardano l\'anima',
+              'Le impressioni sono innate, le idee nascono dall\'esperienza',
+              'Le impressioni sono sempre vere, le idee possono ingannarci'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa cerchiamo, secondo Hume, quando osserviamo una causa e un effetto?',
+     opzioni:['Non la connessione necessaria, ma solo una successione ripetuta',
+              'Una forza che passa visibilmente dalla causa fino all\'effetto',
+              'La potenza che produce l\'effetto, osservata direttamente',
+              'Una legge matematica che lega saldamente l\'una all\'altro'], giusta:0},
+
+    {tipo:'scelta', testo:'Da dove nasce allora l\'idea di causalità?',
+     opzioni:['Dall\'abitudine prodotta dalla ripetizione dei casi',
+              'Da un principio innato inscritto nella ragione',
+              'Da una rivelazione confermata dall\'esperienza',
+              'Da una dimostrazione simile a quelle geometriche'], giusta:0},
+
+    {tipo:'scelta', testo:'In che consiste il circolo vizioso dell\'induzione?',
+     opzioni:['Per giustificare l\'induzione bisognerebbe usare l\'induzione stessa',
+              'Ogni esperimento richiede un altro esperimento che lo confermi',
+              'Ogni causa presuppone una causa precedente, all\'infinito',
+              'La matematica dimostra le sue premesse con le proprie conclusioni'], giusta:0},
+
+    {tipo:'scelta', testo:'Che conclusione trae Hume sul metodo scientifico?',
+     opzioni:['Si fonda su una credenza pratica, non su una certezza assoluta',
+              'È l\'unica forma di conoscenza davvero certa che abbiamo',
+              'Va sostituita dalla sola matematica, che dimostra davvero',
+              'Va abbandonata, perché in fondo non dimostra proprio nulla'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa trova Hume quando cerca dentro di sé il proprio io?',
+     opzioni:['Solo una percezione dopo l\'altra, mai l\'io che le avrebbe',
+              'Una sostanza semplice e permanente, come voleva Cartesio',
+              'Un\'idea innata che la ragione riconosce subito',
+              'Una successione di corpi ma nessuna successione di pensieri'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa produce allora l\'unità dell\'io, secondo Hume?',
+     opzioni:['L\'immaginazione, che lega le percezioni come se fossero una cosa sola',
+              'La memoria dei corpi che abbiamo occupato nel tempo',
+              'Il linguaggio, che ci obbliga a usare la parola «io»',
+              'Un atto della volontà che decide di essere sempre lo stesso'], giusta:0},
+
+    {tipo:'scelta', testo:'Come Hume divide tutte le proposizioni?',
+     opzioni:['Relazioni fra idee, certe ma vuote, e dati di fatto, utili ma non necessari',
+              'Proposizioni vere e proposizioni false, senza vie di mezzo',
+              'Proposizioni scientifiche e proposizioni religiose',
+              'Proposizioni generali e proposizioni particolari'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire su che cosa si regge la scienza.'}
+  ]
+},
+{
+  titolo: 'Filosofia moderna · 20 — Kant: la Critica della ragion pura',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: la mente riceve il mondo così com\'è, o ci mette qualcosa di suo?'},
+
+    {tipo:'scelta', testo:'In che cosa consiste la rivoluzione copernicana di Kant?',
+     opzioni:['Non è il pensiero a girare attorno all\'oggetto, ma l\'oggetto attorno al pensiero',
+              'È la Terra a girare attorno al Sole e non viceversa',
+              'La conoscenza deriva interamente dai sensi e non dalla ragione',
+              'Le idee sono innate e non hanno bisogno dell\'esperienza'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa sono spazio e tempo per Kant?',
+     opzioni:['Forme della sensibilità: il modo in cui riceviamo i dati',
+              'Proprietà reali delle cose, indipendenti da chi osserva',
+              'Concetti dell\'intelletto ricavati dall\'esperienza',
+              'Idee della ragione a cui nessun oggetto corrisponde'], giusta:0},
+
+    {tipo:'scelta', testo:'Che lavoro fanno le categorie sui dati dei sensi?',
+     opzioni:['Li ordinano, trasformandoli in un\'esperienza organizzata',
+              'Li registrano così come arrivano, senza modificarli',
+              'Li selezionano, scartando quelli che non servono',
+              'Li conservano nella memoria per poterli richiamare'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa vuol dire «trascendentale» in Kant?',
+     opzioni:['Che riguarda le condizioni che rendono possibile l\'esperienza',
+              'Che riguarda ciò che sta oltre il mondo, come Dio e l\'anima',
+              'Che riguarda ciò che si impara vivendo e facendo pratica',
+              'Che riguarda i sentimenti più alti dell\'animo umano'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché la cosa in sé resta inconoscibile?',
+     opzioni:['Conosciamo solo ciò che passa per le nostre forme e categorie',
+              'Nessuno ha ancora costruito strumenti abbastanza precisi',
+              'Dio ha vietato all\'uomo di conoscerla direttamente',
+              'La cosa in sé cambia continuamente e sfugge alla misura'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa vuol dire che un giudizio è «sintetico a priori»?',
+     opzioni:['Aggiunge qualcosa al soggetto e vale prima dell\'esperienza',
+              'Si limita a spiegare ciò che era già dentro il soggetto',
+              'Deriva interamente dall\'osservazione ripetuta dei casi',
+              'Vale soltanto per chi accetta le premesse da cui parte'], giusta:0},
+
+    {tipo:'scelta', testo:'Come risponde Kant al problema della causalità posto da Hume?',
+     opzioni:['La causalità è una categoria: non la troviamo nel mondo, la mettiamo noi',
+              'La causalità si dimostra con un esperimento decisivo',
+              'La causalità è un\'idea innata che Dio ha inscritto in noi',
+              'La causalità è un\'illusione che la scienza deve abbandonare'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa sono le idee della ragione — anima, mondo, Dio?',
+     opzioni:['Concetti a cui non corrisponde nessuna esperienza',
+              'Le tre categorie fondamentali dell\'intelletto umano',
+              'Oggetti che i sensi percepiscono in modo confuso',
+              'Verità dimostrabili col rigore della matematica'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa la mente mette del suo.'}
+  ]
+},
+{
+  titolo: 'Filosofia moderna · 21 — Kant: la Critica della ragion pratica',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: un\'azione è buona per quello che ottiene o per come è stata scelta?'},
+
+    {tipo:'scelta', testo:'Che differenza c\'è fra imperativo ipotetico e categorico?',
+     opzioni:['L\'ipotetico vale se vuoi un certo fine, il categorico vale sempre',
+              'L\'ipotetico riguarda gli altri, il categorico riguarda te stesso',
+              'L\'ipotetico è scritto nelle leggi, il categorico nella coscienza',
+              'L\'ipotetico si applica ai casi rari, il categorico ai casi comuni'], giusta:0},
+
+    {tipo:'scelta', testo:'Come suona la prima formula dell\'imperativo categorico?',
+     opzioni:['Agisci come se la tua massima dovesse diventare legge universale',
+              'Fa\' agli altri ciò che vorresti fosse fatto a te',
+              'Cerca sempre la maggiore felicità per il maggior numero',
+              'Agisci secondo la virtù, che sta nel giusto mezzo'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa afferma la formula dell\'umanità come fine?',
+     opzioni:['Tratta le persone sempre anche come fine, mai soltanto come mezzo',
+              'Considera l\'umanità come un unico organismo vivente',
+              'Poni il bene dell\'umanità al di sopra del bene individuale',
+              'Riconosci che ogni uomo tende naturalmente alla felicità'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è l\'autonomia della volontà per Kant?',
+     opzioni:['La volontà si dà da sé la legge, invece di riceverla',
+              'La volontà è libera di scegliere qualunque cosa voglia',
+              'La volontà segue la legge dello Stato senza discuterla',
+              'La volontà obbedisce alle inclinazioni naturali'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché la felicità non può fondare la morale, secondo Kant?',
+     opzioni:['È indeterminata: nessuno sa dire che cosa vuole davvero',
+              'È un fine irraggiungibile, e quindi inutile proporselo',
+              'Riguarda il corpo e non la parte razionale dell\'uomo',
+              'Dipende dalla fortuna e non dal merito di chi agisce'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa significa che la legge morale è formale?',
+     opzioni:['Non dice quale contenuto scegliere, ma quale forma deve avere la regola',
+              'Va rispettata soltanto nella forma esteriore delle azioni',
+              'È stata formulata per iscritto e depositata nelle costituzioni',
+              'Vale solo nei rapporti formali e non nella vita privata'], giusta:0},
+
+    {tipo:'scelta', testo:'Quali sono i postulati della ragion pratica?',
+     opzioni:['Libertà, immortalità dell\'anima ed esistenza di Dio',
+              'Spazio, tempo e causalità',
+              'Anima, mondo e Dio come oggetti conoscibili',
+              'Dovere, virtù e felicità come fini dell\'azione'], giusta:0},
+
+    {tipo:'scelta', testo:'Che rapporto c\'è fra virtù e felicità nel sommo bene kantiano?',
+     opzioni:['La virtù rende degni della felicità, ma non la produce da sé',
+              'La virtù coincide con la felicità già in questa vita',
+              'La felicità precede la virtù e ne è la condizione',
+              'Virtù e felicità sono in contrasto insanabile'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire quando un\'azione è davvero morale.'}
+  ]
+},
+{
+  titolo: 'Filosofia moderna · 28 — Hegel: la Fenomenologia dello Spirito',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: si può imparare qualcosa senza prima sbagliare?'},
+
+    {tipo:'scelta', testo:'Che cosa racconta la Fenomenologia dello Spirito?',
+     opzioni:['Il cammino della coscienza fino al sapere assoluto',
+              'La storia dell\'Europa dalla Rivoluzione a Napoleone',
+              'La successione dei sistemi filosofici fino a oggi',
+              'Le leggi che regolano la mente del singolo individuo'], giusta:0},
+
+    {tipo:'scelta', testo:'Quali sono i tre momenti della dialettica hegeliana?',
+     opzioni:['Tesi, antitesi e sintesi',
+              'Dubbio, evidenza e dimostrazione',
+              'Percezione, memoria e immaginazione',
+              'Analisi, sintesi e revisione'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa significa il termine Aufhebung?',
+     opzioni:['Insieme togliere, conservare e portare a un livello più alto',
+              'Cancellare completamente ciò che precede',
+              'Ripetere in forma nuova ciò che era già noto',
+              'Mettere da parte una questione senza risolverla'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa afferma Hegel dicendo che «il vero è l\'intero»?',
+     opzioni:['Nessuna proposizione isolata è vera: lo diventa nel posto che occupa nel tutto',
+              'Solo le proposizioni universali possono essere vere',
+              'La verità si raggiunge sommando tutte le opinioni degli uomini',
+              'Un\'affermazione è vera se corrisponde a un fatto osservabile'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa mostra la dialettica servo-padrone?',
+     opzioni:['Il servo, lavorando, acquista autonomia mentre il padrone dipende da lui',
+              'Il padrone conserva sempre la superiorità sul servo',
+              'Servo e padrone si scambiano i ruoli per accordo reciproco',
+              'La schiavitù è un rapporto naturale e non storico'], giusta:0},
+
+    {tipo:'scelta', testo:'Che ruolo ha l\'errore nel percorso della coscienza?',
+     opzioni:['È un momento necessario, superato e conservato nel risultato',
+              'Va evitato fin dall\'inizio, o il percorso si interrompe',
+              'È indifferente, perché il risultato non dipende dal cammino',
+              'Riguarda solo la coscienza comune, non quella filosofica'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa intende Hegel per «coscienza infelice»?',
+     opzioni:['La coscienza che pone l\'assoluto fuori di sé e si sente separata da esso',
+              'La coscienza di chi non ha ancora imparato a leggere il mondo',
+              'La condizione di chi vive in una società ingiusta',
+              'Il momento in cui la coscienza rinuncia a conoscere'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa vuol dire che la sostanza è soggetto?',
+     opzioni:['L\'assoluto non è un fondamento immobile ma un processo che diventa sé stesso',
+              'Ogni sostanza appartiene a un soggetto che la possiede',
+              'Il soggetto conoscente crea la sostanza che conosce',
+              'Le sostanze sono infinite come i soggetti che le pensano'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire a che cosa serve un errore.'}
+  ]
+}
 ];

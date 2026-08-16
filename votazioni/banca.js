@@ -2289,8 +2289,8 @@ const BANCA = [
   domande: [
     {tipo:'nuvola', testo:'Prima di cominciare: la natura è una macchina o un essere vivo? Una parola.'},
 
-    {tipo:'scelta', testo:'Che cosa distingue la filosofia della natura dalla magia?',
-     opzioni:['Non pretende di forzare i segreti naturali con i riti',
+    {tipo:'scelta', testo:'Perché Telesio, Bruno e Campanella non sono maghi?',
+     opzioni:['Non pretendono di forzare i segreti naturali con i riti',
               'Non ammette che la natura sia animata da forze vitali',
               'Studia la natura con l\'osservazione e con l\'esperienza',
               'Rinuncia a ogni pretesa di dominare le forze naturali'], giusta:0},
