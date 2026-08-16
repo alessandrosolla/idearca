@@ -216,7 +216,7 @@ const SCHEMI=[
  sch('supera',      "(?:supera|superano|oltrepassa|oltrepassano)\\s+"),
  sch('si trasforma in',"si\\s+(?:trasforma|trasformano|converte|convertono|muta|mutano)\\s+in\\s+")
 ];
-const RELAZIONI=SCHEMI.map(s=>s.r).concat(['si collega a','compare con']);
+const RELAZIONI=SCHEMI.map(s=>s.r).concat(['si collega a','è legato a']);
 
 const ESEMPI=[
  {n:'Kant', t:
@@ -393,6 +393,163 @@ function formaOriginale(testo, k){
   return maiuscola(m ? m[2] : k);
 }
 
+
+/* ══════════════════════════════════════════════════════════
+   LE PROPOSIZIONI DENTRO UNA FRASE
+   Una frase italiana ne contiene quasi sempre più di una, e
+   fermarsi alla prima faceva perdere metà dei rapporti. Da
+   «Le categorie sono concetti puri dell'intelletto che ordinano
+   i fenomeni» prima usciva un legame solo; adesso ne escono due,
+   perché il «che» riporta il soggetto e la seconda proposizione
+   ha il suo verbo.
+
+   Non è un analizzatore grammaticale: è una divisione in pezzi
+   guidata da tre cose che in italiano si riconoscono senza
+   sapere la grammatica — i pronomi relativi, le congiunzioni, e
+   il fatto che dopo un verbo coniugato comincia quasi sempre il
+   complemento oggetto.
+   ══════════════════════════════════════════════════════════ */
+
+/* Per dividere in proposizioni serve un riconoscitore di verbi più
+   largo di quello che serve a scegliere i concetti. Là un falso
+   positivo produce un nodo mancante; qui produce solo una divisione
+   in più, che è meno grave. Due aggiunte:
+
+   - le copule, che stanno fra le parole vuote perché non sono
+     concetti, ma reggono la proposizione più di ogni altro verbo;
+   - i passati remoti in -se e -sse, che «respinse» e «promise»
+     usano e che non stanno nelle desinenze regolari. Fuori di qui
+     non si possono usare, perché prenderebbero per verbi «chiesa»,
+     «impresa», «spesa» e mezza pagina di storia. */
+const COPULE=new Set(['è','sono','era','erano','fu','furono','sarà','saranno',
+ 'ha','hanno','aveva','avevano','ebbe','ebbero','viene','vengono','divenne','divennero']);
+const CODE_LARGO=/(?:nse|nsero|ise|isero|ese|esero|olse|olsero|asse|assero|ette|ettero|inse|insero)$/;
+function sembraVerboLargo(w){
+  if(COPULE.has(w)) return true;
+  if(sembraVerbo(w)) return true;
+  return w.length>4 && CODE_LARGO.test(w);
+}
+
+/* I pronomi atoni si attaccano al verbo e finivano dentro il
+   soggetto: «la guerra ne sospese l'applicazione» dava un concetto
+   chiamato «Guerra ne». */
+const CLITICI=/(^|\s)(?:mi|ti|ci|vi|si|lo|la|li|le|ne|gli|glie|me|te|se)(\s|$)/gi;
+const senzaClitici = t => t.replace(CLITICI,'$1$2').replace(/\s+/g,' ').trim();
+
+/* i punti in cui una frase si spezza in proposizioni */
+const RELATIVI=/\b(?:che|il quale|la quale|i quali|le quali|cui)\b/i;
+const CONGIUNZIONI=/(?:,\s*(?:e|ma|mentre|invece|inoltre)\s+|;\s*|\s+mentre\s+|\s+invece\s+)/i;
+
+/* «sia A sia B», «A e B», «A, B e C»: un oggetto composto vale
+   come tanti legami quanti sono i pezzi */
+function pezziCoordinati(testo){
+  let t=testo.replace(/^\s*(?:sia|tanto)\s+/i,'').replace(/\s+(?:sia|quanto)\s+/ig,' e ');
+  const pezzi=t.split(/\s*,\s*|\s+e\s+|\s+ed\s+|\s+o\s+|\s+oppure\s+/i)
+    .map(x=>x.trim()).filter(x=>x.length>2);
+  /* si spezza solo se i pezzi sono davvero due nomi e non una
+     frase tagliata a metà: «materia e forma» sì, «la possibilità
+     di essere qualcosa e di diventarlo» no */
+  if(pezzi.length<2 || pezzi.length>4) return [testo];
+  if(pezzi.some(x=>x.split(/\s+/).length>4)) return [testo];
+  /* Un pezzo che contiene un verbo non è un secondo oggetto, è
+     un'altra proposizione: in «respinse il progetto e Gladstone si
+     dimise» il secondo pezzo non è una cosa che si respinge. */
+  if(pezzi.some(x=>x.split(/\s+/).some(w=>sembraVerboLargo(w.toLowerCase()))))
+    return [testo];
+  return pezzi;
+}
+
+/* Il verbo coniugato che regge la proposizione, con la sua
+   posizione: serve a sapere dove finisce il soggetto e dove
+   comincia l'oggetto. */
+function trovaVerbo(parole, da){
+  for(let i=da;i<parole.length;i++){
+    const w=parole[i].toLowerCase();
+    if(w==='non'||w==='si'||w==='ci'||w==='vi') continue;
+    /* «si oppone», «si fonda»: il verbo è la coppia */
+    if((w==='si') && parole[i+1] && sembraVerboLargo(parole[i+1].toLowerCase()))
+      return {i, fine:i+1, v:'si '+parole[i+1].toLowerCase()};
+    if(sembraVerboLargo(w)){
+      const prima=(parole[i-1]||'').toLowerCase();
+      if(prima==='si') return {i:i-1, fine:i, v:'si '+w};
+      return {i, fine:i, v:w};
+    }
+  }
+  return null;
+}
+
+/* Da una frase alle sue proposizioni, ciascuna con soggetto,
+   verbo e oggetto. Il soggetto si trascina: dopo un «che» resta
+   quello di prima, dopo un punto e virgola pure. */
+function proposizioni(frase){
+  const fuori=[];
+  const pezzi=frase.split(CONGIUNZIONI).map(x=>x.trim()).filter(x=>x.length>6);
+  let soggettoCorrente=null, ultimoOggetto=null;
+
+  pezzi.forEach(pezzo=>{
+    /* si divide ancora sui relativi, tenendo il pronome davanti al
+       pezzo che introduce */
+    const sotto=pezzo.split(new RegExp('\\s+(' + RELATIVI.source.replace(/\\b/g,'') + ')\\s+','i'))
+      .filter(x=>x!==undefined);
+    let attesaRelativo=false;
+
+    sotto.forEach(parte=>{
+      const p=parte.trim();
+      if(!p) return;
+      if(RELATIVI.test(p) && p.split(/\s+/).length<=2){ attesaRelativo=true; return; }
+
+      const parole=p.replace(/[.!?…;:]+$/,'').split(/\s+/).filter(Boolean);
+      if(parole.length<2) return;
+      const v=trovaVerbo(parole, attesaRelativo?0:1);
+      if(!v){ attesaRelativo=false; return; }
+
+      /* Dopo un «che» il soggetto è l'ultimo nome nominato, non il
+         soggetto della principale: in «Gladstone presentò il Bill,
+         che spaccò il partito» a spaccare il partito è il Bill.
+         Prendere il soggetto avrebbe scritto il contrario. */
+      const sogg = attesaRelativo
+        ? (ultimoOggetto || soggettoCorrente)
+        : parole.slice(0, v.i).join(' ');
+      const ogg = parole.slice(v.fine+1).join(' ');
+      attesaRelativo=false;
+
+      /* «fu approvato», «viene respinto»: il passivo mette un
+         participio al posto dell'oggetto, e un participio non è un
+         concetto. Si lascia perdere invece di fare un nodo falso. */
+      if(/^(?:approvat|respint|bocciat|present|conced|sospes|nominat|elett|firmat|abolit)/i.test(ogg.trim()))
+        return;
+      /* «respinse il progetto e Gladstone si dimise»: due frasi
+         unite da una «e» senza virgola. Se dopo la congiunzione
+         c'è un altro verbo, quello che segue non è un secondo
+         oggetto ma una frase nuova, e va staccata — altrimenti
+         diventava «la Camera respinse Gladstone». */
+      let oggetto=ogg, strascico=null;
+      const taglio=ogg.split(/\s+(?:e|ed|ma)\s+/i);
+      if(taglio.length>1){
+        const resto=taglio.slice(1).join(' e ');
+        const pr=resto.split(/\s+/).filter(Boolean);
+        const vr=trovaVerbo(pr,1);
+        if(vr && vr.i>0){ oggetto=taglio[0]; strascico={parole:pr, v:vr}; }
+      }
+
+      const sogg2=senzaClitici(sogg);
+      if(!sogg2 || !oggetto) return;
+
+      fuori.push({sogg:sogg2, verbo:v.v, ogg:oggetto});
+      if(strascico){
+        const s2=senzaClitici(strascico.parole.slice(0,strascico.v.i).join(' '));
+        const o2=strascico.parole.slice(strascico.v.fine+1).join(' ');
+        if(s2 && o2) fuori.push({sogg:s2, verbo:strascico.v.v, ogg:o2});
+      }
+      /* si ricordano per la proposizione successiva: il soggetto se
+         quella non ne ha uno, l'oggetto se comincia con «che» */
+      soggettoCorrente=sogg2;
+      ultimoOggetto=oggetto;
+    });
+  });
+  return fuori;
+}
+
 let legami=[], nodi=[], archi=[];
 const svg=document.getElementById('mappa');
 
@@ -487,7 +644,20 @@ function estrai(){
     }
   });
 
-  /* ── stadio 2: i concetti ricorrenti, col verbo che li separa ── */
+  /* ── stadio 2: le proposizioni dentro ogni frase ──
+     Va dopo gli schemi espliciti, che restano più affidabili, e
+     prima dell'accostamento per vicinanza, che è il più debole. */
+  frasi.forEach(f=>{
+    proposizioni(f).forEach(pr=>{
+      const rel = VERBO.get(pr.verbo) || VERBO.get(pr.verbo.replace(/^si /,''))
+                || pr.verbo.replace(/^si /,'si ');
+      pezziCoordinati(pr.ogg).forEach(o=>{
+        aggiungi(pr.sogg, o, rel, 'media', f);
+      });
+    });
+  });
+
+  /* ── stadio 3: i concetti ricorrenti, col verbo che li separa ── */
   const concetti=ricorrenti, mostra=nomeDi;
 
   frasi.forEach(f=>{
@@ -511,9 +681,13 @@ function estrai(){
         rel = VERBO.get(w) || w;
         break;
       }
+      /* Se in mezzo non c'è un verbo, non si sa che rapporto sia, e
+         un legame senza rapporto non è un legame: riempiva la mappa
+         di frecce «compare con» che non dicevano niente e coprivano
+         quelle vere. Meglio nessuna freccia che una muta. */
+      if(!rel) continue;
       aggiungi(mostra.get(A.k), mostra.get(B.k),
-               rel ? (negato?'non '+rel:rel) : 'compare con',
-               rel?'media':'bassa', f);
+               negato?'non '+rel:rel, 'media', f);
     }
   });
 
