@@ -2717,4 +2717,565 @@ const BANCA2 = [
     {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa si perde quando tutto diventa calcolabile.'}
   ]
 }
+,
+{
+  titolo: 'Filosofia medievale · 3 — La filosofia nel Trecento',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: fra due spiegazioni che funzionano uguale, quale scegli?'},
+
+    {tipo:'scelta', testo:'Che cosa dice il principio di economia di Ockham?',
+     opzioni:['Non moltiplicare gli enti senza necessità',
+              'Ogni fenomeno richiede almeno due cause',
+              'Il sapere va diviso in discipline separate',
+              'Le cose semplici derivano da quelle complesse'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa taglia via il rasoio, nel caso degli universali?',
+     opzioni:['L\'esistenza fuori dalla mente delle nature comuni: restano i singoli',
+              'L\'esistenza dei singoli individui: restano le nature comuni',
+              'L\'esistenza delle categorie logiche di Aristotele',
+              'L\'esistenza della materia e delle sue qualità'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa vuol dire che in Dio non c\'è dualismo fra intelletto e volontà?',
+     opzioni:['Dio è una libera volontà intelligente, senza divisioni interne',
+              'Dio conosce ma non vuole nulla in particolare',
+              'Dio vuole senza sapere che cosa sta volendo',
+              'Dio è composto di due princìpi in contrasto'], giusta:0},
+
+    {tipo:'scelta', testo:'Che differenza c\'è fra potenza assoluta e potenza ordinata?',
+     opzioni:['L\'assoluta è tutto ciò che Dio potrebbe, l\'ordinata ciò che ha scelto',
+              'L\'assoluta riguarda il cielo, l\'ordinata la terra',
+              'L\'assoluta è antica, l\'ordinata riguarda il tempo presente',
+              'L\'assoluta appartiene a Dio, l\'ordinata agli angeli'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa rifiuta Ockham dell\'esemplarismo di Agostino?',
+     opzioni:['Che esistano idee divine eterne come modelli delle cose',
+              'Che Dio conosca gli individui uno per uno',
+              'Che l\'anima possa essere illuminata da Dio',
+              'Che il male sia assenza di bene'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è la conoscenza intuitiva per Ockham?',
+     opzioni:['L\'atto diretto con cui cogliamo una cosa presente qui e ora',
+              'La deduzione che ricava il particolare dall\'universale',
+              'L\'illuminazione che Dio concede a chi crede',
+              'Il ricordo di una cosa vista in passato'], giusta:0},
+
+    {tipo:'scelta', testo:'Che limite ha la conoscenza astrattiva?',
+     opzioni:['Prescinde dall\'esistenza dell\'oggetto e non garantisce verità contingenti',
+              'Non permette di formare concetti generali',
+              'Riguarda solo le cose materiali e non quelle spirituali',
+              'Dipende interamente dalla memoria e non dai sensi'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché l\'etica di Ockham si dice «formale»?',
+     opzioni:['Prescrive di agire razionalmente per il meglio, senza contenuti fissi',
+              'Prescrive un elenco preciso di azioni obbligatorie',
+              'Riguarda solo il comportamento esteriore delle persone',
+              'Deriva le regole dall\'osservazione della natura'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa resta se togli tutto il superfluo.'}
+  ]
+},
+{
+  titolo: 'Filosofia moderna · 2 — Il ritorno a Platone e ad Aristotele',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: l\'anima e il corpo sono due cose o una sola?'},
+
+    {tipo:'scelta', testo:'Perché il ritorno a Platone interessa i pensatori rinascimentali?',
+     opzioni:['Lo vedono come la condizione per una rinascita religiosa e spirituale',
+              'Lo considerano il primo scienziato della natura',
+              'Ne apprezzano soprattutto le teorie politiche',
+              'Vogliono usarlo per criticare la matematica'], giusta:0},
+
+    {tipo:'scelta', testo:'Quale ruolo assume l\'anima per i platonici rinascimentali?',
+     opzioni:['Fa da mediazione e connessione dentro l\'ordine dell\'universo',
+              'È una parte del corpo come le altre',
+              'È un ostacolo alla conoscenza vera',
+              'È una creazione tarda, successiva al mondo'], giusta:0},
+
+    {tipo:'scelta', testo:'Su che cosa si concentra la riflessione di Marsilio Ficino?',
+     opzioni:['Sulla funzione specifica dell\'anima umana nell\'universo',
+              'Sulla struttura matematica dei cieli',
+              'Sulla riforma delle istituzioni della Chiesa',
+              'Sulla traduzione dei testi di Aristotele'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa sostiene Pomponazzi sul legame fra anima e corpo?',
+     opzioni:['L\'anima umana è inseparabile dal corpo e ne ha bisogno',
+              'L\'anima esiste prima del corpo e vi entra alla nascita',
+              'L\'anima è indipendente dal corpo in ogni sua funzione',
+              'L\'anima è una funzione del solo cervello'], giusta:0},
+
+    {tipo:'scelta', testo:'Che conseguenza trae Pomponazzi da questa inseparabilità?',
+     opzioni:['L\'immortalità dell\'anima non è dimostrabile per via razionale',
+              'L\'anima muore certamente insieme al corpo',
+              'L\'immortalità si può dimostrare con l\'esperienza',
+              'L\'anima si reincarna in un altro corpo'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa non nega Pomponazzi, pur negando la dimostrazione?',
+     opzioni:['Che l\'immortalità possa essere creduta per fede',
+              'Che l\'anima esista come principio vitale',
+              'Che il corpo sia fatto di materia',
+              'Che la ragione abbia qualche valore'], giusta:0},
+
+    {tipo:'scelta', testo:'In che senso l\'anima è, per i platonici, «copula mundi»?',
+     opzioni:['Tiene insieme il mondo spirituale e quello corporeo',
+              'Unisce fra loro gli uomini in una sola comunità',
+              'Congiunge il passato al futuro nella memoria',
+              'Collega ogni corpo al proprio luogo naturale'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa hanno in comune il ritorno a Platone e quello ad Aristotele?',
+     opzioni:['Sono due anime della stessa cultura umanistico-rinascimentale',
+              'Sono due movimenti nati in secoli molto diversi',
+              'Sono entrambi ostili allo studio della natura',
+              'Sono entrambi promossi dalla Chiesa ufficiale'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa non si può dimostrare ma si può credere.'}
+  ]
+},
+{
+  titolo: 'Filosofia moderna · 5 — Telesio, Bruno, Campanella',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: dove sta il centro dell\'universo?'},
+
+    {tipo:'scelta', testo:'Quali sono le due strade del naturalismo rinascimentale?',
+     opzioni:['La magia e la filosofia naturale, con lo stesso obiettivo',
+              'La teologia e la matematica, in aperto contrasto',
+              'L\'astrologia e l\'alchimia, entrambe segrete',
+              'La medicina e l\'agricoltura, entrambe pratiche'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa fa la magia, secondo questa distinzione?',
+     opzioni:['Vede l\'universo come organismo animato e vuole dominarlo con incantesimi',
+              'Studia le leggi della natura con esperimenti ripetibili e controllati',
+              'Nega che la natura abbia un ordine proprio da poter conoscere',
+              'Rifiuta ogni intervento dell\'uomo sul corso naturale delle cose'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa fa invece la filosofia naturale?',
+     opzioni:['Abbandona le ipotesi metafisiche e cerca i principi propri della natura',
+              'Mantiene le ipotesi metafisiche e le perfeziona',
+              'Si limita a raccogliere le opinioni degli antichi',
+              'Studia la natura solo per trarne insegnamenti morali'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa afferma il panpsichismo di Telesio?',
+     opzioni:['Tutte le cose sono animate: materia e spirito non sono divisi',
+              'Solo gli animali e le piante possiedono una forma di vita',
+              'Lo spirito esiste del tutto separato dalla materia inerte',
+              'La materia è un\'illusione prodotta dai nostri sensi'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché, per Telesio, l\'uomo può comprendere la natura?',
+     opzioni:['Perché condivide con essa la stessa sensibilità',
+              'Perché è stato creato a immagine di Dio',
+              'Perché possiede un intelletto separato dal corpo',
+              'Perché ha imparato dagli antichi a osservarla'], giusta:0},
+
+    {tipo:'scelta', testo:'Come è fatto lo spazio aristotelico?',
+     opzioni:['Finito e gerarchicamente differenziato, con luoghi naturali',
+              'Infinito, omogeneo e senza alcun centro',
+              'Vuoto e percorso da atomi in movimento',
+              'Curvo e chiuso su sé stesso'], giusta:0},
+
+    {tipo:'scelta', testo:'Come lo trasforma Bruno?',
+     opzioni:['Lo rende omogeneo, infinito e privo di centro',
+              'Lo rende più piccolo ma meglio ordinato',
+              'Lo divide in due sfere, celeste e terrestre',
+              'Lo riempie di etere fino ai confini del cielo'], giusta:0},
+
+    {tipo:'scelta', testo:'Che conseguenza ha uno spazio senza centro?',
+     opzioni:['Non esistono più alto e basso assoluti: ogni riferimento è relativo',
+              'Non è più possibile misurare le distanze',
+              'I corpi non hanno più bisogno di muoversi',
+              'La Terra torna a essere il punto di riferimento'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa si prova a perdere il centro.'}
+  ]
+},
+{
+  titolo: 'Filosofia moderna · 14 — Berkeley',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: prova a immaginare un albero che nessuno sta guardando.'},
+
+    {tipo:'scelta', testo:'Quali sono le due colonne della dottrina di Berkeley?',
+     opzioni:['Il nominalismo radicale e l\'immaterialismo',
+              'Il razionalismo e il dualismo',
+              'Lo scetticismo e il probabilismo',
+              'L\'atomismo e il meccanicismo'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa nega il nominalismo radicale di Berkeley?',
+     opzioni:['L\'esistenza delle idee astratte',
+              'L\'esistenza delle idee particolari',
+              'L\'esistenza dei nomi comuni nel linguaggio',
+              'L\'esistenza delle sensazioni'], giusta:0},
+
+    {tipo:'scelta', testo:'Se non esistono idee astratte, come si parla di «triangolo» in generale?',
+     opzioni:['Si prende un triangolo particolare e lo si usa come segno per gli altri',
+              'Si formano togliendo dalle idee ciò che è particolare',
+              'Sono innate e non derivano dall\'esperienza',
+              'Sono immagini confuse di molte cose insieme'], giusta:0},
+
+    {tipo:'scelta', testo:'Quali qualità erano considerate «primarie» nella tradizione?',
+     opzioni:['L\'estensione e la figura, ritenute oggettive',
+              'Il colore e il sapore, ritenuti oggettivi',
+              'Il calore e il suono, ritenuti soggettivi',
+              'Il peso e la durezza, ritenuti relativi'], giusta:0},
+
+    {tipo:'scelta', testo:'Con quale argomento Berkeley demolisce questa distinzione?',
+     opzioni:['Non si può percepire un\'estensione senza un colore che la mostri',
+              'Le qualità primarie cambiano da persona a persona',
+              'Le qualità secondarie sono più affidabili delle primarie',
+              'Nessuna qualità può essere misurata con precisione'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa diventa la materia, nella visione di Berkeley?',
+     opzioni:['Una finzione concettuale: non esiste',
+              'Una sostanza spirituale di grado inferiore',
+              'L\'unica realtà davvero conoscibile',
+              'Un insieme di atomi indivisibili'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è allora un oggetto fisico?',
+     opzioni:['Un insieme coordinato di idee percepite',
+              'Un\'entità materiale solida e indipendente',
+              'Un\'immagine che la mente proietta nel vuoto',
+              'Un nome senza alcun contenuto'], giusta:0},
+
+    {tipo:'scelta', testo:'Dove esistono, per Berkeley, tutte le qualità?',
+     opzioni:['Soltanto nella mente che le percepisce',
+              'Nei corpi, indipendentemente da chi guarda',
+              'Metà nei corpi e metà nella mente',
+              'In uno spazio intermedio fra mente e corpo'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa resta del mondo senza la materia.'}
+  ]
+},
+{
+  titolo: 'Filosofia moderna · 16 — Vico',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: conosci meglio una cosa che hai costruito o una che hai solo guardato?'},
+
+    {tipo:'scelta', testo:'Qual è l\'oggetto della Scienza nuova di Vico?',
+     opzioni:['Il mondo umano: le nazioni, le leggi, i linguaggi',
+              'Il mondo naturale: i corpi e i loro movimenti',
+              'Il mondo divino: le verità della rivelazione',
+              'Il mondo matematico: i numeri e le figure'], giusta:0},
+
+    {tipo:'scelta', testo:'Che gerarchia capovolge Vico applicando il verum ipsum factum?',
+     opzioni:['La vera scienza non è la fisica, ma la storia',
+              'La vera scienza non è la storia, ma la fisica',
+              'La vera scienza non è la filosofia, ma la teologia',
+              'La vera scienza non è la matematica, ma la logica'], giusta:0},
+
+    {tipo:'scelta', testo:'Come si compone il metodo della Scienza nuova?',
+     opzioni:['Filosofia che contempla il vero e filologia che accerta il certo',
+              'Osservazione dei fatti e calcolo matematico',
+              'Deduzione dai principi e verifica sperimentale',
+              'Raccolta di documenti e traduzione dei testi'], giusta:0},
+
+    {tipo:'scelta', testo:'Di che cosa si occupa la filologia, nel metodo di Vico?',
+     opzioni:['Accerta il certo studiando i fatti storici e i documenti',
+              'Contempla le verità eterne e necessarie',
+              'Traduce i testi antichi in lingua moderna',
+              'Stabilisce le regole della buona scrittura'], giusta:0},
+
+    {tipo:'scelta', testo:'Quali sono, in ordine, le tre età dei corsi storici?',
+     opzioni:['Età degli dèi, degli eroi, degli uomini',
+              'Età degli uomini, degli eroi, degli dèi',
+              'Età degli eroi, degli dèi, degli uomini',
+              'Età degli dèi, degli uomini, degli eroi'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è il ricorso storico?',
+     opzioni:['Un regresso agli stadi iniziali, che riavvia il ciclo',
+              'Una sconfitta definitiva da cui non si torna indietro',
+              'Il passaggio diretto dall\'età degli dèi a quella degli uomini',
+              'Il ripetersi identico degli stessi avvenimenti'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché dagli egoismi privati esce, per Vico, un ordine sociale?',
+     opzioni:['Perché la Provvidenza indirizza quelle azioni verso fini più alti',
+              'Gli uomini raggiungono sempre gli scopi che si erano proposti',
+              'Ogni azione produce esattamente l\'effetto voluto',
+              'Gli scopi degli uomini cambiano continuamente nel tempo'], giusta:0},
+
+    {tipo:'scelta', testo:'Che ruolo ha la Provvidenza in questo schema?',
+     opzioni:['Indirizza le azioni private verso giustizia e conservazione sociale',
+              'Interviene a sospendere le leggi della storia',
+              'Determina in anticipo ogni scelta individuale',
+              'Punisce i popoli che sbagliano e premia gli altri'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa esce da mille interessi privati.'}
+  ]
+},
+{
+  titolo: 'Filosofia moderna · 26 — Schelling',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: la natura è qualcosa che pensiamo, o qualcosa che pensa attraverso di noi?'},
+
+    {tipo:'scelta', testo:'Che rapporto pone Schelling fra natura e spirito?',
+     opzioni:['La natura è spirito visibile, lo spirito è natura invisibile',
+              'La natura precede lo spirito e lo determina del tutto',
+              'Lo spirito crea la natura dal nulla',
+              'Natura e spirito non hanno nulla in comune'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è l\'Assoluto in questa prospettiva?',
+     opzioni:['L\'identità in cui nessuno dei due principi prevale sull\'altro',
+              'Lo spirito che ha vinto la resistenza della natura',
+              'La natura considerata nella sua totalità materiale',
+              'Un terzo principio che sta sopra entrambi'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa muove lo sviluppo della natura, secondo Schelling?',
+     opzioni:['L\'opposizione fra attrazione e repulsione',
+              'L\'intervento continuo di una volontà divina',
+              'Il caso, che produce combinazioni sempre nuove',
+              'La necessità meccanica delle leggi fisiche'], giusta:0},
+
+    {tipo:'scelta', testo:'Quali forze naturali manifestano questa opposizione?',
+     opzioni:['Magnetismo, elettricità e chimismo',
+              'Gravità, calore e pressione',
+              'Luce, suono e movimento',
+              'Vita, morte e generazione'], giusta:0},
+
+    {tipo:'scelta', testo:'In che senso il mondo organico è superiore a quello inorganico?',
+     opzioni:['Vi compaiono sensibilità e irritabilità: la natura si fa cosciente',
+              'È più antico e quindi più vicino all\'origine di ogni cosa',
+              'È più semplice e quindi molto più facile da conoscere',
+              'È indipendente dalle leggi che governano la materia inerte'], giusta:0},
+
+    {tipo:'scelta', testo:'Quali sono, in ordine, le tre epoche dello spirito?',
+     opzioni:['Sensazione, intuizione produttiva, riflessione',
+              'Riflessione, sensazione, intuizione produttiva',
+              'Intuizione produttiva, riflessione, sensazione',
+              'Sensazione, riflessione, intuizione produttiva'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa avviene nella prima epoca, quella della sensazione?',
+     opzioni:['L\'Io avverte un dato esterno che lo limita, e lo subisce inconsciamente',
+              'L\'Io prende piena coscienza di produrre il mondo',
+              'L\'Io si separa definitivamente dall\'oggetto',
+              'L\'Io riconosce sé stesso come intelligenza libera'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa raggiunge l\'Io nell\'ultima epoca?',
+     opzioni:['Si coglie come intelligenza libera, separandosi dall\'oggetto',
+              'Torna a confondersi con la natura da cui era uscito',
+              'Perde ogni consapevolezza di sé',
+              'Scopre di essere un semplice effetto di cause naturali'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa hanno in comune una pietra e un pensiero.'}
+  ]
+},
+{
+  titolo: 'Filosofia contemporanea · 6 — Darwin, Spencer e l\'evoluzionismo',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: che cosa vuol dire che una specie «si adatta»?'},
+
+    {tipo:'scelta', testo:'Che cosa distingue il positivismo sociale da quello evoluzionistico?',
+     opzioni:['Il primo studia le leggi statiche, il secondo la crescita organica',
+              'Il primo nasce in Francia, il secondo nasce in Germania',
+              'Il primo rifiuta la scienza, il secondo la prende a modello',
+              'Il primo è ottocentesco, il secondo nasce solo nel Novecento'], giusta:0},
+
+    {tipo:'scelta', testo:'Quale modello etico corrisponde al positivismo evoluzionistico?',
+     opzioni:['Un\'etica di simpatia e adattamento',
+              'L\'utilitarismo con il calcolo dei piaceri',
+              'L\'etica del dovere per il dovere',
+              'L\'etica della virtù come giusto mezzo'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è l\'oggetto di studio di Darwin, rispetto a quello di Spencer?',
+     opzioni:['Darwin studia la biologia, Spencer costruisce un sistema universale',
+              'Darwin studia la società, Spencer studia le specie viventi',
+              'Darwin studia la fisica, Spencer la biologia',
+              'Entrambi studiano soltanto la biologia'], giusta:0},
+
+    {tipo:'scelta', testo:'Con quale metodo lavora Darwin?',
+     opzioni:['Ricerca empirica e naturalistica',
+              'Sintesi filosofica totalizzante',
+              'Deduzione da principi generali',
+              'Analisi dei testi degli antichi naturalisti'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è l\'obiettivo dichiarato di Spencer?',
+     opzioni:['Unificare tutta la conoscenza umana sotto una sola legge',
+              'Spiegare soltanto la diversità delle specie viventi',
+              'Descrivere la storia politica dell\'Inghilterra',
+              'Fondare una nuova religione dell\'umanità'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è l\'Inconoscibile in Spencer?',
+     opzioni:['Un potere misterioso precluso alla scienza, dominio della religione',
+              'La parte di realtà che la scienza scoprirà in futuro',
+              'Ciò che nessuno ha ancora osservato ma è osservabile',
+              'L\'insieme delle leggi che la fisica non sa formulare'], giusta:0},
+
+    {tipo:'scelta', testo:'Di che cosa si occupa allora la scienza, nello schema di Spencer?',
+     opzioni:['Delle coesistenze e delle sequenze fra i fenomeni',
+              'Della sostanza ultima delle cose',
+              'Del fine verso cui l\'universo tende',
+              'Delle verità rivelate e del loro significato'], giusta:0},
+
+    {tipo:'scelta', testo:'Come procede la conoscenza scientifica, secondo Spencer?',
+     opzioni:['Da generalizzazioni semplici fino a leggi sempre più estese',
+              'Da leggi generali fino ai casi particolari',
+              'Per intuizioni improvvise non verificabili',
+              'Per accumulo di dati senza mai generalizzare'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire dove finisce la scienza e comincia altro.'}
+  ]
+},
+{
+  titolo: 'Filosofia contemporanea · 11 — Husserl e la fenomenologia',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: quando dai per scontato che il mondo esista, che cosa stai facendo?'},
+
+    {tipo:'scelta', testo:'Quali due mondi Husserl mette in tensione?',
+     opzioni:['Il mondo della scienza e il Lebenswelt, il mondo della vita',
+              'Il mondo delle Idee e quello delle cose',
+              'Il mondo interiore e quello esteriore',
+              'Il mondo antico e quello moderno'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa esclude il mondo costruito dalla scienza?',
+     opzioni:['La soggettività e i valori',
+              'Le misure e i parametri fisici',
+              'Le leggi matematiche',
+              'La possibilità di fare previsioni'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è il Lebenswelt?',
+     opzioni:['La dimensione del vissuto concreto, terreno originario di ogni sapere',
+              'L\'insieme delle leggi che regolano la vita biologica',
+              'Il mondo come lo descrivono le scienze naturali',
+              'La società in cui ciascuno si trova a nascere'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è l\'atteggiamento naturale?',
+     opzioni:['La credenza istintiva che il mondo esista là fuori, presa senza esame',
+              'L\'attitudine dello scienziato che misura i fenomeni',
+              'Il rifiuto di ogni credenza non dimostrata',
+              'La disposizione a vivere secondo natura'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa vuol dire «mettere il mondo fra parentesi»?',
+     opzioni:['Sospendere la tesi di realtà, senza negarla né dubitarne',
+              'Nega l\'esistenza del mondo esterno',
+              'Dubita dell\'esistenza del mondo senza risolvere il dubbio',
+              'Dimostra che il mondo esiste indipendentemente da noi'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa distingue Husserl dallo scettico e da Cartesio?',
+     opzioni:['Non nega né dubita: sospende il giudizio per diventare spettatore',
+              'Nega l\'esistenza del mondo, mentre gli altri la ammettono',
+              'Dubita più radicalmente di quanto avesse fatto Cartesio',
+              'Accetta il mondo così come si presenta, senza esame'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa fa la riduzione eidetica?',
+     opzioni:['Passa dalla molteplicità dei fatti all\'essenza invariante',
+              'Riduce le essenze a semplici fatti empirici',
+              'Elimina dalla coscienza ogni contenuto',
+              'Traduce i vissuti in formule matematiche'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è l\'eidos a cui si arriva?',
+     opzioni:['La struttura invariante e universale, intuita dalla ragione',
+              'Il caso singolo scelto come esempio',
+              'L\'immagine mentale di un oggetto ricordato',
+              'La definizione stabilita per convenzione'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa vedi se smetti di dare il mondo per scontato.'}
+  ]
+},
+{
+  titolo: 'Filosofia contemporanea · 17 — Il pragmatismo: Peirce, James, Dewey',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: come fai a sapere se hai capito davvero un\'idea?'},
+
+    {tipo:'scelta', testo:'Con che cosa coincide il significato di un\'idea, per Peirce?',
+     opzioni:['Con l\'insieme delle sue conseguenze pratiche concepibili',
+              'Con la definizione che ne dà il vocabolario',
+              'Con l\'immagine mentale che l\'accompagna',
+              'Con la storia di chi l\'ha formulata per primo'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è una credenza, per Peirce?',
+     opzioni:['Una regola per l\'azione, non una certezza dogmatica',
+              'Un\'opinione che non si può discutere',
+              'Un\'idea accettata perché condivisa da molti',
+              'Una verità rivelata da un\'autorità'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è la sequenza che porta dal dubbio all\'azione?',
+     opzioni:['Dubbio, ricerca, credenza, azione',
+              'Credenza, dubbio, azione, ricerca',
+              'Azione, dubbio, credenza, ricerca',
+              'Ricerca, azione, dubbio, credenza'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa mette in moto la ricerca, in questo schema?',
+     opzioni:['L\'inquietudine prodotta dal dubbio',
+              'La curiosità disinteressata per il sapere',
+              'L\'obbligo imposto da un\'autorità',
+              'La certezza di avere già la risposta'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa afferma James sulla verità di un\'idea?',
+     opzioni:['Un\'idea è vera se funziona e migliora concretamente la vita',
+              'Un\'idea è vera se è logicamente coerente con le altre',
+              'Un\'idea è vera se corrisponde a un fatto osservato',
+              'Un\'idea è vera se è accettata dalla comunità scientifica'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa contrappone James alla «perfezione logica astratta»?',
+     opzioni:['L\'utilità pratica e psicologica di un\'idea',
+              'La bellezza formale di una teoria',
+              'L\'antichità della tradizione che la sostiene',
+              'La semplicità della sua formulazione'], giusta:0},
+
+    {tipo:'scelta', testo:'Che dualismo abbatte Dewey?',
+     opzioni:['Quello fra mente e natura: l\'uomo non è uno spettatore isolato',
+              'Quello fra corpo e anima nel senso religioso',
+              'Quello fra scienza e filosofia',
+              'Quello fra individuo e società'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è l\'esperienza per Dewey?',
+     opzioni:['Uno scambio: l\'organismo modifica l\'ambiente e ne è modificato',
+              'La registrazione passiva di ciò che accade tutto intorno',
+              'Un processo che avviene soltanto dentro la nostra mente',
+              'La somma dei ricordi che accumuliamo nel corso del tempo'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa rende buona un\'idea.'}
+  ]
+},
+{
+  titolo: 'Filosofia contemporanea · 18 — Croce e Gentile: il neoidealismo italiano',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: pensare è un\'attività che fai, o un contenuto che possiedi?'},
+
+    {tipo:'scelta', testo:'Che cosa fa Gentile con la dialettica dei distinti di Croce?',
+     opzioni:['La elimina: per lui lo Spirito è Unità assoluta, senza divisioni',
+              'La accoglie e la sviluppa in quattro nuove forme',
+              'La applica soltanto alla storia e non all\'arte',
+              'La riconduce alla dialettica di Hegel senza modifiche'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è l\'atto puro?',
+     opzioni:['Il pensiero in atto, vivo e cosciente: fuori di esso non c\'è nulla',
+              'Il pensiero già formulato e depositato nelle opere',
+              'L\'azione morale compiuta senza secondi fini',
+              'Il primo atto con cui Dio crea il mondo'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché l\'attualismo è detto «soggettivismo assoluto»?',
+     opzioni:['Tutta la realtà si risolve nell\'atto stesso del pensare',
+              'Ogni individuo ha una verità propria e diversa',
+              'Il soggetto è più importante dell\'oggetto ma non lo esaurisce',
+              'La realtà dipende dai sensi del singolo osservatore'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa sono, per Gentile, arte, religione e filosofia?',
+     opzioni:['Momenti dialettici interni all\'unico Atto, destinati a risolversi',
+              'Tre gradi distinti e permanenti dello Spirito',
+              'Tre forme di conoscenza indipendenti fra loro',
+              'Tre discipline scolastiche senza rapporto filosofico'], giusta:0},
+
+    {tipo:'scelta', testo:'Di che difetto soffre l\'arte, nella triade gentiliana?',
+     opzioni:['Di «inattualità»: esalta il soggetto in modo unilaterale',
+              'Di eccessivo attaccamento alla realtà materiale',
+              'Di dipendenza dalla religione che la ispira',
+              'Di essere incomprensibile a chi non è istruito'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa fanno invece religione e scienza, secondo Gentile?',
+     opzioni:['Esaltano l\'oggetto e finiscono per annullare l\'Io',
+              'Esaltano il soggetto trascurando il mondo',
+              'Tengono in equilibrio soggetto e oggetto',
+              'Rinunciano a ogni pretesa di verità'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa comprende la filosofia, come «grande sintesi»?',
+     opzioni:['Che l\'oggetto non è separato dal soggetto, ma sua libera creazione',
+              'Che l\'oggetto esiste indipendentemente dal soggetto',
+              'Che soggetto e oggetto restano per sempre estranei',
+              'Che il soggetto è un prodotto dell\'oggetto materiale'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è l\'obiettivo filosofico finale dell\'attualismo?',
+     opzioni:['Superare ogni dualismo residuo fra soggetto e oggetto',
+              'Conservare i dualismi come strumenti di analisi',
+              'Ridurre la filosofia a una scienza empirica',
+              'Separare nettamente teoria e pratica'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa resta fuori dal pensiero.'}
+  ]
+}
 ];
