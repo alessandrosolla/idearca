@@ -796,13 +796,13 @@ function vociExtra(){
      sul telefono lo studente non trovava «Consegna un compito»
      mentre gli comparivano Inbox e Lavagna, che non sono sue. */
   return [
-    {g:'Didattica',k:'__metodo__',  l:'Metodologie didattiche', p:'Debate, jigsaw, attività', chi:'docente', ic:'🎓'},
     {g:'Didattica',k:'__consegna__',l:'Consegna un compito',    p:'Per gli studenti',         chi:'tutti',   ic:'📤'},
     {g:'Didattica',k:'__inbox__',   l:'Inbox',                  p:'Consegne degli studenti',  chi:'docente', ic:'📥'},
     {g:'Didattica',k:'__voti__',    l:'Votazioni',              p:'120 capitoli pronti',      chi:'tutti',   ic:'📊'},
-    {g:'Strumenti',k:'__tempo__',   l:'Linea del tempo',        p:'Storia e filosofia a confronto', chi:'tutti', ic:'🕰'},
+    {g:'Strumenti',k:'__metodo__',  l:'Metodologie didattiche', p:'Debate e jigsaw pronti',   chi:'tutti',   ic:'🎓'},
     {g:'Strumenti',k:'__glossario__',l:'Glossario ipertestuale',p:'Filosofia e storia',       chi:'tutti',   ic:'📖'},
-    {g:'Strumenti',k:'__testo__',   l:'Analizzatore di testo',  p:'Tesi, argomenti, obiezioni', chi:'tutti', ic:'🔍'},
+    {g:'Strumenti',k:'__confronto__',l:'Confrontatore di filosofi',p:'Dodici domande, cinquantun autori', chi:'tutti', ic:'⚖️'},
+    {g:'Strumenti',k:'__contesto__',l:'Macchina del contesto',  p:'Un anno, la vita di allora', chi:'tutti', ic:'🕰'},
     {g:'Strumenti',k:'__map__',     l:'Mappa storica',          p:'Atlante interattivo',      chi:'tutti',   ic:'🗺'},
     {g:'Strumenti',k:'__aula__',    l:'Timer e sorteggio',      p:'Da proiettare in aula',    chi:'docente', ic:'⏱'},
     {g:'Strumenti',k:'__lavagna__', l:'Lavagna',                p:'Da proiettare in aula',    chi:'docente', ic:'🖊'},
@@ -820,9 +820,9 @@ function vociExtra(){
 const VISTE={
   __map__:      {vista:'lib-map-view',      uso:'map'},
   __metodo__:   {vista:'lib-metodo-view',   uso:'metodo'},
-  __tempo__:    {vista:'lib-tempo-view',    uso:'tempo',    frame:'lib-tempo-frame',    src:'tempo/index.html',      quando:'una volta'},
   __glossario__:{vista:'lib-glossario-view',uso:'glossario',frame:'lib-glossario-frame',src:'prove/glossario.html',  quando:'una volta'},
-  __testo__:    {vista:'lib-testo-view',    uso:'testo',    frame:'lib-testo-frame',    src:'prove/testo.html',      quando:'una volta'},
+  __confronto__:{vista:'lib-confronto-view',uso:'confronto',frame:'lib-confronto-frame',src:'prove/confronto.html',  quando:'una volta'},
+  __contesto__: {vista:'lib-contesto-view', uso:'contesto', frame:'lib-contesto-frame', src:'prove/contesto.html',   quando:'una volta'},
   __aula__:     {vista:'lib-aula-view',     uso:'aula',     frame:'lib-aula-frame',     src:'prove/aula.html',       quando:'una volta'},
   __lavagna__:  {vista:'lib-lavagna-view',  uso:'lavagna',  frame:'lib-lavagna-frame',  src:'lavagna/index.html',    quando:'una volta'},
   __consegna__: {vista:'lib-consegna-view', uso:'consegna', frame:'lib-consegna-frame', src:'consegna/index.html',   quando:'ogni volta'},
@@ -1479,7 +1479,8 @@ async function caricaVetrina(){
    ══════════════════════════════════════════════════════════ */
 const NOMI_STRUMENTO={map:'Mappa storica',metodo:'Metodologie',tempo:'Linea del tempo',
   lavagna:'Lavagna',inbox:'Inbox',voti:'Votazioni',consegna:'Consegna un compito',prove:'Prove',
-  glossario:'Glossario ipertestuale',testo:'Analizzatore di testo',aula:'Timer e sorteggio'};
+  glossario:'Glossario ipertestuale',aula:'Timer e sorteggio',
+  confronto:'Confrontatore di filosofi',contesto:'Macchina del contesto'};
 
 function apriStatistiche(){
   document.getElementById('stat-overlay').classList.add('on');

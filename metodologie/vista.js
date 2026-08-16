@@ -1,27 +1,61 @@
 /* ══════════════════════════════════════════════════════════
    LE DUE VISTE — studente e docente
    Ogni attività è scritta una volta sola e si legge in due modi.
-   Lo studente vede la mozione, i nodi, le fonti, gli argomenti da
+   Lo studente vede la scena, i nodi, le fonti, gli argomenti da
    cui partire, i tempi e la lista di controllo. Il docente vede
    in più: dove il dibattito si decide davvero, la griglia dei
-   punti, i consigli di conduzione e gli errori che si ripetono
-   ogni anno.
+   punti, e gli esempi di attualità da tirare fuori lui.
 
-   ONESTÀ SU COSA VUOL DIRE «NASCOSTO»: la vista docente sta
-   dentro la stessa pagina, quindi uno studente che apra il
-   codice sorgente la può leggere. È una tenda, non una porta
-   chiusa. Serve a non stampare la soluzione sotto gli occhi di
-   chi deve trovarla, non a difenderla da chi la va a cercare.
-   Per una difesa vera i testi del docente dovrebbero stare nel
-   database, dietro le stesse regole del resto del sito.
+   CHE COSA VUOL DIRE «NASCOSTO», DETTO PER INTERO
+   Fino a ieri l'interruttore fra le due viste compariva a
+   chiunque: uno studente poteva premere «Vista docente» e
+   leggere tutto senza nemmeno aprire il codice. Adesso
+   l'interruttore compare solo a chi è entrato come docente, e a
+   chi non lo è i riquadri riservati vengono tolti dal documento
+   invece che soltanto nascosti dal CSS.
+
+   Resta un limite che va detto: queste pagine sono file statici
+   pubblici, quindi chi conosce l'indirizzo e guarda il sorgente
+   grezzo li legge lo stesso. Per una difesa vera i testi del
+   docente devono stare nel database, dietro le stesse regole
+   che già proteggono le consegne. È una migrazione, e finché
+   non si fa questa resta una tenda robusta, non una porta.
    ══════════════════════════════════════════════════════════ */
 (function(){
   const CHIAVE='idearca-vista-metodologia';
-  let vista = 'studente';
-  try{ vista = localStorage.getItem(CHIAVE) || 'studente'; }catch(e){}
+
+  /* Il ruolo lo scrive l'ingresso alla libreria, nella stessa
+     origine: la pagina sta in un riquadro dentro index.html e
+     legge la stessa sessione. */
+  function eDocente(){
+    try{
+      const s=JSON.parse(sessionStorage.getItem('ix')||'{}');
+      return s.ruolo==='docente' || s.ruolo==='osservatore';
+    }catch(e){ return false; }
+  }
+
+  /* Le attività che la classe può aprire. Le altre sono in
+     revisione: allo studente compaiono chiuse, con il motivo
+     scritto, invece di sparire senza spiegazione. */
+  const APERTE=['debate-ingiustizia'];
+  /* l'indice non è un'attività: non va mai serrato, perché è la
+     pagina da cui si vede che cosa esiste */
+  const SEMPRE=['index',''];
+  function nomePagina(){
+    return (location.pathname.split('/').pop()||'').replace(/\.html.*$/,'');
+  }
+  function eAperta(n){
+    const p = n || nomePagina();
+    return SEMPRE.indexOf(p)>=0 || APERTE.indexOf(p)>=0;
+  }
+  window.metodologiaAperta = eAperta;
+  window.metodologieDocente = eDocente;
+
+  function togliRiservati(){
+    document.querySelectorAll('.solo-docente').forEach(n=>n.remove());
+  }
 
   function applica(v){
-    vista = v;
     document.documentElement.setAttribute('data-vista', v);
     try{ localStorage.setItem(CHIAVE, v); }catch(e){}
     document.querySelectorAll('.vista-b').forEach(b=>
@@ -46,7 +80,39 @@
       x.addEventListener('click',()=>applica(x.dataset.vista)));
   }
 
+  /* La pagina chiusa: non un errore, una spiegazione. */
+  function serranda(){
+    document.body.innerHTML =
+      '<div class="wrap"><div class="chiusa">'
+      + '<div class="chiusa-et">Attività in revisione</div>'
+      + '<h1>Questa scheda non è ancora aperta alla classe</h1>'
+      + '<p>Il professore la sta ancora rivedendo. Quella pronta è '
+      + '<a href="debate-ingiustizia.html">Meglio subirla o commetterla?</a>, '
+      + 'il debate sul <em>Gorgia</em> di Platone.</p>'
+      + '<p class="chiusa-min">Se stai preparando il debate, è quella la pagina da studiare.</p>'
+      + '</div></div>';
+  }
+
+  function avvia(){
+    const docente = eDocente();
+
+    if(!docente && !eAperta()){ serranda(); return; }
+
+    if(!docente){
+      /* niente interruttore e niente riquadri riservati: non
+         basta nasconderli, vanno tolti dal documento */
+      togliRiservati();
+      applica('studente');
+      return;
+    }
+
+    barra();
+    let v='studente';
+    try{ v = localStorage.getItem(CHIAVE) || 'studente'; }catch(e){}
+    applica(v);
+  }
+
   if(document.readyState==='loading')
-    document.addEventListener('DOMContentLoaded',()=>{ barra(); applica(vista); });
-  else { barra(); applica(vista); }
+    document.addEventListener('DOMContentLoaded', avvia);
+  else avvia();
 })();

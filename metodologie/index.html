@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Metodologie didattiche — Idearca</title>
-<link rel="stylesheet" href="stile.css">
+<link rel="stylesheet" href="stile.css?v=20260816b">
 </head>
 <body>
 <div class="wrap">
@@ -76,5 +76,29 @@
   </div>
 
 </div>
+<script src="vista.js?v=20260816c"></script>
+<script>
+/* L'indice usa le stesse due funzioni della barra delle viste:
+   chi non insegna vede serrate le attività ancora in revisione,
+   con il motivo scritto sopra invece che un elenco che sparisce. */
+(function(){
+  if(window.metodologieDocente && window.metodologieDocente()) return;
+  document.querySelectorAll('.tile[href]').forEach(a=>{
+    const n=a.getAttribute('href').replace(/\.html$/,'');
+    if(window.metodologiaAperta && window.metodologiaAperta(n)) return;
+    a.classList.add('serrata');
+    a.removeAttribute('href');
+    const d=document.createElement('div');
+    d.className='tile-lucchetto';
+    d.textContent='In revisione';
+    a.appendChild(d);
+  });
+  const avviso=document.createElement('p');
+  avviso.className='gruppo-d';
+  avviso.style.cssText='margin-top:1.2rem;padding:.9rem 1.1rem;border-left:3px solid #9a7c2e;background:#f6f3ec;border-radius:0 10px 10px 0';
+  avviso.innerHTML='<b>Una sola è aperta.</b> Le altre schede il professore le sta ancora rivedendo: compaiono qui perché tu sappia che esistono, ma non si aprono.';
+  document.querySelector('.wrap').appendChild(avviso);
+})();
+</script>
 </body>
 </html>

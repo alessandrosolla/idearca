@@ -94,6 +94,15 @@ h1{font-family:'Cormorant Garamond',Georgia,serif;font-size:2.4rem;font-weight:4
   .w{padding:1.4rem 1rem 3rem}h1{font-size:1.9rem}
   .scelte,.confronto{grid-template-columns:1fr}
 }
+
+/* la domanda: un menu, largo quanto la pagina */
+.dom-sel{width:100%;font:inherit;font-family:'Cormorant Garamond',Georgia,serif;
+  font-size:1.25rem;font-weight:600;color:#1c2b1a;padding:.85rem 2.6rem .85rem 1.1rem;
+  border:1.5px solid rgba(45,90,39,.22);border-radius:12px;background:#fff;cursor:pointer;
+  -webkit-appearance:none;appearance:none;outline:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232d5a27' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 1rem center;background-size:18px}
+.dom-sel:hover,.dom-sel:focus{border-color:#2d5a27}
 </style>
 </head>
 <body>
@@ -113,7 +122,7 @@ h1{font-family:'Cormorant Garamond',Georgia,serif;font-size:2.4rem;font-weight:4
 
   <div id="modo-una">
     <div class="et">La domanda</div>
-    <div class="dom" id="domande"></div>
+    <select class="dom-sel" id="domande" onchange="scegliDomanda(this.value)"></select>
   </div>
 
   <div class="et">I due che rispondono</div>
@@ -200,8 +209,11 @@ function sorteggia(){
 }
 
 function disegna(){
+  /* Un menu a tendina invece di dodici bottoni in colonna: erano
+     una lista lunga quanto lo schermo, e per cambiare domanda
+     bisognava risalire ogni volta. */
   document.getElementById('domande').innerHTML = DOMANDE.map(d=>
-    `<button class="d${d.k===domanda.k?' attiva':''}" onclick="scegliDomanda('${d.k}')">${d.q}</button>`).join('');
+    `<option value="${d.k}"${d.k===domanda.k?' selected':''}>${d.q}</option>`).join('');
 
   const n=nomi();
   /* La scelta appena fatta sta nel menu, non ancora nelle variabili:
