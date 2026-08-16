@@ -233,7 +233,11 @@ const ELISI=/^(?:l'|un'|dell'|nell'|all'|dall'|sull'|quell')\s*/i;
 const ARTICOLI=/^(?:il|lo|la|i|gli|le|un|uno|una|dei|degli|delle|del|dello|della|al|allo|alla|ai|agli|alle|dal|dallo|dalla|dai|dagli|dalle|nel|nello|nella|nei|negli|nelle|con|per|tra|fra)\s+/i;
 const VUOTE=new Set(['ciò','cio','quello','quella','questo','questa','esso','essa','loro','lui','lei',
   'che','cui','tale','tali','quanto','coloro','chi','altro','altra','stesso','stessa','uno','una',
-  'esse','essi','noi','voi','sé','se stesso','qualcosa','nulla','niente','tutto','tutti']);
+  'esse','essi','noi','voi','sé','se stesso','qualcosa','nulla','niente','tutto','tutti',
+  /* le parole che restavano da sole dopo un taglio e finivano a
+     fare un riquadro: «Non», «Mai», «Ciascuno» non sono concetti */
+  'non','ne','né','mai','più','ancora','sempre','solo','anche','ciascuno','ognuno',
+  'pertanto','dunque','quindi','invece','perciò','poi','cosa','cose']);
 
 /* Le etichette dei nodi devono essere nomi di concetti, non
    frammenti di frase. Prima uscivano cose come «Kant sostiene» o
@@ -423,7 +427,7 @@ function formaOriginale(testo, k){
      «impresa», «spesa» e mezza pagina di storia. */
 const COPULE=new Set(['è','sono','era','erano','fu','furono','sarà','saranno',
  'ha','hanno','aveva','avevano','ebbe','ebbero','viene','vengono','divenne','divennero']);
-const CODE_LARGO=/(?:nse|nsero|ise|isero|ese|esero|olse|olsero|asse|assero|ette|ettero|inse|insero)$/;
+const CODE_LARGO=/(?:nse|nsero|ise|isero|ese|esero|olse|olsero|asse|assero|ette|ettero|inse|insero|iamo|iate|ammo|emmo|immo)$/;
 function sembraVerboLargo(w){
   if(COPULE.has(w)) return true;
   if(sembraVerbo(w)) return true;
@@ -532,10 +536,33 @@ function proposizioni(frase){
         if(vr && vr.i>0){ oggetto=taglio[0]; strascico={parole:pr, v:vr}; }
       }
 
-      const sogg2=senzaClitici(sogg);
+      /* LA NEGAZIONE, che è la cosa più pericolosa di tutte.
+         «Il presente non è mai il nostro fine» dava «Presente è
+         Fine»: la mappa diceva l'esatto contrario del testo, ed è
+         l'errore peggiore che questo strumento possa fare. Il
+         «non» e il «mai» stanno fra soggetto e verbo o subito
+         dopo: si tolgono di lì e si scrivono sulla freccia. */
+      /* Il soggetto può mancare: succede quando una frase comincia
+         con «che» senza che ci sia niente prima a cui riferirlo. */
+      if(!sogg) return;
+      let negato=false;
+      let sogg2=senzaClitici(sogg);
+      if(/(^|\s)(?:non|né|ne)$/i.test(sogg2)){
+        sogg2=sogg2.replace(/\s*(?:non|né|ne)$/i,'').trim(); negato=true;
+      }
+      if(/^(?:mai|più|ancora)\s+/i.test(oggetto)) oggetto=oggetto.replace(/^\S+\s+/,'');
+      /* Un soggetto che contiene a sua volta un verbo non è un
+         concetto ma un'altra proposizione, e prenderlo per buono
+         produce legami inventati. Da «Non pensiamo mai al
+         presente... è solo per predisporre l'avvenire» usciva
+         «Presente è Fine», che oltre a non stare nel testo
+         contraddiceva la frase successiva. Meglio una freccia in
+         meno che una che dice il falso. */
+      if(sogg2.split(/\s+/).filter(Boolean)
+             .some(w=>sembraVerboLargo(w.toLowerCase().replace(/[^a-zàèéìòùç]/g,'')))) return;
       if(!sogg2 || !oggetto) return;
 
-      fuori.push({sogg:sogg2, verbo:v.v, ogg:oggetto});
+      fuori.push({sogg:sogg2, verbo:(negato?'non ':'')+v.v, ogg:oggetto});
       if(strascico){
         const s2=senzaClitici(strascico.parole.slice(0,strascico.v.i).join(' '));
         const o2=strascico.parole.slice(strascico.v.fine+1).join(' ');
@@ -649,8 +676,12 @@ function estrai(){
      prima dell'accostamento per vicinanza, che è il più debole. */
   frasi.forEach(f=>{
     proposizioni(f).forEach(pr=>{
-      const rel = VERBO.get(pr.verbo) || VERBO.get(pr.verbo.replace(/^si /,''))
-                || pr.verbo.replace(/^si /,'si ');
+      /* la negazione arriva attaccata al verbo e non va persa
+         traducendolo: «non è» non deve diventare «è» */
+      const neg = /^non /.test(pr.verbo);
+      const nudo = pr.verbo.replace(/^non /,'');
+      const base = VERBO.get(nudo) || VERBO.get(nudo.replace(/^si /,'')) || nudo;
+      const rel = (neg?'non ':'') + base;
       pezziCoordinati(pr.ogg).forEach(o=>{
         aggiungi(pr.sogg, o, rel, 'media', f);
       });

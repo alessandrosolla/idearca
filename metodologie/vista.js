@@ -28,9 +28,18 @@
      origine: la pagina sta in un riquadro dentro index.html e
      legge la stessa sessione. */
   function eDocente(){
+    /* Due posti, per due situazioni. Dentro il riquadro della
+       libreria vale la sessione della scheda. Ma le slide si aprono
+       in una scheda nuova, e lì sessionStorage è vuoto: allora vale
+       il ruolo che l'ingresso ha lasciato in localStorage, che le
+       schede si scambiano e che l'uscita cancella. */
     try{
       const s=JSON.parse(sessionStorage.getItem('ix')||'{}');
-      return s.ruolo==='docente' || s.ruolo==='osservatore';
+      if(s.ruolo==='docente' || s.ruolo==='osservatore') return true;
+    }catch(e){}
+    try{
+      const r=localStorage.getItem('idearca-ruolo');
+      return r==='docente' || r==='osservatore';
     }catch(e){ return false; }
   }
 

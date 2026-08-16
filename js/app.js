@@ -473,7 +473,9 @@ async function login(){
       if(r.attivo===false) throw {m:'Codice disabilitato. Contatta il docente.'};
       if(r.scadenza&&new Date(r.scadenza)<new Date()) throw {m:'Codice scaduto. Contatta il docente.'};
       ATK='';sessionStorage.removeItem('atk');sessionStorage.removeItem('rtk');
+      scordaRuoloFuoriSessione();
       sessionStorage.setItem('ix',JSON.stringify({code,nome:r.nome,ruolo:r.ruolo,materie:r.materie}));
+      segnaRuoloFuoriSessione(r.ruolo);
       input.classList.add('ok');msg.textContent='Accesso confermato: '+r.nome;msg.className='msg ok';
       setTimeout(()=>{document.getElementById('form-state').style.display='none';document.getElementById('welcome-name').textContent=r.nome;document.getElementById('success-state').classList.add('on');},600);
       btn.disabled=false;btn.textContent='Entra nella piattaforma';return;
@@ -489,6 +491,7 @@ async function login(){
          docente smetteva di colpo di funzionare. */
       if(data.refresh_token) sessionStorage.setItem('rtk', data.refresh_token);
       sessionStorage.setItem('ix',JSON.stringify({nome:'Alessandro Solla',ruolo:'docente',materie:'all'}));
+      segnaRuoloFuoriSessione('docente');
       input.classList.add('ok');msg.textContent='Accesso docente confermato.';msg.className='msg ok';
       setTimeout(()=>{document.getElementById('form-state').style.display='none';document.getElementById('welcome-name').textContent='Alessandro Solla';document.getElementById('success-state').classList.add('on');},600);
       btn.disabled=false;btn.textContent='Entra nella piattaforma';return;
@@ -777,6 +780,24 @@ function coloreArea(g){return (AREE[g]||{col:'var(--stone)'}).col;}
                  il lavoro: un recruiter, un dirigente, un collega)
    studente    → vede i materiali e gli strumenti che lo riguardano
    ──────────────────────────────────────────────────────────── */
+/* ── IL RUOLO IN UNA SCHEDA NUOVA ───────────────────────────
+   `sessionStorage` vale per una scheda sola. Aprendo le slide da
+   proiettare con «apri in una nuova scheda», quella scheda non
+   sapeva più chi fosse entrato e mostrava allo stesso docente la
+   pagina riservata agli studenti.
+
+   Il ruolo va quindi ricordato anche fuori dalla sessione. Si usa
+   `localStorage`, che le schede condividono, e lo si cancella
+   all'uscita: la protezione resta quella di prima — una tenda —
+   ma smette di chiudersi in faccia a chi ha la chiave. */
+const CHIAVE_RUOLO='idearca-ruolo';
+function segnaRuoloFuoriSessione(r){
+  try{ if(r) localStorage.setItem(CHIAVE_RUOLO,r); }catch(e){}
+}
+function scordaRuoloFuoriSessione(){
+  try{ localStorage.removeItem(CHIAVE_RUOLO); }catch(e){}
+}
+
 function ruoloCorrente(){
   const s=JSON.parse(sessionStorage.getItem('ix')||'{}');
   return s.ruolo||'studente';
