@@ -8,73 +8,89 @@
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:'Jost',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
   background:#faf8f3;color:#1c2b1a;font-weight:300;-webkit-font-smoothing:antialiased}
-.w{max-width:1040px;margin:0 auto;padding:2rem 1.5rem 4rem}
+.w{max-width:1180px;margin:0 auto;padding:2rem 1.5rem 4rem}
 .k{font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:#8a9e87;font-weight:600}
-h1{font-family:'Cormorant Garamond',Georgia,serif;font-size:2.3rem;font-weight:400;margin:.3rem 0 .5rem}
-.sub{font-size:.9rem;line-height:1.7;color:#5a6b58;max-width:66ch}
+h1{font-family:'Cormorant Garamond',Georgia,serif;font-size:2.4rem;font-weight:400;margin:.3rem 0 .5rem}
+.sub{font-size:.92rem;line-height:1.7;color:#5a6b58;max-width:68ch}
 .et{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:#9a7c2e;
-  font-weight:700;margin:1.7rem 0 .7rem;display:flex;align-items:center;gap:.6rem}
+  font-weight:700;margin:1.6rem 0 .7rem;display:flex;align-items:center;gap:.6rem}
 .et::after{content:'';flex:1;height:1px;background:rgba(45,90,39,.13)}
 
-textarea{width:100%;min-height:120px;font:inherit;font-size:.9rem;line-height:1.65;
-  padding:.85rem 1rem;border:1px solid rgba(45,90,39,.16);border-radius:12px;background:#fff;
-  color:#1c2b1a;font-weight:400;resize:vertical;outline:none}
-textarea:focus{border-color:#8a9e87}
-.b{font:inherit;font-size:.77rem;padding:.55rem 1.1rem;border-radius:100px;cursor:pointer;
-  border:1.5px solid rgba(45,90,39,.22);background:#fff;color:#2d5a27;font-weight:500;transition:all .16s}
-.b:hover{background:#2d5a27;color:#fff;border-color:#2d5a27}
-.b.pieno{background:#2d5a27;color:#fff;border-color:#2d5a27}
-.b:disabled{opacity:.35;cursor:default}
-.b:disabled:hover{background:#fff;color:#2d5a27;border-color:rgba(45,90,39,.22)}
-.barra{display:flex;gap:.5rem;flex-wrap:wrap;margin-top:.7rem;align-items:center}
-.mini{font:inherit;font-size:.71rem;padding:.35rem .8rem;border-radius:100px;cursor:pointer;
+textarea{width:100%;min-height:9.5rem;font:inherit;font-size:.93rem;line-height:1.75;
+  padding:1rem 1.15rem;border:1.5px solid rgba(45,90,39,.18);border-radius:12px;
+  background:#fff;color:#1c2b1a;resize:vertical;outline:none}
+textarea:focus{border-color:#2d5a27}
+
+.righello{display:flex;gap:.5rem;flex-wrap:wrap;align-items:center;margin-top:.7rem}
+.b{font:inherit;font-size:.8rem;padding:.6rem 1.2rem;border-radius:100px;cursor:pointer;
+  border:1.5px solid rgba(45,90,39,.22);background:#fff;color:#2d5a27;font-weight:600;
+  transition:all .16s}
+.b:hover{border-color:#2d5a27;background:#f2f6f1}
+.b.forte{background:#2d5a27;color:#fff;border-color:#2d5a27}
+.b.forte:hover{background:#24491f}
+.b:disabled{opacity:.4;cursor:default}
+.mini{font:inherit;font-size:.73rem;padding:.4rem .9rem;border-radius:100px;cursor:pointer;
   border:1px solid rgba(45,90,39,.2);background:#fff;color:#2d5a27;transition:all .16s}
 .mini:hover{background:#2d5a27;color:#fff;border-color:#2d5a27}
+.divisorio{width:1px;height:24px;background:rgba(45,90,39,.15);margin:0 .2rem}
+.spazio{flex:1}
 
-/* i legami trovati, da confermare a mano */
-.legami{display:flex;flex-direction:column;gap:.4rem}
-.lg{display:flex;gap:.5rem;align-items:center;flex-wrap:wrap;border:1px solid rgba(45,90,39,.13);
-  border-radius:10px;padding:.5rem .7rem;background:#fff;font-size:.83rem}
-.lg.spento{opacity:.42;background:#f4f2ec}
-.lg input[type=checkbox]{accent-color:#2d5a27;width:15px;height:15px;cursor:pointer;flex:none}
-.lg .da,.lg .a{font-weight:500;color:#1c2b1a}
-.lg .rel{font-size:.72rem;color:#8a6a1e;background:rgba(154,124,46,.12);padding:.1rem .5rem;
-  border-radius:100px;font-weight:600}
-.lg .sic{font-size:.63rem;letter-spacing:.06em;padding:.08rem .45rem;border-radius:100px;font-weight:600}
-.lg .sic.alta{background:rgba(45,90,39,.13);color:#2d5a27}
-.lg .sic.media{background:rgba(154,124,46,.15);color:#8a6a1e}
-.lg .sic.bassa{background:rgba(138,158,135,.16);color:#6f7d6d}
-.lg .sic.volte{background:rgba(63,109,140,.12);color:#3f6d8c}
-.lg .sp{flex:1}
-.lg .x{font:inherit;font-size:.72rem;border:none;background:none;color:#b3bdb1;cursor:pointer;
-  padding:.1rem .35rem;border-radius:5px}
-.lg .x:hover{color:#c0453b;background:rgba(192,69,59,.08)}
-
-.telaio{border:1px solid rgba(45,90,39,.16);border-radius:14px;background:#fff;overflow:hidden;
-  margin-top:.7rem}
-svg{display:block;width:100%;height:480px;touch-action:none;cursor:grab}
+/* ── la mappa ──────────────────────────────────────────── */
+.telaio{position:relative;margin-top:.8rem;border:1px solid rgba(45,90,39,.16);
+  border-radius:16px;background:#fcfcfb;overflow:hidden}
+.barra{display:flex;gap:.4rem;align-items:center;flex-wrap:wrap;padding:.6rem .8rem;
+  border-bottom:1px solid rgba(45,90,39,.12);background:#f6f5f0}
+svg{display:block;width:100%;touch-action:none;cursor:grab}
 svg.trascino{cursor:grabbing}
-.nodo rect{fill:#fff;stroke:#2d5a27;stroke-width:1.6}
-.nodo.molti rect{fill:#f0f5ee;stroke-width:2.4}
-.nodo text{font-family:'Jost',sans-serif;font-size:12px;font-weight:500;fill:#1c2b1a;
-  text-anchor:middle;dominant-baseline:middle;pointer-events:none}
-.arco{stroke:#8a9e87;stroke-width:1.4;fill:none}
-.etichetta{font-family:'Jost',sans-serif;font-size:9.5px;fill:#8a6a1e;text-anchor:middle;
-  dominant-baseline:middle;pointer-events:none}
-.etichetta-fondo{fill:#faf8f3}
+.vuoto-mappa{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  text-align:center;padding:2rem;color:#8a9e87;font-size:.92rem;line-height:1.8;pointer-events:none}
+.vuoto-mappa b{display:block;font-family:'Cormorant Garamond',Georgia,serif;
+  font-size:1.4rem;font-weight:600;color:#5a6b58;margin-bottom:.4rem}
 
-.aggiungi{display:flex;gap:.4rem;flex-wrap:wrap;margin-top:.6rem;align-items:center}
-.aggiungi input,.aggiungi select{font:inherit;font-size:.8rem;padding:.42rem .7rem;border-radius:8px;
-  border:1px solid rgba(45,90,39,.18);background:#fff;color:#1c2b1a;outline:none}
-.aggiungi input{width:150px}
+/* ── il pannello dei legami, chiuso finché non si chiede ── */
+.pannello{margin-top:.8rem;border:1px solid rgba(45,90,39,.14);border-radius:12px;
+  background:#fff;overflow:hidden}
+.pannello-t{width:100%;font:inherit;font-size:.82rem;font-weight:600;color:#2d5a27;
+  padding:.8rem 1.1rem;background:#f6f5f0;border:0;cursor:pointer;text-align:left;
+  display:flex;align-items:center;gap:.5rem}
+.pannello-t:hover{background:#eef2ea}
+.pannello-t .frec{transition:transform .2s;font-size:.7rem}
+.pannello.aperto .pannello-t .frec{transform:rotate(90deg)}
+.pannello-c{display:none;padding:1rem 1.1rem}
+.pannello.aperto .pannello-c{display:block}
 
-.spiega{margin-top:1.1rem;padding:.95rem 1.15rem;border-left:3px solid #9a7c2e;background:#f6f3ec;
-  border-radius:0 10px 10px 0;font-size:.84rem;line-height:1.7;color:#5a6b58}
-.spiega b{color:#8a6a1e;font-weight:600}
-.vuoto{padding:2rem 1rem;text-align:center;color:#b3bdb1;font-size:.88rem}
-@media(max-width:640px){
-  .w{padding:1.4rem 1rem 3rem}h1{font-size:1.8rem}
-  svg{height:380px}.aggiungi input{width:110px}
+.lg{display:flex;align-items:center;gap:.6rem;padding:.5rem .1rem;
+  border-bottom:1px solid rgba(45,90,39,.08);font-size:.85rem;flex-wrap:wrap}
+.lg:last-child{border-bottom:0}
+.lg input[type=checkbox]{accent-color:#2d5a27;width:16px;height:16px;cursor:pointer;flex:none}
+.lg .cap{flex:1;min-width:14rem;line-height:1.5}
+.lg b{font-weight:600}
+.lg .rel{color:#8a6a1e;font-style:italic}
+.lg .conf{font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;font-weight:700;
+  padding:.1rem .5rem;border-radius:100px;flex:none}
+.conf.alta{background:rgba(45,90,39,.14);color:#2d5a27}
+.conf.media{background:rgba(154,124,46,.16);color:#8a6a1e}
+.conf.bassa{background:rgba(138,158,135,.2);color:#6b7a69}
+.lg .via{font:inherit;font-size:.72rem;border:0;background:none;color:#c0453b;
+  cursor:pointer;padding:.1rem .3rem;flex:none}
+.lg .via:hover{text-decoration:underline}
+.vuoto{color:#8a9e87;font-size:.86rem;line-height:1.7}
+
+.amano{display:flex;gap:.4rem;flex-wrap:wrap;align-items:center;margin-top:.9rem;
+  padding-top:.9rem;border-top:1px dashed rgba(45,90,39,.2)}
+.amano input,.amano select{font:inherit;font-size:.82rem;padding:.45rem .7rem;
+  border:1px solid rgba(45,90,39,.2);border-radius:8px;background:#fff;outline:none;min-width:0}
+.amano input{flex:1;min-width:8rem}
+.amano input:focus,.amano select:focus{border-color:#2d5a27}
+
+.avviso{margin-top:1.2rem;padding:.95rem 1.15rem;border-left:3px solid #9a7c2e;background:#f6f3ec;
+  border-radius:0 10px 10px 0;font-size:.83rem;line-height:1.75;color:#5a6b58}
+.avviso b{color:#8a6a1e;font-weight:600}
+
+@media(max-width:760px){
+  .w{padding:1.4rem 1rem 3rem}h1{font-size:1.9rem}
+  .barra{padding:.5rem .6rem}
+  .lg .cap{min-width:100%}
 }
 </style>
 </head>
@@ -82,324 +98,388 @@ svg.trascino{cursor:grabbing}
 <div class="w">
   <div class="k">Idearca · Prove</div>
   <h1>Generatore di mappe concettuali</h1>
-  <p class="sub">Si incolla un testo e lo strumento cerca i <strong>legami dichiarati</strong>:
-  «X è Y», «X causa Y», «X si divide in Y». Non capisce il testo — riconosce quindici modi in
-  cui l'italiano scrive un rapporto fra due cose. Quello che trova è una proposta: si spunta
-  quello che regge, si butta il resto, si aggiunge quello che manca.</p>
+  <p class="sub">Si incolla un testo — un paragrafo del manuale, i propri appunti, una pagina di
+  un filosofo — e la pagina ne ricava una mappa: i concetti diventano riquadri, i rapporti fra
+  loro diventano frecce con scritto sopra <em>che rapporto è</em>. La disposizione parte dal
+  concetto più collegato e si apre a raggiera, così i rami restano separati e si leggono.</p>
 
   <div class="et">Il testo</div>
-  <textarea id="fonte" placeholder="Incolla qui il testo da cui ricavare la mappa…"></textarea>
-  <div class="barra">
-    <button class="b pieno" onclick="estrai()">Cerca i legami</button>
+  <textarea id="fonte" placeholder="Incolla qui il testo, oppure prova uno degli esempi qui sotto."></textarea>
+
+  <div class="righello">
+    <button class="b forte" onclick="estrai()">Crea la mappa</button>
     <button class="b" onclick="svuota()">Ricomincia</button>
-    <span style="flex:1"></span>
+    <span class="divisorio"></span>
+    <span style="font-size:.73rem;color:#8a9e87">Esempi:</span>
     <span id="esempi"></span>
   </div>
 
-  <div id="lavoro" style="display:none">
-    <div class="et">I legami trovati — spunta quelli che tengono</div>
-    <div class="legami" id="legami"></div>
-
-    <div class="aggiungi">
-      <input id="nDa" placeholder="da…">
-      <select id="nRel"></select>
-      <input id="nA" placeholder="a…">
-      <button class="mini" onclick="aggiungiLegame()">+ aggiungi a mano</button>
-    </div>
-
-    <div class="et">La mappa</div>
-    <div class="telaio">
-      <svg id="mappa"></svg>
-    </div>
+  <div class="et">La mappa</div>
+  <div class="telaio">
     <div class="barra">
-      <button class="b" onclick="riordina()">Ridisponi</button>
-      <button class="b" onclick="scarica()">Salva PNG</button>
-      <span id="conto" style="font-size:.78rem;color:#8a9e87"></span>
+      <button class="mini" onclick="riordina()">Ridisponi</button>
+      <button class="mini" onclick="zoom(1.25)">Ingrandisci</button>
+      <button class="mini" onclick="zoom(1/1.25)">Rimpicciolisci</button>
+      <button class="mini" onclick="adatta()">Adatta</button>
+      <span class="divisorio"></span>
+      <button class="mini" onclick="salvaPNG()">Salva come immagine</button>
+      <span class="spazio"></span>
+      <span id="conteggio" style="font-size:.73rem;color:#8a9e87"></span>
+    </div>
+    <svg id="mappa" height="560" role="img" aria-label="Mappa concettuale"></svg>
+    <div class="vuoto-mappa" id="vuoto-mappa">
+      <div><b>Qui comparirà la mappa</b>
+      Incolla un testo qui sopra e premi «Crea la mappa».<br>
+      Se vuoi vedere subito come funziona, prova uno degli esempi.</div>
     </div>
   </div>
 
-  <div class="spiega"><b>Che cosa sa fare e che cosa no.</b> Trova i rapporti che il testo
-  <em>dichiara</em> con una parola: è, comprende, causa, deriva da, si oppone a, e altri undici.
-  Non trova quelli impliciti, che sono la maggior parte e i più interessanti — quelli restano
-  da mettere a mano, ed è lì che si studia. Uno strumento che li indovinasse tutti farebbe la
-  mappa al posto tuo, che è il contrario di quello che serve.</div>
+  <div class="pannello" id="pannello">
+    <button class="pannello-t" onclick="apriPannello()">
+      <span class="frec">▶</span><span id="pannello-tit">I legami trovati</span>
+    </button>
+    <div class="pannello-c">
+      <p class="vuoto" style="margin-bottom:.8rem">Ogni riga è un rapporto che la pagina ha
+      creduto di riconoscere nel testo. Togliendo la spunta il legame sparisce dalla mappa;
+      l'etichetta a destra dice quanto è sicuro. In fondo se ne aggiungono a mano.</p>
+      <div id="legami"></div>
+      <div class="amano">
+        <input id="nDa" placeholder="da questo concetto">
+        <select id="nRel"></select>
+        <input id="nA" placeholder="a quest'altro">
+        <button class="mini" onclick="aggiungiLegame()">Aggiungi</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="avviso"><b>Che cosa fa e che cosa non fa.</b> La pagina riconosce i rapporti
+  <em>dichiarati</em>: quando il testo dice «è», «deriva da», «si oppone a», «causa». Dove il
+  testo lascia il rapporto implicito, la pagina ci prova guardando quali concetti compaiono
+  vicini e con quale verbo in mezzo, e lo segna come incerto. Un legame incerto non è un
+  errore: è un'ipotesi da confermare o buttare. Per questo il pannello dei legami si può
+  aprire — ma solo se serve, perché nella maggior parte dei casi si guarda la mappa e basta.</div>
 </div>
 
 <script>
 /* ══════════════════════════════════════════════════════════
    IL GENERATORE DI MAPPE CONCETTUALI
-   Estrae solo i legami esplicitamente scritti. È un limite
-   voluto: la mappa serve a costringere lo studente a decidere
-   che cosa dipende da che cosa, e una macchina che decidesse
-   al posto suo toglierebbe l'esercizio. Qui propone, e chi
-   studia conferma o cancella.
+
+   Tre parti indipendenti:
+
+   1. ESTRAZIONE — dal testo ai legami. Prima gli schemi
+      espliciti («X è un Y», «X deriva da Y»), poi i concetti
+      ricorrenti messi in coppia con il verbo che li separa.
+
+   2. DISPOSIZIONE — dai legami alle coordinate. È qui che
+      stava il difetto peggiore della versione precedente: i
+      nodi venivano spinti l'uno contro l'altro finché non si
+      toccavano più, e il risultato era una nuvola sparsa senza
+      gerarchia. Adesso si parte dal concetto più collegato e
+      si apre a raggiera per anelli: ogni ramo ha il suo
+      spicchio di angolo e non si mescola con gli altri.
+
+   3. DISEGNO — dalle coordinate all'SVG. Un colore per ramo,
+      riquadri arrotondati con il testo a capo, frecce curve
+      con l'etichetta del rapporto sopra.
    ══════════════════════════════════════════════════════════ */
 
-/* Le preposizioni articolate vanno elencate dalla più lunga alla più
-   corta: mettendo «da» prima di «dall'», l'alternativa breve vince e
-   il pezzo catturato comincia con «ll'abitudine». */
+/* ─────────────────────────────────────────────────────────
+   1. ESTRAZIONE
+   ───────────────────────────────────────────────────────── */
+
 const DA="(?:dall'|dagli|dalle|dallo|dalla|dai|dal|da)";
 const SU="(?:sull'|sugli|sulle|sullo|sulla|sui|sul|su)";
 const A ="(?:all'|agli|alle|allo|alla|ai|al|ad|a)";
 const DI="(?:dell'|degli|delle|dello|della|dei|del|di)";
-const C="(.{3,44}?)", F="(.{3,44})";
+const C="(.{3,54}?)", F="(.{3,54})";
 const sch=(r,mezzo)=>({r, re:new RegExp('^'+C+'\\s+'+mezzo+'\\s*'+F+'$','i')});
 
 const SCHEMI=[
  sch('è un',        "(?:è|sono)\\s+(?:un'|uno|una|un|il|lo|la|i|gli|le|dei|delle)\\s+"),
  sch('è',           "(?:è|sono)\\s+"),
- sch('comprende',   "(?:comprende|comprendono|include|includono|contiene|contengono|abbraccia)\\s+"),
- sch('si divide in',"si\\s+(?:divide|dividono|distingue|distinguono|articola|articolano)\\s+in\\s+"),
- sch('causa',       "(?:causa|causano|provoca|provocano|produce|producono|genera|generano|determina|determinano)\\s+"),
- sch('deriva da',   "(?:deriva|derivano|nasce|nascono|discende|discendono|proviene|provengono)\\s+"+DA+"\\s*"),
+ sch('comprende',   "(?:comprende|comprendono|include|includono|contiene|contengono|abbraccia|abbracciano)\\s+"),
+ sch('si divide in',"si\\s+(?:divide|dividono|distingue|distinguono|articola|articolano|scompone|scompongono)\\s+in\\s+"),
+ sch('causa',       "(?:causa|causano|provoca|provocano|produce|producono|genera|generano|determina|determinano|comporta|comportano)\\s+"),
+ sch('deriva da',   "(?:deriva|derivano|nasce|nascono|discende|discendono|proviene|provengono|scaturisce|scaturiscono)\\s+"+DA+"\\s*"),
  sch('dipende da',  "(?:dipende|dipendono)\\s+"+DA+"\\s*"),
- sch('si oppone a', "si\\s+(?:oppone|oppongono|contrappone|contrappongono)\\s+"+A+"\\s*"),
+ sch('si oppone a', "si\\s+(?:oppone|oppongono|contrappone|contrappongono|scontra|scontrano)\\s+"+A+"\\s*"),
  sch('serve a',     "(?:serve|servono)\\s+(?:ad|a|per)\\s+"),
- sch('si fonda su', "si\\s+(?:fonda|fondano|basa|basano|regge|reggono)\\s+"+SU+"\\s*"),
+ sch('si fonda su', "si\\s+(?:fonda|fondano|basa|basano|regge|reggono|poggia|poggiano)\\s+"+SU+"\\s*"),
  sch('appartiene a',"(?:appartiene|appartengono|fa parte|fanno parte)\\s+(?:"+A+"|"+DI+")\\s*"),
  sch('precede',     "(?:precede|precedono|anticipa|anticipano)\\s+"),
  sch('segue',       "(?:segue|seguono|succede\\s+a|succedono\\s+a)\\s+"),
  sch('influenza',   "(?:influenza|influenzano|ispira|ispirano|condiziona|condizionano)\\s+"),
- sch('si chiama',   "(?:si chiama|si chiamano|si dice|si dicono|viene detto|viene detta)\\s+")
+ sch('si chiama',   "(?:si chiama|si chiamano|si dice|si dicono|viene detto|viene detta|prende il nome di)\\s+"),
+ sch('riguarda',    "(?:riguarda|riguardano|concerne|concernono|si occupa di|si occupano di|tratta di|trattano di)\\s+"),
+ sch('permette',    "(?:permette|permettono|consente|consentono|rende possibile|rendono possibile)\\s+"),
+ sch('richiede',    "(?:richiede|richiedono|presuppone|presuppongono|esige|esigono)\\s+"),
+ sch('supera',      "(?:supera|superano|oltrepassa|oltrepassano)\\s+"),
+ sch('si trasforma in',"si\\s+(?:trasforma|trasformano|converte|convertono|muta|mutano)\\s+in\\s+")
 ];
-
-const RELAZIONI=SCHEMI.map(s=>s.r).concat(['si collega a']);
+const RELAZIONI=SCHEMI.map(s=>s.r).concat(['si collega a','compare con']);
 
 const ESEMPI=[
+ {n:'Kant', t:
+`La conoscenza nasce dall'incontro fra sensibilità e intelletto. La sensibilità fornisce la materia dell'esperienza. L'intelletto fornisce la forma dell'esperienza. Le categorie sono concetti puri dell'intelletto. Le categorie ordinano i fenomeni. Lo spazio è una forma pura della sensibilità. Il tempo è una forma pura della sensibilità. Il fenomeno è la cosa come ci appare. Il noumeno si oppone al fenomeno. La rivoluzione copernicana si fonda sul rovesciamento fra soggetto e oggetto. Il criticismo supera il razionalismo. Il criticismo supera l'empirismo. La causalità è una categoria dell'intelletto.`},
  {n:'Aristotele', t:
-`La sostanza è un composto di materia e forma. La materia è la possibilità di essere qualcosa. La forma è ciò che rende una cosa quella cosa. Il sinolo si divide in materia e forma. La filosofia prima si occupa dell'essere in quanto essere. La fisica si fonda sulla nozione di movimento. Il movimento deriva dal passaggio dalla potenza all'atto. L'atto precede la potenza. L'anima è la forma del corpo vivente. La virtù etica nasce dall'abitudine.`},
+`La sostanza è un composto di materia e forma. La materia è la possibilità di essere qualcosa. La forma rende una cosa quella cosa. Il sinolo si divide in materia e forma. La metafisica si occupa dell'essere in quanto essere. La fisica si fonda sulla nozione di movimento. Il movimento deriva dal passaggio dalla potenza all'atto. L'atto precede la potenza. L'anima è la forma del corpo vivente. La virtù etica nasce dall'abitudine. La virtù dianoetica dipende dall'esercizio della ragione. La felicità è attività dell'anima secondo virtù. Le quattro cause comprendono la causa materiale e la causa formale.`},
  {n:'Rivoluzione industriale', t:
-`La rivoluzione industriale nasce dall'incontro fra macchina a vapore e industria tessile. La macchina a vapore deriva dai lavori di Watt. L'industria tessile si divide in filatura e tessitura. Il carbone serve ad alimentare le macchine. La ferrovia dipende dalla disponibilità di ferro e carbone. L'urbanizzazione deriva dalla concentrazione delle fabbriche. La questione sociale nasce dalle condizioni di lavoro. Il movimento operaio si oppone al liberismo economico.`},
+`La rivoluzione industriale nasce dall'incontro fra macchina a vapore e industria tessile. La macchina a vapore deriva dai lavori di Watt. L'industria tessile si divide in filatura e tessitura. Il carbone serve ad alimentare le macchine. La ferrovia dipende dalla disponibilità di ferro e carbone. L'urbanizzazione deriva dalla concentrazione delle fabbriche. La questione sociale nasce dalle condizioni di lavoro. Il movimento operaio si oppone al liberismo economico. Il sindacato nasce dal movimento operaio. La fabbrica si oppone alla bottega artigiana. Il proletariato è la classe che vende la propria forza lavoro.`},
  {n:'Illuminismo', t:
-`L'illuminismo è un movimento di riforma della cultura. La ragione è lo strumento con cui si giudica ogni tradizione. L'Encyclopédie serve a raccogliere il sapere in forma ordinata. Il dispotismo illuminato deriva dall'incontro fra filosofi e sovrani. La separazione dei poteri si fonda sulla diffidenza verso il potere concentrato. Montesquieu influenza le costituzioni successive. La tolleranza si oppone al fanatismo religioso.`}
+`L'illuminismo è un movimento di riforma della cultura. La ragione è lo strumento del giudizio. La ragione si oppone alla tradizione. L'Encyclopédie serve a raccogliere il sapere in forma ordinata. Il dispotismo illuminato deriva dall'incontro fra filosofi e sovrani. La separazione dei poteri si fonda sulla diffidenza verso il potere concentrato. Montesquieu influenza le costituzioni successive. La tolleranza si oppone al fanatismo religioso. Beccaria riguarda la riforma del diritto penale. La pena di morte dipende da una concezione vendicativa della giustizia.`}
 ];
 
-let legami=[], nodi=[], archi=[], trascinato=null, altezzaTela=480;
-const svg=document.getElementById('mappa');
-
-/* ── pulizia dei pezzi estratti ───────────────────────────── */
 const ELISI=/^(?:l'|un'|dell'|nell'|all'|dall'|sull'|quell')\s*/i;
-const ARTICOLI=/^(?:il|lo|la|i|gli|le|un|uno|una|dei|degli|delle|del|dello|della|al|allo|alla|ai|agli|alle|dal|dallo|dalla|dai|dagli|dalle|nel|nello|nella|nei|negli|nelle)\s+/i;
-/* i pronomi non sono concetti: «la forma è ciò che...» darebbe un nodo «ciò» */
+const ARTICOLI=/^(?:il|lo|la|i|gli|le|un|uno|una|dei|degli|delle|del|dello|della|al|allo|alla|ai|agli|alle|dal|dallo|dalla|dai|dagli|dalle|nel|nello|nella|nei|negli|nelle|con|per|tra|fra)\s+/i;
 const VUOTE=new Set(['ciò','cio','quello','quella','questo','questa','esso','essa','loro','lui','lei',
-  'che','cui','tale','tali','quanto','coloro','chi','altro','altra','stesso','stessa','uno','una']);
+  'che','cui','tale','tali','quanto','coloro','chi','altro','altra','stesso','stessa','uno','una',
+  'esse','essi','noi','voi','sé','se stesso','qualcosa','nulla','niente','tutto','tutti']);
+
+/* Le etichette dei nodi devono essere nomi di concetti, non
+   frammenti di frase. Prima uscivano cose come «Kant sostiene» o
+   «incontro fra i sensi e l'intelletto»: si tagliava solo alla
+   lunghezza, senza guardare che cosa restava. */
+const VERBI_INIZIALI=/^(?:sostiene|sostengono|afferma|affermano|dice|dicono|pensa|pensano|ritiene|ritengono|scrive|scrivono|considera|considerano|osserva|osservano|nota|notano)\s+/i;
+
+/* Le parole di servizio che, rimaste in coda dopo un taglio,
+   producono etichette monche come «Composto di materia e». */
+const CODA=/\s+(?:con|di|da|a|ad|in|su|per|tra|fra|e|ed|o|od|il|lo|la|i|gli|le|un|uno|una|del|dello|della|dei|degli|delle|al|allo|alla|ai|agli|alle|dal|dalla|nel|nella|sul|sulla|non|come|che)$/i;
+function scoda(x){
+  let p=x;
+  for(let i=0;i<4;i++){ const q=p.replace(CODA,''); if(q===p) break; p=q; }
+  return p.trim();
+}
+
 function ripulisci(t){
   let s=t.trim().replace(/^[«"'(\s]+|[»"')\s.,;:]+$/g,'');
   s=s.replace(ELISI,'').replace(ARTICOLI,'');
-  /* si taglia alla prima congiunzione che apre una subordinata:
-     tenere tutta la coda farebbe nodi lunghi quanto una riga */
-  s=s.split(/\s*:\s*|\s+(?:perché|poiché|mentre|quando|che|cui|dove|se)\s+/i)[0];
+  s=s.split(/\s*:\s*|\s+(?:perch\u00e9|poich\u00e9|mentre|quando|che|cui|dove|se|invece|ossia|cio\u00e8)\s+/i)[0];
+  s=s.replace(VERBI_INIZIALI,'');
   s=s.trim().replace(/[.,;:]+$/,'');
-  /* tagliando la subordinata resta spesso una preposizione appesa:
-     «lo strumento con cui...» diventava «strumento con» */
-  s=s.replace(/\s+(?:con|di|da|a|ad|in|su|per|tra|fra|e|o|il|lo|la|i|gli|le|del|della|dei|delle|al|alla)$/i,'');
-  const parole=s.split(/\s+/);
-  if(parole.length>6) s=parole.slice(0,6).join(' ')+'…';
-  return s;
+  s=scoda(s);
+  const parole=s.split(/\s+/).filter(Boolean);
+  /* Quattro parole sono il limite oltre il quale un riquadro smette
+     di essere un concetto e diventa una frase. Il taglio va
+     ripulito di nuovo: troncando a quattro si finiva spesso su una
+     congiunzione, e restava «Composto di materia e». */
+  if(parole.length>4){
+    /* Cinque parole quando la quinta chiude una coppia: tagliando a
+       quattro, «rovesciamento fra soggetto e oggetto» diventava
+       «rovesciamento fra soggetto», che e' monco. */
+    const cinque=parole.slice(0,5).join(' ');
+    s = /\s(?:e|ed|o|od)\s\S+$/i.test(cinque) ? cinque : scoda(parole.slice(0,4).join(' '));
+  }
+  return s.trim();
 }
-const chiave = t => t.toLowerCase().replace(/[^a-zàèéìòù ]/g,'').replace(/\s+/g,' ').trim();
+const chiave = t => t.toLowerCase().replace(/[^a-zàèéìòùç ]/g,'').replace(/\s+/g,' ').trim();
+const maiuscola = t => t.charAt(0).toUpperCase()+t.slice(1);
 
-/* ── estrazione ───────────────────────────────────────────── */
 const SEGNO='';
 const ABBR=['ecc','cfr','sec','pag','pp','vol','fig','art','cap','sig','prof','dott','a\\.C','d\\.C'];
 function inFrasi(testo){
-  let t=testo.replace(/\s+/g,' ').trim();
-  if(!t) return [];
-  ABBR.forEach(a=>{ t=t.replace(new RegExp('\\b('+a+')\\.','gi'), '$1'+SEGNO); });
-  return t.split(/(?<=[.!?…])\s+/).map(p=>p.split(SEGNO).join('.').trim()).filter(Boolean);
+  let t=' '+testo.replace(/\s+/g,' ').trim()+' ';
+  ABBR.forEach(a=>{ t=t.replace(new RegExp('\\b'+a+'\\.','gi'), m=>m.replace('.',SEGNO)); });
+  return t.split(/(?<=[.!?…])\s+/)
+    .map(f=>f.split(SEGNO).join('.').trim())
+    .filter(f=>f.length>12);
 }
 
-/* ══ LE PAROLE CHE NON SONO CONCETTI ════════════════════════
-   Senza questo elenco i nodi più grossi della mappa sarebbero
-   «della», «che» e «anche»: le parole più frequenti di un testo
-   italiano non dicono nulla di quel testo. */
 const STOP=new Set(`il lo la i gli le un uno una dei degli delle del dello della al allo alla ai agli alle
-dal dallo dalla dai dagli dalle nel nello nella nei negli nelle sul sullo sulla sui sugli sulle col coi
-e ed o od ma però tuttavia anche pure ancora già poi prima dopo mentre quando dove come quanto quale quali
-che chi cui non né sia sono era erano essere stato stata stati state ha hanno aveva avevano avere avuto
-si ci vi ne se lo la li le mi ti gli loro suo sua suoi sue mio mia miei mie nostro nostra vostro vostra
-questo questa questi queste quello quella quelli quelle stesso stessa stessi stesse altro altra altri altre
-di a da in con su per tra fra sopra sotto contro senza verso circa presso oltre dentro fuori
-molto poco più meno tanto troppo assai quasi solo soltanto proprio davvero infatti dunque quindi perciò
-perché poiché siccome affinché sebbene benché nonostante purché qualora ossia cioè ovvero
-essa esso essi esse egli ella lui lei coloro ciò
-uno due tre primo prima secondo seconda terzo terza ultimo ultima
-può possono deve devono viene vengono fare fatto fatta parte parti modo modi caso casi
-cosa cose volta volte anno anni secolo secoli tempo tempi punto punti forma forme`
-  .split(/\s+/).filter(Boolean));
+dal dallo dalla dai dagli dalle nel nello nella nei negli nelle sul sullo sulla sui sugli sulle
+e o ma se che chi cui non più meno come quando dove perché poiché mentre anche ancora già sempre mai
+di a da in con su per tra fra è sono era erano essere stato stata stati state ha hanno aveva avevano
+avere si ci vi ne lo la li le mi ti gli questo questa questi queste quello quella quelli quelle
+ogni ogni tutto tutta tutti tutte molto molta molti molte poco poca pochi poche altro altra altri altre
+suo sua suoi sue loro nostro nostra vostro vostra proprio propria propri proprie
+cosa cose modo modi caso casi parte parti volta volte tempo forma forme punto punti
+quindi dunque infatti invece inoltre allora poi prima dopo oggi ieri domani solo soltanto proprio
+essa esso essi esse sé stesso stessa stessi stesse
+uomo uomini persona persone
+puro pura puri pure vero vera veri vere stesso stessa stessi stesse grande grandi
+piccolo piccola nuovo nuova nuovi nuove primo prima primi prime ultimo ultima
+buono buona alto alta basso bassa lungo lunga breve brevi intero intera unico unica
+diverso diversa diversi diverse semplice semplici possibile possibili
+principale principali successivo successiva vario varia vari varie`.split(/\s+/));
 
-/* ══ I VERBI CHE LEGANO DUE CONCETTI ════════════════════════
-   Non c'è un dizionario dell'italiano qui dentro: c'è questo
-   elenco, scritto a partire da come sono fatti i testi di storia
-   e filosofia. Se fra due concetti compare uno di questi verbi,
-   la freccia prende il suo nome; altrimenti resta un legame
-   generico, dichiarato come debole. */
+const senzaAcc = s => s.normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase();
+
 const VERBI=[
- {l:'è',            f:'è sono era erano fu furono sarà saranno'},
- {l:'diventa',      f:'diventa diventano divenne divennero divenuto'},
- {l:'causa',        f:'causa causano provoca provocano determina determinano produce producono genera generano'},
- {l:'deriva da',    f:'deriva derivano nasce nascono discende discendono proviene provengono'},
- {l:'comprende',    f:'comprende comprendono include includono contiene contengono raccoglie raccolgono'},
- {l:'si divide in', f:'divide dividono distingue distinguono articola articolano suddivide suddividono'},
- {l:'si oppone a',  f:'contrasta contrastano combatte combattono osteggia osteggiano avversa avversano'},
- {l:'sostiene',     f:'sostiene sostengono afferma affermano difende difendono appoggia appoggiano'},
- {l:'nega',         f:'nega negano rifiuta rifiutano respinge respingono critica criticano confuta confutano'},
- {l:'influenza',    f:'influenza influenzano ispira ispirano condiziona condizionano segna segnano'},
- {l:'precede',      f:'precede precedono anticipa anticipano apre aprono inaugura inaugurano'},
- {l:'segue',        f:'segue seguono succede succedono chiude chiudono conclude concludono'},
- {l:'conquista',    f:'conquista conquistano occupa occupano invade invadono annette annettono'},
- {l:'sconfigge',    f:'sconfigge sconfiggono batte battono vince vincono abbatte abbattono'},
- {l:'fonda',        f:'fonda fondano istituisce istituiscono crea creano costituisce costituiscono'},
- {l:'distrugge',    f:'distrugge distruggono elimina eliminano cancella cancellano sopprime sopprimono'},
- {l:'trasforma',    f:'trasforma trasformano cambia cambiano modifica modificano riforma riformano'},
- {l:'permette',     f:'permette permettono consente consentono favorisce favoriscono agevola agevolano'},
- {l:'impedisce',    f:'impedisce impediscono ostacola ostacolano blocca bloccano vieta vietano'},
- {l:'porta a',      f:'porta portano conduce conducono sfocia sfociano sbocca sboccano'},
- {l:'dipende da',   f:'dipende dipendono'},
- {l:'si fonda su',  f:'basa basano poggia poggiano regge reggono'},
- {l:'usa',          f:'usa usano utilizza utilizzano impiega impiegano adotta adottano'},
- {l:'studia',       f:'studia studiano analizza analizzano esamina esaminano indaga indagano'},
- {l:'riguarda',     f:'riguarda riguardano concerne concernono tratta trattano'},
- /* questi non si riconoscono dalla desinenza e sono i piu' frequenti
-    di tutti: senza elencarli, «Kant vuole» resta un concetto solo */
- {l:'vuole',        f:'vuole vogliono volle vollero'},
- {l:'può',          f:'può possono poté poterono'},
- {l:'deve',         f:'deve devono dovette dovettero'},
- {l:'fa',           f:'fa fanno fece fecero'},
- {l:'dice',         f:'dice dicono disse dissero'},
- {l:'vede',         f:'vede vedono vide videro'},
- {l:'viene da',     f:'viene vengono venne vennero'},
- {l:'va',           f:'va vanno andò andarono'},
- {l:'tenta',        f:'tenta tentano tentò tentarono cerca cercano cercò cercarono'},
- {l:'sa',           f:'sa sanno seppe seppero conosce conoscono conobbe conobbero'}
+ ['è','è'],['sono','sono'],['era','era'],['erano','erano'],
+ ['deriva','deriva da'],['derivano','deriva da'],['nasce','deriva da'],['nascono','deriva da'],
+ ['dipende','dipende da'],['dipendono','dipende da'],
+ ['comprende','comprende'],['comprendono','comprende'],['include','comprende'],['includono','comprende'],
+ ['causa','causa'],['causano','causa'],['provoca','causa'],['provocano','causa'],
+ ['produce','causa'],['producono','causa'],['genera','causa'],['generano','causa'],
+ ['determina','causa'],['determinano','causa'],
+ ['influenza','influenza'],['influenzano','influenza'],['ispira','influenza'],['ispirano','influenza'],
+ ['precede','precede'],['precedono','precede'],['segue','segue'],['seguono','segue'],
+ ['serve','serve a'],['servono','serve a'],
+ ['riguarda','riguarda'],['riguardano','riguarda'],
+ ['ordina','ordina'],['ordinano','ordina'],['fornisce','fornisce'],['forniscono','fornisce'],
+ ['permette','permette'],['permettono','permette'],['richiede','richiede'],['richiedono','richiede'],
+ ['supera','supera'],['superano','supera'],['sostiene','sostiene'],['sostengono','sostiene'],
+ ['rende','rende'],['rendono','rende'],['diventa','diventa'],['diventano','diventa'],
+ ['si oppone','si oppone a'],['si oppongono','si oppone a'],
+ ['si fonda','si fonda su'],['si fondano','si fonda su'],
+ ['si divide','si divide in'],['si dividono','si divide in']
 ];
-const VERBO=new Map();
-VERBI.forEach(v=>v.f.split(/\s+/).forEach(f=>VERBO.set(f,v.l)));
+/* Le forme nude dei verbi riflessivi: «oppone» non finisce in
+   nessuna delle desinenze riconosciute e finiva a fare un nodo. */
+const VERBI_NUDI=new Set(['oppone','oppongono','contrappone','contrappongono',
+ 'fonda','fondano','basa','basano','divide','dividono','distingue','distinguono',
+ 'articola','articolano','regge','reggono','poggia','poggiano','chiama','chiamano',
+ 'occupa','occupano','trasforma','trasformano','converte','convertono']);
+const VERBO=new Map(VERBI);
 
-/* L'elenco sopra non basta: i manuali di storia sono scritti al
-   passato remoto, e «conquistò», «diffusero», «nacque» non ci sono
-   né ci potrebbero essere tutti. Si riconoscono dalla desinenza.
-   Se il verbo non è in elenco l'etichetta della freccia diventa il
-   verbo stesso, così com'è scritto nel testo: «conquistò» dice più
-   di «compare con». */
-const CODE=/(?:ò|ì|pose|posero|acque|acquero|ebbe|ebbero|obbe|obbero|isse|issero|usse|ussero|arono|erono|irono|ettero|ava|avano|eva|evano|iva|ivano|isce|iscono|ano|ono|ire|are|ere|sero|nne|nnero|ussero|osse|ossero|ar[lms][oiae]?|er[lms][oiae]?|ir[lms][oiae]?|arsi|ersi|irsi)$/;
+/* Il riconoscimento del verbo va per desinenza. Attenzione: in
+   JavaScript \b non riconosce le vocali accentate, quindi tutte
+   le prove usano confini scritti a mano. */
+const CODE=/(?:ò|ì|pose|posero|acque|acquero|ebbe|ebbero|obbe|obbero|isse|issero|usse|ussero|arono|erono|irono|ettero|ava|avano|eva|evano|iva|ivano|isce|iscono|ano|ono|ire|are|ere|sero|nne|nnero|osse|ossero)$/;
 const NON_VERBI=new Set(['sono','anno','anni','uomo','uomini','mano','piano','trono','solo','pieno',
- 'meno','seno','freno','regno','segno','sogno','ordine','origine','forse','corso','caso','peso',
- 'senso','verso','universo','discorso','diverso','governo','moderno','interno','esterno','eterno',
- 'masse','classe','spese','chiese','base','frase','fase','crisi','paese','mese','difese']);
+ 'sereno','terreno','umano','umani','romano','romani','organo','organi','cristiano','cristiani',
+ 'italiano','italiani','sovrano','sovrani','ordine','ordini','fine','fini','sono','buono','nono',
+ 'dono','tono','cono','suono','vano','grano','treno','freno','seno','veleno','ripiano','sano']);
 function sembraVerbo(w){
-  if(VERBO.has(w)) return true;
-  if(w.length<4 || NON_VERBI.has(w) || STOP.has(w)) return false;
+  if(w.length<4) return false;
+  if(NON_VERBI.has(w)) return false;
+  if(STOP.has(w)) return false;
+  if(VERBO.has(w)||VERBI_NUDI.has(w)) return true;
   return CODE.test(w);
 }
 
-const senzaAcc = t => t.toLowerCase()
-  .replace(/[àáâ]/g,'a').replace(/[èéê]/g,'e').replace(/[ìí]/g,'i')
-  .replace(/[òóô]/g,'o').replace(/[ùú]/g,'u');
-
-/* ══ I CONCETTI ═════════════════════════════════════════════
-   Si prendono i gruppi di parole piene consecutive (da una a tre)
-   e si contano. Un concetto è una cosa di cui il testo parla più
-   di una volta: se compare una volta sola non regge una mappa.
-   Fra «rivoluzione» e «rivoluzione industriale», se compaiono
-   sempre insieme, vince il gruppo lungo — è più informativo. */
 function estraiConcetti(frasi, quanti){
-  const conta=new Map();
+  const conta=new Map(), forma=new Map();
   frasi.forEach(f=>{
-    const tok=f.toLowerCase().replace(/[^a-zàèéìòùç' ]/g,' ').split(/\s+/).filter(Boolean);
-    let gruppo=[];
-    const chiudi=()=>{
-      for(let n=1;n<=Math.min(3,gruppo.length);n++)
-        for(let i=0;i+n<=gruppo.length;i++){
-          const g=gruppo.slice(i,i+n);
-          const k=g.join(' ');
-          if(k.length<4) continue;
-          const v=conta.get(k)||{n:0,parole:n};
-          v.n++; conta.set(k,v);
-        }
-      gruppo=[];
-    };
-    tok.forEach(w=>{ (STOP.has(w)||w.length<3||sembraVerbo(w)) ? chiudi() : gruppo.push(w); });
-    chiudi();
+    const parole=f.toLowerCase()
+      .replace(/[^a-z\u00e0\u00e8\u00e9\u00ec\u00f2\u00f9\u00e7' ]/g,' ')
+      .replace(/\b(?:l|un|dell|nell|all|dall|sull|quell)'/g,'')
+      .split(/\s+/).filter(Boolean);
+    const visti=new Set();
+    /* le posizioni delle parole piene, per poter unire due nomi
+       separati da una preposizione: «macchina a vapore» è un
+       concetto solo, e spezzarlo in «macchina» e «vapore» era la
+       ragione per cui la mappa si frantumava */
+    const piene=[];
+    parole.forEach((w,i)=>{
+      if(!STOP.has(w) && w.length>3 && !sembraVerbo(w)) piene.push({w,i});
+    });
+    piene.forEach(x=>visti.add(x.w));
+    for(let k=0;k<piene.length-1;k++){
+      const a=piene[k], b=piene[k+1];
+      if(b.i-a.i>2) continue;              /* troppo lontane */
+      const key=a.w+' '+b.w;
+      visti.add(key);
+      /* la forma da mostrare è quella che compare nel testo, con
+         la preposizione al suo posto */
+      if(!forma.has(key)) forma.set(key, parole.slice(a.i, b.i+1).join(' '));
+    }
+    visti.forEach(v=>conta.set(v,(conta.get(v)||0)+1));
   });
-
-  const tutte=[...conta.entries()].map(([k,v])=>({k, n:v.n, parole:v.parole}));
-  /* «un concetto compare almeno due volte» e' una buona regola su una
-     pagina, ma su cinque frasi non sopravvive quasi nulla e la mappa
-     esce vuota - come e' successo. Se la regola stretta lascia meno di
-     sei concetti, si allarga. */
-  let voci=tutte.filter(v=>v.n>=2);
-  if(voci.length<6) voci=tutte;
-
-  /* un gruppo corto che compare sempre e solo dentro uno lungo
-     non è un concetto a sé: è un pezzo di quello */
-  voci.sort((a,b)=>b.parole-a.parole || b.n-a.n);
-  const tenuti=[];
-  voci.forEach(v=>{
-    const dentro=tenuti.find(t=>t.parole>v.parole && (' '+t.k+' ').includes(' '+v.k+' ') && t.n>=v.n);
-    if(!dentro) tenuti.push(v);
+  /* una coppia che compare quanto la sua prima parola rende inutile
+     la parola sola: si tiene la più informativa */
+  const doppie=[...conta.entries()].filter(([k,v])=>k.includes(' ') && v>=2);
+  doppie.forEach(([k,v])=>{
+    k.split(' ').forEach(p=>{ const n=conta.get(p); if(n && n<=v) conta.set(p,0); });
   });
-
-  tenuti.sort((a,b)=> (b.n*(1+0.45*(b.parole-1))) - (a.n*(1+0.45*(a.parole-1))) );
-  return tenuti.slice(0,quanti);
+  return [...conta.entries()].filter(([k,v])=>v>=2)
+    .sort((a,b)=> b[1]-a[1] || b[0].length-a[0].length)
+    .slice(0,quanti)
+    .map(([k,v])=>({k, n:v, testo: forma.get(k)||k}));
 }
 
-/* la forma da mostrare: la prima volta che il concetto compare nel
-   testo, con le maiuscole che aveva lì */
 function formaOriginale(testo, k){
-  const re=new RegExp('(^|[^a-zàèéìòù])('+k.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')(?![a-zàèéìòù])','i');
+  const re=new RegExp('(^|[^a-zàèéìòùç])('+k.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')(?![a-zàèéìòùç])','i');
   const m=testo.match(re);
-  if(!m) return k;
-  const t=m[2];
-  return /^[A-ZÀÈÉÌÒÙ]/.test(t) ? t : t.charAt(0).toUpperCase()+t.slice(1);
+  return maiuscola(m ? m[2] : k);
 }
 
-/* ══ L'ESTRAZIONE, IN TRE STADI ═════════════════════════════
-   1. i rapporti scritti a chiare lettere («X si divide in Y»):
-      pochi ma sicuri;
-   2. due concetti nella stessa frase con un verbo di legame in
-      mezzo: la freccia prende il nome del verbo;
-   3. due concetti nella stessa frase e basta: legame debole,
-      dichiarato tale, spento all'inizio.
-   Lo stadio 3 garantisce che una mappa esca sempre, anche da un
-   testo che non usa mai le forme dello stadio 1. */
+let legami=[], nodi=[], archi=[];
+const svg=document.getElementById('mappa');
+
 function estrai(){
   const testo=document.getElementById('fonte').value;
   const frasi=inFrasi(testo);
-  if(!frasi.length){ legami=[]; document.getElementById('lavoro').style.display='';
-                     disegnaLegami(); costruisci(); riordina(); return; }
+  if(!frasi.length){ legami=[]; aggiorna(); return; }
+
+  /* I CONCETTI RICORRENTI, CALCOLATI PRIMA DI TUTTO
+     Servono a due cose. La seconda e' lo stadio 2. La prima, che e'
+     quella che cambia davvero la mappa, e' ricondurre le frasi
+     lunghe al concetto che contengono: «incontro fra sensibilita' e
+     intelletto» diventa «Sensibilita'», e la freccia che prima
+     finiva in un riquadro isolato adesso arriva su un nodo che
+     esiste gia'. Senza questo passaggio la mappa veniva fuori
+     spezzata in tante coppie staccate, che e' esattamente il
+     difetto da cui siamo partiti. */
+  const ricorrenti=estraiConcetti(frasi, 18);
+  const nomeDi=new Map(ricorrenti.map(c=>[c.k, formaOriginale(testo, c.testo||c.k)]));
+  /* dal piu' lungo al piu' corto: «rivoluzione copernicana» prima
+     di «rivoluzione», o si perderebbe la specificazione */
+  const perLunghezza=[...ricorrenti].sort((x,y)=>y.k.length-x.k.length);
+  function riconduci(frase){
+    if(!frase) return frase;
+    /* Si esce subito solo se la frase È già un concetto, oppure è
+       una parola sola. Contare le parole con lo spazio non basta:
+       «categoria dell'intelletto» ne conta due per via
+       dell'apostrofo, veniva presa per un concetto e restava un
+       riquadro staccato. */
+    const kf=chiave(frase);
+    if(nomeDi.has(kf)) return nomeDi.get(kf);
+    if(senzaAcc(frase).replace(/[^a-z]+/g,' ').trim().split(' ').length<=1) return frase;
+    /* l'apostrofo separa due parole: senza questa riga
+       «dell'intelletto» non conteneva «intelletto», e ogni
+       genitivo elidato restava un riquadro isolato */
+    const piatto=' '+senzaAcc(frase).replace(/[^a-z]+/g,' ').trim()+' ';
+    for(const c of perLunghezza){
+      const cerca=' '+senzaAcc(c.testo||c.k).replace(/[^a-z]+/g,' ').trim()+' ';
+      if(piatto.includes(cerca)) return nomeDi.get(c.k);
+    }
+    return frase;
+  }
 
   const trovati=[], visti=new Map();
-  const aggiungi=(da,a,rel,conf,frase)=>{
+  const PESO={alta:3,media:2,bassa:1};
+  /* Si prova a ricondurre PRIMA di troncare: «incontro fra macchina
+     a vapore e industria tessile» contiene un concetto vero, ma
+     tagliato a quattro parole diventa «incontro fra macchina» e non
+     lo contiene più. Se la riconduzione non trova niente, allora si
+     ripulisce come al solito. */
+  const sistema=(grezzo)=>{
+    if(!grezzo) return grezzo;
+    const r=riconduci(grezzo);
+    return r!==grezzo ? r : ripulisci(grezzo);
+  };
+  const aggiungi=(daGrezzo,aGrezzo,rel,conf,frase)=>{
+    const da=sistema(daGrezzo), a=sistema(aGrezzo);
     if(!da||!a) return;
     const kd=chiave(da), ka=chiave(a);
     if(!kd||!ka||kd===ka) return;
+    if(kd.length<3||ka.length<3) return;
     if(VUOTE.has(kd)||VUOTE.has(ka)) return;
-    const id=kd+'|'+ka;
-    const gia=visti.get(id);
-    const peso={alta:3,media:2,bassa:1}[conf];
+    const id=kd+'|'+ka, inverso=ka+'|'+kd;
+    /* se lo stesso rapporto è già stato visto al contrario, non se
+       ne fa un secondo: due frecce fra gli stessi due riquadri si
+       sovrappongono e non si legge più nessuna delle due */
+    const gia=visti.get(id)||visti.get(inverso);
     if(gia){
       gia.volte++;
-      if(peso>{alta:3,media:2,bassa:1}[gia.conf]){ gia.rel=rel; gia.conf=conf; gia.frase=frase;
-        gia.attivo=conf!=='bassa'; }
+      if(PESO[conf]>PESO[gia.conf]){ gia.rel=rel; gia.conf=conf; gia.frase=frase; }
       return;
     }
-    const l={da, a, rel, conf, volte:1, attivo:conf!=='bassa', frase};
+    const l={da:maiuscola(da), a:maiuscola(a), rel, conf, volte:1,
+             attivo:conf!=='bassa', frase};
     visti.set(id,l); trovati.push(l);
   };
 
-  /* ── stadio 1 ── */
+  /* ── stadio 1: i rapporti dichiarati ── */
   frasi.forEach(f=>{
     const pulita=f.replace(/[.!?…]+$/,'').trim();
     for(const sc of SCHEMI){
       const m=pulita.match(sc.re);
       if(!m) continue;
-      let da=ripulisci(m[1]);
-      const a=ripulisci(m[2]);
-      /* «Lo spazio e il tempo NON appartengono alle cose» finiva come
-         concetto «spazio e il tempo non» legato da «appartiene a»:
-         nome storpiato e senso capovolto, per giunta marcato come
-         sicuro. Il «non» va tolto dal concetto e messo sulla freccia. */
+      let da=m[1].trim();
+      const a=m[2].trim();
+      /* «X non appartiene a Y» diceva il contrario del testo: la
+         negazione va tolta dal concetto e messa sulla freccia */
       let rel=sc.r;
       if(/(^|\s)non$/i.test(da)){ da=da.replace(/\s*non$/i,'').trim(); rel='non '+rel; }
       if(da.length>=3 && a.length>=3) aggiungi(da,a,rel,'alta',f);
@@ -407,30 +487,27 @@ function estrai(){
     }
   });
 
-  /* ── stadi 2 e 3 ── */
-  const concetti=estraiConcetti(frasi, 14);
-  const mostra=new Map(concetti.map(c=>[c.k, formaOriginale(testo,c.k)]));
+  /* ── stadio 2: i concetti ricorrenti, col verbo che li separa ── */
+  const concetti=ricorrenti, mostra=nomeDi;
 
   frasi.forEach(f=>{
     const basso=' '+senzaAcc(f).replace(/[^a-z' ]/g,' ').replace(/\s+/g,' ')+' ';
-    /* dove compare ogni concetto in questa frase */
     const qui=[];
     concetti.forEach(c=>{
-      const pos=basso.indexOf(' '+senzaAcc(c.k)+' ');
-      if(pos>=0) qui.push({k:c.k, pos});
+      const pos=basso.indexOf(' '+senzaAcc(c.testo||c.k)+' ');
+      if(pos>=0) qui.push({k:c.k, pos, lung:(c.testo||c.k).length});
     });
     if(qui.length<2) return;
     qui.sort((a,b)=>a.pos-b.pos);
     for(let i=0;i<qui.length-1;i++){
       const A=qui[i], B=qui[i+1];
-      const mezzo=basso.slice(A.pos+A.k.length+1, B.pos).split(/\s+/).filter(Boolean);
+      const mezzo=basso.slice(A.pos+A.lung+1, B.pos).split(/\s+/).filter(Boolean);
+      if(mezzo.length>7) continue;      /* troppo distanti per essere in rapporto */
       let rel=null, negato=false;
       for(let m=0;m<mezzo.length;m++){
         const w=mezzo[m];
         if(!sembraVerbo(w)) continue;
-        /* «non appartengono» non è «appartiene a»: senza questo
-           controllo la freccia direbbe il contrario del testo */
-        negato = m>0 && (mezzo[m-1]==='non' || mezzo[m-1]==='né');
+        negato = m>0 && (mezzo[m-1]==='non' || mezzo[m-1]==='ne');
         rel = VERBO.get(w) || w;
         break;
       }
@@ -440,329 +517,504 @@ function estrai(){
     }
   });
 
-  /* i legami più sostenuti dal testo vengono prima */
-  trovati.sort((a,b)=> ({alta:3,media:2,bassa:1}[b.conf]-{alta:3,media:2,bassa:1}[a.conf])
-                       || (b.volte-a.volte));
-  legami=trovati.slice(0,26);
-  /* Se restassero spenti tutti i legami deboli, da un testo che non
-     usa mai le forme esplicite non uscirebbe nessuna mappa - ed era
-     appunto il difetto da cui siamo partiti. Si accendono i primi
-     diciotto, forti o deboli che siano: l'etichetta dice quanto sono
-     sicuri, e togliere quelli che non convincono è un clic. */
-  legami.slice(0,18).forEach(l=>l.attivo=true);
-  document.getElementById('lavoro').style.display='';
-  disegnaLegami(); costruisci(); riordina();
+  trovati.sort((a,b)=> PESO[b.conf]-PESO[a.conf] || b.volte-a.volte);
+  legami=trovati.slice(0,30);
+  legami.slice(0,22).forEach(l=>l.attivo=true);
+  aggiorna();
 }
 
 function svuota(){
   legami=[]; nodi=[]; archi=[];
   document.getElementById('fonte').value='';
-  document.getElementById('lavoro').style.display='none';
+  document.getElementById('pannello').classList.remove('aperto');
+  aggiorna();
 }
 
-function disegnaLegami(){
-  const el=document.getElementById('legami');
-  if(!legami.length){
-    el.innerHTML='<div class="vuoto">Nessun legame dichiarato trovato. '
-      +'Il testo può essere ottimo lo stesso: vuol dire che i rapporti li lascia impliciti. '
-      +'Aggiungili a mano qui sotto.</div>';
-    return;
+/* ─────────────────────────────────────────────────────────
+   2. DISPOSIZIONE — a raggiera, per anelli
+   ───────────────────────────────────────────────────────── */
+
+/* Quattro colori per i rami principali, verificati a coppie con
+   il validatore: la coppia peggiore resta sopra ΔE 10 anche per
+   chi non distingue rosso e verde. Dal quinto ramo in poi si usa
+   il grigio della pagina: meglio un ramo non colorato che due
+   rami di due colori che si somigliano. */
+const COLORI=['#2a78d6','#e0642a','#199e6e','#b0459b'];
+const GRIGIO='#6b6459';
+const CENTRO='#2d5a27';
+
+let vista={x:0,y:0,s:1};
+
+/* La larghezza del testo va misurata, non stimata: con un font
+   proporzionale «Illuminismo» e «III» hanno lo stesso numero di
+   lettere e larghezze diversissime. */
+const tela=document.createElement('canvas').getContext('2d');
+function larghezzaTesto(t, peso, dim){
+  tela.font=(peso||600)+' '+(dim||14)+'px Jost, -apple-system, Segoe UI, sans-serif';
+  return tela.measureText(t).width;
+}
+function aCapo(testo, maxLarghezza, dim){
+  const parole=testo.split(/\s+/), righe=[]; let riga='';
+  for(const p of parole){
+    const prova = riga ? riga+' '+p : p;
+    if(larghezzaTesto(prova,600,dim) <= maxLarghezza || !riga) riga=prova;
+    else { righe.push(riga); riga=p; }
   }
-  el.innerHTML=legami.map((l,i)=>`
-    <div class="lg${l.attivo?'':' spento'}">
-      <input type="checkbox" ${l.attivo?'checked':''} onchange="accendi(${i},this.checked)">
-      <span class="da">${esc(l.da)}</span>
-      <span class="rel">${esc(l.rel)}</span>
-      <span class="a">${esc(l.a)}</span>
-      <span class="sic ${l.conf||'alta'}">${({alta:'scritto nel testo',media:'dal verbo',bassa:'solo vicinanza'})[l.conf||'alta']}</span>
-      ${l.volte>1?`<span class="sic volte">${l.volte}×</span>`:''}
-      <span class="sp"></span>
-      <button class="x" onclick="togli(${i})">✕</button>
-    </div>`).join('');
-}
-const esc = t => String(t).replace(/[<>&]/g,c=>({'<':'&lt;','>':'&gt;','&':'&amp;'}[c]));
-
-function accendi(i,v){ legami[i].attivo=v; disegnaLegami(); costruisci(); riordina(); }
-function togli(i){ legami.splice(i,1); disegnaLegami(); costruisci(); riordina(); }
-function aggiungiLegame(){
-  const da=document.getElementById('nDa').value.trim();
-  const a=document.getElementById('nA').value.trim();
-  const rel=document.getElementById('nRel').value;
-  if(!da||!a) return;
-  legami.push({da, a, rel, attivo:true, frase:'(aggiunto a mano)'});
-  document.getElementById('nDa').value=''; document.getElementById('nA').value='';
-  disegnaLegami(); costruisci(); riordina();
+  if(riga) righe.push(riga);
+  return righe.slice(0,3);
 }
 
-/* ── dal legame al grafo ──────────────────────────────────── */
 function costruisci(){
+  const attivi=legami.filter(l=>l.attivo);
   const indice=new Map();
   nodi=[]; archi=[];
-  const prendi = t => {
-    const k=chiave(t);
-    if(!indice.has(k)){
-      indice.set(k, nodi.length);
-      nodi.push({t, x:0, y:0, vx:0, vy:0, grado:0});
-    }
-    return indice.get(k);
+  const dammi=(nome)=>{
+    const k=chiave(nome);
+    if(indice.has(k)) return indice.get(k);
+    const n={k, nome, grado:0, vicini:[]};
+    indice.set(k,n); nodi.push(n); return n;
   };
-  legami.filter(l=>l.attivo).forEach(l=>{
-    const a=prendi(l.da), b=prendi(l.a);
-    nodi[a].grado++; nodi[b].grado++;
-    archi.push({a, b, rel:l.rel});
+  attivi.forEach(l=>{
+    const a=dammi(l.da), b=dammi(l.a);
+    if(a===b) return;
+    a.grado++; b.grado++;
+    a.vicini.push(b); b.vicini.push(a);
+    archi.push({a, b, rel:l.rel, conf:l.conf});
   });
-  const L=svg.clientWidth||900, H=svg.clientHeight||480;
-  nodi.forEach((n,i)=>{
-    const ang=i/Math.max(1,nodi.length)*2*Math.PI;
-    n.x=L/2+Math.cos(ang)*Math.min(L,H)*0.3;
-    n.y=H/2+Math.sin(ang)*Math.min(L,H)*0.3;
-    n.w=Math.min(190, 22+n.t.length*6.6); n.h=26;
+
+  /* misura di ogni riquadro */
+  nodi.forEach(n=>{
+    const dim = n.grado>=4 ? 15 : 13.5;
+    const righe=aCapo(n.nome, 150, dim);
+    n.righe=righe; n.dim=dim;
+    n.w=Math.max(78, Math.min(178, Math.max(...righe.map(r=>larghezzaTesto(r,600,dim)))+26));
+    n.h=18+righe.length*(dim+4);
   });
-  document.getElementById('conto').textContent =
-    nodi.length ? `${nodi.length} concetti, ${archi.length} legami` : '';
 }
 
-/* ── disposizione a forze, un gruppo per volta ─────────────
-   Un testo scolastico produce spesso legami che non si toccano fra
-   loro: sette coppie separate, non una rete. Una disposizione unica
-   le mescolerebbe e le frecce si incrocerebbero senza motivo. Quindi
-   si trovano i gruppi connessi, si dispone ognuno per conto suo, e
-   poi si impaginano come blocchi affiancati. */
-function gruppi(){
-  const visto=new Array(nodi.length).fill(false), out=[];
-  const vicini=nodi.map(()=>[]);
-  archi.forEach(e=>{ vicini[e.a].push(e.b); vicini[e.b].push(e.a); });
-  for(let i=0;i<nodi.length;i++){
-    if(visto[i]) continue;
-    const coda=[i], g=[]; visto[i]=true;
+/* I gruppi separati: un testo può parlare di due cose che non si
+   toccano, e vanno disposte una accanto all'altra invece che
+   mescolate. */
+function componenti(){
+  const visti=new Set(), fuori=[];
+  nodi.forEach(n=>{
+    if(visti.has(n.k)) return;
+    const g=[], coda=[n]; visti.add(n.k);
     while(coda.length){
-      const k=coda.pop(); g.push(k);
-      vicini[k].forEach(v=>{ if(!visto[v]){ visto[v]=true; coda.push(v); } });
+      const x=coda.pop(); g.push(x);
+      x.vicini.forEach(v=>{ if(!visti.has(v.k)){ visti.add(v.k); coda.push(v); } });
     }
-    out.push(g);
-  }
-  return out;
+    fuori.push(g);
+  });
+  return fuori.sort((a,b)=>b.length-a.length);
 }
 
-function disponiGruppo(g){
-  const dentro=new Set(g);
-  const suoi=archi.filter(e=>dentro.has(e.a)&&dentro.has(e.b));
-  g.forEach((k,i)=>{
-    const ang=i/g.length*2*Math.PI - Math.PI/2;
-    const raggio=g.length===1?0:40+g.length*16;
-    nodi[k].x=Math.cos(ang)*raggio;
-    nodi[k].y=Math.sin(ang)*raggio;
-  });
-  for(let p=0;p<400;p++){
-    for(let i=0;i<g.length;i++) for(let j=i+1;j<g.length;j++){
-      const a=nodi[g[i]], b=nodi[g[j]];
-      let dx=b.x-a.x, dy=b.y-a.y;
-      const d=Math.hypot(dx,dy)||0.01;
-      const minimo=(a.w+b.w)/2+40;
-      if(d<minimo){
-        const f=(minimo-d)/d*0.6;
-        a.x-=dx*f*0.5; a.y-=dy*f*0.5; b.x+=dx*f*0.5; b.y+=dy*f*0.5;
-      }
-    }
-    suoi.forEach(e=>{
-      const a=nodi[e.a], b=nodi[e.b];
-      let dx=b.x-a.x, dy=b.y-a.y;
-      const d=Math.hypot(dx,dy)||0.01;
-      /* l'ingombro dei due riquadri misurato proprio lungo la
-         direzione del legame: due scatole larghe affiancate devono
-         stare più lontane di due scatole impilate */
-      const cs=Math.abs(dx)/d, sn=Math.abs(dy)/d;
-      const ra=(a.w/2)*cs+(a.h/2)*sn, rb=(b.w/2)*cs+(b.h/2)*sn;
-      /* e la distanza minima la detta l'etichetta: un legame chiamato
-         «si divide in» ha bisogno di più spazio di uno chiamato «è» */
-      const ideale=ra+rb+Math.max(74, e.rel.length*5+34);
-      const f=(d-ideale)/d*0.12;
-      a.x+=dx*f; a.y+=dy*f; b.x-=dx*f; b.y-=dy*f;
+/* La disposizione a raggiera. Il concetto più collegato va al
+   centro; i suoi vicini formano il primo anello, i vicini dei
+   vicini il secondo, e così via. A ogni ramo si assegna uno
+   spicchio di angolo proporzionale a quante foglie contiene:
+   così un ramo grosso ha spazio e uno piccolo non se ne prende
+   più del necessario, e i rami non si accavallano mai. */
+function disponiComponente(g, cx, cy){
+  if(!g.length) return {x0:cx,y0:cy,x1:cx,y1:cy};
+  const radice = g.reduce((a,b)=> b.grado>a.grado ? b : a);
+
+  /* albero di copertura in ampiezza: ogni nodo ha un padre solo,
+     e gli archi in più restano disegnati ma non spostano nulla */
+  const livello=new Map([[radice.k,0]]);
+  const padre=new Map(), figli=new Map(g.map(n=>[n.k,[]]));
+  const coda=[radice];
+  while(coda.length){
+    const x=coda.shift();
+    x.vicini.forEach(v=>{
+      if(livello.has(v.k)) return;
+      livello.set(v.k, livello.get(x.k)+1);
+      padre.set(v.k, x); figli.get(x.k).push(v);
+      coda.push(v);
     });
   }
-  for(let giro=0;giro<40;giro++){
-    let mosso=false;
-    for(let i=0;i<g.length;i++) for(let j=i+1;j<g.length;j++){
-      const a=nodi[g[i]], b=nodi[g[j]];
-      const sx=(a.w+b.w)/2+12-Math.abs(a.x-b.x);
-      const sy=(a.h+b.h)/2+26-Math.abs(a.y-b.y);
-      if(sx<=0||sy<=0) continue;
-      mosso=true;
-      if(sx<sy){ const d=(a.x<b.x?-1:1)*sx/2; a.x+=d; b.x-=d; }
-      else     { const d=(a.y<b.y?-1:1)*sy/2; a.y+=d; b.y-=d; }
-    }
-    if(!mosso) break;
-  }
-  const xs=g.map(k=>nodi[k].x-nodi[k].w/2), xe=g.map(k=>nodi[k].x+nodi[k].w/2);
-  const ys=g.map(k=>nodi[k].y-nodi[k].h/2), ye=g.map(k=>nodi[k].y+nodi[k].h/2);
-  return {x0:Math.min(...xs), y0:Math.min(...ys),
-          w:Math.max(...xe)-Math.min(...xs), h:Math.max(...ye)-Math.min(...ys)};
+
+  /* quante foglie sotto ciascun nodo: è la larghezza angolare */
+  const peso=new Map();
+  const pesa=(n)=>{
+    const f=figli.get(n.k);
+    const p = f.length ? f.reduce((s,x)=>s+pesa(x),0) : 1;
+    peso.set(n.k,p); return p;
+  };
+  pesa(radice);
+
+  const PASSO=190;           /* distanza fra un anello e il successivo */
+  radice.x=cx; radice.y=cy; radice.lv=0; radice.ramo=-1;
+
+  /* Ogni nodo riceve un settore [a0,a1]; i figli se lo dividono in
+     proporzione al proprio peso, e ciascuno si mette al centro del
+     pezzo che gli tocca. */
+  const colloca=(n, a0, a1, ramo)=>{
+    const f=figli.get(n.k);
+    if(!f.length) return;
+    const tot=f.reduce((s,x)=>s+peso.get(x.k),0);
+    let a=a0;
+    f.forEach((x,i)=>{
+      const q=(a1-a0)*peso.get(x.k)/tot;
+      const mezzo=a+q/2;
+      const lv=livello.get(x.k);
+      /* il primo anello sta più vicino, gli altri si allargano
+         piano: senza questo i rami lunghi finivano fuori pagina */
+      const r=PASSO*(0.95+ (lv-1)*0.78);
+      x.x=cx+Math.cos(mezzo)*r;
+      x.y=cy+Math.sin(mezzo)*r;
+      x.lv=lv;
+      x.ramo = ramo>=0 ? ramo : i;
+      colloca(x, a+q*0.06, a+q*0.94, x.ramo);
+      a+=q;
+    });
+  };
+  /* si parte da -90 gradi così il primo ramo esce in alto */
+  colloca(radice, -Math.PI/2, -Math.PI/2+Math.PI*2, -1);
+
+  let x0=1e9,y0=1e9,x1=-1e9,y1=-1e9;
+  g.forEach(n=>{
+    x0=Math.min(x0,n.x-n.w/2); x1=Math.max(x1,n.x+n.w/2);
+    y0=Math.min(y0,n.y-n.h/2); y1=Math.max(y1,n.y+n.h/2);
+  });
+  return {x0,y0,x1,y1};
 }
 
+/* Un testo può descrivere due o tre cose che non si toccano, e in
+   quel caso i gruppi separati sono la risposta giusta, non un
+   difetto. Metterli in fila orizzontale però produceva un nastro
+   lunghissimo e basso, che a schermo si riduce a niente. Qui si
+   impacchettano a righe, tenendo la figura vicina alle proporzioni
+   del riquadro in cui andrà. */
+let gruppiDisposti=[];
 function riordina(){
-  if(!nodi.length){ disegnaMappa(); return; }
-  svg.style.height='';
-  const L=svg.clientWidth||900, H=svg.clientHeight||480;
-  const G=gruppi().sort((a,b)=>b.length-a.length);
-  const blocchi=G.map(g=>({g, r:disponiGruppo(g)}));
+  gruppiDisposti=[];
+  if(!nodi.length){ disegna(); return; }
+  const comp=componenti();
 
-  const aria=26;
-  let x=aria, y=aria, altezzaRiga=0;
-  blocchi.forEach(b=>{
-    if(x>aria && x+b.r.w>L-aria){ x=aria; y+=altezzaRiga+aria; altezzaRiga=0; }
-    b.g.forEach(k=>{ nodi[k].x += x-b.r.x0; nodi[k].y += y-b.r.y0; });
-    x += b.r.w+aria;
-    altezzaRiga=Math.max(altezzaRiga, b.r.h);
+  /* prima si misura ogni gruppo per conto suo, all'origine */
+  const misure=comp.map(g=>{
+    const b=disponiComponente(g, 0, 0);
+    return {g, b, larg:b.x1-b.x0, alt:b.y1-b.y0};
   });
 
-  /* La tela cresce invece di comprimere: schiacciare le righe per
-     farcele stare accorciava le frecce sotto la lunghezza della loro
-     etichetta, e la mappa diventava illeggibile proprio nei casi in
-     cui ha più roba da mostrare. */
-  const serve=Math.max(...nodi.map(n=>n.y+n.h/2))+aria;
-  const H2=Math.max(H, Math.ceil(serve));
-  altezzaTela=H2;
-  svg.style.height=H2+'px';
-  nodi.forEach(n=>{
-    n.x=Math.max(n.w/2+4, Math.min(L-n.w/2-4, n.x));
-    n.y=Math.max(n.h/2+12, Math.min(H2-n.h/2-4, n.y));
+  const VUOTO=90;
+  const totale=misure.reduce((s,m)=>s+m.larg+VUOTO, 0);
+  /* larghezza a cui puntare perché la figura risulti larga circa
+     una volta e mezzo la sua altezza, come il riquadro */
+  const bersaglio=Math.max(
+    Math.max(...misure.map(m=>m.larg)),
+    Math.sqrt(totale * misure.reduce((s,m)=>Math.max(s,m.alt),0) * 1.6)
+  );
+
+  let x=0, y=0, altezzaRiga=0;
+  misure.forEach(m=>{
+    if(x>0 && x+m.larg>bersaglio){ x=0; y+=altezzaRiga+VUOTO; altezzaRiga=0; }
+    const dx=x-m.b.x0, dy=y-m.b.y0;
+    m.g.forEach(n=>{ n.x+=dx; n.y+=dy; });
+    gruppiDisposti.push({g:m.g});
+    x+=m.larg+VUOTO;
+    altezzaRiga=Math.max(altezzaRiga, m.alt);
   });
-  separa(L,H2);
-  disegnaMappa();
+
+  separaSovrapposti();
+  /* Le cornici si misurano adesso, non prima: separaSovrapposti
+     sposta i riquadri, e una cornice disegnata sulle posizioni
+     vecchie taglia fuori quello che si e' mosso. */
+  gruppiDisposti.forEach(r=>{
+    let x0=1e9,y0=1e9,x1=-1e9,y1=-1e9;
+    r.g.forEach(n=>{ x0=Math.min(x0,n.x-n.w/2); x1=Math.max(x1,n.x+n.w/2);
+                     y0=Math.min(y0,n.y-n.h/2); y1=Math.max(y1,n.y+n.h/2); });
+    r.x0=x0-26; r.y0=y0-26; r.x1=x1+26; r.y1=y1+26;
+  });
+  adatta();
 }
 
-/* La repulsione a forze lavora su distanze fra centri, ma i nodi sono
-   rettangoli: due riquadri bassi e larghi possono restare accavallati
-   pur avendo i centri lontani. Questa passata li separa davvero,
-   spingendoli lungo il lato in cui si sovrappongono di meno. */
-function separa(L,H){
-  const aria=10;
-  for(let giro=0; giro<60; giro++){
+/* Anche con i settori, due riquadri di rami vicini possono
+   toccarsi quando sono molto larghi. Qui si allontanano di poco,
+   lungo la congiungente, senza rompere la disposizione. */
+function separaSovrapposti(){
+  const M=16;
+  for(let giro=0; giro<70; giro++){
     let mosso=false;
     for(let i=0;i<nodi.length;i++) for(let j=i+1;j<nodi.length;j++){
       const a=nodi[i], b=nodi[j];
-      const sx=(a.w+b.w)/2+aria-Math.abs(a.x-b.x);
-      const sy=(a.h+b.h)/2+aria-Math.abs(a.y-b.y);
-      if(sx<=0||sy<=0) continue;
+      const dx=b.x-a.x, dy=b.y-a.y;
+      const sx=(a.w+b.w)/2+M, sy=(a.h+b.h)/2+M;
+      if(Math.abs(dx)>=sx || Math.abs(dy)>=sy) continue;
+      const px=sx-Math.abs(dx), py=sy-Math.abs(dy);
+      if(px<py){ const d=(dx>=0?1:-1)*px/2; a.x-=d; b.x+=d; }
+      else     { const d=(dy>=0?1:-1)*py/2; a.y-=d; b.y+=d; }
       mosso=true;
-      if(sx<sy){
-        const d=(a.x<b.x?-1:1)*sx/2;
-        a.x+=d; b.x-=d;
-      } else {
-        const d=(a.y<b.y?-1:1)*sy/2;
-        a.y+=d; b.y-=d;
-      }
     }
-    nodi.forEach(n=>{
-      n.x=Math.max(n.w/2+4, Math.min(L-n.w/2-4, n.x));
-      n.y=Math.max(n.h/2+12, Math.min(H-n.h/2-4, n.y));
-    });
     if(!mosso) break;
   }
 }
 
-/* Dove la retta che esce dal centro incontra il bordo del rettangolo.
-   Prima usavo metà larghezza in orizzontale e metà altezza in
-   verticale, che è giusto solo sulle diagonali: per due riquadri
-   affiancati il punto cadeva fuori dalla scatola e l'etichetta
-   finiva stampata sopra il testo del nodo. */
-function bordo(n,ang,fuori){
-  const dx=Math.cos(ang), dy=Math.sin(ang);
-  const tx = Math.abs(dx)>1e-6 ? (n.w/2)/Math.abs(dx) : Infinity;
-  const ty = Math.abs(dy)>1e-6 ? (n.h/2)/Math.abs(dy) : Infinity;
-  const t=Math.min(tx,ty)+fuori;
+function adatta(){
+  if(!nodi.length){ vista={x:0,y:0,s:1}; disegna(); return; }
+  const L=svg.clientWidth||1000, H=svg.clientHeight||560;
+  let x0=1e9,y0=1e9,x1=-1e9,y1=-1e9;
+  nodi.forEach(n=>{
+    x0=Math.min(x0,n.x-n.w/2); x1=Math.max(x1,n.x+n.w/2);
+    y0=Math.min(y0,n.y-n.h/2); y1=Math.max(y1,n.y+n.h/2);
+  });
+  /* anche le cornici dei gruppi vanno inquadrate: senza, l'ultimo
+     gruppo restava tagliato fuori dal bordo destro */
+  gruppiDisposti.forEach(r=>{
+    if(r.x0===undefined) return;
+    x0=Math.min(x0,r.x0); x1=Math.max(x1,r.x1);
+    y0=Math.min(y0,r.y0); y1=Math.max(y1,r.y1);
+  });
+  const m=40;
+  const s=Math.min((L-m*2)/Math.max(1,x1-x0), (H-m*2)/Math.max(1,y1-y0), 1.35);
+  vista.s=s;
+  vista.x=(L-(x1-x0)*s)/2 - x0*s;
+  vista.y=(H-(y1-y0)*s)/2 - y0*s;
+  disegna();
+}
+function zoom(f){
+  const L=svg.clientWidth||1000, H=svg.clientHeight||560;
+  const s2=Math.max(.25, Math.min(3, vista.s*f));
+  const k=s2/vista.s;
+  vista.x = L/2 - (L/2-vista.x)*k;
+  vista.y = H/2 - (H/2-vista.y)*k;
+  vista.s = s2;
+  disegna();
+}
+
+/* ─────────────────────────────────────────────────────────
+   3. DISEGNO
+   ───────────────────────────────────────────────────────── */
+
+const NS='http://www.w3.org/2000/svg';
+const el=(t,a)=>{ const n=document.createElementNS(NS,t);
+  for(const k in a) n.setAttribute(k,a[k]); return n; };
+
+function coloreDi(n){
+  if(n.lv===0) return CENTRO;
+  return n.ramo>=0 && n.ramo<COLORI.length ? COLORI[n.ramo] : GRIGIO;
+}
+/* Il riempimento è lo stesso colore molto diluito: il riquadro si
+   riconosce dal ramo senza che il testo perda contrasto. */
+function tinta(c, a){ return c+Math.round(a*255).toString(16).padStart(2,'0'); }
+
+/* Il punto in cui la freccia tocca il riquadro, invece del centro:
+   senza questo le punte finivano sotto il testo. */
+function bordo(n, versoX, versoY){
+  const dx=versoX-n.x, dy=versoY-n.y;
+  if(!dx && !dy) return {x:n.x, y:n.y};
+  const hw=n.w/2+4, hh=n.h/2+4;
+  const t=Math.min(Math.abs(dx)>1e-6 ? hw/Math.abs(dx) : 1e9,
+                   Math.abs(dy)>1e-6 ? hh/Math.abs(dy) : 1e9);
   return {x:n.x+dx*t, y:n.y+dy*t};
 }
 
-function disegnaMappa(){
-  const L=svg.clientWidth||900, H=altezzaTela;
-  svg.setAttribute('viewBox',`0 0 ${L} ${H}`);
-  if(!nodi.length){
-    svg.innerHTML=`<text x="${L/2}" y="${H/2}" text-anchor="middle" fill="#b3bdb1"
-      font-family="Jost,sans-serif" font-size="14">Nessun concetto: spunta almeno un legame</text>`;
+function disegna(){
+  while(svg.firstChild) svg.removeChild(svg.firstChild);
+  document.getElementById('vuoto-mappa').style.display = nodi.length ? 'none' : 'flex';
+  document.getElementById('conteggio').textContent = nodi.length
+    ? nodi.length+' concetti · '+archi.length+' legami' : '';
+  if(!nodi.length) return;
+
+  const difs=el('defs');
+  /* una punta di freccia per colore, perché in SVG il marcatore
+     non eredita il colore della linea che lo usa */
+  [CENTRO,GRIGIO,...COLORI].forEach((c,i)=>{
+    const m=el('marker',{id:'p'+i, viewBox:'0 0 10 10', refX:'9', refY:'5',
+      markerWidth:'6.5', markerHeight:'6.5', orient:'auto-start-reverse'});
+    m.appendChild(el('path',{d:'M0,1 L10,5 L0,9 z', fill:c}));
+    difs.appendChild(m);
+  });
+  svg.appendChild(difs);
+
+  const g=el('g',{transform:`translate(${vista.x},${vista.y}) scale(${vista.s})`});
+  svg.appendChild(g);
+
+  const idColore=c=>'p'+[CENTRO,GRIGIO,...COLORI].indexOf(c);
+
+  /* Quando i gruppi sono più di uno conviene dirlo: una cornice
+     tenue attorno a ciascuno spiega che il testo non li collega,
+     invece di lasciar credere a una mappa venuta male. */
+  if(gruppiDisposti.length>1){
+    gruppiDisposti.forEach(r=>{
+      g.appendChild(el('rect',{x:r.x0, y:r.y0, width:r.x1-r.x0, height:r.y1-r.y0,
+        rx:18, fill:'none', stroke:'#d8d5cb', 'stroke-width':1.5, 'stroke-dasharray':'7 6'}));
+    });
+  }
+
+  /* prima le frecce, così passano sotto i riquadri */
+  archi.forEach(a=>{
+    /* il colore della freccia è quello del nodo più lontano dal
+       centro: è lui che il ramo lo definisce */
+    const figlio = (a.b.lv||0) >= (a.a.lv||0) ? a.b : a.a;
+    const c=coloreDi(figlio);
+    const p1=bordo(a.a, a.b.x, a.b.y), p2=bordo(a.b, a.a.x, a.a.y);
+    const mx=(p1.x+p2.x)/2, my=(p1.y+p2.y)/2;
+    /* una curva appena accennata: due frecce fra zone vicine non
+       si sovrappongono, e restano leggibili */
+    const dx=p2.x-p1.x, dy=p2.y-p1.y, len=Math.hypot(dx,dy)||1;
+    const cxv=mx - dy/len*Math.min(26,len*0.11);
+    const cyv=my + dx/len*Math.min(26,len*0.11);
+    g.appendChild(el('path',{
+      d:`M${p1.x},${p1.y} Q${cxv},${cyv} ${p2.x},${p2.y}`,
+      fill:'none', stroke:c, 'stroke-width': a.conf==='bassa'?1.4:2.1,
+      'stroke-dasharray': a.conf==='bassa'?'5 4':'', opacity:.75,
+      'marker-end':`url(#${idColore(c)})`}));
+
+    /* l'etichetta del rapporto, in una pastiglia chiara */
+    const tx=(p1.x+cxv*2+p2.x)/4, ty=(p1.y+cyv*2+p2.y)/4;
+    const lw=larghezzaTesto(a.rel,500,11)+12;
+    g.appendChild(el('rect',{x:tx-lw/2, y:ty-9, width:lw, height:18, rx:9,
+      fill:'#fcfcfb', stroke:tinta(c,.35), 'stroke-width':1}));
+    const t=el('text',{x:tx, y:ty+4, 'text-anchor':'middle', fill:c,
+      'font-size':11, 'font-weight':500,
+      'font-family':'Jost, -apple-system, Segoe UI, sans-serif'});
+    t.textContent=a.rel;
+    g.appendChild(t);
+  });
+
+  /* poi i riquadri */
+  nodi.forEach(n=>{
+    const c=coloreDi(n);
+    const gr=el('g',{class:'nodo', style:'cursor:move'});
+    gr.appendChild(el('rect',{x:n.x-n.w/2, y:n.y-n.h/2, width:n.w, height:n.h,
+      rx:11, fill: n.lv===0 ? c : tinta(c,.11),
+      stroke:c, 'stroke-width': n.lv===0 ? 2.4 : 1.8}));
+    n.righe.forEach((riga,i)=>{
+      const t=el('text',{x:n.x, y:n.y - (n.righe.length-1)*(n.dim+4)/2 + i*(n.dim+4) + n.dim*0.36,
+        'text-anchor':'middle', 'font-size':n.dim, 'font-weight':600,
+        'font-family':'Jost, -apple-system, Segoe UI, sans-serif',
+        fill: n.lv===0 ? '#fff' : '#1c2b1a'});
+      t.textContent=riga;
+      gr.appendChild(t);
+    });
+    gr.addEventListener('pointerdown', e=>prendi(e,n));
+    g.appendChild(gr);
+  });
+}
+
+/* trascinare un riquadro, e trascinare il foglio */
+let preso=null, sposto=null;
+function prendi(e,n){
+  e.stopPropagation();
+  preso={n, dx:(e.clientX-svg.getBoundingClientRect().left-vista.x)/vista.s-n.x,
+            dy:(e.clientY-svg.getBoundingClientRect().top -vista.y)/vista.s-n.y};
+  svg.setPointerCapture(e.pointerId);
+}
+svg.addEventListener('pointerdown', e=>{
+  if(preso) return;
+  sposto={x:e.clientX, y:e.clientY, vx:vista.x, vy:vista.y};
+  svg.classList.add('trascino');
+  svg.setPointerCapture(e.pointerId);
+});
+svg.addEventListener('pointermove', e=>{
+  const r=svg.getBoundingClientRect();
+  if(preso){
+    preso.n.x=(e.clientX-r.left-vista.x)/vista.s-preso.dx;
+    preso.n.y=(e.clientY-r.top -vista.y)/vista.s-preso.dy;
+    disegna(); return;
+  }
+  if(sposto){
+    vista.x=sposto.vx+(e.clientX-sposto.x);
+    vista.y=sposto.vy+(e.clientY-sposto.y);
+    disegna();
+  }
+});
+function molla(){ preso=null; sposto=null; svg.classList.remove('trascino'); }
+svg.addEventListener('pointerup', molla);
+svg.addEventListener('pointercancel', molla);
+svg.addEventListener('wheel', e=>{ e.preventDefault(); zoom(e.deltaY<0?1.1:1/1.1); }, {passive:false});
+
+/* ── il pannello dei legami ──────────────────────────────── */
+function apriPannello(){
+  document.getElementById('pannello').classList.toggle('aperto');
+}
+const esc = t => String(t).replace(/[<>&"]/g,c=>({'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;'}[c]));
+
+function disegnaLegami(){
+  const box=document.getElementById('legami');
+  document.getElementById('pannello-tit').textContent =
+    legami.length ? 'I legami trovati ('+legami.filter(l=>l.attivo).length+' attivi su '+legami.length+')'
+                  : 'I legami trovati';
+  if(!legami.length){
+    box.innerHTML='<div class="vuoto">Nessun legame trovato. Il testo può essere ottimo lo '
+      +'stesso: vuol dire che i rapporti li lascia impliciti. Aggiungine uno a mano qui sotto, '
+      +'oppure riscrivi una frase in forma esplicita — «X deriva da Y».</div>';
     return;
   }
-  const gradoMax=Math.max(...nodi.map(n=>n.grado));
-  let d='<defs><marker id="punta" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7"'
-    +' markerHeight="7" orient="auto-start-reverse">'
-    +'<path d="M0 0L10 5L0 10z" fill="#8a9e87"/></marker></defs>';
-
-  archi.forEach(e=>{
-    const a=nodi[e.a], b=nodi[e.b];
-    const ang=Math.atan2(b.y-a.y,b.x-a.x);
-    const A=bordo(a,ang,2), B=bordo(b,ang+Math.PI,9);
-    const ax=A.x, ay=A.y, bx=B.x, by=B.y;
-    d+=`<line class="arco" x1="${ax}" y1="${ay}" x2="${bx}" y2="${by}" marker-end="url(#punta)"/>`;
-    const mx=(ax+bx)/2, my=(ay+by)/2;
-    const largo=e.rel.length*5+8;
-    d+=`<rect class="etichetta-fondo" x="${mx-largo/2}" y="${my-7}" width="${largo}" height="14" rx="7"/>`;
-    d+=`<text class="etichetta" x="${mx}" y="${my}">${esc(e.rel)}</text>`;
-  });
-
-  nodi.forEach((n,i)=>{
-    const molti = gradoMax>1 && n.grado>=gradoMax*0.75;
-    d+=`<g class="nodo${molti?' molti':''}" data-i="${i}">`
-      +`<rect x="${n.x-n.w/2}" y="${n.y-n.h/2}" width="${n.w}" height="${n.h}" rx="8"/>`
-      +`<text x="${n.x}" y="${n.y}">${esc(n.t)}</text></g>`;
-  });
-  svg.innerHTML=d;
+  box.innerHTML=legami.map((l,i)=>`
+    <div class="lg">
+      <input type="checkbox" ${l.attivo?'checked':''} onchange="accendi(${i},this.checked)"
+             aria-label="mostra questo legame">
+      <span class="cap"><b>${esc(l.da)}</b> <span class="rel">${esc(l.rel)}</span> <b>${esc(l.a)}</b></span>
+      <span class="conf ${l.conf}">${l.conf}</span>
+      <button class="via" onclick="togli(${i})" aria-label="elimina">elimina</button>
+    </div>`).join('');
+}
+function accendi(i,v){ legami[i].attivo=v; aggiorna(true); }
+function togli(i){ legami.splice(i,1); aggiorna(true); }
+function aggiungiLegame(){
+  const da=document.getElementById('nDa').value.trim();
+  const a =document.getElementById('nA').value.trim();
+  const rel=document.getElementById('nRel').value;
+  if(!da||!a||chiave(da)===chiave(a)) return;
+  legami.unshift({da:maiuscola(da), a:maiuscola(a), rel, conf:'alta', volte:1, attivo:true, frase:''});
+  document.getElementById('nDa').value=''; document.getElementById('nA').value='';
+  aggiorna(true);
 }
 
-/* ── trascinamento dei nodi ───────────────────────────────── */
-function puntoSvg(e){
-  const r=svg.getBoundingClientRect();
-  const L=svg.clientWidth||900;
-  return {x:(e.clientX-r.left)*(L/r.width), y:(e.clientY-r.top)*(altezzaTela/r.height)};
+/* Un solo punto da cui passa ogni aggiornamento: disegnare la
+   lista, ricostruire il grafo, ridisporlo. Prima queste tre
+   chiamate erano sparse, e capitava di dimenticarne una. */
+function aggiorna(tieniVista){
+  disegnaLegami();
+  costruisci();
+  if(tieniVista && nodi.length){ separaSovrapposti(); disegna(); }
+  else riordina();
 }
-svg.addEventListener('pointerdown',e=>{
-  const g=e.target.closest('.nodo'); if(!g) return;
-  trascinato=+g.dataset.i;
-  svg.setPointerCapture(e.pointerId);
-  svg.classList.add('trascino');
-});
-svg.addEventListener('pointermove',e=>{
-  if(trascinato===null) return;
-  const p=puntoSvg(e);
-  nodi[trascinato].x=p.x; nodi[trascinato].y=p.y;
-  disegnaMappa();
-});
-function molla(){ trascinato=null; svg.classList.remove('trascino'); }
-svg.addEventListener('pointerup',molla);
-svg.addEventListener('pointercancel',molla);
 
-function scarica(){
-  const L=svg.clientWidth||900, H=svg.clientHeight||480;
-  /* si ricopia lo stile a mano: i CSS esterni non entrano in un SVG staccato */
-  const stile='<style>'
-    +'.nodo rect{fill:#fff;stroke:#2d5a27;stroke-width:1.6}'
-    +'.nodo.molti rect{fill:#f0f5ee;stroke-width:2.4}'
-    +'.nodo text{font-family:sans-serif;font-size:12px;font-weight:500;fill:#1c2b1a;text-anchor:middle;dominant-baseline:middle}'
-    +'.arco{stroke:#8a9e87;stroke-width:1.4;fill:none}'
-    +'.etichetta{font-family:sans-serif;font-size:9.5px;fill:#8a6a1e;text-anchor:middle;dominant-baseline:middle}'
-    +'.etichetta-fondo{fill:#fff}</style>';
-  const testo='<svg xmlns="http://www.w3.org/2000/svg" width="'+(L*2)+'" height="'+(H*2)+'"'
-    +' viewBox="0 0 '+L+' '+H+'"><rect width="'+L+'" height="'+H+'" fill="#fff"/>'
-    +stile+svg.innerHTML+'</svg>';
-  const blob=new Blob([testo],{type:'image/svg+xml'});
-  const url=URL.createObjectURL(blob);
+/* ── salvare la mappa come immagine ──────────────────────── */
+function salvaPNG(){
+  if(!nodi.length) return;
+  const L=svg.clientWidth||1000, H=svg.clientHeight||560, scala=2;
+  const copia=svg.cloneNode(true);
+  copia.setAttribute('xmlns',NS);
+  copia.setAttribute('width',L); copia.setAttribute('height',H);
+  /* Senza viewBox un programma che apra l'immagine fuori dal
+     browser non sa a che dimensioni disegnarla e taglia quello che
+     sporge: l'anteprima del sistema lo faceva. */
+  copia.setAttribute('viewBox','0 0 '+L+' '+H);
+  /* il fondo va messo dentro l'immagine: un PNG trasparente
+     incollato in un documento bianco perde le pastiglie chiare */
+  const fondo=el('rect',{x:0,y:0,width:L,height:H,fill:'#fcfcfb'});
+  copia.insertBefore(fondo, copia.firstChild);
+  const testo=new XMLSerializer().serializeToString(copia);
   const img=new Image();
   img.onload=()=>{
     const c=document.createElement('canvas');
-    c.width=L*2; c.height=H*2;
-    const x=c.getContext('2d');
-    x.fillStyle='#fff'; x.fillRect(0,0,c.width,c.height);
-    x.drawImage(img,0,0);
-    const a=document.createElement('a');
-    a.download='mappa.png'; a.href=c.toDataURL('image/png'); a.click();
-    URL.revokeObjectURL(url);
+    c.width=L*scala; c.height=H*scala;
+    const x=c.getContext('2d'); x.scale(scala,scala); x.drawImage(img,0,0);
+    c.toBlob(b=>{
+      const u=URL.createObjectURL(b), a=document.createElement('a');
+      a.href=u; a.download='mappa-concettuale.png'; a.click();
+      setTimeout(()=>URL.revokeObjectURL(u),1000);
+    });
   };
-  img.src=url;
+  img.src='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(testo);
 }
 
-document.getElementById('nRel').innerHTML=RELAZIONI.map(r=>`<option>${r}</option>`).join('');
-document.getElementById('esempi').innerHTML=ESEMPI.map((e,i)=>
-  `<button class="mini" onclick="document.getElementById('fonte').value=ESEMPI[${i}].t;estrai()">${e.n}</button>`).join(' ');
-window.addEventListener('resize',()=>{ if(nodi.length) riordina(); });
+/* ── avvio ───────────────────────────────────────────────── */
+document.getElementById('nRel').innerHTML =
+  RELAZIONI.map(r=>`<option>${r}</option>`).join('');
+document.getElementById('esempi').innerHTML =
+  ESEMPI.map((e,i)=>`<button class="mini" onclick="caricaEsempio(${i})">${e.n}</button>`).join(' ');
+function caricaEsempio(i){
+  document.getElementById('fonte').value=ESEMPI[i].t;
+  estrai();
+}
+window.addEventListener('resize', ()=>{ if(nodi.length) adatta(); });
+aggiorna();
 </script>
 </body>
 </html>
