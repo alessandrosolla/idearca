@@ -809,7 +809,7 @@ const BANCA2 = [
   ]
 },
 {
-  titolo: 'Filosofia moderna · 28 — Hegel: la Fenomenologia dello Spirito',
+  titolo: 'Filosofia moderna · 28 — Hegel: la Fenomenologia dello spirito',
   domande: [
     {tipo:'nuvola', testo:'Prima di cominciare: si può imparare qualcosa senza prima sbagliare?'},
 
@@ -1311,6 +1311,343 @@ const BANCA2 = [
               'Perché le società sono organizzate in modo ingiusto'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa vuol dire essere responsabili di sé.'}
+  ]
+}
+,
+{
+  titolo: 'Filosofia moderna · 7 — Francesco Bacone',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: quando dici «lo so», da dove viene quello che sai?'},
+
+    {tipo:'scelta', testo:'Quali sono i due movimenti che «sapere è potere» tiene insieme?',
+     opzioni:['Conoscere le leggi della natura e servirsene a vantaggio dell\'uomo',
+              'Studiare i testi antichi e insegnarli alle nuove generazioni',
+              'Osservare i fatti e classificarli in ordine alfabetico',
+              'Scoprire le cause e tenerle segrete ai concorrenti'], giusta:0},
+
+    {tipo:'scelta', testo:'A che cosa serve la pars destruens del metodo baconiano?',
+     opzioni:['A sgombrare la mente dai pregiudizi prima di costruire',
+              'A demolire le opere degli scienziati rivali',
+              'A separare le scienze utili da quelle inutili',
+              'A distruggere gli strumenti di misura imprecisi'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa sono gli idoli, in generale?',
+     opzioni:['Falsi pregiudizi che alterano la nostra percezione della realtà',
+              'Immagini sacre che la scienza deve rispettare',
+              'Modelli di ragionamento che ogni ricerca deve seguire',
+              'Le cause ultime che stanno dietro ai fenomeni'], giusta:0},
+
+    {tipo:'scelta', testo:'Da dove nascono gli «idoli del foro»?',
+     opzioni:['Dal linguaggio e dai suoi usi ingannevoli fra le persone',
+              'Dal carattere e dall\'educazione del singolo studioso',
+              'Dai sistemi filosofici tramandati come dogmi',
+              'Dalla struttura stessa della mente umana'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa registra la tavola della presenza?',
+     opzioni:['Tutti i casi in cui il fenomeno studiato si manifesta',
+              'I casi in cui il fenomeno non si presenta',
+              'I casi in cui il fenomeno varia di intensità',
+              'Gli esperimenti riusciti e quelli falliti'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa registra la tavola dell\'assenza?',
+     opzioni:['I casi simili a quelli di presenza in cui però il fenomeno manca',
+              'Gli errori commessi durante gli esperimenti',
+              'I fenomeni che non si riescono a osservare',
+              'Le teorie del passato che sono state abbandonate'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa aggiunge la tavola dei gradi?',
+     opzioni:['I casi in cui il fenomeno cresce o diminuisce di intensità',
+              'La classificazione dei fenomeni dal più al meno importante',
+              'La misura esatta di ogni singolo esperimento',
+              'L\'ordine in cui gli esperimenti vanno eseguiti'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché per Bacone l\'esperienza va organizzata e non solo raccolta?',
+     opzioni:['Perché solo così rivela gli schemi che collegano i fenomeni',
+              'Perché altrimenti si perdono i dati raccolti nel tempo',
+              'Perché il metodo antico prescriveva già questo ordine',
+              'Perché gli esperimenti costano e vanno programmati'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire quale pregiudizio ti sembra il più difficile da togliersi.'}
+  ]
+},
+{
+  titolo: 'Filosofia moderna · 8 — Galileo Galilei',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: che cosa faresti se un tuo esperimento smentisse quello che tutti danno per certo?'},
+
+    {tipo:'scelta', testo:'Perché il cannocchiale non è solo uno strumento in più?',
+     opzioni:['Diventa un prolungamento dell\'intelletto: cambia che cosa si può sapere',
+              'Permette di vedere più lontano risparmiando fatica',
+              'Serve a controllare i calcoli fatti con la matematica',
+              'Consente di misurare le distanze con esattezza'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa mostrano le montagne lunari osservate col cannocchiale?',
+     opzioni:['Che i cieli non sono incorruttibili e perfetti come si credeva',
+              'Che la Luna gira intorno alla Terra e non intorno al Sole',
+              'Che la Luna è abitata da esseri viventi',
+              'Che la Luna è più piccola di quanto si pensasse'], giusta:0},
+
+    {tipo:'scelta', testo:'Quali sono i due pilastri del metodo galileiano?',
+     opzioni:['Sensate esperienze e necessarie dimostrazioni',
+              'Osservazione e classificazione dei fenomeni',
+              'Autorità degli antichi e verifica sperimentale',
+              'Induzione dai casi e deduzione dalle cause'], giusta:0},
+
+    {tipo:'scelta', testo:'Che funzione hanno le «necessarie dimostrazioni»?',
+     opzioni:['Permettono di dedurre il comportamento dei fenomeni da pochi dati',
+              'Servono a convincere gli avversari con l\'eloquenza',
+              'Forniscono i dati di partenza della ricerca',
+              'Dimostrano che l\'esperienza dei sensi è inaffidabile'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa rivendica Galilei per il ricercatore?',
+     opzioni:['La piena autonomia rispetto ai dogmi che vengono da fuori',
+              'Il diritto di essere pagato dallo Stato per la sua ricerca',
+              'Il potere di decidere che cosa la Chiesa debba insegnare',
+              'La libertà di pubblicare senza mai citare le fonti'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa vuol dire che la legge di natura è «una formula matematica validata dall\'esperimento»?',
+     opzioni:['Va scritta in linguaggio matematico e poi messa alla prova',
+              'Va ricavata dai testi degli antichi e poi calcolata',
+              'Vale solo se tutti gli studiosi la accettano',
+              'Deve valere per il cielo ma non per la Terra'], giusta:0},
+
+    {tipo:'scelta', testo:'Come finisce lo scontro fra l\'evidenza di Galilei e i dogmi consolidati?',
+     opzioni:['Con la condanna e il ritiro forzato',
+              'Con l\'accettazione immediata delle sue tesi',
+              'Con l\'esilio volontario in un altro paese',
+              'Con un accordo che gli permette di insegnare'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa lascia in eredità Galilei, secondo le sue stesse conquiste?',
+     opzioni:['Una scienza che nasce dall\'incontro fra esperienza e matematica',
+              'Un elenco completo di tutti i corpi celesti conosciuti',
+              'Un metodo valido soltanto per l\'astronomia',
+              'La prova definitiva che la Bibbia è in errore'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa serve per cambiare idea a qualcuno.'}
+  ]
+},
+{
+  titolo: 'Filosofia moderna · 10 — Spinoza',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: quando ti arrabbi, sai davvero perché?'},
+
+    {tipo:'scelta', testo:'Che cosa vuol dire che Spinoza è monista?',
+     opzioni:['Esiste una sola sostanza: non c\'è un creatore separato dal creato',
+              'Esiste un solo mondo, ma creato da un Dio esterno',
+              'Esiste una sola verità, che la ragione può raggiungere',
+              'Esiste un solo metodo valido per ogni scienza'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa vuol dire che la sostanza è «increata»?',
+     opzioni:['Non è stata prodotta da nulla: è causa di sé stessa',
+              'Non ha ancora ricevuto una forma definita',
+              'Non può essere conosciuta dall\'intelletto umano',
+              'Non produce nulla al di fuori di sé'], giusta:0},
+
+    {tipo:'scelta', testo:'In che senso l\'uomo obbedisce «alle stesse leggi della geometria»?',
+     opzioni:['Passioni e comportamenti seguono regole necessarie come le figure',
+              'Il corpo umano ha proporzioni geometriche perfette',
+              'L\'uomo può essere descritto solo con formule matematiche',
+              'La geometria è la disciplina che l\'uomo apprende per prima'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è il conatus, nella formula di Spinoza?',
+     opzioni:['Lo sforzo di ogni individuo a perseverare nel proprio essere',
+              'Il desiderio di superare gli altri e imporsi su di loro',
+              'La tensione verso un fine posto fuori di noi',
+              'Lo sforzo dell\'intelletto per liberarsi dal corpo'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché Spinoza dice che l\'uomo non è «un dominio dentro un altro dominio»?',
+     opzioni:['Perché non fa eccezione: è dentro l\'ordine naturale come tutto il resto',
+              'Perché non può governare uno Stato indipendente',
+              'Perché il suo corpo non gli appartiene davvero',
+              'Perché dipende sempre dalla volontà di altri uomini'], giusta:0},
+
+    {tipo:'scelta', testo:'Che rapporto ha la libertà con la necessità, in Spinoza?',
+     opzioni:['Si è liberi capendo la necessità, non sottraendosi ad essa',
+              'Si è liberi solo quando si sfugge a ogni necessità',
+              'Libertà e necessità sono due nomi della stessa cosa',
+              'La libertà appartiene a Dio, la necessità agli uomini'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa succede a una passione quando la comprendiamo?',
+     opzioni:['Smette di subirci e diventa un\'idea adeguata',
+              'Scompare del tutto dalla nostra vita',
+              'Si trasforma nel suo contrario',
+              'Diventa più forte, perché le prestiamo attenzione'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché la formula «Deus sive Natura» era scandalosa?',
+     opzioni:['Toglieva a Dio la figura di persona che crea e giudica',
+              'Negava che la natura seguisse leggi regolari',
+              'Affermava che Dio fosse nato insieme al mondo',
+              'Sosteneva che la natura fosse governata dal caso'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa cambia quando capisci il perché di un\'emozione.'}
+  ]
+},
+{
+  titolo: 'Filosofia moderna · 11 — Leibniz',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: due cose possono essere identiche in tutto e restare due?'},
+
+    {tipo:'scelta', testo:'Che cosa oppone Leibniz all\'unità monistica di Spinoza?',
+     opzioni:['Una pluralità infinita di sostanze individuali',
+              'Un\'unica sostanza divisa in parti uguali',
+              'Due sostanze, il pensiero e l\'estensione',
+              'Un numero finito di sostanze materiali'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa afferma il principio degli indiscernibili?',
+     opzioni:['Non esistono in natura due sostanze perfettamente identiche',
+              'Non possiamo distinguere due cose senza osservarle',
+              'Le differenze fra le cose sono solo apparenti',
+              'Due cose identiche occupano lo stesso luogo'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è l\'attività di base comune a tutte le monadi?',
+     opzioni:['La percezione: rappresentare l\'universo dal proprio punto di vista',
+              'Il movimento nello spazio secondo le leggi della meccanica',
+              'Il pensiero cosciente, riflesso e consapevole di sé',
+              'La capacità di unirsi ad altre monadi per formare corpi'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è l\'appetizione?',
+     opzioni:['La spinta interna che porta la monade da una percezione all\'altra',
+              'Il desiderio di unirsi al corpo che la ospita',
+              'L\'attrazione che una monade esercita su un\'altra',
+              'La tendenza a tornare nello stato originario'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa distingue le monadi superiori?',
+     opzioni:['L\'appercezione, cioè la consapevolezza di percepire',
+              'La capacità di muovere i corpi materiali',
+              'La possibilità di comunicare fra loro',
+              'Il fatto di essere state create per prime'], giusta:0},
+
+    {tipo:'scelta', testo:'Se le monadi non comunicano, come si spiega l\'accordo fra mente e corpo?',
+     opzioni:['Con un\'armonia stabilita in origine, che coordina tutti gli eventi',
+              'Con un intervento continuo di Dio caso per caso',
+              'Con un flusso di informazioni che passa fra le monadi',
+              'Con l\'azione meccanica del corpo sulla mente'], giusta:0},
+
+    {tipo:'scelta', testo:'Che rapporto c\'è fra ogni monade e l\'universo intero?',
+     opzioni:['Ogni monade, pur chiusa, rispecchia l\'intero cosmo',
+              'Ogni monade contiene una parte diversa del cosmo',
+              'Ogni monade ignora tutto ciò che sta fuori di sé',
+              'Ogni monade riceve dall\'universo ciò che le serve'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché la matematica infinitesimale interessa Leibniz anche come filosofo?',
+     opzioni:['Perché rispecchia una natura divisibile all\'infinito',
+              'Perché permette di calcolare la posizione delle monadi',
+              'Perché dimostra che il mondo è finito',
+              'Perché serve a misurare la perfezione di Dio'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire come possono accordarsi cose che non si parlano.'}
+  ]
+},
+{
+  titolo: 'Filosofia moderna · 12 — Hobbes',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: se sparissero tutte le regole per una settimana, che cosa succederebbe?'},
+
+    {tipo:'scelta', testo:'Come descrive Hobbes il ragionamento?',
+     opzioni:['Un calcolo: si sommano parole in affermazioni e affermazioni in prove',
+              'Un\'intuizione immediata delle verità evidenti',
+              'Un dialogo interiore fra l\'anima e sé stessa',
+              'Un ricordo ordinato delle esperienze passate'], giusta:0},
+
+    {tipo:'scelta', testo:'Come divide Hobbes la filosofia?',
+     opzioni:['Filosofia naturale per i corpi naturali, civile per quelli artificiali',
+              'Filosofia teorica per le idee, pratica per le azioni umane',
+              'Filosofia antica, filosofia medievale e filosofia moderna',
+              'Filosofia della mente e filosofia del corpo, tenute separate'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché per Hobbes non esiste un sommo bene?',
+     opzioni:['Perché il desiderio non cessa mai: chi non desidera più non vive',
+              'Perché ogni uomo desidera una cosa diversa',
+              'Perché il bene dipende dalle leggi dello Stato',
+              'Perché nessuno riesce a ottenere ciò che desidera'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa dice il determinismo di Hobbes sulle azioni umane?',
+     opzioni:['Sono determinate meccanicamente da cause precedenti',
+              'Sono libere ma limitate dalle leggi civili',
+              'Dipendono dall\'anima, non dal corpo',
+              'Sono imprevedibili anche per chi le compie'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché nello stato di natura non esiste il giusto né l\'ingiusto?',
+     opzioni:['Manca una legge comune: c\'è solo la sopravvivenza immediata',
+              'Perché tutti si comportano nello stesso modo',
+              'Perché nessuno ha ancora inventato il linguaggio',
+              'Perché gli uomini vivono isolati e non si incontrano'], giusta:0},
+
+    {tipo:'scelta', testo:'Come descrive Hobbes la vita nello stato di natura?',
+     opzioni:['Solitaria, misera, ostile, animalesca e breve',
+              'Semplice, povera ma tutto sommato tranquilla',
+              'Libera e felice, prima della corruzione sociale',
+              'Ordinata da leggi non scritte che tutti rispettano'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché il patto sociale, per Hobbes, moltiplica la potenza?',
+     opzioni:['L\'unione di molte forze produce più sicurezza della somma delle singole',
+              'Perché ogni cittadino diventa più forte fisicamente',
+              'Perché il sovrano distribuisce ricchezza a tutti',
+              'Perché le leggi permettono di conquistare altri territori'], giusta:0},
+
+    {tipo:'scelta', testo:'Che metodo assegna Hobbes alla filosofia civile?',
+     opzioni:['La deduzione: dalle cause agli effetti necessari',
+              'L\'induzione: dagli effetti alle cause probabili',
+              'L\'esperimento ripetuto in condizioni controllate',
+              'Il confronto con le costituzioni degli antichi'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa si cede accettando le regole.'}
+  ]
+},
+{
+  titolo: 'Filosofia moderna · 13 — Locke',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: che cosa ti rende la stessa persona che eri a sei anni?'},
+
+    {tipo:'scelta', testo:'Su che cosa si dividono Cartesio e Locke sull\'origine delle idee?',
+     opzioni:['Per Cartesio alcune sono innate, per Locke tutte vengono dall\'esperienza',
+              'Per Cartesio vengono dai sensi, per Locke dalla ragione',
+              'Per Cartesio le idee sono false, per Locke sono vere',
+              'Per Cartesio sono infinite, per Locke sono in numero fisso'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa vuol dire che la mente è una «tabula rasa»?',
+     opzioni:['Nasce come un foglio bianco, priva di ogni carattere',
+              'Nasce già ordinata, ma senza contenuti',
+              'Cancella periodicamente ciò che ha appreso',
+              'Non può conservare a lungo quello che riceve'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa può e che cosa non può fare la mente con le idee semplici?',
+     opzioni:['Può combinarle e confrontarle, ma non inventarle né distruggerle',
+              'Può inventarle, ma non può conservarle',
+              'Può cancellarle, ma non può modificarle',
+              'Può solo riceverle, senza mai elaborarle'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa sono i «modi», fra le idee complesse?',
+     opzioni:['Idee che non sussistono da sole, come la gratitudine o il numero',
+              'Idee che rappresentano cose esistenti per sé, come un uomo',
+              'Idee che collegano due cose fra loro, come la causa',
+              'Idee che derivano direttamente dai sensi'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è, per Locke, il criterio di verità?',
+     opzioni:['La verifica empirica, insieme alla riflessione interna',
+              'L\'evidenza razionale delle idee chiare e distinte',
+              'L\'accordo fra gli uomini di scienza',
+              'La conformità alla tradizione ricevuta'], giusta:0},
+
+    {tipo:'scelta', testo:'Su che cosa si fonda, per Locke, l\'identità della persona?',
+     opzioni:['Sulla coscienza che accompagna gli stati interni nel tempo',
+              'Su una sostanza spirituale invisibile e permanente',
+              'Sulla continuità del corpo dalla nascita alla morte',
+              'Sul nome e sul ruolo riconosciuti dalla società'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa cambia nel passaggio dallo stato di natura allo Stato liberale?',
+     opzioni:['I diritti restano gli stessi, ma diventano garantiti giuridicamente',
+              'I diritti naturali vengono ceduti interamente al sovrano',
+              'Nascono diritti che prima non esistevano affatto',
+              'Il sovrano acquista il potere di sospendere i diritti'], giusta:0},
+
+    {tipo:'scelta', testo:'Su che cosa si fonda l\'autorità del sovrano per Locke?',
+     opzioni:['Sul consenso esplicito dei cittadini, non sul diritto divino',
+              'Sulla forza militare di cui dispone',
+              'Sull\'eredità ricevuta dai propri antenati',
+              'Sulla superiore capacità di giudizio del re'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa deve fare uno Stato che rispetta i suoi cittadini.'}
   ]
 }
 ];
