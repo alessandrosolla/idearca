@@ -38,6 +38,10 @@
      revisione: allo studente compaiono chiuse, con il motivo
      scritto, invece di sparire senza spiegazione. */
   const APERTE=['debate-ingiustizia'];
+  /* Pagine che sono materiale del docente e basta: le slide da
+     proiettare contengono le domande da girare alla classe, che
+     perdono senso se la classe le ha già lette. */
+  const SOLO_DOCENTE=['slide-ingiustizia'];
   /* l'indice non è un'attività: non va mai serrato, perché è la
      pagina da cui si vede che cosa esiste */
   const SEMPRE=['index',''];
@@ -81,21 +85,33 @@
   }
 
   /* La pagina chiusa: non un errore, una spiegazione. */
-  function serranda(){
-    document.body.innerHTML =
-      '<div class="wrap"><div class="chiusa">'
-      + '<div class="chiusa-et">Attività in revisione</div>'
-      + '<h1>Questa scheda non è ancora aperta alla classe</h1>'
-      + '<p>Il professore la sta ancora rivedendo. Quella pronta è '
-      + '<a href="debate-ingiustizia.html">Meglio subirla o commetterla?</a>, '
-      + 'il debate sul <em>Gorgia</em> di Platone.</p>'
-      + '<p class="chiusa-min">Se stai preparando il debate, è quella la pagina da studiare.</p>'
-      + '</div></div>';
+  function serranda(diLezione){
+    document.documentElement.removeAttribute('style');
+    document.body.removeAttribute('class');
+    document.body.style.cssText='background:#faf8f3;color:#1c2b1a;overflow:auto;height:auto';
+    document.body.innerHTML = diLezione
+      ? '<div class="wrap"><div class="chiusa">'
+        + '<div class="chiusa-et">Materiale della lezione</div>'
+        + '<h1>Questa è la parte che proietta il professore</h1>'
+        + '<p>Sono le slide che accompagnano la spiegazione, e contengono le domande che '
+        + 'verranno fatte in classe: leggerle prima toglierebbe il senso all\'esercizio.</p>'
+        + '<p class="chiusa-min">La pagina da studiare è '
+        + '<a href="debate-ingiustizia.html">Meglio subirla o commetterla?</a>.</p>'
+        + '</div></div>'
+      : '<div class="wrap"><div class="chiusa">'
+        + '<div class="chiusa-et">Attività in revisione</div>'
+        + '<h1>Questa scheda non è ancora aperta alla classe</h1>'
+        + '<p>Il professore la sta ancora rivedendo. Quella pronta è '
+        + '<a href="debate-ingiustizia.html">Meglio subirla o commetterla?</a>, '
+        + 'il debate sul <em>Gorgia</em> di Platone.</p>'
+        + '<p class="chiusa-min">Se stai preparando il debate, è quella la pagina da studiare.</p>'
+        + '</div></div>';
   }
 
   function avvia(){
     const docente = eDocente();
 
+    if(!docente && SOLO_DOCENTE.indexOf(nomePagina())>=0){ serranda(true); return; }
     if(!docente && !eAperta()){ serranda(); return; }
 
     if(!docente){
