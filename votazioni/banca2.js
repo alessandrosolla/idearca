@@ -28,7 +28,7 @@ const BANCA2 = [
     {tipo:'nuvola', testo:'Prima di cominciare: perché secondo te la filosofia nasce in una colonia e non nella madrepatria greca?'},
 
     {tipo:'scelta', testo:'Perché la filosofia nasce a Mileto e non ad Atene o a Sparta?',
-     opzioni:['Nelle colonie ioniche il commercio e il confronto con altre civiltà avevano indebolito le certezze del mito',
+     opzioni:['Nelle colonie ioniche il commercio aveva indebolito il mito',
               'Ad Atene la religione tradizionale vietava per legge ogni discussione sugli dèi',
               'A Mileto era stata fondata la prima scuola pubblica finanziata dalla città',
               'Le città della madrepatria non conoscevano ancora la scrittura alfabetica'], giusta:0},
@@ -252,7 +252,7 @@ const BANCA2 = [
     {tipo:'nuvola', testo:'Prima di cominciare: si può sapere una cosa e fare lo stesso il contrario?'},
 
     {tipo:'scelta', testo:'Che cosa significa che Socrate sa di non sapere?',
-     opzioni:['Riconosce i limiti del proprio sapere, mentre gli altri credono di sapere ciò che ignorano',
+     opzioni:['Riconosce i limiti del proprio sapere, gli altri no',
               'Sostiene che nessuna conoscenza sia possibile in nessun campo',
               'Ammette di non aver studiato presso nessun maestro riconosciuto',
               'Nega di possedere il sapere tecnico degli artigiani e dei medici'], giusta:0},
@@ -2192,7 +2192,7 @@ const BANCA2 = [
               'La giustizia, che regola i rapporti fra i cittadini'], giusta:0},
 
     {tipo:'scelta', testo:'Che differenza c\'è fra giustizia distributiva e retributiva?',
-     opzioni:['La prima dà a ciascuno secondo il merito, la seconda ripristina l\'equilibrio',
+     opzioni:['La prima dà secondo il merito, la seconda ripara',
               'La prima riguarda i beni, la seconda le persone',
               'La prima vale in pace, la seconda in guerra',
               'La prima è scritta nelle leggi, la seconda no'], giusta:0},
@@ -2641,7 +2641,7 @@ const BANCA2 = [
               'Immaginazione, osservazione empirica, ragione speculativa'], giusta:0},
 
     {tipo:'scelta', testo:'Che cosa studia la statica sociale?',
-     opzioni:['Le condizioni di esistenza di una società: istituzioni, famiglia, lingua',
+     opzioni:['Le condizioni di esistenza: istituzioni, famiglia, lingua',
               'Le leggi che regolano lo sviluppo storico',
               'Il modo in cui le società entrano in crisi',
               'La distribuzione della ricchezza fra le classi'], giusta:0},
@@ -3645,7 +3645,7 @@ const BANCA2 = [
               'Il metodo con cui si verificano le ipotesi'], giusta:0},
 
     {tipo:'scelta', testo:'Che cosa mostra l\'analisi del Panopticon?',
-     opzioni:['Il potere funziona meglio quando ci si sente osservati, anche se nessuno guarda',
+     opzioni:['Il potere funziona se ci si sente osservati, anche a vuoto',
               'Le prigioni moderne sono più umane di quelle antiche',
               'Il potere agisce solo attraverso la punizione fisica',
               'La sorveglianza è inefficace se non è continua'], giusta:0},
@@ -4038,7 +4038,7 @@ const BANCA2 = [
               'I documenti sono conservati in archivi inaccessibili'], giusta:0},
 
     {tipo:'scelta', testo:'Che cosa studia l\'antropologia in questo campo?',
-     opzioni:['Le popolazioni indigene attuali e la continuità di pratiche e riti',
+     opzioni:['Le popolazioni indigene attuali e i loro riti',
               'I resti materiali sepolti negli scavi',
               'I codici e i simboli religiosi dipinti',
               'I documenti fiscali dei conquistatori'], giusta:0},
@@ -4307,7 +4307,7 @@ const BANCA2 = [
               'Riconosce il primato del papa in materia di dottrina'], giusta:0},
 
     {tipo:'scelta', testo:'Che cosa succede a Michele Serveto nel 1553?',
-     opzioni:['Fugge dall\'Inquisizione cattolica e viene bruciato dai calvinisti a Ginevra',
+     opzioni:['Fugge dall\'Inquisizione e viene bruciato a Ginevra',
               'Viene condannato a Roma e giustiziato in piazza',
               'Ottiene asilo a Ginevra e vi muore di vecchiaia',
               'Viene liberato dopo aver abiurato le sue tesi'], giusta:0},
@@ -4587,7 +4587,7 @@ const BANCA2 = [
               'È composto quasi solo da mercenari professionisti'], giusta:0},
 
     {tipo:'scelta', testo:'Che cosa succede alle «repubbliche sorelle» create in Italia?',
-     opzioni:['Diventano entità vassalle, sfruttate con requisizioni e saccheggi d\'arte',
+     opzioni:['Diventano vassalle, sfruttate e saccheggiate',
               'Ottengono piena indipendenza dalla Francia',
               'Vengono restituite ai sovrani precedenti',
               'Si uniscono in un unico Stato italiano'], giusta:0},
@@ -4673,7 +4673,7 @@ const BANCA2 = [
               'La libertà di stampa e di religione'], giusta:0},
 
     {tipo:'scelta', testo:'Che cosa distingue il conservatore Burke dal reazionario?',
-     opzioni:['Rifiuta la rottura violenta ma accetta uno sviluppo organico e progressivo',
+     opzioni:['Rifiuta la rottura ma accetta uno sviluppo graduale',
               'Rifiuta ogni cambiamento, anche graduale',
               'Chiede il ritorno immediato all\'assolutismo',
               'Sostiene la sovranità popolare senza limiti'], giusta:0},
@@ -4735,6 +4735,511 @@ const BANCA2 = [
               'Con il 90% dei voti'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: una parola per dire chi vince quando la paura supera la speranza.'}
+  ]
+}
+,
+{
+  titolo: 'Storia contemporanea · 1 — Il Risorgimento e la prima guerra d\'indipendenza',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: per fare un\'Italia unita, meglio una repubblica o una monarchia?'},
+
+    {tipo:'scelta', testo:'Quali sono i due assi su cui si dividono i progetti risorgimentali?',
+     opzioni:['Stato unitario o federazione, rivoluzione popolare o riforme graduali',
+              'Monarchia o repubblica, guerra o diplomazia',
+              'Nord o Sud, città o campagna',
+              'Laicità o clericalismo, libertà o uguaglianza'], giusta:0},
+
+    {tipo:'scelta', testo:'In quale casella si colloca la Giovine Italia di Mazzini?',
+     opzioni:['Repubblica unitaria per via rivoluzionaria',
+              'Monarchia unitaria per via diplomatica',
+              'Confederazione di Stati guidata dal papa',
+              'Repubblica federale ottenuta con riforme'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa propongono invece Carlo Cattaneo e Ferrari?',
+     opzioni:['Una repubblica federale, ottenuta trasformando gli Stati esistenti',
+              'Una monarchia unitaria sotto i Savoia',
+              'Una confederazione presieduta dal pontefice',
+              'Un\'insurrezione popolare per la repubblica unitaria'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa insegna la sconfitta di Novara del 1849?',
+     opzioni:['Il Piemonte da solo non batte l\'Austria: serve un alleato',
+              'La guerra andava condotta con più uomini',
+              'L\'unità si può fare solo per via rivoluzionaria',
+              'I sovrani italiani erano pronti a collaborare'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa fa Carlo Alberto dopo Novara?',
+     opzioni:['Abdica in favore di Vittorio Emanuele II',
+              'Firma un trattato di alleanza con l\'Austria',
+              'Continua la guerra fino alla vittoria',
+              'Proclama la repubblica in Piemonte'], giusta:0},
+
+    {tipo:'scelta', testo:'Quali sono le tre direttrici dell\'azione di Cavour dal 1852?',
+     opzioni:['Modernizzazione interna, vetrina internazionale, alleanza con la Francia',
+              'Insurrezione popolare, propaganda, esilio dei patrioti',
+              'Confederazione con il papa, guerra santa, spedizione al Sud',
+              'Neutralità, disarmo e riforme religiose'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa ottiene Cavour partecipando alla guerra di Crimea?',
+     opzioni:['Un seggio al Congresso di Parigi, per esporre la questione italiana',
+              'Territori in Oriente da colonizzare',
+              'Il ritiro dell\'Austria dalla Lombardia',
+              'Un prestito dall\'Inghilterra per l\'esercito'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa cede il Piemonte alla Francia con gli accordi di Plombières?',
+     opzioni:['Nizza e la Savoia',
+              'La Liguria e il Piemonte occidentale',
+              'La Sardegna e la Corsica',
+              'Il Ducato di Parma e quello di Modena'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa manca a un\'idea per diventare uno Stato.'}
+  ]
+},
+{
+  titolo: 'Storia contemporanea · 4 — L\'Unità d\'Italia e la Destra storica',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: si può governare un paese nuovo con le leggi di una sola sua regione?'},
+
+    {tipo:'scelta', testo:'Che metodo usano i moderati, e quale i democratici?',
+     opzioni:['I moderati diplomazia e riforme dall\'alto, i democratici insurrezione dal basso',
+              'I moderati insurrezione, i democratici trattative internazionali',
+              'Entrambi soltanto la guerra regolare',
+              'I moderati la propaganda, i democratici le alleanze estere'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è l\'obiettivo istituzionale dei moderati?',
+     opzioni:['Una monarchia costituzionale sotto i Savoia',
+              'Una repubblica democratica e unitaria',
+              'Una confederazione presieduta dal papa',
+              'Una federazione di repubbliche regionali'], giusta:0},
+
+    {tipo:'scelta', testo:'Come Cavour sfrutta le sollevazioni nei Ducati centrali del 1860?',
+     opzioni:['Organizza plebisciti che portano all\'annessione al Regno di Sardegna',
+              'Invia l\'esercito a occuparli militarmente',
+              'Chiede la mediazione della Francia',
+              'Li lascia indipendenti in attesa di tempi migliori'], giusta:0},
+
+    {tipo:'scelta', testo:'Da dove parte la spedizione dei Mille, e dove sbarca?',
+     opzioni:['Parte da Quarto e sbarca a Marsala',
+              'Parte da Talamone e sbarca a Palermo',
+              'Parte da Genova e sbarca a Napoli',
+              'Parte da Quarto e sbarca a Calatafimi'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è il dilemma politico che terrorizza Cavour nel 1860?',
+     opzioni:['Se Garibaldi attacca Roma, interviene Napoleone III',
+              'Che i Mille vengano sconfitti dai Borbone',
+              'Che l\'Austria approfitti della situazione al Nord',
+              'Che l\'Inghilterra blocchi i porti del Sud'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa succede a Teano il 26 ottobre 1860?',
+     opzioni:['Garibaldi consegna il Sud e saluta Vittorio Emanuele re',
+              'Garibaldi rifiuta di cedere il Sud alla monarchia',
+              'Le truppe piemontesi e garibaldine si scontrano',
+              'Viene firmato l\'armistizio con i Borbone'], giusta:0},
+
+    {tipo:'scelta', testo:'Quali sono le tre leve dell\'accentramento della Destra storica?',
+     opzioni:['Prefetti, Statuto e Codice penale estesi, standardizzazione',
+              'Autonomie locali, decentramento fiscale, statuti regionali',
+              'Federalismo, autogoverno comunale, milizie locali',
+              'Riforma agraria, suffragio universale, scuola gratuita'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è la «piemontesizzazione», e che accusa genera?',
+     opzioni:['L\'estensione rigida del modello piemontese: al Sud appare un nuovo governo straniero',
+              'Il trasferimento della capitale a Torino, che scontenta il Nord',
+              'L\'obbligo di parlare il dialetto piemontese nelle scuole',
+              'La preferenza per i funzionari meridionali negli uffici'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa serviva al Sud e non arrivò.'}
+  ]
+},
+{
+  titolo: 'Storia contemporanea · 5 — L\'Europa nell\'età di Bismarck',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: un parlamento eletto da tutti conta davvero, se non decide nulla?'},
+
+    {tipo:'scelta', testo:'A chi risponde il Cancelliere nel Secondo Reich?',
+     opzioni:['Solo al Kaiser, non al parlamento',
+              'Al parlamento eletto, come in Inghilterra',
+              'Al Bundesrat, il consiglio federale',
+              'Ai governi dei venticinque Stati'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è il Bundesrat, e chi lo domina?',
+     opzioni:['Il consiglio federale prussiano, che può bloccare ogni legge',
+              'Il parlamento eletto a suffragio universale maschile',
+              'Il consiglio dei ministri nominato dal Cancelliere',
+              'La camera alta composta dai soli principi tedeschi'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché il Reichstag è «l\'illusione democratica»?',
+     opzioni:['Eletto a suffragio universale, ma senza potere esecutivo',
+              'È eletto solo dai proprietari terrieri prussiani',
+              'Viene convocato una sola volta ogni cinque anni',
+              'I suoi membri sono nominati dal Kaiser'], giusta:0},
+
+    {tipo:'scelta', testo:'Contro chi è diretto il Kulturkampf del 1871-1878?',
+     opzioni:['Contro il Zentrum cattolico, accusato di lealtà verso il papa',
+              'Contro la SPD socialdemocratica',
+              'Contro i liberali nazionali',
+              'Contro le minoranze polacche dell\'Est'], giusta:0},
+
+    {tipo:'scelta', testo:'Come finisce il Kulturkampf?',
+     opzioni:['Il Zentrum raddoppia i seggi e Bismarck deve ritirare le riforme',
+              'Il Zentrum viene sciolto e i cattolici emarginati',
+              'La Chiesa accetta il controllo statale sulle scuole',
+              'Il papa firma un concordato favorevole al Reich'], giusta:0},
+
+    {tipo:'scelta', testo:'Che effetto hanno le leggi antisocialiste del 1878?',
+     opzioni:['La SPD cresce in clandestinità e arriva al 18% dei voti nel 1890',
+              'La SPD scompare del tutto dalla vita politica',
+              'La SPD accetta di collaborare col governo',
+              'La SPD si divide in due partiti minori'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è il «bonapartismo» di Bismarck, secondo lo storico Gustavo Corni?',
+     opzioni:['Svuotare il parlamento cercando il consenso diretto delle masse',
+              'Imitare la politica militare di Napoleone III',
+              'Governare esclusivamente con l\'appoggio dell\'esercito',
+              'Restaurare una monarchia assoluta senza istituzioni'], giusta:0},
+
+    {tipo:'scelta', testo:'Quale patto del 1873 unisce Germania, Austria-Ungheria e Russia?',
+     opzioni:['Il Patto dei Tre Imperatori',
+              'La Triplice Alleanza',
+              'L\'Intesa cordiale',
+              'Il Trattato di controassicurazione'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire perché il sistema di Bismarck non poteva reggere.'}
+  ]
+},
+{
+  titolo: 'Storia contemporanea · 6 — La seconda rivoluzione industriale',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: quando la concorrenza fa male ai prezzi, che cosa fanno le grandi imprese?'},
+
+    {tipo:'scelta', testo:'Che cosa fa il protezionismo dopo la crisi del 1873?',
+     opzioni:['Alza dazi doganali per proteggere industrie e agricoltura nazionali',
+              'Abolisce ogni dazio per stimolare gli scambi',
+              'Impone un\'unica moneta a tutta l\'Europa',
+              'Vieta l\'esportazione di prodotti industriali'], giusta:0},
+
+    {tipo:'scelta', testo:'A che cosa serve il Gold Standard?',
+     opzioni:['Stabilizza le valute e permette di indebitarsi senza inflazione',
+              'Obbliga gli Stati a pagare i debiti in merci',
+              'Fissa un prezzo unico per il grano in Europa',
+              'Vieta la circolazione della carta moneta'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa permette il convertitore Bessemer?',
+     opzioni:['Produrre acciaio in massa e a basso costo',
+              'Estrarre il carbone a maggiore profondità',
+              'Sintetizzare i primi coloranti artificiali',
+              'Trasmettere segnali elettrici a distanza'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa brevetta Alfred Nobel nel 1867?',
+     opzioni:['La dinamite',
+              'Il telefono',
+              'La lampadina',
+              'Il cinematografo'], giusta:0},
+
+    {tipo:'scelta', testo:'Quali invenzioni arrivano nel 1876 e nel 1879?',
+     opzioni:['Il telefono di Bell e la lampadina di Edison',
+              'Il cinematografo dei Lumière e il telegrafo di Marconi',
+              'La dinamite di Nobel e il grammofono',
+              'Il telefono di Meucci e il telegrafo senza fili'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è un cartello?',
+     opzioni:['Un accordo fra imprese dello stesso settore per fissare prezzi e quote',
+              'La fusione di più società in un unico complesso',
+              'Una società finanziaria che possiede pacchetti azionari di altre',
+              'Un\'associazione di lavoratori per contrattare i salari'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa distingue un trust da un cartello?',
+     opzioni:['Il trust fonde le imprese in un unico complesso sotto una sola direzione',
+              'Il trust è un semplice accordo verbale fra concorrenti',
+              'Il trust riguarda solo il settore agricolo',
+              'Il trust è vietato in tutti i paesi industriali'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è una holding?',
+     opzioni:['Una società che controlla altre imprese con le azioni',
+              'Un accordo temporaneo fra due aziende concorrenti',
+              'Una fabbrica che produce beni per il mercato di massa',
+              'Un consorzio di banche che finanzia lo Stato'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa succede a un mercato senza concorrenza.'}
+  ]
+},
+{
+  titolo: 'Storia contemporanea · 7 — La Sinistra storica e la crisi di fine secolo',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: un governo che accontenta tutti sta governando o sopravvivendo?'},
+
+    {tipo:'scelta', testo:'Quali sono i pilastri del programma di Stradella di Depretis?',
+     opzioni:['Voto più largo, istruzione elementare, dialogo coi ceti popolari, decentramento',
+              'Protezionismo, colonie, esercito, marina',
+              'Pareggio di bilancio, tasse indirette, ferrovie, censura',
+              'Suffragio universale, riforma agraria, otto ore, sindacati'], giusta:0},
+
+    {tipo:'scelta', testo:'Quale dei quattro punti viene poi accantonato?',
+     opzioni:['Il decentramento amministrativo',
+              'L\'estensione del diritto di voto',
+              'L\'istruzione elementare gratuita',
+              'Il dialogo con i ceti popolari'], giusta:0},
+
+    {tipo:'scelta', testo:'Come funziona in pratica il trasformismo?',
+     opzioni:['Si creano maggioranze trasversali scambiando sostegno con concessioni locali',
+              'Si formano due partiti stabili che si alternano al governo',
+              'Il re nomina i ministri senza consultare il parlamento',
+              'Le elezioni si tengono ogni anno per rinnovare il consenso'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è l\'effetto negativo del trasformismo?',
+     opzioni:['Favoritismi, clientelismo e ritardo nella nascita di partiti moderni',
+              'La caduta immediata di ogni governo',
+              'L\'esclusione della borghesia dal potere',
+              'L\'aumento incontrollato delle spese militari'], giusta:0},
+
+    {tipo:'scelta', testo:'Come giudica il trasformismo lo storico Fulvio Cammarano?',
+     opzioni:['Una stabilizzazione fisiologica contro le forze anti-sistema',
+              'Una degenerazione senza alcuna funzione politica',
+              'Un sistema copiato dal parlamentarismo inglese',
+              'Una scelta imposta dalla monarchia ai partiti'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa spinge l\'Italia verso la Triplice Alleanza del 1882?',
+     opzioni:['L\'isolamento dopo lo schiaffo francese in Tunisia',
+              'La volontà di attaccare l\'Austria-Ungheria',
+              'Un accordo commerciale con l\'Inghilterra',
+              'La richiesta esplicita del papa'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché l\'irredentismo è una spina nel fianco di quell\'alleanza?',
+     opzioni:['L\'alleata Austria trattiene Trentino e Venezia Giulia, le «terre irredente»',
+              'La Germania rivendica territori italiani',
+              'La Francia occupa la Corsica',
+              'La Triplice vieta ogni rivendicazione territoriale'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa contiene il Codice Zanardelli del 1889?',
+     opzioni:['Abolizione della pena di morte e sciopero riconosciuto',
+              'L\'introduzione del domicilio coatto senza processo',
+              'Il divieto di ogni forma di associazione operaia',
+              'L\'obbligo di leva militare per tutti i cittadini'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire come stanno insieme riforme e repressione in Crispi.'}
+  ]
+},
+{
+  titolo: 'Storia contemporanea · 9 — La belle époque',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: perché la gente comincia ad andare nei grandi magazzini invece che dal bottegaio?'},
+
+    {tipo:'scelta', testo:'Quali due fattori spingono le grandi migrazioni?',
+     opzioni:['L\'aumento demografico europeo e la crisi agraria da sovrapproduzione',
+              'Le guerre coloniali e le epidemie',
+              'La fine della schiavitù e l\'apertura del canale di Suez',
+              'La richiesta di manodopera dalle fabbriche europee'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa trovano spesso i migranti all\'arrivo?',
+     opzioni:['Nuova povertà, sfruttamento e xenofobia',
+              'Terra e lavoro subito disponibili per tutti',
+              'Un\'accoglienza organizzata dai governi',
+              'Città già abitate da connazionali benestanti'], giusta:0},
+
+    {tipo:'scelta', testo:'Quale dinamica economica genera il tempo libero?',
+     opzioni:['Salari più alti e orari ridotti fanno crescere la domanda di beni secondari',
+              'La riduzione dei salari costringe a lavorare meno',
+              'L\'aumento della disoccupazione libera ore alla popolazione',
+              'La chiusura delle fabbriche nei giorni festivi per legge'], giusta:0},
+
+    {tipo:'scelta', testo:'Su che cosa si reggono i grandi magazzini?',
+     opzioni:['Merci fabbricate in serie a prezzi bassi e pubblicità che orienta le masse',
+              'Prodotti artigianali unici venduti a prezzi elevati',
+              'La vendita per corrispondenza nelle campagne',
+              'Il credito concesso solo ai clienti aristocratici'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa racconta Al paradiso delle signore di Zola?',
+     opzioni:['La morte delle piccole botteghe e la precarietà dei dipendenti',
+              'La vita dei minatori nel nord della Francia',
+              'L\'ascesa di una famiglia di banchieri parigini',
+              'La costruzione della torre Eiffel'], giusta:0},
+
+    {tipo:'scelta', testo:'Quando arriva in Italia il suffragio universale maschile?',
+     opzioni:['Nel 1912',
+              'Nel 1882',
+              'Nel 1919',
+              'Nel 1900'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa distingue un partito di massa dal vecchio sistema dei notabili?',
+     opzioni:['Ideologia forte, organizzazione capillare sul territorio, ampia base sociale',
+              'Un numero maggiore di parlamentari eletti',
+              'La presenza di un capo carismatico',
+              'Il finanziamento pubblico delle campagne elettorali'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa fa la Rerum Novarum di Leone XIII nel 1891?',
+     opzioni:['Condanna lo sfruttamento e propone l\'interclassismo',
+              'Condanna ogni forma di organizzazione dei lavoratori',
+              'Approva la lotta di classe come strumento legittimo',
+              'Vieta ai cattolici di occuparsi di questioni sociali'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa c\'era sotto la «bella epoca».'}
+  ]
+},
+{
+  titolo: 'Storia contemporanea · 11 — L\'Italia giolittiana',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: davanti a uno sciopero, lo Stato deve mandare l\'esercito o mediare?'},
+
+    {tipo:'scelta', testo:'Come agiva lo Stato prima di Giolitti, davanti alle agitazioni?',
+     opzioni:['Come difensore dei padroni: le manifestazioni si reprimono',
+              'Come mediatore neutrale fra le parti',
+              'Come sostenitore delle rivendicazioni operaie',
+              'Come semplice spettatore, senza intervenire'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa cambia col metodo Zanardelli-Giolitti?',
+     opzioni:['Lo Stato diventa mediatore e consente le associazioni dei lavoratori',
+              'Lo Stato vieta ogni sciopero con una legge speciale',
+              'Lo Stato nazionalizza le principali industrie',
+              'Lo Stato affida l\'ordine pubblico all\'esercito'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa sono le Camere del lavoro e le Leghe bianche?',
+     opzioni:['Associazioni dei lavoratori, socialiste le une, cattoliche le altre',
+              'Tribunali speciali per le controversie di lavoro',
+              'Uffici governativi per il collocamento',
+              'Casse di risparmio riservate agli operai'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa prevede il Patto Gentiloni del 1913?',
+     opzioni:['Un accordo elettorale fra liberali e cattolici in funzione antisocialista',
+              'Un\'alleanza fra liberali e socialisti contro i cattolici',
+              'Il ritorno del Non expedit e l\'astensione dei cattolici',
+              'La separazione fra Stato e Chiesa'], giusta:0},
+
+    {tipo:'scelta', testo:'Di quanto cresce la base elettorale col suffragio universale maschile del 1912?',
+     opzioni:['Dal 9% al 24% della popolazione',
+              'Dal 2% al 9% della popolazione',
+              'Dal 24% al 50% della popolazione',
+              'Dal 15% al 30% della popolazione'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è il «triangolo industriale»?',
+     opzioni:['L\'area del Nord dove si concentra l\'espansione economica',
+              'L\'insieme delle tre principali banche italiane',
+              'L\'accordo fra industriali, sindacati e governo',
+              'La zona agricola più produttiva del Mezzogiorno'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa caratterizza il Sud nell\'età giolittiana?',
+     opzioni:['Economia agricola arretrata, latifondi, notabili e manifestazioni represse',
+              'Un rapido sviluppo industriale parallelo a quello del Nord',
+              'Una diffusa organizzazione sindacale dei braccianti',
+              'Un forte investimento pubblico in infrastrutture'], giusta:0},
+
+    {tipo:'scelta', testo:'Quali due catastrofi naturali colpiscono l\'Italia nel 1906 e nel 1908?',
+     opzioni:['L\'eruzione del Vesuvio e il terremoto di Messina e Reggio',
+              'L\'alluvione del Po e l\'eruzione dell\'Etna',
+              'Il terremoto di Avezzano e l\'alluvione di Firenze',
+              'La frana del Vajont e il terremoto dell\'Irpinia'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa Giolitti non riuscì a portare al Sud.'}
+  ]
+},
+{
+  titolo: 'Storia contemporanea · 12 — La Grande Guerra',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: in guerra, colpire i civili è una tattica o un crimine?'},
+
+    {tipo:'scelta', testo:'In quale anno entra in guerra l\'Italia?',
+     opzioni:['Nel 1915, il 24 maggio',
+              'Nel 1914, insieme all\'Austria',
+              'Nel 1916, dopo Verdun',
+              'Nel 1917, insieme agli Stati Uniti'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa succede nel 1917, l\'anno della svolta?',
+     opzioni:['Entrano gli Stati Uniti a fianco dell\'Intesa, esce la Russia per la rivoluzione',
+              'Escono gli Stati Uniti ed entra la Russia',
+              'L\'Italia firma una pace separata',
+              'La Germania sfonda definitivamente il fronte occidentale'], giusta:0},
+
+    {tipo:'scelta', testo:'Quando finiscono le ostilità e quando si apre la Conferenza di Pace?',
+     opzioni:['Ostilità nel 1918, Conferenza di Parigi nel 1919',
+              'Ostilità nel 1917, Conferenza nel 1918',
+              'Ostilità nel 1919, Conferenza nel 1920',
+              'Ostilità e Conferenza entrambe nel 1918'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa denuncia Il buon soldato Sc\'vejk di Hašek?',
+     opzioni:['L\'assurdità del conflitto, con l\'ironia del protagonista',
+              'L\'eroismo dei soldati al fronte',
+              'La superiorità militare dell\'Impero austro-ungarico',
+              'Il tradimento delle nazionalità slave'], giusta:0},
+
+    {tipo:'scelta', testo:'Quale frattura dell\'esercito austro-ungarico rivela quel romanzo?',
+     opzioni:['Truppe di nazionalità diverse costrette a combattere insieme',
+              'La mancanza assoluta di equipaggiamento militare',
+              'L\'inesperienza dei comandanti supremi',
+              'Il rifiuto dei soldati di prestare giuramento'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa accade il 7 maggio 1915?',
+     opzioni:['Un sottomarino tedesco affonda il transatlantico Lusitania',
+              'L\'Italia dichiara guerra all\'Austria-Ungheria',
+              'Comincia la battaglia di Verdun',
+              'Viene firmato il Patto di Londra'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa esemplifica quell\'affondamento, secondo l\'analisi?',
+     opzioni:['Colpire i civili lontano dal fronte, per fiaccare il morale',
+              'L\'errore tecnico di un comandante isolato',
+              'L\'inefficacia delle armi sottomarine',
+              'Il rispetto delle convenzioni internazionali'], giusta:0},
+
+    {tipo:'scelta', testo:'Quanti armeni furono uccisi, su una popolazione di 1.800.000?',
+     opzioni:['Circa 1.200.000',
+              'Circa 300.000',
+              'Circa 600.000',
+              'Circa 1.700.000'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa cambia quando la guerra esce dal fronte.'}
+  ]
+},
+{
+  titolo: 'Storia contemporanea · 13 — La Rivoluzione russa',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: per salvare una rivoluzione, si può fare un passo indietro?'},
+
+    {tipo:'scelta', testo:'Che cosa produce la rivoluzione di febbraio?',
+     opzioni:['La caduta di Nicola II e un governo provvisorio nel caos',
+              'La presa del potere immediata dei bolscevichi',
+              'Il ritiro della Russia dalla guerra',
+              'La restaurazione della monarchia costituzionale'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa contengono le Tesi di aprile di Lenin?',
+     opzioni:['Il rifiuto del compromesso e la presa totale del potere',
+              'La proposta di collaborare col governo provvisorio',
+              'Il piano di industrializzazione forzata',
+              'Il progetto di una federazione di repubbliche'], giusta:0},
+
+    {tipo:'scelta', testo:'Come viene descritta la rivoluzione d\'ottobre?',
+     opzioni:['Un colpo di mano dei bolscevichi che abbatte il governo provvisorio',
+              'Un\'insurrezione spontanea di tutto il popolo russo',
+              'Un passaggio di poteri concordato con i menscevichi',
+              'Una vittoria elettorale nei soviet'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa rappresenta il Trattato di Brest-Litovsk del 1918?',
+     opzioni:['Un\'amputazione territoriale accettata per salvare il nucleo della rivoluzione',
+              'Una vittoria diplomatica che estende i confini russi',
+              'Un accordo commerciale con la Germania',
+              'Il ritorno della Russia nella guerra a fianco dell\'Intesa'], giusta:0},
+
+    {tipo:'scelta', testo:'Come viene definito il pragmatismo di Lenin in quella scelta?',
+     opzioni:['Cedere spazio in cambio di tempo politico, per fortificare il regime',
+              'Rinunciare al potere in cambio della pace',
+              'Cedere tempo in cambio di spazio militare',
+              'Rifiutare ogni trattativa con i nemici esterni'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa caratterizza il comunismo di guerra?',
+     opzioni:['Sussistenza militare, requisizioni forzate, niente mercato',
+              'Libertà di commercio e piccola proprietà contadina',
+              'Industrializzazione pianificata su cinque anni',
+              'Distribuzione della terra ai contadini poveri'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa introduce la NEP?',
+     opzioni:['Parziale liberalizzazione e concessioni ai contadini',
+              'La collettivizzazione forzata delle campagne',
+              'L\'abolizione definitiva della moneta',
+              'Il razionamento generalizzato dei beni'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa nasce fra il 1922 e il 1924?',
+     opzioni:['L\'Unione Sovietica, cioè un sistema federale',
+              'La Terza Internazionale comunista',
+              'Il primo piano quinquennale',
+              'Il Patto di Varsavia'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa costa salvare una rivoluzione.'}
   ]
 }
 ];
