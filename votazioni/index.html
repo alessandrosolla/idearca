@@ -264,6 +264,20 @@
 <script src="qr.js">
 </script>
 <script src="banca.js"></script>
+<script src="banca2.js?v=20260816"></script>
+<script>
+/* Le due banche si uniscono per titolo: sui capitoli coperti da
+   entrambe le domande disponibili raddoppiano. */
+(function(){
+  if(typeof BANCA2==='undefined') return;
+  const perTitolo=new Map(BANCA.map(c=>[c.titolo,c]));
+  BANCA2.forEach(c=>{
+    const gia=perTitolo.get(c.titolo);
+    if(gia) gia.domande=gia.domande.concat(c.domande);
+    else { BANCA.push(c); perTitolo.set(c.titolo,c); }
+  });
+})();
+</script>
 <script>
 /* ══════════════════════════════════════════════════════════
    VOTAZIONI — Idearca
