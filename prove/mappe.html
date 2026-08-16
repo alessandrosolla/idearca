@@ -247,10 +247,20 @@ const VERBI_INIZIALI=/^(?:sostiene|sostengono|afferma|affermano|dice|dicono|pens
 
 /* Le parole di servizio che, rimaste in coda dopo un taglio,
    producono etichette monche come «Composto di materia e». */
-const CODA=/\s+(?:con|di|da|a|ad|in|su|per|tra|fra|e|ed|o|od|il|lo|la|i|gli|le|un|uno|una|del|dello|della|dei|degli|delle|al|allo|alla|ai|agli|alle|dal|dalla|nel|nella|sul|sulla|non|come|che)$/i;
+const CODA=/\s+(?:con|di|da|a|ad|in|su|per|tra|fra|e|ed|o|od|il|lo|la|i|gli|le|un|uno|una|del|dello|della|dei|degli|delle|al|allo|alla|ai|agli|alle|dal|dalla|nel|nella|sul|sulla|non|come|che|solo|soltanto|anche|invece|mentre|ma|però|quando|dove|se)$/i;
 function scoda(x){
   let p=x;
   for(let i=0;i<4;i++){ const q=p.replace(CODA,''); if(q===p) break; p=q; }
+  /* Un concetto non finisce con un verbo. Tagliando «L'empirismo
+     sostiene che ogni conoscenza...» alla congiunzione restava
+     «empirismo sostiene», che come riquadro non ha senso. */
+  for(let i=0;i<3;i++){
+    const parti=p.trim().split(/\s+/);
+    if(parti.length<2) break;
+    const ultima=parti[parti.length-1].toLowerCase().replace(/[^a-zàèéìòùç']/g,'');
+    if(!(VERBO.has(ultima)||VERBI_NUDI.has(ultima)||CODE.test(ultima))) break;
+    parti.pop(); p=parti.join(' ');
+  }
   return p.trim();
 }
 
@@ -440,6 +450,71 @@ function sembraVerboLargo(w){
 const CLITICI=/(^|\s)(?:mi|ti|ci|vi|si|lo|la|li|le|ne|gli|glie|me|te|se)(\s|$)/gi;
 const senzaClitici = t => t.replace(CLITICI,'$1$2').replace(/\s+/g,' ').trim();
 
+/* ── IL VERBO SI RICONOSCE DAL POSTO, NON DALLA DESINENZA ───
+   Il buco più grosso era il presente indicativo di terza
+   persona: «riconosce», «regola», «governa», «prevale». Non si
+   possono aggiungere per desinenza, perché «regola», «legge»,
+   «casa» e «mente» finiscono come loro e sono nomi — su un testo
+   di storia si sarebbe riempita la mappa di falsi verbi.
+
+   In italiano però il posto lo dice quasi sempre. Un nome è
+   introdotto da un articolo o da una preposizione; un verbo no,
+   e dopo di sé apre un altro pezzo di frase, cioè è seguito da
+   un articolo, una preposizione o un avverbio. Su questo si
+   ragiona qui: non «come finisce la parola», ma «che cosa ha
+   prima e che cosa ha dopo».
+
+   Il costo di sbagliare è diverso nelle due direzioni. Un falso
+   verbo qui produce una divisione in più fra proposizioni, che
+   al massimo fa perdere un legame. Un falso verbo nella scelta
+   dei concetti produce un riquadro sbagliato, che si vede. Per
+   questo il criterio posizionale vale solo qui.
+   ─────────────────────────────────────────────────────────── */
+const INTRODUCE_NOME=new Set(`il lo la i gli le un uno una
+del dello della dei degli delle al allo alla ai agli alle
+dal dallo dalla dai dagli dalle nel nello nella nei negli nelle
+sul sullo sulla sui sugli sulle col coi
+di a da in con su per tra fra questo questa questi queste
+quel quella quei quegli quelle ogni alcuni alcune molti molte
+suo sua suoi sue loro nostro nostra vostro vostra proprio propria`.split(/\s+/));
+
+const APRE_COMPLEMENTO=new Set(`il lo la i gli le un uno una
+del dello della dei degli delle al allo alla ai agli alle
+dal dallo dalla dai dagli dalle nel nello nella nei negli nelle
+sul sullo sulla sui sugli sulle col coi
+di a ad da in con su per tra fra che come non più meno molto poco
+sempre mai ancora già solo soltanto anche quasi tutto tutta tutti tutte
+questo questa questi queste quel quella quei quegli quelle
+suo sua suoi sue loro nostro nostra proprio propria
+meta metà parte gran molta molti molte alcuni alcune tanti tante pochi poche
+due tre quattro cinque sei sette otto nove dieci cento mille`.split(/\s+/));
+
+/* «governa metà delle azioni»: dopo il verbo può venire un
+   numero o un quantificatore invece di un articolo. Senza
+   questo, «metà» veniva preso per il verbo. */
+const APRE_ANCHE=/^\d/;
+
+/* Le desinenze che un verbo italiano può avere. Larghe apposta:
+   il filtro vero è la posizione, questa serve solo a escludere
+   le parole che verbo non possono proprio essere. */
+const FINALI_POSSIBILI=/(?:a|e|i|o|à|è|ì|ò|ù|no|si|ce|ge|ne|le|re|ta|te|to|va|ve|vo)$/;
+
+function verboPerPosizione(parole, i){
+  const w=(parole[i]||'').toLowerCase().replace(/[^a-zàèéìòùç']/g,'');
+  if(w.length<4) return false;
+  if(STOP.has(w)||NON_VERBI.has(w)) return false;
+  if(!FINALI_POSSIBILI.test(w)) return false;
+  const prima=(parole[i-1]||'').toLowerCase().replace(/[^a-zàèéìòùç']/g,'');
+  const dopo =(parole[i+1]||'').toLowerCase().replace(/[^a-zàèéìòùç']/g,'');
+  /* preceduto da un articolo o da una preposizione: è un nome */
+  if(INTRODUCE_NOME.has(prima)) return false;
+  /* «non» o un pronome atono davanti: quasi certamente un verbo */
+  if(prima==='non'||prima==='si'||prima==='ci'||prima==='ne'||prima==='lo'||prima==='la') return true;
+  /* seguito da qualcosa che apre un complemento: è un verbo */
+  if(!dopo) return false;
+  return APRE_COMPLEMENTO.has(dopo) || APRE_ANCHE.test(parole[i+1]||'');
+}
+
 /* i punti in cui una frase si spezza in proposizioni */
 const RELATIVI=/\b(?:che|il quale|la quale|i quali|le quali|cui)\b/i;
 const CONGIUNZIONI=/(?:,\s*(?:e|ma|mentre|invece|inoltre)\s+|;\s*|\s+mentre\s+|\s+invece\s+)/i;
@@ -468,12 +543,13 @@ function pezziCoordinati(testo){
    comincia l'oggetto. */
 function trovaVerbo(parole, da){
   for(let i=da;i<parole.length;i++){
-    const w=parole[i].toLowerCase();
+    const w=parole[i].toLowerCase().replace(/[^a-zàèéìòùç']/g,'');
     if(w==='non'||w==='si'||w==='ci'||w==='vi') continue;
     /* «si oppone», «si fonda»: il verbo è la coppia */
-    if((w==='si') && parole[i+1] && sembraVerboLargo(parole[i+1].toLowerCase()))
-      return {i, fine:i+1, v:'si '+parole[i+1].toLowerCase()};
-    if(sembraVerboLargo(w)){
+    if((w==='si') && parole[i+1] &&
+       (sembraVerboLargo(parole[i+1].toLowerCase())||verboPerPosizione(parole,i+1)))
+      return {i, fine:i+1, v:'si '+parole[i+1].toLowerCase().replace(/[^a-zàèéìòùç']/g,'')};
+    if(sembraVerboLargo(w)||verboPerPosizione(parole,i)){
       const prima=(parole[i-1]||'').toLowerCase();
       if(prima==='si') return {i:i-1, fine:i, v:'si '+w};
       return {i, fine:i, v:w};
@@ -532,8 +608,15 @@ function proposizioni(frase){
       if(taglio.length>1){
         const resto=taglio.slice(1).join(' e ');
         const pr=resto.split(/\s+/).filter(Boolean);
-        const vr=trovaVerbo(pr,1);
-        if(vr && vr.i>0){ oggetto=taglio[0]; strascico={parole:pr, v:vr}; }
+        const vr=trovaVerbo(pr,0);
+        if(vr){
+          oggetto=taglio[0];
+          /* «colpì i contadini e provocò rivolte»: nella seconda
+             frase il soggetto non si ripete, è lo stesso. Se il
+             verbo sta in testa, il soggetto va ereditato invece di
+             prendere per soggetto il verbo stesso. */
+          strascico={parole:pr, v:vr, eredita: vr.i===0};
+        }
       }
 
       /* LA NEGAZIONE, che è la cosa più pericolosa di tutte.
@@ -564,7 +647,9 @@ function proposizioni(frase){
 
       fuori.push({sogg:sogg2, verbo:(negato?'non ':'')+v.v, ogg:oggetto});
       if(strascico){
-        const s2=senzaClitici(strascico.parole.slice(0,strascico.v.i).join(' '));
+        const s2 = strascico.eredita
+          ? sogg2
+          : senzaClitici(strascico.parole.slice(0,strascico.v.i).join(' '));
         const o2=strascico.parole.slice(strascico.v.fine+1).join(' ');
         if(s2 && o2) fuori.push({sogg:s2, verbo:strascico.v.v, ogg:o2});
       }

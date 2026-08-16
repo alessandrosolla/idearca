@@ -824,6 +824,7 @@ function vociExtra(){
     {g:'Strumenti',k:'__glossario__',l:'Glossario ipertestuale',p:'Filosofia e storia',       chi:'tutti',   ic:'📖'},
     {g:'Strumenti',k:'__confronto__',l:'Confrontatore di filosofi',p:'Dodici domande, cinquantun autori', chi:'tutti', ic:'⚖️'},
     {g:'Strumenti',k:'__contesto__',l:'Macchina del contesto',  p:'Un anno, la vita di allora', chi:'tutti', ic:'🕰'},
+    {g:'Strumenti',k:'__grafici__', l:'Grafici animati',         p:'Quattordici serie storiche', chi:'tutti', ic:'📈'},
     {g:'Strumenti',k:'__map__',     l:'Mappa storica',          p:'Atlante interattivo',      chi:'tutti',   ic:'🗺'},
     {g:'Strumenti',k:'__aula__',    l:'Timer e sorteggio',      p:'Da proiettare in aula',    chi:'docente', ic:'⏱'},
     {g:'Strumenti',k:'__lavagna__', l:'Lavagna',                p:'Da proiettare in aula',    chi:'docente', ic:'🖊'},
@@ -844,6 +845,7 @@ const VISTE={
   __glossario__:{vista:'lib-glossario-view',uso:'glossario',frame:'lib-glossario-frame',src:'prove/glossario.html',  quando:'una volta'},
   __confronto__:{vista:'lib-confronto-view',uso:'confronto',frame:'lib-confronto-frame',src:'prove/confronto.html',  quando:'una volta'},
   __contesto__: {vista:'lib-contesto-view', uso:'contesto', frame:'lib-contesto-frame', src:'prove/contesto.html',   quando:'una volta'},
+  __grafici__:  {vista:'lib-grafici-view',  uso:'grafici',  frame:'lib-grafici-frame',  src:'prove/grafici.html',    quando:'una volta'},
   __aula__:     {vista:'lib-aula-view',     uso:'aula',     frame:'lib-aula-frame',     src:'prove/aula.html',       quando:'una volta'},
   __lavagna__:  {vista:'lib-lavagna-view',  uso:'lavagna',  frame:'lib-lavagna-frame',  src:'lavagna/index.html',    quando:'una volta'},
   __consegna__: {vista:'lib-consegna-view', uso:'consegna', frame:'lib-consegna-frame', src:'consegna/index.html',   quando:'ogni volta'},
@@ -1603,7 +1605,8 @@ async function caricaVetrina(){
 const NOMI_STRUMENTO={map:'Mappa storica',metodo:'Metodologie',tempo:'Linea del tempo',
   lavagna:'Lavagna',inbox:'Inbox',voti:'Votazioni',consegna:'Consegna un compito',prove:'Prove',
   glossario:'Glossario ipertestuale',aula:'Timer e sorteggio',
-  confronto:'Confrontatore di filosofi',contesto:'Macchina del contesto'};
+  confronto:'Confrontatore di filosofi',contesto:'Macchina del contesto',
+  grafici:'Grafici animati'};
 
 function apriStatistiche(){
   document.getElementById('stat-overlay').classList.add('on');
