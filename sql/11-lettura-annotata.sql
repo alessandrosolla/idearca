@@ -1,3 +1,10 @@
+-- ══════════════════════════════════════════════════════════
+--   NOTA — eseguire subito dopo anche il file 12.
+--   I testi qui sotto sono stati scritti senza accenti né
+--   apostrofi (una precauzione inutile: il quoting a dollaro
+--   li accetta). Il file 12 li riscrive in italiano corretto.
+-- ══════════════════════════════════════════════════════════
+
 -- ============================================================
 --  IDEARCA — Lettura annotata, seconda versione
 --  ------------------------------------------------------------
@@ -168,7 +175,7 @@ Egli non avrebbe mai ucciso un superiore per prenderne il posto. Per dirla in pa
 
 E questo era banale, e persino comico: neppure con la piu buona volonta si poteva scoprire in lui una qualsiasi profondita diabolica o demoniaca.$b$,
   true
-where not exists (select 1 from public.brani where titolo = 'La banalita del male');
+where not exists (select 1 from public.brani where titolo in ('La banalita del male', 'La banalità del male'));
 
 insert into public.brani (titolo, autore, fonte, epoca, obiettivo, consegna, domande, testo, aperto)
 select
@@ -191,7 +198,7 @@ Si arrivo a «fondata sul lavoro»: non una Repubblica di una classe, ma una Rep
 
 Sulla seconda frase la discussione fu piu breve ma non meno seria. Dire che la sovranita appartiene al popolo era ovvio dopo il referendum; aggiungere «nelle forme e nei limiti della Costituzione» non lo era. Voleva dire che nemmeno il popolo puo tutto, e che una maggioranza non puo cancellare i diritti di una minoranza.$b$,
   true
-where not exists (select 1 from public.brani where titolo = 'L articolo 1 della Costituzione');
+where not exists (select 1 from public.brani where titolo in ('L articolo 1 della Costituzione', 'L''articolo 1 della Costituzione'));
 
 insert into public.brani (titolo, autore, fonte, epoca, obiettivo, consegna, domande, testo, aperto)
 select
