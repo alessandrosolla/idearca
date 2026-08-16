@@ -3727,4 +3727,509 @@ const BANCA2 = [
     {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa impedisce a una persona di obbedire e basta.'}
   ]
 }
+,
+{
+  titolo: 'Storia medievale · 1 — La ripresa dopo l\'anno Mille',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: come si fa a far crescere il cibo senza avere più terra?'},
+
+    {tipo:'scelta', testo:'A che cosa serve il collare a spalla?',
+     opzioni:['Permette al cavallo di tirare senza soffocare sotto lo sforzo',
+              'Protegge il collo del cavallo dalle ferite in battaglia',
+              'Consente di attaccare due cavalli allo stesso aratro',
+              'Serve a guidare il cavallo senza usare le redini'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché l\'aratro pesante è adatto al Nord Europa?',
+     opzioni:['Scava in profondità e lavora le terre pesanti e umide',
+              'È più leggero e quindi più facile da trainare',
+              'Non ha bisogno di animali da tiro',
+              'Lascia la terra in superficie senza rivoltarla'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa protegge il ferro di cavallo?',
+     opzioni:['Lo zoccolo dall\'usura e dall\'umidità, garantendo la trazione',
+              'La zampa dai colpi ricevuti in battaglia',
+              'Il terreno dallo sfondamento sotto il peso',
+              'Il cavaliere dalle cadute su terreno scivoloso'], giusta:0},
+
+    {tipo:'scelta', testo:'Quanta terra resta improduttiva passando dal sistema biennale a quello triennale?',
+     opzioni:['Si scende dal 50% al 33%',
+              'Si scende dal 33% al 25%',
+              'Si scende dal 66% al 50%',
+              'Si scende dal 50% al 25%'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché la rotazione triennale migliora anche l\'alimentazione?',
+     opzioni:['L\'introduzione dei legumi fornisce proteine vegetali',
+              'Permette di allevare più capi di bestiame',
+              'Consente di coltivare frutta accanto ai cereali',
+              'Riduce il lavoro e quindi la fatica dei contadini'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché due raccolti separati riducono il rischio di carestia?',
+     opzioni:['Se una semina fallisce, resta l\'altra: il rischio è diviso',
+              'Perché si produce esattamente il doppio del cibo',
+              'Perché si può vendere il primo e conservare il secondo',
+              'Perché il grano invernale resiste a ogni clima'], giusta:0},
+
+    {tipo:'scelta', testo:'Quali sono le tre vie con cui l\'Europa del Mille conquista nuove terre?',
+     opzioni:['Disboscamento, bonifiche e dissodamento',
+              'Conquista militare, alleanze e matrimoni',
+              'Commercio, migrazione e colonizzazione',
+              'Recinzione, irrigazione e terrazzamento'], giusta:0},
+
+    {tipo:'scelta', testo:'Quali sono i tre centri della città medievale?',
+     opzioni:['La cattedrale, la piazza col mercato e il palazzo del Comune',
+              'Il castello, la caserma e la prigione',
+              'Il porto, il magazzino e la dogana',
+              'L\'università, l\'ospedale e il convento'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa cambia in una città quando nasce un mercato.'}
+  ]
+},
+{
+  titolo: 'Storia medievale · 2 — La lotta per le investiture',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: chi sceglie i vescovi comanda anche su che cosa, secondo te?'},
+
+    {tipo:'scelta', testo:'Che cosa stabilisce il Privilegium Othonis del 962?',
+     opzioni:['L\'elezione del pontefice richiede l\'approvazione dell\'imperatore',
+              'Il papa può deporre l\'imperatore quando lo ritiene ingiusto',
+              'I vescovi vengono eletti dal clero e dal popolo della città',
+              'L\'imperatore rinuncia a ogni ingerenza nelle cose di Chiesa'], giusta:0},
+
+    {tipo:'scelta', testo:'Da dove parte la spinta a riformare la Chiesa?',
+     opzioni:['Dai monasteri, non da Roma',
+              'Dalla corte imperiale tedesca',
+              'Dai vescovi delle grandi città',
+              'Dai sovrani di Francia e Inghilterra'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa rivendicano i monasteri riformati?',
+     opzioni:['L\'autonomia dai signori laici e dai vescovi corrotti',
+              'Il diritto di eleggere direttamente il papa',
+              'La proprietà delle terre coltivate dai contadini',
+              'Il controllo delle università appena fondate'], giusta:0},
+
+    {tipo:'scelta', testo:'Su che cosa si concentra Cluny, fondata nel 910?',
+     opzioni:['Sulla liturgia fastosa e la preghiera incessante',
+              'Sul lavoro manuale e sulla povertà assoluta',
+              'Sulla predicazione itinerante nelle città',
+              'Sull\'istruzione dei figli della nobiltà'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa distingue i Cistercensi, fondati nel 1098?',
+     opzioni:['Il ritorno al rigore della regola: ora et labora, povertà e isolamento',
+              'La liturgia più solenne di tutta la cristianità',
+              'L\'obbedienza diretta all\'imperatore invece che al papa',
+              'La rinuncia a possedere qualunque terra'], giusta:0},
+
+    {tipo:'scelta', testo:'Quante proposizioni contiene il Dictatus papae del 1075?',
+     opzioni:['Ventisette',
+              'Dodici',
+              'Quaranta',
+              'Sette'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa afferma l\'articolo XXVII del Dictatus papae?',
+     opzioni:['Il papa può sciogliere i sudditi dal giuramento verso sovrani ingiusti',
+              'Il papa può convocare i concili senza consultare nessuno',
+              'Il papa deve essere eletto dai soli cardinali',
+              'Il papa non può essere giudicato da alcun tribunale'], giusta:0},
+
+    {tipo:'scelta', testo:'Come cambia la nomina dei vescovi fra il 962 e il 1075?',
+     opzioni:['Dall\'investitura imperiale alla nomina riservata al solo papa',
+              'Dalla nomina papale all\'elezione da parte del popolo',
+              'Dall\'elezione cittadina alla nomina imperiale',
+              'Dalla nomina papale al sorteggio fra i canonici'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa si contendevano davvero papa e imperatore.'}
+  ]
+},
+{
+  titolo: 'Storia medievale · 3 — Le crociate',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: che differenza c\'è fra un pellegrinaggio e una guerra?'},
+
+    {tipo:'scelta', testo:'Da quale pratica medievale nascono le crociate?',
+     opzioni:['Dal pellegrinaggio penitenziale verso Roma, Santiago e Gerusalemme',
+              'Dalle spedizioni commerciali delle città marinare',
+              'Dai tornei cavallereschi organizzati dai signori',
+              'Dalle guerre private fra famiglie nobili'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è il casus belli immediato dell\'appello di Clermont?',
+     opzioni:['L\'imperatore bizantino Alessio Comneno chiede aiuto contro i Selgiuchidi',
+              'I musulmani distruggono il Santo Sepolcro',
+              'Il papa viene minacciato dall\'imperatore tedesco',
+              'I pellegrini vengono attaccati sulle strade d\'Europa'], giusta:0},
+
+    {tipo:'scelta', testo:'Come viene presentata la spedizione nella Historia Hierosolymitana?',
+     opzioni:['Un pellegrinaggio armato che garantisce il perdono dei peccati',
+              'Una campagna militare di pura conquista territoriale',
+              'Una missione diplomatica presso il sultano d\'Egitto',
+              'Una spedizione commerciale protetta dalle armi'], giusta:0},
+
+    {tipo:'scelta', testo:'Come interpreta la crociata il predicatore Ali ibn Tahir al-Sulami?',
+     opzioni:['Come una punizione divina per la divisione islamica, e invoca il jihad',
+              'Come un\'occasione di commercio con l\'Occidente',
+              'Come un evento privo di qualsiasi significato religioso',
+              'Come una guerra che i musulmani non possono perdere'], giusta:0},
+
+    {tipo:'scelta', testo:'Come descrive i Franchi il diplomatico Usama ibn Munqidh?',
+     opzioni:['Valorosi in battaglia ma rozzi, ignoranti e privi di morale',
+              'Nemici crudeli ma di raffinata educazione',
+              'Alleati affidabili con cui commerciare in pace',
+              'Un popolo indistinguibile dagli altri cristiani d\'Oriente'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa succede, nonostante la retorica apocalittica, nei decenni successivi?',
+     opzioni:['Tolleranza precaria, scambi commerciali, alleanze tattiche',
+              'Ogni contatto fra i due mondi viene interrotto del tutto',
+              'I due popoli si fondono in una sola cultura comune',
+              'Le ostilità cessano definitivamente e per sempre'], giusta:0},
+
+    {tipo:'scelta', testo:'Quale battaglia del 1212 segna la svolta della Reconquista spagnola?',
+     opzioni:['Las Navas de Tolosa',
+              'Poitiers',
+              'Lepanto',
+              'Covadonga'], giusta:0},
+
+    {tipo:'scelta', testo:'Contro chi è indetta la crociata albigese del 1208?',
+     opzioni:['Contro i Càtari, cioè cristiani dissidenti dentro l\'Europa',
+              'Contro i musulmani rimasti in Spagna',
+              'Contro l\'imperatore bizantino',
+              'Contro i Mongoli che avanzavano da est'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa succede quando un nemico diventa anche un vicino.'}
+  ]
+},
+{
+  titolo: 'Storia medievale · 4 — L\'Italia comunale e l\'Impero',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: se lo Stato sparisse domani, chi comanderebbe nella tua città?'},
+
+    {tipo:'scelta', testo:'Quale autorità resta in piedi nelle città durante il vuoto di potere?',
+     opzioni:['Il vescovo, che svolge funzioni di difesa e di giustizia',
+              'Il conte nominato dall\'imperatore',
+              'L\'assemblea di tutti gli abitanti',
+              'Il capitano delle milizie cittadine'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è la coniuratio da cui nasce il Comune?',
+     opzioni:['Un giuramento privato di mutua assistenza fra i cittadini più influenti',
+              'Una congiura per uccidere il vescovo della città',
+              'Un patto fra due città per difendersi a vicenda',
+              'Un accordo commerciale fra le corporazioni'], giusta:0},
+
+    {tipo:'scelta', testo:'Su che cosa rivendica giurisdizione il Comune?',
+     opzioni:['Sulla città e sul contado, cioè il territorio circostante',
+              'Solo sulle mura e sulle porte cittadine',
+              'Su tutta la regione, comprese le altre città',
+              'Solo sui mercati e sulle fiere'], giusta:0},
+
+    {tipo:'scelta', testo:'Chi erano i cives, cioè chi aveva davvero il potere nel Comune?',
+     opzioni:['Maschi adulti, cristiani, proprietari di case e membri di un\'Arte',
+              'Tutti gli abitanti maggiorenni della città',
+              'I soli nobili di antica famiglia',
+              'Chiunque pagasse le tasse, compresi gli immigrati'], giusta:0},
+
+    {tipo:'scelta', testo:'Chi restava ai margini, utile all\'economia ma senza diritti politici?',
+     opzioni:['Lavoratori salariati, artigiani poveri, immigrati',
+              'I mercanti che venivano da altre città vicine',
+              'I chierici, i religiosi e i frati mendicanti',
+              'I proprietari terrieri che vivevano fuori città'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa conclude lo storico Giuliano Milani sul Comune?',
+     opzioni:['Un patto oligarchico: libertà verso l\'esterno, non uguaglianza',
+              'Una democrazia moderna in tutto e per tutto, già allora',
+              'Una monarchia mascherata da repubblica cittadina',
+              'Un\'istituzione priva di qualunque potere reale'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa colpisce Ottone di Frisinga nell\'Italia comunale?',
+     opzioni:['Che alle cariche pubbliche arrivino giovani di bassa condizione',
+              'Che le città siano più povere di quelle tedesche',
+              'Che i cittadini rifiutino di combattere',
+              'Che i vescovi abbiano perso ogni autorità'], giusta:0},
+
+    {tipo:'scelta', testo:'Quale città viene fondata in Piemonte come provocazione al Barbarossa?',
+     opzioni:['Alessandria, chiamata così in onore di papa Alessandro III',
+              'Novara, roccaforte della Lega Lombarda',
+              'Asti, alleata del papato',
+              'Vercelli, sede del giuramento di Pontida'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa spaventava l\'Impero nei Comuni italiani.'}
+  ]
+},
+{
+  titolo: 'Storia medievale · 5 — Papato, Impero e monarchie nazionali',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: chi comanda su un re, se un re esiste?'},
+
+    {tipo:'scelta', testo:'Che cosa dice l\'immagine del sole e della luna in Innocenzo III?',
+     opzioni:['Il papato brilla di luce propria, l\'impero riflette quella ricevuta',
+              'Papato e impero brillano entrambi della stessa luce',
+              'L\'impero illumina il papato nelle cose terrene',
+              'Sole e luna si alternano nel governo del mondo'], giusta:0},
+
+    {tipo:'scelta', testo:'Che conseguenza trae Innocenzo III da quell\'immagine?',
+     opzioni:['L\'imperatore è un suo delegato subordinato',
+              'L\'imperatore governa da pari a pari col papa',
+              'L\'imperatore non ha bisogno dell\'approvazione papale',
+              'Il papa deve occuparsi solo delle anime'], giusta:0},
+
+    {tipo:'scelta', testo:'In che consiste l\'anomalia del «doppio regno» di Federico II?',
+     opzioni:['Tiene insieme Regno di Sicilia e corona imperiale',
+              'Governa contemporaneamente la Francia e la Germania',
+              'È re di due città rivali dell\'Italia settentrionale',
+              'Regna insieme al figlio, con i poteri divisi a metà'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è la strategia di Federico II nei due territori?',
+     opzioni:['Potere assoluto al Sud, pacificazione dei principi tedeschi al Nord',
+              'Potere assoluto al Nord, autonomia lasciata al Sud',
+              'Rinuncia al Sud per concentrarsi sulla Germania',
+              'Divisione dei due regni fra due suoi figli'], giusta:0},
+
+    {tipo:'scelta', testo:'Chi si allea contro Federico II nella lotta contro i Comuni?',
+     opzioni:['La Lega dei Comuni e il papato',
+              'La Francia e l\'Inghilterra',
+              'L\'impero bizantino e Venezia',
+              'I principi tedeschi e i Normanni'], giusta:0},
+
+    {tipo:'scelta', testo:'Quali sono le due vittorie chiave dei due schieramenti?',
+     opzioni:['Cortenuova nel 1237 per l\'imperatore, Parma nel 1248 per i Comuni',
+              'Legnano nel 1176 per l\'imperatore, Cortenuova per i Comuni',
+              'Parma nel 1248 per l\'imperatore, Cortenuova per i Comuni',
+              'Benevento nel 1266 per entrambi, in momenti diversi'], giusta:0},
+
+    {tipo:'scelta', testo:'Come giudica Giuliano Milani lo scontro fra Federico II e i Comuni?',
+     opzioni:['Non solo avversari militari: erano il banco di prova politico',
+              'I Comuni furono sconfitti militarmente e politicamente',
+              'Lo scontro non ebbe conseguenze durature per nessuno',
+              'I Comuni furono sempre alleati fedeli dell\'imperatore'], giusta:0},
+
+    {tipo:'scelta', testo:'Come si chiude, con le Paci di Caltabellotta del 1302, la questione del Mezzogiorno?',
+     opzioni:['La Sicilia agli Aragonesi, Napoli agli Angioini',
+              'Tutto il Sud passa sotto gli Angioini di Francia',
+              'Tutto il Sud passa sotto gli Aragonesi di Spagna',
+              'Il Sud torna sotto il controllo diretto del papa'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire perché il Sud resta diviso per secoli.'}
+  ]
+},
+{
+  titolo: 'Storia medievale · 6 — Le civiltà extraeuropee',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: se un popolo non scrive, ha una storia?'},
+
+    {tipo:'scelta', testo:'Che cosa caratterizza le civiltà precolombiane fino al 1492?',
+     opzioni:['L\'isolamento assoluto: nessuno scambio con l\'Eurasia e l\'Africa',
+              'Un intenso commercio con l\'Asia attraverso il Pacifico',
+              'Contatti regolari con i navigatori vichinghi',
+              'Un continuo scambio di tecnologie con l\'Africa'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa distingue la Mesoamerica come area culturale?',
+     opzioni:['Società complesse, calendari precisi e architettura monumentale',
+              'Popolazioni nomadi senza insediamenti stabili',
+              'Un\'agricoltura basata sull\'allevamento del bestiame',
+              'L\'assenza di qualunque forma di scrittura o calcolo'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa caratterizza l\'area andina?',
+     opzioni:['Reti infrastrutturali estese e agricoltura terrazzata ad alta quota',
+              'Grandi città portuali affacciate sul Pacifico',
+              'Un impero fondato sul commercio marittimo',
+              'Popolazioni disperse senza organizzazione statale'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché la storiografia precolombiana usa fonti ausiliarie?',
+     opzioni:['Mancano archivi scritti, distrutti anche dai conquistatori',
+              'Le fonti scritte sono troppe per essere lette tutte',
+              'Gli storici preferiscono gli oggetti ai documenti',
+              'I documenti sono conservati in archivi inaccessibili'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa studia l\'antropologia in questo campo?',
+     opzioni:['Le popolazioni indigene attuali e la continuità di pratiche e riti',
+              'I resti materiali sepolti negli scavi',
+              'I codici e i simboli religiosi dipinti',
+              'I documenti fiscali dei conquistatori'], giusta:0},
+
+    {tipo:'scelta', testo:'Su che cosa si fonda il modello africano di memoria sociale?',
+     opzioni:['Sul griot, professionista della memoria e consigliere dei re',
+              'Sugli archivi conservati nei monasteri',
+              'Sulle iscrizioni scolpite nella pietra',
+              'Sui registri commerciali dei mercanti arabi'], giusta:0},
+
+    {tipo:'scelta', testo:'Che differenza c\'è fra la memoria orale e quella scritta, secondo la slide?',
+     opzioni:['La scritta fissa, l\'orale adatta il passato al presente',
+              'La scritta è sempre più affidabile della memoria orale',
+              'L\'orale conserva molti più dettagli della scritta',
+              'Non c\'è nessuna differenza rilevante fra le due'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché la scrittura cinese ideografica tenne unito l\'impero?',
+     opzioni:['Funzionari che parlavano dialetti diversi leggevano lo stesso testo',
+              'Perché era più semplice da imparare degli alfabeti',
+              'Perché veniva insegnata a tutta la popolazione',
+              'Perché permetteva di scrivere molto più in fretta'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa tiene insieme un impero enorme.'}
+  ]
+},
+{
+  titolo: 'Storia medievale · 7 — La crisi del Trecento',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: dopo una catastrofe, chi sopravvive sta meglio o peggio di prima?'},
+
+    {tipo:'scelta', testo:'In che cosa consiste la «trappola malthusiana» del Trecento?',
+     opzioni:['La popolazione era cresciuta oltre la capacità del sistema agricolo',
+              'Le terre erano troppe per la popolazione disponibile',
+              'Il clima era migliorato troppo in fretta',
+              'La produzione superava di molto il consumo'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa provoca lo sfruttamento delle terre marginali?',
+     opzioni:['Rendimenti decrescenti: si lavora di più e si raccoglie di meno',
+              'Un aumento costante della produzione per ettaro',
+              'La scomparsa delle carestie stagionali',
+              'Il miglioramento della qualità del suolo'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa muove i milites del pieno Medioevo, rispetto ai condottieri del Trecento?',
+     opzioni:['I milites l\'onore e il feudo, i condottieri il denaro',
+              'I milites il denaro e il contratto, i condottieri l\'onore',
+              'Entrambi soltanto la fedeltà giurata al proprio re',
+              'I milites la religione, i condottieri l\'idea di patria'], giusta:0},
+
+    {tipo:'scelta', testo:'Che effetto sociale hanno le compagnie di ventura?',
+     opzioni:['Saccheggio sistematico e devastazione prolungata delle campagne',
+              'Conflitti limitati e localizzati come in passato',
+              'La fine delle guerre private fra signori',
+              'La protezione stabile delle città murate'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è la catena che porta dal crollo demografico ai salari?',
+     opzioni:['Meno bocche, meno lavoratori, più potere contrattuale, salari più alti',
+              'Meno bocche, meno domanda, salari più bassi',
+              'Più bocche, più lavoro, salari più alti',
+              'Meno lavoratori, meno produzione, salari invariati'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa vuol dire che la tragedia «spezzò la stagnazione feudale»?',
+     opzioni:['I sopravvissuti, rari, poterono pretendere di più',
+              'Il sistema feudale si rafforzò per reazione alla crisi',
+              'La popolazione tornò subito ai livelli di prima',
+              'I signori riuscirono a imporre nuovi obblighi ai servi'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa sono i «fustagni» del nuovo modello manifatturiero?',
+     opzioni:['Stoffe miste a base di cotone, più leggere ed economiche',
+              'Tessuti di lana pesante per i nobili',
+              'Sete pregiate importate dall\'Oriente',
+              'Panni grezzi usati solo per i sacchi'], giusta:0},
+
+    {tipo:'scelta', testo:'A chi si rivolge la nuova manifattura?',
+     opzioni:['A una clientela meno ricca ma molto più numerosa',
+              'Alla sola élite nobiliare, come prima',
+              'Esclusivamente ai mercati d\'Oriente',
+              'Agli eserciti mercenari in campagna'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire perché un disastro può cambiare un\'economia.'}
+  ]
+},
+{
+  titolo: 'Storia medievale · 8 — La crisi dei poteri universali',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: da dove viene il potere di chi comanda — dall\'alto o dal basso?'},
+
+    {tipo:'scelta', testo:'Che cosa fa Filippo IV il Bello nel 1301?',
+     opzioni:['Tassa il clero e processa un vescovo in tribunale ordinario',
+              'Scomunica il papa e ne fa eleggere un altro al suo posto',
+              'Trasferisce la sede papale da Roma ad Avignone',
+              'Convoca un concilio per riformare tutta la Chiesa'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché quel gesto non è solo una disputa fiscale?',
+     opzioni:['Rivendica la sovranità dello Stato contro il papa',
+              'Perché riguarda una somma di denaro molto alta',
+              'Perché quel vescovo era un parente stretto del re',
+              'Perché avviene proprio durante un anno giubilare'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa dice l\'allegoria delle «due spade»?',
+     opzioni:['Entrambe sono della Chiesa, anche quella materiale',
+              'Una al papa e una all\'imperatore, indipendenti',
+              'Le due spade rappresentano la guerra e la pace',
+              'Le due spade sono la fede e la ragione umana'], giusta:0},
+
+    {tipo:'scelta', testo:'Che condizione pone la dottrina alla spada materiale?',
+     opzioni:['Solo «secondo il comando del clero»',
+              'Liberamente dal re, in qualunque circostanza',
+              'In nessun caso, perché la violenza è vietata',
+              'Solo contro gli infedeli e mai fra cristiani'], giusta:0},
+
+    {tipo:'scelta', testo:'Chi pubblica il Defensor pacis nel 1324?',
+     opzioni:['Marsilio da Padova',
+              'Guglielmo di Ockham',
+              'Bonifacio VIII',
+              'Dante Alighieri'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è la diagnosi di Marsilio sulla causa dei conflitti in Europa?',
+     opzioni:['Le pretese teocratiche e l\'ingerenza politica della Chiesa',
+              'L\'eccessiva debolezza dei sovrani nazionali',
+              'La divisione dell\'Impero fra troppi principi',
+              'La mancanza di un esercito comune cristiano'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa afferma Marsilio sulla legittimità del potere?',
+     opzioni:['Non discende dall\'alto: sale dal basso',
+              'Discende direttamente da Dio al sovrano',
+              'Appartiene per natura al più forte',
+              'Deriva dall\'antichità della dinastia'], giusta:0},
+
+    {tipo:'scelta', testo:'Che posizione assegna Marsilio alla Chiesa rispetto allo Stato?',
+     opzioni:['Puramente spirituale: non giudica, non tassa, non legifera',
+              'Autorità superiore, che controlla e corregge lo Stato',
+              'Potere pari a quello dello Stato, in equilibrio con esso',
+              'Istituzione che governa insieme al sovrano legittimo'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa cambia se il potere «sale dal basso».'}
+  ]
+},
+{
+  titolo: 'Storia medievale · 9 — L\'Italia degli Stati regionali',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: conviene essere il paese più ricco fra vicini più forti?'},
+
+    {tipo:'scelta', testo:'Come si evolve il governo di Milano?',
+     opzioni:['Dalla Signoria dei Visconti al Ducato, poi alla dinastia Sforza',
+              'Dalla Repubblica oligarchica al Principato ereditario',
+              'Dal Comune libero alla dominazione francese',
+              'Dalla Signoria alla Repubblica popolare'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa caratterizza il Ducato di Milano?',
+     opzioni:['Grande espansione, accentramento, poteri militari delegati',
+              'Un territorio piccolo ma governato con grande stabilità',
+              'Un governo affidato alle sole famiglie mercantili',
+              'Una struttura federale fra città rimaste autonome'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa fa la Serrata veneziana?',
+     opzioni:['Limita il Gran Consiglio alle famiglie storiche',
+              'Chiude il porto ai mercanti stranieri',
+              'Abolisce il Gran Consiglio in favore del doge',
+              'Apre le cariche pubbliche a tutti i cittadini'], giusta:0},
+
+    {tipo:'scelta', testo:'Quale organo veneziano nasce per la sicurezza dello Stato?',
+     opzioni:['Il Consiglio dei Dieci',
+              'Il Senato',
+              'La Quarantia',
+              'L\'Arengo'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa provoca la crisi avignonese nello Stato della Chiesa?',
+     opzioni:['Il potere a Roma cade nelle mani dei signori locali e dell\'aristocrazia',
+              'Il papa rafforza il controllo diretto sui territori',
+              'Lo Stato della Chiesa viene diviso fra Francia e Impero',
+              'Le città pontificie ottengono l\'indipendenza definitiva'], giusta:0},
+
+    {tipo:'scelta', testo:'Chi riporta l\'ordine nello Stato della Chiesa?',
+     opzioni:['Il cardinale Albornoz, inviato dal papa',
+              'Cola di Rienzo, con la Repubblica Romana',
+              'Cosimo de\' Medici, come mediatore',
+              'Il doge di Venezia, per conto della Lega'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è il rischio principale del sistema dei condottieri?',
+     opzioni:['L\'infedeltà: combattono per il miglior offerente',
+              'La mancanza di un vero addestramento militare',
+              'Il costo troppo basso dei contratti che firmano',
+              'L\'incapacità di combattere fuori dai confini'], giusta:0},
+
+    {tipo:'scelta', testo:'Quale evento del 1492 fa saltare l\'equilibrio italiano?',
+     opzioni:['La morte di Lorenzo de\' Medici',
+              'La discesa di Carlo VIII in Italia',
+              'La Pace di Lodi',
+              'La congiura dei Pazzi'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire perché l\'Italia ricca non riesce a difendersi.'}
+  ]
+}
 ];
