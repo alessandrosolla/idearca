@@ -4232,4 +4232,509 @@ const BANCA2 = [
     {tipo:'nuvola', testo:'Alla fine: una parola per dire perché l\'Italia ricca non riesce a difendersi.'}
   ]
 }
+,
+{
+  titolo: 'Storia moderna · 1 — Carlo V e la Riforma protestante',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: che cosa succede a un\'idea quando qualcuno inventa il modo di stamparla?'},
+
+    {tipo:'scelta', testo:'Come agisce il papato fra la fine del Quattrocento e l\'inizio del Cinquecento?',
+     opzioni:['Come una signoria rinascimentale, presa da politica e mecenatismo',
+              'Come una guida spirituale distante dalle cose del mondo',
+              'Come un tribunale occupato a giudicare gli eretici',
+              'Come una potenza militare che punta alla Terrasanta'], giusta:0},
+
+    {tipo:'scelta', testo:'Di che cosa si occupa soprattutto Giulio II?',
+     opzioni:['Guida di persona le truppe in battaglia: è un papa guerriero',
+              'Riforma la disciplina del clero e chiude i conventi corrotti',
+              'Convoca il concilio che risponderà a Lutero',
+              'Finanzia le spedizioni verso il Nuovo Mondo'], giusta:0},
+
+    {tipo:'scelta', testo:'Quali sono i quattro sintomi della corruzione della Chiesa?',
+     opzioni:['Vendita delle indulgenze, simonia, concubinato, vescovi assenti',
+              'Eresia, scisma, superstizione, idolatria',
+              'Tassazione, usura, contrabbando, contraffazione',
+              'Guerra, carestia, peste, ignoranza'], giusta:0},
+
+    {tipo:'scelta', testo:'Come finisce la battaglia di Pavia del 1525?',
+     opzioni:['Francesco I viene fatto prigioniero da Carlo V',
+              'Carlo V perde il controllo dell\'Italia settentrionale',
+              'La Francia conquista definitivamente Milano',
+              'I due sovrani firmano una pace immediata'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa stabilisce la Pace di Cateau-Cambrésis del 1559?',
+     opzioni:['La Francia perde l\'Italia, che passa sotto l\'egida asburgica',
+              'La Francia ottiene Milano, Napoli e tutto il Mezzogiorno',
+              'L\'Italia riconquista la propria piena indipendenza politica',
+              'L\'Impero rinuncia a ogni pretesa sulla penisola italiana'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché la Chiesa vende le indulgenze?',
+     opzioni:['Ha bisogno di denaro, e promette in cambio l\'assoluzione dal Purgatorio',
+              'Vuole finanziare le crociate contro i turchi',
+              'Deve pagare i debiti contratti con i banchieri tedeschi',
+              'Cerca di sostituire le tasse ordinarie sui fedeli'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa contestano radicalmente le 95 tesi?',
+     opzioni:['Il diritto della Chiesa di mediare la salvezza per denaro',
+              'L\'autorità dei concili sulle questioni di fede',
+              'La lingua latina usata nelle celebrazioni',
+              'La proprietà delle terre nelle mani dei monasteri'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa fa Lutero durante l\'esilio nel castello di Federico di Sassonia?',
+     opzioni:['Traduce la Bibbia in tedesco',
+              'Scrive la Confessione di Augusta',
+              'Organizza la rivolta dei contadini',
+              'Negozia un accordo con l\'imperatore'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa fece davvero la differenza, la stampa o le tesi.'}
+  ]
+},
+{
+  titolo: 'Storia moderna · 2 — Riforma e Controriforma',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: chi combatte per la libertà di coscienza la concede poi agli altri?'},
+
+    {tipo:'scelta', testo:'Che cosa fa Zwingli della messa tradizionale a Zurigo?',
+     opzioni:['La abolisce e la riduce a una lettura commentata della Bibbia',
+              'La conserva ma la fa celebrare in tedesco',
+              'La affida ai laici invece che ai sacerdoti',
+              'La riduce a due sole celebrazioni all\'anno'], giusta:0},
+
+    {tipo:'scelta', testo:'In che cosa Zwingli è più radicale di Lutero?',
+     opzioni:['Rifiuta ogni compromesso coi riti e toglie le immagini',
+              'Accetta la presenza reale di Cristo nell\'eucaristia',
+              'Mantiene intatta l\'autorità dei vescovi sulle diocesi',
+              'Riconosce il primato del papa in materia di dottrina'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa succede a Michele Serveto nel 1553?',
+     opzioni:['Fugge dall\'Inquisizione cattolica e viene bruciato dai calvinisti a Ginevra',
+              'Viene condannato a Roma e giustiziato in piazza',
+              'Ottiene asilo a Ginevra e vi muore di vecchiaia',
+              'Viene liberato dopo aver abiurato le sue tesi'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa dimostra storicamente il caso Serveto?',
+     opzioni:['La Riforma non portò subito la libertà di pensiero',
+              'La Riforma fu tollerante fin dall\'inizio',
+              'L\'Inquisizione cattolica era più mite di quella riformata',
+              'Le condanne a morte per eresia erano già state abolite'], giusta:0},
+
+    {tipo:'scelta', testo:'Quale data segna la nascita della Chiesa anglicana?',
+     opzioni:['Il 1534, con l\'Atto di supremazia',
+              'Il 1517, con le tesi di Lutero',
+              'Il 1555, con la Pace di Augusta',
+              'Il 1545, con l\'apertura del Concilio di Trento'], giusta:0},
+
+    {tipo:'scelta', testo:'Quale effetto economico immediato ha l\'Atto di supremazia?',
+     opzioni:['La monarchia incamera beni e terre della Chiesa cattolica inglese',
+              'La Corona rinuncia a ogni entrata di origine ecclesiastica',
+              'I monasteri diventano proprietà dei contadini',
+              'Le tasse sul clero vengono abolite del tutto'], giusta:0},
+
+    {tipo:'scelta', testo:'Quali sono tre riforme successive della Chiesa anglicana?',
+     opzioni:['Fine del celibato, divieto delle immagini sacre, liturgia in inglese',
+              'Ritorno del latino, culto dei santi, celibato obbligatorio',
+              'Elezione dei vescovi, abolizione del battesimo, comunione mensile',
+              'Chiusura delle università, censura dei libri, tribunali speciali'], giusta:0},
+
+    {tipo:'scelta', testo:'Come si articola la risposta della Chiesa di Roma?',
+     opzioni:['Rinnovamento interno da un lato, dura repressione esterna dall\'altro',
+              'Solo repressione, senza nessuna riforma interna',
+              'Solo riforma interna, senza misure repressive',
+              'Trattative con i protestanti per riunire le due Chiese'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire fin dove arriva la tolleranza di chi ha appena vinto.'}
+  ]
+},
+{
+  titolo: 'Storia moderna · 5 — La guerra dei Trent\'anni e l\'Olanda',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: si può fare una pace se ognuno vuole che l\'altro cambi religione?'},
+
+    {tipo:'scelta', testo:'Che cosa stabiliva il principio «cuius regio, eius religio»?',
+     opzioni:['I sudditi seguono la religione del proprio signore',
+              'Ogni suddito sceglie liberamente la propria religione',
+              'La religione dell\'imperatore vale per tutto l\'Impero',
+              'Ogni città decide a maggioranza la propria fede'], giusta:0},
+
+    {tipo:'scelta', testo:'Quale confessione restava esclusa dalla Pace di Augusta?',
+     opzioni:['I calvinisti',
+              'I luterani',
+              'I cattolici',
+              'Gli anglicani'], giusta:0},
+
+    {tipo:'scelta', testo:'Quali due blocchi si formano nel 1608-1609?',
+     opzioni:['L\'Unione evangelica e la Lega cattolica',
+              'La Lega di Cognac e la Lega Santa',
+              'La Triplice alleanza e la Lega Lombarda',
+              'L\'Unione di Utrecht e la Lega di Smalcalda'], giusta:0},
+
+    {tipo:'scelta', testo:'Quali sono le quattro fasi della guerra, in ordine?',
+     opzioni:['Boemo-palatina, danese, svedese, francese',
+              'Danese, boemo-palatina, francese, svedese',
+              'Svedese, danese, francese, boemo-palatina',
+              'Francese, svedese, danese, boemo-palatina'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa decide la battaglia della Montagna Bianca del 1620?',
+     opzioni:['Vince la parte cattolica: Federico V fugge dalla Boemia',
+              'Vince la parte protestante: la Boemia diventa indipendente',
+              'La Francia entra nel conflitto a fianco dell\'imperatore',
+              'La guerra finisce subito con una pace generale in Europa'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa rappresenta Albrecht von Wallenstein?',
+     opzioni:['L\'imprenditore privato della guerra, che vive di razzie',
+              'Il comandante fedele nominato dall\'imperatore, senza compensi',
+              'Il capo militare dei principi protestanti tedeschi',
+              'Il negoziatore che porterà alla Pace di Westfalia'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa ottiene la Francia con la Pace di Westfalia?',
+     opzioni:['Territori in Alsazia e i vescovati di Metz, Toul e Verdun',
+              'La Pomerania occidentale e il primato sul Baltico',
+              'L\'indipendenza delle Province Unite',
+              'Il riconoscimento del proprio imperatore'], giusta:0},
+
+    {tipo:'scelta', testo:'Quali indipendenze vengono riconosciute definitivamente a Westfalia?',
+     opzioni:['Quelle della Svizzera e delle Province Unite',
+              'Quelle della Boemia e dell\'Ungheria',
+              'Quelle della Svezia e della Danimarca',
+              'Quelle del Portogallo e della Catalogna'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa nasce davvero nel 1648.'}
+  ]
+},
+{
+  titolo: 'Storia moderna · 6 — Rivoluzioni inglesi e assolutismi',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: chi controlla il denaro di uno Stato controlla anche il resto?'},
+
+    {tipo:'scelta', testo:'Che cosa unifica Giacomo I Stuart nel 1603?',
+     opzioni:['Le corone di Inghilterra, Scozia e Irlanda',
+              'Le corone di Inghilterra e Francia',
+              'I parlamenti di Londra e di Edimburgo',
+              'Le Chiese anglicana e presbiteriana'], giusta:0},
+
+    {tipo:'scelta', testo:'In che consiste il progetto assolutistico degli Stuart?',
+     opzioni:['Governare senza il parlamento, con l\'alta aristocrazia',
+              'Governare insieme al parlamento, ma senza i Comuni',
+              'Abolire la monarchia in favore di una repubblica',
+              'Cedere alle contee il potere di imporre le tasse'], giusta:0},
+
+    {tipo:'scelta', testo:'Chi è la gentry che cresce in quegli anni?',
+     opzioni:['La piccola nobiltà di campagna e i ceti mercantili',
+              'L\'alta aristocrazia fondiaria di antica origine',
+              'Gli operai delle prime manifatture',
+              'Il clero anglicano di campagna'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa chiedono i puritani?',
+     opzioni:['L\'eliminazione delle gerarchie ecclesiastiche',
+              'Il ritorno della Chiesa cattolica in Inghilterra',
+              'La conservazione della liturgia anglicana',
+              'L\'unione fra Chiesa e Corona'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa innesca la guerra civile del 1642?',
+     opzioni:['Carlo I tenta di arrestare i leader del parlamento',
+              'Viene decapitato un vescovo anglicano a Londra',
+              'Scoppia una rivolta dei contadini in Scozia',
+              'La Francia invade le coste dell\'Inghilterra'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa distingue la New Model Army di Cromwell?',
+     opzioni:['Disciplina, avanzamento per merito e fanatismo religioso puritano',
+              'L\'impiego di mercenari stranieri esperti',
+              'Il comando affidato ai soli nobili di antica famiglia',
+              'L\'uso esclusivo della cavalleria pesante'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è il Rump Parliament?',
+     opzioni:['Il parlamento ridotto, dopo che Cromwell ne ha epurato i moderati',
+              'Il parlamento scozzese riunito a Edimburgo',
+              'L\'assemblea dei vescovi anglicani',
+              'Il consiglio militare della New Model Army'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa stabilisce l\'Habeas Corpus Act del 1679?',
+     opzioni:['Nessuno può essere incarcerato senza conoscere l\'accusa e vedere un giudice',
+              'Il re non può convocare il parlamento senza il consenso dei lord',
+              'I cattolici non possono ricoprire cariche pubbliche',
+              'Il parlamento controlla direttamente l\'esercito'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa protegge davvero un cittadino dal potere.'}
+  ]
+},
+{
+  titolo: 'Storia moderna · 8 — La civiltà dei Lumi',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: dove si formavano le idee, prima dei social?'},
+
+    {tipo:'scelta', testo:'Che cosa afferma Kant definendo l\'Illuminismo?',
+     opzioni:['L\'uscita dell\'uomo da una minorità di cui è colpevole',
+              'Il trionfo definitivo della scienza sulla filosofia',
+              'Il ritorno alla saggezza dei filosofi antichi',
+              'La fine di ogni forma di religione organizzata'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa teorizza Condorcet nel Saggio di un quadro storico?',
+     opzioni:['L\'esperienza del passato permette di prevedere e migliorare il futuro',
+              'La storia si ripete sempre uguale a sé stessa',
+              'Il progresso è impossibile senza una guida religiosa',
+              'La natura pone un limite invalicabile al perfezionamento umano'], giusta:0},
+
+    {tipo:'scelta', testo:'Su che cosa si concentra Montesquieu?',
+     opzioni:['Sulla separazione dei poteri, per impedire il dispotismo',
+              'Sulla sovranità popolare e il patto sociale',
+              'Sulla tolleranza religiosa e la critica al fanatismo',
+              'Sulla diffusione del sapere contro il monopolio religioso'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa invoca Rousseau, rifiutando il progresso corrotto?',
+     opzioni:['Un nuovo patto sociale basato su uguaglianza e sovranità popolare',
+              'Il ritorno della monarchia assoluta di diritto divino',
+              'La separazione dei tre poteri dello Stato',
+              'Un\'enciclopedia che raccolga tutto il sapere'], giusta:0},
+
+    {tipo:'scelta', testo:'Che ruolo hanno i salotti e i caffè?',
+     opzioni:['Permettono il confronto orizzontale delle idee fra ceti diversi',
+              'Servono solo a intrattenere l\'aristocrazia annoiata',
+              'Sono luoghi di culto per i deisti',
+              'Ospitano le riunioni segrete dei governi'], giusta:0},
+
+    {tipo:'scelta', testo:'Che effetto ha la libertà di stampa sull\'informazione?',
+     opzioni:['Libri e giornali scardinano il monopolio informativo dei governi',
+              'Riduce il numero dei libri stampati per via della censura',
+              'Aumenta il controllo dei sovrani sull\'opinione pubblica',
+              'Rende la lettura un privilegio ancora più ristretto'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è la contraddizione centrale dei Lumi?',
+     opzioni:['Rivendicavano libertà in Europa mentre l\'economia si reggeva sulla tratta',
+              'Difendevano la religione mentre criticavano la Chiesa',
+              'Chiedevano riforme ma rifiutavano ogni cambiamento',
+              'Esaltavano la ragione ma vietavano la scienza'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa fa Edward Long nel 1774?',
+     opzioni:['Usa false argomentazioni scientifiche per giustificare la schiavitù',
+              'Pubblica il primo trattato contro la tratta degli schiavi',
+              'Fonda la prima società abolizionista inglese a Londra',
+              'Traduce l\'Enciclopedia francese in lingua inglese'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa non vedevano di sé i filosofi dei Lumi.'}
+  ]
+},
+{
+  titolo: 'Storia moderna · 9 — La prima rivoluzione industriale',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: perché per fare fabbriche serve prima cambiare l\'agricoltura?'},
+
+    {tipo:'scelta', testo:'Che cosa fanno le recinzioni, le enclosures?',
+     opzioni:['Aumentano la resa delle terre e liberano contadini dalle campagne',
+              'Proteggono i contadini dall\'espulsione dai loro campi',
+              'Riducono la produzione agricola complessiva',
+              'Impediscono ai proprietari di vendere la terra'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è la catena che porta dall\'agricoltura alla fabbrica?',
+     opzioni:['Più cibo, più popolazione, più manodopera e più consumatori',
+              'Meno cibo, meno popolazione, più macchine',
+              'Più terra, meno lavoro, meno commercio',
+              'Più esportazioni, meno consumi interni, meno fabbriche'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa provoca il balzo demografico del Settecento?',
+     opzioni:['Un calo della mortalità unito a una natalità che resta alta',
+              'Un aumento improvviso delle nascite senza altri fattori',
+              'L\'arrivo di immigrati dalle colonie',
+              'La fine delle guerre in tutta Europa'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa afferma Adam Smith nella Ricchezza delle Nazioni del 1776?',
+     opzioni:['Il mercato libero trasforma l\'egoismo in benessere collettivo',
+              'Lo Stato deve dirigere ogni singolo scambio commerciale',
+              'La ricchezza di una nazione dipende dall\'oro che accumula',
+              'Il commercio con l\'estero impoverisce sempre chi lo pratica'], giusta:0},
+
+    {tipo:'scelta', testo:'Con quale esempio Smith spiega la sua idea?',
+     opzioni:['Il macellaio e il fornaio, che ci nutrono badando al proprio interesse',
+              'Il re e i sudditi, legati da un patto di fedeltà',
+              'Il contadino e il proprietario, uniti dal raccolto',
+              'L\'artigiano e l\'apprendista, legati dal mestiere'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è il colpo di genio del condensatore separato di Watt?',
+     opzioni:['Raffredda il vapore a parte, riducendo lo spreco di calore',
+              'Aumenta di molto la pressione dentro la caldaia',
+              'Sostituisce il carbone con la sola energia idraulica',
+              'Elimina del tutto la necessità di usare un pistone'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa cambia con il moto rotatorio?',
+     opzioni:['La macchina può collegarsi a ingranaggi e telai industriali',
+              'La macchina consuma molto meno carbone',
+              'La macchina può funzionare senza acqua',
+              'La macchina diventa più piccola e trasportabile'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché il sistema di fabbrica sostituisce il lavoro a domicilio?',
+     opzioni:['I macchinari sono grandi, pesanti e costosi: il lavoro va dove sta l\'energia',
+              'Perché i lavoratori preferivano stare insieme',
+              'Perché lo Stato vietò il lavoro nelle case',
+              'Perché il lavoro a domicilio era più costoso da controllare'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa perde l\'operaio entrando in fabbrica.'}
+  ]
+},
+{
+  titolo: 'Storia moderna · 12 — L\'età napoleonica',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: chi arriva a colmare un vuoto di potere, poi lo restituisce?'},
+
+    {tipo:'scelta', testo:'Qual è la situazione della Francia nel 1795?',
+     opzioni:['Inflazione, malcontento, Direttorio debole e precario',
+              'Economia solida e governo saldamente sostenuto dal paese',
+              'Pace interna e concordia dopo la fine del Terrore',
+              'Monarchia restaurata col consenso generale dei francesi'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché l\'esercito diventa l\'istituzione più solida della Francia?',
+     opzioni:['È animato dall\'entusiasmo rivoluzionario e coeso attorno alla nazione',
+              'Riceve più denaro di ogni altra istituzione',
+              'È comandato direttamente dal Direttorio',
+              'È composto quasi solo da mercenari professionisti'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa succede alle «repubbliche sorelle» create in Italia?',
+     opzioni:['Diventano entità vassalle, sfruttate con requisizioni e saccheggi d\'arte',
+              'Ottengono piena indipendenza dalla Francia',
+              'Vengono restituite ai sovrani precedenti',
+              'Si uniscono in un unico Stato italiano'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa esprime Ugo Foscolo nelle Ultime lettere di Jacopo Ortis?',
+     opzioni:['Lo shock di Campoformio: i francesi non sono liberatori ma conquistatori',
+              'L\'entusiasmo per la vittoria delle armi francesi',
+              'La speranza in un ritorno degli antichi sovrani',
+              'L\'indifferenza dei letterati verso la politica'], giusta:0},
+
+    {tipo:'scelta', testo:'Quali sono, in ordine, i quattro passaggi del 18 brumaio?',
+     opzioni:['Crisi, golpe, triumvirato, plebiscito di legittimazione',
+              'Plebiscito, golpe, crisi, triumvirato',
+              'Golpe, crisi, plebiscito, triumvirato',
+              'Triumvirato, crisi, golpe, plebiscito'], giusta:0},
+
+    {tipo:'scelta', testo:'Che ruolo assume Napoleone nel triumvirato?',
+     opzioni:['Primo Console, con le prerogative esecutive e legislative',
+              'Uno dei tre consoli, con poteri uguali agli altri',
+              'Comandante militare senza incarichi civili',
+              'Presidente del Senato, con poteri di controllo'], giusta:0},
+
+    {tipo:'scelta', testo:'Quali conquiste rivoluzionarie il Codice civile mantiene?',
+     opzioni:['Uguaglianza giuridica, laicità dello Stato, abolizione dei privilegi feudali',
+              'Suffragio universale, libertà di sciopero, istruzione gratuita',
+              'Sovranità popolare, elezione dei giudici, libertà di associazione',
+              'Divisione delle terre, abolizione della proprietà, pieni diritti alle donne'], giusta:0},
+
+    {tipo:'scelta', testo:'Quali restrizioni autoritarie contiene lo stesso Codice?',
+     opzioni:['Famiglia patriarcale, divieto di sciopero, schiavitù nelle colonie',
+              'Abolizione della proprietà privata e del diritto di eredità',
+              'Divieto di ogni culto religioso praticato in pubblico',
+              'Soppressione di tutti i tribunali civili ordinari'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa resta della Rivoluzione dentro il Codice.'}
+  ]
+},
+{
+  titolo: 'Storia moderna · 13 — La Restaurazione',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: si possono rimettere le cose come stavano venticinque anni prima?'},
+
+    {tipo:'scelta', testo:'Qual è l\'obiettivo dichiarato del Congresso di Vienna?',
+     opzioni:['Cancellare l\'eredità rivoluzionaria e ripristinare gli equilibri rotti',
+              'Fondare una federazione europea di Stati liberi',
+              'Dividere l\'Europa fra Francia e Inghilterra',
+              'Riconoscere i confini nati dalle guerre napoleoniche'], giusta:0},
+
+    {tipo:'scelta', testo:'Chi promuove il principio di legittimità, e perché?',
+     opzioni:['Talleyrand, per difendere l\'integrità della Francia sconfitta',
+              'Metternich, per contenere la potenza russa',
+              'Lo zar Alessandro I, per estendere la propria influenza',
+              'Il re di Prussia, per ottenere la Renania'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa afferma il principio di equilibrio?',
+     opzioni:['Nessuna nazione deve diventare tanto potente da minacciare le altre',
+              'Ogni sovrano legittimo deve tornare sul proprio trono',
+              'I confini vanno tracciati secondo la lingua dei popoli',
+              'Le potenze vincitrici devono spartirsi i territori in parti uguali'], giusta:0},
+
+    {tipo:'scelta', testo:'Quale dei due principi prevale, in caso di conflitto?',
+     opzioni:['L\'equilibrio prevale sempre sulla legittimità',
+              'La legittimità prevale sempre sull\'equilibrio',
+              'Si decide caso per caso senza regola fissa',
+              'Prevale la volontà del sovrano più potente'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa sono gli «Stati cuscinetto» creati attorno alla Francia?',
+     opzioni:['Territori rafforzati per contenere ogni futura espansione francese',
+              'Zone smilitarizzate senza governo proprio',
+              'Colonie affidate alla gestione austriaca',
+              'Repubbliche indipendenti garantite dall\'Inghilterra'], giusta:0},
+
+    {tipo:'scelta', testo:'Che forma prende il dominio austriaco diretto in Italia?',
+     opzioni:['Il Regno Lombardo-Veneto, amministrato e presidiato da Vienna',
+              'Il Regno di Sardegna, retto da un vicerè austriaco',
+              'Il Granducato di Toscana, annesso all\'Impero',
+              'Lo Stato della Chiesa, governato da un legato imperiale'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa esige il reazionario Joseph de Maistre?',
+     opzioni:['Il rifiuto totale del nuovo e il ritorno al connubio trono-altare',
+              'Una monarchia costituzionale con garanzie per i cittadini',
+              'L\'accettazione pragmatica di alcune conquiste rivoluzionarie',
+              'La libertà di stampa e di religione'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa distingue il conservatore Burke dal reazionario?',
+     opzioni:['Rifiuta la rottura violenta ma accetta uno sviluppo organico e progressivo',
+              'Rifiuta ogni cambiamento, anche graduale',
+              'Chiede il ritorno immediato all\'assolutismo',
+              'Sostiene la sovranità popolare senza limiti'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire perché la Restaurazione non poteva durare.'}
+  ]
+},
+{
+  titolo: 'Storia moderna · 16 — Il 1848, primavera dei popoli',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: che cosa cambia se una notizia viaggia in un\'ora invece che in un mese?'},
+
+    {tipo:'scelta', testo:'Che ruolo ha il telegrafo nel 1848?',
+     opzioni:['Le notizie corrono più degli eserciti: la rivolta si propaga',
+              'Permette ai governi di prevenire e soffocare ogni rivolta',
+              'Serve soltanto a coordinare i movimenti delle truppe',
+              'Non era ancora stato inventato nell\'Europa di allora'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa chiede la borghesia liberale?',
+     opzioni:['Costituzioni, diritti politici, emancipazione nazionale',
+              'Giustizia sociale, diritto al lavoro, suffragio universale',
+              'Il ritorno dei sovrani legittimi',
+              'L\'abolizione della proprietà privata'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa chiede invece il proletariato urbano?',
+     opzioni:['Giustizia sociale, diritto al lavoro e suffragio universale',
+              'Costituzioni e libertà di stampa',
+              'La restaurazione delle corporazioni artigiane',
+              'Il ritorno alla campagna e alla terra'], giusta:0},
+
+    {tipo:'scelta', testo:'Come aggira l\'opposizione francese il divieto di riunione politica?',
+     opzioni:['Con la campagna dei banchetti, comizi mascherati da pranzi privati',
+              'Con le riunioni notturne nelle chiese',
+              'Con la pubblicazione di giornali clandestini',
+              'Con le assemblee dentro le caserme'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa fa scoppiare la rivoluzione a Parigi il 22 febbraio 1848?',
+     opzioni:['Il governo vieta un banchetto: nascono le barricate',
+              'Il re abdica all\'improvviso e lascia la capitale',
+              'L\'esercito spara sulla folla in una manifestazione',
+              'Viene arrestato il capo dell\'opposizione liberale'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa sono gli Ateliers Nationaux proposti da Louis Blanc?',
+     opzioni:['Fabbriche di Stato per garantire il diritto al lavoro',
+              'Scuole professionali per gli operai disoccupati',
+              'Cooperative fondate dai lavoratori stessi',
+              'Magazzini pubblici per distribuire il pane'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché quell\'esperimento spacca il fronte rivoluzionario?',
+     opzioni:['La tassa che li finanzia scontenta le campagne',
+              'Gli operai si rifiutano di andarci a lavorare',
+              'Il re li dichiara illegali e li fa chiudere subito',
+              'Non producono nulla che si possa poi rivendere'], giusta:0},
+
+    {tipo:'scelta', testo:'Con quale percentuale Luigi Napoleone vince nel dicembre 1848?',
+     opzioni:['Con il 75% dei voti',
+              'Con il 51% dei voti',
+              'Con il 60% dei voti',
+              'Con il 90% dei voti'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire chi vince quando la paura supera la speranza.'}
+  ]
+}
 ];
