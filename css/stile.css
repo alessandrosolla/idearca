@@ -1331,3 +1331,32 @@ html[data-theme="dark"] .chi-banda{background:#171d15}
 .lib-item.ha-novita small{color:#2d5a27;font-weight:600}
 .lib-count-aperto{background:#2d5a27;color:#fff;border-radius:100px;padding:.05rem .45rem;
   font-size:.66rem;font-weight:700}
+
+
+/* ── L'AVVISO DI UNA CONSEGNA ARRIVATA ──────────────────────
+   In basso a destra, sopra tutto. Compare solo al docente e solo
+   quando il numero cresce: all'apertura della pagina il pallino
+   nella colonna basta e avanza. */
+.avviso-consegna{position:fixed;right:1.2rem;bottom:1.2rem;z-index:600;
+  display:flex;align-items:center;gap:.8rem;max-width:min(26rem,calc(100vw - 2.4rem));
+  padding:.9rem 1rem;border-radius:14px;background:var(--white);
+  border:1px solid var(--border);border-left:4px solid var(--forest);
+  box-shadow:0 14px 44px rgba(28,43,26,.22);
+  transform:translateY(140%);opacity:0;transition:transform .38s cubic-bezier(.2,.9,.3,1),opacity .3s}
+.avviso-consegna.su{transform:none;opacity:1}
+.ac-punto{width:10px;height:10px;border-radius:50%;background:var(--forest);flex:none;
+  box-shadow:0 0 0 4px rgba(45,90,39,.16)}
+.ac-testo{display:flex;flex-direction:column;min-width:0;flex:1}
+.ac-testo b{font-size:.88rem;font-weight:600;color:var(--ink)}
+.ac-testo span{font-size:.76rem;color:var(--stone)}
+.ac-vai{font-family:'Jost',sans-serif;font-size:.72rem;letter-spacing:.08em;font-weight:600;
+  padding:.5rem .9rem;border-radius:100px;cursor:pointer;flex:none;
+  border:1.5px solid var(--forest);background:var(--forest);color:#fff}
+.ac-vai:hover{background:#24491f}
+.ac-x{font-family:'Jost',sans-serif;font-size:.8rem;border:0;background:none;cursor:pointer;
+  color:var(--stone);padding:.2rem .3rem;flex:none}
+.ac-x:hover{color:var(--ink)}
+@media(max-width:520px){
+  .avviso-consegna{right:.8rem;left:.8rem;bottom:.8rem;max-width:none}
+  .ac-vai{font-size:.68rem;padding:.5rem .7rem}
+}

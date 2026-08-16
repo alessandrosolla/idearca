@@ -854,6 +854,7 @@ function mostraVista(k){
   }
   const n=document.getElementById(v.vista); if(n) n.style.display='block';
   registraUso('strumento', v.uso);
+  if(k==='__inbox__') segnaConsegneLette();
   return true;
 }
 
@@ -893,6 +894,8 @@ function buildNav(keys){
   });
   document.getElementById('lib-nav').innerHTML=html;
   segnalaConsegneAperte();
+  contaConsegneNuove();
+  avviaGiroConsegne();
   /* un gruppo senza voci (Didattica per uno studente, se tutto
      e' riservato) sparisce invece di restare come titolo vuoto */
   document.querySelectorAll('.lib-group').forEach(g=>{
@@ -928,6 +931,93 @@ async function segnalaConsegneAperte(){
   /* e anche nel menu del telefono, dove il pallino non si vede */
   const opt=document.querySelector('#mob-select option[value="__consegna__"]');
   if(opt && !opt.textContent.includes('•')) opt.textContent+='  • '+quante;
+}
+
+/* ── LE CONSEGNE APPENA ARRIVATE ────────────────────────────
+   La tabella `consegne` ha già una colonna `letto`, e le regole
+   del database permettono di leggerla solo a chi insegna: basta
+   contare quelle non lette. Nessuna migrazione.
+
+   Il conteggio si aggiorna da solo ogni due minuti mentre la
+   pagina è aperta, e quando ne arriva una nuova compare un
+   avviso in basso che si può chiudere o cliccare per andare
+   all'Inbox. Non si ripete: si avvisa solo dei numeri nuovi
+   rispetto all'ultimo giro. */
+let consegneNonLette = null;      /* null = non ancora chiesto */
+
+async function contaConsegneNuove(){
+  if(!eDocente()) return;
+  let quante=0;
+  try{
+    const res=await fetch(SB_URL+'/rest/v1/consegne?select=id&letto=is.false',
+      {headers:wHead()});
+    if(!res.ok) return;
+    quante=(await res.json()).length;
+  }catch(_){ return; }
+
+  const prima=consegneNonLette;
+  consegneNonLette=quante;
+  segnaInbox(quante);
+  /* si avvisa solo se il numero è cresciuto, e non al primo giro:
+     all'apertura della pagina il pallino basta */
+  if(prima!==null && quante>prima) avvisoConsegna(quante-prima, quante);
+}
+
+function segnaInbox(quante){
+  const voce=document.querySelector('.lib-item[data-key="__inbox__"]');
+  if(!voce) return;
+  const c=voce.querySelector('.lib-count');
+  voce.classList.toggle('ha-novita', quante>0);
+  if(c){
+    c.textContent = quante>0 ? quante : '';
+    c.classList.toggle('lib-count-aperto', quante>0);
+  }
+  const p=voce.querySelector('small');
+  if(p) p.textContent = quante>0
+    ? (quante===1 ? 'Una consegna da leggere' : quante+' consegne da leggere')
+    : 'Consegne degli studenti';
+  const opt=document.querySelector('#mob-select option[value="__inbox__"]');
+  if(opt) opt.textContent='📥 Inbox'+(quante>0 ? '  • '+quante : '');
+  /* e nel titolo della scheda, che si vede anche da un'altra scheda */
+  document.title = (quante>0 ? '('+quante+') ' : '')
+    + document.title.replace(/^\(\d+\)\s*/,'');
+}
+
+function avvisoConsegna(nuove, totale){
+  document.getElementById('avviso-consegna')?.remove();
+  const d=document.createElement('div');
+  d.id='avviso-consegna';
+  d.className='avviso-consegna';
+  d.innerHTML=
+    '<span class="ac-punto"></span>'
+    +'<div class="ac-testo"><b>'+(nuove===1?'È arrivata una consegna':'Sono arrivate '+nuove+' consegne')+'</b>'
+    +'<span>'+(totale===1?'Una da leggere in tutto':totale+' da leggere in tutto')+'</span></div>'
+    +'<button class="ac-vai">Apri l\'Inbox</button>'
+    +'<button class="ac-x" aria-label="Chiudi">✕</button>';
+  document.body.appendChild(d);
+  d.querySelector('.ac-vai').onclick=()=>{
+    d.remove();
+    const voce=document.querySelector('.lib-item[data-key="__inbox__"]');
+    if(voce) navClick(voce,'__inbox__'); else mostraVista('__inbox__');
+  };
+  d.querySelector('.ac-x').onclick=()=>d.remove();
+  requestAnimationFrame(()=>d.classList.add('su'));
+  /* dopo mezzo minuto se ne va da sola: il pallino nella colonna
+     resta, quindi l'informazione non si perde */
+  setTimeout(()=>{ d.classList.remove('su'); setTimeout(()=>d.remove(),400); }, 30000);
+}
+
+/* L'Inbox, quando la si apre, segna per letto quello che mostra:
+   così il conteggio torna a zero senza doverci pensare. */
+async function segnaConsegneLette(){
+  if(!eDocente() || !consegneNonLette) return;
+  try{
+    await fetch(SB_URL+'/rest/v1/consegne?letto=is.false',{
+      method:'PATCH',
+      headers:wHead({'Content-Type':'application/json','Prefer':'return=minimal'}),
+      body:JSON.stringify({letto:true})});
+  }catch(_){}
+  consegneNonLette=0; segnaInbox(0);
 }
 
 function buildMobSelect(keys){
@@ -987,6 +1077,18 @@ function navClick(el,key){
    Lo vede solo chi insegna. */
 /* Nasconde tutte le viste a pieno schermo e riporta a galla la
    libreria: la chiamano sia navClick sia mobChange. */
+
+/* Il giro periodico. Si ferma quando la scheda non è in primo
+   piano: chiedere il conteggio a una scheda che nessuno guarda è
+   traffico buttato, e al ritorno si chiede subito. */
+let giroConsegne=null;
+function avviaGiroConsegne(){
+  clearInterval(giroConsegne);
+  giroConsegne=setInterval(()=>{ if(!document.hidden) contaConsegneNuove(); }, 120000);
+  document.addEventListener('visibilitychange', ()=>{
+    if(!document.hidden) contaConsegneNuove();
+  });
+}
 
 let searchDebounce=null;
 function escHtml(s){return (s||'').replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));}
