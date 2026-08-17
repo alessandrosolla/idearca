@@ -145,6 +145,13 @@ th{font-weight:600;color:var(--inchiostro);font-size:.72rem;letter-spacing:.06em
    e ruggine e oro troppo vicini perfino a vista normale.
    ══════════════════════════════════════════════════════════ */
 
+/* La tratta atlantica è l'unica serie annuale del gruppo: 366 anni
+   di fila, dal 1501 al 1866, senza buchi. Scrivere l'elenco degli
+   anni a mano sarebbe una riga di quattromila caratteri che nessuno
+   rileggerebbe mai, e in cui un refuso resterebbe invisibile: si
+   genera. */
+const ANNI_TRATTA = Array.from({length:1866-1501+1}, (_,i)=>1501+i);
+
 const SERIE=[
 {
  k:'popolazione', n:'Popolazione',
@@ -225,13 +232,46 @@ const SERIE=[
  ]},
 {
  k:'tratta', n:'Tratta atlantica',
- titolo:'Africani imbarcati per le Americhe, 1501-1866',
- occhio:'Il massimo non è nel Cinquecento né al tempo della conquista: è negli anni Ottanta del Settecento, cioè esattamente quando a Parigi si scrive che gli uomini nascono liberi e uguali. Le due cose accadono nello stesso decennio, ed è per questo che la Dichiarazione va letta chiedendosi chi contasse come uomo.',
- unita:'migliaia di persone imbarcate in ogni venticinquennio',
- fonte:'Slave Voyages, The Trans-Atlantic Slave Trade Database (Emory University): circa 12,5 milioni di persone imbarcate e 10,7 milioni sbarcate vive fra il 1501 e il 1866.',
- anni:[1525,1550,1575,1600,1625,1650,1675,1700,1725,1750,1775,1800,1825,1850,1866],
+ titolo:'La tratta atlantica anno per anno, 1501-1866',
+ occhio:'Il massimo non è nel Cinquecento né al tempo della conquista: la curva sale per tre secoli e tocca il suo punto più alto nel 1829, con centodiciassettemila persone imbarcate in un anno solo. Vuol dire che il commercio di esseri umani è più intenso dopo la Dichiarazione dei diritti che prima. Le due linee vanno guardate insieme: la distanza fra imbarcati e sbarcati è la mortalità della traversata, quasi un milione e ottocentomila persone che non arrivano.',
+ unita:'persone imbarcate e sbarcate in un anno',
+ fonte:'Slave Voyages, Trans-Atlantic Slave Trade Database (Emory University), stime annuali della sezione Estimates. Totale 1501-1866: 12.521.336 imbarcati e 10.702.656 sbarcati vivi, cioè il 14,5 per cento di mortalità durante la traversata. Sono stime, non un censimento: gli storici ricavano il totale dai viaggi documentati correggendo per quelli di cui non resta traccia.',
+ anni:ANNI_TRATTA,
  dati:[
-  {n:'Imbarcati', v:[33,73,120,268,352,504,719,1088,1471,1925,2009,1569,1595,545,52]}
+  {n:'Imbarcati in Africa', v:[
+   190,190,190,190,190,190,190,190,190,190,190,190,190,427,190,1971,1571,1571,1571,1571,404,404,404,404,
+   404,1794,1794,1794,1794,1794,1723,1723,1723,1723,1723,1158,1158,1158,1158,1158,3592,3592,3592,3592,3592,1886,1886,1886,
+   1886,1886,275,275,275,275,275,949,855,855,855,855,4791,4799,5108,4817,5226,2995,3429,3486,3030,3044,2928,2877,
+   2894,2911,2930,2898,2919,2942,2966,3191,5051,5100,5390,5209,5270,6022,6092,6169,6250,6338,3437,3539,3650,3769,10388,10792,
+   11677,11115,11006,11193,6625,6842,7074,7661,7598,10949,10858,11063,11430,11827,8021,8938,8983,9522,10721,18945,19624,21206,21150,21825,
+   22397,22397,22397,22397,22397,15117,15401,15258,15117,10616,11730,11730,12459,11730,11730,11771,11948,12372,12569,12159,11511,9739,11783,17579,
+   16507,16388,12277,6992,10396,10170,10982,11596,10622,13747,13224,19694,17438,23726,18929,15728,19845,17548,16945,26451,22164,22620,21599,30355,
+   29304,22706,23581,18452,18237,19246,23323,23210,20896,24274,25454,25717,34223,27925,32149,22751,28499,23051,28959,26078,20220,16710,25752,28448,
+   25983,23880,24293,30008,37104,47541,42970,53578,55754,45713,34476,37195,38452,31546,39852,39927,32118,39207,36283,34247,41913,49716,48818,46922,
+   47813,52274,48442,46980,41163,43101,40366,60448,56181,61915,58748,58016,66483,61972,62068,60334,52635,54960,52597,58283,67359,57117,69094,63557,
+   62485,62856,56703,69909,35610,35213,54007,54909,66912,67985,62073,72410,70524,74559,81930,64980,51364,55410,50991,58717,68258,60222,59890,86407,
+   92245,98293,89940,84531,84261,94913,87686,95578,88732,98492,92908,87146,66847,60825,37758,39694,48480,52401,62262,104364,95152,95528,101305,104040,
+   92413,112049,107578,115518,99562,67471,69237,68234,75153,71267,88084,86301,79220,98941,97721,88675,89348,102163,112576,42845,39936,72130,57954,60473,
+   50698,53934,59668,76843,88751,87433,76484,73606,74809,87807,50796,66021,88162,97197,92710,92718,117644,87883,25352,29327,34221,46532,81252,102312,
+   103363,100450,98397,65078,51317,37937,55047,48786,33831,67709,84238,86290,85057,46329,16801,10542,17802,14819,6396,8680,15225,19636,34785,26731,
+   24395,14227,7774,4653,2265,877]},
+  {n:'Sbarcati vivi in America', v:[
+   134,134,134,134,134,134,134,134,134,134,134,134,134,302,134,1384,1100,1100,1100,1100,283,283,283,283,
+   283,1256,1256,1256,1256,1256,1206,1206,1206,1206,1206,811,811,811,811,811,2514,2514,2514,2514,2514,1320,1320,1320,
+   1320,1320,192,192,192,192,192,665,598,598,598,598,3370,3377,3597,3392,3684,2120,2430,2464,2150,2162,2086,2048,
+   2062,2077,2093,2073,2091,2110,2130,2322,3630,3672,3884,3764,3815,4348,4408,4473,4542,4616,2600,2687,2780,2880,7532,7836,
+   8635,8150,8054,8212,5043,5226,5424,5924,5866,8343,8237,8428,8740,9075,6474,7237,7287,7743,8768,14514,15089,16445,16380,17097,
+   17498,17498,17498,17498,17498,12402,12647,12502,12402,8495,9137,9137,9768,9137,9137,9185,9609,9888,9970,9669,9011,7886,9628,14697,
+   12880,13135,9756,5667,8638,8495,8701,9466,8718,11072,11195,15665,13787,19726,15468,13245,16039,14864,14070,21450,18026,18643,18052,24809,
+   24031,18924,19230,15168,14799,16089,19044,19232,17593,19612,20708,21265,27439,22597,25534,18780,23419,18640,23788,21684,16973,14183,21734,23408,
+   21406,19353,20112,25836,31853,40387,35012,44141,47276,38770,29497,31559,30781,27564,34710,33876,27408,33308,31168,29540,35564,41595,41059,39165,
+   40235,43990,41022,39701,35305,36653,34822,51922,48080,52902,49758,49209,55035,52532,52309,49598,44602,46836,44380,48873,56787,47896,57669,53952,
+   53030,53156,49550,59964,31249,30485,45747,46181,56498,56126,52858,61683,61006,62797,70396,56582,43615,48314,44094,50150,56553,50906,51626,74266,
+   79472,82346,75878,73062,72703,80013,75226,81886,75184,84733,79005,77745,60249,54931,34165,36717,44125,47301,55933,94382,84179,83201,88239,91267,
+   81055,98140,94875,101946,89624,61545,64343,61835,67946,65553,79802,77528,71371,88814,86953,77893,79071,89344,97035,37554,35330,64105,52202,54055,
+   45862,49136,53391,69653,80059,78508,68046,63787,65021,77190,45465,59198,78127,88478,82585,83565,105930,78663,22772,25776,29404,39603,68518,85105,
+   85569,82337,81365,57151,44791,33335,45306,41190,28191,55663,69276,70812,70014,38995,14060,9082,15455,12706,5343,7328,12559,16005,28369,22216,
+   20804,11904,6955,3895,1855,722]}
  ]},
 {
  k:'libri', n:'Libri stampati',
@@ -389,8 +429,14 @@ function disegna(){
     d+=`<text class="gr-testo" x="${M.s-8}" y="${(y+4).toFixed(1)}" text-anchor="end">${fmt(Math.round(v))}</text>`;
   });
   d+=`<line class="gr-base" x1="${M.s}" y1="${H-M.b}" x2="${L-M.d}" y2="${H-M.b}"/>`;
+  /* Le etichette degli anni si diradano in proporzione: prima il passo
+     era fisso a 3, che va bene per una serie di quindici punti e diventa
+     illeggibile per una di trecentosessantasei — centoventidue date una
+     sull'altra. Ora il passo è calcolato per lasciarne una decina, qualunque
+     sia la lunghezza della serie. */
+  const passoAnni=Math.max(1, Math.ceil(s.anni.length/10));
   s.anni.forEach((a,i)=>{
-    if(s.anni.length>12 && i%3!==0 && i!==s.anni.length-1) return;
+    if(s.anni.length>12 && i%passoAnni!==0 && i!==s.anni.length-1) return;
     d+=`<text class="gr-testo" x="${sc.xs(i)}" y="${H-M.b+18}" text-anchor="middle">${a}</text>`;
   });
   /* dentro il riquadro e ancorata a sinistra: prima usciva dal bordo */
@@ -514,11 +560,19 @@ function avviaFerma(){
   if(orologio){ ferma(); return; }
   if(avanzamento>=S().anni.length-1) avanzamento=0;
   document.getElementById('bAvvia').textContent='❚❚ Ferma';
+  /* L'animazione dura sempre più o meno lo stesso tempo, invece di
+     420 ms per punto: con quindici punti erano sei secondi, con i
+     trecentosessantasei della tratta sarebbero stati due minuti e
+     mezzo, e nessuno guarda un grafico per due minuti e mezzo.
+     Il passo non scende sotto i 40 ms, altrimenti il disegno non
+     sta dietro. */
+  const punti=S().anni.length;
+  const passo=Math.max(40, Math.min(420, Math.round(11000/punti)));
   orologio=setInterval(()=>{
     avanzamento++;
-    if(avanzamento>=S().anni.length-1){ avanzamento=S().anni.length-1; disegna(); ferma(); return; }
+    if(avanzamento>=punti-1){ avanzamento=punti-1; disegna(); ferma(); return; }
     disegna();
-  }, 420);
+  }, passo);
   disegna();
 }
 function ferma(){
