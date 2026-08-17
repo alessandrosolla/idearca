@@ -6530,6 +6530,12 @@ const BANCA2 = [
               'La Germania deve restare una confederazione di Stati',
               'L\'Austria deve guidare il processo di unificazione'], giusta:0},
 
+    {tipo:'scelta', testo:'Quale conseguenza ha per la Russia la sconfitta in Crimea?',
+     opzioni:['Una grave umiliazione, che apre la strada alle riforme interne',
+              'La perdita di tutti i territori sul Mar Nero',
+              'L\'ingresso immediato nell\'alleanza francese',
+              'La fine della dinastia dei Romanov'], giusta:0},
+
     {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa evitò all\'Inghilterra il 1848.'}
   ]
 },
@@ -6587,6 +6593,231 @@ const BANCA2 = [
               'Amministra direttamente le colonie tramite governatori'], giusta:0},
 
     {tipo:'nuvola', testo:'Alla fine: una parola per dire come si chiama un dominio che non si dichiara.'}
+  ]
+}
+,
+{
+  titolo: 'Storia medievale · 10 — La frontiera mediterranea e gli Ottomani',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: conviene a un impero lasciare che i sudditi tengano la propria religione?'},
+
+    {tipo:'scelta', testo:'In che condizioni arriva l\'Impero bizantino alla metà del Quattrocento?',
+     opzioni:['Ridotto a poco più della città di Costantinopoli e del suo circondario',
+              'Ancora padrone di tutta l\'Anatolia e dei Balcani',
+              'In espansione verso il Mar Nero',
+              'Alleato stabile delle potenze occidentali'], giusta:0},
+
+    {tipo:'scelta', testo:'Su che cosa punta Maometto II per espugnare la città?',
+     opzioni:['Su un\'artiglieria pesante capace di aprire brecce nelle mura',
+              'Sull\'assedio per fame, protratto per anni',
+              'Su un accordo segreto con i mercanti genovesi',
+              'Sull\'alleanza militare con la Serbia'], giusta:0},
+
+    {tipo:'scelta', testo:'Come si chiama la città dopo il 1453?',
+     opzioni:['Istanbul, capitale dell\'Impero ottomano',
+              'Bisanzio, come nell\'antichità',
+              'Nuova Roma, per volontà del sultano',
+              'Adrianopoli, la vecchia capitale'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è il devsirme?',
+     opzioni:['Il prelievo di ragazzi cristiani, educati come funzionari o giannizzeri',
+              'La tassa pagata dai sudditi non musulmani',
+              'Il registro delle terre assegnate ai cavalieri',
+              'Il tribunale religioso che applica la legge islamica'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa concede il sistema dei millet?',
+     opzioni:['Autonomia religiosa e giuridica alle comunità non musulmane',
+              'La parità completa fra tutte le religioni',
+              'L\'esenzione dalle tasse per i cristiani',
+              'Il diritto di voto alle minoranze'], giusta:0},
+
+    {tipo:'scelta', testo:'Fin dove arriva Solimano nel 1529, prima di fermarsi?',
+     opzioni:['Sotto le mura di Vienna',
+              'Davanti a Belgrado',
+              'A Lepanto',
+              'Sul Danubio, presso Budapest'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa succede agli ebrei di Spagna nello stesso 1492?',
+     opzioni:['L\'espulsione degli ebrei che rifiutano la conversione',
+              'La fondazione dell\'Inquisizione spagnola',
+              'La conquista delle Canarie',
+              'L\'unione delle corone di Castiglia e Aragona'], giusta:0},
+
+    {tipo:'scelta', testo:'Che convenienza pratica ha, per gli Ottomani, la tolleranza verso le minoranze?',
+     opzioni:['Amministrare un impero enorme senza doverne assimilare i popoli',
+              'Ottenere il riconoscimento delle potenze cristiane',
+              'Ridurre le entrate fiscali dello Stato',
+              'Evitare di dover mantenere un esercito permanente'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa tiene insieme un impero di popoli diversi.'}
+  ]
+},
+{
+  titolo: 'Storia moderna · 11 — La Rivoluzione francese',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: a un certo punto una rivoluzione dovrebbe fermarsi. Chi decide quando?'},
+
+    {tipo:'scelta', testo:'Perché il re convoca gli Stati generali nel 1789?',
+     opzioni:['Le casse dello Stato sono vuote e serve il consenso per nuove imposte',
+              'Vuole concedere spontaneamente una Costituzione',
+              'Deve dichiarare guerra all\'Austria',
+              'Intende abolire i privilegi della nobiltà'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa cambia con il voto per testa invece che per ordine?',
+     opzioni:['Il Terzo stato, più numeroso, può imporre la propria volontà',
+              'Ogni ordine conta come un voto solo',
+              'Il clero acquista un peso decisivo',
+              'Il re mantiene il diritto di veto'], giusta:0},
+
+    {tipo:'scelta', testo:'Che giuramento pronunciano i deputati nella sala della Pallacorda?',
+     opzioni:['A non sciogliersi finché non avranno dato una Costituzione alla Francia',
+              'A destituire immediatamente il re',
+              'A votare le nuove imposte richieste dalla Corona',
+              'A convocare un nuovo Stato generale l\'anno successivo'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa proclama la Dichiarazione dei diritti dell\'uomo e del cittadino?',
+     opzioni:['Gli uomini nascono liberi e uguali nei diritti',
+              'La proprietà privata va abolita',
+              'Il re resta la fonte di ogni legge',
+              'La religione cattolica è religione di Stato'], giusta:0},
+
+    {tipo:'scelta', testo:'Che effetto ha la fuga di Varennes del 1791?',
+     opzioni:['Il re appare un nemico della rivoluzione, non il garante',
+              'Il re riconquista il consenso popolare',
+              'La monarchia viene subito abolita',
+              'L\'Austria dichiara immediatamente guerra'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa consente la legge dei sospetti del 1793?',
+     opzioni:['Arrestare chiunque sia ritenuto nemico, anche senza prove',
+              'Processare solo chi è colto in flagrante',
+              'Sospendere le imposte per i cittadini poveri',
+              'Espellere gli stranieri dal territorio francese'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa spinge i deputati a rovesciare Robespierre?',
+     opzioni:['Temono di finire loro stessi sotto la ghigliottina',
+              'Vogliono restaurare la monarchia',
+              'Intendono estendere il Terrore alle campagne',
+              'Cercano un accordo con le potenze straniere'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa succede al suffragio con la Costituzione del 1795?',
+     opzioni:['Torna censitario: si vota in base al patrimonio',
+              'Diventa universale maschile e femminile',
+              'Viene abolito ogni tipo di elezione',
+              'Resta universale maschile come nel 1793'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire dove finisce la rivoluzione e comincia il terrore.'}
+  ]
+},
+{
+  titolo: 'Storia contemporanea · 25 — La fine della guerra fredda',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: se apri le finestre di una casa che sta in piedi per abitudine, che succede?'},
+
+    {tipo:'scelta', testo:'Che cosa pesa sull\'economia sovietica negli anni Ottanta?',
+     opzioni:['La spesa militare enorme e un\'industria civile arretrata',
+              'L\'eccesso di beni di consumo invenduti',
+              'L\'apertura improvvisa ai mercati occidentali',
+              'La mancanza di materie prime nel sottosuolo'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa significa perestrojka?',
+     opzioni:['Ristrutturazione: riformare l\'economia senza abbandonare il socialismo',
+              'Trasparenza: aprire l\'informazione e il dibattito pubblico',
+              'Disarmo: ridurre gli arsenali nucleari',
+              'Coesistenza: convivere pacificamente con l\'Occidente'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa significa invece glasnost?',
+     opzioni:['Trasparenza: libertà di informazione e critica pubblica',
+              'Ristrutturazione dell\'apparato produttivo',
+              'Autonomia delle repubbliche federate',
+              'Ritiro delle truppe dall\'Afghanistan'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché la glasnost sfugge di mano a Gorbačëv?',
+     opzioni:['La libertà di critica travolge la legittimità stessa del sistema',
+              'I giornali continuano a essere censurati',
+              'Le repubbliche rifiutano di applicarla',
+              'L\'Occidente ne approfitta per invadere l\'Est'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa promette Mosca ai regimi satelliti, nel 1989?',
+     opzioni:['Mosca non interverrà più per tenere in piedi i regimi satelliti',
+              'L\'URSS occupa militarmente i paesi dell\'Est',
+              'Il Patto di Varsavia viene rafforzato',
+              'Le repubbliche sovietiche perdono ogni autonomia'], giusta:0},
+
+    {tipo:'scelta', testo:'Come cade materialmente il muro di Berlino, il 9 novembre 1989?',
+     opzioni:['Un annuncio confuso spinge la folla ai varchi, che cedono',
+              'Con una demolizione ordinata dal governo della RDT',
+              'Dopo uno scontro armato fra polizia e manifestanti',
+              'In seguito a un accordo firmato fra le due Germanie'], giusta:0},
+
+    {tipo:'scelta', testo:'Come finisce la protesta di piazza Tienanmen?',
+     opzioni:['In Cina la protesta viene schiacciata e il partito resta al potere',
+              'In Cina il regime cade come in Europa orientale',
+              'In Cina la protesta ottiene libere elezioni',
+              'In Cina non ci furono manifestazioni di piazza'], giusta:0},
+
+    {tipo:'scelta', testo:'Come finisce l\'Unione Sovietica nel dicembre 1991?',
+     opzioni:['Si dissolve per accordo fra le repubbliche, e Gorbačëv si dimette',
+              'Viene sciolta da un intervento militare occidentale',
+              'Si trasforma in una monarchia costituzionale',
+              'Viene divisa in due Stati dal Consiglio di sicurezza'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa fa cadere un impero senza una guerra.'}
+  ]
+},
+{
+  titolo: 'Storia contemporanea · 28 — L\'Italia della Seconda Repubblica',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: che cosa serve a un governo per durare cinque anni?'},
+
+    {tipo:'scelta', testo:'Che cosa dovrebbe garantire il bipolarismo nato dopo il 1994?',
+     opzioni:['Coalizioni contrapposte, alternanza chiara e governi più stabili',
+              'La rappresentanza proporzionale di ogni partito',
+              'Il ritorno di un partito unico di maggioranza',
+              'L\'elezione diretta del capo dello Stato'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché quel bipolarismo funziona solo in parte?',
+     opzioni:['Le coalizioni sono formate da partiti troppo diversi fra loro',
+              'Gli elettori non partecipano più al voto',
+              'La legge elettorale non è mai stata approvata',
+              'Il Presidente della Repubblica ne impedisce l\'applicazione'], giusta:0},
+
+    {tipo:'scelta', testo:'Quale questione resta aperta per tutta l\'epoca berlusconiana?',
+     opzioni:['Il conflitto d\'interessi fra proprietà dei media e ruolo di governo',
+              'La mancanza di un programma economico',
+              'L\'assenza di sostegno nelle regioni del Nord',
+              'Il rifiuto di partecipare alle elezioni europee'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa misura lo spread?',
+     opzioni:['La differenza di rendimento fra titoli italiani e tedeschi',
+              'Il debito pubblico complessivo di un paese',
+              'L\'inflazione registrata in un anno',
+              'La distanza fra entrate e uscite del bilancio'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa segnala uno spread oltre i 550 punti, nel 2011?',
+     opzioni:['I mercati non si fidano più del debito italiano',
+              'L\'Italia sta crescendo più della Germania',
+              'Il debito pubblico è stato azzerato',
+              'La moneta unica è stata abbandonata'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché il governo Monti è impopolare nonostante i risultati sui conti?',
+     opzioni:['Le misure pesano su pensioni e tasse, e nessuno lo ha eletto',
+              'Non riesce a ridurre lo spread',
+              'Perde la fiducia del parlamento dopo pochi mesi',
+              'Rifiuta di applicare le regole europee'], giusta:0},
+
+    {tipo:'scelta', testo:'Su quale sentimento cresce il Movimento 5 Stelle?',
+     opzioni:['Dalla sfiducia verso i partiti tradizionali dopo la crisi economica',
+              'Da una scissione del Partito Democratico',
+              'Da un\'alleanza fra sindacati e associazioni cattoliche',
+              'Da un movimento regionalista del Nord'], giusta:0},
+
+    {tipo:'scelta', testo:'Come si trasforma la Lega sotto la guida di Salvini?',
+     opzioni:['Da partito regionalista del Nord a forza nazionale e sovranista',
+              'Da partito nazionale a movimento locale lombardo',
+              'Da forza di governo a partito extraparlamentare',
+              'Da movimento ambientalista a partito conservatore'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire di che cosa ha bisogno l\'Italia per crescere.'}
   ]
 }
 ];
