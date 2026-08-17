@@ -6084,4 +6084,509 @@ const BANCA2 = [
     {tipo:'nuvola', testo:'Alla fine: una parola per dire dove si sta spostando il baricentro globale.'}
   ]
 }
+,
+{
+  titolo: 'Storia medievale · 11 — Il Nuovo Mondo',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: come fanno poche centinaia di uomini a rovesciare un impero di milioni?'},
+
+    {tipo:'scelta', testo:'Chi è il promotore delle prime navigazioni portoghesi?',
+     opzioni:['Enrico il Navigatore',
+              'Cristoforo Colombo',
+              'Vasco da Gama',
+              'Amerigo Vespucci'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è l\'obiettivo dei portoghesi?',
+     opzioni:['Circumnavigare l\'Africa per raggiungere le Indie',
+              'Raggiungere l\'Asia navigando verso ovest',
+              'Colonizzare le coste del Brasile',
+              'Conquistare i porti del Mediterraneo orientale'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa crede Colombo di aver raggiunto?',
+     opzioni:['L\'Asia: sarà Vespucci a capire che si tratta di un nuovo continente',
+              'Un continente sconosciuto, fin dal primo viaggio',
+              'La punta meridionale dell\'Africa',
+              'Le isole già note ai navigatori vichinghi'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa fa il Trattato di Tordesillas del 1494?',
+     opzioni:['Divide il globo fra Spagna e Portogallo con una linea a ovest di Capo Verde',
+              'Vieta la tratta degli schiavi nelle Americhe',
+              'Assegna all\'Inghilterra le rotte dell\'Atlantico settentrionale',
+              'Riconosce l\'indipendenza dei popoli americani'], giusta:0},
+
+    {tipo:'scelta', testo:'Quale ruolo ha papa Alessandro VI in quella spartizione?',
+     opzioni:['Media fra le due potenze, dando un mandato ideologico ai conquistatori',
+              'Si oppone alla divisione e la dichiara nulla',
+              'Assegna tutte le nuove terre alla sola Spagna',
+              'Rifiuta di intervenire in una questione politica'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è il modello coloniale spagnolo?',
+     opzioni:['Colonialismo territoriale: conquista militare e dominio dell\'entroterra',
+              'Colonialismo commerciale: empori e scali fortificati sulle coste',
+              'Colonialismo di popolamento: migrazioni di famiglie contadine',
+              'Colonialismo indiretto: alleanze con i capi locali'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è invece quello portoghese?',
+     opzioni:['Empori e scali fortificati lungo le coste, per controllare le rotte',
+              'Conquista militare dell\'entroterra e miniere d\'argento',
+              'Divisione delle terre fra i coloni con l\'encomienda',
+              'Sfruttamento agricolo dei territori interni'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché il Brasile è un\'eccezione al modello portoghese?',
+     opzioni:['Mancando grandi imperi da razziare, si avvia una colonizzazione di piantagione',
+              'Perché fu conquistato dagli spagnoli e non dai portoghesi',
+              'Perché non fu mai colonizzato in modo stabile',
+              'Perché vi si trovarono le maggiori miniere d\'oro'], giusta:0},
+
+    {tipo:'scelta', testo:'Con quanti uomini Cortés abbatte l\'Impero azteco?',
+     opzioni:['Con qualche centinaio di uomini, in due anni',
+              'Con un esercito di decine di migliaia di soldati',
+              'Senza combattere, per via diplomatica',
+              'Con l\'aiuto militare diretto della Corona spagnola'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire come chiamare quello che accadde nel 1492.'}
+  ]
+},
+{
+  titolo: 'Storia moderna · 3 — Economia, guerre e il declino spagnolo',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: se in un paese arriva molto oro, che cosa succede ai prezzi?'},
+
+    {tipo:'scelta', testo:'Quanti abitanti conta l\'Europa a fine Cinquecento?',
+     opzioni:['Fra 80 e 90 milioni',
+              'Fra 40 e 50 milioni',
+              'Fra 150 e 160 milioni',
+              'Fra 20 e 30 milioni'], giusta:0},
+
+    {tipo:'scelta', testo:'Quale causa viene indicata per quella crescita demografica?',
+     opzioni:['L\'abbassamento dell\'età matrimoniale',
+              'La fine delle epidemie di peste',
+              'Il miglioramento delle cure mediche',
+              'L\'immigrazione dalle Americhe'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è il principio guida della nuova mentalità manifatturiera?',
+     opzioni:['La ricerca del profitto e il reinvestimento continuo',
+              'La produzione limitata per mantenere alti i prezzi',
+              'L\'accumulo di oro nelle casse dello Stato',
+              'La distribuzione dei guadagni fra i lavoranti'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa alimenta l\'industria delle armi nel Cinquecento?',
+     opzioni:['Le continue guerre europee',
+              'La domanda proveniente dalle colonie',
+              'Il commercio con l\'Impero ottomano',
+              'La caccia praticata dalla nobiltà'], giusta:0},
+
+    {tipo:'scelta', testo:'Chi sono i Fugger?',
+     opzioni:['Banchieri tedeschi, finanziatori diretti dei sovrani europei',
+              'Mercanti genovesi che controllavano il Banco di San Giorgio',
+              'Armatori olandesi delle Province Unite',
+              'Banchieri fiorentini legati ai Medici'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa fanno i genovesi dopo il declino di Anversa?',
+     opzioni:['Diventano banchieri della Spagna: l\'asse torna nel Mediterraneo',
+              'Abbandonano l\'attività bancaria per il commercio',
+              'Si alleano con i Fugger contro la Corona spagnola',
+              'Trasferiscono i capitali nelle Province Unite'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa sostengono Koenigsberger, Mosse e Bowler sulla «globalizzazione» cinquecentesca?',
+     opzioni:['Riguarda una ristretta élite: gli altri vivono di sussistenza',
+              'Coinvolse rapidamente tutta la popolazione europea',
+              'Non ci furono affatto commerci intercontinentali',
+              'Fu un fenomeno limitato alla sola Spagna'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa succede alla Repubblica delle Sette Province Unite nel 1581?',
+     opzioni:['Rifiuta l\'obbedienza a Filippo II e proclama l\'indipendenza',
+              'Viene riconquistata definitivamente dagli spagnoli',
+              'Si unisce all\'Inghilterra di Elisabetta I',
+              'Viene divisa fra Francia e Impero'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire chi si è arricchito davvero in quel secolo.'}
+  ]
+},
+{
+  titolo: 'Storia moderna · 4 — La crisi del Seicento e la rivoluzione scientifica',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: che differenza c\'è fra protestare e cambiare le regole?'},
+
+    {tipo:'scelta', testo:'Che cosa distingue una rivolta da una rivoluzione?',
+     opzioni:['La rivolta ha obiettivi immediati, la rivoluzione sovverte le istituzioni',
+              'La rivolta è violenta, la rivoluzione è pacifica',
+              'La rivolta riguarda le città, la rivoluzione le campagne',
+              'La rivolta dura poco, la rivoluzione dura a lungo'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è il paradosso della rivolta?',
+     opzioni:['Può rinsaldare il potere dominante, se le richieste vengono esaudite',
+              'Riesce sempre a rovesciare chi governa',
+              'Non produce mai nessun effetto concreto',
+              'Si trasforma automaticamente in rivoluzione'], giusta:0},
+
+    {tipo:'scelta', testo:'Di quali abusi il Bill of Rights accusa Giacomo II?',
+     opzioni:['Sospendere le leggi, tassare da solo, eserciti in tempo di pace',
+              'Aver mosso guerra alla Francia senza consultare i lord',
+              'Aver imposto la religione cattolica per legge',
+              'Aver venduto le colonie americane agli olandesi'], giusta:0},
+
+    {tipo:'scelta', testo:'Come cambia la posizione del re col Bill of Rights del 1689?',
+     opzioni:['Perde gli attributi divini e governa entro condizioni di legge',
+              'Aumenta il suo potere sul parlamento',
+              'Diventa un sovrano puramente simbolico',
+              'Viene eletto dai membri del parlamento'], giusta:0},
+
+    {tipo:'scelta', testo:'Chi esercita il potere primario nella nuova monarchia costituzionale?',
+     opzioni:['Il parlamento, con libere elezioni e convocazioni frequenti',
+              'Il re, con l\'assenso formale dei lord',
+              'La Chiesa anglicana, tramite i vescovi',
+              'I giudici delle corti supreme'], giusta:0},
+
+    {tipo:'scelta', testo:'Quali sono i quattro pilastri dell\'assolutismo di Luigi XIV?',
+     opzioni:['Accentramento, controllo del dissenso, colbertismo, politica estera aggressiva',
+              'Tolleranza religiosa, libero mercato, decentramento, neutralità',
+              'Elezione dei ministri, parlamento, tribunali indipendenti, pace',
+              'Federalismo, autonomia delle province, milizie locali, commercio'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa distingue i due modelli su sovranità e legge?',
+     opzioni:['In Inghilterra la legge è superiore al sovrano, in Francia il sovrano è la legge',
+              'In Inghilterra il sovrano è la legge, in Francia il parlamento',
+              'In entrambi il sovrano è sottomesso alla legge',
+              'In entrambi la legge deriva dalla Chiesa'], giusta:0},
+
+    {tipo:'scelta', testo:'Come gestiscono il dissenso i due sistemi?',
+     opzioni:['L\'Inghilterra col compromesso e la tolleranza, la Francia con la repressione',
+              'L\'Inghilterra con la repressione, la Francia col compromesso',
+              'Entrambi con la tolleranza religiosa piena',
+              'Entrambi con la soppressione delle minoranze'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa cambia se la legge sta sopra il re.'}
+  ]
+},
+{
+  titolo: 'Storia moderna · 7 — L\'Europa nel primo Settecento',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: si può comprare e vendere un monopolio sugli esseri umani?'},
+
+    {tipo:'scelta', testo:'Quali sono le quattro coordinate del primo Settecento?',
+     opzioni:['Motore umano, economia, società, scacchiera globale',
+              'Guerra, peste, carestia, rivoluzione',
+              'Agricoltura, industria, commercio, finanza',
+              'Monarchia, nobiltà, clero, borghesia'], giusta:0},
+
+    {tipo:'scelta', testo:'Come è fatta la società di Antico Regime?',
+     opzioni:['Rigida: privilegiati contro diseredati',
+              'Mobile: si può salire di ceto col merito',
+              'Divisa in due sole classi, ricchi e poveri',
+              'Organizzata per corporazioni professionali paritarie'], giusta:0},
+
+    {tipo:'scelta', testo:'Quali sono le tre «ruote» dell\'economia settecentesca?',
+     opzioni:['L\'agricoltura, le manifatture e i commerci',
+              'La terra, la moneta e il credito',
+              'Il lavoro, il capitale e lo Stato',
+              'Le miniere, i trasporti e le banche'], giusta:0},
+
+    {tipo:'scelta', testo:'Quale documento discute le recinzioni inglesi?',
+     opzioni:['Un giudizio sulle recinzioni di Henry H. Sacheverell',
+              'La Ricchezza delle Nazioni di Adam Smith',
+              'Il Leviatano di Thomas Hobbes',
+              'Lo Spirito delle leggi di Montesquieu'], giusta:0},
+
+    {tipo:'scelta', testo:'Quali sono gli effetti delle enclosures?',
+     opzioni:['Fine dei campi aperti, agricoltura capitalistica, esodo verso le città',
+              'Aumento della piccola proprietà contadina',
+              'Ritorno alla coltivazione comunitaria dei campi',
+              'Riduzione della produzione agricola complessiva'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è l\'Asiento de negros, e in che anno arriva all\'Inghilterra?',
+     opzioni:['Il monopolio del commercio di schiavi verso le colonie spagnole, nel 1713',
+              'Il divieto della tratta atlantica, firmato nel 1713',
+              'Il trattato che assegna Gibilterra alla Spagna, nel 1700',
+              'L\'accordo commerciale fra Francia e Olanda, nel 1720'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa rivela la tratta atlantica raccontata da un ex schiavo?',
+     opzioni:['La brutale de-umanizzazione su cui si regge il capitalismo settecentesco',
+              'La sostanziale mitezza dei trasporti transatlantici',
+              'Il ruolo marginale della schiavitù nell\'economia',
+              'Il rapido superamento della tratta grazie alle leggi'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa cambia in Italia con la Guerra di successione spagnola?',
+     opzioni:['Nasce il Regno Sabaudo: la Savoia acquista un peso geopolitico nuovo',
+              'L\'Italia si unifica sotto il dominio austriaco',
+              'La Spagna riconquista tutta la penisola',
+              'Lo Stato della Chiesa estende i suoi confini al Nord'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire su che cosa si è costruita la ricchezza del Settecento.'}
+  ]
+},
+{
+  titolo: 'Storia moderna · 10 — La Rivoluzione americana',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: come si costruisce uno Stato che non diventi una tirannia?'},
+
+    {tipo:'scelta', testo:'Su che cosa si regge il commercio triangolare?',
+     opzioni:['Navi cariche di schiavi verso le piantagioni e materie prime verso l\'Europa',
+              'Lo scambio di manufatti fra le sole colonie americane',
+              'Il commercio di spezie fra Asia ed Europa',
+              'L\'esportazione di grano dall\'Europa verso l\'Africa'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché Benjamin Franklin incarna lo spirito dei Lumi?',
+     opzioni:['È insieme scienziato, inventore, editore e pensatore brillante',
+              'È il comandante militare della guerra d\'indipendenza',
+              'È il primo presidente degli Stati Uniti',
+              'È l\'autore unico della Costituzione federale'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è il ruolo diplomatico di Franklin?',
+     opzioni:['Ottiene il sostegno militare e finanziario europeo contro la Gran Bretagna',
+              'Negozia la pace con i popoli nativi',
+              'Rappresenta le colonie nel parlamento di Londra',
+              'Media fra i tredici Stati per la capitale federale'], giusta:0},
+
+    {tipo:'scelta', testo:'Quale teoria illuminista applica la Costituzione americana?',
+     opzioni:['La separazione dei poteri auspicata da Montesquieu',
+              'Il contratto sociale di Rousseau',
+              'La volontà generale come fonte unica della legge',
+              'Il dispotismo illuminato di Federico II'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è il sistema di pesi e contrappesi?',
+     opzioni:['Le tre istituzioni distinte si controllano a vicenda',
+              'Il bilanciamento fra gli Stati grandi e quelli piccoli',
+              'La divisione delle tasse fra federazione e Stati',
+              'L\'equilibrio fra proprietari e lavoratori'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa disegna la Costituzione del 1787?',
+     opzioni:['La struttura, i limiti e le regole del gioco democratico federale',
+              'L\'elenco dei diritti individuali dei cittadini',
+              'La divisione dei territori dell\'Ovest fra gli Stati',
+              'Il sistema fiscale delle tredici colonie'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa aggiunge il Bill of Rights del 1791?',
+     opzioni:['I primi dieci emendamenti, a tutela delle libertà individuali',
+              'L\'abolizione della schiavitù in tutti gli Stati',
+              'Il diritto di voto esteso a tutti i cittadini adulti',
+              'La creazione della Corte Suprema federale'], giusta:0},
+
+    {tipo:'scelta', testo:'Contro che cosa proteggono quei dieci emendamenti?',
+     opzioni:['Contro ogni possibile intromissione dello Stato centrale',
+              'Contro le pretese della Gran Bretagna',
+              'Contro il potere dei governatori dei singoli Stati',
+              'Contro il monopolio delle compagnie commerciali'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire su che cosa poggiava la libertà americana.'}
+  ]
+},
+{
+  titolo: 'Storia moderna · 14 — L\'età dei popoli e delle nazioni',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: se ti vietano di fare politica alla luce del sole, che cosa fai?'},
+
+    {tipo:'scelta', testo:'Qual è la base sociale del liberalismo?',
+     opzioni:['L\'alta borghesia',
+              'La piccola borghesia professionale e le classi popolari',
+              'L\'aristocrazia terriera',
+              'I contadini delle grandi proprietà'], giusta:0},
+
+    {tipo:'scelta', testo:'Qual è invece quella del pensiero democratico?',
+     opzioni:['La piccola borghesia professionale e le classi popolari',
+              'L\'alta borghesia finanziaria',
+              'Il clero e la nobiltà di corte',
+              'Gli ufficiali dell\'esercito regolare'], giusta:0},
+
+    {tipo:'scelta', testo:'Quale idea di rappresentanza sostiene il liberalismo?',
+     opzioni:['Elitaria: suffragio censitario, legato al patrimonio',
+              'Universale: suffragio maschile senza limiti di censo',
+              'Corporativa: rappresentanza per mestieri',
+              'Ereditaria: seggi trasmessi in famiglia'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché nascono le società segrete nell\'Europa della Restaurazione?',
+     opzioni:['I governi reazionari impedivano partiti e opposizione palese',
+              'Perché i liberali preferivano agire nell\'ombra per scelta',
+              'Perché la Chiesa ne aveva imposto la creazione',
+              'Perché le classi popolari volevano restare anonime'], giusta:0},
+
+    {tipo:'scelta', testo:'Chi ne fa parte, e chi ne resta escluso?',
+     opzioni:['Élite intellettuali, ufficiali, borghesi e studenti',
+              'Solo contadini e operai delle prime fabbriche',
+              'Solo i nobili scontenti della Restaurazione',
+              'Chiunque, senza distinzione di ceto'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa succede in Piemonte nel 1821?',
+     opzioni:['L\'esercito chiede la Costituzione, ma i ribelli perdono',
+              'Viene proclamata la repubblica a Torino',
+              'Il re concede lo Statuto senza combattere',
+              'L\'Austria annette il Regno di Sardegna'], giusta:0},
+
+    {tipo:'scelta', testo:'Come si distingue la repressione nel Regno delle Due Sicilie?',
+     opzioni:['Spietata, con gravi spargimenti di sangue',
+              'Mite, con amnistie concesse quasi subito',
+              'Affidata alle sole truppe francesi',
+              'Assente: la rivolta si esaurì da sola'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa cambia fra la prima ondata del 1820-21 e la seconda del 1830-31?',
+     opzioni:['Entra in campo la borghesia: successi in Francia e in Belgio',
+              'Un ritorno alle sole insurrezioni militari',
+              'La fine di ogni forma di rivolta in Europa',
+              'Il passaggio dai moti alle riforme concesse dall\'alto'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire perché i primi moti fallirono.'}
+  ]
+},
+{
+  titolo: 'Storia moderna · 15 — Società industriale e socialismo',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: perché l\'Inghilterra corre e il continente resta indietro?'},
+
+    {tipo:'scelta', testo:'Quali sono i tre pilastri del sistema capitalistico fra il 1770 e il 1850?',
+     opzioni:['Libera iniziativa, proprietà privata, libero mercato',
+              'Pianificazione, cooperazione, redistribuzione',
+              'Protezionismo, corporazioni, monopoli statali',
+              'Autarchia, dazi, controllo dei prezzi'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cos\'è il capitale, in quello schema?',
+     opzioni:['Denaro e beni investiti per produrne di nuovi',
+              'La ricchezza accumulata e tenuta ferma',
+              'La terra posseduta dai proprietari nobili',
+              'Il lavoro fornito dagli operai di fabbrica'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa dev\'essere fatto della ricchezza generata?',
+     opzioni:['Reinvestita di continuo, per migliorare il ciclo produttivo',
+              'Distribuita interamente ai lavoratori',
+              'Conservata in oro nelle casse dello Stato',
+              'Spesa in beni di lusso dalla borghesia'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa inaugura Robert Fulton nel 1807?',
+     opzioni:['La macchina a vapore applicata con successo alla navigazione',
+              'La prima locomotiva a vapore funzionante',
+              'La prima linea ferroviaria per merci',
+              'La tratta passeggeri Liverpool-Manchester'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa nasce nel 1830 fra Liverpool e Manchester?',
+     opzioni:['La prima linea ferroviaria per il trasporto di passeggeri',
+              'Il primo battello a vapore in servizio regolare',
+              'La prima locomotiva costruita da Stephenson',
+              'La prima linea per il solo trasporto merci'], giusta:0},
+
+    {tipo:'scelta', testo:'Quali ostacoli frenano l\'industrializzazione continentale?',
+     opzioni:['Frammentazione, trasporti difficili, capitali fermi nella terra',
+              'Mancanza di manodopera e di popolazione',
+              'Assenza totale di invenzioni tecniche',
+              'Divieto imposto dalla Gran Bretagna'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa fonda la Prussia nel 1834?',
+     opzioni:['Lo Zollverein, unione doganale senza l\'Austria',
+              'La Confederazione Germanica del Nord',
+              'La prima banca centrale tedesca',
+              'Il Reich, con Guglielmo I imperatore'], giusta:0},
+
+    {tipo:'scelta', testo:'Chi sono gli Junker?',
+     opzioni:['Aristocratici prussiani trasformatisi in moderni agricoltori capitalisti',
+              'Industriali della Ruhr specializzati nell\'acciaio',
+              'Banchieri di Francoforte che finanziano le ferrovie',
+              'Operai qualificati delle prime fabbriche tedesche'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa serviva al continente per partire.'}
+  ]
+},
+{
+  titolo: 'Storia contemporanea · 2 — L\'Europa fra il 1850 e il 1870',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: meglio riformare un po\' alla volta o aspettare che scoppi tutto?'},
+
+    {tipo:'scelta', testo:'In che consiste lo «splendido isolamento» britannico?',
+     opzioni:['Restare fuori dall\'Europa per curare impero e industria',
+              'Chiudere i porti al commercio con l\'Europa',
+              'Rinunciare a ogni possedimento coloniale',
+              'Rifiutare qualunque rapporto diplomatico'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa fa il Reform Act del 1867?',
+     opzioni:['Allarga il voto alle masse urbane, senza rivoluzioni',
+              'Introduce il suffragio universale maschile e femminile',
+              'Abolisce la Camera dei Lord',
+              'Riduce il diritto di voto ai soli proprietari terrieri'], giusta:0},
+
+    {tipo:'scelta', testo:'Chi promulga quel Reform Act?',
+     opzioni:['Il conservatore Benjamin Disraeli',
+              'Il liberale William Gladstone',
+              'Il liberale Lord Palmerston',
+              'La regina Vittoria di persona'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa causa la guerra di Crimea nel 1853?',
+     opzioni:['L\'invasione russa dei principati danubiani',
+              'La ribellione greca contro gli ottomani',
+              'L\'assedio francese di Sebastopoli',
+              'La disputa fra Austria e Prussia sui Balcani'], giusta:0},
+
+    {tipo:'scelta', testo:'Perché la guerra di Crimea è il primo conflitto moderno?',
+     opzioni:['Per le trincee, il telegrafo e il reportage giornalistico',
+              'Per l\'uso dei carri armati e degli aerei',
+              'Perché coinvolse tutti i continenti',
+              'Perché si combatté solo sul mare'], giusta:0},
+
+    {tipo:'scelta', testo:'Come arriva al potere Napoleone III?',
+     opzioni:['Col colpo di Stato del 1851, poi imperatore per plebiscito',
+              'Per successione ereditaria diretta',
+              'Con un\'elezione parlamentare regolare',
+              'Con l\'appoggio militare dell\'Austria'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa afferma la Realpolitik di Bismarck?',
+     opzioni:['L\'unificazione tedesca si farà col ferro e col sangue, non con i discorsi',
+              'L\'unità va costruita con il consenso dei parlamenti',
+              'La Germania deve restare una confederazione di Stati',
+              'L\'Austria deve guidare il processo di unificazione'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire che cosa evitò all\'Inghilterra il 1848.'}
+  ]
+},
+{
+  titolo: 'Storia contemporanea · 8 — L\'età dell\'imperialismo',
+  domande: [
+    {tipo:'nuvola', testo:'Prima di cominciare: chi decide a chi appartiene una terra dove non è mai stato?'},
+
+    {tipo:'scelta', testo:'Chi prendeva l\'iniziativa nel vecchio colonialismo, prima del 1870?',
+     opzioni:['I privati: imprese e compagnie mercantili',
+              'Direttamente gli Stati e i loro eserciti',
+              'Le Chiese e gli ordini missionari',
+              'Le assemblee parlamentari delle metropoli'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa cambia con l\'imperialismo dopo il 1870?',
+     opzioni:['L\'iniziativa passa agli Stati: dominio politico e militare',
+              'Il controllo torna nelle mani dei privati',
+              'Le colonie ottengono l\'autonomia amministrativa',
+              'Lo sfruttamento delle risorse viene abbandonato'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa nota la slide sul rapporto fra produzione e distruzione di massa?',
+     opzioni:['La distruzione di massa diventa l\'altra faccia della produzione di massa',
+              'La produzione industriale riduce i conflitti',
+              'Le guerre coloniali erano meno letali di quelle europee',
+              'L\'industria non ebbe effetti sulle guerre'], giusta:0},
+
+    {tipo:'scelta', testo:'Chi convoca la Conferenza di Berlino del 1884-1885?',
+     opzioni:['Bismarck',
+              'La regina Vittoria',
+              'Leopoldo II del Belgio',
+              'Napoleone III'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa stabilisce il principio dell\'occupazione effettiva?',
+     opzioni:['Si rivendica una terra solo occupandola e dichiarandolo',
+              'Ogni territorio va assegnato per sorteggio fra le potenze',
+              'Le popolazioni locali devono acconsentire per iscritto',
+              'Nessuno Stato può occupare territori già abitati'], giusta:0},
+
+    {tipo:'scelta', testo:'Quale effetto ha quel principio burocratico?',
+     opzioni:['Innesca la corsa frenetica alle colonie, lo Scramble for Africa',
+              'Rallenta la spartizione del continente africano',
+              'Impedisce l\'ingresso di Italia e Germania',
+              'Porta a un accordo definitivo sui confini'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa afferma il Corollario Roosevelt?',
+     opzioni:['Gli Stati Uniti sono la polizia internazionale dell\'emisfero americano',
+              'Le colonie europee in America vanno rispettate',
+              'Ogni Stato americano è libero di allearsi con l\'Europa',
+              'Gli Stati Uniti rinunciano a ogni influenza esterna'], giusta:0},
+
+    {tipo:'scelta', testo:'Che cosa distingue l\'imperialismo indiretto statunitense?',
+     opzioni:['Crea aree formalmente indipendenti ma totalmente asservite sul piano economico',
+              'Occupa militarmente i territori come le potenze europee',
+              'Rinuncia a qualunque controllo sui paesi vicini',
+              'Amministra direttamente le colonie tramite governatori'], giusta:0},
+
+    {tipo:'nuvola', testo:'Alla fine: una parola per dire come si chiama un dominio che non si dichiara.'}
+  ]
+}
 ];
