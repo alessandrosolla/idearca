@@ -154,6 +154,11 @@ h1{font-family:'Cormorant Garamond',Georgia,serif;font-size:2.4rem;font-weight:4
         <button class="b" id="bAltro" onclick="genera()" disabled>Rigenera con altre domande</button>
         <span class="conteggio" id="esito"></span>
       </div>
+      <div class="riga" style="margin-top:.5rem">
+        <button class="b" id="bScarica" onclick="scarica(false)" disabled>Scarica il compito</button>
+        <button class="b" id="bScaricaSol" onclick="scarica(true)" disabled>Scarica con le soluzioni</button>
+        <span class="conteggio" style="font-size:.78rem">Un file che puoi allegare a una mail: si apre da solo, è già impaginato in A4.</span>
+      </div>
     </div>
   </div>
 
@@ -318,8 +323,7 @@ function genera(){
 
   ultimo={file, apertePescate, punti, righe, conGriglia};
   disegnaFogli();
-  document.getElementById('bStampa').disabled=false;
-  document.getElementById('bAltro').disabled=false;
+  ['bStampa','bAltro','bScarica','bScaricaSol'].forEach(k=>document.getElementById(k).disabled=false);
   const totale=quante*punti;
   esito.innerHTML=`Fatto: <b>${nFile}</b> fil${nFile===1?'a':'e'} da <b>${quante}</b> domande`
     + (nAperte?` più ${apertePescate.length} apert${apertePescate.length===1?'a':'e'}`:'')
@@ -394,6 +398,93 @@ function disegnaFogli(){
     + file[0].map(d=>`<li>${esc(d.capitolo)}</li>`).join('')+'</ol></div></div>';
 
   document.getElementById('fogli').innerHTML=out;
+}
+
+
+/* ══════════════════════════════════════════════════════════
+   SCARICARE IL COMPITO
+
+   «Stampa o salva in PDF» serve a chi ha il foglio in mano.
+   Ma un compito capita di doverlo mandare: a un collega, a chi
+   era assente, a sé stessi per rileggerlo la sera. Un PDF va
+   bene per leggere e basta; questo invece è il compito vero,
+   che si riapre, si ristampa e all'occorrenza si modifica.
+
+   Il file è un HTML che sta in piedi da solo: il foglio è già
+   dentro, il CSS della stampa viene copiato da questa pagina —
+   così se un giorno cambio l'impaginazione, cambia anche nei
+   file scaricati, senza che debba ricordarmene.
+
+   Due bottoni e non uno: il compito da consegnare non deve
+   contenere le soluzioni. Chi vuole entrambe le cose in un
+   file solo scarica la seconda versione.
+   ══════════════════════════════════════════════════════════ */
+
+/* prendo dal foglio di stile solo la parte che serve al compito:
+   dal commento «il foglio stampabile» in giù. Il resto (i menu,
+   i bottoni) nel file scaricato non esiste. */
+function stileDelFoglio(){
+  const css=document.querySelector('style').textContent;
+  const da=css.indexOf('/* ── il foglio stampabile');
+  return da<0 ? css : css.slice(da);
+}
+
+function nomeFile(titolo, conSoluzioni){
+  const pulito=(titolo||'verifica').toLowerCase()
+    .replace(/[àáâä]/g,'a').replace(/[èéêë]/g,'e').replace(/[ìíîï]/g,'i')
+    .replace(/[òóôö]/g,'o').replace(/[ùúûü]/g,'u')
+    .replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'').slice(0,60) || 'verifica';
+  const g=new Date(), due=n=>String(n).padStart(2,'0');
+  const oggi=`${g.getFullYear()}-${due(g.getMonth()+1)}-${due(g.getDate())}`;
+  return `${pulito}-${oggi}${conSoluzioni?'-con-soluzioni':''}.html`;
+}
+
+function scarica(conSoluzioni){
+  if(!ultimo) return;
+  const titolo=document.getElementById('fTitolo').value||'Verifica';
+  const classe=document.getElementById('fClasse').value||'';
+
+  /* clono i fogli già disegnati invece di rigenerarli: quello che
+     si scarica è esattamente quello che si vede sullo schermo */
+  const copia=document.getElementById('fogli').cloneNode(true);
+  if(!conSoluzioni) copia.querySelectorAll('.solo-corr').forEach(n=>n.remove());
+
+  const doc=`<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>${esc(titolo)}${classe?' — '+esc(classe):''}</title>
+<style>
+body{margin:0;background:#efece4;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  padding:1.4rem 1rem 3rem}
+.avviso{max-width:820px;margin:0 auto 1rem;background:#fff;border:1px solid #cfc9b8;border-radius:10px;
+  padding:.8rem 1rem;font-size:.84rem;color:#444;line-height:1.6}
+.avviso b{color:#2d5a27}
+.fogli{max-width:820px;margin:0 auto}
+${stileDelFoglio()}
+@media print{ .avviso{display:none} body{padding:0;background:#fff} }
+</style>
+</head>
+<body>
+<div class="avviso">
+  <b>${esc(titolo)}</b>${classe?' · '+esc(classe):''} — per stamparlo premi <b>Ctrl+P</b> (su Mac <b>Cmd+P</b>):
+  è già impaginato in A4, una fila per pagina.${conSoluzioni?' Questo file <b>contiene le soluzioni</b>: non consegnarlo alla classe.':''}
+</div>
+${copia.outerHTML}
+</body>
+</html>`;
+
+  const url=URL.createObjectURL(new Blob([doc],{type:'text/html;charset=utf-8'}));
+  const a=document.createElement('a');
+  a.href=url; a.download=nomeFile(titolo, conSoluzioni);
+  document.body.appendChild(a); a.click(); a.remove();
+  /* il tempo di far partire il salvataggio, poi libero la memoria */
+  setTimeout(()=>URL.revokeObjectURL(url), 4000);
+
+  document.getElementById('esito').innerHTML=
+    `Scaricato <b>${esc(nomeFile(titolo, conSoluzioni))}</b>`
+    + (conSoluzioni?' <span class="allarme">— contiene le soluzioni</span>':'');
 }
 
 document.getElementById('fQuante').addEventListener('input',aggiornaConto);
