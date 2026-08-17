@@ -826,6 +826,7 @@ function vociExtra(){
     {g:'Strumenti',k:'__contesto__',l:'Macchina del contesto',  p:'Un anno, la vita di allora', chi:'tutti', ic:'🕰'},
     {g:'Strumenti',k:'__grafici__', l:'Grafici animati',         p:'Quattordici serie storiche', chi:'tutti', ic:'📈'},
     {g:'Strumenti',k:'__map__',     l:'Mappa storica',          p:'Atlante interattivo',      chi:'tutti',   ic:'🗺'},
+    {g:'Strumenti',k:'__verifiche__',l:'Generatore di verifiche',p:'Compiti pronti da stampare',chi:'docente',ic:'📝'},
     {g:'Strumenti',k:'__aula__',    l:'Timer e sorteggio',      p:'Da proiettare in aula',    chi:'docente', ic:'⏱'},
     {g:'Strumenti',k:'__lavagna__', l:'Lavagna',                p:'Da proiettare in aula',    chi:'docente', ic:'🖊'},
     {g:'Prove',    k:'__prove__',   l:'Banco di lavoro',        p:'Strumenti in costruzione', chi:'docente', ic:'🧪'}
@@ -846,6 +847,7 @@ const VISTE={
   __confronto__:{vista:'lib-confronto-view',uso:'confronto',frame:'lib-confronto-frame',src:'prove/confronto.html',  quando:'una volta'},
   __contesto__: {vista:'lib-contesto-view', uso:'contesto', frame:'lib-contesto-frame', src:'prove/contesto.html',   quando:'una volta'},
   __grafici__:  {vista:'lib-grafici-view',  uso:'grafici',  frame:'lib-grafici-frame',  src:'prove/grafici.html',    quando:'una volta'},
+  __verifiche__:{vista:'lib-verifiche-view',uso:'verifiche',frame:'lib-verifiche-frame',src:'prove/verifiche.html',  quando:'una volta'},
   __aula__:     {vista:'lib-aula-view',     uso:'aula',     frame:'lib-aula-frame',     src:'prove/aula.html',       quando:'una volta'},
   __lavagna__:  {vista:'lib-lavagna-view',  uso:'lavagna',  frame:'lib-lavagna-frame',  src:'lavagna/index.html',    quando:'una volta'},
   __consegna__: {vista:'lib-consegna-view', uso:'consegna', frame:'lib-consegna-frame', src:'consegna/index.html',   quando:'ogni volta'},
@@ -907,15 +909,25 @@ function buildNav(keys){
       if(info.chi==='docente' && !vedeRoba()) return;
       const attiva=first&&!!MATERIE[k];
       if(MATERIE[k])first=false;
-      html+=`<button class="lib-item${attiva?' active':''}" data-key="${k}" onclick="navClick(this,'${k}')">
+      /* Il docente vede più voci dello studente, ma finora non c'era
+         modo di sapere quali: la colonna sembrava uguale per tutti, e
+         il rischio era proiettare in aula una cosa che gli studenti
+         non dovrebbero vedere. Il bollino compare solo a chi insegna:
+         allo studente quelle voci non arrivano proprio, e un'etichetta
+         «solo il docente» sopra le cose che invece vede sarebbe solo
+         confusione. */
+      const soloMio = info.chi==='docente' && vedeRoba()
+        ? '<span class="lib-solo" title="Questa voce la vedi solo tu: gli studenti non ce l\'hanno">solo tu</span>' : '';
+      html+=`<button class="lib-item${attiva?' active':''}${soloMio?' e-mia':''}" data-key="${k}" onclick="navClick(this,'${k}')">
         <span class="lib-dot"></span>
-        <span class="lib-item-txt"><b>${info.l}</b><small>${info.p||''}</small></span>
+        <span class="lib-item-txt"><b>${info.l}${soloMio}</b><small>${info.p||''}</small></span>
         <span class="lib-count" data-count="${k}"></span>
       </button>`;
     });
     html+='</div></div>';
   });
   document.getElementById('lib-nav').innerHTML=html;
+  legendaSoloTu();
   segnalaConsegneAperte();
   contaConsegneNuove();
   avviaGiroConsegne();
@@ -924,6 +936,31 @@ function buildNav(keys){
   document.querySelectorAll('.lib-group').forEach(g=>{
     if(!g.querySelector('.lib-item')) g.remove();
   });
+}
+
+/* ── LA LEGENDA DEL BOLLINO ─────────────────────────────────
+   Un bollino che nessuno ha spiegato è un rebus. Sotto il titolo
+   della colonna compare una riga che dice che cosa vuol dire, e
+   quante voci sono riservate: il numero serve più della parola,
+   perché fa capire subito quanta parte della colonna gli studenti
+   non vede. Allo studente questa riga non arriva: non avrebbe
+   niente da spiegare.
+   ─────────────────────────────────────────────────────────── */
+function legendaSoloTu(){
+  const testa=document.querySelector('.lib-sidebar-head');
+  if(!testa) return;
+  const vecchia=testa.querySelector('.lib-legenda');
+  if(vecchia) vecchia.remove();
+  if(!vedeRoba()) return;
+  const quante=document.querySelectorAll('.lib-item.e-mia').length;
+  if(!quante) return;
+  const d=document.createElement('div');
+  d.className='lib-legenda';
+  const b=document.createElement('span');
+  b.className='lib-solo'; b.textContent='solo tu';
+  d.append(b, document.createTextNode(
+    ` ${quante} voc${quante===1?'e':'i'} che gli studenti non vedono`));
+  testa.append(d);
 }
 /* ── IL PALLINO SULLE CONSEGNE ──────────────────────────────
    «Consegna un compito» c'è sempre, anche quando non c'è nulla
@@ -1058,7 +1095,11 @@ function buildMobSelect(keys){
   vociExtra().forEach(v=>{
     if(v.chi==='docente' && !vedeRoba()) return;
     const o=document.createElement('option');
-    o.value=v.k; o.textContent=(v.ic?v.ic+' ':'')+v.l;
+    /* nel menu a tendina non si possono mettere bollini: il «solo tu»
+       si scrive in coda al nome, che è l'unica cosa che una option
+       sa mostrare */
+    const solo = v.chi==='docente' && vedeRoba() ? ' · solo tu' : '';
+    o.value=v.k; o.textContent=(v.ic?v.ic+' ':'')+v.l+solo;
     sel.appendChild(o);
   });
 }

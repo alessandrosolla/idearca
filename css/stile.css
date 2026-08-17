@@ -446,6 +446,26 @@ html[data-theme="dark"] .theme-toggle .icon-moon{display:block}
 .lib-item.active .lib-item-txt b{font-weight:600}
 .lib-item-txt small{font-size:.63rem;color:var(--stone-light);letter-spacing:.02em;
   white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+/* ── «solo tu» ────────────────────────────────────────────────
+   Il bollino sulle voci che vede soltanto chi insegna. Serve per
+   una ragione pratica: la colonna di sinistra e' la stessa che
+   finisce sul proiettore, e prima non c'era modo di distinguere
+   a colpo d'occhio l'inbox delle consegne da un glossario che
+   possono aprire tutti. Ocra e non verde: il verde qui dentro
+   vuol dire «attivo», e due significati sullo stesso colore si
+   confondono. */
+.lib-solo{display:inline-block;margin-left:.4rem;vertical-align:middle;
+  font-size:.52rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
+  color:#8a6a1e;background:color-mix(in srgb,#9a7c2e 13%,transparent);
+  border:1px solid color-mix(in srgb,#9a7c2e 30%,transparent);
+  border-radius:20px;padding:.06rem .34rem;line-height:1.5;white-space:nowrap}
+html[data-theme="dark"] .lib-solo{color:#d8b75e;
+  background:color-mix(in srgb,#d8b75e 12%,transparent);
+  border-color:color-mix(in srgb,#d8b75e 26%,transparent)}
+.lib-item.e-mia .lib-item-txt b{display:flex;align-items:center;gap:0;flex-wrap:wrap}
+.lib-legenda{margin-top:.5rem;font-size:.63rem;line-height:1.6;color:var(--stone-light)}
+.lib-legenda .lib-solo{margin-left:0;margin-right:.15rem}
+
 .lib-dot{width:6px;height:6px;border-radius:50%;flex:none;
   background:var(--border);transition:background .2s,box-shadow .2s}
 .lib-item:hover .lib-dot{background:var(--area,var(--forest));opacity:.5}
