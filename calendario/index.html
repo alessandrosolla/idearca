@@ -1,0 +1,695 @@
+<!doctype html>
+<html lang="it"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Calendario — Idearca</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Jost',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  background:#FAF7F0;color:#1F1B16;font-weight:300;-webkit-font-smoothing:antialiased}
+.w{max-width:1180px;margin:0 auto;padding:1.8rem 1.5rem 4rem}
+.kicker{font-size:.6rem;letter-spacing:.22em;text-transform:uppercase;color:#8A7355;font-weight:600}
+h1{font-family:'Cormorant Garamond',Georgia,serif;font-size:2.4rem;font-weight:400;margin:.25rem 0 1.1rem}
+
+.tabs{display:flex;gap:.2rem;border-bottom:1px solid #E3DACB;margin-bottom:1.4rem;overflow-x:auto}
+.tabs button{font:inherit;font-size:.8rem;font-weight:600;letter-spacing:.02em;
+  padding:.7rem 1.1rem;border:0;background:none;cursor:pointer;color:#5A5148;
+  border-bottom:2px solid transparent;white-space:nowrap}
+.tabs button.on{color:#2d5a27;border-bottom-color:#2d5a27}
+
+.avviso{background:#fff;border:1px solid #E3DACB;border-left:4px solid #C0453B;
+  border-radius:8px;padding:1.1rem 1.3rem;font-size:.92rem;line-height:1.6}
+.vuoto{border:1px dashed #D8CDBA;border-radius:10px;padding:2.2rem 1.5rem;
+  text-align:center;color:#5A5148;font-size:.9rem;line-height:1.7}
+.vuoto strong{color:#1F1B16}
+
+button.b{font:inherit;font-size:.82rem;font-weight:600;padding:.5rem 1rem;
+  border:1px solid #E3DACB;border-radius:8px;background:#fff;cursor:pointer;white-space:nowrap}
+button.b:hover{border-color:#8A7355}
+button.b.pieno{background:#2d5a27;color:#fff;border-color:#2d5a27}
+button.b.pieno:hover{background:#24491f}
+button.b.rosso{color:#C0453B;border-color:#E8CFCB}
+button.b.rosso:hover{background:#C0453B;color:#fff;border-color:#C0453B}
+.riga{display:flex;gap:.6rem;align-items:center;flex-wrap:wrap}
+
+input,select,textarea{font:inherit;font-size:.86rem;padding:.5rem .65rem;
+  border:1px solid #E3DACB;border-radius:8px;background:#fff;color:inherit;outline:none}
+input:focus,select:focus,textarea:focus{border-color:#2d5a27}
+textarea{resize:vertical;line-height:1.6;width:100%}
+label.campo{display:flex;flex-direction:column;gap:.25rem;font-size:.7rem;
+  letter-spacing:.08em;text-transform:uppercase;color:#8A7355;font-weight:600}
+
+/* ── la settimana ───────────────────────────────────────── */
+.barra-sett{display:flex;align-items:center;gap:.7rem;flex-wrap:wrap;margin-bottom:1rem}
+.barra-sett .quando{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.35rem;
+  font-weight:500;flex:1;min-width:12rem}
+.giorno{background:#fff;border:1px solid #E3DACB;border-radius:11px;margin-bottom:.7rem;overflow:hidden}
+.giorno.oggi{border-color:#2d5a27;box-shadow:0 0 0 2px rgba(45,90,39,.1)}
+.giorno.sospeso{background:#F6F3EC}
+.giorno > header{display:flex;align-items:baseline;gap:.6rem;padding:.6rem .9rem;
+  border-bottom:1px solid #EFE7DA;background:#FCFAF5}
+.giorno.oggi > header{background:#F1F6EF}
+.giorno > header b{font-size:.9rem;font-weight:600}
+.giorno > header span{font-size:.72rem;color:#8A7355}
+.giorno > header .ogginota{margin-left:auto;font-size:.6rem;letter-spacing:.14em;
+  text-transform:uppercase;font-weight:700;color:#2d5a27}
+.ora{display:flex;align-items:flex-start;gap:.8rem;padding:.65rem .9rem;
+  border-bottom:1px solid #F3EDE2;cursor:pointer}
+.ora:last-child{border-bottom:0}
+.ora:hover{background:#FBF8F1}
+.ora .quando{flex:none;width:5.4rem;font-size:.76rem;color:#5A5148;font-variant-numeric:tabular-nums}
+.pill{flex:none;font-size:.62rem;font-weight:700;letter-spacing:.06em;
+  padding:.14rem .5rem;border-radius:20px;color:#fff;white-space:nowrap}
+.ora .corpo{flex:1;min-width:0}
+.ora .arg{font-size:.88rem;line-height:1.45;word-break:break-word}
+.ora .arg.vuoto2{color:#A79B88;font-style:italic}
+.ora .sotto{display:flex;gap:.7rem;flex-wrap:wrap;margin-top:.2rem;
+  font-size:.68rem;color:#8A7355}
+.ora .spunta{flex:none;font-size:1rem;line-height:1;color:#2d5a27;opacity:.25}
+.ora.fatta .spunta{opacity:1}
+.ora.fatta .arg{color:#5A5148}
+.sospnota{padding:.7rem .9rem;font-size:.8rem;color:#8A7355}
+
+/* ── il pannello della lezione ──────────────────────────── */
+.velo{display:none;position:fixed;inset:0;background:rgba(20,26,18,.55);z-index:60;
+  align-items:flex-end;justify-content:center;backdrop-filter:blur(3px)}
+.velo.on{display:flex}
+.pannello{background:#fff;width:100%;max-width:720px;max-height:92vh;overflow-y:auto;
+  border-radius:16px 16px 0 0;padding:1.4rem 1.5rem 2rem}
+@media(min-width:760px){.velo{align-items:center}.pannello{border-radius:16px}}
+.pannello header{display:flex;align-items:flex-start;gap:.8rem;margin-bottom:1rem}
+.pannello header h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.5rem;
+  font-weight:500;flex:1;line-height:1.2}
+.pannello header .sub{font-size:.75rem;color:#8A7355;margin-top:.15rem}
+.blocco{margin-bottom:1.05rem}
+.blocco > .tit{font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;
+  color:#8A7355;font-weight:700;margin-bottom:.35rem}
+.mat-lista{display:flex;flex-direction:column;gap:.3rem}
+.mat{display:flex;align-items:center;gap:.55rem;padding:.42rem .6rem;
+  border:1px solid #EFE7DA;border-radius:8px;font-size:.82rem;background:#FCFAF5}
+.mat input{accent-color:#2d5a27;width:15px;height:15px;flex:none;margin:0}
+.mat .tipo{font-size:.6rem;letter-spacing:.08em;text-transform:uppercase;color:#8A7355;flex:none}
+.mat span.t{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.pannello .azioni{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:1.3rem;
+  padding-top:1rem;border-top:1px solid #EFE7DA}
+.pannello .azioni .spinge{margin-left:auto}
+
+/* ── orario e classi ────────────────────────────────────── */
+.griglia-orario{width:100%;border-collapse:collapse;font-size:.84rem;background:#fff;
+  border:1px solid #E3DACB;border-radius:10px;overflow:hidden}
+.griglia-orario th,.griglia-orario td{padding:.55rem .7rem;border-bottom:1px solid #EFE7DA;text-align:left}
+.griglia-orario th{font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;color:#5A5148;background:#FCFAF5}
+.scheda{background:#fff;border:1px solid #E3DACB;border-radius:11px;padding:1rem 1.15rem;margin-bottom:.8rem}
+.scheda h3{font-size:.98rem;font-weight:600;margin-bottom:.15rem;display:flex;align-items:center;gap:.5rem}
+.scheda .meta{font-size:.74rem;color:#8A7355;margin-bottom:.7rem}
+.pastiglia{width:11px;height:11px;border-radius:50%;flex:none;display:inline-block}
+.nota{font-size:.8rem;line-height:1.7;color:#5A5148;background:#F6F3EC;
+  border-left:3px solid #9A7C2E;border-radius:0 9px 9px 0;padding:.8rem 1rem;margin:.9rem 0}
+.nota b{color:#8A6A1E}
+.esito{font-size:.82rem;color:#2d5a27;font-weight:600}
+@media(max-width:640px){
+  .w{padding:1.3rem 1rem 3rem} h1{font-size:1.9rem}
+  .ora{flex-wrap:wrap} .ora .quando{width:auto}
+}
+</style></head>
+<body><div class="w">
+  <div class="kicker">Idearca · Didattica</div>
+  <h1>Calendario</h1>
+
+  <div class="tabs">
+    <button class="on" data-t="settimana" onclick="vaiA('settimana')">La settimana</button>
+    <button data-t="orario" onclick="vaiA('orario')">Orario</button>
+    <button data-t="classi" onclick="vaiA('classi')">Classi</button>
+    <button data-t="pause" onclick="vaiA('pause')">Vacanze</button>
+  </div>
+
+  <div id="cont"></div>
+</div>
+
+<div class="velo" id="velo" onclick="if(event.target===this) chiudiPannello()">
+  <div class="pannello" id="pannello"></div>
+</div>
+
+<script>
+/* ══════════════════════════════════════════════════════════
+   CALENDARIO — Idearca
+
+   Un calendario in cui si scrive ogni ora a mano non regge un
+   anno scolastico: le stesse righe si riscrivono trentatre
+   volte. Qui l'orario settimanale si imposta una volta e le ore
+   le genera il database (funzione genera_lezioni). Restano
+   modificabili una per una, perché la realtà non segue l'orario.
+
+   Quattro schede, in ordine di quanto si usano:
+     La settimana  quello che apri ogni mattina
+     Orario        la griglia settimanale, si tocca due volte l'anno
+     Classi        idem
+     Vacanze       i giorni in cui non si fa lezione
+
+   Tutto è riservato al docente: le regole del database non
+   mostrano queste tavole a nessun altro.
+   ══════════════════════════════════════════════════════════ */
+
+const SB_URL = 'https://mqjceddrbhpwqjomhohm.supabase.co';
+const SB_KEY = 'sb_publishable_D7vDsaervKNJNgdJwknDpQ_Vuuf9CeJ';
+
+const GIORNI = ['','Lunedì','Martedì','Mercoledì','Giovedì','Venerdì','Sabato','Domenica'];
+const MESI = ['gennaio','febbraio','marzo','aprile','maggio','giugno','luglio',
+              'agosto','settembre','ottobre','novembre','dicembre'];
+
+let scheda = 'settimana';
+let classi = [], orario = [], lezioni = [], sospensioni = [], materiali = [];
+let lunediCorrente = lunediDi(new Date());
+let apertaId = null;
+
+/* ── accesso ──────────────────────────────────────────────── */
+function token(){ try{ return sessionStorage.getItem('atk')||''; }catch(_){ return ''; } }
+function capo(extra){ return Object.assign({'apikey':SB_KEY,'Authorization':'Bearer '+token()}, extra||{}); }
+function scadenzaToken(){
+  try{
+    const t=sessionStorage.getItem('atk')||'';
+    const c=JSON.parse(atob(t.split('.')[1].replace(/-/g,'+').replace(/_/g,'/')));
+    return (c.exp||0)*1000;
+  }catch(_){ return 0; }
+}
+async function assicuraToken(){
+  const s=scadenzaToken();
+  if(!s) return false;
+  if(Date.now() < s-60000) return true;
+  let rtk=''; try{ rtk=sessionStorage.getItem('rtk')||''; }catch(_){}
+  if(!rtk) return false;
+  try{
+    const r=await fetch(SB_URL+'/auth/v1/token?grant_type=refresh_token',{
+      method:'POST',headers:{'apikey':SB_KEY,'Content-Type':'application/json'},
+      body:JSON.stringify({refresh_token:rtk})});
+    if(!r.ok) return false;
+    const d=await r.json();
+    if(!d.access_token) return false;
+    sessionStorage.setItem('atk', d.access_token);
+    if(d.refresh_token) sessionStorage.setItem('rtk', d.refresh_token);
+    return true;
+  }catch(_){ return false; }
+}
+
+/* ── date ─────────────────────────────────────────────────── */
+/* Tutto passa da qui. Le date si scambiano col database sempre
+   come «2026-09-14», mai come oggetto Date convertito al volo:
+   il fuso orario, su una data senza ora, sposta il giorno. */
+function iso(d){
+  const z=n=>String(n).padStart(2,'0');
+  return d.getFullYear()+'-'+z(d.getMonth()+1)+'-'+z(d.getDate());
+}
+function daIso(s){ const [a,m,g]=s.split('-').map(Number); return new Date(a,m-1,g); }
+function lunediDi(d){
+  const x=new Date(d.getFullYear(), d.getMonth(), d.getDate());
+  const dow=(x.getDay()+6)%7;          /* 0 = lunedì */
+  x.setDate(x.getDate()-dow);
+  return x;
+}
+function piuGiorni(d,n){ const x=new Date(d); x.setDate(x.getDate()+n); return x; }
+function oreIt(t){ return (t||'').slice(0,5); }
+function dataLunga(d){ return GIORNI[((d.getDay()+6)%7)+1]+' '+d.getDate()+' '+MESI[d.getMonth()]; }
+function esc(s){ return String(s==null?'':s).replace(/[<>&"]/g,c=>({'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;'}[c])); }
+
+/* ── caricamento ──────────────────────────────────────────── */
+async function carica(){
+  const cont=document.getElementById('cont');
+  await assicuraToken();
+  if(!token()){
+    cont.innerHTML='<div class="avviso"><strong>Non sei entrato come docente.</strong><br>'+
+      'Il calendario è riservato al docente: le regole del database non lo mostrano a nessun altro. '+
+      'Se sei tu, apri il sito, accedi con la tua password e torna qui.</div>';
+    return;
+  }
+  const dal=iso(piuGiorni(lunediCorrente,-7)), al=iso(piuGiorni(lunediCorrente,21));
+  try{
+    const [rc,ro,rl,rs,rm]=await Promise.all([
+      fetch(SB_URL+'/rest/v1/classi?select=*&order=ordine.asc,nome.asc',{headers:capo()}),
+      fetch(SB_URL+'/rest/v1/orario?select=*&order=giorno.asc,ora_inizio.asc',{headers:capo()}),
+      fetch(SB_URL+`/rest/v1/lezioni?select=*&data=gte.${dal}&data=lte.${al}&order=data.asc,ora_inizio.asc`,{headers:capo()}),
+      fetch(SB_URL+'/rest/v1/sospensioni?select=*&order=dal.asc',{headers:capo()}),
+      fetch(SB_URL+'/rest/v1/materiali?select=id,titolo,materia,tipo,link&attivo=eq.true&order=materia.asc,posizione.asc',{headers:capo()})
+    ]);
+    classi      = rc.ok ? await rc.json() : [];
+    orario      = ro.ok ? await ro.json() : [];
+    lezioni     = rl.ok ? await rl.json() : [];
+    sospensioni = rs.ok ? await rs.json() : [];
+    materiali   = rm.ok ? await rm.json() : [];
+  }catch(e){
+    cont.innerHTML='<div class="avviso"><strong>Non riesco a leggere il calendario.</strong><br>'+
+      'Se non hai ancora eseguito la migrazione 13, le tavole non esistono ancora.</div>';
+    return;
+  }
+  disegna();
+}
+
+function vaiA(t){
+  scheda=t;
+  document.querySelectorAll('.tabs button').forEach(b=>b.classList.toggle('on', b.dataset.t===t));
+  disegna();
+}
+function classeDi(id){ return classi.find(c=>c.id===id) || {nome:'?', colore:'#8A7355'}; }
+function sospensioneDi(dataIso, classeId){
+  return sospensioni.find(s=> dataIso>=s.dal && dataIso<=s.al &&
+    (s.classe_id==null || s.classe_id===classeId));
+}
+
+/* ══════════════════════════════════════════════════════════
+   LA SETTIMANA
+   Sei giorni, lunedì-sabato: la domenica in un calendario di
+   scuola è una riga vuota che si porta dietro per tutto l'anno.
+   ══════════════════════════════════════════════════════════ */
+function disegna(){
+  const cont=document.getElementById('cont');
+  if(scheda==='settimana') cont.innerHTML=vistaSettimana();
+  else if(scheda==='orario') cont.innerHTML=vistaOrario();
+  else if(scheda==='classi') cont.innerHTML=vistaClassi();
+  else cont.innerHTML=vistaPause();
+}
+
+function vistaSettimana(){
+  if(!classi.length) return primoAvvio();
+
+  const fine=piuGiorni(lunediCorrente,5);
+  const stessoMese=lunediCorrente.getMonth()===fine.getMonth();
+  const intestazione = lunediCorrente.getDate()+(stessoMese?'':' '+MESI[lunediCorrente.getMonth()])+
+    ' – '+fine.getDate()+' '+MESI[fine.getMonth()]+' '+fine.getFullYear();
+
+  let out=`<div class="barra-sett">
+    <button class="b" onclick="settimana(-1)">← Prima</button>
+    <button class="b" onclick="settimana(0)">Questa settimana</button>
+    <button class="b" onclick="settimana(1)">Dopo →</button>
+    <div class="quando">${esc(intestazione)}</div>
+  </div>`;
+
+  const oggiIso=iso(new Date());
+  let almenoUna=false;
+
+  for(let i=0;i<6;i++){
+    const g=piuGiorni(lunediCorrente,i), gi=iso(g);
+    const delGiorno=lezioni.filter(l=>l.data===gi)
+      .sort((a,b)=>a.ora_inizio.localeCompare(b.ora_inizio));
+    const sosp=sospensioneDi(gi,null);
+    if(!delGiorno.length && !sosp) continue;
+    almenoUna=true;
+
+    out+=`<div class="giorno${gi===oggiIso?' oggi':''}${sosp?' sospeso':''}">
+      <header><b>${esc(GIORNI[i+1])}</b><span>${g.getDate()} ${MESI[g.getMonth()]}</span>
+      ${gi===oggiIso?'<span class="ogginota">oggi</span>':''}</header>`;
+
+    if(sosp) out+=`<div class="sospnota">Sospensione: ${esc(sosp.motivo||'nessuna lezione')}</div>`;
+
+    delGiorno.forEach(l=>{
+      const c=classeDi(l.classe_id);
+      const quanti=(l.materiali||[]).length;
+      out+=`<div class="ora${l.svolta?' fatta':''}" onclick="apriLezione(${l.id})">
+        <span class="spunta">${l.svolta?'✓':'○'}</span>
+        <span class="quando">${oreIt(l.ora_inizio)}${l.ora_fine?'–'+oreIt(l.ora_fine):''}</span>
+        <span class="pill" style="background:${esc(c.colore)}">${esc(c.nome)}</span>
+        <span class="corpo">
+          <span class="arg${l.argomento?'':' vuoto2'}">${esc(l.argomento||'— da preparare —')}</span>
+          <span class="sotto">
+            ${l.materia?'<span>'+esc(l.materia)+'</span>':''}
+            ${quanti?'<span>📎 '+quanti+' material'+(quanti===1?'e':'i')+'</span>':''}
+            ${l.compiti?'<span>✎ compiti</span>':''}
+            ${l.note?'<span>note</span>':''}
+          </span>
+        </span>
+      </div>`;
+    });
+    out+='</div>';
+  }
+
+  if(!almenoUna){
+    out+=`<div class="vuoto"><strong>Nessuna lezione in questa settimana.</strong><br>
+      Se hai già impostato l'orario, le ore vanno generate: vai in <em>Orario</em>
+      e premi «Genera le lezioni».</div>`;
+  }
+  return out;
+}
+function settimana(d){
+  lunediCorrente = d===0 ? lunediDi(new Date()) : piuGiorni(lunediCorrente, d*7);
+  carica();
+}
+
+function primoAvvio(){
+  return `<div class="vuoto"><strong>Il calendario è vuoto perché non ci sono ancora classi.</strong><br>
+    Si comincia da lì: apri <em>Classi</em> e aggiungi quelle in cui insegni.
+    Poi in <em>Orario</em> imposti una volta sola la griglia settimanale — 4B il lunedì
+    dalle 9 alle 10 — e il calendario genera tutte le ore dell'anno.</div>`;
+}
+
+/* ══════════════════════════════════════════════════════════
+   IL PANNELLO DI UNA LEZIONE
+   È qui che si prepara: argomento, materiali già in libreria,
+   compiti, e la nota di com'è andata.
+   ══════════════════════════════════════════════════════════ */
+function apriLezione(id){
+  const l=lezioni.find(x=>x.id===id);
+  if(!l) return;
+  apertaId=id;
+  const c=classeDi(l.classe_id), d=daIso(l.data);
+  const scelti=new Set(l.materiali||[]);
+
+  /* i materiali della materia di quella lezione stanno in cima:
+     sono quelli che servono nove volte su dieci */
+  const suoi=materiali.filter(m=>affine(m.materia, l.materia));
+  const altri=materiali.filter(m=>!affine(m.materia, l.materia));
+
+  const riga=m=>`<label class="mat">
+      <input type="checkbox" value="${m.id}" ${scelti.has(m.id)?'checked':''}>
+      <span class="tipo">${esc(m.tipo||'')}</span>
+      <span class="t" title="${esc(m.titolo)}">${esc(m.titolo)}</span>
+    </label>`;
+
+  document.getElementById('pannello').innerHTML=`
+    <header>
+      <div style="flex:1">
+        <h2>${esc(dataLunga(d))}</h2>
+        <div class="sub"><span class="pill" style="background:${esc(c.colore)}">${esc(c.nome)}</span>
+          &nbsp;${oreIt(l.ora_inizio)}${l.ora_fine?'–'+oreIt(l.ora_fine):''}
+          ${l.materia?' · '+esc(l.materia):''}</div>
+      </div>
+      <button class="b" onclick="chiudiPannello()">Chiudi</button>
+    </header>
+
+    <div class="blocco">
+      <div class="tit">Che cosa si fa</div>
+      <textarea id="p-arg" rows="2" placeholder="L'argomento dell'ora">${esc(l.argomento||'')}</textarea>
+    </div>
+
+    <div class="blocco">
+      <div class="tit">Materiali dalla libreria ${scelti.size?'· '+scelti.size+' scelti':''}</div>
+      ${materiali.length ? `<div class="mat-lista" id="p-mat">
+          ${suoi.map(riga).join('')}
+          ${altri.length?`<details style="margin-top:.3rem"><summary style="font-size:.75rem;color:#8A7355;cursor:pointer;padding:.3rem 0">Le altre materie (${altri.length})</summary>
+            <div class="mat-lista" style="margin-top:.3rem">${altri.map(riga).join('')}</div></details>`:''}
+        </div>`
+      : '<div style="font-size:.82rem;color:#8A7355">Non ci sono ancora materiali in libreria.</div>'}
+    </div>
+
+    <div class="blocco">
+      <div class="tit">Compiti assegnati</div>
+      <textarea id="p-compiti" rows="2" placeholder="Che cosa hanno da fare">${esc(l.compiti||'')}</textarea>
+      <div class="riga" style="margin-top:.45rem">
+        <label class="campo">Per il
+          <input type="date" id="p-compiti-per" value="${esc(l.compiti_per||'')}">
+        </label>
+      </div>
+    </div>
+
+    <div class="blocco">
+      <div class="tit">Com'è andata</div>
+      <textarea id="p-note" rows="2" placeholder="Note dopo l'ora: dove ti sei fermato, che cosa riprendere">${esc(l.note||'')}</textarea>
+      <label class="riga" style="margin-top:.5rem;font-size:.85rem;cursor:pointer">
+        <input type="checkbox" id="p-svolta" ${l.svolta?'checked':''}
+          style="accent-color:#2d5a27;width:16px;height:16px"> Lezione svolta
+      </label>
+    </div>
+
+    <div class="azioni">
+      <button class="b pieno" onclick="salvaLezione()">Salva</button>
+      <span class="esito" id="p-esito"></span>
+      <button class="b rosso spinge" onclick="eliminaLezione()">Elimina l'ora</button>
+    </div>`;
+  document.getElementById('velo').classList.add('on');
+}
+/* «Filosofia Antica» e «Filosofia» sono la stessa cosa per chi
+   cerca un materiale da attaccare a un'ora di filosofia. */
+function affine(a,b){
+  if(!a||!b) return false;
+  const n=s=>s.toLowerCase().replace(/[^a-zàèéìòù]/g,'');
+  return n(a).includes(n(b)) || n(b).includes(n(a));
+}
+function chiudiPannello(){
+  document.getElementById('velo').classList.remove('on');
+  apertaId=null;
+}
+document.addEventListener('keydown', e=>{ if(e.key==='Escape') chiudiPannello(); });
+
+async function salvaLezione(){
+  if(!apertaId) return;
+  const scelti=[...document.querySelectorAll('#p-mat input:checked')].map(i=>+i.value);
+  const corpo={
+    argomento: document.getElementById('p-arg').value.trim(),
+    compiti:   document.getElementById('p-compiti').value.trim() || null,
+    compiti_per: document.getElementById('p-compiti-per').value || null,
+    note:      document.getElementById('p-note').value.trim() || null,
+    svolta:    document.getElementById('p-svolta').checked,
+    materiali: scelti
+  };
+  const es=document.getElementById('p-esito');
+  es.textContent='Salvo…';
+  try{
+    const r=await fetch(SB_URL+'/rest/v1/lezioni?id=eq.'+apertaId,{
+      method:'PATCH', headers:capo({'Content-Type':'application/json','Prefer':'return=minimal'}),
+      body:JSON.stringify(corpo)});
+    if(!r.ok && r.status!==204) throw new Error(await r.text());
+    Object.assign(lezioni.find(l=>l.id===apertaId), corpo);
+    es.textContent='✓ salvato';
+    disegna();
+    setTimeout(()=>{ if(document.getElementById('p-esito')) document.getElementById('p-esito').textContent=''; }, 1600);
+  }catch(e){ es.textContent='non salvato'; es.style.color='#C0453B'; }
+}
+
+async function eliminaLezione(){
+  if(!apertaId) return;
+  const l=lezioni.find(x=>x.id===apertaId);
+  if(!confirm('Elimino questa singola ora?\nL\'orario settimanale resta com\'è: se rigeneri, torna.')) return;
+  try{
+    const r=await fetch(SB_URL+'/rest/v1/lezioni?id=eq.'+apertaId,{method:'DELETE',headers:capo()});
+    if(!r.ok && r.status!==204) throw new Error();
+    lezioni=lezioni.filter(x=>x.id!==apertaId);
+    chiudiPannello(); disegna();
+  }catch(e){ alert('Non è stato possibile eliminare.'); }
+}
+
+/* ══════════════════════════════════════════════════════════
+   ORARIO SETTIMANALE
+   ══════════════════════════════════════════════════════════ */
+function vistaOrario(){
+  if(!classi.length) return primoAvvio();
+  const opzClassi=classi.map(c=>`<option value="${c.id}">${esc(c.nome)}</option>`).join('');
+  const opzGiorni=[1,2,3,4,5,6].map(g=>`<option value="${g}">${GIORNI[g]}</option>`).join('');
+
+  let righe='';
+  for(let g=1;g<=6;g++){
+    const dellaG=orario.filter(o=>o.giorno===g);
+    if(!dellaG.length) continue;
+    righe+=`<tr><th colspan="5">${GIORNI[g]}</th></tr>`;
+    dellaG.forEach(o=>{
+      const c=classeDi(o.classe_id);
+      righe+=`<tr>
+        <td style="width:7rem">${oreIt(o.ora_inizio)}–${oreIt(o.ora_fine)}</td>
+        <td style="width:5rem"><span class="pill" style="background:${esc(c.colore)}">${esc(c.nome)}</span></td>
+        <td>${esc(o.materia||'—')}</td>
+        <td>${esc(o.aula||'')}</td>
+        <td style="text-align:right"><button class="b rosso" onclick="togliOra(${o.id})">Togli</button></td>
+      </tr>`;
+    });
+  }
+
+  return `
+  <div class="scheda">
+    <h3>Aggiungi un'ora alla griglia</h3>
+    <div class="meta">La griglia si ripete ogni settimana. Va impostata una volta.</div>
+    <div class="riga">
+      <label class="campo">Classe<select id="o-classe">${opzClassi}</select></label>
+      <label class="campo">Giorno<select id="o-giorno">${opzGiorni}</select></label>
+      <label class="campo">Dalle<input type="time" id="o-dalle" value="09:00" step="300"></label>
+      <label class="campo">Alle<input type="time" id="o-alle" value="10:00" step="300"></label>
+      <label class="campo">Materia<input id="o-materia" placeholder="Filosofia" size="12"></label>
+      <label class="campo">Aula<input id="o-aula" placeholder="" size="6"></label>
+      <button class="b pieno" onclick="aggiungiOra()" style="align-self:flex-end">Aggiungi</button>
+    </div>
+    <div class="esito" id="o-esito"></div>
+  </div>
+
+  ${righe ? '<table class="griglia-orario">'+righe+'</table>'
+          : '<div class="vuoto">La griglia è vuota. Aggiungi la prima ora qui sopra.</div>'}
+
+  <div class="nota"><b>Generare le lezioni</b><br>
+    Quando la griglia è a posto, il calendario crea le ore vere fra le due date.
+    Salta le vacanze e le ore che esistono già, quindi si può rilanciare quando vuoi.</div>
+  <div class="riga">
+    <label class="campo">Dal<input type="date" id="g-dal" value="${esc(iso(new Date()))}"></label>
+    <label class="campo">Al<input type="date" id="g-al" value="${esc(iso(new Date(new Date().getFullYear()+ (new Date().getMonth()>6?1:0), 5, 8)))}"></label>
+    <button class="b pieno" onclick="generaLezioni()" style="align-self:flex-end">Genera le lezioni</button>
+    <span class="esito" id="g-esito"></span>
+  </div>
+  <div class="riga" style="margin-top:.9rem">
+    <button class="b" onclick="pulisci()">Togli le ore future ancora vuote</button>
+    <span style="font-size:.75rem;color:#8A7355">Serve quando cambi l'orario a metà anno.
+      Non tocca le ore in cui hai scritto qualcosa.</span>
+  </div>`;
+}
+
+async function aggiungiOra(){
+  const es=document.getElementById('o-esito');
+  const corpo={
+    classe_id:+document.getElementById('o-classe').value,
+    giorno:+document.getElementById('o-giorno').value,
+    ora_inizio:document.getElementById('o-dalle').value,
+    ora_fine:document.getElementById('o-alle').value,
+    materia:document.getElementById('o-materia').value.trim()||null,
+    aula:document.getElementById('o-aula').value.trim()||null
+  };
+  if(corpo.ora_fine<=corpo.ora_inizio){ es.textContent='L\'ora di fine viene prima di quella di inizio.'; es.style.color='#C0453B'; return; }
+  try{
+    const r=await fetch(SB_URL+'/rest/v1/orario',{method:'POST',
+      headers:capo({'Content-Type':'application/json','Prefer':'return=minimal'}),
+      body:JSON.stringify(corpo)});
+    if(!r.ok && r.status!==201) throw new Error(await r.text());
+    await carica();
+  }catch(e){
+    es.textContent='Non aggiunta: forse quella classe ha già un\'ora che comincia allo stesso momento.';
+    es.style.color='#C0453B';
+  }
+}
+async function togliOra(id){
+  if(!confirm('Tolgo quest\'ora dalla griglia settimanale?\nLe lezioni già create restano.')) return;
+  await fetch(SB_URL+'/rest/v1/orario?id=eq.'+id,{method:'DELETE',headers:capo()});
+  await carica();
+}
+
+async function generaLezioni(){
+  const es=document.getElementById('g-esito');
+  const dal=document.getElementById('g-dal').value, al=document.getElementById('g-al').value;
+  if(!dal||!al){ es.textContent='Servono tutte e due le date.'; return; }
+  es.textContent='Genero…'; es.style.color='#2d5a27';
+  try{
+    const r=await fetch(SB_URL+'/rest/v1/rpc/genera_lezioni',{method:'POST',
+      headers:capo({'Content-Type':'application/json'}),
+      body:JSON.stringify({dal, al})});
+    if(!r.ok) throw new Error(await r.text());
+    const n=await r.json();
+    es.textContent = n===0 ? 'Nessuna ora nuova: c\'erano già tutte.'
+                           : '✓ '+n+' or'+(n===1?'a creata':'e create');
+    await carica();
+  }catch(e){ es.textContent='Non riuscita. Hai eseguito la migrazione 13?'; es.style.color='#C0453B'; }
+}
+async function pulisci(){
+  if(!confirm('Tolgo tutte le ore future ancora vuote?\nQuelle in cui hai scritto qualcosa restano.')) return;
+  try{
+    const r=await fetch(SB_URL+'/rest/v1/rpc/pulisci_lezioni_vuote',{method:'POST',
+      headers:capo({'Content-Type':'application/json'}),
+      body:JSON.stringify({da_classe:null, dalla_data:iso(new Date())})});
+    const n=await r.json();
+    alert(n+' or'+(n===1?'a tolta':'e tolte')+'.');
+    await carica();
+  }catch(e){ alert('Non riuscita.'); }
+}
+
+/* ══════════════════════════════════════════════════════════
+   CLASSI
+   ══════════════════════════════════════════════════════════ */
+function vistaClassi(){
+  const annoOra = (()=>{ const d=new Date(), a=d.getFullYear();
+    return d.getMonth()>=8 ? a+'/'+String(a+1).slice(2) : (a-1)+'/'+String(a).slice(2); })();
+  const elenco = classi.map(c=>`
+    <div class="scheda">
+      <h3><span class="pastiglia" style="background:${esc(c.colore)}"></span>${esc(c.nome)}</h3>
+      <div class="meta">${esc(c.indirizzo||'')}${c.indirizzo?' · ':''}${esc(c.anno)}
+        · ${orario.filter(o=>o.classe_id===c.id).length} ore a settimana</div>
+      <div class="riga">
+        <input type="color" value="${esc(c.colore)}" onchange="cambiaColore(${c.id}, this.value)"
+          title="Il colore con cui questa classe compare nella settimana"
+          style="width:2.6rem;height:2.2rem;padding:.15rem">
+        <button class="b rosso" onclick="eliminaClasse(${c.id})">Elimina</button>
+      </div>
+    </div>`).join('');
+
+  return `
+  <div class="scheda">
+    <h3>Aggiungi una classe</h3>
+    <div class="meta">Il colore serve a riconoscerla a colpo d'occhio nella settimana.</div>
+    <div class="riga">
+      <label class="campo">Nome<input id="c-nome" placeholder="4B" size="6"></label>
+      <label class="campo">Indirizzo<input id="c-ind" placeholder="Liceo scientifico" size="18"></label>
+      <label class="campo">Anno<input id="c-anno" value="${esc(annoOra)}" size="8"></label>
+      <label class="campo">Colore<input type="color" id="c-colore" value="#2d5a27" style="width:2.6rem;height:2.2rem;padding:.15rem"></label>
+      <button class="b pieno" onclick="aggiungiClasse()" style="align-self:flex-end">Aggiungi</button>
+    </div>
+    <div class="esito" id="c-esito"></div>
+  </div>
+  ${elenco || '<div class="vuoto"><strong>Nessuna classe.</strong><br>Aggiungi la prima qui sopra.</div>'}`;
+}
+async function aggiungiClasse(){
+  const es=document.getElementById('c-esito');
+  const nome=document.getElementById('c-nome').value.trim();
+  if(!nome){ es.textContent='Serve almeno il nome.'; es.style.color='#C0453B'; return; }
+  try{
+    const r=await fetch(SB_URL+'/rest/v1/classi',{method:'POST',
+      headers:capo({'Content-Type':'application/json','Prefer':'return=minimal'}),
+      body:JSON.stringify({nome, indirizzo:document.getElementById('c-ind').value.trim()||null,
+        anno:document.getElementById('c-anno').value.trim(),
+        colore:document.getElementById('c-colore').value, ordine:classi.length})});
+    if(!r.ok && r.status!==201) throw new Error(await r.text());
+    await carica();
+  }catch(e){ es.textContent='Non aggiunta: forse esiste già con lo stesso nome e anno.'; es.style.color='#C0453B'; }
+}
+async function cambiaColore(id, colore){
+  await fetch(SB_URL+'/rest/v1/classi?id=eq.'+id,{method:'PATCH',
+    headers:capo({'Content-Type':'application/json','Prefer':'return=minimal'}),
+    body:JSON.stringify({colore})});
+  await carica();
+}
+async function eliminaClasse(id){
+  const c=classeDi(id);
+  if(!confirm('Elimino la classe '+c.nome+'?\nSpariscono anche il suo orario e tutte le sue lezioni, con quello che ci hai scritto dentro.\nNon si può annullare.')) return;
+  await fetch(SB_URL+'/rest/v1/classi?id=eq.'+id,{method:'DELETE',headers:capo()});
+  await carica();
+}
+
+/* ══════════════════════════════════════════════════════════
+   VACANZE
+   ══════════════════════════════════════════════════════════ */
+function vistaPause(){
+  const elenco=sospensioni.map(s=>{
+    const uno = s.dal===s.al;
+    return `<tr>
+      <td>${esc(uno ? dataLunga(daIso(s.dal)) : dataLunga(daIso(s.dal))+' → '+dataLunga(daIso(s.al)))}</td>
+      <td>${esc(s.motivo||'')}</td>
+      <td>${s.classe_id ? esc(classeDi(s.classe_id).nome) : 'tutte le classi'}</td>
+      <td style="text-align:right"><button class="b rosso" onclick="togliPausa(${s.id})">Togli</button></td>
+    </tr>`;
+  }).join('');
+
+  return `
+  <div class="scheda">
+    <h3>Aggiungi una sospensione</h3>
+    <div class="meta">Vacanze, ponti, gite. Quando generi le lezioni, questi giorni vengono saltati.</div>
+    <div class="riga">
+      <label class="campo">Dal<input type="date" id="s-dal"></label>
+      <label class="campo">Al<input type="date" id="s-al"></label>
+      <label class="campo">Motivo<input id="s-motivo" placeholder="Vacanze di Natale" size="20"></label>
+      <button class="b pieno" onclick="aggiungiPausa()" style="align-self:flex-end">Aggiungi</button>
+    </div>
+    <div class="esito" id="s-esito"></div>
+  </div>
+  ${elenco ? '<table class="griglia-orario"><tr><th>Quando</th><th>Motivo</th><th>Chi</th><th></th></tr>'+elenco+'</table>'
+           : '<div class="vuoto">Nessuna sospensione.</div>'}
+  <div class="nota">Le sospensioni valgono al momento della generazione. Se le aggiungi
+    dopo aver generato, le ore già create restano: toglile dalla settimana, una per una,
+    oppure usa «togli le ore future ancora vuote» in <em>Orario</em>.</div>`;
+}
+async function aggiungiPausa(){
+  const es=document.getElementById('s-esito');
+  const dal=document.getElementById('s-dal').value, al=document.getElementById('s-al').value||dal;
+  if(!dal){ es.textContent='Serve almeno la data di inizio.'; es.style.color='#C0453B'; return; }
+  if(al<dal){ es.textContent='La data finale viene prima di quella iniziale.'; es.style.color='#C0453B'; return; }
+  try{
+    const r=await fetch(SB_URL+'/rest/v1/sospensioni',{method:'POST',
+      headers:capo({'Content-Type':'application/json','Prefer':'return=minimal'}),
+      body:JSON.stringify({dal, al, motivo:document.getElementById('s-motivo').value.trim()||null})});
+    if(!r.ok && r.status!==201) throw new Error();
+    await carica();
+  }catch(e){ es.textContent='Non aggiunta.'; es.style.color='#C0453B'; }
+}
+async function togliPausa(id){
+  await fetch(SB_URL+'/rest/v1/sospensioni?id=eq.'+id,{method:'DELETE',headers:capo()});
+  await carica();
+}
+
+carica();
+</script>
+</body></html>

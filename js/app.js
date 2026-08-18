@@ -826,6 +826,7 @@ function vociExtra(){
      mentre gli comparivano Inbox e Lavagna, che non sono sue. */
   return [
     {g:'Didattica',k:'__consegna__',l:'Consegna un compito',    p:'Per gli studenti',         chi:'tutti',   ic:'📤'},
+    {g:'Didattica',k:'__calendario__',l:'Calendario',           p:'Le lezioni, classe per classe', chi:'docente', ic:'📅'},
     {g:'Didattica',k:'__inbox__',   l:'Inbox',                  p:'Consegne degli studenti',  chi:'docente', ic:'📥'},
     {g:'Didattica',k:'__voti__',    l:'Votazioni',              p:'120 capitoli pronti',      chi:'tutti',   ic:'📊'},
     {g:'Strumenti',k:'__metodo__',  l:'Metodologie didattiche', p:'Debate e jigsaw pronti',   chi:'tutti',   ic:'🎓'},
@@ -860,6 +861,7 @@ const VISTE={
   __lavagna__:  {vista:'lib-lavagna-view',  uso:'lavagna',  frame:'lib-lavagna-frame',  src:'lavagna/index.html',    quando:'una volta'},
   __consegna__: {vista:'lib-consegna-view', uso:'consegna', frame:'lib-consegna-frame', src:'consegna/index.html',   quando:'ogni volta'},
   __voti__:     {vista:'lib-voti-view',     uso:'voti',     frame:'lib-voti-frame',     src:'votazioni/index.html',  quando:'ogni volta'},
+  __calendario__:{vista:'lib-calendario-view',uso:'calendario',frame:'lib-calendario-frame',src:'calendario/index.html',quando:'ogni volta'},
   __inbox__:    {vista:'lib-inbox-view',    uso:'inbox',    frame:'lib-inbox-frame',    src:'inbox/index.html',      quando:'ogni volta'},
   __prove__:    {vista:'lib-prove-view',    uso:'prove',    frame:'lib-prove-frame',    src:'prove/index.html',      quando:'ogni volta'}
 };
