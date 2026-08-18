@@ -352,7 +352,7 @@ async function avvia(){
   if(!token()){
     r.innerHTML = '<div class="kicker">Idearca · Didattica</div><h1>Votazioni</h1>' +
       '<div class="avviso"><strong>Non sei entrato come docente.</strong><br>' +
-      'Solo tu puoi creare le domande e vedere le risposte. Apri il sito, accedi con la tua password, poi torna qui.</div>';
+      'Solo il docente può creare le domande e vedere le risposte. Se sei tu, apri il sito, accedi con la tua password e torna qui.</div>';
     return;
   }
   const res = await fetch(SB_URL+'/rest/v1/menti_sessioni?select=*&aperta=eq.true&order=creato_il.desc&limit=1',

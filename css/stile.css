@@ -475,6 +475,11 @@ html[data-theme="dark"] .lib-solo{color:#d8b75e;
   background:var(--surface);border:1px solid var(--border);
   border-radius:20px;padding:.1rem .45rem;min-width:1.7rem;text-align:center;line-height:1.5}
 .lib-count:empty{display:none}
+/* «in lavorazione» non è un numero: non deve avere la pastiglia
+   tonda dei conteggi, o si legge come una quantità enorme */
+.lib-count.vuota{background:none;border:none;padding:.1rem 0;min-width:0;
+  font-size:.55rem;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--stone-light);opacity:.8;text-align:right}
 .lib-item.active .lib-count{color:var(--area,var(--forest));
   border-color:color-mix(in srgb,var(--area,var(--forest)) 35%,transparent);
   background:color-mix(in srgb,var(--area,var(--forest)) 10%,transparent)}

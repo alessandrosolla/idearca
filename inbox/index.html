@@ -54,6 +54,27 @@
   tr.nuovo td{background:#FFFBF0}
   .tbl-scroll{overflow-x:auto}
 
+  /* ── spunte ed eliminazione ─────────────────────────────
+     La colonna delle spunte sta stretta a sinistra e non si
+     allarga con il testo. La riga segnata si colora appena:
+     deve distinguersi dalla riga «nuova», che è già gialla. */
+  .col-spunta{width:1px;padding-right:.2rem}
+  .col-spunta input{accent-color:#2d5a27;width:16px;height:16px;cursor:pointer;margin:0}
+  tr.scelta td{background:#EEF3EC}
+  tr.scelta.nuovo td{background:#E8F0E5}
+  table button{font:inherit;font-size:.78rem;font-weight:600;padding:.32rem .7rem;
+    border:1px solid #E3DACB;border-radius:7px;background:#fff;cursor:pointer;white-space:nowrap}
+  table button:hover{border-color:#8A7355}
+  .cestino{color:#C0453B;border-color:#E8CFCB!important}
+  .cestino:hover{background:#C0453B;color:#fff;border-color:#C0453B!important}
+
+  .barra-scelte{display:flex;align-items:center;gap:.7rem;flex-wrap:wrap;
+    margin-bottom:.7rem;padding:.6rem .85rem;background:#fff;
+    border:1px solid #E3DACB;border-left:4px solid #2d5a27;border-radius:8px;font-size:.86rem}
+  .barra-scelte button{font:inherit;font-size:.8rem;font-weight:600;padding:.35rem .8rem;
+    border:1px solid #E3DACB;border-radius:7px;background:#fff;cursor:pointer}
+  .barra-scelte button:hover{border-color:#8A7355}
+
   .vuoto{border:1px dashed #D8CDBA;border-radius:10px;padding:2.4rem 1.5rem;
     text-align:center;color:#5A5148;font-size:.9rem;line-height:1.6}
   .avviso{background:#fff;border:1px solid #E3DACB;border-left:4px solid #C0453B;
@@ -260,8 +281,8 @@ async function carica(){
   await assicuraToken();
   if(!token()){
     cont.innerHTML = '<div class="avviso"><strong>Non sei entrato come docente.</strong><br>' +
-      'L\'archivio e le consegne sono leggibili solo da te: le regole del database non li mostrano a nessun altro. ' +
-      'Apri il sito, accedi con la tua password, poi torna qui.</div>';
+      'L\'archivio e le consegne sono leggibili solo dal docente: le regole del database non li mostrano a nessun altro. ' +
+      'Se sei tu, apri il sito, accedi con la tua password e torna qui.</div>';
     document.getElementById('conta').textContent = '';
     return;
   }
@@ -349,15 +370,104 @@ function disegna(){
           'Le loro consegne compariranno qui, e nessuno potrà leggere quelle degli altri.</div>';
       return;
     }
-    cont.innerHTML = '<div class="tbl-scroll"><table><tr>' +
-      '<th>Studente</th><th>Attività</th><th>Testo</th><th>Allegato</th><th>Quando</th></tr>' +
-      righe.map(r => `<tr class="${r.letto?'':'nuovo'}">
+    /* le spunte sopravvivono al ridisegno solo se la consegna c'è ancora */
+    const vive = new Set(righe.map(r=>r.id));
+    [...selezionate].forEach(id=>{ if(!vive.has(id)) selezionate.delete(id); });
+    const tutteSpuntate = righe.length>0 && righe.every(r=>selezionate.has(r.id));
+
+    cont.innerHTML = barraSelezione(righe.length) +
+      '<div class="tbl-scroll"><table><tr>' +
+      `<th class="col-spunta"><input type="checkbox" ${tutteSpuntate?'checked':''}
+         onchange="spuntaTutte(this.checked)" title="Segna tutte quelle che vedi"></th>` +
+      '<th>Studente</th><th>Attività</th><th>Testo</th><th>Allegato</th><th>Quando</th><th></th></tr>' +
+      righe.map(r => `<tr class="${r.letto?'':'nuovo'}${selezionate.has(r.id)?' scelta':''}">
+        <td class="col-spunta"><input type="checkbox" ${selezionate.has(r.id)?'checked':''}
+          onchange="spunta(${r.id}, this.checked)" aria-label="Segna la consegna di ${esc(r.studente)}"></td>
         <td><strong>${esc(r.studente)}</strong>${r.classe? '<br><span class="meta">'+esc(r.classe)+'</span>':''}</td>
         <td>${esc(r.attivita||'—')}</td>
         <td>${esc((r.testo||'').slice(0,180))}${(r.testo||'').length>180?'…':''}</td>
         <td>${r.file_path ? '<button onclick="scarica(\''+esc(r.file_path)+'\')">Apri</button>' : '—'}</td>
         <td>${dataIt(r.creato_il)}</td>
+        <td><button class="cestino" onclick="eliminaConsegne([${r.id}])"
+          title="Elimina questa consegna">Elimina</button></td>
       </tr>`).join('') + '</table></div>';
+  }
+}
+
+
+/* ══════════════════════════════════════════════════════════
+   ELIMINARE LE CONSEGNE
+
+   Un'inbox che non si svuota mai diventa inservibile in un mese:
+   dopo tre classi e quattro compiti sono duecento righe, e la
+   consegna di ieri sta in fondo. Serviva poterle togliere.
+
+   Una alla volta col bottone in fondo alla riga, oppure a gruppi:
+   si spuntano e si eliminano insieme, perché il caso vero non è
+   «tolgo questa» ma «ho finito di correggere il compito di marzo,
+   via tutte».
+
+   Sparisce anche l'allegato dallo spazio file: lasciarlo lì
+   sarebbe un file di uno studente che resta su un server senza
+   che più nessuno sappia di chi è.
+   ══════════════════════════════════════════════════════════ */
+let selezionate = new Set();
+
+function spunta(id, si){
+  if(si) selezionate.add(id); else selezionate.delete(id);
+  disegna();
+}
+function spuntaTutte(si){
+  const q = (document.getElementById('cerca').value||'').trim().toLowerCase();
+  consegne.filter(r => !q ||
+      (r.studente||'').toLowerCase().includes(q) ||
+      (r.attivita||'').toLowerCase().includes(q) ||
+      (r.testo||'').toLowerCase().includes(q))
+    .forEach(r=>{ if(si) selezionate.add(r.id); else selezionate.delete(r.id); });
+  disegna();
+}
+function barraSelezione(quante){
+  if(!selezionate.size) return '';
+  const n = selezionate.size;
+  return `<div class="barra-scelte">
+    <span><strong>${n}</strong> consegn${n===1?'a segnata':'e segnate'}</span>
+    <button class="cestino" onclick="eliminaConsegne([...selezionate])">Elimina le segnate</button>
+    <button onclick="spuntaTutte(false)">Togli le spunte</button>
+  </div>`;
+}
+
+async function eliminaConsegne(ids){
+  if(!ids || !ids.length) return;
+  const scelte = consegne.filter(r=>ids.includes(r.id));
+  if(!scelte.length) return;
+  const chi = scelte.length===1
+    ? `la consegna di ${scelte[0].studente}`
+    : `${scelte.length} consegne`;
+  const allegati = scelte.filter(r=>r.file_path).length;
+  if(!confirm(`Elimino ${chi}?`
+      + (allegati ? `\nSpariscono anche ${allegati} alleg${allegati===1?'ato':'ati'}.` : '')
+      + '\nNon si può annullare.')) return;
+
+  try{
+    /* prima i file, poi le righe: se salta l'eliminazione delle righe
+       resta un file orfano, fastidioso ma innocuo. Al contrario
+       resterebbe una riga che punta a un file che non c'è più. */
+    const percorsi = scelte.filter(r=>r.file_path).map(r=>r.file_path);
+    if(percorsi.length){
+      await fetch(SB_URL+'/storage/v1/object/consegne', {
+        method:'DELETE',
+        headers:Object.assign({'Content-Type':'application/json'}, intestazioni()),
+        body: JSON.stringify({prefixes: percorsi})
+      });
+    }
+    const res = await fetch(SB_URL+'/rest/v1/consegne?id=in.('+ids.join(',')+')',
+      {method:'DELETE', headers:intestazioni()});
+    if(!res.ok && res.status!==204) throw new Error(await res.text());
+    consegne = consegne.filter(r=>!ids.includes(r.id));
+    ids.forEach(id=>selezionate.delete(id));
+    disegna();
+  }catch(e){
+    alert('Non è stato possibile eliminare. La sessione da docente potrebbe essere scaduta.');
   }
 }
 

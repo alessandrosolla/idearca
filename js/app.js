@@ -548,8 +548,16 @@ async function loadLibStats(keys){
     const perMateria={};
     rows.forEach(r=>{perMateria[r.materia]=(perMateria[r.materia]||0)+1;});
     document.querySelectorAll('.lib-count[data-count]').forEach(el=>{
-      const n=perMateria[el.dataset.count];
-      if(n) el.textContent=n;
+      const k=el.dataset.count;
+      const n=perMateria[k];
+      if(n){ el.textContent=n; el.classList.remove('vuota'); return; }
+      /* Una materia senza un solo documento prima non mostrava niente,
+         e nella colonna sembrava identica alle altre: ci si entrava e
+         si trovava il vuoto. Ora lo dice prima di entrarci. Vale solo
+         per le materie vere: gli strumenti non hanno documenti da
+         contare, e un «in lavorazione» accanto alla Lavagna sarebbe
+         una bugia. */
+      if(MATERIE[k]){ el.textContent='in lavorazione'; el.classList.add('vuota'); }
     });
   }catch(e){
     if(elDesk)elDesk.textContent='';
