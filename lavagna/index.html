@@ -6,7 +6,13 @@
 <title>Lavagna — Idearca</title>
 <style>
   *{box-sizing:border-box}
-  html,body{height:100%;margin:0}
+  html,body{height:100%;margin:0;
+    /* niente rimbalzo dello scorrimento e niente pizzico sulla
+       pagina: a schermo intero sono le due cose che fanno uscire */
+    overscroll-behavior:none;touch-action:none;
+    -webkit-user-select:none;user-select:none;
+    -webkit-touch-callout:none}
+  #testo{-webkit-user-select:text;user-select:text}
   body{
     background:#FBF7F0;color:#1F1B16;
     font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
@@ -75,6 +81,15 @@
     .zoom{font-size:.78rem;min-width:3.4rem}
     .stato{display:none}
   }
+  /* il nastro degli avvisi: non riceve puntatori, quindi non
+     puo' rubare un tratto ne' far uscire da schermo intero */
+  #nastro{position:fixed;left:50%;bottom:1.2rem;transform:translateX(-50%) translateY(1rem);
+    background:#1F1B16;color:#fff;font-size:.85rem;line-height:1.4;
+    padding:.7rem 1.1rem;border-radius:11px;max-width:min(92vw,34rem);
+    box-shadow:0 10px 30px rgba(0,0,0,.25);pointer-events:none;
+    opacity:0;transition:opacity .2s,transform .2s;z-index:90}
+  #nastro.on{opacity:1;transform:translateX(-50%) translateY(0)}
+
   @media print{.bar{display:none}}
 </style>
 </head>
@@ -341,13 +356,66 @@ function palmo(){
   document.getElementById('b-palmo').classList.toggle('on', soloPenna);
 }
 
+/* ── IL PALMO NON DEVE PREMERE I BOTTONI ─────────────────
+   «Mi clicca cose» era questo: il rifiuto del palmo valeva solo
+   sulla tela, mentre la barra continuava ad accettare qualunque
+   tocco. Appoggiando la mano vicino al bordo alto si cambiava
+   colore, si passava alla gomma, si usciva a schermo intero.
+   Quando «solo penna» è acceso, la barra accetta solo penna e
+   mouse: il tocco del palmo si ferma prima di diventare un clic.
+   ──────────────────────────────────────────────────────── */
+document.querySelector('.bar').addEventListener('pointerdown', e=>{
+  notaPenna(e);
+  if(soloPenna && e.pointerType === 'touch'){
+    e.preventDefault();
+    e.stopPropagation();
+  }
+}, true);
+/* il clic vero e proprio arriva dopo: se veniva da un tocco
+   rifiutato non deve partire */
+document.querySelector('.bar').addEventListener('click', e=>{
+  if(soloPenna && e.pointerType === 'touch'){ e.preventDefault(); e.stopPropagation(); }
+}, true);
+
+/* ── NIENTE USCITE ACCIDENTALI ───────────────────────────
+   A schermo intero, su un tablet, quello che fa uscire non è
+   un bottone: è il resto della pagina che si comporta come una
+   pagina. Il rimbalzo dello scorrimento, il pizzico che
+   ingrandisce tutto il documento, il menu del tasto destro
+   quando si tiene premuto, il doppio tocco che ingrandisce.
+   Si spengono tutti, uno per uno.
+   ──────────────────────────────────────────────────────── */
+['gesturestart','gesturechange','gestureend'].forEach(ev=>
+  document.addEventListener(ev, e=>e.preventDefault(), {passive:false}));
+document.addEventListener('contextmenu', e=>{
+  if(e.target.closest('#testo')) return;   /* nel testo serve */
+  e.preventDefault();
+});
+/* il doppio tocco che ingrandisce la pagina: due tocchi a meno
+   di 350 ms l'uno dall'altro non devono contare come uno zoom */
+let ultimoTocco = 0;
+document.addEventListener('touchend', e=>{
+  const ora = Date.now();
+  if(ora - ultimoTocco < 350 && !e.target.closest('#testo')) e.preventDefault();
+  ultimoTocco = ora;
+}, {passive:false});
+/* lo scorrimento della pagina non esiste: qualunque trascinamento
+   fuori dal testo e' roba della lavagna */
+document.addEventListener('touchmove', e=>{
+  if(e.target.closest('#testo')) return;
+  e.preventDefault();
+}, {passive:false});
+
 /* ---------- schermo intero ---------- */
 function schermoIntero(){
   if(!document.fullscreenElement && !document.webkitFullscreenElement){
     const el = document.documentElement;
     const chiedi = el.requestFullscreen || el.webkitRequestFullscreen;
-    const p = chiedi ? chiedi.call(el) : Promise.reject(new Error('non supportato'));
-    Promise.resolve(p).catch(()=>alert('Lo schermo intero è stato bloccato dal browser.\n\nSe usi la lavagna dentro il sito, aprila dal suo indirizzo diretto:\n' + location.href));
+    /* «navigationUI: hide» toglie la barra del browser dove il
+       sistema lo consente: e' una barra in meno da sfiorare per
+       sbaglio col palmo mentre si scrive in alto. */
+    const p = chiedi ? chiedi.call(el, {navigationUI:'hide'}) : Promise.reject(new Error('non supportato'));
+    Promise.resolve(p).catch(()=>avvisa('Lo schermo intero è stato bloccato dal browser. Se usi la lavagna dentro il sito, aprila dal suo indirizzo diretto.'));
   }else{
     (document.exitFullscreen || document.webkitExitFullscreen).call(document);
   }
@@ -358,10 +426,17 @@ function schermoIntero(){
     const pieno = !!(document.fullscreenElement || document.webkitFullscreenElement);
     b.textContent = pieno ? '⛶ Esci' : '⛶ Schermo intero';
     b.classList.toggle('on', pieno);
+    /* Uscire senza volerlo capita: almeno lo si sa, e si sa come
+       rientrare, invece di trovarsi la barra del browser addosso
+       nel mezzo di una spiegazione. */
+    if(!pieno && eraPieno) avvisa('Sei uscito dallo schermo intero. Il bottone ⛶ ti rimette dentro.');
+    eraPieno = pieno;
   }));
+let eraPieno = false;
 
 /* ---------- puntatori ---------- */
 const attivi = new Map();      // pointerId -> {x,y} in coordinate schermo
+const ditaFerme = new Map();   // dita messe da parte dal rifiuto del palmo
 let pizzico = null;            // stato del pizzico a due dita
 let trascino = null;           // stato dello spostamento con la mano
 
@@ -369,13 +444,83 @@ function schermo(e){
   const r = tela.getBoundingClientRect();
   return {x: e.clientX - r.left, y: e.clientY - r.top};
 }
+/* ── LA PENNA SI RICONOSCE DA SOLA ───────────────────────
+   «Solo penna» è un bottone che nessuno trova prima di essersi
+   già rovinato una lavagna. Alla prima volta che tocca lo
+   schermo una penna vera, la lavagna lo capisce e accende il
+   rifiuto del palmo da sé, dicendolo. Resta un bottone, così
+   chi vuole disegnare col dito lo rispegne.
+   ──────────────────────────────────────────────────────── */
+let pennaVista = false;
+function notaPenna(e){
+  if(pennaVista || e.pointerType !== 'pen') return;
+  pennaVista = true;
+  if(!soloPenna){
+    soloPenna = true;
+    document.getElementById('b-palmo').classList.add('on');
+    avvisa('Penna riconosciuta: il tocco delle dita è ignorato. Il bottone «Solo penna» lo rimette.');
+  }
+}
 function accettabile(e){
   if(soloPenna && e.pointerType === 'touch') return false;
   return true;
 }
 
+/* ── UN AVVISO CHE NON RUBA IL TOCCO ─────────────────────
+   Niente alert: una finestra di sistema, a schermo intero,
+   fa uscire dallo schermo intero. Questo è un nastro che
+   compare e se ne va da solo, e non riceve puntatori. */
+function avvisa(testo){
+  let n=document.getElementById('nastro');
+  if(!n){
+    n=document.createElement('div'); n.id='nastro';
+    document.body.appendChild(n);
+  }
+  n.textContent=testo;
+  n.classList.add('on');
+  clearTimeout(n._t);
+  n._t=setTimeout(()=>n.classList.remove('on'), 3800);
+}
+
 tela.addEventListener('pointerdown', e=>{
+  notaPenna(e);
   if(modoAttuale === 'testo') return;
+
+  /* ── IL DIFETTO PIÙ GRAVE CHE C'ERA QUI ──────────────────
+     Il palmo veniva messo in «attivi» PRIMA di controllare se
+     era accettabile. Con la penna in mano e il palmo appoggiato
+     i puntatori diventavano due: partiva il pizzico, e il
+     pizzico butta via il tratto appena cominciato. Cioè:
+     scrivevi, e la riga spariva mentre la lavagna ingrandiva.
+     Adesso il controllo viene prima, e un puntatore rifiutato
+     non entra da nessuna parte.
+     ───────────────────────────────────────────────────────── */
+  /* ── DITA E PENNA INSIEME ────────────────────────────────
+     Il rifiuto del palmo non puo' essere «ignora tutto quello che
+     non e' penna»: e' cosi' che funzionano Procreate e i quaderni
+     digitali, e chiunque abbia usato una penna se lo aspetta —
+     la penna scrive, le dita spostano e ingrandiscono.
+     Quindi un dito solo viene messo da parte, senza disegnare
+     niente; quando i diti diventano due, tornano dentro come
+     pizzico. Il palmo appoggiato resta un dito solo e non fa mai
+     nulla, che e' esattamente quello che serve.
+     ───────────────────────────────────────────────────────── */
+  if(!accettabile(e)){
+    e.preventDefault();
+    ditaFerme.set(e.pointerId, schermo(e));
+    try{ tela.setPointerCapture(e.pointerId); }catch(_){}
+    if(ditaFerme.size === 2){
+      /* due dita: diventano un pizzico, e il tratto in corso resta
+         dov'e' — la penna non c'entra con quello che fanno le dita */
+      ditaFerme.forEach((v,id)=>attivi.set(id, v));
+      ditaFerme.clear();
+      const v=[...attivi.values()].slice(-2);
+      pizzico={d: Math.hypot(v[0].x-v[1].x, v[0].y-v[1].y),
+               c: {x:(v[0].x+v[1].x)/2, y:(v[0].y+v[1].y)/2}};
+    }
+    return;
+  }
+
   e.preventDefault();
   attivi.set(e.pointerId, schermo(e));
   try{ tela.setPointerCapture(e.pointerId); }catch(_){}
@@ -398,7 +543,6 @@ tela.addEventListener('pointerdown', e=>{
     trascino = {x:p.x, y:p.y, vx: vista.x, vy: vista.y};
     return;
   }
-  if(!accettabile(e)){ attivi.delete(e.pointerId); return; }
   if(modoAttuale === 'gomma'){
     avviaAttesaGomma(aMondo(e.clientX, e.clientY), schermo(e));
     cancellaVicino(aMondo(e.clientX, e.clientY));
@@ -411,6 +555,7 @@ tela.addEventListener('pointerdown', e=>{
 });
 
 tela.addEventListener('pointermove', e=>{
+  if(ditaFerme.has(e.pointerId)){ ditaFerme.set(e.pointerId, schermo(e)); return; }
   if(!attivi.has(e.pointerId)) return;
   attivi.set(e.pointerId, schermo(e));
   e.preventDefault();
@@ -462,8 +607,9 @@ tela.addEventListener('pointermove', e=>{
 function finePuntatore(e){
   if(e && e.pointerId !== undefined){
     attivi.delete(e.pointerId);
+    ditaFerme.delete(e.pointerId);
     try{ tela.releasePointerCapture(e.pointerId); }catch(_){}
-  }else attivi.clear();
+  }else{ attivi.clear(); ditaFerme.clear(); }
 
   if(attivi.size < 2) pizzico = null;
   if(attivi.size === 0){
