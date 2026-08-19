@@ -236,8 +236,19 @@ button.mat.agganciabile:hover{border-color:#2d5a27;background:#F1F6EF}
 .pezzo{display:inline-flex;align-items:center;gap:.28rem;background:#F6F3EC;
   border:1px solid #EFE7DA;border-radius:20px;padding:.1rem .5rem;color:#5A5148}
 .pezzo i{font-style:normal;font-weight:700;color:#1F1B16}
-.pezzo.slide{background:#F1F6EF;border-color:#CFE0CB;color:#2d5a27}
-.pezzo.slide i{color:#2d5a27}
+.pezzo.approfondimenti{background:#F1F6EF;border-color:#CFE0CB;color:#2d5a27}
+.pezzo.approfondimenti i{color:#2d5a27}
+.pezzo.att{background:#F4F0F8;border-color:#DDD2E8;color:#6b4a80}
+.pezzo.att i{color:#6b4a80}
+.qr-ore{margin-left:auto;font-size:.72rem;color:#8A7355}
+/* la barra: quanto dell'anno copre il programma, e quanto resta */
+.barra{display:flex;height:7px;border-radius:20px;overflow:hidden;margin:.45rem 0 .5rem;background:#EFE7DA}
+.b-prog{background:#2d5a27}
+.b-vuoto{background:#DDD2E8}
+.qr-coda{margin-top:.5rem;padding-top:.5rem;border-top:1px dashed #EFE7DA;
+  font-size:.78rem;line-height:1.9;color:#5A5148;display:flex;align-items:center;
+  gap:.35rem;flex-wrap:wrap}
+.qr-coda b{color:#6b4a80;font-weight:600}
 
 /* i collegamenti diretti al materiale */
 .ora .apri{color:#2d5a27;text-decoration:none;border-bottom:1px solid rgba(45,90,39,.3)}
@@ -448,7 +459,7 @@ function vistaSettimana(){
     <button class="b" onclick="settimana(0)">Questa settimana</button>
     <button class="b" onclick="settimana(1)">Dopo →</button>
     <div class="quando">${esc(intestazione)}</div>
-    <button class="b pieno" onclick="apriPianifica()">Pianifica un blocco</button>
+    <button class="b pieno" onclick="riempiTutto()">Pianifica un blocco</button>
   </div>`;
 
   const oggiIso=iso(new Date());
@@ -538,6 +549,93 @@ function barraNavigazione(titolo, passo){
 }
 
 /* ══════════════════════════════════════════════════════════
+   LE ATTIVITÀ DI IDEARCA
+
+   Un anno ha più ore di quante ne copra il programma, e quelle
+   che restano non sono un buco da lasciare vuoto: sono le ore in
+   cui si fa lavorare la classe. Il sito è pieno di roba pronta —
+   duemilatrecento domande in banca, centoventi capitoli di
+   votazioni, un debate già scritto, la lettura annotata, le mappe
+   — e finora il calendario non lo sapeva.
+
+   Queste sono le attività con cui tamponare. Hanno un ritmo:
+   una votazione ogni cinque lezioni tiene la classe sveglia,
+   una verifica ogni dodici chiude un blocco, un debate ogni
+   venti vale la pena. Il ritmo serve a non metterne tre di fila
+   e poi più niente.
+   ══════════════════════════════════════════════════════════ */
+const ATTIVITA=[
+  {k:'votazione', n:'Votazione in aula',    ogni:5,
+   d:'Le domande ci sono già: 120 capitoli in banca.', dove:'../votazioni/index.html'},
+  {k:'verifica',  n:'Verifica scritta',     ogni:12,
+   d:'Il generatore la impagina e la stampa.',          dove:'../prove/verifiche.html'},
+  {k:'lettura',   n:'Lettura annotata',     ogni:8,
+   d:'Un brano su cui la classe scrive insieme.',       dove:'../prove/annota.html'},
+  {k:'debate',    n:'Debate',               ogni:20,
+   d:'Materiale pronto: meglio subirla o commetterla.', dove:'../metodologie/debate-ingiustizia.html'},
+  {k:'mappa',     n:'Mappa concettuale',    ogni:10,
+   d:'Si costruisce insieme da un testo.',              dove:'../prove/mappe.html'},
+  {k:'contesto',  n:'Macchina del contesto',ogni:14,
+   d:'Un anno, la vita di allora.',                     dove:'../prove/contesto.html'},
+  {k:'grafici',   n:'Grafici animati',      ogni:16,
+   d:'Quattordici serie storiche da leggere insieme.',  dove:'../prove/grafici.html'},
+  {k:'confronto', n:'Confrontatore di filosofi', ogni:18,
+   d:'Dodici domande, cinquantun autori.',              dove:'../prove/confronto.html'},
+  {k:'ripasso',   n:'Ripasso',              ogni:9,
+   d:'Un\'ora per rimettere in fila quello che si è fatto.', dove:''}
+];
+
+/* Quali attività mettere nelle ore che restano.
+
+   Col resto della divisione veniva fuori una cosa assurda: nelle
+   ore in cui non «toccava» niente finiva un ripasso, e su
+   cinquantatré ore uscivano trentatré ripassi. Nessuno fa
+   trentatré ripassi in un anno.
+
+   Si fa al contrario: ognuna dice ogni quante ore vorrebbe
+   comparire, da lì esce la sua quota, e se le quote non bastano a
+   coprire le ore si gira di nuovo l'elenco dalla più frequente.
+   Poi si mescolano in modo che restino distanziate invece che a
+   grappoli. */
+function attivitaPer(quante, giaFatte){
+  if(quante<=0) return [];
+  const conto=[];
+  ATTIVITA.forEach(a=>{
+    const q=Math.floor(quante / a.ogni);
+    for(let i=0;i<q;i++) conto.push(a);
+  });
+  /* se avanzano ore, si ripassa l'elenco dalle più frequenti */
+  const perFrequenza=[...ATTIVITA].sort((a,b)=>a.ogni-b.ogni);
+  let i=0;
+  while(conto.length<quante){ conto.push(perFrequenza[i % perFrequenza.length]); i++; }
+  conto.length=quante;
+
+  /* Distanziarle. A rotazione veniva fuori una di ogni tipo nelle
+     prime ore — compresa la verifica scritta, alla settima ora di
+     un programma appena cominciato. Invece ognuna prende i propri
+     posti distribuiti su tutte le ore, e le più rare scelgono per
+     prime perché sono quelle a cui la posizione importa: una
+     verifica sta alla fine di un blocco, un ripasso sta ovunque. */
+  const perTipo={};
+  conto.forEach(a=>{ (perTipo[a.k]=perTipo[a.k]||[]).push(a); });
+  const fuori=new Array(quante).fill(null);
+  Object.values(perTipo)
+    .sort((a,b)=>b[0].ogni-a[0].ogni)      /* la più rara per prima */
+    .forEach(gruppo=>{
+      const q=gruppo.length;
+      gruppo.forEach((a,i)=>{
+        let posto=Math.min(quante-1, Math.floor((i+1)*quante/(q+1)));
+        while(posto<quante && fuori[posto]) posto++;
+        if(posto>=quante){ posto=fuori.indexOf(null); }
+        if(posto>=0) fuori[posto]=a;
+      });
+    });
+  /* i buchi rimasti al ripasso, che non ha pretese */
+  const ripasso=ATTIVITA.find(a=>a.k==='ripasso');
+  return fuori.map(a=>a||ripasso);
+}
+
+/* ══════════════════════════════════════════════════════════
    IL QUADRO
 
    La domanda vera non è «quante ore ho vuote»: è «ci sto dentro
@@ -565,39 +663,76 @@ function contiPerClasse(){
         restano[k]=scaffale(mat,k).filter(m=>!visti.has(m.id)).length;
         totalePezzi+=restano[k];
       });
-      const lezDaFare=restano.slide;
+      /* le ore che il programma occupa sono approfondimenti + slide,
+         cioe' tutto quello che si spiega: prima contavo un solo
+         scaffale e il numero usciva sbagliato */
+      const lezDaFare=programmaDi(mat).filter(m=>!visti.has(m.id)).length;
       const ore=libere.length;
-      const ultima=libere[Math.min(ore,lezDaFare)-1];
-      const arrivo=programmaDi(mat).filter(m=>!visti.has(m.id))[Math.min(ore,lezDaFare)-1];
+      /* la data di fine si chiede al piano vero: con lezioni e
+         attività mescolate, il programma non finisce piu' alla
+         trentasettesima ora ma verso giugno, ed e' quello che si
+         vuole leggere */
+      const piano=pianoPer(c.id, mat, oggi);
+      const conProg=piano.filter(p=>p.slide);
+      const ultima=conProg.length ? conProg[conProg.length-1].lezione : null;
+      const arrivo=conProg.length ? conProg[conProg.length-1].slide.titolo : null;
       out.push({classe:c, materia:mat, ore, lezDaFare, restano, totalePezzi,
                 fine: ultima ? ultima.data : null,
-                arrivo: arrivo ? arrivo.titolo : null,
+                arrivo: arrivo,
                 ciSta: ore>=lezDaFare, scarto: ore-lezDaFare});
     });
   });
   return out;
 }
 
+/* Il quadro risponde a due domande, in quest'ordine:
+   quante ore ho, e quante ne copre il programma. Quello che
+   avanza non è un errore: è lo spazio da riempire con le cose
+   pronte del sito, e il quadro lo dice con i nomi. */
 function quadro(){
   const q=contiPerClasse();
   if(!q.length) return '';
   return '<div class="quadro">'+q.map(x=>{
-    const esito = x.lezDaFare===0
-      ? '<b class="ok">Programma finito</b> — tutte le lezioni sono già preparate'
-      : x.ciSta
-        ? `<b class="ok">Ci stai</b> — ${x.lezDaFare} lezion${x.lezDaFare===1?'e':'i'} in ${x.ore} ore, te ne avanzano ${x.scarto}`
-        : `<b class="no">Non ci stai</b> — ${x.lezDaFare} lezioni ma solo ${x.ore} ore: ne mancano ${-x.scarto}`;
-    const dove = x.lezDaFare===0 ? ''
-      : x.ciSta
-        ? (x.fine ? `<span class="fin">Finisci il ${esc(dataLunga(daIso(x.fine)))}</span>` : '')
-        : (x.arrivo ? `<span class="fin">Arrivi a «${esc(x.arrivo)}» e ti fermi lì</span>` : '');
-    const pezzi=Object.keys(SCAFFALI).filter(k=>x.restano[k])
+    const scoperte=Math.max(0, x.scarto);
+    const barra=`<div class="barra">
+      <div class="b-prog" style="flex:${Math.min(x.lezDaFare,x.ore)||0.001}"></div>
+      <div class="b-vuoto" style="flex:${scoperte||0.001}"></div></div>`;
+
+    let esito, dove='';
+    if(x.lezDaFare===0){
+      esito='<b class="ok">Programma già distribuito</b>';
+    }else if(x.ciSta){
+      esito=`<b class="ok">Il programma ci sta</b> — ${x.lezDaFare} lezion${x.lezDaFare===1?'e':'i'} in ${x.ore} ore`;
+      if(x.fine) dove=`<span class="fin">l'ultima cade il ${esc(dataLunga(daIso(x.fine)))}</span>`;
+    }else{
+      esito=`<b class="no">Il programma non ci sta</b> — ${x.lezDaFare} lezioni ma ${x.ore} ore: ne mancano ${-x.scarto}`;
+      if(x.arrivo) dove=`<span class="fin">arriveresti a «${esc(x.arrivo)}»</span>`;
+    }
+
+    /* le ore che restano dopo il programma, con che cosa riempirle */
+    let coda='';
+    if(scoperte>0){
+      const att=attivitaPer(scoperte, 0);
+      const conteggio={};
+      att.forEach(a=>{ conteggio[a.n]=(conteggio[a.n]||0)+1; });
+      coda=`<div class="qr-coda">
+        <b>${scoperte} or${scoperte===1?'a resta':'e restano'} dopo il programma.</b>
+        Il sito le riempie con: ${Object.entries(conteggio)
+          .sort((a,b)=>b[1]-a[1])
+          .map(([n,q])=>`<span class="pezzo att">${esc(n)} <i>${q}</i></span>`).join('')}
+      </div>`;
+    }
+
+    const pezzi=ORDINE.filter(k=>x.restano[k])
       .map(k=>`<span class="pezzo ${k}">${SCAFFALI[k].nome} <i>${x.restano[k]}</i></span>`).join('');
+
     return `<div class="qr">
       <div class="qr-cap"><span class="pill" style="background:${esc(x.classe.colore)}">${esc(x.classe.nome)}</span>
-        <b>${esc(x.materia)}</b></div>
+        <b>${esc(x.materia)}</b><span class="qr-ore">${x.ore} ore da qui a fine anno</span></div>
+      ${barra}
       <div class="qr-esito">${esito}${dove?' · '+dove:''}</div>
-      <div class="qr-pezzi">Da distribuire: ${pezzi||'niente'}</div>
+      <div class="qr-pezzi">In libreria: ${pezzi||'niente'}</div>
+      ${coda}
     </div>`;
   }).join('')+'</div>';
 }
@@ -770,25 +905,36 @@ function primoAvvio(){
    compiti.
    ───────────────────────────────────────────────────────── */
 const SCAFFALI={
-  slide:        {nome:'Slide',           tipi:['pdf','quiz','video','materiale']},
-  fonti:        {nome:'Fonti',           tipi:['fonte','source']},
-  approfondimenti:{nome:'Approfondimenti',tipi:['esercizio','exercise']},
-  risorse:      {nome:'Risorse',         tipi:['interdisciplinare','link']},
-  compiti:      {nome:'Compiti',         tipi:['compito','homework']}
+  /* Gli approfondimenti sono le lezioni vere: le slide su cui si
+     sta davvero l'ora. Vengono prima di tutto, e sono loro a
+     dettare quante ore serve avere. */
+  approfondimenti:{nome:'Lezioni',  tipi:['esercizio','exercise'], filo:true},
+  slide:        {nome:'Slide',      tipi:['pdf','video','materiale']},
+  compiti:      {nome:'Compiti',    tipi:['compito','homework']},
+  fonti:        {nome:'Fonti',      tipi:['fonte','source']},
+  risorse:      {nome:'Risorse',    tipi:['interdisciplinare','link']}
 };
+/* L'ordine in cui si riempie un'ora. Prima le lezioni
+   approfondite, che sono il programma. Poi le slide, che sono
+   comunque materiale da spiegare. I compiti prima delle fonti:
+   una lezione senza compiti si recupera, un compito mai
+   assegnato no. Risorse per ultime. */
+const ORDINE=['approfondimenti','slide','compiti','fonti','risorse'];
 function scaffaleDi(m){
   const t=(m.tipo||'').toLowerCase();
   for(const k in SCAFFALI) if(SCAFFALI[k].tipi.includes(t)) return k;
-  return 'slide';           /* quello che non si riconosce e' materiale da lezione */
+  return 'slide';
 }
 /* i materiali di uno scaffale, nell'ordine del programma */
 function scaffale(materia, quale){
   return materiali.filter(m=>m.materia===materia && scaffaleDi(m)===quale);
 }
-/* il filo del programma: le slide, che sono una per ora */
+/* Il filo del programma: le ore che si «riempiono davvero».
+   Prima gli approfondimenti, poi le slide. Ogni pezzo vale un'ora
+   e detta quante ore servono. */
 function programmaDi(materia){
   if(!materia) return [];
-  return scaffale(materia, 'slide');
+  return scaffale(materia,'approfondimenti').concat(scaffale(materia,'slide'));
 }
 /* quelli che questa classe ha già visto, in qualunque ora */
 function giaUsati(classeId, materia){
@@ -880,16 +1026,27 @@ async function riempiTutto(){
   }
 
   const totale=lavoro.reduce((a,x)=>a+x.piano.length,0);
-  const righe=lavoro.map(x=>`${x.classe.nome} · ${x.materia}: ${x.piano.length} ore, `+
-    `da «${x.piano[0].slide.titolo}» a «${x.piano[x.piano.length-1].slide.titolo}»`);
+  const righe=lavoro.map(x=>{
+    const conProg=x.piano.filter(p=>p.slide);
+    const conAtt =x.piano.filter(p=>p.attivita);
+    let r=`${x.classe.nome} · ${x.materia}: ${x.piano.length} ore`;
+    if(conProg.length) r+=`\n   programma: ${conProg.length} ore, da «${conProg[0].slide.titolo}» a «${conProg[conProg.length-1].slide.titolo}»`;
+    if(conAtt.length){
+      const c={}; conAtt.forEach(p=>c[p.attivita.n]=(c[p.attivita.n]||0)+1);
+      r+=`\n   attività: ${Object.entries(c).map(([n,q])=>n+' ×'+q).join(', ')}`;
+    }
+    return r;
+  });
   if(!confirm('Riempio '+totale+' ore?\n\n'+righe.join('\n')+
     '\n\nLe ore in cui hai già scritto qualcosa non le tocco.')) return;
 
   let fatte=0;
   for(const x of lavoro){
     for(const p of x.piano){
-      const corpo={argomento:p.slide.titolo,
-                   materiali:[p.slide.id, ...p.extra.map(m=>m.id)]};
+      const corpo = p.slide
+        ? {argomento:p.slide.titolo, materiali:[p.slide.id, ...p.extra.map(m=>m.id)]}
+        : {argomento:p.attivita.n, materiali:[],
+           note:p.attivita.d + (p.attivita.dove?'\n'+p.attivita.dove:'')};
       if(p.compito) corpo.compiti=p.compito.titolo;
       try{
         const r=await fetch(SB_URL+'/rest/v1/lezioni?id=eq.'+p.lezione.id,{method:'PATCH',
@@ -912,10 +1069,42 @@ function pianoPer(cid, mat, dal){
     .sort((a,b)=> a.data===b.data ? a.ora_inizio.localeCompare(b.ora_inizio) : a.data.localeCompare(b.data));
   const visti=giaUsati(cid, mat);
   const slide=programmaDi(mat).filter(m=>!visti.has(m.id));
-  const ore=libere.slice(0, slide.length);
-  if(!ore.length) return [];
+  if(!libere.length) return [];
 
-  const piano=ore.map((l,i)=>({lezione:l, slide:slide[i], extra:[], compito:null}));
+  /* ── PROGRAMMA E ATTIVITÀ, MESCOLATI ─────────────────────
+     Prima si mettevano tutte le lezioni di fila e poi tutte le
+     attività: il programma finiva a dicembre e da gennaio a
+     giugno restavano quattro mesi di quiz. Un anno non è fatto
+     così. Le trentasette ore di programma si distribuiscono su
+     tutte le sessantacinque, e nei buchi vanno le attività: una
+     votazione ogni tanto, una verifica alla fine di un blocco.
+
+     La spartizione è quella che si usa per disegnare una retta
+     su una griglia di pixel: a ogni ora si guarda se il conto
+     del programma è avanzato di uno. Escono distanziate in modo
+     uniforme senza calcoli complicati.
+     ───────────────────────────────────────────────────────── */
+  const nOre=libere.length, nProg=Math.min(slide.length, nOre);
+  const att=attivitaPer(nOre-nProg, 0);
+  const piano=[];
+  let iProg=0, iAtt=0, contatore=0;
+  libere.forEach((l,i)=>{
+    /* «ceil» invece di «floor»: la prima ora dell'anno dev'essere
+       una lezione, non una votazione su un programma non ancora
+       cominciato */
+    const quanti=Math.ceil((i+1)*nProg/nOre);
+    if(quanti>contatore && iProg<nProg){
+      contatore=quanti;
+      piano.push({lezione:l, slide:slide[iProg++], extra:[], compito:null});
+    }else if(iAtt<att.length){
+      piano.push({lezione:l, attivita:att[iAtt++], extra:[], compito:null});
+    }else if(iProg<nProg){
+      contatore=quanti;
+      piano.push({lezione:l, slide:slide[iProg++], extra:[], compito:null});
+    }
+  });
+  /* le ore del programma, per appenderci fonti e compiti */
+  const conProg=piano.filter(p=>p.slide);
   /* ── L'ORDINE DI PRIORITÀ ────────────────────────────────
      Prima le lezioni: sono il programma, e ne va una per ora,
      sempre. Poi i compiti, perché una lezione senza compiti si
@@ -926,16 +1115,16 @@ function pianoPer(cid, mat, dal){
      ───────────────────────────────────────────────────── */
   const comp=scaffale(mat,'compiti').filter(m=>!visti.has(m.id));
   comp.forEach((m,i)=>{
-    const dove=Math.min(ore.length-1,
-      Math.floor((i+0.5)*ore.length/Math.max(1,comp.length)));
-    if(!piano[dove].compito) piano[dove].compito=m;
+    const dove=Math.min(conProg.length-1,
+      Math.floor((i+0.5)*conProg.length/Math.max(1,comp.length)));
+    if(conProg[dove] && !conProg[dove].compito) conProg[dove].compito=m;
   });
-  ['fonti','approfondimenti','risorse'].forEach(k=>{
+  ['fonti','risorse'].forEach(k=>{
     const pezzi=scaffale(mat,k).filter(m=>!visti.has(m.id));
     pezzi.forEach((m,i)=>{
-      const dove=Math.min(ore.length-1,
-        Math.floor((i+0.5)*ore.length/Math.max(1,pezzi.length)));
-      piano[dove].extra.push(m);
+      const dove=Math.min(conProg.length-1,
+        Math.floor((i+0.5)*conProg.length/Math.max(1,pezzi.length)));
+      if(conProg[dove]) conProg[dove].extra.push(m);
     });
   });
   return piano;
@@ -948,172 +1137,6 @@ function avvisaGrande(titolo, testo){
       <button class="b" onclick="chiudiPannello()">Chiudi</button></header>
     <div style="font-size:.88rem;line-height:1.75;color:#5A5148;white-space:pre-line">${esc(testo)}</div>`;
   document.getElementById('velo').classList.add('on');
-}
-
-function apriPianifica(){
-  const opzC=classi.map(c=>`<option value="${c.id}">${esc(c.nome)}</option>`).join('');
-  const mats=[...new Set(materiali.map(m=>m.materia))].filter(Boolean);
-  const opzM=mats.map(m=>`<option value="${esc(m)}">${esc(m)} (${programmaDi(m).length})</option>`).join('');
-
-  document.getElementById('pannello').innerHTML=`
-    <header>
-      <div style="flex:1"><h2>Pianifica un blocco</h2>
-        <div class="sub">Distribuisce il programma sulle ore ancora vuote, una per ora.</div></div>
-      <button class="b" onclick="chiudiPannello()">Chiudi</button>
-    </header>
-    <div class="riga">
-      <label class="campo">Classe<select id="pf-classe" onchange="anteprimaPiano()">${opzC}</select></label>
-      <label class="campo">Programma<select id="pf-materia" onchange="disegnaScaffali();anteprimaPiano()">${opzM}</select></label>
-      <label class="campo">Dal<input type="date" id="pf-dal" value="${esc(iso(new Date()))}" onchange="anteprimaPiano()"></label>
-    </div>
-    <div class="blocco" style="margin-top:.9rem">
-      <div class="tit">Che cosa distribuire</div>
-      <div class="scaffali" id="pf-scaffali"></div>
-    </div>
-    <div class="nota" style="margin:.6rem 0">Le slide fanno da filo: una per ora.
-      Fonti, approfondimenti e risorse si spalmano lungo lo stesso tratto di programma,
-      e i compiti finiscono nel campo dei compiti. Riempie solo le ore vuote, e riprende
-      da dove la classe è arrivata.</div>
-    <div id="pf-anteprima"></div>
-    <div class="azioni">
-      <button class="b pieno" id="pf-vai" onclick="eseguiPiano()">Pianifica</button>
-      <span class="esito" id="pf-esito"></span>
-    </div>`;
-  document.getElementById('velo').classList.add('on');
-  disegnaScaffali();
-  anteprimaPiano();
-}
-
-/* quali scaffali ha davvero quella materia: proporre di
-   distribuire fonti che non esistono e' rumore */
-function disegnaScaffali(){
-  const mat=document.getElementById('pf-materia').value;
-  const box=document.getElementById('pf-scaffali');
-  if(!box) return;
-  box.innerHTML=Object.keys(SCAFFALI).map(k=>{
-    const n=scaffale(mat,k).length;
-    if(!n) return '';
-    return `<label class="scaff${k==='slide'?' filo':''}">
-      <input type="checkbox" value="${k}" checked ${k==='slide'?'disabled':''}
-        onchange="anteprimaPiano()">
-      <span>${SCAFFALI[k].nome}</span><i>${n}</i>
-    </label>`;
-  }).join('') || '<div style="font-size:.8rem;color:#8A7355">Nessun materiale per questo programma.</div>';
-}
-
-/* ══════════════════════════════════════════════════════════
-   COME SI DISTRIBUISCE
-
-   Le slide sono il filo: una per ora, nell'ordine. Le ore da
-   riempire sono tante quante le slide che restano.
-
-   Gli altri scaffali non hanno lo stesso passo — di solito le
-   fonti sono meno delle slide — e allora si spalmano: sei fonti
-   su quattordici ore vuol dire una ogni due o tre, distribuite
-   in modo uniforme invece di ammucchiarle all'inizio. La formula
-   e' quella di sempre: il pezzo i-esimo va nell'ora
-   round(i * ore / pezzi).
-
-   I compiti sono l'eccezione: non si attaccano, si scrivono. Il
-   titolo del compito finisce nel campo dei compiti, con la data
-   della lezione successiva come scadenza — che e' quando si
-   correggono.
-   ══════════════════════════════════════════════════════════ */
-function scaffaliScelti(){
-  return [...document.querySelectorAll('#pf-scaffali input:checked')].map(i=>i.value);
-}
-function calcolaPiano(){
-  const cid=+document.getElementById('pf-classe').value;
-  const mat=document.getElementById('pf-materia').value;
-  const dal=document.getElementById('pf-dal').value;
-  const scelti=scaffaliScelti();
-
-  const libere=lezioni.filter(l=>l.classe_id===cid && l.materia===mat && l.data>=dal
-      && !l.argomento && !(l.materiali||[]).length)
-    .sort((a,b)=> a.data===b.data ? a.ora_inizio.localeCompare(b.ora_inizio) : a.data.localeCompare(b.data));
-  const visti=giaUsati(cid, mat);
-
-  const slide=programmaDi(mat).filter(m=>!visti.has(m.id));
-  const ore=libere.slice(0, slide.length);
-  if(!ore.length) return [];
-
-  /* ogni ora parte con la sua slide */
-  const piano=ore.map((l,i)=>({lezione:l, slide:slide[i], extra:[], compito:null}));
-
-  /* gli altri scaffali, spalmati sulle stesse ore */
-  const comp=scaffale(mat,'compiti').filter(m=>!visti.has(m.id));
-  comp.forEach((m,i)=>{
-    const dove=Math.min(ore.length-1,
-      Math.floor((i+0.5)*ore.length/Math.max(1,comp.length)));
-    if(!piano[dove].compito) piano[dove].compito=m;
-  });
-  ['fonti','approfondimenti','risorse'].forEach(k=>{
-    if(!scelti.includes(k)) return;
-    const pezzi=scaffale(mat,k).filter(m=>!visti.has(m.id));
-    pezzi.forEach((m,i)=>{
-      /* il mezzo passo sposta ogni pezzo al centro della sua fascia
-         invece che all'inizio: senza, il primo di ogni scaffale
-         cadeva tutto sulla prima ora e il resto restava spoglio */
-      const dove=Math.min(ore.length-1,
-        Math.floor((i+0.5)*ore.length/Math.max(1,pezzi.length)));
-      piano[dove].extra.push(m);
-    });
-  });
-
-  if(scelti.includes('compiti')){
-    const comp=scaffale(mat,'compiti');
-    comp.forEach((m,i)=>{
-      const dove=Math.min(ore.length-1,
-        Math.floor((i+0.5)*ore.length/Math.max(1,comp.length)));
-      if(!piano[dove].compito) piano[dove].compito=m;
-    });
-  }
-  return piano;
-}
-function anteprimaPiano(){
-  const piano=calcolaPiano();
-  const box=document.getElementById('pf-anteprima');
-  if(!piano.length){
-    box.innerHTML='<div class="vuoto" style="padding:1.2rem">Nessuna ora da riempire: '+
-      'o non ci sono ore vuote di quella materia dopo quella data, o il programma è finito.</div>';
-    document.getElementById('pf-vai').disabled=true;
-    return;
-  }
-  document.getElementById('pf-vai').disabled=false;
-  box.innerHTML='<table class="griglia-orario">'+
-    piano.slice(0,12).map(p=>`<tr>
-      <td style="width:8.4rem">${esc(dataLunga(daIso(p.lezione.data)))}</td>
-      <td style="width:4rem">${oreIt(p.lezione.ora_inizio)}</td>
-      <td>${esc(p.slide.titolo)}
-        ${p.extra.map(m=>`<span class="agg">+ ${esc(m.titolo)}</span>`).join('')}
-        ${p.compito?`<span class="agg comp">✎ ${esc(p.compito.titolo)}</span>`:''}
-      </td></tr>`).join('')+
-    '</table>'+ (piano.length>12
-      ? `<div style="font-size:.78rem;color:#8A7355;margin-top:.4rem">…e altre ${piano.length-12} ore</div>` : '');
-}
-async function eseguiPiano(){
-  const piano=calcolaPiano();
-  if(!piano.length) return;
-  const es=document.getElementById('pf-esito');
-  es.textContent='Pianifico…';
-  let fatte=0;
-  try{
-    /* una richiesta per ora: sono poche decine e si vede subito
-       quale non è passata, invece di un aggiornamento in blocco
-       che fallisce tutto insieme */
-    for(const p of piano){
-      const corpo={argomento:p.slide.titolo,
-                   materiali:[p.slide.id, ...p.extra.map(m=>m.id)]};
-      if(p.compito) corpo.compiti=p.compito.titolo;
-      const r=await fetch(SB_URL+'/rest/v1/lezioni?id=eq.'+p.lezione.id,{method:'PATCH',
-        headers:capo({'Content-Type':'application/json','Prefer':'return=minimal'}),
-        body:JSON.stringify(corpo)});
-      if(r.ok || r.status===204){ Object.assign(p.lezione, corpo); fatte++; }
-    }
-    es.textContent='✓ '+fatte+' or'+(fatte===1?'a pianificata':'e pianificate');
-    disegna();
-    setTimeout(chiudiPannello, 900);
-  }catch(e){ es.textContent='Non riuscita.'; es.style.color='#C0453B'; }
 }
 
 /* ══════════════════════════════════════════════════════════
