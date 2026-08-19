@@ -385,7 +385,11 @@ html[data-theme="dark"] .theme-toggle .icon-moon{display:block}
 .search-empty{padding:1rem;font-size:.8rem;color:var(--stone-light);text-align:center}
 @media(max-width:900px){.lib-search-wrap{display:none}}
 .lib-user{display:flex;align-items:center;gap:.75rem}
-.lib-avatar{width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,var(--forest),var(--forest-light));display:flex;align-items:center;justify-content:center;font-size:.78rem;font-weight:500;color:var(--white);flex-shrink:0}
+/* Il bollino con le iniziali e' un bottone: per il docente e' la
+   scorciatoia al calendario, l'unica cosa che si apre ogni giorno.
+   Per lo studente resta un tondo e basta, senza cursore ne' azione. */
+.lib-avatar{border:0;font-family:'Jost',sans-serif;padding:0;
+  width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,var(--forest),var(--forest-light));display:flex;align-items:center;justify-content:center;font-size:.78rem;font-weight:500;color:var(--white);flex-shrink:0}
 .lib-username{font-size:.8rem;color:var(--stone);line-height:1.2}
 .lib-username strong{display:block;color:var(--ink);font-weight:500;font-size:.85rem}
 .lib-logout{font-size:.67rem;letter-spacing:.12em;text-transform:uppercase;color:var(--stone);background:none;border:1px solid var(--border);padding:.4rem 1rem;border-radius:2px;cursor:pointer;font-family:'Jost',sans-serif;transition:all .22s}
@@ -1450,3 +1454,7 @@ html[data-theme="dark"] .chi-banda{background:#171d15}
   .avviso-consegna{right:.8rem;left:.8rem;bottom:.8rem;max-width:none}
   .ac-vai{font-size:.68rem;padding:.5rem .7rem}
 }
+
+.lib-avatar.apribile{cursor:pointer;transition:transform .15s,box-shadow .15s}
+.lib-avatar.apribile:hover{transform:scale(1.06);
+  box-shadow:0 0 0 3px color-mix(in srgb,var(--forest) 22%,transparent)}

@@ -507,7 +507,14 @@ function showLibrary(){
   window.scrollTo(0,0);
   const s=JSON.parse(sessionStorage.getItem('ix')||'{}');
   const initials=(s.nome||'U').split(' ').map(w=>w[0]).join('').slice(0,2).toUpperCase();
-  document.getElementById('lib-avatar').textContent=initials;
+  const bollino=document.getElementById('lib-avatar');
+  bollino.textContent=initials;
+  /* Per il docente il bollino apre il calendario: è la cosa che si
+     guarda ogni mattina, e cercarla ogni volta nella colonna è un
+     gesto in più ripetuto duecento volte l'anno. */
+  const suo = s.ruolo==='docente' || s.ruolo==='osservatore';
+  bollino.classList.toggle('apribile', suo);
+  bollino.title = suo ? 'Apri il calendario' : '';
   document.getElementById('lib-uname').textContent=s.nome||'Utente';
   const docente = s.ruolo==='docente';
   const osservatore = s.ruolo==='osservatore';
@@ -1177,6 +1184,19 @@ function telApri(k){
   mobChange(k);
   window.scrollTo({top:0, behavior:'instant'});
 }
+/* Il bollino con le iniziali: per il docente è la scorciatoia al
+   calendario. Per gli altri non fa niente — meglio un bottone che
+   non reagisce che una voce che non dovrebbero vedere. */
+function avatarClic(){
+  if(!vedeRoba()) return;
+  const p=document.getElementById('page-library');
+  if(p) p.classList.add('tel-dentro');   /* sul telefono si passa alla seconda schermata */
+  mostraVista('__calendario__');
+  document.querySelectorAll('.lib-item').forEach(n=>
+    n.classList.toggle('active', n.dataset.key==='__calendario__'));
+  window.scrollTo({top:0, behavior:'instant'});
+}
+
 function telTornaAlle(){
   const p=document.getElementById('page-library');
   if(p) p.classList.remove('tel-dentro');

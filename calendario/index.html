@@ -93,6 +93,36 @@ label.campo{display:flex;flex-direction:column;gap:.25rem;font-size:.7rem;
   padding-top:1rem;border-top:1px solid #EFE7DA}
 .pannello .azioni .spinge{margin-left:auto}
 
+/* ── la proposta del programma ──────────────────────────
+   Verde chiaro e non bianca: deve leggersi come un
+   suggerimento del calendario, non come qualcosa che hai
+   gia scritto tu. */
+.proposta{display:flex;align-items:center;gap:.9rem;flex-wrap:wrap;
+  background:#F1F6EF;border:1px solid #CFE0CB;border-radius:11px;
+  padding:.75rem .95rem;margin-bottom:1.1rem}
+.proposta > div{flex:1;min-width:12rem}
+.proposta .etichetta{display:block;font-size:.6rem;letter-spacing:.13em;
+  text-transform:uppercase;color:#4a7a44;font-weight:700;margin-bottom:.15rem}
+.proposta b{font-size:.95rem;font-weight:500;line-height:1.3}
+
+.mat.scelto{background:#F1F6EF;border-color:#CFE0CB}
+.mat .via{margin-left:auto;flex:none;font:inherit;font-size:1rem;line-height:1;
+  border:0;background:none;color:#8A7355;cursor:pointer;padding:0 .2rem}
+.mat .via:hover{color:#C0453B}
+button.mat.agganciabile{width:100%;text-align:left;cursor:pointer;font:inherit;
+  font-size:.82rem;background:#fff}
+button.mat.agganciabile:hover{border-color:#2d5a27;background:#F1F6EF}
+.mat .piu{margin-left:auto;flex:none;color:#2d5a27;font-weight:700}
+
+/* la proposta dentro l'ora, nella settimana */
+.ora .proposto{display:inline-flex;align-items:center;gap:.45rem;margin-top:.25rem;
+  font-size:.74rem;color:#4a7a44;background:#F1F6EF;border:1px solid #CFE0CB;
+  border-radius:20px;padding:.12rem .3rem .12rem .6rem;max-width:100%}
+.ora .proposto span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ora .proposto button{font:inherit;font-size:.68rem;font-weight:700;
+  border:0;border-radius:20px;background:#2d5a27;color:#fff;padding:.16rem .55rem;cursor:pointer}
+.ora .proposto button:hover{background:#24491f}
+
 /* ── orario e classi ────────────────────────────────────── */
 .griglia-orario{width:100%;border-collapse:collapse;font-size:.84rem;background:#fff;
   border:1px solid #E3DACB;border-radius:10px;overflow:hidden}
@@ -279,6 +309,7 @@ function vistaSettimana(){
     <button class="b" onclick="settimana(0)">Questa settimana</button>
     <button class="b" onclick="settimana(1)">Dopo →</button>
     <div class="quando">${esc(intestazione)}</div>
+    <button class="b pieno" onclick="apriPianifica()">Pianifica un blocco</button>
   </div>`;
 
   const oggiIso=iso(new Date());
@@ -301,12 +332,18 @@ function vistaSettimana(){
     delGiorno.forEach(l=>{
       const c=classeDi(l.classe_id);
       const quanti=(l.materiali||[]).length;
+      /* l'ora vuota porta con se' la proposta: si accetta senza
+         aprire niente, ed e' il gesto che si fa piu' spesso */
+      const pr = (!l.argomento && !quanti) ? prossimo(l) : null;
       out+=`<div class="ora${l.svolta?' fatta':''}" onclick="apriLezione(${l.id})">
         <span class="spunta">${l.svolta?'✓':'○'}</span>
         <span class="quando">${oreIt(l.ora_inizio)}${l.ora_fine?'–'+oreIt(l.ora_fine):''}</span>
         <span class="pill" style="background:${esc(c.colore)}">${esc(c.nome)}</span>
         <span class="corpo">
           <span class="arg${l.argomento?'':' vuoto2'}">${esc(l.argomento||'— da preparare —')}</span>
+          ${pr ? `<span class="proposto" onclick="event.stopPropagation()">
+            <span title="${esc(pr.titolo)}">${esc(pr.titolo)}</span>
+            <button onclick="metti(${l.id},${pr.id})">Metti</button></span>` : ''}
           <span class="sotto">
             ${l.materia?'<span>'+esc(l.materia)+'</span>':''}
             ${quanti?'<span>📎 '+quanti+' material'+(quanti===1?'e':'i')+'</span>':''}
@@ -339,27 +376,174 @@ function primoAvvio(){
 }
 
 /* ══════════════════════════════════════════════════════════
+   IL PROGRAMMA CHE SCORRE DA SOLO
+
+   Questa è la parte che fa la differenza fra un calendario e un
+   quaderno. I materiali in libreria sono già nell'ordine in cui
+   si spiegano: Talete, Pitagora, Parmenide, Platone 1, Platone 2.
+   Quindi il calendario non ha bisogno che gli si dica ogni volta
+   che cosa viene dopo: lo sa.
+
+   Per ogni classe guarda che cosa ha già usato, e propone il
+   primo pezzo di programma che non ha ancora fatto. La proposta
+   compare grigia dentro l'ora vuota: un tocco su «Metti» e
+   l'argomento è scritto, il materiale attaccato, tutto salvato.
+   Senza aprire niente.
+   ══════════════════════════════════════════════════════════ */
+
+/* i materiali di una materia, nell'ordine del programma */
+function programmaDi(materia){
+  if(!materia) return [];
+  return materiali.filter(m=>m.materia===materia);
+}
+/* quelli che questa classe ha già visto, in qualunque ora */
+function giaUsati(classeId, materia){
+  const visti=new Set();
+  lezioni.filter(l=>l.classe_id===classeId)
+    .forEach(l=>(l.materiali||[]).forEach(id=>visti.add(id)));
+  return visti;
+}
+/* Il prossimo pezzo di programma per quell'ora.
+   Non basta «il primo non ancora usato»: due ore vuote di seguito
+   riceverebbero la stessa proposta, e in classe ci si accorgerebbe
+   solo il secondo giorno. Ogni ora vuota si conta il posto che
+   occupa fra le ore vuote che la precedono, e salta di altrettanto:
+   martedì Parmenide, mercoledì i pluralisti. */
+function prossimo(lez){
+  if(!lez.materia) return null;
+  const prog=programmaDi(lez.materia);
+  if(!prog.length) return null;
+  const visti=giaUsati(lez.classe_id, lez.materia);
+  const restano=prog.filter(m=>!visti.has(m.id));
+  if(!restano.length) return null;
+
+  const primaDiLei = lezioni.filter(l =>
+      l.classe_id===lez.classe_id && l.materia===lez.materia &&
+      !l.argomento && !(l.materiali||[]).length &&
+      (l.data < lez.data || (l.data===lez.data && l.ora_inizio < lez.ora_inizio))
+    ).length;
+
+  return restano[primaDiLei] || null;
+}
+
+/* Mettere la proposta: un colpo solo, senza aprire il pannello. */
+async function metti(idLezione, idMateriale){
+  const l=lezioni.find(x=>x.id===idLezione);
+  const m=materiali.find(x=>x.id===idMateriale);
+  if(!l||!m) return;
+  const corpo={argomento:m.titolo, materiali:[m.id]};
+  try{
+    const r=await fetch(SB_URL+'/rest/v1/lezioni?id=eq.'+idLezione,{method:'PATCH',
+      headers:capo({'Content-Type':'application/json','Prefer':'return=minimal'}),
+      body:JSON.stringify(corpo)});
+    if(!r.ok && r.status!==204) throw new Error();
+    Object.assign(l, corpo);
+    disegna();
+  }catch(e){ alert('Non salvato.'); }
+}
+
+/* ══════════════════════════════════════════════════════════
+   PIANIFICARE UN BLOCCO
+
+   Il caso vero non è «preparo l'ora di domani», è «a settembre
+   mi siedo e distribuisco il programma sulle ore che ho». Qui si
+   sceglie una classe e una materia e il calendario spalma i
+   materiali, uno per ora, sulle ore ancora vuote a partire da una
+   data. Un mese di lezioni in un clic — poi si aggiusta.
+   ══════════════════════════════════════════════════════════ */
+function apriPianifica(){
+  const opzC=classi.map(c=>`<option value="${c.id}">${esc(c.nome)}</option>`).join('');
+  const mats=[...new Set(materiali.map(m=>m.materia))].filter(Boolean);
+  const opzM=mats.map(m=>`<option value="${esc(m)}">${esc(m)} (${programmaDi(m).length})</option>`).join('');
+
+  document.getElementById('pannello').innerHTML=`
+    <header>
+      <div style="flex:1"><h2>Pianifica un blocco</h2>
+        <div class="sub">Distribuisce il programma sulle ore ancora vuote, una per ora.</div></div>
+      <button class="b" onclick="chiudiPannello()">Chiudi</button>
+    </header>
+    <div class="riga">
+      <label class="campo">Classe<select id="pf-classe" onchange="anteprimaPiano()">${opzC}</select></label>
+      <label class="campo">Programma<select id="pf-materia" onchange="anteprimaPiano()">${opzM}</select></label>
+      <label class="campo">Dal<input type="date" id="pf-dal" value="${esc(iso(new Date()))}" onchange="anteprimaPiano()"></label>
+    </div>
+    <div class="nota" style="margin:.9rem 0 .6rem">Riempie solo le ore vuote di quella classe
+      in cui la materia coincide. Le ore in cui hai già scritto qualcosa non le tocca,
+      e riprende da dove il programma è arrivato.</div>
+    <div id="pf-anteprima"></div>
+    <div class="azioni">
+      <button class="b pieno" id="pf-vai" onclick="eseguiPiano()">Pianifica</button>
+      <span class="esito" id="pf-esito"></span>
+    </div>`;
+  document.getElementById('velo').classList.add('on');
+  anteprimaPiano();
+}
+
+/* quali ore verrebbero riempite, e con che cosa */
+function calcolaPiano(){
+  const cid=+document.getElementById('pf-classe').value;
+  const mat=document.getElementById('pf-materia').value;
+  const dal=document.getElementById('pf-dal').value;
+  const libere=lezioni.filter(l=>l.classe_id===cid && l.materia===mat && l.data>=dal
+      && !l.argomento && !(l.materiali||[]).length)
+    .sort((a,b)=> a.data===b.data ? a.ora_inizio.localeCompare(b.ora_inizio) : a.data.localeCompare(b.data));
+  const visti=giaUsati(cid, mat);
+  const restano=programmaDi(mat).filter(m=>!visti.has(m.id));
+  return libere.slice(0, restano.length).map((l,i)=>({lezione:l, materiale:restano[i]}));
+}
+function anteprimaPiano(){
+  const piano=calcolaPiano();
+  const box=document.getElementById('pf-anteprima');
+  if(!piano.length){
+    box.innerHTML='<div class="vuoto" style="padding:1.2rem">Nessuna ora da riempire: '+
+      'o non ci sono ore vuote di quella materia dopo quella data, o il programma è finito.</div>';
+    document.getElementById('pf-vai').disabled=true;
+    return;
+  }
+  document.getElementById('pf-vai').disabled=false;
+  box.innerHTML='<table class="griglia-orario">'+
+    piano.slice(0,12).map(p=>`<tr>
+      <td style="width:9rem">${esc(dataLunga(daIso(p.lezione.data)))}</td>
+      <td style="width:4.5rem">${oreIt(p.lezione.ora_inizio)}</td>
+      <td>${esc(p.materiale.titolo)}</td></tr>`).join('')+
+    '</table>'+ (piano.length>12
+      ? `<div style="font-size:.78rem;color:#8A7355;margin-top:.4rem">…e altre ${piano.length-12} ore</div>` : '');
+}
+async function eseguiPiano(){
+  const piano=calcolaPiano();
+  if(!piano.length) return;
+  const es=document.getElementById('pf-esito');
+  es.textContent='Pianifico…';
+  let fatte=0;
+  try{
+    /* una richiesta per ora: sono poche decine e si vede subito
+       quale non è passata, invece di un aggiornamento in blocco
+       che fallisce tutto insieme */
+    for(const p of piano){
+      const corpo={argomento:p.materiale.titolo, materiali:[p.materiale.id]};
+      const r=await fetch(SB_URL+'/rest/v1/lezioni?id=eq.'+p.lezione.id,{method:'PATCH',
+        headers:capo({'Content-Type':'application/json','Prefer':'return=minimal'}),
+        body:JSON.stringify(corpo)});
+      if(r.ok || r.status===204){ Object.assign(p.lezione, corpo); fatte++; }
+    }
+    es.textContent='✓ '+fatte+' or'+(fatte===1?'a pianificata':'e pianificate');
+    disegna();
+    setTimeout(chiudiPannello, 900);
+  }catch(e){ es.textContent='Non riuscita.'; es.style.color='#C0453B'; }
+}
+
+/* ══════════════════════════════════════════════════════════
    IL PANNELLO DI UNA LEZIONE
-   È qui che si prepara: argomento, materiali già in libreria,
-   compiti, e la nota di com'è andata.
+   Si apre solo quando serve scrivere qualcosa di diverso dalla
+   proposta. I materiali si cercano, non si scorrono: seicento
+   voci in fila non sono un elenco, sono un muro.
    ══════════════════════════════════════════════════════════ */
 function apriLezione(id){
   const l=lezioni.find(x=>x.id===id);
   if(!l) return;
   apertaId=id;
   const c=classeDi(l.classe_id), d=daIso(l.data);
-  const scelti=new Set(l.materiali||[]);
-
-  /* i materiali della materia di quella lezione stanno in cima:
-     sono quelli che servono nove volte su dieci */
-  const suoi=materiali.filter(m=>affine(m.materia, l.materia));
-  const altri=materiali.filter(m=>!affine(m.materia, l.materia));
-
-  const riga=m=>`<label class="mat">
-      <input type="checkbox" value="${m.id}" ${scelti.has(m.id)?'checked':''}>
-      <span class="tipo">${esc(m.tipo||'')}</span>
-      <span class="t" title="${esc(m.titolo)}">${esc(m.titolo)}</span>
-    </label>`;
+  const pross=prossimo(l);
 
   document.getElementById('pannello').innerHTML=`
     <header>
@@ -372,19 +556,25 @@ function apriLezione(id){
       <button class="b" onclick="chiudiPannello()">Chiudi</button>
     </header>
 
+    ${pross && !l.argomento ? `<div class="proposta">
+      <div>
+        <span class="etichetta">Il programma è arrivato qui</span>
+        <b>${esc(pross.titolo)}</b>
+      </div>
+      <button class="b pieno" onclick="metti(${l.id},${pross.id});chiudiPannello()">Metti</button>
+    </div>` : ''}
+
     <div class="blocco">
       <div class="tit">Che cosa si fa</div>
       <textarea id="p-arg" rows="2" placeholder="L'argomento dell'ora">${esc(l.argomento||'')}</textarea>
     </div>
 
     <div class="blocco">
-      <div class="tit">Materiali dalla libreria ${scelti.size?'· '+scelti.size+' scelti':''}</div>
-      ${materiali.length ? `<div class="mat-lista" id="p-mat">
-          ${suoi.map(riga).join('')}
-          ${altri.length?`<details style="margin-top:.3rem"><summary style="font-size:.75rem;color:#8A7355;cursor:pointer;padding:.3rem 0">Le altre materie (${altri.length})</summary>
-            <div class="mat-lista" style="margin-top:.3rem">${altri.map(riga).join('')}</div></details>`:''}
-        </div>`
-      : '<div style="font-size:.82rem;color:#8A7355">Non ci sono ancora materiali in libreria.</div>'}
+      <div class="tit">Materiali</div>
+      <div id="p-scelti" class="mat-lista"></div>
+      <input id="p-cerca" placeholder="Cerca un materiale…" oninput="cercaMateriali()"
+        style="width:100%;margin-top:.45rem">
+      <div id="p-trovati" class="mat-lista" style="margin-top:.35rem"></div>
     </div>
 
     <div class="blocco">
@@ -399,7 +589,7 @@ function apriLezione(id){
 
     <div class="blocco">
       <div class="tit">Com'è andata</div>
-      <textarea id="p-note" rows="2" placeholder="Note dopo l'ora: dove ti sei fermato, che cosa riprendere">${esc(l.note||'')}</textarea>
+      <textarea id="p-note" rows="2" placeholder="Dove ti sei fermato, che cosa riprendere">${esc(l.note||'')}</textarea>
       <label class="riga" style="margin-top:.5rem;font-size:.85rem;cursor:pointer">
         <input type="checkbox" id="p-svolta" ${l.svolta?'checked':''}
           style="accent-color:#2d5a27;width:16px;height:16px"> Lezione svolta
@@ -411,15 +601,67 @@ function apriLezione(id){
       <span class="esito" id="p-esito"></span>
       <button class="b rosso spinge" onclick="eliminaLezione()">Elimina l'ora</button>
     </div>`;
+  scelti=new Set(l.materiali||[]);
+  disegnaScelti();
+  cercaMateriali();
   document.getElementById('velo').classList.add('on');
 }
-/* «Filosofia Antica» e «Filosofia» sono la stessa cosa per chi
-   cerca un materiale da attaccare a un'ora di filosofia. */
-function affine(a,b){
-  if(!a||!b) return false;
-  const n=s=>s.toLowerCase().replace(/[^a-zàèéìòù]/g,'');
-  return n(a).includes(n(b)) || n(b).includes(n(a));
+
+let scelti=new Set();
+function disegnaScelti(){
+  const box=document.getElementById('p-scelti');
+  if(!box) return;
+  if(!scelti.size){ box.innerHTML='<div style="font-size:.78rem;color:#A79B88">Nessun materiale attaccato.</div>'; return; }
+  box.innerHTML=[...scelti].map(id=>{
+    const m=materiali.find(x=>x.id===id);
+    if(!m) return '';
+    return `<div class="mat scelto">
+      <span class="tipo">${esc(m.tipo||'')}</span>
+      <span class="t" title="${esc(m.titolo)}">${esc(m.titolo)}</span>
+      <button class="via" onclick="staccaMat(${id})" title="Stacca">×</button></div>`;
+  }).join('');
 }
+function staccaMat(id){ scelti.delete(id); disegnaScelti(); cercaMateriali(); }
+function attaccaMat(id){
+  scelti.add(id);
+  /* se l'argomento è ancora vuoto lo scrive il materiale: nove
+     volte su dieci l'argomento dell'ora è il titolo di quello che
+     si spiega, e riscriverlo a mano è tempo buttato */
+  const arg=document.getElementById('p-arg');
+  if(arg && !arg.value.trim()){
+    const m=materiali.find(x=>x.id===id);
+    if(m) arg.value=m.titolo;
+  }
+  disegnaScelti(); cercaMateriali();
+}
+function cercaMateriali(){
+  const box=document.getElementById('p-trovati');
+  if(!box) return;
+  const q=(document.getElementById('p-cerca')?.value||'').trim().toLowerCase();
+  const l=lezioni.find(x=>x.id===apertaId);
+  /* senza ricerca si mostra il programma dell'ora, non tutta la
+     libreria: sono i cinque o sei pezzi intorno al punto in cui
+     la classe è arrivata */
+  let lista;
+  if(q){
+    lista=materiali.filter(m=>m.titolo.toLowerCase().includes(q) ||
+      (m.materia||'').toLowerCase().includes(q)).slice(0,25);
+  }else if(l && l.materia){
+    const prog=programmaDi(l.materia);
+    const visti=giaUsati(l.classe_id, l.materia);
+    const i=prog.findIndex(m=>!visti.has(m.id));
+    lista=prog.slice(Math.max(0,i-1), Math.max(0,i-1)+6);
+  }else{
+    lista=materiali.slice(0,6);
+  }
+  lista=lista.filter(m=>!scelti.has(m.id));
+  if(!lista.length){ box.innerHTML=''; return; }
+  box.innerHTML=lista.map(m=>`<button class="mat agganciabile" onclick="attaccaMat(${m.id})">
+      <span class="tipo">${esc(m.tipo||'')}</span>
+      <span class="t" title="${esc(m.titolo)}">${esc(m.titolo)}</span>
+      <span class="piu">+</span></button>`).join('');
+}
+
 function chiudiPannello(){
   document.getElementById('velo').classList.remove('on');
   apertaId=null;
@@ -428,14 +670,13 @@ document.addEventListener('keydown', e=>{ if(e.key==='Escape') chiudiPannello();
 
 async function salvaLezione(){
   if(!apertaId) return;
-  const scelti=[...document.querySelectorAll('#p-mat input:checked')].map(i=>+i.value);
   const corpo={
     argomento: document.getElementById('p-arg').value.trim(),
     compiti:   document.getElementById('p-compiti').value.trim() || null,
     compiti_per: document.getElementById('p-compiti-per').value || null,
     note:      document.getElementById('p-note').value.trim() || null,
     svolta:    document.getElementById('p-svolta').checked,
-    materiali: scelti
+    materiali: [...scelti]
   };
   const es=document.getElementById('p-esito');
   es.textContent='Salvo…';
@@ -447,13 +688,12 @@ async function salvaLezione(){
     Object.assign(lezioni.find(l=>l.id===apertaId), corpo);
     es.textContent='✓ salvato';
     disegna();
-    setTimeout(()=>{ if(document.getElementById('p-esito')) document.getElementById('p-esito').textContent=''; }, 1600);
+    setTimeout(chiudiPannello, 700);
   }catch(e){ es.textContent='non salvato'; es.style.color='#C0453B'; }
 }
 
 async function eliminaLezione(){
   if(!apertaId) return;
-  const l=lezioni.find(x=>x.id===apertaId);
   if(!confirm('Elimino questa singola ora?\nL\'orario settimanale resta com\'è: se rigeneri, torna.')) return;
   try{
     const r=await fetch(SB_URL+'/rest/v1/lezioni?id=eq.'+apertaId,{method:'DELETE',headers:capo()});
@@ -470,6 +710,14 @@ function vistaOrario(){
   if(!classi.length) return primoAvvio();
   const opzClassi=classi.map(c=>`<option value="${c.id}">${esc(c.nome)}</option>`).join('');
   const opzGiorni=[1,2,3,4,5,6].map(g=>`<option value="${g}">${GIORNI[g]}</option>`).join('');
+  /* La materia non e' testo libero ma una delle materie che esistono
+     davvero in libreria. E' il punto su cui si regge tutto: se qui si
+     scrive «filosofia» a mano e in libreria la materia si chiama
+     «Filosofia Antica», il calendario non trova un solo materiale e
+     torna a essere un quaderno. */
+  const materie=[...new Set(materiali.map(m=>m.materia))].filter(Boolean).sort();
+  const opzMaterie='<option value="">— nessuno —</option>'+
+    materie.map(m=>`<option value="${esc(m)}">${esc(m)} (${materiali.filter(x=>x.materia===m).length})</option>`).join('');
 
   let righe='';
   for(let g=1;g<=6;g++){
@@ -497,7 +745,7 @@ function vistaOrario(){
       <label class="campo">Giorno<select id="o-giorno">${opzGiorni}</select></label>
       <label class="campo">Dalle<input type="time" id="o-dalle" value="09:00" step="300"></label>
       <label class="campo">Alle<input type="time" id="o-alle" value="10:00" step="300"></label>
-      <label class="campo">Materia<input id="o-materia" placeholder="Filosofia" size="12"></label>
+      <label class="campo">Programma<select id="o-materia">${opzMaterie}</select></label>
       <label class="campo">Aula<input id="o-aula" placeholder="" size="6"></label>
       <button class="b pieno" onclick="aggiungiOra()" style="align-self:flex-end">Aggiungi</button>
     </div>
@@ -506,6 +754,12 @@ function vistaOrario(){
 
   ${righe ? '<table class="griglia-orario">'+righe+'</table>'
           : '<div class="vuoto">La griglia è vuota. Aggiungi la prima ora qui sopra.</div>'}
+
+  <div class="nota"><b>Il programma</b><br>
+    La materia che scegli qui è quella della libreria: da lì il calendario
+    prende i materiali nell'ordine in cui li hai messi e te li propone
+    uno per ora, riprendendo da dove la classe è arrivata. Se la lasci
+    vuota, il calendario non può proporti niente.</div>
 
   <div class="nota"><b>Generare le lezioni</b><br>
     Quando la griglia è a posto, il calendario crea le ore vere fra le due date.
