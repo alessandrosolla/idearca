@@ -532,6 +532,60 @@ html[data-theme="dark"] .lib-solo{color:#d8b75e;
 .lib-add-link{font-size:.72rem;color:var(--forest);cursor:pointer;display:flex;align-items:center;gap:.3rem;transition:opacity .2s;text-decoration:none}
 .lib-add-link:hover{opacity:.7}
 .modules-wrap{padding:1.2rem 4rem 3rem}
+/* ══════════════════════════════════════════════════════════
+   LA LIBRERIA SUL TELEFONO
+
+   Prima c'era un menu a tendina con diciannove voci: dieci
+   materie e nove strumenti, mescolati, con le emoji in mezzo, e
+   nessuna scelta di partenza — si apriva la libreria e si
+   trovava una tendina chiusa sopra una pagina vuota. Uno
+   studente che cerca Filosofia Antica non deve scorrere oltre
+   «Confrontatore di filosofi».
+
+   Adesso è a due livelli, come si fa sui telefoni: prima
+   l'elenco delle materie a schermo pieno, poi il contenuto,
+   con una freccia per tornare. Gli strumenti stanno in fondo
+   all'elenco, dopo le materie, perché quelli si cercano di
+   proposito mentre le materie si guardano.
+
+   Tutto quello che segue vive solo sotto i 960px: sul computer
+   la colonna di sinistra resta quella di prima.
+   ══════════════════════════════════════════════════════════ */
+.tel-home{display:none}
+.tel-torna{display:none}
+
+.tel-gruppo{margin:0 0 1.6rem}
+.tel-gruppo > h4{font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--area,var(--stone-light));font-weight:700;margin:0 0 .55rem;
+  display:flex;align-items:center;gap:.55rem}
+.tel-gruppo > h4::after{content:'';flex:1;height:1px;background:var(--border)}
+
+.tel-voce{display:flex;align-items:center;gap:.85rem;width:100%;text-align:left;
+  font-family:'Jost',sans-serif;font-size:1rem;font-weight:400;color:var(--ink);
+  background:var(--white);border:1px solid var(--border);border-radius:13px;
+  padding:.95rem 1rem;margin-bottom:.5rem;cursor:pointer;
+  border-left:3px solid var(--area,var(--forest));
+  -webkit-tap-highlight-color:transparent}
+.tel-voce:active{background:var(--surface);transform:scale(.995)}
+.tel-voce .tv-ic{flex:none;width:2.1rem;height:2.1rem;border-radius:9px;
+  display:grid;place-items:center;font-size:1.05rem;
+  background:color-mix(in srgb,var(--area,var(--forest)) 11%,transparent)}
+.tel-voce .tv-txt{flex:1;min-width:0;display:flex;flex-direction:column;gap:.1rem}
+.tel-voce .tv-txt b{font-weight:500;line-height:1.25}
+.tel-voce .tv-txt small{font-size:.72rem;color:var(--stone-light);line-height:1.4;
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.tel-voce .tv-n{flex:none;font-size:.72rem;color:var(--stone-light);
+  background:var(--surface);border:1px solid var(--border);border-radius:20px;
+  padding:.12rem .5rem;min-width:2rem;text-align:center}
+.tel-voce .tv-n.vuota{background:none;border:none;font-size:.58rem;
+  letter-spacing:.08em;text-transform:uppercase;padding:0}
+.tel-voce .tv-freccia{flex:none;color:var(--stone-light);opacity:.55}
+
+.tel-testa{margin-bottom:1.3rem}
+.tel-testa h3{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:300;
+  color:var(--ink);line-height:1.15}
+.tel-testa p{font-size:.8rem;color:var(--stone-light);margin-top:.25rem}
+
 .mob-select-wrap{display:none;padding:1rem 1.5rem 0}
 .mob-select{width:100%;padding:.85rem 1rem;border:1.5px solid var(--border);background:var(--white);font-family:'Jost',sans-serif;font-size:.85rem;color:var(--ink);border-radius:6px;outline:none;-webkit-appearance:none;appearance:none}
 .mod-list{display:flex;flex-direction:column;gap:.9rem}
@@ -594,7 +648,18 @@ html[data-theme="dark"] .lib-solo{color:#d8b75e;
   .lib-content-head{padding:1.5rem 1.5rem 0;min-width:0}.modules-wrap{padding:1rem 1.5rem 2rem}
   .lib-topbar{padding:.8rem 1rem}.admin-bar{padding:.6rem 1rem}
   .lib-empty,.access-wall{margin:0 1.5rem}
-  .mob-select-wrap{display:block}
+  /* la tendina è sostituita dall'elenco: resta nel documento ma
+     non si vede, così le funzioni che la riempiono non si rompono */
+  .mob-select-wrap{display:none}
+  .tel-home{display:block;padding:1.2rem 1.2rem 2.5rem}
+  /* quando si sta guardando una materia, l'elenco sparisce e
+     compare la riga per tornare indietro */
+  #page-library.tel-dentro .tel-home{display:none}
+  #page-library.tel-dentro .tel-torna{display:block;padding:.7rem 1.1rem 0}
+  #page-library:not(.tel-dentro) .lib-layout{display:none}
+  .tel-torna button{display:inline-flex;align-items:center;gap:.35rem;
+    font-family:'Jost',sans-serif;font-size:.8rem;font-weight:500;color:var(--forest);
+    background:none;border:0;padding:.35rem .1rem;cursor:pointer;-webkit-tap-highlight-color:transparent}
   .lib-tabs-wrap{display:flex;align-items:stretch}
   .lib-tabs{overflow-x:auto;-webkit-overflow-scrolling:touch;flex-wrap:nowrap;scrollbar-width:none;flex:1;min-width:0}
   .lib-tabs::-webkit-scrollbar{display:none}

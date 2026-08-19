@@ -22,7 +22,7 @@
 <meta name="twitter:description" content="Materiali strutturati di Filosofia, Storia ed Educazione Civica — piattaforma didattica di Alessandro Solla.">
 <meta name="twitter:image" content="https://alessandrosolla.github.io/idearca/og-image.png">
 <script>document.documentElement.setAttribute('data-page','home');try{var t=localStorage.getItem('idearca-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
-<link rel="stylesheet" href="css/stile.css?v=20260818a">
+<link rel="stylesheet" href="css/stile.css?v=20260818b">
 </head>
 <body style="">
 <div id="scroll-progress" aria-hidden="true"></div>
@@ -590,11 +590,24 @@
     <button class="adm-btn" onclick="showCodesGuide()">Gestisci codici</button>
     <button class="adm-btn" onclick="openTracks()">🌐 Percorsi Internazionali</button>
   </div>
+  <!-- Il telefono ha una navigazione sua: l'elenco delle materie a
+       schermo pieno, e il contenuto solo dopo che se n'è scelta una.
+       Il menu a tendina resta nel documento perché ci sono ancora
+       funzioni che lo tengono allineato, ma non si vede più. -->
   <div class="mob-select-wrap">
     <select class="mob-select" id="mob-select" onchange="mobChange(this.value)">
       <option value="">— Scegli una materia —</option>
     </select>
     <div class="lib-stats lib-stats-mob" id="lib-stats-mob">…</div>
+  </div>
+  <div class="tel-home" id="tel-home"></div>
+  <div class="tel-torna" id="tel-torna">
+    <button onclick="telTornaAlle()" aria-label="Torna all'elenco delle materie">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+           stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M15 18l-6-6 6-6"/></svg>
+      <span id="tel-torna-txt">Le materie</span>
+    </button>
   </div>
   <div class="lib-layout">
     <aside class="lib-sidebar">
@@ -715,7 +728,7 @@
   </div>
 </div>
 <script src="js/numeri.js?v=20260811t"></script>
-<script src="js/app.js?v=20260818a"></script>
+<script src="js/app.js?v=20260818b"></script>
 <script src="js/d3-array.min.js?v=20260720"></script>
 <script src="js/d3-geo.min.js?v=20260720"></script>
 <script src="js/globe.js?v=20260720"></script>

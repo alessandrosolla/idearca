@@ -1090,7 +1090,102 @@ async function segnaConsegneLette(){
   consegneNonLette=0; segnaInbox(0);
 }
 
+/* ══════════════════════════════════════════════════════════
+   LA LIBRERIA SUL TELEFONO
+
+   Sul telefono la colonna di sinistra non c'è, e finora al suo
+   posto stava un menu a tendina con dentro tutto: dieci materie
+   e nove strumenti in fila, con le emoji, e nessuna scelta di
+   partenza. Si entrava con il codice e ci si trovava davanti una
+   tendina chiusa sopra una pagina vuota.
+
+   Adesso sono due schermate, come su qualunque telefono: prima
+   l'elenco, poi la cosa scelta, con la freccia per tornare. Le
+   materie stanno in alto raggruppate per area e con il numero di
+   documenti; gli strumenti in fondo, perché quelli si cercano di
+   proposito mentre le materie si guardano.
+
+   Le due schermate si alternano con una classe sul contenitore:
+   nessun secondo elenco da tenere allineato, gli stessi dati e
+   lo stesso filtro di ruolo di tutto il resto.
+   ══════════════════════════════════════════════════════════ */
+const ICONE_AREA={Filosofia:'✦', Storia:'❋', 'Educazione Civica':'§'};
+
+function costruisciTelefono(keys){
+  const casa=document.getElementById('tel-home');
+  if(!casa) return;
+
+  const gruppi={};
+  keys.forEach(k=>{ const g=MATERIE[k].g; (gruppi[g]=gruppi[g]||[]).push(k); });
+  const extra={};
+  vociExtra().forEach(v=>{
+    if(v.chi==='docente' && !vedeRoba()) return;
+    (extra[v.g]=extra[v.g]||[]).push(v);
+  });
+
+  let html=`<div class="tel-testa"><h3>La tua libreria</h3>
+    <p id="tel-stats">${document.getElementById('lib-stats')?.textContent||''}</p></div>`;
+
+  const voce=(k, info, icona, conta)=>`
+    <button class="tel-voce" data-key="${k}" onclick="telApri('${k}')">
+      <span class="tv-ic" aria-hidden="true">${icona}</span>
+      <span class="tv-txt"><b>${escHtml(info.l)}</b><small>${escHtml(info.p||'')}</small></span>
+      ${conta}
+      <svg class="tv-freccia" viewBox="0 0 24 24" width="16" height="16" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+        aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+    </button>`;
+
+  Object.entries(gruppi).forEach(([g,ks])=>{
+    const col=coloreArea(g);
+    html+=`<div class="tel-gruppo" style="--area:${col}"><h4>${escHtml(g)}</h4>`;
+    ks.forEach(k=>{
+      html+=voce(k, MATERIE[k], ICONE_AREA[g]||'•',
+        `<span class="tv-n" data-count-tel="${k}"></span>`);
+    });
+    html+='</div>';
+  });
+
+  Object.entries(extra).forEach(([g,vs])=>{
+    const col=coloreArea(g);
+    html+=`<div class="tel-gruppo" style="--area:${col}"><h4>${escHtml(g)}</h4>`;
+    vs.forEach(v=>{
+      const solo = v.chi==='docente' && vedeRoba()
+        ? '<span class="lib-solo">solo tu</span>' : '';
+      html+=voce(v.k, {l:v.l+solo, p:v.p}, v.ic||'•', '');
+    });
+    html+='</div>';
+  });
+
+  casa.innerHTML=html;
+  /* i nomi con dentro il bollino passano da innerHTML: l'unica
+     cosa non sfuggita è quella, e la scrivo io */
+  casa.querySelectorAll('.tv-txt b').forEach(b=>{
+    if(b.textContent.includes('<span')) b.innerHTML=b.textContent;
+  });
+}
+
+/* Aprire una voce dal telefono: si passa alla seconda schermata
+   e si riusa mobChange, che è già il punto in cui la libreria
+   decide che cosa mostrare. */
+function telApri(k){
+  const p=document.getElementById('page-library');
+  if(p) p.classList.add('tel-dentro');
+  const info=MATERIE[k] || vociExtra().find(v=>v.k===k);
+  const t=document.getElementById('tel-torna-txt');
+  if(t) t.textContent='Le materie';
+  mobChange(k);
+  window.scrollTo({top:0, behavior:'instant'});
+}
+function telTornaAlle(){
+  const p=document.getElementById('page-library');
+  if(p) p.classList.remove('tel-dentro');
+  nascondiViste();
+  window.scrollTo({top:0, behavior:'instant'});
+}
+
 function buildMobSelect(keys){
+  costruisciTelefono(keys);
   const sel=document.getElementById('mob-select');
   sel.innerHTML='<option value="">— Scegli una materia —</option>';
   keys.forEach((k,i)=>{
