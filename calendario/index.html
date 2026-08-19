@@ -219,6 +219,23 @@ button.mat.agganciabile:hover{border-color:#2d5a27;background:#F1F6EF}
 .scaff.filo input{opacity:.55}
 /* i pezzi aggiunti a un'ora, nell'anteprima */
 .agg{display:block;font-size:.72rem;color:#5A5148;padding-left:.9rem}
+
+/* la riga che dice quante ore restano da preparare */
+.striscia{display:flex;align-items:baseline;gap:.7rem;flex-wrap:wrap;
+  background:#F1F6EF;border:1px solid #CFE0CB;border-radius:10px;
+  padding:.55rem .9rem;margin-bottom:.9rem;font-size:.84rem}
+.striscia b{color:#2d5a27;font-weight:600}
+.striscia span{color:#5A5148;font-size:.78rem}
+
+/* i tre passi delle impostazioni */
+.passo{display:flex;align-items:flex-start;gap:.75rem;margin:1.8rem 0 .8rem}
+.passo:first-child{margin-top:0}
+.passo .num{flex:none;width:1.7rem;height:1.7rem;border-radius:50%;
+  background:#2d5a27;color:#fff;display:grid;place-items:center;
+  font-size:.82rem;font-weight:700}
+.passo b{display:block;font-size:1.02rem;font-weight:600;line-height:1.3}
+.passo i{display:block;font-style:normal;font-size:.8rem;color:#8A7355;
+  line-height:1.6;margin-top:.15rem;max-width:62ch}
 .agg.comp{color:#8A6A1E}
 @media(max-width:640px){
   .w{padding:1.3rem 1rem 3rem} h1{font-size:1.9rem}
@@ -232,10 +249,8 @@ button.mat.agganciabile:hover{border-color:#2d5a27;background:#F1F6EF}
   <div class="tabs">
     <button class="on" data-t="mese" onclick="vaiA('mese')">Mese</button>
     <button data-t="settimana" onclick="vaiA('settimana')">Settimana</button>
-    <button data-t="agenda" onclick="vaiA('agenda')">Agenda</button>
-    <button data-t="orario" onclick="vaiA('orario')">Orario</button>
-    <button data-t="classi" onclick="vaiA('classi')">Classi</button>
-    <button data-t="pause" onclick="vaiA('pause')">Vacanze</button>
+    <button data-t="agenda" onclick="vaiA('agenda')">Elenco</button>
+    <button data-t="imposta" onclick="vaiA('imposta')">Impostazioni</button>
   </div>
 
   <div id="cont"></div>
@@ -336,7 +351,21 @@ async function carica(){
       'Se sei tu, apri il sito, accedi con la tua password e torna qui.</div>';
     return;
   }
-  const dal=iso(piuGiorni(lunediCorrente,-7)), al=iso(piuGiorni(lunediCorrente,21));
+  /* ── PERCHÉ SI FERMAVANO A META' ─────────────────────────
+     Prima si caricavano solo quattro settimane di lezioni, quelle
+     intorno alla settimana guardata. Sembrava un'ottimizzazione e
+     invece era il difetto peggiore: distribuendo il programma, il
+     calendario riempiva le ore che aveva in mano e si fermava —
+     «ad un certo punto si bloccano» — perche' il resto dell'anno
+     non esisteva per lui. E anche il conto di quello che una
+     classe aveva gia' visto era sbagliato, perche' guardava solo
+     dentro quella finestra.
+     Un anno intero di lezioni sono qualche centinaio di righe:
+     si caricano tutte, una volta, e tutto torna.
+     ──────────────────────────────────────────────────────── */
+  const oggi=new Date();
+  const dal=iso(new Date(oggi.getFullYear()-1, 7, 1));   /* dal settembre scorso */
+  const al =iso(new Date(oggi.getFullYear()+1, 7, 31));  /* al prossimo agosto */
   try{
     const [rc,ro,rl,rs,rm]=await Promise.all([
       fetch(SB_URL+'/rest/v1/classi?select=*&order=ordine.asc,nome.asc',{headers:capo()}),
@@ -379,9 +408,7 @@ function disegna(){
   if(scheda==='mese') cont.innerHTML=vistaMese();
   else if(scheda==='settimana') cont.innerHTML=vistaSettimanaGriglia();
   else if(scheda==='agenda') cont.innerHTML=vistaSettimana();
-  else if(scheda==='orario') cont.innerHTML=vistaOrario();
-  else if(scheda==='classi') cont.innerHTML=vistaClassi();
-  else cont.innerHTML=vistaPause();
+  else cont.innerHTML=vistaImpostazioni();
 }
 
 function vistaSettimana(){
@@ -475,8 +502,22 @@ function barraNavigazione(titolo, passo){
     <button class="b" onclick="${passo}(0)">Oggi</button>
     <button class="b" onclick="${passo}(1)">→</button>
     <div class="quando">${esc(titolo)}</div>
-    <button class="b pieno" onclick="apriPianifica()">Pianifica</button>
-  </div>`;
+    <button class="b pieno" onclick="riempiTutto()">Riempi il calendario</button>
+  </div>${strisciaVuote()}`;
+}
+
+/* Quante ore restano da preparare: si vede prima di premere,
+   così il bottone non è un salto nel buio. */
+function strisciaVuote(){
+  const oggi=iso(new Date());
+  const vuote=lezioni.filter(l=>l.data>=oggi && !l.argomento && !(l.materiali||[]).length);
+  if(!vuote.length) return '';
+  const perClasse={};
+  vuote.forEach(l=>{ const n=classeDi(l.classe_id).nome; perClasse[n]=(perClasse[n]||0)+1; });
+  const dettaglio=Object.entries(perClasse).map(([n,q])=>`${n}: ${q}`).join(' · ');
+  return `<div class="striscia">
+    <b>${vuote.length} or${vuote.length===1?'a':'e'} ancora da preparare</b>
+    <span>${esc(dettaglio)}</span></div>`;
 }
 
 /* ── MESE ─────────────────────────────────────────────────── */
@@ -708,6 +749,103 @@ async function metti(idLezione, idMateriale){
    materiali, uno per ora, sulle ore ancora vuote a partire da una
    data. Un mese di lezioni in un clic — poi si aggiusta.
    ══════════════════════════════════════════════════════════ */
+/* ══════════════════════════════════════════════════════════
+   «RIEMPI IL CALENDARIO»
+
+   Il pannello con classe, programma, data e cinque spunte
+   chiedeva di decidere cinque cose per fare l'unica cosa che si
+   vuole fare: prendere il programma e metterlo nelle ore. Adesso
+   è un bottone che non chiede niente. Per ogni classe e per ogni
+   materia prende quello che resta del programma e lo distribuisce
+   sulle ore vuote da oggi in avanti. Poi dice che cosa ha fatto,
+   in italiano.
+
+   Chi vuole cambiare qualcosa lo fa dopo, ora per ora: correggere
+   tre ore è più veloce che compilare un modulo prima.
+   ══════════════════════════════════════════════════════════ */
+async function riempiTutto(){
+  const oggi=iso(new Date());
+  const lavoro=[];
+
+  classi.forEach(c=>{
+    /* le materie che questa classe ha davvero in orario */
+    const materie=[...new Set(lezioni.filter(l=>l.classe_id===c.id && l.materia)
+      .map(l=>l.materia))];
+    materie.forEach(mat=>{
+      const piano=pianoPer(c.id, mat, oggi);
+      if(piano.length) lavoro.push({classe:c, materia:mat, piano});
+    });
+  });
+
+  if(!lavoro.length){
+    avvisaGrande('Non c\'è niente da riempire',
+      'O le ore sono già tutte preparate, o non ci sono ore vuote con una materia collegata alla libreria. Le materie si scelgono in Impostazioni, nell\'orario.');
+    return;
+  }
+
+  const totale=lavoro.reduce((a,x)=>a+x.piano.length,0);
+  const righe=lavoro.map(x=>`${x.classe.nome} · ${x.materia}: ${x.piano.length} ore, `+
+    `da «${x.piano[0].slide.titolo}» a «${x.piano[x.piano.length-1].slide.titolo}»`);
+  if(!confirm('Riempio '+totale+' ore?\n\n'+righe.join('\n')+
+    '\n\nLe ore in cui hai già scritto qualcosa non le tocco.')) return;
+
+  let fatte=0;
+  for(const x of lavoro){
+    for(const p of x.piano){
+      const corpo={argomento:p.slide.titolo,
+                   materiali:[p.slide.id, ...p.extra.map(m=>m.id)]};
+      if(p.compito) corpo.compiti=p.compito.titolo;
+      try{
+        const r=await fetch(SB_URL+'/rest/v1/lezioni?id=eq.'+p.lezione.id,{method:'PATCH',
+          headers:capo({'Content-Type':'application/json','Prefer':'return=minimal'}),
+          body:JSON.stringify(corpo)});
+        if(r.ok || r.status===204){ Object.assign(p.lezione, corpo); fatte++; }
+      }catch(_){}
+    }
+  }
+  disegna();
+  avvisaGrande('Fatto: '+fatte+' ore preparate',
+    righe.join('\n')+'\n\nOra per ora puoi cambiare quello che vuoi: clicca una lezione.');
+}
+
+/* Il calcolo, senza interfaccia intorno: serve sia al bottone sia
+   all'anteprima. */
+function pianoPer(cid, mat, dal){
+  const libere=lezioni.filter(l=>l.classe_id===cid && l.materia===mat && l.data>=dal
+      && !l.argomento && !(l.materiali||[]).length)
+    .sort((a,b)=> a.data===b.data ? a.ora_inizio.localeCompare(b.ora_inizio) : a.data.localeCompare(b.data));
+  const visti=giaUsati(cid, mat);
+  const slide=programmaDi(mat).filter(m=>!visti.has(m.id));
+  const ore=libere.slice(0, slide.length);
+  if(!ore.length) return [];
+
+  const piano=ore.map((l,i)=>({lezione:l, slide:slide[i], extra:[], compito:null}));
+  ['fonti','approfondimenti','risorse'].forEach(k=>{
+    const pezzi=scaffale(mat,k).filter(m=>!visti.has(m.id));
+    pezzi.forEach((m,i)=>{
+      const dove=Math.min(ore.length-1,
+        Math.floor((i+0.5)*ore.length/Math.max(1,pezzi.length)));
+      piano[dove].extra.push(m);
+    });
+  });
+  const comp=scaffale(mat,'compiti').filter(m=>!visti.has(m.id));
+  comp.forEach((m,i)=>{
+    const dove=Math.min(ore.length-1,
+      Math.floor((i+0.5)*ore.length/Math.max(1,comp.length)));
+    if(!piano[dove].compito) piano[dove].compito=m;
+  });
+  return piano;
+}
+
+/* Un riquadro che spiega, invece di un alert secco. */
+function avvisaGrande(titolo, testo){
+  document.getElementById('pannello').innerHTML=`
+    <header><div style="flex:1"><h2>${esc(titolo)}</h2></div>
+      <button class="b" onclick="chiudiPannello()">Chiudi</button></header>
+    <div style="font-size:.88rem;line-height:1.75;color:#5A5148;white-space:pre-line">${esc(testo)}</div>`;
+  document.getElementById('velo').classList.add('on');
+}
+
 function apriPianifica(){
   const opzC=classi.map(c=>`<option value="${c.id}">${esc(c.nome)}</option>`).join('');
   const mats=[...new Set(materiali.map(m=>m.materia))].filter(Boolean);
@@ -1172,6 +1310,26 @@ async function pulisci(){
 /* ══════════════════════════════════════════════════════════
    CLASSI
    ══════════════════════════════════════════════════════════ */
+/* ── UNA PAGINA SOLA PER LE IMPOSTAZIONI ─────────────────
+   Classi, orario e vacanze erano tre schede: tre posti in cui
+   entrare per fare una cosa che si fa una volta all'anno, e in
+   quell'ordine. Adesso sono una pagina sola, numerata, che si
+   legge dall'alto in basso. ─────────────────────────────── */
+function vistaImpostazioni(){
+  return `<div class="passo"><span class="num">1</span>
+      <div><b>Le tue classi</b><i>Aggiungile una volta. Il colore serve a
+      riconoscerle a colpo d'occhio nel calendario.</i></div></div>
+    ${vistaClassi()}
+    <div class="passo"><span class="num">2</span>
+      <div><b>Il tuo orario</b><i>La griglia che si ripete ogni settimana.
+      Quando è a posto, il calendario crea le ore di tutto l'anno.</i></div></div>
+    ${vistaOrario()}
+    <div class="passo"><span class="num">3</span>
+      <div><b>Vacanze e giorni senza lezione</b><i>Quando generi le ore,
+      questi giorni vengono saltati.</i></div></div>
+    ${vistaPause()}`;
+}
+
 function vistaClassi(){
   const annoOra = (()=>{ const d=new Date(), a=d.getFullYear();
     return d.getMonth()>=8 ? a+'/'+String(a+1).slice(2) : (a-1)+'/'+String(a).slice(2); })();
