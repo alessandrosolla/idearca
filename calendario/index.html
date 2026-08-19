@@ -221,6 +221,30 @@ button.mat.agganciabile:hover{border-color:#2d5a27;background:#F1F6EF}
 .agg{display:block;font-size:.72rem;color:#5A5148;padding-left:.9rem}
 
 /* la riga che dice quante ore restano da preparare */
+/* ── il quadro: ci sto dentro col programma? ──────────── */
+.quadro{display:flex;flex-direction:column;gap:.5rem;margin-bottom:1rem}
+.qr{background:#fff;border:1px solid #E3DACB;border-radius:11px;padding:.7rem .95rem}
+.qr-cap{display:flex;align-items:center;gap:.5rem;margin-bottom:.25rem}
+.qr-cap b{font-size:.92rem;font-weight:600}
+.qr-esito{font-size:.84rem;line-height:1.6;color:#5A5148}
+.qr-esito b{font-weight:700}
+.qr-esito b.ok{color:#2d5a27}
+.qr-esito b.no{color:#C0453B}
+.qr-esito .fin{color:#8A7355}
+.qr-pezzi{margin-top:.4rem;font-size:.74rem;color:#8A7355;display:flex;
+  align-items:center;gap:.35rem;flex-wrap:wrap}
+.pezzo{display:inline-flex;align-items:center;gap:.28rem;background:#F6F3EC;
+  border:1px solid #EFE7DA;border-radius:20px;padding:.1rem .5rem;color:#5A5148}
+.pezzo i{font-style:normal;font-weight:700;color:#1F1B16}
+.pezzo.slide{background:#F1F6EF;border-color:#CFE0CB;color:#2d5a27}
+.pezzo.slide i{color:#2d5a27}
+
+/* i collegamenti diretti al materiale */
+.ora .apri{color:#2d5a27;text-decoration:none;border-bottom:1px solid rgba(45,90,39,.3)}
+.ora .apri:hover{border-bottom-color:#2d5a27}
+a.t{color:#2d5a27;text-decoration:none}
+a.t:hover{text-decoration:underline}
+
 .striscia{display:flex;align-items:baseline;gap:.7rem;flex-wrap:wrap;
   background:#F1F6EF;border:1px solid #CFE0CB;border-radius:10px;
   padding:.55rem .9rem;margin-bottom:.9rem;font-size:.84rem}
@@ -461,7 +485,14 @@ function vistaSettimana(){
             <button onclick="metti(${l.id},${pr.id})">Metti</button></span>` : ''}
           <span class="sotto">
             ${l.materia?'<span>'+esc(l.materia)+'</span>':''}
-            ${quanti?'<span>📎 '+quanti+' material'+(quanti===1?'e':'i')+'</span>':''}
+            ${(l.materiali||[]).map(id=>{
+              const m=materiali.find(x=>x.id===id);
+              if(!m) return '';
+              return m.link
+                ? `<a class="apri" href="${esc(m.link)}" target="_blank" rel="noopener"
+                     onclick="event.stopPropagation()" title="Apri «${esc(m.titolo)}»">↗ ${esc(m.titolo)}</a>`
+                : `<span>${esc(m.titolo)}</span>`;
+            }).join('')}
             ${l.compiti?'<span>✎ compiti</span>':''}
             ${l.note?'<span>note</span>':''}
           </span>
@@ -503,7 +534,72 @@ function barraNavigazione(titolo, passo){
     <button class="b" onclick="${passo}(1)">→</button>
     <div class="quando">${esc(titolo)}</div>
     <button class="b pieno" onclick="riempiTutto()">Riempi il calendario</button>
-  </div>${strisciaVuote()}`;
+  </div>${quadro()}`;
+}
+
+/* ══════════════════════════════════════════════════════════
+   IL QUADRO
+
+   La domanda vera non è «quante ore ho vuote»: è «ci sto dentro
+   col programma?». Per ogni classe e ogni materia il calendario
+   conta quante ore restano e quanti pezzi di programma restano, e
+   risponde in una riga: ci stai e ti avanzano tre ore, oppure te
+   ne mancano dodici e ti fermeresti a Hegel.
+
+   Dice anche quando finiresti, che è l'altra cosa che si vuole
+   sapere a novembre.
+   ══════════════════════════════════════════════════════════ */
+function contiPerClasse(){
+  const oggi=iso(new Date());
+  const out=[];
+  classi.forEach(c=>{
+    const materie=[...new Set(lezioni.filter(l=>l.classe_id===c.id && l.materia).map(l=>l.materia))];
+    materie.forEach(mat=>{
+      const libere=lezioni.filter(l=>l.classe_id===c.id && l.materia===mat && l.data>=oggi
+          && !l.argomento && !(l.materiali||[]).length)
+        .sort((a,b)=>a.data.localeCompare(b.data));
+      const visti=giaUsati(c.id, mat);
+      const restano={};
+      let totalePezzi=0;
+      Object.keys(SCAFFALI).forEach(k=>{
+        restano[k]=scaffale(mat,k).filter(m=>!visti.has(m.id)).length;
+        totalePezzi+=restano[k];
+      });
+      const lezDaFare=restano.slide;
+      const ore=libere.length;
+      const ultima=libere[Math.min(ore,lezDaFare)-1];
+      const arrivo=programmaDi(mat).filter(m=>!visti.has(m.id))[Math.min(ore,lezDaFare)-1];
+      out.push({classe:c, materia:mat, ore, lezDaFare, restano, totalePezzi,
+                fine: ultima ? ultima.data : null,
+                arrivo: arrivo ? arrivo.titolo : null,
+                ciSta: ore>=lezDaFare, scarto: ore-lezDaFare});
+    });
+  });
+  return out;
+}
+
+function quadro(){
+  const q=contiPerClasse();
+  if(!q.length) return '';
+  return '<div class="quadro">'+q.map(x=>{
+    const esito = x.lezDaFare===0
+      ? '<b class="ok">Programma finito</b> — tutte le lezioni sono già preparate'
+      : x.ciSta
+        ? `<b class="ok">Ci stai</b> — ${x.lezDaFare} lezion${x.lezDaFare===1?'e':'i'} in ${x.ore} ore, te ne avanzano ${x.scarto}`
+        : `<b class="no">Non ci stai</b> — ${x.lezDaFare} lezioni ma solo ${x.ore} ore: ne mancano ${-x.scarto}`;
+    const dove = x.lezDaFare===0 ? ''
+      : x.ciSta
+        ? (x.fine ? `<span class="fin">Finisci il ${esc(dataLunga(daIso(x.fine)))}</span>` : '')
+        : (x.arrivo ? `<span class="fin">Arrivi a «${esc(x.arrivo)}» e ti fermi lì</span>` : '');
+    const pezzi=Object.keys(SCAFFALI).filter(k=>x.restano[k])
+      .map(k=>`<span class="pezzo ${k}">${SCAFFALI[k].nome} <i>${x.restano[k]}</i></span>`).join('');
+    return `<div class="qr">
+      <div class="qr-cap"><span class="pill" style="background:${esc(x.classe.colore)}">${esc(x.classe.nome)}</span>
+        <b>${esc(x.materia)}</b></div>
+      <div class="qr-esito">${esito}${dove?' · '+dove:''}</div>
+      <div class="qr-pezzi">Da distribuire: ${pezzi||'niente'}</div>
+    </div>`;
+  }).join('')+'</div>';
 }
 
 /* Quante ore restano da preparare: si vede prima di premere,
@@ -820,6 +916,20 @@ function pianoPer(cid, mat, dal){
   if(!ore.length) return [];
 
   const piano=ore.map((l,i)=>({lezione:l, slide:slide[i], extra:[], compito:null}));
+  /* ── L'ORDINE DI PRIORITÀ ────────────────────────────────
+     Prima le lezioni: sono il programma, e ne va una per ora,
+     sempre. Poi i compiti, perché una lezione senza compiti si
+     recupera ma un compito mai assegnato no. Poi le fonti, che
+     sono la parte che si legge insieme. Approfondimenti e
+     risorse per ultimi: se lo spazio finisce, sono quelli che
+     si possono lasciare fuori senza rompere il programma.
+     ───────────────────────────────────────────────────── */
+  const comp=scaffale(mat,'compiti').filter(m=>!visti.has(m.id));
+  comp.forEach((m,i)=>{
+    const dove=Math.min(ore.length-1,
+      Math.floor((i+0.5)*ore.length/Math.max(1,comp.length)));
+    if(!piano[dove].compito) piano[dove].compito=m;
+  });
   ['fonti','approfondimenti','risorse'].forEach(k=>{
     const pezzi=scaffale(mat,k).filter(m=>!visti.has(m.id));
     pezzi.forEach((m,i)=>{
@@ -827,12 +937,6 @@ function pianoPer(cid, mat, dal){
         Math.floor((i+0.5)*ore.length/Math.max(1,pezzi.length)));
       piano[dove].extra.push(m);
     });
-  });
-  const comp=scaffale(mat,'compiti').filter(m=>!visti.has(m.id));
-  comp.forEach((m,i)=>{
-    const dove=Math.min(ore.length-1,
-      Math.floor((i+0.5)*ore.length/Math.max(1,comp.length)));
-    if(!piano[dove].compito) piano[dove].compito=m;
   });
   return piano;
 }
@@ -937,6 +1041,12 @@ function calcolaPiano(){
   const piano=ore.map((l,i)=>({lezione:l, slide:slide[i], extra:[], compito:null}));
 
   /* gli altri scaffali, spalmati sulle stesse ore */
+  const comp=scaffale(mat,'compiti').filter(m=>!visti.has(m.id));
+  comp.forEach((m,i)=>{
+    const dove=Math.min(ore.length-1,
+      Math.floor((i+0.5)*ore.length/Math.max(1,comp.length)));
+    if(!piano[dove].compito) piano[dove].compito=m;
+  });
   ['fonti','approfondimenti','risorse'].forEach(k=>{
     if(!scelti.includes(k)) return;
     const pezzi=scaffale(mat,k).filter(m=>!visti.has(m.id));
@@ -1089,9 +1199,14 @@ function disegnaScelti(){
   box.innerHTML=[...scelti].map(id=>{
     const m=materiali.find(x=>x.id===id);
     if(!m) return '';
+    /* Il materiale attaccato si apre da qui. È il motivo per cui
+       si mette un materiale in una lezione: il giorno stesso apri
+       l'ora e ci clicchi sopra, senza cercarlo in libreria. */
     return `<div class="mat scelto">
       <span class="tipo">${esc(m.tipo||'')}</span>
-      <span class="t" title="${esc(m.titolo)}">${esc(m.titolo)}</span>
+      ${m.link ? `<a class="t" href="${esc(m.link)}" target="_blank" rel="noopener"
+            title="Apri «${esc(m.titolo)}»">${esc(m.titolo)} ↗</a>`
+               : `<span class="t" title="${esc(m.titolo)}">${esc(m.titolo)}</span>`}
       <button class="via" onclick="staccaMat(${id})" title="Stacca">×</button></div>`;
   }).join('');
 }
