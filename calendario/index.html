@@ -102,42 +102,61 @@ label.campo{display:flex;flex-direction:column;gap:.25rem;font-size:.7rem;
 .chip.vuota span{color:#A79B88;font-style:italic}
 .chip.fatta{opacity:.62}
 
-/* ── la griglia della settimana ─────────────────────────── */
-.sg{background:#fff;border:1px solid #E3DACB;border-radius:12px;overflow:hidden}
-.sg-testa{display:grid;grid-template-columns:3.4rem repeat(6,1fr);
-  background:#FCFAF5;border-bottom:1px solid #E3DACB}
-.sg-giorno{padding:.5rem .5rem;font-size:.74rem;color:#5A5148;text-align:center;
-  border-left:1px solid #EFE7DA}
-.sg-giorno b{font-size:.64rem;letter-spacing:.1em;text-transform:uppercase;color:#8A7355}
-.sg-giorno.oggi{background:#F1F6EF;color:#2d5a27}
-.sg-giorno.oggi b{color:#2d5a27}
-.sg-corpo{display:grid;grid-template-columns:3.4rem repeat(6,1fr);position:relative}
-.sg-ore{position:relative}
-.sg-ora{font-size:.62rem;color:#A79B88;padding:.15rem .4rem 0 0;text-align:right;
-  border-top:1px solid #F3EDE2}
-.sg-col{position:relative;border-left:1px solid #EFE7DA}
-.sg-col.oggi{background:#FAFCF9}
-.sg-col.sospeso{background:#F8F5EE}
-.sg-riga{position:absolute;left:0;right:0;height:0;border-top:1px solid #F3EDE2}
-.sg-sosp{position:absolute;top:.3rem;left:.3rem;right:.3rem;font-size:.6rem;
-  color:#8A7355;font-style:italic;text-align:center}
-.sg-lez{position:absolute;left:3px;right:3px;border-radius:7px;padding:.22rem .4rem;
-  background:color-mix(in srgb,var(--c) 14%,#fff);border-left:3px solid var(--c);
-  overflow:hidden;cursor:pointer;display:flex;flex-direction:column;gap:.05rem}
-.sg-lez:hover{background:color-mix(in srgb,var(--c) 24%,#fff);z-index:2}
-.sg-lez b{font-size:.62rem;font-weight:700;color:var(--c);letter-spacing:.03em}
-.sg-lez span{font-size:.7rem;line-height:1.25;overflow:hidden;text-overflow:ellipsis}
-.sg-lez.vuota span{color:#A79B88;font-style:italic}
-.sg-lez.fatta{opacity:.6}
-.sg-metti{align-self:flex-start;margin-top:.1rem;font:inherit;font-size:.58rem;
-  font-weight:700;letter-spacing:.04em;border:0;border-radius:20px;
-  background:#2d5a27;color:#fff;padding:.08rem .42rem;cursor:pointer}
+/* ── il registro della settimana ────────────────────────── */
+.reg{background:#fff;border:1px solid #E3DACB;border-radius:12px;overflow-x:auto}
+.reg-testa,.reg-riga{display:grid;grid-template-columns:8rem repeat(6,minmax(9.5rem,1fr))}
+.reg-testa{background:#FCFAF5;border-bottom:1px solid #E3DACB;position:sticky;top:0;z-index:3}
+.reg-giorno{padding:.5rem .6rem;border-left:1px solid #EFE7DA}
+.reg-giorno b{display:block;font-size:.72rem;font-weight:700;color:#1F1B16}
+.reg-giorno span{font-size:.66rem;color:#8A7355}
+.reg-giorno i{display:block;font-style:normal;font-size:.6rem;color:#C0453B;
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.reg-giorno.oggi{background:#F1F6EF}
+.reg-giorno.oggi b{color:#2d5a27}
+.reg-giorno.sospeso{background:#F8F5EE}
+.reg-riga{border-bottom:1px solid #EFE7DA}
+.reg-riga:last-child{border-bottom:0}
+.reg-classe{padding:.7rem .7rem;border-right:1px solid #EFE7DA;background:#FCFAF5;
+  border-left:4px solid var(--c);position:sticky;left:0;z-index:2}
+.reg-classe b{display:block;font-size:.95rem;font-weight:600}
+.reg-classe span{font-size:.68rem;color:#8A7355;line-height:1.3}
+.reg-cella{border-left:1px solid #EFE7DA;padding:.3rem;display:flex;
+  flex-direction:column;gap:.3rem;min-height:5.5rem}
+.reg-cella.oggi{background:#FAFCF9}
+.reg-niente{color:#D8CDBA;font-size:.8rem;text-align:center;padding-top:.9rem}
+
+.cel{position:relative;border-radius:8px;border:1px solid #EFE7DA;
+  border-left:3px solid var(--c);background:#fff;padding:.32rem .4rem}
+.cel.fatta{opacity:.62}
+.cel-cap{display:flex;align-items:center;gap:.3rem;margin-bottom:.1rem}
+.cel-ora{font-size:.62rem;font-weight:700;color:var(--c);font-variant-numeric:tabular-nums}
+.cel-tipo{font-size:.56rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+  color:#fff;background:var(--c);border-radius:20px;padding:.03rem .34rem}
+.cel-piu{margin-left:auto;border:0;background:none;color:#B9AE9C;cursor:pointer;
+  font-size:.9rem;line-height:1;padding:0 .1rem}
+.cel-piu:hover{color:#1F1B16}
+textarea.cel-arg{width:100%;border:0;background:none;padding:.05rem 0;font-size:.78rem;
+  line-height:1.35;resize:none;min-height:2.1rem;color:#1F1B16}
+textarea.cel-arg:focus{outline:0;background:#FBF8F1;border-radius:4px}
+textarea.cel-arg::placeholder{color:#B9AE9C;font-style:italic}
+.cel-metti{width:100%;text-align:left;font:inherit;font-size:.66rem;font-weight:600;
+  color:#2d5a27;background:#F1F6EF;border:1px solid #CFE0CB;border-radius:6px;
+  padding:.14rem .35rem;cursor:pointer;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cel-metti:hover{background:#E4EFE1}
+.cel-mat{display:flex;flex-direction:column;gap:.05rem;margin-top:.15rem}
+.cel-mat a,.cel-mat span{font-size:.64rem;color:#2d5a27;text-decoration:none;
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cel-mat a:hover{text-decoration:underline}
+.cel-comp{font-size:.64rem;color:#8A6A1E;margin-top:.1rem;
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cel-salta{position:absolute;right:.2rem;bottom:.15rem;border:0;background:none;
+  color:#D8CDBA;cursor:pointer;font-size:.78rem;line-height:1;padding:0 .1rem;opacity:0}
+.cel:hover .cel-salta{opacity:1}
+.cel-salta:hover{color:#C0453B}
 
 @media(max-width:820px){
-  .mese-cella{min-height:5.2rem}
-  .chip span{display:none}
-  .sg-testa,.sg-corpo{grid-template-columns:2.6rem repeat(6,1fr)}
-  .sg-lez span{font-size:.62rem}
+  .reg-testa,.reg-riga{grid-template-columns:5.5rem repeat(6,minmax(8rem,1fr))}
+  .reg-classe{padding:.5rem .45rem}
 }
 
 /* ── il pannello della lezione ──────────────────────────── */
@@ -306,9 +325,8 @@ a.t:hover{text-decoration:underline}
   <h1>Calendario</h1>
 
   <div class="tabs">
-    <button class="on" data-t="mese" onclick="vaiA('mese')">Mese</button>
-    <button data-t="settimana" onclick="vaiA('settimana')">Settimana</button>
-    <button data-t="agenda" onclick="vaiA('agenda')">Elenco</button>
+    <button class="on" data-t="settimana" onclick="vaiA('settimana')">La settimana</button>
+    <button data-t="mese" onclick="vaiA('mese')">L'anno</button>
     <button data-t="imposta" onclick="vaiA('imposta')">Impostazioni</button>
   </div>
 
@@ -346,7 +364,7 @@ const GIORNI = ['','Lunedì','Martedì','Mercoledì','Giovedì','Venerdì','Saba
 const MESI = ['gennaio','febbraio','marzo','aprile','maggio','giugno','luglio',
               'agosto','settembre','ottobre','novembre','dicembre'];
 
-let scheda = 'mese';
+let scheda = 'settimana';
 let classi = [], orario = [], lezioni = [], sospensioni = [], materiali = [];
 let lunediCorrente = lunediDi(new Date());
 let apertaId = null;
@@ -466,7 +484,6 @@ function disegna(){
   const cont=document.getElementById('cont');
   if(scheda==='mese') cont.innerHTML=vistaMese();
   else if(scheda==='settimana') cont.innerHTML=vistaSettimanaGriglia();
-  else if(scheda==='agenda') cont.innerHTML=vistaSettimana();
   else cont.innerHTML=vistaImpostazioni();
 }
 
@@ -850,186 +867,6 @@ function strisciaVuote(){
     <span>${esc(dettaglio)}</span></div>`;
 }
 
-/* ── MESE ─────────────────────────────────────────────────── */
-let meseCorrente = new Date(new Date().getFullYear(), new Date().getMonth(), 1);
-function mese(d){
-  meseCorrente = d===0 ? new Date(new Date().getFullYear(), new Date().getMonth(), 1)
-    : new Date(meseCorrente.getFullYear(), meseCorrente.getMonth()+d, 1);
-  carica();
-}
-function vistaMese(){
-  if(!classi.length) return primoAvvio();
-  const primo = lunediDi(meseCorrente);
-  const oggiIso = iso(new Date());
-  const titolo = MESI[meseCorrente.getMonth()].replace(/^./,c=>c.toUpperCase())+' '+meseCorrente.getFullYear();
-
-  let out = barraNavigazione(titolo, 'mese');
-  out += '<div class="mese"><div class="mese-testa">' +
-    [1,2,3,4,5,6,7].map(g=>`<div>${GIORNI[g].slice(0,3)}</div>`).join('') + '</div>';
-
-  /* sei righe coprono qualunque mese: la sesta si aggiunge solo
-     se serve davvero, altrimenti resta una riga vuota in fondo */
-  for(let r=0;r<6;r++){
-    const inizioRiga = piuGiorni(primo, r*7);
-    if(r===5 && inizioRiga.getMonth()!==meseCorrente.getMonth()) break;
-    out += '<div class="mese-riga">';
-    for(let c=0;c<7;c++){
-      const g = piuGiorni(inizioRiga, c), gi = iso(g);
-      const fuori = g.getMonth()!==meseCorrente.getMonth();
-      const sosp = sospensioneDi(gi, null);
-      const delGiorno = lezioni.filter(l=>l.data===gi)
-        .sort((a,b)=>a.ora_inizio.localeCompare(b.ora_inizio));
-      out += `<div class="mese-cella${fuori?' fuori':''}${gi===oggiIso?' oggi':''}${sosp?' sospeso':''}"
-                   onclick="vaiAlGiorno('${gi}')">
-        <div class="mese-num">${g.getDate()}</div>
-        ${sosp?`<div class="mese-sosp" title="${esc(sosp.motivo||'')}">${esc(sosp.motivo||'sospensione')}</div>`:''}`;
-      delGiorno.slice(0,3).forEach(l=>{
-        const cl=classeDi(l.classe_id);
-        const pr=(!l.argomento && !(l.materiali||[]).length) ? prossimo(l) : null;
-        const t=tipoDi(l), T=TIPI[t];
-        out += `<div class="chip${l.svolta?' fatta':''}${!l.argomento?' vuota':''}${t!=='lezione'?' segnata':''}"
-                     style="--c:${esc(t==='lezione'?cl.colore:T.c)}"
-                     onclick="event.stopPropagation();toccaOra(${l.id})"
-                     title="${esc(T.n+' · '+cl.nome+' '+oreIt(l.ora_inizio)+' — '+(l.argomento||(pr&&pr.titolo)||'da preparare'))}">
-          <b>${esc(t==='lezione'?oreIt(l.ora_inizio):T.s)}</b>
-          <span>${esc(l.argomento || (t!=='lezione'?T.n:(pr?pr.titolo:'—')))}</span></div>`;
-      });
-      if(delGiorno.length>3)
-        out += `<div class="mese-altre">+${delGiorno.length-3}</div>`;
-      out += '</div>';
-    }
-    out += '</div>';
-  }
-  return out + '</div>';
-}
-function vaiAlGiorno(gi){
-  lunediCorrente = lunediDi(daIso(gi));
-  vaiA('settimana');
-}
-
-/* ── SETTIMANA A GRIGLIA ──────────────────────────────────── */
-function vistaSettimanaGriglia(){
-  if(!classi.length) return primoAvvio();
-  const fine=piuGiorni(lunediCorrente,5);
-  const titolo = lunediCorrente.getDate()+' '+MESI[lunediCorrente.getMonth()]+
-    ' – '+fine.getDate()+' '+MESI[fine.getMonth()];
-  const oggiIso=iso(new Date());
-
-  /* la griglia si stringe sulle ore che servono davvero: se la
-     prima lezione e' alle 8 e l'ultima finisce alle 14, non ha
-     senso disegnare fino a mezzanotte */
-  const dellaSett = lezioni.filter(l=>{
-    const d=daIso(l.data); return d>=lunediCorrente && d<=piuGiorni(lunediCorrente,6); });
-  let daOra=8, aOra=15;
-  dellaSett.forEach(l=>{
-    daOra=Math.min(daOra, parseInt(l.ora_inizio,10));
-    aOra =Math.max(aOra, parseInt((l.ora_fine||l.ora_inizio),10)+1);
-  });
-  const ALT=54;   /* pixel per ora */
-
-  let out = barraNavigazione(titolo, 'settimana');
-  out += '<div class="sg"><div class="sg-testa"><div class="sg-ang"></div>';
-  for(let i=0;i<6;i++){
-    const g=piuGiorni(lunediCorrente,i);
-    out += `<div class="sg-giorno${iso(g)===oggiIso?' oggi':''}">
-      <b>${GIORNI[i+1].slice(0,3)}</b> <span>${g.getDate()}</span></div>`;
-  }
-  out += '</div><div class="sg-corpo">';
-
-  /* la colonna delle ore */
-  out += '<div class="sg-ore">';
-  for(let h=daOra;h<aOra;h++) out += `<div class="sg-ora" style="height:${ALT}px">${h}:00</div>`;
-  out += '</div>';
-
-  for(let i=0;i<6;i++){
-    const g=piuGiorni(lunediCorrente,i), gi=iso(g);
-    const sosp=sospensioneDi(gi,null);
-    out += `<div class="sg-col${gi===oggiIso?' oggi':''}${sosp?' sospeso':''}"
-                 style="height:${(aOra-daOra)*ALT}px">`;
-    for(let h=daOra;h<aOra;h++) out += `<div class="sg-riga" style="top:${(h-daOra)*ALT}px"></div>`;
-    if(sosp) out += `<div class="sg-sosp">${esc(sosp.motivo||'sospensione')}</div>`;
-
-    lezioni.filter(l=>l.data===gi).forEach(l=>{
-      const cl=classeDi(l.classe_id);
-      const [oh,om]=l.ora_inizio.split(':').map(Number);
-      const fine=l.ora_fine||l.ora_inizio;
-      const [fh,fm]=fine.split(':').map(Number);
-      const top=((oh-daOra)+om/60)*ALT;
-      const alt=Math.max(28, ((fh-oh)+(fm-om)/60)*ALT - 3);
-      const pr=(!l.argomento && !(l.materiali||[]).length) ? prossimo(l) : null;
-      const t=tipoDi(l), T=TIPI[t];
-      out += `<div class="sg-lez${l.svolta?' fatta':''}${!l.argomento?' vuota':''}${t!=='lezione'?' segnata':''}"
-                   style="top:${top}px;height:${alt}px;--c:${esc(t==='lezione'?cl.colore:T.c)}"
-                   onclick="toccaOra(${l.id})"
-                   title="${esc(T.n+' · '+cl.nome+' — '+(l.argomento||''))}">
-        <b>${esc(cl.nome)}${t!=='lezione'?' · '+T.n:''}</b>
-        <span>${esc(l.argomento || (t!=='lezione'?T.n:(pr?pr.titolo:'da preparare')))}</span>
-        ${pr && t==='lezione'?`<button class="sg-metti" onclick="event.stopPropagation();metti(${l.id},${pr.id})">Metti</button>`:''}
-      </div>`;
-    });
-    out += '</div>';
-  }
-  return out + '</div></div>';
-}
-
-function primoAvvio(){
-  return `<div class="vuoto"><strong>Il calendario è vuoto perché non ci sono ancora classi.</strong><br>
-    Si comincia da lì: apri <em>Classi</em> e aggiungi quelle in cui insegni.
-    Poi in <em>Orario</em> imposti una volta sola la griglia settimanale — 4B il lunedì
-    dalle 9 alle 10 — e il calendario genera tutte le ore dell'anno.</div>`;
-}
-
-/* ══════════════════════════════════════════════════════════
-   IL PROGRAMMA CHE SCORRE DA SOLO
-
-   Questa è la parte che fa la differenza fra un calendario e un
-   quaderno. I materiali in libreria sono già nell'ordine in cui
-   si spiegano: Talete, Pitagora, Parmenide, Platone 1, Platone 2.
-   Quindi il calendario non ha bisogno che gli si dica ogni volta
-   che cosa viene dopo: lo sa.
-
-   Per ogni classe guarda che cosa ha già usato, e propone il
-   primo pezzo di programma che non ha ancora fatto. La proposta
-   compare grigia dentro l'ora vuota: un tocco su «Metti» e
-   l'argomento è scritto, il materiale attaccato, tutto salvato.
-   Senza aprire niente.
-   ══════════════════════════════════════════════════════════ */
-
-/* ── I CINQUE SCAFFALI ────────────────────────────────────
-   In libreria un materiale ha un tipo, e i tipi sono quelli
-   delle schede: slide, fonti, approfondimenti, risorse, compiti.
-   Il calendario li tratta in modo diverso perche' servono a cose
-   diverse: le slide sono il filo del programma e ne vuole una per
-   ora; fonti, approfondimenti e risorse sono companatico e si
-   distribuiscono lungo il percorso; i compiti non sono un
-   materiale da attaccare ma una riga da scrivere nel campo dei
-   compiti.
-   ───────────────────────────────────────────────────────── */
-const SCAFFALI={
-  /* Gli approfondimenti sono le lezioni vere: le slide su cui si
-     sta davvero l'ora. Vengono prima di tutto, e sono loro a
-     dettare quante ore serve avere. */
-  approfondimenti:{nome:'Lezioni',  tipi:['esercizio','exercise'], filo:true},
-  slide:        {nome:'Slide',      tipi:['pdf','video','materiale']},
-  compiti:      {nome:'Compiti',    tipi:['compito','homework']},
-  fonti:        {nome:'Fonti',      tipi:['fonte','source']},
-  risorse:      {nome:'Risorse',    tipi:['interdisciplinare','link']}
-};
-/* L'ordine in cui si riempie un'ora. Prima le lezioni
-   approfondite, che sono il programma. Poi le slide, che sono
-   comunque materiale da spiegare. I compiti prima delle fonti:
-   una lezione senza compiti si recupera, un compito mai
-   assegnato no. Risorse per ultime. */
-const ORDINE=['approfondimenti','slide','compiti','fonti','risorse'];
-function scaffaleDi(m){
-  const t=(m.tipo||'').toLowerCase();
-  for(const k in SCAFFALI) if(SCAFFALI[k].tipi.includes(t)) return k;
-  return 'slide';
-}
-/* i materiali di uno scaffale, nell'ordine del programma */
-function scaffale(materia, quale){
-  return materiali.filter(m=>m.materia===materia && scaffaleDi(m)===quale);
-}
 /* Il filo del programma: le ore che si «riempiono davvero».
    Prima gli approfondimenti, poi le slide. Ogni pezzo vale un'ora
    e detta quante ore servono. */
@@ -1037,6 +874,7 @@ function programmaDi(materia){
   if(!materia) return [];
   return scaffale(materia,'approfondimenti').concat(scaffale(materia,'slide'));
 }
+
 /* quelli che questa classe ha già visto, in qualunque ora */
 function giaUsati(classeId, materia){
   const visti=new Set();
@@ -1044,6 +882,7 @@ function giaUsati(classeId, materia){
     .forEach(l=>(l.materiali||[]).forEach(id=>visti.add(id)));
   return visti;
 }
+
 /* Il prossimo pezzo di programma per quell'ora.
    Non basta «il primo non ancora usato»: due ore vuote di seguito
    riceverebbero la stessa proposta, e in classe ci si accorgerebbe
@@ -1083,15 +922,33 @@ async function metti(idLezione, idMateriale){
   }catch(e){ alert('Non salvato.'); }
 }
 
-/* ══════════════════════════════════════════════════════════
-   PIANIFICARE UN BLOCCO
+/* i materiali di uno scaffale, nell'ordine del programma */
+function scaffale(materia, quale){
+  return materiali.filter(m=>m.materia===materia && scaffaleDi(m)===quale);
+}
 
-   Il caso vero non è «preparo l'ora di domani», è «a settembre
-   mi siedo e distribuisco il programma sulle ore che ho». Qui si
-   sceglie una classe e una materia e il calendario spalma i
-   materiali, uno per ora, sulle ore ancora vuote a partire da una
-   data. Un mese di lezioni in un clic — poi si aggiusta.
-   ══════════════════════════════════════════════════════════ */
+const SCAFFALI={
+  /* Gli approfondimenti sono le lezioni vere: le slide su cui si
+     sta davvero l'ora. Vengono prima di tutto, e sono loro a
+     dettare quante ore serve avere. */
+  approfondimenti:{nome:'Lezioni',  tipi:['esercizio','exercise'], filo:true},
+  slide:        {nome:'Slide',      tipi:['pdf','video','materiale']},
+  compiti:      {nome:'Compiti',    tipi:['compito','homework']},
+  fonti:        {nome:'Fonti',      tipi:['fonte','source']},
+  risorse:      {nome:'Risorse',    tipi:['interdisciplinare','link']}
+};
+/* L'ordine in cui si riempie un'ora. Prima le lezioni
+   approfondite, che sono il programma. Poi le slide, che sono
+   comunque materiale da spiegare. I compiti prima delle fonti:
+   una lezione senza compiti si recupera, un compito mai
+   assegnato no. Risorse per ultime. */
+const ORDINE=['approfondimenti','slide','compiti','fonti','risorse'];
+function scaffaleDi(m){
+  const t=(m.tipo||'').toLowerCase();
+  for(const k in SCAFFALI) if(SCAFFALI[k].tipi.includes(t)) return k;
+  return 'slide';
+}
+
 /* ══════════════════════════════════════════════════════════
    «RIEMPI IL CALENDARIO»
 
@@ -1242,6 +1099,202 @@ function avvisaGrande(titolo, testo){
       <button class="b" onclick="chiudiPannello()">Chiudi</button></header>
     <div style="font-size:.88rem;line-height:1.75;color:#5A5148;white-space:pre-line">${esc(testo)}</div>`;
   document.getElementById('velo').classList.add('on');
+}
+
+/* ── MESE ─────────────────────────────────────────────────── */
+let meseCorrente = new Date(new Date().getFullYear(), new Date().getMonth(), 1);
+function mese(d){
+  meseCorrente = d===0 ? new Date(new Date().getFullYear(), new Date().getMonth(), 1)
+    : new Date(meseCorrente.getFullYear(), meseCorrente.getMonth()+d, 1);
+  carica();
+}
+function vistaMese(){
+  if(!classi.length) return primoAvvio();
+  const primo = lunediDi(meseCorrente);
+  const oggiIso = iso(new Date());
+  const titolo = MESI[meseCorrente.getMonth()].replace(/^./,c=>c.toUpperCase())+' '+meseCorrente.getFullYear();
+
+  let out = barraNavigazione(titolo, 'mese');
+  out += '<div class="mese"><div class="mese-testa">' +
+    [1,2,3,4,5,6,7].map(g=>`<div>${GIORNI[g].slice(0,3)}</div>`).join('') + '</div>';
+
+  /* sei righe coprono qualunque mese: la sesta si aggiunge solo
+     se serve davvero, altrimenti resta una riga vuota in fondo */
+  for(let r=0;r<6;r++){
+    const inizioRiga = piuGiorni(primo, r*7);
+    if(r===5 && inizioRiga.getMonth()!==meseCorrente.getMonth()) break;
+    out += '<div class="mese-riga">';
+    for(let c=0;c<7;c++){
+      const g = piuGiorni(inizioRiga, c), gi = iso(g);
+      const fuori = g.getMonth()!==meseCorrente.getMonth();
+      const sosp = sospensioneDi(gi, null);
+      const delGiorno = lezioni.filter(l=>l.data===gi)
+        .sort((a,b)=>a.ora_inizio.localeCompare(b.ora_inizio));
+      out += `<div class="mese-cella${fuori?' fuori':''}${gi===oggiIso?' oggi':''}${sosp?' sospeso':''}"
+                   onclick="vaiAlGiorno('${gi}')">
+        <div class="mese-num">${g.getDate()}</div>
+        ${sosp?`<div class="mese-sosp" title="${esc(sosp.motivo||'')}">${esc(sosp.motivo||'sospensione')}</div>`:''}`;
+      delGiorno.slice(0,3).forEach(l=>{
+        const cl=classeDi(l.classe_id);
+        const pr=(!l.argomento && !(l.materiali||[]).length) ? prossimo(l) : null;
+        const t=tipoDi(l), T=TIPI[t];
+        out += `<div class="chip${l.svolta?' fatta':''}${!l.argomento?' vuota':''}${t!=='lezione'?' segnata':''}"
+                     style="--c:${esc(t==='lezione'?cl.colore:T.c)}"
+                     onclick="event.stopPropagation();toccaOra(${l.id})"
+                     title="${esc(T.n+' · '+cl.nome+' '+oreIt(l.ora_inizio)+' — '+(l.argomento||(pr&&pr.titolo)||'da preparare'))}">
+          <b>${esc(t==='lezione'?oreIt(l.ora_inizio):T.s)}</b>
+          <span>${esc(l.argomento || (t!=='lezione'?T.n:(pr?pr.titolo:'—')))}</span></div>`;
+      });
+      if(delGiorno.length>3)
+        out += `<div class="mese-altre">+${delGiorno.length-3}</div>`;
+      out += '</div>';
+    }
+    out += '</div>';
+  }
+  return out + '</div>';
+}
+function vaiAlGiorno(gi){
+  lunediCorrente = lunediDi(daIso(gi));
+  vaiA('settimana');
+}
+
+/* ══════════════════════════════════════════════════════════
+   LA SETTIMANA COME UN REGISTRO
+
+   Ho guardato come sono fatti i registri veri dei docenti —
+   PlanbookEdu, Common Planner — e sono tutti costruiti allo
+   stesso modo, diverso da un calendario qualunque: i giorni in
+   colonna e le CLASSI in riga. Non le ore.
+
+   La ragione è che un docente non pensa «cosa faccio alle nove»,
+   pensa «cosa faccio in 4B questa settimana». La riga della
+   classe si legge da sinistra a destra ed è il filo del suo
+   programma; la colonna del giorno si legge dall'alto in basso
+   ed è la giornata. Con le ore in verticale, come su Google, il
+   filo del programma si spezza in caselle sparse.
+
+   Ogni cella è la lezione: ci si scrive dentro e si salva da
+   sola. Niente pannello per la cosa che si fa più spesso.
+   ══════════════════════════════════════════════════════════ */
+function vistaSettimanaGriglia(){
+  if(!classi.length) return primoAvvio();
+  const fine=piuGiorni(lunediCorrente,5);
+  const titolo = lunediCorrente.getDate()+' '+MESI[lunediCorrente.getMonth()]+
+    ' – '+fine.getDate()+' '+MESI[fine.getMonth()];
+  const oggiIso=iso(new Date());
+
+  let out = barraNavigazione(titolo, 'settimana');
+
+  out += '<div class="reg"><div class="reg-testa"><div class="reg-ang"></div>';
+  for(let i=0;i<6;i++){
+    const g=piuGiorni(lunediCorrente,i), gi=iso(g);
+    const sosp=sospensioneDi(gi,null);
+    out += `<div class="reg-giorno${gi===oggiIso?' oggi':''}${sosp?' sospeso':''}">
+      <b>${GIORNI[i+1]}</b><span>${g.getDate()} ${MESI[g.getMonth()].slice(0,3)}</span>
+      ${sosp?`<i title="${esc(sosp.motivo||'')}">${esc(sosp.motivo||'sospeso')}</i>`:''}</div>`;
+  }
+  out += '</div>';
+
+  classi.forEach(c=>{
+    out += `<div class="reg-riga">
+      <div class="reg-classe" style="--c:${esc(c.colore)}">
+        <b>${esc(c.nome)}</b><span>${esc(c.indirizzo||'')}</span></div>`;
+    for(let i=0;i<6;i++){
+      const g=piuGiorni(lunediCorrente,i), gi=iso(g);
+      const delGiorno=lezioni.filter(l=>l.classe_id===c.id && l.data===gi)
+        .sort((a,b)=>a.ora_inizio.localeCompare(b.ora_inizio));
+      out += `<div class="reg-cella${gi===oggiIso?' oggi':''}">`;
+      if(!delGiorno.length) out += '<div class="reg-niente">—</div>';
+      delGiorno.forEach(l=>{
+        const t=tipoDi(l), T=TIPI[t];
+        const pr=(!l.argomento && !(l.materiali||[]).length && t==='lezione') ? prossimo(l) : null;
+        out += `<div class="cel${l.svolta?' fatta':''}" style="--c:${esc(T.c)}">
+          <div class="cel-cap">
+            <span class="cel-ora">${esc(oreIt(l.ora_inizio))}</span>
+            ${t!=='lezione'?`<span class="cel-tipo">${esc(T.n)}</span>`:''}
+            <button class="cel-piu" onclick="apriLezione(${l.id})" title="Apri, materiali, compiti">⋯</button>
+          </div>
+          <textarea class="cel-arg" rows="2" placeholder="${pr?esc('→ '+pr.titolo):'…'}"
+            onblur="salvaCella(${l.id}, this.value)"
+            onclick="if(timbro){event.preventDefault();this.blur();toccaOra(${l.id});}"
+          >${esc(l.argomento||'')}</textarea>
+          ${pr?`<button class="cel-metti" onclick="metti(${l.id},${pr.id})">↳ ${esc(pr.titolo)}</button>`:''}
+          ${(l.materiali||[]).length?`<div class="cel-mat">${(l.materiali||[]).map(id=>{
+              const m=materiali.find(x=>x.id===id); if(!m) return '';
+              return m.link?`<a href="${esc(m.link)}" target="_blank" rel="noopener">↗ ${esc(m.titolo)}</a>`
+                           :`<span>${esc(m.titolo)}</span>`;
+            }).join('')}</div>`:''}
+          ${l.compiti?`<div class="cel-comp">✎ ${esc(l.compiti)}</div>`:''}
+          <button class="cel-salta" onclick="spostaAvanti(${l.id})"
+            title="Non l'ho fatta: sposta avanti questa e tutte le successive">⇥</button>
+        </div>`;
+      });
+      out += '</div>';
+    }
+    out += '</div>';
+  });
+  return out+'</div>';
+}
+
+/* Scrivere nella cella salva da solo, appena si esce dal campo. */
+async function salvaCella(id, testo){
+  const l=lezioni.find(x=>x.id===id);
+  if(!l || (l.argomento||'')===testo.trim()) return;
+  const prima=l.argomento;
+  l.argomento=testo.trim();
+  try{
+    const r=await fetch(SB_URL+'/rest/v1/lezioni?id=eq.'+id,{method:'PATCH',
+      headers:capo({'Content-Type':'application/json','Prefer':'return=minimal'}),
+      body:JSON.stringify({argomento:l.argomento})});
+    if(!r.ok && r.status!==204) throw new Error();
+  }catch(e){ l.argomento=prima; disegna(); alert('Non salvato.'); }
+}
+
+/* ══════════════════════════════════════════════════════════
+   SPOSTA AVANTI
+
+   È la funzione che i registri veri chiamano «bump», ed è la più
+   usata di tutte: l'assemblea, la gita, la classe che non ha
+   finito. La lezione non si è fatta, e tutto quello che viene
+   dopo scala di un'ora.
+
+   Senza, un calendario dura fino al primo imprevisto — cioè fino
+   a ottobre — e poi si smette di aggiornarlo.
+   ══════════════════════════════════════════════════════════ */
+async function spostaAvanti(id){
+  const l=lezioni.find(x=>x.id===id);
+  if(!l) return;
+  /* le ore di quella classe da qui in poi, in ordine */
+  const catena=lezioni.filter(x=>x.classe_id===l.classe_id &&
+      (x.data>l.data || (x.data===l.data && x.ora_inizio>=l.ora_inizio)))
+    .sort((a,b)=> a.data===b.data ? a.ora_inizio.localeCompare(b.ora_inizio) : a.data.localeCompare(b.data));
+  if(catena.length<2){ alert('Non c\'è un\'ora dopo questa in cui spostarla.'); return; }
+
+  const ultimo=catena[catena.length-1];
+  const perde = (ultimo.argomento||'').trim() || (ultimo.materiali||[]).length;
+  if(!confirm(`Sposto avanti di un'ora tutto quello che c'è in ${classeDi(l.classe_id).nome} `+
+      `da ${dataLunga(daIso(l.data))}?\n\n${catena.length-1} lezioni scalano in avanti.`+
+      (perde?`\n\nATTENZIONE: l'ultima ora dell'anno è già piena e il suo contenuto andrebbe perso.`:''))) return;
+
+  /* si copia all'indietro, dall'ultima alla prima: al contrario
+     ogni lezione sovrascriverebbe quella che deve ancora leggere */
+  const campi=['argomento','note','compiti','compiti_per','materiali','tipo'];
+  const nuovi=catena.map(x=>{ const o={}; campi.forEach(k=>o[k]=x[k]); return o; });
+  const vuoto={argomento:'', note:null, compiti:null, compiti_per:null, materiali:[], tipo:'lezione'};
+
+  for(let i=catena.length-1;i>0;i--) Object.assign(catena[i], nuovi[i-1]);
+  Object.assign(catena[0], vuoto);
+
+  disegna();
+  for(const x of catena){
+    const corpo={}; campi.forEach(k=>corpo[k]=x[k]);
+    try{
+      await fetch(SB_URL+'/rest/v1/lezioni?id=eq.'+x.id,{method:'PATCH',
+        headers:capo({'Content-Type':'application/json','Prefer':'return=minimal'}),
+        body:JSON.stringify(corpo)});
+    }catch(_){}
+  }
+  await carica();
 }
 
 /* ══════════════════════════════════════════════════════════
