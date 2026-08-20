@@ -241,6 +241,30 @@ button.mat.agganciabile:hover{border-color:#2d5a27;background:#F1F6EF}
 .pezzo.att{background:#F4F0F8;border-color:#DDD2E8;color:#6b4a80}
 .pezzo.att i{color:#6b4a80}
 .qr-ore{margin-left:auto;font-size:.72rem;color:#8A7355}
+.qr-segnate{margin-top:.35rem;font-size:.74rem;color:#8A7355;display:flex;
+  align-items:center;gap:.35rem;flex-wrap:wrap}
+.qr-segnate .pezzo{background:#fff}
+
+/* ── la barra dei timbri ────────────────────────────────── */
+.timbri{display:flex;align-items:center;gap:.35rem;flex-wrap:wrap;margin-bottom:.9rem;
+  padding:.55rem .75rem;background:#fff;border:1px solid #E3DACB;border-radius:11px}
+.tlabel{font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;
+  color:#8A7355;font-weight:700;margin-right:.15rem}
+button.timbro{font:inherit;font-size:.76rem;font-weight:600;cursor:pointer;
+  border:1px solid #E3DACB;border-radius:20px;padding:.26rem .7rem;background:#fff;
+  color:#5A5148;display:inline-flex;align-items:center;gap:.35rem}
+button.timbro::before{content:'';width:9px;height:9px;border-radius:50%;background:var(--c)}
+button.timbro:hover{border-color:var(--c)}
+button.timbro.on{background:var(--c);color:#fff;border-color:var(--c)}
+button.timbro.on::before{background:#fff}
+.tnota{font-size:.74rem;color:#5A5148;margin-left:.3rem}
+.tnota b{color:#1F1B16}
+
+/* un'ora timbrata si riconosce dal bordo e dal colore */
+.chip.segnata{background:color-mix(in srgb,var(--c) 15%,#fff)}
+.sg-lez.segnata{border-left-width:4px}
+.ora.segnata{box-shadow:inset 3px 0 0 var(--c)}
+.pill.tipo{font-size:.58rem}
 /* la barra: quanto dell'anno copre il programma, e quanto resta */
 .barra{display:flex;height:7px;border-radius:20px;overflow:hidden;margin:.45rem 0 .5rem;background:#EFE7DA}
 .b-prog{background:#2d5a27}
@@ -485,10 +509,13 @@ function vistaSettimana(){
       /* l'ora vuota porta con se' la proposta: si accetta senza
          aprire niente, ed e' il gesto che si fa piu' spesso */
       const pr = (!l.argomento && !quanti) ? prossimo(l) : null;
-      out+=`<div class="ora${l.svolta?' fatta':''}" onclick="apriLezione(${l.id})">
+      const t=tipoDi(l), T=TIPI[t];
+      out+=`<div class="ora${l.svolta?' fatta':''}${t!=='lezione'?' segnata':''}"
+              style="--c:${esc(T.c)}" onclick="toccaOra(${l.id})">
         <span class="spunta">${l.svolta?'✓':'○'}</span>
         <span class="quando">${oreIt(l.ora_inizio)}${l.ora_fine?'–'+oreIt(l.ora_fine):''}</span>
         <span class="pill" style="background:${esc(c.colore)}">${esc(c.nome)}</span>
+        ${t!=='lezione'?`<span class="pill tipo" style="background:${T.c}">${T.n}</span>`:''}
         <span class="corpo">
           <span class="arg${l.argomento?'':' vuoto2'}">${esc(l.argomento||'— da preparare —')}</span>
           ${pr ? `<span class="proposto" onclick="event.stopPropagation()">
@@ -545,7 +572,7 @@ function barraNavigazione(titolo, passo){
     <button class="b" onclick="${passo}(1)">→</button>
     <div class="quando">${esc(titolo)}</div>
     <button class="b pieno" onclick="riempiTutto()">Riempi il calendario</button>
-  </div>${quadro()}`;
+  </div>${barraTimbri()}${quadro()}`;
 }
 
 /* ══════════════════════════════════════════════════════════
@@ -564,6 +591,70 @@ function barraNavigazione(titolo, passo){
    venti vale la pena. Il ritmo serve a non metterne tre di fila
    e poi più niente.
    ══════════════════════════════════════════════════════════ */
+/* ══════════════════════════════════════════════════════════
+   I TIPI DI ORA
+
+   Un'ora di lezione, una verifica e una votazione non sono la
+   stessa cosa: non si preparano allo stesso modo e soprattutto
+   la verifica la decidi tu con la classe settimane prima, mentre
+   le lezioni si adattano intorno. Ogni ora porta il suo tipo, si
+   vede nel calendario dal colore, e il riempimento automatico
+   tocca solo le ore di tipo «lezione».
+   ══════════════════════════════════════════════════════════ */
+const TIPI={
+  lezione:  {n:'Lezione',   c:'#2d5a27', s:'L'},
+  verifica: {n:'Verifica',  c:'#C0453B', s:'V'},
+  votazione:{n:'Votazione', c:'#2C6FB5', s:'Q'},
+  ripasso:  {n:'Ripasso',   c:'#9A7C2E', s:'R'},
+  debate:   {n:'Debate',    c:'#7A4B8C', s:'D'},
+  lettura:  {n:'Lettura',   c:'#1C8C8C', s:'F'},
+  mappa:    {n:'Mappa',     c:'#D97A1F', s:'M'},
+  uscita:   {n:'Fuori',     c:'#8A7355', s:'—'}
+};
+function tipoDi(l){ return TIPI[l.tipo] ? l.tipo : 'lezione'; }
+
+/* ── IL TIMBRO ────────────────────────────────────────────
+   Il modo veloce di dire «queste sono verifiche». Si sceglie un
+   tipo in cima e poi si clicca sulle ore: una dopo l'altra, come
+   con un evidenziatore. Finche' il timbro e' acceso, cliccare
+   un'ora non apre il pannello ma la marchia — altrimenti per
+   piazzare otto verifiche servirebbero otto pannelli aperti e
+   chiusi. ─────────────────────────────────────────────────── */
+let timbro = null;
+function scegliTimbro(k){
+  timbro = (timbro===k) ? null : k;
+  disegna();
+}
+function barraTimbri(){
+  return `<div class="timbri">
+    <span class="tlabel">Timbra le ore:</span>
+    ${Object.keys(TIPI).map(k=>`<button class="timbro${timbro===k?' on':''}"
+        style="--c:${TIPI[k].c}" onclick="scegliTimbro('${k}')">${TIPI[k].n}</button>`).join('')}
+    ${timbro?`<span class="tnota">Clicca le ore da segnare come <b>${TIPI[timbro].n}</b>.
+       Premi di nuovo il bottone per smettere.</span>`:''}
+  </div>`;
+}
+async function applicaTimbro(id){
+  const l=lezioni.find(x=>x.id===id);
+  if(!l || !timbro) return;
+  /* ricliccare un'ora già timbrata la rimette a lezione: si
+     corregge senza cambiare strumento */
+  const nuovo = (l.tipo===timbro) ? 'lezione' : timbro;
+  const prima = l.tipo;
+  l.tipo = nuovo; disegna();          /* si vede subito, poi si salva */
+  try{
+    const r=await fetch(SB_URL+'/rest/v1/lezioni?id=eq.'+id,{method:'PATCH',
+      headers:capo({'Content-Type':'application/json','Prefer':'return=minimal'}),
+      body:JSON.stringify({tipo:nuovo})});
+    if(!r.ok && r.status!==204) throw new Error();
+  }catch(e){ l.tipo=prima; disegna(); avvisa('Non salvato.'); }
+}
+/* un clic su un'ora: col timbro acceso marchia, altrimenti apre */
+function toccaOra(id){
+  if(timbro) applicaTimbro(id); else apriLezione(id);
+}
+function avvisa(t){ alert(t); }
+
 const ATTIVITA=[
   {k:'votazione', n:'Votazione in aula',    ogni:5,
    d:'Le domande ci sono già: 120 capitoli in banca.', dove:'../votazioni/index.html'},
@@ -654,8 +745,12 @@ function contiPerClasse(){
     const materie=[...new Set(lezioni.filter(l=>l.classe_id===c.id && l.materia).map(l=>l.materia))];
     materie.forEach(mat=>{
       const libere=lezioni.filter(l=>l.classe_id===c.id && l.materia===mat && l.data>=oggi
+          && tipoDi(l)==='lezione'
           && !l.argomento && !(l.materiali||[]).length)
         .sort((a,b)=>a.data.localeCompare(b.data));
+      /* le ore che hai gia' deciso tu, contate a parte */
+      const segnate=lezioni.filter(l=>l.classe_id===c.id && l.materia===mat
+          && l.data>=oggi && tipoDi(l)!=='lezione');
       const visti=giaUsati(c.id, mat);
       const restano={};
       let totalePezzi=0;
@@ -676,7 +771,7 @@ function contiPerClasse(){
       const conProg=piano.filter(p=>p.slide);
       const ultima=conProg.length ? conProg[conProg.length-1].lezione : null;
       const arrivo=conProg.length ? conProg[conProg.length-1].slide.titolo : null;
-      out.push({classe:c, materia:mat, ore, lezDaFare, restano, totalePezzi,
+      out.push({classe:c, materia:mat, ore, lezDaFare, restano, totalePezzi, segnate,
                 fine: ultima ? ultima.data : null,
                 arrivo: arrivo,
                 ciSta: ore>=lezDaFare, scarto: ore-lezDaFare});
@@ -732,6 +827,10 @@ function quadro(){
       ${barra}
       <div class="qr-esito">${esito}${dove?' · '+dove:''}</div>
       <div class="qr-pezzi">In libreria: ${pezzi||'niente'}</div>
+      ${x.segnate.length?`<div class="qr-segnate">Già decise da te: ${
+        Object.entries(x.segnate.reduce((a,l)=>{const t=tipoDi(l);a[t]=(a[t]||0)+1;return a;},{}))
+          .map(([t,q])=>`<span class="pezzo" style="border-color:${TIPI[t].c};color:${TIPI[t].c}">${TIPI[t].n} <i>${q}</i></span>`)
+          .join('')}</div>`:''}
       ${coda}
     </div>`;
   }).join('')+'</div>';
@@ -787,12 +886,13 @@ function vistaMese(){
       delGiorno.slice(0,3).forEach(l=>{
         const cl=classeDi(l.classe_id);
         const pr=(!l.argomento && !(l.materiali||[]).length) ? prossimo(l) : null;
-        out += `<div class="chip${l.svolta?' fatta':''}${!l.argomento?' vuota':''}"
-                     style="--c:${esc(cl.colore)}"
-                     onclick="event.stopPropagation();apriLezione(${l.id})"
-                     title="${esc(cl.nome+' '+oreIt(l.ora_inizio)+' — '+(l.argomento||pr&&pr.titolo||'da preparare'))}">
-          <b>${esc(oreIt(l.ora_inizio))}</b>
-          <span>${esc(l.argomento || (pr?pr.titolo:'—'))}</span></div>`;
+        const t=tipoDi(l), T=TIPI[t];
+        out += `<div class="chip${l.svolta?' fatta':''}${!l.argomento?' vuota':''}${t!=='lezione'?' segnata':''}"
+                     style="--c:${esc(t==='lezione'?cl.colore:T.c)}"
+                     onclick="event.stopPropagation();toccaOra(${l.id})"
+                     title="${esc(T.n+' · '+cl.nome+' '+oreIt(l.ora_inizio)+' — '+(l.argomento||(pr&&pr.titolo)||'da preparare'))}">
+          <b>${esc(t==='lezione'?oreIt(l.ora_inizio):T.s)}</b>
+          <span>${esc(l.argomento || (t!=='lezione'?T.n:(pr?pr.titolo:'—')))}</span></div>`;
       });
       if(delGiorno.length>3)
         out += `<div class="mese-altre">+${delGiorno.length-3}</div>`;
@@ -857,13 +957,14 @@ function vistaSettimanaGriglia(){
       const top=((oh-daOra)+om/60)*ALT;
       const alt=Math.max(28, ((fh-oh)+(fm-om)/60)*ALT - 3);
       const pr=(!l.argomento && !(l.materiali||[]).length) ? prossimo(l) : null;
-      out += `<div class="sg-lez${l.svolta?' fatta':''}${!l.argomento?' vuota':''}"
-                   style="top:${top}px;height:${alt}px;--c:${esc(cl.colore)}"
-                   onclick="apriLezione(${l.id})"
-                   title="${esc(cl.nome+' — '+(l.argomento||''))}">
-        <b>${esc(cl.nome)}</b>
-        <span>${esc(l.argomento || (pr?pr.titolo:'da preparare'))}</span>
-        ${pr?`<button class="sg-metti" onclick="event.stopPropagation();metti(${l.id},${pr.id})">Metti</button>`:''}
+      const t=tipoDi(l), T=TIPI[t];
+      out += `<div class="sg-lez${l.svolta?' fatta':''}${!l.argomento?' vuota':''}${t!=='lezione'?' segnata':''}"
+                   style="top:${top}px;height:${alt}px;--c:${esc(t==='lezione'?cl.colore:T.c)}"
+                   onclick="toccaOra(${l.id})"
+                   title="${esc(T.n+' · '+cl.nome+' — '+(l.argomento||''))}">
+        <b>${esc(cl.nome)}${t!=='lezione'?' · '+T.n:''}</b>
+        <span>${esc(l.argomento || (t!=='lezione'?T.n:(pr?pr.titolo:'da preparare')))}</span>
+        ${pr && t==='lezione'?`<button class="sg-metti" onclick="event.stopPropagation();metti(${l.id},${pr.id})">Metti</button>`:''}
       </div>`;
     });
     out += '</div>';
@@ -1064,7 +1165,11 @@ async function riempiTutto(){
 /* Il calcolo, senza interfaccia intorno: serve sia al bottone sia
    all'anteprima. */
 function pianoPer(cid, mat, dal){
+  /* Le ore che hai timbrato tu non si toccano: una verifica
+     fissata a marzo e' un impegno preso con la classe, non uno
+     spazio libero. Il programma si distribuisce intorno. */
   const libere=lezioni.filter(l=>l.classe_id===cid && l.materia===mat && l.data>=dal
+      && tipoDi(l)==='lezione'
       && !l.argomento && !(l.materiali||[]).length)
     .sort((a,b)=> a.data===b.data ? a.ora_inizio.localeCompare(b.ora_inizio) : a.data.localeCompare(b.data));
   const visti=giaUsati(cid, mat);
