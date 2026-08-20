@@ -110,7 +110,6 @@ function exitIntlToLibrary(){
   document.getElementById('page-library').classList.add('aperta');
   document.documentElement.removeAttribute('data-mode');
   segnaPagina('library');
-  registraUso('accesso');
   window.scrollTo(0,0);
 }
 function openIBPage(){
@@ -476,6 +475,14 @@ async function login(){
       scordaRuoloFuoriSessione();
       sessionStorage.setItem('ix',JSON.stringify({code,nome:r.nome,ruolo:r.ruolo,materie:r.materie}));
       segnaRuoloFuoriSessione(r.ruolo);
+      /* ── QUI, NON ALTROVE ────────────────────────────────
+         L'accesso si registra quando qualcuno entra davvero col
+         proprio codice. Prima l'unica chiamata stava in
+         exitIntlToLibrary, cioe' nel ritorno dai percorsi
+         internazionali: veniva contato un accesso solo se si
+         passava di lì, e il contatore restava a zero anche dopo
+         venti ingressi. ──────────────────────────────────── */
+      registraUso('accesso');
       input.classList.add('ok');msg.textContent='Accesso confermato: '+r.nome;msg.className='msg ok';
       setTimeout(()=>{document.getElementById('form-state').style.display='none';document.getElementById('welcome-name').textContent=r.nome;document.getElementById('success-state').classList.add('on');},600);
       btn.disabled=false;btn.textContent='Entra nella piattaforma';return;
@@ -1252,6 +1259,10 @@ function navClick(el,key){
   document.getElementById('mob-select').value=key;
   if(mostraVista(key)) return;
   nascondiViste();
+  /* mancava: dalla colonna del computer la materia aperta non
+     veniva contata, e «le materie più aperte» restava vuoto per
+     chiunque non usasse il telefono */
+  registraUso('materia', key);
   renderSubject(key);
 }
 /* La lavagna si carica solo la prima volta che la si apre: cosi'
@@ -1848,7 +1859,10 @@ function disegnaStatistiche(d){
     <section class="peek-sec">
       <div class="peek-sec-title">Gli ultimi quattordici giorni</div>
       ${barre}
-      <p class="peek-sec-nota" style="margin-top:.8rem">Si conta dal ${dataIt(d.primo_giorno)}.</p>
+      <p class="peek-sec-nota" style="margin-top:.8rem">Si conta dal ${dataIt(d.primo_giorno)}.
+        Le tue visite non compaiono: qui si contano solo gli accessi fatti con un codice,
+        e il tuo è un accesso con password. Per provare, entra con un codice studente
+        da una finestra in incognito.</p>
     </section>
 
     <section class="peek-sec">
