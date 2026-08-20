@@ -655,7 +655,16 @@ html[data-theme="dark"] .lib-solo{color:#d8b75e;
   /* la tendina è sostituita dall'elenco: resta nel documento ma
      non si vede, così le funzioni che la riempiono non si rompono */
   .mob-select-wrap{display:none}
-  .tel-home{display:block;padding:1.2rem 1.2rem 2.5rem}
+  /* ── PERCHE' NON SCORREVA ────────────────────────────
+     La libreria e' alta esattamente uno schermo con overflow
+     nascosto: dentro, a scorrere, sono le due colonne. L'elenco
+     del telefono ha preso il posto della colonna ma senza
+     ereditarne il mestiere — restava tagliato al bordo dello
+     schermo e non si muoveva. Deve prendersi lo spazio che
+     avanza e scorrere per conto suo, come faceva la colonna.
+     ─────────────────────────────────────────────────────── */
+  .tel-home{display:block;padding:1.2rem 1.2rem 2.5rem;
+    flex:1;min-height:0;overflow-y:auto;-webkit-overflow-scrolling:touch}
   /* quando si sta guardando una materia, l'elenco sparisce e
      compare la riga per tornare indietro */
   #page-library.tel-dentro .tel-home{display:none}
@@ -1458,3 +1467,22 @@ html[data-theme="dark"] .chi-banda{background:#171d15}
 .lib-avatar.apribile{cursor:pointer;transition:transform .15s,box-shadow .15s}
 .lib-avatar.apribile:hover{transform:scale(1.06);
   box-shadow:0 0 0 3px color-mix(in srgb,var(--forest) 22%,transparent)}
+
+/* ── IL MENU DEL BOLLINO ────────────────────────────────────
+   Due voci sole, quelle che il docente apre ogni giorno.
+   Sta attaccato al bollino e si chiude al primo clic fuori. */
+.lib-user{position:relative}
+.menu-avatar{display:none;position:absolute;right:0;top:calc(100% + .5rem);
+  min-width:17rem;background:var(--white);border:1px solid var(--border);
+  border-radius:13px;box-shadow:0 14px 40px rgba(28,43,26,.16);
+  padding:.35rem;z-index:60}
+.menu-avatar.on{display:block}
+.menu-avatar button{display:flex;align-items:center;gap:.7rem;width:100%;text-align:left;
+  font-family:'Jost',sans-serif;background:none;border:0;cursor:pointer;
+  padding:.6rem .65rem;border-radius:9px;color:var(--ink)}
+.menu-avatar button:hover{background:var(--surface)}
+.menu-avatar .mv-ic{flex:none;width:2rem;height:2rem;border-radius:8px;
+  display:grid;place-items:center;font-size:1rem;background:var(--surface)}
+.menu-avatar b{display:block;font-size:.87rem;font-weight:500;line-height:1.25}
+.menu-avatar i{display:block;font-style:normal;font-size:.7rem;color:var(--stone-light);
+  line-height:1.4;margin-top:.05rem}

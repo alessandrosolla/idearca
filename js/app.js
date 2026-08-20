@@ -872,7 +872,10 @@ const VISTE={
   __grafici__:  {vista:'lib-grafici-view',  uso:'grafici',  frame:'lib-grafici-frame',  src:'prove/grafici.html',    quando:'una volta'},
   __verifiche__:{vista:'lib-verifiche-view',uso:'verifiche',frame:'lib-verifiche-frame',src:'prove/verifiche.html',  quando:'una volta'},
   __aula__:     {vista:'lib-aula-view',     uso:'aula',     frame:'lib-aula-frame',     src:'prove/aula.html',       quando:'una volta'},
-  __lavagna__:  {vista:'lib-lavagna-view',  uso:'lavagna',  frame:'lib-lavagna-frame',  src:'lavagna/index.html',    quando:'una volta'},
+  /* La lavagna non ha un riquadro: si apre in una scheda sua.
+     Dentro la cornice lo schermo intero la lasciava prigioniera
+     del riquadro e si scriveva fuori dalla tela. */
+  __lavagna__:  {fuori:'lavagna/index.html', uso:'lavagna'},
   __consegna__: {vista:'lib-consegna-view', uso:'consegna', frame:'lib-consegna-frame', src:'consegna/index.html',   quando:'ogni volta'},
   __voti__:     {vista:'lib-voti-view',     uso:'voti',     frame:'lib-voti-frame',     src:'votazioni/index.html',  quando:'ogni volta'},
   __calendario__:{vista:'lib-calendario-view',uso:'calendario',frame:'lib-calendario-frame',src:'calendario/index.html',quando:'ogni volta'},
@@ -893,6 +896,13 @@ function nascondiViste(){
    false se è una materia — così chi chiama sa se proseguire. */
 function mostraVista(k){
   const v=VISTE[k]; if(!v) return false;
+  /* alcune cose non vivono in un riquadro: escono in una scheda
+     loro e la libreria resta dov'era */
+  if(v.fuori){
+    window.open(v.fuori, 'idearca-'+v.uso);
+    registraUso('strumento', v.uso);
+    return true;
+  }
   nascondiViste();
   document.getElementById('lib-head').style.display='none';
   document.getElementById('lib-modules').style.display='none';
@@ -1191,13 +1201,56 @@ function telApri(k){
   mobChange(k);
   window.scrollTo({top:0, behavior:'instant'});
 }
-/* Il bollino con le iniziali: per il docente è la scorciatoia al
-   calendario. Per gli altri non fa niente — meglio un bottone che
-   non reagisce che una voce che non dovrebbero vedere. */
+/* ── IL BOLLINO CON LE INIZIALI ──────────────────────────
+   Per il docente è la scorciatoia alle due cose che apre ogni
+   giorno: il calendario, per sapere che ora è; la lavagna, per
+   farci lezione. Sono anche le due che si cercano di fretta —
+   la lavagna spesso con la classe già seduta — e passare per la
+   colonna è un gesto in più ripetuto duecento volte l'anno.
+   Per gli altri il bollino non fa niente.
+   ──────────────────────────────────────────────────────── */
 function avatarClic(){
   if(!vedeRoba()) return;
+  const g=document.getElementById('menu-avatar');
+  if(g){ g.classList.toggle('on'); return; }
+  const m=document.createElement('div');
+  m.id='menu-avatar'; m.className='menu-avatar on';
+  m.innerHTML=`
+    <button onclick="apriDalBollino('calendario')">
+      <span class="mv-ic">📅</span>
+      <span><b>Calendario</b><i>Le lezioni, classe per classe</i></span></button>
+    <button onclick="apriDalBollino('lavagna')">
+      <span class="mv-ic">🖊</span>
+      <span><b>Lavagna</b><i>Si apre a tutto schermo, in una scheda sua</i></span></button>`;
+  document.querySelector('.lib-user').appendChild(m);
+  /* un clic fuori la chiude: un menu che resta aperto e' un menu
+     che si preme per sbaglio */
+  setTimeout(()=>document.addEventListener('click', chiudiMenuAvatar), 0);
+}
+function chiudiMenuAvatar(e){
+  const m=document.getElementById('menu-avatar');
+  if(!m) return;
+  if(e && (e.target.closest('#menu-avatar') || e.target.closest('#lib-avatar'))) return;
+  m.classList.remove('on');
+  document.removeEventListener('click', chiudiMenuAvatar);
+}
+function apriDalBollino(cosa){
+  chiudiMenuAvatar();
+  if(cosa==='lavagna'){
+    /* ── PERCHE' LA LAVAGNA ESCE DAL SITO ─────────────────
+       Dentro la cornice non funzionava: a schermo intero da un
+       iframe la lavagna resta prigioniera del suo riquadro, e
+       quello che si scrive fuori dal rettangolo non compare. In
+       una scheda sua lo schermo intero e' quello vero del
+       browser, e non c'e' niente intorno che possa rubarle un
+       tocco. È lo strumento che finisce sul proiettore: deve
+       partire al primo colpo. */
+    window.open('lavagna/index.html', 'idearca-lavagna');
+    registraUso('strumento','lavagna');
+    return;
+  }
   const p=document.getElementById('page-library');
-  if(p) p.classList.add('tel-dentro');   /* sul telefono si passa alla seconda schermata */
+  if(p) p.classList.add('tel-dentro');
   mostraVista('__calendario__');
   document.querySelectorAll('.lib-item').forEach(n=>
     n.classList.toggle('active', n.dataset.key==='__calendario__'));

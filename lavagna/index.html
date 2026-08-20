@@ -190,8 +190,29 @@ function ridimensiona(){
   ridisegna();
 }
 window.addEventListener('resize', ridimensiona);
-document.addEventListener('fullscreenchange', ()=>setTimeout(ridimensiona,60));
-document.addEventListener('webkitfullscreenchange', ()=>setTimeout(ridimensiona,60));
+/* ── LA TELA DEVE SEGUIRE IL RIQUADRO, SEMPRE ────────────
+   Il ridimensionamento affidato a un timer di 60 ms andava a
+   fortuna: a schermo intero il riquadro cambia misura in due
+   passaggi, e se il conto cadeva nel mezzo la tela restava della
+   dimensione vecchia — un rettangolo che disegna dentro uno
+   spazio piu' grande. È la «zona chiusa»: si scrive fuori dal
+   rettangolo e non compare niente.
+   Un osservatore guarda il riquadro invece dell'orologio: appena
+   cambia, la tela si adegua. Funziona per lo schermo intero, per
+   la rotazione del tablet e per la barra del browser che compare
+   e sparisce mentre si scorre.
+   ────────────────────────────────────────────────────────── */
+if(window.ResizeObserver){
+  new ResizeObserver(()=>ridimensiona()).observe(elArea);
+}else{
+  document.addEventListener('fullscreenchange', ()=>setTimeout(ridimensiona,60));
+  document.addEventListener('webkitfullscreenchange', ()=>setTimeout(ridimensiona,60));
+}
+/* e comunque un giro in piu' dopo il cambio, perche' su iPad la
+   misura buona arriva un fotogramma dopo l'evento */
+['fullscreenchange','webkitfullscreenchange','orientationchange'].forEach(ev=>
+  document.addEventListener(ev, ()=>requestAnimationFrame(()=>
+    requestAnimationFrame(ridimensiona))));
 
 /* ---------- conversioni ---------- */
 function aMondo(clientX, clientY){
