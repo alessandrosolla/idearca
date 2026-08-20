@@ -480,7 +480,24 @@ function sospensioneDi(dataIso, classeId){
    Sei giorni, lunedì-sabato: la domenica in un calendario di
    scuola è una riga vuota che si porta dietro per tutto l'anno.
    ══════════════════════════════════════════════════════════ */
+/* ── SE QUALCOSA SI ROMPE, DEVE DIRLO ────────────────────
+   Una funzione mancante lasciava la pagina completamente bianca:
+   le schede in cima c'erano, sotto il nulla, e non c'era modo di
+   capire perche'. Un errore silenzioso costa piu' di un errore
+   scritto male. Adesso il guasto compare, con il punto in cui e'
+   successo, e il resto del calendario resta raggiungibile.
+   ─────────────────────────────────────────────────────────── */
 function disegna(){
+  try{ disegnaDavvero(); }
+  catch(e){
+    document.getElementById('cont').innerHTML =
+      `<div class="avviso"><strong>Qualcosa si è rotto in questa vista.</strong><br>
+        ${esc(e.message)}<br>
+        <span style="font-size:.78rem;color:#8A7355">${esc((e.stack||'').split('\n')[1]||'')}</span><br>
+        Le altre schede dovrebbero funzionare. Se si ripete, mandami questa riga.</div>`;
+  }
+}
+function disegnaDavvero(){
   const cont=document.getElementById('cont');
   if(scheda==='mese') cont.innerHTML=vistaMese();
   else if(scheda==='settimana') cont.innerHTML=vistaSettimanaGriglia();
@@ -870,6 +887,18 @@ function strisciaVuote(){
 /* Il filo del programma: le ore che si «riempiono davvero».
    Prima gli approfondimenti, poi le slide. Ogni pezzo vale un'ora
    e detta quante ore servono. */
+/* Che cosa si vede la prima volta, quando non c'e' ancora niente.
+   Non un calendario vuoto ma le tre cose da fare, in ordine.
+   Questa funzione era sparita in una riscrittura e la pagina
+   restava bianca: senza classi la vista la chiamava e trovava
+   il nulla. */
+function primoAvvio(){
+  return `<div class="vuoto"><strong>Il calendario è vuoto perché non ci sono ancora classi.</strong><br>
+    Si comincia da lì: apri <em>Impostazioni</em> e aggiungi le classi in cui insegni.
+    Poi imposti una volta sola la griglia settimanale — 4B il lunedì dalle 9 alle 10 —
+    e il calendario genera tutte le ore dell'anno.</div>`;
+}
+
 function programmaDi(materia){
   if(!materia) return [];
   return scaffale(materia,'approfondimenti').concat(scaffale(materia,'slide'));

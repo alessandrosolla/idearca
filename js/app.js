@@ -1637,6 +1637,26 @@ document.addEventListener('keydown',e=>{
 });
 
 let vetrinaFatta=false;
+/* Legge le due banche e conta capitoli e domande. Il risultato
+   resta in sessione: sono due file grossi e non cambiano durante
+   una visita. */
+async function contaBanca(){
+  try{
+    const salvato=sessionStorage.getItem('idearca-numeri-banca');
+    if(salvato) return JSON.parse(salvato);
+    const [t1,t2]=await Promise.all([
+      fetch('votazioni/banca.js').then(r=>r.text()),
+      fetch('votazioni/banca2.js').then(r=>r.text()).catch(()=>'')
+    ]);
+    const titoli=new Set();
+    [t1,t2].forEach(t=>(t.match(/titolo:\s*'((?:[^'\\]|\\.)*)'/g)||[]).forEach(x=>titoli.add(x)));
+    const d={capitoli:titoli.size,
+             domande:(t1.match(/tipo:/g)||[]).length+(t2.match(/tipo:/g)||[]).length};
+    sessionStorage.setItem('idearca-numeri-banca',JSON.stringify(d));
+    return d;
+  }catch(e){ return {capitoli:120, domande:1080}; }
+}
+
 async function caricaVetrina(){
   if(vetrinaFatta) return;
   const body=document.getElementById('peek-body');
@@ -1650,6 +1670,13 @@ async function caricaVetrina(){
        il programma italiano, quello che si vede entrando */
     const righe=tutte.filter(r=>!String(r.materia||'').startsWith('ib:'));
     const conta=t=>righe.filter(r=>r.tab===t).length;
+
+    /* ── I NUMERI DELLA BANCA, CONTATI ────────────────────
+       Erano scritti a mano dentro la pagina: «120 capitoli,
+       1080 domande». Ogni volta che la banca cresce quel numero
+       resta indietro e la vetrina racconta una cosa vecchia.
+       Adesso si leggono i due file e si contano. */
+    const banca = await contaBanca(); 
     const materie=new Set(righe.map(r=>r.materia)).size;
 
     const slide=conta('materiali'), fonti=conta('fonti'),
@@ -1696,8 +1723,8 @@ async function caricaVetrina(){
       <div class="peek-nums">
         ${num(righe.length,'materiali','#2d5a27')}
         ${num(materie,'materie','#9a7c2e')}
-        ${num('120','capitoli con domande','#7a4b8c')}
-        ${num('1080','domande pronte','#7a4b8c')}
+        ${num(banca.capitoli,'capitoli con domande','#7a4b8c')}
+        ${num(banca.domande,'domande pronte','#7a4b8c')}
       </div>
 
       <section class="peek-sec">
@@ -1716,7 +1743,7 @@ async function caricaVetrina(){
         <div class="peek-sec-title">Costruito per Idearca</div>
         <p class="peek-sec-nota">Materiale che non esiste altrove: preparato apposta per queste lezioni.</p>
         <div class="peek-grid">
-          ${card('1080','Domande per le votazioni','Scritte una per una: nove per ogni capitolo, con i distrattori costruiti sugli errori che gli studenti fanno davvero.','#7a4b8c')}
+          ${card(banca.domande,'Domande per le votazioni','Scritte una per una, con i distrattori costruiti sugli errori che gli studenti fanno davvero. Due banche: la stessa classe puo rifare un capitolo senza ritrovare le stesse domande.','#7a4b8c')}
           ${card('312','Eventi in linea del tempo','Storia e filosofia affiancate sullo stesso asse, dal 3500 a.C. a oggi.','#2f7a6a')}
         </div>
       </section>

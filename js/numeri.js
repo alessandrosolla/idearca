@@ -54,11 +54,25 @@
       let dati=sessionStorage.getItem('idearca-numeri-banca');
       if(dati){ dati=JSON.parse(dati); }
       else{
-        const r=await fetch(BASE+'votazioni/banca.js');
-        const testo=await r.text();
+        /* Le banche sono due: banca.js dagli Approfondimenti del
+           sito, banca2.js dalle slide. Contarne una sola faceva
+           dire «1080 domande» quando erano il doppio, e il numero
+           restava indietro a ogni blocco aggiunto. I capitoli non
+           si sommano: le due banche coprono gli stessi capitoli e
+           si uniscono per titolo, quindi si contano i titoli
+           distinti. */
+        const [r1,r2]=await Promise.all([
+          fetch(BASE+'votazioni/banca.js').then(x=>x.text()),
+          fetch(BASE+'votazioni/banca2.js').then(x=>x.text()).catch(()=>'')
+        ]);
+        const titoli=new Set();
+        [r1,r2].forEach(t=>{
+          (t.match(/titolo:\s*'((?:[^'\\]|\\.)*)'/g)||[])
+            .forEach(x=>titoli.add(x));
+        });
         dati={
-          capitoli:(testo.match(/titolo:/g)||[]).length,
-          domande:(testo.match(/tipo:/g)||[]).length
+          capitoli: titoli.size,
+          domande: (r1.match(/tipo:/g)||[]).length + (r2.match(/tipo:/g)||[]).length
         };
         sessionStorage.setItem('idearca-numeri-banca',JSON.stringify(dati));
       }
