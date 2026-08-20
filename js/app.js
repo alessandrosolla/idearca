@@ -1221,7 +1221,10 @@ function avatarClic(){
       <span><b>Calendario</b><i>Le lezioni, classe per classe</i></span></button>
     <button onclick="apriDalBollino('lavagna')">
       <span class="mv-ic">🖊</span>
-      <span><b>Lavagna</b><i>Si apre a tutto schermo, in una scheda sua</i></span></button>`;
+      <span><b>Lavagna</b><i>Si apre a tutto schermo, in una scheda sua</i></span></button>
+    <button onclick="apriDalBollino('qr')">
+      <span class="mv-ic">▣</span>
+      <span><b>Codice da inquadrare</b><i>Da proiettare: la classe entra col telefono</i></span></button>`;
   document.querySelector('.lib-user').appendChild(m);
   /* un clic fuori la chiude: un menu che resta aperto e' un menu
      che si preme per sbaglio */
@@ -1234,8 +1237,52 @@ function chiudiMenuAvatar(e){
   m.classList.remove('on');
   document.removeEventListener('click', chiudiMenuAvatar);
 }
+/* ══════════════════════════════════════════════════════════
+   IL CODICE DA INQUADRARE
+
+   Dettare un indirizzo a venticinque persone non funziona: tre
+   lo scrivono male, due chiedono di ripetere, e intanto la
+   lezione è ferma. Un quadrato sul proiettore lo inquadrano
+   tutti in dieci secondi.
+
+   Il codice si calcola qui dentro, senza rete: in aula la
+   connessione va e viene, e un codice che dipende da un servizio
+   esterno è un codice che qualche volta non compare — proprio
+   davanti alla classe.
+   ══════════════════════════════════════════════════════════ */
+function mostraQR(){
+  const indirizzo = location.origin + location.pathname.replace(/[^/]*$/,'');
+  let v=document.getElementById('velo-qr');
+  if(!v){
+    v=document.createElement('div');
+    v.id='velo-qr'; v.className='velo-qr';
+    v.onclick = e => { if(e.target===v) v.classList.remove('on'); };
+    document.body.appendChild(v);
+  }
+  v.innerHTML=`
+    <div class="qr-scheda">
+      <button class="qr-chiudi" onclick="document.getElementById('velo-qr').classList.remove('on')"
+        aria-label="Chiudi">×</button>
+      <div class="qr-tela" id="qr-tela"></div>
+      <div class="qr-indirizzo">${escHtml(indirizzo)}</div>
+      <p class="qr-nota">Inquadratelo con la fotocamera del telefono.
+        Poi serve il codice della classe per entrare.</p>
+    </div>`;
+  v.classList.add('on');
+  try{
+    const lato=Math.min(520, Math.round(Math.min(window.innerWidth, window.innerHeight)*0.62));
+    document.getElementById('qr-tela').appendChild(QR.disegna(indirizzo,{lato}));
+  }catch(e){
+    document.getElementById('qr-tela').textContent='Non riesco a disegnare il codice.';
+  }
+}
+document.addEventListener('keydown', e=>{
+  if(e.key==='Escape') document.getElementById('velo-qr')?.classList.remove('on');
+});
+
 function apriDalBollino(cosa){
   chiudiMenuAvatar();
+  if(cosa==='qr'){ mostraQR(); return; }
   if(cosa==='lavagna'){
     /* ── PERCHE' LA LAVAGNA ESCE DAL SITO ─────────────────
        Dentro la cornice non funzionava: a schermo intero da un

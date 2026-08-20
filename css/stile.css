@@ -1486,3 +1486,21 @@ html[data-theme="dark"] .chi-banda{background:#171d15}
 .menu-avatar b{display:block;font-size:.87rem;font-weight:500;line-height:1.25}
 .menu-avatar i{display:block;font-style:normal;font-size:.7rem;color:var(--stone-light);
   line-height:1.4;margin-top:.05rem}
+
+/* ── IL CODICE DA INQUADRARE ────────────────────────────────
+   Grande, al centro, su fondo scuro: deve leggersi dal fondo
+   dell'aula e da un proiettore che sbiadisce i colori. */
+.velo-qr{display:none;position:fixed;inset:0;z-index:900;
+  background:rgba(12,20,10,.88);backdrop-filter:blur(6px);
+  align-items:center;justify-content:center;padding:1.5rem}
+.velo-qr.on{display:flex}
+.qr-scheda{position:relative;background:#fff;border-radius:20px;
+  padding:2rem 2rem 1.6rem;text-align:center;max-width:min(92vw,34rem)}
+.qr-tela{display:flex;justify-content:center}
+.qr-tela canvas{display:block;border-radius:8px}
+.qr-indirizzo{margin-top:1rem;font-family:'Jost',sans-serif;font-size:1.05rem;
+  font-weight:500;color:#1F1B16;word-break:break-all;line-height:1.4}
+.qr-nota{margin-top:.5rem;font-size:.82rem;color:#5A5148;line-height:1.6}
+.qr-chiudi{position:absolute;right:.7rem;top:.55rem;border:0;background:none;
+  font-size:1.7rem;line-height:1;color:#8A7355;cursor:pointer;padding:.2rem .4rem}
+.qr-chiudi:hover{color:#1F1B16}
