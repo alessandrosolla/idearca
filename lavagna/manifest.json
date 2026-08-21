@@ -1,0 +1,11 @@
+{
+  "name": "Lavagna — Idearca",
+  "short_name": "Lavagna",
+  "description": "La lavagna di Idearca: schemi e appunti da proiettare in aula.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "fullscreen",
+  "orientation": "any",
+  "background_color": "#FBF7F0",
+  "theme_color": "#1F1B16"
+}

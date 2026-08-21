@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>La lavagna — Idearca</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<style>
+  *{box-sizing:border-box}
+  html,body{height:100%;margin:0;overscroll-behavior:none}
+  body{background:#FBF7F0;color:#1F1B16;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    display:flex;flex-direction:column;overflow:hidden;-webkit-font-smoothing:antialiased}
+
+  .bar{display:flex;align-items:center;gap:.6rem;padding:.5rem .8rem;
+    background:#fff;border-bottom:1px solid #E3DACB;flex:0 0 auto}
+  .bar h1{font-size:.95rem;font-weight:600;margin:0}
+  .stato{display:inline-flex;align-items:center;gap:.4rem;font-size:.78rem;color:#5A5148}
+  .spia{width:9px;height:9px;border-radius:50%;background:#C9BCA6}
+  .spia.viva{background:#C0453B;animation:respira 2.4s ease-in-out infinite}
+  @keyframes respira{0%,100%{opacity:1}50%{opacity:.5}}
+  .spazio{flex:1}
+  .bar button{font:inherit;font-size:.8rem;font-weight:600;min-height:38px;
+    padding:.4rem .8rem;border:1px solid #E3DACB;border-radius:9px;background:#fff;
+    color:#1F1B16;cursor:pointer;touch-action:manipulation}
+  .bar button.on{background:#1F1B16;color:#fff;border-color:#1F1B16}
+
+  .area{position:relative;flex:1 1 auto;overflow:hidden;background:#FBF7F0}
+  #testo{position:absolute;left:0;top:0;width:1100px;min-height:640px;
+    transform-origin:0 0;padding:2rem 2.4rem;margin:0;font-size:30px;line-height:1.5;
+    white-space:pre-wrap;word-wrap:break-word;pointer-events:none;user-select:text}
+  #tela{position:absolute;inset:0;width:100%;height:100%;touch-action:none}
+
+  .velo{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+    background:rgba(251,247,240,.94);padding:2rem;text-align:center}
+  .velo.via{display:none}
+  .velo div{max-width:32rem}
+  .velo strong{display:block;font-size:1.15rem;margin-bottom:.5rem}
+  .velo p{font-size:.9rem;line-height:1.7;color:#5A5148;margin:0}
+  @media (max-height:560px){
+    .bar{padding:.3rem .5rem} .bar button{min-height:32px;padding:.3rem .6rem;font-size:.75rem}
+    .bar h1{font-size:.85rem}
+  }
+</style>
+</head>
+<body>
+
+<div class="bar">
+  <h1>La lavagna</h1>
+  <span class="stato"><i class="spia" id="spia"></i><span id="testo-stato">collego…</span></span>
+  <span class="spazio"></span>
+  <button id="b-segui" class="on" onclick="commutaSegui()"
+    title="Segui l'inquadratura del docente, oppure muoviti per conto tuo">⇱ Seguo il docente</button>
+  <button onclick="adatta()">⤢ Inquadra tutto</button>
+</div>
+
+<div class="area" id="area">
+  <pre id="testo"></pre>
+  <canvas id="tela"></canvas>
+  <div class="velo" id="velo">
+    <div>
+      <strong>La lavagna non è accesa.</strong>
+      <p>Quando il docente comincia a scrivere, quello che disegna compare qui.
+         Puoi lasciare la pagina aperta: si accende da sola.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ══════════════════════════════════════════════════════════
+   GUARDA LA LAVAGNA — Idearca
+
+   Lo specchio della lavagna del docente, per chi sta in fondo
+   all'aula, per chi copia e perde il filo, per chi era assente.
+
+   Due cose sono pensate per la rete di una scuola, dove venti
+   telefoni chiedono la stessa cosa insieme:
+
+   · si domanda prima «è cambiata?» e solo in caso si scarica il
+     disegno. La domanda pesa qualche decina di byte, il disegno
+     centinaia di kilobyte;
+   · l'intervallo si allarga da solo quando la lavagna sta ferma
+     — da due secondi fino a otto — e torna stretto appena
+     qualcosa si muove. Un docente che spiega scrive a raffica e
+     poi si ferma a parlare: inseguirlo sempre allo stesso passo
+     sarebbe sprecare per la maggior parte del tempo.
+
+   La pagina non scrive niente: legge e basta.
+   ══════════════════════════════════════════════════════════ */
+
+const SB_URL = 'https://mqjceddrbhpwqjomhohm.supabase.co';
+const SB_KEY = 'sb_publishable_D7vDsaervKNJNgdJwknDpQ_Vuuf9CeJ';
+
+const elArea = document.getElementById('area');
+const elTesto = document.getElementById('testo');
+const tela = document.getElementById('tela');
+const ctx = tela.getContext('2d');
+
+let tratti = [], vista = {x:0,y:0,s:1}, vistaDocente = {x:0,y:0,s:1};
+let seguo = true, dim = {w:0,h:0};
+let ultimoOrario = null, attesa = 2000, orologio = null;
+
+/* ---------- disegno ---------- */
+function ridimensiona(){
+  const r = elArea.getBoundingClientRect();
+  if(!r.width || !r.height) return;
+  const dpr = Math.min(window.devicePixelRatio || 1, 2);
+  dim = {w:r.width, h:r.height};
+  tela.style.width = r.width+'px'; tela.style.height = r.height+'px';
+  tela.width = Math.round(r.width*dpr); tela.height = Math.round(r.height*dpr);
+  ridisegna();
+}
+if(window.ResizeObserver) new ResizeObserver(()=>ridimensiona()).observe(elArea);
+window.addEventListener('resize', ridimensiona);
+
+function ridisegna(){
+  const dpr = Math.min(window.devicePixelRatio || 1, 2);
+  ctx.setTransform(dpr,0,0,dpr,0,0);
+  ctx.clearRect(0,0,dim.w,dim.h);
+  ctx.save();
+  ctx.translate(vista.x, vista.y);
+  ctx.scale(vista.s, vista.s);
+  ctx.lineCap='round'; ctx.lineJoin='round';
+  for(const t of tratti){
+    if(!t.p || !t.p.length) continue;
+    ctx.strokeStyle = t.c || '#1F1B16';
+    ctx.lineWidth = t.w || 8;
+    if(t.p.length === 1){
+      ctx.beginPath(); ctx.arc(t.p[0][0], t.p[0][1], (t.w||8)/2, 0, Math.PI*2);
+      ctx.fillStyle = t.c || '#1F1B16'; ctx.fill(); continue;
+    }
+    ctx.beginPath();
+    ctx.moveTo(t.p[0][0], t.p[0][1]);
+    for(let i=1;i<t.p.length;i++) ctx.lineTo(t.p[i][0], t.p[i][1]);
+    ctx.stroke();
+  }
+  ctx.restore();
+  elTesto.style.transform = 'translate('+vista.x+'px,'+vista.y+'px) scale('+vista.s+')';
+}
+
+/* Inquadra tutto quello che c'è: serve a chi apre a metà lezione
+   e trova il disegno fuori campo. */
+function adatta(){
+  let x0=Infinity,y0=Infinity,x1=-Infinity,y1=-Infinity, trovato=false;
+  tratti.forEach(t=>(t.p||[]).forEach(([x,y])=>{
+    trovato=true;
+    x0=Math.min(x0,x); y0=Math.min(y0,y); x1=Math.max(x1,x); y1=Math.max(y1,y);
+  }));
+  if(!trovato){ vista={x:0,y:0,s:1}; ridisegna(); return; }
+  const larg=Math.max(1,x1-x0), alt=Math.max(1,y1-y0);
+  const s=Math.min(dim.w/(larg+120), dim.h/(alt+120), 3);
+  vista={s, x:(dim.w-larg*s)/2 - x0*s, y:(dim.h-alt*s)/2 - y0*s};
+  seguo=false; aggiornaBottoneSegui();
+  ridisegna();
+}
+function commutaSegui(){
+  seguo=!seguo;
+  if(seguo){ vista={...vistaDocente}; ridisegna(); }
+  aggiornaBottoneSegui();
+}
+function aggiornaBottoneSegui(){
+  const b=document.getElementById('b-segui');
+  b.classList.toggle('on', seguo);
+  b.textContent = seguo ? '⇱ Seguo il docente' : '⇱ Guardo da solo';
+}
+
+/* muoversi per conto proprio: due dita o rotellina */
+const attivi=new Map(); let pizzico=null, trascino=null;
+function schermo(e){ const r=tela.getBoundingClientRect(); return {x:e.clientX-r.left, y:e.clientY-r.top}; }
+tela.addEventListener('pointerdown', e=>{
+  attivi.set(e.pointerId, schermo(e));
+  try{ tela.setPointerCapture(e.pointerId); }catch(_){}
+  if(attivi.size===2){
+    const v=[...attivi.values()];
+    pizzico={d:Math.hypot(v[0].x-v[1].x, v[0].y-v[1].y),
+             c:{x:(v[0].x+v[1].x)/2, y:(v[0].y+v[1].y)/2}};
+    trascino=null;
+  }else if(attivi.size===1){
+    const p=schermo(e); trascino={x:p.x,y:p.y,vx:vista.x,vy:vista.y};
+  }
+});
+tela.addEventListener('pointermove', e=>{
+  if(!attivi.has(e.pointerId)) return;
+  attivi.set(e.pointerId, schermo(e));
+  if(pizzico && attivi.size>=2){
+    const v=[...attivi.values()];
+    const d=Math.hypot(v[0].x-v[1].x, v[0].y-v[1].y);
+    const c={x:(v[0].x+v[1].x)/2, y:(v[0].y+v[1].y)/2};
+    if(pizzico.d>0){
+      const s2=Math.max(.15, Math.min(6, vista.s*(d/pizzico.d)));
+      const k=s2/vista.s;
+      vista.x=c.x-(pizzico.c.x-vista.x)*k;
+      vista.y=c.y-(pizzico.c.y-vista.y)*k;
+      vista.s=s2;
+      staccatiDalDocente();
+    }
+    pizzico={d,c};
+  }else if(trascino){
+    const p=schermo(e);
+    vista.x=trascino.vx+(p.x-trascino.x);
+    vista.y=trascino.vy+(p.y-trascino.y);
+    staccatiDalDocente();
+  }
+});
+function fine(e){
+  if(e && e.pointerId!==undefined){ attivi.delete(e.pointerId);
+    try{ tela.releasePointerCapture(e.pointerId); }catch(_){} }
+  else attivi.clear();
+  if(attivi.size<2) pizzico=null;
+  if(attivi.size===0) trascino=null;
+}
+tela.addEventListener('pointerup', fine);
+tela.addEventListener('pointercancel', fine);
+tela.addEventListener('wheel', e=>{
+  e.preventDefault();
+  const r=tela.getBoundingClientRect(), px=e.clientX-r.left, py=e.clientY-r.top;
+  const k=Math.exp(-e.deltaY*0.0016);
+  const s2=Math.max(.15, Math.min(6, vista.s*k)), kk=s2/vista.s;
+  vista.x=px-(px-vista.x)*kk; vista.y=py-(py-vista.y)*kk; vista.s=s2;
+  staccatiDalDocente();
+}, {passive:false});
+
+/* Muovendosi da soli si smette di seguire: inseguire il docente
+   mentre si sta guardando un'altra parte è la cosa più fastidiosa
+   che possa fare una lavagna condivisa. */
+function staccatiDalDocente(){
+  if(seguo){ seguo=false; aggiornaBottoneSegui(); }
+  ridisegna();
+}
+
+/* ---------- il giro di controllo ---------- */
+function spia(viva, testo){
+  document.getElementById('spia').classList.toggle('viva', viva);
+  document.getElementById('testo-stato').textContent = testo;
+  document.getElementById('velo').classList.toggle('via', viva);
+}
+
+async function guarda(){
+  try{
+    /* prima la domanda leggera: è cambiata? */
+    const r = await fetch(SB_URL+'/rest/v1/rpc/lavagna_live_quando',{
+      method:'POST', headers:{'apikey':SB_KEY,'Authorization':'Bearer '+SB_KEY,
+      'Content-Type':'application/json'}, body:'{}'});
+    if(!r.ok) throw new Error('non raggiungibile');
+    const quando = await r.json();
+
+    if(!quando){                       /* spenta */
+      spia(false, 'lavagna spenta');
+      ultimoOrario = null;
+      attesa = Math.min(8000, attesa+1500);
+      return;
+    }
+    if(quando === ultimoOrario){       /* accesa ma ferma */
+      spia(true, 'in diretta');
+      attesa = Math.min(8000, attesa+1000);
+      return;
+    }
+
+    /* è cambiata: adesso vale la pena scaricarla */
+    const r2 = await fetch(SB_URL+'/rest/v1/lavagna_live?id=eq.1&select=tratti,testo,vista',
+      {headers:{'apikey':SB_KEY,'Authorization':'Bearer '+SB_KEY}});
+    const righe = await r2.json();
+    if(Array.isArray(righe) && righe.length){
+      const d = righe[0];
+      tratti = Array.isArray(d.tratti) ? d.tratti : [];
+      elTesto.textContent = d.testo || '';
+      vistaDocente = d.vista || {x:0,y:0,s:1};
+      if(seguo) vista = {...vistaDocente};
+      ridisegna();
+    }
+    ultimoOrario = quando;
+    spia(true, 'in diretta');
+    attesa = 2000;                     /* si muove: si torna stretti */
+  }catch(e){
+    spia(false, 'non raggiungibile');
+    attesa = Math.min(8000, attesa+2000);
+  }finally{
+    clearTimeout(orologio);
+    orologio = setTimeout(guarda, attesa);
+  }
+}
+
+/* con la pagina in secondo piano non si chiede niente: è il
+   telefono di uno studente, non un server */
+document.addEventListener('visibilitychange', ()=>{
+  if(document.hidden){ clearTimeout(orologio); }
+  else { attesa=2000; guarda(); }
+});
+
+ridimensiona();
+aggiornaBottoneSegui();
+guarda();
+</script>
+</body>
+</html>

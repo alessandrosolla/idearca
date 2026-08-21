@@ -1,3 +1,36 @@
+/* ══════════════════════════════════════════════════════════
+   LA VERSIONE, E PERCHE' SERVE CONTROLLARLA
+
+   GitHub Pages serve index.html con «cache-control: max-age=600»:
+   per dieci minuti il browser tiene la pagina vecchia, e siccome
+   e la pagina a dire quale app.js caricare, con la pagina vecchia
+   arriva anche il codice vecchio. Da fuori sembra che una cosa
+   nuova «non funzioni», mentre semplicemente non e ancora
+   arrivata — ed e successo cosi tante volte, in questo progetto,
+   da valere una riga di codice.
+
+   Qui accanto c'e un file minuscolo, versione.json, che si chiede
+   sempre alla rete e mai alla cache. Se dice una versione diversa
+   da quella scritta qui dentro, vuol dire che la pagina in mano
+   e vecchia: si ricarica una volta sola e si va avanti.
+
+   Il controllo del ricaricamento e in sessionStorage: senza, una
+   versione.json sbagliata manderebbe il browser in un giro
+   infinito di ricariche.
+   ══════════════════════════════════════════════════════════ */
+const VERSIONE='20260821a';
+(async function controllaVersione(){
+  try{
+    const r=await fetch('versione.json?'+Date.now(), {cache:'no-store'});
+    if(!r.ok) return;
+    const d=await r.json();
+    if(!d.versione || d.versione===VERSIONE) return;
+    if(sessionStorage.getItem('idearca-ricaricato')===d.versione) return;
+    sessionStorage.setItem('idearca-ricaricato', d.versione);
+    location.reload();
+  }catch(e){/* senza rete si tiene quello che c'e */}
+})();
+
 const SB_URL='https://mqjceddrbhpwqjomhohm.supabase.co';
 const SB_KEY='sb_publishable_D7vDsaervKNJNgdJwknDpQ_Vuuf9CeJ';
 
@@ -840,6 +873,7 @@ function vociExtra(){
      mentre gli comparivano Inbox e Lavagna, che non sono sue. */
   return [
     {g:'Didattica',k:'__consegna__',l:'Consegna un compito',    p:'Per gli studenti',         chi:'tutti',   ic:'📤'},
+    {g:'Didattica',k:'__guarda__',  l:'Guarda la lavagna',      p:'Quello che scrivo, in diretta', chi:'tutti', ic:'◉'},
     {g:'Didattica',k:'__calendario__',l:'Calendario',           p:'Le lezioni, classe per classe', chi:'docente', ic:'📅'},
     {g:'Didattica',k:'__inbox__',   l:'Inbox',                  p:'Consegne degli studenti',  chi:'docente', ic:'📥'},
     {g:'Didattica',k:'__voti__',    l:'Votazioni',              p:'120 capitoli pronti',      chi:'tutti',   ic:'📊'},
@@ -878,6 +912,7 @@ const VISTE={
   __lavagna__:  {fuori:'lavagna/index.html', uso:'lavagna'},
   __consegna__: {vista:'lib-consegna-view', uso:'consegna', frame:'lib-consegna-frame', src:'consegna/index.html',   quando:'ogni volta'},
   __voti__:     {vista:'lib-voti-view',     uso:'voti',     frame:'lib-voti-frame',     src:'votazioni/index.html',  quando:'ogni volta'},
+  __guarda__:   {vista:'lib-guarda-view',   uso:'guarda',   frame:'lib-guarda-frame',   src:'lavagna/guarda.html',   quando:'ogni volta'},
   __calendario__:{vista:'lib-calendario-view',uso:'calendario',frame:'lib-calendario-frame',src:'calendario/index.html',quando:'ogni volta'},
   __inbox__:    {vista:'lib-inbox-view',    uso:'inbox',    frame:'lib-inbox-frame',    src:'inbox/index.html',      quando:'ogni volta'},
   __prove__:    {vista:'lib-prove-view',    uso:'prove',    frame:'lib-prove-frame',    src:'prove/index.html',      quando:'ogni volta'}

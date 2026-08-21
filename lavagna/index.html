@@ -2,7 +2,19 @@
 <html lang="it">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,viewport-fit=cover">
+<!-- ── SCHERMO INTERO VERO SU IPAD ─────────────────────────
+     Safari su iPad non lascia togliere la propria barra a una
+     pagina qualunque: l'API dello schermo intero copre il
+     contenuto ma la barra resta. L'unico modo e installare la
+     lavagna come applicazione — «Condividi → Aggiungi a Home» —
+     e allora si apre senza niente intorno. Queste tre righe sono
+     quello che serve perche iOS la tratti cosi. -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Lavagna">
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="manifest" href="manifest.json">
 <title>Lavagna — Idearca</title>
 <style>
   *{box-sizing:border-box}
@@ -35,6 +47,10 @@
   }
   .bar button:hover{border-color:#8A7355}
   .bar button.on{background:#1F1B16;color:#fff;border-color:#1F1B16}
+  /* la diretta si vede da lontano: e importante sapere se e accesa */
+  #b-diretta.on{background:#C0453B;border-color:#C0453B;color:#fff;
+    animation:respira 2.4s ease-in-out infinite}
+  @keyframes respira{0%,100%{opacity:1}50%{opacity:.68}}
   .sep{width:1px;height:32px;background:#E3DACB;margin:0 .1rem}
   /* Con dieci colori i pastelli occupavano mezza barra: si
      stringono un po' e restano comunque bersagli da dito. */
@@ -105,6 +121,31 @@
   .menu-pulisci .tutto{color:#C0453B;border-top:1px solid #EFE7DA;margin-top:.2rem;
     border-radius:0 0 8px 8px}
 
+  /* ── L'IPAD IN ORIZZONTALE ────────────────────────────
+     Girando il tablet lo schermo diventa basso e largo: la barra
+     resta della stessa altezza e si mangia un quinto della
+     lavagna, proprio quando serve piu spazio per scrivere. Sotto
+     i 560 px di altezza tutto si stringe: bottoni piu bassi,
+     pastelli piu piccoli, una riga sola. */
+  @media (max-height:560px){
+    .bar{gap:.25rem;padding:.2rem .4rem;flex-wrap:nowrap;overflow-x:auto;
+         scrollbar-width:none}
+    .bar::-webkit-scrollbar{display:none}
+    .bar button{min-height:34px;min-width:34px;padding:.25rem .45rem;
+                font-size:0;flex:0 0 auto}
+    .bar button::first-letter{font-size:1.15rem}
+    .colore{width:26px;height:26px;min-width:26px;border-width:2px}
+    .sp{width:34px;height:34px}
+    .sep{height:22px}
+    .zoom{font-size:.7rem;min-width:3rem}
+    .stato{display:none}
+  }
+
+  /* a schermo intero la barra si fa da parte: compare avvicinando
+     il dito al bordo alto, altrimenti resta una striscia sottile */
+  :fullscreen .bar{opacity:.25;transition:opacity .2s}
+  :fullscreen .bar:hover,:fullscreen .bar:focus-within{opacity:1}
+
   @media print{.bar{display:none}}
 </style>
 </head>
@@ -149,6 +190,8 @@
   <button onclick="pulisci()" title="Scegli che cosa cancellare">Cancella…</button>
   <button id="b-palmo" onclick="palmo()" title="Ignora il dito, accetta solo la penna">✋ Solo penna</button>
   <button id="b-pieno" onclick="schermoIntero()">⛶ Schermo intero</button>
+  <button id="b-diretta" onclick="commutaDiretta()"
+    title="Gli studenti vedono la lavagna dal loro schermo, mentre la fai">◉ Diretta</button>
 
   <span class="spazio"></span>
   <span class="stato" id="stato"></span>
@@ -768,6 +811,85 @@ function cancella(che){
   if(che==='tutto') vista = {x:0,y:0,s:1};
   ridisegna(); segnaModifica();
 }
+
+/* ══════════════════════════════════════════════════════════
+   LA LAVAGNA IN DIRETTA
+
+   Alla lavagna succede una cosa che il proiettore non risolve:
+   chi sta in fondo non legge, chi copia perde il filo, chi era
+   assente non vede niente. Se la lavagna si puo guardare anche
+   dal proprio schermo, quei tre problemi spariscono insieme.
+
+   Come funziona: mentre disegni, ogni paio di secondi la lavagna
+   si specchia sul database; gli studenti aprono una pagina che
+   la rilegge. Non e una chat, non c'e cronologia: e uno specchio.
+
+   Due accorgimenti che contano piu di quanto sembri.
+   · Si manda solo se e cambiato qualcosa. Una lavagna ferma non
+     deve consumare niente.
+   · Gli studenti chiedono prima «e cambiata?» e solo se si
+     scaricano il disegno: altrimenti sarebbero centinaia di
+     kilobyte al minuto per ciascuno, su una rete di scuola.
+   ══════════════════════════════════════════════════════════ */
+let inDiretta = false, orologioDiretta = null, ultimoInvio = '';
+
+async function commutaDiretta(){
+  if(inDiretta){ await fermaDiretta(); return; }
+  await assicuraToken();
+  if(!token()){
+    avvisa('Per trasmettere devi essere entrato come docente: apri il sito, accedi, e torna qui.');
+    return;
+  }
+  inDiretta = true;
+  document.getElementById('b-diretta').classList.add('on');
+  await mandaDiretta(true);
+  orologioDiretta = setInterval(()=>mandaDiretta(false), 2000);
+  avvisa('Diretta accesa. Gli studenti la trovano in «Guarda la lavagna».');
+}
+async function fermaDiretta(){
+  inDiretta = false;
+  clearInterval(orologioDiretta); orologioDiretta = null;
+  document.getElementById('b-diretta').classList.remove('on');
+  try{ await scriviDiretta(false); }catch(_){}
+  avvisa('Diretta spenta. Gli studenti non vedono piu la lavagna.');
+}
+async function mandaDiretta(forza){
+  if(!inDiretta) return;
+  /* l'impronta di quello che c'e adesso: se non e cambiata non
+     si manda niente */
+  const impronta = tratti.length+'|'+(tratti[tratti.length-1]||{p:[]}).p.length+
+                   '|'+elTesto.innerText.length+'|'+Math.round(vista.s*100);
+  if(!forza && impronta===ultimoInvio) return;
+  ultimoInvio = impronta;
+  try{ await scriviDiretta(true); }
+  catch(e){ /* una mancata va bene: il prossimo giro riprova */ }
+}
+async function scriviDiretta(aperta){
+  await assicuraToken();
+  const r = await fetch(SB_URL+'/rest/v1/rpc/aggiorna_lavagna_live',{
+    method:'POST',
+    headers:{'apikey':SB_KEY,'Authorization':'Bearer '+token(),'Content-Type':'application/json'},
+    body: JSON.stringify({
+      nuovi_tratti: tratti,
+      nuovo_testo:  elTesto.innerText,
+      nuova_vista:  {x:vista.x, y:vista.y, s:vista.s},
+      resta_aperta: aperta
+    })});
+  if(!r.ok) throw new Error(await r.text());
+}
+/* chiudendo la pagina la diretta si spegne: una lavagna che resta
+   accesa dopo l'ora e una lavagna che gli studenti guardano
+   quando non dovrebbero */
+window.addEventListener('pagehide', ()=>{
+  if(!inDiretta) return;
+  try{
+    const corpo=JSON.stringify({nuovi_tratti:tratti,nuovo_testo:elTesto.innerText,
+      nuova_vista:{x:vista.x,y:vista.y,s:vista.s},resta_aperta:false});
+    fetch(SB_URL+'/rest/v1/rpc/aggiorna_lavagna_live',{method:'POST',keepalive:true,
+      headers:{'apikey':SB_KEY,'Authorization':'Bearer '+token(),'Content-Type':'application/json'},
+      body:corpo});
+  }catch(_){}
+});
 
 /* ---------- stato ---------- */
 let modificata = false;
