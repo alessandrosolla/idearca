@@ -23,12 +23,12 @@
 --  bottone «Archivia», che scrive nella tavola lavagne.
 -- ============================================================
 
-do $$
+do $controllo$
 begin
   if to_regprocedure('public.is_docente()') is null then
     raise exception 'Manca is_docente(): esegui prima SICUREZZA-supabase-v2.sql';
   end if;
-end $$;
+end $controllo$;
 
 
 -- ============================================================
@@ -90,7 +90,7 @@ returns timestamptz
 language plpgsql
 security definer
 set search_path = public
-as $$
+as $scrivi$
 declare quando timestamptz;
 begin
   if not public.is_docente() then
@@ -111,10 +111,14 @@ begin
    returning aggiornata into quando;
 
   return quando;
-end $$;
+end $scrivi$;
 
-revoke all on function public.aggiorna_lavagna_live(jsonb, text, jsonb, boolean) from public;
-grant execute on function public.aggiorna_lavagna_live(jsonb, text, jsonb, boolean) to authenticated;
+revoke all
+  on function public.aggiorna_lavagna_live(jsonb, text, jsonb, boolean)
+  from public;
+grant execute
+  on function public.aggiorna_lavagna_live(jsonb, text, jsonb, boolean)
+  to authenticated;
 
 
 -- ============================================================
@@ -131,13 +135,17 @@ language sql
 security definer
 set search_path = public
 stable
-as $$
+as $leggi$
   select case when aperta then aggiornata else null end
     from public.lavagna_live where id = 1;
-$$;
+$leggi$;
 
-revoke all on function public.lavagna_live_quando() from public;
-grant execute on function public.lavagna_live_quando() to anon, authenticated;
+revoke all
+  on function public.lavagna_live_quando()
+  from public;
+grant execute
+  on function public.lavagna_live_quando()
+  to anon, authenticated;
 
 
 -- ============================================================
