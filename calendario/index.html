@@ -260,6 +260,33 @@ button.mat.agganciabile:hover{border-color:#2d5a27;background:#F1F6EF}
 .pezzo.att{background:#F4F0F8;border-color:#DDD2E8;color:#6b4a80}
 .pezzo.att i{color:#6b4a80}
 .qr-ore{margin-left:auto;font-size:.72rem;color:#8A7355}
+
+/* i pallini che dicono che cosa c'e' dentro un'ora */
+.pall{display:inline-flex;gap:2px;align-items:center;flex:none;margin-left:auto}
+.pall i{width:6px;height:6px;border-radius:50%;display:block}
+.cel-cap .pall{margin-left:auto;margin-right:.2rem}
+
+/* la legenda dei colori */
+.legenda{display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;
+  margin-bottom:.9rem;padding:.45rem .75rem;background:#FCFAF5;
+  border:1px solid #EFE7DA;border-radius:9px;font-size:.7rem;color:#5A5148}
+.lg-tit{font-size:.62rem;letter-spacing:.09em;text-transform:uppercase;
+  color:#8A7355;font-weight:700}
+.lg{display:inline-flex;align-items:center;gap:.3rem}
+.lg i{width:8px;height:8px;border-radius:50%;display:block}
+.lg-sep{width:1px;height:14px;background:#E3DACB;margin:0 .2rem}
+
+/* i filtri dello scaffale nel cercatore */
+.filtri{display:flex;gap:.25rem;flex-wrap:wrap;margin-top:.5rem}
+button.filtro{font:inherit;font-size:.7rem;font-weight:600;cursor:pointer;
+  border:1px solid #E3DACB;border-radius:20px;padding:.2rem .6rem;background:#fff;color:#5A5148}
+button.filtro:hover{border-color:#8A7355}
+button.filtro.on{background:#2d5a27;color:#fff;border-color:#2d5a27}
+.mat .tipo.sc-approfondimenti{color:#2d5a27}
+.mat .tipo.sc-slide{color:#2C6FB5}
+.mat .tipo.sc-compiti{color:#8A6A1E}
+.mat .tipo.sc-fonti{color:#1C8C8C}
+.mat .tipo.sc-risorse{color:#7A4B8C}
 .qr-segnate{margin-top:.35rem;font-size:.74rem;color:#8A7355;display:flex;
   align-items:center;gap:.35rem;flex-wrap:wrap}
 .qr-segnate .pezzo{background:#fff}
@@ -606,7 +633,7 @@ function barraNavigazione(titolo, passo){
     <button class="b" onclick="${passo}(1)">→</button>
     <div class="quando">${esc(titolo)}</div>
     <button class="b pieno" onclick="riempiTutto()">Riempi il calendario</button>
-  </div>${barraTimbri()}${quadro()}`;
+  </div>${barraTimbri()}${legendaColori()}${quadro()}`;
 }
 
 /* ══════════════════════════════════════════════════════════
@@ -646,6 +673,44 @@ const TIPI={
   uscita:   {n:'Fuori',     c:'#8A7355', s:'—'}
 };
 function tipoDi(l){ return TIPI[l.tipo] ? l.tipo : 'lezione'; }
+
+/* ── CHE COS'È QUEST'ORA, A COLPO D'OCCHIO ───────────────
+   Il timbro dice quello che hai deciso tu — verifica, votazione.
+   Ma quando e' una lezione normale resta la domanda vera: che
+   cosa ci si fa dentro? Una slide, una fonte, un compito? La
+   risposta e' gia' nei materiali attaccati, bastava leggerla.
+   Ogni ora porta un pallino per ogni scaffale che contiene, e i
+   colori sono gli stessi ovunque: nel mese, nella settimana, nel
+   pannello e nella legenda.
+   ──────────────────────────────────────────────────────── */
+const COLORESC={approfondimenti:'#2d5a27', slide:'#2C6FB5', compiti:'#8A6A1E',
+                fonti:'#1C8C8C', risorse:'#7A4B8C'};
+function scaffaliDi(l){
+  const s=new Set();
+  (l.materiali||[]).forEach(id=>{
+    const m=materiali.find(x=>x.id===id);
+    if(m) s.add(scaffaleDi(m));
+  });
+  if(l.compiti) s.add('compiti');
+  return [...s];
+}
+function pallini(l){
+  const sc=scaffaliDi(l);
+  if(!sc.length) return '';
+  return '<span class="pall">'+sc.map(k=>
+    `<i style="background:${COLORESC[k]}" title="${SCAFFALI[k].nome}"></i>`).join('')+'</span>';
+}
+/* la legenda: senza, i pallini sono un rebus */
+function legendaColori(){
+  return `<div class="legenda">
+    <span class="lg-tit">In ogni ora:</span>
+    ${ORDINE.map(k=>`<span class="lg"><i style="background:${COLORESC[k]}"></i>${SCAFFALI[k].nome}</span>`).join('')}
+    <span class="lg-sep"></span>
+    <span class="lg-tit">Timbri:</span>
+    ${Object.keys(TIPI).filter(k=>k!=='lezione').map(k=>
+      `<span class="lg"><i style="background:${TIPI[k].c};border-radius:3px"></i>${TIPI[k].n}</span>`).join('')}
+  </div>`;
+}
 
 /* ── IL TIMBRO ────────────────────────────────────────────
    Il modo veloce di dire «queste sono verifiche». Si sceglie un
@@ -1172,7 +1237,8 @@ function vistaMese(){
                      onclick="event.stopPropagation();toccaOra(${l.id})"
                      title="${esc(T.n+' · '+cl.nome+' '+oreIt(l.ora_inizio)+' — '+(l.argomento||(pr&&pr.titolo)||'da preparare'))}">
           <b>${esc(t==='lezione'?oreIt(l.ora_inizio):T.s)}</b>
-          <span>${esc(l.argomento || (t!=='lezione'?T.n:(pr?pr.titolo:'—')))}</span></div>`;
+          <span>${esc(l.argomento || (t!=='lezione'?T.n:(pr?pr.titolo:'—')))}</span>
+          ${pallini(l)}</div>`;
       });
       if(delGiorno.length>3)
         out += `<div class="mese-altre">+${delGiorno.length-3}</div>`;
@@ -1241,6 +1307,7 @@ function vistaSettimanaGriglia(){
           <div class="cel-cap">
             <span class="cel-ora">${esc(oreIt(l.ora_inizio))}</span>
             ${t!=='lezione'?`<span class="cel-tipo">${esc(T.n)}</span>`:''}
+            ${pallini(l)}
             <button class="cel-piu" onclick="apriLezione(${l.id})" title="Apri, materiali, compiti">⋯</button>
           </div>
           <textarea class="cel-arg" rows="2" placeholder="${pr?esc('→ '+pr.titolo):'…'}"
@@ -1366,8 +1433,12 @@ function apriLezione(id){
     <div class="blocco">
       <div class="tit">Materiali</div>
       <div id="p-scelti" class="mat-lista"></div>
+      <div class="filtri" id="p-filtri">
+        ${['tutti'].concat(ORDINE).map(k=>`<button class="filtro${k===filtroMat?' on':''}"
+            onclick="filtraMat('${k}')">${k==='tutti'?'Tutti':SCAFFALI[k].nome}</button>`).join('')}
+      </div>
       <input id="p-cerca" placeholder="Cerca un materiale…" oninput="cercaMateriali()"
-        style="width:100%;margin-top:.45rem">
+        style="width:100%;margin-top:.4rem">
       <div id="p-trovati" class="mat-lista" style="margin-top:.35rem"></div>
     </div>
 
@@ -1413,7 +1484,7 @@ function disegnaScelti(){
        si mette un materiale in una lezione: il giorno stesso apri
        l'ora e ci clicchi sopra, senza cercarlo in libreria. */
     return `<div class="mat scelto">
-      <span class="tipo">${esc(m.tipo||'')}</span>
+      <span class="tipo sc-${scaffaleDi(m)}">${esc(SCAFFALI[scaffaleDi(m)].nome)}</span>
       ${m.link ? `<a class="t" href="${esc(m.link)}" target="_blank" rel="noopener"
             title="Apri «${esc(m.titolo)}»">${esc(m.titolo)} ↗</a>`
                : `<span class="t" title="${esc(m.titolo)}">${esc(m.titolo)}</span>`}
@@ -1433,30 +1504,49 @@ function attaccaMat(id){
   }
   disegnaScelti(); cercaMateriali();
 }
+/* ── SCEGLIERE IN FRETTA QUALUNQUE COSA ──────────────────
+   Il cercatore mostrava solo il programma dell'ora, cioe' le
+   lezioni: per attaccare una fonte o un compito bisognava
+   ricordarsene il titolo e scriverlo. Ora c'e' una riga di
+   filtri — Tutti, Lezioni, Slide, Compiti, Fonti, Risorse — e
+   un tocco basta a vedere tutto quello scaffale, della materia
+   di quell'ora, in ordine di programma.
+   ──────────────────────────────────────────────────────── */
+let filtroMat='tutti';
+function filtraMat(k){ filtroMat=k; disegnaFiltri(); cercaMateriali(); }
+function disegnaFiltri(){
+  const box=document.getElementById('p-filtri');
+  if(!box) return;
+  box.querySelectorAll('.filtro').forEach(b=>
+    b.classList.toggle('on', b.textContent===(filtroMat==='tutti'?'Tutti':SCAFFALI[filtroMat].nome)));
+}
 function cercaMateriali(){
   const box=document.getElementById('p-trovati');
   if(!box) return;
   const q=(document.getElementById('p-cerca')?.value||'').trim().toLowerCase();
   const l=lezioni.find(x=>x.id===apertaId);
-  /* senza ricerca si mostra il programma dell'ora, non tutta la
-     libreria: sono i cinque o sei pezzi intorno al punto in cui
-     la classe è arrivata */
   let lista;
   if(q){
     lista=materiali.filter(m=>m.titolo.toLowerCase().includes(q) ||
-      (m.materia||'').toLowerCase().includes(q)).slice(0,25);
+      (m.materia||'').toLowerCase().includes(q)).slice(0,30);
+  }else if(filtroMat!=='tutti'){
+    /* uno scaffale intero, della materia dell'ora se c'è */
+    lista=(l && l.materia) ? scaffale(l.materia, filtroMat)
+                           : materiali.filter(m=>scaffaleDi(m)===filtroMat);
+    lista=lista.slice(0,30);
   }else if(l && l.materia){
+    /* «tutti»: i pezzi intorno al punto in cui la classe è arrivata */
     const prog=programmaDi(l.materia);
     const visti=giaUsati(l.classe_id, l.materia);
     const i=prog.findIndex(m=>!visti.has(m.id));
     lista=prog.slice(Math.max(0,i-1), Math.max(0,i-1)+6);
   }else{
-    lista=materiali.slice(0,6);
+    lista=materiali.slice(0,8);
   }
   lista=lista.filter(m=>!scelti.has(m.id));
   if(!lista.length){ box.innerHTML=''; return; }
   box.innerHTML=lista.map(m=>`<button class="mat agganciabile" onclick="attaccaMat(${m.id})">
-      <span class="tipo">${esc(m.tipo||'')}</span>
+      <span class="tipo sc-${scaffaleDi(m)}">${esc(SCAFFALI[scaffaleDi(m)].nome)}</span>
       <span class="t" title="${esc(m.titolo)}">${esc(m.titolo)}</span>
       <span class="piu">+</span></button>`).join('');
 }

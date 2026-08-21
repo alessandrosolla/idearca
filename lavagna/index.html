@@ -90,6 +90,21 @@
     opacity:0;transition:opacity .2s,transform .2s;z-index:90}
   #nastro.on{opacity:1;transform:translateX(-50%) translateY(0)}
 
+  /* il menu del «cancella»: attaccato alla barra, si chiude al
+     primo tocco fuori */
+  .bar{position:relative}
+  .menu-pulisci{position:absolute;right:.6rem;top:calc(100% + .35rem);
+    background:#fff;border:1px solid #E3DACB;border-radius:11px;
+    box-shadow:0 12px 34px rgba(0,0,0,.14);padding:.3rem;z-index:80;min-width:13rem}
+  .menu-pulisci button{display:block;width:100%;text-align:left;font:inherit;
+    font-size:.85rem;background:none;border:0;border-radius:8px;cursor:pointer;
+    padding:.5rem .6rem;color:#1F1B16;min-height:auto}
+  .menu-pulisci button:hover{background:#F6F3EC}
+  .menu-pulisci b{font-weight:600}
+  .menu-pulisci i{display:block;font-style:normal;font-size:.68rem;color:#8A7355}
+  .menu-pulisci .tutto{color:#C0453B;border-top:1px solid #EFE7DA;margin-top:.2rem;
+    border-radius:0 0 8px 8px}
+
   @media print{.bar{display:none}}
 </style>
 </head>
@@ -131,7 +146,7 @@
 
   <span class="sep"></span>
   <button onclick="annulla()">↶ Annulla</button>
-  <button onclick="pulisci()">Pulisci</button>
+  <button onclick="pulisci()" title="Scegli che cosa cancellare">Cancella…</button>
   <button id="b-palmo" onclick="palmo()" title="Ignora il dito, accetta solo la penna">✋ Solo penna</button>
   <button id="b-pieno" onclick="schermoIntero()">⛶ Schermo intero</button>
 
@@ -715,10 +730,42 @@ function cancellaVicino(punto){
 
 function annulla(){ tratti.pop(); ridisegna(); segnaModifica(); }
 
+/* ── CANCELLARE: TRE COSE DIVERSE ────────────────────────
+   «Pulisci» buttava via tutto insieme, e per togliere una frase
+   bisognava indovinare che prima si passa in modo Testo — la
+   gomma cancella i tratti e sul testo non fa niente, il che dal
+   di fuori sembra semplicemente rotto.
+   Adesso il bottone chiede che cosa: il disegno, le frasi, o
+   tutto. Tre righe invece di un indovinello.
+   ──────────────────────────────────────────────────────── */
 function pulisci(){
-  if(!confirm('Cancellare testo e disegno? Non si può annullare.')) return;
-  tratti = []; elTesto.innerText = '';
-  vista = {x:0,y:0,s:1};
+  const m=document.getElementById('menu-pulisci');
+  if(m){ m.remove(); return; }
+  const d=document.createElement('div');
+  d.id='menu-pulisci'; d.className='menu-pulisci';
+  d.innerHTML=`
+    <button onclick="cancella('disegno')">Solo il <b>disegno</b><i>${tratti.length} tratti</i></button>
+    <button onclick="cancella('testo')">Solo le <b>frasi</b><i>${elTesto.innerText.trim().length} caratteri</i></button>
+    <button class="tutto" onclick="cancella('tutto')">Tutto</button>`;
+  document.querySelector('.bar').appendChild(d);
+  setTimeout(()=>document.addEventListener('pointerdown', chiudiMenuPulisci), 0);
+}
+function chiudiMenuPulisci(e){
+  const m=document.getElementById('menu-pulisci');
+  if(!m) return;
+  if(e && e.target.closest('#menu-pulisci')) return;
+  m.remove();
+  document.removeEventListener('pointerdown', chiudiMenuPulisci);
+}
+function cancella(che){
+  chiudiMenuPulisci();
+  const quanti = che==='testo' ? elTesto.innerText.trim().length : tratti.length;
+  const cosa = che==='disegno' ? 'il disegno' : che==='testo' ? 'le frasi scritte' : 'tutto';
+  if(!quanti && che!=='tutto'){ avvisa('Non c\'è niente da cancellare.'); return; }
+  if(!confirm('Cancello '+cosa+'?\nNon si può annullare.')) return;
+  if(che!=='testo') tratti = [];
+  if(che!=='disegno') elTesto.innerText = '';
+  if(che==='tutto') vista = {x:0,y:0,s:1};
   ridisegna(); segnaModifica();
 }
 
