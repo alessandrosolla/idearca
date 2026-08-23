@@ -150,6 +150,24 @@
   .barra.giusta .riempi{background:var(--giusta)!important}
   .barra.sbagliata{opacity:.32}
 
+  /* Il perché sotto le barre. Va letto dal fondo dell'aula, quindi
+     è grande; ma non deve rubare la scena alle barre, quindi non è
+     bianco e ha una riga verde che lo lega alla risposta giusta. */
+  .p-perche{margin-top:1.1rem;padding:.85rem 1.1rem;border-left:5px solid var(--giusta);
+    background:rgba(255,255,255,.06);border-radius:0 10px 10px 0;
+    font-size:clamp(1rem,1.9vh,1.5rem);line-height:1.42;color:#dbe6d8;
+    animation:entra .45s ease both}
+  .p-perche span{display:block;font-size:.68em;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--giusta);margin-bottom:.2rem}
+
+  /* La soluzione in regia: pagina del docente, ma il riquadro lo
+     dice lo stesso — è la pagina che finisce proiettata per sbaglio. */
+  .soluzione{display:block;margin-top:.4rem;padding:.42rem .6rem;
+    border-left:3px solid #3B7A2E;background:#F1F6EE;border-radius:0 6px 6px 0}
+  .soluzione b{display:block;font-size:.84rem;color:#2E6224;font-weight:650}
+  .soluzione i{display:block;font-style:normal;font-size:.79rem;color:#5a6b58;
+    margin-top:.18rem;line-height:1.35}
+
   /* ---- nuvola: piu ripetuta = piu grande e piu chiara ---- */
   .nuvola{display:flex;flex-wrap:wrap;gap:.4rem 1.3rem;align-items:baseline;
     justify-content:center;line-height:1.06;max-width:100%}
@@ -263,8 +281,8 @@
 
 <script src="qr.js">
 </script>
-<script src="banca.js?v=20260817b"></script>
-<script src="banca2.js?v=20260817b"></script>
+<script src="banca.js?v=20260823a"></script>
+<script src="banca2.js?v=20260823a"></script>
 <script>
 /* Le due banche si uniscono per titolo: sui capitoli coperti da
    entrambe le domande disponibili raddoppiano. */
@@ -303,11 +321,24 @@ function esc(s){ return (s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>
 /* La risposta attesa non viene salvata nel database: si ritrova
    confrontando il testo della domanda con la banca, così resta
    visibile in regia anche dopo il mescolamento delle opzioni. */
-function rispostaAttesa(testo){
+function dallaBanca(testo){
   if(typeof BANCA === 'undefined') return null;
   for(const b of BANCA) for(const d of b.domande)
-    if(d.testo === testo && d.giusta !== undefined) return d.opzioni[d.giusta];
+    if(d.testo === testo && d.giusta !== undefined) return d;
   return null;
+}
+function rispostaAttesa(testo){
+  const d = dallaBanca(testo);
+  return d ? d.opzioni[d.giusta] : null;
+}
+/* Il «perché» è la riga che serve davvero in aula: la risposta
+   giusta da sola non spiega niente, e ricordarsi a memoria il
+   motivo di ottocento domande non è ragionevole. Dove c'è, si
+   vede in regia prima di proiettare e sullo schermo al momento
+   della correzione. Dove non c'è ancora, resta la risposta. */
+function perchePer(testo){
+  const d = dallaBanca(testo);
+  return (d && d.perche) ? d.perche : null;
 }
 
 
@@ -460,10 +491,7 @@ function disegnaRegia(){
     ${domande.length ? '<div class="elenco">' + domande.map(d=>`
       <div class="voce ${sessione.domanda_attiva===d.id?'attiva':''}">
         <span class="tipo">${d.tipo==='nuvola'?'Nuvola':'Scelta'}</span>
-        <span class="testo">${esc(d.testo)}${(function(){
-          const r = rispostaAttesa(d.testo);
-          return r ? '<br><span style="font-size:.8rem;color:#3B7A2E">risposta attesa: '+esc(r)+'</span>' : '';
-        })()}</span>
+        <span class="testo">${esc(d.testo)}${soluzione(d.testo)}</span>
         <span class="n">${(risposte[d.id]||[]).length} risposte</span>
         <button onclick="attiva(${d.id})">${sessione.domanda_attiva===d.id?'In corso':'Proietta'}</button>
         <button class="rosso" onclick="eliminaDomanda(${d.id})">✕</button>
@@ -475,6 +503,18 @@ function disegnaRegia(){
     const base = location.origin + location.pathname.replace(/votazioni\/.*$/,'vota/');
     try{ QR.disegna(q, base + '?c=' + sessione.codice, 130); }catch(_){}
   }
+}
+
+/* La soluzione come la vedi tu in regia. Questa pagina non la
+   apre nessun altro — le policy del database non la lasciano
+   leggere agli studenti — ma il riquadro lo dice lo stesso,
+   perché è la pagina che finisce proiettata per sbaglio. */
+function soluzione(testo){
+  const r = rispostaAttesa(testo);
+  if(!r) return '';
+  const p = perchePer(testo);
+  return '<span class="soluzione"><b>✓ ' + esc(r) + '</b>' +
+    (p ? '<i>' + esc(p) + '</i>' : '') + '</span>';
 }
 
 function mostraOpzioni(){
@@ -646,13 +686,18 @@ function anteprimaBanca(){
   const box = document.getElementById('banca-ant');
   if(i === ''){ box.innerHTML = ''; return; }
   const b = BANCA[i];
+  const senza = b.domande.filter(d=>d.giusta!==undefined && !d.perche).length;
   box.innerHTML = '<div class="elenco" style="margin-bottom:1rem">' + b.domande.map(d=>`
     <div class="voce">
       <span class="tipo">${d.tipo==='nuvola'?'Nuvola':'Scelta'}</span>
       <span class="testo">${esc(d.testo)}
-        ${d.giusta!==undefined ? '<br><span style="font-size:.8rem;color:#4FA82F">risposta attesa: '+esc(d.opzioni[d.giusta])+'</span>' : ''}
+        ${d.giusta!==undefined ? '<span class="soluzione"><b>✓ '+esc(d.opzioni[d.giusta])+'</b>'+
+          (d.perche ? '<i>'+esc(d.perche)+'</i>' : '')+'</span>' : ''}
       </span>
-    </div>`).join('') + '</div>';
+    </div>`).join('') + '</div>' +
+    (senza ? '<div class="via" style="font-size:.8rem;margin:-.6rem 0 1rem">'+
+      senza+' domande di questo capitolo non hanno ancora il perché scritto: '+
+      'in aula compare solo la risposta.</div>' : '');
 }
 
 /* Le domande si inseriscono tutte insieme in una sola richiesta.
@@ -836,7 +881,11 @@ function barre(d, valori){
       '<div class="traccia"><div class="riempi" data-w="' + Math.round(n/max*100) +
       '" style="background:' + TINTE[k] + '"></div></div></div>';
   }).join('') + '</div>';
-  return html;
+  /* Il perché arriva insieme alla correzione, non prima: mentre si
+     vota sullo schermo non deve esserci niente da leggere oltre
+     alla domanda. */
+  const p = giusta ? perchePer(d.testo) : null;
+  return html + (p ? '<div class="p-perche"><span>perché</span>' + esc(p) + '</div>' : '');
 }
 
 /* Le larghezze si applicano dopo l'inserimento nel documento,
