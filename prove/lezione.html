@@ -200,12 +200,8 @@ body.soloProiezione .pieno{padding:1.6rem 2.4rem}
 
 <div class="w">
   <div class="k">Idearca · solo docente</div>
-  <h1>Mappe e provocazioni</h1>
-  <p class="sub">Due cose per ogni capitolo, e non si somigliano.
-  La <strong>mappa concettuale</strong> è il capitolo intero: tutti i concetti, le relazioni
-  scritte sopra le frecce, i rimandi trasversali. Sta in piedi da sola — si studia, si proietta,
-  si consulta. La <strong>provocazione</strong> è un'ora di lezione costruita a tempi, con quello
-  che dici, quello che scrivi alla lavagna e le risposte che ti daranno.</p>
+  <h1 id="titolo">Mappe e provocazioni</h1>
+  <p class="sub" id="sottotitolo"></p>
 
   <div class="et">Il capitolo</div>
   <select id="scelta" onchange="scegli()"></select>
@@ -239,7 +235,7 @@ body.soloProiezione .pieno{padding:1.6rem 2.4rem}
   </div>
 </div>
 
-<script src="../js/lezioni.js?v=20260823k"></script>
+<script src="../js/lezioni.js?v=20260823m"></script>
 <script>
 /* ══════════════════════════════════════════════════════════
    Nessuna libreria, come tutto il resto del sito.
@@ -264,6 +260,14 @@ function esc(s){ return (s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>
 
 const titoli = Object.keys(LEZIONI);
 const proiettore = new URLSearchParams(location.search).has('proietta');
+/* La stessa pagina serve due voci diverse della libreria. Le due
+   cose non si somigliano — una si consulta e si studia, l'altra
+   si conduce — e tenerle nella stessa schermata voleva dire
+   scorrere mezza lezione per arrivare alla mappa. Con `solo` si
+   apre una per volta; senza, si vedono tutte e due. */
+const solo = new URLSearchParams(location.search).get('solo');
+const vuoiMappa = solo !== 'provocazione';
+const vuoiProv  = solo !== 'mappa';
 let corrente = null;
 let modo = null;            // 'mappa' | 'provocazione'
 let passo = 0;
@@ -300,7 +304,25 @@ function spedisciStato(){
 }
 
 /* ---------- l'elenco ---------- */
+const TESTI = {
+  mappa:{t:'Mappe concettuali',
+    s:'Il capitolo intero: tutti i concetti, le relazioni scritte sopra le frecce, i rimandi '+
+      'trasversali fra un\'area e l\'altra. Sta in piedi da sola — si studia, si consulta, si '+
+      'proietta un\'area per volta. Si trascina e si ingrandisce con la rotella, come una carta.'},
+  provocazione:{t:'Provocazioni',
+    s:'Un\'ora di lezione costruita a tempi: la domanda a cui non si può rispondere con quello '+
+      'che si sa, lo schieramento, il fatto che rompe la risposta facile, il testo del filosofo, '+
+      'il ritorno. Con quello che dici, quello che scrivi alla lavagna e le risposte che ti daranno.'},
+  tutte:{t:'Mappe e provocazioni',
+    s:'Due cose per ogni capitolo, e non si somigliano: la mappa è il capitolo intero da '+
+      'consultare, la provocazione è un\'ora da condurre.'}
+};
+
 (function avvio(){
+  const q = solo==='mappa' ? TESTI.mappa : solo==='provocazione' ? TESTI.provocazione : TESTI.tutte;
+  document.title = q.t + ' — Idearca';
+  const h = document.getElementById('titolo'), sub = document.getElementById('sottotitolo');
+  if(h){ h.textContent = q.t; sub.textContent = q.s; }
   if(proiettore){
     document.body.classList.add('soloProiezione');
     manda({tipo:'pronta'});
@@ -330,6 +352,7 @@ function scegli(){
   const q = contaMappa(M);
   c.innerHTML = `
     <div class="carte">
+      ${!vuoiMappa ? '' : `
       <div class="carta">
         <h3>La mappa concettuale</h3>
         <div class="q">${q.nodi} concetti · ${q.archi} relazioni${q.incroci?' · '+q.incroci+' rimandi trasversali':''}</div>
@@ -339,7 +362,8 @@ function scegli(){
           <button class="b pieno" onclick="apri('mappa')">Proietta la mappa</button>
           <button class="b" onclick="apri('mappa',true)">Su due schermi</button>
         </div>
-      </div>
+      </div>`}
+      ${!vuoiProv ? '' : `
       <div class="carta">
         <h3>${esc(p.titolo)}</h3>
         <div class="q">provocazione · ${esc(p.durata||'un\'ora')} · ${tempi.length} tempi</div>
@@ -348,7 +372,7 @@ function scegli(){
           <button class="b pieno" onclick="apri('provocazione')">Proietta</button>
           <button class="b" onclick="apri('provocazione',true)">Su due schermi</button>
         </div>
-      </div>
+      </div>`}
     </div>
 
     <div class="vuoto" style="text-align:left;margin-top:1rem;font-size:.84rem">
@@ -357,31 +381,31 @@ function scegli(){
       con il parlato, la lavagna e le repliche sott'occhio, e avanzi dalla barra in basso.
     </div>
 
-    ${p.perche ? `<div class="et">A che cosa serve</div>
+    ${vuoiProv && p.perche ? `<div class="et">A che cosa serve</div>
       <div class="pannello"><p class="lungo">${esc(p.perche)}</p>
       ${p.occorrente ? '<p class="occ"><b>occorrente</b> '+esc(p.occorrente)+'</p>' : ''}</div>` : ''}
 
-    <div class="et">L'ora, minuto per minuto — questo lo vedi solo tu</div>
-    ${p.tempi ? p.tempi.map((t,i)=>tempoDisteso(t,i)).join('') : vecchiaForma(p)}
+    ${!vuoiProv ? '' : `<div class="et">L'ora, minuto per minuto — questo lo vedi solo tu</div>` +
+      (p.tempi ? p.tempi.map((t,i)=>tempoDisteso(t,i)).join('') : vecchiaForma(p))}
 
-    ${p.testi && p.testi.length ? `<div class="et">I testi</div>` +
+    ${vuoiProv && p.testi && p.testi.length ? `<div class="et">I testi</div>` +
       p.testi.map(t=>`<div class="pannello citazione">
         <div class="corpo">${esc(t.corpo)}</div>
         <div class="f">${esc(t.fonte)}</div>
         ${t.glossa ? '<div class="nota"><b>che cosa farne</b>'+esc(t.glossa)+'</div>' : ''}
       </div>`).join('') : ''}
 
-    ${p.riserve && p.riserve.length ? `<div class="et">Di riserva — se l'ora corre, o se si spegne</div>` +
+    ${vuoiProv && p.riserve && p.riserve.length ? `<div class="et">Di riserva — se l'ora corre, o se si spegne</div>` +
       p.riserve.map(r=>`<div class="pannello riserva">
         <h4>${esc(r.titolo)}</h4>
         <div class="corpo">${esc(r.corpo)}</div>
         ${r.chiedi ? '<div class="chiedi"><b>chiedi</b>'+esc(r.chiedi)+'</div>' : ''}
       </div>`).join('') : ''}
 
-    ${p.compito ? `<div class="et">Da fare per la prossima volta</div>
+    ${vuoiProv && p.compito ? `<div class="et">Da fare per la prossima volta</div>
       <div class="pannello"><p class="lungo">${esc(p.compito)}</p></div>` : ''}
 
-    ${p.fonti && p.fonti.length ? `<div class="et">Da dove viene</div>
+    ${vuoiProv && p.fonti && p.fonti.length ? `<div class="et">Da dove viene</div>
       <ul class="fonti">${p.fonti.map(f=>'<li>'+esc(f)+'</li>').join('')}</ul>` : ''}`;
 }
 
@@ -639,7 +663,14 @@ function disegnaMappa(d, tienilaVista){
     else vedo = ultimo || (apertaOra!==null && n.area===apertaOra &&
                            n.sotto >= st.da && n.sotto < st.a);
     n.visibile = vedo;
-    n.el.closest('.ramo').style.display = vedo ? '' : 'none';
+    /* La radice si nasconde da sola, non con il suo contenitore:
+       dentro il .ramo della radice c'e' tutta la mappa, e
+       spegnendolo si spegneva tutto. Restava in piedi soltanto
+       l'elenco dei nodi — e siccome adatta(), trovando misura
+       zero, teneva la scala di prima, il controllo continuava a
+       dare numeri buoni su una schermata vuota. */
+    if(n.liv === 0) n.el.style.display = vedo ? '' : 'none';
+    else n.el.closest('.ramo').style.display = vedo ? '' : 'none';
     n.el.classList.toggle('acceso', apertaOra!==null && n.liv===1 && n.area===apertaOra);
   }
   d.querySelector('#dentro-int').classList.toggle('compatta', ultimo);
@@ -654,7 +685,10 @@ function adatta(){
   d.style.transform = 'none';
   const s = document.getElementById('scena').getBoundingClientRect();
   const w = dint.offsetWidth, h = dint.offsetHeight;
-  if(!w || !h) return;
+  /* Misura zero vuol dire che non c'e' niente da vedere: tornare
+     indietro lasciando la scala di prima e' il modo migliore per
+     non accorgersene mai. Meglio dirlo. */
+  if(!w || !h){ console.warn('[mappa] niente da misurare: la scena e vuota'); return; }
   const k = Math.min(1.35, (s.width-40)/w, (s.height-30)/h);
   vista.s = k>0 ? k : 1;
   vista.x = (s.width  - w*vista.s)/2;
