@@ -111,28 +111,34 @@ body.conRegia .w{padding-bottom:9rem}
 .regia .avanzamento{font-size:.75rem;color:#a8c0a4;font-variant-numeric:tabular-nums}
 
 /* ══════════════════ PROIEZIONE ══════════════════
+   Si chiama «sipario» e non «pieno» per una ragione che e'
+   costata due giorni: «pieno» era gia' la classe dei bottoni
+   principali, e la regola che teneva nascosto questo livello
+   nasconde qualunque cosa abbia quella classe. Risultato: i
+   bottoni «Proietta» e «Apri la mappa» non si sono mai visti,
+   pur essendo nel documento — e un controllo che verifica se un
+   elemento esiste non se ne accorge mai.
    Fondo chiaro e non scuro, al contrario delle votazioni: qui si
    proietta accanto alla lavagna vera e i due devono stare insieme
    senza che l'aula debba cambiare luce. */
-.pieno{position:fixed;inset:0;z-index:80;display:none;background:#FBF7EF;
+.sipario{position:fixed;inset:0;z-index:80;display:none;background:#FBF7EF;
   flex-direction:column;padding:1.4rem 2rem 1.2rem;overflow:hidden}
-.pieno.on{display:flex}
-.pieno .barra{display:flex;align-items:center;gap:.7rem;flex:none;margin-bottom:.8rem}
-.pieno .barra .tit{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;
+.sipario.on{display:flex}
+.sipario .barra{display:flex;align-items:center;gap:.7rem;flex:none;margin-bottom:.8rem}
+.sipario .barra .tit{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;
   color:#8a9e87;font-weight:700}
-.pieno .barra .spazio{flex:1}
-.pieno .barra button{font:inherit;font-size:.8rem;font-weight:600;cursor:pointer;
+.sipario .barra .spazio{flex:1}
+.sipario .barra button{font:inherit;font-size:.8rem;font-weight:600;cursor:pointer;
   border:1px solid rgba(45,90,39,.2);border-radius:9px;background:#fff;color:#2d5a27;
   padding:.45rem .8rem;min-height:40px}
-.pieno .barra button:hover{border-color:#2d5a27}
-.pieno .barra button:disabled{opacity:.3}
-.pieno .scena{flex:1;min-height:0;position:relative;display:flex;
+.sipario .barra button:hover{border-color:#2d5a27}
+.sipario .barra button:disabled{opacity:.3}
+.sipario .scena{flex:1;min-height:0;position:relative;display:flex;
   align-items:center;justify-content:center}
 /* nella finestra da proiettare non c'è nessun comando: solo la classe */
 body.soloProiezione .w,body.soloProiezione .regia{display:none}
-body.soloProiezione .pieno{display:flex}
-body.soloProiezione .pieno .barra{display:none}
-body.soloProiezione .pieno{padding:1.6rem 2.4rem}
+body.soloProiezione .sipario{display:flex;padding:1.6rem 2.4rem}
+body.soloProiezione .sipario .barra{display:none}
 
 /* ---- la mappa concettuale ---- */
 #tela{position:absolute;inset:0;pointer-events:none}
@@ -192,7 +198,7 @@ body.soloProiezione .pieno{padding:1.6rem 2.4rem}
 .passi{display:flex;gap:.35rem;align-items:center}
 .passo{width:26px;height:4px;border-radius:99px;background:rgba(45,90,39,.16)}
 .passo.on{background:#2d5a27}
-@media (max-width:600px){ .pieno{padding:.9rem 1rem} }
+@media (max-width:600px){ .sipario{padding:.9rem 1rem} }
 </style>
 </head>
 <body>
@@ -219,7 +225,7 @@ body.soloProiezione .pieno{padding:1.6rem 2.4rem}
   <button onclick="chiudiProiezione()">Chiudi la proiezione</button>
 </div>
 
-<div class="pieno" id="pieno">
+<div class="sipario" id="pieno">
   <div class="barra">
     <span class="tit" id="p-tit"></span>
     <span class="tit" id="p-suggerimento" style="font-weight:400;letter-spacing:.04em;text-transform:none;color:#a8b3a6"></span>
@@ -236,7 +242,7 @@ body.soloProiezione .pieno{padding:1.6rem 2.4rem}
   </div>
 </div>
 
-<script src="../js/lezioni.js?v=20260823p"></script>
+<script src="../js/lezioni.js?v=20260823t"></script>
 <script>
 /* ══════════════════════════════════════════════════════════
    Nessuna libreria, come tutto il resto del sito.
@@ -626,7 +632,7 @@ function costruisci(d){
   d.innerHTML = '<div class="dentro-int" id="dentro-int"></div>';
   const dove = d.querySelector('#dentro-int');
   const M = mappaDi(LEZIONI[corrente]);
-  const perNome = new Map();
+  const perNome = new Map(), conte = new Map();
   (function gira(nodo, contenitore, liv, padre, area, sotto){
     const ramo = document.createElement('div'); ramo.className='ramo';
     const el = document.createElement('div');
@@ -636,6 +642,7 @@ function costruisci(d){
     ramo.appendChild(el);
     const mio = {el, padre, liv, area, sotto, n:nodo.n};
     nodi.push(mio);
+    conte.set(nodo.n, (conte.get(nodo.n)||0) + 1);
     if(!perNome.has(nodo.n)) perNome.set(nodo.n, mio);
     if(padre) archi.push({da:padre, a:mio, r:nodo.r||'', incrocio:false});
     if(nodo.f && nodo.f.length){
@@ -650,9 +657,16 @@ function costruisci(d){
      concettuale da uno schema ad albero: legano concetti di aree
      diverse, e sono il punto in cui si vede se il capitolo è
      stato capito o soltanto imparato. */
+  /* Un nome ripetuto e' un guaio silenzioso: l'incrocio si
+     aggancia al primo nodo che porta quel nome, e la freccia
+     finisce da tutt'altra parte senza che nessuno se ne accorga.
+     Meglio che la pagina lo dica. */
+  const doppi = [...conte.entries()].filter(([,n])=>n>1).map(([n])=>n);
+  if(doppi.length) console.warn('[mappa] nomi ripetuti, gli incroci possono sbagliare bersaglio:', doppi);
   for(const c of (M.incroci||[])){
     const da = perNome.get(c.da), a = perNome.get(c.a);
-    if(da && a) archi.push({da, a, r:c.r||'', incrocio:true});
+    if(!da || !a){ console.warn('[mappa] incrocio senza bersaglio:', c.da, '->', c.a); continue; }
+    archi.push({da, a, r:c.r||'', incrocio:true});
   }
 }
 
