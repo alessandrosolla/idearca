@@ -176,6 +176,8 @@
   <button class="sp" data-w="14" title="Tratto spesso"><i style="width:16px;height:13px"></i></button>
 
   <span class="sep"></span>
+  <button id="b-bella" class="on" onclick="commutaBella()"
+    title="Toglie il tremolio dalla scrittura a mano e assottiglia il tratto dove corri">✒ Bella scrittura</button>
   <button id="b-raddrizza" onclick="commutaRaddrizza()" title="Le figure tracciate a mano libera diventano linee, rettangoli, cerchi">⊹ Raddrizza</button>
   <button id="b-freccia" onclick="commutaFreccia()" title="Aggiunge la punta in fondo alle linee dritte">→ Freccia</button>
 
@@ -328,19 +330,56 @@ function disegnaSelezione(){
   ctx.restore();
 }
 
+/* La spezzata è il modo sbagliato di disegnare una mano: ogni
+   punto è un angolo, e a ingrandire si vedono tutti. Passando una
+   curva per i punti di mezzo il tratto diventa continuo e le
+   lettere smettono di sembrare fatte col righello. */
+function curvaPath(p, a, b){
+  ctx.beginPath();
+  ctx.moveTo(p[a][0], p[a][1]);
+  if(b - a === 1){ ctx.lineTo(p[b][0], p[b][1]); return; }
+  for(let i=a+1;i<b;i++){
+    const mx = (p[i][0]+p[i+1][0])/2, my = (p[i][1]+p[i+1][1])/2;
+    ctx.quadraticCurveTo(p[i][0], p[i][1], mx, my);
+  }
+  ctx.lineTo(p[b][0], p[b][1]);
+}
+
+/* I limiti del disegno sono più larghi di quelli della penna: la
+   penna sta fra 0,6 e 1,3, ma le due punte scendono sotto, ed è
+   lì che il tratto smette di sembrare un tubo. */
+const G_MIN = 0.28, G_MAX = 1.32, G_LIVELLI = 8;
+
 function disegnaTratto(t){
-  if(!t.p.length) return;
+  const p = t.p;
+  if(!p || !p.length) return;
   ctx.strokeStyle = t.c;
   ctx.lineWidth   = t.w;
-  if(t.p.length === 1){
+  if(p.length === 1){
     ctx.beginPath();
-    ctx.arc(t.p[0][0], t.p[0][1], t.w/2, 0, Math.PI*2);
+    ctx.arc(p[0][0], p[0][1], t.w/2, 0, Math.PI*2);
     ctx.fillStyle = t.c; ctx.fill(); return;
   }
-  ctx.beginPath();
-  ctx.moveTo(t.p[0][0], t.p[0][1]);
-  for(let i=1;i<t.p.length;i++) ctx.lineTo(t.p[i][0], t.p[i][1]);
-  ctx.stroke();
+  if(!t.g || t.g.length !== p.length){
+    curvaPath(p, 0, p.length-1); ctx.stroke(); return;
+  }
+  /* Con lo spessore che cambia servirebbe una passata per
+     segmento, e su una lavagna piena sono migliaia di passate.
+     Gli spessori si arrotondano a sette gradini e i punti vicini
+     che finiscono sullo stesso gradino si disegnano insieme: da
+     migliaia di passate a qualche decina, e a occhio non cambia
+     niente perché le punte tonde nascondono i cambi. */
+  const liv = t.g.map(g =>
+    Math.round((Math.max(G_MIN, Math.min(G_MAX, g)) - G_MIN)/(G_MAX-G_MIN)*(G_LIVELLI-1)));
+  let a = 0;
+  for(let i=1;i<p.length;i++){
+    if(liv[i] !== liv[a] || i === p.length-1){
+      ctx.lineWidth = t.w * (G_MIN + (G_MAX-G_MIN)*liv[a]/(G_LIVELLI-1));
+      curvaPath(p, a, i);
+      ctx.stroke();
+      a = i;
+    }
+  }
 }
 
 /* Durante il tratto si disegna solo l'ultimo segmento: è ciò che
@@ -350,7 +389,9 @@ function disegnaUltimoSegmento(t){
   if(n < 2) return;
   preparaContesto();
   ctx.strokeStyle = t.c;
-  ctx.lineWidth   = t.w;
+  // anche mentre scrivi il tratto respira: se il grosso arrivasse
+  // solo al rilascio, si vedrebbe la riga cambiare sotto gli occhi
+  ctx.lineWidth   = t.w * (t.g ? Math.max(G_MIN, Math.min(G_MAX, t.g[n-1] ?? 1)) : 1);
   ctx.beginPath();
   ctx.moveTo(t.p[n-2][0], t.p[n-2][1]);
   ctx.lineTo(t.p[n-1][0], t.p[n-1][1]);
@@ -545,6 +586,29 @@ function accettabile(e){
   return true;
 }
 
+/* ── IL BLOCCO CHE NON SI SPIEGAVA ───────────────────────
+   Un «pointerup» ogni tanto non arriva: la Pencil esce dal
+   raggio, il dito scivola oltre il bordo, il sistema si prende
+   il gesto. Quel puntatore resta in «attivi» per sempre, e da
+   quel momento ogni tocco fa due puntatori: la lavagna crede
+   che tu stia pizzicando e non disegna piu' niente. Non c'e'
+   modo di accorgersene, e l'unico rimedio era ricaricare.
+
+   Un puntatore vivo si fa sentire: mentre lo appoggi manda
+   eventi. Se sta zitto per due secondi non e' appoggiato, e'
+   un fantasma — e si butta via prima di contare le dita.
+   ───────────────────────────────────────────────────────── */
+const ultimoVisto = new Map();
+function scordaIPuntatoriFantasma(){
+  const ora = performance.now();
+  for(const id of [...attivi.keys()])
+    if(ora - (ultimoVisto.get(id) ?? 0) > 2000){ attivi.delete(id); ultimoVisto.delete(id); }
+  for(const id of [...ditaFerme.keys()])
+    if(ora - (ultimoVisto.get(id) ?? 0) > 2000){ ditaFerme.delete(id); ultimoVisto.delete(id); }
+  if(attivi.size < 2) pizzico = null;
+  if(attivi.size === 0 && trascino){ trascino = null; document.body.classList.remove('trascina'); }
+}
+
 /* ── UN AVVISO CHE NON RUBA IL TOCCO ─────────────────────
    Niente alert: una finestra di sistema, a schermo intero,
    fa uscire dallo schermo intero. Questo è un nastro che
@@ -562,7 +626,14 @@ function avvisa(testo){
 }
 
 tela.addEventListener('pointerdown', e=>{
+  scordaIPuntatoriFantasma();
+  ultimoVisto.set(e.pointerId, performance.now());
   notaPenna(e);
+  /* La lavagna si apre pronta a scrivere a tastiera, ed è giusto:
+     i titoli si battono. Ma chi arriva con la Pencil e appoggia la
+     punta si aspetta un segno, non una modalità da cambiare. Se
+     tocca una penna vera, la penna si prende. */
+  if(modoAttuale === 'testo' && e.pointerType === 'pen') modo('penna');
   if(modoAttuale === 'testo') return;
 
   /* ── IL DIFETTO PIÙ GRAVE CHE C'ERA QUI ──────────────────
@@ -628,12 +699,17 @@ tela.addEventListener('pointerdown', e=>{
     return;
   }
 
-  inCorso = { c: colore, w: spessore / vista.s, p: [aMondo(e.clientX, e.clientY)] };
+  const pt = aMondo(e.clientX, e.clientY);
+  avviaFiltro(pt);
+  // g: quanto e' grosso il tratto in questo punto, rispetto al
+  // suo spessore. Parte magro come quando la penna appoggia.
+  inCorso = { c: colore, w: spessore / vista.s, p: [pt], g: [0.72] };
   tratti.push(inCorso);
   ridisegna();
 });
 
 tela.addEventListener('pointermove', e=>{
+  ultimoVisto.set(e.pointerId, performance.now());
   if(ditaFerme.has(e.pointerId)){ ditaFerme.set(e.pointerId, schermo(e)); return; }
   if(!attivi.has(e.pointerId)) return;
   attivi.set(e.pointerId, schermo(e));
@@ -676,7 +752,11 @@ tela.addEventListener('pointermove', e=>{
     return;
   }
   if(!inCorso) return;
-  inCorso.p.push(aMondo(e.clientX, e.clientY));
+  const q = filtra(aMondo(e.clientX, e.clientY));
+  const u = inCorso.p[inCorso.p.length-1];
+  if(Math.hypot(q[0]-u[0], q[1]-u[1]) < 0.01) return;  // fermo: niente punto doppio
+  inCorso.p.push(q);
+  inCorso.g.push(spessoreRelativo(e));
   disegnaUltimoSegmento(inCorso);
 });
 
@@ -687,8 +767,9 @@ function finePuntatore(e){
   if(e && e.pointerId !== undefined){
     attivi.delete(e.pointerId);
     ditaFerme.delete(e.pointerId);
+    ultimoVisto.delete(e.pointerId);
     try{ tela.releasePointerCapture(e.pointerId); }catch(_){}
-  }else{ attivi.clear(); ditaFerme.clear(); }
+  }else{ attivi.clear(); ditaFerme.clear(); ultimoVisto.clear(); }
 
   if(attivi.size < 2) pizzico = null;
   if(attivi.size === 0){
@@ -696,7 +777,9 @@ function finePuntatore(e){
     chiudiSelezione();
     if(trascino){ trascino = null; document.body.classList.remove('trascina'); }
     if(inCorso){
-      if(raddrizza) raddrizzaTratto(inCorso);
+      if(raddrizza){ raddrizzaTratto(inCorso); delete inCorso.g; }
+      else abbelisci(inCorso);
+      filtro = null;
       inCorso = null; segnaModifica(); ridisegna();
     }
   }
@@ -1004,6 +1087,210 @@ if(!token()) aggiornaStato('non sei entrato come docente');
    strumento a parte, su duecentoventi tracce tremolanti finte.
    ══════════════════════════════════════════════════════════ */
 let raddrizza = false, freccia = false;
+
+/* ══════════════════════════════════════════════════════════
+   BELLA SCRITTURA
+   Scrivere alla lavagna in piedi, con il braccio per aria e su
+   uno schermo liscio, viene male a chiunque: la mano trema, la
+   penna scivola, e alla fine le lettere sono quello che sono.
+   Qui non si riconosce niente e non si riscrive niente — sarebbe
+   un'altra grafia, non la tua. Si tolgono tre difetti e basta.
+
+   1. IL TREMOLIO, mentre scrivi. Ogni punto nuovo non finisce
+      dov'e' arrivata la penna ma un po' indietro, verso dove
+      stava andando. Quanto indietro dipende dalla velocita': se
+      corri quasi niente (se no l'inchiostro insegue la punta e
+      si sente), se vai piano molto (ed e' andando piano che la
+      mano trema). E' il filtro «a un euro», due righe di conto.
+
+   2. LA GOBBA, quando stacchi. Le curve fatte a mano sono
+      spezzate in tanti segmentini disuguali. Al rilascio i punti
+      si ridistribuiscono a distanza pari e si passano due volte
+      di Chaikin: gli angoli involontari diventano curve, quelli
+      voluti — dove giri davvero — restano, perche' sono piu'
+      stretti di quanto Chaikin riesca a smussare in due giri.
+
+   3. IL GANCIO in fondo. Alzando la penna il polso da' uno
+      scatto e resta un uncino. Se l'ultimo pezzo e' corto e
+      torna indietro rispetto al resto, se ne va.
+
+   E si aggiunge una cosa sola: il tratto si assottiglia dove
+   corri e si ingrossa dove rallenti, come una penna vera. E'
+   quello che, piu' di tutto il resto, fa sembrare scritto bene
+   anche quello che e' scritto uguale a prima.
+   ══════════════════════════════════════════════════════════ */
+let bella = true;
+function commutaBella(){
+  bella = !bella;
+  document.getElementById('b-bella').classList.toggle('on', bella);
+  aggiornaStato(bella ? 'bella scrittura accesa' : 'bella scrittura spenta');
+}
+
+/* --- 1. mentre scrivi: il filtro a un euro --- */
+let filtro = null;
+function avviaFiltro(p){ filtro = {x:p[0], y:p[1], t:performance.now(), v:0}; }
+function filtra(p){
+  if(!bella || !filtro) return p;
+  const ora = performance.now();
+  const dt  = Math.max(1, ora - filtro.t) / 1000;
+  const d   = Math.hypot(p[0]-filtro.x, p[1]-filtro.y);
+  // la velocita' si guarda anche lei smorzata, se no un singolo
+  // punto sbagliato spalanca il filtro proprio quando serve
+  filtro.v = filtro.v*0.6 + (d/dt)*0.4;
+  // fermo: quasi tutto peso al passato (trema, e il tremolio sparisce)
+  // veloce: quasi tutto peso al presente (corre, e non deve restare indietro)
+  const a = Math.min(0.95, 0.12 + filtro.v/2600);
+  const q = [filtro.x + (p[0]-filtro.x)*a, filtro.y + (p[1]-filtro.y)*a];
+  filtro.x = q[0]; filtro.y = q[1]; filtro.t = ora;
+  return q;
+}
+
+/* Quanto e' grosso il tratto qui. Una penna vera lascia meno
+   inchiostro dove la mano corre e di piu' dove rallenta o preme:
+   e' quel respiro, non la forma delle lettere, che distingue una
+   riga scritta da una riga tracciata. La velocita' la sa gia' il
+   filtro; la pressione la da' solo la Pencil, e solo li' si usa. */
+function spessoreRelativo(e){
+  if(!bella) return 1;
+  /* La taratura conta: se il tratto medio venisse più sottile di
+     quello scelto, «medio» smetterebbe di voler dire medio. Il
+     punto di riposo è una scrittura normale — attorno ai 700
+     pixel al secondo sullo schermo — e lì vale esattamente 1. */
+  const vSchermo = (filtro ? filtro.v : 0) * vista.s;
+  let g = 1.40 - vSchermo/3000;
+  if(e && e.pointerType === 'pen' && e.pressure > 0.02)
+    g *= 0.78 + e.pressure*0.46;
+  return Math.max(0.6, Math.min(1.3, g));
+}
+
+/* --- 2. al rilascio: distanza pari, poi Chaikin --- */
+function aPassoUguale(p, passo){
+  if(p.length < 2) return p.slice();
+  const out = [p[0].slice(0,2)];
+  let avanzo = 0;
+  for(let i=1;i<p.length;i++){
+    let ax=p[i-1][0], ay=p[i-1][1];
+    const bx=p[i][0], by=p[i][1];
+    let resta = Math.hypot(bx-ax, by-ay);
+    while(avanzo + resta >= passo){
+      const k = (passo - avanzo) / resta;
+      ax += (bx-ax)*k; ay += (by-ay)*k;
+      out.push([ax, ay]);
+      resta = Math.hypot(bx-ax, by-ay);
+      avanzo = 0;
+    }
+    avanzo += resta;
+  }
+  const u = p[p.length-1];
+  if(Math.hypot(u[0]-out[out.length-1][0], u[1]-out[out.length-1][1]) > passo/3)
+    out.push([u[0], u[1]]);
+  return out;
+}
+function chaikin(p){
+  if(p.length < 3) return p.slice();
+  const out = [p[0]];
+  for(let i=0;i<p.length-1;i++){
+    const a=p[i], b=p[i+1];
+    out.push([a[0]+(b[0]-a[0])*0.25, a[1]+(b[1]-a[1])*0.25]);
+    out.push([a[0]+(b[0]-a[0])*0.75, a[1]+(b[1]-a[1])*0.75]);
+  }
+  out.push(p[p.length-1]);
+  return out;
+}
+
+/* --- 3. il gancio del polso --- */
+/* Il gancio non si misura in punti: la penna ne manda centoventi
+   al secondo e uno scatto di polso ne riempie una decina, mentre
+   il dito su un portatile ne manda un terzo. Si misura in
+   lunghezza — l'uncino è corto per definizione — e si taglia nel
+   punto in cui la direzione si rovescia di più. */
+function togliGancio(p){
+  if(p.length < 8) return p;
+  const passi = [0];
+  for(let i=1;i<p.length;i++)
+    passi.push(passi[i-1] + Math.hypot(p[i][0]-p[i-1][0], p[i][1]-p[i-1][1]));
+  const tot = passi[p.length-1];
+  if(tot < 12) return p;                        // un puntino, non una parola
+  const max = Math.min(tot*0.16, 26);           // oltre, è tratto voluto
+  const dir = (a,b)=>[p[b][0]-p[a][0], p[b][1]-p[a][1]];
+
+  let migliore = null;
+  for(let i=p.length-2; i>1; i--){
+    const coda = tot - passi[i];
+    if(coda > max) break;
+    if(coda < 1.5) continue;                    // troppo corta per vedersi
+    // il prima si guarda su un pezzo lungo quanto la coda, così i
+    // due versi sono confrontabili
+    let j = i;
+    while(j > 0 && passi[i] - passi[j] < coda) j--;
+    if(j === i) continue;
+    const v1 = dir(j, i), v2 = dir(i, p.length-1);
+    const n1 = Math.hypot(...v1), n2 = Math.hypot(...v2);
+    if(!n1 || !n2) continue;
+    const cos = (v1[0]*v2[0] + v1[1]*v2[1]) / (n1*n2);
+    if(cos < -0.3 && (!migliore || cos < migliore.cos)) migliore = {i, cos};
+  }
+  return migliore ? p.slice(0, migliore.i+1) : p;
+}
+
+/* Il tratto finito passa di qui. Restano le coordinate dove sono:
+   si tocca la forma, mai la posizione degli estremi. */
+function abbelisci(t){
+  if(!bella || !t.p || t.p.length < 4){ if(t) delete t.g; return; }
+  const passo = Math.max(1.2, t.w * 0.55);
+
+  const grezzi = togliGancio(t.p);
+  const gGrezzi = (t.g || []).slice(0, grezzi.length);
+  let p = aPassoUguale(grezzi, passo);
+  // gli spessori seguono i punti nuovi: si leggono alla stessa
+  // frazione di percorso, se no il respiro finisce fuori posto
+  let g = lungoIlPercorso(grezzi, gGrezzi, p);
+  if(p.length >= 3){
+    p = chaikin(p); p = chaikin(p);
+    g = lungoIlPercorso(aPassoUguale(grezzi, passo), g, p);
+  }
+  // Il primo e l'ultimo punto tornano dove li aveva messi la mano:
+  // gli estremi sono l'unica cosa che si vede subito se si sposta.
+  // «Dove li aveva messi la mano» è il tratto senza il gancio — se
+  // no la coda tagliata verrebbe rimessa proprio qui.
+  p[0] = grezzi[0].slice(0,2);
+  p[p.length-1] = grezzi[grezzi.length-1].slice(0,2);
+
+  g = media3(media3(g));
+  // la penna appoggia e si stacca: le punte sono piu' magre
+  const coda = Math.min(6, Math.floor(g.length/4));
+  for(let i=0;i<coda;i++){
+    const k = 0.55 + 0.45*(i/coda);
+    g[i] *= k; g[g.length-1-i] *= k;
+  }
+  t.p = p; t.g = g;
+}
+
+/* Rilegge una serie di valori (gli spessori) alla stessa frazione
+   di lunghezza su un percorso ridisegnato. */
+function lungoIlPercorso(pVecchi, valori, pNuovi){
+  if(!valori || !valori.length) return pNuovi.map(()=>1);
+  const s=[0];
+  for(let i=1;i<pVecchi.length;i++)
+    s.push(s[i-1] + Math.hypot(pVecchi[i][0]-pVecchi[i-1][0], pVecchi[i][1]-pVecchi[i-1][1]));
+  const tot = s[s.length-1] || 1;
+  const n=[0];
+  for(let i=1;i<pNuovi.length;i++)
+    n.push(n[i-1] + Math.hypot(pNuovi[i][0]-pNuovi[i-1][0], pNuovi[i][1]-pNuovi[i-1][1]));
+  const totN = n[n.length-1] || 1;
+  const out=[]; let j=0;
+  for(let i=0;i<pNuovi.length;i++){
+    const bersaglio = (n[i]/totN) * tot;
+    while(j < s.length-2 && s[j+1] < bersaglio) j++;
+    const a=s[j], b=s[j+1] ?? a+1;
+    const k = b>a ? (bersaglio-a)/(b-a) : 0;
+    const va = valori[Math.min(j, valori.length-1)];
+    const vb = valori[Math.min(j+1, valori.length-1)];
+    out.push(va + (vb-va)*Math.max(0,Math.min(1,k)));
+  }
+  return out;
+}
+const media3 = v => v.map((x,i,a)=> (a[i-1] ?? x)*0.25 + x*0.5 + (a[i+1] ?? x)*0.25);
 
 function commutaRaddrizza(){
   raddrizza = !raddrizza;
