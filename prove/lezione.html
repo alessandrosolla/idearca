@@ -199,54 +199,6 @@ body.soloProiezione .sipario .barra{display:none}
 .nodo.legato{box-shadow:0 0 0 3px rgba(154,124,46,.45)}
 /* mentre si guarda un rimando, il resto della mappa resta li' ma
    si fa da parte: serve a capire dove cade il salto */
-.nodo.smorzato{opacity:.16}
-.fascia{position:absolute;left:50%;transform:translateX(-50%);bottom:1.2rem;z-index:3;
-  background:#fff;border:1.5px solid rgba(154,124,46,.45);border-radius:16px;
-  padding:.85rem 1.4rem;box-shadow:0 6px 26px rgba(45,90,39,.13);
-  max-width:min(64rem,94vw);text-align:center;pointer-events:none}
-.fascia .conta{font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;
-  color:#9a7c2e;font-weight:700;margin-bottom:.45rem}
-.fascia .riga2{display:flex;align-items:center;gap:1rem;justify-content:center;flex-wrap:wrap}
-.fascia .lato{display:flex;flex-direction:column;text-align:left;max-width:22rem}
-.fascia .lato .area{font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:#8a9e87;font-weight:700}
-.fascia .lato .nome{font-family:'Cormorant Garamond',Georgia,serif;
-  font-size:clamp(1.1rem,2.4vh,1.6rem);line-height:1.15;color:#1c2b1a}
-.fascia .frase{font-size:clamp(.85rem,1.7vh,1.05rem);font-weight:600;color:#9a7c2e;
-  background:#fdf8ee;border-radius:99px;padding:.3rem .85rem;white-space:nowrap}
-.nodo.spento{opacity:.13}
-.nodo.acceso{box-shadow:0 0 0 3px rgba(154,124,46,.22)}
-
-/* ---- la provocazione ---- */
-.atto{max-width:min(48rem,86vw);text-align:left}
-.atto .n{font-size:clamp(.7rem,1.1vh,.82rem);letter-spacing:.2em;text-transform:uppercase;
-  color:#9a7c2e;font-weight:700;margin-bottom:1rem}
-.atto .t{font-family:'Cormorant Garamond',Georgia,serif;
-  font-size:clamp(1.5rem,4.2vh,3rem);line-height:1.26;white-space:pre-line;
-  font-weight:400;letter-spacing:-.01em}
-.atto .f{font-size:clamp(.8rem,1.5vh,1.05rem);color:#8a9e87;margin-top:1.4rem;font-style:italic}
-.atto .opz{display:flex;gap:1rem;margin-top:1.8rem;flex-wrap:wrap}
-.atto .opz div{flex:1;min-width:12rem;background:#fff;border:1.5px solid rgba(45,90,39,.2);
-  border-radius:12px;padding:.9rem 1.1rem;font-size:clamp(1rem,2.2vh,1.5rem);
-  font-family:'Cormorant Garamond',Georgia,serif}
-/* un rimando per volta: due concetti e la frase che li lega */
-.rimando{max-width:min(64rem,92vw);text-align:center}
-.rimando .conta{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;
-  color:#9a7c2e;font-weight:700;margin-bottom:1.6rem}
-.rimando .coppia{display:flex;align-items:center;gap:clamp(.8rem,3vw,2.4rem);
-  justify-content:center;flex-wrap:wrap}
-.rimando .lato{flex:1;min-width:14rem;background:#fff;border:1.5px solid rgba(45,90,39,.22);
-  border-radius:16px;padding:1.1rem 1.3rem;text-align:left}
-.rimando .lato .area{font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;
-  color:#8a9e87;font-weight:700;margin-bottom:.4rem}
-.rimando .lato .nome{font-family:'Cormorant Garamond',Georgia,serif;
-  font-size:clamp(1.3rem,3.4vh,2.2rem);line-height:1.15}
-.rimando .lato .sotto{font-size:clamp(.85rem,1.7vh,1.05rem);color:#5a6b58;
-  line-height:1.45;margin-top:.35rem}
-.rimando .mezzo{flex:0 0 auto;display:flex;flex-direction:column;align-items:center;gap:.2rem}
-.rimando .mezzo span{font-size:clamp(.9rem,2vh,1.25rem);color:#9a7c2e;font-weight:600;
-  background:#fdf8ee;border-radius:99px;padding:.35rem .9rem}
-.rimando .mezzo em{font-style:normal;font-size:clamp(1.4rem,3vh,2rem);color:#9a7c2e}
-
 .passi{display:flex;gap:.35rem;align-items:center}
 .passo{width:26px;height:4px;border-radius:99px;background:rgba(45,90,39,.16)}
 .passo.on{background:#2d5a27}
@@ -296,7 +248,7 @@ body.soloProiezione .sipario .barra{display:none}
   </div>
 </div>
 
-<script src="../js/lezioni.js?v=20260824i"></script>
+<script src="../js/lezioni.js?v=20260824k"></script>
 <script>
 /* ══════════════════════════════════════════════════════════
    Nessuna libreria, come tutto il resto del sito.
@@ -339,8 +291,7 @@ let vista = {x:0, y:0, s:1};
    insieme quella che la rende illeggibile se stanno sempre accesi:
    dodici tratteggi che attraversano otto aree sono un groviglio.
    Si accendono quando servono — cioe' quando li si commenta. */
-let rimandi = false;   // si guardano uno per volta
-let passoPrima = 0;
+let rimandi = false;
 /* Il secondo strato: i concetti segnati `piu` restano nascosti
    finche' non li si chiede. Una mappa deve poter essere letta a
    colpo d'occhio e insieme scavata fino in fondo, e sono due cose
@@ -598,26 +549,22 @@ function acceso(id, si, tinta){
    l'altro capo era fuori schermo — sembravano non funzionare.
    Adesso accenderli inquadra tutta la mappa, e i due capi di ogni
    rimando si illuminano, cosi' si trovano. */
-/* ── I RIMANDI, TERZA VERSIONE ────────────────────────────
-   Prima erano dodici tratteggi accesi insieme su una mappa alta
-   quattromila pixel: un groviglio, con il secondo capo quasi
-   sempre fuori schermo. Poi sono diventati schede, una per volta:
-   chiare, ma staccate dalla mappa — e un rimando che non si vede
-   dove cade non serve a niente, perche' il suo senso e' proprio
-   che unisce due punti lontani.
-   Adesso restano dentro la mappa. Se ne accende uno per volta:
-   tutto il resto si smorza, i due capi restano pieni, e
-   l'inquadratura si sposta per tenerli tutti e due sotto gli
-   occhi. Si vede la frase, e si vede da dove a dove salta.
+/* ── I RIMANDI ────────────────────────────────────────────
+   Sono la parte piu' preziosa della mappa: legano concetti che
+   stanno in aree diverse, e sono il punto in cui si vede se il
+   capitolo e' stato capito o solo imparato. Ma tenerli sempre
+   accesi mentre si apre un'area per volta e' un groviglio, perche'
+   l'altro capo e' altrove. Quindi: si accendono sulla mappa
+   completa, dove c'e' spazio, e ci si vedono tutti insieme —
+   tratteggiati d'ocra, con la loro frase, e i due capi cerchiati
+   perche' si trovino a colpo d'occhio.
    ──────────────────────────────────────────────────────── */
 function commutaRimandi(){
   preparaMappa();
-  const quanti = archi.filter(a=>a.incrocio).length;
-  if(!quanti){ return; }
+  if(!archi.some(a=>a.incrocio)) return;
   rimandi = !rimandi;
   acceso('p-rimandi', rimandi);
-  if(rimandi){ passoPrima = passo; passo = 0; }
-  else { passo = Math.min(passoPrima, statiMappa()-1); }
+  if(rimandi) passo = statiMappa()-1;   // i rimandi vivono nella mappa intera
   disegna();
   if(finestra){ aggiornaRegia(); spedisciStato(); }
 }
@@ -636,7 +583,6 @@ function tuttaLaMappa(){
 }
 function quanti(){
   if(modo!=='mappa') return tempiDi(LEZIONI[corrente].provocazione).length;
-  if(rimandi) return Math.max(1, archi.filter(a=>a.incrocio).length);
   return statiMappa();
 }
 function avanti(){ if(passo < quanti()-1){ passo++; aggiorna(); } }
@@ -665,13 +611,6 @@ function aggiornaRegia(){
     if(!stati.length || stati._per !== corrente){ stati = listaStati(); stati._per = corrente; }
     const st = stati[passo] || {tipo:'titolo'};
     const rami = mappaDi(LEZIONI[corrente]).f || [];
-    if(rimandi){
-      const lista = archi.filter(a=>a.incrocio);
-      document.getElementById('r-dove').textContent = 'rimandi';
-      document.getElementById('r-titolo').textContent =
-        lista[passo] ? lista[passo].da.n + ' → ' + lista[passo].a.n : '';
-      return;
-    }
     document.getElementById('r-dove').textContent = 'mappa';
     document.getElementById('r-titolo').textContent =
       st.tipo==='titolo' ? 'il titolo' :
@@ -789,6 +728,7 @@ function costruisci(d){
     if(!da || !a){ console.warn('[mappa] incrocio senza bersaglio:', c.da, '->', c.a); continue; }
     archi.push({da, a, r:c.r||'', incrocio:true});
     da.haRimando = a.haRimando = true;
+    da.capoRimando = a.capoRimando = true;
   }
 }
 
@@ -796,7 +736,7 @@ function disegnaMappa(d, tienilaVista){
   costruisci(d);
   const M = mappaDi(LEZIONI[corrente]);
   if(!stati.length || stati._per !== corrente){ stati = listaStati(); stati._per = corrente; }
-  const st = rimandi ? {tipo:'tutto'} : (stati[Math.min(passo, stati.length-1)] || {tipo:'titolo'});
+  const st = stati[Math.min(passo, stati.length-1)] || {tipo:'titolo'};
   const apertaOra = st.tipo==='area' ? st.i : null;
   const ultimo = st.tipo==='tutto';
 
@@ -816,10 +756,11 @@ function disegnaMappa(d, tienilaVista){
     else if(n.liv===1) vedo = st.tipo==='aree' || ultimo || (apertaOra!==null && n.area===apertaOra);
     else vedo = ultimo || (apertaOra!==null && n.area===apertaOra &&
                            n.sotto >= st.da && n.sotto < st.a);
-    /* Mentre si guardano i rimandi lo strato profondo c'e' sempre:
-       due rimandi su quattordici hanno un capo li' dentro, e senza
-       questo restavano invisibili — cioe' rotti. */
-    if(n.piu) vedo = (profondo && ultimo) || rimandi;
+    /* Un capo di rimando che sta nello strato profondo comparirebbe
+       solo con «Piu' a fondo» acceso: il rimando resterebbe monco
+       senza che si capisca perche'. Quei pochi nodi si mostrano
+       anche con i soli rimandi accesi — non tutto lo strato. */
+    if(n.piu) vedo = (profondo && ultimo) || (rimandi && ultimo && n.capoRimando);
     n.visibile = vedo;
     /* La radice si nasconde da sola, non con il suo contenitore:
        dentro il .ramo della radice c'e' tutta la mappa, e
@@ -831,27 +772,9 @@ function disegnaMappa(d, tienilaVista){
     else n.el.closest('.ramo').style.display = vedo ? '' : 'none';
     n.el.classList.toggle('acceso', apertaOra!==null && n.liv===1 && n.area===apertaOra);
   }
-  if(rimandi){
-    const lista = archi.filter(a=>a.incrocio);
-    const scelto = lista[Math.min(passo, lista.length-1)];
-    for(const n of nodi)
-      n.el.classList.toggle('smorzato',
-        !!(scelto && n.visibile && n !== scelto.da && n !== scelto.a));
-    if(scelto){
-      /* Si incornicia tutta la mappa: cosi' i due capi ci sono
-         sempre tutti e due, e si vede da dove a dove salta il
-         rimando. A quella scala pero' i nomi non si leggono —
-         e allora quello che conta si ripete grande in una fascia,
-         che e' la sintesi delle due versioni sbagliate di prima. */
-      for(const n of nodi) n.el.classList.toggle('legato', n===scelto.da || n===scelto.a);
-      adatta(true, true);
-      applicaVista();
-      fasciaRimando(scelto, lista.length);
-      return;
-    }
-  }
-  for(const n of nodi){ n.el.classList.remove('smorzato'); n.el.classList.remove('legato'); }
-  const f = document.getElementById('fascia'); if(f) f.remove();
+  /* i capi dei rimandi si cerchiano, cosi' su una mappa da cento
+     riquadri si trovano senza cercarli */
+  for(const n of nodi) n.el.classList.toggle('legato', !!(rimandi && n.haRimando));
   if(!tienilaVista) adatta(ultimo);
   applicaVista();
 }
@@ -883,24 +806,6 @@ function adatta(intera, incornicia){
     vista.y = (s.height - h*vista.s)/2;
   }
 }
-/* La fascia che si legge: i due concetti per esteso, con l'area
-   di provenienza, e in mezzo la frase che li lega. Sta sopra la
-   mappa incorniciata, che intanto mostra — smorzata — dove sono
-   e quanto sono lontani. */
-function fasciaRimando(a, quanti){
-  let f = document.getElementById('fascia');
-  if(!f){
-    f = document.createElement('div'); f.id='fascia'; f.className='fascia';
-    document.getElementById('scena').appendChild(f);
-  }
-  const lato = n => `<div class="lato">
-      <span class="area">${esc(n.areaNome||'')}</span>
-      <span class="nome">${esc(n.n)}</span>
-    </div>`;
-  f.innerHTML = `<div class="conta">rimando ${passo+1} di ${quanti}</div>
-    <div class="riga2">${lato(a.da)}<span class="frase">${esc(a.r)} →</span>${lato(a.a)}</div>`;
-}
-
 function applicaVista(){
   const d = document.getElementById('dentro');
   d.style.transform = `translate(${vista.x}px,${vista.y}px) scale(${vista.s})`;
@@ -1023,19 +928,16 @@ function collega(){
     scrivi(arco.r, (dorsale + x2)/2, y2 - corpo*1.35, '#5a6b58');
   }
 
-  const listaInc = archi.filter(a=>a.incrocio);
-  const sceltoInc = rimandi ? listaInc[Math.min(passo, listaInc.length-1)] : null;
   for(const arco of archi){
     if(!arco.incrocio || !rimandi) continue;
-    if(arco !== sceltoInc) continue;
     if(!arco.da.visibile || !arco.a.visibile) continue;
     const A = arco.da.el.getBoundingClientRect(), B = arco.a.el.getBoundingClientRect();
     const x1 = A.right-s.left, y1 = A.top+A.height/2-s.top;
     const x2 = B.left -s.left, y2 = B.top+B.height/2-s.top;
     c.save();
-    c.lineWidth = Math.max(2, 2.6*vista.s);
-    c.strokeStyle = '#9a7c2e';
-    c.setLineDash([Math.max(5,9*vista.s), Math.max(4,6*vista.s)]);
+    c.lineWidth = Math.max(1.2, 1.8*vista.s);
+    c.strokeStyle = 'rgba(154,124,46,.85)';
+    c.setLineDash([Math.max(4,7*vista.s), Math.max(3,5*vista.s)]);
     const m = Math.max(60*vista.s, Math.abs(x2-x1)/2);
     c.beginPath();
     c.moveTo(x1,y1);
