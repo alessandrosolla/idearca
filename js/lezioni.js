@@ -1289,6 +1289,245 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Filosofia antica · 6 — L\'ultimo Platone': {
+  mappa: {
+    n:'L\'ultimo Platone', d:'il filosofo che a settant\'anni smonta sé stesso',
+    f:[
+      {r:'si apre con', n:'L\'autocritica', d:'il Parmenide: Platone scrive le obiezioni contro le proprie Idee',
+       f:[
+         {r:'mette in scena', n:'Un Socrate giovanissimo', d:'che viene messo in difficoltà dal vecchio Parmenide',
+          f:[{piu:true, r:'e', n:'Non riesce a rispondere', d:'per la prima volta il maestro perde'}]},
+         {r:'obietta', n:'Di che cosa ci sono Idee?', d:'del bello sì, ma del fango, del pelo, dello sporco?',
+          f:[{piu:true, r:'e Socrate', n:'Arrossisce', d:'Parmenide 130d: «sei ancora giovane, la filosofia non ti ha ancora preso»'}]},
+         {r:'obietta', n:'Il terzo uomo', d:'l\'argomento che manda in pezzi la partecipazione',
+          f:[{r:'perché', n:'Serve una terza Idea', d:'se uomo e Idea di uomo si somigliano, occorre un\'Idea che li accomuni'},
+             {r:'e poi', n:'Una quarta, e una quinta', d:'all\'infinito: il regresso non si ferma'}]},
+         {r:'obietta', n:'Due mondi separati non comunicano', d:'se le Idee sono altrove, non spiegano niente di qui',
+          f:[{piu:true, r:'e peggio', n:'Dio non conoscerebbe noi', d:'e noi non conosceremmo le Idee: il chorismòs si ritorce contro'}]}
+       ]},
+
+      {r:'poi chiede', n:'Che cos\'è la scienza', d:'il Teeteto: tre risposte, tutte sbagliate',
+       f:[
+         {r:'prima', n:'Scienza è sensazione', d:'la tesi di Protagora, ripresa e demolita',
+          f:[{r:'perché', n:'Si autoconfuta', d:'se ogni opinione è vera, è vera anche quella di chi nega Protagora'},
+             {piu:true, r:'e perché', n:'Ricordare non è sentire', d:'chi ricorda sa senza percepire'}]},
+         {r:'seconda', n:'Scienza è opinione vera', d:'ma non basta',
+          f:[{r:'perché', n:'Si può azzeccare per caso', d:'come un giudice convinto da un buon oratore: crede il vero, non lo sa'}]},
+         {r:'terza', n:'Opinione vera più ragione', d:'e neanche questa regge',
+          f:[{r:'perché', n:'«Ragione» ha tre sensi', d:'e nessuno dei tre chiude il cerchio'}]},
+         {r:'finisce in', n:'Aporia', d:'ma è un\'aporia che ha ripulito il campo'},
+         {piu:true, r:'contiene', n:'La digressione sul filosofo', d:'Teeteto 172c: l\'uomo che non sa la strada per la piazza'}
+       ]},
+
+      {r:'compie', n:'Il parricidio', d:'il Sofista: per prendere il sofista bisogna uccidere Parmenide',
+       f:[
+         {r:'il problema è', n:'Il falso sembra impossibile', d:'dire il falso è dire ciò che non è, e il non essere non si dice',
+          f:[{r:'e allora', n:'Il sofista è imprendibile', d:'può sempre dire che nessuno lo ha mai visto dire il falso'}]},
+         {r:'la soluzione', n:'Il non essere è il diverso', d:'non l\'opposto dell\'essere: l\'altro da esso',
+          f:[{r:'esempio', n:'«Non bello» non è il nulla', d:'è qualcosa che è, diverso dal bello'},
+             {piu:true, r:'in', n:'Sofista 257b', d:'«quando diciamo non essere, non diciamo un contrario ma un diverso»'}]},
+         {r:'poggia sui', n:'Cinque generi sommi', d:'le Idee comunicano fra loro secondo regole',
+          f:[{r:'l\'', n:'Essere'},
+             {r:'la', n:'Quiete'},
+             {r:'il', n:'Movimento'},
+             {r:'l\'', n:'Identico'},
+             {r:'il', n:'Diverso', d:'ed è quello che risolve tutto'}]},
+         {r:'quindi il falso è', n:'Dire di qualcosa qualcos\'altro', d:'non dire nulla: dire diversamente'},
+         {r:'e per definire usa', n:'La diairesi', d:'divisione per dicotomie successive fino alla specie ultima',
+          f:[{piu:true, r:'con esiti', n:'Comici', d:'il sofista come cacciatore di giovani ricchi; l\'uomo come bipede implume'}]}
+       ]},
+
+      {r:'ripensa', n:'La politica possibile', d:'il Politico e le Leggi: dopo il fallimento di Siracusa',
+       f:[
+         {r:'il re è', n:'Un tessitore', d:'intreccia i caratteri coraggiosi e quelli miti, come trama e ordito'},
+         {r:'ma ammette', n:'La legge è il secondo meglio', d:'rigida e uguale per tutti, quando gli uomini sono diversi',
+          f:[{r:'perché', n:'Il vero politico non c\'è', d:'e in sua assenza è meglio una regola scritta che un uomo'},
+             {piu:true, r:'immagine', n:'Come il medico che parte', d:'lascia una ricetta scritta perché non può restare'}]},
+         {r:'costruisce', n:'La città delle Leggi', d:'Magnesia: la seconda città, quella realizzabile',
+          f:[{r:'con', n:'Cinquemilaquaranta famiglie', d:'un numero scelto perché divisibile in cinquantanove modi'},
+             {r:'con', n:'Proprietà privata limitata', d:'nessuno può avere più del quadruplo del più povero'},
+             {r:'e con', n:'I preamboli alle leggi', d:'ogni legge è preceduta da una spiegazione che persuade',
+              f:[{piu:true, r:'perché', n:'Il cittadino non è uno schiavo', d:'e a un uomo libero si dà la ragione, non solo l\'ordine'}]}]},
+         {r:'ma anche', n:'Il consiglio notturno', d:'un organo segreto che veglia sulla città',
+          f:[{piu:true, r:'e prevede', n:'La pena di morte per empietà', d:'dopo cinque anni di rieducazione in carcere'}]}
+       ]},
+
+      {r:'ridefinisce', n:'Il bene raggiungibile', d:'il Filebo: né solo piacere né solo intelligenza',
+       f:[
+         {r:'confronta', n:'Piacere contro sapere', d:'quale delle due rende felice la vita?'},
+         {r:'risponde', n:'La vita mista', d:'nessuna delle due da sola: una vita di solo piacere è quella di un mollusco',
+          f:[{piu:true, r:'e infatti', n:'Nessuno sceglierebbe il piacere puro', d:'senza memoria di averlo provato né coscienza di provarlo'}]},
+         {r:'distingue', n:'Piaceri puri e misti', d:'i puri non nascono da un dolore: i colori, i suoni, il sapere'},
+         {r:'e ordina il tutto con', n:'Misura, proporzione, bellezza', d:'il bene non è una cosa: è la giusta mescolanza'}
+       ]},
+
+      {r:'racconta', n:'Come è fatto il mondo', d:'il Timeo: l\'unico dialogo cosmologico',
+       f:[
+         {r:'c\'è', n:'Il Demiurgo', d:'non crea dal nulla: ordina una materia che c\'è già',
+          f:[{r:'guardando', n:'Il modello eterno', d:'le Idee: fa il mondo il più simile possibile a quelle'},
+             {r:'perché', n:'Era buono e senza invidia', d:'e volle che tutto fosse simile a sé'}]},
+         {r:'lavora su', n:'La chora', d:'lo spazio-ricettacolo: né Idea né cosa, la «terza specie»',
+          f:[{piu:true, r:'descritta come', n:'Difficile e oscura', d:'Timeo 49a: si coglie «con un ragionamento bastardo»'}]},
+         {r:'costruisce', n:'L\'anima del mondo', d:'l\'universo è un vivente dotato di anima e intelligenza'},
+         {r:'e gli elementi con', n:'Triangoli', d:'fuoco tetraedro, terra cubo, aria ottaedro, acqua icosaedro',
+          f:[{piu:true, r:'è', n:'La prima fisica matematica', d:'e Galileo la citerà'}]},
+         {r:'definisce', n:'Il tempo', d:'«immagine mobile dell\'eternità», nato insieme al cielo'},
+         {piu:true, r:'e ci mette dentro', n:'Atlantide', d:'nel Crizia, rimasto incompiuto a metà frase'}
+       ]},
+
+      {r:'forse insegnava', n:'Le dottrine non scritte', d:'ciò che nell\'Accademia si diceva e non si scriveva',
+       f:[
+         {r:'i principi sarebbero', n:'L\'Uno e la Diade', d:'il limite e l\'illimitato: da loro derivano le Idee stesse'},
+         {r:'lo riferisce', n:'La testimonianza di Aristotele', d:'che era stato vent\'anni nell\'Accademia'},
+         {r:'e resta', n:'La conferenza sul Bene', d:'il pubblico venne per l\'etica e si trovò davanti la matematica: se ne andarono tutti',
+          f:[{piu:true, r:'lo racconta', n:'Aristosseno', d:'che dice di averlo sentito da Aristotele'}]},
+         {r:'perché non scriverle', n:'Lo scritto non si difende', d:'nel Fedro: cade in mano a chiunque e non sa rispondere',
+          f:[{piu:true, r:'e nella', n:'Settima lettera', d:'«non esiste né esisterà mai uno scritto mio su queste cose»'}]},
+         {piu:true, r:'ne è nata', n:'La scuola di Tubinga', d:'che dagli anni Sessanta rilegge tutto Platone a partire da qui'}
+       ]},
+
+      {r:'lascia', n:'Che cosa cambia', d:'e non solo per Platone',
+       f:[
+         {r:'nasce', n:'La logica dei generi', d:'le Idee non stanno isolate: si mescolano secondo regole'},
+         {r:'nasce', n:'Il problema della predicazione', d:'come fa una cosa a essere molte cose insieme?'},
+         {r:'si apre la strada ad', n:'Aristotele allievo', d:'che prende la diairesi e ne fa la definizione per genere e differenza'},
+         {r:'il Timeo diventa', n:'Il Platone del Medioevo', d:'per mille anni l\'unico dialogo letto in Occidente',
+          f:[{piu:true, r:'nella traduzione di', n:'Calcidio', d:'e solo fino a Timeo 53c'}]},
+         {r:'e resta', n:'Un pensiero che si corregge', d:'l\'unico filosofo antico di cui vediamo il pensiero cambiare'}
+       ]}
+    ],
+    incroci:[
+      {da:'Il terzo uomo', a:'Due mondi separati non comunicano', r:'insieme distruggono',
+       perche:'Le due obiezioni colpiscono la stessa giuntura: il rapporto fra Idea e cosa. Se somigliarsi richiede una terza Idea si va all\'infinito; se invece non si somigliano, le Idee non spiegano più niente del mondo. Platone scrive tutte e due contro sé stesso.'},
+      {da:'Il non essere è il diverso', a:'Il falso sembra impossibile', r:'scioglie',
+       perche:'Finché «non essere» significa nulla, dire il falso è dire nulla e nessuna bugia è possibile. Se invece significa «diverso da», allora dire il falso è dire di una cosa qualcosa d\'altro — e il sofista si può finalmente accusare.'},
+      {da:'Diverso', a:'La logica dei generi', r:'fonda',
+       perche:'Il quinto genere non serve solo a salvare il falso: è ciò che permette a un\'Idea di essere sé stessa e diversa dalle altre. Da qui nasce l\'idea che i concetti si combinino secondo regole — cioè la logica.'},
+      {da:'La diairesi', a:'Aristotele allievo', r:'diventa la definizione in',
+       perche:'Dividere per dicotomie fino alla specie ultima è il metodo che Aristotele eredita e corregge: al posto della divisione a coppie mette la definizione per genere prossimo e differenza specifica. Il debito è visibile e non dichiarato.'},
+      {da:'La legge è il secondo meglio', a:'La città delle Leggi', r:'giustifica',
+       perche:'Nella Repubblica comandava chi sa, senza leggi scritte che gli legassero le mani. Qui Platone ammette che quell\'uomo non si trova, e ripiega su una città di leggi: peggiore in teoria, l\'unica possibile in pratica.'},
+      {da:'I preamboli alle leggi', a:'Il consiglio notturno', r:'convive stranamente con',
+       perche:'Lo stesso testo che vuole persuadere il cittadino invece di comandargli — perché non è uno schiavo — istituisce un organo segreto e la pena capitale per empietà. Le Leggi sono il libro più liberale e più cupo di Platone insieme.'},
+      {da:'Si autoconfuta', a:'Scienza è sensazione', r:'demolisce',
+       perche:'Se ogni opinione è vera per chi la ha, è vera anche l\'opinione di chi sostiene che Protagora sbaglia. La tesi si taglia da sola: è la confutazione più elegante dell\'antichità, e vale ancora oggi contro ogni relativismo assoluto.'},
+      {da:'Il modello eterno', a:'Di che cosa ci sono Idee?', r:'presuppone risolta',
+       perche:'Il Demiurgo guarda le Idee e copia. Ma di che cosa esistono Idee? Il Timeo lavora come se il Parmenide non avesse mai posto la domanda: è uno dei motivi per cui datare i dialoghi tardi è così difficile.'},
+      {da:'Lo scritto non si difende', a:'Aporia', r:'spiega perché i dialoghi finiscono in',
+       perche:'Se il libro non può rispondere a chi lo interroga, allora il massimo che può fare è lasciare il lettore con la domanda in mano. L\'aporia non è una resa: è la forma che un pensiero prende quando sa di essere scritto.'},
+      {da:'La vita mista', a:'Misura, proporzione, bellezza', r:'si regge su',
+       perche:'Se il bene non è né il piacere né l\'intelligenza, dev\'essere il modo in cui si mescolano. E allora il bene non è una cosa da avere: è una proporzione da mantenere — la stessa idea che regge l\'anima e la città.'},
+      {da:'Un Socrate giovanissimo', a:'Un pensiero che si corregge', r:'è il segno di',
+       perche:'Platone poteva far vincere il proprio personaggio, come sempre. Sceglie invece di mostrarlo battuto da un vecchio avversario, e di lasciare l\'obiezione senza risposta. Nessun altro antico ha fatto una cosa simile con il proprio sistema.'},
+      {da:'Il tempo', a:'L\'anima del mondo', r:'nasce insieme a',
+       perche:'Il tempo non è un contenitore preesistente: comincia con il cielo, come immagine che si muove di un\'eternità che sta ferma. Da qui Agostino prenderà la domanda su che cosa fosse Dio «prima» — e risponderà che il prima non c\'era.'}
+    ]
+  },
+  provocazione: {
+    titolo:'Dite una bugia. Adesso spiegatemi come avete fatto',
+    durata:'55 minuti',
+    domandaMadre:'Se dire il falso è dire ciò che non è, e ciò che non è non si può dire, come fa una bugia a esistere?',
+    perche:'Tutti sanno mentire e nessuno sa dire come sia possibile. La classe scopre in dieci minuti che il ragionamento che rende impossibile la menzogna è lo stesso che ha imparato con Parmenide, e che finché regge il sofista è imprendibile: può sempre dire che nessuno lo ha mai colto a dire il falso. Da qui si arriva al parricidio — un filosofo di settant\'anni che uccide il proprio padre per salvare la possibilità di parlare — e al fatto che nello stesso periodo Platone pubblica le obiezioni più forti contro le proprie Idee. È l\'ora in cui si capisce che cambiare idea non è debolezza di un pensiero: è il suo funzionamento.',
+    occorrente:'Un foglietto a testa.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'Scrivete su un foglietto una frase falsa.\nQualunque cosa: «fuori nevica», «ho tre fratelli».\n\nFatto?\n\nAllora rispondete a questa domanda:\n\nche cosa avete appena scritto?\n\nUna frase falsa dice qualcosa che non è.\nMa ciò che non è, non è niente.\nE chi dice niente, non dice.\n\nQuindi non avete scritto nulla.',
+       parlato:'Fai scrivere davvero: il foglietto in mano cambia tutto, perché la conclusione arriva contro un oggetto che stanno toccando.\n\nPoi costruisci il ragionamento riga per riga, senza fretta, e fermati dopo ogni passaggio a chiedere se lo accettano. Quasi tutti accettano i primi due e restano bloccati sul terzo.\n\nLa richiesta finale è precisa e va ripetuta due volte: non vi chiedo se sia vero che avete mentito — lo so anch\'io. Vi chiedo di dirmi in quale punto il ragionamento sbaglia.\n\nSe qualcuno tira fuori Parmenide, complimentati e digli che ha appena capito da dove viene il problema: è lo stesso divieto di due mesi fa. Il non essere non si pensa e non si dice.',
+       seDicono:[
+         {loro:'«Ho scritto qualcosa: le parole ci sono, si vedono sul foglio.»',
+          tu:'Le parole sì. Ma una frase non è un mucchio di parole: è un dire qualcosa di qualcosa. «Fuori nevica» sta al posto di un fatto — e quel fatto non c\'è. Che cosa sta al posto di che cosa?'},
+         {loro:'«È falsa, non è vuota: sono due cose diverse.»',
+          tu:'Sono d\'accordo con te, e anche Platone. Ma adesso devi dirmi in che cosa consiste la differenza — perché finché non lo sai dire, chi ti contraddice ha in mano un argomento e tu hai un\'intuizione.'}
+       ]},
+
+      {minuti:'8–17', et:'Lo schieramento',
+       schermo:'Una frase falsa:',
+       opzioni:['dice qualcosa', 'non dice niente'],
+       parlato:'Conta e scrivi i numeri. Poi lavora sul gruppo del «dice qualcosa», che è quasi tutta la classe: chiedigli di completare la frase «una frase falsa dice…». Si fermano quasi sempre a metà.\n\nÈ il momento in cui l\'ora diventa seria: hanno una convinzione fortissima e nessun argomento. Non salvarli, ma nemmeno umiliarli — di\' che è esattamente la posizione in cui Platone si trova a settant\'anni, dopo aver scritto la Repubblica.\n\nPoi introduci il personaggio che rende la cosa urgente: il sofista. Se dire il falso è impossibile, allora nessuno può accusare un sofista di dire il falso, e la sua difesa è perfetta. Per prenderlo bisogna prima dimostrare che la menzogna esiste.',
+       seDicono:[
+         {loro:'«Dice una cosa che potrebbe essere ma non è.»',
+          tu:'Buona, e sei più avanti di quanto credi. Ma attento: «potrebbe essere» dove sta? Se non è da nessuna parte, siamo di nuovo al punto di prima. Ti serve un posto in cui mettere ciò che non è.'},
+         {loro:'«Basta dire che è un errore e finisce lì.»',
+          tu:'L\'errore però esiste, ed è proprio quello che devi spiegare. Chiamarlo per nome non è spiegarlo: è la mossa che Socrate rifiutava sempre agli interlocutori.'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'Il problema non è dei sofisti. È di Parmenide.\n\n«Non è possibile né dire né pensare ciò che non è.»\n\nÈ il divieto su cui Platone ha costruito tutto:\nl\'essere immutabile, le Idee, la conoscenza vera.\n\nMa finché quel divieto regge:\n\nnon esiste la menzogna,\nnon esiste l\'errore,\nnon esiste nemmeno l\'opinione falsa —\ne quindi non c\'è niente da confutare, mai.\n\nPer salvare la parola bisogna disobbedire al padre.',
+       parlato:'Qui va fatto vedere quanto costa. Non è un problema tecnico: se il falso non esiste, crolla tutto il mestiere. Non si può correggere nessuno, non si può insegnare, non si può nemmeno dire che il sofista sbaglia.\n\nPoi dai il nome che Platone stesso usa, e non addolcirlo: nel Sofista, lo Straniero di Elea chiede a Teeteto il permesso di commettere un parricidio — di uccidere il padre Parmenide. E si scusa in anticipo di dover sembrare un folle.\n\nFai pesare il fatto biografico: Platone ha circa settant\'anni. Ha passato la vita a costruire un sistema su quel divieto. E lo attacca lui, non un nemico.\n\nSe l\'aula regge, aggiungi la seconda notizia: nello stesso periodo pubblica il Parmenide, dove mette in bocca a un avversario le tre obiezioni più forti mai scritte contro le proprie Idee. Nessuna delle tre riceve risposta nel dialogo.',
+       seDicono:[
+         {loro:'«Se demolisce le sue Idee, allora aveva torto prima.»',
+          tu:'Oppure sta facendo la cosa che un sistema serio deve poter subire. Nota che non le abbandona: continua a usarle nel Timeo. Sta cercando di capire come funzionano davvero, e per farlo deve prima ammettere che come le aveva descritte non funzionavano.'},
+         {loro:'«Perché non ha semplicemente riscritto la Repubblica?»',
+          tu:'Perché non correggeva un dettaglio: stava cambiando la domanda. E soprattutto perché scriveva dialoghi, non trattati — e in un dialogo si può mostrare una difficoltà senza doverla risolvere subito. È il vantaggio della forma che aveva scelto quarant\'anni prima.'}
+       ]},
+
+      {minuti:'28–38', et:'Il testo',
+       schermo:'«Quando diciamo il non essere,\nnon diciamo, a quanto pare, qualcosa di contrario all\'essere,\nma soltanto qualcosa di diverso.»\n\nQuindi:\n\n«non bello» non vuol dire il nulla.\nVuol dire: qualcosa che è, e che è diverso dal bello.\n\nE dire il falso non è dire nulla:\nè dire, di qualcosa, qualcosa d\'altro.',
+       testo:{fonte:'Platone, Sofista 257b e 241d (IV secolo a.C.)',
+              glossa:'La soluzione sta in una sola parola: diverso. Il non essere smette di essere il buco nero in cui non si può entrare e diventa una relazione — essere altro da. Da qui nasce la possibilità della logica: i concetti si distinguono, si escludono, si combinano. Ed è anche il momento in cui la filosofia smette di avere paura del nulla.'},
+       parlato:'Leggi il passo, poi fallo verificare su un esempio loro. Prendi una delle bugie scritte all\'inizio — «fuori nevica» — e mostrala come combinazione: c\'è il fuori, c\'è il nevicare, e la frase li lega in un modo diverso da come stanno. Non manca niente: è tutto presente, montato male.\n\nÈ questa la scoperta: il falso non è un vuoto, è un montaggio sbagliato di pezzi che ci sono tutti.\n\nSe c\'è tempo, mostra i cinque generi sommi — essere, quiete, movimento, identico, diverso — e fa\' notare che il quinto non serve solo per la bugia: serve perché ogni Idea possa essere sé stessa e diversa dalle altre. Senza il diverso, non ci sono nemmeno due cose.',
+       seDicono:[
+         {loro:'«Sembra un giochetto di parole.»',
+          tu:'Prova a farne a meno. Senza «diverso» non puoi dire che due cose sono due, che una definizione è sbagliata, che qualcuno ha torto. Un giochetto di parole da cui dipende tutto il resto merita un altro nome.'},
+         {loro:'«Ma allora Parmenide aveva torto?»',
+          tu:'Solo su un punto, e Platone glielo concede quasi tutto: non si può pensare il nulla assoluto. Quello che nega è che ogni «non» significhi nulla assoluto. È una correzione chirurgica, non una demolizione — ed è per questo che è così difficile da confutare.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'Nello stesso periodo, Platone scrive un altro dialogo.\n\nIn scena c\'è Socrate giovanissimo, e davanti a lui\nun vecchio Parmenide che lo interroga.\n\nGli chiede: esistono Idee del fango, del pelo, dello sporco?\nSocrate arrossisce.\n\nPoi gli dimostra che, se l\'uomo somiglia all\'Idea di uomo,\nserve una terza Idea che li accomuni.\nE poi una quarta. E una quinta. Senza fine.\n\nSocrate non sa rispondere.\n\nQueste obiezioni non le ha scritte un nemico:\nle ha scritte l\'autore delle Idee.',
+       parlato:'Dai il fatto e aspetta. La domanda che arriva è sempre la stessa: perché? Perché un uomo pubblica le obiezioni migliori contro sé stesso?\n\nRaccogli le loro risposte prima di dare la tua. In genere ne escono tre: era onesto; voleva anticipare gli avversari; non aveva più niente da perdere. Nessuna è sbagliata.\n\nPoi aggiungi quella che conta: perché un pensiero che non regge le obiezioni non vale la pena di essere difeso. Se le Idee sono vere, sopravvivranno; se non lo sono, meglio saperlo — e saperlo da sé, che è l\'unico modo per continuare a lavorarci.\n\nE fai notare la differenza con quasi tutti i suoi contemporanei: Parmenide non ha mai scritto un\'obiezione contro sé stesso; Protagora nemmeno. Platone lo fa a settant\'anni, dopo aver fondato una scuola che porta il suo nome.',
+       seDicono:[
+         {loro:'«Ma allora la sua filosofia era sbagliata e lo sapeva.»',
+          tu:'Sapeva che era incompleta, che è un\'altra cosa. Continua a usare le Idee fino all\'ultimo. Quello che ha capito è che il rapporto fra Idea e cosa non era spiegato — e per il resto della vita ha lavorato su quello, invece di far finta di niente.'},
+         {loro:'«Nessuno oggi lo farebbe.»',
+          tu:'Poche persone, ed è un ottimo criterio per riconoscerle. Quando qualcuno vi espone la propria posizione, chiedetevi se vi ha mai detto l\'obiezione più forte che gli hanno fatto. È il segno che distingue chi pensa da chi difende.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'Riprendete il foglietto.\n\nAdesso sapete che cosa avete scritto:\nnon il nulla, ma qualcosa di diverso —\nun montaggio sbagliato di pezzi che ci sono tutti.\n\nPer arrivarci, un uomo di settant\'anni\nha dovuto uccidere il proprio maestro\ne smontare il proprio sistema.\n\nLa domanda che vi lascio è questa:\n\nvi è mai capitato di trovare l\'obiezione\nche vi avrebbe fatto cambiare idea —\ne di tenerla per voi?',
+       parlato:'Fai riprendere in mano il foglietto: chiude il cerchio con l\'oggetto con cui si era aperto.\n\nPoi la domanda finale, che non riguarda Platone. Lasciala cadere e non chiedere risposte a voce: è una di quelle che funzionano nel silenzio. Se qualcuno vuole parlare, lascialo parlare; se non parla nessuno, va bene lo stesso.\n\nUltima cosa da dire, breve: da qui in poi la filosofia ha un nuovo strumento. Se il diverso esiste, i concetti si possono distinguere, escludere, combinare — e nel giro di una generazione un allievo dell\'Accademia scriverà i primi libri di logica della storia. Si chiama Aristotele, e comincia la prossima volta.',
+       seDicono:[
+         {loro:'«Quindi in filosofia non si arriva mai a una conclusione?»',
+          tu:'Si arriva a molte conclusioni: che il falso è dire diverso, per esempio, è una conquista definitiva e la usiamo ancora. Quello che non si fa è smettere di controllarle. La differenza fra una conclusione e un dogma è tutta lì.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'Il terzo uomo',
+       corpo:'Prendi molte cose grandi. Hanno qualcosa in comune, e quel qualcosa è l\'Idea di Grande.\n\nOra guarda insieme le cose grandi e l\'Idea di Grande: anche loro hanno qualcosa in comune — sono tutte grandi. Serve dunque una seconda Idea di Grande, che le accomuni.\n\nMa allora quella seconda Idea e tutto il resto avranno a loro volta qualcosa in comune. Serve una terza. E una quarta.\n\nL\'argomento si chiama così perché Aristotele lo formulò con l\'uomo: uomo, Idea di uomo, e il terzo uomo che li accomuna.',
+       chiedi:'Il regresso nasce da un\'assunzione precisa: che l\'Idea di Grande sia essa stessa grande. Se l\'Idea di Grande non fosse grande, l\'argomento cadrebbe — ma allora che cosa sarebbe? Provate a togliere quell\'assunzione e vedete che cosa resta in piedi.'},
+      {titolo:'Il giudice convinto',
+       corpo:'Nel Teeteto, Socrate propone di definire la scienza come opinione vera. Poi porta un caso: un giudice viene convinto da un oratore abilissimo di una cosa che è realmente accaduta, ma di cui non c\'è nessuna prova e a cui il giudice non ha assistito.\n\nIl giudice crede il vero. La sua opinione è vera. Eppure non sa: è stato persuaso, non ha visto né capito.',
+       chiedi:'Che cosa manca a quel giudice? Duemilaquattrocento anni dopo, un filosofo americano di nome Gettier ha mostrato che aggiungere «più una ragione» non basta ancora. Provate a costruire voi un caso in cui uno ha un\'opinione vera, ha anche una ragione, e continua a non sapere.'},
+      {titolo:'La conferenza sul Bene',
+       corpo:'Platone annuncia ad Atene una conferenza pubblica sul Bene. Accorre molta gente: si aspettano di sentir parlare di ricchezza, salute, forza, felicità.\n\nLui parla di matematica, di numeri, di astronomia, e conclude che il Bene è l\'Uno. Il pubblico, racconta Aristosseno, si spazientì e a poco a poco se ne andò quasi tutto.\n\nÈ l\'unica testimonianza diretta di ciò che Platone insegnava a voce e non scrisse mai.',
+       chiedi:'Perché non ha scritto la parte più importante? Nel Fedro dice che lo scritto non può difendersi né rispondere a chi lo interroga. Ma allora tutti i suoi dialoghi che cosa sono — e perché ne ha scritti trentacinque?'}
+    ],
+    testi:[
+      {fonte:'Platone, Sofista 241d — il parricidio',
+       corpo:'«Sarà necessario, per difenderci, mettere alla prova il discorso del padre Parmenide, e costringere con la forza il non essere a essere in qualche modo, e a sua volta l\'essere a non essere in qualche modo. […] Non considerarmi per questo una specie di parricida.»',
+       glossa:'La parola è di Platone, non degli interpreti. Vale la pena di far notare la formula «in qualche modo», ripetuta due volte: non dice che il non essere è, dice che è in un certo senso. Tutta la soluzione sta in quella cautela.'},
+      {fonte:'Platone, Timeo 37d — il tempo',
+       corpo:'«Il padre generatore pensò di fare una certa immagine mobile dell\'eternità, e ordinando il cielo fece dell\'eternità che permane nell\'unità un\'immagine eterna che procede secondo il numero: ed è quella che abbiamo chiamato tempo.»',
+       glossa:'Il tempo non è un contenitore in cui il mondo viene messo: nasce con il mondo, come copia in movimento di qualcosa che sta fermo. È la frase da cui Agostino partirà per rispondere a chi chiede che cosa facesse Dio prima di creare — non c\'era nessun prima.'},
+      {fonte:'Platone, Leggi IV 720a-e — i preamboli',
+       corpo:'Il medico degli schiavi ordina e se ne va; quello degli uomini liberi «esamina la malattia dall\'inizio, discutendo con il malato stesso e con i suoi amici, e non prescrive nulla prima di averlo persuaso».\n\nCosì il legislatore: ogni legge dev\'essere preceduta da un discorso che convinca, «perché il cittadino non è uno schiavo».',
+       glossa:'È la pagina più moderna di Platone, ed è nello stesso libro che istituisce il consiglio notturno e la pena di morte per empietà. Tenere insieme le due cose è l\'esercizio: nessun pensatore serio è tutto d\'un pezzo.'}
+    ],
+    compito:'Mezza pagina. Scrivete un\'idea a cui tenete e poi l\'obiezione più forte che le si possa fare — quella che vi metterebbe davvero in difficoltà, non una comoda. Non serve rispondere: serve trovarla. Chi non ne trova nessuna scriva questo, ed è un risultato anche quello.',
+    fonti:[
+      'Platone, Parmenide 130a-135c (le obiezioni alle Idee, il terzo uomo)',
+      'Platone, Teeteto 151e-186e (le tre definizioni della scienza) e 172c (la digressione)',
+      'Platone, Sofista 216a-268d, in particolare 237a-241d e 254b-259d',
+      'Platone, Politico 291a-303d; Leggi IV 719e-723d, V 737e-747e, XII 951d-969d',
+      'Platone, Filebo 20b-23b e 63e-67b; Timeo 27d-53c e 37c-38c',
+      'Aristotele, Metafisica I 6 e 9; Fisica IV 2, 209b — le dottrine non scritte',
+      'Aristosseno, Elementi armonici II 30-31 — la conferenza sul Bene',
+      'H.J. Krämer e K. Gaiser (scuola di Tubinga); G. Reale, Per una nuova interpretazione di Platone'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',
