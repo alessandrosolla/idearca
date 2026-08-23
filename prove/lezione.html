@@ -197,6 +197,22 @@ body.soloProiezione .sipario .barra{display:none}
 .nodo.piu .nn{font-size:.92rem;font-weight:500;color:#6b5518}
 .nodo.piu .nd{color:#9a8557}
 .nodo.legato{box-shadow:0 0 0 3px rgba(154,124,46,.45)}
+/* mentre si guarda un rimando, il resto della mappa resta li' ma
+   si fa da parte: serve a capire dove cade il salto */
+.nodo.smorzato{opacity:.16}
+.fascia{position:absolute;left:50%;transform:translateX(-50%);bottom:1.2rem;z-index:3;
+  background:#fff;border:1.5px solid rgba(154,124,46,.45);border-radius:16px;
+  padding:.85rem 1.4rem;box-shadow:0 6px 26px rgba(45,90,39,.13);
+  max-width:min(64rem,94vw);text-align:center;pointer-events:none}
+.fascia .conta{font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;
+  color:#9a7c2e;font-weight:700;margin-bottom:.45rem}
+.fascia .riga2{display:flex;align-items:center;gap:1rem;justify-content:center;flex-wrap:wrap}
+.fascia .lato{display:flex;flex-direction:column;text-align:left;max-width:22rem}
+.fascia .lato .area{font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:#8a9e87;font-weight:700}
+.fascia .lato .nome{font-family:'Cormorant Garamond',Georgia,serif;
+  font-size:clamp(1.1rem,2.4vh,1.6rem);line-height:1.15;color:#1c2b1a}
+.fascia .frase{font-size:clamp(.85rem,1.7vh,1.05rem);font-weight:600;color:#9a7c2e;
+  background:#fdf8ee;border-radius:99px;padding:.3rem .85rem;white-space:nowrap}
 .nodo.spento{opacity:.13}
 .nodo.acceso{box-shadow:0 0 0 3px rgba(154,124,46,.22)}
 
@@ -280,7 +296,7 @@ body.soloProiezione .sipario .barra{display:none}
   </div>
 </div>
 
-<script src="../js/lezioni.js?v=20260824f"></script>
+<script src="../js/lezioni.js?v=20260824i"></script>
 <script>
 /* ══════════════════════════════════════════════════════════
    Nessuna libreria, come tutto il resto del sito.
@@ -582,15 +598,17 @@ function acceso(id, si, tinta){
    l'altro capo era fuori schermo — sembravano non funzionare.
    Adesso accenderli inquadra tutta la mappa, e i due capi di ogni
    rimando si illuminano, cosi' si trovano. */
-/* ── PERCHE' I RIMANDI NON SI CAPIVANO ────────────────────
-   Erano tratteggi tirati da un capo all'altro della mappa. Su una
-   mappa alta quattromila pixel il secondo capo e' quasi sempre
-   fuori schermo, e quello che si vede e' una linea che entra da
-   sopra e esce da sotto: non dice niente, e sporca il disegno.
-   Un rimando pero' e' una frase — «l'apeiron supera l'acqua» — e
-   una frase si legge, non si segue con il dito. Quindi adesso si
-   guardano uno per volta, grandi: i due concetti affiancati, la
-   relazione in mezzo, e sotto da quale area a quale area salta.
+/* ── I RIMANDI, TERZA VERSIONE ────────────────────────────
+   Prima erano dodici tratteggi accesi insieme su una mappa alta
+   quattromila pixel: un groviglio, con il secondo capo quasi
+   sempre fuori schermo. Poi sono diventati schede, una per volta:
+   chiare, ma staccate dalla mappa — e un rimando che non si vede
+   dove cade non serve a niente, perche' il suo senso e' proprio
+   che unisce due punti lontani.
+   Adesso restano dentro la mappa. Se ne accende uno per volta:
+   tutto il resto si smorza, i due capi restano pieni, e
+   l'inquadratura si sposta per tenerli tutti e due sotto gli
+   occhi. Si vede la frase, e si vede da dove a dove salta.
    ──────────────────────────────────────────────────────── */
 function commutaRimandi(){
   preparaMappa();
@@ -699,12 +717,6 @@ function disegna(tienilaVista){
   }
   const sg = document.getElementById('p-suggerimento');
   if(sg) sg.textContent = 'trascina per muoverti · rotella per ingrandire';
-  if(rimandi){
-    tela.style.display='none'; scena.classList.remove('mappa');
-    d.style.transform=''; d.style.position='';
-    disegnaRimando(d);
-    return;
-  }
   tela.style.display=''; scena.classList.add('mappa');
   d.style.position='absolute';
   disegnaMappa(d, tienilaVista);
@@ -724,25 +736,6 @@ function disegnaAtto(d){
       ${fonte ? '<div class="f">'+esc(fonte)+'</div>' : ''}
     </div>`;
   d.style.transform='none';
-}
-
-function disegnaRimando(d){
-  const lista = archi.filter(a=>a.incrocio);
-  const a = lista[Math.min(passo, lista.length-1)];
-  if(!a){ d.innerHTML = '<div class="atto"><div class="t">Questo capitolo non ha rimandi.</div></div>'; return; }
-  const lato = n => `<div class="lato">
-      <div class="area">${esc(n.areaNome||'')}</div>
-      <div class="nome">${esc(n.n)}</div>
-      ${n.d ? '<div class="sotto">'+esc(n.d)+'</div>' : ''}
-    </div>`;
-  d.innerHTML = `<div class="rimando">
-      <div class="conta">rimando ${passo+1} di ${lista.length}</div>
-      <div class="coppia">
-        ${lato(a.da)}
-        <div class="mezzo"><span>${esc(a.r)}</span><em>→</em></div>
-        ${lato(a.a)}
-      </div>
-    </div>`;
 }
 
 /* ---------- la mappa ---------- */
@@ -803,7 +796,7 @@ function disegnaMappa(d, tienilaVista){
   costruisci(d);
   const M = mappaDi(LEZIONI[corrente]);
   if(!stati.length || stati._per !== corrente){ stati = listaStati(); stati._per = corrente; }
-  const st = stati[Math.min(passo, stati.length-1)] || {tipo:'titolo'};
+  const st = rimandi ? {tipo:'tutto'} : (stati[Math.min(passo, stati.length-1)] || {tipo:'titolo'});
   const apertaOra = st.tipo==='area' ? st.i : null;
   const ultimo = st.tipo==='tutto';
 
@@ -823,7 +816,10 @@ function disegnaMappa(d, tienilaVista){
     else if(n.liv===1) vedo = st.tipo==='aree' || ultimo || (apertaOra!==null && n.area===apertaOra);
     else vedo = ultimo || (apertaOra!==null && n.area===apertaOra &&
                            n.sotto >= st.da && n.sotto < st.a);
-    if(n.piu) vedo = profondo && ultimo;
+    /* Mentre si guardano i rimandi lo strato profondo c'e' sempre:
+       due rimandi su quattordici hanno un capo li' dentro, e senza
+       questo restavano invisibili — cioe' rotti. */
+    if(n.piu) vedo = (profondo && ultimo) || rimandi;
     n.visibile = vedo;
     /* La radice si nasconde da sola, non con il suo contenitore:
        dentro il .ramo della radice c'e' tutta la mappa, e
@@ -835,6 +831,27 @@ function disegnaMappa(d, tienilaVista){
     else n.el.closest('.ramo').style.display = vedo ? '' : 'none';
     n.el.classList.toggle('acceso', apertaOra!==null && n.liv===1 && n.area===apertaOra);
   }
+  if(rimandi){
+    const lista = archi.filter(a=>a.incrocio);
+    const scelto = lista[Math.min(passo, lista.length-1)];
+    for(const n of nodi)
+      n.el.classList.toggle('smorzato',
+        !!(scelto && n.visibile && n !== scelto.da && n !== scelto.a));
+    if(scelto){
+      /* Si incornicia tutta la mappa: cosi' i due capi ci sono
+         sempre tutti e due, e si vede da dove a dove salta il
+         rimando. A quella scala pero' i nomi non si leggono —
+         e allora quello che conta si ripete grande in una fascia,
+         che e' la sintesi delle due versioni sbagliate di prima. */
+      for(const n of nodi) n.el.classList.toggle('legato', n===scelto.da || n===scelto.a);
+      adatta(true, true);
+      applicaVista();
+      fasciaRimando(scelto, lista.length);
+      return;
+    }
+  }
+  for(const n of nodi){ n.el.classList.remove('smorzato'); n.el.classList.remove('legato'); }
+  const f = document.getElementById('fascia'); if(f) f.remove();
   if(!tienilaVista) adatta(ultimo);
   applicaVista();
 }
@@ -866,6 +883,24 @@ function adatta(intera, incornicia){
     vista.y = (s.height - h*vista.s)/2;
   }
 }
+/* La fascia che si legge: i due concetti per esteso, con l'area
+   di provenienza, e in mezzo la frase che li lega. Sta sopra la
+   mappa incorniciata, che intanto mostra — smorzata — dove sono
+   e quanto sono lontani. */
+function fasciaRimando(a, quanti){
+  let f = document.getElementById('fascia');
+  if(!f){
+    f = document.createElement('div'); f.id='fascia'; f.className='fascia';
+    document.getElementById('scena').appendChild(f);
+  }
+  const lato = n => `<div class="lato">
+      <span class="area">${esc(n.areaNome||'')}</span>
+      <span class="nome">${esc(n.n)}</span>
+    </div>`;
+  f.innerHTML = `<div class="conta">rimando ${passo+1} di ${quanti}</div>
+    <div class="riga2">${lato(a.da)}<span class="frase">${esc(a.r)} →</span>${lato(a.a)}</div>`;
+}
+
 function applicaVista(){
   const d = document.getElementById('dentro');
   d.style.transform = `translate(${vista.x}px,${vista.y}px) scale(${vista.s})`;
@@ -988,24 +1023,32 @@ function collega(){
     scrivi(arco.r, (dorsale + x2)/2, y2 - corpo*1.35, '#5a6b58');
   }
 
+  const listaInc = archi.filter(a=>a.incrocio);
+  const sceltoInc = rimandi ? listaInc[Math.min(passo, listaInc.length-1)] : null;
   for(const arco of archi){
     if(!arco.incrocio || !rimandi) continue;
+    if(arco !== sceltoInc) continue;
     if(!arco.da.visibile || !arco.a.visibile) continue;
     const A = arco.da.el.getBoundingClientRect(), B = arco.a.el.getBoundingClientRect();
     const x1 = A.right-s.left, y1 = A.top+A.height/2-s.top;
     const x2 = B.left -s.left, y2 = B.top+B.height/2-s.top;
     c.save();
-    c.lineWidth = Math.max(1, 1.5*vista.s);
-    c.strokeStyle = 'rgba(154,124,46,.8)';
-    c.setLineDash([Math.max(3,6*vista.s), Math.max(3,5*vista.s)]);
+    c.lineWidth = Math.max(2, 2.6*vista.s);
+    c.strokeStyle = '#9a7c2e';
+    c.setLineDash([Math.max(5,9*vista.s), Math.max(4,6*vista.s)]);
     const m = Math.max(60*vista.s, Math.abs(x2-x1)/2);
     c.beginPath();
     c.moveTo(x1,y1);
     c.bezierCurveTo(x1+m, y1, x2-m, y2, x2, y2);
     c.stroke();
     c.restore();
-    punta(x2, y2, 'rgba(154,124,46,.9)');
+    punta(x2, y2, '#9a7c2e');
+    /* la frase del rimando non si rimpicciolisce con la mappa:
+       e' la cosa che si deve leggere, non il contorno */
+    const prima = c.font;
+    c.font = "700 " + Math.max(13, 15*Math.min(1, vista.s*1.4)) + "px 'Jost',-apple-system,sans-serif";
     scrivi(arco.r, (x1+x2)/2, (y1+y2)/2, '#9a7c2e');
+    c.font = prima;
   }
 
 
