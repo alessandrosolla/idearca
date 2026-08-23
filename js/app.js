@@ -18,7 +18,7 @@
    versione.json sbagliata manderebbe il browser in un giro
    infinito di ricariche.
    ══════════════════════════════════════════════════════════ */
-const VERSIONE='20260824n';
+const VERSIONE='20260824p';
 (async function controllaVersione(){
   try{
     const r=await fetch('versione.json?'+Date.now(), {cache:'no-store'});
@@ -899,6 +899,22 @@ function vociExtra(){
    statiche — così la lavagna non perde quello che ci si è
    scritto sopra passando ad altro e tornando indietro.
    ──────────────────────────────────────────────────────────── */
+/* ── PERCHE' GLI STRUMENTI RESTAVANO VECCHI ───────────────
+   Le cornici caricavano il loro indirizzo cosi' com'era. Per
+   quelle da ricaricare ogni volta si attaccava «?»+orario — ma se
+   l'indirizzo aveva gia' un «?» (come prove/lezione.html?solo=…)
+   ne usciva un secondo punto interrogativo e il parametro si
+   perdeva. Per le altre non si attaccava niente: il browser
+   teneva la copia vecchia finche' non si svuotava la cache a mano,
+   e il sito si aggiornava senza che lo strumento dentro cambiasse.
+   Adesso il separatore e' quello giusto e ogni pagina porta il
+   numero di versione del sito.
+   ───────────────────────────────────────────────────────── */
+function conVersione(indirizzo, semprenuovo){
+  const sep = indirizzo.includes('?') ? '&' : '?';
+  return indirizzo + sep + 'v=' + (semprenuovo ? Date.now() : VERSIONE);
+}
+
 const VISTE={
   __map__:      {vista:'lib-map-view',      uso:'map'},
   __metodo__:   {vista:'lib-metodo-view',   uso:'metodo'},
@@ -938,7 +954,7 @@ function mostraVista(k){
   /* alcune cose non vivono in un riquadro: escono in una scheda
      loro e la libreria resta dov'era */
   if(v.fuori){
-    window.open(v.fuori, 'idearca-'+v.uso);
+    window.open(conVersione(v.fuori), 'idearca-'+v.uso);
     registraUso('strumento', v.uso);
     return true;
   }
@@ -948,7 +964,7 @@ function mostraVista(k){
   if(v.frame){
     const f=document.getElementById(v.frame);
     if(f && (v.quando==='ogni volta' || !f.getAttribute('src')))
-      f.src = v.src + (v.quando==='ogni volta' ? '?'+Date.now() : '');
+      f.src = conVersione(v.src, v.quando==='ogni volta');
   }
   const n=document.getElementById(v.vista); if(n) n.style.display='block';
   registraUso('strumento', v.uso);
