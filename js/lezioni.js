@@ -1528,6 +1528,244 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Filosofia antica · 7 — Aristotele: logica e metafisica': {
+  mappa: {
+    n:'Aristotele', d:'Stagira 384 – Calcide 322 a.C.: il sapere diventa un sistema',
+    f:[
+      {r:'comincia con', n:'Una vita in tre tempi', d:'l\'Accademia, la corte, la scuola',
+       f:[
+         {r:'entra a', n:'Vent\'anni nell\'Accademia', d:'ci resta fino alla morte di Platone',
+          f:[{piu:true, r:'dove lo chiamavano', n:'La mente della scuola', d:'e anche «il lettore», perché studiava sui libri'}]},
+         {r:'diventa', n:'Precettore di Alessandro', d:'a Pella, per tre anni: il ragazzo ha tredici anni'},
+         {r:'fonda', n:'Il Liceo', d:'nel 335, ad Atene: una scuola con biblioteca e collezioni',
+          f:[{r:'i suoi allievi', n:'Peripatetici', d:'dal portico coperto in cui si passeggiava discutendo'},
+             {piu:true, r:'raccoglie', n:'Centocinquantotto costituzioni', d:'la prima ricerca comparata della storia'}]},
+         {r:'scrive', n:'Due tipi di opere', d:'e ci sono arrivate quelle sbagliate',
+          f:[{r:'gli', n:'Essoterici', d:'dialoghi pubblici, elegantissimi: tutti perduti'},
+             {r:'gli', n:'Esoterici', d:'appunti per le lezioni interne: sono quelli che leggiamo'},
+             {piu:true, r:'ordinati da', n:'Andronico di Rodi', d:'nel I secolo a.C., tre secoli dopo la morte'}]},
+         {r:'muore in fuga', n:'Perché Atene non pecchi due volte', d:'accusato di empietà dopo la morte di Alessandro'}
+       ]},
+
+      {r:'si stacca da', n:'Il maestro', d:'«amico Platone, ma più amica la verità»',
+       f:[
+         {r:'obietta', n:'Le Idee sono inutili doppioni', d:'raddoppiano le cose da spiegare invece di spiegarle'},
+         {r:'obietta', n:'Non spiegano il movimento', d:'sono immobili: come farebbero a far muovere qualcosa?'},
+         {r:'riprende', n:'L\'argomento del terzo uomo', d:'lo stesso che Platone aveva scritto contro sé stesso'},
+         {r:'e conclude', n:'L\'universale sta nelle cose', d:'non in un altro mondo: è la forma di questo cavallo qui',
+          f:[{piu:true, r:'formula', n:'Non esiste l\'uomo, esistono gli uomini', d:'e l\'uomo è ciò che tutti hanno in comune'}]},
+         {r:'ma conserva', n:'La domanda «che cos\'è»', d:'cambia la risposta, non il problema'}
+       ]},
+
+      {r:'ordina', n:'Tutto il sapere', d:'per la prima volta le scienze hanno un posto ciascuna',
+       f:[
+         {r:'le', n:'Teoretiche', d:'cercano il vero per sé stesso: sono le più alte',
+          f:[{r:'la', n:'Fisica', d:'l\'essere mobile e separato'},
+             {r:'la', n:'Matematica', d:'l\'essere immobile e non separato'},
+             {r:'la', n:'Filosofia prima', d:'l\'essere immobile e separato: quella che chiamiamo metafisica'}]},
+         {r:'le', n:'Pratiche', d:'cercano il bene dell\'agire: etica, politica'},
+         {r:'le', n:'Poietiche', d:'cercano il bello del produrre: poetica, retorica'},
+         {piu:true, r:'il nome «metafisica»', n:'Lo fa un bibliotecario', d:'i libri che stanno dopo quelli sulla fisica'}
+       ]},
+
+      {r:'costruisce', n:'La logica', d:'l\'Organon: non una scienza, lo strumento di tutte',
+       f:[
+         {r:'parte dai', n:'Termini', d:'le parole singole: non sono né vere né false'},
+         {r:'classificati nelle', n:'Dieci categorie', d:'i modi fondamentali in cui si dice l\'essere',
+          f:[{r:'la prima', n:'Sostanza', d:'che cosa è: e regge tutte le altre'},
+             {r:'poi', n:'Quantità, qualità, relazione', d:'e luogo, tempo, posizione, avere, agire, subire'}]},
+         {r:'unisce i termini in', n:'Proposizioni', d:'qui nasce il vero e il falso: si dice qualcosa di qualcosa'},
+         {r:'unisce le proposizioni nel', n:'Sillogismo', d:'da due premesse segue necessariamente una conclusione',
+          f:[{r:'esempio', n:'Tutti gli uomini sono mortali', d:'Socrate è un uomo, dunque Socrate è mortale'},
+             {r:'organizzato in', n:'Figure e modi', d:'e solo alcuni sono validi: è la prima teoria formale della storia'},
+             {piu:true, r:'vale la forma', n:'Non il contenuto', d:'ed è la scoperta: un ragionamento si controlla senza sapere di che parla'}]},
+         {r:'ma i principi', n:'Non si dimostrano', d:'o si andrebbe all\'infinito: si colgono per intuizione',
+          f:[{r:'il primo è', n:'Il principio di non contraddizione', d:'la stessa cosa non può essere e non essere, nello stesso senso',
+              f:[{r:'si difende con', n:'La confutazione', d:'chi lo nega, per negarlo, deve parlare — e parlando lo usa'},
+                 {piu:true, r:'in', n:'Metafisica IV 4, 1006a'}]}]},
+         {r:'e per definire usa', n:'Genere prossimo e differenza specifica', d:'l\'uomo è animale (genere) razionale (differenza)'}
+       ]},
+
+      {r:'apre', n:'L\'essere si dice in molti modi', d:'la frase che rompe Parmenide senza ucciderlo',
+       f:[
+         {r:'come', n:'Sostanza e accidenti', d:'ciò che sta da sé, e ciò che sta in altro'},
+         {r:'come', n:'Vero e falso', d:'l\'essere del giudizio'},
+         {r:'come', n:'Potenza e atto', d:'il seme è albero in potenza, la quercia in atto'},
+         {r:'come', n:'Le figure delle categorie', d:'tanti sensi quante sono le categorie'},
+         {r:'quindi non è', n:'Un genere unico', d:'ma nemmeno un puro nome: i sensi si tengono per analogia',
+          f:[{piu:true, r:'si dice', n:'Per riferimento a uno', d:'come «sano» si dice del corpo, del clima, del colorito'}]}
+       ]},
+
+      {r:'analizza', n:'La sostanza', d:'che cos\'è che fa di questa cosa questa cosa',
+       f:[
+         {r:'è', n:'Il sinolo', d:'l\'insieme concreto di materia e forma: questo cavallo, quest\'uomo'},
+         {r:'la', n:'Materia', d:'ciò di cui è fatto: pura possibilità, da sola non è niente'},
+         {r:'la', n:'Forma', d:'ciò che lo rende quello che è: l\'essenza, e conta più della materia',
+          f:[{piu:true, r:'formula difficile', n:'Il che cosa era essere', d:'to ti en einai: la sostanza in senso pieno'}]},
+         {r:'e il divenire è', n:'Passaggio dalla potenza all\'atto', d:'niente nasce dal nulla: nasce da ciò che poteva diventarlo',
+          f:[{r:'risolve', n:'Il problema di Parmenide', d:'ciò che non è ancora non è nulla: è potenza'},
+             {piu:true, r:'e l\'atto', n:'Viene prima della potenza', d:'ci vuole un albero per fare un seme'}]}
+       ]},
+
+      {r:'spiega con', n:'Le quattro cause', d:'per sapere una cosa bisogna saperne il perché',
+       f:[
+         {r:'la', n:'Causa materiale', d:'di che cosa è fatta: il bronzo della statua'},
+         {r:'la', n:'Causa formale', d:'che cosa è: la figura che il bronzo prende'},
+         {r:'la', n:'Causa efficiente', d:'chi l\'ha fatta: lo scultore'},
+         {r:'la', n:'Causa finale', d:'per che cosa: lo scopo, ed è la più importante',
+          f:[{r:'perché', n:'La natura non fa nulla invano', d:'ogni essere tende a realizzare la propria forma'},
+             {r:'esempio', n:'I denti davanti sono aguzzi', d:'per tagliare: e i molari piatti per macinare'},
+             {piu:true, r:'e contro il caso', n:'Empedocle non spiega la regolarità', d:'se fosse caso, non accadrebbe quasi sempre allo stesso modo'}]}
+       ]},
+
+      {r:'culmina nel', n:'Motore immobile', d:'la filosofia prima diventa teologia',
+       f:[
+         {r:'serve perché', n:'Il movimento è eterno', d:'e una catena infinita di motori mossi non spiega niente'},
+         {r:'è', n:'Atto puro', d:'nessuna materia, nessuna potenza: non può diventare altro'},
+         {r:'muove', n:'Come l\'amato muove l\'amante', d:'senza muoversi: attira, non spinge'},
+         {r:'ed è', n:'Pensiero di pensiero', d:'pensa sé stesso, perché non può pensare cose inferiori',
+          f:[{piu:true, r:'quindi', n:'Non conosce il mondo', d:'e non lo ha creato: è il punto su cui si romperanno i teologi'}]},
+         {piu:true, r:'e ne servono', n:'Cinquantacinque', d:'uno per ogni sfera celeste, secondo l\'astronomia di Eudosso'}
+       ]},
+
+      {r:'lascia', n:'Che cosa resta', d:'duemila anni di scienza, e poi una rottura',
+       f:[
+         {r:'diventa', n:'Il Filosofo', d:'nel Medioevo si dice così, senza aggiungere il nome'},
+         {r:'lo riprende', n:'Tommaso d\'Aquino', d:'che lo battezza: atto puro diventa il Dio creatore'},
+         {r:'la logica resta', n:'Intatta fino all\'Ottocento', d:'Kant scriverà che dopo di lui non ha fatto un passo'},
+         {r:'lo rovescia', n:'Galileo', d:'non confuta il fine: smette di chiederlo',
+          f:[{piu:true, r:'e con lui', n:'Il come al posto del perché', d:'si misura ciò che accade, non si cerca a che cosa serva'}]},
+         {r:'ma sopravvive in', n:'Biologia', d:'«a che cosa serve il cuore» è ancora la domanda che si fa'}
+       ]}
+    ],
+    incroci:[
+      {da:'Passaggio dalla potenza all\'atto', a:'L\'essere si dice in molti modi', r:'è possibile solo perché',
+       perche:'Parmenide aveva bloccato il divenire dicendo che l\'essere non può venire dal non essere. Aristotele scioglie il nodo distinguendo i sensi: ciò che non è ancora non è nulla, è potenza — un modo di essere, non un buco.'},
+      {da:'L\'universale sta nelle cose', a:'Le Idee sono inutili doppioni', r:'è la conseguenza di',
+       perche:'Se la forma dell\'uomo sta in ciascun uomo e non in un cielo separato, non serve più un secondo mondo. Il problema che Platone risolveva con la partecipazione sparisce perché sparisce la distanza.'},
+      {da:'Il principio di non contraddizione', a:'Il maestro', r:'compie contro i sofisti ciò che non riuscì a',
+       perche:'Platone aveva salvato il falso col diverso, ma non aveva una legge prima. Aristotele la trova e la difende con una mossa nuova: non la dimostra — mostra che chi la nega, per negarla, deve parlare, e parlando la usa.'},
+      {da:'Non il contenuto', a:'Genere prossimo e differenza specifica', r:'convive con',
+       perche:'La logica separa la validità dal contenuto, ma la definizione ha bisogno di sapere di che cosa parla. Le due cose stanno nello stesso Organon, ed è la ragione per cui Aristotele non è né un formalista né un empirista.'},
+      {da:'Causa finale', a:'Galileo', r:'è esattamente ciò che rifiuta',
+       perche:'Galileo non dimostra che la natura non ha scopi: smette di chiederlo, e misura. La scienza moderna nasce restringendo le domande ammesse — non trovando risposte migliori alle stesse domande.'},
+      {da:'La natura non fa nulla invano', a:'Biologia', r:'sopravvive in',
+       perche:'La fisica ha buttato il finalismo, la biologia no: «a che cosa serve il cuore» è una domanda che si fa ancora tutti i giorni. Darwin le darà un meccanismo — la selezione — senza restituirle uno scopo.'},
+      {da:'Atto puro', a:'Non conosce il mondo', r:'implica scandalosamente che',
+       perche:'Un pensiero che pensa sé stesso non può abbassarsi a pensare le cose che cambiano. Il dio di Aristotele non ha creato nulla e non sa che esistiamo: sarà il punto su cui Tommaso dovrà lavorare di più per battezzarlo.'},
+      {da:'Come l\'amato muove l\'amante', a:'Il movimento è eterno', r:'spiega senza toccarlo',
+       perche:'Se il primo motore spingesse, sarebbe a sua volta mosso e la catena non finirebbe. Ma ciò che attira muove restando fermo — è l\'unica soluzione che tiene insieme un mondo eterno e un principio immobile.'},
+      {da:'Esoterici', a:'Il Filosofo', r:'rende paradossale il titolo di',
+       perche:'Il Medioevo lo chiama «il Filosofo» leggendo appunti di lezione mai destinati alla pubblicazione, mentre i dialoghi che aveva scritto per il pubblico — lodati per lo stile — sono andati tutti perduti.'},
+      {da:'Sostanza', a:'Il sinolo', r:'trova la sua risposta in',
+       perche:'La prima delle categorie chiede «che cosa è». La risposta non è la materia, che da sola non è niente, né la forma astratta: è questo composto concreto qui, questo cavallo. L\'individuo torna al centro dopo Platone.'},
+      {da:'Filosofia prima', a:'Motore immobile', r:'si conclude nel',
+       perche:'La scienza dell\'essere immobile e separato non poteva restare vuota: se esiste un essere così, la metafisica arriva a parlarne. È il motivo per cui lo stesso libro è insieme ontologia e teologia.'},
+      {da:'Il che cosa era essere', a:'Forma', r:'è il nome tecnico di',
+       perche:'La formula più oscura di Aristotele — to ti en einai — indica ciò che una cosa era destinata a essere, la sua essenza colta al passato. Non è un vezzo: dice che l\'essenza precede l\'individuo pur stando dentro di lui.'}
+    ]
+  },
+  provocazione: {
+    titolo:'Perché piove?',
+    durata:'55 minuti',
+    domandaMadre:'Quando è lecito chiedere «a che cosa serve», e quando no?',
+    perche:'La classe deride il finalismo di Aristotele — la pioggia che cade per far crescere il grano — e dieci minuti dopo scopre di usarlo tutti i giorni, perché «a che cosa serve il cuore» è la domanda che regge la biologia. Il colpo di scena è che Galileo non ha confutato il fine: ha smesso di chiederlo. Da lì l\'ora arriva a una tesi che vale per tutto l\'anno — la scienza moderna nasce restringendo le domande ammesse, non trovando risposte migliori alle stesse domande — e finisce con la domanda che gli studenti si sentono fare di continuo senza mai analizzarla: e tu, a che cosa servi?',
+    occorrente:'Niente.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'Due domande. Rispondete a tutte e due.\n\n1. Perché cade un sasso?\n\n2. Perché il cuore batte?\n\nAvete usato la stessa parola — «perché» —\ne avete dato due risposte di tipo completamente diverso.\n\nUna dice come funziona.\nL\'altra dice a che cosa serve.\n\nQuale delle due è una risposta scientifica?',
+       parlato:'Fai rispondere davvero, a voce, prima di mostrare la seconda parte della schermata. Al primo «perché» rispondono con la gravità; al secondo, quasi tutti, con «per pompare il sangue».\n\nFai notare lo scarto: nessuno ha detto «il cuore batte perché il nodo senoatriale genera un impulso elettrico», che pure sarebbe la risposta esatta nello stesso senso della prima. E nessuno ha detto «il sasso cade per raggiungere il suo posto», che sarebbe la risposta esatta nello stesso senso della seconda.\n\nAvete due «perché» in testa e li usate senza accorgervene, scegliendo di volta in volta. La domanda dell\'ora è con quale criterio scegliete.',
+       seDicono:[
+         {loro:'«Il secondo perché non è scientifico, è solo un modo di dire.»',
+          tu:'Allora riscrivi «il cuore serve a pompare il sangue» senza usare né "serve" né "per": senza dire a che cosa è destinato. Provaci davvero. Chi ci riesce di solito produce una frase che nessun libro di biologia scriverebbe.'},
+         {loro:'«Dipende: il cuore l\'ha fatto l\'evoluzione, il sasso no.»',
+          tu:'Ottima, e ci arriveremo. Ma nota che l\'evoluzione non ha intenzioni: non ha fatto il cuore "per" qualcosa. Eppure continui a dire "serve a". Da dove viene quel "per", se nessuno lo ha messo lì?'}
+       ]},
+
+      {minuti:'8–17', et:'Lo schieramento',
+       schermo:'Chiedere «a che cosa serve» in natura:',
+       opzioni:['non è mai una domanda seria', 'a volte è la domanda giusta'],
+       parlato:'Conta e scrivi i numeri. In genere vince nettamente il primo gruppo: sono cresciuti sapendo che la natura non ha scopi, ed è la posizione che considerano moderna.\n\nAllora metti in difficoltà proprio loro, con tre casi in fila, chiedendo ogni volta se la domanda è seria:\n\n— a che cosa serve la pioggia?\n— a che cosa servono le ciglia?\n— a che cosa serve la febbre?\n\nQuasi tutti scartano il primo, accettano il secondo e si dividono sul terzo. Il fatto che ci sia una linea, e che nessuno sappia dire dove passa, è il risultato di questo tempo.',
+       seDicono:[
+         {loro:'«Le ciglia servono a proteggere l\'occhio: quello è un fatto.»',
+          tu:'È un fatto che lo facciano. Ma "servire" aggiunge qualcosa: dice che è quello il motivo per cui ci sono. Chi ha stabilito il motivo? Stai attribuendo un\'intenzione a qualcosa che, per tua stessa ammissione, non ne ha.'},
+         {loro:'«È solo un modo comodo di parlare, tutti capiscono.»',
+          tu:'Anche a me sembra comodo. Ma un modo di parlare che nessuno riesce a tradurre in un altro modo di parlare non è comodo: è indispensabile. E se è indispensabile, qualcosa vorrà pur dire.'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'Aristotele dice che per sapere una cosa\nbisogna conoscerne quattro perché.\n\nUna statua di bronzo:\n\nDI CHE COSA è fatta — il bronzo.\nCHE COSA è — la figura.\nCHI l\'ha fatta — lo scultore.\nPER CHE COSA — lo scopo.\n\nE la quarta, dice, è la più importante di tutte.\n\nPerché in natura ogni cosa tende\na diventare pienamente quello che è.\nLa ghianda tende alla quercia.\nL\'occhio è fatto per vedere.\n\n«La natura non fa nulla invano.»',
+       parlato:'Presenta le quattro cause con la statua, che è il suo esempio, e falle applicare subito a un oggetto della classe: una sedia, uno zaino. Funziona benissimo sugli artefatti, ed è proprio questo il punto debole che vedranno dopo.\n\nPoi passa alla natura, dove la quarta causa diventa problematica, e dai l\'esempio che li fa ridere: la pioggia cade per far crescere il grano.\n\nLascia che ridano. Poi la contromossa, che è la parte seria dell\'ora: leggi l\'obiezione che Aristotele si fa da solo. Se qualcuno dicesse che la pioggia cade per necessità, e che il grano cresce per caso? Lui risponde: se fosse caso, non accadrebbe quasi sempre. La regolarità è ciò che il caso non spiega.\n\nÈ un ragionamento serio, ed è sbagliato — ma per capire perché è sbagliato bisogna aspettare Darwin, che arriva ventidue secoli dopo. Per tutto quel tempo è la spiegazione migliore disponibile.',
+       seDicono:[
+         {loro:'«Ma è ovvio che si sbagliava, basta il buon senso.»',
+          tu:'Il buon senso di oggi. Prova a spiegare, senza sapere nulla di selezione naturale, perché gli occhi capitano quasi sempre sulla faccia e quasi mai sui gomiti. Se rispondi "per caso", devi spiegare la regolarità; se rispondi "perché servono lì", sei finalista.'},
+         {loro:'«Le quattro cause funzionano solo sugli oggetti costruiti.»',
+          tu:'Questa è l\'obiezione giusta, ed è quella che ci metterà duemila anni a diventare senso comune. Aristotele estende alla natura uno schema preso dall\'artigianato — e per lui è naturale, perché la natura per un greco è ciò che ha in sé il proprio principio, come l\'artigiano ha in sé il progetto.'}
+       ]},
+
+      {minuti:'28–38', et:'Il testo',
+       schermo:'«Perché non dovrebbe essere così anche in natura,\nche i denti nascano per necessità —\nquelli davanti aguzzi, adatti a tagliare,\ni molari larghi e utili a macinare —\nnon perché siano nati per questo,\nma solo per coincidenza?\n\nE lo stesso per tutte le altre parti\nin cui sembra esserci uno scopo?»\n\nAristotele si fa da solo l\'obiezione.\nE risponde:\n\n«Queste cose accadono sempre o per lo più,\nmentre nulla di ciò che è dovuto al caso\naccade sempre o per lo più.»',
+       testo:{fonte:'Aristotele, Fisica II 8, 198b-199a (IV secolo a.C.)',
+              glossa:'Nota la struttura: espone l\'ipotesi avversaria — quella di Empedocle, che è già una teoria della selezione — e la respinge con un argomento statistico. Ha ragione sul metodo e torto sulla conclusione: mancava solo l\'idea che il caso, filtrato dalla sopravvivenza per milioni di generazioni, produca proprio quella regolarità.'},
+       parlato:'Fai vedere che l\'ipotesi rifiutata è, in embrione, il darwinismo: Empedocle immaginava membra sparse che si combinavano a caso, e sopravviveva solo ciò che risultava adatto. Aristotele la conosce, la scrive e la scarta.\n\nPoi la domanda da porre alla classe: che cosa gli mancava? Non l\'intelligenza e non l\'onestà. Gli mancava il tempo profondo — l\'idea che ci siano stati milioni di anni e miliardi di tentativi. Con l\'orizzonte temporale di un greco, il caso davvero non può produrre un occhio.\n\nÈ una lezione sul modo in cui si sbaglia: non per stupidità, ma perché manca un pezzo di mondo che non si può ancora vedere.',
+       seDicono:[
+         {loro:'«Quindi Empedocle aveva ragione e Aristotele torto?»',
+          tu:'Empedocle aveva un\'intuizione senza meccanismo: nessuna eredità, nessuna variazione, nessuna scala di tempo. Avere ragione per caso non è avere ragione. Aristotele aveva torto con un argomento; è una posizione più utile, perché si può confutare.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'Galileo, duemila anni dopo, non confuta il finalismo.\n\nFa una cosa diversa: smette di chiederlo.\n\nNon chiede a che cosa serva la caduta dei gravi.\nMisura in quanto tempo cadono.\n\nLa scienza moderna non nasce\nda risposte migliori alle stesse domande.\n\nNasce restringendo le domande ammesse.\n\nE però. Aprite un libro di biologia:\n«il cuore serve a pompare il sangue»,\n«i reni servono a filtrare».\n\nLa domanda che la fisica ha cacciato\nnella scienza della vita non se n\'è mai andata.',
+       parlato:'Questo tempo va dato in due movimenti, e il secondo deve arrivare quando pensano che il discorso sia chiuso.\n\nPrimo: la vittoria di Galileo non è una confutazione. È una scelta di campo su che cosa sia lecito domandare, e funziona — in tre secoli produce più conoscenza di duemila anni di cause finali.\n\nSecondo, quando sono già dalla parte di Galileo: la biologia non ha mai smesso. Nessun biologo scrive «il cuore batte e accade che il sangue circoli». Scrive «serve a». E la ragione è che Darwin ha dato al «serve a» un meccanismo — la selezione — senza restituirgli uno scopo: la funzione è ciò per cui quel tratto è stato conservato, non ciò per cui è stato progettato.\n\nÈ il punto più difficile dell\'ora, e vale la pena dirlo lentamente: il finalismo è stato smontato come spiegazione e conservato come descrizione.',
+       seDicono:[
+         {loro:'«Allora i biologi parlano male.»',
+          tu:'Ci hanno provato a parlare diversamente, e le frasi diventano illeggibili. Quando un linguaggio non si lascia eliminare, di solito è perché sta afferrando qualcosa di reale: qui il fatto che certe strutture esistono a causa di ciò che fanno. Che è una forma di causa finale addomesticata.'},
+         {loro:'«E in fisica il perché non serve proprio mai?»',
+          tu:'Prova con il principio di minima azione: la luce prende il percorso che minimizza il tempo. Detto così sembra che scelga. I fisici lo riformulano per non dirlo — ma la formulazione finalistica funziona, ed è più antica.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'Torniamo alle due domande dell\'inizio.\n\nAdesso sapete che «perché» ne contiene due,\ne che una parte della storia della scienza\nè la storia di quando è lecito usare il secondo.\n\nUltima domanda, e non è di fisica:\n\nvi hanno chiesto mille volte a che cosa servite.\nA che cosa serve studiare, a che cosa serve la filosofia,\na che cosa servite voi.\n\nÈ una domanda legittima?\nE se sì — chi ha stabilito il fine?',
+       parlato:'Chiudi lasciando la domanda in aria. Non è retorica: è la stessa struttura di tutta l\'ora, applicata a loro.\n\nSe qualcuno prova a rispondere, la mossa utile è chiedergli chi ha fissato quel fine. Se lo ha fissato lui, è un progetto e non una funzione; se lo ha fissato qualcun altro, siamo in una società che tratta le persone come denti e reni.\n\nDi\' che Aristotele una risposta ce l\'ha, e che è la lezione dopo: il fine dell\'uomo è realizzare ciò che l\'uomo è, e siccome l\'uomo è l\'animale che ragiona, la vita riuscita è quella in cui si ragiona bene. Non è un fine assegnato da fuori: è la forma che uno ha dentro.\n\nPoi fermati lì.',
+       seDicono:[
+         {loro:'«Quindi la filosofia non serve a niente?»',
+          tu:'Dipende da quale dei due "perché" stai usando. Se chiedi come funziona, la filosofia ti fa vedere che stavi usando due domande diverse con la stessa parola — e questo ti è servito. Se chiedi a che cosa è destinata, sei tu a doverlo decidere: è l\'unica cosa che nessun libro può stabilire al posto tuo.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'Il sillogismo, e perché è una scoperta',
+       corpo:'Tutti gli uomini sono mortali. Socrate è un uomo. Dunque Socrate è mortale.\n\nSembra banale. La scoperta però non sta nella conclusione: sta nel fatto che si può controllare se il ragionamento è valido senza sapere niente di uomini né di Socrate.\n\nTutti gli A sono B. C è un A. Dunque C è un B.\n\nFunziona con qualunque cosa ci si metta dentro — ed è la prima volta nella storia che qualcuno separa la forma di un ragionamento dal suo contenuto.',
+       chiedi:'Provate a costruirne uno con premesse false e conclusione vera, e uno con premesse vere e conclusione falsa. Il secondo non riuscirà: perché? E che cosa vi dice, questo, sulla differenza fra «valido» e «vero»?'},
+      {titolo:'Chi nega il principio non può parlare',
+       corpo:'Il principio di non contraddizione — la stessa cosa non può essere e non essere allo stesso tempo e nello stesso senso — non si può dimostrare: ogni dimostrazione lo userebbe.\n\nAristotele allora inventa un\'altra mossa. Chiede all\'avversario semplicemente di dire qualcosa: qualunque cosa, purché significhi qualcosa per lui e per gli altri.\n\nNel momento in cui l\'altro parla, ha già ammesso che le sue parole significano questo e non il contrario — cioè ha già usato il principio che voleva negare. Se invece non parla, dice Aristotele, «è ridicolo cercare un discorso con chi non ha discorso: costui è simile a una pianta».',
+       chiedi:'Non è una dimostrazione: è mostrare che negare il principio è impraticabile. Vale come prova? E si può usare la stessa mossa contro qualunque scettico, o solo contro questo?'},
+      {titolo:'Un dio che non sa che esistiamo',
+       corpo:'Il motore immobile di Aristotele è atto puro: non ha materia, non ha possibilità di essere altro da ciò che è. Muove tutto senza muoversi, come l\'amato muove l\'amante — attirando, non spingendo.\n\nE poiché il pensiero è tanto nobile quanto il suo oggetto, e nulla è più nobile di lui, può pensare soltanto sé stesso: è «pensiero di pensiero».\n\nQuindi non ha creato il mondo, non lo governa, non lo conosce, non ascolta nessuno.',
+       chiedi:'Nel Duecento, Tommaso d\'Aquino farà di questo dio il Dio cristiano. Quali di queste caratteristiche deve cambiargli per riuscirci — e che cosa resta di Aristotele dopo averle cambiate?'}
+    ],
+    testi:[
+      {fonte:'Aristotele, Metafisica IV 4, 1006a — la confutazione',
+       corpo:'«Alcuni pretendono che si dimostri anche questo, ma lo fanno per mancanza di cultura: è mancanza di cultura non sapere di quali cose si deve cercare dimostrazione e di quali no. […] Ma si può dimostrare per confutazione, purché l\'avversario dica qualcosa.»',
+       glossa:'Due idee in poche righe, e la seconda è la più preziosa: sapere di quali cose si deve cercare dimostrazione fa parte dell\'essere colti. Non tutto si dimostra, e pretenderlo non è rigore — è non aver capito che cos\'è una dimostrazione.'},
+      {fonte:'Aristotele, Metafisica XII 7, 1072b — il motore immobile',
+       corpo:'«Muove come ciò che è amato; e ciò che è mosso muove tutto il resto. […] Da un tale principio dipendono il cielo e la natura. E la sua vita è come la migliore che a noi tocca per breve tempo.»',
+       glossa:'L\'ultima frase è la più umana del libro: la vita del dio è quella che noi conosciamo solo a tratti, nei momenti in cui pensiamo davvero. La teologia di Aristotele non promette un\'altra vita — descrive la nostra, portata al massimo.'},
+      {fonte:'Aristotele, Categorie 5, 2a — la sostanza prima',
+       corpo:'«Sostanza, detta in senso principale, primo e soprattutto, è ciò che non si dice di un soggetto né è in un soggetto: per esempio, un certo uomo o un certo cavallo.»',
+       glossa:'È la frase che rovescia Platone in una riga. Ciò che esiste in senso pieno non è l\'Idea di uomo: è quest\'uomo qui, che si può indicare col dito. L\'universale c\'è, ma è secondo — sta nell\'individuo, non sopra di lui.'}
+    ],
+    compito:'Mezza pagina. Scegliete un oggetto qualunque che avete in casa e descrivetelo con le quattro cause: di che cosa è fatto, che cosa è, chi l\'ha fatto, per che cosa. Poi fate la stessa cosa con un essere vivente — un albero, un gatto, voi — e segnate esattamente il punto in cui lo schema comincia a scricchiolare.',
+    fonti:[
+      'Aristotele, Fisica II 3 e II 7-9 (le quattro cause e il finalismo)',
+      'Aristotele, Metafisica I 6 e I 9 (critica alle Idee), IV 1-4 (l\'essere e il principio), VII 1-17 (la sostanza), XII 6-9 (il motore immobile)',
+      'Aristotele, Categorie 1-5; Analitici primi I 1-7 (il sillogismo); Analitici secondi I 1-3 (i principi)',
+      'Aristotele, Etica Nicomachea I 7 — la funzione propria dell\'uomo',
+      'Diogene Laerzio, Vite V 1-35 — la vita, il testamento, il catalogo delle opere',
+      'W.D. Ross, Aristotele; E. Berti, Profilo di Aristotele'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',
