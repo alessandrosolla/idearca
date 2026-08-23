@@ -33,15 +33,59 @@ select:focus{border-color:#2d5a27}
 .carta .q{font-size:.78rem;color:#8a9e87;margin-bottom:.9rem}
 .carta p{font-size:.86rem;line-height:1.65;color:#5a6b58;margin-bottom:1rem}
 
-/* ---- la preparazione: i cinque tempi con le note ---- */
-.tempo{border-left:3px solid rgba(45,90,39,.22);padding:.1rem 0 .9rem 1rem;margin-bottom:.2rem}
-.tempo .n{font-size:.58rem;letter-spacing:.16em;text-transform:uppercase;color:#9a7c2e;font-weight:700}
-.tempo .t{font-size:.9rem;line-height:1.6;margin:.25rem 0;white-space:pre-line}
-.tempo .f{font-size:.75rem;color:#8a9e87;font-style:italic}
-.tempo .nota{font-size:.8rem;line-height:1.6;color:#5a6b58;background:#f3f6f1;
-  border-radius:8px;padding:.5rem .7rem;margin-top:.45rem}
-.tempo .nota b{color:#2d5a27;font-weight:600;font-size:.62rem;letter-spacing:.12em;
+/* ---- la preparazione ----
+   Quattro cose diverse dentro ogni tempo, e devono distinguersi
+   a colpo d'occhio: si guardano in momenti diversi dell'ora. Lo
+   schermo mentre proietti, il parlato mentre parli, la lavagna
+   mentre scrivi, le repliche quando ti rispondono e non sai che
+   dire — ed è quello il momento in cui una scaletta serve. */
+.pannello{border:1px solid rgba(45,90,39,.14);border-radius:14px;background:#fff;
+  padding:1rem 1.2rem;margin-bottom:.7rem}
+.pannello .lungo{font-size:.9rem;line-height:1.7;color:#3d4e3b}
+.pannello .occ{font-size:.82rem;color:#5a6b58;margin-top:.6rem}
+.pannello .occ b{font-size:.6rem;letter-spacing:.13em;text-transform:uppercase;
+  color:#9a7c2e;font-weight:700;margin-right:.4rem}
+.pannello h4{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.2rem;
+  font-weight:500;margin-bottom:.35rem}
+.pannello .corpo{font-size:.88rem;line-height:1.7;white-space:pre-line;color:#3d4e3b}
+.pannello .f{font-size:.75rem;color:#8a9e87;font-style:italic;margin-top:.5rem}
+.pannello.citazione .corpo{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.1rem;
+  line-height:1.55;border-left:3px solid rgba(154,124,46,.4);padding-left:.9rem}
+.pannello .chiedi{font-size:.86rem;line-height:1.6;color:#2d5a27;margin-top:.6rem;
+  background:#f3f6f1;border-radius:8px;padding:.5rem .7rem}
+.pannello .chiedi b{font-size:.6rem;letter-spacing:.13em;text-transform:uppercase;
+  display:block;margin-bottom:.15rem;color:#9a7c2e}
+.pannello .nota{font-size:.82rem;line-height:1.6;color:#5a6b58;background:#faf8f3;
+  border-radius:8px;padding:.5rem .7rem;margin-top:.55rem}
+.pannello .nota b{color:#9a7c2e;font-weight:700;font-size:.6rem;letter-spacing:.13em;
   text-transform:uppercase;display:block;margin-bottom:.15rem}
+ul.fonti{margin:0 0 1rem 1.1rem;font-size:.82rem;line-height:1.75;color:#5a6b58}
+
+.tempo{border:1px solid rgba(45,90,39,.14);border-radius:14px;background:#fff;
+  padding:.9rem 1.1rem 1rem;margin-bottom:.7rem}
+.tempo .n{font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;color:#9a7c2e;
+  font-weight:700;display:flex;align-items:center;gap:.55rem;margin-bottom:.6rem}
+.tempo .n .min{background:#2d5a27;color:#fff;border-radius:99px;padding:.16rem .55rem;
+  letter-spacing:.06em;font-variant-numeric:tabular-nums}
+.tempo .riq{border-left:3px solid rgba(45,90,39,.18);padding:.1rem 0 .1rem .8rem;margin-bottom:.7rem}
+.tempo .riq:last-child{margin-bottom:0}
+.tempo .riq > b{font-size:.58rem;letter-spacing:.14em;text-transform:uppercase;
+  font-weight:700;display:block;margin-bottom:.25rem;color:#8a9e87}
+.tempo .riq .t{font-size:.88rem;line-height:1.68;white-space:pre-line;color:#3d4e3b}
+.tempo .riq .f{font-size:.76rem;color:#8a9e87;font-style:italic;margin-top:.35rem}
+.tempo .schermo{border-left-color:#2d5a27}
+.tempo .schermo > b{color:#2d5a27}
+.tempo .schermo .t{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.12rem;line-height:1.45}
+.tempo .fonte{border-left-color:rgba(154,124,46,.55)}
+.tempo .fonte > b{color:#9a7c2e;font-style:italic;text-transform:none;letter-spacing:0;font-size:.78rem}
+.tempo .lavagna{border-left-color:rgba(45,90,39,.35)}
+.tempo .repliche{border-left-color:#c0453b}
+.tempo .repliche > b{color:#c0453b}
+.tempo .rep{margin-bottom:.55rem}
+.tempo .rep:last-child{margin-bottom:0}
+.tempo .rep .loro{font-size:.86rem;line-height:1.55;color:#8a5a55;font-style:italic}
+.tempo .rep .tu{font-size:.86rem;line-height:1.65;color:#3d4e3b;
+  border-left:2px solid rgba(45,90,39,.2);padding-left:.6rem;margin-top:.2rem}
 .vuoto{border:1px dashed rgba(45,90,39,.28);border-radius:12px;padding:2rem 1.4rem;
   text-align:center;color:#5a6b58;line-height:1.65;font-size:.9rem}
 
@@ -88,10 +132,11 @@ select:focus{border-color:#2d5a27}
    quadro d'insieme servono i nomi, non le spiegazioni — quelle
    le hai già dette aprendo i rami uno per uno. */
 .albero-dentro.compatto .nd{display:none}
-.albero-dentro.compatto .nodo{padding:.3rem .62rem;border-radius:8px}
-.albero-dentro.compatto .figli{gap:.3rem}
-.albero-dentro.compatto .ramo{gap:1.7rem}
-.albero-dentro.compatto .nodo.liv0 .nn{font-size:1.3rem}
+.albero-dentro.compatto .nodo{padding:.16rem .5rem;border-radius:7px}
+.albero-dentro.compatto .figli{gap:.16rem}
+.albero-dentro.compatto .ramo{gap:1.5rem}
+.albero-dentro.compatto .nodo .nn{line-height:1.14}
+.albero-dentro.compatto .nodo.liv0 .nn{font-size:1.25rem}
 
 /* ---- la provocazione ---- */
 .atto{max-width:min(48rem,86vw);text-align:left}
@@ -145,7 +190,7 @@ select:focus{border-color:#2d5a27}
   </div>
 </div>
 
-<script src="../js/lezioni.js?v=20260823a"></script>
+<script src="../js/lezioni.js?v=20260823c"></script>
 <script>
 /* ══════════════════════════════════════════════════════════
    Nessuna libreria, come tutto il resto del sito.
@@ -182,33 +227,89 @@ function scegli(){
   }
   const L = LEZIONI[corrente];
   const p = L.provocazione;
+  const tempi = tempiDi(p);
   c.innerHTML = `
     <div class="carte">
       <div class="carta">
         <h3>Lo schema</h3>
-        <div class="q">${contaNodi(L.albero)} nodi · si apre uno per volta</div>
+        <div class="q">${contaNodi(L.albero)} nodi · si apre un ramo per volta</div>
         <p>La struttura dell'argomento: che cosa dipende da che cosa. Con la freccia destra
         cresce un ramo alla volta, come lo disegneresti tu alla lavagna, ma leggibile dal fondo.</p>
         <button class="b pieno" onclick="apri('albero')">Proietta lo schema</button>
       </div>
       <div class="carta">
         <h3>${esc(p.titolo)}</h3>
-        <div class="q">provocazione · ${esc(p.durata||'un\'ora')} · ${p.atti.length} tempi</div>
-        <p>${esc(p.atti[0].testo.split('\n')[0])}</p>
+        <div class="q">provocazione · ${esc(p.durata||'un\'ora')} · ${tempi.length} tempi</div>
+        <p>${esc(p.domandaMadre || primaRiga(tempi[0]))}</p>
         <button class="b pieno" onclick="apri('provocazione')">Proietta la provocazione</button>
       </div>
     </div>
 
-    <div class="et">Come condurla — questo lo vedi solo tu</div>
-    ${p.atti.map((a,i)=>`
-      <div class="tempo">
-        <div class="n">${i+1}. ${esc(a.et)}</div>
-        <div class="t">${esc(a.testo)}</div>
-        ${a.opzioni ? '<div class="f">si schierano: ' + a.opzioni.map(esc).join('  ·  ') + '</div>' : ''}
-        ${a.fonte ? '<div class="f">' + esc(a.fonte) + '</div>' : ''}
-        ${a.nota ? '<div class="nota"><b>nota per te</b>' + esc(a.nota) + '</div>' : ''}
-      </div>`).join('')}`;
+    ${p.perche ? `<div class="et">A che cosa serve</div>
+      <div class="pannello"><p class="lungo">${esc(p.perche)}</p>
+      ${p.occorrente ? '<p class="occ"><b>occorrente</b> '+esc(p.occorrente)+'</p>' : ''}</div>` : ''}
+
+    <div class="et">L'ora, minuto per minuto — questo lo vedi solo tu</div>
+    ${p.tempi ? p.tempi.map((t,i)=>tempoDisteso(t,i)).join('') : vecchiaForma(p)}
+
+    ${p.testi && p.testi.length ? `<div class="et">I testi</div>` +
+      p.testi.map(t=>`<div class="pannello citazione">
+        <div class="corpo">${esc(t.corpo)}</div>
+        <div class="f">${esc(t.fonte)}</div>
+        ${t.glossa ? '<div class="nota"><b>che cosa farne</b>'+esc(t.glossa)+'</div>' : ''}
+      </div>`).join('') : ''}
+
+    ${p.riserve && p.riserve.length ? `<div class="et">Di riserva — se l'ora corre, o se si spegne</div>` +
+      p.riserve.map(r=>`<div class="pannello riserva">
+        <h4>${esc(r.titolo)}</h4>
+        <div class="corpo">${esc(r.corpo)}</div>
+        ${r.chiedi ? '<div class="chiedi"><b>chiedi</b>'+esc(r.chiedi)+'</div>' : ''}
+      </div>`).join('') : ''}
+
+    ${p.compito ? `<div class="et">Da fare per la prossima volta</div>
+      <div class="pannello"><p class="lungo">${esc(p.compito)}</p></div>` : ''}
+
+    ${p.fonti && p.fonti.length ? `<div class="et">Da dove viene</div>
+      <ul class="fonti">${p.fonti.map(f=>'<li>'+esc(f)+'</li>').join('')}</ul>` : ''}`;
 }
+
+/* La forma distesa di un tempo: quattro cose diverse, e vanno
+   distinte a colpo d'occhio perché si guardano in momenti
+   diversi — lo schermo mentre proietti, il parlato mentre
+   parli, la lavagna mentre scrivi, le repliche quando ti
+   rispondono e non sai che dire. */
+function tempoDisteso(t, i){
+  return `<div class="tempo">
+    <div class="n"><span class="min">${esc(t.minuti||'')}</span> ${i+1}. ${esc(t.et)}</div>
+    ${t.schermo ? '<div class="riq schermo"><b>si proietta</b><div class="t">'+esc(t.schermo)+'</div>'+
+      (t.opzioni ? '<div class="f">e si schierano: '+t.opzioni.map(esc).join('  ·  ')+'</div>' : '')+'</div>' : ''}
+    ${t.testo ? '<div class="riq fonte"><b>'+esc(t.testo.fonte)+'</b>'+
+      (t.testo.glossa ? '<div class="t">'+esc(t.testo.glossa)+'</div>' : '')+'</div>' : ''}
+    ${t.parlato ? '<div class="riq parlato"><b>che cosa dici</b><div class="t">'+esc(t.parlato)+'</div></div>' : ''}
+    ${t.lavagna ? '<div class="riq lavagna"><b>alla lavagna</b><div class="t">'+esc(t.lavagna)+'</div></div>' : ''}
+    ${t.seDicono && t.seDicono.length ? '<div class="riq repliche"><b>se ti rispondono</b>'+
+      t.seDicono.map(s=>'<div class="rep"><div class="loro">'+esc(s.loro)+'</div><div class="tu">'+esc(s.tu)+'</div></div>').join('')+
+      '</div>' : ''}
+  </div>`;
+}
+
+/* I capitoli scritti prima della forma distesa: si vedono lo
+   stesso, ma con scritto che sono ancora la versione corta. */
+function vecchiaForma(p){
+  return `<div class="vuoto" style="margin-bottom:1rem;text-align:left">
+      Questo capitolo è ancora nella <strong>forma breve</strong>: c'è l'ossatura dei cinque
+      tempi ma non il minutaggio, il parlato, la lavagna e le repliche. Da rifare.</div>` +
+    p.atti.map((a,i)=>`<div class="tempo">
+      <div class="n">${i+1}. ${esc(a.et)}</div>
+      <div class="riq schermo"><b>si proietta</b><div class="t">${esc(a.testo)}</div>
+        ${a.opzioni ? '<div class="f">si schierano: '+a.opzioni.map(esc).join('  ·  ')+'</div>' : ''}
+        ${a.fonte ? '<div class="f">'+esc(a.fonte)+'</div>' : ''}</div>
+      ${a.nota ? '<div class="riq parlato"><b>nota per te</b><div class="t">'+esc(a.nota)+'</div></div>' : ''}
+    </div>`).join('');
+}
+
+function tempiDi(p){ return p.tempi || p.atti || []; }
+function primaRiga(t){ return ((t && (t.schermo || t.testo)) || '').split('\n')[0]; }
 
 function contaNodi(n){ return 1 + (n.f||[]).reduce((s,x)=>s+contaNodi(x),0); }
 
@@ -243,7 +344,7 @@ function chiudi(){
    ──────────────────────────────────────────────────────── */
 function statiAlbero(){ return (LEZIONI[corrente].albero.f||[]).length + 3; }
 function quanti(){
-  return modo==='albero' ? statiAlbero() : LEZIONI[corrente].provocazione.atti.length;
+  return modo==='albero' ? statiAlbero() : tempiDi(LEZIONI[corrente].provocazione).length;
 }
 function avanti(){ if(passo < quanti()-1){ passo++; disegna(); } }
 function indietro(){ if(passo > 0){ passo--; disegna(); } }
@@ -275,14 +376,19 @@ function disegna(){
 
 /* ---------- la provocazione ---------- */
 function disegnaAtto(d){
-  const a = LEZIONI[corrente].provocazione.atti[passo];
+  const a = tempiDi(LEZIONI[corrente].provocazione)[passo];
+  /* Va sullo schermo soltanto `schermo` (o, nei capitoli ancora
+     brevi, `testo`). Il parlato, la lavagna e le repliche non
+     escono mai di qui: sono la parte che non deve leggere la
+     classe, e questa pagina è proiettata. */
+  const corpo = a.schermo || a.testo || '';
+  const fonte = a.testo && a.testo.fonte ? a.testo.fonte : a.fonte;
   d.innerHTML = `<div class="atto">
       <div class="n">${passo+1} · ${esc(a.et)}</div>
-      <div class="t">${esc(a.testo)}</div>
+      <div class="t">${esc(corpo)}</div>
       ${a.opzioni ? '<div class="opz">'+a.opzioni.map(o=>'<div>'+esc(o)+'</div>').join('')+'</div>' : ''}
-      ${a.fonte ? '<div class="f">'+esc(a.fonte)+'</div>' : ''}
+      ${fonte ? '<div class="f">'+esc(fonte)+'</div>' : ''}
     </div>`;
-  /* la nota per te non finisce mai qui: questa pagina è proiettata */
 }
 
 /* ---------- l'albero ---------- */
