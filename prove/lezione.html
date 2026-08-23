@@ -133,8 +133,12 @@ body.conRegia .w{padding-bottom:9rem}
   padding:.45rem .8rem;min-height:40px}
 .sipario .barra button:hover{border-color:#2d5a27}
 .sipario .barra button:disabled{opacity:.3}
+.sipario .barra{position:relative;z-index:2}
+/* La scena ritaglia: senza, trascinando la mappa i riquadri
+   finivano sopra la barra e si cliccava su di loro invece che sui
+   pulsanti. Il ritaglio risolve tutte e due le cose insieme. */
 .sipario .scena{flex:1;min-height:0;position:relative;display:flex;
-  align-items:center;justify-content:center}
+  align-items:center;justify-content:center;overflow:hidden;z-index:1}
 /* nella finestra da proiettare non c'è nessun comando: solo la classe */
 body.soloProiezione .w,body.soloProiezione .regia{display:none}
 body.soloProiezione .sipario{display:flex;padding:1.6rem 2.4rem}
@@ -189,8 +193,9 @@ body.soloProiezione .sipario .barra{display:none}
 /* Il secondo strato si riconosce: bordo piu' leggero e un filo di
    rientro, cosi' si vede a occhio che cosa e' struttura e che cosa
    e' approfondimento. */
-.nodo.piu{background:#fbfaf6;border-color:rgba(45,90,39,.16)}
-.nodo.piu .nn{font-size:.92rem;font-weight:400;color:#3d4e3b}
+.nodo.piu{background:#fdf8ee;border-color:rgba(154,124,46,.5)}
+.nodo.piu .nn{font-size:.92rem;font-weight:500;color:#6b5518}
+.nodo.piu .nd{color:#9a8557}
 .nodo.legato{box-shadow:0 0 0 3px rgba(154,124,46,.45)}
 .nodo.spento{opacity:.13}
 .nodo.acceso{box-shadow:0 0 0 3px rgba(154,124,46,.22)}
@@ -207,6 +212,25 @@ body.soloProiezione .sipario .barra{display:none}
 .atto .opz div{flex:1;min-width:12rem;background:#fff;border:1.5px solid rgba(45,90,39,.2);
   border-radius:12px;padding:.9rem 1.1rem;font-size:clamp(1rem,2.2vh,1.5rem);
   font-family:'Cormorant Garamond',Georgia,serif}
+/* un rimando per volta: due concetti e la frase che li lega */
+.rimando{max-width:min(64rem,92vw);text-align:center}
+.rimando .conta{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;
+  color:#9a7c2e;font-weight:700;margin-bottom:1.6rem}
+.rimando .coppia{display:flex;align-items:center;gap:clamp(.8rem,3vw,2.4rem);
+  justify-content:center;flex-wrap:wrap}
+.rimando .lato{flex:1;min-width:14rem;background:#fff;border:1.5px solid rgba(45,90,39,.22);
+  border-radius:16px;padding:1.1rem 1.3rem;text-align:left}
+.rimando .lato .area{font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;
+  color:#8a9e87;font-weight:700;margin-bottom:.4rem}
+.rimando .lato .nome{font-family:'Cormorant Garamond',Georgia,serif;
+  font-size:clamp(1.3rem,3.4vh,2.2rem);line-height:1.15}
+.rimando .lato .sotto{font-size:clamp(.85rem,1.7vh,1.05rem);color:#5a6b58;
+  line-height:1.45;margin-top:.35rem}
+.rimando .mezzo{flex:0 0 auto;display:flex;flex-direction:column;align-items:center;gap:.2rem}
+.rimando .mezzo span{font-size:clamp(.9rem,2vh,1.25rem);color:#9a7c2e;font-weight:600;
+  background:#fdf8ee;border-radius:99px;padding:.35rem .9rem}
+.rimando .mezzo em{font-style:normal;font-size:clamp(1.4rem,3vh,2rem);color:#9a7c2e}
+
 .passi{display:flex;gap:.35rem;align-items:center}
 .passo{width:26px;height:4px;border-radius:99px;background:rgba(45,90,39,.16)}
 .passo.on{background:#2d5a27}
@@ -256,7 +280,7 @@ body.soloProiezione .sipario .barra{display:none}
   </div>
 </div>
 
-<script src="../js/lezioni.js?v=20260824c"></script>
+<script src="../js/lezioni.js?v=20260824f"></script>
 <script>
 /* ══════════════════════════════════════════════════════════
    Nessuna libreria, come tutto il resto del sito.
@@ -299,7 +323,8 @@ let vista = {x:0, y:0, s:1};
    insieme quella che la rende illeggibile se stanno sempre accesi:
    dodici tratteggi che attraversano otto aree sono un groviglio.
    Si accendono quando servono — cioe' quando li si commenta. */
-let rimandi = false;
+let rimandi = false;   // si guardano uno per volta
+let passoPrima = 0;
 /* Il secondo strato: i concetti segnati `piu` restano nascosti
    finche' non li si chiede. Una mappa deve poter essere letta a
    colpo d'occhio e insieme scavata fino in fondo, e sono due cose
@@ -522,16 +547,16 @@ function chiudiProiezione(){
    l'area si apre in due volte, meta' rami per volta.
    ──────────────────────────────────────────────────────── */
 const SOGLIA_AREA = 12;
-function contaVisibili(x){
-  if(x.piu && !profondo) return 0;
-  return 1 + (x.f||[]).reduce((s,y)=>s+contaVisibili(y), 0);
+function contaBase(x){
+  if(x.piu) return 0;
+  return 1 + (x.f||[]).reduce((s,y)=>s+contaBase(y), 0);
 }
 function listaStati(){
   const M = mappaDi(LEZIONI[corrente]);
   const s = [{tipo:'titolo'}, {tipo:'aree'}];
   (M.f||[]).forEach((a,i)=>{
-    const quanti = contaVisibili(a);
-    const rami = (a.f||[]).filter(x=>!(x.piu && !profondo)).length;
+    const quanti = contaBase(a);
+    const rami = (a.f||[]).filter(x=>!x.piu).length;
     if(quanti > SOGLIA_AREA && rami >= 4){
       const meta = Math.ceil(rami/2);
       s.push({tipo:'area', i, da:0, a:meta, parte:'1 di 2'});
@@ -545,44 +570,46 @@ function listaStati(){
 }
 let stati = [];
 function statiMappa(){ return stati.length; }
-function acceso(id, si){
+function acceso(id, si, tinta){
   const b = document.getElementById(id);
   if(!b) return;
-  b.style.background = si ? '#2d5a27' : '#fff';
-  b.style.color      = si ? '#fff' : '#2d5a27';
+  b.style.background  = si ? (tinta||'#2d5a27') : '#fff';
+  b.style.color       = si ? '#fff' : '#2d5a27';
+  b.style.borderColor = si ? (tinta||'#2d5a27') : 'rgba(45,90,39,.2)';
 }
 /* I rimandi legano concetti che stanno in aree lontane: accesi
    mentre si guarda un angolo della mappa non si vedevano, perche'
    l'altro capo era fuori schermo — sembravano non funzionare.
    Adesso accenderli inquadra tutta la mappa, e i due capi di ogni
    rimando si illuminano, cosi' si trovano. */
+/* ── PERCHE' I RIMANDI NON SI CAPIVANO ────────────────────
+   Erano tratteggi tirati da un capo all'altro della mappa. Su una
+   mappa alta quattromila pixel il secondo capo e' quasi sempre
+   fuori schermo, e quello che si vede e' una linea che entra da
+   sopra e esce da sotto: non dice niente, e sporca il disegno.
+   Un rimando pero' e' una frase — «l'apeiron supera l'acqua» — e
+   una frase si legge, non si segue con il dito. Quindi adesso si
+   guardano uno per volta, grandi: i due concetti affiancati, la
+   relazione in mezzo, e sotto da quale area a quale area salta.
+   ──────────────────────────────────────────────────────── */
 function commutaRimandi(){
+  preparaMappa();
+  const quanti = archi.filter(a=>a.incrocio).length;
+  if(!quanti){ return; }
   rimandi = !rimandi;
   acceso('p-rimandi', rimandi);
-    /* Il secondo argomento di toggle, se e' `undefined`, non forza
-     niente: ribalta. Con `rimandi && n.haRimando` i nodi senza
-     rimando davano undefined e si accendevano tutti. */
-  for(const n of nodi) n.el.classList.toggle('legato', !!(rimandi && n.haRimando));
-  if(rimandi){
-    /* Accendere i rimandi porta a vedere tutta la mappa davvero
-       incorniciata: se ne resta fuori nove decimi, i tratteggi
-       hanno l'altro capo fuori schermo e sembra che il bottone
-       non faccia niente. Poi ci si ingrandisce sopra. */
-    passo = statiMappa()-1;
-    disegna();
-    adatta(true, true);
-    applicaVista();
-  }
-  else collega();
-  if(finestra) spedisciStato();
+  if(rimandi){ passoPrima = passo; passo = 0; }
+  else { passo = Math.min(passoPrima, statiMappa()-1); }
+  disegna();
+  if(finestra){ aggiornaRegia(); spedisciStato(); }
 }
+
 function commutaFondo(){
   profondo = !profondo;
-  acceso('p-fondo', profondo);
-  stati = listaStati(); stati._per = corrente;
-  passo = Math.min(passo, stati.length-1);
+  acceso('p-fondo', profondo, '#9a7c2e');
+  if(profondo) passo = statiMappa()-1;
   disegna();
-  if(finestra) spedisciStato();
+  if(finestra){ aggiornaRegia(); spedisciStato(); }
 }
 function tuttaLaMappa(){
   passo = statiMappa()-1;
@@ -590,7 +617,9 @@ function tuttaLaMappa(){
   if(finestra){ aggiornaRegia(); spedisciStato(); }
 }
 function quanti(){
-  return modo==='mappa' ? statiMappa() : tempiDi(LEZIONI[corrente].provocazione).length;
+  if(modo!=='mappa') return tempiDi(LEZIONI[corrente].provocazione).length;
+  if(rimandi) return Math.max(1, archi.filter(a=>a.incrocio).length);
+  return statiMappa();
 }
 function avanti(){ if(passo < quanti()-1){ passo++; aggiorna(); } }
 function indietro(){ if(passo > 0){ passo--; aggiorna(); } }
@@ -618,6 +647,13 @@ function aggiornaRegia(){
     if(!stati.length || stati._per !== corrente){ stati = listaStati(); stati._per = corrente; }
     const st = stati[passo] || {tipo:'titolo'};
     const rami = mappaDi(LEZIONI[corrente]).f || [];
+    if(rimandi){
+      const lista = archi.filter(a=>a.incrocio);
+      document.getElementById('r-dove').textContent = 'rimandi';
+      document.getElementById('r-titolo').textContent =
+        lista[passo] ? lista[passo].da.n + ' → ' + lista[passo].a.n : '';
+      return;
+    }
     document.getElementById('r-dove').textContent = 'mappa';
     document.getElementById('r-titolo').textContent =
       st.tipo==='titolo' ? 'il titolo' :
@@ -658,12 +694,18 @@ function disegna(tienilaVista){
     d.style.transform=''; d.style.position='';
     disegnaAtto(d); return;
   }
-  tela.style.display=''; scena.classList.add('mappa');
   for(const id of ['p-rimandi','p-fondo','p-tutta']){
     const b = document.getElementById(id); if(b) b.style.display = '';
   }
   const sg = document.getElementById('p-suggerimento');
   if(sg) sg.textContent = 'trascina per muoverti · rotella per ingrandire';
+  if(rimandi){
+    tela.style.display='none'; scena.classList.remove('mappa');
+    d.style.transform=''; d.style.position='';
+    disegnaRimando(d);
+    return;
+  }
+  tela.style.display=''; scena.classList.add('mappa');
   d.style.position='absolute';
   disegnaMappa(d, tienilaVista);
 }
@@ -682,6 +724,25 @@ function disegnaAtto(d){
       ${fonte ? '<div class="f">'+esc(fonte)+'</div>' : ''}
     </div>`;
   d.style.transform='none';
+}
+
+function disegnaRimando(d){
+  const lista = archi.filter(a=>a.incrocio);
+  const a = lista[Math.min(passo, lista.length-1)];
+  if(!a){ d.innerHTML = '<div class="atto"><div class="t">Questo capitolo non ha rimandi.</div></div>'; return; }
+  const lato = n => `<div class="lato">
+      <div class="area">${esc(n.areaNome||'')}</div>
+      <div class="nome">${esc(n.n)}</div>
+      ${n.d ? '<div class="sotto">'+esc(n.d)+'</div>' : ''}
+    </div>`;
+  d.innerHTML = `<div class="rimando">
+      <div class="conta">rimando ${passo+1} di ${lista.length}</div>
+      <div class="coppia">
+        ${lato(a.da)}
+        <div class="mezzo"><span>${esc(a.r)}</span><em>→</em></div>
+        ${lato(a.a)}
+      </div>
+    </div>`;
 }
 
 /* ---------- la mappa ---------- */
@@ -704,7 +765,8 @@ function costruisci(d){
     el.innerHTML = `<div class="nn">${esc(nodo.n)}</div>` +
                    (nodo.d ? `<div class="nd">${esc(nodo.d)}</div>` : '');
     ramo.appendChild(el);
-    const mio = {el, padre, liv, area, sotto, n:nodo.n,
+    const mio = {el, padre, liv, area, sotto, n:nodo.n, d:nodo.d||'',
+                 areaNome: liv===0 ? '' : (liv===1 ? nodo.n : (padre.areaNome||padre.n)),
                  piu: !!(nodo.piu || (padre && padre.piu))};
     if(mio.piu) el.classList.add('piu');
     nodi.push(mio);
@@ -756,12 +818,12 @@ function disegnaMappa(d, tienilaVista){
      titolo dell'area basta a dire dove si e'. */
   for(const n of nodi){
     let vedo;
-    if(n.piu && !profondo) vedo = false;
+    if(n.piu) vedo = false;          // deciso sotto: solo nella mappa intera
     else if(n.liv===0) vedo = st.tipo!=='area';
     else if(n.liv===1) vedo = st.tipo==='aree' || ultimo || (apertaOra!==null && n.area===apertaOra);
     else vedo = ultimo || (apertaOra!==null && n.area===apertaOra &&
                            n.sotto >= st.da && n.sotto < st.a);
-    if(n.piu && !profondo) vedo = false;
+    if(n.piu) vedo = profondo && ultimo;
     n.visibile = vedo;
     /* La radice si nasconde da sola, non con il suo contenitore:
        dentro il .ramo della radice c'e' tutta la mappa, e
