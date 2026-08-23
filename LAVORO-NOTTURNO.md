@@ -137,7 +137,7 @@ Si va in ordine di programma. Restano:
 - [x] Filosofia antica · 5 — Platone: le Idee, l'anima, la città
 - [x] Filosofia antica · 6 — L'ultimo Platone
 - [x] Filosofia antica · 7 — Aristotele: logica e metafisica
-- [ ] Filosofia antica · 8 — Aristotele: etica e politica
+- [x] Filosofia antica · 8 — Aristotele: etica e politica
 - [ ] Filosofia antica · 9 — Epicureismo e scetticismo
 - [ ] Filosofia antica · 10 — Lo stoicismo
 - [ ] Filosofia antica · 11 — Il neoplatonismo e Plotino

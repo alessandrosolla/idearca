@@ -1766,6 +1766,252 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Filosofia antica · 8 — Aristotele: etica e politica': {
+  mappa: {
+    n:'Etica e politica', d:'Aristotele: che cos\'è una vita riuscita, e dove si può vivere così',
+    f:[
+      {r:'parte da', n:'Il fine dell\'uomo', d:'ogni azione tende a un bene: qual è quello ultimo?',
+       f:[
+         {r:'si chiama', n:'Eudaimonía', d:'non «felicità» come stato d\'animo: vita riuscita, ben condotta',
+          f:[{piu:true, r:'alla lettera', n:'Avere un buon demone', d:'una sorte buona, ma che dipende da come si vive'}]},
+         {r:'è l\'unico bene', n:'Cercato per sé stesso', d:'tutti gli altri si vogliono in vista di questo'},
+         {r:'si trova con', n:'La funzione propria', d:'l\'ergon: come l\'occhio è buono se vede, l\'uomo è buono se…',
+          f:[{r:'e l\'uomo è', n:'L\'animale che ha lógos', d:'quindi la sua riuscita è l\'attività dell\'anima secondo ragione'}]},
+         {r:'esclude', n:'Tre vite sbagliate', d:'esaminate e scartate una per una',
+          f:[{r:'la vita del', n:'Piacere', d:'«da bestiame», dice: è la scelta dei più'},
+             {r:'la vita', n:'Politica', d:'cerca l\'onore, ma l\'onore sta in chi lo dà, non in te'},
+             {r:'la vita del', n:'Guadagno', d:'la ricchezza è un mezzo: nessuno la vuole per sé'}]},
+         {r:'ma richiede anche', n:'I beni esterni', d:'salute, amici, un minimo di mezzi: nessuno è felice sotto tortura',
+          f:[{piu:true, r:'e serve', n:'Una vita intera', d:'«una rondine non fa primavera»: la felicità non è un momento'}]}
+       ]},
+
+      {r:'si costruisce con', n:'La virtù etica', d:'non si nasce virtuosi: lo si diventa facendo',
+       f:[
+         {r:'è un', n:'Abito', d:'héxis: una disposizione stabile acquisita con la ripetizione',
+          f:[{r:'come', n:'Si impara a suonare suonando', d:'e si diventa giusti compiendo atti giusti'},
+             {piu:true, r:'contro', n:'La virtù come dono', d:'né natura né caso: educazione e esercizio'}]},
+         {r:'consiste nel', n:'Giusto mezzo', d:'fra due estremi, l\'eccesso e il difetto',
+          f:[{r:'esempio', n:'Coraggio', d:'fra la viltà e la temerarietà'},
+             {r:'esempio', n:'Liberalità', d:'fra l\'avarizia e la prodigalità'},
+             {r:'ma', n:'Non è la media aritmetica', d:'è il mezzo «rispetto a noi»: cambia con la persona e la situazione'},
+             {piu:true, r:'e alcune cose', n:'Non hanno mezzo', d:'l\'invidia, il furto, l\'omicidio: sono cattive in sé'}]},
+         {r:'richiede', n:'La scelta deliberata', d:'proaíresi: non basta fare la cosa giusta, bisogna sceglierla sapendo',
+          f:[{r:'si delibera', n:'Sui mezzi, non sui fini', d:'nessuno delibera se essere felice: delibera come'}]},
+         {r:'la più completa è', n:'La giustizia', d:'l\'unica virtù che riguarda sempre un altro',
+          f:[{r:'si divide in', n:'Distributiva', d:'dà a ciascuno secondo il merito: proporzione geometrica'},
+             {r:'e in', n:'Correttiva', d:'ripara il danno senza guardare a chi: proporzione aritmetica'},
+             {piu:true, r:'e ammette', n:'L\'equità', d:'correggere la legge dove, per la sua generalità, sbaglia sul caso'}]}
+       ]},
+
+      {r:'si compie con', n:'Le virtù dianoetiche', d:'quelle della parte razionale',
+       f:[
+         {r:'la', n:'Phrónesis', d:'saggezza: sa deliberare bene su ciò che riguarda il vivere',
+          f:[{r:'non è', n:'Scienza né arte', d:'riguarda il particolare, e il particolare non si dimostra'},
+             {piu:true, r:'esempio', n:'Pericle', d:'l\'uomo che sa vedere ciò che è bene per sé e per la città'}]},
+         {r:'la', n:'Sophía', d:'sapienza: intelletto più scienza, sulle cose più alte e immutabili'},
+         {r:'poi', n:'Epistéme, téchne, noûs', d:'scienza, arte, intuizione dei principi'},
+         {r:'e la saggezza', n:'Non si dà senza virtù etica', d:'chi ha il fine storto calcola bene i mezzi per il male'}
+       ]},
+
+      {r:'corregge Socrate su', n:'L\'akrasía', d:'l\'incontinenza: sapere il bene e fare il male',
+       f:[
+         {r:'Socrate diceva', n:'Nessuno sbaglia volendo', d:'chi conosce il bene lo fa'},
+         {r:'ma', n:'L\'esperienza dice il contrario', d:'e una teoria contro i fatti evidenti va corretta'},
+         {r:'la spiegazione è', n:'Sapere e avere presente', d:'chi è in preda alla passione ha la scienza ma non la usa',
+          f:[{r:'come', n:'L\'ubriaco che recita Empedocle', d:'dice le parole giuste senza sapere che cosa dice'},
+             {piu:true, r:'formalmente', n:'Salta la premessa minore', d:'sa che i dolci fanno male, non registra che questo è un dolce'}]}
+       ]},
+
+      {r:'ha bisogno di', n:'Amicizia', d:'due libri interi su dieci: nessuno vivrebbe senza amici',
+       f:[
+         {r:'per', n:'Utilità', d:'ci si ama per il vantaggio: dura quanto il vantaggio'},
+         {r:'per', n:'Amicizia di piacere', d:'tipica dei giovani: dura quanto il piacere'},
+         {r:'per', n:'Amicizia di virtù', d:'ci si ama per quello che l\'altro è: la sola che dura',
+          f:[{r:'perché', n:'L\'amico è un altro sé', d:'e volere il bene dell\'altro per lui, non per sé'},
+             {piu:true, r:'e ne servono', n:'Pochi', d:'come non si può essere innamorati di molti insieme'}]},
+         {r:'tiene insieme', n:'La città più della giustizia', d:'se sono amici non hanno bisogno di giudici'}
+       ]},
+
+      {r:'culmina nella', n:'Vita contemplativa', d:'il libro X, che rimette in discussione tutto',
+       f:[
+         {r:'è', n:'L\'attività più alta', d:'perché ha per oggetto le cose più alte'},
+         {r:'è la più', n:'Autosufficiente', d:'il giusto ha bisogno di qualcuno verso cui essere giusto; chi pensa no'},
+         {r:'è', n:'Continua e amata per sé', d:'non produce nulla, e proprio per questo non stanca'},
+         {r:'ci fa vivere', n:'Secondo il divino che è in noi', d:'«non seguire i consigli di chi dice: da mortale, pensa da mortale»'},
+         {piu:true, r:'ma resta', n:'Una tensione irrisolta', d:'la felicità è l\'attività secondo ragione, o solo quella teoretica?'}
+       ]},
+
+      {r:'si realizza nella', n:'Pólis', d:'la politica non è un\'appendice dell\'etica: ne è il luogo',
+       f:[
+         {r:'perché l\'uomo è', n:'Animale politico', d:'zóon politikón: chi vive fuori dalla città è bestia o dio',
+          f:[{r:'perché ha', n:'La parola', d:'gli altri animali hanno la voce, che dice piacere e dolore',
+              f:[{r:'e la parola dice', n:'Utile e giusto', d:'ed è su questo che si fa una città'}]}]},
+         {r:'e quindi', n:'La città viene prima', d:'prima per natura, non nel tempo: il tutto prima della parte',
+          f:[{piu:true, r:'come', n:'La mano staccata dal corpo', d:'si chiama mano solo per omonimia'}]},
+         {r:'nasce da', n:'Famiglia e villaggio', d:'per soddisfare i bisogni; ma esiste per vivere bene'},
+         {r:'sostiene', n:'La schiavitù per natura', d:'alcuni sarebbero destinati a obbedire, ed è un bene per loro',
+          f:[{r:'perché', n:'Chi partecipa della ragione senza averla', d:'la riconosce negli altri ma non la possiede'},
+             {r:'ma ammette', n:'La natura sbaglia spesso', d:'i corpi non corrispondono: si vedono liberi con corpo da schiavo'},
+             {r:'e registra', n:'L\'obiezione degli avversari', d:'«è contro natura: schiavo e libero lo fa la legge, e si regge sulla forza»'},
+             {piu:true, r:'e immagina', n:'Se le spole tessessero da sole', d:'allora non servirebbero servi: Politica I 4'}]},
+         {r:'classifica', n:'Sei forme di governo', d:'tre rette e tre deviate, secondo chi comanda e per chi',
+          f:[{r:'rette', n:'Monarchia, aristocrazia, politia', d:'governano nell\'interesse di tutti'},
+             {r:'deviate', n:'Tirannide, oligarchia, democrazia', d:'governano nell\'interesse di chi comanda'},
+             {r:'e la migliore possibile è', n:'La politia', d:'governo dei molti, fondato sul ceto medio',
+              f:[{r:'perché', n:'Il ceto medio non trama', d:'né invidia i ricchi né è disprezzato dai poveri: è il più stabile'}]}]},
+         {r:'critica', n:'La Repubblica di Platone', d:'ha letto il maestro e non è d\'accordo',
+          f:[{r:'perché', n:'Ciò che è di tutti non è di nessuno', d:'si ha cura di ciò che è proprio'},
+             {piu:true, r:'e perché', n:'La città non deve essere una', d:'l\'eccesso di unità la distrugge: una città è fatta di diversi'}]}
+       ]},
+
+      {r:'lascia anche', n:'Poetica e retorica', d:'le scienze del produrre',
+       f:[
+         {r:'l\'arte è', n:'Mímesis', d:'imitazione: ma non copia — rappresenta ciò che potrebbe accadere'},
+         {r:'perciò', n:'La poesia è più filosofica della storia', d:'la storia dice il particolare, la poesia l\'universale'},
+         {r:'la tragedia produce', n:'Catarsi', d:'purificazione di pietà e terrore, per mezzo di pietà e terrore',
+          f:[{piu:true, r:'e resta', n:'La parola più discussa', d:'purga medica, purificazione rituale o chiarificazione intellettuale?'}]},
+         {r:'la retorica è', n:'La facoltà di vedere il persuasivo', d:'non insegna a mentire: insegna a riconoscere gli argomenti'}
+       ]},
+
+      {r:'lascia', n:'Che cosa resta', d:'e che cosa è stato ripreso',
+       f:[
+         {r:'l\'etica delle', n:'Virtù', d:'tornata in auge nel Novecento contro doveri e conseguenze',
+          f:[{piu:true, r:'con', n:'Anscombe e MacIntyre', d:'a partire da «Modern Moral Philosophy», 1958'}]},
+         {r:'l\'idea che', n:'La politica sia parte dell\'etica', d:'lo Stato non è neutrale: deve rendere buoni i cittadini'},
+         {r:'e il ceto medio', n:'Come garanzia di stabilità', d:'un\'idea che attraversa tutta la storia costituzionale'},
+         {r:'ma anche', n:'Una macchia che non si toglie', d:'la giustificazione della schiavitù e l\'inferiorità della donna'}
+       ]}
+    ],
+    incroci:[
+      {da:'L\'animale che ha lógos', a:'Animale politico', r:'è la stessa definizione in',
+       perche:'La funzione propria dell\'uomo e la sua natura politica non sono due tesi: sono la stessa. Chi ha il lógos può dire utile e giusto, e dirlo insieme ad altri è già fare una città. L\'etica sbocca nella politica perché parte da lì.'},
+      {da:'Abito', a:'La città viene prima', r:'ha bisogno che',
+       perche:'Se la virtù si acquista ripetendo atti virtuosi, qualcuno deve avere organizzato le occasioni e le leggi che li rendono normali. Per Aristotele nessuno diventa buono da solo: è la città a fabbricare le abitudini.'},
+      {da:'L\'esperienza dice il contrario', a:'Nessuno sbaglia volendo', r:'confuta',
+       perche:'È il metodo di Aristotele in una riga: quando una teoria elegante contraddice un fatto che tutti osservano, si corregge la teoria. Contro Socrate non porta un argomento migliore — porta l\'evidenza che si può sapere e non fare.'},
+      {da:'La schiavitù per natura', a:'L\'obiezione degli avversari', r:'è indebolita dalla stessa',
+       perche:'Aristotele scrive lui stesso che alcuni sostengono che la schiavitù sia contro natura e si regga solo sulla forza. Sapeva dell\'obiezione, la riporta con onestà, e sceglie di non lasciarsene convincere: è questo a rendere il caso interessante.'},
+      {da:'La natura sbaglia spesso', a:'Chi partecipa della ragione senza averla', r:'toglie il criterio a',
+       perche:'Il criterio dovrebbe essere visibile nei corpi e nelle capacità. Ma lui stesso ammette che spesso non corrisponde. Se il segno non è affidabile, non resta nessun modo di riconoscere lo schiavo per natura — e la tesi si svuota da dentro.'},
+      {da:'Se le spole tessessero da sole', a:'Una macchia che non si toglie', r:'contiene già la fine di',
+       perche:'Nella stessa pagina in cui giustifica la schiavitù, Aristotele scrive che se gli strumenti lavorassero da soli i servi non servirebbero. Ha visto che la schiavitù dipende dalla tecnica, cioè che è storica — e non ne ha tratto la conseguenza.'},
+      {da:'Il ceto medio non trama', a:'La Repubblica di Platone', r:'è la risposta concreta a',
+       perche:'Platone cerca la città perfetta e la fonda su un\'élite senza proprietà. Aristotele cerca la migliore possibile e la fonda su chi ha abbastanza da non invidiare e poco da non essere invidiato. Uno progetta, l\'altro osserva centocinquantotto costituzioni.'},
+      {da:'Autosufficiente', a:'La giustizia', r:'mette in crisi il primato di',
+       perche:'La giustizia è la virtù più completa perché riguarda sempre un altro. Ma la vita contemplativa è più alta proprio perché non ha bisogno di nessuno. Il libro X e il libro V tirano in direzioni opposte, e Aristotele non scioglie il nodo.'},
+      {da:'La poesia è più filosofica della storia', a:'Mímesis', r:'ribalta il senso di',
+       perche:'Per Platone imitare era allontanarsi dal vero di un altro grado. Qui l\'imitazione diventa il modo di cogliere ciò che accade sempre o per lo più — cioè l\'universale. Stessa parola, giudizio rovesciato.'},
+      {da:'L\'equità', a:'Non è la media aritmetica', r:'è il giusto mezzo applicato in',
+       perche:'La legge è generale e i casi sono singoli: applicarla alla lettera a volte produce ingiustizia. L\'equità corregge, ed è la stessa mossa del giusto mezzo — la misura non si calcola, si vede nella situazione.'},
+      {da:'L\'amico è un altro sé', a:'La città più della giustizia', r:'spiega perché tiene',
+       perche:'Fra amici non servono tribunali, perché ciascuno vuole il bene dell\'altro come il proprio. La giustizia serve dove l\'amicizia manca: è il minimo, non il massimo, di ciò che tiene insieme una comunità.'},
+      {da:'Sapere e avere presente', a:'La scelta deliberata', r:'spiega che cosa manca alla',
+       perche:'L\'incontinente non ha scelto: ha la conoscenza ma non la tiene davanti mentre agisce. Da qui la conseguenza pratica di tutta l\'etica — non basta sapere che cosa è bene, bisogna essersi abituati ad averlo presente quando serve.'}
+    ]
+  },
+  provocazione: {
+    titolo:'Trovate l\'errore',
+    durata:'55 minuti',
+    domandaMadre:'Quale delle vostre convinzioni ovvie sembrerà, fra duemila anni, quello che a voi sembra questa?',
+    perche:'La classe legge un testo che giustifica la schiavitù senza sapere chi lo ha scritto, e deve smontarlo come argomento — non condannarlo come sentimento. Poi scopre che l\'autore è l\'uomo che ha inventato la logica, che conosceva l\'obiezione contraria e la riporta lui stesso, e che nella stessa pagina scrive la frase che demolisce la propria tesi. L\'ora non serve a dare un voto ad Aristotele: serve a far vedere che un pensiero rigoroso può poggiare su un pregiudizio invisibile a chi lo ha, e a chiedersi quale sia il proprio.',
+    occorrente:'Il testo del primo tempo va letto senza dire chi lo ha scritto. Resistere alla tentazione di anticiparlo è tutta la riuscita dell\'ora.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'«Alcuni sono per natura liberi, altri per natura schiavi,\ne per questi ultimi la schiavitù è cosa giusta e utile.\n\nÈ schiavo per natura chi partecipa della ragione\ntanto da riconoscerla negli altri,\nma non tanto da possederla in sé stesso.\n\nCome il corpo deve obbedire all\'anima,\ncosì costoro devono obbedire a chi sa comandare:\ne questo è un bene anche per loro.»\n\nNon vi chiedo se siete d\'accordo.\nVi chiedo di trovare l\'errore nel ragionamento.',
+       parlato:'Non dire chi l\'ha scritto. Se qualcuno chiede, rispondi che lo saprà fra venti minuti.\n\nLa richiesta è precisa e va ripetuta: non «che cosa ne pensate», che produce indignazione in tre secondi e nient\'altro. «Dove sbaglia il ragionamento». Devono lavorare sulla struttura: quali sono le premesse, che cosa si dà per scontato, dove il passaggio non tiene.\n\nDai cinque minuti a coppie, con l\'obbligo di scrivere una frase sola: «l\'errore è che…».\n\nPoi raccogli. In genere escono tre tipi di risposta: è falso che esistano persone così; anche se esistessero, non ne seguirebbe che devono obbedire; il criterio non si può applicare, perché non c\'è modo di sapere chi sia. La terza è la più forte, e quasi sempre la dice qualcuno.',
+       seDicono:[
+         {loro:'«È ovvio che sia sbagliato, la schiavitù è disumana.»',
+          tu:'Sono d\'accordo con te, e non serve a niente. Chi ha scritto queste righe pensava di essere umano e ragionevole. Se l\'unica cosa che sai dire è che è mostruoso, non hai ancora capito come si possa arrivare a scriverlo — e allora non sei attrezzato per accorgertene su te stesso.'},
+         {loro:'«Era normale a quei tempi, tutti la pensavano così.»',
+          tu:'Non tutti: fra poco vedremo che l\'obiezione contraria circolava, e che chi ha scritto questo la conosceva. «Erano altri tempi» è una spiegazione che non spiega — assolve tutti e non insegna niente.'}
+       ]},
+
+      {minuti:'8–17', et:'Lo schieramento',
+       schermo:'Il ragionamento che avete letto:',
+       opzioni:['sbaglia perché parte da premesse false', 'sbaglia perché il passaggio non tiene'],
+       parlato:'La scelta obbliga a distinguere due cose che si confondono sempre: un ragionamento può essere valido e partire dal falso, oppure partire dal vero e non concludere. È la distinzione che Aristotele stesso ha inventato — e la stai facendo usare contro di lui.\n\nFai argomentare tre per parte. Il primo gruppo dirà che non esistono uomini «che partecipano della ragione senza averla». Il secondo dirà che anche ammettendolo, dall\'essere meno capace non segue il dovere di obbedire, né che ciò sia un bene per te.\n\nPoi la domanda che li mette d\'accordo e li sposta: se il criterio non è applicabile — se nessuno può stabilire chi sia schiavo per natura — che cosa resta della tesi? Resta la schiavitù così com\'è, con una giustificazione che non tocca nessun caso reale.',
+       seDicono:[
+         {loro:'«Sono valide tutte e due le critiche.»',
+          tu:'Sì, ma non valgono uguale. La prima si può negare: chi la sostiene ti dirà che quegli uomini esistono. La seconda no: colpisce la forma, e vale anche concedendo tutto il resto. In una discussione seria conviene sempre attaccare da lì.'},
+         {loro:'«Non ha senso analizzare una cosa del genere: va solo condannata.»',
+          tu:'Condannarla è facile e dura un secondo. Capire come una mente straordinaria ci sia arrivata dura di più e serve di più — perché è l\'unico esercizio che ti dà qualche possibilità di accorgerti dei tuoi.'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'Tre cose che rendono il caso peggiore.\n\nPrima: chi ha scritto quelle righe conosceva l\'obiezione.\nLa riporta lui stesso, poche righe prima:\n\n«Ad altri sembra che il comandare da padrone sia contro natura:\nè per legge che uno è schiavo e un altro libero,\nmentre per natura non c\'è nessuna differenza;\ne perciò non è giusto, perché è cosa violenta.»\n\nSeconda: ammette che il suo criterio non funziona.\n«La natura vorrebbe fare i corpi diversi, ma spesso accade il contrario.»\n\nTerza: nella stessa pagina scrive che\nse gli strumenti lavorassero da soli,\nnon ci sarebbe bisogno di servi.',
+       parlato:'Dai le tre cose in fila, lentamente, aspettando fra l\'una e l\'altra.\n\nLa prima toglie l\'alibi dell\'epoca: l\'argomento contrario esisteva ed era già formulato bene — schiavo e libero li fa la legge, non la natura, e ciò che si regge sulla forza non è giusto. Lui lo trascrive e va avanti.\n\nLa seconda è quella che i filologi discutono di più: ammette che il segno visibile non c\'è. Se non puoi riconoscere lo schiavo per natura, la categoria è inutilizzabile — e lui lo scrive.\n\nLa terza è quasi profetica: se le spole tessessero da sole, i padroni non avrebbero bisogno di servi. Sta dicendo che la schiavitù dipende dallo stato della tecnica, cioè che è storica e non naturale. Ha in mano la confutazione della propria tesi e non la usa.\n\nA questo punto chiedi: che cosa gli ha impedito di vederla?',
+       seDicono:[
+         {loro:'«Gli conveniva: viveva in una società schiavista.»',
+          tu:'Probabile, ma attento a fermarti lì. Il fatto che una convinzione ti convenga non dimostra che sia falsa, e soprattutto non spiega perché tu non riesca a vederla. Chi ha un pregiudizio non lo vive come interesse: lo vive come evidenza.'},
+         {loro:'«Non era così intelligente come dite.»',
+          tu:'Adesso vi dico chi era, e poi ridiscutiamo questa frase.'}
+       ]},
+
+      {minuti:'28–38', et:'Il testo',
+       schermo:'L\'autore.\n\nÈ l\'uomo che ha inventato la logica:\nil primo che abbia scritto le regole per riconoscere\nse un ragionamento è valido, chiunque lo faccia\ne di qualunque cosa parli.\n\nÈ lo stesso che ha scritto che la virtù non è un dono\nma un\'abitudine, che si impara facendo;\nche l\'amico va amato per quello che è;\nche una città in cui tutti sono uguali per legge\nè più stabile e più giusta di una governata da pochi.\n\nAristotele.',
+       testo:{fonte:'Aristotele, Politica I 4-6, 1253b-1255b (IV secolo a.C.)',
+              glossa:'Il punto della lezione non è che Aristotele fosse cattivo o stupido: è che non lo era. L\'uomo che ha dato all\'Occidente lo strumento per controllare i ragionamenti non lo ha applicato al proprio mondo — perché ciò che si dà per ovvio non compare mai fra le premesse, e quindi non viene mai controllato.'},
+       parlato:'Lascia qualche secondo di silenzio dopo il nome. Poi collega alle cose che hanno studiato nell\'ora precedente: il sillogismo, le categorie, il principio di non contraddizione.\n\nE poi il paradosso più duro, che va detto con calma: gli strumenti con cui oggi condanniamo quel passo li ha costruiti in gran parte lui. L\'idea che si controlli la forma di un argomento; l\'idea che la virtù dipenda dall\'educazione e non dalla nascita; l\'idea che il fine della città sia far vivere bene i cittadini. Sono suoi.\n\nSe c\'è tempo, aggiungi il dettaglio biografico che spiazza: Aristotele visse quasi tutta la vita ad Atene come meteco, straniero residente. Non fu mai cittadino, non poté mai votare né possedere terra. L\'uomo che ha scritto che la vita piena è quella del cittadino è stato escluso, per tutta la vita, da ciò che chiamava il compimento dell\'uomo.',
+       seDicono:[
+         {loro:'«Allora la sua filosofia non vale niente.»',
+          tu:'Prova a togliere dal tuo modo di pensare tutto quello che gli devi e vedi che cosa resta. Il punto non è salvarlo o buttarlo: è imparare a tenere insieme due giudizi veri e opposti sulla stessa persona, che è una delle cose più difficili che ci siano.'},
+         {loro:'«Ma allora chiunque può sbagliare così.»',
+          tu:'Esatto. E questa è l\'unica conclusione utile dell\'ora.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'Come si fa a non vedere una cosa del genere?\n\nGuardate come è costruito l\'argomento.\n\nNon dice mai: «la schiavitù è giusta».\nDice: «poiché alcuni sono per natura destinati a obbedire…»\n\nLa tesi non sta nella conclusione.\nSta nella premessa —\ne le premesse non si discutono: si danno per ovvie.\n\nUn pregiudizio non è un\'opinione sbagliata\nche uno difende.\n\nÈ una cosa che non gli sembra un\'opinione.',
+       parlato:'Questo è il concetto che vale l\'ora intera, e va costruito insieme a loro.\n\nRiprendi il testo del primo tempo e fagli indicare dove sta esattamente la tesi contestabile. Scopriranno che non è nella conclusione — che è quasi un\'ovvietà una volta accettato il resto — ma nell\'inciso «per natura», che passa senza essere notato.\n\nPoi la formula: si controllano i passaggi, quasi mai le premesse. E le premesse che nessuno controlla sono quelle che tutti condividono.\n\nSe vuoi renderlo concreto, prendi un esempio che li riguardi. «Poiché è normale che a quindici anni si vada a scuola…»; «poiché è ovvio che chi lavora di più debba guadagnare di più…»; «poiché è naturale che…». Ogni volta che sentite «per natura», «è ovvio», «da sempre», lì c\'è una premessa che non è stata controllata da nessuno.\n\nNon serve dire che quelle premesse siano false. Serve accorgersi che sono premesse.',
+       seDicono:[
+         {loro:'«Ma allora bisogna dubitare di tutto, non si va avanti.»',
+          tu:'Non di tutto e non sempre: sarebbe paralizzante e Aristotele stesso lo dice — non tutto si dimostra. Ma quando una premessa serve a giustificare che qualcuno stia sotto, quella conviene controllarla. È un criterio ristretto e utilizzabile.'},
+         {loro:'«E noi come facciamo ad accorgercene?»',
+          tu:'Un metodo c\'è, ed è quello che abbiamo usato oggi: ascoltare chi la pensa diversamente e prendere sul serio la sua obiezione, non la sua persona. Aristotele l\'obiezione l\'aveva trascritta. Non l\'ha guardata.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'Ultima domanda, e non riguarda Aristotele.\n\nFra duemila anni qualcuno leggerà una pagina\nscritta oggi da una persona intelligente e perbene,\ne dirà: come faceva a non accorgersene?\n\nQuale pagina sarà?\n\nNon vi chiedo di indovinare.\nVi chiedo un\'altra cosa:\n\ncome fareste, oggi, ad accorgervene?',
+       parlato:'Non raccogliere risposte a voce sulla prima domanda: diventa una gara a indovinare il tema di moda, e non è quello il punto.\n\nInsisti sulla seconda, che è metodologica e si può discutere davvero. Le risposte utili che escono di solito sono tre: guardare chi ci rimette da una nostra convinzione; ascoltare chi la contesta invece di squalificarlo; controllare le frasi che cominciano con «è naturale che».\n\nPoi chiudi collegando alla parte migliore di Aristotele, perché l\'ora non finisca in un processo: è lui ad aver scritto che la virtù è un abito, cioè che ci si allena a essere giusti. Anche accorgersi delle proprie premesse è un abito, e si costruisce nello stesso modo — facendolo molte volte, su casi che non ci costano niente, così che si sappia fare quando costerà.\n\nUltima riga da lasciare in aria: la prossima volta che scriverete «è ovvio che», mettete un punto interrogativo e guardate che cosa succede.',
+       seDicono:[
+         {loro:'«Quindi non possiamo fidarci di nessun filosofo.»',
+          tu:'Potete fidarvi dei loro argomenti, che sono controllabili — e non delle loro conclusioni, che dipendono anche da quello che il loro tempo gli rendeva invisibile. È esattamente la differenza fra leggere un filosofo e credergli.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'Il giusto mezzo non è la media',
+       corpo:'La virtù, dice Aristotele, sta nel mezzo fra due estremi: il coraggio fra viltà e temerarietà, la liberalità fra avarizia e prodigalità.\n\nMa aggiunge subito una precisazione che quasi nessuno ricorda: non è il mezzo «della cosa», è il mezzo «rispetto a noi». Se dieci libbre di cibo sono troppe e due troppo poche, non ne seguirà che il maestro di ginnastica ne ordini sei: dipende da chi deve mangiarle. Per Milone, il lottatore, sei sono poche.\n\nE aggiunge che alcune azioni non hanno mezzo: l\'invidia, il furto, l\'omicidio. Non esiste il modo giusto di commettere un omicidio.',
+       chiedi:'Se il mezzo cambia con la persona e la situazione, chi lo stabilisce? Aristotele risponde: l\'uomo saggio, la phrónesis. Ma allora la regola morale non è una formula — è un giudizio. Vi sembra una debolezza della teoria o una descrizione onesta di come funziona davvero?'},
+      {titolo:'Chi sa e non fa',
+       corpo:'Socrate sosteneva che nessuno sbaglia sapendo: chi conosce il bene lo compie, e chi fa il male ha soltanto valutato male.\n\nAristotele osserva che questo contraddice ciò che tutti vediamo — gente che sa benissimo che cosa dovrebbe fare e fa il contrario — e che una teoria che contraddice i fatti va corretta.\n\nLa sua spiegazione: chi è in preda alla passione ha la scienza ma non la usa. È come un ubriaco che recita i versi di Empedocle: dice le parole giuste senza avere presente ciò che dice. Sa e non sa, allo stesso tempo, in due sensi diversi.',
+       chiedi:'Vi convince? Provate a descrivere l\'ultima volta che avete fatto una cosa sapendo che era sbagliata: in quel momento lo sapevate davvero, o lo avete saputo di nuovo un minuto dopo? E se è così, che cosa bisogna allenare — la conoscenza o l\'abitudine?'},
+      {titolo:'Il filosofo senza cittadinanza',
+       corpo:'Aristotele scrive che l\'uomo è per natura un animale politico, che la città viene prima dell\'individuo come il corpo prima della mano, e che chi vive fuori dalla città o è una bestia o è un dio.\n\nVisse ad Atene per quasi quarant\'anni. Non fu mai cittadino: era un meteco, straniero residente. Non poteva votare, né parlare in assemblea, né possedere una casa a proprio nome. Doveva avere un cittadino che garantisse per lui.\n\nQuando Alessandro morì e ad Atene esplose il sentimento antimacedone, lo accusarono di empietà. Lasciò la città dicendo che non voleva che gli Ateniesi peccassero due volte contro la filosofia. Morì l\'anno dopo, a Calcide.',
+       chiedi:'L\'uomo che ha definito la vita piena come quella del cittadino ne è stato escluso per tutta la vita. Cambia qualcosa nel modo in cui leggete la sua politica? E in generale: sapere da dove parla chi scrive aiuta a capirlo, o è un modo per non discutere quello che dice?'}
+    ],
+    testi:[
+      {fonte:'Aristotele, Etica Nicomachea II 1, 1103a-b',
+       corpo:'«Nessuna delle virtù etiche nasce in noi per natura: […] le riceviamo essendo capaci di accoglierle, e le portiamo a compimento con l\'abitudine. […] Le cose che dobbiamo imparare a fare, le impariamo facendole: diventiamo costruttori costruendo, e citaristi suonando la cetra. Così pure diventiamo giusti compiendo azioni giuste, temperanti compiendo azioni temperanti, coraggiosi compiendo azioni coraggiose.»',
+       glossa:'È la frase che rovescia sia Socrate sia l\'aristocrazia: la virtù non è sapere e non è nascita, è allenamento. E ha una conseguenza politica immediata — se la virtù si acquista con l\'abitudine, il legislatore che organizza le abitudini è il vero educatore morale.'},
+      {fonte:'Aristotele, Politica I 2, 1253a',
+       corpo:'«L\'uomo è, fra gli animali, l\'unico ad avere la parola. La voce è segno del piacere e del dolore, e per questo appartiene anche agli altri animali; ma la parola serve a manifestare l\'utile e il dannoso, e quindi anche il giusto e l\'ingiusto. […] Ed è la comunanza di queste cose a fare la famiglia e la città.»',
+       glossa:'La definizione più citata di Aristotele non dice che l\'uomo è socievole: dice che è l\'unico animale che può discutere di ciò che è giusto. La politica non nasce dal bisogno — quello lo hanno anche le api — nasce dalla possibilità di litigare su che cosa sia bene.'},
+      {fonte:'Aristotele, Politica IV 11, 1295b',
+       corpo:'«In ogni città ci sono tre parti: i molto ricchi, i molto poveri e, terzi, quelli di mezzo. […] Quelli di mezzo sono i più sicuri: non desiderano le cose altrui come i poveri, né gli altri desiderano le loro come accade ai ricchi. […] Dove il ceto medio è numeroso, meno probabili sono le rivolte e le lotte intestine.»',
+       glossa:'È la pagina più moderna della Politica e nasce da un metodo, non da un ideale: Aristotele aveva fatto raccogliere centocinquantotto costituzioni prima di scriverla. Non progetta la città perfetta come Platone — guarda quali reggono e quali cadono.'}
+    ],
+    compito:'Mezza pagina. Scrivete una frase che nel vostro ambiente comincia con «è ovvio che» o «è naturale che» e che nessuno mette in discussione. Poi provate a chiedervi due cose: chi ci guadagna se resta ovvia, e chi ci rimette. Non serve concludere che sia sbagliata — serve accorgersi che è una premessa.',
+    fonti:[
+      'Aristotele, Etica Nicomachea I (il fine e l\'ergon), II (l\'abito e il mezzo), III 1-5 (la scelta), V (la giustizia e l\'equità), VI (le virtù dianoetiche), VII 1-10 (l\'akrasía), VIII-IX (l\'amicizia), X 6-8 (la vita contemplativa)',
+      'Aristotele, Politica I 1-7 (l\'animale politico e la schiavitù), II 1-5 (critica alla Repubblica), III 6-13 (le forme di governo), IV 11 (il ceto medio)',
+      'Aristotele, Poetica 4, 6 e 9 (mimesi, catarsi, poesia e storia); Retorica I 1-2',
+      'Diogene Laerzio, Vite V 5-6 — la fuga da Atene e il testamento',
+      'G.E.M. Anscombe, Modern Moral Philosophy (1958); A. MacIntyre, Dopo la virtù (1981)',
+      'Sulla schiavitù: M.I. Finley, Schiavitù antica e ideologia moderna'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',
