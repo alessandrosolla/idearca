@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Schemi e provocazioni — Idearca</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Jost',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  background:#faf8f3;color:#1c2b1a;font-weight:300;-webkit-font-smoothing:antialiased}
+.w{max-width:1040px;margin:0 auto;padding:2rem 1.5rem 4rem}
+.k{font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:#8a9e87;font-weight:600}
+h1{font-family:'Cormorant Garamond',Georgia,serif;font-size:2.4rem;font-weight:400;margin:.3rem 0 .5rem}
+.sub{font-size:.92rem;line-height:1.7;color:#5a6b58;max-width:66ch}
+.et{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:#9a7c2e;
+  font-weight:700;margin:1.8rem 0 .7rem;display:flex;align-items:center;gap:.6rem}
+.et::after{content:'';flex:1;height:1px;background:rgba(45,90,39,.13)}
+.b{font:inherit;font-size:.78rem;padding:.52rem 1.1rem;border-radius:100px;cursor:pointer;
+  border:1.5px solid rgba(45,90,39,.22);background:#fff;color:#2d5a27;font-weight:500;transition:all .16s}
+.b:hover{background:#2d5a27;color:#fff;border-color:#2d5a27}
+.b.pieno{background:#2d5a27;color:#fff;border-color:#2d5a27}
+.b.pieno:hover{background:#1c3f18}
+.b:disabled{opacity:.35;cursor:default}
+.riga{display:flex;gap:.5rem;flex-wrap:wrap;align-items:center}
+select{width:100%;font:inherit;font-size:.9rem;padding:.6rem .7rem;
+  border:1px solid rgba(45,90,39,.2);border-radius:9px;background:#fff;outline:none}
+select:focus{border-color:#2d5a27}
+
+/* ---- le due carte del capitolo ---- */
+.carte{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1rem;margin-top:1rem}
+.carta{border:1px solid rgba(45,90,39,.14);border-radius:14px;background:#fff;padding:1.2rem 1.3rem}
+.carta h3{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.45rem;font-weight:500;margin-bottom:.2rem}
+.carta .q{font-size:.78rem;color:#8a9e87;margin-bottom:.9rem}
+.carta p{font-size:.86rem;line-height:1.65;color:#5a6b58;margin-bottom:1rem}
+
+/* ---- la preparazione: i cinque tempi con le note ---- */
+.tempo{border-left:3px solid rgba(45,90,39,.22);padding:.1rem 0 .9rem 1rem;margin-bottom:.2rem}
+.tempo .n{font-size:.58rem;letter-spacing:.16em;text-transform:uppercase;color:#9a7c2e;font-weight:700}
+.tempo .t{font-size:.9rem;line-height:1.6;margin:.25rem 0;white-space:pre-line}
+.tempo .f{font-size:.75rem;color:#8a9e87;font-style:italic}
+.tempo .nota{font-size:.8rem;line-height:1.6;color:#5a6b58;background:#f3f6f1;
+  border-radius:8px;padding:.5rem .7rem;margin-top:.45rem}
+.tempo .nota b{color:#2d5a27;font-weight:600;font-size:.62rem;letter-spacing:.12em;
+  text-transform:uppercase;display:block;margin-bottom:.15rem}
+.vuoto{border:1px dashed rgba(45,90,39,.28);border-radius:12px;padding:2rem 1.4rem;
+  text-align:center;color:#5a6b58;line-height:1.65;font-size:.9rem}
+
+/* ══════════════════ PROIEZIONE ══════════════════
+   Fondo chiaro e non scuro, al contrario delle votazioni: qui
+   si proietta accanto alla lavagna vera e i due devono stare
+   insieme senza che l'aula debba cambiare luce. */
+.pieno{position:fixed;inset:0;z-index:80;display:none;background:#FBF7EF;
+  flex-direction:column;padding:1.4rem 2rem 1.2rem;overflow:hidden}
+.pieno.on{display:flex}
+.pieno .barra{display:flex;align-items:center;gap:.7rem;flex:none;margin-bottom:.8rem}
+.pieno .barra .tit{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;
+  color:#8a9e87;font-weight:700}
+.pieno .barra .spazio{flex:1}
+.pieno .barra button{font:inherit;font-size:.8rem;font-weight:600;cursor:pointer;
+  border:1px solid rgba(45,90,39,.2);border-radius:9px;background:#fff;color:#2d5a27;
+  padding:.45rem .8rem;min-height:40px}
+.pieno .barra button:hover{border-color:#2d5a27}
+.pieno .barra button:disabled{opacity:.3}
+.pieno .scena{flex:1;min-height:0;position:relative;display:flex;
+  align-items:center;justify-content:center}
+
+/* ---- l'albero ---- */
+#tela-albero{position:absolute;inset:0;pointer-events:none}
+.albero-dentro{position:relative;transform-origin:center center}
+.ramo{display:flex;align-items:center;gap:2.6rem}
+.figli{display:flex;flex-direction:column;gap:.55rem}
+.nodo{position:relative;background:#fff;border:1.5px solid rgba(45,90,39,.2);
+  border-radius:11px;padding:.5rem .8rem;max-width:19rem;
+  opacity:0;transform:translateX(-8px);transition:opacity .32s ease,transform .32s ease}
+.nodo.on{opacity:1;transform:none}
+.nodo .nn{font-size:1.02rem;line-height:1.25;font-weight:500;color:#1c2b1a}
+.nodo .nd{font-size:.8rem;line-height:1.35;color:#6b7a68;margin-top:.12rem}
+.nodo.liv0{background:#2d5a27;border-color:#2d5a27}
+.nodo.liv0 .nn{color:#fff;font-family:'Cormorant Garamond',Georgia,serif;font-size:1.5rem;font-weight:500}
+.nodo.liv0 .nd{color:rgba(255,255,255,.72)}
+.nodo.liv1{border-color:rgba(45,90,39,.42);background:#f3f6f1}
+.nodo.liv1 .nn{font-weight:600}
+.nodo.appena{box-shadow:0 0 0 4px rgba(154,124,46,.22)}
+/* L'ultimo passo mette insieme tutti i rami, e con le
+   sottodescrizioni la colonna diventa alta il doppio dello
+   schermo: per farcela stare la pagina rimpicciolisce fino a
+   nove pixel, che dal fondo dell'aula non sono niente. Nel
+   quadro d'insieme servono i nomi, non le spiegazioni — quelle
+   le hai già dette aprendo i rami uno per uno. */
+.albero-dentro.compatto .nd{display:none}
+.albero-dentro.compatto .nodo{padding:.3rem .62rem;border-radius:8px}
+.albero-dentro.compatto .figli{gap:.3rem}
+.albero-dentro.compatto .ramo{gap:1.7rem}
+.albero-dentro.compatto .nodo.liv0 .nn{font-size:1.3rem}
+
+/* ---- la provocazione ---- */
+.atto{max-width:min(48rem,86vw);text-align:left}
+.atto .n{font-size:clamp(.7rem,1.1vh,.82rem);letter-spacing:.2em;text-transform:uppercase;
+  color:#9a7c2e;font-weight:700;margin-bottom:1rem}
+.atto .t{font-family:'Cormorant Garamond',Georgia,serif;
+  font-size:clamp(1.5rem,4.2vh,3rem);line-height:1.26;white-space:pre-line;
+  font-weight:400;letter-spacing:-.01em}
+.atto .f{font-size:clamp(.8rem,1.5vh,1.05rem);color:#8a9e87;margin-top:1.4rem;font-style:italic}
+.atto .opz{display:flex;gap:1rem;margin-top:1.8rem;flex-wrap:wrap}
+.atto .opz div{flex:1;min-width:12rem;background:#fff;border:1.5px solid rgba(45,90,39,.2);
+  border-radius:12px;padding:.9rem 1.1rem;font-size:clamp(1rem,2.2vh,1.5rem);
+  font-family:'Cormorant Garamond',Georgia,serif}
+.passi{display:flex;gap:.35rem;align-items:center}
+.passo{width:26px;height:4px;border-radius:99px;background:rgba(45,90,39,.16)}
+.passo.on{background:#2d5a27}
+@media (max-width:600px){ .pieno{padding:.9rem 1rem} .ramo{gap:1.4rem} }
+</style>
+</head>
+<body>
+
+<div class="w">
+  <div class="k">Idearca · solo docente</div>
+  <h1>Schemi e provocazioni</h1>
+  <p class="sub">Per ogni capitolo due cose, e servono a due momenti opposti dell'ora.
+  Lo <strong>schema</strong> è la struttura dell'argomento, che si apre un ramo per volta:
+  uno schema che compare tutto insieme è una figura, uno schema che cresce è un discorso.
+  La <strong>provocazione</strong> è un percorso a cinque tempi che regge l'ora intera —
+  si parte da una domanda a cui non si può rispondere con quello che si sa, la classe si
+  schiera, e il testo del filosofo arriva quando hanno già qualcosa da difendere.</p>
+
+  <div class="et">Il capitolo</div>
+  <select id="scelta" onchange="scegli()"></select>
+
+  <div id="corpo"></div>
+</div>
+
+<!-- ══════════════ proiezione ══════════════ -->
+<div class="pieno" id="pieno">
+  <div class="barra">
+    <span class="tit" id="p-tit"></span>
+    <span class="passi" id="p-passi"></span>
+    <span class="spazio"></span>
+    <button id="p-prec" onclick="indietro()">‹ Indietro</button>
+    <button id="p-succ" onclick="avanti()">Avanti ›</button>
+    <button onclick="chiudi()">Esc</button>
+  </div>
+  <div class="scena" id="scena">
+    <canvas id="tela-albero"></canvas>
+    <div id="dentro"></div>
+  </div>
+</div>
+
+<script src="../js/lezioni.js?v=20260823a"></script>
+<script>
+/* ══════════════════════════════════════════════════════════
+   Nessuna libreria, come tutto il resto del sito.
+   L'albero si dispone con i riquadri veri — flex annidati — e
+   i collegamenti si disegnano dopo, misurando dove i riquadri
+   sono finiti. Farli in CSS con i bordi obbliga a incastri
+   fragili che si rompono appena un ramo ha un figlio solo.
+   ══════════════════════════════════════════════════════════ */
+function esc(s){ return (s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+
+const titoli = Object.keys(LEZIONI);
+let corrente = null;      // titolo scelto
+let modo = null;          // 'albero' | 'provocazione'
+let passo = 0;            // quanti nodi / quale atto
+let nodi = [];            // {el, padre, ordine}
+
+/* ---------- l'elenco ---------- */
+(function avvio(){
+  const s = document.getElementById('scelta');
+  s.innerHTML = '<option value="">— scegli un capitolo —</option>' +
+    titoli.map(t=>`<option value="${esc(t)}">${esc(t)}</option>`).join('');
+  scegli();
+})();
+
+function scegli(){
+  corrente = document.getElementById('scelta').value || null;
+  const c = document.getElementById('corpo');
+  if(!corrente){
+    c.innerHTML = `<div class="et">Che cosa c'è</div>
+      <div class="vuoto">Scegli un capitolo qui sopra.<br>
+      Per ora sono pronti <strong>${titoli.length}</strong> capitoli su 120:
+      gli altri arrivano a blocchi.</div>`;
+    return;
+  }
+  const L = LEZIONI[corrente];
+  const p = L.provocazione;
+  c.innerHTML = `
+    <div class="carte">
+      <div class="carta">
+        <h3>Lo schema</h3>
+        <div class="q">${contaNodi(L.albero)} nodi · si apre uno per volta</div>
+        <p>La struttura dell'argomento: che cosa dipende da che cosa. Con la freccia destra
+        cresce un ramo alla volta, come lo disegneresti tu alla lavagna, ma leggibile dal fondo.</p>
+        <button class="b pieno" onclick="apri('albero')">Proietta lo schema</button>
+      </div>
+      <div class="carta">
+        <h3>${esc(p.titolo)}</h3>
+        <div class="q">provocazione · ${esc(p.durata||'un\'ora')} · ${p.atti.length} tempi</div>
+        <p>${esc(p.atti[0].testo.split('\n')[0])}</p>
+        <button class="b pieno" onclick="apri('provocazione')">Proietta la provocazione</button>
+      </div>
+    </div>
+
+    <div class="et">Come condurla — questo lo vedi solo tu</div>
+    ${p.atti.map((a,i)=>`
+      <div class="tempo">
+        <div class="n">${i+1}. ${esc(a.et)}</div>
+        <div class="t">${esc(a.testo)}</div>
+        ${a.opzioni ? '<div class="f">si schierano: ' + a.opzioni.map(esc).join('  ·  ') + '</div>' : ''}
+        ${a.fonte ? '<div class="f">' + esc(a.fonte) + '</div>' : ''}
+        ${a.nota ? '<div class="nota"><b>nota per te</b>' + esc(a.nota) + '</div>' : ''}
+      </div>`).join('')}`;
+}
+
+function contaNodi(n){ return 1 + (n.f||[]).reduce((s,x)=>s+contaNodi(x),0); }
+
+/* ---------- proiezione ---------- */
+function apri(quale){
+  modo = quale; passo = 0;
+  document.getElementById('pieno').classList.add('on');
+  document.getElementById('p-tit').textContent =
+    (quale==='albero' ? 'Schema · ' : 'Provocazione · ') + corrente.replace(/^.*— /,'');
+  disegna();
+  const el = document.documentElement;
+  const chiedi = el.requestFullscreen || el.webkitRequestFullscreen;
+  if(chiedi) chiedi.call(el).catch(()=>{});
+}
+function chiudi(){
+  document.getElementById('pieno').classList.remove('on');
+  modo = null;
+  if(document.fullscreenElement && document.exitFullscreen) document.exitFullscreen().catch(()=>{});
+}
+/* ── PERCHÉ NON UN NODO PER VOLTA ────────────────────────
+   La prima versione apriva un nodo alla volta: venticinque
+   passi, e soprattutto venticinque riquadri impilati in una
+   colonna alta il triplo dello schermo. Per farceli stare la
+   pagina rimpiccioliva tutto a un terzo, e dal fondo dell'aula
+   non si leggeva più niente — cioè esattamente il difetto che
+   lo schema doveva togliere.
+   Adesso si va per rami: prima il titolo, poi i rami principali
+   nudi, poi un ramo per volta aperto da solo, e alla fine il
+   quadro intero. Ogni schermata ha pochi riquadri e quindi
+   riquadri grandi, ed è anche il modo in cui si parla: «adesso
+   guardiamo il dubbio».
+   ──────────────────────────────────────────────────────── */
+function statiAlbero(){ return (LEZIONI[corrente].albero.f||[]).length + 3; }
+function quanti(){
+  return modo==='albero' ? statiAlbero() : LEZIONI[corrente].provocazione.atti.length;
+}
+function avanti(){ if(passo < quanti()-1){ passo++; disegna(); } }
+function indietro(){ if(passo > 0){ passo--; disegna(); } }
+
+document.addEventListener('keydown', e=>{
+  if(!modo) return;
+  if(e.key==='Escape'){ chiudi(); return; }
+  if(e.key==='ArrowRight'||e.key===' '||e.key==='PageDown'){ e.preventDefault(); avanti(); }
+  if(e.key==='ArrowLeft'||e.key==='PageUp'){ e.preventDefault(); indietro(); }
+});
+
+function disegna(){
+  const d = document.getElementById('dentro');
+  const tela = document.getElementById('tela-albero');
+  const tot = quanti();
+  document.getElementById('p-prec').disabled = passo <= 0;
+  document.getElementById('p-succ').disabled = passo >= tot-1;
+  /* i pallini di avanzamento: con più di venti nodi diventerebbero
+     una riga di trattini illeggibile, e allora si scrive il conto */
+  const pas = document.getElementById('p-passi');
+  pas.innerHTML = tot<=12
+    ? Array.from({length:tot},(_,i)=>`<span class="passo${i<=passo?' on':''}"></span>`).join('')
+    : `<span class="passo on"></span><span style="font-size:.72rem;color:#8a9e87;margin-left:.4rem">${passo+1} / ${tot}</span>`;
+
+  if(modo==='provocazione'){ tela.style.display='none'; disegnaAtto(d); return; }
+  tela.style.display='';
+  disegnaAlbero(d);
+}
+
+/* ---------- la provocazione ---------- */
+function disegnaAtto(d){
+  const a = LEZIONI[corrente].provocazione.atti[passo];
+  d.innerHTML = `<div class="atto">
+      <div class="n">${passo+1} · ${esc(a.et)}</div>
+      <div class="t">${esc(a.testo)}</div>
+      ${a.opzioni ? '<div class="opz">'+a.opzioni.map(o=>'<div>'+esc(o)+'</div>').join('')+'</div>' : ''}
+      ${a.fonte ? '<div class="f">'+esc(a.fonte)+'</div>' : ''}
+    </div>`;
+  /* la nota per te non finisce mai qui: questa pagina è proiettata */
+}
+
+/* ---------- l'albero ---------- */
+function disegnaAlbero(d){
+  if(d.dataset.per !== corrente){
+    d.dataset.per = corrente;
+    nodi = [];
+    d.innerHTML = '<div class="albero-dentro" id="albero-dentro"></div>';
+    let ordine = 0;
+    (function costruisci(nodo, dove, liv, padre, ceppo){
+      const ramo = document.createElement('div'); ramo.className='ramo';
+      const el = document.createElement('div');
+      el.className = 'nodo liv'+Math.min(liv,2);
+      el.innerHTML = `<div class="nn">${esc(nodo.n)}</div>` +
+                     (nodo.d ? `<div class="nd">${esc(nodo.d)}</div>` : '');
+      ramo.appendChild(el);
+      // `ceppo` è a quale ramo principale appartiene: -1 la radice
+      const mio = {el, padre, liv, ceppo, ordine:ordine++, figli:null};
+      nodi.push(mio);
+      if(nodo.f && nodo.f.length){
+        const figli = document.createElement('div'); figli.className='figli';
+        mio.figli = figli;
+        ramo.appendChild(figli);
+        nodo.f.forEach((x,i)=> costruisci(x, figli, liv+1, mio, liv===0 ? i : ceppo));
+      }
+      dove.appendChild(ramo);
+    })(LEZIONI[corrente].albero, d.querySelector('#albero-dentro'), 0, null, -1);
+  }
+
+  /* Che cosa si vede a ogni passo:
+       0            solo il titolo
+       1            i rami principali, nudi
+       2 … 1+n      un ramo per volta, aperto da solo
+       ultimo       tutto insieme: il quadro completo         */
+  const rami = LEZIONI[corrente].albero.f || [];
+  const ultimo = statiAlbero()-1;
+  const apertoOra = (passo>=2 && passo<=1+rami.length) ? passo-2 : null;
+
+  for(const n of nodi){
+    let vedo;
+    if(n.liv===0) vedo = true;
+    else if(n.liv===1) vedo = passo>=1;
+    else vedo = passo===ultimo || (apertoOra!==null && n.ceppo===apertoOra);
+    n.visibile = vedo;
+    // display, non opacità: un nodo nascosto non deve occupare
+    // spazio, altrimenti torna il problema della colonna altissima
+    n.el.closest('.ramo').style.display = vedo ? '' : 'none';
+    n.el.classList.toggle('on', vedo);
+    n.el.classList.toggle('appena',
+      apertoOra!==null && n.liv===1 && n.ceppo===null && false);
+  }
+  // il ramo che si sta aprendo si evidenzia
+  nodi.forEach(n=>{
+    const suo = n.liv===1 && rami[apertoOra] && n.el.querySelector('.nn').textContent===rami[apertoOra].n;
+    n.el.classList.toggle('appena', !!suo);
+  });
+
+  d.querySelector('#albero-dentro').classList.toggle('compatto', passo===ultimo);
+  adatta();
+  collega();
+}
+
+/* La misura si fa a riquadri visibili: se si misurasse mentre sono
+   trasparenti e spostati, le linee partirebbero dal posto sbagliato.
+   Per questo il fattore di scala si calcola sull'intero albero, una
+   volta sola, e non nodo per nodo. */
+function adatta(){
+  const dentro = document.getElementById('albero-dentro');
+  if(!dentro) return;
+  dentro.style.transform = 'none';
+  const scena = document.getElementById('scena').getBoundingClientRect();
+  const a = dentro.getBoundingClientRect();
+  if(!a.width || !a.height) return;
+  const k = Math.min(1.25, (scena.width-40)/a.width, (scena.height-30)/a.height);
+  dentro.style.transform = 'scale(' + (k>0?k:1) + ')';
+}
+
+function collega(){
+  const tela = document.getElementById('tela-albero');
+  const scena = document.getElementById('scena').getBoundingClientRect();
+  const dpr = Math.min(window.devicePixelRatio||1, 2);
+  tela.width = Math.round(scena.width*dpr); tela.height = Math.round(scena.height*dpr);
+  tela.style.width = scena.width+'px'; tela.style.height = scena.height+'px';
+  const c = tela.getContext('2d');
+  c.setTransform(dpr,0,0,dpr,0,0);
+  c.clearRect(0,0,scena.width,scena.height);
+  c.lineWidth = 1.4; c.strokeStyle = 'rgba(45,90,39,.34)';
+  for(let i=0;i<nodi.length;i++){
+    const n = nodi[i];
+    if(!n.padre || !n.visibile || !n.padre.visibile) continue;
+    const a = n.padre.el.getBoundingClientRect(), b = n.el.getBoundingClientRect();
+    const x1 = a.right-scena.left, y1 = a.top+a.height/2-scena.top;
+    const x2 = b.left -scena.left, y2 = b.top+b.height/2-scena.top;
+    const m = (x2-x1)/2;
+    c.beginPath();
+    c.moveTo(x1,y1);
+    c.bezierCurveTo(x1+m,y1, x2-m,y2, x2,y2);
+    c.stroke();
+  }
+}
+
+/* Il proiettore cambia risoluzione quando si collega, e la finestra
+   cambia quando si entra a schermo intero: senza questo l'albero
+   resta tarato sulla misura di prima. */
+new ResizeObserver(()=>{ if(modo==='albero'){ adatta(); collega(); } })
+  .observe(document.getElementById('scena'));
+</script>
+</body>
+</html>

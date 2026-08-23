@@ -18,7 +18,7 @@
    versione.json sbagliata manderebbe il browser in un giro
    infinito di ricariche.
    ══════════════════════════════════════════════════════════ */
-const VERSIONE='20260823a';
+const VERSIONE='20260823b';
 (async function controllaVersione(){
   try{
     const r=await fetch('versione.json?'+Date.now(), {cache:'no-store'});
@@ -883,6 +883,7 @@ function vociExtra(){
     {g:'Strumenti',k:'__contesto__',l:'Macchina del contesto',  p:'Un anno, la vita di allora', chi:'tutti', ic:'🕰'},
     {g:'Strumenti',k:'__grafici__', l:'Grafici animati',         p:'Quattordici serie storiche', chi:'tutti', ic:'📈'},
     {g:'Strumenti',k:'__map__',     l:'Mappa storica',          p:'Atlante interattivo',      chi:'tutti',   ic:'🗺'},
+    {g:'Strumenti',k:'__lezione__', l:'Schemi e provocazioni',   p:'Un albero e un\'ora, per capitolo', chi:'docente', ic:'🌳'},
     {g:'Strumenti',k:'__verifiche__',l:'Generatore di verifiche',p:'Compiti pronti da stampare',chi:'docente',ic:'📝'},
     {g:'Strumenti',k:'__aula__',    l:'Timer e sorteggio',      p:'Da proiettare in aula',    chi:'docente', ic:'⏱'},
     {g:'Strumenti',k:'__lavagna__', l:'Lavagna',                p:'Da proiettare in aula',    chi:'docente', ic:'🖊'},
@@ -904,6 +905,7 @@ const VISTE={
   __confronto__:{vista:'lib-confronto-view',uso:'confronto',frame:'lib-confronto-frame',src:'prove/confronto.html',  quando:'una volta'},
   __contesto__: {vista:'lib-contesto-view', uso:'contesto', frame:'lib-contesto-frame', src:'prove/contesto.html',   quando:'una volta'},
   __grafici__:  {vista:'lib-grafici-view',  uso:'grafici',  frame:'lib-grafici-frame',  src:'prove/grafici.html',    quando:'una volta'},
+  __lezione__:  {vista:'lib-lezione-view',  uso:'lezione',  frame:'lib-lezione-frame',  src:'prove/lezione.html',    quando:'una volta'},
   __verifiche__:{vista:'lib-verifiche-view',uso:'verifiche',frame:'lib-verifiche-frame',src:'prove/verifiche.html',  quando:'una volta'},
   __aula__:     {vista:'lib-aula-view',     uso:'aula',     frame:'lib-aula-frame',     src:'prove/aula.html',       quando:'una volta'},
   /* La lavagna non ha un riquadro: si apre in una scheda sua.
