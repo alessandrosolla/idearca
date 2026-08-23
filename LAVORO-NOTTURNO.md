@@ -133,7 +133,7 @@ capitolo N».
 
 Si va in ordine di programma. Restano:
 
-- [ ] Filosofia antica · 4 — Socrate
+- [x] Filosofia antica · 4 — Socrate
 - [ ] Filosofia antica · 5 — Platone: le Idee, l'anima, la città
 - [ ] Filosofia antica · 6 — L'ultimo Platone
 - [ ] Filosofia antica · 7 — Aristotele: logica e metafisica

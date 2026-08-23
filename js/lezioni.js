@@ -801,6 +801,240 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Filosofia antica · 4 — Socrate': {
+  mappa: {
+    n:'Socrate', d:'Atene, 470-399 a.C.: il filosofo che non ha scritto',
+    f:[
+      {r:'prima di tutto', n:'La questione socratica', d:'di lui sappiamo solo quello che altri hanno scritto',
+       f:[
+         {r:'perché', n:'Non ha lasciato una riga', d:'per scelta: il pensiero vive nel dialogo, non sulla pagina',
+          f:[{piu:true, r:'come dice', n:'Il Fedro', d:'lo scritto non può rispondere a chi lo interroga'}]},
+         {r:'lo racconta', n:'Platone lo mette in scena', d:'ne fa il protagonista di quasi tutti i dialoghi',
+          f:[{piu:true, r:'ma', n:'Quanto è Socrate e quanto Platone?', d:'nei dialoghi tardi parla il maestro o l\'allievo?'}]},
+         {r:'lo racconta', n:'Senofonte', d:'un Socrate saggio e perbene, quasi banale'},
+         {r:'lo deride', n:'Aristofane', d:'nelle Nuvole, appeso a un cesto a studiare le nuvole',
+          f:[{piu:true, r:'e lo confonde con', n:'Confuso con i sofisti', d:'insegna a «rendere più forte il discorso più debole»'},
+             {piu:true, r:'rappresentata nel', n:'423 a.C.', d:'ventiquattro anni prima del processo'}]},
+         {r:'lo giudica', n:'Aristotele', d:'gli attribuisce due cose: i ragionamenti induttivi e le definizioni universali'}
+       ]},
+
+      {r:'lavora dentro', n:'Atene in crisi', d:'non l\'Atene di Pericle: quella dopo',
+       f:[
+         {r:'segnata da', n:'La peste del 430', d:'muore un terzo della popolazione, e Pericle con essa'},
+         {r:'e da', n:'La sconfitta del 404', d:'ventisette anni di guerra persi contro Sparta'},
+         {r:'poi', n:'I Trenta tiranni', d:'otto mesi di terrore, millecinquecento uccisi',
+          f:[{piu:true, r:'guidati da', n:'Crizia', d:'che era stato allievo di Socrate'}]},
+         {r:'infine', n:'L\'amnistia del 403', d:'vietato processare chiunque per fatti politici',
+          f:[{piu:true, r:'e quindi', n:'Bisogna trovare un\'altra accusa', d:'ed è la chiave del processo del 399'}]}
+       ]},
+
+      {r:'usa', n:'Il metodo', d:'non una dottrina: un modo di procedere',
+       f:[
+         {r:'parte da', n:'L\'ironia', d:'eironeia: fingere di non sapere per far parlare l\'altro',
+          f:[{piu:true, r:'alla lettera', n:'Dissimulazione', d:'non è sarcasmo: è una mossa, non un tono'}]},
+         {r:'continua con', n:'L\'elenchos', d:'la confutazione: si accetta la definizione dell\'altro e la si porta all\'assurdo',
+          f:[{r:'produce', n:'L\'aporia', d:'il vicolo cieco in cui l\'interlocutore scopre di non sapere'},
+             {piu:true, r:'e spesso', n:'Fa arrabbiare', d:'Trasimaco, Anito, Callicle: tutti se ne vanno furiosi'}]},
+         {r:'finisce in', n:'La maieutica', d:'l\'arte della levatrice: non insegna, fa partorire',
+          f:[{r:'presuppone', n:'La verità è già dentro', d:'chi risponde la trova da sé, o non l\'ha capita'},
+             {piu:true, r:'la madre', n:'Fenarete era levatrice', d:'e lui dice di fare lo stesso mestiere con le anime'},
+             {piu:true, r:'dimostrata nel', n:'Menone', d:'uno schiavo che non ha mai studiato ricava un teorema'}]},
+         {r:'si regge su', n:'«So di non sapere»', d:'l\'unico sapere che ha, e che gli altri non hanno',
+          f:[{r:'nasce da', n:'L\'oracolo di Delfi', d:'nessuno è più sapiente di Socrate'},
+             {r:'che lui verifica', n:'Interrogando i sapienti', d:'politici, poeti, artigiani: nessuno sa quello che crede di sapere'},
+             {piu:true, r:'lo racconta', n:'Apologia 21a', d:'e da lì nasce l\'odio di mezza città'}]},
+         {r:'lo accompagna', n:'Il daimonion', d:'una voce interiore che non gli dice mai che cosa fare',
+          f:[{r:'ma solo', n:'Che cosa non fare', d:'lo trattiene, non lo comanda'},
+             {piu:true, r:'diventerà', n:'Capo d\'accusa', d:'«introduce divinità nuove»'}]}
+       ]},
+
+      {r:'cerca', n:'La definizione', d:'la domanda «che cos\'è?»',
+       f:[
+         {r:'non vuole', n:'Esempi', d:'«questa è un\'azione coraggiosa» non dice che cos\'è il coraggio'},
+         {r:'vuole', n:'Ciò che vale per tutti i casi', d:'l\'unica cosa che li rende tutti quello che sono',
+          f:[{piu:true, r:'Aristotele lo chiama', n:'Universale', d:'e gli riconosce di averlo scoperto'}]},
+         {r:'contro', n:'Contro i sofisti', d:'se ogni verità è di qualcuno, non c\'è niente da definire',
+          f:[{piu:true, r:'e infatti', n:'Il tema è lo stesso', d:'virtù, giustizia, legge: cambia il modo di trattarlo'}]},
+         {r:'quasi sempre', n:'I dialoghi finiscono senza risposta', d:'l\'aporia non è un fallimento: è il risultato'}
+       ]},
+
+      {r:'in etica', n:'Virtù è conoscenza', d:'l\'intellettualismo etico',
+       f:[
+         {r:'quindi', n:'Nessuno fa il male volendo', d:'chi sbaglia ha sbagliato a valutare, non a volere',
+          f:[{piu:true, r:'obietterà', n:'L\'obiezione di Aristotele', d:'esiste l\'akrasía: sapere il bene e fare il male lo stesso'}]},
+         {r:'quindi', n:'La virtù si può insegnare', d:'se è sapere, si impara'},
+         {r:'quindi', n:'Meglio subire ingiustizia che commetterla', d:'chi la commette danneggia la propria anima',
+          f:[{piu:true, r:'rovescia', n:'La morale omerica', d:'aiutare gli amici e danneggiare i nemici'}]},
+         {r:'lo scopo è', n:'La cura dell\'anima', d:'non il corpo, non i beni, non la reputazione'},
+         {r:'e quindi', n:'La felicità è interiore', d:'chi è giusto sta bene anche se perde tutto'}
+       ]},
+
+      {r:'finisce nel', n:'Il processo del 399', d:'e non è un incidente',
+       f:[
+         {r:'accusato da', n:'Meleto, Anito e Licone', d:'un poeta, un politico democratico, un oratore'},
+         {r:'di', n:'Non riconoscere gli dèi della città'},
+         {r:'di', n:'Introdurre divinità nuove'},
+         {r:'di', n:'Corrompere i giovani'},
+         {r:'davanti a', n:'Cinquecentouno giudici', d:'condannato con circa trenta voti di scarto',
+          f:[{piu:true, r:'e poi', n:'La seconda votazione è più dura', d:'più giudici lo vogliono morto di quanti lo credessero colpevole'}]},
+         {r:'e lui', n:'Non si difende', d:'non piange, non porta i figli, non chiede pietà',
+          f:[{r:'anzi propone', n:'Il pranzo nel Pritaneo', d:'l\'onore riservato ai vincitori olimpici'},
+             {piu:true, r:'poi ripiega su', n:'Una multa', d:'che pagheranno gli amici: trenta mine'}]}
+       ]},
+
+      {r:'poteva', n:'Scappare', d:'e sceglie di no',
+       f:[
+         {r:'glielo propone', n:'Critone', d:'tutto è pronto: guardie corrotte, nave, asilo in Tessaglia'},
+         {r:'lui risponde', n:'Parlano le Leggi', d:'le fa parlare in prima persona',
+          f:[{r:'dicono', n:'Ti abbiamo fatto nascere e crescere'},
+             {r:'dicono', n:'Sei rimasto settant\'anni', d:'potevi andartene e non l\'hai fatto: è un patto'},
+             {r:'dicono', n:'Se ognuno viola quella che gli pesa', d:'nessuna legge resta in piedi'}]},
+         {r:'e conclude', n:'Non si risponde all\'ingiustizia con l\'ingiustizia', d:'nemmeno quando la subisci tu'},
+         {piu:true, r:'muore', n:'Bevendo la cicuta', d:'nel Fedone; le ultime parole sono un debito da pagare ad Asclepio'}
+       ]},
+
+      {r:'lascia', n:'Che cosa resta', d:'nessun libro, e mezza filosofia occidentale',
+       f:[
+         {r:'nascono', n:'Le scuole socratiche minori', d:'ciascuna prende un pezzo e lo esagera',
+          f:[{r:'i', n:'Cinici', d:'Antistene, Diogene: la virtù basta, il resto è convenzione'},
+             {r:'i', n:'Cirenaici', d:'Aristippo: il bene è il piacere presente'},
+             {r:'i', n:'Megarici', d:'Euclide: il bene è l\'Uno di Parmenide',
+              f:[{piu:true, r:'e inventano', n:'I paradossi logici', d:'il mentitore, il sorite'}]}]},
+         {r:'nasce', n:'Platone', d:'che parte dalla domanda «che cos\'è» e ci mette le Idee'},
+         {r:'nasce', n:'Il filosofo che muore per la verità', d:'una figura che l\'Occidente userà per sempre'},
+         {piu:true, r:'e resta', n:'Il paragone con la torpedine', d:'Menone: chi lo tocca resta paralizzato'}
+       ]}
+    ],
+    incroci:[
+      {da:'Crizia', a:'Corrompere i giovani', r:'è il vero motivo di',
+       perche:'Il capo dei Trenta era stato suo allievo, e con lui Alcibiade, che aveva tradito Atene due volte. Nessuno poteva dirlo in aula, ma tutti in tribunale lo sapevano.'},
+      {da:'L\'amnistia del 403', a:'Non riconoscere gli dèi della città', r:'obbliga a passare per',
+       perche:'Dopo l\'amnistia i fatti politici non si potevano processare. Restava l\'empietà: un\'accusa vaga e comoda, che permetteva di dire tutt\'altro da quello che si voleva punire.'},
+      {da:'Il daimonion', a:'Introdurre divinità nuove', r:'diventa l\'accusa di',
+       perche:'Una voce interiore che non passa dai templi né dai sacerdoti è, per una città greca, un culto privato. Da qui l\'accusa: non che non creda, ma che creda per conto suo.'},
+      {da:'«So di non sapere»', a:'Interrogando i sapienti', r:'si guadagna gli odi con',
+       perche:'Per verificare l\'oracolo va a dimostrare a uno per uno che non sanno. Ognuno di loro esce umiliato davanti a testimoni, e ricorda. Trent\'anni dopo, quei ricordi votano.'},
+      {da:'La maieutica', a:'La verità è già dentro', r:'presuppone',
+       perche:'Se il maestro non trasmette niente ma fa tirare fuori, allora chi risponde possedeva già ciò che dice. Platone ne farà una tesi: conoscere è ricordare.'},
+      {da:'Contro i sofisti', a:'Confuso con i sofisti', r:'e però gli ateniesi lo scambiano per uno di loro',
+       perche:'Socrate fa l\'esatto contrario dei sofisti: cerca definizioni che valgano per tutti, non discorsi che vincano. Ma pone le stesse domande scomode nello stesso modo, e la città non distingue — Aristofane lo mette in scena come sofista ventiquattro anni prima del processo.'},
+      {da:'Nessuno fa il male volendo', a:'La cura dell\'anima', r:'porta a',
+       perche:'Se il male nasce dall\'ignoranza, chi lo commette non è un nemico da punire ma un malato da curare. La filosofia diventa terapia, non tribunale.'},
+      {da:'Non si risponde all\'ingiustizia con l\'ingiustizia', a:'Meglio subire ingiustizia che commetterla', r:'è il caso estremo di',
+       perche:'La tesi che nei dialoghi sembra un paradosso da salotto viene messa alla prova su una condanna a morte ingiusta — e tiene. È l\'unica dimostrazione che conta.'},
+      {da:'Parlano le Leggi', a:'La sconfitta del 404', r:'ha senso solo dopo',
+       perche:'Atene ha appena visto che cosa succede quando ciascuno si fa la propria regola: due colpi di stato in sette anni. Un uomo che rifiuta di violare la legge che lo uccide sta dicendo qualcosa a quella città.'},
+      {da:'Non ha lasciato una riga', a:'Quanto è Socrate e quanto Platone?', r:'genera',
+       perche:'Un pensiero che vive solo nel dialogo non lascia un originale con cui confrontare le copie. Ogni ritratto è già un\'interpretazione, e la scelta di non scrivere è la causa del problema.'},
+      {da:'Ciò che vale per tutti i casi', a:'Platone', r:'diventerà l\'Idea in',
+       perche:'Socrate cerca la definizione e si ferma lì. Platone fa il passo che lui non fa: se esiste una definizione valida sempre, ciò che definisce deve esistere davvero, da qualche parte.'},
+      {da:'Il pranzo nel Pritaneo', a:'Non si difende', r:'è il gesto che spiega',
+       perche:'Poteva proporre l\'esilio e glielo avrebbero concesso. Chiede invece l\'onore dei campioni olimpici. Non è arroganza: è dire che accettare una pena significherebbe ammettere una colpa.'}
+    ]
+  },
+  provocazione: {
+    titolo:'La porta della cella è aperta',
+    durata:'55 minuti',
+    domandaMadre:'C\'è qualcosa per cui accettereste di subire un torto invece di commetterne uno?',
+    perche:'La classe si trova a decidere per sé, non a giudicare un antico: condanna ingiusta, fuga già organizzata, nessuna conseguenza per nessuno. Tutti scappano. Poi arriva l\'argomento delle Leggi, che nessuno riesce a smontare pur volendolo — ed è a quel punto che «meglio subire ingiustizia che commetterla», che sui libri sembra una frase da santino, diventa una posizione che qualcuno in aula si trova a difendere davvero. E il colpo di scena finale — che Socrate poteva salvarsi già in tribunale e ha fatto di tutto per non farlo — sposta la domanda dall\'obbedienza alla coerenza.',
+    occorrente:'Niente. Conviene però sapere in anticipo il finale, e non anticiparlo mai.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'Siete in carcere. Domani vi uccidono.\n\nSiete innocenti: lo sapete voi e lo sa la città.\n\nStanotte un amico vi dice che è tutto pronto.\nLe guardie sono state pagate. La barca aspetta.\nDove andate vi accoglieranno.\nNessuno verrà punito al posto vostro.\n\nDovete solo alzarvi e uscire.\n\nC\'è una sola ragione per restare?',
+       parlato:'Costruisci la scena lentamente e in seconda persona: siete voi, non un personaggio. Togli uno per uno tutti gli alibi — l\'innocenza è certa, il rischio è zero, nessun altro paga. Devono restare senza scappatoie comode.\n\nPoi la domanda, e pretendi una risposta secca. Alzata di mano, senza discussione: chi esce?\n\nEsce quasi tutta la classe. Segna il numero e non commentarlo: ci torni fra quarantacinque minuti.\n\nSe qualcuno chiede di che cosa sei accusato, rispondi soltanto: «di aver fatto domande».',
+       seDicono:[
+         {loro:'«Certo che scappo, è una condanna ingiusta.»',
+          tu:'Quindi la tua regola è: le leggi valgono finché non ti colpiscono ingiustamente. Prova a scriverla per intero, come una legge dello Stato, e dimmi se la firmeresti.'},
+         {loro:'«Non scapperei, ma solo per non mettere nei guai gli altri.»',
+          tu:'Ti ho tolto anche quello: nessuno paga al posto tuo. Restano solo tu e la legge. Adesso?'}
+       ]},
+
+      {minuti:'8–17', et:'Lo schieramento',
+       schermo:'La porta è aperta.',
+       opzioni:['Esco', 'Resto'],
+       parlato:'Metti i due numeri alla vista di tutti e chiedi tre motivazioni per parte, una frase ciascuna.\n\nPoi vai a stanare i pochi che restano, perché quasi sempre lo fanno per il motivo sbagliato — «l\'ho promesso», «sarebbe vigliacco». Chiedi loro: se domani la legge ti condannasse per il colore dei tuoi occhi, resteresti lo stesso?\n\nE al gruppo che esce, la domanda vera: state dicendo che una legge ingiusta non obbliga. Chi decide quali sono ingiuste? Tu, caso per caso, mentre la subisci?\n\nDa qui in poi nessuno può più cavarsela con l\'istinto.',
+       seDicono:[
+         {loro:'«Le leggi ingiuste non vanno rispettate: lo dicevano anche i partigiani.»',
+          tu:'Argomento serio, e ci torneremo in quinta. Ma nota la differenza: chi disobbedisce per cambiare la legge lo fa alla luce del sole e ne accetta la pena. Chi scappa di notte non sta cambiando niente: sta facendo un\'eccezione per sé.'},
+         {loro:'«È solo una legge, non è la mia vita.»',
+          tu:'Allora hai stabilito una gerarchia: la tua vita vale più della regola comune. È una posizione difendibile — ed è esattamente quella che Socrate sta per attaccare. Tienila stretta, ti servirà.'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'Socrate risponde a Critone, ma non parla lui.\n\nFa parlare le Leggi di Atene:\n\n«Ti abbiamo fatto nascere, ti abbiamo cresciuto, ti abbiamo istruito.\nSei rimasto settant\'anni: potevi andartene quando volevi, e non l\'hai fatto.\nHai avuto un tribunale, e lo hai usato.\n\nE adesso che una sentenza non ti piace,\nvorresti distruggerci?\n\nUna città può reggersi, se ognuno viola la legge che gli pesa?»',
+       parlato:'Fai notare la mossa prima del contenuto: Socrate non risponde in prima persona. Mette in scena le Leggi come persone che gli parlano — e chi discute non è più lui contro Critone, ma un uomo contro la città che lo ha fatto.\n\nPoi smonta l\'argomento in tre passaggi e falli valutare uno per uno:\n\n— hai ricevuto tutto da queste leggi: nascita legittima, educazione, protezione;\n— restare è stato un consenso, ripetuto ogni giorno per settant\'anni;\n— l\'eccezione che chiedi per te, se la chiedono tutti, non lascia in piedi nulla.\n\nÈ un ragionamento che quasi nessuno riesce a rompere, e va lasciato lì a fare il suo lavoro. Se qualcuno prova a dire che è ricatto affettivo, dagli ragione sul tono e riportalo sul terzo passaggio, che è quello duro.',
+       seDicono:[
+         {loro:'«Ma le Leggi non lo hanno condannato: lo hanno condannato dei giudici che hanno sbagliato.»',
+          tu:'Ottima distinzione, ed è la migliore obiezione che esista. Socrate la concede: dice che a fargli torto sono gli uomini, non le leggi. Ma allora la domanda diventa: si distrugge lo strumento perché qualcuno lo ha usato male?'},
+         {loro:'«Settant\'anni fa non ha firmato niente: che patto è?»',
+          tu:'È il problema del contratto sociale, e lo solleverai di nuovo con Hobbes, Locke e Rousseau. Socrate risponde che il consenso è nei fatti — sei rimasto, hai usato i tribunali, hai fatto figli qui. Basta? Deciderai fra due anni.'}
+       ]},
+
+      {minuti:'28–38', et:'Il testo',
+       schermo:'«Non bisogna commettere ingiustizia in nessun caso,\nnemmeno quando la si è subita.\n\nNé si deve rendere male per male,\nqualunque cosa si sia patito.\n\nQuesto, o Critone, lo credono in pochi:\ne fra chi lo crede e chi non lo crede\nnon c\'è più discorso possibile.»',
+       testo:{fonte:'Platone, Critone 49b-d (IV secolo a.C.)',
+              glossa:'Fino a quel momento la morale greca è quella di Omero: fare del bene agli amici e del male ai nemici. Qui, per la prima volta in Occidente, qualcuno sostiene che la vendetta è sempre sbagliata — non imprudente, sbagliata. E aggiunge che chi non lo accetta non ha più niente da dirsi con chi lo accetta.'},
+       parlato:'Leggi il passo due volte. Poi fermati sull\'ultima frase, che è la più dura e viene sempre trascurata: Socrate dice che su questo punto non esiste discussione possibile. È il contrario del suo metodo — lui che discute tutto, qui dichiara un limite.\n\nPoi collega all\'etica: perché non si deve mai rispondere al male con il male? Non per bontà, ma per il ragionamento che hanno già visto — commettere ingiustizia rovina l\'anima di chi la commette. Chi si vendica non punisce l\'altro: danneggia sé stesso.\n\nSe qualcuno nomina il porgere l\'altra guancia, la nota giusta è che siamo quattro secoli prima, e che qui non c\'è nessun comandamento: c\'è una deduzione.',
+       seDicono:[
+         {loro:'«Ma questa è già morale cristiana.»',
+          tu:'Ci somiglia, e per secoli qualcuno ci ha visto una profezia. La differenza sta nel motivo: nel Vangelo si perdona perché lo chiede Dio, qui si evita di far male perché farlo danneggia chi lo fa. Uno è un comando, l\'altro un calcolo sull\'anima.'},
+         {loro:'«Allora bisogna lasciarsi fare tutto?»',
+          tu:'No: Socrate ha combattuto in guerra tre volte e ha rifiutato, rischiando la vita, di eseguire un ordine dei Trenta. Non è passività. È il rifiuto di usare i mezzi dell\'avversario.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'Ma c\'è un dettaglio che nessuno vi racconta.\n\nSocrate non doveva morire.\n\nAd Atene, dopo la condanna, l\'imputato proponeva la propria pena.\nSe avesse chiesto l\'esilio, gliel\'avrebbero concesso: molti se lo aspettavano.\n\nLui propose di essere mantenuto a spese dello Stato,\nnel Pritaneo, come i vincitori olimpici.\n\nE alla seconda votazione i giudici che lo vollero morto\nfurono più di quelli che lo avevano creduto colpevole.',
+       parlato:'Lascia cadere il dato e aspetta. È il momento in cui la storia cambia forma: non è un innocente travolto, è un uomo che ha fatto di tutto perché lo condannassero.\n\nPoi la domanda: perché? E guidali senza dare la risposta. Accettare l\'esilio avrebbe voluto dire ammettere che c\'era qualcosa da scontare. Proporre una pena è riconoscere una colpa. Lui non ne riconosce nessuna, e quindi propone un premio.\n\nQui puoi aggiungere il retroscena politico, che spiega il processo meglio di qualsiasi accusa formale: Crizia, capo dei Trenta tiranni, era stato suo allievo; Alcibiade, che aveva tradito Atene due volte, pure. Dopo l\'amnistia del 403 nessuno poteva più essere processato per motivi politici — restava l\'empietà. Il processo parla di dèi e parla d\'altro.\n\nEd è per questo che la fuga sarebbe stata perfetta per tutti: gli accusatori volevano toglierselo di torno, non ucciderlo.',
+       seDicono:[
+         {loro:'«Allora è stato lui a cercarsi la morte.»',
+          tu:'Attento alla parola: cercarsela vuol dire volerla. Lui non voleva morire — voleva non mentire. Che poi le due cose fossero incompatibili è una scoperta che fa insieme ai giudici, non un piano.'},
+         {loro:'«Se scappava, tutti contenti.»',
+          tu:'Esatto, e questo è il punto più scomodo dell\'ora: la scelta comoda era anche quella che accontentava chi lo aveva condannato. Rimanere non serviva a nessuno, tranne che a una cosa.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'Torniamo alla cella.\n\nAll\'inizio quasi tutti siete usciti.\n\nAdesso la domanda non è più «scappereste?».\nÈ questa:\n\nc\'è qualcosa per cui accettereste di subire un torto\ninvece di commetterne uno?\n\nSe la risposta è no, avete una regola sola:\nfino a quando mi conviene.',
+       parlato:'Rifai la votazione. I numeri si spostano quasi sempre, ma non è quello che conta: chiedi a due o tre che hanno cambiato di dire che cosa li ha fatti cambiare, ed è lì che si sente se l\'ora ha funzionato.\n\nPoi chiudi senza morale. Non dire che Socrate ha ragione: molti filosofi seri pensano che nel Critone abbia torto, e tu non stai facendo apologia. Di\' solo che da qui nasce una figura che l\'Occidente userà per duemilacinquecento anni — l\'uomo che muore per non tradire un ragionamento — e che ogni volta che qualcuno rifiuta di rispondere alla violenza con la violenza sta usando, spesso senza saperlo, un argomento nato in quella cella.\n\nUltima riga, se hai tempo: Socrate non ha scritto niente. Tutto quello che avete sentito oggi lo sappiamo perché altri hanno voluto ricordarlo. Anche questo fa parte del risultato.',
+       seDicono:[
+         {loro:'«Quindi bisogna sempre obbedire alla legge?»',
+          tu:'Il Critone dice di sì, l\'Apologia dice che se gli ordinassero di smettere di filosofare non obbedirebbe. Sono nello stesso Platone, a pochi giorni di distanza. Tenerli insieme è il vero esercizio: obbedire alla pena, non al divieto.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'L\'oracolo che non si può credere',
+       corpo:'Un amico va a Delfi e chiede se ci sia qualcuno più sapiente di Socrate. La Pizia risponde di no.\n\nSocrate, che è convinto di non sapere niente, decide che l\'oracolo dev\'essere smentito. Va dai politici, dai poeti, dagli artigiani — e scopre ogni volta la stessa cosa: sanno fare qualcosa, e proprio per questo si credono sapienti anche in tutto il resto.\n\nConclude che il dio aveva ragione per un motivo minimo: gli altri non sanno e credono di sapere, lui non sa e lo sa.',
+       chiedi:'Che differenza pratica fa, sapere di non sapere? E soprattutto: quanti nemici si fa uno che gira la città a dimostrare a ciascuno che non sa quello che crede di sapere?'},
+      {titolo:'Lo schiavo che sapeva la geometria',
+       corpo:'Nel Menone, Socrate chiama uno schiavo che non ha mai studiato e, solo con domande — senza mai dirgli niente — gli fa costruire il quadrato di area doppia rispetto a uno dato.\n\nLo schiavo prima sbaglia (raddoppia il lato), poi si accorge da solo dell\'errore, poi trova la soluzione: il quadrato costruito sulla diagonale.',
+       chiedi:'Se nessuno gliel\'ha insegnato, da dove viene quel sapere? Platone risponderà: se l\'anima lo ricorda, vuol dire che c\'era già prima di nascere. Vi convince — o c\'è una spiegazione più semplice che Socrate non ha considerato?'},
+      {titolo:'Socrate appeso a un cesto',
+       corpo:'Nel 423, ventiquattro anni prima del processo, Aristofane porta in scena le Nuvole. Socrate compare sospeso in un cesto, «per mescolare il mio pensiero sottile con l\'aria che gli somiglia», mentre gestisce una scuola dove si impara a non pagare i debiti rendendo più forte il discorso più debole.\n\nLa commedia arrivò terza su tre.',
+       chiedi:'Nell\'Apologia, Socrate dice che i suoi veri accusatori non sono Meleto e Anito, ma quelli che da vent\'anni raccontano di lui una certa storia. Quanto pesa, in un processo, la caricatura che la città si è fatta dell\'imputato? E oggi?'}
+    ],
+    testi:[
+      {fonte:'Platone, Apologia di Socrate 38a',
+       corpo:'«Una vita senza ricerca non è degna di essere vissuta per un uomo.»',
+       glossa:'La frase più citata e la più fraintesa: non dice che bisogna studiare, dice che una vita non esaminata — presa così com\'è arrivata, con le opinioni che ci si è trovati addosso — non è ancora una vita umana. È la definizione stessa del mestiere che sta per costargli la pena capitale.'},
+      {fonte:'Platone, Apologia 30e — il tafano',
+       corpo:'«Sono come un tafano attaccato a un cavallo grande e di razza, ma pigro per la sua stessa mole, che ha bisogno di essere pungolato. Se mi ucciderete, dormirete per il resto della vita.»',
+       glossa:'Utile per far capire che non si difende: si presenta come un servizio pubblico sgradevole. Chiedi alla classe se conoscono qualcuno che fa questo mestiere oggi, e come viene trattato.'},
+      {fonte:'Platone, Fedone 118a — le ultime parole',
+       corpo:'«Critone, dobbiamo un gallo ad Asclepio: pagate il debito e non dimenticatevene.»',
+       glossa:'Ad Asclepio, dio della medicina, si sacrificava un gallo dopo una guarigione. Si è discusso per secoli su che cosa significhi: che la morte guarisce dalla vita? che è guarito da una malattia dell\'anima? È il posto giusto per mostrare che i testi non si esauriscono, e che l\'ultima frase di un uomo può restare aperta per venticinque secoli.'}
+    ],
+    compito:'Mezza pagina. Descrivete una situazione in cui avete subito un torto e avreste potuto restituirlo, e non l\'avete fatto — oppure l\'avete fatto. Poi la domanda vera: che cosa vi ha trattenuti, o che cosa vi ha spinti? Non serve che sia una cosa grave.',
+    fonti:[
+      'Platone, Apologia di Socrate; Critone; Fedone 115a-118a; Menone 80a-86c',
+      'Senofonte, Memorabili I 1-2 e Apologia di Socrate',
+      'Aristofane, Nuvole (423 a.C.)',
+      'Aristotele, Metafisica XIII 4, 1078b — l\'induzione e le definizioni universali',
+      'Diogene Laerzio, Vite II 18-47 — gli aneddoti e le scuole socratiche',
+      'Sull\'amnistia del 403 e il contesto del processo: Andocide, Sui misteri'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',
