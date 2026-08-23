@@ -1035,6 +1035,260 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Filosofia antica · 5 — Platone: le Idee, l\'anima, la città': {
+  mappa: {
+    n:'Platone', d:'Atene, 428-347 a.C.: una filosofia nata da una condanna',
+    f:[
+      {r:'nasce da', n:'La morte di Socrate', d:'il fatto che spiega tutto il resto',
+       f:[
+         {r:'gli insegna', n:'La città uccide il migliore', d:'e lo fa legalmente, votando'},
+         {r:'gli toglie', n:'La fiducia nella politica di allora', d:'né la democrazia né i Trenta valgono qualcosa',
+          f:[{piu:true, r:'lo scrive nella', n:'Settima lettera', d:'«le leggi e i costumi si corrompevano in modo straordinario»'}]},
+         {r:'gli lascia', n:'La domanda «che cos\'è»', d:'ma senza la risposta di Socrate, che si fermava all\'aporia'},
+         {r:'lo porta a fondare', n:'L\'Accademia', d:'nel 387 a.C., alle porte di Atene',
+          f:[{piu:true, r:'durerà', n:'Novecento anni', d:'fino alla chiusura per ordine di Giustiniano, 529 d.C.'},
+             {piu:true, r:'sull\'ingresso', n:'«Non entri chi non sa la geometria»', d:'la tradizione lo riporta, le fonti sono tarde'}]},
+         {r:'e ci prova', n:'Tre viaggi a Siracusa', d:'per fare di un tiranno un filosofo: falliscono tutti',
+          f:[{piu:true, r:'nel primo', n:'Venduto come schiavo', d:'riscattato da un amico a Egina'}]}
+       ]},
+
+      {r:'risponde con', n:'Le Idee', d:'la mossa che Socrate non aveva fatto',
+       f:[
+         {r:'perché', n:'La definizione dev\'esistere', d:'se «giusto» vuol dire qualcosa sempre, quel qualcosa è reale'},
+         {r:'sono', n:'Eterne e immutabili', d:'non nascono, non cambiano, non finiscono'},
+         {r:'sono', n:'Uniche per ogni tipo di cosa', d:'un solo Bello per infinite cose belle'},
+         {r:'sono', n:'Intelligibili, non visibili', d:'si colgono col pensiero, mai con gli occhi'},
+         {r:'stanno in', n:'Un luogo sopra il cielo', d:'l\'iperuranio: è un\'immagine, non un indirizzo',
+          f:[{piu:true, r:'immagine del', n:'Fedro 247c', d:'«la regione sopracelestiale, che nessun poeta ha mai cantato»'}]},
+         {r:'in cima', n:'L\'Idea del Bene', d:'come il sole: dà l\'essere alle cose e la luce per vederle'},
+         {r:'e le cose sensibili', n:'Ne partecipano', d:'ma il come resta il punto debole',
+          f:[{r:'per', n:'Mímesis', d:'imitazione: la copia somiglia al modello'},
+             {r:'per', n:'Méthexis', d:'partecipazione: la cosa ha una parte dell\'Idea'},
+             {r:'per', n:'Parusía', d:'presenza: l\'Idea è nella cosa'},
+             {piu:true, r:'e Aristotele obietterà', n:'Sono metafore poetiche', d:'tre parole per non spiegare'}]}
+       ]},
+
+      {r:'per arrivarci', n:'I gradi della conoscenza', d:'non tutti i modi di sapere valgono uguale',
+       f:[
+         {r:'in basso', n:'Dóxa', d:'opinione: riguarda ciò che diventa',
+          f:[{r:'si divide in', n:'Eikasía', d:'immaginazione: ombre e riflessi'},
+             {r:'e in', n:'Pístis', d:'credenza: le cose che si toccano'}]},
+         {r:'in alto', n:'Epistéme', d:'scienza: riguarda ciò che è',
+          f:[{r:'si divide in', n:'Diánoia', d:'la matematica: ragiona da ipotesi e usa figure'},
+             {r:'e in', n:'Nóesis', d:'la dialettica: risale ai principi senza appoggi'}]},
+         {r:'illustrati dalla', n:'Linea divisa', d:'un segmento tagliato in quattro parti disuguali',
+          f:[{piu:true, r:'in', n:'Repubblica VI 509d'}]},
+         {r:'e dal', n:'Mito della caverna', d:'prigionieri incatenati che scambiano le ombre per il mondo',
+          f:[{r:'chi esce', n:'Deve tornare dentro', d:'ed è per questo che lo uccidono'},
+             {piu:true, r:'in', n:'Repubblica VII 514a'}]},
+         {r:'e conoscere è', n:'Anamnesi', d:'ricordare ciò che l\'anima ha visto prima di nascere',
+          f:[{r:'dimostrata con', n:'Lo schiavo del Menone', d:'ricava un teorema senza averlo mai studiato'},
+             {piu:true, r:'risolve', n:'Il paradosso di Menone', d:'non si cerca ciò che si sa né ciò che non si sa'}]}
+       ]},
+
+      {r:'presuppone', n:'L\'anima', d:'immortale, e divisa in tre',
+       f:[
+         {r:'è', n:'Immortale', d:'e il Fedone ne dà quattro prove',
+          f:[{r:'perché', n:'I contrari nascono dai contrari', d:'come il sonno dalla veglia, la vita dalla morte'},
+             {r:'perché', n:'Conosce le Idee', d:'e deve essere simile a ciò che conosce'},
+             {piu:true, r:'perché', n:'È principio di vita', d:'e non può accogliere il proprio contrario'}]},
+         {r:'ha', n:'Tre parti', d:'e sono in conflitto fra loro',
+          f:[{r:'la', n:'Razionale', d:'logistikón: ha sede nella testa, conosce'},
+             {r:'la', n:'Irascibile', d:'thymoeidés: nel petto, coraggio e sdegno'},
+             {r:'la', n:'Concupiscibile', d:'epithymetikón: nel ventre, desideri e appetiti'}]},
+         {r:'raffigurate dalla', n:'Biga alata', d:'un auriga e due cavalli, uno docile e uno ribelle',
+          f:[{piu:true, r:'in', n:'Fedro 246a'}]},
+         {r:'e passa per', n:'Metempsicosi', d:'rinasce in corpi diversi secondo come è vissuta',
+          f:[{r:'raccontata nel', n:'Mito di Er', d:'il soldato che torna dall\'aldilà e racconta la scelta delle vite'},
+             {piu:true, r:'dove', n:'«La colpa è di chi sceglie»', d:'«il dio non è responsabile»: Repubblica X 617e'}]}
+       ]},
+
+      {r:'si muove per', n:'Eros', d:'la forza che porta dal sensibile alle Idee',
+       f:[
+         {r:'non è', n:'Un dio', d:'è un demone, figlio di Poros e Penía: ricchezza e povertà'},
+         {r:'è', n:'Mancanza', d:'si desidera solo ciò che non si ha'},
+         {r:'sale per', n:'La scala della bellezza', d:'insegnata a Socrate da Diotima',
+          f:[{r:'da', n:'Un corpo bello'},
+             {r:'a', n:'Tutti i corpi belli'},
+             {r:'a', n:'La bellezza delle anime'},
+             {r:'a', n:'Leggi e conoscenze'},
+             {r:'a', n:'Il Bello in sé'}]},
+         {r:'perché il bello', n:'È l\'unica Idea che si vede', d:'l\'unica che ha un\'immagine sensibile',
+          f:[{piu:true, r:'in', n:'Fedro 250d'}]},
+         {piu:true, r:'e il filosofo è', n:'A metà fra sapienza e ignoranza', d:'come Eros: chi sa non cerca, chi ignora non sa di dover cercare'}
+       ]},
+
+      {r:'costruisce', n:'La città giusta', d:'la Repubblica: uno Stato per rispondere a una domanda morale',
+       f:[
+         {r:'ha', n:'Tre classi', d:'e corrispondono alle tre parti dell\'anima',
+          f:[{r:'i', n:'Governanti-filosofi', d:'ragione: la loro virtù è la sapienza'},
+             {r:'i', n:'Guerrieri', d:'animo: la loro virtù è il coraggio'},
+             {r:'i', n:'Produttori', d:'desiderio: la loro virtù è la temperanza'}]},
+         {r:'la giustizia è', n:'Ciascuno al proprio posto', d:'non uguaglianza: armonia fra parti diverse'},
+         {r:'per le prime due classi', n:'Nessuna proprietà privata', d:'né case, né oro, né famiglia',
+          f:[{r:'perché', n:'Chi possiede difende il suo', d:'e non più la città'},
+             {r:'e quindi', n:'Donne e figli in comune', d:'nessuno sa chi è suo figlio, e li tratta tutti così'},
+             {piu:true, r:'e le donne', n:'Fanno gli stessi mestieri', d:'la prima volta in Occidente che qualcuno lo scrive'}]},
+         {r:'si regge su', n:'L\'educazione', d:'ginnastica per il corpo, musica per l\'anima, poi matematica e dialettica',
+          f:[{piu:true, r:'la dialettica', n:'Non prima dei trent\'anni', d:'data prima, insegna solo a contraddire'}]},
+         {r:'e su', n:'La nobile menzogna', d:'ai cittadini si racconta che il dio li ha impastati con metalli diversi',
+          f:[{piu:true, r:'in', n:'Repubblica III 414b', d:'e il termine greco è pseudos: bugia'}]},
+         {r:'degenera in', n:'Quattro forme malate', d:'e ognuna nasce dalla precedente',
+          f:[{r:'la', n:'Timocrazia', d:'governo dell\'onore: comandano i guerrieri'},
+             {r:'poi l\'', n:'Oligarchia', d:'governo dei ricchi: comanda il censo'},
+             {r:'poi la', n:'Democrazia', d:'libertà senza misura: tutti uguali, anche i cavalli per strada'},
+             {r:'infine la', n:'Tirannide', d:'nasce proprio dall\'eccesso di libertà'}]}
+       ]},
+
+      {r:'condanna', n:'L\'arte', d:'e caccia i poeti dalla città',
+       f:[
+         {r:'perché è', n:'Copia di una copia', d:'il letto dipinto imita il letto costruito, che imita l\'Idea di letto'},
+         {r:'quindi è', n:'Lontana tre gradi dal vero'},
+         {r:'e perché', n:'Parla alla parte peggiore dell\'anima', d:'commuove invece di far ragionare'},
+         {r:'ma lui stesso', n:'Scrive miti bellissimi', d:'la caverna, Er, la biga: la contraddizione è sotto gli occhi',
+          f:[{piu:true, r:'e ammette', n:'Un\'antica discordia', d:'«fra la filosofia e la poesia»: Repubblica X 607b'}]}
+       ]},
+
+      {r:'lascia', n:'Che cosa resta', d:'un\'ombra lunga duemilaquattrocento anni',
+       f:[
+         {r:'introduce', n:'Il dualismo', d:'due mondi, e il nostro è quello di sotto'},
+         {r:'diventa', n:'Il pensiero cristiano', d:'Agostino leggerà le Idee come pensieri di Dio'},
+         {r:'viene attaccato da', n:'Aristotele', d:'«amico Platone, ma più amica la verità»'},
+         {r:'e nel Novecento', n:'Accusato da Popper', d:'primo nemico della società aperta, padre del totalitarismo',
+          f:[{piu:true, r:'gli si risponde', n:'La Repubblica non è un programma', d:'è un modello per guardare dentro l\'anima'}]},
+         {piu:true, r:'e Whitehead scrive', n:'Note a piè di pagina di Platone', d:'tutta la filosofia europea'}
+       ]}
+    ],
+    incroci:[
+      {da:'La città uccide il migliore', a:'Deve tornare dentro', r:'è il destino di chi esce, in',
+       perche:'Nella caverna chi si libera e torna a raccontare viene deriso e, dice Platone, ucciso se potessero prenderlo. Non è un\'ipotesi: sta descrivendo quello che ha visto fare al suo maestro.'},
+      {da:'La definizione dev\'esistere', a:'La domanda «che cos\'è»', r:'compie il passo mancante in',
+       perche:'Socrate cerca la definizione e si ferma quando non la trova. Platone fa la deduzione che lui non fa: se una definizione valida sempre è possibile, allora ciò che definisce deve esistere davvero, e non fra le cose che cambiano.'},
+      {da:'Anamnesi', a:'Immortale', r:'richiede che l\'anima sia',
+       perche:'Se conoscere è ricordare, l\'anima deve aver visto le Idee prima di entrare nel corpo. La teoria della conoscenza e quella dell\'anima si reggono l\'una sull\'altra: togline una e cade l\'altra.'},
+      {da:'Tre parti', a:'Tre classi', r:'sono la stessa struttura in',
+       perche:'La città non è un\'analogia decorativa: Platone la costruisce per leggere l\'anima ingrandita. Le stesse tre parti, le stesse virtù, la stessa giustizia — che è ordine fra parti diverse, non uguaglianza.'},
+      {da:'La scala della bellezza', a:'Intelligibili, non visibili', r:'è la sola via verso ciò che è',
+       perche:'Se le Idee non si vedono, serve qualcosa che tiri lo sguardo verso l\'alto partendo da ciò che si vede. Il bello è l\'unica Idea che ha un\'immagine sensibile, e l\'eros la forza che ci si aggrappa.'},
+      {da:'Democrazia', a:'La città uccide il migliore', r:'è il giudizio maturato da',
+       perche:'La democrazia ateniese ha condannato Socrate a maggioranza. Nella Repubblica diventa la penultima delle forme malate — e quella da cui, per eccesso di libertà, nasce il tiranno.'},
+      {da:'La nobile menzogna', a:'Mito della caverna', r:'costruisce a tavolino le ombre di',
+       perche:'Nella caverna le ombre tengono i prigionieri al loro posto, e chi le proietta non si vede. Nella città giusta la favola dei metalli fa lo stesso identico lavoro — solo che a proiettarla sono quelli che erano usciti.'},
+      {da:'Copia di una copia', a:'Ne partecipano', r:'applica all\'arte il rapporto di',
+       perche:'Se la cosa sensibile è già copia dell\'Idea, il quadro che la ritrae è copia di copia. La condanna dell\'arte non è un capriccio moralistico: è la conseguenza obbligata dell\'ontologia.'},
+      {da:'Scrive miti bellissimi', a:'Parla alla parte peggiore dell\'anima', r:'contraddice',
+       perche:'Caccia i poeti e poi affida le pagine decisive a immagini che colpiscono prima di convincere. O il mito fa qualcosa che l\'argomento non sa fare, oppure Platone non applica a sé la propria regola.'},
+      {da:'Nessuna proprietà privata', a:'Accusato da Popper', r:'è il capo d\'accusa di',
+       perche:'Abolire proprietà, famiglia e scelta del mestiere per le classi dirigenti, con una menzogna di Stato a tenere insieme il tutto: nel 1945 Popper ci legge il primo modello di società chiusa.'},
+      {da:'L\'Idea del Bene', a:'Nóesis', r:'è il termine di',
+       perche:'La dialettica non si ferma alle ipotesi come fa la matematica: risale fino a un principio che non ne ha bisogno. Quel principio è il Bene, e per questo il percorso educativo dura fino ai cinquant\'anni.'},
+      {da:'Mancanza', a:'A metà fra sapienza e ignoranza', r:'definisce anche il filosofo come',
+       perche:'Eros desidera ciò che non ha: se avesse la sapienza non la cercherebbe. Il filosofo non è il sapiente — è quello che sa di non averla e per questo si muove. È Socrate, descritto come un demone.'}
+    ]
+  },
+  provocazione: {
+    titolo:'L\'anello che rende invisibili',
+    durata:'55 minuti',
+    domandaMadre:'Se nessuno potesse mai saperlo, per quale motivo dovresti restare giusto?',
+    perche:'È la domanda con cui Glaucone apre la Repubblica, e ha due qualità rare: si capisce in dieci secondi e non si risolve in un\'ora. La classe risponde d\'istinto che resterebbe onesta, poi scopre — con l\'esperimento del giusto creduto ingiusto — che sta difendendo la reputazione e non la giustizia. E il colpo di scena finale ribalta il giudizio su Platone: per rispondere ha dovuto costruire uno Stato che abolisce proprietà, famiglia e poesia, e che mente ai propri cittadini. Il prezzo della risposta diventa la domanda dell\'ora dopo.',
+    occorrente:'Un anello qualsiasi, anche il proprio, da tenere in mano mentre si racconta.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'Un pastore trova nella terra spaccata da un terremoto\nun cadavere gigantesco con un anello d\'oro al dito.\n\nLo prende. Scopre che girandolo verso l\'interno\ndiventa invisibile.\n\nEntra a palazzo, seduce la regina,\nuccide il re e prende il potere.\n\nAdesso l\'anello è vostro.\nNessuno potrà mai sapere niente. Mai.\n\nChe cosa fate domani?',
+       parlato:'Racconta la storia di Gige con calma, tenendo in mano un anello: è un dettaglio piccolo e funziona.\n\nPoi togli le scappatoie prima che le trovino: nessuna telecamera, nessun dio che guarda, nessun rimorso indotto da altri, e l\'anello non si rompe. L\'unica cosa che resta sei tu.\n\nRichiesta precisa: non «sareste onesti?», ma «che cosa fate domani, in concreto». Fai scrivere una riga su un foglio, anonima. Poi ne leggi qualcuna ad alta voce.\n\nQuasi sempre le risposte scritte sono più oneste delle risposte a voce, ed è la prima lezione dell\'ora.',
+       seDicono:[
+         {loro:'«Io resterei onesto comunque.»',
+          tu:'Può darsi. Ma nota che me lo stai dicendo davanti a ventiquattro persone. Glaucone dice che chi lo afferma in pubblico difende la propria immagine, non la giustizia. Come facciamo a distinguere le due cose?'},
+         {loro:'«Userei l\'anello solo per cose piccole.»',
+          tu:'Allora la regola non è «sono giusto», è «sono giusto fino a una certa cifra». Dove la metti la cifra? E chi te l\'ha data?'}
+       ]},
+
+      {minuti:'8–17', et:'Lo schieramento',
+       schermo:'Con l\'anello al dito, per sempre:',
+       opzioni:['Resterei giusto', 'Non resterei giusto'],
+       parlato:'Conta le mani e confronta i numeri con i bigliettini di prima: se non coincidono, mostralo. È il dato più interessante dell\'ora.\n\nPoi chiedi al gruppo del «resterei giusto» il motivo, e ascolta bene: quasi tutte le ragioni che daranno sono in realtà paure travestite — mi sentirei in colpa, poi non riuscirei a guardarmi allo specchio, prima o poi si scoprirebbe.\n\nFai notare che «mi sentirei in colpa» non è una risposta alla domanda: è la descrizione di un\'abitudine. Glaucone chiede perché la giustizia sia un bene in sé, non perché ci faccia sentire meglio.',
+       seDicono:[
+         {loro:'«Se tutti usassero l\'anello sarebbe il caos.»',
+          tu:'È l\'argomento di Kant, e arriverà fra due anni. Ma qui non lo hanno tutti: ce l\'hai solo tu. Perché dovresti comportarti come se lo avessero tutti?'},
+         {loro:'«Verrei scoperto, prima o poi nessuno è invisibile davvero.»',
+          tu:'Stai rifiutando l\'ipotesi invece di rispondere. È esattamente la mossa che Glaucone si aspetta: rende visibile che la nostra onestà poggia sulla probabilità di essere visti.'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'Glaucone rilancia, e stringe.\n\nImmaginate due uomini.\n\nIl primo è perfettamente giusto,\nma tutti lo credono un criminale:\nviene deriso, torturato, ucciso.\n\nIl secondo è perfettamente ingiusto,\nma tutti lo credono un santo:\nonori, ricchezze, funerali di Stato.\n\nSceglietene una, per vostro figlio.',
+       parlato:'Questo è il cuore dell\'ora e va dato lentamente. L\'esperimento serve a separare due cose che nella vita stanno sempre insieme: essere giusti e sembrarlo. Finché stanno insieme, nessuno sa quale delle due sta scegliendo.\n\nFai votare di nuovo, e questa volta per un figlio, non per sé: la risposta cambia, e vale la pena chiedere perché.\n\nPoi il passaggio decisivo: se scegliete la seconda vita, allora la giustizia non è un bene — è un costo che si paga per avere buona reputazione. E se scegliete la prima, dovete dire che cosa ci guadagna quell\'uomo mentre lo torturano.\n\nÈ a questa domanda che la Repubblica intera, dieci libri, cerca di rispondere.',
+       seDicono:[
+         {loro:'«Sceglierei la prima, ha la coscienza a posto.»',
+          tu:'Bene: allora stai dicendo che c\'è qualcosa che sta dentro e che vale più di tutto quello che sta fuori. Dagli un nome. Platone lo chiamerà ordine dell\'anima, e per spiegarlo dovrà inventare uno Stato intero.'},
+         {loro:'«La domanda è truccata: nella realtà non succede.»',
+          tu:'Succede eccome, in piccolo, tutti i giorni: chi lavora bene e non viene riconosciuto, chi imbroglia e fa carriera. L\'esperimento non inventa niente, porta all\'estremo qualcosa che avete già visto.'}
+       ]},
+
+      {minuti:'28–38', et:'Il testo',
+       schermo:'«Se ci fossero due anelli, e uno lo indossasse l\'uomo giusto\ne l\'altro l\'ingiusto,\n\nnessuno si dimostrerebbe tanto adamantino\nda perseverare nella giustizia\ne da tenere le mani lontane dalle cose altrui,\n\npotendo prendere senza timore quello che vuole dal mercato,\nentrare nelle case e unirsi a chi gli pare,\nuccidere e liberare chiunque a suo piacimento,\n\nfacendo insomma, fra gli uomini, come un dio.»',
+       testo:{fonte:'Platone, Repubblica II, 360b-c (IV secolo a.C.)',
+              glossa:'Attenzione a chi parla: non è Socrate, è Glaucone, e sta esponendo la tesi che vuole veder confutata. Platone mette l\'argomento più forte in bocca all\'avversario e lo lascia intero — è la sua onestà intellettuale, ed è il motivo per cui questa pagina è più famosa della risposta.'},
+       parlato:'Leggi il passo e fermati su «come un dio»: è la formula esatta. L\'invisibilità non toglie i limiti morali, toglie i limiti e basta — e quello che resta è la definizione greca di divinità: poter fare ciò che si vuole senza rendere conto.\n\nPoi dai la risposta di Socrate, che è breve e va capita bene: l\'ingiusto non è un uomo felice che la fa franca, è un uomo in guerra con sé stesso. Le tre parti della sua anima — ragione, animo, desiderio — non sono più d\'accordo, e comanda quella sbagliata. La giustizia è la salute dell\'anima; l\'ingiustizia è una malattia che uno si porta addosso anche mentre vince.\n\nChiedi se convince. In genere metà classe dice di no, ed è un buon segno: significa che hanno capito che cosa è stato promesso.',
+       seDicono:[
+         {loro:'«È solo un modo elegante per dire che ci si sente in colpa.»',
+          tu:'Non proprio: il senso di colpa lo senti, questa malattia puoi non sentirla affatto. Platone dice che il tiranno è l\'uomo più infelice del mondo anche se non se ne accorge. Ti convince che si possa stare male senza saperlo?'},
+         {loro:'«Chi decide qual è la parte "giusta" che deve comandare?»',
+          tu:'Domanda esatta, ed è il ponte con la seconda metà dell\'ora: per rispondere Platone dice che deve comandare chi conosce. E se lo applichi alla città, ottieni i filosofi al governo — con tutto quello che ne segue.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'Per dimostrarvi che conviene essere giusti,\nPlatone costruisce una città intera.\n\nEccola.\n\nChi governa non possiede niente: né casa, né denaro.\nNon ha moglie né marito: donne e figli sono in comune,\ne nessuno sa chi è suo figlio.\nIl mestiere non lo sceglie: glielo assegna lo Stato.\nLa musica è controllata, i poeti sono espulsi.\n\nE ai cittadini si racconta una menzogna:\nche il dio li ha impastati con metalli diversi —\noro, argento, bronzo — e che il posto di ciascuno\nè scritto nella materia di cui è fatto.',
+       parlato:'Dai l\'elenco senza commentarlo, una riga per volta. La reazione arriva da sola, di solito alla comunanza dei figli o alla menzogna.\n\nPoi la precisazione che rende la cosa più interessante e non meno: quelle regole valgono per chi comanda, non per i produttori. Platone toglie proprietà e famiglia proprio a chi ha il potere — perché chi possiede difende il suo e non più la città. Non è la fantasia di un tiranno: è un tentativo, radicale, di rendere il potere non conveniente.\n\nE due dettagli che spiazzano nella direzione opposta: nella sua città le donne fanno gli stessi mestieri degli uomini, governo compreso — nel IV secolo a.C., nessuno lo aveva mai scritto. E i governanti sono gli unici a cui è proibito arricchirsi.\n\nInfine la nobile menzogna, che è la crepa: l\'uomo che ha passato la vita a dire che la verità non dipende da chi parla, per tenere in piedi la città giusta ammette una bugia di Stato.',
+       seDicono:[
+         {loro:'«Ma questo è un regime totalitario.»',
+          tu:'È l\'accusa di Popper, nel 1945, e non è banale. La difesa possibile è che la Repubblica non sia un programma di governo ma un modello ingrandito per guardare dentro l\'anima — Platone dice di leggere la città come si legge un testo scritto grande. Decidi tu se è una difesa o una scappatoia.'},
+         {loro:'«Perché toglie la famiglia?»',
+          tu:'Perché chi ha un figlio proprio comincia a preferirlo. Se nessuno sa chi è suo, li tratta tutti come tali. È un ragionamento coerente e disumano insieme: la coerenza è quello che dovete valutare.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'L\'anello è ancora lì.\n\nPrima domanda, di nuovo: che cosa fate domani?\n\nSeconda domanda, più difficile:\n\nandreste a vivere nella città che Platone ha costruito\nper dimostrarvi che dovete restare giusti?\n\nE se la risposta è no,\nallora dovete trovare voi un altro motivo.',
+       parlato:'Rifai la votazione sull\'anello e confronta con i bigliettini iniziali. Poi poni la seconda domanda e lasciala pesare: quasi nessuno vuole vivere lì.\n\nIl punto su cui chiudere è questo, e va detto una volta sola: Platone è il primo che prende la domanda sul serio fino in fondo. Non risponde «perché è giusto e basta», non risponde «perché lo dice dio». Cerca una ragione che tenga anche per chi è invisibile — e per trovarla è disposto a rifare l\'uomo e la città.\n\nSe rifiutate il prezzo, la domanda resta aperta e diventa vostra. E ve la porterete addosso per tutto l\'anno: la ritroverete in Kant, in Mill, in Nietzsche, in ogni discussione sul perché non si dovrebbe barare quando barare conviene.\n\nNon chiudere con una morale. Chiudi con l\'anello in mano, e basta.',
+       seDicono:[
+         {loro:'«Quindi Platone ha fallito?»',
+          tu:'Dipende da che cosa gli chiedi. Non ha convinto la maggioranza dei suoi lettori, e la sua città non è mai esistita. Ma ha stabilito che a quella domanda si deve rispondere con un ragionamento, non con una minaccia. Dopo di lui nessuno può più dire «sii giusto perché altrimenti ti punisco».'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'La caverna',
+       corpo:'Prigionieri incatenati fin da bambini, di spalle all\'ingresso, vedono sulla parete di fondo solo le ombre di oggetti portati dietro un muretto davanti a un fuoco. Per loro quelle ombre sono il mondo: danno nomi alle ombre e fanno gare a chi le riconosce prima.\n\nUno viene liberato. È costretto a girarsi, e la luce gli fa male. Fuori, all\'inizio non vede niente; poi le ombre, poi i riflessi nell\'acqua, poi le cose, infine il sole.\n\nSe torna dentro a raccontarlo, con gli occhi ormai disabituati al buio, sbaglia a riconoscere le ombre. Gli altri ridono, e dicono che uscire rovina la vista. E se qualcuno tentasse di liberarli, dice Platone, «lo ucciderebbero».',
+       chiedi:'Quattro passaggi: le ombre, gli oggetti, la luce riflessa, il sole. E poi l\'obbligo di tornare giù. Perché deve tornare, se stava meglio fuori? E l\'ultima riga — Platone la scrive pochi anni dopo la morte di Socrate: a chi pensa?'},
+      {titolo:'La scala di Diotima',
+       corpo:'Nel Simposio, Socrate dice di aver imparato l\'amore da una donna, Diotima di Mantinea. La sua lezione è una scala: si comincia dal desiderio per un corpo bello; si capisce poi che la stessa bellezza è in tutti i corpi; si scopre che la bellezza dell\'anima vale più di quella del corpo; da lì si sale alle leggi e alle conoscenze belle; e in cima, all\'improvviso, si vede il Bello in sé — che non nasce e non muore, non è bello da una parte e brutto dall\'altra, e non è il volto di nessuno.',
+       chiedi:'A ogni gradino si ama qualcosa di meno individuale. Alla fine si ama un\'idea, non una persona. È un guadagno o è una perdita? E la persona da cui siete partiti, in quella scala, che fine ha fatto?'},
+      {titolo:'Il mito di Er',
+       corpo:'Er muore in battaglia e torna in vita sul rogo funebre, dodici giorni dopo. Racconta di aver visto le anime scegliere la vita successiva. C\'erano tutte le vite possibili, di uomini e di animali, e la scelta era libera — ma l\'ordine per scegliere era stato sorteggiato.\n\nChi aveva sorteggiato il primo numero scelse subito, senza guardare bene: la tirannide più grande. Solo dopo si accorse che dentro c\'era anche il destino di divorare i propri figli, e si mise a piangere accusando la sorte.\n\nUlisse, che aveva l\'ultimo numero, girò a lungo e trovò in un angolo la vita di un uomo comune, che nessuno aveva voluto. Disse che avrebbe fatto la stessa scelta anche con il primo numero.',
+       chiedi:'«La colpa è di chi sceglie, il dio non è responsabile.» Con che criterio si sceglie una vita, se non l\'hai ancora vissuta? E perché Ulisse, il più avventuroso di tutti, sceglie di essere nessuno?'}
+    ],
+    testi:[
+      {fonte:'Platone, Repubblica VII 514a — l\'inizio della caverna',
+       corpo:'«Immagina uomini in una dimora sotterranea a forma di caverna, che abbia l\'ingresso aperto alla luce per tutta la larghezza. Vi si trovano fin da bambini, con le gambe e il collo incatenati, così da dover restare fermi e guardare soltanto in avanti.»',
+       glossa:'Nota il dettaglio: «fin da bambini». Non sono stati imprigionati, ci sono nati. Non stanno subendo una privazione, stanno vivendo l\'unica vita che conoscono — ed è questo che rende la liberazione dolorosa invece che gradita.'},
+      {fonte:'Platone, Repubblica V 473d — i filosofi re',
+       corpo:'«Se i filosofi non regneranno nelle città, o quelli che ora chiamiamo re e potenti non filosoferanno davvero e a sufficienza, non ci sarà tregua dai mali per le città né per il genere umano.»',
+       glossa:'La frase è nota, ma va letta insieme a ciò che Platone chiede ai filosofi: non possedere niente, non avere famiglia, tornare nella caverna. Il potere, nella Repubblica, è un dovere sgradevole imposto a chi preferirebbe studiare — non un premio.'},
+      {fonte:'Platone, Fedro 246a-b — la biga alata',
+       corpo:'«Si immagini l\'anima come la forza congiunta di una pariglia alata e di un auriga. I cavalli degli dèi sono tutti buoni; quelli degli altri sono mescolati: uno è bello e buono, l\'altro è il contrario. Perciò guidare, per noi, è necessariamente difficile e faticoso.»',
+       glossa:'È l\'immagine che spiega la tripartizione meglio di qualunque schema: l\'anima non è divisa in tre pezzi accostati, è un attacco unico che tira in direzioni diverse. E il conflitto non è un\'anomalia — è la condizione normale di chi non è un dio.'}
+    ],
+    compito:'Mezza pagina. Descrivete una cosa che non fate soltanto perché qualcuno potrebbe vedervi — una qualunque, anche minima. Poi provate a scrivere il motivo per cui non la fareste comunque, e siate onesti se non lo trovate: il punto in cui vi fermate è quello che ci interessa.',
+    fonti:[
+      'Platone, Repubblica II 357a-367e (Glaucone e Gige), III 414b, V 449a-473e, VI 509d, VII 514a-521b, VIII-IX, X 595a-608b e 614b-621d (mito di Er)',
+      'Platone, Fedone 70c-107b; Menone 80d-86c; Fedro 246a-249d; Simposio 201d-212c',
+      'Platone, Settima lettera 324b-326b — la delusione politica e i viaggi a Siracusa',
+      'Aristotele, Metafisica I 6 e I 9 — la critica alle Idee',
+      'K. Popper, La società aperta e i suoi nemici, vol. I (1945)',
+      'A.N. Whitehead, Processo e realtà (1929) — le «note a piè di pagina»'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',
