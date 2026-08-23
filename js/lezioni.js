@@ -48,41 +48,144 @@ const LEZIONI = {
    lavagna e che cosa rispondono — con la controreplica pronta.
    ══════════════════════════════════════════════════════════ */
 'Filosofia antica · 1 — Dagli Ionici agli atomisti': {
-  albero: {
-    n:'Gli Ionici', d:'il mondo si spiega da sé',
+  /* La mappa e' un'altra cosa dalla provocazione: non serve a
+     condurre un'ora, serve a tenere insieme il capitolo. Deve
+     starci tutto — anche quello che a lezione si dice di sfuggita
+     — perche' e' anche la pagina su cui si ripassa. Le frasi
+     sopra le frecce sono la parte che conta: senza, due concetti
+     vicini non dicono niente. */
+  mappa: {
+    n:'La nascita della filosofia', d:'Ionia, VI–V secolo a.C.',
     f:[
-      {n:'La domanda nuova', d:'non «chi l\'ha fatto» ma «di che cosa è fatto»',
-       f:[{n:'Archè', d:'principio: origine, sostanza e legge insieme'},
-          {n:'Niente dèi nella spiegazione', d:'è questa la rottura, non le risposte'},
-          {n:'Mileto', d:'porto, mercanti, calendari babilonesi, nessun clero'}]},
-      {n:'Talete', d:'l\'acqua',
-       f:[{n:'Tutto viene dall\'umido', d:'i semi, il nutrimento, lo sperma'},
-          {n:'La Terra galleggia sull\'acqua'},
-          {n:'Eclissi del 585 a.C.', d:'prevista, non profetizzata'},
-          {n:'«Tutto è pieno di dèi»', d:'la materia è viva: ilozoismo'}]},
-      {n:'Anassimandro', d:'l\'ápeiron',
-       f:[{n:'Nessun elemento determinato', d:'prevarrebbe sugli altri'},
-          {n:'Illimitato e indeterminato'},
-          {n:'La Terra sta ferma senza appoggi', d:'nessuna ragione di andare da una parte'},
-          {n:'Gli uomini nati dentro i pesci'},
-          {n:'L\'unico frammento', d:'le cose «pagano la pena dell\'ingiustizia»'}]},
-      {n:'Anassimene', d:'l\'aria',
-       f:[{n:'Torna a un elemento', d:'ma spiega come si trasforma'},
-          {n:'Rarefazione e condensazione', d:'una legge quantitativa'},
-          {n:'L\'anima è soffio'}]},
-      {n:'Eraclito', d:'il divenire',
-       f:[{n:'Pánta rhêi', d:'non ci si bagna due volte nello stesso fiume'},
-          {n:'Il fuoco', d:'l\'elemento che è solo trasformazione'},
-          {n:'Pólemos padre di tutte le cose', d:'i contrari tengono insieme il mondo'},
-          {n:'Il lógos', d:'la legge comune che quasi nessuno ascolta'}]},
-      {n:'Gli atomisti', d:'Leucippo e Democrito',
-       f:[{n:'Atomi e vuoto', d:'e nient\'altro'},
-          {n:'Il vuoto esiste', d:'contro Parmenide: il non-essere c\'è'},
-          {n:'Differiscono per forma, ordine, posizione'},
-          {n:'Nessun fine', d:'solo necessità meccanica: urti'},
-          {n:'Le qualità sono convenzione', d:'dolce, amaro, colore: nomi'}]}
+      {r:'nasce dentro', n:'Il contesto di Mileto', d:'perché proprio lì, e proprio allora',
+       f:[
+         {r:'è', n:'Colonia ionica sull\'Egeo', d:'porto ricchissimo, dodici città della lega'},
+         {r:'porta', n:'Contatti con Egitto e Babilonia', d:'merci, ma anche saperi',
+          f:[{r:'da cui', n:'Astronomia babilonese', d:'registri di eclissi, il ciclo di saros'},
+             {r:'da cui', n:'Geometria egizia', d:'misure di campi dopo le piene'}]},
+         {r:'non ha', n:'Nessuna casta sacerdotale', d:'nessun testo sacro da difendere'},
+         {r:'usa', n:'Moneta e legge scritta', d:'valore astratto, norma uguale per tutti'},
+         {r:'vive nella', n:'Pólis', d:'le decisioni si prendono discutendo in pubblico',
+          f:[{r:'quindi', n:'Il ragionamento diventa pubblico', d:'chi parla deve dare ragioni, non oracoli'}]}
+       ]},
+
+      {r:'consiste in', n:'La domanda nuova', d:'dal mito al lógos',
+       f:[
+         {r:'sostituisce', n:'Non «chi», ma «di che cosa»', d:'niente più genealogie di dèi'},
+         {r:'cerca', n:'L\'archè', d:'principio',
+          f:[{r:'cioè', n:'Origine di tutto', d:'da dove viene'},
+             {r:'e', n:'Sostanza permanente', d:'che cosa resta sotto i cambiamenti'},
+             {r:'e', n:'Legge del divenire', d:'secondo quale regola cambia'}]},
+         {r:'presuppone', n:'Unità sotto il molteplice', d:'le mille cose sono modi di una sola'},
+         {r:'studia la', n:'Phýsis', d:'la natura come ciò che cresce da sé'},
+         {r:'produce il', n:'Naturalismo', d:'la spiegazione non chiama in causa gli dèi'},
+         {r:'resta', n:'Ilozoismo', d:'la materia è viva: non c\'è ancora spirito contro materia'}
+       ]},
+
+      {r:'comincia con', n:'Talete di Mileto', d:'circa 624–546 a.C.',
+       f:[
+         {r:'pone come archè', n:'L\'acqua',
+          f:[{r:'perché', n:'Ogni nutrimento è umido', d:'semi, sperma, linfa: la vita è bagnata'},
+             {r:'perché', n:'L\'acqua ha tutti gli stati', d:'ghiaccio, liquido, vapore'}]},
+         {r:'ne deduce', n:'La Terra galleggia sull\'acqua', d:'e i terremoti sono onde'},
+         {r:'prevede', n:'L\'eclissi del 585 a.C.', d:'calcolata, non profetizzata',
+          f:[{r:'prova che', n:'La natura ha regole prevedibili'}]},
+         {r:'misura', n:'L\'altezza delle piramidi', d:'con l\'ombra e la proporzione'},
+         {r:'afferma', n:'«Tutto è pieno di dèi»', d:'divino non è una persona: è la vita della materia'},
+         {r:'su di lui', n:'Due aneddoti opposti', d:'e dicono il contrario',
+          f:[{r:'uno', n:'I frantoi', d:'si arricchisce per dimostrare che potrebbe (Aristotele)'},
+             {r:'l\'altro', n:'Il pozzo', d:'cade guardando il cielo, la serva tracia ride (Platone)'}]}
+       ]},
+
+      {r:'si radicalizza in', n:'Anassimandro', d:'circa 610–546 a.C.',
+       f:[
+         {r:'pone come archè', n:'L\'ápeiron', d:'l\'illimitato-indeterminato',
+          f:[{r:'perché', n:'Un elemento determinato prevarrebbe', d:'l\'acqua asciugherebbe il fuoco'},
+             {r:'quindi è', n:'Senza qualità e senza confini', d:'per poter generare tutti gli opposti'},
+             {r:'ed è', n:'Immortale e ingenerato'}]},
+         {r:'da esso', n:'Si separano i contrari', d:'caldo-freddo, secco-umido'},
+         {r:'regolati da', n:'Ingiustizia e pena', d:'ogni eccesso viene pagato secondo l\'ordine del tempo',
+          f:[{r:'usa', n:'Il linguaggio del diritto', d:'la prima «legge di natura» è presa dal tribunale'}]},
+         {r:'sostiene', n:'La Terra sta ferma senza appoggi',
+          f:[{r:'perché', n:'È equidistante da tutto', d:'non ha ragione di andare in una direzione'},
+             {r:'è già', n:'Principio di ragion sufficiente', d:'in embrione, duemila anni prima'}]},
+         {r:'la descrive come', n:'Cilindro di pietra', d:'alto un terzo della larghezza; viviamo su una faccia'},
+         {r:'ipotizza', n:'Gli uomini nati dentro i pesci',
+          f:[{r:'perché', n:'Un neonato non sopravvive solo', d:'quindi i primi uomini furono allevati da altro'}]},
+         {r:'disegna', n:'La prima carta della Terra', d:'e introduce la meridiana in Grecia'}
+       ]},
+
+      {r:'corregge con', n:'Anassimene', d:'circa 586–528 a.C.',
+       f:[
+         {r:'pone come archè', n:'L\'aria', d:'torna a un elemento determinato — ma con un guadagno'},
+         {r:'spiega il come con', n:'Rarefazione e condensazione', d:'la prima legge quantitativa della storia',
+          f:[{r:'rarefatta dà', n:'Fuoco'},
+             {r:'condensata dà', n:'Vento, nube, acqua, terra, pietra', d:'una scala continua'}]},
+         {r:'ne ricava', n:'La differenza è di quantità', d:'non ci sono sostanze diverse: c\'è più o meno densità'},
+         {r:'applica all\'uomo', n:'L\'anima è soffio', d:'pneuma: ci tiene insieme come l\'aria tiene il mondo',
+          f:[{r:'stabilisce', n:'Microcosmo e macrocosmo', d:'l\'uomo è fatto con la stessa legge del cosmo'}]}
+       ]},
+
+      {r:'si rovescia in', n:'Eraclito di Efeso', d:'circa 535–475 a.C.',
+       f:[
+         {r:'afferma', n:'Pánta rhêi', d:'tutto scorre',
+          f:[{r:'immagine', n:'Il fiume', d:'non ci si bagna due volte nella stessa acqua'},
+             {r:'estremizzato da', n:'Cratilo', d:'nemmeno una volta: e smise di parlare'}]},
+         {r:'sceglie come archè', n:'Il fuoco', d:'l\'unico elemento che è solo trasformazione'},
+         {r:'sostiene', n:'Pólemos padre di tutte le cose', d:'il conflitto genera, non distrugge',
+          f:[{r:'produce', n:'Armonia dei contrari', d:'come l\'arco e la lira: tensioni opposte che tengono'},
+             {r:'implica', n:'L\'unità degli opposti', d:'la via in su e la via in giù sono la stessa'}]},
+         {r:'sotto tutto c\'è', n:'Il lógos', d:'la legge comune che governa il divenire',
+          f:[{r:'ma', n:'I più vivono come dormendo', d:'ciascuno chiuso nel proprio mondo privato'}]}
+       ]},
+
+      {r:'culmina in', n:'Gli atomisti', d:'Leucippo e Democrito, V secolo a.C.',
+       f:[
+         {r:'rispondono a', n:'Il problema di Parmenide', d:'come salvare il movimento senza negare l\'essere'},
+         {r:'ammettono', n:'Gli atomi', d:'pieni, indivisibili, ingenerati, eterni, invisibili',
+          f:[{r:'differiscono per', n:'Forma, ordine, posizione', d:'come le lettere dell\'alfabeto'},
+             {r:'sono', n:'Infiniti di numero'}]},
+         {r:'ammettono anche', n:'Il vuoto', d:'cioè: il non-essere esiste',
+          f:[{r:'serve per', n:'Rendere possibile il moto', d:'senza spazio vuoto niente si sposta'}]},
+         {r:'governati da', n:'Necessità meccanica', d:'anánke: solo urti, nessun fine',
+          f:[{r:'niente', n:'Nessuna causa finale', d:'la natura non vuole niente'},
+             {r:'formano', n:'Il vortice', d:'dínos: gli atomi simili si aggregano'},
+             {r:'producono', n:'Mondi infiniti', d:'nascono e muoiono, senza centro né progetto'}]},
+         {r:'spiegano così', n:'L\'anima', d:'atomi lisci e sferici, i più mobili: si disperde con la morte'},
+         {r:'spiegano così', n:'La percezione', d:'eídola: pellicole di atomi che si staccano dalle cose'},
+         {r:'concludono', n:'Le qualità sono convenzione', d:'«per convenzione dolce, in verità atomi e vuoto»',
+          f:[{r:'distinguono', n:'Conoscenza oscura e genuina', d:'i sensi ingannano, la ragione vede l\'invisibile'}]},
+         {r:'in etica', n:'Euthymía', d:'il buon umore: misura e distacco, non piacere'}
+       ]},
+
+      {r:'lascia in eredità', n:'Che cosa resta', d:'non le risposte: le mosse',
+       f:[
+         {r:'prima di tutto', n:'Spiegare, non raccontare', d:'una spiegazione vale se si può discutere'},
+         {r:'poi', n:'Il riduzionismo materialista', d:'il complesso si spiega col semplice'},
+         {r:'poi', n:'La regolarità della natura', d:'leggi al posto di volontà divine'},
+         {r:'e', n:'Il dubbio sui sensi', d:'il vero può non somigliare all\'apparenza'}
+       ]}
+    ],
+    /* I rimandi trasversali: sono la differenza fra una mappa e un
+       elenco a punti. Legano concetti di aree diverse, e sono la
+       parte in cui si vede se il capitolo e' stato capito o solo
+       imparato a memoria. */
+    incroci:[
+      {da:'L\'ápeiron', a:'L\'acqua', r:'supera'},
+      {da:'Rarefazione e condensazione', a:'L\'ápeiron', r:'risponde al problema lasciato aperto'},
+      {da:'Il vuoto', a:'Il problema di Parmenide', r:'è la mossa decisiva contro'},
+      {da:'Le qualità sono convenzione', a:'Il dubbio sui sensi', r:'fonda'},
+      {da:'Ingiustizia e pena', a:'Pólemos padre di tutte le cose', r:'stesso ordine per conflitto'},
+      {da:'È equidistante da tutto', a:'Principio di ragion sufficiente', r:'diventerà'},
+      {da:'L\'eclissi del 585 a.C.', a:'La regolarità della natura', r:'prima prova di'},
+      {da:'L\'anima è soffio', a:'L\'anima', r:'sarà smontata da'},
+      {da:'Necessità meccanica', a:'Il riduzionismo materialista', r:'apre la strada a'},
+      {da:'Nessuna casta sacerdotale', a:'Naturalismo', r:'rende possibile'},
+      {da:'Il ragionamento diventa pubblico', a:'Spiegare, non raccontare', r:'è la radice di'},
+      {da:'Il fuoco', a:'Pánta rhêi', r:'è il simbolo di'}
     ]
   },
+
   provocazione: {
     titolo:'Che cosa tiene su la Terra?',
     durata:'55 minuti',

@@ -18,7 +18,7 @@
    versione.json sbagliata manderebbe il browser in un giro
    infinito di ricariche.
    ══════════════════════════════════════════════════════════ */
-const VERSIONE='20260823c';
+const VERSIONE='20260823k';
 (async function controllaVersione(){
   try{
     const r=await fetch('versione.json?'+Date.now(), {cache:'no-store'});
@@ -883,7 +883,7 @@ function vociExtra(){
     {g:'Strumenti',k:'__contesto__',l:'Macchina del contesto',  p:'Un anno, la vita di allora', chi:'tutti', ic:'🕰'},
     {g:'Strumenti',k:'__grafici__', l:'Grafici animati',         p:'Quattordici serie storiche', chi:'tutti', ic:'📈'},
     {g:'Strumenti',k:'__map__',     l:'Mappa storica',          p:'Atlante interattivo',      chi:'tutti',   ic:'🗺'},
-    {g:'Strumenti',k:'__lezione__', l:'Schemi e provocazioni',   p:'Un albero e un\'ora, per capitolo', chi:'docente', ic:'🌳'},
+    {g:'Strumenti',k:'__lezione__', l:'Mappe e provocazioni',    p:'Una mappa concettuale e un\'ora', chi:'docente', ic:'🗺'},
     {g:'Strumenti',k:'__verifiche__',l:'Generatore di verifiche',p:'Compiti pronti da stampare',chi:'docente',ic:'📝'},
     {g:'Strumenti',k:'__aula__',    l:'Timer e sorteggio',      p:'Da proiettare in aula',    chi:'docente', ic:'⏱'},
     {g:'Strumenti',k:'__lavagna__', l:'Lavagna',                p:'Da proiettare in aula',    chi:'docente', ic:'🖊'},
