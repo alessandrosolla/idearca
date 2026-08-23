@@ -144,7 +144,13 @@ body.soloProiezione .sipario .barra{display:none}
 #tela{position:absolute;inset:0;pointer-events:none}
 .scena.mappa{align-items:flex-start;justify-content:flex-start;cursor:grab}
 .scena.mappa.trascino{cursor:grabbing}
-.dentro{position:absolute;left:0;top:0;transform-origin:0 0}
+/* Sull'id, non sulla classe: l'elemento ha solo l'id, e finche'
+   la regola e' rimasta scritta come classe non si e' mai applicata.
+   Senza transform-origin all'angolo, ingrandire e trascinare
+   partono dal centro mentre i conti li fanno dall'angolo: a scala
+   vicina a 1 lo scarto non si nota, a scala piccola la mappa
+   finisce fuori dallo schermo e il disegno resta vuoto. */
+#dentro{position:absolute;left:0;top:0;transform-origin:0 0}
 .ramo{display:flex;align-items:center;gap:7.5rem}
 .figli{display:flex;flex-direction:column;gap:1.15rem}
 /* Lo spazio fra un riquadro e l'altro non e' estetica: e' il posto
@@ -180,6 +186,12 @@ body.soloProiezione .sipario .barra{display:none}
 .nodo.liv1{border-color:rgba(45,90,39,.45);background:#eef3ec}
 .nodo.liv1 .nn{font-weight:600}
 .nodo.liv3{border-style:dashed}
+/* Il secondo strato si riconosce: bordo piu' leggero e un filo di
+   rientro, cosi' si vede a occhio che cosa e' struttura e che cosa
+   e' approfondimento. */
+.nodo.piu{background:#fbfaf6;border-color:rgba(45,90,39,.16)}
+.nodo.piu .nn{font-size:.92rem;font-weight:400;color:#3d4e3b}
+.nodo.legato{box-shadow:0 0 0 3px rgba(154,124,46,.45)}
 .nodo.spento{opacity:.13}
 .nodo.acceso{box-shadow:0 0 0 3px rgba(154,124,46,.22)}
 
@@ -229,6 +241,8 @@ body.soloProiezione .sipario .barra{display:none}
   <div class="barra">
     <span class="tit" id="p-tit"></span>
     <span class="tit" id="p-suggerimento" style="font-weight:400;letter-spacing:.04em;text-transform:none;color:#a8b3a6"></span>
+    <button id="p-tutta"   onclick="tuttaLaMappa()" style="display:none">⤢ Tutta la mappa</button>
+    <button id="p-fondo"   onclick="commutaFondo()"  style="display:none">⌄ Più a fondo</button>
     <button id="p-rimandi" onclick="commutaRimandi()" style="display:none">⤳ Rimandi</button>
     <span class="passi" id="p-passi"></span>
     <span class="spazio"></span>
@@ -242,7 +256,7 @@ body.soloProiezione .sipario .barra{display:none}
   </div>
 </div>
 
-<script src="../js/lezioni.js?v=20260823t"></script>
+<script src="../js/lezioni.js?v=20260824c"></script>
 <script>
 /* ══════════════════════════════════════════════════════════
    Nessuna libreria, come tutto il resto del sito.
@@ -286,6 +300,11 @@ let vista = {x:0, y:0, s:1};
    dodici tratteggi che attraversano otto aree sono un groviglio.
    Si accendono quando servono — cioe' quando li si commenta. */
 let rimandi = false;
+/* Il secondo strato: i concetti segnati `piu` restano nascosti
+   finche' non li si chiede. Una mappa deve poter essere letta a
+   colpo d'occhio e insieme scavata fino in fondo, e sono due cose
+   che non stanno nella stessa schermata. */
+let profondo = false;
 let finestra = null;        // la finestra da proiettare, se aperta
 
 /* ---------- il canale fra le due finestre ---------- */
@@ -303,6 +322,8 @@ function ricevi(m){
     corrente = m.corrente; modo = m.modo; passo = m.passo;
     if(m.vista) vista = m.vista;
     if(typeof m.rimandi === 'boolean') rimandi = m.rimandi;
+    if(typeof m.profondo === 'boolean' && m.profondo !== profondo){
+      profondo = m.profondo; stati = []; }
     document.getElementById('pieno').classList.add('on');
     disegna(m.vista ? 'tienilaVista' : '');
   }
@@ -313,7 +334,7 @@ window.addEventListener('storage', e=>{
   if(e.key === CANALE && e.newValue){ try{ ricevi(JSON.parse(e.newValue)); }catch(_){} }
 });
 function spedisciStato(){
-  manda({tipo:'stato', corrente, modo, passo, vista:{...vista}, rimandi});
+  manda({tipo:'stato', corrente, modo, passo, vista:{...vista}, rimandi, profondo});
 }
 
 /* ---------- l'elenco ---------- */
@@ -501,12 +522,16 @@ function chiudiProiezione(){
    l'area si apre in due volte, meta' rami per volta.
    ──────────────────────────────────────────────────────── */
 const SOGLIA_AREA = 12;
+function contaVisibili(x){
+  if(x.piu && !profondo) return 0;
+  return 1 + (x.f||[]).reduce((s,y)=>s+contaVisibili(y), 0);
+}
 function listaStati(){
   const M = mappaDi(LEZIONI[corrente]);
   const s = [{tipo:'titolo'}, {tipo:'aree'}];
   (M.f||[]).forEach((a,i)=>{
-    const quanti = contaMappa(a).nodi;
-    const rami = (a.f||[]).length;
+    const quanti = contaVisibili(a);
+    const rami = (a.f||[]).filter(x=>!(x.piu && !profondo)).length;
     if(quanti > SOGLIA_AREA && rami >= 4){
       const meta = Math.ceil(rami/2);
       s.push({tipo:'area', i, da:0, a:meta, parte:'1 di 2'});
@@ -520,12 +545,49 @@ function listaStati(){
 }
 let stati = [];
 function statiMappa(){ return stati.length; }
+function acceso(id, si){
+  const b = document.getElementById(id);
+  if(!b) return;
+  b.style.background = si ? '#2d5a27' : '#fff';
+  b.style.color      = si ? '#fff' : '#2d5a27';
+}
+/* I rimandi legano concetti che stanno in aree lontane: accesi
+   mentre si guarda un angolo della mappa non si vedevano, perche'
+   l'altro capo era fuori schermo — sembravano non funzionare.
+   Adesso accenderli inquadra tutta la mappa, e i due capi di ogni
+   rimando si illuminano, cosi' si trovano. */
 function commutaRimandi(){
   rimandi = !rimandi;
-  const b = document.getElementById('p-rimandi');
-  if(b) b.style.background = rimandi ? '#2d5a27' : '#fff', b.style.color = rimandi ? '#fff' : '#2d5a27';
-  collega();
+  acceso('p-rimandi', rimandi);
+    /* Il secondo argomento di toggle, se e' `undefined`, non forza
+     niente: ribalta. Con `rimandi && n.haRimando` i nodi senza
+     rimando davano undefined e si accendevano tutti. */
+  for(const n of nodi) n.el.classList.toggle('legato', !!(rimandi && n.haRimando));
+  if(rimandi){
+    /* Accendere i rimandi porta a vedere tutta la mappa davvero
+       incorniciata: se ne resta fuori nove decimi, i tratteggi
+       hanno l'altro capo fuori schermo e sembra che il bottone
+       non faccia niente. Poi ci si ingrandisce sopra. */
+    passo = statiMappa()-1;
+    disegna();
+    adatta(true, true);
+    applicaVista();
+  }
+  else collega();
   if(finestra) spedisciStato();
+}
+function commutaFondo(){
+  profondo = !profondo;
+  acceso('p-fondo', profondo);
+  stati = listaStati(); stati._per = corrente;
+  passo = Math.min(passo, stati.length-1);
+  disegna();
+  if(finestra) spedisciStato();
+}
+function tuttaLaMappa(){
+  passo = statiMappa()-1;
+  disegna();
+  if(finestra){ aggiornaRegia(); spedisciStato(); }
 }
 function quanti(){
   return modo==='mappa' ? statiMappa() : tempiDi(LEZIONI[corrente].provocazione).length;
@@ -590,14 +652,16 @@ function disegna(tienilaVista){
 
   if(modo==='provocazione'){
     tela.style.display='none'; scena.classList.remove('mappa');
-    const br = document.getElementById('p-rimandi');
-    if(br) br.style.display = 'none';
+    for(const id of ['p-rimandi','p-fondo','p-tutta']){
+      const b = document.getElementById(id); if(b) b.style.display = 'none';
+    }
     d.style.transform=''; d.style.position='';
     disegnaAtto(d); return;
   }
   tela.style.display=''; scena.classList.add('mappa');
-  const br = document.getElementById('p-rimandi');
-  if(br) br.style.display = '';
+  for(const id of ['p-rimandi','p-fondo','p-tutta']){
+    const b = document.getElementById(id); if(b) b.style.display = '';
+  }
   const sg = document.getElementById('p-suggerimento');
   if(sg) sg.textContent = 'trascina per muoverti · rotella per ingrandire';
   d.style.position='absolute';
@@ -640,7 +704,9 @@ function costruisci(d){
     el.innerHTML = `<div class="nn">${esc(nodo.n)}</div>` +
                    (nodo.d ? `<div class="nd">${esc(nodo.d)}</div>` : '');
     ramo.appendChild(el);
-    const mio = {el, padre, liv, area, sotto, n:nodo.n};
+    const mio = {el, padre, liv, area, sotto, n:nodo.n,
+                 piu: !!(nodo.piu || (padre && padre.piu))};
+    if(mio.piu) el.classList.add('piu');
     nodi.push(mio);
     conte.set(nodo.n, (conte.get(nodo.n)||0) + 1);
     if(!perNome.has(nodo.n)) perNome.set(nodo.n, mio);
@@ -667,6 +733,7 @@ function costruisci(d){
     const da = perNome.get(c.da), a = perNome.get(c.a);
     if(!da || !a){ console.warn('[mappa] incrocio senza bersaglio:', c.da, '->', c.a); continue; }
     archi.push({da, a, r:c.r||'', incrocio:true});
+    da.haRimando = a.haRimando = true;
   }
 }
 
@@ -689,10 +756,12 @@ function disegnaMappa(d, tienilaVista){
      titolo dell'area basta a dire dove si e'. */
   for(const n of nodi){
     let vedo;
-    if(n.liv===0) vedo = st.tipo!=='area';
+    if(n.piu && !profondo) vedo = false;
+    else if(n.liv===0) vedo = st.tipo!=='area';
     else if(n.liv===1) vedo = st.tipo==='aree' || ultimo || (apertaOra!==null && n.area===apertaOra);
     else vedo = ultimo || (apertaOra!==null && n.area===apertaOra &&
                            n.sotto >= st.da && n.sotto < st.a);
+    if(n.piu && !profondo) vedo = false;
     n.visibile = vedo;
     /* La radice si nasconde da sola, non con il suo contenitore:
        dentro il .ramo della radice c'e' tutta la mappa, e
@@ -714,7 +783,7 @@ function disegnaMappa(d, tienilaVista){
    a una misura in cui si legge e ci si muove dentro, dall'angolo
    in alto a sinistra — come si apre una carta geografica. */
 const SCALA_MINIMA_QUADRO = 0.8;
-function adatta(intera){
+function adatta(intera, incornicia){
   const dint = document.getElementById('dentro-int');
   const d = document.getElementById('dentro');
   if(!dint) return;
@@ -726,9 +795,9 @@ function adatta(intera){
      non accorgersene mai. Meglio dirlo. */
   if(!w || !h){ console.warn('[mappa] niente da misurare: la scena e vuota'); return; }
   let k = Math.min(1.35, (s.width-40)/w, (s.height-30)/h);
-  if(intera) k = Math.max(k, SCALA_MINIMA_QUADRO);
+  if(intera && !incornicia) k = Math.max(k, SCALA_MINIMA_QUADRO);
   vista.s = k>0 ? k : 1;
-  if(intera && h*vista.s > s.height){
+  if(intera && !incornicia && h*vista.s > s.height){
     vista.x = 24; vista.y = 20;
   }else{
     vista.x = (s.width  - w*vista.s)/2;
@@ -778,60 +847,106 @@ function collega(){
   const cozza = (a,b)=> a.x < b.x+b.w && a.x+a.w > b.x && a.y < b.y+b.h && a.y+a.h > b.y;
   const libero = r => !riquadri.some(b=>cozza(r,b)) && !scritte.some(b=>cozza(r,b));
 
+  /* ── COME SI TIRANO LE LINEE ──────────────────────────────
+     Prima erano curve che partivano dalla radice e arrivavano a
+     ogni figlio: con otto figli diventano otto curve quasi
+     parallele, lunghissime, che si accavallano e non si capisce
+     piu' quale entra dove. In una mappa la linea non deve essere
+     bella: deve dire senza sforzo chi discende da chi.
+     Quindi percorsi ad angolo, con gli spigoli arrotondati. I
+     figli di uno stesso nodo condividono lo stesso tratto
+     verticale — una dorsale — e da li' escono in orizzontale
+     ciascuno alla propria altezza. E' la forma degli organigrammi
+     e delle mappe fatte a mano, e si segue con l'occhio senza
+     doverla studiare.
+     La frase sulla relazione va sull'ultimo tratto orizzontale,
+     quello che entra nel figlio: li' non puo' esserci dubbio su
+     quale arco stia descrivendo, e ogni figlio ha la sua altezza,
+     quindi due frasi non si incontrano mai.
+     ───────────────────────────────────────────────────────── */
+  const R = Math.max(4, 11*vista.s);
+
+  function angolo(x1,y1,x2,y2){
+    const dorsale = x1 + (x2-x1)*0.42;
+    c.beginPath();
+    if(Math.abs(y2-y1) < 1.5){ c.moveTo(x1,y1); c.lineTo(x2,y2); c.stroke(); return dorsale; }
+    const verso = y2 > y1 ? 1 : -1;
+    const r = Math.min(R, Math.abs(y2-y1)/2, Math.abs(dorsale-x1), Math.abs(x2-dorsale));
+    c.moveTo(x1, y1);
+    c.lineTo(dorsale - r, y1);
+    c.quadraticCurveTo(dorsale, y1, dorsale, y1 + verso*r);
+    c.lineTo(dorsale, y2 - verso*r);
+    c.quadraticCurveTo(dorsale, y2, dorsale + r, y2);
+    c.lineTo(x2, y2);
+    c.stroke();
+    return dorsale;
+  }
+
+  function punta(x,y,colore){
+    const p = Math.max(4, 6*vista.s);
+    c.save(); c.setLineDash([]);
+    c.beginPath();
+    c.moveTo(x,y); c.lineTo(x-p, y-p*0.62); c.lineTo(x-p, y+p*0.62); c.closePath();
+    c.fillStyle = colore; c.fill(); c.restore();
+  }
+
+  function scrivi(testo, cx, cy, colore){
+    if(!testo || corpo < 8) return;
+    const larg = c.measureText(testo).width;
+    const ph = corpo*1.75, pw = larg + corpo*1.2;
+    for(const dy of [0, -ph*1.05, ph*1.05, -ph*2.1, ph*2.1]){
+      const r = {x:cx-pw/2, y:cy+dy-ph/2, w:pw, h:ph};
+      if(!libero(r)) continue;
+      scritte.push(r);
+      c.save();
+      c.fillStyle = '#FBF7EF';
+      c.beginPath();
+      if(c.roundRect) c.roundRect(r.x, r.y, pw, ph, ph/2); else c.rect(r.x, r.y, pw, ph);
+      c.fill();
+      c.fillStyle = colore;
+      c.fillText(testo, cx, r.y + ph/2);
+      c.restore();
+      return;
+    }
+  }
+
+  // prima l'albero, poi i rimandi: i tratteggi stanno sopra
   for(const arco of archi){
+    if(arco.incrocio) continue;
     if(!arco.da.visibile || !arco.a.visibile) continue;
-    if(arco.incrocio && !rimandi) continue;
     const A = arco.da.el.getBoundingClientRect(), B = arco.a.el.getBoundingClientRect();
     const x1 = A.right-s.left, y1 = A.top+A.height/2-s.top;
     const x2 = B.left -s.left, y2 = B.top+B.height/2-s.top;
     c.save();
-    c.lineWidth = Math.max(1, 1.4*vista.s);
-    if(arco.incrocio){
-      c.strokeStyle = 'rgba(154,124,46,.72)';
-      c.setLineDash([Math.max(3,5*vista.s), Math.max(3,4*vista.s)]);
-    }else{
-      c.strokeStyle = 'rgba(45,90,39,.38)';
-    }
-    const m = arco.incrocio ? Math.max(40, Math.abs(x2-x1)/2) : (x2-x1)/2;
+    c.lineWidth = Math.max(1, 1.6*vista.s);
+    c.strokeStyle = arco.a.piu ? 'rgba(45,90,39,.24)' : 'rgba(45,90,39,.45)';
+    const dorsale = angolo(x1,y1,x2,y2);
+    c.restore();
+    punta(x2, y2, arco.a.piu ? 'rgba(45,90,39,.3)' : 'rgba(45,90,39,.55)');
+    scrivi(arco.r, (dorsale + x2)/2, y2 - corpo*1.35, '#5a6b58');
+  }
+
+  for(const arco of archi){
+    if(!arco.incrocio || !rimandi) continue;
+    if(!arco.da.visibile || !arco.a.visibile) continue;
+    const A = arco.da.el.getBoundingClientRect(), B = arco.a.el.getBoundingClientRect();
+    const x1 = A.right-s.left, y1 = A.top+A.height/2-s.top;
+    const x2 = B.left -s.left, y2 = B.top+B.height/2-s.top;
+    c.save();
+    c.lineWidth = Math.max(1, 1.5*vista.s);
+    c.strokeStyle = 'rgba(154,124,46,.8)';
+    c.setLineDash([Math.max(3,6*vista.s), Math.max(3,5*vista.s)]);
+    const m = Math.max(60*vista.s, Math.abs(x2-x1)/2);
     c.beginPath();
     c.moveTo(x1,y1);
-    c.bezierCurveTo(x1+m,y1, x2-m,y2, x2,y2);
+    c.bezierCurveTo(x1+m, y1, x2-m, y2, x2, y2);
     c.stroke();
-    /* La punta della freccia guarda sempre a destra: l'ultimo
-       punto di controllo della curva ha la stessa altezza del
-       nodo di arrivo, quindi la curva ci entra orizzontale. */
-    const p = Math.max(4, 6*vista.s);
-    c.setLineDash([]);
-    c.beginPath();
-    c.moveTo(x2,y2); c.lineTo(x2-p, y2-p*0.62); c.lineTo(x2-p, y2+p*0.62); c.closePath();
-    c.fillStyle = arco.incrocio ? 'rgba(154,124,46,.8)' : 'rgba(45,90,39,.45)';
-    c.fill();
     c.restore();
-
-    if(arco.r && corpo >= 8){
-      const mx = (x1+x2)/2, my = (y1+y2)/2;
-      const larg = c.measureText(arco.r).width;
-      const ph = corpo*1.75, pw = larg + corpo*1.2;
-      const passi = [0, -ph*1.05, ph*1.05, -ph*2.1, ph*2.1, -ph*3.15, ph*3.15];
-      let posto = null;
-      for(const dy of passi){
-        const r = {x:mx-pw/2, y:my+dy-ph/2, w:pw, h:ph};
-        if(libero(r)){ posto = r; break; }
-      }
-      if(posto){
-        scritte.push(posto);
-        c.save();
-        c.fillStyle = '#FBF7EF';
-        c.beginPath();
-        if(c.roundRect) c.roundRect(posto.x, posto.y, pw, ph, ph/2);
-        else c.rect(posto.x, posto.y, pw, ph);
-        c.fill();
-        c.fillStyle = arco.incrocio ? '#9a7c2e' : '#5a6b58';
-        c.fillText(arco.r, mx, posto.y + ph/2);
-        c.restore();
-      }
-    }
+    punta(x2, y2, 'rgba(154,124,46,.9)');
+    scrivi(arco.r, (x1+x2)/2, (y1+y2)/2, '#9a7c2e');
   }
+
+
 }
 
 /* ---------- trascinare e ingrandire ----------
