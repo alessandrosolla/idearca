@@ -2931,6 +2931,239 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Storia medievale · 1 — La ripresa dopo l\'anno Mille': {
+  mappa: {
+    n:'La ripresa dopo l\'anno Mille', d:'X-XIII secolo: l\'Europa raddoppia',
+    f:[
+      {r:'parte da', n:'Un\'Europa svuotata', d:'il punto piu basso, fra IX e X secolo',
+       f:[
+         {r:'aveva subito', n:'Tre ondate di invasioni', d:'e finiscono quasi insieme',
+          f:[{r:'gli', n:'Ungari', d:'fermati a Lechfeld nel 955 da Ottone I'},
+             {r:'i', n:'Saraceni', d:'dalle basi in Sicilia e in Provenza'},
+             {r:'i', n:'Normanni', d:'che nel 911 ottengono la Normandia e si fermano'}]},
+         {r:'conta', n:'Circa 38 milioni di abitanti', d:'in tutta Europa: meno che nell\'impero romano'},
+         {r:'si organizza in', n:'Curtis', d:'l\'azienda agraria chiusa: si produce quasi solo per consumare',
+          f:[{r:'divisa in', n:'Pars dominica e pars massaricia', d:'la terra del signore e quella data ai coloni'},
+             {piu:true, r:'e le corvées', n:'Giornate di lavoro gratuito', d:'sulla terra del signore: e sono il prezzo del podere'}]},
+         {r:'si difende con', n:'L\'incastellamento', d:'la popolazione si raccoglie intorno a un castello'},
+         {r:'e usa poco', n:'La moneta', d:'gli scambi sono baratti e servizi'}
+       ]},
+
+      {r:'cambia grazie a', n:'Poche invenzioni', d:'e sono attrezzi, non idee',
+       f:[
+         {r:'il', n:'Collare rigido a spalla', d:'sposta il tiro dalla gola alle spalle del cavallo',
+          f:[{r:'perché prima', n:'Il giogo strozzava', d:'l\'animale respirava male e tirava una frazione della propria forza'},
+             {r:'e ora', n:'Il cavallo tira quattro volte tanto', d:'e cammina piu veloce del bue'},
+             {piu:true, r:'arriva', n:'Dall\'Asia centrale', d:'attraverso le steppe, fra IX e X secolo'}]},
+         {r:'l\'', n:'Aratro pesante', d:'con vomere, coltro e versoio: non graffia la terra, la rivolta',
+          f:[{r:'permette di lavorare', n:'I suoli grassi del Nord', d:'argillosi e pesanti, che l\'aratro romano non scalfiva'},
+             {piu:true, r:'ma richiede', n:'Piu animali e piu uomini', d:'e quindi spinge a lavorare insieme'}]},
+         {r:'la', n:'Ferratura', d:'lo zoccolo non si consuma: il cavallo dura e lavora su terreni duri'},
+         {r:'la', n:'Rotazione triennale', d:'al posto della biennale: un terzo a riposo invece della meta',
+          f:[{r:'guadagna', n:'Un sesto di terra in piu ogni anno', d:'dal cinquanta per cento coltivato al sessantasei'},
+             {r:'e introduce', n:'I legumi a primavera', d:'fave, piselli, lenticchie: proteine, e fissano l\'azoto'}]},
+         {r:'e i', n:'Mulini', d:'ad acqua ovunque, poi a vento dal XII secolo',
+          f:[{r:'contati nel', n:'Domesday Book', d:'1086: 5.624 mulini ad acqua nella sola Inghilterra'},
+             {r:'liberano', n:'Braccia dalla macina', d:'era un lavoro da ore, quotidiano, quasi sempre femminile'}]}
+       ]},
+
+      {r:'ma servono anche', n:'Le condizioni', d:'gli attrezzi da soli non bastano',
+       f:[
+         {r:'la fine delle', n:'Incursioni', d:'seminare ha senso solo se si e ragionevolmente sicuri di raccogliere'},
+         {r:'l\'', n:'Optimum climatico medievale', d:'circa 950-1250: qualche grado in piu, stagioni piu lunghe',
+          f:[{piu:true, r:'tanto che', n:'Si coltiva vite in Inghilterra', d:'e i Normanni colonizzano la Groenlandia'}]},
+         {r:'e i', n:'Dissodamenti', d:'si abbatte la foresta e si prosciugano le paludi',
+          f:[{r:'guidati da', n:'Monaci e signori', d:'che offrono terra e franchigie a chi va a dissodare'},
+             {piu:true, r:'nascono', n:'Le villenove', d:'villaggi fondati apposta, con nomi che li tradiscono ancora oggi'}]}
+       ]},
+
+      {r:'produce', n:'Il raddoppio', d:'la curva che spiega tutto il resto',
+       f:[
+         {r:'da 38 a', n:'Circa 75 milioni', d:'fra il 1000 e il 1300: la popolazione quasi raddoppia'},
+         {r:'perche calano', n:'Le carestie', d:'non spariscono: diventano meno frequenti'},
+         {r:'e cresce', n:'Il surplus', d:'per la prima volta si produce piu di quanto serva a sopravvivere',
+          f:[{r:'quindi', n:'Non tutti servono nei campi', d:'e chi avanza puo fare altro'},
+             {r:'e quindi', n:'C\'e qualcosa da vendere', d:'senza eccedenza non esiste mercato'}]}
+       ]},
+
+      {r:'fa rinascere', n:'Le citta', d:'dopo cinque secoli di svuotamento',
+       f:[
+         {r:'crescono i', n:'Borghi', d:'fuori dalle mura vecchie: da burgus viene borghesia'},
+         {r:'e con essi', n:'Una classe nuova', d:'mercanti e artigiani: non pregano, non combattono, non arano'},
+         {r:'si organizzano in', n:'Corporazioni', d:'arti e mestieri: regolano prezzi, qualita, apprendistato'},
+         {r:'e conquistano', n:'Franchigie', d:'esenzioni e diritti strappati o comprati dal signore',
+          f:[{r:'da cui', n:'Il Comune', d:'i cittadini giurano fra loro e si governano'},
+             {r:'e la regola', n:'L\'aria della citta rende liberi', d:'un anno e un giorno dentro le mura, e il servo e libero',
+              f:[{piu:true, r:'in tedesco', n:'Stadtluft macht frei', d:'formula attestata nelle citta dell\'Impero'}]}]}
+       ]},
+
+      {r:'rimette in moto', n:'Il commercio', d:'e con esso il denaro',
+       f:[
+         {r:'riapre', n:'Il Mediterraneo', d:'con Venezia, Genova, Pisa, Amalfi'},
+         {r:'collega', n:'Nord e Sud', d:'i panni delle Fiandre contro le spezie e la seta d\'Oriente',
+          f:[{r:'si incontrano alle', n:'Fiere di Champagne', d:'sei fiere l\'anno, un ciclo continuo, sotto protezione del conte'}]},
+         {r:'torna', n:'La moneta d\'oro', d:'dopo cinque secoli di solo argento',
+          f:[{r:'il', n:'Fiorino', d:'Firenze 1252: diventa la moneta di riferimento d\'Europa'},
+             {piu:true, r:'e il', n:'Genovino', d:'coniato lo stesso anno: Genova e Firenze quasi insieme'}]},
+         {r:'nascono', n:'Gli strumenti del credito', d:'perche portare oro sulle strade e pericoloso',
+          f:[{r:'la', n:'Lettera di cambio', d:'pago qui, tu incassi altrove in un\'altra moneta'},
+             {r:'la', n:'Partita doppia', d:'ogni operazione scritta due volte: si controlla da sola'},
+             {r:'e la', n:'Societa in accomandita', d:'chi mette il capitale e chi viaggia, e si dividono il rischio'}]},
+         {r:'aggirando', n:'Il divieto dell\'usura', d:'la Chiesa proibisce il prestito a interesse',
+          f:[{r:'con il', n:'Cambio', d:'l\'interesse si nasconde nel tasso fra due monete'},
+             {piu:true, r:'e con', n:'Il rischio', d:'se c\'e pericolo il guadagno e lecito: non e usura, e assicurazione'}]}
+       ]},
+
+      {r:'ridisegna', n:'La societa', d:'lo schema antico non basta piu',
+       f:[
+         {r:'lo schema era', n:'I tre ordini', d:'chi prega, chi combatte, chi lavora',
+          f:[{piu:true, r:'formulato da', n:'Adalberone di Laon', d:'intorno al 1025, come se fosse eterno'}]},
+         {r:'ma ora c\'e', n:'Chi non sta in nessuno dei tre', d:'il mercante: e lo schema si incrina'},
+         {r:'la servitu', n:'Si attenua', d:'affrancamenti, canoni in denaro al posto delle corvées',
+          f:[{r:'perche al signore', n:'Conviene il denaro', d:'con i contanti compra cio che vuole, con le giornate no'}]},
+         {r:'e nascono', n:'Ordini religiosi nuovi', d:'che sono anche imprese agrarie',
+          f:[{r:'i', n:'Cluniacensi', d:'dal 910: liturgia grandiosa e rete europea di monasteri'},
+             {r:'i', n:'Cistercensi', d:'dal 1098: ritorno alla regola, e bonifiche su scala industriale'}]}
+       ]},
+
+      {r:'lascia', n:'Un\'Europa nuova', d:'e una fragilita nascosta',
+       f:[
+         {r:'nascono', n:'Le universita', d:'Bologna 1088, Parigi, Oxford: corporazioni di studenti e maestri'},
+         {r:'si costruiscono', n:'Le cattedrali gotiche', d:'possibili solo con surplus, tecnica e citta ricche'},
+         {r:'cambia', n:'Il tempo', d:'quello della Chiesa scandito dalle campane, quello del mercante dall\'orologio',
+          f:[{piu:true, r:'e nel Trecento', n:'Arrivano gli orologi meccanici', d:'sulle torri civiche: le ore diventano uguali'}]},
+         {r:'ma la crescita', n:'Arriva al limite', d:'intorno al 1300 le terre buone sono finite',
+          f:[{r:'e prepara', n:'La crisi del Trecento', d:'carestie, peste nera, crollo demografico'}]}
+       ]}
+    ],
+    incroci:[
+      {da:'Il cavallo tira quattro volte tanto', a:'Circa 75 milioni', r:'e una delle cause di',
+       perche:'Piu forza di trazione significa piu terra arata nello stesso tempo, e quindi piu cibo. La demografia europea non raddoppia per una decisione politica: raddoppia perche cambia il rendimento del lavoro nei campi.'},
+      {da:'I legumi a primavera', a:'Le carestie', r:'contribuiscono a ridurre',
+       perche:'Il terzo campo seminato in primavera da fave e piselli: proteine vegetali in una dieta che ne aveva pochissime, e piante che restituiscono azoto al terreno. Due effetti in una mossa — nutrizione migliore e terra meno stanca.'},
+      {da:'Il surplus', a:'Le citta', r:'e la condizione di',
+       perche:'Una citta e un luogo dove si vive senza produrre cibo. Finche ogni contadino nutre a stento se stesso, le citta non possono esistere. La rinascita urbana comincia nei campi, non nelle mura.'},
+      {da:'Non tutti servono nei campi', a:'Una classe nuova', r:'rende possibile',
+       perche:'Il mercante e l\'artigiano esistono solo se qualcun altro produce il loro cibo. La comparsa di un ceto che non prega, non combatte e non ara e la conseguenza sociale diretta di un raccolto piu abbondante.'},
+      {da:'L\'aria della citta rende liberi', a:'Si attenua', r:'accelera il fatto che la servitu',
+       perche:'Se il servo che scappa in citta e resta un anno e un giorno diventa libero, il signore ha una ragione concreta per trattenere i propri contadini offrendo condizioni migliori. La concorrenza fra campagna e citta lavora a favore dei servi.'},
+      {da:'Conviene il denaro', a:'La moneta d\'oro', r:'ha bisogno che',
+       perche:'Trasformare le corvées in canoni in denaro si puo fare solo se il denaro circola davvero e vale. La rinascita monetaria non e uno sfondo: e la condizione tecnica della trasformazione dei rapporti di lavoro.'},
+      {da:'Il divieto dell\'usura', a:'Lettera di cambio', r:'e all\'origine di',
+       perche:'Proibito il prestito a interesse, l\'interesse si nasconde nella differenza fra due monete e due piazze. Il piu potente strumento finanziario del Medioevo nasce come modo elegante di aggirare un divieto religioso.'},
+      {da:'Domesday Book', a:'Braccia dalla macina', r:'misura quante',
+       perche:'Cinquemilaseicento mulini in una sola isola dicono che la macinatura a mano e finita in tre generazioni. Erano ore quotidiane di lavoro, quasi sempre femminile: e la piu grande liberazione di tempo prima della rivoluzione industriale.'},
+      {da:'Optimum climatico medievale', a:'Poche invenzioni', r:'e la condizione che rende efficaci',
+       perche:'Gli stessi attrezzi in un secolo freddo rendono molto meno. Il clima non spiega da solo la ripresa, ma senza di esso il collare e l\'aratro avrebbero prodotto una frazione dei loro effetti. Nessuna causa da sola basta.'},
+      {da:'Arriva al limite', a:'Dissodamenti', r:'e il punto in cui si esauriscono i',
+       perche:'Intorno al 1300 si e gia disboscato tutto cio che valeva la pena e si coltivano terre marginali che rendono poco. La stessa crescita che aveva funzionato per tre secoli si mangia le proprie riserve, e la popolazione resta esposta.'},
+      {da:'Il Comune', a:'Franchigie', r:'nasce dall\'accumularsi di',
+       perche:'Non c\'e un giorno in cui il Comune viene fondato: ci sono decenni di esenzioni fiscali, diritti di mercato, tribunali propri, strappati o comprati un pezzo per volta. Quando il pacchetto e completo, la citta si governa da se.'},
+      {da:'Il tempo', a:'Chi non sta in nessuno dei tre', r:'cambia insieme alla comparsa di',
+       perche:'Per chi prega e chi ara, le ore le scandiscono le campane e le stagioni. Per chi presta denaro il tempo e una misura che produce valore — ed e il motivo per cui saranno le citta mercantili a mettere il primo orologio sulla torre.'}
+    ]
+  },
+  provocazione: {
+    titolo:'Chi ha fatto rinascere l\'Europa',
+    durata:'55 minuti',
+    domandaMadre:'La storia la fanno gli uomini che ricordiamo, o le cose che non ricordiamo?',
+    perche:'La classe attribuisce la rinascita dell\'anno Mille a imperatori, papi e crociate — cioe ai nomi che sa — e scopre che le cause principali sono un collare per cavalli, un aratro e un campo diviso in tre. E la prima volta nell\'anno che si trova davanti a una spiegazione storica senza protagonisti, ed e il modo migliore per capire che cosa sia la storia economica e sociale. Il colpo di scena smonta anche il pezzo di mitologia che tutti conoscono — i terrori dell\'anno Mille, inventati nell\'Ottocento — e mostra che la stessa tecnica che libera crea nuove forme di dipendenza. Si chiude su una domanda che li riguarda: quale oggetto di oggi risultera piu importante di qualunque politico?',
+    occorrente:'Se si riesce, un\'immagine di un collare a spalla e una di un giogo alla gola: la differenza si capisce a occhio in tre secondi.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'Fra il 1000 e il 1300 la popolazione europea\npassa da circa 38 a circa 75 milioni.\n\nQuasi raddoppia, in trecento anni,\nsenza medicine, senza vaccini,\nsenza nessuna scoperta scientifica.\n\nNello stesso periodo rinascono le citta,\ntorna la moneta d\'oro,\nsi costruiscono le cattedrali\ne nascono le universita.\n\nChi lo ha fatto?',
+       parlato:'Fai la domanda cosi com\'e e raccogli i nomi a mano alzata, scrivendoli mentalmente in un elenco: usciranno Ottone I, i papi, le crociate, Federico Barbarossa, i Comuni.\n\nNon correggere nessuno. Poi chiedi una cosa sola, e falla pesare: per raddoppiare una popolazione serve piu cibo. Quale di questi nomi ha prodotto piu cibo?\n\nIl silenzio che segue e il vero inizio della lezione.\n\nSe qualcuno dice «le crociate hanno portato ricchezza», annota che la prima parte nel 1096 — cioe quando la crescita e gia cominciata da un secolo. Le crociate sono un effetto della ripresa, non la sua causa.',
+       seDicono:[
+         {loro:'«L\'ha fatto la Chiesa: i monasteri coltivavano.»',
+          tu:'Vero, e i cistercensi bonificano su scala enorme. Ma i monasteri c\'erano anche nel IX secolo, quando non cresceva niente. Che cosa hanno in piu, nel Mille, che prima non avevano?'},
+         {loro:'«Sono finite le invasioni, quindi c\'era pace.»',
+          tu:'Ottima, ed e una condizione vera: si semina solo se si spera di raccogliere. Tienila da parte pero, perche la pace da sola non produce grano. Serve anche qualcosa che faccia rendere di piu la stessa fatica.'}
+       ]},
+
+      {minuti:'8–17', et:'Lo schieramento',
+       schermo:'Che cosa muove la storia?',
+       opzioni:['Le decisioni di chi comanda', 'Le condizioni materiali di tutti'],
+       parlato:'Fai schierare e conta. Di solito la prima opzione vince nettamente: e la storia che hanno studiato, fatta di re e di date.\n\nPoi metti sul tavolo tre oggetti, uno per volta, senza dire ancora a che cosa servono. Un collare di cuoio rigido. Un aratro con una lama ricurva. Un campo diviso in tre parti invece che in due.\n\nChiedi: che cosa possono aver cambiato?\n\nLascia che tentino. Poi comincia dal collare, che e il piu sorprendente e il piu semplice: prima si attaccava il carico al collo del cavallo con una cinghia che, appena l\'animale tirava, gli stringeva la gola. Piu tirava, meno respirava. Il collare rigido sposta lo sforzo sulle spalle: lo stesso cavallo, dallo stesso giorno, tira quattro volte tanto.\n\nÈ una cinghia di cuoio spostata di quaranta centimetri, e vale piu di un imperatore.',
+       seDicono:[
+         {loro:'«Non ci credo che un collare cambi la storia.»',
+          tu:'Facciamo il conto. Un cavallo con collare ara in un giorno quello che un bue fa in due, e cammina piu in fretta. Moltiplica per milioni di contadini e per trecento anni. Le grandi conseguenze non hanno bisogno di grandi cause: hanno bisogno di piccole cause ripetute molte volte.'},
+         {loro:'«Ma qualcuno queste cose le avra inventate: sono uomini anche loro.»',
+          tu:'Giusto, e non ne conosciamo il nome. Nessuna cronaca registra chi ha messo il primo collare a spalla. La storia che ricordiamo e fatta di chi aveva uno scrivano; quella che ci ha cambiato la vita spesso no.'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'Gli altri due.\n\nL\'ARATRO PESANTE, con il versoio,\nnon graffia la terra: la rivolta.\nCosi si possono coltivare i suoli grassi del Nord,\nche l\'aratro romano non scalfiva.\n\nLA ROTAZIONE TRIENNALE:\ndue campi coltivati e uno a riposo,\nal posto di uno e uno.\nDal 50 al 66 per cento di terra produttiva.\nE nel campo di primavera si seminano legumi:\nproteine, e azoto che torna nel terreno.\n\nE poi i MULINI.\nNel 1086, in Inghilterra, se ne contano 5.624.',
+       parlato:'Dai le tre cose con calma e fai fare i conti a loro dove si puo: dal cinquanta al sessantasei per cento e un terzo di terra in piu ogni anno, sempre.\n\nSui mulini insisti, perche il dato del Domesday Book impressiona sempre: cinquemilaseicento mulini ad acqua in una sola isola, censiti uno per uno. E poi chiedi che cosa facevano prima: macinare a mano, ogni giorno, per ore, ed era lavoro quasi sempre femminile. Il mulino restituisce a milioni di persone alcune ore al giorno.\n\nA questo punto pero devi complicare, o la lezione diventa una favola tecnologica. Il collare, l\'aratro e il mulino esistevano gia da tempo in qualche forma: perche si diffondono adesso?\n\nPerche finiscono le invasioni; perche il clima si scalda di qualche grado fra il 950 e il 1250, al punto che si coltiva la vite in Inghilterra; perche i signori offrono terra e franchigie a chi va a dissodare. Nessuna causa, da sola, spiega niente.',
+       seDicono:[
+         {loro:'«Allora e stato il clima.»',
+          tu:'Il clima da solo scalda anche i campi di chi non ha l\'aratro giusto. E gli stessi attrezzi, in un secolo di scorrerie, non servono a niente perche nessuno semina. Le cause storiche funzionano quasi sempre cosi: nessuna basta, tutte insieme spiegano.'},
+         {loro:'«Ma la gente stava comunque malissimo.»',
+          tu:'Rispetto a noi, si. Rispetto a un secolo prima, no — e la differenza si misura: meno carestie, piu figli che arrivano all\'eta adulta, villaggi nuovi dove c\'era foresta. Il progresso storico non e il benessere: e una curva che cambia direzione.'}
+       ]},
+
+      {minuti:'28–38', et:'Il testo',
+       schermo:'La conseguenza, in una catena.\n\nPiu cibo\n→ non tutti servono nei campi\n→ chi avanza va in citta\n→ in citta si fabbrica e si vende\n→ per vendere serve moneta\n→ nel 1252 Firenze conia il fiorino d\'oro\n→ per non portare oro sulle strade si inventa\n   la lettera di cambio\n→ e siccome la Chiesa vieta il prestito a interesse,\n   l\'interesse si nasconde nel cambio fra due monete.\n\nE nelle citta vale una regola:\n\n«L\'aria della citta rende liberi.»\nUn anno e un giorno dentro le mura,\ne il servo fuggito non e piu di nessuno.',
+       testo:{fonte:'Formula attestata nelle citta dell\'Impero, XII-XIII secolo; il fiorino e del 1252',
+              glossa:'La catena va letta al contrario per capirla: senza il collare non c\'e surplus, senza surplus non ci sono citta, senza citta non c\'e mercato, senza mercato non serve la moneta d\'oro. Ogni anello dipende dal precedente, e il primo e un pezzo di cuoio.'},
+       parlato:'Costruisci la catena una freccia per volta, chiedendo a loro il passaggio successivo prima di mostrarlo. Riesce quasi sempre fino alla moneta; sulla lettera di cambio si fermano.\n\nSulla regola dell\'anno e un giorno vale la pena rallentare: e una delle cose che gli studenti ricordano per anni. Un servo che scappa in citta e non viene reclamato entro un anno e un giorno diventa libero. Non e un\'idea di liberta astratta — e una regola pratica che rende costoso al signore trattare male i propri contadini.\n\nE fai notare l\'ironia dell\'usura: il divieto religioso non ferma il prestito, lo rende piu sofisticato. Il piu potente strumento finanziario del Medioevo nasce come modo elegante di aggirare una proibizione.',
+       seDicono:[
+         {loro:'«Quindi la Chiesa frenava il progresso.»',
+          tu:'In parte lo frenava e in parte lo faceva: i cistercensi bonificano mezza Europa. E il divieto dell\'usura ha prodotto strumenti finanziari che senza divieto non sarebbero esistiti. Le istituzioni raramente sono solo un freno o solo un motore.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'Due cose che quasi nessuno vi ha detto.\n\nPRIMA. I «terrori dell\'anno Mille» —\nl\'Europa in ginocchio che aspetta la fine del mondo —\nnon esistono nelle fonti dell\'epoca.\nSono un\'invenzione di storici dell\'Ottocento.\nLa maggior parte della gente non sapeva\nnemmeno in che anno vivesse.\n\nSECONDA. Il mulino non era di tutti.\nEra del signore, e i contadini erano obbligati\na macinare li e a pagare.\nSi chiamavano banalita, e valevano anche\nper il forno e per il torchio.\n\nLa stessa tecnica che libera tempo\ncrea un nuovo modo di prendere.',
+       parlato:'Dai la prima notizia e lascia che protestino: quasi tutti hanno sentito raccontare dei terrori dell\'anno Mille. Spiega da dove viene — dalla storiografia romantica dell\'Ottocento, che cercava un Medioevo cupo da contrapporre alla modernita — e che i cronisti del tempo non ne parlano. In molti luoghi l\'anno cominciava a Natale, a Pasqua o il 25 marzo: non c\'era nemmeno accordo su quando fosse il Mille.\n\nÈ un\'occasione ottima per far vedere come nasce un fatto storico falso e perche resiste: perche e una bella storia, e perche serve a qualcuno.\n\nPoi la seconda, che e piu importante e meno nota: le banalita. Il mulino, il forno, il torchio sono monopoli signorili. Il contadino risparmia ore di macinatura e le paga in farina. La tecnica che libera e la stessa che crea un nuovo obbligo — e questo schema, dice qualunque storico dell\'economia, si ripetera ogni volta.',
+       seDicono:[
+         {loro:'«Allora non e stato un progresso, era solo sfruttamento diverso.»',
+          tu:'Le due cose stanno insieme, ed e questo il punto. La popolazione raddoppia davvero e la dipendenza cambia forma davvero. Una storia seria non deve scegliere fra le due: deve reggerle tutte e due nella stessa frase.'},
+         {loro:'«Come fanno a sapere che i terrori non ci sono stati?»',
+          tu:'Domanda giusta, ed e il mestiere: si vanno a guardare le cronache scritte fra il 990 e il 1010, e non ne parlano. Provate voi a chiedervi, ogni volta che vi raccontano un fatto storico spettacolare, chi lo ha scritto e quando.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'All\'inizio avete detto imperatori, papi, crociate.\n\nLe cause principali sono un collare di cuoio,\nun aratro con la lama ricurva,\nun campo diviso in tre\ne un mulino sul fiume.\n\nNessuno sa chi li abbia inventati.\nNessuno ha scritto la loro data.\n\nUltima domanda, e riguarda voi:\n\nquale oggetto della vostra vita quotidiana\nrisultera, fra trecento anni,\npiu importante di qualunque politico di oggi?\n\nE come fate a saperlo adesso?',
+       parlato:'Rifai la conta dello schieramento: si sposta quasi sempre, e conviene mostrarlo.\n\nPoi la domanda finale. Raccogli qualche proposta a voce — di solito escono telefono, internet, pannelli solari, antibiotici — e chiedi ogni volta la stessa cosa: e come faresti a saperlo adesso?\n\nLa risposta onesta e che non si sa, e che i contemporanei sbagliano quasi sempre. Nel Mille nessuno scriveva cronache sui collari.\n\nChiudi con la conseguenza per il loro modo di studiare, detta una volta sola: quando in un manuale trovate una data e un nome, chiedetevi anche che cosa mangiava la gente quell\'anno, e con quali attrezzi. Le due storie insieme sono una storia sola.\n\nE annuncia la prossima: la stessa Europa che cresce sta per spaccarsi in due sulla domanda di chi comandi davvero — papa o imperatore.',
+       seDicono:[
+         {loro:'«Allora le date e i re non servono a niente?»',
+          tu:'Servono, e la battaglia di Lechfeld nel 955 e una di quelle cause vere: senza la fine delle incursioni ungare non si semina. Il punto non e buttare i nomi, e smettere di credere che siano tutta la spiegazione.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'Il collare, in dettaglio',
+       corpo:'Nel mondo antico il cavallo si attaccava al carico con una cinghia che passava intorno al collo. Quando l\'animale tirava con forza, la cinghia gli comprimeva la trachea e le vene: piu si sforzava, meno respirava. Il risultato e che un cavallo antico poteva trainare una frazione di quello che le sue zampe avrebbero consentito.\n\nIl collare rigido, imbottito e appoggiato sulle spalle, sposta la trazione sulla struttura ossea. Le stime piu prudenti parlano di un aumento di quattro o cinque volte della forza utile.\n\nAggiungi la ferratura, che permette al cavallo di lavorare su terreni duri senza consumarsi gli zoccoli, e il cavallo sostituisce il bue: piu forte, e soprattutto piu veloce.',
+       chiedi:'Un oggetto che nessuno ha brevettato, di cui non conosciamo l\'inventore e che non compare in nessuna cronaca. Perche la storia registra le battaglie e non i collari? E che cosa dice, questo, di chi scriveva le cronache?'},
+      {titolo:'I terrori che non ci furono',
+       corpo:'L\'immagine di un\'Europa terrorizzata dall\'approssimarsi del Mille — folle in preghiera, terre lasciate incolte, attesa dell\'Anticristo — nasce nell\'Ottocento, soprattutto con lo storico francese Jules Michelet.\n\nLe fonti contemporanee non la confermano. Nell\'anno Mille il calendario non era uniforme: in alcune regioni l\'anno cominciava a Natale, in altre il 25 marzo, in altre a Pasqua. La maggior parte della popolazione era analfabeta e non aveva nessun modo di sapere in che anno si trovasse.\n\nCi furono attese apocalittiche, ma sparse nel tempo e legate a carestie o comete, non a una data.',
+       chiedi:'La storia falsa e sopravvissuta due secoli. Perche funzionava cosi bene? A chi serviva un Medioevo terrorizzato — e a chi serve, oggi, raccontare che un\'epoca era buia?'},
+      {titolo:'Il tempo del mercante',
+       corpo:'Per chi lavora la terra il tempo e stagionale e non si misura: si semina quando e ora. Per la Chiesa e scandito dalle campane, e le ore cambiano lunghezza con le stagioni perche si divide in dodici la luce del giorno.\n\nPer il mercante che presta denaro il tempo diventa una quantita: un mese in piu di prestito e un guadagno in piu. Ma la Chiesa insegnava che il tempo appartiene a Dio e non si puo vendere — e questo, non solo il divieto dell\'usura, e il vero scandalo del prestito a interesse.\n\nNel Trecento compaiono sulle torri civiche i primi orologi meccanici. Le ore diventano tutte uguali, e le suona il Comune, non la chiesa.',
+       chiedi:'Chi controlla la misura del tempo controlla qualcosa di importante: che cosa, esattamente? E oggi chi decide il ritmo delle vostre giornate — voi, la scuola, o qualcosa che sta in tasca?'}
+    ],
+    testi:[
+      {fonte:'Adalberone di Laon, Carmen ad Robertum regem, circa 1025',
+       corpo:'«La societa dei fedeli forma un solo corpo, ma lo Stato ne comprende tre. Gli uni pregano, gli altri combattono, gli altri lavorano. Questi tre ordini vivono insieme e non sopportano di essere separati.»',
+       glossa:'Da leggere insieme alla data: mentre il vescovo descrive una societa a tre ordini come se fosse eterna, nelle citta sta gia crescendo un ceto che non prega, non combatte e non ara. Le rappresentazioni della societa sono quasi sempre in ritardo sulla societa.'},
+      {fonte:'Domesday Book, 1086 — il censimento normanno d\'Inghilterra',
+       corpo:'Il registro voluto da Guglielmo il Conquistatore descrive terre, uomini, animali e impianti di quasi tutta l\'Inghilterra. Vi sono censiti 5.624 mulini ad acqua, distribuiti in circa tremila localita.',
+       glossa:'È il documento che permette di trasformare un\'impressione in un numero. Utile anche per un\'altra ragione: un re che vuole sapere esattamente che cosa possiede e gia un\'idea moderna di Stato, e siamo nel 1086.'},
+      {fonte:'Carta di franchigia — formula ricorrente nei documenti comunali',
+       corpo:'Chi ha abitato la citta per un anno e un giorno senza essere reclamato dal proprio signore e considerato libero, e nessuno puo ricondurlo in servitu.',
+       glossa:'La formula esiste in molte varianti locali; la versione tedesca «Stadtluft macht frei» e diventata proverbiale. Fai notare che non e una dichiarazione di principio ma una norma di procedura: la liberta medievale si conquista quasi sempre cosi, come esenzione scritta e non come diritto universale.'}
+    ],
+    compito:'Mezza pagina. Scegliete un oggetto che usate ogni giorno e provate a ricostruire che cosa succederebbe se sparisse — non a voi soltanto, ma a tutti, per trecento anni. Chi ci guadagnerebbe, chi ci perderebbe, che mestieri sparirebbero e quali nascerebbero. Non serve indovinare: serve accorgersi di quante cose dipendono da un oggetto che non guardate mai.',
+    fonti:[
+      'G. Duby, L\'economia rurale nell\'Europa medievale; Le tre societa dell\'anno Mille',
+      'L. White jr., Tecnica e societa nel Medioevo (1962) — collare, staffa, aratro, mulino',
+      'J. Le Goff, Tempo della Chiesa e tempo del mercante; Il basso Medioevo',
+      'C. Cipolla, Storia economica dell\'Europa preindustriale — le stime demografiche',
+      'Domesday Book (1086); Adalberone di Laon, Carmen ad Robertum regem',
+      'Sui terrori dell\'anno Mille: J. Michelet, Histoire de France (1833) e la revisione di G. Duby, L\'anno Mille'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',

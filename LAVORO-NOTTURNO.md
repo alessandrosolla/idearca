@@ -146,7 +146,7 @@ Si va in ordine di programma. Restano:
 - [x] Filosofia antica · 10 — Lo stoicismo
 - [x] Filosofia antica · 11 — Il neoplatonismo e Plotino
 - [x] Filosofia antica · 12 — Agostino d'Ippona
-- [ ] Storia medievale · 1 — La ripresa dopo l'anno Mille
+- [x] Storia medievale · 1 — La ripresa dopo l'anno Mille
 - [ ] Storia medievale · 2 — La lotta per le investiture
 - [ ] Storia medievale · 3 — Le crociate
 - [ ] Storia medievale · 4 — L'Italia comunale e l'Impero
