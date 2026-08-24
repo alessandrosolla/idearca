@@ -163,7 +163,7 @@ Si va in ordine di programma. Restano:
 - [x] Storia moderna · 1 — Carlo V e la Riforma protestante
 - [x] Storia moderna · 2 — Riforma e Controriforma
 - [x] Storia moderna · 3 — Economia, guerre e il declino spagnolo
-- [ ] Storia moderna · 4 — La crisi del Seicento e la rivoluzione scientifica
+- [x] Storia moderna · 4 — La crisi del Seicento e la rivoluzione scientifica
 - [ ] Storia moderna · 5 — La guerra dei Trent'anni e l'Olanda
 - [ ] Storia moderna · 6 — Rivoluzioni inglesi e assolutismi
 - [ ] Storia moderna · 7 — L'Europa nel primo Settecento

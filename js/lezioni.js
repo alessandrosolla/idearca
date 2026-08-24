@@ -6684,6 +6684,225 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Storia moderna · 4 — La crisi del Seicento e la rivoluzione scientifica': {
+  mappa: {
+    n:'La crisi del Seicento e la scienza nuova', d:'un secolo che si impoverisce e intanto cambia il modo di conoscere',
+    f:[
+      {r:'comincia da', n:'Una crisi generale', d:'un secolo in cui quasi tutta l\'Europa arretra insieme',
+       f:[
+         {r:'la popolazione', n:'Smette di crescere', d:'per la prima volta dal Trecento, e in molte regioni cala'},
+         {r:'il clima peggiora con il', n:'Minimo di Maunder', d:'pochissime macchie solari e inverni durissimi: la Piccola eta glaciale tocca il fondo'},
+         {r:'tornano', n:'Carestie e peste', d:'1630 in Italia settentrionale, 1656 a Napoli: mortalita altissime'},
+         {r:'i commerci', n:'Si spostano ancora a nord', d:'il Mediterraneo diventa periferia, e le citta italiane si svuotano'},
+         {piu:true, r:'e gli storici discutono se sia', n:'Una crisi o molte crisi', d:'la formula «crisi generale» e comoda e forse nasconde differenze enormi'}
+       ]},
+
+      {r:'esplode in', n:'Rivolte quasi simultanee', d:'fra 1640 e 1650 salta mezzo continente',
+       f:[
+         {r:'in Spagna', n:'Catalogna e Portogallo', d:'1640: due regni si sollevano nello stesso anno contro Madrid'},
+         {r:'a Napoli', n:'La rivolta di Masaniello', d:'1647: comincia per una tassa sulla frutta'},
+         {r:'in Francia', n:'La Fronda', d:'1648-53: parlamenti e nobilta contro la fiscalita di guerra'},
+         {r:'in Inghilterra', n:'La guerra civile', d:'e la sola in cui il re viene processato e giustiziato'},
+         {piu:true, r:'in Russia', n:'La rivolta di Stenka Razin', d:'1670: la crisi arriva fino ai confini orientali dell\'Europa'},
+         {r:'e la causa comune e', n:'La pressione fiscale', d:'le guerre costano, e lo Stato rompe i patti con i corpi locali per pagarle',
+          f:[{piu:true, r:'perche si chiedono', n:'Tasse nuove senza consenso', d:'e ogni comunita difende privilegi antichi, non idee moderne'}]}
+       ]},
+
+      {r:'e nello stesso secolo cambia', n:'Il quadro del cielo', d:'in ottant\'anni l\'universo diventa un\'altra cosa',
+       f:[
+         {r:'parte da', n:'Copernico', d:'1543: il Sole al centro, come ipotesi matematica piu semplice'},
+         {r:'si fonda sui dati di', n:'Tycho Brahe', d:'osservazioni a occhio nudo di precisione mai raggiunta prima'},
+         {r:'Keplero scopre le', n:'Orbite ellittiche', d:'e rompe con duemila anni di cerchi perfetti',
+          f:[{piu:true, r:'lavorando ostinatamente su', n:'Otto minuti d\'arco', d:'l\'errore residuo su Marte che non voleva sparire: da li nasce tutto'}]},
+         {r:'e Galileo punta al cielo', n:'Il cannocchiale', d:'1609-1610: e il primo a pubblicare cio che vede',
+          f:[{r:'trova', n:'I satelliti di Giove', d:'quattro corpi che girano attorno a qualcosa che non e la Terra'},
+             {r:'e le', n:'Fasi di Venere', d:'che Tolomeo non puo spiegare in nessun modo'},
+             {r:'e ancora', n:'Montagne e macchie', d:'sulla Luna e sul Sole: i cieli non sono incorruttibili'}]}
+       ]},
+
+      {r:'inventa', n:'Un metodo', d:'e questa e la novita vera, piu delle singole scoperte',
+       f:[
+         {r:'Bacone propone l\'', n:'Induzione', d:'raccogliere casi, ordinarli in tavole, risalire alle cause'},
+         {r:'e mette in guardia dagli', n:'Idoli', d:'i pregiudizi della specie, dell\'individuo, del linguaggio e delle dottrine'},
+         {r:'Galileo unisce', n:'Esperienze sensate e dimostrazioni necessarie', d:'osservazione e matematica insieme, nessuna delle due basta'},
+         {r:'usa l\'', n:'Esperimento mentale', d:'i due gravi legati: si smonta Aristotele senza salire su nessuna torre'},
+         {r:'e sostiene che la natura sia', n:'Scritta in lingua matematica', d:'triangoli, cerchi: chi non la conosce gira in un labirinto oscuro'},
+         {r:'e costruisce', n:'Strumenti nuovi', d:'cannocchiale, microscopio, termometro, barometro: si osserva cio che i sensi non raggiungono'},
+         {piu:true, r:'con la scoperta che', n:'Gli strumenti vanno tarati', d:'prima di credere a cio che mostrano bisogna provarli su cio che gia si conosce'},
+         {r:'distinguendo', n:'Qualita primarie e secondarie', d:'forma e moto stanno nelle cose, colori e sapori in chi percepisce'}
+       ]},
+
+      {r:'si scontra con', n:'Il caso Galileo', d:'e il punto va guardato da vicino, perche viene sempre semplificato',
+       f:[
+         {r:'nel 1616 un decreto', n:'Dichiara erronea la tesi copernicana', d:'e Galileo viene ammonito a non sostenerla come vera'},
+         {r:'lui aveva sostenuto che', n:'La Scrittura non insegna astronomia', d:'insegna come si va in cielo, non come vada il cielo'},
+         {r:'nel 1632 pubblica il', n:'Dialogo sui due massimi sistemi', d:'formalmente neutrale, in pratica no'},
+         {r:'nel 1633 arriva', n:'La condanna', d:'abiura e arresti domiciliari, dove scrivera la sua opera scientifica migliore'},
+         {r:'ma alla prova dei fatti', n:'Non aveva una dimostrazione', d:'e il suo argomento migliore, quello delle maree, era sbagliato',
+          f:[{r:'perche mancava', n:'La parallasse stellare', d:'osservata solo nel 1838: fino ad allora il moto terrestre non e visibile'},
+             {piu:true, r:'e restava aperto', n:'Il sistema di Tycho', d:'compatibile con tutte le osservazioni di Galileo, e con la Terra ferma'}]}
+       ]},
+
+      {r:'si chiude con', n:'Newton', d:'che mette insieme cio che nessuno era riuscito a unire',
+       f:[
+         {r:'nel 1687 pubblica i', n:'Principia', d:'tre leggi del moto e una legge di gravitazione universale'},
+         {r:'con l\'idea che', n:'La mela e la Luna obbediscano alla stessa legge', d:'cielo e terra smettono di essere due mondi'},
+         {r:'e con la spiegazione di', n:'Maree, comete e precessione', d:'fenomeni diversissimi che discendono tutti dalla stessa formula'},
+         {r:'rifiutando di spiegare', n:'Che cosa sia la gravita', d:'non fingo ipotesi: descrivo come agisce, non dico che cos\'e',
+          f:[{piu:true, r:'e questo scandalizza', n:'I cartesiani', d:'per loro un\'azione a distanza senza contatto e una qualita occulta'}]}
+       ]},
+
+      {r:'si organizza in', n:'Istituzioni nuove', d:'la scienza smette di essere un\'impresa privata',
+       f:[
+         {r:'nascono le', n:'Accademie', d:'Cimento a Firenze, Royal Society a Londra nel 1660, Académie a Parigi nel 1666'},
+         {r:'e le prime', n:'Riviste scientifiche', d:'dal 1665: pubblicare diventa il modo di stabilire chi ha scoperto che cosa'},
+         {r:'con la regola della', n:'Replicabilita', d:'un risultato vale se altri, altrove, lo ottengono di nuovo',
+          f:[{r:'sostituendo l\'', n:'Autorita con la verifica', d:'non conta chi lo dice, conta che si possa rifare'},
+             {piu:true, r:'e si costruisce la figura del', n:'Testimone competente', d:'esperimenti fatti in pubblico davanti a persone qualificate'}]},
+         {r:'e si tiene una fitta', n:'Corrispondenza', d:'reti di lettere fra studiosi di paesi diversi: la repubblica delle lettere'},
+         {r:'e si scrive sempre piu in', n:'Volgare', d:'Galileo sceglie l\'italiano per farsi leggere fuori dall\'universita'}
+       ]},
+
+      {r:'lascia', n:'Un mondo diverso', d:'e alcune cose che non cambiano affatto',
+       f:[
+         {r:'la natura diventa', n:'Una macchina', d:'niente fini, niente qualita occulte: materia e movimento'},
+         {r:'nasce l\'idea di', n:'Progresso', d:'i moderni possono superare gli antichi, e questo e nuovo'},
+         {r:'l\'uomo si pensa come', n:'Padrone e possessore della natura', d:'la conoscenza serve a intervenire, non solo a contemplare'},
+         {r:'ma nel Seicento la scienza', n:'Non cambia ancora la vita', d:'medicina, agricoltura e tecniche restano quasi immutate per un secolo',
+          f:[{piu:true, r:'e chi guarisce di piu e', n:'Chi cura di meno', d:'i salassi uccidevano: la medicina fa progressi rinunciando a intervenire'}]},
+         {r:'e si apre la distanza fra', n:'Sapere degli esperti e senso comune', d:'per la prima volta il vero contraddice cio che tutti vedono'}
+       ]}
+    ],
+    incroci:[
+      {da:'La pressione fiscale', a:'Carestie e peste', r:'colpisce popolazioni gia stremate da',
+       perche:'Le guerre costano piu di quanto qualunque Stato incassi, e il prelievo arriva su comunita che hanno gia perso i raccolti e seppellito i propri morti. Non e la tassa in se a far scoppiare le rivolte del 1640: e la tassa che arriva quando non e rimasto nulla da cui prelevarla.'},
+      {da:'Otto minuti d\'arco', a:'Esperienze sensate e dimostrazioni necessarie', r:'e l\'esempio perfetto di che cosa significhi unire',
+       perche:'Keplero avrebbe potuto attribuire quell\'errore residuo alle imprecisioni di misura, come tutti prima di lui. Prende sul serio i dati di Tycho, li considera piu affidabili della teoria, e per salvarli abbandona il cerchio. La rivoluzione scientifica sta in questa scelta: quando i numeri e la dottrina non coincidono, cedono i numeri o cede la dottrina?'},
+      {da:'Fasi di Venere', a:'Il sistema di Tycho', r:'confutano Tolomeo ma non',
+       perche:'Le osservazioni di Galileo demoliscono il sistema tolemaico e sono tutte compatibili con quello di Tycho, in cui i pianeti girano attorno al Sole e il Sole attorno a una Terra ferma. Aver distrutto una teoria non significa averne stabilita un\'altra: e l\'errore logico piu frequente nelle controversie, e i contemporanei di Galileo lo videro benissimo.'},
+      {da:'La parallasse stellare', a:'Maree, comete e precessione', r:'manca ancora quando a decidere sono',
+       perche:'La prova diretta del moto terrestre arriva nel 1838, ma dal 1700 nessuno dubita piu. A convincere non e un\'osservazione: e il fatto che una sola legge spieghi insieme fenomeni che nessuno aveva chiesto di spiegare. Una teoria vince quando rende conto anche di cio per cui non era stata costruita.'},
+      {da:'La Scrittura non insegna astronomia', a:'Idoli', r:'individua nell\'interprete gli stessi',
+       perche:'Galileo sostiene che la Scrittura non puo mentire ma che chi la legge puo sbagliare; Bacone elenca i pregiudizi che deformano ogni lettura, compresi quelli ereditati dalle dottrine. Entrambi spostano l\'errore dalla fonte a chi la interpreta — ed e la mossa che rende possibile contestare un\'autorita senza negarla.'},
+      {da:'Autorita con la verifica', a:'La condanna', r:'e il metodo che rende inaccettabile un atto come',
+       perche:'Chiedere prove a Galileo era legittimo, e non le aveva. Vietare di sostenere l\'ipotesi in attesa delle prove e un\'altra cosa: blocca esattamente il lavoro che le prove le produce. L\'errore del 1616 non fu il rigore probatorio, fu sostituire alla verifica una decisione d\'autorita.'},
+      {da:'Replicabilita', a:'Riviste scientifiche', r:'ha bisogno delle',
+       perche:'Un risultato che altri devono poter rifare deve prima essere descritto per intero e reso pubblico. La rivista non e un accessorio della scienza moderna: e il dispositivo che rende possibile il controllo reciproco, e per questo la sua nascita nel 1665 conta quanto molte scoperte.'},
+      {da:'Scritta in lingua matematica', a:'Qualita primarie e secondarie', r:'porta direttamente alla distinzione fra',
+       perche:'Se la natura si scrive in figure e numeri, cio che si puo misurare — forma, grandezza, moto — appartiene alle cose, e cio che non si misura — colori, sapori, odori — appartiene a chi percepisce. È il prezzo della matematizzazione: metа del mondo sensibile viene spostata dentro il soggetto, e la filosofia moderna partira da li.'},
+      {da:'Una macchina', a:'Che cosa sia la gravita', r:'e messa in difficolta dal rifiuto di spiegare',
+       perche:'Il mondo-macchina prevede che tutto avvenga per contatto e urto. La gravitazione agisce a distanza, senza contatto, e Newton si rifiuta di dirne la causa. I cartesiani gridano al ritorno delle qualita occulte — e hanno ragione a essere sorpresi: la fisica che vince rinuncia a spiegare proprio quello che il meccanicismo pretendeva.'},
+      {da:'Volgare', a:'Sapere degli esperti e senso comune', r:'serve a ridurre la distanza fra',
+       perche:'Galileo scrive in italiano perche vuole essere letto da chi non appartiene all\'universita, e costruisce dialoghi con un personaggio che fa le obiezioni di chiunque. È un tentativo consapevole di tenere insieme la scienza nuova e il pubblico — proprio mentre quella scienza comincia a dire cose che contraddicono l\'esperienza di tutti.'},
+      {da:'Minimo di Maunder', a:'Carestie e peste', r:'aggrava',
+       perche:'Inverni piu lunghi e stagioni di crescita piu corte significano raccolti scarsi ripetuti, e una popolazione denutrita muore di piu quando arriva un\'epidemia. La crisi del Seicento non e solo economica e politica: ha una componente climatica misurabile, ed e lo stesso meccanismo gia visto nel Trecento.'},
+      {da:'Tasse nuove senza consenso', a:'La guerra civile', r:'e cio che porta in Inghilterra alla',
+       perche:'Carlo I governa undici anni senza convocare il parlamento e inventa prelievi per non doverlo fare. Il conflitto nasce li: non sulla quantita del denaro ma su chi ha il diritto di chiederlo. È la stessa questione costituzionale che altrove determina il costo del debito, e qui porta al processo di un re.'},
+      {da:'Chi cura di meno', a:'Non cambia ancora la vita', r:'e la prova piu netta che la scienza',
+       perche:'Per tutto il Seicento la nuova fisica non produce quasi nessuna applicazione utile, e in medicina i progressi vengono dal rinunciare a salassi e purghe. Il legame fra scienza e tecnologia, che oggi diamo per ovvio, si costruisce solo nell\'Ottocento: per due secoli si conosce meglio senza vivere meglio.'}
+    ]
+  },
+  provocazione: {
+    titolo:'Quando la prova non c\'e ancora',
+    durata:'55 minuti',
+    domandaMadre:'Come si riconosce chi ha ragione, prima che esista la prova?',
+    perche:'Nel 1633 Galileo aveva ragione e non poteva dimostrarlo: la parallasse stellare, unica prova diretta del moto terrestre, fu osservata nel 1838, e l\'argomento delle maree su cui aveva puntato era sbagliato. I suoi avversari avevano un\'obiezione tecnicamente corretta. La classe deve reggere questa situazione senza scivolare ne nel mito del fatto evidente ne nel relativismo, e scoprire quale criterio abbia deciso davvero: non un\'osservazione ma la fecondita: dal 1700 nessuno dubita piu perche una sola legge di Newton spiega insieme maree, comete e precessione. E deve arrivare alla distinzione decisiva sul caso Galileo — chiedere prove era legittimo, proibire l\'ipotesi in attesa delle prove no, perche blocca il lavoro che le prove le produce.',
+    occorrente:'Niente.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'Roma, 22 giugno 1633.\n\nGalileo abiura in ginocchio.\n\nSappiamo tutti come e andata:\nlui aveva ragione,\nloro avevano torto,\ne la Chiesa non voleva\nguardare nel cannocchiale.\n\nAdesso tre fatti.\n\nIl primo. La prova diretta\nche la Terra si muove\nsi chiama parallasse stellare.\nFu osservata nel 1838.\nDuecentocinque anni dopo il processo.\n\nIl secondo. L\'argomento principale\ndel libro per cui fu condannato —\nla spiegazione delle maree —\ne sbagliato.\n\nIl terzo. Tutte le sue scoperte\ncol cannocchiale erano compatibili\ncon un sistema in cui\nla Terra sta ferma.',
+       parlato:'Dai prima la versione che tutti conoscono, e falla enunciare a loro: e utile che se la sentano dire in bocca propria.\n\nPoi i tre fatti, uno per volta, senza commentarli. Il silenzio dopo il terzo di solito e lungo.\n\nPoi la domanda, posta con precisione perche non scivoli: non sto chiedendo se Galileo avesse ragione. Aveva ragione, lo sappiamo. Sto chiedendo un\'altra cosa — nel 1633, con quello che si poteva sapere allora, come si faceva a stabilirlo?\n\nSe qualcuno protesta che stai difendendo l\'Inquisizione, rispondi subito e chiaramente: no, e alla fine dell\'ora avremo un motivo molto piu solido per condannare quel processo di quello che avevamo all\'inizio. Ma bisogna passare da qui.',
+       seDicono:[
+         {loro:'«Bastava guardare nel cannocchiale.»',
+          tu:'Molti guardarono, compresi i gesuiti del Collegio Romano, che confermarono tutte le osservazioni e ne fecero una cerimonia in onore di Galileo. Il problema non fu mai se si vedessero i satelliti di Giove: fu che cosa dimostrassero.'},
+         {loro:'«Se aveva ragione, la prova doveva esserci.»',
+          tu:'È l\'idea che stiamo per smontare, ed e una delle piu diffuse. Avere ragione e poterlo dimostrare sono due cose diverse, e la distanza fra le due puo durare secoli. Tenetela presente, perche vi capitera spesso di essere nella prima condizione senza la seconda.'}
+       ]},
+
+      {minuti:'8–17', et:'Lo schieramento',
+       schermo:'Nel 1633, sulla base\ndi cio che si poteva osservare:',
+       opzioni:['i fatti davano ragione a Galileo', 'i fatti non bastavano a decidere'],
+       parlato:'Fai schierare e conta. Il primo gruppo vince quasi sempre.\n\nPoi smonta con calma, andando in ordine, e chiedendo ogni volta: questo che cosa dimostra?\n\nLe montagne sulla Luna e le macchie solari: dimostrano che i cieli non sono perfetti e incorruttibili. È enorme, e non dice nulla sul moto della Terra.\n\nI satelliti di Giove: dimostrano che esistono corpi che girano attorno a qualcosa che non e la Terra. Colpo durissimo, e ancora non dice che la Terra si muova.\n\nLe fasi di Venere: queste si, uccidono il sistema di Tolomeo. Ma esisteva un terzo sistema, quello di Tycho Brahe: i pianeti girano attorno al Sole, e il Sole con tutto il corteo gira attorno a una Terra ferma. Le fasi di Venere ci stanno perfettamente.\n\nQuindi: Galileo aveva demolito Tolomeo. Non aveva stabilito Copernico.\n\nDomanda per loro: qual e l\'errore logico che stavamo per fare?\n\nRisposta: pensare che confutare una teoria significhi dimostrare quella che le sta di fronte. È l\'errore piu frequente in qualunque discussione.',
+       seDicono:[
+         {loro:'«Ma il sistema di Tycho e assurdo.»',
+          tu:'Ci sembra macchinoso, ed era coerente e compatibile con ogni osservazione disponibile. Attento all\'aggettivo «assurdo»: quasi sempre significa «non ci sono abituato». Serve un argomento, e l\'argomento nel 1633 non c\'era.'},
+         {loro:'«Perche allora Galileo era cosi sicuro?»',
+          tu:'Per ragioni di eleganza e di semplicita, che sono ottime ragioni per cercare e cattive ragioni per pretendere. Era convinto, aveva ragione, e stava chiedendo agli altri di credergli sulla parola. È una posizione scomoda anche quando si ha ragione.'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'L\'obiezione degli avversari,\nche era ottima.\n\nSe la Terra percorre ogni anno\nun\'orbita enorme,\nallora guardando una stella\nda due punti opposti dell\'orbita\ndovremmo vederla spostarsi\nrispetto alle piu lontane.\n\nSi chiama parallasse.\n\nNon si vedeva.\n\nRisposta di Galileo:\nle stelle sono lontanissime,\nmolto piu di quanto crediate.\n\nObiezione di Tycho Brahe:\nse fossero cosi lontane\ne le vediamo comunque,\nallora ogni stella dovrebbe essere\npiu grande dell\'intera orbita terrestre.\nÈ assurdo.\n\nTycho aveva torto —\nma per una ragione\nche nessuno poteva conoscere.',
+       parlato:'Ricostruisci lo scambio come un dialogo, perche cosi si capisce che era una discussione seria fra persone competenti.\n\nPoi spiega perche Tycho sbagliava, ed e la parte piu istruttiva. Misurava il diametro apparente delle stelle a occhio nudo e vedeva dischetti; quei dischetti non esistono, sono un effetto ottico dovuto alla diffrazione e all\'atmosfera. Le stelle sono puntiformi. Ma per saperlo servivano un\'ottica e una teoria della luce che nel Seicento non c\'erano.\n\nQuindi la situazione era questa: un\'obiezione corretta nel ragionamento, basata su un dato sbagliato che nessuno poteva sapere sbagliato.\n\nDomanda per la classe, e falla pesare: come si fa a discutere con qualcuno che ragiona bene su dati falsi, quando non hai modo di mostrargli che i dati sono falsi?\n\nNon c\'e una risposta rapida. Fai emergere l\'unica cosa che si puo fare: continuare a lavorare, e aspettare che arrivi lo strumento. Ed e esattamente cio che la condanna del 1616 impediva.',
+       seDicono:[
+         {loro:'«Allora anche noi oggi potremmo avere dati sbagliati.»',
+          tu:'Certamente, e alcune cose che oggi diamo per certe saranno corrette. La differenza rispetto al Seicento non e che noi non sbagliamo: e che abbiamo costruito procedure per accorgercene — pubblicare, far ripetere agli altri, andare a caccia degli errori altrui. Non e garanzia, e il meglio disponibile.'},
+         {loro:'«Quindi non si puo mai essere sicuri di niente.»',
+          tu:'Attento a questo salto, e la trappola dell\'ora. Dal fatto che una prova manchi in un dato momento non segue che tutte le posizioni si equivalgano. Fra dieci minuti vediamo che cosa ha deciso la questione — e non e stato ne un\'autorita ne un capriccio.'}
+       ]},
+
+      {minuti:'28–38', et:'Il testo',
+       schermo:'Galileo, lettera\na Cristina di Lorena, 1615.\n\nSostiene che la Scrittura\nnon puo mai mentire,\nma che chi la interpreta\npuo sbagliare,\ne che essa parla\nsecondo la capacita\ndel popolo a cui si rivolge;\n\nche Dio si manifesta\nnon meno nella natura\nche nelle parole sacre;\n\nche nelle questioni naturali\nnon si deve cominciare\ndall\'autorita dei passi biblici,\nma dalle esperienze\ne dalle dimostrazioni.\n\nE cita una frase\ndi un cardinale suo contemporaneo:\n\nlo Spirito Santo insegna\ncome si vada in cielo,\nnon come vada il cielo.',
+       testo:{fonte:'Galileo Galilei, Lettera a Madama Cristina di Lorena (1615); la frase finale è attribuita al cardinale Cesare Baronio',
+              glossa:'Galileo non attacca la Scrittura: usa contro i teologi un principio dei teologi, quello per cui fede e ragione non possono contraddirsi e quindi un conflitto apparente segnala un errore di interpretazione. È una mossa abilissima e pericolosa — un matematico che spiega ai teologi come si legge la Bibbia — e contribuì a trasformare una controversia scientifica in una questione di competenza e di autorità.'},
+       parlato:'Leggi il passo e poi fai la domanda tattica, che di solito non si pone: era intelligente scriverla?\n\nGuidali a vedere il doppio effetto. Sul piano dell\'argomento e ineccepibile, e in fondo la Chiesa arrivera a dire proprio questo. Sul piano pratico, un matematico laico che nel 1615 spiega ai teologi come vada interpretata la Scrittura entra nel terreno in cui sono loro a decidere, e in cui non ha nessuna autorita.\n\nPoi la distinzione che regge il resto dell\'ora, e va detta con precisione. Nel processo si mescolano due questioni completamente diverse: una scientifica — quali prove ci sono — e una di competenza — chi ha il diritto di stabilire come si legge la Bibbia. La seconda schiaccio la prima.\n\nDomanda utile: vi vengono in mente discussioni contemporanee in cui una questione tecnica si trasforma in una lotta su chi ha il diritto di parlare?',
+       seDicono:[
+         {loro:'«Doveva stare zitto sulla Bibbia.»',
+          tu:'Probabilmente era la mossa piu prudente, e lui lo sapeva: fu avvertito. Ma nota il costo: significava lasciare che il criterio biblico decidesse una questione astronomica senza poterlo contestare. A volte tacere sul terreno sbagliato significa concederlo.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'Allora chi ha deciso la questione,\ne quando?\n\nNon un\'osservazione.\n\n1687. Newton pubblica\nuna legge sola:\ndue corpi qualunque si attraggono\nin proporzione alle masse\ne all\'inverso del quadrato\ndella distanza.\n\nDa quella singola formula\ndiscendono:\n\nla caduta dei gravi,\nle orbite ellittiche di Keplero,\nle maree — stavolta davvero —\nil ritorno delle comete,\nla precessione degli equinozi,\nlo schiacciamento della Terra ai poli.\n\nDal sistema tolemaico\nnon discende niente.\n\nDal 1700 nessuno scienziato\ndubita piu.\n\nSenza che nessuno\navesse ancora visto\nmuoversi la Terra.',
+       parlato:'Costruisci l\'elenco lentamente, aggiungendo un fenomeno per volta: l\'effetto e cumulativo.\n\nPoi la formulazione centrale, che e la cosa da portare a casa: a decidere non e stata una prova diretta ma la fecondita. Una teoria vince quando spiega anche cose che non era stata costruita per spiegare.\n\nFai notare il dettaglio che colpisce di piu: nessuno aveva chiesto a Copernico di spiegare le comete o la forma della Terra. Vengono in regalo. Quando una spiegazione ti da in regalo cose che non avevi chiesto, e un indizio potentissimo che sei sulla strada giusta — mentre una teoria che va aggiustata a ogni nuova scoperta e in difficolta anche se ogni singolo aggiustamento funziona.\n\nE poi torna sul processo con l\'argomento che ora hanno gli strumenti per capire, ed e il momento in cui l\'ora si chiude sul serio.\n\nChiedere prove a Galileo era legittimo: non le aveva. Proibirgli di sostenere l\'ipotesi in attesa che le prove arrivassero e tutt\'altra cosa, perche blocca esattamente il lavoro che quelle prove le produce. Vietare un\'ipotesi non e rigore: e impedire alla verifica di avvenire.\n\nL\'errore del 1616 non fu essere troppo esigenti sulle prove. Fu sostituire alla verifica una decisione d\'autorita.',
+       seDicono:[
+         {loro:'«Quindi i cardinali avevano ragione a chiedere prove?»',
+          tu:'A chiedere si, e su questo furono migliori di come li si racconta. Ma nessuno di loro sarebbe stato in grado di riconoscere la prova quando fosse arrivata, perche non era il loro mestiere. Il guaio non e la richiesta: e che a giudicare fosse un tribunale invece di una comunita di competenti.'},
+         {loro:'«E se una teoria feconda fosse comunque falsa?»',
+          tu:'Succede: il sistema tolemaico funziono per millequattrocento anni e le previsioni erano decenti. Per questo la fecondita e un indizio fortissimo e non una certezza. La differenza e che una teoria feconda produce controlli nuovi, quindi si espone; e quando sbaglia, prima o poi si vede.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'Che cosa portarsi via.\n\nPrimo: confutare una tesi\nnon dimostra quella opposta.\n\nSecondo: si puo avere ragione\ne non poterlo dimostrare,\nper duecento anni.\n\nTerzo: quando due spiegazioni\nreggono entrambe ai fatti noti,\nguardate quale delle due\nspiega anche cose\nche non le avevate chiesto.\n\nQuarto, ed e il piu importante:\n\nla scienza moderna non nasce\nda un\'idea sul mondo.\n\nNasce da un\'idea\nsu come si risolvono\nle controversie:\n\nsi pubblica,\naltri rifanno,\ntutti possono controllare.',
+       parlato:'Rifai la conta iniziale e commenta lo spostamento.\n\nPoi ripercorri i quattro punti e insisti sull\'ultimo, perche e la vera novita del secolo. Prima di allora una disputa si chiudeva con l\'autorita di un testo o di una persona. Le accademie, le riviste e la regola per cui un risultato vale solo se altri riescono a riprodurlo sono un modo nuovo di chiudere le dispute — piu lento, e senza bisogno che qualcuno decida dall\'alto.\n\nE aggiungi una nota che serve a non idealizzare: la rivoluzione scientifica del Seicento non migliora la vita di nessuno per un secolo abbondante. La medicina resta inutile o dannosa, l\'agricoltura non cambia, le macchine arriveranno molto dopo. Si conosce meglio senza vivere meglio, e chi in quegli anni avesse chiesto a che cosa servisse tutto questo non avrebbe avuto una buona risposta.\n\nChiudi con la cosa che apre il seguito: da qui in avanti l\'Europa ha un modello di conoscenza che funziona senza autorita, e qualcuno si chiedera se lo stesso metodo possa valere per la politica, per la morale e per la religione. Quella domanda si chiamera Illuminismo.',
+       seDicono:[
+         {loro:'«Allora bisogna sempre aspettare le prove prima di credere a qualcosa?»',
+          tu:'Bisogna distinguere fra credere e agire. Puoi lavorare su un\'ipotesi non provata — anzi devi, altrimenti non si scopre nulla. Quello che non puoi fare e pretendere che gli altri la trattino come stabilita. Galileo aveva il diritto di sostenerla; non aveva ancora il diritto di imporla, e nemmeno di vederla imposta.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'Perche tutti insieme',
+       corpo:'Fra il 1640 e il 1650 si sollevano la Catalogna, il Portogallo, Napoli, la Francia con la Fronda, l\'Inghilterra con la guerra civile, l\'Ucraina contro la Polonia. In pochi anni, senza coordinamento.\n\nLa spiegazione piu accreditata e fiscale: le guerre del secolo costano piu di quanto qualunque Stato incassi, e per pagarle i governi impongono prelievi nuovi violando privilegi e patti antichi con le comunita locali.\n\nQuasi nessuna di queste rivolte chiede qualcosa di nuovo: chiedono che siano rispettate le regole di prima.',
+       chiedi:'Le grandi ribellioni del Seicento sono quasi tutte conservatrici: si combatte per tornare indietro, non per andare avanti. Questo cambia il giudizio su di esse? E come si distingue una rivolta che difende privilegi da una che difende diritti?'},
+      {titolo:'Il testimone competente',
+       corpo:'Quando la Royal Society comincia a lavorare, si pone un problema: come si stabilisce che un esperimento e riuscito davvero, se chi legge non era presente?\n\nLa soluzione fu costruire una figura nuova: l\'esperimento va compiuto in pubblico, davanti a persone qualificate, e poi descritto con tanti dettagli che un lettore lontano possa rifarlo. La descrizione minuziosa serviva a rendere il lettore un testimone virtuale.\n\nDa qui nascono lo stile delle pubblicazioni scientifiche e l\'idea che un risultato non ripetibile da altri non conti.',
+       chiedi:'Il fondamento della scienza moderna non e vedere con i propri occhi, ma un sistema per fidarsi degli occhi di altri. Che cosa deve essere vero perche quel sistema funzioni? E che cosa lo rompe?'},
+      {titolo:'Conoscere meglio, vivere uguale',
+       corpo:'Fra il 1600 e il 1700 l\'Europa capisce come si muovono i pianeti, scopre la circolazione del sangue, inventa il calcolo infinitesimale, misura la pressione atmosferica.\n\nNello stesso secolo l\'aspettativa di vita non migliora, le carestie continuano, i medici continuano a praticare salassi che uccidono i pazienti, e la maggior parte delle tecniche agricole e artigianali resta quella del Medioevo.\n\nIl legame stretto fra scienza e tecnologia si costruisce solo dall\'Ottocento.',
+       chiedi:'Per due secoli si e conosciuto sempre meglio senza vivere meglio. Che cosa giustificava, allora, il lavoro degli scienziati? E che cosa direste oggi a chi chiede a che serva una ricerca che non ha applicazioni?'}
+    ],
+    testi:[
+      {fonte:'Galileo Galilei, Il Saggiatore, 1623 — il libro della natura',
+       corpo:'La filosofia, scrive, e contenuta in un grandissimo libro continuamente aperto davanti agli occhi, ma non si puo intendere se prima non si impara la lingua in cui e scritto: una lingua matematica, i cui caratteri sono triangoli, cerchi e altre figure, senza i quali si vaga per un oscuro labirinto.',
+       glossa:'È il manifesto della matematizzazione della natura. Ha una conseguenza che vale la pena discutere in classe: se la natura si scrive in figure e numeri, tutto cio che non e misurabile — colori, sapori, dolori — resta fuori dalla descrizione scientifica del mondo, e va collocato altrove. La filosofia moderna nasce in gran parte per gestire questo residuo.'},
+      {fonte:'Newton, Principia, scolio generale (1713) — hypotheses non fingo',
+       corpo:'Newton afferma di non aver potuto dedurre dai fenomeni la causa della gravita, e di non fingere ipotesi al riguardo: quanto basta, dice, e che la gravita esista, agisca secondo le leggi esposte e valga a spiegare tutti i movimenti dei corpi celesti e del mare.',
+       glossa:'È una rinuncia programmatica: la scienza descrive come le cose accadono e sospende la domanda su che cosa sia la causa ultima. Ai cartesiani parve un passo indietro verso le qualita occulte. Da usare per mostrare che il progresso scientifico consiste spesso nel decidere quali domande non porre.'},
+      {fonte:'Sentenza del Sant\'Uffizio contro Galileo, 22 giugno 1633',
+       corpo:'La sentenza dichiara Galileo veementemente sospetto di eresia per aver sostenuto e creduto dottrina contraria alla Sacra Scrittura, gli impone di abiurare, proibisce il Dialogo e lo condanna al carcere formale, poi commutato negli arresti domiciliari.',
+       glossa:'Da leggere per la formula giuridica: «veementemente sospetto di eresia» non e una condanna per eresia, e una qualificazione intermedia. E il capo d\'accusa non e astronomico ma disciplinare — aver disobbedito all\'ammonizione del 1616. Il caso Galileo, sul piano formale, e un processo per disobbedienza.'}
+    ],
+    compito:'Mezza pagina. Trovate una questione attuale su cui esistono due spiegazioni diverse e voi non avete gli strumenti per verificare direttamente chi ha ragione. Descrivetele entrambe onestamente. Poi, invece di scegliere, rispondete a questa domanda: quali indizi vi farebbero propendere per una delle due, e in particolare — una delle due spiega anche cose che non era stata costruita per spiegare?',
+    fonti:[
+      'Galileo, Sidereus Nuncius (1610); Lettera a Cristina di Lorena (1615); Dialogo sopra i due massimi sistemi (1632); Il Saggiatore (1623)',
+      'Bacone, Novum Organum (1620); Newton, Principia (1687)',
+      'Atti del processo del 1633 (edizione Favaro, Opere di Galileo, vol. XIX)',
+      'A. Koyré, Dal mondo chiuso all\'universo infinito; P. Rossi, La nascita della scienza moderna in Europa',
+      'S. Shapin e S. Schaffer, Il Leviatano e la pompa ad aria — sul testimone competente',
+      'G. Parker, Global Crisis; T. Aston (a cura di), Crisi in Europa 1560-1660'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',
