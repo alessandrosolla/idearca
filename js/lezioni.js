@@ -2012,6 +2012,239 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Filosofia antica · 9 — Epicureismo e scetticismo': {
+  mappa: {
+    n:'Epicureismo e scetticismo', d:'l\'età ellenistica: la filosofia diventa una cura',
+    f:[
+      {r:'nasce da', n:'La fine della pólis', d:'dopo Alessandro il mondo cambia scala',
+       f:[
+         {r:'muore', n:'Alessandro nel 323 a.C.', d:'e l\'impero si spezza in monarchie enormi'},
+         {r:'il cittadino diventa', n:'Suddito', d:'le decisioni si prendono altrove: l\'assemblea non conta più'},
+         {r:'quindi la filosofia', n:'Smette di parlare della città', d:'e comincia a parlare dell\'individuo'},
+         {r:'e si presenta come', n:'Terapia', d:'«vuota è la parola del filosofo che non cura una sofferenza»',
+          f:[{piu:true, r:'la formula è di', n:'Epicuro', d:'e la riprenderanno tutte le scuole ellenistiche'}]},
+         {r:'le scuole diventano', n:'Comunità di vita', d:'non si va a lezione: si vive insieme secondo una regola',
+          f:[{piu:true, r:'e sono', n:'Quattro', d:'Giardino, Stoà, scetticismo, e l\'Accademia che diventa scettica'}]}
+       ]},
+
+      {r:'la prima è', n:'Il Giardino di Epicuro', d:'Atene, 306 a.C.: una scuola dentro un orto',
+       f:[
+         {r:'accoglie', n:'Donne e schiavi', d:'cosa che nessun\'altra scuola greca faceva',
+          f:[{piu:true, r:'fra i nomi', n:'Leonzio e Mî', d:'un\'etera e uno schiavo, citati come membri a pieno titolo'}]},
+         {r:'sull\'ingresso', n:'«Ospite, qui starai bene»', d:'«qui il bene è il piacere»: lo riporta Seneca'},
+         {r:'insegna', n:'Vivi nascosto', d:'láthe biósas: stare fuori dalla politica è parte della cura'},
+         {r:'mette al centro', n:'L\'amicizia', d:'«di tutto ciò che la saggezza procura, il bene maggiore»'},
+         {r:'scrive', n:'Trecento rotoli', d:'ne restano tre lettere e due raccolte di massime',
+          f:[{piu:true, r:'ritrovati a', n:'Ercolano', d:'la Villa dei Papiri: rotoli carbonizzati, ancora in corso di lettura'}]}
+       ]},
+
+      {r:'poggia sulla', n:'Canonica', d:'la regola per distinguere il vero: tre criteri',
+       f:[
+         {r:'le', n:'Sensazioni', d:'e non sbagliano mai: sono il contatto diretto con le cose',
+          f:[{r:'sbaglia', n:'L\'opinione che ci aggiungiamo', d:'la torre lontana appare tonda: l\'errore è dire che è tonda'}]},
+         {r:'le', n:'Prolessi', d:'anticipazioni: immagini generali depositate dalle sensazioni ripetute'},
+         {r:'le', n:'Affezioni', d:'piacere e dolore: il criterio per la scelta e il rifiuto'},
+         {piu:true, r:'esclude', n:'La dialettica', d:'inutile: si conosce guardando, non discutendo'}
+       ]},
+
+      {r:'ha una', n:'Fisica atomistica', d:'ripresa da Democrito, con una modifica decisiva',
+       f:[
+         {r:'restano', n:'Atomi e vuoto', d:'infiniti, eterni, in movimento perpetuo'},
+         {r:'aggiunge', n:'Il clinamen', d:'una deviazione minima e senza causa dalla caduta verticale',
+          f:[{r:'serve per', n:'Far nascere i mondi', d:'atomi che cadono paralleli non si incontrerebbero mai'},
+             {r:'e serve per', n:'Salvare la libertà', d:'se tutto è necessità, non c\'è responsabilità'},
+             {piu:true, r:'lo racconta', n:'Lucrezio, II 216-293', d:'in Epicuro non se ne è conservata la formulazione diretta'}]},
+         {r:'ci sono', n:'Mondi infiniti', d:'nascono e muoiono, e il nostro non ha niente di speciale'},
+         {r:'l\'anima è', n:'Fatta di atomi', d:'sottilissimi: si dissolve con il corpo'},
+         {r:'e gli dèi', n:'Esistono e non si occupano di noi', d:'vivono negli intermundia, perfettamente beati',
+          f:[{piu:true, r:'perché', n:'Occuparsi del mondo è fatica', d:'e un essere beato non fatica e non si adira'}]}
+       ]},
+
+      {r:'definisce', n:'Il piacere', d:'ma non quello che credete',
+       f:[
+         {r:'non è', n:'Il piacere in movimento', d:'cinetico: quello che si prova mentre si soddisfa un bisogno'},
+         {r:'è', n:'Il piacere stabile', d:'catastematico: l\'assenza di dolore, ed è il limite massimo',
+          f:[{r:'nel corpo', n:'Aponía', d:'assenza di dolore fisico'},
+             {r:'nell\'anima', n:'Atarassia epicurea', d:'assenza di turbamento'},
+             {piu:true, r:'quindi', n:'Il piacere non cresce', d:'una volta tolto il dolore, si può solo variare, non aumentare'}]},
+         {r:'si governa con', n:'La classificazione dei desideri', d:'e sono solo tre gruppi',
+          f:[{r:'naturali e necessari', n:'Fame, sete, riparo', d:'facili da soddisfare: e la loro assenza fa male'},
+             {r:'naturali non necessari', n:'Cibi raffinati', d:'si possono avere, ma non se ne sente la mancanza'},
+             {r:'né l\'uno né l\'altro', n:'Gloria, ricchezza, potere', d:'vuoti: nascono da opinione, e non hanno limite'}]},
+         {r:'richiede', n:'Il calcolo', d:'a volte si sceglie un dolore perché ne segue un piacere maggiore',
+          f:[{piu:true, r:'per questo', n:'La saggezza è la virtù prima', d:'«non si vive bene senza vivere saggiamente»'}]}
+       ]},
+
+      {r:'si riassume nel', n:'Tetrafarmaco', d:'i quattro rimedi, da imparare a memoria',
+       f:[
+         {r:'primo', n:'Gli dèi non fanno paura', d:'non intervengono, non puniscono, non premiano'},
+         {r:'secondo', n:'La morte non dà preoccupazione', d:'quando ci siamo noi non c\'è lei, quando c\'è lei non ci siamo noi'},
+         {r:'terzo', n:'Il bene è facile da procurarsi', d:'pane e acqua tolgono il dolore della fame'},
+         {r:'quarto', n:'Il male è facile da sopportare', d:'se è acuto dura poco, se dura è sopportabile'},
+         {piu:true, r:'conservato in', n:'Un papiro di Ercolano', d:'nell\'opera di Filodemo di Gadara'}
+       ]},
+
+      {r:'l\'altra via è', n:'Lo scetticismo', d:'stessa meta, strada opposta',
+       f:[
+         {r:'lo fonda', n:'Pirrone di Elide', d:'che aveva seguito Alessandro fino in India',
+          f:[{piu:true, r:'dove incontrò', n:'I ginnosofisti', d:'i sapienti nudi indiani: la tradizione ci vede un\'influenza'}]},
+         {r:'parte da tre domande', n:'Come sono le cose? come dobbiamo comportarci? che cosa ne ricaviamo?',
+          f:[{r:'risposta prima', n:'Non lo possiamo sapere', d:'a ogni ragione se ne oppone una uguale e contraria'},
+             {r:'risposta seconda', n:'Sospendere il giudizio', d:'epoché: non affermare e non negare'},
+             {r:'risposta terza', n:'Atarassia scettica', d:'la quiete arriva da sola, come l\'ombra segue chi cammina'}]},
+         {r:'poggia sull\'', n:'Isostenía', d:'uguale forza delle ragioni opposte'},
+         {r:'costruisce', n:'I dieci tropi di Enesidemo', d:'dieci modi per mostrare che le cose appaiono diverse',
+          f:[{r:'esempio', n:'Lo stesso miele', d:'dolce alla lingua, sgradevole all\'occhio malato'},
+             {piu:true, r:'e il', n:'Diverso secondo l\'animale', d:'la stessa acqua è casa per il pesce e morte per l\'uomo'}]},
+         {r:'e poi', n:'I cinque tropi di Agrippa', d:'una macchina che blocca qualunque dimostrazione',
+          f:[{r:'il', n:'Disaccordo', d:'su tutto c\'è chi la pensa diversamente'},
+             {r:'il', n:'Regresso all\'infinito', d:'ogni prova chiede una prova'},
+             {r:'la', n:'Relatività', d:'le cose appaiono in rapporto a chi guarda'},
+             {r:'l\'', n:'Ipotesi', d:'fermarsi a un principio non dimostrato è arbitrario'},
+             {r:'il', n:'Circolo', d:'oppure ci si prova a vicenda: e non vale'}]},
+         {r:'ci arriva attraverso', n:'Sesto Empirico', d:'medico del II secolo d.C.: senza di lui non sapremmo quasi nulla'},
+         {r:'ma vive', n:'Secondo i fenomeni', d:'lo scettico non è paralizzato: segue le apparenze, i costumi, le arti'}
+       ]},
+
+      {r:'lascia', n:'Che cosa resta', d:'una fortuna strana, fatta di condanne e riscoperte',
+       f:[
+         {r:'Lucrezio ne fa', n:'Il De rerum natura', d:'l\'epicureismo in esametri latini, per Roma'},
+         {r:'il cristianesimo lo', n:'Condanna più di ogni altro', d:'niente provvidenza, niente anima immortale, niente giudizio',
+          f:[{piu:true, r:'e Dante', n:'Lo mette fra gli eretici', d:'Inferno X: le tombe infuocate di chi «l\'anima col corpo morta fanno»'}]},
+         {r:'torna con', n:'Poggio Bracciolini', d:'nel 1417 ritrova Lucrezio in un monastero tedesco'},
+         {r:'lo scetticismo torna con', n:'Montaigne', d:'«que sais-je?»: e da lì arriverà a Cartesio e a Hume'},
+         {r:'e il nome resta', n:'Frainteso per sempre', d:'«epicureo» oggi significa il contrario di quello che insegnava'}
+       ]}
+    ],
+    incroci:[
+      {da:'Terapia', a:'Tetrafarmaco', r:'prende alla lettera la metafora in',
+       perche:'Se la filosofia è medicina, la dottrina va somministrata come un farmaco: quattro formule brevi da mandare a memoria e ripetere. Non è divulgazione — è la conseguenza di aver deciso che un pensiero vale quanto cura.'},
+      {da:'Il clinamen', a:'Gli dèi non fanno paura', r:'rende possibile',
+       perche:'Un mondo interamente necessario avrebbe bisogno di un ordinatore, o schiaccerebbe l\'uomo sotto il destino. La deviazione senza causa toglie il posto tanto alla provvidenza quanto al fato: nessuno ha progettato nulla, e nessuno ti sta guardando.'},
+      {da:'La morte non dà preoccupazione', a:'Fatta di atomi', r:'si regge su',
+       perche:'L\'argomento funziona solo se non resta niente dopo: se l\'anima è un aggregato di atomi che si disperde, non c\'è nessun soggetto a cui la morte possa accadere. Tolta la fisica, il rimedio non tiene.'},
+      {da:'Gloria, ricchezza, potere', a:'Vivi nascosto', r:'giustifica',
+       perche:'I desideri vuoti non hanno limite perché non nascono da un bisogno del corpo ma da un\'opinione sugli altri. Uscire dalla competizione politica non è vigliaccheria: è togliersi dal luogo in cui quei desideri si producono.'},
+      {da:'Il piacere stabile', a:'Il bene è facile da procurarsi', r:'rende vero che',
+       perche:'Se il piacere è assenza di dolore e non un accumulo, allora pane e acqua bastano davvero: tolta la fame, il resto è variazione. È il passaggio che trasforma una tesi sul piacere in una tesi sulla frugalità.'},
+      {da:'Sensazioni', a:'La dialettica', r:'rende superflua',
+       perche:'Se i sensi non sbagliano mai e l\'errore sta nell\'opinione aggiunta, il compito non è ragionare meglio ma smettere di aggiungere. Da qui il disprezzo epicureo per la logica, che le altre scuole coltivavano.'},
+      {da:'Isostenía', a:'Sospendere il giudizio', r:'produce necessariamente',
+       perche:'Se ogni ragione ne incontra una di uguale forza, la bilancia resta ferma: non è una scelta di prudenza, è ciò che accade quando i due piatti pesano uguale. Lo scettico non decide di sospendere — si ritrova sospeso.'},
+      {da:'Atarassia scettica', a:'Atarassia epicurea', r:'raggiunge per la via opposta',
+       perche:'Stessa meta e strade contrarie: Epicuro toglie il turbamento spiegando tutto — atomi, dèi, morte — lo scettico togliendo ogni pretesa di spiegare. Uno guarisce col sapere, l\'altro rinunciandovi.'},
+      {da:'I cinque tropi di Agrippa', a:'Non lo possiamo sapere', r:'dimostra formalmente che',
+       perche:'Disaccordo, regresso, relatività, ipotesi e circolo non sono cinque esempi: sono le sole uscite possibili da una richiesta di prova, e sono tutte chiuse. È la prima macchina logica costruita per fermare qualunque dimostrazione.'},
+      {da:'Secondo i fenomeni', a:'Non lo possiamo sapere', r:'rende vivibile',
+       perche:'L\'obiezione classica è che lo scettico non potrebbe nemmeno mangiare. Sesto risponde che le apparenze bastano a vivere: non affermo che il miele sia dolce, dico che mi appare dolce, e lo mangio. Si sospende il giudizio, non l\'azione.'},
+      {da:'Condanna più di ogni altro', a:'Frainteso per sempre', r:'spiega',
+       perche:'Una dottrina senza provvidenza né aldilà andava screditata, e il modo più efficace non era confutarla: era raccontare che i suoi seguaci vivessero nel lusso. Il significato attuale della parola «epicureo» è il risultato di quella campagna.'},
+      {da:'Comunità di vita', a:'L\'amicizia', r:'ha bisogno di',
+       perche:'Una scuola che promette una cura non può essere un\'aula: le abitudini si prendono vivendo insieme. Per questo l\'amicizia non è un tema fra gli altri nel Giardino — è la condizione perché la terapia funzioni.'}
+    ]
+  },
+  provocazione: {
+    titolo:'Vi dimostro che avere paura della morte è irrazionale',
+    durata:'55 minuti',
+    domandaMadre:'Se un ragionamento che non riuscite a confutare non vi cambia di una virgola, a che cosa serve la filosofia?',
+    perche:'L\'argomento di Epicuro sulla morte ha una qualità rarissima: si capisce in trenta secondi, quasi nessuno riesce a smontarlo, e non guarisce nessuno. La classe si trova per la prima volta davanti alla distanza fra convincere e cambiare — che è il problema centrale di tutta la filosofia ellenistica, e il motivo per cui in quei secoli le scuole smettono di essere aule e diventano comunità con esercizi e regole. Il colpo di scena mette a confronto le due terapie opposte: Epicuro toglie la paura spiegando tutto, lo scettico togliendo ogni pretesa di spiegare — e ottengono la stessa quiete.',
+    occorrente:'Niente. Serve però di tenere il tono leggero: l\'argomento è serio e la classe va lasciata libera di riderci sopra.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'Alzi la mano chi ha paura della morte.\n\nBene. Adesso ve la tolgo, in tre righe.\n\nFinché ci siete voi, la morte non c\'è.\nQuando c\'è la morte, non ci siete voi.\n\nNon vi incontrerete mai.\n\nQuindi la morte non è niente per voi:\nnon c\'è nessun momento in cui possa farvi del male.\n\nAvete ancora paura?',
+       parlato:'Fai alzare le mani sul serio e conta: serve il numero per la fine.\n\nPoi dai l\'argomento con la massima semplicità, senza commentarlo. È fatto di due premesse che nessuno rifiuta e di una conclusione che segue: la struttura è pulitissima, e questo è il punto.\n\nInfine la domanda, e falla proprio così: «avete ancora paura?». Ridono tutti, e rispondono di sì. Ed è la prima volta nell\'anno che una classe intera ammette che un ragionamento valido non ha alcun effetto su di lei.\n\nSegnati quella reazione: è il vero oggetto dell\'ora.',
+       seDicono:[
+         {loro:'«Non ho paura della morte, ho paura di morire.»',
+          tu:'È esattamente la distinzione di Epicuro, e te la concede: la paura del dolore e della malattia è un\'altra cosa, e si cura in un altro modo. Lui parla dello stato di essere morto. Di quello hai paura?'},
+         {loro:'«Ho paura di perdere tutto: le persone, le cose che volevo fare.»',
+          tu:'Ma perdere è un verbo che ha bisogno di qualcuno che perda. Se non ci sei più, chi è che sente la mancanza? Non ti sto dicendo che hai torto: ti sto chiedendo di dirmi dove sta il soggetto di quella perdita.'}
+       ]},
+
+      {minuti:'8–17', et:'Lo schieramento',
+       schermo:'L\'argomento di Epicuro:',
+       opzioni:['è valido, e non riesco a confutarlo', 'ha un errore, e lo trovo'],
+       parlato:'Conta e scrivi. In genere la classe si divide quasi a metà, e il secondo gruppo è convinto che l\'errore ci sia — ma quando gli chiedi di indicarlo, produce quasi sempre paure e non obiezioni.\n\nAiutali a distinguere le due cose, perché è il mestiere: «mi sembra sbagliato» non è «è sbagliato». Chiedi di completare la frase «l\'errore è nel passaggio da… a…».\n\nPoi lancia la simmetria, che è la seconda mossa di Epicuro e li mette in difficoltà davvero:\n\nprima di nascere non c\'eravate, per un tempo infinito. Vi fa paura quell\'eternità? No. Allora perché ve ne fa l\'altra, che è identica?\n\nQui il silenzio dura di più.',
+       seDicono:[
+         {loro:'«Prima di nascere non ero nessuno, adesso invece esisto: è diverso.»',
+          tu:'È l\'obiezione seria, e ha un nome: la chiamano asimmetria. Nascere tardi non ci sembra una perdita, morire presto sì. Se riesci a dire perché, hai trovato una crepa vera — e ci hanno lavorato filosofi contemporanei per anni.'},
+         {loro:'«L\'errore è che la morte fa male a chi resta.»',
+          tu:'Verissimo, ma stai cambiando domanda. Epicuro parla del male che la morte fa a te. Che faccia male agli altri lo ammette — anzi, l\'amicizia è il centro della sua scuola. La tua paura è per te o per loro?'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'Epicuro non sta consolando. Sta curando.\n\nPer lui la filosofia è medicina:\n«vuota è la parola del filosofo\nche non cura nessuna sofferenza umana».\n\nE la ricetta è di quattro righe,\nda imparare a memoria come una formula:\n\n1. Gli dèi non fanno paura.\n2. La morte non dà preoccupazione.\n3. Il bene è facile da procurarsi.\n4. Il male è facile da sopportare.\n\nSi chiamava tetrafarmaco:\nil rimedio in quattro sostanze.',
+       parlato:'Qui si spiega perché siamo in un\'epoca nuova. Dopo Alessandro la pólis non decide più niente: il cittadino diventa suddito, e la filosofia smette di chiedersi come si governa una città per chiedersi come si sopravvive a un mondo che non si controlla.\n\nDa qui la parola terapia, che non è una metafora carina: le scuole ellenistiche diventano comunità con regole, esercizi quotidiani, formule da ripetere. Il Giardino è un orto in cui si vive insieme, e accoglie donne e schiavi — cosa che nessun\'altra scuola greca faceva.\n\nPoi fai vedere che i quattro rimedi non sono slogan: ognuno poggia sulla fisica. La morte non è nulla perché l\'anima è fatta di atomi che si disperdono. Gli dèi non fanno paura perché un essere beato non si affatica a governare il mondo. Senza gli atomi, il tetrafarmaco è un poster motivazionale.',
+       seDicono:[
+         {loro:'«Imparare formule a memoria non è filosofia.»',
+          tu:'Dipende da che cosa vuoi che la filosofia faccia. Se deve convincerti, basta l\'argomento. Se deve cambiarti quando sei spaventato alle tre di notte, l\'argomento non ti verrà in mente: ti verrà in mente quello che hai ripetuto cento volte. Epicuro ha scelto la seconda.'},
+         {loro:'«Ma allora è una religione.»',
+          tu:'Ha alcune caratteristiche di una religione — comunità, regola di vita, formule — e nessuna delle altre: nessun dio che interviene, nessun aldilà, nessun premio. È una cosa terza, e nel mondo antico è la norma: si sceglieva una scuola come oggi si sceglie un modo di vivere.'}
+       ]},
+
+      {minuti:'28–38', et:'Il testo',
+       schermo:'«Abìtuati a pensare che la morte non è nulla per noi.\n\nOgni bene e ogni male stanno nella sensazione:\nma la morte è privazione della sensazione.\n\nPerciò il più temuto dei mali, la morte, non è nulla per noi:\nquando noi ci siamo, la morte non c\'è;\nquando c\'è la morte, noi non siamo più.\n\nDunque non è nulla né per i vivi né per i morti:\nper i primi non c\'è, e i secondi non ci sono più.»',
+       testo:{fonte:'Epicuro, Lettera a Meneceo 124-125 (III secolo a.C.)',
+              glossa:'La prima parola è la più importante, e nessuno la nota: «abìtuati». Non «capisci», non «convinciti». Epicuro sa benissimo che l\'argomento da solo non basta, e prescrive un esercizio ripetuto. Tutta la differenza fra una dimostrazione e una terapia sta in quel verbo.'},
+       parlato:'Leggi il passo, poi torna sulla prima parola e falla pesare. Chiedi alla classe di rileggere l\'attacco: «abìtuati a pensare». È un imperativo di allenamento, non di comprensione.\n\nPoi fai notare la premessa che regge tutto: ogni bene e ogni male stanno nella sensazione. Se qualcuno la rifiuta — se sostiene che possa esserci un male che non si sente — l\'intero argomento cade. Chiedi se qualcuno vuole rifiutarla, e vedrai che è più difficile di quanto sembri.\n\nSe c\'è tempo, il rovescio della medaglia: la stessa premessa che toglie la paura della morte toglie anche ogni speranza di un dopo. Epicuro sta chiedendo di rinunciare a due cose insieme, e le presenta come un solo guadagno.',
+       seDicono:[
+         {loro:'«Può esserci un male che non senti: essere tradito e non saperlo.»',
+          tu:'Obiezione ottima, ed è quella giusta: se un danno può esistere senza essere sentito, la premessa di Epicuro è falsa e la morte può essere un male anche per chi non c\'è più. Tienila da parte — è il cuore del dibattito contemporaneo su questo tema.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'Nello stesso periodo, un\'altra scuola\narriva alla stessa quiete per la strada opposta.\n\nEpicuro toglie la paura spiegando tutto:\ngli atomi, gli dèi, la morte.\n\nGli scettici dicono che il turbamento nasce proprio\ndal voler stabilire come stanno le cose —\ne che la cura è smettere.\n\nA ogni ragione se ne oppone una di uguale forza.\nAllora si sospende il giudizio.\nE la quiete, dice Sesto Empirico, arriva da sé:\ncome l\'ombra segue chi cammina.\n\nDue terapie opposte. Stesso risultato.',
+       parlato:'Presenta lo scetticismo come una scuola pratica, non come una posa: Pirrone aveva seguito Alessandro fino in India, e la tradizione racconta che avesse incontrato i sapienti nudi.\n\nPoi mostra la macchina che rende la cosa seria — i cinque tropi di Agrippa. Chiunque affermi qualcosa può essere fermato in cinque modi: c\'è chi la pensa diversamente; ogni prova ne chiede un\'altra; le cose appaiono in rapporto a chi guarda; fermarsi a un principio indimostrato è arbitrario; provarsi a vicenda è un circolo. Non sono esempi: sono tutte le uscite possibili, e sono chiuse.\n\nInfine l\'obiezione che arriva sempre — «così non si può vivere» — e la risposta di Sesto, che è elegantissima: lo scettico segue le apparenze. Non dice che il miele è dolce; dice che gli appare dolce, e lo mangia. Si sospende il giudizio, non l\'azione.',
+       seDicono:[
+         {loro:'«Lo scettico non può nemmeno dire che non si può sapere niente: si contraddice.»',
+          tu:'Se ne erano accorti. Rispondono che le loro formule sono come i purganti, che si eliminano insieme a ciò che devono eliminare: «non determino nulla» vale anche per sé stesso. Ti sembra una scappatoia o una mossa onesta?'},
+         {loro:'«È una filosofia da vigliacchi: non si prende mai posizione.»',
+          tu:'Provaci un\'ora: sospendere il giudizio su una cosa a cui tieni è molto più faticoso che difenderla. E nota che entrambe le scuole promettono la stessa cosa — la quiete — e che tu la stai giudicando come se fosse un difetto. Perché?'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'All\'inizio dell\'ora avevate paura della morte in tanti.\n\nAdesso conoscete un argomento valido\nche dimostra che quella paura non ha oggetto,\ne quasi nessuno di voi è riuscito a confutarlo.\n\nAlzi ancora la mano chi ha paura.\n\nÈ lo stesso numero.\n\nAllora l\'ultima domanda dell\'ora:\n\nse un ragionamento che non sapete confutare\nnon vi cambia di una virgola,\na che cosa serve la filosofia?',
+       parlato:'Rifai la conta e mostrala. Il numero non si muove quasi mai, e il fatto che non si muova è il risultato dell\'esperimento.\n\nPoi lascia la domanda finale in aria per qualche secondo prima di dare la risposta ellenistica, che è la sola cosa da portare a casa: proprio perché l\'argomento non basta, in quei secoli la filosofia smette di essere una teoria e diventa un esercizio. Formule da ripetere, una comunità in cui vivere, un allenamento quotidiano. «Abìtuati», non «capisci».\n\nE la conseguenza per loro, detta una volta sola e senza retorica: se una convinzione la volete davvero, capirla è il primo dieci per cento. Il resto è ripeterla in situazioni in cui costa.\n\nChiudi qui. La prossima volta, un\'altra scuola con la stessa ambizione e una risposta completamente diversa: gli stoici.',
+       seDicono:[
+         {loro:'«Quindi la filosofia non serve a niente contro le emozioni?»',
+          tu:'Serve, ma non come credevi: non ti toglie la paura dimostrandoti che è infondata. Ti dà una cosa da fare tutti i giorni, che con gli anni la sposta. È più lento e meno soddisfacente di un argomento — ed è l\'unica cosa che nella storia abbia funzionato.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'La deviazione che salva la libertà',
+       corpo:'Gli atomi cadono nel vuoto tutti alla stessa velocità e in linea retta. Ma se cadessero perfettamente paralleli non si incontrerebbero mai, e non nascerebbe nessun mondo.\n\nEpicuro allora aggiunge il clinamen: una deviazione minima, «in un tempo indeterminato e in un luogo indeterminato», senza causa. Basta quella perché gli atomi si urtino e tutto cominci.\n\nE serve anche a un\'altra cosa. In un mondo di sola necessità, ogni tua azione sarebbe stabilita dalla prima collisione: nessuna colpa, nessun merito, nessuna scelta. La deviazione senza causa apre uno spiraglio.',
+       chiedi:'Un movimento senza causa: è la soluzione o è la resa? E soprattutto — se la vostra libertà dipendesse da un urto casuale fra atomi, sarebbe davvero vostra? Il caso vi rende più liberi della necessità?'},
+      {titolo:'Il maiale sulla nave',
+       corpo:'Durante una tempesta i compagni di Pirrone erano terrorizzati. Lui indicò un maialino che continuava tranquillamente a mangiare sul ponte, e disse che quella era l\'imperturbabilità a cui il saggio deve arrivare.\n\nDi lui si raccontava anche che non evitasse i carri né i precipizi, e che gli amici dovessero seguirlo per salvarlo. Ma un\'altra tradizione dice che visse novant\'anni, fu fatto sommo sacerdote dalla sua città, e che per riguardo verso di lui gli Elei esentarono tutti i filosofi dalle tasse.',
+       chiedi:'Le due tradizioni non possono essere vere insieme: uno che non evita i precipizi non arriva a novant\'anni. Perché sono state raccontate tutte e due? E che cosa vuol dire, che gli aneddoti su un filosofo li scrivono spesso i suoi avversari?'},
+      {titolo:'La parola rubata',
+       corpo:'Epicuro mangiava pane e formaggio, e scriveva che con un po\' di formaggio poteva permettersi un banchetto. Insegnava che i desideri di ricchezza e gloria sono vuoti, e che il piacere massimo è l\'assenza di dolore.\n\nOggi «epicureo» significa buongustaio, amante dei piaceri raffinati e della bella vita.\n\nIl rovesciamento non è casuale: una dottrina che negava la provvidenza, l\'aldilà e il giudizio andava screditata, e il modo più efficace non era confutarla — era raccontare che i suoi seguaci vivessero nel lusso.',
+       chiedi:'Conoscete altre parole a cui è successa la stessa cosa? E come si fa, oggi, ad accorgersi che una parola ci arriva già carica del giudizio di qualcun altro?'}
+    ],
+    testi:[
+      {fonte:'Epicuro, Sentenze Vaticane 23 e Massime capitali 27',
+       corpo:'«Di tutti i beni che la saggezza procura per la felicità dell\'intera vita, di gran lunga il più grande è l\'acquisto dell\'amicizia.»\n\n«Ogni amicizia è desiderabile per sé stessa, ma ha preso inizio dall\'utilità.»',
+       glossa:'Le due frasi insieme dicono una cosa più interessante di ciascuna da sola: l\'amicizia nasce dal bisogno e poi diventa un fine. È lo stesso schema con cui Epicuro tratta il piacere — si parte da un calcolo e si arriva a qualcosa che non si calcola più.'},
+      {fonte:'Sesto Empirico, Schizzi pirroniani I 8 e I 28',
+       corpo:'«Lo scetticismo è la capacità di mettere di fronte in ogni modo possibile le cose che appaiono e quelle che si pensano; sicché, per l\'uguale forza delle cose e dei discorsi opposti, giungiamo prima alla sospensione del giudizio e poi all\'imperturbabilità.»\n\n«Allo scettico accadde ciò che si racconta di Apelle: disperando di dipingere la schiuma del cavallo, gettò contro il quadro la spugna con cui puliva i pennelli — e ne uscì l\'immagine della schiuma.»',
+       glossa:'La quiete non si ottiene cercandola: arriva quando si smette. L\'aneddoto del pittore è la cosa più bella dello scetticismo antico — ed è anche l\'ammissione che il risultato non è stato progettato, ma trovato.'},
+      {fonte:'Lucrezio, De rerum natura II 1-4',
+       corpo:'«Dolce è, quando sul vasto mare i venti sconvolgono le acque, guardare da terra il grande travaglio di un altro; non perché sia un piacere che qualcuno soffra, ma perché è dolce vedere da quali mali tu sia libero.»',
+       glossa:'Il passo più frainteso della letteratura latina: non è cinismo, è la descrizione dell\'atarassia. Ma vale la pena chiedere alla classe se l\'immagine regga — se la propria pace debba proprio misurarsi guardando la tempesta altrui.'}
+    ],
+    compito:'Mezza pagina. Scegliete una paura che avete e provate a scriverne l\'argomento contrario nel modo più stringente possibile, come ha fatto Epicuro. Poi rispondete a una sola domanda, onestamente: dopo averlo scritto, avete ancora quella paura? E se sì, che cosa servirebbe — secondo voi — perché cambiasse qualcosa?',
+    fonti:[
+      'Epicuro, Lettera a Meneceo; Lettera a Erodoto; Massime capitali; Sentenze Vaticane (in Diogene Laerzio, Vite X)',
+      'Lucrezio, De rerum natura I 62-79, II 216-293 (il clinamen), III 830-869 (la morte)',
+      'Sesto Empirico, Schizzi pirroniani I 1-30 (definizione, isostenia, epoché), I 36-186 (i dieci tropi), I 164-177 (i cinque tropi)',
+      'Diogene Laerzio, Vite IX 61-108 (Pirrone e lo scetticismo), X 1-154 (Epicuro)',
+      'Cicerone, De finibus I-II — l\'esposizione e la critica dell\'epicureismo',
+      'P. Hadot, Che cos\'è la filosofia antica? — la filosofia come esercizio spirituale',
+      'M. Nussbaum, Terapia del desiderio'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',
