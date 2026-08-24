@@ -161,7 +161,7 @@ Si va in ordine di programma. Restano:
 - [x] Filosofia medievale · 2 — Tommaso d'Aquino
 - [x] Filosofia medievale · 3 — La filosofia nel Trecento
 - [x] Storia moderna · 1 — Carlo V e la Riforma protestante
-- [ ] Storia moderna · 2 — Riforma e Controriforma
+- [x] Storia moderna · 2 — Riforma e Controriforma
 - [ ] Storia moderna · 3 — Economia, guerre e il declino spagnolo
 - [ ] Storia moderna · 4 — La crisi del Seicento e la rivoluzione scientifica
 - [ ] Storia moderna · 5 — La guerra dei Trent'anni e l'Olanda

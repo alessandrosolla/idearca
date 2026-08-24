@@ -6246,6 +6246,224 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Storia moderna · 2 — Riforma e Controriforma': {
+  mappa: {
+    n:'Riforma e Controriforma', d:'come la Chiesa cattolica reagisce, e che cosa diventa nel farlo',
+    f:[
+      {r:'comincia da', n:'Due nomi per la stessa cosa', d:'e la scelta del nome contiene gia una tesi',
+       f:[
+         {r:'chi dice', n:'Controriforma', d:'sottolinea la reazione: nasce per rispondere a Lutero e per reprimere'},
+         {r:'chi dice', n:'Riforma cattolica', d:'sottolinea che il rinnovamento era gia cominciato prima del 1517'},
+         {r:'a favore del secondo ci sono', n:'Gli ordini nati prima', d:'teatini nel 1524, cappuccini nel 1528: non rispondono a nessuno'},
+         {r:'e le', n:'Richieste di riforma quattrocentesche', d:'concili, umanisti, predicatori: la denuncia degli abusi e antica'},
+         {piu:true, r:'oggi si preferisce parlare di', n:'Confessionalizzazione', d:'processo parallelo nei due campi: entrambi disciplinano i fedeli e rafforzano lo Stato'}
+       ]},
+
+      {r:'ha il suo atto centrale nel', n:'Concilio di Trento', d:'1545-1563: diciotto anni, tre fasi, due lunghe interruzioni',
+       f:[
+         {r:'convocato', n:'Con trent\'anni di ritardo', d:'quando la ricomposizione con i protestanti e ormai impossibile'},
+         {r:'sul piano dottrinale afferma', n:'Scrittura e tradizione', d:'due fonti, non una: e la risposta diretta al sola Scriptura'},
+         {r:'ribadisce', n:'I sette sacramenti', d:'e la presenza reale nell\'eucaristia, definita come transustanziazione'},
+         {r:'e sulla salvezza afferma', n:'Fede e opere insieme', d:'la grazia e necessaria, e la libera cooperazione dell\'uomo pure'},
+         {r:'sul piano pratico impone', n:'La residenza dei vescovi', d:'chi ha una diocesi deve viverci: e la riforma piu concreta di tutte'},
+         {r:'istituisce', n:'I seminari', d:'una scuola per preti in ogni diocesi: per la prima volta il clero viene formato'},
+         {r:'e ordina', n:'I registri parrocchiali', d:'battesimi, matrimoni e morti scritti e conservati',
+          f:[{piu:true, r:'creando senza volerlo', n:'La prima anagrafe d\'Europa', d:'la base di tutta la demografia storica che conosciamo'}]}
+       ]},
+
+      {r:'si affida a', n:'Ordini nuovi', d:'e uno di essi cambia le regole del gioco',
+       f:[
+         {r:'la', n:'Compagnia di Gesu', d:'approvata nel 1540, fondata da un ex soldato basco'},
+         {r:'con gli', n:'Esercizi spirituali', d:'un metodo di quattro settimane per governare le proprie scelte'},
+         {r:'e un', n:'Quarto voto', d:'obbedienza diretta al papa: si va dove serve, senza discutere'},
+         {r:'rompe le abitudini monastiche', n:'Niente coro, abito, clausura', d:'per stare nel mondo bisogna sembrare del mondo',
+          f:[{r:'e si dedica alle', n:'Scuole gratuite', d:'in un secolo la rete scolastica piu estesa d\'Europa'},
+             {piu:true, r:'formando anche', n:'Le classi dirigenti protestanti', d:'molti mandavano i figli nei collegi gesuiti perche erano i migliori'}]},
+         {r:'e occupa un posto delicato come', n:'Confessore dei principi', d:'un\'influenza politica che generera sospetti e leggende'}
+       ]},
+
+      {r:'si dota di', n:'Strumenti di controllo', d:'e qui la parola Controriforma e quella giusta',
+       f:[
+         {r:'l\'', n:'Inquisizione romana', d:'1542: un tribunale centrale con giurisdizione su tutta la cristianita cattolica'},
+         {r:'l\'', n:'Indice dei libri proibiti', d:'1559, poi rivisto a Trento: cataloghi di cio che non si puo leggere'},
+         {r:'e soprattutto la', n:'Censura preventiva', d:'l\'imprimatur: piu efficace del divieto, perche agisce prima che il libro esista'},
+         {r:'con processi celebri', n:'Bruno e Galileo', d:'1600 e 1633: due casi diversissimi, spesso confusi fra loro'},
+         {r:'ma con', n:'Limiti pratici notevoli', d:'i libri proibiti circolano, e ogni Stato applica come vuole',
+          f:[{piu:true, r:'e l\'Indice resta in vigore fino al', n:'1966', d:'quattro secoli: e la misura di quanto uno strumento sopravviva al suo scopo'}]}
+       ]},
+
+      {r:'agisce sui fedeli con', n:'La disciplina', d:'la trasformazione piu profonda, e la meno visibile',
+       f:[
+         {r:'diffonde il', n:'Catechismo', d:'domande e risposte da imparare: la fede diventa un contenuto verificabile'},
+         {r:'impone la', n:'Confessione individuale', d:'obbligatoria e regolare, con un esame sistematico della coscienza',
+          f:[{r:'e inventa il', n:'Confessionale', d:'un mobile nuovo, con la grata: separa, protegge e rende impersonale'}]},
+         {r:'organizza', n:'Missioni popolari', d:'squadre di predicatori che percorrono le campagne per settimane'},
+         {r:'e sorveglia', n:'I costumi', d:'matrimoni, feste, bestemmie: la parrocchia diventa un\'istituzione di controllo',
+          f:[{piu:true, r:'con lo stesso obiettivo dei', n:'Consistori calvinisti', d:'le due confessioni disciplinano i fedeli con strumenti simmetrici'}]}
+       ]},
+
+      {r:'usa', n:'L\'arte come argomento', d:'contro chi ha scelto la parola scritta, si sceglie l\'immagine',
+       f:[
+         {r:'Trento conferma', n:'La legittimita delle immagini', d:'contro l\'iconoclastia protestante, ma chiede chiarezza e decoro'},
+         {r:'ne nasce il', n:'Barocco', d:'movimento, luce, emozione: l\'arte deve commuovere prima di spiegare'},
+         {r:'con la scelta di', n:'Colpire i sensi', d:'chi non sa leggere puo essere raggiunto lo stesso, e piu in fretta'},
+         {r:'la musica resta', n:'Comprensibile', d:'la polifonia si semplifica perche le parole si sentano'},
+         {r:'e i gesuiti usano', n:'Il teatro', d:'nei collegi, come esercizio e come strumento di persuasione'}
+       ]},
+
+      {r:'si espande con', n:'Le missioni', d:'ed e qui che il cattolicesimo diventa per la prima volta mondiale',
+       f:[
+         {r:'in America', n:'Le riduzioni del Paraguay', d:'villaggi indigeni organizzati dai gesuiti e separati dai coloni',
+          f:[{r:'con lo scopo di', n:'Proteggere dagli schiavisti', d:'e con il risultato di creare un mondo chiuso e autosufficiente'},
+             {piu:true, r:'che dura', n:'Centocinquant\'anni', d:'fino all\'espulsione dei gesuiti dai domini spagnoli e portoghesi'}]},
+         {r:'in Asia', n:'Francesco Saverio', d:'India, Giappone: la prima grande impresa missionaria oltre l\'oceano'},
+         {r:'in Cina', n:'Matteo Ricci', d:'si veste da letterato, impara il cinese classico, entra alla corte imperiale',
+          f:[{r:'traduce', n:'Euclide in cinese', d:'e presenta il cristianesimo dentro il lessico confuciano'},
+             {r:'e consente ai convertiti', n:'I riti agli antenati', d:'sostenendo che siano civili e non religiosi'}]},
+         {r:'in India', n:'Roberto de Nobili', d:'adotta abito e costumi dei bramini, con la stessa strategia'},
+         {r:'e tutto si blocca con', n:'La condanna dei riti cinesi', d:'1704 e 1742: Roma decide che quei riti sono religiosi',
+          f:[{r:'e l\'imperatore', n:'Vieta il cristianesimo', d:'la missione piu riuscita della storia si chiude in pochi anni'},
+             {piu:true, r:'la condanna sara revocata nel', n:'1939', d:'duecentotrentacinque anni dopo, quando non serve piu a nessuno'}]}
+       ]},
+
+      {r:'lascia', n:'Un bilancio doppio', d:'e le due facce vanno tenute insieme',
+       f:[
+         {r:'da un lato un clero', n:'Formato e presente', d:'per la prima volta i parroci sanno che cosa insegnano'},
+         {r:'e una rete di', n:'Scuole e assistenza', d:'che copre l\'Europa cattolica'},
+         {r:'dall\'altro un', n:'Irrigidimento intellettuale', d:'sospetto verso la novita, e un costo pagato dalla scienza italiana'},
+         {r:'e in entrambi i campi', n:'La caccia alle streghe', d:'il picco e fra Cinque e Seicento, e riguarda cattolici e protestanti insieme',
+          f:[{piu:true, r:'con l\'eccezione notevole dell\'', n:'Inquisizione spagnola e romana', d:'piu scettiche di molti tribunali civili del Nord Europa'}]},
+         {r:'e l\'Europa resta', n:'Divisa ma stabilizzata', d:'due blocchi che si somigliano piu di quanto ammettano'}
+       ]}
+    ],
+    incroci:[
+      {da:'Con trent\'anni di ritardo', a:'Scrittura e tradizione', r:'e la ragione per cui il concilio sceglie',
+       perche:'Se Trento si fosse riunito nel 1520 avrebbe potuto cercare formule di compromesso. Riunito nel 1545, con la frattura consumata, definisce la dottrina in modo da escludere la posizione avversaria. Il ritardo trasforma un chiarimento in un confine: quando un\'istituzione risponde tardi, non risponde piu alla domanda ma alla rottura.'},
+      {da:'I registri parrocchiali', a:'La prima anagrafe d\'Europa', r:'producono senza volerlo',
+       perche:'L\'obbligo di registrare battesimi, matrimoni e sepolture nasce per controllare che i matrimoni siano regolari e che nessuno sfugga ai sacramenti. Il risultato e la piu antica serie di dati continui sulla popolazione europea, senza la quale non sapremmo quasi nulla di come si viveva. Uno strumento di controllo diventa la fonte principale della storia sociale.'},
+      {da:'Niente coro, abito, clausura', a:'Matteo Ricci', r:'e cio che rende possibile il metodo di',
+       perche:'Un ordine senza abito, senza coro e senza clausura puo mandare i propri uomini a vestirsi da letterati cinesi o da bramini indiani. La scelta organizzativa precede la scelta missionaria e la rende pensabile: si adatta chi non ha una forma esteriore da difendere.'},
+      {da:'Censura preventiva', a:'Irrigidimento intellettuale', r:'produce piu de',
+       perche:'L\'Indice proibiva libri gia scritti e in gran parte circolanti; l\'imprimatur agisce prima, e il libro che non conviene scrivere non lascia traccia. È l\'effetto piu profondo e il meno misurabile della censura: non i testi vietati, ma quelli mai tentati.'},
+      {da:'I riti agli antenati', a:'Vieta il cristianesimo', r:'sono la questione che porta l\'imperatore a',
+       perche:'Kangxi era favorevole ai missionari e li teneva a corte come astronomi. Quando Roma stabilisce che i riti cinesi sono religiosi, l\'imperatore obietta che degli stranieri non possono decidere che cosa significhino i riti cinesi, e chiude. La missione non cade per persecuzione: cade per una decisione presa a ottomila chilometri.'},
+      {da:'Le riduzioni del Paraguay', a:'Matteo Ricci', r:'sono la strategia opposta a quella di',
+       perche:'In Cina i gesuiti si immergono nella cultura locale e ne adottano il lessico; in Paraguay isolano gli indios dai coloni e costruiscono un mondo chiuso. Stesso ordine, stesso secolo, due risposte contrarie: la scelta dipende da chi si ha davanti — un impero letterato o una popolazione minacciata dagli schiavisti.'},
+      {da:'Consistori calvinisti', a:'I costumi', r:'perseguono lo stesso obiettivo del controllo su',
+       perche:'Cattolici e protestanti si combattono e nel frattempo fanno la stessa cosa: catechismi, sorveglianza dei costumi, registrazione dei fedeli, disciplina delle feste. È il motivo per cui gli storici parlano di confessionalizzazione — due processi simmetrici, che rafforzano entrambi lo Stato territoriale.'},
+      {da:'Colpire i sensi', a:'Catechismo', r:'lavora sullo stesso pubblico del',
+       perche:'La strategia cattolica punta su due canali per la stessa popolazione in gran parte analfabeta: le domande da mandare a memoria e le immagini che commuovono. Contro una riforma fondata sulla lettura personale, si risponde con una fede che si impara a voce e si vede.'},
+      {da:'Le classi dirigenti protestanti', a:'Scuole gratuite', r:'si formano nelle',
+       perche:'I collegi gesuiti erano gratuiti e considerati i migliori d\'Europa, e vi mandavano i figli anche famiglie protestanti. Mostra un fatto che il racconto della guerra di religione nasconde: nel mezzo dello scontro confessionale continuava a esistere un mercato dell\'istruzione che i confini non fermavano.'},
+      {da:'1966', a:'Inquisizione romana', r:'e la data in cui finisce lo strumento nato con l\'',
+       perche:'Il tribunale nasce nel 1542 e l\'Indice viene abolito nel 1966: quattro secoli e un quarto. Le istituzioni create per un\'emergenza tendono a sopravviverle di molto, perche nel frattempo diventano uffici con personale, competenze e ragioni proprie di esistere.'},
+      {da:'La residenza dei vescovi', a:'Formato e presente', r:'e cio che produce davvero un clero',
+       perche:'Fra tutte le decisioni di Trento, l\'obbligo per un vescovo di vivere nella propria diocesi e la meno spettacolare e la piu efficace: significa che qualcuno controlla i parroci, visita le chiese e apre i seminari. Le riforme che funzionano sono spesso amministrative, e per questo non si ricordano.'},
+      {da:'La caccia alle streghe', a:'Confessionalizzazione', r:'e un effetto collaterale della',
+       perche:'Il picco della persecuzione coincide con il momento in cui entrambe le confessioni pretendono un\'ortodossia esatta da ogni singolo fedele e sanno finalmente chi sono i propri parrocchiani. Una societa che sorveglia meglio trova piu devianti — e la caccia riguarda i due campi allo stesso modo.'},
+      {da:'1939', a:'La condanna dei riti cinesi', r:'revoca',
+       perche:'Roma dichiara leciti i riti agli antenati due secoli e mezzo dopo averli proibiti, riconoscendo che erano civili come sosteneva Ricci. La decisione arriva quando non ha piu effetti pratici: e il caso limite di che cosa significhi avere ragione troppo tardi.'}
+    ]
+  },
+  provocazione: {
+    titolo:'Li Madou',
+    durata:'55 minuti',
+    domandaMadre:'Fino a che punto si puo tradurre cio in cui si crede nella lingua di un altro?',
+    perche:'Matteo Ricci entra in Cina vestito da letterato confuciano, impara il cinese classico, traduce Euclide, presenta il cristianesimo con le parole della tradizione locale e consente ai convertiti di continuare a onorare gli antenati. È la missione piu riuscita della storia europea, e un secolo dopo Roma la distrugge decidendo che quei riti sono religiosi. La classe deve capire che la domanda di Roma era legittima anche se la risposta fu catastrofica: se traduci tutto, che cosa resta di cio che volevi portare? È la domanda di chiunque debba spiegare qualcosa a qualcuno che parte da un altro mondo — quindi anche la nostra, in quest\'aula.',
+    occorrente:'Niente.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'Pechino, primi del Seicento.\n\nAlla corte imperiale lavora\nun astronomo di nome Li Madou.\n\nVeste la lunga tunica di seta\ndei letterati confuciani\ne porta la barba lunga.\nParla e scrive il cinese classico.\nHa tradotto in cinese\ni primi sei libri di Euclide.\nHa disegnato un mappamondo\ncon la Cina al centro.\n\nDiscute di filosofia\ncon i funzionari imperiali,\ne molti di loro si convertono\nalla sua religione.\n\nContinuando a onorare\ngli antenati e Confucio,\ncome hanno sempre fatto.\n\nLi Madou e il nome cinese\ndi Matteo Ricci,\ngesuita, nato a Macerata.',
+       parlato:'Racconta la scena e tieni il nome per ultimo.\n\nPoi aggiungi i dettagli che colpiscono. Ricci era arrivato vestito da monaco buddista, perche gli avevano detto che i religiosi si vestivano cosi; dopo qualche anno capisce l\'errore — i bonzi erano socialmente disprezzati — e cambia: si veste da letterato, cioe si presenta come uno studioso, non come un prete.\n\nIl mappamondo con la Cina al centro non e una furbizia: e la scoperta che una mappa non ha un centro naturale, e che metterci l\'Europa e una scelta come un\'altra.\n\nPoi la domanda dell\'ora: e un genio o ha svenduto cio che era andato a portare?',
+       seDicono:[
+         {loro:'«Si era travestito per ingannarli.»',
+          tu:'Non ingannava sulla propria fede: quella la esponeva apertamente, e ci scrisse sopra libri in cinese. Aveva cambiato il modo di presentarsi, non il contenuto. La domanda seria e se le due cose si possano davvero separare — e ci lavoriamo per un\'ora.'},
+         {loro:'«Se li lascia fare come prima, che cosa ha cambiato?»',
+          tu:'Ottima obiezione, ed e esattamente quella che fara Roma un secolo dopo. Tienila da parte, perche fra trenta minuti scopriremo che cosa e successo quando qualcuno l\'ha presa sul serio.'}
+       ]},
+
+      {minuti:'8–17', et:'Lo schieramento',
+       schermo:'Il metodo di Ricci —\nadottare lingua, abito e categorie\ndi chi vuoi convincere:',
+       opzioni:['e l\'unico modo per farsi ascoltare davvero', 'svuota cio che si sta cercando di portare'],
+       parlato:'Fai schierare e conta. Di solito il primo gruppo vince nettamente, e allora tocca a te rendere forte il secondo.\n\nPoni la domanda cosi: se io traduco una parola con la parola che voi gia usate per un\'altra cosa, che cosa capite — la mia o la vostra?\n\nEsempio concreto e utile, tratto dalla vicenda vera. Per dire Dio, Ricci usa un\'espressione della tradizione cinese classica che significa Signore del Cielo. Ma «Cielo», in cinese, era anche un principio impersonale d\'ordine, non una persona. Un letterato che leggeva quel termine capiva davvero cio che Ricci intendeva, o capiva quello che aveva sempre capito?\n\nNon c\'e una risposta certa, e i missionari stessi litigarono per un secolo su questo.\n\nPoi la mossa che apre il blocco successivo: chiedi come si potrebbe stabilire chi ha ragione. Che cosa bisognerebbe sapere?',
+       seDicono:[
+         {loro:'«Basta chiedere ai convertiti che cosa credono.»',
+          tu:'Buona idea, ed e in parte quello che fecero gli avversari di Ricci quando arrivarono. Ma nota la difficolta: chi risponde usa le proprie parole, e siamo daccapo. Verificare che due persone intendano la stessa cosa e uno dei problemi piu difficili che esistano, e non riguarda solo le missioni.'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'Il punto tecnico\nsu cui si giochera tutto.\n\nI cinesi compivano riti\nin onore degli antenati:\ntavolette con i nomi,\ninchini, offerte di cibo.\n\nE riti in onore di Confucio,\nsoprattutto i letterati.\n\nRicci sostiene che sono\ncerimonie civili:\nrispetto per i morti\ne per un maestro,\ncome noi mettiamo fiori\nsu una tomba.\n\nQuindi si possono mantenere.\n\nSe invece fossero atti religiosi —\nculto reso a qualcuno\nche non e Dio —\nallora no.\n\nDomanda:\nchi decide che cosa significa un rito?\n\nChi lo compie,\no chi lo guarda da fuori?',
+       parlato:'Metti la questione in forma tecnica, perche cosi si capisce che non era una furbizia ma un problema reale.\n\nPoi lavora sulla domanda finale, che e la piu ricca dell\'ora. Fai vedere che entrambe le risposte hanno guai.\n\nSe decide chi compie il rito: allora chiunque puo dichiarare civile qualunque cosa faccia, e il criterio sparisce.\n\nSe decide chi guarda da fuori: allora uno straniero che non e cresciuto in quella cultura stabilisce il significato di un gesto che compiono altri — ed e esattamente quello che l\'imperatore cinese trovera inaccettabile.\n\nPoi aggiungi un dato che rende Ricci meno rassicurante e piu interessante: sapeva di correre un rischio. La sua idea era di entrare, farsi accettare, costruire una comunita forte e correggere in seguito cio che andava corretto. Una scommessa sul tempo.\n\nDomanda per la classe: e una strategia onesta o e rimandare il problema?',
+       seDicono:[
+         {loro:'«Da noi mettere i fiori sulla tomba non e religione.»',
+          tu:'Per te no. Ma prova a immaginare un osservatore che arriva da fuori, vede fiori, candele, fotografie, gente che parla ai morti, e ne trae le sue conclusioni. Non sarebbe del tutto assurdo. Il confine fra rispetto e culto e piu sfumato di quanto sembri da dentro.'},
+         {loro:'«Se aveva intenzione di correggere dopo, li stava ingannando.»',
+          tu:'È un\'accusa seria e fu fatta. La difesa possibile e che ogni insegnamento funziona cosi: si comincia da una versione semplificata e si corregge man mano. Il problema e stabilire quando la semplificazione diventa un\'altra cosa — e questo, francamente, e un problema anche mio con voi.'}
+       ]},
+
+      {minuti:'28–38', et:'Il testo',
+       schermo:'Dagli scritti di Ricci\nsul proprio metodo:\n\nspiega che in Cina non si ottiene nulla\ncon l\'autorita o con la forza,\nma soltanto con la ragione\ne con la stima personale;\n\nche conviene partire da cio\nche i cinesi gia ammettono,\ne mostrare che il resto\nnon lo contraddice;\n\nche molte cose andranno dette\npiu avanti,\nquando ci sara chi possa\nreggerne il peso.\n\nÈ un metodo missionario.\nÈ anche un metodo di insegnamento.',
+       testo:{fonte:'Matteo Ricci, dalle lettere e dai commentari sull\'entrata della Compagnia di Gesù in Cina (1583-1610)',
+              glossa:'Ricci non presenta il proprio adattamento come una concessione ma come una condizione: in un impero con una tradizione colta millenaria non esisteva alcun modo di imporre qualcosa. Il terzo punto è quello discusso: rinviare cio che non puo ancora essere accolto e prudenza pedagogica o e ambiguita? La stessa domanda si pone a chiunque insegni.'},
+       parlato:'Leggi i tre punti e poi fermati sul terzo, che e il piu discutibile e il piu istruttivo.\n\nPoi porta il discorso dove serve davvero, cioe in aula. Di\' che il metodo di Ricci e il metodo di ogni insegnante: si parte da cio che l\'altro gia sa, si usano le sue parole, si rimanda cio che non puo ancora reggere.\n\nE fai la domanda scomoda, su di te: quando vi spiego una teoria filosofica usando un esempio di oggi, vi sto facendo capire quella teoria o ve ne sto facendo capire una piu comoda?\n\nLasciali rispondere. Di solito ne esce una discussione migliore di quella sulla Cina, perche riguarda loro.\n\nPoi il criterio pratico, che e l\'unica cosa che possiamo dare: la traduzione e onesta finche si puo dire che cosa si e tolto. Se chi traduce non sa piu elencare le differenze fra la versione semplice e l\'originale, ha smesso di tradurre.',
+       seDicono:[
+         {loro:'«Allora ci sta sempre semplificando.»',
+          tu:'Sempre, e non ho alternative: nessuno impara partendo dal punto d\'arrivo. Quello che posso fare, e che dovete pretendere, e che vi dica quando lo sto facendo. «Questa e una versione ridotta» e una frase che cambia tutto.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'La controversia dura un secolo.\n\nAltri ordini arrivano in Cina,\nvedono i convertiti\ninchinarsi davanti alle tavolette\ndegli antenati,\ne denunciano tutto a Roma.\n\n1704, poi definitivamente 1742:\nRoma condanna i riti cinesi.\nSono religiosi.\nChi si converte deve smettere.\n\nL\'imperatore Kangxi,\nche fino a quel momento\naveva protetto i missionari\ne li teneva a corte,\nfa osservare che degli stranieri\nnon possono venire a spiegare\nai cinesi che cosa significhino\ni riti cinesi.\n\nE vieta il cristianesimo.\n\nLa missione piu riuscita\nche l\'Europa avesse mai fatto\nsi chiude in pochi anni.\n\nNel 1939 Roma revoca la condanna:\nquei riti, dichiara,\nerano civili.',
+       parlato:'Dai la sequenza per intero e lascia l\'ultima data in silenzio: duecentotrentacinque anni.\n\nPoi impedisci la conclusione facile, che sarebbe «Roma aveva torto e Ricci ragione».\n\nFai notare che l\'obiezione di Roma era seria: se il convertito continua a fare esattamente cio che faceva prima, in che senso e cambiato qualcosa? Non e una domanda ottusa. È la domanda che il primo gruppo dello schieramento non aveva saputo formulare bene.\n\nE fai notare anche il difetto della decisione: fu presa da persone che non erano mai state in Cina, sulla base di relazioni di altri, contro il parere di chi ci viveva da decenni. Non e il contenuto a essere assurdo, e il fatto che a decidere fosse chi era piu lontano.\n\nPoi mostra l\'altra faccia dello stesso ordine, ed e utile perche smonta ogni semplificazione: negli stessi decenni, in Paraguay, i gesuiti fanno l\'opposto — invece di immergersi, separano. Costruiscono villaggi indigeni chiusi ai coloni, autosufficienti, con lingua guarani, per proteggere gli indios dai cacciatori di schiavi. Dura centocinquant\'anni.\n\nStesso ordine, stesso secolo, due strategie contrarie. Perche? Perche davanti avevano cose diverse: un impero letterato da una parte, una popolazione minacciata dall\'altra.',
+       seDicono:[
+         {loro:'«Roma ha rovinato tutto per un dettaglio.»',
+          tu:'Per loro non era un dettaglio: era la differenza fra convertire e cambiare etichetta. Puoi pensare che si sbagliassero — la decisione del 1939 dice che si sbagliavano — ma la domanda che ponevano resta buona, e vale per qualunque idea si voglia trasmettere in un mondo che non e il proprio.'},
+         {loro:'«E se avessero deciso nel 1939 subito?»',
+          tu:'Probabilmente la Cina avrebbe avuto una grande comunita cristiana e una storia diversa. Ma attento al gioco: la stessa decisione presa nel 1704 avrebbe avuto contro tutti gli altri ordini e sarebbe stata contestata per un secolo. Le decisioni non si spostano nel tempo tenendo fermo tutto il resto.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'Due posizioni,\nnessuna delle due stupida.\n\nSe non traduci,\nnon ti ascolta nessuno.\n\nSe traduci tutto,\nnon hai portato niente:\nhai solo cambiato i nomi\ndi cio che c\'era gia.\n\nIl criterio possibile\nsta in mezzo, ed e questo:\n\nuna traduzione e onesta\nfinche chi la fa\nsa ancora dire\nche cosa ha tolto.\n\nUltima domanda,\ne stavolta riguarda voi.\n\nQuando spiegate a qualcuno\nqualcosa che vi sta a cuore,\nvi accorgete\ndi che cosa state togliendo?',
+       parlato:'Rifai la conta e commenta lo spostamento, che di solito e verso il centro piu che verso l\'altra parte.\n\nPoi riassumi il bilancio storico senza edulcorarlo. La Controriforma ha prodotto un clero formato, una rete di scuole senza precedenti e la prima anagrafe d\'Europa; ha prodotto anche l\'Indice, la censura preventiva e un irrigidimento che l\'Italia ha pagato in scienza per due secoli. Le due cose stanno nello stesso movimento, e chi ne racconta solo una sta facendo propaganda.\n\nSulla domanda finale falli parlare, e da\' loro il criterio operativo: non chiedersi che cosa si aggiunge per farsi capire, ma che cosa si toglie. Aggiungere esempi non costa nulla; togliere una difficolta perche l\'altro non la reggerebbe e la mossa che va tenuta d\'occhio.\n\nChiudi con la cosa che serve per il seguito del programma: da questo secolo in poi l\'Europa non pensa piu da sola. Sa che esistono civilta antiche quanto la propria, con altre risposte alle stesse domande. È questa scoperta, piu di ogni argomento filosofico, a mettere in crisi l\'idea che ci sia un solo modo ovvio di vedere il mondo.',
+       seDicono:[
+         {loro:'«Allora ogni traduzione tradisce.»',
+          tu:'Ogni traduzione perde qualcosa, che non e la stessa cosa. Il traduttore onesto sa che cosa ha perso e puo dirlo; quello disonesto sostiene di non aver perso niente. La differenza non e nel risultato, e nella consapevolezza — e si vede subito, quando chiedi.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'La riforma che ha funzionato davvero',
+       corpo:'Fra tutte le decisioni del concilio di Trento, quella che cambio piu cose non riguarda la dottrina: e l\'obbligo per i vescovi di risiedere nella propria diocesi.\n\nPrima era normale che un vescovo vivesse a Roma o a corte, incassando le rendite di sedi che non aveva mai visto; Alberto di Magonza ne cumulava tre. Dopo Trento un vescovo deve vivere dove e vescovo, visitare le parrocchie, aprire un seminario, controllare che i preti sappiano il latino e la dottrina.\n\nNel giro di due generazioni il clero cattolico e un corpo istruito e sorvegliato.',
+       chiedi:'La riforma piu efficace di tutto il concilio e una norma amministrativa che nessuno ricorda. Perche le cose che funzionano sono cosi spesso noiose? E che cosa dice questo su come giudichiamo le riforme mentre avvengono?'},
+      {titolo:'Due processi diversi',
+       corpo:'Giordano Bruno viene bruciato a Roma nel 1600 dopo otto anni di processo: le accuse riguardano tesi teologiche — la negazione della Trinita, della divinita di Cristo, la trasmigrazione delle anime — e non la cosmologia, anche se anche quella compare.\n\nGalileo viene processato nel 1633 per aver sostenuto il sistema copernicano dopo un divieto; abiura, ed e condannato agli arresti domiciliari, dove continua a scrivere e pubblica all\'estero l\'opera scientifica piu importante della sua vita.\n\nI due casi vengono spesso raccontati come lo stesso caso.',
+       chiedi:'Che cosa cambia, nel giudizio su un\'istituzione, distinguere due processi molto diversi invece di sommarli? E perche la memoria collettiva tende a fonderli in un\'unica storia?'},
+      {titolo:'Chi bruciava le streghe',
+       corpo:'Il picco della caccia alle streghe non e nel Medioevo ma fra la fine del Cinquecento e la meta del Seicento, cioe nel pieno dell\'eta confessionale, e riguarda allo stesso modo territori cattolici e protestanti.\n\nGli studi mostrano un dato inatteso: i tribunali dell\'Inquisizione romana e spagnola furono in media piu prudenti di molti tribunali civili del Nord Europa, richiedendo prove piu stringenti e derubricando molti casi a superstizione.\n\nI numeri complessivi restano discussi; l\'ordine di grandezza piu accreditato e di alcune decine di migliaia di vittime in tutta Europa.',
+       chiedi:'Il fenomeno cresce proprio quando gli Stati diventano piu capaci di registrare e sorvegliare i propri sudditi. Che rapporto c\'e fra la capacita di controllare e la quantita di devianti che si trovano?'}
+    ],
+    testi:[
+      {fonte:'Concilio di Trento, sessione XXV (1563) — decreto sulle immagini sacre',
+       corpo:'Il decreto conferma che si devono conservare e venerare le immagini di Cristo e dei santi, precisando che l\'onore reso a esse si riferisce a chi rappresentano; e prescrive che non vi sia nulla di disordinato, di sconveniente o di confuso, e che i vescovi vigilino su cio che viene esposto.',
+       glossa:'È il testo che sta all\'origine dell\'arte della Controriforma: legittima le immagini contro l\'iconoclastia protestante e insieme le sottopone a controllo. Da qui il barocco come strategia — commuovere per convincere — e insieme la sorveglianza dei vescovi sui pittori.'},
+      {fonte:'Editto di tolleranza dell\'imperatore Kangxi, 1692, e la sua revoca',
+       corpo:'L\'imperatore aveva riconosciuto ai missionari il diritto di predicare, osservando che la loro dottrina non turbava l\'ordine pubblico e che avevano reso servizi utili all\'impero. Dopo la condanna romana dei riti, dichiaro che gli occidentali discutevano di cose che non potevano comprendere e ordino l\'espulsione di chi non accettasse il metodo di Ricci.',
+       glossa:'Il rovesciamento e completo: l\'imperatore cinese difende la posizione di un gesuita italiano contro Roma. Utile in classe per mostrare che le linee del conflitto raramente coincidono con i confini che ci aspettiamo — e che il criterio di Kangxi, chi puo interpretare i riti di un popolo, è ancora una questione aperta.'},
+      {fonte:'Ignazio di Loyola, Esercizi spirituali — la regola sull\'obbedienza',
+       corpo:'Fra le regole per sentire con la Chiesa, Ignazio afferma che si deve essere disposti a credere nero cio che ai nostri occhi appare bianco, se la Chiesa gerarchica lo definisce tale.',
+       glossa:'È la formula piu citata contro i gesuiti, e va letta accanto al metodo di Ricci: lo stesso ordine che chiede questa obbedienza produce i missionari piu adattabili della storia. La contraddizione e apparente — l\'obbedienza riguarda la dottrina definita, l\'adattamento i mezzi — ma la tensione fra le due cose e reale e spiega la vicenda dei riti cinesi.'}
+    ],
+    compito:'Mezza pagina. Spiegate per iscritto qualcosa che vi appassiona — una materia, uno sport, una musica — a qualcuno che non ne sa nulla, usando solo parole ed esempi che quella persona conosce gia. Poi, sotto, fate l\'elenco di cio che avete dovuto togliere per riuscirci, e dite quale di quelle cose vi dispiace di piu aver tolto.',
+    fonti:[
+      'Concilio di Trento, decreti dottrinali e di riforma (1545-1563)',
+      'Matteo Ricci, Della entrata della Compagnia di Giesù e Christianità nella Cina; Lettere dalla Cina',
+      'Ignazio di Loyola, Esercizi spirituali; Costituzioni della Compagnia di Gesù',
+      'A. Prosperi, Tribunali della coscienza. Inquisitori, confessori, missionari',
+      'J. Delumeau, Il cattolicesimo dal XVI al XVIII secolo; P. Prodi, Il paradigma tridentino',
+      'J. Spence, Il palazzo della memoria di Matteo Ricci; N. Standaert, sulla controversia dei riti'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',
