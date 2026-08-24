@@ -4045,6 +4045,231 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Storia medievale · 6 — Le civiltà extraeuropee': {
+  mappa: {
+    n:'Il mondo fuori dall\'Europa', d:'VII-XV secolo: dove stavano davvero i centri',
+    f:[
+      {r:'il piu vicino e', n:'Il mondo islamico', d:'in un secolo dall\'Atlantico all\'Indo',
+       f:[
+         {r:'si organizza in', n:'Califfati', d:'e ogni spostamento di capitale e un cambio di civilta',
+          f:[{r:'gli', n:'Omayyadi a Damasco', d:'661-750: espansione, e un\'aristocrazia araba al comando'},
+             {r:'gli', n:'Abbasidi a Baghdad', d:'dal 762: capitale nuova, costruita apposta, aperta a persiani e non arabi'},
+             {piu:true, r:'e in Spagna', n:'Il califfato di Cordova', d:'dal 929: la citta piu grande d\'Europa occidentale'}]},
+         {r:'fonda', n:'La Casa della Sapienza', d:'Baghdad, IX secolo: traduzione sistematica di greci, persiani, indiani'},
+         {r:'produce', n:'Scienza in tutti i campi', d:'e per secoli e la piu avanzata del mondo',
+          f:[{r:'l\'', n:'Algebra', d:'da al-Khwarizmi, il cui nome ci ha dato «algoritmo»'},
+             {r:'l\'', n:'Ottica', d:'Alhazen: la luce entra nell\'occhio, non esce — e la fine di una teoria antica'},
+             {r:'la', n:'Medicina', d:'il Canone di Avicenna resta manuale nelle universita europee per secoli'},
+             {piu:true, r:'e la', n:'Chirurgia di Abulcasis', d:'con il primo repertorio illustrato di strumenti'}]},
+         {r:'conserva e commenta', n:'Aristotele', d:'e attraverso Averroe torna in Europa nel Duecento'},
+         {r:'e prende dalla Cina', n:'La carta', d:'dopo Talas, 751: e senza carta niente amministrazione e niente libri'}
+       ]},
+
+      {r:'accanto c\'e', n:'Bisanzio', d:'l\'impero romano che non e mai caduto',
+       f:[
+         {r:'si chiama', n:'Impero dei Romani', d:'i suoi abitanti si dicono Romaioi: «bizantino» e un termine moderno'},
+         {r:'ha', n:'Un\'amministrazione continua', d:'fisco, diritto, funzionari: nessuna interruzione dall\'antichita',
+          f:[{piu:true, r:'e il', n:'Corpus iuris di Giustiniano', d:'la base di tutto il diritto europeo continentale'}]},
+         {r:'si divide sull\'', n:'Iconoclastia', d:'VIII-IX secolo: si possono raffigurare le cose sacre?'},
+         {r:'si separa da Roma con', n:'Lo scisma del 1054', d:'che diventa irreparabile solo nel 1204'},
+         {r:'crolla dopo', n:'Manzikert 1071', d:'e non si riprende mai del tutto'},
+         {r:'e finisce nel', n:'1453', d:'Costantinopoli presa dagli Ottomani con le bombarde'}
+       ]},
+
+      {r:'il piu grande e', n:'La Cina', d:'Tang e Song: la civilta piu avanzata del mondo',
+       f:[
+         {r:'inventa', n:'Quattro cose che cambiano tutto', d:'e arrivano in Europa secoli dopo',
+          f:[{r:'la', n:'Stampa a caratteri mobili', d:'Bi Sheng, XI secolo: quattrocento anni prima di Gutenberg'},
+             {r:'la', n:'Polvere da sparo', d:'usata in armi gia nel XIII secolo'},
+             {r:'la', n:'Bussola', d:'per la navigazione dall\'XI secolo'},
+             {r:'e la', n:'Carta moneta', d:'emessa dallo Stato: l\'Europa ci arrivera settecento anni dopo'}]},
+         {r:'si governa con', n:'Una burocrazia per esame', d:'i funzionari si scelgono con concorsi pubblici sui classici',
+          f:[{r:'quindi', n:'Non e una nobilta di sangue', d:'almeno in teoria: e un\'idea che l\'Europa non ha'}]},
+         {r:'ha', n:'Citta enormi', d:'Hangzhou e forse la piu popolosa del mondo nel XIII secolo'},
+         {r:'e ospita', n:'Marco Polo', d:'o comunque il libro che ne porta il nome, e in Europa non gli credono',
+          f:[{piu:true, r:'lo chiamavano', n:'Il Milione', d:'e «milione» divento sinonimo di esagerazione'}]}
+       ]},
+
+      {r:'a sud c\'e', n:'L\'India', d:'e da li vengono i numeri che usiamo',
+       f:[
+         {r:'elabora', n:'Il sistema decimale posizionale', d:'con lo zero come cifra, non solo come assenza',
+          f:[{r:'passa agli arabi', n:'E poi a noi', d:'li chiamiamo «numeri arabi» ed erano indiani'},
+             {piu:true, r:'lo porta in Italia', n:'Leonardo Fibonacci', d:'nel Liber abaci, 1202, imparandolo a Bugia in Algeria'}]},
+         {r:'si frammenta in', n:'Molti regni', d:'e nel Nord si insedia il Sultanato di Delhi dal 1206'},
+         {r:'e sta al centro', n:'Dell\'Oceano Indiano', d:'la rete commerciale piu ricca del mondo, mossa dai monsoni'}
+       ]},
+
+      {r:'in Africa ci sono', n:'Imperi del Sahel', d:'e nessuno in Europa ne sa quasi nulla',
+       f:[
+         {r:'si succedono', n:'Ghana, Mali, Songhai', d:'fra VIII e XVI secolo, sul commercio transahariano'},
+         {r:'scambiano', n:'Oro contro sale', d:'l\'oro del Sud contro il sale del Sahara, a peso'},
+         {r:'con', n:'Mansa Musa', d:'imperatore del Mali, forse l\'uomo piu ricco mai esistito',
+          f:[{r:'nel 1324 compie', n:'Il pellegrinaggio alla Mecca', d:'con una carovana enorme, passando dal Cairo'},
+             {r:'e distribuisce tanto oro', n:'Da farne crollare il prezzo', d:'in Egitto il valore dell\'oro resta depresso per anni'}]},
+         {r:'ha come centro', n:'Timbuctu', d:'mercato, moschee e biblioteche: migliaia di manoscritti'},
+         {r:'sulla costa', n:'Le citta swahili', d:'Kilwa, Mombasa, Mogadiscio: commercio con India e Cina'},
+         {piu:true, r:'e resiste', n:'L\'Etiopia cristiana', d:'con le chiese scavate nella roccia a Lalibela'}
+       ]},
+
+      {r:'dall\'altra parte del mondo', n:'Le Americhe', d:'senza contatti, e con soluzioni diverse',
+       f:[
+         {r:'i', n:'Maya', d:'matematica, astronomia, scrittura, e uno zero indipendente',
+          f:[{r:'con un', n:'Calendario di precisione altissima', d:'e cicli lunghi migliaia di anni'}]},
+         {r:'gli', n:'Aztechi', d:'e Tenochtitlan, costruita su un lago',
+          f:[{piu:true, r:'con', n:'Chinampe', d:'campi galleggianti: fra le agricolture piu produttive del mondo'}]},
+         {r:'gli', n:'Inca', d:'un impero di quattromila chilometri lungo le Ande',
+          f:[{r:'tenuto da', n:'Una rete di strade e corrieri', d:'i chasqui: staffette a piedi, piu veloci di un cavallo su quei percorsi'},
+             {r:'e amministrato con', n:'I quipu', d:'cordicelle annodate: contabilita senza scrittura alfabetica'},
+             {r:'e tutto questo', n:'Senza ruota e senza ferro', d:'e senza animali da tiro adatti'}]}
+       ]},
+
+      {r:'tutto e tenuto insieme da', n:'Reti lunghe', d:'e il mondo e gia connesso',
+       f:[
+         {r:'la', n:'Via della seta', d:'carovane dalla Cina al Mediterraneo, per tappe e intermediari'},
+         {r:'l\'', n:'Oceano Indiano', d:'la rete piu ricca: mercanti arabi, indiani, cinesi, swahili'},
+         {r:'la', n:'Transahariana', d:'oro, sale, schiavi, libri'},
+         {r:'la', n:'Pax mongolica', d:'nel Duecento un solo impero dalla Corea all\'Ungheria rende le strade sicure',
+          f:[{r:'ed e allora', n:'Che partono i mercanti europei', d:'i Polo arrivano perche qualcun altro ha unificato il continente'}]},
+         {r:'e su queste vie viaggia anche', n:'La peste', d:'nel 1347 arriva in Europa dai porti del Mar Nero'}
+       ]},
+
+      {r:'lascia', n:'Una questione di sguardo', d:'e riguarda come lo raccontiamo',
+       f:[
+         {r:'intorno al 1300', n:'L\'Europa e periferica', d:'per ricchezza, dimensioni urbane e tecnologia'},
+         {r:'quasi tutto cio che usa', n:'Viene da fuori', d:'carta, numeri, bussola, polvere, Aristotele'},
+         {r:'ma non e passiva', n:'Adotta e combina', d:'e in due secoli trasforma cio che riceve'},
+         {r:'e la parola', n:'«Scoperta»', d:'dice il punto di vista di chi arriva, non di chi c\'era gia'},
+         {piu:true, r:'e i manuali', n:'Chiamano «medioevo» tutto', d:'una periodizzazione europea applicata a mondi che non l\'hanno vissuta'}
+       ]}
+    ],
+    incroci:[
+      {da:'La carta', a:'La Casa della Sapienza', r:'e la condizione materiale di',
+       perche:'Tradurre e copiare migliaia di opere greche, persiane e indiane su papiro o pergamena sarebbe costato troppo. La carta, presa dai prigionieri cinesi dopo la battaglia di Talas, rende economicamente possibile un\'impresa culturale di quelle dimensioni.'},
+      {da:'Aristotele', a:'Medicina', r:'arriva in Europa insieme alla',
+       perche:'Non si riceve un filosofo per volta: i testi arrivano in blocchi, tradotti dagli stessi centri e spesso dagli stessi uomini. Il Duecento europeo scopre insieme la logica di Aristotele, il Canone di Avicenna e l\'algebra — ed e per questo che l\'universita cambia in una generazione.'},
+      {da:'Il sistema decimale posizionale', a:'Viene da fuori', r:'e il caso piu quotidiano di cio che',
+       perche:'Con i numeri romani non si fanno moltiplicazioni e divisioni in colonna. Fibonacci impara le cifre indiane in un porto nordafricano dove il padre commerciava: le dieci cifre che tutti usano ogni giorno entrano in Europa dalla porta del commercio, e le chiamiamo ancora «arabe» pur essendo indiane.'},
+      {da:'Pax mongolica', a:'Marco Polo', r:'e la condizione che permette il viaggio di',
+       perche:'Nel Duecento un solo impero controlla le strade dalla Corea all\'Ungheria e le rende percorribili. I mercanti europei non arrivano in Cina perche sono diventati piu intraprendenti: arrivano perche qualcun altro ha unificato il continente.'},
+      {da:'La peste', a:'Via della seta', r:'viaggia sulle stesse rotte della',
+       perche:'Le reti che portano seta, spezie e idee portano anche i ratti e le pulci. La connessione del mondo non ha solo effetti positivi, e il 1347 e la prova piu dura: la globalizzazione medievale uccide un terzo dell\'Europa.'},
+      {da:'Da farne crollare il prezzo', a:'L\'Europa e periferica', r:'e la dimostrazione piu concreta che',
+       perche:'Un sovrano africano che attraversa il Cairo distribuendo doni fa scendere il valore dell\'oro in Egitto per anni. Nessun re europeo del Trecento avrebbe potuto muovere un mercato in quel modo: e un dato, non un\'opinione.'},
+      {da:'Una burocrazia per esame', a:'Non e una nobilta di sangue', r:'produce',
+       perche:'Selezionare i funzionari con concorsi pubblici sui testi classici significa che, almeno in linea di principio, la carica non si eredita. È l\'idea piu lontana dall\'Europa feudale del tempo — e quando gli europei la scopriranno, nel Settecento, la useranno come argomento contro i propri privilegi di nascita.'},
+      {da:'Senza ruota e senza ferro', a:'Una rete di strade e corrieri', r:'rende ancora piu notevole',
+       perche:'Un impero lungo quattromila chilometri tenuto insieme da staffette a piedi, senza ruota, senza ferro e senza animali da tiro. Misura la distanza fra «tecnologia» e «organizzazione»: gli Inca risolvono con la seconda quello che altrove si risolve con la prima.'},
+      {da:'Lo scisma del 1054', a:'1453', r:'contribuisce all\'isolamento che porta al',
+       perche:'Quando gli Ottomani stringono l\'assedio, l\'Occidente latino manda pochissimo: due secoli e mezzo prima un esercito crociato aveva saccheggiato quella stessa citta. La frattura religiosa era diventata anche una rottura politica, e Bisanzio muore quasi sola.'},
+      {da:'Il califfato di Cordova', a:'Viene da fuori', r:'e una delle porte da cui',
+       perche:'Toledo, dopo la riconquista cristiana, resta una citta trilingue dove ebrei, musulmani e cristiani traducono insieme. La maggior parte del sapere greco e arabo entra in Europa da li e dalla Sicilia — cioe da dove si conviveva, non da dove si combatteva.'},
+      {da:'«Scoperta»', a:'Una questione di sguardo', r:'e l\'esempio piu chiaro di',
+       perche:'Una parola che sembra neutra contiene un punto di vista: scoperto per chi? Chi ci abitava non aveva bisogno di essere trovato. Accorgersi delle parole che usiamo e la parte piu difficile e piu utile dello studio della storia.'},
+      {da:'Adotta e combina', a:'Quattro cose che cambiano tutto', r:'e quello che l\'Europa fa con le',
+       perche:'Stampa, polvere, bussola e carta sono cinesi, ma in Europa vengono usate in modi che in Cina non avevano avuto: la stampa per un mercato di libri in lingue volgari, la bussola per l\'oceano aperto, la polvere per artiglierie da assedio. Ricevere non e copiare, ed e questo che rende la storia difficile da raccontare con i buoni e i cattivi.'}
+    ]
+  },
+  provocazione: {
+    titolo:'Chi era la periferia',
+    durata:'55 minuti',
+    domandaMadre:'Che cosa rende «centrale» una civilta — e chi decide dove sta il centro?',
+    perche:'La classe colloca istintivamente l\'Europa al centro del mondo medievale e scopre, con dati verificabili, che intorno al 1300 era la parte meno ricca, meno urbanizzata e meno avanzata dell\'Eurasia. Ma l\'ora non si limita a ribaltare il mito: mostra che l\'Europa non e stata passiva, e soprattutto — con il caso di Zheng He — che la superiorita tecnica non decide niente da sola, perche a decidere sono le scelte politiche. Si chiude su una domanda di metodo che vale per tutto il programma: come si riconosce, dall\'interno, di stare guardando il mondo da un solo punto di vista.',
+    occorrente:'Un planisfero, meglio se non centrato sull\'Europa.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'Domanda secca.\n\nIntorno al 1300, quali erano\nle citta piu grandi del mondo?\n\nScrivetene tre.\n\n───\n\nParigi, la piu grande d\'Europa,\nfaceva forse duecentomila abitanti.\n\nHangzhou, in Cina, ne faceva\nprobabilmente diverse volte tanto.\nIl Cairo, Baghdad, Delhi\nerano fuori dalla portata di qualunque citta europea.\n\nNessuna citta europea\nentrava nelle prime dieci del mondo.',
+       parlato:'Fai scrivere davvero le tre citta prima di mostrare la seconda parte: quasi tutti scrivono Roma, Parigi, Londra, Costantinopoli.\n\nPoi dai i numeri, precisando che le stime demografiche antiche sono discusse e che l\'ordine di grandezza pero non e in discussione.\n\nLascia il tempo alla sorpresa, e poi la domanda che apre l\'ora: se non era li il centro del mondo, dov\'era? E perche noi lo mettiamo sempre in Europa?\n\nSe qualcuno protesta che le citta grandi non contano molto, va benissimo: chiedigli che cosa conterebbe di piu, e prendi nota della risposta. La useremo.',
+       seDicono:[
+         {loro:'«Le citta grandi non vogliono dire niente: contano le idee.»',
+          tu:'Allora contiamo anche quelle. Nel 1300 l\'algebra, l\'ottica, la medicina e i commenti ad Aristotele arrivano dal mondo islamico; i numeri che usiamo dall\'India; carta, bussola, stampa e polvere dalla Cina. Su quale voce l\'Europa era in vantaggio?'},
+         {loro:'«Ma poi ha vinto l\'Europa, quindi era migliore.»',
+          tu:'Attento a ragionare dal risultato: e come dire che chi ha vinto la partita era la squadra piu forte all\'inizio del campionato. Nel 1300 nessuno avrebbe scommesso sull\'Europa. Quello che dobbiamo capire e proprio che cosa cambia dopo — e non e la superiorita.'}
+       ]},
+
+      {minuti:'8–17', et:'Lo schieramento',
+       schermo:'Nel Trecento l\'Europa era:',
+       opzioni:['gia in vantaggio sul resto del mondo', 'una periferia'],
+       parlato:'Fai schierare e conta.\n\nPoi metti sul tavolo un fatto solo, e lascialo lavorare.\n\nNel 1324 l\'imperatore del Mali, Mansa Musa, attraversa il Cairo diretto alla Mecca. Distribuisce e spende talmente tanto oro che in Egitto il prezzo dell\'oro resta depresso per anni. Un solo sovrano, di passaggio, muove il mercato di uno dei paesi piu ricchi del mondo.\n\nChiedi: quale re europeo del Trecento avrebbe potuto fare una cosa simile?\n\nNessuno. E questo non e un giudizio: e un dato registrato dai cronisti egiziani.',
+       seDicono:[
+         {loro:'«L\'Africa nel Medioevo? Non c\'era niente.»',
+          tu:'C\'erano imperi grandi come mezza Europa, un commercio d\'oro che riforniva anche le zecche europee, e a Timbuctu biblioteche con migliaia di manoscritti. Il fatto che a scuola non se ne parli non e un\'informazione sull\'Africa: e un\'informazione sui nostri programmi.'},
+         {loro:'«Se erano cosi avanti, perche poi non hanno dominato loro?»',
+          tu:'È la domanda giusta e ci arriviamo fra venti minuti, con un caso preciso. Anticipo solo che la risposta non e «perche erano meno bravi».'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'Facciamo l\'inventario di quello\nche l\'Europa usa nel Quattrocento.\n\nLA CARTA — dalla Cina, attraverso il mondo islamico.\nI NUMERI, con lo zero — dall\'India, attraverso gli arabi.\nLA BUSSOLA — dalla Cina.\nLA POLVERE DA SPARO — dalla Cina.\nLA STAMPA A CARATTERI MOBILI — in Cina dall\'XI secolo.\nL\'ALGEBRA — da al-Khwarizmi, il cui nome\nci ha dato la parola «algoritmo».\nARISTOTELE — conservato, commentato e restituito\ndagli arabi, tradotto a Toledo e in Sicilia.\nLA MEDICINA — il Canone di Avicenna e manuale\nnelle universita europee per secoli.',
+       parlato:'Leggi l\'elenco lentamente: fa piu effetto se ogni voce ha il suo momento.\n\nPoi la precisazione che impedisce di sostituire un mito con un altro, e va fatta con la stessa fermezza. L\'Europa non e stata passiva. Riceve la bussola e la usa per l\'oceano aperto, non per il cabotaggio. Riceve la polvere e ne fa artiglierie da assedio che abbattono le mura. Riceve la stampa e la applica a un mercato di libri in lingue volgari.\n\nRicevere non e copiare. Ma nemmeno inventare.\n\nE il punto di metodo, che e il cuore del tempo: nella storia le cose viaggiano. Le civilta non sono contenitori chiusi con dentro il proprio genio — sono nodi di una rete. Nel Duecento un solo impero, quello mongolo, tiene le strade aperte dalla Corea all\'Ungheria, ed e allora che i mercanti europei arrivano in Cina. Non perche fossero diventati piu coraggiosi: perche qualcun altro aveva unificato il continente.',
+       seDicono:[
+         {loro:'«Allora l\'Europa non ha inventato niente.»',
+          tu:'Non e quello che ho detto, ed e importante non ribaltare il mito. Ha inventato moltissimo — gli occhiali, l\'orologio meccanico, la cambiale, l\'universita come corporazione. Il punto e che nessuno inventa da solo, e che chi si racconta come autosufficiente sta sempre dimenticando qualcosa.'},
+         {loro:'«Perche a scuola non ci dicono queste cose?»',
+          tu:'Perche i programmi di storia sono nati nell\'Ottocento per costruire le nazioni europee, e raccontavano da dove veniamo, non che cosa succedeva altrove. Sta cambiando, lentamente. Ed e un buon esempio del fatto che anche i programmi scolastici hanno una storia.'}
+       ]},
+
+      {minuti:'28–38', et:'Il testo',
+       schermo:'Un funzionario egiziano, al-Umari,\nraccoglie al Cairo le testimonianze\nsul passaggio di Mansa Musa,\ndodici anni dopo i fatti:\n\n«Quest\'uomo inondo il Cairo dei suoi benefici.\nNon vi fu persona, titolare di una carica\no detentore di un ufficio regale,\nche non ricevesse da lui una somma d\'oro.\n\nGli abitanti del Cairo ricavarono guadagni\nincalcolabili da lui e dal suo seguito,\ncomprando e vendendo, dando e prendendo.\n\nEssi cambiarono l\'oro\nfinche ne fecero scendere il valore in Egitto\ne ne deprezzarono il prezzo.»',
+       testo:{fonte:'al-Umari, Masalik al-absar, circa 1337 (il pellegrinaggio e del 1324)',
+              glossa:'La fonte e egiziana, non africana e non europea: e un funzionario del sultano che raccoglie testimonianze dodici anni dopo. Utile per due ragioni: dice qualcosa di verificabile — un\'oscillazione di mercato — e ricorda che nel Trecento esisteva una rete di cronisti, archivi e informazioni che non passava per l\'Europa.'},
+       parlato:'Leggi il passo e fermati sull\'ultima frase, che e l\'unica veramente misurabile: il prezzo dell\'oro scende. Non e un elogio di cortesia, e un effetto economico registrato.\n\nPoi chiedi alla classe di ragionare da storici: che cosa serve per credere a un testo simile? Che ci siano altre fonti, che l\'effetto sia coerente con quello che sappiamo del commercio dell\'oro, che l\'autore non abbia un interesse a esagerare. In questo caso tutte e tre reggono ragionevolmente.\n\nSe c\'e tempo, il collegamento con l\'Europa: buona parte dell\'oro che circolava nelle zecche europee — compreso quello dei fiorini — arrivava dal Sahel attraverso il Sahara. La ricchezza di Firenze e quella del Mali stanno sulla stessa rotta.',
+       seDicono:[
+         {loro:'«Magari esageravano per fare colpo.»',
+          tu:'È il dubbio giusto, e va tenuto. Ma nota che l\'effetto descritto — un crollo del prezzo dell\'oro — e verificabile con altre fonti sul mercato egiziano, e che una carovana enorme che spende per mesi in una citta produce davvero quel risultato. Il dubbio si risolve controllando, non scegliendo che cosa preferiamo credere.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'1405. Ottantasette anni prima di Colombo.\n\nL\'ammiraglio cinese Zheng He salpa\ncon una flotta di centinaia di navi\ne decine di migliaia di uomini.\n\nLe misure riportate dalle fonti sono discusse,\nma le navi erano di gran lunga\npiu grandi di qualunque nave europea del tempo.\n\nIn sette spedizioni raggiunge l\'India,\nil Golfo Persico, le coste dell\'Africa orientale.\n\nPoi, dopo il 1433, la Cina smette.\nLe spedizioni vengono interrotte,\nla costruzione di grandi navi d\'altura limitata,\nla documentazione trascurata.\n\nNon perche non potesse.\nPerche decise di no.',
+       parlato:'Dai i dati e poi la domanda, che e la piu importante dell\'ora: perche smette?\n\nRaccogli le ipotesi e poi da\' le ragioni che gli storici indicano: il costo enorme e nessun ritorno economico chiaro, dato che la Cina non aveva bisogno di comprare quasi nulla; la pressione militare sulle frontiere del nord, che assorbiva risorse; e un conflitto interno alla corte fra la burocrazia confuciana e gli eunuchi che promuovevano le spedizioni.\n\nPoi il punto, che vale per tutto il programma di quinta: la superiorita tecnica non decide niente da sola. La Cina aveva le navi e non ando; l\'Europa aveva navi peggiori e ando.\n\nE il rovescio che completa il ragionamento: gli europei si mettono in mare non perche siano superiori, ma perche hanno bisogno. Le rotte terrestri verso l\'Oriente sono controllate da altri, le spezie costano moltissimo, e l\'Atlantico e l\'unica strada che non e in mano a nessuno. La necessita, non l\'eccellenza.',
+       seDicono:[
+         {loro:'«Che errore hanno fatto i cinesi!»',
+          tu:'Con il senno di poi. All\'epoca era una decisione ragionevole: spendere una fortuna per raggiungere paesi che avevano poco da offrirti, mentre al nord premono eserciti veri. Giudicare le scelte del passato sapendo come e finita e il modo piu sicuro per non capirle.'},
+         {loro:'«Quindi se la Cina continuava, scopriva lei l\'America?»',
+          tu:'Forse, ma attenzione: le loro rotte andavano verso ovest, lungo coste conosciute, con i monsoni. Nessuno aveva ragione di attraversare un oceano vuoto verso est. Colombo ci prova perche sbaglia i calcoli e perche cerca una scorciatoia per le Indie: anche il caso conta.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'Torniamo alla prima domanda.\n\nAdesso sapete che intorno al 1300\nl\'Europa era una periferia\nricca di energia e povera di tutto il resto.\n\nE avete visto due parole da guardare bene:\n\n«SCOPERTA» — scoperto per chi?\nChi ci abitava non aveva bisogno di essere trovato.\n\n«MEDIOEVO» — di chi?\nÈ una periodizzazione europea\napplicata a mondi che non l\'hanno vissuta.\n\nUltima domanda:\n\nche cosa rende «centrale» una civilta —\ne chi decide dove sta il centro?',
+       parlato:'Rifai la conta iniziale e mostra lo spostamento.\n\nPoi lavora sulle due parole. «Scoperta» e la piu facile da vedere una volta indicata; «medioevo» e piu sottile e vale la pena spiegarla: mezzo fra che cosa? Fra l\'antichita e il rinascimento, che sono categorie della storia europea. Applicarla alla Cina dei Song o al Mali non significa niente — eppure lo facciamo, anche in questo capitolo, perche non abbiamo altre parole.\n\nChiudi con la domanda finale, e non darle una risposta. Se qualcuno prova a rispondere, la contromossa utile e chiedere: e nel 1300, chi lo avrebbe detto?\n\nUltima riga, se serve: fra pochi decenni l\'Europa uscira dai propri confini, e la prima cosa che fara sara chiamare «nuovo» un mondo abitato da millenni.',
+       seDicono:[
+         {loro:'«Quindi tutto e relativo, ogni punto di vista vale.»',
+          tu:'No, e sarebbe la conclusione sbagliata. I dati sulle popolazioni, sulle invenzioni e sul prezzo dell\'oro non sono punti di vista: sono fatti. Quello che cambia e la cornice con cui li ordiniamo — e una cornice si puo criticare, correggere e discutere. Accorgersene non serve a rinunciare a giudicare: serve a giudicare meglio.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'Il Milione, cioe l\'esagerazione',
+       corpo:'Il libro dettato da Marco Polo in prigione a Genova descrive citta con milioni di abitanti, ponti di pietra a centinaia, carta usata come moneta, carbone che brucia meglio della legna.\n\nIn Europa non gli credettero. Il soprannome del libro, «Il Milione», divento sinonimo di racconto esagerato, e la parola «milionario» conserva ancora quell\'origine.\n\nQuasi tutto quello che raccontava e stato poi confermato.',
+       chiedi:'Che cosa serve, a un\'informazione vera, per essere creduta? E che cosa dice di una societa il fatto che consideri assurdo cio che semplicemente non ha mai visto?'},
+      {titolo:'Le biblioteche di Timbuctu',
+       corpo:'Timbuctu, sul grande arco del Niger, era un nodo del commercio transahariano e insieme un centro di studio. Nelle sue madrase e nelle biblioteche private si copiavano e conservavano manoscritti di diritto, astronomia, matematica, medicina, poesia.\n\nDecine di migliaia di quei manoscritti sono sopravvissuti fino a oggi, conservati per generazioni dalle famiglie. Nel 2012, durante l\'occupazione jihadista della citta, migliaia di volumi furono messi in salvo e trasportati clandestinamente a Bamako da bibliotecari e cittadini.',
+       chiedi:'Un patrimonio scritto che sopravvive per secoli grazie a famiglie private, e che nel 2012 viene salvato di nascosto. Perche, secondo voi, l\'idea di un\'Africa senza scrittura e cosi diffusa? E chi ci ha guadagnato dal fatto che lo fosse?'},
+      {titolo:'Contare senza scrivere',
+       corpo:'L\'impero inca si estendeva per circa quattromila chilometri lungo le Ande, e non conosceva la scrittura alfabetica, la ruota, il ferro, ne animali da tiro adatti.\n\nEppure funzionava: una rete di strade con magazzini e stazioni, corrieri a staffetta chiamati chasqui che trasmettevano messaggi a grande velocita, e un sistema di registrazione fatto di cordicelle annodate, i quipu, con cui si tenevano censimenti, tributi e magazzini.\n\nGli studiosi discutono ancora se i quipu registrassero solo numeri o anche informazioni non numeriche.',
+       chiedi:'Che cosa e piu difficile: inventare una tecnologia o organizzare quattro milioni di persone senza di essa? E quali cose, oggi, funzionano perche c\'e organizzazione e non perche c\'e tecnologia?'}
+    ],
+    testi:[
+      {fonte:'Ibn Battuta, Rihla — il viaggiatore che percorse il mondo, XIV secolo',
+       corpo:'Il marocchino Ibn Battuta parti nel 1325 per il pellegrinaggio e torno dopo circa trent\'anni, avendo percorso — secondo i calcoli moderni — molto piu di centomila chilometri: Africa orientale, Arabia, Persia, India, forse la Cina, e poi il Mali.\n\nDappertutto trovo giudici, mercanti e studiosi che parlavano la sua lingua e conoscevano il suo diritto, e in piu di un luogo fu assunto come magistrato.',
+       glossa:'È il dato piu efficace per far capire che cosa fosse il mondo islamico: uno spazio in cui un uomo poteva viaggiare per trent\'anni trovando ovunque la stessa lingua colta, le stesse leggi e un lavoro. L\'Europa del Trecento non aveva niente di simile.'},
+      {fonte:'al-Khwarizmi, Kitab al-jabr wa-l-muqabala, IX secolo',
+       corpo:'Il titolo del trattato — «il libro del ripristino e del bilanciamento» — indica le due operazioni fondamentali per risolvere un\'equazione: spostare i termini da una parte all\'altra e semplificare. Da al-jabr viene «algebra»; dal nome dell\'autore, latinizzato, viene «algoritmo».',
+       glossa:'Due parole che gli studenti usano ogni giorno e che portano dentro la loro origine. Vale la pena farle cercare in classe: quante altre parole di uso comune vengono dall\'arabo — zero, cifra, zenit, ammiraglio, dogana, magazzino, tariffa.'},
+      {fonte:'Editti Ming sulla navigazione, dopo il 1433',
+       corpo:'Dopo l\'ultima spedizione di Zheng He le grandi flotte non vengono piu allestite. Nei decenni successivi la corte limita la costruzione di navi d\'altura e riduce i traffici marittimi ufficiali, concentrando le risorse sulle frontiere settentrionali.',
+       glossa:'Non esiste un unico decreto che «chiuda» la Cina, ed e importante dirlo: si tratta di una serie di scelte di bilancio e di priorita, prese da una corte in conflitto interno. Le grandi svolte storiche raramente hanno un documento unico — quasi sempre sono decisioni piccole che, sommate, cambiano la direzione.'}
+    ],
+    compito:'Mezza pagina. Prendete cinque oggetti o parole che usate ogni giorno e cercate da dove vengono — non chi li ha venduti, ma dove sono nati. Poi rispondete a una domanda: quanti di essi avreste attribuito d\'istinto all\'Europa? Se la risposta e «quasi tutti», provate a spiegare perche.',
+    fonti:[
+      'al-Umari, Masalik al-absar (sul Mali e Mansa Musa); Ibn Battuta, Rihla',
+      'Marco Polo, Il Milione; Ibn Khaldun, Muqaddima',
+      'J. Needham, Scienza e civilta in Cina; M. Elvin, The Pattern of the Chinese Past',
+      'J.L. Abu-Lughod, Before European Hegemony. The World System A.D. 1250-1350',
+      'K.N. Chaudhuri, Il mondo dell\'Oceano Indiano; F. Fernandez-Armesto, 1492',
+      'Sulle biblioteche di Timbuctu: J. Hunwick, Arabic Literature of Africa'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',
