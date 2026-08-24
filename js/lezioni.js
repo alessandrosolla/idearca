@@ -3827,6 +3827,224 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Storia medievale · 5 — Papato, Impero e monarchie nazionali': {
+  mappa: {
+    n:'Papato, Impero e monarchie', d:'XIII-XIV secolo: due poteri universali cadono, e ne nascono molti locali',
+    f:[
+      {r:'comincia dal', n:'Papato al culmine', d:'Innocenzo III, 1198-1216: mai cosi in alto',
+       f:[
+         {r:'si intitola', n:'Vicario di Cristo', d:'non piu solo successore di Pietro: rappresentante di Cristo in terra'},
+         {r:'usa l\'immagine del', n:'Sole e della luna', d:'il potere regio riceve luce da quello papale, come la luna dal sole'},
+         {r:'ha come vassalli', n:'Regni interi', d:'Inghilterra, Aragona, Portogallo, Sicilia gli prestano omaggio'},
+         {r:'convoca il', n:'IV concilio Lateranense', d:'1215: il piu grande dell\'epoca, oltre milleduecento fra vescovi e abati',
+          f:[{piu:true, r:'vi si stabilisce', n:'La confessione annuale obbligatoria', d:'una norma che entra nella vita di tutti'}]},
+         {r:'approva', n:'Gli ordini mendicanti', d:'francescani e domenicani: canalizza dentro la Chiesa la richiesta di poverta',
+          f:[{r:'invece di', n:'Condannarli come eretici', d:'come era accaduto ai valdesi pochi anni prima'}]},
+         {r:'e bandisce', n:'La crociata albigese', d:'1209: contro i catari del Midi, guerra dentro la cristianita'}
+       ]},
+
+      {r:'assiste al crollo dell\'', n:'Impero universale', d:'che dopo Federico II non si riprende',
+       f:[
+         {r:'con la fine degli', n:'Svevi', d:'Manfredi a Benevento 1266, Corradino a Tagliacozzo 1268'},
+         {r:'segue il', n:'Grande interregno', d:'1250-1273: nessun imperatore riconosciuto, e nessuno se ne accorge troppo'},
+         {r:'e si chiude con la', n:'Bolla d\'oro', d:'1356: l\'imperatore lo eleggono sette principi, e il papa non c\'entra piu',
+          f:[{r:'quindi l\'Impero', n:'Diventa tedesco', d:'una federazione di principi, non piu un\'autorita universale'},
+             {piu:true, r:'i sette sono', n:'Tre arcivescovi e quattro laici', d:'Magonza, Treviri, Colonia; Boemia, Palatinato, Sassonia, Brandeburgo'}]}
+       ]},
+
+      {r:'mentre cresce', n:'Il regno di Francia', d:'il modello di monarchia accentrata',
+       f:[
+         {r:'vince a', n:'Bouvines 1214', d:'Filippo Augusto batte inglesi, tedeschi e fiamminghi insieme'},
+         {r:'si dota di', n:'Funzionari stipendiati', d:'balivi e siniscalchi mandati dal centro, revocabili, pagati'},
+         {r:'e di', n:'Legisti', d:'giuristi formati sul diritto romano, che lavorano per il re',
+          f:[{r:'con la formula', n:'Il re e imperatore nel suo regno', d:'rex in regno suo est imperator: nessuna autorita superiore'}]},
+         {r:'con Filippo IV', n:'Tassa il clero', d:'e qui comincia lo scontro'},
+         {r:'e convoca gli', n:'Stati generali', d:'1302: nobilta, clero e terzo stato, chiamati a sostenere il re contro il papa',
+          f:[{piu:true, r:'ed e', n:'La prima mobilitazione dell\'opinione', d:'contro il papato, e funziona'}]}
+       ]},
+
+      {r:'e si scontrano in', n:'Bonifacio VIII contro Filippo il Bello', d:'in sette anni, dal massimo al minimo',
+       f:[
+         {r:'nel 1296', n:'Clericis laicos', d:'vietato ai laici tassare il clero senza permesso papale',
+          f:[{r:'e il re risponde', n:'Bloccando l\'oro verso Roma', d:'senza denaro francese la curia non regge, e Bonifacio cede'}]},
+         {r:'nel 1300 proclama', n:'Il primo Giubileo', d:'e Roma si riempie: e un successo enorme'},
+         {r:'nel 1302 promulga', n:'Unam Sanctam', d:'la rivendicazione piu alta mai scritta dal papato',
+          f:[{r:'con la teoria', n:'Dei due gladii', d:'entrambe le spade sono della Chiesa: una la impugna, l\'altra la fa impugnare'},
+             {r:'e conclude', n:'Ogni creatura umana e sottoposta al papa', d:'ed e necessario alla salvezza'}]},
+         {r:'nel 1303', n:'Anagni', d:'settembre: Guglielmo di Nogaret e Sciarra Colonna entrano nel palazzo papale',
+          f:[{r:'lo tengono', n:'Prigioniero per tre giorni', d:'poi la popolazione lo libera'},
+             {r:'e muore', n:'Un mese dopo', d:'a Roma, l\'11 ottobre'},
+             {piu:true, r:'lo schiaffo', n:'È tradizione tarda', d:'l\'oltraggio e certo, il gesto materiale meno'}]}
+       ]},
+
+      {r:'e il papato finisce', n:'Sotto tutela', d:'per un secolo intero',
+       f:[
+         {r:'si trasferisce ad', n:'Avignone', d:'1309-1377: sette papi, tutti francesi',
+          f:[{r:'chiamata da Petrarca', n:'Cattivita babilonese', d:'e il nome resta'},
+             {piu:true, r:'ma e anche', n:'Il periodo piu efficiente', d:'fisco, archivi e burocrazia papale si organizzano proprio li'}]},
+         {r:'poi si spacca nel', n:'Grande scisma', d:'1378-1417: due papi, e dal 1409 tre',
+          f:[{r:'e ogni Stato', n:'Sceglie il proprio papa', d:'l\'obbedienza religiosa segue le alleanze politiche'}]},
+         {r:'e si ricompone col', n:'Concilio di Costanza', d:'1414-1418: depone tutti e tre e ne elegge uno nuovo',
+          f:[{r:'affermando il', n:'Conciliarismo', d:'il concilio e superiore al papa'},
+             {r:'che e', n:'L\'esatto contrario di Unam Sanctam', d:'dodici anni dopo, un\'assemblea giudica il pontefice'}]}
+       ]},
+
+      {r:'intanto in', n:'Inghilterra', d:'un\'altra strada verso lo Stato',
+       f:[
+         {r:'con', n:'Enrico II', d:'nasce la common law: giudici itineranti e giurie, diritto uguale per il regno'},
+         {r:'con Giovanni Senzaterra', n:'Magna Carta', d:'1215: il re accetta limiti scritti al proprio potere',
+          f:[{r:'fra cui', n:'Nessun uomo libero sara imprigionato', d:'se non per giudizio dei pari e secondo la legge del paese'},
+             {r:'ma e', n:'Un accordo fra baroni e re', d:'non una carta dei diritti: «uomo libero» esclude quasi tutti'},
+             {piu:true, r:'e viene', n:'Annullata dal papa dopo pochi mesi', d:'e poi riemessa piu volte'}]},
+         {r:'e nel 1265', n:'Il parlamento di Simon de Montfort', d:'per la prima volta convoca anche borghesi e cavalieri delle contee',
+          f:[{r:'da cui', n:'Il re nel parlamento', d:'il sovrano legifera insieme all\'assemblea, non contro di essa'}]}
+       ]},
+
+      {r:'e nella penisola', n:'Iberica', d:'la reconquista costruisce regni',
+       f:[
+         {r:'la svolta e', n:'Las Navas de Tolosa 1212', d:'i regni cristiani coalizzati battono gli Almohadi'},
+         {r:'nascono', n:'Castiglia, Aragona, Portogallo', d:'e la reconquista da loro un fine comune e un\'ideologia'},
+         {r:'con le', n:'Cortes', d:'assemblee di ceti, in Leon gia dal 1188: fra le piu antiche d\'Europa'},
+         {piu:true, r:'resta', n:'Granada fino al 1492', d:'l\'ultimo emirato, per altri due secoli e mezzo'}
+       ]},
+
+      {r:'lascia', n:'Un\'Europa di Stati', d:'e la fine di due universalismi',
+       f:[
+         {r:'vince', n:'La sovranita territoriale', d:'ogni re e padrone in casa propria: nessuna autorita sopra'},
+         {r:'nasce', n:'Lo Stato come macchina', d:'funzionari, tasse regolari, archivi, ambasciate stabili, eserciti pagati'},
+         {r:'le Chiese diventano', n:'Nazionali di fatto', d:'i re nominano i vescovi e controllano i redditi ecclesiastici'},
+         {r:'e si preparano', n:'Le premesse della Riforma', d:'uno scisma di quarant\'anni ha insegnato che si puo fare a meno di Roma'},
+         {piu:true, r:'e le lingue', n:'Diventano nazionali', d:'i documenti regi passano dal latino al volgare'}
+       ]}
+    ],
+    incroci:[
+      {da:'Il re e imperatore nel suo regno', a:'Ogni creatura umana e sottoposta al papa', r:'e la tesi che si scontra con',
+       perche:'Due formule scritte negli stessi anni e incompatibili punto per punto: o esiste un\'autorita sopra i re, o ogni re e autorita ultima nel proprio territorio. Anagni non e una lite personale — e il momento in cui due dottrine giuridiche si incontrano fisicamente.'},
+      {da:'Bloccando l\'oro verso Roma', a:'Tassa il clero', r:'e l\'arma che rende efficace il',
+       perche:'Il papa aveva la scomunica, il re aveva le dogane. Bastava impedire l\'uscita di denaro dalla Francia perche la curia romana, che dal clero francese ricavava una quota decisiva delle proprie entrate, dovesse cedere. La forza spirituale non paga gli stipendi.'},
+      {da:'Stati generali', a:'Anagni', r:'rende politicamente possibile',
+       perche:'Prima di mandare Nogaret in Italia, Filippo convoca nobilta, clero e terzo stato e ottiene il loro appoggio contro il papa. Aggredire un pontefice diventa praticabile solo quando si ha il paese dietro: e la prima volta che l\'opinione pubblica viene mobilitata su scala nazionale.'},
+      {da:'Conciliarismo', a:'Vicario di Cristo', r:'rovescia il principio di',
+       perche:'Dal papa che si dice rappresentante di Cristo in terra a un\'assemblea che depone tre papi passano duecento anni. Il Concilio di Costanza non discute la dottrina: si limita a fare una cosa che, secondo Unam Sanctam, non poteva fare nessuno.'},
+      {da:'Grande scisma', a:'Le premesse della Riforma', r:'prepara',
+       perche:'Per quarant\'anni ogni fedele ha visto due o tre papi scomunicarsi a vicenda, e ogni Stato scegliere il proprio in base alle alleanze. Quando l\'unita torna, l\'idea che l\'obbedienza a Roma sia necessaria alla salvezza ha perso credibilita — e cent\'anni dopo Lutero trovera un terreno gia arato.'},
+      {da:'Il primo Giubileo', a:'Anagni', r:'e a tre anni di distanza da',
+       perche:'Nel 1300 Roma si riempie di pellegrini e il papato tocca il massimo del prestigio popolare; nel 1303 lo stesso papa e prigioniero nel proprio palazzo. Consenso religioso e potere politico non sono la stessa cosa, e possono muoversi in direzioni opposte nello stesso triennio.'},
+      {da:'Gli ordini mendicanti', a:'La crociata albigese', r:'sono l\'alternativa scelta accanto a',
+       perche:'Alla stessa domanda — che cosa fare dei movimenti di poverta — Innocenzo III risponde in due modi opposti nello stesso decennio: approva francescani e domenicani, e bandisce una crociata contro i catari. Assorbire o distruggere, secondo che il movimento accetti o no l\'autorita.'},
+      {da:'Bolla d\'oro', a:'Sole e della luna', r:'cancella nei fatti l\'immagine del',
+       perche:'Se l\'imperatore lo eleggono sette principi tedeschi senza alcun intervento papale, l\'idea che il potere regio riceva luce da quello papale non ha piu nessun aggancio istituzionale. La metafora sopravvive nei testi e non piu nelle procedure.'},
+      {da:'Un accordo fra baroni e re', a:'Nessun uomo libero sara imprigionato', r:'ridimensiona la portata di',
+       perche:'L\'articolo piu famoso della Magna Carta protegge gli uomini liberi, che nell\'Inghilterra del 1215 sono una minoranza: i villani ne restano fuori. Il testo diventera la base di garanzie universali molto piu tardi, e per un\'estensione che i baroni non avevano in mente.'},
+      {da:'Funzionari stipendiati', a:'Lo Stato come macchina', r:'e il primo pezzo di',
+       perche:'Un funzionario pagato dal centro e revocabile e l\'opposto del vassallo, che detiene la carica come un bene proprio. Quando il re puo licenziare chi lo rappresenta, comincia ad avere un\'amministrazione invece che una clientela.'},
+      {da:'Il re nel parlamento', a:'Il re e imperatore nel suo regno', r:'limita dall\'interno cio che afferma',
+       perche:'Francia e Inghilterra costruiscono lo Stato nello stesso periodo e in due modi opposti: la prima concentrando tutto nel sovrano, la seconda vincolandolo a un\'assemblea che vota le imposte. Dalla stessa esigenza — pagare le guerre — escono due tradizioni costituzionali diverse.'},
+      {da:'Cattivita babilonese', a:'Il periodo piu efficiente', r:'nasconde che sia anche',
+       perche:'Il nome dato da Petrarca ha fissato l\'immagine di una decadenza. Ad Avignone pero il papato costruisce il proprio fisco, i propri archivi e la propria burocrazia: la stessa istituzione perde autorevolezza e guadagna macchina, che e la storia di molti poteri.'}
+    ]
+  },
+  provocazione: {
+    titolo:'Tredici mesi',
+    durata:'55 minuti',
+    domandaMadre:'Come si riconosce, mentre accade, se un potere e al suo culmine o sta per crollare?',
+    perche:'Fra il novembre 1302 e il settembre 1303 il papato passa dalla rivendicazione piu alta mai messa per iscritto — ogni creatura umana e sottoposta al pontefice — a un papa tenuto prigioniero nel proprio palazzo da un ministro francese. Tredici mesi. La classe deve spiegare come sia possibile, e nel farlo scopre la differenza fra autorita dichiarata e potere effettivo: chi paga, chi ha uomini armati, chi ha un\'assemblea alle spalle. È la lezione che rende leggibile tutta la storia politica successiva, e finisce su una domanda che non ha risposta comoda nemmeno oggi.',
+    occorrente:'Niente. Serve pero leggere ad alta voce i due testi: sono brevi e fanno il lavoro da soli.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'18 novembre 1302. Il papa Bonifacio VIII\nfirma il documento piu ambizioso\nmai scritto dal papato:\n\n«Dichiariamo, diciamo, definiamo e pronunciamo\nche e del tutto necessario alla salvezza\nche ogni creatura umana\nsia sottoposta al romano pontefice.»\n\nOgni creatura umana. Nessuna eccezione.\n\n7 settembre 1303, Anagni.\nUn ministro del re di Francia e un barone romano\nentrano con i mercenari nel palazzo papale\ne tengono il papa prigioniero per tre giorni.\n\nMuore un mese dopo.\n\nFra le due date passano tredici mesi.',
+       parlato:'Leggi il testo di Unam Sanctam lentamente: la formula giuridica «dichiariamo, diciamo, definiamo e pronunciamo» va sentita, perche e la forma solenne massima.\n\nPoi dai la seconda data e fermati.\n\nLa domanda: che cosa e cambiato in tredici mesi?\n\nRaccogli le ipotesi. Escono quasi sempre: era pazzo, era isolato, il re era piu forte, la gente non ci credeva piu.\n\nUn dettaglio da tenere per la fine e da non dare adesso: tre anni prima, nel 1300, quello stesso papa aveva indetto il primo Giubileo della storia, e Roma si era riempita di pellegrini.',
+       seDicono:[
+         {loro:'«Bluffava: se scrivi una cosa cosi vuol dire che non ce l\'hai.»',
+          tu:'È un\'ipotesi seria e la verificheremo. Ma nota che meno di un secolo prima Innocenzo III aveva regni interi come vassalli e nessuno lo trovava esagerato. La stessa frase, in due epoche, non pesa allo stesso modo.'},
+         {loro:'«Il re di Francia era piu forte, punto.»',
+          tu:'Piu forte in che senso? Il papa poteva scomunicarlo e sciogliere i sudditi dal giuramento — l\'arma che nel 1077 aveva messo in ginocchio un imperatore. Perche nel 1303 non funziona piu?'}
+       ]},
+
+      {minuti:'8–17', et:'Lo schieramento',
+       schermo:'Bonifacio VIII, quando scrive Unam Sanctam:',
+       opzioni:['era debole e bluffava', 'era forte, ma il mondo era cambiato sotto i piedi'],
+       parlato:'Fai schierare e conta.\n\nPoi metti sul tavolo il confronto che decide l\'ora: Canossa, 1077. Un imperatore scomunicato attraversa le Alpi in inverno per farsi assolvere, perche senza assoluzione i suoi principi lo depongono.\n\nA distanza di duecentoventisei anni, la stessa arma non produce niente. Perche?\n\nFai elencare a loro le differenze. Guidale con tre domande:\n\nchi paga il papa? chi paga il re? chi ha uomini armati a disposizione, e dove?\n\nÈ da qui che si arriva alla risposta, e conviene che ci arrivino loro.',
+       seDicono:[
+         {loro:'«Nel 1077 la gente era piu religiosa.»',
+          tu:'Nel 1300 il Giubileo riempie Roma di pellegrini: la religiosita non e diminuita. È cambiato chi ha il denaro e chi ha gli uomini. Attenzione a spiegare i fatti politici con i cambiamenti di mentalita: sono la spiegazione piu comoda e la piu difficile da provare.'},
+         {loro:'«Nel 1077 i principi tedeschi volevano deporre il re, qui i francesi stavano col loro.»',
+          tu:'Ottima osservazione, ed e esattamente il punto. Nel 1077 la scomunica funziona perche dava un\'arma ai nemici interni del re. Nel 1302 Filippo convoca gli Stati generali e ottiene l\'appoggio del paese: la scomunica non trova nessuno da armare.'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'Che cosa aveva il re di Francia nel 1303,\nche l\'imperatore non aveva nel 1077.\n\nDENARO. Tasse regolari, e la possibilita\ndi bloccare l\'oro diretto a Roma:\nla curia viveva anche del clero francese.\n\nGIURISTI. Legisti formati sul diritto romano,\ncon una formula: «il re e imperatore nel suo regno».\nCioe: nessuna autorita al di sopra.\n\nUN\'ASSEMBLEA. Nel 1302 convoca gli Stati generali\ne ottiene l\'appoggio di nobilta, clero e terzo stato\ncontro il papa.\n\nFUNZIONARI. Balivi e siniscalchi pagati dal centro,\nrevocabili, che eseguono.\n\nIl papa aveva l\'autorita. Il re aveva la macchina.',
+       parlato:'Dai i quattro punti uno per volta, e fermati su ciascuno abbastanza perche si veda che sono tutti pezzi della stessa cosa: uno Stato.\n\nIl passaggio piu istruttivo e il primo. Il papa scomunica, il re smette di far uscire oro dalla Francia — e nel 1296 e Bonifacio a cedere. Fai notare la sproporzione apparente e il risultato reale.\n\nSul terzo punto insisti, perche e la novita assoluta: e la prima volta che un sovrano chiama il proprio paese a schierarsi contro il papato, e ottiene di si. Da quel momento la scomunica non ha piu una leva interna su cui agire.\n\nE il quarto: quando Filippo decide di mandare Nogaret in Italia, ha un funzionario che esegue. Il papa, per difendersi, ha soltanto la popolazione di Anagni — che infatti lo libera, ma dopo tre giorni e senza cambiare nulla.',
+       seDicono:[
+         {loro:'«Allora la religione non contava piu niente.»',
+          tu:'Contava eccome: gli Stati generali sostengono il re anche perche il re li convince di essere il buon cristiano e il papa un usurpatore. La religione non sparisce — cambia padrone. Ed e una differenza enorme.'},
+         {loro:'«Perche il papa non aveva un esercito?»',
+          tu:'Ne aveva uno piccolo e mercenario, come tutti gli Stati italiani. Il punto e un altro: un esercito costa, e per pagarlo servono tasse regolari su un territorio compatto. Il papato aveva rendite sparse in tutta Europa e nessun territorio da cui prelevare in modo continuo.'}
+       ]},
+
+      {minuti:'28–38', et:'Il testo',
+       schermo:'La teoria di Bonifacio, per esteso:\n\n«Nella Chiesa e nella sua potesta ci sono due spade,\nla spirituale e la temporale.\n\nMa l\'una e da usare per la Chiesa,\nl\'altra dalla Chiesa;\nl\'una dalla mano del sacerdote,\nl\'altra dalla mano dei re e dei soldati,\nma secondo l\'ordine e il consenso del sacerdote.\n\nÈ necessario che una spada sia sotto l\'altra,\ne che l\'autorita temporale\nsia sottoposta alla potesta spirituale.»',
+       testo:{fonte:'Bonifacio VIII, bolla Unam Sanctam, 18 novembre 1302',
+              glossa:'L\'immagine delle due spade viene dal Vangelo di Luca, dove i discepoli dicono a Gesu di avere due spade. Su quel versetto si e costruita per secoli l\'intera teoria dei due poteri: la Chiesa ne ha entrambe, ma la seconda la fa impugnare a qualcun altro. Il re, in questo schema, non e un potere autonomo — e un braccio.'},
+       parlato:'Leggi il passo e fai riconoscere la struttura: non si dice che il papa comanda gli eserciti, si dice che la spada temporale e comunque della Chiesa e viene usata «secondo l\'ordine e il consenso» del sacerdote. È una tesi piu sottile e piu totale.\n\nPoi metti accanto la formula dei legisti francesi: rex in regno suo est imperator, il re e imperatore nel proprio regno. Due frasi brevi e perfettamente incompatibili.\n\nDomanda utile alla classe: quando due dottrine sono incompatibili e nessuna delle due puo convincere l\'altra, come si decide? La risposta, in questo caso, e Anagni.\n\nSe c\'e tempo, il dettaglio storiografico: il famoso schiaffo di Sciarra Colonna e tradizione tarda. L\'oltraggio e l\'arresto sono certi, il gesto materiale molto meno. Vale la pena dirlo, perche e un altro esempio di scena celebre aggiunta dopo.',
+       seDicono:[
+         {loro:'«Quindi lo schiaffo non c\'e stato?»',
+          tu:'Non lo sappiamo, e le fonti piu vicine non lo raccontano. Sappiamo che entrarono armati nel palazzo e lo tennero prigioniero tre giorni, il che e piu grave. È interessante che la memoria abbia conservato il gesto piccolo e drammatico invece del fatto grosso.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'Che cosa succede dopo Anagni.\n\nNon la fine del papato: la sua cattura.\n\n1309 — La sede si sposta ad Avignone,\nin territorio d\'influenza francese.\nCi resta 68 anni. Sette papi, tutti francesi.\n\n1378 — Il ritorno a Roma produce uno scisma:\ndue papi contemporaneamente, e dal 1409 tre.\nOgni Stato sceglie il proprio\nin base alle alleanze politiche.\nDura 39 anni.\n\n1415 — Il Concilio di Costanza\ndepone tutti e tre e ne elegge un altro,\ne dichiara che il concilio e superiore al papa.\n\nTredici anni dopo Unam Sanctam,\nun\'assemblea giudica il pontefice.',
+       parlato:'Dai la cronologia una riga per volta.\n\nIl dato che colpisce di piu e quasi sempre il secondo: trentanove anni con due o tre papi che si scomunicano a vicenda, e ogni regno che sceglie il proprio in base a chi e alleato di chi. Chiedi che cosa doveva pensare, in quegli anni, un contadino a cui si insegnava che fuori dall\'obbedienza a Roma non c\'e salvezza.\n\nPoi il collegamento lungo, che vale per il programma di quinta: quando cent\'anni dopo Lutero dira che si puo fare a meno di Roma, troveranno un\'Europa che lo aveva gia sperimentato per quarant\'anni.\n\nInfine il rovescio, per evitare la lettura della semplice decadenza: proprio ad Avignone il papato costruisce il proprio fisco, i propri archivi e la propria burocrazia. Perde autorevolezza e guadagna macchina. È una cosa che ai poteri capita spesso, e conviene saperla riconoscere.',
+       seDicono:[
+         {loro:'«Come faceva la gente a sapere qual era il papa vero?»',
+          tu:'Non poteva saperlo, e infatti seguiva quello del proprio re. Ci sono santi riconosciuti che stavano da parti opposte. È la dimostrazione pratica che quarant\'anni di scisma hanno fatto piu danni all\'idea di autorita romana di qualsiasi eresia.'},
+         {loro:'«Ma allora il papa non contava piu niente?»',
+          tu:'Contava molto, e in certi campi piu di prima: nel Quattrocento sara una potenza italiana con un\'amministrazione moderna. Quello che ha perso e la pretesa di stare sopra i re. Nessun potere crolla del tutto: quasi sempre cambia mestiere.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'Un\'ultima cosa, che avevo tenuto da parte.\n\nNel 1300, tre anni prima di Anagni,\nlo stesso Bonifacio VIII\naveva proclamato il primo Giubileo della storia.\n\nRoma si riempi di pellegrini da tutta Europa.\nFu un successo senza precedenti.\n\nNel 1300 mai cosi tanto consenso.\nNel 1302 la rivendicazione piu alta di sempre.\nNel 1303 prigioniero in casa propria.\n\nUltima domanda:\n\ncome si riconosce, mentre accade,\nse un potere e al culmine\no sta per crollare?',
+       parlato:'Dai il dato del Giubileo alla fine, e non prima: serve a impedire la lettura consolatoria per cui i poteri crollano quando perdono consenso. Qui il consenso c\'era.\n\nPoi la domanda finale. Raccogli qualche risposta e poi da\' quella storica, che e concreta e verificabile: si guarda chi paga, chi ha uomini armati e chi ha un\'assemblea disposta a sostenerlo. Non si guarda che cosa e scritto nei documenti — anzi, le rivendicazioni piu assolute arrivano spesso quando la presa reale si sta allentando, perche si mette per iscritto quello che non si riesce piu a ottenere di fatto.\n\nÈ una regola di lettura che vale per tutto il resto del programma, e vale la pena dirla una volta sola e chiaramente.\n\nPoi chiudi: la prossima volta usciamo dall\'Europa e guardiamo che cosa c\'era intorno mentre succedeva tutto questo.',
+       seDicono:[
+         {loro:'«Allora chi scrive cose forti e sempre debole?»',
+          tu:'Non sempre, e sarebbe una regola comoda e falsa: Innocenzo III scriveva cose fortissime ed era fortissimo. La regola utile e un\'altra: non dedurre il potere dalle dichiarazioni. Vai a vedere le entrate, gli uomini e le alleanze, e poi rileggi il documento.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'Che cos\'e davvero la Magna Carta',
+       corpo:'Nel 1215 i baroni inglesi in rivolta impongono a Giovanni Senzaterra un documento di sessantatre articoli. Il piu famoso, il trentanovesimo, stabilisce che nessun uomo libero sara arrestato, imprigionato o privato dei propri beni se non per legittimo giudizio dei suoi pari e secondo la legge del paese.\n\nMa «uomo libero», nell\'Inghilterra del 1215, esclude la maggioranza della popolazione rurale. E il documento e prima di tutto un accordo fra il re e i suoi grandi vassalli su tasse, eredita e diritti feudali.\n\nPapa Innocenzo III la annullo pochi mesi dopo, definendola estorta con la violenza. Fu riemessa piu volte nei decenni successivi.',
+       chiedi:'Un patto fra un re e i suoi baroni diventa, secoli dopo, il simbolo dei diritti di tutti. Come succede? E che cosa dice, del modo in cui i testi vivono, il fatto che il suo significato attuale non fosse nelle intenzioni di chi lo scrisse?'},
+      {titolo:'Il Giubileo del 1300',
+       corpo:'Bonifacio VIII proclama che chi si rechera a Roma e visitera le basiliche di San Pietro e San Paolo per un certo numero di giorni ricevera l\'indulgenza plenaria.\n\nL\'afflusso e enorme: le cronache parlano di duecentomila presenze, cifra probabilmente esagerata ma indicativa. Dante, che secondo alcuni vi partecipo, ricorda nell\'Inferno il senso unico organizzato su Ponte Sant\'Angelo per gestire la folla.\n\nFu anche un\'operazione economica di grande successo per Roma.',
+       chiedi:'Un\'iniziativa che unisce devozione popolare, prestigio politico e introiti. Perche tre anni dopo tutto questo non serve a proteggere il papa da un pugno di mercenari? Che cosa non compra, il consenso?'},
+      {titolo:'Dante ad Anagni',
+       corpo:'Dante detestava Bonifacio VIII, che riteneva responsabile del proprio esilio, e lo colloca all\'inferno fra i simoniaci — anticipandone la dannazione, dato che nel 1300, anno del viaggio, era ancora vivo.\n\nEppure, quando racconta Anagni, scrive:\n\n«Veggio in Alagna intrar lo fiordaliso,\ne nel vicario suo Cristo esser catto.\nVeggiolo un\'altra volta esser deriso;\nveggio rinovellar l\'aceto e \'l fele,\ne tra vivi ladroni esser anciso.»',
+       chiedi:'Il piu feroce nemico di quel papa descrive l\'aggressione come una nuova passione di Cristo. Come si spiega? E che cosa distingue l\'odio per una persona dal giudizio su cio che quella persona rappresenta?'}
+    ],
+    testi:[
+      {fonte:'Magna Carta, articolo 39 (1215)',
+       corpo:'«Nessun uomo libero sara arrestato, imprigionato, spossessato dei suoi beni, dichiarato fuori legge, esiliato o in qualsiasi modo danneggiato, ne noi procederemo o faremo procedere contro di lui, se non in virtu di un legale giudizio dei suoi pari e secondo la legge del paese.»',
+       glossa:'Da leggere due volte: la prima per la solennita, la seconda per contare le parole «uomo libero». Il testo che diventera il fondamento dell\'habeas corpus nasce come garanzia di ceto — e proprio per questo mostra come una norma possa essere piu grande di chi l\'ha scritta.'},
+      {fonte:'Bolla d\'oro, 1356 — i sette elettori',
+       corpo:'Il documento stabilisce che il re dei Romani sia eletto da sette principi: gli arcivescovi di Magonza, Treviri e Colonia, il re di Boemia, il conte palatino del Reno, il duca di Sassonia e il margravio di Brandeburgo. Le elezioni si tengono a Francoforte e l\'esito non richiede alcuna approvazione papale.',
+       glossa:'Un secolo prima il papa incoronava e, all\'occorrenza, deponeva. Qui non compare nemmeno. Non c\'e una polemica: c\'e un silenzio, ed e piu efficace di qualunque dichiarazione — l\'Impero smette di essere universale senza che nessuno lo scriva.'},
+      {fonte:'Filippo IV il Bello, risposta attribuita a Clericis laicos, 1296',
+       corpo:'Alla bolla che vietava di tassare il clero, il re di Francia rispose vietando l\'esportazione di oro, argento e preziosi dal regno — cioe tagliando i trasferimenti di denaro dal clero francese alla curia romana. Bonifacio VIII, in meno di un anno, ammorbidi la propria posizione.',
+       glossa:'Il modo piu rapido per far capire che cosa sia il potere effettivo: a una bolla si risponde con un provvedimento doganale, e vince il provvedimento doganale. Vale la pena chiedere alla classe di trovare esempi contemporanei della stessa asimmetria.'}
+    ],
+    compito:'Mezza pagina. Cercate una dichiarazione solenne — di uno Stato, di un\'organizzazione, di un\'istituzione qualunque — che affermi un\'autorita molto ampia. Poi provate a rispondere alle tre domande di oggi: chi paga, chi ha uomini a disposizione, chi la sosterrebbe se venisse contestata. Non serve concludere: serve vedere se le risposte coincidono con la dichiarazione.',
+    fonti:[
+      'Bonifacio VIII, Unam Sanctam (1302) e Clericis laicos (1296)',
+      'Magna Carta (1215), articoli 12, 14, 39, 61; Bolla d\'oro (1356)',
+      'Dante, Purgatorio XX 85-93 (Anagni); Inferno XVIII 28-33 (il Giubileo); Inferno XIX (i simoniaci)',
+      'J. Le Goff, Il basso Medioevo; G. Tabacco, Le ideologie politiche del medioevo',
+      'A. Paravicini Bagliani, Bonifacio VIII',
+      'J.R. Strayer, Le origini medievali dello Stato moderno'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',
