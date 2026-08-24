@@ -2700,6 +2700,237 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Filosofia antica · 12 — Agostino d\'Ippona': {
+  mappa: {
+    n:'Agostino', d:'Tagaste 354 – Ippona 430: la fine dell\'antico e l\'inizio dell\'altro',
+    f:[
+      {r:'comincia con', n:'Una vita che è un argomento', d:'la sua biografia è parte della sua filosofia',
+       f:[
+         {r:'nasce a', n:'Tagaste', d:'Numidia, provincia romana d\'Africa: padre pagano, madre cristiana',
+          f:[{piu:true, r:'la madre', n:'Monica', d:'lo segue fino a Milano e muore a Ostia mentre tornano insieme'}]},
+         {r:'studia e insegna', n:'Retorica', d:'a Cartagine, Roma, Milano: il mestiere di chi vuole fare carriera'},
+         {r:'ha', n:'Una compagna per quindici anni', d:'e un figlio, Adeodato, che morirà a diciotto',
+          f:[{piu:true, r:'e la lascia', n:'Per un matrimonio conveniente', d:'lo racconta nelle Confessioni come una ferita'}]},
+         {r:'è per nove anni', n:'Manicheo', d:'due principi eterni, luce e tenebra: il male è una sostanza',
+          f:[{r:'perché risolveva', n:'La domanda «unde malum»', d:'da dove viene il male: e non ne aveva altre'},
+             {piu:true, r:'lo lascia dopo', n:'L\'incontro con Fausto', d:'il grande maestro manicheo si rivela ignorante'}]},
+         {r:'a Milano incontra', n:'Ambrogio', d:'e scopre che la Bibbia si può leggere in modo non ingenuo'},
+         {r:'legge', n:'I libri dei platonici', d:'Plotino e Porfirio: gli danno le categorie che gli mancavano'},
+         {r:'si converte nel', n:'Giardino di Milano', d:'386: la voce di un bambino, «tolle lege», e una pagina di Paolo'},
+         {r:'muore', n:'Mentre i Vandali assediano Ippona', d:'430: l\'impero d\'Occidente ha quarantasei anni di vita davanti'}
+       ]},
+
+      {r:'scrive', n:'Tre libri che restano', d:'e uno che li corregge tutti',
+       f:[
+         {r:'le', n:'Confessioni', d:'la prima autobiografia interiore della storia',
+          f:[{r:'non sono', n:'Un racconto di peccati', d:'confessio vuol dire anche lode e riconoscimento'},
+             {piu:true, r:'e sono scritte', n:'Rivolte a Dio', d:'non al lettore: il lettore ascolta una preghiera'}]},
+         {r:'la', n:'Città di Dio', d:'ventidue libri, tredici anni di lavoro, dopo il sacco di Roma'},
+         {r:'il', n:'De Trinitate', d:'dove cerca l\'immagine di Dio dentro la mente umana'},
+         {r:'e le', n:'Ritrattazioni', d:'a settant\'anni rilegge tutte le proprie opere e ne corregge gli errori',
+          f:[{piu:true, r:'è', n:'Un caso quasi unico', d:'nessun antico aveva mai pubblicato l\'elenco dei propri sbagli'}]}
+       ]},
+
+      {r:'cerca', n:'La verità dentro', d:'e trova il primo punto fermo contro gli scettici',
+       f:[
+         {r:'contro chi dubita', n:'Si fallor, sum', d:'se mi inganno, esisto: per ingannarmi devo esserci',
+          f:[{piu:true, r:'milleduecento anni prima di', n:'Cartesio', d:'che lo ritroverà per un\'altra strada'}]},
+         {r:'insegna', n:'Non uscire fuori', d:'«nell\'uomo interiore abita la verità»'},
+         {r:'perché la verità è', n:'Superiore alla mente', d:'non la fabbrichiamo: la troviamo e la riconosciamo',
+          f:[{r:'esempio', n:'Sette più tre fa dieci', d:'non è vero perché lo penso: lo penso perché è vero'}]},
+         {r:'grazie all\'', n:'Illuminazione', d:'la mente vede le verità eterne in una luce che non è sua',
+          f:[{piu:true, r:'immagine dal', n:'Sole di Platone', d:'ma qui la luce è personale, ed è Dio'}]},
+         {r:'e la mente ha', n:'Memoria, intelligenza, volontà', d:'tre facoltà e una sola anima: immagine della Trinità'}
+       ]},
+
+      {r:'risolve', n:'Il problema del male', d:'la domanda che gli ha rovinato la giovinezza',
+       f:[
+         {r:'il male non è', n:'Una sostanza', d:'se lo fosse, sarebbe stato creato da Dio'},
+         {r:'il male è', n:'Privazione di bene', d:'privatio boni: come la malattia è mancanza di salute',
+          f:[{r:'preso da', n:'Plotino', d:'ma cambiato: qui non discende dalla materia, discende da una scelta'}]},
+         {r:'il male morale nasce da', n:'Cattivo uso del libero arbitrio', d:'non da una forza cattiva: da una volontà che si volta'},
+         {r:'perché la volontà', n:'Sceglie beni minori', d:'preferisce la creatura al creatore: è disordine, non sostanza'},
+         {r:'quindi Dio', n:'Non è autore del male', d:'ha fatto la libertà, e la libertà è un bene che si può usare male'},
+         {piu:true, r:'resta però', n:'Il male innocente', d:'la sofferenza dei bambini: l\'obiezione che nessuna teodicea chiude'}
+       ]},
+
+      {r:'apre', n:'Il nodo di grazia e libertà', d:'la polemica che segnerà mille anni di cristianesimo',
+       f:[
+         {r:'contro', n:'Pelagio', d:'che sosteneva: l\'uomo può salvarsi con le proprie forze',
+          f:[{r:'perché altrimenti', n:'Il comando sarebbe assurdo', d:'Dio non comanderebbe l\'impossibile'}]},
+         {r:'Agostino risponde', n:'Il peccato originale', d:'la natura umana è ferita, non solo cattiva d\'esempio'},
+         {r:'e quindi serve', n:'La grazia', d:'gratuita: non si merita, altrimenti non sarebbe grazia'},
+         {r:'da cui', n:'La predestinazione', d:'Dio sa e vuole chi si salverà',
+          f:[{r:'ma allora', n:'Che cosa resta della libertà?', d:'la domanda su cui si spaccherà l\'Occidente cristiano'},
+             {piu:true, r:'ci torneranno', n:'Lutero, Calvino, Giansenio', d:'e Pascal, e Port-Royal'}]},
+         {piu:true, r:'la sua formula', n:'«Ama e fa\' ciò che vuoi»', d:'non è permissiva: se ami davvero, vorrai il bene'}
+       ]},
+
+      {r:'analizza', n:'Che cos\'è il tempo', d:'Confessioni XI: venti pagine che nessuno ha superato',
+       f:[
+         {r:'parte da', n:'Se nessuno me lo chiede, lo so', d:'«se voglio spiegarlo a chi me lo chiede, non lo so»'},
+         {r:'osserva che', n:'Il passato non è più', d:'e il futuro non è ancora'},
+         {r:'e che', n:'Il presente non ha durata', d:'se durasse, avrebbe una parte già passata e una non ancora',
+          f:[{r:'quindi', n:'Il tempo è fatto di ciò che non è', d:'ed è per questo che non si lascia definire'}]},
+         {r:'ma noi', n:'Misuriamo il tempo', d:'diciamo lungo e breve: e non si misura ciò che non esiste'},
+         {r:'la risposta è', n:'Distensio animi', d:'il tempo è distensione dell\'anima: non delle cose',
+          f:[{r:'esistono', n:'Tre presenti', d:'del passato, del presente, del futuro',
+              f:[{r:'cioè', n:'Memoria, attenzione, attesa', d:'e stanno tutti e tre adesso, nell\'anima'}]},
+             {piu:true, r:'esempio', n:'Il verso che si recita', d:'l\'attesa si accorcia, la memoria si allunga: quello è misurare'}]},
+         {r:'e il tempo', n:'Nasce con il mondo', d:'non prima: non c\'era un «prima» in cui Dio non facesse nulla',
+          f:[{piu:true, r:'risponde così a', n:'Che faceva Dio prima?', d:'e rifiuta la battuta: «preparava l\'inferno per i curiosi»'}]}
+       ]},
+
+      {r:'interpreta la storia con', n:'Le due città', d:'scritte dopo il sacco di Roma del 410',
+       f:[
+         {r:'nascono da', n:'Due amori', d:'«l\'amore di sé fino al disprezzo di Dio, l\'amore di Dio fino al disprezzo di sé»'},
+         {r:'non coincidono con', n:'Chiesa e impero', d:'sono mescolate, e si distingueranno solo alla fine'},
+         {r:'risponde all\'accusa', n:'Roma è caduta per i cristiani', d:'perché avrebbero abbandonato gli dèi',
+          f:[{piu:true, r:'e replica', n:'Roma cadeva già prima', d:'e la sua grandezza era fondata sulla libidine di dominio'}]},
+         {r:'e dà alla storia', n:'Una direzione', d:'non cicli che ritornano: un inizio, un centro, una fine',
+          f:[{r:'contro', n:'L\'eterno ritorno', d:'«Cristo è morto una volta sola per i nostri peccati»'},
+             {piu:true, r:'da qui', n:'L\'idea occidentale di storia', d:'e, secolarizzata, l\'idea di progresso'}]}
+       ]},
+
+      {r:'lascia', n:'Che cosa resta', d:'il ponte fra due mondi',
+       f:[
+         {r:'fa del cristianesimo', n:'Una filosofia', d:'usando le categorie dei greci per dire qualcosa che i greci non dicevano'},
+         {r:'domina', n:'Tutto il primo Medioevo', d:'fino all\'arrivo di Aristotele nel Duecento'},
+         {r:'torna con', n:'La Riforma', d:'Lutero era un monaco agostiniano, e ne riprende grazia e peccato'},
+         {r:'sul tempo arriva a', n:'Husserl e Heidegger', d:'la coscienza interna del tempo comincia da Confessioni XI'},
+         {r:'e sull\'interiorità a', n:'Tutta la modernità', d:'l\'io che si guarda dentro nasce qui, non con Cartesio'}
+       ]}
+    ],
+    incroci:[
+      {da:'Privazione di bene', a:'Manicheo', r:'è ciò che gli permette di uscire dal',
+       perche:'Per nove anni aveva creduto a due principi eterni perché non sapeva dove mettere il male. Se il male non è una cosa ma la mancanza di una cosa, non serve un secondo dio: la soluzione filosofica scioglie una biografia.'},
+      {da:'I libri dei platonici', a:'Privazione di bene', r:'gli danno lo strumento per',
+       perche:'Agostino dice di aver trovato in Plotino quasi tutto il prologo di Giovanni, tranne l\'incarnazione. Da lì prende il male come privazione — e la conversione intellettuale precede di anni quella del giardino.'},
+      {da:'Cattivo uso del libero arbitrio', a:'Che cosa resta della libertà?', r:'entra in tensione con',
+       perche:'Nei primi scritti il male viene dalla libertà, e la libertà è vera. Nella polemica contro Pelagio la natura è ferita e serve la grazia. Le due tesi convivono nello stesso autore e non si compongono: è il nodo che spaccherà l\'Occidente.'},
+      {da:'Si fallor, sum', a:'Non uscire fuori', r:'è il primo passo di',
+       perche:'La certezza non si trova guardando il mondo ma guardando chi guarda. Il dubbio non tocca l\'esistenza di chi dubita, e da quel punto interno si riparte — mille anni prima che qualcuno ne faccia un metodo.'},
+      {da:'Distensio animi', a:'Il tempo è fatto di ciò che non è', r:'è l\'unica uscita da',
+       perche:'Se passato e futuro non esistono e il presente non dura, il tempo non può stare nelle cose. Ma noi lo misuriamo: allora è nell\'anima, dove memoria e attesa sono presenti adesso. Il paradosso si scioglie spostando il luogo.'},
+      {da:'Nasce con il mondo', a:'Che cos\'è il tempo', r:'toglie senso alla domanda su cosa ci fosse prima di',
+       perche:'Chiedere che cosa facesse Dio prima di creare presuppone un tempo in cui non c\'era il mondo. Ma il tempo è stato fatto insieme al mondo: non c\'è nessun prima. È la stessa mossa con cui Platone diceva il tempo immagine mobile dell\'eternità.'},
+      {da:'Confessioni', a:'Memoria, intelligenza, volontà', r:'sono l\'esplorazione narrativa di',
+       perche:'Se l\'immagine di Dio sta nella struttura della mente, allora raccontare la propria vita interiore non è vanità: è teologia. La prima autobiografia della storia nasce da una tesi metafisica, non da un desiderio di parlare di sé.'},
+      {da:'Una direzione', a:'L\'eterno ritorno', r:'si costruisce contro',
+       perche:'Se la storia gira in cerchio, nulla è mai definitivo e nulla è mai nuovo. Agostino ha bisogno di un evento unico e irripetibile, e per questo raddrizza il cerchio in una linea: da lì l\'Occidente non è più tornato indietro.'},
+      {da:'Due amori', a:'Roma è caduta per i cristiani', r:'è la risposta di fondo a',
+       perche:'All\'accusa non risponde negando la catastrofe: sposta il criterio. Le città degli uomini nascono e cadono tutte, e ciò che le distingue non è la fortuna ma l\'amore che le fonda. Roma non è caduta per i cristiani — è caduta perché era una città terrena.'},
+      {da:'Superiore alla mente', a:'Illuminazione', r:'richiede',
+       perche:'Se le verità eterne non le fabbrico e non le trovo nelle cose che cambiano, devono venirmi da qualcosa che sta sopra la mia mente. L\'illuminazione non è un\'esperienza mistica: è l\'ipotesi che spiega perché non posso decidere che sette più tre faccia undici.'},
+      {da:'Una compagna per quindici anni', a:'Un racconto di peccati', r:'costringe a rileggere che',
+       perche:'Le pagine più famose delle Confessioni sono lette come confessione di colpe. Ma confessio significa anche riconoscere e lodare: il racconto della propria vita serve a mostrare come la verità lavori dentro qualcuno che non la cercava.'},
+      {da:'Il male innocente', a:'Non è autore del male', r:'resta un\'obiezione aperta a',
+       perche:'La privazione spiega il male morale: nasce da una volontà che sceglie male. Ma il dolore di chi non ha scelto niente resta fuori — e sarà l\'argomento con cui, quindici secoli dopo, Ivan Karamazov restituirà il biglietto.'}
+    ]
+  },
+  provocazione: {
+    titolo:'Che cos\'è il tempo?',
+    durata:'55 minuti',
+    domandaMadre:'Come fate a misurare una cosa che non esiste?',
+    perche:'È la domanda più democratica dell\'anno: la sanno tutti e non la sa nessuno, e non serve conoscere niente per entrarci. In dieci minuti la classe scopre che passato e futuro non esistono e che il presente non ha durata, cioè che sta misurando ogni giorno qualcosa fatto di niente. La soluzione di Agostino — il tempo è distensione dell\'anima — non è una consolazione ma uno spostamento del luogo del problema, ed è l\'occasione per far vedere che cosa significhi risolvere una questione filosofica. Il colpo di scena rivela che quelle pagine le ha scritte un vescovo del IV secolo che ha anche anticipato il cogito e l\'idea che il tempo cominci con l\'universo.',
+    occorrente:'Un orologio con la lancetta dei secondi, o un telefono con il cronometro.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'Che cos\'è il tempo?\n\nLo sapete tutti. Lo usate ogni minuto.\nAvete guardato l\'orologio due volte da quando siete entrati.\n\nScrivete la definizione in una riga.\n\nRegola: non potete usare le parole\ntempo, quando, prima, dopo, durata, momento,\nné nessun sinonimo.\n\nAvete tre minuti.',
+       parlato:'La regola è tutta la riuscita del primo tempo: senza, scrivono «il tempo è ciò che passa» e sono soddisfatti.\n\nFai scrivere davvero, in silenzio, e poi raccogli tre o quattro tentativi a voce. Falli fallire con gentilezza, indicando ogni volta la parola vietata che è rientrata dalla finestra: «scorre» contiene un prima e un poi, «cambiamento» pure, «il ticchettio dell\'orologio» è una cosa che si muove e non è il tempo.\n\nPoi la constatazione, che va detta senza trionfo: siete tutti perfettamente capaci di usarlo e nessuno di voi sa dire che cos\'è. Questa è la situazione da cui parte tutta la filosofia — e stasera scoprirete che qualcuno l\'aveva già descritta esattamente così.',
+       seDicono:[
+         {loro:'«Il tempo è la quarta dimensione.»',
+          tu:'È una descrizione matematica di come lo trattiamo nei calcoli, ed è utilissima. Ma non risponde: dimensione di che cosa? E soprattutto, perché di questa dimensione ne percorriamo una sola direzione, mentre nelle altre tre andiamo avanti e indietro?'},
+         {loro:'«È quello che misura l\'orologio.»',
+          tu:'L\'orologio misura i propri movimenti. Se domani tutti gli orologi del mondo rallentassero insieme, come faremmo ad accorgercene? Definire il tempo con lo strumento che lo misura è come definire il peso dicendo che è quello che segna la bilancia.'}
+       ]},
+
+      {minuti:'8–17', et:'Lo schieramento',
+       schermo:'Provate a dire dove sta il tempo.\n\nIl passato? Non c\'è più: se ci fosse ancora, non sarebbe passato.\nIl futuro? Non c\'è ancora: se ci fosse già, non sarebbe futuro.\n\nResta il presente.\n\nMa quanto dura il presente?\nUn\'ora? Ha una parte già passata e una non ancora.\nUn minuto? Lo stesso. Un secondo? Lo stesso.\n\nQualunque durata gli diate, si divide in un prima e un poi.\n\nQuindi il presente non dura.',
+       opzioni:['Il tempo esiste', 'Il tempo non esiste'],
+       parlato:'Costruisci l\'argomento riga per riga, aspettando l\'assenso a ogni passaggio. È l\'argomento di Agostino, ed è pulito: nessuno dei tre pezzi si rifiuta facilmente.\n\nPoi fai schierare. Attenzione: quasi tutti diranno che il tempo esiste, ma nessuno saprà dire dove.\n\nA quel punto tira la conclusione dura: il tempo sarebbe fatto di un pezzo che non c\'è più, uno che non c\'è ancora, e uno che non ha spessore. È fatto interamente di cose che non esistono.\n\nE tienili lì un momento prima di passare oltre: non è un paradosso da salotto. Se non sanno rispondere, non sanno dire che cosa stanno facendo mentre aspettano l\'intervallo.',
+       seDicono:[
+         {loro:'«Il presente è un istante, un punto: esiste ma è senza durata.»',
+          tu:'Perfetto, hai detto esattamente ciò che dice Agostino. Ma allora la tua vita intera è una successione di punti senza spessore. Somma infiniti zeri: quanto fa? Da dove viene la durata di questa lezione?'},
+         {loro:'«Il passato esiste: ci sono le prove, le fotografie, i ricordi.»',
+          tu:'Le fotografie esistono adesso. I ricordi esistono adesso. Non mi hai mostrato il passato: mi hai mostrato oggetti presenti. Tienila stretta, questa osservazione, perché è la chiave di tutto il resto dell\'ora.'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'E però.\n\nDiciamo «un lungo silenzio», «una breve pausa».\nDiciamo che questa lezione dura cinquantacinque minuti.\nUn atleta batte un record per tre centesimi.\n\nMisuriamo il tempo continuamente,\ne lo misuriamo bene.\n\nMa non si può misurare ciò che non esiste.\n\nAllora: che cosa stiamo misurando?',
+       parlato:'Questo è il perno dell\'ora e va fatto sentire come un problema tecnico, non come un enigma.\n\nFai l\'esperimento: prendi il cronometro e chiedi a tutti di chiudere gli occhi e alzare la mano quando pensano siano passati trenta secondi. I risultati si sparpagliano fra i venti e i cinquanta. Nessuno ha misurato il tempo: hanno misurato qualcosa dentro di sé.\n\nPoi torna alla domanda e restringi le uscite una per volta. Non stiamo misurando il passato, perché non c\'è più. Non il futuro. Non l\'istante presente, che non ha lunghezza. E allora?\n\nSe qualcuno risponde «misuriamo il movimento», è la risposta di Aristotele e va presa sul serio — ma poi chiedi: e quando sei al buio, immobile, in silenzio, senti passare il tempo? Sì. Che cosa si sta muovendo?',
+       seDicono:[
+         {loro:'«Misuriamo il movimento delle cose: il sole, le lancette.»',
+          tu:'È la risposta di Aristotele. Ma se il sole si fermasse e il vasaio continuasse a girare la ruota, misureremmo il giro della ruota: quindi non è quel movimento particolare. E soprattutto, per dire che un movimento è più lento di un altro, stai già usando il tempo per misurare il movimento, e non viceversa.'},
+         {loro:'«Misuriamo l\'intervallo fra due eventi.»',
+          tu:'Ma quell\'intervallo, mentre lo misuri, dov\'è? Il primo evento è passato, il secondo non è ancora accaduto — o è già accaduto anche lui. Non hai mai in mano contemporaneamente le due estremità del righello.'}
+       ]},
+
+      {minuti:'28–38', et:'Il testo',
+       schermo:'«Che cos\'è dunque il tempo?\nSe nessuno me lo chiede, lo so;\nse voglio spiegarlo a chi me lo chiede, non lo so.»\n\n«Non esistono tre tempi — passato, presente e futuro.\nEsistono tre presenti:\n\nil presente del passato, che è la memoria;\nil presente del presente, che è l\'attenzione;\nil presente del futuro, che è l\'attesa.\n\nÈ in te, anima mia, che misuro il tempo.»',
+       testo:{fonte:'Agostino, Confessioni XI, 14 e 20 (397-400 d.C.)',
+              glossa:'La prima frase è la più onesta della filosofia occidentale: non finge di sapere. La seconda è la soluzione, e consiste in uno spostamento — se il tempo non può stare nelle cose, sta nell\'anima. Ricordare, prestare attenzione e attendere sono tre atti che accadono tutti adesso: ecco perché si può misurare qualcosa che non c\'è.'},
+       parlato:'Leggi il primo passo e fai notare che è esattamente la situazione in cui erano venti minuti fa. Non è una coincidenza: Agostino ha costruito il capitolo perché il lettore ci arrivi in quello stato.\n\nPoi la soluzione, e falla verificare su un esempio concreto. Recita un verso che sanno a memoria e fermati a metà. Prima di cominciare, tutto il verso era attesa; alla fine sarà tutto memoria; a metà, una parte sta di qua e una di là. Ciò che si accorcia e ciò che si allunga sono nella tua testa — e misurare il verso è misurare quel passaggio.\n\nDa qui il nome che dà alla cosa: distensio animi, distensione dell\'anima. Il tempo non è un contenitore in cui siamo dentro: è lo stiramento di una coscienza che tiene insieme ciò che non c\'è più e ciò che non c\'è ancora.',
+       seDicono:[
+         {loro:'«Allora senza di noi il tempo non esisterebbe?»',
+          tu:'È la conseguenza, e Agostino non se ne spaventa. Chiediti però che cosa vorresti salvare: che i dinosauri siano esistiti prima di noi, immagino. Lui risponderebbe che gli eventi ci sono stati, e che il tempo è il modo in cui una mente li ordina. Ti basta?'},
+         {loro:'«È solo psicologia, non filosofia: parla di come lo percepiamo.»',
+          tu:'Attento: non dice che il tempo ci sembra così. Dice che non può stare da nessun\'altra parte, perché nelle cose non c\'è nulla che duri. È una conclusione, non un\'impressione — e per rifiutarla devi indicargli dove sarebbe il tempo, che è esattamente quello che non riusciamo a fare da mezz\'ora.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'Chi ha scritto queste pagine.\n\nUn professore di retorica che aveva fatto carriera mentendo per mestiere.\nUn uomo che aveva avuto una compagna per quindici anni e un figlio,\ne l\'aveva lasciata per un matrimonio conveniente.\nUno che per nove anni era stato in una setta\nche spiegava il male con due dèi in guerra.\n\nHa scritto il primo libro della storia\nin cui qualcuno racconta la propria vita interiore.\n\nE per rispondere a chi chiedeva\n«che cosa faceva Dio prima di creare il mondo?»\nha risposto che non c\'era nessun prima:\nil tempo è cominciato insieme all\'universo.\n\nMillecinquecento anni prima che lo dicesse un fisico.',
+       parlato:'Dai il ritratto per pezzi, senza indulgenza e senza compiacimento: serve a far vedere che quelle pagine non le ha scritte uno specialista di metafisica, ma uno che aveva rovistato in sé stesso per necessità.\n\nPoi la risposta sul «prima»: chiedere che cosa ci fosse prima presuppone un tempo vuoto in cui non c\'era ancora niente. Ma il tempo è stato fatto insieme al mondo, e quindi la domanda non ha oggetto. Agostino riporta anche la battuta che circolava — preparava l\'inferno per chi fa domande simili — e la rifiuta, dicendo che alle domande si risponde.\n\nE se hai tempo, il dettaglio che di solito li colpisce di più: lo stesso uomo ha scritto «si fallor, sum» — se mi inganno, esisto. Milleduecento anni prima di Cartesio, e per rispondere agli scettici, esattamente come farà lui.',
+       seDicono:[
+         {loro:'«Ma allora Cartesio ha copiato.»',
+          tu:'Lo conosceva, e quando glielo fecero notare rispose che il suo cogito faceva un altro lavoro: Agostino lo usa per fondare la certezza dell\'anima, lui per fondare un metodo. È un buon esempio di come la stessa frase possa non essere la stessa idea.'},
+         {loro:'«Uno con quella vita può parlare di verità?»',
+          tu:'Lui direbbe di sì, e che è proprio il punto: le Confessioni servono a mostrare che la verità lavora anche dentro qualcuno che non la sta cercando. Ma la tua è la domanda giusta da farsi sempre — solo che si risponde leggendo gli argomenti, non la biografia.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'Riprendete il foglio dell\'inizio.\n\nAdesso avete una definizione:\nil tempo è la distensione dell\'anima.\n\nE una conseguenza, che vale per oggi:\n\nquest\'ora è durata cinquantacinque minuti per l\'orologio.\n\nPer voi quanto è durata?\n\nSe le due risposte non coincidono,\nnon è un difetto della vostra attenzione:\nsecondo Agostino è esattamente ciò che il tempo è.',
+       parlato:'Chiedi davvero quanto è durata, a mano alzata: meno, uguale, di più. Le risposte si dividono sempre, e il fatto che si dividano è la verifica finale dell\'argomento.\n\nPoi chiudi con due frasi, non di più.\n\nLa prima: avete visto che cosa vuol dire risolvere un problema in filosofia. Non è trovare la risposta che mancava — è accorgersi che si stava cercando nel posto sbagliato. Il tempo non era nelle cose, e finché lo si cercava lì non si poteva che fallire.\n\nLa seconda: con Agostino finisce la filosofia antica. Ha preso le parole dei greci — sostanza, anima, verità, eternità — e le ha usate per dire cose che nessun greco avrebbe detto. Da qui in avanti, per mille anni, l\'Occidente penserà con il suo vocabolario. E l\'anno prossimo ricomincerete esattamente da lì.',
+       seDicono:[
+         {loro:'«Quindi il tempo è soggettivo, ognuno ha il suo?»',
+          tu:'Attenzione a non semplificare: non dice che ciascuno ha un tempo diverso a piacere. Dice che il tempo è il modo in cui una coscienza tiene insieme memoria, attenzione e attesa. È una struttura, non un\'opinione — e infatti tutti misuriamo, e quasi sempre andiamo d\'accordo.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'Da dove viene il male',
+       corpo:'Per nove anni Agostino era stato manicheo, perché quella dottrina rispondeva alla domanda che lo tormentava: da dove viene il male? Risposta: esistono due principi eterni, la luce e la tenebra, e il male è una sostanza che combatte contro Dio.\n\nIl problema è che, se il male è una sostanza, o l\'ha fatta Dio — e allora Dio non è buono — oppure c\'è qualcosa che Dio non ha fatto, e allora non è onnipotente.\n\nLeggendo i platonici trova la via d\'uscita: il male non è una cosa. È una privazione, come la malattia è mancanza di salute e il buio è assenza di luce. Nessuno «fa» il buio. E il male morale nasce da una volontà libera che sceglie un bene minore al posto di uno maggiore.',
+       chiedi:'La soluzione funziona per il male che facciamo. Ma il terremoto? La malattia di un bambino? Provate a difendere Agostino su quel caso, e poi ad attaccarlo: dove si ferma la spiegazione?'},
+      {titolo:'Il furto delle pere',
+       corpo:'Nelle Confessioni, Agostino dedica pagine intere a un furto di pere commesso a sedici anni con una banda di amici. Le pere non erano buone, non aveva fame, e le buttarono ai maiali.\n\nÈ proprio questo a tormentarlo: non ha rubato per il frutto. «Amai la mia rovina, amai il mio difetto: non la cosa per cui commettevo il difetto, ma il difetto stesso.» E aggiunge che da solo non lo avrebbe mai fatto: «non mi sarebbe piaciuto farlo da solo».',
+       chiedi:'Un uomo di quarantacinque anni scrive dieci pagine su un furto di frutta. È sproporzione, o ha visto qualcosa che gli esempi più gravi non mostrano? E la frase sul non farlo da solo: che cosa dice del rapporto fra il male e il gruppo?'},
+      {titolo:'Roma è caduta',
+       corpo:'Nel 410 i Visigoti di Alarico saccheggiano Roma. La città non veniva presa da ottocento anni. Il colpo psicologico è enorme in tutto l\'impero, e molti danno la colpa ai cristiani: da quando abbiamo abbandonato gli dèi, dicono, Roma è caduta.\n\nAgostino risponde con ventidue libri e tredici anni di lavoro. Non nega la catastrofe: cambia il criterio. Tutte le città degli uomini nascono e cadono; ciò che le distingue non è la fortuna ma l\'amore che le fonda. Ci sono due città mescolate in questo mondo, fatte da due amori — «l\'amore di sé fino al disprezzo di Dio, e l\'amore di Dio fino al disprezzo di sé» — e si separeranno solo alla fine.',
+       chiedi:'Agostino risponde a una crisi storica spostando il discorso su un piano dove quella crisi conta meno. È una risposta o una fuga? E oggi, quando qualcuno risponde a un problema politico dicendo che il vero problema è un altro, come si distingue la profondità dall\'evasione?'}
+    ],
+    testi:[
+      {fonte:'Agostino, Confessioni X 27, 38',
+       corpo:'«Tardi ti ho amato, bellezza tanto antica e tanto nuova, tardi ti ho amato! Ed ecco, tu eri dentro di me e io fuori, e là ti cercavo, e sulle cose belle che hai fatto io, deforme, mi gettavo. Tu eri con me, e io non ero con te.»',
+       glossa:'È il passo più celebre delle Confessioni ed è costruito su un\'unica inversione: la ricerca era orientata male, non insufficiente. Vale la pena leggerlo anche a chi non condivide la fede, perché la struttura — cercare fuori ciò che è dentro — è la stessa di tutta la sua teoria della conoscenza.'},
+      {fonte:'Agostino, La città di Dio XIV, 28',
+       corpo:'«Due amori hanno costruito due città: l\'amore di sé fino al disprezzo di Dio, la città terrena; l\'amore di Dio fino al disprezzo di sé, la città celeste. L\'una si gloria in sé stessa, l\'altra nel Signore. […] Nell\'una i prìncipi e le nazioni sono dominati dalla libidine di dominio, nell\'altra si servono a vicenda nella carità.»',
+       glossa:'Da far notare: la distinzione non è fra Chiesa e Stato, né fra credenti e non credenti. Le due città sono mescolate ovunque e in chiunque, e si distinguono solo alla fine. È ciò che rende il libro più interessante e meno utilizzabile come manifesto politico.'},
+      {fonte:'Agostino, La città di Dio XI, 26 — si fallor, sum',
+       corpo:'«Senza alcuna fantasia di immagini, sono certissimo di essere, e di conoscerlo, e di amarlo. Di fronte a queste verità non temo gli argomenti degli Accademici, che dicono: e se ti inganni? Se infatti mi inganno, sono. Chi non è, non può neppure ingannarsi: dunque, se mi inganno, sono.»',
+       glossa:'Milleduecento anni prima di Cartesio, e con lo stesso avversario — lo scetticismo accademico. La differenza sta nell\'uso: Agostino ne ricava la certezza dell\'anima e del suo amore, Cartesio il primo anello di un metodo. Stessa frase, due mestieri diversi.'}
+    ],
+    compito:'Mezza pagina. Descrivete un momento in cui il tempo vi è sembrato molto più lungo o molto più corto di quanto segnasse l\'orologio. Poi provate a spiegare la differenza usando le tre parole di Agostino — memoria, attenzione, attesa — e dite quale delle tre era cambiata.',
+    fonti:[
+      'Agostino, Confessioni I 1, II 4-10 (le pere), VII 9-10 (i platonici), VIII 12 (il giardino), X 8-27 (la memoria), XI 10-31 (il tempo)',
+      'Agostino, La città di Dio XI 26 (si fallor sum), XII 13-14 (contro i cicli), XIV 28 (i due amori), XIX 13 (la pace)',
+      'Agostino, De libero arbitrio I-II; De vera religione 39 (l\'uomo interiore); De Trinitate IX-X',
+      'Agostino, Ritrattazioni — prologo',
+      'P. Brown, Agostino d\'Ippona',
+      'E. Husserl, Per la fenomenologia della coscienza interna del tempo — l\'apertura cita Confessioni XI'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',

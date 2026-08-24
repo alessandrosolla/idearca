@@ -58,6 +58,10 @@ Misure a cui attenersi (sono quelle dei capitoli 1-3, gia' approvati):
 - **da 10 a 14 `incroci`**, e **ognuno deve avere `perche`**: sono i
   ponti fra aree diverse, e sono la parte in cui si vede se il
   capitolo e' stato capito o solo imparato;
+- **negli `incroci`, `da` e `a` vanno copiati e incollati** dal nodo,
+  non riscritti a memoria: e' l'errore che ricorre piu spesso —
+  «Le sensazioni» per «Sensazioni», «Il tempo» per «Che cos'e il
+  tempo». La pagina lo segnala in console, ma costa un giro in piu;
 - i nomi dei nodi devono essere **unici dentro la mappa**: se due
   nodi si chiamano uguale, un incrocio si aggancia al primo che
   trova e la freccia finisce da tutt'altra parte. La pagina avvisa
@@ -141,7 +145,7 @@ Si va in ordine di programma. Restano:
 - [x] Filosofia antica · 9 — Epicureismo e scetticismo
 - [x] Filosofia antica · 10 — Lo stoicismo
 - [x] Filosofia antica · 11 — Il neoplatonismo e Plotino
-- [ ] Filosofia antica · 12 — Agostino d'Ippona
+- [x] Filosofia antica · 12 — Agostino d'Ippona
 - [ ] Storia medievale · 1 — La ripresa dopo l'anno Mille
 - [ ] Storia medievale · 2 — La lotta per le investiture
 - [ ] Storia medievale · 3 — Le crociate
