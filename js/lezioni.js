@@ -4709,6 +4709,226 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Storia medievale · 9 — L\'Italia degli Stati regionali': {
+  mappa: {
+    n:'L\'Italia degli Stati regionali', d:'cinque potenze, un equilibrio, e quarant\'anni di pace',
+    f:[
+      {r:'nasce da', n:'Il passaggio dal comune alla signoria', d:'le citta rinunciano a governarsi da sole',
+       f:[
+         {r:'perche i comuni sono paralizzati da', n:'Le fazioni', d:'lotte fra famiglie che rendono impossibile ogni decisione'},
+         {r:'si era gia provato con', n:'Il podesta forestiero', d:'un magistrato di un\'altra citta, perche non abbia parenti da favorire'},
+         {r:'poi con', n:'Il capitano del popolo', d:'a difesa delle arti contro i magnati: e un rimedio che diventa un trampolino'},
+         {r:'infine un uomo ottiene', n:'La signoria a vita', d:'concessa dalle assemblee stesse, per stanchezza piu che per colpo di stato',
+          f:[{r:'e poi', n:'Ereditaria', d:'il passaggio decisivo: il potere smette di essere una carica e diventa una famiglia'},
+             {piu:true, r:'e infine', n:'Un titolo comprato', d:'i Visconti diventano duchi nel 1395 pagando l\'imperatore centomila fiorini'}]},
+         {r:'e resta', n:'La finzione delle vecchie magistrature', d:'i consigli continuano a riunirsi e a votare cio che e gia deciso'}
+       ]},
+
+      {r:'produce', n:'Cinque potenze', d:'l\'Italia si semplifica: da centinaia di comuni a pochi Stati',
+       f:[
+         {r:'il ducato di', n:'Milano', d:'il piu aggressivo, controlla la pianura padana e le vie per il Nord'},
+         {r:'la repubblica di', n:'Venezia', d:'impero marittimo che a un certo punto decide di conquistare anche la terra'},
+         {r:'la repubblica di', n:'Firenze', d:'ricchissima di manifattura e banche, governata da un\'oligarchia'},
+         {r:'lo', n:'Stato della Chiesa', d:'ricostruito con le armi dopo il ritorno da Avignone'},
+         {r:'il regno di', n:'Napoli', d:'il piu grande per territorio, conteso fra angioini e aragonesi'},
+         {r:'e attorno', n:'Gli Stati minori', d:'Savoia, Ferrara, Mantova, Urbino: sopravvivono vendendo eserciti e alleanze'}
+       ]},
+
+      {r:'ha il suo momento critico con', n:'L\'espansione milanese', d:'l\'unico tentativo serio di unificare il Nord',
+       f:[
+         {r:'guidata da', n:'Gian Galeazzo Visconti', d:'conquista Verona, Padova, Pisa, Siena, Bologna: Firenze e accerchiata',
+          f:[{r:'e si ferma solo perche', n:'Muore di peste nel 1402', d:'a un passo dall\'obiettivo, e lo Stato si sfalda in pochi mesi'},
+             {piu:true, r:'e Firenze trasforma la resistenza in', n:'Un mito repubblicano', d:'la liberta contro il tiranno: nasce cosi l\'umanesimo civile'}]},
+         {r:'riprende con', n:'Filippo Maria Visconti', d:'l\'ultimo dei Visconti, sospettoso e chiuso nel castello'},
+         {r:'alla sua morte', n:'La repubblica ambrosiana', d:'1447: Milano prova a tornare comune, e dura tre anni'},
+         {r:'e finisce con', n:'Francesco Sforza', d:'1450: un condottiero diventa duca sposando la figlia del suo signore'}
+       ]},
+
+      {r:'trova un modello nel', n:'Caso veneziano', d:'la Serenissima: l\'unico Stato che sembra non avere crisi',
+       f:[
+         {r:'perche ha chiuso', n:'La serrata del Maggior Consiglio', d:'1297: le famiglie che governano sono fissate una volta per tutte'},
+         {r:'e sorveglia', n:'Il doge', d:'eletto con una procedura lunghissima, e circondato da controlli continui',
+          f:[{piu:true, r:'e alla sua morte', n:'Viene processato', d:'una commissione esamina il suo operato e la famiglia paga le multe'}]},
+         {r:'con il', n:'Consiglio dei Dieci', d:'organo di sicurezza rapido e segreto: efficienza pagata in liberta'},
+         {r:'e dal 1404 sceglie', n:'La Terraferma', d:'conquista Verona, Vicenza, Padova, Brescia, Bergamo',
+          f:[{r:'per assicurarsi', n:'Grano, strade e legname', d:'un impero di mare non si nutre da solo'}]}
+       ]},
+
+      {r:'e un\'invenzione nel', n:'Caso fiorentino', d:'dove il potere si esercita senza occupare le cariche',
+       f:[
+         {r:'formalmente e', n:'Una repubblica', d:'priori estratti a sorte, mandati brevissimi, nessun capo'},
+         {r:'in realta governa', n:'Cosimo de\' Medici', d:'dal 1434, come banchiere e non come magistrato',
+          f:[{r:'controllando', n:'Le liste degli eleggibili', d:'chi decide chi puo essere estratto ha gia deciso tutto'},
+             {piu:true, r:'ed e', n:'Il banchiere del papa', d:'la gestione delle finanze pontificie e il vero fondamento del potere mediceo'}]},
+         {r:'e poi', n:'Lorenzo il Magnifico', d:'arbitro della politica italiana pur non avendo alcun titolo'},
+         {piu:true, r:'e la cultura serve a', n:'Legittimare', d:'una famiglia senza titoli si fa riconoscere finanziando cupole, biblioteche e filosofi'},
+         {r:'la ricchezza viene da', n:'Lana, seta e banche', d:'filiali in tutta Europa, e il fiorino come moneta di riferimento'}
+       ]},
+
+      {r:'si completa con', n:'Il Sud e la Chiesa', d:'i due Stati piu grandi e piu difficili da governare',
+       f:[
+         {r:'a Napoli si scontrano', n:'Angioini e aragonesi', d:'due dinastie straniere e due pretese ereditarie'},
+         {r:'vince', n:'Alfonso il Magnanimo', d:'1442: unisce Napoli alla corona d\'Aragona e apre una corte umanistica'},
+         {r:'ma il regno resta', n:'Nelle mani dei baroni', d:'il re non riesce a spezzare il potere feudale nelle province'},
+         {r:'lo Stato della Chiesa viene', n:'Riconquistato con le armi', d:'dal cardinale Albornoz, che sottomette i signori locali'},
+         {r:'e il papa diventa', n:'Un principe italiano', d:'con un esercito, una diplomazia e una politica dinastica come gli altri',
+          f:[{piu:true, r:'fino al', n:'Nepotismo di sistema', d:'i nipoti come strumento di governo: e la contraddizione che pesera sulla Riforma'}]}
+       ]},
+
+      {r:'si regge su', n:'Un sistema di equilibrio', d:'e questa e la vera invenzione italiana del Quattrocento',
+       f:[
+         {r:'sancito dalla', n:'Pace di Lodi', d:'1454: dopo decenni di guerre, i cinque Stati si riconoscono a vicenda'},
+         {r:'organizzato nella', n:'Lega italica', d:'1455: patto venticinquennale di non aggressione e difesa comune'},
+         {r:'funziona cosi', n:'Chi cresce troppo trova gli altri contro', d:'nessuno puo vincere, quindi nessuno prova a vincere sul serio'},
+         {r:'richiede', n:'Informazione continua', d:'sapere in tempo reale che cosa fanno gli altri quattro'},
+         {r:'e per questo nasce', n:'L\'ambasciata permanente', d:'un rappresentante che risiede stabilmente presso un\'altra corte',
+          f:[{r:'con l\'obbligo di', n:'Relazioni scritte regolari', d:'il primo servizio informazioni moderno d\'Europa'},
+             {piu:true, r:'copiata poi da', n:'Tutta l\'Europa', d:'la diplomazia degli Stati moderni e un\'esportazione italiana'}]},
+         {r:'e si combatte con', n:'Le compagnie di ventura', d:'eserciti professionali affittati, guidati da condottieri che trattano con tutti',
+          f:[{piu:true, r:'e Machiavelli sostiene che', n:'Facciano finta di combattere', d:'un\'accusa efficace ma esagerata: le battaglie avevano morti veri'}]}
+       ]},
+
+      {r:'crolla nel', n:'1494', d:'e in pochi mesi l\'Italia smette di decidere di se stessa',
+       f:[
+         {r:'perche a chiamare i francesi e', n:'Ludovico il Moro', d:'duca di Milano: vuole neutralizzare Napoli, e apre la porta'},
+         {r:'scende', n:'Carlo VIII', d:'attraversa la penisola da Nord a Sud quasi senza combattere'},
+         {r:'con un\'arma nuova', n:'L\'artiglieria mobile', d:'cannoni di bronzo trainati da cavalli, che abbattono le mura in ore'},
+         {r:'e l\'equilibrio si rivela', n:'Valido solo fra cinque', d:'nessuno aveva previsto un sesto giocatore, molto piu grande'},
+         {r:'comincia cosi', n:'Il lungo dominio straniero', d:'guerre d\'Italia fino al 1559, e poi tre secoli di sovranita altrui'},
+         {piu:true, r:'e gli italiani restano bravi in', n:'Tutto tranne che nella forza', d:'banche, arte e diplomazia continuano a primeggiare mentre la politica passa ad altri'},
+         {r:'e da questa sconfitta nasce', n:'Il pensiero politico moderno', d:'Machiavelli e Guicciardini sono due funzionari di uno Stato che ha perso'}
+       ]}
+    ],
+    incroci:[
+      {da:'Le fazioni', a:'La signoria a vita', r:'sono la ragione per cui si accetta',
+       perche:'Le signorie non nascono quasi mai da un colpo di mano: nascono da assemblee esauste che consegnano il potere a un uomo perche mettano fine agli scontri fra famiglie. È una rinuncia volontaria alla liberta politica in cambio di sicurezza, e vale la pena notare quanto spesso questo scambio si ripresenti.'},
+      {da:'Muore di peste nel 1402', a:'Chi cresce troppo trova gli altri contro', r:'salva il principio che',
+       perche:'Gian Galeazzo era arrivato a un passo dall\'unificazione del Nord: se non fosse morto, l\'equilibrio italiano non sarebbe mai esistito. Il sistema che ammiriamo come costruzione politica poggia, alla base, su una morte per malattia — utile da ricordare quando si spiegano gli esiti storici con le sole cause profonde.'},
+      {da:'Un mito repubblicano', a:'Il pensiero politico moderno', r:'e il precedente diretto del',
+       perche:'La resistenza fiorentina a Milano produce una letteratura sulla liberta cittadina che forma i cancellieri della repubblica. Machiavelli lavora in quella cancelleria un secolo dopo: la riflessione politica italiana nasce due volte da una minaccia mortale, nel 1402 e nel 1494.'},
+      {da:'Informazione continua', a:'Valido solo fra cinque', r:'e organizzata bene ma resta',
+       perche:'Le ambasciate permanenti danno agli Stati italiani un vantaggio informativo enorme — su se stessi. Nessuno tiene un residente stabile a Parigi come a Napoli. Un sistema di sorveglianza reciproca perfezionato all\'interno puo restare cieco esattamente dove arrivera il colpo.'},
+      {da:'Ludovico il Moro', a:'Chi cresce troppo trova gli altri contro', r:'usa la logica di',
+       perche:'Il Moro non tradisce l\'Italia: applica alla lettera la regola del sistema, cercando un contrappeso contro Napoli. Il guaio e che il contrappeso che sceglie non appartiene al sistema. Ogni giocatore fa la mossa razionale dal proprio punto di vista, e insieme producono la catastrofe.'},
+      {da:'Le liste degli eleggibili', a:'La finzione delle vecchie magistrature', r:'e la versione fiorentina della',
+       perche:'A Milano restano i consigli comunali che approvano cio che il duca ha deciso; a Firenze restano le estrazioni a sorte, ma qualcuno decide chi puo essere estratto. In entrambi i casi la forma repubblicana sopravvive intatta e serve a rendere invisibile il potere reale.'},
+      {da:'Grano, strade e legname', a:'La Terraferma', r:'sono la ragione economica della conquista della',
+       perche:'Venezia non passa alla terraferma per ambizione territoriale ma per sicurezza: le serve il grano padano, il legname per l\'Arsenale e il controllo delle strade verso il Nord. È il momento in cui una potenza marittima scopre di non poter restare solo marittima.'},
+      {da:'Un titolo comprato', a:'Un principe italiano', r:'e la stessa logica per cui il papa diventa',
+       perche:'Il duca compra la legittimita dall\'imperatore, il papa si costruisce un esercito e una politica dinastica. In entrambi i casi le autorita universali non sono piu il quadro dentro cui si sta: sono risorse da usare. Il Quattrocento italiano tratta papato e impero come strumenti.'},
+      {da:'Nelle mani dei baroni', a:'Carlo VIII', r:'spiega la rapidita della discesa di',
+       perche:'Napoli non cade per una battaglia: cade perche i baroni non hanno alcun motivo di difendere una dinastia che ha cercato di limitarli. Uno Stato grande ma non integrato si consegna senza combattere, e questa e la differenza fra estensione e forza.'},
+      {da:'L\'artiglieria mobile', a:'Facciano finta di combattere', r:'rende definitivamente obsoleta l\'idea che',
+       perche:'La guerra dei condottieri era cauta perche gli eserciti erano un capitale da conservare e le mura erano quasi imprendibili. L\'artiglieria francese cambia il calcolo: le fortezze cadono in ore, la cautela diventa suicidio. Non e che gli italiani non sapessero combattere — combattevano secondo regole appena diventate obsolete.'},
+      {da:'Pace di Lodi', a:'Il lungo dominio straniero', r:'e il presupposto del',
+       perche:'Quarant\'anni di equilibrio interno hanno una conseguenza rovesciata: nessuno degli Stati italiani sviluppa l\'esercito permanente e la fiscalita di guerra che nel frattempo Francia e Spagna costruiscono. La pace non prepara alla guerra, e questo il conto presentato nel 1494.'},
+      {da:'Lana, seta e banche', a:'Carlo VIII', r:'sono anche cio che attira',
+       perche:'L\'Italia e la regione piu ricca d\'Europa e la meno capace di difendersi. La ricchezza non e solo il premio della vittoria, e il movente dell\'invasione: le spedizioni francesi e spagnole si finanziano con cio che trovano, e questo le rende sostenibili a lungo.'},
+      {da:'Gli Stati minori', a:'Le compagnie di ventura', r:'sopravvivono grazie alle',
+       perche:'Mantova, Ferrara e Urbino restano indipendenti perche vendono ai grandi la cosa di cui i grandi hanno bisogno: comandanti e soldati. È un modello di sopravvivenza per specializzazione — e finisce nel momento in cui i grandi Stati si dotano di eserciti propri.'}
+    ]
+  },
+  provocazione: {
+    titolo:'Quarant\'anni di pace',
+    durata:'55 minuti',
+    domandaMadre:'Un sistema che funziona da decenni e per questo solido?',
+    perche:'L\'Italia del Quattrocento e la parte piu ricca, colta e politicamente sofisticata d\'Europa: inventa l\'equilibrio di potenza, la diplomazia permanente, la contabilita, e produce il Rinascimento. Nel 1494 viene attraversata da un esercito straniero in pochi mesi, e per tre secoli non decidera piu di se stessa. La classe deve capire che le due cose non sono in contraddizione ma collegate: la frammentazione che rende possibile la fioritura e la stessa che rende impossibile la difesa. E deve arrivare al punto piu difficile, che vale per ogni sistema — quarant\'anni senza crisi non dimostrano solidita, dimostrano solo che lo shock non e ancora arrivato.',
+    occorrente:'Utile una carta dell\'Italia del 1454 se ce l\'hai a portata di mano, ma non indispensabile.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'Settembre 1494.\n\nUn esercito francese entra in Italia\ne la attraversa tutta,\nda Torino a Napoli,\nin poco piu di cinque mesi.\n\nQuasi senza combattere.\n\nUn contemporaneo scrisse che\nle conquiste furono fatte\n«col gesso in mano»:\nil gesso con cui gli ufficiali\nsegnavano le porte delle case\nda requisire per la notte.\n\nL\'Italia era, in quel momento,\nla regione piu ricca d\'Europa.\nAveva le banche piu grandi,\nle citta piu popolose,\nle corti piu colte,\nla diplomazia piu avanzata.\n\nE quarant\'anni di pace alle spalle.',
+       parlato:'Dai i fatti in quest\'ordine, tenendo l\'ultima riga per il silenzio.\n\nPoi aggiungi il dato che ribalta tutto e apre la lezione: chi aveva chiamato i francesi in Italia non era un francese. Era Ludovico il Moro, duca di Milano.\n\nAspetta la reazione. È sempre di sconcerto.\n\nNon spiegare ancora perche lo ha fatto: quello e il lavoro dell\'ora. Limitati a dire che il Moro non era un pazzo ne un traditore per denaro: era considerato il politico piu abile d\'Italia.',
+       seDicono:[
+         {loro:'«Perche nessuno li ha fermati?»',
+          tu:'Alcuni ci hanno provato, tardi e separatamente. Ma tieni la domanda cosi: perche cinque Stati che avevano un patto di difesa comune firmato non lo hanno applicato? La risposta ci portera al cuore della faccenda.'},
+         {loro:'«Erano deboli militarmente.»',
+          tu:'Erano ricchissimi e potevano permettersi eserciti. Il problema non era il denaro: era che nessuno di loro aveva un esercito proprio e permanente. Perche, in quarant\'anni di pace, non serviva.'}
+       ]},
+
+      {minuti:'8–17', et:'Lo schieramento',
+       schermo:'Ludovico il Moro, duca di Milano,\nchiama in Italia il re di Francia\nper togliersi di mezzo Napoli:',
+       opzioni:['e un tradimento, e lui e il responsabile del disastro', 'e la mossa che chiunque, al suo posto, avrebbe considerato'],
+       parlato:'Fai schierare e conta. La prima opzione vince quasi sempre, ed e la lettura dei manuali ottocenteschi.\n\nPoi chiedi di guardare la situazione dai suoi occhi. Napoli rivendica Milano attraverso una parentela dinastica e lo minaccia apertamente. La regola non scritta del sistema italiano dice: quando qualcuno diventa pericoloso, ti cerchi un contrappeso. Il Moro applica la regola.\n\nL\'errore non e nel principio ma in dove va a cercare il contrappeso: fuori dal sistema, e molto piu grande del sistema.\n\nQui vale la pena nominare il meccanismo, perche lo avete gia incontrato con la legge inglese sui salari: ogni giocatore fa la mossa sensata dal proprio punto di vista, e la somma di mosse sensate produce un disastro che nessuno voleva. Non serve un traditore perche un sistema crolli. Bastano cinque persone ragionevoli.',
+       seDicono:[
+         {loro:'«Poteva immaginare che sarebbe finita cosi.»',
+          tu:'Poteva immaginare che i francesi arrivassero: era previsto e concordato. Non poteva immaginare che restassero. E infatti pochi anni dopo la Francia rivendica Milano — e il Moro finisce prigioniero in Francia, dove muore. Le conseguenze delle sue mosse le paga per primo.'},
+         {loro:'«Allora la colpa e del sistema, non sua.»',
+          tu:'Attento a questa scorciatoia: i sistemi non decidono, decidono le persone dentro di essi. Diciamo cosi: il sistema rendeva quella mossa ragionevole, e questo spiega perche fu fatta. Spiegare non toglie la responsabilita, la colloca.'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'Come era nato quel sistema.\n\n1454, pace di Lodi.\nDopo decenni di guerre,\ncinque Stati si riconoscono a vicenda:\n\nMilano, Venezia, Firenze,\nlo Stato della Chiesa, Napoli.\n\n1455, Lega italica:\npatto di venticinque anni,\nnon aggressione e difesa comune.\n\nLa regola implicita:\nchi cresce troppo si ritrova\ngli altri quattro contro.\n\nÈ il primo sistema di equilibrio\ndella storia europea.\n\nPer farlo funzionare serve sapere\nin ogni momento che cosa fanno gli altri.\n\nE cosi nasce, in Italia,\nl\'ambasciatore che risiede stabilmente\npresso una corte straniera\ne scrive relazioni regolari.',
+       parlato:'Ricostruisci il sistema con calma: e una costruzione che merita ammirazione prima della critica.\n\nFai capire la novita dell\'ambasciata permanente. Prima si mandavano ambasciatori per un\'occasione: una trattativa, un matrimonio, una guerra. Qui invece uno resta li per anni, con l\'unico compito di osservare e riferire. Tutta l\'Europa copiera questo modello: la diplomazia moderna e un\'esportazione italiana.\n\nPoi la domanda che apre la seconda meta dell\'ora: guardate questo sistema e ditemi che cosa non prevede.\n\nSe non ci arrivano, guidali con una domanda piu stretta: quanti giocatori ci sono? Cinque. E se ne arriva un sesto?\n\nQuesto e il punto. Un equilibrio a cinque presuppone che i giocatori siano cinque. Tutta l\'intelligenza del sistema era rivolta all\'interno — e l\'informazione, per quanto raffinata, riguardava solo gli altri quattro.',
+       seDicono:[
+         {loro:'«Ma avevano ambasciatori anche in Francia.»',
+          tu:'Occasionali, e sottovalutati. Il punto non e l\'assenza totale di informazione: e dove era puntata l\'attenzione. Un sistema di sorveglianza reciproca perfezionato all\'interno puo restare cieco esattamente dove arrivera il colpo.'},
+         {loro:'«Quarant\'anni di pace sono comunque un successo.»',
+          tu:'Assolutamente si, e non va tolto. La domanda e un\'altra: quei quarant\'anni hanno reso l\'Italia piu forte o piu fragile? Ci arriviamo, ed e la parte scomoda.'}
+       ]},
+
+      {minuti:'28–38', et:'Il testo',
+       schermo:'Guicciardini apre la sua storia\ndescrivendo l\'Italia del 1490:\n\nmai, dice, era stata\nin condizioni cosi prospere:\n\npace ovunque,\ncampi coltivati fin sulle montagne,\nricchezza di commerci,\ncitta splendide,\nuomini eccellenti\nin ogni disciplina.\n\nScrive questo\nnelle prime pagine\ndi un libro che racconta\ncome tutto questo\nfu distrutto.',
+       testo:{fonte:'Francesco Guicciardini, Storia d\'Italia, libro I (scritta fra il 1537 e il 1540)',
+              glossa:'Guicciardini era stato ambasciatore, governatore pontificio e consigliere: scrive da funzionario, non da letterato. Mette la descrizione della prosperita in apertura di un\'opera sulla rovina perche vuole che il lettore senta il contrasto — e perche la sua tesi e che proprio quella prosperita, non difesa da nessuna forza reale, sia stata il movente dell\'invasione.'},
+       parlato:'Leggi il passo e poi fai la domanda tecnica: perche uno storico comincia un libro sulla catastrofe descrivendo la felicita?\n\nRisposta: perche il contrasto e la sua tesi. Guicciardini non pensa che l\'Italia sia caduta nonostante fosse ricca. Pensa che sia caduta anche perche era ricca — cioe perche era un premio, e un premio indifeso.\n\nPoi aggiungi il dato che rende la cosa fredda e chiara. La Francia aveva circa quindici milioni di abitanti sotto un solo re, con un\'imposta permanente e un esercito stabile. L\'Italia ne aveva circa dieci, divisi in cinque Stati che non si fidavano l\'uno dell\'altro.\n\nMentre gli italiani perfezionavano l\'equilibrio interno, le monarchie europee stavano superando una soglia di dimensione. E la dimensione, in guerra, e quasi tutto.',
+       seDicono:[
+         {loro:'«Bastava che si unissero.»',
+          tu:'È la conclusione che trarra Machiavelli, e va detto che era irrealistica: unirsi significava che uno vincesse sugli altri quattro, e ogni volta che qualcuno ci ha provato — Gian Galeazzo — gli altri si sono coalizzati. La regola che garantiva la pace impediva l\'unificazione. Non e un difetto del sistema: e il sistema.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'Adesso la domanda difficile.\n\nPerche l\'Italia era divisa?\n\nPerche nessuno era riuscito a vincere.\nCioe perche erano tutti\nabbastanza forti.\n\nE che cosa ha prodotto quella divisione?\n\nCinque corti in competizione.\nCinque committenze artistiche.\nCinque cancellerie che assumono umanisti.\nDecine di citta che vogliono\nessere piu belle delle rivali.\n\nBrunelleschi, Piero della Francesca,\nMantegna, Leonardo, Bramante\nlavorano in questo:\nnon in un grande Stato unitario,\nma in un mercato di committenti\nche si fanno concorrenza.\n\nLa stessa frammentazione\nche produce il Rinascimento\ne quella che rende l\'Italia indifendibile.',
+       parlato:'Costruisci questo passaggio lentamente, perche e il centro dell\'ora.\n\nFai notare che nessuno degli artisti che studiano in storia dell\'arte avrebbe avuto quella carriera in uno Stato unificato: si spostavano da una corte all\'altra proprio perche le corti erano tante e in competizione. Leonardo lavora per Firenze, Milano, Venezia, Roma e infine per il re di Francia.\n\nPoi la formulazione che devono portarsi via: la stessa causa produce il capolavoro e la catastrofe. Non due cause diverse, una buona e una cattiva — una sola.\n\nDomanda per farli lavorare: allora la divisione e stata un bene o un male?\n\nLa risposta giusta e che la domanda e mal posta, ed e utile che lo scoprano da soli. Le cause storiche non hanno un segno. Hanno effetti, in direzioni diverse, e valutarli dipende da che cosa si sta misurando e su quale periodo.',
+       seDicono:[
+         {loro:'«Quindi il Rinascimento e valso l\'invasione?»',
+          tu:'Non e un baratto e non si puo fare quel conto: nessuno ha scelto fra le due cose. Quello che possiamo dire e che avevano la stessa radice. Chi ammira il Quattrocento italiano e chi ne compiange la fine stanno guardando due facce dello stesso assetto.'},
+         {loro:'«Anche la Germania era divisa e non e stata invasa cosi.»',
+          tu:'Osservazione ottima, e la differenza e istruttiva: la Germania era divisa, povera e periferica; l\'Italia era divisa, ricchissima e sulla strada di tutti. La frammentazione diventa pericolosa in proporzione a quanto sei appetibile.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'Torniamo alla domanda di partenza.\n\nPer quarant\'anni il sistema italiano\nha funzionato:\nnessuna guerra generale,\nnessuno Stato distrutto,\nricchezza crescente.\n\nQuei quarant\'anni erano la prova\nche il sistema era solido?\n\nO erano solo il tempo\nin cui non era ancora arrivato\ncio che poteva romperlo?\n\nE la domanda che vale per tutto:\n\nquando una cosa funziona da molto tempo,\nche cosa state osservando davvero —\nla sua forza,\no l\'assenza della prova?',
+       parlato:'Rifai la conta e commenta lo spostamento, che di solito e netto.\n\nPoi il bilancio. Quarant\'anni di pace hanno prodotto ricchezza e arte, e hanno prodotto anche il fatto che nessuno Stato italiano avesse un esercito permanente o una fiscalita di guerra, mentre Francia e Spagna se li stavano costruendo. Il sistema non si era rafforzato: si era specializzato in cio che gli serviva, e cio che gli serviva era la trattativa.\n\nLa domanda finale va lasciata aperta, ma da\' loro il criterio: per sapere se un sistema e solido non basta guardare quanto e durato. Bisogna chiedersi quali prove ha superato — e se ne ha superata nessuna, la durata non dice niente.\n\nUltima cosa, che apre il resto dell\'anno. Da questa sconfitta nascono i due libri piu importanti del pensiero politico italiano. Machiavelli e Guicciardini erano funzionari di uno Stato che aveva perso, e scrivono per capire come si era arrivati li. La riflessione politica moderna comincia con una disfatta — e questo dice qualcosa su quando si pensa davvero.',
+       seDicono:[
+         {loro:'«Allora non ci si puo mai fidare di niente.»',
+          tu:'Non e questo: e che la fiducia va appoggiata su prove, non sull\'abitudine. Un ponte che regge da vent\'anni ti dice qualcosa se in vent\'anni ci sono passati camion pesanti; non ti dice niente se ci sono passate solo biciclette. La domanda giusta e sempre: che cosa ha attraversato questa cosa finora?'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'La serrata di Venezia',
+       corpo:'Nel 1297 il Maggior Consiglio veneziano stabilisce che possono farne parte solo i discendenti di chi vi aveva gia seduto. L\'accesso al governo viene chiuso ereditariamente.\n\nDa quel momento Venezia non conosce piu ne lotte di fazione ne colpi di Stato: e la repubblica piu stabile d\'Europa, e durera cinque secoli.\n\nIl doge viene eletto con una procedura di dieci passaggi fra sorteggi e votazioni, congegnata perche nessuna famiglia possa pilotarla; alla sua morte una commissione esamina il suo operato e la famiglia paga le eventuali multe.',
+       chiedi:'Venezia ottiene una stabilita straordinaria escludendo per sempre la maggioranza dei cittadini dal governo. È un prezzo accettabile? E chi lo ha pagato non aveva voce per dire di no: cambia qualcosa nel giudizio?'},
+      {titolo:'Guerre senza morti?',
+       corpo:'Machiavelli sostiene che le guerre dei condottieri fossero finte: eserciti affittati che evitavano il combattimento per non perdere il capitale, battaglie che si risolvevano con pochi caduti e molti prigionieri da riscattare.\n\nL\'accusa e efficace e in parte ingiusta: alcune battaglie del Quattrocento ebbero migliaia di morti. Ma il meccanismo che descrive esisteva davvero — i condottieri cambiavano padrone, trattavano con il nemico e avevano interesse a che la guerra durasse.',
+       chiedi:'Un esercito di professionisti pagati ha interesse a vincere in fretta? E che cosa cambia, in una guerra, se chi la combatte non appartiene al paese per cui combatte?'},
+      {titolo:'Il potere senza la carica',
+       corpo:'Cosimo de\' Medici governo Firenze per trent\'anni senza mai ricoprire una carica di rilievo. Il sistema fiorentino estraeva a sorte i magistrati fra i cittadini abilitati: bastava controllare chi finiva nelle liste degli abilitati.\n\nFormalmente la repubblica restava intatta. Le assemblee si riunivano, i priori venivano estratti, i mandati duravano pochi mesi. Nessuno poteva indicare l\'atto con cui la liberta era stata soppressa, perche non c\'era.',
+       chiedi:'Un potere che lascia in piedi tutte le istituzioni e piu o meno pericoloso di uno che le abolisce? E come si fa a contestare qualcosa che formalmente non esiste?'}
+    ],
+    testi:[
+      {fonte:'Machiavelli, Il Principe, capitolo XII (1513)',
+       corpo:'Le milizie mercenarie, scrive, sono inutili e pericolose: senza disciplina, ambiziose, sleali, «gagliarde fra gli amici» e vili davanti al nemico; e chi fonda il proprio Stato su di esse non stara mai fermo ne sicuro.',
+       glossa:'Machiavelli scrive dopo il crollo, e la sua tesi e una diagnosi: l\'Italia e caduta perche ha delegato la propria difesa. Da usare in classe come esempio di come si giudica il passato — la sua analisi e lucida e insieme di parte, perche lui aveva personalmente creato la milizia cittadina fiorentina, che poi fu battuta a Prato nel 1512.'},
+      {fonte:'Guicciardini, Storia d\'Italia, sulla discesa di Carlo VIII',
+       corpo:'Lo storico osserva che quella spedizione porto in Italia guerre nuove e piu crudeli, e apri la via a interventi stranieri che sarebbero durati per generazioni; e nota che tutto era cominciato da un calcolo di un solo principe italiano.',
+       glossa:'Guicciardini e il primo a scrivere una storia d\'Italia come storia di un sistema di Stati e non di una citta sola. Per questo il suo libro e considerato l\'inizio della storiografia moderna: non racconta le imprese di un principe, analizza come si comportano insieme piu attori.'},
+      {fonte:'Dalle relazioni degli ambasciatori veneziani, XV-XVI secolo',
+       corpo:'Alla fine del mandato ogni ambasciatore veneziano era tenuto a leggere in Senato una relazione scritta sul paese in cui era stato: forze militari, entrate, carattere del sovrano, fazioni di corte, stato dell\'agricoltura.',
+       glossa:'Sono la prima raccolta sistematica di informazioni politiche sull\'estero esistente in Europa, e restano una fonte di prim\'ordine per gli storici. Fanno vedere concretamente che cosa significa la nascita della diplomazia: non la cortesia fra Stati, ma la raccolta organizzata di dati sugli altri.'}
+    ],
+    compito:'Mezza pagina. Scegliete qualcosa che nella vostra esperienza «funziona da sempre»: una regola di casa, un\'abitudine di classe, un accordo fra amici. Poi rispondete a due domande: quali prove ha superato davvero finora, e quale evento — anche improbabile — la farebbe saltare in un giorno. Se non riuscite a immaginare nessun evento del genere, chiedetevi se e perche non puo accadere o perche non ci avete pensato.',
+    fonti:[
+      'Guicciardini, Storia d\'Italia, libri I-II; Machiavelli, Il Principe, capitoli XII-XIV',
+      'Pace di Lodi (1454) e atti della Lega italica (1455)',
+      'Relazioni degli ambasciatori veneziani al Senato, edizione Albèri',
+      'G. Galasso, L\'Italia come problema storiografico; E. Fasano Guarini, Lo Stato regionale',
+      'G. Mattingly, Renaissance Diplomacy — sulla nascita dell\'ambasciata permanente',
+      'M. Mallett, Signori e mercenari: la guerra nell\'Italia del Rinascimento'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',

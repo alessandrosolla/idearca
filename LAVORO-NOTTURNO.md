@@ -154,7 +154,7 @@ Si va in ordine di programma. Restano:
 - [x] Storia medievale · 6 — Le civiltà extraeuropee
 - [x] Storia medievale · 7 — La crisi del Trecento
 - [x] Storia medievale · 8 — La crisi dei poteri universali
-- [ ] Storia medievale · 9 — L'Italia degli Stati regionali
+- [x] Storia medievale · 9 — L'Italia degli Stati regionali
 - [ ] Storia medievale · 10 — La frontiera mediterranea e gli Ottomani
 - [ ] Storia medievale · 11 — Il Nuovo Mondo
 - [ ] Filosofia medievale · 1 — La filosofia nel Medioevo
