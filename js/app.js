@@ -18,7 +18,7 @@
    versione.json sbagliata manderebbe il browser in un giro
    infinito di ricariche.
    ══════════════════════════════════════════════════════════ */
-const VERSIONE = '20260824bp';
+const VERSIONE = '20260824bs';
 (async function controllaVersione(){
   try{
     const r=await fetch('versione.json?'+Date.now(), {cache:'no-store'});

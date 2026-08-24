@@ -6903,6 +6903,225 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Storia moderna · 5 — La guerra dei Trent\'anni e l\'Olanda': {
+  mappa: {
+    n:'La guerra dei Trent\'anni e l\'Olanda', d:'la Germania che si disfa e la repubblica che diventa il centro del mondo',
+    f:[
+      {r:'comincia dalla', n:'Guerra vista da sotto', d:'non le battaglie, ma che cosa significa vivere dove passa un esercito',
+       f:[
+         {r:'gli eserciti', n:'Vivono sul territorio', d:'requisizioni, contribuzioni, alloggiamenti forzati: si mangia cio che si trova'},
+         {r:'quindi i contadini', n:'Fuggono nei boschi', d:'e i campi restano incolti: la fame arriva dopo il passaggio, non durante'},
+         {r:'le truppe portano', n:'Le epidemie', d:'tifo e peste viaggiano con gli eserciti piu velocemente di qualsiasi notizia'},
+         {r:'lo racconta', n:'Il Simplicissimus', d:'romanzo di Grimmelshausen, scritto da chi la guerra l\'aveva fatta da ragazzo'},
+         {r:'e nelle citta assediate si arriva a', n:'Mangiare cio che non e cibo', d:'le cronache dell\'assedio di Breda e di Magdeburgo registrano cuoio e cortecce'},
+         {r:'e lo incidono', n:'Le miserie della guerra', d:'le stampe di Callot: impiccagioni, saccheggi, mutilati che mendicano',
+          f:[{piu:true, r:'mentre le cronache di villaggio come quella di', n:'Hans Heberle', d:'contano le volte in cui si e scappati: trenta in trent\'anni'}]}
+       ]},
+
+      {r:'e cosi distruttiva perche', n:'Non ha un fronte', d:'la guerra non sta in un luogo: attraversa tutto piu volte',
+       f:[
+         {r:'nessuno riesce a', n:'Pagare regolarmente le truppe', d:'e un esercito non pagato si rifa sulla popolazione'},
+         {r:'gli schieramenti', n:'Cambiano di continuo', d:'cattolici che si alleano con protestanti, e viceversa, secondo la convenienza'},
+         {r:'le perdite in Germania sono stimate', n:'Fra un quinto e un terzo', d:'ma la media nasconde tutto: alcune zone perdono meta, altre quasi nulla'},
+         {piu:true, r:'e le stime restano', n:'Molto discusse', d:'basate su registri parrocchiali e conti fiscali, non su censimenti'}
+       ]},
+
+      {r:'produce', n:'Un diritto fra gli Stati', d:'se non si puo impedire la guerra, si prova a darle delle regole',
+       f:[
+         {r:'Grozio pubblica nel 1625', n:'Il diritto della guerra e della pace', d:'scritto da un olandese in esilio in Francia'},
+         {r:'con la tesi che esista', n:'Un diritto naturale', d:'valido per tutti i popoli, ricavabile dalla ragione e dalla socialita umana',
+          f:[{r:'e che varrebbe', n:'Anche se Dio non esistesse', d:'l\'ipotesi e dichiarata empia dall\'autore stesso, e serve a fondare regole comuni'},
+             {piu:true, r:'da cui deriva anche', n:'Il mare libero', d:'nessuno puo possedere l\'oceano: una tesi utile ai commerci olandesi'}]},
+         {r:'e Vestfalia introduce', n:'L\'amnistia e l\'oblio', d:'si stabilisce per trattato di non chiedere conto di cio che e stato fatto'},
+         {r:'nasce cosi', n:'La diplomazia dei congressi', d:'anni di trattative parallele fra decine di delegazioni'}
+       ]},
+
+      {r:'e intanto cresce', n:'Una repubblica anomala', d:'in un\'Europa di monarchie assolute, sette province senza re',
+       f:[
+         {r:'la sovranita sta nelle', n:'Province', d:'ciascuna decide per se; le decisioni comuni richiedono l\'unanimita'},
+         {r:'si riuniscono negli', n:'Stati generali', d:'un\'assemblea di delegati vincolati dalle istruzioni di casa'},
+         {r:'il comando militare spetta allo', n:'Statolder', d:'carica affidata agli Orange: quasi un principe, ma senza corona'},
+         {r:'e la guida politica al', n:'Gran Pensionario', d:'un funzionario, non un sovrano: e l\'uomo piu potente della repubblica'},
+         {r:'con una tensione permanente fra', n:'Orange e regenti', d:'partito militare e ceto mercantile: si alterna, e finisce nel sangue',
+          f:[{piu:true, r:'nel 1672 la folla', n:'Linciа i fratelli De Witt', d:'l\'anno del disastro: la repubblica invasa e il suo capo fatto a pezzi'}]}
+       ]},
+
+      {r:'si regge su', n:'Un\'economia costruita dal nulla', d:'un paese senza risorse che diventa il piu ricco d\'Europa',
+       f:[
+         {r:'comincia dalla', n:'Pesca dell\'aringa', d:'salatura a bordo: la prima industria di trasformazione su scala'},
+         {r:'e dal', n:'Fluyt', d:'nave da carico economica, con poco equipaggio: abbassa il prezzo del trasporto'},
+         {r:'domina il', n:'Commercio baltico', d:'grano e legname dal Nord: lo chiamano il commercio madre, e alimenta tutto il resto'},
+         {r:'con le compagnie', n:'Delle Indie orientali e occidentali', d:'monopoli statali armati, con eserciti e diritto di far guerra'},
+         {r:'e strappa terra al mare con i', n:'Polder', d:'mulini a vento che prosciugano: si fabbrica il territorio che non si ha',
+          f:[{piu:true, r:'ottenendo il tasso di', n:'Urbanizzazione piu alto d\'Europa', d:'oltre un terzo della popolazione vive in citta'}]}
+       ]},
+
+      {r:'ha una societa', n:'Larga nel mezzo', d:'e questo la rende diversa da tutte le altre',
+       f:[
+         {r:'comandano i', n:'Regenten', d:'famiglie di mercanti che occupano le cariche: un\'oligarchia, non una nobilta'},
+         {r:'ma esiste un', n:'Ceto medio numeroso', d:'artigiani, bottegai, capitani: nessun altro paese ne ha uno simile'},
+         {r:'i viaggiatori si stupiscono del', n:'Lavoro delle donne', d:'gestiscono botteghe e conti, e girano da sole per le citta'},
+         {r:'l\'assistenza ai poveri e', n:'Organizzata dalle citta', d:'orfanotrofi, ospizi, distribuzioni: e un vanto civico'},
+         {r:'e nelle campagne', n:'Non c\'e servitu', d:'i contadini olandesi sono affittuari liberi: una rarita in Europa'},
+         {piu:true, r:'e gli stranieri notano', n:'La pulizia ossessiva delle case', d:'e un tratto che colpisce tutti i viaggiatori, e diventa un segno di identita civica'},
+         {r:'e si legge molto', n:'Anche fra gli artigiani', d:'alfabetizzazione altissima, giornali, pamphlet, mappe'}
+       ]},
+
+      {r:'produce', n:'Una cultura visiva e critica', d:'quadri nelle case comuni e libri che altrove sarebbero bruciati',
+       f:[
+         {r:'la pittura esce dalle chiese ed entra nel', n:'Mercato', d:'quadri comprati da artigiani e contadini benestanti, a prezzi bassi'},
+         {r:'con generi nuovi', n:'Paesaggi, interni, nature morte', d:'la vita ordinaria diventa degna di essere dipinta',
+          f:[{r:'da', n:'Rembrandt e Vermeer', d:'e da centinaia di pittori che vivono di committenza privata'}]},
+         {r:'le stamperie pubblicano', n:'Cio che altrove e proibito', d:'e diventa un\'industria di esportazione'},
+         {r:'si producono', n:'Carte nautiche e atlanti', d:'Amsterdam stampa le mappe che tutte le marine europee usano'},
+         {piu:true, r:'e si sviluppa', n:'La microscopia', d:'con Leeuwenhoek, mercante di stoffe, che per primo vede i microrganismi'},
+         {r:'l\'universita di', n:'Leida', d:'attira studenti da tutta Europa, anche non calvinisti'},
+         {r:'e ci lavorano', n:'Cartesio e Spinoza', d:'il primo ci vive vent\'anni, il secondo ci nasce e ci pubblica',
+          f:[{piu:true, r:'e Locke ci scrive', n:'La lettera sulla tolleranza', d:'da esule, guardando come funzionava sul posto'}]}
+       ]},
+
+      {r:'ma ha', n:'Confini precisi', d:'e vanno guardati, perche il modello si giudica da li',
+       f:[
+         {r:'la chiesa pubblica e', n:'Solo quella calvinista', d:'le cariche sono riservate ai suoi membri'},
+         {r:'gli altri culti sono', n:'Tollerati ma invisibili', d:'permessi in privato, vietati in pubblico',
+          f:[{r:'da cui le', n:'Chiese nascoste', d:'edifici che fuori sembrano case e dentro sono chiese con gallerie e organo'}]},
+         {r:'e nel 1656 la comunita ebraica', n:'Scomunica Spinoza', d:'con una formula durissima: chi e stato accolto sorveglia se stesso'},
+         {r:'nelle colonie la compagnia', n:'Distrugge le isole Banda', d:'1621: la popolazione eliminata o deportata per il monopolio della noce moscata'},
+         {r:'e la compagnia occidentale', n:'Trasporta schiavi', d:'per decenni fra i maggiori operatori della tratta atlantica',
+          f:[{piu:true, r:'cosi la tolleranza si ferma', n:'Al confine della repubblica', d:'vale in casa, e non oltre'}]}
+       ]}
+    ],
+    incroci:[
+      {da:'Pagare regolarmente le truppe', a:'Vivono sul territorio', r:'e la ragione per cui gli eserciti',
+       perche:'Il saccheggio non e indisciplina: e il modo in cui la guerra si finanzia quando lo Stato non riesce a pagare. È lo stesso meccanismo che rende cosi importante il costo del debito — chi ottiene denaro a poco prezzo puo pagare i soldati, e chi non ci riesce scarica il costo sui civili.'},
+      {da:'Fuggono nei boschi', a:'Fra un quinto e un terzo', r:'e una delle cause principali delle perdite stimate',
+       perche:'A uccidere non sono soprattutto le armi ma la sequenza requisizione-fuga-raccolto perduto-fame-epidemia. Chi scappa salva la vita quel giorno e perde la semina: le grandi mortalita della guerra dei Trent\'anni sono in larga parte mortalita da carestia e da tifo.'},
+      {da:'Anche se Dio non esistesse', a:'Tollerati ma invisibili', r:'e lo stesso bisogno pratico che produce culti',
+       perche:'Grozio cerca regole valide fra popoli che non condividono la fede, perche in un\'Europa spaccata nessun fondamento religioso puo piu essere comune. La tolleranza olandese risponde allo stesso problema con una soluzione pratica invece che teorica: non si cerca un accordo sulla verita, si separa cio che e pubblico da cio che non lo e.'},
+      {da:'Commercio baltico', a:'Fluyt', r:'e reso possibile dal',
+       perche:'Trasportare grano e legname su lunghe distanze conviene solo se il nolo e bassissimo. Il fluyt, scafo capace e disarmato con equipaggio ridotto, abbassa il costo al punto da rendere redditizio spostare merci pesanti e poco preziose. La ricchezza olandese nasce da un\'innovazione tecnica sul trasporto, non da un prodotto.'},
+      {da:'Cio che altrove e proibito', a:'Cartesio e Spinoza', r:'e cio che attira autori come',
+       perche:'Cartesio pubblica in Olanda perche puo, Spinoza vi pubblica anonimo perche altrove sarebbe impensabile, Locke vi scrive da esule. La stampa senza censura preventiva non e un dettaglio: e la ragione per cui buona parte della filosofia moderna esce da un paese di due milioni di abitanti.'},
+      {da:'Scomunica Spinoza', a:'Tollerati ma invisibili', r:'si spiega con la condizione di chi e',
+       perche:'La comunita sefardita era stata accolta ad Amsterdam a condizione di non dare scandalo. Un suo membro che nega l\'immortalita dell\'anima mette a rischio quell\'ospitalita: la durezza del provvedimento nasce dalla paura di perdere il permesso di esistere. Chi e stato tollerato non diventa automaticamente tollerante.'},
+      {da:'Al confine della repubblica', a:'Delle Indie orientali e occidentali', r:'e cio che mostrano le compagnie',
+       perche:'La stessa societa che ospita eretici ed ebrei extermina la popolazione delle Banda e trasporta schiavi. Non e ipocrisia: e la prova che quella tolleranza era un accordo interno fra chi doveva convivere e commerciare, non un principio sulla dignita delle persone. Fuori da quel perimetro non valeva.'},
+      {da:'Ceto medio numeroso', a:'Mercato', r:'e cio che crea il',
+       perche:'I quadri olandesi sono piccoli, di soggetto ordinario e a basso prezzo perche vengono comprati da artigiani e bottegai, non da principi. Il genere pittorico piu ammirato d\'Europa nasce da una struttura sociale: dove esiste un ceto medio largo, l\'arte cambia formato, soggetto e committente.'},
+      {da:'Province', a:'Cambiano di continuo', r:'rende la repubblica lenta quanto gli schieramenti che',
+       perche:'Un sistema in cui ogni provincia deve approvare e i delegati sono vincolati dalle istruzioni di casa e lentissimo. In cambio, chi presta denaro sa che l\'impegno e stato approvato da chi paga le imposte. La lentezza istituzionale e il prezzo della credibilita finanziaria.'},
+      {da:'Il mare libero', a:'Distrugge le isole Banda', r:'e la stessa dottrina che accompagna chi',
+       perche:'Grozio sostiene che l\'oceano non puo essere proprieta di nessuno — tesi giusta e utilissima contro il monopolio portoghese. La stessa compagnia che se ne avvantaggia impone poi con le armi il proprio monopolio sulle spezie. I principi universali vengono invocati soprattutto quando si e i piu deboli in un mercato.'},
+      {da:'Le miserie della guerra', a:'L\'amnistia e l\'oblio', r:'sono cio che i trattati decidono di coprire con',
+       perche:'Vestfalia stabilisce che di cio che e stato fatto non si chieda conto: e la condizione per far cessare i combattimenti, e insieme una rinuncia alla giustizia. Le immagini di Callot restano come cio che nessun trattato ha giudicato — un problema che tornera identico dopo ogni guerra moderna.'},
+      {da:'Polder', a:'Urbanizzazione piu alto d\'Europa', r:'contribuisce al fatto che si raggiunga il tasso di',
+       perche:'Prosciugare terra richiede capitali, competenze idrauliche e amministrazioni locali capaci di coordinarsi per decenni. Le stesse strutture che governano l\'acqua governano le citta: la densita urbana olandese nasce anche dall\'abitudine, imposta dalla geografia, a decidere insieme cose costose.'},
+      {da:'Linciа i fratelli De Witt', a:'Regenten', r:'e la reazione violenta contro il potere dei',
+       perche:'Nel 1672 la repubblica e invasa e la folla incolpa il ceto mercantile di aver trascurato l\'esercito per non aumentare le imposte. Il linciaggio del Gran Pensionario mostra il limite di un\'oligarchia efficiente e ristretta: funziona finche le cose vanno bene, e non ha alcuna legittimita da spendere quando vanno male.'}
+    ]
+  },
+  provocazione: {
+    titolo:'La chiesa che non si vede',
+    durata:'55 minuti',
+    domandaMadre:'La tolleranza e un principio o un accordo conveniente?',
+    perche:'Nell\'Olanda del Seicento i cattolici potevano celebrare messa purche l\'edificio, da fuori, sembrasse una casa: nacquero cosi le chiese nascoste, che tutti conoscevano e nessuno chiudeva. La classe deve capire che quella tolleranza — la piu avanzata d\'Europa, quella che ospita Cartesio, Spinoza e Locke — non nasce da un principio sulla dignita della coscienza ma da un calcolo commerciale, e che questo ne spiega insieme la forza e i confini. Il colpo di scena sono i due luoghi in cui si ferma: la comunita ebraica accolta perche perseguitata che scomunica Spinoza, e la compagnia delle Indie che nel 1621 elimina la popolazione delle Banda. La tolleranza come accordo funziona anche fra chi si detesta, e vale finche conviene.',
+    occorrente:'Niente. Se hai modo di proiettare una fotografia di una schuilkerk di Amsterdam, l\'aggancio guadagna molto.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'Amsterdam, su un canale del centro.\n\nUna casa stretta di mattoni,\ncome le altre.\nPorta normale, finestre normali,\nnessuna insegna.\n\nDentro, occupando i tre piani superiori\ndi tre case unite,\nc\'e una chiesa cattolica:\naltare, organo,\ndue ordini di gallerie,\nposto per centocinquanta persone.\n\nFu costruita nel 1663.\n\nIl culto cattolico\nera vietato in pubblico.\n\nLe autorita sapevano.\nI vicini sapevano.\nNessuno la chiuse\nper duecento anni.',
+       parlato:'Descrivi l\'edificio prima di dire che cos\'e, e poi lascia il contrasto in piedi.\n\nAggiungi il dettaglio che colpisce: chiese come questa erano decine, in tutte le citta olandesi, e in molti casi il parroco pagava una somma regolare allo sceriffo perche non se ne accorgesse. Un divieto formale, un permesso reale, una tariffa in mezzo.\n\nPoi la domanda: questa e tolleranza?\n\nRaccogli le prime reazioni, che sono quasi sempre negative — sembra ipocrisia. Non correggerle: sono la prima opzione dello schieramento.\n\nSe serve una spinta, aggiungi il contesto: nello stesso decennio, in Francia si preparava la revoca dell\'editto di Nantes; in Spagna funzionava l\'Inquisizione; in Inghilterra i cattolici erano esclusi per legge dalle cariche. L\'Olanda era il posto piu libero d\'Europa.',
+       seDicono:[
+         {loro:'«Se dovevano nascondersi, non erano liberi.»',
+          tu:'Non erano uguali, ed e diverso. Potevano pregare, sposarsi, avere un prete, e nessuno li arrestava. Non potevano avere una chiesa visibile ne una carica pubblica. Tienila come definizione di lavoro: quella era la forma concreta della tolleranza piu avanzata del secolo.'},
+         {loro:'«Pagavano una tangente allo sceriffo.»',
+          tu:'Sì, ed e il particolare piu istruttivo di tutta la faccenda. Un sistema in cui la trasgressione ha un prezzo fisso e prevedibile non e un sistema che reprime: e un sistema che regola. Brutto da guardare, e per chi ci viveva era enormemente meglio del rogo.'}
+       ]},
+
+      {minuti:'8–17', et:'La fonte',
+       schermo:'Unione di Utrecht, 1579.\nÈ un patto militare\nfra province in guerra\ncontro la Spagna.\n\nArticolo tredicesimo:\n\nciascuna provincia regoli da se\nla questione religiosa;\n\ne nessuno sia perseguitato\no interrogato\na causa della propria religione.\n\nTre domande su questo testo.\n\nChi l\'ha scritto, e per risolvere\nquale problema?\n\nChe cosa ammette senza volerlo?\n\nChe cosa non dice?',
+       testo:{fonte:'Unione di Utrecht, 23 gennaio 1579, articolo XIII',
+              glossa:'Il documento va dato alla classe come si da un indizio, prima di raccontare come funzionava davvero la societa olandese. Contiene tutte e tre le risposte: nasce dentro un\'alleanza militare, ammette che il fronte interno era il vero rischio, e tace completamente sul culto pubblico — che e esattamente lo spazio in cui nasceranno le chiese nascoste.'},
+       parlato:'Non commentare: fai lavorare loro, in coppia, cinque minuti, e poi raccogli.\n\nSulla prima domanda arrivano quasi sempre: lo scrivono province in guerra, e serve a non litigare fra alleati. Fai notare che l\'alleanza comprendeva territori a maggioranza calvinista e zone con molti cattolici: senza quella clausola non avrebbe retto.\n\nSulla seconda e piu difficile, e va guidata. La clausola ammette, senza dirlo, che il pericolo piu grave non erano gli spagnoli ma la spaccatura interna. Quando un patto contiene una garanzia, quella garanzia dice di che cosa si aveva davvero paura.\n\nSulla terza sta la parte migliore. Il testo dice che nessuno puo essere perseguitato o interrogato per la propria religione. Non dice che si possa praticarla in pubblico. Non dice che si possa costruire una chiesa. Non dice che si possa accedere alle cariche.\n\nScrivi la distinzione alla lavagna e lasciala li: liberta di coscienza non e liberta di culto. La prima dice che nessuno puo chiederti che cosa credi. La seconda che puoi mostrarlo.\n\nL\'Olanda concede la prima e nega la seconda, e da quella distanza esatta nascono le case che dentro sono chiese.',
+       seDicono:[
+         {loro:'«Ma erano in guerra contro i cattolici spagnoli.»',
+          tu:'Proprio cosi, ed e il punto: la clausola serve a impedire che la guerra contro i cattolici di fuori diventi guerra contro i cattolici di casa, che erano moltissimi. Le tolleranze nascono quasi sempre cosi — non da simpatia, ma dal bisogno di non aprire un secondo fronte in casa propria.'},
+         {loro:'«Se non puoi mostrarla, che liberta e?»',
+          tu:'Poca, per noi. Nell\'Europa del 1579 la differenza fra poter essere interrogato sulla propria fede e non poterlo essere era molto concretamente la differenza fra la vita e la morte. Abituatevi a misurare le liberta storiche rispetto a cio che c\'era intorno, non rispetto a cio che abbiamo noi.'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'Che cosa produsse\nquesto accordo imperfetto.\n\nCartesio ci visse vent\'anni\ne vi scrisse quasi tutta la propria opera.\nDiceva di potervi vivere\nsolitario come in un deserto,\nin mezzo a un popolo\ntutto occupato nei propri affari.\n\nSpinoza vi nacque, vi lavoro\ncome molatore di lenti\ne vi pubblico —\nanonimo, e con un falso luogo di stampa.\n\nLocke vi scrisse da esule\nla Lettera sulla tolleranza.\n\nLe stamperie di Amsterdam\nvivevano stampando\ncio che era proibito altrove\ne rivendendolo in tutta Europa.\n\nUn paese di due milioni di abitanti\nospito buona parte\ndella filosofia moderna.',
+       parlato:'Elenca i nomi e poi fai notare la sproporzione: due milioni di abitanti, un territorio piu piccolo della Lombardia, meta del quale strappato al mare.\n\nPoi la parte utile: perche proprio li?\n\nNon perche gli olandesi amassero la filosofia. Perche mancava la censura preventiva — cioe l\'obbligo di un permesso prima di stampare — e perche il libro proibito era una merce d\'esportazione redditizia. La liberta di stampa nasce come settore economico.\n\nE aggiungi il dettaglio che rende tutto meno edificante e piu vero: Spinoza pubblico comunque anonimo, con un editore falso in copertina, e la sua opera principale usci solo dopo la morte. Perfino li c\'erano cose che non si potevano firmare.\n\nDomanda per la classe: una liberta che nasce perche conviene a qualcuno e meno solida di una fondata su un principio?',
+       seDicono:[
+         {loro:'«Se Spinoza doveva restare anonimo, non c\'era libertà.»',
+          tu:'Ce n\'era piu che altrove, e non abbastanza. Vale la pena abituarsi a questo tipo di giudizio: quasi tutte le liberta storiche sono parziali, e valutarle come tutto-o-niente impedisce di capire come si sono allargate.'}
+       ]},
+
+      {minuti:'28–38', et:'La seconda fonte',
+       schermo:'Il documento del 1579\nera una legge.\nAdesso una testimonianza,\ndi cinquant\'anni dopo.\n\nCartesio, che ad Amsterdam\nci vive, scrive a un amico\nrimasto in Francia.\n\nDice che li tutti,\ntranne lui,\nsono occupati nei propri commerci;\n\nche ciascuno bada cosi tanto\nal proprio profitto\nche lui potrebbe viverci\ntutta la vita\nsenza essere mai notato\nda nessuno;\n\ne che puo passeggiare\nin mezzo alla folla\ncon la stessa liberta\ncon cui altrove\ncamminerebbe in un bosco deserto.\n\nLa legge diceva una cosa.\nQuesta ne dice un\'altra.\nSono compatibili?',
+       testo:{fonte:'Cartesio, lettera a Guez de Balzac, 5 maggio 1631',
+              glossa:'Le due fonti vanno lette insieme perche misurano cose diverse: la prima dice che cosa era permesso, la seconda che cosa era possibile. Cartesio non parla di diritti — parla di indifferenza. Una societa presa dai propri affari lascia in pace chi pensa cose strane, ed e una forma di liberta meno nobile e piu affidabile di quella concessa da un protettore.'},
+       parlato:'Fai il confronto esplicito, perche e l\'esercizio della lezione: la legge stabilisce che cosa e permesso, la lettera racconta che cosa succedeva davvero. Non si contraddicono — si completano, e nessuna delle due basta da sola.\n\nPoi fai notare la parola che Cartesio non usa mai: diritto. Non dice che ad Amsterdam ci sia la liberta di pensiero. Dice che nessuno lo guarda. La sua liberta non e riconosciuta, e semplicemente disponibile perche agli altri non interessa.\n\nDomanda utile: e meglio una liberta concessa o una liberta di cui nessuno si accorge?\n\nRaccogli le risposte e poi da\' l\'elemento che decide. Una liberta concessa puo essere revocata da chi l\'ha concessa. Una liberta che dipende dall\'indifferenza dura finche dura l\'indifferenza — e finisce nel momento in cui qualcuno decide che quel che fai lo riguarda.\n\nPoi il dato che completa il quadro e va detto: nemmeno li si poteva tutto. Spinoza pubblico anonimo, con un falso luogo di stampa in copertina, e la sua opera principale usci solo dopo la morte.',
+       seDicono:[
+         {loro:'«Se Spinoza doveva nascondersi, non c\'era libertà.»',
+          tu:'Ce n\'era piu che altrove e non abbastanza. Vale la pena abituarsi a questo tipo di giudizio: quasi tutte le liberta storiche sono parziali, e valutarle come tutto-o-niente impedisce di capire come si sono allargate.'},
+         {loro:'«Cartesio era straniero e ricco: per lui era facile.»',
+          tu:'Osservazione ottima, e va sempre fatta su una testimonianza. Chi scrive e un gentiluomo francese con una rendita, che sceglie di stare li. La sua libertà non ci dice quasi nulla di quella di un artigiano cattolico di Utrecht. Una fonte va sempre pesata insieme a chi la scrive.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'Due luoghi in cui\nquesta tolleranza si ferma.\n\nPrimo. Amsterdam, 1656.\nLa comunita ebraica sefardita —\naccolta li perche cacciata\ndalla penisola iberica —\nscomunica un proprio membro\ndi ventitre anni\ncon una formula durissima:\nnessuno gli parli,\nnessuno stia sotto lo stesso tetto,\nnessuno legga cio che scrive.\n\nSi chiamava Baruch Spinoza.\n\nSecondo. Isole Banda, 1621.\nLa compagnia olandese delle Indie\nvuole il monopolio della noce moscata.\nLa popolazione locale —\nintorno alle quindicimila persone —\nviene in gran parte uccisa,\ndeportata o lasciata morire di fame.\n\nGli stessi anni.\nLa stessa repubblica.',
+       parlato:'Dai i due fatti separatamente, con una pausa in mezzo, e non commentarli subito.\n\nPoi lavora sul primo, che e il piu sottile. Chiedi: perche una comunita perseguitata, appena accolta, e cosi dura con uno dei suoi?\n\nGuidali alla risposta, che e la parte migliore dell\'ora. Perche l\'accoglienza era condizionata al non dare scandalo. Un membro che nega l\'immortalita dell\'anima mette a rischio il permesso di esistere dell\'intera comunita. Chi e ospitato sorveglia se stesso piu severamente di quanto lo sorveglierebbe l\'ospite.\n\nLa formula da portare a casa: essere stati tollerati non rende tolleranti. Semmai il contrario, finche la propria posizione resta precaria.\n\nPoi il secondo fatto, e qui va detto in modo netto. La tolleranza olandese era un accordo fra persone che dovevano convivere e commerciare nello stesso spazio. Alle Banda non c\'era nessun accordo da rispettare: c\'era un monopolio da ottenere. Non e ipocrisia — e la dimostrazione che si trattava di un patto e non di un principio, perche un principio non ha confini geografici e un patto si.',
+       seDicono:[
+         {loro:'«Allora la tolleranza olandese e una bugia.»',
+          tu:'No: era reale, e migliorava concretamente la vita di centinaia di migliaia di persone. Semplicemente non era cio che noi intendiamo con quella parola. Chiamarla bugia ci fa perdere l\'informazione utile, che e come funzionano gli accordi di convivenza quando reggono davvero.'},
+         {loro:'«Noi oggi non facciamo cose del genere.»',
+          tu:'Rifai la domanda in modo piu difficile: le regole che consideriamo intoccabili valgono anche per chi sta fuori dai nostri confini e non puo farci nulla? Non ti chiedo di rispondere adesso. Ti chiedo di non dare per scontata la risposta.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'Due modi di fondare\nla convivenza.\n\nSul principio:\nogni persona ha diritto\nalla propria coscienza.\nSolido, e richiede\nche tutti ci credano.\n\nSull\'accordo:\nci conviene lasciarci in pace.\nFunziona anche fra chi si detesta,\ne non chiede a nessuno\ndi cambiare idea.\n\nMa vale finche conviene.\nE si ferma dove finisce l\'interesse.\n\nUltima domanda,\ne non e retorica:\n\nla vostra tolleranza\ne un principio o un accordo?\n\nCome fareste a saperlo?',
+       parlato:'Rifai la conta iniziale e commenta lo spostamento, che di solito e ampio.\n\nPoi metti in chiaro il bilancio, senza scegliere per loro. La tolleranza come accordo ha prodotto in Olanda risultati che nessun principio proclamato altrove aveva prodotto: nessun rogo, nessuna inquisizione, e la maggiore concentrazione di pensiero libero d\'Europa. Ha anche prodotto le Banda.\n\nSull\'ultima domanda da\' loro il criterio, che e l\'unica cosa concreta di questa lezione: non lo sapete finche tollerare vi conviene. Si scopre il giorno in cui smette di convenire — quando chi tollerate diventa scomodo, numeroso, sgradevole, o quando nessuno vi guarda. Fino a quel giorno le due cose sono indistinguibili dall\'esterno, e anche da dentro.\n\nChiudi con la cosa che apre il seguito. Nel secolo successivo qualcuno provera a fondare la tolleranza su un principio invece che sul commercio, e a estenderla oltre i propri confini. Si chiamera Illuminismo, e vedremo dove riesce e dove fa esattamente la stessa cosa che abbiamo visto oggi.',
+       seDicono:[
+         {loro:'«Meglio un principio, allora.»',
+          tu:'Piu solido, se regge. Ma nota che i principi hanno un difetto specifico: chi non ci crede non e obbligato da niente, e chi ci crede troppo tende a imporli. Gli accordi sono piu miseri e piu robusti. La combinazione migliore, quando capita, e un principio scritto in una legge che conviene a tutti rispettare.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'Trenta fughe in trent\'anni',
+       corpo:'Hans Heberle era un calzolaio di un villaggio vicino a Ulm. Durante la guerra dei Trent\'anni tenne un quaderno in cui annotava, fra le altre cose, ogni volta che lui e la sua famiglia dovettero abbandonare la casa e rifugiarsi dentro le mura della citta.\n\nContò trenta fughe.\n\nRegistra anche i prezzi del grano, le comete, i morti del villaggio, il tempo atmosferico. Non parla quasi mai di religione, e non si schiera.',
+       chiedi:'Le fonti dei protagonisti raccontano strategie e trattati; quelle come questa contano le fughe e i prezzi del pane. Che cosa cambia in ciò che sappiamo di una guerra, a seconda di chi ne ha lasciato memoria scritta? E chi, nelle guerre di oggi, non lascia memoria?'},
+      {titolo:'Anche se Dio non esistesse',
+       corpo:'Nel 1625 Ugo Grozio scrive che i principi del diritto naturale avrebbero un qualche valore anche se si concedesse — cosa che non si può concedere senza gravissima colpa — che Dio non esista o non si curi delle cose umane.\n\nÈ un\'ipotesi che l\'autore dichiara empia e che usa comunque, perché gli serve fondare regole valide fra Stati che non condividono più la stessa fede.\n\nDa questa mossa nasce l\'idea di un diritto internazionale.',
+       chiedi:'Un giurista credente costruisce un fondamento che funziona anche senza Dio, per poter parlare con chi non crede come lui. È un cedimento o un\'operazione necessaria? E che cosa si guadagna e che cosa si perde, a cercare fondamenti che valgano per tutti?'},
+      {titolo:'Quadri in casa del fabbro',
+       corpo:'I viaggiatori stranieri che visitavano l\'Olanda del Seicento notavano con stupore che quadri dipinti a olio si trovavano nelle case di artigiani, bottegai e perfino contadini benestanti.\n\nSi vendevano nelle fiere e nelle botteghe, a prezzi spesso paragonabili a quelli di un mobile. I pittori erano centinaia, molti dipingevano un solo genere per tutta la vita, e la produzione complessiva del secolo viene stimata in milioni di opere.\n\nLa maggior parte non aveva committente: era fatta per il mercato.',
+       chiedi:'Che cosa cambia in un\'opera d\'arte quando è prodotta per un mercato anonimo invece che per un committente preciso? E riconoscete lo stesso meccanismo in qualche forma di produzione culturale di oggi?'}
+    ],
+    testi:[
+      {fonte:'Cartesio, lettera a Guez de Balzac, 1631 — su Amsterdam',
+       corpo:'Descrive una citta dove tutti, tranne lui, sono occupati nei propri commerci, e dove ciascuno bada cosi tanto al proprio profitto da permettergli di vivervi tutta la vita senza essere mai notato da nessuno; e osserva di potervi passeggiare fra la folla con la stessa liberta con cui altrove si camminerebbe in un bosco solitario.',
+       glossa:'È la migliore descrizione di che cosa offrisse davvero l\'Olanda a un intellettuale: non l\'approvazione, ma l\'indifferenza. Una societa presa dai propri affari lascia in pace chi pensa cose strane — ed e una forma di liberta meno nobile e piu affidabile di quella concessa da un protettore.'},
+      {fonte:'Scomunica di Baruch Spinoza, Amsterdam, 27 luglio 1656',
+       corpo:'Il provvedimento della comunita portoghese dispone che Spinoza sia espulso dal popolo d\'Israele, e ordina che nessuno comunichi con lui per iscritto o a voce, nessuno gli usi alcun favore, nessuno stia con lui sotto lo stesso tetto o a meno di quattro cubiti, e nessuno legga nulla di ciò che egli abbia composto.',
+       glossa:'Va notato chi lo firma: non un tribunale ecclesiastico cristiano, ma i capi di una comunita perseguitata da poco accolta. La durezza si spiega con la precarieta — dare scandalo poteva costare a tutti il permesso di restare. Il testo è utile per discutere che cosa fa una minoranza quando teme di perdere l\'ospitalita.'},
+      {fonte:'Relazione sulla conquista delle isole Banda, 1621',
+       corpo:'Le fonti della compagnia registrano la spedizione punitiva contro gli abitanti delle Banda, accusati di aver venduto spezie a mercanti diversi da quelli autorizzati: la popolazione fu uccisa, ridotta in schiavitù o deportata, e le isole ripopolate con lavoratori schiavizzati messi a coltivare la noce moscata per conto della compagnia.',
+       glossa:'Da mettere accanto ai testi sulla tolleranza, nella stessa lezione e senza attenuazioni. Non serve a squalificare l\'esperienza olandese: serve a stabilire di che cosa si parla quando si dice tolleranza — un accordo fra chi condivide uno spazio, che alle Banda semplicemente non esisteva.'}
+    ],
+    compito:'Mezza pagina. Individuate una persona o un gruppo che nel vostro ambiente viene «tollerato» — cioè lasciato in pace ma non davvero accolto. Descrivete a quali condizioni implicite avviene: che cosa quella persona deve evitare di fare o di mostrare perché la cosa continui a funzionare. Poi rispondete: che cosa dovrebbe succedere perché quelle condizioni saltassero?',
+    fonti:[
+      'Unione di Utrecht (1579), art. XIII; Ugo Grozio, De iure belli ac pacis (1625) e Mare liberum (1609)',
+      'Testo del cherem contro Spinoza (1656); Cartesio, lettere dall\'Olanda; Locke, Epistola de tolerantia (1689)',
+      'Grimmelshausen, L\'avventuroso Simplicissimus; Jacques Callot, Les Grandes Misères de la guerre (1633)',
+      'S. Schama, Il disagio dell\'abbondanza. La cultura olandese dell\'epoca d\'oro',
+      'J. Israel, La Repubblica olandese; L\'Illuminismo radicale',
+      'P. Wilson, La guerra dei Trent\'anni. Una tragedia europea'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',

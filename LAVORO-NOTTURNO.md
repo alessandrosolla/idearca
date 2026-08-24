@@ -164,7 +164,7 @@ Si va in ordine di programma. Restano:
 - [x] Storia moderna · 2 — Riforma e Controriforma
 - [x] Storia moderna · 3 — Economia, guerre e il declino spagnolo
 - [x] Storia moderna · 4 — La crisi del Seicento e la rivoluzione scientifica
-- [ ] Storia moderna · 5 — La guerra dei Trent'anni e l'Olanda
+- [x] Storia moderna · 5 — La guerra dei Trent'anni e l'Olanda
 - [ ] Storia moderna · 6 — Rivoluzioni inglesi e assolutismi
 - [ ] Storia moderna · 7 — L'Europa nel primo Settecento
 - [ ] Storia moderna · 8 — La civiltà dei Lumi
@@ -264,3 +264,28 @@ provocazione nella **forma breve** (cinque schermate e una nota, ~250
 parole) e la mappa senza `piu` e senza `incroci`. Vanno rifatti da
 zero nella forma nuova, ma **per ultimi**: prima i 110 che non
 esistono.
+
+## Storia: niente schieramento (deciso il 24 agosto 2026)
+
+Nelle provocazioni di **storia** il blocco 8–17 NON è più lo schieramento
+con due opzioni. Lo schieramento è un dispositivo filosofico: chiedere di
+prendere posizione ha senso su un problema morale o teorico, non su un
+fatto storico, dove la domanda giusta è come è andata e come lo sappiamo.
+
+Struttura dei sei tempi per storia:
+
+    0–8    L'aggancio          — il fatto che non torna
+    8–17   La fonte            — un documento, e tre domande:
+                                 chi l'ha scritto e per risolvere quale problema?
+                                 che cosa ammette senza volerlo?
+                                 che cosa non dice?
+    17–28  La complicazione    — il meccanismo
+    28–38  La seconda fonte    — un documento che dice altro; si tengono insieme
+    38–47  Il colpo di scena
+    47–55  Il ritorno
+
+Niente campo `opzioni` nei capitoli di storia. In **filosofia** lo
+schieramento resta: lì serve.
+
+Gli arretrati di storia si rifanno **solo dove lo schieramento pesa di più**,
+non tutti.
