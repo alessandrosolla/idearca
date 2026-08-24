@@ -3385,6 +3385,228 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Storia medievale · 3 — Le crociate': {
+  mappa: {
+    n:'Le crociate', d:'1095-1291: duecento anni, e non una sola causa',
+    f:[
+      {r:'nasce da', n:'Molte premesse insieme', d:'nessuna delle quali, da sola, basta',
+       f:[
+         {r:'in Oriente', n:'Manzikert 1071', d:'i Turchi Selgiuchidi distruggono l\'esercito bizantino e prendono l\'Anatolia',
+          f:[{r:'quindi', n:'Alessio I chiede aiuto', d:'l\'imperatore bizantino domanda mercenari, non un\'invasione'},
+             {piu:true, r:'e otterra', n:'Molto piu di quanto voleva', d:'e se ne pentira presto'}]},
+         {r:'in Occidente', n:'Una cavalleria in eccesso', d:'troppi guerrieri, poche terre da spartire',
+          f:[{r:'perche vige', n:'La primogenitura', d:'il feudo va al primo figlio: gli altri restano senza'}]},
+         {r:'la Chiesa cercava di', n:'Contenere la violenza', d:'con la Pace e la Tregua di Dio',
+          f:[{r:'vietando di combattere', n:'In certi giorni e su certe persone', d:'dal mercoledi sera al lunedi, e mai su chierici e contadini'},
+             {r:'ma', n:'Funzionava a meta', d:'e il problema restava: che cosa fare di migliaia di uomini armati'}]},
+         {r:'e il papato', n:'Esce dalla lotta per le investiture', d:'con un\'autorita nuova e la voglia di guidare l\'Occidente'},
+         {piu:true, r:'c\'era gia', n:'La reconquista spagnola', d:'e nel 1064 la spedizione di Barbastro: il modello esisteva'}
+       ]},
+
+      {r:'comincia a', n:'Clermont 1095', d:'27 novembre: il discorso di Urbano II',
+       f:[
+         {r:'promette', n:'L\'indulgenza', d:'chi parte per devozione, e non per gloria o denaro, e liberato dalla penitenza',
+          f:[{r:'ed e la novita', n:'La guerra diventa penitenza', d:'per la prima volta combattere non danna: salva'}]},
+         {r:'usa', n:'La croce cucita sulla veste', d:'da cui crux, croce: il nome viene dal gesto'},
+         {r:'e la folla risponde', n:'«Deus le volt»', d:'Dio lo vuole'},
+         {r:'ma il testo', n:'Non esiste', d:'ci sono cinque versioni del discorso, tutte scritte dopo',
+          f:[{r:'e tutte', n:'Dopo la presa di Gerusalemme', d:'chi le scrive sa gia come e finita'},
+             {piu:true, r:'la piu bellicosa', n:'È di Roberto il Monaco', d:'che scrive intorno al 1107, a dodici anni di distanza'}]}
+       ]},
+
+      {r:'coinvolge', n:'Chi non ci si aspetta', d:'non solo cavalieri',
+       f:[
+         {r:'parte prima', n:'La crociata dei poveri', d:'primavera 1096, guidata da Pietro l\'Eremita',
+          f:[{r:'e viene', n:'Annientata in Anatolia', d:'a Civetot, prima ancora di incontrare un vero esercito'}]},
+         {r:'e lascia dietro di se', n:'I massacri della Renania', d:'1096: le comunita ebraiche di Spira, Worms, Magonza, Colonia',
+          f:[{r:'guidati da', n:'Emicone di Flonheim', d:'e da bande che a Gerusalemme non arriveranno mai'},
+             {r:'mentre', n:'Alcuni vescovi tentano di proteggerle', d:'a Spira e a Colonia, con successo parziale'},
+             {piu:true, r:'le fonti', n:'Ebraiche e cristiane concordano', d:'e sono fra i pochi eventi su cui le due tradizioni non divergono'}]},
+         {r:'poi partono', n:'I grandi feudatari', d:'Goffredo di Buglione, Boemondo, Raimondo di Tolosa'},
+         {r:'e finanziano', n:'Genova, Pisa, Venezia', d:'trasporto e rifornimenti, in cambio di quartieri e franchigie nei porti'}
+       ]},
+
+      {r:'costa', n:'Un prezzo enorme', d:'e questo smonta molte spiegazioni facili',
+       f:[
+         {r:'il viaggio e di', n:'Oltre quattromila chilometri', d:'quasi tutti a piedi, in due o tre anni'},
+         {r:'la spesa equivale a', n:'Quattro o cinque anni di rendita', d:'per un cavaliere: si vende o si ipoteca tutto',
+          f:[{r:'esempio', n:'Goffredo cede Buglione', d:'impegna il proprio ducato al vescovo di Liegi per finanziarsi'}]},
+         {r:'la mortalita e', n:'Altissima', d:'le stime parlano di meta o piu dei partiti',
+          f:[{piu:true, r:'e ad Antiochia', n:'Si assedia mentre si e assediati', d:'fame, cannibalismo riferito dalle cronache, diserzioni'}]},
+         {r:'e chi torna', n:'Spesso torna piu povero', d:'la spiegazione «partirono per arricchirsi» regge male sui numeri'}
+       ]},
+
+      {r:'riesce', n:'Solo la prima volta', d:'ed e un caso quasi unico',
+       f:[
+         {r:'prende', n:'Nicea e Antiochia', d:'1097 e 1098, dopo assedi lunghissimi'},
+         {r:'e conquista', n:'Gerusalemme il 15 luglio 1099', d:'con un massacro che le cronache latine raccontano con orgoglio',
+          f:[{piu:true, r:'scrive un cronista', n:'«Si cavalcava nel sangue fino alle ginocchia»', d:'ed e un testimone dalla parte dei vincitori'}]},
+         {r:'fonda', n:'Quattro stati latini', d:'Edessa, Antiochia, Tripoli, il regno di Gerusalemme'},
+         {r:'perche vince?', n:'La divisione dei musulmani', d:'Selgiuchidi e Fatimidi in guerra fra loro: non c\'e un fronte unico'}
+       ]},
+
+      {r:'organizza', n:'Un mondo nuovo in Oriente', d:'e dura due secoli',
+       f:[
+         {r:'nascono', n:'Gli ordini religioso-militari', d:'monaci e soldati insieme: una figura che prima non esisteva',
+          f:[{r:'i', n:'Templari', d:'fondati intorno al 1119: diventeranno anche i primi banchieri d\'Europa'},
+             {r:'gli', n:'Ospitalieri', d:'nati per curare i pellegrini, poi militari'},
+             {r:'i', n:'Teutonici', d:'che porteranno il modello nel Baltico'}]},
+         {r:'si stabilisce', n:'Una convivenza pratica', d:'i coloni imparano la lingua, commerciano, stipulano trattati',
+          f:[{piu:true, r:'lo nota', n:'Usama ibn Munqidh', d:'nobile siriano che descrive i Franchi con curiosita e ironia'}]},
+         {r:'e cresce', n:'Il commercio con l\'Oriente', d:'zucchero, spezie, cotone, seta: e le repubbliche marinare ci si installano'}
+       ]},
+
+      {r:'poi', n:'Perde tutto', d:'e ogni tentativo va peggio del precedente',
+       f:[
+         {r:'nel 1144', n:'Cade Edessa', d:'e la seconda crociata, guidata da re e imperatori, fallisce'},
+         {r:'nel 1187', n:'Hattin', d:'Saladino annienta l\'esercito del regno e riprende Gerusalemme',
+          f:[{r:'e concede', n:'Una resa senza massacro', d:'il confronto con il 1099 fara scuola nelle cronache di entrambe le parti'}]},
+         {r:'la terza', n:'Riporta solo la costa', d:'Riccardo Cuor di Leone e Saladino: tregua, e i pellegrini possono entrare'},
+         {r:'nel 1204', n:'La quarta saccheggia Costantinopoli', d:'la piu grande citta cristiana del mondo, presa da un esercito cristiano',
+          f:[{r:'perche', n:'Deviata dai debiti con Venezia', d:'l\'esercito non poteva pagare il trasporto e viene usato come merce di scambio'},
+             {r:'e provoca', n:'La frattura definitiva con l\'Oriente', d:'lo scisma del 1054 diventa irreparabile'}]},
+         {r:'nel 1291', n:'Cade San Giovanni d\'Acri', d:'e l\'ultima presenza latina in Terrasanta finisce'}
+       ]},
+
+      {r:'lascia', n:'Un bilancio complicato', d:'e una parola usata ancora oggi',
+       f:[
+         {r:'in economia', n:'Vincono le citta marinare', d:'Venezia e Genova escono dalle crociate come potenze mediterranee'},
+         {r:'in cultura', n:'Poco passa dalle crociate', d:'il grosso delle traduzioni arriva dalla Spagna e dalla Sicilia, non dalla guerra'},
+         {r:'in religione', n:'Nasce la guerra santa cristiana', d:'un\'idea che l\'Occidente non aveva e che non dimentichera'},
+         {r:'e il nome', n:'Arriva tardi', d:'«crociata» si diffonde secoli dopo i fatti',
+          f:[{r:'e nel mondo arabo', n:'Il concetto unitario e ottocentesco', d:'le fonti medievali parlano di Franchi, non di «crociati»',
+              f:[{piu:true, r:'la formula', n:'«Guerre della croce»', d:'al-hurub al-salibiyya, si afferma nel XIX secolo'}]}]},
+         {r:'e resta', n:'Una parola politica', d:'usata per secoli da tutte le parti, quasi sempre contro qualcuno'}
+       ]}
+    ],
+    incroci:[
+      {da:'La guerra diventa penitenza', a:'Contenere la violenza', r:'rovescia il problema di',
+       perche:'Per un secolo la Chiesa aveva detto ai cavalieri che uccidere danna, e aveva provato a limitarli con la Tregua di Dio senza riuscirci. Urbano II fa la mossa opposta: la stessa violenza, orientata altrove, diventa la via della salvezza. Non un divieto in piu — una destinazione.'},
+      {da:'La primogenitura', a:'I grandi feudatari', r:'spiega solo in parte la partenza dei',
+       perche:'I cadetti senza terra ci sono, ma a partire sono anche i primogeniti ricchissimi, che vendono o impegnano tutto. Se la causa fosse solo la fame di terra, i piu ricchi sarebbero rimasti a casa — e invece Goffredo cede il proprio ducato per finanziarsi.'},
+      {da:'Spesso torna piu povero', a:'Molte premesse insieme', r:'obbliga a tenere',
+       perche:'Il bilancio economico individuale e quasi sempre in perdita: la spiegazione per interesse non regge da sola. Ma nemmeno quella per pura fede spiega perche proprio allora. Le cause storiche di un fenomeno di massa sono quasi sempre piu di una, e agiscono insieme.'},
+      {da:'Alessio I chiede aiuto', a:'La quarta saccheggia Costantinopoli', r:'finisce, un secolo dopo, in',
+       perche:'Bisanzio aveva chiesto mercenari per riprendersi l\'Anatolia. Centonove anni dopo, un esercito crociato prende e saccheggia la sua capitale. È il rovesciamento piu completo che si possa immaginare fra una richiesta e il suo esito.'},
+      {da:'La divisione dei musulmani', a:'Hattin', r:'finisce quando arriva',
+       perche:'La prima crociata riesce perche Selgiuchidi e Fatimidi sono in guerra fra loro. Quando Saladino unifica Egitto e Siria, quel vantaggio sparisce: nel 1187 il regno di Gerusalemme viene distrutto in una sola giornata.'},
+      {da:'Deviata dai debiti con Venezia', a:'Genova, Pisa, Venezia', r:'e la conseguenza estrema del ruolo di',
+       perche:'Le citta marinare non partecipano per fede: vendono trasporto e credito. Quando nel 1202 l\'esercito non riesce a pagare il nolo, diventa esso stesso lo strumento con cui il creditore riscuote — e finisce a Costantinopoli invece che in Egitto.'},
+      {da:'I massacri della Renania', a:'La crociata dei poveri', r:'sono compiuti dalle stesse bande di',
+       perche:'Le prime vittime della crociata sono in Europa e sono ebrei, uccisi nella primavera del 1096 da gruppi che a Gerusalemme non arriveranno mai. La violenza non comincia in Terrasanta: comincia sulla strada, contro chi era a portata di mano.'},
+      {da:'Una resa senza massacro', a:'Gerusalemme il 15 luglio 1099', r:'viene contrapposta a',
+       perche:'Nel 1187 Saladino concede la resa e riscatti; nel 1099 le cronache latine descrivono il massacro con orgoglio. Il paragone circola gia allora nelle fonti delle due parti — ed e uno dei motivi per cui Saladino diventa una figura ammirata anche in Occidente.'},
+      {da:'Poco passa dalle crociate', a:'Il commercio con l\'Oriente', r:'contrasta con',
+       perche:'Duecento anni di guerra spostano merci, uomini e denaro molto piu che libri: zucchero, cotone e spezie arrivano davvero di qui, mentre Aristotele e la medicina araba passano da Toledo e dalla Sicilia. Lo scambio culturale e avvenuto dove si traduceva in pace, non dove si combatteva.'},
+      {da:'Non esiste', a:'«Deus le volt»', r:'rende incerta anche',
+       perche:'La frase piu famosa della prima crociata compare in cronache scritte dopo il 1099. Non e detto che sia falsa, ma nessuno l\'ha registrata mentre veniva gridata: e un ricordo costruito da chi conosceva gia il finale.'},
+      {da:'Il concetto unitario e ottocentesco', a:'Una parola politica', r:'e la premessa di',
+       perche:'Nel Medioevo arabo si parla di Franchi e di singole campagne, non di un evento unico chiamato «le crociate». La cornice unitaria si afferma nell\'Ottocento, in parte importata dall\'Europa — ed e quella che verra usata, dall\'una e dall\'altra parte, nella politica del Novecento.'},
+      {da:'Gli ordini religioso-militari', a:'La guerra diventa penitenza', r:'sono l\'istituzionalizzazione dell\'idea che',
+       perche:'Se combattere puo essere un atto religioso, allora si puo essere monaci e soldati insieme. I Templari sono la conseguenza logica dell\'indulgenza di Clermont — una figura che nel cristianesimo dei primi mille anni sarebbe stata una contraddizione.'}
+    ]
+  },
+  provocazione: {
+    titolo:'Perche sono partiti',
+    durata:'55 minuti',
+    domandaMadre:'Quando vi dicono che un fatto enorme ha una causa sola, che cosa dovreste chiedere?',
+    perche:'La classe spiega le crociate con l\'avidita — e la risposta che tutti danno — e poi si trova davanti ai conti: il viaggio costava quattro o cinque anni di rendita, la mortalita era enorme, e la maggior parte di chi tornava tornava piu povero. Smontata quella spiegazione, non si passa a quella opposta ma si scopre come funzionano davvero le cause storiche: nessuna basta, molte insieme spiegano. Il colpo di scena — i primi massacri avvengono in Europa contro gli ebrei, e la quarta crociata finisce contro la piu grande citta cristiana del mondo — impedisce ogni lettura consolatoria, da qualunque parte la si voglia prendere.',
+    occorrente:'Una cartina con il percorso da Clermont a Gerusalemme, se possibile.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'1096. Decine di migliaia di persone\npartono per Gerusalemme.\n\nOltre quattromila chilometri, quasi tutti a piedi.\nDue o tre anni di viaggio.\nStime prudenti: ne muore piu della meta.\n\nPer un cavaliere il costo equivale\na quattro o cinque anni di rendita:\nsi vende la terra, si impegna il castello.\n\nGoffredo di Buglione impegna il proprio ducato\nal vescovo di Liegi per potersi permettere la partenza.\n\nPerche?',
+       parlato:'Dai i numeri uno per volta, senza commentarli, e fermati sull\'ultimo: un duca che impegna il ducato per andarsene.\n\nPoi la domanda, secca. Raccogli le risposte a voce e prendine nota: usciranno quasi sempre per le ricchezze, per conquistare terre, per il commercio, per il potere del papa.\n\nNon correggere nessuno. Di\' solo: teniamo queste risposte, fra dieci minuti le mettiamo alla prova con i conti.\n\nSe qualcuno dice «per fede», annota anche quella: servira, ma non nel modo che si aspetta.',
+       seDicono:[
+         {loro:'«Per rubare: era una scusa per saccheggiare.»',
+          tu:'Tienila, e una risposta seria e la verificheremo. Comincia intanto a chiederti una cosa: se il tuo scopo e arricchirti, parti per un viaggio di tremila chilometri con meta probabilita di morire, o vai a saccheggiare il castello del tuo vicino a due giorni di cavallo?'},
+         {loro:'«Perche l\'ha detto il papa e la gente ubbidiva.»',
+          tu:'Il papa aveva appena passato vent\'anni a litigare con l\'imperatore, e meta dei vescovi tedeschi non lo riconosceva. L\'obbedienza automatica non c\'era. Che cosa ha detto, esattamente, per ottenere una risposta simile?'}
+       ]},
+
+      {minuti:'8–17', et:'Lo schieramento',
+       schermo:'Sono partiti:',
+       opzioni:['soprattutto per interesse', 'soprattutto per fede'],
+       parlato:'Fai schierare e conta. Di solito vince nettamente il primo gruppo, perche e la spiegazione che suona adulta e disincantata.\n\nAllora metti alla prova proprio quella, con tre fatti.\n\nPrimo: il bilancio individuale. La maggior parte di chi torna, torna piu povero di quando e partito. Chi resta in Oriente e una minoranza.\n\nSecondo: a partire non sono solo i cadetti senza terra. Partono anche primogeniti ricchissimi, che vendono o impegnano tutto. Se fosse fame di terra, i ricchi restavano.\n\nTerzo: esistevano modi molto piu semplici di arricchirsi con la violenza, e a molta minore distanza.\n\nPoi la domanda che riapre tutto: se non conveniva, perche partirono in decine di migliaia?',
+       seDicono:[
+         {loro:'«Allora era davvero solo fede.»',
+          tu:'Aspetta prima di ribaltare tutto. Se fosse solo fede, perche proprio nel 1096 e non cent\'anni prima? La fede c\'era anche allora. Serve qualcosa che spieghi il momento, non solo la disponibilita.'},
+         {loro:'«Erano ignoranti, si facevano manovrare.»',
+          tu:'È la spiegazione piu comoda e la meno utile: rende inutile capire. Prova a formulare la stessa cosa in modo che si possa verificare — che cosa gli era stato offerto, e perche quell\'offerta funzionava proprio su di loro?'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'Che cosa aveva offerto Urbano II.\n\nPer un secolo la Chiesa aveva ripetuto ai cavalieri\nche uccidere e peccato mortale,\ne aveva provato a limitarli con la Tregua di Dio:\nvietato combattere dal mercoledi sera al lunedi,\nvietato colpire chierici, contadini, mercanti.\n\nUn ceto intero addestrato a una cosa sola,\ne quella cosa lo dannava.\n\nA Clermont il papa capovolge il problema:\n\nchi parte per devozione\ne liberato dalla penitenza dei propri peccati.\n\nLa guerra, per la prima volta, non danna: salva.',
+       parlato:'Questo e il cuore dell\'ora e va costruito lentamente, perche e controintuitivo.\n\nFai vedere prima il problema dal punto di vista della Chiesa: migliaia di uomini armati, addestrati a combattere, senza guerre ufficiali e senza terre — e ogni loro violenza e un peccato da confessare. La Tregua di Dio e un tentativo di argine, e funziona a meta.\n\nPoi la mossa: invece di vietare, si offre una destinazione. Il mestiere delle armi diventa una via di salvezza.\n\nA questo punto la domanda che unisce i due schieramenti: e interesse o e fede? Nessuna delle due, e tutte e due. Un ceto che aveva un problema pratico — cosa fare della propria vita — riceve una risposta religiosa che risolve anche quello. Le cause non si sommano: si incastrano.\n\nSe c\'e tempo, aggiungi le altre tessere: Manzikert 1071 e la richiesta di aiuto di Bisanzio; un papato appena uscito rafforzato dalla lotta per le investiture; la Spagna dove il modello esisteva gia.',
+       seDicono:[
+         {loro:'«Quindi la Chiesa se li e tolti di torno.»',
+          tu:'È una lettura possibile e la fanno anche degli storici. Ma attenzione a trasformarla in un piano: nessuno a Clermont poteva prevedere quello che sarebbe successo. Le conseguenze utili non dimostrano che fossero l\'obiettivo.'},
+         {loro:'«Ma allora era una manipolazione.»',
+          tu:'Solo se pensi che chi parlava non credesse a quello che diceva. È molto piu probabile che ci credesse: e proprio per questo funzionava. Le cose piu efficaci raramente sono cinismo puro.'}
+       ]},
+
+      {minuti:'28–38', et:'Il testo',
+       schermo:'Il discorso di Clermont, nella versione\ndi Roberto il Monaco:\n\n«Chi qui e triste e povero, la sara ricco;\nchi qui e nemico del Signore,\nla ne diventera amico.\n\n[…] Prendete dunque la via del Santo Sepolcro,\nstrappate quella terra a una gente scellerata\ne sottomettetela a voi.»\n\nE la folla, secondo lui, rispose: «Dio lo vuole».\n\nUn dettaglio: questa versione e scritta\nintorno al 1107.\n\nDodici anni dopo il discorso.\nOtto anni dopo la presa di Gerusalemme.',
+       testo:{fonte:'Roberto il Monaco, Historia Iherosolimitana, circa 1107; il concilio e del novembre 1095',
+              glossa:'Del discorso di Clermont esistono cinque versioni, tutte scritte dopo il 1099. Nessuno ha preso appunti mentre Urbano parlava. Chi scrive conosce gia il finale — e un discorso raccontato da chi sa come e andata a finire tende ad assomigliare molto a quello che e successo.'},
+       parlato:'Leggi il passo e poi fai notare la prima riga, che e sorprendente: chi e povero qui sara ricco la. Il richiamo materiale c\'e, ed e messo per iscritto da un monaco.\n\nPoi la data, e lascia che faccia il suo effetto. Cinque versioni, tutte posteriori, nessun verbale. La piu bellicosa e anche fra le piu tarde.\n\nDomanda utile da fare: se doveste ricostruire che cosa ha detto davvero, come procedereste? Le risposte buone sono confrontare le versioni fra loro, cercare cio che hanno in comune, e diffidare dei dettagli che compaiono in una sola.\n\nÈ il mestiere dello storico spiegato in due minuti su un caso concreto.',
+       seDicono:[
+         {loro:'«Allora non sappiamo che cosa ha detto.»',
+          tu:'Sappiamo abbastanza: tutte le versioni concordano sull\'indulgenza e sull\'appello a partire. Sono i dettagli scenografici a essere incerti. Non sapere tutto non significa non sapere niente — ed e la differenza fra dubbio e scetticismo.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'Due fatti che stanno nelle stesse fonti.\n\nPRIMO. I primi massacri non avvengono in Terrasanta.\nAvvengono in Europa, nella primavera del 1096:\nle comunita ebraiche di Spira, Worms, Magonza, Colonia,\nassalite da bande in marcia verso Gerusalemme.\nMigliaia di morti. Alcuni vescovi tentano di proteggerle.\nQuelle bande a Gerusalemme non arriveranno mai.\n\nSECONDO. La quarta crociata, nel 1204,\nnon raggiunge mai la Terrasanta.\nSaccheggia Costantinopoli:\nla piu grande citta cristiana del mondo,\npresa da un esercito cristiano che non poteva\npagare il nolo delle navi veneziane.',
+       parlato:'Dai i due fatti senza aggiungere commenti morali: bastano da soli, e la classe li riceve meglio se non vengono accompagnati da un giudizio gia pronto.\n\nSul primo, il dettaglio che conta e che quelle bande non arrivano mai a destinazione: la violenza si scarica su chi e a portata di mano. E aggiungi che le fonti ebraiche e quelle cristiane, che divergono su quasi tutto, su questi fatti concordano.\n\nSul secondo, spiega il meccanismo: l\'esercito aveva ordinato a Venezia una flotta per un numero di uomini molto superiore a quello che si presento, non pote pagare, e per saldare il debito accetto prima di conquistare Zara — citta cristiana — e poi di deviare su Costantinopoli. Il papa scomunico i crociati, e poi si adatto al risultato.\n\nSe c\'e tempo, la terza cosa: nelle fonti arabe medievali non esiste un evento unico chiamato «le crociate». Si parla di Franchi e di singole campagne. La cornice unitaria, e la parola stessa, si affermano nell\'Ottocento — in parte importate dall\'Europa.',
+       seDicono:[
+         {loro:'«Allora erano ipocriti: dicevano fede e facevano stragi.»',
+          tu:'Alcuni si, altri no, e i piu erano tutte e due le cose. Guarda i vescovi di Spira e di Colonia, che rischiano per proteggere gli ebrei mentre altri li uccidono in nome della stessa fede. Un\'epoca non ha un carattere solo, e nemmeno un uomo.'},
+         {loro:'«Perche il papa non li ha fermati?»',
+          tu:'Ci ha provato piu volte, anche con la scomunica nel 1204, e non e servito. È un dato importante: una volta che un movimento di massa parte, chi lo ha chiamato non lo controlla piu. Vale per il 1096 e vale in generale.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'Torniamo alla domanda di partenza.\n\nPerche sono partiti?\n\nPer i cadetti senza terra.\nPer un ceto addestrato a combattere\na cui era stato detto che combattere danna.\nPer un\'indulgenza che capovolgeva quella condanna.\nPer una richiesta di aiuto da Bisanzio.\nPer un papato appena uscito rafforzato da vent\'anni di lotta.\nPer citta marinare che vendevano il trasporto.\nPer fede, davvero.\n\nSette risposte, e nessuna e quella giusta.\n\nUltima domanda, e vale per tutto l\'anno:\n\nquando qualcuno vi spiega un fatto enorme\ncon una causa sola,\nche cosa dovreste chiedergli?',
+       parlato:'Rifai la conta iniziale — interesse o fede — e mostra che ormai la domanda e mal posta. È il risultato migliore che l\'ora possa dare.\n\nPoi la conclusione di metodo, che e la cosa da portare a casa e va detta una volta sola: i fatti di massa hanno cause multiple che si incastrano, e una spiegazione con una causa sola e quasi sempre una spiegazione al servizio di qualcuno. Non e detto che sia falsa: e sicuramente insufficiente.\n\nE la domanda da fare: che cosa non spiega, la tua spiegazione? Perche proprio allora e non prima? Chi e rimasto fuori dal quadro?\n\nSe hai un minuto, chiudi con il dato sulla parola: «crociata» e una parola che non usavano loro, e nel mondo arabo la cornice unitaria e ottocentesca. Persino il nome con cui chiamiamo la cosa e stato deciso dopo, da qualcun altro, per un altro motivo.',
+       seDicono:[
+         {loro:'«Allora non si puo mai dire niente di sicuro sulla storia.»',
+          tu:'Si dicono moltissime cose sicure: la data di Clermont, i massacri della Renania, il saccheggio del 1204. Quello che non si puo fare e ridurre duecento anni a un movente. La storia e sicura sui fatti e prudente sulle cause: e una virtu, non un difetto.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'La crociata dei poveri',
+       corpo:'Prima che partano gli eserciti dei principi, nella primavera del 1096 si muove una folla disordinata guidata da predicatori popolari, fra cui Pietro l\'Eremita. Non hanno rifornimenti, non hanno comando, non hanno idea della distanza: le cronache raccontano che a ogni citta importante chiedessero se fosse Gerusalemme.\n\nAttraversano l\'Ungheria e i Balcani saccheggiando per mangiare, e a Costantinopoli Alessio I li fa traghettare in fretta in Asia per liberarsene.\n\nA Civetot, nell\'ottobre 1096, vengono annientati dai Turchi prima ancora di incontrare un vero esercito.',
+       chiedi:'Che cosa fa partire per tremila chilometri qualcuno che non sa nemmeno dove sta andando? E che differenza c\'e fra questa folla e gli eserciti che partiranno pochi mesi dopo — nelle intenzioni, e negli effetti?'},
+      {titolo:'Il nobile che guardava i Franchi',
+       corpo:'Usama ibn Munqidh, nobile siriano vissuto nel XII secolo, frequento a lungo i crociati e scrisse un libro di memorie in cui li descrive con curiosita e ironia.\n\nRacconta di medici franchi che curano un ascesso con l\'accetta e una donna con la testa incisa a croce; racconta di essere stato aggredito in preghiera da un franco appena arrivato che voleva girarlo verso oriente, e difeso dai Templari che lo conoscevano; e osserva che i Franchi «da poco stabiliti fra noi» sono molto piu rozzi di quelli nati in Oriente.',
+       chiedi:'La testimonianza piu vivida sui crociati la scrive un loro avversario, e non e ne un\'invettiva ne un elogio. Che cosa rende utile una fonte come questa? E che cosa bisogna comunque tenere presente leggendola?'},
+      {titolo:'Saladino a Gerusalemme',
+       corpo:'Nel luglio 1187 Saladino distrugge l\'esercito del regno di Gerusalemme ai Corni di Hattin, e in ottobre riprende la citta.\n\nNel 1099 i crociati avevano fatto strage della popolazione. Nel 1187 Saladino concede la resa: chi puo pagare un riscatto se ne va libero, molti vengono liberati gratuitamente, i luoghi cristiani non vengono distrutti e i pellegrini potranno tornare.\n\nIl confronto colpi i contemporanei di entrambe le parti, e nei secoli successivi Saladino divento in Europa una figura ammirata: Dante lo colloca nel Limbo, fra gli spiriti magni, insieme ai grandi antichi.',
+       chiedi:'Un nemico che entra nella nostra memoria come modello di nobilta. Perche succede, secondo voi? E che cosa dice, del 1099, il fatto che i cristiani stessi abbiano cominciato a raccontare quella differenza?'}
+    ],
+    testi:[
+      {fonte:'Fulcherio di Chartres, Historia Hierosolymitana — l\'indulgenza',
+       corpo:'Nella sua versione del discorso di Clermont, Urbano II annuncia che a chi partira «per devozione e non per ottenere onore o denaro» il viaggio stesso sara computato in luogo di ogni penitenza.',
+       glossa:'Da far notare: la condizione «non per onore o denaro» e nel testo. Chi scrive sa benissimo che molti partiranno per quei motivi, e mette per iscritto che a loro l\'indulgenza non spetta. Le fonti sono quasi sempre piu complicate dello slogan che ne ricaviamo.'},
+      {fonte:'Cronaca ebraica di Salomone bar Simson, XII secolo — la Renania 1096',
+       corpo:'Le cronache ebraiche raccontano l\'arrivo delle bande crociate nelle citta renane, la scelta di alcune comunita di darsi la morte piuttosto che essere convertite a forza, e i tentativi di alcuni vescovi di nascondere gli ebrei nei propri palazzi.',
+       glossa:'Su questi eventi le fonti ebraiche e quelle cristiane concordano nella sostanza — cosa rara. Vale la pena dirlo alla classe: quando due tradizioni ostili raccontano la stessa cosa allo stesso modo, la probabilita che sia accaduta e altissima.'},
+      {fonte:'Niceta Coniata, Storia — il sacco di Costantinopoli, 1204',
+       corpo:'Lo storico bizantino, testimone oculare, descrive il saccheggio della citta da parte dei latini, la spoliazione delle chiese e la distruzione di opere antiche, e osserva amaramente che perfino i musulmani si erano comportati meglio con i cristiani di Gerusalemme.',
+       glossa:'La frase finale e la piu efficace, ed e di un cristiano su altri cristiani. Utile per far vedere che le linee di frattura della storia non coincidono quasi mai con le etichette con cui la raccontiamo.'}
+    ],
+    compito:'Mezza pagina. Prendete un fatto di cronaca o di storia recente che vi hanno spiegato con una causa sola — un motivo, un colpevole, un interesse — e provate a elencare almeno tre cause diverse che potrebbero aver agito insieme. Poi indicate quale, secondo voi, spiega meglio perche sia successo proprio in quel momento e non prima.',
+    fonti:[
+      'Fulcherio di Chartres, Historia Hierosolymitana; Roberto il Monaco, Historia Iherosolimitana; Gesta Francorum',
+      'Usama ibn Munqidh, Il libro delle esperienze; Ibn al-Athir, Cronaca',
+      'Niceta Coniata, Storia — libri sul 1204; cronache ebraiche di Salomone bar Simson e di Eliezer bar Nathan',
+      'S. Runciman, Storia delle crociate; J. Riley-Smith, Le crociate e l\'idea di crociata',
+      'A. Maalouf, Le crociate viste dagli arabi',
+      'C. Tyerman, God\'s War; sull\'uso ottocentesco del termine: E. Sivan, L\'Islam et la Croisade'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',
