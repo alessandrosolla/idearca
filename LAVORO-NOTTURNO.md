@@ -156,7 +156,7 @@ Si va in ordine di programma. Restano:
 - [x] Storia medievale · 8 — La crisi dei poteri universali
 - [x] Storia medievale · 9 — L'Italia degli Stati regionali
 - [x] Storia medievale · 10 — La frontiera mediterranea e gli Ottomani
-- [ ] Storia medievale · 11 — Il Nuovo Mondo
+- [x] Storia medievale · 11 — Il Nuovo Mondo
 - [ ] Filosofia medievale · 1 — La filosofia nel Medioevo
 - [ ] Filosofia medievale · 2 — Tommaso d'Aquino
 - [ ] Filosofia medievale · 3 — La filosofia nel Trecento

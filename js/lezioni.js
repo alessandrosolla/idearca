@@ -5148,6 +5148,226 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Storia medievale · 11 — Il Nuovo Mondo': {
+  mappa: {
+    n:'Il Nuovo Mondo', d:'come due mondi separati da dodicimila anni si incontrano in un decennio',
+    f:[
+      {r:'comincia da', n:'Perche si parte', d:'e quasi mai per il motivo che si racconta',
+       f:[
+         {r:'servono le', n:'Spezie', d:'conservano il cibo e valgono piu dell\'oro a parita di peso'},
+         {r:'ma le rotte sono', n:'In mano ad altri', d:'ottomani, arabi e veneziani controllano ogni passaggio verso l\'Oriente'},
+         {r:'e in Africa si cerca', n:'L\'oro del Sudan', d:'che arriva in Europa attraverso il Sahara, e costa tre passaggi di intermediari'},
+         {r:'la spinta viene dalla', n:'Penisola iberica', d:'due regni appena usciti dalla reconquista, con nobili guerrieri senza piu guerre'},
+         {r:'lo permette la', n:'Caravella', d:'scafo leggero, vela latina: risale il vento, quindi puo tornare indietro',
+          f:[{r:'insieme a', n:'Bussola e astrolabio', d:'strumenti arabi e cinesi arrivati in Europa attraverso il Mediterraneo'},
+             {piu:true, r:'e alle', n:'Carte nautiche portoghesi', d:'tenute segrete come oggi si tengono i brevetti'}]},
+         {piu:true, r:'e un errore aiuta', n:'La circonferenza sbagliata', d:'Colombo crede la Terra un quarto piu piccola: se avesse avuto ragione, sarebbe morto in mare'}
+       ]},
+
+      {r:'e aperto dai', n:'Portoghesi', d:'che ci lavorano ottant\'anni prima di Colombo',
+       f:[
+         {r:'organizzati da', n:'Enrico il Navigatore', d:'finanzia spedizioni sistematiche lungo la costa africana'},
+         {r:'superano', n:'Capo Bojador', d:'1434: il limite psicologico oltre il quale si credeva impossibile tornare'},
+         {r:'doppiano il', n:'Capo di Buona Speranza', d:'1488, con Bartolomeu Dias'},
+         {r:'e arrivano in India con', n:'Vasco da Gama', d:'1498: la rotta delle spezie e aperta e non passa piu dal Mediterraneo'},
+         {r:'costruiscono', n:'Un impero di basi', d:'fortezze e scali sulle coste, non conquista dell\'interno',
+          f:[{piu:true, r:'perche il fine e', n:'Controllare i passaggi', d:'con pochi uomini si tassa un traffico che altri continuano a produrre'}]}
+       ]},
+
+      {r:'si apre con', n:'Colombo', d:'che cerca una cosa e ne trova un\'altra senza accorgersene',
+       f:[
+         {r:'nel', n:'1492', d:'tre navi, trentatre giorni di traversata, l\'approdo alle Bahamas'},
+         {r:'convinto fino alla fine di essere', n:'In Asia', d:'in quattro viaggi non ammettera mai di aver trovato un continente nuovo'},
+         {r:'la spartizione avviene con', n:'Tordesillas', d:'1494: una riga sull\'oceano divide il mondo fra Spagna e Portogallo',
+          f:[{r:'legittimata da', n:'Una bolla papale', d:'ed e l\'ultima volta che il papa dispone del pianeta come di una proprieta'}]},
+         {r:'e il continente prende il nome da', n:'Vespucci', d:'che per primo scrive che si tratta di terre sconosciute agli antichi'}
+       ]},
+
+      {r:'prosegue con', n:'La conquista', d:'pochi uomini abbattono due imperi in dieci anni',
+       f:[
+         {r:'Cortes prende', n:'Tenochtitlan', d:'1521: una citta di oltre duecentomila abitanti, piu grande di ogni citta europea'},
+         {r:'Pizarro cattura', n:'Atahualpa', d:'1532 a Cajamarca: l\'imperatore inca preso durante un incontro diplomatico'},
+         {r:'non vincono per superiorita ma per', n:'Alleanze indigene', d:'decine di migliaia di guerrieri locali in rivolta contro il dominio azteco'},
+         {r:'aiutati da', n:'Cavalli, acciaio e archibugi', d:'un vantaggio reale ma limitato: contano piu nella prima ora che nella guerra'},
+         {r:'e soprattutto da', n:'Le epidemie', d:'vaiolo, morbillo e tifo arrivano prima degli eserciti e svuotano le citta',
+          f:[{r:'perche i due mondi erano', n:'Separati da dodicimila anni', d:'nessuna immunita, nessuna esposizione precedente'},
+             {piu:true, r:'e il contagio', n:'Corre piu veloce dei conquistatori', d:'gli Inca erano gia in guerra civile per una peste arrivata prima degli spagnoli'}]}
+       ]},
+
+      {r:'produce', n:'Il crollo demografico', d:'la piu grande catastrofe di popolazione documentata',
+       f:[
+         {r:'nelle isole caraibiche', n:'La popolazione scompare', d:'in una generazione: e il primo segnale, e nessuno lo legge'},
+         {r:'in Messico e Perù cala', n:'Di oltre l\'ottanta per cento', d:'in un secolo; le stime assolute sono discusse, l\'ordine di grandezza no'},
+         {r:'la causa principale sono', n:'Le malattie', d:'non le armi: ma le malattie arrivano dentro un\'occupazione, non da sole'},
+         {r:'aggravate da', n:'Lavoro forzato e fame', d:'campi abbandonati, comunita spostate, famiglie divise: un corpo denutrito muore di piu'},
+         {piu:true, r:'e l\'abbandono dei campi', n:'Cambia il clima', d:'la foresta ricresce, la CO2 cala: alcuni studiosi lo legano alla Piccola eta glaciale'}
+       ]},
+
+      {r:'si organizza in', n:'Un sistema coloniale', d:'costruito per estrarre e spedire',
+       f:[
+         {r:'con l\'', n:'Encomienda', d:'gruppi di indios affidati a un colono, che in cambio dovrebbe istruirli nella fede'},
+         {r:'e la', n:'Mita', d:'turni di lavoro obbligatorio nelle miniere, ripresi da un istituto inca e resi molto peggiori'},
+         {r:'ruota attorno a', n:'Potosi', d:'1545: la montagna d\'argento, e per un secolo la citta piu popolosa delle Americhe'},
+         {r:'e quando gli indios muoiono si ricorre alla', n:'Tratta atlantica', d:'la deportazione di africani sostituisce la manodopera che e stata distrutta',
+          f:[{r:'per alimentare', n:'Le piantagioni', d:'zucchero, poi tabacco e cotone: un\'agricoltura industriale basata sulla schiavitu'},
+             {piu:true, r:'per un totale di', n:'Circa dodici milioni di deportati', d:'in tre secoli e mezzo, di cui piu di un milione morti durante la traversata'}]}
+       ]},
+
+      {r:'apre', n:'Il dibattito sulla legittimita', d:'ed e la cosa piu inattesa di tutta la vicenda',
+       f:[
+         {r:'comincia con', n:'Il sermone di Montesinos', d:'1511, a Santo Domingo: «con che diritto tenete questi uomini in servitu?»'},
+         {r:'continua con', n:'Bartolomé de Las Casas', d:'ex encomendero che passa la vita a denunciare cio che ha praticato'},
+         {r:'la corona emana le', n:'Leggi Nuove', d:'1542: vietata la schiavitu degli indios, l\'encomienda non e piu ereditaria',
+          f:[{r:'ma i coloni', n:'Si ribellano', d:'e nel 1546 il vicere del Peru viene ucciso in battaglia dai coloni stessi'},
+             {r:'e le leggi vengono', n:'In gran parte ritirate', d:'la legge e a Madrid, il potere di applicarla e a ottomila chilometri'}]},
+         {r:'culmina nella', n:'Disputa di Valladolid', d:'1550-51: Carlo V sospende le conquiste in attesa di una risposta',
+          f:[{r:'con', n:'Sepulveda', d:'che sostiene la guerra giusta contro chi pratica sacrifici umani ed e inferiore per natura'},
+             {r:'contro', n:'Las Casas', d:'che nega ogni titolo alla conquista e afferma la piena umanita degli indios'},
+             {piu:true, r:'e finisce', n:'Senza un verdetto', d:'nessuno dei due viene proclamato vincitore, e la conquista riprende'}]},
+         {r:'e produce a Salamanca', n:'La scuola di Vitoria', d:'gli indios sono veri proprietari, il papa non puo donare terre che non ha',
+          f:[{r:'da cui nasce', n:'Il diritto internazionale', d:'l\'idea che esistano norme valide fra popoli diversi, anche non cristiani'}]}
+       ]},
+
+      {r:'cambia il mondo con', n:'Lo scambio colombiano', d:'piante, animali, malattie e denaro che attraversano l\'oceano',
+       f:[
+         {r:'dall\'America arrivano', n:'Mais, patata e pomodoro', d:'e in due secoli riscrivono l\'alimentazione europea e cinese',
+          f:[{piu:true, r:'e la patata', n:'Fa crescere la popolazione', d:'piu calorie per ettaro di qualunque cereale: e alla base del boom demografico'}]},
+         {r:'in America arrivano', n:'Grano, cavalli e bovini', d:'e trasformano le praterie e le societa che ci vivono'},
+         {r:'l\'argento americano', n:'Finisce in Cina', d:'passando per l\'Europa e per Manila: e la prima catena di pagamenti planetaria'},
+         {r:'e in Europa provoca', n:'La rivoluzione dei prezzi', d:'un secolo di inflazione che impoverisce chi vive di rendite fisse'},
+         {r:'cosi nasce', n:'Un\'economia mondiale', d:'per la prima volta un fatto locale ha effetti su tutti i continenti'}
+       ]}
+    ],
+    incroci:[
+      {da:'La circonferenza sbagliata', a:'1492', r:'e la condizione perche avvenga il',
+       perche:'Colombo calcola una Terra molto piu piccola del vero; i geografi che lo respinsero avevano ragione. Se avesse avuto le misure esatte non sarebbe partito, e se fra la Spagna e l\'Asia non ci fosse stato un continente sarebbe morto in mare. La scoperta nasce da un errore corretto da un caso.'},
+      {da:'In mano ad altri', a:'Vasco da Gama', r:'e il problema che risolve',
+       perche:'Ottomani, mercanti arabi e veneziani prelevano un margine a ogni passaggio delle spezie. La rotta del Capo non e una curiosita geografica: e il modo di togliere di mezzo tutti gli intermediari in una volta. Le grandi navigazioni nascono da un problema commerciale preciso.'},
+      {da:'Le epidemie', a:'La popolazione scompare', r:'sono la causa principale del fatto che',
+       perche:'Le armi da fuoco del Cinquecento erano lente e poche; il vaiolo no. Ma va detto con precisione: le malattie non arrivano da sole, arrivano dentro un\'occupazione che sposta le comunita, impone lavoro forzato e disperde i raccolti. Non e un genocidio pianificato ed e comunque una catastrofe con responsabilita.'},
+      {da:'Alleanze indigene', a:'Tenochtitlan', r:'sono cio che rende possibile la presa di',
+       perche:'Cortes non ha cinquecento uomini contro un impero: ha cinquecento uomini piu decine di migliaia di guerrieri tlaxcaltechi che odiano gli aztechi. La conquista e anche una guerra civile mesoamericana, e questo cambia la domanda: non come pochi vinsero molti, ma chi decise di allearsi con chi e perche.'},
+      {da:'La popolazione scompare', a:'Tratta atlantica', r:'e la ragione economica che avvia la',
+       perche:'Distrutta la manodopera locale, il sistema coloniale non si ferma: la sostituisce. La deportazione degli africani non e un fenomeno parallelo alla catastrofe americana, ne e la conseguenza diretta — una catastrofe che ne genera un\'altra per non interrompere una produzione.'},
+      {da:'In gran parte ritirate', a:'Senza un verdetto', r:'anticipa la sorte della disputa che finisce',
+       perche:'Nel 1542 la corona emana leggi giuste e nel 1546 i coloni uccidono un vicere; nel 1551 i teologi discutono e nessuno vince. Due volte la ragione sta a Madrid e il potere sta nelle Americhe. Avere ragione senza gli strumenti per applicarla e la condizione ricorrente di questa vicenda.'},
+      {da:'Il diritto internazionale', a:'Una bolla papale', r:'nasce demolendo',
+       perche:'Vitoria sostiene che il papa non puo donare terre che non gli appartengono e che gli indios sono veri proprietari. Per fondare il diritto fra i popoli bisogna prima togliere di mezzo l\'idea che qualcuno possa disporre del mondo: la prima norma internazionale nasce come limite a un\'autorita, non come concessione.'},
+      {da:'Potosi', a:'Finisce in Cina', r:'produce l\'argento che',
+       perche:'La montagna di Potosi alimenta una catena che passa da Siviglia, attraversa l\'Europa e arriva in Cina, dove l\'argento e la moneta fiscale. È il primo circuito di pagamenti che fa il giro del pianeta: da quel momento un fatto locale ha conseguenze su tre continenti.'},
+      {da:'La rivoluzione dei prezzi', a:'Penisola iberica', r:'colpisce piu duramente la',
+       perche:'Il paese che riceve l\'argento e quello che ne esce peggio: i prezzi salgono, le manifatture spagnole diventano care e si compra all\'estero. La ricchezza che arriva senza essere prodotta non costruisce capacita produttiva — e uno dei casi piu studiati di risorsa che impoverisce.'},
+      {da:'Un impero di basi', a:'Encomienda', r:'e l\'opposto del sistema fondato sull\'',
+       perche:'I portoghesi occupano scali e tassano traffici altrui; gli spagnoli occupano terre e uomini. Le due formule dipendono da cio che trovano: in Asia sistemi statali forti da cui conviene farsi pagare un pedaggio, in America popolazioni decimate su territori enormi da sfruttare direttamente.'},
+      {da:'Fa crescere la popolazione', a:'Circa dodici milioni di deportati', r:'e sostenuta dallo stesso sistema che produce',
+       perche:'Lo scambio colombiano non ha un segno unico: la patata nutre l\'Europa e lo zucchero delle piantagioni si produce con lavoro schiavistico. La stessa rete che moltiplica le calorie disponibili in un continente deporta uomini in un altro, e giudicare l\'insieme con una parola sola e impossibile.'},
+      {da:'Separati da dodicimila anni', a:'Grano, cavalli e bovini', r:'e la ragione per cui arrivano insieme a',
+       perche:'La lunga separazione spiega insieme il disastro e la fecondita dello scambio: nessuna immunita condivisa, ma anche nessuna pianta e nessun animale in comune. Lo stesso isolamento che rende letali i microbi rende rivoluzionarie le colture — un unico fatto biologico con due effetti opposti.'},
+      {da:'Si ribellano', a:'Lavoro forzato e fame', r:'i coloni lo fanno per continuare a imporre',
+       perche:'La rivolta contro le Leggi Nuove non e una protesta astratta: i coloni difendono il diritto di disporre del lavoro indigeno e di trasmetterlo ai figli. Ogni volta che una norma tocca un interesse concreto e chi deve applicarla e chi ci guadagna, la norma perde.'}
+    ]
+  },
+  provocazione: {
+    titolo:'Chi non stiamo vedendo',
+    durata:'55 minuti',
+    domandaMadre:'Chi difende una vittima vede tutte le vittime?',
+    perche:'La conquista dell\'America produce insieme la piu grande catastrofe demografica documentata e la prima teoria dei diritti validi per tutti gli uomini: due cose nate nello stesso impero, negli stessi anni, spesso nelle stesse stanze. La classe deve capire perche la seconda non ferma la prima — la ragione sta a Madrid, il potere sta a ottomila chilometri. E deve arrivare al punto piu duro, che riguarda chiunque prenda posizione su qualcosa: Las Casas, il piu coraggioso difensore degli indios, propose di importare africani per alleggerirli, e se ne accorse troppo tardi. Non per malvagita: perche il suo campo visivo era definito dal problema che stava combattendo.',
+    occorrente:'Niente. Ma prepara mentalmente il passaggio su Las Casas: va detto senza compiacimento e senza sconti.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'Valladolid, 1550.\n\nCarlo V, il sovrano piu potente del mondo,\nordina la sospensione\ndi tutte le nuove spedizioni\ndi conquista in America.\n\nMotivo:\ndeve prima essere stabilito\nse siano lecite.\n\nConvoca due uomini a discuterne\ndavanti a una giuria di teologi.\n\nNon risulta che nessun altro impero\ndella storia si sia mai fermato\nper chiedersi\nse avesse il diritto\ndi fare quello che stava facendo.\n\nNello stesso momento,\nnelle isole caraibiche,\nla popolazione originaria\ne praticamente scomparsa.',
+       parlato:'Dai i due blocchi separati da una pausa netta: prima la disputa, poi il dato demografico.\n\nQuando arrivi al secondo, sii preciso: nelle Antille la popolazione crolla quasi a zero in poco piu di una generazione; in Messico e in Perù cala di oltre l\'ottanta per cento in un secolo. Le stime assolute sono discusse fra gli storici e l\'ordine di grandezza no.\n\nPoi la domanda che apre l\'ora: come stanno insieme queste due cose?\n\nNon accettare la scorciatoia dell\'ipocrisia, non ancora. Dilla tu, anzi, come possibilita: forse era teatro. E poi aggiungi che la disputa costo anni, denaro e prestigio, e che chi la vinse moralmente perse politicamente. Vale la pena guardarci dentro prima di decidere.',
+       seDicono:[
+         {loro:'«Se ne discutevano, sapevano che era sbagliato.»',
+          tu:'Alcuni si, e lo scrissero. Ma tieni presente che la posizione opposta era sostenuta con argomenti che allora sembravano solidi, non con cinismo dichiarato. Capire come si costruisce una giustificazione e piu utile che dare per scontato che nessuno ci credesse.'},
+         {loro:'«Tanto poi hanno continuato lo stesso.»',
+          tu:'Esatto, e sara la parte centrale dell\'ora: perche una cosa riconosciuta ingiusta continui comunque. La risposta non e che erano tutti in malafede.'}
+       ]},
+
+      {minuti:'8–17', et:'Lo schieramento',
+       schermo:'La disputa di Valladolid:',
+       opzioni:['e una messinscena per mettersi la coscienza a posto', 'e un fatto senza precedenti, e conta'],
+       parlato:'Fai schierare e conta. Il primo gruppo di solito prevale.\n\nPoi dai gli elementi, senza schierarti.\n\nA favore della prima lettura: la conquista riprese, la disputa non ebbe un verdetto ufficiale, e le Leggi Nuove del 1542 — che vietavano di ridurre in schiavitu gli indios — erano gia state in gran parte ritirate dopo che i coloni si erano ribellati e avevano ucciso in battaglia il vicere del Perù.\n\nA favore della seconda: quelle leggi erano state emanate; la corona sospese davvero le spedizioni; e dalla stessa discussione, a Salamanca, nacque la tesi che gli indios fossero veri proprietari delle loro terre e che il papa non potesse donare cio che non gli apparteneva.\n\nPoi la domanda che li fara lavorare: se una legge giusta viene ritirata, e come se non fosse mai esistita?',
+       seDicono:[
+         {loro:'«Una legge che non si applica non serve a niente.»',
+          tu:'Sul momento, quasi. Ma nota una cosa: quelle formulazioni restano scritte e vengono riprese, contro gli stessi imperi, per secoli. Una norma inapplicata e un\'arma appoggiata a terra: non ferisce nessuno, e qualcuno puo raccoglierla dopo.'},
+         {loro:'«Bastava che il re li obbligasse.»',
+          tu:'Ci provo. Ma il re era a Madrid e i coloni erano in America, con le armi, e senza di loro non arrivava argento. Tieni questa asimmetria, perche e la chiave dell\'intera vicenda.'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'Le due posizioni, in sintesi.\n\nSepulveda:\ngli indios praticano sacrifici umani\ne cannibalismo;\nsono per natura inadatti a governarsi;\nla guerra e lecita\nper impedire il male\ne per il loro stesso bene.\n\nLas Casas:\nhanno citta, leggi, agricoltura, arti;\nsono uomini pienamente razionali;\ni sacrifici umani sono un errore\nda combattere con la predicazione,\nnon con l\'invasione;\nnessuna conquista ha titolo.\n\nUna delle due tesi\nservirà, con altri nomi,\nper i quattro secoli successivi.',
+       parlato:'Presenta le due posizioni con onesta, anche quella di Sepulveda: se la rendi ridicola, la classe non impara a riconoscerla.\n\nPoi fai notare la struttura del suo argomento, perche e questo che devono portarsi via. Non dice «ci conviene». Dice tre cose: quelli fanno cose atroci; sono incapaci di governarsi; interveniamo per il loro bene. È la forma classica della giustificazione di un dominio, e la ritroveranno nel colonialismo ottocentesco quasi identica.\n\nDomanda utile: il primo punto era vero? Si, i sacrifici umani esistevano. Allora chiedi: da un fatto vero segue la conclusione? E fai vedere che no — perche la stessa Europa bruciava eretici e streghe, e nessuno pensava che questo autorizzasse un altro popolo a invaderla.\n\nPoi la parte fredda: chi vinse? Nessuno, ufficialmente. Ma le encomiendas restarono, l\'argento continuo ad arrivare e la conquista prosegui. La discussione fu seria e il suo esito lo decisero i rapporti di forza.',
+       seDicono:[
+         {loro:'«Sepulveda non era mai stato in America.»',
+          tu:'Verissimo, e Las Casas ci aveva vissuto trent\'anni. È un\'osservazione buona, ma attento a usarla come argomento decisivo: l\'esperienza diretta rende una testimonianza preziosa e non rende automaticamente giusta una tesi. Serve per pesare i fatti, non per stabilire i principi.'},
+         {loro:'«Quindi vinse chi era sul posto.»',
+          tu:'Sostanzialmente si. E questa e la regola piu dura di tutta la storia coloniale: la distanza fra chi decide e chi esegue e la vera misura di quanto una legge varra.'}
+       ]},
+
+      {minuti:'28–38', et:'Il testo',
+       schermo:'Trentanove anni prima di Valladolid.\n\nSanto Domingo, Avvento 1511.\nIl domenicano Antonio de Montesinos\npredica davanti ai coloni,\ne al figlio di Colombo.\n\nChiede, in sostanza:\n\ncon che diritto tenete questi uomini\nin una servitu cosi crudele?\n\nchi vi ha autorizzato\na fare guerre a gente\nche viveva in pace nella propria terra?\n\nnon sono uomini anche loro?\nnon avete l\'obbligo\ndi amarli come voi stessi?\n\nE conclude dicendo\nche in quello stato\nnon possono salvarsi\npiu di quanto possano salvarsi\ni turchi.',
+       testo:{fonte:'Sermone di Antonio de Montesinos, Santo Domingo, quarta domenica di Avvento 1511, riferito da Las Casas nella Historia de las Indias',
+              glossa:'Va detto che il testo ci arriva attraverso Las Casas, che era presente e non era neutrale. La circostanza pero e verificata: i coloni protestarono presso la corona e i domenicani furono richiamati. E il paragone finale e studiato per colpire — dire a uno spagnolo del 1511 che si sta salvando quanto un turco era l\'insulto piu grave disponibile.'},
+       parlato:'Leggi il sermone e lascia il silenzio.\n\nPoi il dato che serve: nel 1511 la conquista e appena cominciata, e la denuncia arriva subito, dall\'interno, da uomini della stessa Chiesa che benediceva le spedizioni. Non e un giudizio a posteriori nostro: e contemporaneo ai fatti.\n\nQuesto smonta l\'obiezione che sentirete per tutto l\'anno — «erano altri tempi, non potevano saperlo». Qualcuno lo sapeva e lo disse ad alta voce, davanti ai responsabili, mentre stava accadendo.\n\nPoi la domanda: che cosa successe a Montesinos e ai suoi? I coloni si lamentarono con il re, e i domenicani vennero richiamati. Chiedi loro se questo rende il sermone inutile.',
+       seDicono:[
+         {loro:'«Erano preti, dovevano dirlo.»',
+          tu:'Gli altri preti presenti non lo dissero, e alcuni possedevano indios. Fare la cosa che il tuo ruolo prescriverebbe, quando tutti quelli con il tuo stesso ruolo non la fanno, non e scontato: e esattamente la definizione di scelta.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'Bartolomé de Las Casas\ne il difensore piu tenace\nche gli indios abbiano avuto.\n\nCinquant\'anni di denunce,\nviaggi, memoriali al re,\nun libro che accusa\nil proprio paese\ndavanti a tutta l\'Europa.\n\nNei primi anni,\nper alleggerire il lavoro\nimposto agli indios,\navanzo una proposta:\nsostituirli con schiavi africani,\nritenuti piu resistenti\ne — cosi si diceva —\ngia legittimamente ridotti in schiavitu.\n\nAnni dopo scrisse\ndi essersene amaramente pentito:\nnon aveva considerato\nche quella schiavitu\nfosse ingiusta per le stesse ragioni.\n\nIl commercio, intanto,\nera avviato.\nDurera tre secoli e mezzo.',
+       parlato:'Questo passaggio va detto piano e senza compiacimento. Non serve a demolire Las Casas: serve a capire una cosa che riguarda chiunque prenda posizione.\n\nSii preciso storicamente, perche la questione e discussa: Las Casas non invento la tratta atlantica, che era gia cominciata, e la sua proposta fu una fra molte spinte. Ma la fece, e poi la ritratto per iscritto, ed e uno dei pochi casi in cui possiamo leggere un uomo che si accorge di aver sbagliato bersaglio.\n\nPoi la domanda vera: perche non lo aveva visto?\n\nGuidali alla risposta, che non e la malvagita. Aveva passato la vita dentro un problema, e quel problema gli disegnava il campo visivo. Gli indios erano davanti a lui ogni giorno; gli africani erano un\'astrazione lontana, dentro una pratica gia esistente che nessuno intorno a lui discuteva.\n\nE qui arriva la domanda che devono portarsi via: quando difendete qualcuno con tutte le vostre forze, chi state non vedendo?\n\nNon per colpevolizzarli. Perche e una domanda che va tenuta accesa mentre si agisce, non dopo.',
+       seDicono:[
+         {loro:'«Allora era un ipocrita.»',
+          tu:'Un ipocrita nasconde. Lui scrisse il proprio errore, in un libro, sapendo che sarebbe rimasto. È qualcosa di diverso, e piu raro: un uomo che allarga il proprio campo visivo in pubblico e paga il prezzo di averlo avuto stretto.'},
+         {loro:'«Noi oggi non faremmo questo errore.»',
+          tu:'È la frase che ogni epoca ha detto di quella precedente. Prova a rovesciarla in una domanda utile: quale sofferenza, oggi, e cosi normale e cosi lontana dai nostri occhi che nessuno intorno a noi la discute? Non e detto che troviate la risposta. È l\'esercizio che conta.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'Due cose da tenere insieme,\ne non si sciolgono.\n\nLo stesso impero, negli stessi anni,\nha prodotto la piu grande catastrofe\ndi popolazione documentata\ne la prima teoria dei diritti\nvalidi per tutti gli uomini.\n\nLa ragione stava a Madrid.\nIl potere stava a ottomila chilometri.\n\nDue domande, per finire.\n\nA che cosa serve avere ragione,\nse non si ha il modo di applicarlo?\n\nE quando difendete qualcuno,\nchi non state vedendo?',
+       parlato:'Rifai la conta sulla disputa e commenta lo spostamento, che di solito e ampio.\n\nPoi il bilancio, che va tenuto stretto e senza morale finale. Le Leggi Nuove erano giuste e furono ritirate. Vitoria aveva ragione e la conquista prosegui. Las Casas vinse la discussione e perse la partita. Nessuno di questi fatti annulla gli altri.\n\nSulla prima domanda dai un criterio invece di una risposta: le idee giuste senza potere non cambiano il presente, ma restano disponibili. Le tesi di Salamanca vengono riprese secoli dopo, contro gli imperi coloniali, dalle stesse popolazioni che ne subivano il dominio. Serve tempo, e serve che qualcuno le raccolga.\n\nSulla seconda non dare risposta: e il compito.\n\nUltima cosa, che apre il resto dell\'anno. Da questo momento la storia che studieremo e mondiale: l\'argento di Potosi arriva in Cina, la patata cambia la demografia europea, e cio che accade in un continente ha effetti su tutti gli altri. Non e piu possibile raccontare l\'Europa da sola.',
+       seDicono:[
+         {loro:'«Allora non serve a niente denunciare le ingiustizie.»',
+          tu:'Serve, ma non nel modo in cui speriamo. Non ferma quasi mai la cosa che denuncia. Lascia una formulazione che qualcuno usera quando avra la forza che a voi mancava. È poco e non e niente — e in molti casi e tutto quello che si puo fare.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'Perche vinsero in cosi pochi',
+       corpo:'Cortés arriva in Messico con poco piu di cinquecento uomini; Pizarro in Perù con meno di duecento. Sconfiggono due imperi con milioni di sudditi.\n\nLa spiegazione tradizionale — cavalli, acciaio, armi da fuoco — spiega una parte. Contano di piu due fatti: decine di migliaia di guerrieri indigeni si allearono con gli spagnoli contro il dominio azteco, e le epidemie arrivarono prima degli eserciti. Quando Pizarro sbarca, l\'impero inca e gia dilaniato da una guerra civile fra due fratelli, aperta dalla morte improvvisa del padre — probabilmente per una malattia arrivata dal nord prima degli europei.',
+       chiedi:'Se togliamo le epidemie e gli alleati locali, che cosa resta della superiorita europea? E perche il racconto scolastico ha preferito per secoli la versione delle armi?'},
+      {titolo:'La montagna che divorava uomini',
+       corpo:'Nel 1545 viene scoperta a Potosi, a oltre quattromila metri, una montagna d\'argento. Nel giro di pochi decenni la citta ha oltre centomila abitanti: piu di Londra.\n\nIl lavoro nelle miniere viene organizzato con la mita, un turno obbligatorio ripreso da un istituto inca e reso incomparabilmente piu duro: villaggi interi tenuti a fornire ogni anno una quota di uomini, per mesi, in gallerie senza aria, con il mercurio usato per separare il metallo.\n\nDa quella montagna esce buona parte dell\'argento che circola nel mondo per un secolo e mezzo.',
+       chiedi:'Gli spagnoli riprendono una istituzione che esisteva gia e la trasformano in qualcosa di diverso. Che cosa cambia, esattamente, fra il turno di lavoro inca e la mita coloniale? E quando si puo dire che una continuita formale nasconde una rottura sostanziale?'},
+      {titolo:'La leggenda nera',
+       corpo:'Il libro di Las Casas sulla distruzione delle Indie fu tradotto in inglese, olandese e francese e usato per due secoli come prova della crudelta spagnola — dagli stessi paesi che stavano costruendo i propri imperi coloniali e la propria tratta di schiavi.\n\nGli storici chiamano «leggenda nera» questo uso propagandistico. Ma la denuncia originale era spagnola, veniva dall\'interno, e i fatti che riporta sono in larga parte confermati da altre fonti.',
+       chiedi:'Una denuncia vera puo essere usata in malafede da chi fa le stesse cose. Questo la rende meno vera? E chi la ripubblica per convenienza sta comunque facendo qualcosa di utile?'}
+    ],
+    testi:[
+      {fonte:'Francisco de Vitoria, Relectio de Indis, Salamanca 1539',
+       corpo:'Il teologo sostiene che gli indios erano veri proprietari delle proprie terre prima dell\'arrivo degli spagnoli, che il fatto di essere pagani o peccatori non fa perdere il dominio sui propri beni, e che nessuna donazione papale puo trasferire cio che appartiene ad altri.',
+       glossa:'Vitoria insegna in una universita spagnola durante il regno di Carlo V, e smonta uno per uno i titoli su cui il proprio re fondava la conquista. Da qui nasce l\'idea che esistano norme valide fra popoli diversi, indipendenti dalla religione: e per questo che lo si considera all\'origine del diritto internazionale.'},
+      {fonte:'Leggi Nuove delle Indie, 1542',
+       corpo:'Le disposizioni vietano di ridurre in schiavitu gli indios, stabiliscono che le encomiendas non passino agli eredi e ordinano che siano tolte a chi abbia commesso abusi o ricopra cariche pubbliche.',
+       glossa:'Sono, sulla carta, la legislazione piu avanzata del secolo. La reazione dice tutto: in Perù i coloni si sollevano e nel 1546 uccidono in battaglia il vicere inviato ad applicarle. Utile in classe come caso limite del rapporto fra norma e potere di farla rispettare.'},
+      {fonte:'Las Casas, Historia de las Indias, sul proprio errore riguardo agli schiavi africani',
+       corpo:'Scrivendo di se stesso in terza persona, il domenicano riferisce di aver consigliato di ricorrere a schiavi africani per alleviare la condizione degli indios, e dichiara di essersene poi pentito, avendo compreso che la loro riduzione in schiavitu era ingiusta esattamente come quella degli indios.',
+       glossa:'È una delle poche autocritiche esplicite che ci abbia lasciato un protagonista del Cinquecento. Da usare per mostrare che riconoscere un errore non lo cancella: la tratta era gia avviata e prosegui per tre secoli. Il pentimento sistema la coscienza di chi lo scrive, non le conseguenze.'}
+    ],
+    compito:'Mezza pagina, in due parti. Prima: scegliete una causa in cui credete e descrivetela in tre righe. Seconda: provate a individuare qualcuno che quella causa, se vincesse domani, lascerebbe fuori o danneggerebbe — e se non riuscite a trovarlo, scrivete perche pensate che non esista. Non e un esercizio per farvi cambiare idea: e per verificare quanto e largo il vostro campo visivo.',
+    fonti:[
+      'Antonio de Montesinos, sermone del 1511, in Las Casas, Historia de las Indias',
+      'Francisco de Vitoria, Relectio de Indis (1539); Leggi Nuove delle Indie (1542)',
+      'Las Casas, Brevísima relación de la destrucción de las Indias (1552); Sepúlveda, Democrates alter',
+      'A. Crosby, Lo scambio colombiano; C. Mann, 1491 e 1493',
+      'M. Livi Bacci, Conquista: la distruzione degli indios americani',
+      'S. Gruzinski, La colonizzazione dell\'immaginario; T. Todorov, La conquista dell\'America'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',
