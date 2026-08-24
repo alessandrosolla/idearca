@@ -5806,6 +5806,225 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Filosofia medievale · 3 — La filosofia nel Trecento': {
+  mappa: {
+    n:'La filosofia nel Trecento', d:'come si smonta una sintesi, e che cosa ne esce',
+    f:[
+      {r:'comincia con', n:'La sintesi che non regge', d:'l\'equilibrio fra fede e ragione dura meno di una generazione',
+       f:[
+         {r:'perche la', n:'Condanna del 1277', d:'colpisce anche tesi tomiste: l\'accordo fra Aristotele e la fede diventa sospetto'},
+         {r:'e perche cambia', n:'Il contesto', d:'peste, scisma, guerra: e difficile credere in un ordine razionale del mondo'},
+         {r:'e i maestri non sono piu', n:'Solo frati', d:'crescono i secolari e i laici: cambia chi fa filosofia, non solo che cosa si dice'},
+         {r:'si formano due', n:'Vie contrapposte', d:'la via antica e la via moderna: le universita si dividono per due secoli'},
+         {piu:true, r:'e la parola', n:'Nominales', d:'nasce come insulto dei rivali e finisce come nome di una scuola'}
+       ]},
+
+      {r:'si apre con', n:'Duns Scoto', d:'il dottore sottile: smonta Tommaso restando dentro il suo campo',
+       f:[
+         {r:'contro l\'analogia sostiene', n:'L\'univocita dell\'essere', d:'«essere» significa la stessa cosa per Dio e per le creature, o non ne parliamo affatto'},
+         {r:'introduce la', n:'Distinzione formale', d:'una distinzione che sta fra quella reale e quella solo mentale'},
+         {r:'e afferma il primato della', n:'Volonta sull\'intelletto', d:'Dio non vuole una cosa perche e buona: e buona perche la vuole',
+          f:[{r:'da cui segue che l\'ordine morale e', n:'Voluto, non dedotto', d:'e la strada che porta dritta a Occam'}]},
+         {r:'e sull\'immacolata concezione', n:'Vince contro Tommaso', d:'e uno dei rari casi in cui la Chiesa segue Scoto e non l\'Aquinate'},
+         {r:'e per il singolo introduce', n:'L\'ecceita', d:'cio che fa di questo uomo proprio questo e non un altro esemplare della specie',
+          f:[{piu:true, r:'perche la specie', n:'Non basta a individuare', d:'e la prima volta che l\'individuo riceve una dignita metafisica propria'}]}
+       ]},
+
+      {r:'prosegue con', n:'Occam e il rasoio', d:'un principio di economia che svuota mezza metafisica',
+       f:[
+         {r:'dice che', n:'Non si moltiplicano gli enti', d:'se una spiegazione basta, non se ne aggiungono altre'},
+         {r:'quindi esistono', n:'Solo individui', d:'nessuna umanita, nessuna specie reale: Pietro, Paolo, e basta'},
+         {r:'e gli universali sono', n:'Segni mentali', d:'concetti che stanno per molti individui, non cose che stanno fuori'},
+         {r:'la conoscenza parte da', n:'L\'intuizione del singolare', d:'un contatto diretto con questa cosa qui, prima di ogni astrazione'},
+         {r:'la logica diventa', n:'Studio dei termini', d:'che cosa fa un segno quando sta al posto di una cosa: la teoria della suppositio'},
+         {piu:true, r:'con un\'attenzione nuova al', n:'Linguaggio come strumento', d:'molti problemi metafisici si rivelano confusioni su come si usano le parole'},
+         {r:'e cadono', n:'Specie, forme e qualita reali', d:'l\'apparato con cui la scolastica spiegava il mondo si assottiglia',
+          f:[{piu:true, r:'e cade anche', n:'Gran parte della teologia razionale', d:'le prove dell\'esistenza di Dio diventano probabili, non dimostrative'}]}
+       ]},
+
+      {r:'si fonda su', n:'La potenza assoluta di Dio', d:'la tesi teologica piu esplosiva del Medioevo',
+       f:[
+         {r:'distingue', n:'Potenza assoluta e ordinata', d:'cio che Dio potrebbe fare e cio che ha di fatto stabilito'},
+         {r:'da cui segue che il mondo e', n:'Contingente fino in fondo', d:'nulla di cio che esiste doveva esistere in questo modo'},
+         {r:'e persino che Dio potrebbe', n:'Darti l\'esperienza di cio che non c\'e', d:'l\'intuizione di una stella assente: e un esempio da manuale scolastico',
+          f:[{r:'formulato non per dubitare ma per', n:'Non limitare l\'onnipotenza', d:'negarlo significherebbe dire che Dio non puo qualcosa'},
+             {piu:true, r:'e tre secoli dopo diventa', n:'Il genio maligno di Cartesio', d:'lo stesso argomento, con un altro scopo'}]},
+         {r:'e vale anche in morale', n:'Nulla e buono per necessita', d:'se Dio comandasse altro, altro sarebbe il bene: tesi che spaventa i contemporanei'},
+         {r:'e ne segue la conseguenza decisiva', n:'Il mondo non si deduce', d:'se poteva essere diverso, per sapere com\'e bisogna andare a guardare'}
+       ]},
+
+      {r:'separa', n:'Teologia e filosofia', d:'non piu due strade verso lo stesso vero, ma due mestieri diversi',
+       f:[
+         {r:'la teologia non e piu', n:'Una scienza dimostrativa', d:'parte da premesse credute, quindi conclude solo per chi crede'},
+         {r:'la filosofia diventa', n:'Analisi del linguaggio e dell\'esperienza', d:'la logica e il centro, non piu la metafisica'},
+         {r:'la fede resta', n:'Un atto, non una conclusione', d:'si crede perche si sceglie di credere, non perche si e dimostrato'},
+         {r:'accanto a loro cresce', n:'La mistica renana', d:'Eckhart e Taulero: se la ragione non arriva a Dio, ci si arriva per un\'altra strada'},
+         {piu:true, r:'e si diffonde la', n:'Devotio moderna', d:'una religiosita interiore e pratica, che fara da ponte verso l\'Umanesimo'},
+         {r:'e questo indebolisce', n:'La pretesa di dedurre l\'ordine', d:'morale, politico e naturale non discendono piu da un unico schema'}
+       ]},
+
+      {r:'produce', n:'La fisica di Parigi', d:'la conseguenza pratica piu inattesa, ed e enorme',
+       f:[
+         {r:'Buridano spiega il moto con', n:'L\'impetus', d:'una forza impressa che resta nel corpo, invece dell\'aria che lo spinge da dietro',
+          f:[{r:'che anticipa', n:'L\'inerzia', d:'non e ancora Galileo, ed e il primo passo fuori da Aristotele'},
+             {piu:true, r:'e applica l\'idea anche ai', n:'Corpi celesti', d:'ipotizzando che Dio abbia dato loro un impetus iniziale che non si consuma'}]},
+         {r:'Oresme discute seriamente', n:'La rotazione della Terra', d:'e smonta uno per uno tutti gli argomenti contrari',
+          f:[{r:'ma poi conclude che', n:'La Terra sta ferma', d:'per fede nella Scrittura, non per un argomento che non aveva trovato'}]},
+         {r:'e a Oxford lavorano', n:'I calculatores', d:'il Merton College applica la matematica al moto prima che qualcuno guardi il cielo'},
+         {r:'e si comincia a', n:'Misurare le qualita', d:'rappresentare con figure geometriche l\'intensita che cresce nel tempo',
+          f:[{r:'da cui il', n:'Teorema della velocita media', d:'formulato a Oxford, e sara usato da Galileo per la caduta dei gravi'}]}
+       ]},
+
+      {r:'entra in politica con', n:'Lo scontro con il papa', d:'e stavolta il filosofo ci mette la vita',
+       f:[
+         {r:'nasce dalla questione della', n:'Poverta di Cristo', d:'i francescani sostengono che Cristo non possiede nulla; il papa lo dichiara eretico'},
+         {r:'Occam conclude che', n:'Il papa puo errare', d:'e lo scrive, dopo aver esaminato le costituzioni di Giovanni XXII'},
+         {r:'e fugge presso', n:'Ludovico il Bavaro', d:'la protezione dell\'imperatore scomunicato: difendimi con la spada, ti difendero con la penna'},
+         {r:'e sostiene che il concilio', n:'Puo giudicare il papa', d:'l\'argomento che a Costanza, ottant\'anni dopo, servira a deporne tre'},
+         {r:'accanto a lui c\'e', n:'Marsilio da Padova', d:'con la tesi che il potere venga dalla comunita dei cittadini'},
+         {piu:true, r:'e la disputa produce', n:'Una teoria dei diritti soggettivi', d:'per discutere di poverta bisogna definire che cosa sia un diritto: nasce li'}
+       ]},
+
+      {r:'lascia', n:'Un terreno diverso', d:'quasi nulla delle dottrine, quasi tutto dei presupposti',
+       f:[
+         {r:'un mondo di', n:'Fatti singolari da osservare', d:'invece di essenze da contemplare: e la premessa dell\'empirismo'},
+         {r:'una teologia che', n:'Non chiede piu prove alla ragione', d:'e da qui parte la strada che Lutero percorrera'},
+         {r:'una fisica', n:'Che ammette ipotesi impossibili per Aristotele', d:'vuoto, altri mondi, Terra in movimento: pensabili, quindi discutibili'},
+         {r:'una filosofia che si occupa di', n:'Come parliamo delle cose', d:'e non solo di come le cose sono: e un\'eredita che arriva al Novecento'},
+         {r:'e una regola di metodo', n:'Ancora in uso', d:'a parita di spiegazione, si sceglie quella che assume meno',
+          f:[{piu:true, r:'con il nome improprio di', n:'Rasoio di Occam', d:'la formula precisa non si trova nei suoi testi, il principio si'}]}
+       ]}
+    ],
+    incroci:[
+      {da:'Voluto, non dedotto', a:'Contingente fino in fondo', r:'apre la strada all\'idea che il mondo sia',
+       perche:'Se le cose sono buone perche Dio le vuole, e non volute perche buone, allora nessun ordine e necessario: poteva essere un altro. Scoto sposta il baricentro dall\'intelletto alla volonta, e Occam ne trae la conseguenza che il mondo intero e una scelta, non una deduzione.'},
+      {da:'Il mondo non si deduce', a:'Fatti singolari da osservare', r:'e la ragione per cui restano solo',
+       perche:'Finche l\'universo e necessario, si puo ricavarne la struttura ragionando su principi: Aristotele deduce che il vuoto e impossibile e che gli elementi sono quattro. Se invece poteva essere diverso, l\'unico modo di sapere com\'e fatto e guardarlo. La teologia dell\'onnipotenza produce l\'obbligo dell\'osservazione.'},
+      {da:'Darti l\'esperienza di cio che non c\'e', a:'Il genio maligno di Cartesio', r:'e lo stesso argomento che diventa',
+       perche:'L\'esempio scolastico dell\'intuizione di una stella assente nasce per non porre limiti a Dio, cioe da devozione. Tre secoli dopo lo stesso schema serve a Cartesio per mettere in dubbio tutto il conoscibile. Nessuno controlla che cosa faranno le proprie idee: la stessa mossa logica cambia mestiere.'},
+      {da:'Solo individui', a:'L\'ecceita', r:'porta a compimento l\'intuizione dell\'',
+       perche:'Scoto aveva introdotto cio che rende questo individuo proprio questo; Occam elimina anche la specie di cui sarebbe l\'esemplare. Il percorso e lineare: prima l\'individuo acquista dignita accanto all\'universale, poi resta solo lui. È la strada per cui in Occidente l\'individuo diventa la realta di base.'},
+      {da:'Non si moltiplicano gli enti', a:'Gran parte della teologia razionale', r:'e il principio che fa cadere',
+       perche:'Il rasoio non e un consiglio di eleganza: e una lama. Applicato con rigore elimina specie intelligibili, qualita reali e buona parte degli argomenti con cui si dimostrava Dio. Occam non e uno scettico, ma il suo strumento fa fuori piu di quanto probabilmente volesse.'},
+      {da:'La Terra sta ferma', a:'Che ammette ipotesi impossibili per Aristotele', r:'e una conclusione che non toglie nulla al fatto che ora esista una fisica',
+       perche:'Oresme costruisce tutta l\'argomentazione a favore della rotazione terrestre, confuta ogni obiezione, e poi conclude per la fede che la Terra sta ferma. Il valore non sta nella conclusione ma nel fatto che l\'ipotesi sia diventata discutibile: due secoli dopo, chi la sostiene trova gli argomenti gia pronti.'},
+      {da:'Il papa puo errare', a:'Una scienza dimostrativa', r:'e possibile solo perche la teologia non e piu',
+       perche:'Se la teologia fosse dimostrativa, l\'autorita che la custodisce sarebbe garantita dal metodo. Divenuta un sapere che parte da premesse credute, resta esposta all\'errore come ogni impresa umana — e un frate puo esaminare le costituzioni di un papa e concludere che sono sbagliate.'},
+      {da:'L\'impetus', a:'Teorema della velocita media', r:'appartiene allo stesso cantiere del',
+       perche:'La fisica trecentesca fra Parigi e Oxford produce due strumenti che Galileo trovera pronti: una causa del moto interna al corpo e una tecnica per trattare matematicamente una velocita che cambia. La rivoluzione scientifica eredita piu Medioevo di quanto ami ammettere.'},
+      {da:'Una teoria dei diritti soggettivi', a:'Segni mentali', r:'e coerente con l\'idea che gli universali siano',
+       perche:'Se non esistono essenze comuni ma solo individui, allora anche i diritti non appartengono a un ordine oggettivo delle cose: sono facolta di singoli soggetti. La disputa sulla poverta francescana costringe a definirlo, e il nominalismo fornisce la struttura concettuale.'},
+      {da:'Vie contrapposte', a:'Un terreno diverso', r:'sono il modo in cui le universita trasmettono',
+       perche:'La divisione fra via antica e via moderna non e un dettaglio accademico: significa che per due secoli generazioni di studenti europei imparano due modi opposti di intendere realta e linguaggio. Lutero si forma nella via moderna, e questo pesa su come porra la questione della salvezza.'},
+      {da:'Non chiede piu prove alla ragione', a:'Un atto, non una conclusione', r:'e coerente con una fede che diventa',
+       perche:'Tolto alla ragione il compito di fondare la fede, credere diventa una decisione e non l\'esito di un ragionamento. È una perdita per la teologia scolastica e una liberazione per chi cerchera nella sola Scrittura il fondamento: il Trecento prepara il terreno su cui il Cinquecento costruira.'},
+      {da:'Il contesto', a:'La pretesa di dedurre l\'ordine', r:'rende poco credibile',
+       perche:'Peste, scisma e guerra dei Cent\'anni si accumulano proprio mentre i filosofi smontano l\'idea di un ordine necessario. Non e una relazione di causa diretta, ma le due cose si sostengono: e piu facile pensare un mondo contingente quando quello che hai sotto gli occhi non somiglia a un disegno.'},
+      {da:'Rasoio di Occam', a:'Distinzione formale', r:'sarebbe la prima vittima della',
+       perche:'Scoto aveva introdotto un tipo di distinzione intermedia per salvare alcune tesi teologiche; Occam la elimina perche moltiplica gli enti senza necessita. È l\'esempio piu limpido di come funziona il rasoio — e del fatto che a essere tagliate sono soprattutto le finezze dei predecessori.'}
+    ]
+  },
+  provocazione: {
+    titolo:'Un mondo che poteva essere diverso',
+    durata:'55 minuti',
+    domandaMadre:'Come si conosce un mondo che poteva essere fatto in un altro modo?',
+    perche:'Nel Trecento i teologi sostengono, per non porre limiti all\'onnipotenza divina, che Dio avrebbe potuto fare il mondo in modo completamente diverso e che potrebbe darci l\'esperienza vivissima di una cosa che non esiste. È devozione, non scetticismo — ed e esattamente il dubbio iperbolico che Cartesio userà tre secoli dopo. La classe deve seguire la conseguenza vera, che non e lo scetticismo: se il mondo poteva essere diverso, non lo si deduce da principi, bisogna andare a guardarlo. Il colpo di scena e Oresme che costruisce l\'intera argomentazione a favore della rotazione terrestre, confuta ogni obiezione e poi conclude che la Terra sta ferma: due secoli prima di Copernico, con tutte le carte in mano.',
+    occorrente:'Niente.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'Una tesi discussa nelle universita\neuropee del Trecento.\n\nDio e onnipotente.\n\nDunque potrebbe far si\nche voi abbiate\nl\'esperienza chiarissima\ndi una stella\nche non c\'e.\n\nNon un sogno, non un\'illusione confusa:\nla stessa identica evidenza\nche avete adesso\nguardando questa stanza.\n\nSostenere il contrario\nsignificherebbe dire\nche c\'e qualcosa\nche Dio non puo fare.\n\nQuesto argomento\nnon fu inventato per dubitare.\n\nFu inventato per lodare.',
+       parlato:'Dai la tesi e lascia che ci pensino: quasi sempre qualcuno reagisce dicendo che e assurdo.\n\nPoi il colpo: tre secoli dopo, un filosofo francese scrivera che potrebbe esistere un genio maligno potentissimo che gli fa credere di vedere un cielo, una terra e un corpo che non ci sono. È l\'inizio della filosofia moderna, e lo studierete come il dubbio piu radicale mai formulato.\n\nÈ lo stesso argomento. Cambiano lo scopo e il nome di chi inganna.\n\nDomanda: come e possibile che il dubbio piu distruttivo della storia della filosofia sia stato costruito da teologi per esaltare Dio?',
+       seDicono:[
+         {loro:'«Allora non erano credenti sul serio.»',
+          tu:'Erano frati, professori di teologia, alcuni finiti in guai seri per difendere la propria fede. Il punto e un altro: si puo essere sinceramente devoti e produrre uno strumento che poi funziona benissimo contro cio che si voleva difendere. Succede spesso, e non richiede malafede.'},
+         {loro:'«È un gioco di parole senza conseguenze.»',
+          tu:'Tienila come ipotesi, perche e la posizione dello schieramento fra poco. Ma prova a chiederti come mai lo stesso gioco di parole, tre secoli dopo, apre il libro considerato l\'inizio del pensiero moderno.'}
+       ]},
+
+      {minuti:'8–17', et:'Lo schieramento',
+       schermo:'L\'idea che Dio\navrebbe potuto fare\nun mondo completamente diverso:',
+       opzioni:['e una sottigliezza da scuola, senza effetti', 'e una bomba, e chi la formulava lo sapeva'],
+       parlato:'Fai schierare e conta. Il primo gruppo di solito vince, e vale la pena farlo lavorare.\n\nPoi porta tutti su un esempio concreto, perche l\'astratto qui non basta.\n\nAristotele sosteneva che il vuoto e impossibile, e lo dimostrava: in un vuoto un corpo si muoverebbe istantaneamente, il che e assurdo. Non era un\'opinione, era una deduzione da principi. Allo stesso modo dimostrava che gli elementi sono quattro e che i cieli sono incorruttibili.\n\nAdesso applicate la tesi del Trecento. Se Dio poteva fare il mondo in un altro modo, quelle dimostrazioni valgono ancora?\n\nGuidali fino alla risposta: no. Restano al massimo descrizioni di come le cose sembrano andare qui. Se il vuoto esista o no non si decide piu ragionando: si decide guardando.\n\nQuesto e il punto dell\'ora. Da una tesi teologica segue un obbligo sperimentale.',
+       seDicono:[
+         {loro:'«Ma guardare non basta: potrebbe ingannarci.»',
+          tu:'Osservazione giusta, e infatti nessuno di loro pensava che l\'esperienza dia certezze assolute. Ma nota il cambiamento: prima si poteva sapere con certezza senza guardare; ora si puo solo sapere con qualche probabilita guardando. È una perdita di grado e un guadagno di metodo.'},
+         {loro:'«Se Dio puo tutto, non ha senso studiare niente.»',
+          tu:'Sarebbe la conclusione scettica, e loro non la traggono. Distinguono: Dio potrebbe fare altrimenti, ma di fatto ha stabilito quest\'ordine e lo mantiene. Quindi vale la pena studiarlo — solo che si studia come si studia una decisione, non come si studia una necessita.'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'La distinzione che regge tutto:\n\npotenza assoluta\ne potenza ordinata.\n\nAssoluta:\ntutto cio che Dio potrebbe fare,\nsenza contraddizione.\n\nOrdinata:\ncio che ha di fatto stabilito\ne che mantiene.\n\nIl mondo che avete davanti\nsta nella seconda.\nQuindi e affidabile.\nQuindi non e necessario.\n\nE arriva la seconda mossa,\nche taglia ancora piu a fondo:\n\nnon si devono moltiplicare\nle cose che si suppongono esistere\noltre il necessario.\n\nSe una spiegazione basta,\nnon se ne aggiunge un\'altra.',
+       parlato:'Spiega la distinzione con calma e con un esempio: le regole di un gioco. Chi le ha scritte poteva scriverle diverse; ora che ci sono, valgono e si possono studiare. Ma non le ricavi ragionando: le leggi.\n\nPoi passa al rasoio e mostra che cosa taglia davvero, perche in genere lo si conosce come un consiglio innocuo.\n\nLa scolastica spiegava che gli oggetti bruciano perche hanno una qualita reale, il calore; che Pietro e uomo perche partecipa dell\'umanita; che conosciamo grazie a specie intelligibili che dagli oggetti entrano nella mente. Applicate il rasoio a tutto questo: se posso spiegare senza postulare quelle entita, spariscono.\n\nCosa resta? Individui, e i segni con cui li pensiamo. Nient\'altro.\n\nDomanda per farli lavorare: se non esiste l\'umanita ma solo singoli uomini, che cosa significa dire che due persone sono uguali?',
+       seDicono:[
+         {loro:'«Se restano solo individui, la scienza di che cosa parla?»',
+          tu:'Domanda giusta, ed e il problema che il nominalismo si porta dietro per secoli. La risposta abbozzata e: parla di regolarita osservate fra individui, non di essenze. È piu debole e piu onesto. E per inciso, e piu vicino a come la scienza descrive se stessa oggi.'},
+         {loro:'«Il rasoio dice solo di essere semplici, che c\'e di male?»',
+          tu:'Che applicato sul serio non e affatto innocuo. Fa cadere le specie, le qualita reali e buona parte degli argomenti che dimostravano l\'esistenza di Dio. Occam era un frate: il suo strumento ha eliminato piu di quanto probabilmente volesse.'}
+       ]},
+
+      {minuti:'28–38', et:'Il testo',
+       schermo:'Il principio, nella forma\nin cui circolava:\n\n«Non si deve porre\nuna pluralita\nsenza necessita.»\n\nE, in un\'altra formulazione:\n\ncio che si puo fare\ncon meno\ne inutile farlo\ncon di piu.\n\nQuattro secoli piu tardi,\nNewton apre i propri principi\ndi filosofia naturale\ncon una regola quasi identica:\n\nnon ammettere piu cause\ndi quante bastino\na spiegare i fenomeni.',
+       testo:{fonte:'Guglielmo di Occam, formulazioni ricorrenti nei commenti alle Sentenze; Newton, Principia, regulae philosophandi I',
+              glossa:'La frase «rasoio di Occam», nella forma che tutti citano, non compare nei suoi testi: e una etichetta successiva. Il principio pero e suo, ed e usato costantemente. Vale la pena farlo notare in classe come esempio di come funzionano le formule celebri: quasi mai le ha scritte chi le ha pensate.'},
+       parlato:'Leggi le due formulazioni e poi Newton, e lascia che vedano la continuita.\n\nPoi la domanda utile: perche una regola di economia dovrebbe portarci al vero? Chi ha detto che il mondo sia semplice?\n\nÈ una domanda seria e non ha una risposta definitiva. Da\' loro le due migliori. La prima: non e una regola sul mondo, e una regola su di noi — fra due spiegazioni che rendono conto degli stessi fatti, quella che assume meno e piu facile da controllare e da smentire. La seconda: assumere entita che non servono significa non poterle mai verificare, e quindi uscire dal terreno del sapere.\n\nSe la classe regge, fai notare la differenza fra semplicita e comodita: il rasoio non dice di scegliere la spiegazione piu facile da capire, dice di scegliere quella che presuppone meno cose esistenti. Sono due criteri diversissimi e vengono confusi di continuo.',
+       seDicono:[
+         {loro:'«A volte la spiegazione complicata e quella giusta.»',
+          tu:'Certo, e il rasoio non dice il contrario: dice che devi avere una ragione per aggiungere. Se i fatti richiedono un\'entita in piu, la aggiungi. Quello che non puoi fare e aggiungerla perche ti torna comodo o perche ci sei affezionato.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'Parigi, intorno al 1377.\n\nNicola Oresme,\nmatematico, vescovo,\nconsigliere del re,\nsi pone la domanda:\n\nsi puo sostenere che sia la Terra\na girare, e non il cielo?\n\nEsamina tutte le obiezioni.\n\nLa freccia lanciata in aria\ndovrebbe cadere lontano: risponde\nche l\'aria e la freccia\ngirano insieme alla Terra.\n\nDovremmo sentire un vento continuo:\nrisponde allo stesso modo.\n\nLa Scrittura dice che il sole si ferma:\nrisponde che la Scrittura\nparla come parla la gente.\n\nMostra che tutti i fenomeni\nsi spiegano ugualmente bene\nnei due modi.\n\nE poi conclude\nche la Terra sta ferma.',
+       parlato:'Racconta la sequenza come un\'indagine, e tieni l\'ultima riga per il silenzio.\n\nLa reazione della classe e sempre di irritazione. Lasciala venire, poi lavora su di essa.\n\nPrima cosa da chiarire: non e che gli mancasse un argomento. Li aveva tutti, e li aveva trovati lui. Conclude per la fede — dice esplicitamente che nessuna delle ragioni addotte contro il moto della Terra e concludente, e che tuttavia egli crede che la Terra stia ferma.\n\nSeconda cosa, ed e la piu importante: che cosa ha fatto, allora?\n\nHa reso l\'ipotesi discutibile. Ha smontato tutte le obiezioni che due secoli dopo verranno rivolte a Copernico — e quando arriveranno, le risposte saranno gia scritte. Le sue argomentazioni girano nelle universita per generazioni.\n\nPoi la domanda vera: chi ha costruito tutti gli argomenti e non ha tirato la conclusione ha fallito?\n\nNon dare la risposta. Ma da\' l\'elemento per pensarci: la scienza avanza anche cosi, per accumulo di argomenti disponibili. Chi conclude per primo di solito e in piedi su un lavoro fatto da altri che non hanno concluso.',
+       seDicono:[
+         {loro:'«Aveva paura.»',
+          tu:'Possibile, e nel Trecento non c\'era ancora un caso Galileo: Oresme era vescovo e consigliere del re, non un uomo in pericolo. La lettura piu probabile e piu scomoda e che credesse davvero. Aveva ragionato benissimo e poi ha scelto un\'altra autorita — cosa che, in forme diverse, capita a tutti.'},
+         {loro:'«Allora Copernico non ha inventato niente.»',
+          tu:'No, questo no: Copernico costruisce un sistema matematico completo, che Oresme non aveva. La differenza fra dire "e possibile" e dire "ecco come funziona, con i numeri" e enorme. Ma il terreno su cui poggia era stato dissodato, ed e giusto saperlo.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'Mettiamo in fila\ncio che e successo.\n\nPer non porre limiti a Dio,\ndei teologi affermano\nche il mondo poteva essere diverso.\n\nSe poteva essere diverso,\nnon lo si deduce:\nbisogna guardarlo.\n\nSe non si moltiplicano gli enti,\nrestano cose singole\ne regolarita da osservare.\n\nE a quel punto diventa pensabile\nche sia la Terra a girare.\n\nNessuno di loro\nvoleva questo.\n\nUltima domanda:\n\nsi puo prevedere\nche cosa fara un\'idea\ndopo di noi?',
+       parlato:'Ricostruisci la catena in cinque passaggi, lentamente, facendo dire a loro ogni anello: se hanno seguito, ci arrivano.\n\nPoi la formulazione da portare a casa: la teologia dell\'onnipotenza ha prodotto l\'obbligo dell\'osservazione. Non per un rovesciamento ironico della storia, ma per una conseguenza logica stretta — un mondo contingente e un mondo che si conosce solo empiricamente.\n\nSull\'ultima domanda non dare risposte consolatorie. Le idee non appartengono a chi le formula e non fanno cio per cui sono state pensate: la potenza assoluta di Dio diventa il genio maligno di Cartesio, la disputa sulla poverta francescana produce la teoria dei diritti soggettivi, il rasoio inventato da un frate finisce in apertura dei Principia di Newton.\n\nChiudi con la cosa che serve per il resto dell\'anno: quando vi diranno che la scienza moderna nasce contro il Medioevo, ricordatevi di Buridano, di Oresme e del teorema che Galileo usera per la caduta dei gravi. Le rotture nette esistono nei manuali. Nei documenti si trovano quasi sempre delle continuita.',
+       seDicono:[
+         {loro:'«Allora non serve preoccuparsi delle conseguenze di quello che si dice.»',
+          tu:'Al contrario: serve, e serve sapere che non basta. Puoi rispondere di cio che prevedi; non puoi rispondere di tutto. La conclusione utile non e disinteressarsene, e essere piu prudenti nel dichiarare a che cosa serve una propria idea.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'L\'asino che non era di Buridano',
+       corpo:'Si racconta di un asino posto esattamente a meta strada fra due mucchi di fieno identici, che muore di fame non riuscendo a scegliere. L\'esempio e attribuito a Giovanni Buridano, ma nei suoi testi non si trova.\n\nBuridano sosteneva che la volonta segue il giudizio dell\'intelletto su quale sia il bene maggiore; i suoi avversari costruirono l\'esempio dell\'asino per mostrare che, davanti a due opzioni equivalenti, quella teoria porta alla paralisi.\n\nLa storia si e attaccata al suo nome ed e diventata il modo in cui viene ricordato.',
+       chiedi:'Un pensatore viene ricordato per un esempio inventato dai suoi avversari per confutarlo. Come si difende un\'idea da come viene riassunta? E quanto di cio che sapete di un autore viene da chi lo contestava?'},
+      {titolo:'Se «essere» significhi la stessa cosa',
+       corpo:'Tommaso sostiene che di Dio si parla per analogia: quando diciamo che Dio e buono e che un uomo e buono non usiamo la parola nello stesso senso, ne in sensi del tutto diversi.\n\nDuns Scoto obietta che l\'analogia non tiene: o «essere» significa la stessa cosa quando lo diciamo di Dio e delle creature, oppure quando parliamo di Dio non stiamo dicendo nulla di determinato.\n\nÈ una delle dispute piu tecniche del Medioevo, e riguarda una questione semplice: si puo parlare in modo sensato di cio che supera del tutto la nostra esperienza?',
+       chiedi:'Provate a trasferirla: quando usiamo una parola ordinaria per qualcosa di enormemente diverso — «intelligenza» per una macchina, «vita» per un virus — la stiamo usando nello stesso senso, in un senso diverso o in nessun senso preciso?'},
+      {titolo:'Difendimi con la spada',
+       corpo:'Occam viene convocato ad Avignone perche alcune sue tesi sono sospette. Li si occupa della disputa sulla poverta di Cristo, esamina i documenti pontifici e conclude che il papa Giovanni XXII ha sostenuto tesi eretiche.\n\nFugge, viene scomunicato, e si rifugia presso Ludovico il Bavaro, imperatore a sua volta scomunicato. La tradizione gli attribuisce una frase rivolta all\'imperatore: difendimi con la spada, io ti difendero con la penna.\n\nPassa il resto della vita a scrivere di politica ecclesiastica, e muore probabilmente di peste nel 1347.',
+       chiedi:'Un filosofo che si mette sotto la protezione di un potente per poterlo difendere: quanto resta libero il suo pensiero? E si puo distinguere chi scrive cio che pensa da chi pensa cio che gli conviene scrivere?'}
+    ],
+    testi:[
+      {fonte:'Nicola Oresme, Le livre du ciel et du monde, libro II (1377)',
+       corpo:'Dopo aver esaminato le ragioni contro il moto quotidiano della Terra, Oresme dichiara che nessuna di esse e concludente, che i fenomeni si salvano ugualmente in entrambe le ipotesi, e che tuttavia egli ritiene che sia il cielo a muoversi e non la Terra.',
+       glossa:'Il valore del testo sta nella distanza fra l\'argomentazione e la conclusione. Da usare in classe per mostrare che cosa significhi rendere un\'ipotesi discutibile: le obiezioni che Oresme smonta sono le stesse che verranno rivolte a Copernico e a Galileo, e le risposte sono gia li, scritte due secoli prima.'},
+      {fonte:'Giovanni Buridano, Questioni sulla Fisica — l\'impetus',
+       corpo:'Buridano sostiene che chi lancia un corpo gli imprime una certa forza che resta nel corpo stesso e ne continua il moto, e che tale impeto diminuisce per la resistenza dell\'aria e per la gravita; e osserva che in assenza di resistenze non ci sarebbe ragione perche diminuisca.',
+       glossa:'L\'ultima osservazione e a un passo dal principio d\'inerzia, e viene formulata duecentocinquant\'anni prima di Galileo. Utile per correggere l\'idea che il Medioevo ripetesse Aristotele: qui lo si contesta sul terreno che gli era piu proprio, la spiegazione del moto.'},
+      {fonte:'Guglielmo di Occam, sulla conoscenza intuitiva',
+       corpo:'Occam sostiene che Dio potrebbe causare nell\'intelletto una conoscenza intuitiva di una cosa che non esiste, e che tale conoscenza sarebbe indistinguibile, quanto a evidenza, da quella di una cosa esistente.',
+       glossa:'È il testo che va messo accanto alla prima Meditazione di Cartesio. Occam non ne trae scetticismo: mantiene che di fatto Dio non inganna e che l\'ordine stabilito e affidabile. Ma lo strumento e costruito, e resta a disposizione di chi lo usera per altro.'}
+    ],
+    compito:'Mezza pagina. Prendete un\'idea o un\'invenzione recente pensata per uno scopo preciso — una tecnologia, una regola, una parola nuova. Descrivete lo scopo per cui e nata, poi un uso che ha preso e che chi l\'ha pensata non aveva previsto. Infine dite se, secondo voi, quell\'uso si poteva prevedere: se la risposta e sì, spiegate perche nessuno lo ha fatto.',
+    fonti:[
+      'Guglielmo di Occam, Summa logicae; Ordinatio, prologo — sulla conoscenza intuitiva',
+      'Duns Scoto, Ordinatio I, d. 3 — sull\'univocita dell\'essere',
+      'Nicola Oresme, Le livre du ciel et du monde, II, 25; Giovanni Buridano, Quaestiones super libris Physicorum',
+      'A. de Libera, Il pensiero del Medioevo; F. Alessio, Introduzione a Occam',
+      'P. Duhem, Le système du monde (per la fisica parigina); E. Grant, La scienza nel Medioevo',
+      'M. Villey e B. Tierney, sul dibattito riguardo all\'origine dei diritti soggettivi'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',

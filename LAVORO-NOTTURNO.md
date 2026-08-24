@@ -159,7 +159,7 @@ Si va in ordine di programma. Restano:
 - [x] Storia medievale · 11 — Il Nuovo Mondo
 - [x] Filosofia medievale · 1 — La filosofia nel Medioevo
 - [x] Filosofia medievale · 2 — Tommaso d'Aquino
-- [ ] Filosofia medievale · 3 — La filosofia nel Trecento
+- [x] Filosofia medievale · 3 — La filosofia nel Trecento
 - [ ] Storia moderna · 1 — Carlo V e la Riforma protestante
 - [ ] Storia moderna · 2 — Riforma e Controriforma
 - [ ] Storia moderna · 3 — Economia, guerre e il declino spagnolo
