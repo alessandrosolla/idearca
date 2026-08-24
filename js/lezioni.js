@@ -2245,6 +2245,234 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Filosofia antica · 10 — Lo stoicismo': {
+  mappa: {
+    n:'Lo stoicismo', d:'cinque secoli di scuola: dal portico dipinto al trono imperiale',
+    f:[
+      {r:'attraversa', n:'Tre fasi', d:'e cambia lingua, pubblico e problemi',
+       f:[
+         {r:'la', n:'Stoà antica', d:'Atene, dal 301 a.C.: si fonda il sistema',
+          f:[{r:'la fonda', n:'Zenone di Cizio', d:'un mercante cipriota naufragato ad Atene',
+              f:[{piu:true, r:'insegnava sotto', n:'La Stoà pikìle', d:'il portico dipinto dell\'agorà: da lì il nome'}]},
+             {r:'la organizza', n:'Crisippo', d:'«se non ci fosse stato Crisippo, non ci sarebbe la Stoà»',
+              f:[{piu:true, r:'scrisse', n:'Settecentocinque libri', d:'e non ce n\'è arrivato uno intero'}]}]},
+         {r:'la', n:'Stoà media', d:'Panezio e Posidonio: la dottrina arriva a Roma e si ammorbidisce'},
+         {r:'la', n:'Stoà romana', d:'i tre autori che leggiamo, e sono i più diversi che si possano immaginare',
+          f:[{r:'uno', n:'Seneca', d:'l\'uomo più ricco di Roma, precettore di Nerone'},
+             {r:'uno', n:'Epitteto', d:'nato schiavo, azzoppato dal padrone'},
+             {r:'uno', n:'Marco Aurelio', d:'imperatore: scrive per sé, in greco, sotto la tenda'}]}
+       ]},
+
+      {r:'divide', n:'La filosofia in tre parti', d:'e non sono separabili',
+       f:[
+         {r:'la', n:'Logica', d:'come si ragiona e come si distingue il vero'},
+         {r:'la', n:'Fisica', d:'com\'è fatto il mondo'},
+         {r:'l\'', n:'Etica', d:'come si vive: ed è il fine di tutto il resto'},
+         {r:'legate come', n:'Un uovo', d:'guscio la logica, albume la fisica, tuorlo l\'etica',
+          f:[{piu:true, r:'oppure', n:'Un campo recintato', d:'la siepe è la logica, la terra la fisica, il frutto l\'etica'}]}
+       ]},
+
+      {r:'in logica inventa', n:'Il criterio del vero', d:'e insieme una logica nuova',
+       f:[
+         {r:'è la', n:'Rappresentazione catalettica', d:'l\'immagine che afferra l\'oggetto e non potrebbe venire da altro',
+          f:[{r:'illustrata con', n:'La mano di Zenone', d:'dita aperte, mano chiusa, pugno stretto, l\'altra mano che lo afferra',
+              f:[{piu:true, r:'i quattro gradi', n:'Rappresentazione, assenso, comprensione, scienza'}]}]},
+         {r:'richiede il nostro', n:'Assenso', d:'la rappresentazione arriva, ma darle credito dipende da noi',
+          f:[{r:'ed è qui', n:'La prima libertà', d:'non scegliamo che cosa ci accade: scegliamo se assentire'}]},
+         {r:'costruisce', n:'La logica delle proposizioni', d:'non dei termini come Aristotele: dei ragionamenti fra intere frasi',
+          f:[{r:'esempio', n:'Se il primo, allora il secondo', d:'ma il primo, dunque il secondo'},
+             {piu:true, r:'riconosciuta solo nel', n:'Novecento', d:'da Łukasiewicz: per duemila anni si disse che erano regressi rispetto ad Aristotele'}]}
+       ]},
+
+      {r:'in fisica sostiene', n:'Un solo mondo corporeo', d:'materialismo integrale: esiste solo ciò che agisce o subisce',
+       f:[
+         {r:'con', n:'Due principi', d:'inseparabili, non due mondi',
+          f:[{r:'uno', n:'Passivo', d:'la materia, senza qualità'},
+             {r:'uno', n:'Attivo', d:'il lógos, che la informa: ed è esso stesso corporeo'}]},
+         {r:'il lógos è', n:'Pneuma', d:'soffio igneo che penetra tutto e tiene insieme ogni cosa',
+          f:[{r:'chiamato anche', n:'Fuoco artefice', d:'e Dio, e natura, e destino: sono lo stesso'},
+             {r:'produce', n:'La simpatia universale', d:'tutte le parti del cosmo si tengono: nulla accade isolato'}]},
+         {r:'il tempo è', n:'Ciclico', d:'il mondo brucia e ricomincia identico: apocatastasi',
+          f:[{piu:true, r:'e quindi', n:'Tornerete a fare questa lezione', d:'infinite volte, uguale: lo dice Crisippo'}]},
+         {r:'e tutto accade per', n:'Destino', d:'catena di cause senza vuoti: nulla è senza ragione'}
+       ]},
+
+      {r:'concilia', n:'Destino e libertà', d:'la mossa più fine dello stoicismo',
+       f:[
+         {r:'con', n:'Il cilindro di Crisippo', d:'la spinta viene da fuori, ma rotola per la sua forma',
+          f:[{r:'quindi', n:'La causa esterna avvia', d:'la natura propria determina come'},
+             {piu:true, r:'è il primo', n:'Compatibilismo', d:'destino e responsabilità insieme, senza contraddizione'}]},
+         {r:'con', n:'Il cane e il carro', d:'legato al carro: se segue, cammina; se resiste, viene trascinato',
+          f:[{r:'in ogni caso', n:'Il carro va avanti', d:'la scelta non è la meta: è come ci si arriva'}]},
+         {r:'e con', n:'Ciò che dipende da noi', d:'la distinzione che regge tutta l\'etica',
+          f:[{r:'dipende', n:'Giudizio, desiderio, impulso', d:'ciò che accade dentro'},
+             {r:'non dipende', n:'Corpo, fama, beni, morte', d:'ciò che accade fuori'}]}
+       ]},
+
+      {r:'in etica parte da', n:'Oikéiosis', d:'l\'appropriazione: il primo impulso di ogni vivente è conservarsi',
+       f:[
+         {r:'poi si allarga a', n:'I propri cari', d:'poi ai concittadini, poi a tutti gli uomini',
+          f:[{piu:true, r:'immagine di', n:'Ierocle', d:'cerchi concentrici da tirare verso il centro'}]},
+         {r:'e diventa', n:'Vivere secondo natura', d:'cioè secondo il lógos, che è la natura dell\'uomo'},
+         {r:'da cui', n:'La virtù è l\'unico bene', d:'e il vizio l\'unico male: tutto il resto è indifferente',
+          f:[{r:'ma esistono', n:'Indifferenti preferibili', d:'salute, ricchezza, vita: da scegliere, senza essere beni',
+              f:[{piu:true, r:'e l\'obiezione', n:'Se sono preferibili, sono beni', d:'la muovono gli accademici, e non si chiude mai'}]},
+             {r:'quindi', n:'La virtù basta alla felicità', d:'il saggio è felice anche nel toro di Falaride'}]},
+         {r:'e le passioni sono', n:'Giudizi sbagliati', d:'non impulsi da domare: errori di valutazione',
+          f:[{r:'quattro', n:'Piacere, dolore, desiderio, paura', d:'due sul presente, due sul futuro'},
+             {r:'da cui', n:'Apátheia', d:'non insensibilità: assenza di passioni, che sono malattie del giudizio'},
+             {piu:true, r:'restano le', n:'Eupatìe', d:'gioia, cautela, volontà: gli affetti buoni del saggio'}]}
+       ]},
+
+      {r:'in politica afferma', n:'Il cosmopolitismo', d:'una sola città, e comprende tutti',
+       f:[
+         {r:'perché', n:'Tutti gli uomini hanno lógos', d:'e quindi sono concittadini per natura, non per legge'},
+         {r:'cade', n:'La distinzione greco-barbaro', d:'e anche quella libero-schiavo, almeno in linea di principio',
+          f:[{piu:true, r:'Seneca scrive', n:'«Sono schiavi? No: uomini»', d:'Epistole 47, senza però chiedere l\'abolizione'}]},
+         {r:'ognuno ha', n:'Il proprio kathékon', d:'il dovere conveniente al ruolo che gli è toccato'},
+         {r:'e resta aperta', n:'L\'uscita ragionevole', d:'il suicidio, quando le circostanze impediscono di vivere secondo virtù',
+          f:[{piu:true, r:'immagine', n:'La porta è aperta', d:'«se la stanza fa fumo, esco»: Epitteto'}]}
+       ]},
+
+      {r:'lascia', n:'Che cosa resta', d:'la scuola antica più viva oggi',
+       f:[
+         {r:'fonda', n:'L\'idea di diritto naturale', d:'una legge valida per tutti perché tutti hanno ragione',
+          f:[{piu:true, r:'passa per', n:'Cicerone e i giuristi romani', d:'e da lì al diritto moderno'}]},
+         {r:'arriva a', n:'Kant', d:'il dovere per il dovere, e l\'uomo come fine'},
+         {r:'diventa', n:'La terapia cognitiva', d:'Ellis e Beck citano Epitteto nella prima pagina',
+          f:[{r:'perché', n:'Non le cose ci turbano, ma le opinioni', d:'è la premessa clinica del metodo'}]},
+         {r:'e torna oggi come', n:'Stoicismo pratico', d:'manuali, applicazioni, esercizi: spesso senza la fisica che lo reggeva'}
+       ]}
+    ],
+    incroci:[
+      {da:'Assenso', a:'Giudizio, desiderio, impulso', r:'è la radice di',
+       perche:'Ciò che dipende da noi non è un elenco arbitrario: discende dalla logica. La rappresentazione arriva da fuori e non la scegliamo, ma dare o negare l\'assenso è l\'unico atto che nessuno può compiere al posto nostro.'},
+      {da:'Destino', a:'Il cilindro di Crisippo', r:'non toglie la responsabilità grazie a',
+       perche:'Se tutto è concatenato, come si può essere responsabili? Perché la spinta esterna avvia il movimento, ma è la forma del cilindro a farlo rotolare. Le cause esterne sono la condizione, non il tutto: la tua natura fa il resto.'},
+      {da:'Pneuma', a:'Un solo mondo corporeo', r:'salva il materialismo di',
+       perche:'Se esiste solo il corpo, anche Dio e l\'anima devono essere corporei — e lo sono: soffio igneo che compenetra la materia. È il modo stoico di avere un mondo divino senza un secondo mondo.'},
+      {da:'La virtù è l\'unico bene', a:'Corpo, fama, beni, morte', r:'declassa a indifferenti',
+       perche:'Se il bene è solo ciò che dipende interamente da noi, tutto il resto — salute, ricchezza, la vita stessa — esce dalla lista dei beni. Non è disprezzo del mondo: è la conseguenza logica di aver messo il bene dove nessuno può toglierlo.'},
+      {da:'Indifferenti preferibili', a:'La virtù basta alla felicità', r:'incrina',
+       perche:'Se salute e ricchezza vanno preferite, qualcosa in più della virtù conta davvero. Gli stoici rispondono che si preferiscono senza che siano beni; gli avversari replicano che è una distinzione verbale. È la crepa più discussa del sistema.'},
+      {da:'Giudizi sbagliati', a:'Non le cose ci turbano, ma le opinioni', r:'è riassunto in',
+       perche:'Se la paura non è un\'onda che ci travolge ma un giudizio — «questo è un male» — allora si può correggere come si corregge un errore. È la tesi che ventitré secoli dopo diventerà una tecnica clinica.'},
+      {da:'Tutti gli uomini hanno lógos', a:'L\'idea di diritto naturale', r:'fonda',
+       perche:'Se la ragione è la stessa in tutti, allora esiste una legge che non dipende dalle assemblee e vale anche contro di esse. Da Crisippo a Cicerone ai giuristi romani, fino alle dichiarazioni dei diritti: la catena è diretta.'},
+      {da:'Ciclico', a:'Tutti gli uomini hanno lógos', r:'convive male con',
+       perche:'Se il mondo brucia e ricomincia identico, ogni scelta è già stata fatta infinite volte e si rifarà uguale. Gli stoici sostengono che questo non tolga nulla alla responsabilità — ma è il punto in cui il sistema chiede più fiducia.'},
+      {da:'Epitteto', a:'Marco Aurelio', r:'insegna dal fondo a',
+       perche:'Un ex schiavo azzoppato e l\'imperatore del mondo scrivono la stessa dottrina. Marco Aurelio lo cita e ringrazia chi gliene fece leggere gli appunti: è la prova più forte che quella filosofia non dipende dalla condizione di chi la vive.'},
+      {da:'Apátheia', a:'Eupatìe', r:'non è insensibilità grazie a',
+       perche:'Il saggio non è di pietra: prova gioia, cautela, volontà. Ciò che gli manca sono le passioni in senso tecnico, cioè i giudizi sbagliati. La distinzione è l\'unica difesa contro l\'accusa di disumanità, e va detta ogni volta.'},
+      {da:'La porta è aperta', a:'Ciò che dipende da noi', r:'è il caso limite di',
+       perche:'Se nemmeno la vita è un bene, restare o andarsene rientra fra le cose valutabili. Gli stoici lo dicono senza enfasi: la libertà ultima è che nessuno può obbligarti a restare in una stanza piena di fumo.'},
+      {da:'Vivere secondo natura', a:'La simpatia universale', r:'ha senso solo dentro',
+       perche:'«Secondo natura» non vuol dire secondo l\'istinto: vuol dire secondo il lógos che tiene insieme il cosmo. Togli la fisica e resta un consiglio generico — ed è esattamente ciò che accade nello stoicismo pratico di oggi.'}
+    ]
+  },
+  provocazione: {
+    titolo:'Nessuno può farti del male',
+    durata:'55 minuti',
+    domandaMadre:'Esiste qualcosa che ti possono togliere e che è davvero tuo?',
+    perche:'La tesi stoica — nulla di ciò che non dipende da te è un male — sembra una consolazione da deboli finché non si scopre chi l\'ha scritta: uno schiavo azzoppato dal padrone, l\'uomo più ricco di Roma e l\'imperatore del mondo, con le stesse identiche parole. L\'ora funziona perché la classe passa attraverso tre stati: prima la respinge come rassegnazione, poi la vede reggere a prove estreme, e infine deve fare i conti con il fatto che oggi è la premessa di una terapia clinica. Non si chiede di aderirvi: si chiede di dire dove si è disposti a seguirla e dove no.',
+    occorrente:'Niente.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'Un padrone romano, per divertirsi, torce la gamba del suo schiavo.\n\nLo schiavo, con calma, gli dice:\n«Così la spezzi.»\n\nL\'uomo continua. La gamba si spezza.\n\nLo schiavo, con la stessa calma:\n«Te l\'avevo detto.»\n\nResterà zoppo per tutta la vita.\nSi chiamava Epitteto, e diventerà un filosofo.\n\nScrive: «Nessuno può farti del male senza il tuo consenso.»\n\nAveva ragione?',
+       parlato:'Racconta l\'episodio senza commentarlo — è riportato da Celso e da Origene, e la classe lo riceve come un pugno.\n\nPoi la frase, e la domanda. Non «vi piace», ma «aveva ragione». La differenza conta: si sta chiedendo se una proposizione sia vera, non se sia consolante.\n\nLa reazione tipica è indignazione: è facile dirlo, è una scusa per non ribellarsi, l\'hanno azzoppato e tu mi dici che non gli hanno fatto del male? Lascia che esca tutta, e non difendere Epitteto adesso.\n\nUltima cosa da dire in questo tempo, e serve a tenere aperta la partita: quest\'uomo era uno schiavo vero, non un signore che teorizza la povertà. Quando dice che nessuno può farti del male, non sta parlando di qualcun altro.',
+       seDicono:[
+         {loro:'«Gli hanno rotto una gamba: quello è un male, punto.»',
+          tu:'È un danno al corpo, e nessuno lo nega. Epitteto direbbe: hanno rotto la gamba, non hanno rotto te. La domanda è se fra le due cose ci sia una differenza reale o se sia un gioco di parole — e su questo lavoreremo un\'ora.'},
+         {loro:'«È rassegnazione: così i padroni vincono sempre.»',
+          tu:'Obiezione seria, e Marx la farà. Ma tienila insieme a un fatto: sotto Nerone e Domiziano gli unici che rifiutarono di obbedire, e ci lasciarono la vita, erano stoici. Se è rassegnazione, produce degli strani rassegnati.'}
+       ]},
+
+      {minuti:'8–17', et:'Lo schieramento',
+       schermo:'«Nessuno può farti del male senza il tuo consenso.»',
+       opzioni:['È vero', 'È una consolazione per chi non può reagire'],
+       parlato:'Conta e scrivi i numeri. Il secondo gruppo di solito è largamente maggioritario.\n\nAllora dai lo strumento con cui lavoreranno per il resto dell\'ora, e falla scrivere: la dicotomia del controllo. Ci sono cose che dipendono da noi — il giudizio, il desiderio, l\'impulso, cioè quello che accade dentro — e cose che non dipendono da noi: il corpo, la reputazione, i beni, la morte.\n\nPoi fai l\'esercizio: prendi tre situazioni concrete che li riguardano — un\'interrogazione andata male, un tradimento di un amico, una malattia in famiglia — e per ciascuna fai separare le due colonne. Riesce sempre, e riesce bene.\n\nA questo punto arriva la parte dura, e va detta chiaramente: gli stoici non dicono «sopporta bene ciò che non dipende da te». Dicono che non è un male. È una tesi molto più forte, ed è quella da giudicare.',
+       seDicono:[
+         {loro:'«La salute non dipende da me ma è chiaramente un bene.»',
+          tu:'Gli stoici hanno una risposta, ed è la loro parte più contestata: la chiamano un indifferente preferibile. Non è un bene, ma va scelta. Gli avversari rispondono che è un modo elegante per dire «bene» senza dirlo. Chi ha ragione, secondo te?'},
+         {loro:'«Allora chi mi picchia non mi fa niente? Assurdo.»',
+          tu:'Ti fa qualcosa al corpo. La domanda è se possa raggiungere ciò che decidi, che pensi, che vuoi. Epitteto sostiene di no — e la sua gamba è la prova che non parla per sentito dire.'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'Provate a spezzare la tesi con i casi peggiori.\n\nSe perdi tutto quello che hai?\nSe ti calunniano e nessuno ti crede?\nSe muore una persona che ami?\nSe ti condannano a morte da innocente?\n\nOgni volta, la stessa risposta:\nquesto non dipende da te.\nDipende da te che cosa ne pensi e che cosa ne fai.\n\nE ogni volta la stessa domanda per voi:\n\nvi sembra falsa —\no vi sembra vera e insopportabile?',
+       parlato:'Fai i quattro casi uno per volta, dando ogni volta la risposta stoica e chiedendo se regge. È un esercizio, non una predica: devono provare a rompere una tesi e vedere che non si rompe facilmente.\n\nSul lutto, che è il caso più difficile, non ammorbidire: gli stoici dicono che il dolore per la morte di chi amiamo nasce da un giudizio — «mi è stato tolto qualcosa di mio» — e che nulla era mio. Epitteto dice di non dire mai «l\'ho perduto», ma «l\'ho restituito».\n\nQuasi sempre, a questo punto, l\'aula si divide fra chi trova la cosa disumana e chi comincia a vederci qualcosa. È il momento migliore dell\'ora e va lasciato respirare.\n\nSe qualcuno accusa gli stoici di essere insensibili, correggi con precisione: apátheia non significa non sentire niente. Significa non avere passioni, che per loro sono giudizi sbagliati. Il saggio prova gioia, cautela, volontà — le chiamano eupatìe.',
+       seDicono:[
+         {loro:'«"L\'ho restituito" è mostruoso: era mia madre.»',
+          tu:'È la reazione giusta, e non provo a toglierla. Chiediti però che cosa esattamente ti indigna: che sia falso, o che sia vero e chieda troppo? Sono due obiezioni diverse, e la seconda non confuta la tesi — dice che il prezzo è alto.'},
+         {loro:'«Se niente è un male, non c\'è più ragione di cambiare il mondo.»',
+          tu:'Non segue: ciò che non dipende da te resta qualcosa su cui agire, e il dovere del ruolo — il kathékon — te lo impone. Cambia il motivo, non l\'azione: non agisci perché ti fa soffrire, agisci perché è la cosa da fare.'}
+       ]},
+
+      {minuti:'28–38', et:'Il testo',
+       schermo:'«Delle cose, alcune dipendono da noi, altre no.\n\nDipendono da noi il giudizio, l\'impulso, il desiderio, il rifiuto:\nin una parola, tutto ciò che è opera nostra.\n\nNon dipendono da noi il corpo, gli averi,\nla reputazione, le cariche:\nin una parola, tutto ciò che non è opera nostra.»\n\n«Non sono le cose a turbare gli uomini,\nma le opinioni che essi hanno delle cose.»',
+       testo:{fonte:'Epitteto, Manuale 1 e 5 (I-II secolo d.C.)',
+              glossa:'Il Manuale non lo ha scritto Epitteto: sono appunti presi da un allievo, Arriano, che precisa di aver messo per iscritto le parole del maestro «come mi riusciva». Un ex schiavo che non scrive nulla e il cui pensiero ci arriva perché qualcuno lo trascriveva: la somiglianza con Socrate non è casuale.'},
+       parlato:'Leggi il primo passo e fai notare la struttura: non è un consiglio, è un inventario. Due colonne, e tutto ciò che esiste va in una delle due.\n\nPoi il secondo passo, e fermati sulla parola «opinioni». Non dice che le cose non accadono: dice che fra la cosa e il turbamento c\'è sempre un giudizio, e che il giudizio è nostro. Togli il giudizio e resta l\'evento, che è muto.\n\nA questo punto puoi dare il collegamento che di solito li sorprende più di tutto il resto: questa frase sta nella prima pagina dei manuali di terapia cognitiva. Albert Ellis e Aaron Beck, negli anni Cinquanta e Sessanta, la citano come premessa del metodo. Milioni di persone oggi sono curate con una tecnica che comincia dove comincia questo schiavo zoppo.',
+       seDicono:[
+         {loro:'«Allora basta pensarla diversamente e si sta bene? Non funziona così.»',
+          tu:'Infatti Epitteto non dice «pensala diversamente». Dice di allenarsi ogni giorno su cose piccole — un piatto rotto, un ritardo — per essere capaci quando arriva quella grande. È la stessa cosa che diceva Epicuro con «abìtuati»: sono terapie, non dimostrazioni.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'Questa dottrina è stata scritta da tre uomini.\n\nUno era uno schiavo, azzoppato dal padrone.\n\nUno era l\'uomo più ricco di Roma,\nprecettore di Nerone, che gli ordinò di uccidersi.\n\nUno era l\'imperatore del mondo,\ne la scriveva di notte, per sé, sotto una tenda,\nmentre combatteva sul Danubio.\n\nDal fondo e dalla cima della stessa società,\nesattamente le stesse parole.',
+       parlato:'Dai i tre ritratti e lascia il tempo di far pesare la simmetria. Poi la domanda: che cosa dimostra?\n\nRaccogli le loro risposte, e poi metti sul tavolo il caso scomodo, che è Seneca. Ha scritto pagine bellissime sul disprezzo della ricchezza mentre possedeva una fortuna immensa; è stato accusato di prestare denaro a interesse in Britannia; è stato precettore di Nerone e non lo ha fermato. Quando Nerone gli ordinò di uccidersi, si aprì le vene con calma e continuò a dettare ai segretari.\n\nChiedi: la sua vita confuta la sua filosofia? È la domanda con cui si impara a distinguere l\'argomento dall\'autore — e vale per tutto l\'anno.\n\nSe hai tempo, il dettaglio su Marco Aurelio: i suoi appunti non erano destinati a nessuno. Il titolo che leggiamo, «A sé stesso», è quello vero. L\'uomo più potente della terra scriveva ogni notte per convincere sé stesso di cose che sapeva già.',
+       seDicono:[
+         {loro:'«Seneca era un ipocrita, quindi il suo stoicismo non vale.»',
+          tu:'Attenzione alla mossa: stai valutando una tesi guardando chi la dice. Se funziona qui, funziona sempre — e allora non potrai più credere a nulla detto da qualcuno che non sia perfetto. Il che vuol dire a nulla.'},
+         {loro:'«L\'imperatore poteva permetterselo, lo schiavo no.»',
+          tu:'Rovescia la frase e vedi se regge ancora: lo schiavo non aveva niente da perdere, l\'imperatore tutto. Chiunque dei due sceglierebbe di più quella dottrina? Il fatto che l\'abbiano scelta entrambi è precisamente ciò che non si spiega con la convenienza.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'Torniamo alla gamba.\n\nGliel\'hanno spezzata. Questo è un fatto.\n\nEpitteto sostiene che non gli hanno tolto niente\ndi ciò che era davvero suo.\n\nUltima domanda dell\'ora, e non riguarda lui:\n\nc\'è qualcosa che vi hanno tolto\ne che state ancora chiamando un danno?\n\nE se sì —\nera vostro?',
+       parlato:'Non chiedere risposte a voce: è una domanda che si porta a casa.\n\nPrima di chiudere, due cose vanno dette perché l\'ora non diventi un santino.\n\nLa prima: la dottrina ha un prezzo, e i suoi avversari lo indicano da duemila anni. Se nulla di esterno è un bene, perché la salute andrebbe preferita alla malattia? Gli stoici hanno una risposta — gli indifferenti preferibili — e nessuno l\'ha mai trovata del tutto convincente. Non state guardando una teoria perfetta.\n\nLa seconda: quello che avete visto oggi non è una consolazione ma un allenamento. Epitteto fa esercitare i suoi allievi su un piatto rotto, non sul lutto. Comincia dalle cose piccole proprio perché quelle grandi arrivano senza preavviso.\n\nChiudi qui, e annuncia la prossima: un uomo che partirà dalla stessa domanda — che cosa è davvero mio — e darà una risposta opposta, cercandolo dentro invece che intorno. Si chiama Plotino.',
+       seDicono:[
+         {loro:'«Ma è possibile vivere davvero così?»',
+          tu:'Loro dicevano di no: il saggio perfetto è raro come la fenice, e forse non è mai esistito. Serve come direzione, non come traguardo. Ed è più onesto di quanto sembri — nessuno di loro ha mai sostenuto di esserci arrivato.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'Il cilindro di Crisippo',
+       corpo:'Se tutto accade per destino, come si può essere responsabili? Crisippo risponde con un\'immagine.\n\nPrendi un cilindro e spingilo lungo un piano inclinato. La spinta viene da fuori, e senza quella non si muoverebbe. Ma rotola perché è fatto in un certo modo: un cubo, con la stessa spinta, resterebbe fermo.\n\nCosì le impressioni ci arrivano da fuori e non le scegliamo. Ma come reagiamo dipende dalla forma che abbiamo — e quella forma siamo noi.',
+       chiedi:'Vi convince come soluzione? Provate a obiettare così: anche la forma del cilindro è stata determinata da cause precedenti, che non ha scelto. Che cosa resta della responsabilità? E come rispondereste, se doveste difendere Crisippo?'},
+      {titolo:'Il piatto rotto',
+       corpo:'Epitteto non fa esercitare gli allievi sulle disgrazie: comincia dalle cose minime.\n\n«Se ami una tazza, di\' che ami una tazza: così se si rompe non ti turberai.»\n\n«Comincia da piccole cose. Ti si è versato dell\'olio, ti hanno rubato un po\' di vino: di\' a te stesso che questo è il prezzo dell\'imperturbabilità, e nulla si ottiene gratis.»\n\nE quando chiami qualcuno e non risponde subito, dice, esercitati a restare tranquillo: perché è lì che si costruisce ciò che ti servirà quando la cosa sarà grande.',
+       chiedi:'Perché cominciare dalle sciocchezze? E siete d\'accordo che la calma davanti a un lutto si costruisca sulla calma davanti a un bicchiere rotto — o sono due cose che non c\'entrano niente l\'una con l\'altra?'},
+      {titolo:'L\'imperatore che scriveva per sé',
+       corpo:'I Pensieri di Marco Aurelio non erano destinati alla pubblicazione. Il titolo greco è «Tà eis heautón»: a sé stesso. Sono appunti notturni scritti durante le campagne militari sul Danubio, e cominciano con un lungo elenco di persone a cui deve qualcosa.\n\n«Fra poco avrai dimenticato tutto, e fra poco tutti avranno dimenticato te.»\n\n«Non disprezzare la morte, ma accoglila di buon animo, perché anch\'essa è una di quelle cose che la natura vuole.»\n\n«All\'alba, quando ti riesce difficile svegliarti, tieni pronto questo pensiero: mi sveglio per fare l\'opera di un uomo.»',
+       chiedi:'L\'uomo più potente del mondo passava le notti a ripetere a sé stesso cose che sapeva già. Perché? E che cosa dice, del rapporto fra sapere una cosa e riuscire a viverla?'}
+    ],
+    testi:[
+      {fonte:'Epitteto, Manuale 8 e 11',
+       corpo:'«Non pretendere che le cose accadano come vuoi tu, ma vogli che accadano come accadono: e la tua vita scorrerà serena.»\n\n«Non dire mai di nulla: l\'ho perduto. Ma: l\'ho restituito. È morto tuo figlio? È stato restituito. Ti è stata tolta la terra? Anche questa è stata restituita.»',
+       glossa:'Il secondo passo è il più duro dello stoicismo e va letto senza attenuarlo: la classe deve poterlo rifiutare consapevolmente. Il presupposto è che nulla sia nostro in proprietà — siamo usufruttuari di tutto, compresi gli affetti. Se si accetta la premessa, la conclusione segue; ed è la premessa che va discussa.'},
+      {fonte:'Seneca, Epistole a Lucilio 47',
+       corpo:'«Sono schiavi. No: sono uomini. Sono schiavi. No: compagni di stanza. Sono schiavi. No: umili amici. Sono schiavi. No: conservi, se pensi che alla sorte sia lecito lo stesso su di noi e su di loro.»',
+       glossa:'È la pagina più avanzata dell\'antichità sul tema, e insieme la misura del suo limite: Seneca chiede di trattare umanamente gli schiavi, non di liberarli. Vale la pena tenerla accanto al capitolo su Aristotele — in quattro secoli qualcosa si è mosso, ma la premessa non è ancora saltata.'},
+      {fonte:'Cleante, Inno a Zeus (frammento), nella versione di Seneca',
+       corpo:'«Conducimi, o Zeus, e tu, Destino, dovunque siate destinato che io vada: vi seguirò senza esitare. E se non volessi, malvagio, dovrei seguirvi lo stesso.»\n\nSeneca lo traduce e aggiunge: «Ducunt volentem fata, nolentem trahunt» — i fati conducono chi acconsente, trascinano chi resiste.',
+       glossa:'È il cane legato al carro, detto in due versi. Il punto da far notare: la scelta non riguarda la destinazione, che è fissata comunque, ma il modo di arrivarci. Ed è tutto ciò che gli stoici chiamano libertà.'}
+    ],
+    compito:'Mezza pagina. Prendete una cosa che vi ha fatto arrabbiare o soffrire negli ultimi giorni e dividetela in due colonne: che cosa, lì dentro, dipendeva da voi e che cosa no. Poi la domanda vera: se togliete dalla colonna del dolore tutto ciò che non dipendeva da voi, che cosa resta? Scrivete anche se non resta niente, o se resta tutto.',
+    fonti:[
+      'Epitteto, Manuale 1, 5, 8, 11, 43; Diatribe I 1, I 29, II 5',
+      'Marco Aurelio, Pensieri II 1, IV 3, V 1, VII 59, XII 36',
+      'Seneca, Epistole a Lucilio 1, 47, 70, 107; De providentia; De brevitate vitae',
+      'Diogene Laerzio, Vite VII 1-160 — la dottrina della Stoà antica',
+      'Cicerone, De fato 39-45 (il cilindro di Crisippo); De finibus III (l\'etica stoica)',
+      'A.A. Long e D.N. Sedley, I filosofi ellenistici',
+      'A. Ellis, Ragione ed emozione in psicoterapia (1962); A.T. Beck, Cognitive Therapy (1976) — le citazioni di Epitteto'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',

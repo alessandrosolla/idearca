@@ -139,7 +139,7 @@ Si va in ordine di programma. Restano:
 - [x] Filosofia antica · 7 — Aristotele: logica e metafisica
 - [x] Filosofia antica · 8 — Aristotele: etica e politica
 - [x] Filosofia antica · 9 — Epicureismo e scetticismo
-- [ ] Filosofia antica · 10 — Lo stoicismo
+- [x] Filosofia antica · 10 — Lo stoicismo
 - [ ] Filosofia antica · 11 — Il neoplatonismo e Plotino
 - [ ] Filosofia antica · 12 — Agostino d'Ippona
 - [ ] Storia medievale · 1 — La ripresa dopo l'anno Mille
