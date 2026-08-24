@@ -4488,6 +4488,227 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Storia medievale · 8 — La crisi dei poteri universali': {
+  mappa: {
+    n:'La crisi dei poteri universali', d:'come papato e impero smettono di comandare su tutti',
+    f:[
+      {r:'parte da', n:'Che cosa erano', d:'due autorita che pretendevano di valere per l\'intera cristianita',
+       f:[
+         {r:'il', n:'Papato', d:'guida spirituale di tutti i cristiani d\'Occidente, al di sopra dei regni'},
+         {r:'l\'', n:'Impero', d:'erede dichiarato di Roma, protettore della Chiesa, sovrano sopra i sovrani'},
+         {r:'legati dalla teoria', n:'Delle due spade', d:'una spirituale e una temporale, entrambe consegnate da Dio',
+          f:[{piu:true, r:'ma su chi comandi', n:'Non c\'e accordo', d:'ed e la materia di tre secoli di scontro'}]},
+         {r:'e sostenuti da', n:'Un\'unica lingua colta', d:'il latino: chi conta, in Europa, si capisce senza traduttori'},
+         {r:'gia logorati da', n:'Due secoli di conflitto', d:'lotta per le investiture, Federico Barbarossa, Federico II'}
+       ]},
+
+      {r:'precipita con', n:'Bonifacio VIII e Filippo il Bello', d:'1296-1303: il papato perde lo scontro decisivo',
+       f:[
+         {r:'nasce da', n:'La tassazione del clero', d:'il re di Francia vuole tassare i beni ecclesiastici per finanziare la guerra'},
+         {r:'il papa risponde con', n:'Clericis laicos', d:'1296: vietato tassare il clero senza il consenso della Santa Sede'},
+         {r:'e poi con', n:'Unam Sanctam', d:'1302: la formulazione piu estrema della supremazia papale',
+          f:[{r:'afferma che', n:'Ogni creatura deve sottostare al papa', d:'per essere salvata: non c\'e piu spazio per il compromesso'}]},
+         {piu:true, r:'il re usa anche', n:'La propaganda', d:'fa circolare versioni falsificate delle bolle papali per indignare il regno'},
+         {r:'il re reagisce con', n:'Lo schiaffo di Anagni', d:'1303: i suoi uomini catturano il papa, che muore poche settimane dopo',
+          f:[{r:'e nessuno', n:'Interviene in suo favore', d:'ed e questo il dato: la minaccia della scomunica non spaventa piu'},
+             {piu:true, r:'il re aveva convocato', n:'Gli Stati generali', d:'1302: cerca il consenso del regno prima di sfidare Roma'}]}
+       ]},
+
+      {r:'prosegue ad', n:'Avignone', d:'1309-1377: il papato risiede in Francia per settant\'anni',
+       f:[
+         {r:'con', n:'Sette papi francesi', d:'eletti da collegi cardinalizi a maggioranza francese'},
+         {r:'costruisce', n:'Una macchina fiscale', d:'decime, annate, tasse sulle nomine: la Curia diventa un\'amministrazione efficientissima'},
+         {r:'e ne esce', n:'Un\'immagine di sottomissione', d:'agli occhi di inglesi, tedeschi e italiani il papa e ormai un cappellano del re di Francia'},
+         {r:'i critici la chiamano', n:'Cattivita babilonese', d:'l\'espressione e di Petrarca: il papato in esilio come Israele a Babilonia'},
+         {r:'a chiederne il ritorno', n:'Caterina da Siena', d:'e uno dei rari casi in cui una donna parla cosi al papa'},
+         {piu:true, r:'il ritorno del 1377', n:'Dura pochi mesi', d:'Gregorio XI muore l\'anno dopo, e comincia il disastro'}
+       ]},
+
+      {r:'esplode nel', n:'Grande Scisma', d:'1378-1417: la Chiesa ha due papi, poi tre',
+       f:[
+         {r:'comincia da', n:'Un conclave sotto pressione', d:'la folla romana chiede un papa italiano; i cardinali eleggono, poi si pentono'},
+         {r:'produce', n:'Due papi', d:'uno a Roma e uno ad Avignone, ciascuno con la propria Curia e i propri cardinali',
+          f:[{r:'che si', n:'Scomunicano a vicenda', d:'ogni cristiano d\'Europa e scomunicato da uno dei due'}]},
+         {r:'e le obbedienze', n:'Seguono la politica', d:'Francia e alleati da una parte, Inghilterra e Impero dall\'altra: la fede segue i confini'},
+         {r:'il tentativo di', n:'Pisa, 1409', d:'un concilio depone entrambi e ne elegge un terzo: nessuno dei due se ne va'},
+         {r:'e il problema e', n:'Logicamente insolubile', d:'se il papa e l\'autorita suprema e ce ne sono tre, nessuna autorita puo decidere'}
+       ]},
+
+      {r:'trova risposta nel', n:'Conciliarismo', d:'l\'idea che l\'assemblea valga piu del capo',
+       f:[
+         {r:'elaborato dai', n:'Teologi di Parigi', d:'Gerson e d\'Ailly: la Chiesa e la comunita dei fedeli, non il suo vertice'},
+         {r:'trionfa a', n:'Costanza', d:'1414-1418: il concilio piu importante del Medioevo'},
+         {r:'con il decreto', n:'Haec sancta', d:'1415: il concilio ha il potere da Cristo, e tutti devono obbedirgli, anche il papa'},
+         {r:'e lo mette in pratica', n:'Deponendo tre papi', d:'e eleggendone uno nuovo, Martino V: lo scisma finisce'},
+         {r:'con il decreto', n:'Frequens', d:'1417: i concili si riuniranno a scadenze fisse, come un parlamento della Chiesa'},
+         {r:'ma poi', n:'Il papato riprende il controllo', d:'Basilea si arena, Ferrara-Firenze restituisce prestigio al papa',
+          f:[{r:'e nel 1460', n:'Execrabilis', d:'Pio II vieta di appellarsi a un concilio contro il papa: la riforma interna e chiusa'},
+             {piu:true, r:'e Haec sancta resta', n:'Un problema teologico irrisolto', d:'discusso ancora nel Novecento'}]}
+       ]},
+
+      {r:'e attaccata da', n:'La contestazione dottrinale', d:'chi nega alla radice il potere temporale della Chiesa',
+       f:[
+         {r:'Marsilio da Padova', n:'Defensor pacis', d:'1324: il potere viene dalla comunita dei cittadini, e la Chiesa non ha giurisdizione'},
+         {r:'Guglielmo di Occam', n:'Nega la plenitudo potestatis', d:'e sostiene che il papa puo errare, e che la Chiesa non e il papa'},
+         {r:'in Inghilterra', n:'John Wyclif', d:'la vera Chiesa e la comunita dei predestinati; la Scrittura vale piu della gerarchia'},
+         {r:'e ovunque circolano', n:'Traduzioni della Bibbia in volgare', d:'chi legge da solo non ha piu bisogno di chi gli spiega',
+          f:[{piu:true, r:'ed e per questo che', n:'Vengono proibite', d:'la questione della lingua e una questione di potere, non di filologia'}]},
+         {r:'in Boemia', n:'Jan Hus', d:'riprende Wyclif, predica in ceco, attacca la ricchezza del clero',
+          f:[{r:'convocato a Costanza con', n:'Un salvacondotto imperiale', d:'viene processato e bruciato nel 1415'},
+             {r:'e la Boemia', n:'Insorge', d:'le guerre hussite: cinque crociate imperiali respinte in quindici anni'},
+             {piu:true, r:'e un secolo dopo', n:'Lutero rilegge Costanza', d:'e conclude che il concilio ha condannato tesi cristianissime'}]}
+       ]},
+
+      {r:'coinvolge anche', n:'L\'Impero', d:'che si trasforma in qualcosa di piu piccolo e piu tedesco',
+       f:[
+         {r:'dopo', n:'Il grande interregno', d:'1250-1273: vent\'anni senza un imperatore riconosciuto'},
+         {r:'lo scontro con', n:'Ludovico il Bavaro', d:'scomunicato dal papa di Avignone, si fa incoronare a Roma dal popolo'},
+         {r:'si chiude con la', n:'Bolla d\'oro', d:'1356: sette principi eleggono l\'imperatore, e il papa non c\'entra piu',
+          f:[{r:'e l\'Impero diventa', n:'Elettivo e tedesco', d:'un\'unione di principi, non piu un\'autorita universale'},
+             {piu:true, r:'e i principi ottengono', n:'Sovranita nei loro territori', d:'zecca, giustizia, miniere: e il seme della frammentazione'}]}
+       ]},
+
+      {r:'lascia il posto a', n:'Le monarchie nazionali', d:'il vuoto lasciato dai poteri universali viene riempito',
+       f:[
+         {r:'che costruiscono', n:'Chiese nazionali', d:'il re nomina i vescovi e controlla le entrate ecclesiastiche',
+          f:[{r:'in Francia con la', n:'Prammatica sanzione di Bourges', d:'1438: la Chiesa francese si autogoverna sotto il re'}]},
+         {r:'si dotano di', n:'Diplomazia stabile', d:'ambasciatori permanenti: gli Stati trattano fra pari, senza arbitri superiori'},
+         {piu:true, r:'e usano', n:'La lingua volgare negli atti', d:'l\'amministrazione parla la lingua del regno, non piu quella universale'},
+         {r:'e affermano', n:'La sovranita territoriale', d:'dentro i miei confini non c\'e autorita superiore alla mia'},
+         {r:'perche dispongono di', n:'Fisco, esercito e giustizia', d:'strumenti che il papa e l\'imperatore non hanno mai avuto davvero'},
+         {r:'cosi l\'universalismo', n:'Sopravvive come linguaggio', d:'i titoli restano, il potere reale e passato altrove'}
+       ]}
+    ],
+    incroci:[
+      {da:'Interviene in suo favore', a:'Fisco, esercito e giustizia', r:'nessuno lo fa perche i re hanno ormai',
+       perche:'Ad Anagni il papa viene catturato e nessun sovrano si muove. La ragione non e il coraggio di Filippo il Bello ma la struttura: i re dispongono di tasse, soldati e tribunali propri, mentre il papa dispone di scomuniche. Quando l\'arma spirituale non spaventa piu, il potere universale resta senza strumenti.'},
+      {da:'Sette papi francesi', a:'Un conclave sotto pressione', r:'sono la causa remota di',
+       perche:'Settant\'anni di papi e cardinali francesi rendono esplosivo il ritorno a Roma: la folla pretende un italiano, i cardinali francesi cedono e poi si pentono. Lo scisma non nasce da una questione di fede, nasce da settant\'anni di squilibrio nazionale dentro il collegio cardinalizio.'},
+      {da:'Logicamente insolubile', a:'Teologi di Parigi', r:'e il problema che costringe i',
+       perche:'Con tre papi, il sistema non ha alcuna procedura interna per decidere: chi giudica il giudice supremo? È il vicolo cieco a far nascere la teoria conciliare — cioe che l\'autorita stia nella comunita e non nel vertice. Le idee costituzionali nascono quasi sempre da un\'impasse pratica, non da una speculazione.'},
+      {da:'Haec sancta', a:'La sovranita territoriale', r:'anticipa la logica di',
+       perche:'Dire che l\'assemblea ha il potere da Cristo e che il capo deve obbedirle e, in forma teologica, la stessa domanda che la politica moderna porra ai re: dove risiede davvero la sovranita, nella persona o nel corpo? Costanza pone il problema tre secoli prima, dentro la Chiesa.'},
+      {da:'Un salvacondotto imperiale', a:'Insorge', r:'e il tradimento che fa',
+       perche:'Hus non viene bruciato solo per le sue tesi: viene bruciato dopo essere stato attirato con una garanzia imperiale. La Boemia non reagisce a una controversia teologica, reagisce a una parola data e ritirata — ed e per questo che la rivolta e nazionale prima ancora che religiosa.'},
+      {da:'Execrabilis', a:'Lutero rilegge Costanza', r:'chiude la porta che rende possibile',
+       perche:'Vietando l\'appello al concilio, il papato si toglie l\'unico organo capace di riformarlo dall\'interno. Sessant\'anni dopo la riforma arriva lo stesso, ma da fuori e senza controllo. Il divieto non elimina il problema: elimina la sede in cui si poteva ancora trattare.'},
+      {da:'Defensor pacis', a:'Chiese nazionali', r:'fornisce la giustificazione teorica alle',
+       perche:'Marsilio sostiene che il potere nasce dalla comunita dei cittadini e che la Chiesa non ha giurisdizione temporale. È esattamente la dottrina di cui i re hanno bisogno per nominare vescovi e incassare decime: la teoria piu radicale del Trecento finisce al servizio delle monarchie.'},
+      {da:'Bolla d\'oro', a:'Delle due spade', r:'chiude definitivamente la teoria',
+       perche:'Stabilire che sette principi eleggono l\'imperatore senza alcun intervento papale significa sciogliere il legame che fondava le due spade. Da quel momento l\'Impero e un\'istituzione tedesca fra le altre, e il titolo universale sopravvive alla cosa.'},
+      {da:'Seguono la politica', a:'Ogni creatura deve sottostare al papa', r:'rende ridicola la pretesa che',
+       perche:'Unam Sanctam dichiara che la salvezza passa dall\'obbedienza al pontefice. Ottant\'anni dopo, l\'obbedienza dipende da quale alleanza politica ha scelto il proprio re. Non serve confutare la dottrina: la pratica la svuota da sola, e i contemporanei se ne accorgono.'},
+      {da:'Una macchina fiscale', a:'John Wyclif', r:'e il bersaglio principale di',
+       perche:'Le contestazioni del Trecento non partono dalla teologia ma dal denaro: decime, annate e tasse sulle nomine rendono visibile una Chiesa ricca che predica la poverta. Wyclif e Hus attaccano prima la ricchezza e poi la dottrina, ed e per questo che trovano ascolto anche fra chi di teologia non capisce nulla.'},
+      {da:'Frequens', a:'Il papato riprende il controllo', r:'viene svuotato quando',
+       perche:'Frequens istituiva concili a scadenza fissa: in pratica un organo permanente accanto al papa. Nel giro di trent\'anni le convocazioni si diradano e poi cessano. Una regola che dipende da chi dovrebbe esserne limitato non sopravvive alla prima occasione favorevole.'},
+      {da:'Un\'unica lingua colta', a:'La lingua volgare negli atti', r:'viene sostituita dalla',
+       perche:'Finche l\'Europa che conta parla latino, un\'autorita universale ha un senso pratico: puo essere capita ovunque. Quando le cancellerie passano al volgare e la Bibbia comincia a circolare tradotta, ogni regno costruisce un proprio circuito chiuso — e l\'universalismo perde perfino lo strumento con cui si esprimeva.'},
+      {da:'Gli Stati generali', a:'Fisco, esercito e giustizia', r:'servono a costruire',
+       perche:'Prima di sfidare il papa, Filippo il Bello convoca il regno e ne ottiene l\'appoggio. È il meccanismo che rende le monarchie piu forti dei poteri universali: chiedere il consenso per poter chiedere il denaro, e con il denaro pagare l\'esercito e i giudici.'}
+    ]
+  },
+  provocazione: {
+    titolo:'Costanza, 1415',
+    durata:'55 minuti',
+    domandaMadre:'Un potere in crisi conviene che cambi le proprie regole o che elimini chi le contesta?',
+    perche:'Nella stessa citta, nello stesso anno, la stessa assemblea fa due cose opposte: proclama che il concilio sta sopra il papa — la tesi piu rivoluzionaria del Medioevo, in pratica una costituzione — e brucia vivo un uomo arrivato con un salvacondotto imperiale. La classe deve tenere insieme le due cose senza sceglierne una sola, perche l\'intreccio e il punto: le istituzioni in crisi provano contemporaneamente a riformarsi e a reprimere, e quale delle due prevalga decide il secolo successivo. Il colpo di scena — Lutero che nel 1519 rilegge gli atti di Costanza e conclude che un concilio puo sbagliare — mostra che la repressione del 1415 ha costruito il problema del 1517.',
+    occorrente:'Niente.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'Costanza, sul lago, 1415.\nÈ riunita la piu grande assemblea\nche l\'Europa medievale abbia mai visto.\n\nNello stesso anno, la stessa assemblea:\n\ndichiara che il concilio riceve il potere\ndirettamente da Cristo\ne che tutti — «anche il papa» —\nsono tenuti a obbedirgli;\n\ndepone tre papi\ne ne elegge uno nuovo;\n\nbrucia vivo un professore di Praga\nche era arrivato\ncon un salvacondotto dell\'imperatore.\n\nÈ un\'assemblea rivoluzionaria\no un\'assemblea che difende il potere?',
+       parlato:'Dai i tre fatti lentamente, senza commentarli, e poi la domanda.\n\nSe qualcuno chiede chi fossero i tre papi, rispondi subito: dal 1378 la Chiesa ne aveva due, uno a Roma e uno ad Avignone; dal 1409 tre. Non un\'eresia, non uno scandalo morale: tre uomini che si dichiaravano ciascuno l\'unico vero papa, ognuno con la propria corte e i propri cardinali, ognuno che scomunicava gli altri due.\n\nFai notare la conseguenza, che di solito diverte e inquieta insieme: ogni cristiano d\'Europa era scomunicato da qualcuno, e nessuno poteva sapere da chi giustamente.\n\nLa domanda va tenuta aperta: il punto dell\'ora e che le due risposte sono entrambe vere.',
+       seDicono:[
+         {loro:'«Come si fa a non sapere chi e il papa?»',
+          tu:'Non c\'era nessun ufficio che potesse accertarlo. Se il papa e l\'autorita suprema, chi giudica una lite fra tre papi? Nessuno, perche sopra non c\'e niente. Non e un\'ignoranza: e un buco nelle regole.'},
+         {loro:'«Bastava guardare chi era stato eletto prima.»',
+          tu:'Ci hanno provato, e la disputa era proprio su quello: il primo conclave si era svolto con la folla romana che urlava sotto le finestre, e i cardinali dissero poi di aver votato sotto minaccia. Chi doveva stabilire se quella pressione invalidava l\'elezione?'}
+       ]},
+
+      {minuti:'8–17', et:'Lo schieramento',
+       schermo:'Un concilio che depone tre papi\ne ne elegge uno nuovo:',
+       opzioni:['sta salvando la Chiesa da un guasto tecnico', 'sta cambiando la costituzione della Chiesa'],
+       parlato:'Fai schierare e conta prima di discutere.\n\nPoi porta tutti sulla frase del decreto, perche decide la questione. Haec sancta non dice «in questo caso eccezionale interveniamo». Dice che il concilio ha il potere immediatamente da Cristo e che chiunque, di qualunque dignita, «anche papale», e tenuto a obbedirgli.\n\nChiedi: e una regola per l\'emergenza o una regola per sempre? La formula e generale — e questo la rende enorme.\n\nPoi la traduzione politica, che li interessa: e la stessa domanda che tre secoli dopo verra posta ai re. Il potere sta nella persona che sta in cima, o nel corpo che quella persona rappresenta? A Costanza, per un momento, l\'Europa risponde: nel corpo.',
+       seDicono:[
+         {loro:'«Ma allora la Chiesa era una democrazia.»',
+          tu:'No: l\'assemblea era di vescovi e teologi, non di fedeli. Ma la struttura del ragionamento e quella — l\'autorita del vertice deriva dal corpo, non viceversa. È un principio, e i principi hanno la brutta abitudine di essere applicati oltre le intenzioni di chi li formula.'},
+         {loro:'«Se funzionava, perche non e rimasta cosi?»',
+          tu:'Tieni la domanda: ci torniamo fra venti minuti, ed e la parte piu istruttiva dell\'ora.'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'Nella stessa assemblea, luglio 1415.\n\nJan Hus, professore a Praga,\naveva predicato in ceco,\nattaccato la ricchezza del clero,\nsostenuto che la Scrittura conta\npiu della gerarchia.\n\nViene convocato a Costanza\nper discutere le proprie tesi.\n\nL\'imperatore Sigismondo gli concede\nun salvacondotto scritto.\n\nHus arriva. Viene arrestato,\nprocessato e bruciato vivo\nil 6 luglio 1415.\n\nAlla protesta sul salvacondotto,\nil concilio risponde che una promessa\nfatta a un eretico non obbliga.',
+       parlato:'Lascia cadere l\'ultima frase e aspetta.\n\nPoi la domanda, che va posta bene: il concilio ha mentito?\n\nGuidali a vedere il meccanismo, perche e piu inquietante della semplice slealta. Il ragionamento e questo: la promessa vale fra persone che appartengono alla stessa comunita; l\'eretico si e messo fuori; quindi non c\'e nessun obbligo verso di lui. Non e una bugia — e la costruzione di una categoria di persone verso cui le regole non valgono.\n\nQui vale la pena fermarsi un momento e dirlo esplicitamente: questa mossa non appartiene solo al Quattrocento. Ogni volta che qualcuno sostiene che con una certa categoria di persone non valgono le regole normali, sta usando la stessa struttura. Riconoscerla e piu utile che indignarsi.\n\nPoi torna alla contraddizione: la stessa assemblea che dice «il potere viene dal corpo dei fedeli» brucia chi diceva che la Chiesa e la comunita dei fedeli e non la gerarchia. Come sta insieme?\n\nLa risposta, se non ci arrivano: un\'assemblea che si prende il potere del papa ha un bisogno disperato di dimostrare di non essere eretica.',
+       seDicono:[
+         {loro:'«Sigismondo poteva impedirlo.»',
+          tu:'Poteva, e non lo fece: gli serviva il concilio per chiudere lo scisma, e sacrifico la propria parola. Nota il costo: quindici anni di guerre hussite e cinque crociate imperiali respinte. La slealta gli e costata piu del salvacondotto.'},
+         {loro:'«Quindi il concilio era ipocrita.»',
+          tu:'Piu che ipocrita, sotto assedio. Stava facendo una cosa enorme e contestabile: deporre dei papi. Bruciare un eretico era il modo piu rapido per mostrare di essere ortodosso. La repressione serviva a coprire la rivoluzione — e questo capita spesso.'}
+       ]},
+
+      {minuti:'28–38', et:'Il testo',
+       schermo:'Dal decreto Haec sancta, aprile 1415:\n\n«Questo santo sinodo di Costanza,\nlegittimamente riunito nello Spirito Santo,\nrappresentante la Chiesa cattolica,\nriceve il potere immediatamente da Cristo:\ne chiunque, di qualunque stato o dignita,\nanche papale,\ne tenuto a obbedirgli\nin cio che riguarda la fede,\nl\'estirpazione dello scisma\ne la riforma della Chiesa\nnel capo e nelle membra.»\n\n«Nel capo e nelle membra.»\nIn capite et in membris.',
+       testo:{fonte:'Concilio di Costanza, decreto Haec sancta synodus, 6 aprile 1415',
+              glossa:'Tre parole vanno pesate. «Rappresentante»: l\'assemblea non e la Chiesa, ne fa le veci — ed e la prima volta che il concetto compare in questa forma. «Immediatamente da Cristo»: il potere non passa dal papa, quindi non dipende da lui. «Anche papale»: non c\'e eccezione al vertice. Messe insieme, sono la struttura di una costituzione.'},
+       parlato:'Leggi il decreto due volte, la seconda fermandoti sulle tre espressioni della glossa.\n\nPoi la domanda utile: che differenza fa dire «rappresenta la Chiesa» invece di «e la Chiesa»?\n\nÈ una distinzione che vale per tutto il pensiero politico moderno: chi rappresenta agisce per conto di qualcun altro, quindi puo essere giudicato in base a quel mandato. Il papa, nella dottrina precedente, non rappresentava nessuno — era il vicario di Cristo e basta.\n\nSe la classe regge, aggiungi la formula finale: riforma «nel capo e nelle membra». Ammette pubblicamente che il guasto e in cima, non solo alla base. È una diagnosi che nessuna istituzione fa volentieri di se stessa.',
+       seDicono:[
+         {loro:'«Se l\'hanno scritto, allora vale ancora?»',
+          tu:'Domanda ottima, e la risposta e che se ne discute da seicento anni. Il papato successivo ha sostenuto che Haec sancta valeva solo per l\'emergenza dello scisma; i conciliaristi che valeva sempre. Il testo, per come e formulato, non aiuta chi lo vuole limitare.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'Lipsia, luglio 1519.\nCentoquattro anni dopo.\n\nMartin Lutero sta discutendo\ncon il teologo Johann Eck.\n\nEck lo incalza con l\'accusa\npiu grave che si possa muovere:\n«Le tue tesi sono quelle di Hus,\ne Hus e stato condannato a Costanza.»\n\nÈ una trappola: basta rispondere\n«io non sono hussita» e la discussione finisce.\n\nLutero chiede una pausa.\nVa a leggere gli atti del concilio.\n\nTorna e risponde che fra le proposizioni\ncondannate a Costanza\nalcune sono «cristianissime ed evangeliche»,\ne che dunque anche un concilio puo sbagliare.\n\nIn quel momento perde\nl\'ultima autorita a cui potersi appellare.',
+       parlato:'Racconta la scena come una scena: l\'accusa, la trappola, la pausa, il ritorno.\n\nPoi fai capire che cosa significa quella risposta. Fino a quel momento Lutero poteva dire: il papa sbaglia, ma un concilio metterebbe le cose a posto. Dopo Lipsia non puo piu — se anche i concili sbagliano, non resta nessuna autorita umana. Resta solo la Scrittura, e la rottura diventa inevitabile.\n\nOra chiudi il cerchio, ed e il punto dell\'ora. Costanza aveva bruciato Hus per chiudere il problema. Cosa e successo? Il rogo ha reso Hus un martire nazionale ceco, ha prodotto quindici anni di guerra, e ha lasciato agli atti una condanna che un secolo dopo un altro professore va a leggersi — e che gli serve da leva per rompere con Roma.\n\nE aggiungi il secondo tempo: nel 1460 il papa Pio II vieta formalmente di appellarsi a un concilio contro il papa. La strada della riforma interna viene chiusa. Cinquantasette anni dopo arriva la riforma, ma da fuori, e nessuno la controlla.',
+       seDicono:[
+         {loro:'«Quindi se avessero ascoltato Hus non ci sarebbe stata la Riforma?»',
+          tu:'Non possiamo saperlo e diffida di chi te lo dice con sicurezza. Quello che possiamo dire e piu preciso: le cause del malcontento erano ancora tutte li nel 1517, e i canali per affrontarle erano stati chiusi uno per uno. Non e una previsione, e una constatazione su quali strade restavano aperte.'},
+         {loro:'«Bruciare Hus e stato un errore di calcolo, allora.»',
+          tu:'Nel breve periodo no: il concilio ottenne quello che voleva, apparire ortodosso mentre deponeva tre papi. Gli errori di questo tipo funzionano quasi sempre subito. Il conto arriva dopo, quando chi ha deciso non c\'e piu — ed e per questo che si continuano a fare.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'Un\'istituzione in crisi\nha davanti due strade.\n\nCambiare le proprie regole:\nammettere che il guasto e in cima,\ncostruire un organo che possa correggere il vertice,\naccettare di essere limitata.\n\nOppure eliminare chi la contesta:\npiu rapido, piu sicuro,\ne non richiede di ammettere niente.\n\nCostanza ha imboccato entrambe\nnello stesso anno.\n\nHa mantenuto la seconda\ne abbandonato la prima.\n\nUltima domanda:\nperche e quasi sempre questa\nla combinazione che vince?',
+       parlato:'Rifai la conta iniziale e mostra lo spostamento.\n\nPoi il bilancio, tenendolo stretto. Nel giro di un secolo il papato riprende tutto il potere che il concilio gli aveva tolto e cancella l\'organo che avrebbe potuto riformarlo. Vince. E proprio per questo, quando arriva la contestazione seria, non ha nessun luogo dove trattarla, e mezza Europa se ne va.\n\nLa risposta alla domanda finale, se non ci arrivano: reprimere da risultati subito e a chi decide; riformarsi costa subito e rende dopo, spesso a qualcun altro. Chi comanda in questo momento fa quasi sempre il conto sul proprio orizzonte, non su quello dell\'istituzione.\n\nUltima cosa da dire, perche lega tutto il programma: i poteri universali non finiscono per una sconfitta militare. Finiscono perche perdono la capacita di risolvere i propri conflitti interni, e chi ha il fisco e i giudici — i re — occupa lo spazio rimasto vuoto. Da qui in avanti la storia europea si fa dentro gli Stati.',
+       seDicono:[
+         {loro:'«Ma il papato esiste ancora e il conciliarismo no.»',
+          tu:'Vero, e va tenuto presente: il criterio della sopravvivenza dice qualcosa. Ma nota che cosa e sopravvissuto — un papato senza potere temporale su nessun re, in una Europa dove il principio dell\'assemblea sopra il capo ha vinto ovunque, in politica. Le due cose non si escludono come sembra.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'Lo schiaffo di Anagni',
+       corpo:'Settembre 1303. Guglielmo di Nogaret, consigliere di Filippo il Bello, arriva ad Anagni con uomini armati e i Colonna, nemici del papa. Bonifacio VIII viene catturato nel proprio palazzo e tenuto prigioniero per tre giorni.\n\nLa tradizione vuole che uno degli assalitori lo abbia schiaffeggiato; le fonti non concordano. La popolazione di Anagni lo libera, ma il papa muore poche settimane dopo a Roma.\n\nNessun sovrano europeo intervenne in suo favore. Un secolo prima, Innocenzo III aveva messo in ginocchio il re d\'Inghilterra con un interdetto.',
+       chiedi:'Che cosa e cambiato in cento anni, se la stessa arma — la scomunica — funziona nel 1210 e non nel 1303? Le armi perdono efficacia perche si logorano o perche cambia chi le subisce?'},
+      {titolo:'La Bolla d\'oro',
+       corpo:'Nel 1356 Carlo IV emana una costituzione che stabilisce chi elegge l\'imperatore: sette principi, tre arcivescovi tedeschi e quattro laici. Fissa le procedure, le maggioranze, le precedenze.\n\nDel papa non si parla. Non lo si esclude polemicamente: semplicemente non compare, e la sua approvazione non e richiesta.\n\nAi sette elettori vengono riconosciuti diritti sovrani nei loro territori: battere moneta, giudicare senza appello, sfruttare le miniere.',
+       chiedi:'Che cosa e piu efficace, escludere qualcuno con una dichiarazione o scrivere una regola in cui semplicemente non compare? E quale delle due e piu difficile da contestare?'},
+      {titolo:'Marsilio da Padova',
+       corpo:'Nel Defensor pacis (1324) Marsilio sostiene che ogni potere legittimo nasce dal «legislatore umano», cioe dall\'insieme dei cittadini o dalla loro parte prevalente; che la Chiesa non ha alcuna giurisdizione coercitiva; che i sacerdoti sono funzionari senza potere di comando; e che spetta all\'assemblea dei fedeli, non al papa, interpretare la Scrittura.\n\nFu condannato come eretico e si rifugio presso Ludovico il Bavaro.',
+       chiedi:'Questa teoria nasce per difendere un imperatore contro un papa. Due secoli dopo servira ai re contro entrambi. Che cosa succede a un\'idea quando viene usata da chi non l\'ha pensata?'}
+    ],
+    testi:[
+      {fonte:'Bonifacio VIII, bolla Unam Sanctam, 1302',
+       corpo:'«Dichiariamo, affermiamo e definiamo che e assolutamente necessario alla salvezza, per ogni creatura umana, essere sottoposti al romano pontefice.»',
+       glossa:'È la formulazione piu alta mai raggiunta dalla teoria papale — e arriva un anno prima di Anagni. Le dottrine estreme compaiono di solito quando il potere reale sta gia scivolando via: si scrive con la massima solennita cio che non si riesce piu a ottenere di fatto.'},
+      {fonte:'Concilio di Costanza, sessione XV, luglio 1415 — sulla questione del salvacondotto',
+       corpo:'Il concilio stabilisce che nessun salvacondotto concesso da imperatore, re o principe puo impedire il giudizio della Chiesa su un sospetto di eresia, e che chi lo ha concesso non e vincolato dalla promessa fatta.',
+       glossa:'Da leggere insieme a Haec sancta, perche sono dello stesso anno e della stessa assemblea. Il decreto sul potere conciliare fonda un\'autorita sulla rappresentanza; questo stabilisce che verso una certa categoria di persone la parola data non obbliga. Fare notare in classe che le due cose convivono e piu formativo che sceglierne una.'},
+      {fonte:'Petrarca, lettere «Sine nomine», meta del Trecento, su Avignone',
+       corpo:'Il poeta descrive la corte papale come una nuova Babilonia, dedita al denaro e al lusso, e chiama l\'assenza da Roma un esilio che dura da troppo tempo.',
+       glossa:'L\'espressione «cattivita babilonese» nasce qui, e vale la pena dire che e propaganda letteraria di un italiano che voleva il papa a Roma. È utile per mostrare come una formula polemica di parte possa diventare, secoli dopo, il nome che tutti usano — titoli dei manuali compresi.'}
+    ],
+    compito:'Mezza pagina. Scegliete un\'organizzazione di cui fate parte o che conoscete bene — una scuola, una squadra, un\'associazione, un partito. Immaginate che il suo vertice sia in crisi. Descrivete l\'organo che dovrebbe poterlo correggere: chi lo compone, chi lo convoca, chi decide quando si riunisce. Poi rispondete alla domanda difficile: se quell\'organo puo essere convocato solo dal vertice, serve a qualcosa?',
+    fonti:[
+      'Bonifacio VIII, Unam Sanctam (1302); decreti conciliari Haec sancta (1415) e Frequens (1417)',
+      'Marsilio da Padova, Defensor pacis (1324); Guglielmo di Occam, scritti politici',
+      'Pio II, bolla Execrabilis (1460); Prammatica sanzione di Bourges (1438); Bolla d\'oro (1356)',
+      'Atti della disputa di Lipsia fra Lutero ed Eck (1519)',
+      'G. Alberigo, Chiesa conciliare; B. Tierney, Foundations of the Conciliar Theory',
+      'F. Oakley, The Conciliarist Tradition — sulla lunga durata di Haec sancta'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',
