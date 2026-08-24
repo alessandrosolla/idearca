@@ -84,3 +84,11 @@ Provate tutte le pagine dentro una finestra da 390px: nessuna sborda in
 orizzontale, nessun elemento esce dal bordo. Resta da guardare con un
 occhio umano su un telefono vero — la misura dice che non si rompe, non
 che è bello.
+
+## Da ricordare ad Alessandro quando il lavoro sui 120 capitoli è finito
+
+- **Lettura annotata**: va sistemata. Richiesta del 24 agosto 2026,
+  da fare dopo tutto il resto.
+- **Il libro delle esperienze**: racconti orali registrati da Alessandro,
+  trascritti e riscritti in forma narrativa. Destinazione finale, fra molto
+  tempo, la sezione «La libreria degli anni» (prove/libreria.html).

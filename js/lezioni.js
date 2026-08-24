@@ -7122,6 +7122,225 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Storia moderna · 6 — Rivoluzioni inglesi e assolutismi': {
+  mappa: {
+    n:'Rivoluzioni inglesi e assolutismi', d:'due paesi partono uguali e in un secolo diventano opposti',
+    f:[
+      {r:'parte da', n:'Un bivio', d:'nel 1600 Inghilterra e Francia si somigliano molto piu di quanto sembri',
+       f:[
+         {r:'entrambe hanno', n:'Assemblee di ceti', d:'parlamento inglese e Stati generali francesi, con poteri simili sulle imposte'},
+         {r:'entrambe hanno un re che', n:'Non basta a se stesso', d:'nessun sovrano incassa abbastanza per le guerre del secolo'},
+         {r:'la domanda decisiva e', n:'Chi autorizza le tasse', d:'e dalla risposta discende tutto il resto'},
+         {piu:true, r:'e nel 1700 saranno', n:'Due sistemi opposti', d:'monarchia parlamentare da una parte, assolutismo dall\'altra'}
+       ]},
+
+      {r:'in Inghilterra comincia con', n:'Uno scontro sulle imposte', d:'travestito da questione religiosa e costituzionale',
+       f:[
+         {r:'Giacomo I sostiene il', n:'Diritto divino dei re', d:'il sovrano risponde a Dio e non ai sudditi, e lo scrive in un trattato'},
+         {r:'Carlo I governa', n:'Undici anni senza parlamento', d:'1629-1640: per non doverlo convocare inventa prelievi'},
+         {r:'come lo', n:'Ship money', d:'una tassa per la flotta estesa alle contee interne, senza voto del parlamento',
+          f:[{r:'contestata in tribunale da', n:'John Hampden', d:'che perde la causa e vince l\'opinione pubblica'}]},
+         {piu:true, r:'e la moglie cattolica', n:'Alimenta i sospetti', d:'Enrichetta Maria di Francia: la corte appare filocattolica a un paese che teme Roma'},
+         {r:'ed e costretto a riconvocarlo dalla', n:'Rivolta scozzese', d:'aveva provato a imporre il libro di preghiere anglicano alla Scozia presbiteriana'}
+       ]},
+
+      {r:'esplode nella', n:'Guerra civile', d:'1642-1649: e finisce dove nessuno immaginava',
+       f:[
+         {r:'da una parte', n:'I sostenitori del re', d:'nobilta, anglicani, contee del Nord e dell\'Ovest'},
+         {r:'dall\'altra', n:'Il parlamento', d:'Londra, i porti, i mercanti, i puritani'},
+         {r:'la decide il', n:'New Model Army', d:'esercito professionale, pagato con regolarita, promozioni per merito',
+          f:[{r:'in cui si discute di politica', n:'A Putney', d:'1647: i soldati dibattono chi debba avere il diritto di voto'},
+             {piu:true, r:'con i', n:'Livellatori', d:'che chiedono suffragio ampio, uguaglianza davanti alla legge, elezioni periodiche'}]},
+         {r:'e si conclude con', n:'Il processo al re', d:'gennaio 1649: un tribunale giudica il sovrano per tradimento verso il proprio popolo',
+          f:[{r:'in cui Carlo I', n:'Nega la giurisdizione', d:'non risponde alle accuse: chiede con quale autorita lo si giudichi'},
+             {r:'e viene', n:'Decapitato in pubblico', d:'30 gennaio 1649, davanti a Whitehall'}]}
+       ]},
+
+      {r:'prosegue con', n:'Repubblica e restaurazione', d:'undici anni di esperimento, poi si torna indietro',
+       f:[
+         {r:'nasce il', n:'Commonwealth', d:'senza re e senza camera dei lord'},
+         {r:'guidato da', n:'Oliver Cromwell', d:'come lord protettore: un potere personale piu forte di quello del re deposto'},
+         {r:'che reprime duramente', n:'Irlanda e Scozia', d:'in Irlanda la campagna lascia una memoria che dura tre secoli'},
+         {r:'alla sua morte si torna alla', n:'Monarchia', d:'1660: Carlo II richiamato, e la repubblica finisce senza combattere',
+          f:[{piu:true, r:'e il cadavere di Cromwell', n:'Viene dissotterrato e impiccato', d:'un gesto che dice quanto si volesse cancellare quel precedente'}]}
+       ]},
+
+      {r:'si chiude con la', n:'Gloriosa rivoluzione', d:'1688: la seconda volta riesce in tre mesi e quasi senza sangue',
+       f:[
+         {r:'Giacomo II prova a', n:'Ripristinare il potere regio', d:'e a favorire i cattolici: il parlamento chiama il genero olandese'},
+         {r:'arriva', n:'Guglielmo d\'Orange', d:'con una flotta; Giacomo fugge senza che si combatta una battaglia'},
+         {r:'e si stabilisce il', n:'Bill of Rights', d:'1689: niente tasse e niente esercito permanente senza il parlamento',
+          f:[{r:'con elezioni', n:'Libere e frequenti', d:'e liberta di parola dentro le camere'},
+             {r:'e il', n:'Toleration Act', d:'liberta di culto ai dissidenti protestanti, non ai cattolici'}]},
+         {r:'e nel 1694 nasce la', n:'Banca d\'Inghilterra', d:'il debito e garantito dal parlamento, cioe da chi vota le imposte',
+          f:[{piu:true, r:'con l\'effetto di', n:'Tassi bassissimi', d:'e la capacita di sostenere guerre lunghe contro paesi molto piu grandi'}]}
+       ]},
+
+      {r:'in Francia prende la strada opposta', n:'L\'assolutismo', d:'costruito da chi la rivolta l\'aveva vista da bambino',
+       f:[
+         {r:'preparato da', n:'Richelieu e Mazzarino', d:'accentramento, intendenti, riduzione dei nobili turbolenti'},
+         {r:'e deciso dal trauma della', n:'Fronda', d:'1648-53: Luigi XIV bambino costretto a fuggire da Parigi'},
+         {r:'Luigi XIV governa', n:'Senza primo ministro', d:'dal 1661, e non convoca mai gli Stati generali'},
+         {r:'usa', n:'Versailles', d:'una corte che tiene i nobili sotto gli occhi e li rovina con le spese',
+          f:[{r:'trasformando i grandi in', n:'Cortigiani', d:'onori e cerimoniale al posto del potere reale'},
+             {piu:true, r:'con un rituale come il', n:'Lever du roi', d:'assistere alla vestizione del re diventa un privilegio conteso'}]},
+         {piu:true, r:'e conduce', n:'Guerre continue', d:'oltre trent\'anni di conflitti in mezzo secolo: alla sua morte la Francia e esausta e indebitata'},
+         {r:'e amministra con gli', n:'Intendenti', d:'funzionari revocabili inviati nelle province, fedeli solo al re'}
+       ]},
+
+      {r:'ma va capito che', n:'L\'assolutismo non e onnipotenza', d:'e la parola inganna quasi tutti',
+       f:[
+         {r:'restano intatti', n:'I privilegi', d:'province, citta e ceti conservano esenzioni che il re non tocca'},
+         {r:'e resistono i', n:'Parlamenti giudiziari', d:'corti sovrane che registrano le leggi e possono rimostrare'},
+         {r:'lo Stato vende le cariche con la', n:'Venalita', d:'entrate immediate in cambio di funzionari inamovibili ed ereditari'},
+         {r:'l\'economia e guidata dal', n:'Mercantilismo di Colbert', d:'manifatture reali, dazi, marina: la ricchezza come gara fra Stati'},
+         {r:'e nel 1685 revoca l\'', n:'Editto di Nantes', d:'i protestanti perdono ogni diritto: circa duecentomila fuggono',
+          f:[{r:'portando', n:'Capitali e tecniche altrove', d:'a Berlino, ad Amsterdam, a Londra: cioe ai futuri avversari'}]}
+       ]},
+
+      {r:'produce', n:'Modelli e contro-modelli', d:'l\'Europa sceglie fra due schemi, e qualcuno non sceglie affatto',
+       f:[
+         {r:'in Prussia', n:'Un esercito con uno Stato attorno', d:'disciplina, fiscalita e nobilta di servizio'},
+         {r:'in Russia', n:'Pietro il Grande', d:'occidentalizza per decreto: tecnici, flotta, una capitale nuova'},
+         {r:'in Polonia il', n:'Liberum veto', d:'un solo nobile puo bloccare la dieta: la paralisi come diritto',
+          f:[{piu:true, r:'e nel Settecento il paese', n:'Viene spartito', d:'tre volte, e scompare dalle carte per oltre un secolo'}]},
+         {r:'la teoria si divide fra', n:'Hobbes e Locke', d:'un potere indivisibile per evitare la guerra, o un potere revocabile se tradisce',
+          f:[{r:'con Locke che afferma il', n:'Diritto di resistenza', d:'se il governo viola i fini per cui esiste, il popolo puo cambiarlo'}]},
+         {piu:true, r:'e nasce il concetto di', n:'Equilibrio europeo', d:'Utrecht 1713: nessuna potenza deve prevalere, e ci si allea contro chi cresce troppo'},
+         {r:'e alla prova dei fatti', n:'Vince chi ha il parlamento', d:'nel Settecento l\'Inghilterra batte una Francia tre volte piu popolosa'}
+       ]}
+    ],
+    incroci:[
+      {da:'Chi autorizza le tasse', a:'Vince chi ha il parlamento', r:'e la domanda da cui dipende il fatto che',
+       perche:'Le due strade divergono su una sola questione: se il re possa prelevare senza consenso. Chi risponde di si ottiene rapidita e paga il denaro carissimo; chi risponde di no e lento e si finanzia a tassi bassissimi. Nel Settecento la seconda cosa vale piu della prima.'},
+      {da:'Banca d\'Inghilterra', a:'Tassi bassissimi', r:'produce',
+       perche:'Il debito garantito dal parlamento — cioe da chi vota le imposte con cui sara ripagato — non puo essere ripudiato dal sovrano da solo. È la stessa struttura che permetteva alle Province Unite di finanziarsi al tre per cento, portata su scala molto maggiore: l\'Inghilterra puo sostenere guerre lunghe contro paesi piu grandi.'},
+      {da:'Undici anni senza parlamento', a:'Rivolta scozzese', r:'finisce solo per la',
+       perche:'Carlo I era riuscito a fare a meno del parlamento finche non doveva combattere. Nel momento in cui gli serve un esercito per la Scozia, deve convocarlo — e il parlamento presenta il conto di undici anni. Un sovrano puo evitare il consenso solo finche non ha bisogno di soldi veri.'},
+      {da:'Nega la giurisdizione', a:'Diritto divino dei re', r:'e la conseguenza coerente del',
+       perche:'Se il re risponde solo a Dio, nessun tribunale umano puo giudicarlo: tutti i tribunali inglesi erano tribunali del re. L\'obiezione di Carlo I al processo non e un espediente, e la logica stessa della dottrina che aveva ereditato — ed e per questo che nessuno riesce a rispondergli davvero.'},
+      {da:'Viene dissotterrato e impiccato', a:'Ripristinare il potere regio', r:'non impedisce che qualcuno provi a',
+       perche:'La restaurazione cerca di cancellare il precedente perfino sui cadaveri, e ventotto anni dopo Giacomo II ci riprova sul serio. Ma nel 1688 lo cacciano in tre mesi senza battaglie, perche tutti sanno ormai che si puo fare. Un precedente non si annulla con un rito: e diventato un\'informazione che tutti possiedono.'},
+      {da:'A Putney', a:'Diritto di resistenza', r:'anticipa di quarant\'anni la formulazione del',
+       perche:'A Putney dei soldati discutono se il potere derivi dal consenso di tutti gli uomini o solo di chi ha proprieta. Locke sistemera la questione nel 1689, dopo che la Gloriosa ha reso presentabile l\'idea. Le teorie politiche mettono in forma cose gia dette da chi non aveva titolo per dirle.'},
+      {da:'Capitali e tecniche altrove', a:'Un esercito con uno Stato attorno', r:'rafforza fra gli altri la Prussia con',
+       perche:'La revoca dell\'editto di Nantes manda circa duecentomila protestanti francesi a Berlino, Amsterdam e Londra, con mestieri qualificati e capitali. Il Brandeburgo li accoglie con un editto apposito. Una decisione presa per unita religiosa trasferisce risorse ai propri futuri nemici.'},
+      {da:'Venalita', a:'I privilegi', r:'moltiplica',
+       perche:'Vendere una carica significa incassare subito e creare un funzionario che non si puo licenziare e che trasmette il posto ai figli, spesso con esenzioni fiscali annesse. L\'assolutismo francese si finanzia creando esattamente quei corpi intermedi che a parole voleva ridurre — e nel Settecento non riuscira piu a riformarsi.'},
+      {da:'Cortigiani', a:'Fronda', r:'e la soluzione trovata per impedire un\'altra',
+       perche:'Versailles non e uno spreco decorativo: e uno strumento politico. Tenere i grandi nobili a corte, occupati in gare di prestigio e rovinati dalle spese, impedisce che tornino nelle province a organizzare rivolte. Il re risolve un problema militare con un problema di etichetta.'},
+      {da:'Liberum veto', a:'Assemblee di ceti', r:'e cosa succede quando le',
+       perche:'La Polonia porta all\'estremo il principio del consenso: un solo deputato puo annullare l\'intera sessione. Il risultato non e liberta ma paralisi, e un paese che non riesce a decidere nulla viene spartito dai vicini. Il controllo sul potere serve se lascia comunque un modo di decidere.'},
+      {da:'New Model Army', a:'Commonwealth', r:'e cio che rende possibile e insieme fragile il',
+       perche:'La repubblica esiste perche esiste un esercito pagato e disciplinato che l\'ha imposta; e per la stessa ragione non riesce mai a diventare un regime civile. Quando muore il comandante, non resta nessuna istituzione capace di reggersi, e la monarchia torna senza che nessuno combatta.'},
+      {da:'Intendenti', a:'Parlamenti giudiziari', r:'convivono con',
+       perche:'Il re invia funzionari revocabili nelle province e insieme lascia in piedi corti sovrane che possono rimostrare contro le sue leggi. L\'assolutismo reale e sempre un compromesso fra un centro che comanda e corpi antichi che non si riesce a sopprimere: chiamarlo potere illimitato e un errore di lettura.'},
+      {da:'Toleration Act', a:'Ripristinare il potere regio', r:'e la contropartita al tentativo di',
+       perche:'La liberta di culto arriva ai dissidenti protestanti e non ai cattolici, perche il re appena cacciato era cattolico: si tollera chi ha aiutato a vincere e si esclude chi ha perso. La prima legge inglese sulla tolleranza religiosa e il conto di una crisi politica, non l\'applicazione di un principio.'}
+    ]
+  },
+  provocazione: {
+    titolo:'Con quale autorita',
+    durata:'55 minuti',
+    domandaMadre:'Chi puo giudicare chi fa la legge?',
+    perche:'Nel gennaio 1649 un tribunale inglese processa il proprio re, e il re rifiuta di rispondere alle accuse: chiede soltanto con quale autorita lo si stia giudicando. L\'obiezione e giuridicamente imbattibile — tutti i tribunali inglesi erano tribunali del re — e nessuno riesce davvero a rispondergli. Lo condannano lo stesso. La classe lavora su due documenti: il verbale del processo, redatto dalla parte che accusa e che riporta comunque l\'obiezione, e i dibattiti di Putney, dove due anni prima dei soldati discutevano gia chi dovesse comandare dopo. Il colpo di scena e che la restaurazione del 1660 cerca di cancellare tutto, arrivando a impiccare il cadavere di Cromwell, e non ci riesce: nel 1688 Giacomo II viene cacciato in tre mesi perche ormai tutti sanno che si puo fare.',
+    occorrente:'Niente.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'Westminster, 20 gennaio 1649.\n\nUn tribunale di centoventi giudici\nprocessa il re d\'Inghilterra\nper aver mosso guerra\nal proprio popolo.\n\nNon era mai successo.\nRe uccisi, molti.\nRe deposti, parecchi.\nRe processati con un\'accusa\ne una difesa, nessuno.\n\nCarlo I si presenta.\nAscolta le accuse.\n\nE non risponde.\n\nDice una cosa sola,\ne la ripete per tre giorni:\n\nvorrei sapere\ncon quale autorita\nmi state giudicando.\n\nNessuno riesce a rispondergli.',
+       parlato:'Racconta la scena e insisti sulla novita: non e l\'uccisione di un re, e il processo. La differenza e enorme, perche un processo pretende di essere legittimo.\n\nPoi spiega perche l\'obiezione era formidabile, e va spiegato bene o l\'ora non funziona. In Inghilterra tutti i tribunali erano tribunali del re: i giudici giudicavano in suo nome, la giustizia era una sua prerogativa. Un tribunale che processa il re e come una mano che prova ad afferrare se stessa.\n\nCarlo I non era un uomo brillante, ed era balbuziente. Durante il processo non balbetto quasi mai, e tenne quell\'unica linea: non discuto le accuse, discuto se voi possiate giudicarmi.\n\nPoi la domanda dell\'ora: se chi fa la legge non puo essere giudicato dalla legge, chi lo giudica?',
+       seDicono:[
+         {loro:'«Aveva ragione lui, allora.»',
+          tu:'Sul piano giuridico, in larga misura si, e lo sapevano anche i suoi giudici: molti si rifiutarono di firmare, e circa la meta dei nominati non si presento mai. Il che rende la faccenda piu interessante: perche lo fecero comunque?'},
+         {loro:'«Bastava ucciderlo senza processo.»',
+          tu:'Sarebbe stato molto piu semplice, e ci avevano pensato. Fecero il processo proprio perche volevano stabilire un principio, non togliere di mezzo un uomo. Il costo di quella scelta e l\'obiezione che non sapevano come superare.'}
+       ]},
+
+      {minuti:'8–17', et:'La fonte',
+       schermo:'Dal verbale del processo,\nprima udienza.\n\nIl presidente della corte dichiara\ndi agire in nome del popolo\nd\'Inghilterra,\ndal quale il re ha ricevuto\nil proprio ufficio.\n\nCarlo I replica\nche l\'Inghilterra non e mai stata\nun regno elettivo,\nma ereditario da quasi mille anni;\n\nche non vede come un\'autorita\npossa venire dal popolo\nsenza il consenso di re,\nlord e comuni insieme;\n\ne che difendendo la propria posizione\ndifende la liberta di ogni suddito,\nperche se il potere puo procedere\ncosi contro di lui,\nnessuno potra piu dirsi sicuro\ndi nulla.\n\nTre domande su questo testo.\n\nChi lo ha scritto?\nChe cosa ammette senza volerlo?\nChe cosa non dice?',
+       testo:{fonte:'Verbale del processo a Carlo I, gennaio 1649 (atti dell\'Alta Corte di Giustizia)',
+              glossa:'Il verbale e redatto dalla parte che accusa, e riporta comunque per esteso le obiezioni dell\'imputato: era considerato importante mostrare che il re aveva avuto modo di parlare. Il documento contiene quindi, per scelta di chi lo scrive, l\'argomento piu forte contro chi lo scrive — ed e questo a renderlo una fonte di prim\'ordine.'},
+       parlato:'Fai lavorare la classe in coppia, cinque minuti, poi raccogli. Non anticipare nulla.\n\nSulla prima domanda: lo hanno scritto i suoi accusatori. Fai pesare la conseguenza — avrebbero potuto omettere le obiezioni, e non lo hanno fatto, perche volevano che il processo apparisse regolare. Una fonte ostile che riporta l\'argomento dell\'avversario e piu attendibile di una favorevole.\n\nSulla seconda, che e la piu difficile: il tribunale ammette, aprendo, di dover giustificare la propria autorita. Nessun tribunale ordinario lo fa. Il fatto stesso che debbano dichiarare da dove viene il loro potere dimostra che sanno che il problema esiste.\n\nSulla terza: nel documento non c\'e nessuna risposta all\'obiezione. Le repliche del presidente ripetono la formula sull\'autorita del popolo senza mai spiegare come un popolo possa istituire un tribunale senza le forme previste. Il buco resta aperto, e resta aperto per iscritto.\n\nUltima osservazione da far notare, perche e la piu abile: Carlo I non difende se stesso, dice di difendere la liberta di tutti. Chiedi alla classe se e un argomento sincero o una mossa retorica — e se la differenza cambi qualcosa quanto alla sua validita.',
+       seDicono:[
+         {loro:'«Se non c\'era risposta, era un processo finto.»',
+          tu:'Era un processo senza fondamento giuridico nelle regole esistenti: su questo non ci sono dubbi. Ma nota il problema che avevano davanti — se le uniche regole disponibili sono quelle fatte da chi vuoi giudicare, o rinunci a giudicarlo o esci dalle regole. Non e un dilemma solo del 1649.'},
+         {loro:'«Il popolo non li aveva eletti.»',
+          tu:'Esatto, ed e il punto piu debole dell\'accusa: il parlamento che istituisce il tribunale era stato epurato dall\'esercito poche settimane prima, e ne restava meno di un quinto. Parlavano in nome del popolo essendo una minoranza. Tenetelo, perche e un\'obiezione che tornera per tutte le rivoluzioni.'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'Come si era arrivati li.\n\nNon per un\'idea, per il denaro.\n\nCarlo I aveva governato\nundici anni senza convocare\nil parlamento.\n\nPer riuscirci aveva inventato prelievi:\nil piu famoso e la ship money,\nuna tassa per la flotta\nestesa anche alle contee interne,\nche non avevano coste.\n\nUn possidente, John Hampden,\nla contesto in tribunale.\nPerse la causa\nper sette voti contro cinque.\n\nUn re che vince cosi\nnon ha vinto.\n\nPoi la Scozia si ribello,\nservi un esercito,\ne per un esercito servivano soldi veri.\n\nDovette convocare il parlamento.\nDopo undici anni.',
+       parlato:'Ricostruisci la catena e insisti sul fatto che tutto ruota attorno alle imposte, non alle idee.\n\nFai pesare il dettaglio del processo Hampden: il re vince per sette voti contro cinque, cioe cinque giudici nominati da lui gli danno torto. Una vittoria del genere e peggio di una sconfitta, perche mostra a tutti che la questione e discutibile.\n\nPoi la regola generale, che vale per tutto il secolo e che avete gia incontrato con la Spagna e con l\'Olanda: un sovrano puo fare a meno del consenso finche non deve combattere. La guerra e il momento in cui si scopre chi comanda davvero, perche costa piu di quanto qualunque re incassi.\n\nDomanda utile per la classe: se foste stati Carlo I nel 1640, che cosa avreste fatto?\n\nÈ una domanda vera, non retorica: convocare il parlamento significava pagare undici anni di conti arretrati. Non convocarlo significava perdere la Scozia. Non c\'era una mossa buona, e questo aiuta a capire perche le crisi precipitano.',
+       seDicono:[
+         {loro:'«Poteva rinunciare alla Scozia.»',
+          tu:'Poteva, e sarebbe stata la scelta piu prudente. Ma aveva provato lui a imporre il libro di preghiere anglicano ai presbiteriani scozzesi: la rivolta era una conseguenza di una sua iniziativa. Molte crisi diventano ingovernabili perche chi comanda ha gia speso il proprio margine.'}
+       ]},
+
+      {minuti:'28–38', et:'La seconda fonte',
+       schermo:'Il primo documento era\nun processo a un re.\n\nQuesto e di due anni prima,\ne discute chi comandera dopo.\n\nPutney, autunno 1647.\nI soldati dell\'esercito\nsi riuniscono in una chiesa\ne discutono di costituzione\ncon i propri generali.\n\nIl colonnello Rainborough sostiene\nche anche il piu povero\nche viva in Inghilterra\nha una vita da vivere\nquanto il piu grande,\ne che nessuno e tenuto\na obbedire a un governo\na cui non ha dato il proprio consenso.\n\nIl generale Ireton risponde\nche il diritto di voto\ndeve spettare a chi ha\nun interesse permanente nel regno —\nterre o commerci —\nperche chi non possiede nulla\nnon ha nulla da perdere.\n\nSono due fonti sullo stesso mondo.\nMisurano cose diverse.',
+       testo:{fonte:'Dibattiti di Putney, ottobre-novembre 1647 (verbali stenografati da William Clarke)',
+              glossa:'Sono i primi verbali stenografici di una discussione politica europea, e li conosciamo per caso: rimasero in un archivio privato e furono pubblicati solo nel 1891. Il valore sta in chi parla — soldati e ufficiali di rango medio che discutono da pari con i generali. Il tema non e chi debba governare adesso, ma chi debba contare per sempre.'},
+       parlato:'Fai il confronto in modo esplicito: il primo documento riguarda la fine di un potere, il secondo l\'inizio di un altro; il primo e scritto per essere ufficiale, il secondo e un verbale interno che nessuno pensava di pubblicare.\n\nPoi lavora sul contenuto, che e straordinario. Nel 1647 dei soldati inglesi discutono di suffragio in termini che diventeranno normali solo nell\'Ottocento inoltrato. E l\'obiezione di Ireton non e sciocca: sostiene che chi non ha nulla da perdere votera per prendere agli altri.\n\nDomanda per la classe: chi dei due sta usando l\'argomento piu forte?\n\nRaccogli senza chiudere. Poi fai notare come ando a finire — non a Putney, ma nella storia: il criterio di Ireton, il voto legato alla proprieta, vinse per quasi due secoli. In Inghilterra il suffragio si allargo per gradi fra il 1832 e il 1918.\n\nÈ utile che vedano la distanza: le parole giuste possono essere pronunciate duecentosettanta anni prima di essere applicate.',
+       seDicono:[
+         {loro:'«Perche non se ne sapeva niente fino al 1891?»',
+          tu:'Perche i verbali finirono in un archivio privato e nessuno li cerco. È un ottimo promemoria su come funziona la storia: quello che sappiamo dipende anche da che cosa e sopravvissuto per caso, e da quando qualcuno ha deciso di andare a guardare.'},
+         {loro:'«Ireton difendeva solo i propri interessi.»',
+          tu:'Certamente li difendeva, e l\'argomento va comunque valutato per quello che dice. Attenzione a una scorciatoia frequente: mostrare che qualcuno ha interesse a sostenere una tesi non dimostra che la tesi sia falsa. Serve rispondere anche all\'argomento.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'1660.\nUndici anni dopo.\n\nLa repubblica si sfalda,\nCarlo II viene richiamato\ne rientra a Londra\nfra due ali di folla festante.\n\nLa monarchia e restaurata.\n\nI regicidi vivi\nvengono giustiziati.\n\nIl corpo di Cromwell,\nmorto da due anni,\nviene dissotterrato,\nimpiccato a Tyburn\ne decapitato.\n\nSembra che di quegli anni\nnon resti nulla.\n\n1685: sale al trono Giacomo II\ne prova a governare\ncome faceva suo padre.\n\nNel 1688 lo cacciano\nin tre mesi,\nquasi senza sparare un colpo.\n\nPerche stavolta\nnessuno doveva piu chiedersi\nse fosse possibile.',
+       parlato:'Racconta la restaurazione come una sconfitta totale — perche cosi appariva — e insisti sul cadavere impiccato: e un gesto che dice esattamente che cosa si stava cercando di cancellare.\n\nPoi il rovesciamento. Chiedi: se volevano cancellare tutto, perche nel 1688 basto una minaccia?\n\nGuidali alla risposta: perche nel 1649 era stato stabilito un fatto che nessun rito puo disfare. Un re inglese puo essere rimosso. Non e una teoria, e un precedente — e i precedenti non si annullano, si possono solo coprire.\n\nLa formula da portare via: quando una contestazione viene sconfitta, resta comunque l\'informazione che quella cosa era possibile. E quell\'informazione lavora anche sotto una restaurazione.\n\nPoi il contrasto francese, che rende il tutto piu solido. Negli stessi anni la Francia ha la propria rivolta, la Fronda. Fallisce. E il bambino che durante quella rivolta era stato costretto a fuggire da Parigi passera il resto della vita a costruire un sistema in cui non possa mai piu succedere: Versailles, gli intendenti, nessuna convocazione degli Stati generali per centosettantacinque anni.\n\nDue crisi quasi contemporanee, esiti opposti. E una conseguenza misurabile: nel Settecento l\'Inghilterra, con circa un terzo della popolazione francese, vince quasi tutte le guerre contro la Francia — perche il suo debito e garantito dal parlamento e le costa pochissimo.',
+       seDicono:[
+         {loro:'«Allora la rivoluzione del 1649 e servita.»',
+          tu:'È servita a stabilire un precedente, e non a fare quello per cui era stata fatta: la repubblica dei Livellatori non arrivo mai, e i loro capi finirono in prigione sotto Cromwell. Vale la pena tenere separate le due cose: che cosa un evento ottiene e che cosa rende pensabile.'},
+         {loro:'«E se in Francia la Fronda avesse vinto?»',
+          tu:'È il gioco che gli storici chiamano controfattuale e va fatto con prudenza. Quello che possiamo dire e piu preciso: la Fronda non aveva ne un esercito unificato ne un programma comune, mentre gli inglesi avevano il New Model Army e il parlamento come istituzione gia esistente. Non e mancata la fortuna: mancavano gli strumenti.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'Torniamo alla domanda\ndel primo minuto.\n\nCon quale autorita\nsi giudica chi fa la legge?\n\nNel 1649 non seppero rispondere.\nLo fecero comunque,\ne il buco resto scritto negli atti.\n\nNel 1689 provarono in un altro modo:\nnon giudicare il re,\nma scrivere per iscritto\nche cosa non puo fare.\n\nNiente tasse senza il parlamento.\nNiente esercito senza il parlamento.\nElezioni libere e frequenti.\n\nNon e una risposta alla domanda.\n\nÈ un modo di non doversela\npiu porre.\n\nUltima cosa da chiedersi:\n\nfunziona?',
+       parlato:'Rifai il percorso in tre passaggi e lascia l\'ultima domanda aperta.\n\nPoi da\' l\'elemento per pensarci. Il Bill of Rights non risolve il problema teorico — non dice chi giudica il sovrano — ma lo aggira: se il potere e limitato in anticipo e per iscritto, non serve un tribunale straordinario per fermarlo. È la differenza fra punire dopo e vincolare prima.\n\nE fai notare il prezzo, perche esiste: il compromesso del 1689 lascia fuori quasi tutti. Il Toleration Act non vale per i cattolici, il voto resta legato alla proprieta, e le richieste di Putney vengono accantonate per due secoli. Una soluzione che funziona non e per questo una soluzione giusta.\n\nChiudi con la cosa che serve per il seguito. Da qui in avanti l\'Europa ha davanti due modelli concreti, non due teorie: un re limitato da un\'assemblea e un re che non convoca nessuno. Nel secolo successivo qualcuno sosterra che il primo non basta e che bisogna rifare tutto da capo — e quando succedera, in Francia, la prima cosa che chiederanno sara la convocazione di quegli Stati generali che nessuno riuniva dal 1614.',
+       seDicono:[
+         {loro:'«Se il potere si limita da solo, puo anche togliersi i limiti.»',
+          tu:'È l\'obiezione giusta, e la risposta inglese non e teorica ma pratica: i limiti reggono perche a molte persone conviene che reggano — ai creditori dello Stato, ai proprietari, ai mercanti. Un limite tenuto in piedi solo dalla buona volonta di chi limita non e mai durato da nessuna parte.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'Quelli che chiedevano troppo',
+       corpo:'I Livellatori erano un movimento nato dentro l\'esercito parlamentare. Chiedevano elezioni frequenti, un suffragio molto piu ampio, l\'uguaglianza davanti alla legge, la fine dei privilegi commerciali e la tolleranza religiosa. Redassero anche un progetto di costituzione scritta.\n\nCromwell li fece arrestare, ne fece fucilare alcuni e sciolse il movimento.\n\nQuasi tutte le loro richieste sono oggi normali. Nessuna fu accolta allora.',
+       chiedi:'Un movimento sconfitto le cui idee diventano ovvie due secoli dopo: ha vinto o ha perso? E che cosa serve, oltre ad avere ragione, perché un\'idea politica venga applicata?'},
+      {titolo:'Una reggia come strumento',
+       corpo:'Versailles ospitava stabilmente alcune migliaia di persone. I grandi nobili vi risiedevano per gran parte dell\'anno, occupati in una gerarchia minuziosa di privilegi: chi poteva assistere al risveglio del re, chi porgergli la camicia, chi sedersi e su quale tipo di sedia.\n\nMantenere il rango a corte era rovinoso: abiti, carrozze, servitù, gioco. Molti si indebitarono e dipendevano dalle pensioni regie.\n\nUn nobile lontano dalla corte veniva dimenticato, e con lui la sua famiglia.',
+       chiedi:'Il re trasforma i suoi possibili rivali in cortigiani che competono per l\'onore di porgergli la camicia. Perché accettarono? E riconoscete meccanismi simili — competizione per segni di prestigio invece che per potere reale — in ambienti che conoscete?'},
+      {titolo:'Duecentomila che se ne vanno',
+       corpo:'Nel 1685 Luigi XIV revoca l\'editto di Nantes: i protestanti francesi perdono il diritto di culto, le loro chiese vengono abbattute, i pastori esiliati, i figli battezzati d\'autorità. L\'emigrazione è vietata, e circa duecentomila persone partono lo stesso.\n\nErano concentrati in mestieri qualificati: tessitura della seta, orologeria, stampa, commercio. Il Brandeburgo emanò subito un editto per accoglierli; molti andarono ad Amsterdam, a Londra, a Ginevra.\n\nLa misura fu accolta in Francia con entusiasmo quasi unanime.',
+       chiedi:'Il costo economico era evidente e la decisione fu popolare. Che cosa rende una scelta ampiamente approvata e insieme rovinosa? E come si distingue, mentre accade, il consenso dalla ragione?'}
+    ],
+    testi:[
+      {fonte:'Bill of Rights, 1689 — alcune clausole',
+       corpo:'Il testo dichiara illegale sospendere le leggi senza il consenso del parlamento, illegale imporre tributi per uso della corona senza concessione parlamentare, illegale mantenere un esercito permanente in tempo di pace senza il consenso del parlamento; e stabilisce che le elezioni siano libere e che la libertà di parola nei dibattiti non possa essere contestata fuori dal parlamento.',
+       glossa:'Da leggere accanto al processo del 1649 per vedere il cambio di strategia: nel 1649 si prova a giudicare il re dopo, nel 1689 si scrive prima che cosa non puo fare. È il passaggio dalla punizione al vincolo, ed e il fondamento del costituzionalismo moderno.'},
+      {fonte:'Giacomo I, Il vero diritto delle monarchie libere (1598)',
+       corpo:'Il futuro re d\'Inghilterra sostiene che i re sono stati istituiti da Dio prima di ogni assemblea e di ogni legge, che le leggi sono opera loro e non viceversa, e che essi rendono conto del proprio operato soltanto a Dio.',
+       glossa:'Il testo va letto perche chiarisce che l\'obiezione di Carlo I al processo non era un\'astuzia processuale ma la dottrina ufficiale della sua famiglia, scritta e pubblicata. Serve anche a mostrare che le due parti non discutevano di fatti: avevano due idee incompatibili su dove risieda l\'origine della legge.'},
+      {fonte:'Bossuet, Politica tratta dalle parole della Sacra Scrittura (postumo, 1709)',
+       corpo:'Il vescovo francese sostiene che l\'autorita regia e sacra, paterna e assoluta, e insieme sottoposta alla ragione; che il principe deve rendere conto solo a Dio; e che tuttavia non e libero di fare il male, essendo tenuto alle leggi divine e naturali piu di ogni altro.',
+       glossa:'Utile per correggere l\'equivalenza fra assolutismo e arbitrio: nella teoria francese il re e sciolto dalle leggi umane ma vincolato a quelle divine e naturali, e a nessuna istituzione. Il problema pratico e evidente e vale la pena discuterlo: un vincolo senza qualcuno che possa farlo valere che cosa vincola davvero?'}
+    ],
+    compito:'Mezza pagina. Prendete una regola che vale in un gruppo di cui fate parte e chiedetevi chi la può cambiare. Poi rispondete a due domande: se chi la può cambiare la violasse, chi lo giudicherebbe? E se la risposta è «nessuno», che cosa impedisce oggi che accada — la lealtà delle persone, oppure il fatto che a molti convenga che la regola tenga?',
+    fonti:[
+      'Atti del processo a Carlo I (1649); verbali dei dibattiti di Putney (1647, ed. Clarke Papers)',
+      'Bill of Rights (1689); Toleration Act (1689)',
+      'Giacomo I, The Trew Law of Free Monarchies (1598); Bossuet, Politique tirée de l\'Écriture sainte',
+      'Hobbes, Leviatano (1651); Locke, Secondo trattato sul governo (1689)',
+      'C. Hill, Il mondo alla rovescia; L. Stone, Le cause della rivoluzione inglese',
+      'P. Anderson, Lo Stato assolutista; E. Le Roy Ladurie, L\'Ancien Régime'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',

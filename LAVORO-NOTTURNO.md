@@ -165,7 +165,7 @@ Si va in ordine di programma. Restano:
 - [x] Storia moderna · 3 — Economia, guerre e il declino spagnolo
 - [x] Storia moderna · 4 — La crisi del Seicento e la rivoluzione scientifica
 - [x] Storia moderna · 5 — La guerra dei Trent'anni e l'Olanda
-- [ ] Storia moderna · 6 — Rivoluzioni inglesi e assolutismi
+- [x] Storia moderna · 6 — Rivoluzioni inglesi e assolutismi
 - [ ] Storia moderna · 7 — L'Europa nel primo Settecento
 - [ ] Storia moderna · 8 — La civiltà dei Lumi
 - [ ] Storia moderna · 9 — La prima rivoluzione industriale
