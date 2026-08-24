@@ -2473,6 +2473,233 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Filosofia antica · 11 — Il neoplatonismo e Plotino': {
+  mappa: {
+    n:'Il neoplatonismo', d:'III secolo d.C.: l\'ultima grande filosofia pagana',
+    f:[
+      {r:'nasce in', n:'Un mondo che si sfalda', d:'l\'impero in crisi e le anime in cerca di salvezza',
+       f:[
+         {r:'è il secolo', n:'Dell\'anarchia militare', d:'cinquant\'anni, una ventina di imperatori, quasi tutti assassinati'},
+         {r:'si diffondono', n:'I culti orientali', d:'Iside, Mitra, Cibele: promettono salvezza personale, non protezione civica'},
+         {r:'circola', n:'Lo gnosticismo', d:'il mondo è opera di un dio cattivo, e la salvezza è fuggirlo'},
+         {r:'cresce', n:'Il cristianesimo', d:'ancora perseguitato, già presente ovunque'},
+         {r:'e la filosofia', n:'Diventa via di salvezza', d:'non più come si vive bene: come si torna a casa'}
+       ]},
+
+      {r:'ha come maestro', n:'Plotino', d:'Licopoli 205 – Campania 270 d.C.',
+       f:[
+         {r:'studia ad', n:'Alessandria', d:'undici anni con Ammonio Sacca, che non scriveva nulla',
+          f:[{piu:true, r:'insieme a', n:'Origene e Erennio', d:'con un patto: non divulgare la dottrina del maestro'}]},
+         {r:'segue', n:'La spedizione di Gordiano III', d:'per conoscere la sapienza persiana e indiana: la campagna finisce male e fugge'},
+         {r:'insegna a', n:'Roma dal 244', d:'ha fra gli allievi senatori, medici, donne',
+          f:[{piu:true, r:'e progetta', n:'Platonopolis', d:'una città governata secondo le Leggi di Platone: l\'imperatore dice di sì e poi si tira indietro'}]},
+         {r:'scrive', n:'Le Enneadi', d:'cinquantaquattro trattati raccolti dall\'allievo Porfirio',
+          f:[{r:'ordinati in', n:'Sei gruppi di nove', d:'ennea vuol dire nove: l\'ordine è di Porfirio, non l\'ordine di composizione'},
+             {piu:true, r:'e scriveva', n:'Senza rileggere', d:'aveva la vista debole e non tornava mai sul testo'}]},
+         {r:'di lui si racconta', n:'Che si vergognasse di avere un corpo', d:'e rifiutò di farsi ritrarre: sarebbe l\'immagine di un\'immagine'}
+       ]},
+
+      {r:'pone al vertice', n:'L\'Uno', d:'il principio di tutto, e non è una cosa',
+       f:[
+         {r:'è', n:'Al di là dell\'essere', d:'epékeina tês ousías: non è un ente, nemmeno il primo'},
+         {r:'è', n:'Al di là del pensiero', d:'pensare è già due: chi pensa e ciò che è pensato'},
+         {r:'quindi', n:'Non pensa e non vuole', d:'non ha progetti, non sceglie, non conosce le cose'},
+         {r:'se ne può dire', n:'Solo che cosa non è', d:'teologia negativa: ogni predicato lo limiterebbe',
+          f:[{r:'e anche', n:'«Uno» è un nome improprio', d:'lo diciamo per togliere il molteplice, non per descriverlo'},
+             {piu:true, r:'da qui', n:'La via apofatica', d:'che passerà allo Pseudo-Dionigi e a tutta la mistica cristiana'}]},
+         {r:'ma è', n:'Causa di tutto', d:'«tutte le cose e nessuna di esse»'}
+       ]},
+
+      {r:'spiega il molteplice con', n:'L\'emanazione', d:'proodos: non creazione, non fabbricazione',
+       f:[
+         {r:'immagine', n:'La sorgente', d:'che alimenta i fiumi senza esaurirsi'},
+         {r:'immagine', n:'Il sole e la luce', d:'irradia perché è ciò che è, non perché lo decide'},
+         {r:'quindi', n:'L\'Uno non diminuisce', d:'dà senza perdere: non c\'è sacrificio nel produrre'},
+         {r:'quindi', n:'Non c\'è volontà', d:'niente creazione dal nulla, niente scelta, niente inizio nel tempo',
+          f:[{piu:true, r:'ed è la differenza con', n:'La Genesi', d:'dove Dio decide, e prima non c\'era niente'}]},
+         {r:'ogni grado è', n:'Meno perfetto del precedente', d:'più ci si allontana dalla fonte, più cresce la molteplicità'},
+         {r:'e ogni grado', n:'Si volge indietro', d:'epistrophé: la conversione verso ciò da cui proviene'}
+       ]},
+
+      {r:'produce', n:'Tre ipostasi', d:'i tre gradi della realtà, sotto l\'Uno',
+       f:[
+         {r:'la prima', n:'Nous', d:'l\'Intelletto: pensa, e pensando è già due',
+          f:[{r:'in esso stanno', n:'Le Idee di Platone', d:'ma non fuori: sono i pensieri dell\'Intelletto'},
+             {r:'ed è', n:'L\'eternità', d:'tutto insieme, senza prima né poi'},
+             {piu:true, r:'coincide', n:'Pensiero e pensato', d:'e Aristotele viene inglobato dentro Platone'}]},
+         {r:'la seconda', n:'Anima', d:'guarda in alto verso il Nous, in basso verso il corpo',
+          f:[{r:'genera', n:'Il tempo', d:'«immagine mobile dell\'eternità»: nasce quando l\'Anima si distende'},
+             {r:'si articola in', n:'Anima del mondo', d:'che ordina il cosmo, e anime individuali'},
+             {piu:true, r:'e le anime', n:'Non si staccano mai del tutto', d:'una parte di noi resta sempre nell\'intelligibile'}]},
+         {r:'la terza è il limite', n:'Il mondo sensibile', d:'l\'ultima eco: bello, ma copia di copia'}
+       ]},
+
+      {r:'in fondo c\'è', n:'La materia', d:'e con essa il problema del male',
+       f:[
+         {r:'è', n:'L\'ultimo grado', d:'dove la luce si spegne: puro ricevere, senza forma'},
+         {r:'quindi è', n:'Non essere come mancanza', d:'non il nulla assoluto: privazione, assenza di bene'},
+         {r:'e il male è', n:'Privazione', d:'non una forza: un buco, come il buio è assenza di luce',
+          f:[{piu:true, r:'lo riprenderà', n:'Agostino', d:'privatio boni: e ci risolverà il proprio tormento'}]},
+         {r:'ma contro gli gnostici', n:'Il mondo non è cattivo', d:'è la più bella delle cose generate',
+          f:[{r:'perché', n:'Disprezzarlo è disprezzare la fonte', d:'chi insulta la copia insulta il modello'},
+             {piu:true, r:'nel trattato', n:'Contro gli gnostici', d:'Enneadi II 9: il testo più polemico che abbia scritto'}]}
+       ]},
+
+      {r:'indica la via del', n:'Ritorno', d:'la filosofia come cammino verso l\'origine',
+       f:[
+         {r:'primo passo', n:'Virtù politiche', d:'mettere ordine nelle passioni'},
+         {r:'secondo', n:'Virtù purificatrici', d:'staccarsi dal corpo, non ucciderlo'},
+         {r:'terzo', n:'Contemplazione del Nous', d:'pensare le Idee: si è già dentro l\'eternità'},
+         {r:'ultimo', n:'Estasi', d:'uscire da sé: e lì non c\'è più chi guarda e ciò che è guardato',
+          f:[{r:'descritta come', n:'Fuga del solo verso il Solo', d:'l\'ultima riga delle Enneadi'},
+             {r:'accaduta', n:'Quattro volte in sei anni', d:'lo scrive Porfirio, che dice di esserci arrivato una volta a sessantotto anni'},
+             {piu:true, r:'e non è', n:'Un premio dopo la morte', d:'accade qui, da vivi, e poi si torna indietro'}]},
+         {r:'e vale il principio', n:'Il simile conosce il simile', d:'per vedere il Bene bisogna essere diventati buoni'}
+       ]},
+
+      {r:'lascia', n:'Che cosa resta', d:'la filosofia che ha dato le parole a tre religioni',
+       f:[
+         {r:'lo ordina', n:'Porfirio', d:'e scrive l\'Isagoge, letta per mille anni come prima pagina di logica',
+          f:[{piu:true, r:'da cui', n:'La questione degli universali', d:'la domanda che aprirà tutta la Scolastica'}]},
+         {r:'lo ritualizza', n:'Giamblico', d:'aggiunge la teurgia: non basta pensare, servono riti'},
+         {r:'lo sistema', n:'Proclo', d:'l\'ultima grande costruzione, per triadi'},
+         {r:'finisce nel', n:'529', d:'Giustiniano chiude la scuola di Atene: mille anni dopo Platone'},
+         {r:'passa a', n:'Agostino e allo Pseudo-Dionigi', d:'e da lì a tutto il pensiero cristiano'},
+         {r:'e rinasce con', n:'Ficino', d:'che nel Quattrocento traduce Plotino per i Medici',
+          f:[{piu:true, r:'e con', n:'Hegel', d:'che ci vede il primo pensiero dell\'assoluto come processo'}]}
+       ]}
+    ],
+    incroci:[
+      {da:'Al di là del pensiero', a:'Nous', r:'obbliga a porre sotto di sé',
+       perche:'Se pensare implica una distinzione fra chi pensa e ciò che è pensato, il principio assolutamente semplice non può pensare. Serve allora un secondo grado in cui il pensiero compaia — ed è l\'Intelletto, che è già due.'},
+      {da:'Non c\'è volontà', a:'Il mondo non è cattivo', r:'garantisce che',
+       perche:'Se l\'Uno non sceglie, il mondo non è il risultato di una decisione che potesse andare diversamente: è ciò che accade necessariamente quando la fonte trabocca. Nessuno lo ha voluto male, e nessuno poteva farlo meglio.'},
+      {da:'La sorgente', a:'L\'Uno non diminuisce', r:'serve a dire che',
+       perche:'Ogni immagine di produzione umana implica una perdita: chi dà, ha meno. La sorgente e la luce sono scelte proprio perché non funzionano così — e senza questa proprietà il primo principio si consumerebbe generando.'},
+      {da:'Le Idee di Platone', a:'Contemplazione del Nous', r:'sono ciò che si guarda nella',
+       perche:'Platone aveva lasciato le Idee in un altrove che non riusciva a collegare alle cose. Plotino le mette dentro il pensiero dell\'Intelletto: non un luogo ma un\'attività — e per questo contemplarle non è guardare altrove, è entrare in ciò che si è.'},
+      {da:'Il tempo', a:'Anima', r:'nasce dalla distensione di',
+       perche:'Il tempo non è un contenitore: è ciò che accade quando l\'Anima, non potendo avere tutto insieme come il Nous, dispiega la propria vita in un prima e un poi. Sarà la definizione che Agostino porterà nelle Confessioni.'},
+      {da:'Privazione', a:'Lo gnosticismo', r:'toglie il fondamento a',
+       perche:'Se il male non è una cosa ma la mancanza di una cosa, non serve un principio cattivo accanto a quello buono: il dualismo gnostico perde la sua ragione d\'essere. È l\'arma con cui, due secoli dopo, Agostino uscirà dal manicheismo.'},
+      {da:'Estasi', a:'Al di là dell\'essere', r:'è l\'unico accesso a',
+       perche:'Ciò che sta oltre l\'essere non si raggiunge pensandolo, perché pensare lo farebbe diventare oggetto. Resta un\'esperienza in cui cade la distinzione fra chi guarda e ciò che è guardato — e per definizione non si può raccontare.'},
+      {da:'Il simile conosce il simile', a:'Virtù purificatrici', r:'rende necessarie',
+       perche:'Non è una gara morale: se si vede solo ciò a cui si somiglia, allora diventare buoni non è la condizione per meritare la visione — è la condizione per averne gli occhi. L\'etica diventa ottica.'},
+      {da:'Diventa via di salvezza', a:'Un mondo che si sfalda', r:'è la risposta filosofica a',
+       perche:'Quando la città non protegge più e gli imperatori durano pochi mesi, la domanda su come governare bene perde senso e resta quella su come salvarsi. Le religioni orientali e il neoplatonismo rispondono alla stessa domanda in modi diversi.'},
+      {da:'Solo che cosa non è', a:'Agostino e allo Pseudo-Dionigi', r:'arriva al cristianesimo attraverso',
+       perche:'La teologia negativa nasce pagana e diventa il linguaggio con cui i cristiani parleranno di Dio per mille anni: si dice ciò che Dio non è, perché ogni predicato positivo lo ridurrebbe alla misura di chi lo pronuncia.'},
+      {da:'Porfirio', a:'529', r:'ha reso possibile ciò che sopravvive al',
+       perche:'La scuola chiude, ma l\'Isagoge di Porfirio resta nei programmi come prima pagina di logica per mille anni. Il neoplatonismo entra nel Medioevo cristiano travestito da manuale elementare.'},
+      {da:'Si volge indietro', a:'Ritorno', r:'è la stessa struttura in',
+       perche:'Processione e conversione non sono due movimenti diversi: ogni grado esce dal precedente e subito si rivolge verso di esso per costituirsi. Il cammino del filosofo non è un\'eccezione — è ciò che tutta la realtà sta già facendo.'}
+    ]
+  },
+  provocazione: {
+    titolo:'Quante cose siete?',
+    durata:'55 minuti',
+    domandaMadre:'Che cosa vi tiene insieme — e da dove viene?',
+    perche:'La classe si trova a non saper dire perché è una cosa sola e non un mucchio di parti, e ci arriva con dati concreti invece che con un\'astrazione. Da lì il passaggio decisivo di Plotino — l\'unità viene prima dell\'essere, perché ciò che non è uno non è niente — diventa una necessità e non una tesi mistica. Il colpo di scena mostra il prezzo: per spiegare l\'unità Plotino deve mettere in cima qualcosa che non pensa, non vuole e non ci conosce, e che produce il mondo senza sceglierlo. L\'ora si chiude su una domanda che riguarda loro e che prepara Agostino: c\'è qualcosa in voi che non sia fatto di parti?',
+    occorrente:'Niente. Se l\'aula ha un oggetto composto a portata di mano — una sedia, uno zaino — torna utile smontarlo con le parole.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'Siete fatti di circa trentasette mila miliardi di cellule.\nNessuna di loro siete voi.\n\nQuasi tutte verranno sostituite:\nfra dieci anni il materiale sarà quasi tutto nuovo.\n\nI vostri pensieri sono molti, e spesso in disaccordo.\nVoi a cinque anni e voi adesso\nnon avete quasi nulla in comune.\n\nEppure dite «io», e intendete una cosa sola.\n\nChe cosa vi tiene insieme?',
+       parlato:'Dai i dati uno per volta, lasciando qualche secondo. Non sono un ornamento: servono perché la domanda arrivi come un problema di fatto e non come un gioco filosofico.\n\nPoi la domanda, e pretendi risposte concrete. Escono quasi sempre tre candidati: il corpo, la memoria, il cervello. Prendine nota: verranno smontati tutti e tre nel prossimo tempo, e conviene che siano stati proposti da loro.\n\nSe la classe è svelta, aggiungi subito la mossa che rende la cosa urgente: non state cercando una curiosità. Se non siete uno, non siete niente — perché un esercito che non è un esercito non è un mucchio di eserciti: è solo un certo numero di uomini.',
+       seDicono:[
+         {loro:'«Mi tiene insieme il corpo.»',
+          tu:'Il corpo è la cosa che cambia di più: materialmente non è lo stesso di dieci anni fa. E poi il corpo è a sua volta molte parti — quindi hai spostato la domanda, non l\'hai risolta. Che cosa tiene insieme il corpo?'},
+         {loro:'«La memoria: sono io perché ricordo di esserlo stato.»',
+          tu:'È la risposta di Locke, e la incontrerai in quarta. Ma prova a spingerla: ricordi quasi nulla dei tuoi primi tre anni. Quel bambino non eri tu? E chi ha un\'amnesia smette di essere sé stesso?'}
+       ]},
+
+      {minuti:'8–17', et:'Lo schieramento',
+       schermo:'Voi siete:',
+       opzioni:['una cosa sola, davvero', 'molte cose che chiamiamo una per comodità'],
+       parlato:'Conta e scrivi i numeri. Il secondo gruppo di solito è forte, perché è la risposta che suona scientifica.\n\nAllora attacca proprio quella, con l\'argomento di Plotino applicato a un caso qualunque. Prendi la sedia su cui sono seduti: se le togli l\'unità, che cosa resta? Non tante sedie: pezzi di legno. E se togli l\'unità ai pezzi di legno? Fibre. E poi molecole, atomi. A ogni passo devi trovare qualcosa che sia uno, o non hai più niente di cui parlare.\n\nPoi la formula, e falla scrivere: nulla è qualcosa se non è uno. L\'unità non è una proprietà che le cose hanno in più — è la condizione perché ci sia una cosa.\n\nA questo punto il gruppo del «molte cose per comodità» ha un problema serio: se l\'unità è solo un modo di dire, allora anche «molte cose» lo è, perché ciascuna di quelle cose dovrebbe essere una.',
+       seDicono:[
+         {loro:'«L\'unità la mettiamo noi guardando: è una comodità del linguaggio.»',
+          tu:'Allora chi la mette? Tu. E tu sei uno? Se lo sei, l\'unità esiste almeno in un caso. Se non lo sei, chi è che sta mettendo insieme le cose? La tua obiezione ha bisogno di un\'unità per essere formulata.'},
+         {loro:'«È il cervello che unifica tutto.»',
+          tu:'Il cervello è ottantasei miliardi di neuroni, nessuno dei quali unifica niente da solo. Stai spiegando l\'unità con qualcosa che è a sua volta moltissimo. È esattamente il passaggio che Plotino dice essere impossibile.'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'Se ci pensate, è sempre così.\n\nUn esercito che non è un esercito non è niente:\nsono uomini.\nUna casa che non è una casa non è niente:\nsono mattoni.\nUn coro che non è un coro non è niente:\nsono voci.\n\nTogli l\'unità e non resta il molteplice:\nnon resta nulla di cui parlare.\n\nQuindi l\'unità viene prima dell\'essere.\n\nE allora l\'ultima domanda:\nchi ve la dà?',
+       parlato:'Fai fare l\'esercizio a loro con tre esempi scelti da loro, non da te: funziona meglio se lo scoprono su casi propri.\n\nPoi il passaggio che è il cuore dell\'ora e va detto lentamente: l\'unità non può venire dalle parti, perché le parti sono molte. Non può venire da un\'altra cosa composta, perché avrebbe lo stesso problema. Quindi, o si va all\'infinito, o in cima c\'è qualcosa che è uno e basta — non uno più qualcos\'altro: solo uno.\n\nÈ la stessa struttura del motore immobile di Aristotele, ma spostata: lì serviva un principio del movimento, qui un principio dell\'unità.\n\nSe qualcuno chiede perché non fermarsi a Dio come lo immaginano di solito, tienilo per il tempo dopo: è esattamente lì che Plotino dice qualcosa di sconcertante.',
+       seDicono:[
+         {loro:'«Non si potrebbe andare all\'infinito?»',
+          tu:'Puoi provarci, ma guarda che cosa ottieni: una catena infinita di cose che ricevono unità da altre, e nessuna che la abbia. È come una fila infinita di persone che si passano un libro che nessuno possiede. Da dove viene il libro?'},
+         {loro:'«Forse l\'unità è solo un modo in cui funziona la nostra mente.»',
+          tu:'Kant dirà qualcosa di simile, e sarà una rivoluzione. Ma nota il costo: dovresti dire che nel mondo, senza di te che guardi, non c\'è nessuna cosa singola. Nemmeno una. Sei disposto a dirlo?'}
+       ]},
+
+      {minuti:'28–38', et:'Il testo',
+       schermo:'«Tutti gli enti sono enti in virtù dell\'Uno:\nsia quelli che sono enti in senso primo,\nsia quelli che in qualche modo si dicono enti.\n\nChe cosa sarebbe infatti,\nse non fosse uno?\n\nPrivati dell\'uno che si dice di loro, non sono più quelli.\n\nNé un esercito esiste, se non è uno;\nné un coro, né un gregge, se non sono uno.\n\nNé una casa, né una nave hanno l\'essere\nse non hanno l\'uno.»',
+       testo:{fonte:'Plotino, Enneadi VI 9, 1 (III secolo d.C.)',
+              glossa:'Nota il movimento: parte da cose comunissime — un esercito, un gregge, una casa — e non da concetti astratti. Plotino non sta annunciando una dottrina: sta mostrando che chiunque parli di qualsiasi cosa ha già usato l\'unità senza accorgersene. È la stessa mossa con cui Aristotele difendeva il principio di non contraddizione.'},
+       parlato:'Leggi il passo intero: è breve e la sua forza sta nell\'accumulo degli esempi.\n\nPoi introduci la conseguenza che li spiazza. Se l\'Uno dà l\'essere a tutto, non può essere a sua volta un ente — sarebbe uno degli oggetti che deve fondare. Quindi sta al di là dell\'essere.\n\nE c\'è di peggio, o di meglio: non può nemmeno pensare. Perché pensare vuol dire distinguere chi pensa da ciò che è pensato, e sarebbe già due. Il principio primo, dice Plotino, non pensa, non vuole, non sceglie, non ci conosce.\n\nDi lui si può dire solo che cosa non è. Anche il nome «Uno» è improprio: serve a togliere il molteplice, non a descriverlo.',
+       seDicono:[
+         {loro:'«Un principio che non pensa e non vuole non è Dio: è una cosa.»',
+          tu:'Non è nemmeno una cosa, perché le cose sono enti. È il punto in cui il linguaggio si rompe, e Plotino lo sa: dice che di lui parliamo sempre impropriamente. Quando fra qualche secolo i cristiani useranno questa filosofia, dovranno rimettergli la volontà — ed è un cambiamento enorme.'},
+         {loro:'«Se non ci conosce, a che serve?»',
+          tu:'Non serve: non è lì per servire. Ed è la differenza fra un principio metafisico e un dio religioso. Tienila stretta, perché la prossima volta incontrerai qualcuno che ha bisogno che Dio lo conosca per nome.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'Se l\'Uno non sceglie, come nasce tutto il resto?\n\nNon lo crea. Non lo fabbrica. Non lo decide.\n\nTrabocca.\n\nCome la sorgente alimenta i fiumi senza svuotarsi,\ncome il sole illumina senza consumarsi\ne senza aver deciso di farlo.\n\nQuindi: nessun creatore, nessun progetto,\nnessun inizio nel tempo, nessuna alternativa.\n\nIl mondo non poteva non esserci —\ne nessuno lo ha voluto.',
+       parlato:'Dai l\'emanazione con le due immagini e poi elenca le conseguenze, una per riga, senza attenuarle. È il momento in cui gli studenti capiscono di essere davanti a qualcosa che non è la religione che conoscono, pur usandone tutte le parole.\n\nPoi il confronto esplicito, che serve moltissimo per il resto dell\'anno: nella Genesi Dio decide, e prima non c\'era niente. Qui non c\'è decisione e non c\'è un prima. Eppure fra due secoli i cristiani leggeranno Plotino e ne prenderanno quasi tutto il vocabolario.\n\nInfine i due dettagli biografici, che vanno insieme e chiudono il tempo: Porfirio racconta che il maestro raggiunse l\'unione con l\'Uno quattro volte in sei anni. E che rifiutò di farsi ritrarre, dicendo che sarebbe stata l\'immagine di un\'immagine — non voleva lasciare un ricordo del proprio corpo.',
+       seDicono:[
+         {loro:'«Se è tutto necessario, che senso ha la nostra vita?»',
+          tu:'Per Plotino un senso c\'è, ed è tornare indietro: ogni grado si volge verso ciò da cui è uscito, e il filosofo fa consapevolmente ciò che tutta la realtà sta già facendo. Non ti chiede di cambiare il mondo — ti chiede di risalire.'},
+         {loro:'«Allora anche il male è necessario?»',
+          tu:'Plotino risponde che il male non è una cosa: è privazione, come il buio è assenza di luce. Segnati questa risposta: è quella che fra due secoli tirerà fuori dal manicheismo un uomo di nome Agostino, ed è la prossima lezione.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'Torniamo alla prima domanda.\n\nQuante cose siete?\n\nAdesso sapete che se la risposta è «molte»,\nnon siete niente.\n\nE allora l\'ultima domanda dell\'ora:\n\nc\'è qualcosa in voi\nche non sia fatto di parti?\n\nPer mille anni, in Occidente,\nla risposta sarà una sola parola.',
+       parlato:'Rifai la conta iniziale e mostrala: cambia quasi sempre, e comunque il gruppo che diceva «molte cose per comodità» si è assottigliato.\n\nPoi lascia la domanda finale senza raccogliere risposte. Il rimando è alla prossima lezione: la parola sarà «anima», e chi la userà in un modo nuovo — cercandola dentro invece che sopra — si chiama Agostino.\n\nSe hai ancora un minuto, chiudi con la fine delle Enneadi, che è anche la fine della filosofia greca: l\'ultima riga dell\'ultimo trattato è «fuga del solo verso il Solo». Duecento anni dopo, nel 529, un imperatore chiuderà la scuola di Atene, mille anni esatti dopo Platone. Non è una coincidenza che valga la pena spiegare — è una data che vale la pena ricordare.',
+       seDicono:[
+         {loro:'«L\'anima però non l\'ha vista nessuno.»',
+          tu:'Nemmeno l\'unità, e la stai usando in ogni frase che dici. Non ti sto chiedendo di crederci: ti sto chiedendo di notare che il problema resta anche per chi non ci crede. Se non c\'è niente di semplice, non c\'è niente.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'Fuga del solo verso il Solo',
+       corpo:'L\'ultimo grado del cammino non è un pensiero: è l\'estasi, l\'uscire da sé. Plotino la descrive come uno stato in cui cade la distinzione fra chi contempla e ciò che è contemplato — e quindi, per definizione, non può essere raccontato dall\'interno.\n\n«Bisogna credere di averlo visto quando l\'anima riceve improvvisamente luce: questa luce viene da Lui ed è Lui.»\n\nL\'ultima riga delle Enneadi è: «fuga del solo verso il Solo».\n\nPorfirio racconta che al maestro accadde quattro volte nei sei anni in cui gli fu accanto. E aggiunge, con una punta di orgoglio, che a lui stesso capitò una volta sola, a sessantotto anni.',
+       chiedi:'Un\'esperienza che non si può raccontare può far parte della filosofia? E se la filosofia è argomentare, che cosa ci sta a fare l\'estasi in fondo a un sistema costruito per deduzioni?'},
+      {titolo:'Contro chi disprezza il mondo',
+       corpo:'Gli gnostici sostenevano che il mondo fosse opera di un dio inferiore e malvagio, e che la salvezza consistesse nel fuggirlo. Plotino, che pure mette il sensibile all\'ultimo posto, scrive contro di loro il trattato più duro delle Enneadi.\n\nSe questo mondo è brutto — dice — allora è brutto anche il modello di cui è immagine. Chi insulta la copia insulta l\'originale. E chi si crede migliore del sole e delle stelle solo perché è un uomo, non ha capito niente.\n\n«Non bisogna disprezzare questo universo, come se non fosse bello.»',
+       chiedi:'Plotino sta difendendo un mondo che ha appena definito l\'ultima e più debole eco dell\'Uno. Come si tengono insieme le due cose? E oggi: si può dire che qualcosa vale poco senza per questo disprezzarlo?'},
+      {titolo:'Il tempo nasce da un\'inquietudine',
+       corpo:'Nel Nous tutto è insieme: non c\'è prima né poi, non perché duri per sempre, ma perché non c\'è successione. È l\'eternità.\n\nL\'Anima però non riesce a tenere tutto insieme. Deve dispiegare, uno dopo l\'altro, ciò che nell\'Intelletto è simultaneo. E questo dispiegarsi, dice Plotino, è il tempo: non un contenitore in cui le cose accadono, ma la vita dell\'anima che si distende.\n\n«Il tempo è la vita dell\'anima nel movimento con cui passa da un atto della vita a un altro.»',
+       chiedi:'Se il tempo è la distensione dell\'anima, allora non esisterebbe senza qualcuno che lo vive. Vi convince? E come rispondereste a chi obietta che il mondo aveva un\'età anche prima che ci fosse qualcuno a contarla?'}
+    ],
+    testi:[
+      {fonte:'Plotino, Enneadi V 2, 1 — la sorgente',
+       corpo:'«L\'Uno è tutte le cose e nessuna di esse: principio di tutte, non è tutte le cose, ma è tutte le cose in quel modo. […] Essendo perfetto, e non cercando nulla, e non possedendo nulla, e non avendo bisogno di nulla, per così dire è traboccato, e questa sua sovrabbondanza ha prodotto un\'altra cosa.»',
+       glossa:'«Per così dire» è la spia da far notare: Plotino sa che «traboccare» è un\'immagine e che non ne ha di migliori. Tutta la sua metafisica cammina su metafore dichiarate tali — ed è più onesto di molti sistemi che le usano senza ammetterlo.'},
+      {fonte:'Porfirio, Vita di Plotino 1 e 23',
+       corpo:'«Plotino, il filosofo del nostro tempo, sembrava vergognarsi di essere in un corpo. Per questa disposizione, non sopportava di parlare né della propria origine, né dei genitori, né della patria.»\n\n«Il suo fine e la sua meta era unirsi al Dio che è sopra tutte le cose e avvicinarsi a lui. Quattro volte, mentre gli fui accanto, raggiunse questa meta.»',
+       glossa:'La biografia di Porfirio è la prima vita di filosofo scritta da un allievo con questo tono: non aneddoti, ma testimonianza. Vale la pena notare che l\'informazione più intima — quante volte il maestro raggiunse l\'estasi — è anche l\'unica che non si può verificare.'},
+      {fonte:'Plotino, Enneadi I 6, 9 — diventare ciò che si vuole vedere',
+       corpo:'«Torna in te stesso e guarda: se non ti vedi ancora bello, fa\' come lo scultore di una statua che deve diventare bella — toglie, raschia, liscia, ripulisce, finché non fa apparire un bel volto sulla statua. Così anche tu togli il superfluo e raddrizza ciò che è storto. […] Non smettere di scolpire la tua statua, finché non risplenda in te il divino splendore della virtù.»',
+       glossa:'L\'immagine dello scultore che toglie invece di aggiungere è una delle più belle dell\'antichità, e dice in modo concreto il principio che regge tutto: si vede solo ciò a cui si somiglia, quindi diventare buoni non serve a meritare la visione — serve ad averne gli occhi.'}
+    ],
+    compito:'Mezza pagina. Elencate cinque cose che vi compongono — parti del corpo, ricordi, abitudini, ruoli, relazioni — e poi provate a togliere ciascuna e chiedetevi se restereste voi. Fermatevi al punto in cui togliendo una cosa non restate più voi: quella cosa, secondo voi, è una parte o è ciò che tiene insieme le parti?',
+    fonti:[
+      'Plotino, Enneadi I 6 (il bello), III 7 (il tempo e l\'eternità), II 9 (contro gli gnostici), V 1-2 (le ipostasi), VI 9 (l\'Uno e l\'estasi)',
+      'Porfirio, Vita di Plotino; Isagoge (introduzione alle Categorie di Aristotele)',
+      'Proclo, Elementi di teologia; Giamblico, I misteri egiziani',
+      'Agostino, Confessioni VII 9-10 — la lettura dei «libri dei platonici»',
+      'Pseudo-Dionigi Areopagita, Teologia mistica — la via negativa',
+      'P. Hadot, Plotino o la semplicità dello sguardo',
+      'G. Reale, Storia della filosofia antica, vol. IV'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',
