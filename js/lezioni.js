@@ -6464,6 +6464,226 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Storia moderna · 3 — Economia, guerre e il declino spagnolo': {
+  mappa: {
+    n:'Economia, guerre e declino spagnolo', d:'perche l\'impero piu ricco del mondo finisce in bancarotta',
+    f:[
+      {r:'comincia da', n:'L\'argento americano', d:'la piu grande immissione di metallo prezioso della storia europea',
+       f:[
+         {r:'estratto a', n:'Potosi e Zacatecas', d:'due giacimenti che da soli riforniscono il pianeta per un secolo e mezzo'},
+         {r:'grazie all\'', n:'Amalgama col mercurio', d:'una tecnica che moltiplica la resa e avvelena chi lavora'},
+         {r:'provoca', n:'La rivoluzione dei prezzi', d:'un secolo di inflazione lenta e continua, mai vista prima'},
+         {r:'spiegata gia allora dalla', n:'Scuola di Salamanca', d:'piu moneta a parita di merci significa prezzi piu alti',
+          f:[{piu:true, r:'da', n:'Martin de Azpilcueta', d:'che formula la teoria quantitativa vent\'anni prima di Bodin'}]},
+         {piu:true, r:'e conta anche', n:'La crescita della popolazione', d:'l\'Europa si ripopola dopo la peste: piu bocche, e i prezzi del grano salgono per primi'},
+         {r:'e ridistribuisce ricchezza', n:'Contro chi vive di rendite fisse', d:'affitti e salari restano fermi mentre i prezzi salgono'}
+       ]},
+
+      {r:'produce', n:'Il paradosso spagnolo', d:'chi riceve tutto quell\'argento e chi fallisce piu spesso',
+       f:[
+         {r:'la corona dichiara', n:'Bancarotta sette volte', d:'1557, 1560, 1575, 1596, 1607, 1627, 1647: quasi una a generazione'},
+         {r:'indebitata con', n:'Fugger e banchieri genovesi', d:'che anticipano il denaro e incassano l\'argento in arrivo'},
+         {r:'con contratti detti', n:'Asientos', d:'prestiti a breve garantiti sulle flotte, a tassi altissimi'},
+         {r:'e titoli chiamati', n:'Juros', d:'debito a lungo termine, che assorbe una quota crescente delle entrate'},
+         {r:'cosi l\'argento', n:'Arriva e riparte', d:'attraversa la Spagna senza fermarsi, e finisce ai creditori del Nord',
+          f:[{piu:true, r:'e in parte', n:'Prosegue verso la Cina', d:'via Manila, perche li l\'argento vale di piu che in Europa'}]}
+       ]},
+
+      {r:'perche', n:'La ricchezza non diventa forza', d:'e le ragioni erano visibili ai contemporanei',
+       f:[
+         {r:'i prezzi alti rendono', n:'Le manifatture non competitive', d:'produrre in Castiglia costa piu che comprare in Francia o in Olanda'},
+         {r:'quindi si', n:'Importa quasi tutto', d:'e l\'argento paga merci straniere invece di finanziare industrie proprie'},
+         {r:'il fisco colpisce', n:'Soprattutto la Castiglia', d:'Aragona, Catalogna e Portogallo contribuiscono poco: e un impero fiscalmente zoppo'},
+         {r:'domina l\'ideale dell\'', n:'Hidalgo', d:'nobilta e onore contro il lavoro manuale e il commercio'},
+         {piu:true, r:'e la Castiglia', n:'Si spopola', d:'chi puo emigra nelle Indie o al Nord: fra Cinque e Seicento perde abitanti'},
+         {r:'e nel 1609 si espellono', n:'I moriscos', d:'trecentomila persone, in gran parte contadini e artigiani specializzati',
+          f:[{r:'con il crollo dell\'', n:'Agricoltura valenciana', d:'intere zone restano senza chi conosca l\'irrigazione'}]}
+       ]},
+
+      {r:'mentre al Nord nasce', n:'Un\'economia nuova', d:'in un paese che non ha nulla di quello che serve',
+       f:[
+         {r:'le Province Unite non hanno', n:'Terra ne materie prime', d:'importano il grano dal Baltico e il legname dalla Norvegia'},
+         {r:'ma costruiscono', n:'La flotta mercantile piu grande d\'Europa', d:'con navi da carico economiche e con pochi uomini di equipaggio'},
+         {r:'fondano nel 1602', n:'La Compagnia delle Indie orientali', d:'la prima societa per azioni con capitale permanente e quote trasferibili'},
+         {r:'e nel 1609', n:'La Banca di Amsterdam', d:'depositi, cambi e pagamenti sicuri: una moneta di conto affidabile',
+          f:[{r:'accanto alla', n:'Borsa', d:'dove si scambiano quote, merci future e assicurazioni'},
+             {piu:true, r:'e a un fenomeno come', n:'La febbre dei tulipani', d:'1637: la prima bolla speculativa documentata della storia'}]},
+         {r:'con una politica di', n:'Tolleranza pratica', d:'ebrei sefarditi, ugonotti e dissidenti trovano rifugio e portano capitali e tecniche'},
+         {piu:true, r:'e una', n:'Stampa senza censura preventiva', d:'ad Amsterdam si pubblica cio che altrove e proibito: e un\'industria'},
+         {r:'e ottengono cosi', n:'Denaro a buon mercato', d:'si finanziano al tre-quattro per cento mentre la Spagna paga anche il quaranta'}
+       ]},
+
+      {r:'e cambia', n:'La guerra', d:'che diventa un\'industria a ciclo continuo',
+       f:[
+         {r:'con la', n:'Rivoluzione militare', d:'artiglierie, fanterie di massa, assedi lunghissimi'},
+         {r:'e le', n:'Fortificazioni alla moderna', d:'bastioni bassi e obliqui: le mura alte non servono piu a niente',
+          f:[{piu:true, r:'e un assedio puo durare', n:'Piu di un anno', d:'la guerra si decide con la logistica, non con le battaglie'}]},
+         {r:'gli eserciti passano da', n:'Decine a centinaia di migliaia', d:'e vanno pagati ogni mese, anche quando non combattono'},
+         {r:'quindi vince', n:'Chi sa indebitarsi meglio', d:'non chi ha piu denaro, ma chi lo ottiene a un costo minore'},
+         {r:'e i soldati non pagati', n:'Si pagano da soli', d:'ammutinamenti e saccheggi diventano parte prevedibile del sistema'}
+       ]},
+
+      {r:'si combatte prima nei', n:'Paesi Bassi', d:'ottant\'anni di guerra che nessuno riesce a chiudere',
+       f:[
+         {r:'comincia per', n:'Tasse e religione insieme', d:'il decimo denaro imposto dal duca d\'Alba, e la repressione dei calvinisti'},
+         {r:'la repressione produce', n:'L\'effetto contrario', d:'il tribunale dei tumulti compatta chi era diviso'},
+         {r:'le province del Nord si uniscono a', n:'Utrecht', d:'1579: nasce di fatto una repubblica federale'},
+         {r:'la Spagna tenta il colpo con l\'', n:'Armada', d:'1588: la flotta viene dispersa piu dal tempo che dal nemico'},
+         {r:'e la guerra si chiude', n:'Nel 1648', d:'con il riconoscimento dell\'indipendenza olandese'},
+         {piu:true, r:'ma nel frattempo gli olandesi', n:'Riforniscono il nemico', d:'grano e armi venduti agli eserciti spagnoli che li combattono'}
+       ]},
+
+      {r:'poi in', n:'Germania', d:'la guerra dei Trent\'anni: il conflitto piu distruttivo prima del Novecento',
+       f:[
+         {r:'comincia con', n:'La defenestrazione di Praga', d:'1618: una crisi locale che diventa europea'},
+         {r:'si combatte con eserciti', n:'Che si mantengono da soli', d:'requisizioni e contributi imposti ai territori attraversati',
+          f:[{r:'organizzati da', n:'Wallenstein', d:'un imprenditore della guerra che presta al proprio imperatore un esercito'}]},
+         {r:'entra la', n:'Svezia', d:'con Gustavo Adolfo, finanziata dalla Francia'},
+         {r:'e infine la Francia cattolica', n:'Combatte gli Asburgo cattolici', d:'con Richelieu la ragion di Stato prevale sulla confessione'},
+         {r:'si chiude con', n:'La pace di Vestfalia', d:'1648: sovranita territoriale piena, e i calvinisti finalmente riconosciuti',
+          f:[{r:'con perdite in Germania', n:'Fra un quinto e un terzo', d:'della popolazione, con enormi differenze locali'}]}
+       ]},
+
+      {r:'lascia', n:'Un\'Europa riordinata', d:'con altri protagonisti e altre regole',
+       f:[
+         {r:'la Spagna resta', n:'Grande e indebolita', d:'conserva l\'impero americano e perde il primato europeo'},
+         {r:'l\'Olanda e poi l\'Inghilterra', n:'Prendono il mare', d:'commercio, credito e flotte diventano gli strumenti della potenza'},
+         {r:'la Francia diventa', n:'La prima potenza continentale', d:'e lo restera per un secolo e mezzo'},
+         {r:'nasce il', n:'Sistema degli Stati sovrani', d:'nessuna autorita superiore, equilibrio e diplomazia permanente'},
+         {piu:true, r:'e il modello sara portato all\'estremo dall\'', n:'Inghilterra', d:'banca centrale nel 1694 e debito garantito dal parlamento: tassi ancora piu bassi'},
+         {r:'e si afferma il principio che', n:'La forza dipende dal credito', d:'chi ottiene denaro a poco prezzo puo permettersi guerre lunghe'}
+       ]}
+    ],
+    incroci:[
+      {da:'Denaro a buon mercato', a:'Chi sa indebitarsi meglio', r:'e cio che fa vincere le guerre a chi ha',
+       perche:'Un paese piccolo che si finanzia al tre per cento puo sostenere una guerra di ottant\'anni contro un impero che paga il quaranta. Non conta lo stock di ricchezza, conta il costo del prestito: e per questo che la potenza militare europea, dal Seicento, si misura sui tassi di interesse piu che sulle miniere.'},
+      {da:'Bancarotta sette volte', a:'Asientos', r:'e la ragione per cui costano tanto gli',
+       perche:'Chi ha visto un sovrano riscrivere unilateralmente i termini del debito sette volte pretende un premio enorme per rischiare di nuovo. Le bancarotte non risolvono il problema finanziario: lo trasformano in un costo permanente, scaricato su tutti i prestiti successivi.'},
+      {da:'Arriva e riparte', a:'Le manifatture non competitive', r:'e reso inevitabile dal fatto che siano',
+       perche:'L\'argento fa salire i prezzi interni, quindi produrre in Spagna costa piu che importare; e allora l\'argento serve a pagare merci straniere e prosegue verso il Nord. La ricchezza che arriva senza essere prodotta non costruisce capacita produttiva, e anzi la distrugge.'},
+      {da:'I moriscos', a:'Agricoltura valenciana', r:'sono cio che tiene in piedi l\'',
+       perche:'L\'espulsione del 1609 elimina in pochi mesi trecentomila persone, in larga parte contadini che conoscevano i sistemi di irrigazione e artigiani specializzati. È il caso piu netto di una decisione presa per ragioni religiose e politiche il cui costo economico era prevedibile e fu previsto — e ignorato.'},
+      {da:'Riforniscono il nemico', a:'La flotta mercantile piu grande d\'Europa', r:'e possibile grazie alla',
+       perche:'Gli olandesi vendono grano e armi agli eserciti spagnoli che li combattono, perche il commercio e la loro unica risorsa e nessuno puo permettersi di rinunciarvi. La guerra di ottant\'anni si finanzia in parte con i profitti fatti sul nemico: le economie non seguono le linee dei fronti.'},
+      {da:'Si pagano da soli', a:'Che si mantengono da soli', r:'e la stessa logica degli eserciti tedeschi',
+       perche:'Quando lo Stato non riesce a pagare regolarmente, il costo della guerra viene scaricato sulle popolazioni attraversate, sotto forma di requisizioni o di saccheggio. Non e barbarie dei soldati: e un modello di finanziamento, e spiega perche la guerra dei Trent\'anni sia stata cosi rovinosa per i civili.'},
+      {da:'Soprattutto la Castiglia', a:'Grande e indebolita', r:'e una delle cause per cui la Spagna resta',
+       perche:'Un impero che riesce a tassare seriamente solo una delle sue parti mette tutto il peso su una regione sola, che si spopola e si impoverisce, mentre le altre restano ricche e inutilizzabili. La debolezza spagnola non e mancanza di risorse: e incapacita di raggiungerle.'},
+      {da:'La rivoluzione dei prezzi', a:'Contro chi vive di rendite fisse', r:'agisce soprattutto',
+       perche:'L\'inflazione del Cinquecento e lenta, pochi punti l\'anno, e proprio per questo devastante nel lungo periodo per chi incassa somme fissate per contratto: nobilta terriera con affitti immutabili, salariati, istituzioni religiose. Chi ha merci da vendere guadagna. Un\'inflazione prolungata e sempre una redistribuzione, mai un fenomeno neutro.'},
+      {da:'Combatte gli Asburgo cattolici', a:'Tasse e religione insieme', r:'chiude il ciclo aperto da conflitti nati da',
+       perche:'La guerra comincia come conflitto confessionale e finisce con la Francia cattolica che finanzia i protestanti svedesi contro gli Asburgo cattolici. In trent\'anni la ragion di Stato sostituisce la confessione come criterio delle alleanze — ed e questo, piu di ogni trattato, a chiudere l\'eta delle guerre di religione.'},
+      {da:'Piu di un anno', a:'Decine a centinaia di migliaia', r:'e cio che costringe a portare gli eserciti da',
+       perche:'Le fortificazioni bastionate rendono gli assedi lunghissimi, e un assedio richiede di tenere fermi migliaia di uomini per mesi mentre altri li riforniscono e altri ancora li proteggono. La crescita degli eserciti non nasce dall\'ambizione dei sovrani ma dalla geometria delle fortezze.'},
+      {da:'La Banca di Amsterdam', a:'Prosegue verso la Cina', r:'sta al centro dei flussi che portano l\'argento fino a quando',
+       perche:'Amsterdam diventa il luogo dove i pagamenti internazionali si compensano e dove si sa quanto vale davvero una moneta. L\'argento americano passa di li e prosegue verso l\'Asia perche in Cina il rapporto fra oro e argento e diverso: e il primo arbitraggio su scala planetaria.'},
+      {da:'L\'effetto contrario', a:'Utrecht', r:'e cio che rende possibile l\'unione di',
+       perche:'La repressione del duca d\'Alba colpisce nobili cattolici e calvinisti insieme, e trasforma una disputa fiscale in una causa comune. Le province del Nord si uniscono non perche fossero simili, ma perche il nemico le ha trattate come un unico bersaglio.'},
+      {da:'La forza dipende dal credito', a:'Sistema degli Stati sovrani', r:'diventa la regola del nuovo',
+       perche:'In un\'Europa senza autorita superiore, ogni Stato deve procurarsi da solo i mezzi per esistere, e la guerra e l\'attivita piu costosa. Da Vestfalia in poi la storia europea si puo leggere come una gara a chi costruisce il sistema fiscale e creditizio piu efficiente: la finanza pubblica diventa una questione di sopravvivenza.'}
+    ]
+  },
+  provocazione: {
+    titolo:'Il tasso di interesse',
+    durata:'55 minuti',
+    domandaMadre:'Perche a chi puo tutto nessuno presta volentieri?',
+    perche:'Filippo II riceve la piu grande fortuna della storia europea e dichiara bancarotta sette volte, pagando interessi fino al quaranta per cento; le Province Unite non hanno terra ne materie prime, comprano perfino il grano, combattono ottant\'anni contro quell\'impero e si finanziano al tre. La classe deve arrivare da sola alla ragione, che non e economica ma costituzionale: chi presta a un sovrano che decide da solo se ripagare chiede un premio per il rischio, mentre chi presta a un\'assemblea in cui siede chi paga le imposte non rischia quasi nulla. Il colpo di scena e che la Spagna sapeva tutto — i suoi economisti scrissero diagnosi perfette — e non poteva fare nulla, perche ogni terapia richiedeva di cedere potere. Da qui la tesi che i ragazzi si portano via: a volte legarsi le mani rende piu forti.',
+    occorrente:'Niente. Se puoi, scrivi alla lavagna i due numeri — 40 e 3 — e lasciali li per tutta l\'ora.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'Due paesi, fine del Cinquecento.\n\nIl primo governa mezzo mondo.\nRiceve ogni anno le flotte\ncariche dell\'argento americano.\nHa l\'esercito migliore d\'Europa.\n\nDichiara bancarotta nel 1557.\nE nel 1560. E nel 1575.\nE nel 1596.\nPer certi prestiti\npaga il quaranta per cento.\n\nIl secondo e grande come mezza Lombardia.\nNon ha miniere,\nnon ha grano — lo importa dal Baltico —\nnon ha legname — lo importa dalla Norvegia.\nMeta del territorio\ne stata strappata al mare.\nE in guerra da vent\'anni\ncontro il primo.\n\nSi finanzia al tre per cento.',
+       parlato:'Dai i due ritratti lentamente e scrivi i due numeri alla lavagna.\n\nPoi la domanda: chi dei due sta vincendo?\n\nLascia rispondere, poi da\' il dato che chiude la discussione: la guerra dura ottant\'anni e finisce con l\'indipendenza olandese. Il paese senza niente ha resistito all\'impero piu ricco del mondo.\n\nE aggiungi il particolare che di solito lascia tutti perplessi: durante quella guerra gli olandesi vendevano grano e armi agli eserciti spagnoli che li stavano combattendo. Il commercio era la loro unica risorsa e non potevano permettersi di rinunciarvi — nemmeno con il nemico.\n\nPoi la domanda dell\'ora: perche uno paga quaranta e l\'altro tre?',
+       seDicono:[
+         {loro:'«Perche gli spagnoli sprecavano.»',
+          tu:'Spendevano moltissimo, ed e vero. Ma nota che anche gli olandesi spendevano enormemente: mantenevano eserciti e una flotta gigantesca. La differenza non e quanto spendi, e a che prezzo ti procuri il denaro. Con quella differenza di tassi puoi permetterti quasi il doppio di guerra a parita di entrate.'},
+         {loro:'«Gli olandesi commerciavano, quindi guadagnavano di piu.»',
+          tu:'Guadagnavano bene, e la Spagna riceveva l\'argento di due continenti: in valore assoluto non c\'era gara. La domanda resta: perche chi aveva meno otteneva credito a un sesto del prezzo?'}
+       ]},
+
+      {minuti:'8–17', et:'Lo schieramento',
+       schermo:'La differenza fra il quaranta\ne il tre per cento:',
+       opzioni:['dipende da come si amministra il denaro', 'dipende da come si e governati'],
+       parlato:'Fai schierare e conta. Il primo gruppo prevale quasi sempre, perche sembra la risposta di buon senso.\n\nPoi metti tutti nella posizione di chi presta, che e il modo piu rapido per capire.\n\nDi\': immaginate di dover prestare una somma importante. Nel primo caso la persona che vi chiede il denaro decide da sola se restituirvelo, ed e anche la persona che comanda i tribunali. Nel secondo caso chi vi chiede il denaro deve farsi approvare le condizioni da un\'assemblea in cui sedete anche voi.\n\nQuanto chiedete di interesse nei due casi?\n\nCi arrivano subito, e da soli. Il punto e che ci arrivino ragionando invece di sentirselo dire.\n\nPoi chiedi la cosa piu importante: nel primo caso, che cosa potrebbe fare quel sovrano per convincervi ad abbassare il tasso?\n\nLa risposta e che non c\'e quasi niente che possa fare, perche qualunque promessa resta revocabile da lui stesso. Ed e qui che comincia la lezione vera.',
+       seDicono:[
+         {loro:'«Poteva dare una garanzia, un pegno.»',
+          tu:'Lo faceva: gli asientos erano garantiti sull\'argento in arrivo. Ma chi doveva far rispettare la garanzia, se il debitore controlla i tribunali? Una garanzia vale quanto vale il giudice che puoi chiamare, e contro un re non potevi chiamarne nessuno.'},
+         {loro:'«Il re poteva giurare.»',
+          tu:'Giuravano, e solennemente. Filippo II era considerato un uomo religiosissimo. Non basta: una promessa che il promittente puo sciogliere da solo non e una garanzia, e un\'intenzione. E i banchieri genovesi facevano i conti sulle garanzie, non sulle intenzioni.'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'Che cos\'e una bancarotta regia.\n\nNon e mancanza di denaro.\n\nÈ un decreto con cui il sovrano\nstabilisce che i debiti a breve\ndiventano titoli a lungo termine,\ncon interessi piu bassi.\n\nNon chiede il permesso a nessuno.\nNon c\'e un tribunale sopra di lui.\nI creditori possono soltanto\naccettare o perdere tutto.\n\nSuccede sette volte\nin novant\'anni.\n\nNelle Province Unite\nchi presta denaro allo Stato\nsiede negli Stati provinciali\nche votano le imposte\ncon cui il debito sara ripagato.\n\nÈ creditore e contribuente\ninsieme.\n\nRipudiare il debito\nsignificherebbe\nderubare se stessi.',
+       parlato:'Spiega bene che cos\'e una bancarotta regia, perche la parola inganna: non e un fallimento ma una decisione politica.\n\nPoi il confronto olandese, e insisti sul fatto che non c\'entra la virtu. Gli olandesi non erano piu onesti degli spagnoli — erano organizzati in modo che l\'imbroglio non convenisse a chi avrebbe potuto commetterlo.\n\nQui arriva la formulazione centrale dell\'ora, e va detta con calma: il credito non e una questione finanziaria, e una questione costituzionale. Il tasso di interesse che uno Stato paga misura quanto e difficile, per chi lo governa, cambiare idea.\n\nPoi la conseguenza paradossale, che e la cosa piu bella da far scoprire: il sovrano che puo fare tutto e piu debole di quello che non puo. Poter ripudiare i debiti costa quaranta per cento; non poterlo fare costa tre.\n\nDomanda: allora un potere assoluto e piu forte o piu debole di uno limitato?',
+       seDicono:[
+         {loro:'«Ma il re assoluto puo prendersi il denaro con la forza.»',
+          tu:'Puo, e lo fa: confische, prestiti forzosi, svalutazioni della moneta. Ognuna di queste mosse funziona una volta e peggiora tutte le volte successive, perche chi ha capitali li nasconde o li porta altrove. La forza incassa oggi e distrugge il credito di domani.'},
+         {loro:'«Allora conviene sempre limitare il potere.»',
+          tu:'Sul credito si, e in modo dimostrabile. Ma tieni presente il costo: un\'assemblea che vota le imposte e lenta, litigiosa, e talvolta non decide. Gli olandesi persero occasioni militari per questo. Il vantaggio si vede sulle guerre lunghe, non sulle decisioni rapide.'}
+       ]},
+
+      {minuti:'28–38', et:'Il testo',
+       schermo:'Madrid, 1600.\nMartin Gonzalez de Cellorigo,\navvocato, scrive un memoriale\nal re.\n\nDice, in sostanza:\n\nche la ricchezza venuta dalle Indie\nnon si e fermata in Spagna\ne non ha prodotto nulla;\n\nche il regno e diviso\nfra ricchi che non lavorano\ne poveri che mendicano,\ne mancano quelli in mezzo\nche producono;\n\nche si e disprezzato il lavoro\ne si e onorato solo l\'ozio nobile;\n\nche la Spagna e diventata\nuna repubblica di uomini incantati,\nche vivono fuori dall\'ordine naturale\ndelle cose.\n\nAveva ragione su tutto.\n\nNon successe niente.',
+       testo:{fonte:'Martín González de Cellorigo, Memorial de la política necesaria y útil restauración a la República de España, Valladolid 1600',
+              glossa:'Cellorigo appartiene al gruppo che gli storici chiamano arbitristas: giuristi ed economisti che fra Cinque e Seicento inondarono la corte di analisi e proposte. La qualita delle diagnosi e sorprendente — vi si trovano la teoria quantitativa della moneta, il problema della competitivita e quello del ceto medio produttivo. Il loro fallimento pratico e il vero oggetto di studio.'},
+       parlato:'Leggi il memoriale e fermati sull\'espressione finale, che colpisce sempre: una repubblica di uomini incantati.\n\nPoi fai la domanda giusta, che non e se avesse ragione: perche, avendo ragione, non successe niente?\n\nRaccogli le ipotesi. Di solito arriva «non lo ascoltavano»: correggi, perche e falso. Questi memoriali venivano letti, discussi nei consigli, alcuni autori erano funzionari regi. Il problema non era l\'ascolto.\n\nGuidali all\'analisi vera, prendendo le riforme una per una.\n\nTassare Aragona e Catalogna come la Castiglia? Avrebbero dovuto approvarlo le loro assemblee, e significava violare i patti su cui si reggeva l\'unione dei regni: nel 1640 ci provarono, e scoppiarono due rivolte.\n\nRidurre le spese militari? Significava rinunciare all\'Italia, alle Fiandre e al ruolo di difensore del cattolicesimo: cioe smettere di essere quello che si era.\n\nDare voce ai creditori sulle imposte? Significava cedere sovranita.\n\nLa conclusione e piu inquietante dell\'incompetenza: la diagnosi era corretta e nessuna terapia era compatibile con la struttura del potere.',
+       seDicono:[
+         {loro:'«Bastava avere un re piu intelligente.»',
+          tu:'Filippo II era un lavoratore instancabile che leggeva personalmente i dispacci e annotava i margini. Non era un fannullone: era un uomo intelligentissimo dentro un sistema che rendeva impossibili le cose giuste. Guardarsi dalla spiegazione «erano incapaci» e uno degli esercizi piu utili che possiate fare.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'E adesso il dettaglio\nche riassume tutto.\n\nLa Spagna spende l\'argento\ndelle Americhe\nper combattere gli olandesi\nnelle Fiandre.\n\nMa i suoi eserciti\nnelle Fiandre\ncomprano il grano,\nle navi, il legname\ne buona parte delle forniture\ndagli olandesi,\nche sono gli unici\na poterli portare a quel prezzo.\n\nE i banchieri che anticipano\nil denaro al re di Spagna\ncompensano i propri pagamenti\nsulla piazza di Amsterdam.\n\nQuindi:\n\nl\'argento serve a pagare\nuna guerra\ncontro un nemico\nche viene finanziato\ndalla guerra stessa.',
+       parlato:'Dai la catena passo per passo e lascia che arrivino da soli all\'assurdita.\n\nPoi spiega perche non si poteva evitare. La Spagna proibi piu volte il commercio con i ribelli: ogni volta i prezzi salirono, gli approvvigionamenti si complicarono, e il divieto fu aggirato o revocato. Un esercito di ottantamila uomini in un paese straniero deve mangiare tutti i giorni, e chi ha le navi decide.\n\nPoi il punto generale, che vale oltre il Seicento: le economie non seguono i fronti. Nei conflitti moderni si combatte quasi sempre contro qualcuno con cui si continua a scambiare, direttamente o attraverso terzi, e chi vince e spesso chi ha capito meglio dove passano i flussi.\n\nSe la classe regge, aggiungi la nota finale sull\'argento: una parte non si ferma nemmeno in Europa. Prosegue verso Manila e la Cina, dove l\'argento vale di piu che a Siviglia. La flotta spagnola trasporta metallo dall\'America all\'Asia passando per un\'Europa che ne trattiene solo la parte necessaria a pagare i debiti.',
+       seDicono:[
+         {loro:'«Erano traditori, quelli che vendevano al nemico.»',
+          tu:'Per le leggi dell\'epoca spesso lo erano, e alcuni furono impiccati. Ma erano cosi tanti e cosi indispensabili che il divieto non regge mai a lungo. Quando una regola viene violata da tutti perche tutti ne hanno bisogno, il problema non e piu la moralita di chi la viola.'},
+         {loro:'«Bastava bloccare i porti olandesi.»',
+          tu:'Ci provarono, ripetutamente, e in parte riuscirono: Anversa fu strangolata proprio cosi. Il risultato fu che il traffico si sposto ad Amsterdam, piu a nord e piu difficile da bloccare. Colpire un nodo commerciale spesso non lo distrugge: lo trasferisce.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'Quello che avete visto\nin un\'ora.\n\nUn impero con tutto l\'argento\ndel mondo paga il quaranta.\n\nUna repubblica senza niente\npaga il tre.\n\nLa differenza non e\nquanto possiedi.\n\nÈ se puoi cambiare idea\nsulle promesse che hai fatto.\n\nChi puo cambiare idea\npaga di piu, sempre.\n\nUltima domanda,\ne vale anche fuori dalla storia:\n\nin che situazioni conviene\ntogliersi il potere\ndi cambiare idea?',
+       parlato:'Rifai la conta iniziale e commenta lo spostamento, che qui e sempre netto.\n\nPoi da\' la tesi in forma pulita: il tasso di interesse che uno Stato paga e una misura della sua costituzione. Piu e facile per chi comanda venir meno alla parola data, piu costa procurarsi denaro — e, in un\'epoca in cui le guerre si vincono con il credito, questo diventa una questione di sopravvivenza.\n\nSull\'ultima domanda falli lavorare con esempi loro. Chi si impegna pubblicamente a fare una cosa si toglie la possibilita di tirarsi indietro, e proprio per questo viene creduto. Una promessa che potete rompere senza conseguenze non vale niente per chi la riceve — e il valore di un impegno si misura da quanto vi costerebbe romperlo.\n\nÈ un ragionamento che vale per uno Stato, per un contratto e per una persona.\n\nChiudi con la cosa che serve per il seguito: da qui in avanti la potenza europea non si misura piu sull\'oro posseduto ma sulla capacita di raccogliere denaro. E il paese che portera questo meccanismo alle estreme conseguenze — banca centrale, debito pubblico garantito dal parlamento, tassi bassissimi — sara l\'Inghilterra, che nel secolo successivo batte la Francia pur essendo piu piccola e meno popolosa.',
+       seDicono:[
+         {loro:'«Quindi essere liberi di scegliere e sempre uno svantaggio?»',
+          tu:'No: e uno svantaggio quando devi convincere qualcun altro a fidarsi di te nel tempo. Nelle decisioni che riguardano solo te, la liberta e un vantaggio puro. Il paradosso vale solo dove entra in gioco la fiducia di un altro — e sono piu situazioni di quante sembri.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'Trecentomila persone in pochi mesi',
+       corpo:'Nel 1609 la corona spagnola decreta l\'espulsione dei moriscos, discendenti dei musulmani convertiti a forza un secolo prima e sospettati di praticare l\'islam in segreto. Circa trecentomila persone lasciano la Spagna, quasi tutte per il Nordafrica.\n\nErano concentrate soprattutto nel regno di Valencia e in Aragona, dove costituivano gran parte della manodopera agricola e conoscevano i sistemi di irrigazione ereditati dall\'epoca musulmana.\n\nDopo l\'espulsione, molte zone restano incolte per decenni. Alcuni nobili valenciani, i cui redditi dipendevano da quei contadini, si erano opposti al decreto.',
+       chiedi:'Il costo economico era prevedibile e fu previsto da chi lo avrebbe pagato. Che cosa deve valere piu del calcolo economico, perche una decisione simile venga presa comunque? E come si riconosce, mentre accade, una decisione di questo tipo?'},
+      {titolo:'L\'imprenditore della guerra',
+       corpo:'Albrecht von Wallenstein offre all\'imperatore un esercito: lo recluta, lo arma e lo comanda, anticipando i costi. In cambio ottiene il diritto di imporre contribuzioni ai territori attraversati.\n\nIl sistema funziona: mette in campo forze enormi senza gravare sul tesoro imperiale. Ma significa che l\'esercito si mantiene spogliando le regioni in cui si trova, amiche o nemiche.\n\nWallenstein diventa cosi potente e cosi autonomo che l\'imperatore lo destituisce, e infine lo fa assassinare nel 1634.',
+       chiedi:'Uno Stato affida a un privato la propria capacita militare perche non puo permettersela. Che cosa succede al potere di quello Stato? E riuscite a pensare a servizi essenziali che oggi funzionano con lo stesso schema?'},
+      {titolo:'L\'Armada e il racconto',
+       corpo:'Nel 1588 la grande flotta inviata da Filippo II contro l\'Inghilterra fallisce. Le cause principali furono il piano operativo — doveva imbarcare truppe nelle Fiandre, cosa quasi impossibile con le navi disponibili — e soprattutto le tempeste durante la rotta di ritorno attorno alla Scozia e all\'Irlanda.\n\nGli inglesi coniarono una medaglia con la scritta: soffiò il vento e furono dispersi. Nella memoria inglese l\'episodio divenne l\'inizio della propria supremazia marittima.\n\nIn realta la guerra prosegui per quindici anni e gli spagnoli ricostruirono la flotta; una spedizione inglese contro il Portogallo l\'anno successivo fu un disastro paragonabile.',
+       chiedi:'Perche certe sconfitte diventano simboli e altre no? E che cosa dovreste chiedervi ogni volta che un evento vi viene presentato come la svolta decisiva di una storia?'}
+    ],
+    testi:[
+      {fonte:'Martín de Azpilcueta, Comentario resolutorio de cambios, Salamanca 1556',
+       corpo:'Il teologo osserva che nei paesi dove c\'e scarsita di denaro le merci e il lavoro costano meno, e che in Spagna, da quando e arrivato l\'argento delle Indie, le cose costano molto di piu — perche il denaro vale meno quando ce n\'e in abbondanza.',
+       glossa:'È una formulazione della teoria quantitativa della moneta scritta a Salamanca vent\'anni prima di Bodin, a cui di solito viene attribuita. Utile per due motivi: mostra che i contemporanei capirono il fenomeno mentre accadeva, e ricorda che le paternita nella storia delle idee dipendono spesso da quale lingua veniva letta.'},
+      {fonte:'Decreto di sospensione dei pagamenti, Filippo II, 1575',
+       corpo:'Il provvedimento sospende il servizio dei debiti a breve contratti con i banchieri e ne dispone la conversione in titoli a lungo termine con interesse ridotto, dichiarando irregolari i contratti precedenti.',
+       glossa:'Da leggere per capire che cosa fosse davvero una bancarotta regia: non l\'ammissione di non avere denaro, ma un atto d\'imperio che riscrive unilateralmente i contratti. La conseguenza immediata fu il blocco dei rifornimenti alle Fiandre e l\'ammutinamento delle truppe, che nel 1576 saccheggiarono Anversa.'},
+      {fonte:'Trattato di Vestfalia, 1648 — i principi generali',
+       corpo:'La pace riconosce ai principi tedeschi la piena sovranita sui propri territori, compreso il diritto di stringere alleanze; estende ai calvinisti le garanzie gia riconosciute a luterani e cattolici; e sancisce l\'indipendenza delle Province Unite e della Confederazione svizzera.',
+       glossa:'Viene indicata come l\'atto di nascita del sistema degli Stati sovrani, e la formula va usata con prudenza: molte di quelle pratiche esistevano gia. Quello che cambia davvero e che nessuno pretende piu di parlare a nome di un\'autorita superiore comune — ne l\'imperatore, ne il papa, la cui protesta contro il trattato viene semplicemente ignorata.'}
+    ],
+    compito:'Mezza pagina. Pensate a una situazione in cui vi siete impegnati pubblicamente a fare qualcosa — con la famiglia, con gli amici, con un allenatore. Descrivete che cosa avete ottenuto rendendo pubblico l\'impegno, e che cosa avete perso. Poi rispondete: quell\'impegno sarebbe valso qualcosa se aveste potuto ritirarlo quando volevate, senza che nessuno lo sapesse?',
+    fonti:[
+      'Martín González de Cellorigo, Memorial (1600); Martín de Azpilcueta, Comentario resolutorio de cambios (1556)',
+      'Decreti di sospensione dei pagamenti della corona spagnola (1557-1647); Trattati di Vestfalia (1648)',
+      'J. H. Elliott, La Spagna imperiale; Imperi dell\'Atlantico',
+      'F. Braudel, Civiltà e imperi del Mediterraneo; J. de Vries e A. van der Woude, The First Modern Economy',
+      'G. Parker, La rivoluzione militare; La guerra dei Trent\'anni',
+      'D. North e B. Weingast, Constitutions and Commitment — sul nesso fra istituzioni e costo del debito'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',
