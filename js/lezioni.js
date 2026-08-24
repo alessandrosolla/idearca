@@ -4929,6 +4929,225 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Storia medievale · 10 — La frontiera mediterranea e gli Ottomani': {
+  mappa: {
+    n:'La frontiera mediterranea', d:'gli Ottomani, l\'Europa e un mare che divide meno di quanto sembri',
+    f:[
+      {r:'parte da', n:'Che cos\'era il Mediterraneo', d:'non un confine, ma uno spazio continuo di traffici',
+       f:[
+         {r:'unisce', n:'Tre sponde', d:'europea, asiatica e africana: e piu facile andare da Genova a Tunisi che a Milano'},
+         {r:'e attraversato da', n:'Merci, tecniche e parole', d:'zucchero, carta, numeri, vele latine: passano tutti dalla frontiera'},
+         {r:'dove le guerre', n:'Non fermano i commerci', d:'si combatte e si compra dallo stesso avversario, spesso nello stesso mese'},
+         {piu:true, r:'e le carte nautiche', n:'Ignorano le religioni', d:'i portolani segnano porti e fondali, non chi li governa'}
+       ]},
+
+      {r:'si trasforma con', n:'La fine di Bisanzio', d:'un impero che muore lentamente e poi di colpo',
+       f:[
+         {r:'colpito a morte dalla', n:'Quarta crociata', d:'1204: sono i crociati cristiani a saccheggiare Costantinopoli',
+          f:[{r:'da cui l\'impero', n:'Non si riprende piu', d:'territori perduti, tesoro disperso, e un rancore che dura secoli'}]},
+         {r:'ridotto a', n:'Una citta e poco altro', d:'nel Quattrocento l\'impero romano d\'Oriente e poco piu di Costantinopoli'},
+         {r:'chiede aiuto con', n:'L\'unione delle Chiese', d:'Ferrara-Firenze 1439: accettata dall\'imperatore, rifiutata dal popolo',
+          f:[{piu:true, r:'e a Costantinopoli si dice', n:'Meglio il turbante che la mitra', d:'la sottomissione a Roma pesa piu della conquista'}]},
+         {r:'cade nel', n:'1453', d:'assedio di cinquantatre giorni, poi la citta viene presa d\'assalto',
+          f:[{r:'guidato da', n:'Mehmet II', d:'ventun anni, deciso a fare della citta la propria capitale'},
+             {r:'grazie a', n:'I cannoni di Urban', d:'un ingegnere ungherese che aveva prima offerto i suoi servizi ai bizantini'},
+             {r:'e muore combattendo', n:'Costantino XI', d:'ultimo imperatore romano, dopo millecinquecento anni di serie'}]}
+       ]},
+
+      {r:'poggia su', n:'La macchina ottomana', d:'un modo di costruire lo Stato diverso da quello europeo',
+       f:[
+         {r:'nasce da', n:'Un principato di frontiera', d:'i ghazi dell\'Anatolia, guerrieri di confine, in un secolo diventano impero'},
+         {r:'si regge sui', n:'Giannizzeri', d:'fanteria permanente, addestrata, pagata e disciplinata: non esiste nulla di simile in Europa'},
+         {r:'reclutati con la', n:'Devshirme', d:'il prelievo periodico di ragazzi cristiani nei villaggi balcanici',
+          f:[{r:'che vengono', n:'Convertiti e istruiti', d:'e i migliori entrano nella scuola del palazzo, non nell\'esercito'},
+             {r:'e restano giuridicamente', n:'Schiavi del sultano', d:'anche il gran visir puo essere giustiziato con un ordine'},
+             {piu:true, r:'eppure alcune famiglie', n:'Cercano di farci entrare i figli', d:'e altre nascondono i ragazzi nei boschi: entrambe le cose sono vere'}]},
+         {r:'distribuisce terre col', n:'Timar', d:'concessione temporanea in cambio di servizio militare, non ereditaria',
+          f:[{r:'cosi non nasce', n:'Una nobilta feudale', d:'nessuna famiglia accumula terre e clientele da trasmettere ai figli'}]},
+         {piu:true, r:'e si amministra con', n:'Registri catastali', d:'ogni villaggio censito casa per casa: lo Stato piu documentato del Cinquecento'},
+         {r:'e al vertice sta', n:'Il sultano', d:'senza corpi intermedi che possano trattare con lui da pari'}
+       ]},
+
+      {r:'si estende con', n:'L\'espansione', d:'due secoli in cui la frontiera si sposta verso ovest',
+       f:[
+         {r:'prima nei', n:'Balcani', d:'Kosovo 1389, poi Serbia, Bosnia, Albania: l\'Europa sudorientale diventa ottomana'},
+         {r:'arriva a', n:'Otranto', d:'1480: una testa di ponte in Italia, abbandonata alla morte di Mehmet'},
+         {r:'con Solimano prende', n:'Belgrado e Rodi', d:'1521 e 1522: cadono le due chiavi difensive della cristianita'},
+         {r:'travolge l\'Ungheria a', n:'Mohacs', d:'1526: il re muore in battaglia, il regno si dissolve in poche ore'},
+         {r:'e domina', n:'Il Mar Nero', d:'che diventa un lago ottomano: si chiude la via che i genovesi tenevano da due secoli'},
+         {r:'e si ferma a', n:'Vienna', d:'1529: assedio fallito per la stagione e le distanze, non per una sconfitta',
+          f:[{piu:true, r:'ed e il', n:'Limite logistico', d:'un esercito che parte da Costantinopoli in primavera non puo restare oltre l\'autunno'}]}
+       ]},
+
+      {r:'organizza i sudditi con', n:'Il sistema dei millet', d:'convivenza regolata, non tolleranza nel senso moderno',
+       f:[
+         {r:'riconosce', n:'Le comunita religiose', d:'ortodossi, armeni, ebrei: ciascuna con i propri tribunali e capi'},
+         {r:'in cambio della', n:'Jizya', d:'un\'imposta sui non musulmani, che pagano per essere lasciati in pace'},
+         {r:'con una', n:'Gerarchia stabile', d:'i cristiani non sono perseguitati ma non sono uguali: e il patto'},
+         {r:'e accoglie', n:'Gli ebrei espulsi dalla Spagna', d:'1492: a Salonicco nasce la piu grande comunita sefardita d\'Europa',
+          f:[{piu:true, r:'e il sultano commenta che', n:'La Spagna si impoverisce', d:'cacciando i suoi mercanti e i suoi medici'}]},
+         {r:'e il patriarca ortodosso diventa', n:'Un funzionario del sultano', d:'con piu autorita sui greci di quanta ne avesse sotto l\'imperatore'}
+       ]},
+
+      {r:'combatte sul mare con', n:'La guerra di corsa', d:'un conflitto permanente a bassa intensita, in entrambe le direzioni',
+       f:[
+         {r:'i', n:'Corsari barbareschi', d:'Algeri, Tunisi, Tripoli: razzie sulle coste italiane e spagnole'},
+         {r:'e i', n:'Corsari cristiani', d:'i cavalieri di Malta e i toscani fanno esattamente la stessa cosa'},
+         {r:'entrambi producono', n:'Schiavitu mediterranea', d:'centinaia di migliaia di prigionieri da entrambe le parti, e un mercato dei riscatti',
+          f:[{piu:true, r:'con ordini religiosi specializzati nel', n:'Riscatto dei captivi', d:'trinitari e mercedari: una diplomazia umanitaria che dura secoli'}]},
+         {r:'culmina a', n:'Lepanto', d:'1571: la piu grande battaglia navale a remi della storia, vinta dai cristiani'},
+         {r:'ma cambia poco perche', n:'La flotta viene ricostruita', d:'in un anno: la vittoria e enorme nel simbolo e modesta negli effetti'}
+       ]},
+
+      {r:'e nonostante tutto', n:'Si fanno affari col nemico', d:'la politica reale non segue le divisioni religiose',
+       f:[
+         {r:'Venezia mantiene', n:'Il bailo a Costantinopoli', d:'un ambasciatore permanente presso il sultano, anche durante le guerre'},
+         {r:'gli ottomani concedono', n:'Le capitolazioni', d:'privilegi commerciali ai mercanti europei nei propri porti'},
+         {r:'e la Francia stringe', n:'L\'alleanza con Solimano', d:'1536: il re cristianissimo si allea col sultano contro Carlo V',
+          f:[{r:'accettando', n:'Lo scandalo europeo', d:'l\'accusa di tradire la cristianita vale meno del contenimento asburgico'},
+             {piu:true, r:'e nel 1543 la flotta ottomana', n:'Sverna a Tolone', d:'ospitata da una citta francese, con la cattedrale trasformata in moschea'}]}
+       ]},
+
+      {r:'finisce per contare meno per', n:'Lo spostamento del baricentro', d:'il Mediterraneo smette di essere il centro del mondo',
+       f:[
+         {r:'a causa delle', n:'Rotte atlantiche', d:'il Capo di Buona Speranza e l\'America spostano i traffici verso ovest'},
+         {r:'cosi la frontiera diventa', n:'Un fronte secondario', d:'per entrambi gli imperi, che guardano altrove'},
+         {r:'in Europa resta', n:'L\'immagine del turco', d:'il nemico per eccellenza nella predicazione, nei libri e nelle stampe',
+          f:[{r:'usata soprattutto per', n:'Chiedere tasse e unita', d:'la minaccia esterna e lo strumento politico piu antico che esista'}]},
+         {piu:true, r:'e circolano', n:'I rinnegati', d:'europei che passano all\'islam e fanno carriera: alcuni comandano flotte ottomane'},
+         {r:'mentre nella realta', n:'La frontiera resta porosa', d:'rinnegati, mercanti, interpreti e schiavi la attraversano in continuazione'}
+       ]}
+    ],
+    incroci:[
+      {da:'Quarta crociata', a:'1453', r:'e la premessa remota del',
+       perche:'Costantinopoli viene saccheggiata nel 1204 non dai turchi ma dai crociati veneziani e francesi. L\'impero non recupera mai territori, tesoro e credibilita: quando gli ottomani arrivano, trovano un guscio. La caduta piu simbolica della storia europea era stata preparata due secoli e mezzo prima dagli europei.'},
+      {da:'I cannoni di Urban', a:'Non fermano i commerci', r:'sono l\'esempio piu duro del fatto che le guerre',
+       perche:'L\'ingegnere che fonde i cannoni con cui cadono le mura di Costantinopoli aveva prima offerto i propri servizi all\'imperatore bizantino, che non poteva pagarlo. Tecnici, armi e denaro attraversano la frontiera come le merci: la divisione fra i due mondi e molto piu netta nei manuali che nella pratica.'},
+      {da:'Schiavi del sultano', a:'Una nobilta feudale', r:'e la ragione per cui non nasce',
+       perche:'Uomini prelevati da bambini, convertiti, senza famiglia, senza terre e senza clan non possono costruire dinastie rivali: la loro carriera dipende interamente dal sultano. È l\'esatto contrario del re di Francia, che deve trattare con nobili proprietari di terre ed eserciti propri.'},
+      {da:'Cercano di farci entrare i figli', a:'Gerarchia stabile', r:'si spiega solo dentro una',
+       perche:'La devshirme e una violenza — bambini strappati alle famiglie — ed e anche l\'unica scala sociale reale disponibile a un contadino balcanico. Le due cose convivono perche il sistema garantiva una gerarchia prevedibile: sotto restavi al tuo posto in sicurezza, dentro potevi arrivare al vertice.'},
+      {da:'Limite logistico', a:'Un fronte secondario', r:'e la causa strutturale per cui la frontiera diventa',
+       perche:'Vienna e alla distanza massima raggiungibile da un esercito che parte da Costantinopoli dopo lo scioglimento delle nevi e deve rientrare prima dell\'autunno. Non e il coraggio dei difensori a fermare l\'espansione: e il calendario. Le frontiere si stabilizzano dove finisce la logistica.'},
+      {da:'La Spagna si impoverisce', a:'Gli ebrei espulsi dalla Spagna', r:'e il commento sul destino de',
+       perche:'Bayezid II accoglie a Salonicco chi la Spagna caccia, e ne ricava mercanti, medici e stampatori. Nel giro di un secolo Salonicco diventa a maggioranza ebraica. La domanda per la classe e diretta: chi ha fatto il calcolo migliore, e con quale criterio.'},
+      {da:'Il bailo a Costantinopoli', a:'Corsari barbareschi', r:'tratta ogni giorno i danni fatti dai',
+       perche:'Il rappresentante veneziano presso il sultano passava gran parte del tempo a reclamare navi predate e a trattare il rilascio di prigionieri. È la prova che la diplomazia nasce come tecnica di sorveglianza e negoziato fra avversari, non come cortesia fra amici: si tiene un uomo stabilmente in casa del nemico proprio perche il conflitto non finisce mai.'},
+      {da:'L\'alleanza con Solimano', a:'L\'immagine del turco', r:'contraddice apertamente',
+       perche:'Mentre le prediche descrivono il turco come nemico assoluto della cristianita, il re cristianissimo di Francia ne ospita la flotta a Tolone. Il divario fra il linguaggio pubblico e la pratica politica e enorme — e riconoscerlo e piu utile che scandalizzarsene.'},
+      {da:'La flotta viene ricostruita', a:'Rotte atlantiche', r:'conta meno delle',
+       perche:'Lepanto e una vittoria colossale che non sposta la frontiera di un chilometro, perche la flotta ottomana torna operativa in un anno. A togliere davvero centralita al Mediterraneo non e una battaglia ma il fatto che l\'argento e le spezie comincino a viaggiare per l\'Atlantico.'},
+      {da:'Chiedere tasse e unita', a:'Lo scandalo europeo', r:'e cio che rende utilizzabile',
+       perche:'Il turco serve in Europa soprattutto come argomento interno: per ottenere sussidi, giustificare eserciti e chiedere concordia. Per questo l\'alleanza francese fa cosi scandalo — non tanto perche sia immorale, ma perche smonta pubblicamente lo strumento retorico su cui gli altri contano.'},
+      {da:'Un funzionario del sultano', a:'Meglio il turbante che la mitra', r:'da\' un senso concreto alla frase',
+       perche:'Sotto gli ottomani il patriarca ortodosso ottiene autorita giudiziaria e fiscale sui greci, maggiore di quella che aveva sotto l\'imperatore. La frase attribuita ai bizantini non e cinismo disperato: e un calcolo su chi lascerebbe piu autonomia alla Chiesa greca.'},
+      {da:'Corsari cristiani', a:'Riscatto dei captivi', r:'rendono necessario il',
+       perche:'La schiavitu mediterranea funziona in entrambe le direzioni, e questo genera un\'economia dei riscatti con ordini religiosi specializzati, tariffe e intermediari. È il caso piu chiaro di una frontiera che, mentre produce violenza, produce anche istituzioni per gestirla.'},
+      {da:'La frontiera resta porosa', a:'Merci, tecniche e parole', r:'e cio che continua a far passare',
+       perche:'Rinnegati che cambiano fede e mestiere, interpreti, mercanti, schiavi riscattati: il traffico umano attraverso la frontiera non si interrompe mai. È per questo che tecniche, parole e abitudini continuano a circolare in un\'epoca che si racconta come scontro fra due mondi separati.'}
+    ]
+  },
+  provocazione: {
+    titolo:'Il figlio del contadino',
+    durata:'55 minuti',
+    domandaMadre:'Un potere e piu forte se i suoi uomini sono liberi o se gli devono tutto?',
+    perche:'Per due secoli la seconda persona dell\'impero ottomano — il gran visir — fu quasi sempre un cristiano nato in un villaggio balcanico, prelevato da bambino, convertito e cresciuto nella scuola del palazzo. Nell\'Europa dello stesso tempo, il figlio di un contadino restava contadino. La classe deve reggere una tensione che non si scioglie: la devshirme era una violenza — bambini strappati alle famiglie — ed era anche la scala sociale piu aperta del Mediterraneo, tanto che alcune famiglie corrompevano per entrarci. Il colpo di scena e che quando il sistema viene addolcito e le cariche diventano ereditarie, l\'impero comincia a irrigidirsi: cio che sembrava barbaro era il motore.',
+    occorrente:'Niente.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'Sokollu Mehmet Pascia\ngoverno di fatto l\'impero ottomano\nper quattordici anni,\nsotto tre sultani.\n\nEra nato in un villaggio della Bosnia,\nin una famiglia cristiana ortodossa.\n\nDa ragazzo fu prelevato\nda funzionari imperiali,\nportato a Costantinopoli,\nconvertito all\'islam,\ne istruito nella scuola del palazzo.\n\nNon e un\'eccezione:\nper due secoli i gran visir\nvengono quasi tutti da li.\n\nNella stessa epoca, in Francia,\nil figlio di un contadino\nresta contadino.\n\nDove aveva piu possibilita di arrivare in alto,\nun ragazzo nato in un villaggio bosniaco\no uno nato in un villaggio francese?',
+       parlato:'Racconta la biografia prima di nominare il sistema: l\'effetto dipende dall\'ordine.\n\nQuando arriva la domanda, aspetta. Qualcuno protestera subito che il paragone e truccato, ed e giusto — ma lascia che siano loro a dirlo.\n\nSe serve, aggiungi un dato per rendere concreto il confronto: nell\'Europa del Quattrocento le cariche di governo erano riservate a chi apparteneva a poche famiglie, per nascita. Non c\'era nessuna procedura, nessun esame, nessuna strada per un figlio di contadini. Non era difficile: era escluso.',
+       seDicono:[
+         {loro:'«Ma quello era rapito, non e una carriera.»',
+          tu:'Esatto, ed e il nodo dell\'ora. Tieni ferma la tua obiezione, perche e sacrosanta. Poi provo a mostrarti un fatto che la complica, e vediamo se resiste.'},
+         {loro:'«In Europa c\'era la Chiesa: un povero poteva diventare vescovo.»',
+          tu:'Osservazione ottima e vera: la Chiesa era l\'unico canale di mobilita in Occidente, e infatti alcuni papi vennero dal basso. Ma era un canale stretto e sempre piu occupato da figli cadetti di nobili. Teniamola presente: e il vero termine di paragone.'}
+       ]},
+
+      {minuti:'8–17', et:'Lo schieramento',
+       schermo:'La devshirme —\nil prelievo periodico di ragazzi cristiani\nnei villaggi dei Balcani:',
+       opzioni:['e schiavitu, e non c\'e altro da dire', 'e anche la scala sociale piu aperta del Mediterraneo'],
+       parlato:'Fai schierare e conta. Il primo gruppo vince, e va bene cosi.\n\nPoi dai i dati che complicano, uno per volta, senza commentarli.\n\nIl prelievo avveniva ogni tre-sette anni, riguardava una quota di ragazzi fra gli otto e i diciotto anni, quasi solo cristiani dei Balcani rurali. Conversione obbligatoria. Legami con la famiglia recisi.\n\nMa: alcune famiglie corrompevano i funzionari per farci entrare i figli. Altre li nascondevano nei boschi. Le due cose sono documentate entrambe, spesso nello stesso villaggio.\n\nE ancora: chi arrivava in alto faceva costruire moschee, ponti e fontane nella regione da cui era stato prelevato. Sokollu fece costruire il ponte sulla Drina, in Bosnia.\n\nDomanda: come si spiega che una famiglia paghi per far portare via il proprio figlio?',
+       seDicono:[
+         {loro:'«Erano famiglie disperate.»',
+          tu:'In parte si, e non basta: alcune erano benestanti. Prova a pensarci cosi — che cosa stavano comprando, esattamente? Non la liberta del figlio, quella la perdeva. Stavano comprando l\'unica possibilita che il figlio contasse qualcosa.'},
+         {loro:'«Il ponte non ripaga il rapimento.»',
+          tu:'No, e non sto dicendo questo. Sto dicendo che quel ponte ci dice qualcosa: chi era stato preso non considerava il proprio villaggio un luogo da dimenticare. La storia vera e piu ingarbugliata delle due caselle in cui vorremmo metterla.'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'Perche il sultano faceva cosi?\n\nProviamo a ragionare\ndal suo punto di vista.\n\nUn ministro nato nobile\nha terre, parenti, clienti,\nun nome che vale da solo.\nSe lo licenzi, resta potente.\nPuo allearsi con altri come lui.\nSuo figlio erediterà tutto.\n\nUn uomo prelevato da bambino\nnon ha famiglia,\nnon ha terra,\nnon ha un nome,\nnon ha nessuno a cui rivolgersi.\n\nTutto quello che è,\nlo deve a te.\n\nE anche il gran visir,\ngiuridicamente,\nresta uno schiavo del sultano:\npuo essere giustiziato\ncon un ordine, senza processo.',
+       parlato:'Costruisci il ragionamento come un problema di governo, non come un giudizio morale: chiedi loro che cosa faresti se dovessi tenere insieme un impero enorme.\n\nPoi il confronto che chiarisce tutto. Il re di Francia deve chiedere ai nobili soldati e denaro, e i nobili possono dire di no; il sultano no. Il re non puo toccare un duca senza aprire una guerra civile; il sultano puo far giustiziare il proprio primo ministro la mattina e nominarne un altro il pomeriggio.\n\nAggiungi la stessa logica applicata alla terra: il timar, la concessione ottomana, non e ereditaria. Nessuna famiglia accumula proprieta da trasmettere. In Europa il feudo ereditario aveva prodotto in due secoli una nobilta che il re non riusciva a controllare.\n\nPoi la domanda seria: dove preferireste vivere, in un sistema in cui potete salire ma il sovrano puo uccidervi, o in uno in cui non potete salire ma la legge vi protegge?\n\nNon c\'e una risposta giusta. Fatela diventare la domanda.',
+       seDicono:[
+         {loro:'«Nessuno accetterebbe di poter essere ucciso senza processo.»',
+          tu:'Molti lo accettarono, in cambio di una possibilita che altrove non esisteva. E aggiungo un dato scomodo: nell\'Europa dello stesso secolo si giustiziava senza troppe formalita anche di piu — chiedi a Tommaso Moro o alle mogli di Enrico VIII. La differenza non e la sicurezza, e chi puo salire.'},
+         {loro:'«Ma non erano liberi di andarsene.»',
+          tu:'Giusto, e questa e la differenza che regge davvero. Tienila stretta, perche fra poco vediamo che cosa succede quando il sistema si "addolcisce" — e la risposta e sorprendente.'}
+       ]},
+
+      {minuti:'28–38', et:'Il testo',
+       schermo:'Ogier Ghiselin de Busbecq,\nambasciatore asburgico a Costantinopoli\nintorno al 1560,\nscrive a un amico in Europa.\n\nDice, in sostanza:\n\nnel campo del sultano non ho visto\nnessuno che debba la propria posizione\na qualcosa di diverso\ndal proprio valore dimostrato;\n\nogni uomo ha l\'incarico\nche corrisponde a cio che sa fare;\n\nda noi, invece, non si guarda\nse non alla nascita,\ne le cariche vanno\na chi porta un certo nome.\n\nÈ una lettera scritta\nda un nemico,\nper mettere in guardia i propri.',
+       testo:{fonte:'Ogier Ghiselin de Busbecq, Lettere turche, scritte fra il 1555 e il 1562',
+              glossa:'Busbecq e l\'ambasciatore di Ferdinando d\'Asburgo, cioe rappresenta la potenza direttamente minacciata dagli ottomani. Il suo elogio non e simpatia: e allarme. Vuole convincere i principi europei che il vantaggio militare turco nasce da un modo di selezionare gli uomini, e che finche in Europa le cariche andranno per nascita, si continuera a perdere.'},
+       parlato:'Leggi il testo e poi fai la domanda di metodo, che vale piu del contenuto: quanto vale la testimonianza di un nemico?\n\nGuidali a vedere che vale molto, ma non perche sia neutrale — anzi. Vale perche Busbecq non ha nessun interesse a lodare i turchi: se lo fa, e perche ha visto qualcosa che lo spaventa. Le lodi rivolte a un avversario sono fra le fonti piu affidabili che esistano, e le accuse a un avversario fra le meno.\n\nPoi fai notare che Busbecq idealizza: gli ottomani avevano corruzione, favoritismi e clientele come tutti. Ma il nucleo e vero — l\'accesso al vertice non passava dalla nascita.\n\nSe la classe regge, aggiungi la domanda difficile: perche in Europa nessuno copio quel sistema, visto che tutti sapevano che funzionava?',
+       seDicono:[
+         {loro:'«Perche era disumano.»',
+          tu:'È una ragione onesta, ma guarda chi avrebbe dovuto decidere: i nobili. Copiare quel sistema significava per loro perdere tutto. Le riforme che tolgono potere a chi deve approvarle non passano quasi mai, e questa e una regola di cui vi accorgerete spesso.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'E adesso guardate\nche cosa succede dopo.\n\nDal tardo Cinquecento\nla devshirme si dirada,\npoi cessa del tutto.\n\nI giannizzeri ottengono\ndi poter far entrare i propri figli.\n\nLe cariche cominciano\na passare di padre in figlio.\n\nIl corpo diventa una corporazione\nche difende i propri privilegi,\nsi ribella, depone i sultani.\n\nIl timar diventa di fatto ereditario\ne si formano grandi proprieta familiari.\n\nCioe: l\'impero diventa\npiu simile all\'Europa.\n\nE da quel momento\ncomincia a perdere terreno.',
+       parlato:'Dai la sequenza lentamente, perche il rovesciamento vale solo se lo vedono arrivare da soli.\n\nPoi la formulazione: quello che ci sembrava il tratto piu barbaro del sistema — bambini prelevati, uomini senza famiglia, schiavi al vertice — era esattamente il meccanismo che teneva aperto l\'accesso e impediva la formazione di caste. Quando quel meccanismo viene addolcito, e la vita dei singoli migliora, la macchina si inceppa.\n\nQui bisogna essere precisi, e vale la pena dirlo apertamente: non sto sostenendo che la devshirme fosse una buona cosa e neppure che l\'impero sia decaduto solo per questo — pesarono l\'Atlantico, l\'inflazione dell\'argento, le nuove tecniche militari europee. Sto dicendo che un sistema puo avere il proprio punto di forza esattamente dove ha il proprio orrore, e che questo rende impossibile giudicarlo con una parola sola.\n\nDomanda finale del blocco: si puo migliorare un\'istituzione un pezzo per volta, senza sapere quale pezzo la teneva in piedi?',
+       seDicono:[
+         {loro:'«Allora l\'ereditarieta rovina tutto.»',
+          tu:'Tendenzialmente si, e nota che l\'Europa fece la stessa cosa: in Francia le cariche divennero acquistabili e poi trasmissibili ai figli. La differenza fu che l\'Europa aveva molti Stati in concorrenza, quindi chi si irrigidiva veniva battuto da un vicino. L\'impero ottomano non aveva un vicino che gli facesse da controllo.'},
+         {loro:'«Quindi stavano meglio prima, da schiavi?»',
+          tu:'I singoli no, quasi certamente: chi ottenne di far entrare il proprio figlio migliorò la propria vita. È l\'istituzione a peggiorare. Questa distanza fra il bene dei singoli e la tenuta dell\'insieme e uno dei problemi piu duri della politica, e non ha una soluzione elegante.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'Torniamo alla domanda.\n\nUn potere e piu forte\nse i suoi uomini sono liberi\no se gli devono tutto?\n\nGli ottomani scelsero la seconda,\ne per due secoli\nfurono la macchina militare\npiu efficiente del Mediterraneo.\n\nPoi lasciarono che\nle posizioni si ereditassero,\ne divennero un impero come gli altri.\n\nUltima domanda,\ne riguarda voi:\n\nquando un\'organizzazione sceglie\nchi mettere in cima,\nquali strade tiene aperte\ne quali ha gia chiuso\nsenza dirlo?',
+       parlato:'Rifai la conta iniziale. Lo spostamento di solito e parziale, e va bene: non si tratta di convincerli che la devshirme fosse accettabile.\n\nRiassumi che cosa hanno imparato, e tieni le due cose insieme senza sciogliere il nodo: era una violenza; era la scala sociale piu aperta del suo mondo; e fu la sua abolizione, non la sua esistenza, a coincidere con il declino.\n\nPoi il passaggio all\'oggi, e falli lavorare invece di rispondere tu. Chiedi come si arriva in alto nelle organizzazioni che conoscono: una squadra, una scuola, un\'azienda, la politica. Quali strade sono aperte a tutti davvero, e quali sono formalmente aperte ma di fatto chiuse — perche richiedono tempo, contatti, denaro o un cognome.\n\nUltima cosa, che chiude il capitolo: il Mediterraneo che studiamo come frontiera fra due mondi era attraversato di continuo — da mercanti, tecnici, schiavi, rinnegati e ambasciatori. Quando qualcuno vi presenta due mondi come separati per natura, la domanda da fare e sempre la stessa: chi li attraversa, e perche non ce lo raccontano.',
+       seDicono:[
+         {loro:'«Oggi almeno c\'e la scuola per tutti.»',
+          tu:'È il canale piu aperto mai esistito, e non e poco. Ma provate a verificarlo invece di darlo per buono: quanti anni di studio servono per le posizioni che contano, chi puo permetterseli, e quanto pesa ancora la famiglia da cui uno viene. La domanda vale la pena, qualunque risposta troviate.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'Chi ha distrutto Costantinopoli',
+       corpo:'Nel 1204 la quarta crociata, partita per l\'Egitto, si dirige su Costantinopoli e la saccheggia per tre giorni. I crociati e i veneziani spogliano le chiese, fondono reliquiari, portano via i cavalli di bronzo che finiranno su San Marco.\n\nL\'impero bizantino viene smembrato e ricostituito solo nel 1261, ridotto a un\'ombra.\n\nNel 1453, quando arrivano gli ottomani, Costantinopoli ha forse cinquantamila abitanti — era stata la citta piu grande d\'Europa con mezzo milione.',
+       chiedi:'La caduta del 1453 e raccontata come lo scontro fra cristianita e islam. Che cosa cambia sapere che il colpo decisivo era stato inferto due secoli e mezzo prima da altri cristiani? E perche questo dettaglio compare cosi di rado nel racconto comune?'},
+      {titolo:'Lepanto',
+       corpo:'Il 7 ottobre 1571 la flotta della Lega Santa distrugge la flotta ottomana: circa duecento galere affondate o catturate, decine di migliaia di morti, migliaia di schiavi cristiani liberati. In Europa si celebra come la vittoria decisiva contro il turco.\n\nEntro l\'estate successiva gli ottomani hanno ricostruito una flotta di dimensioni comparabili. Cipro, che era il motivo della guerra, resta ottomana. Nel 1573 Venezia firma la pace e riconosce la perdita.\n\nUn ministro ottomano avrebbe detto ai veneziani: voi ci avete bruciato la barba, noi vi abbiamo tagliato un braccio.',
+       chiedi:'Che cosa rende una vittoria decisiva? E perche una battaglia che non sposta nulla puo restare nella memoria per secoli, mentre trattati che spostano confini non li ricorda nessuno?'},
+      {titolo:'Il re cristianissimo e il sultano',
+       corpo:'Nel 1536 la Francia di Francesco I stringe un\'intesa con Solimano il Magnifico contro Carlo V. Nel 1543 la flotta ottomana di Barbarossa sverna nel porto di Tolone, ospitata dalla Francia; la cattedrale viene adibita a moschea e la popolazione cristiana della citta viene in parte allontanata.\n\nLo scandalo in Europa e enorme. L\'alleanza dura, con interruzioni, per oltre due secoli.',
+       chiedi:'Che cosa conta di piu nella condotta di uno Stato, l\'appartenenza dichiarata o l\'interesse del momento? E quando un governo fa il contrario di cio che predica, si deve concludere che non credeva a cio che predicava?'}
+    ],
+    testi:[
+      {fonte:'Busbecq, Lettere turche, sulla disciplina dell\'accampamento ottomano',
+       corpo:'L\'ambasciatore descrive un campo militare silenzioso e ordinato, senza ubriachezza ne risse, con i soldati che dormono sotto tende basse e mangiano poco; e osserva che eserciti simili si mantengono con una frazione di quanto costano quelli europei.',
+       glossa:'Il confronto e implicito ma trasparente: gli eserciti europei del Cinquecento erano bande armate che si nutrivano saccheggiando. Busbecq scrive per far vergognare i propri, e il suo giudizio va preso come tale — non una descrizione neutra, ma una fonte preziosa proprio perche di parte contraria.'},
+      {fonte:'Sul sistema dei millet — pratica amministrativa ottomana',
+       corpo:'Le comunita religiose non musulmane conservano i propri tribunali, le proprie scuole e i propri capi, che rispondono al sultano della fedelta e delle imposte del gruppo. In cambio pagano la jizya e accettano limitazioni: divieto di portare armi, restrizioni nell\'edificare luoghi di culto, subordinazione nei tribunali misti.',
+       glossa:'Da non confondere con la tolleranza moderna, che presuppone l\'uguaglianza. Qui la convivenza si regge sulla disuguaglianza dichiarata e stabile: sai esattamente qual e il tuo posto e che non lo perderai. Vale la pena chiedere in classe quale delle due cose spaventi di piu — essere discriminati per legge o esserlo di fatto.'},
+      {fonte:'Tradizione ottomana su Bayezid II e gli ebrei espulsi dalla Spagna, 1492',
+       corpo:'Al sultano viene attribuita l\'osservazione che il re di Spagna, cacciando gli ebrei, impoverisce il proprio regno e arricchisce il suo.',
+       glossa:'La frase e probabilmente costruita a posteriori, e va detto in classe. Resta utile perche il fatto e certo: le comunita accolte a Salonicco, Costantinopoli e Smirne portarono capitali, medicina e la stampa. Una frase inventata puo riassumere bene un fenomeno vero, purche si sappia che e inventata.'}
+    ],
+    compito:'Mezza pagina. Prendete un\'organizzazione che conoscete bene e descrivete come ci si arriva in cima: quali passaggi sono obbligatori, quanto durano, che cosa richiedono. Poi rispondete alla domanda che abbiamo usato per gli ottomani: chi e escluso da quel percorso, e l\'esclusione e scritta da qualche parte o funziona senza bisogno di essere dichiarata?',
+    fonti:[
+      'Busbecq, Legationis Turcicae epistolae quattuor (Lettere turche), 1555-1562',
+      'Relazioni dei baili veneziani da Costantinopoli, edizione Albèri',
+      'H. Inalcik, L\'impero ottomano: l\'età classica; S. Faroqhi, L\'impero ottomano',
+      'F. Braudel, Civiltà e imperi del Mediterraneo nell\'età di Filippo II',
+      'S. Runciman, La caduta di Costantinopoli; G. Ricci, Ossessione turca',
+      'M. Fusaro, Reti commerciali nel Mediterraneo — sui traffici attraverso la frontiera'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',
