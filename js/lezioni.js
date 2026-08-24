@@ -3607,6 +3607,226 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Storia medievale · 4 — L\'Italia comunale e l\'Impero': {
+  mappa: {
+    n:'L\'Italia dei Comuni', d:'XI-XIV secolo: cento citta contro un impero, e poi contro se stesse',
+    f:[
+      {r:'nasce da', n:'Un vuoto di potere', d:'perche il Comune nasce in Italia e quasi solo in Italia',
+       f:[
+         {r:'manca', n:'Un re presente', d:'l\'imperatore e in Germania e scende in Italia ogni tanto'},
+         {r:'ha lasciato spazio', n:'La lotta per le investiture', d:'vent\'anni in cui imperatore e papa si indeboliscono a vicenda'},
+         {r:'restano', n:'Le citta romane', d:'l\'Italia non ha mai smesso di essere urbana come il resto d\'Europa'},
+         {r:'e comandano', n:'I vescovi cittadini', d:'che governano di fatto le citta: e i cittadini gli si affiancano',
+          f:[{piu:true, r:'poi', n:'Se ne emancipano', d:'l\'assistenza diventa controllo, e il controllo diventa governo'}]},
+         {r:'con', n:'Una ricchezza nuova', d:'mercanti e artigiani che hanno denaro e nessun diritto politico'}
+       ]},
+
+      {r:'si costituisce con', n:'Un giuramento', d:'coniuratio: e questa l\'origine, non una concessione',
+       f:[
+         {r:'i cittadini', n:'Giurano fra loro', d:'di aiutarsi e di obbedire ai propri magistrati'},
+         {r:'e scelgono', n:'I consoli', d:'da due a venti, in carica pochi mesi o un anno',
+          f:[{r:'perche', n:'Cariche brevi e collegiali', d:'per impedire che qualcuno prenda troppo potere'}]},
+         {r:'si riuniscono in', n:'Arengo', d:'l\'assemblea di tutti i cittadini: presto troppo grande per decidere'},
+         {r:'e affidano il resto a', n:'Consigli ristretti', d:'dove si concentra il potere reale'},
+         {r:'si danno', n:'Statuti', d:'leggi scritte, riviste e rinnovate di continuo',
+          f:[{piu:true, r:'e conservate', n:'In archivi cittadini', d:'da cui sappiamo quasi tutto quello che sappiamo'}]}
+       ]},
+
+      {r:'e sottomette', n:'Il contado', d:'la prima cosa che un Comune fa e conquistare la campagna',
+       f:[
+         {r:'costringe', n:'I signori rurali a inurbarsi', d:'a risiedere in citta per parte dell\'anno, sotto controllo'},
+         {r:'impone', n:'Tasse e obblighi militari', d:'ai villaggi, che diventano sudditi della citta'},
+         {r:'e combatte', n:'Le citta vicine', d:'i Comuni si fanno guerra fra loro molto piu che contro l\'Impero'},
+         {piu:true, r:'quindi', n:'Liberta non vuol dire uguaglianza', d:'e la liberta della citta sul territorio, non di tutti'}
+       ]},
+
+      {r:'si scontra con', n:'Federico Barbarossa', d:'che vuole riprendersi cio che l\'Impero ha perso',
+       f:[
+         {r:'nel 1158 convoca', n:'La dieta di Roncaglia', d:'e chiede ai giuristi che cosa spetti all\'imperatore',
+          f:[{r:'rispondono', n:'I quattro dottori di Bologna', d:'e gli riconoscono le regalie: pedaggi, moneta, giustizia, nomina dei magistrati'},
+             {piu:true, r:'e il diritto romano', n:'Diventa un\'arma politica', d:'riscoperto a Bologna, serve a fondare il potere del principe'}]},
+         {r:'nel 1162', n:'Distrugge Milano', d:'mura abbattute, popolazione dispersa in quattro borghi'},
+         {r:'e ottiene l\'effetto contrario', n:'La Lega Lombarda', d:'1167: le citta rivali si alleano contro di lui',
+          f:[{r:'fondano', n:'Alessandria', d:'citta nuova, chiamata cosi in onore del papa Alessandro III'},
+             {piu:true, r:'il giuramento di', n:'Pontida', d:'e nella tradizione, ma le fonti coeve sono deboli'}]},
+         {r:'nel 1176', n:'Legnano', d:'la fanteria comunale sconfigge la cavalleria imperiale'},
+         {r:'e nel 1183 firma', n:'La pace di Costanza', d:'le citta si governano da se, ma restano dentro l\'Impero',
+          f:[{r:'quindi ottengono', n:'Autonomia, non indipendenza', d:'giurano fedelta, pagano, e l\'imperatore conferma i consoli'}]}
+       ]},
+
+      {r:'ritenta con', n:'Federico II', d:'stupor mundi: nipote del Barbarossa, re di Sicilia',
+       f:[
+         {r:'costruisce', n:'Uno Stato accentrato', d:'nel Sud: funzionari, tasse regolari, monopoli, una moneta d\'oro',
+          f:[{r:'con le', n:'Costituzioni di Melfi', d:'1231: il primo grande codice di uno Stato moderno in Europa'},
+             {piu:true, r:'e fonda', n:'L\'universita di Napoli', d:'1224: la prima voluta da uno Stato per formare i propri funzionari'}]},
+         {r:'ma nel Nord trova', n:'La seconda Lega Lombarda', d:'e la guerra ricomincia'},
+         {r:'vince a', n:'Cortenuova 1237', d:'e manda a Roma il carroccio milanese come trofeo'},
+         {r:'perde a', n:'Parma 1248', d:'l\'assedio si rovescia e il suo campo viene distrutto'},
+         {r:'muore nel', n:'1250', d:'e con lui finisce il progetto imperiale in Italia',
+          f:[{piu:true, r:'e la sua dinastia', n:'Si estingue in vent\'anni', d:'Manfredi a Benevento nel 1266, Corradino a Tagliacozzo nel 1268'}]}
+       ]},
+
+      {r:'si spacca in', n:'Guelfi e ghibellini', d:'e i nomi vengono da una lite tedesca',
+       f:[
+         {r:'da', n:'Welfen e Waiblingen', d:'due casate rivali per il trono di Germania'},
+         {r:'in Italia diventano', n:'Filopapali e filoimperiali', d:'almeno all\'inizio'},
+         {r:'ma poi', n:'Contano le rivalita locali', d:'una citta e guelfa perche la vicina e ghibellina',
+          f:[{r:'e dentro le citta', n:'Le fazioni si dividono ancora', d:'bianchi e neri a Firenze, e Dante finisce in esilio nel 1302'}]},
+         {r:'producono', n:'Esilii e confische', d:'chi perde va via e i suoi beni vengono presi: e la regola, non l\'eccezione'}
+       ]},
+
+      {r:'si trasforma in', n:'Signoria', d:'e in un secolo e mezzo quasi ovunque',
+       f:[
+         {r:'perche il Comune', n:'È in guerra dentro di se', d:'magnati contro popolo, arti maggiori contro minori, famiglia contro famiglia',
+          f:[{r:'a Firenze', n:'Ordinamenti di giustizia', d:'1293: i magnati esclusi dalle cariche e puniti piu duramente'},
+             {piu:true, r:'e le torri', n:'Sono fortezze private', d:'a Bologna se ne contavano piu di cento'}]},
+         {r:'aveva gia inventato', n:'Il podesta forestiero', d:'un magistrato preso da fuori, per un anno, perche imparziale',
+          f:[{r:'ed e', n:'Il primo passo verso il signore', d:'affidare il governo a chi non e parte in causa'},
+             {piu:true, r:'a fine mandato', n:'Il sindacato', d:'il podesta veniva processato sul proprio operato prima di andarsene'}]},
+         {r:'quindi il signore', n:'Spesso viene votato', d:'i consigli gli conferiscono la signoria, a tempo e poi a vita'},
+         {r:'e all\'inizio', n:'Funziona', d:'meno omicidi di fazione, opere pubbliche, giustizia piu rapida'},
+         {r:'poi diventa', n:'Ereditaria', d:'Visconti a Milano, Scaligeri a Verona, Este a Ferrara',
+          f:[{piu:true, r:'e comprano', n:'Un titolo imperiale', d:'per trasformare il potere di fatto in diritto'}]}
+       ]},
+
+      {r:'lascia', n:'Un\'Italia diversa', d:'e una assenza che dura fino all\'Ottocento',
+       f:[
+         {r:'un paese di', n:'Cento citta', d:'nessuna capitale, nessun centro: e ancora oggi cosi'},
+         {r:'un', n:'Patrimonio di leggi e archivi', d:'gli statuti comunali sono la base del diritto amministrativo'},
+         {r:'una', n:'Cultura urbana', d:'palazzi pubblici, piazze, campanili civici accanto a quelli delle chiese'},
+         {r:'ma nessuno', n:'Stato nazionale', d:'mentre Francia e Inghilterra lo costruiscono, l\'Italia resta divisa'},
+         {r:'e un mito', n:'Riusato nell\'Ottocento', d:'Legnano diventa il simbolo del Risorgimento',
+          f:[{r:'con', n:'La battaglia di Legnano di Verdi', d:'1849, mentre Roma e assediata'}]}
+       ]}
+    ],
+    incroci:[
+      {da:'La lotta per le investiture', a:'I vescovi cittadini', r:'indebolisce l\'autorita di',
+       perche:'Finche il vescovo e nominato dall\'imperatore e ne rappresenta il potere, governare la citta al suo posto e ribellarsi. Quando papa e imperatore si contendono la sua nomina per vent\'anni, la sua autorita si logora — e i cittadini si prendono lo spazio rimasto vuoto.'},
+      {da:'Cariche brevi e collegiali', a:'Il podesta forestiero', r:'non basta e porta a',
+       perche:'Consoli numerosi e in carica pochi mesi servivano a impedire che qualcuno diventasse troppo forte. Ma restavano cittadini, quindi di parte. La soluzione successiva e prendere il magistrato da un\'altra citta: non piu limitare il potere, ma affidarlo a chi non ha parenti in piazza.'},
+      {da:'Il podesta forestiero', a:'Spesso viene votato', r:'prepara il fatto che il signore',
+       perche:'La logica e la stessa: se non ci fidiamo l\'uno dell\'altro, diamo il governo a qualcuno che stia sopra le fazioni. Il signore non arriva contro la tradizione comunale — arriva come ultimo passo di una soluzione che i Comuni avevano gia adottato per un secolo.'},
+      {da:'È in guerra dentro di se', a:'Esilii e confische', r:'produce di continuo',
+       perche:'Ogni cambio di fazione significa bandire gli avversari e prenderne i beni. Con centinaia di famiglie in esilio pronte a rientrare con le armi, nessun governo dura — ed e questa instabilita, non l\'Impero, a consumare il Comune.'},
+      {da:'Distrugge Milano', a:'La Lega Lombarda', r:'provoca',
+       perche:'Le citta lombarde si combattevano fra loro da decenni. La distruzione di Milano mostra a tutte che cosa rischiano, e ottiene cio che nessuna diplomazia aveva ottenuto: le mette d\'accordo. La repressione troppo dura crea l\'alleanza che voleva evitare.'},
+      {da:'Autonomia, non indipendenza', a:'Riusato nell\'Ottocento', r:'viene semplificato da un mito',
+       perche:'A Costanza le citta restano dentro l\'Impero, giurano fedelta e pagano. Nell\'Ottocento la vicenda diventa il racconto di un popolo che caccia lo straniero: serviva un precedente al Risorgimento, e Legnano era perfetto — a patto di non leggere il trattato.'},
+      {da:'I quattro dottori di Bologna', a:'Costituzioni di Melfi', r:'forniscono lo strumento poi usato nelle',
+       perche:'Il diritto romano riscoperto a Bologna serve prima a dire che cosa spetta all\'imperatore, poi a costruire uno Stato che legifera dall\'alto. Fra Roncaglia e Melfi ci sono settant\'anni e la stessa idea: che il principe sia fonte della legge.'},
+      {da:'Le citta vicine', a:'Contano le rivalita locali', r:'spiega meglio di ogni ideologia perche',
+       perche:'Guelfo e ghibellino diventano quasi sempre etichette di posizione: se Firenze e guelfa, Pisa e Siena saranno ghibelline. Le fazioni non nascono da convinzioni sul rapporto fra papa e imperatore — nascono dalla mappa.'},
+      {da:'I signori rurali a inurbarsi', a:'È in guerra dentro di se', r:'porta dentro le mura il conflitto che rende il Comune',
+       perche:'Costringere i nobili di campagna a vivere in citta li mette sotto controllo, ma li trasforma anche in magnati urbani con torri, clientele e abitudini militari. Il Comune si porta in casa il problema che voleva risolvere.'},
+      {da:'Funziona', a:'Ereditaria', r:'e cio che permette alla signoria di diventare',
+       perche:'Il signore viene accettato perche riduce le violenze e fa funzionare la citta. È il consenso sui risultati a permettergli di trasformare un incarico a tempo in un potere di famiglia — e poi di comprare un titolo che lo renda legittimo.'},
+      {da:'Cento citta', a:'Stato nazionale', r:'e la ragione per cui manca uno',
+       perche:'Dove nessuna citta e abbastanza forte da imporsi e tutte sono abbastanza forti da resistere, non nasce un centro. La stessa vitalita urbana che rende l\'Italia ricca e colta le impedisce di unificarsi per altri sei secoli.'},
+      {da:'Uno Stato accentrato', a:'La seconda Lega Lombarda', r:'e esattamente cio che provoca',
+       perche:'Nel Sud Federico II costruisce funzionari, tasse regolari e monopoli, e funziona. Le citta del Nord vedono il modello e capiscono che cosa perderebbero: si coalizzano non contro un tiranno lontano, ma contro uno Stato che sanno che sa governare.'}
+    ]
+  },
+  provocazione: {
+    titolo:'Hanno vinto, e hanno regalato la vittoria',
+    durata:'55 minuti',
+    domandaMadre:'Quanta liberta si e disposti a cedere per essere lasciati in pace?',
+    perche:'I Comuni italiani fanno una cosa che non riesce a nessun altro in Europa: sconfiggono un imperatore e si fanno riconoscere il diritto di governarsi. Centocinquant\'anni dopo quasi tutti hanno consegnato il governo a un signore, e spesso con un voto. La classe cerca il colpevole — l\'imperatore, il papa, i ricchi — e non lo trova, perche la causa e interna: una liberta che produce guerra civile permanente. È il modo migliore per far capire che le istituzioni non si giudicano dai principi ma da come reggono nel tempo, e per arrivare a una domanda che non ha una risposta comoda.',
+    occorrente:'Se possibile, una cartina dell\'Italia comunale e l\'immagine di una citta con le torri, come San Gimignano o la Bologna ricostruita.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'29 maggio 1176, Legnano.\n\nLa fanteria delle citta lombarde\nsconfigge la cavalleria dell\'imperatore.\n\n1183, pace di Costanza:\nFederico Barbarossa riconosce alle citta\nil diritto di eleggere i propri magistrati\ne di darsi le proprie leggi.\n\nÈ l\'unico caso in Europa\nin cui delle citta battono un impero\ne se lo fanno mettere per iscritto.\n\nCentocinquant\'anni dopo,\nquasi tutte quelle citta\nhanno consegnato il governo a un uomo solo.\n\nPerche?',
+       parlato:'Racconta la prima parte con l\'enfasi che merita: e davvero un\'anomalia europea, e vale la pena che se ne rendano conto.\n\nPoi lascia cadere la seconda, e fermati sulla parola «consegnato».\n\nRaccogli le prime risposte. Usciranno quasi sempre: li hanno conquistati, e stato un colpo di Stato, i ricchi hanno comprato il potere, e tornato l\'imperatore.\n\nNon correggere. Di\' soltanto: teniamo queste ipotesi, e fra venti minuti guardiamo se reggono. Poi anticipa il dato che le mette in crisi tutte, e lascialo li: nella maggior parte dei casi il signore fu votato dai consigli cittadini.',
+       seDicono:[
+         {loro:'«Li avranno conquistati con la forza.»',
+          tu:'In alcuni casi si. Ma nella maggioranza il signore riceve il potere da una delibera dei consigli, spesso a larghissima maggioranza, prima a tempo e poi a vita. Come si spiega un popolo che vota per smettere di votare?'},
+         {loro:'«Sara stato l\'imperatore a imporli.»',
+          tu:'L\'imperatore c\'entra, ma al contrario: molti signori comprano da lui un titolo dopo aver gia preso il potere, per renderlo legittimo. Prima si prende la citta, poi si compra il vicariato. L\'Impero certifica, non decide.'}
+       ]},
+
+      {minuti:'8–17', et:'Lo schieramento',
+       schermo:'La fine dei Comuni:',
+       opzioni:['gliel\'hanno imposta', 'l\'hanno scelta'],
+       parlato:'Fai schierare e conta. Vince quasi sempre la prima, perche e la piu naturale: nessuno rinuncia alla propria liberta se non viene costretto.\n\nAllora mostra come funzionava davvero un Comune, e lascia che il quadro faccia il lavoro.\n\nDentro le mura ci sono magnati con torri private, clientele armate e abitudine alla guerra — e ci sono perche il Comune stesso li ha obbligati a trasferirsi dalla campagna. Ci sono arti maggiori e minori in conflitto. Ci sono fazioni che quando vincono bandiscono gli avversari e ne confiscano i beni, e quegli esuli tornano armati appena possono.\n\nA Bologna si contavano oltre cento torri. A Firenze, nel 1293, si arriva a scrivere una legge — gli Ordinamenti di giustizia — che esclude i nobili dalle cariche e li punisce piu duramente degli altri, perche non c\'era altro modo di contenerli.\n\nPoi la domanda: quanto dura un governo cosi?',
+       seDicono:[
+         {loro:'«Se litigavano tanto, la liberta non funzionava.»',
+          tu:'Attento a concludere troppo presto: quelle stesse citta in quei decenni diventano le piu ricche d\'Europa, costruiscono cattedrali, fondano universita e producono Dante e Giotto. Il conflitto interno e distruttivo e produttivo insieme. Come si tengono insieme le due cose?'},
+         {loro:'«Bastava una polizia, un esercito.»',
+          tu:'Di chi? Ogni forza armata dentro la citta apparteneva a una fazione. Il problema non era la mancanza di forza: era che ogni forza era di parte. Tienilo a mente, perche e esattamente il problema che il podesta doveva risolvere.'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'Il Comune aveva gia trovato una soluzione,\ncento anni prima.\n\nIl PODESTÀ.\n\nUn magistrato preso da un\'altra citta,\ncon i propri giudici e i propri soldati,\nin carica un anno solo,\npagato profumatamente,\ne processato a fine mandato sul proprio operato.\n\nPerche forestiero?\n\nPerche non aveva parenti in piazza,\nne amici da favorire, ne nemici da colpire.\n\nCioe: gia allora avevano deciso\nche per governarsi avevano bisogno\ndi qualcuno che non fosse uno di loro.',
+       parlato:'Questo e il perno dell\'ora e va costruito con calma, perche capovolge la domanda iniziale.\n\nFai notare tutti i dettagli dell\'istituto, perche sono ingegnosi: durata breve, provenienza esterna, staff proprio, stipendio alto per renderlo incorruttibile, e il sindacato finale — un vero processo sul suo operato prima di lasciarlo ripartire.\n\nPoi tira la conseguenza, e chiedila a loro: se per un secolo hai affidato la giustizia a uno che viene da fuori perche nessuno dei tuoi e imparziale, che cosa fai quando la crisi si aggrava?\n\nLa risposta arriva quasi sempre da sola: gli dai anche il resto.\n\nIl signore non arriva contro la tradizione comunale. Arriva come ultimo passo di una logica che i Comuni avevano inaugurato loro: se non ci fidiamo gli uni degli altri, mettiamo sopra di noi qualcuno che stia fuori dalle parti.',
+       seDicono:[
+         {loro:'«Ma il podesta durava un anno, il signore restava per sempre.»',
+          tu:'All\'inizio no: quasi sempre la signoria viene conferita a tempo, e poi rinnovata, e poi resa vitalizia, e poi ereditaria. Ogni passaggio e piccolo e ragionevole. È cosi che quasi sempre si perde qualcosa: non con un colpo, ma con una serie di proroghe.'},
+         {loro:'«Allora erano gia rassegnati.»',
+          tu:'Erano stanchi, che e diverso. Prova a immaginare tre generazioni in cui ogni dieci anni cambia la fazione al potere, i tuoi vicini vengono banditi e i loro beni confiscati, e i loro figli tornano armati. A un certo punto qualcuno che garantisca l\'ordine sembra un affare.'}
+       ]},
+
+      {minuti:'28–38', et:'Il testo',
+       schermo:'Dante, esiliato da Firenze nel 1302,\nscrive dell\'Italia:\n\n«Ahi serva Italia, di dolore ostello,\nnave sanza nocchiere in gran tempesta,\nnon donna di province, ma bordello!»\n\nE poi, rivolgendosi alla propria citta:\n\n«Quante volte, del tempo che rimembre,\nlegge, moneta, officio e costume\nhai tu mutato, e rinovate membre!\n\nE se ben ti ricordi e vedi lume,\nvedrai te somigliante a quella inferma\nche non puo trovar posa in su le piume,\nma con dar volta suo dolore scherma.»',
+       testo:{fonte:'Dante, Purgatorio VI, 76-78 e 145-151 (composto fra il 1308 e il 1315)',
+              glossa:'La seconda immagine e piu precisa di qualunque analisi: Firenze e come un malato che si rigira nel letto continuamente e crede di stare meglio a ogni movimento. Non e la denuncia di un tiranno — e la denuncia dell\'instabilita. Chi scrive e un uomo che ha ricoperto cariche pubbliche ed e stato bandito sotto pena di rogo dai propri concittadini.'},
+       parlato:'Leggi il primo passo, che sanno quasi tutti, e poi il secondo, che quasi nessuno conosce ed e molto piu interessante.\n\nFai lavorare sull\'immagine del malato che si rigira: legge, moneta, uffici e costumi cambiati in continuazione, come uno che cambia posizione nel letto e scambia il movimento per sollievo.\n\nPoi il dato biografico, che va detto: Dante era stato priore di Firenze, cioe fra i massimi magistrati, per due mesi nel 1300. Nel 1302 e condannato all\'esilio e, se rientrasse, al rogo. Non scrive da spettatore.\n\nDomanda utile: sta chiedendo piu liberta o piu ordine? Le risposte si dividono, ed e giusto che si dividano — Dante chiede un imperatore forte, e per un fiorentino del Duecento e una posizione sorprendente.',
+       seDicono:[
+         {loro:'«Dante era di parte: era stato cacciato.»',
+          tu:'Certo, e va tenuto presente. Ma nota che non chiede il ritorno della propria fazione: chiede un potere che stia sopra le fazioni. È l\'argomento di chi ha perso, ed e anche l\'argomento che di li a poco convincera molte citta.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'Due cose sul 1176.\n\nPRIMA. A Costanza le citta non diventano indipendenti.\nRestano dentro l\'Impero: giurano fedelta,\npagano, e l\'imperatore conferma i consoli che eleggono.\nHanno vinto l\'autonomia, non la sovranita.\n\nSECONDA. Legnano come battaglia di un popolo\ncontro lo straniero e un\'idea dell\'Ottocento.\nNel 1849, mentre Roma e assediata,\nVerdi fa rappresentare a Roma\n«La battaglia di Legnano».\n\nIl Risorgimento aveva bisogno di un precedente,\ne quello era perfetto —\na patto di non leggere il trattato.',
+       parlato:'Dai il primo punto guardando il contenuto della pace: giuramento di fedelta, tributi, conferma imperiale dei magistrati eletti. È una vittoria vera, ma e una vittoria dentro il sistema, non contro il sistema.\n\nPoi il secondo, che di solito colpisce di piu. Fai il collegamento con il capitolo precedente: come «andare a Canossa» arriva da Bismarck, cosi Legnano come risveglio nazionale arriva dal Risorgimento. La stessa operazione, in due paesi diversi, nello stesso secolo.\n\nE la conseguenza di metodo, che e la seconda cosa da portare a casa dopo la storia dei Comuni: quando un episodio medievale vi arriva gia carico di significato patriottico o identitario, quasi sempre quel significato e stato aggiunto nell\'Ottocento, quando si costruivano le nazioni e servivano antenati.\n\nSe c\'e tempo, aggiungi il rovescio sulla signoria: all\'inizio funziona. Meno omicidi di fazione, opere pubbliche, giustizia piu rapida, e in molte citta un periodo di splendore artistico. Non e una parentesi buia: e uno scambio, con dei vantaggi reali.',
+       seDicono:[
+         {loro:'«Allora la vittoria di Legnano non conta niente?»',
+          tu:'Conta moltissimo: senza quella guerra l\'Italia comunale non avrebbe avuto il riconoscimento giuridico di governarsi. Quello che non conta e il significato che le abbiamo attaccato sopra settecento anni dopo. Distinguere il fatto dal suo uso e tutto il mestiere.'},
+         {loro:'«Ma se la signoria funzionava, allora era meglio?»',
+          tu:'Funzionava per l\'ordine e non per la partecipazione. La domanda vera e a che prezzo, e chi lo paga: sotto un signore la vita e piu sicura e la politica scompare. Vale lo scambio? È esattamente la domanda con cui chiudiamo.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'Torniamo alla domanda dell\'inizio.\n\nNessuno gliel\'ha tolta.\nSe la sono tolta da soli,\nun passo ragionevole per volta:\n\nprima un magistrato forestiero perche imparziale,\npoi un signore a tempo perche l\'emergenza,\npoi rinnovato perche ha funzionato,\npoi a vita perche cambiarlo sarebbe rischioso,\npoi a suo figlio perche ormai e cosi.\n\nUltima domanda, e non riguarda il Trecento:\n\nquanta liberta si e disposti a cedere\nper essere lasciati in pace?',
+       parlato:'Rifai la conta iniziale — imposta o scelta — e mostra lo spostamento.\n\nPoi la scala dei cinque passi: falla leggere lentamente, perche il punto e che ogni singolo passaggio, preso da solo, e sensato. Nessuno di quei consigli cittadini ha votato per la fine della liberta comunale: hanno votato per un anno di tranquillita, molte volte di seguito.\n\nChiudi con la domanda finale senza raccogliere risposte e senza fare paralleli con l\'attualita: se qualcuno li fa, lascialo fare e non aggiungere niente. La forza della domanda sta nel fatto che la storia non da una risposta comoda — perche la signoria, davvero, riduceva le violenze.\n\nUltima riga, se serve: la prossima volta guardiamo che cosa succede quando gli stessi Stati cittadini smettono di combattersi e cominciano a farsi la guerra con i banchieri e i matrimoni.',
+       seDicono:[
+         {loro:'«Quindi la democrazia non funziona?»',
+          tu:'Il Comune non era una democrazia: votava una minoranza di maschi adulti con requisiti di censo o di mestiere, e il contado non contava nulla. Il problema che lo ha ucciso non e la partecipazione — e l\'assenza di regole capaci di far perdere qualcuno senza che debba andarsene in esilio.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'Il mestiere del podesta',
+       corpo:'Il podesta era un professionista itinerante. Veniva da un\'altra citta, spesso da lontano, e arrivava con un proprio seguito: giudici, notai, cavalieri, a volte una ventina di persone che pagava di tasca propria con lo stipendio ricevuto.\n\nRestava in carica un anno, talvolta sei mesi. Non poteva imparentarsi in citta, ne accettare inviti a pranzo dai cittadini, ne comprare beni. Alla fine del mandato veniva sottoposto al sindacato: un processo pubblico sul proprio operato, con la possibilita per chiunque di accusarlo. Solo dopo poteva ripartire, e riscuotere l\'ultima parte del compenso.\n\nEsistevano manuali per podesta, veri e propri libri di istruzioni sul mestiere.',
+       chiedi:'Un funzionario preso da fuori, pagato molto, sorvegliato, e processato prima di andarsene. Che cosa vi dice questo insieme di regole sul problema che volevano risolvere? E che cosa direbbero oggi, quelle stesse regole, applicate a qualche incarico pubblico che conoscete?'},
+      {titolo:'Le torri',
+       corpo:'Nelle citta comunali le grandi famiglie costruivano torri: alte, strette, senza finestre in basso, collegate fra loro da passerelle di legno con le case degli alleati. Servivano a controllare la strada, a difendersi durante le lotte di fazione e a mostrare il proprio rango.\n\nA Bologna se ne contarono oltre cento. A Firenze i Comuni cercarono piu volte di imporne l\'abbassamento a una misura massima.\n\nLe torri non sono un ornamento urbanistico: sono la prova materiale che dentro le mura si combatteva.',
+       chiedi:'Che cosa significa vivere in una citta in cui le famiglie piu potenti hanno fortezze private in centro? E perche una delle prime cose che fa un signore, quasi ovunque, e far abbassare o abbattere le torri?'},
+      {titolo:'Il carroccio',
+       corpo:'Il carroccio era un carro trainato da buoi che le citta lombarde portavano in battaglia. Sopra c\'erano l\'insegna del Comune, un altare, una campana e i sacerdoti. Non serviva a combattere: serviva come punto di raccolta e come simbolo — finche il carroccio resisteva, la citta resisteva.\n\nA Legnano, nel 1176, la fanteria milanese si serro intorno al carroccio e resistette alla cavalleria imperiale abbastanza a lungo perche la cavalleria della Lega tornasse.\n\nNel 1237, dopo Cortenuova, Federico II mando il carroccio milanese a Roma come trofeo, esposto in Campidoglio.',
+       chiedi:'Un carro con una campana e un altare al centro di una battaglia. A che cosa serve, davvero, un simbolo in guerra? E perche l\'imperatore, vincendo, sceglie di portarsi via quello invece del bottino?'}
+    ],
+    testi:[
+      {fonte:'Ottone di Frisinga, Gesta di Federico, circa 1157 — lo sguardo tedesco sulle citta italiane',
+       corpo:'Lo zio del Barbarossa descrive con stupore le citta lombarde: amano tanto la liberta che, «per evitare l\'arroganza del potere», si governano con dei consoli e li cambiano quasi ogni anno. E aggiunge, scandalizzato, che non disdegnano di elevare alla cavalleria e alle cariche pubbliche «giovani di condizione inferiore, e perfino artigiani di mestieri meccanici».',
+       glossa:'La fonte piu utile e spesso quella di chi non capisce. Ottone descrive come anomalia quello che per noi e l\'inizio di qualcosa: cariche elettive, ricambio, e persone di mestiere ammesse al governo. Vale la pena chiedersi che cosa, del nostro presente, verra descritto un giorno con lo stesso stupore.'},
+      {fonte:'Pace di Costanza, 25 giugno 1183 — i punti principali',
+       corpo:'L\'imperatore concede alle citta della Lega le regalie e le consuetudini, il diritto di eleggere i propri consoli, di darsi statuti e di mantenere la Lega. Le citta in cambio giurano fedelta all\'imperatore, gli versano un tributo, e i consoli eletti ricevono da lui l\'investitura.',
+       glossa:'Leggere i punti uno per uno e il modo migliore per capire che cosa fu davvero quella vittoria: non l\'uscita dall\'Impero ma un posto migliore dentro l\'Impero. È un compromesso, e i compromessi si raccontano male — ed e per questo che poi si e preferito raccontare la battaglia.'},
+      {fonte:'Ordinamenti di giustizia, Firenze 1293',
+       corpo:'I magnati — le famiglie di antica nobilta e con parenti cavalieri — vengono esclusi dalle principali cariche del Comune, obbligati a prestare cauzione per il proprio buon comportamento, e puniti piu severamente degli altri cittadini per i reati di violenza. Le loro famiglie rispondono collettivamente dei delitti dei singoli.',
+       glossa:'Una legge che punisce piu duramente chi e piu potente, e che rende una famiglia responsabile per i propri membri. Sono misure eccezionali e discutibili — e dicono con precisione quanto fosse fuori controllo la violenza dei potenti dentro le mura.'}
+    ],
+    compito:'Mezza pagina. Cercate quando la vostra citta, o la piu vicina, e passata da Comune a signoria, e chi fu il primo signore. Poi provate a rispondere a una domanda sola: a chi conveniva, quel passaggio, e chi ci perdeva? Se non trovate la risposta nelle fonti, scrivete che cosa avreste bisogno di sapere per rispondere.',
+    fonti:[
+      'Ottone di Frisinga, Gesta Friderici II 13; Pace di Costanza (1183); Ordinamenti di giustizia (1293)',
+      'Dante, Purgatorio VI 76-151; Convivio IV; Monarchia',
+      'G. Tabacco, Egemonie sociali e strutture del potere nel medioevo italiano',
+      'P. Grillo, Legnano 1176. Una battaglia per la liberta; Cavalieri e popoli in armi',
+      'J.-C. Maire Vigueur, Cavalieri e cittadini; E. Artifoni sul podesta',
+      'G. Chittolini, La formazione dello Stato regionale e le istituzioni del contado'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',
