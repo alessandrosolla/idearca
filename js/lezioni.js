@@ -6025,6 +6025,227 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Storia moderna · 1 — Carlo V e la Riforma protestante': {
+  mappa: {
+    n:'Carlo V e la Riforma', d:'l\'ultimo impero universale e la rottura che lo rende impossibile',
+    f:[
+      {r:'comincia da', n:'Un\'eredita accumulata per matrimoni', d:'nessuna conquista: quattro nonni e una serie di morti opportune',
+       f:[
+         {r:'dal padre', n:'I Paesi Bassi e la Borgogna', d:'la regione piu ricca e urbanizzata d\'Europa'},
+         {r:'dalla madre', n:'Spagna e America', d:'con l\'argento che comincia ad arrivare dalle Indie'},
+         {r:'dal nonno', n:'I domini asburgici', d:'Austria e diritti sull\'Impero'},
+         {r:'e nel 1519 compra', n:'La corona imperiale', d:'gli elettori si fanno pagare, e i Fugger anticipano la somma',
+          f:[{r:'battendo', n:'Francesco I', d:'che aveva fatto la stessa cosa, offrendo di meno'},
+             {piu:true, r:'con un debito che', n:'Condizionera tutto il regno', d:'l\'argento americano servira in gran parte a pagare banchieri tedeschi e genovesi'}]},
+         {r:'e coltiva un progetto', n:'Fuori tempo', d:'la monarchia universale cristiana, mentre l\'Europa si sta dividendo in Stati'}
+       ]},
+
+      {r:'trova una Chiesa', n:'Esposta', d:'non piu corrotta di prima, ma piu visibile e meno difendibile',
+       f:[
+         {r:'che vende', n:'Indulgenze', d:'remissione della pena in cambio di un\'offerta: un condono con tariffario'},
+         {r:'per finanziare', n:'La nuova San Pietro', d:'il cantiere piu costoso d\'Europa'},
+         {r:'con affari come quello di', n:'Alberto di Magonza', d:'compra tre diocesi indebitandosi con i Fugger e ripaga con le indulgenze',
+          f:[{piu:true, r:'e un banchiere', n:'Siede accanto al predicatore', d:'per incassare la meta dovuta: la cosa era pubblica'}]},
+         {piu:true, r:'e circolano gia', n:'Richieste di riforma', d:'concili, umanisti e ordini religiosi le formulano da un secolo, senza esito'},
+         {r:'e ha un clero spesso', n:'Impreparato', d:'parroci che non sanno il latino, vescovi che non risiedono'},
+         {r:'mentre esiste ormai', n:'La stampa', d:'un\'accusa scritta non si spegne piu convocando chi l\'ha pronunciata'}
+       ]},
+
+      {r:'esplode con', n:'Lutero', d:'un monaco agostiniano con un problema personale, non un progetto di riforma',
+       f:[
+         {r:'parte da', n:'L\'angoscia della salvezza', d:'per quanto si confessi, non si sente mai a posto davanti a Dio'},
+         {r:'trova la risposta nella', n:'Giustificazione per fede', d:'l\'uomo e salvato per grazia, non per le opere che accumula'},
+         {r:'e ne trae tre principi', n:'Sola fide, sola gratia, sola Scriptura', d:'niente merito, niente mediazione, niente tradizione oltre il testo',
+          f:[{r:'da cui il', n:'Sacerdozio universale', d:'ogni battezzato e sacerdote: la gerarchia non ha un potere sacro proprio'},
+             {piu:true, r:'e la conseguenza pratica', n:'Bisogna saper leggere', d:'se la Scrittura decide da sola, il fedele deve poterla leggere'}]},
+         {r:'nel 1517 affigge', n:'Le novantacinque tesi', d:'contro le indulgenze: sono tesi da disputa accademica, in latino'},
+         {r:'ma vengono', n:'Tradotte e stampate', d:'e in due settimane circolano in tutta la Germania: e questo a cambiare tutto'}
+       ]},
+
+      {r:'diventa rottura con', n:'Lo scontro con Roma', d:'quattro anni, e nessuno riesce piu a fermarlo',
+       f:[
+         {r:'a Lipsia', n:'Ammette di essere hussita', d:'1519: se un concilio ha condannato tesi vere, anche i concili sbagliano'},
+         {r:'Roma risponde con', n:'Exsurge Domine', d:'1520: sessanta giorni per ritrattare'},
+         {r:'e lui', n:'Brucia la bolla in pubblico', d:'davanti a studenti e professori: il gesto e piu importante del testo'},
+         {r:'a Worms davanti all\'imperatore', n:'Rifiuta di ritrattare', d:'1521: la coscienza vincolata alla Scrittura contro papa e impero'},
+         {r:'poi viene', n:'Nascosto alla Wartburg', d:'da Federico il Savio, che finge di averlo fatto rapire',
+          f:[{r:'dove traduce', n:'Il Nuovo Testamento in tedesco', d:'e nel farlo fonda la lingua letteraria tedesca moderna'}]}
+       ]},
+
+      {r:'si salda con', n:'I principi tedeschi', d:'ed e questo, non la teologia, a decidere che la Riforma sopravviva',
+       f:[
+         {r:'che ci guadagnano', n:'I beni della Chiesa', d:'monasteri, terre e decime passano ai principi che aderiscono'},
+         {r:'e insieme', n:'L\'indipendenza dall\'imperatore', d:'una fede diversa e un\'ottima ragione per non obbedire'},
+         {r:'il momento decisivo e', n:'La guerra dei contadini', d:'1524-25: i contadini prendono alla lettera la liberta del cristiano',
+          f:[{r:'chiedono nei', n:'Dodici articoli', d:'fine della servitu, elezione dei parroci, uso comune dei boschi: tutto motivato col Vangelo'},
+             {r:'e Lutero scrive', n:'Contro le orde assassine', d:'invitando i principi a colpirli senza pieta, come si uccide un cane rabbioso'},
+             {r:'con circa', n:'Centomila morti', d:'e la Riforma resta legata ai principi, non ai contadini'}]},
+         {piu:true, r:'e si organizzano nella', n:'Lega di Smalcalda', d:'un\'alleanza militare fra principi luterani: la fede diventa un fronte'},
+         {r:'e nasce il nome', n:'Protestanti', d:'dalla protesta di alcuni principi contro una dieta imperiale, nel 1529'}
+       ]},
+
+      {r:'si moltiplica in', n:'Altre riforme', d:'una volta rotta l\'unita, nessuno controlla piu la direzione',
+       f:[
+         {r:'a Zurigo', n:'Zwingli', d:'piu radicale sui sacramenti, muore in battaglia contro i cantoni cattolici'},
+         {r:'a Ginevra', n:'Calvino', d:'costruisce una citta-chiesa disciplinata, con un consistoro che sorveglia i costumi',
+          f:[{r:'con la dottrina della', n:'Predestinazione', d:'Dio ha gia scelto: non si sa chi sia salvo, e nessuna opera lo cambia'},
+             {piu:true, r:'e Ginevra diventa', n:'La centrale d\'Europa', d:'stampa clandestina e pastori formati per Francia, Scozia e Paesi Bassi'}]},
+         {r:'ai margini gli', n:'Anabattisti', d:'battesimo da adulti, rifiuto delle armi e del giuramento: perseguitati da tutti',
+          f:[{r:'con il caso estremo di', n:'Munster', d:'1534-35: una citta occupata e trasformata in regno dei santi, poi massacrata'}]},
+         {piu:true, r:'e ovunque cambiano', n:'Le chiese per dentro', d:'via le immagini e gli altari laterali, al centro il pulpito: si viene per ascoltare'},
+         {r:'e in Inghilterra', n:'Enrico VIII', d:'rompe con Roma per una questione dinastica, non teologica'}
+       ]},
+
+      {r:'travolge', n:'Il progetto di Carlo V', d:'che combatte su tre fronti e non ne chiude nessuno',
+       f:[
+         {r:'contro', n:'La Francia', d:'sei guerre in trent\'anni per il controllo dell\'Italia e dei confini'},
+         {r:'contro', n:'Gli Ottomani', d:'che assediano Vienna nel 1529 e sono alleati del re di Francia'},
+         {r:'contro', n:'I principi luterani', d:'riuniti nella lega di Smalcalda'},
+         {r:'vince a', n:'Muhlberg', d:'1547: una vittoria militare piena, che non risolve nulla'},
+         {r:'ed e costretto alla', n:'Pace di Augusta', d:'1555: in ogni territorio vale la religione del principe',
+          f:[{r:'con il solo diritto di', n:'Emigrare', d:'per il suddito che non concorda: vendere i beni e andarsene'},
+             {piu:true, r:'e i calvinisti', n:'Ne restano fuori', d:'saranno riconosciuti solo nel 1648, dopo un\'altra guerra di trent\'anni'}]},
+         {r:'poi', n:'Abdica', d:'1556: divide i domini fra il figlio e il fratello, e si ritira in un monastero'}
+       ]},
+
+      {r:'lascia', n:'Un\'Europa divisa per sempre', d:'e alcune conseguenze che nessuno aveva cercato',
+       f:[
+         {r:'la Chiesa reagisce con', n:'Il concilio di Trento', d:'chiarisce la dottrina, forma il clero, e chiude ogni possibilita di ricomposizione'},
+         {r:'seguono', n:'Le guerre di religione', d:'in Francia, nei Paesi Bassi, e infine in Germania fino al 1648'},
+         {r:'cresce', n:'L\'alfabetizzazione', d:'dove si deve leggere la Bibbia si aprono scuole: e un effetto misurabile'},
+         {r:'cambia il valore del', n:'Lavoro quotidiano', d:'nessun mestiere e piu sacro di un altro: anche la vita comune e vocazione'},
+         {piu:true, r:'e nasce una', n:'Confessionalizzazione', d:'lo Stato usa la disciplina religiosa per controllare i sudditi: vale per entrambe le parti'},
+         {r:'e la Germania resta', n:'Frammentata', d:'la sovranita religiosa dei principi rafforza la divisione territoriale'}
+       ]}
+    ],
+    incroci:[
+      {da:'La stampa', a:'Tradotte e stampate', r:'e cio che rende irreversibile il fatto che le tesi siano',
+       perche:'Hus fu convocato e bruciato, e la questione si chiuse per un secolo. Lutero scrive nel momento in cui esiste un torchio: in due settimane le tesi sono ovunque, in tedesco, e non c\'e nessun luogo dove convocarle. La differenza fra i due casi non e nella teologia, e nella tecnologia della diffusione.'},
+      {da:'Condizionera tutto il regno', a:'Alberto di Magonza', r:'nasce dallo stesso circuito bancario dell\'affare di',
+       perche:'I Fugger anticipano il denaro per comprare la corona imperiale e finanziano il vescovo che rivende indulgenze per ripagarli. Lo stesso banchiere sta dietro l\'elezione di Carlo V e dietro la campagna che fa esplodere Lutero: la crisi religiosa e la politica imperiale poggiano sullo stesso debito.'},
+      {da:'Ammette di essere hussita', a:'Sola fide, sola gratia, sola Scriptura', r:'e cio che rende necessario il principio',
+       perche:'A Lipsia Lutero e messo alle strette con l\'accusa di essere hussita, rilegge gli atti di Costanza e conclude che anche un concilio puo sbagliare. Tolta l\'ultima autorita umana a cui appellarsi, non resta che il testo: il «sola Scriptura» non e il punto di partenza della sua teologia, e cio che rimane quando tutto il resto e caduto.'},
+      {da:'Bisogna saper leggere', a:'L\'alfabetizzazione', r:'produce la crescita del',
+       perche:'Se la Scrittura decide da sola, il fedele deve poterla leggere: da qui scuole, catechismi e traduzioni. È l\'effetto sociale piu misurabile della Riforma, e nessuno lo aveva progettato — deriva da una tesi teologica sul rapporto fra il credente e il testo.'},
+      {da:'Dodici articoli', a:'Contro le orde assassine', r:'ricevono come risposta l\'opuscolo',
+       perche:'I contadini fondano ogni richiesta sul Vangelo, cioe applicano il metodo che Lutero aveva insegnato: la Scrittura come unico criterio. Lui risponde che la liberta del cristiano e interiore e non riguarda i rapporti sociali, e invita i principi a reprimere. È il punto in cui la Riforma sceglie da che parte stare.'},
+      {da:'Centomila morti', a:'I beni della Chiesa', r:'saldano definitivamente la Riforma a chi incamera',
+       perche:'Dopo il 1525 il movimento non ha piu una base popolare autonoma: dipende dai principi, che lo proteggono e ne ricavano monasteri e decime. Un movimento che ha bisogno di protezione finisce per assumere la forma di chi lo protegge, e la forma qui e il principato territoriale.'},
+      {da:'Emigrare', a:'Rifiuta di ritrattare', r:'e l\'esito paradossale del gesto di chi',
+       perche:'Si comincia con un uomo che davanti all\'imperatore dice di non poter agire contro coscienza, e si finisce con una pace che assegna al principe la scelta della fede dei sudditi, lasciando al dissenziente solo la valigia. La coscienza individuale apre la crisi e non compare nella soluzione.'},
+      {da:'Gli Ottomani', a:'Pace di Augusta', r:'sono una delle ragioni per cui si arriva alla',
+       perche:'Carlo V vince a Muhlberg ma non puo consolidare: gli servono i principi tedeschi, anche luterani, per finanziare la difesa contro i turchi e la guerra con la Francia. La tolleranza di Augusta non nasce da un\'idea, nasce dal fatto che l\'imperatore ha bisogno di truppe su altri due fronti.'},
+      {da:'Predestinazione', a:'Lavoro quotidiano', r:'si lega alla rivalutazione del',
+       perche:'Se nessuna opera cambia una scelta gia fatta da Dio, resta la domanda di come si viva nell\'incertezza. La risposta calvinista valorizza la disciplina e il mestiere come luogo della vocazione — ed e su questo nesso che Weber costruira la tesi piu discussa della sociologia moderna.'},
+      {da:'Fuori tempo', a:'Frammentata', r:'e il progetto imperiale che finisce nell\'esito opposto della Germania',
+       perche:'Carlo V insegue una monarchia universale cristiana mentre l\'Europa si organizza in Stati territoriali. Il risultato del suo regno e l\'opposto: la Germania esce dalla crisi con principi sovrani anche in materia di fede. Un progetto in ritardo di due secoli accelera cio che voleva impedire.'},
+      {da:'Le novantacinque tesi', a:'Il concilio di Trento', r:'ottengono quasi trent\'anni dopo una risposta nel',
+       perche:'Le tesi del 1517 chiedevano un chiarimento sulle indulgenze; la risposta istituzionale arriva solo nel 1545 e non e piu un chiarimento ma una ridefinizione completa della dottrina. Quando un\'istituzione risponde con quasi trent\'anni di ritardo, non risponde piu alla domanda iniziale ma alla frattura che si e prodotta nel frattempo.'},
+      {da:'Munster', a:'Anabattisti', r:'segna per sempre l\'immagine degli',
+       perche:'La citta trasformata in regno dei santi, con poligamia e requisizioni, e un caso estremo e breve; ma diventa l\'argomento con cui per due secoli si giustifica la persecuzione di tutti gli anabattisti, compresi i gruppi pacifisti. Un episodio limite serve a definire un intero movimento — e conviene sempre a chi lo reprime.'},
+      {da:'Il Nuovo Testamento in tedesco', a:'Sacerdozio universale', r:'e lo strumento che rende praticabile il',
+       perche:'Dire che ogni battezzato e sacerdote resta un principio astratto finche il testo e in latino e in mano ai chierici. La traduzione lo rende operativo, e per questo la Chiesa aveva sempre diffidato delle versioni in volgare: la questione della lingua e sempre stata una questione di chi detiene l\'accesso.'}
+    ]
+  },
+  provocazione: {
+    titolo:'Cuius regio',
+    durata:'55 minuti',
+    domandaMadre:'Perche una rivolta della coscienza finisce con la fede decisa dal principe?',
+    perche:'Nel 1521 un monaco dice all\'imperatore che non puo agire contro la propria coscienza; nel 1555 la pace che chiude quella crisi stabilisce che in ogni territorio si professa la religione del sovrano e che il suddito dissenziente puo soltanto emigrare. La classe deve ricostruire come si arriva dall\'una all\'altra cosa, e la risposta non e il tradimento di qualcuno: e che un movimento che ha bisogno di protezione assume la forma di chi lo protegge. Il momento decisivo e il 1525, quando i contadini applicano al proprio mondo il principio della sola Scrittura e Lutero invita i principi a reprimerli. Il colpo di scena e che la pace di Augusta, ricordata come la prima tolleranza europea, tollera i principi e non le persone.',
+    occorrente:'Niente.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'Worms, aprile 1521.\n\nDavanti all\'imperatore,\nai principi, ai vescovi,\nun monaco di trentasette anni\nrifiuta di ritrattare i propri libri.\n\nDice che la sua coscienza\ne vincolata alla parola di Dio,\ne che andare contro coscienza\nnon e sicuro ne onesto.\n\nTrentaquattro anni dopo,\nla pace che chiude\nquella crisi stabilisce:\n\nin ogni territorio\nsi professa la religione\ndel principe che lo governa.\n\nIl suddito che non e d\'accordo\nha un solo diritto:\nvendere i propri beni\ne andarsene.',
+       parlato:'Dai le due date e lascia il contrasto in piedi senza commentarlo.\n\nPoi la domanda: come si arriva da qui a li?\n\nRaccogli le prime risposte. Di solito arriva subito l\'ipotesi del tradimento — qualcuno si e venduto. Non correggerla ancora: e una delle due opzioni dello schieramento, e conviene che sia difesa.\n\nSe serve un dato in piu per far pesare il contrasto: nel 1520 Lutero aveva scritto un opuscolo intitolato «La liberta del cristiano», che circolo in decine di migliaia di copie. La parola liberta e nel titolo del testo piu diffuso della Riforma, e trentacinque anni dopo la liberta riconosciuta e quella del principe di scegliere la fede altrui.',
+       seDicono:[
+         {loro:'«Perche allora Lutero non fa la fine di Hus?»',
+          tu:'Domanda perfetta, e ci lavoriamo fra dieci minuti. Anticipo solo che la risposta non e teologica: le tesi di Hus e quelle di Lutero si somigliano molto, e lo ammise Lutero stesso. Cambia tutto il resto.'},
+         {loro:'«Almeno potevano andarsene: e gia qualcosa.»',
+          tu:'Per l\'epoca lo era, e non va sottovalutato. Ma tieni presente che cosa significava: lasciare la casa, la terra, il mestiere e i parenti, spesso in poche settimane. Un diritto che si esercita solo perdendo tutto e un diritto strano, e vale la pena chiedersi per chi funzionava davvero.'}
+       ]},
+
+      {minuti:'8–17', et:'Lo schieramento',
+       schermo:'La pace del 1555,\nche assegna al principe\nla scelta della religione:',
+       opzioni:['tradisce il punto di partenza della Riforma', 'era l\'unico esito possibile, fin dall\'inizio'],
+       parlato:'Fai schierare e conta.\n\nPoi chiedi ai due gruppi di rispondere a una domanda ciascuno.\n\nAl primo: chi avrebbe dovuto proteggere Lutero, se non i principi? Un uomo scomunicato e messo al bando dall\'impero puo essere ucciso da chiunque senza conseguenze. Chi lo teneva in vita?\n\nAl secondo: se era l\'unico esito possibile, allora il contenuto della predicazione non conta nulla? Basta la politica a spiegare tutto?\n\nLa seconda domanda serve a impedire la scorciatoia opposta, quella per cui tutto si riduce a interessi. Nella Riforma ci sono entrambe le cose, e distinguerle e il lavoro dell\'ora.\n\nPoi passa alla ricostruzione: perche Lutero sopravvive dove Hus era stato bruciato?',
+       seDicono:[
+         {loro:'«I principi lo hanno usato.»',
+          tu:'Certamente, e vale anche il contrario: lui ha usato loro, consapevolmente. Nel 1520 scrive un appello alla nobilta tedesca chiedendo che siano i principi a riformare la Chiesa, visto che i vescovi non lo fanno. Non e stato ingenuo: ha scelto un alleato.'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'Perche Lutero non fa la fine di Hus.\n\nPrimo: la stampa.\nIn pochi anni i suoi scritti\ncircolano in centinaia di migliaia\ndi copie, in tedesco.\nNon c\'e nessun luogo\nin cui convocare un\'idea.\n\nSecondo: l\'imperatore ha altro da fare.\nSei guerre con la Francia.\nI turchi che assediano Vienna nel 1529.\nL\'Italia. Le Americhe.\n\nTerzo, e decisivo: i principi.\nFederico il Savio lo fa rapire\ndai propri uomini\ne lo nasconde in un castello.\n\nPerche lo proteggono?\n\nMonasteri, terre e decime\npassano a chi aderisce.\nE una fede diversa\ne un\'ottima ragione\nper non obbedire all\'imperatore.',
+       parlato:'Dai i tre motivi in ordine, e insisti sul terzo.\n\nPoi arriva al punto in cui la partita si decide davvero, che e il 1525.\n\nI contadini tedeschi si sollevano. Non sono una jacquerie: hanno un programma scritto, i dodici articoli, e ogni richiesta e fondata su un passo del Vangelo. Chiedono la fine della servitu, il diritto di eleggere il proprio parroco, l\'uso comune dei boschi e delle acque. Il ragionamento e esattamente quello che avevano imparato: la Scrittura e l\'unico criterio, quindi verifichiamo con la Scrittura anche i rapporti fra signori e contadini.\n\nLutero risponde con un opuscolo in cui invita i principi a colpirli senza pieta, a pugnalare e uccidere come si abbatte un cane rabbioso, promettendo che chi muore combattendo i rivoltosi e un martire.\n\nLa repressione fa circa centomila morti.\n\nDomanda per la classe: perche? Non e una domanda retorica — c\'e una ragione teologica, e va capita.',
+       seDicono:[
+         {loro:'«Perche aveva paura di perdere i principi.»',
+          tu:'C\'e anche questo, ed e la lettura piu diffusa. Ma c\'e una ragione interna alla sua teologia, e va conosciuta: per lui la liberta del cristiano e interiore, riguarda il rapporto con Dio, e non dice nulla sui rapporti sociali. I contadini secondo lui confondevano i due piani. Puoi giudicare la risposta e devi sapere che non era solo opportunismo.'},
+         {loro:'«Ma erano loro ad aver capito bene.»',
+          tu:'È una posizione che si puo sostenere, e alcuni contemporanei la sostennero. Il punto storico e un altro: dopo il 1525 la Riforma non ha piu una base popolare autonoma. Dipende dai principi. E chi dipende da qualcuno finisce per assomigliargli.'}
+       ]},
+
+      {minuti:'28–38', et:'Il testo',
+       schermo:'Dai Dodici articoli\ndei contadini svevi, 1525:\n\nchiedono di poter eleggere\nil proprio parroco;\n\nchiedono che la servitu personale\nsia abolita,\nperche Cristo ha redento tutti\ncon il proprio sangue,\nil pastore come l\'imperatore;\n\nchiedono di poter pescare e cacciare,\ne di riavere i boschi comuni.\n\nE aggiungono una clausola:\nse anche una sola\ndi queste richieste\nsara mostrata contraria\nalla Scrittura,\nvi rinunceranno.',
+       testo:{fonte:'I Dodici articoli dei contadini della Svevia, febbraio-marzo 1525',
+              glossa:'L\'ultima clausola e la piu importante: i contadini accettano in anticipo di essere confutati con la Bibbia. Hanno imparato la regola nuova — la Scrittura come unico criterio — e la applicano al proprio mondo, offrendosi al controllo. È il documento che rende impossibile liquidarli come una folla inferocita, ed e per questo che va letto in classe prima della risposta di Lutero.'},
+       parlato:'Leggi gli articoli e poi soffermati sulla clausola finale: si sottopongono al giudizio della Scrittura. Non chiedono di essere creduti, chiedono di essere verificati.\n\nPoi leggi la risposta, senza attenuarla. Lutero scrive che chiunque puo colpirli, in segreto o in pubblico, come si uccide un cane rabbioso; che nulla puo essere piu velenoso di un rivoltoso; e che chi muore combattendoli e un martire davanti a Dio.\n\nLascia il silenzio.\n\nPoi la domanda: che cosa vi colpisce di piu, il contenuto o il fatto che sia lo stesso uomo?\n\nE quella successiva, che e piu utile: chi risponde delle conseguenze di cio che dice? Lutero non aveva chiesto ai contadini di sollevarsi, e loro citavano lui. Quanto pesa questo, secondo voi?\n\nNon chiudere la questione. Falli parlare: e uno dei pochi problemi morali su cui una classe discute davvero.',
+       seDicono:[
+         {loro:'«Non e colpa sua se l\'hanno frainteso.»',
+          tu:'Non lo avevano frainteso del tutto: avevano applicato il suo metodo a un altro campo. E quando qualcuno ti prende sul serio piu di quanto volessi, hai due strade — spiegare perche il campo e diverso, oppure chiedere che venga ucciso. Lui scelse la seconda, e questo resta suo.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'La pace di Augusta, 1555,\nviene ricordata\ncome il primo atto di tolleranza\nreligiosa in Europa.\n\nLeggiamola davvero.\n\nOgni principe sceglie\nfra cattolicesimo e luteranesimo.\n\nI sudditi professano\nla religione del principe.\n\nChi non e d\'accordo\npuo vendere i beni ed emigrare.\n\nI calvinisti non sono compresi:\nnon esistono, giuridicamente.\nSaranno riconosciuti nel 1648,\ndopo un\'altra guerra\ndurata trent\'anni.\n\nQuindi:\nla prima liberta religiosa d\'Europa\ne la liberta del sovrano\ndi scegliere la fede degli altri.',
+       parlato:'Dai il contenuto della pace punto per punto, e fai emergere da loro la conclusione.\n\nPoi la domanda importante: perche a nessuno viene in mente la soluzione ovvia, cioe che in uno stesso territorio convivano due religioni?\n\nGuidali alla risposta, che e la chiave per capire i due secoli successivi. Perche nessuno, in quel momento, credeva che una societa potesse reggersi senza unita di fede. Il giuramento, i tribunali, il matrimonio, la fiducia fra vicini: tutto poggiava su una religione condivisa. Due fedi in un territorio sembravano l\'anticamera della guerra civile — e, per un secolo, lo furono davvero.\n\nQuindi la tolleranza di Augusta non e un principio ma un armistizio: si separano i contendenti mettendo un confine fra loro.\n\nE aggiungi come si arriva all\'altra tolleranza, quella fra persone: non per una scoperta morale, ma per esaurimento. Dopo le guerre di religione francesi, dopo i Paesi Bassi, dopo la guerra dei Trent\'anni, si scopre sperimentalmente che una societa mista non crolla. Le idee di Locke sulla tolleranza arrivano dopo, e mettono in forma quello che era gia successo.',
+       seDicono:[
+         {loro:'«Allora la tolleranza nasce dalla stanchezza, non dalla ragione.»',
+          tu:'In gran parte si, ed e un fatto che vale la pena tenere. Le grandi conquiste morali arrivano spesso quando l\'alternativa e diventata insostenibile, e vengono giustificate dopo con buoni argomenti. Questo non le rende meno vere: le rende piu fragili, perche chi dimentica il costo puo pensare che siano gratuite.'},
+         {loro:'«Perche i calvinisti restano fuori?»',
+          tu:'Perche nel 1555 sono pochi e nessuno li considera un interlocutore. Cinquant\'anni dopo saranno la forza religiosa piu organizzata d\'Europa. Le paci che escludono qualcuno perche in quel momento e debole tendono a durare quanto quella debolezza.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'Il percorso, in quattro passi.\n\nUn uomo dice che la coscienza\nnon puo essere costretta.\n\nPer sopravvivere\nha bisogno di protezione armata.\n\nChi lo protegge\nchiede in cambio\nche il movimento non tocchi\nl\'ordine sociale —\ne ottiene i beni della Chiesa.\n\nQuando arriva la pace,\nchi ha protetto\ndetta le condizioni.\n\nUltima domanda:\n\nun movimento puo scegliere\nchi lo protegge\nsenza scegliere\nche cosa diventera?',
+       parlato:'Rifai la conta iniziale e commenta lo spostamento.\n\nPoi da\' il meccanismo in forma pulita, ed e la cosa da portare a casa: un movimento che ha bisogno di protezione finisce per assumere la forma di chi lo protegge. Non perche i suoi uomini siano vili, ma perche la protezione ha un prezzo che si paga in contenuti.\n\nAggiungi il bilancio onesto, senza ridurre tutto alla politica. La Riforma ha prodotto anche cose che nessuno aveva progettato e che sono durate piu delle guerre: l\'alfabetizzazione dove si doveva leggere la Bibbia, una lingua tedesca letteraria nata da una traduzione, e l\'idea che il lavoro quotidiano di chiunque abbia dignita religiosa.\n\nE chiudi con la cosa che serve per il prossimo capitolo: da qui in avanti l\'Europa non ha piu un\'autorita religiosa comune. Ogni conflitto politico avra anche una faccia confessionale, per un secolo e mezzo. E quando le guerre di religione finiranno, finiranno perche i contendenti si saranno accorti di non poter vincere — che e il modo in cui, quasi sempre, finiscono.',
+       seDicono:[
+         {loro:'«Quindi meglio non farsi proteggere da nessuno.»',
+          tu:'Chi non ha protezione, in quel secolo, viene bruciato: Hus non aveva un principe, Lutero si. La conclusione utile non e rifiutare gli alleati, e sapere che ogni alleanza modifica cio che si e. La domanda giusta da farsi prima non e se convenga, ma che cosa dovremo smettere di dire.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'Il conto delle indulgenze',
+       corpo:'Alberto di Hohenzollern voleva cumulare tre diocesi, cosa vietata. Ottenne la dispensa pagando a Roma una somma enorme, presa a prestito dai banchieri Fugger. Per rimborsarli, ottenne di predicare nei propri territori un\'indulgenza per la costruzione di San Pietro: meta del ricavato a Roma, meta ai Fugger.\n\nAccanto al predicatore sedeva un agente della banca che teneva la contabilita.\n\nLutero, quando scrive le tesi, non sa nulla di questo accordo. Lo scoprira dopo.',
+       chiedi:'La macchina era legale, pubblica e nota a molti. Perche allora fu proprio quel testo, di un professore sconosciuto, a farla saltare? Che cosa serve perche una cosa che tutti sanno diventi improvvisamente uno scandalo?'},
+      {titolo:'Il sacco di Roma',
+       corpo:'Nel maggio 1527 le truppe imperiali, in gran parte lanzichenecchi tedeschi di fede luterana e da mesi senza paga, entrano a Roma e la saccheggiano per settimane. Chiese devastate, reliquie disperse, migliaia di morti, il papa assediato in Castel Sant\'Angelo.\n\nL\'esercito era formalmente al servizio di Carlo V, sovrano cattolicissimo, che non ne aveva ordinato l\'assalto e non era in grado di pagarlo.\n\nIn Europa l\'episodio fu letto da molti come un castigo divino sulla corruzione romana.',
+       chiedi:'Un imperatore cattolico non riesce a impedire che i propri soldati saccheggino la sede del papa. Che cosa ci dice questo su quanto un sovrano del Cinquecento controllasse davvero i propri eserciti? E quanto conta, nella storia, il fatto banale che le truppe non fossero pagate?'},
+      {titolo:'La citta dei santi',
+       corpo:'Nel 1534 un gruppo di anabattisti prende il controllo di Munster e vi instaura un regime che si proclama regno di Dio in terra: beni in comune, poligamia, distruzione dei libri tranne la Bibbia, esecuzione dei dissenzienti. La citta e assediata per oltre un anno da un esercito cattolico e protestante insieme, e alla fine espugnata; i capi sono torturati a morte e i corpi esposti in gabbie sul campanile.\n\nLe gabbie sono ancora li.\n\nDa allora, per due secoli, «anabattista» divenne sinonimo di sovversivo, e furono perseguitati anche i gruppi pacifisti che rifiutavano ogni violenza.',
+       chiedi:'Un episodio estremo definisce l\'immagine di un intero movimento, compresa la parte che gli era opposta. A chi conviene questa operazione? E riuscite a pensare a un caso recente in cui funziona allo stesso modo?'}
+    ],
+    testi:[
+      {fonte:'Lutero, Novantacinque tesi, 1517 — la tesi 86',
+       corpo:'La tesi chiede perche il papa, le cui ricchezze sono oggi piu ingenti di quelle dei piu ricchi fra i ricchi, non costruisca la basilica di San Pietro con il proprio denaro piuttosto che con quello dei poveri fedeli.',
+       glossa:'Non e una tesi teologica: e una domanda di buon senso economico, ed e la piu citata delle novantacinque. Fa capire perche il testo abbia funzionato fuori dall\'universita — chiunque poteva capirla, mentre le tesi sul purgatorio richiedevano un teologo.'},
+      {fonte:'Lutero, Contro le orde assassine e rapinatrici dei contadini, maggio 1525',
+       corpo:'L\'opuscolo invita chiunque possa a colpire, strangolare e pugnalare i rivoltosi, in segreto o in pubblico, sostenendo che nulla puo essere piu velenoso e diabolico di un uomo in rivolta, e che chi cade combattendoli muore da martire.',
+       glossa:'Fu stampato mentre la repressione era gia in corso e contribui alla sua durezza. Va letto in classe accanto alla Liberta del cristiano del 1520: non per condannare l\'autore con parole nostre, ma perche il confronto fra i due testi pone da solo la domanda sulla responsabilita di chi parla.'},
+      {fonte:'Pace di Augusta, 25 settembre 1555',
+       corpo:'L\'accordo riconosce accanto alla confessione cattolica quella luterana, stabilisce che a ciascun principe spetti determinare la religione del proprio territorio, e concede ai sudditi di fede diversa la facolta di vendere i beni ed emigrare senza subire danno.',
+       glossa:'La formula «cuius regio, eius religio» non compare nel testo: fu coniata da un giurista alla fine del secolo. Il principio pero e quello. Da usare per mostrare che le prime forme di tolleranza in Europa furono accordi fra poteri per evitare la guerra, non riconoscimenti di diritti individuali.'}
+    ],
+    compito:'Mezza pagina. Pensate a un gruppo o a un\'iniziativa che per esistere ha avuto bisogno dell\'appoggio di qualcuno piu forte — puo essere storico o attuale, anche piccolo. Descrivete che cosa ha ottenuto grazie a quell\'appoggio e che cosa ha dovuto smettere di dire o di fare per ottenerlo. Poi rispondete: quel prezzo era prevedibile all\'inizio?',
+    fonti:[
+      'Lutero, Novantacinque tesi (1517); Alla nobiltà cristiana della nazione tedesca e La libertà del cristiano (1520)',
+      'I Dodici articoli dei contadini svevi (1525); Lutero, Contro le orde assassine dei contadini (1525)',
+      'Dieta di Worms, editto del 1521; Pace di Augusta (1555)',
+      'H. Schilling, Martin Lutero. Ribelle in un\'epoca di cambiamenti radicali',
+      'A. Prosperi, Lutero. Gli anni della fede e della libertà; L. Febvre, Martin Lutero',
+      'P. Blickle, La rivoluzione dell\'uomo comune — sulla guerra dei contadini'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',
