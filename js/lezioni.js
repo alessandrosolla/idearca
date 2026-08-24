@@ -5368,6 +5368,226 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Filosofia medievale · 1 — La filosofia nel Medioevo': {
+  mappa: {
+    n:'La filosofia nel Medioevo', d:'mille anni di pensiero dentro un libro che non si puo contraddire',
+    f:[
+      {r:'nasce da', n:'Una situazione nuova', d:'per la prima volta si filosofa avendo gia le risposte',
+       f:[
+         {r:'esiste una', n:'Rivelazione', d:'un testo ritenuto vero perche viene da Dio, non perche e stato dimostrato'},
+         {r:'quindi il compito non e', n:'Cercare la verita', d:'ma capire una verita gia consegnata, e mostrarne la coerenza'},
+         {r:'si apre il problema di', n:'Fede e ragione', d:'due strade verso lo stesso vero: e se portassero in luoghi diversi?',
+          f:[{r:'con la formula', n:'Credo ut intelligam', d:'credo per capire: la fede viene prima e la ragione la illumina'},
+             {piu:true, r:'e la domanda inevitabile', n:'A che serve dimostrare cio che gia si crede', d:'e la risposta cambia tutto il Medioevo'}]},
+         {r:'e convivono due eredita', n:'Atene e Gerusalemme', d:'la ragione greca e la Scrittura ebraica: mai del tutto conciliate'}
+       ]},
+
+      {r:'dipende da', n:'Condizioni materiali', d:'si pensa con i libri che si hanno, e se ne hanno pochissimi',
+       f:[
+         {r:'i testi si conservano nei', n:'Monasteri', d:'copiati a mano, uno per volta, da monaci che spesso non li capiscono'},
+         {r:'del greco resta', n:'Quasi nulla', d:'per secoli in Occidente si legge solo cio che qualcuno ha tradotto in latino'},
+         {r:'il ponte e', n:'Boezio', d:'traduce parte della logica aristotelica e la trasmette a tutto l\'Occidente',
+          f:[{piu:true, r:'e scrive in carcere', n:'La consolazione della filosofia', d:'il libro piu letto del Medioevo dopo la Bibbia'}]},
+         {r:'si insegna nelle', n:'Scuole cattedrali', d:'poi, dal Duecento, nelle universita: e un cambiamento di scala'},
+         {piu:true, r:'e si legge', n:'Ad alta voce', d:'la lettura silenziosa si diffonde tardi: il testo si ascolta prima di discuterlo'},
+         {r:'con un programma fisso', n:'Le arti liberali', d:'grammatica, retorica e logica, poi le quattro discipline matematiche'}
+       ]},
+
+      {r:'si organizza come', n:'Scolastica', d:'non una dottrina, ma un metodo di lavoro',
+       f:[
+         {r:'parte dalla', n:'Quaestio', d:'ogni problema viene formulato come domanda a cui si puo rispondere si o no'},
+         {r:'si sviluppa nella', n:'Disputatio', d:'esercizio pubblico: uno sostiene, uno attacca, il maestro determina'},
+         {r:'e ha una forma rigida', n:'La struttura dell\'articolo', d:'e la parte che sorprende chi la vede per la prima volta',
+          f:[{r:'si comincia con', n:'Le obiezioni contrarie', d:'gli argomenti contro la propria tesi, esposti nella forma piu forte'},
+             {r:'poi il', n:'Sed contra', d:'un\'autorita in senso opposto, che fa da contrappeso'},
+             {r:'poi il', n:'Respondeo', d:'la posizione del maestro, argomentata'},
+             {r:'e infine', n:'La risposta a ciascuna obiezione', d:'nessuna puo essere lasciata cadere senza replica'}]},
+         {r:'si insegna con il', n:'Commento al testo', d:'non si scrive un libro proprio: si commenta riga per riga un\'autorita'},
+         {piu:true, r:'e si prende nota con', n:'Le reportationes', d:'appunti degli studenti: molte opere che leggiamo sono verbali di lezione'},
+         {r:'la forma estrema e', n:'La quodlibetale', d:'due volte l\'anno chiunque puo chiedere qualunque cosa, e il maestro risponde li'}
+       ]},
+
+      {r:'ha un problema fondativo', n:'Gli universali', d:'la disputa piu lunga del Medioevo, e non e un gioco di parole',
+       f:[
+         {r:'nasce da una domanda di', n:'Porfirio', d:'i generi e le specie esistono nella realta o solo nel pensiero?'},
+         {r:'i realisti dicono che', n:'Gli universali esistono', d:'l\'umanita e una cosa reale, di cui i singoli uomini partecipano'},
+         {r:'i nominalisti che', n:'Sono solo nomi', d:'esistono Pietro e Paolo; «uomo» e un suono che usiamo per comodita'},
+         {r:'Abelardo propone che', n:'Siano concetti', d:'non cose e non flatus vocis: significati costruiti dalla mente sulla somiglianza'},
+         {r:'e la posta in gioco e enorme perche riguarda', n:'La Chiesa, il peccato, la scienza', d:'se le specie non esistono, che cos\'e il corpo mistico? e di che cosa parla la fisica?',
+          f:[{piu:true, r:'ed e la stessa domanda di oggi su', n:'Le categorie sociali', d:'classi, popoli, generi: sono cose reali o etichette utili?'}]}
+       ]},
+
+      {r:'si misura con', n:'Le prove dell\'esistenza di Dio', d:'il banco di prova di che cosa la ragione possa fare da sola',
+       f:[
+         {r:'Anselmo propone', n:'L\'argomento ontologico', d:'Dio e cio di cui non si puo pensare il maggiore; dunque non puo non esistere'},
+         {r:'obietta subito', n:'Gaunilone', d:'con lo stesso ragionamento esisterebbe l\'isola perfetta: e non esiste',
+          f:[{r:'e Anselmo replica che', n:'Vale solo per Dio', d:'perche solo di Dio l\'esistenza appartiene alla definizione'},
+             {piu:true, r:'e il dibattito arriva fino a', n:'Kant e oltre', d:'l\'esistenza non e una proprieta: e forse la confutazione decisiva'}]},
+         {r:'altri preferiscono', n:'Le vie a posteriori', d:'partire dal mondo — movimento, cause, ordine — invece che dal concetto'},
+         {r:'e il vero risultato e', n:'Un allenamento della ragione', d:'anche chi non e convinto impara a distinguere un argomento valido da uno persuasivo'}
+       ]},
+
+      {r:'e trasformata da', n:'Il ritorno di Aristotele', d:'nel Duecento arriva in Occidente un pensatore che nessuno aveva letto per intero',
+       f:[
+         {r:'attraverso', n:'Le traduzioni di Toledo', d:'dall\'arabo al latino, spesso passando per l\'ebraico: tre lingue e tre culture'},
+         {r:'commentato dai', n:'Filosofi arabi', d:'Avicenna e soprattutto Averroe, che in Occidente si chiama semplicemente «il Commentatore»'},
+         {r:'e porta tesi', n:'Incompatibili con la fede', d:'eternita del mondo, necessita degli eventi, un solo intelletto per tutti gli uomini'},
+         {r:'la reazione sono i', n:'Divieti di Parigi', d:'1210 e 1215: proibito insegnare la fisica aristotelica; in cinquant\'anni diventa il programma'},
+         {r:'e nasce l\'', n:'Averroismo latino', d:'maestri che espongono Aristotele fino in fondo, anche dove contraddice la fede',
+          f:[{r:'accusati di sostenere', n:'La doppia verita', d:'vero in filosofia e falso in teologia: accusa piu che tesi, nessuno la sostenne cosi'},
+             {piu:true, r:'con', n:'Sigieri di Brabante', d:'condannato, e collocato da Dante in paradiso accanto a Tommaso'}]}
+       ]},
+
+      {r:'si scontra con', n:'La censura', d:'il perimetro entro cui il metodo puo funzionare',
+       f:[
+         {r:'Abelardo viene', n:'Condannato due volte', d:'a Soissons nel 1121 e a Sens nel 1140, per iniziativa di Bernardo di Chiaravalle'},
+         {r:'nel 1277 il vescovo di Parigi', n:'Condanna 219 proposizioni', d:'in blocco, senza indicare chi le sostenga',
+          f:[{r:'e fra queste ce ne sono', n:'Alcune di Tommaso', d:'morto tre anni prima, e canonizzato cinquant\'anni dopo'},
+             {r:'ma l\'effetto e imprevisto', n:'Si apre lo spazio del possibile', d:'per non limitare Dio si ammette che possano esistere vuoto, altri mondi, altri moti'},
+             {piu:true, r:'e alcuni storici vi hanno visto', n:'Una premessa della scienza moderna', d:'tesi discussa, ma il nesso con Buridano e Oresme e reale'}]},
+         {r:'perche il metodo vale', n:'Dentro la disputa, non sul perimetro', d:'si puo argomentare tutto, purche la conclusione sia gia nota'}
+       ]},
+
+      {r:'lascia in eredita', n:'Strumenti che usiamo ancora', d:'piu il metodo che le dottrine',
+       f:[
+         {r:'l\'', n:'Universita', d:'corporazione autonoma di maestri e studenti: e un\'invenzione medievale, non antica'},
+         {r:'l\'obbligo di', n:'Esporre l\'obiezione piu forte', d:'prima di rispondere, e nella forma migliore possibile'},
+         {r:'un', n:'Lessico tecnico', d:'sostanza, essenza, esistenza, intenzione, formale, virtuale: parole nate li'},
+         {r:'e la regola del', n:'Rasoio di Occam', d:'non moltiplicare gli enti senza necessita: un criterio di economia ancora in uso'},
+         {r:'e la lenta', n:'Separazione dei campi', d:'distinguere cio che si dimostra da cio che si crede: e la condizione della scienza',
+          f:[{r:'che porta a', n:'Occam e al Trecento', d:'dove teologia e filosofia si dichiarano metodi diversi e prendono strade separate'}]}
+       ]}
+    ],
+    incroci:[
+      {da:'Quasi nulla', a:'Le traduzioni di Toledo', r:'e la ragione per cui contano tanto',
+       perche:'Per secoli l\'Occidente conosce Platone da un dialogo e mezzo e Aristotele da due operette logiche. Il Duecento cambia perche arrivano i testi, non perche arrivano le idee: la storia del pensiero dipende in modo imbarazzante da quali libri qualcuno si e preso la briga di tradurre.'},
+      {da:'Le obiezioni contrarie', a:'Esporre l\'obiezione piu forte', r:'sono l\'origine dell\'obbligo di',
+       perche:'La struttura dell\'articolo scolastico impone di aprire con gli argomenti contro la propria tesi, e di renderli forti: un\'obiezione debole rende debole anche la risposta. È la regola di discussione piu utile mai codificata, ed e nata come esercizio scolastico obbligatorio.'},
+      {da:'Sono solo nomi', a:'Le categorie sociali', r:'e la stessa domanda che si pone oggi sulle',
+       perche:'Chiedersi se «uomo» sia una cosa reale o un nome comodo sembra un gioco. Ma la stessa domanda ritorna ogni volta che si discute se una classe, un popolo o un gruppo esistano davvero o siano etichette: chi risponde in un modo o nell\'altro trae conseguenze politiche molto diverse.'},
+      {da:'A che serve dimostrare cio che gia si crede', a:'Un allenamento della ragione', r:'trova risposta in',
+       perche:'Le prove dell\'esistenza di Dio non convertono nessuno e non nascono per quello. Servono a mostrare che la fede non e contro la ragione e, di fatto, producono un addestramento logico: e in quelle dispute che l\'Occidente impara a distinguere un argomento valido da uno solo persuasivo.'},
+      {da:'Incompatibili con la fede', a:'Condanna 219 proposizioni', r:'sono cio che provoca la',
+       perche:'Finche Aristotele era due manuali di logica non dava problemi; quando arriva tutto, con l\'eternita del mondo e la necessita degli eventi, diventa una bomba. La censura del 1277 e la misura di quanto quel corpus fosse difficile da assorbire — non un capriccio del vescovo.'},
+      {da:'Si apre lo spazio del possibile', a:'Una premessa della scienza moderna', r:'e la ragione per cui si e parlato di',
+       perche:'Per affermare che Dio puo fare qualunque cosa, i teologi devono negare che l\'universo debba per forza essere quello di Aristotele: dunque il vuoto e pensabile, altri mondi sono pensabili, il moto della Terra e pensabile. Una censura teologica finisce per allargare il campo delle ipotesi immaginabili.'},
+      {da:'Dentro la disputa, non sul perimetro', a:'Condannato due volte', r:'e cio che spiega perche Abelardo sia',
+       perche:'Abelardo non viene colpito per aver argomentato male ma per aver applicato il metodo a cio che il metodo non doveva toccare. La liberta scolastica e reale e ha un confine preciso: tutto si puo discutere, purche la conclusione sia quella attesa.'},
+      {da:'Siano concetti', a:'Occam e al Trecento', r:'prepara la strada di',
+       perche:'La soluzione di Abelardo — gli universali sono significati costruiti dalla mente — toglie realta alle essenze senza ridurle a suoni. Da qui parte la linea che arriva a Occam, e con Occam la teologia smette di pretendere di essere dimostrativa: due secoli dopo, e la separazione dei campi.'},
+      {da:'La quodlibetale', a:'Universita', r:'e l\'istituzione piu spericolata dell\'',
+       perche:'Due volte l\'anno il maestro si esponeva a qualunque domanda da chiunque, senza preparazione, in pubblico. Nessuna istituzione moderna espone cosi i propri docenti. È il segno che l\'universita medievale considerava la capacita di rispondere a freddo il vero titolo del sapere.'},
+      {da:'Boezio', a:'Gli universali', r:'e chi consegna al Medioevo il problema de',
+       perche:'La domanda di Porfirio arriva all\'Occidente dentro una traduzione di Boezio, che la lascia aperta. Sette secoli di dispute nascono da una questione posta di sfuggita in un\'introduzione — e questo dice quanto conti, nella storia delle idee, quale testo capita fra le mani di chi.'},
+      {da:'Vale solo per Dio', a:'Kant e oltre', r:'e la mossa che tiene in piedi l\'argomento fino a',
+       perche:'Anselmo risponde a Gaunilone che l\'isola perfetta non ha l\'esistenza nella propria definizione, mentre Dio si. La replica regge per settecento anni, finche Kant non sposta il colpo: l\'esistenza non e una proprieta che si aggiunge a un concetto. Le confutazioni migliori non negano la conclusione, cambiano il terreno.'},
+      {da:'Credo ut intelligam', a:'Separazione dei campi', r:'viene alla fine rovesciato dalla',
+       perche:'Si parte dalla fede che cerca comprensione, con la ragione al servizio di una verita gia data. Alla fine del Medioevo i due campi si dichiarano metodi diversi con oggetti diversi. È il rovesciamento piu importante di mille anni, e nessuno lo ha deciso: emerge dalle difficolta accumulate.'},
+      {da:'Filosofi arabi', a:'Atene e Gerusalemme', r:'aggiungono una terza voce ad',
+       perche:'Aristotele torna in Occidente attraverso Avicenna e Averroe, cioe letto e ripensato per due secoli dentro la cultura islamica, e in parte attraverso traduttori ebrei. La filosofia medievale cristiana e figlia di un lavoro fatto altrove: la formula «Atene e Gerusalemme» dimentica la terza citta.'}
+    ]
+  },
+  provocazione: {
+    titolo:'L\'obiezione piu forte',
+    durata:'55 minuti',
+    domandaMadre:'Sapete dire la cosa piu forte contro quello che pensate?',
+    perche:'Il metodo scolastico impone di aprire ogni questione con gli argomenti contrari alla propria tesi, esposti nella forma piu potente possibile: chi vuole dimostrare che Dio esiste comincia scrivendo la migliore obiezione contro l\'esistenza di Dio. È la regola di discussione piu utile mai codificata, e la classe la sperimenta di persona — scoprendo che quasi nessuno sa formulare un\'obiezione seria alla propria posizione. Il colpo di scena e che lo stesso mondo che ha inventato questo metodo condannava le conclusioni sbagliate, e che proprio una di quelle condanne, quella del 1277, ha finito per allargare il campo del pensabile fino alla fisica moderna.',
+    occorrente:'Un foglio a testa per l\'esercizio dei minuti 8-17. Serve davvero: la lezione senza l\'esercizio scritto non funziona.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'Nel Medioevo, un testo di filosofia\nera costruito sempre allo stesso modo.\n\nPrima: le obiezioni\ncontro la tesi che stai per sostenere.\nEsposte nella forma piu forte possibile.\n\nPoi: un\'autorita in senso contrario.\nPoi: la tua risposta.\nInfine: una replica a ciascuna obiezione,\nuna per una, senza saltarne nessuna.\n\nNell\'articolo intitolato\n«Se Dio esista»,\nla prima obiezione scritta\ndal piu grande teologo del Medioevo\nsuona cosi:\n\nse esistesse un bene infinito\nnon ci sarebbe alcun male;\nma nel mondo c\'e il male;\ndunque Dio non esiste.\n\nL\'ha scritta lui.',
+       parlato:'Mostra prima la struttura, poi l\'esempio: l\'effetto e nell\'ordine.\n\nFai notare che quell\'obiezione e ancora oggi la piu seria che si possa muovere contro l\'esistenza di Dio, e che si trova in apertura del testo scritto per dimostrarla. Non in nota, non alla fine: in apertura.\n\nPoi la domanda: perche uno che vuole convincerti comincia dandoti l\'arma migliore contro di se?\n\nRaccogli le risposte senza correggerle. Di solito arrivano due letture: onesta oppure astuzia. Entrambe hanno del vero, e sono le due opzioni dello schieramento.',
+       seDicono:[
+         {loro:'«Lo fa per smontarla meglio dopo.»',
+          tu:'Puo darsi. Ma nota il rischio: se scrivi l\'obiezione forte e poi non riesci a rispondere in modo altrettanto forte, hai fatto un regalo al tuo avversario e lo hai messo per iscritto. Molti lettori atei hanno usato quelle obiezioni per secoli, e sono rimaste li.'},
+         {loro:'«Tanto la risposta ce l\'aveva gia.»',
+          tu:'Vero, e ci torniamo, perche e il punto piu scomodo dell\'ora. Ma intanto tieni distinta una cosa: sapere gia dove vuoi arrivare non ti obbliga a scrivere l\'argomento contrario nella sua versione migliore. Quello e un passo in piu, e nessuno te lo impone.'}
+       ]},
+
+      {minuti:'8–17', et:'L\'esercizio',
+       schermo:'Adesso tocca a voi.\n\nScrivete su un foglio,\nin cima:\n\nuna cosa in cui credete davvero.\nPuo essere politica, morale,\nsportiva, qualunque —\npurche ci teniate.\n\nPoi, sotto,\nscrivete l\'obiezione piu forte\ncontro quella cosa.\n\nNon la piu stupida.\nNon quella che sapete demolire.\n\nLa migliore che esista.\nQuella che vi farebbe piu fatica.\n\nSette minuti.',
+       parlato:'Dai il tempo davvero e non riempirlo parlando: l\'esercizio funziona solo se si annoiano un po\' e devono pensare.\n\nMentre scrivono, gira e leggi qualche foglio senza commentare.\n\nQuando finiscono, non far leggere le tesi: fai leggere solo le obiezioni, a chi vuole. Poi chiedi alla classe, per ciascuna: e davvero la piu forte, o e una versione facile?\n\nQuasi sempre emergono tre cose, e vanno nominate. Alcuni scrivono un\'obiezione debole, cioe un fantoccio. Alcuni scrivono un\'obiezione che in realta e un\'accusa a chi la pensa diversamente. E alcuni scoprono di non conoscere nessun argomento serio contro cio che sostengono da anni.\n\nQuest\'ultima e la scoperta importante, e va detta senza umiliare nessuno: si puo essere convinti di una cosa senza aver mai incontrato la ragione migliore per dubitarne. È normale. È anche il motivo per cui certe convinzioni non reggono al primo urto.',
+       opzioni:['ho scritto un\'obiezione che mi mette davvero in difficolta', 'me ne sono accorto: la mia era una versione facile'],
+       seDicono:[
+         {loro:'«Se conosco l\'obiezione forte, rischio di cambiare idea.»',
+          tu:'Si, e questo e esattamente il punto. Ma chiediti: preferisci cambiare idea qui, con un foglio in mano, o scoprire fra dieci anni che la tua posizione non reggeva? Chi conosce l\'obiezione forte e l\'unico che puo tenere la propria posizione per una ragione e non per abitudine.'},
+         {loro:'«Alcune cose non hanno obiezioni serie.»',
+          tu:'Poche, e vale la pena verificarlo invece di deciderlo. Prova cosi: cerca qualcuno intelligente che la pensa diversamente e chiediti perche. Se la risposta e che e stupido o in malafede, non hai ancora cercato.'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'Perche il Medioevo\nsi era dato questa regola?\n\nPerche aveva un problema pratico.\n\nLa verita e una:\nla Scrittura, i Padri, i concili.\nMa le autorita\nsi contraddicono fra loro.\n\nAgostino dice una cosa,\nGirolamo il contrario.\nDue concili non concordano.\n\nNon puoi buttarne via nessuna:\nsono tutte autorevoli.\n\nDevi trovare un modo\ndi tenerle insieme.\n\nE il modo\ne mettere le contraddizioni\nper iscritto,\nuna accanto all\'altra,\ne lavorarci sopra.',
+       parlato:'Fai capire che la regola non nasce da nobilta d\'animo ma da una necessita tecnica. È piu istruttivo cosi, e piu vero.\n\nPoi racconta il libro che porta questo metodo all\'estremo. Intorno al 1120 Abelardo scrive un\'opera intitolata «Si e no»: centocinquantotto questioni, e per ciascuna raccoglie i testi delle autorita che dicono di si e quelli che dicono di no. Affiancati.\n\nE non da\' la soluzione. Il libro finisce cosi.\n\nLascia che reagiscano, poi da\' il prologo: dice che dubitando si arriva a cercare, e cercando si percepisce il vero. Non e scetticismo — e un programma di lavoro.\n\nInfine descrivi la disputatio come funzionava all\'universita: uno sostiene, uno attacca, il maestro determina. E due volte l\'anno la quodlibetale, dove chiunque poteva alzarsi e chiedere qualunque cosa, e il maestro doveva rispondere sul momento, in pubblico.\n\nDomanda per la classe: quale professore, oggi, accetterebbe una cosa del genere?',
+       seDicono:[
+         {loro:'«Se le autorita si contraddicono, forse sbagliano.»',
+          tu:'È la conclusione che noi troviamo ovvia e che a loro era vietata. Ma guarda cosa producono lavorando dentro il vincolo: siccome non possono scartare nessun testo, devono distinguere i sensi delle parole, i contesti, le intenzioni. Il vincolo li costringe a inventare tecniche di interpretazione che usiamo ancora.'},
+         {loro:'«Allora era tutto finto: la conclusione era decisa.»',
+          tu:'Su alcune questioni si, e fra dieci minuti vediamo che cosa succedeva quando qualcuno arrivava a una conclusione non prevista. Ma su moltissime altre non era decisa affatto: se lo era, non si spiegano secoli di dispute vere fra scuole rivali.'}
+       ]},
+
+      {minuti:'28–38', et:'Il testo',
+       schermo:'Dal prologo di Abelardo\nal suo libro delle contraddizioni,\nintorno al 1120:\n\n«Il dubitare ci porta a ricercare,\ne ricercando\npercepiamo il vero.»\n\nE poco prima:\n\nnon si legge con profitto\nse non si mettono in discussione\nanche le parole\ndi chi ha piu autorita di noi.\n\nAbelardo fu condannato\ndue volte,\na trent\'anni di distanza.\n\nIl suo metodo\ndiventò il metodo\ndi tutte le universita d\'Europa.',
+       testo:{fonte:'Pietro Abelardo, prologo del Sic et non, intorno al 1120',
+              glossa:'La frase e piu radicale di quanto sembri: colloca il dubbio all\'inizio del percorso conoscitivo, non come malattia da curare. Cinque secoli prima di Cartesio, e in un contesto in cui la verita era considerata gia consegnata. Il fatto che l\'autore sia stato condannato e che il suo metodo sia stato adottato ovunque va tenuto insieme: si prende la tecnica e si sorveglia l\'uomo.'},
+       parlato:'Leggi le due frasi e poi fai notare la data: 1120. Cartesio arrivera nel 1637 con un\'idea di dubbio molto piu radicale, ma l\'idea che il dubbio sia l\'inizio del sapere e gia scritta qui.\n\nPoi la domanda seria: se il metodo era questo, perche Abelardo fu condannato?\n\nLascia le ipotesi, poi da\' la risposta storica: perche applico il metodo alla Trinita, cioe la dove la conclusione non era negoziabile. Bernardo di Chiaravalle non lo accusa di ragionare male: lo accusa di ragionare li.\n\nÈ la distinzione da portarsi via: il metodo valeva dentro la disputa, non sul perimetro. Si puo argomentare tutto, purche la conclusione sia gia nota.\n\nE poi la domanda che li riguarda: conoscete discussioni contemporanee che funzionano cosi? Discussioni molto vivaci, in cui pero certe conclusioni non sono ammesse?',
+       seDicono:[
+         {loro:'«Allora non era vera liberta di pensiero.»',
+          tu:'No, e non lo pretendeva. Ma attento a liquidarla: dentro quel perimetro si costruirono strumenti logici che noi usiamo per pensare fuori da ogni perimetro. Un metodo puo essere piu libero di chi lo ha inventato.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'Parigi, 7 marzo 1277.\n\nIl vescovo condanna in blocco\nduecentodiciannove proposizioni\ninsegnate nella sua universita.\n\nNon dice chi le sostiene.\n\nFra queste ce ne sono alcune\ndi Tommaso d\'Aquino,\nmorto tre anni prima\ne proclamato santo\ncinquant\'anni dopo.\n\nÈ una censura, e pesante.\n\nMa guardate\nche cosa i teologi\nfurono costretti a dire\nper condannarla:\n\nche Dio non e vincolato\nalla fisica di Aristotele.\n\nDunque il vuoto e possibile.\nDunque altri mondi sono possibili.\nDunque anche che la Terra si muova\ne possibile.\n\nNon vero: possibile.\nE tanto basta per cominciare a pensarci.',
+       parlato:'Costruisci il rovesciamento lentamente. Prima la censura, con il dettaglio che colpisce sempre: fra i condannati c\'e un futuro santo.\n\nPoi il meccanismo, che va spiegato bene perche e sottile. Le proposizioni condannate dicevano, in sostanza, che certe cose sono impossibili perche contrarie alla natura secondo Aristotele. Per i teologi questo era inaccettabile: significava mettere un limite alla potenza di Dio. Quindi dovettero affermare il contrario — che Dio potrebbe fare un vuoto, altri mondi, muovere la Terra.\n\nRisultato: per difendere l\'onnipotenza divina si allarga il catalogo di cio che e pensabile. E nel secolo successivo Buridano e Oresme, a Parigi, discutono seriamente del moto della Terra e dell\'inerzia.\n\nSii onesto sul punto storiografico: alcuni storici hanno fatto del 1277 la data di nascita della scienza moderna, ed e una tesi discussa e probabilmente eccessiva. Il nesso con la fisica parigina del Trecento, pero, e documentato.\n\nPoi la formulazione da portare a casa: un atto pensato per chiudere puo aprire, se costringe a dire qualcosa che nessuno aveva mai avuto bisogno di dire.',
+       seDicono:[
+         {loro:'«Quindi la censura fa bene?»',
+          tu:'No, e non e questo. La censura fece esattamente cio per cui era stata fatta: colpi dei maestri, blocco delle carriere, spavento. L\'effetto collaterale non la riscatta. Ci interessa un\'altra cosa: che le conseguenze di un atto vanno oltre le intenzioni di chi lo compie, in bene e in male.'},
+         {loro:'«Ma allora chi aveva ragione, il vescovo o Tommaso?»',
+          tu:'Sulla questione di fondo la Chiesa dette poi ragione a Tommaso, canonizzandolo e adottandolo come maestro. Il che ci dice qualcosa: le condanne durano meno delle opere. Ma nel 1277 chi aveva ragione perse, e chi perse per qualche decennio non ha carriera.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'Riprendete il vostro foglio.\n\nGuardate l\'obiezione che avete scritto\nun\'ora fa.\n\nAdesso la domanda\ncon cui vi mando via:\n\nse doveste sostenere\nla posizione contraria alla vostra\ndavanti a qualcuno,\nsapreste farlo\nmeglio di chi la sostiene davvero?\n\nSe la risposta e no,\nnon avete ancora capito\nla vostra posizione.\n\nAvete solo capito\nche vi piace.',
+       parlato:'Fai riprendere i fogli in mano, fisicamente: cambia il modo in cui ascoltano.\n\nPoi da\' la regola in forma pulita, ed e l\'unica cosa che devono ricordarsi di questa lezione: non hai capito una posizione finche non sai sostenerla meglio di chi la sostiene. Vale per la tua e per quella degli altri.\n\nPoi il confronto con oggi, e falli parlare invece di predicare. Chiedi come funziona una discussione su un social, in un talk show, in un gruppo di amici: si cita la versione migliore dell\'avversario o la peggiore? Si cerca chi la pensa diversamente e ragiona bene, o chi la pensa diversamente e dice sciocchezze?\n\nLa risposta la sanno. Il punto e che sappiano anche che esiste un\'alternativa, ed e stata la norma per quattro secoli in tutte le universita d\'Europa.\n\nChiudi cosi: la filosofia medievale ha prodotto dottrine che quasi nessuno di voi seguira. Ha prodotto anche una regola di discussione che vi conviene tenere per tutta la vita, e che potete cominciare a usare domani.',
+       seDicono:[
+         {loro:'«Nella pratica funziona il contrario: chi urla vince.»',
+          tu:'Nel breve, spesso si. Ma osserva chi ti convince davvero, non chi fa piu rumore: quasi sempre e qualcuno che ha mostrato di conoscere la tua posizione meglio di te. È una tecnica lenta, e l\'unica che sposta qualcosa.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'L\'isola perfetta',
+       corpo:'Anselmo d\'Aosta sostiene che Dio e cio di cui non si puo pensare nulla di maggiore; che una cosa che esiste anche nella realta e maggiore di una che esiste solo nel pensiero; e che dunque quel cio-di-cui-non-si-puo-pensare-il-maggiore deve esistere nella realta, altrimenti non sarebbe tale.\n\nUn monaco di nome Gaunilone risponde subito: con lo stesso ragionamento posso dimostrare che esiste l\'isola piu perfetta di ogni altra. E non esiste.\n\nAnselmo replica che l\'argomento vale solo per Dio, perche solo di Dio l\'esistenza appartiene alla definizione.',
+       chiedi:'La replica di Anselmo vi convince? E prima ancora: che cosa dovremmo dimostrare per stabilire se un ragionamento vale solo in un caso speciale, oppure e sbagliato e basta?'},
+      {titolo:'Se «uomo» sia una cosa',
+       corpo:'La disputa sugli universali si puo riassumere in una domanda: esiste l\'umanita, o esistono solo i singoli esseri umani?\n\nSembra una questione di parole. Ma da come si risponde dipendono conseguenze pesanti. Se le specie sono reali, la scienza puo studiarle e le classificazioni dicono qualcosa del mondo. Se sono solo nomi, ogni classificazione e una nostra decisione pratica.\n\nLo stesso vale fuori dalla scienza. Se una comunita e una cosa reale, ha interessi propri; se e solo un nome per un insieme di individui, ha interessi propri soltanto ciascuno di loro.',
+       chiedi:'Prendete un gruppo a cui appartenete — una classe, una squadra, un popolo. Esiste come cosa, o e solo un nome comodo per molte persone? E che cosa cambia, concretamente, secondo come rispondete?'},
+      {titolo:'Il commentatore',
+       corpo:'Nel Duecento Aristotele arriva in Europa tradotto dall\'arabo, spesso attraverso l\'ebraico, accompagnato dai commenti di Averroe, filosofo di Cordoba. Nelle universita cristiane lo si cita semplicemente come «il Commentatore», senza bisogno di aggiungere il nome.\n\nAlcune tesi che ne derivano — che il mondo sia eterno, che esista un solo intelletto comune a tutti gli uomini — sono incompatibili con la fede cristiana, e vengono condannate. Ma il testo su cui si formano generazioni di maestri cristiani resta quello, in quelle traduzioni.',
+       chiedi:'Che cosa significa che il pensiero cristiano medievale si e formato su libri tradotti e commentati da musulmani ed ebrei? E perche questo passaggio compare cosi poco nel modo in cui di solito si racconta la storia della filosofia?'}
+    ],
+    testi:[
+      {fonte:'Tommaso d\'Aquino, Summa theologiae, I, q. 2, a. 3 — la prima obiezione',
+       corpo:'L\'obiezione sostiene che se uno dei contrari fosse infinito, l\'altro sarebbe totalmente distrutto; che il nome «Dio» significa un bene infinito; e che dunque, se Dio esistesse, non si troverebbe alcun male: ma il male nel mondo si trova, quindi Dio non esiste.',
+       glossa:'È la formulazione classica del problema del male, ed e scritta dall\'autore che sta per sostenere la tesi opposta, in apertura dell\'articolo. Da usare come esempio del metodo prima ancora che del contenuto: mostra concretamente che cosa significa esporre l\'obiezione nella sua forma piu forte.'},
+      {fonte:'Anselmo d\'Aosta, Proslogion, capitolo II (1078)',
+       corpo:'Il ragionamento muove dal fatto che anche chi nega Dio comprende l\'espressione «cio di cui non si puo pensare il maggiore»; ne conclude che tale realta esiste almeno nell\'intelletto, e che non puo esistere solo li, perche allora se ne potrebbe pensare una maggiore.',
+       glossa:'Utile in classe non per la conclusione ma per la struttura: e un argomento che pretende di ricavare l\'esistenza di qualcosa dall\'analisi di un concetto. Chiedere agli studenti dove sta il passaggio sospetto e uno degli esercizi logici migliori che si possano fare al triennio.'},
+      {fonte:'Condanna parigina del 1277 — alcune proposizioni proibite',
+       corpo:'Fra le tesi condannate figurano l\'affermazione che Dio non potrebbe muovere il cielo di moto rettilineo perche resterebbe un vuoto, e quella secondo cui non potrebbero esistere piu mondi.',
+       glossa:'Sono condanne di tesi che negavano possibilita, e per questo il loro effetto e rovesciato: dichiarare che Dio potrebbe fare il vuoto e altri mondi significa ammettere che il vuoto e altri mondi sono concepibili. Da qui la fisica parigina del Trecento comincia a discutere ipotesi che Aristotele escludeva in partenza.'}
+    ],
+    compito:'Una pagina, e va fatta sul serio. Prendete la tesi che avete scritto in classe. Cercate qualcuno — un articolo, un libro, un video di qualcuno competente — che sostenga la posizione contraria in modo serio. Poi scrivete la sua posizione nel modo piu forte che sapete, senza ironia e senza commenti. Solo alla fine, in tre righe, dite se continuate a pensarla come prima e perche.',
+    fonti:[
+      'Abelardo, Sic et non, prologo; Historia calamitatum',
+      'Anselmo, Proslogion II-IV; Gaunilone, Liber pro insipiente',
+      'Tommaso, Summa theologiae, I, q. 2 — per la struttura dell\'articolo',
+      'La condanna parigina del 1277 (testo in R. Hissette, Enquête sur les 219 articles)',
+      'É. Gilson, La filosofia nel Medioevo; A. de Libera, Il pensiero del Medioevo',
+      'M. Grabmann, Storia del metodo scolastico; E. Grant, Le origini medievali della scienza moderna'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',

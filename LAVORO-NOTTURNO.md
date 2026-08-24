@@ -157,7 +157,7 @@ Si va in ordine di programma. Restano:
 - [x] Storia medievale · 9 — L'Italia degli Stati regionali
 - [x] Storia medievale · 10 — La frontiera mediterranea e gli Ottomani
 - [x] Storia medievale · 11 — Il Nuovo Mondo
-- [ ] Filosofia medievale · 1 — La filosofia nel Medioevo
+- [x] Filosofia medievale · 1 — La filosofia nel Medioevo
 - [ ] Filosofia medievale · 2 — Tommaso d'Aquino
 - [ ] Filosofia medievale · 3 — La filosofia nel Trecento
 - [ ] Storia moderna · 1 — Carlo V e la Riforma protestante
