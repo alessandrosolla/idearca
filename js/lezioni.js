@@ -5588,6 +5588,224 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Filosofia medievale · 2 — Tommaso d\'Aquino': {
+  mappa: {
+    n:'Tommaso d\'Aquino', d:'il tentativo piu ambizioso di tenere insieme Aristotele e il Vangelo',
+    f:[
+      {r:'parte da', n:'Un problema di generazione', d:'nel Duecento arriva un filosofo che spiega tutto senza bisogno di Dio',
+       f:[
+         {r:'la sfida e', n:'Aristotele integrale', d:'non piu due manuali di logica: fisica, metafisica, etica, politica'},
+         {r:'che porta tesi', n:'Difficili da assorbire', d:'mondo eterno, catene di cause necessarie, nessuna provvidenza personale'},
+         {r:'davanti a cui si puo', n:'Rifiutarlo, subirlo o riscriverlo', d:'e Tommaso sceglie la terza, che e la piu faticosa'},
+         {r:'lui stesso e', n:'Un domenicano contro la famiglia', d:'i fratelli lo sequestrano per un anno pur di non vederlo frate mendicante',
+          f:[{piu:true, r:'e insegna a', n:'Parigi e Napoli', d:'nell\'universita, non in monastero: e un professore, non un contemplativo'}]}
+       ]},
+
+      {r:'imposta cosi', n:'Fede e ragione', d:'due vie di conoscenza distinte, che non possono contraddirsi',
+       f:[
+         {r:'perche vengono', n:'Dalla stessa fonte', d:'se entrambe vengono da Dio, un conflitto reale e impossibile',
+          f:[{r:'quindi ogni contrasto e', n:'Un errore di uno dei due', d:'o si e ragionato male o si e interpretato male la Scrittura'}]},
+         {r:'alcune verita sono', n:'Preambula fidei', d:'l\'esistenza di Dio, l\'immortalita: dimostrabili con la sola ragione'},
+         {r:'altre sono', n:'Solo credibili', d:'Trinita, incarnazione: non contro la ragione, ma oltre la sua portata'},
+         {r:'e vale il principio', n:'La grazia non distrugge la natura', d:'la perfeziona: quindi lo studio del mondo non e un pericolo per la fede',
+          f:[{piu:true, r:'e ne segue che', n:'La filosofia ha valore proprio', d:'non e solo ancella: ha un campo in cui decide da sola'}]}
+       ]},
+
+      {r:'dimostra con', n:'Le cinque vie', d:'tutte partono dall\'esperienza, nessuna dal concetto',
+       f:[
+         {r:'prima via', n:'Il movimento', d:'tutto cio che si muove e mosso da altro: serve un primo motore'},
+         {r:'seconda via', n:'Le cause efficienti', d:'nessuna cosa e causa di se stessa: serve una causa prima'},
+         {r:'terza via', n:'Il possibile e il necessario', d:'se tutto potesse non essere, un tempo non ci sarebbe stato nulla'},
+         {r:'quarta via', n:'I gradi di perfezione', d:'il piu e il meno presuppongono un massimo'},
+         {r:'quinta via', n:'L\'ordine del mondo', d:'cio che e privo di intelligenza tende a un fine: qualcuno lo dirige'},
+         {r:'e rifiuta', n:'L\'argomento di Anselmo', d:'dal concetto di Dio non si ricava l\'esistenza: noi non conosciamo la sua essenza',
+          f:[{piu:true, r:'perche per lui', n:'Si parte sempre dai sensi', d:'anche per arrivare a cio che i sensi non raggiungono'}]}
+       ]},
+
+      {r:'si fonda su', n:'Una metafisica dell\'essere', d:'la parte piu difficile, e quella che regge tutto il resto',
+       f:[
+         {r:'distingue', n:'Essenza ed esistenza', d:'sapere che cos\'e una cosa non dice che quella cosa ci sia'},
+         {r:'in ogni creatura', n:'Sono realmente distinte', d:'nulla di finito esiste per forza propria: riceve l\'essere'},
+         {r:'in Dio invece', n:'Coincidono', d:'la sua essenza e esistere: e per questo che non puo non essere'},
+         {r:'di Dio si parla per', n:'Analogia', d:'ne allo stesso modo che delle cose, ne in modo del tutto diverso',
+          f:[{r:'perche altrimenti', n:'O lo si riduce o non se ne dice nulla', d:'e la via stretta fra antropomorfismo e silenzio'}]},
+         {piu:true, r:'e tutto cio che e', n:'Partecipa dell\'essere', d:'ripresa platonica dentro un impianto aristotelico: l\'operazione piu spericolata'}
+       ]},
+
+      {r:'descrive l\'uomo con', n:'L\'anima forma del corpo', d:'e qui rompe sia con Platone sia con Averroe',
+       f:[
+         {r:'contro Platone', n:'Non e un pilota nella nave', d:'l\'uomo non e un\'anima che usa un corpo: e un\'unita sostanziale'},
+         {r:'contro Averroe', n:'L\'intelletto e individuale', d:'se ce ne fosse uno solo per tutti, non saresti tu a pensare'},
+         {r:'la conoscenza comincia', n:'Dai sensi', d:'nulla e nell\'intelletto che prima non sia stato nei sensi'},
+         {r:'e procede per', n:'Astrazione', d:'dall\'immagine sensibile la mente ricava la forma intelligibile',
+          f:[{piu:true, r:'per questo serve sempre', n:'Un\'immagine', d:'anche il pensiero piu astratto si appoggia a qualcosa di sensibile'}]},
+         {r:'e le passioni non sono', n:'Da estirpare', d:'sono materia della virtu: vanno ordinate dalla ragione, non spente'},
+         {r:'ne segue che il corpo', n:'Non e una prigione', d:'e la condizione di ogni conoscenza umana: valorizzarlo e coerente, non devoto'}
+       ]},
+
+      {r:'costruisce', n:'Un\'etica della legge', d:'quattro livelli, e il secondo e quello che cambiera la storia',
+       f:[
+         {r:'al vertice', n:'La legge eterna', d:'l\'ordine con cui Dio governa tutte le cose'},
+         {r:'poi', n:'La legge naturale', d:'la partecipazione della creatura razionale alla legge eterna',
+          f:[{r:'il cui primo precetto e', n:'Fare il bene, evitare il male', d:'da cui derivano conservarsi, vivere in societa, conoscere la verita'},
+             {r:'ed e conoscibile', n:'Con la sola ragione', d:'anche da chi non ha fede: e questo la rende un criterio pubblico'}]},
+         {r:'poi', n:'La legge umana', d:'le norme concrete che le comunita si danno, e che dalla naturale derivano'},
+         {r:'e la coscienza', n:'Obbliga anche quando sbaglia', d:'chi agisce contro il proprio giudizio pecca, pure se quel giudizio e errato'},
+         {r:'e la', n:'Legge divina positiva', d:'la rivelazione, che aggiunge cio che la ragione non raggiunge'},
+         {r:'con la tesi decisiva', n:'La legge ingiusta non e legge', d:'se contraddice la legge naturale e corruzione di legge, non legge',
+          f:[{r:'ma con due freni', n:'Scandalo e disordine', d:'va tollerata se disobbedire produce un male maggiore'},
+             {piu:true, r:'e resta comunque', n:'Il dovere di non fare il male', d:'nessuna legge puo obbligare a compiere un\'ingiustizia'}]}
+       ]},
+
+      {r:'e una politica', n:'Della naturalita', d:'lo Stato non nasce dal peccato ma dalla natura umana',
+       f:[
+         {r:'perche l\'uomo e', n:'Animale sociale e politico', d:'ripresa di Aristotele contro chi vedeva il potere solo come rimedio al male'},
+         {r:'il fine dell\'autorita e', n:'Il bene comune', d:'non l\'utile di chi comanda: e il criterio per giudicare ogni governo'},
+         {r:'quindi il tiranno', n:'Perde legittimita', d:'chi governa per se stesso non e piu un\'autorita ma un usurpatore',
+          f:[{piu:true, r:'e la resistenza va', n:'Fatta da un\'autorita pubblica', d:'non dal singolo: Tommaso teme la vendetta privata piu della tirannide'}]},
+         {r:'e la proprieta privata e', n:'Legittima ma non assoluta', d:'nel bisogno grave i beni tornano comuni: chi ha fame che prende non ruba'},
+         {r:'la forma migliore e', n:'Un governo misto', d:'un capo, un gruppo di ottimi, e la partecipazione di tutti alla scelta'}
+       ]},
+
+      {r:'ha una storia postuma', n:'Piu movimentata dell\'opera', d:'condannato, canonizzato, e infine reso ufficiale',
+       f:[
+         {r:'nel 1277 alcune tesi sono', n:'Condannate a Parigi', d:'tre anni dopo la morte, insieme a quelle degli averroisti'},
+         {r:'nel 1323 e', n:'Fatto santo', d:'e quarantasei anni dopo la condanna la censura viene revocata'},
+         {r:'nel 1879', n:'Diventa dottrina ufficiale', d:'con Leone XIII il tomismo e imposto come filosofia della Chiesa',
+          f:[{r:'e ne nasce il', n:'Neotomismo', d:'una scuola potente, e per alcuni una gabbia: Tommaso usato contro il pensiero moderno'}]},
+         {r:'la legge naturale alimenta', n:'Il diritto naturale moderno', d:'da Vitoria a Grozio fino alle dichiarazioni dei diritti'},
+         {piu:true, r:'e nel 1965 la Chiesa', n:'Sposta il fondamento sulla persona', d:'la liberta religiosa non nasce dalla verita ma dalla dignita di chi puo sbagliare'},
+         {r:'e la tesi sulla legge ingiusta', n:'Arriva alla disobbedienza civile', d:'citata nel Novecento da chi rivendica diritti negati per legge'}
+       ]}
+    ],
+    incroci:[
+      {da:'Rifiutarlo, subirlo o riscriverlo', a:'La grazia non distrugge la natura', r:'e risolto dal principio che',
+       perche:'Il problema pratico e cosa fare di un filosofo pagano che spiega il mondo senza Dio. La formula sulla grazia che perfeziona la natura e la mossa che rende possibile assorbirlo: se la natura e buona, studiarla non minaccia la fede. Una frase teologica risolve un problema di politica culturale.'},
+      {da:'Si parte sempre dai sensi', a:'L\'argomento di Anselmo', r:'e la ragione per cui viene rifiutato',
+       perche:'Tommaso non dice che la prova di Anselmo sia falsa: dice che non e disponibile per noi, perche presuppone di conoscere l\'essenza di Dio, e noi conosciamo solo a partire dai sensi. È un rifiuto per ragioni di antropologia della conoscenza, non di teologia — ed e per questo che le cinque vie partono tutte dal mondo.'},
+      {da:'Con la sola ragione', a:'Arriva alla disobbedienza civile', r:'e cio che permette alla legge naturale di arrivare fino alla',
+       perche:'Se il criterio per giudicare una legge fosse la rivelazione, varrebbe solo per i credenti. Poiche e la ragione naturale, e accessibile a chiunque e diventa un criterio pubblico. È esattamente per questo che sette secoli dopo puo essere citato in un tribunale o in una lettera dal carcere.'},
+      {da:'Scandalo e disordine', a:'La legge ingiusta non e legge', r:'sono i freni che impediscono di leggere come rivolta la tesi che',
+       perche:'Tommaso aggiunge subito che una legge ingiusta va tollerata se disobbedire produce un male maggiore. Senza questo freno la tesi autorizzerebbe chiunque a violare qualunque norma sgradita. Con il freno diventa un criterio da applicare, non uno slogan — ed e la parte che chi la cita dimentica piu spesso.'},
+      {da:'L\'intelletto e individuale', a:'Non e un pilota nella nave', r:'e coerente con il rifiuto dell\'idea che l\'anima sia',
+       perche:'Le due polemiche vanno insieme: contro Platone, che separa troppo anima e corpo; contro Averroe, che unifica troppo gli intelletti. In mezzo c\'e la tesi che questo corpo e questa mente siano una cosa sola — cioe che a pensare sia una persona, non l\'umanita in generale.'},
+      {da:'Il bene comune', a:'Perde legittimita', r:'e il criterio per cui il tiranno',
+       perche:'Definire il fine dell\'autorita come bene comune produce automaticamente un metro di giudizio: chi governa per se stesso non e piu autorita. È il modo in cui una definizione apparentemente innocua diventa la base per contestare un potere.'},
+      {da:'Coincidono', a:'Il movimento', r:'e la conclusione a cui puntano prove come quella dal',
+       perche:'Le cinque vie non si fermano a un primo motore generico: servono a identificare un essere in cui essenza ed esistenza coincidono, cioe che non riceve l\'essere da altro. Senza la metafisica dell\'atto d\'essere le prove sarebbero soltanto la ricerca di un primo anello, e l\'obiezione «e chi ha fatto Dio?» sarebbe decisiva.'},
+      {da:'Un\'immagine', a:'Non e una prigione', r:'e la ragione per cui il corpo',
+       perche:'Se ogni pensiero, anche il piu astratto, ha bisogno di appoggiarsi a un\'immagine sensibile, allora il corpo non e un ostacolo alla conoscenza ma il suo strumento. La rivalutazione tomista del corpo non nasce da devozione: nasce da una teoria della conoscenza.'},
+      {da:'Condannate a Parigi', a:'Diventa dottrina ufficiale', r:'sono rovesciate sei secoli dopo, quando',
+       perche:'Le stesse tesi censurate nel 1277 vengono imposte come filosofia della Chiesa nel 1879. Il caso e utile per capire che cosa valga una condanna: non stabilisce la verita, stabilisce chi comanda in quel momento. E chi comanda cambia.'},
+      {da:'Animale sociale e politico', a:'Il diritto naturale moderno', r:'e la premessa da cui parte',
+       perche:'Se la societa politica e naturale e non conseguenza del peccato, allora ha regole proprie conoscibili con la ragione, valide anche fra popoli che non condividono la fede. Da qui Vitoria ricava i diritti degli indios e Grozio un diritto valido anche se Dio non esistesse.'},
+      {da:'Un errore di uno dei due', a:'Solo credibili', r:'obbliga a distinguere cio che e',
+       perche:'Se fede e ragione non possono contraddirsi, ogni conflitto apparente va sciolto: o il ragionamento e sbagliato, o l\'interpretazione del testo lo e. La conseguenza pratica e enorme — obbliga a rileggere la Scrittura quando la ragione mostra qualcosa con certezza, ed e la posizione che Galileo invochera.'},
+      {da:'Fatta da un\'autorita pubblica', a:'Il dovere di non fare il male', r:'lascia comunque al singolo',
+       perche:'Tommaso teme la vendetta privata e affida la resistenza a un\'autorita pubblica; ma non toglie mai al singolo l\'obbligo di rifiutarsi di compiere un\'ingiustizia. Sono due cose diverse: rovesciare un governo e non eseguire un ordine. Confonderle e l\'errore piu frequente quando si cita questa dottrina.'},
+      {da:'Neotomismo', a:'La filosofia ha valore proprio', r:'ha spesso dimenticato che',
+       perche:'Imporre una filosofia come ufficiale contraddice la tesi di quella stessa filosofia, secondo cui la ragione ha un campo in cui decide da sola. È il paradosso di ogni ortodossia costruita su un autore che rivendicava autonomia al pensiero.'}
+    ]
+  },
+  provocazione: {
+    titolo:'La legge ingiusta',
+    durata:'55 minuti',
+    domandaMadre:'Il diritto di disobbedire vale anche per chi ha torto?',
+    perche:'Tommaso d\'Aquino sostiene che una legge in contrasto con la legge naturale non e legge ma corruzione di legge, e non obbliga in coscienza: e la formulazione classica del diritto di disobbedire, citata nel Novecento da chi rivendicava diritti negati per legge. Lo stesso autore, nella stessa opera, sostiene che l\'eretico pertinace possa essere consegnato al potere secolare. La classe deve capire perche le due cose stanno insieme senza contraddizione — per Tommaso il fondamento non e la liberta della coscienza ma la verita — e vedere dove sta l\'altra tesi, presente nello stesso libro, secondo cui si deve seguire la propria coscienza anche quando sbaglia. È da quel secondo filo, non dal primo, che nasce la liberta moderna.',
+    occorrente:'Niente.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'Birmingham, Alabama, aprile 1963.\n\nMartin Luther King e in carcere\nper aver guidato una manifestazione\nsenza permesso.\n\nOtto pastori bianchi\ngli scrivono pubblicamente\nche le sue cause sono giuste\nma che deve aspettare\ne rispettare la legge.\n\nLui risponde su fogli di giornale\ne carta igienica.\n\nSpiega che esistono leggi giuste\ne leggi ingiuste,\nche una legge ingiusta\nnon e affatto una legge,\ne che chi la viola apertamente,\naccettando la pena,\nsta mostrando il massimo rispetto\nper il diritto.\n\nPer sostenerlo, cita un frate domenicano\nmorto nel 1274.',
+       parlato:'Racconta la scena e tieni per ultimo il nome. L\'effetto e nel fatto che nessuno se lo aspetta.\n\nPoi da\' la tesi nella forma originale, che e piu forte di come la ricordiamo: una legge umana che si discosta dalla legge naturale non e legge, ma corruzione di legge.\n\nNon «e una cattiva legge». Non «andrebbe cambiata». Non e legge.\n\nDomanda: se non e legge, che cosa siete tenuti a fare?\n\nRaccogli le risposte. Poi aggiungi il dato che rende la faccenda seria: Tommaso e il teologo piu ortodosso del Medioevo, fatto santo, e dal 1879 filosofo ufficiale della Chiesa cattolica. Non e un ribelle. Ed e la fonte del diritto di disobbedire.',
+       seDicono:[
+         {loro:'«Chi decide quali leggi sono ingiuste?»',
+          tu:'È la domanda giusta e la teniamo per tutta l\'ora. Anticipo solo la risposta di Tommaso, che e meno comoda di quanto sembri: non lo decide chi si sente offeso, e non lo decide la fede. Lo decide la ragione, che e la stessa in tutti — quindi un criterio che devi poter esporre a chi non la pensa come te.'},
+         {loro:'«Allora ognuno viola le leggi che non gli piacciono.»',
+          tu:'È il rischio, e Tommaso lo aveva visto. Fra dieci minuti vediamo i due freni che ci mette, e sono la parte che chi lo cita dimentica quasi sempre.'}
+       ]},
+
+      {minuti:'8–17', et:'Lo schieramento',
+       schermo:'Una legge che ritenete\ngravemente ingiusta:',
+       opzioni:['va comunque rispettata finche non viene cambiata', 'non obbliga, e si puo violare'],
+       parlato:'Fai schierare e conta. Di solito la classe si divide quasi a meta, ed e una delle poche volte in cui succede davvero.\n\nPoi chiedi a entrambi i gruppi di difendersi dall\'obiezione piu ovvia.\n\nAl primo: se una legge ordina di consegnare una persona a chi la uccidera, la rispettate finche non la cambiano?\n\nAl secondo: se ognuno decide da solo quali leggi valgono, che cosa resta della convivenza? E come rispondete a chi ritiene ingiuste, in buona fede, leggi che voi ritenete sacrosante?\n\nQuesta seconda domanda va posta con precisione, perche e il cuore dell\'ora e ci torneremo alla fine. Non chiedere se hanno ragione: chiedi che criterio userebbero per distinguere il proprio caso da quello dell\'altro.',
+       seDicono:[
+         {loro:'«C\'e differenza fra violare una legge per il bene di tutti e per il proprio comodo.»',
+          tu:'Ottimo, e sei arrivato dove voleva arrivare Tommaso: il criterio e il bene comune, non il tuo. Ma tieni presente la difficolta — chi viola una legge per il proprio comodo raramente lo dice, e quasi sempre si convince di agire per il bene di tutti.'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'Come funziona l\'argomento.\n\nQuattro livelli di legge.\n\nLa legge eterna:\nl\'ordine con cui Dio governa il mondo.\n\nLa legge naturale:\nla parte di quell\'ordine\nche una creatura razionale\npuo conoscere con la sola ragione.\nPrimo precetto: fare il bene, evitare il male.\n\nLa legge umana:\nle norme concrete,\nche valgono in quanto derivano\ndalla legge naturale.\n\nSe una norma la contraddice,\nnon ha piu la forza che la fa legge.\n\nDue freni, pero:\n\nva tollerata se disobbedire\nprovoca un disordine peggiore;\n\ne resta sempre e comunque\nil divieto di compiere un\'ingiustizia.',
+       parlato:'Ricostruisci la scala e insisti sul secondo gradino, perche e li che sta tutto.\n\nFai capire perche conta che la legge naturale sia conoscibile con la sola ragione: significa che il criterio non e religioso. Un ateo puo usarlo, un musulmano puo usarlo, un tribunale puo usarlo. Se il metro fosse la rivelazione, varrebbe solo per i credenti, e non sarebbe mai arrivato a Birmingham.\n\nPoi i due freni, che vanno spiegati bene.\n\nIl primo dice che la tesi non e un\'autorizzazione generale: se violare una norma ingiusta produce un male maggiore di quello che evita, va tollerata. È un calcolo, non un principio assoluto.\n\nIl secondo e piu importante e va tenuto separato: nessuna legge puo obbligarti a compiere un\'ingiustizia. Rovesciare un governo e una cosa; rifiutarsi di eseguire un ordine e un\'altra. Tommaso e cauto sulla prima e durissimo sulla seconda.\n\nDomanda: quale delle due cose ha fatto King a Birmingham?',
+       seDicono:[
+         {loro:'«Il primo freno serve a non fare mai niente.»',
+          tu:'Puo essere usato cosi, e nella storia lo e stato spesso: aspetta, non e il momento, faresti danni. È esattamente cio che i pastori bianchi scrivevano a King. La risposta seria non e buttare via il freno, e chiedere chi calcola quel disordine e chi ne paga il prezzo mentre si aspetta.'},
+         {loro:'«Ma la legge naturale chi l\'ha scritta?»',
+          tu:'Nessuno: per Tommaso e cio che la ragione riconosce come bene per un essere come noi — conservarsi, vivere in societa, conoscere. Puoi contestare che esista qualcosa del genere, ed e una posizione seria. Ma nota che anche chi la nega, quando dice che una legge e disumana, sta usando un metro fuori dalla legge.'}
+       ]},
+
+      {minuti:'28–38', et:'Il testo',
+       schermo:'Dalla Summa theologiae,\nsulla legge umana:\n\nogni legge posta dagli uomini\nha forza di legge\nnella misura in cui deriva\ndalla legge naturale;\n\nse in qualcosa\nse ne discosta,\nnon e piu legge,\nma corruzione di legge.\n\nE poco piu avanti,\nsu chi comanda ingiustamente:\n\nleggi di quel genere\nsono violenza\npiuttosto che leggi.',
+       testo:{fonte:'Tommaso d\'Aquino, Summa theologiae, I-II, q. 95, a. 2 e q. 96, a. 4',
+              glossa:'La parola latina e corruptio legis: non «legge cattiva», ma corruzione della legge, cioe qualcosa che ne ha la forma e non la sostanza. E il termine usato poco dopo e violentia. Vale la pena farlo notare in classe: sono le parole di un teologo del Duecento, e sono piu dure di quelle che si userebbero oggi in un discorso pubblico.'},
+       parlato:'Leggi il passo due volte, la seconda fermandoti sulle due parole latine.\n\nPoi torna a King e fai vedere l\'uso preciso che ne fa: non dice che le leggi segregazioniste siano ingiuste in generale, dice che degradano la personalita umana, cioe che colpiscono cio che rende una persona tale. E aggiunge una cosa che vale la pena discutere: chi viola una legge ingiusta deve farlo apertamente e accettare la pena, perche cosi mostra rispetto per il diritto in quanto tale.\n\nDomanda per la classe: perche accettare la pena? Se la legge non e legge, la pena non dovrebbe valere niente.\n\nLa risposta migliore che possono trovare da soli e questa: perche altrimenti sarebbe indistinguibile da chi viola le leggi per convenienza. Accettare la pena e il modo di dimostrare che non stai facendo i tuoi interessi.',
+       seDicono:[
+         {loro:'«Se accetti la pena, la legge ha comunque vinto.»',
+          tu:'Sul momento si, e King resto in carcere. Ma nota che cosa ottiene: rende visibile a tutti che quella legge, per essere applicata, deve mettere in prigione qualcuno che sta chiedendo qualcosa di ovvio. La disobbedienza aperta serve a costringere gli altri a guardare.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'Stesso autore.\nStessa opera.\nPoche centinaia di pagine dopo.\n\nAlla questione se gli eretici\nvadano tollerati,\nTommaso risponde\nche dopo due ammonizioni\nchi persiste puo essere\nconsegnato al potere secolare —\ncioe messo a morte.\n\nCome sta insieme\ncon il diritto di disobbedire\na una legge ingiusta?\n\nSta insieme benissimo,\ne questo e il punto.\n\nPer Tommaso il fondamento\nnon e la liberta della coscienza.\n\nÈ la verita.\n\nChi ha ragione puo disobbedire.\nChi ha torto va fermato.',
+       parlato:'Dai il fatto senza attenuarlo e senza indignazione: la classe deve sentire il peso, non il tuo giudizio.\n\nPoi ricostruisci la logica, perche e coerente e va capita prima di essere respinta. Se cio che conta e la verita, allora chi la possiede ha il diritto di resistere alla legge sbagliata, e chi diffonde l\'errore fa un danno che va impedito. Da questa impostazione nasce una formula che avra fortuna fino al Novecento: l\'errore non ha diritti.\n\nAdesso il rovesciamento, che e la parte piu bella. Nello stesso libro, in un\'altra questione, Tommaso sostiene un\'altra cosa: chi agisce contro la propria coscienza pecca — anche se la sua coscienza e in errore. Cioe la coscienza obbliga anche quando sbaglia.\n\nLe due tesi convivono nello stesso autore. La prima fonda l\'intolleranza; la seconda contiene il germe della liberta di coscienza moderna.\n\nE la storia sceglie: nel 1965, con la dichiarazione sulla liberta religiosa, la Chiesa cattolica sposta il fondamento dalla verita alla persona — la persona ha diritti anche quando sbaglia. Sette secoli per far crescere il secondo filo invece del primo.\n\nPoi la domanda dell\'ora: il diritto di disobbedire vale anche per chi ha torto?',
+       seDicono:[
+         {loro:'«Se vale anche per chi ha torto, allora vale per chiunque.»',
+          tu:'Si, ed e esattamente il prezzo della liberta moderna. Fondarla sulla verita e piu solido finche sei tu ad avere ragione; il giorno in cui a decidere che cosa sia vero e qualcun altro, quella fondazione si rivolta contro di te. Fondarla sulla persona e piu debole e non ha questo difetto.'},
+         {loro:'«Allora Tommaso era intollerante.»',
+          tu:'Su questo si, come quasi tutti nel suo tempo, e non serve difenderlo. Quello che conta di piu e che nella stessa opera ci sia anche l\'altro filo, e che sia stato scritto da lui. Gli autori grandi contengono spesso gli argomenti che serviranno a smentirli.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'Riprendiamo la domanda\nrimasta aperta all\'inizio.\n\nChi decide quando una legge\ne ingiusta?\n\nTre risposte possibili:\n\nchi ha la verita —\ne allora chi sbaglia\nnon ha nessun diritto;\n\nchiunque si senta offeso —\ne allora non resta niente in piedi;\n\noppure:\nchiunque sappia esporre\nla propria ragione in pubblico,\ndavanti a chi non la pensa come lui,\ne accettarne le conseguenze.\n\nLa terza e la piu faticosa.\n\nCi abbiamo messo\nsettecento anni\nper arrivarci.',
+       parlato:'Rifai la conta iniziale e commenta.\n\nPoi tira le fila senza semplificare. Tommaso ci lascia due cose in mano, e non sono coerenti fra loro: un criterio potente per giudicare le leggi, e una fondazione — la verita — che rende quel criterio pericoloso in mano a chi comanda. La liberta moderna nasce tenendo il primo e cambiando la seconda.\n\nDa\' loro il criterio pratico, che e l\'unica cosa che devono ricordare: quando pensate che una regola sia ingiusta, provate a esporre la ragione a qualcuno che non e d\'accordo, in termini che possa capire e valutare. Se non ci riuscite, forse quella regola non vi piace e basta. E se ci riuscite, siete tenuti ad accettare che qualcun altro faccia lo stesso contro di voi.\n\nUltima cosa: notate che sia stato un teologo del Duecento a fornire l\'argomento a un pastore nero in una prigione dell\'Alabama. Le idee non appartengono a chi le formula, e non restano dove sono nate. Questo e uno dei pochi motivi per studiare autori vecchi di ottocento anni.',
+       seDicono:[
+         {loro:'«Quindi non si sa mai chi ha ragione.»',
+          tu:'Si puo sapere, e spesso si sa. Quello che non si puo e stabilirlo da soli e poi imporlo perche si e certi. La differenza non e fra chi ha ragione e chi no: e fra chi accetta di doverlo mostrare e chi ritiene di esserne dispensato.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'Le cinque vie, e la loro obiezione classica',
+       corpo:'Tommaso propone cinque dimostrazioni dell\'esistenza di Dio, tutte a partire dall\'esperienza: il movimento, le cause, la contingenza, i gradi di perfezione, l\'ordine finalistico.\n\nL\'obiezione che viene in mente a tutti e la stessa: e allora chi ha fatto Dio? Se ogni cosa ha una causa, anche Dio dovrebbe averne una.\n\nLa risposta tomista e che la premessa non e «ogni cosa ha una causa», ma «ogni cosa che riceve l\'essere da altro ha una causa». Dio, per definizione, e cio la cui essenza e esistere.',
+       chiedi:'La risposta vi sembra una soluzione o una scappatoia? E come si distingue una definizione legittima da una costruita apposta per evitare un\'obiezione?'},
+      {titolo:'Il corpo non e una prigione',
+       corpo:'Per Platone l\'anima e nel corpo come un prigioniero o come un pilota nella nave. Per Tommaso l\'anima e forma del corpo: insieme fanno una sola sostanza, e l\'uomo non e l\'anima ma il composto.\n\nLa conseguenza e conoscitiva prima che morale: se ogni pensiero comincia dai sensi e ha bisogno di appoggiarsi a un\'immagine, il corpo non e un ostacolo da superare ma lo strumento con cui conosciamo.\n\nQuesto crea pero un problema serio alla dottrina dell\'immortalita: se l\'anima e forma di questo corpo, che cosa e un\'anima senza il proprio corpo?',
+       chiedi:'Tommaso paga un prezzo teologico per una tesi filosofica piu solida. Vi sembra una scelta coerente? E in generale: quanto si e disposti a complicarsi la vita pur di non dire una cosa che si ritiene falsa?'},
+      {titolo:'Il Filosofo',
+       corpo:'Nelle opere di Tommaso, «il Filosofo» senza altra indicazione significa sempre Aristotele; «il Commentatore» significa Averroe, filosofo musulmano di Cordoba.\n\nAristotele era pagano, non conosceva la creazione, riteneva il mondo eterno e non prevedeva nessuna provvidenza personale. Averroe era musulmano, e alcune sue tesi erano state condannate.\n\nSu questi due autori Tommaso costruisce la sintesi filosofica del cristianesimo occidentale.',
+       chiedi:'Che cosa significa fondare il proprio pensiero su autori che non condividono la propria fede? È un segno di forza o di debolezza di una tradizione? E oggi, da chi accettiamo di imparare cose che ci obbligano a cambiare?'}
+    ],
+    testi:[
+      {fonte:'Tommaso d\'Aquino, Summa theologiae, I-II, q. 19, a. 5 — sulla coscienza erronea',
+       corpo:'La questione chiede se la volonta che si discosta da una ragione errata sia cattiva; e la risposta e che chi agisce contro la propria coscienza, anche quando questa e in errore, pecca.',
+       glossa:'È il passo che va letto accanto a quello sugli eretici, perche mostra che nello stesso autore convivono due impostazioni: la verita come fondamento, e la coscienza che obbliga comunque. La liberta religiosa moderna nasce sviluppando questo secondo filo — e per questo la dichiarazione conciliare del 1965 poté presentarsi come sviluppo e non come rottura.'},
+      {fonte:'Tommaso d\'Aquino, Summa theologiae, I, q. 1, a. 8 — la teologia e le altre scienze',
+       corpo:'Alla domanda se la sacra dottrina debba servirsi di argomenti razionali, la risposta e che essa non prova i propri principi ma li usa per chiarire, e che la ragione naturale deve servirla e non contraddirla, perche la grazia non toglie la natura ma la porta a compimento.',
+       glossa:'La formula finale — la grazia non distrugge la natura ma la perfeziona — e la chiave di tutto il sistema, e la ragione per cui Tommaso poté leggere Aristotele senza doverlo respingere. Da usare per mostrare come una singola tesi teologica renda possibile un intero programma culturale.'},
+      {fonte:'Aristotele nella lettura tomista, Politica I — sull\'uomo animale politico',
+       corpo:'Tommaso riprende la tesi secondo cui l\'uomo e per natura un essere sociale e politico, e ne trae che l\'esistenza dell\'autorita non e conseguenza del peccato ma della natura umana, poiche anche in uno stato di innocenza sarebbe stato necessario che qualcuno dirigesse verso il bene comune.',
+       glossa:'È una rottura netta con la linea agostiniana, per cui il potere e rimedio al peccato. Se lo Stato e naturale, ha regole proprie conoscibili con la ragione e un fine proprio: e da qui che parte la strada verso un\'autonomia della politica, molto prima di Machiavelli e per vie del tutto diverse.'}
+    ],
+    compito:'Mezza pagina. Individuate una regola in vigore — una legge, un regolamento scolastico, una norma sportiva — che ritenete ingiusta. Poi fate tre cose: spiegate perche e ingiusta in termini che convincerebbero qualcuno che non la pensa come voi; dite se violarla produrrebbe un disordine peggiore del male che evita; e infine indicate quale altra regola, che a voi sembra giusta, qualcun altro potrebbe contestare con lo stesso metodo.',
+    fonti:[
+      'Tommaso d\'Aquino, Summa theologiae, I-II, qq. 90-97 (il trattato sulla legge); q. 19, a. 5',
+      'Tommaso d\'Aquino, De regno; Commento alla Politica di Aristotele',
+      'M. L. King, Lettera dal carcere di Birmingham (1963)',
+      'Concilio Vaticano II, Dignitatis humanae (1965)',
+      'É. Gilson, Il tomismo; J.-P. Torrell, Tommaso d\'Aquino. L\'uomo e il teologo',
+      'A. MacIntyre, Giustizia e razionalità — sull\'attualita della legge naturale'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',
