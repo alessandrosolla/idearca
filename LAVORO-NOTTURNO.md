@@ -147,7 +147,7 @@ Si va in ordine di programma. Restano:
 - [x] Filosofia antica · 11 — Il neoplatonismo e Plotino
 - [x] Filosofia antica · 12 — Agostino d'Ippona
 - [x] Storia medievale · 1 — La ripresa dopo l'anno Mille
-- [ ] Storia medievale · 2 — La lotta per le investiture
+- [x] Storia medievale · 2 — La lotta per le investiture
 - [ ] Storia medievale · 3 — Le crociate
 - [ ] Storia medievale · 4 — L'Italia comunale e l'Impero
 - [ ] Storia medievale · 5 — Papato, Impero e monarchie nazionali

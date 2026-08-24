@@ -3164,6 +3164,227 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Storia medievale · 2 — La lotta per le investiture': {
+  mappa: {
+    n:'La lotta per le investiture', d:'1075-1122: chi comanda sui vescovi comanda sull\'Europa',
+    f:[
+      {r:'parte da', n:'Una Chiesa dentro il potere laico', d:'la situazione che sembrava normale a tutti',
+       f:[
+         {r:'con la', n:'Simonia', d:'cariche ecclesiastiche comprate e vendute come beni',
+          f:[{piu:true, r:'dal nome di', n:'Simon Mago', d:'che negli Atti degli apostoli offre denaro per avere lo Spirito'}]},
+         {r:'con il', n:'Nicolaismo', d:'preti sposati o conviventi: e i figli ereditano la parrocchia'},
+         {r:'con le', n:'Chiese private', d:'chi costruisce una chiesa sulla propria terra ne nomina il prete'},
+         {r:'e con', n:'Il papato in mano alle famiglie romane', d:'Crescenzi, Tuscolani: il soglio come proprieta di clan',
+          f:[{piu:true, r:'tocca il fondo con', n:'Benedetto IX', d:'papa tre volte, e una volta vende la carica'}]},
+         {r:'tanto che', n:'L\'imperatore nomina i papi', d:'e a Sutri, nel 1046, Enrico III ne depone tre insieme',
+          f:[{r:'ed e visto come', n:'Un intervento salutare', d:'il riformatore, all\'inizio, e l\'imperatore stesso'}]}
+       ]},
+
+      {r:'incontra', n:'La riforma della Chiesa', d:'un movimento partito dal basso e dai monasteri',
+       f:[
+         {r:'nasce a', n:'Cluny', d:'abbazia fondata nel 910 e dipendente solo dal papa',
+          f:[{r:'perche', n:'Sottratta a ogni signore laico', d:'e il modello: l\'indipendenza produce riforma'}]},
+         {r:'si diffonde con', n:'La Pataria', d:'Milano: popolo e clero minore contro i vescovi simoniaci',
+          f:[{piu:true, r:'il nome', n:'Forse dai rigattieri', d:'un soprannome spregiativo, poi rivendicato'}]},
+         {r:'arriva al papato con', n:'Leone IX', d:'1049: viaggia, convoca sinodi, depone vescovi simoniaci'},
+         {r:'e ottiene il', n:'Decretum in nomine Domini', d:'1059: il papa lo eleggono i cardinali, non l\'imperatore e non i romani',
+          f:[{r:'e la mossa', n:'Che rende possibile tutto il resto', d:'senza autonomia dell\'elezione non c\'e conflitto'}]}
+       ]},
+
+      {r:'esplode con', n:'Gregorio VII', d:'Ildebrando di Soana, papa dal 1073',
+       f:[
+         {r:'proclama il', n:'Dictatus papae', d:'1075: ventisette proposizioni, brevissime, senza commento',
+          f:[{r:'fra cui', n:'Solo il papa e universale', d:'e solo lui puo deporre i vescovi'},
+             {r:'fra cui', n:'Puo deporre l\'imperatore', d:'e sciogliere i sudditi dal giuramento di fedelta'},
+             {r:'fra cui', n:'La Chiesa romana non ha mai errato', d:'ne mai errera'},
+             {piu:true, r:'ed e', n:'Un elenco senza destinatario', d:'forse appunti interni, forse un programma: gli storici discutono'}]},
+         {r:'vieta', n:'L\'investitura laica', d:'nessun laico puo consegnare anello e pastorale a un vescovo'},
+         {r:'e cosi tocca', n:'Il nervo dell\'Impero', d:'perche i vescovi tedeschi non sono solo preti'}
+       ]},
+
+      {r:'perche', n:'I vescovi sono l\'amministrazione', d:'e questo spiega perche la lite diventa una guerra',
+       f:[
+         {r:'possiedono', n:'Terre, citta, tribunali', d:'contee intere, con diritti di giustizia e di pedaggio'},
+         {r:'forniscono', n:'Soldati all\'imperatore', d:'una parte decisiva dell\'esercito imperiale'},
+         {r:'e sono', n:'Senza eredi', d:'non trasmettono la carica ai figli: per l\'imperatore sono funzionari ideali',
+          f:[{r:'e la si chiama', n:'Chiesa imperiale', d:'Reichskirche: il sistema con cui l\'Impero si governa',
+              f:[{piu:true, r:'costruito da', n:'Ottone I', d:'un secolo prima, e funziona benissimo'}]}]},
+         {r:'quindi perderli', n:'Vuol dire perdere lo Stato', d:'non e una questione religiosa: e la struttura del potere'}
+       ]},
+
+      {r:'porta allo scontro con', n:'Enrico IV', d:'e la crisi precipita in due anni',
+       f:[
+         {r:'nel gennaio', n:'Dieta di Worms 1076', d:'i vescovi tedeschi dichiarano Gregorio decaduto',
+          f:[{r:'con la lettera', n:'«Scendi, scendi»', d:'«Enrico re non per usurpazione ma per pia ordinazione di Dio, a Ildebrando, non piu papa ma falso monaco»'}]},
+         {r:'in febbraio', n:'La scomunica', d:'e Gregorio scioglie i sudditi dal giuramento di fedelta'},
+         {r:'e in ottobre', n:'I principi tedeschi danno l\'ultimatum', d:'Tribur: se non e assolto entro un anno, viene deposto',
+          f:[{r:'perche', n:'La scomunica e un\'occasione', d:'i grandi feudatari volevano da tempo un re piu debole'}]},
+         {r:'nel gennaio', n:'Canossa 1077', d:'tre giorni davanti al castello di Matilde, in veste di penitente'}
+       ]},
+
+      {r:'ma Canossa', n:'Non e quello che sembra', d:'e la scena piu fraintesa del Medioevo',
+       f:[
+         {r:'perche Gregorio', n:'Stava andando in Germania', d:'a presiedere l\'assemblea che avrebbe deposto Enrico'},
+         {r:'e Enrico', n:'Gli taglia la strada', d:'attraversa le Alpi in pieno inverno con moglie e figlio'},
+         {r:'presentandosi come', n:'Penitente', d:'e un sacerdote non puo rifiutare l\'assoluzione a chi si pente',
+          f:[{r:'quindi', n:'Il papa e costretto ad assolvere', d:'e lo scrive lui stesso, con evidente fastidio'},
+             {piu:true, r:'lo riferisce', n:'Nella lettera ai principi tedeschi', d:'dove si giustifica per aver ceduto'}]},
+         {r:'e assolto', n:'Enrico recupera la legittimita', d:'i principi perdono il pretesto e lui torna a combattere'},
+         {r:'infatti', n:'La guerra riprende subito', d:'e va tutta a favore di Enrico',
+          f:[{r:'nel 1080', n:'Nomina l\'antipapa Clemente III'},
+             {r:'nel 1084', n:'Si fa incoronare a Roma', d:'da quell\'antipapa'},
+             {r:'nel 1085', n:'Gregorio muore in esilio', d:'a Salerno, protetto dai Normanni che avevano saccheggiato Roma',
+              f:[{piu:true, r:'le sue ultime parole', n:'«Ho amato la giustizia e odiato l\'iniquita»', d:'«per questo muoio in esilio»'}]}]}
+       ]},
+
+      {r:'si chiude con', n:'Il concordato di Worms', d:'1122: cinquant\'anni dopo, e con un compromesso tecnico',
+       f:[
+         {r:'divide il vescovo in due', n:'Investitura spirituale', d:'anello e pastorale: li da la Chiesa'},
+         {r:'e', n:'Investitura temporale', d:'lo scettro, cioe i feudi: li da l\'imperatore'},
+         {r:'con ordini diversi', n:'In Germania e in Italia', d:'in Germania prima lo scettro, in Italia prima anello e pastorale',
+          f:[{piu:true, r:'differenza non da poco', n:'Chi va per primo controlla la scelta', d:'in Germania l\'imperatore resta di fatto decisivo'}]},
+         {r:'e stabilisce', n:'Elezione da parte del clero', d:'ma alla presenza dell\'imperatore, in Germania'}
+       ]},
+
+      {r:'lascia', n:'Che cosa cambia davvero', d:'molto piu di quanto il compromesso lasci pensare',
+       f:[
+         {r:'nasce l\'idea di', n:'Due poteri distinti', d:'nessuno dei due assorbe l\'altro: e una novita europea'},
+         {r:'l\'Impero perde', n:'Il carattere sacro', d:'il re non e piu un unto quasi sacerdote: e un laico fra i laici'},
+         {r:'la Chiesa diventa', n:'Una monarchia', d:'centralizzata, con un diritto proprio e una burocrazia',
+          f:[{r:'e nasce', n:'Il diritto canonico', d:'con il Decretum di Graziano, circa 1140'}]},
+         {r:'in Germania crescono', n:'I principi territoriali', d:'ogni crisi fra papa e imperatore li rende piu forti'},
+         {r:'e la scena resta', n:'Un simbolo riusato', d:'«andare a Canossa» diventa proverbio otto secoli dopo',
+          f:[{r:'grazie a', n:'Bismarck, 1872', d:'«a Canossa non andremo», nel conflitto con la Chiesa cattolica'}]}
+       ]}
+    ],
+    incroci:[
+      {da:'Decretum in nomine Domini', a:'Dictatus papae', r:'e la condizione che rende possibile il',
+       perche:'Finche il papa lo sceglie l\'imperatore, nessun papa puo scrivere che il papa depone l\'imperatore. Il decreto del 1059 sull\'elezione da parte dei cardinali sposta il fondamento: sedici anni dopo, quel fondamento regge il documento piu audace del Medioevo.'},
+      {da:'Senza eredi', a:'L\'investitura laica', r:'spiega perche l\'imperatore non puo rinunciare a',
+       perche:'Un vescovo non trasmette la carica ai figli: alla sua morte tutto torna al sovrano. E il funzionario perfetto in un mondo in cui ogni carica tende a diventare ereditaria — ed e per questo che rinunciare a nominarlo equivale a smontare lo Stato.'},
+      {da:'La scomunica e un\'occasione', a:'I principi territoriali', r:'anticipa la crescita dei',
+       perche:'I grandi feudatari tedeschi non difendono la Chiesa: usano la scomunica per indebolire il re. Ogni scontro fra i due poteri universali lascia piu spazio ai poteri locali, ed e la ragione per cui la Germania non diventera uno Stato unitario.'},
+      {da:'Penitente', a:'Il papa e costretto ad assolvere', r:'e la mossa che produce',
+       perche:'Enrico non si presenta come re sconfitto ma come peccatore pentito, e sceglie il solo terreno su cui Gregorio non ha liberta di manovra: un sacerdote non puo negare l\'assoluzione a chi si pente. La debolezza apparente e la posizione piu forte disponibile.'},
+      {da:'Stava andando in Germania', a:'Gli taglia la strada', r:'e ribaltato da',
+       perche:'Il papa era in viaggio verso l\'assemblea che avrebbe deposto il re. Enrico attraversa le Alpi in inverno per intercettarlo prima: a Canossa non arriva un uomo che si arrende, arriva un uomo che ha fatto una traversata alpina per impedire un processo.'},
+      {da:'Enrico recupera la legittimita', a:'La guerra riprende subito', r:'apre',
+       perche:'Assolto, non e piu scomunicato e i principi perdono il pretesto giuridico per deporlo. Da quel momento la guerra civile tedesca si sposta a suo favore — e in sette anni entrera a Roma con un papa di sua nomina.'},
+      {da:'Investitura spirituale', a:'Due poteri distinti', r:'e la prima formulazione tecnica di',
+       perche:'Dividere il vescovo in due — anello e pastorale da una parte, scettro dall\'altra — sembra un cavillo notarile. E invece e la prima volta che si scrive che una stessa persona ha due qualita separabili, e da li nascera la distinzione fra sfera religiosa e sfera civile.'},
+      {da:'Il carattere sacro', a:'«Scendi, scendi»', r:'comincia a incrinarsi gia con',
+       perche:'Un re che scrive al papa dandogli del falso monaco, e un papa che scioglie i sudditi dal giuramento, si tolgono a vicenda l\'aura. Dopo quello scambio nessuno dei due potra piu presentarsi come intoccabile senza che qualcuno ricordi il 1076.'},
+      {da:'Chiesa imperiale', a:'Vuol dire perdere lo Stato', r:'e il sistema il cui crollo',
+       perche:'La Reichskirche costruita da Ottone I era l\'ossatura amministrativa dell\'Impero. Toccare la nomina dei vescovi non significava discutere di liturgia: significava chiedere all\'imperatore di rinunciare al proprio apparato di governo.'},
+      {da:'Sottratta a ogni signore laico', a:'L\'investitura laica', r:'e il modello che porta a vietare',
+       perche:'Cluny dimostra per due secoli che un\'istituzione religiosa indipendente da ogni potere locale funziona meglio. Il divieto del 1075 non e un\'invenzione improvvisa: e l\'estensione a tutta la Chiesa di un esperimento monastico riuscito.'},
+      {da:'Bismarck, 1872', a:'Canossa 1077', r:'trasforma in proverbio',
+       perche:'La frase «a Canossa non andremo» viene pronunciata al Reichstag durante il Kulturkampf, ottocento anni dopo i fatti. L\'espressione che usiamo per dire umiliazione non nasce nel Medioevo: nasce da un altro conflitto fra Stato e Chiesa che aveva bisogno di un precedente.'},
+      {da:'Il diritto canonico', a:'Una monarchia', r:'e lo strumento con cui la Chiesa diventa',
+       perche:'Una monarchia ha bisogno di leggi proprie, tribunali e archivi. Il Decretum di Graziano, vent\'anni dopo Worms, mette ordine in secoli di norme sparse: da li in poi la Chiesa non e solo un\'autorita morale, e un\'istituzione giuridica che funziona.'}
+    ]
+  },
+  provocazione: {
+    titolo:'Tre giorni nella neve',
+    durata:'55 minuti',
+    domandaMadre:'Chi ha vinto davvero — e come fate a saperlo?',
+    perche:'Canossa e la scena piu conosciuta del Medioevo e viene raccontata al contrario: l\'imperatore in ginocchio nella neve sembra una resa, ed e invece una mossa politica riuscita che salva il trono e prepara sette anni di vittorie. La classe si accorge, con un caso preciso, che le immagini storiche piu forti sono spesso propaganda di chi ha perso — e che per verificarlo bastano tre domande semplici: che cosa succede dopo, chi ha scritto la fonte, e quando e nata l\'espressione che usiamo. L\'ora insegna un metodo, non un aneddoto.',
+    occorrente:'Una cartina dell\'Europa dell\'XI secolo, se c\'e; altrimenti niente.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'Gennaio 1077. Appennino emiliano, castello di Canossa.\n\nFuori dalla porta c\'e un uomo di ventisei anni,\na piedi nudi nella neve, vestito da penitente.\n\nDentro c\'e il papa, che si rifiuta di riceverlo.\n\nL\'uomo fuori resta li tre giorni.\n\nÈ Enrico IV, re di Germania,\nl\'uomo piu potente d\'Europa.\n\nChi ha vinto?',
+       parlato:'Racconta la scena e fermati. Non aggiungere niente: e un\'immagine che si racconta da sola, ed e proprio questo il problema che affronterete.\n\nPoi la domanda, e chiedi la risposta d\'istinto per alzata di mano. Vince il papa quasi all\'unanimita — ed e la risposta che tutti danno da otto secoli.\n\nSegna il numero. Poi di\' una cosa sola, e vai avanti senza spiegarla: fra quaranta minuti rifaremo questa conta.\n\nSe qualcuno conosce gia il seguito e vuole parlare, chiedigli di aspettare: gli darai la parola al quarto tempo.',
+       seDicono:[
+         {loro:'«Ovvio, il papa: l\'imperatore si e umiliato.»',
+          tu:'È quello che si vede. Ma tieni una domanda in tasca per tutta l\'ora: chi ha vinto lo si giudica da come uno sta in quel momento, o da come stanno tutti e due cinque anni dopo?'},
+         {loro:'«Ma perche il papa non lo faceva entrare?»',
+          tu:'Domanda ottima e ci arriviamo. Anticipo solo questo: perche far entrare Enrico gli costava carissimo, e lui lo sapeva benissimo.'}
+       ]},
+
+      {minuti:'8–17', et:'Lo schieramento',
+       schermo:'La posta in gioco non e la fede.\n\nIn Germania i vescovi non sono solo preti:\npossiedono contee, citta, tribunali,\ne forniscono all\'imperatore una parte del suo esercito.\n\nE non hanno figli:\nquando muoiono, tutto torna al sovrano.\n\nSono i funzionari perfetti\nin un mondo dove ogni carica diventa ereditaria.\n\nNel 1075 il papa vieta all\'imperatore di nominarli.',
+       opzioni:['È una questione religiosa', 'È una questione di potere'],
+       parlato:'Prima di far schierare, assicurati che abbiano capito il meccanismo, perche tutta l\'ora dipende da questo: il vescovo tedesco e un funzionario dello Stato che si chiama Reichskirche, costruito da Ottone I un secolo prima. Toglierlo all\'imperatore non significa discutere di liturgia — significa smontargli l\'amministrazione.\n\nPoi fai schierare e conta. Di solito prevale nettamente la seconda, e va bene: ma allora chiedi perche il papa usi armi religiose, e perche funzionino.\n\nÈ il punto in cui capiscono che le due cose non si separano: la scomunica e efficace perche i principi tedeschi credono davvero — e insieme perche a loro conviene che il re sia debole.',
+       seDicono:[
+         {loro:'«Allora la religione era solo una scusa.»',
+          tu:'Se fosse solo una scusa, la scomunica non avrebbe fatto effetto su nessuno. Funziona perche la gente ci crede, e viene usata perche conviene. Le due cose stanno insieme quasi sempre, ed e la ragione per cui la storia e piu difficile della polemica.'},
+         {loro:'«Perche i principi tedeschi si mettono contro il proprio re?»',
+          tu:'Perche un re scomunicato e un re debole, e loro volevano da tempo comandare a casa propria. Segnatelo: e la ragione per cui la Germania non diventera uno Stato unitario per altri ottocento anni.'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'Che cosa stava succedendo davvero, quel gennaio.\n\nEnrico e scomunicato da un anno.\nI principi tedeschi gli hanno dato un ultimatum:\nse non ottiene l\'assoluzione entro un anno, lo depongono.\n\nE il papa, in quel momento, non e a Roma:\nsta salendo verso la Germania,\ndove presiedera l\'assemblea che deve deporlo.\n\nEnrico attraversa le Alpi in pieno inverno,\ncon la moglie e il figlio piccolo,\nper intercettarlo prima che arrivi.\n\nE si presenta come penitente.',
+       parlato:'Costruisci il quadro un pezzo per volta. Quando arrivi alla traversata delle Alpi in gennaio, con la famiglia, fermati: non e il viaggio di un uomo che si arrende.\n\nPoi il passaggio decisivo, e chiedi a loro di trovarlo prima di darlo. Domanda: se ti presenti davanti a un sacerdote come peccatore pentito, quel sacerdote che cosa e obbligato a fare?\n\nQuasi sempre qualcuno lo dice: deve assolverti.\n\nEcco la mossa. Enrico sceglie l\'unico terreno su cui Gregorio non ha liberta: non come re che tratta, ma come cristiano che si pente. Rifiutare l\'assoluzione avrebbe distrutto la credibilita del papa riformatore, che aveva costruito tutta la propria autorita sul dovere sacerdotale.\n\nGregorio assolve. E lo scrive lui stesso ai principi tedeschi, giustificandosi.',
+       seDicono:[
+         {loro:'«Quindi era tutta una finta? Non si e pentito davvero?»',
+          tu:'Non lo sappiamo e forse non conta: nel Medioevo un gesto pubblico vale per quello che produce, non per quello che uno sente. Ma nota il dettaglio: si e presentato con i vestiti giusti, nel posto giusto, nel momento giusto per bloccare un processo. La sincerita non e mai stata cosi tempestiva.'},
+         {loro:'«Il papa poteva rifiutare e basta.»',
+          tu:'Poteva, e avrebbe perso. Il suo potere si fondava sull\'idea che il sacerdote agisce per conto di Dio e non per interesse. Negare l\'assoluzione a un penitente lo avrebbe trasformato in quello che i suoi nemici dicevano che fosse: un politico travestito da monaco.'}
+       ]},
+
+      {minuti:'28–38', et:'Il testo',
+       schermo:'Un anno prima, dalla dieta di Worms.\n\n«Enrico, re non per usurpazione\nma per pia ordinazione di Dio,\na Ildebrando, non piu papa ma falso monaco.\n\n[…] Io, Enrico, re per grazia di Dio,\ninsieme a tutti i nostri vescovi, ti dico:\nscendi, scendi!»\n\nE dal Dictatus papae, dell\'anno prima ancora:\n\n«Al solo papa e lecito deporre gli imperatori.»\n«Puo sciogliere i sudditi dal giuramento di fedelta\nverso gli iniqui.»\n«La Chiesa romana non ha mai errato,\nne mai errera in eterno.»',
+       testo:{fonte:'Lettera di Enrico IV, Worms, gennaio 1076; Dictatus papae, marzo 1075',
+              glossa:'Metti i due testi uno accanto all\'altro e guarda le date: 1075 e 1076. Non e uno scontro nato per caso — sono due programmi massimalisti scritti a un anno di distanza, ciascuno dei quali rende l\'altro impossibile. Canossa non e l\'inizio della crisi: e la prima manovra dentro una guerra gia dichiarata.'},
+       parlato:'Leggi la lettera di Enrico ad alta voce, con il tono che merita: e un documento aggressivo, e sorprende sempre chi immagina un re remissivo. «Scendi, scendi» — in latino descende, descende.\n\nPoi il Dictatus papae. Non leggerlo tutto: tre proposizioni bastano, e sono quelle che nessuno prima aveva osato scrivere. Fai notare la forma — frasi brevissime, senza argomenti, senza destinatario. Gli storici discutono ancora se fossero appunti privati o un manifesto.\n\nInfine la domanda utile: dopo due testi cosi, era possibile una soluzione che non fosse la guerra? E infatti la guerra ci sara, per quarantasette anni.',
+       seDicono:[
+         {loro:'«Il papa esagera: da dove tira fuori il potere di deporre un imperatore?»',
+          tu:'Da un\'idea precisa: se il papa risponde delle anime e l\'imperatore e un\'anima, allora il papa puo giudicarlo. È una deduzione, non un capriccio — ed e il motivo per cui non si poteva liquidare con un\'alzata di spalle.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'Che cosa succede dopo Canossa.\n\n1077 — Assolto, Enrico torna in Germania\ne i principi perdono il pretesto per deporlo.\nRicomincia la guerra civile, e la vince.\n\n1080 — Nomina un papa suo: l\'antipapa Clemente III.\n\n1084 — Entra a Roma e si fa incoronare imperatore\nda quel papa. Gregorio e assediato in Castel Sant\'Angelo.\n\n1085 — Gregorio VII muore in esilio a Salerno.\nLe sue ultime parole: «Ho amato la giustizia\ne odiato l\'iniquita: per questo muoio in esilio».\n\nA Canossa non aveva vinto il papa.',
+       parlato:'Dai la cronologia una riga per volta e lascia che l\'effetto si costruisca da solo. La reazione tipica e incredulita: nessuno racconta mai il seguito.\n\nPoi la spiegazione, breve: l\'assoluzione toglieva ai principi tedeschi l\'unico appiglio giuridico. Un re scomunicato si puo deporre; un re assolto no. Enrico non aveva chiesto perdono per pentimento politico — aveva comprato la legittimita al prezzo di tre giorni di freddo.\n\nSe hai tempo, aggiungi il rovescio che complica di nuovo: la Chiesa perde la battaglia e vince la guerra lunga. Nel 1122, a Worms, il compromesso divide il vescovo in due — anello e pastorale alla Chiesa, scettro all\'imperatore — e quella divisione tecnica e il primo documento europeo in cui si scrive che due poteri sono distinti.\n\nChi vince, allora, dipende anche da quanto lontano si guarda.',
+       seDicono:[
+         {loro:'«Ma allora perche ci raccontano Canossa come una vittoria del papa?»',
+          tu:'Perche l\'immagine e piu forte del seguito, e perche a molti e servita: alla Chiesa come esempio, e agli avversari della Chiesa come spauracchio. La domanda giusta e sempre la stessa — chi guadagna dal fatto che quella storia venga raccontata cosi?'},
+         {loro:'«Allora chi ha vinto?»',
+          tu:'Sul momento Enrico. Sui cinquant\'anni, un compromesso. Sui secoli, un\'idea che non aveva progettato nessuno dei due: che il potere religioso e quello politico siano due cose separate. È l\'esito piu importante, e non lo voleva nessuno.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'Ultima cosa.\n\nL\'espressione «andare a Canossa»,\nche usiamo per dire umiliarsi,\nnon nasce nel Medioevo.\n\nLa pronuncia Bismarck al Reichstag nel 1872,\nottocento anni dopo,\ndurante il suo conflitto con la Chiesa cattolica:\n«A Canossa non andremo».\n\nLa parola che usate per raccontare quel gennaio\nvi e stata data da qualcuno\nche stava combattendo un\'altra guerra.\n\nRifacciamo la conta: chi ha vinto nel 1077?',
+       parlato:'Rifai la votazione e mostra lo spostamento: e sempre netto.\n\nPoi chiudi con il metodo, che e la cosa da portare a casa. Tre domande da fare a qualunque immagine storica forte:\n\nche cosa succede dopo — perche la scena da sola non dice mai chi ha vinto;\nchi ha scritto la fonte — e che interesse aveva;\nquando e nata l\'espressione che usiamo — perche spesso e molto piu recente del fatto, e porta con se il conflitto di chi l\'ha coniata.\n\nUn\'ultima riga da lasciare senza risposta: quante scene che avete in testa — di storia, di cronaca, di politica — le avete ricevute gia raccontate da qualcuno che aveva un interesse a raccontarle cosi?\n\nE annuncia la prossima: fra vent\'anni dalla morte di Gregorio, centomila persone partiranno per Gerusalemme.',
+       seDicono:[
+         {loro:'«Quindi non ci si puo fidare di niente.»',
+          tu:'Al contrario: ci si puo fidare di quello che si verifica. Oggi abbiamo verificato una scena famosa con tre domande semplici e ne abbiamo ricavato una storia piu vera. Il dubbio serve a controllare, non a rinunciare.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'Il Dictatus papae',
+       corpo:'Nel marzo 1075 negli archivi papali viene registrato un elenco di ventisette proposizioni brevissime, senza commento e senza destinatario. Fra queste:\n\n«La Chiesa romana e stata fondata dal solo Signore.»\n«Il solo pontefice romano e detto a buon diritto universale.»\n«A lui solo e lecito deporre i vescovi e riammetterli.»\n«Gli e lecito deporre gli imperatori.»\n«Puo sciogliere i sudditi dal giuramento di fedelta verso gli iniqui.»\n«La Chiesa romana non ha mai errato, ne, come attesta la Scrittura, errera mai in eterno.»\n\nNon si sa con certezza se fosse un promemoria interno, un indice di una raccolta canonistica o un programma politico.',
+       chiedi:'Ventisette frasi senza una riga di argomentazione. Perche scrivere cosi? E che differenza fa, per capire un documento, sapere se era destinato al pubblico o restava in un archivio?'},
+      {titolo:'La Pataria di Milano',
+       corpo:'A Milano, dagli anni Cinquanta dell\'XI secolo, un movimento di popolo e clero minore si scaglia contro i preti simoniaci e concubinari, arrivando a impedire fisicamente le loro celebrazioni. I capi — Arialdo, Landolfo, Erlembaldo — vengono uccisi o muoiono in scontri di piazza.\n\nIl nome «patarini» viene forse da pattari, i rigattieri del mercato: un soprannome spregiativo, poi rivendicato con orgoglio.\n\nIl papato riformatore li appoggia, perche gli servono; poi, quando il movimento diventa incontrollabile, prende le distanze.',
+       chiedi:'Una riforma decisa in alto che si appoggia su un movimento di piazza, e poi lo abbandona. Riconoscete lo schema in altri momenti della storia? E che cosa succede, di solito, a chi ci ha messo il corpo?'},
+      {titolo:'A Canossa non andremo',
+       corpo:'Nel 1872 il cancelliere tedesco Otto von Bismarck e in pieno Kulturkampf, la sua battaglia contro l\'influenza della Chiesa cattolica nel nuovo Reich. Al Reichstag pronuncia la frase: «Non andremo a Canossa, ne con il corpo ne con lo spirito».\n\nDa quel discorso l\'espressione entra nelle lingue europee con il significato di umiliarsi davanti a un avversario.\n\nBismarck, va detto, qualche anno dopo tratto con il papa e ammorbidi buona parte delle leggi anticattoliche.',
+       chiedi:'Un uomo politico usa un fatto di ottocento anni prima come slogan, e la sua frase diventa il modo in cui tutti ricordiamo quel fatto. Quante volte, secondo voi, capita che il passato ci arrivi cosi — gia confezionato da una polemica del presente?'}
+    ],
+    testi:[
+      {fonte:'Gregorio VII, lettera ai principi tedeschi, 1077',
+       corpo:'Il papa racconta ai principi che Enrico si e presentato «deposte le insegne regali, con aspetto miserevole, scalzo e vestito di lana», e che ha implorato per tre giorni. E aggiunge che alla fine, «vinti dalla insistenza della sua contrizione e dalle suppliche di tutti i presenti», ha dovuto sciogliere la scomunica.',
+       glossa:'Il passaggio da far notare e «ha dovuto». Gregorio scrive ai principi tedeschi — cioe a chi si aspettava che deponesse Enrico — per giustificarsi di aver assolto. È la fonte principale su Canossa, ed e scritta da chi doveva spiegare perche non aveva vinto.'},
+      {fonte:'Concordato di Worms, 23 settembre 1122',
+       corpo:'L\'imperatore rinuncia all\'investitura «con l\'anello e il pastorale» e concede libera elezione e consacrazione. Il papa concede che le elezioni in Germania avvengano alla presenza dell\'imperatore, e che l\'eletto riceva da lui, «con lo scettro», i beni e i diritti temporali (le regalie).',
+       glossa:'Sembra un cavillo notarile ed e uno dei documenti piu importanti della storia europea: e la prima volta che si mette per iscritto che una stessa persona ha due qualita distinte, una religiosa e una civile, che dipendono da autorita diverse.'},
+      {fonte:'Cronaca di Lampert di Hersfeld, 1077',
+       corpo:'Il cronista descrive Enrico che «depose le vesti regali, senza nulla di regale, senza alcuna insegna, a piedi nudi, digiuno dal mattino alla sera» davanti alla porta del castello, «e cosi il secondo e il terzo giorno».',
+       glossa:'Attenzione alla fonte: Lampert e un monaco tedesco ostile a Enrico e vicino ai principi sassoni. La descrizione piu vivida e dettagliata della scena viene da un avversario del re — ed e quella che ha fatto scuola per otto secoli.'}
+    ],
+    compito:'Mezza pagina. Prendete un\'immagine storica famosa che conoscete — una qualunque, anche del Novecento — e provate ad applicarle le tre domande di oggi: che cosa e successo dopo, chi ha scritto o scattato quella fonte, quando e nata l\'espressione con cui la raccontiamo. Non serve smontarla: serve vedere se regge.',
+    fonti:[
+      'Dictatus papae (1075); lettera di Enrico IV da Worms (gennaio 1076); Concordato di Worms (1122)',
+      'Lampert di Hersfeld, Annales, anno 1077; Gregorio VII, Registrum IV 12 (lettera ai principi tedeschi)',
+      'G. Tabacco, La relazione fra i concetti di potere temporale e di potere spirituale nella tradizione cristiana',
+      'O. Capitani, Storia dell\'Italia medievale; La riforma gregoriana e la lotta per le investiture',
+      'H. Zimmermann, Der Canossagang von 1077',
+      'Sul Kulturkampf: la seduta del Reichstag del 14 maggio 1872'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',
