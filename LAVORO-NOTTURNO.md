@@ -152,7 +152,7 @@ Si va in ordine di programma. Restano:
 - [x] Storia medievale · 4 — L'Italia comunale e l'Impero
 - [x] Storia medievale · 5 — Papato, Impero e monarchie nazionali
 - [x] Storia medievale · 6 — Le civiltà extraeuropee
-- [ ] Storia medievale · 7 — La crisi del Trecento
+- [x] Storia medievale · 7 — La crisi del Trecento
 - [ ] Storia medievale · 8 — La crisi dei poteri universali
 - [ ] Storia medievale · 9 — L'Italia degli Stati regionali
 - [ ] Storia medievale · 10 — La frontiera mediterranea e gli Ottomani

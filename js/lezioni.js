@@ -4270,6 +4270,224 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Storia medievale · 7 — La crisi del Trecento': {
+  mappa: {
+    n:'La crisi del Trecento', d:'un secolo di catastrofi, e un\'Europa diversa',
+    f:[
+      {r:'comincia da', n:'Una crescita al limite', d:'intorno al 1300 il motore dell\'anno Mille si ferma',
+       f:[
+         {r:'sono finite', n:'Le terre buone', d:'si coltivano suoli marginali che rendono poco e si esauriscono presto'},
+         {r:'quindi calano', n:'Le rese per ettaro', d:'piu bocche, meno raccolto per bocca'},
+         {r:'e ogni anno ci sono', n:'Carestie locali', d:'gia normali prima del Trecento: manca solo il colpo che le renda generali'},
+         {r:'e la popolazione e', n:'Al massimo sostenibile', d:'circa settantacinque milioni: ogni annata cattiva diventa una crisi'},
+         {r:'peggiora anche', n:'Il clima', d:'finisce l\'optimum medievale e comincia la Piccola eta glaciale',
+          f:[{piu:true, r:'e in Groenlandia', n:'Le colonie normanne scompaiono', d:'nel corso del Quattrocento'}]}
+       ]},
+
+      {r:'apre con', n:'La grande carestia', d:'1315-1317: la prima catastrofe, e quasi nessuno la ricorda',
+       f:[
+         {r:'causata da', n:'Tre anni di pioggia', d:'i raccolti marciscono nei campi, in tutta l\'Europa del Nord'},
+         {r:'provoca', n:'Una mortalita del cinque-dieci per cento', d:'in molte regioni settentrionali'},
+         {r:'e lascia', n:'Una popolazione indebolita', d:'trent\'anni prima della peste, e conta'},
+         {piu:true, r:'colpisce anche', n:'Il bestiame', d:'un\'epizoozia bovina fra 1319 e 1321 uccide fino a metà degli animali da lavoro'}
+       ]},
+
+      {r:'esplode con', n:'La peste nera', d:'1347-1351: la piu grande catastrofe demografica d\'Europa',
+       f:[
+         {r:'arriva da', n:'Caffa', d:'porto genovese in Crimea, poi Messina nell\'ottobre 1347',
+          f:[{piu:true, r:'e nel giro di', n:'Tre anni copre tutta l\'Europa', d:'seguendo le rotte commerciali, non i confini'}]},
+         {r:'e causata da', n:'Yersinia pestis', d:'un batterio, trasmesso dalle pulci dei roditori',
+          f:[{r:'in forma', n:'Bubbonica', d:'i bubboni all\'inguine e alle ascelle: letale in circa due casi su tre'},
+             {r:'e in forma', n:'Polmonare', d:'si trasmette con il respiro, e uccide quasi sempre'},
+             {piu:true, r:'ma il batterio', n:'Identificato solo nel 1894', d:'da Yersin, durante l\'epidemia di Hong Kong'}]},
+         {r:'uccide circa', n:'Un terzo degli europei', d:'e in molte citta la meta o piu: le stime restano discusse'},
+         {r:'colpisce molto', n:'Medici e preti', d:'chi per mestiere si avvicina ai malati muore in proporzione maggiore',
+          f:[{piu:true, r:'e le parrocchie', n:'Restano senza sacerdoti', d:'sostituiti in fretta e male: e un problema che dura decenni'}]},
+         {r:'e non finisce', n:'Torna ogni dieci-quindici anni', d:'per tre secoli: e questo a impedire la ripresa demografica'}
+       ]},
+
+      {r:'provoca', n:'Reazioni estreme', d:'perche non si capisce che cosa stia succedendo',
+       f:[
+         {r:'i', n:'Flagellanti', d:'processioni che si autoflagellano per placare l\'ira divina',
+          f:[{r:'e vengono', n:'Condannati dal papa', d:'nel 1349: il movimento sfugge a ogni controllo'}]},
+         {r:'i', n:'Pogrom', d:'gli ebrei accusati di avvelenare i pozzi: comunita intere sterminate',
+          f:[{r:'nonostante', n:'La bolla di Clemente VI', d:'che li difende, osservando che muoiono come tutti gli altri'},
+             {piu:true, r:'a Strasburgo', n:'Febbraio 1349', d:'centinaia di ebrei uccisi prima che la peste arrivasse in citta'}]},
+         {r:'i medici', n:'Cercano cause nell\'aria', d:'i miasmi, le congiunzioni astrali: e nessuna terapia funziona'},
+         {r:'e chi puo', n:'Fugge', d:'ed e la cornice del Decameron: dieci giovani che lasciano Firenze'}
+       ]},
+
+      {r:'rovescia', n:'L\'economia', d:'e questo e l\'effetto che quasi nessuno si aspetta',
+       f:[
+         {r:'perche resta', n:'La stessa terra per meta persone', d:'campi, attrezzi e case non sono spariti: sono spariti gli uomini'},
+         {r:'quindi si coltivano', n:'Solo i terreni migliori', d:'la resa media per lavoratore sale'},
+         {r:'e il lavoro diventa', n:'Scarso e caro', d:'chi ha braccia puo contrattare, e cambiare padrone'},
+         {r:'i salari reali', n:'Crescono molto', d:'in Inghilterra raddoppiano nel secolo successivo'},
+         {r:'e migliora', n:'La dieta', d:'piu carne, piu birra: si passa da un\'alimentazione di soli cereali'},
+         {r:'e crollano', n:'I prezzi del grano', d:'meno bocche, stessa terra: il cereale vale meno, e la rendita fondiaria con lui'},
+         {piu:true, r:'cambia anche', n:'L\'uso del suolo', d:'molti campi diventano pascoli, che richiedono meno braccia'}
+       ]},
+
+      {r:'e i padroni', n:'Provano a bloccarlo per legge', d:'capiscono subito che cosa sta succedendo',
+       f:[
+         {r:'in Inghilterra', n:'Ordinance of Labourers', d:'1349: salari fissati ai livelli di prima della peste',
+          f:[{r:'confermata dallo', n:'Statute of Labourers', d:'1351, con pene per chi paga o chiede di piu'}]},
+         {r:'ma', n:'Non funziona', d:'chi rispetta la legge perde i braccianti a favore del vicino che non la rispetta'},
+         {r:'e applicarla', n:'Provoca rivolte', d:'la repressione fiscale e salariale accende la miccia'},
+         {r:'cosi in Occidente', n:'La servitu della gleba finisce', d:'non per una decisione: perche non si riesce piu a imporla'}
+       ]},
+
+      {r:'accende', n:'Le rivolte', d:'e per la prima volta i contadini hanno un programma',
+       f:[
+         {r:'in Francia', n:'Jacquerie', d:'1358: contadini della regione parigina, repressa in due settimane'},
+         {r:'a Firenze', n:'Tumulto dei Ciompi', d:'1378: gli operai della lana chiedono una propria corporazione',
+          f:[{r:'ottengono', n:'Un governo di sei settimane', d:'poi tutto viene smontato'}]},
+         {r:'nelle Fiandre', n:'Le rivolte tessili', d:'le citta della lana si sollevano piu volte: la crisi non e solo contadina'},
+         {r:'in Inghilterra', n:'La rivolta del 1381', d:'innescata dalla poll tax, marcia su Londra',
+          f:[{r:'guidata da', n:'Wat Tyler', d:'ucciso durante il colloquio con il re quattordicenne'},
+             {r:'con il predicatore', n:'John Ball', d:'«quando Adamo zappava ed Eva filava, chi era allora il gentiluomo?»'},
+             {piu:true, r:'il re promette', n:'E poi ritira tutto', d:'le concessioni vengono revocate appena la folla si scioglie'}]}
+       ]},
+
+      {r:'e lascia', n:'Un\'Europa diversa', d:'piu piccola e, per chi resta, piu ricca',
+       f:[
+         {r:'la popolazione', n:'Torna ai livelli del 1300 solo nel Cinquecento', d:'due secoli per recuperare'},
+         {r:'il rapporto di forza', n:'Si sposta verso il lavoro', d:'per un secolo e mezzo, in Europa occidentale'},
+         {r:'la Chiesa esce', n:'Indebolita', d:'preti morti in massa, scisma, e i primi movimenti di riforma',
+          f:[{r:'con', n:'Wyclif e Hus', d:'che contestano gerarchia e ricchezza ecclesiastica'}]},
+         {r:'e la guerra', n:'Dei Cent\'anni', d:'1337-1453: si combatte durante tutto questo'},
+         {r:'e si diffondono', n:'Tecniche che risparmiano braccia', d:'mulini, aratri migliori, allevamento: si sostituisce lavoro con capitale'},
+         {piu:true, r:'nell\'arte compare', n:'Il trionfo della morte', d:'e le danze macabre: la mortalita diventa un tema figurativo'}
+       ]}
+    ],
+    incroci:[
+      {da:'Al massimo sostenibile', a:'Una popolazione indebolita', r:'e la ragione per cui la carestia lascia',
+       perche:'Una societa che vive gia al limite non ha riserve: tre anni di pioggia bastano a farla crollare. Chi sopravvive alla carestia del 1315 arriva alla peste del 1347 con trent\'anni di malnutrizione alle spalle, e questo pesa sulla mortalita.'},
+      {da:'Il clima', a:'Tre anni di pioggia', r:'e la ragione di fondo dei',
+       perche:'La fine dell\'optimum medievale non si vede come un evento: si vede come una serie di annate storte. Le piogge del 1315-1317 non sono sfortuna isolata, sono il primo colpo di un raffreddamento che durera secoli — ed e per questo che dopo la carestia la situazione non torna come prima.'},
+      {da:'La stessa terra per meta persone', a:'Crescono molto', r:'e la causa per cui i salari',
+       perche:'La terra, gli attrezzi e le case restano; a mancare sono gli uomini. Quando il fattore scarso diventa il lavoro invece della terra, il prezzo del lavoro sale — e i braccianti, per la prima volta, possono trattare o andarsene.'},
+      {da:'Non funziona', a:'La servitu della gleba finisce', r:'e cio che rende inevitabile che',
+       perche:'La legge sui salari fallisce non per pieta ma per concorrenza: il signore che la rispetta perde i braccianti a favore del vicino che paga di piu. La servitu occidentale non viene abolita da nessuno — smette di essere applicabile.'},
+      {da:'Provoca rivolte', a:'La rivolta del 1381', r:'porta direttamente a',
+       perche:'Tentare di riportare per legge i salari indietro di trent\'anni, mentre si impone una tassa uguale per tutti, produce la piu grande rivolta della storia inglese medievale. La repressione economica e la miccia, non la causa remota.'},
+      {da:'Torna ogni dieci-quindici anni', a:'Torna ai livelli del 1300 solo nel Cinquecento', r:'spiega perche la popolazione',
+       perche:'Un\'epidemia isolata si recupera in una generazione. Ma la peste torna ciclicamente per tre secoli, colpendo soprattutto i bambini nati dopo l\'ondata precedente: e la ripetizione, non il 1348, a tenere ferma la demografia europea per duecento anni.'},
+      {da:'La bolla di Clemente VI', a:'Pogrom', r:'non riesce a fermare i',
+       perche:'Il papa scrive che gli ebrei muoiono di peste come tutti gli altri e che accusarli e assurdo. Non serve: a Strasburgo il massacro avviene prima ancora che la malattia arrivi in citta. Quando una societa non riesce a spiegarsi una catastrofe, cerca un colpevole disponibile piu che uno plausibile.'},
+      {da:'John Ball', a:'Si sposta verso il lavoro', r:'da voce al fatto che il rapporto di forza',
+       perche:'«Chi era allora il gentiluomo?» non e una battuta: e la prima volta che la disuguaglianza sociale viene attaccata come non naturale davanti a migliaia di persone. Quel discorso e possibile perche i braccianti hanno appena scoperto di valere di piu.'},
+      {da:'Fugge', a:'Il trionfo della morte', r:'appartiene alla stessa reazione culturale di',
+       perche:'Il Decameron comincia con dieci giovani che lasciano Firenze e si raccontano storie: la peste sta sullo sfondo di quasi tutta l\'arte del secondo Trecento, come cornice, come danza macabra o come trionfo. Una societa che non sa curare la malattia la rappresenta.'},
+      {da:'Ordinance of Labourers', a:'Scarso e caro', r:'e la reazione politica al fatto che il lavoro sia',
+       perche:'Il provvedimento arriva nel 1349, cioe mentre la peste e ancora in corso: i proprietari capiscono l\'effetto economico prima ancora che l\'epidemia sia finita. La rapidita della risposta e la prova che il meccanismo era evidente ai contemporanei.'},
+      {da:'Wyclif e Hus', a:'Indebolita', r:'nascono dentro una Chiesa',
+       perche:'Fra peste, scisma e clero decimato, l\'autorita ecclesiastica esce dal Trecento senza la forza per assorbire il dissenso come aveva fatto con i francescani. Le contestazioni di Wyclif e Hus trovano spazio dove un secolo prima sarebbero state riassorbite o schiacciate.'},
+      {da:'Solo i terreni migliori', a:'Le terre buone', r:'inverte il problema delle',
+       perche:'Prima della peste si coltivavano suoli marginali perche c\'erano troppe bocche. Dopo, con meta popolazione, si abbandonano i campi peggiori e restano i migliori: la stessa fatica rende di piu. È lo stesso meccanismo dell\'anno Mille, letto al contrario.'}
+    ]
+  },
+  provocazione: {
+    titolo:'La peggiore catastrofe della storia europea',
+    durata:'55 minuti',
+    domandaMadre:'Le cause economiche producono sempre lo stesso effetto?',
+    perche:'La classe si trova davanti a un fatto documentato e moralmente scomodo: nei decenni successivi alla peste nera i salari reali dei braccianti raddoppiano, la dieta migliora e la servitu della gleba scompare in Europa occidentale. Deve spiegarlo senza trasformarlo in un elogio della catastrofe, cioe imparando a distinguere fra spiegare e giustificare. E poi arriva il caso che rende l\'ora davvero istruttiva: a est dell\'Elba la stessa peste produce l\'effetto opposto, un irrigidimento della servitu. Stessa causa, esiti contrari, secondo i rapporti di forza. È la lezione che smonta ogni determinismo economico, e serve per tutto il resto del programma.',
+    occorrente:'Niente. Il tono conta: si maneggiano venti milioni di morti, e la classe deve sentire che chi parla lo sa.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'Fra il 1347 e il 1351 l\'Europa perde\ncirca un terzo della propria popolazione.\nIn molte citta la meta o piu.\n\nÈ la piu grande catastrofe demografica\ndella storia del continente.\n\nNei cinquant\'anni successivi:\n\nin Inghilterra il salario reale di un bracciante\ncirca raddoppia;\nnella dieta compaiono carne e birra\ndove prima c\'erano solo cereali;\nla servitu della gleba scompare\nin tutta l\'Europa occidentale.\n\nCome puo la peggiore catastrofe della storia\naver migliorato la vita di chi e sopravvissuto?',
+       parlato:'La prima parte va detta con il peso che ha: non si comincia una lezione sulla peste con leggerezza. Di\' anche che le stime sono discusse e che l\'ordine di grandezza no.\n\nPoi dai i tre dati del dopo, uno per volta, e lascia il silenzio.\n\nLa domanda finale va posta esattamente cosi, senza addolcirla. E poi aggiungi subito la precisazione che tiene in piedi l\'ora, e va detta una volta sola e chiaramente: non stiamo dicendo che la peste sia stata una buona cosa. Stiamo cercando di capire come funzionano le cause. Spiegare non e giustificare, e chi non tiene separate le due cose non riesce a studiare niente di quello che e successo nel Novecento.\n\nSe la classe e a disagio, va bene: e la reazione giusta, e va nominata invece che ignorata.',
+       seDicono:[
+         {loro:'«È osceno ragionare cosi: sono morti venti milioni di persone.»',
+          tu:'Hai ragione a fermarti su quel numero, e non lo dimentichiamo. Ma nota la differenza fra due frasi: "la peste e stata un bene" e "la peste ha avuto anche questa conseguenza". La prima e un giudizio e lo rifiuto; la seconda e un fatto, e se lo rifiutiamo rinunciamo a capire.'},
+         {loro:'«Saranno statistiche sbagliate.»',
+          tu:'Sono ricostruite da serie di salari e prezzi conservate negli archivi di grandi proprieta, e concordano con le fonti narrative. Il dubbio va bene, ma va portato sui dati: quali numeri ti servirebbero per convincerti?'}
+       ]},
+
+      {minuti:'8–17', et:'Lo schieramento',
+       schermo:'La frase «dopo la peste i sopravvissuti\nstavano meglio»:',
+       opzioni:['e un calcolo cinico, e probabilmente falso', 'e vera, e va spiegata'],
+       parlato:'Fai schierare e conta. Il primo gruppo e sempre consistente, e non e un errore: e una reazione morale sana che pero va trasformata in ragionamento.\n\nPoi chiedi a tutti di fare un\'operazione semplicissima. La terra e sparita? No. Gli attrezzi? No. Le case, i mulini, i buoi? No, quelli sono rimasti. Che cosa e sparito?\n\nGli uomini.\n\nAllora: se resta la stessa terra per meta persone, che cosa succede a chi ha due braccia e vuole lavorare?\n\nQuasi sempre ci arrivano da soli: puo scegliere, puo chiedere di piu, puo andarsene dal padrone che paga poco. Per la prima volta nella storia europea, il lavoro e la cosa scarsa.',
+       seDicono:[
+         {loro:'«Ma saranno morti anche i padroni.»',
+          tu:'Certo, e in proporzioni simili. Ma un signore morto lascia la terra a un erede: la proprieta si trasmette. Un bracciante morto non lascia due braccia a nessuno. È per questo che il colpo, a parita di mortalita, colpisce in modo diverso i due fattori.'},
+         {loro:'«Con meta persone c\'era meta lavoro da fare.»',
+          tu:'Non proprio: i campi da arare, i mulini da far girare e le case da riparare erano gli stessi. La domanda di lavoro cala meno dell\'offerta — e la differenza fra le due e esattamente quello che finisce nel salario.'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'I proprietari capirono immediatamente.\n\nIn Inghilterra, nel 1349 —\ncioe mentre la peste era ancora in corso —\nviene emanata l\'Ordinance of Labourers:\n\nsalari fissati ai livelli del 1346,\ndivieto di chiedere di piu,\ndivieto di offrire di piu,\nobbligo di accettare il lavoro proposto.\n\nDue anni dopo viene confermata\ne rafforzata con pene detentive.\n\nE non funziona.',
+       parlato:'Il dato che colpisce e la data: 1349, con l\'epidemia in corso. Non ci vollero decenni per capire il meccanismo — bastarono mesi. Fallo notare, perche dimostra che l\'effetto economico era evidente ai contemporanei.\n\nPoi la domanda: perche una legge del genere fallisce?\n\nGuidali fino alla risposta, che e istruttiva. Non fallisce per pieta: fallisce per concorrenza. Il signore che rispetta la legge vede i propri braccianti andarsene dal vicino che paga di piu, e resta con i campi incolti. Ogni singolo proprietario ha un interesse a violarla — e quando tutti hanno interesse a violare una legge, la legge non regge.\n\nE quando si prova ad applicarla con la forza, insieme a una tassa uguale per ricchi e poveri, si arriva alla piu grande rivolta della storia inglese medievale: 1381.',
+       seDicono:[
+         {loro:'«Bastava metterli tutti d\'accordo, i proprietari.»',
+          tu:'Ci hanno provato: e proprio quello che e la legge. Ma un accordo che conviene a tutti insieme e non conviene a ciascuno singolarmente non tiene, se non c\'e qualcuno capace di farlo rispettare davvero. Tienilo a mente: e uno dei meccanismi piu ricorrenti della storia economica.'},
+         {loro:'«Allora la fine della servitu e merito dei contadini?»',
+          tu:'In parte. Ma nota che nessuno l\'ha abolita: si e semplicemente smesso di riuscire a imporla. Molte cose importanti finiscono cosi, senza un atto che le abolisca — e questo rende difficile trovarne la data.'}
+       ]},
+
+      {minuti:'28–38', et:'Il testo',
+       schermo:'Dalla legge, 1349:\n\n«Poiche gran parte del popolo,\ne soprattutto dei lavoratori e dei servi,\ne morta di peste,\nalcuni, vedendo la necessita dei padroni\ne la scarsita di servitori,\nnon vogliono servire se non ricevono\nsalari eccessivi.»\n\nE dal predicatore John Ball, 1381,\ndavanti ai contadini in marcia su Londra:\n\n«Quando Adamo zappava ed Eva filava,\nchi era allora il gentiluomo?»',
+       testo:{fonte:'Ordinance of Labourers (1349); il distico di John Ball e riportato dai cronisti della rivolta del 1381',
+              glossa:'Il testo di legge e prezioso perche ammette il proprio movente: «vedendo la necessita dei padroni». Non dice che i salari alti danneggiano l\'economia — dice che i lavoratori stanno approfittando della situazione. È raro che una fonte confessi cosi apertamente da che parte sta.'},
+       parlato:'Leggi la legge e fermati sulla frase «vedendo la necessita dei padroni». È una confessione: il legislatore descrive la propria posizione senza mascherarla, perche nel 1349 non aveva bisogno di mascherarla.\n\nPoi il distico di John Ball, e lascia che lo capiscano da soli. Se in principio c\'erano solo due persone e lavoravano entrambe, la nobilta non e nell\'ordine della creazione: e stata aggiunta da qualcuno. Non e una lamentela sulle tasse — e la contestazione della disuguaglianza come fatto naturale.\n\nDomanda utile: perche una frase simile viene detta proprio in quegli anni e non un secolo prima?\n\nLa risposta chiude il cerchio: perche i braccianti hanno appena scoperto sul mercato di valere piu di prima. Le idee sull\'uguaglianza arrivano quando qualcuno ha la forza per pronunciarle.',
+       seDicono:[
+         {loro:'«Ma la rivolta e stata schiacciata, quindi non e servita a niente.»',
+          tu:'Sul momento si: Wat Tyler ucciso, promesse ritirate, capi giustiziati. Eppure la servitu in Inghilterra continua a sciogliersi nei decenni successivi. Le rivolte quasi sempre perdono e quasi sempre lasciano un segno: il padrone che ha visto marciare i contadini su Londra tratta diversamente.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'E adesso il caso che rovina la spiegazione\nche vi siete appena costruiti.\n\nA est dell\'Elba — Prussia, Polonia, Ungheria,\nRussia — la peste arriva e uccide.\nLa popolazione crolla allo stesso modo.\n\nMa li i contadini non diventano piu liberi.\n\nDiventano meno liberi:\nvengono legati alla terra piu strettamente di prima,\nle giornate di lavoro obbligatorio aumentano,\nla mobilita viene vietata.\n\nGli storici la chiamano «seconda servitu».\n\nStesso batterio. Stesso crollo demografico.\nEsito opposto.',
+       parlato:'Dai il fatto e poi la domanda, che e la piu importante dell\'ora: perche?\n\nRaccogli le ipotesi e poi da\' le ragioni che gli storici indicano.\n\nA ovest c\'erano citta forti, dove un servo che scappava trovava lavoro e, dopo un anno e un giorno, la liberta. A est le citta erano poche e deboli: scappare non portava da nessuna parte.\n\nA ovest il potere dei signori era limitato da monarchie, tribunali e comuni. A est i nobili controllavano direttamente la giustizia locale, quindi potevano imporre le proprie regole.\n\nE c\'era una domanda enorme di grano dall\'Europa occidentale, che rendeva conveniente produrre in grande — cioe legare i contadini invece di pagarli.\n\nPoi la conclusione, che e la lezione da portare a casa: la stessa causa economica produce esiti opposti a seconda dei rapporti di forza. L\'economia non decide da sola: propone, e poi decide chi ha il potere di rispondere.',
+       seDicono:[
+         {loro:'«Allora la spiegazione economica non vale.»',
+          tu:'Vale, ma non basta. La peste crea la stessa opportunita ovunque: la differenza e chi riesce ad afferrarla. Una causa economica e come una porta che si apre — se dall\'altra parte c\'e qualcuno abbastanza forte da richiuderla, non passa nessuno.'},
+         {loro:'«Come si fa a sapere che era per le citta e non per altro?»',
+          tu:'Confrontando casi: dove ci sono citta forti, la servitu si scioglie; dove non ci sono, si irrigidisce. Il metodo si chiama comparazione, ed e il modo in cui la storia si avvicina a un esperimento — non potendone fare nessuno.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'Riassumiamo che cosa abbiamo imparato,\nche non riguarda solo il Trecento.\n\nUn evento enorme cambia le condizioni materiali.\nQuelle condizioni aprono una possibilita.\nMa che cosa succede davvero\ndipende da chi ha la forza di approfittarne\ne da chi ha la forza di impedirlo.\n\nA ovest i contadini avevano dove andare.\nA est no.\n\nUltima domanda:\n\nquando qualcuno vi dice «lo decidera l\'economia»,\no «e il progresso tecnico che cambia le cose»,\nche cosa dovreste chiedergli?',
+       parlato:'Rifai la conta iniziale e mostra lo spostamento.\n\nPoi la conclusione di metodo, detta una volta sola: le cause materiali non producono effetti da sole. Aprono possibilita. Chi le raccoglie dipende dai rapporti di forza — cioe da chi puo andarsene, chi puo far rispettare una legge, chi controlla i tribunali.\n\nLa domanda da fare e sempre la stessa: per chi si apre questa possibilita, e chi ha la forza di chiuderla?\n\nUltima cosa, e va detta perche l\'ora si e aperta con venti milioni di morti: nessuna di queste analisi rende la peste meno terribile. Serve a un\'altra cosa — a non trattare le catastrofi come destino. Quello che accade dopo non e scritto nell\'evento: e deciso da come una societa e fatta quando l\'evento arriva.\n\nE la prossima volta vediamo che cosa succede quando anche i due poteri universali che tenevano insieme l\'Europa si sfaldano.',
+       seDicono:[
+         {loro:'«Quindi non c\'e nessuna legge nella storia?»',
+          tu:'Ci sono regolarita forti: quando il lavoro diventa scarso il suo prezzo tende a salire, e questo vale sempre. Quello che non c\'e e l\'automatismo dal fatto economico all\'esito sociale. Le regolarita dicono che cosa spinge; non dicono chi vince.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'Quello che non poteva funzionare',
+       corpo:'Contro la peste furono tentate quasi tutte le cose possibili: processioni, digiuni, salassi, fumigazioni con erbe aromatiche, fuga in campagna, chiusura delle porte cittadine, uccisione di cani e gatti sospettati di portare il contagio.\n\nAlcune misure funzionarono senza che si sapesse perche: la quarantena, introdotta a Ragusa nel 1377 e poi a Venezia, isolava per trenta e poi quaranta giorni le navi in arrivo. Non si conosceva il batterio, ma si era osservato che il contagio arrivava con le navi.\n\nAltre peggiorarono le cose: uccidere i gatti favoriva i ratti.',
+       chiedi:'La quarantena funziona senza che se ne conosca il motivo; l\'uccisione dei gatti peggiora la situazione partendo dallo stesso ragionamento. Che cosa distingue le due misure? E si puo fare la cosa giusta per la ragione sbagliata?'},
+      {titolo:'Il capro espiatorio',
+       corpo:'Nel 1348-1349 decine di comunita ebraiche dell\'Europa centrale furono sterminate con l\'accusa di aver avvelenato i pozzi.\n\nPapa Clemente VI emano due bolle in loro difesa, osservando che gli ebrei morivano di peste come tutti gli altri e che l\'epidemia colpiva anche luoghi dove non ne viveva nessuno.\n\nNon servi. A Strasburgo, nel febbraio 1349, centinaia di ebrei furono uccisi prima ancora che la peste raggiungesse la citta — dopo che il consiglio cittadino favorevole a proteggerli era stato rovesciato.',
+       chiedi:'L\'argomento razionale c\'era, veniva dalla massima autorita, ed era pubblico. Perche non ha funzionato? Che cosa cerca davvero, chi cerca un colpevole in mezzo a una catastrofe?'},
+      {titolo:'La cornice del Decameron',
+       corpo:'Boccaccio apre il Decameron con la descrizione della peste a Firenze nel 1348: i corpi lasciati sulla porta di casa, i becchini che seppelliscono a strati «come si mettono le lasagne», i parenti che si abbandonano, «e questo era il male peggiore».\n\nPoi dieci giovani si allontanano dalla citta e cominciano a raccontarsi storie per dieci giorni.\n\nLe novelle che seguono sono quasi tutte vitali, comiche, spesso licenziose.',
+       chiedi:'Perche cominciare cento novelle allegre con dieci pagine di morti? Che cosa fa il racconto, secondo Boccaccio, di fronte a una cosa del genere? E oggi, che cosa fanno le storie quando succede qualcosa di insopportabile?'}
+    ],
+    testi:[
+      {fonte:'Boccaccio, Decameron, Introduzione (1349-1351)',
+       corpo:'«Era con si fatto spavento questa tribolazione entrata ne\' petti degli uomini e delle donne, che l\'un fratello l\'altro abbandonava e il zio il nipote e la sorella il fratello e spesse volte la donna il suo marito; e, che maggior cosa e e quasi non credibile, li padri e le madri i figliuoli, quasi loro non fossero, di visitare e di servire schifavano.»',
+       glossa:'Boccaccio non descrive la malattia ma il suo effetto sui legami, e lo indica lui stesso come il fatto peggiore. È la testimonianza piu utile in classe, perche sposta l\'attenzione da quanti morirono a che cosa si ruppe fra i vivi.'},
+      {fonte:'Statute of Labourers, 1351 — le pene',
+       corpo:'Il provvedimento stabilisce che chi rifiuti di lavorare alle condizioni fissate possa essere imprigionato, che chi lasci il proprio servizio prima del termine sia punito, e che i datori di lavoro che paghino piu del dovuto siano multati del triplo di quanto hanno versato in eccesso.',
+       glossa:'Da far notare: si puniscono anche i padroni che pagano troppo. È il segno che il problema principale, per i legislatori, era la concorrenza fra proprietari — cioe che il mercato del lavoro funzionava esattamente come funziona quando la manodopera scarseggia.'},
+      {fonte:'Cronaca di Jean Froissart sulla rivolta del 1381',
+       corpo:'Il cronista riferisce le prediche di John Ball, secondo cui «in principio eravamo tutti uguali» e la servitu esiste solo perche uomini ingiusti l\'hanno imposta contro la volonta di Dio; e aggiunge, con evidente disapprovazione, che il popolo lo ascoltava volentieri.',
+       glossa:'Froissart scrive per un pubblico aristocratico e considera Ball un pericoloso agitatore. Vale la pena notarlo: le parole piu radicali del Trecento ci sono arrivate perche un cronista ostile le ha trascritte per condannarle.'}
+    ],
+    compito:'Mezza pagina. Pensate a un evento recente che ha cambiato le condizioni di vita di molte persone insieme — una crisi, una tecnologia, una legge. Poi rispondete a due domande: per chi si e aperta una possibilita, e chi aveva la forza di richiuderla? Se le due risposte coincidono, spiegate perche.',
+    fonti:[
+      'Boccaccio, Decameron, Introduzione alla prima giornata; Jean Froissart, Cronache, libro II',
+      'Ordinance of Labourers (1349); Statute of Labourers (1351)',
+      'Clemente VI, bolla Sicut Judaeis (1348)',
+      'D. Herlihy, La peste nera e la trasformazione dell\'Occidente; W. Abel, Congiuntura agraria e crisi agrarie',
+      'C. Cipolla, Il fiorino e il quattrino; Contro un nemico invisibile',
+      'R. Brenner, Agrarian Class Structure and Economic Development — il dibattito su Ovest ed Est'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',
