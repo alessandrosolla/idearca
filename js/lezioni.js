@@ -9557,6 +9557,223 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Filosofia moderna · 1 — La cultura umanistico-rinascimentale': {
+  mappa: {
+    n:'Umanesimo e Rinascimento', d:'un modo nuovo di leggere i testi, che finisce per cambiare il mondo',
+    f:[
+      {r:'comincia da', n:'Un ritorno agli antichi', d:'che non e nostalgia: e un programma di lavoro',
+       f:[
+         {r:'si chiamano', n:'Studia humanitatis', d:'grammatica, retorica, poesia, storia, filosofia morale: le discipline che formano l\'uomo'},
+         {r:'si vanno a cercare', n:'I codici dimenticati', d:'Poggio Bracciolini trova Lucrezio in un monastero tedesco nel 1417'},
+         {r:'si impara di nuovo il', n:'Greco', d:'con maestri arrivati da Bisanzio: per mille anni in Occidente non lo sapeva quasi nessuno'},
+         {r:'e arriva la', n:'Stampa', d:'1455: un testo corretto una volta resta corretto in mille copie, e la filologia diventa utile'},
+         {piu:true, r:'con le edizioni di', n:'Aldo Manuzio', d:'formato tascabile e corsivo: i classici escono dalle biblioteche ed entrano in tasca'},
+         {r:'e si inventa l\'idea di un\'', n:'Eta di mezzo', d:'un intervallo buio fra gli antichi e noi, da saltare',
+          f:[{piu:true, r:'e la parola', n:'Medioevo nasce cosi', d:'e un\'invenzione polemica di chi voleva collegarsi direttamente all\'antichita'}]}
+       ]},
+
+      {r:'costruisce', n:'Un metodo', d:'la filologia: e questa la vera invenzione dell\'umanesimo',
+       f:[
+         {r:'parte dall\'idea che', n:'La lingua cambia nel tempo', d:'ogni epoca ha parole, forme e usi propri, e li lascia nel testo'},
+         {r:'quindi un testo', n:'Rivela la propria eta', d:'anche contro quello che dichiara di essere'},
+         {r:'Lorenzo Valla lo applica alla', n:'Donazione di Costantino', d:'1440: dimostra che il documento su cui il papato fonda il potere temporale e falso',
+          f:[{r:'usando parole', n:'Che nel Quarto secolo non esistevano', d:'e istituzioni che allora non c\'erano ancora'},
+             {piu:true, r:'e osservando che', n:'Nessuno ne parla per secoli', d:'un atto del genere avrebbe lasciato tracce ovunque, e non ce ne sono'}]},
+         {r:'Erasmo lo applica al', n:'Nuovo Testamento', d:'1516: ristabilisce il testo greco e mostra gli errori della traduzione latina'},
+         {r:'e nasce l\'', n:'Edizione critica', d:'confrontare i manoscritti, ricostruire il testo, dichiarare le proprie scelte'}
+       ]},
+
+      {r:'propone', n:'Una nuova immagine dell\'uomo', d:'che non ha una natura fissa e se la costruisce',
+       f:[
+         {r:'Pico della Mirandola scrive l\'', n:'Orazione sulla dignita', d:'1486: Dio non da\' ad Adamo un posto ne una forma propria'},
+         {r:'l\'uomo e', n:'Senza confini assegnati', d:'puo degradarsi fino alle bestie o innalzarsi fino al divino'},
+         {r:'quindi la sua natura e', n:'Cio che decide di diventare', d:'e la prima volta che l\'indeterminatezza viene detta come pregio'},
+         {r:'Ficino lo colloca al', n:'Centro della catena degli esseri', d:'copula mundi: l\'unico che partecipa di tutto'},
+         {piu:true, r:'e cambia anche il', n:'Ritratto', d:'volti individuali e riconoscibili, non figure simboliche: si dipinge questa persona qui'},
+         {r:'e ne segue una', n:'Rivalutazione dell\'agire', d:'la vita attiva, il lavoro, l\'arte non sono inferiori alla contemplazione'}
+       ]},
+
+      {r:'riscopre', n:'Platone', d:'e con lui una tradizione piu antica e piu strana',
+       f:[
+         {r:'Ficino traduce', n:'Tutto Platone in latino', d:'per la prima volta: prima se ne conoscevano un dialogo e mezzo'},
+         {r:'e apre l\'', n:'Accademia fiorentina', d:'sotto i Medici: non una scuola, un circolo di lettura e discussione'},
+         {r:'traduce anche il', n:'Corpus ermetico', d:'testi attribuiti a un antichissimo sapiente egiziano, Ermete Trismegisto',
+          f:[{r:'convinto che esista una', n:'Antichissima teologia', d:'una sapienza unica trasmessa da Mosè, Ermete, Orfeo e Platone'},
+             {piu:true, r:'e Casaubon dimostrera nel 1614 che', n:'Sono testi tardi', d:'scritti nei primi secoli dopo Cristo: la filologia smonta cio che l\'umanesimo aveva costruito'}]},
+         {r:'e il risultato e un platonismo', n:'Mescolato di religione e magia', d:'molto lontano da come lo leggiamo oggi'}
+       ]},
+
+      {r:'ripensa', n:'La natura', d:'come un organismo vivo di cui si possono usare le forze',
+       f:[
+         {r:'la', n:'Magia naturale', d:'non evocazione di demoni ma tecnica: conoscere le corrispondenze e sfruttarle'},
+         {r:'poggia su un\'idea di', n:'Simpatie e corrispondenze', d:'ogni cosa quaggiu risponde a qualcosa lassu'},
+         {r:'l\'astrologia e', n:'Presa sul serio da quasi tutti', d:'principi, papi e medici la usano per decidere'},
+         {r:'e Bruno spinge fino all\'', n:'Universo infinito', d:'infiniti mondi, nessun centro, e Dio dentro le cose',
+          f:[{r:'per cui verra', n:'Bruciato nel 1600', d:'per tesi teologiche, non per la cosmologia: ma anche quella pesava'}]},
+         {r:'e resta discusso quanto tutto questo', n:'Prepari o ostacoli la scienza', d:'e l\'idea di poter agire sulla natura, ed e senza controllo sperimentale'}
+       ]},
+
+      {r:'separa', n:'La politica dalla morale', d:'ed e la rottura piu netta di tutto il periodo',
+       f:[
+         {r:'Machiavelli propone la', n:'Verita effettuale della cosa', d:'guardare come si governa davvero, non come si dovrebbe governare'},
+         {r:'quindi chi vuole', n:'Essere buono in tutto si rovina', d:'fra molti che non lo sono: e un\'affermazione sui fatti, non un consiglio morale'},
+         {r:'introduce il gioco fra', n:'Virtu e fortuna', d:'la capacita di chi agisce contro cio che non dipende da lui'},
+         {r:'e distingue', n:'Il fine dello Stato dal bene dell\'anima', d:'due terreni diversi, con criteri diversi'},
+         {r:'Guicciardini aggiunge il', n:'Particulare', d:'l\'interesse proprio come chiave per capire i comportamenti altrui'},
+         {piu:true, r:'e ne nasce l\'espressione', n:'Ragion di Stato', d:'coniata dopo, per dire che lo Stato ha ragioni che la morale privata non conosce'}
+       ]},
+
+      {r:'produce anche', n:'Critica e utopia', d:'perche lo stesso metodo si puo rivolgere al presente',
+       f:[
+         {r:'Erasmo scrive l\'', n:'Elogio della follia', d:'1511: la Follia in persona elogia se stessa, e demolisce teologi, principi e prelati'},
+         {r:'e propone una', n:'Filosofia di Cristo', d:'religione interiore, poche dottrine, molta pratica: e l\'umanesimo cristiano'},
+         {r:'More pubblica', n:'Utopia', d:'1516: un\'isola dove non esiste proprieta privata e si lavora sei ore al giorno',
+          f:[{r:'con una critica durissima all\'', n:'Inghilterra del suo tempo', d:'le recinzioni, la pena di morte per furto, le pecore che divorano gli uomini'},
+             {piu:true, r:'e un nome che significa', n:'Nessun luogo', d:'ambiguo di proposito: non si capisce se lo proponga o lo descriva soltanto'}]},
+         {piu:true, r:'e nasce l\'idea di', n:'Repubblica delle lettere', d:'una comunita di studiosi che si scrivono sopra i confini e le confessioni'},
+         {r:'e si comincia a criticare', n:'La guerra come impresa dei principi', d:'pagata da chi non l\'ha decisa'}
+       ]},
+
+      {r:'finisce', n:'Piu presto di quanto sembri', d:'e lascia strumenti piu che dottrine',
+       f:[
+         {r:'era una cultura di', n:'Corti e mecenati', d:'senza un principe che paga, quasi nessuno di quei testi sarebbe stato scritto'},
+         {r:'poche donne vi accedono', n:'E pagando un prezzo', d:'a chi studia si chiede di rinunciare al matrimonio o alla vita pubblica'},
+         {r:'le guerre d\'Italia', n:'Distruggono le corti', d:'dopo il 1494 il sistema che lo finanziava si sfalda'},
+         {r:'la Riforma e Trento', n:'Chiudono lo spazio', d:'il libero esame dei testi diventa sospetto per entrambe le parti'},
+         {r:'e resta la', n:'Biblioteca come istituzione', d:'raccolte pubbliche aperte agli studiosi: il sapere smette di essere privato'},
+         {r:'ma restano', n:'Il metodo e le lingue', d:'la filologia passa alla scienza, e leggere criticamente diventa un\'abitudine mentale'}
+       ]}
+    ],
+    incroci:[
+      {da:'La lingua cambia nel tempo', a:'Sono testi tardi', r:'e lo stesso principio che permette di dimostrare che i testi ermetici',
+       perche:'Il metodo che Valla usa contro la Donazione viene applicato da Casaubon, un secolo e mezzo dopo, ai testi su cui Ficino aveva fondato tutta la propria filosofia. Lo strumento inventato dall\'umanesimo demolisce una delle costruzioni piu care all\'umanesimo: un metodo serio non risparmia chi lo ha inventato.'},
+      {da:'Che nel Quarto secolo non esistevano', a:'Nuovo Testamento', r:'e la stessa tecnica che Erasmo applica al',
+       perche:'Si guarda la lingua per stabilire l\'eta e l\'autenticita di un testo, e lo si fa prima su un documento imperiale e poi sulla Scrittura. Il passaggio e enorme: dall\'esame di un atto giuridico a quello del libro sacro, con lo stesso metodo e senza chiedere permesso.'},
+      {da:'Senza confini assegnati', a:'Verita effettuale della cosa', r:'e l\'immagine dell\'uomo su cui poggia anche la',
+       perche:'Se l\'uomo non ha una natura fissa ma si costruisce con le proprie scelte, allora la politica non e l\'applicazione di un ordine dato: e un campo in cui la capacita di chi agisce fa la differenza. Pico e Machiavelli dicono cose lontanissime e condividono il presupposto — l\'uomo e cio che riesce a fare.'},
+      {da:'Corti e mecenati', a:'Accademia fiorentina', r:'sono la condizione materiale di istituzioni come l\'',
+       perche:'Ficino traduce Platone perche Cosimo de\' Medici gli assegna una villa e uno stipendio. Quasi tutta la produzione umanistica dipende da questo rapporto: un\'elite colta finanziata da chi ha bisogno di prestigio. È una cultura splendida e strettissima, e questo ne spiega anche la fragilita.'},
+      {da:'Distruggono le corti', a:'Il metodo e le lingue', r:'lasciano in piedi soltanto',
+       perche:'Dopo il 1494 il sistema dei mecenati italiani si sfalda, e con esso il mondo che aveva prodotto l\'Accademia e le grandi biblioteche. Sopravvive cio che non dipende da un principe: la conoscenza del greco, l\'edizione critica, l\'abitudine a confrontare i manoscritti. Le tecniche viaggiano meglio delle istituzioni.'},
+      {da:'Universo infinito', a:'Simpatie e corrispondenze', r:'nasce dentro un mondo di',
+       perche:'Bruno arriva agli infiniti mondi non per calcolo astronomico ma per una convinzione metafisica: un Dio infinito non puo che produrre un universo infinito. Le sue conclusioni somigliano a quelle della scienza moderna e le ragioni sono diversissime — ed e per questo che chiamarlo martire della scienza e impreciso.'},
+      {da:'Prepari o ostacoli la scienza', a:'Rivalutazione dell\'agire', r:'dipende anche dalla',
+       perche:'La magia naturale non e osservazione controllata, e introduce un\'idea decisiva: che la natura si possa manipolare con la tecnica invece che solo contemplare. Quell\'idea passera intatta alla scienza sperimentale, che sostituira le corrispondenze con le misure ma terra l\'obiettivo di intervenire.'},
+      {da:'Inghilterra del suo tempo', a:'Il fine dello Stato dal bene dell\'anima', r:'e criticata con criteri opposti a chi separa',
+       perche:'More e Machiavelli sono contemporanei e prendono strade opposte: uno immagina una societa fondata sulla giustizia per mostrare quanto sia ingiusta la propria, l\'altro descrive la politica come funziona e rinuncia a giudicarla. Sono le due reazioni possibili alla stessa scoperta — che il potere non segue la morale.'},
+      {da:'Eta di mezzo', a:'Medioevo nasce cosi', r:'produce la parola stessa, perche l\'',
+       perche:'Nessuno nel Medioevo sapeva di viverci. La periodizzazione la inventano gli umanisti, per dire che fra gli antichi e loro c\'e un buco da saltare. È un\'operazione polemica diventata categoria scolastica, ed e utile ricordarlo ogni volta che si usa quella parola.'},
+      {da:'Greco', a:'Tutto Platone in latino', r:'e cio che rende possibile tradurre',
+       perche:'Per mille anni in Occidente il greco era noto a pochissimi, e Platone circolava in un dialogo e mezzo. L\'arrivo di maestri bizantini, accelerato dalla caduta di Costantinopoli, rende disponibile un corpus intero. Ancora una volta la storia del pensiero dipende da chi sa leggere che cosa.'},
+      {da:'La guerra come impresa dei principi', a:'Filosofia di Cristo', r:'e criticata in nome della',
+       perche:'Erasmo attacca la guerra sostenendo che nulla e piu lontano dal Vangelo, e che i principi la fanno con il denaro e il sangue di chi non l\'ha decisa. È una critica condotta con le armi dell\'umanesimo cristiano — il ritorno al testo evangelico contro l\'uso politico della religione.'},
+      {da:'E pagando un prezzo', a:'Studia humanitatis', r:'e la condizione a cui le donne accedono agli',
+       perche:'Poche donne umaniste ottengono di studiare, e quasi sempre a patto di rinunciare al matrimonio o di ritirarsi dalla vita pubblica: la cultura viene concessa come eccezione individuale, non come diritto. La dignita dell\'uomo proclamata da Pico non produce nessun cambiamento nella condizione femminile.'},
+      {da:'Nessuno ne parla per secoli', a:'Edizione critica', r:'e un argomento che entra nel corredo dell\'',
+       perche:'Valla non usa solo la lingua: osserva che un atto tanto clamoroso non ha lasciato traccia nelle fonti dei secoli successivi. L\'argomento dal silenzio, usato con prudenza, diventa uno degli strumenti standard della critica dei testi — e vale ancora oggi per riconoscere un falso.'}
+    ]
+  },
+  provocazione: {
+    titolo:'Come si smaschera un documento',
+    durata:'55 minuti',
+    domandaMadre:'Come si fa a sapere che un testo mente?',
+    perche:'Nel 1440 Lorenzo Valla dimostra che la Donazione di Costantino — il documento su cui il papato fondava il proprio potere temporale — e un falso, e lo fa senza avere prove esterne: soltanto leggendolo. Usa parole che nel Quarto secolo non esistevano, istituzioni che non c\'erano ancora, e il silenzio delle fonti successive. È la nascita della critica dei testi, cioe di uno strumento che l\'Occidente usera per settecento anni su tutto, compreso chi lo aveva inventato. Il colpo di scena e che Valla lavorava per il re di Napoli, in guerra col papa: la prima grande dimostrazione filologica della storia e un\'arma politica commissionata — ed e vera.',
+    occorrente:'Niente.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'Per settecento anni il papato\nha fondato il proprio potere\nsu un documento.\n\nSi chiama Donazione di Costantino.\n\nDice che l\'imperatore Costantino,\nguarito dalla lebbra\ngrazie a papa Silvestro,\nnel Quarto secolo\ngli avrebbe donato\nRoma, l\'Italia e tutto l\'Occidente,\ntrasferendo se stesso a Bisanzio.\n\nCitato nei concili.\nInserito nelle raccolte di diritto.\nDipinto sulle pareti delle chiese.\n\n1440. Un umanista di ventotto anni\nlo legge con attenzione.\n\nNon ha nessun documento nuovo.\nNon ha nessuna prova esterna.\n\nHa solo il testo.\n\nE dimostra che e falso.',
+       parlato:'Costruisci prima il peso del documento: sette secoli di uso pubblico, in tribunali e concili.\n\nPoi il rovesciamento, e insisti sulla condizione: Valla non trova un archivio, non riceve una confessione, non ha altre fonti. Ha il foglio, e basta.\n\nDomanda per aprire: come si fa?\n\nRaccogli le ipotesi prima di dare la risposta. Di solito arrivano cose interessanti — la calligrafia, il tipo di carta, i sigilli. Fai notare che sono tutte cose materiali, e che Valla lavorava su copie, quindi non poteva usarle.\n\nGli restava una cosa sola: la lingua.',
+       seDicono:[
+         {loro:'«Nessuno ci aveva mai pensato prima?»',
+          tu:'Qualcuno aveva avuto dei dubbi — Dante e Marsilio da Padova per ragioni politiche, e alcuni giuristi per incongruenze. Ma nessuno lo aveva dimostrato con un metodo, e la differenza fra sospettare e dimostrare e esattamente il tema di oggi.'},
+         {loro:'«Come faceva a essere sicuro?»',
+          tu:'Non con una prova sola: con moltissimi indizi convergenti. È il modo in cui funzionano quasi tutte le dimostrazioni storiche, ed e piu solido di quanto sembri — un indizio si spiega, venti indizi che vanno tutti nella stessa direzione no.'}
+       ]},
+
+      {minuti:'8–17', et:'Lo schieramento',
+       schermo:'Un documento antico,\nusato da secoli\ne accettato da tutti:',
+       opzioni:['va creduto, finche qualcuno non prova il contrario', 'va verificato, e finche non lo si verifica non prova nulla'],
+       parlato:'Fai schierare e conta. Di solito la prima opzione prende piu voti di quanto ci si aspetti, e va presa sul serio: e la posizione di chi dice che non si puo mettere in dubbio tutto ogni volta.\n\nPoi metti alla prova entrambe le posizioni.\n\nAlla prima: se un documento vale finche non lo smentiscono, allora chiunque possa produrre un documento antico convincente ha vinto in partenza. E chi ha gli archivi, i copisti e i notai? Chi comanda.\n\nAlla seconda: verificare tutto e impossibile. Nessuno di noi ha controllato personalmente i documenti su cui si fonda quasi nulla di cio che sa. A un certo punto bisogna fidarsi di qualcuno.\n\nDa qui la domanda vera, che apre il resto dell\'ora: non se fidarsi o no, ma a quali condizioni una verifica e possibile — e chi puo farla.\n\nQuesto e il punto in cui Valla cambia la storia: rende la verifica una tecnica, invece che un privilegio di chi ha accesso agli originali.',
+       seDicono:[
+         {loro:'«Se dubitiamo di tutto non sappiamo più niente.»',
+          tu:'Giusto, e infatti nessuno propone di dubitare di tutto. Si propone qualcosa di piu modesto: che un documento su cui si fondano poteri enormi meriti un controllo proporzionato. Piu una carta pesa, piu vale la pena guardarla da vicino.'},
+         {loro:'«Ma se tutti l\'hanno sempre accettato, qualcosa vorrà dire.»',
+          tu:'Vuol dire che era comodo per chi decideva. L\'accettazione lunga e un indizio debole: misura quanto una cosa e stata utile, non quanto e vera. E su questo Valla ha una battuta feroce che leggeremo fra venti minuti.'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'Come ci arriva.\n\nPrimo argomento: le parole.\n\nIl documento usa termini che\nnel Quarto secolo non esistevano,\ne che appartengono al latino\ndi molti secoli dopo.\n\nParla di feudi, di satrapi,\ndi consoli in un senso\nche allora non aveva,\ne di una tiara papale\nche a quell\'epoca\nnessun papa portava.\n\nSecondo argomento: le cose.\n\nDescrive istituzioni,\ncerimonie e cariche\nche nel Quarto secolo\nnon c\'erano ancora.\n\nTerzo argomento: il silenzio.\n\nUn atto del genere\navrebbe cambiato l\'impero.\nNessuna cronaca, nessuna moneta,\nnessuna legge del tempo\nne fa il minimo cenno.\n\nQuarto: il buon senso.\n\nUn imperatore regala\nmetà del mondo\nper una guarigione,\ne il senato tace?',
+       parlato:'Presenta i quattro argomenti in ordine crescente di forza, e fai notare che sono di natura diversa.\n\nSul primo insisti, perche e il piu tecnico e il piu bello: le parole hanno una data. Un termine feudale in un documento tardoantico e come trovare la parola computer in una lettera dell\'Ottocento — non prova la malafede di chi l\'ha scritto, prova quando e stato scritto.\n\nFai fare l\'esercizio, che di solito li diverte: chiedi che parola di oggi tradirebbe fra cinquecento anni un falso ambientato nel 2026.\n\nSul terzo, il silenzio, avverti che va usato con prudenza: dal fatto che non abbiamo notizie non segue sempre che una cosa non sia avvenuta. Funziona quando l\'evento sarebbe stato cosi grande da lasciare tracce ovunque — ed e il caso.\n\nPoi il punto generale, che e la cosa da portare a casa: nessuno di questi argomenti da solo sarebbe decisivo. Insieme lo sono, perche dovrebbero essere tutti sbagliati contemporaneamente e nello stesso verso.\n\nÈ cosi che funziona una dimostrazione storica: non una prova regina, ma indizi indipendenti che convergono.',
+       seDicono:[
+         {loro:'«E se il documento fosse una copia rifatta con parole nuove?»',
+          tu:'Obiezione ottima, e va posta sempre: un copista puo modernizzare. Ma un copista aggiorna qualche parola, non inventa istituzioni inesistenti, cerimonie sbagliate e un contesto storico intero. Ed e per questo che gli argomenti devono essere di tipi diversi: uno solo si spiega, quattro no.'},
+         {loro:'«Chi lo aveva scritto, allora?»',
+          tu:'Oggi si ritiene che sia stato prodotto nella cancelleria papale intorno all\'Ottavo secolo, in un momento in cui al papato serviva un titolo giuridico sui territori italiani. Valla non lo sapeva con certezza e non gli serviva: per dimostrare che un testo e falso non occorre sapere chi l\'ha fatto.'}
+       ]},
+
+      {minuti:'28–38', et:'Il testo',
+       schermo:'Dal libro di Valla.\n\nDopo aver elencato gli errori,\nsi rivolge direttamente\nall\'autore del falso.\n\nGli chiede come mai parli\ndi satrapi, quando i romani\nnon usavano quella parola\ne lui evidentemente\nl\'ha presa da altrove;\n\ncome possa Costantino\nnominare Costantinopoli\ncome sede patriarcale,\nquando la citta\nnon era ancora stata fondata;\n\ne osserva che chi ha scritto\nquelle righe\nnon conosceva ne le cose\nne le parole del tempo\ndi cui pretendeva di parlare.\n\nPoi aggiunge la frase\nche vale tutto il libro:\n\nche non teme gli uomini\nche difendono l\'errore,\nma teme che l\'abitudine\nlo abbia reso invisibile.',
+       testo:{fonte:'Lorenzo Valla, La falsa e menzognera donazione di Costantino, 1440',
+              glossa:'Il tono è aggressivo e persino insolente: Valla interroga il falsario come in un processo. Il libro non fu stampato subito e circolò manoscritto; venne pubblicato nel 1517 — e fu Ulrich von Hutten, vicino a Lutero, a farlo. Un testo scritto per una guerra fra un re e un papa arriva al pubblico ottant\'anni dopo, come arma della Riforma.'},
+       parlato:'Leggi il passo e fermati sulla domanda su Costantinopoli, che e la piu semplice e la piu devastante: il documento fa nominare a Costantino una citta che ancora non esisteva.\n\nPoi lavora sulla frase finale, perche e quella filosoficamente importante. Valla dice di non temere chi difende l\'errore ma l\'abitudine che lo rende invisibile.\n\nDomanda per la classe: che cosa significa che un errore diventa invisibile?\n\nGuidali: significa che smette di essere una tesi da sostenere e diventa uno sfondo. Nessuno difende la Donazione perche nessuno pensa che ci sia qualcosa da difendere — e proprio per questo nessuno la esamina.\n\nÈ la condizione piu favorevole per un falso: non essere contestato, ma non essere nemmeno guardato.\n\nSe la classe regge, aggiungi la domanda che li riguarda: quali cose date per scontate intorno a voi nessuno esamina piu, non perche siano state verificate, ma perche ci si e abituati?',
+       seDicono:[
+         {loro:'«Non è stato coraggioso, era protetto dal re.»',
+          tu:'Verissimo, e non toglie tutto: fu comunque processato dall\'Inquisizione qualche anno dopo, per altri scritti, e se la cavo grazie alla protezione di Alfonso. Il coraggio con le spalle coperte vale meno; vale ancora qualcosa quando il testo resta anche dopo che la protezione finisce.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'Adesso il contesto.\n\nNel 1440 Lorenzo Valla\nera al servizio\ndi Alfonso d\'Aragona,\nre di Napoli.\n\nAlfonso era in guerra\ncon papa Eugenio IV\nper il controllo di territori\nche il papa rivendicava\nsulla base di quale documento?\n\nDella Donazione di Costantino.\n\nQuindi:\nla prima grande dimostrazione\nfilologica della storia\ne un\'arma commissionata,\nscritta da un dipendente\ndi una delle parti in causa,\nnel mezzo di una guerra.\n\nEd e vera.\n\nQualche anno dopo\nValla si trasferisce a Roma\ne lavora per il papato,\ncome segretario apostolico.\n\nNessuno gli chiese\ndi ritrattare.',
+       parlato:'Dai il contesto e lascia che l\'effetto si depositi: il sospetto e legittimo e va formulato per intero.\n\nPoi la domanda dell\'ora, che e una domanda di filosofia della conoscenza: una dimostrazione fatta per interesse vale meno di una fatta in modo disinteressato?\n\nRaccogli le posizioni, e poi guidali alla distinzione che serve.\n\nSapere che qualcuno ha un interesse a sostenere una tesi e un ottimo motivo per controllare i suoi argomenti con attenzione. Non e un motivo per considerarli falsi. Chi confonde le due cose commette l\'errore che i logici chiamano attacco alla persona: si risponde a chi parla invece che a cio che dice.\n\nE nel caso specifico la verifica e stata fatta: gli argomenti di Valla hanno retto per sei secoli, e oggi nessuno storico, cattolico o no, sostiene che la Donazione sia autentica.\n\nPoi il dettaglio che chiude: Valla poi lavora per il papato. Non perche avesse ritrattato — perche il papato aveva bisogno di gente che sapesse il greco, e le competenze contano piu delle polemiche.\n\nE infine il seguito piu importante: il metodo. Erasmo lo applica al Nuovo Testamento; Lutero usera Erasmo; e nel 1614 Casaubon lo applicherà ai testi ermetici su cui Ficino aveva fondato la propria filosofia, dimostrando che erano tardi. Lo strumento nato per colpire il papa finisce per demolire anche le cose care a chi lo aveva forgiato.',
+       seDicono:[
+         {loro:'«Allora l\'ha fatto solo per soldi.»',
+          tu:'Anche. E aveva ragione. Sono due affermazioni compatibili, ed e importante che lo restino: se una tesi diventasse falsa perche chi la sostiene ci guadagna, non resterebbe quasi niente di vero al mondo. Il movente si controlla; la conclusione si verifica.'},
+         {loro:'«Il papato lo ha assunto? Non è credibile.»',
+          tu:'Successe davvero, ed e uno dei fatti piu istruttivi del Quattrocento. Roma aveva bisogno di grecisti e Valla era il migliore in circolazione. Le istituzioni sono spesso piu pragmatiche di come le immaginiamo, e in questo caso il pragmatismo funziono meglio della coerenza.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'Riprendiamo la domanda.\n\nCome si fa a sapere\nche un testo mente?\n\nQuattro strumenti,\ne valgono ancora.\n\nLe parole hanno una data:\nun termine fuori posto\ntradisce il tempo\nin cui e stato scritto.\n\nLe cose hanno una data:\nistituzioni, oggetti, cerimonie\nappartengono a un\'epoca.\n\nIl silenzio pesa,\nquando l\'evento sarebbe stato\ntroppo grande per non lasciare tracce.\n\nE nessuno di questi\nbasta da solo:\nservono indizi indipendenti\nche vadano nella stessa direzione.\n\nUltima cosa da portarsi via.\n\nValla temeva l\'abitudine\npiu degli avversari.\n\nUn falso non si difende\nda solo.\n\nGli basta non essere guardato.',
+       parlato:'Riepiloga i quattro strumenti e falli enunciare a loro: e la parte utile della lezione, e serve ben oltre il Quattrocento.\n\nPoi porta il metodo all\'oggi, e falli lavorare invece di spiegare tu. Chiedi come si verifica adesso se un documento, una citazione, un\'immagine sono autentici. Verranno fuori cose sensate — cercare la fonte originale, controllare le date, vedere se altri ne parlano, chiedersi a chi conviene.\n\nFai notare che sono le stesse quattro operazioni di Valla, con strumenti diversi.\n\nPoi la formulazione finale sull\'abitudine, che e il vero lascito filosofico dell\'umanesimo: un falso sopravvive non perche sia difeso bene, ma perche smette di essere esaminato. Vale per i documenti e vale per le idee.\n\nChiudi con la traiettoria che apre il seguito: il metodo di Valla passa a Erasmo che lo applica alla Scrittura, e da li a chiunque legga un testo per capire quando e stato scritto e da chi. Nel secolo successivo la stessa esigenza — non fidarsi di cio che e stato tramandato, e voler verificare da se — si sposta dai libri alla natura. Si chiamera rivoluzione scientifica, e comincia dalla stessa impazienza.',
+       seDicono:[
+         {loro:'«Oggi con l\'intelligenza artificiale i falsi sono perfetti.»',
+          tu:'Sono migliori sulla superficie — la lingua, le immagini, la voce. Restano deboli sugli stessi punti di sempre: il contesto, le date, la coerenza con tutto il resto di cio che sappiamo. È probabile che i prossimi falsi si smaschereranno come quello di Valla: non perche suonino male, ma perche dicono cose che non tornano con il mondo in cui pretendono di stare.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'L\'uomo senza posto',
+       corpo:'Nell\'Orazione sulla dignità dell\'uomo, Pico immagina Dio che si rivolge ad Adamo dicendogli di non avergli assegnato né un posto determinato né una forma propria né alcun compito particolare, perché possa avere e possedere il posto, la forma e i compiti che egli stesso avrà scelto.\n\nÈ un rovesciamento: ciò che nella tradizione era una mancanza — l\'uomo non ha artigli, né pelliccia, né un ruolo naturale — diventa il suo privilegio.\n\nPico aveva ventitré anni. Le novecento tesi che l\'Orazione doveva introdurre furono in parte condannate e la disputa pubblica non si tenne mai.',
+       chiedi:'Un\'assenza di natura trasformata in libertà. Vi convince? E che cosa comporta, per una persona, non poter dire «io sono fatto così» — è più una liberazione o un peso?'},
+      {titolo:'Come si governa davvero',
+       corpo:'Machiavelli dichiara di voler andare dietro alla verità effettuale della cosa piuttosto che all\'immaginazione di essa, e osserva che molti hanno immaginato repubbliche e principati mai visti né conosciuti.\n\nNe trae che chi voglia essere buono in tutto, fra tanti che buoni non sono, va necessariamente in rovina.\n\nIl Principe fu scritto in pochi mesi, da un funzionario che aveva perso l\'incarico, ed era dedicato a un Medici — anche nella speranza di essere riassunto.',
+       chiedi:'Descrivere come stanno le cose invece di come dovrebbero stare: è realismo o è una giustificazione? E si può descrivere un comportamento senza in qualche modo autorizzarlo?'},
+      {titolo:'Nessun luogo',
+       corpo:'Nell\'Utopia di Thomas More l\'isola non conosce proprietà privata, si lavora sei ore al giorno, l\'oro serve per le catene dei criminali e i pasti sono in comune.\n\nMore era un giurista al servizio di Enrico VIII, cattolico rigoroso, e da lord cancelliere fece perseguitare gli eretici. Fu decapitato nel 1535 per essersi rifiutato di riconoscere il re come capo della Chiesa.\n\nIl nome Utopia significa, in greco, luogo che non esiste; il narratore che descrive l\'isola si chiama, sempre in greco, «esperto di frottole».',
+       chiedi:'L\'autore mette due indizi che dicono al lettore di non prendere il racconto alla lettera. Perché costruire con tanta cura una società che si dichiara inesistente? A che cosa serve immaginare un ordine che non si propone davvero?'}
+    ],
+    testi:[
+      {fonte:'Erasmo da Rotterdam, Elogio della follia, 1511',
+       corpo:'La Follia, che parla in prima persona, sostiene che senza di lei nessuna società starebbe insieme, perché nessun matrimonio, nessuna amicizia e nessuna impresa umana reggerebbe se gli uomini vedessero le cose come sono; e passa poi in rassegna teologi, monaci, principi e pontefici, mostrandone la vanità.',
+       glossa:'L\'espediente è raffinato: chi parla è la Follia, quindi l\'autore può dire tutto senza esporsi, e chi si offende ammette di riconoscersi. Erasmo lo dedicò all\'amico Thomas More giocando sul suo nome. Da usare per mostrare come la satira permetta di dire cose che in forma diretta sarebbero state impubblicabili.'},
+      {fonte:'Machiavelli, Il Principe, capitolo XVIII — sulla parola data',
+       corpo:'Il capitolo sostiene che un signore prudente non può né deve osservare la fede data quando tale osservanza gli si volga contro e siano venute meno le ragioni che gliela fecero promettere; e aggiunge che se gli uomini fossero tutti buoni questo precetto non sarebbe buono, ma poiché sono tristi e non la osserverebbero con te, neppure tu devi osservarla con loro.',
+       glossa:'Va letto insieme al capitolo XV sulla verità effettuale: la tesi non è che mentire sia bene, ma che in un mondo in cui gli altri mentono chi non lo fa perde. Vale la pena discutere in classe se sia una descrizione o una prescrizione — Machiavelli sostiene la prima, e i suoi lettori hanno quasi sempre inteso la seconda.'},
+      {fonte:'Marsilio Ficino, dalla dedica della traduzione di Platone',
+       corpo:'Ficino presenta la propria opera come il recupero di una sapienza antichissima e unica, trasmessa da Ermete Trismegisto a Orfeo, da Orfeo a Pitagora e infine a Platone, e sostiene che essa concorda nella sostanza con la rivelazione cristiana.',
+       glossa:'La tesi della «prisca theologia» regge tutto il neoplatonismo fiorentino e si fonda su una datazione sbagliata: i testi ermetici, ritenuti antichissimi, sono dei primi secoli dopo Cristo. Lo dimostrerà Isaac Casaubon nel 1614 — con il metodo filologico che l\'umanesimo stesso aveva inventato.'}
+    ],
+    compito:'Mezza pagina. Trovate un\'affermazione che circola come vera e che nessuno intorno a voi mette in discussione — un dato, una citazione attribuita a qualcuno, una notizia che tutti danno per scontata. Poi provate ad applicarle i quattro strumenti di Valla: le parole tornano, le cose tornano, qualcuno ne parlava all\'epoca, e gli indizi vanno tutti nella stessa direzione? Scrivete che cosa avete trovato, anche se il risultato è che l\'affermazione regge.',
+    fonti:[
+      'L. Valla, De falso credita et ementita Constantini donatione (1440)',
+      'G. Pico della Mirandola, Oratio de hominis dignitate (1486); M. Ficino, Theologia platonica',
+      'Erasmo, Elogio della follia (1511); T. More, Utopia (1516); Machiavelli, Il Principe (1513)',
+      'E. Garin, L\'umanesimo italiano; La cultura filosofica del Rinascimento italiano',
+      'P. O. Kristeller, Concetti rinascimentali dell\'uomo; A. Grafton, Falsari e critici',
+      'F. Yates, Giordano Bruno e la tradizione ermetica'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',
