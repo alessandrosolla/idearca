@@ -8226,6 +8226,231 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Storia moderna · 11 — La Rivoluzione francese': {
+  mappa: {
+    n:'La Rivoluzione francese', d:'come un paese che chiedeva riforme arriva dove nessuno voleva andare',
+    f:[
+      {r:'comincia da', n:'Una crisi finanziaria', d:'non da un\'idea: da conti che non tornano piu',
+       f:[
+         {r:'il debito assorbe', n:'Circa meta delle entrate', d:'eredita di ottant\'anni di guerre, l\'ultima quella americana'},
+         {r:'i ministri propongono', n:'Di tassare anche i privilegiati', d:'e la soluzione ovvia, ed e quella che non passa'},
+         {r:'i privilegiati rispondono', n:'Convocate gli Stati generali', d:'sicuri di poterli controllare: e la mossa che apre tutto',
+          f:[{piu:true, r:'gli storici la chiamano', n:'Rivolta nobiliare', d:'la Rivoluzione comincia da un\'iniziativa dei privilegiati contro il re'}]},
+         {r:'si aggiunge il', n:'Cattivo raccolto del 1788', d:'nell\'estate 1789 il pane costa a un operaio piu di meta giornata di lavoro'},
+         {r:'e nel 1789 si scrivono i', n:'Quaderni delle lamentele', d:'circa sessantamila, da ogni villaggio e corporazione del regno'}
+       ]},
+
+      {r:'esplode nel', n:'1789', d:'e in cinque mesi cambia tutto quello che non era cambiato in secoli',
+       f:[
+         {r:'a maggio si litiga su', n:'Come votare', d:'per ordine o per testa: e la questione che decide chi comanda'},
+         {r:'a giugno il Terzo stato si proclama', n:'Assemblea nazionale', d:'e giura di non sciogliersi prima di aver dato una costituzione'},
+         {r:'il 14 luglio cade la', n:'Bastiglia', d:'una fortezza con sette detenuti: conta il simbolo e conta la polvere da sparo'},
+         {r:'nelle campagne dilaga la', n:'Grande Paura', d:'voci di briganti pagati dai nobili: i contadini bruciano gli archivi feudali',
+          f:[{r:'perche negli archivi ci sono', n:'I titoli dei diritti signorili', d:'bruciare le carte significa cancellare i canoni da pagare'}]},
+         {r:'la notte del 4 agosto si aboliscono', n:'I privilegi feudali', d:'in poche ore, per acclamazione, in un\'assemblea presa dall\'entusiasmo'},
+         {piu:true, r:'e nasce la', n:'Guardia nazionale', d:'cittadini in armi che si autoorganizzano: chi ha le armi conta, e non e piu solo il re'},
+         {r:'e il 26 agosto si approva la', n:'Dichiarazione dei diritti', d:'uomini liberi e uguali nei diritti, sovranita nella nazione, legge uguale per tutti'}
+       ]},
+
+      {r:'prova con una', n:'Monarchia costituzionale', d:'e fallisce per due errori e un tradimento',
+       f:[
+         {r:'si vendono i', n:'Beni della Chiesa', d:'per pagare il debito: chi li compra diventa nemico di ogni ritorno indietro'},
+         {r:'ma si impone la', n:'Costituzione civile del clero', d:'1790: i preti diventano funzionari eletti e devono giurare',
+          f:[{r:'e il paese si spacca fra', n:'Giurati e refrattari', d:'circa meta del clero rifiuta: nasce una controrivoluzione popolare, non solo nobiliare'},
+             {piu:true, r:'ed e forse', n:'L\'errore decisivo', d:'senza di esso la Vandea probabilmente non ci sarebbe stata'}]},
+         {r:'il re tenta la', n:'Fuga a Varennes', d:'1791: viene riconosciuto e riportato indietro come un prigioniero'},
+         {r:'da quel momento', n:'Nessuno si fida piu di lui', d:'un re che scappa ha detto da che parte sta'},
+         {r:'la costituzione del 1791 prevede un', n:'Suffragio censitario', d:'votano i cittadini attivi, cioe chi paga abbastanza imposte'}
+       ]},
+
+      {r:'precipita con', n:'La guerra', d:'ed e la guerra a produrre tutto il resto',
+       f:[
+         {r:'dichiarata nell\'aprile', n:'1792', d:'la vogliono quasi tutti, per ragioni opposte'},
+         {r:'i girondini per', n:'Esportare la rivoluzione', d:'e il re sperando che la Francia perda e lo rimetta al suo posto'},
+         {r:'le prime sconfitte fanno nascere', n:'Il sospetto del tradimento', d:'se si perde, qualcuno dentro sta aiutando il nemico'},
+         {r:'il 10 agosto cade', n:'La monarchia', d:'le Tuileries prese d\'assalto, il re sospeso e imprigionato'},
+         {r:'a settembre nelle prigioni', n:'I massacri', d:'oltre mille detenuti uccisi in tre giorni dalla folla, senza processo'},
+         {piu:true, r:'e la sua morte', n:'Chiude ogni ritorno', d:'chi ha votato la condanna non puo piu trattare con nessuna monarchia: si e legati insieme dal gesto'},
+         {r:'e nel gennaio 1793 il re viene', n:'Processato e ghigliottinato', d:'trecentosessantuno voti contro trecentosessanta e passa'}
+       ]},
+
+      {r:'arriva al', n:'Terrore', d:'e va guardato con i numeri, perche il racconto corrente sbaglia',
+       f:[
+         {r:'la Francia e', n:'Aggredita da mezza Europa', d:'e in rivolta all\'interno: Vandea, Lione, Tolone, Marsiglia'},
+         {r:'risponde con la', n:'Leva di massa', d:'agosto 1793: tutto il paese requisito per la guerra, e funziona militarmente'},
+         {r:'governa il', n:'Comitato di salute pubblica', d:'dodici uomini con poteri eccezionali, rinnovati ogni mese'},
+         {r:'con la', n:'Legge dei sospetti', d:'si arresta chi non ha dato prove costanti di attaccamento alla rivoluzione'},
+         {r:'produce circa', n:'Diciassettemila condanne a morte', d:'sentenze dei tribunali rivoluzionari, piu decine di migliaia di morti in carcere'},
+         {r:'e le vittime sono soprattutto', n:'Del terzo stato', d:'nobili e clero insieme sono meno di un sesto: la ghigliottina colpisce in basso',
+          f:[{piu:true, r:'e in Vandea le stime arrivano a', n:'Oltre centomila morti', d:'in una guerra civile con massacri di popolazione da entrambe le parti'}]},
+         {r:'finisce con', n:'Termidoro', d:'luglio 1794: Robespierre ghigliottinato da chi temeva di esserlo il giorno dopo'}
+       ]},
+
+      {r:'esclude', n:'Chi aveva cominciato', d:'e questa e la parte meno raccontata',
+       f:[
+         {r:'le donne marciano su', n:'Versailles per il pane', d:'ottobre 1789: sono loro a riportare il re a Parigi'},
+         {r:'fondano', n:'Club femminili', d:'chiedono il diritto di voto, l\'istruzione, il divorzio'},
+         {r:'ma nel 1793 vengono', n:'Sciolti per legge', d:'e alle donne viene vietato di riunirsi in associazioni politiche'},
+         {r:'Olympe de Gouges viene', n:'Ghigliottinata', d:'1793: aveva riscritto la Dichiarazione al femminile'},
+         {piu:true, r:'e si prova a rifare perfino', n:'Il calendario', d:'mesi nuovi, settimane di dieci giorni: cambiare il tempo per cambiare le abitudini'},
+         {r:'i sanculotti ottengono il', n:'Massimo dei prezzi', d:'calmiere sul pane, e lo perdono appena finisce il Terrore'},
+         {r:'e il suffragio universale del 1793', n:'Non viene mai applicato', d:'la costituzione piu democratica del secolo resta sospesa per la guerra'}
+       ]},
+
+      {r:'si stabilizza nel', n:'Direttorio', d:'quattro anni di equilibrio impossibile',
+       f:[
+         {r:'governa', n:'Fra due paure', d:'il ritorno dei realisti e il ritorno dei giacobini: colpi di Stato da entrambe le parti'},
+         {r:'annulla le elezioni', n:'Quando le perde', d:'e cosi consuma la propria legittimita'},
+         {r:'dipende sempre piu dall\'', n:'Esercito', d:'che vince all\'estero, si paga con le conquiste e diventa arbitro interno'},
+         {piu:true, r:'e la gente ormai chiede', n:'Ordine piu che liberta', d:'dieci anni di paura rendono desiderabile chiunque prometta di finirla'},
+         {r:'e finisce il', n:'18 brumaio', d:'1799: un generale di trent\'anni scioglie le assemblee'}
+       ]},
+
+      {r:'lascia', n:'Un mondo diverso', d:'e un dibattito che non si e mai chiuso',
+       f:[
+         {r:'l\'uguaglianza', n:'Davanti alla legge', d:'niente piu ordini, niente privilegi fiscali, carriere aperte a tutti'},
+         {r:'la fine del', n:'Feudalesimo', d:'in Francia e, con gli eserciti, in mezza Europa'},
+         {r:'la nazione come', n:'Fonte della sovranita', d:'non piu sudditi di un re ma cittadini di una nazione'},
+         {r:'e una scuola', n:'Pubblica e laica', d:'progettata durante la rivoluzione e realizzata solo molto dopo'},
+         {r:'strumenti nuovi', n:'Codice, catasto, sistema metrico, leva', d:'lo Stato moderno prende la forma che conosciamo'},
+         {r:'e una domanda aperta', n:'Il Terrore era inevitabile?', d:'conseguenza della guerra o gia contenuto nell\'idea di volonta generale',
+          f:[{r:'con la lettura di', n:'Chi lo lega alle circostanze', d:'aggressione esterna, guerra civile, carestia: uno Stato assediato reagisce cosi'},
+             {piu:true, r:'e quella di', n:'Chi lo lega ai principi', d:'una volonta generale che non ammette dissenso porta li da sola'}]}
+       ]}
+    ],
+    incroci:[
+      {da:'Convocate gli Stati generali', a:'Come votare', r:'apre subito la questione di',
+       perche:'I privilegiati chiedono la convocazione perche gli Stati generali votavano per ordine — due voti su tre erano loro. Il Terzo stato pretende il voto per testa, e con esso il numero. La rivoluzione comincia da una questione di procedura, ed e li che si decide tutto il resto.'},
+      {da:'I titoli dei diritti signorili', a:'I privilegi feudali', r:'bruciano prima che l\'assemblea abolisca',
+       perche:'I contadini danno fuoco agli archivi settimane prima della notte del 4 agosto. L\'assemblea non concede: prende atto di una cosa gia avvenuta e le da\' forma legale. Molte grandi decisioni politiche sono la registrazione di fatti compiuti da chi non aveva titolo per deciderli.'},
+      {da:'Beni della Chiesa', a:'Nessuno si fida piu di lui', r:'crea un blocco di interessi che si somma al fatto che',
+       perche:'Chi ha comprato terre confiscate ha investito tutto su un regime che non deve tornare indietro. Quando il re fugge, quei proprietari hanno una ragione patrimoniale e non solo politica per volerlo fuori gioco: le rivoluzioni diventano irreversibili quando creano abbastanza gente che ci ha guadagnato.'},
+      {da:'Costituzione civile del clero', a:'Aggredita da mezza Europa', r:'apre un fronte interno mentre la Francia sara',
+       perche:'Costringere i preti a giurare spacca il paese fra chi obbedisce e chi resiste, e trasforma la controrivoluzione da faccenda di nobili emigrati in movimento popolare radicato. Quando arriva la guerra, la Francia ha un nemico dentro che si e creata da sola.'},
+      {da:'Il sospetto del tradimento', a:'I massacri', r:'produce direttamente',
+       perche:'Con il nemico alle porte e la voce che i detenuti aspettino di uscire per accoltellare la citta alle spalle, la folla svuota le prigioni. Non e crudelta astratta: e paura di essere traditi. È il meccanismo che rende la guerra la vera fabbrica del Terrore.'},
+      {da:'Del terzo stato', a:'Diciassettemila condanne a morte', r:'sono la maggioranza delle',
+       perche:'Nobili e clero insieme non arrivano a un sesto dei condannati: la ghigliottina colpisce soprattutto contadini, artigiani e operai, spesso per reati alimentari, diserzione o parole contro la rivoluzione. Il Terrore raccontato come vendetta contro l\'aristocrazia e, alla prova dei numeri, altro.'},
+      {da:'Leva di massa', a:'Oltre centomila morti', r:'e cio che innesca la guerra civile con',
+       perche:'La rivolta vandeana esplode quando si viene a prendere i giovani per una guerra decisa a Parigi, in una regione gia divisa dalla questione dei preti. La leva di massa salva la Francia dall\'invasione e le apre in casa il conflitto piu sanguinoso della sua storia.'},
+      {da:'Sciolti per legge', a:'Versailles per il pane', r:'colpisce le stesse che avevano marciato su',
+       perche:'Sono le donne parigine a riportare il re a Parigi nell\'ottobre 1789, atto decisivo della prima fase. Quattro anni dopo la Convenzione vieta loro ogni associazione politica. Chi mette in moto una rivoluzione e quasi mai chi ne raccoglie i frutti.'},
+      {da:'Non viene mai applicato', a:'Quando le perde', r:'prepara l\'abitudine del Direttorio ad annullare le elezioni',
+       perche:'La costituzione del 1793 introduce il suffragio universale maschile e viene sospesa il giorno dopo per la guerra. Da allora la Francia rivoluzionaria si abitua all\'idea che le regole valgano quando conviene. Il Direttorio annulla le elezioni sgradite e consuma cosi l\'ultima legittimita disponibile.'},
+      {da:'Esercito', a:'18 brumaio', r:'porta al',
+       perche:'Un governo che non riesce a farsi obbedire chiama i generali per restare in piedi, e paga i propri conti con le conquiste. A quel punto chi comanda le truppe puo prendersi il potere in un pomeriggio, e nessuno ha ne la forza ne le ragioni per impedirlo.'},
+      {da:'Quaderni delle lamentele', a:'Dichiarazione dei diritti', r:'chiedono cose lontanissime dalla',
+       perche:'Nei quaderni si chiedono meno tasse, la fine di diritti signorili precisi, strade migliori, e quasi sempre si invoca la protezione del re. Cinque mesi dopo si scrive che gli uomini nascono liberi e uguali e che la sovranita risiede nella nazione. Fra le due cose non c\'e un progetto: c\'e una sequenza di reazioni.'},
+      {da:'Circa meta delle entrate', a:'Di tassare anche i privilegiati', r:'rende inevitabile la proposta',
+       perche:'Con il debito che divora meta del bilancio non ci sono margini: o si tagliano le spese militari, rinunciando al rango di grande potenza, o si allarga la base fiscale. Ogni ministro arriva alla stessa conclusione e ogni ministro viene fermato dagli stessi ceti. Il blocco della riforma e la causa immediata della crisi.'},
+      {da:'Chi lo lega alle circostanze', a:'Chi lo lega ai principi', r:'si oppone a',
+       perche:'La prima lettura spiega il Terrore con l\'assedio, la guerra civile e la fame; la seconda lo vede gia contenuto nell\'idea di una volonta generale che non ammette opposizione. Non e una disputa accademica: da come si risponde dipende che cosa si pensa possa succedere di nuovo, e a quali condizioni.'}
+    ]
+  },
+  provocazione: {
+    titolo:'Nessuno la voleva',
+    durata:'55 minuti',
+    domandaMadre:'Come si arriva dove nessuno voleva andare?',
+    perche:'Nella primavera del 1789 il re chiede a tutto il regno di mettere per iscritto le proprie lamentele, e ne arrivano circa sessantamila quaderni. Quasi nessuno chiede la repubblica, l\'abolizione della monarchia o una dichiarazione dei diritti: si chiedono meno tasse, la fine di alcuni diritti signorili, strade migliori, e quasi sempre si invoca la protezione del re. Cinque mesi dopo la Francia ha abolito il feudalesimo e scritto che gli uomini nascono liberi e uguali; quattro anni dopo ha ghigliottinato il re. La classe confronta cio che il paese chiedeva con cio che il paese ha fatto, e ricostruisce la sequenza di reazioni che porta da una cosa all\'altra senza che nessuno l\'abbia progettata.',
+    occorrente:'Niente.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'Inverno 1789.\n\nIl re di Francia fa una cosa\nche non si faceva da centosettantacinque anni:\nconvoca gli Stati generali.\n\nE chiede a tutto il regno\ndi mettere per iscritto\nle proprie lamentele.\n\nOgni villaggio, ogni corporazione,\nogni ordine si riunisce e scrive.\n\nArrivano circa sessantamila quaderni.\n\nÈ probabilmente la piu grande\nconsultazione popolare\nmai fatta prima del Novecento.\n\nSappiamo quindi con precisione\nche cosa voleva la Francia\npochi mesi prima della Rivoluzione.\n\nQuasi nessuno\nchiedeva una rivoluzione.',
+       parlato:'Dai il fatto della consultazione e falla pesare: non e frequente sapere che cosa pensasse un intero paese prima di un evento del genere.\n\nPoi anticipa il contenuto senza dettagli: nei quaderni si chiedono cose concrete e limitate, e quasi sempre si chiede al re di intervenire. Il sovrano non e il nemico: e l\'arbitro a cui ci si rivolge.\n\nDomanda per aprire l\'ora: se nessuno voleva questo, come ci si e arrivati?\n\nRaccogli le prime ipotesi. Di solito arriva «qualcuno li ha manipolati» — che e la spiegazione piu comoda e quasi sempre la piu debole. Non correggere ancora: ci torneremo alla fine, quando avranno visto la sequenza.',
+       seDicono:[
+         {loro:'«Non lo dicevano ma lo pensavano.»',
+          tu:'Non e verificabile e di solito e falso. Nei quaderni la gente si lamenta con durezza di cose precise: significa che non aveva paura di scrivere. Se avessero voluto la repubblica avrebbero avuto poco da perdere a chiederla — e non la chiedono quasi mai.'},
+         {loro:'«Chi li scriveva? Mica i contadini.»',
+          tu:'Ottima domanda, ed e la prima delle tre che faremo fra poco su questi documenti. Spesso li dettavano a un notaio o al parroco, e questo lascia tracce. Tienila da parte.'}
+       ]},
+
+      {minuti:'8–17', et:'La fonte',
+       schermo:'Da un quaderno di lamentele\ndi una comunita rurale, 1789.\n\nSi chiede:\n\nche le imposte siano ripartite\nfra tutti gli ordini,\nperche il peso attuale\ne insopportabile per chi lavora;\n\nche siano aboliti alcuni diritti\ndel signore: il monopolio del mulino,\nla caccia sui campi seminati,\ni piccioni della colombaia\nche divorano le sementi;\n\nche le strade siano riparate\ne che non si sia costretti\na lavorarci gratis;\n\nche il sale non costi cosi caro;\n\ne che Sua Maesta,\npadre del suo popolo,\nvoglia ascoltare\nquesti umilissimi lamenti.\n\nTre domande.\nChi lo ha scritto?\nChe cosa ammette senza volerlo?\nChe cosa non dice?',
+       testo:{fonte:'Cahiers de doléances delle comunità rurali francesi, primavera 1789 (sintesi di formule ricorrenti)',
+              glossa:'I quaderni delle parrocchie di campagna erano di norma redatti da un notaio, dal maestro o dal curato, sulla base di quanto l\'assemblea degli abitanti dichiarava; molti seguono modelli a stampa che circolavano. La loro forza sta nel numero e nella ricorrenza delle richieste, non nella singola formulazione — ed e cosi che vanno letti.'},
+       parlato:'Fai lavorare in coppia, cinque minuti, poi raccogli.\n\nSulla prima: quasi mai lo scrive chi si lamenta. Lo redige chi sa scrivere — notaio, curato, maestro — e molti quaderni seguono modelli a stampa. Questo non li rende falsi: significa che vanno letti come voce filtrata, e che le richieste piu ripetute contano piu di quelle piu eloquenti.\n\nSulla seconda: il documento ammette, senza dirlo, che il re e considerato la soluzione e non il problema. Ci si rivolge a lui come a un padre e a un arbitro. Fai pesare questo dato: quattro anni dopo quel re sara ghigliottinato, e a votarne la morte sara un\'assemblea eletta.\n\nSulla terza: non si chiede la repubblica, non si chiede una costituzione, non si chiede la sovranita popolare. Non compaiono nemmeno come ipotesi da respingere. Nel 1789 quelle idee non stanno nella testa della Francia rurale.\n\nUltima osservazione: le richieste sono minutissime — i piccioni, il mulino, il sale. Sono le cose che si vedono ogni giorno. È da li che parte tutto.',
+       seDicono:[
+         {loro:'«I piccioni? Sul serio?»',
+          tu:'Sul serio, ed e uno dei reclami piu frequenti di tutta la Francia. Il signore aveva il diritto esclusivo di tenere una colombaia, e i piccioni mangiavano il grano seminato dai contadini, che non potevano ucciderli. Le rivoluzioni cominciano quasi sempre da torti piccoli e quotidiani, non da grandi principi.'},
+         {loro:'«Se li scriveva il notaio, non valgono niente.»',
+          tu:'Valgono, con una cautela. Non ti puoi fidare della singola frase elegante; ti puoi fidare di cio che ricorre in migliaia di quaderni di regioni diverse. È il principio generale: quando una fonte e filtrata, si guarda la frequenza invece del singolo caso.'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'Come si passa da li\na tutto il resto.\n\nGuardate la sequenza,\nun passo alla volta.\n\nSi convocano gli Stati generali\nper risolvere il debito.\nSi litiga su come votare.\nIl Terzo stato si proclama assemblea\nperche altrimenti non conta niente.\n\nIl re raduna truppe attorno a Parigi.\nLa citta ha paura e cerca armi:\ncade la Bastiglia.\n\nNelle campagne girano voci\ndi briganti pagati dai nobili.\nI contadini si armano\ne bruciano gli archivi.\n\nL\'assemblea, per fermare le violenze,\nabolisce i diritti feudali in una notte.\n\nOgni passo e una risposta\nragionevole al passo precedente.\n\nNessuno di questi passi\nera nei quaderni.',
+       parlato:'Ricostruisci la catena facendola dire a loro, un anello per volta: se hanno seguito, ci arrivano.\n\nPoi il punto centrale, e va detto con precisione: non c\'e un regista. Ogni gruppo fa la cosa sensata dal proprio punto di vista, e la somma produce un risultato che nessuno aveva in mente.\n\nÈ lo stesso meccanismo che avete gia visto con Ludovico il Moro e con la legge inglese sui salari: la razionalita di ciascuno non produce razionalita dell\'insieme.\n\nPoi aggiungi i due momenti in cui la strada si chiude davvero, perche non sono quelli che si aspettano.\n\nNon e il 14 luglio. È il 1790, quando si impone ai preti di giurare fedelta a una costituzione civile del clero: meta del clero rifiuta, e milioni di contadini scoprono che la rivoluzione vuole togliere loro il prete. La controrivoluzione smette di essere una faccenda di nobili emigrati e diventa popolare.\n\nE il 1792, quando si dichiara guerra a mezza Europa. Da quel momento ogni opposizione interna diventa tradimento, e chi governa puo dire che chi lo critica aiuta il nemico. Il Terrore nasce li, molto piu che nelle idee.',
+       seDicono:[
+         {loro:'«Ma qualcuno voleva la rivoluzione, no?»',
+          tu:'Alcuni, e pochissimi, e quasi nessuno nel 1789. Molti di quelli che nel 1793 governano, quattro anni prima chiedevano una monarchia costituzionale all\'inglese. Le posizioni non sono fisse: si radicalizzano dentro il processo, e questo e piu inquietante di un complotto.'},
+         {loro:'«La guerra potevano non farla.»',
+          tu:'Verissimo, ed e uno dei pochi punti in cui una scelta diversa era chiaramente possibile: la vollero i girondini per esportare la rivoluzione e il re sperando di perderla. Se cerchi il momento in cui qualcuno ha davvero deciso qualcosa di decisivo, l\'aprile 1792 e il candidato migliore.'}
+       ]},
+
+      {minuti:'28–38', et:'La seconda fonte',
+       schermo:'Il primo documento\ne di marzo.\n\nQuesto e di agosto.\nCinque mesi dopo.\n\nDichiarazione dei diritti\ndell\'uomo e del cittadino:\n\ngli uomini nascono e restano\nliberi e uguali nei diritti;\n\nil principio di ogni sovranita\nrisiede essenzialmente nella nazione,\ne nessun corpo e nessun individuo\npuo esercitare un\'autorita\nche non ne derivi;\n\nla legge e l\'espressione\ndella volonta generale,\ne deve essere la stessa\nper tutti;\n\ntutti i cittadini sono ugualmente\nammissibili a ogni carica\nsecondo la loro capacita,\nsenza altra distinzione\nche quella delle virtu\ne dei talenti.\n\nLo stesso paese.\nCinque mesi.',
+       testo:{fonte:'Dichiarazione dei diritti dell\'uomo e del cittadino, 26 agosto 1789',
+              glossa:'Il testo non elenca lamentele ma principi, e non si rivolge al re: lo ignora. La sovranita non e piu concessa dall\'alto, risiede nella nazione. È da questo spostamento — non dalla presa della Bastiglia — che la monarchia assoluta diventa impossibile: si puo ancora avere un re, ma solo come organo di una sovranita che sta altrove.'},
+       parlato:'Metti i due documenti uno accanto all\'altro e fai misurare la distanza: nel primo si chiede al re di ascoltare, nel secondo il re non e nominato.\n\nPoi la domanda di metodo, che qui e particolarmente ricca: che cosa possiamo dire, confrontando due fonti a cinque mesi di distanza, che non diremmo leggendone una sola?\n\nGuidali. Un documento solo mostra una posizione; due documenti vicini nel tempo mostrano una velocita. E la velocita e essa stessa un fatto storico: dice che qualcosa nel frattempo ha rotto gli argini.\n\nPoi il punto piu importante, che va detto con onesta: la Dichiarazione non e la traduzione di quei quaderni. È scritta da un\'assemblea di avvocati, magistrati e proprietari colti, che leggevano Locke e Montesquieu e conoscevano il testo americano. I contadini avevano chiesto i piccioni; gli avvocati hanno scritto i principi.\n\nE fai notare la conseguenza, che vale per tutte le rivoluzioni: chi mette in moto un processo e chi ne scrive i documenti sono quasi sempre persone diverse.',
+       seDicono:[
+         {loro:'«Allora hanno scritto quello che volevano loro.»',
+          tu:'In parte si. Ma nota che senza le rivolte contadine e senza la paura di agosto quell\'assemblea non avrebbe abolito i diritti feudali in una notte. Gli avvocati scrivono i principi; a rendere necessario scriverli sono stati gli archivi bruciati. Servono entrambi, e nessuno dei due controlla l\'altro.'},
+         {loro:'«Perche non nominano il re?»',
+          tu:'Perche il punto e proprio quello. Finche la sovranita e del re, i diritti sono concessioni. Se la sovranita risiede nella nazione, il re diventa un organo. Non e un\'omissione: e la mossa piu radicale del testo, ottenuta senza dire una sola parola contro di lui.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'Il Terrore, con i numeri.\n\nCirca diciassettemila condanne\na morte pronunciate\ndai tribunali rivoluzionari.\nAltre decine di migliaia\nmorte in carcere senza processo.\n\nAdesso guardate chi erano.\n\nNobili: meno di un decimo.\nClero: meno di un decimo.\n\nTutti gli altri —\nla grande maggioranza —\nerano contadini, artigiani,\noperai, piccoli commercianti.\n\nCondannati per diserzione,\nper reati sull\'ammasso del grano,\nper aver detto la cosa sbagliata\nnel posto sbagliato.\n\nE in Vandea, dove la guerra civile\nfu piu dura, le stime\nsuperano i centomila morti:\ncontadini quasi tutti,\ndall\'una e dall\'altra parte.\n\nLa ghigliottina raccontata\ncome vendetta contro i nobili\nha ucciso soprattutto\nquelli per cui diceva di agire.',
+       parlato:'Dai i numeri lentamente e lascia che si sistemino: e la parte dell\'ora che rovescia l\'immagine che tutti hanno.\n\nPoi spiega perche succede, perche il dato senza la spiegazione e solo scandalo. Un regime che si sente assediato colpisce prima di tutto chi ha vicino, chi non puo scappare e chi e piu facile da controllare. I nobili in gran parte erano emigrati. I contadini no.\n\nE aggiungi che gran parte delle condanne non riguarda la politica alta ma la sussistenza: nascondere il grano, rifiutare la requisizione, non presentarsi alla leva. Il Terrore e in larga misura un apparato per far funzionare un\'economia di guerra.\n\nPoi la questione che resta aperta, e va presentata come tale perche gli storici litigano ancora.\n\nUna lettura dice: il Terrore nasce dalle circostanze — invasione, guerra civile, carestia — e uno Stato assediato reagisce cosi; finita l\'emergenza, finisce.\n\nL\'altra dice: era gia contenuto nell\'idea di una volonta generale che non ammette opposizione, perche chi dissente non viene considerato un avversario ma un nemico del popolo.\n\nNon scegliere per loro. Ma di\' perche la domanda conta: da come si risponde dipende che cosa si pensa possa ripetersi, e a quali condizioni.',
+       seDicono:[
+         {loro:'«Allora la Rivoluzione è stata un disastro.»',
+          tu:'Ha prodotto l\'uguaglianza davanti alla legge, la fine dei privilegi di nascita, il codice civile, la leva, il sistema metrico — cose che usiamo ancora e che l\'antico regime non avrebbe mai concesso. E ha prodotto il Terrore. Un giudizio unico su dieci anni cosi non descrive niente.'},
+         {loro:'«Robespierre era un mostro.»',
+          tu:'Era un avvocato che prima del 1789 aveva chiesto l\'abolizione della pena di morte, e che nel 1794 firmava condanne. Chiamarlo mostro chiude la questione e ti impedisce di capire come si arriva li — che e l\'unica cosa utile da imparare.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'Torniamo alla domanda.\n\nCome si arriva dove nessuno\nvoleva andare?\n\nNon con un complotto.\nNon con una manipolazione.\n\nCosi:\n\nun problema che non si riesce\na risolvere con le regole esistenti;\n\nogni gruppo che fa la mossa\nsensata dal proprio punto di vista;\n\nuna paura reciproca\nche cresce a ogni passo;\n\ne poi una guerra,\nche trasforma ogni avversario\nin un traditore.\n\nA quel punto nessuno\npuo piu fermarsi,\nperche fermarsi\nsignifica consegnarsi.\n\nLa domanda da tenere\nnon e chi voleva questo.\n\nÈ: a che punto\nnon si poteva piu tornare indietro?',
+       parlato:'Ripercorri i quattro elementi e falli riconoscere nella sequenza che avete ricostruito.\n\nPoi il criterio di metodo, che e la cosa da portare a casa: per capire un processo storico non basta chiedersi che cosa volevano i protagonisti. Bisogna guardare la catena delle reazioni, perche il risultato non e la somma delle intenzioni.\n\nPoi fai lavorare loro sulla domanda finale, che e la piu utile: dove metterebbero il punto di non ritorno? Il 14 luglio? La costituzione civile del clero? Varennes? La guerra? La morte del re?\n\nNon c\'e una risposta giusta e la discussione e ottima, perche per sostenere una data devono ricostruire che cosa era ancora possibile prima e che cosa non lo era piu dopo. È esattamente il ragionamento che si fa in storia.\n\nChiudi con quello che apre il seguito: alla fine di questa storia un generale di trent\'anni scioglie le assemblee, e quasi nessuno protesta, perche dieci anni di paura hanno reso l\'ordine piu desiderabile della liberta. La prossima volta vediamo che cosa fa con quel potere — e quanto della rivoluzione porta in giro per l\'Europa nelle proprie casse.',
+       seDicono:[
+         {loro:'«Quindi era tutto inevitabile.»',
+          tu:'No, ed e la conclusione da evitare. Ci sono punti in cui una scelta diversa era chiaramente possibile: non imporre il giuramento ai preti, non dichiarare guerra nel 1792. Dire che una catena e comprensibile non significa dire che fosse necessaria — significa che, dopo un certo punto, le alternative erano molte meno.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'Una notte',
+       corpo:'Nella notte fra il 4 e il 5 agosto 1789 l\'Assemblea nazionale abolisce i diritti feudali, le decime, la venalità delle cariche, i privilegi di province e città. In poche ore, per acclamazione, con nobili e vescovi che salgono uno dopo l\'altro a rinunciare ai propri privilegi.\n\nNei giorni seguenti, mettendo per iscritto le decisioni, si stabilisce che alcuni diritti signorili siano non aboliti ma riscattabili: i contadini devono pagare per liberarsene.\n\nQuella clausola sarà cancellata solo nel 1793.',
+       chiedi:'Un\'assemblea decide qualcosa nell\'entusiasmo di una notte e poi, mettendola per iscritto, la ridimensiona. Che cosa dice questo sul rapporto fra il momento in cui si decide e il momento in cui si scrive? E quale dei due conta di più?'},
+      {titolo:'Le prime a muoversi',
+       corpo:'Il 5 ottobre 1789 migliaia di donne parigine marciano su Versailles per il prezzo del pane. Il giorno dopo riportano a Parigi il re, la regina e l\'Assemblea. È l\'atto che sottrae il sovrano alla protezione della corte.\n\nNegli anni seguenti nascono club femminili che chiedono istruzione, divorzio, diritto di voto. Nell\'ottobre 1793 la Convenzione li scioglie tutti e vieta alle donne ogni associazione politica. Poche settimane dopo Olympe de Gouges viene ghigliottinata.\n\nIl divorzio, introdotto nel 1792, sarà abolito nel 1816.',
+       chiedi:'Chi mette in moto un processo raramente ne raccoglie i frutti. Perché? E che cosa dovrebbe fare un gruppo che apre una porta, per non trovarsela chiusa in faccia?'},
+      {titolo:'La Vandea',
+       corpo:'Nella primavera del 1793 le campagne della Vandea insorgono contro la leva di massa. La regione era già in tensione per la questione dei preti refrattari. La rivolta diventa una guerra civile che dura anni, con colonne militari incaricate di devastare il territorio e massacri di civili da entrambe le parti.\n\nLe stime delle vittime variano molto: le più accreditate parlano di oltre centomila morti, in maggioranza contadini.\n\nSe quei fatti debbano essere definiti genocidio è oggetto di una controversia storiografica tuttora aperta.',
+       chiedi:'Perché contadini poveri combattono contro un governo che ha appena abolito i diritti feudali che li opprimevano? E che cosa dovremmo sapere di una popolazione, prima di dare per scontato che cosa le convenga?'}
+    ],
+    testi:[
+      {fonte:'Decreti dell\'Assemblea nazionale, 4-11 agosto 1789',
+       corpo:'Il testo dichiara che l\'Assemblea distrugge interamente il regime feudale, abolisce senza indennizzo i diritti relativi alla servitù personale e stabilisce che gli altri restino esigibili fino al riscatto.',
+       glossa:'La distinzione fra ciò che è abolito e ciò che è riscattabile è la parte decisiva e la meno citata: i diritti che pesavano di più sui contadini rientravano spesso nella seconda categoria. Serve in classe per mostrare che in un atto giuridico il senso sta quasi sempre nelle eccezioni.'},
+      {fonte:'Legge dei sospetti, 17 settembre 1793',
+       corpo:'La legge dispone l\'arresto di coloro che, con la loro condotta, le loro relazioni, i loro discorsi o i loro scritti, si siano mostrati partigiani della tirannide o nemici della libertà, e di quanti non abbiano costantemente dato prova del loro attaccamento alla rivoluzione.',
+       glossa:'L\'ultima formula è la più pericolosa: non si punisce un atto ma l\'assenza di una prova positiva di adesione. Chiunque può rientrarvi, e la prova richiesta non ha limiti. È il modello giuridico di ogni legislazione d\'emergenza, e vale la pena farlo riconoscere.'},
+      {fonte:'Olympe de Gouges, Dichiarazione dei diritti della donna e della cittadina, 1791 — l\'articolo X',
+       corpo:'L\'articolo afferma che la donna ha il diritto di salire sul patibolo e deve avere ugualmente quello di salire alla tribuna, purché le sue manifestazioni non turbino l\'ordine pubblico stabilito dalla legge.',
+       glossa:'Fu ghigliottinata due anni dopo, e la frase risultò tragicamente esatta. Il metodo è quello già visto per la Dichiarazione americana: si prende alla lettera il testo degli altri e se ne mostra la portata. È la tecnica ricorrente di chi rivendica di essere incluso in un principio già proclamato.'}
+    ],
+    compito:'Mezza pagina. Ricostruite una situazione, anche piccola, in cui una cosa è degenerata più di quanto chiunque volesse: una discussione fra amici, un conflitto in classe, una vicenda pubblica che avete seguito. Descrivete la sequenza dei passi, uno per uno, mostrando che ciascuno era una risposta ragionevole al precedente. Poi indicate il punto in cui, secondo voi, non si poteva più tornare indietro — e spiegate perché proprio quello.',
+    fonti:[
+      'Cahiers de doléances, 1789 (raccolte per bailliage); Dichiarazione dei diritti dell\'uomo e del cittadino (1789)',
+      'Decreti del 4-11 agosto 1789; Legge dei sospetti (1793); Costituzione dell\'anno I (1793)',
+      'G. Lefebvre, La Rivoluzione francese; La grande paura del 1789',
+      'F. Furet, Critica della Rivoluzione francese; A. Soboul, I sanculotti',
+      'T. Tackett, Il re fugge; Anatomia del terrore',
+      'J.-C. Martin, La Vandea e la Francia — sul dibattito relativo alle vittime'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',
