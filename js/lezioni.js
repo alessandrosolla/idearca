@@ -9991,6 +9991,223 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Filosofia moderna · 3 — Rinascimento e religione': {
+  mappa: {
+    n:'Rinascimento e religione', d:'non la fine della fede, ma il tentativo di ripensarla',
+    f:[
+      {r:'parte da', n:'Un problema nuovo', d:'non se Dio esista, ma che cosa farne delle religioni degli altri',
+       f:[
+         {r:'l\'Europa scopre di', n:'Non essere sola', d:'islam, ebraismo, e poi le religioni d\'America e d\'Asia'},
+         {r:'e si spacca al proprio interno con la', n:'Riforma', d:'per la prima volta i cristiani sono divisi in modo stabile'},
+         {r:'e la stampa moltiplica', n:'Le versioni disponibili', d:'ogni gruppo puo stampare la propria Bibbia e i propri catechismi: la divisione si consolida'},
+         {r:'quindi la domanda diventa', n:'Chi decide qual e la vera', d:'e con quale titolo, se ognuno cita gli stessi testi'},
+         {piu:true, r:'e nessuno di questi autori', n:'Mette in dubbio Dio', d:'la questione e la religione, non l\'esistenza divina: l\'ateismo arrivera molto dopo'}
+       ]},
+
+      {r:'ha il suo primo grande tentativo in', n:'Cusano', d:'un cardinale che scrive le cose piu spericolate del secolo',
+       f:[
+         {r:'propone la', n:'Dotta ignoranza', d:'1440: sapere di non sapere non e rinuncia, e il modo corretto di accostarsi all\'infinito'},
+         {r:'perche fra finito e infinito', n:'Non c\'e proporzione', d:'nessun numero di passi ti avvicina a cio che non ha misura'},
+         {r:'e in Dio i contrari', n:'Coincidono', d:'massimo e minimo, centro e circonferenza: le nostre distinzioni non arrivano li',
+          f:[{piu:true, r:'con l\'esempio del', n:'Cerchio infinito', d:'piu il raggio cresce, piu la circonferenza somiglia a una retta: i contrari si toccano'}]},
+         {piu:true, r:'e si era fatto tradurre il', n:'Corano', d:'per esaminarlo: sostiene che vada letto prima di confutarlo, cosa che quasi nessuno faceva'},
+         {r:'nel 1453 scrive', n:'La pace della fede', d:'pochi mesi dopo la caduta di Costantinopoli, mentre l\'Europa grida alla crociata',
+          f:[{r:'immagina un dialogo in cielo fra', n:'I rappresentanti di tutti i popoli', d:'greci, arabi, indiani, tartari, ebrei, persiani'},
+             {r:'per concludere che c\'e', n:'Una sola fede in varieta di riti', d:'le differenze stanno nelle usanze, non in cio che si adora'}]}
+       ]},
+
+      {r:'prosegue con', n:'Ficino', d:'che fa della religione un tratto naturale dell\'uomo',
+       f:[
+         {r:'la religione e', n:'Propria dell\'uomo come il riso', d:'nessun popolo ne e privo: e un istinto, non una convenzione'},
+         {r:'tutte le religioni sono', n:'Raggi di un\'unica luce', d:'imperfette, e nessuna del tutto falsa'},
+         {r:'la piu perfetta e la', n:'Cristiana', d:'e questo salva l\'ortodossia, e il resto della costruzione la mette in tensione'},
+         {piu:true, r:'e la religione va difesa anche perche', n:'Tiene insieme le citta', d:'e un argomento politico che tornera in tutta l\'eta moderna'},
+         {r:'perche se tutte contengono qualcosa di vero', n:'Nessuna e del tutto necessaria', d:'ed e la conseguenza che i suoi avversari vedono benissimo'}
+       ]},
+
+      {r:'arriva all\'estremo con', n:'Pico', d:'che vuole conciliare tutto quello che e stato pensato',
+       f:[
+         {r:'pubblica', n:'Novecento tesi', d:'1486: da filosofi greci, arabi, latini, ebrei, e si offre di difenderle in pubblico'},
+         {r:'usa anche la', n:'Cabala', d:'convinto che la tradizione mistica ebraica confermi le verita cristiane'},
+         {r:'nella convinzione che esista', n:'Un accordo profondo', d:'fra Platone e Aristotele, fra Mosè e Ermete, fra tutte le sapienze'},
+         {r:'ma tredici tesi vengono', n:'Condannate', d:'1487: la disputa non si tiene, e lui deve fuggire in Francia',
+          f:[{piu:true, r:'perche cercare l\'accordo implica', n:'Mettere tutti sullo stesso piano', d:'e nessuna autorita accetta di essere una voce fra le altre'}]}
+       ]},
+
+      {r:'trova la formula piu praticabile in', n:'Erasmo', d:'che riporta la religione al testo e alla vita',
+       f:[
+         {r:'propone la', n:'Filosofia di Cristo', d:'poche dottrine essenziali, molta pratica, e il Vangelo letto direttamente'},
+         {r:'ritiene che molte questioni siano', n:'Adiaphora', d:'cose indifferenti, su cui non vale la pena dividersi'},
+         {r:'critica le', n:'Cerimonie senza interiorita', d:'pellegrinaggi, reliquie, digiuni contati: religione esteriore e vuota'},
+         {r:'e vuole che la Scrittura sia letta', n:'Anche dalle donne e dai contadini', d:'scrive che vorrebbe sentirla cantata dal contadino all\'aratro'},
+         {r:'e traduce il', n:'Nuovo Testamento in greco', d:'1516: ristabilisce il testo e corregge la traduzione latina in uso da mille anni'},
+         {r:'rompendo con Lutero sul', n:'Libero arbitrio', d:'1524-25: per Erasmo l\'uomo coopera alla salvezza, per Lutero no',
+          f:[{r:'ed e una rottura che lo lascia', n:'Solo fra due fronti', d:'sospetto ai cattolici e nemico dei protestanti'}]}
+       ]},
+
+      {r:'produce anche', n:'Chi non sta in nessuna chiesa', d:'e sono i primi a pagare il prezzo piu alto',
+       f:[
+         {r:'gli', n:'Antitrinitari', d:'negano che la Trinita sia nella Scrittura: perseguitati da cattolici e protestanti insieme'},
+         {r:'Michele Serveto viene', n:'Bruciato a Ginevra', d:'1553: condannato prima dall\'Inquisizione cattolica, poi da Calvino'},
+         {r:'in Transilvania si arriva a un', n:'Editto di tolleranza', d:'1568: quattro confessioni riconosciute, il primo atto del genere in Europa'},
+         {piu:true, r:'e in Moravia gli', n:'Anabattisti pacifisti', d:'costruiscono comunita di beni che dureranno secoli, emigrando ogni volta che vengono cacciate'},
+         {r:'Sozzini fonda una scuola in', n:'Polonia', d:'l\'unico luogo d\'Europa dove per qualche decennio si puo'},
+         {r:'e molti scelgono di', n:'Credere in privato', d:'partecipando in pubblico al culto obbligatorio: si chiamera nicodemismo',
+          f:[{piu:true, r:'condannato da Calvino come', n:'Vilta', d:'ma per moltissimi era l\'unico modo di restare vivi'}]}
+       ]},
+
+      {r:'genera l\'argomento decisivo sulla', n:'Tolleranza', d:'ed e formulato subito dopo il rogo di Serveto',
+       f:[
+         {r:'Sebastiano Castellione pubblica', n:'Se gli eretici siano da perseguitare', d:'1554, sotto falso nome, con una raccolta di testi contro la pena capitale'},
+         {r:'con la frase che riassume tutto', n:'Uccidere un uomo non e difendere una dottrina', d:'e uccidere un uomo'},
+         {r:'e con un argomento che non e solo morale', n:'Siamo certi abbastanza?', d:'i cristiani non riescono ad accordarsi fra loro su moltissimi punti',
+          f:[{r:'quindi chi uccide', n:'Presume una certezza che non ha', d:'ed e questo a rendere il gesto ingiustificabile, prima ancora che crudele'}]},
+         {r:'e osserva che i persecutori', n:'Cambiano idea quando cambiano posto', d:'chi invoca la liberta da perseguitato la nega da vincitore'},
+         {r:'distingue fra dottrine', n:'Chiare e oscure', d:'sulle prime tutti concordano, e sono poche; sulle seconde nessuno puo imporre'},
+         {piu:true, r:'e Calvino lo accusa di', n:'Aver rubato del legname', d:'lo aveva raccolto dal fiume per scaldarsi: si colpisce l\'uomo quando non si puo colpire l\'argomento'},
+         {r:'e viene', n:'Proibito ovunque', d:'muore povero e dimenticato a quarantotto anni, ed e riscoperto nel Novecento'}
+       ]},
+
+      {r:'lascia', n:'Un seme che germoglia tardi', d:'quasi tutto quello che serve, due secoli prima che serva',
+       f:[
+         {r:'l\'idea che la fede sia', n:'Un fatto di coscienza', d:'e che nessuna forza la possa produrre: si puo costringere a fingere, non a credere'},
+         {r:'la distinzione fra', n:'Essenziale e indifferente', d:'che permette di convivere senza accordarsi su tutto'},
+         {r:'l\'argomento dal', n:'Dubbio', d:'se non sono certo, non posso imporre: e la strada che arrivera a Locke'},
+         {piu:true, r:'e la tolleranza arrivera', n:'Per stanchezza e per interesse', d:'quando le guerre costeranno troppo e i perseguitati porteranno via capitali e mestieri'},
+         {r:'e il fatto che nel frattempo', n:'Si continua a bruciare', d:'per un secolo e mezzo, in tutte le confessioni'},
+         {r:'perche un\'idea giusta', n:'Non basta a fermare nessuno', d:'serve che diventi conveniente, o che tutti si stanchino'}
+       ]}
+    ],
+    incroci:[
+      {da:'Chi decide qual e la vera', a:'Siamo certi abbastanza?', r:'e la domanda che Castellione rovescia in',
+       perche:'Finche ci si chiede quale religione sia vera, si cerca un\'autorita che decida. Castellione sposta la domanda: prima di stabilire chi ha ragione, chiediamoci quanto siamo sicuri. Se la certezza manca, la questione dell\'autorita non si pone nemmeno — ed e un modo di uscire dal problema invece di risolverlo.'},
+      {da:'Una sola fede in varieta di riti', a:'Mettere tutti sullo stesso piano', r:'implica quello che a Pico costa la condanna',
+       perche:'Dire che le differenze riguardano i riti e non l\'oggetto del culto significa che nessuna forma e insostituibile. Cusano lo scrive da cardinale e non gli succede nulla; Pico prova a sistematizzarlo e viene condannato. La stessa idea passa o non passa a seconda di come e formulata e di chi la scrive.'},
+      {da:'Nessuna e del tutto necessaria', a:'Cristiana', r:'e la conseguenza che mette in tensione il primato della religione',
+       perche:'Ficino conclude che la religione cristiana e la piu perfetta, ma se ogni religione contiene qualcosa di vero e nasce dallo stesso istinto, il primato diventa una differenza di grado. I contemporanei se ne accorsero: non serve negare una dottrina per indebolirla, basta collocarla in una serie.'},
+      {da:'Bruciato a Ginevra', a:'Antitrinitari', r:'e il caso che definisce la sorte degli',
+       perche:'Serveto era stato condannato dall\'Inquisizione cattolica e fu bruciato dai calvinisti: lo stesso uomo, due tribunali di confessioni opposte, la stessa pena. Chi negava la Trinita non aveva nessuna parte dove rifugiarsi in Europa occidentale — ed e per questo che i suoi seguaci finiranno in Polonia e in Transilvania.'},
+      {da:'Uccidere un uomo non e difendere una dottrina', a:'Vilta', r:'e l\'argomento che smonta anche l\'accusa di',
+       perche:'Se uccidere per una dottrina e ingiustificabile, allora fingere per restare vivi non e una colpa da rimproverare a chi non ha alternative. Castellione scrive contro il rogo e contro chi condanna i nicodemiti: sono la stessa posizione, presa dalla parte di chi subisce.'},
+      {da:'Solo fra due fronti', a:'Adiaphora', r:'e il prezzo di chi propone di considerare molte cose',
+       perche:'Sostenere che su molte questioni non valga la pena dividersi funziona finche nessuno si e ancora diviso. Dopo il 1520 le due parti hanno bisogno di sapere chi sta con chi, e chi dice che la questione e secondaria diventa sospetto a entrambe. Le posizioni intermedie non reggono a una frattura consumata.'},
+      {da:'Non c\'e proporzione', a:'Chiare e oscure', r:'e la premessa dell\'idea che le dottrine si dividano in',
+       perche:'Se fra la nostra mente e l\'infinito non c\'e proporzione, allora su molte cose non possiamo pretendere precisione. Cusano lo dice in metafisica, Castellione ne trae la conseguenza pratica: se le questioni oscure restano oscure per tutti, nessuno ha titolo per imporne la soluzione con la forza.'},
+      {da:'Nuovo Testamento in greco', a:'Filosofia di Cristo', r:'e lo strumento con cui si costruisce la',
+       perche:'Ridurre la religione a poche dottrine essenziali richiede di sapere che cosa il testo dica davvero, separandolo da secoli di tradizione interpretativa. Il metodo filologico non e un accessorio dell\'erasmismo: e la sua condizione, ed e il motivo per cui l\'umanesimo produce sia la Riforma sia il tentativo di evitarla.'},
+      {da:'Non essere sola', a:'I rappresentanti di tutti i popoli', r:'e il fatto che rende pensabile un dialogo fra',
+       perche:'La consapevolezza che esistano civilta antiche con religioni proprie costringe a chiedersi che cosa siano. Cusano scrive il proprio dialogo nel 1453, mentre l\'Europa reagisce alla caduta di Costantinopoli invocando la crociata: e la reazione opposta a quella di quasi tutti, e nasce dalla stessa notizia.'},
+      {da:'Presume una certezza che non ha', a:'Non basta a fermare nessuno', r:'e un argomento corretto che',
+       perche:'La confutazione di Castellione e logicamente stringente e non impedisce un solo rogo per un secolo e mezzo. Le idee giuste non hanno forza propria: diventano efficaci quando qualcuno che ha potere trova conveniente applicarle, o quando la guerra e costata troppo a tutti.'},
+      {da:'Credere in privato', a:'Un fatto di coscienza', r:'anticipa nella pratica l\'idea che la fede sia',
+       perche:'Migliaia di persone praticano in pubblico una religione e ne credono un\'altra, molto prima che qualcuno teorizzi la liberta di coscienza. La distinzione fra foro interno ed esterno nasce come espediente di sopravvivenza e diventa poi un principio: le pratiche precedono quasi sempre i principi che le giustificano.'},
+      {da:'Libero arbitrio', a:'Propria dell\'uomo come il riso', r:'e in tensione con l\'idea della religione come tratto naturale',
+       perche:'Se la religione e un istinto e l\'uomo coopera alla salvezza, la natura umana ha una capacita propria di orientarsi verso Dio. Lutero nega esattamente questo: la volonta e serva e la salvezza e dono. La disputa fra Erasmo e Lutero non e su un dettaglio teologico, e sulla fiducia in cio che l\'uomo puo da se.'},
+      {da:'Dubbio', a:'Siamo certi abbastanza?', r:'e la forma matura della domanda',
+       perche:'Da Castellione a Locke la strada e la stessa: non si dimostra che tutte le religioni siano vere, si mostra che nessuno e in condizione di provare la propria abbastanza da imporla. La tolleranza moderna nasce piu da una teoria dei limiti della conoscenza che da un\'idea di rispetto.'}
+    ]
+  },
+  provocazione: {
+    titolo:'Certi abbastanza',
+    durata:'55 minuti',
+    domandaMadre:'Si puo essere certi abbastanza da uccidere?',
+    perche:'Nel 1553 Michele Serveto viene bruciato a Ginevra per aver negato la Trinita. Era gia stato condannato a morte dall\'Inquisizione cattolica ed era fuggito: lo stesso uomo, due tribunali di confessioni nemiche, la stessa pena. L\'anno dopo Sebastiano Castellione pubblica sotto falso nome la confutazione piu efficace mai scritta della persecuzione religiosa, e il suo argomento non e sentimentale ma epistemologico — chi uccide per una dottrina presume una certezza che nessuno possiede. Il libro viene proibito ovunque, lui muore povero a quarantotto anni, e l\'argomento aspetta due secoli. La classe deve capire perche un ragionamento corretto possa non fermare nulla.',
+    occorrente:'Niente.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'Michele Serveto,\nmedico e teologo spagnolo.\n\nScopre la circolazione polmonare\ndel sangue\nsettant\'anni prima di Harvey.\n\nE nega che la dottrina della Trinita\nsi trovi nella Scrittura.\n\n1553, Vienne, in Francia:\nl\'Inquisizione cattolica\nlo processa e lo condanna\nal rogo.\n\nRiesce a fuggire\ndalla prigione.\n\nAttraversa le Alpi\ne arriva a Ginevra,\nla citta della Riforma.\n\nViene riconosciuto,\narrestato, processato\ne bruciato vivo\nil 27 ottobre 1553.\n\nDue tribunali,\ndue confessioni nemiche,\nla stessa sentenza,\nlo stesso uomo,\nnello stesso anno.',
+       parlato:'Racconta la vicenda in ordine e lascia che il finale faccia il proprio effetto: la simmetria e la cosa che colpisce.\n\nAggiungi il dettaglio della circolazione polmonare, perche serve a togliere l\'idea che si trattasse di un fanatico marginale: era uno degli uomini piu dotati della propria generazione.\n\nPoi la precisazione storica: a Ginevra il processo fu della citta, non personalmente di Calvino, che pero fu il principale accusatore e chiese la condanna. Chiese anche, senza ottenerlo, che fosse decapitato invece che bruciato.\n\nDomanda per aprire: che cosa rende possibile che due nemici mortali facciano la stessa cosa allo stesso uomo?\n\nRaccogli le prime risposte, e tieni per lo schieramento quella che arriva sempre — che erano tutti fanatici.',
+       seDicono:[
+         {loro:'«Erano fanatici e basta.»',
+          tu:'Calvino era un giurista raffinato, Serveto un medico brillante. Chiamarli fanatici chiude la questione e ti impedisce di capire il ragionamento che li porta li — e il ragionamento c\'era, ed e quello che dobbiamo guardare.'},
+         {loro:'«Perché è andato proprio a Ginevra?»',
+          tu:'Non si sa con certezza: forse era di passaggio verso l\'Italia, forse voleva un confronto con Calvino, con cui era in corrispondenza polemica da anni. Il fatto che si sia fermato in una citta dove sapeva di essere detestato resta uno degli enigmi della vicenda.'}
+       ]},
+
+      {minuti:'8–17', et:'Lo schieramento',
+       schermo:'Immaginate di essere\nsinceramente convinti\nche una dottrina falsa\nporti chi la crede\nalla dannazione eterna,\ne che chi la diffonde\nne trascini altri con se.',
+       opzioni:['allora impedirlo e un dovere, anche con la forza', 'nessuna certezza autorizza a uccidere'],
+       parlato:'Fai schierare e conta. La seconda opzione vince quasi sempre, e va bene — ma il lavoro consiste nel far vedere quanto era forte la prima nel Cinquecento.\n\nRicostruisci l\'argomento dei persecutori come lo facevano loro, senza renderlo ridicolo: se credi davvero che una dottrina falsa condanni le anime per l\'eternita, allora chi la diffonde e piu pericoloso di un assassino — l\'assassino toglie una vita terrena, l\'eretico ne rovina infinite ed eterne. Vista cosi, la tolleranza e crudelta e la persecuzione e carita.\n\nQuando la classe l\'ha capita, fai la domanda che apre tutto: dove sta l\'anello debole di questo ragionamento?\n\nRaccogli, e poi guida. Non sta nella conclusione — se le premesse sono vere, la conclusione segue. Sta nella prima parola: «se credi davvero».\n\nQuanto devi essere sicuro, per fare una cosa irreversibile a una persona?\n\nÈ esattamente il punto in cui interviene Castellione.',
+       seDicono:[
+         {loro:'«Ma l\'argomento è mostruoso.»',
+          tu:'Le conclusioni lo sono. Il ragionamento e valido: da quelle premesse segue. È il tipo di caso che dovreste imparare a riconoscere — quando un ragionamento corretto porta a una conclusione che rifiutate, il problema sta nelle premesse, e bisogna trovare quale.'},
+         {loro:'«Nessuno può essere sicuro di quelle cose.»',
+          tu:'Hai appena formulato l\'argomento di Castellione, ed e quello giusto. Adesso guarda quanto e piu forte di dire «non si uccide»: non fa appello alla pieta, colpisce la pretesa di sapere. Chi ti risponde deve dimostrarti di essere certo — e non puo.'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'Un anno dopo il rogo.\n\nSebastiano Castellione,\nprofessore di greco a Basilea,\npubblica un libro\nsotto falso nome.\n\nSi intitola\nSe gli eretici siano da perseguitare.\n\nNon e un trattato:\ne una raccolta di testi\ndi autori cristiani autorevoli\nche hanno sostenuto\nche non si debba uccidere\nper questioni di fede.\n\nFra gli autori citati,\nprudentemente,\nc\'e anche Calvino:\nun suo passo di vent\'anni prima,\nquando i perseguitati\nerano i protestanti.\n\nE poi l\'argomento suo,\nche non e sentimentale.\n\nGuardate, dice,\nsu quante cose i cristiani\nnon riescono ad accordarsi\nfra loro.\n\nSe non siamo d\'accordo,\ncon quale titolo\nqualcuno uccide?',
+       parlato:'Descrivi la costruzione del libro, perche e abilissima: non discute, cita. E cita anche l\'avversario contro se stesso, prendendo un testo scritto quando era lui il perseguitato.\n\nFai notare la mossa: mostrare a qualcuno che la regola che applica agli altri non l\'accettava quando toccava a lui. È l\'argomento piu difficile da respingere.\n\nPoi l\'argomento centrale, e va spiegato bene perche e la parte filosofica.\n\nCastellione osserva un fatto: sulle questioni fondamentali — che cosa sia la Trinita, come agisca la grazia, che cosa avvenga nell\'eucaristia — i cristiani si dividono da secoli, e nessuna delle parti riesce a convincere le altre. Non e mancanza di intelligenza: e che quelle questioni sono oscure.\n\nDa qui la conclusione: se una cosa e cosi oscura che secoli di dispute non l\'hanno chiarita, nessuno puo essere abbastanza sicuro da uccidere qualcuno che la pensa diversamente.\n\nNota la struttura: non dice che tutte le opinioni siano ugualmente vere. Dice che nessuno e in condizione di provare la propria abbastanza da giustificare l\'irreparabile.\n\nÈ un argomento sui limiti della conoscenza, non sul rispetto reciproco.',
+       seDicono:[
+         {loro:'«Se vale per la religione vale per tutto.»',
+          tu:'Non del tutto, e Castellione lo dice: distingue fra dottrine chiare, su cui i cristiani concordano e sono poche, e dottrine oscure. Dove c\'e accordo largo si puo agire; dove ci sono secoli di dispute no. È un criterio applicabile: guarda quanto una questione ha resistito ai tentativi di chiarirla.'},
+         {loro:'«E allora nessuno può punire nessuno?»',
+          tu:'L\'argomento riguarda le opinioni, non gli atti. Su chi ruba o uccide non c\'e nessuna oscurita: sappiamo benissimo che cosa ha fatto. La distinzione fra punire un\'azione e punire una credenza sembra ovvia a noi e nel 1554 non lo era affatto.'}
+       ]},
+
+      {minuti:'28–38', et:'Il testo',
+       schermo:'Dalla prefazione,\nfirmata con uno pseudonimo,\ne dedicata a un duca tedesco.\n\nCastellione scrive\nche cercare la verita\ne dirla come si crede\nnon puo essere un delitto;\n\nche non si deve costringere\nnessuno a credere,\nperche la fede e libera;\n\nche se in una citta\ndue uomini non concordano\nsu una questione oscura,\nnon per questo uno dei due\nva ucciso;\n\ne poi la frase\nper cui e ricordato:\n\nuccidere un uomo\nnon e difendere una dottrina,\ne uccidere un uomo.\n\nQuando i ginevrini\ndifesero il rogo di Serveto,\nnon uccisero una dottrina:\nuccisero un uomo.',
+       testo:{fonte:'Sebastiano Castellione, De haereticis an sint persequendi (1554), e Contra libellum Calvini',
+              glossa:'Il libro uscì sotto lo pseudonimo di Martinus Bellius e fu subito proibito nei territori riformati; il secondo scritto, ancora più diretto, restò inedito fino al Seicento. Castellione fu privato di ogni incarico stabile, visse in povertà e morì a quarantotto anni mentre era in corso contro di lui un procedimento. La sua opera fu riscoperta e valorizzata solo nel Novecento.'},
+       parlato:'Leggi il passo e fermati sulla frase finale: la sua forza sta nel togliere l\'astrazione. Chi giustifica un rogo parla di dottrine, di errore, di difesa della verita. Castellione riporta la cosa a quello che e materialmente successo.\n\nDomanda utile: perche funziona?\n\nGuidali: perche il linguaggio astratto e cio che rende sopportabile ai persecutori quello che fanno. Si difende la fede, si estirpa l\'errore, si protegge il gregge. Nominare l\'atto — un uomo bruciato vivo — toglie la copertura.\n\nÈ una tecnica che riconosceranno ovunque: ogni volta che si sta per fare qualcosa di grave a delle persone, il linguaggio si fa astratto. E chi vuole opporsi rimette i nomi propri e i corpi.\n\nSe la classe regge, aggiungi la parte piu dura per Calvino: Castellione gli rinfaccia le sue pagine di vent\'anni prima, scritte quando i protestanti venivano bruciati dai cattolici, in cui sosteneva che nessuno deve essere costretto in materia di fede.\n\nE fai la domanda: che cosa era cambiato?\n\nRisposta: chi aveva il potere.',
+       seDicono:[
+         {loro:'«Calvino era diventato ipocrita.»',
+          tu:'Probabilmente era sinceramente convinto di entrambe le cose nei rispettivi momenti. Ed e piu inquietante dell\'ipocrisia: significa che le nostre convinzioni sulla liberta altrui dipendono, senza che ce ne accorgiamo, da quanta forza abbiamo. Vale la pena tenerlo presente su se stessi.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'Che cosa succede\na quell\'argomento.\n\nIl libro viene proibito\nnei territori riformati.\nLo scritto piu diretto\nresta inedito per un secolo.\n\nCastellione perde ogni incarico,\nvive in poverta,\nmuore a quarantotto anni\nmentre e sotto processo.\n\nViene dimenticato\nper trecentocinquant\'anni.\n\nNel frattempo si continua\na bruciare:\n\nin Spagna, in Italia,\nin Francia, in Inghilterra,\nnei territori luterani\ne in quelli riformati.\n\nPer un secolo e mezzo.\n\nL\'argomento era corretto.\nEra pubblicato.\nEra disponibile.\n\nE non ha fermato\nun solo rogo.',
+       parlato:'Dai la sequenza senza enfasi: i fatti bastano.\n\nPoi la domanda vera dell\'ora, che e piu difficile di quella iniziale: perche un argomento corretto non produce effetti?\n\nRaccogli e poi guida. Perche gli argomenti non hanno forza propria. Convincono chi e disposto a essere convinto, e chi bruciava gli eretici non aveva nessun motivo per esporsi a un ragionamento che gli avrebbe tolto uno strumento di governo.\n\nPoi da\' i motivi per cui la tolleranza alla fine arriva, e non sono nobili: le guerre di religione costano troppo, i sovrani si accorgono che perseguitare fa perdere sudditi utili — pensate agli ugonotti che se ne vanno dalla Francia — e i mercanti hanno bisogno di trattare con chiunque.\n\nQuindi la tolleranza si afferma quando diventa conveniente, e a quel punto gli argomenti di Castellione, ripresi da Locke un secolo e mezzo dopo, servono a dare una forma decente a una scelta gia fatta per altre ragioni.\n\nÈ una conclusione amara e va detta, perche e la stessa cosa vista con le assicurazioni di Bismarck: le idee giuste vengono raccolte quando servono a qualcuno.\n\nMa aggiungi la parte che salva il ragionamento: se quell\'argomento non fosse stato scritto, non ci sarebbe stato niente da raccogliere. Chi formula una tesi in anticipo prepara lo strumento che qualcun altro usera.',
+       seDicono:[
+         {loro:'«Allora scrivere non serve a niente.»',
+          tu:'Serve a rendere disponibile qualcosa che prima non c\'era. Locke nel 1689 non inventa nulla di essenziale rispetto a Castellione: mette in forma sistematica argomenti gia scritti, in un momento in cui l\'Inghilterra e pronta ad ascoltarli. Senza il primo, il secondo avrebbe dovuto ricominciare.'},
+         {loro:'«Perché è stato dimenticato?»',
+          tu:'Perche i vincitori delle guerre di religione furono le chiese organizzate, e nessuna delle due aveva interesse a ricordare un uomo che le condannava entrambe. Le storie le scrivono le istituzioni sopravvissute, e chi non sta in nessuna sparisce dagli elenchi.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'Torniamo alla domanda.\n\nSi puo essere certi abbastanza\nda uccidere?\n\nCastellione risponde di no,\ne il suo argomento\nnon riguarda solo la religione.\n\nDice tre cose.\n\nPrima: su alcune questioni\nnon si raggiunge accordo\nnemmeno dopo secoli,\ne questo e un fatto,\nnon un\'opinione.\n\nSeconda: chi agisce in modo\nirreversibile su una persona\ndeve avere una certezza\nproporzionata al danno.\n\nTerza: il linguaggio astratto\nserve a non vedere\nche cosa si sta facendo.\n\nUltima domanda,\ne vale ben oltre il Cinquecento:\n\nquando sentite qualcuno\nparlare di persone\nusando solo parole astratte,\nche cosa dovreste chiedervi?',
+       parlato:'Riepiloga i tre punti e falli enunciare a loro.\n\nPoi il criterio pratico, che e la cosa concreta da portare via: proporzionare la certezza richiesta alla gravita e all\'irreversibilita di cio che si sta per fare. Per un\'opinione basta essere ragionevolmente convinti; per un atto che non si puo disfare serve molto di piu, e su alcune questioni quel molto di piu non e disponibile a nessuno.\n\nSull\'ultima domanda falli lavorare, perche e la parte viva: che cosa succede quando si parla di gruppi invece che di persone, di categorie invece che di nomi. Verranno fuori esempi contemporanei senza che tu li suggerisca.\n\nDa\' loro il gesto di Castellione come strumento: rimettere i nomi propri e i corpi. Non e un\'operazione sentimentale, e un controllo — se una cosa suona accettabile solo finche si parla in astratto, probabilmente non e accettabile.\n\nChiudi con quello che apre il seguito: abbiamo visto un secolo in cui si e cercato di ripensare la religione e ci si e uccisi. Nel secolo successivo qualcuno decidera di ricominciare da un\'altra parte — non dai testi sacri e nemmeno dagli antichi, ma da se stesso, cercando qualcosa di cui sia impossibile dubitare. Si chiamera Cartesio, e la prossima volta vediamo che cosa trova e che cosa gli costa.',
+       seDicono:[
+         {loro:'«Ma allora non si può mai agire con fermezza.»',
+          tu:'Si puo, e il criterio non lo impedisce: dice di calibrare la certezza sul danno. Puoi battere i pugni sul tavolo per un\'opinione e devi essere molto piu prudente prima di rovinare la vita a qualcuno. La fermezza non e il problema; il problema e l\'irreversibilita.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'Un dialogo in cielo',
+       corpo:'Nel 1453, pochi mesi dopo la caduta di Costantinopoli, mentre in Europa si invoca la crociata, il cardinale Niccolò Cusano scrive un breve dialogo intitolato «La pace della fede».\n\nImmagina che in cielo, davanti a Dio, si riuniscano i rappresentanti di tutti i popoli — greci, italiani, arabi, indiani, persiani, ebrei, tartari, armeni — e discutano delle rispettive credenze fino a riconoscere che adorano tutti la stessa realtà con riti diversi.\n\nLa conclusione è che ci sia una sola fede in una varietà di riti.',
+       chiedi:'Un cardinale scrive questo mentre il suo mondo grida alla guerra santa. Che cosa serve, a una persona, per reagire a una notizia nel modo opposto a quello di tutti gli altri? E quanto conta, in una posizione del genere, non doverne rispondere a un elettorato?'},
+      {titolo:'La disputa che non si tenne',
+       corpo:'Nel 1486 Pico della Mirandola, ventitreenne, pubblica novecento tesi tratte da filosofi greci, arabi, latini ed ebrei, e invita gli studiosi di tutta Europa a Roma per discuterle pubblicamente, offrendosi di pagare le spese di viaggio.\n\nUna commissione papale ne esamina alcune e ne condanna tredici. La disputa non si tiene. Pico pubblica una difesa, viene scomunicato, fugge in Francia, è arrestato e infine perdonato.\n\nMorì a trentuno anni, probabilmente avvelenato.',
+       chiedi:'Un giovane propone di discutere pubblicamente novecento tesi e la risposta è vietargliene tredici. Perché un\'autorità dovrebbe temere una discussione pubblica più di una tesi sbagliata? E che cosa cambia, in una controversia, se si può discutere davanti a tutti?'},
+      {titolo:'Fingere per restare vivi',
+       corpo:'Nell\'Europa del Cinquecento moltissime persone si trovarono a vivere in territori dove la confessione ufficiale non era la propria. Molti scelsero di partecipare pubblicamente al culto imposto continuando a credere altro in privato.\n\nCalvino condannò duramente questa pratica, che chiamò nicodemismo dal nome di Nicodemo, il fariseo che nel Vangelo andava da Gesù di notte, e sostenne che chi non è disposto a testimoniare la propria fede in pubblico la rinnega.\n\nChi lo scriveva viveva a Ginevra, dove la sua confessione era quella ufficiale.',
+       chiedi:'Chi è al sicuro chiede a chi non lo è di rischiare la vita per coerenza. Che cosa dovremmo pretendere da una persona che rischia tutto, e che cosa da una che non rischia nulla? E chi è nella posizione giusta per porre quella richiesta?'}
+    ],
+    testi:[
+      {fonte:'Niccolò Cusano, La dotta ignoranza, I, 3 (1440)',
+       corpo:'Cusano sostiene che fra il finito e l\'infinito non vi è proporzione, e che perciò l\'intelletto umano non può raggiungere con precisione la verità delle cose: può avvicinarvisi indefinitamente, come un poligono inscritto si avvicina al cerchio senza mai coincidere con esso.',
+       glossa:'L\'immagine del poligono è la chiave: si migliora sempre e non si arriva mai. Ne discende una conseguenza pratica enorme, che Castellione svilupperà — se la conoscenza umana è per struttura approssimata, nessuno può fondare su di essa una certezza tale da giustificare l\'irreparabile.'},
+      {fonte:'Erasmo da Rotterdam, Il libero arbitrio (1524)',
+       corpo:'Erasmo sostiene che su questioni tanto oscure sarebbe più prudente sospendere il giudizio, che egli si sente più incline al dubbio che all\'affermazione, e che preferirebbe attenersi a ciò che la Chiesa ha stabilito piuttosto che pronunciarsi con sicurezza su ciò che le Scritture non chiariscono.',
+       glossa:'Lutero rispose che lo Spirito Santo non è uno scettico e che il cristiano deve affermare con certezza. Il contrasto va oltre il tema in discussione: è l\'opposizione fra chi ritiene che l\'incertezza sia una condizione da accettare e chi la considera una colpa. Le due posizioni attraversano tutta l\'età moderna.'},
+      {fonte:'Sebastiano Castellione, Contra libellum Calvini (scritto nel 1554, pubblicato nel 1612)',
+       corpo:'Castellione replica alla difesa che Calvino aveva pubblicato del proprio operato, e afferma che quando i ginevrini fecero morire Serveto non difesero una dottrina ma uccisero un uomo, e che non si testimonia la propria fede bruciando un altro ma, semmai, lasciandosi bruciare per essa.',
+       glossa:'La seconda parte della frase è meno citata e più tagliente: rovescia il rapporto fra fede e violenza sostenendo che il martire testimonia, il carnefice no. È il passaggio che rese impubblicabile il testo per quasi sessant\'anni.'}
+    ],
+    compito:'Mezza pagina. Cercate un testo attuale — un articolo, un discorso, un commento — che parli di un gruppo di persone usando solo parole astratte o categorie generali. Trascrivetene due o tre righe. Poi riscrivetele mettendo al posto delle categorie una persona con un nome, un\'età, un mestiere. Infine dite se il senso della frase, riscritta così, vi sembra ancora accettabile — e se no, che cosa era cambiato.',
+    fonti:[
+      'S. Castellione, De haereticis an sint persequendi (1554); Contra libellum Calvini',
+      'N. Cusano, De docta ignorantia (1440); De pace fidei (1453)',
+      'Erasmo, De libero arbitrio (1524); Lutero, De servo arbitrio (1525)',
+      'G. Pico della Mirandola, Conclusiones nongentae (1486)',
+      'S. Zweig, Castellio contro Calvino; D. Cantimori, Eretici italiani del Cinquecento',
+      'C. Ginzburg, Il nicodemismo; P. Zagorin, L\'idea della tolleranza in Occidente'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',

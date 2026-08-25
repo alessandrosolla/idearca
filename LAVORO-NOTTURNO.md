@@ -178,7 +178,7 @@ Si va in ordine di programma. Restano:
 - [x] Storia moderna · 16 — Il 1848, primavera dei popoli
 - [x] Filosofia moderna · 1 — La cultura umanistico-rinascimentale
 - [x] Filosofia moderna · 2 — Il ritorno a Platone e ad Aristotele
-- [ ] Filosofia moderna · 3 — Rinascimento e religione
+- [x] Filosofia moderna · 3 — Rinascimento e religione
 - [ ] Filosofia moderna · 4 — Rinascimento e politica
 - [ ] Filosofia moderna · 5 — Telesio, Bruno, Campanella
 - [ ] Filosofia moderna · 6 — La rivoluzione scientifica
