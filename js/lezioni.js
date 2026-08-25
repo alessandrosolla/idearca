@@ -10425,6 +10425,225 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Filosofia moderna · 5 — Telesio, Bruno, Campanella': {
+  mappa: {
+    n:'Telesio, Bruno, Campanella', d:'l\'ultimo tentativo di spiegare la natura senza matematica',
+    f:[
+      {r:'condividono', n:'Un programma', d:'studiare la natura secondo i suoi propri principi, e non secondo Aristotele',
+       f:[
+         {r:'la formula e di Telesio', n:'Iuxta propria principia', d:'e diventa la parola d\'ordine di tutto il naturalismo italiano'},
+         {r:'significa smettere di spiegare con', n:'Forme, essenze e cause finali', d:'l\'apparato concettuale con cui si insegnava da tre secoli'},
+         {r:'e partire invece dai', n:'Sensi', d:'cio che si vede e si tocca viene prima di cio che si deduce'},
+         {r:'la natura e concepita come', n:'Un organismo vivo', d:'non una macchina: ha forze, simpatie, tendenze proprie'},
+         {r:'e tutti e tre', n:'Finiscono male', d:'processati, incarcerati, o bruciati: era una posizione pericolosa',
+          f:[{piu:true, r:'e tutti e tre vengono dal', n:'Mezzogiorno', d:'Cosenza, Nola, Stilo: il naturalismo e un fenomeno soprattutto meridionale'}]}
+       ]},
+
+      {r:'comincia con', n:'Telesio', d:'un nobile calabrese che studia trent\'anni prima di pubblicare',
+       f:[
+         {r:'riduce tutto a', n:'Tre principi', d:'il caldo che dilata, il freddo che contrae, e la materia su cui agiscono'},
+         {r:'perche sono i soli che', n:'Si possono sentire', d:'non si postulano: si toccano, e questo basta a preferirli'},
+         {r:'anche l\'anima e uno', n:'Spirito materiale', d:'sottilissimo, prodotto dal seme, sede delle sensazioni'},
+         {r:'con l\'aggiunta di un\'', n:'Anima immortale infusa da Dio', d:'necessaria alla fede, e chiaramente aggiunta sopra il sistema'},
+         {piu:true, r:'e la sua opera finisce all\'', n:'Indice nel 1596', d:'dieci anni dopo la morte: le condanne arrivano quando l\'autore non puo piu rispondere'},
+         {r:'e Bacone lo chiamera', n:'Il primo dei moderni', d:'per aver provato a spiegare la natura senza chiedere permesso ad Aristotele'}
+       ]},
+
+      {r:'prosegue con', n:'Bruno e l\'universo infinito', d:'e qui il salto e enorme',
+       f:[
+         {r:'l\'universo e', n:'Infinito', d:'perche una causa infinita non puo produrre un effetto finito'},
+         {r:'contiene', n:'Infiniti mondi', d:'e ciascuno con i propri abitanti: le stelle sono soli'},
+         {r:'quindi non esiste', n:'Nessun centro', d:'e nemmeno una circonferenza: ogni punto puo dirsi centro'},
+         {r:'la Terra e', n:'Un corpo fra gli altri', d:'e cade la distinzione fra cieli incorruttibili e mondo sublunare'},
+         {r:'e va molto oltre', n:'Copernico', d:'che aveva spostato il centro, non abolito il centro',
+          f:[{piu:true, r:'ma senza', n:'Osservazioni ne calcoli', d:'la conclusione e ricavata da un ragionamento su Dio, non dal cielo'}]}
+       ]},
+
+      {r:'costruisce una', n:'Filosofia dell\'uno', d:'in cui Dio non sta sopra il mondo ma dentro',
+       f:[
+         {r:'riprende da Cusano la', n:'Coincidenza degli opposti', d:'nell\'infinito massimo e minimo si toccano'},
+         {r:'la materia non e passiva', n:'Ma potenza di tutto', d:'contiene in se le forme, e non le riceve da fuori'},
+         {r:'esiste un\'', n:'Anima del mondo', d:'un principio interno che vivifica e ordina ogni cosa'},
+         {r:'e Dio e', n:'Immanente', d:'non un artefice esterno ma la vita stessa dell\'universo',
+          f:[{r:'ed e questa la tesi', n:'Davvero inaccettabile', d:'molto piu della cosmologia: cancella la distanza fra creatore e creatura'}]},
+         {r:'e insegna l\'', n:'Arte della memoria', d:'un sistema di immagini e luoghi per ricordare: e cio per cui veniva chiamato dai potenti'},
+         {piu:true, r:'da cui vive, perche', n:'Nessuno lo paga per filosofare', d:'gira l\'Europa insegnando mnemotecnica: e il suo mestiere'},
+         {r:'la conoscenza e un', n:'Eroico furore', d:'una tensione infinita verso un oggetto infinito, che non si placa mai'}
+       ]},
+
+      {r:'finisce nel', n:'Processo', d:'e vale la pena guardare che cosa gli fu contestato davvero',
+       f:[
+         {r:'denunciato a Venezia da', n:'Chi lo ospitava', d:'un nobile che voleva imparare da lui l\'arte della memoria'},
+         {r:'processato per', n:'Otto anni', d:'a Venezia e poi a Roma, con lunghi interrogatori e alcune ritrattazioni parziali'},
+         {r:'le accuse riguardano soprattutto', n:'Tesi teologiche', d:'la Trinita, la divinita di Cristo, la verginita di Maria, la trasmigrazione delle anime'},
+         {r:'la cosmologia', n:'Compare, e non e il capo principale', d:'e questo cambia il modo in cui va raccontata la vicenda'},
+         {r:'rifiuta di ritrattare e viene', n:'Bruciato in Campo de\' Fiori', d:'17 febbraio 1600',
+          f:[{piu:true, r:'un testimone riferisce che disse ai giudici', n:'Tremate voi piu di me', d:'nel pronunciare la sentenza, piu di quanto tremi io nel riceverla'}]}
+       ]},
+
+      {r:'continua con', n:'Campanella', d:'che sopravvive, e paga in un altro modo',
+       f:[
+         {r:'organizza in Calabria una', n:'Congiura', d:'1599: vuole rovesciare il dominio spagnolo e fondare una repubblica'},
+         {r:'scoperto, si finge pazzo', n:'Per non essere giustiziato', d:'e regge la finzione sotto tortura per trentasei ore'},
+         {r:'passa', n:'Ventisette anni in carcere', d:'e ci scrive quasi tutta la propria opera'},
+         {r:'immagina la', n:'Citta del Sole', d:'una comunita governata dal sapere, senza proprieta privata, con il lavoro diviso fra tutti'},
+         {r:'e scrive l\'', n:'Apologia per Galileo', d:'1616: difende la liberta di ricerca, pur non condividendo il copernicanesimo',
+          f:[{r:'sostenendo che la natura sia', n:'Un secondo libro di Dio', d:'e che leggerlo non possa contraddire il primo'}]}
+       ]},
+
+      {r:'ha', n:'Un limite comune', d:'ed e il motivo per cui la scienza prendera un\'altra strada',
+       f:[
+         {r:'nessuno dei tre fa', n:'Esperimenti controllati', d:'si osserva, si ragiona, non si costruiscono prove ripetibili'},
+         {r:'nessuno usa la', n:'Matematica', d:'la natura non e scritta in figure e numeri, e un organismo da capire per simpatie'},
+         {r:'la magia naturale resta', n:'Dentro il quadro', d:'agire sulla natura conoscendone le corrispondenze nascoste'},
+         {r:'quindi le loro tesi', n:'Non producono previsioni', d:'e cio che non prevede non si puo controllare'},
+         {piu:true, r:'e nel frattempo Keplero', n:'Fa i conti', d:'stessa generazione, altro mestiere: chi calcola trova le ellissi, chi ragiona trova l\'infinito'},
+         {r:'e sono', n:'L\'ultimo naturalismo', d:'la generazione dopo misura, calcola e ripete: e un altro mestiere'}
+       ]},
+
+      {r:'lascia', n:'Un\'eredita obliqua', d:'non alla scienza, ma alla filosofia',
+       f:[
+         {r:'Bacone prende da Telesio', n:'L\'idea di ricominciare dai fatti', d:'pur giudicandone insufficiente il sistema'},
+         {r:'Spinoza arrivera all\'idea di', n:'Dio ossia la natura', d:'un\'immanenza che di Bruno condivide la struttura, con un metodo opposto'},
+         {r:'e l\'idea che il pensiero possa', n:'Costare la vita', d:'per tre secoli Bruno sara citato da chiunque rivendichi il diritto di dire cio che pensa'},
+         {r:'resta l\'idea di una natura', n:'Senza gerarchie', d:'nessun luogo piu nobile di un altro, nessun corpo privilegiato'},
+         {r:'e la figura di Bruno diventa', n:'Un simbolo politico', d:'nell\'Ottocento, per una battaglia che con la sua filosofia c\'entra poco',
+          f:[{r:'con la statua eretta nel', n:'1889', d:'a Campo de\' Fiori, per iniziativa di studenti e massoneria, contro il papato'},
+             {piu:true, r:'e il papa la considero', n:'Un affronto', d:'passo quella giornata in preghiera: il monumento fu subito un fatto politico'}]}
+       ]}
+    ],
+    incroci:[
+      {da:'Osservazioni ne calcoli', a:'Non producono previsioni', r:'e la ragione per cui quelle tesi',
+       perche:'Bruno arriva all\'universo infinito ragionando su che cosa possa produrre una causa infinita. Il ragionamento non dice dove guardare ne che cosa aspettarsi di vedere: non genera nessun controllo possibile. Una conclusione vera ottenuta cosi resta un\'affermazione, non un punto da cui ripartire.'},
+      {da:'Tesi teologiche', a:'Davvero inaccettabile', r:'comprendono l\'immanenza divina, che era la parte',
+       perche:'Il capo d\'accusa piu grave non e che la Terra si muova ma che Dio coincida con la vita dell\'universo. Se creatore e creatura non sono distinti, cade tutto l\'impianto della teologia cristiana. È utile saperlo per raccontare il processo con precisione — non fu un tribunale contro l\'astronomia.'},
+      {da:'Si possono sentire', a:'L\'idea di ricominciare dai fatti', r:'e cio che Bacone raccoglie come',
+       perche:'Telesio sceglie caldo e freddo perche sono percepibili, contro le forme aristoteliche che si postulano. Bacone giudica il suo sistema debole e ne apprezza la mossa iniziale: partire da cio che si puo constatare. La filiazione passa per il metodo, non per i contenuti.'},
+      {da:'Un organismo vivo', a:'Matematica', r:'e cio che rende inutile la',
+       perche:'Se la natura e un vivente con simpatie e tendenze, gli strumenti giusti sono l\'analogia e la corrispondenza, non la misura. La scelta di non usare la matematica non e una dimenticanza: discende coerentemente dall\'idea di che cosa sia la natura. Ed e la ragione per cui questa tradizione si ferma.'},
+      {da:'1889', a:'Compare, e non e il capo principale', r:'trasforma in bandiera scientifica un processo in cui la cosmologia',
+       perche:'Il monumento e voluto da studenti, massoneria e Italia laica in polemica con il papato, e ha bisogno di un martire della libera scienza. La figura costruita allora ha oscurato per un secolo i documenti del processo, che raccontano un\'altra storia. I simboli sono piu comodi delle fonti.'},
+      {da:'Nessun centro', a:'Senza gerarchie', r:'produce l\'idea di una natura',
+       perche:'Se ogni punto puo dirsi centro, cadono tutte le gerarchie fondate sulla posizione: cieli piu nobili della terra, alto e basso, luoghi naturali. È la conseguenza filosofica piu duratura di Bruno, e sopravvive alla debolezza dei suoi argomenti astronomici.'},
+      {da:'Un secondo libro di Dio', a:'Apologia per Galileo', r:'e l\'argomento centrale dell\'',
+       perche:'Campanella difende la liberta di ricerca sostenendo che natura e Scrittura vengano dalla stessa fonte e non possano contraddirsi. È la stessa mossa che Galileo aveva fatto nella lettera a Cristina di Lorena, e viene da un uomo che scrive dal carcere e che non condivideva nemmeno il copernicanesimo.'},
+      {da:'Immanente', a:'Dio ossia la natura', r:'anticipa strutturalmente il',
+       perche:'Bruno e Spinoza sostengono entrambi che Dio non stia fuori dal mondo, e arrivano per strade opposte: uno per intuizione metafisica e immagini poetiche, l\'altro per deduzione geometrica ordinata come un trattato di matematica. La stessa tesi, sostenuta con metodi incompatibili, ha destini diversissimi.'},
+      {da:'Per non essere giustiziato', a:'Ventisette anni in carcere', r:'gli costa',
+       perche:'Fingersi pazzo salva la vita perche un folle non era imputabile di eresia pertinace, e la finzione va retta sotto tortura. Il prezzo e la reclusione a vita, trasformata in luogo di scrittura: la Citta del Sole e l\'Apologia per Galileo nascono in cella.'},
+      {da:'Finiscono male', a:'Chi lo ospitava', r:'comincia, per Bruno, da',
+       perche:'La denuncia parte da un nobile veneziano che lo aveva chiamato in casa per farsi insegnare l\'arte della memoria e che si riteneva ingannato. Nessuna persecuzione organizzata: una lite privata che finisce all\'Inquisizione. Molti processi celebri cominciano cosi, ed e utile ricordarlo.'},
+      {da:'Citta del Sole', a:'Congiura', r:'e il progetto che accompagna la',
+       perche:'Campanella non immagina una societa perfetta come esercizio letterario: aveva provato a fondarne una in Calabria, con l\'appoggio di frati e di popolazioni in rivolta. L\'utopia e il programma di un tentativo reale — cosa che la distingue nettamente dall\'Utopia di More.'},
+      {da:'L\'ultimo naturalismo', a:'Dentro il quadro', r:'lo e anche perche la magia naturale resta',
+       perche:'Finche agire sulla natura significa conoscerne le corrispondenze nascoste, non serve isolare le variabili ne ripetere le prove. La scienza sperimentale nasce quando si smette di cercare simpatie e si comincia a misurare — e a quel punto questa tradizione, per quanto ricca, non ha piu strumenti da offrire.'},
+      {da:'Tremate voi piu di me', a:'Un simbolo politico', r:'e la frase su cui si costruisce',
+       perche:'Riportata da un testimone e ripresa nell\'Ottocento, la frase e il nucleo del mito. Ha un fondamento documentario e riguarda il coraggio davanti a un tribunale, non la scienza. È il fatto piu solido della vicenda, ed e diverso da cio per cui Bruno viene celebrato.'}
+    ]
+  },
+  provocazione: {
+    titolo:'Avere ragione per le ragioni sbagliate',
+    durata:'55 minuti',
+    domandaMadre:'Conta di piu la conclusione o il modo in cui ci si arriva?',
+    perche:'Giordano Bruno sostiene che l\'universo sia infinito e contenga infiniti mondi abitati, e su questo — nei limiti in cui la domanda ha senso — la scienza gli ha dato ragione. Ma non era arrivato a quella conclusione guardando il cielo: l\'aveva dedotta dall\'idea che una causa infinita non possa produrre un effetto finito. Non aveva osservazioni, non aveva calcoli, e la sua tesi non permetteva nessuna previsione. La classe deve decidere se questo conti, e scoprire nel frattempo che il processo per cui fu bruciato riguardava soprattutto tesi teologiche, e che la figura del martire della scienza e stata costruita nell\'Ottocento per una battaglia politica.',
+    occorrente:'Niente.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'Fine del Cinquecento.\n\nUn frate campano sostiene\nche l\'universo sia infinito;\n\nche contenga infiniti mondi;\n\nche le stelle siano soli\ncon i propri pianeti;\n\nche su quei pianeti\nci siano abitanti;\n\ne che la Terra non occupi\nnessuna posizione speciale.\n\nQuattro secoli dopo\nsappiamo che l\'universo\ne enormemente piu grande\ndi quanto chiunque immaginasse,\nche le stelle sono soli,\nche hanno pianeti,\ne che la Terra non e al centro\ndi niente.\n\nSembra la storia\ndi un uomo che aveva ragione\ncontro tutti.\n\nMa guardate come\nci era arrivato.',
+       parlato:'Costruisci l\'elenco delle tesi e poi la conferma moderna: l\'effetto e quello di un uomo in anticipo di secoli.\n\nPoi il rovesciamento, e dallo lentamente. Bruno non aveva un telescopio, che sarebbe arrivato dieci anni dopo la sua morte. Non aveva fatto un solo calcolo. Non aveva osservato nulla.\n\nIl suo argomento era questo: Dio e infinito e onnipotente; una causa infinita non puo produrre un effetto finito senza limitarsi; dunque l\'universo che ha creato deve essere infinito.\n\nÈ un ragionamento su Dio, non sul cielo.\n\nDomanda dell\'ora: se uno arriva alla conclusione giusta per una strada che non c\'entra niente, ha ragione?\n\nRaccogli le prime reazioni e non chiudere.',
+       seDicono:[
+         {loro:'«L\'importante è che ci abbia azzeccato.»',
+          tu:'Tienila, e la prima posizione dello schieramento. Ti anticipo solo una domanda a cui dovrai rispondere: se lo stesso ragionamento — una causa infinita produce effetti infiniti — lo avesse portato a una conclusione falsa, diresti che il ragionamento era sbagliato? E allora era il ragionamento a valere, o il risultato?'},
+         {loro:'«Ma allora nessuno prima aveva pensato all\'infinito?»',
+          tu:'Qualcuno sì: Cusano aveva scritto che l\'universo non ha centro ne circonferenza, e gli atomisti antichi parlavano di infiniti mondi. Bruno riprende idee che circolavano e le spinge fino in fondo, e lo fa in pubblico, in volgare, sfidando tutti. Il coraggio e suo; l\'idea non del tutto.'}
+       ]},
+
+      {minuti:'8–17', et:'Lo schieramento',
+       schermo:'Chi arriva a una conclusione vera\nsenza prove, senza osservazioni\ne senza un metodo che permetta\ndi controllarla:',
+       opzioni:['aveva ragione, e questo conta', 'ha indovinato, che e un\'altra cosa'],
+       parlato:'Fai schierare e conta. Di solito la prima vince, ed e la posizione istintiva.\n\nPoi metti alla prova con un esperimento mentale che funziona sempre.\n\nDi\': immaginate cento persone che, nello stesso secolo, fanno affermazioni audaci sull\'universo senza alcuna prova. Uno dice che e infinito, uno che e fatto di fuoco, uno che e un animale gigantesco, uno che finisce a mille chilometri da qui.\n\nQuattro secoli dopo scopriamo che uno dei cento aveva ragione.\n\nLo consideriamo uno scienziato?\n\nGuidali alla distinzione: se ci sono abbastanza ipotesi in circolazione, qualcuna azzecchera per caso. Quello che distingue la conoscenza dall\'indovinare non e l\'esito ma il fatto di poter dire perche, e di poter essere smentiti.\n\nPoi rovescia, per non essere ingenerosi: allora Bruno non conta niente?\n\nNo, e ci arriviamo. Ma conta per un\'altra ragione, e va trovata.',
+       seDicono:[
+         {loro:'«Anche gli scienziati fanno ipotesi senza prove.»',
+          tu:'Certo, e le chiamano ipotesi. La differenza e che un\'ipotesi scientifica dice anche che cosa dovremmo osservare se fosse vera, e che cosa la smentirebbe. Bruno non poteva dire nulla del genere: la sua tesi era compatibile con qualunque cosa si fosse vista in cielo.'},
+         {loro:'«Ma era in anticipo sui tempi.»',
+          tu:'Su che cosa, pero? Sull\'infinito dell\'universo sì. Sull\'anima del mondo, sui pianeti come esseri viventi e sulla magia naturale no, e sono nello stesso libro. Quando qualcuno e in anticipo su una cosa e fuori strada su altre dieci, il fatto che ne abbia azzeccata una va spiegato.'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'Che cosa c\'era davvero\nnel processo.\n\nOtto anni, fra Venezia e Roma.\nCentinaia di pagine di verbali,\nin gran parte perdute,\nma il sommario si e conservato.\n\nLe accuse principali:\n\nnegare la Trinita\ne la divinita di Cristo;\n\nnegare la verginita di Maria;\n\nsostenere che le anime\ntrasmigrino da un corpo all\'altro;\n\nritenere che Dio\nnon sia distinto dal mondo;\n\nnegare la transustanziazione.\n\nE, fra le altre cose,\nl\'esistenza di infiniti mondi.\n\nCompare. Non e il capo principale.\n\nBruno non fu bruciato\nperche diceva che la Terra si muove.\n\nFu bruciato perche negava\nche Dio fosse distinto dal mondo.',
+       parlato:'Presenta l\'elenco con calma e senza tono polemico: sono i documenti, non un\'opinione.\n\nPoi spiega perche l\'immanenza era la tesi piu grave, ed e la parte filosoficamente interessante. Se Dio coincide con la vita dell\'universo, allora non c\'e creazione, non c\'e provvidenza personale, non c\'e distanza fra creatore e creatura, e non c\'e nessun senso in cui il mondo possa essere giudicato da fuori. Cade l\'intero impianto.\n\nRispetto a questo, dire che i mondi sono infiniti e quasi un dettaglio.\n\nPoi la precisazione onesta che serve alla classe: dire che non fu bruciato per la scienza non significa che il processo sia stato giusto, ne che bruciare qualcuno per le proprie idee sia meno grave se le idee sono teologiche. Significa raccontare la cosa come e andata.\n\nDomanda utile: perche ci teniamo tanto a farne un martire della scienza?\n\nLascia rispondere, e tieni la risposta per il colpo di scena.',
+       seDicono:[
+         {loro:'«Allora la Chiesa aveva ragione a processarlo?»',
+          tu:'No, e sono due cose diverse. Stiamo stabilendo di che cosa fu accusato, non se fosse legittimo accusarlo. Bruciare un uomo per le sue convinzioni resta ingiustificabile con l\'argomento che abbiamo visto nella lezione su Castellione — e quell\'argomento vale identico per le tesi teologiche.'},
+         {loro:'«Ma allora Galileo?»',
+          tu:'Caso diverso e vale la pena non confonderli, come abbiamo gia visto: Galileo fu processato per aver sostenuto una tesi astronomica dopo un divieto, abiuro, e fu condannato agli arresti domiciliari. Bruno rifiuto di ritrattare e fu bruciato per tesi teologiche. Metterli insieme rende entrambe le storie incomprensibili.'}
+       ]},
+
+      {minuti:'28–38', et:'Il testo',
+       schermo:'Dal dialogo\nDe l\'infinito, universo e mondi,\n1584.\n\nBruno argomenta cosi:\n\nse la potenza divina e infinita\ne agisce necessariamente,\nnon puo produrre\nun effetto finito,\nperche altrimenti\nsarebbe una potenza\nlimitata da se stessa;\n\ne domanda perche mai\nDio, potendo fare infiniti mondi,\navrebbe dovuto fermarsi\na uno solo;\n\ne conclude che l\'universo\ne infinito\ne che in esso\nnon vi e centro ne circonferenza,\nperche il centro\ne dappertutto.\n\nGuardate la struttura\ndell\'argomento.\n\nParte da Dio.\nArriva al cielo.\nNon guarda mai in alto.',
+       testo:{fonte:'Giordano Bruno, De l\'infinito, universo e mondi (1584)',
+              glossa:'L\'argomento è metafisico: muove dalle proprietà della causa per dedurre quelle dell\'effetto. È un ragionamento della stessa famiglia di quelli che gli avversari usavano contro di lui, e non ha nessun punto di contatto con l\'osservazione. Bruno scrive in italiano, in forma di dialogo, per un pubblico ampio: la scelta della lingua e del genere fa parte della sfida.'},
+       parlato:'Leggi il passo e fai isolare la struttura: premessa su Dio, conclusione sull\'universo, nessun dato in mezzo.\n\nPoi la domanda di metodo, che e la piu utile della lezione: che cosa sarebbe successo se qualcuno gli avesse mostrato un\'osservazione contraria?\n\nGuidali: niente. La sua tesi non prevedeva niente di osservabile, quindi nessuna osservazione poteva contraddirla. E una tesi che nessuna osservazione puo contraddire non e piu forte delle altre — e piu debole, perche non si espone.\n\nÈ un criterio che vale ben oltre Bruno: quando qualcuno vi propone una tesi, chiedetevi che cosa dovrebbe accadere perche risultasse falsa. Se la risposta e «niente», non state discutendo di come stanno le cose.\n\nPoi da\' il contrasto, e falli lavorare: dieci anni dopo la morte di Bruno, Galileo punta un cannocchiale su Giove e vede quattro lune. Quella e un\'osservazione che poteva andare diversamente. Se non ci fosse stato nulla attorno a Giove, la sua tesi ne sarebbe uscita indebolita.\n\nEsporsi al rischio di essere smentiti e cio che distingue le due imprese.',
+       seDicono:[
+         {loro:'«Anche dire che Dio è infinito è un\'ipotesi.»',
+          tu:'Osservazione ottima. Ed e esattamente il problema: costruisce una tesi sull\'universo fisico partendo da una premessa che nessuno puo verificare. Non c\'e niente di male nel farlo — si chiama metafisica — purche non lo si scambi per astronomia.'},
+         {loro:'«Però ci ha preso.»',
+          tu:'Su una cosa sì. E nello stesso libro sostiene che i pianeti siano esseri viventi dotati di anima e che si muovano da soli per volonta propria. È lo stesso metodo, applicato con lo stesso rigore, e questa volta la conclusione e falsa. Un metodo che produce indifferentemente il vero e il falso non ci dice quale sia quale.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'E allora perche lo ricordiamo\ncome un martire della scienza?\n\nRoma, 9 giugno 1889.\n\nIn Campo de\' Fiori,\nnel punto esatto del rogo,\nviene inaugurata una statua.\n\nL\'iniziativa e di studenti,\nprofessori, associazioni laiche\ne logge massoniche.\n\nSiamo diciannove anni\ndopo la presa di Roma.\nLo Stato italiano e il papato\nnon si riconoscono.\n\nServe un simbolo:\nun uomo bruciato dalla Chiesa\nper aver pensato liberamente.\n\nAll\'inaugurazione\nci sono ventimila persone.\nIl papa passa la giornata\nin preghiera e valuta\ndi lasciare Roma.\n\nLa figura di Bruno\nmartire della libera scienza\nnasce li:\ntre secoli dopo il rogo,\nper una battaglia\nche con la sua filosofia\nc\'entra pochissimo.',
+       parlato:'Racconta l\'inaugurazione come un fatto politico, perche lo era: la statua e un atto dell\'Italia laica contro il papato, in un momento preciso di conflitto.\n\nPoi la formulazione: i simboli si costruiscono quando servono, e servono a chi li costruisce. Bruno diventa martire della scienza perche l\'Italia post-unitaria aveva bisogno di un martire della scienza, non perche i documenti del processo lo dicano.\n\nQuesto vale come metodo, e non solo per lui: ogni volta che una figura del passato viene celebrata, conviene chiedersi chi la celebra e in che anno.\n\nPoi la parte che restituisce a Bruno cio che gli spetta, e va data con la stessa forza.\n\nCi sono otto anni di processo. Ci sono ritrattazioni parziali offerte e poi ritirate. C\'e la possibilita concreta di salvarsi ammettendo, come altri fecero. E c\'e un no finale, che gli costa il rogo.\n\nUn testimone tedesco presente riferisce che, ascoltata la sentenza, disse ai giudici che forse tremavano piu loro nel pronunciarla di quanto tremasse lui nel riceverla.\n\nQuello e documentato, e non riguarda l\'astronomia. Riguarda un uomo davanti a un tribunale.\n\nÈ per quello che vale la pena ricordarlo — e non e poco: e piu solido del mito.',
+       seDicono:[
+         {loro:'«Allora la statua è una bugia?»',
+          tu:'La statua e un monumento politico, e i monumenti dicono sempre piu di chi li erige che di chi rappresentano. Non e una bugia: e un\'operazione. Sapere che cosa e non toglie nulla all\'uomo che fu bruciato li — cambia solo che cosa gli attribuiamo.'},
+         {loro:'«Preferisco il mito, è più bello.»',
+          tu:'È piu semplice, e ti costa una cosa: ti impedisce di capire come funzionava davvero quel mondo, e ti fa credere che il conflitto fosse fra scienza e fede, quando era fra un uomo e un tribunale su questioni di teologia. Il fatto vero e meno lineare e piu istruttivo.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'Torniamo alla domanda.\n\nConta la conclusione\no il modo in cui ci si arriva?\n\nContano tutte e due,\nper cose diverse.\n\nUna conclusione vera\nraggiunta senza metodo\nnon e inutile:\nrende pensabile qualcosa\nche prima non lo era.\n\nMa non si puo usare\nper andare avanti,\nperche non dice a nessuno\ndove guardare\nne che cosa aspettarsi.\n\nE soprattutto:\nchi la sostiene non e\nin condizione di sapere\nse ha ragione.\n\nUltima cosa da portarsi via,\ne serve tutta la vita.\n\nDavanti a una tesi,\nchiedetevi sempre:\n\nche cosa dovrebbe succedere\nperche risultasse falsa?\n\nSe la risposta e niente,\nnon state parlando\ndi come stanno le cose.',
+       parlato:'Riprendi la distinzione e falla enunciare a loro: rendere pensabile una cosa e sapere che e vera sono due risultati diversi, ed entrambi contano.\n\nPoi da\' il criterio finale come strumento, perche e la cosa piu utile dell\'ora: chiedere che cosa smentirebbe una tesi. Serve contro le pseudoscienze, contro le previsioni che si adattano a ogni esito, e contro molte affermazioni che sembrano profonde solo perche nessuno puo contraddirle.\n\nE fai notare che non e un criterio contro la filosofia: la metafisica non e falsificabile e non pretende di esserlo. Il problema nasce quando una tesi metafisica viene presentata come una scoperta sul mondo fisico — che e esattamente cio che accade con l\'universo infinito di Bruno.\n\nChiudi restituendo la misura giusta a tutti e tre gli autori del capitolo: sono l\'ultima generazione che prova a spiegare la natura senza matematica, e falliscono per questo. Nella generazione successiva qualcuno decidera che la natura e scritta in triangoli e cerchi, e che senza quella lingua si gira in un labirinto oscuro. E qualcun altro decidera di ricominciare da capo mettendo in dubbio perfino i propri sensi.\n\nLa prossima volta vediamo che cosa succede quando si sceglie quella strada.',
+       seDicono:[
+         {loro:'«Allora le idee senza prove non servono a niente.»',
+          tu:'Servono, e servono molto: aprono spazi. Prima di Bruno l\'universo infinito era quasi impensabile, dopo era una posizione discutibile. Ma aprire uno spazio e riempirlo sono lavori diversi, e ci vogliono persone diverse. Il guaio comincia quando si confonde il primo con il secondo.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'Il primo dei moderni',
+       corpo:'Bernardino Telesio lavorò per trent\'anni al proprio libro e ne pubblicò le versioni successive fra il 1565 e il 1586. Vi sosteneva che la natura andasse spiegata con principi percepibili — caldo, freddo, materia — invece che con le forme e le cause finali della tradizione.\n\nFrancis Bacon lo giudicò insufficiente come sistema e lo chiamò «il primo dei moderni», per aver tentato di studiare la natura senza chiedere il permesso ad Aristotele.\n\nLe sue opere furono messe all\'Indice nel 1596, dieci anni dopo la sua morte.',
+       chiedi:'Un autore giudicato debole nei contenuti e importante per la mossa iniziale. Che cosa si eredita davvero da un predecessore — le sue tesi o il suo modo di impostare il problema? E come si riconosce chi ha aperto una strada senza percorrerla?'},
+      {titolo:'Trentasei ore',
+       corpo:'Nel 1599 Tommaso Campanella organizza in Calabria una congiura per rovesciare il dominio spagnolo e fondare una repubblica. Scoperto, rischia la condanna a morte.\n\nSi finge pazzo. Poiché il diritto dell\'epoca non condannava a morte un folle per eresia, l\'unico modo di verificare era la tortura: se fingeva, avrebbe ceduto.\n\nResistette a una tortura di circa trentasei ore senza uscire dal personaggio. Fu creduto e condannato al carcere a vita. Ci restò ventisette anni, e vi scrisse quasi tutta la propria opera.',
+       chiedi:'Un uomo si salva la vita reggendo una finzione sotto tortura. Che cosa dice questo sul rapporto fra verità e sopravvivenza? E che giudizio dareste di una scelta del genere, sapendo che l\'alternativa era la morte?'},
+      {titolo:'Una statua contro qualcuno',
+       corpo:'Il monumento a Giordano Bruno in Campo de\' Fiori fu inaugurato il 9 giugno 1889, per iniziativa di comitati studenteschi, associazioni laiche e logge massoniche, con la partecipazione di circa ventimila persone.\n\nErano passati diciannove anni dalla presa di Roma e lo Stato italiano e il papato non si riconoscevano. Leone XIII considerò l\'inaugurazione un affronto, passò la giornata in preghiera e valutò di lasciare la città.\n\nL\'iscrizione dedica il monumento a Bruno «dal secolo da lui divinato, qui dove il rogo arse».',
+       chiedi:'Un monumento eretto tre secoli dopo, in un momento di conflitto preciso. Che cosa dicono i monumenti di chi li erige? E che cosa succede alla figura storica quando diventa la bandiera di qualcun altro?'}
+    ],
+    testi:[
+      {fonte:'Bernardino Telesio, De rerum natura iuxta propria principia — dalla prefazione (1586)',
+       corpo:'Telesio dichiara di voler considerare la costituzione del mondo e la natura delle cose in essa contenute non secondo la ragione, come fecero gli antichi, ma secondo il senso, e di volersi affidare alla natura stessa e a nulla d\'altro.',
+       glossa:'La contrapposizione fra «secondo la ragione» e «secondo il senso» è programmatica e va spiegata: non è un elogio dell\'irrazionalità, ma il rifiuto di dedurre come dev\'essere fatta la natura invece di guardarla. Manca però il passo successivo — l\'esperimento controllato — e per questo il programma resta un programma.'},
+      {fonte:'Sommario del processo a Giordano Bruno (documento conservato in Vaticano, ritrovato nel 1940)',
+       corpo:'Il documento elenca fra le proposizioni contestate la negazione della Trinità e dell\'incarnazione, l\'affermazione dell\'esistenza di infiniti mondi, la trasmigrazione delle anime, la negazione della verginità di Maria e la tesi che Dio non sia distinto dall\'universo.',
+       glossa:'Il ritrovamento del sommario ha permesso di ricostruire i capi d\'accusa, che nella pubblicistica ottocentesca erano stati ridotti alla sola cosmologia. Serve in classe per mostrare che cosa cambia quando un documento riemerge: non l\'atrocità del rogo, ma la ragione per cui avvenne.'},
+      {fonte:'Tommaso Campanella, Apologia per Galileo (scritta nel 1616)',
+       corpo:'Campanella sostiene che i filosofi hanno il diritto di indagare la natura, che le Scritture parlano secondo il modo di intendere del volgo e non insegnano astronomia, e che condannare una dottrina fisica in nome della fede espone la fede stessa al ridicolo se quella dottrina risulterà vera.',
+       glossa:'È scritto in carcere da un domenicano che non condivideva il copernicanesimo: difende la libertà di ricerca di un altro, per un\'ipotesi che riteneva probabilmente falsa. È il caso più limpido, in tutto il periodo, di distinzione fra difendere una tesi e difendere il diritto di sostenerla.'}
+    ],
+    compito:'Mezza pagina. Trovate un\'affermazione che circola e che vi sembra profonda o convincente — su come vanno le cose, sulle persone, sul futuro. Trascrivetela. Poi rispondete alla domanda della lezione: che cosa dovrebbe succedere perché quell\'affermazione risultasse falsa? Se riuscite a indicarlo, scrivetelo. Se non ci riuscite, scrivete anche questo e dite che cosa ne concludete.',
+    fonti:[
+      'B. Telesio, De rerum natura iuxta propria principia (1586)',
+      'G. Bruno, De la causa, principio et uno; De l\'infinito, universo e mondi (1584)',
+      'Sommario del processo di Giordano Bruno (ed. L. Firpo, Il processo di Giordano Bruno)',
+      'T. Campanella, La città del Sole; Apologia pro Galileo (1616)',
+      'E. Garin, Storia della filosofia italiana; M. Ciliberto, Giordano Bruno',
+      'A. Koyré, Dal mondo chiuso all\'universo infinito'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',

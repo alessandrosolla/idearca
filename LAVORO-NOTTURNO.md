@@ -180,7 +180,7 @@ Si va in ordine di programma. Restano:
 - [x] Filosofia moderna · 2 — Il ritorno a Platone e ad Aristotele
 - [x] Filosofia moderna · 3 — Rinascimento e religione
 - [x] Filosofia moderna · 4 — Rinascimento e politica
-- [ ] Filosofia moderna · 5 — Telesio, Bruno, Campanella
+- [x] Filosofia moderna · 5 — Telesio, Bruno, Campanella
 - [ ] Filosofia moderna · 6 — La rivoluzione scientifica
 - [ ] Filosofia moderna · 7 — Francesco Bacone
 - [ ] Filosofia moderna · 8 — Galileo Galilei
