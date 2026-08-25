@@ -342,9 +342,41 @@ a.t:hover{text-decoration:underline}
 .passo i{display:block;font-style:normal;font-size:.8rem;color:#8A7355;
   line-height:1.6;margin-top:.15rem;max-width:62ch}
 .agg.comp{color:#8A6A1E}
+/* ── IL GIORNO ────────────────────────────────────────────
+   Righe alte 56px: il minimo perche' un dito le colpisca senza
+   sbagliare. Una riga dice quando, con chi, di che cosa; il
+   triangolino a destra compare solo se c'e' altro da vedere.
+   ─────────────────────────────────────────────────────────── */
+.barra-giorno{display:flex;align-items:center;gap:.6rem;margin:0 0 1rem}
+.barra-giorno .b{min-width:52px;font-size:1.15rem;line-height:1}
+.quando-g{flex:1;text-align:center;display:flex;flex-direction:column;gap:.15rem}
+.quando-g b{font-size:1.15rem;text-transform:capitalize}
+.quando-g .ogginota{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:#9A7C2E}
+.tornaoggi{display:block;width:100%;margin:0 0 1rem}
+.elenco-g{display:flex;flex-direction:column;gap:.4rem}
+.riga-g{display:flex;align-items:center;gap:.55rem;width:100%;
+  min-height:56px;padding:.55rem .7rem;text-align:left;
+  background:#fff;border:1px solid rgba(138,115,85,.22);border-left:4px solid var(--c,#8A7355);
+  border-radius:10px;cursor:pointer;font:inherit;color:inherit}
+.riga-g:active{background:#faf7f2}
+.riga-g.fatta{opacity:.55}
+.riga-g.adesso{border-color:#9A7C2E;background:#fdf8ee;box-shadow:0 0 0 2px rgba(154,124,46,.18)}
+.riga-g .spunta{width:1.1rem;flex:none;color:#8A7355;font-size:.95rem}
+.riga-g .ora-g{flex:none;font-variant-numeric:tabular-nums;font-weight:600;font-size:.95rem;width:3.1rem}
+.riga-g .pill{flex:none}
+.riga-g .arg-g{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:.94rem}
+.riga-g .arg-g.vuoto2{color:#a99;font-style:italic}
+.riga-g .freccia{flex:none;width:.8rem;color:#b5a48c;font-size:1.1rem;line-height:1}
+.riga-g .freccia.vuota{visibility:hidden}
+.conta-g{margin-top:.9rem;font-size:.82rem;color:#8A7355;text-align:center}
+
 @media(max-width:640px){
   .w{padding:1.3rem 1rem 3rem} h1{font-size:1.9rem}
   .ora{flex-wrap:wrap} .ora .quando{width:auto}
+  /* sul telefono le schede stanno strette e l'argomento va a capo una volta */
+  .tabs{gap:.3rem} .tabs button{padding:.45rem .6rem;font-size:.84rem}
+  .riga-g .arg-g{white-space:normal;display:-webkit-box;-webkit-line-clamp:2;
+    -webkit-box-orient:vertical;line-height:1.25}
 }
 </style></head>
 <body><div class="w">
@@ -352,6 +384,7 @@ a.t:hover{text-decoration:underline}
   <h1>Calendario</h1>
 
   <div class="tabs">
+    <button data-t="giorno" onclick="vaiA('giorno')">Il giorno</button>
     <button class="on" data-t="settimana" onclick="vaiA('settimana')">La settimana</button>
     <button data-t="mese" onclick="vaiA('mese')">L'anno</button>
     <button data-t="imposta" onclick="vaiA('imposta')">Impostazioni</button>
@@ -391,7 +424,8 @@ const GIORNI = ['','Lunedì','Martedì','Mercoledì','Giovedì','Venerdì','Saba
 const MESI = ['gennaio','febbraio','marzo','aprile','maggio','giugno','luglio',
               'agosto','settembre','ottobre','novembre','dicembre'];
 
-let scheda = 'settimana';
+let scheda = window.innerWidth < 820 ? 'giorno' : 'settimana';
+let giornoCorrente = new Date();   /* la vista giornata: che giorno sto guardando */
 let classi = [], orario = [], lezioni = [], sospensioni = [], materiali = [];
 let lunediCorrente = lunediDi(new Date());
 let apertaId = null;
@@ -527,10 +561,86 @@ function disegna(){
 function disegnaDavvero(){
   const cont=document.getElementById('cont');
   if(scheda==='mese') cont.innerHTML=vistaMese();
+  else if(scheda==='giorno') cont.innerHTML=vistaGiorno();
   else if(scheda==='settimana') cont.innerHTML=vistaSettimanaGriglia();
   else cont.innerHTML=vistaImpostazioni();
 }
 
+/* ══════════════════════════════════════════════════════════
+   IL GIORNO
+   La vista che si apre sul telefono. Una settimana intera
+   costringeva a scorrere quasi quattro schermate, e ogni ora
+   portava fino a undici elementi affiancati. Qui la riga dice
+   tre cose — quando, con chi, di che cosa — e tutto il resto
+   sta a un tocco di distanza, nel pannello che gia' esisteva.
+   ══════════════════════════════════════════════════════════ */
+function giorni(d,n){ const x=new Date(d); x.setDate(x.getDate()+n); return x; }
+function vaiAlGiornoRelativo(n){
+  giornoCorrente = n===0 ? new Date() : giorni(giornoCorrente, n);
+  disegna();
+}
+/* l'ora in corso adesso: serve per far trovare subito il posto */
+function eAdesso(l, gi){
+  if(gi !== iso(new Date())) return false;
+  const ora = new Date(), m = ora.getHours()*60 + ora.getMinutes();
+  const a = (l.ora_inizio||'').split(':'), b = (l.ora_fine||'').split(':');
+  if(a.length<2) return false;
+  const da = (+a[0])*60 + (+a[1]);
+  const al = b.length>1 ? (+b[0])*60 + (+b[1]) : da+60;
+  return m>=da && m<al;
+}
+function vistaGiorno(){
+  if(!classi.length) return primoAvvio();
+
+  const gi = iso(giornoCorrente);
+  const oggiIso = iso(new Date());
+  const delGiorno = lezioni.filter(l=>l.data===gi)
+    .sort((a,b)=>(a.ora_inizio||'').localeCompare(b.ora_inizio||''));
+  const sosp = sospensioneDi(gi, null);
+
+  let out = `<div class="barra-giorno">
+    <button class="b" onclick="vaiAlGiornoRelativo(-1)">←</button>
+    <div class="quando-g">
+      <b>${esc(dataLunga(giornoCorrente))}</b>
+      ${gi===oggiIso ? '<span class="ogginota">oggi</span>' : ''}
+    </div>
+    <button class="b" onclick="vaiAlGiornoRelativo(1)">→</button>
+  </div>`;
+
+  if(gi!==oggiIso)
+    out += `<button class="b tornaoggi" onclick="vaiAlGiornoRelativo(0)">Torna a oggi</button>`;
+
+  if(sosp)
+    out += `<div class="sospnota">Sospensione: ${esc(sosp.motivo||'nessuna lezione')}</div>`;
+
+  if(!delGiorno.length){
+    out += `<div class="vuoto"><strong>Nessuna lezione${gi===oggiIso?' oggi':' in questo giorno'}.</strong></div>`;
+    return out;
+  }
+
+  out += '<div class="elenco-g">';
+  delGiorno.forEach(l=>{
+    const c = classeDi(l.classe_id);
+    const t = tipoDi(l), T = TIPI[t];
+    const quanti = (l.materiali||[]).length;
+    /* il triangolino compare solo se toccare la riga mostra qualcosa in piu' */
+    const altro = quanti || l.compiti || l.note || t!=='lezione';
+    out += `<button class="riga-g${l.svolta?' fatta':''}${eAdesso(l,gi)?' adesso':''}"
+              style="--c:${esc(T.c)}" onclick="toccaOra(${l.id})">
+      <span class="spunta">${l.svolta?'✓':'○'}</span>
+      <span class="ora-g">${oreIt(l.ora_inizio)}</span>
+      <span class="pill" style="background:${esc(c.colore)}">${esc(c.nome)}</span>
+      <span class="arg-g${l.argomento?'':' vuoto2'}">${esc(l.argomento||'— da preparare —')}</span>
+      ${altro ? '<span class="freccia">›</span>' : '<span class="freccia vuota"></span>'}
+    </button>`;
+  });
+  out += '</div>';
+
+  const fatte = delGiorno.filter(l=>l.svolta).length;
+  out += `<div class="conta-g">${delGiorno.length} ${delGiorno.length===1?'ora':'ore'}`+
+         (fatte?` · ${fatte} segnate come svolte`:'')+`</div>`;
+  return out;
+}
 function vistaSettimana(){
   if(!classi.length) return primoAvvio();
 
