@@ -167,7 +167,7 @@ Si va in ordine di programma. Restano:
 - [x] Storia moderna · 5 — La guerra dei Trent'anni e l'Olanda
 - [x] Storia moderna · 6 — Rivoluzioni inglesi e assolutismi
 - [x] Storia moderna · 7 — L'Europa nel primo Settecento
-- [ ] Storia moderna · 8 — La civiltà dei Lumi
+- [x] Storia moderna · 8 — La civiltà dei Lumi
 - [ ] Storia moderna · 9 — La prima rivoluzione industriale
 - [ ] Storia moderna · 10 — La Rivoluzione americana
 - [ ] Storia moderna · 11 — La Rivoluzione francese

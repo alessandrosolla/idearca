@@ -7561,6 +7561,224 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Storia moderna · 8 — La civiltà dei Lumi': {
+  mappa: {
+    n:'La civilta dei Lumi', d:'un secolo che decide di giudicare tutto con la propria testa',
+    f:[
+      {r:'non e', n:'Una dottrina', d:'e un atteggiamento, e per questo non ha fondatori ne tessere',
+       f:[
+         {r:'Kant lo definisce come', n:'Uscita dalla minorita', d:'1784: minorita e l\'incapacita di servirsi della propria intelligenza senza la guida di un altro'},
+         {r:'con il motto', n:'Sapere aude', d:'abbi il coraggio di servirti della tua testa'},
+         {r:'e la colpa di restare minorenni e', n:'Di chi non osa', d:'non manca l\'intelligenza, manca la decisione: e un\'accusa, non una constatazione'},
+         {r:'chiede il', n:'Pubblico uso della ragione', d:'poter ragionare davanti a tutti su tutto, anche obbedendo nel proprio ufficio',
+          f:[{piu:true, r:'distinto dall\'', n:'Uso privato', d:'l\'ufficiale esegue e il cittadino scrive: Kant separa i due ruoli per salvarli entrambi'}]}
+       ]},
+
+      {r:'poggia su', n:'Un pubblico che esiste gia', d:'le idee arrivano dopo i luoghi in cui discuterne',
+       f:[
+         {r:'i', n:'Caffe e i salotti', d:'dove si legge il giornale e si discute con estranei di cose pubbliche'},
+         {r:'le', n:'Accademie e le logge', d:'associazioni in cui il rango conta meno del merito, almeno a parole'},
+         {r:'i', n:'Gabinetti di lettura', d:'ci si abbona e si legge cio che non si potrebbe comprare'},
+         {r:'e un mercato del', n:'Libro proibito', d:'stampato in Olanda e in Svizzera, venduto sottobanco ovunque',
+          f:[{piu:true, r:'con autori che vivono di', n:'Contraffazioni', d:'nessun diritto d\'autore internazionale: si stampa e si rivende senza pagare nessuno'}]},
+         {piu:true, r:'e le donne dirigono', n:'I salotti parigini', d:'scelgono chi invitare e chi far incontrare: un potere culturale reale, e nessun diritto'},
+         {r:'legati dalla', n:'Repubblica delle lettere', d:'una rete di corrispondenti sopra confini e confessioni'}
+       ]},
+
+      {r:'ha il suo monumento nell\'', n:'Enciclopedia', d:'1751-1772: ventotto volumi, oltre settantamila voci',
+       f:[
+         {r:'diretta da', n:'Diderot e d\'Alembert', d:'un\'impresa editoriale prima che filosofica, con centosettanta collaboratori'},
+         {r:'ordina il sapere in un', n:'Albero delle conoscenze', d:'memoria, ragione, immaginazione: la teologia diventa un ramo fra gli altri'},
+         {r:'da\' dignita alle', n:'Arti meccaniche', d:'undici volumi di tavole su mestieri e macchine: il lavoro manuale entra nel sapere',
+          f:[{r:'perche gli autori', n:'Vanno nelle botteghe', d:'a farsi spiegare i gesti da chi li compie'}]},
+         {r:'aggira la censura con i', n:'Rimandi', d:'la voce innocua rinvia a quella pericolosa, e il lettore attento capisce'},
+         {r:'e ha', n:'Quattromila abbonati', d:'un\'impresa commerciale che rende: le idee nuove sono anche un investimento'},
+         {r:'e viene', n:'Sospesa e ripresa', d:'privilegio revocato nel 1759, e i volumi escono lo stesso'}
+       ]},
+
+      {r:'elabora', n:'Idee politiche nuove', d:'e sono meno concordi di quanto il nome comune faccia pensare',
+       f:[
+         {r:'Montesquieu propone la', n:'Separazione dei poteri', d:'perche il potere fermi il potere: non fiducia negli uomini, ma architettura'},
+         {r:'Voltaire chiede', n:'Tolleranza e giustizia', d:'meno la democrazia che un sovrano ragionevole e leggi non crudeli'},
+         {r:'Rousseau parte da un\'idea diversa', n:'La volonta generale', d:'la sovranita sta nel popolo e non si delega: e il piu isolato di tutti',
+          f:[{r:'e sostiene che la civilta', n:'Abbia corrotto l\'uomo', d:'contro l\'ottimismo del progresso condiviso dagli altri'},
+             {piu:true, r:'litigando di fatto', n:'Con quasi tutti', d:'con Voltaire, con Diderot, con Hume: i Lumi non sono un partito'}]},
+         {r:'Beccaria attacca', n:'Tortura e pena di morte', d:'1764: la pena deve essere certa e proporzionata, non atroce'}
+       ]},
+
+      {r:'ripensa', n:'L\'economia', d:'e passa dal proteggere al lasciar fare',
+       f:[
+         {r:'i fisiocratici indicano nella', n:'Terra la sola fonte di ricchezza', d:'e chiedono libero commercio dei grani'},
+         {r:'Adam Smith pubblica nel 1776', n:'La ricchezza delle nazioni', d:'la ricchezza viene dal lavoro e dalla sua divisione'},
+         {r:'con l\'immagine della', n:'Mano invisibile', d:'ciascuno cerca il proprio vantaggio e ne risulta un beneficio non voluto',
+          f:[{piu:true, r:'che nel libro compare', n:'Una volta sola', d:'e Smith aveva scritto prima un trattato sui sentimenti morali: la lettura corrente lo dimentica'}]},
+         {piu:true, r:'e i grani liberi provocano', n:'Rivolte per il pane', d:'liberalizzare il commercio dei cereali fa salire i prezzi: la teoria incontra la fame'},
+         {r:'contro il', n:'Mercantilismo', d:'l\'idea che il commercio sia una gara in cui uno guadagna se l\'altro perde'}
+       ]},
+
+      {r:'attacca', n:'Superstizione e intolleranza', d:'ed e qui che si gioca la battaglia piu concreta',
+       f:[
+         {r:'molti sono', n:'Deisti', d:'ammettono un Dio ordinatore e rifiutano rivelazione, miracoli e clero'},
+         {r:'pochi sono', n:'Atei dichiarati', d:'d\'Holbach e Diderot verso la fine: e una posizione di minoranza'},
+         {r:'si studiano', n:'Altre civilta', d:'Cina e Persia usate come specchio per criticare l\'Europa senza nominarla'},
+         {r:'la storia diventa', n:'Strumento critico', d:'Gibbon e Hume la usano per mostrare come nascono le credenze'},
+         {r:'e il caso simbolo e', n:'L\'affare Calas', d:'1762: un protestante torturato e giustiziato a Tolosa senza prove',
+          f:[{r:'Voltaire ne fa una', n:'Campagna di tre anni', d:'opuscoli, lettere, il Trattato sulla tolleranza'},
+             {r:'e la sentenza viene', n:'Annullata nel 1765', d:'per la prima volta l\'opinione pubblica ribalta un giudicato'}]}
+       ]},
+
+      {r:'entra al governo con il', n:'Dispotismo illuminato', d:'sovrani assoluti che applicano i Lumi dall\'alto',
+       f:[
+         {r:'in Prussia', n:'Federico II', d:'si definisce primo servitore dello Stato, ospita Voltaire e ci litiga'},
+         {r:'in Austria', n:'Giuseppe II', d:'tolleranza, abolizione della servitu personale, soppressione di conventi'},
+         {r:'in Toscana', n:'Pietro Leopoldo', d:'1786: primo Stato al mondo ad abolire la pena di morte'},
+         {r:'ovunque si aboliscono', n:'Tortura e giurisdizioni feudali', d:'e si fanno catasti che tassano anche i nobili'},
+         {r:'ma il metodo resta', n:'Tutto per il popolo, niente per mezzo del popolo', d:'riforme senza partecipazione: e il limite dichiarato',
+          f:[{piu:true, r:'e molte riforme', n:'Vengono ritirate', d:'alla morte di Giuseppe II quasi tutte, sotto la pressione dei ceti privilegiati'}]}
+       ]},
+
+      {r:'ha', n:'Confini che vanno guardati', d:'perche il secolo dell\'universale non comprende tutti',
+       f:[
+         {r:'le donne restano', n:'Fuori quasi ovunque', d:'salotti sì, diritti no: Condorcet e Olympe de Gouges sono eccezioni isolate'},
+         {r:'la schiavitu viene', n:'Criticata tardi e da pochi', d:'la Societa degli amici dei neri nasce solo nel 1788'},
+         {r:'nascono nello stesso secolo le', n:'Classificazioni razziali', d:'Linneo e Buffon ordinano gli uomini in varieta gerarchizzate',
+          f:[{r:'e compaiono in', n:'Note di autori illuministi', d:'passi in cui si afferma la superiorita di un ramo dell\'umanita'},
+             {piu:true, r:'perche universale significava', n:'Simile a noi', d:'il modello dell\'umano era chi scriveva: e il vizio che i secoli dopo dovranno correggere'}]},
+         {piu:true, r:'e ad Haiti gli schiavi', n:'Prendono i testi alla lettera', d:'1791: la rivolta usa le parole dei padroni contro i padroni'},
+         {r:'e resta aperto il dibattito su', n:'Lumi e Terrore', d:'se la Rivoluzione sia il compimento di quelle idee o il loro tradimento'}
+       ]}
+    ],
+    incroci:[
+      {da:'Caffe e i salotti', a:'L\'affare Calas', r:'sono cio che rende possibile',
+       perche:'Senza un pubblico gia abituato a leggere giornali e discutere di cose pubbliche, gli opuscoli di Voltaire non avrebbero avuto nessun effetto. La campagna funziona perche esiste da decenni un luogo sociale dove le opinioni circolano: le idee hanno bisogno di un\'infrastruttura, e in questo caso l\'infrastruttura viene prima.'},
+      {da:'Rimandi', a:'Sospesa e ripresa', r:'servono a sopravvivere al fatto che l\'opera venga',
+       perche:'La voce prudente sull\'anima rinvia a quella sull\'anima degli animali, e li si dice il contrario. È una tecnica di scrittura sotto censura: si dice la cosa proibita nel posto in cui il censore non guarda. Quando un\'opera deve passare un controllo, la struttura del testo diventa essa stessa un argomento.'},
+      {da:'Vanno nelle botteghe', a:'La ricchezza delle nazioni', r:'anticipa lo sguardo di',
+       perche:'Gli enciclopedisti vanno a farsi spiegare i gesti dagli artigiani e li disegnano; Smith apre il proprio libro descrivendo come si fabbrica uno spillo in diciotto operazioni. In entrambi i casi il lavoro manuale smette di essere invisibile e diventa oggetto di analisi: e la stessa rivoluzione dello sguardo.'},
+      {da:'Separazione dei poteri', a:'Tutto per il popolo, niente per mezzo del popolo', r:'e esattamente cio che manca al metodo',
+       perche:'Montesquieu sostiene che il potere va limitato da un\'architettura, non dalla bonta di chi comanda. Il dispotismo illuminato fa il contrario: concentra tutto in un sovrano ragionevole. Quando quel sovrano muore, le riforme si possono ritirare in un anno — ed e quello che succede.'},
+      {da:'Vengono ritirate', a:'Tortura e pena di morte', r:'non cancella l\'effetto duraturo della campagna contro',
+       perche:'Molte riforme giuseppine vengono revocate in un anno, eppure la tortura giudiziaria sparisce da quasi tutta l\'Europa in una generazione e non torna. Alcune conquiste dipendono da chi governa, altre entrano nel senso comune dei giuristi: le seconde sopravvivono ai sovrani che le hanno decretate.'},
+      {da:'Annullata nel 1765', a:'Pubblico uso della ragione', r:'e la prova pratica di che cosa sia il',
+       perche:'Un privato cittadino che scrive costringe un tribunale a riaprire un caso chiuso. È precisamente cio che Kant descrivera vent\'anni dopo: ragionare pubblicamente davanti a tutti come forza che agisce sulle istituzioni. La teoria arriva dopo il fatto, e lo descrive.'},
+      {da:'Simile a noi', a:'Fuori quasi ovunque', r:'e la ragione per cui le donne restano',
+       perche:'L\'universalita settecentesca si costruisce sul modello di chi la enuncia: proprietario, maschio, europeo, istruito. Non e un\'eccezione ipocrita ma il modo in cui la categoria e stata riempita. Allargarla richiedera due secoli e sara fatto da chi ne era escluso, non da chi l\'aveva formulata.'},
+      {da:'Una volta sola', a:'Terra la sola fonte di ricchezza', r:'corregge i fisiocratici che indicavano nella',
+       perche:'Smith sposta la fonte della ricchezza dalla terra al lavoro e alla sua divisione, e questo cambia tutto: se e il lavoro a produrre valore, contano l\'organizzazione, la tecnica e i mercati, non l\'estensione dei possedimenti. È il passaggio da un\'economia agraria a una che sa pensare l\'industria.'},
+      {da:'Con quasi tutti', a:'Una dottrina', r:'e la prova migliore che l\'Illuminismo non sia',
+       perche:'Rousseau litiga con Voltaire, con Diderot e con Hume; i deisti disprezzano gli atei; Montesquieu difende i corpi intermedi che altri vogliono abolire. Chiamarli un movimento unico e una comodita da manuale: cio che condividono e un modo di discutere, non un elenco di conclusioni.'},
+      {da:'Libro proibito', a:'Contraffazioni', r:'vive di',
+       perche:'La censura non elimina i libri: ne sposta la produzione fuori confine e ne alza il prezzo, creando un\'industria di stampatori svizzeri e olandesi e una rete di contrabbandieri. Un divieto che non si puo far rispettare ovunque non riduce la circolazione — la rende redditizia.'},
+      {da:'Note di autori illuministi', a:'Strumento critico', r:'convivono con l\'uso della storia come',
+       perche:'Gli stessi autori che smontano le credenze tradizionali mostrando come sono nate scrivono passi in cui la gerarchia fra gli uomini viene data per naturale. Il metodo critico non si applica da solo a chi lo usa: bisogna volerlo rivolgere contro i propri presupposti, e quasi nessuno lo fa spontaneamente.'},
+      {da:'Uscita dalla minorita', a:'Di chi non osa', r:'e presentata da Kant come colpa',
+       perche:'Kant non dice che gli uomini siano tenuti nell\'ignoranza: dice che restano minorenni per pigrizia e vilta, perche e comodo avere un libro che pensa al posto tuo. Spostare la responsabilita dall\'oppressore all\'oppresso e la mossa piu dura del testo, e la piu discussa.'},
+      {da:'Lumi e Terrore', a:'La volonta generale', r:'ruota soprattutto attorno alla',
+       perche:'Chi accusa i Lumi di aver prodotto il Terrore punta su Rousseau: una volonta generale che non si delega e non puo sbagliare rischia di non lasciare spazio a chi dissente. Chi li difende osserva che Rousseau era isolato e che i rivoluzionari lo lessero come volevano. Il dibattito e aperto e vale la pena presentarlo come tale.'}
+    ]
+  },
+  provocazione: {
+    titolo:'La parola tutti',
+    durata:'55 minuti',
+    domandaMadre:'Chi decide chi e compreso nella parola «tutti»?',
+    perche:'Nel 1762 Jean Calas viene torturato e giustiziato a Tolosa senza prove, perche protestante; tre anni dopo la sentenza e annullata, non da un tribunale che ha trovato prove nuove, ma perche uno scrittore che viveva a seicento chilometri ha scritto abbastanza da costringere il re a riaprire il caso. È la prima volta che l\'opinione pubblica ribalta un giudicato. La classe confronta la sentenza — un atto ufficiale che nasconde — con un opuscolo di parte che dice il vero, e ne ricava che l\'affidabilita di una fonte non coincide con la sua ufficialita. Il colpo di scena e che lo stesso secolo che fonda i diritti universali produce le prime classificazioni razziali, e lo stesso autore che salva i Calas scrive pagine feroci sugli ebrei.',
+    occorrente:'Niente.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'Tolosa, 10 marzo 1762.\n\nJean Calas, mercante di stoffe,\nsessantatre anni, protestante,\nviene condotto in piazza.\n\nGli spezzano braccia e gambe\nsulla ruota.\nResta appeso due ore.\nPoi viene strangolato\ne il corpo bruciato.\n\nL\'accusa: aver ucciso il figlio\nper impedirgli di farsi cattolico.\n\nLe prove: nessuna.\n\nFino all\'ultimo respiro\ncontinua a dirsi innocente.\n\nTre anni dopo\nla sentenza viene annullata\ne la famiglia risarcita.\n\nNon perche un tribunale\nabbia trovato prove nuove.\n\nPerche uno scrittore\nche viveva a seicento chilometri\nha scritto tanto,\ne per tanto tempo,\nda rendere impossibile\nlasciare le cose come stavano.',
+       parlato:'Racconta l\'esecuzione senza attenuarla: serve che sentano che cosa fosse una giustizia penale prima delle riforme.\n\nPoi il dato finale, e fai pesare la novita. Non era mai successo. Non esisteva un appello popolare, non esisteva una stampa che facesse campagne, non esisteva l\'idea che l\'opinione dei privati potesse contare su un processo chiuso.\n\nAggiungi il particolare che di solito colpisce: all\'inizio Voltaire pensava che Calas fosse colpevole. Cambio idea informandosi — parlo con chi lo aveva conosciuto, si fece mandare gli atti, interrogo il figlio sopravvissuto.\n\nDomanda per aprire: che cosa deve esistere, in una societa, perche una cosa del genere sia possibile?',
+       seDicono:[
+         {loro:'«Come si condanna a morte senza prove?»',
+          tu:'Con una procedura che oggi non riconosceremmo: il giudice raccoglieva indizi in segreto, l\'imputato non conosceva le accuse, non aveva un difensore, e la tortura serviva a ottenere la confessione che mancava. Calas fu torturato e non confesso mai. Lo condannarono lo stesso.'},
+         {loro:'«Perche proprio lui?»',
+          tu:'Perche era protestante in una citta che stava celebrando il bicentenario di un massacro di protestanti, e perche il figlio si era probabilmente suicidato — cosa infamante, che la famiglia aveva cercato di nascondere. Un fatto ambiguo dentro una citta in tensione: e quasi sempre cosi che cominciano questi casi.'}
+       ]},
+
+      {minuti:'8–17', et:'La fonte',
+       schermo:'Dagli atti del processo Calas.\n\nIl tribunale di Tolosa condanna\nsulla base di questi elementi:\n\nla famiglia ha dato\nversioni discordanti\nnella prima notte;\n\nil giovane e stato trovato\nimpiccato in casa,\ne un uomo solo\nnon avrebbe potuto farlo\nda se — cosi si sostiene;\n\ne infine, testualmente,\nla voce pubblica:\nla citta ritiene\nche il padre sia colpevole.\n\nLa sentenza dispone\nla tortura ordinaria e straordinaria\nper ottenere i nomi\ndei complici,\ne l\'esecuzione sulla ruota.\n\nTre domande.\nChi lo ha scritto?\nChe cosa ammette senza volerlo?\nChe cosa non dice?',
+       testo:{fonte:'Atti e sentenza del parlamento di Tolosa contro Jean Calas, marzo 1762',
+              glossa:'La procedura seguita era quella ordinaria del diritto penale francese: istruzione segreta, nessun difensore, prove valutate secondo una gerarchia in cui la fama pubblica aveva peso. La sentenza non e un abuso rispetto alle regole del tempo — e l\'applicazione di quelle regole, ed e questo a renderla utile in classe.'},
+       parlato:'Fai lavorare in coppia, cinque minuti, e non anticipare nulla.\n\nSulla prima: lo scrive un tribunale regolare, applicando la procedura in vigore. Fai pesare la conseguenza — non e un tribunale straordinario ne una folla: e la giustizia ordinaria del regno piu civile d\'Europa, nel secolo dei Lumi.\n\nSulla seconda, che e la piu ricca: la sentenza ammette di non avere prove nel momento stesso in cui ordina la tortura per ottenere i nomi dei complici. Si tortura dopo la condanna, per sapere chi altro c\'era. Cioe si condanna prima di sapere.\n\nE ammette, citando la voce pubblica, che l\'opinione della citta e considerata un elemento di prova.\n\nSulla terza: non dice mai che l\'imputato era protestante e la vittima presunta stava per convertirsi. Il movente vero e il contesto religioso della citta non compaiono. Il documento tace esattamente su cio che spiega tutto.\n\nQuesta e la cosa da portare a casa: un atto ufficiale non mente quasi mai. Omette.',
+       seDicono:[
+         {loro:'«La voce pubblica come prova è assurda.»',
+          tu:'Per noi sì. Per quel diritto era un indizio riconosciuto, con un suo nome tecnico. Attenzione a chiamare assurdo cio che era codificato: capire come una regola potesse sembrare ragionevole e piu utile che scandalizzarsi. E aiuta a chiedersi quali nostre regole sembreranno assurde fra due secoli.'},
+         {loro:'«Torturare dopo la condanna non ha senso.»',
+          tu:'Ne aveva uno, ed e agghiacciante: serviva a completare il quadro, non a stabilirlo. Il fatto che questa pratica avesse un nome e una procedura ci dice quanto fosse ordinaria. Fu abolita in Francia nel 1780, anche grazie a questo caso.'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'Come si ribalta\nuna sentenza definitiva\nsenza avere nessun potere.\n\nVoltaire ha sessantotto anni\ne vive in Svizzera, al confine.\n\nPrima si informa:\nfa venire il figlio sopravvissuto,\nsi procura gli atti,\ninterroga chi conosceva la famiglia.\n\nPoi scrive. Molto.\n\nOpuscoli brevi, che si leggono\nin dieci minuti e costano poco.\nLettere a chiunque conti in Europa.\nSempre gli stessi nomi ripetuti:\nla vedova, le figlie, il vecchio\nsulla ruota che si dice innocente.\n\nE un libro:\nil Trattato sulla tolleranza.\n\nTrasforma un caso di provincia\nin una questione di principio.\n\nNel 1765 il Consiglio del re\nannulla la sentenza.\nQuaranta giudici, all\'unanimita.',
+       parlato:'Ricostruisci la campagna come una tecnica, perche e questo che va capito.\n\nElenca gli strumenti e falli riconoscere: la brevita, la ripetizione, i nomi propri invece dei principi astratti, il passaggio dal caso singolo alla regola generale. Sono le stesse tecniche che si usano oggi, ed e utile che le vedano nate.\n\nPoi la domanda seria: e stata la verita a vincere, o la scrittura?\n\nLasciali discutere, e poi da\' l\'elemento onesto. Calas era quasi certamente innocente — il figlio si era probabilmente suicidato — e quindi in questo caso la verita e la campagna stavano dalla stessa parte. Ma non era garantito che fosse cosi.\n\nDa qui il punto che apre il blocco successivo: una macchina capace di ribaltare una sentenza dall\'esterno e una conquista enorme e uno strumento pericoloso, perche funziona allo stesso modo quando chi la usa ha torto.\n\nÈ la nascita dell\'opinione pubblica come forza politica, con tutto quello che comporta.',
+       seDicono:[
+         {loro:'«Meno male che c\'era lui.»',
+          tu:'Per i Calas, certamente. Ma chiediti quanti processi identici si sono svolti in quegli anni senza che nessuno famoso se ne occupasse. La giustizia che dipende dal fatto che uno scrittore celebre si interessi al tuo caso non e ancora giustizia: e fortuna.'},
+         {loro:'«Se aveva ragione, i mezzi non contano.»',
+          tu:'Attento, e la scorciatoia piu comoda che esista. La stessa macchina — opuscoli brevi, ripetizione, nomi, indignazione — funziona identica in mano a chi ha torto. Giudicare uno strumento solo dal caso in cui ha funzionato bene significa non averlo capito.'}
+       ]},
+
+      {minuti:'28–38', et:'La seconda fonte',
+       schermo:'Il primo documento\nera un atto ufficiale\ndi un tribunale regolare.\n\nQuesto e propaganda,\ne lo sa.\n\nDal Trattato sulla tolleranza,\n1763.\n\nVoltaire domanda\nse spetti agli uomini\ncorreggere gli errori\ndi un Dio che tace;\n\nosserva che il diritto\ndell\'intolleranza e assurdo\ne barbaro: e il diritto\ndelle tigri, e peggiore,\nperche le tigri sbranano\nper mangiare;\n\ne chiede che uomini\nche si riconoscono fratelli\nnon si scannino\nper interpretazioni\ndi frasi oscure.\n\nIl primo documento\nera ufficiale e nascondeva.\nQuesto e di parte\ne dice il vero.',
+       testo:{fonte:'Voltaire, Trattato sulla tolleranza in occasione della morte di Jean Calas (1763)',
+              glossa:'Il libro e insieme un\'arringa e un\'opera di propaganda: semplifica la vicenda, rende i Calas piu edificanti di quanto fossero, e mette in ombra le ambiguita del caso. Le sue tesi generali sono giuste, la sua ricostruzione dei fatti e orientata. Serve in classe proprio per questo — costringe a separare la solidita di un argomento dall\'accuratezza di un racconto.'},
+       parlato:'Metti i due documenti uno accanto all\'altro ed esplicita il rovesciamento: quello ufficiale, redatto da giudici in carica secondo la procedura di legge, e la fonte meno affidabile sui fatti; quello di parte, scritto da un uomo che aveva uno scopo dichiarato, e piu vicino a come andarono le cose.\n\nPoi la domanda di metodo, che e la piu importante dell\'ora: da che cosa dipende l\'affidabilita di una fonte?\n\nGuidali alla risposta: non dall\'ufficialita, e nemmeno dall\'assenza di interessi — che non esiste. Dipende da che cosa quella fonte era in condizione di sapere, e da che cosa aveva interesse a tacere. Il tribunale sapeva di non avere prove e aveva interesse a non dirlo. Voltaire aveva interesse a costruire una vittima perfetta, e infatti la costruisce.\n\nQuindi va letto sapendo che semplifica. Ma sui fatti principali aveva ragione, e questo lo hanno stabilito quaranta giudici tre anni dopo.\n\nUltima cosa da far notare, se la classe regge: le tesi generali del Trattato sono giuste indipendentemente da come Voltaire racconta i Calas. La bonta di un argomento e l\'accuratezza di un esempio sono due cose separate, e vanno valutate separatamente.',
+       seDicono:[
+         {loro:'«Se semplificava, allora non è affidabile.»',
+          tu:'Non e affidabile sui dettagli della famiglia. Lo e sull\'essenziale: un uomo condannato senza prove per la sua religione. Le fonti non sono affidabili o inaffidabili in blocco — lo sono punto per punto, e il mestiere sta nel sapere su che cosa fidarsi di chi.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'Lo stesso autore.\nGli stessi anni.\n\nNel Dizionario filosofico\nVoltaire dedica agli ebrei\npagine di ostilita durissima:\nli descrive come popolo\nignorante e barbaro,\ne ripete l\'accusa\nper decine di pagine.\n\nNon e una svista.\nÈ una posizione, ripetuta,\npubblicata, mai ritrattata.\n\nE non e solo lui.\n\nNegli stessi decenni\nnascono le prime classificazioni\ndegli uomini in varieta ordinate\nper gradi:\nLinneo nel 1758,\nBuffon poco dopo.\n\nAlcuni fra i maggiori autori\ndel secolo scrivono, in nota,\nche un ramo dell\'umanita\ne naturalmente superiore.\n\nIl secolo che inventa\ni diritti universali\ninventa anche gli strumenti\nper negarli a qualcuno.',
+       parlato:'Dai i fatti senza attenuarli e senza indignazione: la classe deve sentire il peso, non il tuo giudizio.\n\nPoi impedisci la conclusione facile, che sarebbe «allora erano ipocriti». Non e ipocrisia individuale, ed e piu inquietante.\n\nSpiega il meccanismo: quando si scrive «tutti gli uomini», la parola va riempita, e chi la riempie parte da se stesso. Il modello dell\'umano era chi scriveva — proprietario, maschio, europeo, istruito. Le donne, gli schiavi, i non europei non venivano esclusi per una decisione esplicita: non entravano nell\'immagine mentale di partenza.\n\nDomanda per la classe: che cosa sarebbe servito perche se ne accorgessero?\n\nLa risposta storica e istruttiva: se ne sono accorti altri. Olympe de Gouges riscrive la dichiarazione dei diritti al femminile, gli schiavi di Haiti prendono alla lettera le parole dei loro padroni, le suffragiste useranno gli stessi testi contro chi li aveva scritti. La parola «tutti» e stata allargata quasi sempre da chi ne era fuori.\n\nE aggiungi il bilancio, perche va detto: nello stesso secolo la tortura giudiziaria viene abolita in mezza Europa e non torna, la Toscana abolisce la pena di morte nel 1786, la sentenza contro Calas viene annullata. Le conquiste sono reali. Sono anche parziali.',
+       seDicono:[
+         {loro:'«Allora tutto quello che dicevano vale poco.»',
+          tu:'No, e sarebbe comodo pensarlo. Gli argomenti sulla tolleranza sono validi anche se chi li scriveva non li applicava a tutti — tanto e vero che sono stati usati contro di lui. Un\'idea vale piu di chi la formula, ed e una fortuna: altrimenti non ci resterebbe quasi niente.'},
+         {loro:'«Noi oggi non abbiamo questo problema.»',
+          tu:'È la frase che ogni epoca ha detto della precedente. Riformulala in una domanda utile: quando oggi diciamo «tutti», chi stiamo immaginando? Non ti chiedo di rispondere adesso — ti chiedo di non dare per scontato che la lista sia completa.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'Due cose da tenere insieme.\n\nUn uomo scrive tanto\nda strappare un morto\nall\'infamia e salvare\nuna famiglia dalla rovina.\nÈ la prima volta\nche succede una cosa simile.\n\nLo stesso uomo scrive pagine\nche non difenderebbe nessuno.\n\nE il secolo che scrive\n«tutti gli uomini»\nnon ci mette dentro\nla meta delle persone.\n\nLa parola tutti\nnon si e allargata da sola.\n\nL\'hanno allargata,\nuno per volta,\nquelli che ne erano fuori —\nusando le parole\ndi chi li aveva lasciati fuori.\n\nUltima domanda:\nquando dite «tutti»,\nchi state immaginando?',
+       parlato:'Riprendi le due fonti e fissa la regola di metodo, che e la cosa concreta di questa lezione: l\'affidabilita non sta nell\'ufficialita del documento. Si chiede a ogni fonte cio che quella fonte era in condizione di sapere, e ci si domanda che cosa aveva interesse a tacere. Un tribunale che condanna e una pessima fonte sulle prove che non aveva; un propagandista puo essere un\'ottima fonte su un fatto che gli conviene raccontare.\n\nPoi il bilancio sull\'Illuminismo, e tienilo equilibrato senza renderlo tiepido. Ha prodotto conquiste che usiamo ogni giorno — la tortura abolita, la pena proporzionata, la separazione dei poteri, l\'idea che si possa criticare chi comanda. Ha prodotto anche una nozione di universale costruita sul modello di chi la scriveva.\n\nDa\' loro il criterio: quando incontrate una parola che dice «tutti», la domanda giusta non e se sia sincera, ma chi ci sia stato messo dentro all\'inizio e chi ha dovuto lottare per entrarci. Vale per il Settecento e vale adesso.\n\nChiudi con quello che serve per il seguito: le idee che abbiamo visto oggi restano in gran parte lettera scritta finche qualcuno non prova ad applicarle tutte insieme, in fretta, a un paese di ventotto milioni di persone. La prossima volta vediamo che cosa succede.',
+       seDicono:[
+         {loro:'«Quindi non ci si può fidare di nessun documento.»',
+          tu:'Ci si fida di ogni documento per quello che puo dire. Il registro parrocchiale e ottimo sui morti e muto sulle cause; il tribunale e ottimo su che cosa la legge permetteva e pessimo sui fatti; il pamphlet e ottimo sull\'argomento e sospetto sui dettagli. Non e sfiducia: e sapere che domanda fare a chi.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'Come si scrive sotto censura',
+       corpo:'L\'Enciclopedia doveva passare l\'esame dei censori regi. Gli autori misero a punto una tecnica: le voci pericolose sono scritte in modo prudente, e in fondo rimandano ad altre voci apparentemente innocue, dove la tesi vera viene esposta.\n\nLa voce «Anima» è ortodossa; quella sull\'anima degli animali, dove nessuno guardava, molto meno. Alcune voci dedicate a divinità antiche descrivono meccanismi religiosi che il lettore attento riconosce.\n\nDiderot definì i rimandi uno strumento capace di far saltare in aria l\'intero edificio, senza che il censore se ne accorgesse.',
+       chiedi:'Un\'opera costruita per essere letta in due modi diversi da due pubblici diversi. Che cosa perde un testo scritto così? E vi vengono in mente forme contemporanee di comunicazione che funzionano allo stesso modo?'},
+      {titolo:'Il primo Stato che abolisce la pena di morte',
+       corpo:'Nel 1786 il granduca Pietro Leopoldo abolisce in Toscana la pena di morte e la tortura, primo Stato al mondo a farlo. Nel testo si afferma che le pene devono essere moderate e proporzionate, e che l\'esperienza ha mostrato l\'inutilità del supplizio estremo.\n\nLa riforma nasce dalle tesi di Beccaria, pubblicate ventidue anni prima da un ventiseienne milanese.\n\nLa pena di morte fu reintrodotta nel 1790, dopo la partenza di Pietro Leopoldo per Vienna.',
+       chiedi:'Una riforma che arriva da un libro, viene decretata da un sovrano assoluto e viene revocata appena quel sovrano se ne va. Che cosa serve perché una conquista diventi irreversibile? E chi deve volerla, oltre a chi comanda?'},
+      {titolo:'Tutto per il popolo, niente per mezzo del popolo',
+       corpo:'Giuseppe II d\'Asburgo abolì la servitù personale, concesse la tolleranza ai protestanti e agli ebrei, soppresse centinaia di conventi contemplativi destinandone i beni a scuole e ospedali, impose il tedesco come lingua amministrativa in tutto l\'impero.\n\nFece tutto per decreto, senza consultare nessuno, spesso contro il parere delle diete locali.\n\nAlla sua morte, nel 1790, il fratello dovette revocare gran parte delle riforme davanti alla rivolta dei ceti privilegiati e delle province.',
+       chiedi:'Riforme giuste imposte senza consenso e cancellate in un anno. Un cambiamento fatto contro le persone a cui giova può durare? E se aspettare il consenso significa non farlo mai, che cosa si deve scegliere?'}
+    ],
+    testi:[
+      {fonte:'Kant, Risposta alla domanda: che cos\'è l\'Illuminismo? (1784)',
+       corpo:'Kant definisce l\'illuminismo come l\'uscita dell\'uomo dallo stato di minorità di cui egli stesso è colpevole; chiama minorità l\'incapacità di servirsi della propria intelligenza senza la guida di un altro; e afferma che essa è colpevole quando la causa non è mancanza di intelligenza ma di decisione e di coraggio.',
+       glossa:'Il testo arriva a fine secolo e descrive un fenomeno già avvenuto. La parte più discussa è l\'attribuzione di colpa: Kant non incolpa chi tiene gli altri nell\'ignoranza, incolpa chi accetta di restarci. Vale la pena chiedere in classe se sia giusto — e a quali condizioni un\'accusa del genere sia sostenibile.'},
+      {fonte:'Beccaria, Dei delitti e delle pene (1764)',
+       corpo:'Beccaria sostiene che non è la crudeltà delle pene a impedire i delitti ma la certezza di riceverle; che la tortura è un mezzo per assolvere il malvagio robusto e condannare l\'innocente debole; e che nessuno ha ceduto allo Stato il diritto sulla propria vita.',
+       glossa:'Un libretto di un ventiseienne che nel giro di vent\'anni cambia il diritto penale europeo: tradotto ovunque, letto da Caterina di Russia e da Pietro Leopoldo. È il caso più netto di un\'idea che passa dalla pagina alla legge, e per questo utile a bilanciare la lezione sulle riforme che non attecchiscono.'},
+      {fonte:'Denuncia dell\'esclusione delle donne — Olympe de Gouges, Dichiarazione dei diritti della donna (1791)',
+       corpo:'Il testo ricalca articolo per articolo la dichiarazione del 1789 sostituendo alla parola «uomo» le parole «donna e uomo», e osserva che se la donna ha il diritto di salire sul patibolo deve avere ugualmente quello di salire alla tribuna.',
+       glossa:'Il metodo è il punto: non si scrive un testo nuovo, si riprende quello esistente e lo si prende alla lettera, mostrando che le sue parole dicono più di quanto i suoi autori intendessero. È la tecnica con cui la parola «tutti» è stata allargata quasi ogni volta. L\'autrice fu ghigliottinata nel 1793.'}
+    ],
+    compito:'Mezza pagina. Trovate un testo attuale che usa la parola «tutti» o «ognuno» — una legge, un regolamento scolastico, lo statuto di un\'associazione, la pubblicità di un servizio. Copiate la frase. Poi rispondete a due domande: chi rientra davvero in quel «tutti» nella pratica, e che cosa dovrebbe cambiare perché ci rientrasse anche chi ora ne resta fuori.',
+    fonti:[
+      'Voltaire, Trattato sulla tolleranza (1763); Dizionario filosofico (1764)',
+      'Kant, Beantwortung der Frage: Was ist Aufklärung? (1784); Beccaria, Dei delitti e delle pene (1764)',
+      'Diderot e d\'Alembert, Encyclopédie (1751-1772), Discorso preliminare e voce «Enciclopedia»',
+      'Atti del processo Calas e della riabilitazione (1762-1765)',
+      'P. Gay, L\'Illuminismo; F. Venturi, Settecento riformatore',
+      'R. Darnton, Il grande massacro dei gatti; Il bestseller proibito — sul mercato del libro clandestino'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',
