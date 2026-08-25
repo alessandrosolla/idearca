@@ -169,7 +169,7 @@ Si va in ordine di programma. Restano:
 - [x] Storia moderna · 7 — L'Europa nel primo Settecento
 - [x] Storia moderna · 8 — La civiltà dei Lumi
 - [x] Storia moderna · 9 — La prima rivoluzione industriale
-- [ ] Storia moderna · 10 — La Rivoluzione americana
+- [x] Storia moderna · 10 — La Rivoluzione americana
 - [ ] Storia moderna · 11 — La Rivoluzione francese
 - [ ] Storia moderna · 12 — L'età napoleonica
 - [ ] Storia moderna · 13 — La Restaurazione

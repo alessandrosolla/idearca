@@ -8003,6 +8003,229 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Storia moderna · 10 — La Rivoluzione americana': {
+  mappa: {
+    n:'La Rivoluzione americana', d:'come nasce il primo paese fondato su un documento',
+    f:[
+      {r:'parte da', n:'Tredici colonie diverse fra loro', d:'non un blocco: tre mondi che hanno in comune il sovrano e poco altro',
+       f:[
+         {r:'al Nord', n:'Commercio e piccola proprieta', d:'porti, pesca, cantieri, e comunita nate da insediamenti religiosi'},
+         {r:'al Centro', n:'Agricoltura e citta miste', d:'Filadelfia e New York, popolazioni di origine e fede diverse'},
+         {r:'al Sud', n:'Piantagioni e schiavitu', d:'tabacco, riso e poi cotone: un\'economia che dipende dal lavoro forzato'},
+         {r:'tutte hanno', n:'Assemblee elettive', d:'che votano le imposte locali da generazioni: l\'autogoverno e un\'abitudine'},
+         {r:'perche Londra praticava una', n:'Trascuratezza salutare', d:'poche interferenze finche i traffici rendevano',
+          f:[{piu:true, r:'e i coloni sono', n:'Piu alti e piu istruiti degli inglesi', d:'meglio nutriti e con tassi di alfabetizzazione fra i piu alti del mondo'}]}
+       ]},
+
+      {r:'entra in crisi per', n:'Il conto della guerra', d:'la rottura comincia da un debito, come quasi sempre',
+       f:[
+         {r:'dopo la', n:'Guerra dei sette anni', d:'la Gran Bretagna vince il Canada e raddoppia il proprio debito'},
+         {r:'decide che le colonie', n:'Debbano contribuire', d:'sono state difese, e ora paghino la loro parte: da Londra sembra ovvio'},
+         {r:'arrivano imposte nuove', n:'Zucchero, bolli, te', d:'tasse modeste in denaro, enormi nel principio che stabiliscono'},
+         {r:'i coloni rispondono', n:'Nessuna tassa senza rappresentanza', d:'non discutono la cifra: discutono chi ha il diritto di chiederla'},
+         {r:'Londra replica con la', n:'Rappresentanza virtuale', d:'il parlamento rappresenta tutti i sudditi, anche chi non lo elegge',
+          f:[{piu:true, r:'argomento che vale anche per', n:'Manchester e Birmingham', d:'citta inglesi senza deputati: e per questo che i coloni lo trovano assurdo'}]},
+         {piu:true, r:'e si organizza il', n:'Boicottaggio delle merci inglesi', d:'le donne filano in casa per non comprare tessuti britannici: la protesta entra nelle famiglie'},
+         {r:'e vieta l\'espansione con la', n:'Proclamazione del 1763', d:'nessun insediamento oltre gli Appalachi: e uno dei motivi meno citati e piu sentiti'}
+       ]},
+
+      {r:'precipita fra il', n:'1770 e il 1775', d:'in cinque anni si passa dalla protesta alla guerra',
+       f:[
+         {r:'il', n:'Massacro di Boston', d:'1770: cinque morti in una rissa, trasformati in propaganda da entrambe le parti',
+          f:[{r:'e i soldati vengono', n:'Difesi in tribunale da John Adams', d:'che sara il secondo presidente: voleva dimostrare che il processo fosse regolare'}]},
+         {r:'il', n:'Tea party', d:'1773: si getta in mare il te di una compagnia che aveva ottenuto un monopolio'},
+         {r:'Londra risponde con le', n:'Leggi intollerabili', d:'porto di Boston chiuso, autogoverno del Massachusetts sospeso'},
+         {r:'le colonie si riuniscono nel', n:'Congresso continentale', d:'1774: per la prima volta agiscono insieme'},
+         {r:'e nel 1776 Paine pubblica', n:'Il senso comune', d:'centomila copie in tre mesi: rende pensabile la parola indipendenza'}
+       ]},
+
+      {r:'si fonda su', n:'Un documento', d:'ed e questa la vera novita americana',
+       f:[
+         {r:'il 4 luglio 1776', n:'La Dichiarazione', d:'scritta da Jefferson, corretta da Franklin e Adams, poi discussa dal Congresso'},
+         {r:'afferma che gli uomini sono', n:'Creati uguali', d:'con diritti inalienabili: vita, liberta, ricerca della felicita'},
+         {r:'e che i governi esistono', n:'Per garantire quei diritti', d:'traendo i giusti poteri dal consenso dei governati'},
+         {r:'quindi se un governo li viola', n:'Il popolo puo cambiarlo', d:'e la teoria di Locke messa in un atto politico'},
+         {r:'poi elenca', n:'Le accuse al re', d:'ventisette capi: e la parte piu lunga, e quella che nessuno ricorda'},
+         {r:'ma il Congresso', n:'Toglie un quarto del testo', d:'fra cui il passaggio piu duro, quello sulla schiavitu',
+          f:[{piu:true, r:'e Jefferson', n:'Fa circolare la propria versione', d:'con le cancellature segnate, per il resto della vita'}]}
+       ]},
+
+      {r:'si combatte per', n:'Otto anni', d:'e non si vince da soli',
+       f:[
+         {r:'l\'esercito continentale e', n:'Piccolo e mal pagato', d:'arruolamenti brevi, diserzioni, l\'inverno di Valley Forge'},
+         {r:'la svolta e', n:'Saratoga', d:'1777: convince la Francia che gli americani possono vincere'},
+         {r:'entra la', n:'Francia', d:'con denaro, flotta e truppe: senza di lei l\'esito sarebbe stato un altro',
+          f:[{r:'e la spesa contribuisce alla', n:'Bancarotta francese', d:'che porterà alla convocazione degli Stati generali nel 1789'}]},
+         {r:'si chiude a', n:'Yorktown', d:'1781: un esercito britannico circondato da terra e da mare'},
+         {piu:true, r:'e combattono anche', n:'Soldati neri', d:'circa cinquemila nell\'esercito continentale, molti in cambio della liberta promessa'},
+         {r:'e nel 1783 la pace di', n:'Parigi', d:'riconosce l\'indipendenza e un territorio fino al Mississippi'}
+       ]},
+
+      {r:'ed e anche', n:'Una guerra civile', d:'la parte che il racconto nazionale ha coperto',
+       f:[
+         {r:'circa un quinto dei coloni resta', n:'Lealista', d:'per fedelta, per interesse, per paura del disordine'},
+         {r:'vengono', n:'Perseguitati e spogliati', d:'confische, esilio, violenze: in molte contee e guerra fra vicini'},
+         {r:'fra sessanta e ottantamila', n:'Lasciano il paese per sempre', d:'verso il Canada e l\'Inghilterra: in proporzione piu esuli della Rivoluzione francese'},
+         {r:'molti schiavi', n:'Scelgono la parte britannica', d:'perche era stata promessa loro la liberta in cambio del servizio',
+          f:[{piu:true, r:'e alla fine', n:'Vengono evacuati', d:'alcune migliaia portati in Nuova Scozia e poi in Sierra Leone'}]}
+       ]},
+
+      {r:'si dota di', n:'Una costituzione', d:'1787: la piu antica costituzione scritta ancora in vigore',
+       f:[
+         {r:'perche i primi', n:'Articoli di confederazione', d:'non davano al governo centrale il potere di tassare: non funzionavano'},
+         {r:'a Filadelfia si trova un', n:'Compromesso fra grandi e piccoli Stati', d:'una camera per popolazione, una con due seggi per Stato'},
+         {r:'e un compromesso sulla schiavitu', n:'La regola dei tre quinti', d:'gli schiavi contano come tre quinti per la rappresentanza, e non votano',
+          f:[{r:'con la clausola sui', n:'Fuggitivi', d:'chi scappa in uno Stato libero deve essere restituito'},
+             {r:'e il divieto di abolire la tratta', n:'Prima del 1808', d:'vent\'anni di rinvio scritti nel testo'}]},
+         {r:'stabilisce', n:'Separazione e controllo reciproco', d:'tre poteri che si limitano a vicenda, e una corte che giudica le leggi'},
+         {piu:true, r:'e prevede la propria', n:'Modificabilita', d:'una procedura per cambiare il testo: si scrive una regola sapendo che sara sbagliata in qualcosa'},
+         {r:'e nel 1791 aggiunge il', n:'Bill of Rights', d:'i primi dieci emendamenti: parola, stampa, religione, giusto processo'}
+       ]},
+
+      {r:'cambia', n:'Il mondo', d:'e non solo perche nasce uno Stato in piu',
+       f:[
+         {r:'e la prima volta che una colonia', n:'Si rende indipendente', d:'e riesce a costruirsi un governo stabile'},
+         {r:'dimostra che si puo', n:'Scrivere le regole prima', d:'una costituzione discussa e votata, non ereditata'},
+         {r:'e gli indiani', n:'Perdono ogni protezione', d:'la Proclamazione del 1763 li tutelava: senza Londra la frontiera avanza senza limiti'},
+         {r:'ispira l\'', n:'America Latina', d:'e mezzo secolo dopo quasi tutto il continente e indipendente'},
+         {r:'ma il modello viene applicato', n:'Solo da chi somiglia ai fondatori', d:'ad Haiti, dove a ribellarsi sono gli schiavi, la reazione e opposta',
+          f:[{piu:true, r:'e gli Stati Uniti', n:'Non riconoscono Haiti fino al 1862', d:'sessant\'anni: una repubblica nata da una rivolta di schiavi era inaccettabile'}]},
+         {r:'e lascia irrisolto il problema che', n:'Costera una guerra civile', d:'1861-65, oltre seicentomila morti: piu di tutte le altre guerre americane insieme'}
+       ]}
+    ],
+    incroci:[
+      {da:'Assemblee elettive', a:'Nessuna tassa senza rappresentanza', r:'sono cio che rende ovvio ai coloni il principio',
+       perche:'Le colonie votavano le proprie imposte da generazioni attraverso assemblee locali. Quando Londra tassa direttamente non introduce solo un prelievo: scavalca un\'abitudine consolidata. La rivolta nasce dalla difesa di una consuetudine, non dall\'invenzione di un diritto nuovo.'},
+      {da:'Manchester e Birmingham', a:'Rappresentanza virtuale', r:'sono l\'argomento che demolisce la',
+       perche:'Londra sostiene che il parlamento rappresenta tutti i sudditi anche senza elezione, e come prova cita le grandi citta industriali inglesi che non avevano deputati. Per i coloni e la confessione del problema: se anche gli inglesi non sono rappresentati, non e un buon motivo per non esserlo noi.'},
+      {da:'Toglie un quarto del testo', a:'La regola dei tre quinti', r:'e la prima di una serie che continua con',
+       perche:'Il paragrafo sulla schiavitu viene tolto nel 1776 per non perdere due colonie; nel 1787 si scrive che gli schiavi contano tre quinti; nel 1808 si rinvia la fine della tratta. Ogni volta il paese si tiene insieme rimandando lo stesso nodo, e ogni rinvio lo rende piu costoso.'},
+      {da:'Bancarotta francese', a:'Francia', r:'e il conto pagato dalla',
+       perche:'L\'intervento francese decide la guerra e dissesta le finanze di Luigi XVI. Tredici anni dopo Yorktown, la convocazione degli Stati generali nasce dall\'impossibilita di pagare quel debito. La rivoluzione che gli aiuti francesi hanno reso possibile ne innesca un\'altra in casa di chi li aveva mandati.'},
+      {da:'Lealista', a:'Si rende indipendente', r:'e la parte che il racconto della colonia che',
+       perche:'Circa un quinto dei coloni resto fedele alla corona e decine di migliaia furono spogliati ed esiliati. Chiamare quel conflitto guerra d\'indipendenza e non guerra civile e una scelta di racconto fatta dai vincitori: entrambe le descrizioni sono vere, e solo una e entrata nei manuali.'},
+      {da:'Scelgono la parte britannica', a:'Piantagioni e schiavitu', r:'e la risposta razionale di chi vive dentro le',
+       perche:'Gli inglesi promisero la liberta agli schiavi che avessero servito la corona, e migliaia risposero. Per loro la parte della liberta non era quella che diceva di combattere per la liberta. È il dato che rende impossibile leggere la guerra come un fronte solo.'},
+      {da:'Prima del 1808', a:'Costera una guerra civile', r:'e uno dei rinvii che portano a cio che',
+       perche:'Scrivere in una costituzione la data prima della quale un problema non puo essere affrontato significa comprare vent\'anni di pace istituzionale al prezzo di rendere il conflitto piu grande. Nel 1808 gli Stati schiavisti erano piu forti e piu ricchi di quanto fossero nel 1787.'},
+      {da:'Il senso comune', a:'La Dichiarazione', r:'rende pensabile il passo che porta a',
+       perche:'Fino al 1775 quasi nessuno chiedeva l\'indipendenza: si chiedeva il rispetto dei propri diritti di sudditi britannici. Il pamphlet di Paine, scritto in una lingua che chiunque poteva leggere, rende dicibile in pochi mesi cio che prima era impensabile. Le rivoluzioni hanno bisogno di qualcuno che pronunci per primo la parola.'},
+      {da:'Separazione e controllo reciproco', a:'Le accuse al re', r:'e costruita a partire da',
+       perche:'La parte della Dichiarazione che nessuno ricorda — i ventisette capi d\'accusa — e l\'elenco delle cose che un potere non deve poter fare. Undici anni dopo la Costituzione e in gran parte la traduzione di quell\'elenco in procedure: si costruisce l\'architettura sui torti subiti.'},
+      {da:'Non riconoscono Haiti fino al 1862', a:'Solo da chi somiglia ai fondatori', r:'dimostra che il modello viene applicato',
+       perche:'Gli Stati Uniti aiutano le indipendenze latinoamericane e ignorano per sessant\'anni la repubblica nata da una rivolta di schiavi, a poche centinaia di chilometri dalle proprie coste schiaviste. Il principio del diritto dei popoli a governarsi viene riconosciuto a chi assomiglia a chi lo ha formulato.'},
+      {da:'Piu alti e piu istruiti degli inglesi', a:'Debbano contribuire', r:'rende ancora piu irritante la pretesa che',
+       perche:'I coloni erano mediamente piu prosperi, meglio nutriti e piu alfabetizzati dei sudditi di casa madre, e tassati molto meno. Non si ribellano per miseria: si ribellano perche gente che sta bene e abituata a decidere da se reagisce male a chi decide al posto suo.'},
+      {da:'Difesi in tribunale da John Adams', a:'Scrivere le regole prima', r:'appartiene alla stessa idea di chi vuole',
+       perche:'Adams difende i soldati britannici accusati del massacro di Boston, perche un processo irregolare avrebbe dato ragione a chi accusava i coloni di essere una folla. È la stessa convinzione che porta a una costituzione scritta: le procedure valgono soprattutto quando applicarle costa.'},
+      {da:'Fa circolare la propria versione', a:'Creati uguali', r:'e il modo in cui Jefferson difende cio che resta della frase',
+       perche:'Il Congresso gli taglia un quarto del testo e lui, per il resto della vita, mostra agli amici la bozza con le cancellature. Il gesto conserva la memoria di che cosa era stato tolto — ed e grazie a quel gesto che oggi possiamo confrontare le due versioni e vedere che cosa costa far approvare un principio.'}
+    ]
+  },
+  provocazione: {
+    titolo:'Il paragrafo cancellato',
+    durata:'55 minuti',
+    domandaMadre:'Che cosa si perde, quando un principio deve essere approvato da tutti?',
+    perche:'Il Congresso tolse alla Dichiarazione d\'indipendenza circa un quarto del testo di Jefferson, compreso il passaggio sulla schiavitu, per non perdere il voto di Carolina del Sud e Georgia. Sappiamo esattamente che cosa fu cancellato perche Jefferson conservo la propria bozza e la fece circolare per il resto della vita. La classe lavora sullo stesso documento in due versioni — prima e dopo la trattativa — e ne ricava una domanda che non ha risposta comoda: senza quel compromesso non sarebbe nato nessun paese, e con quel compromesso il problema e stato rimandato fino a una guerra civile con oltre seicentomila morti.',
+    occorrente:'Niente.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'Filadelfia, luglio 1776.\n\nThomas Jefferson, trentatre anni,\nha scritto in diciassette giorni\nil testo che conoscete:\n\n«riteniamo che queste verita\nsiano evidenti di per se:\nche tutti gli uomini\nsono creati uguali».\n\nIl Congresso lo discute\nper due giorni e mezzo.\n\nE lo taglia.\n\nVia circa un quarto del testo.\nVia il passaggio piu duro di tutti:\nquello sulla schiavitu.\n\nJefferson resta seduto in silenzio\nmentre gli smontano il testo.\nFranklin, accanto a lui,\ncerca di consolarlo.\n\nPer il resto della vita\nfara circolare fra gli amici\nla propria versione,\ncon segnato tutto\nquello che gli avevano tolto.',
+       parlato:'Racconta la scena come una scena, e tieni per ultimo il particolare della bozza conservata: e quello che rende possibile la lezione di oggi.\n\nPoi spiega perche conta. Di quasi nessun documento fondativo sappiamo che cosa e stato tolto durante la discussione. Qui lo sappiamo, riga per riga, perche l\'autore era abbastanza offeso da conservarne la prova.\n\nDomanda per aprire: secondo voi, che cosa aveva scritto sulla schiavitu?\n\nRaccogli le ipotesi senza confermare. Poi anticipa soltanto una cosa, perche serve a smontare l\'attesa: il passaggio cancellato non era quello che immaginate. Non era una condanna della schiavitu praticata dai coloni. Ci arriviamo fra venti minuti.',
+       seDicono:[
+         {loro:'«Se l\'ha scritto, era contrario alla schiavitù.»',
+          tu:'Jefferson possedette oltre seicento persone nel corso della vita e ne libero pochissime. La contraddizione e reale e documentata, e non si risolve dicendo che era un uomo del suo tempo: altri, nel suo stesso tempo, liberarono i propri schiavi. Teniamola aperta, perche fra poco leggeremo che cosa aveva scritto davvero.'},
+         {loro:'«Perché il Congresso lo ha tolto?»',
+          tu:'Per due voti. Ed e esattamente la domanda dell\'ora: che cosa succede a un principio quando deve passare per un\'assemblea in cui qualcuno puo andarsene.'}
+       ]},
+
+      {minuti:'8–17', et:'La fonte',
+       schermo:'La Dichiarazione,\nnella versione approvata.\n\nDopo la frase famosa,\nil testo prosegue:\n\nche i governi sono istituiti\nfra gli uomini per garantire\nquei diritti,\ne traggono i loro giusti poteri\ndal consenso dei governati;\n\nche ogni volta che una forma\ndi governo tende a distruggerli,\ne diritto del popolo\nmodificarla o abolirla.\n\nPoi vengono ventisette\ncapi d\'accusa contro il re:\nha sciolto le assemblee,\nha ostacolato la giustizia,\nha tenuto eserciti in tempo di pace,\nha imposto tasse senza consenso.\n\nTre domande su questo testo.\n\nChi lo ha scritto, e per convincere chi?\nChe cosa ammette senza volerlo?\nChe cosa non dice?',
+       testo:{fonte:'Dichiarazione d\'indipendenza degli Stati Uniti, 4 luglio 1776, versione approvata dal Congresso',
+              glossa:'Va letto ricordando che non e una dichiarazione di principi generali ma un atto politico con un destinatario preciso: serviva a giustificare davanti all\'Europa — e soprattutto alla Francia — una ribellione contro un sovrano legittimo. La lunghissima lista di accuse al re occupa piu spazio dei principi, e non e un caso.'},
+       parlato:'Fai lavorare in coppia, cinque minuti, poi raccogli.\n\nSulla prima domanda: lo scrive un\'assemblea di ribelli che ha bisogno di alleati stranieri. Il destinatario vero non sono i coloni, che erano gia in guerra: e l\'Europa, e in particolare la Francia. Fai notare che il testo si chiude appellandosi al giudizio del mondo — non e retorica, e la funzione del documento.\n\nSulla seconda: il testo ammette, senza dirlo, di dover giustificare una ribellione. Se fosse ovvio che si puo rovesciare un sovrano ingiusto, non servirebbero ventisette capi d\'accusa. La lunghezza dell\'elenco misura quanto fosse grave quello che stavano facendo.\n\nSulla terza, che e la piu importante: non nomina mai la schiavitu, che riguardava circa un quinto della popolazione delle colonie. Nel documento che afferma che tutti gli uomini sono creati uguali, mezzo milione di persone non compaiono.\n\nE il silenzio, come sapete, non e mai casuale: e il risultato di una decisione presa da qualcuno.',
+       seDicono:[
+         {loro:'«Perché tanto spazio alle accuse al re?»',
+          tu:'Perche era la parte giuridicamente necessaria. I principi generali dicono che si puo rovesciare un governo che viola i diritti; l\'elenco serve a dimostrare che quel governo li aveva violati. Senza le prove, la premessa non basta — ed e per questo che la parte che nessuno ricorda e la piu lunga.'},
+         {loro:'«Volevano convincere la Francia? Ma è una monarchia.»',
+          tu:'Osservazione ottima, ed e uno dei paradossi della vicenda: un re assoluto finanzia una repubblica nata contro un re, perche il nemico e la Gran Bretagna. Le alleanze seguono gli interessi, non i principi — e questo, tredici anni dopo, gli si ritorcera contro.'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'Come si arriva al taglio.\n\nIl Congresso vota per delegazioni:\nogni colonia un voto,\ne serve l\'unanimita,\nperche una dichiarazione\nfirmata da nove colonie su tredici\nnon vale niente.\n\nCarolina del Sud e Georgia\nfanno sapere che il passaggio\nsulla schiavitu\ne per loro inaccettabile.\n\nNon sono le sole:\nanche mercanti del Nord\narricchiti con la tratta\npreferiscono che sparisca.\n\nSi toglie.\n\nE qui va detta una cosa\nche complica tutto.\n\nIl passaggio cancellato\nnon condannava\nla schiavitu americana.\n\nAccusava il re d\'Inghilterra\ndi averla imposta alle colonie\ncontro la loro volonta.',
+       parlato:'Spiega il meccanismo del voto, perche senza quello la decisione sembra solo vigliaccheria: serviva l\'unanimita, e due colonie potevano far cadere tutto.\n\nPoi arriva il rovesciamento, e va dato con calma. Il paragrafo di Jefferson non e un testo abolizionista. Sostiene che il re ha portato gli africani in America e ha poi impedito alle colonie di vietare quel commercio: cioe scarica sulla corona la responsabilita di un\'istituzione che i coloni praticavano, difendevano e da cui traevano ricchezza — Jefferson per primo.\n\nLascia che ci pensino, poi fai la domanda: se era un testo cosi ipocrita, perche lo hanno tolto lo stesso?\n\nGuidali alla risposta, che e la parte piu istruttiva. Perche anche solo nominare la schiavitu in quel documento significava ammettere che esisteva un problema. E un problema nominato in un testo fondativo puo essere ripreso da chiunque, in qualunque momento successivo.\n\nCancellare non serviva a proteggere una tesi: serviva a impedire che la parola entrasse nel testo.',
+       seDicono:[
+         {loro:'«Quindi Jefferson non era neanche sincero.»',
+          tu:'Su questo punto no, ed e importante saperlo. Ma nota che il Congresso ha tolto anche un\'ipocrisia, perche perfino un\'ipocrisia scritta li dentro sarebbe stata pericolosa. Ti dice quanto pesa una parola in un documento che tutti citeranno per secoli.'},
+         {loro:'«Bastava votare a maggioranza.»',
+          tu:'E allora Carolina del Sud e Georgia sarebbero uscite, e le tredici colonie sarebbero diventate undici, con due Stati britannici alle spalle e la Francia molto meno disposta ad aiutare. La regola dell\'unanimita non era un capriccio: senza di essa non c\'era nessun paese da fondare.'}
+       ]},
+
+      {minuti:'28–38', et:'La seconda fonte',
+       schermo:'Il primo documento\nera il testo approvato.\n\nQuesto e lo stesso testo\nprima della trattativa.\n\nDalla bozza di Jefferson,\nnel passaggio cancellato:\n\naccusa il re di aver mosso guerra\nalla natura umana stessa,\nviolando i diritti piu sacri\nalla vita e alla liberta\ndi un popolo lontano\nche non lo aveva mai offeso,\ncatturandolo e trasportandolo\nin schiavitu in un altro emisfero,\no facendolo morire\nmiseramente nel viaggio;\n\ne di aver poi impedito\nogni tentativo legislativo\ndi proibire o limitare\nquesto commercio esecrabile.\n\nQuesto e cio che il Congresso\nha tolto.\n\nStesso documento.\nDue versioni.\nIn mezzo, una trattativa.',
+       testo:{fonte:'Thomas Jefferson, bozza originale della Dichiarazione d\'indipendenza (giugno 1776), passaggio soppresso dal Congresso',
+              glossa:'La bozza ci e nota perche Jefferson ne conservo copia e la trascrisse piu volte, segnando le parti tolte. Il passaggio e insieme il piu forte del testo e il piu insincero: attribuisce al re la responsabilita di una schiavitu che i coloni praticavano, e il suo autore possedeva centinaia di persone mentre lo scriveva.'},
+       parlato:'Leggi il passaggio e poi lascia che la classe misuri la distanza fra le due versioni.\n\nPoi fai la domanda di metodo, che e nuova rispetto alle altre lezioni: che cosa possiamo sapere confrontando due stesure di uno stesso documento, che non sapremmo leggendone una sola?\n\nGuidali. Un documento approvato mostra il risultato; una bozza mostra il processo. Confrontandoli si vede chi ha dovuto cedere, su che cosa, e a chi. Senza la bozza, la Dichiarazione sembrerebbe un testo uscito intero dalla testa di qualcuno.\n\nPoi il punto che vale oltre il 1776: nei documenti collettivi le parti piu significative sono spesso quelle assenti, e normalmente non ne restano tracce. Le leggi, i comunicati, i regolamenti che leggiamo sono tutti l\'esito di trattative di cui non vediamo niente.\n\nQui vediamo, e per un caso: perche l\'autore era abbastanza indispettito da conservare la prova.',
+       seDicono:[
+         {loro:'«Come facciamo a fidarci della sua bozza?»',
+          tu:'Domanda giusta: e la parte interessata a conservare il documento che lo mette in buona luce. Nel caso specifico regge, perche altri delegati confermarono nei propri appunti che il passaggio era stato tolto e perche. Ma il sospetto e sano — chi conserva le prove sceglie quali conservare.'},
+         {loro:'«Il testo tagliato era comunque migliore.»',
+          tu:'Piu forte, certamente. Migliore dipende da che cosa misuri: e piu duro contro la tratta ed e falso su chi ne fosse responsabile. Un testo puo essere insieme piu coraggioso e meno onesto del suo sostituto.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'Il compromesso non finisce li.\n\n1787, Costituzione.\n\nGli schiavi contano\ncome tre quinti di persona\nper calcolare quanti deputati\nspettano a uno Stato.\nNon votano.\nContano per dare piu potere\na chi li possiede.\n\nChi fugge in uno Stato libero\ndeve essere restituito.\n\nE la tratta atlantica\nnon potra essere vietata\nprima del 1808:\nvent\'anni di rinvio,\nscritti dentro la costituzione.\n\nOgni volta la stessa mossa:\nrimandare, per tenere insieme il paese.\n\nFunziona per settant\'anni.\n\nPoi il conto arriva tutto insieme:\n1861-1865,\noltre seicentomila morti,\npiu di tutte le altre guerre\namericane messe insieme.',
+       parlato:'Costruisci la sequenza dei rinvii uno per volta: il taglio del 1776, i tre quinti del 1787, la data del 1808. Fai vedere che e sempre la stessa mossa.\n\nPoi la formulazione: un compromesso che rimanda un problema non lo risolve. Lo mette a interesse composto. Nel 1787 gli Stati schiavisti erano una parte del paese; nel 1808 erano piu ricchi; nel 1860 il cotone era la principale esportazione americana e nessuno poteva piu toccare la questione senza spaccare tutto.\n\nE adesso la parte difficile, che non va risolta ma posta bene.\n\nSenza quei compromessi, il paese non sarebbe nato. Carolina del Sud e Georgia sarebbero rimaste fuori. Quindi la domanda vera non e se i padri fondatori siano stati vili: e se fosse meglio un paese nato con quel vizio o nessun paese affatto — e nessuno puo rispondere con sicurezza, perche non sappiamo che cosa sarebbe successo nell\'altro caso.\n\nFalli lavorare su questo per qualche minuto. È una delle poche volte in cui una domanda storica non ha una risposta migliore delle altre, e vale la pena che lo sperimentino.',
+       seDicono:[
+         {loro:'«Dovevano rifiutarsi, punto.»',
+          tu:'È una posizione difendibile e ha un costo: nessuna indipendenza, o un\'indipendenza piu piccola e piu fragile, forse riconquistata dagli inglesi. Chi la sostiene deve accettare quel costo. Quello che non si puo fare e volere insieme il paese e il rifiuto del compromesso che lo ha reso possibile.'},
+         {loro:'«Almeno hanno messo la data del 1808.»',
+          tu:'Sì, e la tratta fu effettivamente vietata quell\'anno. Ma nota che cosa fu vietato: l\'importazione, non la schiavitu. La popolazione schiavizzata degli Stati Uniti continuo a crescere per nascite, e passo da circa un milione nel 1808 a quasi quattro milioni nel 1860.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'Che cosa e successo\na quella frase.\n\n1852. Frederick Douglass,\nnato schiavo, fuggito,\ne invitato a parlare\na una festa del 4 luglio.\n\nDice ai bianchi che lo ascoltano\nche quella festa e loro,\nnon sua;\nche a uno schiavo il 4 luglio\nmostra piu di ogni altro giorno\nl\'ingiustizia di cui e vittima;\ne che le grandi parole\ndi liberta e uguaglianza\npronunciate quel giorno\nsono, per lui, una beffa.\n\nUsa contro di loro\nil loro documento.\n\nE poi Lincoln lo cita a Gettysburg.\nE poi King, nel 1963,\ndira che quelle parole erano\nuna cambiale.\n\nIl paragrafo cancellato\nnon e mai tornato.\n\nLa frase rimasta\nnon si e piu potuta cancellare.',
+       parlato:'Racconta il discorso di Douglass senza addolcirlo: era un attacco durissimo, tenuto davanti a un pubblico che lo aveva invitato per sentirsi lodare.\n\nPoi il punto finale, che chiude l\'ora e va tenuto pulito.\n\nIl Congresso tolse il passaggio piu forte per far approvare il documento. Ma lascio la frase iniziale, che sembrava innocua perche tutti la intendevano riferita a se stessi. Quella frase e diventata lo strumento con cui, per due secoli, chi era escluso ha preteso di entrare.\n\nQuindi la risposta alla domanda di partenza e doppia, e va detta cosi. Quando un principio deve essere approvato da tutti, si perde la parte che qualcuno non puo accettare — e resta scritto qualcosa di piu ampio di quanto chi lo approvava intendesse. I documenti fondativi dicono sempre piu di quello che i loro autori volevano dire, ed e per questo che vale la pena scriverli.\n\nUltima cosa, che apre il capitolo seguente: mentre a Filadelfia si discute di questo, in Francia il debito della guerra americana sta portando alla convocazione degli Stati generali. La prossima rivoluzione comincia dal conto di questa.',
+       seDicono:[
+         {loro:'«Allora il compromesso è stato giusto.»',
+          tu:'Non ho detto questo, e non lo so. Ha reso possibile un paese e ha reso inevitabile una guerra con seicentomila morti. Le due cose sono vere insieme, e chi ti offre un bilancio netto fra loro ti sta vendendo qualcosa. Quello che possiamo dire con sicurezza e piu modesto: le parole scritte in un documento fondativo sfuggono di mano a chi le scrive.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'La guerra che chiamiamo con un altro nome',
+       corpo:'Circa un quinto dei coloni rimase fedele alla corona. In molte contee il conflitto fu fra vicini: confische di beni, incendi, linciaggi, eserciti irregolari da entrambe le parti.\n\nAlla fine della guerra fra sessanta e ottantamila lealisti lasciarono il paese per sempre, soprattutto verso il Canada. In proporzione alla popolazione, furono più esuli di quanti ne produsse la Rivoluzione francese.\n\nNei manuali quel conflitto si chiama guerra d\'indipendenza.',
+       chiedi:'Chi decide se una guerra è «di indipendenza» o «civile», e quando lo decide? Le due descrizioni si escludono, oppure il nome dipende solo da chi ha vinto e da che cosa gli conviene raccontare?'},
+      {titolo:'Tre quinti',
+       corpo:'La Costituzione del 1787 stabilisce che, per calcolare quanti deputati spettino a uno Stato, si contino gli abitanti liberi più tre quinti «delle altre persone».\n\nLa formula non riconosce agli schiavi tre quinti di umanità: li conta come popolazione per assegnare seggi a chi li possiede. Gli Stati del Sud avevano interesse a contarli tutti; quelli del Nord a non contarli affatto.\n\nL\'effetto fu che gli Stati schiavisti ebbero per decenni più deputati e più peso nell\'elezione del presidente di quanti ne avrebbero avuti contando solo gli elettori.',
+       chiedi:'Una regola tecnica di conteggio produce un vantaggio politico enorme senza dirlo apertamente. Come si riconosce, in una norma che sembra procedurale, chi ci guadagna? E vi vengono in mente regole di conteggio attuali che funzionano allo stesso modo?'},
+      {titolo:'Il conto della vittoria',
+       corpo:'La Francia entrò in guerra a fianco degli americani nel 1778, spendendo cifre enormi in flotte, truppe e sussidi. Il debito che ne derivò si aggiunse a quello già accumulato nelle guerre precedenti.\n\nAlla fine degli anni Ottanta il servizio del debito assorbiva circa la metà delle entrate dello Stato francese. I tentativi di riformare il fisco fallirono davanti all\'opposizione dei privilegiati, e nel 1788 il re fu costretto a convocare gli Stati generali, che non si riunivano dal 1614.\n\nLa Francia vinse la guerra americana e ci perse la monarchia.',
+       chiedi:'Una vittoria militare che contribuisce a far cadere il vincitore. Che cosa dovrebbe calcolare un governo, prima di entrare in una guerra che pensa di poter vincere? E chi, all\'interno di uno Stato, ha interesse a non fare quel calcolo?'}
+    ],
+    testi:[
+      {fonte:'Costituzione degli Stati Uniti, 1787 — articolo I, sezione 9',
+       corpo:'La disposizione stabilisce che il Congresso non potrà proibire prima del 1808 la migrazione o l\'importazione delle persone che gli Stati esistenti ritengano opportuno ammettere.',
+       glossa:'Il testo non usa mai le parole «schiavitù» o «schiavo»: parla di «persone» e di «importazione». La reticenza è deliberata, e i costituenti la discussero apertamente. Utile in classe per mostrare che il modo in cui una norma nomina le cose fa parte del compromesso quanto il suo contenuto.'},
+      {fonte:'Frederick Douglass, Che cos\'è per lo schiavo il 4 luglio?, Rochester 1852',
+       corpo:'Douglass afferma che la libertà e l\'indipendenza celebrate in quel giorno appartengono a chi lo ascolta e non a lui; che al servo quella ricorrenza rivela più di ogni altro giorno l\'ingiustizia che subisce; e che le solenni proclamazioni di uguaglianza suonano, a chi è tenuto in catene, come una beffa.',
+       glossa:'Il discorso è tenuto su invito, davanti a un pubblico di abolizionisti bianchi che si aspettava una celebrazione. Douglass non contesta i principi della Dichiarazione: li usa come metro per misurare il paese che li ha proclamati. È la tecnica più efficace di ogni movimento per i diritti — prendere alla lettera le parole degli altri.'},
+      {fonte:'Thomas Paine, Il senso comune, gennaio 1776',
+       corpo:'Paine sostiene che è assurdo che un continente sia governato da un\'isola, che la monarchia ereditaria è un\'istituzione irragionevole perché nessun uomo ha diritto per nascita al governo degli altri, e che il momento di separarsi è ora.',
+       glossa:'Scritto in una lingua semplice e volutamente diretta, vendette circa centomila copie in pochi mesi su una popolazione di due milioni e mezzo di abitanti liberi. È il caso più chiaro di un testo che non aggiunge argomenti nuovi ma rende dicibile in pubblico ciò che prima si pensava soltanto.'}
+    ],
+    compito:'Mezza pagina. Prendete un documento collettivo che vi riguarda — un regolamento di classe, lo statuto di una squadra o di un\'associazione, un patto di corresponsabilità scolastico. Leggetelo e provate a immaginare che cosa potrebbe essere stato tolto durante la discussione, e da chi. Poi indicate una frase che, presa alla lettera, direbbe più di quanto chi l\'ha scritta probabilmente intendesse.',
+    fonti:[
+      'Dichiarazione d\'indipendenza (1776), versione approvata e bozza di Jefferson con le parti soppresse',
+      'Costituzione degli Stati Uniti (1787) e Bill of Rights (1791)',
+      'T. Paine, Common Sense (1776); F. Douglass, What to the Slave is the Fourth of July? (1852)',
+      'G. Wood, La rivoluzione americana; B. Bailyn, Le origini ideologiche della rivoluzione americana',
+      'M. Jasanoff, Liberty\'s Exiles — sui lealisti; A. Taylor, American Revolutions',
+      'D. Davis, Il problema della schiavitù nell\'età della rivoluzione'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',
