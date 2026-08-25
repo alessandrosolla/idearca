@@ -9774,6 +9774,223 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Filosofia moderna · 2 — Il ritorno a Platone e ad Aristotele': {
+  mappa: {
+    n:'Il ritorno a Platone e ad Aristotele', d:'due antichi tornano, e nessuno dei due e piu quello di prima',
+    f:[
+      {r:'parte da', n:'Due ritorni diversi', d:'uno arriva come novita, l\'altro era gia qui e cambia',
+       f:[
+         {r:'Platone e', n:'Quasi sconosciuto in Occidente', d:'per mille anni se ne leggono un dialogo e mezzo in latino'},
+         {r:'arriva con i', n:'Dotti bizantini', d:'al concilio di Ferrara-Firenze del 1438-39, e poi con i profughi da Costantinopoli'},
+         {r:'Aristotele invece', n:'C\'era gia da due secoli', d:'ed era il fondamento di tutto l\'insegnamento universitario'},
+         {r:'ma lo si rilegge', n:'In greco', d:'invece che nelle traduzioni fatte dall\'arabo: e un altro testo',
+          f:[{piu:true, r:'e si comincia a distinguere', n:'Aristotele dai suoi commentatori', d:'molte tesi date per sue erano di Averroe o di Tommaso'}]}
+       ]},
+
+      {r:'produce', n:'Un platonismo nuovo', d:'che a Platone somiglia meno di quanto credesse',
+       f:[
+         {r:'Ficino traduce e commenta', n:'Tutti i dialoghi', d:'e scrive la Teologia platonica per mostrarne l\'accordo con il cristianesimo'},
+         {r:'colloca l\'anima al', n:'Centro del mondo', d:'copula mundi: partecipa del corporeo e del divino, e li tiene insieme'},
+         {r:'elabora l\'idea di', n:'Amore platonico', d:'un desiderio che sale dalla bellezza dei corpi a quella delle idee',
+          f:[{piu:true, r:'e l\'espressione', n:'Nasce qui, non in Platone', d:'e diventera in poche generazioni un modo di dire su un affetto senza corpo'}]},
+         {r:'e lo lega a una', n:'Sapienza antichissima', d:'Ermete, Orfeo, Pitagora, Platone: un\'unica verita trasmessa nei secoli'},
+         {r:'e affascina gli artisti con le', n:'Idee come modelli', d:'il pittore non copia la natura: cerca la forma perfetta di cui le cose sono copie'},
+         {piu:true, r:'da cui il', n:'Disegno interiore', d:'l\'opera esiste nella mente prima che nella pietra: e la teoria che Michelangelo mette in versi'},
+         {r:'costruendo un platonismo', n:'Religioso e magico', d:'lontanissimo dal Platone che leggiamo oggi'}
+       ]},
+
+      {r:'e un', n:'Aristotelismo che non muore affatto', d:'contro il racconto che lo vuole superato dall\'umanesimo',
+       f:[
+         {r:'resta la base dell\'', n:'Insegnamento universitario', d:'logica, fisica, metafisica: si insegna cosi ancora nel Seicento'},
+         {r:'il centro e', n:'Padova', d:'dove si studia Aristotele come filosofo, non come ancella della teologia'},
+         {r:'e si divide fra due letture', n:'Averroisti e alessandristi', d:'sull\'intelletto: unico per tutti gli uomini, oppure mortale con il corpo'},
+         {r:'entrambe portano a negare', n:'L\'immortalita personale', d:'ed e il punto in cui Aristotele diventa scomodo'},
+         {piu:true, r:'e con lezioni tenute in', n:'Latino fino all\'Ottocento', d:'l\'universita resta una lingua sola per tutta Europa: uno studente puo cambiare paese e capire'},
+         {r:'con la vecchia accusa della', n:'Doppia verita', d:'vero in filosofia e falso in teologia: nessuno la sostenne mai in quella forma'}
+       ]},
+
+      {r:'esplode con', n:'Pomponazzi', d:'1516: il libro piu scandaloso del secolo, scritto da un professore',
+       f:[
+         {r:'dimostra che secondo la ragione naturale', n:'L\'anima e mortale', d:'perche non puo pensare senza immagini, e le immagini vengono dai sensi'},
+         {r:'aggiunge che tuttavia', n:'Da cristiano crede il contrario', d:'l\'immortalita e materia di fede, non di dimostrazione'},
+         {r:'e sostiene che sia meglio cosi', n:'Il premio della virtu e la virtu', d:'chi fa il bene per un premio eterno non e virtuoso, e mercenario',
+          f:[{r:'mentre chi lo fa', n:'Senza aspettarsi niente', d:'compie l\'atto piu nobile: e un argomento morale, non una resa'}]},
+         {r:'il libro viene', n:'Bruciato a Venezia', d:'ma l\'autore non e toccato: insegna in uno Stato che non ammette ingerenze',
+          f:[{piu:true, r:'ed e difeso dal cardinale', n:'Bembo', d:'un umanista che riteneva la questione filosofica e non ereticale'}]}
+       ]},
+
+      {r:'divide i dotti su', n:'Quale antico sia migliore', d:'e la disputa dura decenni',
+       f:[
+         {r:'Pletone sostiene la', n:'Superiorita di Platone', d:'e arriva a immaginare un ritorno alla religione degli antichi greci'},
+         {r:'Trapezunzio replica difendendo', n:'Aristotele', d:'accusando i platonici di paganesimo mascherato'},
+         {r:'Bessarione cerca una', n:'Conciliazione', d:'nessuno dei due e cristiano, entrambi si possono usare con giudizio'},
+         {piu:true, r:'e il concilio serve anche a', n:'Cercare aiuto contro i turchi', d:'i bizantini vengono a Firenze per l\'unione delle Chiese e portano con se i manoscritti'},
+         {r:'la posta vera e', n:'Chi ha diritto di insegnare', d:'dietro la disputa filosofica c\'e il controllo delle cattedre e dei finanziamenti'}
+       ]},
+
+      {r:'cambia', n:'Il modo di leggere', d:'e questa e la conseguenza piu duratura',
+       f:[
+         {r:'si leggono i testi', n:'In originale e per intero', d:'non piu attraverso raccolte di sentenze e commenti'},
+         {r:'si distingue cio che un autore ha detto da', n:'Cio che gli e stato attribuito', d:'e molte autorita si assottigliano'},
+         {r:'tornano gli', n:'Scettici antichi', d:'Sesto Empirico tradotto nel 1562: argomenti dimenticati per mille anni',
+          f:[{r:'con un effetto immediato su', n:'Montaigne', d:'che ne fa il proprio metodo: che ne so io?'},
+             {piu:true, r:'e uno di lunga durata su', n:'Cartesio', d:'che costruira il dubbio metodico per rispondere proprio a quegli argomenti'}]},
+         {r:'e si scopre che gli antichi', n:'Non erano d\'accordo fra loro', d:'la loro autorita regge finche li si legge uno alla volta'},
+         {r:'e nasce l\'idea che le autorita', n:'Vadano confrontate fra loro', d:'se i grandi si contraddicono, bisogna decidere con la propria testa'}
+       ]},
+
+      {r:'prepara', n:'La scienza nuova', d:'e non contro Aristotele: dentro le sue scuole',
+       f:[
+         {r:'a Padova si elabora un', n:'Metodo', d:'come si passa dai fenomeni alle cause e dalle cause ai fenomeni'},
+         {r:'Zabarella lo chiama', n:'Regressus', d:'si risale dall\'effetto alla causa, poi si ridiscende per verificare'},
+         {r:'e distingue', n:'Scoprire da insegnare', d:'l\'ordine con cui si trova una cosa non e quello con cui la si espone'},
+         {r:'e insiste sulla', n:'Separazione fra fisica e metafisica', d:'la natura si studia con le sue cause, senza chiamare in causa i fini ultimi'},
+         {r:'Galileo studia e insegna', n:'A Padova per diciotto anni', d:'proprio negli anni in cui quella tradizione e al culmine',
+          f:[{piu:true, r:'e la formula galileiana', n:'Sensate esperienze e necessarie dimostrazioni', d:'ha una struttura vicinissima al regressus padovano'}]},
+         {r:'per cui alcuni storici sostengono che la scienza nasca', n:'Da una scuola aristotelica', d:'e non dalla rivolta contro Aristotele: la tesi e discussa e seria'}
+       ]},
+
+      {r:'si chiude quando', n:'Cadono entrambe le autorita', d:'e si prova a studiare la natura senza appoggiarsi a nessuno',
+       f:[
+         {r:'Telesio propone di indagare la natura', n:'Secondo i suoi propri principi', d:'1565: caldo, freddo e materia, senza le forme aristoteliche'},
+         {r:'Bruno rompe con', n:'Il cosmo chiuso', d:'infiniti mondi e nessun centro: cade la fisica dei cieli'},
+         {r:'e cerca una', n:'Citta del Sole', d:'una comunita governata dal sapere: l\'utopia come critica del presente'},
+         {r:'Campanella difende', n:'Il sapere dai sensi', d:'e paga con ventisette anni di carcere'},
+         {r:'e nascono le prime', n:'Accademie scientifiche', d:'i Lincei nel 1603: ci si riunisce fuori dall\'universita per fare altro'},
+         {r:'e la generazione dopo dichiara', n:'Di ricominciare da zero', d:'Bacone con l\'induzione, Cartesio con il dubbio: entrambi contro le scuole'},
+         {r:'ma portandosi dietro', n:'Piu di quanto ammettano', d:'lessico, problemi e metodo vengono dalle scuole che dicono di abbandonare'}
+       ]}
+    ],
+    incroci:[
+      {da:'In greco', a:'Cio che gli e stato attribuito', r:'permette di separare cio che Aristotele ha detto da',
+       perche:'Leggere il testo originale invece delle traduzioni fatte dall\'arabo e dei commenti accumulati significa scoprire che molte tesi date per aristoteliche erano di Averroe o di interpreti successivi. L\'autorita si assottiglia non perche venga attaccata, ma perche viene letta davvero.'},
+      {da:'L\'anima e mortale', a:'L\'immortalita personale', r:'e la conclusione a cui portano entrambe le letture che negano',
+       perche:'Sia gli averroisti sia gli alessandristi, per strade opposte, arrivano a negare che la singola anima sopravviva: per gli uni l\'intelletto e unico per tutti, per gli altri muore con il corpo. Il problema non e un\'invenzione di Pomponazzi: e dove porta Aristotele quando lo si legge senza correzioni.'},
+      {da:'Il premio della virtu e la virtu', a:'Bruciato a Venezia', r:'non basta a evitare che il libro sia',
+       perche:'L\'argomento morale di Pomponazzi e forte e non protegge il libro: quello che colpisce le autorita non e la sua etica ma la conclusione sull\'anima. Vale la pena notarlo — nelle condanne conta quasi sempre la tesi che si puo riassumere in una riga, non il ragionamento che la sostiene.'},
+      {da:'Bembo', a:'Chi ha diritto di insegnare', r:'lo protegge perche la posta vera e',
+       perche:'Un cardinale umanista difende Pomponazzi sostenendo che la questione e filosofica e non ereticale. Dietro c\'e una battaglia sulle competenze: se ogni tesi filosofica diventa materia di fede, le universita perdono ogni autonomia. La protezione non e simpatia personale, e difesa di uno spazio.'},
+      {da:'Sensate esperienze e necessarie dimostrazioni', a:'Regressus', r:'ha una struttura vicina al',
+       perche:'Il metodo padovano prescrive di risalire dai fenomeni alle cause e poi di ridiscendere alle conseguenze per controllare. La formula di Galileo unisce osservazione e dimostrazione nello stesso modo. Non prova che l\'abbia presa da li, e rende difficile sostenere che la scienza nuova sia nata senza debiti verso quelle scuole.'},
+      {da:'Nasce qui, non in Platone', a:'Religioso e magico', r:'e un esempio del platonismo',
+       perche:'L\'espressione «amore platonico» viene da Ficino e descrive un\'ascesa dalla bellezza sensibile a quella intelligibile, con un\'aria religiosa che nei dialoghi non c\'e in quella forma. È un buon promemoria: le idee che attribuiamo agli antichi sono spesso quelle dei loro traduttori.'},
+      {da:'Montaigne', a:'Cartesio', r:'pone il problema a cui rispondera',
+       perche:'Gli argomenti scettici antichi, tornati con la traduzione di Sesto Empirico, mostrano che i sensi ingannano e che ogni criterio ha bisogno di un altro criterio. Montaigne li adotta come sguardo sul mondo; Cartesio li prende sul serio e costruisce il dubbio metodico per trovare qualcosa che vi resista.'},
+      {da:'Separazione fra fisica e metafisica', a:'Secondo i suoi propri principi', r:'apre la strada a chi vuole studiare la natura',
+       perche:'Zabarella sostiene che la fisica debba spiegare con cause naturali, senza chiamare in causa i fini ultimi. Telesio fa il passo successivo e propone di studiare la natura con i suoi principi, abbandonando l\'apparato aristotelico. La rottura arriva dopo una lunga preparazione interna.'},
+      {da:'Quasi sconosciuto in Occidente', a:'Superiorita di Platone', r:'rende sensazionale la tesi della',
+       perche:'Pletone puo sostenere che Platone superi Aristotele davanti a un pubblico che Platone non ha letto: la novita fa parte dell\'argomento. Le riscoperte producono entusiasmi che la conoscenza consolidata non produce, ed e utile ricordarlo quando si valuta una moda intellettuale.'},
+      {da:'Vadano confrontate fra loro', a:'Doppia verita', r:'rende meno spaventosa l\'accusa di',
+       perche:'Se le autorita si contraddicono e vanno messe a confronto, diventa normale che una disciplina arrivi a conclusioni diverse da un\'altra. L\'accusa di sostenere due verita opposte perde forza quando si accetta che ragione e fede lavorino su terreni e con strumenti diversi.'},
+      {da:'Piu di quanto ammettano', a:'Insegnamento universitario', r:'e cio che i moderni ereditano dall\'',
+       perche:'Bacone e Cartesio dichiarano di ricominciare da zero e usano parole, distinzioni e problemi costruiti da secoli di scuole aristoteliche — sostanza, causa, forma, metodo. Nessuno comincia davvero da zero: chi lo annuncia sta segnalando una rottura, non descrivendo il proprio strumentario.'},
+      {da:'Aristotele dai suoi commentatori', a:'Padova', r:'e il lavoro che si fa soprattutto a',
+       perche:'Nelle universita italiane, e a Padova piu che altrove, Aristotele viene studiato come filosofo con problemi propri, non come materiale per la teologia. È questa autonomia disciplinare a rendere possibile arrivare a conclusioni scomode — e a proteggerle, finche lo Stato veneziano difende le proprie cattedre.'},
+      {da:'Di ricominciare da zero', a:'Sapienza antichissima', r:'e l\'opposto della fiducia in una',
+       perche:'Ficino cercava una verita unica trasmessa dagli antichissimi; Bacone e Cartesio sostengono che tutto il tramandato vada messo da parte. Fra le due posizioni c\'e un secolo e mezzo, e in mezzo c\'e la scoperta filologica che quei testi antichissimi erano tardi. Smontare una genealogia venerabile e cio che rende pensabile ripartire da capo.'}
+    ]
+  },
+  provocazione: {
+    titolo:'Il premio della virtu',
+    durata:'55 minuti',
+    domandaMadre:'Faresti il bene se sapessi che non c\'e nessun premio?',
+    perche:'Nel 1516 un professore dell\'universita di Bologna pubblica un libro in cui dimostra, con Aristotele alla mano, che l\'anima e mortale — e conclude dicendo che, essendo cristiano, crede il contrario. Il libro viene bruciato a Venezia e lui non viene toccato. La classe deve decidere se quella doppia conclusione sia una scappatoia o una posizione seria, e poi affrontare l\'argomento che rende il libro davvero pericoloso: Pomponazzi non si limita a dire che l\'anima e mortale, dice che e meglio cosi, perche chi agisce bene per avere un premio eterno non e virtuoso ma mercenario. La tesi che sembrava distruggere la morale la fonda in modo piu esigente.',
+    occorrente:'Niente.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'Bologna, 1516.\n\nPietro Pomponazzi\ninsegna filosofia all\'universita.\nPubblica un trattato\nsull\'immortalita dell\'anima.\n\nDimostra, seguendo Aristotele,\nche l\'anima non puo essere immortale:\n\nperche non riesce a pensare\nsenza immagini,\ne le immagini vengono dai sensi,\ne i sensi hanno bisogno del corpo.\n\nSenza corpo, niente pensiero.\nQuindi niente anima che sopravviva.\n\nPoi, nell\'ultima pagina,\nscrive che tutto questo\nvale per la ragione naturale;\n\nche l\'immortalita dell\'anima\ne un articolo di fede;\n\ne che lui, essendo cristiano,\nla crede.\n\nIl libro viene bruciato a Venezia.\nLui continua a insegnare\nfino alla morte.',
+       parlato:'Dai la dimostrazione con calma, perche e semplice e vale la pena che la seguano: senza corpo non ci sono sensi, senza sensi non ci sono immagini, senza immagini Aristotele dice che non c\'e pensiero.\n\nPoi la conclusione doppia, e lascia il silenzio.\n\nInfine i due fatti: il libro bruciato, l\'autore intatto. Aggiungi che fu difeso da un cardinale, Bembo, che sostenne trattarsi di una questione filosofica e non di eresia.\n\nDomanda dell\'ora: quella conclusione finale e sincera o e una scappatoia?\n\nRaccogli le prime reazioni, che sono quasi sempre di sospetto. Non correggere: e lo schieramento.',
+       seDicono:[
+         {loro:'«L\'ha scritto solo per non finire sul rogo.»',
+          tu:'Può darsi, ed e la lettura piu diffusa. Ma nota una cosa: se voleva salvarsi, poteva semplicemente non scrivere il libro. Ha scelto di dimostrare pubblicamente una tesi pericolosa e poi di dichiararsi credente. È una posizione scomoda in tutte e due le direzioni.'},
+         {loro:'«Come si può credere una cosa e dimostrarne un\'altra?»',
+          tu:'È esattamente la domanda dell\'ora, ed e piu seria di quanto sembri. Ci lavoriamo tutto il tempo, e alla fine avrai il materiale per rispondere — non la risposta.'}
+       ]},
+
+      {minuti:'8–17', et:'Lo schieramento',
+       schermo:'La conclusione di Pomponazzi —\nla ragione dice mortale,\nla fede dice immortale,\ne io credo alla fede:',
+       opzioni:['e una scappatoia per non essere condannato', 'e una posizione seria: rispondono a domande diverse'],
+       parlato:'Fai schierare e conta. La prima opzione prevale quasi sempre.\n\nPoi metti alla prova entrambe.\n\nAlla prima: se era una scappatoia, perche il libro fu bruciato lo stesso? E perche altri, nella stessa situazione, ritrattarono davvero e lui no? Chi usa una formula di comodo di solito la usa per farsi lasciare in pace, e lui non fu lasciato in pace.\n\nAlla seconda: se ragione e fede rispondono a domande diverse, che cosa succede quando danno risposte opposte sulla stessa domanda? Qui non si tratta di due terreni separati — si tratta della stessa identica questione, se l\'anima sopravviva, con due risposte contrarie.\n\nÈ questo il punto difficile, e va lasciato aperto.\n\nPoi aggiungi il contesto che aiuta: l\'idea che filosofia e teologia procedano con metodi propri era normale nelle universita italiane. Un professore di filosofia doveva esporre dove porta Aristotele, non dove sarebbe opportuno che portasse. Il suo mestiere era quello.',
+       seDicono:[
+         {loro:'«Allora bastava dire che Aristotele si sbagliava.»',
+          tu:'Poteva farlo, e alcuni lo fecero. Ma il suo compito era spiegare Aristotele, non correggerlo per farlo tornare comodo. C\'e una differenza fra dire cosa pensi tu e dire dove porta un ragionamento: confonderle e uno dei modi piu comuni di rovinare una discussione.'},
+         {loro:'«Se la ragione dice una cosa, quella è vera.»',
+          tu:'È una posizione forte e vale la pena tenerla. Chiediti pero: la ragione qui e Aristotele, cioe un autore con i suoi presupposti. Pomponazzi dimostra dove porta quel sistema. Non dimostra che il mondo sia fatto cosi — e la differenza e enorme.'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'E adesso la parte\nper cui il libro\ne davvero pericoloso.\n\nA Pomponazzi obiettano:\nse l\'anima muore,\nsalta tutta la morale.\nSenza paradiso e inferno,\nperche uno dovrebbe\ncomportarsi bene?\n\nLui risponde che e vero il contrario.\n\nChi fa il bene per avere\nun premio dopo la morte,\nscrive, non e virtuoso:\ne un mercenario,\nfa un calcolo, sta commerciando.\n\nChi si astiene dal male\nper paura di una pena\nnon e giusto: e spaventato.\n\nIl vero premio della virtu\ne la virtu stessa,\ne la vera pena del vizio\ne il vizio stesso.\n\nQuindi una morale\nsenza premi e senza castighi\nnon e piu debole.\n\nÈ piu esigente.',
+       parlato:'Costruisci l\'obiezione prima della risposta: e l\'obiezione che farebbero quasi tutti.\n\nPoi da\' la risposta di Pomponazzi e lasciala lavorare. Di solito la classe si divide, e la discussione e ottima.\n\nFai la domanda diretta, che e il cuore dell\'ora: fareste il bene se foste sicuri che non esiste nessun premio e nessuna punizione?\n\nNon far votare subito. Lascia parlare, e fai emergere le due posizioni.\n\nChi dice di sì sta dando ragione a Pomponazzi, e va fatto notare: sta dicendo che la propria morale non dipende da un contratto.\n\nChi dice di no dovrebbe accettarne la conseguenza, e conviene metterla per iscritto: sta dicendo che il proprio comportamento e una prestazione in cambio di qualcosa.\n\nPoi il passaggio di metodo, che vale oltre la lezione. L\'argomento di Pomponazzi ha una struttura precisa: prende l\'obiezione piu forte contro di se — senza immortalita crolla la morale — e mostra che, guardandola bene, va nella direzione opposta. Non e una difesa, e un rovesciamento.\n\nÈ la mossa argomentativa piu potente che esista, e vale la pena imparare a riconoscerla.',
+       seDicono:[
+         {loro:'«Ma tanta gente si comporta bene per paura dell\'inferno.»',
+          tu:'Certamente, ed e un fatto sociologico che Pomponazzi non nega. Anzi ammette che per la maggior parte delle persone le favole sui premi e le pene siano utili. Il suo punto non e che funzionino male: e che chi si comporta bene per quel motivo non stia facendo la cosa che crede di fare.'},
+         {loro:'«Allora chi crede è meno morale?»',
+          tu:'Non e questo. Il credente puo fare il bene perche e bene, e la promessa del premio essergli indifferente. L\'argomento colpisce solo chi fa il bene in vista del premio, credente o no. E la stessa obiezione varrebbe per chi si comporta bene solo per la reputazione.'}
+       ]},
+
+      {minuti:'28–38', et:'Il testo',
+       schermo:'Dal capitolo finale\ndel trattato, 1516.\n\nPomponazzi sostiene\nche coloro i quali affermano\nche l\'anima e mortale\nsalvano meglio\nla nozione di virtu\ndi quanti la dicono immortale.\n\nPerche la speranza di un premio\ne il timore di una pena\nintroducono nell\'animo\nqualcosa di servile,\nche e contrario\nalla lode della virtu.\n\nE aggiunge che il premio essenziale\ndella virtu\ne la virtu stessa,\nche rende l\'uomo felice;\n\nmentre nessun castigo\ne piu grande del vizio,\nperche nulla e piu miserabile\nne piu detestabile\ndell\'essere viziosi.\n\nÈ un professore cristiano\nche scrive questo\nin un libro dedicato\na un cardinale.',
+       testo:{fonte:'Pietro Pomponazzi, De immortalitate animae, cap. XIV (1516)',
+              glossa:'L\'argomento riprende una linea stoica e ne fa un\'obiezione alla morale del premio. Il libro fu bruciato pubblicamente a Venezia e Pomponazzi dovette pubblicare due scritti di chiarimento, ma continuò a insegnare a Bologna fino alla morte, protetto dalla propria fama e dall\'autonomia dello Studio.'},
+       parlato:'Leggi il passo e fermati sulla parola che regge tutto: servile. Chi agisce per un premio e in condizione servile, cioe non e libero — obbedisce a un padrone, foss\'anche un padrone che promette bene.\n\nPoi fai notare a chi e dedicato il libro: a un cardinale. Non e un opuscolo clandestino, e un trattato universitario pubblicato con tutte le forme.\n\nDomanda utile per la classe: perche allora fu bruciato?\n\nGuidali: non per l\'argomento morale, che nessuno confuto seriamente, ma per la tesi riassumibile in una riga — l\'anima e mortale. Le condanne colpiscono cio che si puo mettere in un titolo, non i ragionamenti.\n\nSe la classe regge, aggiungi la genealogia dell\'argomento, perche e utile e sorprendente. Duecentosettant\'anni dopo, Kant sosterra che un\'azione compiuta per il proprio interesse — anche l\'interesse a essere premiati in eterno — non ha valore morale, e che l\'unica azione morale e quella fatta per dovere. È la stessa struttura, con un\'altra architettura filosofica intorno.\n\nUn professore di Bologna, in un libro bruciato, aveva messo il dito nello stesso punto.',
+       seDicono:[
+         {loro:'«Se lo dedicava a un cardinale era furbo.»',
+          tu:'Era prudente, ed era anche normale: si dedicava a un protettore, e questo faceva parte del sistema. Ma la dedica non e servita a salvarlo dal rogo del libro. Da cui una regola: le protezioni funzionano contro chi ti vuole colpire di persona, non contro cio che hai scritto.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'E adesso guardate\ndove va a finire\nquesto modo di ragionare.\n\nPomponazzi insegnava a Padova\ne a Bologna, in universita\ndove Aristotele veniva studiato\ncome filosofo,\ncon problemi propri,\nnon come materiale\nper la teologia.\n\nIn quelle stesse aule si elaborava\nun metodo: si risale dai fenomeni\nalle cause, poi si torna indietro\nper controllare che tornino.\n\nA Padova, dal 1592 al 1610,\ninsegna un lettore di matematica\nche si chiama Galileo Galilei.\n\nLa sua formula famosa —\nesperienze sensate\ne necessarie dimostrazioni —\nha la stessa struttura.\n\nQuindi la scienza nuova\nnon nasce soltanto\ncontro le scuole aristoteliche.\n\nNasce anche dentro,\nda gente che aveva imparato\nli a distinguere\nfra cio che si dimostra\ne cio che si crede.',
+       parlato:'Presenta la tesi con la cautela che merita: e discussa fra gli storici, e ha argomenti seri a favore.\n\nIl racconto scolastico dice che la scienza nasce quando Galileo rovescia Aristotele. È vero sui contenuti — la fisica aristotelica viene demolita. È molto meno vero sul metodo e sull\'ambiente.\n\nFai vedere il nesso: l\'abitudine a chiedersi che cosa si dimostra e che cosa si crede, e a non confondere le due cose, e esattamente cio che Pomponazzi pratica in modo estremo. E il metodo padovano del regressus somiglia molto alla procedura che Galileo dichiarera.\n\nPoi la formulazione da portare a casa: le rotture intellettuali sono quasi sempre fatte da persone formate nella tradizione che rompono, e con strumenti che hanno imparato li. Chi annuncia di ricominciare da zero — Bacone e Cartesio lo faranno — sta segnalando una svolta, non descrivendo la propria cassetta degli attrezzi.\n\nE fai notare il rovesciamento sulla domanda iniziale: la doppia conclusione di Pomponazzi, che sembrava una scappatoia, e la separazione fra due tipi di discorso. Distinguere cio che si dimostra da cio che si crede e la condizione perche esista una scienza autonoma.\n\nQuella che sembrava vigliaccheria e la premessa di un metodo.',
+       seDicono:[
+         {loro:'«Ma Galileo combatteva gli aristotelici.»',
+          tu:'Combatteva i contenuti della loro fisica, e con ottime ragioni. Nel frattempo usava le loro categorie logiche, la loro idea di dimostrazione e la loro distinzione fra discipline. Si puo demolire una casa usando gli attrezzi trovati nel suo capanno.'},
+         {loro:'«Allora non c\'è mai stata una rivoluzione scientifica?»',
+          tu:'C\'e stata, e enorme. Il punto e un altro: non e piovuta dal cielo contro un Medioevo immobile. È cresciuta dentro istituzioni che avevano gia costruito parte degli strumenti, e questo la rende piu comprensibile — e piu interessante.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'Torniamo alla domanda.\n\nFaresti il bene\nse sapessi che non c\'e\nnessun premio?\n\nNon sto chiedendo\nse Dio esista.\n\nSto chiedendo\ncome sono fatte\nle vostre ragioni.\n\nSe la risposta e sì,\nallora la vostra morale\nnon dipende da un contratto,\ne Pomponazzi ha ragione:\nnon avete bisogno\ndi un premio per essere giusti.\n\nSe la risposta e no,\nvale la pena guardarla in faccia:\nsignifica che il vostro\ncomportarvi bene\ne uno scambio.\n\nNon c\'e una risposta giusta.\n\nC\'e una differenza\nfra chi se l\'e chiesto\ne chi no.',
+       parlato:'Rifai la conta iniziale sullo schieramento e commenta lo spostamento, che di solito e verso la seconda posizione.\n\nPoi chiudi con onesta sulla domanda finale: non e una domanda sulla religione ed e importante dirlo, perche altrimenti la classe si divide sulla cosa sbagliata. Un credente puo rispondere di sì senza difficolta, e un non credente puo scoprire di comportarsi bene per la reputazione, che e un premio anche quello.\n\nDa\' loro la struttura dell\'argomento come strumento, perche e la cosa che si portano via: Pomponazzi prende l\'obiezione piu forte contro la propria tesi e mostra che, guardata bene, sostiene la tesi. Riconoscere questa mossa, e saperla usare, vale piu di qualunque contenuto di questa lezione.\n\nUltima cosa, per il seguito. Abbiamo visto un uomo che tiene separato cio che dimostra da cio che crede, e che per questo viene bruciato in effigie e continua a insegnare. Nel secolo successivo qualcuno dira che di tutto cio che ci e stato tramandato non ci si puo fidare, e che bisogna ricominciare da capo cercando qualcosa che resista a ogni dubbio. Si chiamera Cartesio, e vedremo che cosa trova.',
+       seDicono:[
+         {loro:'«Nessuno lo sa davvero, cosa farebbe.»',
+          tu:'Questo e vero e onesto: non lo sappiamo finche non ci troviamo nella situazione. Ma qualcosa possiamo osservare gia adesso — che cosa facciamo quando siamo sicuri che nessuno lo verra mai a sapere. È il caso piu vicino a quello di cui parla Pomponazzi, ed e alla portata di tutti.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'Due modi di negare l\'immortalità',
+       corpo:'Gli aristotelici del Rinascimento si dividono in due scuole, che partono dallo stesso testo e arrivano allo stesso esito per strade opposte.\n\nGli averroisti sostengono che l\'intelletto sia unico per tutta l\'umanità: pensa in noi, ma non è nostro. Quando moriamo, resta l\'intelletto e non resta la persona.\n\nGli alessandristi sostengono che l\'anima sia forma del corpo e muoia con esso, come per gli animali.\n\nIn entrambi i casi ciò che non sopravvive è l\'individuo.',
+       chiedi:'Due teorie opposte che producono la stessa conseguenza pratica. Che cosa dice questo sul rapporto fra una dottrina e i suoi effetti? E come si sceglie fra due spiegazioni quando quello che ci interessa è la conclusione?'},
+      {titolo:'Perché a Padova',
+       corpo:'L\'università di Padova apparteneva alla Repubblica di Venezia, che difendeva gelosamente la propria giurisdizione contro le interferenze romane e considerava lo Studio una risorsa dello Stato.\n\nVi si insegnava filosofia aristotelica con notevole libertà, vi studiavano stranieri di ogni confessione — compresi protestanti, ammessi alla laurea con procedure apposite — e vi lavorarono Vesalio, Fabrici d\'Acquapendente, Harvey come studente, Galileo per diciotto anni.\n\nNon era tolleranza per principio: era una politica dello Stato.',
+       chiedi:'La libertà di ricerca nasce qui come effetto secondario di una rivalità politica fra Venezia e Roma. Che cosa succede a una libertà che dipende da un conflitto fra poteri? E che cosa la rende più solida?'},
+      {titolo:'Gli scettici tornano',
+       corpo:'Nel 1562 vengono pubblicate in latino le opere di Sesto Empirico, filosofo scettico del II secolo, praticamente sconosciute in Occidente per oltre mille anni.\n\nContengono argomenti costruiti per mostrare che ogni criterio di verità ne richiede un altro, che i sensi variano da individuo a individuo e da specie a specie, e che a ogni tesi si può opporre una tesi contraria di forza uguale.\n\nMontaigne li adotta e ne fa il proprio motto: che ne so io? Cartesio, due generazioni dopo, costruisce il dubbio metodico per trovare qualcosa che vi resista.',
+       chiedi:'La traduzione di un libro antico cambia la direzione della filosofia europea. Quanto di ciò che pensiamo dipende da quali testi sono disponibili? E che cosa non stiamo pensando, semplicemente perché non lo abbiamo mai letto?'}
+    ],
+    testi:[
+      {fonte:'Marsilio Ficino, Teologia platonica sull\'immortalità delle anime (1482)',
+       corpo:'Ficino sostiene che l\'anima umana occupa il grado intermedio della realtà, congiungendo le cose superiori e quelle inferiori, e che per questo può essere detta il nodo e il vincolo del mondo; e che proprio da questa posizione discende la sua immortalità.',
+       glossa:'Da leggere accanto a Pomponazzi, perché è la tesi opposta sostenuta negli stessi decenni: due professori, due filosofi antichi, due conclusioni contrarie sullo stesso problema. Serve a mostrare che il Rinascimento non ha una filosofia ma un conflitto di filosofie.'},
+      {fonte:'Jacopo Zabarella, De methodis (1578)',
+       corpo:'Zabarella distingue il procedimento che va dagli effetti noti alla causa ignota e quello che dalla causa risale agli effetti, e sostiene che la scienza naturale si compie unendo i due movimenti: prima si scopre la causa a partire dai fenomeni, poi si dimostrano i fenomeni a partire dalla causa.',
+       glossa:'È la formulazione più matura del metodo aristotelico padovano, e la sua struttura ricorda da vicino la procedura che Galileo dichiarerà. Da usare per discutere in classe che cosa significhi «continuità» nella storia delle idee: somiglianza di struttura non è prova di derivazione, ma va spiegata.'},
+      {fonte:'Michel de Montaigne, Saggi, II, 12 — Apologia di Raimondo Sebond',
+       corpo:'Montaigne raccoglie gli argomenti scettici sulla variabilità dei sensi e delle opinioni, osserva che ciò che è vero al di qua dei Pirenei è falso al di là, e adotta come proprio motto interrogativo la domanda su che cosa egli sappia davvero.',
+       glossa:'È il testo che porta lo scetticismo antico nella cultura europea moderna, e va letto sapendo che l\'autore lo usa per una conclusione precisa: se la ragione non conclude, conviene attenersi alle proprie tradizioni. Lo scetticismo può portare tanto alla ricerca quanto alla prudenza conservatrice.'}
+    ],
+    compito:'Mezza pagina, e va fatta con sincerità. Pensate a un vostro comportamento corretto che tenete in una situazione dove nessuno vi controlla e nessuno verrà mai a saperlo. Descrivetelo. Poi provate a rispondere: perché lo fate? Se trovate una ragione che non sia un premio, una punizione o il giudizio degli altri, scrivetela. Se non la trovate, scrivete anche questo — è una risposta come le altre.',
+    fonti:[
+      'P. Pomponazzi, De immortalitate animae (1516)',
+      'M. Ficino, Theologia platonica (1482); J. Zabarella, De methodis (1578)',
+      'M. de Montaigne, Essais, II, 12 (1580)',
+      'E. Garin, Storia della filosofia italiana; La cultura filosofica del Rinascimento italiano',
+      'C. B. Schmitt, Aristotele nel Rinascimento; J. H. Randall, La scuola di Padova e lo sviluppo della scienza moderna',
+      'R. Popkin, Storia dello scetticismo — sulla riscoperta di Sesto Empirico'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',
