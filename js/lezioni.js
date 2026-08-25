@@ -10862,6 +10862,223 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Filosofia moderna · 7 — Francesco Bacone': {
+  mappa: {
+    n:'Francesco Bacone', d:'chi progetta la scienza moderna senza saperla fare',
+    f:[
+      {r:'parte da', n:'Una vita doppia', d:'il piu alto magistrato d\'Inghilterra, e un uomo che scrive di scienza la sera',
+       f:[
+         {r:'diventa', n:'Lord cancelliere', d:'la carica giudiziaria piu alta del regno, sotto Giacomo I'},
+         {piu:true, r:'ed era stato', n:'Accusatore del proprio protettore', d:'aveva sostenuto l\'accusa contro il conte di Essex, che lo aveva aiutato: gli fu rinfacciato per tutta la vita'},
+         {r:'e nel 1621 cade per', n:'Corruzione', d:'accusato di aver accettato doni da parti in causa, confessa e viene destituito'},
+         {r:'si difende dicendo che', n:'I doni non avevano cambiato le sentenze', d:'e probabilmente e vero, e la pratica era diffusa: resta che confessa'},
+         {r:'ritirato, dedica gli ultimi anni al', n:'Grande progetto', d:'la Instauratio magna, in sei parti, di cui ne scrivera due',
+          f:[{piu:true, r:'perche riteneva che', n:'Il sapere andasse rifondato', d:'non corretto: bisogna ricominciare dalle fondamenta, e serve piu di una vita'}]}
+       ]},
+
+      {r:'comincia demolendo', n:'Gli idoli', d:'i pregiudizi che deformano ogni osservazione prima ancora che cominci',
+       f:[
+         {r:'della', n:'Specie', d:'la mente umana e uno specchio deformante: vede piu ordine di quanto ce ne sia',
+          f:[{r:'e nota', n:'Le conferme piu delle smentite', d:'un errore che la psicologia sperimentale ritrovera quattro secoli dopo'}]},
+         {r:'della', n:'Caverna', d:'ciascuno ha la propria: indole, educazione, letture, il maestro che ha avuto'},
+         {r:'del', n:'Foro', d:'le parole del linguaggio comune sono imprecise e imprigionano il pensiero',
+          f:[{piu:true, r:'e sono i piu difficili da togliere', n:'Perche si pensa con quelle parole', d:'non e come cambiare opinione: bisogna cambiare gli strumenti con cui si ragiona'}]},
+         {r:'del', n:'Teatro', d:'i sistemi filosofici ereditati, scambiati per rappresentazioni del mondo'},
+         {piu:true, r:'e propone di', n:'Fare l\'inventario degli errori', d:'prima di cercare la verita conviene catalogare i modi in cui si sbaglia'},
+         {r:'e la conclusione e che', n:'Non si osserva mai a mente vuota', d:'chi crede di guardare senza pregiudizi ha solo pregiudizi che non conosce'}
+       ]},
+
+      {r:'propone', n:'Un metodo nuovo', d:'e lo chiama nuovo strumento, contro quello di Aristotele',
+       f:[
+         {r:'rifiuta l\'induzione per', n:'Semplice enumerazione', d:'accumulare casi favorevoli non dimostra niente: basta un\'eccezione'},
+         {r:'costruisce tre', n:'Tavole', d:'i casi in cui il fenomeno c\'e, quelli in cui manca, quelli in cui varia di grado'},
+         {r:'e procede per', n:'Esclusione', d:'si eliminano le cause che compaiono dove il fenomeno manca'},
+         {r:'con particolare attenzione ai', n:'Casi negativi', d:'cercare dove la cosa non accade vale piu di mille conferme',
+          f:[{r:'ed e l\'intuizione', n:'Che resta valida', d:'la scienza progredisce cercando smentite, non conferme'}]},
+         {r:'e distingue le', n:'Istanze prerogative', d:'alcuni casi valgono piu di mille altri: e l\'idea dell\'esperimento decisivo'},
+         {r:'ammette conclusioni provvisorie', n:'Vendemmia prima', d:'ipotesi di lavoro dichiarate come tali, da correggere andando avanti'}
+       ]},
+
+      {r:'si colloca fra', n:'Due errori opposti', d:'e usa un\'immagine che si ricorda',
+       f:[
+         {r:'i dogmatici sono come', n:'Ragni', d:'tessono sistemi tirando fuori tutto da se stessi, senza guardare niente'},
+         {r:'gli empirici sono come', n:'Formiche', d:'accumulano materiali senza elaborarli, e restano seppelliti sotto i dati'},
+         {r:'il filosofo deve fare come l\'', n:'Ape', d:'raccoglie dai fiori e trasforma: raccolta ed elaborazione insieme'},
+         {piu:true, r:'e rimprovera ai dotti di', n:'Discutere invece di cercare', d:'l\'universita produce dispute raffinate e nessuna conoscenza nuova'},
+         {r:'e chiede una', n:'Storia naturale nuova', d:'raccolte di fatti su mestieri, minerali, venti: materiale grezzo per chi verra'},
+         {r:'critica sia Aristotele sia gli', n:'Alchimisti', d:'gli uni ragionano senza osservare, gli altri osservano senza capire'}
+       ]},
+
+      {r:'lega il sapere al', n:'Potere', d:'ed e la sua tesi piu citata e piu fraintesa',
+       f:[
+         {r:'scienza e potenza umana', n:'Coincidono', d:'chi ignora la causa non puo produrre l\'effetto'},
+         {r:'ma si comanda alla natura', n:'Solo obbedendole', d:'non si piega: si conoscono le sue leggi e le si usano'},
+         {r:'il fine e il', n:'Beneficio dell\'umanita', d:'non la gloria personale ne la disputa: migliorare le condizioni di vita'},
+         {r:'e cita tre invenzioni che hanno cambiato il mondo', n:'Stampa, polvere, bussola', d:'tutte e tre moderne, tutte e tre ignote agli antichi',
+          f:[{r:'per concluderne che', n:'I moderni possono superare gli antichi', d:'e l\'idea di progresso, che prima non esisteva come ovvieta'}]}
+       ]},
+
+      {r:'immagina', n:'La Nuova Atlantide', d:'e ci mette dentro piu di quanto sembri',
+       f:[
+         {r:'un\'isola con la', n:'Casa di Salomone', d:'un\'istituzione di ricerca finanziata, con laboratori, orti, officine'},
+         {r:'con il lavoro', n:'Diviso per compiti', d:'chi raccoglie notizie dall\'estero, chi sperimenta, chi ricava principi generali'},
+         {r:'e uno scopo dichiarato', n:'Conoscere le cause e allargare i confini del possibile', d:'per fare tutto cio che si puo fare'},
+         {r:'ma con una clausola', n:'Poco citata', d:'i ricercatori decidono quali scoperte rivelare allo Stato e quali tenere segrete',
+          f:[{piu:true, r:'e giurano', n:'Di mantenere il segreto', d:'il primo progetto di scienza organizzata contiene gia il problema di chi decide che cosa si puo sapere'}]},
+         {piu:true, r:'e nell\'isola si praticano', n:'Colture e allevamenti sperimentali', d:'piante fatte crescere fuori stagione, incroci fra specie: si progetta di modificare i viventi'},
+         {r:'l\'opera resta', n:'Incompiuta', d:'pubblicata dopo la morte, si interrompe a meta'}
+       ]},
+
+      {r:'ha', n:'Limiti pesanti', d:'e vanno detti tutti, perche il caso e piu interessante cosi',
+       f:[
+         {r:'non capisce la', n:'Matematica', d:'e la considera un ausilio della fisica, non il suo linguaggio'},
+         {r:'ignora', n:'Copernico e Galileo', d:'giudica il sistema eliocentrico un\'ipotesi non necessaria'},
+         {r:'non ha fatto', n:'Nessuna scoperta', d:'nessuna legge, nessun risultato sperimentale che si ricordi'},
+         {r:'e il suo metodo', n:'Non funziona come credeva', d:'l\'esclusione non isola la causa, perche i casi possibili sono infiniti'},
+         {r:'perche resta il', n:'Problema dell\'induzione', d:'nessun numero di osservazioni garantisce il caso successivo',
+          f:[{piu:true, r:'lo formulera', n:'Hume', d:'un secolo e mezzo dopo, e nessuno lo ha ancora risolto'}]}
+       ]},
+
+      {r:'lascia', n:'Un\'eredita che non e tecnica', d:'ed e questo a renderlo un caso da studiare',
+       f:[
+         {r:'la', n:'Royal Society lo prende a modello', d:'1660: i fondatori citano la Nuova Atlantide come progetto'},
+         {r:'l\'idea che la scienza sia', n:'Collettiva e cumulativa', d:'nessuno la fa da solo, e ogni generazione parte da dove ha lasciato la precedente'},
+         {r:'l\'idea che vada', n:'Finanziata e organizzata', d:'con istituzioni, stipendi, luoghi: non piu opera di privati facoltosi'},
+         {r:'l\'idea che serva a', n:'Cambiare le condizioni di vita', d:'e non solo a contemplare o a vincere dispute'},
+         {r:'e la scienza come', n:'Bene pubblico', d:'i risultati si pubblicano e si condividono: non sono proprieta di chi li trova'},
+         {r:'e l\'intuizione sui casi negativi', n:'Arriva fino al Novecento', d:'quando si dira che una teoria vale se e possibile smentirla'}
+       ]}
+    ],
+    incroci:[
+      {da:'Non si osserva mai a mente vuota', a:'Casi negativi', r:'e la ragione teorica per cui servono i',
+       perche:'Se la mente tende spontaneamente a notare le conferme, accumulare osservazioni favorevoli non prova nulla: si sta solo assecondando un difetto strutturale. Cercare deliberatamente dove la regola non vale e la contromisura, e nasce dall\'analisi dei pregiudizi, non da una preferenza metodologica.'},
+      {da:'Nessuna scoperta', a:'Royal Society lo prende a modello', r:'non impedisce che la',
+       perche:'Bacone non ha trovato una sola legge di natura, e i fondatori della prima grande istituzione scientifica moderna lo indicano come proprio ispiratore. Il suo contributo non e un risultato ma un\'idea di come vada organizzata l\'impresa: progettare e scoprire sono mestieri diversi, e servono entrambi.'},
+      {da:'Perche si pensa con quelle parole', a:'Matematica', r:'e anche la ragione per cui non capisce l\'importanza della',
+       perche:'Bacone denuncia con lucidita che il linguaggio comune imprigiona il pensiero, e non vede che la matematica e precisamente il linguaggio che permette di uscirne. Diagnostica il problema e non riconosce la soluzione che gli si stava costruendo accanto: e il limite di chi ragiona sul metodo senza praticare la ricerca.'},
+      {da:'Di mantenere il segreto', a:'Beneficio dell\'umanita', r:'e in tensione con il fine dichiarato del',
+       perche:'La Casa di Salomone esiste per migliorare la vita degli uomini e i suoi membri giurano di tenere nascoste alcune scoperte, decidendo da soli quali. Il primo progetto di scienza organizzata contiene gia il conflitto fra apertura della conoscenza e controllo: e non e un\'incoerenza distratta, e scritto.'},
+      {da:'Stampa, polvere, bussola', a:'I moderni possono superare gli antichi', r:'sono l\'argomento con cui si sostiene che',
+       perche:'Le tre invenzioni che avevano cambiato il mondo erano tutte recenti e sconosciute agli antichi. È una prova di fatto contro l\'idea che il sapere fosse gia stato raggiunto e andasse solo recuperato — e da questo argomento nasce l\'idea di progresso come nozione ordinaria.'},
+      {da:'Ape', a:'Non funziona come credeva', r:'e un\'immagine giusta di un metodo che',
+       perche:'La formula — raccogliere ed elaborare — descrive bene che cosa faccia la scienza. Il procedimento concreto che Bacone propone per farlo, le tavole e l\'esclusione, non regge: le cause possibili sono troppe per essere eliminate una a una. Un\'intuizione corretta puo accompagnarsi a una procedura sbagliata.'},
+      {da:'Solo obbedendole', a:'Alchimisti', r:'e la formula che lo separa dagli',
+       perche:'L\'alchimista vuole piegare la natura con formule e operazioni segrete; Bacone dice che alla natura si comanda soltanto conoscendone le leggi e rispettandole. È la differenza fra magia e tecnica, e passa esattamente su questo punto — non sull\'ambizione di intervenire, che e la stessa.'},
+      {da:'Problema dell\'induzione', a:'Arriva fino al Novecento', r:'e la difficolta che rende decisiva l\'intuizione che',
+       perche:'Se nessun numero di conferme garantisce il caso successivo, la ricerca di conferme non e la via. Resta l\'altra strada, quella dei casi negativi: una teoria non si dimostra, si espone al rischio di essere smentita. Il problema che Hume solleva rende preziosa proprio la parte di Bacone che sembrava marginale.'},
+      {da:'Corruzione', a:'Grande progetto', r:'e cio che gli lascia il tempo per il',
+       perche:'La destituzione del 1621 chiude una carriera politica e apre cinque anni di scrittura ininterrotta: la parte piu importante della sua opera nasce dopo la caduta. Non e una consolazione — e un fatto che ricorre, e che vale la pena notare quando si giudicano le vite dall\'esterno.'},
+      {da:'Collettiva e cumulativa', a:'Diviso per compiti', r:'ha bisogno di un lavoro',
+       perche:'Se la conoscenza si accumula e nessuno puo farla da solo, servono ruoli distinti: chi raccoglie dati, chi sperimenta, chi generalizza. Bacone descrive nel 1627 la struttura di un laboratorio moderno, molto prima che ne esista uno — ed e la parte del suo progetto che si e realizzata piu alla lettera.'},
+      {da:'Semplice enumerazione', a:'Le conferme piu delle smentite', r:'e il metodo che asseconda la tendenza a notare',
+       perche:'Contare i casi favorevoli sembra prudente ed e il modo piu efficace di confermare qualunque cosa si creda gia. Bacone collega esplicitamente il difetto della mente e il difetto del metodo: e questo collegamento a rendere la sua analisi qualcosa di piu di un elenco di consigli.'},
+      {da:'Copernico e Galileo', a:'Vendemmia prima', r:'vengono ignorati nonostante lui stesso ammetta la',
+       perche:'Bacone giudica l\'eliocentrismo un\'ipotesi non necessaria e preferisce raccogliere ancora dati. È prudenza portata al punto di perdere la scoperta piu importante del proprio tempo: la stessa cautela che protegge dagli errori puo impedire di riconoscere una verita quando arriva.'},
+      {da:'Il sapere andasse rifondato', a:'Teatro', r:'discende dalla diagnosi sugli idoli del',
+       perche:'Se i sistemi filosofici ereditati sono rappresentazioni sceniche scambiate per il mondo, non basta correggerli: bisogna smontarli. La pretesa di ricominciare dalle fondamenta non e presunzione personale, e la conseguenza di una diagnosi — ed e la stessa mossa che Cartesio fara pochi anni dopo, per altre ragioni.'}
+    ]
+  },
+  provocazione: {
+    titolo:'Fondare una cosa che non si sa fare',
+    durata:'55 minuti',
+    domandaMadre:'Si puo fondare qualcosa che non si sa fare?',
+    perche:'Francesco Bacone e considerato uno dei fondatori della scienza moderna e non ha fatto una sola scoperta: non capiva la matematica, giudico l\'eliocentrismo un\'ipotesi non necessaria mentre Galileo pubblicava, e il metodo che propose non funziona come lui credeva. Eppure i fondatori della Royal Society lo indicarono come proprio modello. La classe deve capire che il suo contributo non e tecnico ma organizzativo e ideologico — ha convinto l\'Europa che la conoscenza dovesse essere collettiva, cumulativa, finanziata e rivolta a migliorare la vita, e nessuna di queste cose era ovvia. E deve trovare, nel suo progetto, la clausola inquietante che quasi nessuno cita.',
+    occorrente:'Niente.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'Francesco Bacone e considerato\nuno dei fondatori\ndella scienza moderna.\n\nAdesso l\'elenco\ndi quello che non ha fatto.\n\nNon ha scoperto nessuna legge.\nNon ha fatto nessun esperimento\nche si ricordi.\n\nNon capiva la matematica,\ne la considerava un ausilio\ndella fisica, non il suo linguaggio.\n\nMentre Galileo pubblicava\nle proprie osservazioni,\nlui giudico il sistema copernicano\nun\'ipotesi non necessaria.\n\nE il metodo che propose\nper scoprire le cause\nnon funziona:\nglielo dimostreranno,\ne oggi nessuno lo usa.\n\nQuarant\'anni dopo la sua morte,\ni fondatori della prima grande\nistituzione scientifica d\'Europa\nlo indicano come\nil proprio modello.',
+       parlato:'Dai l\'elenco delle mancanze una per una, senza fretta: l\'effetto e cumulativo e deve sembrare demolitorio.\n\nPoi la frase finale, e lascia il silenzio.\n\nDomanda dell\'ora: com\'e possibile?\n\nRaccogli le prime ipotesi. Di solito arriva «era famoso e potente», che e in parte vero e non basta: era caduto in disgrazia, condannato per corruzione, e mori quasi dimenticato dalla politica.\n\nSe serve una spinta, aggiungi il dettaglio biografico: era stato lord cancelliere, la piu alta carica giudiziaria del regno, ed era stato destituito dopo aver confessato di aver accettato doni da parti in causa. La sua opera maggiore la scrive dopo, da uomo finito.',
+       seDicono:[
+         {loro:'«Sarà stato bravo a scrivere.»',
+          tu:'Scriveva benissimo, ed e uno degli autori inglesi piu eleganti del Seicento. Ma di gente che scrive bene ce n\'e sempre stata, e non fonda istituzioni. Serve qualcosa di piu, e alla fine dell\'ora avremo capito che cosa.'},
+         {loro:'«Forse gli altri lo hanno usato come bandiera.»',
+          tu:'È un\'ottima ipotesi e in parte e vera: serviva un\'autorita rispettabile a cui appoggiarsi. Ma bisogna spiegare perche proprio lui e non un altro. Che cosa aveva scritto, che rendesse comodo citarlo?'}
+       ]},
+
+      {minuti:'8–17', et:'Lo schieramento',
+       schermo:'Chi non sa fare una cosa\ne ne descrive il metodo:',
+       opzioni:['non ha titolo per parlarne', 'sta facendo un altro mestiere, altrettanto necessario'],
+       parlato:'Fai schierare e conta. La prima opzione prende molti voti, e ha argomenti seri.\n\nPoi metti alla prova con esempi che spostano la questione fuori dalla scienza.\n\nChiedi: un allenatore deve saper giocare meglio dei propri giocatori? Un critico letterario deve saper scrivere romanzi? Chi progetta un ospedale deve saper operare?\n\nEmerge quasi sempre la distinzione giusta: ci sono competenze di primo grado — saper fare — e competenze di secondo grado — capire come si fa, come si organizza, che cosa serve.\n\nPoi rimetti la domanda difficile, perche il primo gruppo ha un punto: come fa uno a descrivere bene un metodo se non l\'ha mai praticato?\n\nRisposta onesta: spesso non ci riesce, e infatti il metodo concreto di Bacone e sbagliato. Ma sull\'organizzazione dell\'impresa e sulle sue finalita ci vede meglio di chi era dentro il laboratorio.\n\nDa qui il criterio: chi guarda da fuori vede peggio i dettagli e meglio la struttura.',
+       seDicono:[
+         {loro:'«Ma il suo metodo era sbagliato, quindi ha fallito.»',
+          tu:'Sul metodo si, e non lo nascondiamo. La domanda e se il metodo fosse tutto quello che aveva da dare. Fra venti minuti guardiamo che cos\'altro c\'era, e vedrete che e la parte che ha funzionato.'},
+         {loro:'«Un allenatore però ha giocato.»',
+          tu:'Molti sì, alcuni no, e fra i migliori ci sono entrambi i casi. Il punto e che l\'aver giocato non basta e non e nemmeno indispensabile: servono cose diverse — vedere l\'insieme, organizzare, capire che cosa manca. Sono capacita che si possono avere senza saper fare la cosa.'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'Che cosa aveva capito davvero.\n\nPrimo: che nessuno osserva\na mente vuota.\n\nDescrive quattro tipi\ndi pregiudizio,\ne il primo riguarda\ntutti gli esseri umani:\n\nla mente tende a vedere\npiu ordine di quanto ce ne sia,\ne a contare le conferme\nmolto piu delle smentite.\n\nQuattro secoli dopo\nla psicologia sperimentale\nritrovera esattamente questo,\ne gli dara un nome.\n\nSecondo: che da questo difetto\nsegue un criterio di metodo.\n\nSe la nostra mente cerca conferme,\naccumulare casi favorevoli\nnon prova niente:\nstiamo solo assecondando\nun difetto.\n\nQuindi bisogna cercare\ndeliberatamente\ni casi in cui la regola\nnon funziona.',
+       parlato:'Presenta i quattro idoli velocemente e poi fermati sul primo, che e quello che regge tutto.\n\nFai fare l\'esperienza, perche funziona: chiedi loro di pensare a una convinzione che hanno su una persona. Poi chiedi quante volte, nell\'ultimo mese, hanno notato qualcosa che la confermava — e quante volte qualcosa che la smentiva.\n\nQuasi sempre la seconda risposta e «non ci ho fatto caso».\n\nPoi il passaggio decisivo: Bacone non si limita a lamentarsi del pregiudizio. Ne ricava una regola operativa — se la mente cerca conferme, il metodo deve cercare smentite.\n\nQuesto e il collegamento che rende la sua analisi qualcosa di piu di una raccolta di consigli: il difetto della mente e il difetto del metodo sono lo stesso problema, e la cura e la stessa.\n\nE fai notare che e l\'unica parte del suo metodo sopravvissuta. Le tavole e l\'esclusione non le usa piu nessuno; l\'idea che una teoria vada messa alla prova cercando dove potrebbe fallire e diventata il cuore della scienza.',
+       seDicono:[
+         {loro:'«Ma cercare smentite non è comodo.»',
+          tu:'È scomodissimo, ed e il motivo per cui non viene naturale. Nessuno si sveglia la mattina cercando prove che la propria idea sia sbagliata. Per questo serve un metodo: e una procedura che ti obbliga a fare cio che spontaneamente non faresti.'},
+         {loro:'«Come si fa a togliersi i pregiudizi?»',
+          tu:'Non ci si riesce del tutto, e Bacone lo sa: dice che si possono conoscere e tenere sotto controllo, non eliminare. Il piu difficile e il terzo, quello del linguaggio, perche pensi con le stesse parole che dovresti correggere. Non e come cambiare opinione: e cambiare gli strumenti mentre li usi.'}
+       ]},
+
+      {minuti:'28–38', et:'Il testo',
+       schermo:'Dal Nuovo Organo, 1620.\n\nBacone descrive tre modi\ndi lavorare.\n\nQuelli che si sono occupati\ndelle scienze, dice,\nsono stati o empirici o dogmatici.\n\nGli empirici, come le formiche,\nsi limitano ad accumulare\ne a consumare cio che raccolgono.\n\nI razionalisti, come i ragni,\ntessono le loro tele\ntraendo tutto da se stessi.\n\nMa l\'ape sta nel mezzo:\nraccoglie la materia\ndai fiori dei giardini e dei campi,\ne poi la trasforma\ne la digerisce\ncon una capacita propria.\n\nCosi dovrebbe fare\nchi si occupa di filosofia:\nne fidarsi solo\ndelle forze della propria mente,\nne accumulare senza elaborare.',
+       testo:{fonte:'Francis Bacon, Novum Organum, libro I, aforisma 95 (1620)',
+              glossa:'L\'immagine dell\'ape è la formulazione più chiara del programma: né deduzione pura né raccolta cieca di dati, ma un\'alternanza fra osservazione ed elaborazione. Descrive bene ciò che la scienza fa davvero. Il procedimento concreto che Bacone propone per realizzarla — le tavole e l\'esclusione delle cause — non regge invece alla prova, e nessuno lo ha mai usato con successo.'},
+       parlato:'Leggi il passo e fai riconoscere le tre figure: sono facili da ricordare, ed e un vantaggio didattico non piccolo.\n\nPoi la domanda utile: le tre figure descrivono ancora qualcosa?\n\nFalli lavorare su esempi loro. Il ragno e chi ha una teoria su tutto e non guarda mai i dati. La formica e chi accumula informazioni senza ricavarne niente — ed e una condizione molto contemporanea, con la quantita di dati disponibile. L\'ape e la posizione difficile: raccogliere e trasformare.\n\nPoi la parte onesta, che va detta subito dopo: l\'immagine e giusta e il procedimento che Bacone propone per realizzarla non funziona.\n\nLe sue tavole prevedono di elencare tutti i casi in cui un fenomeno compare, tutti quelli in cui manca, e di eliminare per esclusione le cause impossibili. Il problema e che le cause possibili sono infinite: non si finisce mai di escludere.\n\nQuindi: aveva ragione sul che cosa fare, e torto sul come.\n\nDomanda per la classe: quanto vale un\'indicazione giusta senza una procedura che la realizzi?',
+       seDicono:[
+         {loro:'«Se il come non funziona, non serve a niente.»',
+          tu:'Serve a chi verra dopo. Un obiettivo formulato bene e un problema definito bene: chi arriva dopo sa che cosa deve costruire. Non e poco, ed e quasi sempre cosi che funzionano le rivoluzioni intellettuali — qualcuno pone il problema, qualcun altro lo risolve.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'La Nuova Atlantide, 1627.\n\nUn\'isola nel Pacifico\ndove esiste un\'istituzione\nchiamata Casa di Salomone.\n\nÈ un centro di ricerca\nfinanziato dallo Stato:\nlaboratori, orti botanici,\nofficine, forni, vasche.\n\nGli studiosi sono divisi\nper compiti: chi raccoglie\nnotizie dall\'estero,\nchi ripete gli esperimenti altrui,\nchi ne progetta di nuovi,\nchi ricava principi generali.\n\nÈ la descrizione di un laboratorio\nmoderno, scritta\ntrecentocinquant\'anni prima\nche ne esistesse uno.\n\nE poi c\'e una frase\nche quasi nessuno cita.\n\nI membri della Casa\ntengono consiglio\nper decidere quali scoperte\nrendere pubbliche\ne quali tenere segrete,\nanche allo Stato.\n\nE su questo\nprestano giuramento.',
+       parlato:'Costruisci prima l\'ammirazione per l\'anticipazione — e davvero notevole — e poi la clausola.\n\nLascia che pesi. Nel primo progetto di scienza organizzata della storia c\'e gia scritto che i ricercatori decidono da soli che cosa il potere politico puo sapere.\n\nDomanda dell\'ora: perche Bacone ce l\'ha messa?\n\nRaccogli le ipotesi. Le due migliori sono: perche alcune conoscenze sono pericolose e vanno protette da chi potrebbe usarle male; e perche chi produce sapere vuole controllarlo, e non fidarsi di chi lo finanzia.\n\nPoi fai notare che il problema non e mai stato risolto, e nominare i casi concreti senza fare la predica: la ricerca militare, i brevetti, le pubblicazioni sui virus, gli algoritmi proprietari. In tutti questi casi qualcuno decide che cosa si puo sapere, ed e la stessa questione posta nel 1627.\n\nE aggiungi la tensione interna, che e la parte filosoficamente interessante: la Casa di Salomone esiste per il beneficio dell\'umanita, e tiene nascoste cose all\'umanita. Bacone non se ne accorge, oppure ritiene che le due cose stiano insieme.\n\nDomanda finale del blocco: possono stare insieme?',
+       seDicono:[
+         {loro:'«Alcune cose è meglio non renderle pubbliche.»',
+          tu:'Molti lo sostengono, ed e una posizione seria. La domanda successiva pero e sempre la stessa: chi decide? Nel testo decidono gli scienziati, per giuramento, senza rendere conto a nessuno. Se non ti convince, devi dire chi dovrebbe decidere al posto loro — e ogni risposta ha i suoi problemi.'},
+         {loro:'«Allora la scienza non è aperta come dice.»',
+          tu:'È aperta piu di quasi ogni altra impresa umana, e non completamente. Il punto interessante e che la tensione c\'e fin dall\'atto di fondazione, scritta nero su bianco. Non e una degenerazione recente: e nel progetto originale.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'Torniamo alla domanda.\n\nSi puo fondare qualcosa\nche non si sa fare?\n\nBacone non ha scoperto niente\ne ha convinto l\'Europa\ndi quattro cose\nche prima non erano ovvie:\n\nche la conoscenza si accumula,\ne ogni generazione parte\nda dove ha lasciato la precedente;\n\nche nessuno la fa da solo,\ne serve un\'istituzione;\n\nche va finanziata,\ncome si finanzia un esercito;\n\ne che serve a cambiare\nle condizioni di vita,\nnon solo a capire.\n\nNessuna di queste\nera scontata nel 1620.\n\nTutte e quattro\nsono oggi cosi ovvie\nche non le notiamo.\n\nUltima cosa, e non e un aneddoto.\n\nMori di polmonite\nnel 1626,\npresa mentre riempiva\ndi neve un pollo\nper vedere\nse il freddo conservasse la carne.\n\nStava facendo un esperimento.',
+       parlato:'Riepiloga le quattro idee e insisti sul fatto che oggi sono invisibili proprio perche hanno vinto: le cose davvero riuscite diventano sfondo e smettono di sembrare scelte.\n\nÈ un criterio utile e generale — per capire il contributo di qualcuno, chiediti che cosa era discutibile allora e non lo e piu.\n\nPoi la morte, che va raccontata alla fine e senza enfasi. La tradizione dice che si fermo in carrozza in una giornata di neve, compro un pollo, lo fece svuotare e lo riempi di neve per verificare se il freddo ne rallentasse la putrefazione. Prese freddo e mori pochi giorni dopo.\n\nL\'uomo che non aveva mai fatto esperimenti muore per averne fatto uno.\n\nNon serve commentarlo. Ma vale la pena aggiungere una cosa sola: l\'esperimento, per inciso, funzionava. Il freddo conserva la carne.\n\nChiudi con quello che apre il seguito: abbiamo visto un uomo che vuole rifondare il sapere partendo dai fatti e dai pregiudizi da togliere. Quasi negli stessi anni, in Francia, un altro decide di rifondarlo partendo dall\'altra parte — non dai fatti ma dal dubbio, e non dal mondo ma da se stesso. La prossima volta vediamo Galileo, e poi arriveremo a lui.',
+       seDicono:[
+         {loro:'«Quindi conta più chi organizza di chi scopre?»',
+          tu:'Contano cose diverse e servono entrambe. Senza Galileo e Newton non ci sarebbe stata nessuna scienza da organizzare; senza l\'idea che andasse organizzata, quelle scoperte sarebbero rimaste imprese di singoli. Il caso di Bacone serve a vedere che esiste il secondo mestiere, non a dire che sia superiore.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'La caduta',
+       corpo:'Nel 1621 Bacone, lord cancelliere, è accusato di aver accettato doni da persone coinvolte in cause su cui doveva giudicare. Confessa, viene destituito, multato e brevemente imprigionato.\n\nNella sua difesa sostiene che i doni non avevano influenzato le sentenze — e in alcuni casi aveva deciso contro chi lo aveva omaggiato — e che la pratica era diffusa fra i magistrati del tempo.\n\nRitirato dalla vita pubblica, nei cinque anni successivi scrive la parte più importante della propria opera.',
+       chiedi:'Un giudice accetta regali e sostiene di aver giudicato lo stesso secondo giustizia. Basta, questo, a discolparlo? E che cosa rende inaccettabile un dono a chi deve decidere, anche quando non cambia la decisione?'},
+      {titolo:'Tre cose che gli antichi non avevano',
+       corpo:'Bacone osserva che tre invenzioni avevano cambiato la faccia del mondo: la stampa, la polvere da sparo e la bussola. Nessuna era nota agli antichi, nessuna era stata prevista da alcuna filosofia, e tutte erano state trovate quasi per caso.\n\nNe ricava che il sapere degli antichi non era completo, che i moderni possono superarli, e che il progresso non è un\'illusione ma un fatto verificabile.\n\nL\'argomento ebbe enorme fortuna e fu ripreso per due secoli.',
+       chiedi:'Un\'idea generale — che si possa progredire — viene sostenuta con tre esempi concreti invece che con un ragionamento. Perché funziona meglio? E che cosa rende convincente un esempio più di una dimostrazione?'},
+      {titolo:'Il pollo',
+       corpo:'Nel marzo del 1626, secondo il racconto di un contemporaneo, Bacone viaggiava in carrozza in una giornata di neve e gli venne l\'idea di verificare se il freddo potesse conservare la carne. Si fermò, comprò un pollo, lo fece svuotare e lo riempì di neve con le proprie mani.\n\nPrese freddo, si aggravò e morì pochi giorni dopo, a sessantacinque anni.\n\nL\'ipotesi era corretta: il freddo rallenta la decomposizione.',
+       chiedi:'L\'uomo che aveva progettato il metodo sperimentale senza praticarlo muore per aver fatto un esperimento. Al di là della coincidenza, che cosa dice questo episodio sul rapporto fra il pensare e il fare? E che cosa serve, oltre a un\'idea, perché qualcuno si fermi davvero in mezzo alla neve?'}
+    ],
+    testi:[
+      {fonte:'Francis Bacon, Novum Organum, libro I, aforismi 45-46 — l\'idolo della specie',
+       corpo:'Bacone afferma che l\'intelletto umano suppone nelle cose un ordine e una regolarità maggiori di quelli che vi trova; e che quando una tesi è stata accolta, l\'intelletto tira tutto il resto a confermarla, e benché si trovino più casi contrari, li trascura o li disprezza, per mantenere intatta l\'autorità della propria prima conclusione.',
+       glossa:'È la descrizione di ciò che la psicologia contemporanea chiama bias di conferma, formulata nel 1620 senza esperimenti, per sola osservazione del comportamento umano. Da usare in classe per mostrare che una buona analisi introspettiva può anticipare di secoli un risultato sperimentale — e che questo non la rende una prova.'},
+      {fonte:'Francis Bacon, Nuova Atlantide (1627) — lo scopo della Casa di Salomone',
+       corpo:'Il testo dichiara che il fine di quella istituzione è la conoscenza delle cause e dei movimenti segreti delle cose, e l\'allargamento dei confini del dominio umano fino a realizzare tutto ciò che è possibile.',
+       glossa:'La formula «tutto ciò che è possibile» è priva di limiti dichiarati, e va letta accanto alla clausola sul segreto contenuta poche righe dopo. Il primo progetto di ricerca organizzata contiene insieme l\'ambizione illimitata e il problema di chi la controlli: entrambe le cose sono arrivate fino a noi.'},
+      {fonte:'Francis Bacon, Novum Organum, libro I, aforisma 129 — le tre invenzioni',
+       corpo:'Bacone osserva che la stampa, la polvere da sparo e la bussola hanno mutato l\'aspetto e lo stato delle cose in tutto il mondo — nelle lettere, nella guerra e nella navigazione — e che nessun impero, nessuna setta e nessuna stella sembrano aver esercitato sulle vicende umane un potere maggiore di queste scoperte meccaniche.',
+       glossa:'È l\'argomento di fatto contro l\'autorità degli antichi: tre invenzioni ignote a Greci e Romani hanno cambiato il mondo più di qualunque impero. Vale la pena notare che Bacone attribuisce alle «scoperte meccaniche» un peso storico maggiore che alla politica — un\'idea che nel 1620 era del tutto nuova.'}
+    ],
+    compito:'Mezza pagina. Individuate una vostra convinzione su una persona, su un gruppo o su una materia scolastica. Poi, per tre giorni, annotate due colonne: i fatti che la confermano e i fatti che la smentiscono. Alla fine scrivete quale delle due colonne è più lunga, e — più importante — quale delle due avete notato più facilmente. Non è un esercizio per farvi cambiare idea: è per misurare il primo idolo di Bacone su voi stessi.',
+    fonti:[
+      'F. Bacon, Novum Organum (1620); Nuova Atlantide (1627); Saggi',
+      'Atti del processo per corruzione contro Bacon (1621)',
+      'P. Rossi, Francesco Bacone. Dalla magia alla scienza',
+      'B. Vickers (a cura di), Francis Bacon and the Rhetoric of Nature',
+      'C. Webster, La grande instaurazione — sull\'eredità baconiana e la Royal Society',
+      'S. Shapin, La rivoluzione scientifica'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',
