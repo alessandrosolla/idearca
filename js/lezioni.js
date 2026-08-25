@@ -13750,6 +13750,230 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Filosofia moderna · 27 — Hegel: i fondamenti del sistema': {
+  mappa: {
+    n:'Hegel · i fondamenti', d:'la contraddizione non e un errore da evitare: e cio che fa muovere il pensiero',
+    f:[
+      {r:'ha una', n:'Vita ordinata', d:'la piu regolare e la meno romantica di tutta la sua generazione',
+       f:[
+         {r:'nasce nel 1770 a', n:'Stoccarda', d:'figlio di un funzionario delle finanze: nessuna vocazione precoce, nessun prodigio'},
+         {r:'studia a Tubinga con', n:'Schelling e Holderlin', d:'e i professori nella sua pagella lo giudicano diligente in teologia e debole in filosofia'},
+         {r:'fa il', n:'Precettore', d:'a Berna e a Francoforte per sette anni: in case altrui, senza pubblicare niente'},
+         {r:'arriva a Jena nel 1801 come', n:'Docente non pagato', d:'chiamato da Schelling, che ha cinque anni meno di lui ed e gia celebre'},
+         {r:'finisce la Fenomenologia mentre', n:'Napoleone entra a Jena', d:'consegna il manoscritto mentre la citta brucia e l\'esercito prussiano si sfalda'},
+         {r:'poi dirige un', n:'Giornale', d:'a Bamberga, e per otto anni fa il preside di liceo a Norimberga'},
+         {r:'e ottiene la cattedra a', n:'Berlino', d:'solo nel 1818, a quarantotto anni: da li domina la filosofia tedesca per tredici anni'},
+         {r:'muore nel', n:'1831', d:'durante l\'epidemia di colera, anche se la diagnosi e discussa ancora oggi',
+          f:[{piu:true, r:'avendo pubblicato il primo libro a', n:'Trentasette anni', d:'e quattro libri in tutto: il resto sono corsi ricostruiti dagli appunti degli studenti'}]}
+       ]},
+
+      {r:'parte da un attacco al', n:'Limite kantiano', d:'e l\'obiezione e piu semplice di quanto sembri',
+       f:[
+         {r:'Kant aveva stabilito che non conosciamo le', n:'Cose in se', d:'solo i fenomeni, cioe le cose come appaiono alle nostre condizioni'},
+         {r:'Hegel obietta che per porre un limite bisogna gia essere', n:'Oltre', d:'sapere che c\'e un al di la significa averlo in qualche modo raggiunto'},
+         {r:'e che un confine che si riesce a nominare non e piu un', n:'Confine', d:'e una distinzione interna a cio che si conosce'},
+         {r:'con un\'immagine sarcastica sul voler', n:'Esaminare lo strumento prima di usarlo', d:'come chi volesse imparare a nuotare senza entrare in acqua'},
+         {r:'quindi la cosa in se va', n:'Eliminata', d:'non c\'e un secondo mondo dietro: cio che appare, sviluppato fino in fondo, e cio che e',
+          f:[{piu:true, r:'mossa che gli costa l\'accusa di', n:'Tracotanza', d:'aver tolto il limite che Kant aveva messo per prudenza: e l\'obiezione che la filosofia successiva gli ripetera per due secoli'}]}
+       ]},
+
+      {r:'e afferma che il', n:'Vero e l\'intero', d:'una frase che cambia il modo di valutare qualunque affermazione',
+       f:[
+         {r:'nessuna proposizione presa da sola e', n:'Completamente vera', d:'perche ogni affermazione tace cio che presuppone e cio che esclude'},
+         {r:'una verita parziale, presentata come intera, diventa', n:'Falsa', d:'non perche dica il falso, ma perche pretende di bastare'},
+         {r:'e il vero non e un risultato ma il risultato insieme al suo', n:'Percorso', d:'una conclusione senza le ragioni che l\'hanno prodotta e un\'opinione fortunata'},
+         {r:'per cui la sostanza va concepita come', n:'Soggetto', d:'non come cio che sta sotto e permane, ma come cio che si muove e si produce'},
+         {r:'e contro Schelling: all\'assoluto non si arriva con un', n:'Colpo di pistola', d:'non basta un\'intuizione fulminante da cui tutto dovrebbe seguire'},
+         {r:'ma con la', n:'Fatica del concetto', d:'il lavoro lungo, paziente e negativo che va fatto passo per passo e che nessuno puo fare al posto tuo'}
+       ]},
+
+      {r:'il metodo ha', n:'Tre momenti', d:'e non si chiamano come tutti credono',
+       f:[
+         {r:'non e', n:'Tesi, antitesi, sintesi', d:'la formula e di Fichte, diffusa da un manuale dell\'Ottocento: Hegel non la usa praticamente mai'},
+         {r:'il primo momento e quello dell\'', n:'Intelletto', d:'fissa una determinazione, la distingue dalle altre, la tiene ferma: e indispensabile e non basta'},
+         {r:'il secondo e quello', n:'Dialettico', d:'la determinazione fissata, spinta fino in fondo, si rovescia nel proprio opposto'},
+         {r:'il terzo e quello', n:'Speculativo', d:'coglie l\'unita delle determinazioni opposte, cioe cio che rende necessarie entrambe'},
+         {r:'e il movimento non lo mette il filosofo: e la cosa che si', n:'Muove da sola', d:'il compito e seguirla senza aggiungere niente, e non gli si credera mai fino in fondo',
+          f:[{piu:true, r:'da cui la sua parola per il metodo,', n:'Guardare', d:'sostiene di limitarsi a osservare cio che il concetto fa da se: chi lo legge sospetta che lo stia guidando'}]}
+       ]},
+
+      {r:'e ruota attorno a una parola sola,', n:'Aufheben', d:'che in tedesco significa tre cose insieme e in italiano nessuna',
+       f:[
+         {r:'significa', n:'Togliere', d:'cio che viene superato smette di valere cosi come era'},
+         {r:'significa anche', n:'Conservare', d:'non viene buttato: resta dentro cio che segue come una parte'},
+         {r:'e significa', n:'Sollevare', d:'portare a un livello in cui quel contenuto vale ancora, ma diversamente'},
+         {r:'e si regge sulla', n:'Negazione determinata', d:'negare qualcosa di preciso non produce il vuoto ma un risultato preciso'},
+         {r:'perche dal', n:'Nulla astratto', d:'non viene niente: chi si limita a dire che una cosa e sbagliata non ha ancora detto nulla'},
+         {piu:true, r:'per cui la storia della filosofia non e un', n:'Cimitero di errori', d:'ogni posizione ha visto qualcosa che dalla propria posizione poteva vedere: studiarla non significa studiare gente che si sbagliava'},
+         {r:'e cio che e stato superato resta come', n:'Momento', d:'non e un errore da dimenticare: e una tappa senza la quale il risultato non sarebbe quello che e',
+          f:[{piu:true, r:'con una conseguenza scomoda: nessuna posizione viene mai davvero', n:'Confutata', d:'ogni tesi diventa un momento parziale del vero, e questo rende il sistema difficilissimo da attaccare dall\'esterno'}]}
+       ]},
+
+      {r:'e contiene la frase su', n:'Razionale e reale', d:'la piu citata e la piu fraintesa che abbia scritto',
+       f:[
+         {r:'nel 1820 scrive che cio che e razionale e reale e cio che e reale e', n:'Razionale', d:'nella prefazione ai Lineamenti di filosofia del diritto'},
+         {r:'ma la parola che usa non copre tutto cio che', n:'Esiste', d:'Wirklichkeit indica cio che si e realizzato pienamente, non ogni cosa che si trovi in giro'},
+         {r:'per cui possono esserci istituzioni che esistono e sono', n:'Prive di realta', d:'sopravvivenze, gusci vuoti, cose che continuano solo per inerzia'},
+         {r:'letta in un modo, giustifica l\'', n:'Esistente', d:'tutto cio che c\'e ha una sua necessita, quindi ogni critica e ingenuita'},
+         {r:'letta nell\'altro, e un\'', n:'Esigenza', d:'cio che e razionale deve realizzarsi, e cio che non lo e non ha titolo a durare'},
+         {r:'e la doppia lettura produce due', n:'Scuole', d:'una destra che ne fa la giustificazione dello Stato prussiano e una sinistra che ne ricava un programma rivoluzionario',
+          f:[{piu:true, r:'e lui stesso non e mai stato del tutto', n:'Chiaro', d:'la formula e ambigua nel testo, e sia i conservatori sia i rivoluzionari lo hanno citato con buona fede'}]}
+       ]},
+
+      {r:'applica il metodo alla', n:'Storia', d:'con la tesi che il senso non stia dove gli attori credono',
+       f:[
+         {r:'la storia non e una successione di casi ma un', n:'Processo con una direzione', d:'il progresso nella coscienza della liberta: prima libero uno, poi alcuni, poi tutti'},
+         {r:'e il materiale con cui e fatta sono le', n:'Passioni', d:'ambizioni, interessi, desideri privati: nulla di grande e mai stato compiuto senza passione'},
+         {r:'da cui l\'', n:'Astuzia della ragione', d:'gli uomini perseguono i propri fini e ne realizzano un altro che non avevano in mente'},
+         {r:'con figure che chiama', n:'Individui cosmico-storici', d:'Cesare, Napoleone: credono di volere il proprio potere e portano avanti qualcosa di piu grande'},
+         {r:'e che', n:'Non sono felici', d:'muoiono presto, assassinati o esiliati: usati e messi da parte'},
+         {r:'perche la storia non e il terreno della', n:'Felicita', d:'i periodi felici ne sono le pagine bianche, perche sono i periodi in cui non succede niente',
+          f:[{piu:true, r:'affermazione che i suoi critici trovano', n:'Fredda', d:'se le sofferenze individuali sono il prezzo del processo, il processo diventa un tribunale che assolve sempre'}]}
+       ]},
+
+      {r:'e lascia una', n:'Doppia eredita', d:'perche i suoi allievi si dividono subito e nessuna delle due meta muore',
+       f:[
+         {r:'la filosofia arriva sempre', n:'Tardi', d:'la nottola di Minerva spicca il volo sul far del crepuscolo: si capisce un\'epoca quando e finita'},
+         {r:'quindi non puo dire come il mondo', n:'Debba essere', d:'non da\' istruzioni per il futuro: comprende cio che e gia accaduto'},
+         {r:'la destra hegeliana ne fa una', n:'Giustificazione', d:'dello Stato esistente e della religione'},
+         {r:'la sinistra ne trae un', n:'Programma', d:'se il reale deve essere razionale, cio che non lo e va cambiato: da qui passa Marx'},
+         {r:'Marx dichiara di averlo', n:'Rimesso in piedi', d:'tenendo il metodo e sostituendo allo spirito i rapporti materiali di produzione'},
+         {r:'e nel Novecento arriva l\'accusa di', n:'Non essere confutabile', d:'un sistema che assorbe ogni obiezione come momento non puo essere smentito da niente',
+          f:[{piu:true, r:'e insieme resta cio che ha cambiato il modo di', n:'Pensare per processi', d:'guardare le cose come tappe di uno sviluppo invece che come fotografie: e passato nella storia, nella psicologia e nel linguaggio comune'}]}
+       ]}
+    ],
+    incroci:[
+      {da:'Oltre', a:'Eliminata', r:'e l\'argomento per cui la cosa in se va',
+       perche:'Kant sosteneva che si potesse pensare la cosa in se senza conoscerla, e Hegel replica che il gesto stesso di segnare un confine lo attraversa: per dire dove finisce il conoscibile bisogna avere gia un piede dall\'altra parte. È l\'obiezione piu breve e piu efficace che sia stata fatta al criticismo, e ha un difetto simmetrico — chi la accetta si trova senza nessun limite dichiarato.'},
+      {da:'Confutata', a:'Non essere confutabile', r:'e la ragione per cui il sistema viene accusato di',
+       perche:'Se ogni posizione contraria diventa un momento parziale del vero, allora nessuna obiezione puo colpire il sistema: viene assorbita. Popper ne fara l\'esempio principale di una teoria che spiega tutto e per questo non spiega niente. I difensori replicano che assorbire non significa ignorare — il momento superato deve essere ricostruito nella sua forza — e che la vera prova sta nel vedere se la ricostruzione regge.'},
+      {da:'Tesi, antitesi, sintesi', a:'Speculativo', r:'e una semplificazione del momento',
+       perche:'La formula suggerisce due tesi esterne l\'una all\'altra e una terza che le concilia, come un compromesso. In Hegel il secondo momento nasce dal primo spinto fino in fondo, e il terzo non fa la media: mostra perche entrambi erano necessari e insufficienti. La differenza e pratica: il compromesso divide la differenza, il momento speculativo dice che cosa cade e perche.'},
+      {da:'Falsa', a:'Momento', r:'e cio che una verita parziale smette di essere quando viene ripresa come',
+       perche:'Una tesi presa da sola e falsa non nel contenuto ma nella pretesa di bastare; ripresa dentro un percorso che ne mostra i limiti, torna vera come tappa. È il senso preciso di aufheben applicato alle idee, ed e anche il modo in cui Hegel legge la storia della filosofia: non un cimitero di errori, ma una sequenza in cui ogni posizione ha detto una cosa vera al posto sbagliato.'},
+      {da:'Astuzia della ragione', a:'Tardi', r:'e cio che si puo riconoscere solo',
+       perche:'Che le passioni private abbiano prodotto un risultato che nessuno voleva si vede quando il processo e concluso: mentre accade, ciascuno vede solo il proprio scopo. Da qui la nottola di Minerva. È anche il limite piu onesto del sistema: se il senso si vede solo alla fine, la filosofia non puo dire a chi sta agendo che cosa stia davvero facendo.'},
+      {da:'Napoleone entra a Jena', a:'Individui cosmico-storici', r:'e l\'esperienza da cui nasce l\'idea di',
+       perche:'Hegel scrive a un amico di aver visto l\'imperatore attraversare la citta a cavallo e di aver avuto la sensazione di vedere l\'anima del mondo. La categoria dell\'individuo che porta avanti qualcosa piu grande di se non e una costruzione astratta: nasce mentre finisce di scrivere il proprio libro e la sua citta viene occupata.'},
+      {da:'Prive di realta', a:'Esistente', r:'e la distinzione che impedisce di leggere la frase come una giustificazione dell\'',
+       perche:'Se Wirklichkeit non copre tutto cio che si trova in giro, allora dire che il reale e razionale non significa che ogni istituzione esistente lo sia: molte esistono per inerzia e sono gusci vuoti. La lettura conservatrice regge solo confondendo esistenza e realta, e la lettura rivoluzionaria fa leva esattamente sulla differenza fra le due.'},
+      {da:'Negazione determinata', a:'Nulla astratto', r:'si distingue dal',
+       perche:'Dire che una cosa e sbagliata, senza dire in che cosa e perche, non produce niente: resta un rifiuto generico da cui non si ricava nessuna direzione. Negare una determinazione precisa produce invece un contenuto preciso, che e il passo successivo. È forse la lezione piu utilizzabile del metodo, e vale in classe come in qualunque discussione.'},
+      {da:'Fatica del concetto', a:'Colpo di pistola', r:'e cio che si contrappone al',
+       perche:'L\'immagine del colpo di pistola prende in giro chi comincia dall\'assoluto come da un dato immediato, e il bersaglio e Schelling. Per Hegel non ci sono scorciatoie: l\'assoluto e il risultato del percorso, e chi lo mette all\'inizio ha soltanto un\'affermazione. La lite fra i due compagni di stanza si condensa in questa immagine, e l\'amicizia non si riprendera.'},
+      {da:'Non sono felici', a:'Fredda', r:'e uno dei motivi per cui la filosofia della storia viene giudicata',
+       perche:'Gli individui che portano avanti il processo vengono usati e scartati, e i periodi felici sono le pagine bianche della storia. La tesi ha una sua durezza onesta e un rischio evidente: se ogni sofferenza e un momento necessario, il processo giustifica sempre se stesso. È l\'obiezione che accompagnera tutte le filosofie della storia, comprese quelle che si dichiarano opposte alla sua.'},
+      {da:'Muove da sola', a:'Guardare', r:'e cio che giustifica il metodo del semplice',
+       perche:'Hegel sostiene di non applicare un metodo dall\'esterno ma di seguire il movimento che il contenuto compie da se, limitandosi a stare a guardare. È la pretesa piu forte del sistema e quella meno verificabile: chi lo legge trova continuamente passaggi in cui sembra che sia lui a spingere. Se avesse ragione, il sistema sarebbe necessario; se ha torto, e un\'architettura molto ben costruita.'},
+      {da:'Schelling e Holderlin', a:'Docente non pagato', r:'spiega come arrivi a Jena da',
+       perche:'Il piu giovane dei tre compagni di stanza e gia professore celebre e chiama a Jena il maggiore, che a trentun anni non ha ancora pubblicato niente. Sei anni dopo quel maggiore stampera la prefazione che liquida la filosofia dell\'amico. È un dato biografico che spiega poco del contenuto e molto del tono.'},
+      {da:'Pensare per processi', a:'Vero e l\'intero', r:'e la forma diffusa della tesi che il',
+       perche:'L\'idea che una cosa si capisca solo ricostruendo come e diventata cio che e sembra oggi ovvia, e non lo era. È passata nella storiografia, nella psicologia dello sviluppo, nella biologia evolutiva e nel linguaggio comune: quando si dice che per capire una persona bisogna sapere da dove viene, si sta usando una forma popolare di questa tesi.'}
+    ]
+  },
+  provocazione: {
+    titolo:'Chi ha ragione dei due',
+    durata:'55 minuti',
+    domandaMadre:'Se due affermazioni si contraddicono, una delle due deve essere sbagliata?',
+    perche:'È il principio piu solido che la filosofia possieda: una cosa non puo essere e non essere nello stesso momento e sotto lo stesso rispetto. Aristotele lo dichiara indimostrabile e indiscutibile, e per duemila anni nessuno lo tocca. Kant, nelle antinomie, lo usa per concludere che una domanda che produce due dimostrazioni opposte era mal posta. Hegel fa la mossa contraria: la contraddizione non e il segno di un errore, e il segno che il concetto con cui si stava lavorando e troppo povero, e il modo in cui il pensiero avanza. La classe deve arrivarci passando da esempi che conosce — il cambiamento, il crescere, il diventare qualcuno — e uscire con uno strumento preciso, distinguendolo con cura dalla sua versione pigra, quella per cui tutti hanno un po\' ragione.',
+    occorrente:'Niente.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'Il principio piu solido\nche esista.\n\nUna cosa non puo\nessere e non essere\nnello stesso momento\ne sotto lo stesso aspetto.\n\nAristotele lo dichiara\nindimostrabile:\n\nnon perche sia debole,\n\nma perche chiunque\nprovi a negarlo\ndeve gia usarlo\nper dire qualcosa.\n\nDuemila anni,\nnessuno lo tocca.\n\nAdesso una cosa\nbanale.\n\nUn seme\ndiventa una pianta.\n\nA un certo punto\ndel processo:\n\ne un seme\no e una pianta?\n\nSe dite seme,\nquando smette?\n\nSe dite pianta,\nquando ha cominciato?\n\nE nel momento\ndel passaggio,\n\nche cos\'e?',
+       parlato:'Metti prima il principio nella sua forma piu forte, perche i ragazzi devono sentirlo come solido: non e una regoletta, e la base di ogni ragionamento.\n\nSpiega perche Aristotele lo dice indimostrabile: chi prova a negarlo deve dire qualcosa, e per dire qualcosa deve escludere il contrario. Chi nega il principio lo sta usando.\n\nPoi il seme, e prenditi tempo. Non accontentarti della prima risposta.\n\nSe dicono che c\'e un momento preciso in cui smette di essere seme, chiedi di indicarlo. Non ci riescono, e non perche non lo sappiano: perche non c\'e.\n\nPoi generalizza con esempi che li toccano. Voi a sei anni e voi adesso: siete la stessa persona? Se si, com\'e che non vi somigliate in niente? Se no, chi ha fatto le cose che ricordate?\n\nRaccogli le risposte, non risolvere niente, e nomina il problema.\n\nOgni volta che qualcosa cambia, per un tratto e cio che era e insieme cio che sta diventando. Il principio di Aristotele dice che questo non si puo. E il cambiamento c\'e.',
+       seDicono:[
+         {loro:'«Basta guardare le cellule: c\'è un momento preciso.»',
+          tu:'Ottima obiezione scientifica, e prova a portarla fino in fondo. Anche a livello di cellule troverai una fase in cui la cosa non e piu quello e non e ancora questo. Puoi rendere il confine sempre piu sottile, e non lo elimini. Il problema non e la nostra ignoranza: e che il passaggio esiste.'},
+         {loro:'«"Sotto lo stesso aspetto": è quello che risolve tutto.»',
+          tu:'È esattamente la difesa classica, ed e forte: sotto un aspetto e seme, sotto un altro e pianta. Ti chiedo solo di notare una cosa: cosi hai salvato il principio spezzando la cosa in due aspetti. Ma la cosa e una. Hegel dira che quella scissione e comoda e nasconde proprio cio che bisognerebbe spiegare.'}
+       ]},
+
+      {minuti:'8–17', et:'Lo schieramento',
+       schermo:'Due posizioni.\n\nA.\nUna contraddizione\ne sempre il segno\nche qualcosa non torna\nnel nostro ragionamento.\n\nLe cose non si\ncontraddicono:\nnoi le descriviamo male.\n\nB.\nCerte contraddizioni\nnon sono nella testa.\n\nSono nelle cose,\ne sono il motivo\nper cui le cose\ncambiano.\n\nSchieratevi.',
+       opzioni:['la contraddizione e sempre un difetto del nostro ragionamento', 'certe contraddizioni sono nelle cose e le fanno cambiare'],
+       parlato:'Fai schierare e conta. La A prende quasi tutti, e ha dalla sua duemila anni di logica: va difesa bene prima di attaccarla.\n\nMetti alla prova la A con una domanda: se le cose non si contraddicono mai, come si spiega che cambino?\n\nGuidali. Perche una cosa diventi un\'altra deve smettere di essere quella che era, e per un tratto e tutte e due o nessuna delle due. Chi sta nella A deve dire che questo e solo un modo impreciso di parlare — e allora deve spiegare come si parlerebbe con precisione.\n\nProva concreta e li blocca sempre: descrivete con precisione il momento in cui una persona smette di essere vostra amica. Non l\'istante in cui ve ne accorgete: l\'istante in cui accade.\n\nPoi metti alla prova la B, senza risparmiarla. Se le contraddizioni stanno nelle cose, allora si puo dire tutto e il contrario di tutto, e nessuno ha mai torto. Chiedi se sono disposti a sostenerlo. Nessuno lo e.\n\nFerma li e nomina il problema, che e reale: se la contraddizione e sempre un errore, il cambiamento diventa inspiegabile; se non lo e mai, il ragionamento diventa impossibile. La lezione serve a trovare la terza posizione.',
+       seDicono:[
+         {loro:'«È solo un modo impreciso di parlare.»',
+          tu:'Puo essere, e allora ti chiedo la versione precisa. Descrivimi il diventare adulti senza mai dire che qualcuno e insieme cio che era e cio che sara. Se ci riesci, hai ragione. Nota pero che tutte le lingue del mondo hanno inventato parole come diventare, crescere, maturare — servivano a qualcosa.'},
+         {loro:'«Se accetti le contraddizioni salta tutto.»',
+          tu:'Rischio reale, e Hegel ne era consapevole: non sta dicendo che si possa affermare a piacere una cosa e il suo contrario. Sta dicendo che quando una contraddizione compare seguendo un ragionamento corretto, non va nascosta ma seguita — perche indica che il concetto da cui sei partito era troppo stretto. La differenza fra le due cose e tutto il capitolo.'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'Ricordate\nle due dimostrazioni\ndi Kant?\n\nIl mondo ha un inizio.\nIl mondo non ha inizio.\n\nEntrambe valide.\n\nConclusione di Kant:\n\nse una domanda produce\ndue prove opposte,\n\nla domanda\nera mal posta.\n\nLa contraddizione\ne un segnale\ndi allarme.\n\nHegel fa\nla mossa contraria.\n\nDice: no.\n\nLa contraddizione\nnon segnala\nche hai sbagliato strada.\n\nSegnala\nche il concetto\ncon cui stavi lavorando\n\nera troppo povero\nper la cosa\nche stavi pensando.\n\nE allora\nnon si torna indietro.\n\nSi va avanti,\nverso un concetto\nabbastanza grande\nda contenere\ntutti e due i lati.',
+       parlato:'Riprendi le antinomie, perche le hanno gia viste e il richiamo funziona: e la stessa situazione, giudicata al contrario.\n\nPoi costruisci il metodo, e falla in tre passi con un esempio unico che regga per tutto il tempo. Va bene il seme, va bene meglio una cosa loro: essere figli e diventare adulti.\n\nPrimo passo, il momento dell\'intelletto. Si fissa una determinazione: sei un figlio, quindi dipendi, ubbidisci, sei protetto. È chiara, e serve.\n\nSecondo passo, il momento dialettico. Spingi quella determinazione fino in fondo e si rovescia. Un figlio cresciuto bene e uno che a un certo punto non ubbidisce piu — cioe l\'essere figlio, riuscito fino in fondo, produce il contrario di se stesso.\n\nFai notare che il rovesciamento non viene da fuori. Non e qualcuno che obietta: e la cosa stessa che, portata avanti, si capovolge.\n\nTerzo passo, il momento speculativo. Serve un concetto piu grande che tenga insieme i due lati: il rapporto fra genitori e figli come qualcosa che cambia forma e non finisce. Chi ci arriva non ha smesso di essere figlio e non e piu figlio nel senso di prima.\n\nAdesso da\' la parola che riassume tutto, e spiegala per intero: aufheben significa insieme togliere, conservare e sollevare. Non c\'e in italiano. La dipendenza viene tolta, il legame viene conservato, e il tutto viene portato a un altro livello.\n\nFai provare a loro su un altro caso: imparare uno strumento, un\'amicizia che cambia, il rapporto con una materia che si odiava.',
+       seDicono:[
+         {loro:'«Ma questo non è tesi antitesi sintesi?»',
+          tu:'Quasi tutti lo credono, e la formula non e sua: e di Fichte, e l\'ha resa famosa un manuale dell\'Ottocento. La differenza conta. Tesi e antitesi suggerisce due posizioni esterne che qualcuno concilia; qui il secondo momento nasce dal primo portato fino in fondo, e il terzo non fa la media: dice che cosa cade e perche.'},
+         {loro:'«Sembra un modo di dare ragione a tutti.»',
+          tu:'È il fraintendimento peggiore e va tolto adesso. Nel passaggio qualcosa si perde davvero: la dipendenza del figlio non torna piu. Se il terzo momento non toglie niente, non e un momento speculativo — e una furbizia per non prendere posizione. Il controllo e sempre lo stesso: che cosa e caduto?'}
+       ]},
+
+      {minuti:'28–38', et:'Il testo',
+       schermo:'Dalla prefazione\nalla Fenomenologia,\n1807.\n\nIl bocciolo sparisce\nquando sboccia il fiore,\n\ne si potrebbe dire\nche il fiore\nlo confuta.\n\nAllo stesso modo\nil frutto\ndichiara il fiore\nuna falsa esistenza\ndella pianta,\n\ne prende il suo posto\ncome sua verita.\n\nQueste forme\nnon soltanto si distinguono,\n\nma si eliminano\nl\'una con l\'altra\ncome incompatibili.\n\nEppure\nla loro natura fluida\n\nne fa\naltrettanti momenti\ndi un\'unita organica,\n\nnella quale\nnon solo non si contrastano,\n\nma sono\nl\'una necessaria\nquanto l\'altra,\n\ned e questa\neguale necessita\n\na costituire\nla vita del tutto.',
+       testo:{fonte:'G. W. F. Hegel, Fenomenologia dello spirito, prefazione (1807)',
+              glossa:'È il passo con cui Hegel spiega il proprio metodo servendosi di una cosa che chiunque ha visto. Il punto da non perdere è che le tre forme sono davvero incompatibili: il fiore non convive con il bocciolo, lo elimina, e chi guardasse una sola fase per volta direbbe con ragione che l\'una smentisce l\'altra. Ciò che le rende momenti invece che confutazioni non è una conciliazione trovata dal filosofo, ma il fatto che siano fasi di una stessa vita: solo chi guarda il processo intero le vede come necessarie tutte e tre. Da qui la tesi che il vero sia l\'intero, e la conseguenza pratica: un\'affermazione parziale non è falsa nel contenuto, lo diventa quando pretende di bastare. Il testo si presta bene a essere applicato in classe alla storia della filosofia, che Hegel legge appunto così — non come un cimitero di errori, ma come una sequenza in cui ogni posizione ha detto qualcosa di vero al posto sbagliato.'},
+       parlato:'Leggi il passo e comincia dalla parte che i ragazzi saltano: le tre forme si eliminano davvero. Il fiore non si aggiunge al bocciolo, lo distrugge.\n\nFai notare che chi guardasse solo due fasi avrebbe pienamente ragione a dire che si smentiscono. L\'errore non e nel vederle incompatibili: e nel guardarne una alla volta.\n\nPoi la mossa: cio che le trasforma da confutazioni in momenti non e un\'idea del filosofo, e il fatto di essere fasi della stessa vita.\n\nQui applica alla storia della filosofia, ed e il punto in cui i ragazzi capiscono a che cosa serve tutto questo. Chiedi: nelle lezioni di quest\'anno, chi aveva ragione fra Cartesio e Hume? Fra Kant e Rousseau?\n\nDi solito rispondono cercando un vincitore. Fai provare l\'altra domanda: che cosa ha visto ciascuno che gli altri non potevano vedere da dove stavano?\n\nEnuncia la conseguenza per il modo di studiare: una storia della filosofia non e una gara in cui l\'ultimo ha ragione. È la ricostruzione di come si e arrivati a poter fare certe domande.\n\nPoi metti il paletto, perche senza di esso questa idea diventa una comodita. Dire che ogni posizione e un momento non significa che ogni posizione vada bene. Significa che va ricostruita nella sua forza prima di superarla — e chi la caricatura non l\'ha superata, l\'ha evitata.',
+       seDicono:[
+         {loro:'«Allora nessuno ha mai torto.»',
+          tu:'Attento: il bocciolo ha torto se pretende di essere il punto d\'arrivo. Aveva ragione a esserci e torto a bastare. Nel sistema qualcuno ha torto eccome — ha torto chi assolutizza una fase. Non e la stessa cosa che dire che tutti hanno un po\' ragione, che invece e il modo elegante di non pensare.'},
+         {loro:'«Comodo dirlo alla fine, quando sai già com\'è andata.»',
+          tu:'Obiezione ottima, e Hegel la fa a se stesso. Scrive che la filosofia arriva sempre troppo tardi, che la nottola di Minerva vola al crepuscolo: si capisce un\'epoca quando e finita. È un\'ammissione onesta e insieme il limite piu grave del sistema, perche chi sta agendo adesso non puo servirsene.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'Adesso il prezzo.\n\nSe ogni posizione\ne un momento del vero,\n\nallora nessuna obiezione\npuo distruggere\nil sistema.\n\nOgni critica\nviene assorbita\ncome una tappa.\n\nNel Novecento\nqualcuno lo dira\nchiaramente:\n\nuna teoria\nche spiega tutto\n\nnon spiega\nniente.\n\nE c\'e la seconda\nconseguenza,\npolitica.\n\nNel 1820 Hegel scrive:\n\ncio che e razionale\ne reale,\n\ne cio che e reale\ne razionale.\n\nDopo la sua morte\ni suoi allievi\nsi dividono in due,\n\ne tutti e due\nlo citano.\n\nI conservatori:\n\nquello che esiste\nha una sua necessita,\nquindi ha ragione\ndi esistere.\n\nI rivoluzionari:\n\ncio che e razionale\ndeve realizzarsi,\n\nquindi cio che non lo e\n\nva abbattuto.',
+       parlato:'Presenta prima l\'obiezione teorica, che e seria e non va liquidata.\n\nSpiegala bene: un sistema che riesce a incorporare qualunque critica come momento parziale non puo essere smentito da niente. E cio che non puo essere smentito da niente non dice piu niente sul mondo — e la critica che Popper rivolgera a Hegel e a Marx.\n\nPoi da\' la difesa, perche esiste ed e onesta: assorbire non significa ignorare. Hegel si impegna a ricostruire ogni posizione nella sua forma piu forte prima di mostrarne il limite, e questo si puo controllare pagina per pagina. Chi lo fa davvero sta facendo qualcosa di serio; chi si limita a dire «e un momento» sta usando una formula.\n\nDa\' loro il criterio pratico: si puo verificare se una posizione e stata superata o soltanto etichettata. Basta chiedere se chi la supera e capace di sostenerla meglio di chi la sosteneva.\n\nAdesso la parte politica, ed e la piu istruttiva.\n\nSpiega l\'ambiguita con precisione. La parola che Hegel usa per reale non significa tutto cio che esiste: indica cio che si e pienamente realizzato. Quindi possono esserci cose che esistono e non sono reali in quel senso — istituzioni sopravvissute a se stesse, gusci vuoti.\n\nFai vedere che con questa distinzione la frase diventa esplosiva invece che conservatrice: molte cose che ci sono non hanno titolo a esserci.\n\nE fai notare il fatto storico: entrambe le letture sono state sostenute in buona fede da persone che lo avevano ascoltato di persona. Non e che una scuola fosse disonesta. Il testo consente le due cose.\n\nChiudi con la domanda che tiene: che responsabilita ha un autore per un\'ambiguita che non ha chiarito?',
+       seDicono:[
+         {loro:'«Allora era un opportunista.»',
+          tu:'Difficile sostenerlo: aveva la cattedra piu importante di Prussia e ha scritto cose che il governo non amava, compreso l\'appoggio pubblico alla Rivoluzione francese mantenuto fino alla fine. Piu probabilmente e uno di quei casi in cui un\'ambiguita e reale nel pensiero, non nella condotta — ed e piu interessante di un sospetto sulle intenzioni.'},
+         {loro:'«Non si può dire che una cosa che esiste non è reale.»',
+          tu:'Suona strano in italiano e in tedesco meno, perche sono due parole diverse. Ma prova a usarla: una legge che nessuno applica esiste? Sta scritta. È reale? Una scuola che ha smesso di insegnare qualcosa a qualcuno esiste, ha un edificio e un preside. La distinzione fra esserci e essere pienamente cio che si dovrebbe essere non e un cavillo.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'La domanda era:\n\nse due cose\nsi contraddicono,\n\nuna delle due\ne sbagliata?\n\nRisposta di Hegel:\n\nnon sempre.\n\nA volte vuol dire\nche state usando\nun concetto\ntroppo piccolo\n\nper la cosa\nche state pensando.\n\nDa portarsi via\nuno strumento\ne un avvertimento.\n\nLo strumento:\n\nquando incontrate\nun\'obiezione che regge,\n\nnon chiedetevi\nchi vince.\n\nChiedetevi\nche cosa dovrebbe\nessere vero\n\nperche avessero ragione\ntutti e due\n\ne in che senso\ndiverso.\n\nL\'avvertimento:\n\nnon e\n«ognuno ha un po\' ragione».\n\nQuello\nnon e pensare.\n\nSe nel passaggio\nnon cade niente,\n\nnon avete\nfatto un passaggio.',
+       parlato:'Riprendi lo schieramento e chiedi chi si e spostato. Poi da\' i due lasciti insieme, perche separati fanno danno.\n\nPrima lo strumento, e falla provare. Prendi una discussione vera che hanno avuto e chiedi non chi avesse ragione, ma che cosa vedeva ciascuno dalla propria posizione che l\'altro non poteva vedere. Poi: esiste un modo di descrivere la situazione in cui entrambe le osservazioni risultano vere di cose diverse?\n\nSpesso esiste, e trovarlo e piu produttivo che vincere.\n\nPoi l\'avvertimento, e insisti perche e la parte che si perde sempre. La versione pigra di questa lezione e che ognuno abbia la sua verita. Non e quello che dice Hegel e non e nemmeno interessante: e il modo educato di non decidere.\n\nDa\' il controllo, che e semplice e verificabile: che cosa e caduto? Se dopo il tuo ragionamento tutte e due le posizioni sono ancora in piedi intere, non hai concluso niente. Nel passaggio dal bocciolo al fiore, il bocciolo non c\'e piu.\n\nUltima cosa sull\'autore, e serve a togliere l\'aura. Hegel non era un genio precoce: i professori di Tubinga lo giudicavano debole in filosofia, ha fatto il precettore per sette anni, il direttore di giornale e il preside di liceo per otto, e ha pubblicato il primo libro a trentasette anni mentre l\'esercito di Napoleone occupava la sua citta. Il filosofo del processo lento e uno che ci ha messo vent\'anni.\n\nPer il seguito: adesso sappiamo come funziona il metodo. La prossima volta si guarda l\'opera in cui lo applica alla coscienza — e si comincia da qualcuno che apre gli occhi e crede che basti guardare.',
+       seDicono:[
+         {loro:'«Ma allora si può giustificare qualunque cosa dicendo che è un momento.»',
+          tu:'Si puo, e infatti e stato fatto, e la lezione serve anche a riconoscerlo. La verifica e sempre la stessa: chi dice che una posizione e un momento superato deve saperla esporre meglio di chi la sostiene. Se non ne e capace, non l\'ha superata: l\'ha etichettata, e l\'etichetta e la scorciatoia piu comune di chi cita Hegel senza averlo letto.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'L\'anima del mondo a cavallo',
+       corpo:'Il 13 ottobre 1806 Hegel scrive a un amico da Jena. La città sta per essere occupata, la battaglia si combatterà il giorno dopo, e lui deve ancora spedire le ultime pagine della Fenomenologia dello spirito.\n\nRacconta di aver visto passare per le strade l\'imperatore, e scrive di aver provato una sensazione singolare nel vedere concentrato in un punto, a cavallo, un individuo che domina il mondo intero.\n\nNei giorni successivi la casa in cui alloggia viene saccheggiata dai soldati francesi. Il manoscritto era già partito.',
+       chiedi:'Il libro che spiega come lo spirito si sviluppa nella storia viene finito il giorno in cui la storia entra in casa dell\'autore. Un\'esperienza del genere aiuta a pensare o disturba il pensiero? E che cosa vi fa impressione, in quella lettera: l\'ammirazione o la freddezza?'},
+      {titolo:'Una teoria che spiega tutto',
+       corpo:'Nel Novecento Karl Popper sostiene che una teoria scientifica valga in proporzione a ciò che vieta: deve dire che cosa non potrebbe accadere, così che se accadesse la teoria risulti falsa.\n\nDa questo criterio muove l\'accusa a Hegel e ai suoi eredi: un sistema in cui ogni obiezione diventa un momento parziale del vero non vieta nulla, e quindi nessuna esperienza potrebbe smentirlo. Una teoria che spiega qualunque cosa non spiega niente.\n\nI difensori replicano che il criterio si applica alle scienze empiriche e non a una filosofia, e che Hegel si impegna a ricostruire ogni posizione avversaria nella sua forma più forte prima di mostrarne il limite — cosa verificabile pagina per pagina.',
+       chiedi:'Vi convince l\'idea che una teoria valga per ciò che esclude? E come si distingue, in concreto, chi ha davvero superato un\'obiezione da chi si è limitato a incorporarla dandole un nome?'},
+      {titolo:'Due scuole, un maestro',
+       corpo:'Alla morte di Hegel, nel 1831, i suoi allievi si dividono in due gruppi che vengono chiamati destra e sinistra hegeliana.\n\nLa destra legge la sua filosofia come la comprensione razionale di ciò che esiste: lo Stato, le istituzioni e la religione sono il compimento di un processo, e capirlo significa riconoscerne la necessità.\n\nLa sinistra legge la stessa filosofia come un metodo di critica: se il reale deve essere razionale, tutto ciò che è irrazionale non ha titolo a durare. Da questo gruppo passano Feuerbach, Bauer, e il giovane Marx, che dichiarerà di aver tenuto il metodo rimettendolo in piedi sui rapporti materiali.',
+       chiedi:'Due gruppi di allievi che hanno seguito le stesse lezioni ne ricavano programmi opposti. È colpa di un\'ambiguità del maestro, o è ciò che accade a qualunque pensiero abbastanza grande? E che responsabilità ha chi scrive di non essersi lasciato capire in un modo solo?'}
+    ],
+    testi:[
+      {fonte:'Hegel, Fenomenologia dello spirito, prefazione (1807)',
+       corpo:'Hegel afferma che il vero sia l\'intero, e che l\'intero sia soltanto l\'essenza che si completa mediante il proprio sviluppo; e aggiunge che dell\'assoluto si deve dire che è essenzialmente risultato, e che solo alla fine esso è ciò che è in verità.',
+       glossa:'La formula sembra astratta e ha un uso immediato: un\'affermazione parziale non è falsa per il suo contenuto, lo diventa quando pretende di bastare. Ne segue anche una regola di lettura per la storia della filosofia, che Hegel intende non come un elenco di errori sostituiti da verità, ma come una sequenza in cui ogni posizione ha visto qualcosa che dalla propria posizione poteva vedere. In classe è utile per togliere l\'idea che studiare i filosofi antichi significhi studiare gente che si sbagliava.'},
+      {fonte:'Hegel, Lineamenti di filosofia del diritto, prefazione (1820)',
+       corpo:'Hegel scrive che ciò che è razionale è reale e ciò che è reale è razionale; e poche righe dopo aggiunge che la filosofia giunge sempre troppo tardi, perché appare soltanto quando la realtà ha compiuto il proprio processo di formazione: la nottola di Minerva inizia il suo volo sul far del crepuscolo.',
+       glossa:'Le due affermazioni si trovano nella stessa pagina e vanno lette insieme. La prima è stata usata per giustificare l\'esistente e per esigerne il rovesciamento, perché il termine tedesco reso con «reale» non copre tutto ciò che esiste ma indica ciò che si è pienamente realizzato. La seconda pone un limite severo alla filosofia stessa: non può dire come il mondo debba essere, comprende soltanto ciò che è già accaduto. È anche l\'ammissione che rende il sistema meno utilizzabile di quanto i suoi eredi politici abbiano preteso.'},
+      {fonte:'Hegel, Enciclopedia delle scienze filosofiche, §§ 79-82 (1830)',
+       corpo:'Hegel distingue tre lati di ogni contenuto logico: il lato astratto o intellettuale, che fissa le determinazioni tenendole separate; il lato dialettico o negativo-razionale, in cui le determinazioni finite si tolgono da sé e passano nelle proprie opposte; e il lato speculativo o positivo-razionale, che coglie l\'unità delle determinazioni nella loro opposizione.',
+       glossa:'È la formulazione più chiara del metodo, e serve soprattutto a correggere l\'equivoco più diffuso: la sequenza tesi-antitesi-sintesi non è di Hegel ma di Fichte, ed è stata attribuita a lui da un manuale ottocentesco. La differenza non è terminologica: nella formula corrente due posizioni esterne vengono conciliate da un terzo, mentre qui il secondo momento nasce dal primo portato fino in fondo, e il terzo non fa una media ma mostra che cosa rende necessari entrambi e che cosa deve cadere.'}
+    ],
+    compito:'Mezza pagina. Ricostruite una discussione in cui vi siete trovati d\'accordo con due persone che la pensavano in modo opposto, senza riuscire a scegliere. Scrivete che cosa vedeva ciascuna delle due dalla propria posizione, nella forma più forte che riuscite a dare a entrambe. Poi provate a descrivere la situazione in un modo in cui tutte e due le osservazioni risultino vere di cose diverse. Alla fine, la parte più importante: dite che cosa, in questa nuova descrizione, va abbandonato — perché se non cade niente, non avete concluso.',
+    fonti:[
+      'G. W. F. Hegel, Fenomenologia dello spirito (1807), prefazione e introduzione',
+      'Scienza della logica (1812-16), la dottrina dell\'essere; Enciclopedia delle scienze filosofiche (1830), §§ 79-82',
+      'Lineamenti di filosofia del diritto (1820), prefazione; Lezioni sulla filosofia della storia (postume)',
+      'Aristotele, Metafisica, libro IV — il principio di non contraddizione',
+      'K. Popper, La società aperta e i suoi nemici, volume secondo',
+      'C. Taylor, Hegel; R. Bodei, Sistema ed epoca in Hegel; T. Pinkard, Hegel. A Biography'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',

@@ -195,7 +195,7 @@ Si va in ordine di programma. Restano:
 - [x] Filosofia moderna · 24 — Il Romanticismo
 - [x] Filosofia moderna · 25 — Fichte
 - [x] Filosofia moderna · 26 — Schelling
-- [ ] Filosofia moderna · 27 — Hegel: i fondamenti del sistema
+- [x] Filosofia moderna · 27 — Hegel: i fondamenti del sistema
 - [ ] Filosofia moderna · 28 — Hegel: la Fenomenologia dello spirito
 - [ ] Filosofia moderna · 29 — Hegel: l'Enciclopedia
 - [ ] Storia contemporanea · 1 — Il Risorgimento e la prima guerra d'indipendenza
