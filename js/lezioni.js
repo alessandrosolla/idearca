@@ -13305,6 +13305,230 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Filosofia moderna · 25 — Fichte': {
+  mappa: {
+    n:'Johann Gottlieb Fichte', d:'l\'io non e una cosa che si trova: e un\'attivita che si fa',
+    f:[
+      {r:'ha una', n:'Vita in salita', d:'e la salita si vede in tutto quello che scrive',
+       f:[
+         {r:'nasce nel 1762 da', n:'Tessitori', d:'in un villaggio della Sassonia: nessun libro in casa, nessuna prospettiva'},
+         {r:'e viene notato per una', n:'Predica ripetuta a memoria', d:'un nobile arriva tardi in chiesa, il bambino gliela ripete tutta, e quel nobile decide di farlo studiare'},
+         {r:'studia fra', n:'Jena e Lipsia', d:'poi fa il precettore, cambia case, resta povero per quindici anni'},
+         {r:'nel 1791 va a', n:'Konigsberg', d:'da Kant, che lo riceve con freddezza; torna con un manoscritto scritto in poche settimane per farsi ascoltare'},
+         {r:'il libro esce', n:'Senza nome', d:'per un errore dell\'editore, e tutti credono che sia di Kant',
+          f:[{piu:true, r:'e quando Kant', n:'Smentisce', d:'lo fa lodando l\'autore sconosciuto: in un giorno Fichte diventa famoso in Germania'}]},
+         {r:'nel 1794 ottiene la cattedra a', n:'Jena', d:'dove tiene lezioni affollatissime e litiga con quasi tutti'},
+         {r:'nel 1799 la', n:'Disputa sull\'ateismo', d:'lo travolge: perde il posto per aver identificato Dio con l\'ordine morale del mondo'},
+         {piu:true, r:'e nel frattempo tiene lezioni con una', n:'Voce da comizio', d:'i testimoni parlano di un tono da predicatore piu che da professore: chiedeva agli studenti di pensare mentre parlava, non di prendere appunti'},
+         {r:'e nel 1810 diventa', n:'Rettore a Berlino', d:'nella nuova universita; muore nel 1814 di tifo, preso dalla moglie che curava i soldati feriti'}
+       ]},
+
+      {r:'parte da un\'esigenza: il sapere ha bisogno di', n:'Un principio solo', d:'e questo principio non puo essere una cosa',
+       f:[
+         {r:'una filosofia deve essere un', n:'Sistema', d:'non un elenco di verita, ma un insieme in cui ciascuna proposizione dipende dalle altre'},
+         {r:'e un sistema ha bisogno di un', n:'Primo anello', d:'che regga tutti gli altri e che non possa essere retto da niente'},
+         {r:'non puo essere una', n:'Cosa', d:'di qualunque cosa si puo sempre chiedere da dove venga: nessuna cosa si regge da sola'},
+         {r:'deve essere cio che si produce', n:'Da se', d:'l\'unica realta che non si trova gia fatta, perche esiste solo in quanto si fa'},
+         {r:'e questo e l\'', n:'Io', d:'non l\'individuo con nome e cognome, ma l\'attivita per cui c\'e un soggetto'},
+         {r:'che Fichte chiama', n:'Tathandlung', d:'azione-fatto: non un fatto che si trovi gia li, ma un fare che, facendosi, produce il proprio autore'},
+         {r:'l\'opera si chiama', n:'Dottrina della scienza', d:'1794, e non e un libro ma un cantiere',
+          f:[{piu:true, r:'perche la', n:'Riscrive una decina di volte', d:'quasi tutte le versioni restano inedite mentre e vivo: era convinto che nessuno lo avesse capito, e in gran parte aveva ragione'}]}
+       ]},
+
+      {r:'e costruisce tutto su', n:'Tre principi', d:'da cui pretende di far discendere l\'intera esperienza',
+       f:[
+         {r:'il primo dice che l\'Io', n:'Pone se stesso', d:'e sta dietro all\'identita: prima che A sia uguale ad A, ci vuole qualcuno per cui valga'},
+         {r:'il secondo dice che l\'Io', n:'Pone un non-Io', d:'si oppone qualcosa che non e se stesso: e l\'origine di tutto cio che chiamiamo mondo'},
+         {r:'il terzo li tiene insieme: dentro lo stesso Io stanno un Io e un non-Io', n:'Divisibili', d:'che si limitano a vicenda, ciascuno finendo dove comincia l\'altro'},
+         {r:'da qui deduce le', n:'Categorie', d:'realta, negazione, limitazione: non le prende da una tavola, pretende di generarle'},
+         {piu:true, r:'con un\'ambizione che nessuno gli riconoscera', n:'Dedurre anche lo spazio e il tempo', d:'cio che Kant aveva accettato come forme date, lui pretende di farlo nascere dall\'attivita dell\'Io: e il punto in cui quasi tutti i lettori si fermano'},
+         {r:'e questo e il senso della sua parola', n:'Deduzione', d:'non ricavare da premesse, ma mostrare che senza quel passaggio la coscienza non starebbe in piedi'}
+       ]},
+
+      {r:'il cuore del sistema e l\'', n:'Ostacolo', d:'e l\'idea per cui vale la pena leggerlo ancora',
+       f:[
+         {r:'l\'Io non e una', n:'Sostanza', d:'non e una cosa che sta e che ogni tanto agisce: e attivita, e basta'},
+         {r:'e un\'attivita senza resistenza non e', n:'Niente', d:'una spinta che non incontra nulla non e nemmeno una spinta: e il vuoto'},
+         {r:'quindi l\'Io deve incontrare un', n:'Urto', d:'l\'Anstoss: un contraccolpo che ferma l\'attivita e la costringe a riflettersi su di se'},
+         {r:'e ne nasce lo', n:'Streben', d:'un tendere che non arriva: se arrivasse, finirebbe l\'attivita e con essa l\'Io'},
+         {r:'per cui l\'infinito non e uno stato ma un', n:'Compito', d:'non qualcosa che si raggiunge, ma la direzione in cui si continua ad andare'},
+         {r:'e il non-Io non e un incidente da', n:'Eliminare', d:'e la condizione perche ci sia qualcuno che agisce',
+          f:[{piu:true, r:'il che non significa che il dolore sia', n:'Un bene', d:'e una tesi sulla struttura dell\'attivita, non un elogio della sofferenza: confonderle e l\'errore piu comune su Fichte'}]}
+       ]},
+
+      {r:'e ammette che all\'inizio ci sia una', n:'Scelta', d:'perche il primo passo non si dimostra',
+       f:[
+         {r:'ci sono solo due filosofie coerenti: l\'', n:'Idealismo', d:'parte dall\'Io e deve spiegare perche il mondo resista'},
+         {r:'e il', n:'Dogmatismo', d:'parte dalla cosa e deve spiegare come da una cosa nasca una coscienza'},
+         {r:'nessuno dei due puo', n:'Confutare l\'altro', d:'perche ciascuno nega proprio il punto da cui l\'altro parte, e la discussione non ha terreno comune'},
+         {r:'da cui la frase piu citata: quale filosofia si scelga dipende da', n:'Che uomo si e', d:'perche un sistema non e un mobile che si prende e si lascia, ma qualcosa che e animato dall\'anima di chi lo ha'},
+         {r:'con l\'aggiunta che chi non ha ancora un io proprio si aggrappa alle', n:'Cose', d:'chi e abituato a dipendere non riesce a credersi libero'},
+          {piu:true, r:'osservazione insieme profonda e', n:'Comodissima', d:'chiude la discussione dichiarando immaturo l\'avversario, ed e una mossa che chiunque puo usare contro chiunque'}
+       ]},
+
+      {r:'e capovolge il rapporto fra sapere e', n:'Agire', d:'con una conseguenza che riguarda la vita, non solo la teoria',
+       f:[
+         {r:'non conosciamo per poi', n:'Decidere', d:'la conoscenza non viene prima come un magazzino da cui attingere'},
+         {r:'conosciamo', n:'Perche dobbiamo agire', d:'la teoria e al servizio della pratica, e non il contrario'},
+         {r:'e il mondo diventa il', n:'Materiale del dovere', d:'esiste come cio su cui c\'e qualcosa da fare'},
+         {r:'da cui la', n:'Missione del dotto', d:'1794: chi ha ricevuto un sapere ha un debito verso chi glielo ha permesso'},
+         {r:'e la liberta non e uno stato ma una', n:'Conquista continua', d:'non si e liberi: si diventa liberi, ogni volta, e si puo smettere'},
+         {r:'e nel diritto introduce l\'', n:'Appello dell\'altro', d:'divento consapevole di me quando un altro mi tratta come un essere libero e mi chiede qualcosa',
+          f:[{piu:true, r:'idea che', n:'Hegel riprendera', d:'il riconoscimento reciproco come condizione dell\'autocoscienza: e il lascito piu duraturo di Fichte, ed e nato in una dottrina del diritto'}]}
+       ]},
+
+      {r:'ha anche una', n:'Politica', d:'che cambia due volte, e non in meglio secondo molti dei suoi lettori',
+       f:[
+         {r:'nel 1793 difende la', n:'Rivoluzione francese', d:'e scrive in favore della liberta di pensiero, rivolgendosi ai principi d\'Europa che la opprimono'},
+         {r:'nel 1800 pubblica lo', n:'Stato commerciale chiuso', d:'un\'economia pianificata: lo Stato assegna il lavoro, fissa i prezzi e chiude i confini al commercio'},
+         {r:'nel 1806 la Prussia crolla a', n:'Jena e Auerstedt', d:'e Berlino viene occupata dai francesi'},
+         {r:'e nel 1807 tiene i', n:'Discorsi alla nazione tedesca', d:'in una citta occupata, con i soldati francesi per strada'},
+         {r:'dove la nazione non e uno Stato ma una', n:'Lingua e un\'educazione', d:'non un territorio da difendere ma un popolo da formare da capo'},
+         {r:'con la tesi del', n:'Popolo originario', d:'i tedeschi avrebbero conservato una lingua viva, mentre le lingue neolatine sarebbero derivate e quindi meno originali',
+          f:[{piu:true, r:'tesi linguisticamente', n:'Insostenibile', d:'e storicamente pesantissima: fornisce lo schema di una superiorita fondata sull\'origine, che altri useranno molto peggio di lui'}]}
+       ]},
+
+      {r:'e lascia una', n:'Traccia contesa', d:'come pochi altri filosofi',
+       f:[
+         {r:'apre l\'', n:'Idealismo tedesco', d:'Schelling parte da lui e poi lo contesta, Hegel li supera entrambi dichiarandolo'},
+         {r:'Hegel gli rimprovera un', n:'Dovere infinito', d:'un tendere che non arriva mai, che chiama cattiva infinita: un sempre piu in la che non conclude niente'},
+         {r:'la lettura novecentesca ne fa un', n:'Antenato del nazionalismo', d:'tesi diffusa dopo il 1945, e contestata da chi legge i Discorsi per intero'},
+         {r:'mentre resta pienamente vivo il', n:'Riconoscimento reciproco', d:'l\'idea che non si diventi soggetti da soli e passata nel diritto, nella psicologia e nella filosofia politica'},
+         {r:'e resta la sua formula piu semplice, che l\'io e cio che', n:'Si fa', d:'non un dato da descrivere, ma un compito che si eseguisce o si trascura'}
+       ]}
+    ],
+    incroci:[
+      {da:'Tathandlung', a:'Si fa', r:'e il nome tecnico della formula per cui l\'io e cio che',
+       perche:'La parola tedesca unisce fatto e azione per dire una cosa sola: non c\'e prima un soggetto che poi agisce, c\'e un agire che nel farsi produce chi agisce. È la tesi piu radicale del sistema e la piu facile da rendere in classe, perche riguarda esperienze note: non si e coraggiosi e poi si compiono atti coraggiosi, si diventa coraggiosi compiendoli.'},
+      {da:'Niente', a:'Eliminare', r:'e la ragione per cui il non-Io non si puo',
+       perche:'Se l\'Io e attivita, allora un\'attivita che non incontra nulla non e un\'attivita libera al massimo grado: e il nulla. La resistenza non e un guasto del sistema, e cio che permette al sistema di esistere. Da qui l\'affermazione che sembra paradossale e non lo e: l\'Io ha bisogno del mondo che lo limita, e sarebbe distrutto dalla sua scomparsa.'},
+      {da:'Un bene', a:'Streben', r:'non e cio che si afferma parlando di',
+       perche:'La distinzione va fatta esplicitamente perche l\'equivoco e continuo. Fichte non dice che soffrire faccia bene, ne che ogni ostacolo vada tenuto: dice che senza resistenza non c\'e attivita. È un\'affermazione sulla struttura, e non autorizza nessuna conclusione su quali ostacoli concreti convenga lasciare in piedi — che e una domanda pratica, e si risponde caso per caso.'},
+      {da:'Che uomo si e', a:'Comodissima', r:'e insieme la frase piu profonda e la piu',
+       perche:'Che il primo passo di un sistema non si dimostri e un\'osservazione seria, e la stessa che Kant faceva sui postulati. Ma dire che chi non ti segue non ha ancora un io proprio trasforma un limite logico in un giudizio sulla persona, e chiude la discussione invece di aprirla. La mossa e disponibile a chiunque, e conviene riconoscerla quando la si subisce e quando si e tentati di usarla.'},
+      {da:'Appello dell\'altro', a:'Pone se stesso', r:'corregge dall\'interno il principio per cui l\'Io',
+       perche:'Il sistema comincia da un Io che si pone da solo, e nella Fondazione del diritto naturale Fichte ammette che nessuno diventa consapevole di se senza qualcuno che lo tratti da essere libero. Il primo principio resta, e accanto compare una condizione che il primo principio non conteneva. È il punto in cui il suo idealismo si apre a qualcosa che non deriva dall\'Io.'},
+      {da:'Popolo originario', a:'Urto', r:'applica a una nazione lo schema dell\'',
+       perche:'Se un soggetto si costituisce trovando una resistenza, lo stesso schema trasferito a un popolo produce una comunita che si definisce per opposizione a un\'altra. Nei Discorsi la Francia occupante svolge quella funzione. È un caso da manuale di che cosa accada quando una struttura pensata per la coscienza individuale viene applicata a un collettivo: cambia cio che significa avere un limite fuori di se.'},
+      {da:'Discorsi alla nazione tedesca', a:'Rivoluzione francese', r:'sono difficili da conciliare con la difesa della',
+       perche:'Nel 1793 scrive in favore della Rivoluzione e della liberta di pensiero contro i principi d\'Europa; quindici anni dopo, in una citta occupata dall\'esercito che quella Rivoluzione ha prodotto, fonda la resistenza sulla superiorita di una lingua. Si puo leggere come una svolta reazionaria o come la stessa idea di autodeterminazione trasferita dal singolo al popolo. Le due letture si contendono ancora il personaggio.'},
+      {da:'Stato commerciale chiuso', a:'Materiale del dovere', r:'e l\'applicazione economica dell\'idea che il mondo sia',
+       perche:'Se il mondo esiste come campo di cio che va fatto, allora anche l\'economia non e un ordine spontaneo da assecondare ma una materia da organizzare secondo il dovere. Fichte ne ricava uno Stato che assegna il lavoro, fissa i prezzi e chiude i confini per garantire a ciascuno il necessario. È il primo progetto moderno di economia pianificata scritto da un filosofo, ed e coerente con il suo principio.'},
+      {da:'Dovere infinito', a:'Compito', r:'e l\'obiezione di Hegel all\'infinito come',
+       perche:'Per Fichte l\'infinito e una direzione in cui si procede senza arrivare, ed e cio che tiene viva l\'attivita. Hegel replica che un procedere che non conclude nulla e una cattiva infinita: un sempre piu in la che ripete se stesso. La disputa sembra tecnica e non lo e — riguarda se una vita valga per cio che raggiunge o per come tende, ed e la domanda che divide due modi di stare al mondo.'},
+      {da:'Smentisce', a:'Che uomo si e', r:'e un episodio che illustra bene quanto conti',
+       perche:'Il libro anonimo viene attribuito a Kant e giudicato eccellente; appena si sa che e di uno sconosciuto, il giudizio non cambia solo perche Kant interviene lodandolo. Chi valuta guarda anche chi parla, e Fichte lo ha sperimentato dal lato fortunato. La sua tesi che una filosofia si scelga in base a che uomo si e ha, dietro, un\'esperienza personale precisa.'},
+      {da:'Conquista continua', a:'Missione del dotto', r:'e cio che rende la',
+       perche:'Se la liberta non e uno stato ma qualcosa che va rifatto ogni giorno, allora chi ha ricevuto strumenti per pensare non li possiede: li amministra. Le lezioni del 1794 dicono ai suoi studenti che il sapere e un debito verso la societa che glielo ha permesso. È l\'unico testo di Fichte che si legge ancora fuori dai corsi di filosofia, e conviene sapere che nasce da un ex precettore povero.'},
+      {da:'Confutare l\'altro', a:'Primo anello', r:'e impossibile per la stessa ragione per cui serve un',
+       perche:'Se ogni sistema ha bisogno di un punto di partenza che non si dimostra, allora due sistemi con punti di partenza diversi non hanno un terreno comune su cui contendere. La coerenza si puo controllare; la scelta iniziale no. È un\'ammissione onesta e scomoda, e vale per qualunque discussione in cui i due interlocutori partano da premesse diverse senza dirlo.'},
+      {da:'Insostenibile', a:'Antenato del nazionalismo', r:'e la tesi su cui si regge l\'accusa che ne fa un',
+       perche:'La distinzione fra lingue originarie e lingue derivate non ha alcun fondamento linguistico, e fornisce lo schema di una superiorita fondata sull\'origine. Chi difende Fichte osserva che i Discorsi propongono un\'educazione aperta a tutti e non una razza, e che vengono tenuti sotto occupazione militare. Le due cose sono vere insieme, e vale la pena tenerle insieme invece di sceglierne una.'}
+    ]
+  },
+  provocazione: {
+    titolo:'Un mondo senza ostacoli',
+    durata:'55 minuti',
+    domandaMadre:'Se otteneste tutto subito, che cosa resterebbe di voi?',
+    perche:'Fichte sostiene che l\'io non sia una cosa ma un\'attivita, e che un\'attivita senza resistenza non sia una liberta perfetta bensi il nulla. La tesi si tocca con mano attraverso un esperimento mentale che i ragazzi prendono sul serio: una vita in cui ogni desiderio si realizza nell\'istante in cui lo si formula. Quasi tutti rifiutano, e quasi nessuno sa dire perche — e proprio quel non saper dire e il materiale della lezione. Il capitolo serve anche a mettere in guardia da due usi cattivi della stessa idea: la morale spicciola secondo cui le difficolta fanno bene, e il passaggio, compiuto da Fichte in persona, che applica a un popolo lo schema pensato per una coscienza.',
+    occorrente:'Niente.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'Vi offro una cosa.\n\nDa domani\nogni vostro desiderio\nsi realizza\nnell\'istante\nin cui lo pensate.\n\nNon fra un mese.\nNon dopo la fatica.\n\nSubito.\n\nVolete essere bravi\na suonare?\nLo siete.\n\nVolete che una persona\nvi voglia bene?\nVi vuole bene.\n\nVolete vincere?\nAvete vinto.\n\nNessuna attesa,\nnessuno sforzo,\nnessun rischio\ndi non riuscire.\n\nAccettate?',
+       parlato:'Fai l\'offerta lentamente e chiudi ogni via di fuga, perche ne cercano tre o quattro.\n\nNon e un trucco. Non c\'e un prezzo nascosto. Non si tratta di un\'illusione: le cose accadono davvero, sono reali, gli altri esistono.\n\nPoi conta le mani. Di solito la maggioranza dice di no, e alcuni dicono di si con convinzione.\n\nAdesso la domanda vera, e va fatta a chi ha detto di no: perche?\n\nRaccogli le risposte e non accontentarti della prima. Vengono fuori formule fatte — «senza fatica non c\'e gusto», «bisogna meritarsi le cose» — e vanno smontate subito, con garbo: state dicendo che vi piace faticare? Nessuno lo dice davvero.\n\nInsisti: che cosa esattamente andrebbe perduto?\n\nQuando qualcuno arriva a dire qualcosa come «non sarei piu io», fermati e scrivilo alla lavagna. È la frase da cui parte tutta l\'ora.\n\nPoi rivolgiti a chi ha detto di si, e prendili sul serio: hanno un buon argomento, e va nominato. Se il fine e ottenere le cose, ottenerle subito e meglio. Chi dice di no deve spiegare perche il fine non sia quello.',
+       seDicono:[
+         {loro:'«Mi annoierei.»',
+          tu:'Prima risposta di tutti, e mettiamola alla prova: nella macchina puoi desiderare di non annoiarti, e non ti annoi. Il problema non e la noia, perche anche quella si risolve. Se ti resta comunque il fastidio, allora il problema non era la noia: era qualcos\'altro, e stiamo cercando di dirlo.'},
+         {loro:'«Certo che accetto, chi non lo farebbe.»',
+          tu:'Ottima posizione, ed e coerente. Ti faccio una sola domanda, e non e una trappola: nella macchina, dopo un mese, che cosa avresti fatto? Non che cosa avresti ottenuto — che cosa avresti fatto. Se la risposta e niente, va bene lo stesso: dimmi solo se sei disposto ad accettarlo.'}
+       ]},
+
+      {minuti:'8–17', et:'Lo schieramento',
+       schermo:'Due posizioni.\n\nA.\nQuello che conta\ne il risultato.\nSe posso averlo subito\ne senza fatica,\ntanto meglio.\n\nB.\nQuello che conta\ne anche il percorso.\nUn risultato ottenuto\nsenza far niente\nnon e la stessa cosa.\n\nSchieratevi\ne poi difendetevi.',
+       opzioni:['conta il risultato: se lo si puo avere subito, meglio', 'conta anche il percorso: un risultato senza percorso non e lo stesso'],
+       parlato:'Fai schierare e conta. La B di solito vince, e va messa alla prova perche e piena di retorica.\n\nPrima prova, dura: se conta il percorso, allora sareste disposti a rinunciare a una medicina che guarisce subito, per meritarvi la guarigione? Nessuno lo dice. Quindi non e vero che il percorso conti sempre.\n\nSeconda prova: dove sta la differenza? Falli cercare. Di solito arrivano da soli alla distinzione giusta, e conviene aiutarli a formularla: ci sono cose che vogliamo avere e cose che vogliamo essere. Per le prime la scorciatoia va benissimo. Per le seconde la scorciatoia distrugge proprio quello che volevamo.\n\nProva concreta, e funziona sempre: volete saper suonare, o volete che esca la musica? Se e la seconda, basta un altoparlante. Se e la prima, la macchina che ve lo regala non ve lo da\' — perche saper suonare e una cosa che si e, e si e solo essendolo diventati.\n\nPoi metti alla prova la A, per non lasciarla scoperta. Se conta solo il risultato, allora una persona a cui viene regalato tutto e nella condizione migliore possibile. Chiedi se conoscono qualcuno a cui e stato regalato molto. Le facce dicono piu delle parole.\n\nChiudi il tempo con la formulazione del problema: forse alcune cose non si possono ricevere, si possono solo fare. E se e cosi, bisogna spiegare perche.',
+       seDicono:[
+         {loro:'«Se la macchina mi dà la bravura, io sono bravo.»',
+          tu:'Sei capace di eseguire, e non e poco. Ma prova a raccontare come hai imparato: non c\'e niente da raccontare. Nota che quando ammiriamo qualcuno di bravo, ammiriamo anche cio che c\'e dietro. Toglilo e resta un\'esecuzione perfetta di cui nessuno, nemmeno tu, puo dire niente.'},
+         {loro:'«È solo orgoglio: vogliamo poter dire che l\'abbiamo fatto noi.»',
+          tu:'In parte sì, e l\'orgoglio non e un argomento. Ma guarda meglio: non e solo poterlo dire agli altri. Se nessuno lo sapesse mai, ti farebbe lo stesso effetto ricevere quella cosa in regalo? Quasi tutti rispondono di no. Allora non e la reputazione: e qualcosa che riguarda te e basta.'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'Fichte, 1794.\n\nParte da una domanda\ndiversa dalle nostre:\n\nda dove si comincia\na filosofare?\n\nRisposta:\nda cio che non ha bisogno\ndi nient\'altro\nper esistere.\n\nNon una cosa,\nperche di ogni cosa\nsi chiede da dove venga.\n\nSolo una:\ncio che esiste\nsoltanto facendosi.\n\nLa chiama Io.\n\nE non e voi:\ne l\'attivita\nper cui c\'e qualcuno.\n\nAdesso il passaggio\nche ci riguarda.\n\nSe l\'Io e attivita,\n\nun\'attivita\nche non incontra niente\n\nnon e\nla liberta massima.\n\nÈ il nulla.\n\nUna spinta\nche non spinge\ncontro qualcosa\n\nnon e una spinta\ndebole.\n\nNon e\nuna spinta.',
+       parlato:'Costruisci il ragionamento in tre passaggi, e non avere fretta: e il punto piu difficile del capitolo.\n\nPrimo passaggio: l\'io non e una cosa. Falli provare a descriversi. Elencano capelli, carattere, gusti — tutte cose. Poi chiedi chi sia quello che sta elencando. Non e nell\'elenco. Fichte dice che non lo sara mai, perche non e un oggetto: e un\'attivita.\n\nSecondo passaggio: un\'attivita ha bisogno di resistenza. Usa immagini fisiche, perche funzionano. Camminare senza attrito e impossibile, non facile. Nuotare senza acqua non e nuotare benissimo. Una spinta nel vuoto non e una spinta.\n\nTerzo passaggio, ed e la tesi: quello che chiamiamo mondo — il non-Io — non e cio che ci impedisce di essere noi stessi. È cio contro cui possiamo esserlo.\n\nAdesso torna alla macchina, e la classe ci arriva quasi da sola: dentro quella macchina non c\'e niente contro cui spingere. Non e una vita facile. È una vita in cui non si fa niente, e quindi in cui nessuno diventa nessuno.\n\nSubito dopo metti il paletto, e mettilo con forza, perche senza di esso la lezione diventa una brutta predica.\n\nQuesto non significa che il dolore faccia bene. Non significa che le difficolta vadano cercate, ne che una vita dura sia migliore di una fortunata. Fichte dice che senza resistenza non c\'e attivita: e un\'affermazione su come e fatta l\'attivita, non un consiglio su quanto convenga soffrire.\n\nChiedi loro di segnare la differenza, perche la sentiranno rovesciata mille volte nella vita.',
+       seDicono:[
+         {loro:'«Quindi gli ostacoli sono un bene?»',
+          tu:'No, e questo e l\'errore da non fare. Un muro contro cui ti spacchi la testa non ti fa diventare niente. La tesi e strutturale: dove non c\'e nessuna resistenza non c\'e nessuna azione. Quali resistenze convenga avere e un\'altra domanda, e la risposta e caso per caso — e spesso e «meno di quelle che ho».'},
+         {loro:'«L\'io non è nell\'elenco: allora non esiste.»',
+          tu:'Attento, e un\'obiezione seria — la fecero anche a lui. Fichte risponde che non e nell\'elenco perche non e quel tipo di cosa: e cio che sta facendo l\'elenco. Puoi non essere d\'accordo, ed e la posizione di chi dice che l\'io e un\'illusione utile. Tienila da parte: la ritroveremo, e ci sara chi la sostiene molto bene.'}
+       ]},
+
+      {minuti:'28–38', et:'Il testo',
+       schermo:'Dalla Prima introduzione\nalla dottrina della scienza,\n1797.\n\nCi sono due filosofie possibili.\n\nUna comincia dalla cosa\ne prova a ricavarne\nla coscienza.\n\nL\'altra comincia dall\'io\ne prova a ricavarne\nil mondo.\n\nNessuna delle due\npuo confutare l\'altra,\n\nperche ciascuna nega\nesattamente il punto\nda cui l\'altra parte.\n\nE allora Fichte scrive:\n\nquale filosofia si scelga\ndipende\nda quale uomo si e.\n\nPerche un sistema filosofico\nnon e un mobile morto\nche si possa prendere\ne lasciare a piacere;\n\ne animato\ndall\'anima\ndell\'uomo che lo ha.',
+       testo:{fonte:'Johann Gottlieb Fichte, Prima introduzione alla dottrina della scienza (1797)',
+              glossa:'Il passo contiene un\'ammissione rara e una mossa discutibile, e in classe vanno separate. L\'ammissione: un sistema di pensiero ha un punto di partenza che non si dimostra, perché dimostrarlo richiederebbe già di aver cominciato da qualche parte. Vale per qualunque discussione in cui due persone partono da premesse diverse senza accorgersene, ed è il motivo per cui certi disaccordi non si sciolgono mai. La mossa discutibile viene subito dopo: Fichte aggiunge che chi non ha ancora un io proprio si aggrappa alle cose, cioè spiega il dissenso con l\'immaturità dell\'avversario. Così un limite logico diventa un giudizio sulla persona, e la discussione si chiude invece di aprirsi. È una tecnica che chiunque può usare contro chiunque, e vale la pena saperla riconoscere.'},
+       parlato:'Leggi il passo e dividilo in due, perche le due meta vanno giudicate in modo diverso.\n\nPrima meta: nessuno dei due sistemi puo confutare l\'altro. Falli riflettere su che cosa significhi. Non che uno dei due sia sbagliato, ma che la discussione non ha un terreno comune: ciascuno nega il punto da cui l\'altro comincia.\n\nFai trovare esempi loro, e ne trovano di ottimi. Due che discutono se una regola sia giusta partendo, uno, dall\'idea che conti l\'intenzione e, l\'altro, dall\'idea che contino le conseguenze. Discutono per un\'ora senza spostarsi di un centimetro, e il motivo non e che siano stupidi.\n\nEnuncia lo strumento: quando una discussione non si muove, spesso il disaccordo non e sull\'argomento ma sul punto di partenza. E il punto di partenza, quasi sempre, nessuno dei due lo ha detto ad alta voce.\n\nSeconda meta: qui cambia registro e va guardata con sospetto. Dire che chi non ti segue non ha ancora un io proprio significa spiegare il dissenso con un difetto della persona.\n\nMostra quanto sia comoda. Funziona sempre, non si puo confutare, e chiunque puo usarla: chi non e d\'accordo con me non ha capito, non e maturo, non ha vissuto abbastanza.\n\nChiedi alla classe di riconoscere dove l\'hanno gia sentita. Ne trovano subito: nelle discussioni politiche, in famiglia, fra loro.\n\nChiudi il tempo dicendo che le due meta stanno nella stessa pagina, e che riconoscerle separatamente e piu utile che decidere se l\'autore fosse bravo o no.',
+       seDicono:[
+         {loro:'«Allora ogni opinione vale l\'altra.»',
+          tu:'No, e la conclusione sbagliata piu frequente. Che il punto di partenza non si dimostri non significa che tutto sia uguale: si puo ancora controllare la coerenza, la portata, che cosa spiega e che cosa lascia fuori. Un sistema si giudica dall\'opera, non dal primo passo — e su questo si discute eccome.'},
+         {loro:'«È solo un modo per non ammettere di aver perso.»',
+          tu:'Nella seconda meta della frase, spesso sì, e hai visto giusto. Nella prima no: l\'osservazione che due sistemi possano non avere terreno comune e vera e scomoda anche per lui. La cosa interessante e che l\'onesta e la furbizia stiano nello stesso paragrafo — capita a molti, e va saputo leggere.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'1806.\n\nNapoleone distrugge\nl\'esercito prussiano\na Jena.\n\nBerlino e occupata.\n\n1807.\n\nIn quella citta,\ncon i soldati francesi\nper strada,\n\nFichte tiene\nquattordici discorsi pubblici.\n\nE applica\nla sua idea\na un popolo intero.\n\nUn popolo, dice,\ndiventa se stesso\nsolo se trova\ncio che lo limita,\n\ne se si rifa\ndalle fondamenta\ncon l\'educazione.\n\nFin qui\npuo suonare bene.\n\nPoi aggiunge\nuna cosa\nche non suona bene\nper niente:\n\nche i tedeschi\nsarebbero il popolo\noriginario,\n\nperche hanno conservato\nuna lingua viva,\n\nmentre gli altri\nparlano lingue derivate\ne quindi\nnon pensano davvero\ncon parole proprie.\n\nQuindici anni prima\nlo stesso uomo\navevo scritto\nin difesa\ndella Rivoluzione francese\ne della liberta\ndi pensiero.',
+       parlato:'Racconta la scena prima della tesi, perche il contesto conta: citta occupata, professore che parla in pubblico, rischio reale.\n\nPoi mostra il passaggio, ed e la cosa concettualmente piu importante dell\'ora. Lo schema e lo stesso: un soggetto si costituisce trovando una resistenza. Cambia solo il soggetto — non piu una coscienza, ma un popolo.\n\nFai vedere che cosa cambia quando cambia il soggetto, e falli ragionare. Se io divento me stesso opponendomi a qualcosa, quel qualcosa e il mondo, che non ha opinioni. Se un popolo diventa se stesso opponendosi a qualcosa, quel qualcosa e un altro popolo — cioe delle persone.\n\nQuesto e il punto: una struttura che funziona per una coscienza, applicata a un collettivo, produce un nemico.\n\nPoi la tesi sulla lingua originaria, e va detto chiaramente che e falsa: nessun linguista la sostiene, il tedesco e derivato quanto le altre. E va detto altrettanto chiaramente che e pericolosa, perche fornisce lo schema di una superiorita fondata sull\'origine, che altri useranno molto peggio di lui.\n\nPoi rendi giustizia alla complicazione, senza attenuare. Nei Discorsi Fichte propone un\'educazione pubblica gratuita per tutti, maschi e femmine, e sostiene che essere tedeschi non dipenda dalla nascita ma dal partecipare a una cultura. Non e una dottrina razziale. E fornisce comunque materiale a chi ne costruira una.\n\nChiudi con la domanda che li tiene, e lasciala aperta: fino a che punto un autore risponde di quello che altri faranno delle sue idee?',
+       seDicono:[
+         {loro:'«Era sotto occupazione, è comprensibile.»',
+          tu:'Il contesto spiega molto e non giustifica tutto, e la distinzione e importante. Capire perche qualcuno abbia scritto una cosa non equivale ad approvarla. Nota anche che altri, nella stessa citta e negli stessi mesi, non hanno scritto quelle pagine — quindi l\'occupazione non bastava.'},
+         {loro:'«Allora è colpa sua se poi è successo quello che è successo.»',
+          tu:'Attento anche al salto opposto. Fra i suoi Discorsi e il Novecento passano cent\'anni, altri autori e scelte politiche di persone vive. Chi lo condanna in blocco gli attribuisce un potere che non aveva; chi lo assolve in blocco fa finta che quelle pagine non ci siano. Tenere insieme le due cose e piu faticoso ed e l\'unico modo onesto.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'Torniamo alla macchina.\n\nAdesso sapete dire\nche cosa manca.\n\nNon manca la fatica.\n\nManca\nqualcosa contro cui\nessere qualcuno.\n\nDa portarsi via\ndue cose,\ne tenetele separate.\n\nLa prima.\n\nPrima di volere una cosa,\nchiedetevi se volete\naverla\n\no diventarla.\n\nSe volete averla,\nprendete la scorciatoia\npiu breve\nche esiste,\n\ne non sentitevi in colpa.\n\nSe volete diventarla,\n\nla scorciatoia\nnon vi porta li,\n\nperche li\nnon ci si arriva:\nci si diventa.\n\nLa seconda.\n\nQuando qualcuno vi dice\nche non capite\nperche non siete\nabbastanza maturi,\n\nnon vi ha risposto.\n\nVi ha solo detto\nchi e lui.',
+       parlato:'Riprendi lo schieramento e chiedi se qualcuno si sposterebbe. Poi da\' i due strumenti, tenendoli ben distinti, perche vengono da due momenti diversi della lezione.\n\nPrimo strumento: avere o diventare. Fai fare esempi loro e sistemali in due colonne. Nella prima finiscono soldi, oggetti, informazioni, risultati. Nella seconda finiscono saper fare qualcosa, essere una certa persona, avere un rapporto con qualcuno.\n\nMostra che l\'errore piu comune e trattare le cose della seconda colonna come se fossero della prima: cercare la scorciatoia per essere qualcuno. Non e pigrizia, e un errore di categoria.\n\nSecondo strumento: la mossa che dichiara immaturo chi dissente. Falli riconoscere, e ammettere che la usano anche loro. Poi da\' la regola pratica: si puo dire a qualcuno che sbaglia e mostrargli dove; dirgli che non e ancora in grado di capire non e una risposta, ed e il modo piu elegante di chiudere una porta.\n\nUltima cosa, sull\'autore. Fichte e figlio di tessitori, e stato notato per caso da un nobile arrivato tardi in chiesa, ha fatto il precettore per quindici anni, ha perso la cattedra per una disputa sull\'ateismo e ha costruito una filosofia in cui l\'io non e cio che si trova ma cio che si fa. Poi ha preso quella stessa idea e l\'ha applicata a un popolo, ottenendo pagine che non reggono. Le due cose sono dello stesso uomo, e non si annullano a vicenda.\n\nPer il seguito: se l\'io e attivita e il mondo e il suo ostacolo, resta da chiedersi che cosa sia la natura per conto proprio. La prossima volta si parte da Schelling, che quella domanda l\'ha presa sul serio contro il suo maestro.',
+       seDicono:[
+         {loro:'«Ma allora dovrei cercarmi le difficoltà?»',
+          tu:'No, e vale la pena ripeterlo perche la confusione e resistente. La vita ne fornisce abbastanza senza bisogno di ordinarne altre. La tesi e che dove non incontri nulla non fai nulla — non che ti convenga incontrare piu ostacoli possibile. Fra questi due, in mezzo, c\'e tutta la differenza fra una filosofia e una frase da poster.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'La predica ripetuta',
+       corpo:'Fichte nasce nel 1762 in un villaggio della Sassonia, in una famiglia di tessitori. Non ci sono libri in casa e nessuna prospettiva di studio.\n\nSecondo il racconto tramandato, un nobile della zona arriva in chiesa a predica finita e si lamenta di averla persa. Gli indicano un bambino di nove anni che l\'ha ascoltata e che, chiamato, la ripete quasi per intero. Il nobile decide di farlo studiare a proprie spese.\n\nQuel protettore muore pochi anni dopo, e Fichte passa quindici anni fra collegi, precettorati e povertà prima di riuscire a pubblicare qualcosa.',
+       chiedi:'Una vita intera dipende dal fatto che un uomo sia arrivato tardi in chiesa. Quante persone con le stesse capacità non hanno incontrato nessuno? E che cosa dovrebbe fare un sistema scolastico che prendesse sul serio questa domanda?'},
+      {titolo:'La disputa sull\'ateismo',
+       corpo:'Nel 1798 Fichte pubblica un articolo in cui identifica Dio con l\'ordine morale del mondo: non un essere che esiste accanto agli altri, ma l\'ordine vivente secondo cui l\'agire ha senso.\n\nUn opuscolo anonimo lo accusa di ateismo. I governi tedeschi minacciano di vietare ai propri studenti di iscriversi a Jena.\n\nFichte si difende con uno scritto durissimo e invia alle autorità una lettera in cui annuncia che, se sarà censurato, si dimetterà, insieme ad altri colleghi. Le dimissioni vengono accettate immediatamente. Perde la cattedra e lascia Jena.',
+       chiedi:'Aveva ragione nel merito e ha perso tutto per come ha condotto la difesa. Che cosa si deve a se stessi in una situazione del genere: la coerenza fino in fondo, o restare al proprio posto per continuare a fare il proprio lavoro? E la risposta cambia se al suo posto c\'è qualcuno che dipende da voi?'},
+      {titolo:'Lo Stato che chiude i confini',
+       corpo:'Nel 1800 Fichte pubblica Lo Stato commerciale chiuso. Vi sostiene che a ciascuno spetti il diritto di vivere del proprio lavoro, e che questo non possa essere garantito dal mercato.\n\nPropone quindi uno Stato che divida i cittadini in tre classi produttive, assegni a ciascuno un mestiere, fissi i prezzi, garantisca l\'acquisto di ciò che viene prodotto e chiuda i confini al commercio estero, emettendo una moneta valida solo all\'interno.\n\nÈ il primo progetto moderno di economia interamente pianificata, ed è scritto dieci anni prima che la parola socialismo esista.',
+       chiedi:'Garantire a ciascuno di vivere del proprio lavoro richiede di stabilire quale lavoro faccia. Il prezzo vi sembra accettabile? E se no, indicate quale parte della promessa siete disposti a lasciare cadere — perché una delle due deve cadere.'}
+    ],
+    testi:[
+      {fonte:'Fichte, Fondazione dell\'intera dottrina della scienza (1794)',
+       corpo:'Fichte sostiene che l\'Io ponga originariamente il proprio essere, e che ciò che è per l\'Io sia posto dall\'Io: non si tratta di un fatto che si constati, ma di un\'azione che nel compiersi produce chi la compie, per cui l\'Io è insieme l\'agente e il prodotto dell\'azione.',
+       glossa:'È il primo principio, e la difficoltà sta nel non leggerlo come una stravaganza. Non dice che ciascuno di noi crei il mondo: dice che il soggetto non è una cosa che si trovi da qualche parte, ma un\'attività che esiste solo mentre si esercita. Il modo più efficace di renderlo in classe è per analogia: non si è coraggiosi e poi si compiono atti coraggiosi, si diventa coraggiosi compiendoli — e smettendo, si smette.'},
+      {fonte:'Fichte, La missione del dotto, lezioni prima e quarta (1794)',
+       corpo:'Fichte sostiene che l\'uomo non sia destinato al puro sapere, ma che il sapere sia in vista dell\'agire; e che chi ha ricevuto una formazione superiore l\'abbia ricevuta a spese della società, verso cui contrae per questo un debito: il dotto deve essere il maestro del genere umano, e la sua vocazione consiste nel vigilare sul progresso comune.',
+       glossa:'Sono le lezioni pubbliche con cui inaugura l\'insegnamento a Jena, e l\'aula era piena anche di studenti di altre facoltà. Il testo si legge ancora perché rovescia l\'idea che lo studio sia un privilegio da godere: chi studia consuma risorse prodotte da altri, e il debito si paga restituendo. Va detto in classe che a scriverlo è un ex precettore che ha passato quindici anni in povertà.'},
+      {fonte:'Fichte, Discorsi alla nazione tedesca, discorsi quarto e secondo (1808)',
+       corpo:'Fichte sostiene che un popolo che parli una lingua originaria, cioè sviluppata senza interruzione dalle proprie radici, pensi con parole proprie e viva, mentre un popolo che abbia adottato una lingua straniera divenuta poi propria non possa che ricevere il pensiero già fatto; e propone una nuova educazione nazionale, pubblica e uguale per tutti, che formi la volontà invece di trasmettere nozioni.',
+       glossa:'Il testo va letto tenendo insieme due cose che i lettori tendono a separare. La tesi sulle lingue originarie è priva di fondamento linguistico e fornisce lo schema di una superiorità fondata sull\'origine, che sarà ripresa in contesti ben peggiori. Il progetto educativo, nello stesso libro, prevede istruzione pubblica gratuita per tutti, femmine comprese, e definisce l\'appartenenza per partecipazione culturale e non per nascita. Sono i due volti dello stesso testo, pronunciato in una città sotto occupazione militare.'}
+    ],
+    compito:'Mezza pagina. Fate due colonne. Nella prima scrivete tre cose che volete avere; nella seconda tre cose che volete diventare. Poi prendete una voce della seconda colonna e chiedetevi onestamente: mi sto comportando come se fosse della prima, cioè sto cercando una scorciatoia? Descrivete che cosa fareste se smetteste di cercarla — e quanto tempo, realisticamente, ci vorrebbe.',
+    fonti:[
+      'J. G. Fichte, Fondazione dell\'intera dottrina della scienza (1794); Prima e Seconda introduzione (1797)',
+      'La missione del dotto (1794); Fondamento del diritto naturale (1796); La missione dell\'uomo (1800)',
+      'Lo Stato commerciale chiuso (1800); Discorsi alla nazione tedesca (1808)',
+      'L. Pareyson, Fichte. Il sistema della libertà',
+      'A. Philonenko, La liberté humaine dans la philosophie de Fichte',
+      'I. Berlin, Le radici del Romanticismo, il capitolo su Fichte; A. Honneth, Lotta per il riconoscimento'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',
