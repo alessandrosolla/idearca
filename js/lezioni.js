@@ -12859,6 +12859,230 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Filosofia moderna · 23 — Kant: religione, diritto e storia': {
+  mappa: {
+    n:'Kant · religione, diritto e storia', d:'che cosa accade quando la filosofia critica scende fra gli uomini in carne e ossa',
+    f:[
+      {r:'riguarda gli', n:'Ultimi vent\'anni', d:'scritti brevi, spesso usciti su riviste, che nessuno considera minori dopo averli letti',
+       f:[
+         {r:'comincia nel 1784 con l\'', n:'Idea di una storia universale', d:'nove proposizioni su come si possa pensare la storia senza raccontarla'},
+         {r:'prosegue con', n:'Sul detto comune', d:'1793: si dice che una cosa sia giusta in teoria e non valga nella pratica, e Kant risponde che non e vero'},
+         {r:'poi', n:'La religione entro i limiti della sola ragione', d:'1793: l\'unico suo libro che gli procura un provvedimento del re'},
+         {r:'poi', n:'Per la pace perpetua', d:'1795: scritto nella forma di un trattato internazionale, articoli preliminari compresi'},
+         {r:'e infine la', n:'Metafisica dei costumi', d:'1797: la dottrina del diritto e quella della virtu, il sistema che le Critiche avevano preparato'},
+         {r:'con un tratto che li accomuna: parlano a un', n:'Pubblico', d:'non ai colleghi ma ai lettori dei giornali, ed e una scelta politica prima che editoriale',
+          f:[{piu:true, r:'coerente con l\'uso pubblico della ragione rivendicato nel', n:'1784', d:'l\'articolo sull\'Illuminismo non era un programma per altri: era il suo'}]}
+       ]},
+
+      {r:'sulla religione stabilisce che vale solo cio che sta', n:'Entro i limiti della ragione', d:'e la parte restante non e falsa: e semplicemente non necessaria',
+       f:[
+         {r:'distingue la religione', n:'Morale', d:'consiste nel riconoscere i propri doveri come se fossero comandi divini'},
+         {r:'dalla religione del', n:'Culto', d:'preghiere, riti, formule: cio che si fa per ingraziarsi qualcuno invece di comportarsi bene'},
+         {r:'e chiama', n:'Illusione religiosa', d:'credere di piacere a Dio con qualcosa che non sia una vita moralmente buona'},
+         {r:'l\'unica chiesa che conti e', n:'Invisibile', d:'la comunita di chi si sente vincolato dalla stessa legge morale, senza confini confessionali'},
+         {r:'e la figura di Cristo vale come', n:'Archetipo', d:'l\'idea di un\'umanita perfettamente gradita a Dio, che ciascuno porta gia dentro come modello',
+          f:[{piu:true, r:'lettura che gli costa un', n:'Ordine del re', d:'nel 1794 Federico Guglielmo II gli intima per iscritto di non scrivere piu di religione, e lui obbedisce finche quel re e vivo'}]},
+         {r:'e resta la formula sui doveri come', n:'Comandi divini', d:'non Dio fonda la morale, ma la morale porta a pensare Dio: l\'ordine e rovesciato rispetto a tutta la tradizione'}
+       ]},
+
+      {r:'e afferma l\'esistenza di un', n:'Male radicale', d:'la tesi che scandalizza i suoi ammiratori piu dell\'ordine del re',
+       f:[
+         {r:'nell\'uomo c\'e una', n:'Propensione al male', d:'non un istinto animale, ma la tendenza a mettere l\'amor proprio prima della legge quando conviene'},
+         {r:'e si chiama radicale perche sta alla', n:'Radice', d:'non e un\'abitudine acquisita: e nel modo in cui ordiniamo i nostri motivi'},
+         {r:'ma non toglie la', n:'Responsabilita', d:'e una propensione, non una necessita: se non fosse imputabile non sarebbe male'},
+         {r:'la sua forma piu comune non e la crudelta ma la', n:'Disonesta con se stessi', d:'raccontarsi che si e agito per dovere quando si e agito per convenienza'},
+         {r:'e ne segue la necessita di una', n:'Rivoluzione interiore', d:'non un miglioramento graduale, ma un capovolgimento dell\'ordine dei motivi',
+          f:[{piu:true, r:'tesi che fa infuriare', n:'Goethe', d:'lo accusa di aver imbrattato il proprio mantello filosofico con la macchia del peccato originale, per farsi baciare la veste anche dai devoti'}]}
+       ]},
+
+      {r:'sul', n:'Diritto', d:'costruisce la parte piu asciutta e piu attuale della sua opera',
+       f:[
+         {r:'il diritto e l\'insieme delle condizioni per cui l\'arbitrio di uno', n:'Puo accordarsi con quello di un altro', d:'secondo una legge universale di liberta'},
+         {r:'riguarda solo la', n:'Condotta esterna', d:'non chiede con quale motivo si obbedisca: se paghi il debito, al diritto basta'},
+         {r:'e per questo si distingue dalla', n:'Virtu', d:'che chiede invece proprio il motivo, e che nessuna legge puo imporre'},
+         {r:'lo stato di natura non e guerra di tutti ma', n:'Assenza di garanzie', d:'nessun torto e riparabile perche non c\'e un giudice: non e ingiusto, e privo di diritto'},
+         {r:'lo Stato nasce da un', n:'Contratto originario', d:'che non e mai avvenuto: e un\'idea della ragione, il criterio con cui misurare una legge',
+          f:[{r:'per cui una legge e giusta se', n:'Un popolo intero avrebbe potuto darsela', d:'un metro che non chiede archivi e che si puo applicare a qualunque provvedimento, anche domani'}]},
+         {piu:true, r:'e ai cittadini spetta l\'', n:'Uguaglianza davanti alla legge', d:'nessun privilegio ereditario: ognuno puo salire a qualunque posizione i suoi talenti gli permettano di raggiungere'},
+         {r:'e la forma corretta di governo e la', n:'Repubblica', d:'poteri separati e governo rappresentativo, che Kant tiene distinta dalla democrazia diretta'}
+       ]},
+
+      {r:'con alcuni', n:'Punti duri', d:'dove il rigore produce conclusioni che i suoi lettori faticano ad accettare',
+       f:[
+         {r:'nega il', n:'Diritto di resistenza', d:'nessuna ribellione e legittima, nemmeno contro un potere tirannico'},
+         {r:'perche una costituzione non puo contenere l\'autorizzazione ad', n:'Abbatterla', d:'ci vorrebbe un potere superiore a quello supremo, e sarebbe una contraddizione'},
+         {r:'e insieme guarda alla', n:'Rivoluzione francese', d:'con un entusiasmo che non nasconde, pur condannando ogni rivolta'},
+          {r:'perche cio che conta non e il fatto ma la', n:'Simpatia degli spettatori', d:'un\'intera Europa che parteggia senza guadagnarci nulla dimostra che nell\'uomo c\'e una disposizione al meglio'},
+         {r:'sulla pena sostiene la', n:'Retribuzione', d:'si punisce perche si e commesso un reato, non per ottenere un effetto utile'},
+          {r:'e respinge', n:'Beccaria', d:'rifiuta l\'argomento contro la pena di morte, e scrive che l\'ultimo assassino andrebbe giustiziato prima che il popolo si sciolga',
+           f:[{piu:true, r:'con un argomento che ha una faccia', n:'Garantista', d:'punire per l\'esempio significa usare un uomo come mezzo per gli altri: la retribuzione nasce dal divieto di farlo'}]}
+       ]},
+
+      {r:'sulla storia introduce l\'', n:'Insocievole socievolezza', d:'l\'idea per cui il progresso non ha bisogno di uomini buoni',
+       f:[
+         {r:'gli uomini hanno una tendenza ad', n:'Associarsi', d:'da soli non sviluppano nulla'},
+         {r:'e insieme una tendenza a', n:'Isolarsi e a prevalere', d:'ambizione, sete di dominio, invidia'},
+         {r:'e proprio questo antagonismo mette in moto le', n:'Forze', d:'senza la resistenza altrui gli uomini vivrebbero come pastori arcadici, e nulla si svilupperebbe'},
+         {r:'con l\'immagine degli alberi in una', n:'Foresta', d:'crescono dritti e alti perche si tolgono a vicenda aria e luce; isolati crescono storti'},
+         {r:'e con quella del', n:'Legno storto', d:'da un legno cosi storto come quello di cui e fatto l\'uomo non si puo intagliare nulla di perfettamente dritto'},
+         {r:'il compito piu difficile resta la', n:'Costituzione civile perfetta', d:'e non si risolve del tutto, perche chi deve applicarla e fatto dello stesso legno',
+          f:[{piu:true, r:'da cui il problema del', n:'Capo supremo', d:'servirebbe un capo giusto, e va scelto fra gli uomini: e la difficolta che nessun ordinamento elimina, e che si puo solo ridurre'}]}
+       ]},
+
+      {r:'e arriva alla', n:'Pace perpetua', d:'scritta come un trattato, con la serieta di chi propone e l\'ironia di chi sa quanto sembri improbabile',
+       f:[
+         {r:'gli articoli preliminari vietano fra l\'altro gli eserciti', n:'Permanenti', d:'i debiti contratti per fare guerra, e le ingerenze negli affari interni altrui'},
+         {r:'il primo articolo definitivo chiede che ogni Stato sia', n:'Repubblicano', d:'perche dove chi decide la guerra e chi la combatte coincidono, si esita molto di piu'},
+         {r:'il secondo chiede una', n:'Federazione di Stati liberi', d:'non uno Stato mondiale, che diventerebbe un dispotismo, ma una lega che rinuncia alla guerra'},
+         {r:'il terzo istituisce il', n:'Diritto cosmopolitico', d:'limitato a una cosa sola: il diritto di ospitalita'},
+          {r:'cioe il diritto di non essere trattato da nemico quando si arriva sul suolo di un altro', n:'Non e un diritto di stabilirsi', d:'e il diritto di visita, e basta a condannare quel che le potenze europee fanno fuori casa',
+           f:[{piu:true, r:'da cui una condanna esplicita del', n:'Colonialismo', d:'chiama ingiusta fino all\'inverosimile la condotta degli Stati commerciali d\'Europa in America, in Africa e in Asia'}]},
+         {piu:true, r:'con un articolo segreto che prescrive di ascoltare i', n:'Filosofi', d:'non che governino — dice che il possesso del potere corrompe il giudizio — ma che li si lasci parlare liberamente'},
+         {r:'e la garanzia non e la bonta umana ma la', n:'Natura', d:'gli interessi commerciali e i costi della guerra spingono nella stessa direzione dei doveri'}
+       ]},
+
+      {r:'e lascia un\'', n:'Eredita politica', d:'che si vede meglio oggi di quanto si vedesse allora',
+       f:[
+         {r:'la federazione degli Stati e l\'antenata della', n:'Societa delle Nazioni', d:'e poi delle Nazioni Unite: il progetto e citato nei documenti fondativi'},
+         {r:'il diritto di ospitalita anticipa il', n:'Diritto d\'asilo', d:'e le discussioni odierne sulla differenza fra accogliere e lasciare entrare'},
+         {r:'e la tesi che le buone istituzioni valgano piu delle buone intenzioni fonda il', n:'Disegno costituzionale', d:'pesi, contrappesi, separazione dei poteri: si progetta per i cattivi, non per i santi'},
+         {r:'resta pero il limite che nessuno Stato puo rendere i cittadini', n:'Buoni', d:'e un governo che ci provasse sarebbe il peggiore dei dispotismi'},
+          {r:'perche tratterebbe gli adulti come', n:'Minorenni', d:'decidendo per il loro bene cio che spetta a loro decidere'},
+         {r:'e resta il tono generale di un', n:'Ottimismo senza garanzie', d:'il progresso non e assicurato: e un compito, e va perseguito come se dipendesse da noi'}
+       ]}
+    ],
+    incroci:[
+      {da:'Insocievole socievolezza', a:'Repubblicano', r:'e cio che rende necessario che ogni Stato sia',
+       perche:'Se l\'antagonismo e la molla del progresso e insieme la causa della guerra, non si tratta di spegnerlo ma di incanalarlo. La repubblica fa esattamente questo: chi decide la guerra e chi ne paga il prezzo diventano le stesse persone, e l\'interesse egoistico comincia a spingere verso la pace. Non si chiede a nessuno di diventare buono: si cambia la posizione in cui si trova.'},
+      {da:'Legno storto', a:'Capo supremo', r:'e la ragione per cui resta insolubile il problema del',
+       perche:'Ogni ordinamento ha bisogno di qualcuno che lo faccia rispettare, e quel qualcuno e un uomo come gli altri. Kant non finge che il problema si risolva: dice che il compito e insieme il piu difficile e l\'ultimo a essere risolto. È la formulazione piu onesta del problema che ogni costituzione affronta con i controlli reciproci, senza mai chiuderlo del tutto.'},
+      {da:'Condotta esterna', a:'Buoni', r:'e la ragione per cui lo Stato non puo rendere i cittadini',
+       perche:'Il diritto si accontenta che le azioni siano conformi, e non chiede il motivo. La morale chiede il motivo e nessuno puo imporlo dall\'esterno: un dovere adempiuto per paura non e piu un dovere adempiuto. Da questa distinzione tecnica discende un limite politico enorme: il potere non ha titolo per occuparsi delle intenzioni.'},
+      {da:'Minorenni', a:'1784', r:'riprende alla lettera l\'articolo del',
+       perche:'La minorita e l\'incapacita di servirsi della propria intelligenza senza la guida di un altro, e nel 1784 riguardava chi si lascia guidare. Nove anni dopo la stessa parola serve a giudicare un governo: un potere che decide per il bene dei sudditi li tratta da minorenni e produce quella incapacita invece di curarla. Lo strumento e lo stesso, applicato da chi comanda.'},
+      {da:'Diritto di resistenza', a:'Rivoluzione francese', r:'e in tensione con l\'entusiasmo per la',
+       perche:'Kant nega ogni legittimita alla ribellione e insieme non nasconde di parteggiare per quel che accade a Parigi. La via d\'uscita che indica e sottile: cio che conta come segno storico non e l\'atto rivoluzionario, che resta illegittimo, ma la simpatia disinteressata degli spettatori. Molti lettori la considerano una scappatoia; e comunque il punto in cui la sua politica e piu tirata.'},
+      {da:'Disonesta con se stessi', a:'Un popolo intero avrebbe potuto darsela', r:'e cio che il criterio serve a smascherare quando si chiede se',
+       perche:'La forma piu comune del male radicale e raccontarsi buone ragioni per cio che si e fatto per interesse, e vale anche per i legislatori. Il criterio del contratto e costruito per neutralizzare quella disonesta: non chiede se il provvedimento sia utile o ben intenzionato, ma se un popolo intero avrebbe potuto volerlo. È una prova che si puo applicare senza conoscere le intenzioni di nessuno.'},
+      {da:'Illusione religiosa', a:'Comandi divini', r:'e cio che si evita riconoscendo i doveri come',
+       perche:'La formula sembra riportare Dio al centro e fa il contrario: non dice che una cosa sia doverosa perche Dio la comanda, ma che i doveri, gia stabiliti dalla ragione, si possono guardare come se fossero comandi. Chi inverte l\'ordine ricade nell\'illusione di poter piacere a Dio con qualcosa che non sia una vita buona — riti, formule, offerte.'},
+      {da:'Archetipo', a:'Rivoluzione interiore', r:'serve a rendere pensabile la',
+       perche:'Se c\'e una propensione al male che sta alla radice, il miglioramento graduale non basta: occorre capovolgere l\'ordine dei motivi, e a chi e dentro quell\'ordine sembra impossibile. L\'idea di un\'umanita perfettamente buona serve come modello gia presente nella ragione: non un uomo da imitare nei dettagli, ma la prova che quella disposizione e pensabile e quindi esigibile.'},
+      {da:'Garantista', a:'Puo accordarsi con quello di un altro', r:'discende dal concetto stesso di diritto come cio che',
+       perche:'La posizione di Kant sulla pena e insieme la piu dura e la piu protettiva. Punire per dare l\'esempio significa usare un condannato come mezzo per ottenere un effetto sugli altri, e questo il diritto non lo consente; la pena deve corrispondere al fatto commesso e non superarlo. La stessa premessa che porta alla pena di morte impedisce di aggravare una pena perche fa comodo.'},
+      {da:'Federazione di Stati liberi', a:'Societa delle Nazioni', r:'e il progetto che riemerge nella',
+       perche:'Kant rifiuta esplicitamente lo Stato mondiale, che diventerebbe un dispotismo senza contrappesi, e propone una lega di Stati che restano sovrani e rinunciano alla guerra fra loro. È esattamente la struttura — e la debolezza — delle organizzazioni internazionali del Novecento: nessun potere coercitivo sui membri, e la coesione affidata all\'interesse e alla pressione reciproca.'},
+      {da:'Colonialismo', a:'Non e un diritto di stabilirsi', r:'e condannato proprio perche l\'ospitalita',
+       perche:'Il diritto cosmopolitico e ridotto al minimo: chi arriva non puo essere trattato da nemico, e questo non gli da nessun titolo sul luogo in cui arriva. Ne segue che le potenze europee, arrivando come visitatori e comportandosi come proprietari, violano il solo diritto internazionale che Kant riconosca. Il capitolo va letto insieme alle pagine del suo corso di geografia, che quei popoli li giudicava con i pregiudizi delle proprie fonti.'},
+      {da:'Foresta', a:'Forze', r:'e l\'immagine che rende visibile come l\'antagonismo metta in moto le',
+       perche:'Gli alberi si tolgono a vicenda aria e luce e proprio per questo crescono dritti e alti, mentre quello isolato cresce storto. L\'immagine dice due cose insieme: che la costrizione reciproca produce un risultato che nessuno voleva, e che quel risultato e migliore di quello ottenuto in liberta. È l\'idea che passera in economia come mano invisibile e in filosofia della storia come astuzia della ragione.'},
+      {da:'Ottimismo senza garanzie', a:'Natura', r:'si appoggia a una garanzia affidata alla',
+       perche:'Kant non promette che la pace arrivi: dice che gli interessi commerciali, i costi crescenti della guerra e la spinta a associarsi lavorano nella stessa direzione dei doveri. Non e una previsione ne una consolazione, ed e la parte piu fragile del suo ottimismo: fa dipendere l\'esito da meccanismi che oggi sappiamo poter funzionare anche al contrario.'}
+    ]
+  },
+  provocazione: {
+    titolo:'Un popolo di diavoli',
+    durata:'55 minuti',
+    domandaMadre:'Per avere uno Stato giusto servono cittadini buoni?',
+    perche:'Nella Pace perpetua Kant scrive che il problema di fondare uno Stato e risolubile anche per un popolo di demoni, purche abbiano intelletto. La frase e sorprendente in se e lo diventa di piu sapendo chi la scrive: l\'uomo che ha fondato la morale sull\'intenzione e che ha negato valore a qualunque azione compiuta per convenienza. La classe deve sentire la contraddizione, scoprire che non c\'e — perche il diritto e la morale rispondono a due domande diverse — e uscire con lo strumento piu utile della filosofia politica moderna: quando qualcosa non funziona, chiedersi se il problema stia nelle persone o nella posizione in cui le regole le mettono. E con il limite che Kant pone subito dopo: uno Stato che volesse rendere buoni i cittadini sarebbe il peggiore dei dispotismi.',
+    occorrente:'Niente.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'Un problema pratico.\n\nVolete una scuola\nin cui nessuno copia.\n\nDue strade.\n\nLa prima:\nconvincere tutti\nche copiare e sbagliato.\n\nLa seconda:\nfare in modo\nche copiare\nnon convenga.\n\nQuale funziona?\n\nAdesso la versione grande.\n\nVolete uno Stato\nin cui nessuno rubi,\nnessuno abusi del potere,\nnessuno scateni\nla guerra.\n\nStessa domanda.\n\nServono persone giuste,\n\noppure basta\nche rubare\nnon convenga?',
+       parlato:'Comincia dal caso piccolo, che li riguarda e su cui hanno opinioni precise.\n\nFai votare a mano alzata sulle due strade per la scuola, e conta.\n\nPoi chiedi qualcosa di piu scomodo, e falla sul serio: quale delle due funziona davvero, per esperienza vostra? Non quale sia piu nobile — quale funzioni.\n\nDi solito ammettono, ridendo, che la seconda funziona meglio. E qualcuno si sente in colpa ad ammetterlo: quello e il momento buono.\n\nNota con loro che le due strade non sono lo stesso tipo di cosa. La prima vuole cambiare le persone. La seconda vuole cambiare la situazione in cui si trovano.\n\nPoi porta il problema alla scala grande e lascia la domanda aperta. Non anticipare niente.\n\nUltima riga prima di passare oltre: annuncia che il filosofo che ha sostenuto piu di ogni altro che conta solo l\'intenzione, e non il risultato, su questa domanda risponde in un modo che vi sorprendera.',
+       seDicono:[
+         {loro:'«Se cambi solo le regole, la gente resta disonesta.»',
+          tu:'Vero, e tienilo: e la meta seria della questione. Ti chiedo pero una cosa: quando prendi un aereo, ti fidi perche pensi che i meccanici siano brave persone, o perche sai che ci sono controlli, registri e responsabilita? La risposta onesta dice qualcosa su come funzionano le cose che ci tengono in vita.'},
+         {loro:'«Servono tutte e due.»',
+          tu:'Probabilmente sì, ed e la risposta di quasi tutti. Oggi ti chiedo di scegliere lo stesso, perche la domanda vera e un\'altra: se ne potessi avere una sola, quale sceglieresti? E soprattutto: quale delle due puo essere costruita da chi governa?'}
+       ]},
+
+      {minuti:'8–17', et:'Lo schieramento',
+       schermo:'Due posizioni.\n\nA.\nUno Stato giusto\nrichiede cittadini giusti.\nSenza persone oneste\nnessuna regola tiene.\n\nB.\nUno Stato giusto\nrichiede buone regole.\nCon le regole giuste\nfunziona anche\ncon persone egoiste.\n\nSchieratevi.',
+       opzioni:['serve prima di tutto che le persone siano giuste', 'bastano buone regole, anche con persone egoiste'],
+       parlato:'Fai schierare e conta. Di solito la A e maggioritaria, perche suona meglio.\n\nMetti alla prova la A con una domanda sola: come si fabbricano i cittadini giusti?\n\nLe risposte sono sempre le stesse: l\'educazione, la famiglia, l\'esempio. Accettale e poi chiedi chi debba occuparsene. Se rispondono la scuola, chiedi chi decide che cosa insegnare. Se rispondono lo Stato, sei arrivato dove volevi: uno Stato che si incarica di rendere buoni i cittadini decide che cosa sia buono. Lascia sentire il problema senza risolverlo.\n\nPoi metti alla prova la B, con altrettanto rigore. Se bastano le regole, chi le scrive? Anche i legislatori sono egoisti. E allora chi controlla i controllori?\n\nQui la classe si accorge che nessuna delle due posizioni si regge da sola, ed e il punto in cui il problema diventa serio invece che scolastico.\n\nChiudi il tempo con un\'osservazione concreta, che li aggancia: guardate come e fatta una costituzione moderna. Poteri divisi, mandati a scadenza, controlli incrociati. Nessuna di queste cose serve se chi governa e onesto. Sono tutte progettate pensando che potrebbe non esserlo.',
+       seDicono:[
+         {loro:'«Ma se tutti fossero onesti non servirebbero le leggi.»',
+          tu:'Esatto, ed e un\'osservazione piu profonda di quanto sembri. Le regole non nascono per le persone oneste: nascono per il caso in cui non lo siano. Un sistema che funziona solo con brave persone non e un sistema: e una speranza. E le speranze, in politica, si sono rivelate molto costose.'},
+         {loro:'«Chi controlla i controllori?»',
+          tu:'È la domanda giusta, ha duemila anni, e la risposta moderna non e trovare un controllore perfetto: e fare in modo che si controllino a vicenda. Non elimina il problema, lo distribuisce. Fra poco vedremo che Kant lo dice esattamente cosi, e che ammette di non poterlo risolvere del tutto.'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'Come ci arriva Kant.\n\n1784.\nParte da un\'osservazione\nsugli uomini.\n\nHanno bisogno\ndi stare insieme:\nda soli\nnon sviluppano niente.\n\nE non si sopportano:\nvogliono prevalere,\ninvidiano,\ncomandano.\n\nLui la chiama\ninsocievole socievolezza.\n\nE dice una cosa\nche non ci si aspetta.\n\nSenza quella parte cattiva\n\nnon ci sarebbe stato\nnessun progresso.\n\nGli uomini vivrebbero\ncome pastori\nin un\'arcadia,\nbuoni, contenti\ne senza aver fatto niente.\n\nGuardate una foresta.\n\nGli alberi crescono\ndritti e altissimi\nperche si rubano\nla luce a vicenda.\n\nQuello che cresce da solo\nin mezzo a un campo\n\ncresce storto.',
+       parlato:'Costruisci la tesi lentamente, perche e controintuitiva e i ragazzi la sentono come cinica prima di capirla.\n\nPrimo passaggio: l\'osservazione di fatto. Abbiamo bisogno degli altri e non li sopportiamo. Falli riconoscere in questo, e si riconoscono subito.\n\nSecondo passaggio, ed e la mossa: quella tensione non e solo un male da sopportare, e il motore. L\'ambizione, l\'invidia, il desiderio di contare hanno prodotto scienza, arti, leggi.\n\nTerzo passaggio: l\'immagine della foresta. Falla lavorare, perche dice piu di una definizione. La costrizione reciproca produce un risultato che nessun albero voleva, e che nessuno avrebbe ottenuto in liberta.\n\nQuarto passaggio: il legno storto. Kant scrive che da un legno cosi storto come quello di cui e fatto l\'uomo non si puo intagliare nulla di perfettamente dritto. Chiedi che cosa ne segua, e falli arrivare da soli: che la politica non deve aspettarsi materiale migliore di quello che ha.\n\nQuinto passaggio, il piu importante: chi fa le regole e fatto dello stesso legno. Kant lo dice esplicitamente — servirebbe un capo giusto, e va scelto fra gli uomini. Dichiara il problema irrisolvibile in modo perfetto, e affrontabile.\n\nAdesso la classe e pronta per il testo.',
+       seDicono:[
+         {loro:'«Allora è un bene che ci siano gli egoisti?»',
+          tu:'Non e un bene: e un fatto, e Kant dice che se ne puo ricavare qualcosa. Attento pero a non fare il passo in piu, che e quello sbagliato: dire che l\'egoismo produce buoni effetti non lo rende giusto. Chi calpesta gli altri per arrivare primo non e assolto dal fatto che la competizione, in generale, produca risultati.'},
+         {loro:'«Sembra il darwinismo sociale.»',
+          tu:'Assomiglia, e la differenza e decisiva: qui non si dice che il forte debba vincere, si dice che l\'antagonismo va incanalato dentro un ordinamento che protegge tutti. Kant scrive nella stessa pagina che il compito e arrivare a una costituzione in cui la liberta di ciascuno stia con quella degli altri. Il conflitto e la molla, la legge e il contenitore.'}
+       ]},
+
+      {minuti:'28–38', et:'Il testo',
+       schermo:'Dalla Pace perpetua,\n1795.\n\nIl problema\ndella fondazione\ndi uno Stato,\n\nper quanto suoni duro,\n\ne risolubile\nanche per un popolo di demoni,\n\npurche abbiano intelletto.\n\nIl problema suona cosi:\n\nordinare una massa\ndi esseri ragionevoli\nche tutti insieme\nesigono leggi universali\nper la propria conservazione,\n\nma ciascuno dei quali\ne segretamente incline\na farne eccezione\nper se stesso,\n\ne ordinarla in modo\nche, per quanto\ni loro atteggiamenti privati\nsi oppongano fra loro,\n\nquesti si contengano\na vicenda\n\ncosi che il risultato pubblico\nsia lo stesso\n\nche se non avessero\nquelle cattive disposizioni.',
+       testo:{fonte:'Immanuel Kant, Per la pace perpetua, primo supplemento (1795)',
+              glossa:'È il passo più citato della filosofia politica di Kant, e va letto notando le due condizioni. La prima è «purché abbiano intelletto»: non si chiede bontà, si chiede la capacità di calcolare il proprio interesse a lungo termine, e senza quella nessun meccanismo funziona. La seconda è nella definizione del problema: ciascuno vuole leggi universali e insieme un\'eccezione per sé. Kant non dice che gli uomini siano cattivi, dice che sono esattamente così — e che una costituzione ben congegnata ottiene lo stesso risultato pubblico che si otterrebbe con dei santi, non trasformando nessuno ma facendo in modo che le spinte private si blocchino a vicenda. È il principio che sta dietro alla separazione dei poteri e a ogni sistema di contrappesi.'},
+       parlato:'Leggi il passo e fermati sulle due condizioni, perche quasi tutti ricordano solo la prima meta della frase.\n\nPrima condizione: purche abbiano intelletto. Chiedi che cosa significhi. Significa saper calcolare, e calcolare lontano. Un demone stupido non si lascia governare da nessun meccanismo, perche non capisce che gli conviene.\n\nSeconda condizione, che e nella definizione del problema: ciascuno vuole leggi valide per tutti e un\'eccezione per se. Fai notare quanto sia esatto. Nessuno vuole che i semafori vengano aboliti; tutti passerebbero volentieri con il rosso quando hanno fretta.\n\nPoi il meccanismo. Non si chiede a nessuno di cambiare: si dispongono le forze in modo che si blocchino a vicenda. Il risultato pubblico e lo stesso che se fossero buoni.\n\nFai trovare a loro degli esempi, e vengono fuori bene: chi taglia la torta non sceglie la fetta; due firme necessarie su un pagamento; l\'arbitro che non appartiene a nessuna delle due squadre; l\'anonimato dei compiti corretti.\n\nEnuncia il principio in forma pulita: si progetta un sistema pensando alle persone come sono, non come si vorrebbe che fossero.\n\nPoi la domanda che apre l\'ultimo pezzo: e allora la morale a che cosa serve?',
+       seDicono:[
+         {loro:'«Kant aveva una pessima opinione degli uomini.»',
+          tu:'Meno di quanto sembri. Non dice che siamo demoni: dice che il sistema deve reggere anche in quel caso. È come costruire un ponte per un peso maggiore di quello previsto. E nota che la frase e nello stesso libro in cui sostiene che la pace sia possibile — e un realista sui mezzi, non sui fini.'},
+         {loro:'«Se funziona con i demoni, la morale è inutile.»',
+          tu:'Tieni la domanda, perche e esattamente quella giusta e ci arriviamo adesso. Anticipo solo questo: le regole ottengono comportamenti, non intenzioni. Se ti fermi al rosso perche c\'e la telecamera, il traffico funziona e tu non sei diventato una persona migliore. Kant sa distinguere i due risultati meglio di chiunque.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'Adesso il problema.\n\nQuesto lo scrive\nlo stesso uomo\nche ha sostenuto\n\nche un\'azione\nvale solo\nper l\'intenzione,\n\ne che chi fa il proprio dovere\nper convenienza\nnon ha fatto\nniente di morale.\n\nSi e contraddetto?\n\nNo.\n\nSta rispondendo\na due domande diverse.\n\nChe cosa devo fare io:\nquesta e la morale,\ne guarda il motivo.\n\nCome dobbiamo\norganizzarci noi:\nquesto e il diritto,\ne guarda solo\ni comportamenti.\n\nE adesso\nla conseguenza\nche quasi nessuno si aspetta.\n\nSe il diritto\nnon puo toccare le intenzioni,\n\nallora nessuno Stato\npuo rendere buoni\ni cittadini.\n\nE se ci provasse?\n\nKant risponde\nnel 1793:\n\nun governo\nche trattasse i sudditi\ncome un padre\ntratta i figli,\n\ndecidendo\nche cosa e bene per loro,\n\nsarebbe\nil peggiore dei dispotismi.',
+       parlato:'Presenta prima la contraddizione apparente e lascia che la classe provi a scioglierla. Ci prova, e di solito ci arriva vicino.\n\nPoi da\' la distinzione in modo netto, perche e la cosa che devono portarsi via. Due domande diverse, due criteri diversi. Al diritto interessa che tu non rubi. Alla morale interessa perche non rubi. Sono compatibili proprio perche non chiedono la stessa cosa.\n\nPoi il secondo rovesciamento, e vale la pena rallentare. Se lo Stato non puo occuparsi delle intenzioni, non e una mancanza: e una protezione.\n\nFai capire perche, con la parola giusta. Kant chiama paternalistico il governo che decide che cosa sia bene per i sudditi, e lo definisce il peggiore dei dispotismi. Non il piu crudele — il peggiore. Chiedi ai ragazzi perche mai, dato che un padre vuole il bene dei figli.\n\nGuidali fino al punto: perche tratta adulti come minorenni, e cosi produce l\'incapacita che dice di voler curare. E perche un potere che vuole il tuo bene non incontra mai un limite: quello crudele almeno sa di esserlo.\n\nApri la discussione sui casi concreti, e sono i loro: il casco obbligatorio, la cintura, i divieti sul fumo, i filtri su internet, il telefono a scuola. Sono tutti provvedimenti presi per il bene di chi li subisce. Dove sta il confine fra proteggere e trattare da minorenni?\n\nNon chiudere. Fai emergere che il criterio kantiano c\'e: si puo impedire di fare del male ad altri; sul male che uno fa a se stesso, la faccenda e molto piu discutibile. E che quasi ogni discussione politica di oggi passa da li.',
+       seDicono:[
+         {loro:'«Ma il casco serve davvero.»',
+          tu:'Certo, e nessuno lo nega. La domanda non e se serva: e chi debba decidere. Nota che noi lo accettiamo per il casco e non lo accetteremmo per la dieta o per le ore di sonno, che pure servono altrettanto. Il confine c\'e, lo spostiamo continuamente, e quasi mai lo discutiamo.'},
+         {loro:'«Allora lo Stato non deve educare?»',
+          tu:'Distinguo, ed e la distinzione che Kant userebbe: puo insegnare a ragionare, che e cio che rende capaci di decidere; non puo stabilire che cosa uno debba concludere. La differenza si vede in una scuola: la stessa ora puo dare strumenti o dare risposte. E si vede da come reagisce chi comanda quando qualcuno conclude diversamente.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'La domanda era:\n\nper avere uno Stato giusto\nservono cittadini buoni?\n\nRisposta di Kant:\n\nno.\n\nServono buone istituzioni,\ne persone\ncapaci di calcolare.\n\nE questo\nnon perche la bonta\nnon conti.\n\nMa perche\nnessuno puo produrla\nper decreto,\n\ne chi ci prova\nfa danni peggiori\ndi quelli che voleva evitare.\n\nDa portarsi via\ndue cose.\n\nLa prima:\nquando qualcosa\nnon funziona,\nchiedetevi se il problema\nsia nelle persone\n\no nella posizione\nin cui le regole\nle hanno messe.\n\nLa seconda:\ndiffidate di chi vuole\nil vostro bene\n\npiu di quanto\nlo vogliate voi.',
+       parlato:'Riprendi lo schieramento e chiedi chi si e spostato. Di solito parecchi, e conviene dire perche: non perche abbiano cambiato valori, ma perche hanno separato due domande che tenevano insieme.\n\nPoi da\' il primo strumento e rendilo concreto. Davanti a un problema — in una classe, in una squadra, in un ufficio — la prima reazione e chiedersi di chi sia la colpa. La domanda piu produttiva e un\'altra: chi si trova in quella posizione ha interesse a comportarsi cosi? Se la risposta e si, cambiare persona non serve a niente.\n\nFai fare esempi loro, e ne trovano subito: il turno di pulizia che tocca a tutti e non lo fa nessuno, il lavoro di gruppo in cui uno solo lavora. In tutti i casi la struttura spiega piu delle persone.\n\nPoi il secondo strumento, ed e piu delicato. Un potere che dichiara di volere il vostro bene non ha limiti interni, perche ogni obiezione diventa la prova che non avete capito che cosa vi conviene. Riconoscere quel meccanismo vale in politica e vale altrove.\n\nUltima cosa, per chiudere Kant. Ha ottant\'anni quando escono queste pagine. Ha passato la vita a stabilire limiti: alla conoscenza, all\'azione, al potere. E nello stesso libro in cui dice che si potrebbe governare un popolo di demoni, propone una federazione di Stati che rinunciano alla guerra, il diritto di chiunque a non essere trattato da nemico quando arriva altrove, e la condanna di quello che gli europei stanno facendo nel resto del mondo. Centocinquant\'anni dopo, quelle pagine sono citate nei documenti che fondano le Nazioni Unite.\n\nPer il seguito: con questo si chiude Kant. La prossima volta si vede che cosa ne fanno i suoi lettori — e la prima cosa che fanno e togliere di mezzo il limite che lui aveva messo.',
+       seDicono:[
+         {loro:'«Quindi non serve essere buoni.»',
+          tu:'Serve moltissimo, e non e affar dello Stato. È la distinzione che abbiamo fatto oggi: la legge ottiene che tu non rubi, e non ottiene una sola persona onesta. Kant non ha mai detto che la seconda cosa sia meno importante — ha detto che non si ottiene con gli stessi strumenti, e che confonderli e pericoloso.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'La macchia sul mantello',
+       corpo:'Nella Religione entro i limiti della sola ragione Kant sostiene che nell\'uomo vi sia una propensione al male radicata alla radice stessa dei suoi motivi: non un istinto animale, ma la tendenza a subordinare la legge morale all\'amor proprio quando conviene.\n\nGoethe, in una lettera a Herder del 1793, reagì con durezza: scrisse che Kant aveva imbrattato il proprio mantello filosofico, faticosamente ripulito da tanti pregiudizi, con la macchia vergognosa del male radicale, perché anche i cristiani potessero essere attirati a baciarne il lembo.\n\nKant precisa però che si tratta di una propensione, non di una necessità: se non fosse imputabile non sarebbe male, e ciò che rende colpevoli è che si sarebbe potuto agire altrimenti.',
+       chiedi:'Che differenza fa dire che l\'uomo è incline al male invece che dire che è cattivo per natura? E un\'affermazione del genere, in politica e in educazione, produce prudenza o rassegnazione?'},
+      {titolo:'Nessuna ribellione',
+       corpo:'Kant nega ogni diritto di resistenza: nessuna costituzione può contenere l\'autorizzazione ad abbatterla, perché occorrerebbe un potere superiore a quello supremo, il che è contraddittorio. Ne conclude che nemmeno contro un potere tirannico la ribellione sia legittima.\n\nNegli stessi anni non nasconde la propria simpatia per la Rivoluzione francese, e sostiene che il fatto storicamente significativo non sia la rivoluzione in sé, ma l\'entusiasmo disinteressato degli spettatori che, senza guadagnarci nulla e rischiando di essere puniti per averlo mostrato, parteggiano per essa: un segno che nell\'umanità esiste una disposizione morale.\n\nAmmette inoltre che, una volta stabilito il nuovo ordine, il popolo non abbia il diritto di tornare indietro.',
+       chiedi:'Si può condannare la rivoluzione e insieme approvare chi la ammira? E se un ordinamento non prevede mai il diritto di abbatterlo, che cosa resta a chi vive sotto un potere che non riconosce alcun limite?'},
+      {titolo:'L\'ultimo assassino',
+       corpo:'Nella Metafisica dei costumi Kant sostiene che la pena non debba mai essere inflitta per ottenere un vantaggio — dissuadere altri, correggere il condannato — perché nessun uomo può essere usato come mezzo per i fini di altri. La pena si infligge perché il reato è stato commesso, e deve corrispondergli.\n\nDa questo principio ricava la legittimità della pena di morte per l\'omicidio, e respinge esplicitamente gli argomenti di Beccaria, che considera un sentimentalismo.\n\nAggiunge l\'esempio estremo: se una società civile decidesse di sciogliersi con il consenso di tutti, l\'ultimo assassino rimasto in carcere dovrebbe essere giustiziato prima, perché ciascuno riceva ciò che le sue azioni meritano.',
+       chiedi:'Il divieto di usare una persona come mezzo qui protegge il condannato dall\'essere punito per l\'esempio, e insieme lo condanna a morte. Come può lo stesso principio produrre una tutela e una condanna? E dove, esattamente, non siete d\'accordo con il ragionamento?'}
+    ],
+    testi:[
+      {fonte:'Kant, Idea di una storia universale dal punto di vista cosmopolitico, quarta proposizione (1784)',
+       corpo:'Kant afferma che il mezzo di cui la natura si serve per sviluppare tutte le disposizioni umane è il loro antagonismo nella società, e chiama insocievole socievolezza la tendenza degli uomini ad associarsi unita a una generale resistenza che minaccia continuamente di dissolvere l\'associazione; e osserva che senza questa insocievolezza gli uomini vivrebbero in una arcadica vita pastorale, in perfetta concordia e contentezza, lasciando eternamente inutilizzate le proprie disposizioni.',
+       glossa:'La proposizione ribalta l\'idea consueta che il progresso venga dalle virtù: qui la molla sono ambizione, invidia e desiderio di dominio, che nessuno approva e senza le quali non ci sarebbe nulla. L\'immagine degli alberi della foresta, che crescono dritti perché si contendono la luce, è quella che funziona meglio in classe. Va tenuto fermo il limite: che l\'antagonismo produca sviluppo non lo rende giusto, e Kant chiede subito dopo un ordinamento che lo contenga entro la legge.'},
+      {fonte:'Kant, Sul detto comune: questo può essere giusto in teoria, ma non vale per la pratica (1793)',
+       corpo:'Kant sostiene che un governo fondato sul principio della benevolenza verso il popolo, come quello di un padre verso i figli, in cui i sudditi siano considerati incapaci di distinguere ciò che è utile o dannoso per loro e siano obbligati a comportarsi passivamente attendendo dal capo dello Stato il giudizio su come debbano essere felici, sia il maggiore dispotismo che si possa pensare.',
+       glossa:'È la definizione classica del paternalismo politico, e il superlativo va preso sul serio: non il più crudele, ma il peggiore. La ragione è che un potere il quale dichiari di volere il bene dei sudditi non incontra limiti interni, perché ogni obiezione può essere interpretata come prova dell\'incapacità di chi la solleva. Il testo si presta a discutere in classe casi attualissimi, dai divieti per la salute ai controlli sui contenuti.'},
+      {fonte:'Kant, Per la pace perpetua, terzo articolo definitivo (1795)',
+       corpo:'Kant limita il diritto cosmopolitico alle condizioni dell\'ospitalità universale, cioè al diritto di uno straniero di non essere trattato come nemico quando arriva sul territorio di un altro: è un diritto di visita, non di stabilirsi. E giudica ingiusta fino all\'inverosimile la condotta degli Stati commerciali europei, che visitando paesi stranieri li trattano come terre di nessuno e ne opprimono gli abitanti.',
+       glossa:'È uno dei rari testi settecenteschi che condanna il colonialismo con argomenti giuridici anziché con la compassione. Va letto insieme a due cose: le pagine del corso di geografia fisica in cui Kant riprende i pregiudizi gerarchici delle proprie fonti, e la circostanza che questa condanna è degli ultimi anni. È un caso in cui l\'autore corregge se stesso, e conviene mostrarlo agli studenti proprio così.'}
+    ],
+    compito:'Mezza pagina. Scegliete una regola che esiste nella vostra scuola, nella vostra squadra o in casa vostra, e che secondo voi non funziona. Non scrivete di chi sia la colpa. Scrivete invece: chi si trova in quella posizione, che interesse ha a comportarsi come si comporta? Poi provate a riscrivere la regola in modo che il comportamento giusto diventi anche quello conveniente — e dite onestamente che cosa la vostra proposta perde, perché qualcosa perde sempre.',
+    fonti:[
+      'I. Kant, Idea di una storia universale dal punto di vista cosmopolitico (1784); Risposta alla domanda: che cos\'è l\'Illuminismo (1784)',
+      'Sul detto comune (1793); La religione entro i limiti della sola ragione (1793)',
+      'Per la pace perpetua (1795); Metafisica dei costumi (1797); Il conflitto delle facoltà (1798)',
+      'N. Bobbio, Diritto e stato nel pensiero di Emanuele Kant',
+      'J. Habermas, L\'idea kantiana di pace perpetua, due secoli dopo',
+      'O. Höffe, Immanuel Kant; L. Scuccimarra, Kant e il diritto cosmopolitico'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',

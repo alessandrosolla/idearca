@@ -191,7 +191,7 @@ Si va in ordine di programma. Restano:
 - [x] Filosofia moderna · 20 — Kant: la Critica della ragion pura
 - [x] Filosofia moderna · 21 — Kant: la Critica della ragion pratica
 - [x] Filosofia moderna · 22 — Kant: la Critica del Giudizio
-- [ ] Filosofia moderna · 23 — Kant: religione, diritto e storia
+- [x] Filosofia moderna · 23 — Kant: religione, diritto e storia
 - [ ] Filosofia moderna · 24 — Il Romanticismo
 - [ ] Filosofia moderna · 25 — Fichte
 - [ ] Filosofia moderna · 26 — Schelling
