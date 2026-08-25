@@ -8451,6 +8451,228 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Storia moderna · 12 — L\'età napoleonica': {
+  mappa: {
+    n:'L\'eta napoleonica', d:'quindici anni che chiudono una rivoluzione e ne diffondono le regole',
+    f:[
+      {r:'comincia da', n:'Una carriera impossibile prima', d:'un ufficiale di provincia che a trent\'anni comanda la Francia',
+       f:[
+         {r:'nato in', n:'Corsica', d:'francese da un anno: parla italiano in casa e impara il francese a scuola'},
+         {r:'la rivoluzione gli apre le', n:'Carriere ai talenti', d:'gli ufficiali nobili emigrano, e servono comandanti in fretta'},
+         {r:'si fa un nome nella', n:'Campagna d\'Italia', d:'1796-97: vince, tratta la pace da solo e manda a Parigi denaro e quadri',
+          f:[{piu:true, r:'e capisce prima degli altri il valore dei', n:'Bollettini', d:'racconta le proprie vittorie ai giornali francesi: si costruisce la fama mentre combatte'}]},
+         {r:'in Egitto perde la flotta ma porta', n:'Centosessanta studiosi', d:'da cui nascono l\'egittologia e la stele di Rosetta'},
+         {r:'e nel 1799 con il', n:'18 brumaio', d:'scioglie le assemblee: quasi nessuno protesta'}
+       ]},
+
+      {r:'costruisce', n:'Uno Stato che funziona', d:'ed e questa, piu delle vittorie, la sua opera duratura',
+       f:[
+         {r:'firma il', n:'Concordato', d:'1801: chiude dieci anni di guerra religiosa, e mette i vescovi sotto il governo'},
+         {r:'promulga il', n:'Codice civile', d:'1804: uguaglianza davanti alla legge, proprieta piena, contratto, stato civile',
+          f:[{r:'che pero riporta la donna', n:'Sotto l\'autorita del marito', d:'obbedienza dovuta, niente amministrazione dei beni: e un arretramento rispetto al 1793'},
+             {piu:true, r:'e resta in vigore', n:'In mezza Europa per un secolo', d:'in Italia, Belgio, Renania, Paesi Bassi, Louisiana'}]},
+         {r:'nomina i', n:'Prefetti', d:'un uomo del governo in ogni dipartimento: lo Stato arriva ovunque'},
+         {r:'fonda i', n:'Licei e la Banca di Francia', d:'formazione dei quadri e moneta stabile'},
+         {piu:true, r:'e istituisce la', n:'Legione d\'onore', d:'una decorazione al merito: si scopre che gli uomini si fanno uccidere anche per un nastro'},
+         {r:'e sorveglia con la', n:'Polizia di Fouche', d:'giornali ridotti a quattro, censura, schedature: l\'ordine ha un prezzo'}
+       ]},
+
+      {r:'si fa', n:'Imperatore', d:'1804: e la rivoluzione che si chiude con una corona',
+       f:[
+         {r:'si incorona', n:'Da solo', d:'davanti al papa convocato a Parigi: il gesto dice tutto'},
+         {r:'crea una', n:'Nobilta imperiale', d:'titoli nuovi per meriti, non per nascita: e diverso, e assomiglia'},
+         {r:'mette la famiglia', n:'Sui troni d\'Europa', d:'fratelli e cognati re di Spagna, Olanda, Napoli, Vestfalia'},
+         {r:'e chiede il consenso con i', n:'Plebisciti', d:'si vota si o no, senza campagna e senza alternativa'},
+         {r:'cosi la rivoluzione viene insieme', n:'Conservata e chiusa', d:'restano l\'uguaglianza civile e la fine dei privilegi; spariscono le assemblee'}
+       ]},
+
+      {r:'combatte', n:'Quasi ininterrottamente', d:'e la guerra diventa il modo in cui l\'impero si finanzia',
+       f:[
+         {r:'vince ad', n:'Austerlitz', d:'1805: la vittoria che gli storici militari studiano ancora'},
+         {piu:true, r:'e promuove per', n:'Merito sul campo', d:'ufficiali usciti dalla truppa: e cio che rende quell\'esercito diverso da tutti gli altri'},
+         {r:'e a', n:'Jena', d:'1806: la Prussia crolla in pochi giorni'},
+         {r:'con una', n:'Grande Armata', d:'corpi autonomi, marce rapide, artiglieria concentrata: e piu veloce di chiunque'},
+         {r:'ma non batte', n:'La flotta inglese', d:'Trafalgar 1805: l\'invasione dell\'Inghilterra diventa impossibile'},
+         {r:'quindi tenta il', n:'Blocco continentale', d:'chiudere l\'Europa alle merci inglesi per soffocarne il commercio',
+          f:[{r:'che danneggia', n:'Piu gli alleati che il nemico', d:'contrabbando ovunque, e i porti europei che si impoveriscono'}]}
+       ]},
+
+      {r:'trasforma', n:'L\'Europa che occupa', d:'e lo fa con decreti, non con trattative',
+       f:[
+         {r:'esporta il', n:'Codice oltre confine', d:'e con esso l\'uguaglianza davanti alla legge e la fine dei tribunali signorili'},
+         {r:'abolisce il', n:'Feudalesimo', d:'diritti signorili, servitu, corporazioni: dove passa, l\'antico regime cade'},
+         {r:'incamera i', n:'Beni della Chiesa', d:'conventi soppressi, terre vendute, nuovi proprietari legati al regime'},
+         {r:'introduce', n:'Stato civile e catasto', d:'nascite, matrimoni e proprieta registrati dallo Stato e non piu dalla parrocchia'},
+         {r:'ridisegna i', n:'Confini', d:'trecento Stati tedeschi diventano poche decine: e la premessa dell\'unita futura'},
+         {r:'ma pretende', n:'Coscrizione e denaro', d:'centinaia di migliaia di ragazzi e contribuzioni pesantissime',
+          f:[{piu:true, r:'e porta a Parigi', n:'Le opere d\'arte', d:'requisizioni sistematiche: il Louvre si riempie di cio che e stato preso'}]}
+       ]},
+
+      {r:'genera', n:'I nazionalismi che lo battono', d:'ed e il paradosso centrale di tutta la vicenda',
+       f:[
+         {r:'in Spagna dal 1808 la', n:'Guerriglia', d:'il popolo insorge contro chi porta la costituzione, in nome del re e della fede',
+          f:[{r:'e da qui la parola', n:'Piccola guerra', d:'bande che logorano un esercito regolare senza affrontarlo, e il nome resta: bande che logorano un esercito regolare senza affrontarlo'},
+             {r:'mentre le Cortes scrivono', n:'La costituzione di Cadice', d:'1812: piu liberale di quella imposta dai francesi'}]},
+         {piu:true, r:'in Russia si combatte anche per', n:'Difendere la servitu', d:'i nobili temono che i francesi liberino i contadini: si resiste anche per non cambiare'},
+         {r:'in Prussia la sconfitta produce', n:'Riforme', d:'abolizione della servitu, esercito nuovo, universita: si copia il nemico per batterlo'},
+         {r:'in Germania nasce un', n:'Sentimento nazionale', d:'poeti e filosofi cominciano a parlare di popolo e di lingua comune'},
+         {r:'e la lezione e che', n:'La nazione si impara resistendo', d:'esportando l\'idea di nazione crea chi la userà contro di lui'}
+       ]},
+
+      {r:'cade in', n:'Tre anni', d:'e la fine comincia dalla vittoria piu grande',
+       f:[
+         {r:'nel 1812 invade la', n:'Russia', d:'seicentomila uomini: ne tornano poche decine di migliaia'},
+         {r:'battuto non da una battaglia ma da', n:'Distanze, fame e inverno', d:'i russi si ritirano bruciando tutto e lo lasciano avanzare'},
+         {r:'nel 1813 perde a', n:'Lipsia', d:'la battaglia delle nazioni: tutta l\'Europa contro di lui'},
+         {r:'abdica nel', n:'1814', d:'ed e mandato all\'Elba, con il titolo di imperatore di un\'isola'},
+         {r:'torna per i', n:'Cento giorni', d:'e finisce a Waterloo nel giugno 1815'},
+         {r:'e a Sant\'Elena', n:'Costruisce il proprio mito', d:'detta il Memoriale e si riscrive come difensore dei popoli e dell\'unita europea',
+          f:[{piu:true, r:'ed e', n:'Il libro piu letto d\'Europa', d:'per una generazione: il mito napoleonico nasce li, non sui campi di battaglia'}]}
+       ]},
+
+      {r:'lascia', n:'Un\'Europa che non torna indietro', d:'anche quando i re tornano sui troni',
+       f:[
+         {r:'il', n:'Congresso di Vienna', d:'1814-15: si restaura, si compensa, si costruisce un equilibrio'},
+         {r:'ma non si puo cancellare il', n:'Codice che resta', d:'troppi proprietari nuovi, troppi contratti, troppa amministrazione costruita su di esso'},
+         {r:'ne la', n:'Coscrizione', d:'chi vuole un esercito moderno deve prendere i propri cittadini'},
+         {r:'ne l\'idea che il potere debba', n:'Giustificarsi', d:'plebisciti e costituzioni, anche finti, ammettono che serve un consenso'},
+         {piu:true, r:'e nasce la', n:'Santa alleanza', d:'i sovrani si impegnano a intervenire ovunque scoppi una rivoluzione: il primo sistema di sicurezza collettiva'},
+         {r:'e resta aperta la domanda', n:'Erede o becchino della rivoluzione', d:'ne ha diffuso i principi e ne ha soppresso le istituzioni'}
+       ]}
+    ],
+    incroci:[
+      {da:'Carriere ai talenti', a:'Nobilta imperiale', r:'vengono in parte richiuse dalla',
+       perche:'La rivoluzione apre le carriere al merito e Napoleone e il caso piu clamoroso di quell\'apertura. Poi crea duchi e principi, cioe un ceto che trasmette la posizione ai figli. Chi arriva in cima grazie a una porta aperta ha spesso interesse a socchiuderla dietro di se.'},
+      {da:'Codice civile', a:'Sotto l\'autorita del marito', r:'contiene anche il ritorno della donna',
+       perche:'Lo stesso testo che stabilisce l\'uguaglianza davanti alla legge sancisce che la moglie deve obbedienza al marito e non puo amministrare i propri beni. Rispetto alla legislazione rivoluzionaria del 1792-93 e un arretramento netto, e resta in vigore per generazioni: l\'uguaglianza del codice non comprendeva meta della popolazione.'},
+      {da:'Bollettini', a:'Costruisce il proprio mito', r:'sono l\'inizio di cio che a Sant\'Elena diventa',
+       perche:'Napoleone e il primo a capire che una vittoria vale quanto il racconto che se ne fa, e comincia mandando ai giornali francesi le cronache delle proprie campagne. Il Memoriale e l\'ultimo atto della stessa tecnica: perso il potere, resta la possibilita di decidere come sara ricordato.'},
+      {da:'La costituzione di Cadice', a:'Guerriglia', r:'nasce mentre infuria la',
+       perche:'Gli spagnoli combattono chi porta loro una costituzione e nel frattempo se ne scrivono una piu liberale. È la prova che non rifiutavano il contenuto: rifiutavano che venisse da un esercito straniero. Le cose giuste, imposte da fuori, diventano il simbolo di chi le impone.'},
+      {da:'Riforme', a:'La nazione si impara resistendo', r:'sono l\'esempio prussiano del fatto che',
+       perche:'La Prussia crolla a Jena e reagisce copiando il vincitore: abolisce la servitu, riorganizza l\'esercito, fonda l\'universita di Berlino. Chi viene sconfitto da uno Stato piu efficiente ha due strade, subire o diventargli simile — e chi sceglie la seconda diventa il pericolo successivo.'},
+      {da:'Coscrizione e denaro', a:'Piu gli alleati che il nemico', r:'pesano come il blocco, che danneggia',
+       perche:'I territori occupati devono fornire uomini, contribuzioni e rinunciare al commercio inglese. La combinazione trasforma popolazioni inizialmente favorevoli in popolazioni ostili: l\'impero perde il consenso non per le sue leggi ma per il suo conto.'},
+      {da:'Beni della Chiesa', a:'Codice che resta', r:'crea gli interessi per cui il',
+       perche:'Chi ha comprato terre confiscate ha bisogno che restino valide le regole con cui le ha comprate. Dopo Vienna i sovrani restaurati scoprono di non poter tornare indietro senza colpire i propri notabili: le rivoluzioni diventano irreversibili quando abbastanza gente ci ha investito.'},
+      {da:'Confini', a:'Sentimento nazionale', r:'preparano il terreno al',
+       perche:'Ridurre trecento Stati tedeschi a poche decine crea unita amministrative grandi abbastanza da immaginare un\'unica Germania. Napoleone non voleva unificarla: voleva semplificarla per governarla. La conseguenza non voluta e la carta su cui, cinquant\'anni dopo, si costruira l\'unita.'},
+      {da:'Plebisciti', a:'Giustificarsi', r:'sono la prima forma di un potere che deve',
+       perche:'Un plebiscito senza alternative non e una libera scelta, e ammette una cosa che l\'antico regime non ammetteva: che il potere abbia bisogno di essere approvato. Da quel momento perfino i regimi autoritari devono organizzare un consenso, ed e un cambiamento che non si riesce piu a disfare.'},
+      {da:'Distanze, fame e inverno', a:'Grande Armata', r:'annullano i vantaggi della',
+       perche:'Un esercito costruito per marce rapide e battaglie decisive si trova davanti un nemico che si ritira bruciando i raccolti e rifiuta lo scontro. La forza militare piu efficiente d\'Europa viene sconfitta dal fatto che il proprio metodo richiede un avversario disposto a combattere.'},
+      {da:'Concordato', a:'Guerriglia', r:'non basta a evitare che la religione alimenti la',
+       perche:'In Francia il Concordato chiude la frattura religiosa aperta dalla rivoluzione. In Spagna gli stessi francesi arrivano come sopprimono conventi e Inquisizione, e il clero locale predica la resistenza. La stessa politica religiosa pacifica un paese e ne incendia un altro, a seconda di chi la applica e in casa di chi.'},
+      {da:'Le opere d\'arte', a:'Congresso di Vienna', r:'tornano in parte indietro dopo il',
+       perche:'Le requisizioni artistiche furono sistematiche e riguardarono mezza Europa; dopo il 1815 gli alleati ne imposero la restituzione, che avvenne solo in parte. È uno dei primi casi in cui la restituzione di beni culturali entra in un trattato di pace — un problema che sarebbe tornato molte volte.'},
+      {da:'18 brumaio', a:'Conservata e chiusa', r:'e l\'atto con cui la rivoluzione viene',
+       perche:'Le assemblee vengono sciolte da un generale e quasi nessuno protesta, perche dieci anni di paura hanno reso l\'ordine piu desiderabile della liberta. Da quel momento i principi del 1789 sopravvivono come contenuto delle leggi e non piu come potere di chi le vota.'}
+    ]
+  },
+  provocazione: {
+    titolo:'La costituzione portata dai cannoni',
+    durata:'55 minuti',
+    domandaMadre:'Si puo portare a qualcuno la liberta con la forza?',
+    perche:'Nel 1808 gli eserciti francesi entrano in Spagna portando l\'abolizione del feudalesimo, la fine dell\'Inquisizione e una costituzione. La popolazione insorge, combatte per sei anni con una violenza che Goya documentera, e nel frattempo — mentre resiste — si scrive da sola a Cadice una costituzione piu liberale di quella che i francesi le stavano imponendo. La classe deve capire che non era il contenuto a essere rifiutato ma la mano che lo portava, e ricavarne una regola che vale ben oltre il 1808. Il colpo di scena e che l\'idea di nazione, diffusa dagli eserciti napoleonici, e esattamente cio che li distrugge.',
+    occorrente:'Niente. Se hai modo di proiettare una delle incisioni dei Disastri della guerra di Goya, il blocco centrale guadagna molto.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'Spagna, 1808.\n\nArriva l\'esercito francese\ne porta con se:\n\nl\'abolizione dei diritti feudali;\nla fine dell\'Inquisizione;\nla soppressione dei conventi\ne la vendita delle loro terre;\nl\'uguaglianza davanti alla legge;\nuna costituzione scritta.\n\nÈ, sulla carta, tutto quello\nche i riformatori spagnoli\nchiedevano da trent\'anni.\n\nLa popolazione si solleva.\n\nSei anni di guerriglia,\ncentinaia di migliaia di morti,\nvillaggi bruciati,\nfucilazioni di massa.\n\nContadini che combattono\nal grido di viva il re\ne viva la religione,\ncontro chi vuole abolire\nl\'Inquisizione.',
+       parlato:'Dai l\'elenco delle cose portate dai francesi lentamente: serve che suoni come una lista di conquiste.\n\nPoi il rovesciamento, e lascia il silenzio.\n\nAggiungi il dato che rende la cosa ancora piu difficile da spiegare: fra chi combatte i francesi ci sono contadini che dai diritti feudali erano schiacciati, e che si battono per difendere l\'ordine che li schiacciava.\n\nDomanda per aprire l\'ora: perche?\n\nRaccogli le prime risposte. Di solito arrivano «erano ignoranti» oppure «li manipolavano i preti». Non correggere subito: fra venti minuti avranno in mano un documento che rende quelle spiegazioni insufficienti.',
+       seDicono:[
+         {loro:'«Erano manipolati dal clero.»',
+          tu:'Il clero predico la resistenza, e questo e certo. Ma la manipolazione spiega poco: perche funziona in Spagna e non altrove? In Italia settentrionale, per esempio, i francesi trovarono molta meno resistenza popolare. Se una spiegazione vale ovunque, non spiega il caso particolare.'},
+         {loro:'«Non capivano cosa gli veniva offerto.»',
+          tu:'Tienila, ed e la spiegazione che smonteremo fra mezz\'ora con un documento che gli spagnoli hanno scritto da soli. Anticipo solo questo: quando poterono scegliere, scelsero qualcosa di piu avanzato, non di piu arretrato.'}
+       ]},
+
+      {minuti:'8–17', et:'La fonte',
+       schermo:'Il documento con cui i francesi\ngovernano i territori occupati.\n\nUn decreto imperiale tipo,\nemanato per un regno conquistato:\n\nil regime feudale e abolito;\ntutti i sudditi sono uguali\ndavanti alla legge;\ni tribunali signorili sono soppressi;\nle corporazioni sono sciolte;\nil codice civile francese\nentra in vigore.\n\nE poi, negli stessi mesi,\nnello stesso territorio:\n\nla coscrizione obbligatoria\nper un numero fissato di uomini;\n\nuna contribuzione di guerra\nda versare entro un termine;\n\nl\'obbligo di mantenere\nle truppe di stanza.\n\nTre domande.\nChi lo ha scritto, e per chi?\nChe cosa ammette senza volerlo?\nChe cosa non dice?',
+       testo:{fonte:'Decreti napoleonici di riorganizzazione dei territori occupati (formule ricorrenti nei regni satelliti, 1806-1810)',
+              glossa:'I due gruppi di disposizioni arrivano insieme e vanno letti insieme: sono lo stesso atto di governo. Le riforme civili erano reali e durature; le contribuzioni e la coscrizione erano il modo in cui l\'impero si finanziava, perche le guerre napoleoniche si pagavano in larga parte con i territori conquistati.'},
+       parlato:'Fai lavorare in coppia, cinque minuti, poi raccogli.\n\nSulla prima: lo scrive un occupante, e non si rivolge a chi lo subisce ma ai propri funzionari. Non c\'e nessuna richiesta di consenso, perche non e previsto che serva.\n\nSulla seconda: il documento ammette, mettendo le due cose nello stesso atto, che le riforme e le requisizioni sono la stessa operazione. Non e ipocrisia — e il modello di governo. Le guerre napoleoniche si pagavano con i paesi occupati, e le riforme servivano anche a rendere quei paesi piu facili da tassare.\n\nSulla terza: non dice mai chi abbia chiesto tutto questo, e non prevede nessuno che possa dire di no. Un\'assemblea locale, un voto, una consultazione: non compaiono.\n\nPoi la domanda che apre il resto dell\'ora: se ricevessi una legge giusta insieme all\'ordine di consegnare i tuoi figli all\'esercito di chi te la porta, che cosa ricorderesti dei due?',
+       seDicono:[
+         {loro:'«Le riforme erano vere però.»',
+          tu:'Verissime, e durarono: il codice resto in vigore in mezza Europa per un secolo, e il feudalesimo non torno. Il punto non e che fossero finte. È che arrivavano dentro un pacchetto, e che il pacchetto conteneva anche la leva e le tasse di guerra.'},
+         {loro:'«Anche le riforme dei re illuminati erano imposte dall\'alto.»',
+          tu:'Ottima osservazione, ed e la differenza da mettere a fuoco: Giuseppe II imponeva ai propri sudditi, in nome di un\'autorita che quelli riconoscevano da secoli. Qui impone uno straniero che parla un\'altra lingua e porta via i ragazzi. La stessa misura cambia natura secondo chi la firma.'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'Che cosa significa,\nconcretamente, l\'occupazione.\n\nLa coscrizione:\nun numero fissato di ragazzi\nogni anno, sorteggiati,\nche partono per campagne\na duemila chilometri da casa,\nper una causa che non e la loro.\n\nLe contribuzioni:\nsomme enormi da versare,\nspesso pagate vendendo\nterre e bestiame.\n\nGli alloggiamenti:\nsoldati da nutrire in casa propria.\n\nIl blocco continentale:\nniente commercio con l\'Inghilterra,\ncioe porti fermi e prodotti invenduti.\n\nE le opere d\'arte requisite\ne portate a Parigi.\n\nAdesso mettete tutto questo\naccanto all\'abolizione\ndei diritti feudali.\n\nChe cosa pesa di piu,\nper una famiglia di contadini?',
+       parlato:'Elenca i costi concreti uno per uno: l\'astratto qui non serve, servono le cose che si sentono in casa.\n\nPoi fai il confronto e lascia che ci arrivino: l\'abolizione dei diritti feudali migliora la vita in modo lento e diffuso; la coscrizione toglie un figlio in un giorno preciso, con un nome e una data.\n\nQui c\'e una regola che vale ben oltre il 1808 e che conviene formulare: i benefici diffusi e lenti pesano meno dei costi concentrati e immediati, anche quando in totale valgono di piu. È il motivo per cui moltissime riforme giuste vengono odiate da chi ne beneficia.\n\nPoi aggiungi il fattore che completa il quadro spagnolo: la religione. I francesi sopprimono conventi e Inquisizione, e per un contadino spagnolo il convento e assistenza, prestiti, feste, sepoltura. Il prete e l\'unica autorita che parla la sua lingua.\n\nQuindi l\'occupante non appare come chi porta diritti: appare come chi porta via i figli, i soldi e i santi.',
+       seDicono:[
+         {loro:'«Ma i diritti feudali erano peggio!»',
+          tu:'Nel lungo periodo si, ed e proprio il punto: nel lungo periodo. Un contadino non fa il calcolo su trent\'anni, lo fa sulla stagione in corso. Quando giudichi le scelte di chi sta in basso, guarda l\'orizzonte temporale che poteva permettersi.'},
+         {loro:'«Bastava spiegarglielo.»',
+          tu:'Ci provarono, con proclami e giornali. Ma un proclama letto da un funzionario straniero vale poco contro un prete che parla la tua lingua e ti ha battezzato. La persuasione non e solo questione di argomenti: e questione di chi li pronuncia.'}
+       ]},
+
+      {minuti:'28–38', et:'La seconda fonte',
+       schermo:'Il primo documento\nera un decreto di un occupante.\n\nQuesto lo scrivono gli spagnoli,\ndurante la guerra,\nin una citta assediata.\n\nCadice, 1812.\nLe Cortes si riuniscono\nmentre i francesi bombardano.\n\nStabiliscono:\n\nche la sovranita risiede\nessenzialmente nella nazione,\ne che quindi a essa sola\nspetta stabilire le proprie leggi;\n\nche il governo della nazione\ne una monarchia moderata\nereditaria;\n\nsuffragio molto ampio,\nlibertà di stampa,\nfine del regime signorile,\nabolizione della tortura.\n\nÈ piu liberale\ndella costituzione\nche i francesi\nstavano imponendo.',
+       testo:{fonte:'Costituzione politica della monarchia spagnola, Cadice, 19 marzo 1812',
+              glossa:'Fu scritta da un\'assemblea riunita in una citta sotto assedio francese, mentre nel resto del paese si combatteva. Ebbe vita brevissima — Ferdinando VII l\'abolì appena tornato nel 1814 — e divenne il modello dei movimenti liberali europei per una generazione: in Italia e in Portogallo, nel 1820-21, si chiese esplicitamente «la costituzione di Spagna».'},
+       parlato:'Metti i due documenti uno accanto all\'altro e lascia che la classe misuri la differenza: uno e concesso da chi occupa, l\'altro e scritto da chi resiste. E il secondo e piu avanzato del primo.\n\nPoi la domanda che scioglie il problema dell\'ora: allora gli spagnoli erano contro la liberta?\n\nNo. Erano contro il fatto che gliela portasse un esercito straniero. È questa la differenza, ed e enorme.\n\nDa\' loro la formulazione, perche e la cosa da portare a casa: una cosa giusta imposta da fuori non viene giudicata per quello che e, ma per chi la porta. E chi la porta con le armi la trasforma nel simbolo di se stesso.\n\nPoi aggiungi il seguito, che e amaro e va detto: nel 1814 il re Ferdinando torna, abolisce la costituzione di Cadice e ripristina l\'Inquisizione. Molti di quelli che avevano combattuto i francesi in nome del re finiscono perseguitati dal re per cui avevano combattuto.\n\nQuesto non toglie nulla al ragionamento precedente. Lo completa: chi resiste a un\'imposizione non ottiene automaticamente cio che voleva.',
+       seDicono:[
+         {loro:'«Allora hanno combattuto per niente.»',
+          tu:'Hanno ottenuto che la Spagna decidesse da se, e hanno perso su che cosa decidere. Sono due cose diverse, e la prima non garantisce la seconda. Vale la pena tenerle separate: molti conflitti per l\'indipendenza finiscono cosi.'},
+         {loro:'«Perche Cadice era piu liberale?»',
+          tu:'Perche chi la scriveva non doveva rendere conto a un imperatore. La costituzione imposta dai francesi doveva lasciare intatto il potere di chi la concedeva; quella di Cadice no. Chi scrive per se stesso puo permettersi di essere piu radicale di chi scrive per conto di qualcuno.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'E adesso la parte\nche riguarda tutta l\'Europa.\n\nDove passano gli eserciti francesi\nsuccedono due cose insieme.\n\nLe popolazioni imparano\nche cosa sia uno Stato moderno:\nleggi uguali per tutti,\namministrazione, catasto, codice.\n\nE imparano un\'altra cosa:\nche si puo essere un popolo,\ncon una lingua e una storia,\ncontro qualcuno.\n\nIn Spagna nasce la guerriglia.\n\nIn Prussia, dopo il crollo di Jena,\nsi aboliscono la servitu,\nsi rifa l\'esercito,\nsi fonda l\'universita di Berlino:\nsi copia il vincitore per batterlo.\n\nIn Germania poeti e filosofi\ncominciano a scrivere\ndi popolo e di lingua comune.\n\nNel 1813 a Lipsia\nlo affrontano tutti insieme.\n\nLa chiamano\nla battaglia delle nazioni.',
+       parlato:'Costruisci il paradosso in due tempi: prima quello che l\'occupazione insegna, poi quello che l\'occupazione provoca.\n\nLa formulazione centrale: Napoleone diffonde l\'idea di nazione e quell\'idea lo distrugge. Non e un\'ironia della storia — e un meccanismo. Un esercito straniero che governa insegna a chi lo subisce che esiste un noi contrapposto a un loro. Prima dell\'occupazione, un contadino andaluso e un contadino castigliano non avevano molte ragioni per sentirsi la stessa cosa.\n\nPoi il caso prussiano, che e il piu istruttivo: la Prussia viene distrutta a Jena e reagisce diventando piu simile alla Francia — abolisce la servitu, riforma l\'esercito, fonda un\'universita. Chi e sconfitto da uno Stato piu efficiente ha due strade, subire o copiare. Chi copia diventa il pericolo della generazione dopo.\n\nE chiudi il blocco con il dato finale: dopo Waterloo i sovrani restaurati si riprendono i troni e non riescono a riprendersi il resto. Il codice resta, la coscrizione resta, il catasto resta. Chi ha vinto la guerra ha dovuto adottare gli strumenti di chi l\'ha persa.',
+       seDicono:[
+         {loro:'«Quindi ha vinto lo stesso, in un certo senso.»',
+          tu:'Le sue istituzioni si, la sua persona no. Ed e una distinzione che vale la pena tenere: gli imperi cadono e i loro strumenti amministrativi sopravvivono, perche chi arriva dopo scopre che governare senza e piu difficile.'},
+         {loro:'«Anche gli inglesi hanno vinto senza copiarlo.»',
+          tu:'L\'Inghilterra aveva gia da un secolo cio che serviva: un fisco efficiente, un debito garantito dal parlamento, una flotta. Non doveva copiare perche era arrivata prima per un\'altra strada — quella che abbiamo visto con la Gloriosa e la Banca d\'Inghilterra.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'Torniamo alla domanda.\n\nSi puo portare a qualcuno\nla liberta con la forza?\n\nQuello che abbiamo visto\nnon dice che le riforme\nfossero cattive.\n\nDice tre cose.\n\nChe una cosa giusta portata\nda un occupante viene giudicata\nper chi la porta,\nnon per quello che e.\n\nChe i costi concentrati\ne immediati pesano di piu\ndei benefici diffusi e lenti.\n\nE che resistere a un\'imposizione\nnon garantisce di ottenere\ncio che si voleva:\nnel 1814 il re torna\ne ripristina l\'Inquisizione.\n\nUltima domanda,\ne non e sul 1808:\n\nquando qualcuno vi dice\nche una cosa e per il vostro bene,\nche cosa dovreste chiedergli?',
+       parlato:'Riprendi le tre conclusioni una per una e falle riconoscere nei documenti letti.\n\nPoi da\' il criterio, che e l\'unica cosa concreta che si portano via: la domanda da fare non e se una misura sia giusta, ma chi l\'ha decisa, chi ne paga il costo immediato e chi puo dire di no. Le stesse identiche parole scritte in una legge cambiano significato secondo la risposta a queste tre domande.\n\nSull\'ultima domanda falli lavorare senza esempi contemporanei tuoi: li trovano da soli, e vengono fuori cose molto vive.\n\nPoi chiudi con il bilancio storico, tenuto onesto in entrambe le direzioni. Napoleone ha chiuso la rivoluzione sciogliendo le assemblee e si e fatto imperatore; e ha diffuso in mezza Europa l\'uguaglianza davanti alla legge e la fine del feudalesimo, che i sovrani restaurati non sono riusciti a cancellare. Erede o becchino della rivoluzione e una domanda che gli storici si fanno da due secoli, e la risposta onesta e che fu entrambe le cose.\n\nUltima riga, per il seguito: dopo il 1815 l\'Europa dei re ricomincia, ma nelle teste c\'e qualcosa di nuovo che nessun congresso puo togliere — l\'idea che un popolo possa essere una nazione, e che una nazione debba avere uno Stato. Da li in avanti sara quella la storia.',
+       seDicono:[
+         {loro:'«Allora non bisogna mai intervenire da fuori.»',
+          tu:'Non e la conclusione, e sarebbe comoda quanto quella opposta. Il caso spagnolo dice che imporre riforme con un esercito produce quasi sempre un rifiuto, e non dice che restare a guardare sia sempre giusto. Quello che potete portarvi via e una domanda da fare prima: chi, sul posto, sta chiedendo questa cosa — e che cosa succede quando l\'esercito se ne va.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'L\'uguaglianza del codice, e le donne',
+       corpo:'Il Codice civile del 1804 stabilisce l\'uguaglianza dei cittadini davanti alla legge, abolisce i privilegi di nascita e garantisce la proprietà. Stabilisce anche che la moglie deve obbedienza al marito, non può stare in giudizio né amministrare i propri beni senza la sua autorizzazione, e punisce l\'adulterio femminile molto più severamente di quello maschile.\n\nIl divorzio, introdotto nel 1792, viene mantenuto ma reso molto più difficile; sarà abolito nel 1816 e reintrodotto in Francia solo nel 1884.\n\nQuelle norme restarono in vigore, in vari paesi europei, per più di un secolo.',
+       chiedi:'Un testo che proclama l\'uguaglianza e la nega a metà della popolazione, senza che ai suoi autori sembri una contraddizione. Come è possibile? E che cosa serve, perché una contraddizione del genere diventi visibile?'},
+      {titolo:'Il libro scritto per i posteri',
+       corpo:'A Sant\'Elena Napoleone detta per anni le proprie memorie al conte di Las Cases, che pubblica il Memoriale nel 1823. Nel libro si presenta come l\'uomo che voleva l\'unità dei popoli europei, il difensore delle nazionalità, il continuatore della rivoluzione fermato dalle monarchie reazionarie.\n\nÈ una ricostruzione largamente costruita a posteriori: come imperatore aveva soppresso repubbliche, imposto la coscrizione e messo i propri parenti sui troni.\n\nIl Memoriale fu uno dei libri più letti d\'Europa e formò l\'immagine di Napoleone per generazioni, ispirando i movimenti nazionali che lui aveva combattuto.',
+       chiedi:'Un uomo perde il potere e vince il racconto. Che cosa serve perché la versione dei fatti data da uno sconfitto diventi quella che tutti ricordano? E come si fa, oggi, a distinguere un resoconto da un\'autodifesa?'},
+      {titolo:'Il Louvre pieno',
+       corpo:'Le campagne napoleoniche furono accompagnate da requisizioni artistiche sistematiche: dipinti, statue e manoscritti scelti da commissari competenti e trasportati a Parigi, dove il museo del Louvre divenne la più grande raccolta d\'arte mai riunita.\n\nI trattati imponevano formalmente le consegne, e le opere sfilavano in cortei trionfali.\n\nDopo il 1815 gli alleati imposero la restituzione: molte opere tornarono, altre no, e alcune si trovano ancora oggi in Francia.',
+       chiedi:'Una requisizione scritta in un trattato firmato da entrambe le parti è un furto? E oggi, per i beni culturali portati via durante occupazioni o dominazioni coloniali, quale criterio dovrebbe valere — chi li possiede, chi li ha prodotti, chi li conserva meglio?'}
+    ],
+    testi:[
+      {fonte:'Codice civile dei francesi, 1804 — articoli sull\'uguaglianza e sulla famiglia',
+       corpo:'Il codice stabilisce che la legge è uguale per tutti e che ogni francese gode dei diritti civili; e dispone che il marito deve protezione alla moglie e la moglie obbedienza al marito.',
+       glossa:'Le due disposizioni stanno nello stesso testo e ai suoi redattori non parvero in contraddizione, perché l\'uguaglianza civile riguardava i capifamiglia. È il modo più netto per far vedere in classe che un principio generale ha sempre un ambito di applicazione implicito, e che quell\'ambito è la vera decisione politica.'},
+      {fonte:'Costituzione di Cadice, 1812 — articoli 2 e 3',
+       corpo:'Il testo dichiara che la nazione spagnola è libera e indipendente e non è né può essere patrimonio di alcuna famiglia o persona; e che la sovranità risiede essenzialmente nella nazione, alla quale spetta perciò in via esclusiva il diritto di stabilire le proprie leggi fondamentali.',
+       glossa:'Da leggere accanto ai decreti francesi: dice quasi le stesse cose sulla sovranità nazionale, ma la scrive un\'assemblea spagnola assediata invece di un occupante. È il documento che permette di stabilire che il rifiuto non riguardava il contenuto.'},
+      {fonte:'Decreto di Berlino, 21 novembre 1806 — il blocco continentale',
+       corpo:'Il decreto dichiara le isole britanniche in stato di blocco, vieta ogni commercio e corrispondenza con esse, ordina il sequestro delle merci inglesi e l\'arresto dei sudditi britannici nei territori occupati o alleati.',
+       glossa:'Provvedimento che colpì soprattutto i paesi che avrebbero dovuto applicarlo: porti fermi, contrabbando diffusissimo, malcontento nei territori alleati. Utile per discutere che cosa succede quando una misura richiede, per funzionare, la collaborazione entusiasta di chi ci rimette.'}
+    ],
+    compito:'Mezza pagina. Pensate a una regola che vi è stata imposta e che, a mente fredda, riconoscete come sensata — a scuola, in famiglia, in una squadra. Descrivete come l\'avete accolta quando è arrivata e perché. Poi rispondete a una domanda: che cosa avrebbe dovuto essere diverso — non nel contenuto della regola, ma in chi la portava e nel modo — perché la accettaste subito?',
+    fonti:[
+      'Codice civile dei francesi (1804); Decreto di Berlino (1806)',
+      'Costituzione politica della monarchia spagnola, Cadice (1812)',
+      'Las Cases, Memoriale di Sant\'Elena (1823)',
+      'G. Lefebvre, Napoleone; J. Tulard, Napoleone. Il mito del salvatore',
+      'C. Esdaile, La guerra di Spagna; La guerra peninsulare',
+      'S. Woolf, Napoleone e la conquista dell\'Europa'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',
