@@ -13529,6 +13529,227 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Filosofia moderna · 26 — Schelling': {
+  mappa: {
+    n:'Friedrich Schelling', d:'la natura non e l\'ostacolo dello spirito, e lo spirito che non si e ancora svegliato',
+    f:[
+      {r:'comincia come', n:'Ragazzo prodigio', d:'e la precocita gli costa quanto gli rende',
+       f:[
+         {r:'nasce nel 1775, figlio di un', n:'Pastore orientalista', d:'impara il greco, l\'ebraico e l\'arabo da bambino, in casa'},
+         {r:'entra a quindici anni nel seminario di', n:'Tubinga', d:'con una deroga speciale: il regolamento ne chiedeva almeno diciotto'},
+         {r:'e divide la stanza con', n:'Hegel e Holderlin', d:'cinque anni piu grandi di lui, e per un po\' e il piu brillante dei tre'},
+         {r:'a ventitre anni ha gia la cattedra a', n:'Jena', d:'chiamato su indicazione di Goethe: e il centro intellettuale d\'Europa e lui e il piu giovane di tutti'},
+         {r:'entra nella cerchia dei', n:'Romantici', d:'i fratelli Schlegel, Novalis, Tieck: la rivista, le serate, le discussioni che durano notti intere'},
+         {r:'e sposa', n:'Caroline', d:'gia moglie di August Wilhelm Schlegel, dopo la morte della figlia di lei, che Schelling aveva provato a curare',
+          f:[{piu:true, r:'vicenda che gli procura uno', n:'Scandalo', d:'lascia Jena, e per anni i giornali lo trattano come un caso di costume prima che come un filosofo'}]},
+         {r:'poi Wurzburg, Monaco, e un lungo', n:'Silenzio', d:'dopo il 1809 non pubblica quasi piu nulla, e la Germania lo crede finito mentre lui continua a scrivere'}
+       ]},
+
+      {r:'non ha un sistema ma una', n:'Successione di sistemi', d:'ed e la prima difficolta che si incontra leggendolo',
+       f:[
+         {r:'i lettori lo accusano di', n:'Incoerenza', d:'cambia posizione ogni pochi anni, e ogni volta sembra rinnegare la precedente'},
+         {r:'lui risponde che una filosofia viva', n:'Si muove', d:'e che restare fermi su una posizione significa averla trasformata in una dottrina'},
+         {r:'le fasi sono', n:'Cinque', d:'natura, trascendentale, identita, liberta e l\'ultima filosofia: sessant\'anni di lavoro, e ogni fase ha lettori che ignorano le altre'},
+         {r:'con un problema pratico per chi studia: usa le stesse parole con', n:'Sensi diversi', d:'assoluto, natura, liberta cambiano significato da un decennio all\'altro senza che lui avverta',
+          f:[{piu:true, r:'e con un\'unica cosa che resta', n:'Ferma', d:'il rifiuto di ridurre la natura a materiale: e la convinzione che percorre tutte le fasi'}]}
+       ]},
+
+      {r:'la prima mossa e la', n:'Filosofia della natura', d:'e nasce da un disaccordo con il proprio maestro',
+       f:[
+         {r:'contro Fichte, sostiene che la natura non possa essere solo l\'', n:'Ostacolo dell\'Io', d:'se esiste solo per farci agire, non si capisce perche sia fatta cosi e non altrimenti'},
+         {r:'ha una', n:'Realta propria', d:'e va spiegata a partire da se stessa, non dal ruolo che svolge per noi'},
+         {r:'e va pensata come', n:'Produttivita', d:'non come un insieme di cose, ma come un produrre che non si ferma'},
+         {r:'per cui ogni cosa e un', n:'Arresto momentaneo', d:'come il vortice in un fiume: sembra un oggetto e non e altro che acqua che passa in un certo modo'},
+         {piu:true, r:'per cui non esiste vera', n:'Materia inerte', d:'cio che sembra fermo e solo un equilibrio talmente stabile da sembrare quiete: e la tesi che l\'Ottocento gli contestera di piu'},
+         {r:'e ogni fenomeno nasce da una', n:'Polarita', d:'due forze opposte che si limitano: attrazione e repulsione, positivo e negativo, espansione e contrazione'},
+         {r:'organizzati in gradi crescenti, dal', n:'Magnetismo all\'organismo', d:'magnetismo, elettricita, processo chimico, vita: la stessa forza a livelli diversi'},
+         {r:'perche la natura e', n:'Spirito addormentato', d:'e lo spirito e la natura che si e svegliata: non due sostanze, due stati della stessa cosa',
+          f:[{piu:true, r:'con un bilancio scientifico', n:'Diviso', d:'ispira la scoperta del legame fra elettricita e magnetismo e insieme montagne di analogie invereficabili'}]}
+       ]},
+
+      {r:'poi costruisce le', n:'Due vie', d:'per mostrare che si arriva allo stesso punto partendo dai due capi opposti',
+       f:[
+         {r:'la prima va dalla natura allo', n:'Spirito', d:'e mostra come la materia, salendo di grado, arrivi a diventare coscienza'},
+         {r:'la seconda va dallo spirito alla', n:'Natura', d:'ed e il Sistema dell\'idealismo trascendentale, del 1800'},
+         {r:'e le due devono', n:'Incontrarsi', d:'altrimenti resterebbero due discorsi paralleli che non si toccano mai'},
+         {r:'il punto d\'incontro e l\'', n:'Arte', d:'che chiama organo della filosofia: l\'unico luogo in cui l\'assoluto si mostra invece di essere pensato'},
+         {r:'perche nell\'opera coincidono cio che l\'artista voleva e cio che', n:'Non sapeva di fare', d:'ogni grande opera contiene piu di quanto il suo autore avesse in mente',
+          f:[{piu:true, r:'da cui il fatto che un\'opera possa essere', n:'Piu intelligente del suo autore', d:'e che se ne continui a discutere secoli dopo, trovandovi cose che nessuno vi aveva messo apposta'}]}
+       ]},
+
+      {r:'al centro mette l\'', n:'Identita', d:'ed e la fase che gli costa l\'amicizia piu importante',
+       f:[
+         {r:'l\'Assoluto non e soggetto ne oggetto ma la loro', n:'Indifferenza', d:'sta prima della differenza fra chi conosce e cio che e conosciuto'},
+         {r:'e non ci si arriva ragionando ma con un\'', n:'Intuizione intellettuale', d:'un atto in cui il pensiero coincide con cio che pensa: o si ha, o non se ne puo discutere'},
+         {r:'e proprio qui arriva', n:'Hegel', d:'che nel 1807 scrive che quell\'assoluto e la notte in cui tutte le vacche sono nere'},
+         {r:'perche un principio in cui ogni differenza', n:'Sparisce', d:'non spiega niente: da un\'unita indistinta non si ricava perche le cose siano proprio quelle che sono',
+          f:[{piu:true, r:'l\'amicizia si', n:'Rompe e non si ricuce', d:'erano stati compagni di stanza; non si parleranno praticamente piu, e Schelling aspettera trentaquattro anni per prendere la cattedra di Hegel a Berlino'}]}
+       ]},
+
+      {r:'e nel 1809 scrive sul', n:'Male', d:'il libro piu vivo che abbia lasciato, e il piu discusso oggi',
+       f:[
+         {r:'sono le Ricerche sull\'essenza della', n:'Liberta umana', d:'l\'ultimo libro pubblicato in vita: dopo, quarant\'anni di manoscritti'},
+         {r:'e rompe con una tradizione lunghissima secondo cui il male e', n:'Privazione', d:'una mancanza di bene, come il buio e mancanza di luce: da Agostino in poi, quasi tutti'},
+         {r:'per Schelling invece e una', n:'Potenza positiva', d:'una forza reale, che vuole qualcosa e che ha bisogno di energia per essere esercitata'},
+         {r:'per cui la liberta e la capacita del bene', n:'E del male', d:'non la capacita di scegliere il bene: una liberta che potesse solo il bene non sarebbe liberta'},
+         {r:'e in Dio stesso pone un', n:'Fondamento oscuro', d:'qualcosa in Dio che non e Dio: una base senza fondo da cui l\'esistenza si distacca'},
+         {r:'e con questo rifiuta anche l\'idea che il male sia', n:'Ignoranza', d:'chi lo fa non ha capito male: ha capito e ha scelto, e per questo se ne risponde'},
+         {r:'l\'uomo e il punto in cui le due forze possono', n:'Separarsi', d:'negli altri esseri restano unite; in noi si possono staccare, e per questo possiamo il male',
+          f:[{piu:true, r:'da cui la conclusione che il male sia il', n:'Prezzo della liberta', d:'non un difetto del progetto ma la sua condizione: chi non potesse fare il male non farebbe nemmeno il bene'}]}
+       ]},
+
+      {r:'alla fine distingue filosofia negativa e', n:'Positiva', d:'e formula la domanda con cui e ricordato',
+       f:[
+         {r:'la filosofia negativa dice', n:'Che cosa sono le cose', d:'le essenze, le possibilita, cio che si puo dedurre: e tutta la filosofia razionale, Hegel compreso'},
+         {r:'ma non arriva a dire', n:'Che ci sono', d:'nessuna deduzione produce un\'esistenza: dal concetto di cento talleri non si ricava una moneta'},
+         {r:'da cui lo', n:'Stupore', d:'perche c\'e qualcosa e non piuttosto il nulla: la domanda che nessun sistema puo far sparire'},
+         {r:'serve dunque una filosofia che parta dall\'', n:'Esistenza', d:'non dai concetti verso i fatti, ma dai fatti verso il loro senso'},
+         {r:'e questo lo porta a', n:'Mitologia e rivelazione', d:'la storia delle religioni letta come il modo in cui l\'umanita ha elaborato quel fatto',
+          f:[{piu:true, r:'esposta a Berlino nel', n:'1841', d:'in un\'aula in cui siedono Kierkegaard, Bakunin, Engels e Burckhardt: quasi tutti se ne vanno delusi'}]}
+       ]},
+
+      {r:'e viene', n:'Riscoperto tardi', d:'un secolo dopo essere stato dato per finito',
+       f:[
+         {r:'ai suoi tempi finisce', n:'Schiacciato da Hegel', d:'per cinquant\'anni la filosofia tedesca e hegeliana e lui e un capitolo chiuso'},
+         {r:'poi lo riprende', n:'Heidegger', d:'che dedica alle Ricerche del 1809 un intero corso e le chiama il vertice della metafisica dell\'idealismo'},
+         {r:'e con lui', n:'Jaspers e Tillich', d:'e in generale chi cerca una filosofia che non riduca l\'esistenza a un caso del concetto'},
+         {r:'la filosofia della natura torna utile all\'', n:'Ecologia', d:'perche pensa la natura come un tutto vivente e non come un magazzino di risorse'},
+         {piu:true, r:'e la sua ultima domanda torna in bocca a', n:'Chiunque si fermi a guardare', d:'perche c\'e qualcosa e non piuttosto il nulla: la formula passera a Heidegger e da li nel linguaggio comune'},
+         {r:'e resta viva soprattutto la sua domanda sul', n:'Male reale', d:'l\'unica alternativa robusta all\'idea che chi fa il male stia semplicemente sbagliando'}
+       ]}
+    ],
+    incroci:[
+      {da:'Ostacolo dell\'Io', a:'Realta propria', r:'e cio che Schelling rifiuta per attribuire alla natura una',
+       perche:'Per Fichte il non-Io esiste perche l\'Io abbia contro che cosa agire, e la natura e in fondo materiale morale. Schelling obietta che cosi non si spiega perche la natura abbia proprio quelle leggi, quelle forme e quella storia. Chiedere una spiegazione della natura a partire da se stessa e il gesto che fonda la sua filosofia e che rompe con il maestro.'},
+      {da:'Spirito addormentato', a:'Separarsi', r:'e cio che rende possibile che nell\'uomo le forze possano',
+       perche:'Se natura e spirito sono due stati della stessa realta, allora l\'uomo e il grado in cui quella realta arriva a guardarsi. E proprio li le due forze che ovunque restano unite — il fondamento e cio che ne emerge — possono staccarsi. Il male non e dunque un\'anomalia estranea al mondo: e cio che diventa possibile quando il mondo raggiunge il grado in cui si sa.'},
+      {da:'Privazione', a:'Potenza positiva', r:'viene sostituita dall\'idea del male come',
+       perche:'La tradizione che va da Agostino a gran parte della teologia sostiene che il male non sia nulla di reale, solo un\'assenza di bene: cosi Dio non ne e l\'autore. Il prezzo e che nessuno vuole davvero il male, e ogni colpa diventa un errore. Schelling paga il prezzo opposto: rende il male reale e deve spiegare da dove venga — e lo cerca dentro Dio stesso.'},
+      {da:'Fondamento oscuro', a:'Indifferenza', r:'e cio che sostituisce l\'',
+       perche:'Nella fase dell\'identita l\'Assoluto era un\'unita in cui ogni differenza si spegneva, ed e l\'obiezione di Hegel. Nel 1809 quell\'unita si scinde: in Dio c\'e un fondamento che non e Dio, una base oscura da cui l\'esistenza si stacca. L\'assoluto smette di essere una notte uniforme e diventa un processo con una tensione interna — e questo e il modo in cui Schelling risponde, senza citarlo, all\'accusa piu famosa che gli sia stata fatta.'},
+      {da:'Prezzo della liberta', a:'E del male', r:'e la conseguenza dell\'aver definito la liberta come capacita del bene',
+       perche:'Se una volonta potesse volere soltanto il bene, non sceglierebbe: eseguirebbe. Ne segue che la possibilita del male non sia un difetto da correggere ma la condizione di ogni merito. È l\'argomento che regge quasi tutte le teodicee moderne, e va maneggiato con cautela in classe: giustifica la possibilita del male, non ciascun male concreto, e confondere le due cose e il modo piu rapido di dire qualcosa di odioso a chi soffre.'},
+      {da:'Non sapeva di fare', a:'Piu intelligente del suo autore', r:'e cio per cui un\'opera puo essere',
+       perche:'Nell\'opera d\'arte, secondo Schelling, coincidono un\'attivita cosciente e una inconscia: l\'artista sa cosa vuole e insieme fa cose che non aveva deciso. Ne segue che il significato di un\'opera non coincida con le intenzioni di chi l\'ha fatta, e che chiedere all\'autore che cosa volesse dire sia una domanda legittima e non decisiva. È una tesi che ha attraversato tutta la critica del Novecento.'},
+      {da:'Hegel', a:'Hegel e Holderlin', r:'e uno dei tre di',
+       perche:'Nel 1790 dividono una stanza a Tubinga: il piu giovane diventera celebre per primo, il secondo scrivera il libro che oscurera il primo, il terzo perdera la ragione a trentasei anni. Che l\'accusa piu dura mai rivolta a Schelling venga dal compagno di stanza a cui aveva trovato il primo incarico e la parte umanamente piu dura di questa storia.'},
+      {da:'Che ci sono', a:'Arresto momentaneo', r:'e la domanda che nemmeno il concetto di',
+       perche:'La filosofia della natura spiega benissimo che cosa siano le cose — configurazioni momentanee di una produttivita continua — e non spiega perche quella produttivita ci sia. È lo scarto che Schelling chiamera differenza fra filosofia negativa e positiva: si puo dire tutto di come stanno le cose e restare senza risposta sul fatto che stiano.'},
+      {da:'Stupore', a:'1841', r:'e cio che porta alle lezioni del',
+       perche:'La domanda sul perche ci sia qualcosa invece di nulla non si risolve deducendo: richiede di partire dall\'esistenza gia data e di risalire al suo senso. Da qui la filosofia positiva e le lezioni berlinesi sulla mitologia. Il pubblico era andato ad ascoltare l\'erede di Hegel e si trovo davanti una filosofia della rivelazione: quasi tutti se ne andarono, e alcuni di quelli che se ne andarono cambiarono il secolo.'},
+      {da:'Silenzio', a:'Incoerenza', r:'aggrava l\'accusa di',
+       perche:'Dopo il 1809 Schelling non pubblica quasi piu, e continua a rielaborare per quarant\'anni manoscritti che escono postumi. Chi lo giudicava mentre era vivo aveva davanti una serie di sistemi interrotti senza il lavoro che li collegava. Molta dell\'accusa di essere un pensatore incostante nasce da un\'opera che i contemporanei non potevano leggere.'},
+      {da:'Diviso', a:'Polarita', r:'riguarda anche l\'uso del principio di',
+       perche:'Che ogni fenomeno nasca da forze opposte e un\'intuizione che ha guidato ricerche reali: Oersted cercava proprio quell\'unita quando trovo il legame fra elettricita e magnetismo. La stessa idea, applicata senza controllo sperimentale, ha prodotto analogie fra il sesso delle piante e il magnetismo terrestre che non significano nulla. Lo stesso principio, con e senza verifica, da\' una scoperta e una fantasticheria.'},
+      {da:'Male reale', a:'Heidegger', r:'e la ragione principale per cui lo riprende',
+       perche:'Il Novecento ha avuto bisogno di una filosofia che non spiegasse il male come ignoranza o come difetto di educazione. Le Ricerche del 1809 offrono l\'unica alternativa robusta costruita dentro l\'idealismo, e Heidegger vi dedica un corso intero. La riscoperta di Schelling non e un fatto accademico: comincia quando l\'idea che nessuno faccia il male apposta smette di sembrare credibile.'},
+      {da:'Arte', a:'Sensi diversi', r:'e uno dei concetti che compaiono con',
+       perche:'Nel 1800 l\'arte e l\'organo della filosofia, il luogo supremo in cui l\'assoluto si mostra; pochi anni dopo quel ruolo passa all\'intuizione intellettuale e poi alla rivelazione. Chi legge Schelling citando un\'affermazione senza la data rischia di attribuirgli tesi che ha sostenuto per cinque anni e poi abbandonato — ed e successo molte volte.'}
+    ]
+  },
+  provocazione: {
+    titolo:'Nessuno lo fa apposta',
+    durata:'55 minuti',
+    domandaMadre:'Chi fa il male sta sbagliando, oppure sa benissimo quello che fa?',
+    perche:'Per piu di duemila anni la filosofia occidentale ha risposto la stessa cosa: nessuno fa il male volontariamente, chi lo fa scambia per bene qualcosa che non lo e. Da Socrate ad Agostino, che definisce il male una privazione, fino a buona parte della psicologia contemporanea, la conclusione e sempre che il male non sia una cosa reale ma un difetto: di conoscenza, di educazione, di salute. Nel 1809 Schelling rompe con questa tradizione e afferma che il male sia una potenza positiva, e che la liberta consista nella capacita del bene e del male insieme. La classe deve accorgersi che la tesi consolatoria e ovunque, che le proprie intuizioni la contraddicono, e che ciascuna delle due posizioni produce istituzioni diverse — la scuola oppure il carcere, la cura oppure la pena.',
+    occorrente:'Niente.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'Una tesi.\n\nNessuno fa il male\nvolontariamente.\n\nChi lo fa\nsi e sbagliato:\nha preso per un bene\nqualcosa che non lo era.\n\nQuindi il male\nnon esiste come cosa.\n\nÈ una mancanza,\ncome il buio\ne mancanza di luce\n\ne il freddo\ne mancanza di calore.\n\nNon e un\'opinione\nstravagante.\n\nÈ la risposta\ndi Socrate,\n\ndi Platone,\n\ndegli stoici,\n\ndi Agostino,\n\ndi Tommaso,\n\ne di quasi tutta\nla filosofia occidentale\nper duemiladuecento anni.\n\nÈ vera?',
+       parlato:'Metti la tesi sul tavolo nella sua forma piu forte e non farla sembrare strana: e la posizione dominante della nostra tradizione.\n\nPoi mostra quanto e viva oggi, perche i ragazzi credono che sia roba antica. Falli riconoscere le versioni contemporanee: chi delinque non ha avuto opportunita, chi e violento e stato a sua volta ferito, chi odia non ha capito, e se la gente sapesse si comporterebbe diversamente.\n\nDi\' chiaramente che ciascuna di queste affermazioni e spesso vera, e che tutte insieme formano la stessa tesi: il male e un difetto, non una scelta.\n\nPoi la domanda dell\'ora, e chiedi di rispondere pensando a un caso concreto che conoscono — non un caso di cronaca, uno vero: qualcuno che ha fatto una cattiveria a qualcun altro.\n\nLa domanda e semplice: quella persona non aveva capito?\n\nRaccogli le risposte. Di solito la classe si divide subito, e alcuni si arrabbiano. È esattamente il materiale che serve.',
+       seDicono:[
+         {loro:'«Certo che sanno quello che fanno.»',
+          tu:'Allora ti chiedo di reggere la conseguenza, perche non e comoda: stai dicendo che qualcuno puo vedere il bene, riconoscerlo come bene, e scegliere l\'altra cosa. Sembra ovvio e a duemila anni di filosofi non sembrava affatto: come si sceglie una cosa sapendo che e peggiore? Se lo spieghi, hai fatto il lavoro dell\'ora.'},
+         {loro:'«Dipende dai casi.»',
+          tu:'Sicuramente, e oggi ti chiedo di sceglierne uno e stare li. Prendi il caso piu difficile che conosci — qualcuno che ha fatto del male con calma, sapendo, senza scuse pronte. Se anche per quello dici che non aveva capito, sei coerente. Se non riesci a dirlo, hai gia trovato il limite della tesi.'}
+       ]},
+
+      {minuti:'8–17', et:'Lo schieramento',
+       schermo:'Due posizioni.\n\nA.\nChi fa il male\nsta sbagliando.\nNon sa,\nnon ha avuto,\nnon ha capito.\nSe capisse,\nnon lo farebbe.\n\nB.\nChi fa il male\npuo sapere benissimo\ne farlo lo stesso.\nIl male e una scelta,\nnon un errore.\n\nSchieratevi\ne difendetevi.',
+       opzioni:['chi fa il male sta sbagliando: se capisse davvero, non lo farebbe', 'si puo sapere che una cosa e male e sceglierla lo stesso'],
+       parlato:'Fai schierare e conta. Le due posizioni di solito si dividono quasi a meta, ed e uno dei capitoli in cui la classe discute davvero.\n\nMetti alla prova la A, che ha argomenti seri e conseguenze scomode.\n\nPrima domanda: se e sempre un errore, che senso ha punire? Si cura chi sbaglia, non lo si punisce. Fai sentire la conseguenza: chi sta nella A dovrebbe essere contro il carcere, o quasi.\n\nSeconda domanda, piu dura: se nessuno fa il male volontariamente, allora nessuno e mai davvero colpevole. Chiedi se sono disposti a dirlo di chi ha fatto del male a loro. Quasi mai lo sono.\n\nPoi metti alla prova la B con altrettanto rigore.\n\nPrima domanda: se il male e una scelta libera, allora chi cresce fra violenza e miseria sceglie come chi cresce protetto? Nessuno lo sostiene sul serio.\n\nSeconda: come funziona questa scelta? Perche qualcuno dovrebbe volere il peggio? Se rispondi che ci guadagna, allora sta cercando un bene per se, e sei tornato nella posizione A.\n\nQuesto e il punto in cui la classe si blocca, ed e giusto che si blocchi: e la difficolta vera. Nominala e passa oltre.',
+       seDicono:[
+         {loro:'«Lo fanno perché ci guadagnano.»',
+          tu:'Guarda dove ti porta: se lo fanno per un vantaggio, allora stanno cercando un bene per se e hanno solo sbagliato i conti. Sei nella posizione A senza volerci essere. Per stare nella B ti serve un caso in cui qualcuno faccia del male senza ricavarne niente — e quei casi esistono, ed e questo che li rende terribili.'},
+         {loro:'«È tutta colpa di come sono cresciuti.»',
+          tu:'Spiega moltissimo, e ti chiedo di notare due cose. La prima: non spiega perche, cresciuti nello stesso posto, alcuni facciano una cosa e altri no. La seconda: se vale come spiegazione, vale anche per te — anche le tue cose buone sarebbero solo il risultato di come sei cresciuto. Sei disposto a dirlo di entrambe?'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'Perche la tradizione\nha detto\nche il male non esiste.\n\nNon per ingenuita.\n\nPer un problema preciso.\n\nSe Dio ha fatto tutto,\ne il male e una cosa,\n\nallora ha fatto\nanche quella.\n\nLa soluzione di Agostino\ne elegantissima:\n\nil male non e una cosa.\n\nÈ un buco.\n\nCome la carie\nnon e una sostanza:\ne dente che manca.\n\nCosi Dio non l\'ha fatto,\nperche non c\'e niente\nda fare.\n\nFunziona.\n\nMa guardate\nche cosa costa.\n\nSe il male e mancanza,\n\nallora chi lo fa\nnon vuole il male:\n\nvuole qualcosa\ne lo prende male.\n\nE allora\n\nnessuno\n\ne mai\n\ncolpevole.',
+       parlato:'Ricostruisci il ragionamento con rispetto, perche e una delle soluzioni piu intelligenti della storia della filosofia e i ragazzi devono vedere che regge.\n\nPrimo pezzo: il problema. Se Dio e buono e onnipotente e ha fatto tutto, da dove viene il male? Ogni risposta sembra togliere qualcosa a Dio.\n\nSecondo pezzo: la soluzione. Il male non e una realta ma una privazione. Usa esempi fisici: il buio non e una sostanza che si aggiunge, e assenza di luce. Nessuno produce il buio: si spegne la luce.\n\nTerzo pezzo: la potenza della soluzione. Spiega perche ha convinto per millecinquecento anni. Toglie il problema alla radice, e spiega anche l\'esperienza: chi ruba non vuole il male, vuole i soldi; chi tradisce non vuole distruggere, vuole qualcosa per se.\n\nQuarto pezzo, e qui si gira: il costo. Falli arrivare da soli. Se ogni male e un errore, allora la responsabilita si assottiglia fino a sparire. Chi ha fatto una cosa terribile ha soltanto valutato male.\n\nFai la prova che funziona sempre: chiedi a qualcuno di pensare a una cosa cattiva che gli e stata fatta, e di dire ad alta voce «non l\'ha fatto apposta, si e sbagliato». Quasi nessuno riesce a dirlo senza sentire che c\'e qualcosa di falso.\n\nQuel qualcosa di falso e il punto da cui parte Schelling.',
+       seDicono:[
+         {loro:'«Ma è vero che chi ruba vuole i soldi, non il male.»',
+          tu:'Vero nella maggior parte dei casi, ed e la forza della tesi. Il problema sono i casi che non ci rientrano: chi umilia qualcuno davanti agli altri e non ci guadagna niente, chi rovina una cosa solo perche era bella. Sono rari e sono proprio quelli che ci sembrano il male vero. Una teoria che spiega tutti i casi tranne quelli decisivi ha un problema.'},
+         {loro:'«Allora Agostino diceva che nessuno è colpevole?»',
+          tu:'No, e teneva insieme le due cose con la nozione di volonta che si allontana da Dio, che e un allontanarsi e non un fare. Molti lettori trovano che questa parte regga meno del resto. La difficolta e reale ed e la stessa che stiamo incontrando: se il male e nulla, chi lo compie che cosa fa esattamente?'}
+       ]},
+
+      {minuti:'28–38', et:'Il testo',
+       schermo:'Schelling, 1809.\n\nRompe con tutti.\n\nDice: il male\nnon e una mancanza.\n\nÈ una forza.\n\nHa energia,\nha direzione,\nvuole qualcosa.\n\nE aggiunge la frase\nda cui dipende tutto:\n\nla liberta\ne la capacita\ndel bene\ne del male.\n\nNon la capacita\ndi scegliere il bene.\n\nTutte e due,\ninsieme,\no non e liberta.\n\nPerche un essere\nche potesse solo il bene\n\nnon sceglierebbe:\n\neseguirebbe.\n\nE se il male\ne una forza reale,\n\nda dove viene?\n\nRisposta di Schelling,\ne tenetevi forte:\n\nin Dio stesso\nc\'e qualcosa\nche non e Dio.\n\nUn fondamento oscuro.\n\nUna base\nda cui l\'esistenza\nsi stacca,\n\ne che resta li,\nsotto,\nper sempre.',
+       testo:{fonte:'F. W. J. Schelling, Ricerche filosofiche sull\'essenza della libertà umana (1809)',
+              glossa:'Il testo è la rottura più netta con la tradizione della privazione, e va letto in due movimenti. Il primo: definire la libertà come capacità del bene e del male insieme significa che la possibilità del male non è un guasto ma la condizione di ogni scelta reale — un essere che potesse volere solo il bene eseguirebbe un programma. Il secondo, molto più difficile: se il male è una forza, deve avere un\'origine, e Schelling la colloca in un fondamento che è in Dio senza essere Dio, una base oscura da cui l\'esistenza emerge senza mai riassorbirla. In ogni essere quelle due forze restano unite; nell\'uomo possono separarsi, e proprio in quella separazione consiste la libertà. La tesi va maneggiata con una cautela precisa: giustifica la possibilità del male, non ciascun male concreto — e confondere le due cose è il modo più rapido di dire qualcosa di odioso a chi sta soffrendo.'},
+       parlato:'Leggi il passo in due tempi, e tratta il secondo con piu cautela del primo.\n\nPrimo tempo: la definizione della liberta. Falla lavorare con un esperimento. Immaginate una persona costruita in modo da poter volere soltanto il bene. Fa sempre la cosa giusta. La ammirate?\n\nQuasi sempre rispondono di no, e non sanno perche. Aiutali: perche non ha scelto. Ammiriamo chi poteva fare altrimenti.\n\nEnuncia la conseguenza: se togliessimo la possibilita del male, toglieremmo anche il merito del bene. Sono la stessa possibilita.\n\nSecondo tempo: il fondamento oscuro. Presentalo per quello che e — un\'ipotesi metafisica azzardata — e non chiedere di crederci. Chiedi di capire perche gli serve: se il male e reale, deve venire da qualche parte, e l\'unica alternativa e dire che venga dal nulla.\n\nPoi metti il paletto, e mettilo forte perche senza di esso questa lezione diventa odiosa. Dire che la possibilita del male e il prezzo della liberta non significa che ogni male concreto sia giustificato. Una cosa e sostenere che senza quella possibilita non ci sarebbe scelta; un\'altra e dire a chi ha subito qualcosa che serviva a qualcosa. La seconda non segue dalla prima, e chi la dice sta facendo del male con un ragionamento.\n\nFai ripetere la distinzione a qualcuno, perche la incontreranno spesso e quasi sempre confusa.',
+       seDicono:[
+         {loro:'«Se è colpa di un fondamento oscuro, non è colpa nostra.»',
+          tu:'Attento, perche Schelling dice il contrario: quel fondamento e la condizione perche una scelta sia possibile, non la causa della scelta. È come dire che avere le gambe rende possibile scappare — non che le gambe siano responsabili della fuga. Se il fondamento decidesse al posto tuo, saremmo di nuovo dentro la posizione di chi dice che nessuno e colpevole.'},
+         {loro:'«Questa storia di Dio non mi interessa.»',
+          tu:'Puoi toglierla, e la tesi resta in piedi in una forma piu magra: il male e reale, e la liberta include la possibilita di volerlo. Il fondamento oscuro serve a Schelling per rispondere alla domanda sull\'origine. Se quella domanda non ti interessa, tieni la prima parte — ed e gia sufficiente a mandare all\'aria duemila anni di tradizione.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'Adesso guardiamo\nche cosa cambia\nnella pratica.\n\nNon in teologia.\n\nQui, adesso.\n\nSe vale la posizione A,\nil male e un errore.\n\nAllora la risposta giusta\ne insegnare,\ncurare,\nrimuovere le cause.\n\nUn carcere\ne un ospedale mal riuscito.\n\nE nessuno\nmerita davvero\nun rimprovero.\n\nSe vale la posizione B,\nil male e una scelta.\n\nAllora la risposta giusta\ne rispondere,\nchiedere conto,\npunire.\n\nE ciascuno\nrisponde\ndi cio che ha fatto.\n\nAdesso la cosa\nda notare.\n\nNessuno di noi\nvive\ncon una sola\ndi queste due.\n\nQuando giudichiamo\nun altro\n\nusiamo la B.\n\nQuando giudichiamo\nnoi stessi\n\nusiamo la A.',
+       parlato:'Sposta la questione dalla metafisica alle conseguenze, perche e li che i ragazzi si accorgono che la domanda li riguarda.\n\nPrimo pezzo: le due istituzioni. Fai vedere che le due posizioni non sono opinioni private ma progetti diversi di societa. Un mondo che pensa il male come errore costruisce scuole, terapie, servizi sociali. Un mondo che lo pensa come scelta costruisce tribunali e pene. Il nostro fa tutte e due, e discute da due secoli su quale prevalga.\n\nSecondo pezzo, ed e il colpo: l\'asimmetria. Fai la prova, e funziona sempre.\n\nChiedi: quando qualcuno vi fa uno sgarbo, che cosa pensate? Che l\'ha fatto apposta. Quando siete voi a farlo, che cosa pensate? Che ero stanco, che non era il momento, che non volevo.\n\nLascia che ridano, e poi rendi seria l\'osservazione: usiamo la teoria del male come scelta per gli altri e la teoria del male come errore per noi. Non e ipocrisia consapevole: e il modo in cui siamo fatti, perche di noi conosciamo le circostanze e degli altri vediamo solo il gesto.\n\nTerzo pezzo: la domanda che ne segue, e va lasciata aperta. Qual e la correzione giusta? Trattare gli altri come trattiamo noi, cioe capire? Oppure trattare noi come trattiamo gli altri, cioe rispondere?\n\nFai schierare di nuovo su questa, brevemente. Le due risposte sono entrambe difendibili e portano a due modi opposti di stare al mondo.\n\nChiudi con l\'osservazione onesta: chi sceglie solo la prima diventa incapace di chiedere conto a chiunque; chi sceglie solo la seconda diventa spietato con se stesso e con tutti. Quasi nessuno riesce a stare in una sola delle due, e forse non deve.',
+       seDicono:[
+         {loro:'«Capire tutto significa perdonare tutto.»',
+          tu:'È un proverbio famoso e non e vero, e vale la pena separarlo. Puoi capire perfettamente perche qualcuno ha fatto una cosa e continuare a ritenerlo responsabile: capire riguarda le cause, ritenere responsabile riguarda cio che gli si puo chiedere. Un giudice che comprende benissimo l\'imputato non per questo lo assolve.'},
+         {loro:'«Con me stesso sono severissimo.»',
+          tu:'Puo darsi, ed e un\'eccezione reale, ma controlla: severo su che cosa? Spesso siamo severissimi sui risultati — non sono stato bravo abbastanza — e indulgentissimi sulle intenzioni — non volevo. L\'asimmetria di cui parliamo riguarda le intenzioni, ed e li che quasi tutti ci concediamo cio che non concediamo a nessuno.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'La domanda era:\n\nchi fa il male\nsta sbagliando,\no sa quello che fa?\n\nRisposta di Schelling:\n\nsa.\n\nE proprio per questo\ne libero.\n\nUn essere\nche non potesse\nfare il male\n\nnon sarebbe innocente.\n\nSarebbe\nun meccanismo\nben regolato.\n\nDa portarsi via:\n\nquando dite\n«non l\'ha fatto apposta»,\n\nfermatevi\nun secondo\ne chiedetevi\n\nse state descrivendo\n\no se state\nscusando.\n\nSono due cose\ndiverse,\n\ne tutte e due\nservono.\n\nMa fanno danni\nquando si scambiano.',
+       parlato:'Riprendi lo schieramento iniziale e chiedi chi si e spostato. Di solito pochi, e va detto: era un capitolo in cui la posizione non doveva cambiare, doveva diventare consapevole.\n\nPoi da\' lo strumento e rendilo praticabile. La frase «non l\'ha fatto apposta» ha due usi. Uno descrittivo: sto dicendo che cosa e successo. Uno normativo: sto dicendo che non gliene si puo chiedere conto. Passano l\'uno per l\'altro senza che nessuno se ne accorga.\n\nFai fare la prova su casi loro. Un compagno che ha detto una cosa pesante. Un genitore che ha reagito male. Voi stessi. Ogni volta la domanda e la stessa: sto descrivendo o sto scusando?\n\nPoi la parte onesta, e non va saltata. Non sto dicendo che scusare sia sbagliato. Scusare e spesso la cosa migliore da fare, e una societa che non perdona e invivibile. Sto dicendo che va fatto sapendo di farlo, e non facendolo passare per una descrizione dei fatti.\n\nUltima cosa sull\'autore, e serve a dare il contesto. Schelling scrive queste pagine a trentaquattro anni, pochi mesi dopo la morte di Caroline, la donna per cui aveva affrontato uno scandalo che gli era costato la cattedra. È l\'ultimo libro che pubblica in vita: dopo, quarant\'anni di manoscritti che escono solo da morto. E per un secolo la Germania lo considera un capitolo chiuso, finche il Novecento non si trova davanti cose che l\'idea del male come errore non riusciva piu a spiegare.\n\nPer il seguito: il compagno di stanza che lo aveva accusato di avere un assoluto in cui tutte le vacche sono nere ha costruito il sistema piu grande della filosofia moderna. La prossima volta si comincia da Hegel.',
+       seDicono:[
+         {loro:'«Quindi bisogna essere più duri.»',
+          tu:'Non e la conclusione, e conviene dirlo chiaro. La conclusione e che rispondere delle proprie azioni presuppone di poterle scegliere — che e una cosa che ci restituisce, non che ci toglie. Chi sostiene che nessuno sia mai responsabile non sta essendo generoso: sta dicendo che nessuno di noi decide niente, e questo vale anche per le cose di cui andiamo fieri.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'Tre in una stanza',
+       corpo:'Nel 1790 il seminario protestante di Tubinga assegna la stessa stanza a tre studenti: Hegel, vent\'anni, Hölderlin, vent\'anni, e Schelling, quindici, ammesso con una deroga.\n\nSecondo un racconto tramandato, piantano insieme un albero della libertà per festeggiare la Rivoluzione francese. Negli anni successivi si scambiano lettere in cui progettano una filosofia nuova, e a uno dei tre si attribuisce la stesura di un foglio anonimo, ritrovato in copia manoscritta da Hegel, che ne contiene il programma.\n\nSchelling diventa famoso per primo, a ventitré anni. Hölderlin perde la ragione a trentasei e passa gli ultimi trentasei anni in una torre. Hegel arriva tardi e li oscura entrambi.',
+       chiedi:'Tre persone con le stesse letture, la stessa età, la stessa stanza, e tre destini che non si somigliano. Che cosa fa la differenza — il talento, il carattere, le occasioni? E quanto di ciò che diventerete dipende da cose che in questo momento non potete vedere?'},
+      {titolo:'La notte delle vacche nere',
+       corpo:'Nel 1807 Hegel pubblica la Fenomenologia dello spirito. Nella prefazione scrive che spacciare il proprio assoluto per la notte in cui, come si suol dire, tutte le vacche sono nere, è l\'ingenuità del vuoto di conoscenza.\n\nNon fa nomi, ma tutti capiscono che il bersaglio è la filosofia dell\'identità di Schelling, che pochi anni prima gli aveva procurato il primo incarico universitario e aveva diretto con lui una rivista.\n\nSchelling gli scrive chiedendo spiegazioni. Hegel risponde in modo evasivo. Non si parleranno praticamente più. Trentaquattro anni dopo, morto Hegel da un decennio, Schelling viene chiamato a Berlino proprio per smontarne l\'influenza.',
+       chiedi:'Una frase in una prefazione rompe un\'amicizia di quindici anni. Un\'obiezione filosofica dura è un atto intellettuale o è anche un gesto personale? E chi la riceve, come dovrebbe distinguere le due cose?'},
+      {titolo:'L\'aula del 1841',
+       corpo:'Nel 1841 il re di Prussia chiama Schelling a Berlino, sulla cattedra che era stata di Hegel, con l\'incarico dichiarato di combattere l\'hegelismo.\n\nAlla prima lezione l\'aula è piena. Fra gli ascoltatori ci sono Søren Kierkegaard, Michail Bakunin, Friedrich Engels, Jacob Burckhardt e Alexander von Humboldt.\n\nNel giro di poche settimane la delusione è generale: chi si aspettava un sistema si trova davanti una filosofia della rivelazione e della mitologia. Kierkegaard smette di seguire e scrive di essere stanco di aspettare; Engels pubblica opuscoli feroci contro di lui. L\'aula si svuota.',
+       chiedi:'Nella stessa stanza siedono un futuro filosofo dell\'esistenza, un anarchico, un rivoluzionario e uno storico, e nessuno di loro trova quello che cercava. È un fallimento di chi parlava o un caso in cui il pubblico voleva un\'altra cosa? E vi è mai capitato di giudicare deludente qualcosa che semplicemente non era quello che vi aspettavate?'}
+    ],
+    testi:[
+      {fonte:'Schelling, Primo abbozzo di un sistema di filosofia della natura (1799)',
+       corpo:'Schelling sostiene che la natura vada considerata non come prodotto ma come produttività, e che ogni singolo prodotto sia soltanto un arresto momentaneo di quella produttività: come in un fiume il vortice non è una cosa fissa ma acqua che scorre trattenuta un istante nella stessa forma, così ogni oggetto naturale è un equilibrio provvisorio fra forze opposte.',
+       glossa:'L\'immagine del vortice è la più efficace per far capire in classe che cosa significhi pensare la natura come processo invece che come insieme di cose. Ha anche un valore pratico: aiuta a leggere le scienze del vivente, dove ogni struttura stabile — una cellula, un ecosistema, un organismo — si mantiene solo perché qualcosa continua a passarci attraverso. La stessa idea, senza controllo sperimentale, ha però prodotto anche analogie prive di qualunque fondamento.'},
+      {fonte:'Schelling, Sistema dell\'idealismo trascendentale, parte finale (1800)',
+       corpo:'Schelling afferma che nell\'opera d\'arte si trovino unite un\'attività cosciente e un\'attività inconscia, e che l\'artista sembri aver messo nella propria opera, oltre a ciò che vi ha posto con evidente intenzione, una profondità infinita che nessun intelletto finito è in grado di esaurire; per questo l\'arte è l\'organo della filosofia.',
+       glossa:'La tesi ha avuto una fortuna enorme al di fuori della filosofia. Ne discende che il significato di un\'opera non coincida con le intenzioni di chi l\'ha fatta, e quindi che chiedere all\'autore che cosa volesse dire sia una domanda legittima ma non decisiva. È il presupposto di quasi tutta la critica letteraria e artistica del Novecento, e in classe si verifica facilmente su qualunque libro che i ragazzi abbiano letto.'},
+      {fonte:'Schelling, Ricerche sull\'essenza della libertà umana (1809)',
+       corpo:'Schelling sostiene che in Dio si debba distinguere l\'esistente da ciò che è fondamento dell\'esistenza: un fondamento che è in Dio senza essere Dio stesso, una base oscura che non viene mai riassorbita e che resta come ciò da cui l\'esistenza continuamente si stacca. In ogni altro essere le due forze restano indissolubili; nell\'uomo possono separarsi, e in questa separabilità consiste la possibilità del bene e del male.',
+       glossa:'È il passaggio che Heidegger ha definito il vertice della metafisica dell\'idealismo tedesco, e anche il più difficile del libro. La mossa consiste nell\'introdurre una tensione dentro l\'assoluto, invece di lasciarlo come un\'unità indistinta: è la risposta implicita all\'accusa di Hegel sulla notte in cui tutte le vacche sono nere. Va detto agli studenti che la parte teologica si può sospendere senza che la tesi sulla libertà perda forza.'}
+    ],
+    compito:'Mezza pagina. Ricostruite un episodio in cui qualcuno vi ha fatto un torto, e uno in cui l\'avete fatto voi. Per ciascuno scrivete due versioni: una in cui la persona sapeva quello che faceva, e una in cui si era sbagliata. Quattro versioni in tutto. Poi rispondete a una domanda sola, con onestà: quale delle due versioni vi è venuta più facile per l\'altro, e quale per voi?',
+    fonti:[
+      'F. W. J. Schelling, Idee per una filosofia della natura (1797); Primo abbozzo (1799); Sistema dell\'idealismo trascendentale (1800)',
+      'Ricerche filosofiche sull\'essenza della libertà umana (1809); Le età del mondo (postumo); Filosofia della rivelazione (lezioni berlinesi)',
+      'Agostino, Confessioni VII e La città di Dio XII — il male come privazione',
+      'M. Heidegger, Schelling. Il trattato del 1809 sull\'essenza della libertà umana',
+      'L. Pareyson, Ontologia della libertà; X. Tilliette, Schelling. Una filosofia in divenire',
+      'S. Žižek, Il resto indivisibile; e sulle lezioni berlinesi, K. Löwith, Da Hegel a Nietzsche'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',

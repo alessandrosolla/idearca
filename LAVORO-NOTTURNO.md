@@ -194,7 +194,7 @@ Si va in ordine di programma. Restano:
 - [x] Filosofia moderna · 23 — Kant: religione, diritto e storia
 - [x] Filosofia moderna · 24 — Il Romanticismo
 - [x] Filosofia moderna · 25 — Fichte
-- [ ] Filosofia moderna · 26 — Schelling
+- [x] Filosofia moderna · 26 — Schelling
 - [ ] Filosofia moderna · 27 — Hegel: i fondamenti del sistema
 - [ ] Filosofia moderna · 28 — Hegel: la Fenomenologia dello spirito
 - [ ] Filosofia moderna · 29 — Hegel: l'Enciclopedia
