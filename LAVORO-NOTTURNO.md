@@ -198,7 +198,7 @@ Si va in ordine di programma. Restano:
 - [x] Filosofia moderna · 27 — Hegel: i fondamenti del sistema
 - [x] Filosofia moderna · 28 — Hegel: la Fenomenologia dello spirito
 - [x] Filosofia moderna · 29 — Hegel: l'Enciclopedia
-- [ ] Storia contemporanea · 1 — Il Risorgimento e la prima guerra d'indipendenza
+- [x] Storia contemporanea · 1 — Il Risorgimento e la prima guerra d'indipendenza
 - [ ] Storia contemporanea · 2 — L'Europa fra il 1850 e il 1870
 - [ ] Storia contemporanea · 3 — Guerra civile americana, Giappone e Cina
 - [ ] Storia contemporanea · 4 — L'Unità d'Italia e la Destra storica
@@ -207,16 +207,16 @@ Si va in ordine di programma. Restano:
 - [ ] Storia contemporanea · 7 — La Sinistra storica e la crisi di fine secolo
 - [ ] Storia contemporanea · 8 — L'età dell'imperialismo
 - [ ] Storia contemporanea · 9 — La belle époque
-- [ ] Storia contemporanea · 10 — Guglielmo II e i blocchi contrapposti
-- [ ] Storia contemporanea · 11 — L'Italia giolittiana
-- [ ] Storia contemporanea · 12 — La Grande Guerra
-- [ ] Storia contemporanea · 13 — La Rivoluzione russa
-- [ ] Storia contemporanea · 14 — Il dopoguerra in Europa
-- [ ] Storia contemporanea · 15 — Dal dopoguerra al fascismo
-- [ ] Storia contemporanea · 16 — La crisi del 1929
-- [ ] Storia contemporanea · 17 — L'Unione Sovietica di Stalin
-- [ ] Storia contemporanea · 18 — Il nazismo
-- [ ] Storia contemporanea · 19 — La guerra di Spagna e l'espansionismo
+- [x] Storia contemporanea · 10 — Guglielmo II e i blocchi contrapposti
+- [x] Storia contemporanea · 11 — L'Italia giolittiana
+- [x] Storia contemporanea · 12 — La Grande Guerra
+- [x] Storia contemporanea · 13 — La Rivoluzione russa
+- [x] Storia contemporanea · 14 — Il dopoguerra in Europa
+- [x] Storia contemporanea · 15 — Dal dopoguerra al fascismo
+- [x] Storia contemporanea · 16 — La crisi del 1929
+- [x] Storia contemporanea · 17 — L'Unione Sovietica di Stalin
+- [x] Storia contemporanea · 18 — Il nazismo
+- [x] Storia contemporanea · 19 — La guerra di Spagna e l'espansionismo
 - [ ] Storia contemporanea · 20 — L'Italia fascista
 - [ ] Storia contemporanea · 21 — La Seconda guerra mondiale
 - [ ] Storia contemporanea · 22 — La guerra fredda

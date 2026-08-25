@@ -14425,6 +14425,230 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Storia contemporanea · 1 — Il Risorgimento e la prima guerra d\'indipendenza': {
+  mappa: {
+    n:'Il Risorgimento e il 1848-49', d:'quattro progetti incompatibili per un\'Italia sola, e la guerra che li mette alla prova',
+    f:[
+      {r:'comincia da', n:'Una parola discussa', d:'perche il nome e stato dato dopo, e decide gia come si racconta la storia',
+       f:[
+         {r:'la parola indica una', n:'Rinascita', d:'come se l\'Italia fosse esistita, si fosse addormentata e si risvegliasse: e una tesi, non una descrizione'},
+         {r:'e non c\'e accordo sulle', n:'Date', d:'c\'e chi parte dal 1815, chi dalla Repubblica cisalpina del 1796, chi dal Settecento riformatore'},
+         {r:'ne sulla', n:'Fine', d:'1861 con il Regno, 1866 col Veneto, 1870 con Roma, o il 1918 per chi ci mette Trento e Trieste'},
+         {r:'lo hanno raccontato come un\'impresa di', n:'Popolo', d:'oppure come l\'espansione di uno Stato: due storiografie che si combattono da centocinquant\'anni'},
+         {r:'con un dato che nessuna delle due nega: chi partecipa attivamente e una', n:'Minoranza', d:'la maggioranza dei contadini, che e la maggioranza degli italiani, non e coinvolta e in alcuni casi e ostile',
+          f:[{piu:true, r:'e con un problema di', n:'Lingua', d:'nel 1861 chi parla italiano invece del proprio dialetto e una piccola percentuale: le stime piu discusse vanno dal due al dieci per cento'}]}
+       ]},
+
+      {r:'ha un antefatto:', n:'Le societa segrete', d:'trent\'anni di tentativi che falliscono tutti allo stesso modo',
+       f:[
+         {r:'dopo il 1815 l\'Italia e divisa in', n:'Sette Stati', d:'con l\'Austria che controlla direttamente il Lombardo-Veneto e indirettamente quasi tutto il resto'},
+         {r:'la cospirazione passa dalla', n:'Carboneria', d:'riti, gradi, giuramenti: una struttura per sopravvivere alla polizia, non per fare una rivoluzione'},
+         {r:'nel', n:'1820-21', d:'moti a Napoli e in Piemonte: costituzioni concesse e ritirate nel giro di mesi, con l\'intervento austriaco'},
+         {r:'nel', n:'1831', d:'moti nei ducati e nelle Legazioni pontificie, schiacciati anch\'essi dagli austriaci'},
+         {piu:true, r:'con un\'eccezione che pesera a lungo, il', n:'Congresso di Vienna', d:'l\'Italia vi e definita solo un\'espressione geografica, e quella frase diventera per decenni la cosa da smentire'},
+         {r:'e tutti falliscono per la stessa ragione: sono fatti da', n:'Ufficiali e borghesi', d:'senza contadini, senza collegamento fra le citta, contando su aiuti che non arrivano'}
+       ]},
+
+      {r:'la prima risposta e', n:'Mazzini', d:'che cambia il modo stesso di cospirare',
+       f:[
+         {r:'nel 1831 fonda la', n:'Giovine Italia', d:'a Marsiglia, in esilio: non una setta con riti, un\'associazione con un programma pubblico'},
+         {r:'con tre parole: unitaria, indipendente,', n:'Repubblicana', d:'e non trattabili, perche secondo lui un\'Italia unita sotto un re non sarebbe la stessa cosa'},
+         {r:'e con l\'idea che la nazione sia una', n:'Missione', d:'ogni popolo ha un compito da svolgere per l\'umanita: il linguaggio e religioso, non giuridico'},
+         {r:'punta sull\'', n:'Insurrezione popolare', d:'il popolo insorgera se qualcuno gli dara l\'esempio, e l\'esempio va dato anche a costo di morire'},
+         {r:'ma i tentativi falliscono', n:'Uno dopo l\'altro', d:'la Savoia nel 1834, i fratelli Bandiera nel 1844, decine di condanne a morte'},
+         {r:'e finisce accusato di mandare i giovani a', n:'Morire per niente', d:'l\'accusa gli viene fatta anche da chi lo ammira, e lo segnera per il resto della vita',
+          f:[{piu:true, r:'con una risposta che vale la pena leggere: le idee', n:'Camminano sulle gambe degli uomini', d:'sostiene che un fallimento che lascia dei morti crei coscienza dove prima non ce n\'era: e la parte piu discutibile e piu efficace del suo pensiero'}]}
+       ]},
+
+      {r:'accanto a lui stanno i', n:'Progetti alternativi', d:'e sono incompatibili fra loro, non varianti dello stesso',
+       f:[
+         {r:'il', n:'Neoguelfo', d:'Gioberti, 1843: gli italiani hanno un primato morale e civile, e la federazione degli Stati italiani va guidata dal papa'},
+         {r:'il', n:'Moderato sabaudo', d:'Balbo e d\'Azeglio: l\'indipendenza prima dell\'unita, ottenuta con la diplomazia e con l\'esercito del Piemonte'},
+         {r:'il', n:'Federalista', d:'Cattaneo: uno Stato unico e centralizzato soffocherebbe le citta, che sono la vera ricchezza italiana'},
+         {r:'e il', n:'Repubblicano unitario', d:'Mazzini e Ferrari, con una differenza fra loro: Ferrari vuole una rivoluzione anche sociale'},
+         {r:'con una domanda che li divide piu di ogni altra: quale', n:'Italia', d:'unitaria o federale, monarchica o repubblicana, solo indipendente o anche trasformata',
+          f:[{piu:true, r:'e con una che quasi nessuno pone, il rapporto con la', n:'Terra', d:'chi possiede i campi e chi li lavora: la questione contadina resta fuori da tutti e quattro i programmi'}]}
+       ]},
+
+      {r:'poi arrivano i', n:'Due anni di speranza', d:'in cui sembra che tutto si possa fare senza sparare',
+       f:[
+         {r:'nel 1846 viene eletto', n:'Pio IX', d:'e comincia con un\'amnistia per i condannati politici: l\'Europa lo chiama il papa liberale'},
+         {r:'e nasce l\'idea che il papa possa', n:'Guidare gli italiani', d:'per due anni Gioberti sembra aver avuto ragione: le folle acclamano un pontefice'},
+         {r:'anche gli altri sovrani concedono', n:'Riforme', d:'stampa meno controllata, consulte, guardia civica: si spera in un cambiamento dall\'alto'},
+         {r:'in Piemonte Carlo Alberto passa da re', n:'Ambiguo', d:'aveva partecipato ai moti del 1821 e poi aveva firmato le condanne: nessuno sa da che parte stia'},
+         {r:'e in Lombardia comincia lo', n:'Sciopero del tabacco', d:'gennaio 1848: si smette di fumare per non pagare la tassa austriaca, e la protesta finisce nel sangue'}
+       ]},
+
+      {r:'nel 1848 arriva l\'', n:'Insurrezione', d:'e per tre mesi va meglio di quanto chiunque sperasse',
+       f:[
+         {r:'il 12 gennaio insorge', n:'Palermo', d:'prima di Parigi, prima di Vienna: e la prima rivoluzione europea di quell\'anno'},
+         {r:'in due mesi quattro sovrani concedono una carta', n:'Ottriata', d:'concessa dall\'alto e non votata: Napoli, Toscana, Piemonte e lo Stato pontificio, e la piu importante e lo Statuto albertino del 4 marzo'},
+         {r:'il 18 marzo Milano si solleva nelle', n:'Cinque giornate', d:'senza esercito, senza artiglieria, con le barricate: e Radetzky abbandona la citta'},
+         {r:'il 22 marzo Venezia proclama la', n:'Repubblica di San Marco', d:'guidata da Daniele Manin, che era stato liberato dal carcere pochi giorni prima'},
+         {r:'insorgono anche Parma, Modena e le', n:'Legazioni', d:'i duchi fuggono e in poche settimane quasi tutta l\'Italia settentrionale e in mano agli insorti'},
+         {r:'gli austriaci si ritirano nel', n:'Quadrilatero', d:'le quattro fortezze fra Mincio e Adige: perdono le citta e tengono le mura'},
+         {r:'e Carlo Alberto dichiara guerra il', n:'23 marzo', d:'con una formula destinata a pesare: l\'Italia fara da se, cioe senza aiuti francesi',
+          f:[{piu:true, r:'formula che significa anche rifiutare l\'unico', n:'Alleato possibile', d:'la Francia repubblicana offre aiuto e viene tenuta a distanza, perche un intervento francese avrebbe portato la repubblica anche qui'}]}
+       ]},
+
+      {r:'poi la guerra si', n:'Rovescia', d:'e in quattro mesi si perde tutto quello che si era preso',
+       f:[
+         {r:'il 29 aprile Pio IX pronuncia l\'', n:'Allocuzione', d:'dichiara di non poter dichiarare guerra all\'Austria, perche e padre di tutti i cattolici'},
+         {r:'e in un giorno crolla il progetto', n:'Guidato dal papa', d:'Gioberti resta senza il proprio principio, e le truppe pontificie vengono richiamate'},
+         {r:'anche il re di Napoli richiama le proprie truppe e', n:'Torna indietro', d:'il 15 maggio scioglie la camera con la forza e la guerra perde un altro esercito'},
+         {r:'il Piemonte chiede intanto la', n:'Fusione', d:'plebisciti per annettere Lombardia e Venezia mentre si combatte: la guerra nazionale diventa un ingrandimento'},
+         {r:'il 25 luglio si perde a', n:'Custoza', d:'e il 9 agosto l\'armistizio Salasco riporta i confini a prima della guerra'},
+         {r:'nel marzo 1849 Carlo Alberto riprende e perde a', n:'Novara', d:'abdica la sera stessa in favore del figlio e parte per il Portogallo, dove muore in pochi mesi'}
+       ]},
+
+      {r:'e il 1849 lascia una', n:'Sconfitta con un\'eccezione', d:'tutto torna come prima, tranne una cosa',
+       f:[
+         {r:'a Roma nasce la', n:'Repubblica romana', d:'febbraio 1849, dopo la fuga del papa: triumvirato con Mazzini, difesa affidata a Garibaldi'},
+         {r:'con una', n:'Costituzione', d:'approvata mentre i francesi entravano in citta: aboliva la pena di morte, prima in Europa'},
+         {r:'e cade per opera di un esercito', n:'Francese', d:'mandato da una repubblica per restaurare un papa: e la contraddizione piu vistosa dell\'anno'},
+         {piu:true, r:'con il primo bombardamento della storia lanciato da', n:'Palloni', d:'gli austriaci provano a colpire la citta con ordigni sospesi ad aerostati: quasi tutti finiscono in laguna o tornano indietro col vento'},
+         {r:'Venezia resiste fino ad agosto, sotto il', n:'Colera e i bombardamenti', d:'e capitola per fame: e l\'ultima a cedere'},
+         {r:'tutte le costituzioni vengono', n:'Revocate', d:'a Napoli, in Toscana, nello Stato pontificio: si torna al 1847'},
+         {r:'tranne lo', n:'Statuto albertino', d:'che il nuovo re Vittorio Emanuele II mantiene: unica costituzione sopravvissuta in Italia',
+          f:[
+            {piu:true, r:'e questo fatto decide quale progetto', n:'Restera in piedi', d:'non il piu giusto ne il piu votato: quello che aveva ancora uno Stato, un esercito e un parlamento'},
+            {piu:true, r:'ed e uno statuto', n:'Flessibile', d:'modificabile con legge ordinaria: la stessa duttilita che lo fa durare un secolo permettera al fascismo di svuotarlo senza abolirlo'}
+          ]}
+       ]}
+    ],
+    incroci:[
+      {da:'Allocuzione', a:'Neoguelfo', r:'distrugge in un giorno il progetto',
+       perche:'Il programma di Gioberti aveva un unico presupposto: che il papa potesse guidare l\'Italia. Il 29 aprile 1848 Pio IX dichiara che, essendo padre di tutti i cattolici, non puo fare guerra a una potenza cattolica. Non e un tradimento improvviso: e la conseguenza logica della sua posizione, che nessuno aveva voluto vedere. Un intero progetto politico si regge su una cosa che non era mai stata verificata.'},
+      {da:'Fusione', a:'Federalista', r:'da\' ragione ai timori del programma',
+       perche:'Mentre si combatte, il Piemonte organizza plebisciti per annettere Lombardia e Venezia. Cattaneo aveva sostenuto che uno Stato unico avrebbe soffocato le citta e che la guerra rischiava di diventare un ingrandimento sabaudo: quei plebisciti gli danno ragione in pochi mesi. Da quel momento molti democratici lombardi smettono di collaborare, e la guerra perde consenso proprio dove era nata.'},
+      {da:'Alleato possibile', a:'Custoza', r:'contribuisce alla sconfitta di',
+       perche:'La formula «l\'Italia fara da se» non era orgoglio retorico ma una scelta politica: un intervento francese avrebbe portato influenza repubblicana in Italia. Carlo Alberto preferisce combattere da solo l\'esercito imperiale, con un esercito piemontese numeroso e mal comandato, e perde. La stessa preoccupazione tornera nel 1859, e Cavour la risolvera al contrario.'},
+      {da:'Restera in piedi', a:'Minoranza', r:'e coerente con il fatto che il movimento fosse una',
+       perche:'Quando i partecipanti attivi sono pochi e divisi in quattro programmi, nessuna consultazione popolare decide fra loro: decide chi resta in piedi dopo la sconfitta. Nel 1849 l\'unico soggetto rimasto con uno Stato, un esercito e un parlamento e il Piemonte. Il Risorgimento prende la forma che prendera non perche quella soluzione abbia vinto un dibattito, ma perche le altre sono state eliminate militarmente.'},
+      {da:'Camminano sulle gambe degli uomini', a:'Morire per niente', r:'e la risposta all\'accusa di mandare i giovani a',
+       perche:'Mazzini sostiene che un tentativo fallito lasci qualcosa che prima non c\'era: nomi, processi pubblici, condanne che si raccontano. È una tesi verificabile solo dopo, e non consola chi ci lascia la vita. In classe va posta come una domanda vera: quanto vale una sconfitta che produce coscienza, e chi ha il diritto di decidere che ne valga la pena.'},
+      {da:'Cinque giornate', a:'Ufficiali e borghesi', r:'smentisce lo schema dei moti fatti solo da',
+       perche:'A Milano nel marzo 1848 combattono artigiani, operai, studenti e popolani, e la citta caccia un esercito regolare senza avere il proprio. È il momento in cui il movimento smette di essere una cospirazione di elite. Il seguito pero e ancora piu istruttivo: la guerra vinta dalla citta viene consegnata a un re, e la citta non decide piu niente.'},
+      {da:'Terra', a:'Torna indietro', r:'aiuta a spiegare perche il Sud',
+       perche:'Nel 1848 nel Mezzogiorno le insurrezioni contadine chiedono terre, non costituzioni, e i liberali che guidano il movimento reprimono le occupazioni. Con i contadini estranei o ostili, il re puo sciogliere la camera il 15 maggio senza incontrare resistenza di massa. La questione della terra, tenuta fuori da tutti i programmi risorgimentali, tornera come brigantaggio dopo il 1861.'},
+      {da:'Costituzione', a:'Francese', r:'viene approvata mentre entra in citta l\'esercito',
+       perche:'La costituzione della Repubblica romana e la piu avanzata d\'Europa e viene votata il 3 luglio 1849, con i francesi gia dentro le mura. Non entrera mai in vigore. Il fatto che una repubblica francese abbia mandato un esercito a restaurare un papa dice quanto poco contassero le etichette politiche rispetto agli equilibri internazionali — e Luigi Napoleone aveva bisogno dei cattolici in patria.'},
+      {da:'Flessibile', a:'Revocate', r:'e la caratteristica che lo distingue dalle costituzioni',
+       perche:'Lo Statuto sopravvive anche perche non e rigido: si puo modificare con legge ordinaria, e questo lo rende accettabile a un re che non vuole legarsi le mani. Per un secolo quella duttilita consente al sistema di trasformarsi senza rotture formali — fino al punto in cui il fascismo lo svuota senza mai abolirlo. La stessa qualita che lo salva nel 1849 lo rende inerme nel 1925.'},
+      {da:'Repubblicana', a:'Moderato sabaudo', r:'e incompatibile con il programma',
+       perche:'Non si tratta di sfumature: Mazzini considera che un\'Italia unita sotto i Savoia non sarebbe la stessa cosa, perche una nazione deve darsi da se le proprie istituzioni. I moderati considerano la repubblica un\'utopia che spaventa le potenze e i possidenti. Ciascuno vede nell\'altro il pericolo principale, e nel 1848 questo pesa quanto l\'esercito austriaco.'},
+      {da:'Sciopero del tabacco', a:'Palermo', r:'precede di pochi giorni l\'insurrezione di',
+       perche:'Gennaio 1848: a Milano si smette di fumare per non versare la tassa e la protesta finisce con i morti, a Palermo si insorge davvero. Sono due forme diverse di una stessa cosa — la scoperta che gesti quotidiani e coordinati possono diventare politica. E vale la pena notare che la prima rivoluzione europea del 1848 comincia in Sicilia, un mese prima di Parigi: nei manuali francesi non compare quasi mai.'},
+      {da:'Guidato dal papa', a:'Missione', r:'usava un linguaggio religioso quanto quello della',
+       perche:'Sia i neoguelfi sia Mazzini parlano dell\'Italia in termini religiosi: gli uni perche vogliono il papa a capo della federazione, l\'altro perche considera la nazione un compito assegnato da Dio all\'umanita. Non e retorica decorativa: in un paese in cui quasi tutti sono cattolici e quasi nessuno legge, era l\'unico linguaggio che potesse arrivare oltre le elite.'},
+      {da:'Lingua', a:'Popolo', r:'complica il racconto del Risorgimento come impresa di',
+       perche:'Un movimento che si rivolge a una nazione in cui pochissimi parlano la lingua nazionale deve passare per i notabili, i preti, i giornali locali e i dialetti. Questo non lo rende falso: rende falsa l\'immagine di un popolo che si riconosce spontaneamente. La costruzione degli italiani sara un lavoro successivo, fatto con la scuola, la leva militare e l\'emigrazione interna.'}
+    ]
+  },
+  provocazione: {
+    titolo:'Come si perde una guerra che si sta vincendo',
+    durata:'55 minuti',
+    domandaMadre:'Nella primavera del 1848 gli italiani vincono quasi ovunque. Un anno dopo hanno perso tutto. Che cosa e successo?',
+    perche:'Il 1848 italiano e il caso piu limpido di una sconfitta che non si spiega con i rapporti di forza. In tre mesi si insorge a Palermo prima che a Parigi, si ottengono quattro costituzioni, si caccia un esercito imperiale da Milano con le barricate, si proclama una repubblica a Venezia. Poi il papa dichiara di non poter fare guerra, il re di Napoli richiama le truppe, il Piemonte trasforma la guerra in un\'annessione, e in quattro mesi si torna al punto di partenza. La lezione serve a far vedere che chi combatteva dalla stessa parte voleva quattro cose diverse e incompatibili, e a introdurre un criterio che vale ben oltre il 1848: dopo una sconfitta non prevale chi aveva ragione, prevale chi e rimasto in piedi.',
+    occorrente:'Una carta dell\'Italia del 1848, se c\'e. Altrimenti niente.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'Primavera 1848.\n\n12 gennaio:\ninsorge Palermo.\n\nUn mese prima di Parigi.\nDue prima di Vienna.\n\nÈ la prima rivoluzione\neuropea dell\'anno.\n\nIn due mesi\nquattro sovrani italiani\nconcedono\nuna costituzione.\n\n18 marzo:\nMilano si solleva.\n\nCinque giorni\ndi barricate.\n\nNessun esercito,\nnessuna artiglieria,\n\ne il feldmaresciallo austriaco\nabbandona la citta.\n\n22 marzo:\nVenezia proclama\nla repubblica.\n\n23 marzo:\nil Piemonte\ndichiara guerra.\n\n25 luglio:\nsconfitta a Custoza.\n\n9 agosto:\narmistizio.\n\nTutto\ncome prima.\n\nQuattro mesi.',
+       parlato:'Da\' la cronologia come una sequenza di date, senza commentarla: e la sequenza stessa a essere strana.\n\nPoi fermati e chiedi che cosa non torna. Ci arrivano: si stava vincendo.\n\nInsisti sui numeri, perche rendono il fatto solido. A Milano cinque giorni di combattimenti in una citta senza esercito costringono alla ritirata truppe regolari con l\'artiglieria. Gli austriaci si chiudono nelle quattro fortezze del Quadrilatero. Le citta sono libere.\n\nPoi la domanda dell\'ora, e va posta come un problema, non come un\'accusa: come si perde una guerra che si sta vincendo?\n\nRaccogli le prime ipotesi e scrivile alla lavagna. Vengono fuori sempre le stesse: erano piu forti, ci hanno traditi, mancavano le armi.\n\nDi\' che tutte e tre contengono qualcosa e nessuna basta, e che oggi si cerca una spiegazione che regga i documenti.\n\nUltima cosa prima di andare avanti: la prima rivoluzione europea del 1848 comincia in Sicilia, un mese prima di Parigi. Nei manuali francesi non compare quasi mai. Chiedi perche, e lascia la domanda in sospeso.',
+       seDicono:[
+         {loro:'«Gli austriaci erano più forti, punto.»',
+          tu:'Lo erano, e a marzo hanno perso lo stesso. Se la forza bastasse a spiegare, non ci sarebbero state le Cinque giornate. La domanda diventa allora piu precisa: che cosa e cambiato fra marzo e luglio, se l\'esercito austriaco era lo stesso? Cerchiamo li.'},
+         {loro:'«Ci hanno traditi i re.»',
+          tu:'È l\'ipotesi piu diffusa e oggi la mettiamo alla prova sui documenti. Ti anticipo una difficolta: chi si tira indietro lo fa dichiarando in anticipo le proprie ragioni, e quelle ragioni erano note a chi lo aveva scelto come guida. Tradire significa venir meno a una promessa. Vediamo se quella promessa era mai stata fatta.'}
+       ]},
+
+      {minuti:'8–17', et:'La fonte',
+       schermo:'29 aprile 1848.\n\nSono passati\nquaranta giorni\ndalle Cinque giornate.\n\nVolontari pontifici\nsono gia\nsul fronte veneto.\n\nPio IX\nparla ai cardinali.\n\nDice che alcuni\nvorrebbero\nche anche lui\ndichiarasse guerra\nall\'Austria.\n\nE risponde\nche non puo:\n\nessendo egli\npadre e pastore\ndi tutti i fedeli,\n\nabbraccia\ntutti i popoli\ncon uguale affetto,\n\ncompresi\ni tedeschi.\n\nRespinge\nl\'idea\ndi mettersi a capo\ndi una repubblica\ndegli italiani,\n\ne raccomanda\nagli italiani\ndi restare fedeli\nai propri principi.',
+       testo:{fonte:'Pio IX, allocuzione «Non semel» al concistoro, 29 aprile 1848',
+              glossa:'È il documento che decide il 1848 italiano, e va letto con le tre domande. Chi lo scrive e per risolvere quale problema: un sovrano che è anche capo di una Chiesa universale, e che ha lasciato crescere per due anni l\'idea di poter guidare l\'Italia senza mai averlo promesso; il problema che deve risolvere è che i cattolici austriaci sono suoi fedeli quanto quelli italiani. Che cosa ammette senza volerlo: ammette che quell\'idea circolava e che qualcuno gliela attribuiva — se nessuno l\'avesse pensato, non ci sarebbe stato bisogno di smentirla; e ammette, respingendo la presidenza di una repubblica, che gliel\'avessero proposta. Che cosa non dice: non dice una parola su che cosa debbano fare i volontari pontifici già schierati sul fronte, che restano lì senza copertura politica; e non spiega perché non l\'abbia detto prima, quando le folle lo acclamavano. Il testo non è un tradimento: è la conseguenza logica di una posizione che nessuno aveva voluto verificare.'},
+       parlato:'Leggi il documento e poi conduci le tre domande una alla volta, senza anticipare le risposte.\n\nPrima domanda: chi lo scrive e quale problema deve risolvere. Falli ragionare sulla doppia veste. È un sovrano di uno Stato italiano e insieme il capo di una Chiesa che ha fedeli a Vienna, in Boemia, in Ungheria. Dichiarare guerra all\'Austria significa dichiarare guerra a milioni di propri fedeli.\n\nQuando ci arrivano, fai la domanda decisiva: questo era vero anche due anni prima?\n\nSi. Non e cambiato niente nella sua posizione. È cambiato solo che adesso gliela chiedono davvero.\n\nSeconda domanda: che cosa ammette senza volerlo. Guidali. Se smentisce, vuol dire che qualcuno lo diceva. Se rifiuta la presidenza di una repubblica, vuol dire che gliel\'avevano offerta. Un documento che nega rivela sempre che cosa era in circolazione.\n\nTerza domanda: che cosa non dice. Qui la classe ci mette un po\', e poi qualcuno lo trova: non dice niente dei volontari che sono gia al fronte. Restano li, senza ordini e senza copertura.\n\nChiudi il tempo con la conclusione che il documento consente: non e un tradimento. È la conseguenza di una posizione che tutti conoscevano e che nessuno aveva voluto guardare. Un intero progetto politico si reggeva su un presupposto mai verificato.',
+       seDicono:[
+         {loro:'«Poteva dirlo prima.»',
+          tu:'Poteva, ed e l\'osservazione piu forte contro di lui. Ma nota anche l\'altro lato: per due anni gli conveniva non dirlo, perche l\'entusiasmo per il papa liberale rafforzava il suo Stato. Chi si lascia attribuire una posizione senza smentirla ne ricava un vantaggio, e quando arriva il conto scopre di doverlo pagare.'},
+         {loro:'«Allora Gioberti era un ingenuo.»',
+          tu:'Piu che ingenuo, aveva costruito un edificio su un pilastro che non aveva mai provato a caricare. Succede spesso: si progetta contando su qualcuno che non ha mai detto di sì. La domanda utile per voi e: nei vostri progetti, su quale sì che nessuno ha mai pronunciato state contando?'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'Adesso il meccanismo.\n\nChi combatteva\ncontro l\'Austria\n\nvoleva\nquattro cose diverse.\n\nUno.\nUna federazione\nguidata dal papa.\n\nDue.\nUn regno del Nord\nallargato,\nsotto i Savoia.\n\nTre.\nUna repubblica\nunitaria.\n\nQuattro.\nUna federazione\ndi citta libere,\nsenza uno Stato centrale.\n\nNon sono sfumature.\n\nSono quattro paesi\ndiversi.\n\nE mentre si combatte\n\nil Piemonte\norganizza plebisciti\nper annettere\nla Lombardia.\n\nCioe:\n\nla guerra per l\'Italia\n\ndiventa,\nsotto gli occhi\ndi chi la combatte,\n\nl\'ingrandimento\ndi un regno.',
+       parlato:'Costruisci il meccanismo con ordine, perche e la parte analitica e senza di essa resta l\'idea del tradimento.\n\nPrimo pezzo: i quattro programmi. Mettili alla lavagna in quattro colonne e chiedi per ciascuno chi comanderebbe, dove sarebbe la capitale, che cosa succederebbe agli altri Stati. Le colonne risultano incompatibili, e i ragazzi lo vedono da soli.\n\nSottolinea che non erano varianti dello stesso progetto: erano quattro paesi diversi. Chi si batteva credendo di combattere per uno rischiava di ottenerne un altro.\n\nSecondo pezzo: la fusione. Mentre si combatte, si votano annessioni. Chiedi come si sente un democratico milanese che ha fatto le barricate e si ritrova suddito di un re.\n\nTerzo pezzo: i ritiri. Il papa il 29 aprile. Il re di Napoli il 15 maggio, che scioglie con la forza la camera appena eletta. Ogni ritiro toglie truppe e toglie legittimita.\n\nQuarto pezzo, e va detto perche i ragazzi non ci pensano: la scelta di combattere da soli. La formula «l\'Italia fara da se» non era un vanto: era il rifiuto dell\'aiuto francese, perche l\'arrivo dei francesi avrebbe portato influenza repubblicana.\n\nEnuncia la conclusione: la coalizione si e sciolta prima di essere battuta, e si e sciolta su cose di cui non aveva mai discusso.\n\nUltima osservazione, e vale la pena farla: nessuno dei quattro programmi diceva niente della terra. Nel Sud i contadini insorgono per i campi, e i liberali che guidano il movimento li reprimono.',
+       seDicono:[
+         {loro:'«Bastava mettersi d\'accordo dopo la vittoria.»',
+          tu:'È esattamente quello che si sono detti, ed e il motivo per cui hanno perso. Rimandare la domanda su che cosa si vuole ottenere funziona finche si perde; appena si comincia a vincere, la domanda arriva da sola, perche bisogna decidere che cosa fare delle citta liberate. E li si erano gia divisi.'},
+         {loro:'«I contadini potevano combattere anche loro.»',
+          tu:'Per che cosa? Nessuno dei quattro programmi prometteva loro qualcosa che cambiasse la loro vita: nessuna terra, nessuna riduzione dei tributi. Un\'idea che non tocca la condizione di chi dovrebbe morire per essa non mobilita nessuno. È un criterio che vale per tutti i movimenti, non solo per quello.'}
+       ]},
+
+      {minuti:'28–38', et:'La seconda fonte',
+       schermo:'Carlo Cattaneo\nera a Milano\ndurante le Cinque giornate.\n\nAveva cinquant\'anni,\nnon era un militare,\nera contrario\nall\'insurrezione\nfino al giorno prima.\n\nPoi finisce\nnel comitato\nche la dirige.\n\nNel suo racconto\nscrive\nche la citta\nha vinto da sola,\n\nsenza generali\ne senza uno Stato,\n\nperche ognuno\nfaceva la propria parte\nnel proprio quartiere.\n\nE scrive\nche la vittoria\ne stata perduta\n\nnon sul campo,\n\nma quando la guerra\ne stata consegnata\na un re\n\nche non l\'aveva\ncombattuta.\n\nLui voleva\nun\'altra cosa:\n\nnon uno Stato unico\ncon una capitale,\n\nma un\'Italia\ndi citta,\n\nfederata.',
+       testo:{fonte:'Carlo Cattaneo, «Dell\'insurrezione di Milano nel 1848 e della successiva guerra» (1849)',
+              glossa:'Il libro è scritto in esilio, pochi mesi dopo i fatti, da un protagonista che era contrario all\'insurrezione fino alla vigilia. Le tre domande danno risultati diversi da quelle sull\'allocuzione. Chi lo scrive e per risolvere quale problema: un democratico federalista che deve spiegare perché una vittoria popolare sia diventata una sconfitta, e che ha un conto aperto con la monarchia. Che cosa ammette senza volerlo: ammette che l\'insurrezione riuscì senza direzione unitaria e in gran parte per caso — il che indebolisce anche la sua tesi, perché un movimento senza comando può vincere cinque giorni in una città e non può vincere una guerra su un fronte di duecento chilometri. Che cosa non dice: non dice come si sarebbe difesa da sola una Lombardia federale contro l\'impero austriaco, che è precisamente il problema per cui l\'esercito piemontese era stato chiamato. Va tenuto insieme all\'altro documento: il papa dichiara che quella guerra non poteva essere una guerra nazionale, Cattaneo che era nazionale e le è stata tolta di mano. Nessuno dei due dice il falso.'},
+       parlato:'Presenta Cattaneo come un testimone scomodo per tutti: contrario all\'insurrezione, poi dentro il comitato che la dirige, poi in esilio e nemico dei moderati.\n\nApplica le tre domande, e falle fare a loro adesso che le conoscono.\n\nChi scrive e per risolvere che problema: un federalista che deve spiegare la sconfitta e ha un conto aperto con i Savoia. Non e neutrale, e non lo nasconde.\n\nChe cosa ammette senza volerlo: che l\'insurrezione riusci senza un comando unitario. Fai notare che questo indebolisce anche lui — cinque giorni in una citta si possono vincere cosi, una guerra su un fronte no.\n\nChe cosa non dice: come avrebbe fatto una Lombardia federale a difendersi da sola dall\'impero. È la domanda per cui l\'esercito piemontese era stato chiamato.\n\nAdesso il lavoro vero: tenere insieme i due documenti.\n\nIl papa dice che quella guerra non poteva essere nazionale, perche lui non poteva farne parte. Cattaneo dice che era nazionale e gliel\'hanno tolta di mano. Chiedi alla classe se si contraddicono.\n\nGuidali alla risposta: non si contraddicono, perche parlano di due cose diverse. Il primo dice chi non poteva starci. Il secondo dice che chi c\'era voleva cose diverse. Messi insieme spiegano piu di ciascuno preso da solo.\n\nEnuncia il criterio, che e il metodo di tutta l\'ora: due fonti che dicono cose diverse non vanno messe ai voti. Vanno chieste che cosa ciascuna sia in grado di sapere.',
+       seDicono:[
+         {loro:'«Cattaneo scrive da sconfitto, quindi è di parte.»',
+          tu:'Lo e, e lo e anche il papa, e lo sono tutti. Se scartiamo le fonti di parte non ci resta niente, perche non esistono testimoni senza interessi. Il mestiere non e trovare quello imparziale: e chiedersi che cosa ciascuno fosse in grado di vedere dal posto in cui stava, e su che cosa avesse motivo di mentire.'},
+         {loro:'«Allora chi ha ragione dei due?»',
+          tu:'Su fatti diversi hanno ragione tutti e due, ed e la cosa piu utile che si porta a casa oggi. Il papa dice il vero sulla propria impossibilita. Cattaneo dice il vero su come e stata vinta Milano. Chi cerca il vincitore fra due fonti di solito sta cercando conferme, non spiegazioni.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'Marzo 1849.\n\nCarlo Alberto\nriprende la guerra\ne perde a Novara\nin tre giorni.\n\nAbdica la sera stessa\ne parte\nper il Portogallo,\ndove muore\nin quattro mesi.\n\nA Roma intanto\nc\'e una repubblica.\n\nHa una costituzione\nche abolisce\nla pena di morte:\n\nla prima in Europa.\n\nViene approvata\nil 3 luglio,\n\ncon i francesi\ngia dentro le mura.\n\nNon entrera mai\nin vigore.\n\nVenezia resiste\nfino ad agosto,\nsotto il colera\ne le bombe,\n\ne cade per fame.\n\nTutte le costituzioni\nvengono revocate.\n\nNapoli, Toscana,\nlo Stato pontificio.\n\nTutte.\n\nTranne una.\n\nLo Statuto\nche Carlo Alberto\naveva concesso\nil 4 marzo 1848,\n\ne che il figlio\ndecide\ndi mantenere.\n\nQuel fatto\n\ndecide\nquale delle quattro Italie\n\nsi fara.',
+       parlato:'Racconta il 1849 senza commentare, perche i fatti bastano, e poi fermati sull\'ultimo.\n\nFai il conto con la classe. Dei quattro progetti: il neoguelfo e morto il 29 aprile 1848. Il repubblicano unitario e stato battuto a Roma dai francesi. Il federalista non ha mai avuto uno Stato. Il moderato sabaudo ha perso due guerre.\n\nDomanda: allora perche vince il quarto?\n\nGuidali fino alla risposta, che e la cosa da portarsi via. Non perche fosse il migliore, non perche avesse convinto qualcuno, non perche avesse vinto sul campo. Perche era l\'unico rimasto con uno Stato, un esercito, un parlamento e una costituzione in vigore.\n\nEnuncia il criterio in forma generale, e falla ripetere: dopo una sconfitta collettiva non prevale chi aveva ragione. Prevale chi e rimasto in piedi.\n\nPoi da\' l\'altra faccia, perche altrimenti sembra cinismo. Restare in piedi non e un caso: il Piemonte aveva mantenuto lo Statuto perche aveva un ceto dirigente disposto a convivere con un parlamento. È una scelta, e nel 1848 non era ovvia.\n\nUltima cosa, sullo Statuto, ed e un\'osservazione che tornera fra tre anni di programma. Quello Statuto era flessibile: si poteva modificare con una legge ordinaria. È la ragione per cui dura un secolo adattandosi a tutto. Ed e anche la ragione per cui, nel 1925, il fascismo potra svuotarlo senza mai abolirlo.\n\nLa stessa qualita che lo salva nel 1849 lo rende inerme settantacinque anni dopo.',
+       seDicono:[
+         {loro:'«Quindi ha vinto il più furbo.»',
+          tu:'Piu che furbo, il piu attrezzato: aveva le istituzioni che gli altri non avevano. E attenzione a non leggerlo come una lode. Quel modo di vincere si portera dietro un problema che vedremo per tutto l\'anno: un\'Italia costruita da uno Stato piu che da un movimento, e con una parte del paese che non ha partecipato.'},
+         {loro:'«Allora tutti i morti del 1848 sono stati inutili.»',
+          tu:'Domanda seria e non ha una risposta comoda. I fatti: nel 1849 non resta quasi niente. Ma dieci anni dopo, quando la guerra riprende, esistono cose che nel 1847 non c\'erano — un esercito che ha combattuto, una classe politica che si e formata in parlamento, e un pubblico che sa che cosa significhi una costituzione. Decidete voi se basti.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'La domanda era:\n\ncome si perde\nuna guerra\nche si sta vincendo?\n\nRisposta:\n\nquando quelli\nche stanno\ndalla stessa parte\n\nvogliono\nquattro cose\nincompatibili\n\ne hanno deciso\ndi discuterne dopo.\n\nDa portarsi via\ndue cose.\n\nLa prima,\nsui documenti:\n\nquando due fonti\ndicono cose diverse,\n\nnon chiedetevi\nquale sia vera.\n\nChiedetevi\nche cosa ciascuna\nfosse in grado\ndi sapere,\n\ne su che cosa\navesse motivo\ndi tacere.\n\nLa seconda,\nsulle sconfitte:\n\ndopo,\n\nnon prevale\nchi aveva ragione.\n\nPrevale\nchi e rimasto\nin piedi.',
+       parlato:'Torna alle ipotesi scritte alla lavagna all\'inizio e verificale una per una.\n\nErano piu forti: vero e insufficiente, perche a marzo erano piu forti lo stesso e hanno perso.\n\nCi hanno traditi: il documento mostra che il papa aveva dichiarato in anticipo la propria posizione, e che nessuno aveva voluto verificarla. Chi conta su un sì mai pronunciato non e stato tradito.\n\nMancavano le armi: mancava soprattutto un accordo su che cosa fare delle citta liberate.\n\nPoi da\' i due strumenti.\n\nIl primo riguarda le fonti e lo hanno gia usato oggi due volte. Rendilo esplicito: ogni documento e scritto da qualcuno che ha un problema da risolvere, e proprio per questo dice piu di quanto voglia. Le tre domande — chi scrive e perche, che cosa ammette senza volerlo, che cosa non dice — funzionano su qualunque testo, compresi quelli che leggono sul telefono.\n\nIl secondo riguarda le sconfitte, ed e piu duro. Chiedi di applicarlo a qualcosa che conoscono: un gruppo che si scioglie, una squadra che perde, un progetto che finisce. Chi resta a decidere, dopo? Quasi mai chi aveva l\'idea migliore. Quasi sempre chi aveva ancora una struttura.\n\nChiudi con una precisazione che evita il cinismo: non e una legge morale, e una regola pratica. Serve a capire perche le cose vanno come vanno, e a chi vuole cambiarle serve a sapere che non basta avere ragione.\n\nPer il seguito: dieci anni dopo la guerra riprende, e questa volta il Piemonte non dice piu che l\'Italia fara da se. La prossima volta vediamo l\'Europa che rende possibile quel cambio di strategia.',
+       seDicono:[
+         {loro:'«È una regola triste.»',
+          tu:'Lo e, e non e una giustificazione. Anzi: e proprio perche funziona cosi che chi ha un\'idea giusta dovrebbe occuparsi anche di costruire qualcosa che sopravviva a una sconfitta. Mazzini aveva ragione su molte cose e non aveva niente che restasse in piedi il giorno dopo. Non e un dettaglio organizzativo: e la differenza fra un\'idea e una storia.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'Cinque giorni',
+       corpo:'Il 18 marzo 1848 Milano insorge. La città non ha un esercito, quasi non ha armi da fuoco, e affronta una guarnigione austriaca comandata da un feldmaresciallo che aveva combattuto contro Napoleone.\n\nSi combatte per strada, quartiere per quartiere, con barricate costruite con mobili, carri e materassi. Un comitato di guerra si forma nei giorni stessi dei combattimenti; le comunicazioni fra le zone della città avvengono con biglietti e campane, e si tentano messaggi con palloni aerostatici.\n\nIl 22 marzo Radetzky ordina la ritirata verso le fortezze del Quadrilatero. Cinque giorni dopo, la guerra passa nelle mani dell\'esercito piemontese.',
+       chiedi:'Una città senza esercito batte un esercito, e poi consegna la propria vittoria a qualcun altro. Perché lo fa? E quando un gruppo ottiene qualcosa da solo e poi affida a un\'autorità esterna il compito di difenderlo, che cosa guadagna e che cosa perde?'},
+      {titolo:'La costituzione che non entrò in vigore',
+       corpo:'La Repubblica romana nasce nel febbraio 1849, dopo la fuga di Pio IX a Gaeta. È guidata da un triumvirato di cui fa parte Mazzini; la difesa militare è affidata a Giuseppe Garibaldi.\n\nL\'assemblea approva una costituzione che stabilisce l\'uguaglianza dei cittadini, la libertà di culto, il suffragio universale maschile, e abolisce la pena di morte: è la prima abolizione in una carta costituzionale europea.\n\nViene votata il 3 luglio 1849, mentre le truppe francesi sono già entrate in città. Non entrò mai in vigore. A mandare quell\'esercito era stata la Seconda Repubblica francese, presieduta da Luigi Napoleone, che aveva bisogno del sostegno dei cattolici in patria.',
+       chiedi:'Una repubblica manda un esercito ad abbattere una repubblica per restaurare un papa. Che cosa dice questo sul peso delle idee politiche rispetto agli interessi degli Stati? E un documento che non è mai entrato in vigore ha comunque prodotto qualcosa?'},
+      {titolo:'Quanti erano',
+       corpo:'Le stime sulla partecipazione al Risorgimento sono discusse ma concordi su un punto: chi vi prese parte attivamente fu una minoranza. I volontari accorsi nel 1848 si contano nell\'ordine delle decine di migliaia, su una popolazione di circa venticinque milioni.\n\nLa maggioranza degli abitanti della penisola era costituita da contadini, e nessuno dei programmi risorgimentali prometteva loro terre o riduzioni di tributi. Nel Mezzogiorno, nel 1848, le occupazioni di terre furono represse dagli stessi liberali che guidavano il movimento.\n\nSulla lingua le stime sono ancora più severe: al momento dell\'unità, chi era in grado di usare l\'italiano invece del proprio dialetto era una piccola percentuale della popolazione.',
+       chiedi:'Un movimento fatto da una minoranza può fondare uno Stato che parla a nome di tutti? E che cosa cambia, nel giudicarlo, sapere che la maggioranza non era contraria ma semplicemente estranea?'}
+    ],
+    testi:[
+      {fonte:'Giuseppe Mazzini, Istruzione generale per gli affratellati nella Giovine Italia (1831)',
+       corpo:'Mazzini stabilisce che la Giovine Italia sia una fratellanza di italiani credenti in una legge di progresso e di dovere, e che l\'Italia debba essere una, indipendente, libera e repubblicana; aggiunge che i mezzi siano l\'educazione e l\'insurrezione, e che l\'una debba procedere con l\'altra, perché l\'insurrezione senza educazione produce solo disordine.',
+       glossa:'Il documento segna la differenza rispetto alla Carboneria: non una setta con riti e gradi, ma un\'associazione con un programma dichiarato e stampato. Le tre parole d\'ordine non erano trattabili, ed è la ragione per cui Mazzini non poté mai allearsi stabilmente con i moderati. La formula «educazione e insurrezione» va sottolineata in classe: implica che un popolo non sia pronto per la libertà finché non gli si insegna a volerla, e questa tesi lo espone all\'accusa più grave che gli fu rivolta, quella di mandare al patibolo persone per creare una coscienza nazionale.'},
+      {fonte:'Vincenzo Gioberti, Del primato morale e civile degli Italiani (1843)',
+       corpo:'Gioberti sostiene che l\'Italia possieda un primato morale e civile fra le nazioni, fondato sul fatto di ospitare il centro della cattolicità, e propone una confederazione dei principi italiani presieduta dal pontefice, con l\'esercito affidato al re di Sardegna: una via che eviterebbe insieme la rivoluzione e la sottomissione allo straniero.',
+       glossa:'Il libro ebbe una fortuna enorme e diede un programma politico a chi voleva l\'indipendenza senza rivoluzione. Va letto notando la struttura del ragionamento: l\'intero progetto poggia sulla disponibilità del papa a guidarlo, e quella disponibilità non era mai stata verificata. L\'elezione di Pio IX nel 1846 parve confermarlo; l\'allocuzione del 29 aprile 1848 lo smentì in un giorno. È un caso da manuale di un edificio politico costruito su un presupposto che nessuno aveva provato a caricare.'},
+      {fonte:'Costituzione della Repubblica romana, princìpi fondamentali (3 luglio 1849)',
+       corpo:'Il testo stabilisce che la sovranità appartenga per diritto eterno al popolo, che il regime democratico abbia per regola l\'uguaglianza, la libertà e la fraternità, e che la Repubblica riguardi con amore fraterno tutti i popoli; dichiara inoltre che il capo della Chiesa cattolica avrà dalla Repubblica tutte le garanzie necessarie per l\'esercizio indipendente del potere spirituale, e abolisce la pena di morte.',
+       glossa:'È il documento più avanzato prodotto in Italia nell\'Ottocento, e va letto sapendo che fu approvato con le truppe francesi già dentro Roma e che non entrò mai in vigore. Due punti meritano attenzione in classe: l\'abolizione della pena di morte, che precede di più di un secolo analoghe disposizioni in gran parte d\'Europa, e la garanzia offerta al papa per il potere spirituale, che mostra come i repubblicani avessero già in mente la soluzione che lo Stato italiano adotterà dopo il 1870.'}
+    ],
+    compito:'Mezza pagina. Prendete una notizia o un discorso pubblico degli ultimi giorni e applicategli le tre domande che abbiamo usato sui documenti: chi lo ha scritto e quale problema stava cercando di risolvere; che cosa ammette senza volerlo, cioè che cosa si capisce dal fatto stesso che abbia sentito il bisogno di dirlo; e che cosa non dice, cioè quale domanda ovvia resta senza risposta. Scrivete le tre risposte in tre paragrafi separati, e alla fine indicate quale delle tre vi ha fatto scoprire di più.',
+    fonti:[
+      'A. M. Banti, La nazione del Risorgimento; Il Risorgimento italiano',
+      'L. Riall, Il Risorgimento. Storia e interpretazioni',
+      'C. Cattaneo, Dell\'insurrezione di Milano nel 1848 e della successiva guerra (1849)',
+      'G. Mazzini, Scritti politici; V. Gioberti, Del primato morale e civile degli Italiani (1843)',
+      'G. Candeloro, Storia dell\'Italia moderna, volumi III e IV',
+      'D. Mack Smith, Il Risorgimento italiano; S. Soldani, Il 1848 in Italia'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',
