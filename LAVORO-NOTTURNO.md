@@ -185,7 +185,7 @@ Si va in ordine di programma. Restano:
 - [x] Filosofia moderna · 7 — Francesco Bacone
 - [x] Filosofia moderna · 8 — Galileo Galilei
 - [x] Filosofia moderna · 16 — Vico
-- [ ] Filosofia moderna · 17 — I caratteri dell'Illuminismo
+- [x] Filosofia moderna · 17 — I caratteri dell'Illuminismo
 - [ ] Filosofia moderna · 18 — Rousseau
 - [ ] Filosofia moderna · 19 — Kant: il progetto filosofico
 - [ ] Filosofia moderna · 20 — Kant: la Critica della ragion pura

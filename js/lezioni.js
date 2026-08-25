@@ -11515,6 +11515,225 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Filosofia moderna · 17 — I caratteri dell\'Illuminismo': {
+  mappa: {
+    n:'I caratteri dell\'Illuminismo', d:'una ragione che misura se stessa prima di usarsi',
+    f:[
+      {r:'non e', n:'Una filosofia', d:'e un modo di usare la testa, e per questo non ha un sistema',
+       f:[
+         {r:'Kant lo definisce', n:'Uscita dalla minorita', d:'servirsi della propria intelligenza senza la guida di un altro'},
+         {r:'non ha', n:'Un fondatore ne un\'opera fondativa', d:'nessun testo che tutti riconoscano come il proprio'},
+         {r:'e i suoi protagonisti', n:'Litigano fra loro', d:'Voltaire contro Rousseau, i deisti contro gli atei, i riformatori contro i radicali'},
+         {r:'e un nemico comune', n:'L\'argomento d\'autorita', d:'lo dice Aristotele, lo dice la Chiesa, lo dice la tradizione: e cio che smette di valere'},
+         {r:'cio che condividono e', n:'Un modo di discutere', d:'niente argomenti d\'autorita, tutto sottoponibile a esame',
+          f:[{piu:true, r:'e il criterio della', n:'Pubblicita', d:'una tesi vale se puo essere esposta davanti a tutti e sostenuta senza protezioni'}]}
+       ]},
+
+      {r:'usa una ragione', n:'Diversa da quella di Cartesio', d:'ed e la differenza tecnica piu importante',
+       f:[
+         {r:'Cartesio parte da un principio e', n:'Deduce', d:'dal cogito si ricava tutto, in ordine, come in geometria'},
+         {r:'i Lumi partono dai fatti e', n:'Analizzano', d:'si scompone un fenomeno nei suoi elementi e si cercano le connessioni'},
+         {r:'il modello non e la geometria ma', n:'La fisica di Newton', d:'si descrivono le leggi senza pretendere di sapere le essenze'},
+         {r:'d\'Alembert distingue lo', n:'Spirito di sistema dallo spirito sistematico', d:'costruire castelli deduttivi, oppure ordinare cio che si e verificato',
+          f:[{r:'e condanna il primo come', n:'Il vizio dei metafisici', d:'si comincia da un principio e si spiega tutto, senza guardare niente'}]},
+         {r:'quindi la ragione e uno', n:'Strumento, non una rivelazione', d:'non svela l\'essenza delle cose: mette ordine nell\'esperienza'}
+       ]},
+
+      {r:'comincia col', n:'Misurare se stessa', d:'e questa e l\'eredita di Locke',
+       f:[
+         {r:'prima di usare uno strumento', n:'Si guarda fin dove arriva', d:'Locke lo dice all\'inizio del Saggio: esaminare la portata dell\'intelletto'},
+         {r:'quindi si abbandonano le', n:'Grandi costruzioni metafisiche', d:'l\'anima, la sostanza, l\'infinito: questioni su cui non si conclude'},
+         {r:'e si lavora su', n:'Problemi circoscritti', d:'come si formano le idee, come funziona una legge, che cosa rende giusta una pena'},
+         {r:'con l\'idea che l\'ignoranza dichiarata', n:'Valga piu di una risposta inventata', d:'sapere dove ci si ferma e un risultato'},
+         {piu:true, r:'e cambia anche il', n:'Modo di scrivere', d:'articoli, lettere, dialoghi, voci di dizionario: non piu trattati in latino ma testi brevi in volgare'},
+         {r:'e la filosofia diventa', n:'Critica', d:'non costruisce sistemi: esamina le pretese degli altri saperi'}
+       ]},
+
+      {r:'ripensa', n:'La natura umana', d:'e ne fa l\'oggetto di una scienza',
+       f:[
+         {r:'la si ritiene', n:'Costante nel tempo e nello spazio', d:'gli uomini sono ovunque gli stessi: cambiano i costumi, non la natura'},
+         {r:'quindi si possono cercare', n:'Leggi della societa', d:'come Newton ha trovato quelle dei corpi: e il programma delle scienze sociali'},
+         {r:'Condillac spiega tutto partendo dalle', n:'Sensazioni', d:'immagina una statua a cui si concede un senso alla volta',
+          f:[{r:'e mostra che da sole le sensazioni', n:'Bastano a produrre attenzione, memoria e giudizio', d:'senza bisogno di idee innate'},
+             {piu:true, r:'e alcuni arrivano al', n:'Materialismo', d:'La Mettrie e d\'Holbach: l\'uomo e materia organizzata, e nient\'altro'}]},
+         {piu:true, r:'e con essa la fiducia nell\'', n:'Educazione', d:'se siamo fatti dalle circostanze, cambiare le scuole significa cambiare gli uomini'},
+         {r:'e cade l\'idea del', n:'Peccato originale', d:'se l\'uomo e fatto dalle circostanze, l\'educazione e le leggi possono cambiarlo'}
+       ]},
+
+      {r:'inventa', n:'Il progresso', d:'e non era mai stato pensato cosi',
+       f:[
+         {r:'l\'idea che la storia abbia', n:'Una direzione', d:'e che i moderni possano superare gli antichi non solo nelle tecniche'},
+         {r:'Condorcet ne scrive dieci', n:'Stadi', d:'dalla tribu all\'eguaglianza futura: e il primo schema di storia universale del progresso',
+          f:[{r:'e lo scrive', n:'Mentre e braccato', d:'nascosto per sfuggire al Terrore, che lo uccidera: l\'ottimismo nasce in condizioni pessime'}]},
+         {r:'la storia smette di essere racconto di', n:'Battaglie e dinastie', d:'e diventa storia dei costumi, delle arti, del commercio, della vita'},
+         {r:'e si guarda anche', n:'Fuori dall\'Europa', d:'Cina, Persia, America: le altre civilta usate come specchio per giudicare la propria'},
+         {r:'Voltaire scrive un secolo', n:'Non di un re ma di una civilta', d:'e la prima storia della cultura'}
+       ]},
+
+      {r:'applica la ragione al', n:'Diritto e alla politica', d:'e qui produce i risultati piu duraturi',
+       f:[
+         {r:'riprende il', n:'Contratto', d:'il potere nasce da un accordo fra uomini, non da Dio ne dalla natura'},
+         {r:'Montesquieu vuole che il potere', n:'Fermi il potere', d:'non fiducia negli uomini: un\'architettura che funzioni comunque'},
+         {r:'Beccaria misura le pene sulla', n:'Certezza e non sull\'atrocita', d:'e mostra che la tortura assolve il forte e condanna il debole'},
+         {r:'e si chiede la', n:'Codificazione', d:'leggi scritte, chiare, poche: il cittadino deve poter sapere che cosa e vietato'},
+         {r:'e il diritto naturale diventa', n:'Uno strumento critico', d:'un metro esterno con cui giudicare le leggi esistenti',
+          f:[{piu:true, r:'e le riforme arrivano', n:'Quasi tutte dai sovrani', d:'con il limite di essere revocabili appena cambia chi comanda'}]}
+       ]},
+
+      {r:'e affronta', n:'La religione', d:'con una gamma di posizioni piu larga di quanto si racconti',
+       f:[
+         {r:'la maggioranza sono', n:'Deisti', d:'un Dio ordinatore, niente rivelazione, niente miracoli, niente clero'},
+         {r:'una minoranza e', n:'Atea', d:'d\'Holbach, e Diderot verso la fine: una posizione rara e pericolosa'},
+         {piu:true, r:'e Bayle raccoglie nel', n:'Dizionario storico-critico', d:'errori e contraddizioni degli autori nelle note: il libro piu letto d\'Europa prima dell\'Enciclopedia'},
+         {r:'l\'obiettivo comune e', n:'La superstizione', d:'non la fede ma cio che si crede senza esaminare, e che serve a comandare'},
+         {r:'e la tolleranza si fonda su un argomento', n:'Epistemologico', d:'se non possiamo essere certi, nessuno ha titolo per imporre',
+          f:[{r:'ripreso da', n:'Locke e da Bayle', d:'e alla fine sistemato in una teoria: la coscienza non si costringe'}]}
+       ]},
+
+      {r:'entra in crisi', n:'Da dentro', d:'e i primi a criticarlo sono gli illuministi stessi',
+       f:[
+         {r:'Rousseau sostiene che la civilta', n:'Abbia corrotto l\'uomo', d:'progresso delle arti e regresso dei costumi: e la contestazione piu radicale'},
+         {r:'il terremoto di', n:'Lisbona', d:'1755: trentamila morti a Ognissanti, e l\'ottimismo filosofico non regge piu',
+          f:[{r:'Voltaire scrive contro', n:'Il migliore dei mondi possibili', d:'e poi il Candide: se questo e il migliore, come saranno gli altri'},
+             {r:'e Rousseau gli risponde che la colpa', n:'Non e della natura ma di come abbiamo costruito', d:'case di sei piani ammassate in una citta sul mare'}]},
+         {piu:true, r:'e il secolo si chiude con', n:'Kant che rifonda la critica', d:'stabilire che cosa la ragione possa e non possa: e la risposta piu seria al problema dei limiti'},
+         {r:'resta aperto il problema del', n:'Male', d:'se il mondo e ordinato e conoscibile, il dolore innocente non ha posto'},
+         {r:'e resta la domanda se la ragione', n:'Basti a rendere buoni', d:'sapere che cosa e giusto e farlo sono due cose, e i Lumi le tengono troppo vicine'},
+         {r:'e nel Novecento si dira che la ragione strumentale', n:'Puo diventare dominio', d:'la Dialettica dell\'illuminismo: la critica piu dura, e viene da dentro la tradizione'}
+       ]}
+    ],
+    incroci:[
+      {da:'La fisica di Newton', a:'Strumento, non una rivelazione', r:'e il modello che rende la ragione uno',
+       perche:'Newton descrive come agisce la gravita e rifiuta di dire che cosa sia. Gli illuministi prendono quel modo di procedere e lo estendono: si ordina l\'esperienza, non si penetra l\'essenza delle cose. La ragione dei Lumi e piu modesta di quella cartesiana proprio perche imita una fisica che ha rinunciato a spiegare.'},
+      {da:'Si guarda fin dove arriva', a:'Grandi costruzioni metafisiche', r:'e la mossa che fa abbandonare le',
+       perche:'Esaminare la portata dell\'intelletto prima di usarlo significa scoprire che su alcune questioni non e attrezzato. Non e scetticismo: e delimitazione del campo. E chi lo fa smette di scrivere trattati sull\'essenza dell\'anima e comincia a occuparsi di come si formano le idee.'},
+      {da:'Costante nel tempo e nello spazio', a:'Leggi della societa', r:'e la premessa che rende pensabili',
+       perche:'Se la natura umana fosse diversa in ogni epoca e in ogni luogo, non ci sarebbe niente di regolare da studiare. L\'assunto della costanza e cio che permette di immaginare una scienza della societa — ed e anche il suo limite, perche porta a scambiare per naturale cio che e solo europeo e settecentesco.'},
+      {da:'Peccato originale', a:'Abbia corrotto l\'uomo', r:'viene sostituito da Rousseau con la tesi che la civilta',
+       perche:'Cade l\'idea di una corruzione originaria e Rousseau ne mette un\'altra al suo posto: non nasciamo cattivi, lo diventiamo per come viviamo insieme. È una tesi illuministica nella struttura — l\'uomo e fatto dalle circostanze — e devastante per l\'ottimismo dei suoi compagni.'},
+      {da:'Non e della natura ma di come abbiamo costruito', a:'Leggi della societa', r:'e un\'applicazione della ricerca di',
+       perche:'Rousseau sposta la domanda da Dio agli uomini: se le case fossero state basse e distanziate, i morti sarebbero stati pochi. È il primo caso in cui una catastrofe naturale viene analizzata come fenomeno sociale — e da qui nasce l\'idea che si possa ridurre il danno cambiando le regole.'},
+      {da:'Mentre e braccato', a:'Una direzione', r:'e la condizione in cui viene scritta la tesi che la storia abbia',
+       perche:'Condorcet compone il quadro dei progressi dello spirito umano nascosto per sfuggire ai propri compagni di rivoluzione, che lo uccideranno. L\'opera piu ottimista del secolo nasce dalla situazione piu disperata: vale la pena notarlo, perche l\'ottimismo non e sempre il prodotto di circostanze favorevoli.'},
+      {da:'Epistemologico', a:'Il vizio dei metafisici', r:'e lo stesso argomento che d\'Alembert usa contro',
+       perche:'In entrambi i casi si contesta a qualcuno di pretendere piu certezza di quanta ne abbia. Il metafisico costruisce sistemi su principi non verificati; il persecutore uccide in nome di dottrine su cui nessuno concorda. La tolleranza dei Lumi non nasce da un sentimento ma da una teoria dei limiti della conoscenza.'},
+      {da:'Bastano a produrre attenzione, memoria e giudizio', a:'Peccato originale', r:'toglie il fondamento all\'idea di',
+       perche:'Se tutto cio che siamo si forma a partire dalle sensazioni, non c\'e nulla di innato: ne idee, ne colpe. Ne segue che l\'uomo e il prodotto delle proprie esperienze, e quindi che educazione e istituzioni possono cambiarlo. È l\'argomento su cui poggia tutta la fiducia riformatrice del secolo.'},
+      {da:'Litigano fra loro', a:'Un modo di discutere', r:'e compatibile con il fatto che condividano',
+       perche:'Voltaire e Rousseau si detestano, i deisti disprezzano gli atei, i riformatori temono i radicali. Chiamarli un movimento unico e comodo e impreciso: quello che hanno in comune non e un elenco di tesi ma la regola che ogni tesi debba essere esposta in pubblico e difesa senza appellarsi a un\'autorita.'},
+      {da:'Quasi tutte dai sovrani', a:'Fermi il potere', r:'contraddice il principio che il potere debba',
+       perche:'Le riforme del secolo — tortura abolita, catasti, tolleranza — arrivano quasi tutte per decreto di sovrani assoluti, cioe da un potere che nessuno limita. Montesquieu aveva spiegato perche non regga: infatti alla morte del sovrano riformatore molte vengono revocate in pochi mesi.'},
+      {da:'Non di un re ma di una civilta', a:'Battaglie e dinastie', r:'sostituisce la storia di',
+       perche:'Voltaire dedica il proprio libro non alle guerre di Luigi XIV ma al commercio, alle arti, alle scienze e ai costumi del suo tempo. È la nascita della storia della civilta: si sposta l\'attenzione da chi comandava a come si viveva, e da qui passera tutta la storiografia sociale successiva.'},
+      {da:'Puo diventare dominio', a:'Analizzano', r:'e la critica novecentesca rivolta alla ragione che',
+       perche:'Una ragione che scompone, misura e organizza e efficacissima per manipolare le cose, e la stessa efficienza puo essere applicata alle persone. La critica del Novecento non accusa i Lumi di essere irrazionali: li accusa di aver reso disponibile uno strumento che non contiene in se il criterio del proprio uso.'},
+      {da:'La superstizione', a:'Atea', r:'e il bersaglio comune anche a chi non e',
+       perche:'Deisti e atei si dividono su Dio e concordano sul bersaglio: cio che si crede senza esaminare e che serve a qualcuno per comandare. È utile in classe distinguere le due cose — la battaglia dei Lumi e contro la credenza non esaminata, non necessariamente contro la fede.'}
+    ]
+  },
+  provocazione: {
+    titolo:'Un terremoto e naturale?',
+    durata:'55 minuti',
+    domandaMadre:'Una catastrofe naturale e naturale?',
+    perche:'Il 1° novembre 1755, giorno di Ognissanti, un terremoto distrugge Lisbona mentre le chiese sono piene: decine di migliaia di morti in pochi minuti, poi il maremoto e l\'incendio. L\'Europa colta ne discute per anni. Voltaire scrive contro l\'ottimismo di chi sostiene che tutto e bene; Rousseau gli risponde con una lettera in cui afferma che la colpa non e della natura ma di chi ha costruito ventimila case di sei o sette piani ammassate. È la prima formulazione moderna dell\'idea che una catastrofe naturale sia in parte sociale — quella che oggi si riassume dicendo che non uccidono i terremoti ma le case.',
+    occorrente:'Niente. In una classe italiana il tema e vicino: qualcuno potrebbe avere esperienze dirette, e conviene saperlo prima.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'Lisbona, 1° novembre 1755.\nOgnissanti, mattina.\nLe chiese sono piene.\n\nAlle nove e quaranta\narriva la prima scossa.\nDura fra tre e sei minuti.\n\nCrollano le chiese\nsulle persone che pregano.\n\nChi sopravvive corre al porto,\nverso lo spazio aperto.\n\nQuaranta minuti dopo\nil mare si ritira\ne torna in tre onde\nalte diversi metri.\n\nPoi comincia l\'incendio,\nalimentato dalle candele\ndelle celebrazioni,\ne brucia per cinque giorni.\n\nFra le venti e le quarantamila\nvittime. La citta non c\'e piu.\n\nPer i due anni successivi\nl\'Europa colta discute\ndi una sola domanda:\n\nperche.',
+       parlato:'Racconta la sequenza — scossa, maremoto, incendio — con precisione e senza enfasi: i fatti bastano.\n\nFai notare il dettaglio che colpi tutti i contemporanei: era il giorno di Ognissanti, la gente era in chiesa, e le chiese sono crollate per prime perche avevano navate ampie e coperture pesanti. Chi era rimasto a casa si e salvato piu spesso di chi era andato a pregare.\n\nÈ questo a rendere la discussione inevitabile: non un disastro qualunque, ma uno che colpisce i devoti nel luogo del culto durante una festa religiosa.\n\nPoi la domanda: chi ne ha la responsabilita?\n\nRaccogli le prime risposte. Nel 1755 le opzioni disponibili erano tre — un castigo divino, un fatto naturale senza colpevoli, oppure qualcosa di cui rispondiamo noi. La terza era la meno ovvia.',
+       seDicono:[
+         {loro:'«Nel Settecento avranno detto che era un castigo.»',
+          tu:'Molti sì, e la predicazione lo sostenne. Ma nota una difficolta che i contemporanei videro subito: perche Lisbona, citta cattolicissima e con l\'Inquisizione attiva, e non le citta che i predicatori giudicavano corrotte? Il quartiere delle case chiuse, in gran parte, resto in piedi.'},
+         {loro:'«È stata la natura, punto.»',
+          tu:'Tienila, e la prima posizione dello schieramento. Ti anticipo la domanda che ci lavoreremo: la natura ha fatto la scossa, e chi ha fatto le case?'}
+       ]},
+
+      {minuti:'8–17', et:'Lo schieramento',
+       schermo:'I morti di un terremoto:',
+       opzioni:['sono una fatalita: la natura non si controlla', 'dipendono in gran parte da come abbiamo costruito'],
+       parlato:'Fai schierare e conta. Nel 1755 avrebbe vinto largamente la prima; oggi in una classe italiana di solito vince la seconda, e vale la pena farlo notare.\n\nPoi da\' i dati che rendono la discussione precisa, senza trasformarla in una lezione di ingegneria.\n\nDue terremoti di magnitudo simile possono produrre numeri di vittime che differiscono di cento volte. La differenza non sta nella scossa: sta nelle costruzioni, nella pianificazione, nei soccorsi.\n\nQuindi la domanda si puo formulare meglio: quanta parte del danno era evitabile?\n\nÈ una domanda a cui si puo rispondere, almeno in parte, e questo la distingue da «perche e successo a noi», che non ha risposta.\n\nPoi la parte utile: chiedi alla classe che cosa serve, concretamente, perche un terremoto faccia pochi morti. Vengono fuori norme edilizie, controlli, materiali, manutenzione, esercitazioni. Fai notare che sono tutte cose che costano, che vanno fatte prima, e che non danno nessun risultato visibile finche non succede niente.\n\nÈ il tipo di spesa piu difficile da far approvare.',
+       seDicono:[
+         {loro:'«Ma nel 1755 non sapevano come si costruisce.»',
+          tu:'Sapevano meno di noi e non erano ignoranti: dopo Lisbona il governo portoghese introdusse in pochi anni una struttura di legno dentro le murature, provata con modelli, che funzionava. Il sapere in parte c\'era; mancava la ragione per applicarlo, ed e arrivata dal disastro.'},
+         {loro:'«Non si può prevenire tutto.»',
+          tu:'Verissimo, e nessuno sostiene il contrario. La distinzione utile e fra la parte che non dipende da noi — quando e dove tremera — e la parte che dipende: che cosa succede quando trema. La prima non si controlla, la seconda in gran parte sì.'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'Che cosa ne discusse l\'Europa.\n\nAll\'epoca era diffusa\nuna tesi filosofica:\nche questo sia il migliore\ndei mondi possibili,\nperche Dio, essendo perfetto,\nnon poteva farne uno peggiore;\ne che quindi ogni male\nsia necessario a un bene\npiu grande che non vediamo.\n\nVoltaire scrive un poema\ncontro questa tesi.\n\nDomanda ai filosofi\nche ripetono «tutto e bene»\ndi venire a guardare\nquelle rovine,\nquelle donne e quei bambini\nammucchiati sotto i marmi,\ne di ripeterlo li.\n\nE aggiunge la cosa\npiu dura:\n\nche non capisce\nche cosa avessero fatto\ndi diverso\nrispetto a Parigi o Londra,\nper meritare quello.',
+       parlato:'Presenta la tesi dell\'ottimismo in modo corretto: non e sciocca, e la conseguenza rigorosa dell\'idea che un Dio perfetto scelga il meglio possibile.\n\nPoi l\'obiezione di Voltaire, che non e teorica ma di metodo: portate la vostra tesi sul posto e ripetetela davanti alle vittime.\n\nDomanda per la classe: e un buon argomento?\n\nQui vale la pena essere onesti. Da un lato non e una confutazione: una tesi non diventa falsa perche e insopportabile da pronunciare davanti a chi soffre. Dall\'altro fa qualcosa di importante — obbliga chi la sostiene a guardare che cosa sta effettivamente affermando.\n\nÈ la stessa mossa vista con Castellione: rimettere i corpi dove si parla in astratto.\n\nPoi il punto filosofico. La discussione, cosi impostata, ha un difetto: gira tutta attorno a Dio. È colpevole, e innocente, ha ragioni che non capiamo. E qualunque risposta si dia, non cambia nulla per la prossima volta.\n\nÈ qui che arriva la lettera che sposta la domanda.',
+       seDicono:[
+         {loro:'«Voltaire ha ragione, quella tesi è indecente.»',
+          tu:'È insopportabile, ed e diverso da falsa. Attento a questa distinzione perche vale in molte discussioni: la reazione emotiva a una tesi non e un argomento contro di essa. Serve mostrare perche e sbagliata, ed e piu faticoso.'},
+         {loro:'«Ma qualcuno ci credeva davvero?»',
+          tu:'Sì, e persone intelligentissime: era la posizione di Leibniz, uno dei più grandi matematici della storia. Non era consolazione a buon mercato, era una conseguenza logica di premesse sul concetto di Dio. Il che rende il caso piu interessante: un ragionamento corretto che davanti a trentamila morti diventa impronunciabile.'}
+       ]},
+
+      {minuti:'28–38', et:'Il testo',
+       schermo:'18 agosto 1756.\nRousseau scrive a Voltaire.\n\nGli dice che la natura\nnon aveva radunato\nventimila case\ndi sei o sette piani\nin quel punto;\n\nche se gli abitanti\nfossero stati sparsi\nin edifici piu bassi,\nil danno sarebbe stato\nmolto minore, o forse nullo;\n\nche molti sono morti\nper essere tornati indietro\na prendere i propri beni,\ne che altri sono rimasti\nsotto le macerie\nper la lentezza dei soccorsi;\n\ne conclude che la colpa\ndi quel disastro\nnon va cercata nella natura\nma negli uomini\nche hanno costruito cosi.\n\nDue anni dopo la scossa,\nla domanda cambia oggetto.',
+       testo:{fonte:'Jean-Jacques Rousseau, Lettera a Voltaire sulla provvidenza, 18 agosto 1756',
+              glossa:'Rousseau non nega il dolore né minimizza: sposta la questione dalla teologia all\'organizzazione sociale. È la prima formulazione moderna dell\'idea che il danno di un evento naturale dipenda dalle scelte umane — l\'affollamento urbano, l\'altezza degli edifici, l\'efficienza dei soccorsi. La lettera non fu pubblicata subito e la risposta di Voltaire arrivò tre anni dopo, sotto forma di romanzo: il Candide.'},
+       parlato:'Leggi la lettera e lascia che si depositi: la classe di solito riconosce subito che e la posizione di oggi.\n\nPoi fai notare tre cose che Rousseau elenca e che sono ancora esattamente le tre voci su cui si lavora dopo ogni terremoto: come si costruisce, come si distribuisce la popolazione, come funzionano i soccorsi.\n\nDomanda di metodo: che cosa ha fatto, esattamente?\n\nGuidali. Ha cambiato la domanda. Da «perche Dio lo ha permesso» a «quale parte di questo danno dipende da noi». La prima non ha risposta e non produce niente; la seconda ha risposte parziali e produce norme.\n\nÈ il passaggio che rende utile l\'Illuminismo: non risolvere il problema del male, ma spostare la domanda su un terreno in cui si puo fare qualcosa.\n\nPoi la precisazione onesta, perche altrimenti diventa un elogio semplificato: Rousseau non e piu compassionevole di Voltaire, e in quella lettera sostiene anche cose discutibili — che nello stato di natura non ci sarebbero stati morti, il che e vero e irrilevante. Quello che conta e l\'operazione, non tutto il contenuto.',
+       seDicono:[
+         {loro:'«Sembra che dia la colpa alle vittime.»',
+          tu:'Osservazione giusta e va tenuta d\'occhio, perche quel confine e sottile. Dire che il danno dipende da come si costruisce non significa incolpare chi abitava in quelle case: significa individuare le decisioni — di chi progetta, di chi autorizza, di chi controlla. La responsabilita e di chi decide, non di chi subisce.'},
+         {loro:'«Rousseau non aveva neanche visto Lisbona.»',
+          tu:'Nessuno dei due l\'aveva vista: discutevano dalla Francia e dalla Svizzera. È un dato che vale la pena tenere — la riflessione piu utile sul disastro fu fatta da persone lontane, mentre chi era sul posto stava seppellendo i morti. Le due cose non sono in competizione, e conviene sapere quale delle due si sta facendo.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'E intanto, a Lisbona,\nqualcuno rispondeva\nin un altro modo.\n\nIl ministro Pombal,\nalla domanda\nsu che cosa si dovesse fare,\nrisponde con una frase:\nseppellire i morti\ne curare i vivi.\n\nPoi fa una cosa\nche nessuno aveva mai fatto.\n\nManda a tutte le parrocchie\ndel regno un questionario.\n\nA che ora e cominciata la scossa.\nQuanto e durata.\nIn che direzione si muovevano\ngli edifici.\nIl mare si e ritirato,\ne di quanto.\nQuanti morti.\nQuanti edifici crollati,\ne di che tipo.\n\nLe risposte tornano,\nvengono raccolte\ne conservate.\n\nÈ la prima indagine sismologica\ndella storia.',
+       parlato:'Racconta la risposta di Pombal e poi il questionario: e il momento che rovescia l\'ora.\n\nFai capire la novita. Fino ad allora un terremoto era un evento su cui si predicava. Pombal lo tratta come un fenomeno di cui raccogliere dati sistematici, con domande uniformi, su tutto il territorio, per poterli confrontare.\n\nDa quelle risposte si ricava la direzione di propagazione, si stima l\'epicentro, si mette in relazione il danno con il tipo di terreno e di costruzione.\n\nÈ nata cosi una disciplina.\n\nPoi la seconda parte, che e ancora piu concreta: la ricostruzione. Lisbona viene ricostruita con una struttura di legno incastrata dentro le murature, provata facendo marciare truppe attorno a modelli in scala per simulare le vibrazioni.\n\nÈ il primo sistema antisismico moderno, e molti di quegli edifici sono ancora in piedi.\n\nPoi la formulazione da portare a casa: dallo stesso disastro nascono due risposte. Una filosofica, che discute per anni su chi sia responsabile; una pratica, che misura, cataloga e ricostruisce diversamente.\n\nE la seconda ha salvato delle vite.\n\nMa attenzione a non farne una morale contro la filosofia: e stata la domanda di Rousseau — la colpa e degli uomini che hanno costruito cosi — a rendere pensabile che si potesse costruire diversamente. Le due cose lavorano insieme.',
+       seDicono:[
+         {loro:'«Quindi la filosofia serviva a poco.»',
+          tu:'Serviva a spostare la domanda, che e la parte difficile. Finche il terremoto e un castigo, l\'unica risposta e pregare meglio; quando diventa un fenomeno di cui rispondiamo in parte, si comincia a misurare. Pombal misura perche qualcuno aveva gia cambiato il tipo di domanda.'},
+         {loro:'«Pombal era un illuminista?»',
+          tu:'Era un ministro autoritario e spregiudicato: espulse i gesuiti, represse duramente i nobili, governo di fatto da solo. È un buon promemoria — le riforme del Settecento le fanno spesso uomini che non hanno nulla di liberale, e questo non le rende meno efficaci ne meno autoritarie.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'Torniamo alla domanda.\n\nUna catastrofe naturale\ne naturale?\n\nIn parte sì:\nquando e dove tremera\nnon dipende da noi,\ne non e ancora prevedibile.\n\nIn parte no:\nquanto si muore\ndipende da come si costruisce,\nda dove si vive,\nda quanto si controlla,\nda quanto in fretta\narrivano i soccorsi.\n\nLa domanda utile\nnon e perche e successo.\n\nÈ: quale parte\nera evitabile?\n\nÈ una domanda scomoda,\nperche ha una risposta\ne la risposta\nchiama in causa qualcuno.\n\nEd e per questo\nche dopo ogni disastro\nc\'e chi preferisce\nla prima domanda.',
+       parlato:'Rifai la conta e commenta.\n\nPoi fissa la distinzione, che e lo strumento della lezione: separare la parte non controllabile dell\'evento da quella controllabile del danno. Vale per i terremoti, per le alluvioni, per le epidemie, e in buona parte anche per le crisi economiche.\n\nDa\' loro il criterio e spiegane il costo politico: la domanda «perche e successo» consola e non impegna nessuno; la domanda «che parte era evitabile» produce responsabilita, e per questo e meno gradita.\n\nQui e opportuno un tono misurato: in Italia molte famiglie hanno esperienze dirette, e la lezione deve dare uno strumento, non una requisitoria.\n\nPoi chiudi sul carattere generale dell\'Illuminismo, perche il capitolo e su quello. Quello che abbiamo visto e il suo modo di procedere tipico: non risolvere le grandi domande metafisiche ma spostarle su un terreno in cui si possa fare qualcosa; misurare invece di interpretare; e trattare il male come un problema da ridurre invece che come un mistero da spiegare.\n\nHa dei limiti seri — non tutto e riducibile, e la sofferenza resta anche quando i morti diminuiscono. Ma ha prodotto meno morti, ed e un risultato che nessuna teodicea ha mai ottenuto.\n\nChiudi con quello che apre il seguito: fra i due corrispondenti di questa lezione, uno pensa che la civilta migliori gli uomini e l\'altro che li corrompa. La prossima volta prendiamo sul serio il secondo.',
+       seDicono:[
+         {loro:'«Sembra che si dia sempre la colpa a qualcuno.»',
+          tu:'Non e la stessa cosa: cercare responsabilita non significa cercare un colpevole da punire. Significa capire quali decisioni hanno prodotto quel risultato, per prenderne di diverse. La differenza si vede da che cosa si fa dopo — se si chiede una condanna o si cambia una norma.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'Il questionario',
+       corpo:'Dopo il terremoto il governo portoghese inviò a tutte le parrocchie del regno una serie di domande uniformi: a che ora era cominciata la scossa, quanto era durata, in che direzione si erano mossi gli edifici e gli oggetti, se il mare si fosse ritirato e di quanto, quanti fossero i morti, quanti e quali gli edifici crollati.\n\nLe risposte furono raccolte e conservate negli archivi.\n\nDa quei dati si sono ricavate stime sull\'epicentro, sulla propagazione e sull\'intensità: è considerata la prima indagine sismologica della storia.',
+       chiedi:'Un governo risponde a una catastrofe raccogliendo dati con domande uguali per tutti. Che cosa rende possibile una decisione del genere, e che cosa la rende rara? E che differenza c\'è, per chi deve decidere dopo, fra avere quei dati e non averli?'},
+      {titolo:'Il giardino',
+       corpo:'Tre anni dopo la lettera di Rousseau, Voltaire pubblica Candide, romanzo in cui il protagonista attraversa guerre, terremoti, torture e naufragi in compagnia di un filosofo che ripete a ogni disgrazia che tutto va per il meglio nel migliore dei mondi possibili.\n\nAlla fine, dopo che ogni sventura possibile si è abbattuta su di loro, il protagonista interrompe l\'ennesima dissertazione con una frase: bisogna coltivare il nostro giardino.\n\nIl libro fu un successo europeo immediato e fu proibito quasi ovunque.',
+       chiedi:'Dopo aver demolito ogni consolazione filosofica, Voltaire non propone una teoria alternativa ma un\'attività. È una resa, una saggezza o una fuga? E che differenza fa, davanti a un male che non si sa spiegare, decidere di occuparsi di qualcosa?'},
+      {titolo:'Scritto mentre lo cercavano',
+       corpo:'Nel 1793 Condorcet, matematico e deputato, viene messo fuori legge dai propri compagni di rivoluzione. Si nasconde in una casa a Parigi e in pochi mesi scrive un quadro storico dei progressi dello spirito umano, in dieci epoche, che si chiude prevedendo l\'abolizione della disuguaglianza fra le nazioni, fra le classi e fra i sessi.\n\nLascia il rifugio nel marzo 1794, viene riconosciuto e arrestato. Muore in cella dopo due giorni.\n\nIl libro è considerato il manifesto più fiducioso dell\'intero secolo.',
+       chiedi:'L\'opera più ottimista del Settecento è scritta da un uomo braccato che sarà ucciso poche settimane dopo. Che cosa dice questo sul rapporto fra la fiducia nel futuro e le circostanze di chi la esprime? E quanto pesa, nel giudicare un\'idea, sapere in quale condizione è stata pensata?'}
+    ],
+    testi:[
+      {fonte:'Voltaire, Poema sul disastro di Lisbona (1756)',
+       corpo:'Voltaire invita i filosofi che gridano che tutto è bene ad accorrere e a contemplare quelle rovine spaventose, quei rottami, quei brandelli, quelle donne e quei bambini ammucchiati gli uni sugli altri sotto i marmi spezzati; e domanda se Lisbona, che non esiste più, avesse più vizi di Parigi o di Londra, che invece stanno in piedi e si divertono.',
+       glossa:'L\'argomento non è una confutazione logica dell\'ottimismo: è la richiesta di ripetere quella tesi davanti alle sue conseguenze concrete. È efficacissimo e va usato con cautela in classe — la reazione emotiva a una tesi non dimostra che sia falsa, e distinguere le due cose è parte della lezione.'},
+      {fonte:'Kant, Sulle cause dei terremoti (1756)',
+       corpo:'Nello stesso anno Kant, allora giovane, pubblica tre scritti in cui cerca cause naturali del fenomeno, ipotizzando cavità sotterranee e combustioni, e osserva che gli uomini non dovrebbero costruire città su terreni che si sono già mostrati pericolosi.',
+       glossa:'La spiegazione fisica proposta è sbagliata; l\'atteggiamento è quello che conta. Kant tratta il terremoto come un fenomeno naturale da spiegare e come un problema di scelte insediative, senza chiamare in causa la colpa o il castigo. È lo stesso spostamento della lettera di Rousseau, fatto da un altro versante.'},
+      {fonte:'Condorcet, Quadro storico dei progressi dello spirito umano (1794) — la decima epoca',
+       corpo:'Condorcet prevede la distruzione della disuguaglianza fra le nazioni, i progressi dell\'eguaglianza all\'interno di ciascun popolo, e il perfezionamento reale dell\'uomo; e include esplicitamente fra i progressi attesi la fine della disparità fra i sessi.',
+       glossa:'Fu tra i pochissimi del secolo a includere l\'eguaglianza fra uomini e donne in un programma di riforma. Il testo va letto sapendo dove e in quali condizioni fu scritto: nascosto, braccato, poche settimane prima di morire in carcere. La fiducia nel progresso non era ingenuità — era una scelta fatta contro l\'evidenza immediata.'}
+    ],
+    compito:'Mezza pagina. Scegliete un evento dannoso che viene di solito raccontato come sfortuna o fatalità — un\'alluvione, un incidente, un problema che ha colpito la vostra zona. Provate a dividerlo in due colonne: che cosa non dipendeva da nessuno, e che cosa dipendeva da decisioni prese da qualcuno prima. Poi indicate una decisione che, presa diversamente, avrebbe ridotto il danno — e chi avrebbe dovuto prenderla.',
+    fonti:[
+      'Voltaire, Poème sur le désastre de Lisbonne (1756); Candide (1759)',
+      'J.-J. Rousseau, Lettre à Voltaire sur la providence (18 agosto 1756)',
+      'I. Kant, scritti sui terremoti (1756); Risposta alla domanda: che cos\'è l\'Illuminismo (1784)',
+      'Condorcet, Esquisse d\'un tableau historique des progrès de l\'esprit humain (1794)',
+      'E. Cassirer, La filosofia dell\'Illuminismo; P. Hazard, La crisi della coscienza europea',
+      'J.-P. Poirier, Le tremblement de terre de Lisbonne; T. Adorno e M. Horkheimer, Dialettica dell\'illuminismo'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',
