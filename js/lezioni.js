@@ -7341,6 +7341,226 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Storia moderna · 7 — L\'Europa nel primo Settecento': {
+  mappa: {
+    n:'L\'Europa nel primo Settecento', d:'un secolo che comincia in pace, e cresce come non era mai successo',
+    f:[
+      {r:'si apre con', n:'Un equilibrio scritto', d:'Utrecht 1713: per la prima volta l\'equilibrio diventa un principio di trattato',
+       f:[
+         {r:'chiude la', n:'Guerra di successione spagnola', d:'tredici anni per stabilire chi eredita un impero senza eredi'},
+         {r:'con la regola che', n:'Le corone restino separate', d:'un Borbone regna in Spagna, ma Francia e Spagna non si uniranno mai'},
+         {r:'la Gran Bretagna prende', n:'Gibilterra e l\'asiento', d:'una base nel Mediterraneo e il monopolio della tratta verso le Indie spagnole'},
+         {r:'e si afferma l\'idea che', n:'Nessuno debba prevalere', d:'se uno cresce troppo, gli altri si coalizzano: e una regola dichiarata',
+          f:[{piu:true, r:'formalizzata nella', n:'Bilancia delle potenze', d:'l\'immagine della bilancia entra nel linguaggio diplomatico e ci resta'}]}
+       ]},
+
+      {r:'cambia', n:'La classifica delle potenze', d:'chi sale e chi scende, in una generazione',
+       f:[
+         {r:'sale la', n:'Gran Bretagna', d:'unita con la Scozia nel 1707, con la flotta e il credito migliori d\'Europa'},
+         {r:'sale la', n:'Russia', d:'Poltava 1709: batte la Svezia e diventa una potenza europea',
+          f:[{r:'con', n:'Pietro il Grande', d:'che importa tecnici, costruisce una flotta e fonda una capitale sul Baltico'},
+             {piu:true, r:'e impone perfino', n:'La tassa sulla barba', d:'l\'occidentalizzazione arriva al corpo dei sudditi, non solo all\'amministrazione'}]},
+         {r:'sale la', n:'Prussia', d:'piccola e povera, con il quarto esercito d\'Europa e un\'amministrazione severissima'},
+         {r:'l\'Austria si sposta', n:'Verso oriente', d:'riprende l\'Ungheria agli ottomani e diventa una potenza danubiana'},
+         {r:'scendono', n:'Spagna, Olanda, Svezia, Polonia', d:'per ragioni diverse, tutte legate alla scala: sono diventate troppo piccole'}
+       ]},
+
+      {r:'si combatte per', n:'Successioni', d:'le guerre del secolo portano tutte lo stesso nome',
+       f:[
+         {r:'la', n:'Successione polacca', d:'1733-38: si combatte in Italia per decidere chi regna a Varsavia'},
+         {r:'la', n:'Successione austriaca', d:'1740-48: Federico II invade la Slesia appena sale al trono una donna'},
+         {r:'la', n:'Guerra dei sette anni', d:'1756-63: la prima guerra combattuta su tre continenti insieme',
+          f:[{r:'preceduta dal', n:'Rovesciamento delle alleanze', d:'Francia e Austria, nemiche da due secoli, si alleano contro la Prussia'},
+             {r:'e si decide', n:'In America e in India', d:'la Gran Bretagna vince il Canada e il Bengala, non le battaglie in Germania'}]},
+         {r:'e la ragione dinastica copre', n:'Interessi di potenza', d:'un titolo ereditario e il modo presentabile di rivendicare un territorio'}
+       ]},
+
+      {r:'l\'Italia', n:'Cambia padroni senza combattere', d:'i trattati spostano dinastie come pedine',
+       f:[
+         {r:'la Lombardia passa', n:'Dagli Asburgo di Spagna a quelli d\'Austria', d:'senza che nessuno chieda niente a nessuno'},
+         {r:'a Napoli e in Sicilia arrivano i', n:'Borbone', d:'1734: un regno indipendente dopo due secoli di viceré'},
+         {r:'i Savoia diventano re di', n:'Sicilia, poi Sardegna', d:'un titolo regio scambiato con un altro in un trattato'},
+         {r:'e la penisola resta', n:'Un tavolo altrui', d:'si decide dei suoi Stati a Vienna, a Madrid e a Londra',
+          f:[{piu:true, r:'ma arrivano anche', n:'Riforme dall\'esterno', d:'catasti, censimenti e limiti ai privilegi ecclesiastici, portati dai nuovi sovrani'}]}
+       ]},
+
+      {r:'poggia su', n:'La societa di antico regime', d:'divisa per nascita, e la divisione e scritta nelle leggi',
+       f:[
+         {r:'tre ordini', n:'Clero, nobilta, terzo stato', d:'i primi due sono pochi e quasi esenti; il terzo e tutti gli altri e paga'},
+         {r:'la nobilta si divide fra', n:'Spada e toga', d:'chi discende da guerrieri e chi ha comprato una carica giudiziaria'},
+         {r:'la maggioranza vive', n:'Di agricoltura', d:'fra il settanta e l\'ottanta per cento della popolazione, ovunque'},
+         {r:'la famiglia e', n:'Un\'unita di lavoro', d:'ci si sposa tardi, si lavora tutti, e la casa e anche la bottega'},
+         {piu:true, r:'e la maggioranza vive', n:'A pochi giorni dalla fame', d:'un cattivo raccolto non impoverisce: uccide, e la memoria di questo governa ogni scelta'},
+         {r:'e la mortalita infantile', n:'Si porta via un bambino su quattro', d:'prima del primo anno: e la cifra che spiega tutto il resto'}
+       ]},
+
+      {r:'e conosce', n:'Una crescita mai vista', d:'la popolazione europea passa da circa centoventi a quasi centonovanta milioni',
+       f:[
+         {r:'perche scompare', n:'La peste', d:'dopo Marsiglia 1720 non torna piu in Europa occidentale, e nessuno sa dire perche',
+          f:[{r:'forse per i', n:'Cordoni sanitari', d:'l\'Austria ne mantiene uno permanente sui Balcani per oltre un secolo'},
+             {r:'forse per il', n:'Cambio di ratto', d:'il ratto nero sostituito dal grigio, meno domestico'},
+             {piu:true, r:'e forse per', n:'Case di mattoni', d:'meno legno e paglia, meno tane: nessuna ipotesi e dimostrata'}]},
+         {r:'e arrivano', n:'Mais e patata', d:'piu calorie per ettaro di qualunque cereale europeo'},
+         {r:'in Inghilterra si diffonde la', n:'Rotazione continua', d:'niente maggese: foraggio e cereali si alternano e la terra rende sempre'},
+         {r:'accompagnata dalle', n:'Recinzioni', d:'i campi aperti diventano proprieta chiuse: piu resa e meno contadini'},
+         {piu:true, r:'e si comincia a praticare', n:'L\'inoculazione del vaiolo', d:'importata dall\'Oriente e diffusa in Inghilterra: la prima difesa attiva contro una malattia'},
+         {r:'e nelle campagne nasce il', n:'Lavoro a domicilio', d:'il mercante porta la materia prima nelle case e ritira il filato'}
+       ]},
+
+      {r:'e uno Stato', n:'Che impara a contare', d:'l\'amministrazione diventa un mestiere tecnico',
+       f:[
+         {r:'con eserciti', n:'Permanenti e in caserma', d:'non si sciolgono a fine campagna: vanno pagati e nutriti sempre'},
+         {r:'e burocrazie', n:'Stipendiate e gerarchiche', d:'funzionari che non possiedono la carica ma la occupano'},
+         {r:'si fanno', n:'Catasti e censimenti', d:'per tassare bisogna sapere chi c\'e e che cosa possiede',
+          f:[{r:'come il', n:'Catasto teresiano', d:'in Lombardia: misura le terre e tassa anche i nobili, e fa scandalo'}]},
+         {r:'e nasce la', n:'Statistica', d:'letteralmente la scienza dello Stato: numeri raccolti per governare',
+          f:[{piu:true, r:'con le prime', n:'Tavole di mortalita', d:'servono alle assicurazioni e alle rendite, e nascono da registri parrocchiali'}]}
+       ]},
+
+      {r:'e una cultura', n:'Che si allarga', d:'si legge e si discute in luoghi che prima non esistevano',
+       f:[
+         {r:'nei', n:'Caffe', d:'a Londra se ne contano centinaia: si legge il giornale e si discute con estranei'},
+         {r:'nei', n:'Salotti', d:'a Parigi, spesso diretti da donne, dove si incontrano nobili e scrittori'},
+         {r:'con la', n:'Stampa periodica', d:'quotidiani e riviste: le notizie diventano un\'abitudine settimanale'},
+         {r:'dentro una', n:'Repubblica delle lettere', d:'una rete europea di corrispondenti, sopra i confini e le confessioni'},
+         {r:'e con il', n:'Grand tour', d:'i giovani ricchi viaggiano per formarsi: l\'Italia diventa una tappa obbligata'},
+         {piu:true, r:'e circolano', n:'Libri proibiti', d:'stampati in Olanda e in Svizzera e venduti sottobanco ovunque: la censura crea un mercato'},
+         {r:'e da qui nascera', n:'L\'Illuminismo', d:'non da un\'idea improvvisa, ma da un pubblico che si e formato prima'}
+       ]}
+    ],
+    incroci:[
+      {da:'La peste', a:'Che impara a contare', r:'scompare senza che si sappia perche, mentre lo Stato',
+       perche:'Il fatto piu importante del secolo per la vita delle persone accade mentre le amministrazioni imparano a registrare tutto — e proprio quei registri ci permettono oggi di vederlo. La causa resta ignota, ma la scomparsa e documentata riga per riga da chi contava le sepolture per altri motivi.'},
+      {da:'Cordoni sanitari', a:'Permanenti e in caserma', r:'richiedono eserciti',
+       perche:'Il cordone austriaco sui Balcani era lungo quasi duemila chilometri e presidiato in permanenza, con quarantene obbligatorie per merci e viaggiatori. Solo uno Stato con truppe stabili e un\'amministrazione capace di pagarle poteva mantenerlo per generazioni: la difesa sanitaria e un sottoprodotto della fiscalita militare.'},
+      {da:'Si porta via un bambino su quattro', a:'Un\'unita di lavoro', r:'spiega perche la famiglia sia',
+       perche:'Con una mortalita infantile cosi alta si fanno molti figli sapendo che alcuni non arriveranno all\'eta adulta, e chi sopravvive lavora presto. La struttura della famiglia di antico regime non e una scelta culturale: e la risposta a una demografia in cui la morte dei bambini e un\'esperienza ordinaria.'},
+      {da:'Mais e patata', a:'Recinzioni', r:'accompagnano le',
+       perche:'Piu calorie per ettaro e campi chiusi lavorati in modo intensivo agiscono insieme: si nutre piu gente su meno terra e servono meno braccia. Chi resta senza terra va nelle citta o lavora a domicilio — la crescita demografica e lo spostamento di manodopera sono la stessa cosa vista da due lati.'},
+      {da:'Lavoro a domicilio', a:'Gran Bretagna', r:'prepara il primato della',
+       perche:'Il mercante che porta la materia prima nelle case dei contadini crea, prima delle fabbriche, una manodopera abituata a lavorare per un committente e a essere pagata a cottimo. Quando arriveranno le macchine, in Inghilterra ci sara gia chi sa fare quel lavoro e chi sa organizzarlo.'},
+      {da:'Rovesciamento delle alleanze', a:'Nessuno debba prevalere', r:'e l\'applicazione piu spettacolare del principio che',
+       perche:'Francia e Austria si combattevano da due secoli e nel 1756 si alleano, perche il pericolo si chiama Prussia. Le alleanze non seguono le simpatie ne le dinastie: seguono chi sta crescendo troppo. È l\'equilibrio che funziona come una macchina, contro le abitudini di tutti.'},
+      {da:'In America e in India', a:'Gibilterra e l\'asiento', r:'e il seguito di quanto ottenuto con',
+       perche:'La Gran Bretagna costruisce il proprio impero per accumulo: una base, un monopolio commerciale, poi il Canada e il Bengala. Non conquista territori europei — prende i punti che controllano i traffici. È la stessa strategia portoghese di due secoli prima, con mezzi molto maggiori.'},
+      {da:'Catasto teresiano', a:'Clero, nobilta, terzo stato', r:'incrina la divisione in',
+       perche:'Misurare le terre e tassarle in proporzione al valore significa che anche i beni nobili ed ecclesiastici entrano nel conto. È il primo colpo serio al privilegio fiscale, e viene da un governo assoluto: le riforme che toccano i privilegi arrivano quasi sempre dall\'alto, perche chi ne gode non le vota mai.'},
+      {da:'Tavole di mortalita', a:'Statistica', r:'sono il primo prodotto utile della',
+       perche:'Contare quanti muoiono a ogni eta serve a vendere rendite vitalizie e assicurazioni senza rovinarsi. Il calcolo delle probabilita entra nella vita economica europea attraverso i registri di sepoltura — cioe attraverso documenti scritti da parroci che non avevano nessuna intenzione di fare scienza.'},
+      {da:'Caffe', a:'L\'Illuminismo', r:'sono il luogo materiale in cui si prepara',
+       perche:'Prima delle idee servono i luoghi: una stanza dove entrare pagando poco, leggere un giornale e discutere con sconosciuti di cose pubbliche. Il pubblico che leggera l\'Enciclopedia si forma nei caffe e nei salotti trent\'anni prima che l\'Enciclopedia esista.'},
+      {da:'Un tavolo altrui', a:'Riforme dall\'esterno', r:'porta con se anche',
+       perche:'L\'Italia subisce i trattati e insieme riceve amministratori che portano catasti, censimenti e limiti alle immunita ecclesiastiche. La perdita di sovranita e l\'arrivo di uno Stato piu efficiente sono lo stesso fatto: e il motivo per cui giudicare quel periodo con una sola parola non funziona.'},
+      {da:'Verso oriente', a:'Successione austriaca', r:'rende vulnerabile l\'Austria nella',
+       perche:'Espandersi sul Danubio significa una monarchia composita, con territori lontani e leggi diverse, difficile da difendere su piu fronti. Quando Federico II invade la Slesia trova uno Stato ricchissimo di terre e lento a mobilitarle: l\'estensione, senza integrazione, e una debolezza.'},
+      {da:'Spagna, Olanda, Svezia, Polonia', a:'Permanenti e in caserma', r:'non reggono piu il costo di eserciti',
+       perche:'Nel Seicento erano protagoniste; nel Settecento non riescono piu a pagare eserciti stabili, flotte e fortezze per tutto l\'anno. Non le batte una sconfitta, le batte la scala: la guerra e diventata una spesa continua, e chi non ha popolazione e fisco sufficienti esce dal tavolo senza combattere.'}
+    ]
+  },
+  provocazione: {
+    titolo:'La cosa che ha smesso di succedere',
+    durata:'55 minuti',
+    domandaMadre:'Come si accorge, una societa, di cio che smette di accadere?',
+    perche:'Dopo l\'epidemia di Marsiglia del 1720 la peste scompare dall\'Europa occidentale e non torna piu. È il fatto piu importante del Settecento per la vita delle persone — senza di esso non c\'e la crescita demografica, e senza quella non c\'e la rivoluzione industriale — e ha due caratteristiche sconcertanti: nessuno sa con certezza perche sia successo, e nessun contemporaneo se ne accorse mentre accadeva. Non esiste un giorno in cui qualcuno abbia scritto che la peste era finita. La classe lavora su due documenti opposti: un\'ordinanza sanitaria, scritta apposta per essere letta, e un registro parrocchiale di sepolture, che non voleva dire niente e dice la cosa piu importante.',
+    occorrente:'Niente.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'Per quattro secoli,\nogni dieci o quindici anni,\nla peste torna.\n\n1348. 1361. 1374. 1400.\nE avanti cosi,\ngenerazione dopo generazione.\n\nMilano 1630: muore forse\nmeta della citta.\nNapoli 1656: forse la meta.\nLondra 1665: centomila morti.\n\nMarsiglia, 1720:\ncirca quarantamila morti\nfra la citta e la Provenza.\n\nE poi basta.\n\nIn Europa occidentale\nla peste non torna piu.\nMai piu.\n\nNessuno l\'ha curata.\nNessuno sapeva che cosa fosse:\nil batterio verra identificato\nnel 1894, centosettant\'anni dopo.\n\nE nessuno, allora,\nse ne accorse.',
+       parlato:'Costruisci la serie delle date con calma: serve che sentano la regolarita prima della rottura.\n\nPoi l\'ultima riga, che e quella su cui lavoreremo per un\'ora: nessuno se ne accorse.\n\nSpiega che cosa significa, perche di solito sorprende. Non esiste un documento in cui qualcuno scriva che la peste e finita. Per decenni le citta continuano a mantenere i lazzaretti, a pagare i medici di sanita, a fare le quarantene. Aspettano un ritorno che non arriva.\n\nDomanda: perche e cosi difficile accorgersi che una cosa ha smesso di succedere?\n\nRaccogli le prime risposte. La migliore che possono trovare da soli e che le assenze non fanno rumore: nessuno annuncia un\'epidemia che non c\'e stata.',
+       seDicono:[
+         {loro:'«Saranno stati contenti almeno.»',
+          tu:'Non potevano esserlo, perche non lo sapevano. Chi viveva nel 1750 non aveva modo di sapere se la peste fosse finita o se stesse solo tardando: dal suo punto di vista era una pausa lunga come tante. Noi lo sappiamo perche vediamo i tre secoli dopo. Lui no.'},
+         {loro:'«Sarà stata la medicina.»',
+          tu:'La medicina del Settecento non poteva niente contro la peste, e in generale faceva piu danni che altro: i salassi indebolivano i malati. È uno dei punti fermi di questa lezione — la peste sparisce senza che nessuno la sconfigga.'}
+       ]},
+
+      {minuti:'8–17', et:'La fonte',
+       schermo:'Un documento scritto\napposta per essere letto.\n\nL\'impero asburgico istituisce\nsul confine con i territori ottomani\nun cordone sanitario permanente.\n\nCorre per quasi duemila chilometri,\ndalla Croazia alla Transilvania.\n\nÈ presidiato stabilmente da soldati\ne da contadini di confine\nobbligati al servizio.\n\nChiunque entri deve fermarsi\nin quarantena: ventun giorni\nnei periodi normali,\nquarantotto quando arrivano\nnotizie di contagio\ndall\'altra parte.\n\nLe merci vengono aperte,\nstese, arieggiate.\nChi elude il cordone\npuo essere fucilato.\n\nResta in funzione\nper oltre un secolo.\n\nTre domande.\nChi lo ha voluto?\nChe cosa ammette senza volerlo?\nChe cosa non dice?',
+       testo:{fonte:'Regolamenti sanitari del confine militare asburgico (Militärgrenze), dal 1728 in poi',
+              glossa:'Il cordone nasce come struttura militare contro gli ottomani e viene usato come barriera epidemica: le due funzioni non sono mai separate. È il piu grande dispositivo sanitario permanente esistito prima del Novecento, e fu smantellato solo nel 1871.'},
+       parlato:'Fai lavorare in coppia, cinque minuti, poi raccogli.\n\nSulla prima: lo vuole uno Stato, non dei medici — ed e un dispositivo militare prima che sanitario. Fai notare che una cosa del genere richiede soldati permanenti, denaro continuo e un\'amministrazione che duri generazioni. Solo un certo tipo di Stato puo permetterselo.\n\nSulla seconda, che e la piu ricca: il regolamento ammette, senza dirlo, che non si sa che cosa sia il contagio ma si sa da dove arriva. Nessuna spiegazione della malattia, molta precisione sulle procedure. Si mette in quarantena perche si e osservato che funziona, non perche si sia capito perche.\n\nSulla terza: non dice nulla sui ratti, sulle pulci, sulle cause. E soprattutto non dice per quanto tempo servira: e scritto come se il pericolo fosse permanente.\n\nPoi la domanda che apre il resto dell\'ora: se questo cordone ha funzionato, chi lo ha capito, e quando?',
+       seDicono:[
+         {loro:'«Quindi hanno risolto loro il problema.»',
+          tu:'È l\'ipotesi piu accreditata e non e dimostrata. Il guaio e che nello stesso periodo cambiano anche altre cose: il tipo di ratto prevalente, i materiali delle case, le rotte commerciali. Quando piu cause plausibili agiscono insieme, isolare quella decisiva e difficilissimo — e a volte impossibile.'},
+         {loro:'«Fucilare chi passa il confine e mostruoso.»',
+          tu:'Lo e, e va detto. E vale la pena tenere insieme le due cose: quella misura estrema probabilmente ha salvato un numero enorme di vite che non sapremo mai contare. Le vite salvate non lasciano documenti; le fucilazioni si.'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'Le ipotesi sul perche\nla peste sia scomparsa.\nNessuna e dimostrata.\n\nI cordoni e le quarantene:\nfunzionavano, e non spiegano\nperche sparisca anche\ndove non c\'erano.\n\nIl cambio di ratto:\nil ratto nero, che vive nelle case,\nviene soppiantato dal grigio,\npiu grosso e piu selvatico.\nMa le date non tornano ovunque.\n\nLe case: meno legno e paglia,\npiu mattoni e tegole.\nMeno tane vicino a dove si dorme.\n\nLe rotte: il commercio\nsi sposta verso l\'Atlantico,\ne il contagio arrivava\ndal Mediterraneo orientale.\n\nForse il batterio stesso\ne cambiato.\n\nTrecento anni dopo,\nnon lo sappiamo.',
+       parlato:'Elenca le ipotesi senza sceglierne una, e insisti sul fatto che sono tutte parziali.\n\nPoi fai la domanda di metodo, che e il cuore di questo blocco: perche e cosi difficile stabilire la causa?\n\nGuidali a vedere il problema. Non possiamo fare esperimenti sul passato. Abbiamo un solo caso — l\'Europa — e in quel caso tutte le cause candidate sono cambiate piu o meno insieme. Quando piu cose cambiano contemporaneamente e l\'effetto e uno solo, i dati non bastano a distinguere.\n\nÈ la situazione opposta a quella che avete visto con la peste nera del Trecento, dove il confronto fra Ovest ed Est permetteva di isolare i rapporti di forza. Li avevamo due casi diversi; qui ne abbiamo uno.\n\nUltima cosa da dire, ed e la piu utile: che una causa sia ignota non significa che non ci sia, e non autorizza a inventarne una comoda. «Non lo sappiamo» e una conclusione legittima, e in storia capita spesso.',
+       seDicono:[
+         {loro:'«Ma qualcuna sarà più probabile.»',
+          tu:'Sì, e la maggioranza degli storici propende per il complesso quarantene-cordoni, perche e l\'unico fattore che si e visto funzionare anche altrove e in tempi diversi. Propendere non e dimostrare: e giusto dire quale ipotesi e piu forte, purche si dica anche che resta un\'ipotesi.'},
+         {loro:'«Non sarà mica sparita e basta?»',
+          tu:'Non del tutto: e rimasta altrove — in Asia, in Nordafrica, e nel 1894 riparte da Hong Kong facendo milioni di morti. Non e scomparsa dal mondo, e scomparsa dall\'Europa occidentale. Il che rende la domanda piu difficile, non piu facile.'}
+       ]},
+
+      {minuti:'28–38', et:'La seconda fonte',
+       schermo:'Il primo documento era una legge,\nscritta perche fosse letta.\n\nQuesto non voleva dire niente\na nessuno.\n\nÈ un registro parrocchiale:\nil quaderno in cui il parroco\nannota battesimi, matrimoni\ne sepolture, uno per riga,\nper obbligo dal concilio di Trento.\n\nQuando arriva un\'epidemia,\nle righe di sepoltura\nsi moltiplicano: dieci, venti\nal giorno, e a volte il parroco\nsmette di scrivere i nomi\ne conta soltanto.\n\nPoi, nel Settecento,\nquei picchi non compaiono piu.\n\nRestano le morti normali:\ni vecchi d\'inverno,\ni bambini piccolissimi\ntutto l\'anno.\n\nNessuno lo annota.\nNessuno lo commenta.\n\nSi vede solo\nmettendo in fila\ncento anni di quaderni.',
+       testo:{fonte:'Registri parrocchiali di battesimi, matrimoni e sepolture, obbligatori dal concilio di Trento (1563)',
+              glossa:'Sono la fonte piu importante della demografia storica europea e nessuno li scrisse per questo: servivano a controllare che i matrimoni fossero regolari e che i fedeli ricevessero i sacramenti. Da uno strumento di disciplina religiosa viene tutto quello che sappiamo su come nascevano, si sposavano e morivano le persone comuni.'},
+       parlato:'Fai il confronto in modo esplicito, perche e l\'esercizio della lezione. Il primo documento e stato scritto da qualcuno che voleva dire una cosa a qualcun altro. Il secondo e un sottoprodotto amministrativo, e nessuno lo ha mai riletto per intero fino al Novecento.\n\nE il secondo dice la cosa piu importante.\n\nPoi la domanda: perche il parroco che smetteva di scrivere venti nomi al giorno non annota, vent\'anni dopo, che quelle righe non ci sono piu?\n\nGuidali alla risposta, che vale ben oltre il Settecento: perche l\'assenza di un evento non e un evento. Nessuno registra cio che non e successo. Le fonti raccontano le cose che accadono, e i cambiamenti piu profondi spesso consistono in cose che smettono di accadere.\n\nPer vederli serve fare una cosa che nessun contemporaneo puo fare: mettere in fila decenni e guardare la forma della serie.',
+       seDicono:[
+         {loro:'«Quindi gli storici sanno più dei contemporanei.»',
+          tu:'Su certe cose sì, ed e una delle poche affermazioni forti che si possono fare sul mestiere. Un contadino del 1750 sapeva della propria vita mille cose che noi non sapremo mai; non poteva sapere che stava vivendo in un secolo senza peste. La distanza fa perdere quasi tutto e permette di vedere le forme.'},
+         {loro:'«Anche oggi ci saranno cose così.»',
+          tu:'Quasi certamente, ed e la domanda che vi lascio per il finale. Che cosa ha smesso di succedere, intorno a voi, senza che nessuno lo abbia annunciato?'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'Guardiamo le conseguenze.\n\nMeno morti improvvise\nsignifica popolazione che cresce.\n\nL\'Europa passa da circa\ncentoventi milioni di abitanti\na quasi centonovanta\nnel corso del secolo.\n\nPiu bocche: serve piu cibo,\ne arrivano mais e patata,\nrotazioni nuove, campi recintati.\n\nPiu braccia: costano meno,\ne il mercante porta il lavoro\nnelle case dei contadini.\n\nPiu gente senza terra:\nva nelle citta.\n\nDa questa catena esce,\nsettant\'anni dopo,\nla rivoluzione industriale.\n\nCioe: il cambiamento piu grande\ndella storia moderna comincia\nda un fatto di cui non conosciamo\nla causa e che nessuno\naveva progettato.\n\nE la stessa crescita\nprepara anche il disastro:\nnel 1788 il raccolto va male,\ne stavolta le bocche sono molte di piu.',
+       parlato:'Costruisci la catena un anello per volta, facendo dire a loro il passaggio successivo: se hanno seguito, ci arrivano.\n\nPoi la formulazione centrale: la causa prima della trasformazione piu importante dell\'eta moderna e un fatto che nessuno ha deciso, di cui non conosciamo il meccanismo, e che nessun contemporaneo ha notato.\n\nQuesto va detto senza compiacimento: non e un elogio del caso. È un promemoria su come funzionano davvero le cause storiche — quasi mai qualcuno decide qualcosa e quel qualcosa accade. Piu spesso cambiano le condizioni, e le decisioni degli uomini si muovono dentro quelle condizioni.\n\nPoi l\'ultimo anello, che li prepara al capitolo sulla Rivoluzione francese. La stessa crescita che rende l\'Europa piu ricca la rende anche piu fragile: piu persone da nutrire significa che un cattivo raccolto colpisce piu duro. Nell\'inverno fra il 1788 e il 1789 il pane arriva a costare a un operaio parigino la maggior parte della giornata di lavoro.\n\nLo stesso fatto — la popolazione che cresce — produce la ricchezza del secolo e la crisi che lo chiude.',
+       seDicono:[
+         {loro:'«Allora tutto dipende dal caso.»',
+          tu:'No: dipende da condizioni che nessuno controlla e da decisioni che gli uomini prendono dentro quelle condizioni. Il fatto che la peste sparisca non spiega perche la rivoluzione industriale cominci in Inghilterra e non in Polonia. Le condizioni aprono possibilita; chi le raccoglie dipende da altro.'},
+         {loro:'«Se cresceva la popolazione, come mai non c\'erano più carestie?»',
+          tu:'Ce n\'erano, e gravi: nel 1740 e nel 1770. Quello che cambia e che non uccidono piu come prima, perche arrivano piu colture e il trasporto migliora. Ma non spariscono, ed e per questo che il 1788 fa saltare tutto.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'Due documenti,\ndue modi di sapere.\n\nUn regolamento sanitario:\nqualcuno voleva dirci qualcosa,\ne dobbiamo chiederci\nperche e a chi.\n\nUn registro di sepolture:\nnessuno voleva dirci niente,\ne per questo\nnon ha motivo di mentirci.\n\nIl secondo racconta\nla cosa piu importante\ndel secolo,\ne solo se lo si legge\nper intero,\ncento anni per volta.\n\nUltima domanda,\ne riguarda voi:\n\nche cosa ha smesso di succedere\nintorno a voi\nsenza che nessuno\nlo abbia annunciato?',
+       parlato:'Riprendi i due documenti e fissa la regola di metodo, che e la cosa da portare a casa: una fonte scritta per convincere va pesata insieme alle intenzioni di chi la scrive; una fonte amministrativa, scritta per tutt\'altro, non ha motivo di ingannarci — e per questo la demografia storica si basa su registri parrocchiali e non su cronache.\n\nPoi il secondo punto: certe cose si vedono solo da lontano. Nessun contemporaneo poteva sapere di vivere nel primo secolo senza peste, perche per accorgersene serviva la serie intera, e la serie intera esiste solo dopo.\n\nSull\'ultima domanda falli lavorare davvero: che cosa e sparito dalla loro vita o da quella dei loro genitori senza che nessuno lo dicesse. Vengono fuori cose interessanti — malattie che i nonni temevano, mestieri, oggetti, abitudini. E il punto e sempre lo stesso: nessuno ha annunciato la fine, e infatti nessuno ricorda quando e successa.\n\nChiudi con quello che serve per il seguito. Il secolo che abbiamo appena descritto — piu popolato, piu ricco, piu istruito, con caffe e giornali — e quello in cui si formera un pubblico che discute di cose pubbliche. La prossima volta vediamo che cosa quel pubblico comincia a chiedere.',
+       seDicono:[
+         {loro:'«Allora i documenti ufficiali sono meno affidabili.»',
+          tu:'Non meno affidabili: affidabili su cose diverse. Un regolamento ti dice benissimo che cosa uno Stato voleva fare e che cosa temeva; e cattivo testimone su che cosa succedeva davvero. Il registro e il contrario. Il mestiere sta nel chiedere a ogni fonte la cosa che quella fonte puo sapere.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'Il muro sanitario',
+       corpo:'Il cordone asburgico sul confine ottomano restò in funzione dal Settecento fino al 1871. Correva per quasi duemila chilometri ed era presidiato da reggimenti di contadini-soldati, che in cambio della terra avevano l\'obbligo del servizio.\n\nChi arrivava da oriente si fermava in stazioni di quarantena: ventuno giorni in tempo normale, quarantotto quando giungevano notizie di contagio. Le merci venivano aperte e arieggiate; la lana e il cotone erano considerati i piu pericolosi.\n\nChi tentava di aggirarlo poteva essere ucciso.',
+       chiedi:'Un provvedimento sanitario mantenuto per centoquarant\'anni contro un pericolo che nel frattempo era scomparso. Come si fa a sapere quando una misura di emergenza non serve più? E chi avrebbe avuto interesse a dirlo?'},
+      {titolo:'Le recinzioni',
+       corpo:'Nell\'Inghilterra del Settecento migliaia di leggi private autorizzano la recinzione dei campi aperti e delle terre comuni. La terra recintata rende di più: si può scegliere che cosa coltivare, migliorare il bestiame, applicare la rotazione continua.\n\nMa i campi comuni servivano ai contadini poveri per far pascolare un animale, raccogliere legna, spigolare. Chi non aveva titoli scritti perse quell\'accesso.\n\nLa produzione agricola inglese cresce nettamente. Il numero di piccoli contadini indipendenti diminuisce.',
+       chiedi:'Un cambiamento che aumenta il prodotto totale e toglie mezzi di sopravvivenza a chi ne aveva meno. Come si giudica una cosa del genere? E chi decide quale dei due effetti conta di più?'},
+      {titolo:'Cento caffè',
+       corpo:'Nella Londra del primo Settecento si contano centinaia di caffè. Si paga un penny per entrare, si legge il giornale che il locale mette a disposizione, si discute con sconosciuti.\n\nAlcuni si specializzano: in un caffè si trovano gli assicuratori marittimi — da quel locale nascerà i Lloyd\'s — in un altro i mercanti di azioni, in un altro i letterati.\n\nLe donne, salvo che come proprietarie, di norma non entravano.',
+       chiedi:'Un luogo dove per un penny chiunque può sedersi e discutere di politica con estranei. Che cosa rende possibile una cosa simile, e che cosa la rende pericolosa per un governo? E oggi, quali sono i luoghi equivalenti — e chi ne è escluso?'}
+    ],
+    testi:[
+      {fonte:'Trattato di Utrecht, 1713 — la clausola sulle due corone',
+       corpo:'Il trattato stabilisce che Filippo di Borbone conservi la corona di Spagna rinunciando per sé e per i suoi discendenti a ogni diritto sulla corona di Francia, affinché i due regni non possano mai riunirsi sotto un solo sovrano.',
+       glossa:'È la prima volta che un trattato europeo scrive esplicitamente come propria ragione l\'impedire che una potenza diventi troppo grande. L\'equilibrio smette di essere una pratica diplomatica e diventa un principio dichiarato — quello che regolerà, con alterne fortune, i due secoli successivi.'},
+      {fonte:'Relazioni sull\'epidemia di Marsiglia, 1720',
+       corpo:'Le fonti registrano l\'arrivo di una nave proveniente dal Levante con equipaggio malato, l\'autorizzazione a scaricare le merci nonostante i sospetti, e il rapido diffondersi del contagio in città e nella regione circostante, con decine di migliaia di morti.',
+       glossa:'L\'ultima grande epidemia di peste dell\'Europa occidentale entra da una violazione della quarantena, ed è un argomento a favore dell\'ipotesi che siano stati i controlli sanitari a fare la differenza. Vale come indizio forte e non come prova: un caso singolo mostra che il sistema poteva fallire, non che fosse esso a produrre la scomparsa.'},
+      {fonte:'John Graunt, Osservazioni naturali e politiche sui bollettini di mortalità, Londra 1662',
+       corpo:'Graunt esamina i bollettini settimanali dei morti di Londra, li ordina per anni e per cause, e ne ricava regolarità: la proporzione fra maschi e femmine alla nascita, la quota di morti infantili, l\'andamento delle epidemie.',
+       glossa:'È l\'atto di nascita della demografia, e nasce dalla lettura sistematica di documenti amministrativi raccolti per altri scopi. Da usare accanto ai registri parrocchiali per mostrare il passaggio decisivo: mettere in serie ciò che era stato scritto un caso per volta.'}
+    ],
+    compito:'Mezza pagina. Chiedete a un genitore o a un nonno di raccontarvi una cosa che c\'era quando erano giovani e che oggi non c\'è più — un oggetto, un mestiere, una paura, un\'abitudine. Poi scrivete due cose: quando è sparita, e se se ne sono accorti mentre spariva. Se la risposta alla seconda domanda è no, provate a spiegare perché.',
+    fonti:[
+      'Trattato di Utrecht (1713); regolamenti del confine militare asburgico',
+      'John Graunt, Natural and Political Observations upon the Bills of Mortality (1662)',
+      'Registri parrocchiali e loro uso: L. Henry e M. Fleury, manuali di demografia storica',
+      'M. Livi Bacci, La popolazione nella storia d\'Europa; Storia minima della popolazione del mondo',
+      'J.-N. Biraben, Les hommes et la peste; O. Benedictow, sulla scomparsa della peste in Europa',
+      'E. A. Wrigley e R. Schofield, The Population History of England 1541-1871'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',
