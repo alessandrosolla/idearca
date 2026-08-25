@@ -172,7 +172,7 @@ Si va in ordine di programma. Restano:
 - [x] Storia moderna · 10 — La Rivoluzione americana
 - [x] Storia moderna · 11 — La Rivoluzione francese
 - [x] Storia moderna · 12 — L'età napoleonica
-- [ ] Storia moderna · 13 — La Restaurazione
+- [x] Storia moderna · 13 — La Restaurazione
 - [ ] Storia moderna · 14 — L'età dei popoli e delle nazioni
 - [ ] Storia moderna · 15 — Società industriale e socialismo
 - [ ] Storia moderna · 16 — Il 1848, primavera dei popoli

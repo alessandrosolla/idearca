@@ -8673,6 +8673,226 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Storia moderna · 13 — La Restaurazione': {
+  mappa: {
+    n:'La Restaurazione', d:'il tentativo di rimettere l\'Europa com\'era, e quello che ne esce davvero',
+    f:[
+      {r:'comincia dal', n:'Congresso di Vienna', d:'1814-15: nove mesi per ridisegnare un continente',
+       f:[
+         {r:'lo dirige', n:'Metternich', d:'cancelliere austriaco: l\'uomo che da\' il nome a tutta l\'epoca'},
+         {r:'con', n:'Castlereagh', d:'per l\'Inghilterra, che vuole equilibrio e nessuna potenza dominante'},
+         {r:'e lo zar', n:'Alessandro I', d:'oscillante fra misticismo religioso e ambizione territoriale'},
+         {r:'e Talleyrand che', n:'Entra da sconfitto ed esce da arbitro', d:'usa il principio di legittimita per rimettere la Francia al tavolo',
+          f:[{piu:true, r:'sfruttando le', n:'Divisioni fra i vincitori', d:'Prussia e Russia da una parte, Austria e Inghilterra dall\'altra: quasi si arriva alla guerra'}]},
+         {piu:true, r:'e si lavora soprattutto', n:'Nei salotti e ai balli', d:'le decisioni vere si prendono fuori dalle sedute: il congresso non si riunisce mai in seduta plenaria'},
+         {r:'si lavora su tre principi', n:'Legittimita, equilibrio, compensi', d:'i sovrani legittimi tornano, nessuno cresce troppo, chi ci rimette viene risarcito altrove'}
+       ]},
+
+      {r:'crea', n:'Un sistema fra gli Stati', d:'ed e la parte che funziona meglio, e non era la piu importante per loro',
+       f:[
+         {r:'la', n:'Santa Alleanza', d:'1815: un patto fra sovrani cristiani, scritto in un linguaggio religioso',
+          f:[{r:'che gli inglesi giudicano', n:'Un pezzo di sublime misticismo', d:'Castlereagh la definisce cosi, e rifiuta di firmarla'}]},
+         {r:'la', n:'Quadruplice alleanza', d:'quella che conta davvero: Austria, Prussia, Russia, Inghilterra'},
+         {r:'con il metodo dei', n:'Congressi periodici', d:'i grandi si riuniscono a intervalli per decidere insieme: e una novita assoluta'},
+         {r:'e il', n:'Principio d\'intervento', d:'1820: si puo entrare in uno Stato dove sia scoppiata una rivoluzione',
+          f:[{r:'contestato dall\'', n:'Inghilterra', d:'che non intende garantire regimi impopolari e si sfila'}]},
+         {r:'nasce cosi il', n:'Concerto europeo', d:'l\'abitudine a consultarsi prima di agire: durera fino al Novecento'}
+       ]},
+
+      {r:'prova a', n:'Restaurare l\'interno', d:'e qui riesce molto meno di quanto si racconti',
+       f:[
+         {r:'i sovrani', n:'Tornano sui troni', d:'Borbone in Francia, in Spagna, a Napoli; il papa nello Stato pontificio'},
+         {r:'ma non si toccano il', n:'Codice e il catasto', d:'troppa amministrazione e troppi contratti sono costruiti su di essi'},
+         {r:'ne si annulla la', n:'Vendita dei beni ecclesiastici', d:'i nuovi proprietari sono ormai il ceto su cui i sovrani si appoggiano'},
+         {r:'resta la', n:'Coscrizione', d:'chi vuole un esercito moderno prende i propri cittadini'},
+         {r:'e in Francia si concede una', n:'Carta costituzionale', d:'1814: un testo dato dal re, non votato da nessuno',
+          f:[{piu:true, r:'la parola chiave e', n:'Ottriata', d:'concessa dall\'alto: cosi il sovrano puo dire che i diritti restano un suo dono'}]}
+       ]},
+
+      {r:'genera', n:'Il pensiero reazionario', d:'che per la prima volta si organizza in dottrina',
+       f:[
+         {r:'de Maistre sostiene che', n:'La rivoluzione sia un castigo', d:'e che le costituzioni scritte non valgano nulla contro quelle nate dalla storia'},
+         {r:'Bonald difende', n:'Trono e altare', d:'la societa si regge su religione, autorita e famiglia, non su individui'},
+         {r:'e vale la pena distinguere', n:'Burke', d:'critica la rivoluzione francese in nome della prudenza, non del diritto divino',
+          f:[{r:'perche difende', n:'Il cambiamento graduale', d:'e non il ritorno indietro: e conservatorismo, non reazione'}]},
+         {piu:true, r:'e si teorizza il valore dei', n:'Corpi intermedi', d:'famiglia, corporazione, comunita: cio che sta fra l\'individuo e lo Stato e cio che protegge'},
+         {r:'il', n:'Legittimismo', d:'solo la dinastia legittima puo regnare: e il principio che Vienna mette al centro'}
+       ]},
+
+      {r:'genera anche', n:'Il liberalismo', d:'che nasce come teoria dei limiti al potere, non della democrazia',
+       f:[
+         {r:'Constant distingue la', n:'Liberta degli antichi da quella dei moderni', d:'partecipare al governo, oppure essere lasciati in pace nella propria vita'},
+         {r:'e chiede', n:'Costituzione e divisione dei poteri', d:'diritti garantiti, stampa libera, ministri responsabili'},
+         {r:'ma con', n:'Suffragio censitario', d:'vota chi possiede: la proprieta come garanzia di indipendenza di giudizio'},
+         {piu:true, r:'e si teme la', n:'Tirannia della maggioranza', d:'Tocqueville: una maggioranza puo opprimere quanto un re, e con piu buona coscienza'},
+         {r:'quindi liberalismo e democrazia', n:'Non sono la stessa cosa', d:'e per gran parte dell\'Ottocento saranno avversari'}
+       ]},
+
+      {r:'e genera', n:'Nazione e democrazia', d:'i due principi che faranno saltare il sistema',
+       f:[
+         {r:'la', n:'Nazione come legittimita alternativa', d:'non conta chi discende da chi, conta un popolo con una lingua e una storia'},
+         {r:'Mazzini fonda', n:'La Giovine Italia', d:'1831: unita, indipendenza, repubblica, e l\'educazione del popolo'},
+         {r:'con un\'idea di', n:'Doveri prima che diritti', d:'la nazione come missione, non come interesse: e cio che lo separa dai liberali'},
+         {r:'sullo sfondo il', n:'Romanticismo', d:'lingua, poesia popolare, medioevo: la cultura fornisce alla nazione un passato',
+          f:[{piu:true, r:'si raccolgono', n:'Fiabe e canti popolari', d:'i Grimm in Germania: si cerca l\'anima di un popolo nei racconti dei contadini'}]},
+         {r:'e per la prima volta', n:'Il popolo diventa un soggetto', d:'non piu insieme di sudditi, ma titolare di un diritto a esistere come Stato'}
+       ]},
+
+      {r:'produce', n:'Moti che falliscono', d:'per trent\'anni, con una regolarita quasi meccanica',
+       f:[
+         {r:'attraverso', n:'Societa segrete', d:'carboneria e affini: riti, gradi, giuramenti, e pochissimi affiliati'},
+         {r:'nel', n:'1820-21', d:'Spagna, Napoli, Piemonte: si ottengono costituzioni e si perdono in pochi mesi'},
+         {r:'nel', n:'1830', d:'la Francia caccia i Borbone, il Belgio si stacca, la Polonia viene schiacciata'},
+         {r:'e in Grecia invece', n:'Si vince', d:'1830: l\'unico moto riuscito, perche le grandi potenze decidono di appoggiarlo'},
+         {r:'nel', n:'1848', d:'salta quasi tutta l\'Europa insieme, e quasi ovunque si torna indietro entro un anno'},
+         {r:'falliscono perche restano', n:'Isolati dalle campagne', d:'sono movimenti di studenti, ufficiali e borghesi, senza i contadini'},
+         {r:'e perche c\'e sempre', n:'L\'intervento austriaco', d:'il principio di Troppau in azione: chi si ribella trova un esercito straniero',
+          f:[{piu:true, r:'ma ogni fallimento', n:'Lascia dei sopravvissuti', d:'esuli che si conoscono, imparano e riprovano: la generazione dopo sa di piu'}]}
+       ]},
+
+      {r:'lascia un', n:'Bilancio rovesciato', d:'fallisce dove voleva riuscire e riesce dove non ci pensava',
+       f:[
+         {r:'non ferma', n:'Le rivoluzioni', d:'1830 e 1848 dimostrano che il principio di legittimita non tiene'},
+         {r:'non cancella', n:'L\'idea di nazione', d:'anzi la rafforza, perche i confini di Vienna la contraddicono apertamente'},
+         {r:'ma impedisce', n:'Ogni guerra generale europea', d:'dal 1815 al 1914: non era mai successo prima e non succedera piu'},
+         {r:'perche i sovrani', n:'Si abituano a consultarsi', d:'e uno strumento nato per reprimere diventa un modo di non farsi la guerra'},
+         {piu:true, r:'e resta in eredita l\'idea di', n:'Riunirsi prima di combattere', d:'da Vienna in poi ogni crisi europea comincia con una conferenza: e un\'abitudine che arriva fino a noi'},
+         {r:'con una precisazione necessaria', n:'La pace e solo fra europei', d:'negli stessi cent\'anni l\'Europa fa guerre continue nel resto del mondo'}
+       ]}
+    ],
+    incroci:[
+      {da:'Entra da sconfitto ed esce da arbitro', a:'Legittimita, equilibrio, compensi', r:'riesce perche si appoggia al primo dei principi',
+       perche:'Talleyrand rappresenta il paese sconfitto e usa il principio di legittimita come argomento: se conta la dinastia legittima, allora la Francia dei Borbone non e la Francia di Napoleone e non deve pagarne i conti. Un principio adottato dai vincitori per giustificare se stessi diventa lo strumento con cui il vinto rientra al tavolo.'},
+      {da:'Principio d\'intervento', a:'Isolati dalle campagne', r:'basta a schiacciare moti che restano',
+       perche:'Un movimento di studenti, ufficiali e professionisti, senza radicamento contadino, non ha la forza di resistere a un esercito regolare che arriva da fuori. Il sistema di Vienna funziona contro le rivoluzioni proprio perche quelle rivoluzioni sono di minoranze — e i loro protagonisti impiegano trent\'anni a capirlo.'},
+      {da:'Si abituano a consultarsi', a:'Ogni guerra generale europea', r:'e cio che impedisce',
+       perche:'I congressi nascono per coordinare la repressione delle rivoluzioni, e producono l\'abitudine a discutere prima di agire e a considerare inaccettabile che una potenza cambi da sola i confini. Uno strumento pensato per la sicurezza interna dei troni diventa il meccanismo che tiene l\'Europa senza guerre generali per un secolo.'},
+      {da:'Nazione come legittimita alternativa', a:'Le rivoluzioni', r:'e la ragione per cui il sistema non ferma',
+       perche:'Vienna fonda la legittimita sulla dinastia: chi regna, regna perche discende. Il principio di nazione fonda la legittimita sul popolo. Non sono due opinioni ma due criteri incompatibili su chi possa comandare, e quando il secondo si diffonde il primo non ha argomenti da opporgli.'},
+      {da:'Ottriata', a:'Il popolo diventa un soggetto', r:'e la formula con cui si prova a negare che',
+       perche:'Dire che la costituzione e concessa dal sovrano serve a stabilire che i diritti sono un dono revocabile e non una conquista. È una battaglia sulle parole che vale un principio: chi accetta la formula ammette che la sovranita resti al re anche mentre ne limita i poteri.'},
+      {da:'Codice e il catasto', a:'Tornano sui troni', r:'sopravvivono ai sovrani che',
+       perche:'La restaurazione politica e reale, quella amministrativa non avviene: i re tornano e trovano uno Stato costruito dai rivoluzionari e da Napoleone, che nessuno puo smontare senza rendere ingovernabile il proprio paese. Le istituzioni durano piu dei regimi che le hanno prodotte.'},
+      {da:'Suffragio censitario', a:'Non sono la stessa cosa', r:'e la prova piu chiara che liberalismo e democrazia',
+       perche:'I liberali dell\'Ottocento vogliono limitare il potere, garantire diritti e stampa libera, e insieme riservare il voto a chi possiede. Temono la democrazia quanto l\'assolutismo, perche vedono nella maggioranza senza proprieta una minaccia alla liberta. Confondere le due parole rende incomprensibile tutto il secolo.'},
+      {da:'Fiabe e canti popolari', a:'Romanticismo', r:'sono lo strumento con cui il',
+       perche:'Per sostenere che un popolo esiste come nazione serve dimostrare che ha un\'anima propria, e la si cerca dove si presume incontaminata: nei racconti dei contadini, nelle ballate, nella lingua parlata. La ricerca folclorica non e un passatempo erudito, e la costruzione di un titolo politico.'},
+      {da:'Un pezzo di sublime misticismo', a:'Quadruplice alleanza', r:'e giudicata cosi perche cio che conta e la',
+       perche:'La Santa Alleanza e un testo di principi religiosi senza obblighi precisi; la Quadruplice e un\'alleanza militare con impegni concreti. Gli inglesi firmano la seconda e non la prima. È utile distinguerle: nel linguaggio corrente si chiama Santa Alleanza il sistema che in realta funzionava con l\'altro strumento.'},
+      {da:'Lascia dei sopravvissuti', a:'1848', r:'e cio che porta gli stessi uomini fino al',
+       perche:'Ogni moto fallito produce esuli che si incontrano a Londra, a Parigi, a Ginevra, si scambiano esperienze e ricominciano. Il 1848 e fatto in gran parte da chi era stato sconfitto nel 1821 e nel 1831. Le rivoluzioni perdenti trasmettono un capitale che le vittorie non producono: gente che sa come si fa e come si sbaglia.'},
+      {da:'La pace e solo fra europei', a:'Concerto europeo', r:'e la precisazione che il',
+       perche:'Fra il 1815 e il 1914 l\'Europa non conosce guerre generali al proprio interno e conduce guerre quasi ininterrotte in Africa e in Asia. Il concerto europeo regola i rapporti fra chi sta al tavolo, e proprio il fatto di non litigare in casa rende disponibili risorse per l\'espansione fuori.'},
+      {da:'Il cambiamento graduale', a:'La rivoluzione sia un castigo', r:'e cosa diversa dal ritenere che',
+       perche:'Burke difende le istituzioni esistenti perche contengono l\'esperienza accumulata di generazioni, e ammette che vadano riformate poco per volta. De Maistre vede nella rivoluzione una punizione divina e vuole tornare indietro. Metterli nella stessa categoria e l\'errore piu frequente su questo periodo.'},
+      {da:'Societa segrete', a:'Doveri prima che diritti', r:'vengono superate dall\'idea mazziniana dei',
+       perche:'La carboneria era una setta di pochi affiliati con riti e gerarchie, che puntava al colpo di mano. Mazzini capisce che senza un popolo educato e convinto nessun colpo di mano regge, e sostituisce alla cospirazione l\'idea di una missione nazionale da insegnare. È il passaggio dalla congiura alla politica di massa.'}
+    ]
+  },
+  provocazione: {
+    titolo:'Cent\'anni senza',
+    durata:'55 minuti',
+    domandaMadre:'Un\'istituzione si giudica dai suoi scopi o dai suoi effetti?',
+    perche:'Il Congresso di Vienna e raccontato come il tentativo fallito di rimettere l\'orologio indietro, e in effetti fallisce: nel 1830 e nel 1848 l\'Europa salta. Ma nello stesso tempo produce qualcosa che nessuno aveva messo in cima ai propri obiettivi — dal 1815 al 1914 non c\'e nessuna guerra generale europea, cosa mai accaduta prima e mai piu accaduta dopo. La classe lavora su due documenti, un testo di principi solenni e un protocollo operativo, e ne ricava una domanda che vale per qualunque istituzione: si giudica da cio che voleva ottenere o da cio che ha prodotto? Con una precisazione che chiude l\'ora e non va risparmiata: quella pace era pace fra europei.',
+    occorrente:'Niente.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'Vienna, 1815.\n\nI vincitori di Napoleone\nsi riuniscono per rimettere\nl\'Europa come stava prima.\n\nRitornano i re legittimi.\nSi ridisegnano i confini\nsenza chiedere niente a nessuno.\nSi stabilisce che chi si ribella\nva fermato, anche a casa d\'altri.\n\nSecondo i manuali,\ne un fallimento:\n\nnel 1830 la Francia caccia i Borbone\ne il Belgio si stacca dall\'Olanda;\n\nnel 1848 salta quasi tutta l\'Europa\nnello stesso anno.\n\nEppure c\'e un dato.\n\nDal 1815 al 1914,\nper novantanove anni,\nin Europa non c\'e\nnessuna guerra generale.\n\nNon era mai successo prima.\nNon e piu successo dopo.',
+       parlato:'Costruisci prima il fallimento — e reale, e va detto per intero — e tieni il dato finale per ultimo.\n\nSul dato serve una precisazione, altrimenti qualcuno obietta subito: guerre ci furono, e importanti. Crimea, le guerre per l\'unita italiana e tedesca, la guerra franco-prussiana. Ma sono conflitti limitati, fra poche potenze, chiusi in fretta e con obiettivi definiti. Manca la guerra generale che coinvolge tutti insieme per anni: nei due secoli precedenti ce n\'era stata una a generazione.\n\nPoi la domanda dell\'ora: come si giudica un\'istituzione che fallisce nel proprio scopo dichiarato e riesce in qualcosa che non aveva messo in cima alla lista?\n\nRaccogli le prime reazioni e non chiudere. Ci lavoriamo per un\'ora.',
+       seDicono:[
+         {loro:'«Ma le guerre c\'erano.»',
+          tu:'Sì, e vanno contate. Il confronto giusto e con quello che c\'era prima e dopo: guerra dei Trent\'anni, successione spagnola, sette anni, guerre napoleoniche — un conflitto generale ogni due generazioni. Poi il Novecento. In mezzo, un secolo diverso. È la differenza di scala che va spiegata.'},
+         {loro:'«Sarà stato un caso.»',
+          tu:'Può darsi, ed e un\'ipotesi seria che va tenuta. Alla fine dell\'ora avremo elementi per valutarla: se troviamo un meccanismo che spiega perche non ci si faceva la guerra, il caso diventa meno probabile. Se non lo troviamo, resta la tua ipotesi.'}
+       ]},
+
+      {minuti:'8–17', et:'La fonte',
+       schermo:'Il documento piu famoso\ndi quel sistema.\n\nSanta Alleanza, settembre 1815.\nLo firmano lo zar di Russia,\nl\'imperatore d\'Austria\ne il re di Prussia.\n\nDichiarano di voler prendere\ncome unica regola,\nsia nel governo dei propri Stati\nsia nei rapporti reciproci,\ni precetti della religione cristiana:\ngiustizia, carita, pace;\n\ndi considerarsi fra loro\ncome fratelli,\ne di comportarsi verso i propri sudditi\ncome padri di famiglia;\n\ne di ritenersi tutti membri\ndi un\'unica nazione cristiana,\ndi cui unico vero sovrano\ne Dio.\n\nTre domande.\nChi lo ha scritto, e perche cosi?\nChe cosa ammette senza volerlo?\nChe cosa non dice?',
+       testo:{fonte:'Atto della Santa Alleanza, Parigi, 26 settembre 1815',
+              glossa:'Il testo fu voluto dallo zar Alessandro I, in una fase di forte religiosita personale. Metternich lo giudicò innocuo e lo lasciò passare dopo averne attenuato il linguaggio; il ministro britannico Castlereagh lo definì un pezzo di sublime misticismo e insensatezza, e l\'Inghilterra non lo sottoscrisse. Non conteneva alcun obbligo concreto.'},
+       parlato:'Fai lavorare in coppia, cinque minuti, poi raccogli.\n\nSulla prima: lo scrivono tre sovrani, in un linguaggio religioso e non giuridico, ed e voluto da uno solo di loro — lo zar — mentre gli altri lo accettano per non contrariarlo. Fai notare che un documento puo essere firmato da tutti e voluto da uno.\n\nSulla seconda: ammette, chiamando i sudditi figli e i sovrani padri, che il rapporto non e contrattuale. Un padre non risponde ai figli e non e revocabile. Dopo venticinque anni di sovranita popolare, quella metafora e una presa di posizione precisa.\n\nSulla terza, che e la piu importante: non dice nulla di concreto. Nessun impegno militare, nessuna procedura, nessuna sanzione. Non e un trattato, e una dichiarazione di intenzioni.\n\nE allora la domanda che apre il blocco seguente: se questo documento non obbliga a niente, che cosa faceva funzionare quel sistema?',
+       seDicono:[
+         {loro:'«Sembra una cosa da bigotti.»',
+          tu:'Castlereagh la pensava esattamente cosi e lo scrisse. Ma attenzione a liquidarlo: il linguaggio religioso serviva a fondare la legittimita dei troni su qualcosa che nessuna assemblea potesse discutere. È retorica, e la retorica in politica fa un lavoro preciso.'},
+         {loro:'«Perche l\'Inghilterra non firma?»',
+          tu:'Perche aveva un parlamento, e un re che si dichiarasse padre dei sudditi per volonta divina era difficile da far digerire a Londra. E perche gli inglesi non volevano impegnarsi a difendere qualunque trono. Le firme mancanti su un documento dicono spesso piu di quelle presenti.'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'Che cosa faceva funzionare\nquel sistema, davvero.\n\nNon la Santa Alleanza.\n\nUn\'altra cosa, molto piu concreta:\nl\'abitudine a riunirsi.\n\nLe grandi potenze si danno\nappuntamento a intervalli regolari,\nprima per applicare i trattati,\npoi per qualunque cosa succeda.\n\nNasce un\'idea nuova:\nche nessuna potenza\npossa cambiare da sola\nun confine o un regime,\nsenza averne parlato con le altre.\n\nGli storici la chiamano\nconcerto europeo.\n\nNon e un\'organizzazione.\nNon ha una sede,\nne uno statuto,\nne un tribunale.\n\nÈ un\'abitudine.\n\nEd e la prima volta\nche l\'Europa ne ha una.',
+       parlato:'Spiega bene la differenza fra il documento e la pratica: la Santa Alleanza e un testo, il concerto e un comportamento.\n\nPoi il punto: nasce come strumento di repressione. I sovrani si riuniscono per decidere insieme come fermare le rivoluzioni, non per garantire la pace. La pace e un effetto collaterale.\n\nGuidali a vedere il meccanismo, perche e la parte piu istruttiva. Se ti abitui a discutere con gli altri prima di muovere un esercito, cominci a considerare inaccettabile che qualcuno lo faccia senza avvisarti. E se tutti la pensano cosi, muovere un esercito da soli diventa molto costoso — non per un divieto, ma perche ti mette contro tutti gli altri.\n\nDomanda utile: che differenza c\'e fra un\'abitudine e una regola?\n\nRisposta da far emergere: una regola ha bisogno di qualcuno che la applichi, un\'abitudine funziona finche tutti la seguono e non richiede nessun apparato. È piu debole e piu economica, e per questo dura finche non arriva qualcuno che decide di ignorarla.',
+       seDicono:[
+         {loro:'«Quindi bastava che uno rompesse le regole.»',
+          tu:'Esattamente, ed e cio che succede. Bismarck fa tre guerre in sette anni ignorando il concerto, e nessuno riesce a fermarlo. Un sistema fondato sull\'abitudine regge finche nessuno ha interesse a romperla — e quando qualcuno lo fa, non c\'e nessun meccanismo per obbligarlo.'},
+         {loro:'«Perche non hanno fatto un\'organizzazione vera?»',
+          tu:'Perche nessuno voleva sottoporsi a un tribunale. Ci vorranno due guerre mondiali per arrivarci, e anche allora con risultati discussi. Nel 1815 un\'abitudine era tutto quello che sovrani sospettosi erano disposti ad accettare.'}
+       ]},
+
+      {minuti:'28–38', et:'La seconda fonte',
+       schermo:'Il primo documento\nera una dichiarazione di principi.\n\nQuesto e uno strumento operativo,\ndi cinque anni dopo.\n\nTroppau, 1820.\nSono scoppiate rivoluzioni\nin Spagna, a Napoli, in Portogallo.\n\nAustria, Prussia e Russia\nfirmano un protocollo:\n\ngli Stati che abbiano subito\nun mutamento di governo\ndovuto a una rivoluzione,\ne i cui effetti minaccino\naltri Stati,\n\ncessano di far parte\ndell\'alleanza europea;\n\ne se da tali cambiamenti\nderiva un pericolo immediato\nper gli altri Stati,\nle potenze si impegnano\na ricondurli nel seno dell\'alleanza\ncon mezzi pacifici,\no in caso di necessita\ncon le armi.\n\nQuesto obbliga.',
+       testo:{fonte:'Protocollo preliminare del congresso di Troppau, 19 novembre 1820',
+              glossa:'È il documento che trasforma un\'intesa generica in un diritto d\'intervento negli affari interni di altri Stati. Sulla sua base l\'Austria interviene a Napoli e in Piemonte nel 1821, e la Francia in Spagna nel 1823. L\'Inghilterra si dissociò formalmente: non intendeva impegnarsi a garantire qualunque regime contro i propri sudditi.'},
+       parlato:'Metti i due testi uno accanto all\'altro e fai fare il confronto: il primo parla di carita e fraternita e non obbliga a nulla, il secondo prevede l\'uso delle armi ed e scritto in linguaggio giuridico.\n\nPoi la domanda di metodo, che qui e molto concreta: quale dei due documenti bisogna leggere per capire come funzionava davvero il sistema?\n\nIl secondo, evidentemente. E c\'e una regola generale da trarne: quando si vuole sapere che cosa un\'istituzione faccia realmente, si guardano i documenti che stabiliscono procedure e obblighi, non quelli che enunciano valori. I primi vengono citati nei discorsi, i secondi vengono applicati.\n\nPoi fai notare la formula piu abile del protocollo: si parla di ricondurre gli Stati nel seno dell\'alleanza. Non si dice invadere, non si dice reprimere. Si usa il linguaggio del ritorno in famiglia per descrivere l\'invio di un esercito.\n\nDomanda finale del blocco: perche l\'Inghilterra si dissocia?\n\nPerche aveva un parlamento e non voleva impegnarsi a difendere ogni trono contro ogni popolo. E perche il principio, se applicato, poteva un giorno riguardare lei.',
+       seDicono:[
+         {loro:'«È il contrario della sovranità degli Stati.»',
+          tu:'Sì, ed e la prima volta che qualcuno lo mette per iscritto in Europa. È anche la prima formulazione di un problema che non abbiamo ancora risolto: quando e legittimo intervenire in casa d\'altri? Loro rispondevano: quando c\'e una rivoluzione. Noi diamo altre risposte, e la domanda e la stessa.'},
+         {loro:'«Ma allora era un sistema di oppressione.»',
+          tu:'Verso i movimenti liberali e nazionali, senza dubbio. E quello stesso sistema tiene l\'Europa senza guerre generali per un secolo. Le due cose sono vere insieme, ed e proprio questo che rende difficile la domanda con cui abbiamo aperto.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'Adesso mettete insieme\nle due cose.\n\nI sovrani si riuniscono\nper reprimere le rivoluzioni.\n\nPer farlo devono:\n\nconsultarsi prima di agire;\n\naccettare che nessuno\ndecida da solo;\n\nconsiderare un\'aggressione\nqualunque mossa unilaterale;\n\ne rinunciare, ciascuno,\na prendersi vantaggi\napprofittando delle crisi altrui.\n\nQueste sono esattamente\nle regole che impediscono\na un continente\ndi finire in guerra.\n\nSono nate per soffocare\nla liberta.\n\nHanno prodotto\nil secolo piu pacifico\nche l\'Europa avesse mai avuto.\n\nE il sistema si rompe\nquando qualcuno smette\ndi rispettarlo:\nBismarck fa tre guerre\nin sette anni\ne fonda un impero.',
+       parlato:'Costruisci il rovesciamento passo per passo, elencando le condizioni della repressione e facendo notare a loro che sono anche le condizioni della pace.\n\nPoi la formulazione centrale: uno strumento nato per un fine ne ha realizzato un altro, che nessuno aveva messo al primo posto. Non e ironia — e il modo in cui funzionano le istituzioni: producono comportamenti, e i comportamenti hanno effetti oltre le intenzioni.\n\nPoi la fine del sistema, che va raccontata perche conferma il meccanismo. Fra il 1864 e il 1871 la Prussia di Bismarck fa tre guerre — contro la Danimarca, contro l\'Austria, contro la Francia — e ogni volta agisce da sola, senza concertare niente. Nessuno riesce a fermarlo, perche il concerto non aveva strumenti: era un\'abitudine, e le abitudini non arrestano nessuno.\n\nE aggiungi l\'ultima cosa, che non va risparmiata alla classe.\n\nQuella pace era pace fra europei. Negli stessi novantanove anni l\'Europa conduce guerre quasi ininterrotte in Africa e in Asia, conquista continenti interi, e proprio il fatto di non litigare in casa le rende disponibili le risorse per farlo. Il concerto europeo regolava i rapporti fra chi sedeva al tavolo.\n\nChi non era al tavolo non godeva di nessuna pace.',
+       seDicono:[
+         {loro:'«Allora era un bene o un male?»',
+          tu:'È la domanda dell\'ora e non ha una risposta unica. Ha represso i movimenti nazionali e liberali per una generazione, e ha impedito che l\'Europa si distruggesse come aveva fatto per due secoli e come tornera a fare nel 1914. Chiedersi quale delle due cose pesi di piu significa chiedersi per chi.'},
+         {loro:'«Se era solo un\'abitudine, non contava molto.»',
+          tu:'Le abitudini contano moltissimo finche durano, e non costano niente. Il loro difetto e che non hanno difese: non c\'e nessuno da chiamare quando qualcuno smette. Cent\'anni sono comunque un risultato che nessun trattato scritto aveva mai ottenuto prima.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'Torniamo alla domanda.\n\nUn\'istituzione si giudica\ndai suoi scopi\no dai suoi effetti?\n\nGli scopi di Vienna:\nrimettere i re legittimi,\nfermare le rivoluzioni,\ncancellare l\'idea di nazione.\nFalliti tutti e tre.\n\nGli effetti:\nnovantanove anni\nsenza guerre generali europee,\ne un\'abitudine alla trattativa\nche nessuno aveva mai avuto.\n\nE un terzo elemento,\nche non e ne scopo ne effetto\nvoluto:\n\nquella pace valeva\nsolo dentro il continente.\n\nUltima domanda,\ne non riguarda il 1815:\n\nquando qualcosa funziona,\nchiedetevi sempre\nper chi.',
+       parlato:'Riprendi le tre colonne — scopi, effetti, esclusi — e falle enunciare a loro.\n\nPoi il criterio di metodo, che e la cosa da portare a casa: giudicare un\'istituzione solo dai suoi scopi dichiarati significa fidarsi di quello che ha detto di se stessa; giudicarla solo dagli effetti significa attribuirle meriti che nessuno aveva cercato. Servono tutti e due, e serve la terza domanda: chi era dentro e chi era fuori.\n\nPoi il bilancio storico, tenuto onesto. Il sistema di Vienna ha represso movimenti che chiedevano cose che oggi consideriamo ovvie, e ha dato all\'Europa il secolo piu tranquillo della sua storia. Non serve sceglierne una: serve saperle dire entrambe, e sapere a chi e costata quale.\n\nChiudi con quello che apre il seguito: le due idee che Vienna voleva cancellare — la nazione e la sovranita popolare — non solo sopravvivono, ma nella seconda meta del secolo diventano il modo normale di fare politica in Europa. E chi le realizzera non saranno i rivoluzionari del 1848: saranno i governi, con gli eserciti. La prossima volta vediamo come.',
+       seDicono:[
+         {loro:'«Allora chi valuta le cose sbaglia sempre?»',
+          tu:'No: sbaglia chi valuta con un criterio solo. Le tre domande — che cosa voleva, che cosa ha prodotto, chi era escluso — bastano quasi sempre a evitare i giudizi peggiori. Non danno una risposta netta, e vi impediscono di darne una falsa.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'Lo sconfitto al tavolo',
+       corpo:'Talleyrand arriva a Vienna come rappresentante della Francia sconfitta, esclusa dalle decisioni principali. Sostiene che, essendo tornati i Borbone, la Francia legittima non è responsabile di ciò che aveva fatto Napoleone, e che il principio di legittimità — proclamato dai vincitori — vale anche per lei.\n\nApprofitta poi della rottura fra gli alleati sulla Sassonia e sulla Polonia: nel gennaio 1815 firma un\'alleanza segreta con Austria e Inghilterra contro Prussia e Russia.\n\nLa Francia esce dal congresso senza perdite territoriali rilevanti e reintegrata fra le grandi potenze.',
+       chiedi:'Uno sconfitto usa contro i vincitori il principio che i vincitori si sono dati. Che cosa rende possibile una mossa del genere? E che rischio corre chi fonda la propria vittoria su un principio generale?'},
+      {titolo:'Concessa dall\'alto',
+       corpo:'Nel 1814 Luigi XVIII concede alla Francia una Carta costituzionale che garantisce l\'uguaglianza davanti alla legge, la libertà di culto, l\'inviolabilità delle proprietà vendute durante la rivoluzione, e istituisce due camere.\n\nIl testo è però presentato come un dono del sovrano, «nel diciannovesimo anno del nostro regno» — computando cioè gli anni trascorsi in esilio, come se la rivoluzione non fosse mai avvenuta.\n\nI liberali chiedevano una costituzione votata da un\'assemblea; ottennero un testo simile nei contenuti, opposto nel fondamento.',
+       chiedi:'Stessi diritti, origine diversa: cambia qualcosa? E in che cosa consiste concretamente la differenza fra un diritto concesso e un diritto conquistato, il giorno in cui qualcuno vuole toglierlo?'},
+      {titolo:'Cercare l\'anima di un popolo',
+       corpo:'Nei primi decenni dell\'Ottocento studiosi di tutta Europa raccolgono fiabe, canti, proverbi e leggende contadine: i fratelli Grimm in Germania, e molti altri in Finlandia, Serbia, Boemia, Italia.\n\nLo scopo dichiarato è conservare ciò che si sta perdendo. Lo scopo politico è dimostrare che esiste un popolo con una propria anima, una lingua e una tradizione — e quindi con il diritto di essere una nazione.\n\nMolte di quelle raccolte furono riscritte, ripulite e talvolta integrate dai raccoglitori.',
+       chiedi:'Un materiale raccolto per dimostrare una tesi, e in parte modificato mentre lo si raccoglie. Che valore ha come fonte? E che cosa dice sul rapporto fra la ricerca di un passato e il bisogno politico di averlo?'}
+    ],
+    testi:[
+      {fonte:'Benjamin Constant, La libertà degli antichi paragonata a quella dei moderni, 1819',
+       corpo:'Constant sostiene che gli antichi intendevano per libertà la partecipazione diretta al governo della città, accettando in cambio una totale sottomissione dell\'individuo all\'autorità collettiva; mentre i moderni chiedono garanzie per la propria vita privata, per le opinioni, per la proprietà, e la partecipazione politica serve loro soprattutto a difendere quelle garanzie.',
+       glossa:'È il testo fondativo del liberalismo europeo e contiene un avvertimento: chi pretende di imporre ai moderni la libertà degli antichi finisce per opprimerli in nome della libertà. Constant scriveva pensando al Terrore, e il passo va letto insieme al fatto che lo stesso autore accettava il suffragio censitario.'},
+      {fonte:'Atto finale del Congresso di Vienna, 9 giugno 1815 — le disposizioni territoriali',
+       corpo:'L\'atto ridefinisce i confini di gran parte dell\'Europa: assegna il Belgio all\'Olanda, il Lombardo-Veneto all\'Austria, gran parte della Polonia alla Russia, la Renania alla Prussia, e stabilisce compensi per le potenze che avevano ceduto territori.',
+       glossa:'Le popolazioni non furono consultate in nessun caso, e diversi di quei confini univano gruppi con lingue e storie diverse. È il motivo per cui l\'assetto di Vienna alimentò proprio il principio che voleva escludere: ogni confine tracciato ignorando la nazionalità diventava un argomento a favore della nazionalità.'},
+      {fonte:'Giuseppe Mazzini, Istruzione generale per gli affratellati nella Giovine Italia, 1831',
+       corpo:'Il documento definisce la Giovine Italia una fratellanza di italiani credenti in una legge di progresso e di dovere, indica come fini l\'indipendenza, l\'unità e la libertà, e stabilisce che i mezzi siano l\'educazione e l\'insurrezione, procedenti concordemente.',
+       glossa:'La formula «educazione e insurrezione» segna la distanza dalle società segrete precedenti: non basta il colpo di mano di pochi, serve un popolo convinto. È anche il punto in cui il nazionalismo italiano si costruisce come dovere morale prima che come rivendicazione di interessi.'}
+    ],
+    compito:'Mezza pagina. Scegliete un\'istituzione o una regola che conoscete — un regolamento scolastico, un organismo internazionale, una norma sportiva. Rispondete a tre domande separate: quale scopo dichiarava di avere, quali effetti ha prodotto davvero (compresi quelli non previsti), e chi resta fuori dal suo raggio d\'azione. Poi dite quale delle tre risposte vi ha sorpreso di più.',
+    fonti:[
+      'Atto della Santa Alleanza (1815); Protocollo di Troppau (1820); Atto finale del Congresso di Vienna (1815)',
+      'B. Constant, De la liberté des anciens comparée à celle des modernes (1819)',
+      'G. Mazzini, Istruzione generale per gli affratellati nella Giovine Italia (1831)',
+      'H. Kissinger, Diplomazia della restaurazione; P. Schroeder, The Transformation of European Politics 1763-1848',
+      'A. Sked, Metternich e l\'Austria; G. de Ruggiero, Storia del liberalismo europeo',
+      'E. Hobsbawm, L\'età della rivoluzione'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',
