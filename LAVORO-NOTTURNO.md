@@ -187,7 +187,7 @@ Si va in ordine di programma. Restano:
 - [x] Filosofia moderna · 16 — Vico
 - [x] Filosofia moderna · 17 — I caratteri dell'Illuminismo
 - [x] Filosofia moderna · 18 — Rousseau
-- [ ] Filosofia moderna · 19 — Kant: il progetto filosofico
+- [x] Filosofia moderna · 19 — Kant: il progetto filosofico
 - [ ] Filosofia moderna · 20 — Kant: la Critica della ragion pura
 - [ ] Filosofia moderna · 21 — Kant: la Critica della ragion pratica
 - [ ] Filosofia moderna · 22 — Kant: la Critica del Giudizio

@@ -11955,6 +11955,237 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Filosofia moderna · 19 — Kant: il progetto filosofico': {
+  mappa: {
+    n:'Immanuel Kant · il progetto', d:'che cosa puo la ragione, e come si fa a saperlo',
+    f:[
+      {r:'comincia da', n:'Una vita senza avvenimenti', d:'e la sua regolarita non e un aneddoto: e il modo in cui lavora',
+       f:[
+         {r:'nasce e muore a', n:'Konigsberg', d:'1724 e 1804: non si allontana mai piu di poche decine di chilometri da casa'},
+         {r:'in una famiglia di', n:'Artigiani pietisti', d:'il padre sellaio; una religione dell\'interiorita e del dovere che gli resta addosso anche quando ne lascia le pratiche'},
+         {r:'per quindici anni fa il', n:'Precettore privato', d:'poi il docente pagato a lezione dagli studenti, senza stipendio fisso'},
+         {r:'ottiene la cattedra a', n:'Quarantasei anni', d:'dopo aver rifiutato cattedre di altre materie pur di aspettare la propria',
+          f:[{piu:true, r:'e insegna per quarant\'anni', n:'Geografia fisica', d:'descrivendo paesi, fiumi e popoli che non ha mai visto'}]},
+         {r:'ha una giornata', n:'Regolatissima', d:'e la storia dei vicini che regolano l\'orologio sulla sua passeggiata nasce da un fondo di verita',
+          f:[{piu:true, r:'interrotta una volta sola da', n:'L\'Emilio di Rousseau', d:'per finire di leggerlo salta la passeggiata: e l\'unico strappo di cui si abbia notizia'}]},
+         {r:'e pubblica il suo libro maggiore a', n:'Cinquantasette anni', d:'nel 1781, dopo un decennio quasi muto'},
+         {r:'preceduto da', n:'Undici anni di silenzio', d:'in cui non pubblica quasi nulla perche gli manca il pezzo decisivo',
+          f:[{piu:true, r:'silenzio che i colleghi scambiano per', n:'Fine della carriera', d:'un professore che non stampa piu; e invece sta costruendo l\'impianto'}]}
+       ]},
+
+      {r:'ha alle spalle un lungo', n:'Periodo precritico', d:'quarant\'anni di scienza newtoniana prima della svolta',
+       f:[
+         {r:'parte da', n:'Newton', d:'la fisica funziona benissimo, e nessuno sa dire per quale diritto funzioni'},
+         {r:'nel 1755 propone la', n:'Storia naturale del cielo', d:'il sistema solare nato da una nube che ruota e si condensa, senza interventi',
+          f:[{piu:true, r:'ipotesi ripresa poi da', n:'Laplace', d:'ed e ancora oggi la cornice generale di come si spiega la nascita dei sistemi planetari'}]},
+         {r:'studia i', n:'Terremoti', d:'dopo Lisbona: cause naturali, e l\'avvertenza di non ricostruire dove si e gia visto il pericolo'},
+         {r:'e discute la', n:'Metafisica di scuola', d:'quella di Wolff e Leibniz, che pretende di dedurre il mondo da definizioni',
+          f:[{r:'mostrando che l\'esistenza', n:'Non e un predicato', d:'cento talleri pensati e cento talleri in tasca hanno lo stesso concetto: dire che una cosa esiste non aggiunge nulla al concetto'}]},
+         {r:'nel 1770 scrive la', n:'Dissertazione', d:'e comincia a separare cio che viene dai sensi da cio che viene dall\'intelletto'}
+       ]},
+
+      {r:'poi arriva', n:'Il risveglio', d:'un filosofo scozzese gli toglie il terreno da sotto i piedi',
+       f:[
+         {r:'legge', n:'David Hume', d:'e dira di essere stato svegliato dal proprio sonno dogmatico'},
+         {r:'che osserva come della', n:'Causa', d:'non si abbia mai esperienza: si vedono due fatti uno dopo l\'altro, mai il legame fra loro',
+          f:[{r:'per cui il nesso sarebbe soltanto', n:'Abitudine', d:'l\'attesa prodotta dall\'aver visto molte volte la stessa successione'}]},
+         {r:'con la conseguenza che la scienza', n:'Perde il fondamento', d:'se causa e solo abitudine, la fisica di Newton e il riassunto di cio che finora e andato cosi',
+          f:[{piu:true, r:'e cade con essa l\'', n:'Induzione', d:'nessun numero di casi osservati garantisce il caso prossimo: il problema restera aperto fino a Popper'}]},
+         {r:'Kant accetta la', n:'Diagnosi', d:'ha ragione: dall\'esperienza il nesso necessario non si ricava'},
+         {r:'e rifiuta la', n:'Conclusione', d:'perche la necessita nella scienza c\'e davvero, e va spiegata invece che negata'}
+       ]},
+
+      {r:'da cui nasce', n:'La domanda che tiene tutto', d:'formulata in modo tecnico, con dentro un problema semplicissimo',
+       f:[
+         {r:'divide i giudizi in', n:'Analitici', d:'il predicato e gia dentro il soggetto: sono certi e non aggiungono nulla'},
+         {r:'e in', n:'Sintetici', d:'il predicato aggiunge qualcosa: informano, e di solito costano un\'esperienza'},
+         {r:'poi incrocia la divisione con', n:'A priori e a posteriori', d:'cio che si sa prima di ogni esperienza e cio che si sa solo dopo averla fatta'},
+         {r:'ottenendo una casella che sembrava vuota, i giudizi', n:'Sintetici a priori', d:'aggiungono qualcosa e valgono prima di ogni verifica',
+          f:[
+            {r:'come', n:'Sette piu cinque fa dodici', d:'nel concetto di sette e in quello di cinque il dodici non c\'e ancora: bisogna costruirlo'},
+            {r:'o come', n:'Ogni evento ha una causa', d:'nessuna esperienza puo dimostrarlo, e ogni scienza lo usa in continuazione'}
+          ]},
+         {r:'da cui la domanda di tutta l\'opera', n:'Come sono possibili', d:'non se esistano — quello e dato — ma a quali condizioni possano esserci',
+          f:[{piu:true, r:'perche il loro uso e trattato come un', n:'Dato di partenza', d:'la matematica e la fisica esistono e funzionano: la domanda e che cosa lo renda possibile'}]}
+       ]},
+
+      {r:'la risposta e una', n:'Rivoluzione copernicana', d:'un rovesciamento del rapporto fra chi conosce e cio che e conosciuto',
+       f:[
+         {r:'finora si e supposto che la conoscenza debba', n:'Regolarsi sugli oggetti', d:'e cosi nulla di universale si puo sapere in anticipo'},
+         {r:'Kant prova a rovesciare e fa', n:'Regolare gli oggetti sulla conoscenza', d:'sono le condizioni del nostro conoscere a dare forma a cio che ci appare'},
+         {r:'come Copernico, che invece di far girare il cielo fa girare', n:'L\'osservatore', d:'l\'analogia e sua, e riguarda il metodo, non il contenuto'},
+         {r:'per cui la mente non e un', n:'Foglio bianco', d:'ma un apparato con una struttura propria, che riceve e insieme ordina',
+          f:[
+            {r:'con forme che non si possono', n:'Togliere', d:'non sono opinioni da correggere: sono il modo in cui riceviamo qualunque cosa'},
+            {piu:true, r:'per cui l\'universalita non viene dal mondo ma dal', n:'Soggetto', d:'vale per tutti gli esseri costruiti come noi, e non dice come siano le cose per conto loro'}
+          ]},
+         {r:'ne segue la distinzione fra', n:'Fenomeno e cosa in se', d:'cio che appare alle nostre condizioni e cio che sarebbe indipendentemente da esse'}
+       ]},
+
+      {r:'e uno strumento nuovo, la', n:'Critica', d:'non un elenco di verita, ma un esame dello strumento con cui si cercano',
+       f:[
+         {r:'non e', n:'Un sistema di dottrine', d:'non dice come sia fatto il mondo: dice a quali condizioni se ne possa dire qualcosa'},
+         {r:'ma un\'indagine sui', n:'Limiti e sulle condizioni', d:'fin dove la ragione arriva avendone diritto, e dove pretende senza averlo'},
+         {r:'e istituisce un', n:'Tribunale della ragione', d:'in cui la ragione giudica se stessa, perche non c\'e istanza esterna a cui appellarsi',
+          f:[{piu:true, r:'con l\'obiezione evidente di essere insieme', n:'Giudice e imputato', d:'gliela fanno subito; risponde che l\'alternativa sarebbe non esaminarsi affatto'}]},
+         {r:'nasce dal fatto che la metafisica non ha mai raggiunto', n:'Un accordo', d:'la matematica e la fisica avanzano, la metafisica ricomincia da capo a ogni generazione'},
+         {r:'quindi prima di rispondere ancora conviene chiedersi se le domande siano', n:'Ben poste', d:'e di alcune si scoprira che non lo erano'}
+       ]},
+
+      {r:'il tutto sta dentro', n:'Quattro domande', d:'il programma che si dara da fare in vent\'anni',
+       f:[
+         {r:'che cosa posso', n:'Sapere', d:'e la Critica della ragion pura, 1781'},
+         {r:'che cosa devo', n:'Fare', d:'e la Critica della ragion pratica, 1788'},
+         {r:'che cosa posso', n:'Sperare', d:'e gli scritti sulla religione, sul diritto e sulla storia',
+          f:[{piu:true, r:'e in mezzo si aggiunge la', n:'Critica del Giudizio', d:'1790: il bello e il vivente, cio che non rientra ne nella scienza ne nel dovere'}]},
+         {r:'e le tre insieme fanno', n:'Che cos\'e l\'uomo', d:'la domanda dell\'antropologia, che secondo lui contiene le altre'},
+         {r:'la prima Critica prepara le altre perche', n:'Limitare il sapere', d:'lascia libero lo spazio in cui la liberta puo essere pensata senza contraddire la scienza'}
+       ]},
+
+      {r:'e lo stesso programma vale per la', n:'Uscita dalla minorita', d:'applicato non alla ragione dei filosofi ma a quella di tutti',
+       f:[
+         {r:'nel 1784 risponde alla domanda', n:'Che cos\'e l\'Illuminismo', d:'poche pagine su un giornale, e diventano la definizione piu citata del secolo'},
+         {r:'e l\'uscita dallo stato di', n:'Minorita', d:'l\'incapacita di servirsi della propria intelligenza senza la guida di un altro',
+          f:[{r:'colpevole quando manca non l\'intelligenza ma la', n:'Decisione', d:'ed e comodo restare minorenni: e piu facile pagare qualcuno che pensi al posto tuo'}]},
+         {r:'da cui il motto', n:'Sapere aude', d:'abbi il coraggio di servirti della tua intelligenza'},
+         {r:'con la distinzione fra uso pubblico e', n:'Uso privato della ragione', d:'il funzionario esegue nel proprio ufficio e discute liberamente come studioso davanti al pubblico',
+          f:[{piu:true, r:'distinzione che oggi suona', n:'Rovesciata', d:'chiama pubblico cio che noi diremmo privato e viceversa: va tradotta prima di essere giudicata'}]},
+         {r:'e Kant stesso subisce una', n:'Censura', d:'nel 1794 il re gli ordina per iscritto di non scrivere piu di religione',
+          f:[{piu:true, r:'a cui risponde promettendo di tacere', n:'Come suddito di Sua Maesta', d:'formula esatta: obbliga finche quel re e vivo, e alla sua morte riprende'}]}
+       ]}
+    ],
+    incroci:[
+      {da:'David Hume', a:'Come sono possibili', r:'trasforma il problema nella domanda',
+       perche:'Hume aveva mostrato che dall\'esperienza non si ricava nessuna necessita. Kant non risponde negando la difficolta: la accetta e cambia la domanda. Non piu «da dove ricaviamo il nesso», ma «a quali condizioni possiamo averlo pur non ricavandolo». Tutta la Critica nasce da questo spostamento.'},
+      {da:'Undici anni di silenzio', a:'Cinquantasette anni', r:'spiegano la pubblicazione a',
+       perche:'Il libro che rifonda la filosofia moderna esce da un uomo che per un decennio i colleghi avevano dato per finito. È un dato che vale la pena tenere davanti agli studenti: il tempo in cui non si produce niente di visibile non e necessariamente tempo perso, e quasi nessuna istituzione oggi lo concederebbe.'},
+      {da:'Regolare gli oggetti sulla conoscenza', a:'Perde il fondamento', r:'e la mossa che risolve il fatto che la scienza',
+       perche:'Se le forme della conoscenza appartengono a chi conosce, allora la necessita che troviamo nella natura non e stata pescata dall\'esperienza: e la struttura con cui l\'abbiamo ricevuta. Hume aveva ragione a dire che non la si trova fuori; Kant risponde che e dentro, e che per questo vale per ogni esperienza possibile.'},
+      {da:'Fenomeno e cosa in se', a:'Limitare il sapere', r:'e la distinzione che permette di',
+       perche:'La distinzione ha un costo enorme — non conosciamo le cose come sono — e proprio quel costo diventa la risorsa delle due Critiche successive. Se la scienza vale per i fenomeni, il suo determinismo non decide sulla liberta: resta un margine in cui l\'agire morale puo essere pensato senza contraddire la fisica.'},
+      {da:'Non e un predicato', a:'Ben poste', r:'e il primo esempio di domanda non',
+       perche:'La confutazione della prova ontologica di Dio e del 1763, quasi vent\'anni prima della Critica, ed e gia il metodo critico in miniatura: invece di rispondere alla domanda, si mostra che era costruita male. Da un\'analisi di che cosa significhi «esistere» si ricava che l\'intera questione non poteva essere decisa cosi.'},
+      {da:'L\'Emilio di Rousseau', a:'Che cos\'e l\'uomo', r:'sposta il centro del suo lavoro verso',
+       perche:'Kant scrisse di aver disprezzato per un certo tempo chi non sa nulla, e che Rousseau lo corresse insegnandogli a onorare gli uomini. È l\'unico autore di cui teneva un ritratto nello studio. La dignita che nella Critica della ragion pratica appartiene a chiunque, colto o no, viene da li.'},
+      {da:'Sette piu cinque fa dodici', a:'Togliere', r:'e l\'esempio piu chiaro di cio che non si puo',
+       perche:'Per arrivare a dodici bisogna contare, cioe mettere una cosa dopo l\'altra: serve il tempo. Non e un fatto psicologico su come impariamo i numeri da bambini, ma la tesi che una forma nostra sia la condizione perche quella somma valga sempre. La matematica non descrive un mondo separato: descrive cio che si puo costruire nelle nostre forme.'},
+      {da:'Minorita', a:'Tribunale della ragione', r:'e la stessa operazione portata fuori dal',
+       perche:'Nel libro la ragione smette di accettare dogmi e chiede a ogni pretesa i suoi titoli; nell\'articolo del 1784 fa lo stesso il cittadino che smette di far pensare gli altri al proprio posto. La critica non e un esercizio accademico: e la forma teorica di una liberta che si esercita per strada.'},
+      {da:'Censura', a:'Sapere aude', r:'mette alla prova il suo stesso',
+       perche:'L\'uomo che ha scritto «abbi il coraggio di servirti della tua intelligenza» riceve un ordine dal re e obbedisce, per nove anni. Si puo leggere come coerenza — aveva distinto l\'obbedienza del funzionario dalla liberta dello studioso — o come un limite. Vale la pena tenerle aperte entrambe invece di sceglierne una.'},
+      {da:'Artigiani pietisti', a:'Fare', r:'lasciano un\'impronta nella domanda',
+       perche:'Il pietismo insegna che cio che conta non e il gesto esteriore ma l\'intenzione con cui lo si compie, e che il dovere si sente dentro. Kant abbandona la pratica religiosa — non entrava piu in chiesa — e conserva quella struttura: la morale non si misura dai risultati ma da cio per cui si agisce.'},
+      {da:'Newton', a:'Ogni evento ha una causa', r:'e la scienza che presuppone il principio che',
+       perche:'La fisica non verifica quel principio: lo usa per cercare le cause, e se un fenomeno sembra non averne si cerca meglio, non si conclude che sia senza causa. È il segno che non e un risultato dell\'esperienza ma una regola con cui l\'esperienza viene organizzata — che e esattamente la tesi di Kant.'},
+      {da:'Geografia fisica', a:'L\'osservatore', r:'e un caso concreto di che cosa significhi essere',
+       perche:'Per quarant\'anni descrisse cascate e popoli senza essersi mai mosso, mettendo insieme relazioni di viaggio, carte, resoconti. Conosceva il mondo attraverso un apparato di mediazioni, mai direttamente — che e poi la tesi della Critica applicata alla sua giornata. E il limite di quell\'apparato si vede: alcune pagine di quel corso ripetono i pregiudizi delle fonti che leggeva.'},
+      {da:'Induzione', a:'Diagnosi', r:'resta aperta anche dopo che Kant ha accettato la',
+       perche:'Kant fonda il principio generale di causalita, non le singole leggi: che ogni evento abbia una causa e garantito, quale sia la causa di questo evento resta affidato all\'esperienza. Il problema di Hume viene spostato, non chiuso, e riapparira nel Novecento con Popper e con l\'intero dibattito sul metodo scientifico.'}
+    ]
+  },
+  provocazione: {
+    titolo:'Senza andare a guardare',
+    durata:'55 minuti',
+    domandaMadre:'Si puo sapere qualcosa di nuovo sul mondo senza averlo visto?',
+    perche:'È la domanda con cui Kant apre la Critica della ragion pura, tradotta in una forma che una classe puo maneggiare. La lezione non spiega la dottrina — quella viene dopo — ma fa nascere il problema: ci sono affermazioni che diamo per certe su qualunque cosa esista, e che nessuna esperienza ha mai verificato ne potrebbe verificare. Se non vengono dal mondo, da dove vengono? La risposta di Kant e il rovesciamento piu grande della filosofia moderna, e la classe deve arrivarci sentendo prima il vuoto che lo rende necessario.',
+    occorrente:'Niente.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'Quattro frasi.\n\nUno.\nTutti gli scapoli\nnon sono sposati.\n\nDue.\nIn questa aula\nci sono le finestre.\n\nTre.\nSette piu cinque fa dodici.\n\nQuattro.\nOgni cosa che accade\nha una causa.\n\nLa domanda e sempre la stessa,\nper tutte e quattro:\n\nper saperlo,\nsiete dovuti andare a guardare?',
+       parlato:'Fai la domanda una frase alla volta e raccogli le risposte, senza commentare.\n\nSulla prima si mettono d\'accordo subito: non serve guardare, basta sapere che cosa significa la parola scapolo. La frase non dice niente di nuovo, e certissima.\n\nSulla seconda pure: bisogna guardare, e infatti dice qualcosa. Se fossimo in un\'altra stanza potrebbe essere falsa.\n\nSulla terza cominciano i problemi. Nessuno e andato a verificare che sette mele piu cinque mele facciano dodici mele, eppure siamo sicuri che valga anche su Marte. E non e come la prima: nel concetto di sette e in quello di cinque il dodici non c\'e — se ci fosse, i bambini non farebbero fatica a impararlo.\n\nSulla quarta si spaccano quasi sempre. E li ti fermi.\n\nNon dare ancora nessuna risposta. Metti in chiaro solo che due caselle sono comode e due no, e che l\'ora serve a capire che cosa sta nelle due scomode.',
+       seDicono:[
+         {loro:'«Sette più cinque lo abbiamo imparato contando le dita.»',
+          tu:'Verissimo, e la domanda non e come lo abbiamo imparato: e perche siamo sicuri che valga anche dove non abbiamo contato. Nessuno ha verificato tutte le somme possibili, e nessuno se lo aspetta. Come si chiama una cosa che vale per tutti i casi quando i casi controllati sono pochissimi?'},
+         {loro:'«La quarta è ovvia: tutto ha una causa.»',
+          tu:'Tienila per ovvia, per ora. Poi ti chiedo una cosa sola: chi l\'ha controllato? Per essere sicuri che ogni cosa abbia una causa bisognerebbe aver esaminato tutte le cose che accadono, comprese quelle che accadranno. Nessuno l\'ha fatto. E allora da dove viene questa certezza?'}
+       ]},
+
+      {minuti:'8–17', et:'Lo schieramento',
+       schermo:'Tutto quello che sappiamo\ndel mondo:',
+       opzioni:['viene dall\'esperienza: prima o poi qualcuno e andato a guardare', 'in parte no: certe cose le sappiamo prima, e valgono comunque'],
+       parlato:'Fai schierare e conta. La prima posizione di solito prende la maggioranza, e ha alle spalle tre secoli di empirismo inglese: vale la pena nominarlo.\n\nPoi mettila alla prova con la quarta frase. Se tutto viene dall\'esperienza, la certezza che ogni evento abbia una causa e un riassunto dei casi visti finora. Domanda: quindi potrebbe saltare domani?\n\nQui si irrigidiscono, e giustamente: nessuno crede davvero che domani le cose possano cominciare ad accadere senza causa. Ma dall\'esperienza quella garanzia non viene, e chi sta nella prima posizione deve ammetterlo.\n\nPoi metti alla prova la seconda, per non lasciarla facile. Se certe cose le sappiamo prima di guardare, chi ce le ha messe? E come mai queste cose che sappiamo prima si accordano cosi bene con quello che poi troviamo?\n\nQui la classe di solito si blocca, ed e il momento buono. Dichiara che il blocco e reale, che ci sono voluti circa quarant\'anni a un uomo per uscirne, e che quell\'uomo per undici anni non pubblico niente mentre ci pensava.',
+       seDicono:[
+         {loro:'«La causa la vediamo: la palla colpisce l\'altra e quella parte.»',
+          tu:'Guarda meglio che cosa vedi. Vedi una palla che si muove, un contatto, un\'altra palla che si muove. Vedi due fatti in fila. Il «perche» non lo vedi: lo aggiungi tu. È l\'osservazione di Hume, e Kant dira che ha ragione — solo che ne trarra una conclusione opposta.'},
+         {loro:'«Ce lo hanno insegnato, per questo lo sappiamo prima.»',
+          tu:'Sposta il problema di una generazione: come lo sapevano loro? E soprattutto: l\'abitudine spiega perche ce lo aspettiamo, non perche sia vero. Se qualcosa e solo un\'abitudine molto radicata, non ci si puo fondare sopra una scienza — e questo e esattamente il problema che sta per esplodere.'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'1740 circa, Scozia.\n\nUn filosofo osserva\nche della causa\nnon abbiamo mai esperienza.\n\nVediamo una cosa,\npoi un\'altra.\nMai il legame.\n\nQuindi il legame\nnon lo troviamo:\nlo mettiamo noi,\nper abitudine.\n\nSembra una questione\nda specialisti.\n\nNon lo e.\n\nSe ha ragione,\nla fisica di Newton\nnon e la scoperta\ndi come funziona il mondo.\n\nÈ il riassunto\ndi come e andata finora,\ne domani\nnon garantisce niente.\n\nUn professore prussiano\nlegge questa pagina\ne scrive\nche lo ha svegliato.',
+       parlato:'Presenta Hume come una bomba, perche lo e. Poi mostra la posta in gioco, che e la parte che interessa davvero i ragazzi.\n\nSiamo nel secolo che ha appena visto Newton spiegare con tre leggi la caduta dei corpi e il moto dei pianeti. È il risultato intellettuale piu impressionante mai ottenuto. E arriva un filosofo che dimostra, senza errori nel ragionamento, che quel risultato non ha fondamento.\n\nFai sentire l\'imbarazzo. Non e che Newton sbagli i calcoli: e che nessuno sa dire per quale diritto quelle leggi debbano valere anche domani.\n\nOra Kant. Dai i dati biografici, che servono: un uomo che vive nella stessa citta per ottant\'anni, che diventa professore a quarantasei, che ha una giornata cosi regolare che i vicini ci regolano l\'orologio. Non un ribelle: un funzionario dell\'ordine.\n\nE quest\'uomo accetta la diagnosi di Hume — dall\'esperienza il nesso necessario non si ricava, e vero — e rifiuta la conclusione.\n\nPerche? Falli ragionare: perche la necessita nella scienza c\'e. Non e un\'illusione da smontare: e un fatto da spiegare. La matematica funziona, la fisica funziona. La domanda non e se, e come sia possibile.\n\nPoi il silenzio: undici anni senza pubblicare quasi nulla. I colleghi lo davano per finito.',
+       seDicono:[
+         {loro:'«E se Newton fosse solo fortunato?»',
+          tu:'Obiezione seria, e c\'e chi l\'ha sostenuta. Solo che la fortuna dovrebbe essersi ripetuta per ogni ponte costruito, ogni eclissi prevista, ogni sonda arrivata dove doveva. A un certo punto chiamare fortuna una regolarita cosi non spiega niente: sposta soltanto il nome del problema.'},
+         {loro:'«Perché ci ha messo undici anni?»',
+          tu:'Perche il pezzo che gli mancava non era una risposta piu ingegnosa alla domanda: era accorgersi che la domanda andava capovolta. E capovolgere una domanda che tutti fanno nello stesso verso da duemila anni richiede piu tempo che rispondere.'}
+       ]},
+
+      {minuti:'28–38', et:'Il testo',
+       schermo:'Dalla prefazione,\nseconda edizione, 1787.\n\nFinora si e ammesso\nche ogni nostra conoscenza\ndebba regolarsi sugli oggetti.\n\nCon quel presupposto\nogni tentativo\ndi stabilire in anticipo\nqualcosa sugli oggetti\ne sempre fallito.\n\nSi provi allora\na vedere se non si riesca meglio\nsupponendo\nche siano gli oggetti\na doversi regolare\nsulla nostra conoscenza.\n\nÈ lo stesso caso\ndi Copernico:\n\nnon riuscendo a spiegare\ni movimenti del cielo\nfinche faceva girare\ntutte le stelle\nintorno allo spettatore,\n\nprovo a far girare\nlo spettatore\ne a tenere ferme le stelle.',
+       testo:{fonte:'Immanuel Kant, Critica della ragion pura, prefazione alla seconda edizione (1787)',
+              glossa:'È il passo in cui Kant dichiara che cosa sta facendo, e lo fa con un\'analogia di metodo, non di contenuto. Copernico non aveva scoperto un fatto nuovo: aveva cambiato il punto da cui guardare gli stessi fatti, e il disordine era diventato ordine. Kant propone lo stesso spostamento in filosofia: smettere di chiedersi come la mente possa adeguarsi alle cose e chiedersi che cosa la mente metta nelle cose per come ci appaiono. La conseguenza — che non conosciamo le cose come sono in se stesse — non è un incidente della teoria: è il prezzo dichiarato in anticipo.'},
+       parlato:'Leggi il passo lentamente e poi fermati a far capire l\'analogia, perche quasi tutti la prendono al contrario.\n\nCopernico non ha guardato meglio nel cielo. Ha spostato il punto di osservazione: se ammetto che a girare sia chi guarda, i movimenti strani dei pianeti diventano semplici. Non e cambiato il cielo, e cambiato il posto da cui lo si descrive.\n\nOra applica. Domanda alla classe: se le condizioni di cio che conosciamo stanno in noi, che cosa succede alla frase «ogni evento ha una causa»?\n\nGuidali. Diventa vera per forza — non perche il mondo sia gentile, ma perche nulla puo entrare nella nostra esperienza senza passare per quella forma. Come chi porta occhiali colorati che non si possono togliere: tutto quello che vedra sara di quel colore, e non perche il mondo lo sia.\n\nQui arriva sempre l\'obiezione buona, e se non arriva falla tu: allora non vediamo le cose come sono?\n\nEsatto. E Kant lo dice per primo, senza attenuarlo. Conosciamo i fenomeni, cioe le cose come appaiono a esseri costruiti come noi. Le cose in se stesse restano fuori.\n\nLascia che la classe senta la perdita prima di andare avanti. È una rinuncia enorme, e chi non la sente non capira perche il capitolo dopo e cosi importante.',
+       seDicono:[
+         {loro:'«Allora il mondo se lo inventa lui?»',
+          tu:'No, ed e la confusione piu comune. Il materiale arriva da fuori e non lo decidiamo noi: se guardi in quella direzione vedi una porta, non un elefante. Quello che mettiamo noi e la forma — spazio, tempo, causa — non il contenuto. Kant non dice che sogniamo: dice che riceviamo sempre attraverso qualcosa.'},
+         {loro:'«E se ognuno avesse forme diverse?»',
+          tu:'Domanda giusta, e la risposta e il punto piu discusso. Kant sostiene che quelle forme siano le stesse per tutti gli esseri umani: e questo che rende possibile una scienza valida per tutti, non solo per me. Se avesse ragione Hume, la fisica sarebbe un\'abitudine; se le forme fossero private, sarebbe un delirio condiviso.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'Riassumiamo che cosa\nha appena fatto.\n\nHa salvato la scienza.\n\nE ha pagato\nrinunciando a conoscere\nle cose come sono.\n\nSembra una sconfitta.\n\nAdesso guardate\nche cosa scrive lui,\nnella stessa prefazione:\n\nho dovuto\nlimitare il sapere\nper far posto\nalla fede.\n\nNon e una consolazione.\n\nÈ una mossa.\n\nPerche se la scienza\nvale per i fenomeni,\nallora tutto cio\nche la scienza dimostra\n— che ogni cosa ha una causa,\nche niente accade da se —\n\nnon riguarda\ncio che siamo\nquando decidiamo.\n\nLo spazio\nche ha appena chiuso\nda una parte\n\ne lo stesso spazio\nche apre dall\'altra.',
+       parlato:'Fai vedere il rovesciamento, che e la cosa piu difficile e piu bella dell\'ora.\n\nPrima poni il problema nella forma in cui i ragazzi lo sentono davvero. Se ogni evento ha una causa, anche quello che sta succedendo nella vostra testa mentre decidete ha una causa. E quella causa ne ha un\'altra. Domanda: c\'e ancora posto per una scelta?\n\nLascia che ci pensino. È il problema del determinismo e li tocca, perche riguarda la responsabilita: se tutto e causato, perche punire qualcuno?\n\nPoi la risposta di Kant, e falla in modo pulito. Il determinismo vale per i fenomeni, cioe per il mondo come lo conosciamo. Non e dimostrato che valga per cio che siamo indipendentemente da come ci appariamo. Quindi la scienza non puo dimostrare che la liberta esista — ma nemmeno che non esista.\n\nEnuncia il risultato: la limitazione della conoscenza non e un fallimento del progetto, e la sua parte piu produttiva. Aver chiuso una porta e cio che lascia l\'altra socchiusa.\n\nQui puoi nominare il programma intero, e conviene: che cosa posso sapere, che cosa devo fare, che cosa posso sperare. Tre libri in dieci anni, il primo a cinquantasette.\n\nPoi un\'ultima cosa, biografica e utile. Nel 1794 il re gli ordina per iscritto di smettere di scrivere di religione. Kant obbedisce, e lo scrive: «come fedelissimo suddito di Sua Maesta». Il re muore nel 1797, e lui riprende. Chiedi che cosa ne pensano — e lascia la domanda aperta, senza dare il tuo giudizio.',
+       seDicono:[
+         {loro:'«Quindi la libertà non si può dimostrare?»',
+          tu:'No, e per Kant e proprio questa la buona notizia. Se si potesse dimostrare con la scienza, sarebbe un fenomeno fra gli altri, e quindi causato. Non essendo dimostrabile ne confutabile, resta il posto per pensarla — e vedremo il prossimo anno che secondo lui ci accorgiamo di essere liberi non conoscendo, ma quando dobbiamo decidere.'},
+         {loro:'«Ha obbedito al re: era un vigliacco?»',
+          tu:'Puo darsi. Oppure applicava una distinzione che aveva scritto dieci anni prima: il funzionario esegue nel proprio ufficio, lo studioso discute davanti al pubblico. Nota pero che promise di tacere «come suddito di Sua Maesta», e quel re mori. Decidi tu se sia coerenza, prudenza o furbizia: sono tutte e tre difendibili.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'La domanda era:\n\nsi puo sapere qualcosa di nuovo\nsul mondo\nsenza andare a guardare?\n\nRisposta di Kant:\n\nsi.\n\nMa non perche siamo bravi.\n\nPerche cio che sappiamo prima\nnon riguarda\nle cose come sono:\n\nriguarda le condizioni\nalle quali qualunque cosa\npuo arrivarci.\n\nSappiamo in anticipo\ncome sara fatta l\'esperienza\nperche siamo noi\na fornirne la forma.\n\nDa portarsi via:\n\ndavanti a qualunque cosa\nvi sembri ovvia,\nesiste una domanda\nche vale sempre la pena di fare.\n\nQuesto sta nelle cose,\n\no sta nel modo\nin cui io le guardo?',
+       parlato:'Torna alle quattro frasi dell\'inizio e falle sistemare a loro. La prima e certa e vuota. La seconda dice qualcosa e va verificata. La terza e la quarta dicono qualcosa e non si verificano: sono la casella che Kant ha aperto.\n\nPoi enuncia il risultato nel modo piu semplice possibile, e falla ripetere a qualcuno: sappiamo in anticipo qualcosa dell\'esperienza perche la forma dell\'esperienza la mettiamo noi.\n\nPoi da\' la cosa da portarsi via, che vale ben oltre il programma di filosofia. La domanda «questo sta nelle cose o sta nel mio modo di guardarle» e uno strumento che si usa tutta la vita. Fai fare esempi loro, e vengono fuori bene: quando una materia sembra difficile, quando una persona sembra antipatica, quando una notizia sembra scandalosa.\n\nSpiega che non e scetticismo. Non stiamo dicendo che tutto sia soggettivo — stiamo dicendo che una parte di quello che attribuiamo alle cose viene dall\'apparato con cui le riceviamo, e che distinguere le due cose e possibile e faticoso.\n\nUltima riga, per il seguito. Adesso sappiamo che cosa Kant vuole fare e perche. Il come — quali forme siano, quante, come lavorino insieme — e il contenuto della Critica della ragion pura, e comincia dalla cosa piu difficile da mettere in dubbio che esista: lo spazio e il tempo. La prossima volta si parte da li.',
+       seDicono:[
+         {loro:'«Allora non conosceremo mai la realtà vera.»',
+          tu:'Non come e in se stessa, no. Ma nota che cosa resta: una conoscenza valida per tutti, controllabile, che permette di prevedere e di costruire. Kant non toglie la scienza, le da un fondamento e insieme un confine. Chi trova insopportabile il confine ha compagnia illustre — mezzo Ottocento tedesco e nato dal tentativo di superarlo.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'L\'orologio',
+       corpo:'La leggenda dice che i vicini di Königsberg regolassero l\'orologio sul passaggio di Kant durante la passeggiata pomeridiana, sempre alla stessa ora e sempre per lo stesso percorso.\n\nLa regolarità è documentata dai suoi biografi contemporanei: ora fissa per alzarsi, per il lavoro, per il pranzo — che era l\'unico pasto della giornata e durava ore, sempre in compagnia — e per la passeggiata.\n\nGli aneddoti raccontano due sole interruzioni: la lettura dell\'Emilio di Rousseau e le giornate in cui aspettava notizie dalla Rivoluzione francese.',
+       chiedi:'Un uomo con la vita più prevedibile del suo secolo produce il pensiero più dirompente. È un caso, o c\'è un rapporto fra le due cose? E che idea vi siete fatti, dalla vostra esperienza, del rapporto fra le abitudini fisse e la capacità di pensare qualcosa di nuovo?'},
+      {titolo:'Le pagine che non si citano',
+       corpo:'Nel corso di geografia fisica e in alcuni scritti degli anni Sessanta e Settanta, Kant esprime giudizi gerarchici sui popoli non europei, riprendendo le fonti di viaggio che leggeva.\n\nNegli stessi anni scrive che l\'uomo va trattato sempre anche come fine e mai soltanto come mezzo, e che la dignità non ha prezzo.\n\nNegli scritti degli anni Novanta — Per la pace perpetua, la Metafisica dei costumi — condanna esplicitamente il colonialismo, l\'occupazione delle terre altrui e il commercio degli schiavi, definendo ingiusto ciò che le potenze europee fanno fuori dall\'Europa.',
+       chiedi:'Lo stesso autore scrive il principio universale della dignità e pagine che lo contraddicono, e poi cambia posizione. Che cosa se ne fa un lettore di oggi: si tiene il principio e si buttano le pagine, si buttano tutti e due, o si fa qualcos\'altro? E nel giudicare, quanto pesa il fatto che sia stato lui a correggersi?'},
+      {titolo:'Il libro che nessuno capì',
+       corpo:'La Critica della ragion pura esce nel 1781 e per due anni non riceve quasi nessuna recensione. La prima importante, anonima, la interpreta come una ripresa dell\'idealismo di Berkeley: la tesi che le cose esistano solo in quanto percepite.\n\nKant reagisce con furia, pubblica nel 1783 i Prolegomeni per spiegare l\'opera in forma più breve, e nella seconda edizione del 1787 riscrive interi passaggi per togliere l\'equivoco, aggiungendo una confutazione esplicita dell\'idealismo.\n\nIl successo arriva verso il 1786, quando un altro professore comincia a insegnarlo nei propri corsi.',
+       chiedi:'L\'autore ritiene che il proprio libro sia stato frainteso e lo riscrive per farsi capire. Fin dove è responsabile chi scrive di come viene letto? E il fatto che un\'opera abbia bisogno di essere spiegata dall\'autore dice qualcosa contro l\'opera, oppure no?'}
+    ],
+    testi:[
+      {fonte:'Kant, Critica della ragion pura, introduzione (1787)',
+       corpo:'Kant sostiene che ogni nostra conoscenza cominci con l\'esperienza, ma che da questo non segua che derivi tutta dall\'esperienza: potrebbe essere un composto di ciò che riceviamo dalle impressioni e di ciò che la nostra facoltà conoscitiva aggiunge da sé.',
+       glossa:'Sono le due righe che separano Kant dall\'empirismo con la massima economia possibile. «Comincia con» non significa «viene da»: l\'esperienza è l\'occasione che mette in moto l\'apparato, non la sorgente di tutto ciò che l\'apparato produce. È il modo più breve per far capire in classe che la terza via non è un compromesso fra empirismo e razionalismo, ma una domanda diversa da entrambi.'},
+      {fonte:'Kant, Risposta alla domanda: che cos\'è l\'Illuminismo (1784)',
+       corpo:'L\'illuminismo è definito come l\'uscita dell\'uomo dallo stato di minorità che egli deve imputare a se stesso: minorità è l\'incapacità di servirsi della propria intelligenza senza la guida di un altro, ed è colpevole quando la causa non è mancanza di intelligenza ma di decisione e di coraggio. Il motto è: abbi il coraggio di servirti della tua intelligenza.',
+       glossa:'Il testo va letto insieme alla distinzione che segue, fra uso pubblico e uso privato della ragione: l\'ufficiale esegue l\'ordine e come studioso può criticarlo davanti al pubblico dei lettori. La terminologia oggi suona rovesciata rispetto alla nostra e va tradotta prima di essere discussa — ed è proprio la traduzione a rendere il testo utile in classe, perché costringe a chiedersi dove passi oggi quel confine.'},
+      {fonte:'Kant, Critica della ragion pura, prefazione alla seconda edizione (1787)',
+       corpo:'Kant afferma di aver dovuto togliere di mezzo il sapere per far posto alla fede, e che il vero scandalo della metafisica sta nel pretendere di procedere senza aver prima esaminato la facoltà con cui procede.',
+       glossa:'La frase viene spesso letta come una concessione alla religione, e nel contesto è invece un\'operazione tecnica: se la conoscenza vale solo per i fenomeni, allora ciò che riguarda la libertà, l\'anima e Dio non è dimostrabile — e per questo non è nemmeno confutabile. Il limite posto alla scienza è la stessa mossa che apre lo spazio della morale, e senza di essa le due Critiche successive non sarebbero possibili.'}
+    ],
+    compito:'Mezza pagina. Scegliete una cosa che vi sembra ovvia sul mondo — non un\'opinione, qualcosa che vi pare semplicemente come stanno le cose. Poi provate a chiedervi due volte: che cosa dovrei osservare per verificarla? E se non riuscite a indicare un\'osservazione che potrebbe smentirla, scrivete che cosa ne concludete: che è certissima, o che non parla del mondo ma del modo in cui lo guardate?',
+    fonti:[
+      'I. Kant, Critica della ragion pura (1781, seconda edizione 1787), prefazioni e introduzione',
+      'Prolegomeni a ogni futura metafisica (1783); Risposta alla domanda: che cos\'è l\'Illuminismo (1784)',
+      'Storia naturale universale e teoria del cielo (1755); Dissertazione del 1770',
+      'D. Hume, Ricerca sull\'intelletto umano (1748), sezioni IV e VII',
+      'M. Kuehn, Kant. Una biografia; O. Höffe, Immanuel Kant',
+      'S. Körner, Kant; P. Strawson, Saggio sulla Critica della ragion pura'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',
