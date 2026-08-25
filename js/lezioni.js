@@ -13974,6 +13974,232 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Filosofia moderna · 28 — Hegel: la Fenomenologia dello spirito': {
+  mappa: {
+    n:'La Fenomenologia dello spirito', d:'il romanzo di formazione della coscienza, scritto come una scala da salire',
+    f:[
+      {r:'e prima di tutto', n:'Un libro strano', d:'e vale la pena sapere come e stato fatto, perche si vede',
+       f:[
+         {r:'esce nel', n:'1807', d:'e l\'autore ha trentasette anni: e il suo primo libro'},
+         {r:'ha due titoli, perche si chiama anche', n:'Scienza dell\'esperienza della coscienza', d:'il primo foglio stampato porta l\'uno, il resto del volume l\'altro'},
+         {r:'viene scritto', n:'A rate', d:'l\'editore riceve il manoscritto a pezzi e comincia a stampare mentre l\'autore scrive ancora'},
+         {r:'con una', n:'Penale nel contratto', d:'se il testo non arriva entro il termine, Hegel paga: le ultime pagine nascono sotto scadenza'},
+         {r:'e la prefazione e scritta', n:'Dopo il libro', d:'come quasi sempre: e il testo piu citato del volume e presuppone tutto quello che viene dopo'},
+         {r:'l\'immagine che lo governa e una', n:'Scala', d:'una successione di gradini che la coscienza deve salire, uno per uno, senza saltarne'},
+         {r:'e ogni gradino si chiama', n:'Figura', d:'una forma di coscienza completa, con la propria idea di che cosa sia il vero',
+          f:[{piu:true, r:'e la salita e definita da lui stesso una', n:'Via della disperazione', d:'perche ogni figura deve fare l\'esperienza del proprio fallimento: nessuna viene confutata da fuori'}]}
+       ]},
+
+      {r:'e ha un metodo preciso, l\'', n:'Esperienza della coscienza', d:'che spiega perche il libro non sia un elenco di opinioni',
+       f:[
+         {r:'ogni figura ha un proprio criterio del', n:'Vero', d:'e si giudica con quello, non con uno portato da fuori'},
+         {r:'poi lo mette alla', n:'Prova', d:'cerca di conoscere il proprio oggetto secondo il proprio criterio'},
+         {r:'e scopre che l\'oggetto non e come', n:'Credeva', d:'ma la scoperta cambia anche il criterio, perche i due erano fatti l\'uno per l\'altro'},
+         {r:'per cui il fallimento produce una figura', n:'Nuova', d:'e non un vuoto: e la negazione determinata al lavoro'},
+         {r:'e il filosofo si limita a', n:'Stare a guardare', d:'la coscienza si confuta da sola; chi scrive registra il movimento e sa gia dove porta'},
+         {r:'da cui la differenza fra cio che sa la coscienza e cio che sappiamo', n:'Noi', d:'il lettore vede il senso di un passaggio che chi lo compie non puo vedere'}
+       ]},
+
+      {r:'comincia dalla', n:'Coscienza', d:'cioe dal rapporto piu semplice: io qui, la cosa li',
+       f:[
+         {r:'la prima figura e la', n:'Certezza sensibile', d:'la convinzione che la conoscenza piu sicura sia quella immediata: guardo e vedo'},
+         {r:'ma se scrive cio che vede — questo, qui, ora — e rilegge dopo un\'ora,', n:'Non vale piu', d:'l\'ora e passata, il qui e altrove: il linguaggio ha conservato solo l\'universale'},
+         {r:'quindi cio che sembrava piu ricco e in realta il piu', n:'Povero', d:'la certezza sensibile sa solo che qualcosa e: non riesce a dire che cosa'},
+         {r:'la seconda figura e la', n:'Percezione', d:'non piu il puro questo, ma una cosa con proprieta: il sale e bianco, salato, cubico'},
+         {r:'che si spacca sulla domanda se la cosa sia', n:'Una o molte', d:'un\'unita che tiene insieme proprieta diverse, o un fascio di proprieta che chiamiamo cosa per comodita'},
+         {r:'la terza figura e l\'', n:'Intelletto', d:'che dietro le apparenze pone forze e leggi'},
+         {r:'e arriva al', n:'Mondo rovesciato', d:'l\'idea che dietro il mondo ce ne sia un altro, in cui vale il contrario: e il punto in cui la coscienza si accorge di aver messo li se stessa',
+          f:[{piu:true, r:'e allora la ricerca si', n:'Volta indietro', d:'cercando la verita dietro le cose si e trovato il proprio pensiero: comincia l\'autocoscienza'}]}
+       ]},
+
+      {r:'passa all\'', n:'Autocoscienza', d:'e qui il libro cambia di temperatura',
+       f:[
+         {r:'la prima forma e il', n:'Desiderio', d:'mi accorgo di me consumando cio che e altro da me: mangiando, usando, distruggendo'},
+         {r:'ma cosi dipendo da cio che consumo, e ne ho sempre', n:'Bisogno di altro', d:'il desiderio si conferma soltanto ricominciando: e una liberta che si nutre di cio che nega'},
+         {r:'la svolta arriva quando davanti c\'e un\'', n:'Altra autocoscienza', d:'qualcosa che non si puo consumare, perche a sua volta guarda'},
+         {r:'da cui la tesi centrale del libro: l\'autocoscienza esiste solo se viene', n:'Riconosciuta', d:'nessuno diventa qualcuno da solo'},
+         {r:'e il riconoscimento deve essere', n:'Reciproco', d:'se lo ricevo da chi non considero nessuno, non vale niente'},
+         {r:'ma il primo incontro non e pacifico: e una', n:'Lotta', d:'ciascuno vuole essere riconosciuto senza riconoscere, e per dimostrare di non essere una cosa rischia la vita',
+          f:[{piu:true, r:'con l\'esito che non puo essere la', n:'Morte dell\'altro', d:'un morto non riconosce nessuno: uccidere l\'avversario significa perdere cio per cui si combatteva'}]}
+       ]},
+
+      {r:'e arriva a', n:'Signoria e servitu', d:'le pagine piu lette di tutta la filosofia moderna',
+       f:[
+         {r:'uno dei due', n:'Cede', d:'preferisce la vita alla vittoria, e diventa servo; l\'altro ha rischiato fino in fondo, e diventa signore'},
+         {r:'il signore ottiene due cose: il', n:'Godimento', d:'riceve le cose gia preparate, senza toccarle: consuma e basta'},
+         {r:'e il riconoscimento, che pero viene da chi lui non', n:'Riconosce', d:'un servo non e nessuno ai suoi occhi, quindi il suo riconoscimento non vale'},
+         {r:'per cui il signore diventa', n:'Dipendente', d:'non sa piu fare niente da se, e ha bisogno del servo per ogni cosa: la sua indipendenza e apparente'},
+         {r:'il servo invece ha provato la', n:'Paura della morte', d:'e quella paura ha sciolto tutte le sue certezze: non ha piu niente di fisso a cui aggrapparsi'},
+         {r:'e soprattutto', n:'Lavora', d:'e lavorando trasforma la cosa invece di consumarla'},
+         {r:'per cui nell\'oggetto prodotto', n:'Ritrova se stesso', d:'vede fuori di se qualcosa che prima non c\'era e che c\'e perche lo ha fatto lui',
+          f:[{piu:true, r:'da cui la frase che rovescia tutto: la verita della coscienza indipendente e la coscienza', n:'Servile', d:'la vera indipendenza matura dalla parte di chi obbedisce, non di chi comanda'}]}
+       ]},
+
+      {r:'poi attraversa le figure dell\'', n:'Infelicita', d:'i modi in cui la coscienza prova a essere libera restando dov\'e',
+       f:[
+         {r:'lo', n:'Stoicismo', d:'sono libero perche penso: la catena resta, ma io non la considero'},
+         {r:'che pero e una liberta', n:'Vuota', d:'funziona uguale sul trono e in catene, e proprio per questo non cambia niente'},
+         {r:'lo', n:'Scetticismo', d:'nega ogni contenuto per non essere legato a nulla'},
+         {r:'e cade in una', n:'Contraddizione vivente', d:'nega tutto e continua a mangiare, camminare e parlare come chiunque'},
+         {piu:true, r:'entrambe sono figure del', n:'Servo che pensa', d:'nascono dopo la servitu e sono i modi in cui chi obbedisce prova a dirsi libero senza cambiare la propria condizione'},
+         {r:'e infine la', n:'Coscienza infelice', d:'si sdoppia: mette il valore fuori di se, in un altrove immutabile, e si giudica indegna'},
+         {r:'e la riconosce nel', n:'Cristianesimo medievale', d:'nella devozione, nella mortificazione e nell\'offerta di se: la lettura piu discussa del libro',
+          f:[{piu:true, r:'ma la figura vale ben oltre la religione, come struttura del', n:'Non sentirsi mai abbastanza', d:'chiunque metta la propria misura in qualcosa che non potra mai raggiungere abita quella figura'}]}
+       ]},
+
+      {r:'e prosegue con', n:'Ragione e spirito', d:'dove le figure smettono di essere individuali e diventano storiche',
+       f:[
+         {r:'la ragione osservativa cerca lo spirito nelle cose e finisce nella', n:'Frenologia', d:'la teoria che il carattere si legga dalla forma del cranio'},
+         {r:'con la formula che Hegel usa come esempio del ridurre: lo spirito e un', n:'Osso', d:'la conclusione grottesca a cui arriva chi cerca lo spirito fra le cose osservabili'},
+         {r:'poi lo spirito entra nella storia con l\'', n:'Eticita greca', d:'un mondo in cui le regole non si discutono perche coincidono con i costumi'},
+         {r:'e si spezza in', n:'Antigone', d:'due leggi entrambe giuste — quella della famiglia e quella della citta — e nessuna delle due puo cedere'},
+         {r:'poi la cultura, e poi il', n:'Terrore', d:'la liberta assoluta che, non potendo realizzarsi in nulla di particolare, non sa fare altro che eliminare'},
+         {r:'e la coscienza morale che si ritira nella purezza dell\'', n:'Anima bella', d:'per non sporcarsi rinuncia ad agire, e nella sua purezza si consuma',
+          f:[{piu:true, r:'con un giudizio durissimo: chi non agisce per non sbagliare non e', n:'Innocente', d:'ha soltanto scelto di lasciare che le cose vadano come vanno, e questo e un modo di agire'}]}
+       ]},
+
+      {r:'e finisce nel', n:'Sapere assoluto', d:'con una fortuna che l\'autore non poteva immaginare',
+       f:[
+         {r:'l\'arrivo non e una nuova conoscenza ma il', n:'Riconoscersi nel percorso', d:'lo spirito si sa come cio che ha attraversato tutte quelle figure'},
+         {r:'e assoluto significa', n:'Sciolto', d:'non piu legato a un oggetto che gli stia di fronte come estraneo: non significa onnisciente'},
+         {r:'il libro viene', n:'Poco letto', d:'per un secolo e considerato l\'opera oscura di un autore che poi si e spiegato meglio altrove'},
+         {r:'poi arriva', n:'Kojeve', d:'che a Parigi, fra il 1933 e il 1939, tiene un seminario su queste pagine davanti a un pubblico che cambiera la filosofia francese'},
+         {r:'e signoria e servitu diventa il testo di', n:'Marx, Fanon e Beauvoir', d:'la lotta di classe, il colonialismo, la condizione delle donne: tre riprese dello stesso schema',
+          f:[{piu:true, r:'con letture spesso', n:'Piu forti del testo', d:'Hegel non prevede nessuna rivolta del servo: il rovesciamento avviene nella coscienza, e chi ne fa una profezia politica aggiunge qualcosa di suo'}]}
+       ]}
+    ],
+    incroci:[
+      {da:'Riconosce', a:'Servile', r:'e la ragione per cui la verita del signore risulta la coscienza',
+       perche:'Il signore ha combattuto per essere riconosciuto e ottiene il riconoscimento di qualcuno che ai suoi occhi non conta nulla. Un riconoscimento che viene da chi non si riconosce vale quanto un applauso comprato. Il servo invece riceve dal proprio lavoro qualcosa di stabile: un oggetto che esiste perche lo ha fatto lui. È il capovolgimento piu preciso della filosofia moderna, e non richiede nessuna simpatia politica per funzionare.'},
+      {da:'Reciproco', a:'Lotta', r:'e cio che il primo incontro non riesce a essere, e per questo diventa',
+       perche:'Perche il riconoscimento valga, deve venire da qualcuno che a sua volta si riconosce come pari. Ma ciascuna delle due autocoscienze vuole ricevere senza dare, e da qui la lotta. Il conflitto non nasce dalla cattiveria: nasce dalla struttura della domanda di riconoscimento, e questo lo rende molto piu difficile da eliminare di quanto sperino le morali della buona volonta.'},
+      {da:'Paura della morte', a:'Lavora', r:'prepara la trasformazione che avviene quando il servo',
+       perche:'La paura assoluta scioglie ogni certezza: chi ha temuto di perdere tutto non ha piu niente di fisso a cui aggrapparsi. Da solo quel tremore non produce nulla, e senza di esso il lavoro sarebbe pura fatica. È l\'unione delle due cose a formare: il servo ha perso ogni sostegno e insieme scopre di poter dare forma alle cose. Hegel dice esplicitamente che senza la paura la formazione resta un\'abilita ostinata.'},
+      {da:'Non vale piu', a:'Povero', r:'e cio che rende la certezza sensibile la figura piu',
+       perche:'Scrivere «questo, qui, ora» e rileggerlo un\'ora dopo mostra che il linguaggio conserva solo l\'universale: le parole che sembravano indicare l\'unico e l\'irripetibile valgono per qualunque momento e qualunque luogo. La conoscenza che si credeva la piu ricca sa dire soltanto che qualcosa e. È l\'esperimento piu semplice del libro e si puo fare in classe in due minuti.'},
+      {da:'Volta indietro', a:'Desiderio', r:'e cio che apre la strada al',
+       perche:'Cercando la verita dietro il mondo, l\'intelletto trova le proprie leggi: si accorge che dietro le apparenze ha messo se stesso. Da quel momento la coscienza smette di interrogare le cose e comincia a interrogare se stessa, e la prima forma in cui lo fa e la piu elementare — consumare cio che e altro per sentirsi esistere.'},
+      {da:'Non sentirsi mai abbastanza', a:'Anima bella', r:'e imparentata con la figura dell\'',
+       perche:'Entrambe le figure mettono il valore in un luogo dove l\'azione non arriva: una lo colloca in un altrove immutabile davanti al quale ci si giudica indegni, l\'altra nella purezza di un\'interiorita che non deve sporcarsi. In tutte e due il risultato e la paralisi, e in tutte e due la paralisi viene vissuta come una forma di superiorita. Sono le due figure che i ragazzi riconoscono piu facilmente in se stessi.'},
+      {da:'Osso', a:'Stare a guardare', r:'e un esempio di quanto sia difficile limitarsi a',
+       perche:'Hegel espone la frenologia come una figura che si confuta da sola arrivando alla conclusione che lo spirito sia un osso. Ma qui il sarcasmo e evidente, e il metodo dichiarato — seguire il movimento senza intervenire — appare piu una dichiarazione che una pratica. È uno dei punti in cui il lettore vede la mano dell\'autore, ed e la ragione principale per cui l\'accusa di guidare il processo si ripete da due secoli.'},
+      {da:'Antigone', a:'Contraddizione vivente', r:'e una contraddizione oggettiva, non una',
+       perche:'Nello scetticismo la contraddizione e fra cio che si dice e come si vive, ed e un difetto della figura. In Antigone le due leggi sono entrambe legittime e il conflitto non dipende da un errore di nessuno dei due: e nella cosa. Hegel legge la tragedia come il momento in cui un mondo etico compatto scopre di essere spaccato, e nessuna delle due parti puo cedere senza tradire cio che la fa esistere.'},
+      {da:'Vuota', a:'Cede', r:'e la liberta che resta a chi ha',
+       perche:'Lo stoicismo e la figura in cui il servo si dichiara libero nel pensiero senza cambiare la propria condizione, e Hegel osserva che funziona identica sul trono e in catene. È una liberta reale e senza effetti: proprio perche non tocca la situazione, non produce nemmeno il lavoro che nella figura precedente formava. La sequenza dice qualcosa di scomodo su ogni consolazione interiore.'},
+      {da:'Kojeve', a:'Piu forti del testo', r:'inaugura la stagione delle letture',
+       perche:'Il seminario parigino trasforma signoria e servitu nel centro della Fenomenologia e vi legge la chiave della storia: il lavoro del servo che produce il futuro. Nel testo di Hegel quel capitolo e una tappa fra molte e non annuncia nessuna rivolta. La lettura ha avuto conseguenze enormi ed e filologicamente forzata — e vale la pena dirlo agli studenti insieme, perche e un caso perfetto di come un\'interpretazione possa contare piu dell\'originale.'},
+      {da:'Marx, Fanon e Beauvoir', a:'Riconosciuta', r:'riprendono tutti la tesi che l\'autocoscienza debba essere',
+       perche:'Tre autori lontanissimi usano lo stesso schema per tre condizioni diverse: chi lavora e non possiede, chi e colonizzato, chi e definita a partire da un altro. In tutti e tre i casi il punto non e solo la disuguaglianza materiale ma il fatto che il riconoscimento sia a senso unico. È la prova che quelle pagine descrivano una struttura e non un episodio.'},
+      {da:'A rate', a:'Dopo il libro', r:'spiega diverse stranezze del libro, compresa la prefazione scritta',
+       perche:'Un testo consegnato a pezzi mentre la stampa e gia cominciata non si puo riscrivere: le parti finali sono piu compresse, alcune promesse iniziali non vengono mantenute, e la prefazione — scritta a cose fatte e stampata per prima — presuppone tutto cio che segue. Molte oscurita che vengono attribuite alla profondita dell\'autore hanno una spiegazione editoriale.'},
+      {da:'Sciolto', a:'Riconoscersi nel percorso', r:'e il senso preciso dell\'assoluto come',
+       perche:'Assoluto in latino significa sciolto, slegato, e non onnisciente. Il punto d\'arrivo non aggiunge una conoscenza in piu: e lo spirito che riconosce come proprie tutte le figure attraversate, e quindi non ha piu davanti un oggetto estraneo. Chi legge sapere assoluto come sapere totale attribuisce a Hegel una pretesa che il testo non fa, ed e uno degli equivoci piu duri da estirpare.'}
+    ]
+  },
+  provocazione: {
+    titolo:'Chi comanda',
+    durata:'55 minuti',
+    domandaMadre:'Chi comanda e davvero il piu libero dei due?',
+    perche:'Le pagine su signoria e servitu sono le piu lette della filosofia moderna, e il loro effetto in classe e immediato perche la risposta ovvia si rovescia sotto gli occhi di chi la sta dando. Il signore ottiene il riconoscimento da qualcuno che non riconosce, e quindi non ottiene nulla; il servo, che ha ceduto per paura, e l\'unico dei due che impara a fare qualcosa e a ritrovarsi in cio che fa. Il capitolo serve anche a due operazioni piu fini: mostrare che il bisogno di essere riconosciuti non e vanita ma la condizione per diventare qualcuno, e far vedere come una lettura successiva — quella che fa di questo testo l\'annuncio di una rivolta — abbia contato piu dell\'originale.',
+    occorrente:'Niente.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'Due persone.\n\nUna comanda.\nUna obbedisce.\n\nChi delle due\ne piu libera?\n\nSembra una domanda\nda niente.\n\nAllora aggiungo\nun dettaglio.\n\nSono passati dieci anni.\n\nIn questi dieci anni\n\nla prima\nha dato ordini\ne ha ricevuto cose\ngia pronte.\n\nLa seconda\nha fatto\ntutto quello\nche serviva.\n\nAdesso rispondete\na tre domande.\n\nChi delle due\nsa fare piu cose?\n\nChi delle due\npuo sopravvivere\nsenza l\'altra?\n\nE chi delle due,\nsecondo voi,\n\nha piu paura\nche l\'altra\nse ne vada?',
+       parlato:'Fai la prima domanda e lascia che rispondano di getto: e ovvia, e devono dirla.\n\nPoi aggiungi il tempo, che e la vera mossa. Dieci anni non sono un dettaglio: sono cio che trasforma un rapporto in una condizione.\n\nFai le tre domande una alla volta e aspetta ogni risposta.\n\nSulla prima la classe esita gia. Sulla seconda cambia espressione. Sulla terza qualcuno ride, e la risata e il momento in cui hanno capito prima di saperlo dire.\n\nNon spiegare niente. Registra soltanto che la risposta ovvia ha cominciato a scricchiolare.\n\nPoi chiedi esempi loro, e vengono fuori bene: chi in casa non sa dove sono le cose, chi in un gruppo delega tutto, chi non ha mai imparato a fare una cosa perche c\'era sempre qualcuno che la faceva.\n\nChiudi con la domanda dell\'ora, formulata in modo che non si possa rispondere in fretta: chi comanda e piu libero, o e soltanto piu comodo?',
+       seDicono:[
+         {loro:'«Il padrone può licenziarlo e prenderne un altro.»',
+          tu:'Vero, e nota che cosa hai appena detto: gli serve qualcuno che faccia quelle cose. Puo cambiare la persona, non puo fare a meno della funzione. Questa e la definizione di dipendenza. Che tu possa sostituire chi ti serve non significa che tu non ne abbia bisogno.'},
+         {loro:'«Chi obbedisce non è libero, punto.»',
+          tu:'Nella situazione, no, ed e giusto tenerlo fermo per tutta l\'ora: non stiamo dicendo che obbedire sia bello. La domanda e un\'altra: alla lunga, chi dei due diventa capace di stare al mondo da solo? Sono due cose diverse, e oggi impariamo a non confonderle.'}
+       ]},
+
+      {minuti:'8–17', et:'Lo schieramento',
+       schermo:'Due posizioni.\n\nA.\nChi comanda\ne piu libero.\nDecide, dispone,\nnon deve niente\na nessuno.\n\nB.\nAlla lunga\nchi comanda\ndiventa dipendente,\n\ne chi obbedisce\ndiventa capace.\n\nSchieratevi\ne difendetevi.',
+       opzioni:['chi comanda e piu libero: decide e non deve niente a nessuno', 'alla lunga chi comanda diventa dipendente e chi obbedisce diventa capace'],
+       parlato:'Fai schierare e conta. Dopo l\'aggancio la B ha gia parecchi voti, e va comunque messa alla prova, perche c\'e il rischio che diventi una consolazione.\n\nMetti alla prova la B con la domanda piu dura: allora conviene essere servi?\n\nNessuno lo sostiene, e va detto chiaramente: la tesi non e che essere sottomessi faccia bene. Chi lo dice sta facendo una predica, e le prediche in questa materia sono state usate per secoli da chi comandava.\n\nPoi metti alla prova la A, e usa la strada del riconoscimento, che e quella che porta al testo.\n\nDomanda: perche uno vuole comandare? Che cosa ci guadagna, oltre alle cose?\n\nGuidali, perche ci arrivano: vuole contare, vuole che gli altri lo considerino. Il potere non serve solo ad avere: serve a essere qualcuno agli occhi di qualcuno.\n\nAdesso la domanda che apre tutto: agli occhi di chi?\n\nSe la risposta e agli occhi di persone che tu consideri nessuno, allora il loro sguardo non ti da\' niente. È come vincere una partita contro qualcuno che secondo te non sa giocare.\n\nFerma li. Hanno appena costruito da soli l\'argomento di Hegel.',
+       seDicono:[
+         {loro:'«A me basta che mi obbediscano, non che mi stimino.»',
+          tu:'Provo a metterti alla prova. Se domani tutti facessero quello che dici ridendo di te alle spalle, ti andrebbe bene? Quasi nessuno risponde di sì. Il che significa che non ti bastava l\'obbedienza: volevi anche qualcosa che l\'obbedienza da sola non ti puo dare.'},
+         {loro:'«Allora chi comanda non ottiene niente?»',
+          tu:'Ottiene molto: comodita, sicurezza, cose. Non ottiene la sola cosa per cui vale la pena essere in cima, cioe che il tuo valore sia riconosciuto da qualcuno che vale. Ed e il paradosso: piu tieni in basso gli altri, meno vale il loro riconoscimento — e quello e l\'unico che hai.'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'Come ci arriva Hegel.\n\nPrima una tesi\nche riguarda tutti.\n\nNessuno\ndiventa qualcuno\nda solo.\n\nPer sapere chi sono\nmi serve\nche qualcun altro\nmi riconosca.\n\nE non uno qualsiasi:\n\nqualcuno che a sua volta\nio riconosca.\n\nAdesso il problema.\n\nSe io voglio essere\nriconosciuto\nsenza riconoscere,\n\ne anche tu vuoi\nla stessa cosa,\n\nnasce una lotta.\n\nCiascuno vuole dimostrare\ndi non essere\nuna cosa fra le cose:\n\ne lo dimostra\nrischiando la vita.\n\nMa la lotta\nnon puo finire\ncon un morto.\n\nPerche un morto\n\nnon riconosce\nnessuno.',
+       parlato:'Costruisci la tesi del riconoscimento prima del conflitto, perche e la parte che i ragazzi devono portarsi via anche se dimenticano tutto il resto.\n\nPrimo pezzo: nessuno diventa qualcuno da solo. Fai la prova. Chiedi di pensare a una cosa che sanno fare bene: come lo sanno? Perche qualcuno gliel\'ha detto, o perche l\'hanno visto negli occhi di qualcuno. Non c\'e modo di stabilirlo da soli.\n\nSecondo pezzo, e va detto con cura: questo non e vanita. Cercare l\'approvazione puo essere vanita; aver bisogno di essere riconosciuti e la struttura per cui diventiamo persone. Non e un difetto da correggere.\n\nTerzo pezzo: perche nasce il conflitto. Perche vorremmo ricevere senza dare. Sottolinea che il conflitto non nasce dalla cattiveria ma dalla forma stessa della richiesta, e per questo non basta essere gentili per eliminarlo.\n\nQuarto pezzo: la lotta e il suo limite. Chi vince uccidendo perde: elimina l\'unico che poteva riconoscerlo.\n\nQuindi uno dei due cede. Sceglie la vita. E qui Hegel non lo condanna: descrive.\n\nDa questo momento uno comanda e l\'altro serve, e la classe si aspetta che la storia finisca cosi. Di\' che sta per cominciare adesso.',
+       seDicono:[
+         {loro:'«Io non ho bisogno che nessuno mi riconosca.»',
+          tu:'Rispetto la posizione e ti faccio una domanda concreta: se avessi fatto la cosa piu bella della tua vita e nessuno lo sapesse mai, per sempre, sarebbe uguale? Quasi tutti dicono di no, e non e vanita. È che le cose che facciamo esistono anche nel modo in cui vengono viste, e senza nessuno che le veda restano a meta.'},
+         {loro:'«Ma nella realtà nessuno si mette a combattere per essere riconosciuto.»',
+          tu:'Non a duello. Guarda pero quante liti nascono per una mancanza di rispetto invece che per un danno. Chi si arrabbia perche e stato trattato come se non esistesse non sta difendendo un interesse: sta chiedendo esattamente questo. Hegel racconta in forma estrema una cosa che succede ogni giorno in forma minuscola.'}
+       ]},
+
+      {minuti:'28–38', et:'Il testo',
+       schermo:'1807.\n\nIl signore ha ottenuto\nquello che voleva.\n\nRiceve le cose\ngia pronte,\nnon le tocca,\nne gode e basta.\n\nE viene riconosciuto.\n\nSolo che\n\nchi lo riconosce\n\ne qualcuno che lui\nnon considera\nnessuno.\n\nQuindi quel riconoscimento\nnon vale niente.\n\nIntanto il servo.\n\nHa avuto paura\ndi morire,\ne quella paura\ngli ha sciolto\nogni certezza.\n\nE lavora.\n\nLavorando\nnon consuma la cosa:\n\nle da\' forma.\n\nE nella cosa\nche ha formato\n\nvede qualcosa\nche c\'e\n\nperche lo ha fatto lui.\n\nHegel scrive:\n\nla verita\ndella coscienza indipendente\n\ne la coscienza\nservile.',
+       testo:{fonte:'G. W. F. Hegel, Fenomenologia dello spirito, «Indipendenza e dipendenza dell\'autocoscienza: signoria e servitù» (1807)',
+              glossa:'Il capitolo si regge su due rovesciamenti simmetrici, e conviene tenerli distinti. Il primo riguarda il signore: ha combattuto per essere riconosciuto e ottiene il riconoscimento di qualcuno che ai suoi occhi non conta, quindi non ottiene ciò per cui aveva combattuto; e poiché riceve tutto già preparato, perde ogni rapporto diretto con le cose e diventa dipendente da chi disprezza. Il secondo riguarda il servo, e ha due condizioni che Hegel dichiara entrambe necessarie: la paura assoluta, che scioglie ogni certezza fissa, e il lavoro, che invece di consumare l\'oggetto gli dà forma. Senza la paura — lo dice esplicitamente — la formazione resterebbe un\'abilità ostinata, chiusa e senza sviluppo. È essenziale non leggere il testo come una previsione: nel libro non c\'è nessuna rivolta, e il rovesciamento avviene nella coscienza, non nei rapporti di forza. Chi ne ha fatto l\'annuncio di una liberazione — e sono in molti — ha aggiunto qualcosa che nel testo non si trova.'},
+       parlato:'Leggi il passo in due tempi, uno per ciascun personaggio, e non anticipare la conclusione.\n\nSul signore: fai notare che il suo problema non e morale ma logico. Non e cattivo e quindi punito. Ha una contraddizione nella propria posizione: voleva un riconoscimento che vale solo se viene da un pari, e ha passato la vita a impedire che ci fossero pari.\n\nFai fare esempi loro, e ne trovano di ottimi: chi si circonda solo di persone che gli danno ragione, chi sceglie amici che ammira poco per essere il migliore del gruppo.\n\nSul servo: le due condizioni, e vanno separate.\n\nLa paura. Chi ha temuto di perdere tutto non ha piu certezze fisse — e questo, che sembra una perdita, e cio che lo rende capace di cambiare.\n\nIl lavoro. Qui usa qualcosa che conoscono: la differenza fra mangiare una torta e farla. Il consumo fa sparire l\'oggetto; il lavoro lo lascia li, e in quello che resta si vede chi lo ha fatto.\n\nEnuncia la conseguenza: chi trasforma le cose si trova fuori di se qualcosa di proprio. Chi le consuma soltanto, dopo dieci anni non ha niente da guardare.\n\nPoi metti il paletto, subito e con forza. Questo non significa che la sottomissione sia una fortuna, e non e un invito a stare al proprio posto perche tanto la fatica nobilita. Hegel descrive una struttura e non consiglia una condizione. Chi ha usato queste pagine per dire ai poveri che erano fortunati le ha usate contro il loro senso.',
+       seDicono:[
+         {loro:'«Allora è meglio essere sfruttati?»',
+          tu:'No, ed e il fraintendimento che devo togliere subito. La condizione del servo e una condizione di violenza, e Hegel non la giustifica. Sta dicendo che chi comanda paga un prezzo che non aveva previsto, non che chi obbedisce abbia fatto un affare. Le due cose sono diverse e vanno tenute separate.'},
+         {loro:'«Il padrone può sempre imparare a fare le cose da sé.»',
+          tu:'Certo, e nel momento in cui lo fa smette di essere quella figura: comincia a lavorare, cioe passa dall\'altra parte. Il che conferma la tesi invece di smentirla. Il signore in quanto tale e definito dal non fare, e nel momento in cui fa non e piu quel che era.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'Adesso due cose.\n\nLa prima:\nnel libro\nnon succede niente.\n\nIl servo\nnon si ribella.\n\nNon prende il potere.\nNon vince.\n\nIl rovesciamento\navviene\nsolo dentro la coscienza,\n\ne il capitolo\ne una tappa\nfra decine di altre.\n\nLa seconda:\nquesto non ha impedito\na quelle otto pagine\n\ndi diventare\nil testo piu usato\ndella filosofia moderna.\n\nMarx ci legge\nla classe che lavora\ne non possiede.\n\nFanon ci legge\nil colonizzato.\n\nBeauvoir ci legge\nla condizione\ndelle donne,\n\ndefinite sempre\na partire\nda qualcun altro.\n\nTutti e tre\nleggono benissimo\n\nuna cosa\nche nel testo\n\nnon c\'e.',
+       parlato:'Da\' prima il dato filologico, e non attenuarlo: nella Fenomenologia il servo non si ribella e il capitolo non annuncia nessuna liberazione. Il rovesciamento e nella coscienza.\n\nPoi racconta che cosa e successo a quelle pagine, perche e una storia notevole. Per un secolo quasi nessuno le legge. Poi, a Parigi, negli anni Trenta, un seminario le mette al centro di tutto, e in quell\'aula siedono persone che ridisegneranno la filosofia francese.\n\nDa li in avanti signoria e servitu diventa lo schema con cui si pensano il lavoro, il colonialismo e la condizione delle donne.\n\nAdesso la domanda che vale la lezione, e va posta seriamente: un\'interpretazione che va oltre il testo e un tradimento o e un uso legittimo?\n\nFalli schierare brevemente e ascolta. Poi da\' gli elementi per decidere.\n\nA favore: quelle riprese hanno funzionato perche il testo descrive una struttura, e una struttura si applica a casi che l\'autore non aveva in mente. Hegel non pensava alle donne o alle colonie, e lo schema del riconoscimento a senso unico calza.\n\nContro: una volta che si comincia ad aggiungere, non si sa piu che cosa il testo dica e che cosa gli si faccia dire, e diventa uno specchio.\n\nDa\' il criterio pratico, ed e lo stesso della lezione precedente: si puo verificare se una lettura aggiunge qualcosa dichiarandolo o fingendo che ci fosse gia. La prima e ricerca, la seconda e un imbroglio.\n\nChiudi con una nota che li riguarda: la stessa cosa succede con qualunque testo che studiano, comprese le canzoni di cui discutono.',
+       seDicono:[
+         {loro:'«Se hanno capito una cosa vera, che importa se non c\'era?»',
+          tu:'Importa per una ragione pratica: se non distingui, non puoi piu correggere nessuno. Chiunque potra dire che nel testo c\'e quello che gli serve, e non avrai modo di rispondere. Puoi benissimo dire «Hegel non lo dice, e io lo penso lo stesso» — e allora l\'idea la difendi tu, con i tuoi argomenti.'},
+         {loro:'«Allora Marx ha capito male Hegel.»',
+          tu:'Ha fatto qualcosa di diverso dal capirlo: lo ha usato, e lo ha dichiarato — scrive di averlo rimesso in piedi, che e un modo di dire che lo sta cambiando. Il problema non e usare un autore. Il problema e usarlo dicendo che si sta solo spiegando che cosa intendeva.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'La domanda era:\n\nchi comanda\ne davvero\nil piu libero?\n\nRisposta di Hegel:\n\nno.\n\nÈ il piu comodo\ne il piu dipendente.\n\nE la cosa da tenere\ne una sola.\n\nHa bisogno\ndi essere riconosciuto\n\nda qualcuno\nche ha passato la vita\na rendere\nnon degno\ndi riconoscere.\n\nDa portarsi via:\n\nquando cercate\nl\'approvazione\ndi qualcuno,\n\nfermatevi\nun secondo\ne chiedetevi\n\nse quella persona\nvi sembra qualcuno\nche vale.\n\nSe non vi sembra,\n\nla sua approvazione\nnon vi servira\n\nnemmeno quando\nla otterrete.',
+       parlato:'Riprendi lo schieramento e chiedi chi si e spostato. In questo capitolo si spostano quasi sempre in molti, e vale la pena dire perche: non hanno cambiato valori, hanno separato il potere dalla liberta.\n\nPoi da\' lo strumento, e rendilo concreto perche riguarda la loro vita adesso.\n\nCercare approvazione non e un difetto: e la struttura per cui si diventa qualcuno. La domanda utile non e se cercarla, ma da chi. Se ti sforzi di piacere a persone che in fondo non stimi, otterrai qualcosa che non ti servira.\n\nFai fare la prova. Chiedi di pensare a un gruppo, a una persona, a un pubblico di cui vorrebbero l\'approvazione, e di rispondere a una domanda sola: li stimo? Le facce dicono molto.\n\nPoi la parte piu delicata, e conviene farla. Lo stesso schema funziona al contrario: chi tiene tutti in basso per essere il migliore si costruisce un mondo in cui nessuno puo dargli quello che cerca. È la ragione per cui chi ha bisogno di sentirsi superiore non e mai soddisfatto.\n\nUltima cosa, sull\'opera intera. Il capitolo che abbiamo letto e uno dei tanti gradini di un libro che ne ha decine: comincia da qualcuno convinto che basti aprire gli occhi per sapere, e finisce con lo spirito che si riconosce in tutto quello che ha attraversato. Ogni figura crolla per conto proprio, senza che nessuno la confuti da fuori. Hegel la chiama la via della disperazione, ed e un modo esatto di descrivere che cosa succede quando si impara qualcosa sul serio.\n\nPer il seguito: il sistema completo, con la natura e lo spirito al loro posto, e in un\'altra opera. La prossima volta si guarda l\'Enciclopedia.',
+       seDicono:[
+         {loro:'«Ma io voglio comunque comandare.»',
+          tu:'Legittimo, e la lezione non dice di non farlo. Dice di sapere che cosa costa: se comandi tenendo gli altri sotto, ottieni obbedienza e perdi la sola cosa che rende il comando desiderabile. Esiste anche un comandare fra persone che si riconoscono a vicenda — si chiama autorita, ed e molto piu difficile da ottenere.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'Scritto sotto scadenza',
+       corpo:'La Fenomenologia viene consegnata all\'editore a pezzi, mentre la stampa è già cominciata: chi compone i primi fogli non sa ancora come finirà il libro.\n\nIl contratto prevede una penale se il manoscritto non arriva entro il termine, e Hegel spedisce le ultime pagine nell\'ottobre 1806, mentre l\'esercito francese entra a Jena.\n\nDi conseguenza le parti finali sono più compresse delle prime, alcune promesse dell\'inizio non vengono mantenute, e la prefazione — che è il testo più citato del volume — viene scritta dopo, a libro finito, e presuppone tutto ciò che segue.',
+       chiedi:'Quante delle oscurità di un\'opera dipendono dal pensiero e quante dalle condizioni in cui è stata prodotta? E cambia il vostro modo di leggerla, sapere che le ultime pagine sono state scritte con una penale e un esercito addosso?'},
+      {titolo:'Lo spirito è un osso',
+       corpo:'In un capitolo della Fenomenologia Hegel segue una figura di coscienza che cerca lo spirito fra le cose osservabili. Il percorso arriva alla frenologia, la teoria allora diffusa secondo cui il carattere e le facoltà di una persona si leggerebbero dalle protuberanze del cranio.\n\nLa conclusione a cui quella figura giunge è che l\'essere dello spirito sia un osso. Hegel la espone per intero e la lascia crollare da sé, senza confutarla dall\'esterno.\n\nLa frenologia fu presa sul serio per decenni, insegnata nelle università e usata in criminologia per identificare i «tipi criminali».',
+       chiedi:'Che cosa distingue una spiegazione che riduce un fenomeno a qualcosa di più semplice — e spesso funziona — da una che lo riduce a qualcosa di sbagliato? E quali riduzioni di oggi vi sembrano imparentate con quella?'},
+      {titolo:'Un seminario a Parigi',
+       corpo:'Fra il 1933 e il 1939 Alexandre Kojève tiene a Parigi un seminario sulla Fenomenologia. Fra chi lo frequenta ci sono Jacques Lacan, Georges Bataille, Maurice Merleau-Ponty, Raymond Aron e Raymond Queneau, che ne curerà la pubblicazione.\n\nKojève mette al centro del libro il capitolo su signoria e servitù e vi legge la chiave dell\'intera storia umana: il lavoro del servo produce il futuro, e la storia finisce quando il riconoscimento diventa reciproco.\n\nQuesta lettura ha formato l\'esistenzialismo francese e, attraverso di esso, buona parte del pensiero politico del Novecento. Gli studiosi di Hegel la considerano largamente estranea al testo.',
+       chiedi:'Un\'interpretazione che va oltre l\'originale può contare più dell\'originale. È un tradimento o è il modo normale in cui i libri restano vivi? E come si distingue chi aggiunge dichiarandolo da chi aggiunge fingendo che ci fosse già?'}
+    ],
+    testi:[
+      {fonte:'Hegel, Fenomenologia dello spirito, «La certezza sensibile» (1807)',
+       corpo:'Hegel propone di scrivere su un foglio, come verità, che l\'ora è mezzanotte, e di rileggere il foglio a mezzogiorno: la verità scritta risulta invecchiata. Lo stesso accade con il «qui», che indicato in una direzione diventa falso appena ci si volta. Ne conclude che il linguaggio conserva soltanto l\'universale, e che ciò che intendiamo dire — questo singolo, adesso — non riusciamo a dirlo.',
+       glossa:'È l\'esperimento più semplice del libro e si può fare in classe in due minuti, con un foglio vero. Il risultato smonta l\'idea che la conoscenza più sicura sia quella immediata dei sensi: proprio dove ci sembra di avere la massima ricchezza — questa cosa, qui, ora — riusciamo a dire soltanto che qualcosa è. La certezza sensibile è la figura più povera, non la più solida, e da questa scoperta parte tutta la salita.'},
+      {fonte:'Hegel, Fenomenologia dello spirito, signoria e servitù (1807)',
+       corpo:'Hegel afferma che la verità della coscienza indipendente sia la coscienza servile, e che il servo, attraverso il lavoro, pervenga a se stesso: nel formare la cosa egli diventa consapevole di ciò che è veramente, perché la forma che egli imprime all\'oggetto è la sua propria esteriorizzazione, che gli si fa davanti come qualcosa di permanente. Aggiunge che senza la paura assoluta la formazione resterebbe un\'abilità ostinata, un senso proprio chiuso in sé.',
+       glossa:'Le due condizioni — la paura e il lavoro — sono entrambe necessarie e vanno tenute insieme: la paura scioglie ogni certezza fissa, il lavoro produce qualcosa che dura. Va sottolineato agli studenti che il testo non contiene nessuna previsione di rivolta: il rovesciamento è nella coscienza, non nei rapporti di forza. E va detto altrettanto chiaramente che descrivere una struttura non significa giustificare la condizione: queste pagine sono state usate anche per dire agli oppressi che la loro condizione era una fortuna, ed è il contrario del loro senso.'},
+      {fonte:'Hegel, Fenomenologia dello spirito, lo spirito etico e Antigone (1807)',
+       corpo:'Hegel legge la tragedia di Sofocle come il conflitto fra due potenze entrambe legittime: la legge divina della famiglia, che impone di seppellire il fratello, e la legge umana della città, che lo vieta come nemico. Nessuna delle due è semplicemente ingiusta, e ciascuna diventa colpevole nel momento stesso in cui afferma il proprio diritto, perché nell\'affermarlo nega l\'altro.',
+       glossa:'È la pagina in cui la nozione di tragico riceve la formulazione moderna: il conflitto tragico non è fra il bene e il male ma fra due beni che non possono coesistere. Serve anche a mostrare come Hegel legga la storia: il mondo greco appare compatto — le regole coincidono con i costumi e non si discutono — e proprio la tragedia rivela la frattura che lo attraversa. Da qui il passaggio a una coscienza che dovrà scegliere e giustificarsi, cioè al mondo moderno.'}
+    ],
+    compito:'Mezza pagina. Pensate a una persona o a un gruppo di cui vorreste l\'approvazione. Scrivete che cosa vorreste sentirvi dire esattamente. Poi rispondete a due domande, con onestà: quella persona o quel gruppo vi sembra qualcuno che vale? E se doveste ottenere quell\'approvazione senza stimare chi ve la dà, che cosa ne fareste? Se le due risposte non si accordano, provate a dire che cosa state cercando in realtà.',
+    fonti:[
+      'G. W. F. Hegel, Fenomenologia dello spirito (1807): prefazione, introduzione, coscienza, autocoscienza, spirito',
+      'A. Kojève, Introduzione alla lettura di Hegel (lezioni 1933-39, pubblicate nel 1947)',
+      'K. Marx, Manoscritti economico-filosofici del 1844, il capitolo su Hegel',
+      'F. Fanon, Pelle nera, maschere bianche (1952); S. de Beauvoir, Il secondo sesso (1949)',
+      'A. Honneth, Lotta per il riconoscimento; C. Taylor, La politica del riconoscimento',
+      'R. Bodei, Sistema ed epoca in Hegel; J. Hyppolite, Genesi e struttura della Fenomenologia'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',
