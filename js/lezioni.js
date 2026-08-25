@@ -8893,6 +8893,227 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Storia moderna · 14 — L\'età dei popoli e delle nazioni': {
+  mappa: {
+    n:'L\'eta dei popoli e delle nazioni', d:'come un\'idea di liberazione diventa un\'idea di dominio',
+    f:[
+      {r:'comincia con il', n:'1848', d:'la primavera dei popoli: mezza Europa insorge in poche settimane',
+       f:[
+         {r:'parte da', n:'Parigi', d:'febbraio: cade Luigi Filippo e si proclama la repubblica'},
+         {r:'e si propaga a', n:'Vienna, Berlino, Milano, Budapest', d:'in due mesi, senza telegrafo e senza coordinamento'},
+         {r:'si chiedono tre cose insieme', n:'Costituzione, nazione, lavoro', d:'e sono richieste di gruppi sociali diversi che non stanno insieme a lungo'},
+         {r:'la frattura si apre a', n:'Giugno a Parigi', d:'gli operai insorgono per il diritto al lavoro e la borghesia li fa reprimere',
+          f:[{piu:true, r:'con circa', n:'Tremila morti in quattro giorni', d:'e migliaia di deportazioni: chi aveva fatto febbraio spara a chi aveva fatto febbraio'}]},
+         {piu:true, r:'e a Vienna', n:'Metternich fugge travestito', d:'l\'uomo che aveva governato l\'Europa per trent\'anni lascia il potere in tre giorni'},
+         {r:'e a Francoforte i rivoluzionari', n:'Litigano fra nazioni', d:'i tedeschi liberali negano ai cechi cio che chiedono per se'}
+       ]},
+
+      {r:'lascia', n:'Qualcosa che resta', d:'anche dove la reazione vince su tutta la linea',
+       f:[
+         {r:'in Francia il', n:'Suffragio universale maschile', d:'non viene piu tolto: e la prima volta in un grande Stato'},
+         {r:'che pero elegge', n:'Luigi Napoleone', d:'e tre anni dopo un imperatore: il voto di tutti non garantisce nulla di preciso'},
+         {r:'in Austria si abolisce la', n:'Servitu della gleba', d:'e non si torna indietro: i contadini escono dalla rivoluzione soddisfatti e smettono'},
+         {r:'in Piemonte resta lo', n:'Statuto albertino', d:'l\'unica costituzione italiana sopravvissuta al 1849'},
+         {piu:true, r:'e ovunque restano le', n:'Costituzioni scritte', d:'anche revocate, sono state redatte e discusse: la generazione dopo sa da dove ripartire'},
+         {r:'e si impara che', n:'Le rivoluzioni da sole non bastano', d:'la generazione dopo useranno gli Stati e gli eserciti'}
+       ]},
+
+      {r:'porta all\'', n:'Unificazione italiana', d:'fatta da un regno, non da un movimento',
+       f:[
+         {r:'Cavour sceglie la', n:'Diplomazia', d:'Crimea, Plombieres, l\'alleanza francese: si cerca un padrino, non l\'insurrezione'},
+         {r:'la guerra del', n:'1859', d:'porta la Lombardia, e la Francia si ferma prima del previsto'},
+         {r:'Garibaldi con', n:'I Mille', d:'1860: mille volontari abbattono un regno di nove milioni di abitanti',
+          f:[{r:'appoggiato dalle', n:'Rivolte contadine siciliane', d:'che chiedono terra, e che verranno represse dallo stesso esercito garibaldino'}]},
+         {r:'si annette con', n:'Plebisciti', d:'a suffragio quasi universale, a voto palese, con percentuali improbabili'},
+         {r:'Roma arriva nel', n:'1870', d:'quando la Francia ritira le truppe perche impegnata contro la Prussia'},
+         {r:'e subito dopo esplode il', n:'Brigantaggio', d:'nel Sud una guerra civile con piu morti di tutte le guerre d\'indipendenza insieme',
+          f:[{piu:true, r:'combattuta con', n:'Leggi eccezionali', d:'tribunali militari, fucilazioni, paesi rasi al suolo: e la prima emergenza dello Stato unitario'}]}
+       ]},
+
+      {r:'e all\'', n:'Unificazione tedesca', d:'fatta dallo Stato piu militare d\'Europa, e contro i liberali',
+       f:[
+         {r:'Bismarck governa', n:'Senza il bilancio approvato', d:'il parlamento gli nega i fondi per l\'esercito e lui li spende lo stesso'},
+         {r:'e annuncia che le grandi questioni si risolvono con', n:'Ferro e sangue', d:'non con i discorsi e le maggioranze'},
+         {r:'fa tre guerre in sette anni', n:'Danimarca, Austria, Francia', d:'ognuna preparata diplomaticamente perche l\'avversario appaia l\'aggressore'},
+         {r:'e proclama l\'impero', n:'A Versailles', d:'1871: nella reggia del nemico sconfitto, davanti ai principi tedeschi'},
+         {r:'i liberali che avevano perso', n:'Lo appoggiano lo stesso', d:'ottenuta l\'unita, molti rinunciano alla battaglia costituzionale'}
+       ]},
+
+      {r:'da cui una', n:'Lezione comune', d:'e vale per entrambe',
+       f:[
+         {r:'a unificare non sono', n:'I movimenti nazionali', d:'ma due Stati con un esercito e una diplomazia'},
+         {r:'i democratici vengono', n:'Usati e messi da parte', d:'Garibaldi consegna e si ritira; i liberali tedeschi si adeguano'},
+         {r:'le popolazioni', n:'Non vengono consultate davvero', d:'plebisciti a voto palese, o nessun plebiscito affatto'},
+         {r:'e il risultato e uno Stato', n:'Piu forte del suo popolo', d:'la nazione viene costruita dallo Stato, non viceversa',
+          f:[{piu:true, r:'da cui la frase', n:'Fatta l\'Italia, bisogna fare gli italiani', d:'attribuita a d\'Azeglio: la nazione come compito, non come premessa'}]}
+       ]},
+
+      {r:'e il nazionalismo', n:'Cambia di segno', d:'ed e la trasformazione decisiva di tutto il secolo',
+       f:[
+         {r:'nella prima meta e un principio di', n:'Liberazione', d:'ogni popolo ha diritto a uno Stato, e i popoli sono fratelli'},
+         {r:'nella seconda diventa un principio di', n:'Superiorita', d:'la mia nazione vale piu delle altre e ha diritto di guidarle'},
+         {r:'si appoggia al', n:'Darwinismo sociale', d:'lotta per l\'esistenza applicata ai popoli: vince chi e piu adatto'},
+         {r:'e produce un', n:'Antisemitismo politico', d:'non piu religioso ma razziale, con partiti che lo mettono nel programma',
+          f:[{r:'con il caso', n:'Dreyfus', d:'1894-1906: un capitano ebreo condannato con prove false, e la Francia spaccata in due'},
+             {piu:true, r:'e la parola', n:'Antisemitismo nasce nel 1879', d:'coniata da chi voleva darsi un nome scientifico invece che religioso'}]},
+         {r:'e nasce l\'idea di', n:'Nazione come sangue', d:'non piu scelta e cultura, ma discendenza: e un cambio di definizione, non di grado'}
+       ]},
+
+      {r:'si traduce in', n:'Imperialismo', d:'in trent\'anni l\'Europa occupa quasi tutto il pianeta',
+       f:[
+         {r:'la', n:'Conferenza di Berlino', d:'1884-85: quattordici Stati si accordano sull\'Africa, senza nessun africano presente'},
+         {r:'con la formula del', n:'Fardello dell\'uomo bianco', d:'il dominio presentato come dovere verso popoli da educare'},
+         {r:'le ragioni sono', n:'Materie prime, mercati, prestigio', d:'e spesso il prestigio conta piu del calcolo economico'},
+         {r:'reso possibile da', n:'Fucili a ripetizione, chinino, telegrafo', d:'la superiorita tecnica rende la conquista rapida e poco costosa'},
+         {r:'e produce', n:'Violenze enormi', d:'nel Congo di Leopoldo II milioni di morti per il caucciu',
+          f:[{r:'denunciate da', n:'Europei con gli stessi principi', d:'Casement e Morel usano il diritto e la stampa per far chiudere il sistema'}]},
+         {piu:true, r:'e in Etiopia', n:'L\'Italia viene battuta ad Adua', d:'1896: uno Stato africano sconfigge un esercito europeo e resta indipendente'},
+         {r:'ovunque incontra', n:'Resistenze', d:'rivolte, guerre, movimenti: la conquista non e mai passiva'}
+       ]},
+
+      {r:'mette in crisi gli', n:'Imperi multinazionali', d:'perche il principio di nazionalita li smonta dall\'interno',
+       f:[
+         {r:'l\'', n:'Austria-Ungheria', d:'undici nazionalita, due parlamenti, e nessuna soluzione possibile'},
+         {r:'l\'impero', n:'Ottomano', d:'perde i Balcani uno Stato per volta, in cinquant\'anni'},
+         {r:'nei', n:'Balcani', d:'popolazioni mescolate e confini pretesi che si sovrappongono: ogni soluzione crea una minoranza'},
+         {piu:true, r:'e nasce il', n:'Sionismo', d:'Herzl 1897: se la nazione e sangue, agli ebrei serve uno Stato come a tutti gli altri'},
+         {r:'e la Russia risponde con la', n:'Russificazione', d:'lingua imposta, autonomie soppresse, pogrom tollerati'},
+         {r:'cosi il principio che aveva', n:'Liberato gli italiani', d:'diventa la mina sotto tre imperi, e la miccia del 1914'}
+       ]}
+    ],
+    incroci:[
+      {da:'Giugno a Parigi', a:'Costituzione, nazione, lavoro', r:'spacca l\'alleanza fra chi chiedeva',
+       perche:'Chi voleva la costituzione e chi voleva il lavoro marciano insieme a febbraio e si sparano addosso a giugno. Le rivoluzioni del 1848 falliscono anche per questo: erano coalizioni di richieste incompatibili, tenute insieme solo finche il nemico comune era in piedi.'},
+      {da:'Litigano fra nazioni', a:'Balcani', r:'anticipa il problema dei',
+       perche:'A Francoforte i liberali tedeschi rivendicano l\'autodeterminazione per se e la negano ai cechi, perche i territori si sovrappongono. È lo stesso vicolo cieco che nei Balcani produrra guerre per un secolo: il principio di nazionalita non dice che cosa fare quando due nazioni pretendono la stessa terra.'},
+      {da:'Le rivoluzioni da sole non bastano', a:'I movimenti nazionali', r:'e la lezione che toglie il primo posto ai',
+       perche:'Dopo il 1848 chi voleva l\'unita smette di contare sull\'insurrezione e cerca uno Stato con un esercito. Cavour e Bismarck sono la conseguenza pratica di quel fallimento: le nazioni si faranno, e non le faranno i patrioti.'},
+      {da:'Rivolte contadine siciliane', a:'Brigantaggio', r:'sono la premessa del',
+       perche:'I contadini siciliani appoggiano Garibaldi sperando nella terra e vengono repressi dai suoi stessi ufficiali; pochi anni dopo il Sud insorge contro lo Stato unitario. Il brigantaggio non e solo reazione borbonica: e anche il conto di una promessa non mantenuta.'},
+      {da:'Plebisciti', a:'Non vengono consultate davvero', r:'sono la forma con cui le popolazioni',
+       perche:'Si vota a suffragio larghissimo, in pubblico, su una domanda sola, con percentuali vicine all\'unanimita. È un rito di legittimazione, non una consultazione: serve a poter dire che il popolo ha scelto, senza correre il rischio che scelga.'},
+      {da:'Senza il bilancio approvato', a:'Lo appoggiano lo stesso', r:'non impedisce che i liberali poi',
+       perche:'Bismarck viola la costituzione per quattro anni spendendo fondi negati dal parlamento, e dopo Sedan la maggioranza dei liberali lo sostiene: ottenuta l\'unita nazionale, rinunciano alla battaglia sui poteri. È il caso piu netto in cui un obiettivo nazionale consuma un obiettivo costituzionale.'},
+      {da:'Liberazione', a:'Superiorita', r:'diventa, nel giro di una generazione,',
+       perche:'Mazzini pensava a nazioni sorelle ciascuna con una missione; a fine secolo la nazione diventa un organismo in lotta con gli altri per la sopravvivenza. La parola resta la stessa e cambia il presupposto: prima ogni popolo ha diritto a esistere, poi qualcuno ha diritto a prevalere.'},
+      {da:'Nazione come sangue', a:'Antisemitismo politico', r:'e cio che rende possibile un',
+       perche:'Finche la nazione e cultura e volonta, ci si puo entrare: si impara la lingua, si condivide una storia. Se la nazione e discendenza, non si entra piu. L\'antisemitismo di fine Ottocento e razziale e non religioso proprio per questo — dalla conversione si poteva uscire, dalla nascita no.'},
+      {da:'Fucili a ripetizione, chinino, telegrafo', a:'Materie prime, mercati, prestigio', r:'rendono conveniente perseguire',
+       perche:'Il chinino permette agli europei di sopravvivere in Africa, il fucile a ripetizione rende le battaglie asimmetriche, il telegrafo consente di governare da lontano. Motivazioni economiche e di prestigio esistevano da tempo: e la tecnica a rendere improvvisamente basso il costo della conquista.'},
+      {da:'Europei con gli stessi principi', a:'Fardello dell\'uomo bianco', r:'smontano la formula del',
+       perche:'La campagna contro il Congo di Leopoldo II e condotta da europei che prendono sul serio la retorica della missione civilizzatrice e mostrano che produce l\'opposto. È il meccanismo gia visto altrove: i principi proclamati per giustificare un potere diventano lo strumento migliore per attaccarlo.'},
+      {da:'Liberato gli italiani', a:'Austria-Ungheria', r:'e lo stesso principio che disgrega l\'',
+       perche:'Il criterio che legittima l\'unita italiana — un popolo, uno Stato — applicato a un impero con undici nazionalita ne impone lo smembramento. Non e un\'ostilita politica: e una conseguenza logica, ed e per questo che Vienna non poteva concedere il principio senza sciogliersi.'},
+      {da:'Suffragio universale maschile', a:'Luigi Napoleone', r:'produce l\'elezione di',
+       perche:'Il voto di tutti i maschi adulti, introdotto dalla rivoluzione, porta al potere un uomo che tre anni dopo si fa imperatore, e lo fa con il consenso delle campagne. Il suffragio allargato non garantisce esiti liberali: dice chi decide, non che cosa deciderà.'},
+      {da:'Piu forte del suo popolo', a:'Fatta l\'Italia, bisogna fare gli italiani', r:'e riassunto dalla frase',
+       perche:'Dove la nazione precede lo Stato, lo Stato nasce da una domanda gia esistente. Qui accade il contrario: lo Stato c\'e e deve costruirsi il popolo, con la scuola, la leva, la lingua e il servizio militare. È un\'operazione lunga e riuscita solo in parte, e spiega molte cose del secolo successivo.'}
+    ]
+  },
+  provocazione: {
+    titolo:'La stessa parola',
+    durata:'55 minuti',
+    domandaMadre:'Come fa la stessa idea a cambiare di segno?',
+    perche:'Nella prima meta dell\'Ottocento il principio di nazionalita e un\'idea di liberazione: ogni popolo ha diritto a uno Stato, e le nazioni sono sorelle destinate ad aiutarsi. Cinquant\'anni dopo la stessa parola giustifica la spartizione di un continente fra quattordici Stati europei riuniti a Berlino, senza che nessun africano sia presente, in nome del benessere delle popolazioni indigene. La classe confronta i due testi e deve spiegare come si passa dall\'uno all\'altro. Il colpo di scena e che l\'arma funziona in entrambe le direzioni: gli stessi scritti usati dagli europei per dominare vengono letti dai movimenti anticoloniali per liberarsi.',
+    occorrente:'Niente.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'Due date, e la stessa parola.\n\n1848. Mezza Europa insorge\nin nome di un principio:\nogni popolo ha diritto\na governarsi da se.\n\nItaliani, ungheresi, polacchi,\ncechi, tedeschi.\nSi chiama\nprincipio di nazionalita,\ned e la parola d\'ordine\ndi chi vuole liberarsi.\n\n1885. A Berlino\nquattordici Stati europei\nsi mettono d\'accordo\nsu come dividersi l\'Africa.\n\nNella sala non c\'e\nnessun africano.\n\nNell\'atto finale scrivono\ndi voler favorire lo sviluppo\ndel commercio e della civilta,\ne di curare il benessere morale\ne materiale delle popolazioni.\n\nStessa parola: nazione.\nStesso continente che la usa.\nQuarant\'anni di distanza.',
+       parlato:'Dai le due date e lascia il contrasto senza spiegarlo.\n\nPoi la domanda dell\'ora: come fa la stessa idea a servire prima a liberarsi e poi a dominare?\n\nRaccogli le prime ipotesi. Di solito arriva «erano ipocriti», che come al solito e la spiegazione piu comoda e la meno utile. Non correggere ancora: fra mezz\'ora avranno in mano i due testi e potranno vedere che il secondo non e la negazione del primo, ma una sua applicazione.\n\nSe serve una spinta, aggiungi il dato che colpisce: nel 1848 i liberali tedeschi riuniti a Francoforte chiedono l\'autodeterminazione per i tedeschi e la negano ai cechi, che chiedevano la stessa cosa. Il problema comincia prima di quanto sembri.',
+       seDicono:[
+         {loro:'«Erano ipocriti e basta.»',
+          tu:'Alcuni certamente. Ma l\'ipocrisia spiega male, perche non dice perche funzionasse. Perche milioni di persone che credevano davvero nella liberta dei popoli non hanno trovato assurdo che il proprio paese ne governasse altri? La risposta e nel modo in cui era costruita l\'idea, e ci arriviamo.'},
+         {loro:'«Sono due cose diverse che hanno lo stesso nome.»',
+          tu:'È un\'ipotesi seria, e la verifichiamo leggendo i testi. Anticipo solo che fra i due c\'e un passaggio logico, non un salto: e proprio questo a renderla una lezione utile.'}
+       ]},
+
+      {minuti:'8–17', et:'La fonte',
+       schermo:'Mazzini, Doveri dell\'uomo.\nScritto per gli operai italiani.\n\nSostiene che l\'umanita\ne un solo grande popolo,\ndiviso da Dio in nazioni\ncome una casa e divisa in stanze;\n\nche ogni nazione ha ricevuto\nuna propria missione\nda compiere per il bene di tutti;\n\nche una nazione\nnon puo essere libera davvero\nfinche altre sono oppresse;\n\ne che chi combatte\nper la propria patria\ncombatte per l\'umanita intera.\n\nE aggiunge una cosa\nche vale la pena notare:\nche i confini attuali\nnon sono quelli giusti,\nperche furono tracciati\nda re e da trattati,\ne andranno rifatti\nsecondo i popoli.\n\nTre domande su questo testo.\n\nChi lo ha scritto, e per chi?\nChe cosa ammette senza volerlo?\nChe cosa non dice?',
+       testo:{fonte:'Giuseppe Mazzini, I doveri dell\'uomo, 1860 — capitoli sulla patria e sull\'umanità',
+              glossa:'Il testo è rivolto agli operai italiani e usa un linguaggio religioso: la nazione è una missione affidata da Dio, non un interesse. È la formulazione più generosa del principio di nazionalità, e va letta sapendo che l\'autore aveva progettato una «Giovine Europa» in cui le nazioni liberate avrebbero collaborato.'},
+       parlato:'Fai lavorare in coppia, cinque minuti, poi raccogli.\n\nSulla prima: lo scrive un esule, per operai, in un linguaggio religioso, e l\'obiettivo e convincere gente povera che vale la pena rischiare per qualcosa che non porta un guadagno immediato. La nazione come missione serve esattamente a questo.\n\nSulla seconda: il testo ammette, senza dirlo, di non sapere dove passino i confini. Dice che quelli esistenti sono sbagliati e che vanno rifatti secondo i popoli — ma non dice come si stabilisca dove finisce un popolo e comincia l\'altro. È un vuoto enorme, e diventera il problema centrale dei cent\'anni successivi.\n\nSulla terza: non dice chi decide che cosa sia una nazione. Mazzini stesso aveva in mente una lista, e in quella lista alcuni popoli c\'erano e altri no. Chi compila la lista ha in mano tutto.\n\nQuesto e il punto da tenere per il resto dell\'ora: un principio che non definisce i propri confini puo essere riempito da chiunque.',
+       seDicono:[
+         {loro:'«Ma è un testo bellissimo.»',
+          tu:'Lo e, e non c\'e ironia nel dirlo: e la formulazione piu generosa che quel principio abbia mai avuto. Il problema non e la generosita ma la precisione. Un\'idea nobile con un buco al centro resta un\'idea con un buco al centro, e il buco lo riempira qualcun altro.'},
+         {loro:'«Chi decideva le nazioni, allora?»',
+          tu:'Nell\'Ottocento, di fatto, chi aveva un esercito e uno Stato. I popoli che hanno ottenuto uno Stato sono quelli che avevano qualcuno disposto a combattere per loro; gli altri sono diventati minoranze. Il principio non lo diceva, e la forza ha risposto al posto suo.'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'Come si passa\nda un\'idea all\'altra.\n\nPrimo passaggio.\nSe ogni nazione ha una missione,\nqualcuno comincia a chiedersi\nquale sia piu importante.\n\nSecondo passaggio.\nA fine secolo si diffonde\nun\'idea presa dalla biologia:\nche fra i popoli, come fra le specie,\nci sia una lotta per l\'esistenza\ne che sopravviva chi e piu adatto.\n\nTerzo passaggio.\nSe alcuni popoli sono piu avanzati,\ngovernare gli altri\nnon e un\'oppressione:\ne un dovere.\n\nQuarto passaggio,\ne il piu importante.\n\nCambia la definizione stessa\ndi nazione.\n\nPer Mazzini era volonta e cultura:\nsi diventa italiani.\n\nA fine secolo diventa discendenza:\nitaliani si nasce.',
+       parlato:'Costruisci i quattro passaggi uno per volta, e falli ripetere: e la catena che spiega tutto il capitolo.\n\nInsisti sul quarto, perche e quello che cambia la natura dell\'idea. Finche la nazione e cultura e volonta, e una porta: si impara la lingua, si condivide una storia, ci si entra. Quando diventa sangue, e un muro: non ci si entra piu, e chi e dentro ci e per nascita.\n\nQui c\'e la conseguenza da far vedere, e riguarda l\'antisemitismo. Quello tradizionale era religioso, e da una religione si poteva uscire: la conversione era una porta, per quanto stretta. L\'antisemitismo che nasce alla fine dell\'Ottocento e razziale, e si dichiara scientifico: la parola stessa viene coniata nel 1879 da chi voleva un termine che suonasse moderno al posto di odio religioso. Da quella definizione non si esce.\n\nDomanda per la classe: che differenza pratica fa, definire un gruppo per cultura o per nascita?\n\nLa risposta e semplice e va detta chiaramente: nel primo caso si puo entrare e uscire; nel secondo no, e chi e fuori lo resta per sempre.',
+       seDicono:[
+         {loro:'«Il darwinismo sociale non è vero darwinismo.»',
+          tu:'Esatto, ed e importante saperlo: Darwin parla di specie e di adattamento a un ambiente, non di popoli superiori. L\'applicazione alle societa e un\'operazione fatta da altri, che prendono il prestigio della scienza e lo attaccano a una tesi politica. È una tecnica che vale la pena riconoscere, perche viene usata ancora.'},
+         {loro:'«Ma alcune nazioni erano davvero più avanzate tecnicamente.»',
+          tu:'In certe tecniche sì, e nessuno lo nega. Il salto e un altro: dal fatto che un popolo abbia fucili migliori non segue che abbia il diritto di governarne un altro. Fra un fatto e un diritto c\'e sempre un passaggio, e quel passaggio va mostrato — non lo si puo dare per scontato.'}
+       ]},
+
+      {minuti:'28–38', et:'La seconda fonte',
+       schermo:'Il primo testo era di un esule\nche scriveva per operai.\n\nQuesto e un trattato\nfra quattordici governi.\n\nBerlino, febbraio 1885.\nAtto generale della conferenza\nsull\'Africa.\n\nLe potenze dichiarano\ndi essere animate dal desiderio\ndi favorire lo sviluppo\ndel commercio e della civilta\nin Africa;\n\ndi voler assicurare a tutti i popoli\ni vantaggi della libera navigazione\nsui due fiumi principali;\n\ne di preoccuparsi dei mezzi\nper accrescere il benessere\nmorale e materiale\ndelle popolazioni indigene.\n\nStabiliscono poi che\nchi occupa effettivamente\nun territorio costiero\ndeve notificarlo agli altri firmatari.\n\nNella sala non c\'e\nnessun rappresentante africano.',
+       testo:{fonte:'Atto generale della Conferenza di Berlino, 26 febbraio 1885',
+              glossa:'La conferenza non spartì materialmente l\'Africa — quello avvenne nei quindici anni successivi — ma ne fissò le regole: chi occupa deve notificarlo agli altri, e l\'occupazione dev\'essere effettiva. Era un accordo per evitare guerre fra europei, e il riferimento al benessere delle popolazioni serviva a dargli una veste morale accettabile per le opinioni pubbliche.'},
+       parlato:'Metti i due testi uno accanto all\'altro e chiedi che cosa hanno in comune. La risposta sorprende sempre: entrambi parlano di missione, di dovere e di bene dell\'umanita.\n\nPoi fai vedere la differenza decisiva. In Mazzini la missione e di ogni popolo, e nessuno la compie per conto di altri. A Berlino la missione e di alcuni popoli sopra altri, e chi la riceve non e stato consultato.\n\nDomanda di metodo: a chi si rivolge questo secondo documento?\n\nGuidali. Non agli africani, che non erano presenti e non lo avrebbero letto. Si rivolge alle opinioni pubbliche europee, che nel frattempo erano diventate elettorati e che andavano rassicurate: la conquista non e rapina, e civilizzazione.\n\nE fai notare il vero contenuto operativo, che sta nella parte noiosa: chi occupa deve notificarlo agli altri. Cioe l\'accordo serve a evitare che gli europei si facciano la guerra fra loro per l\'Africa. È un patto di non aggressione fra predatori, scritto nel linguaggio della filantropia.\n\nÈ la stessa lezione della Restaurazione: il contenuto sta nelle procedure, la retorica sta nel preambolo.',
+       seDicono:[
+         {loro:'«Almeno hanno evitato una guerra fra loro.»',
+          tu:'Esattamente, ed e cio che il documento ottiene. Come per il Congresso di Vienna, un accordo fra potenze produce pace fra le potenze. Ma stavolta il prezzo lo paga chi non era al tavolo — ed e la stessa domanda che ci siamo fatti la volta scorsa: per chi funziona?'},
+         {loro:'«Chi ci credeva davvero, alla missione civilizzatrice?»',
+          tu:'Moltissimi, e sinceramente: missionari, medici, insegnanti che partivano convinti di fare del bene. È questo a rendere il fenomeno difficile da capire con la sola categoria dell\'ipocrisia. Un dominio regge meglio quando chi lo esercita crede di star facendo un favore.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'E adesso il rovescio.\n\nGli scritti di Mazzini\nvengono tradotti e letti\nfuori dall\'Europa.\n\nGandhi li legge da giovane\ne li fa circolare\nfra gli indiani in Sudafrica.\n\nNazionalisti indiani, egiziani,\ncinesi, vietnamiti\nprendono il principio\nche gli europei avevano usato\nper costruire i propri Stati\ne lo rivolgono contro di loro:\n\nse ogni popolo ha diritto\na governarsi da se,\nvale anche per noi.\n\nE la denuncia del Congo\nnon parte dagli oppositori\ndell\'imperialismo.\n\nParte da due europei —\nun console britannico\ne un ex impiegato\ndi una compagnia di navigazione —\nche prendono sul serio\nla retorica della missione civilizzatrice\ne dimostrano con i documenti\nche produce l\'opposto.',
+       parlato:'Racconta la doppia direzione con calma, perche e la conclusione dell\'ora.\n\nSul primo punto: il principio di nazionalita e stato la principale arma intellettuale dei movimenti anticoloniali del Novecento, e l\'avevano imparato dagli europei. Chi domina insegna, insieme alla propria lingua, anche gli argomenti con cui lo si potra contestare.\n\nSul secondo: la campagna contro il Congo di Leopoldo II e condotta da Roger Casement e Edmund Morel, che raccolgono testimonianze e documenti e li pubblicano. Il loro argomento non e che l\'Europa non debba stare in Africa: e che quel sistema violava i principi che l\'Europa dichiarava. Ed e efficace proprio per questo — il Congo viene tolto al re nel 1908.\n\nPoi la formulazione centrale: un principio pubblico e un\'arma che non appartiene a chi la impugna per primo. Chiunque puo raccoglierla, e la si puo usare in entrambe le direzioni.\n\nMa aggiungi anche il limite, perche altrimenti la conclusione e troppo consolatoria: la stessa idea che libera l\'India serve poi a giustificare pulizie etniche e guerre di confine per tutto il Novecento. Non c\'e una direzione buona garantita.',
+       seDicono:[
+         {loro:'«Quindi il nazionalismo è buono o cattivo?»',
+          tu:'È uno strumento, e lo strumento non ha un segno. Lo stesso principio ha reso possibile l\'unita italiana e la spartizione dei Balcani, l\'indipendenza indiana e le persecuzioni delle minoranze. Chiedere se sia buono e come chiedere se sia buono un coltello: dipende da chi lo tiene e da che cosa ci fa.'},
+         {loro:'«Casement e Morel erano dei buoni allora.»',
+          tu:'Fecero una cosa coraggiosa e utile, che salvo un numero enorme di vite. E Casement fu poi impiccato dagli inglesi per aver applicato all\'Irlanda gli stessi principi che aveva usato per il Congo. Il che chiude bene il cerchio: un argomento e accettabile finche riguarda casa d\'altri.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'Torniamo alla domanda.\n\nCome fa la stessa idea\na cambiare di segno?\n\nNon per ipocrisia.\n\nPerche aveva un buco\nfin dall\'inizio:\n\nnon diceva chi decide\nche cosa sia una nazione,\nne dove passino i confini,\nne che cosa fare\nquando due popoli\npretendono la stessa terra.\n\nQuel vuoto e stato riempito\ndalla forza.\n\nE quando la nazione ha smesso\ndi essere cultura ed e diventata\nnascita,\nla porta si e chiusa.\n\nUltima cosa da portarsi via.\n\nDavanti a un principio\nche vi sembra giusto,\nchiedetevi sempre\nche cosa non specifica.\n\nÈ li che entreranno gli altri.',
+       parlato:'Ripercorri la catena — missione, gerarchia, dovere di governare, nazione come sangue — e falla enunciare a loro.\n\nPoi il criterio di metodo, che e la cosa concreta della lezione: quando incontrate un principio generale, la domanda utile non e se sia nobile, ma che cosa lascia indeterminato. I vuoti di un principio non restano vuoti: qualcuno li riempie, e di solito e chi ha piu forza.\n\nÈ un criterio che vale per le costituzioni, per i regolamenti, per i programmi politici e anche per le promesse che si fanno fra persone.\n\nPoi il bilancio storico, onesto. Il principio di nazionalita ha liberato l\'Italia, l\'Ungheria, la Polonia, e poi mezzo mondo dal colonialismo europeo. Ha anche fornito il linguaggio dell\'imperialismo, dell\'antisemitismo razziale e delle pulizie etniche. Le due cose non si compensano: coesistono, e per capire il Novecento bisogna tenerle insieme.\n\nChiudi con quello che apre il seguito: alla fine del secolo l\'Europa ha nazioni armate, imperi in crisi, eserciti di massa e alleanze contrapposte, e crede che una guerra sarebbe breve. La prossima volta vediamo che cosa succede quando questa combinazione prende fuoco.',
+       seDicono:[
+         {loro:'«Allora meglio non avere principi generali.»',
+          tu:'Senza principi generali non si contesta nessun potere: sono l\'unica cosa che chi non ha forza puo usare. Il consiglio non e rinunciarvi, e conoscerne i buchi meglio di chi ve li propone — cosi ve ne accorgete quando qualcuno li riempie a proprio vantaggio.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'Giugno',
+       corpo:'Nel febbraio 1848 operai e borghesi parigini abbattono insieme la monarchia. Il governo provvisorio istituisce gli Ateliers nationaux, cantieri pubblici per dare lavoro ai disoccupati.\n\nA giugno, per ragioni di bilancio e per timore sociale, l\'assemblea eletta a suffragio universale li chiude. Gli operai insorgono. La repressione, condotta dall\'esercito su ordine dello stesso governo repubblicano, fa circa tremila morti in quattro giorni e migliaia di deportazioni.\n\nA dicembre gli elettori, in gran parte contadini, portano alla presidenza Luigi Napoleone Bonaparte.',
+       chiedi:'Le stesse persone che a febbraio combattevano insieme si sparano addosso a giugno. Che cosa teneva insieme quell\'alleanza, e che cosa l\'ha rotta? E come si riconosce, mentre accade, una coalizione fondata solo su un nemico comune?'},
+      {titolo:'Più morti dell\'unità',
+       corpo:'Fra il 1861 e il 1865 il Mezzogiorno è teatro di una guerra civile: bande armate, sostegno di parte della popolazione rurale, esercito italiano con leggi eccezionali, tribunali militari, fucilazioni sommarie e distruzione di interi paesi.\n\nLe stime dei morti superano quelle di tutte le guerre d\'indipendenza messe insieme.\n\nFu chiamata brigantaggio, termine che designa criminalità comune. Le cause includevano la coscrizione obbligatoria, la tassazione, la vendita dei beni ecclesiastici e demaniali a proprietari benestanti, e le promesse di terra non mantenute.',
+       chiedi:'Perché un conflitto di quelle dimensioni prende il nome di un reato comune? Chi sceglie il nome, e che cosa cambia nel modo in cui una vicenda viene ricordata e studiata?'},
+      {titolo:'Il caso',
+       corpo:'Nel 1894 il capitano Alfred Dreyfus, ebreo alsaziano, è condannato per alto tradimento sulla base di una perizia calligrafica errata e di un fascicolo segreto mai mostrato alla difesa. Viene deportato all\'Isola del Diavolo.\n\nQuando emergono prove che il vero autore era un altro ufficiale, lo stato maggiore preferisce coprire l\'errore. Émile Zola pubblica «J\'accuse» nel 1898 ed è condannato per diffamazione.\n\nLa Francia si spacca per anni. Dreyfus è riabilitato nel 1906, dodici anni dopo la condanna.',
+       chiedi:'Un\'istituzione scopre di aver commesso un errore e sceglie di coprirlo. Quali ragioni possono sembrare, dall\'interno, più importanti della verità? E che cosa serve perché un errore istituzionale venga riconosciuto?'}
+    ],
+    testi:[
+      {fonte:'Bismarck, discorso alla commissione bilancio della Camera prussiana, 30 settembre 1862',
+       corpo:'Bismarck afferma che le grandi questioni del tempo non si risolvono con i discorsi e le deliberazioni a maggioranza — che fu l\'errore del 1848 e del 1849 — ma con il ferro e con il sangue.',
+       glossa:'È il programma dell\'unificazione tedesca enunciato con quattro anni di anticipo, e contiene una diagnosi del 1848 con cui è difficile non concordare sui fatti: quelle rivoluzioni fallirono. La conclusione che ne trae è la rinuncia esplicita al metodo parlamentare, e i liberali tedeschi la accetteranno dopo la vittoria.'},
+      {fonte:'Atto generale della Conferenza di Berlino, 1885 — l\'articolo sull\'occupazione effettiva',
+       corpo:'Il testo stabilisce che le potenze che prendano possesso di un territorio sulle coste africane, o vi assumano un protettorato, devono notificarlo alle altre firmatarie affinché queste possano far valere le proprie eventuali pretese.',
+       glossa:'È la disposizione che conta davvero: obbliga a occupare materialmente per poter rivendicare, e accelera la corsa. Da leggere accanto al preambolo sul benessere delle popolazioni indigene, perché il confronto fra i due mostra quale parte del documento fosse destinata all\'opinione pubblica e quale ai governi.'},
+      {fonte:'Massimo d\'Azeglio, dai Ricordi — la frase sull\'Italia fatta',
+       corpo:'La formula, tramandata in varie versioni, osserva che si è fatta l\'Italia ma restano da fare gli italiani, e che il primo bisogno del paese è formare cittadini dotati di carattere e di senso del dovere.',
+       glossa:'Vale come sintesi di un problema reale: uno Stato costruito prima che esistesse una lingua parlata comune, con un\'alfabetizzazione bassissima e forti differenze regionali. Serve anche a mostrare la differenza fra i due modelli europei — nazioni che si costruiscono uno Stato, e Stati che devono costruirsi una nazione.'}
+    ],
+    compito:'Mezza pagina. Prendete un principio che condividete e che vi sembra evidente — l\'uguaglianza, il merito, la libertà di scelta, la sicurezza. Scrivetelo in una frase. Poi fate una cosa sola: elencate tre domande a cui quella frase non risponde. Infine indicate chi, secondo voi, avrebbe interesse a rispondere lui a quelle domande.',
+    fonti:[
+      'G. Mazzini, I doveri dell\'uomo (1860); Atto generale della Conferenza di Berlino (1885)',
+      'Bismarck, discorso del 30 settembre 1862; É. Zola, J\'accuse (1898)',
+      'E. D. Morel, Red Rubber; R. Casement, Congo Report (1904)',
+      'E. Hobsbawm, Il trionfo della borghesia; L\'età degli imperi; Nazioni e nazionalismo dal 1780',
+      'B. Anderson, Comunità immaginate; A. Hochschild, Il fantasma di re Leopoldo',
+      'A. Banti, La nazione del Risorgimento; J. Dickie, Darkest Italy — sul brigantaggio e la sua rappresentazione'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',
