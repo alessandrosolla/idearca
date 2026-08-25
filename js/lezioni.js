@@ -14200,6 +14200,231 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Filosofia moderna · 29 — Hegel: l\'Enciclopedia': {
+  mappa: {
+    n:'L\'Enciclopedia delle scienze filosofiche', d:'il sistema intero, e il punto in cui il sistema ammette di non chiudersi',
+    f:[
+      {r:'e prima di tutto', n:'Un manuale', d:'nasce per un uso pratico, e la forma condiziona tutto il resto',
+       f:[
+         {r:'esce nel 1817 perche agli studenti serve un', n:'Testo da seguire', d:'un compendio numerato su cui appoggiare le lezioni, non un\'opera compiuta'},
+         {r:'e fatto di', n:'Paragrafi', d:'brevissimi e spesso oscuri: sono tracce da sviluppare a voce, non spiegazioni'},
+         {r:'con delle', n:'Annotazioni', d:'scritte da lui, in cui discute obiezioni e casi concreti: spesso sono la parte piu leggibile'},
+         {r:'e delle', n:'Aggiunte', d:'ricavate dagli appunti degli studenti e inserite dai curatori dopo la sua morte',
+          f:[{piu:true, r:'per cui molte frasi famose non sono', n:'Sue parole', d:'sono cio che qualcuno ha annotato di cio che aveva capito: e conviene saperlo prima di citarle'}]},
+         {r:'ha tre edizioni fino al', n:'1830', d:'che raddoppiano il volume: e l\'unico luogo in cui il sistema compare per intero'},
+         {r:'e si divide in tre parti: logica, natura,', n:'Spirito', d:'l\'idea in se, l\'idea fuori di se, l\'idea che torna a se'},
+         {r:'con un\'immagine per il tutto: un', n:'Circolo di circoli', d:'ogni parte e conclusa e insieme rimanda alle altre, e la fine riporta all\'inizio'}
+       ]},
+
+      {r:'la prima parte e la', n:'Logica', d:'e non ha quasi niente a che vedere con quella che si studia a scuola',
+       f:[
+         {r:'non e quella di Aristotele: studia le determinazioni del pensiero che sono anche determinazioni del', n:'Reale', d:'essere, qualita, causa, possibilita: non quali passaggi siano validi, ma le categorie con cui pensiamo e con cui il mondo e articolato'},
+         {r:'comincia dal concetto piu vuoto,', n:'Essere', d:'essere senza nessuna determinazione: non se ne puo dire niente'},
+         {r:'che proprio per questo coincide con il', n:'Nulla', d:'due concetti indistinguibili quanto a contenuto, e opposti quanto a intenzione'},
+         {r:'e la loro verita e il', n:'Divenire', d:'non un terzo concetto aggiunto: il passaggio dell\'uno nell\'altro, che e cio che entrambi gia erano'},
+         {r:'poi procede per qualita, quantita e', n:'Misura', d:'e mostra come un aumento di quantita, oltre una soglia, cambi la qualita: l\'acqua che a cento gradi non e piu liquida'},
+         {r:'passa all\'essenza, dove ogni determinazione esiste solo per', n:'Opposizione', d:'identita e differenza, positivo e negativo, causa ed effetto: nessuna sta in piedi da sola'},
+         {r:'e si chiude nel', n:'Concetto', d:'che non e un\'idea nella nostra testa: e la struttura per cui una cosa e cio che e e si sviluppa'}
+       ]},
+
+      {r:'poi compie un', n:'Passaggio difficile', d:'il punto piu contestato dell\'intero sistema',
+       f:[
+         {r:'l\'idea, giunta al suo compimento, si', n:'Aliena', d:'esce da se e si pone come natura, cioe come qualcosa di estraneo a se stessa'},
+         {r:'con una parola che ha creato secoli di discussioni: si', n:'Decide', d:'nel testo si dice che l\'idea si risolve liberamente a lasciarsi andare fuori di se'},
+         {r:'i critici obiettano che questo non e un passaggio ma un', n:'Salto', d:'da concetti non si ricava un mondo, e nessuna deduzione produce un\'esistenza'},
+         {r:'e che a questo punto il sistema smette di', n:'Dedurre', d:'e comincia a raccontare, mettendo in fila cio che sapeva gia',
+          f:[{piu:true, r:'obiezione che riprende quella di', n:'Schelling', d:'il quale osserva che nessun concetto produce un fatto: e la distinzione fra filosofia negativa e positiva'}]}
+       ]},
+
+      {r:'la seconda parte e la', n:'Filosofia della natura', d:'la piu invecchiata, e insieme la piu istruttiva da leggere oggi',
+       f:[
+         {r:'divide la natura in meccanica, fisica e', n:'Organica', d:'spazio e tempo e materia, poi luce e calore e chimismo, poi il vivente'},
+         {r:'con la tesi che la natura sia il regno della', n:'Contingenza', d:'nella natura molte cose sono semplicemente come sono, senza che se ne possa dare ragione'},
+         {r:'che chiama l\'', n:'Impotenza della natura', d:'non riesce a tenere ferme le proprie forme: produce mostri, eccezioni, casi che non rientrano'},
+         {r:'per cui non si deve pretendere di dedurre', n:'Ogni dettaglio', d:'quante specie di pappagalli esistano non e una domanda filosofica, e lui lo dice'},
+         {r:'e tuttavia molte pagine risultano', n:'Sbagliate', d:'perche discutono lo stato delle scienze del suo tempo, e quello stato e cambiato'},
+         {r:'con un giudizio severo su chi riduce la natura a', n:'Sola quantita', d:'misurare non e capire: contro la fisica che descrive senza spiegare',
+          f:[{piu:true, r:'giudizio che oggi si legge', n:'Alla rovescia', d:'la scienza ha vinto proprio misurando, e la sua critica sopravvive solo come domanda su che cosa la misura lasci fuori'}]}
+       ]},
+
+      {r:'la terza parte comincia dallo', n:'Spirito soggettivo', d:'cioe dal singolo, prima che entri nei rapporti',
+       f:[
+         {r:'l\'antropologia studia l\'', n:'Anima', d:'il livello in cui lo spirito e ancora immerso nel corpo: temperamento, sonno, abitudine, follia'},
+         {r:'con pagine notevoli sull\'', n:'Abitudine', d:'la chiama una seconda natura: ci libera dal dover decidere ogni gesto, e insieme ci rende automatici'},
+         {r:'la fenomenologia riprende in breve il', n:'Cammino della coscienza', d:'certezza sensibile, autocoscienza, riconoscimento: il libro del 1807 ridotto a poche pagine'},
+         {piu:true, r:'con un capitolo sulla', n:'Follia', d:'letta non come perdita della ragione ma come una parte che si stacca e si mette al posto del tutto: pagine che la psichiatria dell\'Ottocento leggera davvero'},
+         {r:'e la psicologia studia le facolta: intelligenza, rappresentazione,', n:'Volonta', d:'e si chiude con la volonta libera, che e il ponte verso la parte successiva'}
+       ]},
+
+      {r:'poi lo', n:'Spirito oggettivo', d:'dove la liberta smette di essere interiore e prende forma in istituzioni',
+       f:[
+         {r:'il primo grado e il', n:'Diritto astratto', d:'io sono una persona, ho una volonta, e questo si manifesta nella proprieta e nel contratto'},
+         {r:'il secondo e la', n:'Moralita', d:'l\'interiorita, l\'intenzione, la coscienza morale: il livello di Kant, che Hegel giudica necessario e vuoto'},
+         {r:'il terzo e l\'', n:'Eticita', d:'la liberta realizzata in forme condivise, dove il dovere non e piu contro l\'inclinazione'},
+         {r:'e ha tre momenti: la', n:'Famiglia', d:'dove il legame e immediato e sentito, e nessuno calcola'},
+         {r:'la', n:'Societa civile', d:'dove ciascuno persegue il proprio interesse e, senza volerlo, soddisfa quello degli altri'},
+         {r:'e lo', n:'Stato', d:'dove il particolare e l\'universale devono conciliarsi: non un guardiano degli interessi, ma la forma in cui una comunita si sa',
+          f:[{piu:true, r:'con un\'affermazione che gli e costata moltissimo, lo Stato come', n:'Ingresso di Dio nel mondo', d:'una formula retorica letta poi come divinizzazione dello Stato: nel contesto significa che li la liberta prende corpo, non che il governo sia sacro'}]}
+       ]},
+
+      {r:'e proprio nella societa civile trova un problema che non', n:'Sa risolvere', d:'l\'unico punto in cui il sistema dichiara di non chiudersi',
+       f:[
+         {r:'la societa moderna e un', n:'Sistema dei bisogni', d:'ognuno lavora per il proprio interesse e in questo modo produce cio che serve a tutti gli altri'},
+         {r:'e funziona benissimo, moltiplicando insieme la ricchezza e la', n:'Dipendenza', d:'nessuno produce piu cio che consuma, e ciascuno dipende da migliaia di sconosciuti'},
+         {r:'ma la divisione del lavoro rende il lavoro sempre piu', n:'Astratto e meccanico', d:'gesti sempre piu semplici e ripetuti, che alla fine una macchina puo fare al posto dell\'uomo'},
+         {r:'e produce una massa che scende sotto un certo', n:'Tenore di vita', d:'quello che quella societa considera necessario per vivere da suoi membri'},
+         {r:'che diventa', n:'Plebe', d:'e non per la poverta in se: per la disposizione d\'animo che nasce quando si perde il senso di avere dei diritti',
+          f:[
+            {r:'cioe la perdita dell\'onore che viene dal', n:'Vivere del proprio lavoro', d:'chi riceve senza guadagnare perde qualcosa che il denaro ricevuto non restituisce'},
+            {piu:true, r:'disposizione che secondo lui puo nascere anche fra i', n:'Ricchi', d:'l\'idea di poter comprare tutto, e che il diritto non valga per se: e la stessa perdita del legame, dall\'altro capo'}
+          ]},
+         {r:'e la conclusione e che, nonostante l\'eccesso di ricchezza, la societa non e', n:'Abbastanza ricca', d:'non possiede in cio che ha di proprio abbastanza per governare l\'eccesso di poverta'}
+       ]},
+
+      {r:'e si chiude con lo', n:'Spirito assoluto', d:'i tre modi in cui una comunita si rende conto di che cosa sia',
+       f:[
+         {r:'il primo e l\'', n:'Arte', d:'la verita che si mostra in forma sensibile: una statua, un tempio, una tragedia'},
+         {r:'che pero, secondo lui, ha smesso di essere la forma', n:'Piu alta', d:'per i greci lo era; per noi l\'arte non e piu il modo in cui una societa dice le cose che le importano di piu'},
+         {r:'con la tesi discussa della', n:'Morte dell\'arte', d:'non che l\'arte finisca, ma che non sia piu il luogo dove si decide che cosa e vero',
+          f:[{piu:true, r:'affermata mentre attorno a lui lavoravano', n:'Beethoven, Goethe e i romantici', d:'ed e la ragione per cui quasi nessuno gliel\'ha perdonata'}]},
+         {r:'il secondo e la', n:'Religione', d:'la stessa verita in forma di rappresentazione: racconti, immagini, figure'},
+         {piu:true, r:'nella forma della comunita che si riconosce in una', n:'Fede condivisa', d:'non le convinzioni private di ciascuno: cio che un popolo ritiene sacro e da cui fa dipendere le proprie leggi'},
+         {r:'e il terzo e la', n:'Filosofia', d:'la stessa verita in forma di concetto: nessun contenuto nuovo, un altro modo di possederlo'},
+         {r:'per cui filosofia e religione hanno lo stesso', n:'Contenuto', d:'e differiscono solo per la forma: affermazione che i teologi non hanno gradito e che i suoi allievi hanno letto in due modi opposti'}
+       ]}
+    ],
+    incroci:[
+      {da:'Sistema dei bisogni', a:'Abbastanza ricca', r:'produce da se la ragione per cui la societa non e',
+       perche:'Non si tratta di un difetto accidentale che una politica migliore correggerebbe: e lo stesso meccanismo che genera la ricchezza a generare la poverta, perche la divisione del lavoro moltiplica la produzione e insieme rende superflue intere categorie di lavoratori. Hegel esamina le soluzioni disponibili e le scarta una per una. È il solo punto del sistema in cui dichiara di non avere una conciliazione.'},
+      {da:'Vivere del proprio lavoro', a:'Plebe', r:'e cio la cui perdita produce la',
+       perche:'La distinzione e sottile e decisiva: povero e chi non ha, plebe e chi ha smesso di sentirsi titolare di diritti. Ne segue che l\'assistenza pura non risolva, perche restituisce il denaro e non l\'onore di guadagnarlo, e che dare lavoro artificiale produca beni che nessuno compra. La difficolta non e economica ma riguarda cio che tiene qualcuno dentro una comunita.'},
+      {da:'Ricchi', a:'Dipendenza', r:'sono presi nella stessa',
+       perche:'La disposizione della plebe puo nascere anche in cima, quando si crede di poter comprare tutto e che le regole comuni non valgano per se. In entrambi i casi si e usciti dal legame reciproco che tiene insieme la societa civile — uno perche non ha piu niente da scambiare, l\'altro perche crede di non aver bisogno di scambiare. La dipendenza reciproca resta, ed e negata dai due capi opposti.'},
+      {da:'Salto', a:'Circolo di circoli', r:'mette in questione la tenuta del',
+       perche:'Se il sistema e un cerchio in cui ogni parte deriva dalle altre, il passaggio dalla logica alla natura deve essere una derivazione come le altre. I critici sostengono che li il cerchio si spezzi, perche da concetti non si ricava un mondo. Chi difende Hegel risponde che il passaggio non e una deduzione ma il riconoscimento che il pensiero non basta a se stesso — e allora resta da spiegare perche venga presentato come necessario.'},
+      {da:'Divenire', a:'Misura', r:'e lo schema che si ritrova nel passaggio della',
+       perche:'La logica non elenca concetti: mostra come ciascuno, spinto fino in fondo, produca il successivo. Essere e nulla passano l\'uno nell\'altro e il loro passaggio e il divenire; la quantita cresciuta oltre una soglia produce una qualita nuova. L\'esempio dell\'acqua che a cento gradi cambia stato e il modo migliore per far vedere in classe che cosa significhi che una determinazione si rovescia.'},
+      {da:'Abitudine', a:'Astratto e meccanico', r:'ha lo stesso doppio volto del lavoro',
+       perche:'L\'abitudine libera dallo sforzo di decidere ogni gesto ed e la condizione di qualunque abilita; nello stesso movimento rende automatici, cioe capaci di fare senza esserci. Il lavoro industriale fa la stessa cosa su scala sociale: rende possibile una produzione enorme e riduce ciascun gesto a qualcosa che una macchina puo eseguire meglio. Hegel descrive le due cose in due parti diverse del sistema con le stesse parole.'},
+      {da:'Sue parole', a:'Alla rovescia', r:'consiglia prudenza anche quando una tesi si legge',
+       perche:'Molte affermazioni piu ridicolizzate di Hegel sulla natura provengono dalle aggiunte, cioe da appunti presi a lezione e inseriti dai curatori dopo la sua morte. Prima di attribuirgli una tesi conviene verificare se stia in un paragrafo scritto da lui o in un\'aggiunta: e una precauzione elementare che gran parte della sua fortuna comica ha ignorato.'},
+      {da:'Moralita', a:'Eticita', r:'e giudicata vuota e viene superata nell\'',
+       perche:'Il livello dell\'intenzione — quello di Kant — e necessario, perche senza interiorita non c\'e responsabilita, e insufficiente, perche non dice che cosa fare. L\'eticita e il momento in cui il dovere non e piu contro l\'inclinazione: si fa la cosa giusta perche si e cresciuti in una famiglia e in istituzioni che l\'hanno resa naturale. È la risposta di Hegel a Kant, ed e anche il punto in cui rischia di rendere sacri i costumi esistenti.'},
+      {da:'Ingresso di Dio nel mondo', a:'Stato', r:'e la formula che ha compromesso la lettura dello',
+       perche:'L\'espressione e retorica e nel contesto significa che nello Stato la liberta prende corpo invece di restare un\'intenzione. Letta fuori contesto e diventata la prova che Hegel avrebbe divinizzato il potere, e il Novecento gliel\'ha fatta pagare. È un caso esemplare di una frase infelice che pesa piu di cento pagine argomentate — e vale la pena mostrarlo agli studenti anche come lezione sul citare.'},
+      {da:'Morte dell\'arte', a:'Filosofia', r:'e la conseguenza dell\'aver messo in cima la',
+       perche:'Se la stessa verita si presenta in tre forme — sensibile nell\'arte, rappresentativa nella religione, concettuale nella filosofia — e se la forma piu adeguata e l\'ultima, allora l\'arte e destinata a non essere piu il luogo in cui una societa decide che cosa conti. La tesi e coerente con il sistema e ha contro di se duecento anni di storia dell\'arte: e uno dei punti in cui il sistema ha previsto male.'},
+      {da:'Contenuto', a:'Religione', r:'condiviso con la filosofia relativizza la',
+       perche:'Dire che filosofia e religione abbiano lo stesso contenuto e differiscano per la forma e stata la fonte di un equivoco durato decenni. La destra hegeliana lo ha letto come conferma della verita del cristianesimo; la sinistra come riduzione della religione a un modo immaginoso di dire cio che la filosofia dice meglio. Il testo consente le due cose, e Feuerbach entrera esattamente da qui.'},
+      {da:'Impotenza della natura', a:'Ogni dettaglio', r:'e la ragione per cui non si deve pretendere di dedurre',
+       perche:'Hegel dichiara che la natura non riesce a tenere ferme le proprie forme e produce eccezioni e casi irregolari, e che pretendere di dedurre filosoficamente ogni particolare sarebbe assurdo. È un\'ammissione di limite piu esplicita di quanto i suoi lettori ammettano, e rende ingiuste alcune delle prese in giro piu diffuse sul suo conto — non tutte.'},
+      {da:'Reale', a:'Concetto', r:'e cio a cui appartengono anche le determinazioni raccolte nel',
+       perche:'La tesi che le categorie del pensiero siano anche le articolazioni del reale e la scommessa dell\'intera logica: se fossero solo nostre, si tornerebbe a Kant e alla cosa in se. Su questo si gioca tutto il sistema, e su questo si dividono i lettori: chi ci sta ha una filosofia che raggiunge le cose, chi non ci sta ha un\'architettura magnifica che descrive solo il nostro modo di pensare.'}
+    ]
+  },
+  provocazione: {
+    titolo:'Non abbastanza ricca',
+    durata:'55 minuti',
+    domandaMadre:'Una societa puo diventare abbastanza ricca da non avere piu poveri?',
+    perche:'Nel paragrafo 245 dei Lineamenti Hegel scrive che, nonostante l\'eccesso di ricchezza, la societa civile non e abbastanza ricca per governare l\'eccesso di poverta. È l\'unico punto in cui il filosofo del sistema che concilia tutto dichiara di non avere una soluzione, e lo fa dopo aver esaminato e scartato una per una le vie disponibili. La classe deve arrivarci per gradi: prima capire che il sistema dei bisogni produce insieme ricchezza e dipendenza, poi che il problema non e la mancanza di risorse, e infine incontrare la distinzione fra poverta e plebe — che non riguarda quanto si ha ma se ci si sente ancora titolari di diritti. Il capitolo serve anche a mostrare che ammettere un problema irrisolto e piu onesto che chiuderlo, e che e esattamente da quel buco che entrera Marx.',
+    occorrente:'Niente.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'Una societa\nproduce piu ricchezza\ndi qualunque altra\nnella storia.\n\nHa macchine,\nfabbriche,\ncommerci,\nleggi.\n\nE produce poveri.\n\nLa spiegazione\nche sentite sempre:\n\nnon abbiamo ancora\nfatto abbastanza.\n\nCi vogliono\npiu risorse,\npiu politiche,\npiu tempo.\n\nÈ un problema\nnon ancora risolto.\n\nAdesso una frase\nscritta nel 1820\nda un professore\nche passa per essere\nquello che giustifica\ntutto quello che esiste.\n\nDice:\n\nnonostante\nl\'eccesso di ricchezza,\n\nla societa civile\n\nnon e\nabbastanza ricca.',
+       parlato:'Presenta prima la spiegazione consueta, e presentala bene: non e sciocca. La poverta come problema non ancora risolto e la posizione della maggioranza delle persone ragionevoli.\n\nPoi metti la frase e lascia che ci pensino. La cosa che colpisce e la struttura: non dice che manchino risorse. Dice che ce ne sono troppe e che non bastano.\n\nChiedi che cosa possa significare, e raccogli i tentativi. Di solito qualcuno arriva alla soluzione giusta e non se ne accorge: che il problema non sia la quantita.\n\nPoi il dato che serve a togliere l\'idea che sia una battuta: Hegel ci arriva dopo dieci paragrafi in cui esamina le soluzioni possibili e le scarta una per una. Non e uno slogan: e un fallimento dichiarato.\n\nE aggiungi chi lo scrive, perche cambia il peso della frase. Non un rivoluzionario: il filosofo ufficiale della Prussia, quello a cui si attribuisce la formula secondo cui cio che e reale e razionale.\n\nChiudi con la domanda dell\'ora, formulata in modo che nessuno possa cavarsela con la buona volonta.',
+       seDicono:[
+         {loro:'«Basterebbe distribuire meglio.»',
+          tu:'È la prima risposta di tutti e la teniamo, perche Hegel la esamina e ci trova un problema che non ti aspetti: non economico. Se ricevi quello che ti serve senza guadagnarlo, hai risolto la fame e non hai restituito una cosa che, secondo lui, conta quanto la fame. Fra mezz\'ora vediamo quale.'},
+         {loro:'«Nel 1820 non c\'era il welfare.»',
+          tu:'Giusto, e infatti lui vede nascere le prime forme di assistenza pubblica in Inghilterra e le discute. La sua obiezione non e che non funzionino: e che curino un sintomo lasciando in piedi il meccanismo che lo produce. Se ha torto, bisogna mostrare che il meccanismo non c\'e.'}
+       ]},
+
+      {minuti:'8–17', et:'Lo schieramento',
+       schermo:'Due posizioni.\n\nA.\nLa poverta\ne un problema\nnon ancora risolto.\n\nCon abbastanza ricchezza\ne le politiche giuste\nsi elimina.\n\nB.\nLa poverta\ne un prodotto.\n\nQuesto tipo di societa\nla genera\nmentre genera ricchezza,\n\ne piu produce\npiu ne produce.\n\nSchieratevi.',
+       opzioni:['la poverta e un problema non ancora risolto: con abbastanza risorse si elimina', 'la poverta e un prodotto di come questa societa funziona'],
+       parlato:'Fai schierare e conta. Le due posizioni si dividono, e in una classe di quinta la discussione parte da sola: contieni e organizza.\n\nMetti alla prova la A con una domanda di fatto: negli ultimi due secoli la ricchezza prodotta e cresciuta in modo enorme. La poverta e sparita?\n\nRaccogli. Poi precisa, perche l\'onesta qui conta: la poverta assoluta e diminuita moltissimo, ed e un fatto che non va nascosto. La domanda resta: perche nelle societa piu ricche della storia esistono ancora persone che non riescono a stare al passo?\n\nMetti alla prova la B con la domanda opposta: se e la ricchezza a produrre poverta, converrebbe produrne meno? Nessuno lo sostiene. Allora la posizione B deve dire con precisione che cosa nel meccanismo genera il problema — non basta dire che il sistema e ingiusto.\n\nQuesto e il punto in cui la classe si accorge di avere due slogan e nessuna analisi. Nominalo, e di\' che l\'ora serve a sostituirli con qualcosa che si possa controllare.',
+       seDicono:[
+         {loro:'«I poveri di oggi stanno meglio dei ricchi di allora.»',
+          tu:'Su molte cose e vero, e va detto. Nota pero che povero non e un valore assoluto: significa non riuscire a vivere come i propri concittadini considerano necessario. Chi non ha uno smartphone oggi e tagliato fuori da servizi che allora non esistevano. La soglia si sposta con la societa, ed e esattamente cio che Hegel osserva.'},
+         {loro:'«È colpa di chi non si impegna.»',
+          tu:'Prendiamola sul serio invece di scartarla. In parte, in certi casi, e cosi. Ma la tua spiegazione deve reggere il dato di massa: quando in una crisi diecimila persone perdono il lavoro nello stesso mese, non hanno smesso tutte insieme di impegnarsi. Le spiegazioni individuali non spiegano i fenomeni collettivi.'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'Come funziona\nuna societa moderna,\nsecondo Hegel.\n\nOgnuno lavora\nper il proprio interesse.\n\nIl fornaio non fa il pane\nper sfamarti:\nlo fa per guadagnare.\n\nE cosi facendo\nti sfama.\n\nOgnuno,\ncercando il proprio,\n\nproduce\ncio che serve\na tutti gli altri.\n\nLui la chiama\nsistema dei bisogni.\n\nFunziona benissimo.\n\nE fa due cose\ninsieme.\n\nProduce ricchezza\ncome nessun sistema\nprima.\n\nE rende ciascuno\ndipendente\nda migliaia\ndi sconosciuti.\n\nNessuno di voi\nprodurrebbe da solo\nnemmeno\nla propria colazione.',
+       parlato:'Costruisci il meccanismo con calma, perche e la parte analitica e senza di essa la lezione diventa indignazione.\n\nPrimo pezzo: il sistema dei bisogni. Fai fare la prova. Chiedi quante persone servono per la loro colazione: chi coltiva, chi trasporta, chi impacchetta, chi vende, chi ha costruito il camion, chi ha estratto il petrolio. Arrivano a numeri enormi e nessuno di quelli li conosce.\n\nSecondo pezzo, e va detto perche non e ovvio: questa dipendenza non e un male. È cio che rende possibile che voi stiate qui invece di coltivare grano. La divisione del lavoro produce insieme la ricchezza e il legame.\n\nTerzo pezzo: il rovescio. La stessa divisione rende ogni gesto piu semplice e piu ripetitivo, finche una macchina lo fa meglio. Hegel lo scrive nel 1820, guardando le prime fabbriche inglesi.\n\nQuarto pezzo: la conseguenza. Si forma una massa che scende sotto il tenore di vita che quella societa considera necessario. Non povera in astratto: povera secondo le misure del proprio tempo e del proprio luogo.\n\nAdesso la distinzione che vale l\'ora, e falla lentamente.\n\nHegel non chiama plebe chi e povero. Chiama plebe cio che nasce quando qualcuno perde il senso di avere dei diritti — quando smette di sentirsi uno che fa parte.\n\nFai notare la differenza pratica: alla prima cosa si risponde con i soldi, alla seconda no.',
+       seDicono:[
+         {loro:'«Ma è Adam Smith, la mano invisibile.»',
+          tu:'Ottimo collegamento, ed e vero: Hegel legge gli economisti inglesi e li ammira. La differenza e che Smith guarda soprattutto cio che il meccanismo produce, e Hegel guarda anche chi resta fuori dal meccanismo. Non lo confuta: lo continua fino alle conseguenze che l\'altro non aveva descritto.'},
+         {loro:'«Allora la colpa è delle macchine.»',
+          tu:'Attento, perche e un vicolo cieco: le macchine hanno anche liberato milioni di persone da lavori che distruggevano i corpi. Il problema non e la macchina, e che il guadagno di produttivita e le perdite ricadono su persone diverse. Formulata cosi diventa una domanda politica, che si puo discutere; formulata contro le macchine diventa nostalgia.'}
+       ]},
+
+      {minuti:'28–38', et:'Il testo',
+       schermo:'Paragrafo 245.\n\nHegel ha appena elencato\nle soluzioni.\n\nMantenere i poveri\na spese dei ricchi:\n\nsi assicura\nil loro sostentamento\nsenza il tramite\ndel lavoro,\n\ne questo contraddice\nil principio\nsu cui la societa si regge —\n\nil sentimento\ndi indipendenza e onore\ndi ciascuno.\n\nDare loro lavoro:\n\nsi aumenta la produzione,\nma il male sta proprio\nnell\'eccesso di produzione\ne nella mancanza\ndi consumatori;\n\nquindi si peggiora.\n\nE conclude:\n\nrisulta che,\nnonostante l\'eccesso\ndi ricchezza,\n\nla societa civile\nnon e abbastanza ricca,\n\ncioe non possiede\nnel patrimonio che le e proprio\nabbastanza\nper governare\nl\'eccesso di poverta\ne il formarsi\ndella plebe.',
+       testo:{fonte:'G. W. F. Hegel, Lineamenti di filosofia del diritto, §§ 243-245 (1820)',
+              glossa:'Sono i paragrafi in cui il sistema dichiara di non chiudersi, e conviene farlo notare esplicitamente: l\'autore che passa per il filosofo della conciliazione totale, arrivato a questo punto, esamina le vie d\'uscita e le scarta tutte. L\'assistenza diretta risolve la sussistenza e toglie ciò che secondo lui tiene una persona dentro la comunità, cioè vivere del proprio lavoro; il lavoro creato artificialmente aggrava la sovrapproduzione, che è già la causa del problema. La formula «non abbastanza ricca» va letta alla lettera: non manca la quantità, manca il modo di far arrivare quella quantità senza distruggere il principio su cui la società si regge. Nei paragrafi immediatamente successivi Hegel indica la colonizzazione come sbocco — cioè spingere il problema fuori dai propri confini — e questo dice quanto poco ne avesse trovato uno interno. Il giovane Marx leggerà questi paragrafi con estrema attenzione.'},
+       parlato:'Leggi il passo e fermati sulla prima soluzione scartata, perche e quella che la classe aveva proposto all\'inizio.\n\nSpiega l\'obiezione senza addolcirla e senza sposarla. Hegel dice che ricevere il necessario senza guadagnarlo contraddice il principio su cui quella societa si tiene, cioe il sentimento di indipendenza e di onore.\n\nApri la discussione, perche e viva e riguarda oggi. Domanda: e vero? Chi riceve un sussidio perde qualcosa che il denaro non restituisce?\n\nRaccogli entrambe le posizioni e trattale con lo stesso rispetto. C\'e chi risponde che e una tesi comoda per chi non vuole pagare; c\'e chi risponde che la dignita di guadagnarsi da vivere e reale e chiunque abbia perso un lavoro lo sa.\n\nDi\' chiaramente che la questione e aperta e che riguarda quasi tutte le discussioni contemporanee sui sussidi.\n\nPoi la seconda soluzione scartata, che e piu tecnica e va spiegata: dare lavoro artificialmente aumenta la produzione, e il problema era gia che si produce piu di quanto si venda.\n\nInfine il passo conclusivo. Fai notare la forma logica: non manca la quantita. Manca il modo di far arrivare quella quantita senza distruggere cio che tiene insieme la societa.\n\nE aggiungi il seguito che quasi nessuno cita: subito dopo Hegel indica la colonizzazione, cioe spostare il problema fuori dai confini. Chiedi che cosa significhi proporre una soluzione del genere — e lascia che rispondano loro.',
+       seDicono:[
+         {loro:'«Quindi era contro l\'assistenza ai poveri?»',
+          tu:'Non esattamente: dice che va fatta e che non risolve. Sono due affermazioni diverse e le tiene insieme. La sua obiezione non e che costi troppo — e che curi la sussistenza lasciando in piedi la causa e togliendo per giunta il senso di guadagnarsi la vita. Puoi non essere d\'accordo, e allora devi rispondere a quella seconda parte.'},
+         {loro:'«La colonizzazione come soluzione è vergognosa.»',
+          tu:'Lo e, e va detto senza attenuazioni: significa esportare il proprio problema a spese di altri, e nello stesso decennio Kant aveva gia condannato quella pratica. Nota pero anche il valore diagnostico del fatto: quando un pensatore di quella statura propone una soluzione del genere, e perche non ne ha trovata nessuna dentro casa.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'Adesso due cose.\n\nLa prima.\n\nPlebe,\nper Hegel,\n\nnon significa\npovero.\n\nSignifica:\nchi ha smesso\ndi sentirsi\nuno che ha diritti.\n\nSi puo essere poveri\ne restare\ndentro la comunita.\n\nSi diventa plebe\nquando si perde\nil legame,\n\ne allora nessun sussidio\nlo ricuce.\n\nLa seconda,\ne non ve la aspettate.\n\nHegel scrive\nche la stessa disposizione\n\npuo nascere\n\nanche fra i ricchi.\n\nChi crede\ndi poter comprare tutto,\n\nchi pensa\nche le regole\nvalgano per gli altri,\n\nha fatto\nla stessa cosa:\n\nsi e sfilato\ndal legame\nreciproco.\n\nDa un capo\nperche non ha\nniente da scambiare.\n\nDall\'altro\nperche crede\ndi non aver bisogno\ndi scambiare\nniente.',
+       parlato:'Da\' la prima distinzione e falla verificare, perche e la parte che i ragazzi possono controllare sull\'esperienza.\n\nChiedi: conoscete persone che hanno poco e si sentono pienamente parte di qualcosa? Sì. E persone che non hanno bisogno di niente e si comportano come se il mondo non le riguardasse? Anche.\n\nAllora la variabile non e quanto si ha. È se si e ancora dentro uno scambio.\n\nPoi la seconda parte, che spiazza sempre. La stessa figura si forma in alto. Hegel lo dice esplicitamente, e nel Novecento e stata ripresa con quel nome.\n\nFai vedere la simmetria: chi non ha piu niente da dare e chi crede di non aver bisogno di ricevere sono usciti dallo stesso legame. Il primo e stato espulso, il secondo si e sfilato.\n\nAdesso la cosa piu importante del capitolo, e va detta come un fatto sul modo di pensare.\n\nQuesto e l\'unico punto in cui il sistema piu ambizioso della filosofia moderna dichiara di non farcela. In migliaia di pagine tutto viene ricondotto a un processo che si conclude; qui no. Hegel scrive che il problema resta e passa oltre.\n\nFai la domanda che vale la lezione: e un difetto o e un merito?\n\nLascia rispondere. Poi da\' l\'osservazione storica: un giovane di ventiquattro anni legge proprio questi paragrafi e decide che il buco non e un dettaglio ma il centro. Si chiama Marx, e la sua opera nasce da li.\n\nEnuncia il criterio generale: una teoria che dichiara che cosa non riesce a spiegare indica anche dove qualcuno dovra scavare. Una che spiega tutto non lascia a nessuno niente da fare.',
+       seDicono:[
+         {loro:'«Dire che anche i ricchi sono plebe è un modo per non parlare dei poveri.»',
+          tu:'Rischio reale, e va tenuto: se la parola serve solo a dire che siamo tutti uguali, e una furbizia. Il punto pero e diverso e piu utile: sposta l\'attenzione dalla quantita di beni al legame. E fa una previsione controllabile — che una societa possa disgregarsi anche dall\'alto, e non solo dal basso.'},
+         {loro:'«Se non aveva la soluzione, perché scriverne?»',
+          tu:'Perche descrivere bene un problema e gia un lavoro, ed e raro. Nota che l\'alternativa non era il silenzio: era chiudere il sistema fingendo che il problema non ci fosse, e sarebbe stato facilissimo. Ha preferito lasciare un buco visibile in un edificio costruito per non averne.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'La domanda era:\n\nuna societa puo diventare\nabbastanza ricca\nda non avere piu poveri?\n\nRisposta di Hegel:\n\nnon con piu ricchezza.\n\nPerche il problema\nnon e quanta ce n\'e.\n\nDa portarsi via\nuna distinzione.\n\nCi sono problemi\nche si risolvono\ncon piu risorse:\n\nmancano banchi,\ncompratene.\n\nE ci sono problemi\nprodotti\ndal modo stesso\nin cui le risorse\nvengono prodotte.\n\nA questi\naggiungere risorse\nnon serve,\n\ne a volte\nli peggiora.\n\nLa domanda\nda farsi ogni volta\ne una sola:\n\nquesto manca,\n\noppure\nviene prodotto?',
+       parlato:'Riprendi lo schieramento e chiedi chi si e spostato. Poi da\' la distinzione, che e lo strumento della lezione e vale ben oltre l\'economia.\n\nFai fare esempi loro, e vengono fuori buoni. In una classe, se manca il materiale si compra. Ma se in un gruppo di lavoro lavora sempre una persona sola, aggiungere tempo non serve: quel risultato e prodotto da come sono distribuiti i compiti.\n\nDa\' il criterio in forma di domanda: questo manca, o viene prodotto? Se manca, si aggiunge. Se viene prodotto, aggiungere alimenta il meccanismo.\n\nPoi la parte piu delicata, e va fatta con onestà. Non sto dicendo che l\'assistenza sia inutile: chi ha fame va sfamato, e questa non e una posizione discutibile. Sto dicendo che sfamare qualcuno e risolvere il problema che lo affama sono due cose diverse, e che chiamarle con lo stesso nome impedisce di fare bene tutte e due.\n\nUltima cosa, sul modo di pensare, ed e il vero lascito. Hegel ha costruito il sistema piu ambizioso mai tentato: tutto quello che esiste doveva trovare il proprio posto in un processo che si conclude. E in un punto, uno solo, ha scritto che non ci riusciva. Poteva chiuderlo con una frase e non lo ha fatto.\n\nQuando incontrate una spiegazione che spiega tutto, senza mai un punto in cui l\'autore dica che li non arriva, siate prudenti. Non e la prova che sia falsa. È la ragione per cui non potrete mai scoprire se lo e.\n\nPer il seguito: chiudiamo qui l\'idealismo tedesco. La prossima volta guardiamo qualcuno che di questo sistema non sopportava niente — e che teneva un ritratto del proprio nemico appeso in casa per detestarlo meglio.',
+       seDicono:[
+         {loro:'«Allora non si può fare niente.»',
+          tu:'Non e questo: e che non basta fare di piu la stessa cosa. Dire che un problema e prodotto da un meccanismo significa indicare dove guardare — al meccanismo — e non e affatto una resa. La resa e continuare ad aggiungere risorse dichiarandosi soddisfatti perche si e fatto qualcosa.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'I pianeti',
+       corpo:'Nel 1801 Hegel discute a Jena una dissertazione sulle orbite dei pianeti. Nella parte finale critica la legge di Titius e Bode, una regolarità numerica allora usata per prevedere dove dovessero trovarsi i pianeti, e propone una serie diversa, ricavata da Platone, che non richiedeva alcun corpo fra Marte e Giove.\n\nIl 1° gennaio di quello stesso anno era stato scoperto Cerere, proprio in quella posizione. La notizia si diffuse lentamente.\n\nDa questo episodio è nata la leggenda secondo cui Hegel avrebbe «dimostrato filosoficamente» che i pianeti non potevano essere più di sette, subito smentito dai fatti. La versione corrente è esagerata: la sua era una critica a un\'altra ipotesi numerica, non una deduzione dei pianeti. Ma la battuta ha circolato per due secoli.',
+       chiedi:'Un errore reale ma piccolo diventa la caricatura di un autore intero. Che cosa rende certi aneddoti più forti dei testi? E quando vi trovate a ripetere una storia che rende ridicolo qualcuno, che cosa dovreste verificare prima?'},
+      {titolo:'Le parole degli studenti',
+       corpo:'L\'Enciclopedia è composta di paragrafi molto brevi, spesso oscuri, seguiti da annotazioni scritte da Hegel stesso.\n\nDopo la sua morte, i curatori dell\'edizione delle opere aggiunsero delle «aggiunte», ricavate dagli appunti presi a lezione dagli studenti e dai quaderni dei suoi allievi. Sono spesso le parti più chiare e più citate del testo.\n\nMolte delle frasi che circolano come sue, comprese diverse fra le più ridicolizzate sulla natura, provengono da lì: sono ciò che qualcuno ha annotato di ciò che aveva capito.',
+       chiedi:'Che cosa autorizza ad attribuire a un autore ciò che ha detto a voce e che qualcun altro ha trascritto? E se le pagine più chiare di un libro sono quelle che l\'autore non ha scritto, che cosa dice questo sul rapporto fra scrivere e insegnare?'},
+      {titolo:'La morte dell\'arte',
+       corpo:'Nelle lezioni di estetica Hegel sostiene che l\'arte, dal lato della sua destinazione più alta, sia per noi qualcosa di passato: non che smetta di essere prodotta, ma che non sia più il modo in cui una società esprime ciò che ha di più vero. Per i greci lo era, perché il divino poteva mostrarsi in una statua; per i moderni la verità richiede la forma del concetto.\n\nHegel scrive queste pagine negli anni in cui operano Beethoven, Goethe, i romantici tedeschi, e mentre nascono il romanzo moderno e la pittura di paesaggio.\n\nLa tesi è stata ripresa, discussa e rovesciata per due secoli, e non è mai stata liquidata del tutto.',
+       chiedi:'L\'arte è ancora il luogo dove una società dice le cose che le importano di più, oppure quel posto lo occupa qualcos\'altro? E se lo occupa qualcos\'altro, che cosa — e da quando?'}
+    ],
+    testi:[
+      {fonte:'Hegel, Enciclopedia delle scienze filosofiche, §§ 18-19 e 574-577 (1830)',
+       corpo:'Hegel presenta la filosofia come un circolo di circoli: ciascuna delle sue parti è un tutto compiuto, e insieme rinvia alle altre, così che l\'insieme non ha un inizio che stia fuori di esso e la fine riconduce al principio. Le tre parti sono la logica, come scienza dell\'idea in sé e per sé, la filosofia della natura, come scienza dell\'idea nel suo essere altro, e la filosofia dello spirito, come scienza dell\'idea che dal proprio essere altro ritorna in sé.',
+       glossa:'L\'immagine del circolo spiega perché non esista, in Hegel, un punto di partenza indubitabile alla maniera di Cartesio: il sistema si giustifica per come si tiene insieme, non per un fondamento posto all\'inizio. Ha un\'implicazione onesta e una scomoda. Onesta: nessuna parte è privilegiata, e ognuna va giudicata anche per come regge le altre. Scomoda: un insieme che si sostiene da sé non può essere attaccato dall\'esterno, e questo lo rende difficilissimo da mettere alla prova.'},
+      {fonte:'Hegel, Lineamenti di filosofia del diritto, § 244 (1820)',
+       corpo:'Hegel osserva che quando una gran massa di persone scende al di sotto del tenore di vita che una società considera necessario per i propri membri, e perde con ciò il sentimento del diritto, della rettitudine e dell\'onore che deriva dal sussistere per la propria attività e il proprio lavoro, si produce la plebe; e aggiunge che questa condizione porta con sé una disposizione d\'animo interiore che può nascere anche dalla parte della ricchezza.',
+       glossa:'Il paragrafo introduce una distinzione che vale ancora: la povertà è una condizione materiale, la plebe è ciò che accade quando qualcuno smette di sentirsi titolare di diritti. Ne segue che la risposta puramente economica sia insufficiente, e che il problema riguardi l\'appartenenza a una comunità prima che il reddito. L\'osservazione finale — che la stessa disposizione possa nascere fra i ricchi — è la più sorprendente e la meno citata, e mostra che il criterio non è la quantità di beni ma l\'essere dentro o fuori uno scambio reciproco.'},
+      {fonte:'Hegel, Lezioni di estetica, introduzione (postume, 1835)',
+       corpo:'Hegel afferma che nella condizione presente del mondo l\'arte, considerata nella sua destinazione più alta, resti per noi qualcosa di passato: essa ha perduto la verità e la vita autentiche, e si è trasferita nelle nostre rappresentazioni anziché affermare nella realtà la sua antica necessità; e aggiunge che il pensiero e la riflessione hanno superato le belle arti.',
+       glossa:'La tesi non annuncia la fine della produzione artistica ma il declassamento della sua funzione: l\'arte non è più il luogo in cui una società stabilisce che cosa sia vero. Va notato che Hegel la formula in un\'epoca di straordinaria produzione artistica, e questo la rende più interessante e non meno: non è la constatazione di una decadenza, è un\'affermazione sulla forma in cui una civiltà pensa se stessa. Conviene metterla alla prova in classe chiedendo dove quel ruolo si sia spostato oggi.'}
+    ],
+    compito:'Mezza pagina. Scegliete un problema che vi sta a cuore — nella vostra scuola, nella vostra città, nel mondo. Provate a rispondere a una domanda sola, con argomenti e non con impressioni: questo problema esiste perché manca qualcosa, o perché viene prodotto da come funziona qualcos\'altro? Se rispondete «manca», dite che cosa e quanto. Se rispondete «viene prodotto», dite quale meccanismo lo produce e che cosa succederebbe se aggiungeste soltanto risorse.',
+    fonti:[
+      'G. W. F. Hegel, Enciclopedia delle scienze filosofiche in compendio (1817, 1827, 1830)',
+      'Lineamenti di filosofia del diritto (1820), in particolare §§ 182-256 sulla società civile',
+      'Lezioni di estetica; Lezioni sulla filosofia della religione (postume)',
+      'A. Smith, La ricchezza delle nazioni (1776), libro I — la divisione del lavoro',
+      'K. Marx, Critica della filosofia hegeliana del diritto pubblico (1843)',
+      'R. Bodei, Sistema ed epoca in Hegel; F. Ruda, Hegel\'s Rabble; D. Losurdo, Hegel e la libertà dei moderni'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',

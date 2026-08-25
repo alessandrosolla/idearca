@@ -197,7 +197,7 @@ Si va in ordine di programma. Restano:
 - [x] Filosofia moderna · 26 — Schelling
 - [x] Filosofia moderna · 27 — Hegel: i fondamenti del sistema
 - [x] Filosofia moderna · 28 — Hegel: la Fenomenologia dello spirito
-- [ ] Filosofia moderna · 29 — Hegel: l'Enciclopedia
+- [x] Filosofia moderna · 29 — Hegel: l'Enciclopedia
 - [ ] Storia contemporanea · 1 — Il Risorgimento e la prima guerra d'indipendenza
 - [ ] Storia contemporanea · 2 — L'Europa fra il 1850 e il 1870
 - [ ] Storia contemporanea · 3 — Guerra civile americana, Giappone e Cina
