@@ -13083,6 +13083,228 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Filosofia moderna · 24 — Il Romanticismo': {
+  mappa: {
+    n:'Il Romanticismo', d:'il movimento che ha inventato il modo in cui parliamo ancora di noi stessi',
+    f:[
+      {r:'e prima di tutto', n:'Una parola che resiste', d:'a chi prova a definirla, e non e un caso',
+       f:[
+         {r:'nasce come termine di', n:'Disprezzo', d:'romantico significava da romanzo: inverosimile, esagerato, roba da leggere e non da credere'},
+         {r:'e viene rivendicato dal gruppo dell\'', n:'Athenaeum', d:'la rivista dei fratelli Schlegel, 1798-1800: pochi numeri, e la nascita ufficiale del movimento'},
+         {r:'preceduto dallo', n:'Sturm und Drang', d:'tempesta e assalto: negli anni Settanta il giovane Goethe, Herder, il primo Schiller'},
+         {r:'e si diffonde in tutta', n:'Europa', d:'con tempi diversi: Germania e Inghilterra per prime, Francia e Italia con vent\'anni di ritardo'},
+         {r:'senza avere un', n:'Manifesto', d:'chi ne fa parte rifiuta per principio le definizioni: definire significa fissare, e loro vogliono cio che diventa',
+          f:[{piu:true, r:'per cui ne esistono decine di', n:'Definizioni incompatibili', d:'ed e una prova storica del fatto che i movimenti si riconoscono meglio da cio che rifiutano'}]},
+         {r:'con un rifiuto comune, quello del', n:'Secolo dei lumi', d:'o meglio di una sua parte: la ragione che calcola, l\'universale astratto, il modello unico'},
+         {r:'e con una data che pesa piu di ogni teoria, il', n:'1789', d:'la Rivoluzione entusiasma i giovani, il Terrore li respinge, e la delusione politica si trasforma in ricerca interiore'}
+       ]},
+
+      {r:'sta insieme contro l\'Illuminismo e', n:'Dentro di esso', d:'e leggerlo come una semplice reazione fa perdere la meta della faccenda',
+       f:[
+         {r:'rifiuta la ragione', n:'Calcolante', d:'quella che misura, scompone e prevede: dicono che veda i pezzi e perda il vivente'},
+         {r:'rifiuta il', n:'Modello unico di uomo', d:'l\'idea che esista un solo modo giusto di vivere, valido per ogni tempo e ogni luogo'},
+         {r:'rifiuta il', n:'Progresso lineare', d:'la storia non e una scala che sale: e un albero che si ramifica, e cio che si perde non torna piu'},
+         {r:'ma eredita l\'idea di', n:'Liberta', d:'e la porta piu lontano: non solo libera dai poteri, anche dalle convenzioni, dai ruoli e dai mestieri di famiglia'},
+         {r:'e nasce da Kant contro le sue intenzioni,', n:'Togliendo il limite', d:'se e il soggetto a dare forma a cio che appare, perche fermarsi davanti alla cosa in se',
+          f:[{piu:true, r:'operazione che Kant giudica un', n:'Fraintendimento', d:'lo dichiara pubblicamente in una lettera aperta del 1799, e non serve assolutamente a nulla'}]}
+       ]},
+
+      {r:'ha una parola d\'ordine, la', n:'Sehnsucht', d:'e non si traduce bene in nessuna lingua',
+       f:[
+         {r:'e un desiderio', n:'Senza oggetto', d:'non si sa che cosa si voglia, e ottenere qualcosa non lo placa'},
+         {r:'perche cio che cerca e l\'', n:'Infinito', d:'non un oggetto molto grande, ma cio che nessun oggetto puo esaurire'},
+         {r:'e cosi ogni cosa finita risulta', n:'Insufficiente', d:'ogni meta raggiunta delude, non perche sia poca, ma perche e una cosa fra le cose'},
+         {r:'da cui la figura del', n:'Viandante', d:'chi cammina senza arrivare, e a cui il cammino dice piu della meta'},
+         {r:'e il gusto per la', n:'Notte', d:'la nebbia, la rovina, il crepuscolo: cio che non ha contorni netti e lascia lavorare l\'immaginazione'},
+         {r:'e l\'invenzione dell\'', n:'Ironia romantica', d:'l\'artista sta sopra la propria opera, la costruisce e la smonta, perche nessuna forma finita puo contenere l\'infinito',
+          f:[{piu:true, r:'da cui opere', n:'Volutamente incompiute', d:'il frammento diventa un genere: una cosa interrotta suggerisce piu di una conclusa'}]}
+       ]},
+
+      {r:'sposta il centro', n:'Verso l\'interno', d:'la via misteriosa, scrive Novalis, va verso l\'interno',
+       f:[
+         {r:'e il sentimento diventa un modo di', n:'Conoscere', d:'non l\'opposto della ragione, ma cio che raggiunge dove la ragione non arriva'},
+         {r:'l\'arte diventa', n:'Organo della verita', d:'non un ornamento e non un\'imitazione: il modo in cui l\'assoluto si lascia vedere'},
+         {r:'il', n:'Genio', d:'viene ereditato da Kant e liberato dalle sue cautele: la regola viene dall\'artista, non l\'artista dalla regola'},
+         {r:'e la musica diventa l\'arte', n:'Piu alta', d:'perche non rappresenta nulla e non si lascia tradurre in concetti: dice cio che nessuna parola raggiunge'},
+         {r:'nasce il', n:'Romanzo di formazione', d:'la storia di come qualcuno diventa se stesso, che prima non era una storia degna di essere raccontata'},
+         {r:'e si diffonde il', n:'Diario', d:'con l\'autobiografia e la lettera: si comincia a scrivere per capire chi si e',
+          f:[{piu:true, r:'operazione che oggi chiamiamo', n:'Vita interiore', d:'la diamo per naturale ed e stata costruita: prima si scriveva di se per confessare peccati o per lasciare memoria di fatti'}]}
+       ]},
+
+      {r:'e afferma che', n:'Ogni uomo ha la sua misura', d:'la frase da cui discende quasi tutto il nostro modo di parlare di noi',
+       f:[
+         {r:'Herder scrive che ogni uomo e ogni popolo porta in se il proprio', n:'Centro di felicita', d:'e non lo si giudica con il metro di un altro'},
+         {r:'da cui l\'', n:'Originalita', d:'non essere bravi secondo un modello, ma essere cio che nessun modello prevedeva'},
+         {r:'e l\'ideale non e piu', n:'Conformarsi', d:'per secoli il compito e stato assomigliare a un modello: il santo, il saggio, il gentiluomo'},
+         {r:'ma', n:'Diventare cio che si e', d:'formula antichissima che qui cambia senso: non realizzare una natura comune, ma una vocazione che nessun altro ha'},
+         {r:'e il processo si chiama', n:'Bildung', d:'formazione: non si viene istruiti dall\'esterno, si cresce come cresce una pianta, da dentro e con cura',
+          f:[{piu:true, r:'idea che sta ancora dentro la parola', n:'Educare', d:'e dentro il modo in cui pensiamo talenti, vocazioni e percorsi, senza sapere piu da dove venga'}]}
+       ]},
+
+      {r:'applica la stessa idea ai popoli con il', n:'Volksgeist', d:'lo spirito di un popolo, e da qui nascono cose ottime e cose pessime',
+       f:[
+         {r:'ogni popolo ha una lingua, dei canti e un modo di sentire che', n:'Non si giudicano dall\'esterno', d:'e che non sono una versione arretrata di quelli di qualcun altro'},
+         {r:'da cui la raccolta di', n:'Fiabe e canti', d:'i fratelli Grimm e decine di altri: si va a cercare proprio cio che i colti disprezzavano'},
+         {r:'e la nascita della', n:'Filologia moderna', d:'con gli studi storici: ogni epoca va capita con i propri criteri e non con i nostri'},
+         {r:'con il', n:'Medioevo riabilitato', d:'i lumi lo chiamavano secoli bui; qui diventa l\'eta delle cattedrali, delle comunita e della fede viva'},
+         {r:'e una nuova idea di', n:'Nazione', d:'non un\'unita amministrativa ma una comunita di lingua, di memoria e di destino',
+          f:[{piu:true, r:'che in Herder e ancora', n:'Senza gerarchia', d:'ogni popolo vale quanto gli altri e nessuno e il metro: e la meta che i suoi eredi lasceranno cadere per prima'}]}
+       ]},
+
+      {r:'e ripensa la', n:'Natura', d:'contro l\'immagine che la rivoluzione scientifica aveva imposto',
+       f:[
+         {r:'rifiuta la natura', n:'Macchina', d:'quella di Cartesio e di Newton: pezzi, urti, leggi, e nessuna vita da nessuna parte'},
+         {r:'e propone la natura', n:'Organismo', d:'un tutto vivo in cui la parte esiste per il tutto e il tutto vive in ogni parte'},
+         {r:'per Schelling e', n:'Spirito visibile', d:'la natura e lo spirito addormentato, lo spirito e la natura che si e svegliata'},
+         {r:'con un rapporto che non e di', n:'Dominio', d:'non si tratta di piegarla ma di riconoscersi in essa: e la radice lontana di ogni ecologia'},
+         {r:'e il paesaggio smette di essere uno', n:'Sfondo', d:'in pittura diventa il soggetto, e dipingere una montagna diventa un modo di dire uno stato d\'animo'},
+         {r:'e produce una', n:'Naturphilosophie', d:'che ispira ricerche vere e insieme molta speculazione senza controllo',
+          f:[{piu:true, r:'con un bilancio', n:'Contrastato', d:'Oersted trova il legame fra elettricita e magnetismo cercando l\'unita della natura; altri riempiono pagine che nessuno ha mai potuto verificare'}]}
+       ]},
+
+      {r:'e lascia', n:'Due eredi', d:'che discendono dalla stessa idea e non si somigliano affatto',
+       f:[
+         {r:'da un lato l\'', n:'Individuo moderno', d:'l\'autenticita, il diritto di scegliersi la vita, il matrimonio per amore, la vocazione al posto del mestiere di famiglia'},
+         {r:'e il', n:'Diritto dei popoli a decidere di se', d:'che nel Novecento diventa il principio con cui si sciolgono gli imperi'},
+         {r:'dall\'altro il', n:'Nazionalismo organico', d:'se un popolo e un organismo, chi non gli somiglia diventa un corpo estraneo',
+          f:[{piu:true, r:'passaggio che avviene', n:'Togliendo una meta', d:'si conserva che ogni popolo abbia il proprio spirito e si butta via che tutti valgano allo stesso modo'}]},
+         {r:'e resta l\'idea che l\'amore sia una', n:'Ragione sufficiente', d:'per sposarsi, per partire, per rompere con la famiglia: prima era una complicazione, adesso e un titolo'},
+         {r:'e il culto del', n:'Capo ispirato', d:'chi sente piu degli altri, e che per questo non deve rendere conto alle regole comuni'},
+         {r:'per cui il movimento va giudicato', n:'Senza sceglierne una meta', d:'chi lo celebra dimentica il seguito, chi lo condanna dimentica quanto di noi ne dipende'}
+       ]}
+    ],
+    incroci:[
+      {da:'Togliendo il limite', a:'Spirito visibile', r:'e cio che rende possibile affermare che la natura sia',
+       perche:'Kant aveva separato cio che appare da cio che e in se, e messo un confine invalicabile. I romantici tolgono il confine: se il soggetto da\' forma al mondo, allora fra spirito e natura non c\'e un abisso ma una differenza di grado. Da qui la formula di Schelling e l\'idea che studiando la natura si studi una forma addormentata di noi stessi.'},
+      {da:'Centro di felicita', a:'Volksgeist', r:'viene esteso dai singoli ai popoli come',
+       perche:'La stessa idea funziona su due scale: ogni uomo ha una misura propria, e ogni popolo pure. In Herder e un principio contro la presunzione europea di essere il metro dell\'umanita. Applicata ai popoli, pero, la formula produrra conseguenze che applicata ai singoli non produce — perche un popolo, a differenza di una persona, deve decidere chi ne fa parte.'},
+      {da:'Senza gerarchia', a:'Togliendo una meta', r:'e esattamente cio che si perde',
+       perche:'Herder sostiene due cose insieme: che ogni popolo abbia il proprio spirito e che nessuno valga piu degli altri. Gli eredi tengono la prima e lasciano cadere la seconda, e ottengono una dottrina opposta con le stesse parole. È il caso piu istruttivo di come si possa tradire un pensiero senza contraddirlo: basta smettere di dirne una parte.'},
+      {da:'Bildung', a:'Romanzo di formazione', r:'e cio che il',
+       perche:'Se la formazione e crescita da dentro, allora la vita di una persona diventa una storia con una trama: partenza, errori, incontri, e il lento diventare se stessi. Prima di allora una biografia raccontava imprese o virtu; da qui in poi racconta un\'evoluzione interiore. È la struttura di quasi ogni romanzo, film e serie che i ragazzi conoscono.'},
+      {da:'Ironia romantica', a:'Insufficiente', r:'e la risposta artistica al fatto che ogni cosa finita sia',
+       perche:'Se nessuna forma compiuta puo contenere l\'infinito, l\'artista non puo prendere sul serio fino in fondo la propria opera: la costruisce e insieme la mostra come costruita. Non e disincanto, e il modo di restare fedeli a cio che eccede. Da qui il frammento come genere e, molto piu tardi, quasi tutta l\'arte che parla di se stessa.'},
+      {da:'Genio', a:'Capo ispirato', r:'fornisce lo schema del',
+       perche:'La figura di chi crea senza dover rendere conto a regole comuni nasce in estetica e non ci resta. Trasferita in politica diventa il condottiero che sente il destino del proprio popolo e per questo non e vincolato dalle procedure. Il passaggio dall\'artista al capo e uno dei percorsi piu documentati e piu pesanti della cultura europea.'},
+      {da:'1789', a:'Verso l\'interno', r:'spiega in buona parte lo spostamento',
+       perche:'La prima generazione romantica saluta la Rivoluzione con entusiasmo, poi assiste al Terrore e alle guerre. La speranza che il mondo si trasformi per via politica si spegne, e cio che restava di quella energia si sposta sull\'arte, sull\'interiorita e sulla nazione. Non e una scelta filosofica: e una delusione storica che diventa un programma.'},
+      {da:'Progresso lineare', a:'Medioevo riabilitato', r:'viene rifiutato e con esso cade il giudizio sul',
+       perche:'Se la storia sale a gradini, un\'epoca vale quanto e vicina alla nostra, e il Medioevo e un buco. Se invece ogni epoca ha un proprio centro, allora le cattedrali, le comunita e la fede medievali vanno capite dall\'interno. Da questo rovesciamento nascono la storiografia moderna, il restauro, e anche una buona dose di nostalgia inventata.'},
+      {da:'Originalita', a:'Individuo moderno', r:'e la radice diretta dell\'',
+       perche:'L\'idea che il valore di una persona stia in cio che ha di irripetibile e cosi ovvia per noi da sembrare naturale, e ha poco piu di due secoli. Prima il compito era assomigliare a un modello riuscito. Quando qualcuno oggi dice di voler «essere se stesso» o di «cercare la propria strada», parla una lingua costruita in Germania fra il 1770 e il 1800.'},
+      {da:'Organismo', a:'Nazionalismo organico', r:'diventa pericoloso quando dalla natura passa alla politica come',
+       perche:'Pensare un tutto in cui la parte esiste per il tutto e fecondo in biologia e devastante in politica: se una comunita e un corpo, chi non le somiglia non e un cittadino con opinioni diverse ma un elemento estraneo, e si passa dal linguaggio del disaccordo a quello dell\'infezione. Le metafore, quando cambiano campo, portano con se le proprie conseguenze.'},
+      {da:'Definizioni incompatibili', a:'Volutamente incompiute', r:'sono coerenti con il gusto per opere',
+       perche:'Un movimento che considera ogni forma chiusa un tradimento dell\'infinito non poteva darsi una definizione stabile, e infatti non ce l\'ha. La difficolta che gli studiosi incontrano nel definirlo non e un problema esterno: e la stessa tesi del movimento, verificata su di esso. Conviene dirlo in classe, perche trasforma una noia in un argomento.'},
+      {da:'Naturphilosophie', a:'Calcolante', r:'nasce dal rifiuto della ragione',
+       perche:'Cercare l\'unita vivente della natura invece di scomporla ha prodotto in pochi anni due risultati opposti: la scoperta sperimentale del legame fra elettricita e magnetismo, ottenuta da un ricercatore che quell\'unita la cercava per convinzione filosofica, e montagne di pagine invereficabili. Lo stesso atteggiamento produce l\'intuizione feconda e la fantasticheria, e la differenza la fa il controllo.'},
+      {da:'Diario', a:'Diventare cio che si e', r:'e lo strumento con cui si prova a',
+       perche:'Scrivere ogni giorno di se non serve a registrare fatti, ma a costruire la continuita di una persona che si osserva mentre cambia. È una tecnica, e come tutte le tecniche produce cio che dichiara di descrivere: il diario non trova un io gia formato, contribuisce a formarlo. La cosa vale ancora, cambiati gli strumenti.'}
+    ]
+  },
+  provocazione: {
+    titolo:'Sii te stesso',
+    durata:'55 minuti',
+    domandaMadre:'«Sii te stesso»: che cosa vi sta chiedendo, esattamente?',
+    perche:'È la frase piu ripetuta che i ragazzi sentano, e nessuno gliela ha mai spiegata. Ha poco piu di due secoli: prima di Herder e dello Sturm und Drang a nessuno sarebbe venuto in mente di dirla, perche il compito era conformarsi a un modello e non differenziarsi da esso. La lezione fa vedere l\'invenzione, cioe come si passa dall\'ideale dell\'imitazione a quello dell\'originalita, e poi mette la formula sotto pressione con due domande che non hanno risposta facile: come si distingue il vero se stessi da un impulso di giornata, e che cosa si risponde a chi e autenticamente crudele. Chiude sull\'idea che la stessa formula, applicata ai popoli invece che alle persone, ha prodotto insieme il diritto all\'autodeterminazione e il nazionalismo del sangue.',
+    occorrente:'Niente.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'Sii te stesso.\n\nSegui il tuo cuore.\n\nTrova la tua strada.\n\nNon lasciare che\nti dicano chi sei.\n\nLe avete sentite tutte.\n\nAdesso una cosa\nche forse non sapete.\n\nDuemilaquattrocento anni\ndi filosofia\nnon hanno mai detto\nnessuna di queste frasi.\n\nDicevano:\n\nsii giusto.\nsii coraggioso.\nfa\' il tuo dovere.\nsta\' al tuo posto.\nassomiglia\na chi e migliore di te.\n\n«Sii te stesso»\nnasce intorno al 1770.\n\nHa due secoli e mezzo.\n\nÈ piu giovane\ndell\'Italia.\n\nQuindi la domanda e:\n\nquando ve lo dicono,\n\nche cosa\nvi stanno chiedendo\ndi fare?',
+       parlato:'Comincia dalle frasi, e falle riconoscere. Le hanno sentite da genitori, allenatori, film, canzoni e dai discorsi di fine anno.\n\nPoi da\' il dato storico e lascialo pesare qualche secondo. Nessun filosofo antico, nessun padre della Chiesa, nessun trattato medievale o rinascimentale dice di essere se stessi. Dicono tutti di assomigliare a qualcosa: al saggio, al santo, al buon cittadino.\n\nFai la verifica insieme a loro. Chiedi che consiglio avrebbe dato Aristotele, o Seneca, o un maestro medievale a un ragazzo. Nessuno risponde «segui il tuo cuore» — e infatti nessuno di loro l\'ha mai scritto.\n\nPoi la domanda dell\'ora, e falla concreta. Se io adesso vi dico di essere voi stessi, che cosa fate? Che azione compite?\n\nRaccogli le risposte senza commentare. Vengono fuori due famiglie: chi dice che significa non fingere, e chi dice che significa fare quello che si sente.\n\nScrivile entrambe alla lavagna. Sono le due strade che l\'ora percorre.',
+       seDicono:[
+         {loro:'«Vuol dire non fingere.»',
+          tu:'Questa e la versione debole e piu difendibile: non recitare una parte. Nota pero che dice solo che cosa non fare. Se togli tutte le finzioni, che cosa rimane? Qualcosa che c\'era gia sotto, oppure niente? Da questa domanda dipende tutto quello che diremo oggi.'},
+         {loro:'«È ovvio, ognuno è come è.»',
+          tu:'Se fosse ovvio non sarebbe un consiglio. A nessuno viene detto «respira» o «sii alto un metro e settanta». Che qualcuno debba dirti di essere te stesso significa che si puo non esserlo — e allora bisogna spiegare come sia possibile non essere cio che si e.'}
+       ]},
+
+      {minuti:'8–17', et:'Lo schieramento',
+       schermo:'Due posizioni.\n\nA.\nIl vero io\nc\'e gia.\nÈ sepolto\nsotto le aspettative\ndegli altri,\ne va scoperto.\n\nB.\nIl vero io\nnon c\'e ancora.\nSi costruisce\ncon quello che si fa,\ne prima non esiste\nniente da scoprire.\n\nSchieratevi.',
+       opzioni:['il vero io c\'e gia e va scoperto sotto quello che gli altri si aspettano', 'il vero io non c\'e ancora: si costruisce con quello che si fa'],
+       parlato:'Fai schierare e conta. La posizione A vince quasi sempre, perche e quella che i film raccontano.\n\nMetti alla prova la A con tre domande in fila, senza fretta.\n\nPrima: se il vero io c\'e gia, com\'e fatto? Dove sta? Chiedi di descriverlo. Si accorgono che non sanno.\n\nSeconda: come fate a sapere quando lo avete trovato? Di solito rispondono che si sente. Chiedi allora se non vi siete mai sentiti sicurissimi di volere qualcosa e poi vi siete accorti che non era vero.\n\nTerza, ed e quella che morde: dieci anni fa il vostro vero io era diverso da adesso. Uno dei due era falso? Oppure il vero io cambia — e allora in che senso e vero?\n\nPoi metti alla prova la B con altrettanto rigore. Se non c\'e niente sotto, allora «sii te stesso» non significa niente, e nessuno puo tradirsi. Ma tradire se stessi e un\'esperienza che tutti hanno fatto. Chiedi se qualcuno ha mai fatto una cosa e pensato subito «questo non sono io». Le mani si alzano.\n\nFerma li e nomina il problema: sentiamo tutti e due i lati. C\'e qualcosa da tradire, e nessuno sa dire che cosa sia.',
+       seDicono:[
+         {loro:'«Il vero io si sente, non si spiega.»',
+          tu:'Accetto che si senta, e ti faccio l\'unica domanda scomoda: si sente anche quando ti sbagli? Chi comincia una cosa convintissimo e dopo sei mesi si accorge che non era la sua strada, in quel primo momento sentiva. Il sentire c\'era e non garantiva niente. Allora serve qualcosa in piu del sentire.'},
+         {loro:'«Se me lo costruisco io, posso essere chiunque.»',
+          tu:'Non proprio: non parti da zero. Hai un corpo, una lingua, una famiglia, una storia che non hai scelto. La posizione B non dice che sei libero di essere qualunque cosa — dice che quello che sei risulta da cio che fai con cio che non hai scelto. È molto meno comodo e molto piu impegnativo.'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'Da dove viene questa idea.\n\nGermania, anni Settanta\ndel Settecento.\n\nHerder scrive una frase\nche cambia tutto:\n\nogni uomo,\nogni popolo,\nporta in se\nil proprio centro\ndi felicita,\n\ncome ogni sfera\nha il proprio centro\ndi gravita.\n\nSembra innocua.\n\nNon lo e.\n\nSignifica che non esiste\nun metro unico\nper misurare le vite.\n\nFino a quel momento\nl\'ideale era chiaro:\n\nassomigliare\nal modello giusto.\n\nDa qui in poi\nl\'ideale si rovescia:\n\nessere cio che nessun modello\naveva previsto.\n\nE nello stesso decennio\ncompaiono cose\nche prima non c\'erano:\n\nil diario personale.\nil romanzo\nche racconta come qualcuno\ndiventa se stesso.\nl\'idea di sposarsi\nper amore\ne non per famiglia.\nl\'idea di scegliersi\nun mestiere\ninvece di ereditarlo.',
+       parlato:'Presenta l\'invenzione come un\'invenzione, non come una scoperta: e la cosa che i ragazzi non si aspettano.\n\nPrimo pezzo, Herder. L\'immagine del centro di gravita e ottima e va spiegata: ogni corpo ha il proprio, e non ha senso chiedere se sia quello giusto. Cosi ogni vita.\n\nMostra contro chi e scritta. Herder polemizza con l\'idea che l\'Europa del suo tempo sia il vertice della storia e che tutti gli altri siano tappe verso di essa. Sta difendendo i popoli lontani e i tempi passati — e nello stesso movimento difende il singolo.\n\nSecondo pezzo: il rovesciamento dell\'ideale. Falli ragionare su che cosa cambia quando l\'obiettivo passa dall\'assomigliare al distinguersi. Cambia il metro del successo, cambia il rapporto con i genitori, cambia il significato della parola talento.\n\nTerzo pezzo, e conviene essere concreti: elenca le cose nate in quei trent\'anni. Il diario intimo. Il romanzo di formazione. Il matrimonio per amore come norma e non come eccezione scandalosa. La vocazione al posto del mestiere di famiglia. La firma sul quadro come marchio di uno stile e non di una bottega.\n\nPoi la frase che chiude il tempo, e falla pesare: quasi tutto quello che oggi vi sembra il modo naturale di essere una persona e stato inventato in un paio di generazioni, e prima nessuno viveva cosi.',
+       seDicono:[
+         {loro:'«Prima le persone non avevano una personalità?»',
+          tu:'Ce l\'avevano, ed erano diversissime fra loro: basta leggere qualunque cronaca antica. Quello che non c\'era e l\'idea che la differenza sia un valore e un compito. Uno strano era strano, non era autentico. Il cambiamento non riguarda le persone: riguarda che cosa si e deciso che conti.'},
+         {loro:'«Allora è tutta una moda.»',
+          tu:'Attento al salto. Che un\'idea abbia una data di nascita non la rende falsa ne superficiale: anche i diritti umani hanno una data. Sapere quando e nata serve a un\'altra cosa: a smettere di considerarla ovvia, e quindi a poterla discutere invece di subirla.'}
+       ]},
+
+      {minuti:'28–38', et:'Il testo',
+       schermo:'Herder, 1774.\n\nOgni nazione\nha il proprio centro\ndi felicita in se stessa,\n\ncome ogni sfera\nha il proprio centro\ndi gravita.\n\nE poi:\n\nil pregiudizio\ne buono\nquando fa il suo tempo,\n\nperche rende felici.\n\nSpinge i popoli\nverso il loro centro,\nli lega piu saldamente\nal loro ceppo,\nli rende piu fiorenti\ne piu adatti\nalla loro indole.\n\nLa nazione\npiu ignorante\ne piu piena di pregiudizi\n\ne spesso,\nsotto questo aspetto,\n\nla prima.',
+       testo:{fonte:'Johann Gottfried Herder, Anche una filosofia della storia per l\'educazione dell\'umanità (1774)',
+              glossa:'Il testo va letto per intero, comprese le righe scomode. Herder scrive contro la presunzione del suo secolo: contro l\'idea che esista un solo modello di civiltà — l\'Europa illuminata — rispetto al quale tutto il resto è arretrato. Da qui discendono cose enormi e in buona parte giuste: il rispetto delle culture, la storiografia che capisce un\'epoca dall\'interno, l\'idea che una vita non si giudichi con il metro di un\'altra. Ma la difesa del «pregiudizio» come collante che tiene un popolo attaccato al proprio ceppo contiene già, per intero, l\'argomento che un secolo dopo servirà a sostenere che una comunità debba restare pura. Herder aggiunge sempre che nessun popolo vale più degli altri; i suoi eredi terranno la prima metà e lasceranno cadere la seconda.'},
+       parlato:'Leggi il passo intero, senza saltare la parte sul pregiudizio: e proprio quella che rende la lezione onesta.\n\nPoi lavora sulla prima meta, che e la piu bella. L\'immagine del centro di gravita dice che ogni vita e ogni cultura ha un equilibrio proprio e che giudicarla con il metro di un\'altra e come misurare una musica con un righello.\n\nFai fare esempi loro sui popoli, e poi chiedi la traduzione sulle persone: che cosa significa che il tuo compagno di banco ha un centro diverso dal tuo?\n\nAdesso passa alla seconda meta, e non ammorbidirla. Herder dice che il pregiudizio, finche fa il suo tempo, e buono, perche tiene un popolo legato al proprio ceppo.\n\nFai la domanda scomoda: vi suona bene?\n\nQuasi sempre no. Bene: allora avete trovato da soli il punto in cui questa idea diventa pericolosa.\n\nSpiega il meccanismo con precisione, perche e la cosa piu utile del capitolo. Herder tiene insieme due tesi: ogni popolo ha il proprio centro, e nessun popolo vale piu degli altri. Chi viene dopo tiene la prima e butta la seconda. Non ha bisogno di contraddirlo: gli basta smettere di dire una parte.\n\nEnuncia il criterio generale: si tradisce un pensiero anche solo tacendone la meta. E questo si puo verificare su qualunque idea, comprese quelle che vi stanno a cuore.',
+       seDicono:[
+         {loro:'«Allora Herder è responsabile del nazionalismo?»',
+          tu:'Direi che ne e la fonte e non la causa, ed e una distinzione che conviene tenere. Ha fornito un materiale che poteva essere usato in due modi, e ha detto chiaramente quale dei due intendeva. Chi lo ha usato al contrario aveva bisogno di lui e non gli ha obbedito. Giudicare un autore per cio che altri ne hanno fatto e comodo e quasi sempre ingiusto.'},
+         {loro:'«Ma se ogni cultura vale, allora nulla si può criticare.»',
+          tu:'Obiezione seria, ed e la piu discussa dell\'ultimo secolo. Nota che Herder stesso critica eccome: attacca duramente il colonialismo europeo. Sostiene che nessuna cultura sia il metro delle altre, non che tutto sia indifferente. Come si tengano insieme le due cose e una domanda aperta, e chi vi dice che sia facile vi sta vendendo qualcosa.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'Adesso torniamo\na «sii te stesso»\ne facciamo due domande.\n\nPrima.\n\nOggi vi sentite di mollare\nuna cosa\nche avevate scelto.\n\nÈ il vostro vero io\nche parla,\n\no e martedi\ne siete stanchi?\n\nCome distinguete\nla vocazione\ndall\'umore?\n\nI romantici lo sapevano,\ne la loro risposta\ne sorprendente:\n\nil vero se stessi\nnon si trova.\n\nSi coltiva.\n\nLo chiamano Bildung:\nformazione.\n\nSi cresce\ncome cresce una pianta,\ndall\'interno,\nma con anni di cura.\n\nCioe:\n\nper essere te stesso\ndevi prima\ndiventarlo.\n\nSeconda domanda.\n\nE se il vostro vero io\n\nfosse una brutta persona?',
+       parlato:'Fai le due domande in sequenza, e lascia lavorare la prima prima di passare alla seconda.\n\nSulla prima: fai emergere il problema con esempi loro. Voler smettere uno sport, cambiare scuola, chiudere un\'amicizia. In quel momento si sente fortissimo. Come si distingue?\n\nPoi da\' la risposta romantica, che li spiazza perche e l\'opposto di quello che si aspettano: il vero se stessi non e un tesoro sepolto, e un risultato. Bildung significa formarsi, e presuppone tempo, prove, errori e disciplina.\n\nMostra la tensione interna dell\'ideale, ed e la cosa piu fine dell\'ora: si dice a qualcuno di essere se stesso, e insieme che deve diventarlo. Se il vero io fosse gia li, non ci sarebbe niente da coltivare. Se va coltivato, non era gia li.\n\nDa\' un criterio pratico, perche a loro serve: distinguere «questo e cio che desidero adesso» da «questo e cio che voglio essere». La prima si sente, la seconda si verifica nel tempo. Un desiderio che resiste a un anno di fatica non e piu un umore.\n\nPoi la seconda domanda, e va posta seriamente. Se il criterio e la fedelta a se stessi, che cosa si risponde a chi e sinceramente, coerentemente, autenticamente crudele?\n\nLascia che ci provino. Poi mostra la difficolta: l\'autenticita e un criterio di forma, non di contenuto. Dice come essere, non che cosa. E da sola non basta.\n\nInfine mostra la stessa cosa applicata ai popoli, che e la parte storica: essere fedeli al proprio spirito ha significato liberarsi da un impero, e ha significato dichiarare estranei quelli che non ci somigliano. Stessa formula, due esiti opposti, e la differenza non sta nella formula.',
+       seDicono:[
+         {loro:'«Uno cattivo non è veramente se stesso.»',
+          tu:'Attenzione a questa mossa, perche e comodissima e va guardata da vicino: stai dicendo che il vero io e per definizione buono. Ma allora non e piu il tuo io che decide, e un\'idea di bene che avevi gia. È una risposta possibile, e comporta che «sii te stesso» significhi in realta «sii buono» — e allora tanto vale dirlo.'},
+         {loro:'«Basta non fare del male agli altri.»',
+          tu:'Ottima regola, e nota da dove viene: non dall\'autenticita. È un limite che le metti da fuori. Il che conferma il punto: essere se stessi non basta come criterio, ha bisogno di qualcosa che non e se stessi. La domanda diventa quale sia quel qualcosa, e ci abbiamo passato le ultime tre lezioni.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'La domanda era:\n\n«sii te stesso»\nche cosa vi chiede?\n\nRisposta:\n\nnon vi chiede\ndi guardare dentro\ne trovare qualcosa.\n\nVi chiede\ndi costruire\nqualcosa\nche valga la pena\nchiamare vostro.\n\nNon e una scoperta.\n\nÈ un compito.\n\nE ha due secoli e mezzo,\nquindi qualcuno\nl\'ha inventato,\nquindi si puo discutere.\n\nDa portarsi via:\n\nquando sentite dire\n«questo sono io»,\n\nchiedetevi\n\nse sia una descrizione\n\no una decisione.\n\nQuasi sempre\ne una decisione\ntravestita\nda descrizione.',
+       parlato:'Riprendi lo schieramento e chiedi chi si e spostato. Di solito diversi, e quasi sempre verso una terza posizione che vale la pena nominare: c\'e qualcosa di dato e c\'e molto da fare, e la parte interessante e la seconda.\n\nPoi da\' lo strumento, e rendilo utilizzabile subito. Quando qualcuno — anche voi — dice «io sono fatto cosi», sembra un\'informazione e quasi sempre e una scelta. «Non sono uno che studia», «non sono capace di parlare in pubblico», «io sono uno impulsivo». Sono decisioni che si presentano come descrizioni, e travestite cosi non si discutono piu.\n\nFai provare la traduzione: prendere una di quelle frasi e riscriverla come decisione. Da «sono fatto cosi» a «finora ho scelto di fare cosi». Cambia completamente cio che ne segue.\n\nPoi la parte onesta, e non va saltata. Questo non significa che si possa essere qualunque cosa: non scegliamo il corpo, la famiglia, la lingua, il tempo in cui siamo nati. Significa che dentro cio che non abbiamo scelto c\'e piu spazio di quanto la frase «sono fatto cosi» lasci credere.\n\nUltima cosa, sul movimento intero, e va detta senza sceglierne una meta. Il Romanticismo vi ha lasciato in eredita quasi tutto il modo in cui parlate di voi: l\'autenticita, la vocazione, l\'idea che la vostra vita sia una storia con una trama, l\'idea che l\'amore sia una ragione sufficiente per una scelta. Vi ha lasciato anche il culto di chi sente piu degli altri e per questo si sente esentato dalle regole, e l\'idea che un popolo sia un corpo di cui qualcuno non fa parte. Sono figli della stessa idea, e conviene sapere di essere eredi di tutti e due.\n\nPer il seguito: chi ha preso sul serio, fino in fondo, l\'idea che il soggetto costruisca il mondo, ne ha tirato le conseguenze in un sistema intero. La prossima volta si comincia da Fichte.',
+       seDicono:[
+         {loro:'«Quindi "sii te stesso" non vuol dire niente?»',
+          tu:'Vuol dire qualcosa, ed e piu impegnativo di come suona. Non «guarda dentro e obbedisci», ma «prenditi la responsabilita di quello che diventi invece di attribuirlo alla tua natura». Detto cosi non e piu un incoraggiamento facile: e una delle cose piu difficili che si possano chiedere a qualcuno.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'Il romanzo che si portava addosso',
+       corpo:'Nel 1774 Goethe pubblica I dolori del giovane Werther: un giovane si innamora di una donna promessa a un altro e finisce per uccidersi. Il libro ha un successo europeo immediato.\n\nI lettori cominciano a vestirsi come il protagonista — marsina blu, panciotto giallo — e si diffonde la convinzione che una serie di suicidi imiti quello del romanzo. In alcune città il libro viene proibito.\n\nGoethe, che aveva scritto il libro in poche settimane per uscire da una crisi personale, se ne distanziò per il resto della vita, e in vecchiaia disse di averlo riletto pochissime volte.',
+       chiedi:'Un\'opera che racconta un modo di sentire finisce per insegnarlo. Chi scrive è responsabile di ciò che i lettori ne fanno? E oggi, con contenuti che raggiungono milioni di persone in un giorno, la domanda è la stessa o è diventata un\'altra?'},
+      {titolo:'La pianta e il vasaio',
+       corpo:'Bildung significa formazione, e i romantici la pensano come la crescita di una pianta: qualcosa che si sviluppa dall\'interno secondo una legge propria, e che l\'educatore può assecondare, nutrire e proteggere, ma non fabbricare.\n\nÈ l\'immagine opposta a quella dell\'artigiano che dà forma a una materia inerte, che aveva dominato per secoli.\n\nDa questa idea discendono buona parte della pedagogia moderna, la parola «talento» nel senso in cui la usiamo, l\'orientamento scolastico e l\'idea che ciascuno debba trovare la propria strada.',
+       chiedi:'Se ognuno ha una forma propria da sviluppare, che cosa dovrebbe fare una scuola uguale per tutti? E il rischio opposto: dire a qualcuno che deve trovare la propria strada, quando non ne ha ancora nessuna, è una libertà o è un peso che gli si mette addosso?'},
+      {titolo:'La metà che si tiene',
+       corpo:'Herder sostiene due cose insieme: che ogni popolo abbia un proprio centro e vada capito con i propri criteri, e che nessun popolo sia superiore agli altri. Attacca duramente il colonialismo europeo e l\'idea che l\'Europa sia il vertice della storia.\n\nNell\'Ottocento e nel Novecento la prima tesi viene conservata e la seconda lasciata cadere. Ne risulta una dottrina in cui ogni popolo ha un\'essenza propria da difendere, e chi non vi appartiene diventa un elemento estraneo.\n\nDalla stessa radice nascono però anche il principio di autodeterminazione dei popoli, con cui nel Novecento si sciolgono gli imperi coloniali, e il rispetto delle culture su cui si fonda l\'antropologia.',
+       chiedi:'Un\'idea produce, nello stesso secolo, la fine del colonialismo e il nazionalismo etnico. Che cosa fa la differenza — la parte che si tiene, chi la usa, o le circostanze? E si può usare un\'idea sapendo di quale metà si sta parlando?'}
+    ],
+    testi:[
+      {fonte:'Novalis, Frammenti (1798)',
+       corpo:'Novalis scrive che noi sogniamo di viaggiare attraverso l\'universo, e domanda se l\'universo non sia in noi: le profondità del nostro spirito non le conosciamo, e la via misteriosa va verso l\'interno. Altrove afferma che il mondo va romanticizzato, e che romanticizzare significa dare al comune un senso alto, al consueto un aspetto misterioso, al noto la dignità dell\'ignoto.',
+       glossa:'I due frammenti dicono insieme il programma del movimento: lo spostamento del centro dall\'osservazione del mondo all\'esplorazione di sé, e l\'idea che il compito dell\'arte non sia riprodurre la realtà ma trasformare il modo in cui la si vede. «Romanticizzare» non significa abbellire: significa restituire alle cose consuete la capacità di sorprendere. In classe funziona chiedendo di provarci su un oggetto qualunque dell\'aula.'},
+      {fonte:'Friedrich Schlegel, Frammento 116 dell\'Athenaeum (1798)',
+       corpo:'Schlegel definisce la poesia romantica una poesia universale progressiva, destinata non solo a riunire i generi separati ma a mettere in contatto poesia, filosofia e retorica; e aggiunge che il suo scopo è di essere sempre in divenire e di non poter mai essere compiuta, e che proprio in questo consiste la sua essenza.',
+       glossa:'È la definizione ufficiale, e ha la particolarità di definire qualcosa dichiarandolo indefinibile per costituzione. Il valore didattico sta qui: spiega perché il movimento privilegi il frammento, l\'opera interrotta, l\'ironia che smonta ciò che ha appena costruito. Una forma compiuta sarebbe un tradimento dell\'infinito, e l\'incompiutezza non è un difetto di esecuzione ma una scelta.'},
+      {fonte:'F. W. J. Schelling, Idee per una filosofia della natura (1797)',
+       corpo:'Schelling afferma che la natura debba essere lo spirito visibile e lo spirito la natura invisibile, e che proprio nell\'identità assoluta fra lo spirito in noi e la natura fuori di noi si debba risolvere il problema di come sia possibile una natura fuori di noi.',
+       glossa:'È il passo che segna la rottura con Kant: là dove la Critica poneva un confine fra ciò che appare e ciò che è in sé, qui si afferma un\'identità di fondo fra chi conosce e ciò che è conosciuto. La conseguenza pratica è una scienza che cerca l\'unità dei fenomeni invece di scomporli: ha prodotto la scoperta del legame fra elettricità e magnetismo e, nello stesso decennio, pagine del tutto invereficabili.'}
+    ],
+    compito:'Mezza pagina. Scrivete una frase che avete detto o pensato su voi stessi nella forma «io sono fatto così» o «io non sono uno che». Poi riscrivetela due volte: la prima come descrizione di un fatto, indicando che cosa dovrebbe essere vero perché sia davvero un fatto; la seconda come decisione, cioè «finora ho scelto di». Alla fine dite quale delle due versioni vi sembra più onesta, e perché.',
+    fonti:[
+      'J. G. Herder, Anche una filosofia della storia per l\'educazione dell\'umanità (1774); Idee per la filosofia della storia dell\'umanità (1784-91)',
+      'Novalis, Frammenti; F. Schlegel, Frammenti dell\'Athenaeum (1798)',
+      'J. W. Goethe, I dolori del giovane Werther (1774); Wilhelm Meister (1795-96)',
+      'F. W. J. Schelling, Idee per una filosofia della natura (1797)',
+      'I. Berlin, Le radici del Romanticismo; C. Taylor, Radici dell\'io; Il disagio della modernità',
+      'M. Abrams, Lo specchio e la lampada; R. Safranski, Il Romanticismo. Una faccenda tedesca'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',
