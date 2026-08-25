@@ -14649,6 +14649,231 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Storia contemporanea · 2 — L\'Europa fra il 1850 e il 1870': {
+  mappa: {
+    n:'L\'Europa 1850-1870', d:'vent\'anni in cui il consenso di massa e il potere senza controlli scoprono di poter stare insieme',
+    f:[
+      {r:'parte dal', n:'Tornante del 1848', d:'le rivoluzioni falliscono quasi ovunque, e proprio per questo cambiano tutto',
+       f:[
+         {r:'i governi tornano al loro posto ma non alla vecchia', n:'Sicurezza', d:'hanno visto che le capitali possono cadere in tre giorni, e da qui in poi governano tenendone conto'},
+         {r:'muore l\'idea che una rivoluzione si faccia con le', n:'Barricate', d:'contro ferrovie, telegrafo ed eserciti riorganizzati, l\'insurrezione urbana non basta piu'},
+         {r:'e muore anche la', n:'Fratellanza dei popoli', d:'nel 1848 i rivoluzionari si sono combattuti fra loro per i confini: nessuno crede piu che le nazioni libere vadano d\'accordo per natura'},
+         {r:'resta invece la', n:'Questione nazionale', d:'irrisolta e piu forte di prima: chi la risolvera non saranno i rivoluzionari, saranno gli Stati'},
+         {r:'e resta una lezione appresa dai governi: si puo', n:'Modernizzare senza liberalizzare', d:'ferrovie, banche, codici e scuole, tenendo ferma la mano sul potere politico',
+          f:[{piu:true, r:'formula che il secolo successivo chiamera', n:'Rivoluzione dall\'alto', d:'e che diventera il modello per chiunque voglia una societa moderna senza un parlamento che conti'}]}
+       ]},
+
+      {r:'la prova generale e', n:'Napoleone III', d:'e la sua carriera e un manuale di come si prenda il potere restando popolari',
+       f:[
+         {r:'nel dicembre 1848 viene eletto presidente con quasi il', n:'Settantaquattro per cento', d:'a suffragio universale maschile: vince perche porta un cognome che tutti conoscono'},
+         {r:'la costituzione non gli consente un secondo', n:'Mandato', d:'e il parlamento rifiuta di modificarla'},
+         {r:'allora il 2 dicembre 1851 compie un', n:'Colpo di stato', d:'scioglie l\'assemblea con l\'esercito, fa arrestare i deputati contrari, proclama lo stato d\'assedio'},
+         {r:'e tre settimane dopo chiede al popolo di', n:'Approvare', d:'un plebiscito con sette milioni e mezzo di sì contro seicentomila no'},
+         {r:'l\'anno dopo un secondo plebiscito istituisce l\'', n:'Impero', d:'con percentuali analoghe: e il 2 dicembre 1852, anniversario di Austerlitz'},
+         {r:'la formula si chiamera', n:'Bonapartismo', d:'un capo che si rivolge direttamente al popolo scavalcando parlamento, partiti e giornali',
+          f:[{piu:true, r:'e la sua arma non e la forza ma la', n:'Domanda scritta da lui', d:'un plebiscito non chiede che cosa vuoi: chiede se approvi cio che e gia stato fatto, e ammette due sole risposte'}]}
+       ]},
+
+      {r:'e intanto trasforma la', n:'Francia', d:'perche il consenso non si tiene con la polizia soltanto',
+       f:[
+         {r:'affida a', n:'Haussmann', d:'la ricostruzione di Parigi: diciassette anni di cantieri e centomila persone sfollate dal centro'},
+         {r:'con i grandi', n:'Boulevard', d:'strade larghe e diritte, fogne, acqua corrente, parchi, illuminazione'},
+         {r:'e con un effetto collaterale che quasi nessuno nega: le vie larghe rendono difficili le', n:'Barricate del futuro', d:'e consentono alla truppa di manovrare e all\'artiglieria di sparare in linea retta'},
+         {r:'moltiplica le', n:'Ferrovie', d:'da tremila a diciassettemila chilometri: e la prima volta che il grano di una provincia raggiunge un\'altra in un giorno'},
+         {r:'e fonda le grandi', n:'Banche d\'affari', d:'che raccolgono il risparmio di molti per finanziare imprese enormi: il credito diventa uno strumento politico'},
+         {r:'con le', n:'Esposizioni universali', d:'1855 e 1867: vetrine in cui uno Stato mostra a tutti gli altri quanto e moderno',
+          f:[{piu:true, r:'e con un patto implicito con i', n:'Ceti medi', d:'affari, ordine e prestigio in cambio di rinuncia alla politica: e il vero fondamento del regime, piu dei plebisciti'}]}
+       ]},
+
+      {r:'sull\'altra sponda c\'e l\'', n:'Inghilterra vittoriana', d:'che fa quasi tutto al contrario e arriva a risultati simili',
+       f:[
+         {r:'nel 1851 espone al mondo il', n:'Palazzo di cristallo', d:'trentamila tonnellate di vetro e ferro: sei milioni di visitatori in cinque mesi'},
+         {r:'ha abolito i dazi sul grano e vive di', n:'Libero scambio', d:'importa cibo e materie prime, esporta manufatti e capitali: e l\'officina del mondo'},
+         {r:'ma vota una', n:'Minoranza', d:'anche dopo la riforma del 1867 il corpo elettorale resta molto ristretto, e le donne ne sono escluse ovunque'},
+         {r:'quindi ha un parlamento che conta e un', n:'Elettorato piccolo', d:'l\'opposto esatto della Francia, che ha un elettorato enorme e un parlamento senza poteri'},
+         {piu:true, r:'e nel 1867 allarga il voto agli operai delle', n:'Citta', d:'la riforma raddoppia l\'elettorato e viene fatta da un governo conservatore, con lo stesso calcolo di Bismarck: sperava di guadagnarci'},
+         {r:'e mantiene la pace con la', n:'Flotta', d:'nessun impegno continentale stabile, e il dominio dei mari: e la formula che l\'Ottocento chiamera splendido isolamento'}
+       ]},
+
+      {r:'a est c\'e la', n:'Russia', d:'che cambia solo dopo aver perso una guerra',
+       f:[
+         {r:'e un impero enorme fondato sulla', n:'Servitu della gleba', d:'decine di milioni di contadini legati alla terra e vendibili con essa'},
+         {r:'la sconfitta in Crimea rivela che l\'esercito e', n:'Arretrato', d:'niente ferrovie per rifornire il fronte, fucili obsoleti, comando inefficiente'},
+         {r:'nel 1861 Alessandro II firma l\'', n:'Emancipazione', d:'ventitre milioni di servi diventano giuridicamente liberi: e la piu grande riforma sociale del secolo'},
+         {r:'ma la terra va', n:'Riscattata', d:'i contadini devono pagare per decenni cio che coltivavano, e restano legati alla comunita di villaggio'},
+         {r:'seguono riforme di', n:'Giustizia e amministrazione locale', d:'tribunali pubblici, giurie, assemblee provinciali: modernizzazione senza costituzione'},
+         {r:'e nasce un movimento di intellettuali che va', n:'Verso il popolo', d:'giovani colti che scendono nei villaggi per istruire i contadini, e che i contadini spesso consegnano alla polizia',
+          f:[{piu:true, r:'da cui, deluso, nascera il', n:'Terrorismo politico', d:'lo stesso zar che aveva liberato i servi sara ucciso nel 1881 da chi lo giudicava troppo lento'}]}
+       ]},
+
+      {r:'in mezzo c\'e la', n:'Guerra di Crimea', d:'1853-56: la prima guerra moderna e la fine di un sistema',
+       f:[
+         {r:'nasce da una disputa sui', n:'Luoghi santi', d:'chi protegga i cristiani in Palestina: il pretesto per una partita sul controllo degli stretti'},
+         {r:'ci sono per la prima volta', n:'Telegrafo e ferrovie', d:'le notizie arrivano a Londra in ore, e una ferrovia viene costruita apposta per rifornire l\'assedio'},
+         {r:'e i primi', n:'Corrispondenti e fotografi', d:'i giornali raccontano l\'incompetenza dei comandi mentre la guerra e in corso, e l\'opinione pubblica reagisce'},
+         {r:'muoiono piu soldati di', n:'Malattia che di ferite', d:'colera, tifo, dissenteria: e da qui nasce l\'organizzazione moderna dell\'assistenza sanitaria militare'},
+         {piu:true, r:'e l\'Austria non aiuta la Russia che l\'aveva salvata nel 1849, restando', n:'Neutrale', d:'si aliena l\'unico alleato che aveva a est: sara sola nel 1859 contro la Francia e nel 1866 contro la Prussia'},
+         {r:'e salta il', n:'Concerto europeo', d:'per la prima volta dal 1815 le grandi potenze si combattono fra loro: l\'equilibrio di Vienna e finito',
+          f:[{piu:true, r:'con una conseguenza decisiva: la Russia esce dal ruolo di', n:'Gendarme d\'Europa', d:'non interverra piu a soffocare le rivoluzioni altrui, e questo apre lo spazio in cui Italia e Germania si faranno'}]}
+       ]},
+
+      {r:'e arriva', n:'Bismarck', d:'che porta il metodo alle sue conseguenze',
+       f:[
+         {r:'nel 1862 diventa capo del governo prussiano durante un', n:'Conflitto costituzionale', d:'il parlamento nega i fondi per la riforma dell\'esercito e lui governa per anni senza bilancio approvato'},
+         {r:'con la frase che lo definira: non con i discorsi ma con', n:'Ferro e sangue', d:'le grandi questioni del tempo non si decidono con maggioranze e deliberazioni'},
+         {r:'pratica la', n:'Realpolitik', d:'nessun principio guida, solo il calcolo di che cosa e possibile: si cambia alleato quando conviene'},
+         {r:'fa tre guerre brevi in sette anni:', n:'1864, 1866, 1870', d:'Danimarca, Austria e Francia, ciascuna preparata isolando prima l\'avversario'},
+         {r:'e ogni volta si ferma', n:'Presto', d:'dopo Sadowa impedisce ai generali di marciare su Vienna: vuole l\'Austria sconfitta, non umiliata, per averla neutrale dopo'},
+         {r:'e nel 1867 concede il', n:'Suffragio universale maschile', d:'per il parlamento della Confederazione del Nord: convinto che le campagne voteranno come dicono i notabili',
+          f:[
+            {r:'in un parlamento che pero non controlla', n:'Governo ne esercito', d:'il cancelliere risponde al re, e il bilancio militare e sottratto al voto annuale'},
+            {piu:true, r:'per cui la forma e la piu', n:'Democratica d\'Europa', d:'e la sostanza no: e il caso migliore per imparare a guardare che cosa un\'istituzione puo fare, non come si chiama'}
+          ]}
+       ]},
+
+      {r:'e tutto si chiude nel', n:'1870-71', d:'con due imperi che finiscono e uno che comincia',
+       f:[
+         {r:'nel maggio 1870 un ultimo plebiscito conferma l\'impero francese con sette milioni di', n:'Sì', d:'e Napoleone III si dichiara piu forte che mai'},
+         {r:'quattro mesi dopo si arrende a', n:'Sedan', d:'circondato con ottantamila uomini: il regime crolla in due giorni e a Parigi si proclama la repubblica'},
+         {r:'il 18 gennaio 1871 l\'impero tedesco viene proclamato a', n:'Versailles', d:'nella reggia dei re di Francia, scelta apposta: un\'umiliazione che i francesi non dimenticheranno'},
+         {r:'la Francia perde Alsazia e Lorena e paga cinque miliardi di', n:'Franchi', d:'e nasce un rancore che attraversera due generazioni fino al 1914'},
+         {r:'a Parigi nasce e viene schiacciata la', n:'Comune', d:'marzo-maggio 1871: settantadue giorni, e una repressione con migliaia di morti'},
+         {r:'e l\'Europa esce con un nuovo', n:'Centro di gravita', d:'non piu Parigi o Vienna ma Berlino, e un sistema di alleanze che reggera finche lo terra in mano lui'}
+       ]}
+    ],
+    incroci:[
+      {da:'Domanda scritta da lui', a:'Sì', r:'spiega che cosa misurino davvero i sette milioni di',
+       perche:'Nel maggio 1870 il plebiscito conferma l\'impero con una maggioranza schiacciante, e quattro mesi dopo il regime non esiste piu. Il voto non aveva misurato la forza del governo: aveva misurato quanti preferissero quel governo all\'unica alternativa che la domanda ammetteva, cioe il disordine. Un\'approvazione ottenuta su una domanda scritta da chi la pone non e un\'informazione sulla solidita di nulla.'},
+      {da:'Democratica d\'Europa', a:'Minoranza', r:'e piu ampia di quella inglese, dove vota una',
+       perche:'Il confronto e il modo migliore per smontare l\'equazione fra allargamento del voto e liberta. Nel 1867 la Confederazione del Nord ha il suffragio universale maschile e un parlamento che non controlla ne governo ne esercito; l\'Inghilterra ha un elettorato ristretto e un parlamento che fa cadere i governi. Chi guardasse solo chi vota concluderebbe l\'opposto della verita.'},
+      {da:'Gendarme d\'Europa', a:'Questione nazionale', r:'apre lo spazio in cui si risolvera la',
+       perche:'Fino al 1853 la Russia era intervenuta a soffocare le rivoluzioni altrui, in Polonia e in Ungheria. Uscita sconfitta dalla Crimea e in rotta con l\'Austria che non l\'aveva aiutata, smette di svolgere quel ruolo. Senza quel gendarme, le due unificazioni nazionali diventano possibili — e le faranno gli Stati con eserciti e diplomazia, non i patrioti con le insurrezioni.'},
+      {da:'Ferro e sangue', a:'Barricate', r:'e la conseguenza pratica della fine delle',
+       perche:'La frase di Bismarck registra un fatto militare prima che una filosofia: dopo il 1848 nessuna rivoluzione urbana ha battuto un esercito moderno, mentre tre guerre brevi hanno ridisegnato l\'Europa. Chi voleva cambiare la carta politica del continente doveva disporre di ferrovie, artiglieria e stati maggiori. È la ragione per cui il Risorgimento italiano riesce quando smette di essere un\'insurrezione.'},
+      {da:'Presto', a:'Franchi', r:'e la regola che viene abbandonata imponendo cinque miliardi di',
+       perche:'Nel 1866 Bismarck impedisce ai generali di marciare su Vienna e concede all\'Austria una pace mite, per averla neutrale in futuro: il calcolo funziona. Nel 1871 accade il contrario — annessione dell\'Alsazia e Lorena, indennita enorme, proclamazione dell\'impero a Versailles — e nasce un rancore che pesera fino al 1914. Lo stesso statista applica due volte principi opposti, e la seconda volta cede alla pressione dei militari e dell\'opinione pubblica.'},
+      {da:'Modernizzare senza liberalizzare', a:'Emancipazione', r:'e la formula che spiega anche l\'',
+       perche:'Alessandro II libera ventitre milioni di servi senza concedere una costituzione, riforma i tribunali e l\'esercito e mantiene intatta l\'autocrazia. Il modello e lo stesso della Francia imperiale e della Prussia: si cambia la societa per rendere lo Stato piu forte, non per limitarne il potere. È la ragione per cui riforme cosi vaste producono cosi poca gratitudine.'},
+      {da:'Riscattata', a:'Verso il popolo', r:'aiuta a spiegare il fallimento del movimento che va',
+       perche:'I contadini escono dall\'emancipazione formalmente liberi e indebitati per decenni, e quello che a loro interessa e la terra, non le idee. Quando gli studenti scendono nei villaggi a spiegare il socialismo, trovano gente che non li capisce e che a volte li denuncia. Da quella delusione nasce la scelta terroristica, e il bersaglio diventera proprio lo zar riformatore.'},
+      {da:'Boulevard', a:'Barricate del futuro', r:'sono stati progettati anche pensando alle',
+       perche:'La tesi va maneggiata con precisione: le ragioni principali dei lavori erano sanitarie, viarie ed economiche, e l\'igiene di Parigi ne fu trasformata. Ma la larghezza e la rettilineita delle nuove arterie facilitavano il movimento della truppa e il tiro dell\'artiglieria, e i contemporanei lo dicevano apertamente. Nel 1871, durante la Comune, quelle strade funzionarono esattamente cosi.'},
+      {da:'Ceti medi', a:'Elettorato piccolo', r:'ottiene senza voto cio che in Inghilterra si ottiene con un',
+       perche:'Il regime francese offre alla borghesia affari, ordine e prestigio nazionale in cambio della rinuncia alla politica attiva; quella inglese ottiene influenza sedendo in parlamento. Sono due strade verso lo stesso risultato — il predominio politico dei ceti proprietari — e il confronto mostra che le forme istituzionali contano soprattutto per che cosa consentono di fare quando il patto si rompe.'},
+      {da:'Corrispondenti e fotografi', a:'Malattia che di ferite', r:'rendono pubblico che si muoia piu di',
+       perche:'È la prima guerra in cui i giornali raccontano l\'incompetenza dei comandi mentre i combattimenti sono in corso, con dispacci telegrafici che arrivano in poche ore. La pressione dell\'opinione pubblica produce conseguenze concrete: la riorganizzazione degli ospedali militari e la nascita di un\'assistenza sanitaria professionale. È il primo caso in cui l\'informazione rapida modifica la condotta di una guerra.'},
+      {da:'Rivoluzione dall\'alto', a:'Realpolitik', r:'e il metodo di governo di cui la',
+       perche:'Sono le due facce della stessa scelta: all\'interno si modernizza senza cedere potere, all\'estero si agisce senza principi guida calcolando cio che e possibile. Nessuna delle due e nuova in assoluto; nuova e la loro combinazione dichiarata e rivendicata come metodo. Il Novecento la riprendera in contesti molto diversi, e questo periodo e il luogo in cui la si vede nascere.'},
+      {da:'Palazzo di cristallo', a:'Esposizioni universali', r:'inaugura la stagione delle',
+       perche:'Nel 1851 un edificio di vetro e ferro montato in pochi mesi mostra al mondo che cosa un paese industriale sappia fare, e sei milioni di visitatori lo attraversano. Da quel momento ogni potenza ne organizza una: sono gare di prestigio in cui lo Stato si esibisce. Napoleone III ne fa due in dodici anni, e non e un dettaglio decorativo — e parte dello stesso sistema di consenso.'},
+      {da:'Fratellanza dei popoli', a:'Centro di gravita', r:'lascia il posto a un nuovo',
+       perche:'Nel 1848 si era creduto che nazioni libere convivessero per natura; vent\'anni dopo l\'Europa e organizzata attorno a uno Stato nato da tre guerre, con un\'altra nazione umiliata che aspetta la rivincita. L\'idea nazionale ha vinto e ha prodotto il contrario di cio che i suoi profeti avevano annunciato: non una federazione di popoli, ma un sistema di potenze armate.'}
+    ]
+  },
+  provocazione: {
+    titolo:'Sette milioni di sì',
+    durata:'55 minuti',
+    domandaMadre:'Perche i due uomini piu autoritari d\'Europa sono stati i primi a dare il voto a tutti?',
+    perche:'Fra il 1851 e il 1867 accade una cosa che contraddice l\'idea corrente che il diritto di voto e la liberta politica crescano insieme. In Francia un uomo scioglie il parlamento con l\'esercito, fa arrestare i deputati contrari e tre settimane dopo ottiene sette milioni e mezzo di sì a suffragio universale maschile; in Prussia Bismarck, che governa da anni senza bilancio approvato, concede il suffragio universale maschile per il parlamento della Confederazione del Nord. Nello stesso periodo, nell\'Inghilterra liberale, vota una minoranza. La lezione serve a smontare l\'equazione fra allargamento del voto e liberta, e a dare uno strumento che vale ancora: guardare chi scrive la domanda, quali alternative ammette, e che cosa si puo fare il giorno dopo se si risponde no.',
+    occorrente:'Niente.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'Tre fatti,\nin vent\'anni.\n\nFrancia, 2 dicembre 1851.\n\nUn uomo scioglie\nil parlamento\ncon l\'esercito.\n\nFa arrestare\nnella notte\nsettanta deputati.\n\nProclama\nlo stato d\'assedio.\n\nVentuno giorni dopo\nchiede al popolo\ndi approvare.\n\nSette milioni e mezzo\ndi sì.\n\nSeicentomila no.\n\nPrussia, 1867.\n\nBismarck,\nche governa da cinque anni\nsenza un bilancio\napprovato dal parlamento,\n\nconcede\nil suffragio universale\nmaschile.\n\nInghilterra,\nnegli stessi anni.\n\nIl paese\ndel parlamento.\n\nVota\nuna minoranza.\n\nQualcosa\nnon torna.',
+       parlato:'Da\' i tre fatti senza commentarli, uno dopo l\'altro, e poi lascia qualche secondo di silenzio.\n\nPoi chiedi che cosa non torna. Ci arrivano quasi subito: i due regimi che i manuali chiamano autoritari sono quelli che allargano il voto, e il paese liberale e quello che lo tiene stretto.\n\nMetti in chiaro che non e un paradosso da libro: sono numeri verificabili, e nessuno storico li discute.\n\nRaccogli le prime spiegazioni e scrivile alla lavagna, perche serviranno alla fine. Vengono fuori sempre le stesse: i voti erano falsi, la gente era ignorante, il popolo era intimidito.\n\nDi\' che tutte e tre contengono qualcosa, che nessuna basta, e che oggi si prova a trovare una spiegazione che regga i documenti.\n\nPoi la domanda dell\'ora, e falla precisa: perche a un uomo che ha appena preso il potere con la forza conviene chiedere il voto a tutti?',
+       seDicono:[
+         {loro:'«Erano elezioni truccate.»',
+          tu:'Ci furono pressioni fortissime, e va detto: prefetti, parroci, e l\'opposizione in carcere o in esilio. Ma le percentuali sono troppo alte perche il broglio spieghi tutto, e nelle campagne il consenso era reale. La domanda diventa piu interessante cosi: perche milioni di persone hanno votato sì davvero?'},
+         {loro:'«La gente non capiva niente di politica.»',
+          tu:'Attento, e la spiegazione piu comoda e la meno utile. I contadini francesi sapevano benissimo che cosa volevano: sicurezza, ordine, prezzi stabili, nessun ritorno del disordine del 1848. Hanno votato per quello. Chiamare ignoranza il fatto che qualcuno voti per interessi diversi dai nostri impedisce di capire qualunque elezione, comprese quelle di oggi.'}
+       ]},
+
+      {minuti:'8–17', et:'La fonte',
+       schermo:'2 dicembre 1851.\n\nIl proclama\naffisso a Parigi\nla mattina\ndel colpo di stato.\n\nDice che\nla situazione attuale\nnon puo durare,\n\nche l\'assemblea\ncospira\ninvece di lavorare,\n\ne che egli\nfa appello\nal giudizio solenne\ndel solo sovrano\nche riconosce\nin Francia:\n\nil popolo.\n\nChiede\nun mandato\nper scrivere\nuna nuova costituzione,\n\ne pone la domanda\nin questa forma:\n\nil popolo vuole\nil mantenimento\ndell\'autorita\ndi Luigi Napoleone\nBonaparte\n\ne gli delega\ni poteri necessari\nper stabilire\nuna costituzione.\n\nSi\n\noppure no.',
+       testo:{fonte:'Luigi Napoleone Bonaparte, proclama al popolo francese e testo del quesito plebiscitario, dicembre 1851',
+              glossa:'Il documento va letto con le tre domande. Chi lo scrive e per risolvere quale problema: un presidente al quale la costituzione impedisce un secondo mandato e che il parlamento non vuole accontentare; il problema non è convincere i francesi, è trasformare un atto di forza in un titolo legittimo. Che cosa ammette senza volerlo: ammette di aver bisogno di quel titolo — chi ha davvero il potere non chiede il permesso — e, chiamando il popolo «il solo sovrano che riconosco in Francia», ammette di considerare il parlamento un ostacolo da scavalcare, non un\'istituzione da rispettare. Che cosa non dice: non dice che il voto si terrà sotto stato d\'assedio, con i giornali sospesi, i deputati dell\'opposizione arrestati la notte precedente e migliaia di persone in attesa di deportazione; e non dice che cosa accadrebbe in caso di vittoria del no, cioè non offre nessuna alternativa praticabile. La forma del quesito è il punto decisivo: unisce in una sola domanda l\'approvazione della persona e la delega a scrivere le regole, così che sia impossibile accettare l\'una e rifiutare l\'altra.'},
+       parlato:'Leggi il proclama e il quesito, poi conduci le tre domande.\n\nPrima domanda: chi scrive e che problema deve risolvere. Falli arrivare al punto: non deve convincere i francesi, che in gran parte lo appoggiano gia. Deve trasformare un atto di forza in un titolo legittimo.\n\nSeconda domanda: che cosa ammette senza volerlo. Qui c\'e la cosa piu fine dell\'ora, e conviene aspettare che ci arrivino. Chi ha davvero il potere non chiede il permesso. Il fatto stesso che indica un plebiscito ammette che la forza da sola non gli basta.\n\nFai notare anche la formula sul popolo come unico sovrano che riconosce in Francia: sta dicendo che il parlamento non conta, e lo dice con parole che suonano democratiche.\n\nTerza domanda: che cosa non dice. La classe ci arriva se la guidi. Non dice che si vota sotto stato d\'assedio, con i giornali sospesi e i deputati contrari in carcere. E soprattutto non dice che cosa succederebbe se vincesse il no.\n\nAdesso il punto tecnico, e falla scomporre a loro: guardate la domanda.\n\nChiede due cose in una: se approvate lui e se gli delegate il potere di scrivere le regole. Non si possono separare.\n\nEnuncia il criterio: chi scrive la domanda ha gia meta della risposta.',
+       seDicono:[
+         {loro:'«Ma se erano d\'accordo, che problema c\'è?»',
+          tu:'Il problema non e il consenso: e che una domanda cosi costruita non permette di sapere su che cosa fossero d\'accordo. Erano favorevoli a lui? All\'ordine? Contrari al ritorno del disordine? Volevano davvero dargli il potere di scrivere da solo la costituzione? Un sì unico su domande diverse non distingue niente.'},
+         {loro:'«E se avesse vinto il no?»',
+          tu:'Domanda esatta, ed e proprio quella che il testo non affronta. Non c\'era nessun piano per il no, nessun governo alternativo, nessuna procedura. Quando un quesito non prevede che cosa accade se si rifiuta, sta chiedendo un\'approvazione, non una scelta. È il criterio piu semplice per riconoscere un plebiscito da un referendum.'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'Adesso il meccanismo,\ne non riguarda\nsolo l\'Ottocento.\n\nUno.\nUn rapporto diretto\nfra capo e popolo,\n\nche salta\nparlamento,\npartiti,\ngiornali,\n\ncioe tutto quello\nche sta in mezzo.\n\nDue.\nUn voto\nchiesto spesso\ne su domande\nchiuse.\n\nTre.\nUn paese\nin gran parte\nrurale,\n\ndove il prefetto,\nil notabile\ne il parroco\ncontano\npiu di un giornale.\n\nQuattro.\nE soprattutto\n\nun patto:\n\nordine,\naffari,\nprestigio\n\nin cambio\ndella politica.\n\nBismarck\nfa lo stesso conto\nnel 1867.\n\nDa\' il voto a tutti\nperche e convinto\n\nche le campagne\nvoteranno\ncome dicono\ni proprietari.',
+       parlato:'Costruisci il meccanismo con ordine, perche e la parte analitica.\n\nPrimo pezzo: il rapporto diretto. Spiega che cosa significa saltare i corpi intermedi. Parlamento, partiti, giornali e associazioni non sono ostacoli decorativi: sono i luoghi in cui una posizione si articola, si discute e si corregge. Toglierli non aumenta la voce del popolo: la riduce a un sì o a un no.\n\nSecondo pezzo: la struttura del voto. Chiedere spesso, chiedere su domande chiuse, chiedere dopo aver gia agito.\n\nTerzo pezzo: dove si vota. In un paese di contadini, senza scuola di massa e senza stampa diffusa, chi controlla i prefetti e i notabili controlla il risultato senza bisogno di brogli. È un dato di struttura, non un\'accusa alla gente.\n\nQuarto pezzo, e il piu importante: il patto. Il regime francese offre ai ceti medi ordine, affari e prestigio nazionale in cambio della rinuncia alla politica attiva. E lo mantiene: ferrovie, banche, Parigi ricostruita, esposizioni universali.\n\nEnuncia la tesi che regge tutta la lezione: il consenso non e il contrario dell\'autoritarismo. Puo esserne il fondamento.\n\nPoi porta Bismarck, che rende la cosa ancora piu netta. Un conservatore concede il suffragio universale maschile facendo un calcolo: le masse rurali sono meno liberali della borghesia cittadina. Non e un\'apertura, e una mossa in una lotta fra elite.',
+       seDicono:[
+         {loro:'«Allora votare non serve a niente.»',
+          tu:'Non e questo, ed e importante non uscire di qui con quell\'idea. Serve moltissimo, a due condizioni: che tu possa decidere anche la domanda, e che ci sia qualcosa che continui a funzionare fra un voto e l\'altro. Un voto isolato, su un quesito scritto da altri, e uno strumento debolissimo. Un voto dentro istituzioni che lavorano tutto l\'anno e un\'altra cosa.'},
+         {loro:'«Bismarck si sbagliava sulle campagne?»',
+          tu:'In parte, e piu tardi. Nell\'immediato il conto funzionò; nel giro di una generazione le stesse campagne cambiarono e nel Reichstag crebbero i socialdemocratici, che lui provo a mettere fuori legge. È un\'ottima osservazione perche mostra un limite di quel calcolo: chi allarga il voto per contarci sopra non controlla piu che cosa quel voto dira fra vent\'anni.'}
+       ]},
+
+      {minuti:'28–38', et:'La seconda fonte',
+       schermo:'1867.\n\nLa costituzione\ndella Confederazione\nGermanica del Nord.\n\nSulla carta\ne il testo\npiu democratico\nd\'Europa.\n\nIl parlamento\ne eletto\na suffragio\nuniversale maschile,\n\ndiretto\ne segreto.\n\nIn Inghilterra\nnon e cosi.\nIn Francia\nil parlamento\nnon conta.\n\nAdesso guardate\nche cosa\nquel parlamento\npuo fare.\n\nIl cancelliere\nnon risponde\na lui:\nrisponde al re.\n\nIl parlamento\nnon puo\nfarlo cadere.\n\nLa politica estera\ne del re.\n\nL\'esercito\ne del re,\n\ne il suo bilancio\ne sottratto\nal voto annuale.\n\nQuindi:\n\nvotano tutti,\n\ne il voto\nnon puo cambiare\n\nchi governa.',
+       testo:{fonte:'Costituzione della Confederazione Germanica del Nord (1867), poi ripresa nella Costituzione dell\'Impero tedesco (1871)',
+              glossa:'È il documento che permette di separare due cose che di solito si confondono: chi vota e che cosa il voto può fare. Le tre domande danno risultati istruttivi. Chi lo scrive e per risolvere quale problema: un governo conservatore che ha appena vinto una guerra e deve costruire uno Stato tedesco senza cedere potere né al parlamento liberale né ai singoli Stati; il suffragio universale maschile serve a scavalcare la borghesia liberale delle città, non ad ampliare il controllo popolare. Che cosa ammette senza volerlo: ammette che l\'allargamento del voto fosse ormai inevitabile — nessuno concede ciò che può ancora negare senza costi — e insieme, sottraendo l\'esercito al voto annuale, ammette dove stia il potere vero. Che cosa non dice: non dice che l\'assenza di responsabilità del cancelliere verso il parlamento renda il voto incapace di cambiare l\'indirizzo politico, cioè non dichiara il proprio limite fondamentale, che infatti pesò per cinquant\'anni. Va letto insieme al plebiscito francese: là il popolo è chiamato spesso e su domande chiuse, qui elegge regolarmente un\'assemblea che non può far cadere nessuno. Due modi diversi di rendere il consenso compatibile con un potere non controllato.'},
+       parlato:'Presenta il documento come un caso di studio sul modo di leggere le istituzioni.\n\nPrima leggi la parte che suona bene: suffragio universale maschile, diretto e segreto, nel 1867. Chiedi alla classe di giudicarlo. Dicono che e avanzatissimo, e hanno ragione sulla forma.\n\nPoi leggi la seconda parte e falla pesare voce per voce. Il cancelliere risponde al re. Il parlamento non lo puo far cadere. L\'esercito e il suo bilancio sono fuori dal voto annuale.\n\nAdesso rifai la domanda: quel parlamento che cosa puo fare?\n\nPuo discutere, puo approvare leggi ordinarie, non puo cambiare chi governa. E questa e la sola cosa che rende un voto uno strumento di potere.\n\nApplica le tre domande, e falle fare a loro.\n\nChi scrive e perche: un governo conservatore che deve costruire uno Stato senza cedere potere alla borghesia liberale. Il suffragio serve contro di lei.\n\nChe cosa ammette senza volerlo: che allargare il voto era ormai inevitabile — nessuno concede quello che puo ancora negare gratis — e, sottraendo l\'esercito al voto, ammette dove stia il potere vero.\n\nChe cosa non dice: non dichiara mai che quel parlamento non possa cambiare l\'indirizzo politico. Il limite piu grave non e scritto da nessuna parte, e si vede solo mettendo insieme piu articoli.\n\nInfine tieni insieme le due fonti. In Francia si vota spesso su domande chiuse; in Germania si vota regolarmente per un\'assemblea che non decide. Sono due strade diverse per lo stesso risultato: consenso di massa e potere non controllato.',
+       seDicono:[
+         {loro:'«Allora era tutta una finta.»',
+          tu:'Non proprio, e la distinzione conta. Quel parlamento discuteva davvero, approvava leggi, e attraverso di esso crebbe un partito socialista che diventera il piu grande d\'Europa. Non era una finzione: era un\'istituzione con poteri limitati per costruzione. Chiamarla finta impedisce di capire perche, cinquant\'anni dopo, quei limiti pesarono cosi tanto.'},
+         {loro:'«In Italia com\'era?»',
+          tu:'Il contrario dei tedeschi sul voto e il contrario dei francesi sul parlamento: elettorato ristrettissimo, poco piu del due per cento, e un governo che rispondeva alla camera. Cioe pochissimi votavano, e il loro voto contava. È un buon esercizio da tenere in mente per il capitolo sulla Destra storica.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'Maggio 1870.\n\nNapoleone III\nindice\nl\'ultimo plebiscito.\n\nSette milioni\ne trecentomila sì.\n\nUn milione e mezzo\ndi no.\n\nDichiara\ndi non essere mai stato\ncosi forte.\n\nLuglio: guerra\nalla Prussia.\n\n2 settembre:\nsi arrende a Sedan\ncon ottantamila uomini.\n\n4 settembre:\na Parigi\nsi proclama\nla repubblica.\n\nDal plebiscito\nalla fine\ndel regime:\n\nquattro mesi.\n\nQuindi:\n\ni sette milioni di sì\n\nnon avevano misurato\nla forza\ndi quel governo.\n\nAvevano misurato\nquante persone\npreferivano lui\n\nall\'unica alternativa\nche la domanda\nmetteva sul tavolo.',
+       parlato:'Racconta la sequenza e poi fermati sul dato: quattro mesi.\n\nFai la domanda che serve: se sette milioni di persone approvano un regime e quattro mesi dopo quel regime non esiste, che cosa aveva misurato quel voto?\n\nGuidali alla risposta, che e il cuore della lezione. Non la solidita del governo. Non l\'adesione al suo programma. Aveva misurato quante persone preferissero lui all\'unica alternativa che la domanda ammetteva, cioe il disordine.\n\nEnuncia il criterio in forma generale: un\'approvazione ottenuta su una domanda scritta da chi la pone non dice nulla su quanto sia solido chi la pone.\n\nPoi la seconda parte, che riguarda il metodo dell\'epoca. Chiedi perche Bismarck vinca tre guerre e Napoleone III ne perda una.\n\nDa\' gli elementi. Bismarck isola l\'avversario prima di attaccarlo, ogni volta: nel 1866 si assicura la neutralita francese, nel 1870 l\'Austria non si muove. E si ferma presto: dopo aver battuto l\'Austria impedisce ai generali di entrare a Vienna, perche vuole un vicino sconfitto e non umiliato.\n\nCollega al capitolo precedente, perche il contrasto e istruttivo: Carlo Alberto nel 1848 aveva detto che l\'Italia avrebbe fatto da se e aveva rifiutato l\'aiuto francese. Dieci anni dopo il Piemonte fara esattamente il contrario, e vincera.\n\nPoi l\'osservazione finale, e vale la pena farla: nel 1871 Bismarck viola la propria regola. Impone l\'Alsazia e la Lorena, cinque miliardi di indennita, e la proclamazione dell\'impero nella reggia dei re di Francia. Da li nasce un rancore che arriva al 1914.\n\nChiedi che cosa lo abbia spinto a sbagliare proprio dove era stato piu bravo — e lascia la risposta aperta: la pressione dei militari e di un\'opinione pubblica in festa.',
+       seDicono:[
+         {loro:'«Quindi i plebisciti non dicono niente.»',
+          tu:'Dicono qualcosa, ma non quello che sembra. Dicono che, messe davanti a quella domanda in quel momento, tante persone hanno preferito il sì. Non dicono che cosa vogliano, ne quanto siano disposte a difendere quel governo. La prova e nei fatti: nel settembre 1870 nessuna folla si mosse per difendere l\'imperatore.'},
+         {loro:'«Bismarck è stato solo fortunato.»',
+          tu:'Ha avuto fortuna e ha fatto la stessa cosa tre volte in sette anni, il che rende la fortuna una spiegazione debole. Il metodo e identificabile: isolare prima, colpire breve, fermarsi presto. Quando nel 1871 non si e fermato presto ha prodotto il problema che avrebbe distrutto la sua opera — e questo mostra che il metodo contava.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'La domanda era:\n\nperche i due uomini\npiu autoritari d\'Europa\n\nsono stati i primi\na dare il voto a tutti?\n\nRisposta:\n\nperche il consenso\nnon e il contrario\ndel potere\nsenza controlli.\n\nPuo esserne\nil fondamento.\n\nDa portarsi via\ntre domande.\n\nDavanti a qualunque\nconsultazione,\n\nanche una\ndella vostra scuola:\n\nchi ha scritto\nla domanda?\n\nQuali alternative\nammette?\n\nE che cosa potete fare\nil giorno dopo\n\nse rispondete no?\n\nSe la terza risposta\ne «niente»,\n\nnon vi hanno chiesto\ndi scegliere.\n\nVi hanno chiesto\ndi approvare.',
+       parlato:'Torna alle tre spiegazioni scritte all\'inizio e verificale.\n\nErano truccate: ci furono pressioni pesanti, e non spiegano percentuali cosi alte in campagne dove il consenso era genuino.\n\nLa gente non capiva: i contadini sapevano benissimo che cosa volevano, e hanno votato per quello.\n\nErano intimiditi: alcuni sì, molti no. Resta il fatto che il regime durò vent\'anni.\n\nEnuncia la spiegazione che regge: un potere puo fondarsi sul consenso di massa proprio scavalcando cio che sta in mezzo, e chiedendo domande a cui e stato lui a dare la forma.\n\nPoi da\' le tre domande come strumento, e falle applicare a un caso vicino: una consultazione scolastica, un sondaggio online, una petizione, un referendum aziendale.\n\nInsisti sulla terza, che e la piu utile e la meno usata: che cosa succede se dico no? Se la risposta e che non succede niente e non cambia niente, non era una scelta.\n\nPoi la parte che evita il cinismo, e va detta. Non stiamo dicendo che votare non serva. Stiamo dicendo che il voto e forte quando poggia su due cose: la possibilita di discutere anche la domanda, e istituzioni che continuano a lavorare fra un voto e l\'altro. Sono proprio le due cose che quei regimi avevano tolto.\n\nUltima riga, per il seguito: mentre l\'Europa si riorganizzava cosi, dall\'altra parte dell\'Atlantico si combatteva la guerra piu sanguinosa del secolo, e in Asia due imperi antichissimi reagivano in modi opposti all\'arrivo delle navi occidentali. La prossima volta guardiamo li.',
+       seDicono:[
+         {loro:'«Anche oggi funziona così?»',
+          tu:'Alcuni meccanismi sì, e li riconoscete meglio adesso: il rapporto diretto fra un capo e il pubblico che salta i corpi intermedi, le domande poste in forma di sì o no, i sondaggi usati come prova di legittimita. Altre cose sono molto diverse, e la differenza principale e proprio quella che abbiamo isolato: se il no puo produrre un cambio di governo, oppure no.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'Le strade larghe',
+       corpo:'Fra il 1853 e il 1870 il prefetto Haussmann ridisegna Parigi: nuovi grandi viali rettilinei, fognature, acquedotti, parchi, illuminazione. Le condizioni igieniche della città migliorano radicalmente, e il modello viene imitato in tutta Europa.\n\nI lavori comportano la demolizione di interi quartieri popolari del centro e lo spostamento di circa centomila persone verso la periferia.\n\nI contemporanei osservarono apertamente che vie larghe e diritte rendevano difficile costruire barricate e facile il movimento delle truppe e il tiro dell\'artiglieria. Durante la Comune del 1871 quelle strade funzionarono esattamente così.',
+       chiedi:'Un\'opera pubblica migliora davvero la vita di una città e insieme la rende più facile da controllare. Come si giudica un intervento che fa entrambe le cose? E quali opere di oggi vi sembrano avere questa doppia natura?'},
+      {titolo:'La prima guerra raccontata in diretta',
+       corpo:'Nella guerra di Crimea compaiono per la prima volta insieme il telegrafo, la ferrovia militare, la fotografia e i corrispondenti al fronte. I dispacci del «Times» arrivano a Londra in poche ore e descrivono l\'incompetenza dei comandi mentre l\'assedio è in corso.\n\nMuoiono più soldati di malattia che per ferite: colera, tifo, dissenteria. Le condizioni degli ospedali militari, rese pubbliche dai giornali, provocano uno scandalo in Inghilterra e portano all\'invio di infermiere e alla riorganizzazione dell\'assistenza sanitaria, con conseguenze durature sulla professione.\n\nUn episodio militare disastroso, la carica di una brigata di cavalleria contro l\'artiglieria, diventa nel giro di settimane una poesia celebre.',
+       chiedi:'Quando una guerra viene raccontata mentre accade, che cosa cambia per chi la combatte e per chi la decide? E la stessa informazione che denuncia l\'incompetenza può anche trasformare un disastro in un mito: come si distinguono le due cose?'},
+      {titolo:'Ventitré milioni di liberi',
+       corpo:'Nel 1861 Alessandro II abolisce la servitù della gleba: circa ventitré milioni di contadini cessano di essere legati alla terra e vendibili con essa. È la più vasta riforma sociale del secolo.\n\nLa terra però non viene regalata: i contadini devono riscattarla con pagamenti distribuiti su decenni, versati allo Stato che ha indennizzato i proprietari. Restano inoltre vincolati alla comunità di villaggio, che risponde collettivamente dei debiti e limita gli spostamenti.\n\nVent\'anni dopo, lo stesso zar che aveva firmato l\'emancipazione viene ucciso da un gruppo rivoluzionario che lo considerava troppo lento.',
+       chiedi:'Una riforma enorme produce delusione e violenza invece di gratitudine. Perché? E che cosa distingue un cambiamento che le persone sentono come proprio da uno che ricevono e subiscono?'}
+    ],
+    testi:[
+      {fonte:'Luigi Napoleone Bonaparte, discorso di Bordeaux (9 ottobre 1852)',
+       corpo:'Alla vigilia della proclamazione dell\'impero, Luigi Napoleone risponde a chi teme il ritorno delle guerre napoleoniche affermando che l\'impero significa la pace, perché la Francia lo desidera, e che egli ha molte conquiste da fare, ma pacifiche: bonificare terre incolte, aprire strade, scavare porti, rendere navigabili i fiumi, completare le ferrovie.',
+       glossa:'Il discorso serve a mostrare su che cosa poggiasse davvero il regime: non sui plebisciti soltanto, ma su un programma di modernizzazione che venne in gran parte realizzato. Va letto tenendo conto dell\'esito, perché quello stesso impero condusse la Francia nella guerra di Crimea, in Italia, in Messico e infine contro la Prussia. La formula «l\'impero è la pace» è anche un buon esempio da analizzare in classe: una promessa che serve a rassicurare, formulata in modo da non poter essere verificata prima di essere smentita.'},
+      {fonte:'Otto von Bismarck, discorso alla commissione bilancio del parlamento prussiano (30 settembre 1862)',
+       corpo:'Bismarck afferma che la Prussia debba concentrare le proprie forze in vista del momento favorevole, che i suoi confini non siano adatti a una vita statale sana, e che le grandi questioni del tempo non si decidano con i discorsi e le deliberazioni delle maggioranze — questo fu l\'errore del 1848 e del 1849 — ma con il ferro e il sangue.',
+       glossa:'Pronunciato pochi giorni dopo la sua nomina, durante il conflitto sul bilancio militare, il discorso suscitò scandalo e per poco non gli costò l\'incarico. Va notato che contiene una diagnosi storica prima che una dottrina: l\'osservazione che nel 1848 le assemblee non erano riuscite a unificare la Germania era esatta. Il seguito confermò il metodo — tre guerre brevi in sette anni — e mostrò anche il suo costo, perché uno Stato costruito così ereditò istituzioni in cui il parlamento non controllava l\'esercito.'},
+      {fonte:'Alessandro II, Manifesto di emancipazione dei contadini (19 febbraio 1861)',
+       corpo:'Il manifesto dichiara che ai contadini è concesso in perpetuo l\'uso della loro casa e degli annessi, e la facoltà di riscattare i terreni assegnati; stabilisce che essi acquistino i diritti dei liberi abitanti delle campagne, e raccomanda loro di comprendere che, ricevendo per sé una proprietà, sono tenuti a compiere verso la società e verso i proprietari gli obblighi che ne derivano.',
+       glossa:'Il testo si presta bene alle tre domande. Chi lo scrive deve liberare i contadini senza scontentare la nobiltà proprietaria, e ci riesce trasformando la libertà in un debito. Ammette senza volerlo dove stia il problema, con la raccomandazione finale a rispettare gli obblighi: chi teme disordini sa che la riforma non darà ciò che i contadini si aspettano. E non dice per quanti anni durerà il riscatto — che si rivelerà lunghissimo, e verrà cancellato solo nel 1907, dopo una rivoluzione.'}
+    ],
+    compito:'Mezza pagina. Trovate una consultazione reale — un referendum, un sondaggio, un\'assemblea scolastica, un voto in un gruppo di cui fate parte — e analizzatela con le tre domande di oggi: chi ha formulato la domanda; quali alternative erano ammesse e quali no; che cosa sarebbe successo concretamente in caso di risposta negativa. Poi, in due righe, riscrivete voi la domanda in un modo che vi sembri più onesto, e spiegate che cosa cambia.',
+    fonti:[
+      'E. J. Hobsbawm, Il trionfo della borghesia 1848-1875',
+      'A. Plessis, De la fête impériale au mur des fédérés; R. Tombs, La Francia 1814-1914',
+      'L. Gall, Bismarck. Il rivoluzionario conservatore; O. Pflanze, Bismarck e lo sviluppo della Germania',
+      'O. Figes, Crimea. L\'ultima crociata',
+      'D. Lieven, Russia contro Napoleone e la storiografia sulle riforme di Alessandro II',
+      'A. Briggs, L\'età del progresso. L\'Inghilterra vittoriana'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',

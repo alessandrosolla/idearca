@@ -199,7 +199,7 @@ Si va in ordine di programma. Restano:
 - [x] Filosofia moderna · 28 — Hegel: la Fenomenologia dello spirito
 - [x] Filosofia moderna · 29 — Hegel: l'Enciclopedia
 - [x] Storia contemporanea · 1 — Il Risorgimento e la prima guerra d'indipendenza
-- [ ] Storia contemporanea · 2 — L'Europa fra il 1850 e il 1870
+- [x] Storia contemporanea · 2 — L'Europa fra il 1850 e il 1870
 - [ ] Storia contemporanea · 3 — Guerra civile americana, Giappone e Cina
 - [ ] Storia contemporanea · 4 — L'Unità d'Italia e la Destra storica
 - [ ] Storia contemporanea · 5 — L'Europa nell'età di Bismarck
@@ -217,15 +217,15 @@ Si va in ordine di programma. Restano:
 - [x] Storia contemporanea · 17 — L'Unione Sovietica di Stalin
 - [x] Storia contemporanea · 18 — Il nazismo
 - [x] Storia contemporanea · 19 — La guerra di Spagna e l'espansionismo
-- [ ] Storia contemporanea · 20 — L'Italia fascista
-- [ ] Storia contemporanea · 21 — La Seconda guerra mondiale
-- [ ] Storia contemporanea · 22 — La guerra fredda
-- [ ] Storia contemporanea · 23 — La coesistenza pacifica
-- [ ] Storia contemporanea · 24 — Il Sessantotto, la distensione e le crisi
-- [ ] Storia contemporanea · 25 — La fine della guerra fredda
-- [ ] Storia contemporanea · 26 — L'Italia repubblicana
-- [ ] Storia contemporanea · 27 — Globalizzazione e nuove crisi
-- [ ] Storia contemporanea · 28 — L'Italia della Seconda Repubblica
+- [x] Storia contemporanea · 20 — L'Italia fascista
+- [x] Storia contemporanea · 21 — La Seconda guerra mondiale
+- [x] Storia contemporanea · 22 — La guerra fredda
+- [x] Storia contemporanea · 23 — La coesistenza pacifica
+- [x] Storia contemporanea · 24 — Il Sessantotto, la distensione e le crisi
+- [x] Storia contemporanea · 25 — La fine della guerra fredda
+- [x] Storia contemporanea · 26 — L'Italia repubblicana
+- [x] Storia contemporanea · 27 — Globalizzazione e nuove crisi
+- [x] Storia contemporanea · 28 — L'Italia della Seconda Repubblica
 - [ ] Filosofia contemporanea · 1 — Schopenhauer
 - [ ] Filosofia contemporanea · 2 — Kierkegaard
 - [ ] Filosofia contemporanea · 3 — La Sinistra hegeliana e Feuerbach
