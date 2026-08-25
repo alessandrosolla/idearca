@@ -174,7 +174,7 @@ Si va in ordine di programma. Restano:
 - [x] Storia moderna · 12 — L'età napoleonica
 - [x] Storia moderna · 13 — La Restaurazione
 - [x] Storia moderna · 14 — L'età dei popoli e delle nazioni
-- [ ] Storia moderna · 15 — Società industriale e socialismo
+- [x] Storia moderna · 15 — Società industriale e socialismo
 - [ ] Storia moderna · 16 — Il 1848, primavera dei popoli
 - [ ] Filosofia moderna · 1 — La cultura umanistico-rinascimentale
 - [ ] Filosofia moderna · 2 — Il ritorno a Platone e ad Aristotele
@@ -289,3 +289,13 @@ schieramento resta: lì serve.
 
 Gli arretrati di storia si rifanno **solo dove lo schieramento pesa di più**,
 non tutti.
+
+### Otto aree, non nove (misurato il 25 agosto 2026)
+
+Il capitolo su società industriale e socialismo era uscito con nove aree, e
+la schermata «titolo + teste d'area» scendeva a 13,7 px: sotto la soglia dei
+15. Accorpando a otto risale a 15,3. Il limite non è estetico — è quella
+schermata a fissarlo, perché mostra tutte le teste insieme.
+
+Se un capitolo non ci sta in otto aree, si accorpa (due aree corte in una,
+con la seconda che diventa un ramo), non si aggiunge la nona.

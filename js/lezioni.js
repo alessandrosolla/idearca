@@ -9114,6 +9114,227 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Storia moderna · 15 — Società industriale e socialismo': {
+  mappa: {
+    n:'Societa industriale e socialismo', d:'la seconda industrializzazione e le risposte di chi ci lavora dentro',
+    f:[
+      {r:'comincia da', n:'Una seconda industrializzazione', d:'diversa dalla prima: nasce nei laboratori, non nelle botteghe',
+       f:[
+         {r:'l\'', n:'Acciaio', d:'con il convertitore Bessemer costa una frazione del ferro: rotaie, navi, grattacieli'},
+         {r:'l\'', n:'Elettricita', d:'illuminazione, tram, motori: l\'energia si trasporta e si divide'},
+         {r:'la', n:'Chimica', d:'coloranti sintetici, concimi, esplosivi, farmaci: la Germania prende il primato'},
+         {r:'il', n:'Petrolio e il motore a scoppio', d:'da cui automobile e aereo, che cambieranno il secolo dopo'},
+         {piu:true, r:'e cambia il', n:'Ritmo delle scoperte', d:'fra il 1870 e il 1900 si brevetta piu che nei tre secoli precedenti'}
+       ]},
+
+      {r:'cambia il modo di', n:'Produrre e di inventare', d:'e questa e la differenza vera rispetto alla prima industrializzazione',
+       f:[
+         {r:'la ricerca entra', n:'Nei laboratori aziendali', d:'Bayer e Siemens assumono chimici e fisici a stipendio: l\'invenzione diventa un ufficio'},
+         {r:'servono capitali enormi', n:'Societa per azioni e banche', d:'chi finanzia non e chi dirige: si separano proprieta e gestione'},
+         {r:'si formano', n:'Trust e cartelli', d:'accordi per non farsi concorrenza: il mercato tende a chiudersi da solo'},
+         {r:'il lavoro viene', n:'Scomposto in gesti', d:'Taylor cronometra le operazioni e le riorganizza: e l\'organizzazione scientifica'},
+         {r:'e arriva la', n:'Catena di montaggio', d:'il pezzo si muove e l\'operaio sta fermo: produttivita altissima e lavoro svuotato',
+          f:[{piu:true, r:'con la contropartita dei', n:'Salari alti', d:'Ford paga il doppio: chi fa quel lavoro deve avere una ragione per restare'}]}
+       ]},
+
+      {r:'crea', n:'Una societa di massa', d:'e questa e la novita che si vede per strada',
+       f:[
+         {r:'i', n:'Grandi magazzini', d:'prezzo fisso, entrata libera, vetrine: comprare diventa un\'esperienza'},
+         {r:'la', n:'Pubblicita e la stampa popolare', d:'giornali a un soldo, milioni di copie, e la notizia come merce'},
+         {r:'lo', n:'Sport e il tempo libero', d:'campionati, biciclette, Olimpiadi: nasce il fine settimana come istituzione'},
+         {r:'l\'', n:'Istruzione obbligatoria', d:'quasi ovunque in Europa fra il 1870 e il 1900: si alfabetizza per servire lo Stato'},
+         {r:'e un\'', n:'Emigrazione senza precedenti', d:'circa cinquanta milioni di europei lasciano il continente in mezzo secolo',
+          f:[{piu:true, r:'con il', n:'Biglietto pagato dalle compagnie di navigazione', d:'che fanno pubblicita nei villaggi: l\'emigrazione e anche un\'industria'}]}
+       ]},
+
+      {r:'trova le sue teorie con', n:'Il socialismo', d:'prima progettato a tavolino, poi costruito come analisi',
+       f:[
+         {r:'i primi', n:'Progettano comunita modello', d:'Owen a New Lanark, Fourier con i falansteri: si disegna la societa giusta e la si prova',
+          f:[{r:'quasi tutte', n:'Falliscono in pochi anni', d:'restano isole in un mare che funziona con altre regole'},
+             {piu:true, r:'e Marx li chiamera', n:'Utopisti', d:'perche progettano il futuro invece di studiare le forze che lo producono'}]},
+         {r:'la storia si spiega con i', n:'Rapporti di produzione', d:'chi possiede i mezzi con cui si produce determina il resto'},
+         {r:'il motore e la', n:'Lotta di classe', d:'e nella societa industriale sono due: chi possiede e chi vende il proprio lavoro'},
+         {r:'il profitto viene dal', n:'Plusvalore', d:'il lavoratore produce piu valore di quanto riceva in salario'},
+         {r:'il lavoro moderno produce', n:'Alienazione', d:'l\'operaio non riconosce piu se stesso in cio che fa'},
+         {r:'nel 1848 pubblicano il', n:'Manifesto', d:'poche decine di pagine, scritte per una piccola lega di artigiani tedeschi'},
+         {r:'e la storia va letta', n:'Dal basso', d:'non dalle idee dei grandi uomini ma da come si producono le cose: e un cambio di sguardo'},
+         {r:'e nel 1867 esce', n:'Il capitale', d:'un\'analisi del sistema, non un programma: dice come funziona, non che cosa fare',
+          f:[{piu:true, r:'con la previsione della', n:'Concentrazione e delle crisi', d:'imprese sempre piu grandi e crisi sempre piu ampie: su questo ci ha visto giusto'}]}
+       ]},
+
+      {r:'si organizza in', n:'Un movimento', d:'e per la prima volta gli operai hanno strumenti permanenti',
+       f:[
+         {r:'la', n:'Prima Internazionale', d:'1864: dura otto anni e si spacca fra marxisti e anarchici'},
+         {r:'la', n:'Seconda Internazionale', d:'1889: partiti nazionali di massa, congressi, e il primo maggio'},
+         {r:'i partiti diventano', n:'Enormi', d:'la socialdemocrazia tedesca arriva a un milione di iscritti e a un terzo dei voti'},
+         {r:'con', n:'Giornali, cooperative, case del popolo', d:'una societa parallela: si nasce, si legge e si muore dentro il partito'},
+         {piu:true, r:'e nascono le', n:'Camere del lavoro', d:'in Italia dal 1891: collocamento, assistenza legale, scuole serali, tutto in un edificio'},
+         {r:'e i sindacati passano', n:'Da reato a controparte', d:'contratti collettivi riconosciuti, scioperi legali'}
+       ]},
+
+      {r:'si divide su', n:'Riforme o rivoluzione', d:'ed e la frattura che segna tutto il Novecento',
+       f:[
+         {r:'Bernstein osserva che', n:'Il capitalismo non crolla', d:'i salari salgono, il ceto medio cresce, le crisi non diventano finali'},
+         {r:'e propone di', n:'Puntare sulle riforme', d:'il movimento e tutto, il fine ultimo non e niente'},
+         {r:'Kautsky difende l\'', n:'Ortodossia', d:'si accettano le riforme e si tiene fermo l\'obiettivo rivoluzionario'},
+         {r:'Lenin risponde con il', n:'Partito di rivoluzionari di professione', d:'pochi, disciplinati, che portino la coscienza dall\'esterno'},
+         {r:'e la frattura diventa', n:'Definitiva nel 1917-19', d:'da qui socialisti e comunisti saranno due cose diverse'}
+       ]},
+
+      {r:'riceve risposte', n:'Da chi socialista non e', d:'e sono queste a produrre i risultati piu duraturi',
+       f:[
+         {r:'Bismarck vara le', n:'Assicurazioni sociali', d:'malattia 1883, infortuni 1884, invalidita e vecchiaia 1889: le prime al mondo',
+          f:[{r:'insieme alle', n:'Leggi antisocialiste', d:'1878: il partito e messo fuori legge, e intanto se ne accolgono le richieste'},
+             {piu:true, r:'con lo scopo dichiarato di', n:'Togliere consenso ai socialisti', d:'lo scrive nei documenti: e una politica di sicurezza interna'}]},
+         {r:'la Chiesa pubblica la', n:'Rerum novarum', d:'1891: condanna il socialismo e il liberismo, e afferma il giusto salario',
+          f:[{r:'da cui nascono', n:'Sindacati e partiti cattolici', d:'in Italia, Belgio, Germania: un\'altra strada per gli stessi operai'}]},
+         {r:'gli anarchici rifiutano', n:'Ogni Stato', d:'e si dividono fra chi punta ai sindacati e chi alla propaganda con il fatto'},
+         {piu:true, r:'e le donne restano', n:'Ai margini di tutti', d:'lavorano nelle fabbriche, guadagnano meta, e nei sindacati contano quasi nulla'},
+         {r:'e il mutualismo costruisce', n:'Cooperative e societa di soccorso', d:'assicurarsi da soli, prima che lo faccia lo Stato'}
+       ]},
+
+      {r:'lascia', n:'Un bilancio rovesciato', d:'quasi nessuno ottiene cio che voleva, e molto cambia',
+       f:[
+         {r:'la previsione della', n:'Miseria crescente non si avvera', d:'nei paesi industriali i salari reali salgono dopo il 1870'},
+         {r:'le conquiste arrivano', n:'Quasi tutte per via riformista', d:'orario, assicurazioni, suffragio: strappate o concesse, non prese con la rivoluzione'},
+         {r:'lo Stato sociale nato per', n:'Contenere il socialismo', d:'diventa la conquista sociale piu duratura del secolo'},
+         {r:'e nel 1914 arriva la prova', n:'I socialisti votano i crediti di guerra', d:'l\'internazionalismo si sfalda in pochi giorni',
+          f:[{piu:true, r:'perche l\'appartenenza nazionale', n:'Pesa piu di quella di classe', d:'ed e la scoperta piu amara del movimento operaio'}]}
+       ]}
+    ],
+    incroci:[
+      {da:'Togliere consenso ai socialisti', a:'Enormi', r:'non impedisce che i partiti diventino',
+       perche:'Bismarck mette il partito fuori legge e insieme gli toglie le bandiere concedendo le assicurazioni. Dodici anni dopo la socialdemocrazia e il primo partito tedesco per voti. Reprimere e concedere insieme non ha funzionato — ma le concessioni sono rimaste, e valgono ancora.'},
+      {da:'Leggi antisocialiste', a:'Giornali, cooperative, case del popolo', r:'spingono a costruire',
+       perche:'Vietato il partito, restano le associazioni ricreative, le cooperative di consumo, le mutue, i cori. Il movimento sopravvive costruendo una societa parallela, e ne esce piu radicato di prima: la repressione di un\'organizzazione politica ne produce spesso una sociale, piu difficile da colpire.'},
+      {da:'Il capitalismo non crolla', a:'Miseria crescente non si avvera', r:'e l\'osservazione empirica che',
+       perche:'Bernstein guarda i dati di fine secolo: salari in aumento, ceto medio in crescita, crisi che non diventano definitive. Non contesta il metodo di Marx, contesta una previsione con i numeri. È l\'esempio piu limpido di una teoria messa alla prova dai fatti da parte di chi ci credeva.'},
+      {da:'Salari alti', a:'Scomposto in gesti', r:'sono la contropartita del lavoro',
+       perche:'Ford raddoppia la paga non per generosita: alla catena di montaggio la gente non resisteva e il ricambio era enorme. Il salario alto compra la disponibilita a fare un lavoro svuotato di contenuto — ed e anche cio che rende gli operai clienti di quello che producono.'},
+      {da:'Assicurazioni sociali', a:'Rerum novarum', r:'precedono di dieci anni la',
+       perche:'La Chiesa entra nella questione sociale dopo che uno Stato conservatore ha gia costruito le prime assicurazioni e i partiti socialisti sono diventati di massa. Arriva tardi e con un\'altra motivazione — la giustizia e la pace sociale — e ottiene comunque un effetto enorme: sottrae al socialismo una parte del mondo operaio cattolico.'},
+      {da:'Utopisti', a:'Progettano comunita modello', r:'e il nome con cui Marx liquida chi',
+       perche:'L\'accusa e di progettare il futuro invece di studiare le forze che lo producono. È efficace e ingenerosa: Owen aveva dimostrato a New Lanark che orari ridotti e scuola erano compatibili con il profitto. Il modo in cui una corrente nomina i propri predecessori serve quasi sempre a prenderne il posto.'},
+      {da:'Istruzione obbligatoria', a:'Pubblicita e la stampa popolare', r:'crea il pubblico per la',
+       perche:'Alfabetizzare milioni di persone per servire lo Stato e l\'esercito produce, come effetto non previsto, un mercato per giornali a un soldo, romanzi popolari e reclame. La scuola di massa e la premessa materiale dell\'opinione pubblica moderna, con tutto quello che ne segue.'},
+      {da:'Pesa piu di quella di classe', a:'Istruzione obbligatoria', r:'e il frutto di trent\'anni di',
+       perche:'Nel 1914 i partiti socialisti di quasi tutta Europa votano i crediti di guerra, dopo aver dichiarato per anni che gli operai non hanno patria. Scuola obbligatoria, servizio militare e stampa nazionale avevano lavorato per trent\'anni sulle stesse persone che il partito riuniva la domenica, e piu in profondita di quanto il movimento credesse.'},
+      {da:'Trust e cartelli', a:'Concentrazione e delle crisi', r:'confermano la previsione sulla',
+       perche:'La tendenza delle imprese a diventare sempre piu grandi e ad accordarsi per non farsi concorrenza e uno dei punti in cui l\'analisi di Marx si e rivelata esatta. Vale la pena distinguere: la stessa opera contiene previsioni verificate e previsioni smentite, e valutarla in blocco impedisce di imparare da entrambe.'},
+      {da:'Da reato a controparte', a:'Quasi tutte per via riformista', r:'e il passaggio che rende possibili conquiste ottenute',
+       perche:'Quando lo sciopero smette di essere un delitto e il contratto collettivo viene riconosciuto, il conflitto acquista una forma che produce risultati misurabili. Le grandi conquiste del movimento operaio europeo passano di li, non dalle barricate — e questo pesa nella scelta fra riforme e rivoluzione.'},
+      {da:'Biglietto pagato dalle compagnie di navigazione', a:'Emigrazione senza precedenti', r:'contribuisce a spiegare l\'',
+       perche:'Le compagnie mandavano agenti nei villaggi con manifesti e anticipi sul viaggio, perche guadagnavano sul numero dei passeggeri. La grande emigrazione non e solo fuga dalla miseria: e anche il prodotto di un\'industria che aveva interesse a metterla in moto.'},
+      {da:'Partito di rivoluzionari di professione', a:'Puntare sulle riforme', r:'e la risposta opposta a',
+       perche:'Davanti allo stesso fatto — gli operai non diventano spontaneamente rivoluzionari — Bernstein conclude che bisogna cambiare l\'obiettivo, Lenin che bisogna cambiare lo strumento e portare la coscienza dall\'esterno. Stessa diagnosi, due terapie opposte: e la frattura che dividera la sinistra per un secolo.'},
+      {da:'Cooperative e societa di soccorso', a:'Assicurazioni sociali', r:'anticipano dal basso le',
+       perche:'Prima che lo Stato assicurasse qualcuno, gli operai si assicuravano da soli con casse di mutuo soccorso finanziate da quote settimanali. Le assicurazioni pubbliche non inventano l\'idea: la rendono obbligatoria e universale, prendendo un modello che il movimento operaio aveva gia costruito.'}
+    ]
+  },
+  provocazione: {
+    titolo:'Chi concede e chi ottiene',
+    durata:'55 minuti',
+    domandaMadre:'Una conquista fatta per paura e ancora una conquista?',
+    perche:'Le prime assicurazioni sociali della storia — malattia, infortuni, vecchiaia — non le ottiene un governo socialista: le concede Bismarck, un conservatore, negli stessi anni in cui tiene il partito socialdemocratico fuori legge, e lo fa dichiarando apertamente di volergli togliere consenso. Dieci anni dopo la Chiesa entra nello stesso campo con un\'altra motivazione ancora. La classe deve capire che moltissime conquiste sociali arrivano cosi — come concessioni fatte per contenere una minaccia — e ricavarne la conseguenza scomoda: cio che e stato concesso per paura puo essere ritirato quando la paura passa.',
+    occorrente:'Niente.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'Germania, anni Ottanta dell\'Ottocento.\n\n1883: assicurazione contro le malattie.\n1884: assicurazione contro gli infortuni.\n1889: pensione di invalidita e vecchiaia.\n\nSono le prime al mondo.\nSono il modello da cui nascera\nlo Stato sociale europeo.\n\nChi le ha volute?\n\nNon un partito operaio.\nNon un governo di sinistra.\n\nLe vuole Otto von Bismarck,\nconservatore, monarchico,\nfondatore dell\'impero,\nlo stesso che nel 1878\naveva messo fuori legge\nil partito socialdemocratico.\n\nNegli stessi anni,\nnello stesso paese:\n\nil partito operaio e vietato\ne le sue richieste\ndiventano legge.',
+       parlato:'Dai i tre provvedimenti e poi la domanda su chi li ha voluti: la risposta sorprende sempre.\n\nPoi il contrasto con le leggi antisocialiste, che va detto con precisione: dal 1878 al 1890 la socialdemocrazia tedesca non puo avere sedi, giornali, riunioni. I suoi candidati possono presentarsi alle elezioni come individui, il partito come tale e sciolto.\n\nE nello stesso decennio arrivano le pensioni.\n\nDomanda dell\'ora: se una cosa giusta viene concessa da chi ti sta reprimendo, e ancora una tua conquista?\n\nRaccogli le prime reazioni senza chiudere. Le due risposte istintive — «e comunque una vittoria» e «e solo un modo per comprarti» — sono entrambe parziali, e ci lavoriamo per un\'ora.',
+       seDicono:[
+         {loro:'«L\'avrà fatto per bontà?»',
+          tu:'No, e la cosa migliore e che non ha mai finto. Lo scrive nei documenti e lo dice al parlamento: serve a togliere terreno alla socialdemocrazia. Il vantaggio, per noi, e che non dobbiamo indovinare le intenzioni — le ha dichiarate.'},
+         {loro:'«Allora i socialisti avranno rifiutato.»',
+          tu:'Alcuni volevano farlo, sostenendo che accettare significava legittimare il regime. Prevalse la posizione opposta: le pensioni si prendono comunque. Tienila da parte, perche fra quaranta minuti vedremo che cosa e successo a quel partito.'}
+       ]},
+
+      {minuti:'8–17', et:'La fonte',
+       schermo:'Il documento che apre tutto.\n\nMessaggio imperiale del novembre 1881,\nletto al Reichstag.\n\nDichiara che la guarigione\ndei mali sociali\nnon va cercata soltanto\nnella repressione degli eccessi\nsocialdemocratici,\n\nma nella promozione positiva\ndel benessere dei lavoratori;\n\nche chi e reso inabile\ndalla vecchiaia o dall\'invalidita\nha un fondato diritto\nall\'assistenza da parte\ndella comunita;\n\ne che provvedendovi lo Stato\ndara ai propri sudditi\nmotivo di attaccamento\nalle istituzioni.\n\nTre domande.\nChi lo ha scritto, e per chi?\nChe cosa ammette senza volerlo?\nChe cosa non dice?',
+       testo:{fonte:'Messaggio imperiale di Guglielmo I al Reichstag, 17 novembre 1881, redatto da Bismarck',
+              glossa:'Il testo è la premessa politica delle tre leggi sociali degli anni successivi. La formula sulla repressione «non soltanto» è la chiave: non si rinuncia alle leggi antisocialiste, si aggiunge uno strumento. È uno dei documenti in cui un governo espone con maggiore chiarezza la logica di ciò che sta facendo.'},
+       parlato:'Fai lavorare in coppia, cinque minuti, poi raccogli.\n\nSulla prima: lo firma l\'imperatore, lo scrive Bismarck, e si rivolge al parlamento e all\'opinione pubblica. Ma il destinatario vero sono gli operai che votano socialdemocratico: e a loro che si sta parlando, per convincerli che lo Stato pensa a loro piu del partito.\n\nSulla seconda, che e la piu istruttiva: il testo ammette che la repressione da sola non basta. È una confessione di debolezza travestita da programma. Se bastasse vietare il partito, non servirebbe alcuna pensione.\n\nFai pesare questo: le concessioni sociali sono la misura di quanto una minaccia sia stata presa sul serio.\n\nSulla terza: non dice che quei diritti siano stati chiesti da qualcuno. La formula «fondato diritto all\'assistenza» presenta la cosa come un\'iniziativa dello Stato verso chi non puo lavorare. Del movimento operaio che chiedeva quelle cose da vent\'anni non c\'e traccia.\n\nE questo e il punto: chi concede scrive anche la storia di come si e arrivati alla concessione.',
+       seDicono:[
+         {loro:'«Almeno lo ammette che reprimeva.»',
+          tu:'Lo ammette perche nel 1881 la repressione era pubblica e legale: non c\'era nulla da nascondere. È un promemoria utile — molte cose che a noi sembrano inconfessabili venivano dette apertamente, perche in quel contesto non erano uno scandalo.'},
+         {loro:'«Se il diritto c\'è, che importa chi lo dà?»',
+          tu:'Importa per una ragione pratica: chi lo da\' puo toglierlo, e chi lo ha ottenuto con la propria forza puo difenderlo. È esattamente la differenza che abbiamo visto con le costituzioni concesse dai sovrani. Il contenuto e identico, la solidita no.'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'Perche proprio allora,\ne perche proprio li.\n\nNel 1878 il partito socialdemocratico\nviene messo fuori legge:\nniente sedi, niente giornali,\nniente riunioni.\n\nMa i candidati possono\npresentarsi come individui.\n\nRisultato:\n\n1881, primo anno delle leggi sociali:\nla socialdemocrazia prende\ncirca il sei per cento.\n\n1890, anno in cui le leggi\nantisocialiste vengono lasciate cadere:\nprende circa il venti per cento\ned e il primo partito\nper voti in Germania.\n\nNel frattempo, vietata,\naveva costruito\ncooperative di consumo,\ncasse di mutuo soccorso,\nbiblioteche, cori, societa sportive.\n\nNon si poteva fare politica.\nSi poteva cantare insieme.',
+       parlato:'Dai i numeri elettorali e lascia che facciano l\'effetto: repressione e concessioni insieme, e il partito triplica.\n\nPoi spiega perche, ed e il passaggio piu utile. Vietare un\'organizzazione politica non elimina le persone: le spinge a organizzarsi in forme che non si possono vietare. Una societa corale non e un partito. Una cooperativa di consumo nemmeno. E dentro quelle strutture si formano gli stessi legami, si distribuiscono gli stessi giornali stampati all\'estero, si riconoscono le stesse persone.\n\nQuando nel 1890 il divieto cade, il partito riprende ad esistere con una rete sociale molto piu profonda di quella che aveva nel 1878.\n\nFormulazione da portare a casa: reprimere un\'organizzazione ne produce spesso una piu difficile da colpire, perche si sposta nel terreno dove il divieto non arriva.\n\nDomanda per la classe: e allora le pensioni non hanno funzionato per niente?\n\nGuidali alla risposta corretta, che e piu sfumata: non hanno impedito la crescita del partito, e hanno probabilmente contribuito a renderlo riformista invece che rivoluzionario. Chi ha una pensione da perdere ragiona diversamente da chi non ha niente.',
+       seDicono:[
+         {loro:'«Quindi la repressione è inutile.»',
+          tu:'Non inutile: costosa e imprecisa. In dodici anni ha impedito congressi, chiuso giornali, mandato in esilio dei dirigenti. Ha fatto danni veri. Quello che non ha fatto e eliminare il movimento — e nel frattempo lo ha reso piu radicato e gli ha dato dei martiri.'},
+         {loro:'«Le pensioni li hanno addomesticati.»',
+          tu:'In parte si, ed e uno degli argomenti dei rivoluzionari contro i riformisti. Ma prova a rovesciarlo: se avere qualcosa da perdere rende piu moderati, allora la strategia migliore per un potere e dare abbastanza. E infatti e cio che l\'Europa occidentale ha fatto per un secolo.'}
+       ]},
+
+      {minuti:'28–38', et:'La seconda fonte',
+       schermo:'Il primo documento veniva\nda uno Stato conservatore.\n\nQuesto viene da un\'altra\ndelle grandi istituzioni\ndel tempo, dieci anni dopo.\n\nRerum novarum, 1891.\n\nAfferma che il socialismo,\nvolendo abolire la proprieta privata,\ndanneggia proprio gli operai\ne va respinto;\n\nche pero e ingiusto e disumano\ntrattare gli uomini come cose\nda cui trarre guadagno,\ne stimarli solo\nper la forza dei loro muscoli;\n\nche il salario non puo essere\nfissato dal solo accordo fra le parti,\nperche deve bastare\na mantenere l\'operaio sobrio e onesto;\n\ne che gli operai\nhanno diritto di associarsi.\n\nDue istituzioni diverse.\nDue moventi diversi.\nLo stesso obiettivo:\ncontenere il socialismo.',
+       testo:{fonte:'Leone XIII, enciclica Rerum novarum, 15 maggio 1891',
+              glossa:'Il testo condanna insieme il socialismo e il liberismo senza regole, e afferma alcuni principi che allora erano rivendicazioni operaie: il salario sufficiente, il riposo festivo, il diritto di associazione. Da qui nascono sindacati e partiti cattolici che in molti paesi europei contenderanno ai socialisti lo stesso elettorato.'},
+       parlato:'Metti i due documenti uno accanto all\'altro e fai trovare a loro le somiglianze e le differenze.\n\nSomiglianze: entrambi arrivano dall\'alto, entrambi accolgono richieste che venivano dal movimento operaio, entrambi hanno fra gli scopi quello di sottrargli seguito.\n\nDifferenze: lo Stato promette prestazioni e attaccamento alle istituzioni; la Chiesa parla di giustizia e di dignita della persona, e non offre pensioni ma un criterio morale sul salario.\n\nDomanda di metodo: quale dei due argomenti e piu difficile da ritirare?\n\nGuidali alla risposta, che e interessante. Una prestazione si puo tagliare con una legge di bilancio. Un principio affermato in un testo dottrinale resta scritto e puo essere invocato per sempre — e infatti la Rerum novarum verra citata da sindacalisti cattolici per un secolo, anche contro governi cattolici.\n\nÈ la stessa cosa vista con la Dichiarazione d\'indipendenza: cio che entra in un testo fondativo diventa disponibile a chiunque.\n\nUltima osservazione: entrambi i documenti riconoscono agli operai il diritto di associarsi. Cioe: la cosa per cui il movimento aveva lottato per decenni viene riconosciuta da chi lo combatteva, perche a quel punto era piu pericoloso vietarla che accettarla.',
+       seDicono:[
+         {loro:'«La Chiesa era dalla parte degli operai o no?»',
+          tu:'Condanna il socialismo e condanna anche lo sfruttamento; difende la proprieta privata e nega che il salario possa essere qualunque cifra accettata. Non e una posizione confusa: e una terza posizione, che non sta con nessuno dei due contendenti e che in molti paesi si organizzera in sindacati propri.'},
+         {loro:'«Allora tutti volevano fermare i socialisti.»',
+          tu:'Tutti quelli che avevano qualcosa da perdere, ed e la definizione stessa della situazione. La cosa interessante e che per fermarli hanno dovuto concedere quello che i socialisti chiedevano: la forza di un movimento si misura anche da quanto costringe gli altri a fare al posto suo.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'Come e finita.\n\nLe leggi antisocialiste:\nlasciate cadere nel 1890,\nfallite.\n\nIl tentativo di togliere consenso\nai socialisti con le pensioni:\nfallito — nel 1912 la socialdemocrazia\ne il primo partito del Reichstag.\n\nLe assicurazioni sociali:\nrimaste.\n\nCopiate in tutta Europa,\nallargate per un secolo,\ne oggi sono cio che chiamiamo\nStato sociale.\n\nCioe: lo strumento e sopravvissuto\na tutti gli scopi\nper cui era stato creato.\n\nMa c\'e un secondo finale,\ne non e consolante.\n\nAgosto 1914.\nI partiti socialisti d\'Europa,\nche per trent\'anni avevano detto\nche gli operai non hanno patria,\nvotano quasi ovunque\ni crediti di guerra\nper i propri governi.\n\nL\'Internazionale si sfalda\nin una settimana.',
+       parlato:'Dai prima il bilancio delle strategie, che e chiaro: entrambe falliscono, e lo strumento resta.\n\nPoi la formulazione: le istituzioni sopravvivono ai motivi per cui sono nate. Le assicurazioni sociali erano un\'arma politica di un cancelliere conservatore, e sono diventate la conquista sociale piu difesa del Novecento — difesa proprio da quel movimento che dovevano indebolire.\n\nPoi il 1914, e va dato senza attenuazioni. Il movimento operaio internazionale era la piu grande organizzazione volontaria del mondo, con milioni di iscritti e congressi in cui si era votato che in caso di guerra si sarebbe risposto con lo sciopero generale. Nel giro di pochi giorni i deputati socialisti tedeschi, francesi, austriaci votano i fondi per la guerra ai propri governi.\n\nDomanda per la classe: perche?\n\nRaccogli, e poi da\' la spiegazione che collega al capitolo precedente: trent\'anni di scuola obbligatoria, servizio militare e stampa nazionale avevano lavorato piu in profondita di trent\'anni di riunioni di partito. L\'appartenenza nazionale ha battuto quella di classe, e la scoperta e stata devastante per chi l\'aveva negata.',
+       seDicono:[
+         {loro:'«Si sono venduti.»',
+          tu:'Alcuni forse. Ma milioni di operai partirono convinti, cantando, e i deputati che votarono contro furono pochissimi e isolati anche dai propri elettori. Quando una scelta e fatta da quasi tutti contemporaneamente, la spiegazione del tradimento personale non basta: bisogna cercare che cosa aveva reso quella scelta ovvia.'},
+         {loro:'«Allora la classe non contava niente.»',
+          tu:'Contava, e non abbastanza da reggere il confronto con la nazione in un momento di paura collettiva. Le appartenenze non sono una sola: ciascuno di noi ne ha diverse, e in una crisi si scopre quale pesa di piu. Quella scoperta, nel 1914, colse di sorpresa proprio chi ne aveva scritto per una vita.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'Torniamo alla domanda.\n\nUna conquista fatta per paura\ne ancora una conquista?\n\nTre cose da tenere insieme.\n\nÈ reale: le pensioni\nsi incassano davvero,\nqualunque fosse il motivo\nper cui sono state date.\n\nÈ una misura della forza\ndi chi la chiedeva:\nnessuno concede niente\na chi non fa paura.\n\nEd e fragile,\nperche cio che e stato dato\nper contenere una minaccia\npuo essere ritirato\nquando la minaccia passa.\n\nUltima cosa da portarsi via,\ne vale per qualunque diritto:\n\nquando qualcosa vi viene concesso,\nchiedetevi che cosa temeva\nchi ve l\'ha concesso.\n\nE che cosa succede\nse smette di temerlo.',
+       parlato:'Ripercorri i tre punti e falli enunciare a loro.\n\nInsisti sul secondo, che e il piu utile e il meno ovvio: le concessioni misurano la forza di chi le ottiene, non la generosita di chi le fa. Le leggi sociali tedesche sono la prova documentale che la socialdemocrazia era diventata un problema serio, e lo sono molto piu di qualunque discorso.\n\nE insisti sul terzo senza drammatizzare, ma dicendolo: i diritti sociali non sono leggi di natura. Sono il risultato di un rapporto di forze, e cambiano quando quel rapporto cambia. Non e pessimismo, e la ragione per cui esistono i sindacati anche quando le cose vanno bene.\n\nPoi il bilancio del capitolo, tenuto onesto. Il movimento operaio ha sbagliato la previsione principale — la miseria crescente non c\'e stata — e ha ottenuto quasi tutto quello che chiedeva sul terreno che aveva scelto per ultimo, quello riformista. E nel 1914 ha scoperto di essere meno internazionale di quanto credeva.\n\nChiudi con quello che apre il seguito: nell\'agosto 1914 l\'Europa piu ricca, piu istruita e piu organizzata che fosse mai esistita entra in una guerra che quasi tutti credono breve. Sara la prima volta che tutto quello che abbiamo studiato in questi capitoli — l\'industria, la nazione, la scienza, lo Stato che sa contare i propri cittadini — viene messo al servizio della stessa cosa.',
+       seDicono:[
+         {loro:'«Allora niente è mai al sicuro.»',
+          tu:'Al sicuro no, difendibile si. La differenza la fa il fatto che qualcuno se ne accorga in tempo e sia organizzato per reagire. È esattamente per questo che vale la pena sapere come sono state ottenute le cose che abbiamo: chi non sa che una cosa e costata, non si accorge quando gliela stanno togliendo.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'La fabbrica che funzionava',
+       corpo:'A New Lanark, in Scozia, Robert Owen ridusse l\'orario, vietò il lavoro sotto i dieci anni, aprì una scuola per i figli degli operai e uno spaccio a prezzi di costo.\n\nLo stabilimento continuò a produrre utili, e divenne una meta di visite da tutta Europa.\n\nOwen cercò di estendere il modello fondando comunità sperimentali in Gran Bretagna e negli Stati Uniti: quasi tutte fallirono in pochi anni, per conflitti interni e per l\'impossibilità di reggere in un mercato che funzionava con altre regole.',
+       chiedi:'Un esperimento riesce dove il suo ideatore ha il controllo e fallisce quando prova a diventare un modello generale. Che cosa dice questo sul rapporto fra un esempio riuscito e la sua estensione? E che cosa serve, oltre alla prova che una cosa funziona, perché venga adottata?'},
+      {titolo:'Il primo maggio',
+       corpo:'Nel maggio 1886 a Chicago una manifestazione per le otto ore finisce con l\'esplosione di una bomba, mai attribuita con certezza, e con una sparatoria. Otto anarchici vengono processati; quattro sono impiccati, uno si toglie la vita in carcere. Anni dopo il governatore dell\'Illinois li graziò postumi, affermando che il processo era stato viziato.\n\nNel 1889 la Seconda Internazionale sceglie il primo maggio come giornata di mobilitazione per le otto ore, in memoria di quei fatti.\n\nLe otto ore giornaliere saranno ottenute in gran parte dei paesi europei fra il 1918 e il 1920.',
+       chiedi:'Una data nasce da una sconfitta e da un processo ingiusto, e diventa una ricorrenza celebrata anche dagli Stati. Che cosa succede a un simbolo quando viene istituzionalizzato? Ci guadagna o ci perde?'},
+      {titolo:'Cinquanta milioni',
+       corpo:'Fra il 1870 e il 1914 circa cinquanta milioni di europei lasciano il continente, diretti soprattutto verso le Americhe e l\'Australia. Dall\'Italia partono in quel periodo oltre quattordici milioni di persone.\n\nLe cause includono la crescita demografica, la crisi agraria di fine secolo e i bassi salari. Ma l\'emigrazione fu anche un\'industria: le compagnie di navigazione mandavano agenti nei villaggi, distribuivano manifesti e anticipavano il costo del biglietto, guadagnando sul numero dei passeggeri.\n\nMolti tornarono; molti mandarono a casa rimesse che sostennero intere regioni.',
+       chiedi:'Uno spostamento di persone di queste dimensioni viene raccontato quasi sempre come fuga dalla miseria. Che cosa cambia sapere che c\'era anche chi aveva interesse a organizzarlo? E come si distingue, in un fenomeno migratorio, ciò che è scelta da ciò che è spinta?'}
+    ],
+    testi:[
+      {fonte:'Marx ed Engels, Manifesto del partito comunista, 1848 — l\'apertura e la chiusura',
+       corpo:'Il testo si apre affermando che uno spettro si aggira per l\'Europa e che la storia di ogni società finora esistita è storia di lotte di classe; e si chiude sostenendo che i proletari non hanno da perdere che le proprie catene, e invitandoli a unirsi.',
+       glossa:'Fu scritto per una piccola lega di artigiani tedeschi emigrati e passò quasi inosservato per vent\'anni: la sua fortuna comincia dopo il 1870. È utile ricordarlo in classe — i testi che consideriamo epocali quasi mai lo sono al momento in cui escono, e la loro forza dipende da chi li raccoglie dopo.'},
+      {fonte:'Eduard Bernstein, I presupposti del socialismo, 1899',
+       corpo:'Bernstein osserva che i fatti non confermano le previsioni sulla concentrazione della proprietà e sull\'impoverimento crescente, che il numero dei proprietari aumenta e le condizioni operaie migliorano; e afferma che ciò che comunemente si chiama fine ultimo del socialismo non è nulla, mentre il movimento è tutto.',
+       glossa:'È il primo caso in cui un dirigente socialista confronta sistematicamente la teoria con le statistiche disponibili e ne dichiara pubblicamente lo scarto. Fu accusato di tradimento da gran parte del partito, che continuò a proclamarsi rivoluzionario mentre praticava esattamente la linea che lui proponeva.'},
+      {fonte:'Leone XIII, Rerum novarum, 1891 — sul salario',
+       corpo:'L\'enciclica sostiene che se un operaio, costretto dalla necessità o dal timore di un male peggiore, accetta condizioni durissime imposte dal datore di lavoro, subisce una violenza contro la quale la giustizia protesta; e che il salario deve essere sufficiente a mantenere un lavoratore sobrio e onesto.',
+       glossa:'Il passaggio nega che il consenso basti a rendere giusto un contratto, e lo fa con un argomento che gli studenti riconoscono subito: chi non ha alternative non sta scegliendo davvero. È lo stesso ragionamento incontrato a proposito delle enclosures e delle prime fabbriche.'}
+    ],
+    compito:'Mezza pagina. Individuate un diritto o una tutela di cui godete oggi — a scuola, sul lavoro se lavorate, come cittadini. Cercate quando è stato introdotto e, se riuscite, chi lo chiedeva e chi lo ha concesso. Poi rispondete alla domanda della lezione: chi lo ha concesso, che cosa temeva? E oggi quella paura esiste ancora?',
+    fonti:[
+      'Messaggio imperiale del 17 novembre 1881; leggi sociali tedesche (1883, 1884, 1889)',
+      'Leone XIII, Rerum novarum (1891)',
+      'Marx ed Engels, Manifesto del partito comunista (1848); Marx, Il capitale, libro I (1867)',
+      'E. Bernstein, Die Voraussetzungen des Sozialismus (1899)',
+      'E. Hobsbawm, L\'età degli imperi; Lavoratori. Studi sulla storia del movimento operaio',
+      'G. Ritter, Storia dello Stato sociale; D. Landes, Prometeo liberato'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',
