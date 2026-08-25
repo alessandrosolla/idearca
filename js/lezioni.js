@@ -10208,6 +10208,223 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Filosofia moderna · 4 — Rinascimento e politica': {
+  mappa: {
+    n:'Rinascimento e politica', d:'quando si smette di chiedersi come si dovrebbe governare',
+    f:[
+      {r:'nasce da', n:'Una catastrofe', d:'e non e un caso: la teoria politica arriva quando qualcosa si rompe',
+       f:[
+         {r:'nel 1494 l\'Italia', n:'Perde il controllo di se stessa', d:'e per trentacinque anni e il campo di battaglia di tutti'},
+         {r:'Firenze passa in vent\'anni da', n:'Medici a Savonarola a repubblica e ritorno', d:'quattro regimi diversi, e ogni volta chi serviva il precedente e in pericolo'},
+         {r:'Machiavelli e', n:'Segretario della repubblica', d:'quindici anni di missioni diplomatiche, poi il licenziamento e la tortura'},
+         {r:'e scrive il Principe', n:'Da disoccupato', d:'in una casa di campagna, in pochi mesi, sperando di rientrare in servizio',
+          f:[{piu:true, r:'lo racconta in una', n:'Lettera a Vettori', d:'la sera si toglie i panni infangati e entra nelle corti degli antichi a parlare con loro'}]}
+       ]},
+
+      {r:'propone', n:'Un metodo nuovo', d:'guardare come si governa, non come si dovrebbe governare',
+       f:[
+         {r:'la', n:'Verita effettuale della cosa', d:'contro le repubbliche e i principati immaginati che nessuno ha mai visto'},
+         {r:'perche chi vuole', n:'Fare professione di buono in tutto', d:'fra molti che buoni non sono, va necessariamente in rovina'},
+         {r:'la storia serve come', n:'Esperienza accumulata', d:'gli uomini sono sempre gli stessi, quindi i casi passati istruiscono'},
+         {r:'con un\'analogia', n:'Medica', d:'la politica come diagnosi: riconoscere il male presto, quando e ancora curabile'},
+         {piu:true, r:'e scrive in', n:'Volgare e non in latino', d:'vuole essere letto da chi governa e da chi obbedisce, non dai dotti'},
+         {r:'e con la conseguenza scomoda che', n:'Descrivere non e approvare', d:'e la distinzione che quasi nessuno dei suoi lettori ha rispettato'}
+       ]},
+
+      {r:'costruisce', n:'Un lessico', d:'poche parole che diventano gli strumenti di tutti',
+       f:[
+         {r:'la', n:'Virtu', d:'non la virtu morale: la capacita di agire con energia e intelligenza sulle circostanze'},
+         {r:'la', n:'Fortuna', d:'cio che non dipende da noi, e che arbitra circa la meta delle nostre azioni'},
+         {r:'la', n:'Necessita', d:'la situazione che riduce le scelte: molte azioni non si scelgono, si subiscono'},
+         {r:'e la', n:'Prudenza', d:'saper scegliere fra due mali il meno cattivo: quasi mai si sceglie fra bene e male'},
+         {r:'e l\'', n:'Occasione', d:'la fortuna offre la materia, e serve la virtu per riconoscerla in tempo'},
+         {r:'con immagini che restano', n:'La volpe e il leone', d:'la forza non basta senza l\'astuzia, e l\'astuzia non basta senza la forza',
+          f:[{piu:true, r:'e con l\'idea delle', n:'Crudelta bene usate', d:'poche, subito, e non ripetute: e un calcolo, e questo lo rende peggiore o migliore a seconda di come lo si guarda'}]}
+       ]},
+
+      {r:'ed e soprattutto', n:'Un repubblicano', d:'e questa e la parte che quasi nessuno conosce',
+       f:[
+         {r:'scrive i', n:'Discorsi sulla prima deca di Tito Livio', d:'cinque volte piu lunghi del Principe, e sono la sua opera maggiore'},
+         {r:'sostiene che la liberta romana nacque', n:'Dalla disunione fra plebe e senato', d:'dai tumulti, non dalla concordia'},
+         {r:'perche ogni conflitto produsse', n:'Leggi a favore della liberta', d:'i tribuni, l\'appello al popolo, le garanzie: nessuna concessa spontaneamente'},
+         {r:'ritiene che il popolo sia', n:'Piu prudente e piu costante di un principe', d:'e che le sue voglie siano meno dannose'},
+         {r:'vuole un esercito di', n:'Cittadini e non mercenari', d:'chi difende la propria citta combatte per se, non per una paga'},
+         {r:'e teme la', n:'Corruzione', d:'quando i cittadini antepongono l\'interesse privato al pubblico, nessuna legge regge piu'},
+         {piu:true, r:'da cui l\'idea di', n:'Ritornare ai principi', d:'ogni tanto una repubblica deve tornare al modo in cui e nata, o si sfalda'},
+         {r:'e considera la religione', n:'Uno strumento civile', d:'utile a tenere insieme una comunita, e giudicata dai suoi effetti politici'}
+       ]},
+
+      {r:'ha accanto', n:'Guicciardini', d:'che gli somiglia e non gli crede',
+       f:[
+         {r:'diffida delle', n:'Regole generali', d:'le cose vanno distinte caso per caso, e chi generalizza sbaglia'},
+         {r:'osserva che ognuno agisce per', n:'Il particulare', d:'il proprio interesse: e la chiave per prevedere i comportamenti'},
+         {r:'scrive', n:'Ricordi', d:'appunti brevissimi, senza sistema: la forma dice gia la sua diffidenza per le teorie'},
+         {r:'ammira Roma antica ma', n:'Non crede si possa imitarla', d:'i tempi sono diversi e gli uomini sono quelli che sono'},
+         {piu:true, r:'e osserva che gli uomini', n:'Ripetono gli stessi errori', d:'non per ignoranza ma perche ogni volta credono che il proprio caso sia diverso'},
+         {r:'ed e', n:'Il primo storico moderno', d:'la Storia d\'Italia racconta un sistema di Stati, non le imprese di un principe'}
+       ]},
+
+      {r:'genera', n:'La ragion di Stato', d:'la formula che rende presentabile quello che Machiavelli aveva detto crudo',
+       f:[
+         {r:'Botero la definisce nel', n:'1589', d:'notizia dei mezzi atti a fondare, conservare e ampliare un dominio'},
+         {r:'sostiene che lo Stato abbia', n:'Leggi proprie', d:'diverse da quelle della morale privata, e che vadano conosciute'},
+         {r:'ma le vuole', n:'Compatibili con la religione', d:'e per questo il libro passa dove Machiavelli era proibito'},
+         {r:'nasce il', n:'Tacitismo', d:'si legge Tacito per parlare di tirannide senza citare l\'autore proibito',
+          f:[{piu:true, r:'perche un classico antico', n:'Non si puo mettere all\'Indice', d:'e chi vuole dire cose scomode impara a farle dire a un altro'}]}
+       ]},
+
+      {r:'convive con', n:'Altre risposte', d:'perche il Rinascimento politico non e solo Machiavelli',
+       f:[
+         {r:'le', n:'Utopie', d:'More e Campanella: si disegna una societa giusta per mostrare quanto e ingiusta la propria'},
+         {r:'il', n:'Mito di Venezia', d:'la repubblica che dura da secoli, additata come modello di governo misto'},
+         {r:'i', n:'Monarcomachi', d:'ugonotti francesi che dopo il 1572 teorizzano il diritto di resistere al tiranno',
+          f:[{r:'sostenendo che il potere nasce da un', n:'Patto', d:'e che se il sovrano lo viola, i magistrati inferiori possono opporsi'}]},
+         {r:'in Spagna la', n:'Scuola di Salamanca', d:'discute i limiti del potere regio e i diritti dei popoli conquistati'},
+         {r:'e in Inghilterra si discute della', n:'Costituzione mista', d:'re, lord e comuni: una teoria che tornera utile un secolo dopo'},
+         {r:'e Bodin definisce la', n:'Sovranita', d:'1576: potere assoluto e perpetuo, indivisibile, che fa le leggi senza riceverle'}
+       ]},
+
+      {r:'ha una fortuna', n:'Rovesciata piu volte', d:'e ogni epoca lo legge come le serve',
+       f:[
+         {r:'viene messo all\'', n:'Indice', d:'1559: tutte le opere, e resta proibito per secoli'},
+         {r:'letto come il', n:'Maestro dei tiranni', d:'e il suo nome diventa un aggettivo: machiavellico'},
+         {r:'e usato al contrario dagli', n:'Antimachiavellici', d:'che lo citano per confutarlo, e cosi lo diffondono'},
+         {r:'Rousseau sostiene che il Principe sia', n:'Il libro dei repubblicani', d:'perche insegna ai popoli che cosa fanno davvero i principi',
+          f:[{piu:true, r:'e Gramsci lo leggera come', n:'Un manifesto politico', d:'rivolto a chi deve costruire uno Stato, non a chi lo possiede'}]},
+         {piu:true, r:'e la sua tomba porta la scritta', n:'Nessun elogio e pari a tanto nome', d:'a Santa Croce, tre secoli dopo: la fama arriva quando non serve piu a nessuno'},
+         {r:'e resta aperto se sia', n:'Un cinico o un realista tragico', d:'chi descrive il male senza amarlo, o chi lo insegna'}
+       ]}
+    ],
+    incroci:[
+      {da:'Dalla disunione fra plebe e senato', a:'Leggi a favore della liberta', r:'produce le',
+       perche:'Machiavelli osserva che ogni garanzia della liberta romana — i tribuni, il diritto di appello, le leggi agrarie — nasce da uno scontro fra le due parti, e nessuna fu concessa spontaneamente. È il rovesciamento di un\'idea che sembra ovvia: la concordia non produce buone leggi, le produce il conflitto quando trova una forma.'},
+      {da:'Descrivere non e approvare', a:'Maestro dei tiranni', r:'e la distinzione che lo fa leggere come',
+       perche:'Machiavelli sostiene di descrivere come si comportano i principi, non di consigliarlo. I lettori, per cinque secoli, hanno letto le descrizioni come prescrizioni. La distinzione e legittima e fragile: quando spieghi bene come funziona una cosa, stai anche insegnando a farla.'},
+      {da:'Cittadini e non mercenari', a:'Piu prudente e piu costante di un principe', r:'discende dalla fiducia nel popolo, che ritiene',
+       perche:'Armare i cittadini ha senso solo se ci si fida di loro. Machiavelli sostiene che il popolo, giudicato nel complesso, sbaglia meno di un principe e mantiene meglio la parola. Le due tesi stanno insieme: chi teme il popolo non puo permettersi una milizia cittadina, e deve pagare mercenari.'},
+      {da:'Regole generali', a:'Esperienza accumulata', r:'sono cio di cui Guicciardini diffida, contro l\'uso della storia come',
+       perche:'Machiavelli usa gli esempi antichi per ricavarne regole, convinto che gli uomini siano sempre gli stessi. Guicciardini risponde che le circostanze cambiano tutto e che nessuna regola sopravvive al caso concreto. È la piu antica disputa sul metodo delle scienze umane, e non e chiusa.'},
+      {da:'Non si puo mettere all\'Indice', a:'Indice', r:'e il modo di aggirare l\'',
+       perche:'Proibito Machiavelli, si legge Tacito e si dicono le stesse cose sulla tirannide, perche un classico latino non e proibibile. La censura non elimina i contenuti: li costringe a cercarsi un\'autorita rispettabile sotto cui viaggiare. Ed e piu difficile controllare cio che si dice attraverso un antico.'},
+      {da:'Il particulare', a:'La ragion di Stato', r:'e la versione privata di cio che diventera',
+       perche:'Guicciardini spiega i comportamenti individuali con l\'interesse proprio; Botero attribuisce allo Stato interessi propri diversi dalla morale privata. È lo stesso movimento applicato a due soggetti: si smette di chiedersi che cosa sia giusto e si comincia a chiedersi che cosa convenga a chi decide.'},
+      {da:'Compatibili con la religione', a:'Leggi proprie', r:'e la clausola che rende accettabile l\'idea che lo Stato abbia',
+       perche:'Botero dice quasi le stesse cose di Machiavelli e aggiunge che tutto deve restare entro i limiti della religione. Quella clausola gli permette di essere letto ovunque per due secoli. Una tesi passa o viene proibita anche per come e incorniciata, non solo per cio che afferma.'},
+      {da:'Patto', a:'Sovranita', r:'e l\'idea che Bodin costruisce contro la teoria del',
+       perche:'I monarcomachi sostengono che il potere derivi da un accordo revocabile; Bodin risponde definendo una sovranita assoluta, perpetua e indivisibile che non riceve leggi da nessuno. Le due teorie nascono nello stesso decennio e dalla stessa guerra civile francese: la teoria politica risponde quasi sempre a un\'emergenza.'},
+      {da:'Uno strumento civile', a:'Il libro dei repubblicani', r:'e uno degli argomenti di chi lo legge come',
+       perche:'Chi giudica la religione dai suoi effetti politici non sta scrivendo per un tiranno: sta valutando quali istituzioni tengano libera una comunita. Rousseau ne trae che il Principe sveli ai popoli il funzionamento del potere, cioe che sia un libro utile a chi obbedisce piu che a chi comanda.'},
+      {da:'Da disoccupato', a:'Un manifesto politico', r:'e la condizione da cui Gramsci lo rilegge come',
+       perche:'Il Principe e scritto da un funzionario licenziato e torturato, che spera di rientrare in servizio: non e il manuale di un potente, e la proposta di un escluso. Gramsci ne fa il modello di uno scritto rivolto a chi deve ancora costruire uno Stato — e la condizione materiale dell\'autore diventa parte dell\'interpretazione.'},
+      {da:'Perde il controllo di se stessa', a:'Verita effettuale della cosa', r:'e cio che rende urgente la',
+       perche:'Finche il sistema italiano reggeva, si poteva scrivere di come dovrebbe essere un buon principe. Dopo il 1494 quella letteratura diventa inservibile, e serve capire perche gli Stati crollano. Il realismo politico nasce da una sconfitta, non da un\'illuminazione.'},
+      {da:'Crudelta bene usate', a:'Un cinico o un realista tragico', r:'e il passaggio su cui si decide se sia',
+       perche:'Machiavelli distingue fra crudelta usate una volta per necessita e crudelta che si moltiplicano nel tempo, e giudica le seconde disastrose anche per chi le compie. Chi legge il passo come un permesso ne trae il cinismo; chi lo legge come un\'analisi delle conseguenze ne trae un avvertimento. Il testo consente entrambe le letture.'},
+      {da:'Il primo storico moderno', a:'Non crede si possa imitarla', r:'e coerente con il fatto che',
+       perche:'Chi ritiene che ogni situazione sia irripetibile non cerca modelli da imitare ma ricostruisce come le cose siano andate. La Storia d\'Italia di Guicciardini analizza un sistema di Stati e i loro calcoli, e non offre lezioni: e la prima storiografia che rinuncia esplicitamente a insegnare.'}
+    ]
+  },
+  provocazione: {
+    titolo:'La discordia che rese libera Roma',
+    durata:'55 minuti',
+    domandaMadre:'La divisione e una malattia della societa, o e il modo in cui si tiene libera?',
+    perche:'Tutti sanno che Machiavelli e l\'autore del Principe. Quasi nessuno sa che la sua opera maggiore sostiene una tesi che rovescia un luogo comune: che la liberta di Roma nacque dai tumulti fra plebe e senato, e che ogni legge a garanzia della liberta usci da uno scontro. Non l\'unita: il conflitto. La classe deve prendere sul serio la tesi, e poi scoprire la condizione che Machiavelli stesso pone — quel conflitto produsse leggi perche nessuna parte poteva distruggere l\'altra e perche entrambe accettavano lo stesso terreno. Quando quella condizione cade, lo stesso conflitto distrugge la repubblica.',
+    occorrente:'Niente.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'Una cosa che tutti sanno:\n\nun paese diviso e un paese debole.\nLa concordia e un bene.\nLe divisioni indeboliscono.\nUniti si vince.\n\nLo dicono i politici di ogni parte,\ngli allenatori, i presidi,\ne lo dicevano gia gli antichi.\n\nAdesso una frase\ndi un autore fiorentino\ndel Cinquecento.\n\nSostiene che quelli che condannano\ni tumulti fra i nobili e la plebe\na Roma\nbiasimano proprio le cose\nche furono la prima causa\nche mantenne libera Roma;\n\ne che in ogni repubblica\nci sono due umori diversi,\nquello dei grandi e quello del popolo,\ne che tutte le leggi\nfatte a favore della liberta\nnascono dal loro contrasto.\n\nÈ Machiavelli.\nE non e nel Principe.',
+       parlato:'Comincia dal luogo comune e falla dire a loro: chiedi se sono d\'accordo che le divisioni indeboliscono un paese. Diranno di sì quasi tutti.\n\nPoi la tesi, e lasciala pesare.\n\nAggiungi il dato che sorprende sempre: i Discorsi sono cinque volte piu lunghi del Principe e sono l\'opera maggiore di Machiavelli. Il libro per cui e famoso e un opuscolo scritto in pochi mesi da un disoccupato che sperava di essere riassunto.\n\nDomanda per aprire: puo essere che la divisione sia utile?\n\nRaccogli le prime reazioni. Di solito e incredulita, e va bene: e lo schieramento.',
+       seDicono:[
+         {loro:'«Ma Machiavelli non era quello del Principe?»',
+          tu:'È lo stesso uomo, e non e una contraddizione: nel Principe spiega come si conquista e si tiene uno Stato, nei Discorsi come una repubblica resta libera. Sono due problemi diversi. Il fatto che conosciamo solo il primo dipende da quale libro e stato piu comodo citare.'},
+         {loro:'«Se litighi sempre non concludi niente.»',
+          tu:'Vero, e Machiavelli lo sa: fra mezz\'ora vedremo la condizione precisa che pone perche il conflitto produca leggi invece che macerie. Ma prima prendiamo sul serio la tesi, altrimenti la scartiamo prima di averla capita.'}
+       ]},
+
+      {minuti:'8–17', et:'Lo schieramento',
+       schermo:'In una societa,\nil conflitto fra gruppi\ncon interessi opposti:',
+       opzioni:['e un male da ridurre: la concordia e la salute', 'e cio che produce le regole: senza, non si ottiene niente'],
+       parlato:'Fai schierare e conta. La prima opzione prevale di solito, ed e la posizione classica: da Platone in poi la buona citta e quella concorde.\n\nPoi metti alla prova la seconda, chiedendo esempi.\n\nLa domanda giusta e questa: prendete una tutela di cui godete — l\'orario di lavoro, il diritto di voto, il diritto allo studio, le ferie, la sicurezza sul lavoro. Chiedetevi come e stata ottenuta.\n\nRaccogli, e lascia che emerga da soli: quasi nessuna e stata concessa spontaneamente. Quasi tutte sono uscite da scioperi, manifestazioni, vertenze, conflitti che sul momento sembravano rovinosi.\n\nAvete gia visto la stessa cosa piu volte quest\'anno: le assicurazioni sociali di Bismarck concesse per paura dei socialisti, le leggi di fabbrica strappate dopo decenni, il suffragio universale ottenuto da chi non lo aveva.\n\nMachiavelli e il primo a dirlo come regola generale, tre secoli prima.',
+       seDicono:[
+         {loro:'«Ma la concordia sarebbe meglio, se possibile.»',
+          tu:'Meglio per chi? Se in una societa una parte ha molto e l\'altra poco, la concordia significa che chi ha poco smette di chiedere. La domanda da fare davanti a un appello all\'unita non e se sia bello: e chi ci guadagna se tutti stanno buoni.'},
+         {loro:'«Il conflitto può anche distruggere tutto.»',
+          tu:'Certamente, e Machiavelli lo dice esplicitamente: la stessa Roma finira nelle guerre civili. Ma allora la domanda non e se il conflitto sia buono o cattivo — e a quali condizioni produce leggi invece che rovina. Ci arriviamo.'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'Che cosa succedeva\nesattamente a Roma.\n\nLa plebe non aveva\nquasi nessun diritto.\n\nQuando i patrizi esagerano,\ni plebei fanno una cosa\nsemplice e terribile:\n\nescono dalla citta\ne si accampano su un colle.\n\nNon combattono.\nSe ne vanno.\n\nRoma resta senza contadini,\nsenza artigiani,\ne soprattutto senza soldati.\n\nI patrizi devono trattare.\n\nDa quelle uscite nascono\ni tribuni della plebe,\nil diritto di appello al popolo,\nle leggi scritte,\nl\'accesso alle magistrature.\n\nNessuna di queste cose\ne stata concessa.\nTutte sono state ottenute\nrendendo insostenibile\nil funzionamento della citta.',
+       parlato:'Racconta la secessione della plebe come meccanica, perche e la parte che si ricorda: non e una rivolta, e uno sciopero generale con quindici secoli di anticipo.\n\nFai notare la struttura del potere che c\'e sotto: la plebe non poteva vincere una battaglia contro i patrizi, e i patrizi non potevano fare a meno della plebe. Nessuna delle due parti poteva eliminare l\'altra.\n\nQuesta e la condizione, e va scritta alla lavagna: il conflitto produce istituzioni quando nessuna parte puo distruggere l\'altra.\n\nSe una parte puo schiacciare l\'altra, non tratta: vince. Se le due parti sono bloccate, devono inventarsi una regola — ed e quella regola che diventa un\'istituzione.\n\nPoi la seconda condizione, che Machiavelli aggiunge: entrambe le parti devono volere che la citta continui a esistere. I plebei escono da Roma e non vanno ad allearsi con i nemici di Roma. Il conflitto e dentro un perimetro condiviso.\n\nDomanda per la classe: che cosa succede quando una di queste due condizioni viene a mancare?',
+       seDicono:[
+         {loro:'«Quindi bastava che i patrizi fossero più forti.»',
+          tu:'Esatto, ed e cio che rende il modello fragile. Le garanzie non nascono dalla generosita di nessuno: nascono da un equilibrio di forze. Quando l\'equilibrio si rompe, le garanzie diventano concessioni revocabili — e l\'abbiamo visto succedere in tutti i capitoli di storia di quest\'anno.'},
+         {loro:'«Oggi non si può uscire dalla città.»',
+          tu:'Non fisicamente, e il meccanismo esiste ancora: lo sciopero e esattamente questo, e infatti e stato illegale quasi ovunque fino all\'Ottocento. La domanda utile e un\'altra — chi oggi puo davvero smettere di fare la propria parte, e chi no. Chi non puo, non tratta.'}
+       ]},
+
+      {minuti:'28–38', et:'Il testo',
+       schermo:'Discorsi sulla prima deca\ndi Tito Livio, libro primo,\ncapitolo quarto.\n\nIl titolo dice gia tutto:\n\nche la disunione della plebe\ne del senato romano\nfece libera e potente\nquella repubblica.\n\nMachiavelli sostiene\nche in ogni repubblica\nci sono due umori diversi,\nquello del popolo e quello dei grandi,\ne che da questa diversita\nnascono tutte le leggi\nfatte in favore della liberta;\n\nche chi condanna quei tumulti\nbiasima le cose che furono\nla prima cagione\ndel tenere libera Roma;\n\ne che i buoni esempi\nnascono dalla buona educazione,\nla buona educazione\ndalle buone leggi,\ne le buone leggi\nda quei tumulti\nche molti sconsideratamente\ndannano.',
+       testo:{fonte:'Niccolò Machiavelli, Discorsi sopra la prima deca di Tito Livio, I, 4 (1513-1519)',
+              glossa:'È una delle tesi più originali del pensiero politico occidentale, e va contro tutta la tradizione precedente: da Platone a Cicerone la buona città è quella concorde, e la discordia è la malattia per eccellenza. Machiavelli non nega che il conflitto sia rischioso — dedica ampio spazio a mostrare come le stesse divisioni distruggeranno la repubblica romana — ma nega che l\'assenza di conflitto sia salute.'},
+       parlato:'Leggi il passo e fermati sulla catena finale, che vale la pena far ripetere: buone leggi dai tumulti, buona educazione dalle buone leggi, buoni esempi dalla buona educazione.\n\nÈ un rovesciamento completo. Di solito si pensa che una societa sia buona perche le persone sono buone. Machiavelli dice il contrario: le persone diventano buone perche ci sono buone leggi, e le buone leggi vengono dai conflitti.\n\nDomanda utile: che differenza fa, praticamente, credere all\'una o all\'altra cosa?\n\nGuidali. Se pensi che tutto dipenda dalla qualita morale delle persone, la soluzione e educare, predicare, scegliere i migliori. Se pensi che dipenda dalle istituzioni, la soluzione e costruire regole che funzionino anche con persone mediocri.\n\nMachiavelli sta dalla seconda parte, ed e il motivo per cui e considerato il primo pensatore politico moderno: le istituzioni contano piu delle virtu di chi le abita.\n\nSe la classe regge, aggiungi il collegamento: e la stessa idea di Montesquieu con la separazione dei poteri — non fidarsi degli uomini, costruire un\'architettura che funzioni comunque.',
+       seDicono:[
+         {loro:'«Allora la gente non conta niente?»',
+          tu:'Conta, e conta di meno di quanto piaccia pensare. Machiavelli non dice che siamo tutti uguali: dice che un sistema che funziona solo se al comando c\'e una brava persona e un sistema mal progettato, perche prima o poi al comando ci sara qualcun altro.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'E adesso la parte\nche completa la tesi.\n\nQuella stessa Roma\nfinisce nelle guerre civili.\n\nGli stessi conflitti\nfra popolo e nobilta,\nun paio di secoli dopo,\nla distruggono.\n\nMachiavelli lo sa e lo scrive.\n\nChe cosa e cambiato?\n\nDue cose.\n\nPrima: la conquista dell\'impero\nporta ricchezze enormi\na pochissimi, e i gruppi\nnon sono piu bloccati\nl\'uno contro l\'altro.\nOra una parte puo comprare\neserciti privati.\n\nSeconda: quando arrivano i Gracchi\ne poi le guerre civili,\nle parti smettono\ndi riconoscere lo stesso terreno.\nSi comincia a uccidere\ni tribuni.\n\nQuindi il conflitto\nproduce liberta\na due condizioni:\n\nche nessuno possa\ndistruggere l\'altro,\ne che tutti vogliano\nche la citta continui.',
+       parlato:'Costruisci il rovesciamento e insisti sul fatto che non e un\'obiezione a Machiavelli: e Machiavelli stesso a dirlo, nello stesso libro.\n\nPoi enuncia le due condizioni in modo pulito, perche sono la cosa da portare a casa:\n\nprima, un equilibrio di forze — se una parte puo eliminare l\'altra, non tratta;\n\nseconda, un terreno comune — se le parti smettono di considerarsi parte della stessa comunita, il conflitto smette di produrre regole e comincia a produrre morti.\n\nFai fare il collegamento con i capitoli di storia: nel 1848 i rivoluzionari si combattevano perche non riconoscevano lo stesso perimetro; a Vienna i sovrani riuscirono a cooperare perche lo riconoscevano; l\'Inghilterra ottenne il Bill of Rights perche nessuna parte poteva schiacciare l\'altra.\n\nÈ lo stesso meccanismo visto tre volte.\n\nPoi la domanda per l\'oggi, che e la parte piu viva: come si riconosce quando un conflitto sta uscendo da quelle due condizioni?\n\nRaccogli. Le risposte utili sono: quando una parte comincia a poter fare a meno dell\'altra, e quando si smette di riconoscere all\'avversario il diritto di esistere e di parlare.',
+       seDicono:[
+         {loro:'«Allora aveva ragione chi diceva che il conflitto è pericoloso.»',
+          tu:'Aveva ragione a meta, ed e la meta che serve. Il conflitto e pericoloso e necessario: senza, non si ottiene nulla; senza regole, distrugge. Chi ti dice solo la prima meta ti sta chiedendo di stare buono; chi ti dice solo la seconda ti sta preparando a una rissa.'},
+         {loro:'«E chi decide quando si è passato il limite?»',
+          tu:'Nessuno, ed e il problema. Machiavelli non offre un arbitro, offre due segnali da osservare: se una parte puo permettersi di ignorare l\'altra, e se si e smesso di riconoscere l\'avversario come parte della stessa comunita. Sono osservabili, e di solito ce ne si accorge tardi.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'Torniamo alla domanda.\n\nLa divisione e una malattia\no e il modo in cui\nuna societa resta libera?\n\nMachiavelli risponde:\ndipende da come e fatta.\n\nUn conflitto fra parti\nche non possono distruggersi\ne che vogliono entrambe\nche la casa resti in piedi\nproduce regole.\n\nUn conflitto in cui una parte\npuo fare a meno dell\'altra,\no in cui si smette di riconoscere\nall\'altro il diritto di esserci,\nproduce macerie.\n\nLa differenza non sta\nnell\'intensita.\nSta nella struttura.\n\nUltima cosa da portarsi via.\n\nQuando qualcuno vi dice\nche bisogna essere uniti,\nnon chiedetevi\nse abbia ragione.\n\nChiedetevi chi ci guadagna,\nse tutti stanno buoni.',
+       parlato:'Rifai la conta iniziale e commenta lo spostamento, che di solito e netto.\n\nPoi fissa le due condizioni, perche sono lo strumento vero: non l\'intensita del conflitto ma la sua struttura — equilibrio di forze e perimetro condiviso.\n\nSulla domanda finale falli lavorare: gli appelli all\'unita non sono tutti uguali, e vale la pena distinguere. Chiedere unita di fronte a una minaccia esterna e una cosa; chiedere unita a chi sta rivendicando qualcosa e un\'altra. Nel secondo caso, l\'appello alla concordia e uno strumento di parte.\n\nNon dare per scontato che concludano che l\'unita sia sempre sospetta: dai loro il criterio e lasciateli applicare.\n\nUltima cosa, per il seguito. Abbiamo visto un uomo che descrive la politica come funziona e viene per questo messo all\'Indice e trasformato in un aggettivo. Nel secolo successivo qualcuno provera a fare la stessa cosa con la natura, e poi con la conoscenza stessa: descrivere come stanno le cose invece di come dovrebbero stare. Comincia da qui la parte di filosofia che affronteremo dopo — e vedrete che il primo passo sara mettere in dubbio tutto quello che si e ricevuto.',
+       seDicono:[
+         {loro:'«Sembra che debba sempre esserci qualcuno contro.»',
+          tu:'Non contro come nemico: contro come contrappeso. È la stessa idea che troverete in Montesquieu con la separazione dei poteri — non perche i poteri si odino, ma perche nessuno di loro possa fare tutto da solo. Un contrappeso non e un nemico: e cio che impedisce a chiunque, compresi quelli che ti piacciono, di esagerare.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'La frase che non ha scritto',
+       corpo:'«Il fine giustifica i mezzi» è la frase più citata di Machiavelli e non si trova nelle sue opere.\n\nIl passo più vicino, nel capitolo XVIII del Principe, dice che nelle azioni degli uomini, e specialmente dei principi, dove non c\'è tribunale a cui appellarsi, si guarda al risultato: cioè constata come gli uomini giudicano, non stabilisce che sia giusto.\n\nLa formula corrente nasce dai suoi avversari nel Cinquecento e si consolida come sintesi ostile.',
+       chiedi:'Un autore viene ricordato per una frase che non ha scritto e che riassume male ciò che pensava. Come si difende un pensiero da come viene sintetizzato? E quanto di ciò che «sappiamo» di un autore viene dai suoi avversari?'},
+      {titolo:'Il particolare',
+       corpo:'Francesco Guicciardini scrive che egli non biasima chi cerca il proprio interesse — che chiama «il particulare» — ma che nessuno può servire bene la propria città se antepone sempre a essa il proprio vantaggio.\n\nEra un funzionario di altissimo livello: governatore pontificio, luogotenente generale, consigliere dei Medici. Servì i papi contro cui aveva combattuto e i Medici che aveva contribuito a cacciare.\n\nI Ricordi non furono scritti per essere pubblicati: sono appunti privati, ritoccati per anni.',
+       chiedi:'Un uomo che analizza con precisione l\'interesse proprio come chiave dei comportamenti umani, e che nella propria carriera lo pratica. Questo indebolisce l\'analisi o la rafforza? E si può descrivere bene un meccanismo senza esserne dentro?'},
+      {titolo:'Leggere Tacito per non citare Machiavelli',
+       corpo:'Dopo il 1559 le opere di Machiavelli sono all\'Indice e citarle è pericoloso. Nasce allora una vasta letteratura di commenti a Tacito, storico latino che aveva descritto la corte imperiale, le simulazioni e la tirannide.\n\nCommentando Tacito si potevano dire le stesse cose sul potere senza nominare l\'autore proibito: un classico antico non poteva essere messo all\'Indice.\n\nQuesta corrente si chiama tacitismo e attraversa tutta l\'Europa del Seicento.',
+       chiedi:'La censura non elimina i contenuti: li costringe a viaggiare sotto un\'altra autorità. Che cosa ci dice questo sull\'efficacia dei divieti? E riuscite a pensare a forme contemporanee dello stesso meccanismo?'}
+    ],
+    testi:[
+      {fonte:'Machiavelli, Il Principe, capitolo XV (1513)',
+       corpo:'Machiavelli dichiara di volersi discostare dagli ordini altrui e di andare dietro alla verità effettuale della cosa piuttosto che all\'immaginazione di essa; osserva che molti hanno immaginato repubbliche e principati mai visti né conosciuti; e afferma che c\'è tanta distanza fra come si vive e come si dovrebbe vivere che chi lascia quel che si fa per quel che si dovrebbe fare impara più presto la propria rovina che la conservazione.',
+       glossa:'È la dichiarazione di metodo su cui si fonda la scienza politica moderna: si studia il comportamento reale invece del modello ideale. Va discusso in classe il costo di quella scelta — una descrizione accurata di come funziona il potere è anche, inevitabilmente, un manuale per chi voglia usarlo.'},
+      {fonte:'Machiavelli, Discorsi, I, 58 — sul popolo e il principe',
+       corpo:'Machiavelli sostiene che un popolo che comanda ed è bene ordinato è stabile, prudente e grato quanto un principe, e anzi più prudente e più costante; che i disordini dei popoli nascono spesso da chi li governa; e che la voce del popolo è stata paragonata a quella di Dio non senza ragione.',
+       glossa:'Da leggere accanto al Principe per capire perché la lettura di Machiavelli come teorico della tirannide sia parziale. Il capitolo è un elogio ragionato del giudizio popolare, fondato sull\'osservazione che un popolo sbaglia meno spesso e si corregge più facilmente di un singolo.'},
+      {fonte:'Francesco Guicciardini, Ricordi, C 110 e C 6',
+       corpo:'Guicciardini osserva che non si può procedere per regola generale, perché le cose hanno distinzioni ed eccezioni dovute alla varietà delle circostanze, che non si possono misurare con la stessa misura; e che tali distinzioni non si trovano scritte nei libri, ma bisogna insegnarle la discrezione.',
+       glossa:'È la replica più diretta al metodo di Machiavelli, scritta da un amico che ne conosceva bene le tesi. Pone un problema tuttora aperto nelle scienze umane: si possono ricavare regole generali dai casi storici, o ogni situazione è talmente particolare da rendere le regole inutili?'}
+    ],
+    compito:'Mezza pagina. Scegliete un diritto o una tutela di cui godete — a scuola, sul lavoro, come cittadini. Cercate di scoprire come è stato ottenuto: concesso spontaneamente, oppure strappato dopo un conflitto? Poi rispondete alle due domande di Machiavelli: al momento in cui è stato ottenuto, le due parti erano in equilibrio di forze? E riconoscevano entrambe di appartenere alla stessa comunità?',
+    fonti:[
+      'Machiavelli, Il Principe (1513); Discorsi sopra la prima deca di Tito Livio (1513-1519)',
+      'F. Guicciardini, Ricordi; Storia d\'Italia',
+      'G. Botero, Della ragion di Stato (1589); J. Bodin, Les six livres de la République (1576)',
+      'Q. Skinner, Le origini del pensiero politico moderno; Machiavelli',
+      'C. Lefort, Il lavoro dell\'opera. Machiavelli; G. Sasso, Niccolò Machiavelli',
+      'J. McCormick, Machiavellian Democracy — sulla lettura conflittualista dei Discorsi'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',

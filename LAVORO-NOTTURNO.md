@@ -179,7 +179,7 @@ Si va in ordine di programma. Restano:
 - [x] Filosofia moderna · 1 — La cultura umanistico-rinascimentale
 - [x] Filosofia moderna · 2 — Il ritorno a Platone e ad Aristotele
 - [x] Filosofia moderna · 3 — Rinascimento e religione
-- [ ] Filosofia moderna · 4 — Rinascimento e politica
+- [x] Filosofia moderna · 4 — Rinascimento e politica
 - [ ] Filosofia moderna · 5 — Telesio, Bruno, Campanella
 - [ ] Filosofia moderna · 6 — La rivoluzione scientifica
 - [ ] Filosofia moderna · 7 — Francesco Bacone
