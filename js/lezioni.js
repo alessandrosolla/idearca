@@ -11734,6 +11734,227 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Filosofia moderna · 18 — Rousseau': {
+  mappa: {
+    n:'Jean-Jacques Rousseau', d:'l\'illuminista che accusa l\'Illuminismo',
+    f:[
+      {r:'parte da', n:'Un\'anomalia', d:'e la sua posizione sociale spiega molto della sua filosofia',
+       f:[
+         {r:'nasce a', n:'Ginevra', d:'in una repubblica calvinista, figlio di un orologiaio: non e ne nobile ne parigino'},
+         {r:'e', n:'Autodidatta', d:'nessuna universita, nessun maestro, letture disordinate e onnivore'},
+         {r:'vive di', n:'Copiatura di musica', d:'rifiuta pensioni e protezioni che avrebbero risolto la sua vita'},
+         {r:'litiga con', n:'Quasi tutti', d:'Voltaire, Diderot, Hume: rompe con ogni amicizia importante',
+          f:[{piu:true, r:'con una', n:'Diffidenza che diventa persecutoria', d:'negli ultimi anni si convince di un complotto europeo contro di lui'}]},
+         {piu:true, r:'e finisce a', n:'Ermenonville', d:'muore nel 1778, poche settimane dopo Voltaire: due nemici sepolti poi nello stesso Pantheon'},
+         {piu:true, r:'e compone anche', n:'Musica', d:'un\'opera rappresentata davanti al re, e la voce Musica dell\'Enciclopedia'},
+         {r:'e scrive le', n:'Confessioni', d:'la prima autobiografia moderna: racconta anche cio che lo umilia'}
+       ]},
+
+      {r:'si fa conoscere con una', n:'Tesi contro il proprio secolo', d:'e vince un premio dicendo il contrario di quello che tutti pensano',
+       f:[
+         {r:'nel 1750 un\'accademia chiede se le scienze e le arti', n:'Abbiano migliorato i costumi', d:'e la risposta attesa e sì'},
+         {r:'Rousseau risponde', n:'No', d:'il progresso delle scienze e delle arti ha corrotto i costumi'},
+         {r:'perche producono', n:'Apparenza e dipendenza', d:'si impara a sembrare invece che a essere, e a dipendere dal giudizio altrui'},
+         {r:'vince il premio e diventa', n:'Famoso in un mese', d:'e passa il resto della vita a essere letto da chi non lo sopporta',
+          f:[{r:'con il paradosso di', n:'Vincere un concorso accademico attaccando le accademie', d:'e di scrivere benissimo per dire che scrivere bene non serve'}]}
+       ]},
+
+      {r:'costruisce', n:'Un modello dell\'uomo naturale', d:'che non e una ricostruzione storica, ed e importante saperlo',
+       f:[
+         {r:'dichiara di voler', n:'Scartare tutti i fatti', d:'non ricostruisce il passato: costruisce un\'ipotesi per isolare le variabili'},
+         {r:'quindi lo stato di natura e', n:'Uno strumento, non un\'epoca', d:'serve a distinguere cio che e umano da cio che e sociale'},
+         {r:'l\'uomo naturale ha due moti', n:'Amor di se e pieta', d:'la cura della propria conservazione e la ripugnanza a vedere soffrire'},
+         {r:'non e ne buono ne cattivo', n:'È prima della morale', d:'la bonta del selvaggio e un\'espressione fuorviante: e assenza di malizia, non virtu'},
+         {piu:true, r:'e vive di', n:'Pieta', d:'la ripugnanza a vedere soffrire un altro: viene prima di ogni ragionamento morale'},
+         {piu:true, r:'e non ha', n:'Linguaggio ne previdenza', d:'senza parole non si progetta e senza progetti non si accumula: e cio che tiene ferma quella condizione'},
+         {r:'ed e dotato di', n:'Perfettibilita', d:'la capacita di cambiare: e cio che lo rende migliore e cio che lo rovina'}
+       ]},
+
+      {r:'spiega', n:'Da dove viene la disuguaglianza', d:'ed e la parte piu citata e piu fraintesa',
+       f:[
+         {r:'distingue la disuguaglianza', n:'Naturale da quella politica', d:'eta e forza da un lato, ricchezza e potere dall\'altro'},
+         {r:'la seconda nasce quando gli uomini', n:'Cominciano a confrontarsi', d:'chi canta meglio, chi e piu bello: nasce la stima e con essa il bisogno di averla'},
+         {r:'l\'amor di se diventa', n:'Amor proprio', d:'non piu cura di se, ma bisogno di valere agli occhi degli altri'},
+         {r:'e si consolida con la', n:'Proprieta', d:'il primo che recinse un terreno e trovo chi gli credette fondo la societa civile',
+          f:[{r:'sancita poi dalle', n:'Leggi', d:'che i ricchi propongono ai poveri presentandole come protezione per tutti'},
+             {piu:true, r:'ed e', n:'Un patto iniquo', d:'chi ha molto ottiene garanzie, chi non ha niente ottiene di non poter piu prendere'}]},
+         {r:'cosi l\'uomo finisce per', n:'Vivere fuori di se', d:'nell\'opinione altrui: e questa la denaturazione'}
+       ]},
+
+      {r:'cerca una via d\'uscita nel', n:'Contratto sociale', d:'1762: non tornare indietro, ma rifondare',
+       f:[
+         {r:'il problema e', n:'Trovare una forma di associazione', d:'in cui ciascuno, unendosi a tutti, obbedisca soltanto a se stesso'},
+         {r:'la soluzione e la', n:'Volonta generale', d:'non la somma degli interessi ma cio che ciascuno vuole in quanto membro del corpo'},
+         {r:'distinta dalla', n:'Volonta di tutti', d:'che e la somma delle volonta particolari, e puo sbagliarsi'},
+         {r:'la sovranita e', n:'Inalienabile e indivisibile', d:'non si delega e non si spezza: il popolo non puo darsi un padrone'},
+         {r:'quindi critica la', n:'Rappresentanza', d:'gli inglesi si credono liberi e lo sono solo il giorno delle elezioni'},
+         {piu:true, r:'e per questo teme le', n:'Fazioni', d:'i partiti e le associazioni interne: ognuna produce una volonta generale propria, che rispetto allo Stato torna a essere particolare'},
+         {piu:true, r:'e serve un', n:'Legislatore', d:'una figura eccezionale che dia le prime leggi a un popolo che non sa ancora volerle: il punto piu fragile del sistema'},
+         {r:'e la legge e', n:'Atto della volonta generale', d:'quindi generale per definizione: non puo riguardare un singolo'}
+       ]},
+
+      {r:'lascia', n:'Nodi difficili', d:'e vanno guardati, perche su questi si discute da due secoli',
+       f:[
+         {r:'la formula', n:'Costretti a essere liberi', d:'chi rifiuta di obbedire alla volonta generale vi sara costretto da tutto il corpo',
+          f:[{r:'letta come germe del', n:'Totalitarismo', d:'da chi sostiene che una volonta che non puo sbagliare non ammetta dissenso'},
+             {r:'e difesa come', n:'Obbligo di rispettare la legge che si e votata', d:'nessuno puo pretendere i vantaggi del patto rifiutandone gli oneri'}]},
+         {r:'la', n:'Religione civile', d:'pochi dogmi civili obbligatori, e l\'esilio per chi non li accetta'},
+         {r:'e resta oscuro', n:'Come si riconosca la volonta generale', d:'il voto la esprime, e Rousseau ammette che la maggioranza possa sbagliarsi'},
+         {r:'con la difficolta pratica che funziona solo in', n:'Comunita piccole', d:'lui pensa a Ginevra, non alla Francia'}
+       ]},
+
+      {r:'ripensa', n:'L\'educazione', d:'con un libro che verra bruciato e letto da tutti',
+       f:[
+         {r:'l\'Emilio propone un\'educazione', n:'Negativa', d:'non riempire di nozioni: togliere gli ostacoli e lasciar sviluppare'},
+         {r:'seguendo le', n:'Eta dello sviluppo', d:'ogni cosa a suo tempo: prima i sensi e il corpo, poi il ragionamento'},
+         {r:'e facendo imparare', n:'Dalle cose, non dai discorsi', d:'l\'esperienza corregge meglio di qualunque rimprovero'},
+         {r:'il libro viene', n:'Condannato a Parigi e a Ginevra', d:'per la professione di fede del vicario savoiardo, e lui deve fuggire'},
+         {r:'e resta il fatto che l\'autore', n:'Aveva messo all\'ospizio i propri cinque figli', d:'lo racconta lui stesso nelle Confessioni',
+          f:[{piu:true, r:'sostenendo che', n:'Lo Stato li avrebbe cresciuti meglio', d:'una giustificazione che nessuno ha mai trovato accettabile, lui compreso'}]}
+       ]},
+
+      {r:'lascia', n:'Un\'eredita divisiva', d:'e ogni parte politica ha creduto di poterlo arruolare',
+       f:[
+         {r:'i rivoluzionari lo leggono come', n:'Il profeta della sovranita popolare', d:'e le sue ceneri finiscono al Pantheon nel 1794'},
+         {r:'i romantici vi trovano', n:'Il sentimento contro il calcolo', d:'la natura, la solitudine, l\'autenticita: nasce da qui un modo di sentire'},
+         {r:'la democrazia diretta lo prende come', n:'Modello', d:'contro il parlamentarismo e la delega'},
+         {r:'e nel Novecento e accusato di aver preparato', n:'I regimi di massa', d:'una tesi discussa, che confonde la sua teoria con l\'uso che ne e stato fatto'},
+         {r:'e la pedagogia moderna ne eredita', n:'Il rispetto dei tempi', d:'non anticipare, non riempire, aspettare che una capacita maturi'},
+         {r:'mentre resta indiscussa la sua diagnosi sul', n:'Vivere nell\'opinione degli altri', d:'ed e la parte che parla piu direttamente a oggi'}
+       ]}
+    ],
+    incroci:[
+      {da:'Scartare tutti i fatti', a:'Uno strumento, non un\'epoca', r:'e la dichiarazione che rende lo stato di natura',
+       perche:'Rousseau avverte apertamente che non sta ricostruendo il passato: costruisce un\'ipotesi per separare cio che nell\'uomo e naturale da cio che e prodotto dalla convivenza. È un modello, come il piano senza attrito di Galileo — e chi lo legge come una teoria storica sbagliata non ha letto l\'avvertenza.'},
+      {da:'Perfettibilita', a:'Cominciano a confrontarsi', r:'e cio che rende possibile che gli uomini',
+       perche:'La capacita di cambiare distingue l\'uomo dall\'animale e non ha un segno: permette di imparare la lingua e l\'agricoltura, e permette anche di sviluppare l\'invidia e la vanita. Per Rousseau il male non e nella natura umana ne fuori di essa: e nella facolta che la rende migliorabile.'},
+      {da:'Amor proprio', a:'Vivere fuori di se', r:'porta a',
+       perche:'Quando la cura di se diventa bisogno di valere agli occhi altrui, il proprio centro si sposta fuori: si sta bene se gli altri lo pensano. È la diagnosi piu attuale di Rousseau, e vale la pena farla riconoscere ai ragazzi senza nominare esplicitamente cio a cui somiglia oggi.'},
+      {da:'Leggi', a:'Un patto iniquo', r:'sanciscono',
+       perche:'Chi possiede propone a chi non possiede un accordo per proteggere tutti dalla violenza. Il ricco ottiene la garanzia di cio che ha, il povero ottiene di non poterlo piu prendere. Rousseau non dice che le leggi siano inutili: dice che il primo patto e stato firmato fra parti disuguali, e che questo si vede ancora.'},
+      {da:'Trovare una forma di associazione', a:'Proprieta', r:'e il problema che nasce dopo che c\'e la',
+       perche:'Rousseau non propone di tornare allo stato di natura, che dichiara irrecuperabile e forse mai esistito. Parte dal fatto che siamo gia dentro la societa e cerca a quali condizioni l\'obbedienza sia legittima. La denuncia riguarda l\'origine; la proposta riguarda il presente.'},
+      {da:'Volonta di tutti', a:'Come si riconosca la volonta generale', r:'rende difficile stabilire',
+       perche:'Se la volonta generale non coincide con cio che la maggioranza vota, serve un criterio per distinguerle — e Rousseau non lo fornisce in modo chiaro. È il punto piu debole del sistema, e quello su cui si innesta l\'accusa piu grave: chiunque puo sostenere di conoscere la volonta generale meglio di chi ha votato.'},
+      {da:'Costretti a essere liberi', a:'Totalitarismo', r:'e la formula su cui si fonda l\'accusa di',
+       perche:'La frase puo significare due cose molto diverse: che chi ha votato una legge deve rispettarla anche quando gli pesa, oppure che si puo imporre a qualcuno cio che dovrebbe volere. La prima lettura e ordinaria in ogni democrazia; la seconda e il fondamento di ogni dittatura che si dica popolare. Il testo consente entrambe.'},
+      {da:'Rappresentanza', a:'Comunita piccole', r:'e coerente con l\'idea che funzioni solo in',
+       perche:'Se la sovranita non si delega, il popolo deve riunirsi e decidere di persona: e possibile a Ginevra, con poche migliaia di cittadini, non in Francia. Rousseau lo sa e lo dice. La sua teoria e coerente e ha un ambito di applicazione molto piu ristretto di quello in cui e stata usata.'},
+      {da:'Abbiano migliorato i costumi', a:'Il sentimento contro il calcolo', r:'e la domanda a cui i romantici risponderanno con',
+       perche:'Il primo Discorso apre una frattura dentro l\'Illuminismo: e possibile che il progresso delle conoscenze non renda gli uomini migliori. Da quella crepa passera tutto il romanticismo, con la rivendicazione di cio che la ragione calcolante non raggiunge — il sentimento, la natura, l\'autenticita.'},
+      {da:'Aveva messo all\'ospizio i propri cinque figli', a:'Negativa', r:'convive con la teoria dell\'educazione',
+       perche:'L\'autore del trattato pedagogico piu influente della storia moderna abbandono i propri figli e lo ammise per iscritto. Il fatto non confuta la teoria — un\'idea non e falsa perche chi la propone non la applica — e resta la piu grande difficolta biografica dell\'Illuminismo, e Rousseau stesso non riusci mai a giustificarla.'},
+      {da:'Autodidatta', a:'Quasi tutti', r:'contribuisce al fatto che litighi con',
+       perche:'Chi non appartiene a nessuna istituzione non ha protezioni, obblighi di cortesia ne carriere da difendere: puo dire cose che gli altri non possono e paga il prezzo di non avere alleati stabili. La posizione marginale spiega insieme la radicalita delle sue tesi e l\'isolamento della sua vita.'},
+      {da:'Religione civile', a:'Volonta generale', r:'serve a tenere insieme il corpo che esprime la',
+       perche:'Rousseau ritiene che nessuna societa regga senza credenze condivise che diano forza agli obblighi, e propone pochi dogmi civili con l\'esilio per chi li rifiuta. È il punto in cui la sua teoria appare piu dura, e nasce da un problema reale: che cosa tiene insieme le persone quando non c\'e piu una religione comune.'},
+      {da:'È prima della morale', a:'Il profeta della sovranita popolare', r:'e spesso dimenticato da chi lo legge come',
+       perche:'L\'uomo naturale di Rousseau non e buono nel senso morale: e privo di malizia perche privo di rapporti. Chi ne fa il teorico della bonta originaria costruisce un Rousseau piu semplice di quello che ha scritto, e su quel Rousseau semplificato si fondano tanto le celebrazioni quanto le accuse.'}
+    ]
+  },
+  provocazione: {
+    titolo:'Questo è mio',
+    durata:'55 minuti',
+    domandaMadre:'La proprieta e naturale o e un\'invenzione?',
+    perche:'Rousseau apre la seconda parte del Discorso sull\'origine della disuguaglianza con la frase piu citata della filosofia politica moderna: il primo che, avendo recintato un terreno, penso di dire questo e mio e trovo gente abbastanza semplice da credergli, fu il vero fondatore della societa civile. La classe deve prendere sul serio la tesi — la proprieta e una convenzione che qualcuno ha imposto e altri hanno accettato — e poi scoprire il rovesciamento: Rousseau non propone affatto di abolirla, e altrove la chiama il piu sacro dei diritti dei cittadini. Da qui l\'errore logico che l\'ora insegna a riconoscere: mostrare da dove viene una cosa non e dimostrare che sia sbagliata.',
+    occorrente:'Niente.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'1755. Un uomo che vive\ncopiando spartiti musicali\npubblica un libro\ne ci mette dentro questa frase.\n\nIl primo che, avendo recintato\nun terreno, penso di dire\nquesto e mio,\ne trovo persone abbastanza semplici\nda credergli,\nfu il vero fondatore\ndella societa civile.\n\nE poi la parte\nche quasi nessuno cita:\n\nquanti delitti, guerre,\nomicidi, miserie e orrori\nsarebbero stati risparmiati\nal genere umano\nda chi, strappando i paletti\ne colmando il fossato,\navesse gridato ai suoi simili:\n\nguardatevi dall\'ascoltare\nquesto impostore;\n\nsiete perduti se dimenticate\nche i frutti sono di tutti\ne che la terra non e di nessuno.',
+       parlato:'Leggi la prima parte, che molti conoscono, e poi la seconda, che quasi nessuno ha mai sentito.\n\nLa seconda e piu radicale della prima: non dice solo che la proprieta e un\'invenzione, dice che chi l\'ha proposta era un impostore e che chi lo ha ascoltato era ingenuo.\n\nPoi la domanda dell\'ora: ha ragione?\n\nRaccogli le prime reazioni. Di solito la classe si divide subito, ed e quello che serve.\n\nSe qualcuno chiede chi fosse l\'autore, dai il dato che rende la cosa piu interessante: un uomo senza terra, senza casa propria, senza posizione, che si manteneva copiando musica a pagamento e che rifiutava le pensioni offerte dai potenti.',
+       seDicono:[
+         {loro:'«È comunista.»',
+          tu:'Scritto novant\'anni prima del Manifesto, e vedremo fra mezz\'ora che l\'autore la proprieta la difende. Ma tieni l\'impressione: e la stessa che ebbero i suoi contemporanei, ed e il motivo per cui questa frase e diventata famosa piu di tutto il resto del libro.'},
+         {loro:'«Senza proprietà non funzionerebbe niente.»',
+          tu:'Può darsi, ed e un\'obiezione seria. Nota pero che Rousseau non sta dicendo che si debba abolirla: sta dicendo da dove viene. Sono due affermazioni diverse, e tenerle separate e il lavoro di oggi.'}
+       ]},
+
+      {minuti:'8–17', et:'Lo schieramento',
+       schermo:'La proprieta privata:',
+       opzioni:['e naturale: chi lavora una cosa la fa sua', 'e una convenzione: qualcuno l\'ha proposta e gli altri hanno accettato'],
+       parlato:'Fai schierare e conta.\n\nPoi metti alla prova la prima posizione, che di solito e maggioritaria e ha un argomento serio dietro — e vale la pena nominarlo: e la tesi di Locke, secondo cui mescolando il proprio lavoro con una cosa la si fa propria.\n\nDomanda: funziona sempre?\n\nFai provare i casi difficili. Se raccolgo mele da un albero che non ho piantato, sono mie? Se recinto un terreno che nessuno usava, e mio? E la mia casa: l\'ho costruita io, oppure l\'ho comprata da chi l\'ha comprata da chi l\'aveva ereditata da qualcuno che, risalendo abbastanza indietro, se l\'era presa?\n\nQui emerge il punto: quasi nessuna proprieta attuale risale a un lavoro. Risale a una catena di trasferimenti, e la catena comincia da qualche parte.\n\nPoi metti alla prova anche la seconda posizione, per non lasciarla facile. Se e solo una convenzione, allora qualunque convenzione diversa andrebbe bene? E chi non la rispetta sta violando una regola arbitraria o sta rubando?\n\nDa qui la domanda che apre il resto dell\'ora: che cosa cambia, sapere da dove viene una cosa?',
+       seDicono:[
+         {loro:'«Se l\'ho comprata è mia, punto.»',
+          tu:'Nel diritto sì, e nessuno lo discute. La domanda di Rousseau e diversa: su che cosa poggia quel diritto? Se risalendo la catena dei passaggi si arriva a qualcuno che ha semplicemente preso, il fondamento e piu fragile di quanto sembri — e questo non significa che le proprieta attuali vadano annullate.'},
+         {loro:'«Anche gli animali difendono un territorio.»',
+          tu:'Buona osservazione, ed e un\'obiezione classica. Ma nota la differenza: un animale difende un territorio finche c\'e; la proprieta continua a valere anche quando il proprietario e altrove, dorme, o e morto da vent\'anni. Quello che la fa durare non e la forza — sono le istituzioni.'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'Come ci arriva.\n\nRousseau avverte in apertura\ndi voler scartare tutti i fatti.\n\nNon sta ricostruendo\nla preistoria.\nSta costruendo un\'ipotesi\nper separare due cose:\n\ncio che nell\'uomo e naturale\ne cio che e prodotto\ndal vivere insieme.\n\nÈ un esperimento mentale,\ncome il piano senza attrito\ndi Galileo.\n\nNella sua ipotesi\nl\'uomo naturale ha due moti soli:\n\nla cura di se stesso;\ne la ripugnanza\na vedere soffrire un suo simile.\n\nNon e buono:\ne prima del bene e del male,\nperche non ha rapporti\nabbastanza stabili\nper poter essere\ngiusto o ingiusto.\n\nPoi comincia a vivere accanto\nagli altri.\nE comincia a confrontarsi.',
+       parlato:'Insisti sull\'avvertenza iniziale, perche smonta l\'obiezione piu comune: Rousseau non sta sbagliando la preistoria, sta costruendo un modello e lo dichiara.\n\nÈ la stessa operazione che avete gia visto in fisica: si toglie l\'attrito per capire che cosa faccia la gravita da sola. Qui si toglie la societa per capire che cosa faccia da sola la natura umana.\n\nPoi correggi l\'espressione che tutti conoscono: il buon selvaggio non e un\'espressione di Rousseau, e la sua tesi non e che l\'uomo naturale sia buono. È che e prima della morale — non e cattivo perche non ha occasioni per esserlo.\n\nPoi il passaggio decisivo, e falli ragionare: che cosa succede quando gli uomini cominciano a vivere vicini?\n\nCominciano a confrontarsi. Si guarda chi canta meglio, chi e piu forte, chi e piu bello. Nasce la stima, e con essa il bisogno di essere stimati.\n\nDa qui la trasformazione: l\'amor di se, che e cura della propria vita, diventa amor proprio, che e bisogno di valere agli occhi altrui.\n\nE questo, per Rousseau, e il punto in cui l\'uomo comincia a vivere fuori di se.\n\nFai la domanda alla classe senza forzare paralleli: vi sembra una descrizione di qualcosa che conoscete?',
+       seDicono:[
+         {loro:'«Ma confrontarsi è normale.»',
+          tu:'È inevitabile, ed e proprio questo il punto: Rousseau non descrive una colpa, descrive un meccanismo che si attiva appena si vive insieme. Non dice di smettere — dice che da li viene una parte della nostra infelicita, e che conviene saperlo.'},
+         {loro:'«Allora dovremmo vivere da soli?»',
+          tu:'Lui stesso lo ha provato, negli ultimi anni, e non ne e uscito bene. E nel Contratto sociale sostiene esattamente il contrario: che siamo dentro la societa e dobbiamo trovare una forma di convivenza legittima. La diagnosi non e una proposta di fuga.'}
+       ]},
+
+      {minuti:'28–38', et:'Il testo',
+       schermo:'Sempre dal secondo Discorso,\npoche pagine dopo.\n\nRousseau immagina\nche cosa disse il ricco\nquando la disuguaglianza\ndivento pericolosa per tutti.\n\nPropose ai poveri\nun accordo:\n\nuniamoci per difendere i deboli\ndall\'oppressione,\nper garantire a ciascuno\ncio che gli appartiene,\ne per darci regole\nche obblighino tutti allo stesso modo.\n\nRousseau commenta:\n\ntutti corsero incontro\nalle proprie catene\ncredendo di assicurarsi\nla liberta.\n\nPerche quell\'accordo\ndava al ricco la garanzia\ndi cio che aveva,\ne al povero la certezza\ndi non poterlo piu prendere.',
+       testo:{fonte:'Jean-Jacques Rousseau, Discorso sull\'origine e i fondamenti della disuguaglianza fra gli uomini, parte seconda (1755)',
+              glossa:'Il passo descrive la nascita dello Stato come un patto proposto da chi possiede a chi non possiede. Non è una ricostruzione storica ma una ricostruzione logica: mostra che un accordo può essere formalmente uguale per tutti e sostanzialmente vantaggioso per una parte, perché le parti non partivano dalla stessa posizione. È il primo testo che formula questa obiezione al contrattualismo — e Rousseau scriverà lui stesso, sette anni dopo, un contratto sociale diverso.'},
+       parlato:'Leggi il passo e fermati sulla frase delle catene: corsero incontro alle proprie catene credendo di assicurarsi la liberta.\n\nPoi fai analizzare l\'accordo, perche e un ottimo esercizio logico. Le condizioni sono identiche per tutti: nessuno puo prendere cio che e di un altro. Sembra imparziale.\n\nDomanda: perche non lo e?\n\nGuidali. Perche una regola uguale applicata a persone in condizioni diverse produce effetti diversissimi. Il divieto di prendere protegge molto chi ha molto e non protegge nulla chi non ha niente.\n\nÈ un argomento che vale ben oltre la proprieta, e conviene formularlo in generale: l\'uguaglianza formale delle regole non produce uguaglianza sostanziale quando i punti di partenza sono diversi.\n\nFai fare esempi loro. Vengono fuori cose sensate: la stessa retta di partenza per corridori con scarpe diverse, lo stesso esame per chi ha avuto ripetizioni e chi no.\n\nPoi la precisazione onesta: da questo non segue che le regole uguali siano sbagliate. Segue che non bastano, ed e diverso.',
+       seDicono:[
+         {loro:'«Ma senza quel patto ci sarebbe stata la guerra di tutti contro tutti.»',
+          tu:'Probabilmente sì, e Rousseau non lo nega: dice che il patto ha fermato la violenza e ha congelato una disuguaglianza. Sono vere entrambe. Riconoscere che una soluzione funziona e che ha un costo, e chi lo paga, e piu utile che sceglierne solo una meta.'},
+         {loro:'«Quindi bisognava non fare le leggi?»',
+          tu:'No, e infatti lui non lo dice. Dice che quel patto era iniquo e che se ne puo fare uno diverso — ed e esattamente cio che tentera nel Contratto sociale. La denuncia serve a mostrare che l\'assetto attuale non e naturale, e quindi che potrebbe essere altro.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'E adesso guardate\nche cosa scrive\nlo stesso autore.\n\nNell\'articolo sull\'economia politica,\nscritto nello stesso periodo,\nafferma che il diritto di proprieta\ne il piu sacro\ndi tutti i diritti dei cittadini,\ne per certi versi\npiu importante della liberta stessa.\n\nNel Contratto sociale\nstabilisce che lo Stato\ndebba garantire ai cittadini\nil possesso legittimo\ndei propri beni.\n\nNon propone da nessuna parte\ndi abolire la proprieta.\n\nQuindi:\n\nl\'accusa piu radicale\nmai scritta contro la proprieta\ne di un autore\nche poi la difende.\n\nNon e un\'incoerenza.\n\nÈ una distinzione\nche quasi nessuno\ndei suoi lettori ha rispettato.',
+       parlato:'Dai la contraddizione apparente e lascia che la classe si trovi a doverla spiegare.\n\nPoi guidali alla soluzione, che e il nucleo dell\'ora. Rousseau sta facendo due cose diverse in due luoghi diversi: nel Discorso fa una diagnosi — da dove viene la disuguaglianza; nel Contratto fa una proposta — a quali condizioni l\'obbedienza e legittima adesso che siamo dentro.\n\nMostrare l\'origine di un\'istituzione non e proporne l\'abolizione.\n\nQui c\'e un errore logico da nominare, perche i ragazzi lo faranno tutta la vita: si chiama argomento genetico. Consiste nel giudicare una cosa in base a come e nata. Se scopro che una legge e stata scritta per un motivo meschino, non ne segue che sia una cattiva legge; se scopro che una credenza e nata da una paura, non ne segue che sia falsa.\n\nL\'origine non decide il valore.\n\nFai fare esempi al contrario, che sono i piu istruttivi: le assicurazioni sociali di Bismarck sono nate per indebolire i socialisti e restano una buona cosa; il Codice civile e nato da un imperatore e ha abolito i privilegi.\n\nPoi il seguito storico: chi ha preso alla lettera la denuncia — Babeuf durante la Rivoluzione, e poi molti dopo — non ha letto il resto. Rousseau e stato usato contro le proprie conclusioni, e questo capita a quasi tutti gli autori che scrivono una frase memorabile.',
+       seDicono:[
+         {loro:'«Allora si è contraddetto per prudenza.»',
+          tu:'Non c\'e traccia di prudenza in un uomo che si fece condannare a Parigi e a Ginevra nello stesso anno. La spiegazione piu semplice e che stesse facendo due lavori diversi: uno storico-ipotetico e uno normativo. Confonderli e stato l\'errore dei lettori, non suo.'},
+         {loro:'«Ma se la proprietà è nata male, perché tenerla?»',
+          tu:'Perche il fatto che una cosa sia nata da un\'imposizione non dice niente su come funzioni adesso ne su che cosa succederebbe togliendola. Sono tre domande separate: da dove viene, come funziona, che cosa la sostituirebbe. Rousseau risponde solo alla prima, e lo dichiara.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'Torniamo alla domanda.\n\nLa proprieta e naturale\no e un\'invenzione?\n\nRousseau risponde\nche e un\'invenzione,\ne che questo si vede\nda come e nata.\n\nMa aggiunge una cosa\nche i suoi lettori\nhanno quasi sempre saltato:\n\nda questo non segue\nche vada abolita.\n\nSegue che non e eterna,\nche potrebbe essere\norganizzata diversamente,\ne che chi la difende\nnon puo farlo dicendo\nche e cosi da sempre.\n\nUltima cosa da portarsi via,\ne serve tutta la vita:\n\nquando qualcuno vi mostra\nda dove viene una cosa,\nnon vi ha ancora detto\nse sia buona o cattiva.\n\nSono due domande diverse.',
+       parlato:'Riprendi la distinzione fra diagnosi e proposta e falla enunciare a loro.\n\nPoi da\' il criterio in forma pulita, perche e la cosa concreta della lezione: sapere come e nata una cosa serve a togliere l\'idea che sia naturale e necessaria. Non serve a stabilire se sia giusta. Chi confonde le due cose commette un errore che si chiama argomento genetico, e lo si trova ovunque — in politica, nelle discussioni sulla religione, nei dibattiti sulle tradizioni.\n\nFai fare l\'esercizio nelle due direzioni, perche la simmetria e la parte che convince: non si puo screditare un\'idea mostrando che e nata da un interesse, e non si puo nobilitarla mostrando che e antica.\n\nPoi chiudi sull\'autore, tenendo insieme le due cose senza sceglierne una. Rousseau ha scritto la diagnosi piu penetrante del suo secolo sulla vita che si vive nell\'opinione degli altri, e ha abbandonato cinque figli in un ospizio. Il secondo fatto non rende falsa la prima cosa, e non va nemmeno taciuto: un\'idea non vale piu o meno a seconda di chi la propone, ed e la stessa regola che abbiamo appena imparato.\n\nUltima riga, per il seguito: fra tutti gli autori del secolo, quello che ha preso piu sul serio i problemi lasciati aperti da Rousseau — la volonta generale, l\'obbedienza legittima, la differenza fra cio che voglio e cio che devo — e un professore di Konigsberg che non si e mai mosso dalla propria citta. La prossima volta cominciamo da lui.',
+       seDicono:[
+         {loro:'«Allora non serve sapere come nascono le cose.»',
+          tu:'Serve moltissimo, per una ragione precisa: toglie l\'aria di necessita. Finche credi che una cosa sia sempre stata cosi, non ti viene in mente che possa essere diversa. Sapere che qualcuno l\'ha istituita apre la possibilita di discuterla — e poi la discussione va fatta con altri argomenti.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'Cinque figli',
+       corpo:'Rousseau ebbe cinque figli da Thérèse Levasseur e li consegnò tutti all\'ospizio dei trovatelli di Parigi, appena nati.\n\nLo raccontò lui stesso nelle Confessioni, sostenendo di non poter mantenere una famiglia e che i figli sarebbero stati allevati meglio come figli dello Stato. In altre pagine ammette di essersene pentito e di non aver mai trovato pace.\n\nNegli stessi anni scriveva l\'Emilio, il trattato di pedagogia più influente della storia moderna. Voltaire, in un pamphlet anonimo, rese pubblica la vicenda per screditarlo.',
+       chiedi:'Un\'idea diventa meno valida se chi la sostiene non la applica? E cambia qualcosa il fatto che la contraddizione riguardi proprio l\'argomento del suo libro? Provate a rispondere separando le due domande.'},
+      {titolo:'Costretti a essere liberi',
+       corpo:'Nel Contratto sociale Rousseau scrive che chiunque rifiuti di obbedire alla volontà generale vi sarà costretto da tutto il corpo, e aggiunge che questo significa soltanto che sarà costretto a essere libero.\n\nLa frase è stata letta in due modi. Come descrizione ordinaria di ogni ordinamento: chi ha partecipato a fare una legge deve rispettarla anche quando gli pesa. Oppure come principio pericoloso: si può imporre a qualcuno ciò che dovrebbe volere, sostenendo di conoscere la sua vera volontà meglio di lui.\n\nEntrambe le letture sono compatibili con il testo.',
+       chiedi:'Che cosa distingue, concretamente, un ordinamento che ti obbliga a rispettare una legge che hai contribuito a votare da uno che pretende di sapere che cosa vuoi davvero? E dove passa il confine — nelle intenzioni, nelle procedure, o in che cosa?'},
+      {titolo:'Liberi solo il giorno del voto',
+       corpo:'Rousseau sostiene che il popolo inglese si creda libero ma si inganni: lo è soltanto durante l\'elezione dei membri del parlamento, e appena questi sono eletti torna schiavo, non è più nulla.\n\nNe conclude che la sovranità non possa essere rappresentata, come non può essere alienata, e che una legge non ratificata direttamente dal popolo sia nulla.\n\nRiconosce però che questo richiede comunità piccole, in cui i cittadini possano riunirsi: pensava a Ginevra, che allora aveva poche migliaia di cittadini con diritto di voto.',
+       chiedi:'La critica alla delega è ancora attuale e la soluzione proposta funziona solo su piccola scala. Che cosa si può fare, in uno Stato di milioni di abitanti, per ridurre la distanza che Rousseau denuncia? E ogni soluzione che vi viene in mente, che difetto ha?'}
+    ],
+    testi:[
+      {fonte:'Rousseau, Discorso sulle scienze e sulle arti (1750)',
+       corpo:'Rousseau sostiene che i popoli siano diventati malvagi a mano a mano che le loro scienze e le loro arti avanzavano verso la perfezione, e che dietro l\'uniformità dei modi cortesi non si osi più apparire quali si è, sicché non si sa mai con chi si abbia a che fare.',
+       glossa:'È il testo con cui vinse il premio di un\'accademia rispondendo il contrario di ciò che l\'accademia si aspettava. La tesi non riguarda le conoscenze in sé ma i costumi che le accompagnano: si impara a sembrare invece che a essere. Da questa crepa dentro l\'Illuminismo passerà tutto il romanticismo.'},
+      {fonte:'Rousseau, Il contratto sociale, libro I, capitolo 6 (1762)',
+       corpo:'Il problema è formulato così: trovare una forma di associazione che difenda e protegga con tutta la forza comune la persona e i beni di ciascun associato, e per la quale ciascuno, unendosi a tutti, non obbedisca tuttavia che a se stesso e resti libero come prima.',
+       glossa:'È la formulazione più chiara del problema politico moderno: come conciliare l\'obbedienza con la libertà. Va letta insieme al Discorso del 1755 — lì si mostra che il primo patto fu iniquo, qui si cerca a quali condizioni un patto sarebbe legittimo. Diagnosi e proposta sono in due libri diversi, e vanno tenute distinte.'},
+      {fonte:'Rousseau, Emilio, libro II (1762) — l\'educazione negativa',
+       corpo:'Rousseau sostiene che la prima educazione debba essere puramente negativa, e consista non nell\'insegnare la virtù o la verità ma nel preservare il cuore dal vizio e la mente dall\'errore; e che il maestro debba perdere tempo per guadagnarne.',
+       glossa:'L\'idea che l\'educazione consista prima di tutto nel togliere ostacoli e nel rispettare i tempi dello sviluppo è alla base di gran parte della pedagogia moderna. La formula «perdere tempo per guadagnarne» è quella che i docenti citano più spesso — e la più difficile da praticare in un anno scolastico.'}
+    ],
+    compito:'Mezza pagina. Trovate una discussione — anche recente, anche fra amici — in cui qualcuno ha screditato un\'idea mostrando da dove veniva o a chi conveniva, invece di rispondere all\'idea stessa. Descrivetela. Poi provate a fare voi il lavoro mancante: qual è l\'argomento a favore di quell\'idea, indipendentemente da chi la sostiene, e come si potrebbe rispondere davvero?',
+    fonti:[
+      'J.-J. Rousseau, Discorso sulle scienze e sulle arti (1750); Discorso sull\'origine della disuguaglianza (1755)',
+      'Il contratto sociale (1762); Emilio (1762); Confessioni (postume, 1782)',
+      'J. Starobinski, Jean-Jacques Rousseau. La trasparenza e l\'ostacolo',
+      'E. Cassirer, Il problema Gian Giacomo Rousseau',
+      'J. Talmon, Le origini della democrazia totalitaria — e le repliche a questa tesi',
+      'R. Derathé, Rousseau e la scienza politica del suo tempo'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',
