@@ -10644,6 +10644,224 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Filosofia moderna · 6 — La rivoluzione scientifica': {
+  mappa: {
+    n:'La rivoluzione scientifica', d:'non le scoperte, ma un\'altra idea di che cosa significhi sapere',
+    f:[
+      {r:'cambia', n:'Che cosa si chiede alla natura', d:'e questa e la rivoluzione, piu di qualunque scoperta',
+       f:[
+         {r:'la scienza antica chiedeva', n:'Perche', d:'la pietra cade perche tende al proprio luogo naturale'},
+         {r:'spiegava con le', n:'Cause finali', d:'ogni cosa tende a un fine, e conoscere significa conoscere quel fine'},
+         {r:'la scienza nuova chiede', n:'Come', d:'con quale legge, in quanto tempo, di quanto: e smette di chiedere il resto'},
+         {r:'rinuncia alle', n:'Qualita e alle forme', d:'niente virtu dormitiva, niente essenze: solo cio che si misura'},
+         {r:'e ottiene in cambio', n:'La previsione', d:'sapere che cosa accadra, e poterlo verificare',
+          f:[{piu:true, r:'con la conseguenza che', n:'Capire cambia significato', d:'capire non e piu risalire al senso di una cosa, e saperne prevedere il comportamento'}]}
+       ]},
+
+      {r:'ha il suo programma in', n:'Bacone', d:'che non fa esperimenti e progetta il modo di farli',
+       f:[
+         {r:'scrive il', n:'Nuovo Organo', d:'1620: un nuovo strumento logico al posto di quello di Aristotele'},
+         {r:'propone l\'', n:'Induzione per tavole', d:'raccogliere i casi in cui un fenomeno c\'e, quelli in cui manca, quelli in cui varia'},
+         {r:'e insiste sui casi', n:'Negativi', d:'cercare dove la cosa non accade vale piu che accumulare conferme'},
+         {r:'mette in guardia dagli', n:'Idoli', d:'i pregiudizi che deformano ogni osservazione, e sono quattro',
+          f:[{r:'della', n:'Specie', d:'la mente umana tende a vedere ordine e regolarita piu di quanti ce ne siano'},
+             {r:'della', n:'Caverna', d:'ciascuno vede secondo la propria indole, educazione e letture'},
+             {r:'del', n:'Foro', d:'le parole del linguaggio comune imprigionano il pensiero'},
+             {r:'del', n:'Teatro', d:'i sistemi filosofici ereditati, accettati come rappresentazioni del mondo'}]},
+         {r:'e immagina nella', n:'Nuova Atlantide', d:'un\'isola con laboratori e ricercatori divisi per compiti: la scienza come istituzione pubblica'},
+         {piu:true, r:'citata quarant\'anni dopo dai fondatori della', n:'Royal Society', d:'come modello dichiarato: un\'utopia che diventa un\'istituzione'},
+         {r:'e afferma che', n:'Sapere e potere', d:'si comanda alla natura solo obbedendole: conoscere le leggi per usarle'}
+       ]},
+
+      {r:'ha il suo metodo in', n:'Galileo', d:'che unisce due cose che prima stavano separate',
+       f:[
+         {r:'la formula e', n:'Esperienze sensate e necessarie dimostrazioni', d:'osservazione e matematica insieme, e nessuna delle due basta'},
+         {r:'perche il libro della natura e', n:'Scritto in lingua matematica', d:'triangoli, cerchi: chi non la conosce gira in un labirinto oscuro'},
+         {r:'usa l\'', n:'Esperimento mentale', d:'i due gravi legati insieme: si confuta Aristotele senza salire su nessuna torre',
+          f:[{piu:true, r:'perche a volte basta', n:'Rendere esplicita una contraddizione', d:'in cio che l\'avversario gia ammette'}]},
+         {r:'e l\'esperimento reale serve a', n:'Isolare', d:'togliere l\'aria, ridurre l\'attrito: si studia un caso che in natura non esiste'},
+         {piu:true, r:'e scrive in', n:'Italiano', d:'per essere letto fuori dall\'universita: la scelta della lingua e parte della battaglia'},
+         {r:'sostiene l\'', n:'Autonomia della scienza', d:'sulle cose naturali non si comincia dall\'autorita dei testi'}
+       ]},
+
+      {r:'poggia sulla', n:'Matematizzazione', d:'ed e la scelta che decide tutto il resto',
+       f:[
+         {r:'si misura cio che', n:'Si puo misurare', d:'grandezza, figura, moto, numero: sono le qualita primarie'},
+         {r:'e restano fuori', n:'Colori, suoni, sapori, odori', d:'le qualita secondarie, che non stanno nelle cose'},
+         {r:'perche il caldo, il rosso, il dolce', n:'Sono nel percipiente', d:'tolto l\'animale che sente, restano solo corpi in movimento'},
+         {r:'quindi il mondo descritto dalla scienza e', n:'Silenzioso e incolore', d:'e non somiglia per niente a quello in cui viviamo'},
+         {r:'e tutto cio che e stato tolto', n:'Finisce in un posto solo', d:'dentro di noi: e da qui nascera il problema mente-corpo'}
+       ]},
+
+      {r:'produce', n:'Il meccanicismo', d:'il mondo come una macchina, spiegabile per figura e movimento',
+       f:[
+         {r:'niente', n:'Forze occulte', d:'ogni azione avviene per contatto e per urto: nulla agisce a distanza'},
+         {r:'niente', n:'Fini', d:'la natura non tende a niente: e materia che si muove secondo leggi'},
+         {r:'anche i viventi sono', n:'Macchine', d:'Cartesio arriva a dire che gli animali siano automi senza sensibilita'},
+         {r:'il vantaggio e', n:'Enorme', d:'un mondo di leggi semplici e uniformi si calcola e si prevede'},
+         {r:'il costo e che restano fuori', n:'La vita e la coscienza', d:'e nessuno sa dove metterle',
+          f:[{piu:true, r:'da cui la', n:'Ghiandola pineale', d:'il punto in cui Cartesio prova a far comunicare le due sostanze: la soluzione piu debole del suo sistema'}]}
+       ]},
+
+      {r:'si compie con', n:'Newton', d:'che vince rinunciando proprio a cio che il meccanicismo pretendeva',
+       f:[
+         {r:'una sola legge spiega', n:'Cielo e terra insieme', d:'la mela e la Luna obbediscono alla stessa formula'},
+         {r:'da cui discendono', n:'Maree, comete, precessione', d:'fenomeni che nessuno gli aveva chiesto di spiegare'},
+         {r:'ma la gravita agisce', n:'A distanza e senza contatto', d:'ed e esattamente cio che il meccanicismo escludeva'},
+         {r:'e alla domanda su che cosa sia risponde', n:'Non fingo ipotesi', d:'basta che esista, agisca secondo queste leggi, e renda conto dei fenomeni',
+          f:[{r:'i cartesiani gridano al ritorno delle', n:'Qualita occulte', d:'e dal loro punto di vista hanno ragione'},
+             {piu:true, r:'ma la fisica che vince e', n:'Quella che rinuncia a spiegare', d:'descrivere come agisce si e rivelato piu fecondo che dire che cos\'e'}]}
+       ]},
+
+      {r:'diventa', n:'Un\'impresa collettiva', d:'e questo cambia anche che cosa significa sapere qualcosa',
+       f:[
+         {r:'nascono', n:'Accademie e riviste', d:'Royal Society 1660, e dal 1665 le prime pubblicazioni periodiche'},
+         {r:'vale la regola della', n:'Replicabilita', d:'un risultato conta se altri, altrove, lo ottengono di nuovo'},
+         {r:'quindi la conoscenza scientifica poggia su', n:'Testimonianze', d:'nessuno rifa tutti gli esperimenti: ci si fida di una comunita che si controlla'},
+         {r:'e la fiducia diventa', n:'Una componente del sapere', d:'non un ripiego: senza di essa non si saprebbe quasi nulla',
+          f:[{piu:true, r:'con la costruzione del', n:'Testimone competente', d:'esperimenti fatti in pubblico davanti a persone qualificate, e descritti nei dettagli'}]}
+       ]},
+
+      {r:'lascia un', n:'Problema aperto', d:'che la filosofia moderna eredita e non chiude',
+       f:[
+         {r:'dal mondo scientifico sono usciti', n:'Fini, valori, qualita, senso', d:'e nessuno di questi e stato dimostrato inesistente: e stato messo da parte'},
+         {r:'Cartesio risponde con', n:'Due sostanze', d:'la materia estesa e il pensiero: due mondi che non si toccano'},
+         {r:'ma resta da spiegare', n:'Come comunichino', d:'se sono davvero due, non possono agire l\'una sull\'altra'},
+         {r:'e resta la domanda se cio che la scienza descrive', n:'Sia tutto cio che c\'e', d:'oppure solo cio che i suoi strumenti sanno afferrare'},
+         {r:'e la domanda su chi sia', n:'Il soggetto che conosce', d:'diventa il problema centrale della filosofia per due secoli'},
+         {r:'con una distinzione utile fra', n:'Metodo e metafisica', d:'la scienza puo lasciare fuori qualcosa senza doverne negare l\'esistenza'}
+       ]}
+    ],
+    incroci:[
+      {da:'Come', a:'La previsione', r:'e la domanda che permette di ottenere',
+       perche:'Chiedere perche una pietra cade porta a risposte che non si possono controllare; chiedere in quanto tempo e di quanto porta a una formula verificabile. La scienza moderna ottiene un potere enorme restringendo la domanda — ed e utile che i ragazzi vedano che si tratta di uno scambio, non di un guadagno puro.'},
+      {da:'Sono nel percipiente', a:'Finisce in un posto solo', r:'e la ragione per cui tutto cio che viene escluso',
+       perche:'Se colori, suoni e sapori non stanno nelle cose, devono stare da qualche parte: nel soggetto che percepisce. Lo stesso vale poi per i valori e per i fini. Il soggetto moderno si riempie di tutto cio che la fisica ha svuotato dal mondo — e diventa un problema proprio per questo.'},
+      {da:'A distanza e senza contatto', a:'Forze occulte', r:'e cio che ai cartesiani sembra un ritorno alle',
+       perche:'Il meccanicismo aveva escluso ogni azione senza contatto proprio per liberarsi delle qualita occulte della scolastica. Newton reintroduce un\'azione a distanza e rifiuta di spiegarla. L\'accusa e coerente, e la fisica newtoniana vince lo stesso: la potenza predittiva conta piu della coerenza con il programma filosofico.'},
+      {da:'Idoli', a:'Testimonianze', r:'sono la ragione per cui non ci si puo fidare di singole',
+       perche:'Se ogni osservatore deforma cio che vede secondo la propria indole, le proprie letture e le parole che usa, un\'osservazione singola non basta mai. La replicabilita non e una formalita burocratica: e la risposta pratica al problema che Bacone aveva descritto in teoria.'},
+      {da:'Isolare', a:'Scritto in lingua matematica', r:'e cio che rende applicabile l\'idea che il libro della natura sia',
+       perche:'In natura non esistono piani senza attrito ne cadute nel vuoto: l\'esperimento costruisce una situazione artificiale in cui le leggi matematiche valgono esattamente. La matematizzazione funziona perche si semplifica il mondo fino a farcelo entrare — e questo e un\'operazione, non una scoperta.'},
+      {da:'Quella che rinuncia a spiegare', a:'Capire cambia significato', r:'e la conferma piu netta che',
+       perche:'Newton non sa che cosa sia la gravita e costruisce la fisica piu potente mai vista. Se la si giudica con il vecchio concetto di comprensione, non ha capito niente; con il nuovo, ha capito tutto. Il fatto che il suo modello duri tre secoli decide quale dei due significati prevalga.'},
+      {da:'Macchine', a:'La vita e la coscienza', r:'e la tesi che rende acuto il problema di dove mettere',
+       perche:'Se un animale e un automa senza sensibilita, la coscienza umana diventa un\'eccezione inspiegabile in un mondo di materia. La tesi degli animali-macchina non e una stranezza di Cartesio: e la conseguenza rigorosa del meccanicismo, e mostra dove quel programma si spezza.'},
+      {da:'Sapere e potere', a:'Nuova Atlantide', r:'trova la propria immagine nella',
+       perche:'Bacone non separa conoscenza e applicazione: si conosce per intervenire. Nella sua isola immaginaria la ricerca e organizzata come un\'istituzione pubblica con laboratori e divisione dei compiti. È il primo progetto di scienza come impresa finanziata e collettiva, quattro secoli prima che diventi normale.'},
+      {da:'Silenzioso e incolore', a:'Sia tutto cio che c\'e', r:'apre la domanda se il mondo descritto dalla scienza',
+       perche:'La fisica descrive un mondo di corpi in movimento in cui non compaiono ne colori ne dolori ne significati. La domanda non e se la fisica sbagli — funziona — ma se cio che descrive esaurisca la realta o sia cio che i suoi strumenti sanno afferrare. Confondere le due cose e l\'errore filosofico piu comune sulla scienza.'},
+      {da:'Negativi', a:'Specie', r:'servono contro l\'idolo della',
+       perche:'La mente umana tende a notare le conferme e a trascurare le smentite: e l\'idolo che Bacone descrive per primo. Cercare deliberatamente i casi in cui una regola non vale e la contromisura, ed e diventata il cuore del metodo scientifico — molto prima che la psicologia gli desse un nome.'},
+      {da:'Due sostanze', a:'Come comunichino', r:'produce l\'enigma di',
+       perche:'Separare nettamente materia e pensiero risolve il problema di dove mettere la coscienza in un mondo meccanico, e ne crea uno peggiore: due sostanze senza nulla in comune non possono interagire, eppure una decisione muove un braccio. La soluzione della ghiandola pineale e cosi debole che i suoi stessi seguaci la abbandonano.'},
+      {da:'Testimone competente', a:'Una componente del sapere', r:'e il modo in cui la fiducia diventa',
+       perche:'Descrivere un esperimento in modo tanto dettagliato che un lettore lontano possa considerarsi presente e la soluzione tecnica a un problema epistemologico: come si fa a sapere cio che non si e visto. Ne segue che quasi tutto cio che sappiamo poggia su una catena di persone di cui ci fidiamo.'},
+      {da:'Metodo e metafisica', a:'Fini, valori, qualita, senso', r:'e la distinzione che permette di trattare correttamente',
+       perche:'La scienza esclude i fini dal proprio campo perche non sa che farsene, non perche abbia dimostrato che non esistano. Tenere separata la scelta metodologica dall\'affermazione metafisica evita due errori opposti: credere che la scienza abbia negato i valori, e credere che debba occuparsene.'}
+    ]
+  },
+  provocazione: {
+    titolo:'Non fingo ipotesi',
+    durata:'55 minuti',
+    domandaMadre:'Si puo capire una cosa senza sapere perche accade?',
+    perche:'Alla domanda su che cosa sia la gravita, Newton risponde di non saperlo e di non volerlo indovinare: gli basta che agisca secondo leggi note e renda conto dei fenomeni. È il rifiuto piu clamoroso della storia del pensiero, e viene dall\'opera scientifica piu riuscita di sempre. La classe deve capire che la scienza moderna ottiene la propria potenza restringendo la domanda — smette di chiedere perche e chiede come — e poi vedere il prezzo di quello scambio: insieme ai fini escono dal mondo anche colori, suoni e sapori, e tutto quello che viene tolto finisce in un posto solo, dentro di noi.',
+    occorrente:'Niente.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'1687. Newton pubblica\nl\'opera scientifica\npiu riuscita della storia.\n\nUna formula sola spiega\nla caduta dei corpi,\nle orbite dei pianeti,\nle maree,\nil ritorno delle comete,\nla forma schiacciata della Terra.\n\nGli chiedono, ragionevolmente:\n\ne che cos\'e questa gravita?\nPerche due corpi si attraggono?\nCome fa un corpo ad agire\nsu un altro a milioni\ndi chilometri di distanza,\nsenza toccarlo?\n\nRisponde:\n\nnon lo so,\ne non voglio inventarmelo.\n\nMi basta che esista,\nche agisca secondo queste leggi,\ne che renda conto\ndi tutti i movimenti\ndei corpi celesti e del mare.\n\nQuesta risposta\nfonda tre secoli di fisica.',
+       parlato:'Costruisci prima l\'ampiezza del risultato, poi la domanda ovvia, poi il rifiuto.\n\nFai pesare la stranezza: l\'uomo che ha spiegato piu cose di chiunque altro dichiara di non sapere che cosa sia la cosa principale di cui parla.\n\nDomanda dell\'ora: se non sai che cos\'e la gravita, hai capito la gravita?\n\nRaccogli le prime reazioni. Di solito arriva che e una furbizia, o che e umilta. Nessuna delle due e la risposta giusta, e ci lavoriamo.\n\nSe serve, aggiungi il contesto polemico: i seguaci di Cartesio giudicarono quella risposta un passo indietro, un ritorno alle qualita occulte della vecchia scolastica. E dal loro punto di vista avevano ragione.',
+       seDicono:[
+         {loro:'«Sarà stata modestia.»',
+          tu:'Newton non era un uomo modesto: litigo per tutta la vita sulle priorita delle proprie scoperte. Non e modestia, e una scelta di metodo — decide che una certa domanda non si puo affrontare con gli strumenti disponibili, e la mette da parte invece di riempirla con una supposizione.'},
+         {loro:'«Ma se non sai cos\'è, come fai a usarla?»',
+          tu:'È esattamente la domanda dell\'ora. Nota intanto un fatto: la usiamo ancora, ci mandiamo le sonde su Marte, e la questione di che cosa sia la gravita e tuttora aperta. Funziona senza che nessuno sappia rispondere.'}
+       ]},
+
+      {minuti:'8–17', et:'Lo schieramento',
+       schermo:'Sapere come una cosa si comporta,\nsenza sapere che cosa sia\nne perche lo faccia:',
+       opzioni:['non e capire, e solo descrivere', 'e esattamente cio che significa capire'],
+       parlato:'Fai schierare e conta. La prima opzione prende molti voti, ed e l\'idea antica di comprensione.\n\nPoi metti alla prova entrambe con la stessa domanda: che cosa dovremmo avere in piu, per dire di aver capito?\n\nAl primo gruppo chiedi: se qualcuno vi dicesse che i corpi si attraggono perche hanno una tendenza reciproca all\'unione, avreste capito di piu? Perche e esattamente il tipo di risposta che la fisica antica dava — la pietra cade perche tende al proprio luogo naturale.\n\nDi solito arriva la reazione giusta: e una risposta che non aggiunge niente. Fai notare che ha la forma di una spiegazione e non ne ha la funzione: non permette di prevedere nulla, non si puo controllare, e ripete la domanda con altre parole.\n\nMolière aveva costruito una battuta su questo: perche l\'oppio fa dormire? Perche ha una virtu dormitiva.\n\nAl secondo gruppo chiedi invece: allora la fisica non spiega niente, descrive soltanto?\n\nÈ una domanda seria, e conviene tenerla aperta: fra poco vedremo che cosa la fisica guadagna e che cosa perde con questa scelta.',
+       seDicono:[
+         {loro:'«La virtù dormitiva è una presa in giro.»',
+          tu:'Lo e, ed e utile capire perche fa ridere: perche la risposta e contenuta nella domanda. È il criterio piu semplice per riconoscere una spiegazione vuota — se togli la parola difficile e resta la domanda uguale, non ti hanno spiegato niente.'},
+         {loro:'«Però Aristotele spiegava di più, in un certo senso.»',
+          tu:'Osservazione onesta, e vale la pena prenderla sul serio: dava una risposta che collegava il fatto a un ordine complessivo del mondo, e questo appagava una domanda che Newton lascia scoperta. Il guaio e che non permetteva di calcolare nulla. Si e scambiato senso con potenza.'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'Che cosa e stato scambiato,\nesattamente.\n\nPer poter misurare,\nbisogna scegliere\nche cosa misurare.\n\nSi tengono:\ngrandezza, figura,\nnumero, movimento.\n\nSi lasciano fuori:\ncolori, suoni,\nsapori, odori, caldo e freddo.\n\nPerche il rosso non e nella cosa:\ne cio che accade\nquando una certa luce\nincontra un certo occhio.\n\nTolto l\'occhio,\nrestano onde.\nTolto l\'orecchio,\nrestano vibrazioni.\nTolta la lingua,\nrestano molecole.\n\nQuindi il mondo\ndescritto dalla fisica\ne muto, incolore, insapore.\n\nNon somiglia per niente\na quello in cui viviamo.\n\nE tutto quello che e stato tolto\nnon e sparito.\n\nÈ finito dentro di noi.',
+       parlato:'Costruisci il ragionamento con gli esempi concreti, e falli fare a loro: chiedi dove sia il rosso di una mela.\n\nDi solito rispondono nella mela. Poi chiedi che cosa resta se togli tutti gli occhi dell\'universo. Ci arrivano.\n\nPoi la formulazione centrale: la fisica moderna comincia dividendo il mondo in due, e tiene per se solo la parte misurabile. Non e un errore: e la condizione per poter calcolare.\n\nE la conseguenza, che e il cuore del blocco: tutto cio che viene tolto dal mondo deve andare da qualche parte, e va in un posto solo — nel soggetto che percepisce. Il mondo si svuota e la mente si riempie.\n\nDa qui nascono due secoli di filosofia. Se colori e suoni sono dentro di me, che rapporto ho con il mondo vero? Come faccio a sapere che c\'e? E che cosa sono io, se sono il posto in cui va a finire tutto quello che la fisica scarta?\n\nDomanda per la classe, ed e bella da far discutere: la stessa operazione e stata fatta anche con i valori — bello, giusto, importante. Dove stanno?',
+       seDicono:[
+         {loro:'«Allora la scienza ci dice che il mondo non ha colori?»',
+          tu:'Attento alla formulazione: dice che nella sua descrizione i colori non compaiono, perche non le servono per calcolare. Non ha dimostrato che non esistano. La differenza fra «non ne parlo» e «non c\'e» e la distinzione piu importante di tutta la lezione.'},
+         {loro:'«Ma il dolore esiste, lo sento.»',
+          tu:'Esatto, ed e il punto piu difficile del meccanicismo. Un mondo di corpi in movimento non ha posto per il dolore, eppure il dolore c\'e ed e la cosa di cui siamo piu certi. È il problema che Cartesio prova a risolvere separando le due sostanze — e la soluzione, come vedremo, non regge.'}
+       ]},
+
+      {minuti:'28–38', et:'Il testo',
+       schermo:'Newton, dalla conclusione\ndei Principi, 1713.\n\nScrive di non aver potuto\ndedurre dai fenomeni\nla causa della gravita,\ne di non fingere ipotesi;\n\nche tutto cio che non si deduce\ndai fenomeni\ndeve essere chiamato ipotesi,\ne che le ipotesi\nnon hanno posto\nnella filosofia sperimentale;\n\ne che basta\nche la gravita esista,\nche agisca secondo le leggi esposte,\ne che sia sufficiente\na spiegare tutti i movimenti\ndei corpi celesti\ne del nostro mare.\n\nÈ la rinuncia\npiu produttiva\nnella storia del pensiero.',
+       testo:{fonte:'Isaac Newton, Philosophiae naturalis principia mathematica, Scolio generale (seconda edizione, 1713)',
+              glossa:'La frase «hypotheses non fingo» fu aggiunta nella seconda edizione, in risposta alle critiche dei cartesiani. Il verbo latino «fingo» significa foggiare, inventare: Newton non dice di non avere idee sulla causa della gravità — ne aveva, e le discusse in privato — ma che non intende presentarle come parte della fisica, perché non si ricavano dai fenomeni.'},
+       parlato:'Leggi il passo e fermati sulla definizione operativa: e ipotesi tutto cio che non si deduce dai fenomeni, e le ipotesi non entrano nella fisica.\n\nÈ una regola di igiene: si separa cio che i dati sostengono da cio che ci si immagina intorno.\n\nDomanda utile: e una posizione umile o arrogante?\n\nGuidali a vedere che e entrambe. È umile perche dichiara un limite; ed e arrogante perche ridefinisce che cosa conta come conoscenza, escludendo dal campo tutto quello che non passa quel filtro.\n\nPoi la parte piu importante, che va detta con precisione. Newton delle idee sulla causa della gravita le aveva, e le discuteva per lettera con gli amici: pensava a un mezzo sottile, o a un\'azione divina. Ma non le mette nei Principi, perche non si ricavano dai calcoli.\n\nDistingue cioe fra quello che pensa e quello che pubblica come scienza.\n\nÈ la stessa distinzione che avete visto con Pomponazzi fra cio che si dimostra e cio che si crede. E vale ancora: una rivista scientifica pubblica risultati, non convinzioni.',
+       seDicono:[
+         {loro:'«Se aveva delle idee, era disonesto a tacerle?»',
+          tu:'Al contrario: e onesto separare cio che si e dimostrato da cio che si suppone. Il disonesto e chi presenta le proprie supposizioni come risultati. Newton fa la cosa piu difficile — tiene per se le proprie convinzioni perche sa di non poterle sostenere con i dati.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'Adesso guardate\nchi aveva ragione\nsecondo la filosofia del tempo.\n\nIl meccanicismo — la grande idea\nmoderna — dice che tutto\naccade per contatto e per urto,\ne che non esistono azioni\na distanza.\n\nEra nato apposta\nper liberarsi delle qualita occulte\ndella vecchia scolastica.\n\nLa gravita di Newton\nagisce a distanza,\nattraverso lo spazio vuoto,\nistantaneamente,\nsenza nessun contatto.\n\nI cartesiani lo accusano\ndi aver rimesso in fisica\nproprio quelle qualita occulte\nche si erano appena buttate fuori.\n\nDal loro punto di vista\nhanno perfettamente ragione.\n\nE la fisica di Newton\nvince lo stesso,\ne dura tre secoli.\n\nPerche funziona.',
+       parlato:'Costruisci il paradosso e lascialo pesare: la fisica che si impone e quella meno coerente con il programma filosofico dominante.\n\nPoi la formulazione centrale, che e la cosa da portare a casa: quando un modello prevede bene, la sua incoerenza con la filosofia ricevuta diventa un problema della filosofia, non del modello.\n\nÈ successo di nuovo altre volte: la meccanica quantistica ha vinto pur essendo difficilissima da interpretare, e ancora oggi nessuno concorda su che cosa significhi.\n\nPoi la domanda che rende utile tutto il capitolo: se una teoria funziona benissimo e nessuno capisce che cosa dica del mondo, che cosa abbiamo?\n\nLascia discutere e poi da\' la distinzione, che e la piu preziosa di questa lezione: una cosa e la scienza come metodo — un modo di produrre previsioni controllabili — e un\'altra e la metafisica, cioe che cosa esiste davvero. La prima puo funzionare senza che la seconda sia chiara.\n\nE l\'errore piu comune, in tutte le discussioni sulla scienza, e confonderle: credere che la fisica abbia dimostrato che i colori non esistono, o che i valori siano illusioni, o che non ci sia nulla oltre la materia.\n\nLa fisica non ha dimostrato niente del genere. Ha scelto di non parlarne, ed e diverso.',
+       seDicono:[
+         {loro:'«Allora la scienza non dice come è fatto il mondo?»',
+          tu:'Dice moltissimo su come si comporta, con una precisione che nessun\'altra impresa umana ha raggiunto. Su che cosa sia in ultima istanza e piu prudente, e ha ragione a esserlo: le sue teorie migliori sono state sostituite, e i modelli passano mentre le previsioni restano.'},
+         {loro:'«Ma allora chi decide che cosa esiste?»',
+          tu:'Nessuno lo decide: si argomenta. Ed e esattamente il lavoro della filosofia, che non fa esperimenti e non e per questo inutile. Il compito di quest\'anno, in fondo, e imparare a distinguere le domande a cui si risponde misurando da quelle a cui si risponde ragionando.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'Torniamo alla domanda.\n\nSi puo capire una cosa\nsenza sapere perche accade?\n\nDipende da che cosa\nchiamiamo capire.\n\nSe capire significa\ncollocare una cosa\nin un ordine che le da\' senso,\nallora Newton non ha capito\nla gravita, e non l\'ha mai preteso.\n\nSe capire significa\nsaper prevedere\ne poter essere smentiti,\nallora l\'ha capita\nmeglio di chiunque.\n\nLa scienza moderna\nha scelto il secondo significato.\n\nHa guadagnato\ntre secoli di previsioni esatte.\n\nHa lasciato fuori\ni colori, i fini, i valori\ne noi stessi.\n\nUltima cosa da portarsi via:\n\nlasciare fuori qualcosa\nnon e dimostrare\nche non esista.',
+       parlato:'Riprendi i due significati di comprensione e falli enunciare a loro: e la cosa piu utile della lezione, e serve ogni volta che si discute di scienza.\n\nPoi insisti sull\'ultima riga, perche e il punto in cui quasi tutti sbagliano — in entrambe le direzioni. Chi dice che la scienza ha dimostrato che i valori sono illusioni sbaglia; e chi dice che la scienza dovrebbe occuparsi dei valori sbaglia allo stesso modo. Il metodo ha scelto un campo, e fuori da quel campo non ha ne autorita ne obblighi.\n\nDa\' loro il criterio pratico: quando qualcuno usa la scienza per rispondere a una domanda su che cosa sia giusto o che cosa valga, chiedetevi se quella domanda si possa mettere alla prova con una misura. Se no, la scienza non c\'entra, per quanto autorevole sia chi parla.\n\nChiudi con quello che apre il seguito. Abbiamo un mondo descritto benissimo e svuotato di tutto cio che ci riguarda, e un soggetto che si e riempito di tutto quello che ne e uscito. Qualcuno dovra chiedersi che cos\'e quel soggetto, e se possa fidarsi di se stesso.\n\nÈ esattamente la domanda da cui parte Cartesio, che vediamo la prossima volta — e vedremo che comincia mettendo in dubbio perfino di avere un corpo.',
+       seDicono:[
+         {loro:'«Sembra che la scienza ci abbia tolto qualcosa.»',
+          tu:'Ha tolto una certa idea di comprensione, e in cambio ci ha dato una capacita di prevedere che ha allungato la vita di decenni. Non e uno scambio ovvio ed e uno scambio: chi lo racconta come un guadagno puro non ve lo sta descrivendo bene, e chi lo racconta come una perdita nemmeno.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'I quattro idoli',
+       corpo:'Bacone elenca quattro tipi di pregiudizio che deformano ogni osservazione.\n\nGli idoli della specie appartengono alla mente umana come tale: tende a vedere più ordine e regolarità di quanti ce ne siano, e a notare le conferme più delle smentite.\n\nQuelli della caverna sono individuali: ciascuno vede secondo la propria indole, educazione e letture.\n\nQuelli del foro nascono dal linguaggio: le parole comuni imprigionano il pensiero in distinzioni approssimative.\n\nQuelli del teatro sono i sistemi filosofici ereditati, accettati come rappresentazioni del mondo.',
+       chiedi:'Il primo idolo — vedere più ordine di quanto ce ne sia, e contare le conferme più delle smentite — è stato ritrovato dalla psicologia sperimentale quattro secoli dopo. Come faceva Bacone a saperlo? E quale dei quattro riconoscete più facilmente negli altri, e quale in voi stessi?'},
+      {titolo:'La torre che non serviva',
+       corpo:'L\'esperimento di Galileo sulla caduta dei gravi dalla torre di Pisa è probabilmente una leggenda. Ma nei Discorsi Galileo ne costruisce uno mentale che non ha bisogno di alcuna torre.\n\nSe i corpi pesanti cadono più velocemente dei leggeri, che cosa succede legandone insieme uno pesante e uno leggero? Il leggero dovrebbe rallentare il pesante, quindi l\'insieme cade più lentamente del pesante da solo. Ma l\'insieme pesa più del pesante da solo, quindi dovrebbe cadere più veloce.\n\nLa tesi di partenza porta a due conclusioni opposte. È falsa.',
+       chiedi:'Una teoria viene demolita senza fare esperimenti, mostrando che si contraddice. Quanto lontano si può arrivare ragionando soltanto? E che cosa, invece, si può sapere solo andando a guardare?'},
+      {titolo:'Un\'isola con i laboratori',
+       corpo:'Nella Nuova Atlantide, pubblicata dopo la sua morte, Bacone immagina un\'isola in cui esiste un\'istituzione chiamata Casa di Salomone: un centro di ricerca finanziato dallo Stato, con laboratori, orti botanici, officine, e studiosi divisi per compiti — chi raccoglie dati dall\'estero, chi fa esperimenti, chi ne ricava principi generali.\n\nÈ la prima descrizione della scienza come impresa collettiva e organizzata.\n\nQuarant\'anni dopo i fondatori della Royal Society lo citarono come modello.',
+       chiedi:'Un\'utopia letteraria che diventa il progetto di un\'istituzione reale in quarant\'anni. Che cosa rende un\'immaginazione capace di produrre effetti? E che cosa distingue questo caso dalle utopie che restano lettera morta?'}
+    ],
+    testi:[
+      {fonte:'Galileo Galilei, Il Saggiatore, § 48 (1623) — sulle qualità',
+       corpo:'Galileo sostiene che, pensando a una materia corporea, si è necessitati a concepirla come dotata di figura, grandezza, movimento e numero; ma che non si è affatto costretti ad accompagnarla con l\'essere bianca o rossa, amara o dolce, sonora o muta, e che se si rimuovessero gli orecchi, le lingue e i nasi, resterebbero soltanto le figure, i numeri e i moti.',
+       glossa:'È la formulazione più netta della distinzione fra qualità primarie e secondarie, e da essa discende tutto il problema del soggetto moderno. Notare la formula «rimossi gli orecchi, le lingue e i nasi»: non nega che sentiamo, dice che ciò che sentiamo non appartiene alla descrizione fisica del mondo.'},
+      {fonte:'Francis Bacon, Novum Organum, aforisma III (1620)',
+       corpo:'Bacone afferma che la scienza e la potenza umana coincidono, perché ignorare la causa impedisce di produrre l\'effetto; e che alla natura non si comanda se non obbedendole, sicché ciò che nella contemplazione vale come causa, nell\'operare vale come regola.',
+       glossa:'La formula «sapere è potere» è quasi sempre citata senza la seconda parte, che ne cambia il senso: si comanda alla natura solo obbedendole, cioè conoscendo le sue leggi e non violandole. È un programma di intervento, e insieme il riconoscimento di un vincolo.'},
+      {fonte:'Cartesio, Discorso sul metodo, parte V (1637) — gli animali-macchina',
+       corpo:'Cartesio sostiene che gli animali, pur avendo organi simili ai nostri, agiscano non per conoscenza ma per la disposizione dei loro organi, come un orologio composto di ruote e molle misura il tempo meglio di quanto noi possiamo fare con tutta la nostra prudenza.',
+       glossa:'La tesi appare oggi crudele e va capita nella sua logica: se tutto ciò che accade nei corpi si spiega meccanicamente, attribuire un\'anima agli animali sarebbe introdurre una causa non necessaria. È il meccanicismo applicato con coerenza — e il punto in cui mostra il proprio limite, perché lo stesso ragionamento vale per noi.'}
+    ],
+    compito:'Mezza pagina. Cercate una spiegazione che vi è stata data e che, ripensandoci, non spiega niente — del tipo «l\'oppio fa dormire perché ha una virtù dormitiva». Può venire da un manuale, da una conversazione, da una pubblicità. Trascrivetela. Poi provate a riformularla in modo che dica qualcosa di controllabile: che cosa dovremmo osservare, e in quali condizioni, perché risultasse vera o falsa. Se non ci riuscite, spiegate perché.',
+    fonti:[
+      'I. Newton, Philosophiae naturalis principia mathematica, Scolio generale (1713)',
+      'G. Galilei, Il Saggiatore (1623); Discorsi e dimostrazioni matematiche (1638)',
+      'F. Bacon, Novum Organum (1620); Nuova Atlantide (1627)',
+      'R. Cartesio, Discorso sul metodo (1637); Principi di filosofia',
+      'A. Koyré, Studi newtoniani; E. J. Dijksterhuis, Il meccanicismo e l\'immagine del mondo',
+      'E. A. Burtt, I fondamenti metafisici della scienza moderna; P. Rossi, Francesco Bacone'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',

@@ -181,7 +181,7 @@ Si va in ordine di programma. Restano:
 - [x] Filosofia moderna · 3 — Rinascimento e religione
 - [x] Filosofia moderna · 4 — Rinascimento e politica
 - [x] Filosofia moderna · 5 — Telesio, Bruno, Campanella
-- [ ] Filosofia moderna · 6 — La rivoluzione scientifica
+- [x] Filosofia moderna · 6 — La rivoluzione scientifica
 - [ ] Filosofia moderna · 7 — Francesco Bacone
 - [ ] Filosofia moderna · 8 — Galileo Galilei
 - [ ] Filosofia moderna · 16 — Vico
