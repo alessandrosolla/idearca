@@ -183,7 +183,7 @@ Si va in ordine di programma. Restano:
 - [x] Filosofia moderna · 5 — Telesio, Bruno, Campanella
 - [x] Filosofia moderna · 6 — La rivoluzione scientifica
 - [x] Filosofia moderna · 7 — Francesco Bacone
-- [ ] Filosofia moderna · 8 — Galileo Galilei
+- [x] Filosofia moderna · 8 — Galileo Galilei
 - [ ] Filosofia moderna · 16 — Vico
 - [ ] Filosofia moderna · 17 — I caratteri dell'Illuminismo
 - [ ] Filosofia moderna · 18 — Rousseau

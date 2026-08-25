@@ -11079,6 +11079,225 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Filosofia moderna · 8 — Galileo Galilei': {
+  mappa: {
+    n:'Galileo Galilei', d:'uno scienziato che era anche uno scrittore, e questo gli costo caro',
+    f:[
+      {r:'comincia da', n:'Uno strumento', d:'che non ha inventato e che nessuno aveva pensato di puntare in su',
+       f:[
+         {r:'il cannocchiale arriva', n:'Dall\'Olanda', d:'1608: un artigiano lo costruisce, e serve per vedere le navi in arrivo'},
+         {r:'Galileo lo', n:'Rifa e lo migliora', d:'passa da tre a trenta ingrandimenti lavorando lui stesso le lenti'},
+         {r:'lo offre al doge come', n:'Strumento militare', d:'e ottiene un aumento e la cattedra a vita: la scienza si finanzia cosi'},
+         {r:'e poi lo punta al cielo', n:'Dove nessuno lo aveva puntato', d:'e in poche settimane il mondo antico si sfalda',
+          f:[{piu:true, r:'e pubblica subito', n:'In sessanta giorni', d:'il Sidereus Nuncius esce a marzo 1610: capisce che la priorita va difesa in fretta'}]}
+       ]},
+
+      {r:'trova', n:'Cose che non dovevano esserci', d:'e ognuna smonta un pezzo del cielo aristotelico',
+       f:[
+         {r:'sulla Luna', n:'Montagne e valli', d:'non e una sfera perfetta: e un corpo come la Terra'},
+         {r:'attorno a Giove', n:'Quattro satelliti', d:'esistono corpi che girano attorno a qualcosa che non e la Terra',
+          f:[{r:'e li chiama', n:'Pianeti medicei', d:'dedicandoli ai Medici: ottiene il posto a Firenze e un protettore'}]},
+         {r:'in Venere le', n:'Fasi complete', d:'come la Luna: e questo Tolomeo non lo puo spiegare in nessun modo'},
+         {r:'sul Sole le', n:'Macchie', d:'che cambiano e si spostano: anche il Sole si altera, e ruota'},
+         {piu:true, r:'e Saturno gli appare', n:'Con due orecchie', d:'gli anelli, che il suo strumento non risolve: pubblica un anagramma per fissare la priorita senza sbilanciarsi'},
+         {r:'e nella Via Lattea', n:'Innumerevoli stelle', d:'l\'universo e molto piu popolato di quanto si credesse'}
+       ]},
+
+      {r:'costruisce', n:'Un metodo', d:'e la parte che vale piu delle singole scoperte',
+       f:[
+         {r:'unisce', n:'Esperienze sensate e necessarie dimostrazioni', d:'osservare e dimostrare: nessuna delle due basta da sola'},
+         {r:'l\'esperimento non e guardare', n:'Ma domandare', d:'si costruisce una situazione per costringere la natura a rispondere sì o no'},
+         {r:'con l\'', n:'Idealizzazione', d:'il piano senza attrito, il corpo senza aria: si studia un caso che in natura non esiste',
+          f:[{piu:true, r:'e la natura', n:'Non contraddice mai il modello', d:'lo approssima: la differenza si mette in conto agli attriti, e questo e insieme forza e rischio'}]},
+         {r:'e con la tesi che il libro della natura sia', n:'Scritto in lingua matematica', d:'chi non la conosce vaga per un oscuro labirinto'},
+         {r:'misura il tempo con', n:'Acqua e pulsazioni', d:'pesa l\'acqua uscita da un recipiente: senza orologi precisi si inventa il cronometro'},
+         {piu:true, r:'e usa il', n:'Piano inclinato', d:'per rallentare la caduta abbastanza da poterla misurare: si diluisce il fenomeno per studiarlo'},
+         {r:'e usa l\'', n:'Esperimento mentale', d:'i due gravi legati: si confuta Aristotele mostrando che si contraddice'}
+       ]},
+
+      {r:'fonda', n:'Una fisica nuova', d:'e queste sono le cose che nessuno gli ha mai contestato',
+       f:[
+         {r:'i gravi cadono', n:'Con la stessa accelerazione', d:'indipendentemente dal peso, se si toglie la resistenza dell\'aria'},
+         {r:'lo spazio percorso cresce', n:'Con il quadrato del tempo', d:'e la prima legge quantitativa del moto'},
+         {r:'il moto dei proiettili si scompone in', n:'Due moti indipendenti', d:'uno uniforme e uno accelerato: ne risulta una parabola'},
+         {r:'formula in modo imperfetto il', n:'Principio d\'inerzia', d:'un corpo mantiene il proprio moto se nulla lo disturba'},
+         {piu:true, r:'e intuisce che la caduta sia', n:'Uguale per tutti i corpi', d:'nel vuoto una piuma e una pietra cadrebbero insieme: lo dice tre secoli prima che si possa verificare'},
+         {r:'e mostra con la', n:'Nave', d:'che dentro un sistema in moto uniforme nessun esperimento rivela il movimento',
+          f:[{r:'e questo risponde all\'obiezione', n:'Perche non ci accorgiamo che la Terra si muove', d:'la piu forte che i suoi avversari avessero'}]}
+       ]},
+
+      {r:'affronta il rapporto fra', n:'Scienza e Scrittura', d:'ed e qui che entra nel terreno degli altri',
+       f:[
+         {r:'sostiene che la Bibbia', n:'Non insegna astronomia', d:'insegna come si vada in cielo, non come vada il cielo'},
+         {r:'e che parla', n:'Adattandosi al modo di intendere del popolo', d:'quando dice che il sole si ferma, usa il linguaggio di chi ascolta'},
+         {r:'quindi in questioni naturali si parte', n:'Dalle esperienze e dalle dimostrazioni', d:'e poi si interpreta il testo di conseguenza'},
+         {r:'scrive tutto questo nelle lettere a', n:'Castelli e a Cristina di Lorena', d:'1613 e 1615: circolano manoscritte e arrivano al Sant\'Uffizio'},
+         {r:'ed e una mossa', n:'Fortissima e imprudente', d:'un matematico laico spiega ai teologi come si legge la Scrittura'}
+       ]},
+
+      {r:'incontra', n:'Il divieto', d:'e la vicenda si decide su un dettaglio procedurale',
+       f:[
+         {r:'nel 1616 il Sant\'Uffizio dichiara la tesi copernicana', n:'Falsa in filosofia ed erronea nella fede', d:'e il libro di Copernico e sospeso fino a correzione'},
+         {r:'a Galileo viene', n:'Ordinato di non sostenerla', d:'la formula esatta di quell\'ammonizione sara il punto decisivo del processo'},
+         {r:'gli si concede di trattarla', n:'Ex suppositione', d:'come ipotesi matematica utile ai calcoli, non come descrizione del mondo'},
+         {piu:true, r:'e tenta di risolvere la', n:'Longitudine in mare', d:'usando i satelliti di Giove come orologio: l\'idea e giusta e impraticabile su una nave che rolla'},
+         {r:'e per sedici anni', n:'Lavora ad altro', d:'maree, comete, meccanica: aspetta che il clima cambi'},
+         {r:'quando sale al soglio Urbano VIII', n:'Crede sia arrivato il momento', d:'era stato suo estimatore e gli aveva dedicato dei versi'}
+       ]},
+
+      {r:'scrive', n:'Il Dialogo', d:'1632: un libro costruito per rispettare il divieto e violarlo',
+       f:[
+         {r:'tre personaggi discutono', n:'Per quattro giornate', d:'Salviati che sostiene Copernico, Sagredo che ascolta, Simplicio che difende Aristotele'},
+         {r:'formalmente si tratta', n:'Di due ipotesi a confronto', d:'e il frontespizio lo dichiara: nessuna delle due viene affermata come vera'},
+         {r:'ma Simplicio', n:'Perde sempre', d:'e il nome stesso suona come sempliciotto: nessun lettore puo sbagliarsi'},
+         {r:'e alla fine gli viene messo in bocca', n:'L\'argomento del papa', d:'Dio e onnipotente e puo aver fatto il mondo in molti modi, dunque non pretendiamo di saperlo',
+          f:[{r:'che Urbano VIII', n:'Considera una presa in giro personale', d:'gliel\'aveva suggerito lui, e se lo ritrova in bocca allo sciocco'},
+             {piu:true, r:'e da amico diventa', n:'Il nemico decisivo', d:'senza la sua ira il processo probabilmente non ci sarebbe stato'}]}
+       ]},
+
+      {r:'finisce con', n:'Il processo e i Discorsi', d:'e l\'ultima parte e la piu sorprendente',
+       f:[
+         {r:'nel 1633 e dichiarato', n:'Veementemente sospetto di eresia', d:'per aver violato l\'ammonizione del 1616'},
+         {r:'abiura', n:'In ginocchio', d:'a settant\'anni, e la frase sul muoversi della Terra e una leggenda posteriore'},
+         {r:'riceve la visita di', n:'Giovani studiosi', d:'fra cui Torricelli e Viviani: la ricerca continua attorno a lui anche da recluso'},
+         {r:'e condannato agli', n:'Arresti domiciliari', d:'ad Arcetri, dove restera fino alla morte, cieco negli ultimi anni'},
+         {r:'li scrive i', n:'Discorsi sulle due nuove scienze', d:'1638: la sua opera scientifica maggiore, e non parla di Copernico',
+          f:[{r:'pubblicati clandestinamente', n:'In Olanda', d:'dove i suoi libri erano proibiti solo sulla carta'},
+             {piu:true, r:'e contengono la fisica su cui', n:'Newton costruira', d:'la condanna gli tolse la battaglia che stava perdendo e gli lascio il tempo per quella che ha vinto'}]}
+       ]}
+    ],
+    incroci:[
+      {da:'Strumento militare', a:'Pianeti medicei', r:'e la stessa operazione che porta a chiamare i satelliti',
+       perche:'Il cannocchiale viene offerto al doge come arma difensiva e i satelliti di Giove vengono intitolati alla famiglia regnante di Firenze. In entrambi i casi una scoperta viene presentata a chi puo pagarla nei termini che gli interessano: la scienza del Seicento si finanzia trovando un protettore, e Galileo era bravissimo a farlo.'},
+      {da:'Nave', a:'Perche non ci accorgiamo che la Terra si muove', r:'risponde all\'obiezione',
+       perche:'Chiuso in una cabina sotto coperta, nessun esperimento rivela se la nave sia ferma o proceda uniformemente: le mosche volano uguale, l\'acqua cade a piombo. È la risposta all\'obiezione piu forte contro il moto terrestre, ed e un contributo teorico che vale piu di qualunque osservazione col cannocchiale.'},
+      {da:'Fasi complete', a:'Falsa in filosofia ed erronea nella fede', r:'non basta a evitare la dichiarazione che la tesi copernicana sia',
+       perche:'Le fasi di Venere rendono impossibile il sistema tolemaico e restano compatibili con quello di Tycho Brahe, in cui la Terra sta ferma. Galileo aveva demolito una teoria senza averne stabilita un\'altra, e i suoi avversari lo sapevano: il decreto del 1616 non ignora i fatti, sfrutta un buco reale nella dimostrazione.'},
+      {da:'Fortissima e imprudente', a:'Ordinato di non sostenerla', r:'porta all\'ammonizione con cui gli viene',
+       perche:'Spiegare ai teologi come vada interpretata la Scrittura significa entrare nel terreno dove sono loro a decidere, e trasformare una controversia astronomica in una questione di competenza. Le lettere a Castelli e a Cristina circolano e arrivano al Sant\'Uffizio: la mossa che sul piano dell\'argomento e ineccepibile e quella che innesca tutto.'},
+      {da:'L\'argomento del papa', a:'Il nemico decisivo', r:'trasforma un protettore ne',
+       perche:'Urbano VIII aveva scritto versi in onore di Galileo e gli aveva concesso sei udienze. Ritrovare il proprio argomento in bocca al personaggio sciocco, alla fine del libro, lo convince di essere stato deriso pubblicamente. Il processo nasce anche da un\'offesa personale — e le offese personali di chi ha potere pesano quanto le questioni di principio.'},
+      {da:'Perde sempre', a:'Di due ipotesi a confronto', r:'smentisce nei fatti la dichiarazione che si tratti',
+       perche:'Il frontespizio promette un confronto neutrale e il testo assegna a un personaggio tutte le ragioni e all\'altro tutte le sconfitte. La forma dialogica serviva a rispettare il divieto sul piano formale: funziona finche il lettore che conta sta al gioco, e Urbano VIII decide di non starci.'},
+      {da:'Idealizzazione', a:'Scritto in lingua matematica', r:'e la condizione perche valga l\'idea che il libro della natura sia',
+       perche:'In natura non esistono piani senza attrito: le leggi matematiche descrivono esattamente situazioni costruite apposta. La matematizzazione funziona perche si semplifica il mondo fino a farcelo entrare — e la differenza fra modello e osservazione viene messa in conto ai disturbi, il che e insieme la forza del metodo e il suo rischio.'},
+      {da:'Lavora ad altro', a:'Discorsi sulle due nuove scienze', r:'e cio che prepara i',
+       perche:'Nei sedici anni di silenzio imposto Galileo studia meccanica, resistenza dei materiali e moto dei proiettili. Quel materiale diventa l\'opera del 1638. Il divieto sull\'astronomia sposta il suo lavoro sul terreno in cui produrra i risultati piu duraturi — non per merito del divieto, ma e cosi che e andata.'},
+      {da:'Newton costruira', a:'Con la stessa accelerazione', r:'a partire da leggi come quella dei gravi che cadono',
+       perche:'La legge della caduta, il moto composto dei proiettili e la formulazione imperfetta dell\'inerzia sono i materiali su cui Newton costruira la propria meccanica. La parte di Galileo che nessuno gli ha mai contestato e quella su cui poggia tutta la fisica successiva — e non riguarda l\'astronomia.'},
+      {da:'In sessanta giorni', a:'Dall\'Olanda', r:'e la reazione di chi sa che lo strumento viene',
+       perche:'Se il cannocchiale si costruisce in Olanda, chiunque puo puntarlo al cielo e vedere le stesse cose. Pubblicare in sessanta giorni non e fretta editoriale: e la comprensione che la priorita si difende solo arrivando primi. È il primo caso moderno di corsa alla pubblicazione.'},
+      {da:'Adattandosi al modo di intendere del popolo', a:'Non insegna astronomia', r:'e l\'argomento che sostiene la tesi che la Bibbia',
+       perche:'Se il testo sacro usa il linguaggio di chi ascolta, allora le espressioni sul sole che si ferma non descrivono la meccanica celeste. La tesi non e un\'invenzione di Galileo: era una regola interpretativa accettata, e lui la applica a un caso in cui produce conclusioni sgradite.'},
+      {da:'Ex suppositione', a:'Veementemente sospetto di eresia', r:'e la clausola la cui violazione porta alla dichiarazione di',
+       perche:'Il capo d\'accusa non e astronomico ma disciplinare: aver sostenuto come vera una tesi che poteva essere trattata solo come ipotesi. È utile in classe — il processo si decide su una questione di procedura, e questo spiega perche il Dialogo fosse costruito con tanta attenzione formale.'},
+      {da:'Non contraddice mai il modello', a:'Ma domandare', r:'e cio che rende necessario che l\'esperimento non sia guardare',
+       perche:'Se le differenze fra previsione e osservazione si attribuiscono agli attriti, l\'osservazione passiva non decide niente. Serve costruire una situazione in cui la risposta possa essere solo sì o no. L\'esperimento nasce come domanda posta con vincoli, non come attenzione maggiore.'}
+    ]
+  },
+  provocazione: {
+    titolo:'Dirlo fingendo di non dirlo',
+    durata:'55 minuti',
+    domandaMadre:'Si puo dire una cosa fingendo di non dirla?',
+    perche:'Nel 1616 a Galileo era stato ordinato di non sostenere il copernicanesimo come vero, ma solo come ipotesi matematica. Nel 1632 pubblica un dialogo in cui tre personaggi confrontano i due sistemi: formalmente il divieto e rispettato, e nessun lettore ha dubbi su chi abbia ragione, perche l\'aristotelico si chiama Semplicio e perde ogni discussione. È la tecnica di chi scrive sotto censura, e qui fallisce in modo esemplare: alla fine del libro l\'argomento preferito del papa finisce in bocca allo sciocco, e il papa era stato il suo protettore. La classe deve capire quando l\'ironia funziona e quando si ritorce contro chi la usa.',
+    occorrente:'Niente.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'1616. Al piu famoso scienziato\nd\'Europa viene ordinato\ndi non sostenere\nche la Terra si muova.\n\nPuo parlarne, ma solo\ncome ipotesi matematica utile\nai calcoli — non come\ndescrizione di come stanno le cose.\n\n1632. Galileo pubblica un libro\nin cui tre personaggi\ndiscutono per quattro giornate\nse la Terra si muova o no.\n\nIl frontespizio dichiara\nche si confrontano due ipotesi,\nsenza deciderne nessuna.\nHa avuto tutti i permessi.\n\nUno dei tre difende Aristotele\ne la Terra ferma.\n\nSi chiama Simplicio.\n\nPerde ogni singola discussione,\nper quattro giornate di seguito.\n\nNessun lettore, in tutta Europa,\nha il minimo dubbio\nsu che cosa pensi l\'autore.',
+       parlato:'Costruisci prima il divieto, poi il libro, e tieni per ultimo il nome del personaggio.\n\nPoi fai notare la questione del nome, che e piu sottile di come sembra: Simplicio e il nome di un vero commentatore antico di Aristotele, quindi Galileo poteva difendersi dicendo che era un omaggio erudito. Ma in italiano suona come sempliciotto, e tutti lo sentivano.\n\nDomanda dell\'ora: e un modo legittimo di aggirare un divieto ingiusto, o e una furbizia che si paga?\n\nRaccogli le prime reazioni. Quasi tutti approvano — un divieto ingiusto si aggira. Non correggere: e lo schieramento.',
+       seDicono:[
+         {loro:'«Il divieto era ingiusto, quindi ha fatto bene.»',
+          tu:'Molti la pensano cosi, e la teniamo per lo schieramento. Ti anticipo solo una domanda: se un divieto e ingiusto e lo aggiri di nascosto invece di contestarlo apertamente, che cosa hai ottenuto? Il divieto resta in piedi, e tu hai una posizione difficile da difendere.'},
+         {loro:'«Ma aveva i permessi.»',
+          tu:'Li aveva, ed e un fatto importante: il libro fu autorizzato dai censori di Roma e di Firenze. È uno dei motivi per cui la vicenda e cosi imbarazzante — non e stato stampato di nascosto, e passato attraverso tutti i controlli previsti.'}
+       ]},
+
+      {minuti:'8–17', et:'Lo schieramento',
+       schermo:'Chi non puo dire una cosa\ne la dice comunque,\ncostruendo un testo\nche formalmente non la dice:',
+       opzioni:['fa l\'unica cosa sensata: e l\'arma di chi non puo parlare', 'sceglie male: o si parla chiaro, o si tace'],
+       parlato:'Fai schierare e conta. La prima opzione prevale nettamente.\n\nPoi porta a favore della prima gli esempi che avete gia visto quest\'anno, e falli riconoscere a loro: i rimandi dell\'Enciclopedia, dove la voce prudente rinviava a quella pericolosa; il tacitismo, dove si commentava Tacito per parlare di tirannide senza citare Machiavelli proibito. In entrambi i casi la tecnica funziona.\n\nPoi la domanda che apre il problema: che cosa hanno in comune quei due casi, e che Galileo non ha?\n\nGuidali. In quei casi chi doveva controllare non capiva, oppure faceva finta di non capire perche non aveva interesse ad accorgersene. La tecnica dell\'allusione funziona a una condizione precisa: che chi ha il potere di colpirti scelga di non vedere.\n\nQuando invece se ne accorge — e soprattutto quando si sente personalmente deriso — il danno e maggiore di quello che avresti avuto parlando chiaro. Perche all\'accusa di aver sostenuto la tesi si aggiunge quella di aver aggirato un ordine.\n\nÈ esattamente cio che succede nel 1633.',
+       seDicono:[
+         {loro:'«Ma se parli chiaro ti condannano subito.»',
+          tu:'Vero, ed e il motivo per cui la tecnica esiste. La domanda non e se sia comoda ma quando regge. Se il tuo lettore piu potente e uno che ti stimava e si sente preso in giro, non regge — e tu ti trovi a doverti difendere anche dall\'accusa di essere stato scorretto.'},
+         {loro:'«Poteva scrivere all\'estero.»',
+          tu:'Lo fara: i Discorsi del 1638 escono in Olanda. Ma nel 1632 voleva vincere in Italia, davanti al proprio pubblico e al proprio protettore. La scelta di restare dentro il sistema e di aggirarlo dall\'interno e una scelta politica, e ha i suoi rischi.'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'Come funziona il libro,\nvisto da dentro.\n\nTre personaggi.\n\nSalviati sostiene Copernico\ned e brillante, informato,\npaziente. Ha sempre ragione.\n\nSagredo e il lettore intelligente:\nnon sa, ascolta, e si convince.\nÈ il posto in cui\nti mette l\'autore.\n\nSimplicio difende Aristotele.\nCita autorita invece di argomenti.\nQuando gli si mostra un fatto,\nrisponde che non e possibile\nperche il Filosofo dice altro.\n\nNon e stupido per caso:\ne costruito per esserlo.\n\nE qui c\'e il problema tecnico.\n\nUn dialogo onesto\nmette in bocca all\'avversario\nl\'obiezione piu forte.\n\nQuesto dialogo\ngli mette in bocca\nla peggiore.',
+       parlato:'Descrivi i tre personaggi e insisti sulla funzione di Sagredo: e il posto del lettore, e serve a farlo sentire intelligente mentre viene condotto.\n\nPoi il punto critico, che collega a una lezione che hanno gia fatto: il metodo scolastico obbligava a esporre l\'obiezione contraria nella sua forma piu forte. Qui succede il contrario.\n\nDomanda per la classe: perche e un problema, se le tesi di Galileo erano giuste?\n\nGuidali a due risposte, entrambe utili.\n\nLa prima e pratica: chi legge e gia d\'accordo si diverte, e chi non e d\'accordo non viene convinto — riconosce la caricatura e si irrigidisce. Un avversario ridicolizzato non cambia idea.\n\nLa seconda e piu seria: mettendo in bocca al proprio avversario argomenti deboli, non si scopre mai se i propri reggono davvero. E in questo caso c\'erano obiezioni serie che Galileo non affronta bene — la parallasse mancante, che lui liquida, e il fatto che le sue osservazioni fossero compatibili anche con il sistema di Tycho.\n\nUn dialogo con un avversario vero lo avrebbe costretto a farci i conti.',
+       seDicono:[
+         {loro:'«Ma gli aristotelici erano davvero così?»',
+          tu:'Alcuni sì, molti no. Fra i suoi avversari c\'erano i gesuiti del Collegio Romano, che erano ottimi astronomi, avevano confermato le sue osservazioni e gli opponevano obiezioni tecniche serie. Sono quelli che nel libro non compaiono.'},
+         {loro:'«Se il libro fosse stato equilibrato, sarebbe stato noioso.»',
+          tu:'Sarebbe stato piu difficile, ed e proprio questo il punto. Galileo era uno scrittore straordinario e sapeva che un avversario ridicolo rende il libro piacevole. Ha scelto l\'efficacia letteraria, e in quel caso specifico gli e costata carissima.'}
+       ]},
+
+      {minuti:'28–38', et:'Il testo',
+       schermo:'La fine del libro.\n\nDopo quattro giornate\nin cui Simplicio ha perso tutto,\ndeve arrivare la conclusione\nche rispetta il divieto.\n\nGalileo la mette in bocca\na Simplicio.\n\nÈ un argomento cosi formulato:\nDio e onnipotente e sapientissimo;\npuo aver prodotto gli stessi effetti\nin molti modi che noi\nnon possiamo immaginare;\ndunque sarebbe eccessiva audacia\npretendere di sapere\ncome li abbia prodotti davvero.\n\nSalviati risponde\nche e una dottrina\nmirabile e angelica.\n\nE il libro finisce.\n\nQuell\'argomento\nnon e un\'invenzione di Galileo.\n\nGlielo aveva esposto\npersonalmente\nil papa Urbano VIII,\nchiedendogli di inserirlo.',
+       testo:{fonte:'Galileo Galilei, Dialogo sopra i due massimi sistemi del mondo, giornata quarta (1632)',
+              glossa:'L\'argomento è quello che Urbano VIII considerava decisivo e che aveva esposto a Galileo di persona: poiché Dio è onnipotente, ogni spiegazione fisica resta un\'ipotesi. Chiedendo che comparisse nel libro, il papa dava una via d\'uscita. Trovarlo enunciato dal personaggio ridicolo, nell\'ultima pagina, e commentato con un\'ironia appena mascherata, fu interpretato come una derisione personale.'},
+       parlato:'Leggi il passo e poi fai il conto della situazione: l\'argomento del papa, alla fine del libro, in bocca al personaggio che ha appena perso quattro giornate di discussioni.\n\nDomanda: era necessario?\n\nGuidali a vedere che no. Galileo poteva metterlo in bocca a Salviati, il personaggio che vince: sarebbe stata una conclusione elegante, avrebbe rispettato il divieto, e avrebbe reso omaggio a chi lo proteggeva.\n\nHa scelto la soluzione piu efficace letterariamente e piu disastrosa politicamente.\n\nPoi la domanda che li interessa: perche lo ha fatto?\n\nLe ipotesi degli storici sono tre e vale la pena darle tutte: distrazione — improbabile in un libro lavorato per anni; sfrontatezza — riteneva di essere abbastanza protetto; oppure calcolo sbagliato — pensava che il papa non l\'avrebbe letto, o non se ne sarebbe accorto.\n\nQualunque sia, il risultato e lo stesso: Urbano VIII si convince di essere stato deriso da un uomo che aveva protetto, e da quel momento non c\'e piu spazio per trattare.\n\nFai notare la regola generale: l\'ironia colpisce meglio i potenti che chiunque altro, e per la stessa ragione e piu pericolosa. Chi ha potere puo permettersi di reagire.',
+       seDicono:[
+         {loro:'«Forse non se n\'era reso conto.»',
+          tu:'Difficile: aveva lavorato al libro per anni e sapeva perfettamente chi fosse il proprio lettore piu importante. E c\'e un dettaglio: aveva promesso al papa che quell\'argomento sarebbe stato messo nel modo dovuto. Metterlo li e stato interpretato, non senza ragione, come una scelta.'},
+         {loro:'«Il papa è stato permaloso.»',
+          tu:'Anche. Ma quando dipendi dalla benevolenza di qualcuno, la sua suscettibilita fa parte delle condizioni in cui lavori, come il tempo per un contadino. Ignorarla non e coraggio: e un errore di valutazione, e Galileo era un uomo che di solito valutava benissimo.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'1633. Condanna, abiura,\narresti domiciliari ad Arcetri.\n\nSettant\'anni, sorvegliato,\nvietato di ricevere visite\nsenza permesso,\nvietato di pubblicare.\n\nSembra la fine.\n\n1638. Esce in Olanda,\nclandestinamente,\nun libro intitolato\nDiscorsi e dimostrazioni matematiche\nintorno a due nuove scienze.\n\nLo ha scritto agli arresti,\nnegli ultimi anni ormai cieco,\ndettando.\n\nDentro ci sono:\nla legge della caduta dei gravi,\nil moto dei proiettili,\nla resistenza dei materiali,\ni fondamenti della meccanica.\n\nÈ la sua opera piu importante.\n\nE non parla mai\ndi Copernico.\n\nÈ su questo libro,\nnon sul Dialogo,\nche Newton costruira.',
+       parlato:'Dai la sequenza e lascia che l\'ultima riga faccia il proprio effetto.\n\nPoi la formulazione, e va tenuta precisa perche e delicata: non sto dicendo che la condanna gli abbia fatto bene. Sto dicendo che gli ha tolto la battaglia che stava perdendo — quella astronomica, dove non aveva la prova decisiva — e gli ha lasciato il tempo per quella che ha vinto.\n\nFai notare la differenza fra le due imprese. Sul moto della Terra Galileo aveva ragione e non poteva dimostrarlo; sulla caduta dei gravi e sul moto dei proiettili aveva ragione e poteva dimostrarlo, con esperimenti che chiunque poteva rifare.\n\nNessuno gli ha mai contestato i Discorsi. Non c\'era niente da contestare: erano misure e dimostrazioni.\n\nPoi la domanda utile per la classe: che cosa distingue le due parti della sua opera?\n\nRisposta: una riguarda come e fatto l\'universo e non poteva essere provata con gli strumenti del tempo; l\'altra riguarda come si comportano i corpi qui, e poteva. La seconda ha fondato la fisica moderna.\n\nE aggiungi il dato conclusivo, che chiude anche il tema dell\'ironia: i Discorsi sono scritti in forma di dialogo, con gli stessi tre personaggi. Ma stavolta Simplicio fa domande sensate e impara. Non c\'era piu nessuno da aggirare.',
+       seDicono:[
+         {loro:'«Quindi la condanna è stata utile?»',
+          tu:'No, e non facciamo questo passo: gli ha tolto la liberta, la reputazione e probabilmente anni di lavoro sull\'astronomia. Dire che in quel tempo abbia prodotto altro non e un bilancio, e una constatazione. Le cose che uno fa costretto non giustificano la costrizione.'},
+         {loro:'«Perché nei Discorsi Simplicio non è ridicolo?»',
+          tu:'Ottima osservazione, ed e la conferma migliore di tutta la lezione. Quando non c\'era piu un divieto da aggirare ne un pubblico da conquistare, il dialogo e tornato a essere uno strumento per ragionare invece che un\'arma. La caricatura serviva alla polemica, non alla scienza.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'Torniamo alla domanda.\n\nSi puo dire una cosa\nfingendo di non dirla?\n\nSi puo, ed e stato fatto\nmille volte:\nnell\'Enciclopedia con i rimandi,\nnel Seicento commentando Tacito\nper parlare di tirannide.\n\nFunziona a una condizione:\n\nche chi ha il potere di colpirti\nnon se ne accorga,\noppure scelga di non vedere.\n\nQuando invece se ne accorge —\ne soprattutto quando\nsi sente deriso —\nil conto e piu alto\ndi quello che avresti pagato\nparlando chiaro.\n\nPerche all\'accusa di aver detto\nsi aggiunge quella\ndi aver aggirato.\n\nUltima cosa da portarsi via.\n\nL\'ironia e un\'arma potente\ncontro chi ha potere.\n\nE chi ha potere\npuo permettersi\ndi reagire.',
+       parlato:'Rifai la conta iniziale e commenta lo spostamento.\n\nPoi fissa la condizione, che e la cosa utile: la tecnica dell\'allusione non e ne furba ne stupida in astratto — dipende da chi legge e da quanto puo permettersi di reagire.\n\nDa\' loro il criterio pratico: prima di dire una cosa in modo obliquo, chiedersi che cosa succede se la persona interessata capisce. Se la risposta e «niente di grave», la tecnica conviene. Se la risposta e «peggio che se lo avessi detto chiaro», non conviene.\n\nPoi il bilancio finale su Galileo, tenuto onesto. È stato un grandissimo scienziato e un polemista formidabile, e le due cose insieme gli sono costate care. Ha vinto sulla fisica, dove aveva prove; ha perso sull\'astronomia, dove non le aveva; ed e stato condannato per una questione di procedura, non per la scienza.\n\nChiudi con quello che apre il seguito. Abbiamo visto due modi di rifondare il sapere: Bacone partendo dai fatti e dai pregiudizi, Galileo dalla matematica e dall\'esperimento. Ne manca un terzo, il piu radicale: qualcuno che decide di mettere in dubbio tutto, compresi i propri sensi e il proprio corpo, per vedere se resti qualcosa in piedi. È Cartesio, e lo vediamo presto.',
+       seDicono:[
+         {loro:'«Allora bisogna sempre parlare chiaro?»',
+          tu:'Non sempre: in molte situazioni l\'allusione e l\'unica strada, e ha salvato idee che altrimenti non sarebbero arrivate a noi. Il consiglio e piu modesto — sapere che si sta correndo un rischio, e valutarlo su chi legge invece che su quanto ci si sente furbi.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'Le comete',
+       corpo:'Nel 1618 tre comete attraversano il cielo. Il gesuita Orazio Grassi sostiene, sulla base della mancanza di parallasse, che siano corpi lontani, oltre la Luna.\n\nGalileo replica nel Saggiatore sostenendo che siano fenomeni ottici, riflessi di vapori terrestri, e ridicolizza l\'avversario con una prosa memorabile.\n\nGrassi aveva ragione. Galileo aveva torto, e aveva usato contro di lui un argomento — la mancanza di parallasse — che nel caso del moto terrestre respingeva quando veniva usato contro di sé.',
+       chiedi:'Il Saggiatore è considerato un capolavoro di prosa scientifica e sostiene una tesi sbagliata contro un avversario che aveva ragione. Che cosa dice questo sul rapporto fra la qualità di uno scritto e la verità di ciò che afferma? E come si fa a non farsi convincere dallo stile?'},
+      {titolo:'La frase che non ha detto',
+       corpo:'La tradizione vuole che Galileo, rialzatosi dopo l\'abiura, abbia mormorato «eppur si muove».\n\nLa frase non compare in nessun documento del processo né in alcuna fonte contemporanea: la prima attestazione è di oltre un secolo dopo, in un libro dedicato a raccogliere aneddoti su letterati e scienziati.\n\nÈ probabilmente una leggenda nata quando la figura di Galileo cominciava a diventare un simbolo.',
+       chiedi:'Una frase inventata riassume meglio di qualunque documento ciò che vogliamo pensare di quella vicenda. Perché ne abbiamo bisogno? E che cosa perdiamo, sostituendo un aneddoto memorabile ai fatti documentati?'},
+      {titolo:'I gesuiti che confermarono',
+       corpo:'Nel 1611 gli astronomi del Collegio Romano verificarono le osservazioni del Sidereus Nuncius con i propri strumenti e le confermarono tutte: i satelliti di Giove, le fasi di Venere, le irregolarità della Luna. Organizzarono una cerimonia solenne in onore di Galileo.\n\nErano matematici di livello, e le loro obiezioni successive riguardavano l\'interpretazione, non i fatti: le osservazioni erano compatibili anche con il sistema di Tycho Brahe, in cui la Terra sta ferma.\n\nNel Dialogo del 1632 quegli avversari non compaiono. Compare Simplicio.',
+       chiedi:'Un autore sceglie di rappresentare i propri avversari nella versione più debole invece che nella più forte. È una scelta legittima in una polemica? E che cosa perde chi la fa — oltre alla stima di chi ha caricaturato?'}
+    ],
+    testi:[
+      {fonte:'Galileo Galilei, Lettera a Cristina di Lorena (1615)',
+       corpo:'Galileo sostiene che nelle dispute intorno a problemi naturali non si dovrebbe cominciare dall\'autorità dei passi delle Scritture, ma dalle sensate esperienze e dalle dimostrazioni necessarie; e che la Scrittura, dovendo essere intesa dal volgo, si adatta al modo comune di parlare, sicché da essa non si può trarre dottrina astronomica.',
+       glossa:'La tesi non era nuova — Agostino aveva scritto qualcosa di simile — ma sostenerla da matematico laico, in un momento di massima sensibilità sull\'interpretazione biblica dopo Trento, significava entrare nel terreno riservato ai teologi. È l\'argomento più forte di Galileo e la sua mossa più imprudente.'},
+      {fonte:'Galileo Galilei, Dialogo, giornata seconda — l\'esperimento della nave',
+       corpo:'Galileo invita a chiudersi sotto coperta di un gran naviglio, con mosche, farfalle, un vaso che gocciola e dei pesci in una bacinella, e a osservare che, muovendosi la nave con moto uniforme, non si riconosce alcun mutamento in nessuno di quegli effetti, né si potrebbe da alcuno di essi comprendere se la nave cammini o stia ferma.',
+       glossa:'È il contributo teorico più profondo del Dialogo, e risponde all\'obiezione più seria contro il moto terrestre: se ci muovessimo, ce ne accorgeremmo. La risposta vale ancora — è il principio di relatività galileiana, che Einstein riprenderà — ed è la parte del libro che nessuno ha mai contestato.'},
+      {fonte:'Sentenza e abiura, 22 giugno 1633',
+       corpo:'La sentenza dichiara Galileo veementemente sospetto di eresia per aver tenuto e creduto dottrina contraria alle Sacre Scritture, dopo che gli era stato ingiunto di abbandonarla; nell\'abiura egli dichiara di abbandonare e maledire quegli errori e di giurare che in avvenire non dirà né asserirà cose simili.',
+       glossa:'Il capo d\'accusa è disciplinare: non aver rispettato l\'ingiunzione del 1616. La formula «veementemente sospetto» è una qualificazione intermedia, non una condanna per eresia formale. Da leggere con attenzione, perché la precisione giuridica del documento contrasta con il modo in cui la vicenda viene di solito riassunta.'}
+    ],
+    compito:'Mezza pagina. Ricostruite una situazione in cui avete detto qualcosa in modo obliquo — con una battuta, un\'allusione, un tono — invece di dirlo chiaramente. Descrivetela. Poi rispondete a due domande: la persona interessata ha capito? E se avesse capito del tutto, che cosa sarebbe successo — meno o più di quello che sarebbe successo dicendolo apertamente?',
+    fonti:[
+      'G. Galilei, Sidereus Nuncius (1610); Il Saggiatore (1623); Dialogo sopra i due massimi sistemi (1632); Discorsi e dimostrazioni matematiche (1638)',
+      'Lettera a Benedetto Castelli (1613); Lettera a Cristina di Lorena (1615)',
+      'Atti del processo (ed. Favaro, Opere, vol. XIX)',
+      'A. Koyré, Studi galileiani; L. Geymonat, Galileo Galilei',
+      'P. Redondi, Galileo eretico; M. Camerota, Galileo Galilei e la cultura scientifica nell\'età della Controriforma',
+      'M. Bucciantini, Contro Galileo — sulla costruzione del caso'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',
