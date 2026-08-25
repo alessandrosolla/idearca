@@ -11298,6 +11298,223 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Filosofia moderna · 16 — Vico': {
+  mappa: {
+    n:'Giambattista Vico', d:'la storia come scienza, e il rovesciamento di che cosa si possa conoscere',
+    f:[
+      {r:'parte da', n:'Un uomo fuori posto', d:'e l\'isolamento non e un dettaglio biografico: e la condizione della sua opera',
+       f:[
+         {r:'insegna', n:'Retorica a Napoli', d:'la cattedra peggio pagata dell\'universita, per quarant\'anni'},
+         {r:'concorre alla cattedra di diritto e', n:'La perde', d:'e continua a scrivere orazioni per matrimoni e funerali per arrotondare'},
+         {r:'pubblica la', n:'Scienza nuova', d:'in tre versioni: 1725, 1730, 1744, riscrivendola ogni volta da capo'},
+         {r:'e vive di', n:'Lezioni private', d:'per mantenere otto figli: la filosofia non lo nutre, la retorica appena'},
+         {r:'e non viene', n:'Quasi letto da nessuno', d:'muore convinto di aver fallito, e ha ragione sul proprio tempo',
+          f:[{piu:true, r:'perche scrive', n:'In un italiano difficilissimo', d:'denso, allusivo, pieno di etimologie inventate: e uno dei motivi per cui non fu capito'}]}
+       ]},
+
+      {r:'nasce da un\'obiezione a', n:'Cartesio', d:'e da una domanda su che cosa possiamo davvero conoscere',
+       f:[
+         {r:'formula il principio', n:'Il vero e il fatto si convertono', d:'si conosce veramente solo cio che si e fatto'},
+         {r:'quindi la matematica si conosce', n:'Perche la costruiamo noi', d:'punti, linee e numeri sono nostre creazioni: per questo le dimostrazioni sono certe'},
+         {r:'ma la natura', n:'Non l\'abbiamo fatta noi', d:'la conosce chi l\'ha fatta: noi possiamo osservarla e non entrarci dentro',
+          f:[{r:'quindi la fisica', n:'Non e la scienza piu certa', d:'e la piu utile e la meno intima: descrive dal di fuori'}]},
+         {r:'e invece il mondo civile', n:'L\'hanno fatto gli uomini', d:'leggi, lingue, istituzioni, religioni: e roba nostra'},
+         {r:'quindi di quello', n:'Possiamo avere scienza', d:'ed e il rovesciamento: la storia diventa il sapere piu accessibile, non il meno'}
+       ]},
+
+      {r:'costruisce', n:'Una scienza nuova', d:'con un metodo che non somiglia a nessuno di quelli visti finora',
+       f:[
+         {r:'cerca i principi', n:'Dentro le modificazioni della nostra mente', d:'chi indaga la storia e fatto della stessa sostanza di chi l\'ha fatta'},
+         {r:'unisce', n:'Filosofia e filologia', d:'il ragionamento sul possibile e lo studio di cio che e effettivamente accaduto',
+          f:[{r:'perche i filosofi', n:'Ragionano senza guardare i documenti', d:'e i filologi raccolgono documenti senza ricavarne principi'}]},
+         {r:'mette in guardia dalla', n:'Boria delle nazioni', d:'ogni popolo si crede il piu antico e inventore di tutto'},
+         {r:'e dalla', n:'Boria dei dotti', d:'attribuire agli antichi le proprie idee, e credere che pensassero come noi',
+          f:[{piu:true, r:'ed e l\'errore', n:'Piu difficile da evitare', d:'perche per capire un antico si usano le categorie di oggi, che sono le uniche che si hanno'}]}
+       ]},
+
+      {r:'descrive', n:'Tre eta', d:'che tornano, e non come un orologio',
+       f:[
+         {r:'l\'eta degli', n:'Dei', d:'gli uomini credono che tutto sia comandato dagli dei, e vivono di auspici'},
+         {r:'l\'eta degli', n:'Eroi', d:'governano poche famiglie nobili che si dicono di stirpe divina, e la forza fa il diritto'},
+         {r:'l\'eta degli', n:'Uomini', d:'si riconosce che tutti hanno la stessa natura, e nascono le leggi uguali'},
+         {r:'a ciascuna corrispondono', n:'Nature, linguaggi e diritti', d:'un modo di essere, un modo di parlare e un modo di regolare i conflitti'},
+         {piu:true, r:'e la barbarie nuova e', n:'Piu fredda', d:'quella dei sensi ammazzava per furore, quella della riflessione lo fa per calcolo'},
+         {r:'e quando la ragione si corrompe', n:'Si ricomincia', d:'la barbarie della riflessione e peggiore di quella dei sensi',
+          f:[{r:'ed e il', n:'Ricorso', d:'non un cerchio identico: una spirale, in cui si torna al punto con altra esperienza'}]}
+       ]},
+
+      {r:'scopre', n:'La logica poetica', d:'ed e forse la sua idea piu originale',
+       f:[
+         {r:'i primi uomini non pensavano', n:'Per concetti astratti', d:'ma per immagini, per corpi, per figure concrete'},
+         {r:'creavano', n:'Caratteri poetici', d:'personaggi in cui si condensa un\'intera classe di cose: Achille e il valore, Ulisse l\'astuzia'},
+         {r:'la metafora non e un ornamento', n:'Ma il primo modo di conoscere', d:'si dice cuore della montagna perche si conosce il proprio corpo prima del mondo'},
+         {r:'quindi il mito non e', n:'Una favola o una menzogna', d:'e il modo in cui un popolo pensa quando non ha ancora concetti'},
+         {r:'e Omero non e un filosofo che nasconde sapienza', n:'E il popolo greco che canta', d:'i poemi sono opera collettiva di una civilta intera',
+          f:[{piu:true, r:'tesi che gli studiosi riprenderanno', n:'Un secolo dopo', d:'la questione omerica moderna comincia, senza saperlo, da qui'}]}
+       ]},
+
+      {r:'usa come documenti', n:'Cio che i popoli hanno lasciato senza volerlo', d:'ed e un metodo nuovo',
+       f:[
+         {r:'le', n:'Lingue', d:'le parole conservano il modo di pensare di chi le ha coniate'},
+         {r:'i', n:'Miti', d:'raccontano storie vere in forma fantastica: sotto le favole c\'e la memoria dei fatti'},
+         {r:'le', n:'Leggi antiche', d:'le formule solenni e i riti giuridici conservano stadi arcaici della societa'},
+         {r:'con l\'', n:'Etimologia', d:'strumento potente e pericoloso: molte delle sue sono sbagliate',
+          f:[{r:'ma il principio resta', n:'Valido', d:'la lingua e un archivio di come si e pensato'}]},
+         {piu:true, r:'e valgono anche i', n:'Proverbi e i modi di dire', d:'sopravvivono per secoli e portano dentro il buon senso di epoche finite'},
+         {r:'perche nessuno di questi documenti', n:'È stato scritto per noi', d:'e per questo non ci mente: non aveva l\'intenzione di dirci niente'}
+       ]},
+
+      {r:'introduce', n:'L\'eterogenesi dei fini', d:'ed e il concetto che spiega come la storia sia nostra e non ci obbedisca',
+       f:[
+         {r:'gli uomini agiscono per', n:'I propri interessi ristretti', d:'nessuno progetta una civilta: si cerca il proprio vantaggio'},
+         {r:'la ferocia, l\'avarizia e l\'ambizione', n:'Distruggerebbero il genere umano', d:'e sono le tre passioni che rovinerebbero tutto se lasciate a se'},
+         {r:'e invece producono', n:'Milizia, mercatanzia e corte', d:'la difesa, il commercio e la politica: le tre cose su cui una societa sta in piedi'},
+         {r:'quindi la storia e fatta dagli uomini', n:'E non e cio che volevano', d:'ed e questa la vera scoperta: le intenzioni non spiegano gli esiti'},
+         {piu:true, r:'e nemmeno i vincitori', n:'Ottengono cio che volevano', d:'i nobili difendono i propri privilegi e finiscono per creare il diritto uguale per tutti'},
+         {r:'e Vico chiama questo', n:'Provvidenza', d:'non un piano imposto da fuori, ma il modo in cui il male privato produce ordine pubblico',
+          f:[{piu:true, r:'la stessa struttura sara detta', n:'Mano invisibile', d:'da Adam Smith cinquant\'anni dopo, e astuzia della ragione da Hegel'}]}
+       ]},
+
+      {r:'viene', n:'Riscoperto tardi', d:'e ogni epoca ci trova cose diverse',
+       f:[
+         {r:'nell\'Ottocento lo traduce', n:'Michelet', d:'che ne fa il fondatore della storia come scienza dei popoli'},
+         {r:'nel Novecento lo rilancia', n:'Croce', d:'come scopritore della storia in quanto forma autonoma di conoscenza'},
+         {r:'gli scrittori lo leggono', n:'Per i corsi e ricorsi', d:'e Joyce costruisce sul suo schema l\'ultimo dei propri romanzi'},
+         {piu:true, r:'e l\'antropologia vi trova', n:'L\'idea di mentalita', d:'popoli diversi non pensano cose diverse: pensano in modi diversi'},
+         {r:'e le scienze umane vi trovano', n:'La legittimazione del proprio metodo', d:'capire dall\'interno e diverso da spiegare dall\'esterno'},
+         {r:'con un limite da riconoscere', n:'La sua ricostruzione e in gran parte sbagliata', d:'le etimologie, la cronologia, i fatti: resta il modo di porre il problema'}
+       ]}
+    ],
+    incroci:[
+      {da:'Il vero e il fatto si convertono', a:'Possiamo avere scienza', r:'e il principio da cui segue che della storia',
+       perche:'Se conoscere davvero significa aver fatto la cosa, allora la natura ci resta esterna e il mondo civile no: leggi, lingue e istituzioni sono opera nostra. Il rovesciamento e completo — la storia diventa il sapere piu accessibile e la fisica quello piu superficiale, esattamente al contrario di come li ordina il senso comune.'},
+      {da:'E non e cio che volevano', a:'Dentro le modificazioni della nostra mente', r:'complica l\'idea che i principi si trovino',
+       perche:'Se la storia fosse la somma delle intenzioni, per conoscerla basterebbe interrogare i protagonisti. Ma gli uomini producono cio che non volevano, quindi guardarsi dentro non basta: bisogna ricostruire il meccanismo per cui le intenzioni si trasformano in altro. Il verum factum regge, ma non nella versione ingenua.'},
+      {da:'Distruggerebbero il genere umano', a:'Milizia, mercatanzia e corte', r:'producono invece',
+       perche:'La ferocia diventa esercito, l\'avarizia diventa commercio, l\'ambizione diventa politica. Le passioni che rovinerebbero l\'umanita, incanalate in istituzioni, la tengono in piedi. È lo schema che Smith chiamera mano invisibile e Hegel astuzia della ragione — e Vico lo formula per primo.'},
+      {da:'È stato scritto per noi', a:'Miti', r:'e la ragione per cui ci si puo fidare dei',
+       perche:'Un mito non e stato composto per informare gli storici: conserva il modo di pensare di chi lo raccontava senza volerlo dire. È lo stesso criterio dei registri parrocchiali e dei registri di leva — le fonti che non hanno intenzioni verso di noi sono quelle che non hanno motivo di ingannarci.'},
+      {da:'Boria dei dotti', a:'Ma il primo modo di conoscere', r:'e cio che impedisce di capire che la metafora sia',
+       perche:'Chi attribuisce agli antichi il proprio modo di pensare legge i miti come allegorie di dottrine filosofiche nascoste. Vico sostiene il contrario: non nascondevano concetti sotto le immagini, pensavano per immagini perche non avevano ancora i concetti. Riconoscerlo richiede di ammettere che si possa pensare in un modo che non e il nostro.'},
+      {da:'E il popolo greco che canta', a:'Caratteri poetici', r:'discende dalla teoria dei',
+       perche:'Se i personaggi epici sono figure in cui una civilta condensa intere classi di comportamenti, non serve un autore geniale che li inventi: sono il deposito di una cultura. Da questa tesi nasce, senza che nessuno lo sappia, la questione omerica moderna — e l\'idea che un\'opera possa avere un popolo per autore.'},
+      {da:'In un italiano difficilissimo', a:'Quasi letto da nessuno', r:'contribuisce al fatto che sia',
+       perche:'La Scienza nuova e densa, allusiva, piena di rinvii interni e di etimologie ardite: richiede al lettore uno sforzo che pochi contemporanei fecero. Un\'opera puo restare inefficace per ragioni che non riguardano il suo valore, e la forma in cui e scritta e una di queste.'},
+      {da:'Etimologia', a:'La sua ricostruzione e in gran parte sbagliata', r:'e uno dei motivi per cui',
+       perche:'Molte etimologie di Vico sono fantasiose, la sua cronologia non regge, e diversi fatti che riporta sono inventati o male attestati. Resta il metodo — leggere nelle lingue il modo di pensare di chi le ha formate — che la linguistica storica confermera con strumenti che lui non aveva.'},
+      {da:'Non e la scienza piu certa', a:'La legittimazione del proprio metodo', r:'e cio che le scienze umane troveranno come',
+       perche:'Le scienze umane rivendicheranno nell\'Ottocento un metodo proprio: comprendere motivazioni e significati invece di stabilire leggi causali. Vico fornisce l\'argomento con un secolo e mezzo di anticipo, e lo fa partendo da una tesi sulla conoscenza, non da una rivendicazione professionale.'},
+      {da:'Si ricomincia', a:'Ricorso', r:'attraverso il',
+       perche:'Quando la ragione si affina troppo e ciascuno pensa solo a se, la societa si dissolve in una barbarie peggiore di quella iniziale, perche fredda e calcolata. Il ricorso non riporta al punto di partenza: riporta a una condizione simile, dopo che si e attraversato tutto. È una spirale, non un cerchio, e Vico insiste su questo.'},
+      {da:'Ragionano senza guardare i documenti', a:'Filosofia e filologia', r:'e il difetto che l\'unione fra',
+       perche:'I filosofi costruiscono sistemi sul possibile senza verificare che cosa sia accaduto; gli eruditi accumulano notizie senza ricavarne principi. Vico propone di fare le due cose insieme — ed e la definizione di che cosa sia una scienza storica, formulata prima che esistesse.'},
+      {da:'Provvidenza', a:'Uomini', r:'porta all\'eta degli',
+       perche:'Nessuno progetta l\'uguaglianza giuridica: nasce dai conflitti fra i nobili che si dicono di stirpe divina e i plebei che pretendono gli stessi diritti. La provvidenza di Vico non e un intervento dall\'alto: e il fatto che quel conflitto produca leggi uguali senza che nessuna delle due parti volesse questo.'},
+      {da:'Piu difficile da evitare', a:'Lingue', r:'riguarda anche il modo in cui leggiamo le',
+       perche:'Per capire come pensasse un popolo antico usiamo le nostre parole, che portano dentro le nostre categorie: e la trappola che Vico chiama boria dei dotti, e non ha una via d\'uscita completa. Si puo solo sapere che c\'e, e diffidare delle interpretazioni che rendono gli antichi troppo simili a noi.'}
+    ]
+  },
+  provocazione: {
+    titolo:'Si conosce solo quello che si fa',
+    durata:'55 minuti',
+    domandaMadre:'Conosciamo meglio cio che abbiamo fatto o cio che osserviamo?',
+    perche:'Vico sostiene che si possa conoscere veramente solo cio che si e fatto: per questo la matematica e certa, perche i numeri li abbiamo costruiti noi, mentre della natura possiamo avere solo osservazione dall\'esterno, perche non l\'abbiamo fatta. E il mondo civile — leggi, lingue, istituzioni — lo abbiamo fatto noi: dunque la storia e il sapere piu accessibile, non il meno. È il rovesciamento esatto della gerarchia dei saperi che tutti danno per scontata. Il colpo di scena e che lo stesso Vico complica la propria tesi: gli uomini fanno la storia e non fanno cio che volevano, e questo cambia che cosa significhi conoscerla.',
+    occorrente:'Niente.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'Una domanda facile.\n\nMettete in ordine questi saperi,\ndal piu certo al meno certo:\n\nla fisica.\nLa matematica.\nLa storia.\n\nQuasi tutti mettono\nla matematica per prima,\nla fisica per seconda,\nla storia per ultima.\n\nNel 1710, a Napoli,\nun professore di retorica\nmalpagato\nmette la storia\nal posto della fisica.\n\nE dà una ragione\nche non e un\'opinione\nsul valore delle materie.\n\nDice: si conosce veramente\nsolo quello che si e fatto.\n\nLa matematica e certa\nperche i numeri\nli abbiamo costruiti noi.\n\nLa natura non l\'abbiamo fatta noi.\n\nMa la storia sì.',
+       parlato:'Fai fare la classifica prima di dare la tesi: serve che sentano che la loro risposta e quella ovvia.\n\nPoi da\' il principio e spiegalo bene, perche e semplice e controintuitivo. Un triangolo lo conosciamo dall\'interno: sappiamo che cosa sia perche lo abbiamo definito noi. Una pietra no: la vediamo cadere, misuriamo il tempo, troviamo una formula, e non sappiamo che cosa sia essere una pietra.\n\nDomanda dell\'ora: e vero che si conosce meglio quello che si e fatto?\n\nRaccogli le prime reazioni. Di solito qualcuno obietta subito che la storia e piena di incertezze e la fisica no. È una buona obiezione e va tenuta per lo schieramento.\n\nSe serve un esempio che chiarisce, usalo: sapete meglio come funziona un motore o come funziona un\'amicizia? La risposta non e ovvia, ed e il tipo di ambiguita che Vico vuole far vedere.',
+       seDicono:[
+         {loro:'«Ma la storia è piena di cose che non sappiamo.»',
+          tu:'Verissimo, e Vico non lo nega: le sue ricostruzioni sono spesso sbagliate. La sua tesi non e che sappiamo tutto della storia — e che di essa possiamo sapere un tipo di cosa che della natura non sapremo mai, cioe perche qualcuno abbia agito cosi.'},
+         {loro:'«Anche i numeri li abbiamo trovati, non inventati.»',
+          tu:'È una posizione seria e antica, e Vico la respinge: per lui punti e linee sono nostre costruzioni, ed e per questo che le dimostrazioni sono perfette. Se invece i numeri esistessero indipendentemente da noi, la sua argomentazione perderebbe la propria base. Tienila da parte: e l\'obiezione piu forte.'}
+       ]},
+
+      {minuti:'8–17', et:'Lo schieramento',
+       schermo:'Fra la fisica e la storia:',
+       opzioni:['la fisica e conoscenza vera, la storia e ricostruzione approssimativa', 'della storia possiamo sapere qualcosa che della natura non sapremo mai'],
+       parlato:'Fai schierare e conta. La prima opzione vince quasi sempre.\n\nPoi metti alla prova con una domanda concreta.\n\nDi\': prendiamo due domande. La prima: perche una pietra lasciata cadere accelera? La seconda: perche i contadini della Vandea hanno combattuto contro un governo che aveva appena abolito i diritti feudali che li opprimevano?\n\nDella prima sappiamo la legge, sappiamo prevedere il fenomeno con enorme precisione, e non sappiamo perche esista la gravita — Newton stesso ha rinunciato a dirlo.\n\nDella seconda non sappiamo prevedere nulla e possiamo ricostruire perche: i preti, la coscrizione, la terra promessa e non data. Possiamo entrare nelle ragioni.\n\nSono due tipi di conoscenza diversi. La prima prevede senza capire; la seconda capisce senza prevedere.\n\nDomanda per la classe: quale delle due chiamereste capire?\n\nNon c\'e una risposta giusta, e la discussione e ottima. E vale la pena far notare che sono gia due lezioni che incontriamo lo stesso nodo: quando abbiamo visto Newton dire di non sapere che cosa sia la gravita.',
+       seDicono:[
+         {loro:'«Ma le ragioni dei contadini possiamo solo immaginarle.»',
+          tu:'In parte, e Vico ha una risposta: possiamo immaginarle perche siamo fatti come loro. Non sapremmo immaginare che cosa provi una pietra; possiamo immaginare che cosa provi qualcuno a cui portano via il figlio per una guerra decisa altrove. La somiglianza fra noi e l\'oggetto e uno strumento conoscitivo.'},
+         {loro:'«E se ci sbagliamo a immaginare?»',
+          tu:'Succede continuamente, ed e la boria dei dotti di cui parla Vico: attribuire agli antichi il nostro modo di pensare. Per questo la comprensione da sola non basta e servono i documenti. Il suo metodo mette insieme le due cose proprio per questo.'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'E qui Vico complica\nla propria tesi.\n\nSe la storia la facciamo noi,\nverrebbe da pensare\nche basti chiedere\na chi l\'ha fatta\nche cosa voleva.\n\nMa Vico osserva questo:\n\ngli uomini agiscono\nper i propri interessi ristretti.\n\nLa ferocia, l\'avarizia,\nl\'ambizione\ndistruggerebbero il genere umano\nse lasciate a se stesse.\n\nInvece producono\nla milizia, il commercio\ne la politica —\nle tre cose su cui\nuna societa sta in piedi.\n\nNessuno ha progettato niente.\n\nQuindi la storia\ne fatta dagli uomini\ne non e cio che volevano.\n\nSappiamo che l\'abbiamo fatta noi,\ne non basta chiedercelo.',
+       parlato:'Costruisci il paradosso con calma: e il centro dell\'ora.\n\nPoi fai riconoscere alla classe che questo concetto lo hanno gia incontrato molte volte quest\'anno, senza avere il nome. Elenca e falli completare:\n\nLudovico il Moro chiama i francesi per una mossa sensata e apre trentacinque anni di dominazione straniera.\n\nLa legge inglese sui salari doveva bloccarli e produce la fine della servitu.\n\nI contadini francesi chiedono i piccioni e le strade, e ne esce la Dichiarazione dei diritti.\n\nBismarck concede le pensioni per indebolire i socialisti, e crea lo Stato sociale.\n\nLa condanna del 1277 vuole chiudere e apre lo spazio del possibile.\n\nÈ sempre la stessa struttura, e Vico e il primo a nominarla.\n\nPoi la formulazione: le intenzioni non spiegano gli esiti. Conoscere la storia non significa raccogliere i progetti dei protagonisti — significa ricostruire il meccanismo per cui i progetti producono altro.\n\nE questa e la risposta alla domanda dell\'ora: la storia si conosce dall\'interno non perche sappiamo che cosa volevamo, ma perche possiamo capire come si passa da un\'intenzione a un risultato che non le somiglia.',
+       seDicono:[
+         {loro:'«Allora non controlliamo niente.»',
+          tu:'Non e questo: le nostre azioni contano eccome, e senza di esse non succederebbe nulla. Quello che non controlliamo e la combinazione delle azioni di tutti. È diverso dal fatalismo — significa che il risultato dipende da noi e non e nostro.'},
+         {loro:'«Vico dice che c\'è la provvidenza però.»',
+          tu:'Usa quella parola, ed e importante capire in che senso. Non intende un intervento che corregge dall\'alto: intende proprio il fatto che dalle passioni private nasca un ordine pubblico. È una spiegazione del meccanismo, con un nome religioso. Cinquant\'anni dopo Smith chiamera la stessa cosa mano invisibile.'}
+       ]},
+
+      {minuti:'28–38', et:'Il testo',
+       schermo:'Dalla Scienza nuova.\n\nVico scrive che questo mondo civile\ne stato fatto dagli uomini,\ne che percio se ne possono\ntrovare i principi\ndentro le modificazioni\ndella nostra stessa mente umana;\n\ne aggiunge che chiunque vi rifletta\ndeve meravigliarsi\ndi come i filosofi\nabbiano dedicato ogni sforzo\na studiare il mondo della natura,\nche essendo stato fatto da Dio\nsolo Dio ne ha scienza,\n\ne abbiano trascurato\ndi meditare su questo mondo\ndelle nazioni,\ndel quale, essendo stato fatto\ndagli uomini,\ngli uomini possono conseguire\nla scienza.\n\nÈ scritto nel 1744,\nnel pieno trionfo\ndella fisica di Newton.',
+       testo:{fonte:'Giambattista Vico, Scienza nuova, § 331 (edizione 1744)',
+              glossa:'Il passo è scritto mentre l\'Europa colta considera la fisica matematica il modello di ogni conoscenza possibile. Vico non nega che la fisica funzioni: nega che sia il tipo di sapere più intimo, perché descrive un oggetto che ci resta esterno. La rivendicazione di una scienza del mondo umano, con un metodo proprio, comincia qui.'},
+       parlato:'Leggi il passo e fai pesare la data: 1744, cinquantasette anni dopo i Principia di Newton, quando tutta l\'Europa colta pensa che la fisica sia il modello di ogni sapere.\n\nUn professore di retorica napoletano che nessuno legge scrive che i filosofi hanno sbagliato oggetto.\n\nPoi la domanda di metodo: che cosa significa trovare i principi dentro le modificazioni della nostra mente?\n\nGuidali. Significa che chi studia la storia e fatto della stessa sostanza di chi l\'ha fatta: possiamo ricostruire come si pensa quando si ha paura, quando si ha fame, quando si comanda, perche quelle condizioni le conosciamo dall\'interno.\n\nÈ uno strumento potente e pericoloso: potente perche nessun fisico puo fare la stessa cosa con una pietra; pericoloso perche porta a proiettare noi stessi sugli altri — la boria dei dotti.\n\nPer questo Vico non si ferma alla comprensione e vuole i documenti: lingue, miti, leggi. La comprensione dall\'interno propone ipotesi; i documenti le controllano.\n\nÈ, con parole diverse, la stessa struttura del metodo che avete visto tutto l\'anno lavorando sulle fonti.',
+       seDicono:[
+         {loro:'«Ma allora chiunque può capire la storia.»',
+          tu:'Chiunque puo cominciare, ed e vero e non e poco: non serve un laboratorio. Ma per controllare le proprie ipotesi servono le lingue, i documenti e il mestiere. La differenza fra un\'impressione e una ricostruzione sta li, ed e la stessa differenza che c\'e in fisica fra un\'intuizione e una misura.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'Adesso guardate\nche cosa e successo\na questo libro.\n\nVico muore nel 1744\nconvinto di aver fallito.\nLa Scienza nuova\nnon e quasi letta da nessuno.\n\nPassano ottant\'anni.\n\nNell\'Ottocento uno storico francese\nlo traduce e lo fa conoscere,\ne la storia comincia a considerarsi\nuna scienza dei popoli\ne non un racconto di re.\n\nNel Novecento le scienze umane\nci trovano la propria carta\nd\'identita: capire dall\'interno\ne un metodo diverso\ndallo spiegare dall\'esterno,\ne non e inferiore.\n\nE un romanziere irlandese\ncostruisce sul suo schema\nl\'ultimo dei propri libri.\n\nMa attenzione:\n\nquasi tutte le sue ricostruzioni\nsono sbagliate.\n\nLe etimologie sono fantasiose,\nla cronologia non regge,\nmolti fatti sono inventati.',
+       parlato:'Dai prima la fortuna postuma, poi il rovescio, e lascia che la classe si trovi davanti al problema.\n\nPoi la domanda dell\'ora: come puo essere importante un libro che ha quasi tutti i contenuti sbagliati?\n\nGuidali alla risposta, che collega a due capitoli gia fatti. Con Bacone abbiamo visto uno che non ha scoperto nulla e ha fondato un modo di organizzare la scienza. Con Bruno abbiamo visto uno che aveva ragione per ragioni sbagliate.\n\nVico e un terzo caso, e diverso da entrambi: ha torto sui fatti e ragione sul modo di porre il problema.\n\nHa sbagliato quasi tutte le etimologie, e ha ragione che le lingue conservino il modo di pensare di chi le ha formate. Ha sbagliato la cronologia dei popoli antichi, e ha ragione che i miti siano documenti e non favole. Ha inventato mezza storia romana arcaica, e ha ragione che le leggi antiche conservino stadi arcaici di societa.\n\nDa qui la distinzione da portare a casa: ci sono contributi che stanno nei risultati e contributi che stanno nelle domande. I primi si correggono e vengono sostituiti; i secondi restano anche quando tutte le risposte sono state cambiate.\n\nÈ per questo che dopo tre secoli lo si legge ancora, e non per sapere che cosa sia successo agli antichi romani.',
+       seDicono:[
+         {loro:'«Ma se sbaglia tutto, come faceva ad avere ragione sul metodo?»',
+          tu:'Perche il metodo e un\'indicazione su dove guardare, e si puo indicare bene un luogo e descrivere male quello che c\'e. Vico dice: le lingue sono un archivio. È vero. Poi apre l\'archivio e legge male i documenti. La prima cosa resta utile a chi sa leggerli meglio.'},
+         {loro:'«E se anche il metodo fosse sbagliato?»',
+          tu:'Ottima domanda, e in parte lo e: l\'idea che tutte le civilta attraversino le stesse tre eta nello stesso ordine non regge, ed e stata abbandonata. Quello che resta e piu ristretto — che il mondo umano si possa conoscere dall\'interno e che i suoi prodotti involontari siano le fonti migliori.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'Torniamo alla domanda.\n\nSi conosce meglio cio che si e fatto\no cio che si osserva?\n\nLa risposta di Vico, corretta\ncon quello che lui stesso aggiunge:\n\ndel mondo umano possiamo capire\nle ragioni, perche siamo\nfatti come chi lo ha fatto;\n\nma non possiamo dedurne\ngli esiti dalle intenzioni,\nperche gli uomini\nproducono quasi sempre\nqualcosa di diverso\nda quello che volevano.\n\nQuindi conoscere la storia\nnon e sapere che cosa\nvolevano i protagonisti.\n\nÈ ricostruire come si passa\nda quello che volevano\na quello che e successo.\n\nÈ esattamente il lavoro\nche abbiamo fatto\ntutto l\'anno.',
+       parlato:'Chiudi ricollegando: nomina tre o quattro casi affrontati durante l\'anno e falli riconoscere come esempi della stessa struttura. È il momento in cui l\'anno si ricompone, e vale la pena prendersi un minuto per farlo bene.\n\nPoi la formulazione finale: Vico da\' il nome al meccanismo che avete usato tutte le volte senza chiamarlo. E il nome non e importante — e importante che sappiate che e una struttura ricorrente e non una serie di casi curiosi.\n\nDa\' loro il criterio: davanti a qualunque vicenda storica, non fermarsi a chiedere che cosa volevano i protagonisti. Chiedersi anche in quale situazione agivano, chi altro agiva contemporaneamente, e che cosa la combinazione ha prodotto.\n\nE aggiungi l\'ultima cosa, che riguarda loro direttamente: vale anche per le vite personali. Quasi nessuno fa quello che aveva progettato di fare. Questo non significa che progettare sia inutile — significa che il progetto e uno degli elementi, non il piano dell\'esito.\n\nChiudi con quello che apre il seguito: Vico scrive contro Cartesio, e Cartesio e il capitolo che ci manca. Nel prossimo blocco torniamo indietro di un secolo, all\'uomo che decide di mettere in dubbio tutto — perfino di avere un corpo — per vedere se resti qualcosa in piedi.',
+       seDicono:[
+         {loro:'«Allora la storia non insegna niente, se le cose vanno sempre diversamente.»',
+          tu:'Insegna una cosa precisa e utile: come si combinano le azioni di molte persone che non si coordinano. Non ti da\' ricette e ti da\' schemi ricorrenti — la repressione che rafforza, la concessione che nasce dalla paura, il conflitto che produce regole. Riconoscerli in tempo e l\'unico vantaggio che offre, e non e piccolo.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'Omero non è mai esistito',
+       corpo:'Vico sostiene che Omero non sia stato un uomo ma il popolo greco stesso: i poemi sarebbero il deposito di una civiltà intera, composti e trasmessi oralmente da generazioni di cantori.\n\nLa sua prova è interna: i poemi contengono contraddizioni, ripetizioni formulari e stadi diversi di lingua e di costume, difficili da attribuire a un solo autore.\n\nUn secolo dopo la filologia tedesca aprirà su basi documentarie la stessa questione, senza sapere che Vico l\'aveva posta.',
+       chiedi:'Una tesi giusta formulata con argomenti deboli, e ritrovata un secolo dopo da chi non l\'aveva letta. Che cosa serve perché un\'intuizione diventi una scoperta riconosciuta? E quante idee, secondo voi, vengono pensate più volte prima di essere ascoltate?'},
+      {titolo:'La boria dei dotti',
+       corpo:'Vico chiama «boria delle nazioni» la convinzione di ogni popolo di essere il più antico e di aver inventato tutto; e «boria dei dotti» la tendenza degli studiosi ad attribuire agli antichi le proprie idee, leggendo nei miti dottrine filosofiche raffinate.\n\nContro la seconda sostiene che i primi uomini non nascondessero concetti sotto le immagini: pensavano per immagini, perché non avevano concetti.\n\nAmmette però che l\'errore sia quasi inevitabile, perché per capire un antico si usano le categorie che si hanno.',
+       chiedi:'Un errore che si riconosce e non si può evitare del tutto. Che cosa si può fare, allora? E riuscite a pensare a un caso in cui avete attribuito a qualcuno — un autore, una persona di un\'altra epoca o cultura — un modo di pensare che era il vostro?'},
+      {titolo:'Le tre passioni',
+       corpo:'Vico osserva che la ferocia, l\'avarizia e l\'ambizione, che gettano fuori strada il genere umano e sarebbero capaci di distruggerlo, producono invece la milizia, la mercatanzia e la corte: cioè la forza, la ricchezza e la sapienza politica su cui si reggono le repubbliche.\n\nLo chiama opera della provvidenza, intendendo non un intervento esterno ma il modo in cui i vizi privati si trasformano in ordine pubblico.\n\nCinquant\'anni dopo Adam Smith parlerà di mano invisibile; Hegel, di astuzia della ragione.',
+       chiedi:'Tre autori diversi descrivono lo stesso meccanismo e gli danno tre nomi molto diversi — provvidenza, mano invisibile, astuzia della ragione. Che cosa cambia, secondo voi, a seconda del nome scelto? E il meccanismo funziona sempre, o esistono casi in cui i vizi privati producono soltanto danni?'}
+    ],
+    testi:[
+      {fonte:'Giambattista Vico, De antiquissima Italorum sapientia (1710) — il verum factum',
+       corpo:'Vico afferma che il vero e il fatto si convertono, e che perciò Dio conosce la natura perché l\'ha creata, mentre l\'uomo conosce con certezza la matematica perché ne costruisce egli stesso gli elementi.',
+       glossa:'È il principio da cui tutto discende, ed è formulato quattordici anni prima della Scienza nuova. Va notato che nasce come argomento contro Cartesio: se la chiarezza dell\'idea bastasse a garantirne la verità, non si spiegherebbe perché la matematica sia certa e la fisica no. Vico sposta il criterio dalla mente all\'origine dell\'oggetto.'},
+      {fonte:'Giambattista Vico, Scienza nuova, § 1108 — la conclusione dell\'opera',
+       corpo:'Vico conclude che questa scienza porta con sé lo studio della pietà, e che chi non è pio non può essere veramente saggio; e afferma che dalle passioni degli uomini, tutti intenti alla propria utilità particolare, la provvidenza ha tratto gli ordini civili per cui vivono in società umana.',
+       glossa:'La chiusa mostra che per Vico la spiegazione del meccanismo non toglie nulla al carattere religioso della sua visione: la provvidenza agisce attraverso le passioni, non contro di esse. È un modo di tenere insieme una lettura causale della storia e una lettura religiosa, e vale la pena discutere in classe se le due cose reggano davvero insieme.'},
+      {fonte:'Giambattista Vico, Autobiografia (1725-28)',
+       corpo:'Vico racconta la propria formazione come una serie di studi solitari, condotti lontano dalle scuole e dalle mode del tempo, e presenta il proprio isolamento come la condizione che gli ha permesso di pensare cose che altri non pensavano.',
+       glossa:'È una delle prime autobiografie intellettuali moderne, e va letta con cautela: costruisce a posteriori un percorso coerente da una vita fatta anche di occasioni mancate e concorsi persi. La rivendicazione dell\'isolamento come vantaggio è insieme sincera e consolatoria.'}
+    ],
+    compito:'Mezza pagina. Ricostruite una vicenda della vostra vita, anche piccola, in cui il risultato è stato diverso da quello che avevate progettato — non per sfortuna, ma perché si sono combinate le azioni di più persone. Descrivete che cosa voleva ciascuno. Poi rispondete alla domanda di Vico: guardando solo le intenzioni, qualcuno avrebbe potuto prevedere l\'esito? E se no, che cosa avrebbe dovuto guardare invece?',
+    fonti:[
+      'G. Vico, La scienza nuova (1744); De antiquissima Italorum sapientia (1710); Autobiografia',
+      'B. Croce, La filosofia di Giambattista Vico',
+      'I. Berlin, Vico e Herder',
+      'P. Rossi, Le sterminate antichità; N. Badaloni, Introduzione a Vico',
+      'E. Auerbach, Vico e l\'interpretazione storicistica',
+      'J. Michelet, traduzione e presentazione della Scienza nuova (1827)'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',
