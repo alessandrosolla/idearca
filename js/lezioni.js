@@ -7779,6 +7779,230 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Storia moderna · 9 — La prima rivoluzione industriale': {
+  mappa: {
+    n:'La prima rivoluzione industriale', d:'il momento in cui la ricchezza comincia a crescere e non si ferma piu',
+    f:[
+      {r:'comincia dalla domanda', n:'Perche proprio in Inghilterra', d:'e non c\'e una risposta sola: sono condizioni che si tengono',
+       f:[
+         {r:'ha', n:'Carbone a poca profondita', d:'e spesso vicino ai corsi d\'acqua: costa poco estrarlo e poco trasportarlo'},
+         {r:'ha', n:'Colonie e mercati', d:'dove comprare materie prime e vendere tessuti, protetti dalla flotta'},
+         {r:'ha', n:'Denaro a buon mercato', d:'l\'eredita del debito garantito dal parlamento: si finanzia chi vuole investire'},
+         {r:'ha un\'agricoltura', n:'Gia trasformata', d:'rotazioni e recinzioni: piu cibo con meno braccia'},
+         {r:'quindi ha', n:'Manodopera disponibile', d:'chi ha perso l\'accesso alle terre comuni deve cercare un salario'},
+         {r:'e ha', n:'Brevetti e mercato interno unico', d:'chi inventa puo guadagnarci, e non ci sono dazi fra contea e contea',
+          f:[{piu:true, r:'ma gli storici avvertono che', n:'Nessun fattore basta da solo', d:'il carbone c\'era anche in Cina: contano le condizioni tutte insieme'}]}
+       ]},
+
+      {r:'parte dal', n:'Cotone', d:'una fibra nuova, senza corporazioni che la difendano',
+       f:[
+         {r:'con la', n:'Spola volante', d:'1733: si tesse il doppio, e la filatura non tiene il passo'},
+         {r:'poi la', n:'Giannetta di Hargreaves', d:'un operaio fa girare otto fusi invece di uno'},
+         {r:'poi il', n:'Filatoio idraulico di Arkwright', d:'troppo grande per una casa: e questa macchina a creare la fabbrica'},
+         {r:'poi il', n:'Mule di Crompton', d:'unisce i due sistemi e produce un filo fine e resistente'},
+         {r:'e infine il', n:'Telaio meccanico', d:'la tessitura raggiunge la filatura, e i tessitori a mano sono finiti'},
+         {r:'si sceglie il cotone perche', n:'Nessuna regola lo protegge', d:'la lana aveva secoli di corporazioni e leggi; il cotone no',
+          f:[{piu:true, r:'e la domanda e', n:'Elastica', d:'abbassando il prezzo si vende molto di piu: e cio che rende utile produrre in massa'}]}
+       ]},
+
+      {r:'si regge sulla', n:'Forza motrice', d:'senza la quale tutto resta legato ai fiumi',
+       f:[
+         {r:'nel 1712 la macchina di', n:'Newcomen', d:'serve a pompare l\'acqua fuori dalle miniere: consuma moltissimo e non importa'},
+         {r:'nel 1769 Watt aggiunge il', n:'Condensatore separato', d:'si smette di raffreddare e riscaldare lo stesso cilindro: il consumo crolla'},
+         {r:'nel 1781 arriva il', n:'Moto rotativo', d:'da qui la macchina puo far girare qualunque cosa, non solo pompare',
+          f:[{r:'e la fabbrica', n:'Si stacca dal fiume', d:'si costruisce dove conviene, cioe vicino al carbone e alle citta'}]},
+         {r:'e serve', n:'Ferro in quantita', d:'per macchine, rotaie, ponti: la siderurgia diventa il collo di bottiglia',
+          f:[{r:'risolto da Darby con il', n:'Coke al posto del carbone di legna', d:'i boschi non bastavano piu'},
+             {piu:true, r:'e da Cort con il', n:'Puddellaggio', d:'ferro dolce lavorabile in quantita industriale'}]}
+       ]},
+
+      {r:'crea un luogo nuovo', n:'La fabbrica', d:'e la novita non e la macchina, e l\'orologio',
+       f:[
+         {r:'prima si lavorava', n:'A domicilio', d:'nei tempi propri, con le pause che si volevano, tutta la famiglia insieme'},
+         {r:'ora si entra e si esce', n:'A ore fisse', d:'cancelli chiusi, campana, multe per il ritardo'},
+         {r:'con una', n:'Disciplina del tempo', d:'e la trasformazione piu profonda: il tempo diventa una cosa che si vende'},
+         {r:'lavorano molto', n:'Donne e bambini', d:'costano meno, hanno mani piccole, e si oppongono meno'},
+         {r:'le condizioni sono', n:'Documentate dalle inchieste', d:'commissioni parlamentari che raccolgono testimonianze a decine'},
+         {r:'e nascono le prime', n:'Leggi di fabbrica', d:'1833: limiti d\'orario per i bambini, e ispettori che devono verificare',
+          f:[{piu:true, r:'la novita vera sono gli', n:'Ispettori', d:'una legge senza chi la controlli era gia stata scritta, e non era servita'}]}
+       ]},
+
+      {r:'si allarga con i', n:'Trasporti', d:'perche produrre di piu non serve se non si puo spostare',
+       f:[
+         {r:'prima i', n:'Canali', d:'trasportare carbone via acqua costa una frazione che su strada'},
+         {r:'poi la', n:'Ferrovia', d:'1830, Liverpool-Manchester: la prima linea pensata per passeggeri e merci insieme'},
+         {r:'che riduce', n:'Tempi e costi insieme', d:'settimane diventano giorni, e le merci pesanti diventano trasportabili'},
+         {r:'obbliga a un', n:'Orario unico', d:'i paesi avevano ognuno la propria ora solare: i treni impongono di sincronizzarla'},
+         {piu:true, r:'e nasce il', n:'Viaggio per tutti', d:'terza classe obbligatoria per legge dal 1844: per la prima volta i poveri si spostano'},
+         {r:'e porta con se il', n:'Telegrafo', d:'posato lungo i binari per la sicurezza, diventa la prima rete di notizie istantanee'}
+       ]},
+
+      {r:'produce una', n:'Societa nuova', d:'con problemi che nessuno aveva mai affrontato',
+       f:[
+         {r:'le citta crescono', n:'Piu in fretta di quanto si possa costruire', d:'Manchester passa da venticinquemila a trecentomila abitanti in un secolo'},
+         {r:'senza', n:'Fogne ne acqua pulita', d:'e arrivano tifo e colera, che colpiscono anche i quartieri ricchi'},
+         {r:'si formano le', n:'Classi', d:'chi possiede le macchine e chi vende il proprio tempo: e una divisione nuova'},
+         {r:'i tessitori a mano rispondono con il', n:'Luddismo', d:'1811-16: distruggono i telai, e vengono impiccati o deportati',
+          f:[{r:'ma non odiavano le macchine', n:'Odiavano quelle usate contro di loro', d:'chiedevano regole sull\'uso, non l\'abolizione della tecnica'}]},
+         {r:'poi arriva il', n:'Cartismo', d:'la prima organizzazione operaia di massa: chiede il voto, non il pane'},
+         {piu:true, r:'e nasce una', n:'Cultura operaia', d:'societa di mutuo soccorso, cooperative, biblioteche popolari: ci si organizza prima di essere legali'},
+         {r:'e i sindacati', n:'Da reato a istituzione', d:'vietati nel 1799, tollerati dal 1824, riconosciuti nella seconda meta del secolo'}
+       ]},
+
+      {r:'apre un dibattito su', n:'Se si stesse meglio o peggio', d:'ed e la questione piu studiata di tutta la storia economica',
+       f:[
+         {r:'la produzione', n:'Cresce in modo enorme', d:'su questo non discute nessuno'},
+         {r:'ma i salari reali', n:'Restano fermi per due generazioni', d:'cominciano a salire davvero solo dopo il 1840-50'},
+         {r:'e la statura media', n:'Cala', d:'chi nasce fra il 1820 e il 1850 e piu basso dei padri: misurato sulle reclute'},
+         {r:'nelle citta industriali la vita media', n:'Scende sotto i trent\'anni', d:'contro i quaranta e passa delle campagne'},
+         {r:'quindi il paese diventa ricco', n:'Mentre chi ci vive sta peggio', d:'ed e la cosa piu difficile da tenere in testa'},
+         {piu:true, r:'e quando migliora', n:'Non e per la crescita', d:'ma per leggi, sindacati e fognature: cioe per come la crescita viene distribuita'}
+       ]},
+
+      {r:'cambia', n:'Gli equilibri del mondo', d:'e la distanza fra i continenti diventa incolmabile',
+       f:[
+         {r:'l\'Europa supera l\'Asia con la', n:'Grande divergenza', d:'nel 1750 India e Cina producevano piu manufatti dell\'Europa'},
+         {r:'l\'India viene', n:'Deindustrializzata', d:'dazi sui tessuti indiani in Inghilterra, cotone inglese libero in India'},
+         {r:'il cotone arriva dalle', n:'Piantagioni schiaviste', d:'la fabbrica libera di Manchester e alimentata dal lavoro forzato americano',
+          f:[{piu:true, r:'tanto che la guerra civile americana provoca la', n:'Carestia del cotone', d:'1861-65: le fabbriche inglesi si fermano e centomila operai restano senza lavoro'}]},
+         {piu:true, r:'e comincia anche', n:'L\'uso massiccio del carbone', d:'la prima immissione di anidride carbonica su scala industriale: l\'inizio di un altro conto'},
+         {r:'e comincia la', n:'Crescita continua', d:'per la prima volta il prodotto per abitante cresce di generazione in generazione',
+          f:[{r:'cosa mai vista prima', n:'In diecimila anni', d:'fino ad allora si oscillava attorno a un livello, senza salire'}]}
+       ]}
+    ],
+    incroci:[
+      {da:'Manodopera disponibile', a:'Mentre chi ci vive sta peggio', r:'e la ragione per cui si accetta di lavorare',
+       perche:'Chi ha perso l\'accesso ai campi comuni non sceglie fra campagna e fabbrica: sceglie fra fabbrica e niente. Le condizioni della fabbrica non dovevano essere buone, dovevano essere migliori dell\'alternativa — ed e per questo che la gente ci andava pur stando peggio dei propri genitori.'},
+      {da:'Denaro a buon mercato', a:'Nessun fattore basta da solo', r:'e uno dei tanti elementi che confermano che',
+       perche:'Il credito a basso costo, eredita del debito garantito dal parlamento, permette di finanziare macchine e canali. Ma da solo non spiega nulla: l\'Olanda aveva tassi ancora migliori e non ebbe la rivoluzione industriale. Le spiegazioni a un fattore solo, in questo caso, sono tutte sbagliate.'},
+      {da:'Filatoio idraulico di Arkwright', a:'A ore fisse', r:'e cio che impone di lavorare',
+       perche:'Una macchina troppo grande per stare in casa obbliga a radunare i lavoratori in un edificio, e un edificio pieno di macchine mosse dalla stessa forza obbliga a farle partire tutte insieme. L\'orario di lavoro non nasce da una scelta padronale: nasce dalla forma della macchina, e diventa poi uno strumento di comando.'},
+      {da:'Disciplina del tempo', a:'Orario unico', r:'trova il suo compimento nell\'',
+       perche:'Prima ogni citta aveva la propria ora solare e la differenza non dava fastidio a nessuno. La fabbrica insegna a misurare il tempo in minuti, la ferrovia obbliga a misurarlo allo stesso modo ovunque. In due generazioni il tempo passa dall\'essere un fatto locale all\'essere una convenzione nazionale.'},
+      {da:'Odiavano quelle usate contro di loro', a:'Da reato a istituzione', r:'e la richiesta che troverà strada solo quando i sindacati passeranno',
+       perche:'I luddisti chiedevano regole sull\'uso delle macchine e sui salari, cioe esattamente cio che i sindacati otterranno per via legale mezzo secolo dopo. La differenza non e nelle richieste ma negli strumenti disponibili: quando l\'associazione operaia era un reato, restava solo il martello.'},
+      {da:'Cala', a:'Cresce in modo enorme', r:'contraddice il fatto che la produzione',
+       perche:'La statura media misura la nutrizione e la salute nei primi anni di vita, e chi nasce nel pieno della crescita industriale e piu basso dei propri genitori. È il dato piu duro contro l\'idea che la ricchezza di un paese si traduca da sola in benessere di chi ci abita.'},
+      {da:'Non e per la crescita', a:'Ispettori', r:'passa anche per cose minime come gli',
+       perche:'Il miglioramento arriva quando compaiono leggi applicate, sindacati legali e fognature. Il dettaglio piu istruttivo e che la legge del 1833 funziona non perche fissa limiti — quelli erano gia stati scritti — ma perche crea qualcuno il cui mestiere e andare a controllare.'},
+      {da:'Piantagioni schiaviste', a:'Nessuna regola lo protegge', r:'riforniscono la fibra scelta perche',
+       perche:'Il cotone viene preferito alla lana perche nessuna corporazione lo difende, ed e coltivato dove nessun diritto difende chi lo raccoglie. La stessa assenza di regole che rende il cotone conveniente in Inghilterra lo rende conveniente in Alabama: e una sola filiera, non due mondi separati.'},
+      {da:'Deindustrializzata', a:'Colonie e mercati', r:'e il rovescio di cio che significa avere',
+       perche:'L\'India produceva i tessuti di cotone piu pregiati del mondo. Dazi altissimi sui suoi prodotti in Inghilterra e ingresso libero per quelli inglesi in India ribaltano il rapporto in due generazioni. Il mercato coloniale non e solo uno sbocco: e un mercato in cui si scrivono le regole.'},
+      {da:'Fogne ne acqua pulita', a:'Scende sotto i trent\'anni', r:'e la causa principale per cui la vita media',
+       perche:'Non uccide la fabbrica, uccide la citta: acqua contaminata, case sovraffollate, nessuno smaltimento. Il colera colpisce anche i quartieri ricchi, ed e questo — piu della pieta — a far arrivare i primi grandi lavori pubblici sanitari.'},
+      {da:'In diecimila anni', a:'Grande divergenza', r:'e cio che rende possibile la',
+       perche:'Prima della rivoluzione industriale ogni societa oscillava attorno a un livello di reddito: si cresceva e poi si tornava indietro. Da qui una parte del mondo comincia a salire in modo continuo e le altre no, e in un secolo si apre un divario che nessuna guerra e nessuna conquista avevano mai prodotto.'},
+      {da:'Ferro in quantita', a:'Ferrovia', r:'e la condizione della',
+       perche:'Una linea ferroviaria consuma quantita di ferro che prima non esistevano al mondo. La sequenza va tenuta nell\'ordine: prima il coke e il puddellaggio rendono il ferro abbondante e a buon mercato, poi diventa pensabile posare migliaia di chilometri di rotaie. La tecnica abilita, non decide.'},
+      {da:'Cartismo', a:'Classi', r:'e il primo movimento che nasce dalla coscienza delle',
+       perche:'I cartisti non chiedono pane o salari ma il diritto di voto, il voto segreto, l\'indennita ai deputati. È il passaggio dalla protesta alla politica: si smette di domandare a chi comanda e si chiede di poter decidere chi comanda.'}
+    ]
+  },
+  provocazione: {
+    titolo:'Quando un paese diventa ricco',
+    durata:'55 minuti',
+    domandaMadre:'Quando un paese diventa piu ricco, chi diventa piu ricco?',
+    perche:'Fra il 1780 e il 1850 la produzione inglese cresce come non era mai successo, e la gente che ci vive sta peggio: i salari reali restano fermi per due generazioni, la vita media a Manchester scende sotto i trent\'anni, e la statura degli inglesi nati in quei decenni cala rispetto a quella dei padri. La classe deve tenere insieme due cose che sembrano incompatibili — il paese si arricchisce, chi ci abita si impoverisce — e capire perche la gente andasse comunque in fabbrica. Il colpo di scena e che il miglioramento, quando arriva, non viene dalla crescita ma da come la crescita e stata distribuita: leggi applicate, sindacati legali, fognature. Settant\'anni, e molto conflitto.',
+    occorrente:'Niente.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'Inghilterra, fra il 1780 e il 1850.\n\nLa produzione di cotone\ncresce di oltre cinquanta volte.\nLa produzione di ferro\ndi oltre venti.\nNascono le ferrovie,\nle fabbriche, le grandi citta.\n\nÈ il paese piu ricco del mondo.\n\nNegli stessi anni:\n\ni salari reali di un operaio\nrestano quasi fermi\nper due generazioni;\n\na Manchester la vita media\nscende attorno ai ventisei anni,\ncontro i quaranta e passa\ndelle campagne;\n\ne gli uomini nati fra il 1820 e il 1850\nsono piu bassi dei loro padri.\n\nIl paese diventa ricchissimo.\nLa gente che ci vive\nsta peggio di prima.',
+       parlato:'Dai prima i numeri della crescita, poi quelli delle persone, e lascia il silenzio.\n\nSulla statura serve una parola di spiegazione, perche e il dato che colpisce di piu e sembra strano: l\'altezza da adulti dipende soprattutto da come si e mangiato e da quante malattie si sono avute nei primi anni di vita. È una misura fisica del benessere infantile, ed e uno dei dati piu solidi che abbiamo, perche l\'esercito misurava tutte le reclute.\n\nPoi la domanda dell\'ora: come stanno insieme queste due cose?\n\nRaccogli le prime ipotesi. Di solito arrivano subito «i padroni si prendevano tutto» — che e in parte vero e non spiega abbastanza. Non correggere ancora.\n\nE aggiungi la domanda che apre tutto: se in fabbrica si stava cosi male, perche ci andavano?',
+       seDicono:[
+         {loro:'«Saranno numeri sbagliati.»',
+          tu:'Su alcuni si discute ancora — i salari reali dipendono da come si calcolano i prezzi. Su altri no: la statura delle reclute e misurata, la mortalita e nei registri. Quando i dati litigano fra loro conviene guardare quelli che nessuno raccoglieva per vincere una discussione.'},
+         {loro:'«Perche non tornavano in campagna?»',
+          tu:'Tienila, e la domanda giusta, e ci arriviamo. Anticipo solo che per moltissimi non c\'era una campagna a cui tornare: la terra da cui venivano non era piu accessibile.'}
+       ]},
+
+      {minuti:'8–17', et:'La fonte',
+       schermo:'1832. Una commissione\ndel parlamento inglese\ninterroga chi lavora nelle fabbriche.\n\nUn testimone racconta\ndi aver cominciato a sei anni.\n\nDice che nei periodi di lavoro intenso\nsi entrava alle cinque del mattino\ne si usciva alle nove di sera,\ncon un intervallo di quaranta minuti\na mezzogiorno.\n\nAlla domanda se i bambini\nriuscissero a reggere quel ritmo,\nrisponde di no,\ne che venivano tenuti svegli\ne al lavoro con le cinghie.\n\nAlla domanda sulle conseguenze,\nrisponde che le proprie figlie\nne portano i segni nelle ossa.\n\nTre domande su questo documento.\n\nChi lo ha voluto?\nChe cosa ammette senza volerlo?\nChe cosa non dice?',
+       testo:{fonte:'Commissione parlamentare sul lavoro dei fanciulli nelle fabbriche, Regno Unito, 1832 (Sadler Committee)',
+              glossa:'La commissione fu voluta da chi sosteneva una legge sulla riduzione dell\'orario, e i testimoni furono scelti da quella parte: gli imprenditori contestarono subito il metodo e ottennero l\'anno seguente una seconda inchiesta, condotta diversamente. Il quadro complessivo delle due indagini regge; la prima e una fonte orientata, ed e utile in classe proprio per questo.'},
+       parlato:'Fai lavorare in coppia, cinque minuti, poi raccogli.\n\nSulla prima: la commissione la vogliono i sostenitori di una legge, e scelgono loro chi far parlare. Fai notare la conseguenza senza svalutare le testimonianze: sono probabilmente vere e sono selezionate. È una fonte con uno scopo.\n\nSulla seconda: il documento ammette, senza dirlo, che tutto questo era legale. Non si sta denunciando una violazione — si sta chiedendo di vietare cio che nessuna legge vietava. Se serve un\'inchiesta parlamentare per fermarlo, vuol dire che era normale.\n\nSulla terza, che e la piu difficile: non dice perche quelle famiglie mandassero i figli in fabbrica. La commissione non lo chiede, perche non le interessa. E quella e la domanda che apre tutto il resto — spesso erano i genitori a portarceli, perche il salario del padre non bastava.\n\nUltima osservazione da fare, ed e di metodo: una testimonianza raccolta per sostenere una tesi non e per questo falsa. Va letta sapendo chi l\'ha chiamata a parlare e che cosa non le e stato chiesto.',
+       seDicono:[
+         {loro:'«Se era di parte non vale.»',
+          tu:'Vale, ma su cose diverse. Vale come prova che quelle condizioni esistevano, perche i fatti descritti trovarono riscontro anche nella seconda inchiesta, voluta dalla parte avversa. Non vale come misura di quanto fossero diffusi: per quello servono i dati, non le testimonianze scelte.'},
+         {loro:'«I genitori li portavano? Erano complici allora.»',
+          tu:'Attento a giudicare senza guardare le alternative. Un salario adulto spesso non bastava a nutrire una famiglia; il bambino che lavorava era la differenza fra mangiare e non mangiare. Non e complicita: e la scelta meno peggiore in una serie di scelte tutte cattive.'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'Perche ci andavano.\n\nNel secolo precedente,\nmigliaia di leggi private\navevano recintato\ni campi aperti e le terre comuni.\n\nChi non aveva un titolo scritto\nperse il diritto di far pascolare\nun animale, raccogliere legna,\nspigolare dopo il raccolto.\n\nQuei diritti non valevano molto.\nValevano la differenza\nfra tirare avanti e non farcela.\n\nQuindi la scelta\nnon era fra campagna e fabbrica.\n\nEra fra fabbrica e niente.\n\nUn posto puo essere\ninsopportabile\ned essere comunque\nla cosa migliore disponibile.\n\nÈ per questo che ci andavano.\nE per questo che restavano.',
+       parlato:'Ricostruisci il ragionamento lentamente, perche e il passaggio che smonta la spiegazione facile.\n\nInsisti sul punto: le condizioni della fabbrica non dovevano essere buone. Dovevano essere migliori dell\'alternativa. E l\'alternativa, per chi era stato espulso dalla terra, non era la campagna di prima — era la miseria senza salario.\n\nPoi la formulazione da portare a casa: il fatto che qualcuno accetti una condizione non dimostra che quella condizione sia accettabile. Dimostra solo che le altre erano peggiori.\n\nE fai fare l\'esercizio inverso, che di solito li interessa: quando oggi si dice che nessuno obbliga qualcuno a fare un certo lavoro, che cosa bisognerebbe verificare prima di considerarlo un argomento?\n\nRaccogli, e da\' il criterio: bisogna guardare quali alternative reali aveva quella persona. Una scelta senza alternative e una scelta solo nel nome.',
+       seDicono:[
+         {loro:'«Ma allora le recinzioni sono la causa di tutto.»',
+          tu:'Sono una causa importante e non l\'unica: c\'era anche una popolazione che cresceva molto in fretta, quindi piu gente per la stessa terra. Le due cose insieme producono l\'esodo. Attento sempre alla spiegazione a un fattore solo, in questo capitolo piu che altrove.'},
+         {loro:'«Nessuno li obbligava, comunque.»',
+          tu:'Nessuno con la forza, ed e vero. Ma prova a definire l\'obbligo in modo utile: se le uniche alternative sono lavorare a quelle condizioni o non mangiare, la parola «libera scelta» descrive ancora bene la situazione? Non ti chiedo di rispondere subito. Chiediti che cosa dovresti sapere per rispondere.'}
+       ]},
+
+      {minuti:'28–38', et:'La seconda fonte',
+       schermo:'Il primo documento\nera una testimonianza,\nraccolta da chi voleva\nottenere una legge.\n\nQuesto non e una testimonianza.\nÈ una misura.\n\nL\'esercito britannico\nmisurava l\'altezza\ndi tutte le reclute,\nper sapere se erano idonee.\nLo faceva da decenni,\nper motivi suoi.\n\nMettendo in fila quei registri\nsi vede una cosa\nche nessuno stava cercando:\n\ngli uomini nati fra il 1820 e il 1850\nsono piu bassi\ndi quelli nati prima,\ne quelli cresciuti nelle citta\nindustriali sono i piu bassi di tutti.\n\nL\'altezza da adulti dipende\nda come si e mangiato\ne da quante malattie si sono avute\nnei primi anni di vita.\n\nNessuno voleva dirci niente.\nLo dice il metro.',
+       testo:{fonte:'Registri antropometrici di leva e di reclutamento britannici, XVIII-XIX secolo (studi di storia antropometrica)',
+              glossa:'La statura media di una popolazione è considerata un indicatore del benessere nei primi anni di vita: nutrizione, malattie, carico di lavoro infantile. I registri militari sono la fonte più continua che esista, e furono compilati per stabilire l\'idoneità delle reclute, non per misurare la povertà. Restano cautele — riguardano solo maschi e solo chi si presentava — e la tendenza è confermata da fonti diverse.'},
+       parlato:'Fai il confronto esplicito fra le due fonti, perche e l\'esercizio della lezione.\n\nLa prima e una testimonianza: racconta, e chi l\'ha raccolta voleva ottenere qualcosa. Ci dice come si viveva, e non ci dice quanto fosse diffuso.\n\nLa seconda e una misura: un numero scritto da un sergente che voleva solo sapere se un ragazzo era abbastanza alto per l\'esercito. Non racconta niente e non ha nessuno scopo da difendere.\n\nDomanda: quale delle due e piu affidabile?\n\nGuidali a non rispondere in blocco. La misura e piu affidabile sulle tendenze generali; la testimonianza e insostituibile per sapere che cosa significasse, per una persona, entrare in fabbrica a sei anni. Una risponde alla domanda «quanto», l\'altra alla domanda «come era».\n\nPoi il punto piu importante: la seconda fonte conferma la prima. Se avessimo solo le testimonianze di parte, potremmo dubitare. Le due insieme reggono — ed e cosi che si lavora davvero, incrociando documenti che non hanno gli stessi difetti.',
+       seDicono:[
+         {loro:'«Magari erano più bassi per altri motivi.»',
+          tu:'Obiezione seria, e va posta sempre. Gli storici hanno controllato le alternative: non e un cambio di popolazione, e la tendenza si inverte dopo il 1850, quando arrivano fognature e salari migliori. Quando un dato sale e scende insieme a cause plausibili, la spiegazione si rafforza.'},
+         {loro:'«Misuravano solo i maschi che si arruolavano.»',
+          tu:'Verissimo, ed e il limite principale di questa fonte: non sappiamo nulla delle donne e sappiamo poco di chi non si presentava. Averlo notato da soli e esattamente cio che si chiede a chi legge un documento. La tendenza regge perche compare anche in altre serie, ma la cautela resta.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'E allora, quando migliora?\n\nDalla meta dell\'Ottocento\ni salari reali cominciano\na salire davvero,\nla statura torna a crescere,\nla vita media si allunga.\n\nMa non succede\nperche la crescita continua.\n\nSuccede perche arrivano,\nnello stesso trentennio:\n\nleggi di fabbrica con ispettori\nche vanno a controllare;\n\nsindacati che smettono\ndi essere un reato;\n\nfognature, acquedotti,\nservizi sanitari municipali;\n\ne il diritto di voto\nche si allarga per gradi.\n\nCioe: il benessere non e arrivato\ndalla ricchezza.\n\nÈ arrivato da come\nla ricchezza e stata distribuita —\ne per ottenerlo\nci sono voluti settant\'anni\ne parecchio conflitto.',
+       parlato:'Costruisci l\'elenco lentamente, aggiungendo un elemento per volta.\n\nPoi la formulazione centrale, ed e la cosa da portare a casa: la crescita economica crea la possibilita del benessere, non il benessere. Fra le due cose ci sono le istituzioni, le leggi e i rapporti di forza. Per settant\'anni la ricchezza c\'era e non arrivava a chi la produceva.\n\nSii preciso su un punto, perche altrimenti la lezione diventa uno slogan: senza quella crescita, non ci sarebbe stato niente da distribuire. Le due cose servono entrambe. Chi dice che basta crescere sbaglia; chi dice che la crescita non conta sbaglia allo stesso modo.\n\nPoi il dettaglio piu istruttivo di tutti, ed e minuscolo: la legge del 1833 funziona non perche fissa dei limiti — quelli erano gia stati scritti in leggi precedenti, rimaste lettera morta — ma perche istituisce degli ispettori, cioe persone pagate per andare a vedere. Erano quattro per tutto il regno, ed era comunque piu di zero.\n\nSe la classe regge, aggiungi l\'altra faccia: il cotone che alimentava le fabbriche inglesi veniva dalle piantagioni schiaviste del Sud degli Stati Uniti. Quando la guerra civile americana blocca le esportazioni, le fabbriche del Lancashire si fermano e centomila operai restano senza lavoro. La fabbrica libera e la piantagione schiavista erano la stessa filiera.',
+       seDicono:[
+         {loro:'«Allora il progresso non esiste.»',
+          tu:'Esiste, ed e enorme: chi nasce oggi in Inghilterra vive il doppio di chi ci nasceva nel 1840. Il punto non e negarlo, e sapere come e arrivato. Non e piovuto dalla crescita: e stato ottenuto, pezzo per pezzo, da persone che lo hanno chiesto e spesso lo hanno pagato.'},
+         {loro:'«Quindi bastava fare prima le leggi.»',
+          tu:'Ci hanno provato prima, e non funzionavano perche nessuno le faceva rispettare. Serviva anche che gli operai potessero organizzarsi e votare. È il motivo per cui i cartisti chiedono il voto e non il pane: avevano capito che senza potere politico le leggi restano carta.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'Torniamo alla domanda.\n\nQuando un paese diventa piu ricco,\nchi diventa piu ricco?\n\nNon e una domanda retorica\ne non ha una risposta unica.\n\nDipende da chi possiede\ncio che produce la ricchezza,\nda quali leggi ci sono\ne da chi puo farle rispettare,\ne da quanto potere\nhanno quelli che lavorano.\n\nPer settant\'anni,\nin Inghilterra,\nla risposta e stata:\nnon chi la produceva.\n\nUltima cosa da portarsi via.\n\nQuando sentite dire\nche un paese cresce,\nla domanda da fare\ne una sola:\n\nchi?',
+       parlato:'Riprendi le due fonti e fissa il metodo, che vale oltre questo capitolo: una testimonianza racconta come si viveva ma e scelta da qualcuno; una misura non racconta niente e non ha interessi. Servono tutte e due, e quando concordano si puo dire qualcosa con sicurezza.\n\nPoi il bilancio, tenuto onesto in entrambe le direzioni. La rivoluzione industriale ha prodotto la prima crescita continua della storia umana — prima di allora, per diecimila anni, si oscillava attorno a un livello senza mai salire davvero. E per due generazioni ha reso la vita peggiore di chi la faceva funzionare.\n\nSull\'ultima domanda non serve concludere: serve che si abituino a farla. Da\' loro un esempio concreto e recente da provare, e lasciali lavorare — un settore che cresce, una citta che si trasforma, una tecnologia nuova. La domanda e sempre la stessa: chi guadagna, chi paga, e chi ha voce nel decidere.\n\nChiudi con quello che apre il seguito: la societa che abbiamo descritto — con le sue classi, i suoi sindacati, le sue citta — e quella in cui nasceranno le grandi ideologie politiche dell\'Ottocento. Non sono nate a tavolino: sono nate per rispondere a questo.',
+       seDicono:[
+         {loro:'«Anche oggi è così?»',
+          tu:'Non lo so, ed e giusto che nessuno te lo dica con troppa sicurezza. Quello che posso darti e il metodo: cerca i dati che nessuno ha raccolto per vincere una discussione — salari mediani, aspettativa di vita per quartiere, ore lavorate. Poi confrontali con quello che ti raccontano. È esattamente quello che abbiamo fatto oggi.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'Che cosa volevano i luddisti',
+       corpo:'Fra il 1811 e il 1816 gruppi di tessitori inglesi entrano nelle officine di notte e distruggono i telai. Il governo manda l\'esercito, rende la distruzione di macchinari punibile con la morte e fa impiccare o deportare decine di persone.\n\nIl nome «luddista» è diventato sinonimo di nemico del progresso. Ma le loro richieste, dove sono documentate, riguardavano il salario minimo, la fine del lavoro dei non qualificati sotto il costo, e regole sull\'introduzione delle macchine — non la loro abolizione.\n\nMolte di quelle richieste furono ottenute per via sindacale mezzo secolo dopo.',
+       chiedi:'Un movimento passa alla storia con il nome che gli hanno dato i suoi avversari, e per la cosa più spettacolare che ha fatto invece che per ciò che chiedeva. Come si fa a sapere che cosa voleva davvero un gruppo sconfitto? E chi scrive il nome delle cose?'},
+      {titolo:'Quattro ispettori',
+       corpo:'Il Factory Act del 1833 vieta il lavoro sotto i nove anni, limita l\'orario dei più giovani e impone due ore di istruzione al giorno. Norme simili erano già state scritte nel 1802 e nel 1819, e non erano servite a nulla.\n\nLa differenza è un articolo: la legge istituisce degli ispettori di fabbrica, funzionari pubblici con il potere di entrare negli stabilimenti senza preavviso e di portare i trasgressori davanti a un giudice.\n\nAll\'inizio erano quattro, per l\'intero Regno Unito.',
+       chiedi:'Due leggi con lo stesso contenuto, una inutile e una efficace, e la differenza sta in chi va a controllare. Che cosa vi dice questo su come si giudica una norma? E vi vengono in mente regole, anche a scuola, che esistono e nessuno verifica?'},
+      {titolo:'Il cotone di Manchester',
+       corpo:'Le fabbriche tessili inglesi lavoravano cotone grezzo che veniva in gran parte dagli Stati Uniti del Sud, dove era coltivato da persone ridotte in schiavitù.\n\nQuando la guerra civile americana interrompe le esportazioni, il Lancashire entra in crisi: fabbriche ferme, circa centomila operai senza lavoro, assistenza pubblica per anni.\n\nNel 1862 gli operai di Manchester, pur essendo in miseria a causa del blocco, votarono un messaggio di sostegno a Lincoln e alla causa dell\'abolizione.',
+       chiedi:'Uomini ridotti alla fame da una guerra che poteva finire in fretta se il loro paese avesse aiutato i produttori di cotone, e che scelgono di sostenere chi vuole abolire la schiavitù. Che cosa rende possibile una decisione del genere? E che cosa dice sul rapporto fra interesse immediato e giudizio morale?'}
+    ],
+    testi:[
+      {fonte:'Edwin Chadwick, Rapporto sulle condizioni sanitarie della popolazione lavoratrice, 1842',
+       corpo:'Il rapporto documenta che nelle città industriali l\'età media alla morte è drasticamente più bassa che nelle campagne, con differenze fortissime fra classi sociali nella stessa città; e sostiene che le malattie prevalenti derivano da acqua contaminata, mancanza di scarichi e sovraffollamento, e sono quindi prevenibili con opere pubbliche.',
+       glossa:'Chadwick non era un filantropo: il suo argomento principale era che la malattia costava allo Stato in assistenza ai poveri più di quanto sarebbe costato prevenirla. Il rapporto porta alle prime leggi sanitarie inglesi, ed è un buon caso da discutere — una riforma decisiva ottenuta con un argomento contabile invece che morale.'},
+      {fonte:'Friedrich Engels, La situazione della classe operaia in Inghilterra, 1845',
+       corpo:'Engels descrive i quartieri operai di Manchester, dove aveva vissuto per due anni dirigendo la filiale dell\'azienda tessile paterna, e documenta abitazioni sovraffollate, cortili senza scarichi, aria irrespirabile e una mortalità infantile enormemente superiore a quella dei quartieri agiati.',
+       glossa:'L\'autore è insieme un testimone diretto e un militante politico, e va letto come tale: le sue descrizioni sono confermate dalle inchieste ufficiali dello stesso periodo, le sue conclusioni sono di parte. È un ottimo esercizio per la classe distinguere che cosa in un testo simile sia osservazione e che cosa sia tesi.'},
+      {fonte:'Factory Act, Regno Unito, 1833 — l\'articolo sugli ispettori',
+       corpo:'La legge autorizza la nomina di ispettori di fabbrica con facoltà di entrare in qualunque stabilimento in qualsiasi momento, esaminare i registri, interrogare i lavoratori e citare i trasgressori davanti ai giudici di pace.',
+       glossa:'Da leggere accanto alle leggi del 1802 e del 1819, che vietavano cose simili senza prevedere alcun controllo e non ebbero effetti. Serve a mostrare che, in una norma, la parte che decide se funzionerà è quasi sempre quella che nessuno cita.'}
+    ],
+    compito:'Mezza pagina. Cercate un dato sulla crescita di qualcosa che vi riguarda — la vostra città, una regione, un settore di lavoro, l\'Italia. Poi provate a rispondere alla domanda della lezione con quello che riuscite a trovare: chi è cresciuto, esattamente? Se i dati che trovate non permettono di rispondere, scrivetelo — e dite quale dato servirebbe.',
+    fonti:[
+      'Sadler Committee, Report on child labour in factories (1832); Factory Act (1833)',
+      'E. Chadwick, Report on the Sanitary Condition of the Labouring Population (1842)',
+      'F. Engels, La situazione della classe operaia in Inghilterra (1845)',
+      'E. P. Thompson, Rivoluzione industriale e classe operaia in Inghilterra; Tempo, disciplina del lavoro e capitalismo industriale',
+      'R. Floud, K. Wachter e A. Gregory, Height, Health and History — sulla statura come indicatore',
+      'K. Pomeranz, La grande divergenza; R. Allen, La rivoluzione industriale inglese'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',
