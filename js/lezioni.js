@@ -9335,6 +9335,228 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Storia moderna · 16 — Il 1848, primavera dei popoli': {
+  mappa: {
+    n:'Il 1848', d:'la prima rivoluzione europea simultanea, e la prima in cui i rivoluzionari si combattono',
+    f:[
+      {r:'nasce da', n:'Una crisi prima economica che politica', d:'i tre anni precedenti sono i peggiori del secolo',
+       f:[
+         {r:'la', n:'Malattia della patata', d:'1845-47: colpisce tutta l\'Europa del Nord e distrugge il raccolto base dei poveri',
+          f:[{r:'in Irlanda provoca', n:'La grande carestia', d:'circa un milione di morti e un milione di emigrati su otto milioni di abitanti'}]},
+         {r:'seguono', n:'Raccolti di grano fallimentari', d:'il prezzo del pane raddoppia in due anni'},
+         {r:'e una', n:'Crisi finanziaria', d:'le ferrovie avevano attirato capitali, le azioni crollano, le banche chiudono'},
+         {r:'la gente spende tutto in cibo e crolla', n:'La domanda di manufatti', d:'fabbriche ferme e disoccupazione proprio dove ci sono piu operai'},
+         {piu:true, r:'cosi la rivoluzione arriva', n:'Quando la crisi sta gia passando', d:'il 1848 e un buon raccolto: le rivolte scoppiano quando si comincia a sperare'}
+       ]},
+
+      {r:'comincia in', n:'Francia', d:'febbraio: in tre giorni cade una monarchia che sembrava solida',
+       f:[
+         {r:'si parte da una', n:'Campagna dei banchetti', d:'vietate le riunioni politiche, si organizzano cene con discorsi'},
+         {r:'una fucilata sulla folla', n:'Trasforma il corteo in insurrezione', d:'sedici morti portati in giro per la citta su un carro'},
+         {r:'nasce la', n:'Seconda Repubblica', d:'con il suffragio universale maschile: da duecentomila a nove milioni di elettori'},
+         {r:'si istituiscono gli', n:'Opifici nazionali', d:'lavoro pubblico per i disoccupati: e il primo riconoscimento di un diritto al lavoro'},
+         {r:'chiusi a giugno', n:'Per ragioni di bilancio', d:'e gli operai insorgono contro il governo che avevano contribuito a fare'},
+         {piu:true, r:'e le campagne votano', n:'Per il nome', d:'moltissimi contadini sanno solo che si chiama Bonaparte: il suffragio arriva prima dell\'informazione'},
+         {r:'e a dicembre gli elettori scelgono', n:'Luigi Napoleone', d:'con circa tre quarti dei voti, soprattutto dalle campagne'}
+       ]},
+
+      {r:'si propaga negli', n:'Stati tedeschi', d:'dove per la prima volta si prova a costruire una Germania',
+       f:[
+         {r:'si riunisce il', n:'Parlamento di Francoforte', d:'eletto, con giuristi, professori e pastori: il piu colto d\'Europa'},
+         {r:'discute a lungo su', n:'Grande o Piccola Germania', d:'con l\'Austria dentro, e allora che si fa dei suoi slavi, oppure senza'},
+         {r:'scrive un catalogo di', n:'Diritti fondamentali', d:'uguaglianza, stampa libera, fine dei privilegi: resterà come modello'},
+         {r:'offre la corona a', n:'Federico Guglielmo IV', d:'che la rifiuta: non accetta un titolo dato da un\'assemblea',
+          f:[{piu:true, r:'la chiama', n:'Una corona raccolta dal fango', d:'la legittimita, per lui, puo venire solo dai principi e da Dio'}]},
+         {piu:true, r:'e ai deputati si dara il nome di', n:'Parlamento dei professori', d:'per irriderne la competenza: sapevano tutto e non comandavano niente'},
+         {r:'e si scioglie', n:'Senza forza propria', d:'aveva parole e nessun esercito: quando i re si riprendono, basta mandarlo a casa'}
+       ]},
+
+      {r:'divampa nell\'', n:'Impero asburgico', d:'ed e qui che tutto si complica',
+       f:[
+         {r:'a Vienna', n:'Metternich fugge', d:'marzo: l\'uomo che aveva governato l\'Europa per trent\'anni se ne va in tre giorni'},
+         {r:'in Ungheria', n:'Kossuth', d:'ottiene autonomia, poi indipendenza, e infine la deposizione degli Asburgo'},
+         {r:'ma la nuova Ungheria impone', n:'La lingua magiara', d:'a croati, serbi, romeni e slovacchi che vivono dentro i suoi confini'},
+         {r:'e quelli si schierano', n:'Con l\'imperatore', d:'preferiscono Vienna lontana a Budapest vicina',
+          f:[{r:'il croato', n:'Jelacic marcia su Vienna', d:'e aiuta a riprendere ai rivoluzionari la capitale dell\'impero'}]},
+         {r:'a chiudere arriva l\'', n:'Esercito russo', d:'1849: duecentomila uomini mandati dallo zar per finire il lavoro'},
+         {r:'e a Praga i cechi', n:'Rifiutano di andare a Francoforte', d:'perche un parlamento tedesco pretende di parlare anche per loro'}
+       ]},
+
+      {r:'attraversa l\'', n:'Italia', d:'con costituzioni concesse in poche settimane e una guerra',
+       f:[
+         {r:'comincia da', n:'Palermo', d:'gennaio: e la prima insurrezione d\'Europa, un mese prima di Parigi'},
+         {r:'quattro sovrani concedono', n:'Costituzioni', d:'Napoli, Toscana, Piemonte, Stato pontificio: in due mesi'},
+         {r:'Milano insorge nelle', n:'Cinque giornate', d:'e caccia un esercito austriaco senza avere un esercito'},
+         {r:'il Piemonte dichiara la', n:'Prima guerra d\'indipendenza', d:'e la perde due volte, a Custoza e a Novara'},
+         {r:'a Roma nasce una', n:'Repubblica', d:'1849: Mazzini al governo, Garibaldi alla difesa',
+          f:[{r:'con una', n:'Costituzione avanzatissima', d:'abolisce la pena di morte e garantisce la liberta di culto'},
+             {piu:true, r:'abbattuta da', n:'Un esercito francese', d:'mandato da una repubblica: la Seconda Repubblica francese schiaccia quella romana'}]},
+         {piu:true, r:'con i primi', n:'Palloni bomba della storia', d:'gli austriaci provano a bombardarla con aerostati: quasi tutti finiscono in laguna'},
+         {r:'e Venezia resiste', n:'Fino all\'agosto 1849', d:'assediata, bombardata, e colpita dal colera'}
+       ]},
+
+      {r:'coinvolge', n:'Chi non aveva mai parlato', d:'e per pochi mesi sembra che tutto sia possibile',
+       f:[
+         {r:'nascono', n:'Club e giornali femminili', d:'a Parigi si chiede il voto, il divorzio, l\'istruzione, il diritto al lavoro'},
+         {r:'Jeanne Deroin', n:'Si candida', d:'1849: non essendo eleggibile, si presenta lo stesso per costringere a dirlo'},
+         {r:'gli operai chiedono', n:'Il diritto al lavoro', d:'e per la prima volta viene scritto in un atto di governo'},
+         {r:'i contadini in molte zone', n:'Ottengono la fine dei residui feudali', d:'e a quel punto smettono e tornano a casa'},
+         {r:'e tutto si richiude', n:'Entro un anno', d:'club sciolti, giornali chiusi, rivendicazioni rinviate di due generazioni'}
+       ]},
+
+      {r:'fallisce per', n:'Ragioni che si sommano', d:'e la prima e quella che nessuno aveva previsto',
+       f:[
+         {r:'i rivoluzionari', n:'Si combattono fra loro', d:'per confini contesi: tedeschi contro cechi, ungheresi contro croati e romeni'},
+         {r:'si spezza l\'alleanza fra', n:'Borghesi e operai', d:'dopo giugno a Parigi la paura sociale conta piu della liberta'},
+         {r:'i contadini', n:'Escono presto dal gioco', d:'ottenuto cio che volevano, diventano una riserva di consenso conservatore'},
+         {r:'gli eserciti', n:'Restano fedeli ai sovrani', d:'e nessuna insurrezione urbana regge a un esercito che obbedisce'},
+         {piu:true, r:'e il telegrafo aiuta', n:'Piu i governi che i rivoltosi', d:'chi ha la rete puo spostare truppe: la stessa tecnica serve meglio a chi e organizzato'},
+         {r:'e manca ogni', n:'Coordinamento fra i movimenti', d:'si guardano, si imitano, e non si aiutano mai'}
+       ]},
+
+      {r:'lascia', n:'Piu di quanto sembri', d:'perche una sconfitta politica puo essere un deposito',
+       f:[
+         {r:'in Austria', n:'La servitu non torna', d:'i contadini restano liberi: e la conquista piu duratura di tutto il quarantotto'},
+         {r:'in Francia resta il', n:'Suffragio universale maschile', d:'che nessun regime successivo osera piu togliere'},
+         {r:'in Piemonte resta lo', n:'Statuto', d:'e sara la costituzione dell\'Italia unita per un secolo'},
+         {r:'restano', n:'Testi costituzionali scritti', d:'i diritti di Francoforte e la costituzione romana: un repertorio pronto per dopo'},
+         {r:'e restano gli', n:'Esuli', d:'a Londra, a Ginevra, in America: si conoscono, si scrivono, e insegnano ai piu giovani'},
+         {r:'con una lezione che', n:'Cavour e Bismarck imparano', d:'senza uno Stato e un esercito, le nazioni non si fanno'}
+       ]}
+    ],
+    incroci:[
+      {da:'Quando la crisi sta gia passando', a:'Trasforma il corteo in insurrezione', r:'e la condizione in cui una fucilata',
+       perche:'Il 1848 e un anno di raccolto discreto, dopo tre anni terribili. Le rivoluzioni non scoppiano quando la miseria e al massimo — chi ha fame cerca da mangiare — ma quando comincia a migliorare e la gente ha di nuovo la forza e la speranza di pretendere. È un\'osservazione che vale per moltissimi movimenti.'},
+      {da:'La lingua magiara', a:'Con l\'imperatore', r:'e la ragione per cui croati, serbi e romeni si schierano',
+       perche:'La rivoluzione ungherese chiede per se l\'autonomia dagli Asburgo e impone ai propri slavi e romeni la lingua magiara nell\'amministrazione e nelle scuole. Per quei popoli l\'imperatore lontano diventa preferibile al nazionalista vicino. Il principio nazionale, applicato a territori mescolati, produce nemici fra chi lo invoca.'},
+      {da:'Rifiutano di andare a Francoforte', a:'Grande o Piccola Germania', r:'e la risposta ceca al dibattito su',
+       perche:'Il parlamento tedesco include nella futura Germania la Boemia, perche apparteneva alla Confederazione germanica. I cechi che vi abitano non sono stati consultati e rifiutano di partecipare. La domanda su quale Germania fare non e una questione interna: decide del destino di popoli che non votano a Francoforte.'},
+      {da:'Si combattono fra loro', a:'Esercito russo', r:'rende quasi superfluo l\'intervento dell\'',
+       perche:'Gli Asburgo riprendono Vienna con truppe croate, tengono la Transilvania con l\'appoggio dei romeni, e solo alla fine chiamano i russi. La controrivoluzione vince mobilitando le nazionalita contro la nazione dominante — uno schema che si ripetera nei Balcani per un secolo e mezzo.'},
+      {da:'Un esercito francese', a:'Luigi Napoleone', r:'viene mandato da',
+       perche:'La Repubblica romana e abbattuta dalle truppe della Repubblica francese, per volonta di un presidente eletto a suffragio universale che ha bisogno dei voti cattolici. Nel 1849 non e la reazione monarchica a schiacciare la rivoluzione romana: e una repubblica che difende i propri interessi elettorali.'},
+      {da:'Senza forza propria', a:'Cavour e Bismarck imparano', r:'e la lezione che',
+       perche:'Il parlamento di Francoforte era il piu colto d\'Europa, aveva scritto ottimi testi e non aveva un soldato. Bastarono i re a rimandarlo a casa. La generazione successiva ne trae la conclusione operativa: si comincia da uno Stato con un esercito, e le idee vengono dopo.'},
+      {da:'Ottengono la fine dei residui feudali', a:'La servitu non torna', r:'e la ragione per cui in Austria',
+       perche:'La liberazione dei contadini viene concessa nel 1848 e mantenuta anche dopo la vittoria della reazione, perche i nuovi proprietari sono diventati la base sociale su cui il regime si regge. Le conquiste che creano interessi durano; quelle che restano dichiarazioni no.'},
+      {da:'Borghesi e operai', a:'Opifici nazionali', r:'si spezzano sulla chiusura degli',
+       perche:'Il diritto al lavoro riconosciuto a febbraio viene ritirato a giugno per ragioni di bilancio e per timore sociale. La stessa assemblea eletta a suffragio universale ordina la repressione. Quando la questione sociale entra in una rivoluzione politica, l\'alleanza che l\'aveva fatta si rompe quasi sempre.'},
+      {da:'Si candida', a:'Entro un anno', r:'e uno dei gesti che vengono cancellati',
+       perche:'Jeanne Deroin si presenta sapendo di non essere eleggibile, per costringere la repubblica a dichiararlo per iscritto. Pochi mesi dopo i club femminili sono sciolti e alle donne e vietato riunirsi. Le rivendicazioni che nel 1848 sembrano vicine slittano di due generazioni: il voto alle francesi arrivera nel 1944.'},
+      {da:'Palermo', a:'Coordinamento fra i movimenti', r:'precede tutti e mostra l\'assenza di',
+       perche:'La prima insurrezione europea del 1848 scoppia in Sicilia un mese prima di Parigi, e non produce nessuna alleanza con gli altri movimenti. I rivoluzionari europei si imitano — le notizie corrono con i giornali e il telegrafo — e non si aiutano mai: e la differenza decisiva rispetto ai loro avversari, che si aiutano.'},
+      {da:'Testi costituzionali scritti', a:'Costituzione avanzatissima', r:'comprendono la',
+       perche:'La costituzione della Repubblica romana abolisce la pena di morte e garantisce la liberta di culto, ed e approvata mentre i francesi bombardano la citta. Non entra mai in vigore. Resta come testo, e i testi si rileggono: molte sue formule tornano nelle costituzioni del Novecento.'},
+      {da:'Esuli', a:'Restano fedeli ai sovrani', r:'sono cio che resta a chi ha scoperto che gli eserciti',
+       perche:'Sconfitti, decine di migliaia di rivoluzionari emigrano a Londra, in Svizzera, negli Stati Uniti. Li si incontrano, discutono di che cosa sia andato storto e insegnano ai piu giovani. La generazione che fara l\'Italia e la Germania e in parte quella che ha imparato dai reduci del quarantotto.'},
+      {da:'La grande carestia', a:'Escono presto dal gioco', r:'mostra al contrario che cosa accade quando i contadini non',
+       perche:'In Irlanda la fame e cosi grave da produrre morte ed emigrazione di massa, non rivoluzione. Chi e allo stremo non si organizza. Sul continente, dove la crisi e meno estrema, i contadini partecipano quel tanto che basta a ottenere la fine dei residui feudali, e poi escono. In entrambi i casi la campagna non fa la rivoluzione.'}
+    ]
+  },
+  provocazione: {
+    titolo:'Contro chi chiedeva la stessa cosa',
+    durata:'55 minuti',
+    domandaMadre:'Perche chi chiede la stessa cosa finisce per combattersi?',
+    perche:'Nel 1848 mezza Europa insorge chiedendo, in sostanza, la stessa cosa: costituzioni, liberta e il diritto di ogni popolo a governarsi. E i rivoluzionari finiscono per combattersi fra loro — i liberali tedeschi rivendicano la Boemia, i cechi rifiutano di riconoscerli, gli ungheresi impongono la propria lingua ai croati, e i croati marciano su Vienna a fianco dell\'imperatore. La classe legge due testi scritti nello stesso mese da due parti che si consideravano entrambe rivoluzionarie, e ne ricava perche un principio giusto, applicato a territori dove vivono popoli mescolati, produca guerre invece che alleanze.',
+    occorrente:'Utile una carta dell\'Europa centrale del 1848, se ce l\'hai.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'Primavera 1848.\n\nIn poche settimane insorgono\nPalermo, Parigi, Vienna, Berlino,\nMilano, Venezia, Budapest, Praga.\n\nÈ la prima volta che mezza Europa\nsi solleva quasi nello stesso mese.\n\nChiedono tutti,\npiu o meno, le stesse cose:\ncostituzioni, liberta di stampa,\nparlamenti eletti,\ne il diritto di ogni popolo\na governarsi da se.\n\nUn anno dopo\nhanno perso quasi tutti.\n\nE non li ha battuti\nsoltanto la reazione.\n\nA riprendere Vienna\nai rivoluzionari viennesi\nc\'e un esercito di croati.\n\nA combattere la rivoluzione ungherese\nci sono romeni, serbi e slovacchi.\n\nA rifiutare il parlamento tedesco\nsono i cechi.\n\nTutti in nome del diritto\ndei popoli a governarsi.',
+       parlato:'Costruisci prima l\'immagine della simultaneita — che colpisce, perche non c\'era coordinamento — e poi il rovesciamento.\n\nInsisti sul fatto che non si tratta di popoli reazionari contro popoli rivoluzionari: croati, cechi e romeni chiedevano esattamente le stesse cose che chiedevano ungheresi e tedeschi. Chiedevano di non essere governati da altri.\n\nDomanda dell\'ora: come fa lo stesso principio a mettere gli uni contro gli altri?\n\nRaccogli le prime risposte. Arriva quasi sempre «erano manipolati dall\'imperatore». Non correggere: fra dieci minuti leggeremo un testo scritto da uno dei protagonisti, e si vedra che il ragionamento era suo.',
+       seDicono:[
+         {loro:'«I croati erano dalla parte sbagliata.»',
+          tu:'Dalla parte perdente della storia che di solito raccontiamo, quella ungherese. Ma prova a metterti nei loro panni: ti offrono di passare da un impero che ti lascia la tua lingua a uno Stato nuovo che ti impone la sua. Da che parte staresti?'},
+         {loro:'«Non era possibile mettersi d\'accordo?»',
+          tu:'Ci provarono, e su una cosa non si poteva: i territori. Due popoli che abitano la stessa regione non possono averla entrambi. È il nodo dell\'ora, e non ha una soluzione elegante.'}
+       ]},
+
+      {minuti:'8–17', et:'La fonte',
+       schermo:'Praga, aprile 1848.\n\nIl parlamento tedesco di Francoforte\ninvita lo storico ceco\nFrantišek Palacký\na parteciparvi:\nla Boemia faceva parte\ndella Confederazione germanica,\nquindi manda deputati.\n\nLui risponde per iscritto,\ne rifiuta.\n\nScrive di non essere tedesco\nma boemo di stirpe slava;\n\nche un\'assemblea che voglia unire\nla Germania non puo decidere\nanche per popoli che tedeschi non sono;\n\nche i piccoli popoli fra la Germania\ne la Russia hanno bisogno\ndi uno Stato che li tenga insieme\nsenza che nessuno prevalga;\n\ne che se l\'impero austriaco\nnon esistesse gia,\nbisognerebbe affrettarsi\na crearlo.\n\nTre domande su questo testo.',
+       testo:{fonte:'František Palacký, lettera al Comitato dei Cinquanta di Francoforte, 11 aprile 1848',
+              glossa:'Palacký era il maggiore storico ceco e il capo riconosciuto del movimento nazionale boemo: non un conservatore, ma un patriota che rifiutava di far confluire il proprio popolo in una Germania unita. La sua posizione, detta austroslavismo, chiedeva un\'Austria federale in cui gli slavi avessero pari peso — non la fine dell\'impero, ma la sua trasformazione.'},
+       parlato:'Fai lavorare in coppia, cinque minuti, poi raccogli le tre risposte.\n\nSulla prima: lo scrive un rivoluzionario, non un servo dell\'imperatore. Fa parte del movimento nazionale ceco, e sta rifiutando un invito prestigioso. Se la classe aveva ipotizzato la manipolazione, questo la smentisce da solo.\n\nSulla seconda: il testo ammette che il proprio popolo e troppo debole per stare da solo. È una confessione strategica — fra un impero tedesco e uno russo, i cechi verrebbero schiacciati. Chiedere un\'Austria federale non e amore per gli Asburgo: e calcolo di sopravvivenza.\n\nSulla terza: non dice che cosa fare dei tedeschi che vivono in Boemia, ed erano molti. Palacký rivendica la Boemia come terra ceca e sorvola sul fatto che dentro quei confini c\'e una popolazione tedesca consistente. Fa esattamente cio che rimprovera a Francoforte.\n\nQuesto e il punto: entrambe le parti applicano il principio nazionale, ed entrambe si fermano un attimo prima di applicarlo agli altri.',
+       seDicono:[
+         {loro:'«Ma allora anche lui era incoerente.»',
+          tu:'Sì, e non per malafede: e strutturale. In Boemia cechi e tedeschi vivevano mescolati da secoli, spesso nelle stesse citta. Qualunque confine tu tracci, lasci dentro una minoranza. Il principio nazionale non ha una risposta per questa situazione, ed e la situazione normale in mezza Europa.'},
+         {loro:'«Aveva ragione sull\'Austria?»',
+          tu:'Il seguito gli ha dato ragione in un modo che non avrebbe voluto: quando nel 1918 l\'impero si dissolve, i piccoli Stati che nascono si trovano fra Germania e Russia, e vent\'anni dopo vengono spartiti da entrambe. La sua previsione era buona; la soluzione che proponeva non fu mai realizzata.'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'Come funziona il meccanismo.\n\nIl principio dice:\nogni popolo ha diritto\na uno Stato proprio.\n\nSembra semplice.\n\nMa uno Stato ha bisogno\ndi un territorio,\ne in mezza Europa\ni popoli non abitano\nin zone separate.\n\nVivono mescolati:\nnello stesso villaggio,\nnella stessa citta,\na volte nella stessa famiglia.\n\nQuindi ogni confine che tracci\nlascia dentro qualcuno\nche non appartiene\nalla nazione dominante.\n\nE quel qualcuno\npuo invocare lo stesso principio\nper chiedere di uscire.\n\nIn Ungheria la rivoluzione\nottiene l\'autonomia\ne subito impone il magiaro\nnelle scuole e negli uffici\na croati, serbi, romeni, slovacchi.\n\nQuelli guardano Vienna\ne scelgono Vienna.',
+       parlato:'Spiega il meccanismo lentamente, perche e semplice e controintuitivo.\n\nPoi fai la domanda che li mette al lavoro: che cosa avreste fatto, essendo il governo ungherese del 1848?\n\nRaccogli le proposte e mettile alla prova.\n\nSe concedete l\'autonomia a croati, serbi e romeni, l\'Ungheria si riduce a un terzo e voi avete appena combattuto per averla intera.\n\nSe non la concedete, quelli si alleano con il vostro nemico — ed e cio che accadde.\n\nSe fate uno Stato bilingue o plurilingue, vi trovate a costruire in piccolo quell\'impero da cui volevate uscire.\n\nNon c\'era una mossa buona. È utile che lo sperimentino, perche insegna a distinguere gli errori dalle situazioni senza uscita.\n\nPoi aggiungi il dato che chiude il blocco: gli Asburgo capiscono il meccanismo prima dei rivoluzionari e lo usano. Promettono ai croati cio che gli ungheresi negano, e ottengono un esercito. Nel 1848 la controrivoluzione impara a usare le nazionalita meglio dei nazionalisti.',
+       seDicono:[
+         {loro:'«Bastava fare uno Stato di tutti.»',
+          tu:'È la risposta giusta e la piu difficile da realizzare, perche richiede che la maggioranza rinunci a fare del proprio Stato la casa della propria lingua e della propria storia. Quasi nessun movimento nazionale, in due secoli, ci e riuscito. Non e impossibile — la Svizzera esiste — e richiede condizioni particolari.'},
+         {loro:'«Gli ungheresi sono stati stupidi.»',
+          tu:'Hanno fatto quello che facevano tutti: gli italiani imponevano l\'italiano ai tedeschi del Sudtirolo, i francesi il francese ai bretoni, i tedeschi il tedesco ai polacchi. Chiamarlo stupidita impedisce di vedere che era la regola, non l\'eccezione.'}
+       ]},
+
+      {minuti:'28–38', et:'La seconda fonte',
+       schermo:'Il primo documento era un rifiuto,\nscritto da chi si sentiva minacciato.\n\nQuesto e una decisione,\nscritta da chi si sentiva\ndalla parte del progresso.\n\nFrancoforte, luglio 1848.\nIl parlamento tedesco discute\ndel Granducato di Posen,\nterritorio polacco\ndentro il regno di Prussia.\n\nI deputati riconoscono\nche i polacchi hanno diritto\na una patria,\ne che la spartizione della Polonia\nfu un\'ingiustizia.\n\nPoi decidono di dividere\nil territorio, incorporando\nnella Germania la parte\ncon piu abitanti tedeschi.\n\nUn deputato dichiara\nche il compito e realizzare\nun sano egoismo nazionale,\ne che gli interessi dei tedeschi\nvengono prima.\n\nÈ lo stesso parlamento\nche aveva appena scritto\nun catalogo di diritti\nvalidi per tutti.',
+       testo:{fonte:'Dibattito del Parlamento di Francoforte sulla questione di Posen, luglio 1848',
+              glossa:'Il parlamento vota a larga maggioranza la spartizione, dopo aver dichiarato in linea di principio la simpatia per la causa polacca. È il documento che mostra con maggiore chiarezza la distanza fra i principi enunciati e la loro applicazione quando toccano un territorio conteso — e va letto sapendo che quegli stessi deputati stavano redigendo una carta di diritti fondamentali fra le più avanzate d\'Europa.'},
+       parlato:'Metti i due documenti uno accanto all\'altro: uno e di aprile, l\'altro di luglio, e appartengono allo stesso mondo.\n\nFai fare il confronto: Palacký rifiuta perche teme di essere assorbito; Francoforte assorbe dichiarando di riconoscere il diritto altrui.\n\nPoi la domanda di metodo, che qui e particolarmente utile: come si concilia un principio dichiarato con una decisione che lo contraddice?\n\nGuidali a vedere la tecnica, che riconosceranno anche altrove. Prima si riconosce il principio in astratto — i polacchi hanno diritto a una patria. Poi si introduce una circostanza che rende impossibile applicarlo qui e ora — ci sono anche tedeschi, ci sono ragioni di sicurezza. Il principio resta intatto e non produce nessun effetto.\n\nÈ il modo in cui quasi sempre si tiene insieme un ideale e il proprio interesse: non lo si nega, lo si dichiara inapplicabile al caso concreto.\n\nUltima osservazione: l\'espressione «sano egoismo nazionale» viene detta in un parlamento eletto, senza scandalo. Vale la pena farla notare: nel 1848 era una frase presentabile.',
+       seDicono:[
+         {loro:'«Erano ipocriti allora.»',
+          tu:'Molti erano sinceramente liberali, e alcuni votarono contro. Il fatto interessante e che la maggioranza non vide contraddizione: pensava che portare quei territori nella Germania costituzionale fosse un progresso anche per chi ci abitava. Il dominio si giustifica quasi sempre come favore.'},
+         {loro:'«Chi ha votato contro?»',
+          tu:'Una minoranza, che sostenne che un parlamento nato per dare diritti non poteva cominciare togliendoli ad altri. Persero il voto e avevano ragione, e vale la pena saperlo: in quasi tutte queste vicende qualcuno lo aveva detto, e sapere che era possibile dirlo cambia il modo di giudicare gli altri.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'Come finisce.\n\nGli Asburgo riprendono Vienna\ncon truppe croate.\n\nTengono la Transilvania\ncon l\'appoggio dei romeni.\n\nSchiacciano l\'Ungheria\ncon l\'aiuto di duecentomila russi\nmandati dallo zar.\n\nLa Repubblica romana\nviene abbattuta\nda un esercito francese,\ninviato da una repubblica,\nda un presidente eletto\na suffragio universale\nche aveva bisogno\ndei voti dei cattolici.\n\nE il parlamento di Francoforte,\nil piu colto d\'Europa,\nviene mandato a casa\nda un re\nsenza bisogno di combattere:\nnon aveva un solo soldato.\n\nI rivoluzionari si guardavano\ne si imitavano.\n\nI loro avversari\nsi aiutavano.',
+       parlato:'Dai la sequenza delle sconfitte e tieni per ultimo il contrasto finale, che e la formula da portare a casa: i rivoluzionari si imitavano, i sovrani si aiutavano.\n\nInsisti sul caso francese, che di solito colpisce: e una repubblica nata da una rivoluzione ad abbattere un\'altra repubblica nata da una rivoluzione, per ragioni di politica interna. L\'internazionalismo dei movimenti era retorico; quello dei governi era operativo.\n\nPoi il punto sul parlamento di Francoforte, che chiude il ragionamento di tutto il capitolo. Era eletto, autorevole, colto: aveva scritto un catalogo di diritti fondamentali che sarebbe stato ripreso per un secolo. E non aveva un esercito. Quando i re si furono ripresi dalla paura, bastarono poche compagnie di soldati a sciogliere l\'assemblea.\n\nDa qui la lezione che la generazione successiva impara benissimo: le nazioni non le fanno i parlamenti, le fanno gli Stati che hanno truppe. Cavour e Bismarck partono da qui.\n\nEd e una lezione giusta e amara: significa che l\'unita si otterra rinunciando alla democrazia che il 1848 chiedeva.',
+       seDicono:[
+         {loro:'«Quindi il 1848 non è servito a niente.»',
+          tu:'In Austria la servitu della gleba non torna piu, in Francia il suffragio universale maschile non viene piu tolto, e in Piemonte resta lo Statuto che sara la costituzione dell\'Italia unita. Sono conquiste enormi, ottenute da rivoluzioni sconfitte. Vale la pena distinguere fra chi vince e che cosa resta.'},
+         {loro:'«Perché i re si aiutavano e i rivoluzionari no?»',
+          tu:'Perche i re avevano gia un\'abitudine a consultarsi — l\'abbiamo vista con il congresso di Vienna — ed eserciti pronti da prestarsi. I rivoluzionari avevano solo simpatia reciproca, e per giunta erano divisi da confini contesi. Le organizzazioni battono le simpatie, quasi sempre.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'Torniamo alla domanda.\n\nPerche chi chiede la stessa cosa\nfinisce per combattersi?\n\nPerche non chiedevano\nla stessa cosa\nnello stesso posto.\n\nUn principio che assegna\nun territorio a un popolo\nnon puo essere applicato\ndove i popoli sono mescolati,\nsenza che qualcuno resti dentro\ncontro la propria volonta.\n\nE quel qualcuno\nusera lo stesso principio\nper uscire.\n\nQuesto non rende il principio\nsbagliato.\n\nLo rende insufficiente:\ndice a chi spetta decidere,\ne non dice che cosa fare\nquando i pretendenti sono due.\n\nUltima domanda, e non e sul 1848:\n\nquando due parti chiedono\nla stessa cosa e non possono\naverla entrambe,\nche cosa serve\nperche non finisca male?',
+       parlato:'Riprendi il ragionamento e falla enunciare a loro: il principio nazionale distribuisce territori, e i territori sono limitati.\n\nPoi la precisazione che evita la conclusione sbagliata: non stiamo dicendo che i popoli non abbiano diritto a governarsi. Stiamo dicendo che quel diritto, da solo, non risolve i casi difficili — e i casi difficili sono la maggioranza, perche l\'Europa e piena di zone mescolate.\n\nSull\'ultima domanda falli lavorare davvero, perche e la parte migliore. Le risposte storiche esistono e vanno nominate: garanzie per le minoranze scritte e sorvegliate da qualcuno; autonomie territoriali; Stati plurinazionali con lingue ufficiali multiple; e, nel Novecento, le soluzioni peggiori — gli scambi forzati di popolazione e le pulizie etniche.\n\nNessuna funziona sempre. Le prime tre funzionano quando c\'e qualcuno abbastanza forte e imparziale da farle rispettare; le ultime funzionano nel senso che risolvono il problema eliminandone una parte.\n\nChiudi con quello che apre il seguito: nel 1848 questo nodo si vede per la prima volta su scala continentale, e resta aperto. Sara il nodo dei Balcani, poi quello dei trattati del 1919, e in parte e ancora aperto oggi. Non e un problema dell\'Ottocento: e il problema che l\'Ottocento ha consegnato ai due secoli successivi.',
+       seDicono:[
+         {loro:'«Allora è meglio non dividere in nazioni.»',
+          tu:'Gli imperi multinazionali che c\'erano prima non erano un paradiso: governavano senza chiedere niente a nessuno. Il principio nazionale ha liberato molte persone. Il punto e che nessuna delle due soluzioni funziona da sola, ed e per questo che si continuano a inventare formule intermedie — federazioni, autonomie, tutele.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'La corona raccolta dal fango',
+       corpo:'Nel marzo 1849 il parlamento di Francoforte offre la corona imperiale tedesca a Federico Guglielmo IV di Prussia. Il re rifiuta.\n\nLa ragione non è che non volesse quella corona: è che non voleva riceverla da un\'assemblea eletta. La legittimità, per lui, poteva venire soltanto dagli altri principi e da Dio. In privato usò l\'espressione secondo cui non avrebbe raccolto una corona dal fango, marchiata dall\'odore della rivoluzione.\n\nVentidue anni dopo suo fratello accetta la corona imperiale a Versailles, offerta dai principi tedeschi dopo una vittoria militare.',
+       chiedi:'Stesso titolo, due modi opposti di riceverlo. Che cosa cambia, per un potere, l\'origine della propria legittimità? E perché un re dovrebbe preferire una corona data da altri re a una data dal proprio popolo?'},
+      {titolo:'La costituzione che non entrò in vigore',
+       corpo:'La Repubblica romana approva la propria costituzione il 3 luglio 1849, mentre le truppe francesi stanno entrando in città. È in vigore per poche ore.\n\nIl testo abolisce la pena di morte — prima costituzione al mondo a farlo — garantisce la libertà di culto a tutti, stabilisce che l\'esercizio del potere spirituale del pontefice non sarà ostacolato, e afferma l\'uguaglianza di tutti i cittadini davanti alla legge.\n\nAlcune sue formule saranno riprese nella Costituzione italiana del 1948.',
+       chiedi:'Un testo in vigore per poche ore che riappare un secolo dopo. Che cosa rende utile scrivere qualcosa che si sa già di non poter applicare? E chi lo raccoglie, quando succede?'},
+      {titolo:'Il conto delle donne',
+       corpo:'Nel 1848 nascono a Parigi giornali e club femminili che chiedono il diritto di voto, l\'accesso all\'istruzione, il divorzio e il diritto al lavoro. Jeanne Deroin, non essendo eleggibile, si candida ugualmente alle elezioni del 1849 per obbligare la repubblica a metterlo per iscritto.\n\nNel giugno 1848 alle donne viene vietato di far parte dei club politici; l\'anno dopo i club femminili sono sciolti. Deroin è arrestata e poi costretta all\'esilio.\n\nLe francesi voteranno per la prima volta nel 1944.',
+       chiedi:'Novantasei anni fra la richiesta e il risultato. Che cosa serve, in tutto quel tempo, perché una rivendicazione non venga dimenticata? E chi la tiene in vita quando chi l\'ha formulata è morto?'}
+    ],
+    testi:[
+      {fonte:'Dichiarazione dei diritti fondamentali del popolo tedesco, Francoforte, dicembre 1848',
+       corpo:'Il testo stabilisce l\'uguaglianza davanti alla legge, l\'abolizione dei privilegi di ceto, la libertà personale, di parola, di stampa, di riunione e di culto, l\'inviolabilità del domicilio e la pubblicità dei processi.',
+       glossa:'È uno dei cataloghi di diritti più avanzati del secolo e non entrò mai pienamente in vigore. Va letto accanto al dibattito su Posen, dello stesso parlamento e degli stessi mesi: la contraddizione fra i due documenti è il modo migliore per far capire che cosa significhi, in politica, l\'ambito di applicazione di un principio.'},
+      {fonte:'Costituzione della Repubblica Romana, 3 luglio 1849 — principi fondamentali',
+       corpo:'La costituzione afferma che la sovranità è per diritto eterno nel popolo, che il regime democratico ha per regola l\'uguaglianza, la libertà e la fraternità, e che la repubblica riguarda tutti i popoli come fratelli e rispetta ogni nazionalità.',
+       glossa:'L\'ultimo punto è quello che la distingue: mentre a Francoforte si decideva di incorporare territori polacchi, a Roma si scriveva il rispetto di ogni nazionalità. È mazziniano nella sostanza, e la sua sfortuna storica non toglie che sia il documento in cui il principio nazionale viene formulato senza la clausola dell\'interesse proprio.'},
+      {fonte:'Alexis de Tocqueville, Ricordi, sui giorni di giugno 1848',
+       corpo:'Tocqueville, deputato, descrive l\'insurrezione operaia di giugno non come una lotta politica per la forma del governo, ma come un conflitto di classe, una sorta di guerra servile in cui si combatteva per cambiare la condizione stessa in cui si viveva.',
+       glossa:'È la testimonianza di un liberale conservatore che partecipa alla repressione e che, proprio per questo, vede con chiarezza la natura sociale dello scontro. Utile in classe per mostrare che un osservatore ostile può essere una fonte eccellente su ciò che sta accadendo, e pessima su come giudicarlo.'}
+    ],
+    compito:'Mezza pagina. Trovate una situazione in cui due gruppi rivendicano la stessa cosa e non possono averla entrambi: può essere un conflitto internazionale attuale, una vertenza locale, perfino una disputa fra due gruppi che conoscete. Descrivete la rivendicazione di ciascuno nel modo più forte possibile, come farebbero loro. Poi indicate quale garanzia dovrebbe esistere — e chi dovrebbe farla rispettare — perché la contesa non si decida con la forza.',
+    fonti:[
+      'F. Palacký, lettera a Francoforte (11 aprile 1848); atti del Parlamento di Francoforte sulla questione polacca',
+      'Dichiarazione dei diritti fondamentali del popolo tedesco (1848); Costituzione della Repubblica Romana (1849)',
+      'A. de Tocqueville, Ricordi (1850-51)',
+      'J. Sperber, Le rivoluzioni europee 1848-1851; M. Rapport, 1848. L\'anno della rivoluzione',
+      'E. Hobsbawm, L\'età del capitale; G. Candeloro, Storia dell\'Italia moderna, vol. III',
+      'A. J. P. Taylor, La monarchia asburgica — sulla questione delle nazionalità'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',

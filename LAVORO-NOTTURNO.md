@@ -175,7 +175,7 @@ Si va in ordine di programma. Restano:
 - [x] Storia moderna · 13 — La Restaurazione
 - [x] Storia moderna · 14 — L'età dei popoli e delle nazioni
 - [x] Storia moderna · 15 — Società industriale e socialismo
-- [ ] Storia moderna · 16 — Il 1848, primavera dei popoli
+- [x] Storia moderna · 16 — Il 1848, primavera dei popoli
 - [ ] Filosofia moderna · 1 — La cultura umanistico-rinascimentale
 - [ ] Filosofia moderna · 2 — Il ritorno a Platone e ad Aristotele
 - [ ] Filosofia moderna · 3 — Rinascimento e religione
@@ -299,3 +299,16 @@ schermata a fissarlo, perché mostra tutte le teste insieme.
 
 Se un capitolo non ci sta in otto aree, si accorpa (due aree corte in una,
 con la seconda che diventa un ramo), non si aggiunge la nona.
+
+### Sovrapposizione segnalata: il 1848
+
+Il programma ha «Storia moderna · 14 — L'età dei popoli e delle nazioni» e
+«Storia moderna · 16 — Il 1848, primavera dei popoli». Nel 14 il 1848 è la
+prima area (sei nodi) e serve da premessa al nazionalismo; nel 16 è tutto il
+capitolo. Per non ripetere, il 16 è stato scritto con un taglio diverso: la
+prima rivoluzione europea simultanea, e la prima in cui i rivoluzionari si
+combattono fra loro per confini contesi. Le due provocazioni non hanno
+niente in comune.
+
+Da chiedere ad Alessandro: se preferisce accorpare i due capitoli, o
+lasciarli separati come sono ora.
