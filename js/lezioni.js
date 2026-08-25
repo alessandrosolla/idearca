@@ -12633,6 +12633,232 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Filosofia moderna · 22 — Kant: la Critica del Giudizio': {
+  mappa: {
+    n:'La Critica del Giudizio', d:'il bello, il vivente, e il ponte fra i due mondi che le prime due Critiche avevano separato',
+    f:[
+      {r:'nasce da un', n:'Abisso da attraversare', d:'due libri hanno diviso il mondo in due, e adesso bisogna rimetterli in comunicazione',
+       f:[
+         {r:'la prima Critica descrive una natura governata dalla', n:'Necessita', d:'ogni evento ha una causa, e nulla comincia da se'},
+         {r:'la seconda afferma una', n:'Liberta', d:'che non appare in nessun luogo e che comanda comunque'},
+         {r:'fra i due domini Kant vede un', n:'Abisso incolmabile', d:'parola sua: non si vedono e non si toccano'},
+         {r:'eppure la liberta deve poter', n:'Realizzarsi nel mondo', d:'un dovere che non potesse tradursi in fatti sarebbe una parola vuota'},
+         {r:'serve dunque un', n:'Terzo termine', d:'non una terza facolta di conoscere, ma un modo in cui la natura si lasci pensare come non estranea ai nostri fini'},
+         {r:'e lo trova nella facolta di', n:'Giudicare', d:'che sta in mezzo fra intelletto e ragione, e a cui corrisponde il sentimento di piacere e dispiacere'},
+         {r:'il libro esce nel', n:'1790', d:'a sessantasei anni, e contiene due critiche dentro una: quella del gusto e quella del finalismo',
+          f:[{piu:true, r:'due parti che i lettori trovano', n:'Male insieme', d:'che cosa abbiano in comune il giudizio sul bello e quello sugli organismi e la domanda che il libro pone e non chiude'}]}
+       ]},
+
+      {r:'e introduce una distinzione fra due modi di', n:'Giudicare un caso', d:'perche non sempre la regola e gia disponibile',
+       f:[
+         {r:'giudicare significa pensare il', n:'Particolare sotto un universale', d:'questo caso sta sotto quella regola'},
+         {r:'se la regola c\'e gia, il giudizio e', n:'Determinante', d:'ho la legge di gravita e la applico a questo sasso: e cio che fa la scienza'},
+         {r:'se la regola manca e va cercata, il giudizio e', n:'Riflettente', d:'ho il caso davanti e devo trovare sotto che cosa metterlo'},
+         {r:'e per procedere si da\' da se un principio, la', n:'Finalita', d:'come se la natura fosse organizzata in modo da poter essere compresa da noi',
+          f:[{piu:true, r:'principio che non riguarda le cose ma il nostro', n:'Modo di cercare', d:'non afferma che la natura abbia scopi: afferma che senza supporlo non sapremmo da dove cominciare'}]},
+         {r:'il riflettente lavora in due campi: il', n:'Bello', d:'dove un piacere accompagna la forma di un oggetto'},
+         {r:'e il', n:'Vivente', d:'dove non si riesce a descrivere un organismo senza nominarne le funzioni'}
+       ]},
+
+      {r:'del bello da\' quattro', n:'Definizioni', d:'una per ciascuna delle quattro classi di categorie, secondo la sua abitudine',
+       f:[
+         {r:'secondo la qualita, il bello piace', n:'Senza interesse', d:'non mi importa che l\'oggetto esista, che sia mio o che serva a qualcosa'},
+         {r:'e va tenuto distinto dal', n:'Piacevole', d:'che riguarda la sensazione e l\'interesse: il gelato piace perche lo mangio'},
+         {r:'e dal', n:'Buono', d:'che riguarda il fine e il concetto: una cosa e buona per qualcosa o in se, e questo si dimostra'},
+         {r:'secondo la quantita, piace', n:'Universalmente senza concetto', d:'chi dice bello pretende l\'accordo di tutti, e non ha nessuna regola da esibire',
+          f:[{piu:true, r:'per cui non esiste nessuna', n:'Regola del bello', d:'chi deducesse la bellezza da principi non convincerebbe nessuno a trovare bello cio che non sente tale'}]},
+         {r:'secondo la relazione, e una', n:'Finalita senza scopo', d:'sembra fatto apposta, e non si riesce a dire per che cosa'},
+         {r:'secondo la modalita, quel piacere e', n:'Necessario', d:'non «capitera che vi piaccia», ma «dovreste trovarlo bello»'}
+       ]},
+
+      {r:'e spiega', n:'Come sia possibile', d:'che un piacere, che e sempre di qualcuno, pretenda di valere per tutti',
+       f:[
+         {r:'davanti a una forma bella immaginazione e intelletto entrano in un', n:'Libero gioco', d:'si accordano senza che nessun concetto li costringa a farlo'},
+         {r:'e il piacere e la coscienza di quell\'', n:'Accordo', d:'non si gode l\'oggetto: si gode il funzionare delle proprie facolta'},
+         {r:'e poiche quelle facolta le hanno tutti, la pretesa si appoggia a un', n:'Senso comune', d:'non l\'opinione diffusa, ma una capacita di sentire che si suppone condivisa',
+          f:[{piu:true, r:'supposizione che resta il', n:'Punto fragile', d:'e un\'ipotesi necessaria e non dimostrata, e su di essa poggia tutta l\'universalita del gusto'}]},
+         {r:'da cui la formula: sul gusto non si', n:'Dimostra', d:'nessuna prova puo obbligare qualcuno a trovare bella una cosa'},
+         {r:'e tuttavia si', n:'Discute', d:'si mostra, si fa notare, si educa: e per questo la critica d\'arte esiste e non e assurda'},
+         {r:'con la distinzione fra bello', n:'Libero', d:'un fiore, un disegno: piacciono senza che si sappia che cosa debbano essere'},
+         {r:'e bello', n:'Aderente', d:'una chiesa, un cavallo: il giudizio dipende anche dall\'idea di cio che quella cosa deve essere'}
+       ]},
+
+      {r:'accanto al bello colloca il', n:'Sublime', d:'che non e una specie di bello: e quasi il suo contrario',
+       f:[
+         {r:'il bello riguarda la', n:'Forma', d:'un contorno, una misura, qualcosa che si riesce ad abbracciare'},
+         {r:'il sublime nasce invece dal', n:'Senza forma', d:'da cio che eccede e non si lascia contenere'},
+         {r:'ed e', n:'Matematico', d:'davanti a cio che e smisuratamente grande: il cielo, il deserto, l\'idea di infinito'},
+         {r:'oppure', n:'Dinamico', d:'davanti a cio che e smisuratamente potente: la tempesta, il vulcano, il mare in burrasca'},
+         {r:'in entrambi i casi il piacere e', n:'Negativo', d:'passa da uno smacco: l\'immaginazione prova a contenere e non ci riesce'},
+         {r:'e sorge quando ci si scopre qualcosa che nessuna grandezza fisica', n:'Puo schiacciare', d:'la ragione pensa un infinito che l\'immaginazione non riesce a figurare'},
+         {r:'a condizione di trovarsi al', n:'Sicuro', d:'la tempesta e sublime da riva; chi ci sta dentro ha paura, e la paura non e sublime',
+          f:[{piu:true, r:'condizione che apre un\'obiezione sul', n:'Privilegio di chi guarda', d:'il sublime sarebbe allora un\'esperienza di chi puo permettersi di non essere in pericolo'}]}
+       ]},
+
+      {r:'per l\'arte introduce il', n:'Genio', d:'perche le regole spiegano il mestiere e non spiegano l\'opera',
+       f:[
+         {r:'l\'arte non si produce con', n:'Regole apprese', d:'si imparano la tecnica e il mestiere, non cio che rende un\'opera un\'opera'},
+         {r:'il genio e la disposizione naturale attraverso cui la natura', n:'Da la regola all\'arte', d:'la regola c\'e, e viene dopo l\'opera, non prima'},
+         {r:'e produce senza saper dire', n:'Come', d:'non possiede un metodo trasmissibile: puo fare scuola solo perche altri lo imitino liberamente'},
+         {r:'lavorando per', n:'Idee estetiche', d:'rappresentazioni che fanno pensare moltissimo senza che nessun concetto le esaurisca'},
+         {piu:true, r:'e vale solo per l\'arte, non per la', n:'Scienza', d:'Newton puo insegnare passo per passo come e arrivato ai Principi; un poeta non puo insegnare come gli sia venuta una poesia'},
+         {r:'e senza gusto produce cose', n:'Originali e mostruose', d:'l\'originalita da sola non basta: si puo essere originali per caso'},
+         {r:'per cui in caso di conflitto sacrifica il genio al', n:'Gusto', d:'affermazione che i romantici ribalteranno in pochi anni, tenendosi il genio e buttando il gusto'}
+       ]},
+
+      {r:'la seconda meta del libro riguarda il', n:'Vivente e i suoi fini', d:'e la domanda se in natura ci siano scopi',
+       f:[
+         {r:'un orologio ha le parti fatte l\'una', n:'Per l\'altra', d:'ma da un orologiaio, che sta fuori e che ha progettato'},
+         {r:'un organismo invece e', n:'Causa ed effetto di se stesso', d:'le parti si producono a vicenda, e il tutto e cio per cui ciascuna esiste'},
+         {r:'e va dunque pensato come un', n:'Fine naturale', d:'una cosa in cui nulla e inutile e nessuno ha progettato'},
+         {r:'ma il finalismo resta un principio', n:'Solo regolativo', d:'un modo di indagare, non una scoperta su come sia fatto il mondo'},
+         {r:'e nega che possa venire un', n:'Newton del filo d\'erba', d:'nessuno spieghera mai la produzione di un filo d\'erba con le sole cause meccaniche',
+          f:[{piu:true, r:'previsione che la biologia ha', n:'Smentito a meta', d:'la selezione naturale spiega il finalismo apparente senza bisogno di scopi, e la lingua delle funzioni non e mai uscita dai laboratori'}]},
+         {r:'e per la stessa ragione cade la', n:'Fisico-teologia', d:'dall\'ordine del mondo non si risale a un creatore: al massimo a un architetto di cui non si sa nulla'}
+       ]},
+
+      {r:'e resta un\'', n:'Eredita', d:'piu grande di quanto Kant si aspettasse, e in parte contro le sue intenzioni',
+       f:[
+         {r:'il bello diventa un', n:'Simbolo del bene', d:'giudicando senza interesse si esercita la stessa liberta dall\'interesse che la morale richiede'},
+         {r:'e su questo costruisce', n:'Schiller', d:'l\'educazione estetica come strada per formare uomini liberi: si diventa capaci di dovere passando dal bello'},
+         {r:'il libro fonda l\'estetica come', n:'Disciplina', d:'da qui in poi il bello ha una filosofia propria e smette di essere un capitolo della retorica'},
+         {r:'i romantici prendono il', n:'Sublime e il genio', d:'e lasciano cadere le cautele: cio che Kant teneva a freno diventa il centro',
+          f:[{piu:true, r:'con un rovesciamento visibile nella', n:'Figura dell\'artista', d:'da artigiano di talento a persona eccezionale con diritti diversi dagli altri: una faccenda che dura ancora'}]},
+         {r:'e resta la domanda su che cosa si faccia quando si', n:'Discute di gusto', d:'una discussione in cui non si dimostra nulla e non si tace, e che nessuno riesce a dichiarare priva di senso'}
+       ]}
+    ],
+    incroci:[
+      {da:'Senza interesse', a:'Simbolo del bene', r:'e la ragione per cui il bello diventa un',
+       perche:'Nel giudicare bello si mette da parte il proprio tornaconto: non importa se l\'oggetto e mio, se mi serve, se mi conviene. È la stessa sospensione dell\'interesse che la morale richiede, ottenuta pero senza sforzo e con piacere. Per Kant questo fa del gusto un esercizio preparatorio, ed e il ponte fra il terzo libro e il secondo.'},
+      {da:'Senso comune', a:'Universalmente senza concetto', r:'e cio che deve reggere la pretesa di piacere',
+       perche:'La difficolta e enorme: come puo un sentimento, che e sempre di qualcuno, pretendere l\'accordo di tutti? Kant risponde che le facolta in gioco sono le stesse in ogni essere umano, e che il loro accordo puo essere presupposto. Non lo dimostra e ammette di supporlo. Tutta l\'universalita del gusto si regge su quell\'ipotesi.'},
+      {da:'Puo schiacciare', a:'Liberta', r:'e il punto in cui il sublime rivela la',
+       perche:'Davanti alla tempesta ci si scopre fisicamente insignificanti e insieme non ridotti a quella insignificanza: qualcosa in noi pensa cio che nessuna forza puo piegare. Il sublime non e dunque un\'esperienza della natura ma di se stessi, ed e la conferma sentimentale di cio che la seconda Critica aveva stabilito per via di ragionamento.'},
+      {da:'Sicuro', a:'Negativo', r:'e la condizione perche il piacere resti',
+       perche:'Il piacere del sublime nasce da uno smacco che si supera, e per superarlo bisogna non essere realmente minacciati. Un naufrago non trova sublime la tempesta. Ne segue che il sublime richieda una distanza, e che quella distanza sia insieme la condizione dell\'esperienza e il suo limite morale: si ammira da lontano cio che da vicino distrugge.'},
+      {da:'Newton del filo d\'erba', a:'Solo regolativo', r:'e coerente con il fatto che il finalismo sia',
+       perche:'Kant non dice che nella natura ci siano davvero scopi: dice che il nostro intelletto non riesce a pensare un organismo senza supporli. La previsione che nessuna spiegazione meccanica basti nasce da un limite del nostro modo di conoscere, non da una tesi sulla materia. Chi la cita come una previsione sbagliata sulla biologia le attribuisce piu di quanto affermi.'},
+      {da:'Modo di cercare', a:'Vivente', r:'e cio che si mette in opera davanti al',
+       perche:'Chi studia un occhio si chiede a che cosa serva ciascuna parte, e trovando qualcosa di apparentemente inutile cerca meglio invece di concludere che sia un residuo. È il principio di finalita al lavoro come regola di ricerca. Funziona benissimo e non e una scoperta sul mondo: e il modo in cui si guarda per trovare.'},
+      {da:'Gusto', a:'Figura dell\'artista', r:'viene abbandonato nel rovesciamento della',
+       perche:'Kant afferma che, dovendo scegliere, si sacrifichi il genio al gusto: l\'originalita senza misura produce mostri. Vent\'anni dopo la posizione e capovolta, e il genio diventa la figura che si autorizza da se, esente dalle regole comuni. Il passaggio dall\'artigiano di talento all\'artista eccezionale comincia in un libro che voleva impedirlo.'},
+      {da:'Idee estetiche', a:'Discute', r:'sono cio di cui si',
+       perche:'Un\'idea estetica fa pensare moltissimo senza che nessun concetto la esaurisca: e per questo che di un\'opera si continua a parlare senza che la conversazione si chiuda. La discussione sul gusto non e dimostrativa e non e nemmeno vuota — e il tentativo di far vedere all\'altro cio che si e visto, e talvolta riesce.'},
+      {da:'Aderente', a:'Buono', r:'e la specie di bellezza che si contamina con il',
+       perche:'Un cavallo o una chiesa non si giudicano solo per la forma: entra in gioco l\'idea di che cosa quella cosa debba essere. La bellezza aderente e dunque meno pura e piu frequente — quasi tutto cio che chiamiamo bello nella vita quotidiana e di questo tipo. La bellezza libera del fiore o dell\'arabesco e il caso raro, non la regola.'},
+      {da:'Male insieme', a:'Riflettente', r:'si spiega solo con il concetto di giudizio',
+       perche:'Il gusto e la biologia sembrano non avere nulla in comune, e il legame e nel tipo di giudizio: in entrambi i casi si ha un caso senza regola disponibile e si procede supponendo un ordine che non si puo dimostrare. Nel bello quell\'ordine si sente come piacere, nel vivente si usa come guida di ricerca. È la stessa operazione mentale in due materie diverse.'},
+      {da:'Necessario', a:'Piacevole', r:'e cio che manca al',
+       perche:'Nessuno pretende che agli altri debba piacere il gelato: il piacevole non obbliga nessuno. Dire «e bello» invece contiene una pretesa, e la si sente subito quando qualcuno dissente. Il criterio e alla portata di chiunque: se ti indispettisce che l\'altro non sia d\'accordo, non stai parlando di un gusto — o almeno non solo.'},
+      {da:'Fine naturale', a:'Determinante', r:'non si lascia trattare con un giudizio',
+       perche:'Per applicare una regola bisogna averla, e per gli organismi la regola meccanica non basta a produrre cio che si vede. Non resta che risalire dal caso a un modo di comprenderlo, cioe riflettere. È la ragione per cui la biologia, a differenza della fisica, ha continuato a usare un vocabolario di scopi anche quando ha smesso di credere a un progettista.'},
+      {da:'Schiller', a:'Libero gioco', r:'costruisce l\'educazione estetica sul',
+       perche:'Se davanti al bello le facolta si accordano liberamente, allora l\'esperienza estetica e l\'unica in cui l\'uomo non e ne costretto dalla natura ne obbligato dal dovere. Schiller ne fa un programma politico: un popolo diventa capace di liberta passando dalla bellezza, perche li impara a volere senza essere spinto. È la lettura piu fertile e piu infedele del libro.'}
+    ]
+  },
+  provocazione: {
+    titolo:'Dei gusti si discute',
+    durata:'55 minuti',
+    domandaMadre:'Quando dite che una cosa e bella, state parlando della cosa o di voi?',
+    perche:'Tutti ripetono che sui gusti non si discute, e nessuno si comporta come se fosse vero: ci si arrabbia, si insiste, si prova a far vedere all\'altro cio che non vede. Il paradosso e quello da cui Kant parte: il giudizio di gusto e un sentimento, quindi soggettivo, e pretende l\'accordo di tutti, quindi si comporta come se parlasse dell\'oggetto. La classe deve prima riconoscere la pretesa dentro le proprie reazioni, poi vedere come Kant la spiega, e infine — con il sublime — scoprire che c\'e un piacere che nasce da uno smacco e che dice qualcosa non sulle cose ma su chi le guarda.',
+    occorrente:'Niente. Se si vuole, tre immagini molto diverse proiettate.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'Due frasi.\n\nA me piacciono gli spinaci.\n\nQuel quadro e bello.\n\nSembrano la stessa cosa:\ndue gusti personali.\n\nAllora provate questo.\n\nSe qualcuno vi dice\nche gli spinaci\nnon gli piacciono,\n\nrispondete\n«va bene»\ne finisce li.\n\nSe qualcuno vi dice\nche la canzone che amate\ne brutta,\n\nche cosa fate?\n\nNon rispondete\n«va bene».\n\nInsistete.\n\nPerche?',
+       parlato:'Fai la domanda e lascia che protestino, perche protestano subito.\n\nPoi guida l\'osservazione senza dare la conclusione. Nessuno litiga per gli spinaci. Tutti litigano di musica, di film, di squadre, di vestiti. Se fossero la stessa cosa — semplici preferenze — non ci sarebbe niente per cui litigare.\n\nFai fare esempi loro, e vengono fuori a raffica. Chiedi ogni volta la stessa cosa: quando hai difeso quel gruppo o quel film, che cosa stavi sostenendo? Che ti piaceva, o che l\'altro sbagliava?\n\nQuasi sempre ammettono la seconda, e la ammettono ridendo.\n\nAllora nomina il fatto senza spiegarlo: quando diciamo che una cosa e bella, pretendiamo qualcosa dagli altri. Non lo pretendiamo per il gelato. Lo pretendiamo per la bellezza.\n\nChiudi con la domanda dell\'ora: stiamo dicendo qualcosa sulla cosa, o su di noi? E se e su di noi, con che diritto pretendiamo che gli altri siano d\'accordo?',
+       seDicono:[
+         {loro:'«Io non litigo mai, ognuno ha i suoi gusti.»',
+          tu:'Provo a metterti alla prova, senza offenderti. Se ti dico che il film che ami di piu e una cosa fatta male, dentro di te non succede niente? Non stai difendendo la tua preferenza — stai pensando che io non ho capito qualcosa. E «non hai capito» e un\'affermazione sull\'oggetto, non sul tuo gusto.'},
+         {loro:'«Sui gusti non si discute, lo dicono da sempre.»',
+          tu:'Lo dicono da sempre e non lo fa nessuno. Nota una cosa curiosa: quel proverbio si usa quasi solo per chiudere una discussione che sta andando male, mai per iniziarla. È una bandiera bianca, non una teoria — e oggi guardiamo perche la discussione era cominciata.'}
+       ]},
+
+      {minuti:'8–17', et:'Lo schieramento',
+       schermo:'Due posizioni.\n\nA.\nIl bello e soggettivo:\ndire che una cosa e bella\nsignifica dire\nche piace a me.\n\nB.\nEsiste il bello:\nqualcosa lo e\nanche se a me non piace,\ne posso sbagliarmi.\n\nSchieratevi.',
+       opzioni:['il bello e soggettivo: bello significa che piace a me', 'esiste il bello: si puo anche sbagliare a giudicare'],
+       parlato:'Fai schierare e conta. La posizione A prende quasi tutti, perche e quella che si dice.\n\nAdesso mettila alla prova, e usa due domande in fila.\n\nPrima: se bello significa solo che piace a te, allora la frase «e bello ma non mi piace» e senza senso. Chiedi se qualcuno l\'ha mai detta. Le mani si alzano quasi tutte — succede continuamente con un libro, un film, una canzone che si riconosce fatta bene e che non ci prende.\n\nSeconda: se bello significa solo che piace a te, allora nessuno puo migliorare il proprio gusto. Chiedi se il loro gusto di adesso e uguale a quello di quando avevano dieci anni. Dicono di no. Chiedi se e semplicemente cambiato o se e migliorato. Quasi tutti dicono migliorato — e migliorato presuppone una direzione.\n\nAdesso metti alla prova la posizione B, per non lasciarla comoda. Se esiste il bello, dove sta? Come si dimostra che una cosa e bella? C\'e un esperto che decide?\n\nQui si bloccano, ed e il punto giusto per fermarsi. Le due posizioni hanno entrambe qualcosa di vero e nessuna delle due regge da sola: e esattamente il problema che Kant si trova davanti.',
+       seDicono:[
+         {loro:'«Il mio gusto è cambiato, non migliorato.»',
+          tu:'Risposta coerente, e ti chiedo di tenerla fino in fondo. Allora quando qualcuno ascolta per la prima volta una cosa difficile e non gli dice niente, e dopo un anno lo colpisce, non e successo niente di meglio: e successo un cambiamento come un altro. Se sei disposto ad accettarlo, la tua posizione tiene. Molti non ci riescono.'},
+         {loro:'«Decidono i critici, e per questo esistono.»',
+          tu:'E se il critico dice che un\'opera e bella, tu sei obbligato a trovarla bella? Prova a rispondere onestamente: no. Puoi ascoltarlo, farti mostrare qualcosa che non avevi visto, cambiare idea. Ma nessuna autorita puo produrre in te il piacere. Tieni questa osservazione: fra un attimo diventa una tesi precisa.'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'La risposta di Kant\nnon sceglie fra le due.\n\nDice che il giudizio sul bello\nha tutte e due\nle caratteristiche,\n\ne che questa e la sua\nstranezza da spiegare.\n\nUno.\nÈ un piacere,\nquindi e mio.\nNessuna prova\npuo obbligarti a provarlo.\n\nDue.\nE pero pretende\nche tu sia d\'accordo.\nQuando dico bello\nnon dico «a me piace»:\nparlo come se la bellezza\nfosse nella cosa.\n\nCome si tengono insieme?\n\nKant osserva prima\nche cosa succede\nquando qualcosa ci sembra bello.\n\nNon lo vogliamo.\nNon ci serve.\nNon ci chiediamo\na che cosa serva.\n\nPiace\nsenza interesse.',
+       parlato:'Presenta il paradosso e chiedi alla classe di prenderlo sul serio prima di risolverlo.\n\nPoi lavora sul disinteresse, che e il concetto piu utile dell\'ora e si prova subito con tre test.\n\nPrimo test. Un paesaggio ti sembra bello. Se ti dicessi che quel terreno e in vendita e potresti comprarlo, la tua ammirazione riguardava questo? No. Il bello non e il desiderio di avere.\n\nSecondo test. Una casa ti sembra bella. Se ti dicessi che e comodissima, hai detto un\'altra cosa: hai detto che e buona. Il bello non e l\'utile.\n\nTerzo test, ed e il piu discusso: un dolce ti piace. Se ti chiedessi di dire perche e bello, ti accorgi che non e la parola giusta — e piacevole. Il piacevole passa dai sensi e riguarda te; il bello passa dalla forma.\n\nAdesso da\' la soluzione di Kant, e falla lenta. Se il piacere del bello non viene dall\'interesse, allora non viene da cio che ho di particolare io: gusti, bisogni, storia personale. Viene dal fatto che davanti a quella forma le mie facolta — quella che immagina e quella che ordina — si accordano da sole, senza che nessun concetto le obblighi.\n\nE quelle facolta le hanno tutti.\n\nEcco perche pretendo il tuo accordo: non perche abbia una prova, ma perche suppongo che tu sia fatto come me.\n\nDillo chiaramente, compresa la debolezza: e una supposizione. Kant la chiama senso comune e ammette di non poterla dimostrare. Tutta l\'universalita del gusto poggia li.',
+       seDicono:[
+         {loro:'«Ma a me un quadro piace perché mi ricorda mio nonno.»',
+          tu:'E allora, secondo Kant, quello non e un giudizio di bellezza: e un affetto, ed e prezioso. La differenza si vede da una domanda sola — pretendi che piaccia anche a me? Sul ricordo no, e infatti non litighi. Sulla bellezza si. È quella pretesa il segnale che stiamo parlando di un\'altra cosa.'},
+         {loro:'«Il senso comune non esiste: siamo tutti diversi.»',
+          tu:'Obiezione forte, ed e la stessa che gli fanno gli studiosi. Nota pero che se avessi ragione, dovremmo smettere di discutere di gusto — e non ci riusciamo. Kant registra un fatto: continuiamo a comportarci come se un accordo fosse possibile. La sua ipotesi spiega quel comportamento; se ne hai una migliore, e il momento di dirla.'}
+       ]},
+
+      {minuti:'28–38', et:'Il testo',
+       schermo:'Dal paragrafo settimo.\n\nSul piacevole\nognuno ammette senza problemi\nche il suo giudizio\nvalga solo per lui.\n\nSe dice che il vino\ndelle Canarie e piacevole,\nsi lascia correggere\ne dice: e piacevole a me.\n\nNessuno lo rimprovera\nper questo,\ne nessuno gli fa notare\nche sbaglia.\n\nCol bello e diverso.\n\nSarebbe ridicolo\nche uno dicesse:\n\nquesto oggetto\ne bello per me.\n\nNon basta\nche piaccia a lui.\n\nChi dichiara bella una cosa\npretende\nche gli altri concordino,\n\ne li rimprovera\nse giudicano altrimenti.\n\nParla della bellezza\ncome se fosse\nuna proprieta delle cose.',
+       testo:{fonte:'Immanuel Kant, Critica della facoltà di giudizio, § 7 (1790)',
+              glossa:'Il paragrafo non dimostra nulla: descrive un uso linguistico e ne trae una conseguenza. La frase «bello per me» suona sbagliata, mentre «piacevole per me» suona normale — e questa asimmetria, che chiunque riconosce, è il dato da spiegare. Kant osserva che chi giudica bello «rimprovera» chi dissente, cioè si comporta come se ci fosse una regola, e insieme non è in grado di esibirla. È il modo di procedere di tutta la Critica del Giudizio: partire da come effettivamente parliamo e chiedersi che cosa debba essere vero perché quel modo di parlare non sia assurdo.'},
+       parlato:'Leggi il passo e fermati sulla frase che suona male: «questo oggetto e bello per me».\n\nFalla provare ad alta voce. La classe sente che stona, e la cosa importante e che la sente senza saperne il motivo — e proprio il fatto che Kant vuole spiegare.\n\nPoi lavora sulla parola rimprovera, perche e la piu precisa del passo. Chi dissente sul gusto non viene solo contraddetto: viene rimproverato. Nel rimprovero c\'e l\'idea che l\'altro avrebbe dovuto vedere.\n\nFai fare l\'esperimento inverso, che funziona sempre. Chiedi a qualcuno di nominare una cosa che tutti trovano bella e che a lui non dice niente. Poi chiedigli come si sente a dirlo. Quasi sempre risponde qualcosa come «forse non ho capito io» — e quello e esattamente il segnale: si suppone che ci sia qualcosa da capire.\n\nPoi enuncia il risultato, e falla ripetere. Il giudizio di gusto non e una conoscenza e non e un capriccio. È una terza cosa: un sentimento che avanza una pretesa.\n\nE aggiungi la conseguenza pratica, che a loro serve: per questo la discussione sul gusto non e ne dimostrativa ne inutile. Non si prova niente e si puo mostrare qualcosa. Chi ti fa notare un dettaglio che non avevi visto non ti ha dimostrato che l\'opera e bella — ha reso possibile che tu lo senta.',
+       seDicono:[
+         {loro:'«Ma allora chi ha ragione fra due che non sono d\'accordo?»',
+          tu:'Forse nessuno dei due, e questo non chiude la discussione: la mantiene aperta. Nota che e cosi anche in altre cose importanti — nessuno dimostra a un amico che si sta comportando male, e glielo si dice lo stesso, e a volte funziona. Esiste un tipo di discorso che non prova e non e per questo vuoto.'},
+         {loro:'«Kant sceglie sempre esempi di fiori e paesaggi.»',
+          tu:'Osservazione giusta, e non e casuale: i suoi esempi migliori sono cose senza scopo, dove nessuna idea di funzione disturba il giudizio. Le chiama bellezze libere. Poi ammette che quasi tutto cio che chiamiamo bello nella vita — una chiesa, un corpo, un\'automobile — non e cosi puro. La teoria e piu pulita del suo oggetto, ed e un difetto reale.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'Adesso una cosa\nche il bello non spiega.\n\nUna tempesta in mare.\nUna parete di roccia\nche vi sovrasta.\nUn temporale enorme\nvisto da una finestra.\n\nNon sono belle.\n\nSono spaventose.\n\nE ci piacciono.\n\nAnzi:\nci piacciono\nmolto piu\ndi un giardino ordinato.\n\nPerche ci piace\ncio che ci fa sentire\npiccolissimi?\n\nKant risponde cosi.\n\nDavanti a cio che e smisurato\nl\'immaginazione\nprova a contenerlo\ne fallisce.\n\nQuel fallimento\nfa male.\n\nMa nello stesso istante\nci accorgiamo\nche stiamo pensando\nqualcosa\nche nessuna grandezza\npuo contenere.\n\nLa tempesta\npuo distruggere il corpo.\n\nNon puo\ntoccare\ncio che in quel momento\nsta giudicando.',
+       parlato:'Cambia registro e presenta il sublime come un fenomeno da spiegare, non come una definizione.\n\nFai raccogliere esempi loro, e vengono fuori subito: il mare grosso, la montagna, il cielo di notte, certe musiche, i film che fanno paura e si guardano lo stesso.\n\nPoi fai vedere la struttura, che e la parte concettuale e va fatta lentamente.\n\nPrimo passaggio: c\'e uno smacco. L\'immaginazione tenta di abbracciare e non ce la fa. Questo dispiace.\n\nSecondo passaggio: nello smacco si scopre qualcosa. Se posso pensare l\'infinito che non riesco a immaginare, allora in me c\'e qualcosa che non e misurabile in metri.\n\nTerzo passaggio, e qui il libro si aggancia agli altri due: quello che si scopre e la stessa cosa che la Critica della ragion pratica aveva stabilito con un ragionamento. Solo che qui non si ragiona — si sente.\n\nPoi la condizione, che i ragazzi trovano da soli se la si chiede: si gode la tempesta solo dal riparo. Chi ci sta dentro non prova sublime, prova paura.\n\nUsa questa condizione per una domanda seria, e lasciala aperta: se il sublime richiede di essere al sicuro, e un\'esperienza di chi puo permettersela? Chi ha fame non trova sublime il deserto.\n\nInfine chiudi il cerchio con la seconda meta del libro, in due frasi. Kant applica lo stesso tipo di giudizio agli esseri viventi: guardando un occhio o una radice non riusciamo a non pensare a che cosa servano, anche sapendo che nessuno li ha progettati. Anche li supponiamo un ordine che non possiamo dimostrare. È lo stesso gesto mentale del gusto, fatto in biologia.',
+       seDicono:[
+         {loro:'«Allora ci piace avere paura?»',
+          tu:'Non la paura vera: quella non piace a nessuno. Piace la paura da cui si e al riparo, ed e per questo che esistono i film dell\'orrore e le montagne russe. Kant direbbe che quello che si gode non e il pericolo ma la scoperta di non essere ridotti a esso — e questa e una tesi che puoi mettere alla prova la prossima volta che guardi un temporale.'},
+         {loro:'«Il sublime è solo il bello in grande.»',
+          tu:'No, ed e la distinzione piu netta del libro. Il bello riposa: c\'e una forma, e le facolta si accordano. Il sublime sconvolge: la forma manca, e le facolta entrano in conflitto. Il primo piacere e disteso, il secondo passa da un dolore. Se fossero la stessa cosa non ci sarebbe bisogno di due parole, e ogni lingua ne ha due.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'La domanda era:\n\nquando dite che una cosa\ne bella,\n\nparlate della cosa\no di voi?\n\nRisposta di Kant:\n\ndi voi.\n\nMa non del vostro\ncapriccio.\n\nDi cio che avete in comune\ncon chiunque altro.\n\nEcco perche insistete.\n\nDa portarsi via:\n\nesiste un tipo di discussione\nin cui nessuno puo\ndimostrare niente\n\ne in cui tacere\nsarebbe sbagliato.\n\nNon si prova.\n\nSi fa vedere.\n\nE ogni tanto\nl\'altro vede.',
+       parlato:'Riprendi i numeri dello schieramento e chiedi se qualcuno si sposterebbe. Di solito qualcuno si sposta, ed e uno dei pochi capitoli in cui succede.\n\nPoi separa le due cose e falle enunciare a loro: «mi piace» e una notizia su di me e non chiede niente a nessuno; «e bello» avanza una pretesa. Non sono la stessa frase, e usarle come sinonimi impoverisce tutte e due.\n\nPoi da\' lo strumento, e formulalo in modo che serva oltre l\'ora. Quando vi trovate a discutere, chiedetevi che tipo di discussione sia. Se e sui fatti, si controlla. Se e sui gusti nel senso stretto, si lascia stare. Se e sul bello — o sul giusto, che si comporta in modo simile — non si dimostra e non si tace: si prova a far vedere.\n\nRendi concreto il far vedere, perche altrimenti resta una formula. Significa indicare un dettaglio, raccontare come e fatta una cosa, mettere due opere accanto, dare tempo. Nessuna di queste e una prova, e tutte funzionano qualche volta.\n\nUltima osservazione, e vale la pena farla: questo libro e stato scritto da un uomo di sessantasei anni che aveva gia stabilito che la conoscenza ha limiti stretti e che il dovere non ammette eccezioni. Il terzo libro e quello in cui ammette che fra la natura e la liberta ci sia qualcosa che non si dimostra e si sente. È il piu aperto dei tre, ed e quello che ha avuto piu figli — l\'estetica moderna, il romanticismo, e in parte il modo in cui ancora oggi la biologia parla di funzioni.\n\nPer il seguito: con questo si chiude Kant. La prossima volta si vede che cosa ne fanno i suoi lettori — e la prima cosa che fanno e togliere di mezzo la cosa in se.',
+       seDicono:[
+         {loro:'«Quindi non c\'è un bello vero.»',
+          tu:'Non nel senso di una proprieta che si misuri, no. Ma nota che cosa resta, e non e poco: una pretesa legittima, la possibilita di educarsi, e discussioni che qualche volta arrivano da qualche parte. Se il gusto fosse davvero solo privato, niente di tutto questo avrebbe senso — e invece succede tutti i giorni.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'La regola che viene dopo',
+       corpo:'Kant definisce il genio come la disposizione naturale attraverso cui la natura dà la regola all\'arte. Il genio non segue regole apprese e non sa dire come faccia: non possiede un metodo trasmissibile, e per questo la sua opera diventa essa stessa una regola, che altri seguiranno imitandone lo spirito e non la lettera.\n\nAggiunge però che il genio senza gusto produce opere originali e mostruose, e che dovendo sacrificare l\'uno all\'altro si sacrifichi il genio.\n\nNel giro di vent\'anni la posizione si rovescia: per i romantici il genio è la figura che si autorizza da sé, e il gusto diventa la prudenza dei mediocri.',
+       chiedi:'Se una regola d\'arte si riconosce solo dopo l\'opera, che cosa insegna una scuola d\'arte? E quel rovesciamento — l\'artista come persona eccezionale, esente dalle regole comuni — è una conquista o un privilegio che abbiamo smesso di discutere?'},
+      {titolo:'Da riva',
+       corpo:'Kant precisa che le rocce sospese, le nuvole cariche di lampi, i vulcani, gli uragani e l\'oceano in tempesta sono tanto più attraenti quanto più fanno paura, purché si sia in un luogo sicuro.\n\nDalla condizione dipende tutta l\'esperienza: chi si trova realmente nel pericolo non giudica sublime nulla, perché è occupato a salvarsi.\n\nNe segue che il sublime richieda una distanza — fisica, o data dalla cornice di un quadro, di uno schermo, di una pagina.',
+       chiedi:'Se il sublime richiede di essere al sicuro, che cosa dice questo di chi lo prova? E che differenza c\'è fra guardare una tempesta dalla finestra e guardare, sullo stesso schermo, un disastro che sta accadendo a delle persone?'},
+      {titolo:'Il filo d\'erba',
+       corpo:'Kant sostiene che sia assurdo sperare che un giorno sorga un Newton capace di spiegare la produzione di un filo d\'erba secondo leggi naturali che nessuna intenzione abbia ordinato.\n\nSettant\'anni dopo Darwin propone un meccanismo — variazione e selezione — che produce organi apparentemente progettati senza alcun progetto.\n\nEppure la biologia continua a chiedersi a che cosa serva un organo, e trovandone uno inutile cerca meglio invece di concludere che sia un caso. La lingua degli scopi è rimasta, mentre gli scopi sono usciti dalla teoria.',
+       chiedi:'Perché una scienza che ha eliminato i fini continua a parlarne? È soltanto un modo di dire comodo, oppure quel modo di dire fa un lavoro che nessun altro vocabolario riesce a fare?'}
+    ],
+    testi:[
+      {fonte:'Kant, Critica della facoltà di giudizio, § 2 (1790)',
+       corpo:'Kant osserva che per dire se una cosa sia bella non si vuole sapere se a noi o a chiunque altro importi qualcosa dell\'esistenza dell\'oggetto, ma come lo giudichiamo nella semplice contemplazione; e conclude che il gusto è la facoltà di giudicare un oggetto mediante un piacere del tutto disinteressato.',
+       glossa:'È la definizione da cui discendono tutte le altre, e in classe si verifica con tre domande: lo vuoi? ti serve? sai a che cosa serve? Se le risposte sono no, resta soltanto la forma — ed è di quella che si sta parlando. La conseguenza più utile è che il disinteresse spiega perché il giudizio possa pretendere l\'accordo altrui: non venendo da ciò che ho di particolare io, può appellarsi a ciò che ho in comune con chiunque.'},
+      {fonte:'Kant, Critica della facoltà di giudizio, § 23 e § 28 — il sublime (1790)',
+       corpo:'Kant scrive che rocce sospese e minacciose, nubi che si accumulano accompagnate da lampi e tuoni, vulcani nella loro potenza distruttrice, uragani e l\'oceano sconvolto rendono la nostra capacità di resistere piccolissima di fronte alla loro potenza; ma che il loro aspetto diventa tanto più attraente quanto più fa paura, purché ci si trovi al sicuro, perché scopriamo in noi una facoltà di giudicare che ci rende indipendenti dalla natura.',
+       glossa:'Il passo contiene insieme la definizione del sublime dinamico e la sua condizione. Va letto notando che l\'esperienza non riguarda la natura ma chi la guarda: ciò che si ammira non è la tempesta, è la scoperta di non essere riducibili a ciò che la tempesta può distruggere. È il punto in cui la terza Critica tocca la seconda, con il sentimento invece che con l\'argomento.'},
+      {fonte:'Kant, Critica della facoltà di giudizio, § 65 — l\'organismo (1790)',
+       corpo:'Kant afferma che in un prodotto della natura organizzato ogni parte è insieme mezzo e fine rispetto alle altre e rispetto al tutto, e che l\'organismo si produce da sé: a differenza dell\'orologio, in cui una parte esiste per l\'altra ma nessuna produce l\'altra, e la causa che lo ha fatto sta al di fuori di esso.',
+       glossa:'Il confronto fra l\'orologio e l\'organismo è il modo più efficace per far capire perché il finalismo, secondo Kant, non sia eliminabile dalla biologia: un meccanismo rimanda a un costruttore esterno, un vivente no. Da qui la conclusione più cauta e più duratura del libro: dobbiamo pensare gli organismi come se fossero organizzati per fini, senza per questo affermare che lo siano davvero. È un principio di ricerca, non una tesi sul mondo.'}
+    ],
+    compito:'Mezza pagina. Prendete una cosa che voi trovate bella e che a qualcuno vicino a voi non dice niente — una canzone, un film, un posto. Non scrivete perché vi piace: provate a scrivere ciò che gli fareste notare per metterlo nella condizione di vederla come la vedete voi. Poi aggiungete una riga onesta: pensate che funzionerebbe? E se no, che cosa vi dice questo sul tipo di discussione che state facendo?',
+    fonti:[
+      'I. Kant, Critica della facoltà di giudizio (1790): introduzione, Analitica del bello, Analitica del sublime, §§ 46-50 sul genio, §§ 64-68 sui fini naturali',
+      'F. Schiller, Lettere sull\'educazione estetica dell\'uomo (1795)',
+      'E. Burke, Ricerca sull\'origine delle nostre idee del sublime e del bello (1757)',
+      'H.-G. Gadamer, Verità e metodo, la parte sulla soggettivazione dell\'estetica',
+      'P. Guyer, Kant and the Claims of Taste; S. Givone, Storia dell\'estetica',
+      'E. Garroni, Estetica ed epistemologia; sul finalismo, E. Mayr, Il perché dell\'evoluzione'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',
