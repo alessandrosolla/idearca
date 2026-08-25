@@ -12186,6 +12186,231 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Filosofia moderna · 20 — Kant: la Critica della ragion pura': {
+  mappa: {
+    n:'La Critica della ragion pura', d:'come e fatto l\'apparato con cui conosciamo, e dove si ferma',
+    f:[
+      {r:'e prima di tutto', n:'Un libro difficile', d:'ottocento pagine costruite come un edificio: conviene sapere da dove si entra',
+       f:[
+         {r:'si divide in una', n:'Dottrina degli elementi', d:'la parte lunga: di che cosa disponiamo per conoscere'},
+         {r:'e in una', n:'Dottrina del metodo', d:'la parte breve e quasi mai letta: quale disciplina la ragione debba imporsi'},
+         {r:'gli elementi seguono tre facolta: la', n:'Sensibilita', d:'riceve, e ne tratta l\'estetica trascendentale'},
+         {r:'l\'', n:'Intelletto', d:'pensa e unifica, e ne tratta l\'analitica trascendentale'},
+         {r:'e la', n:'Ragione', d:'pretende di chiudere il conto, e ne tratta la dialettica trascendentale'},
+         {r:'con una parola da chiarire subito', n:'Trascendentale', d:'non significa cio che va oltre l\'esperienza: significa la conoscenza delle condizioni che la rendono possibile',
+          f:[{piu:true, r:'da non confondere con', n:'Trascendente', d:'che invece indica proprio cio che sta oltre ogni esperienza possibile: una sillaba di differenza, e due significati opposti'}]},
+         {r:'esce in due edizioni, con la parte centrale', n:'Riscritta', d:'1781 e 1787: la deduzione viene rifatta da capo perche quasi nessuno l\'aveva capita'},
+         {piu:true, r:'e con una simmetria', n:'Architettonica', d:'tutto a gruppi di tre e di quattro; Hegel la trovera artificiosa, e non e il solo'}
+       ]},
+
+      {r:'comincia dall\'', n:'Estetica trascendentale', d:'la parte piu breve e la piu difficile da accettare: dove stanno lo spazio e il tempo',
+       f:[
+         {r:'chiede se lo spazio sia una cosa o una proprieta delle cose, e risponde', n:'Ne l\'uno ne l\'altra', d:'non e un contenitore che esista per conto suo, e non e una qualita che gli oggetti si portino dietro'},
+         {r:'perche si riesce a pensare uno', n:'Spazio senza oggetti', d:'e non si riesce in nessun modo a rappresentarsi l\'assenza dello spazio'},
+         {r:'quindi lo spazio e la', n:'Forma del senso esterno', d:'il modo in cui riceviamo qualunque cosa ci arrivi da fuori'},
+         {r:'e il tempo la', n:'Forma del senso interno', d:'il modo in cui riceviamo i nostri stessi stati: e per questo passa dal tempo tutto, anche cio che viene da fuori'},
+         {r:'da cui la doppia tesi dell\'', n:'Idealita trascendentale', d:'spazio e tempo non appartengono alle cose in se stesse'},
+         {r:'insieme alla loro', n:'Realta empirica', d:'e pero valgono per ogni oggetto della nostra esperienza, senza una sola eccezione: non sono un\'illusione'},
+         {r:'e questo fonda la', n:'Matematica', d:'la geometria costruisce nello spazio, l\'aritmetica conta nel tempo: ecco perche vale prima di qualunque verifica',
+          f:[{piu:true, r:'con l\'obiezione delle', n:'Geometrie non euclidee', d:'un secolo dopo se ne costruiscono altre e la fisica ne usera una: la tesi va riformulata, non si salva com\'e'}]}
+       ]},
+
+      {r:'prosegue con le', n:'Categorie', d:'perche ricevere non basta: bisogna anche unificare',
+       f:[
+         {r:'i pensieri senza contenuto sono', n:'Vuoti', d:'un concetto a cui non corrisponde nessuna intuizione non fa conoscere niente'},
+         {r:'e le intuizioni senza concetti sono', n:'Cieche', d:'ricevere dati senza ordinarli non e ancora conoscere'},
+         {r:'l\'intelletto dispone di dodici concetti puri divisi in', n:'Quantita, qualita, relazione, modalita', d:'e fra le relazioni stanno la sostanza e la causa'},
+         {r:'ricavati dalla', n:'Tavola dei giudizi', d:'dalle forme in cui si puo giudicare si risale alle forme in cui si puo pensare un oggetto',
+          f:[{piu:true, r:'derivazione considerata il punto', n:'Piu contestato del libro', d:'la logica di scuola su cui si appoggia e storica, non eterna: se cade quella, cade la tavola'}]},
+         {r:'per cui sostanza e causa non sono cose che si trovino nel mondo ma', n:'Regole per costruire l\'oggetto', d:'non le incontriamo: sono cio con cui un insieme di impressioni diventa una cosa'}
+       ]},
+
+      {r:'e si regge tutto su un', n:'Punto di appoggio', d:'uno solo, e da esso dipende se l\'edificio sta in piedi o crolla',
+       f:[
+         {r:'ogni rappresentazione deve poter essere accompagnata da un', n:'Io penso', d:'altrimenti sarebbe qualcosa che accade, ma non a nessuno'},
+         {r:'che Kant chiama', n:'Appercezione trascendentale', d:'l\'unita per cui rappresentazioni diverse sono mie e non tante isole separate'},
+         {r:'e che non e un\'', n:'Anima', d:'non e una sostanza ne l\'io che ciascuno conosce di se: e una funzione, e come oggetto non si conosce'},
+         {r:'da qui la', n:'Deduzione trascendentale', d:'la prova che le categorie valgono per gli oggetti, perche senza di esse non ci sarebbe nessun oggetto',
+          f:[{piu:true, r:'pagine che lui stesso dichiara', n:'Le piu faticose', d:'scrive di non aver mai incontrato lavoro piu difficile, e sei anni dopo le rifa da capo'}]},
+         {r:'resta pero da spiegare come un concetto puro si applichi a un dato sensibile, e la risposta e lo', n:'Schematismo', d:'il tempo fa da mediatore, perche e insieme puro e sensibile',
+          f:[{piu:true, r:'che definisce un\'', n:'Arte nascosta', d:'un\'arte nascosta nelle profondita dell\'animo umano, di cui difficilmente strapperemo il segreto alla natura'}]}
+       ]},
+
+      {r:'da cui segue che l\'intelletto e', n:'Legislatore della natura', d:'ed e la risposta definitiva a Hume',
+       f:[
+         {r:'dalle categorie discendono i', n:'Principi', d:'le proposizioni che valgono per ogni esperienza possibile',
+          f:[{r:'fra cui che ogni mutamento avviene secondo la', n:'Legge di causa ed effetto', d:'e che in ogni mutamento qualcosa permane'}]},
+         {r:'per cui l\'intelletto non ricava le leggi dalla natura ma gliele', n:'Prescrive', d:'la formula piu provocatoria del libro, e va presa alla lettera'},
+         {r:'dove natura significa', n:'L\'insieme dei fenomeni ordinati', d:'non il mondo in se stesso, ma cio che ci appare in quanto sta sotto regole'},
+         {r:'cosi Hume riceve una risposta', n:'Che gli da e non gli da ragione', d:'la causa non viene dall\'esperienza — e vero — perche e cio che rende possibile l\'esperienza',
+          f:[{piu:true, r:'ma la garanzia riguarda solo il', n:'Principio generale', d:'che ogni evento abbia una causa e assicurato; quale sia la causa di questo evento resta tutto da cercare'}]}
+       ]},
+
+      {r:'e ne risulta un', n:'Confine', d:'che cosa resta fuori, e come lo si nomina senza contraddirsi',
+       f:[
+         {r:'conosciamo i', n:'Fenomeni', d:'le cose come appaiono alle nostre condizioni: e non e poco, e tutta la scienza'},
+         {r:'e non i', n:'Noumeni', d:'le cose come sarebbero indipendentemente da quelle condizioni'},
+         {r:'il noumeno e un', n:'Concetto limite', d:'serve a segnare il confine, non a descrivere un secondo mondo di cui si sappia qualcosa',
+          f:[{piu:true, r:'con l\'obiezione di', n:'Jacobi', d:'se le cose in se ci affettano, si applica loro la causalita, che pero doveva valere solo per i fenomeni: senza la cosa in se non si entra nel sistema, con essa non ci si resta'}]},
+         {r:'e il territorio conosciuto e paragonato a un\'', n:'Isola', d:'la terra della verita, circondata da un oceano in cui le nebbie fanno credere che ci siano altre terre'}
+       ]},
+
+      {r:'poi arriva la', n:'Dialettica', d:'che cosa succede quando la ragione oltrepassa il confine',
+       f:[
+         {r:'la ragione cerca l\'', n:'Incondizionato', d:'non si accontenta di una condizione dopo l\'altra: vuole cio che chiude la serie'},
+         {r:'e produce tre', n:'Idee', d:'anima, mondo, Dio: non sono conoscenze, sono le tre totalita che pretende di afferrare'},
+         {r:'sull\'anima sbaglia con i', n:'Paralogismi', d:'scambia l\'io penso, che e una funzione, per una sostanza semplice e immortale'},
+         {r:'sul mondo cade nelle', n:'Antinomie', d:'quattro coppie di tesi opposte, ciascuna dimostrata con argomenti che reggono',
+          f:[
+            {r:'come quella sull\'', n:'Inizio del mondo', d:'ha cominciato nel tempo oppure dura da sempre: si dimostrano tutte e due'},
+            {piu:true, r:'e la terza, che riguarda la', n:'Liberta', d:'tutto avviene secondo natura, oppure esiste anche una causalita per liberta: e la porta della filosofia morale'}
+          ]},
+         {r:'e su Dio smonta le tre', n:'Prove', d:'ontologica, cosmologica, fisico-teologica',
+          f:[{r:'mostrando che le altre due si appoggiano all\'', n:'Ontologica', d:'e che questa cade perche l\'esistenza non e un predicato'}]}
+       ]},
+
+      {r:'e alla fine indica', n:'Che cosa resta', d:'la parte che quasi nessuno ricorda, e che regge il resto',
+       f:[
+         {r:'le idee non conoscono nulla ma hanno un uso', n:'Regolativo', d:'sono compiti: cerca sempre condizioni piu profonde, procedi come se il sapere fosse unificabile'},
+         {r:'e l\'errore che le accompagna e un\'', n:'Illusione trascendentale', d:'non un abbaglio da correggere una volta, ma una tendenza inevitabile della ragione',
+          f:[{r:'come le illusioni', n:'Ottiche', d:'il bastone immerso continua a sembrare spezzato anche dopo che si e capito perche: si smaschera, non si elimina'}]},
+         {r:'il libro apre l\'', n:'Idealismo tedesco', d:'Fichte, Schelling ed Hegel partono tutti dal togliere di mezzo la cosa in se'},
+         {piu:true, r:'e un secolo dopo torna con il', n:'Neokantismo', d:'esaurito l\'idealismo, la parola d\'ordine diventa tornare a Kant'},
+         {r:'e resta la formula che si ripete da due secoli', n:'Con Kant o contro Kant', d:'si puo filosofare con lui o contro di lui, non senza di lui'}
+       ]}
+    ],
+    incroci:[
+      {da:'Forma del senso interno', a:'Schematismo', r:'e cio che rende possibile lo',
+       perche:'Il problema era come un concetto puro possa applicarsi a un dato sensibile, se fra i due non c\'e niente in comune. La soluzione sfrutta il fatto che il tempo e insieme una forma pura e la forma di ogni contenuto sensibile: sta da entrambe le parti, e per questo puo fare da ponte. Lo schema della sostanza e la permanenza nel tempo, quello della causa e la successione regolata.'},
+      {da:'Vuoti', a:'Noumeni', r:'e la ragione per cui non conosciamo i',
+       perche:'La cosa in se e pensabile senza contraddizione, e per questo la si puo nominare; ma nessuna intuizione le corrisponde, e un concetto senza intuizione e vuoto. Non e che Kant si dimentichi di indagarla: e il suo stesso criterio a stabilire che di essa non ci sia niente da sapere.'},
+      {da:'Io penso', a:'Paralogismi', r:'viene scambiato per una sostanza nei',
+       perche:'Poiche l\'io penso accompagna tutto ed e sempre identico, sembra naturale concluderne che sia una cosa semplice e permanente, cioe un\'anima immortale. L\'errore sta nel trattare una condizione del conoscere come un oggetto conosciuto. È lo stesso passo falso che Kant smaschera ovunque, e qui colpisce la piu antica delle dimostrazioni metafisiche.'},
+      {da:'Legge di causa ed effetto', a:'Liberta', r:'sembra rendere impossibile la',
+       perche:'Se ogni evento ha una causa che lo determina, anche la decisione presa un istante fa era determinata, e la responsabilita svanisce. La terza antinomia mostra che la tesi e l\'antitesi si dimostrano entrambe, e la soluzione e la stessa delle altre: il determinismo vale per i fenomeni, e cio non decide nulla su cio che siamo indipendentemente da come ci appariamo. È da questa fessura che passera tutta la filosofia morale.'},
+      {da:'Idealita trascendentale', a:'Inizio del mondo', r:'e cio che scioglie la questione dell\'',
+       perche:'Se il mondo fosse una cosa in se, data tutta insieme, dovrebbe essere o finito o infinito, e una delle due prove sarebbe sbagliata. Ma il mondo e la serie dei fenomeni, che non e mai data per intero: si percorre indagando, e non si arriva mai al termine. Tesi e antitesi sono allora false entrambe, perche condividono un presupposto che non regge.'},
+      {da:'Geometrie non euclidee', a:'Realta empirica', r:'obbligano a riformulare la',
+       perche:'Kant riteneva che lo spazio euclideo fosse la forma necessaria di ogni intuizione. Ottant\'anni dopo si costruiscono geometrie diverse, e la relativita generale ne usa una per descrivere lo spazio fisico. Cade la tesi specifica; resta in piedi quella generale, che l\'esperienza abbia condizioni di forma non ricavate dall\'esperienza — ed e questa la parte che il Novecento ha continuato a discutere.'},
+      {da:'Prescrive', a:'Isola', r:'e cio che vale dentro i confini dell\'',
+       perche:'Che l\'intelletto detti le leggi alla natura suona come una pretesa smisurata e insieme e una rinuncia enorme: le detta al mondo che ci appare, non a quello che sarebbe per conto suo. Il potere e assoluto dentro l\'isola e nullo fuori. Le due affermazioni piu ricordate del libro — la piu ambiziosa e la piu modesta — sono la stessa affermazione vista dai due lati.'},
+      {da:'Ontologica', a:'Incondizionato', r:'e il tentativo piu puro di afferrare l\'',
+       perche:'La prova ontologica vuole ricavare l\'esistenza di Dio dal solo concetto, senza appoggiarsi a nulla di dato: e la ragione che pretende di chiudere la serie stando dentro il pensiero. Kant vi aveva gia risposto nel 1763 osservando che l\'esistenza non aggiunge nulla a un concetto, ed e la stessa mossa che nella Dialettica diventa un metodo generale.'},
+      {da:'Riscritta', a:'Le piu faticose', r:'riguarda soprattutto le pagine',
+       perche:'Fra le due edizioni Kant rifa da capo proprio la sezione che considerava la piu difficile, aggiunge una confutazione esplicita dell\'idealismo e riordina l\'argomentazione. È il segno che il punto piu importante del libro era anche quello che si reggeva peggio — e che l\'autore lo sapeva.'},
+      {da:'Regolativo', a:'Idee', r:'e l\'unico uso legittimo che resti alle',
+       perche:'Dimostrare che anima, mondo e Dio non sono conoscibili non significa buttarli via. Restano come direzioni di ricerca: cerca sempre una condizione piu profonda, tratta i fenomeni come se formassero un tutto ordinato. Sono comandi al ricercatore, non descrizioni di oggetti — ed e la ragione per cui la scienza continua a cercare unificazioni che non ha mai trovato.'},
+      {da:'Trascendente', a:'Antinomie', r:'e cio che la ragione pretende di raggiungere nelle',
+       perche:'Le antinomie non nascono da errori di ragionamento ma dall\'aver applicato le categorie oltre l\'esperienza possibile: si usano concetti che funzionano benissimo dentro il mondo per parlare del mondo nel suo complesso, che non e un oggetto dato. Il ragionamento e corretto, l\'uso e illegittimo, e il risultato e una contraddizione.'},
+      {da:'Appercezione trascendentale', a:'Idealismo tedesco', r:'e il punto da cui parte l\'',
+       perche:'Fichte prende l\'unita che tiene insieme ogni rappresentazione e ne fa il principio da cui dedurre tutto, togliendo la cosa in se che la limitava dall\'esterno. Da li nascono Schelling ed Hegel. Kant considerava quella deriva un fraintendimento e lo dichiaro pubblicamente, senza riuscire a fermarla.'},
+      {da:'Piu contestato del libro', a:'Con Kant o contro Kant', r:'non impedisce che valga la formula',
+       perche:'La tavola delle categorie si appoggia a una logica che oggi nessuno userebbe, e con essa cade una parte dell\'impianto. Ma la domanda che il libro pone — che cosa il soggetto metta in cio che conosce — non e mai piu uscita dalla filosofia, ne dalla psicologia, ne dalle scienze cognitive. Un\'opera puo essere superata nei risultati e restare inaggirabile nella domanda.'}
+    ]
+  },
+  provocazione: {
+    titolo:'Le due dimostrazioni',
+    durata:'55 minuti',
+    domandaMadre:'Il mondo ha avuto un inizio, oppure c\'e sempre stato?',
+    perche:'È la prima antinomia della ragion pura, ed e il modo migliore per far vedere a una classe come lavora la Dialettica trascendentale. La domanda sembra astronomica e non lo e: qualunque risposta si dia, esiste una dimostrazione valida della risposta contraria. La classe deve schierarsi, ricevere ciascuna meta la propria prova, scoprire che entrambe funzionano — e solo allora arrivare alla soluzione di Kant, che non sta nel trovare l\'errore in una delle due ma nel mostrare che tutte e due poggiano su un presupposto sbagliato. Da qui lo strumento che vale per tutta la vita: quando una discussione e ferma da secoli con buoni argomenti da entrambe le parti, conviene cercare cio che le due parti credono insieme.',
+    occorrente:'La lavagna divisa in due colonne.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'Una domanda sola.\n\nIl mondo ha avuto un inizio\nnel tempo,\n\noppure e sempre esistito?\n\nAttenzione:\nnon sto chiedendo\nse c\'e stato il big bang.\n\nQuello e un evento\ndentro la storia dell\'universo.\n\nSto chiedendo un\'altra cosa.\n\nSe c\'e stato un primo istante,\n\nche cosa c\'era prima?\n\nE se non c\'e stato,\n\nsignifica che per arrivare\na oggi\nsono dovuti passare\ninfiniti momenti.\n\nTutti.\nUno dopo l\'altro.\n\nE ci siamo arrivati.',
+       parlato:'Poni la domanda e lascia due minuti di silenzio prima di raccogliere qualsiasi cosa.\n\nPoi togli subito di mezzo la scorciatoia, perche arriva sempre: qualcuno dira che la scienza ha gia risposto con il big bang.\n\nSpiega perche non basta, senza sminuire la fisica. Il big bang e l\'inizio dell\'espansione di questo universo. La domanda filosofica e diversa: quel momento e stato il primo in assoluto, oppure c\'era gia del tempo? E se rispondi che il tempo comincia li, hai detto qualcosa di molto strano — che c\'e stato un istante prima del quale non c\'era nessun prima.\n\nPoi fai sentire l\'altra corna, che e altrettanto strana. Se il mondo non ha avuto inizio, allora prima di oggi e trascorsa una serie infinita di momenti. Ma una serie infinita, per definizione, non si finisce mai di percorrere. E allora come siamo arrivati a oggi?\n\nNon risolvere niente. Chiudi dicendo che entrambe le risposte producono qualcosa di assurdo, e che l\'ora serve a capire perche.',
+       seDicono:[
+         {loro:'«Ci penserà la fisica, prima o poi.»',
+          tu:'Forse. Nota pero che la fisica lavora dentro il tempo e lo spazio: misura, confronta, prevede. Una domanda su che cosa ci sia fuori dal tempo non e del tipo che si risolve con uno strumento migliore. Non sto dicendo che sia senza risposta — sto dicendo che non e una domanda della stessa specie.'},
+         {loro:'«È una domanda senza senso.»',
+          tu:'Potresti aver ragione, ed e esattamente la conclusione a cui arriveremo, ma per una strada precisa. Intanto tieni presente che la domanda l\'hanno posta tutti: Aristotele, Agostino, i teologi, Newton, Leibniz. Se e senza senso, bisogna spiegare perche a tutti sembrava averne.'}
+       ]},
+
+      {minuti:'8–17', et:'Lo schieramento',
+       schermo:'Due colonne.\n\nA sinistra:\nil mondo ha avuto un inizio.\n\nA destra:\nil mondo e sempre esistito.\n\nSchieratevi.\n\nPoi ogni meta\nha sei minuti\nper costruire\nla propria dimostrazione.\n\nNon un\'opinione:\nuna dimostrazione.',
+       opzioni:['il mondo ha avuto un inizio nel tempo', 'il mondo esiste da sempre, senza inizio'],
+       parlato:'Fai schierare, conta e scrivi i numeri alla lavagna: serviranno alla fine.\n\nPoi da\' sei minuti a ciascuna meta per costruire un argomento. Passa fra i banchi e da\' una spinta sola, uguale per tutti: provate a dimostrare la vostra tesi facendo vedere che l\'altra porta a un assurdo.\n\nRaccogli il lavoro alla lavagna, una colonna per parte, e non correggere.\n\nDi solito viene fuori questo. Chi sta a sinistra dice che una catena infinita all\'indietro non si puo percorrere, quindi da qualche parte deve cominciare. Chi sta a destra dice che se ci fosse stato un primo momento, prima ci sarebbe stato il nulla, e dal nulla non viene niente.\n\nSono, tolte le parole tecniche, esattamente le due dimostrazioni di Kant.\n\nDillo alla classe, e falla contenta: avete appena rifatto in sei minuti due pagine che nel 1781 hanno inaugurato il capitolo piu famoso della filosofia moderna.',
+       seDicono:[
+         {loro:'«Ha cominciato Dio, e Dio è fuori dal tempo.»',
+          tu:'Posizione seria, ed e quella di Agostino: Dio non ha creato il mondo nel tempo, ha creato il tempo insieme al mondo. Ma guarda che cosa hai fatto — non hai risposto alla domanda, hai cambiato il soggetto di cui parli. La questione se la serie dei momenti abbia un primo termine resta esattamente dov\'era.'},
+         {loro:'«Infinito vuol dire solo che è tanto.»',
+          tu:'No, e la differenza e tutta qui. Tanto significa che se continui ad andare indietro prima o poi finisci. Infinito significa che non finisci mai. Se la serie all\'indietro fosse solo lunghissima, non ci sarebbe nessun problema — il problema nasce proprio perche infinito non e un numero grande.'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'Adesso le due prove\nnella forma esatta.\n\nTESI.\nIl mondo ha un inizio.\n\nSupponiamo di no.\nAllora fino a questo istante\ne trascorsa\nuna serie infinita di stati.\n\nMa l\'infinito di una serie\nconsiste nel fatto\nche non puo mai essere\ncompletata.\n\nUna serie infinita trascorsa\ne dunque impossibile.\n\nQuindi un inizio\nc\'e stato.\n\nANTITESI.\nIl mondo non ha inizio.\n\nSupponiamo di si.\nAllora prima del mondo\nc\'era tempo vuoto.\n\nMa in un tempo vuoto\nnessuna parte si distingue\nda un\'altra:\nnon c\'e nulla\nche renda quel momento\ndiverso da quelli prima.\n\nNiente puo cominciare\nin un tempo vuoto.\n\nQuindi un inizio\nnon c\'e stato.',
+       parlato:'Leggi le due prove lentamente e falle esaminare una alla volta, chiedendo ogni volta la stessa cosa: dov\'e l\'errore?\n\nLascia che ci provino sul serio. Cercheranno il passaggio debole e non lo troveranno, perche non c\'e: entrambe sono dimostrazioni per assurdo condotte correttamente.\n\nInsisti sulla seconda, che e la meno intuitiva. L\'argomento e questo: perche una cosa cominci a un certo momento, deve esserci qualcosa che distingua quel momento da tutti quelli precedenti. Ma in un tempo assolutamente vuoto un momento e identico a ogni altro. Quindi non c\'e nessuna ragione perche l\'inizio sia stato li invece che un\'ora prima o un milione di anni prima.\n\nQuando la classe si arrende, nomina la situazione. Abbiamo due dimostrazioni valide di due tesi che si contraddicono. In matematica una cosa del genere si chiama contraddizione, e quando compare significa una cosa sola: c\'e qualcosa che non va in cio che abbiamo assunto.\n\nPoi da\' il quadro completo, brevemente: Kant ne trova quattro di coppie cosi. Sull\'inizio del mondo, sulla divisibilita della materia, sulla liberta e sull\'esistenza di un essere necessario. Le chiama antinomie, cioe conflitti di leggi.\n\nE aggiunge una cosa importante: non e colpa dei filosofi distratti. È la ragione umana che ci finisce dentro da sola, ogni volta.',
+       seDicono:[
+         {loro:'«Una delle due prove sarà sbagliata, cerchiamo meglio.»',
+          tu:'È il primo istinto di chiunque, ed e stato l\'istinto della filosofia per venti secoli. Ma pensa a che cosa significherebbe: due secoli di persone molto intelligenti che leggono le stesse due pagine e non trovano l\'errore. A un certo punto conviene sospettare che l\'errore non sia dentro le prove.'},
+         {loro:'«Allora la logica non funziona.»',
+          tu:'La logica funziona benissimo, ed e proprio questo il guaio: applicata correttamente a questa domanda produce due risposte opposte. Uno strumento che funziona e che da risultati contraddittori sta segnalando qualcosa — non su di se, ma sul materiale a cui lo stai applicando.'}
+       ]},
+
+      {minuti:'28–38', et:'Il testo',
+       schermo:'Dalla prefazione\nalla prima edizione, 1781.\n\nLa ragione umana\nha questo destino singolare:\n\ne tormentata da domande\nche non puo respingere,\nperche le sono poste\ndalla sua stessa natura,\n\ne che pero\nnon puo nemmeno risolvere,\nperche oltrepassano\nogni suo potere.\n\nE cosi cade\nin oscurita e contraddizioni,\n\ne il campo delle sue battaglie\nsenza fine\nsi chiama\n\nmetafisica.',
+       testo:{fonte:'Immanuel Kant, Critica della ragion pura, prefazione alla prima edizione (1781)',
+              glossa:'Sono le prime righe del libro, e contengono già tutto il programma. Kant non dice che quelle domande siano stupide né che si possa smettere di farle: dice che la ragione le pone per costituzione e che non ha i mezzi per rispondervi. La conseguenza è che il compito non sarà rispondere meglio, ma capire perché una facoltà che funziona benissimo altrove si impantani sempre negli stessi punti. Il termine «campo di battaglia» va preso alla lettera: la metafisica è l\'unico sapere in cui, dopo duemila anni, le posizioni di partenza sono ancora tutte in campo.'},
+       parlato:'Leggi il passo e fermati sulla parola destino, che non e messa li per fare effetto.\n\nSpiegala: la ragione non sbaglia per pigrizia o per fretta. Sbaglia perche e fatta per cercare la ragione di ogni cosa, e questa ricerca non si ferma da sola. Se ogni cosa ha una causa, allora anche la serie delle cause deve averne una, e allora si cerca l\'ultima. È il suo mestiere, e la porta puntualmente fuori strada.\n\nPoi chiedi alla classe di confrontare due situazioni, ed e un confronto che colpisce.\n\nIn matematica, quando si dimostra una cosa, resta dimostrata: nessuno rimette in discussione il teorema di Pitagora. In fisica si accumula: nessuno ricomincia da Aristotele.\n\nIn metafisica no. Le stesse domande, le stesse posizioni, la stessa lite. Duemila anni di battaglia sullo stesso campo, senza che nessuno lo conquisti.\n\nFai la domanda che porta al passo successivo: e se la ragione per cui una lite non si chiude mai non stesse nei litiganti, ma nella domanda su cui litigano?',
+       seDicono:[
+         {loro:'«Allora la filosofia non serve a niente.»',
+          tu:'Attento: e Kant a scrivere questo, e ci ha passato la vita. Sta dicendo che serve a qualcosa di diverso da quello che credeva. Non a stabilire com\'e fatto il mondo dietro le apparenze, ma a capire che cosa possiamo chiedere con qualche speranza di successo. È un lavoro piu modesto e piu utile: uno dei due appartiene alla filosofia per sempre.'},
+         {loro:'«Perché non smettiamo di farci quelle domande?»',
+          tu:'Perche non ci riusciamo, e questo e il punto della parola destino. Prova a non chiederti mai piu se sei libero, o se il mondo abbia un senso. Ci ricadi. Kant non propone di smettere: propone di sapere perche ci finiamo dentro, il che cambia il modo in cui ne usciamo.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'La soluzione di Kant.\n\nNon dice\nche ha ragione la tesi.\n\nNon dice\nche ha ragione l\'antitesi.\n\nDice che sono false\ntutte e due.\n\nPerche credono\nla stessa cosa\nsenza accorgersene:\n\nche il mondo\nsia un oggetto\ngia dato tutto intero,\n\ne che quindi debba essere\no finito o infinito,\ncome una corda\nche o ha due capi\no non li ha.\n\nMa il mondo\nnon e un oggetto\nche qualcuno abbia\ndavanti agli occhi.\n\nÈ la serie di cio che appare,\ne quella serie\nsi percorre.\n\nNon e mai\ntutta li.\n\nQuindi:\nper quanto indietro andiate,\ntroverete sempre un prima.\n\nE non troverete mai\nun infinito completo,\nperche non c\'e nessuno\na cui sia dato.',
+       parlato:'Presenta la soluzione come una mossa a sorpresa, perche lo e: in una discussione a due, dire che hanno torto tutti e due sembra un trucco. Poi mostra che non lo e.\n\nFai vedere il presupposto nascosto, ed e la parte da far ripetere. Sia chi dice finito sia chi dice infinito immagina il mondo come una cosa data, di cui si possa chiedere quanto sia grande. Se il mondo fosse una cosa cosi, uno dei due avrebbe ragione per forza.\n\nMa il mondo non e un oggetto fra gli altri: e il nome della totalita di quello che ci appare, e nessuno ce l\'ha mai davanti. Lo si esplora, all\'indietro e all\'infuori, e a ogni passo se ne trova un altro.\n\nUsa un\'immagine, e falla scegliere a loro. Chiedere se il mondo sia finito o infinito e come chiedere se una strada che si percorre sia lunga o corta prima di averla percorsa: la lunghezza c\'e mano a mano che si cammina.\n\nPoi enuncia il risultato generale, che e la cosa che devono portarsi via: quando due tesi opposte si dimostrano entrambe, spesso l\'errore non e in nessuna delle due, ma in qualcosa che credono tutte e due senza dirlo.\n\nFai fare esempi loro, e vengono fuori. Due che litigano su chi debba cedere il passo credono entrambi che qualcuno debba cedere. Due che discutono se un compito sia giusto o ingiusto credono entrambi che esista un metro condiviso. Trovare il presupposto comune non chiude sempre la discussione — la sposta dove si puo ancora fare qualcosa.\n\nUltima cosa, e vale la pena dirla: la terza antinomia riguarda la liberta, e si risolve nello stesso modo. La necessita vale per il mondo che appare, e questo non decide su cio che siamo. Da quella fessura passera tutta la morale kantiana, ed e la lezione dell\'anno prossimo.',
+       seDicono:[
+         {loro:'«Ma allora la risposta qual è?»',
+          tu:'Non c\'e, e non perche non la sappiamo ancora: perche la domanda chiedeva la misura di una cosa che non e una cosa. Nota che non e una scappatoia — Kant non dice «non lo so», dice «ecco perche nessuno potra saperlo, ed ecco che cosa invece si puo fare»: continuare a cercare all\'indietro, senza aspettarsi un termine.'},
+         {loro:'«Sembra un gioco di parole.»',
+          tu:'Mettilo alla prova, e il modo giusto di reagire. Se il mondo fosse un oggetto dato, una delle due prove dovrebbe avere un errore: cercalo. Se non riesci a trovarlo e nemmeno gli altri ci sono riusciti in duecento anni, allora la spiegazione che elimina la contraddizione senza toccare le prove ha qualcosa a suo favore.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'Guardate i numeri\ndi mezz\'ora fa.\n\nEravamo divisi\nfra due risposte.\n\nAdesso sappiamo\nche nessuna delle due\nvinceva,\n\ne che non era colpa\ndi chi le sosteneva.\n\nEra la domanda\nche prometteva\npiu di quanto potesse dare.\n\nDa portarsi via:\n\nquando una discussione\nnon si chiude mai,\n\ne le due parti\nhanno argomenti seri,\n\nsmettete per un momento\ndi cercare\nchi ha ragione\n\ne chiedetevi\n\nche cosa stanno credendo\ntutti e due\nsenza averlo detto.',
+       parlato:'Riprendi i numeri scritti alla lavagna e chiedi se qualcuno cambierebbe posto. Di solito rispondono che non c\'e piu un posto dove stare, ed e la risposta giusta.\n\nPoi da\' lo strumento in forma pulita e falla dire a loro: cercare il presupposto condiviso.\n\nMostra che non e un trucco per non prendere posizione. Nella maggior parte delle discussioni uno dei due ha ragione, e allora si discute. Il segnale da riconoscere e preciso: quando la lite dura da tanto, quando le due parti sono ugualmente informate e ugualmente intelligenti, e quando nessun argomento nuovo sposta niente. Li conviene guardare sotto.\n\nFai un\'ultima osservazione sull\'onesta di questo modo di procedere. Kant non ha vinto la discussione: l\'ha sciolta. E per farlo ha dovuto rinunciare a sapere una cosa che gli sarebbe piaciuto sapere. Sciogliere una domanda costa piu che vincerla, e chi lo fa non porta a casa nessun trofeo.\n\nChiudi indicando dove porta il seguito. Il libro finisce dicendo che di anima, mondo e Dio non si ha conoscenza — e la stessa opera lascia aperta la porta della liberta. La prossima volta si entra da quella porta, e si scopre che secondo Kant la liberta non si dimostra guardando: ci si accorge di averla nel momento in cui bisogna decidere.',
+       seDicono:[
+         {loro:'«Quindi non si può sapere niente delle cose grandi.»',
+          tu:'Delle tre grandi — anima, mondo, Dio — Kant dice che non se ne ha conoscenza. Ma nota che non dice che non se ne debba parlare: dice che se ne parla in un altro modo, non dimostrando ma agendo. È la sua mossa piu costosa e piu ambiziosa, e la vedremo per intero.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'Le altre tre',
+       corpo:'Le antinomie sono quattro. La seconda riguarda la materia: ogni composto è fatto di parti semplici, oppure la divisione può continuare all\'infinito. La terza riguarda la libertà: tutto avviene secondo le leggi di natura, oppure esiste anche una causalità per libertà. La quarta riguarda l\'esistenza di un essere necessario.\n\nKant risolve le prime due dichiarando false entrambe le tesi, perché suppongono il mondo come cosa in sé.\n\nLe ultime due le risolve diversamente: tesi e antitesi possono essere vere insieme, purché riferite a piani distinti — necessità nel mondo dei fenomeni, libertà in ciò che non appare.',
+       chiedi:'Il conflitto sulla libertà non viene sciolto dichiarando insensata la domanda, ma sdoppiando il piano su cui si risponde. È una soluzione o è un modo elegante di tenersi tutte e due le cose? E in quali altre discussioni vi è capitato di vedere usare la stessa mossa?'},
+      {titolo:'Le tre prove',
+       corpo:'La Dialettica smonta le tre dimostrazioni classiche dell\'esistenza di Dio. L\'ontologica, che ricava l\'esistenza dal concetto di essere perfettissimo: cade perché l\'esistenza non aggiunge nulla a un concetto. La cosmologica, che risale dalle cause a una causa prima: cade perché applica la categoria di causa oltre l\'esperienza, e perché nell\'ultimo passaggio deve appoggiarsi all\'ontologica. La fisico-teologica, che dall\'ordine del mondo risale a un ordinatore: al massimo prova un architetto, non un creatore, e per arrivare a Dio deve a sua volta appoggiarsi alle altre.\n\nKant tratta con rispetto la terza, definendola la più antica e la più conforme alla ragione comune.\n\nNella Critica della ragion pratica reintrodurrà Dio come postulato: non dimostrato, ma richiesto dall\'agire morale.',
+       chiedi:'Lo stesso autore demolisce ogni prova dell\'esistenza di Dio e poi lo reintroduce da un\'altra porta. È un\'incoerenza, una furbizia o due operazioni diverse? E che differenza fa, per un credente, che una cosa sia dimostrata invece che richiesta?'},
+      {titolo:'Lo spazio che non era necessario',
+       corpo:'Kant sostiene che lo spazio sia la forma necessaria di ogni nostra intuizione esterna, e che la geometria di Euclide ne descriva la struttura: per questo le sue proposizioni valgono prima di ogni verifica.\n\nA partire dagli anni Trenta dell\'Ottocento vengono costruite geometrie coerenti in cui l\'assioma delle parallele non vale. Nel 1915 la relatività generale descrive lo spazio fisico con una di quelle geometrie, e le misure sull\'orbita di Mercurio e sulla deviazione della luce le danno ragione.\n\nLa tesi specifica di Kant risulta falsa. La domanda generale — se l\'esperienza abbia condizioni di forma che non ricaviamo dall\'esperienza — resta discussa ancora oggi.',
+       chiedi:'Una teoria filosofica viene smentita in un suo punto preciso da un risultato scientifico ottenuto un secolo dopo. Che cosa si dovrebbe fare del resto della teoria? E come si distingue, in un sistema di pensiero, ciò che è legato al punto caduto da ciò che ne è indipendente?'}
+    ],
+    testi:[
+      {fonte:'Kant, Critica della ragion pura, Estetica trascendentale (1787)',
+       corpo:'Kant osserva che non si può mai rappresentarsi che non vi sia spazio, mentre si può benissimo pensare che in esso non si trovi alcun oggetto; e conclude che lo spazio va considerato come la condizione della possibilità dei fenomeni, non come una determinazione che dipenda da essi.',
+       glossa:'È l\'argomento più efficace da usare in classe, perché si può provare a farlo lì per lì: si chiede di immaginare una stanza vuota, e riesce; poi si chiede di immaginare l\'assenza dello spazio, e non riesce. L\'asimmetria fra le due prove è tutta la tesi. Va precisato che non si tratta di un limite della nostra fantasia ma della struttura del ricevere: ciò che non si può togliere non è un contenuto, è una forma.'},
+      {fonte:'Kant, Critica della ragion pura, Logica trascendentale (1787)',
+       corpo:'Kant afferma che i pensieri senza contenuto sono vuoti e le intuizioni senza concetti sono cieche, e che è dunque necessario rendere sensibili i concetti e insieme rendere intelligibili le intuizioni; l\'intelletto non può intuire nulla e i sensi non possono pensare nulla, e solo dalla loro unione può sorgere conoscenza.',
+       glossa:'È la frase che chiude in due righe la contesa fra empirismo e razionalismo, dando a ciascuno metà della ragione e togliendo a entrambi la pretesa di bastare da soli. Ha anche un uso didattico immediato: chi impara definizioni senza esempi ha pensieri vuoti, chi accumula esempi senza concetti ha intuizioni cieche. La conoscenza richiede le due cose insieme, e nessuna delle due si lascia ridurre all\'altra.'},
+      {fonte:'Kant, Critica della ragion pura, Deduzione trascendentale, seconda edizione (1787)',
+       corpo:'Kant stabilisce che l\'io penso deve poter accompagnare tutte le mie rappresentazioni, perché altrimenti in me verrebbe rappresentato qualcosa che non potrebbe affatto essere pensato — il che equivale a dire che la rappresentazione sarebbe impossibile, o almeno non sarebbe nulla per me.',
+       glossa:'È il principio supremo dell\'intera opera, e va letto con attenzione al «deve poter»: non che io pensi costantemente a me stesso, ma che ogni mia rappresentazione sia tale da poter essere riconosciuta come mia. Da questa condizione minima Kant ricava la necessità delle categorie, perché unificare significa unificare secondo regole. È anche il punto da cui partirà Fichte per costruire tutt\'altro sistema.'}
+    ],
+    compito:'Mezza pagina. Trovate una discussione che nella vostra esperienza non si chiude mai — in famiglia, a scuola, fra amici, nel dibattito pubblico — e in cui entrambe le parti hanno argomenti che stanno in piedi. Scrivete i due argomenti nella forma più forte che riuscite a dargli, anche quello che non condividete. Poi provate a indicare una cosa che le due parti danno per scontata insieme, senza mai dirla.',
+    fonti:[
+      'I. Kant, Critica della ragion pura (1781; 1787): prefazioni, Estetica trascendentale, Analitica dei concetti, Dialettica trascendentale, libro II capitolo 2',
+      'Prolegomeni a ogni futura metafisica (1783), in particolare i paragrafi sull\'antinomia',
+      'F. H. Jacobi, David Hume sulla fede (1787) — l\'obiezione sulla cosa in sé',
+      'P. Strawson, Saggio sulla Critica della ragion pura; H. Allison, Kant\'s Transcendental Idealism',
+      'S. Körner, Kant; O. Höffe, Immanuel Kant',
+      'M. Friedman, Kant and the Exact Sciences — sulla questione delle geometrie'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',
