@@ -12411,6 +12411,228 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Filosofia moderna · 21 — Kant: la Critica della ragion pratica': {
+  mappa: {
+    n:'La Critica della ragion pratica', d:'che cosa devo fare, e perche la risposta non dipende da come va a finire',
+    f:[
+      {r:'parte da un', n:'Rovesciamento', d:'la ragione che nella prima Critica veniva limitata, qui riceve un compito che nessun altro puo svolgere',
+       f:[
+         {r:'nell\'uso teorico la ragione veniva', n:'Fermata al confine', d:'di anima, mondo e Dio non si ha conoscenza'},
+         {r:'nell\'uso pratico invece', n:'Comanda', d:'non descrive come vanno le cose, stabilisce che cosa si debba fare'},
+         {r:'da cui il', n:'Primato della ragion pratica', d:'la stessa ragione, quando agisce, raggiunge cio che quando conosce le era vietato'},
+         {r:'il materiale sta in due libri, la', n:'Fondazione dei costumi', d:'1785: cerca e stabilisce il principio supremo della moralita'},
+         {r:'e la', n:'Critica del 1788', d:'che ne esamina l\'uso e ne trae le conseguenze'},
+         {r:'e il proposito non e inventare una morale nuova ma trovare il', n:'Principio di quella che c\'e gia', d:'la gente distingue benissimo il bene dal male: manca la formula, non la capacita',
+          f:[{piu:true, r:'per cui si rivolge alla', n:'Ragione comune', d:'sostiene che un contadino giudichi moralmente quanto un filosofo, e forse meglio, perche ha meno argomenti per giustificarsi'}]}
+       ]},
+
+      {r:'e stabilisce subito che non contano i', n:'Risultati', d:'la mossa che separa Kant da quasi tutta la filosofia morale prima e dopo di lui',
+       f:[
+         {r:'l\'unica cosa buona senza limitazioni e una', n:'Buona volonta', d:'intelligenza, coraggio, ricchezza sono buoni solo se lo e la volonta che li usa'},
+         {r:'ed e buona non per cio che', n:'Produce', d:'ma per il volere: anche se per una sfortuna non ottenesse nulla, brillerebbe come una gemma'},
+         {r:'perche i risultati', n:'Non sono in nostro potere', d:'dipendono dalle circostanze, e una morale che li misuri fa dipendere il valore di un\'azione dal caso'},
+         {r:'da cui la distinzione fra agire', n:'Conforme al dovere', d:'il commerciante onesto perche gli conviene: l\'azione e giusta e non ha valore morale'},
+         {r:'e agire', n:'Per dovere', d:'fare la stessa cosa perche e giusta, anche quando non conviene'},
+         {r:'con il caso limite di chi aiuta gli altri per', n:'Inclinazione', d:'lo fa volentieri, ed e amabile, ma non e ancora morale finche non lo farebbe anche senza piacere',
+          f:[{piu:true, r:'punto su cui', n:'Schiller', d:'lo prende in giro con un epigramma: servo volentieri gli amici, ma purtroppo lo faccio con piacere, e questo mi rode'}]}
+       ]},
+
+      {r:'poi distingue due tipi di', n:'Imperativi', d:'perche non tutti i comandi sono morali',
+       f:[
+         {r:'l\'', n:'Ipotetico', d:'se vuoi questo, fai quest\'altro: vale solo per chi ha gia quel fine'},
+         {r:'e il', n:'Categorico', d:'fai questo: non dipende da nessun fine, e per questo obbliga chiunque'},
+         {r:'sotto gli ipotetici stanno l\'', n:'Abilita e la prudenza', d:'come costruire un ponte, come farsi benvolere: sono ottimi consigli e non sono morale'},
+         {r:'e nemmeno la', n:'Felicita', d:'puo fare da principio, perche ciascuno la intende a modo suo e non se ne ricava nessuna legge',
+          f:[{piu:true, r:'nemmeno quando viene promessa dopo la morte come', n:'Premio', d:'chi si comporta bene per essere ricompensato sta ancora calcolando: cambia il listino, non la logica'}]},
+         {r:'quindi la morale non e un', n:'Consiglio', d:'un consiglio si puo non seguire dichiarando di non volere quel fine; da un obbligo non ci si congeda cosi'}
+       ]},
+
+      {r:'l\'imperativo categorico ha piu', n:'Formule', d:'che secondo Kant dicono la stessa cosa da tre lati',
+       f:[
+         {r:'la prima e l\'', n:'Universalizzabilita', d:'agisci solo secondo quella massima che puoi insieme volere che diventi una legge universale'},
+         {r:'e si prova con la', n:'Promessa falsa', d:'se tutti promettessero senza intenzione di mantenere, nessuno crederebbe piu alle promesse e la mia stessa bugia sarebbe impossibile',
+          f:[{r:'quindi la massima non e sbagliata perche fa danno ma perche', n:'Si autodistrugge', d:'universalizzata elimina le condizioni che la rendevano possibile'}]},
+         {r:'la seconda mette al centro l\'', n:'Umanita come fine', d:'agisci in modo da trattare l\'umanita, in te e negli altri, sempre anche come fine e mai soltanto come mezzo'},
+          {r:'dove la parola decisiva e', n:'Soltanto', d:'usare gli altri come mezzo e inevitabile e continuo; il divieto riguarda il ridurli a questo'},
+         {r:'la terza immagina un', n:'Regno dei fini', d:'una comunita di esseri che si danno leggi valide per tutti e che nessuno tratta come strumento',
+          f:[{piu:true, r:'ed e la formula che regge meglio la', n:'Prova pratica', d:'e quella che le corti e le costituzioni useranno davvero, sotto il nome di dignita'}]}
+       ]},
+
+      {r:'il fondamento di tutto e l\'', n:'Autonomia', d:'la parola che Kant introduce nel vocabolario morale e che non ne uscira piu',
+       f:[
+         {r:'significa che la volonta si da\' da', n:'Se stessa la legge', d:'e obbedisce a una legge di cui e insieme autrice'},
+         {r:'e si oppone all\'', n:'Eteronomia', d:'ricevere la legge da altro: dall\'autorita, dalla natura, dal desiderio, dalla paura'},
+         {r:'per cui e eteronoma anche una morale fondata sul', n:'Comando di Dio', d:'se obbedisco perche me lo ordina qualcuno, per quanto sia buono, non sto agendo moralmente'},
+         {r:'e da qui nasce la', n:'Dignita', d:'cio che ha un prezzo puo essere sostituito con un equivalente; cio che non ha prezzo ha dignita',
+          f:[
+            {r:'che non dipende dai', n:'Meriti', d:'ne dalle capacita, ne dall\'utilita, ne da quanto uno sia riuscito nella vita'},
+            {piu:true, r:'e che entrera nelle', n:'Costituzioni del Novecento', d:'la dignita umana e intangibile: e l\'articolo primo della legge fondamentale tedesca del 1949'}
+          ]}
+       ]},
+
+      {r:'e la liberta compare come', n:'Fatto della ragione', d:'non dimostrata, ma riconosciuta nel momento in cui ci si sente obbligati',
+       f:[
+         {r:'la prima Critica aveva lasciato la liberta', n:'Solo pensabile', d:'non contraddittoria, e non dimostrabile'},
+         {r:'qui si arriva dalla parte opposta: c\'e un dovere, quindi c\'e una', n:'Possibilita di adempierlo', d:'devi, dunque puoi'},
+         {r:'con l\'esempio del', n:'Patibolo', d:'a un uomo si ordina di testimoniare il falso contro un innocente, sotto minaccia di morte',
+          f:[{r:'non sa se resisterebbe, ma giudica senza esitare che', n:'Potrebbe', d:'e in quel giudizio si accorge di una liberta che nessuna esperienza gli aveva mostrato'}]},
+         {r:'ne segue una liberta non solo', n:'Negativa', d:'cioe indipendenza dalle cause naturali'},
+         {r:'ma anche', n:'Positiva', d:'capacita di cominciare da se una serie di effetti, obbedendo a una legge che ci si e dati',
+          f:[{piu:true, r:'il che chiude un', n:'Circolo apparente', d:'la liberta si fonda sulla legge morale e la legge morale sulla liberta: il fatto della ragione e cio che rompe il cerchio'}]}
+       ]},
+
+      {r:'poi tornano dalla porta di servizio i', n:'Postulati', d:'cio che l\'agire morale esige, e che il conoscere non poteva raggiungere',
+       f:[
+         {r:'perche la ragione pratica pensa un', n:'Sommo bene', d:'la virtu insieme alla felicita che le sia proporzionata'},
+         {r:'ma la virtu perfetta non si raggiunge in una vita, da cui il postulato dell\'', n:'Immortalita', d:'un progresso senza fine verso una santita che nessun istante contiene'},
+         {r:'e nessuna legge di natura fa coincidere il merito con la sorte, da cui il postulato di', n:'Dio', d:'come garanzia che virtu e felicita possano accordarsi'},
+         {r:'e postulare non e', n:'Conoscere', d:'non sono oggetti che si aggiungono al nostro sapere: sono condizioni che il volere non puo non ammettere',
+          f:[{piu:true, r:'con l\'obiezione che rientra dalla finestra cio che era uscito dalla', n:'Porta', d:'sollevata subito e mai chiusa: chi la fa nota che la morale non aveva bisogno di quella garanzia per obbligare'}]}
+       ]},
+
+      {r:'e restano aperte molte', n:'Obiezioni', d:'alcune fatte subito, altre ancora in corso',
+       f:[
+         {r:'la piu famosa riguarda il', n:'Rigorismo', d:'una regola senza eccezioni produce, in certi casi, risposte che quasi nessuno accetta'},
+         {r:'e nasce con', n:'Benjamin Constant', d:'che nel 1797 obietta con il caso dell\'assassino alla porta'},
+         {r:'a cui Kant risponde con uno scritto sul preteso', n:'Diritto di mentire', d:'e conferma: non e lecito, nemmeno per salvare una vita'},
+         {r:'poi arriva', n:'Hegel', d:'che accusa la formula di essere vuota: dice che una massima non deve contraddirsi, e non dice che cosa fare'},
+          {r:'accusa a cui si replica che il vuoto e voluto, perche una morale', n:'Che dicesse i contenuti', d:'dipenderebbe da un\'epoca e da un luogo, e smetterebbe di valere per tutti'},
+         {r:'e resta la frase incisa sulla sua tomba, sul cielo stellato e la', n:'Legge morale', d:'due cose riempiono l\'animo di ammirazione sempre nuova: il cielo stellato sopra di me e la legge morale dentro di me',
+          f:[{piu:true, r:'e un\'eredita che arriva fino alle', n:'Carte dei diritti', d:'dalla Dichiarazione del 1948 alla bioetica: quando si dice che una persona non e un mezzo, si parla ancora la sua lingua'}]}
+       ]}
+    ],
+    incroci:[
+      {da:'Non sono in nostro potere', a:'Diritto di mentire', r:'e l\'argomento che regge la posizione sul',
+       perche:'La risposta di Kant sembra assurda finche non si vede da dove viene. Chi mente per salvare l\'amico presume di sapere come andra: ma l\'amico potrebbe essere uscito, e la bugia potrebbe mandare l\'assassino proprio dove si trova. Se la moralita dipendesse dagli esiti, dipenderebbe da cio che non controlliamo. È lo stesso principio della gemma che brilla anche senza produrre nulla, portato al suo caso piu duro.'},
+      {da:'Fermata al confine', a:'Dio', r:'non impedisce il postulato di',
+       perche:'Nella prima Critica le tre prove dell\'esistenza di Dio cadono una dopo l\'altra, e sembra una demolizione definitiva. Qui Dio ritorna, ma cambiato di statuto: non piu un oggetto che si dimostra, bensi una condizione che chi agisce moralmente non puo non ammettere. Kant sostiene di non aver aggiunto nulla al sapere; i suoi critici sostengono che abbia riaperto una porta che aveva murato.'},
+      {da:'Patibolo', a:'Solo pensabile', r:'trasforma in certezza cio che restava',
+       perche:'Nella prima Critica la liberta era solo non contraddittoria: uno spazio lasciato libero, senza niente dentro. L\'esempio dell\'uomo minacciato riempie quello spazio senza dimostrare nulla in senso teorico. Non si osserva la liberta: la si riconosce nel giudizio che si potrebbe rifiutare. Il dovere e l\'unica esperienza che dia accesso a cio che non appare.'},
+      {da:'Ragione comune', a:'Rigorismo', r:'e in tensione con il',
+       perche:'Kant dichiara di voler solo mettere in formula cio che la gente comune gia sa. Poi arriva a una conclusione che la gente comune rifiuta quasi all\'unanimita: non mentire nemmeno all\'assassino. O il principio e stato formulato male, o la ragione comune non era cosi affidabile come lui sosteneva. È la difficolta interna piu seria del sistema, e vale la pena porla senza risolverla in fretta.'},
+      {da:'Schiller', a:'Inclinazione', r:'mette il dito sul problema dell\'',
+       perche:'L\'epigramma e ironico ma coglie un punto vero: una morale che tolga valore a cio che si fa volentieri rischia di premiare chi agisce a denti stretti. Kant rispose che non chiedeva di agire senza piacere, ma che il piacere non fosse il motivo; e nella Religione ammise che una virtu accompagnata da inclinazione e piu solida. L\'obiezione ha modificato il testo, che e il segno che era buona.'},
+      {da:'Comando di Dio', a:'Autonomia', r:'e escluso proprio dall\'',
+       perche:'È il punto piu radicale del capitolo, e vale la pena farlo pesare in classe: per Kant chi si comporta bene perche Dio lo ordina non sta agendo moralmente, ma per obbedienza. La legge morale deve valere anche se nessuno la comanda. Un pensatore cresciuto nel pietismo arriva a rendere la morale indipendente dalla religione — e poi a fondare la religione sulla morale, non il contrario.'},
+      {da:'Universalizzabilita', a:'Che dicesse i contenuti', r:'e vuota per la stessa ragione per cui una morale',
+       perche:'L\'accusa di formalismo e nota, e la risposta sta nella struttura stessa dell\'operazione. Un principio che elencasse comportamenti dovrebbe prenderli da qualche parte: da una tradizione, da una religione, da un\'idea di felicita. Ogni contenuto e datato. Kant cerca il criterio che valga anche per un\'epoca che non ha ancora incontrato — e per questo lo lascia formale.'},
+      {da:'Soltanto', a:'Dignita', r:'e la parola che rende praticabile la',
+       perche:'Senza quell\'avverbio la formula sarebbe inapplicabile: chiunque prenda un autobus usa l\'autista come mezzo. La proibizione riguarda il ridurre qualcuno a strumento, ignorando che abbia fini propri. È questa distinzione a rendere operativa la nozione di dignita nei casi concreti — dal consenso informato in medicina al divieto di ricattare qualcuno con cio di cui ha bisogno.'},
+      {da:'Costituzioni del Novecento', a:'Meriti', r:'recepiscono che la dignita non dipenda dai',
+       perche:'La formulazione «la dignita umana e intangibile» viene scritta nel 1949 in un paese uscito da uno Stato che aveva classificato gli esseri umani per utilita e per razza. La forza di quell\'articolo sta esattamente dove sta la forza di Kant: la dignita non si guadagna e non si perde, quindi non puo essere tolta a nessuno per quello che e o per quello che ha fatto.'},
+      {da:'Sommo bene', a:'Buona volonta', r:'aggiunge alla felicita cio che manca alla sola',
+       perche:'La buona volonta e l\'unica cosa buona senza limitazioni, ma Kant non e un asceta: non sostiene che la felicita sia indifferente. Sostiene che non renda buona un\'azione. Il sommo bene tiene insieme le due cose — essere degni di essere felici, ed esserlo — e proprio perche il mondo non lo garantisce nascono i postulati.'},
+      {da:'Premio', a:'Per dovere', r:'e incompatibile con l\'agire',
+       perche:'La conseguenza pratica e piu tagliente di quanto sembri: l\'educazione che promette voti, ricompense o punizioni ottiene comportamenti conformi al dovere e non insegna il dovere. Kant non nega che i premi funzionino — nota che producono calcolatori bravi a calcolare. È un\'osservazione che ogni insegnante puo verificare in una settimana.'},
+      {da:'Si autodistrugge', a:'Regno dei fini', r:'e il criterio negativo di cio che il',
+       perche:'La prova dell\'universalizzazione dice che cosa non si puo volere, non che cosa si debba fare: e un filtro, non un programma. La terza formula la traduce in positivo, chiedendo di immaginare una comunita in cui la propria massima sia legge per tutti e nessuno sia solo uno strumento. Il criterio resta lo stesso; cambia il modo in cui lo si mette al lavoro.'},
+      {da:'Circolo apparente', a:'Fondazione dei costumi', r:'era il punto in cui si arenava la',
+       perche:'Nella Fondazione del 1785 Kant tenta di dedurre la legge morale dalla liberta, e si accorge che per stabilire la liberta gli servirebbe gia la legge. Tre anni dopo cambia strategia: parte dalla coscienza dell\'obbligo come da un dato, e da li ricava la liberta. Il passaggio fra i due libri e uno dei pochi casi in cui si vede un filosofo cambiare fondamento perche il primo non teneva.'}
+    ]
+  },
+  provocazione: {
+    titolo:'L\'uomo alla porta',
+    durata:'55 minuti',
+    domandaMadre:'Si puo mentire per salvare una vita?',
+    perche:'È il caso costruito da Benjamin Constant nel 1797 per mostrare che la morale di Kant e insostenibile, ed e uno dei rari casi in cui il filosofo risponde di persona all\'obiezione — confermando la conclusione che tutti trovano assurda. La classe si schiera in un attimo e quasi all\'unanimita; il lavoro dell\'ora e far vedere che l\'argomento contrario e molto piu forte di quanto sembri, perche chi mente presume di sapere come andra a finire. Il risultato non e convertire nessuno: e mettere ciascuno davanti alla scelta vera, cioe se una regola che da\' una risposta inaccettabile in un caso vada abbandonata o accettata fino in fondo.',
+    occorrente:'Niente.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'Siete in casa.\n\nUn vostro amico\ne arrivato mezz\'ora fa,\nspaventato,\ne si e nascosto\nnella stanza accanto.\n\nBussano.\n\nAlla porta c\'e un uomo\nche vuole ucciderlo.\nNon lo nasconde.\n\nVi guarda e chiede:\n\ne in casa?\n\nNon potete tacere.\nNon potete scappare.\nNon potete chiamare nessuno.\n\nUna parola sola.\n\nSi, oppure no.',
+       parlato:'Racconta la scena lentamente e chiudi tutte le vie di fuga, perche i ragazzi le cercano tutte e sono brave vie di fuga: prendo tempo, chiamo la polizia, faccio finta di non capire.\n\nDi\' chiaramente che quelle risposte sono le migliori nella vita reale e che oggi sono vietate, per un motivo preciso: l\'esperimento serve a isolare una cosa sola, come si toglie l\'attrito in fisica.\n\nPoi fai alzare la mano a chi direbbe la bugia. Di solito e quasi tutta la classe, e va contata: scrivi il numero alla lavagna.\n\nPoi la seconda domanda, che e quella vera: perche e giusto mentire?\n\nRaccogli le risposte senza commentare. Vengono fuori quasi sempre due argomenti: perche si salva una vita, e perche l\'assassino non ha diritto alla verita.\n\nScrivili alla lavagna. Serviranno.\n\nUltima cosa prima di andare avanti: annuncia che c\'e un filosofo, considerato uno dei piu grandi di sempre, che risponde no. Non per distrazione, non in gioventu, ma in un articolo scritto apposta a settantatre anni per rispondere a chi gli aveva fatto questa obiezione.',
+       seDicono:[
+         {loro:'«Prendo tempo e chiamo i carabinieri.»',
+          tu:'Nella vita reale e la risposta giusta e spero che tu la faccia. Oggi te la tolgo, come in fisica si toglie l\'aria: non perche l\'aria non esista, ma perche altrimenti non si capisce che cosa fa la gravita da sola. Qui vogliamo capire che cosa fa la regola da sola.'},
+         {loro:'«Chi vuole uccidere non merita la verità.»',
+          tu:'Argomento serio, e lo scrivo alla lavagna. Tienilo pero fino in fondo: stai dicendo che il diritto alla verita si perde comportandosi male. Allora chi decide quando si e perso? Se lo decido io ogni volta, che cosa resta della regola?'}
+       ]},
+
+      {minuti:'8–17', et:'Lo schieramento',
+       schermo:'Due posizioni.\n\nA.\nSi puo mentire\nquando le conseguenze\nlo giustificano.\n\nB.\nNon si puo mentire.\nMai.\n\nSchieratevi davvero,\nanche se una delle due\nvi sembra assurda.',
+       opzioni:['si puo mentire quando le conseguenze lo giustificano', 'non si puo mentire, in nessun caso'],
+       parlato:'Fai schierare e conta. La posizione A prende quasi tutti, ed e giusto cosi: e la posizione ragionevole.\n\nAdesso mettila alla prova, ed e qui che si lavora. Se si puo mentire quando le conseguenze lo giustificano, bisogna dire quando.\n\nFai la scala, un gradino alla volta, e chiedi ogni volta la mano alzata. Mentire per salvare una vita. Per evitare che qualcuno finisca in carcere ingiustamente. Per non far soffrire tua madre. Per non prendere una nota. Per non fare brutta figura.\n\nLe mani calano lungo la scala, e a un certo punto qualcuno si accorge che non sa dire dove stia il gradino.\n\nFerma li e nomina il problema: la posizione A non e sbagliata, e incompleta. Dice che la regola ha eccezioni e non dice quali. E finche non lo dice, chi decide se questa e un\'eccezione e la stessa persona che ha interesse a mentire.\n\nPoi rendi giustizia alla posizione B, che nella classe di solito ha due o tre coraggiosi. Chiedi a loro di spiegare perche, e proteggili: quasi sempre dicono qualcosa di piu profondo di quanto sappiano di dire — che se ognuno decide quando mentire, la parola non vale piu niente.',
+       seDicono:[
+         {loro:'«Si capisce da sé quando è grave.»',
+          tu:'Si capisce a te. La domanda e se si capisca allo stesso modo a chi ha molto da guadagnarci. Nota una cosa: in tutti gli esempi che avete fatto, la bugia conveniva a chi la diceva. Non e una prova, e un dato da tenere presente quando ci si fida del proprio giudizio sulla gravita.'},
+         {loro:'«Le regole servono, ma non sono più importanti delle persone.»',
+          tu:'Bella formulazione, e tienila. Poi considera che chi sostiene la posizione B dice esattamente la stessa cosa: sostiene che sia la regola a proteggere le persone, e che a farla saltare caso per caso si tolga protezione proprio a chi ne ha piu bisogno. Non e un contrasto fra chi ama le regole e chi ama le persone.'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'Da dove viene\nla posizione B.\n\nKant parte da qui:\n\nl\'unica cosa buona\nsenza condizioni\nnon e un risultato,\n\ne una volonta buona.\n\nPerche i risultati\nnon sono in nostro potere.\n\nSe il valore di cio che faccio\ndipendesse da come va a finire,\n\ndipenderebbe dal caso.\n\nQuindi la regola\nnon puo essere\n«fai cio che produce\nil bene maggiore»,\n\nma:\n\nagisci solo\nsecondo quella massima\nche puoi volere\ndiventi una legge\nvalida per tutti.\n\nProvate a passarci\n«mento quando mi conviene».\n\nNon passa.\n\nE non perche faccia danno.\n\nPerche se tutti mentissero\nquando conviene,\n\nnessuno crederebbe piu a niente,\n\ne la mia bugia\nnon funzionerebbe.',
+       parlato:'Costruisci l\'impianto senza ancora tornare al caso, perche il caso si giudica solo dopo aver capito la macchina.\n\nPrimo pezzo: perche non i risultati. Falli ragionare su un esempio semplice. Due persone fanno la stessa cosa; a una va bene, all\'altra va male per una circostanza che non poteva prevedere. Sono state moralmente diverse? Quasi tutti dicono di no. Bene: allora il valore non sta nel risultato.\n\nSecondo pezzo: l\'universalizzazione. Non e la regola d\'oro e non e «pensa se lo facessero tutti» nel senso del danno. È piu stretto: si guarda se la massima, resa legge, distrugga se stessa. La promessa falsa e l\'esempio classico — in un mondo di promesse false non esisterebbero le promesse, e quindi non potrei nemmeno farne una falsa.\n\nFai provare qualche massima a loro. Copio al compito. Non pago il biglietto. Salto la fila. Guarda che cosa succede a ciascuna se diventa legge: alcune fanno danno, altre si annullano proprio. La differenza e importante.\n\nTerzo pezzo, e conviene nominarlo perche e la cosa piu grande del capitolo: la legge non arriva da fuori. Non e Dio, non e lo Stato, non e la tradizione. Se la da\' la ragione stessa. Kant la chiama autonomia, e la parola significa letteralmente darsi la propria legge.\n\nSolo adesso torna alla porta e fai la domanda: con questa macchina in mano, che cosa esce?',
+       seDicono:[
+         {loro:'«Ma se tutti mentissero all\'assassino sarebbe un bene.»',
+          tu:'Osservazione acuta, ed e la strada per cui alcuni salvano Kant da Kant: la massima non e «mento», ma «mento a chi vuole usare la verita per uccidere». Universalizzata, quella non si autodistrugge. Il problema e che Kant, nel 1797, non l\'ha accettata. Vedremo fra poco perche, e se la sua ragione tenga.'},
+         {loro:'«Chi decide qual è la massima giusta da esaminare?»',
+          tu:'Domanda tecnica e centrale, ed e uno dei punti deboli riconosciuti del sistema. Descrivendo la stessa azione in modi diversi si ottengono massime diverse, e alcune passano dove altre falliscono. Kant non da\' una regola per formulare la massima. Chi lo difende risponde che si e obbligati a descriversi onestamente cio che si sta facendo — e non e poco, ma non e un algoritmo.'}
+       ]},
+
+      {minuti:'28–38', et:'Il testo',
+       schermo:'1796. Benjamin Constant\npubblica un\'obiezione:\n\nil principio secondo cui\ndire la verita e un dovere\nassoluto\n\nrenderebbe impossibile\nqualunque societa.\n\nE fa l\'esempio\ndell\'assassino\nche chiede\nse il vostro amico\nsi e rifugiato in casa vostra.\n\n1797. Kant risponde\ncon un articolo.\n\nDice di si:\nil dovere e assoluto.\n\nE porta questo argomento.\n\nSe mentite\ne dite che non e in casa,\n\ne intanto lui\ne uscito senza che ve ne accorgeste,\n\nl\'assassino lo incontra fuori\ne lo uccide:\n\nallora siete voi\nla causa della sua morte.\n\nSe dite la verita,\n\nqualunque cosa accada,\n\nnon avete fatto\nnessun torto a nessuno.',
+       testo:{fonte:'Immanuel Kant, Sopra un preteso diritto di mentire per amore dell\'umanità (1797)',
+              glossa:'È la risposta diretta a Constant, e va letta con attenzione all\'argomento, che non è quello che ci si aspetta. Kant non dice che la verità sia più preziosa di una vita: dice che chi mente si assume la responsabilità di tutte le conseguenze, comprese quelle che non poteva prevedere, mentre chi dice il vero resta nel diritto qualunque cosa segua. È un ragionamento sulla responsabilità e sull\'imprevedibilità degli esiti, non un elogio della sincerità. Il testo è anche un documento di come un sistema filosofico reagisca quando lo si mette sotto pressione nel suo punto peggiore: la maggior parte degli studiosi di Kant ritiene che qui abbia scelto male, e che il suo stesso impianto gli offrisse una via d\'uscita.'},
+       parlato:'Leggi il passo e lascia che la classe reagisca, perche la reazione e forte e va usata.\n\nPoi fermali e chiedi di guardare l\'argomento, non la conclusione. Non e «la verita vale piu di una vita». È un\'altra cosa, ed e sottile: chi mente prende su di se il corso degli eventi.\n\nFai vedere il punto, che e la parte piu difficile e piu utile dell\'ora. Quando dico la bugia per salvare l\'amico, sto scommettendo di sapere dove sia e che cosa accadra. Ma non lo so. Puo essere uscito dalla finestra. La mia bugia puo mandare l\'assassino esattamente dove si trova.\n\nDomanda alla classe: da dove viene la sicurezza con cui, otto minuti fa, avete deciso che mentire fosse la cosa giusta?\n\nVeniva dal fatto che nell\'esempio sapevamo tutti dove fosse l\'amico. Nella realta non lo si sa mai.\n\nEnuncialo in modo pulito: chi giudica un\'azione dalle conseguenze deve conoscerle. E nessuno le conosce.\n\nQuesto non dimostra che Kant abbia ragione. Dimostra che la posizione comoda — mento quando serve — poggia su una fiducia nelle proprie previsioni che non e mai giustificata.',
+       seDicono:[
+         {loro:'«È un ragionamento da azzeccagarbugli.»',
+          tu:'Puo sembrarlo, e molti kantiani lo pensano. Nota pero che e lo stesso ragionamento che accettiamo in tribunale: chi mente a un giudice risponde delle conseguenze anche se voleva fare del bene. Non stiamo dicendo che sia giusto — stiamo notando che non e una stranezza isolata di un vecchio professore.'},
+         {loro:'«Kant non aveva mai avuto un amico da nascondere.»',
+          tu:'Probabilmente no, e l\'osservazione ha un fondo giusto: chi non ha mai subito una persecuzione ragiona su quel caso da lontano. Ma tienila per quello che e: e un argomento sulla persona, non sulla tesi. Se vale, deve valere anche contro chi la pensa come te — e allora nessuno puo piu discutere di niente.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'Adesso la cosa\ninteressante.\n\nQuasi tutti gli studiosi di Kant\npensano che qui\nabbia sbagliato.\n\nNon perche la regola\nsia sbagliata.\n\nPerche il suo stesso sistema\ngli offriva\nuna via d\'uscita\nche lui non ha preso.\n\nLa massima da esaminare\nnon era «mento».\n\nEra:\n\nmento a chi vuole usare\nla mia risposta\nper uccidere\nun innocente.\n\nProvate a universalizzarla.\n\nFunziona.\n\nUn mondo in cui tutti\nfanno cosi\nnon si autodistrugge:\n\ne semplicemente un mondo\nin cui gli assassini\nnon ottengono informazioni.\n\nQuindi il problema\nnon era la regola.\n\nEra che l\'ha applicata\nnel modo piu rigido possibile\nproprio nel caso\nin cui non doveva.',
+       parlato:'Presenta il rovesciamento e fai attenzione a non farne una liberazione facile: la classe si rilassa subito, e il punto e un altro.\n\nMostra la mossa: cambia la massima e il risultato cambia. Poi mostra il prezzo di questa mossa, ed e qui che si guadagna la lezione.\n\nSe posso riformulare la massima per farla passare, allora posso riformularla sempre. Chi vuole copiare al compito puo dire che la sua massima e «copio quando la verifica e ingiusta e io ho studiato». Universalizzata, non si autodistrugge nemmeno quella.\n\nQuindi il criterio funziona solo se sono onesto nel descrivere quello che sto facendo. E l\'onesta nel descriversi le proprie azioni e esattamente la cosa che manca a chi sta per fare qualcosa che sa di non dover fare.\n\nOra arriva il vero problema dell\'ora, e va posto come una scelta, non come una soluzione.\n\nUna regola morale da\' una risposta inaccettabile in un caso. Ci sono tre strade, e ognuna costa.\n\nSi butta la regola: e allora non se ne ha nessuna, e si decide caso per caso, cioe di solito come conviene.\n\nSi accetta la risposta: ed e cio che ha fatto Kant, pagando il prezzo di dire una cosa che quasi nessuno accetta.\n\nSi tiene la regola e si ammettono eccezioni: ed e la posizione piu ragionevole, purche si sappia dire chi decide le eccezioni e con quale criterio — perche se non lo si dice, si e nel primo caso credendo di essere nel terzo.\n\nFai schierare di nuovo, adesso su queste tre.',
+       seDicono:[
+         {loro:'«Allora aveva ragione lui, basta cambiare la massima.»',
+          tu:'Attento a che cosa ti costa. Se si puo riformulare la massima finche passa, il criterio non filtra piu niente e diventa uno specchio: ti restituisce quello che avevi gia deciso. Il criterio funziona solo se sei tu a non barare — e questo lo rende molto meno automatico di come viene di solito presentato.'},
+         {loro:'«La terza strada è ovviamente la migliore.»',
+          tu:'È la piu ragionevole, e ha un debito da pagare: dire chi stabilisce le eccezioni. Se lo fa una legge, sappiamo dove guardare. Se lo fa ciascuno al momento, la regola resta come decorazione. Non ti sto dicendo che sia sbagliata — ti sto chiedendo di pagare il conto che comporta.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'Torniamo alla porta.\n\nQuasi tutti voi,\nun\'ora fa,\navete mentito.\n\nProbabilmente\nlo fareste ancora.\n\nAnch\'io.\n\nMa adesso sapete\nche cosa state facendo:\n\nstate scommettendo\ndi conoscere\nle conseguenze.\n\nE questo, di solito,\nnon e vero.\n\nDa portarsi via\nuna cosa sola:\n\nquando decidete\nche il vostro caso\ne un\'eccezione,\n\nfermatevi un istante\ne chiedetevi\n\nse accettereste\nlo stesso ragionamento\n\nda qualcuno\nche vi sta mentendo.',
+       parlato:'Riprendi i numeri della lavagna e chiedi se qualcuno ha cambiato posizione. Di solito pochissimi, ed e giusto dirlo: la lezione non serviva a convertire.\n\nPoi separa le due cose che si sono mescolate per un\'ora, e falle enunciare a loro. Che cosa faccio davanti a quella porta e una domanda. Che cosa rende una regola una regola e un\'altra domanda. Kant risponde alla seconda, e la sua risposta resta in piedi anche per chi trova sbagliata la prima.\n\nPoi da\' lo strumento, e formulalo in modo che si possa usare domani. Nella vita non capitano assassini alla porta; capita in continuazione di decidere che il proprio caso e speciale. Il controllo e sempre lo stesso: accetterei questo ragionamento se lo facesse qualcun altro contro di me?\n\nÈ la versione tascabile dell\'universalizzazione, e non richiede di aver letto Kant.\n\nUltima cosa, e vale la pena dirla per intero. Lo stesso uomo che qui appare rigido fino all\'assurdo e quello che ha scritto che nessuna persona va trattata mai soltanto come un mezzo, e che la dignita non ha prezzo e non dipende dai meriti. Quella frase e finita, parola per parola, nelle costituzioni scritte dopo la seconda guerra mondiale e nelle carte dei diritti. Il rigore che oggi vi sembra assurdo e la stessa cosa che rende quella frase impossibile da negoziare.\n\nE per il seguito: resta una domanda che ne\' la conoscenza ne\' il dovere hanno toccato — che cosa succede quando una cosa ci sembra bella, o quando guardiamo un essere vivente e ci pare fatto per uno scopo. La prossima volta si comincia da li.',
+       seDicono:[
+         {loro:'«Quindi non c\'è una risposta giusta?»',
+          tu:'C\'e la tua, e adesso sai quanto costa. Non e la stessa cosa di un\'ora fa: allora era un\'impressione, ora e una posizione di cui conosci l\'argomento contrario. Questo e tutto quello che la filosofia puo darti su un caso del genere, ed e piu di quanto sembri.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'L\'epigramma di Schiller',
+       corpo:'Schiller scrisse un breve componimento satirico intitolato Scrupolo di coscienza: chi parla confessa di servire volentieri gli amici, ma purtroppo di farlo con piacere, e di rodersi perché sospetta di non essere virtuoso. La risposta immaginaria è che allora non gli resta che disprezzarli e fare con ripugnanza ciò che il dovere comanda.\n\nL\'ironia colpisce l\'idea che il valore morale di un\'azione si misuri dalla resistenza dell\'inclinazione.\n\nKant rispose in una nota della Religione entro i limiti della sola ragione, precisando di non aver mai chiesto di agire senza inclinazione ma che l\'inclinazione non fosse il motivo, e riconoscendo che una virtù accompagnata da disposizione serena è più solida.',
+       chiedi:'Vale di più chi fa la cosa giusta controvoglia o chi la fa volentieri? E se rispondete «volentieri», come distinguete la persona buona da quella semplicemente fortunata di avere i desideri giusti?'},
+      {titolo:'L\'uomo sul patibolo',
+       corpo:'Kant propone due esempi in sequenza. Se a un uomo si dicesse che, appena uscito da casa di una donna desiderata, verrà impiccato, sostiene che l\'uomo riuscirebbe a dominarsi.\n\nPoi cambia il caso: al medesimo uomo un sovrano ordina di testimoniare il falso contro un innocente, per farlo condannare a morte, minacciandolo di morte immediata se rifiuta.\n\nKant osserva che l\'uomo non saprà mai se resisterebbe, ma che non esiterà a giudicare che gli sarebbe possibile resistere. E conclude: egli giudica di poter fare una cosa perché è consapevole di doverla fare, e riconosce in sé una libertà che senza la legge morale non avrebbe mai potuto conoscere.',
+       chiedi:'L\'esempio ricava la libertà non da un\'osservazione ma da un giudizio su ciò che si dovrebbe fare. È una prova o è un modo di dare per acquisito ciò che si voleva dimostrare? E vi è mai capitato di scoprire di poter fare qualcosa solo perché dovevate?'},
+      {titolo:'Ciò che è uscito dalla porta',
+       corpo:'Nella Critica della ragion pura Kant demolisce le tre dimostrazioni classiche dell\'esistenza di Dio. Nella Critica della ragion pratica lo reintroduce come postulato, insieme all\'immortalità dell\'anima: non dimostrati, ma richiesti dal fatto che la virtù non basta a rendere felici e che nessuna vita basta a diventare perfetti.\n\nHeine, un secolo dopo, ne fece una scena comica: il vecchio Kant, dopo aver ucciso Dio, si accorge che il suo servitore Lampe ne aveva bisogno per vivere, e gliene restituisce uno per pietà.\n\nAltri lettori sostengono l\'opposto: che i postulati non aggiungano nulla al sapere e servano solo a rendere pensabile che l\'agire morale non sia assurdo.',
+       chiedi:'Un\'esigenza pratica può giustificare l\'ammissione di qualcosa che non si può dimostrare? E che differenza c\'è, se ce n\'è una, fra ammettere qualcosa perché serve e crederci?'}
+    ],
+    testi:[
+      {fonte:'Kant, Fondazione della metafisica dei costumi, sezione prima (1785)',
+       corpo:'Kant afferma che non è possibile pensare nulla che possa essere considerato buono senza limitazione, se non una buona volontà; e che essa non è buona per ciò che produce o realizza, ma soltanto per il volere: anche se, per una particolare avversità del destino, le mancasse del tutto la capacità di attuare il proprio proposito, essa brillerebbe ugualmente come una gemma per se stessa.',
+       glossa:'È il paragrafo che apre l\'opera e che decide tutto il resto. Separando il valore morale dal risultato, Kant si mette contro l\'intera tradizione che misura le azioni dalle conseguenze — e rende possibile dire che due persone che fanno la stessa cosa con motivi diversi non stanno facendo la stessa cosa. In classe l\'immagine della gemma funziona: un\'azione può non produrre nulla e restare intera.'},
+      {fonte:'Kant, Fondazione della metafisica dei costumi, sezione seconda (1785)',
+       corpo:'La formula dell\'umanità prescrive di agire in modo da trattare l\'umanità, tanto nella propria persona quanto in quella di ogni altro, sempre anche come fine e mai semplicemente come mezzo.',
+       glossa:'È la formula che ha avuto più fortuna pratica, e la parola su cui si regge è «semplicemente»: usare gli altri come mezzo è inevitabile e continuo, mentre ridurli a questo è il divieto. Da qui discendono, in linea diretta, il consenso informato in medicina, il divieto di sfruttare lo stato di bisogno di qualcuno, e l\'articolo primo della Legge fondamentale tedesca del 1949.'},
+      {fonte:'Kant, Critica della ragion pratica, conclusione (1788)',
+       corpo:'Kant scrive che due cose riempiono l\'animo di ammirazione e di venerazione sempre nuova e crescente quanto più spesso e più a lungo la riflessione se ne occupa: il cielo stellato sopra di lui e la legge morale dentro di lui; e aggiunge che la prima gli mostra la propria insignificanza di creatura, mentre la seconda gli rivela un valore indipendente dalla condizione animale e dall\'intero mondo sensibile.',
+       glossa:'La frase è incisa sulla lapide a Königsberg ed è quasi sempre citata a metà, cioè come una nota di stupore. Il seguito ne cambia il senso: il cielo mi rimpicciolisce, la legge morale mi restituisce un valore che nessuna grandezza fisica può dare. Le due immagini stanno insieme come limite e dignità, che è la struttura di tutta la filosofia critica.'}
+    ],
+    compito:'Mezza pagina. Ricostruite una volta in cui avete deciso che il vostro caso era un\'eccezione a una regola che di solito rispettate. Scrivete che cosa vi siete detti in quel momento, con onestà. Poi immaginate che la stessa identica frase la dica qualcun altro per giustificare qualcosa fatto contro di voi: la accettereste? Se no, provate a dire dove sta la differenza — e se non riuscite a trovarla, scrivete anche questo.',
+    fonti:[
+      'I. Kant, Fondazione della metafisica dei costumi (1785); Critica della ragion pratica (1788)',
+      'Sopra un preteso diritto di mentire per amore dell\'umanità (1797); La religione entro i limiti della sola ragione (1793)',
+      'B. Constant, Delle reazioni politiche (1796), il capitolo sui principi',
+      'F. Schiller, Sulla grazia e la dignità (1793); gli Xenien',
+      'G. W. F. Hegel, Lineamenti di filosofia del diritto, paragrafo 135 — l\'accusa di formalismo',
+      'O. Höffe, Immanuel Kant; S. Landucci, Sull\'etica di Kant; C. Korsgaard, Creating the Kingdom of Ends'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',
