@@ -200,7 +200,7 @@ Si va in ordine di programma. Restano:
 - [x] Filosofia moderna · 29 — Hegel: l'Enciclopedia
 - [x] Storia contemporanea · 1 — Il Risorgimento e la prima guerra d'indipendenza
 - [x] Storia contemporanea · 2 — L'Europa fra il 1850 e il 1870
-- [ ] Storia contemporanea · 3 — Guerra civile americana, Giappone e Cina
+- [x] Storia contemporanea · 3 — Guerra civile americana, Giappone e Cina
 - [ ] Storia contemporanea · 4 — L'Unità d'Italia e la Destra storica
 - [ ] Storia contemporanea · 5 — L'Europa nell'età di Bismarck
 - [ ] Storia contemporanea · 6 — La seconda rivoluzione industriale
