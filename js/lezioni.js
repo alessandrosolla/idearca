@@ -15101,6 +15101,235 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Storia contemporanea · 4 — L\'Unità d\'Italia e la Destra storica': {
+  mappa: {
+    n:'L\'Unita e la Destra storica', d:'come si fa uno Stato in dodici mesi, e che cosa costa tenerlo insieme dopo',
+    f:[
+      {r:'comincia dal', n:'Piemonte di Cavour', d:'l\'unico Stato italiano che dopo il 1849 ha ancora un parlamento',
+       f:[
+         {r:'Cavour arriva al governo nel 1852 grazie a un accordo detto', n:'Connubio', d:'un\'intesa fra il centrodestra e il centrosinistra moderato che isola gli estremi e gli da\' una maggioranza stabile'},
+         {r:'e non e un patriota romantico: e un', n:'Amministratore', d:'ha studiato economia in Inghilterra e Francia, si occupa di banche, bonifiche e ferrovie'},
+         {r:'moltiplica le', n:'Ferrovie', d:'il Piemonte ne costruisce piu di tutti gli altri Stati italiani messi insieme, e apre il traforo del Frejus'},
+         {r:'firma trattati di', n:'Libero scambio', d:'l\'economia si apre, il debito cresce, e con esso la dipendenza dal credito estero'},
+         {r:'e limita i privilegi', n:'Ecclesiastici', d:'abolisce il foro speciale per il clero e sopprime gli ordini religiosi non assistenziali: gli costa la scomunica'},
+         {r:'diventando cosi il rifugio degli', n:'Esuli', d:'da tutta Italia arrivano intellettuali e patrioti in fuga: e questo, piu di ogni proclama, rende Torino il centro del movimento',
+          f:[{piu:true, r:'compresi molti', n:'Ex repubblicani', d:'che accettano la monarchia per realismo: fra loro Manin, che lancia la formula «l\'Italia sara, con Vittorio Emanuele o senza»'}]}
+       ]},
+
+      {r:'poi c\'e la', n:'Strategia diplomatica', d:'ed e l\'esatto contrario di quella del 1848',
+       f:[
+         {r:'nel 1855 manda un corpo di spedizione in', n:'Crimea', d:'una guerra che non riguardava il Piemonte, per sedere al tavolo dei vincitori'},
+         {r:'e al congresso di Parigi del 1856 ottiene che si parli della', n:'Questione italiana', d:'non una decisione, solo una discussione: ma la questione entra nella diplomazia europea'},
+         {r:'nel luglio 1858 incontra Napoleone III a', n:'Plombieres', d:'un accordo segreto: la Francia interviene se l\'Austria attacca per prima'},
+         {r:'in cambio la Francia riceve', n:'Nizza e Savoia', d:'due territori del Regno di Sardegna, ceduti con plebisciti e con una netta pressione amministrativa'},
+         {r:'nel 1859 il Piemonte', n:'Provoca', d:'concentra truppe e accoglie volontari finche Vienna manda un ultimatum: l\'aggressore formale e l\'Austria'},
+         {r:'si vince a Magenta e a', n:'Solferino', d:'con perdite enormi da entrambe le parti: da quel campo di battaglia nascera l\'idea della Croce Rossa'},
+         {r:'ma Napoleone III firma l\'armistizio di', n:'Villafranca', d:'senza avvertire l\'alleato: si prende la Lombardia e si lascia il Veneto all\'Austria',
+          f:[{piu:true, r:'perche teme insieme le fortezze del Quadrilatero e la reazione dei', n:'Cattolici francesi', d:'un\'Italia che cresce minaccia lo Stato pontificio, e lui aveva bisogno del voto cattolico in patria'}]}
+       ]},
+
+      {r:'nel 1860 arrivano le', n:'Annessioni', d:'e cambiano il metodo: non piu guerre, ma voti',
+       f:[
+         {r:'Toscana, Emilia e Romagna si erano gia date governi', n:'Provvisori', d:'guidati da moderati, con l\'esercito piemontese alle porte'},
+         {r:'e si annettono con', n:'Plebisciti', d:'marzo 1860: percentuali altissime, e la stessa procedura verra usata per tutte le altre annessioni'},
+         {r:'ma il voto e', n:'Palese', d:'schede di colori diversi, urne separate, sotto lo sguardo dei notabili e delle autorita: non e un voto segreto'},
+         {r:'e la domanda e', n:'Chiusa', d:'si chiede se si voglia l\'unione alla monarchia costituzionale, senza alcuna alternativa praticabile'},
+         {r:'in Sicilia i sì dichiarati sono oltre quattrocentotrentamila contro', n:'Seicentosessantasette no', d:'una proporzione che nessuna consultazione libera ha mai prodotto in nessun luogo'},
+         {piu:true, r:'e il modello viene copiato per', n:'Roma nel 1870', d:'anche la presa della citta viene ratificata cosi: il plebiscito diventa la procedura standard con cui l\'Italia si annette se stessa'},
+         {r:'e il risultato e comunque', n:'Politicamente vero', d:'i ceti proprietari volevano davvero l\'unione, e il plebiscito serviva a mostrarlo all\'Europa piu che a deciderlo'}
+       ]},
+
+      {r:'e c\'e la spedizione dei', n:'Mille', d:'l\'unico episodio in cui il popolo entra davvero nella scena',
+       f:[
+         {r:'parte da Quarto nella notte del', n:'5 maggio 1860', d:'poco piu di mille volontari, in gran parte del Nord, molti studenti e artigiani'},
+         {r:'sbarca a Marsala protetta dalla presenza di navi', n:'Inglesi', d:'che non intervengono ma la cui presenza impedisce ai borbonici di aprire il fuoco'},
+         {r:'vince a Calatafimi e prende', n:'Palermo', d:'in tre mesi controlla la Sicilia con un esercito che nel frattempo e diventato di ventimila uomini'},
+         {r:'perche i contadini si uniscono aspettando la', n:'Terra', d:'credono che il nuovo governo dividera i latifondi e le terre comuni usurpate'},
+         {r:'ma a Bronte l\'occupazione delle terre viene', n:'Repressa', d:'Nino Bixio istituisce un tribunale militare e fa fucilare cinque persone: e il primo segnale di che cosa sara l\'unita'},
+         {r:'Garibaldi passa lo stretto, vince sul Volturno e a Teano', n:'Consegna', d:'restituisce tutto al re e si ritira a Caprera senza chiedere niente per se',
+          f:[{piu:true, r:'con un gesto che i suoi lo accusano di aver fatto', n:'Troppo presto', d:'consegnare senza condizioni tolse ogni possibilita di contrattare il modo in cui il Sud sarebbe stato governato'}]}
+       ]},
+
+      {r:'il 17 marzo 1861 nasce il', n:'Regno d\'Italia', d:'e nasce con una serie di problemi dichiarati fin dal primo giorno',
+       f:[
+         {r:'Vittorio Emanuele resta', n:'Secondo', d:'la numerazione non riparte: e uno Stato che si presenta come l\'ingrandimento del Regno di Sardegna, non come una fondazione'},
+         {r:'lo Statuto albertino diventa la', n:'Costituzione di tutti', d:'esteso senza essere riscritto ne votato da nessuna assemblea nazionale'},
+         {r:'vota poco piu del', n:'Due per cento', d:'requisiti di censo e di alfabetismo: il paese legale e una frazione minuscola del paese reale'},
+         {r:'mancano il', n:'Veneto e Roma', d:'e la capitale e Torino, poi Firenze dal 1865: nessuna delle due e quella che si voleva'},
+         {r:'Cavour muore il', n:'6 giugno 1861', d:'a cinquant\'anni, tre mesi dopo la proclamazione: chi doveva governare quel paese non c\'e piu'},
+         {r:'e restano due paesi con', n:'Leggi diverse', d:'sistemi giudiziari, monete, pesi, tariffe e scuole da unificare tutti insieme'}
+       ]},
+
+      {r:'governa la', n:'Destra storica', d:'per quindici anni, con un programma chiaro e impopolare',
+       f:[
+         {r:'estende a tutti gli ordinamenti', n:'Piemontesi', d:'la legge del 1865 unifica l\'amministrazione ricalcando il modello sabaudo, con prefetti nominati dal governo'},
+         {r:'sceglie l\'', n:'Accentramento', d:'scartando il progetto di regioni che era stato preparato da Minghetti: si teme che decentrare significhi disgregare'},
+         {r:'ha come obiettivo il', n:'Pareggio di bilancio', d:'il debito ereditato dalle guerre e enorme e il paese non ha credito'},
+         {r:'vende i beni della', n:'Chiesa', d:'confiscati e messi all\'asta: li comprano i proprietari gia ricchi, e la terra si concentra ancora di piu'},
+         {r:'introduce la tassa sul', n:'Macinato', d:'1868: si paga per macinare il grano, cioe si tassa il pane, cioe si tassa chi non ha altro'},
+         {r:'che provoca rivolte con circa', n:'Duecentocinquanta morti', d:'e migliaia di arresti: e il prezzo sociale del risanamento'},
+         {r:'e raggiunge il pareggio nel', n:'1876', d:'poche settimane prima di perdere il potere: e la sola grande promessa mantenuta',
+          f:[{piu:true, r:'con una scuola affidata alla', n:'Legge Casati', d:'obbligo di due anni a carico dei comuni poveri: l\'analfabetismo nel 1861 sfiora il settanta per cento e cala lentissimamente'}]}
+       ]},
+
+      {r:'e affronta il', n:'Brigantaggio', d:'la guerra piu lunga dell\'Italia unita, che non e mai stata chiamata guerra',
+       f:[
+         {r:'nel Mezzogiorno bande armate controllano intere aree per', n:'Cinque anni', d:'1861-1865, con punte fino a ottanta o cento bande contemporaneamente attive'},
+         {r:'lo Stato impiega fino a', n:'Centoventimila uomini', d:'circa la meta dell\'esercito, piu di quanti ne avesse schierati in qualunque guerra d\'indipendenza'},
+         {r:'i motivi sono la', n:'Leva obbligatoria', d:'cinque anni di servizio sottratti a famiglie contadine che vivono del lavoro dei figli: i renitenti sono decine di migliaia'},
+         {r:'le tasse nuove e la vendita delle terre', n:'Demaniali e comuni', d:'gli usi civici spariscono e le terre finiscono ai galantuomini: i contadini perdono cio che avevano'},
+         {r:'con l\'appoggio dei', n:'Legittimisti borbonici', d:'che finanziano e organizzano dall\'esilio, e della gerarchia ecclesiastica ostile al nuovo Stato'},
+         {r:'lo Stato risponde con la', n:'Legge Pica', d:'agosto 1863: tribunali militari, domicilio coatto per sospetti e oziosi, procedure sommarie',
+          f:[
+            {piu:true, r:'nata come misura', n:'Temporanea', d:'votata per pochi mesi e prorogata fino al 1865: e il primo stato d\'eccezione dell\'Italia unita'},
+            {piu:true, r:'e la parola scelta e gia una', n:'Decisione', d:'chiamarlo brigantaggio lo definisce criminalita comune, e nega ai catturati qualunque statuto di combattente'}
+          ]}
+       ]},
+
+      {r:'e completa il territorio arrivando al', n:'Bilancio del 1876', d:'con due acquisti ottenuti senza vincere',
+       f:[
+         {r:'nel 1866 si allea con la Prussia e perde a', n:'Custoza e Lissa', d:'sconfitte in terra e in mare, e il Veneto arriva lo stesso perche la Prussia vince altrove'},
+         {r:'nel 1870, caduto Napoleone III a Sedan, i bersaglieri entrano a Roma per la', n:'Porta Pia', d:'una breccia, poche ore di combattimento, e un plebiscito che ratifica'},
+         {r:'il papa si dichiara prigioniero e vieta ai cattolici di partecipare alla', n:'Vita politica', d:'il non expedit tiene fuori dal voto e dalle candidature milioni di persone per decenni'},
+         {r:'resta una', n:'Questione meridionale', d:'un divario che l\'unificazione non ha creato dal nulla ma ha allargato con tariffe, tasse e leva'},
+         {r:'comincia l\'', n:'Emigrazione', d:'poche decine di migliaia l\'anno all\'inizio, centinaia di migliaia entro fine secolo: e la vera risposta di massa'},
+         {piu:true, r:'lasciando anche una rete di', n:'Strade e ferrovie', d:'il paese ne aveva pochissime e frammentate: e la costruzione materiale meno raccontata e piu duratura di quei quindici anni'},
+         {r:'e nel marzo 1876 la Destra cade su una legge', n:'Ferroviaria', d:'lasciando un bilancio in pareggio, uno Stato costruito e un paese che in gran parte non l\'aveva chiesto'}
+       ]}
+    ],
+    incroci:[
+      {da:'Decisione', a:'Centoventimila uomini', r:'e in contrasto con l\'impiego di',
+       perche:'Un fenomeno di criminalita comune si affronta con la polizia e i tribunali ordinari. Impiegare meta dell\'esercito per cinque anni, sospendere le garanzie e istituire tribunali militari significa trattarlo come un conflitto interno. La parola scelta serviva a evitare tre conseguenze: il riconoscimento internazionale di uno stato di belligeranza, lo statuto di prigioniero per i catturati e l\'ammissione che una parte del paese non riconoscesse il nuovo Stato.'},
+      {da:'Terra', a:'Repressa', r:'e la promessa implicita che a Bronte viene',
+       perche:'I contadini si uniscono ai garibaldini aspettando la divisione dei latifondi e la restituzione delle terre comuni. Ad agosto 1860, a Bronte, l\'occupazione finisce con un tribunale militare e cinque fucilazioni ordinate da un ufficiale garibaldino. È il momento in cui si vede che l\'alleanza fra il movimento nazionale e i contadini era fondata su un equivoco, e lo stesso equivoco produrra il brigantaggio pochi mesi dopo.'},
+      {da:'Demaniali e comuni', a:'Chiesa', r:'seguono la stessa sorte dei beni della',
+       perche:'In entrambi i casi terre sottratte a un uso collettivo o ecclesiastico vengono messe all\'asta, e in entrambi i casi le comprano i proprietari che avevano gia denaro e credito. L\'operazione risana in parte il bilancio e concentra la proprieta, togliendo ai contadini gli usi civici — legna, pascolo, raccolta — da cui dipendeva la loro sopravvivenza. La riforma fiscale e la questione sociale sono qui la stessa cosa.'},
+      {da:'Palese', a:'Politicamente vero', r:'non impedisce che il risultato sia',
+       perche:'Un voto a schede colorate, con urne separate e sotto lo sguardo dei notabili, non misura le opinioni. Questo non significa che il risultato fosse inventato: i ceti proprietari volevano davvero l\'unione, e in molte aree anche parte della borghesia urbana. Il plebiscito serviva a mostrare all\'Europa una legittimazione, non a scoprire che cosa il paese pensasse — e infatti nessuno si preoccupo di chiederlo in modo che si potesse rispondere di no.'},
+      {da:'Consegna', a:'Troppo presto', r:'e giudicata avvenuta',
+       perche:'A Teano Garibaldi restituisce al re un regno di nove milioni di abitanti e si ritira senza chiedere nulla. Il gesto e stato celebrato per un secolo come prova di disinteresse, ed e anche una scelta politica: consegnare senza condizioni significo rinunciare a contrattare come il Sud sarebbe stato amministrato. Chi lo criticava allora — e furono molti fra i suoi — osservava che una trattativa non era un tradimento della causa ma il modo di deciderne il seguito.'},
+      {da:'Piemontesi', a:'Leggi diverse', r:'e la soluzione rapida al problema delle',
+       perche:'Unificare sistemi giudiziari, monete, tariffe e scuole richiedeva anni di lavoro comparativo; estendere il codice piemontese richiedeva una legge. La scelta fu di velocita, e produsse uno Stato funzionante in pochi mesi e un\'amministrazione percepita come estranea in buona parte del paese. Il progetto di regioni preparato da Minghetti fu accantonato per il timore che decentrare significasse disgregare.'},
+      {da:'Due per cento', a:'Vita politica', r:'viene ulteriormente ridotto dal divieto di partecipare alla',
+       perche:'Il corpo elettorale era gia una frazione minima della popolazione per requisiti di censo e istruzione. Il divieto pontificio ai cattolici di votare e candidarsi ne sottrae un\'altra parte, proprio fra i ceti che avrebbero potuto votare. Ne risulta uno Stato liberale rappresentativo di una minoranza della minoranza, e questo pesa su ogni giudizio riguardo a quanto le sue scelte fossero condivise.'},
+      {da:'Crimea', a:'Provoca', r:'e la premessa della strategia con cui il Piemonte',
+       perche:'Mandare soldati a morire in una guerra che non riguardava il proprio Stato serviva a una cosa sola: sedersi al tavolo dei vincitori e trasformare una questione interna in una questione europea. Tre anni dopo la stessa logica porta a Plombieres e alla provocazione calcolata del 1859. È il rovesciamento esatto della formula del 1848: non l\'Italia fara da se, ma l\'Italia non fara nulla senza un grande alleato.'},
+      {da:'Cattolici francesi', a:'Custoza e Lissa', r:'aiuta a spiegare perche il Veneto arrivi solo dopo',
+       perche:'Napoleone III si ferma a Villafranca anche per non indebolire troppo lo Stato pontificio davanti all\'elettorato cattolico francese, e il Veneto resta all\'Austria per sette anni. Nel 1866 l\'Italia lo ottiene pur perdendo le due battaglie, perche la Prussia vince a Sadowa. Due volte su due il territorio arriva per decisione altrui: e un dato che pesa sul modo in cui quel paese percepira se stesso.'},
+      {da:'Macinato', a:'Duecentocinquanta morti', r:'provoca rivolte con circa',
+       perche:'Tassare la macinazione del grano significa tassare il pane, cioe colpire in proporzione molto maggiore chi ha solo quello. Le rivolte del 1869 si estendono soprattutto nell\'Italia centrale e settentrionale, e vengono represse con l\'esercito. Il pareggio di bilancio, che la Destra raggiunge nel 1876 ed e la sua unica promessa mantenuta, ha questo prezzo — ed e utile ricordarlo quando si valuta un risanamento guardando solo ai conti.'},
+      {da:'Legge Casati', a:'Emigrazione', r:'non basta a fermare l\'',
+       perche:'L\'obbligo scolastico e di due anni ed e a carico dei comuni, cioe proprio di quelli piu poveri, che non hanno i mezzi per applicarlo. L\'analfabetismo scende lentamente e resta altissimo nel Sud. Milioni di persone rispondono alla mancanza di terra e di lavoro nell\'unico modo disponibile, partendo — e l\'emigrazione diventera per decenni la principale politica sociale italiana, senza essere mai stata decisa da nessuno.'},
+      {da:'Ex repubblicani', a:'Secondo', r:'accettano una monarchia che si presenta come continuazione, tenendo il numero',
+       perche:'Chi aveva combattuto per una repubblica accetta il regno per realismo, come dichiara Manin: l\'Italia si fara con Vittorio Emanuele o senza di lui. Il nuovo Stato pero non fa nemmeno il gesto simbolico di ripartire la numerazione dei sovrani, e si presenta come l\'ingrandimento del Regno di Sardegna. Il compromesso fu accettato dai repubblicani e non ricambiato: e una delle radici del rancore che attraversera il primo cinquantennio unitario.'},
+      {da:'Temporanea', a:'Accentramento', r:'e coerente con la scelta dell\'',
+       perche:'Una legge d\'eccezione votata per pochi mesi e prorogata per due anni, con tribunali militari e domicilio coatto per semplici sospetti, e il volto estremo della stessa logica che estende ovunque i prefetti e le leggi piemontesi: davanti a un paese che non si conosce, si sceglie il controllo. Vale la pena notarlo perche lo strumento resta disponibile nell\'ordinamento e verra riusato in altre circostanze.'}
+    ]
+  },
+  provocazione: {
+    titolo:'Come si chiama',
+    durata:'55 minuti',
+    domandaMadre:'Perche la guerra piu lunga e piu sanguinosa dell\'Italia unita non si chiama guerra?',
+    perche:'Fra il 1861 e il 1865 lo Stato italiano impiega nel Mezzogiorno fino a centoventimila uomini, circa meta dell\'esercito, sospende le garanzie ordinarie, istituisce tribunali militari e produce piu morti di tutte e tre le guerre d\'indipendenza. Il nome dato a questo conflitto e brigantaggio, cioe criminalita comune. La lezione non serve a sostituire un nome con un altro — anche la versione opposta, che ne fa una guerra di resistenza meridionale, semplifica un fenomeno in cui convivono rivolta sociale, banditismo vero e legittimismo finanziato dall\'esilio. Serve a far vedere che il nome dato a un conflitto e esso stesso un atto politico, e a fornire un criterio: chiedersi che cosa un nome autorizzi a fare.',
+    occorrente:'Niente.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'Quattro numeri.\n\nUno.\n\nFra il 1861 e il 1865\nlo Stato italiano\nimpiega nel Mezzogiorno\nfino a centoventimila\nuomini.\n\nCirca meta\ndell\'esercito.\n\nDue.\n\nSono piu\ndi quanti ne avesse\nschierati\nin qualunque\nguerra d\'indipendenza.\n\nTre.\n\nI morti\nsuperano quelli\ndelle tre guerre\nd\'indipendenza\nmesse insieme.\n\nQuattro.\n\nPer due anni\nvengono sospese\nle garanzie ordinarie\ne funzionano\ntribunali militari.\n\nCome si chiama\ntutto questo?\n\nBrigantaggio.\n\nCioe:\n\ncriminalita comune.',
+       parlato:'Da\' i quattro numeri uno alla volta, senza commentare, e poi il nome.\n\nLascia qualche secondo e chiedi che cosa non torna. Ci arrivano: non si manda meta dell\'esercito contro dei delinquenti.\n\nMetti in chiaro che i numeri non sono di parte: stanno negli atti parlamentari e nei documenti dell\'esercito, e nessuno storico li discute.\n\nPoi togli subito di mezzo la tentazione opposta, perche arriva sempre e va disinnescata prima. Qualcuno dira che allora era una guerra civile del Sud contro l\'invasore. Di\' che ci arriveremo, e che anche quella versione ha un problema.\n\nLa domanda dell\'ora e piu precisa: perche a un conflitto viene dato un nome invece di un altro, e che cosa cambia?\n\nRaccogli le prime risposte e scrivile alla lavagna. Di solito vengono fuori due: perche i vincitori scrivono la storia, e perche in parte erano davvero briganti.\n\nDi\' che tutte e due contengono qualcosa e che oggi si guarda un documento per volta.',
+       seDicono:[
+         {loro:'«Erano briganti, punto: rubavano e uccidevano.»',
+          tu:'Molti sì, e non va negato: c\'erano bande che vivevano di rapine e di sequestri, e alcune erano attive da prima dell\'unita. La domanda resta: si sospende la legge ordinaria e si mandano centoventimila soldati per cinque anni contro dei rapinatori? Il metodo scelto dice qualcosa su come lo Stato lo valutava davvero.'},
+         {loro:'«I vincitori scrivono la storia.»',
+          tu:'È una formula comoda e va resa piu precisa, altrimenti spiega tutto e non spiega niente. Oggi non ci limitiamo a dire che il nome e stato scelto dai vincitori: guardiamo che cosa quel nome permetteva di fare e che cosa impediva. È li che una formula generica diventa uno strumento.'}
+       ]},
+
+      {minuti:'8–17', et:'La fonte',
+       schermo:'15 agosto 1863.\n\nIl Parlamento\napprova\nla legge Pica.\n\nDice questo.\n\nNelle province\nindicate dal governo,\n\nchi fa parte\ndi una banda\ndi tre o piu persone\nche vada in giro armata\n\ne giudicato\ndai tribunali militari.\n\nChi e riconosciuto\ncome camorrista,\nozioso, vagabondo\no sospetto,\n\npuo essere mandato\nal domicilio coatto\n\nsenza processo,\n\nper decisione\ndi una giunta\ncomposta dal prefetto,\ndal presidente\ndel tribunale\ne da alcuni\nconsiglieri.\n\nLa legge\ne dichiarata\ntemporanea:\n\nvale fino\nal 31 dicembre.\n\nVerra prorogata\nfino al 1865.',
+       testo:{fonte:'Legge n. 1409 del 15 agosto 1863, detta legge Pica, e successive proroghe',
+              glossa:'Il documento va passato alle tre domande. Chi lo scrive e per risolvere quale problema: un parlamento in cui il Mezzogiorno è rappresentato da una ristrettissima élite di proprietari, che deve dare all\'esercito strumenti giuridici per un conflitto che sta già combattendo da due anni senza una cornice legale. Che cosa ammette senza volerlo: ammette che la legge ordinaria e i tribunali ordinari non bastavano, cioè che non si trattava di criminalità comune — perché per la criminalità comune quegli strumenti esistevano già; e ammette, con la categoria dei «sospetti» e degli «oziosi», di non essere in grado di distinguere i combattenti dalla popolazione. Che cosa non dice: non compare mai la parola guerra, e non si dice nulla di che cosa accada a chi viene internato senza essere giudicato colpevole. La dichiarazione di temporaneità è il terzo elemento da notare: una misura eccezionale votata per quattro mesi e prorogata per due anni è il primo stato d\'eccezione dell\'Italia unita, e lo strumento resta poi disponibile nell\'ordinamento.'},
+       parlato:'Leggi il testo e conduci le tre domande.\n\nChi scrive e che problema deve risolvere. Da\' il dato che serve: l\'esercito stava gia combattendo da due anni senza una cornice giuridica, e i comandanti chiedevano copertura per quello che facevano. La legge arriva dopo i fatti, non prima.\n\nChe cosa ammette senza volerlo. Qui c\'e il cuore dell\'ora, e conviene farci arrivare la classe.\n\nSe si tratta di criminalita comune, perche servono tribunali militari? I tribunali ordinari e il codice penale c\'erano gia. Il fatto stesso che servisse una legge speciale ammette che il fenomeno non fosse quello che il nome diceva.\n\nSeconda ammissione, e piu dura: la categoria degli oziosi, vagabondi e sospetti. Chiedi che cosa significhi. Significa che non si sapeva distinguere chi combatteva da chi viveva li. È l\'ammissione di uno Stato che in quel territorio non ha informazioni.\n\nChe cosa non dice. La parola guerra non compare mai. E non si dice che cosa accada a chi viene internato senza essere trovato colpevole.\n\nUltimo elemento: la temporaneita. Votata per quattro mesi, prorogata fino al 1865. Fai notare che questa e una struttura ricorrente, e che la incontreranno di nuovo studiando il Novecento.',
+       seDicono:[
+         {loro:'«Erano in emergenza, che altro potevano fare?»',
+          tu:'Domanda giusta e non retorica: uno Stato aggredito da bande armate deve rispondere. Nota pero due cose che restano vere anche accettando l\'emergenza. La prima: internare qualcuno perche sospetto, senza processo, non e una risposta a un\'emergenza, e la creazione di una categoria. La seconda: uno strumento nato per un\'emergenza raramente viene smontato del tutto.'},
+         {loro:'«"Ozioso" vuol dire disoccupato?»',
+          tu:'In pratica poteva significare questo, e sta li la gravita. In una regione con disoccupazione enorme, una categoria del genere consente di internare chiunque non abbia un lavoro dimostrabile. Quando una legge usa parole che chiunque puo riempire come vuole, sta trasferendo il potere di decidere da un giudice a un funzionario.'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'Adesso perche.\n\nNel Sud,\nfra il 1861 e il 1865,\narrivano\ntre cose insieme.\n\nUno.\nLa leva obbligatoria.\n\nCinque anni\ndi servizio militare\n\ntolti a famiglie\ncontadine\nche vivono\ndel lavoro dei figli.\n\nI Borbone\navevano un esercito\nmolto piu piccolo\ne un sorteggio\nche si poteva evitare\npagando.\n\nI renitenti\nsono decine di migliaia.\n\nDue.\nLe tasse\ndel nuovo Stato,\n\npiu alte\ne riscosse meglio.\n\nTre,\ned e la piu pesante.\n\nLe terre.\n\nI contadini\navevano appoggiato\nGaribaldi\naspettando\nche i latifondi\nvenissero divisi\n\ne che tornassero\nle terre comuni.\n\nInvece\nle terre demaniali\ne quelle della Chiesa\n\nvengono messe\nall\'asta,\n\ne le comprano\nquelli che avevano\ngia i soldi.',
+       parlato:'Costruisci le tre cause con ordine, e insisti sulla terza perche e quella che i ragazzi non conoscono.\n\nSulla leva: fai capire che cosa significhi togliere un figlio maschio a una famiglia contadina per cinque anni. Non e un fastidio: e una perdita di braccia che puo far saltare l\'azienda familiare. E il confronto con il sistema precedente rende chiaro perche fu percepito come un peggioramento, non come un dovere nuovo.\n\nSulle tasse: aggiungi che il punto non e solo quanto si paga ma che le si riscuote davvero. Uno Stato piu efficiente e piu presente e sentito come piu oppressivo, anche a parita di aliquote.\n\nSulle terre, prenditi tempo. I contadini si erano uniti ai garibaldini perche avevano capito che le terre sarebbero state divise. Poi le terre vengono vendute all\'asta, e le comprano i galantuomini — cioe spesso gli stessi che erano stati borbonici il giorno prima e diventano unitari il giorno dopo, senza perdere niente.\n\nQui va detta la cosa piu importante del capitolo: per un contadino del Sud, l\'unita significo il cambio della bandiera sopra le stesse persone che comandavano prima, piu una tassa in piu e un figlio in meno.\n\nPoi aggiungi l\'altro pezzo, senza attenuarlo: c\'erano anche i legittimisti borbonici che finanziavano dall\'esilio, e c\'erano bande che rapinavano e basta. Le tre cose convivevano, spesso nella stessa banda.\n\nRichiama Bronte, se lo hanno fatto: agosto 1860, i contadini occupano le terre e un ufficiale garibaldino ne fa fucilare cinque. La frattura comincia li, mesi prima dell\'unita.',
+       seDicono:[
+         {loro:'«Quindi stavano meglio con i Borbone.»',
+          tu:'Attento al salto: dire che una cosa peggiora non significa che prima fosse buona. Il Regno delle Due Sicilie aveva analfabetismo altissimo, pochissime strade e nessuna liberta politica. La tesi corretta e piu limitata e piu solida: per i contadini l\'unita porto costi immediati e benefici lontani, e questo basta a spiegare la rivolta senza bisogno di idealizzare nulla.'},
+         {loro:'«Ma i galantuomini erano meridionali anche loro.»',
+          tu:'Esattamente, ed e la cosa piu utile che puoi notare oggi. Non fu il Nord contro il Sud: fu, dentro il Sud, chi possedeva contro chi non possedeva, con lo Stato nuovo schierato dalla parte dei primi perche erano quelli che gli garantivano il controllo. Le letture puramente geografiche di questo conflitto non reggono ai documenti.'}
+       ]},
+
+      {minuti:'28–38', et:'La seconda fonte',
+       schermo:'Maggio 1863.\n\nTre mesi\nprima della legge Pica,\n\nil Parlamento\naveva mandato\nuna commissione\nd\'inchiesta\nnelle province\nmeridionali.\n\nLa relazione\nfinale,\nletta in una seduta\nsegreta,\n\ndice che il brigantaggio\nnon nasce\ndalla sola malvagita.\n\nElenca:\n\nla miseria,\n\nl\'ignoranza\nin cui le popolazioni\nsono state lasciate,\n\nl\'assenza di strade,\n\nil rancore\ndi chi non ha ricevuto\ncio che si aspettava\ndalle terre,\n\ne l\'amministrazione\nnuova,\nspesso ingiusta\ne sempre estranea.\n\nÈ un documento\ndello Stato,\n\nscritto\ndai vincitori,\n\nche dice\nesattamente\nle cause sociali.\n\nE conclude\nchiedendo\nuna legge speciale.',
+       testo:{fonte:'Relazione della Commissione parlamentare d\'inchiesta sul brigantaggio nelle province meridionali, riferita da Giuseppe Massari (maggio 1863)',
+              glossa:'È la seconda fonte, e dice altro rispetto alla legge: qui lo Stato riconosce che il fenomeno ha cause sociali e amministrative. Le tre domande. Chi la scrive e per quale problema: deputati inviati sul posto, in gran parte liberali del Nord e del Sud, che devono capire perché due anni di operazioni militari non abbiano risolto nulla e che hanno bisogno di motivare al Parlamento una richiesta di poteri straordinari. Che cosa ammette senza volerlo: ammette che l\'amministrazione nuova sia percepita come ingiusta ed estranea, cioè che il problema riguardi anche lo Stato che manda i soldati e non solo chi gli spara contro; e ammette, elencando la mancata distribuzione delle terre, che una promessa fosse stata fatta e non mantenuta. Che cosa non dice: pur individuando cause sociali, non propone quasi nulla sul piano sociale — la conclusione operativa è una legge di eccezione. Il documento va tenuto insieme alla legge Pica: non si contraddicono, perché rispondono a domande diverse — che cosa ha prodotto il conflitto, e come reprimerlo. La distanza fra la diagnosi e la terapia è essa stessa un dato storico.'},
+       parlato:'Presenta il documento sottolineando che non e una denuncia di parte: e una commissione parlamentare, cioe lo Stato che indaga su se stesso.\n\nLeggi l\'elenco delle cause e chiedi alla classe di reagire. Di solito si stupiscono: si aspettavano che i vincitori negassero tutto, e invece scrivono la diagnosi che si trova nei libri di storia sociale un secolo dopo.\n\nApplica le tre domande e falle fare a loro.\n\nChi scrive e perche: deputati mandati sul posto per capire perche due anni di operazioni militari non avessero risolto niente, e che devono giustificare al Parlamento una richiesta di poteri straordinari.\n\nChe cosa ammette senza volerlo: che l\'amministrazione nuova e sentita come ingiusta ed estranea. Fai notare quanto sia grave: significa che una causa del conflitto e lo Stato stesso. E ammette che una promessa sulle terre c\'era stata.\n\nChe cosa non dice: dopo aver elencato cause sociali, non propone rimedi sociali. La conclusione operativa e una legge di eccezione.\n\nAdesso il lavoro vero: tenere insieme i due documenti.\n\nLa legge dice che sono criminali. La relazione dice che le cause sono la miseria e l\'ingiustizia dell\'amministrazione. Chiedi se si contraddicono.\n\nGuidali: no, perche rispondono a due domande diverse — che cosa ha prodotto il conflitto, e come reprimerlo. Lo stesso Parlamento, in tre mesi, scrive una diagnosi sociale e vota una legge militare.\n\nEnuncia il punto: la distanza fra la diagnosi e la terapia e essa stessa un fatto storico, e va spiegata. Chiedi perche non fecero l\'altra cosa.\n\nLa risposta e nei documenti: distribuire le terre significava colpire i proprietari meridionali, cioe gli unici alleati che il nuovo Stato aveva laggiu.',
+       seDicono:[
+         {loro:'«Se sapevano le cause, perché non le hanno risolte?»',
+          tu:'Perche risolverle significava togliere terra ai proprietari del Sud, che erano gli unici sostenitori locali del nuovo Stato e quelli che gli garantivano il controllo del territorio. Lo Stato aveva una scelta fra perdere i propri alleati e reprimere: ha scelto di reprimere. Non e cinismo raccontarlo cosi — e la spiegazione che regge i documenti.'},
+         {loro:'«Era una seduta segreta: allora non volevano che si sapesse.»',
+          tu:'Ottima osservazione, e va tenuta. La relazione fu letta in seduta segreta e pubblicata solo in parte. Il che ci dice due cose: che quelle cause erano note, e che dirle in pubblico era considerato pericoloso. Un documento e anche il modo in cui viene diffuso, e questo fa parte della fonte.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'Adesso\nla parte difficile.\n\nChiamarlo brigantaggio\nfu una scelta,\ne funziono.\n\nPerche impedi\ntre cose.\n\nUno.\nIl riconoscimento\ninternazionale\ndi uno stato di guerra.\n\nDue.\nLo statuto\ndi prigioniero\nper i catturati.\n\nTre.\nQualunque\ntrattativa.\n\nCon un criminale\nnon si tratta.\n\nE fu efficace\nanche dopo:\n\nper un secolo\nquesto conflitto\nsta nei manuali\nin poche righe,\n\nsotto la voce\nordine pubblico.\n\nMa adesso\nguardate\nl\'altra versione.\n\nQuella che dice:\n\nnon era brigantaggio,\n\nera la guerra\ndi un popolo\ncontro un invasore.\n\nAnche quella\ne una scelta\ndi nome.\n\nE nasconde\nche in quelle bande\n\nc\'erano insieme\n\ncontadini disperati,\n\nrapinatori\nche c\'erano gia prima,\n\ne agenti pagati\nda una dinastia\nin esilio.\n\nDue nomi.\n\nOgnuno\nfa sparire\nqualcosa.',
+       parlato:'Presenta il primo lato con precisione, perche e quello che la classe accetta subito.\n\nSpiega le tre conseguenze pratiche del nome, e sono verificabili: nessun riconoscimento di belligeranza, nessuno statuto di prigioniero, nessuna trattativa possibile. Un nome non e un\'etichetta: e cio che stabilisce quali azioni sono legittime.\n\nPoi fai la mossa piu importante dell\'ora e non risparmiare nessuno. Anche la versione opposta e una scelta di nome, e cancella cose diverse.\n\nSii concreto. Chiamarla guerra di liberazione del Sud fa sparire il fatto che molte bande rapinassero anche i contadini poveri; fa sparire che i Borbone finanziassero dall\'esilio persone che non avevano nessun progetto per quelle popolazioni; e fa sparire che i nemici principali dei contadini fossero i proprietari meridionali, non i piemontesi.\n\nAggiungi il problema dei numeri, perche circola molto. Si sentono cifre enormissime, dell\'ordine del milione di morti: non sono sostenute dai documenti, e chi le usa di solito non cita da dove vengano. I numeri accertati sono gravi abbastanza e non hanno bisogno di essere gonfiati — e chi li gonfia rende piu facile liquidare tutta la questione.\n\nEnuncia la posizione onesta: in quel conflitto convivevano una rivolta sociale reale, banditismo vero e legittimismo pagato. Qualunque nome unico ne nasconde due terzi.\n\nPoi da\' il criterio, che e la cosa che devono portarsi via: non chiedetevi quale nome sia bello o giusto. Chiedetevi che cosa quel nome permette di fare a chi lo usa.',
+       seDicono:[
+         {loro:'«Allora la verità sta nel mezzo.»',
+          tu:'Diffida di questa formula: quasi sempre e un modo per non decidere niente. La verita non sta nel mezzo, sta nei dettagli — quale banda, in quale provincia, in quale anno, con quali finanziamenti. Alcune cose sono documentate e altre no. «Nel mezzo» e comodo; «non con un nome solo» e piu faticoso e piu esatto.'},
+         {loro:'«Ma allora oggi come lo chiamiamo?»',
+          tu:'Gli storici usano ancora brigantaggio, dichiarando che il termine e ereditato e insufficiente, oppure parlano di guerra civile nel Mezzogiorno specificando di che cosa parlano. Il punto non e trovare la parola perfetta: e non usarne nessuna come se fosse ovvia. Quando una parola non ti mette a disagio, di solito e perche hai smesso di guardarla.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'La domanda era:\n\nperche non si chiama\nguerra?\n\nRisposta:\n\nperche chiamarla guerra\navrebbe obbligato\na trattare\nchi la combatteva\ncome un nemico,\n\ne quindi\nad ammettere\nche una parte\ndel paese\n\nnon riconosceva\nil paese.\n\nDa portarsi via\nuna domanda sola,\n\nda fare ogni volta\nche sentite\nun nome\nper un conflitto:\n\nnon «e giusto\nchiamarlo cosi?»\n\nma\n\n«che cosa\nquesto nome\npermette di fare\n\na chi lo usa,\n\ne che cosa\nrende impossibile\nagli altri?»\n\nÈ una domanda\nche funziona\nsu qualunque\nconflitto,\n\ncompresi quelli\ndi cui sentite\nparlare stasera.',
+       parlato:'Torna alle ipotesi iniziali e verificale.\n\nErano davvero briganti: in parte sì, e non spiega centoventimila soldati per cinque anni.\n\nI vincitori scrivono la storia: vero e generico. Oggi lo abbiamo reso preciso: il nome ha avuto tre effetti pratici verificabili.\n\nPoi da\' lo strumento in forma di domanda e falla applicare a casi vicini. Funziona ovunque: si dice operazione o guerra; scontri o rivolta; disordini o protesta; migranti o profughi. Ogni coppia sposta cio che si e autorizzati a fare.\n\nInsisti su un punto che evita il cinismo: non stiamo dicendo che i nomi siano tutti equivalenti e che ognuno scelga il suo. Stiamo dicendo che ogni nome ha conseguenze pratiche, e che riconoscerle e il modo per discutere di quali siano accettabili.\n\nPoi il bilancio del capitolo, e vale la pena farlo per intero e senza retorica in nessuna delle due direzioni.\n\nIn quindici anni la Destra storica costruisce uno Stato: unifica leggi, monete e amministrazione, completa il territorio, e raggiunge il pareggio di bilancio, che era la sua unica grande promessa. Lo fa con una tassa sul pane che provoca rivolte e duecentocinquanta morti, con un\'amministrazione estranea a mezzo paese, con un corpo elettorale del due per cento e con cinque anni di stato d\'eccezione nel Mezzogiorno.\n\nDi\' chiaramente che entrambe le colonne sono vere, e che un giudizio che ne tenga una sola non e un giudizio: e una tifoseria.\n\nUltima riga, per il seguito: nel 1876 la Destra cade e arriva al governo la Sinistra, con un programma opposto — allargare il voto, togliere il macinato, istruire. La prossima volta si guarda se ci riesce.',
+       seDicono:[
+         {loro:'«Allora l\'unità è stata un errore.»',
+          tu:'Non e una conclusione che segua dai documenti, ed e bene dirlo. Quello che segue e piu limitato: fu fatta da una minoranza, in fretta, con metodi che produssero una frattura profonda e duratura. Che un\'operazione sia stata condotta male non dimostra che non andasse fatta — sono due giudizi diversi, e confonderli e proprio l\'errore che abbiamo passato l\'ora a smontare.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'Bronte',
+       corpo:'Nell\'agosto 1860, mentre Garibaldi controlla la Sicilia, a Bronte i contadini insorgono contro i proprietari locali rivendicando le terre comuni usurpate. Nei disordini vengono uccise alcune persone.\n\nGaribaldi invia Nino Bixio, che istituisce un tribunale militare, condanna a morte cinque persone — fra cui un avvocato che aveva sostenuto le rivendicazioni contadine — e le fa fucilare.\n\nLa repressione avviene mentre la spedizione è ancora in corso e prima che il Regno d\'Italia esista. Le terre di Bronte facevano parte di una vasta proprietà appartenente agli eredi dell\'ammiraglio Nelson, e il governo britannico seguiva la vicenda con attenzione.',
+       chiedi:'Chi porta la libertà reprime chi la interpreta in modo diverso da come lui l\'aveva intesa. È un tradimento della causa o una scelta obbligata da chi doveva vincere una guerra? E quali promesse un movimento fa senza pronunciarle, e di cui poi non risponde?'},
+      {titolo:'La tassa sul pane',
+       corpo:'Nel 1868, per raggiungere il pareggio di bilancio, il governo introduce una tassa sulla macinazione dei cereali: si paga per macinare il grano, cioè sul pane, che per gran parte della popolazione era quasi l\'unico alimento.\n\nL\'imposta viene riscossa applicando contatori meccanici alle macine, e colpisce in proporzione molto maggiore le famiglie povere, per le quali il pane assorbe la parte prevalente della spesa.\n\nNel 1869 scoppiano rivolte in diverse regioni, soprattutto nell\'Italia centrale e settentrionale. La repressione militare provoca circa duecentocinquanta morti e migliaia di arresti. Il pareggio di bilancio viene raggiunto nel 1876; la tassa sarà abolita solo nel 1884.',
+       chiedi:'Un obiettivo economico giusto viene raggiunto con lo strumento fiscale più iniquo disponibile. Come si giudica un risultato guardando anche a chi lo ha pagato? E quali imposte di oggi vi sembrano funzionare allo stesso modo?'},
+      {titolo:'La città ceduta',
+       corpo:'Con l\'accordo di Plombières la Francia riceve Nizza e la Savoia in cambio dell\'intervento contro l\'Austria. La cessione viene ratificata nel 1860 con due plebisciti, tenuti a voto palese e con una netta pressione delle autorità: i sì superano ovunque il novantanove per cento.\n\nGiuseppe Garibaldi era nato a Nizza. In Parlamento protestò con violenza contro la cessione della propria città, definendola un atto compiuto contro la volontà degli abitanti, e la rottura con Cavour fu clamorosa.\n\nPochi mesi dopo, però, partì per la Sicilia con l\'assenso tacito dello stesso governo che aveva ceduto la sua città.',
+       chiedi:'Si può collaborare con chi ci ha appena tolto qualcosa a cui tenevamo, in nome di un obiettivo più grande? E quel calcolo — accettare un torto per ottenere altro — quando è realismo politico e quando diventa semplicemente cedere?'}
+    ],
+    testi:[
+      {fonte:'Camillo Benso di Cavour, discorso alla Camera sulla questione romana (25-27 marzo 1861)',
+       corpo:'Cavour sostiene davanti al Parlamento che Roma debba essere la capitale d\'Italia, e che vi si debba giungere non con la forza ma con il consenso della Francia e della stessa Chiesa; propone di garantire al pontefice piena indipendenza nell\'esercizio del potere spirituale, rinunciando lo Stato a ogni ingerenza in materia religiosa, secondo il principio di una libera Chiesa in un libero Stato.',
+       glossa:'È il testamento politico di Cavour: muore dieci settimane dopo. La formula riassume una posizione che allora era spiazzante per entrambe le parti — lo Stato rinuncia ai poteri che i sovrani cattolici avevano sempre esercitato sulla Chiesa, e in cambio chiede alla Chiesa di rinunciare al potere temporale. Nessuna delle due cose avvenne come lui la immaginava: Roma fu presa con i cannoni nel 1870 e il papa rispose con il divieto ai cattolici di partecipare alla vita politica nazionale. Il principio però restò come riferimento, e riemergerà nei dibattiti costituzionali del 1947.'},
+      {fonte:'Massimo d\'Azeglio, lettera a Carlo Matteucci (agosto 1861)',
+       corpo:'D\'Azeglio osserva che a Napoli si è cacciato il sovrano per fondare un governo basato sul consenso universale, e che tuttavia occorrono e occorreranno molti battaglioni per tenere quelle province; e domanda se dunque gli italiani abbiano voluto davvero cambiare padrone, o se invece si stia imponendo qualcosa a chi non l\'ha chiesto: conclude che, prima di rendere gli italiani liberi, bisognerebbe sapere se lo vogliano.',
+       glossa:'La lettera è di un moderato, ex presidente del Consiglio e sostenitore dell\'unità, e proprio per questo pesa: la difficoltà non è denunciata da un avversario ma da chi aveva contribuito a costruire quello Stato. Va usata con precisione — non dimostra che il Mezzogiorno fosse compatto contro l\'unità, perché una parte consistente dei ceti proprietari e urbani l\'aveva voluta — ma registra un fatto che i plebisciti coprivano: che il consenso dichiarato e la necessità di truppe permanenti non stavano insieme. La frase più celebre attribuita a d\'Azeglio, sul fare gli italiani, non compare nei suoi scritti in quella forma.'},
+      {fonte:'Legge per l\'unificazione amministrativa del Regno, n. 2248 del 20 marzo 1865',
+       corpo:'La legge estende a tutto il Regno un ordinamento unico per l\'amministrazione comunale e provinciale, la sicurezza pubblica, la sanità, il Consiglio di Stato, il contenzioso amministrativo e i lavori pubblici, ricalcando in larga parte il modello già vigente negli Stati sardi; le province sono affidate a prefetti nominati dal governo, e i sindaci dei comuni sono di nomina regia.',
+       glossa:'È l\'atto che decide la forma dello Stato italiano, e la scelta fu consapevole: il progetto di articolare il Regno in regioni, preparato da Minghetti, venne accantonato per il timore che il decentramento favorisse spinte disgregatrici. Il risultato fu un\'amministrazione funzionante in tempi brevissimi e percepita come estranea in buona parte del paese, con prefetti che rispondevano al governo e sindaci nominati dall\'alto. La struttura restò sostanzialmente immutata fino al Novecento, e le regioni previste dalla Costituzione del 1948 diventeranno operative solo nel 1970.'}
+    ],
+    compito:'Mezza pagina. Prendete un conflitto attuale, anche piccolo, di cui si parla in questi giorni, e trovate due nomi diversi con cui viene chiamato da due parti diverse. Per ciascuno rispondete alla domanda di oggi: che cosa quel nome autorizza a fare a chi lo usa, e che cosa rende impossibile all\'altra parte. Poi, in due righe, dite quale delle due denominazioni vi sembra descrivere meglio i fatti che conoscete, e quali fatti vi mancherebbero per esserne sicuri.',
+    fonti:[
+      'D. Mack Smith, Il Risorgimento italiano; Cavour',
+      'A. Scirocco, L\'Italia del Risorgimento; Garibaldi. Battaglie, amori, ideali',
+      'S. Lupo, Il grande brigantaggio. Interpretazione e memoria di una guerra civile',
+      'J. Dickie, Darkest Italy; F. Molfese, Storia del brigantaggio dopo l\'Unità',
+      'Atti della Commissione parlamentare d\'inchiesta sul brigantaggio (1863); testo della legge Pica',
+      'G. Candeloro, Storia dell\'Italia moderna, volume V; R. Romanelli, L\'Italia liberale'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',
