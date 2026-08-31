@@ -15330,6 +15330,230 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Storia contemporanea · 5 — L\'Europa nell\'età di Bismarck': {
+  mappa: {
+    n:'L\'Europa 1871-1890', d:'vent\'anni di pace costruiti da un uomo che non credeva alla pace come principio',
+    f:[
+      {r:'parte da un', n:'Problema nuovo', d:'aver vinto tre guerre in sette anni crea una difficolta che le vittorie non risolvono',
+       f:[
+         {r:'la Germania si dichiara', n:'Sazia', d:'non ha piu rivendicazioni territoriali in Europa: ogni ulteriore ingrandimento aumenterebbe solo i nemici'},
+         {r:'ma e diventata la potenza piu forte del', n:'Continente', d:'e questo basta a rendere inquieti tutti gli altri, anche senza che faccia nulla'},
+         {r:'e ha una', n:'Nemica permanente', d:'la Francia, a cui ha tolto Alsazia e Lorena e imposto cinque miliardi: non si riconciliera'},
+         {r:'da cui l\'ossessione che chiama', n:'Incubo delle coalizioni', d:'il pericolo non e un nemico, sono due o tre nemici che si mettono d\'accordo'},
+         {r:'quindi l\'obiettivo diventa', n:'Tenerla sola', d:'non attaccare la Francia: lasciarla senza alleati, perche da sola non puo fare nulla'},
+         {r:'e il metodo e enunciato in un memorandum del', n:'1877', d:'creare una situazione politica in cui tutte le potenze, tranne la Francia, abbiano bisogno di noi',
+          f:[{piu:true, r:'con un\'idea di pace che non e un', n:'Valore', d:'e il risultato di un equilibrio ben congegnato: dura finche conviene a tutti, e non un minuto di piu'}]}
+       ]},
+
+      {r:'costruisce un', n:'Sistema di alleanze', d:'complicato apposta, perche ogni pezzo ne tiene fermo un altro',
+       f:[
+         {r:'nel 1873 la Lega dei', n:'Tre imperatori', d:'Germania, Austria e Russia: tenere insieme i due rivali nei Balcani e il capolavoro e il punto debole'},
+         {r:'nel 1879 la', n:'Duplice', d:'alleanza difensiva con l\'Austria-Ungheria, destinata a durare fino al 1918'},
+         {r:'nel 1882 diventa', n:'Triplice', d:'entra l\'Italia, offesa con la Francia per l\'occupazione della Tunisia che riteneva propria'},
+         {r:'nel 1887 firma con la Russia un trattato di', n:'Controassicurazione', d:'segreto, e in parte incompatibile con quello austriaco: neutralita reciproca salvo aggressioni'},
+         {r:'e tiene fuori l\'', n:'Inghilterra', d:'che non vuole impegni continentali: le basta che nessuno domini il continente'},
+         {r:'il risultato e che per vent\'anni nessuna grande potenza combatte, in una', n:'Pace armata', d:'eserciti che crescono e non si affrontano: e il periodo piu lungo senza guerre europee dal 1815',
+          f:[{piu:true, r:'a prezzo di una rete di', n:'Impegni contraddittori', d:'che solo lui era in grado di tenere insieme, perche solo lui sapeva che cosa avesse promesso a chi'}]}
+       ]},
+
+      {r:'la prova generale e il', n:'Congresso di Berlino', d:'1878, dove si decide dei Balcani senza i Balcani',
+       f:[
+         {r:'la Russia ha appena vinto una guerra contro l\'', n:'Impero ottomano', d:'e ottiene una Bulgaria grande, che le darebbe uno sbocco verso il Mediterraneo'},
+         {r:'Inghilterra e Austria', n:'Non accettano', d:'e si arriva a un passo dalla guerra generale'},
+         {r:'Bismarck convoca tutti e si presenta come', n:'Onesto sensale', d:'sostiene di non avere interessi propri nella questione: si limita a far concludere l\'affare'},
+         {r:'la Bulgaria viene', n:'Ridotta', d:'l\'Austria ottiene l\'amministrazione della Bosnia, l\'Inghilterra Cipro, la Russia quasi niente'},
+         {r:'la Russia esce', n:'Umiliata', d:'ha vinto la guerra e perso al tavolo: la Lega dei tre imperatori si incrina e andra ricucita a fatica'},
+         {piu:true, r:'e nasce li l\'espressione', n:'Polveriera d\'Europa', d:'una regione in cui ogni conflitto locale coinvolge almeno due grandi potenze che la considerano propria zona d\'influenza'},
+         {r:'e i popoli balcanici restano una', n:'Questione aperta', d:'confini disegnati sulle esigenze delle potenze, non su chi ci abitava: e la miccia che brucera nel 1914'}
+       ]},
+
+      {r:'all\'interno apre il', n:'Kulturkampf', d:'la lotta contro l\'influenza della Chiesa cattolica, e la perde',
+       f:[
+         {r:'i cattolici sono un terzo della popolazione e hanno un partito, il', n:'Zentrum', d:'che Bismarck considera un corpo estraneo perche obbedisce a un\'autorita fuori dai confini'},
+         {r:'lo Stato prende il controllo delle scuole, del matrimonio civile e della formazione dei', n:'Preti', d:'e arresta o espelle i vescovi che non obbediscono'},
+         {r:'ma il risultato e l\'opposto: lo Zentrum', n:'Raddoppia', d:'la persecuzione compatta l\'elettorato cattolico attorno al proprio partito'},
+         {r:'e Bismarck, che aveva detto di non voler andare a', n:'Canossa', d:'tratta con il nuovo papa e smonta quasi tutte le leggi'},
+         {r:'ottenendo pero un risultato che', n:'Resta', d:'il matrimonio civile e il controllo statale sulle scuole non vengono piu tolti',
+          f:[{piu:true, r:'e una lezione politica che applichera subito: perseguitare un gruppo lo', n:'Rafforza', d:'sapeva gia che valeva per i cattolici, e la ripetera comunque con i socialisti'}]}
+       ]},
+
+      {r:'poi usa il', n:'Bastone', d:'contro il movimento operaio, con lo stesso metodo e lo stesso esito',
+       f:[
+         {r:'nel 1878, dopo due attentati all\'imperatore non collegati ai socialisti, fa approvare le leggi', n:'Antisocialiste', d:'sciolgono associazioni, vietano riunioni e giornali, autorizzano espulsioni'},
+         {r:'il partito viene messo fuori legge ma i suoi candidati possono ancora', n:'Presentarsi', d:'perche il diritto di voto e costituzionale: si vieta l\'organizzazione, non l\'elezione'},
+         {r:'la legge e', n:'Rinnovata', d:'ogni due o tre anni per dodici anni, e migliaia di persone sono arrestate o costrette a emigrare'},
+         {r:'ma i voti socialisti', n:'Crescono', d:'da meno di mezzo milione a un milione e mezzo nel giro di quel decennio'},
+         {r:'e nel 1890 il Reichstag rifiuta di', n:'Prorogarla', d:'la legge decade, il partito riemerge legale e piu forte di prima'},
+         {r:'nel 1912 sara il', n:'Primo partito', d:'del Reichstag: il tentativo di distruggerlo si conclude con il suo trionfo elettorale'}
+       ]},
+
+      {r:'e insieme al bastone offre la', n:'Carota', d:'e inventa qualcosa che nessuno aveva mai fatto',
+       f:[
+         {r:'nel 1881 un messaggio imperiale annuncia che il male sociale non si cura solo', n:'Reprimendo', d:'ma promuovendo positivamente il benessere dei lavoratori'},
+         {r:'nel 1883 nasce l\'assicurazione contro le', n:'Malattie', d:'contributi divisi fra operai e datori, gestione tramite casse: e la prima al mondo obbligatoria'},
+         {r:'nel 1884 quella contro gli', n:'Infortuni', d:'pagata dai soli datori di lavoro: risolve anche il problema delle cause giudiziarie per responsabilita'},
+         {r:'nel 1889 quella per l\'invalidita e la', n:'Vecchiaia', d:'pensione a settant\'anni, quando l\'aspettativa di vita ne contava poco piu di quaranta'},
+         {r:'il fine dichiarato e togliere ai socialisti la loro', n:'Ragione d\'essere', d:'un operaio con una pensione ha qualcosa da perdere, e la deve allo Stato e non al partito'},
+         {r:'e il modello viene copiato in tutta', n:'Europa', d:'ed e la radice diretta dei sistemi sanitari e previdenziali che esistono ancora',
+          f:[{piu:true, r:'con un esito che smentisce il', n:'Calcolo', d:'i socialisti non si indeboliscono affatto, e rivendicano quelle conquiste come proprie: le istituzioni sopravvivono all\'intenzione che le ha create'}]}
+       ]},
+
+      {r:'in politica estera arriva anche l\'', n:'Imperialismo', d:'e Bismarck ci entra controvoglia e ne diventa l\'arbitro',
+       f:[
+         {r:'per anni dichiara che le colonie sono un', n:'Lusso costoso', d:'la sua carta dell\'Africa, dice, sta in Europa: la Francia, la Russia e noi in mezzo'},
+         {r:'poi cede a pressioni', n:'Commerciali ed elettorali', d:'e fra il 1884 e il 1885 la Germania occupa territori in Africa e nel Pacifico'},
+         {r:'e convoca la conferenza di', n:'Berlino', d:'1884-85: quattordici Stati si accordano sulle regole per spartirsi l\'Africa'},
+         {r:'con il principio dell\'occupazione', n:'Effettiva', d:'per rivendicare un territorio bisogna occuparlo davvero: e la partenza della corsa'},
+         {r:'nessun africano e', n:'Presente', d:'i confini vengono tracciati su carte imprecise, e molti separano popolazioni omogenee o uniscono nemici'},
+         {piu:true, r:'con una giustificazione ufficiale', n:'Umanitaria', d:'la conferenza dichiara di voler reprimere la tratta degli schiavi e portare civilta: il linguaggio dei diritti accompagna l\'occupazione, e non e l\'ultima volta'},
+         {r:'e il caso peggiore e il', n:'Congo', d:'assegnato come proprieta personale a un re europeo: milioni di morti nei vent\'anni successivi'}
+       ]},
+
+      {r:'e nel 1890 tutto', n:'Si rovescia', d:'perche il sistema dipendeva da una persona sola',
+       f:[
+         {r:'nel 1888 muoiono due imperatori in pochi mesi e sale al trono', n:'Guglielmo II', d:'ventinove anni, convinto di dover governare di persona'},
+         {r:'nel marzo 1890 Bismarck si', n:'Dimette', d:'costretto: una vignetta inglese lo ritrae come il pilota che scende dalla nave'},
+         {r:'l\'anno dopo la Germania non rinnova il trattato con la', n:'Russia', d:'lo giudica troppo complicato e in contrasto con l\'alleanza austriaca'},
+         {r:'e nel 1894 la Russia si allea con la', n:'Francia', d:'esattamente cio che il sistema doveva impedire: la Germania ha nemici su due fronti'},
+         {r:'comincia la', n:'Politica mondiale', d:'colonie, flotta da battaglia, ambizioni globali: la Germania smette di dichiararsi sazia'},
+         {piu:true, r:'e la Germania prepara un piano per battere due nemici in', n:'Sequenza', d:'colpire in fretta a ovest e poi voltarsi a est: un piano militare che, il giorno di una crisi, toglie ai politici il tempo di trattare'},
+         {r:'e l\'Europa si divide in due', n:'Blocchi rigidi', d:'e quando nel 1914 scoppiera una crisi locale, ogni alleanza trascinera dentro tutti gli altri',
+          f:[{piu:true, r:'con una responsabilita che va divisa: il sistema era troppo', n:'Personale', d:'chi lo costruisce in modo che solo lui possa gestirlo ha preparato il disastro dei propri successori'}]}
+       ]}
+    ],
+    incroci:[
+      {da:'Rafforza', a:'Crescono', r:'e la stessa lezione che si ripete quando i voti socialisti',
+       perche:'Bismarck aveva gia sperimentato con i cattolici che perseguitare un gruppo organizzato lo compatta attorno ai propri capi, e lo aveva ammesso ritirando il Kulturkampf. Dodici anni dopo ripete l\'esperimento con i socialisti e ottiene lo stesso risultato in scala maggiore. Non e ignoranza: e la difficolta di rinunciare a uno strumento che sembra dare risultati immediati anche quando si sa che a lungo termine fallisce.'},
+      {da:'Ragione d\'essere', a:'Calcolo', r:'e l\'obiettivo che smentisce il',
+       perche:'L\'idea era che un operaio assicurato dallo Stato non avrebbe piu avuto motivo di seguire un partito rivoluzionario. Il risultato fu opposto: i socialisti rivendicarono quelle leggi come una propria vittoria, dimostrazione che la pressione funzionava, e continuarono a crescere. Le istituzioni pero restarono, e sopravvissero all\'intenzione che le aveva create — che e la cosa piu importante da portare via da questo capitolo.'},
+      {da:'Valore', a:'Personale', r:'spiega perche il sistema fosse cosi',
+       perche:'Chi considera la pace il risultato di un equilibrio e non un principio costruisce un edificio di contrappesi, non un\'architettura di regole condivise. Un equilibrio del genere richiede qualcuno che lo aggiusti continuamente, perche si tratta di promesse in parte contraddittorie. Funziona benissimo finche quella persona c\'e, e crolla appena se ne va — ed e esattamente cio che accade fra il 1890 e il 1894.'},
+      {da:'Umiliata', a:'Controassicurazione', r:'e la ferita che il trattato di',
+       perche:'Dopo il congresso di Berlino la Russia si sente derubata di una vittoria militare, e la Lega dei tre imperatori si sfascia. Il trattato segreto del 1887 serve a ricucire quel rapporto tenendolo nascosto all\'Austria, con cui e in parte incompatibile. È il punto piu acrobatico del sistema, e proprio quello che i successori di Bismarck giudicheranno insostenibile — non del tutto a torto.'},
+      {da:'Incubo delle coalizioni', a:'Francia', r:'si realizza quando la Russia si allea con la',
+       perche:'Per vent\'anni ogni mossa era stata pensata per impedire che Parigi trovasse un alleato continentale. Nel 1894, quattro anni dopo il congedo del suo autore, accade esattamente cio che il sistema esisteva per evitare. Da quel momento la Germania deve pianificare una guerra su due fronti, e da quella necessita nascera il piano militare che nel 1914 trasformera una crisi balcanica in una guerra mondiale.'},
+      {da:'Questione aperta', a:'Blocchi rigidi', r:'diventa esplosiva dentro i',
+       perche:'A Berlino nel 1878 i confini balcanici furono disegnati sulle esigenze delle grandi potenze e non su chi ci abitava, lasciando rivendicazioni irrisolte in ogni direzione. Finche il sistema di alleanze era flessibile, quelle tensioni restavano locali; quando l\'Europa si divide in due blocchi contrapposti, ogni crisi in quella regione tira dentro tutti. Il 1914 comincia in un\'area i cui problemi erano stati creati trentasei anni prima.'},
+      {da:'Presente', a:'Effettiva', r:'e reso irrilevante dal principio dell\'occupazione',
+       perche:'La conferenza stabilisce che per rivendicare un territorio non basti dichiararlo proprio: bisogna occuparlo con amministrazione e forze militari. La regola sembra ragionevole e ha una conseguenza precisa: trasforma la spartizione in una gara di velocita, moltiplicando le spedizioni armate. Nessun rappresentante africano partecipa, e i confini tracciati allora sono in gran parte quelli attuali.'},
+      {da:'Zentrum', a:'Antisocialiste', r:'vota a favore delle leggi',
+       perche:'Il partito cattolico, che era stato perseguitato pochi anni prima, appoggia la repressione dei socialisti. È una delle osservazioni piu utili del capitolo: essere stati vittime di una legge d\'eccezione non produce automaticamente solidarieta con le vittime della successiva. La memoria di una persecuzione protegge molto meno di quanto si creda.'},
+      {da:'Sazia', a:'Politica mondiale', r:'viene abbandonata con il passaggio alla',
+       perche:'Dichiararsi sazi significava rinunciare a crescere per non creare coalizioni: era una scelta contro l\'istinto di una potenza in ascesa, e reggeva solo finche qualcuno la imponeva. Con Guglielmo II la Germania rivendica un posto al sole, costruisce una flotta da battaglia e sfida la Gran Bretagna sul mare. Da quel momento ha contro la potenza che per vent\'anni era stata tenuta fuori dal gioco.'},
+      {da:'Reprimendo', a:'Rinnovata', r:'e in tensione con una legge che viene',
+       perche:'Il messaggio imperiale del 1881 afferma che il male sociale non si cura solo con la repressione, e per dodici anni le due politiche procedono insieme: assicurazioni obbligatorie da un lato, scioglimento delle associazioni operaie dall\'altro. Non e un\'incoerenza ma una strategia dichiarata, e va giudicata come tale — compreso il fatto che la parte repressiva fallisce e quella sociale sopravvive.'},
+      {da:'Lusso costoso', a:'Commerciali ed elettorali', r:'viene abbandonato sotto pressioni',
+       perche:'Bismarck aveva ragione dal punto di vista strategico: le colonie tedesche non produssero mai vantaggi paragonabili ai costi. Cambia posizione perche gruppi industriali e associazioni coloniali premono, e perche l\'espansione era popolare in vista delle elezioni. È un caso in cui un uomo di Stato molto abile fa una cosa che considera sbagliata per ragioni di consenso interno, e lo ammette in privato.'},
+      {da:'Primo partito', a:'Raddoppia', r:'ripete su scala maggiore cio che era accaduto quando lo Zentrum',
+       perche:'Due partiti dichiarati nemici dello Stato vengono colpiti con strumenti d\'eccezione, e in entrambi i casi la repressione ne moltiplica i voti. Nel 1912 i socialisti sono il primo partito del Reichstag, in un sistema in cui pero il parlamento non puo far cadere il governo: sono forti e non decidono. È il limite costituzionale visto nel capitolo precedente che torna, e che pesera nel 1914 e nel 1918.'},
+      {da:'Onesto sensale', a:'Impegni contraddittori', r:'e il ruolo che diventa possibile solo accumulando',
+       perche:'Presentarsi come mediatore senza interessi propri funziona finche tutti hanno bisogno di te, e per averne bisogno devono esserti legati da promesse diverse e in parte incompatibili. La formula usata a Berlino nel 1878 non e ipocrisia: e la descrizione esatta di una posizione costruita apposta. Il costo e che quella posizione non e trasmissibile a nessun successore.'}
+    ]
+  },
+  provocazione: {
+    titolo:'La pensione l\'ha inventata un nemico',
+    durata:'55 minuti',
+    domandaMadre:'Le assicurazioni sociali sono nate per aiutare i lavoratori o per batterli?',
+    perche:'Le prime assicurazioni obbligatorie contro malattia, infortunio e vecchiaia nascono nella Germania degli anni Ottanta dell\'Ottocento, e le firma lo stesso uomo che tre anni prima aveva messo fuori legge il partito socialista. Il fine e dichiarato nei documenti ufficiali: togliere ai socialisti la propria ragione d\'essere. La lezione serve a tenere separate tre domande che vengono continuamente confuse — da dove viene una cosa, a chi serviva, e che cosa fa adesso — e a far vedere un fatto che vale ben oltre questo caso: le istituzioni sopravvivono alle intenzioni che le hanno create. È anche il capitolo in cui si torna, con un esempio storico, sull\'errore logico gia incontrato con Rousseau.',
+    occorrente:'Niente.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'Due fatti,\nstesso paese,\nstesso decennio,\nstessa firma.\n\n1878.\n\nIl partito socialista\nviene messo\nfuori legge.\n\nAssociazioni sciolte,\ngiornali chiusi,\nriunioni vietate,\n\nmigliaia di persone\narrestate\no costrette\na emigrare.\n\n1883.\nAssicurazione\ncontro le malattie.\n\n1884.\nAssicurazione\ncontro gli infortuni\nsul lavoro.\n\n1889.\nPensione\nper la vecchiaia\ne l\'invalidita.\n\nLe prime\nal mondo.\n\nLe firma\nlo stesso uomo\nche ha vietato\nil partito\ndei lavoratori.\n\nPerche?',
+       parlato:'Da\' i due blocchi di fatti separatamente e poi accostali, perche e l\'accostamento a produrre l\'effetto.\n\nMetti in chiaro che non sono due governi diversi ne due fasi lontane: sono lo stesso cancelliere, negli stessi anni, e le due politiche vanno avanti insieme.\n\nPoi chiedi la prima reazione. Di solito arrivano due ipotesi opposte: che avesse cambiato idea, oppure che le riforme fossero finte.\n\nSmonta subito la seconda con un dato: quelle assicurazioni funzionarono davvero, coprirono milioni di persone e sono la radice diretta dei sistemi sanitari e previdenziali che esistono oggi in mezza Europa. Non erano finte.\n\nE smonta la prima ricordando che le leggi antisocialiste vengono rinnovate ogni due o tre anni fino al 1890: non aveva cambiato idea per niente.\n\nChiudi con la domanda dell\'ora, e falla nella forma piu scomoda: se una cosa che vi sembra giusta e stata fatta per un motivo che vi sembra cattivo, che cosa ne fate?\n\nRaccogli le prime risposte alla lavagna: serviranno alla fine.',
+       seDicono:[
+         {loro:'«Allora non era cattivo come lo dipingono.»',
+          tu:'Attento a fare il ragionamento all\'incontrario: stai giudicando le intenzioni dal risultato, che e lo stesso errore di chi giudica il risultato dalle intenzioni. Nei documenti ufficiali il fine e scritto, e non e la generosita. Puoi ammirare l\'opera e non l\'intenzione — sono due giudizi diversi e oggi impariamo a tenerli separati.'},
+         {loro:'«Le ha fatte solo perché aveva paura.»',
+          tu:'Molto probabilmente sì, e ti chiedo di andare avanti di un passo. Se le ha fatte per paura, valgono meno per chi ne ha beneficiato? Un operaio a cui viene curata una malattia gratuitamente sta meglio, indipendentemente da cosa passasse per la testa di chi ha firmato la legge. Tieni la domanda: e la stessa di tutta l\'ora.'}
+       ]},
+
+      {minuti:'8–17', et:'La fonte',
+       schermo:'17 novembre 1881.\n\nUn messaggio\ndell\'imperatore\nletto in Parlamento,\n\nscritto\nda Bismarck.\n\nDice\nche gia in febbraio\nera stata espressa\nla convinzione\n\nche la cura\ndei mali sociali\n\nnon vada cercata\nsoltanto\nnella repressione\ndegli eccessi\nsocialdemocratici,\n\nma anche\nnella promozione\npositiva\ndel benessere\ndei lavoratori.\n\nAnnuncia\nuna legge\nsull\'assicurazione\ncontro gli infortuni,\n\ne un\'assistenza\nper i vecchi\ne gli invalidi.\n\nE conclude\nche uno Stato\nfondato\nsulle basi morali\ndel cristianesimo\n\ndeve occuparsi\ncon maggiore calore\ndel benessere\ndei propri membri\npiu deboli.',
+       testo:{fonte:'Messaggio imperiale al Reichstag del 17 novembre 1881, redatto da Otto von Bismarck',
+              glossa:'Il documento è il fondamento di tutti i sistemi di sicurezza sociale europei, e va letto con le tre domande. Chi lo scrive e per risolvere quale problema: un cancelliere che tre anni prima ha messo fuori legge il partito socialista e constata che i voti socialisti continuano a crescere; il problema non è la povertà in sé, è che la povertà produce consenso per un movimento che vuole rovesciare l\'ordine esistente. Che cosa ammette senza volerlo: la formula «non soltanto nella repressione, ma anche» ammette due cose in una riga — che la repressione c\'era ed era voluta, e che non stava funzionando; se avesse funzionato, non ci sarebbe stato bisogno di aggiungere altro. Che cosa non dice: non dice una parola sui diritti dei lavoratori, non riconosce alcuna pretesa legittima e non nomina mai i sindacati o le organizzazioni operaie come interlocutori — le prestazioni sono concesse dall\'alto, e questo non è un dettaglio, perché stabilisce chi è il benefattore. La cornice religiosa finale svolge la stessa funzione: presenta come dovere morale dello Stato ciò che nasce da un calcolo politico, e serve anche a rassicurare i conservatori che stavano per votare una legge dal contenuto socialista.'},
+       parlato:'Leggi il messaggio e conduci le tre domande, ma parti da un dato che rende tutto piu chiaro.\n\nNel 1878 il partito socialista e stato messo fuori legge. Nel 1881, tre anni dopo, i suoi voti sono aumentati. Questo e il problema che il documento deve risolvere.\n\nPrima domanda: chi scrive e per che cosa. Ci arrivano: non deve curare la poverta, deve togliere consenso a un movimento.\n\nSeconda domanda, e qui c\'e il lavoro fine. Fai rileggere la formula: non soltanto nella repressione, ma anche nella promozione positiva del benessere.\n\nChiedi che cosa ammette quella riga. Due cose. Che la repressione c\'era, ed era voluta. E che non stava bastando: se avesse funzionato non ci sarebbe stato bisogno di aggiungere niente.\n\nTerza domanda: che cosa non dice. Questa richiede tempo e vale la pena aspettare. Non nomina mai i diritti dei lavoratori. Non nomina i sindacati. Non riconosce nessuna pretesa: concede.\n\nFai pesare la differenza fra concedere e riconoscere, perche non e retorica. Chi concede stabilisce di essere il benefattore, e puo anche togliere. Chi riconosce ammette che l\'altro aveva ragione prima.\n\nUltima osservazione: la cornice religiosa alla fine. Serviva anche a far votare una legge dal contenuto socialista a un parlamento di conservatori.',
+       seDicono:[
+         {loro:'«Comunque ha fatto una cosa buona.»',
+          tu:'Sì, e la domanda e che cosa ne segue. Non segue che fosse mosso da buone intenzioni, e non segue nemmeno che le buone intenzioni siano necessarie per fare cose buone. Sono due conclusioni diverse e oggi ci interessa la seconda, perche e quella che cambia il modo di guardare la politica.'},
+         {loro:'«Perché non nominare i sindacati era importante?»',
+          tu:'Perche stabiliva a chi gli operai dovessero essere riconoscenti. Se la pensione te la da\' lo Stato dell\'imperatore, il tuo interesse e che quello Stato duri. Se te la fa ottenere il tuo sindacato, il tuo interesse e che il sindacato sia forte. La stessa identica prestazione produce due lealta diverse a seconda di chi appare come l\'autore.'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'Il calcolo,\nper esteso.\n\nUno.\nUn operaio\nsenza niente\nnon ha niente\nda perdere.\n\nUn operaio\ncon una pensione\nsi.\n\nDue.\nSe la pensione\ngliela da\' lo Stato,\n\nnon gliela deve\nal partito\nne al sindacato.\n\nTre.\nUna cosa concessa\ndall\'alto\n\npuo anche\nessere tolta.\n\nQuattro,\ne serve agli industriali:\n\nl\'assicurazione\ncontro gli infortuni\ntoglie di mezzo\nle cause giudiziarie\n\nper i morti\ne i mutilati\nin fabbrica.\n\nÈ un sistema\nintelligente.\n\nE non funziona.\n\nI voti socialisti\npassano\nda meno di mezzo milione\n\na un milione\ne mezzo.\n\nNel 1890\nil parlamento\nrifiuta di rinnovare\nla legge\nche li metteva\nfuori legge.\n\nNel 1912\nsono\nil primo partito.',
+       parlato:'Ricostruisci il calcolo con freddezza, perche capirlo e piu utile che indignarsi.\n\nI primi tre punti riguardano la lealta. Fai notare che il ragionamento e ineccepibile: chi ha qualcosa da perdere e meno disposto a rischiare, e chi riceve tende a essere grato a chi gli da\'.\n\nIl quarto punto interessa i ragazzi perche non se lo aspettano: l\'assicurazione contro gli infortuni conveniva anche agli industriali, perche sostituiva le cause per responsabilita con un contributo fisso. Le grandi riforme passano quasi sempre quando qualcuno di potente ci guadagna.\n\nAdesso il fallimento, e va dato con i numeri. I voti socialisti triplicano durante la persecuzione. Nel 1890 il parlamento rifiuta di prorogare la legge. Nel 1912 quel partito e il primo del paese.\n\nChiedi perche il calcolo abbia fallito, e falli ragionare.\n\nGuidali: perche i socialisti dissero ai lavoratori che quelle leggi erano una vittoria loro. E in un certo senso era vero: senza la pressione del movimento operaio, nessuno avrebbe scritto quel messaggio.\n\nEnuncia il paradosso: le riforme fatte per battere un movimento gli danno ragione, perche dimostrano che la pressione funziona.\n\nUltima cosa, e collega al capitolo precedente: Bismarck aveva gia fatto lo stesso errore con i cattolici. Li aveva perseguitati, il loro partito era raddoppiato, e aveva dovuto trattare. Sapeva che perseguitare compatta, e lo ha rifatto lo stesso.',
+       seDicono:[
+         {loro:'«Perché ripete un errore che conosceva?»',
+          tu:'Perche la repressione da\' risultati immediati e visibili — arresti, giornali chiusi, ordine apparente — mentre i suoi effetti negativi arrivano dopo anni. È un difetto strutturale delle decisioni politiche, non una sua stupidita: chi governa e giudicato su cio che si vede subito. Tienilo, perche lo ritroverete in molte politiche di oggi.'},
+         {loro:'«Se conviene anche agli industriali, allora non era una conquista.»',
+          tu:'Attento: che una cosa convenga a qualcuno non la rende inutile per qualcun altro. Un operaio mutilato che riceve un indennizzo automatico invece di dover fare causa e perderla sta meglio, anche se il suo padrone ci risparmia. Le riforme in cui nessuno dei potenti ci guadagna quasi non esistono — e questo dice qualcosa su come si ottengono.'}
+       ]},
+
+      {minuti:'28–38', et:'La seconda fonte',
+       schermo:'Ottobre 1891.\n\nLa legge antisocialista\ne caduta\nl\'anno prima.\n\nIl partito\ne di nuovo legale\ne si riunisce\na Erfurt\nper darsi\nun programma.\n\nNon dice\ngrazie.\n\nDice che il sistema\ndi produzione attuale\n\nproduce\nda una parte\nricchezza crescente\ne dall\'altra\ninsicurezza,\nmiseria e oppressione.\n\nE chiede,\nfra le altre cose:\n\nsuffragio universale\nper tutti,\nuomini e donne,\ndai vent\'anni.\n\nGiornata lavorativa\ndi otto ore.\n\nDivieto\ndel lavoro infantile.\n\nAssistenza sanitaria\ngratuita.\n\nAmministrazione\ndelle assicurazioni\noperaie\n\naffidata\nai lavoratori\nstessi.\n\nCioe:\n\ntengono le assicurazioni,\n\ne chiedono\nchi le gestisce.',
+       testo:{fonte:'Programma di Erfurt del Partito socialdemocratico tedesco (ottobre 1891)',
+              glossa:'È il documento con cui il partito appena tornato legale si presenta al paese, e va letto accanto al messaggio imperiale di dieci anni prima. Le tre domande. Chi lo scrive e per quale problema: un partito uscito rafforzato da dodici anni di illegalità, che deve tenere insieme un\'ala rivoluzionaria e un\'ala riformista e lo fa con un testo diviso in due parti — un\'analisi che annuncia il superamento del capitalismo e un elenco di richieste immediate perfettamente compatibili con lo Stato esistente. Che cosa ammette senza volerlo: rivendicando la gestione operaia delle assicurazioni, ammette che le assicurazioni siano una cosa buona e da conservare; nessuno chiede di amministrare qualcosa che considera una truffa. Che cosa non dice: non dice come si passi dalle richieste immediate al rovesciamento annunciato nella prima parte, e questa ambiguità dividerà il partito per trent\'anni. Il confronto fra i due documenti risponde alla domanda della lezione meglio di qualsiasi commento: lo Stato aveva concesso le prestazioni per creare gratitudine, e i beneficiari le hanno accettate senza gratitudine alcuna, rivendicandole come proprie e chiedendone il controllo.'},
+       parlato:'Presenta il contesto: il partito e appena tornato legale dopo dodici anni, e non ha nessun motivo di essere gentile.\n\nLeggi le richieste concrete, e falle notare una per una. Suffragio universale comprese le donne, nel 1891. Otto ore. Divieto del lavoro infantile. Sanita gratuita.\n\nPoi fermati sulla richiesta decisiva: l\'amministrazione delle assicurazioni affidata ai lavoratori.\n\nChiedi che cosa significhi. Guidali: non chiedono di abolirle. Le tengono e chiedono chi comanda. Cioe accettano l\'istituzione e rifiutano la gratitudine.\n\nApplica le tre domande e falle fare a loro.\n\nChi scrive e perche: un partito che deve tenere insieme rivoluzionari e riformisti, e lo fa con un testo in due parti — una che annuncia il superamento del sistema, l\'altra che chiede cose ottenibili subito.\n\nChe cosa ammette senza volerlo: che quelle assicurazioni sono buone. Nessuno chiede di gestire una cosa che considera una truffa.\n\nChe cosa non dice: come si passi dalla prima parte alla seconda. Quell\'ambiguita dividera il partito per trent\'anni.\n\nAdesso il confronto fra le due fonti, ed e la risposta della lezione.\n\nLo Stato aveva concesso per ottenere gratitudine. I beneficiari hanno preso e non hanno ringraziato: hanno rivendicato quelle leggi come una propria vittoria e ne hanno chiesto il controllo.\n\nChiedi chi abbia ragione dei due sul chi le ha fatte — e mostra che hanno ragione entrambi: le ha firmate Bismarck, e le ha rese necessarie il movimento operaio.',
+       seDicono:[
+         {loro:'«Erano ingrati.»',
+          tu:'Dipende da che cosa pensi che fosse dovuto. Se le prestazioni erano un regalo, sì. Se erano il minimo che uno Stato deve a chi produce la sua ricchezza, allora ringraziare sarebbe stato ammettere che non gli spettavano. È esattamente la posta della disputa, e non si risolve con la buona educazione.'},
+         {loro:'«Chiedere il voto alle donne nel 1891 è tanto?»',
+          tu:'Moltissimo: in nessuno Stato europeo le donne votavano, e la prima nazione europea ad ammetterle sara la Finlandia nel 1906. Vale la pena notare che chi lo chiedeva era un partito appena uscito dall\'illegalita, cioe qualcuno che non aveva niente da perdere in rispettabilita. Le richieste piu avanzate arrivano spesso da chi e gia fuori.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'Adesso\nla cosa importante.\n\nLe leggi antisocialiste\nsono durate\ndodici anni\ne sono fallite.\n\nOggi\nnon le ricorda\nnessuno.\n\nLe assicurazioni\nsono durate\ncentoquarant\'anni.\n\nCi sono ancora.\n\nSono state copiate\nin tutta Europa.\n\nQuando andate\ndal medico,\n\nquando qualcuno\nprende una pensione,\n\nquando un operaio\nferito\nviene indennizzato\nsenza fare causa,\n\nsta funzionando\nun meccanismo\n\nprogettato\nper distruggere\nun partito.\n\nE quel partito\ne diventato\nil primo del paese.\n\nQuindi:\n\nl\'intenzione\ne fallita.\n\nLo strumento\ne rimasto.\n\nLo avevamo gia visto\ncon Rousseau:\n\nsapere\nda dove viene\nuna cosa\n\nnon dice\nse sia buona.',
+       parlato:'Da\' il confronto fra le durate, perche e il modo piu economico di far vedere il punto.\n\nPoi enuncia la conclusione in modo netto: l\'intenzione e fallita, l\'istituzione e sopravvissuta. Non e un caso isolato — e una regola frequente, e vale la pena nominarla: le istituzioni durano piu delle intenzioni di chi le ha create.\n\nAdesso richiama esplicitamente la lezione su Rousseau, perche i ragazzi la riconoscono e questo la fissa. Li avevamo visto l\'argomento genetico: mostrare da dove viene una cosa non dice se sia buona.\n\nQui abbiamo il caso storico piu limpido: una cosa buona nata da un motivo cattivo.\n\nPoi fai il rovescio, che e la parte piu difficile e piu utile. Falli applicare la stessa regola a qualcosa che a loro piace.\n\nEsempi: una legge giusta approvata per calcolo elettorale; una scuola aperta per prestigio; un aiuto dato per farsi vedere. La regola vale in tutte e due le direzioni, altrimenti non e una regola ma una scusa.\n\nE fai anche l\'altra faccia, che va detta per onesta: sapere l\'intenzione non e inutile. Serve a prevedere. Chi ha concesso qualcosa per calcolo la toglierà quando il calcolo cambia — e infatti le prestazioni sociali sono state ridotte molte volte, ovunque, quando la pressione e diminuita.\n\nEnuncia la formula completa: l\'origine non dice se una cosa e buona, e dice molto su quanto sia solida.\n\nUltima cosa, e collega alla politica estera dello stesso uomo. Per vent\'anni ha tenuto la pace in Europa con un sistema di alleanze fatto di promesse in parte incompatibili, che solo lui sapeva gestire. Quando se ne va, in quattro anni la Russia si allea con la Francia — cioe accade esattamente cio che il sistema doveva impedire.\n\nChiedi che cosa hanno in comune le due storie. La risposta e li: costruire qualcosa che dipenda da una persona sola, o da un\'intenzione sola, significa costruire qualcosa di fragile.',
+       seDicono:[
+         {loro:'«Allora le intenzioni non contano mai.»',
+          tu:'Contano, e per una ragione pratica: dicono che cosa succedera quando le condizioni cambiano. Una riforma fatta per convinzione resiste meglio di una fatta per calcolo, perche la seconda viene ritirata appena il calcolo cambia. Quindi l\'intenzione non ti dice se una cosa e buona, e ti dice quanto durera.'},
+         {loro:'«Quindi anche cose che ammiriamo sono nate male?»',
+          tu:'Molte sì, e conoscerle e un vaccino contro due errori simmetrici: buttare via una cosa buona perche ha un\'origine sporca, e considerare intoccabile una cosa perche e nata bene. Il criterio per giudicare un\'istituzione e che cosa fa adesso e chi ne beneficia — non il suo atto di nascita.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'La domanda era:\n\nle assicurazioni sociali\nsono nate\nper aiutare i lavoratori\no per batterli?\n\nRisposta:\n\nper batterli.\n\nE hanno aiutato\ni lavoratori.\n\nTutte e due\nle cose\nsono vere,\n\ne non si annullano.\n\nDa portarsi via\ntre domande\nda tenere separate.\n\nDa dove viene\nquesta cosa?\n\nÈ storia.\n\nA chi serviva?\n\nÈ politica.\n\nChe cosa fa\nadesso,\ne a chi?\n\nÈ la domanda\nche riguarda voi.\n\nChi ne usa\nuna sola\n\nsta facendo\nuna delle due cose:\n\ndifendere\nqualcosa\nche non merita,\n\noppure buttare\nqualcosa\nche gli serve.',
+       parlato:'Torna alle ipotesi iniziali e verificale, poi da\' le tre domande come strumento.\n\nFalle applicare a un caso concreto e vicino, e funziona sempre: un\'istituzione scolastica, una legge di cui si discute, una festa nazionale, un premio.\n\nInsisti sulla terza domanda, che e quella che quasi nessuno fa: che cosa fa adesso e a chi. È l\'unica che riguarda chi deve decidere oggi.\n\nPoi la parte che evita il cinismo, e va detta. Non stiamo dicendo che le intenzioni siano irrilevanti: dicono quanto una cosa sia solida. Una conquista ottenuta per calcolo altrui viene ritirata quando il calcolo cambia, ed e successo molte volte con le prestazioni sociali, in tutta Europa.\n\nQuindi la formula completa e questa: l\'origine non dice se una cosa e buona, e dice quanto e fragile.\n\nUltima riga per il seguito, e serve a chiudere il quadro. Quello stesso sistema — alleanze incrociate, promesse contraddittorie, un equilibrio tenuto da una persona — si sfalda in quattro anni dopo il congedo del suo autore. La Russia si allea con la Francia, la Germania si trova con due nemici e un piano militare per batterli entrambi in fretta, e l\'Europa si divide in due blocchi. La prossima volta guardiamo che cosa succede quando dentro quel sistema rigido cadono la seconda rivoluzione industriale, i nuovi imperialismi e le masse che entrano in politica.',
+       seDicono:[
+         {loro:'«Ma allora chi ringraziamo per la pensione?»',
+          tu:'Nessuno, e non e una battuta. La firma e di un cancelliere conservatore, la necessita l\'ha creata un movimento operaio che quel cancelliere voleva distruggere, e la conservazione la si deve a cento anni di persone che l\'hanno difesa. Le cose importanti quasi mai hanno un autore solo, ed e anche per questo che si possono perdere senza che nessuno se ne accorga.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'Non andremo a Canossa',
+       corpo:'Fra il 1871 e il 1878 Bismarck conduce contro la Chiesa cattolica una politica che gli avversari chiamano Kulturkampf, lotta per la civiltà: controllo statale sulle scuole, matrimonio civile obbligatorio, formazione del clero sottoposta allo Stato, espulsione dei gesuiti. Vescovi e sacerdoti che rifiutano vengono arrestati o allontanati.\n\nIn Parlamento dichiara che la Germania non andrà a Canossa, richiamando l\'imperatore che nell\'undicesimo secolo attese tre giorni nella neve il perdono del papa.\n\nIl risultato è che il partito cattolico raddoppia i propri voti. Alla morte di Pio IX, Bismarck apre trattative con il successore e smonta quasi tutte le leggi. Restano il matrimonio civile e il controllo statale sulle scuole.',
+       chiedi:'Perché perseguitare un gruppo lo rende più unito? E se lo si sa in anticipo — Bismarck lo sapeva, e lo rifece con i socialisti — perché lo si fa lo stesso?'},
+      {titolo:'Un continente diviso a tavolino',
+       corpo:'Fra il novembre 1884 e il febbraio 1885 quattordici Stati si riuniscono a Berlino per stabilire le regole della spartizione dell\'Africa. Nessun africano è presente.\n\nLa conferenza fissa il principio dell\'occupazione effettiva: per rivendicare un territorio non basta dichiararlo proprio, bisogna occuparlo con amministrazione e forze militari. La regola trasforma la spartizione in una gara di velocità.\n\nLo Stato Libero del Congo viene riconosciuto come proprietà personale del re dei Belgi, che lo amministra come un\'impresa privata: le stime sulle vittime dei vent\'anni successivi, per lavoro forzato, violenze e carestie, vanno da alcuni milioni in su. I confini tracciati allora sono in gran parte quelli attuali.',
+       chiedi:'Che cosa rende possibile decidere del destino di un continente senza che nessuno dei suoi abitanti sia nella stanza? E oggi, in quali decisioni internazionali vi sembra che manchi qualcuno dalla stanza?'},
+      {titolo:'Il pilota che scende',
+       corpo:'Nel 1888 muoiono in pochi mesi due imperatori tedeschi, e sale al trono Guglielmo II, ventinovenne, deciso a governare di persona. Nel marzo 1890 Bismarck, dopo ventotto anni al potere, è costretto a dimettersi.\n\nUna rivista satirica inglese pubblica una vignetta che lo raffigura come un vecchio pilota che scende la scaletta di una nave mentre il giovane imperatore lo guarda dall\'alto. Il disegno diventa la più famosa illustrazione politica dell\'Ottocento.\n\nL\'anno successivo la Germania lascia scadere il trattato segreto con la Russia, giudicandolo troppo complicato. Nel 1894 la Russia firma un\'alleanza militare con la Francia.',
+       chiedi:'Un sistema che funziona solo finché lo gestisce chi lo ha creato è un capolavoro o un difetto di progetto? E come si riconosce, in un\'organizzazione che conoscete, una struttura che dipende troppo da una persona sola?'}
+    ],
+    testi:[
+      {fonte:'Legge contro le aspirazioni socialdemocratiche pericolose per la collettività (21 ottobre 1878)',
+       corpo:'La legge stabilisce che siano vietate le associazioni che perseguano, mediante aspirazioni socialdemocratiche, socialiste o comuniste, il rovesciamento dell\'ordinamento statale o sociale esistente; estende il divieto alle riunioni e alle pubblicazioni; consente di espellere dalle località interessate le persone ritenute pericolose; e ne fissa la validità fino al 31 marzo 1881.',
+       glossa:'Va notata la struttura, perché è ricorrente: una legge d\'eccezione con una scadenza ravvicinata, che verrà rinnovata quattro volte fino al 1890. Va notato anche ciò che non colpisce — il diritto di voto e la candidatura, garantiti dalla costituzione, restano intatti, sicché il partito è illegale come organizzazione e legale come lista elettorale. Il paradosso produsse un movimento che continuò a crescere elettoralmente mentre i suoi militanti venivano arrestati, e spiega perché la repressione fallì. Il partito cattolico, perseguitato pochi anni prima, votò a favore.'},
+      {fonte:'Otto von Bismarck, discorso al Reichstag sulle assicurazioni operaie (marzo 1884)',
+       corpo:'Bismarck sostiene che dare al lavoratore il diritto all\'assistenza quando è malato e alla cura quando è vecchio non sia un atto di beneficenza ma un diritto che nasce dal lavoro prestato; afferma che lo Stato debba intervenire dove il singolo non può bastare a se stesso; e osserva che chi ha una pensione da attendere è l\'uomo più contento e più facile da guidare.',
+       glossa:'Il discorso contiene, a poche righe di distanza, l\'argomento più avanzato e quello più cinico: il riconoscimento di un diritto che nasce dal lavoro, e l\'osservazione che un uomo con una pensione è più facile da governare. Va letto proprio per questa convivenza, che è il tema della lezione: la stessa politica può essere descritta come giustizia sociale e come tecnica di controllo, e in questo caso l\'autore usa entrambe le descrizioni davanti allo stesso parlamento perché deve convincere due maggioranze diverse.'},
+      {fonte:'Otto von Bismarck, memorandum di Bad Kissingen (giugno 1877)',
+       corpo:'Bismarck scrive di non avere in mente l\'acquisto di territori ma una situazione politica complessiva nella quale tutte le potenze, tranne la Francia, abbiano bisogno di noi e siano trattenute dalle rispettive relazioni dal coalizzarsi contro di noi; e aggiunge che l\'incubo che lo perseguita è quello delle coalizioni.',
+       glossa:'È la formulazione più chiara della dottrina che tiene la pace europea per vent\'anni, e non contiene alcun riferimento a principi: solo la descrizione di un equilibrio da mantenere. Ne discendono la rete di alleanze incrociate e il ruolo di mediatore assunto a Berlino nel 1878. Il limite è dichiarato nel testo stesso: un sistema costruito perché tutti abbiano bisogno di una persona non è trasferibile a un successore, e infatti si sfalderà in quattro anni dopo il congedo del 1890.'}
+    ],
+    compito:'Mezza pagina. Scegliete un\'istituzione, una legge o una consuetudine di cui beneficiate e che vi sembra giusta, e provate a scoprire perché è nata: cercate chi l\'ha voluta e quale problema stava risolvendo. Poi rispondete separatamente alle tre domande di oggi — da dove viene, a chi serviva, che cosa fa adesso e a chi — e concludete dicendo se, sapendo com\'è nata, la giudicate più solida o più fragile di prima.',
+    fonti:[
+      'L. Gall, Bismarck. Il rivoluzionario conservatore; O. Pflanze, Bismarck e lo sviluppo della Germania',
+      'H.-U. Wehler, La Germania guglielmina; G. A. Craig, Storia della Germania 1866-1945',
+      'E. J. Hobsbawm, L\'età degli imperi 1875-1914',
+      'Il messaggio imperiale del 1881, la legge antisocialista del 1878 e il Programma di Erfurt in traduzione',
+      'A. J. P. Taylor, L\'Europa delle grandi potenze; H. Kissinger, L\'arte della diplomazia, i capitoli su Bismarck',
+      'A. Hochschild, Gli spettri del Congo — sulla conferenza di Berlino e le sue conseguenze'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',
