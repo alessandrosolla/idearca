@@ -15554,6 +15554,230 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Storia contemporanea · 6 — La seconda rivoluzione industriale': {
+  mappa: {
+    n:'La seconda rivoluzione industriale', d:'1870-1914: cambiano l\'energia, l\'impresa, il lavoro e chi possiede il sapere di come si lavora',
+    f:[
+      {r:'si distingue dalla', n:'Prima rivoluzione', d:'e le differenze non sono solo tecniche',
+       f:[
+         {r:'la prima era nata in', n:'Inghilterra', d:'da soli, con carbone, vapore, ferro e cotone: un paese avanti a tutti gli altri di due generazioni'},
+         {r:'la seconda nasce in piu paesi insieme:', n:'Germania e Stati Uniti', d:'che superano l\'Inghilterra nei settori nuovi mentre lei resta prima nei vecchi'},
+         {r:'la prima era fatta da', n:'Artigiani geniali', d:'meccanici che miglioravano macchine per tentativi, spesso senza istruzione formale'},
+         {r:'la seconda nasce nei', n:'Laboratori', d:'la scienza entra in fabbrica e l\'invenzione diventa un mestiere organizzato'},
+         {r:'e cambia la scala: non piu opifici ma', n:'Grandi complessi', d:'stabilimenti con migliaia di operai, che richiedono capitali che nessun singolo possiede',
+          f:[{piu:true, r:'con un\'accelerazione visibile in un dato: fra il 1870 e il 1913 la produzione industriale mondiale', n:'Piu che quadruplica', d:'e la popolazione europea cresce di duecento milioni pur perdendone cinquanta per emigrazione'}]}
+       ]},
+
+      {r:'ha nuove', n:'Fonti e materiali', d:'e ciascuno apre settori che prima non esistevano',
+       f:[
+         {r:'l\'', n:'Elettricita', d:'si puo trasportare lontano, dividere in piccole quantita e usare quando serve: e la sua vera novita'},
+         {r:'permette la luce nelle case e nelle strade, il tram, il telefono e i', n:'Motori piccoli', d:'una fabbrica non deve piu essere costruita attorno a una sola grande macchina a vapore'},
+         {r:'il', n:'Petrolio', d:'e il motore a scoppio: energia trasportabile, che rende possibile il veicolo individuale'},
+         {r:'l\'', n:'Acciaio', d:'sostituisce il ferro: piu resistente e prodotto in massa a basso costo con i nuovi convertitori'},
+         {piu:true, r:'e i consumi si vedono nei', n:'Numeri della produzione', d:'l\'acciaio prodotto nel mondo passa da poche centinaia di migliaia di tonnellate a decine di milioni in quarant\'anni'},
+         {r:'e rende possibili ponti, navi, rotaie migliori e i primi', n:'Grattacieli', d:'insieme all\'ascensore, che senza acciaio ed elettricita non esisterebbe'},
+         {r:'la', n:'Chimica', d:'produce coloranti, concimi, farmaci ed esplosivi: e il settore in cui la Germania domina il mondo'},
+         {r:'con un\'invenzione decisiva per la fame, la sintesi dell\'', n:'Ammoniaca', d:'concimi azotati prodotti dall\'aria: sfamera miliardi di persone e servira anche a fabbricare esplosivi'}
+       ]},
+
+      {r:'e stabilisce un legame nuovo fra', n:'Scienza e impresa', d:'che e forse il cambiamento piu duraturo di tutti',
+       f:[
+         {r:'nasce il', n:'Laboratorio aziendale', d:'ricercatori stipendiati che cercano invenzioni su commissione: prima l\'inventore era un privato con un\'idea'},
+         {r:'l\'invenzione diventa un', n:'Processo organizzato', d:'si assumono persone, si fissano obiettivi, si prova in serie: Edison lo dichiara apertamente'},
+         {r:'e il', n:'Brevetto', d:'diventa un\'arma economica: si registra tutto, anche cio che non si intende produrre, per bloccare i concorrenti'},
+         {r:'l\'istruzione tecnica superiore diventa una politica di', n:'Stato', d:'la Germania costruisce politecnici e scuole professionali, e il vantaggio si vede nella chimica e nell\'elettrotecnica'},
+         {r:'e la ricerca smette di essere un\'attivita', n:'Individuale', d:'chi inventa lavora in gruppo, dipende da un\'impresa e spesso non possiede cio che scopre',
+          f:[{piu:true, r:'da cui una domanda che tornera per tutto il Novecento: a chi appartiene un\'', n:'Idea', d:'a chi l\'ha avuta, a chi ha pagato lo stipendio, o a chi ha registrato il brevetto per primo'}]}
+       ]},
+
+      {r:'cambia anche la forma dell\'', n:'Impresa', d:'perche i capitali richiesti non sono piu alla portata di una famiglia',
+       f:[
+         {r:'si diffonde la societa per', n:'Azioni', d:'la proprieta si divide fra molti, e chi rischia perde al massimo quanto ha investito'},
+         {r:'e si separa la proprieta dal', n:'Comando', d:'nasce la figura del dirigente stipendiato, che comanda senza possedere e possiede senza comandare'},
+         {r:'la banca smette di prestare soltanto e', n:'Entra nelle imprese', d:'la banca mista tedesca finanzia, possiede quote e siede nei consigli: industria e credito si intrecciano'},
+         {r:'le aziende si accordano per non', n:'Farsi concorrenza', d:'cartelli che fissano prezzi e quote, molto diffusi in Germania e legali'},
+         {r:'o si fondono in', n:'Trust', d:'negli Stati Uniti, dove un\'unica societa arriva a controllare la quasi totalita di un settore'},
+         {piu:true, r:'e la borsa diventa il luogo in cui si decide il', n:'Valore di un\'impresa', d:'un giudizio quotidiano dato da chi non lavora dentro l\'azienda e spesso non l\'ha mai vista'},
+         {r:'e gli Stati Uniti reagiscono con le prime leggi', n:'Antitrust', d:'1890: nasce l\'idea che un mercato debba essere protetto anche da chi lo vince troppo'}
+       ]},
+
+      {r:'e riorganizza il', n:'Lavoro', d:'con un metodo che cambia chi possiede il sapere',
+       f:[
+         {r:'l\'operaio di mestiere sapeva come si fa un lavoro, e questo era un', n:'Potere', d:'solo lui poteva dire quanto tempo servisse, e nessuno poteva controllarlo davvero'},
+         {r:'Taylor propone di studiare ogni gesto con il', n:'Cronometro', d:'scomporlo in movimenti elementari, eliminare gli inutili e stabilire l\'unico modo giusto'},
+         {r:'il sapere viene tolto agli operai e raccolto dalla', n:'Direzione', d:'che lo restituisce sotto forma di istruzioni: e la separazione fra chi pensa e chi esegue'},
+         {r:'i risultati sono enormi in', n:'Produttivita', d:'e i salari di chi si adegua aumentano davvero: il metodo non e una truffa'},
+         {r:'nel 1913 Ford aggiunge la', n:'Catena di montaggio', d:'il pezzo si muove e l\'operaio resta fermo: il tempo di montaggio di un\'auto passa da dodici ore a poco piu di una'},
+         {r:'e l\'anno dopo raddoppia i salari con la giornata da', n:'Cinque dollari', d:'per fermare il turnover altissimo e perche chi costruisce automobili possa comprarle',
+          f:[{piu:true, r:'con un lavoro diventato', n:'Ripetitivo e intercambiabile', d:'si impara in giorni invece che in anni: le fabbriche possono assumere chiunque, e chiunque puo essere sostituito'}]}
+       ]},
+
+      {r:'attraversa una lunga', n:'Grande depressione', d:'1873-1896, che i contemporanei chiamano cosi pur essendo un\'epoca di crescita',
+       f:[
+         {r:'i prezzi', n:'Scendono', d:'per oltre vent\'anni: e ottimo per chi compra e disastroso per chi ha debiti e per chi vende'},
+         {r:'perche la produzione cresce piu della', n:'Domanda', d:'e perche arrivano grano e carne dall\'America e dalla Russia a prezzi che l\'Europa non regge'},
+         {r:'i contadini europei sono', n:'Travolti', d:'e milioni di loro emigrano: la crisi agraria e la principale causa dell\'emigrazione di massa'},
+         {r:'gli Stati reagiscono con il ritorno del', n:'Protezionismo', d:'dazi su grano e manufatti quasi ovunque: finisce l\'epoca del libero scambio'},
+         {r:'e l\'Inghilterra, che non li adotta, comincia a', n:'Perdere terreno', d:'resta prima nella finanza e nei mercati coloniali, e viene superata nei settori nuovi'},
+         {piu:true, r:'e chi ha bisogno di sbocchi guarda', n:'Fuori dall\'Europa', d:'mercati protetti, materie prime e terre dove investire i capitali: la crisi dei prezzi e una delle spinte all\'imperialismo'},
+         {r:'con una conseguenza politica: lo Stato torna a', n:'Intervenire', d:'dazi, commesse pubbliche, ferrovie nazionalizzate: l\'idea che il mercato si regoli da solo esce indebolita'}
+       ]},
+
+      {r:'produce una', n:'Societa di massa', d:'e cambia la vita quotidiana piu di qualunque legge',
+       f:[
+         {r:'le citta', n:'Esplodono', d:'Berlino passa da ottocentomila a due milioni in quarant\'anni; nascono periferie, tram e servizi pubblici'},
+         {r:'nascono i grandi', n:'Magazzini', d:'prezzo esposto, entrata libera, merce che si tocca: comprare diventa un\'attivita e non solo una necessita'},
+         {r:'la', n:'Stampa popolare', d:'costa pochi centesimi, vive di pubblicita e raggiunge milioni di persone: nasce l\'opinione pubblica di massa'},
+         {r:'compaiono il tempo libero organizzato e lo', n:'Sport', d:'campionati, stadi, prime Olimpiadi moderne: la domenica diventa un fatto sociale'},
+         {r:'le donne entrano negli', n:'Uffici e nei negozi', d:'dattilografe, telefoniste, commesse, maestre: lavori nuovi, quasi sempre pagati meno di quelli maschili'},
+         {r:'e cinquanta milioni di europei', n:'Emigrano', d:'soprattutto verso le Americhe: e il piu grande spostamento volontario di popolazione della storia',
+          f:[{piu:true, r:'con rimesse che diventano una voce decisiva delle', n:'Economie di partenza', d:'in alcune regioni italiane il denaro spedito dagli emigrati supera il valore dell\'intera produzione agricola locale'}]}
+       ]},
+
+      {r:'e provoca', n:'Risposte organizzate', d:'perche una societa cosi produce anche chi la contesta',
+       f:[
+         {r:'nascono i sindacati di', n:'Massa', d:'non piu societa di mutuo soccorso di mestiere, ma organizzazioni con centinaia di migliaia di iscritti'},
+         {r:'e i partiti', n:'Socialisti', d:'in quasi tutti i paesi europei, con giornali, cooperative, scuole e case del popolo'},
+         {r:'nel 1889 si fonda la', n:'Seconda Internazionale', d:'che indice il Primo Maggio come giornata di lotta per le otto ore'},
+         {r:'al suo interno si dividono', n:'Riformisti e rivoluzionari', d:'conquistare pezzi di potere dentro il sistema, oppure rovesciarlo: e la frattura che dura un secolo'},
+         {r:'la Chiesa risponde con la', n:'Rerum novarum', d:'1891: condanna il socialismo e insieme denuncia lo sfruttamento, afferma il diritto al salario giusto e all\'associazione'},
+         {r:'e nasce il movimento per il voto alle', n:'Donne', d:'che nell\'Europa continentale dovra aspettare la guerra, e in Finlandia arriva gia nel 1906',
+          f:[{piu:true, r:'con una domanda che resta aperta: se un lavoratore sta meglio, il conflitto', n:'Diminuisce o cambia forma', d:'i salari reali crescono davvero in quei decenni, e insieme cresce il numero degli scioperi'}]}
+       ]}
+    ],
+    incroci:[
+      {da:'Potere', a:'Direzione', r:'passa dagli operai alla',
+       perche:'Finche solo l\'operaio di mestiere sapeva come si eseguiva un lavoro e quanto tempo richiedesse, possedeva un\'informazione che il padrone non aveva, e questo gli dava forza nella contrattazione. Il metodo di Taylor non aumenta la fatica: sposta la conoscenza. Da quel momento il tempo giusto lo stabilisce l\'ufficio, e l\'operaio non ha piu argomenti tecnici per discuterlo. È un trasferimento di sapere prima ancora che di ritmo.'},
+      {da:'Ripetitivo e intercambiabile', a:'Massa', r:'rende possibili sindacati di',
+       perche:'Il vecchio sindacato di mestiere difendeva un\'abilita rara e si organizzava per categoria; quando il lavoro diventa semplice e chiunque puo essere sostituito, la difesa individuale non funziona piu e resta solo il numero. Da qui i sindacati generali con centinaia di migliaia di iscritti. La stessa trasformazione che indebolisce il singolo lavoratore crea la condizione per un\'organizzazione molto piu grande.'},
+      {da:'Travolti', a:'Emigrano', r:'e la ragione per cui cinquanta milioni di europei',
+       perche:'La causa principale dell\'emigrazione di massa non e la fabbrica ma la campagna: quando grano e carne americani arrivano a prezzi che l\'agricoltura europea non regge, milioni di contadini perdono il proprio mercato. Le regioni di partenza sono in gran parte rurali, e chi parte non e il piu povero in assoluto — e chi ha appena abbastanza per pagarsi il viaggio. La crisi agraria e il motore, e la nave a vapore lo strumento.'},
+      {da:'Laboratorio aziendale', a:'Germania e Stati Uniti', r:'e una delle ragioni del primato di',
+       perche:'Chi organizza la ricerca come attivita d\'impresa, sostenuta da politecnici e scuole tecniche pubbliche, ottiene un vantaggio cumulativo nei settori dove il sapere scientifico e indispensabile — chimica ed elettricita. L\'Inghilterra resta prima dove contano l\'esperienza accumulata e i mercati coloniali, e perde dove conta il laboratorio. Non e un declino generale: e un sorpasso settoriale, e va detto con precisione.'},
+      {da:'Idea', a:'Brevetto', r:'diventa una questione giuridica con il',
+       perche:'Quando l\'invenzione nasce in un laboratorio pagato da un\'impresa, chi ha avuto l\'intuizione non e chi possiede il risultato. Il brevetto trasforma la conoscenza in proprieta trasferibile, e viene usato anche in modo difensivo: si registra cio che non si intende produrre, per impedire agli altri di farlo. La stessa struttura regge oggi le controversie su farmaci, semi e programmi informatici.'},
+      {da:'Cinque dollari', a:'Magazzini', r:'ha senso solo in un mondo di grandi',
+       perche:'Raddoppiare i salari serviva a fermare un turnover insostenibile, e insieme a creare acquirenti: un operaio che guadagna abbastanza da comprare l\'automobile che monta e un cliente. È il passaggio in cui il lavoratore viene pensato anche come consumatore, e diventa comprensibile solo dentro un sistema di distribuzione di massa fatto di grandi magazzini, prezzi esposti e pubblicita.'},
+      {da:'Scendono', a:'Protezionismo', r:'sono la causa immediata del ritorno del',
+       perche:'Vent\'anni di prezzi in discesa rovinano chi vende e chi ha debiti, cioe agricoltori e industriali insieme. Gli Stati rispondono con i dazi, e in molti paesi si forma un\'alleanza fra proprietari terrieri e industriali pesanti che sostiene insieme protezione doganale ed espansione coloniale. La fine del libero scambio non e un capriccio ideologico: e la risposta politica a una deflazione lunghissima.'},
+      {da:'Intervenire', a:'Antitrust', r:'assume anche la forma delle leggi',
+       perche:'Nello stesso decennio in cui gli Stati europei alzano i dazi, gli Stati Uniti vietano le concentrazioni che sopprimono la concorrenza. Sono due interventi opposti nella direzione e identici nel presupposto: il mercato non si regola da solo, e va corretto dal potere politico. È il momento in cui il liberismo puro smette di essere la dottrina condivisa delle classi dirigenti.'},
+      {da:'Elettricita', a:'Esplodono', r:'e una delle condizioni per cui le citta',
+       perche:'Senza tram elettrici, ascensori, illuminazione pubblica e acqua sollevata da pompe, una citta di due milioni di abitanti non e amministrabile: si resta legati alla distanza percorribile a piedi e alle ore di luce. L\'elettricita non e solo una fonte di energia in piu — e cio che rende possibile la scala della citta moderna, e con essa la vita notturna, i turni e la sicurezza per strada.'},
+      {da:'Ammoniaca', a:'Chimica', r:'e il risultato piu importante della',
+       perche:'La sintesi industriale dei composti azotati permette di produrre concimi dall\'aria, superando il limite che per millenni aveva fissato quante persone una terra potesse nutrire. Si stima che una parte grandissima della popolazione mondiale odierna esista grazie a quel procedimento. Lo stesso processo fornisce pero anche la materia prima degli esplosivi, e sara decisivo nella guerra che comincia pochi anni dopo.'},
+      {da:'Donne', a:'Uffici e nei negozi', r:'nasce mentre le donne entrano negli',
+       perche:'Un lavoro retribuito fuori casa, per quanto pagato meno, produce una posizione da cui si puo rivendicare: si ha un reddito proprio, ci si incontra, ci si organizza. Non e un rapporto automatico — molte suffragiste erano borghesi che non lavoravano — ma la coincidenza cronologica non e casuale. In Europa continentale il voto arrivera solo dopo la guerra, cioe dopo che le donne avranno tenuto in piedi le fabbriche.'},
+      {da:'Diminuisce o cambia forma', a:'Produttivita', r:'e la domanda posta dal fatto che cresca la',
+       perche:'In quei decenni i salari reali aumentano davvero e le condizioni migliorano, e insieme aumentano gli scioperi e la forza dei partiti operai. Le due cose sembrano contraddittorie e non lo sono: chi sta un po\' meglio ha piu forze e piu aspettative di chi e alla fame. È un\'osservazione che vale per molti conflitti sociali, e va tenuta contro l\'idea che la protesta nasca sempre dalla miseria estrema.'},
+      {da:'Rerum novarum', a:'Socialisti', r:'nasce come risposta ai partiti',
+       perche:'L\'enciclica del 1891 condanna il socialismo e la lotta di classe, e nello stesso testo denuncia lo sfruttamento, afferma che il salario deve bastare a vivere e riconosce il diritto dei lavoratori ad associarsi. È scritta perche il movimento socialista stava conquistando i lavoratori cattolici, e da essa nasceranno sindacati e partiti d\'ispirazione cristiana. Come nel caso delle assicurazioni tedesche, una concessione fatta per contrastare un avversario produce istituzioni che durano piu del motivo che le ha create.'}
+    ]
+  },
+  provocazione: {
+    titolo:'Il cronometro',
+    durata:'55 minuti',
+    domandaMadre:'Chi sa come si fa un lavoro: chi lo fa, o chi lo misura?',
+    perche:'Fra il 1880 e il 1911 un ingegnere americano mette a punto un metodo che promette di stabilire scientificamente il modo giusto di eseguire qualunque compito: si cronometra ogni movimento, si eliminano quelli inutili, si fissa il tempo standard. I risultati in produttivita e in salari sono reali e enormi, e proprio per questo il caso e utile — non e una truffa da smascherare. Cio che il metodo sposta e un\'altra cosa: il sapere su come si lavora passa da chi esegue a chi dirige, e con esso la possibilita di discutere. La lezione arriva fino a oggi, perche quel cronometro non e sparito: si e rimpicciolito ed e entrato nei telefoni, nei terminali dei magazzini e nei sistemi che assegnano le consegne.',
+    occorrente:'Un cronometro o un telefono. Serve per una prova di due minuti.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'Una fabbrica\ndi acciaio,\nPennsylvania,\n1899.\n\nUn ingegnere\nsi mette accanto\na un operaio\nche carica\nlingotti di ghisa\nsu un vagone.\n\nHa un cronometro.\n\nMisura ogni movimento:\nchinarsi,\nafferrare,\nsollevare,\ncamminare,\nposare,\ntornare indietro.\n\nElimina i movimenti\ninutili.\n\nStabilisce\nquando fermarsi\ne per quanti secondi.\n\nRisultato.\n\nPrima:\ndodici tonnellate\ne mezzo\nal giorno.\n\nDopo:\nquarantasette.\n\nQuasi quattro volte.\n\nE la paga\npassa\nda un dollaro e quindici\n\na un dollaro\ne ottantacinque.\n\nProduce di piu.\nGuadagna di piu.\n\nDove\nsarebbe\nil problema?',
+       parlato:'Racconta la scena con precisione, e non anticipare nessun giudizio: l\'aggancio funziona solo se il metodo appare per quello che era, cioe efficace.\n\nDa\' i numeri e lasciali pesare. Quasi quattro volte la produzione, e il salario aumenta di oltre la meta.\n\nPoi fai la domanda e non aiutarli. Dove sarebbe il problema?\n\nDi solito la prima risposta e la fatica. Falla verificare: il metodo prevedeva pause obbligatorie calcolate, e chi lo applicava sosteneva che l\'operaio a fine giornata fosse meno stanco di prima. Non e un dettaglio: se il problema fosse solo la fatica, la risposta sarebbe gia data.\n\nSe non ci arrivano, aiutali con una prova pratica di due minuti.\n\nChiedi a qualcuno di spiegare come si fa una cosa che sa fare bene — un\'azione sportiva, uno strumento, una ricetta. Poi chiedigli: se io ti cronometro e stabilisco io il modo giusto e i tempi, che cosa perdi?\n\nQualcuno risponde: decido io come si fa. Ecco: quello e il punto, ed e la domanda dell\'ora.',
+       seDicono:[
+         {loro:'«Il problema è che si stanca di più.»',
+          tu:'Il metodo prevedeva pause calcolate, e i suoi sostenitori dicevano che l\'operaio finiva meno stanco. Puoi non crederci, e allora ti chiedo: se ti dimostrassero che e vero, il metodo andrebbe bene? Se rispondi ancora di no, allora il tuo problema non era la fatica — ed e quello che stiamo cercando di nominare.'},
+         {loro:'«Guadagna di più: che si lamenta a fare?»',
+          tu:'Posizione legittima e la teniamo tutta l\'ora. Ti chiedo solo di controllare una cosa alla fine: chi decide, l\'anno dopo, quanto vale quel lavoro? Prima lo sapeva solo lui quanto tempo ci volesse. Adesso lo sa l\'ufficio. Il salario e salito una volta; il potere di discuterlo e cambiato per sempre.'}
+       ]},
+
+      {minuti:'8–17', et:'La fonte',
+       schermo:'1911.\n\nFrederick Taylor\npubblica\nI principi\ndell\'organizzazione\nscientifica\ndel lavoro.\n\nScrive\nche il primo compito\ndella direzione\n\ne raccogliere\ntutto il sapere\ntradizionale\nche in passato\nera posseduto\ndagli operai,\n\nclassificarlo,\nridurlo a regole,\nformule e leggi.\n\nE aggiunge:\n\nogni singolo atto\ndell\'operaio\ndeve essere preceduto\nda atti preparatori\ncompiuti\ndalla direzione.\n\nDell\'operaio\nscelto per l\'esperimento\nsui lingotti\n\nscrive\nche doveva essere\nun uomo\ncosi ottuso e flemmatico\n\nda assomigliare\nnella sua costituzione\nmentale\n\npiu a un bue\nche a nessun altro tipo.',
+       testo:{fonte:'Frederick Winslow Taylor, «The Principles of Scientific Management» (1911)',
+              glossa:'Il libro va letto con le tre domande, ed è più interessante di quanto la citazione più famosa lasci credere. Chi lo scrive e per risolvere quale problema: un ingegnere che ha cominciato come operaio e che si scontra con una pratica reale e diffusa — gli operai producevano deliberatamente meno di quanto potessero, perché sapevano che ogni aumento di rendimento avrebbe portato a un taglio dei cottimi; il problema che Taylor affronta è vero, e la sua diagnosi non è cinica. Che cosa ammette senza volerlo: la frase sul raccogliere il sapere «posseduto dagli operai» ammette che quel sapere esistesse e fosse loro, cioè ammette che l\'operazione sia un trasferimento di proprietà intellettuale, non una scoperta scientifica dal nulla; e la richiesta che ogni atto sia preceduto da atti preparatori della direzione ammette che l\'obiettivo sia togliere all\'esecutore ogni decisione. Che cosa non dice: non dice che cosa accada a chi non riesce a stare al ritmo standard, né che cosa succeda ai salari quando il metodo si diffonde e la manodopera diventa sostituibile. La frase sul bue va letta per intero, perché non è un insulto isolato ma la conseguenza coerente del sistema: se il compito deve essere pensato altrove, chi lo esegue deve essere selezionato per la sua disponibilità a non pensarlo.'},
+       parlato:'Leggi i tre passi e conduci le tre domande.\n\nPrima domanda: chi scrive e quale problema deve risolvere. Da\' il contesto, perche rende Taylor un personaggio serio e non una caricatura. Aveva cominciato come operaio, ed era vero che gli operai rallentavano di proposito: sapevano che se avessero prodotto di piu, il cottimo sarebbe stato tagliato. Non era pigrizia, era difesa razionale.\n\nSeconda domanda: che cosa ammette senza volerlo. Fai rileggere la frase sul sapere posseduto dagli operai.\n\nGuidali: se dice che quel sapere era loro, sta ammettendo di prenderlo. Non lo sta scoprendo, lo sta trasferendo. È un\'ammissione enorme, ed e scritta con orgoglio.\n\nTerza domanda: che cosa non dice. Non dice che cosa succeda a chi non tiene il ritmo. E non dice che cosa succeda ai salari quando tutti hanno adottato il metodo e ogni operaio e sostituibile.\n\nPoi affronta la frase sul bue e non attenuarla. Non e un insulto isolato: e coerente. Se il compito viene pensato altrove, chi lo esegue va scelto per la disponibilita a non pensarlo.\n\nChiedi alla classe se una frase del genere si potrebbe scrivere oggi. Rispondono di no. Allora chiedi la cosa piu utile: e il metodo, si usa ancora?',
+       seDicono:[
+         {loro:'«Era razzista e classista, quindi il metodo è sbagliato.»',
+          tu:'Attenzione, e un errore che abbiamo gia incontrato: le idee di chi propone una cosa non dimostrano che la cosa non funzioni. Il metodo aumentava davvero la produzione, e infatti e stato adottato ovunque, anche da persone che disprezzavano Taylor. Se lo vuoi criticare, devi criticarlo per quello che fa, non per come parlava chi lo ha inventato.'},
+         {loro:'«Ma gli operai rallentavano davvero?»',
+          tu:'Sì, ed e documentato: si chiamava soldiering, e non era pigrizia. Sapevano che produrre di piu significava vedersi tagliare la tariffa a pezzo, quindi lavorare al massimo era irrazionale. Taylor ha visto un problema reale. La discussione riguarda la soluzione che ha proposto, non la diagnosi.'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'Che cosa\nfa esattamente\nil metodo.\n\nPrima.\n\nL\'operaio di mestiere\nsapeva\ncome si fa un lavoro\n\ne quanto tempo\nci vuole.\n\nQuel sapere\nera suo,\n\nlo aveva imparato\nin anni\ne lo insegnava\nagli apprendisti.\n\nEra anche\nla sua forza:\n\nnessuno poteva\ndirgli\nche ci voleva meno tempo,\n\nperche nessun altro\nlo sapeva.\n\nDopo.\n\nIl sapere\nsta in un ufficio,\nscritto\nsu una scheda.\n\nL\'operaio riceve\nistruzioni.\n\nNon deve piu\nsapere:\ndeve eseguire.\n\nE si impara\nin giorni\ninvece che in anni,\n\nquindi\nchiunque\npuo essere\nsostituito.',
+       parlato:'Costruisci il meccanismo in due tempi, prima e dopo, e insisti sul fatto che il cambiamento riguarda la conoscenza.\n\nFai capire che cosa fosse un mestiere. Anni di apprendistato, un sapere che si trasmetteva a voce e con le mani, e che nessun libro conteneva. Quel sapere era anche una posizione contrattuale.\n\nPoi il dopo. Il sapere viene misurato, scritto e conservato dall\'azienda. L\'operaio riceve una scheda.\n\nAdesso enuncia la conseguenza e falla ripetere: la separazione fra chi pensa il lavoro e chi lo esegue.\n\nFai vedere che il vantaggio e reale e va detto con onesta. Prezzi piu bassi, prodotti accessibili a piu persone, salari che nel complesso salgono. Non stiamo raccontando una rapina: stiamo descrivendo uno scambio, e il prezzo dello scambio e l\'autonomia.\n\nPoi aggiungi la parte che spiega il seguito storico. Se chiunque puo imparare il lavoro in tre giorni, chiunque puo essere licenziato senza danno per l\'azienda. Un lavoratore solo non ha piu argomenti.\n\nChiedi che cosa gli resta. Guidali: il numero.\n\nEcco perche negli stessi decenni nascono i sindacati di massa. Non e una coincidenza: e la risposta logica a un lavoro reso intercambiabile. Il vecchio sindacato difendeva un\'abilita rara; il nuovo difende una quantita di persone.',
+       seDicono:[
+         {loro:'«Ma così si producono più cose per tutti.»',
+          tu:'Verissimo, e non va minimizzato: quel metodo ha reso accessibili a milioni di persone oggetti che prima erano per pochi. Il punto non e negare il guadagno, e vedere chi lo paga e con che cosa. Qui si paga con l\'autonomia di chi lavora, ed e un prezzo reale anche quando il salario sale.'},
+         {loro:'«Se il lavoro è semplice, che male c\'è?»',
+          tu:'Due cose. La prima: un lavoro che si impara in tre giorni rende chi lo fa sostituibile, e quindi debole quando si tratta il salario. La seconda: un lavoro in cui non si decide niente non insegna niente, quindi chi lo fa a vent\'anni si trova a quaranta con le stesse competenze. Non sono male morale: sono conseguenze verificabili.'}
+       ]},
+
+      {minuti:'28–38', et:'La seconda fonte',
+       schermo:'1911.\n\nIn un arsenale militare\ndegli Stati Uniti\nviene introdotto\nil metodo.\n\nGli operai\nscioperano.\n\nIl Congresso\napre\nun\'inchiesta,\n\ne convoca\nTaylor\na testimoniare\nper quattro giorni.\n\nI rappresentanti\ndei lavoratori\nsostengono\n\nche il metodo\ntratta gli uomini\ncome macchine,\n\nche il tempo standard\nviene fissato\nsul lavoratore\npiu veloce\ne poi imposto\na tutti,\n\ne che il sapere\ntolto agli operai\n\nnon torna\npiu indietro.\n\n1915.\n\nIl Congresso\nvieta per legge\n\nl\'uso del cronometro\ne dei premi\ndi produzione\n\nnegli stabilimenti\ndello Stato.\n\nIl divieto\nresta in vigore\nper decenni.\n\nE nel resto\ndell\'economia\n\nil metodo\nsi diffonde\novunque.',
+       testo:{fonte:'Atti dell\'inchiesta della Camera dei Rappresentanti degli Stati Uniti sui sistemi di direzione d\'officina (1911-12) e successivo divieto di rilevazioni a cronometro negli stabilimenti pubblici (1915)',
+              glossa:'È la seconda fonte e dice altro, perché viene dallo stesso paese e dalla stessa società che stava adottando il metodo. Le tre domande. Chi produce il documento e per quale problema: un parlamento che deve rispondere a uno sciopero in una fabbrica militare e che non può ignorare né le organizzazioni operaie né i vantaggi produttivi dimostrati; il problema non è stabilire se il metodo funzioni — funziona — ma se lo Stato possa applicarlo ai propri dipendenti. Che cosa ammette senza volerlo: vietando l\'uso del cronometro solo nei propri stabilimenti, il Congresso ammette di ritenerlo lesivo e insieme di non volerlo o poterlo impedire altrove; la limitazione geografica del divieto dice più di qualsiasi dichiarazione. Che cosa non dice: non propone nulla in alternativa per il problema reale che Taylor aveva individuato, cioè come stabilire quanto lavoro sia ragionevole chiedere. Va tenuto insieme al primo documento: uno mostra il metodo nella sua logica interna, l\'altro mostra che una società può giudicare inaccettabile per sé una tecnica che continua ad applicare a tutti gli altri.'},
+       parlato:'Presenta il documento come un fatto che spiazza: non e una denuncia socialista, e il Congresso degli Stati Uniti.\n\nRicostruisci la vicenda. Sciopero in un arsenale, inchiesta parlamentare, Taylor che testimonia per quattro giorni, e nel 1915 un divieto per legge.\n\nApplica le tre domande e falle fare a loro.\n\nChi produce il documento e perche: un parlamento che deve rispondere a uno sciopero e che non puo negare i vantaggi produttivi del metodo.\n\nChe cosa ammette senza volerlo. Qui c\'e la cosa piu fine, e vale la pena aspettare che la trovino. Il divieto vale solo negli stabilimenti dello Stato. Cioe: lo Stato ritiene quel metodo inaccettabile per i propri dipendenti e non fa niente perche non venga usato su tutti gli altri.\n\nFai pesare l\'osservazione: la geografia di un divieto dice piu di qualunque dichiarazione di principio.\n\nChe cosa non dice: non propone nessuna alternativa al problema vero, cioe come si stabilisce quanto lavoro sia ragionevole chiedere a una persona.\n\nPoi tieni insieme le due fonti. La prima mostra il metodo nella sua logica; la seconda mostra una societa che lo giudica inaccettabile per se e lo lascia applicare a tutti gli altri.\n\nEnuncia il criterio: quando qualcuno vieta una pratica solo a casa propria, la domanda giusta non e se ci creda, ma perche pensi di poterselo permettere solo li.',
+       seDicono:[
+         {loro:'«Se il Congresso l\'ha vietato, vuol dire che era sbagliato.»',
+          tu:'Vuol dire che lo ha giudicato inaccettabile per i propri operai, che e diverso. E infatti negli stessi anni le stesse persone lodavano l\'aumento di produttivita nelle fabbriche private. Non e ipocrisia semplice: e il segno che il metodo dava vantaggi che nessuno voleva perdere e costi che nessuno voleva pagare in casa propria.'},
+         {loro:'«Perché il tempo standard sul più veloce è un problema?»',
+          tu:'Perche trasforma un\'eccezione in una regola. Se il tempo lo fissi sul migliore in giornata buona, tutti gli altri sono in ritardo per definizione, e il ritardo diventa colpa. È esattamente l\'obiezione che oggi si fa agli obiettivi calcolati su medie o su massimi nei magazzini e nei call center — l\'argomento ha cent\'anni e non e invecchiato.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'Due cose\nche non vi aspettate.\n\nLa prima.\n\n1918.\n\nIn Russia,\ndopo la rivoluzione,\n\nLenin scrive\nche il sistema Taylor\n\ne insieme\nla raffinata brutalita\ndello sfruttamento\nborghese\n\ne una serie\ndi grandissime conquiste\nscientifiche.\n\nE ordina\ndi studiarlo,\ninsegnarlo\ne applicarlo\n\nnelle fabbriche\ndello Stato\noperaio.\n\nIl metodo inventato\nper togliere potere\nagli operai\n\nviene adottato\nda un governo\nche si dichiara\nil loro.\n\nLa seconda.\n\nIl cronometro\nnon e sparito.\n\nSi e rimpicciolito.\n\nOggi sta\nnel terminale\ndi un magazzino,\n\nnel telefono\ndi chi consegna,\n\nnel sistema\nche misura\nquanti secondi\ndura una telefonata\n\ne quanti pacchi\nall\'ora\ndeve prendere\nuna persona.\n\nNessuno\nsta li\ncon l\'orologio.\n\nNon serve piu.',
+       parlato:'Da\' il primo fatto e lascialo lavorare, perche spiazza chiunque.\n\nSpiega perche non e un\'incoerenza casuale: un paese arretrato che deve industrializzarsi in fretta ha bisogno di produttivita, e la produttivita quel metodo la dava. Lenin lo scrive esplicitamente, riconoscendone insieme la brutalita e l\'utilita.\n\nFai la domanda: che cosa ci dice questo del metodo?\n\nGuidali: che era uno strumento, e che gli strumenti non hanno una politica propria. Chiunque abbia bisogno di produrre di piu lo trova utile, quali che siano le sue idee.\n\nPoi il secondo fatto, e portalo nel loro presente. Descrivi le forme attuali senza demonizzarle: tempi di consegna, punteggi di produttivita, tempi medi di gestione, percorsi ottimizzati suggeriti da un\'applicazione.\n\nFai notare la differenza tecnica, che e importante: prima serviva un uomo con un cronometro accanto a te, e costava. Oggi la misura e automatica, continua e gratuita.\n\nE fai notare la differenza che ne segue: si e passati dal misurare un campione al misurare tutti, sempre.\n\nPoi la parte onesta, che evita il pistolotto. Ci sono misure utili anche per chi lavora: rendono visibile chi fa piu del dovuto, riducono l\'arbitrio del capo che decide a occhio, permettono di dimostrare un carico eccessivo. Il problema non e misurare.\n\nEnuncia il punto vero: il problema e chi decide che cosa misurare, e chi possiede il risultato della misura.',
+       seDicono:[
+         {loro:'«Allora anche i voti a scuola sono taylorismo.»',
+          tu:'Il paragone regge in parte ed e utile farlo per intero. Un voto misura una prestazione secondo criteri che non hai scelto tu. La differenza sta in tre cose: se i criteri ti vengono spiegati prima, se puoi discuterli, e se servono a farti migliorare o solo a classificarti. Sono esattamente le stesse tre domande che si fanno a un sistema di misurazione del lavoro.'},
+         {loro:'«Se uno lavora bene, la misura non gli fa paura.»',
+          tu:'Vale se la misura e giusta e nota. Prova a metterla alla prova: e se misurassero solo la velocita e non la cura? Chi lavora meglio risulterebbe peggiore. Ogni misura vede una cosa e ne acceca un\'altra, e chi sceglie che cosa misurare decide, senza dirlo, che cosa in quel lavoro conta.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'La domanda era:\n\nchi sa\ncome si fa un lavoro,\n\nchi lo fa\no chi lo misura?\n\nRisposta:\n\nlo sapeva\nchi lo faceva.\n\nDa allora\nlo sa\nchi lo misura,\n\ne chi lo fa\nriceve istruzioni.\n\nDa portarsi via\ntre domande,\n\nda fare\nogni volta\nche qualcuno\nmisura\nquello che fate —\n\na scuola,\nin una squadra,\nin un lavoro:\n\nchi ha deciso\nche cosa misurare?\n\nChe cosa\nquesta misura\nnon vede?\n\nE il risultato\ndella misura,\n\na chi appartiene?',
+       parlato:'Torna alla domanda e da\' la risposta storica in una riga, poi passa allo strumento.\n\nLe tre domande vanno fatte provare subito su casi loro, e funzionano.\n\nSulla prima: chi decide che cosa si misura decide che cosa conta. In una classe, se si misura solo la verifica scritta, l\'impegno quotidiano non esiste.\n\nSulla seconda: ogni misura acceca qualcosa. Velocita contro accuratezza, quantita contro cura, risultato contro miglioramento.\n\nSulla terza, che e la meno ovvia e la piu importante: a chi appartiene il dato. Se la misura del tuo lavoro resta a te, ti serve per migliorare. Se appartiene a chi ti valuta, serve a valutarti. È la stessa differenza fra un cronometro che usi tu per allenarti e un cronometro tenuto da un altro.\n\nPoi la parte onesta, e va detta con chiarezza. Non stiamo dicendo che misurare sia sbagliato. Una misura chiara protegge anche da chi giudica a simpatia, e permette di dimostrare che un carico e eccessivo. Il problema non e la misura: e la sua proprieta.\n\nChiudi con il quadro del capitolo, brevemente. In quarant\'anni cambiano l\'energia, i materiali, l\'impresa, la citta e il consumo, e milioni di persone stanno materialmente meglio di prima. Nello stesso periodo il lavoro diventa piu produttivo e meno proprio, e nascono le organizzazioni di massa che tenteranno di riequilibrare la cosa.\n\nUltima riga, per il seguito: tutte queste forze — industria pesante, ricerca di mercati e materie prime, opinione pubblica di massa, orgoglio nazionale — nello stesso ventennio spingono l\'Europa fuori dall\'Europa. La prossima volta guardiamo l\'imperialismo.',
+       seDicono:[
+         {loro:'«Non si può tornare indietro, tanto vale accettarlo.»',
+          tu:'Tornare indietro no, e non e l\'unica alternativa. Fra subire una misura e abolirla c\'e tutto lo spazio delle tre domande di oggi: chi la definisce, che cosa include, chi ne possiede i risultati. Sono le cose su cui, in questo momento, si contratta davvero — nei contratti dei rider, nelle regole europee sugli algoritmi, e nelle discussioni sui dati dei lavoratori.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'La macchina da scrivere',
+       corpo:'La diffusione della macchina da scrivere, del telefono e della contabilità moderna crea negli ultimi decenni dell\'Ottocento centinaia di migliaia di posti nuovi negli uffici.\n\nQuei posti vengono occupati in gran parte da donne. Il lavoro d\'ufficio, prima maschile e considerato l\'inizio di una carriera, si trasforma in un impiego femminile pagato meno e senza prospettive di avanzamento: la stessa mansione cambia di prestigio quando cambia chi la svolge.\n\nPer molte donne fu però la prima occasione di avere un reddito proprio, uscire di casa ogni giorno e vivere in città senza dipendere da un marito o da un padre.',
+       chiedi:'Un lavoro perde prestigio quando lo fanno le donne, e insieme dà a quelle donne un\'indipendenza che prima non avevano. Come si giudica una cosa che è al tempo stesso una discriminazione e una conquista? E conoscete situazioni di oggi in cui accade qualcosa di simile?'},
+      {titolo:'La depressione che non lo era',
+       corpo:'Il periodo fra il 1873 e il 1896 fu chiamato dai contemporanei «la grande depressione». In quegli anni la produzione industriale mondiale crebbe fortemente, le ferrovie si estesero, i consumi aumentarono e i salari reali migliorarono.\n\nCiò che scendeva erano i prezzi: per oltre vent\'anni, in modo quasi ininterrotto. Per chi comprava era un vantaggio; per chi vendeva, e soprattutto per chi aveva contratto debiti, era una rovina, perché il debito restava fisso mentre i ricavi calavano.\n\nLa risposta politica fu il ritorno dei dazi quasi ovunque, e la fine dell\'epoca del libero scambio inaugurata a metà secolo.',
+       chiedi:'Un\'epoca in cui quasi tutti gli indicatori migliorano viene vissuta come una crisi. Che cosa dice questo sul rapporto fra i dati e la percezione? E quali indicatori, secondo voi, descrivono meglio se un paese sta bene?'},
+      {titolo:'La notte accesa',
+       corpo:'L\'illuminazione elettrica delle strade si diffonde nelle città europee e americane fra gli anni Ottanta e i primi del Novecento. Prima, l\'unica illuminazione pubblica era a gas, costosa e limitata alle vie principali.\n\nLe conseguenze furono immediate e in gran parte non previste: aumento delle attività serali, nascita di una vita notturna cittadina, estensione dei turni nelle fabbriche, e una riduzione documentata dei reati di strada.\n\nPer le donne significò poter uscire da sole la sera in aree della città che prima erano di fatto interdette. Alcuni storici hanno osservato che l\'illuminazione pubblica ampliò la libertà di movimento femminile più di molti provvedimenti legislativi dello stesso periodo.',
+       chiedi:'Un\'innovazione tecnica produce un effetto sociale che nessuno aveva progettato. Vi vengono in mente altri casi in cui una tecnologia ha cambiato la libertà delle persone più di una legge? E questo dovrebbe cambiare il modo in cui si discute delle tecnologie nuove?'}
+    ],
+    testi:[
+      {fonte:'Leone XIII, enciclica «Rerum novarum» (15 maggio 1891)',
+       corpo:'L\'enciclica afferma che una società non può reggersi se una classe è ridotta a una condizione poco diversa dalla schiavitù; condanna il socialismo perché nega il diritto di proprietà e attribuisce allo Stato ciò che spetta alla famiglia; sostiene che il salario non debba scendere sotto quanto è necessario a un lavoratore sobrio e onesto per mantenersi; e riconosce ai lavoratori il diritto di riunirsi in associazioni proprie.',
+       glossa:'Il testo va letto tenendo insieme le due direzioni in cui colpisce: contro il socialismo e contro lo sfruttamento. Nasce perché il movimento socialista stava conquistando i lavoratori cattolici, e produce conseguenze durature — sindacati e partiti d\'ispirazione cristiana in tutta Europa, e un filone di pensiero sociale che arriverà fino alla Costituzione italiana. È un buon esempio, insieme alle assicurazioni tedesche, del fatto che una posizione assunta per contrastare un avversario possa generare istituzioni che sopravvivono al motivo per cui erano nate.'},
+      {fonte:'Risoluzione del congresso fondativo della Seconda Internazionale, Parigi (luglio 1889)',
+       corpo:'Il congresso delibera di organizzare una grande manifestazione internazionale, in una data stabilita, in modo che in tutti i paesi e in tutte le città i lavoratori chiedano simultaneamente ai pubblici poteri la riduzione per legge della giornata lavorativa a otto ore; e sceglie il primo maggio, in riferimento alla mobilitazione già avviata dai lavoratori americani.',
+       glossa:'È l\'atto di nascita del Primo Maggio, e va notato che la richiesta non è rivoluzionaria ma legislativa: si chiede una legge, agli Stati esistenti. Questo mostra come, dietro un linguaggio di rottura, il movimento operaio europeo stesse già praticando la via delle conquiste parziali dentro il sistema — la stessa che dividerà riformisti e rivoluzionari per decenni. La simultaneità internazionale della manifestazione è la vera novità: è possibile solo in un mondo di telegrafi, ferrovie e stampa quotidiana.'},
+      {fonte:'Henry Ford sull\'introduzione della giornata da cinque dollari (gennaio 1914)',
+       corpo:'Ford annuncia il raddoppio della paga minima giornaliera e la riduzione dell\'orario, presentandolo come la migliore operazione di riduzione dei costi mai fatta dall\'azienda; spiega che un salario alto riduce la fuga continua dei lavoratori, che rendeva necessario assumere e addestrare in un anno molte più persone di quante ne servissero; e sostiene che chi costruisce automobili debba poter comprare ciò che produce.',
+       glossa:'La decisione viene di solito raccontata come un atto di generosità, e i documenti aziendali mostrano un calcolo preciso: il lavoro alla catena era così ripetitivo che il ricambio del personale era enorme e costosissimo. Vale come esempio del tema di questo capitolo — una misura vantaggiosa per i lavoratori adottata per ragioni di efficienza — e come primo enunciato dell\'idea che i lavoratori siano anche il mercato dei prodotti che fabbricano, che sarà una delle basi delle politiche economiche del Novecento.'}
+    ],
+    compito:'Mezza pagina. Individuate una misurazione a cui siete sottoposti — un voto, un punteggio, un tempo, una statistica sportiva, un indicatore di un\'applicazione che usate — e rispondete alle tre domande di oggi: chi ha deciso che cosa misurare, che cosa quella misura non vede, e a chi appartiene il risultato. Poi proponete voi una misura diversa per la stessa attività, e dite che cosa la vostra renderebbe visibile e che cosa, in cambio, nasconderebbe.',
+    fonti:[
+      'E. J. Hobsbawm, L\'età degli imperi 1875-1914',
+      'D. Landes, Prometeo liberato; A. Chandler, La mano visibile',
+      'F. W. Taylor, L\'organizzazione scientifica del lavoro (1911); H. Braverman, Lavoro e capitale monopolistico',
+      'V. I. Lenin, I compiti immediati del potere sovietico (1918), il passaggio sul sistema Taylor',
+      'Leone XIII, Rerum novarum (1891); atti della Seconda Internazionale',
+      'S. Musso, Storia del lavoro in Italia; sulle misurazioni odierne, gli studi sul lavoro delle piattaforme'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',

@@ -203,7 +203,7 @@ Si va in ordine di programma. Restano:
 - [x] Storia contemporanea · 3 — Guerra civile americana, Giappone e Cina
 - [x] Storia contemporanea · 4 — L'Unità d'Italia e la Destra storica
 - [x] Storia contemporanea · 5 — L'Europa nell'età di Bismarck
-- [ ] Storia contemporanea · 6 — La seconda rivoluzione industriale
+- [x] Storia contemporanea · 6 — La seconda rivoluzione industriale
 - [ ] Storia contemporanea · 7 — La Sinistra storica e la crisi di fine secolo
 - [ ] Storia contemporanea · 8 — L'età dell'imperialismo
 - [ ] Storia contemporanea · 9 — La belle époque
