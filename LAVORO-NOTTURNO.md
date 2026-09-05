@@ -210,7 +210,7 @@ Si va in ordine di programma. Restano:
 - [x] Storia contemporanea · 7 — La Sinistra storica e la crisi di fine secolo
 - [x] Storia contemporanea · 8 — L'età dell'imperialismo
 - [x] Storia contemporanea · 9 — La belle époque
-- [ ] Storia contemporanea · 10 — Guglielmo II e i blocchi contrapposti
+- [x] Storia contemporanea · 10 — Guglielmo II e i blocchi contrapposti
 - [ ] Storia contemporanea · 11 — L'Italia giolittiana
 - [ ] Storia contemporanea · 12 — La Grande Guerra
 - [ ] Storia contemporanea · 13 — La Rivoluzione russa

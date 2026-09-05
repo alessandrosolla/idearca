@@ -16455,6 +16455,231 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Storia contemporanea · 10 — Guglielmo II e i blocchi contrapposti': {
+  mappa: {
+    n:'Guglielmo II e i blocchi contrapposti', d:'1890-1914: come un sistema flessibile diventa due schieramenti da cui non si esce',
+    f:[
+      {r:'comincia con un', n:'Nuovo corso', d:'e con un imperatore che vuole governare di persona',
+       f:[
+         {r:'nel 1888 sale al trono', n:'Guglielmo II', d:'a ventinove anni, dopo la morte di due imperatori in pochi mesi'},
+         {r:'nel 1890 costringe Bismarck alle', n:'Dimissioni', d:'e con lui esce di scena l\'unico che sapesse tenere insieme il sistema di alleanze'},
+         {r:'ha un carattere', n:'Impulsivo', d:'discorsi improvvisati, interviste sbagliate, gesti teatrali: i suoi stessi ministri passano il tempo a rimediare'},
+         {r:'e una convinzione: la Germania deve avere un', n:'Posto al sole', d:'formula del suo cancelliere nel 1897: non vogliamo mettere nessuno in ombra, ma chiediamo il nostro posto'},
+         {r:'da cui la', n:'Weltpolitik', d:'politica mondiale: colonie, flotta, presenza in Asia e in Africa, contro la vecchia linea continentale di Bismarck'},
+         {r:'e la fine della dichiarazione di essere una potenza', n:'Sazia', d:'che era stata la garanzia offerta a tutti gli altri per vent\'anni',
+          f:[{piu:true, r:'con un problema di metodo: molte decisioni vengono prese', n:'Senza coordinamento', d:'esercito, marina, ministero degli esteri e imperatore agiscono ciascuno per conto proprio, e nessuno ha una visione d\'insieme'}]}
+       ]},
+
+      {r:'la scelta piu pesante e la', n:'Flotta', d:'e vale la pena capire perche fu fatta e che effetto produsse',
+       f:[
+         {r:'l\'ammiraglio', n:'Tirpitz', d:'ottiene due leggi navali, nel 1898 e nel 1900, che impegnano il bilancio per vent\'anni'},
+         {r:'la sua idea si chiama teoria del', n:'Rischio', d:'non serve una flotta capace di vincere: basta che sia tanto forte da rendere troppo rischiosa una battaglia'},
+         {r:'perche la Gran Bretagna ha altri', n:'Rivali', d:'e non puo permettersi di uscire vincitrice ma indebolita da uno scontro nel Mare del Nord'},
+         {r:'e cosi dovrebbe essere costretta a', n:'Trattare', d:'concedendo colonie e riconoscimento senza che si spari un colpo'},
+         {r:'ma la flotta viene costruita nel', n:'Mare del Nord', d:'cioe davanti alle coste inglesi, non nei mari lontani dove sarebbero servite le colonie'},
+         {piu:true, r:'con un\'obiezione che qualcuno pone gia allora: una flotta che minaccia non', n:'Rassicura mai', d:'se serve a costringere a trattare, deve essere temuta, e cio che e temuto viene contrastato: la teoria conteneva il proprio fallimento'},
+         {r:'e per la Gran Bretagna la marina non e una questione di prestigio ma di', n:'Sopravvivenza', d:'un\'isola che importa gran parte del proprio cibo perde la guerra il giorno in cui perde il mare'}
+       ]},
+
+      {r:'la Gran Bretagna esce dal proprio', n:'Isolamento', d:'e lo fa in cinque anni, dopo un secolo di autonomia',
+       f:[
+         {r:'aveva praticato lo', n:'Splendido isolamento', d:'nessuna alleanza continentale stabile, e la regola di avere una flotta pari alle due successive messe insieme'},
+         {r:'nel 1902 firma un\'alleanza con il', n:'Giappone', d:'per non dover tenere una grande squadra navale in Asia: e la prima alleanza in tempo di pace da decenni'},
+         {r:'nel 1904 l\'', n:'Intesa cordiale', d:'con la Francia: non un\'alleanza militare, ma la liquidazione di tutte le controversie coloniali, Egitto e Marocco compresi'},
+         {r:'nel 1907 un accordo con la', n:'Russia', d:'che divide le zone d\'influenza in Persia, Afghanistan e Tibet: sparisce l\'ultimo grande contenzioso'},
+         {r:'e si forma quella che si chiamera', n:'Triplice Intesa', d:'non un\'alleanza formale a tre, ma una rete di intese che di fatto funziona come tale'},
+         {r:'con un dato da tenere: questi accordi risolvono liti', n:'Coloniali', d:'nessuno di essi nomina la Germania, e tutti finiscono per riguardarla',
+          f:[{piu:true, r:'perche il vero motore e la percezione di una', n:'Minaccia comune', d:'due paesi che si detestavano da secoli si accordano non perche siano diventati amici, ma perche temono lo stesso terzo'}]}
+       ]},
+
+      {r:'e comincia una', n:'Corsa agli armamenti navali', d:'con un episodio che vale da solo un\'intera lezione',
+       f:[
+         {r:'nel 1906 la Gran Bretagna vara la', n:'Dreadnought', d:'una corazzata con sole grandi bocche da fuoco, turbine e velocita superiore a chiunque'},
+         {r:'e cosi rende obsolete tutte le corazzate esistenti,', n:'Comprese le proprie', d:'la flotta piu grande del mondo perde in un giorno gran parte del proprio vantaggio'},
+         {r:'perche il conteggio riparte da', n:'Zero', d:'da quel momento non contano piu le navi possedute, ma quante se ne costruiscono all\'anno'},
+         {r:'la Germania allarga il canale di', n:'Kiel', d:'per far passare le navi nuove, e comincia a costruire: il vantaggio britannico si assottiglia'},
+         {r:'nel 1909 la stampa lancia una campagna con lo slogan', n:'Ne vogliamo otto', d:'e non vogliamo aspettare: il governo, che ne aveva previste quattro, ne finanzia otto'},
+         {piu:true, r:'mentre cresce in silenzio un\'arma molto piu efficace, il', n:'Sottomarino', d:'costa una frazione di una corazzata e nel 1917 portera la Gran Bretagna a poche settimane dalla resa per fame'},
+         {r:'e nel 1912 la Germania', n:'Rinuncia', d:'non riesce a reggere insieme flotta ed esercito, e sposta le risorse sull\'esercito',
+          f:[{piu:true, r:'lasciando pero una', n:'Ostilita permanente', d:'la flotta non ha ottenuto concessioni e ha prodotto un nemico: e il fallimento piu completo della politica di Tirpitz'}]}
+       ]},
+
+      {r:'poi arrivano le', n:'Crisi marocchine', d:'due prove di forza che finiscono in due sconfitte diplomatiche',
+       f:[
+         {r:'nel 1905 l\'imperatore sbarca a', n:'Tangeri', d:'e dichiara di sostenere l\'indipendenza del Marocco, per mettere alla prova l\'intesa fra Francia e Inghilterra'},
+         {r:'la conferenza di', n:'Algeciras', d:'1906 si conclude con quasi tutti schierati con la Francia, Italia compresa'},
+         {r:'nel 1911 la Germania manda una cannoniera ad', n:'Agadir', d:'per ottenere compensi: li ottiene in Congo, minimi, e paga un prezzo politico enorme'},
+         {r:'perche ogni prova di forza', n:'Salda l\'Intesa', d:'invece di dividerla: Francia e Inghilterra cominciano a fare piani militari congiunti'},
+         {r:'e la Gran Bretagna prende impegni non', n:'Scritti', d:'nessun trattato la obbliga, e conversazioni fra stati maggiori creano aspettative che pesano quanto un trattato'},
+         {r:'per cui nel 1914 nessuno sapra con certezza che cosa', n:'Fara Londra', d:'nemmeno il governo britannico: e una delle ambiguita piu costose della storia europea'}
+       ]},
+
+      {r:'e i', n:'Balcani', d:'diventano il punto in cui il sistema si spezza',
+       f:[
+         {r:'nel 1908 l\'Austria annette la', n:'Bosnia', d:'che amministrava dal 1878: la Serbia protesta, la Russia non puo sostenerla e cede'},
+         {r:'la Russia esce', n:'Umiliata di nuovo', d:'e decide che non arretrera una terza volta: e la premessa del 1914'},
+         {r:'nel 1912 e nel 1913 si combattono due guerre', n:'Balcaniche', d:'vere, con centinaia di migliaia di morti, e i vincitori litigano fra loro il giorno dopo'},
+         {r:'la Serbia', n:'Raddoppia', d:'il proprio territorio e diventa un polo di attrazione per gli slavi dell\'impero austriaco'},
+         {r:'l\'Austria-Ungheria e un impero', n:'Multinazionale', d:'con undici nazionalita: un movimento nazionale ai confini non e un problema estero ma una minaccia interna'},
+         {piu:true, r:'con un impero che ha anche un problema di', n:'Successione', d:'l\'erede al trono voleva riformare la struttura dando piu peso agli slavi, ed era inviso sia ai nazionalisti serbi sia agli ungheresi'},
+         {r:'e per Vienna la Serbia diventa un problema da risolvere', n:'Una volta per tutte', d:'la formula ricorre nei documenti austriaci ben prima del 1914'}
+       ]},
+
+      {r:'in mezzo c\'e l\'', n:'Italia', d:'formalmente in un blocco e sostanzialmente altrove',
+       f:[
+         {r:'e nella', n:'Triplice alleanza', d:'con Germania e Austria dal 1882, rinnovata regolarmente fino al 1912'},
+         {r:'ma ha con l\'Austria una questione', n:'Irredenta', d:'Trento e Trieste: e alleata del paese da cui vuole territori'},
+         {r:'nel 1902 firma un accordo', n:'Segreto con la Francia', d:'promettendo neutralita se la Francia fosse attaccata: e incompatibile con lo spirito della Triplice'},
+         {r:'nel 1911 attacca la', n:'Libia', d:'strappandola all\'impero ottomano, e mostra ai popoli balcanici che quell\'impero si puo battere'},
+         {r:'contribuendo cosi a innescare le guerre', n:'Nei Balcani', d:'l\'anno successivo: e una conseguenza che a Roma nessuno aveva previsto'},
+         {r:'e nel 1914 dichiarera la', n:'Neutralita', d:'sostenendo che la Triplice era difensiva e che l\'Austria aveva agito senza consultarla',
+          f:[{piu:true, r:'con un margine costruito', n:'Deliberatamente', d:'gli accordi paralleli servivano proprio a poter scegliere al momento giusto: e una strategia, non un tradimento improvviso'}]}
+       ]},
+
+      {r:'e alla fine il sistema diventa', n:'Rigido', d:'ed e questa la differenza con l\'epoca precedente',
+       f:[
+         {r:'con Bismarck ogni potenza aveva', n:'Piu opzioni', d:'alleanze incrociate e in parte contraddittorie: nessuno era chiuso da una parte sola'},
+         {r:'dal 1907 ci sono due', n:'Blocchi', d:'e ogni crisi locale mette in gioco l\'intero schieramento'},
+         {r:'ciascun alleato teme di essere', n:'Abbandonato', d:'e quindi sostiene il proprio partner anche quando lo giudica imprudente: e il meccanismo che nel 1914 sara decisivo'},
+         {r:'i piani militari tolgono tempo alla', n:'Diplomazia', d:'la mobilitazione russa e quella tedesca erano calcolate in modo che ritardare significasse perdere'},
+         {r:'e il piano tedesco prevede di passare per il', n:'Belgio', d:'la cui neutralita era garantita da un trattato firmato anche da Londra'},
+         {piu:true, r:'e gli stati maggiori hanno acquisito un peso politico', n:'Nuovo', d:'in tutti i paesi i piani sono segreti anche per molti ministri: chi governa scopre solo nella crisi che cosa i propri militari hanno predisposto'},
+         {r:'per cui una crisi nei Balcani finira per far entrare in guerra la', n:'Gran Bretagna', d:'e nessuno dei due schieramenti lo aveva messo in conto in quella forma'}
+       ]}
+    ],
+    incroci:[
+      {da:'Rischio', a:'Ostilita permanente', r:'produce l\'esatto contrario di cio che voleva, cioe una',
+       perche:'La teoria di Tirpitz prevedeva che una flotta abbastanza minacciosa costringesse Londra a trattare. L\'effetto reale fu opposto: la Gran Bretagna non tratto, costrui piu navi e si accordo con Francia e Russia per liberare risorse. Una minaccia costruita per ottenere concessioni ha prodotto la coalizione che si voleva evitare, ed e uno dei casi meglio documentati di strategia che si rovescia contro chi la applica.'},
+      {da:'Comprese le proprie', a:'Zero', r:'e la ragione per cui il conteggio riparte da',
+       perche:'La nave nuova rende obsolete anche le sessanta corazzate britanniche esistenti, cioe distrugge il vantaggio accumulato in un secolo. Dal 1906 non conta quante navi si hanno ma quante se ne varano ogni anno, e su quel terreno la Germania puo competere. È il paradosso dell\'innovazione militare: chi e in vantaggio ha piu da perdere da un cambio di tecnologia, e la costruisce lo stesso perche teme che la costruisca un altro.'},
+      {da:'Sopravvivenza', a:'Mare del Nord', r:'spiega la reazione alla flotta costruita nel',
+       perche:'La Germania poteva sostenere in buona fede di volere una marina adeguata al proprio rango, e la scelta di concentrarla davanti alle coste inglesi rendeva quell\'argomento irrilevante. Per un\'isola che importa gran parte del cibo, la superiorita navale non e prestigio: e la condizione per non essere affamata in poche settimane. Quando una capacita puo distruggerti, le intenzioni di chi la costruisce smettono di contare.'},
+      {da:'Minaccia comune', a:'Coloniali', r:'spiega perche bastino accordi',
+       perche:'Nessuna delle intese fra il 1904 e il 1907 e un\'alleanza militare, e nessuna nomina la Germania: sono liquidazioni di controversie coloniali fra imperi rivali. Proprio per questo sono possibili — non richiedono fiducia, richiedono solo un interesse maggiore altrove. Due paesi che si erano quasi scontrati a Fashoda sei anni prima si accordano perche temono lo stesso terzo, ed e il modo piu comune in cui nascono le alleanze.'},
+      {da:'Scritti', a:'Fara Londra', r:'e la ragione per cui nessuno sapra che cosa',
+       perche:'La Gran Bretagna non firmo mai un obbligo di intervento, e i suoi stati maggiori discussero per anni con i francesi come si sarebbe operato insieme. Ne risulto una situazione peggiore di entrambe le alternative: i francesi contavano su un aiuto non garantito, i tedeschi speravano in una neutralita non promessa, e il governo britannico stesso non sapeva che cosa avrebbe fatto. L\'ambiguita, che doveva conservare liberta, tolse a tutti la possibilita di calcolare.'},
+      {da:'Umiliata di nuovo', a:'Abbandonato', r:'rende la Russia incapace di reggere il timore di essere',
+       perche:'Dopo Berlino nel 1878 e la Bosnia nel 1908, la Russia ha ceduto due volte in trent\'anni e teme di perdere ogni credibilita fra gli slavi dei Balcani. Da quel momento sostiene la Serbia anche quando la giudica imprudente, perche il timore di essere abbandonata dai propri protetti pesa piu del rischio di guerra. Lo stesso ragionamento, con i ruoli invertiti, lega Berlino a Vienna.'},
+      {da:'Multinazionale', a:'Una volta per tutte', r:'spiega perche Vienna voglia risolvere la questione serba',
+       perche:'Un impero con undici nazionalita non puo trattare un movimento nazionale confinante come un problema di politica estera: ogni successo serbo e un esempio per milioni di sudditi slavi. Da qui la convinzione, presente nei documenti austriaci ben prima del 1914, che si tratti di una questione di sopravvivenza. È il motivo per cui a Vienna una soluzione diplomatica appariva non insufficiente ma inutile.'},
+      {da:'Nei Balcani', a:'Libia', r:'sono innescate anche dall\'attacco alla',
+       perche:'La guerra italiana del 1911 dimostra agli Stati balcanici che l\'impero ottomano puo essere battuto e che le grandi potenze non lo difenderanno. Nel giro di un anno quattro Stati si coalizzano e lo attaccano. È una conseguenza che a Roma nessuno aveva previsto, e mostra come un\'azione limitata possa cambiare i calcoli di terzi che non erano nemmeno stati considerati.'},
+      {da:'Piu opzioni', a:'Blocchi', r:'e cio che si perde con la formazione dei',
+       perche:'Il sistema bismarckiano era complicato e in parte contraddittorio, e proprio per questo lasciava a ciascuno delle alternative: nessuna crisi obbligava a scegliere una volta per tutte. Dal 1907 ogni potenza ha un solo schieramento possibile, e ogni conflitto locale mette in gioco tutti. La rigidita non nasce da un\'intenzione: e il risultato di accordi presi uno alla volta, ciascuno ragionevole in se.'},
+      {da:'Senza coordinamento', a:'Belgio', r:'rende possibile un piano che passa dal',
+       perche:'La decisione di violare la neutralita belga fu presa dallo stato maggiore per ragioni di calendario militare, senza che il ministero degli esteri ne valutasse le conseguenze politiche. Il risultato fu di far entrare in guerra la Gran Bretagna su una base giuridica chiara e popolare. È il caso limite di che cosa accada quando i militari pianificano senza che nessuno domandi che effetto avra il piano sugli altri Stati.'},
+      {da:'Deliberatamente', a:'Irredenta', r:'nasce dalla questione',
+       perche:'Essere alleati del paese da cui si rivendicano territori e una posizione insostenibile a lungo, e la diplomazia italiana la gestisce assicurandosi in anticipo un\'uscita: accordi paralleli con la Francia e una clausola che rende l\'alleanza difensiva. Nel 1914 la neutralita non e un\'improvvisazione ma l\'uso di un margine costruito per dodici anni — il che spiega perche fu decisa in pochi giorni e senza crisi di governo.'},
+      {da:'Ne vogliamo otto', a:'Rinuncia', r:'contribuisce a costringere la Germania alla',
+       perche:'La campagna del 1909 si basava su stime esagerate della produzione tedesca, e ottenne otto navi invece delle quattro previste. L\'effetto fu di alzare un ritmo che la Germania non poteva reggere avendo da mantenere anche il piu grande esercito d\'Europa. Nel 1912 Berlino sposta le risorse sull\'esercito: la corsa navale finisce, e la struttura di ostilita che aveva creato resta.'},
+      {da:'Sazia', a:'Posto al sole', r:'viene abbandonata con la rivendicazione di un',
+       perche:'Per vent\'anni la Germania aveva rassicurato tutti dichiarandosi senza ulteriori rivendicazioni, ed era la sola cosa che rendesse accettabile agli altri la sua superiorita continentale. La formula del 1897 rovescia quella posizione in pubblico, e lo fa in un\'epoca di stampa di massa: da quel momento ogni mossa tedesca viene letta come parte di un disegno, anche quando non lo e.'}
+    ]
+  },
+  provocazione: {
+    titolo:'La nave che rovinò chi la costruì',
+    durata:'55 minuti',
+    domandaMadre:'Perche chi e in vantaggio costruisce l\'arma che annulla il proprio vantaggio?',
+    perche:'Nel 1906 la Gran Bretagna, che possedeva la flotta piu grande del mondo, vara una corazzata talmente superiore da rendere obsolete tutte le altre — comprese le proprie sessanta. Un vantaggio accumulato in un secolo viene azzerato da chi lo deteneva, e la corsa riparte alla pari. Il caso serve a smontare l\'idea che chi ha un margine cerchi di conservarlo, e a far vedere il meccanismo per cui in una gara ciascuno agisce in modo difensivo e produce esattamente cio che temeva. La lezione si chiude su uno strumento che i ragazzi possono usare: guardare le proprie azioni con gli occhi di chi non conosce le proprie intenzioni.',
+    occorrente:'Niente.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'1906.\n\nLa Gran Bretagna\nha la flotta\npiu grande del mondo.\n\nUna regola\nnon scritta\ndice che deve\nessere pari\nalle due successive\nmesse insieme.\n\nLo e.\n\nQuell\'anno\nvara una nave\nnuova.\n\nSi chiama\nDreadnought.\n\nHa solo\ngrandi cannoni,\ntutti uguali.\n\nHa turbine\ninvece di macchine\nalternative,\ne va piu veloce\ndi chiunque.\n\nViene costruita\nin poco piu\ndi un anno.\n\nÈ tanto superiore\nche da quel giorno\n\ntutte le corazzate\ndel mondo\n\nvalgono molto meno.\n\nCompresi\n\ni sessanta\ncorazzati\nbritannici.\n\nLa flotta\npiu forte del mondo\n\nsi e\nsvalutata\nda sola.',
+       parlato:'Racconta la nave con i dettagli tecnici, perche servono a capire perche fosse un salto e non un miglioramento.\n\nSpiega il punto: prima le corazzate avevano cannoni di calibri diversi, e in battaglia era difficile correggere il tiro perche le colonne d\'acqua si confondevano. Una nave con soli grandi cannoni tutti uguali colpisce piu lontano e corregge meglio. E se e anche piu veloce, sceglie lei la distanza dello scontro.\n\nConclusione tecnica: una nave del genere puo battere due o tre corazzate vecchie senza essere raggiunta.\n\nAdesso il fatto che non torna, e falla dire a loro. Chi aveva il vantaggio piu grande ha costruito la cosa che lo annullava.\n\nRaccogli le prime ipotesi e scrivile alla lavagna. Vengono fuori: non ci avevano pensato, oppure erano sicuri di essere piu veloci a costruirne altre.\n\nDi\' che la seconda contiene qualcosa di vero e che oggi si cerca la spiegazione completa.\n\nChiudi con la domanda dell\'ora: perche chi e in vantaggio costruisce l\'arma che annulla il proprio vantaggio?',
+       seDicono:[
+         {loro:'«Non avevano capito le conseguenze.»',
+          tu:'Le avevano capite benissimo, ed e documentato: nei consigli dell\'ammiragliato ci fu chi si oppose proprio per questo motivo. Il progetto ando avanti lo stesso. Quando qualcuno fa una cosa dopo che gliene sono stati spiegati i rischi, la spiegazione non e l\'ignoranza: e che qualche altro timore pesava di piu.'},
+         {loro:'«Tanto costruivano più in fretta loro.»',
+          tu:'Vero, e fu uno degli argomenti usati: i cantieri britannici erano piu rapidi. Nota pero il prezzo: da quel momento il vantaggio andava ricomprato ogni anno, con una spesa enorme e ricorrente. Prima era un patrimonio, dopo era un abbonamento — e questa e una differenza che vale la pena tenere.'}
+       ]},
+
+      {minuti:'8–17', et:'La fonte',
+       schermo:'Perche l\'avevano fatta.\n\nPer capirlo\nbisogna leggere\nun documento\ntedesco\ndi sei anni prima.\n\nÈ il preambolo\nalla legge navale\ndel 1900,\nvoluta\ndall\'ammiraglio\nTirpitz.\n\nDice questo.\n\nLa Germania\nnon ha bisogno\ndi una flotta\ncapace\ndi vincere\ncontro la piu grande\npotenza navale.\n\nLe basta\nuna flotta\ntale che,\nanche vincendo,\n\nquella potenza\nesca\ncosi indebolita\n\nda non poter piu\naffrontare\ni propri altri\nrivali.\n\nA quel punto\n\nnon le converra\ncombattere,\n\ne dovra\ntrattare.\n\nLo chiamano\n\nrischio.',
+       testo:{fonte:'Preambolo alla seconda legge navale tedesca (1900) e memorandi di Alfred von Tirpitz sulla «teoria del rischio»',
+              glossa:'Il documento va passato alle tre domande, e la prima chiarisce tutto. Chi lo scrive e per risolvere quale problema: un ammiraglio che deve ottenere dal parlamento un impegno di bilancio ventennale, e che quindi ha bisogno di un argomento comprensibile a deputati non militari; la teoria del rischio serve anche a questo — spiega perché convenga spendere moltissimo senza promettere una vittoria, che nessuno avrebbe creduto possibile. Che cosa ammette senza volerlo: ammettendo che una flotta capace di vincere sia fuori portata, ammette che l\'obiettivo reale non sia la difesa ma un\'estorsione diplomatica; e affermando che la Gran Bretagna ha altri rivali di cui preoccuparsi, ammette che l\'intero calcolo dipenda da una condizione esterna che i tedeschi non controllano — se Londra si accordasse con quei rivali, la teoria crollerebbe. È esattamente ciò che accadrà fra il 1902 e il 1907. Che cosa non dice: non dice nulla su come la Gran Bretagna potrebbe reagire alla costruzione stessa, cioè non considera che l\'avversario possa fare qualcosa mentre la flotta viene costruita; il piano presuppone un nemico immobile per vent\'anni.'},
+       parlato:'Leggi la teoria e falla ricostruire, perche e ingegnosa e va capita prima di essere criticata.\n\nNon serve vincere: serve essere abbastanza forti da rendere la vittoria troppo cara. È lo stesso ragionamento di chi si arma per non essere attaccato.\n\nConduci le tre domande.\n\nChi scrive e per che problema: un ammiraglio che deve convincere un parlamento a impegnarsi per vent\'anni. Fai notare che la teoria serve anche come argomento politico interno: spiega perche spendere tanto senza promettere una vittoria.\n\nChe cosa ammette senza volerlo. Prima ammissione: dicendo che una flotta capace di vincere e fuori portata, ammette che lo scopo non e difendersi ma ottenere concessioni con la minaccia.\n\nSeconda ammissione, ed e quella che decide tutto: il calcolo funziona solo se la Gran Bretagna continua ad avere altri rivali. Chiedi che cosa succede se quei rivali diventano suoi amici.\n\nCi arrivano: la teoria crolla. E fai notare che e esattamente quello che accade fra il 1902 e il 1907, con Giappone, Francia e Russia.\n\nChe cosa non dice: non prevede nessuna reazione britannica durante la costruzione. Il piano presuppone un avversario fermo per vent\'anni.\n\nEnuncia il criterio: un piano che richiede all\'avversario di non fare niente non e un piano, e una speranza.',
+       seDicono:[
+         {loro:'«Sembra ragionevole però.»',
+          tu:'Lo e, e per questo va studiato: gli errori interessanti non sono quelli stupidi. Il difetto non sta nella logica ma in due presupposti nascosti — che gli altri restino nemici fra loro, e che l\'avversario stia fermo mentre ti armi. Quasi tutti i piani che falliscono hanno questa forma: ragionamento corretto, premesse non verificate.'},
+         {loro:'«Anche oggi ci si arma per non essere attaccati.»',
+          tu:'Sì, ed e la ragione per cui questo caso si studia ancora. La domanda utile e sempre la stessa: la capacita che sto costruendo puo essere usata solo per difendermi, oppure anche per attaccare? Se anche per attaccare, l\'altro non puo distinguere le mie intenzioni e reagira. Fra poco vediamo un documento che lo dice in modo esplicito.'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'Adesso\nla risposta\nalla domanda\niniziale.\n\nPerche gli inglesi\ncostruirono\nla nave\nche li svalutava.\n\nPrima ragione.\n\nL\'idea\nnon era segreta.\n\nProgetti simili\ncircolavano\nin Italia,\nin Giappone,\nnegli Stati Uniti.\n\nQualcuno\nl\'avrebbe fatta\ncomunque.\n\nSeconda ragione,\ned e la vera.\n\nSe la fa\nun altro,\n\ntu hai sessanta navi\nche valgono poco\n\ne nessuna\nche vale molto.\n\nSe la fai tu,\n\nhai sessanta navi\nche valgono poco\n\ne sei l\'unico\nad avere quella\nche vale.\n\nQuindi:\n\nnon si trattava\ndi scegliere\nfra tenere\no perdere\nil vantaggio.\n\nSi trattava\ndi scegliere\nchi lo perdeva\n\ne quando.',
+       parlato:'Costruisci la spiegazione in due mosse, perche la seconda e la cosa che devono portarsi via.\n\nPrima mossa: l\'innovazione non era un segreto britannico. Ingegneri italiani e giapponesi avevano gia proposto navi con soli grandi cannoni, e gli Stati Uniti stavano progettando qualcosa di simile. Il salto tecnico era maturo.\n\nSeconda mossa: fai fare il calcolo a loro. Chiedi che cosa convenga a chi e in vantaggio quando una nuova tecnologia sta per arrivare comunque.\n\nCi arrivano quasi da soli: conviene farla per primo. Il vantaggio si perde in ogni caso; farla per primo significa perderlo alle proprie condizioni e con un anno di anticipo.\n\nEnuncia il principio in forma generale, perche vale ben oltre le navi: quando un cambiamento tecnico e inevitabile, chi e in vantaggio non sceglie fra conservarlo e perderlo. Sceglie soltanto se perderlo per primo o per ultimo.\n\nFai fare esempi loro. Funzionano bene: un\'azienda che rende obsoleto un proprio prodotto, un giocatore che cambia il modo di giocare, una scuola che cambia un metodo su cui era brava.\n\nPoi aggiungi il pezzo politico, che completa il quadro. Dal 1906 il conteggio riparte da zero, e la Germania puo competere. La corsa diventa annuale e pubblica: si contano le navi varate, i giornali tengono le classifiche, e nel 1909 una campagna di stampa basata su stime esagerate obbliga il governo a raddoppiare il programma.\n\nDi\' chiaramente che a quel punto la corsa non e piu solo una scelta di governi: e diventata popolare, e fermarsi costa voti.',
+       seDicono:[
+         {loro:'«Potevano tenerla segreta.»',
+          tu:'Fecero il contrario: la costruirono in fretta e la mostrarono. E ha una logica — una nave del genere serve a dissuadere, e non dissuade nessuno se non si sa che esiste. È la differenza fra un\'arma pensata per essere usata e una pensata per essere temuta: la seconda va esibita, e quindi insegna a tutti come si fa.'},
+         {loro:'«Allora conviene sempre innovare per primi.»',
+          tu:'Non sempre: dipende se il cambiamento arrivera comunque. Se puoi impedirlo, ti conviene rallentare; se non puoi, ti conviene arrivare prima. La domanda decisiva non e «mi conviene questa novita?» ma «esiste qualcuno che la fara anche se io non la faccio?». Cambia completamente la risposta.'}
+       ]},
+
+      {minuti:'28–38', et:'La seconda fonte',
+       schermo:'1907.\n\nUn funzionario\ndel ministero\ndegli esteri\nbritannico\nscrive\nun memorandum\nper i propri superiori.\n\nSi chiama\nEyre Crowe.\n\nSi chiede:\n\nla Germania\nsta perseguendo\nun disegno\nconsapevole\ndi egemonia,\n\noppure sta\nsolo agendo\nin modo confuso,\nsenza un piano?\n\nEsamina\nle due ipotesi.\n\nE poi\nscrive\nla cosa\nper cui\nquel documento\ne ancora studiato:\n\nche la risposta\n\nnon cambia\nnulla.\n\nPerche una potenza\nche costruisce\nuna flotta\ndavanti alle nostre coste\n\nva affrontata\nallo stesso modo\n\nsia che lo faccia\nper disegno,\n\nsia che ci\narrivi\nper caso.',
+       testo:{fonte:'Eyre Crowe, memorandum sullo stato delle relazioni britanniche con Francia e Germania, Foreign Office (1° gennaio 1907)',
+              glossa:'È uno dei documenti diplomatici più studiati del Novecento, e va letto con le tre domande. Chi lo scrive e per risolvere quale problema: un alto funzionario, figlio di madre tedesca e cresciuto in Germania, che deve fornire ai propri superiori una base per decidere se il riavvicinamento a Francia e Russia vada consolidato; il problema non è giudicare le intenzioni tedesche ma stabilire una linea che regga qualunque esse siano. Che cosa ammette senza volerlo: dichiarando irrilevante la distinzione fra un piano deliberato e una deriva, ammette che la politica britannica risponderà alle capacità e non alle intenzioni, il che significa che nessuna rassicurazione tedesca potrà più cambiare nulla — e questo, dal punto di vista di Berlino, rende razionale continuare ad armarsi, perché non esiste comportamento che migliori la propria posizione. Che cosa non dice: non esamina che effetto avrà la reazione britannica sulle scelte tedesche, cioè tratta l\'avversario come una variabile e sé stesso come una costante — lo stesso identico errore che il documento di Tirpitz commetteva a parti invertite. I due testi, letti insieme, mostrano due paesi che si comportano in modo difensivo e che, proprio così, si costruiscono a vicenda il nemico che temono.'},
+       parlato:'Presenta il documento e fai notare subito chi lo scrive: un funzionario nato da madre tedesca e cresciuto in Germania, cioe la persona meno sospettabile di pregiudizio.\n\nLeggi il ragionamento e fermati sulla mossa centrale. Non dice che i tedeschi abbiano un piano: dice che la risposta britannica non cambia in nessuno dei due casi.\n\nChiedi alla classe se la trovano ragionevole. Di solito sì, e giustamente: davanti a una capacita che puo distruggerti, aspettare di capire le intenzioni e imprudente.\n\nAdesso conduci le tre domande.\n\nChi scrive e per che problema: deve dare una linea che regga qualunque siano le intenzioni altrui.\n\nChe cosa ammette senza volerlo. Qui c\'e la scoperta, e va fatta trovare. Se conta solo la capacita e non l\'intenzione, allora nessuna rassicurazione tedesca puo cambiare qualcosa. E se nessun comportamento migliora la tua posizione, allora tanto vale continuare ad armarsi.\n\nFai pesare la conseguenza: il documento, che e prudente e onesto, rende razionale per l\'altro proprio cio che voleva scoraggiare.\n\nChe cosa non dice: non si chiede che effetto avra la reazione britannica sulle scelte tedesche. Tratta l\'altro come una variabile e se stesso come una costante.\n\nAdesso metti insieme i due documenti, ed e la conclusione del tempo. Tirpitz non prevede che gli inglesi reagiscano. Crowe non prevede che i tedeschi reagiscano alla reazione. Due paesi che si comportano in modo difensivo e si costruiscono a vicenda il nemico che temono.',
+       seDicono:[
+         {loro:'«Crowe però aveva ragione.»',
+          tu:'Sui fatti, in buona parte sì, e la domanda utile non e se avesse ragione: e se il suo ragionamento lasciasse una via d\'uscita. Non ne lascia nessuna, per costruzione. Un\'analisi che ha ragione e che chiude ogni alternativa e esatta e sterile, e riconoscere questo tipo di analisi e uno degli usi migliori della storia.'},
+         {loro:'«Se guardi solo le capacità, tutti sono nemici.»',
+          tu:'È il rischio, ed e reale. Nota pero che guardare solo le intenzioni ha il rischio opposto, e altrettanto grave: ti fidi di dichiarazioni che possono cambiare in un giorno. Il problema non ha soluzione pulita, e la cosa piu utile che si e trovata sono le misure verificabili — ispezioni, limiti concordati, trasparenza — perche riducono lo scarto fra cio che dico e cio che l\'altro puo controllare.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'Come e finita\nla corsa navale.\n\n1912.\n\nLa Germania\nsi ferma.\n\nNon riesce\na pagare\ninsieme\nla flotta piu grande\ne l\'esercito\npiu grande,\n\ne sceglie\nl\'esercito.\n\nQuindi\nla flotta\nnon ha ottenuto\nnessuna concessione,\n\nnon ha costretto\nnessuno a trattare,\n\ne ha prodotto\nun nemico\nche prima\nnon c\'era.\n\nPoi la guerra.\n\nLe due flotte\nsi affrontano\nin battaglia\n\nuna volta sola,\n\nnel 1916,\nsenza esito\ndecisivo.\n\nPoi la flotta tedesca\nresta in porto\n\nper due anni.\n\nNel 1918\nriceve l\'ordine\ndi uscire\nper un\'ultima battaglia,\n\ne gli equipaggi\nsi ammutinano.\n\nDa quell\'ammutinamento\ncomincia\nla rivoluzione\nche fa cadere\nl\'impero.\n\nE la Dreadnought,\nla nave\nche aveva cambiato\ntutto,\n\nnon affondo mai\nuna corazzata.\n\nL\'unica nave\nche affondo\n\nfu un sottomarino,\n\nsperonandolo.',
+       parlato:'Da\' il bilancio della politica navale tedesca, punto per punto, e lascia che i fatti facciano il lavoro.\n\nNessuna concessione ottenuta. Nessuna trattativa imposta. Un nemico creato. Risorse enormi sottratte all\'esercito, che sara l\'arma decisiva della guerra vera.\n\nPoi il seguito militare, che completa il paradosso: una sola battaglia in quattro anni, senza esito, e due anni in porto. E l\'ammutinamento del 1918 che innesca la caduta dell\'impero.\n\nEnuncia il risultato: uno strumento costruito per vent\'anni con un costo enorme ha contribuito a perdere la guerra due volte — prima creando la coalizione avversaria, poi facendo crollare il regime dall\'interno.\n\nPoi il dettaglio sulla Dreadnought, che i ragazzi ricordano sempre: la nave che ha reso obsolete tutte le altre non affondo mai una corazzata, e l\'unica cosa che affondo fu un sottomarino, speronandolo. Nel frattempo i sottomarini stavano cambiando la guerra sul mare piu delle corazzate.\n\nFai la domanda che chiude: che cosa insegna?\n\nGuidali a due conclusioni distinte. La prima: la corsa agli armamenti aveva un vincitore apparente e nessun vincitore reale. La seconda, piu importante: entrambe le parti si comportavano in modo difensivo. Nessuna delle due mentiva quando diceva di volersi difendere.\n\nNomina il meccanismo con il suo nome: quando due parti aumentano la propria sicurezza e ciascuna, cosi facendo, riduce quella dell\'altra, si ottiene un risultato che nessuna voleva. Non serve che qualcuno sia aggressivo — basta che nessuno riesca a vedersi con gli occhi dell\'altro.',
+       seDicono:[
+         {loro:'«Allora era tutto inutile.»',
+          tu:'Le corazzate furono in gran parte inutili, e la marina no: il blocco navale britannico fu una delle cause della sconfitta tedesca, e i sottomarini stavano per far perdere la guerra agli inglesi. Il punto non e che le flotte non contassero — e che si erano preparati con enorme spesa allo scontro sbagliato, mentre le armi decisive erano altre.'},
+         {loro:'«Se si fossero fidati l\'uno dell\'altro, niente di tutto questo.»',
+          tu:'Vero e difficile da praticare, perche fidarsi costa poco quando hai torto e moltissimo quando ce l\'ha l\'altro. Ecco perche nel Novecento si e cercato qualcosa di intermedio: accordi con limiti verificabili e ispezioni. Non richiedono fiducia — richiedono controllo, che e una cosa che si puo negoziare.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'La domanda era:\n\nperche chi e in vantaggio\ncostruisce l\'arma\nche annulla\nil proprio vantaggio?\n\nRisposta:\n\nperche non stava\nscegliendo\nfra tenerlo\ne perderlo.\n\nStava scegliendo\nse perderlo\nper primo\no per ultimo.\n\nE il resto\ndel capitolo\naggiunge\nla cosa\npiu importante:\n\ntutti e due\nsi stavano\ndifendendo.\n\nDa portarsi via\nuna domanda sola,\n\nda farsi\nogni volta\nche vi state\nproteggendo\nda qualcuno:\n\nse l\'altro\nguardasse\nquello che sto facendo\n\nsenza sapere\nche cosa\npenso,\n\nche cosa\nvedrebbe?\n\nPerche lui\nvede\nsolo quello.\n\nLe vostre intenzioni\nle conoscete\n\nvoi.',
+       parlato:'Torna alle ipotesi iniziali e verificale, poi ricomponi le due conclusioni.\n\nLa prima riguarda l\'innovazione: quando un cambiamento arrivera comunque, chi e in vantaggio non sceglie se perderlo. Falla applicare a casi loro.\n\nLa seconda riguarda la sicurezza, ed e la piu utile. Due parti che si difendono possono costruirsi a vicenda il nemico che temono, senza che nessuno menta e senza che nessuno sia aggressivo.\n\nDa\' lo strumento nella forma della domanda finale e falla provare subito su situazioni concrete: un\'amicizia in cui si comincia a essere prudenti, un gruppo in cui due persone si controllano a vicenda, una classe divisa.\n\nInsisti sul punto tecnico: noi conosciamo le nostre intenzioni e vediamo solo le azioni altrui. L\'altro fa esattamente lo stesso, in senso opposto. Questa asimmetria produce da sola quasi tutte le escalation, senza bisogno di cattiveria.\n\nPoi da\' la parte costruttiva, perche altrimenti resta una diagnosi: cio che rompe il meccanismo non e la fiducia, che nessuno puo chiedere, ma qualcosa di verificabile — un gesto che l\'altro possa controllare senza doverti credere. È il principio degli accordi sugli armamenti del Novecento, ed e anche il modo in cui si esce da una lite fra persone.\n\nUltima riga per il seguito: nel giugno del 1914 in una citta della Bosnia due colpi di pistola uccidono l\'erede al trono austriaco. Trentasette giorni dopo, sei potenze sono in guerra. La prossima volta si guarda che cosa succede in quei trentasette giorni, e perche nessuno riusci a fermarsi.',
+       seDicono:[
+         {loro:'«Ma a volte l\'altro è davvero aggressivo.»',
+          tu:'Certo, e la lezione non dice il contrario: dice che dal comportamento non si distingue. Chi si arma per attaccare e chi si arma per difendersi fanno la stessa cosa, e per questo esistono le misure verificabili — servono proprio a rendere distinguibili due situazioni che a occhio nudo si somigliano.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'Ne vogliamo otto',
+       corpo:'Nel 1909 alcuni giornali britannici lanciano una campagna sostenendo che la Germania stia costruendo corazzate in segreto e più rapidamente del previsto, e che entro pochi anni supererà la Royal Navy.\n\nIl governo aveva previsto quattro nuove navi; l\'opposizione ne chiede sei; la campagna di stampa adotta lo slogan «ne vogliamo otto e non vogliamo aspettare». Il governo finisce per finanziarne otto.\n\nLe stime sulla produzione tedesca su cui la campagna si basava si rivelarono esagerate. Il ritmo così imposto contribuì però a rendere la corsa insostenibile per la Germania, che nel 1912 vi rinunciò spostando le risorse sull\'esercito.',
+       chiedi:'Una decisione presa sulla base di stime sbagliate produce l\'effetto voluto. Questo significa che la decisione era giusta? E come si giudica una scelta pubblica: dai motivi che l\'hanno determinata, dalla qualità delle informazioni, o dai risultati?'},
+      {titolo:'L\'alleato che si assicura',
+       corpo:'L\'Italia è alleata di Germania e Austria-Ungheria dal 1882. Nel 1902, mentre rinnova la Triplice, firma con la Francia un accordo segreto in cui promette di restare neutrale se la Francia fosse attaccata o costretta a dichiarare guerra per difendersi.\n\nL\'alleanza prevede inoltre una clausola per cui l\'Italia non è obbligata a intervenire in guerra contro la Gran Bretagna, e stabilisce consultazioni preventive in caso di modifiche negli equilibri balcanici.\n\nNel 1914 il governo italiano dichiara la neutralità sostenendo che l\'Austria aveva agito senza consultare l\'alleato e che l\'alleanza aveva carattere difensivo.',
+       chiedi:'Un\'alleanza in cui uno degli aderenti si è assicurato in anticipo di non dover combattere è ancora un\'alleanza? E che cosa distingue, in un accordo, una clausola di prudenza da un modo elegante per non mantenere la parola?'},
+      {titolo:'La neutralità del Belgio',
+       corpo:'Il piano militare tedesco prevede, in caso di guerra su due fronti, di attaccare la Francia passando attraverso il Belgio, perché la frontiera diretta era troppo fortificata e i tempi calcolati non consentivano un assedio.\n\nLa neutralità belga era garantita da un trattato del 1839 firmato anche dalla Gran Bretagna. Il piano fu elaborato dallo stato maggiore per ragioni tecniche, senza che il ministero degli esteri ne valutasse le conseguenze politiche.\n\nQuando nell\'agosto 1914 le truppe tedesche entrano in Belgio, il governo britannico ottiene ciò che gli mancava: una ragione giuridica chiara e comprensibile all\'opinione pubblica per entrare in guerra.',
+       chiedi:'Chi decide un piano militare dovrebbe valutarne anche gli effetti diplomatici? E in quali ambiti, anche fuori dalla politica, avete visto scelte tecnicamente corrette produrre disastri perché nessuno si era chiesto come sarebbero apparse a chi le subiva?'}
+    ],
+    testi:[
+      {fonte:'Bernhard von Bülow, discorso al Reichstag (6 dicembre 1897)',
+       corpo:'Il ministro degli esteri tedesco afferma che i tempi in cui la Germania lasciava la terra a uno dei suoi vicini e il mare a un altro riservando a sé il cielo della pura teoria sono finiti; dichiara di non voler mettere nessuno in ombra, ma di rivendicare anche per il proprio paese un posto al sole.',
+       glossa:'È la formula che segna il passaggio dalla politica continentale di Bismarck alla politica mondiale. Va notato che il discorso è concepito per un pubblico interno — rispondeva a un\'opinione nazionalista che accusava il governo di essere troppo prudente — e che ottiene un effetto internazionale non voluto: in un\'epoca di stampa di massa, un discorso parlamentare viene letto il giorno dopo in tutte le capitali. Da quel momento ogni iniziativa tedesca sarà interpretata come parte di un disegno complessivo, anche quando è improvvisata.'},
+      {fonte:'Intervista di Guglielmo II al «Daily Telegraph» (28 ottobre 1908)',
+       corpo:'L\'imperatore dichiara di essere sempre stato amico dell\'Inghilterra e si lamenta di non essere creduto; afferma che i suoi sudditi sono in gran parte ostili agli inglesi e che è lui a trattenerli; sostiene di aver rifiutato proposte di intervento contro la Gran Bretagna durante la guerra sudafricana; e spiega che la flotta tedesca non è diretta contro l\'Inghilterra.',
+       glossa:'L\'intervista era stata pensata per migliorare i rapporti e provocò un disastro in entrambi i paesi: in Gran Bretagna perché rivelava che l\'opinione pubblica tedesca era ostile, in Germania perché l\'imperatore appariva sottomesso e perché aveva parlato senza il controllo del governo. Ne seguì una crisi costituzionale che ridusse molto il ruolo personale del sovrano. È il documento migliore per mostrare come la diplomazia personale, in un\'epoca di giornali a grande tiratura, produca effetti opposti a quelli cercati.'},
+      {fonte:'Convenzione anglo-russa relativa a Persia, Afghanistan e Tibet (31 agosto 1907)',
+       corpo:'Le due potenze dividono la Persia in una zona d\'influenza russa a nord, una britannica a sud-est e una fascia neutra intermedia; la Russia riconosce l\'Afghanistan come area d\'influenza britannica impegnandosi a non inviarvi agenti; entrambe si impegnano a non interferire negli affari interni del Tibet.',
+       glossa:'È l\'atto che completa la Triplice Intesa, e non contiene una sola parola sull\'Europa né sulla Germania: risolve una rivalità asiatica che durava da un secolo. Va letto per capire come nascono gli schieramenti — non da un\'affinità o da un patto militare, ma dalla decisione di due rivali di chiudere le proprie controversie perché ciascuno ha un problema più urgente. Va anche notato che la Persia, il cui territorio veniva diviso, non era parte del negoziato.'}
+    ],
+    compito:'Mezza pagina. Ricostruite una situazione in cui vi siete protetti da qualcuno — avete smesso di condividere qualcosa, avete cercato appoggi, avete preso le distanze. Scrivete prima le vostre intenzioni, poi, in un paragrafo separato, l\'elenco delle vostre azioni viste da fuori, senza spiegazioni. Alla fine rispondete a una domanda: chi leggesse solo il secondo paragrafo, che cosa penserebbe che voleste fare?',
+    fonti:[
+      'C. Clark, I sonnambuli. Come l\'Europa arrivò alla Grande Guerra',
+      'M. MacMillan, 1914. Come la luce si spense sul mondo di ieri',
+      'P. Kennedy, The Rise of the Anglo-German Antagonism 1860-1914',
+      'R. Massie, Dreadnought. La grande sfida navale verso la Prima guerra mondiale',
+      'Il memorandum Crowe (1907) e i documenti navali tedeschi in traduzione',
+      'A. J. P. Taylor, L\'Europa delle grandi potenze; per l\'Italia, G. Formigoni, La politica estera italiana'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',
