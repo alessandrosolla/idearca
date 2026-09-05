@@ -137,6 +137,9 @@ capitolo N».
 
 Si va in ordine di programma. Restano:
 
+- [x] Filosofia antica · 1 — Dagli Ionici agli atomisti
+- [x] Filosofia antica · 2 — Parmenide e la filosofia eleatica
+- [x] Filosofia antica · 3 — La sofistica
 - [x] Filosofia antica · 4 — Socrate
 - [x] Filosofia antica · 5 — Platone: le Idee, l'anima, la città
 - [x] Filosofia antica · 6 — L'ultimo Platone
@@ -206,26 +209,26 @@ Si va in ordine di programma. Restano:
 - [x] Storia contemporanea · 6 — La seconda rivoluzione industriale
 - [x] Storia contemporanea · 7 — La Sinistra storica e la crisi di fine secolo
 - [x] Storia contemporanea · 8 — L'età dell'imperialismo
-- [ ] Storia contemporanea · 9 — La belle époque
-- [x] Storia contemporanea · 10 — Guglielmo II e i blocchi contrapposti
-- [x] Storia contemporanea · 11 — L'Italia giolittiana
-- [x] Storia contemporanea · 12 — La Grande Guerra
-- [x] Storia contemporanea · 13 — La Rivoluzione russa
-- [x] Storia contemporanea · 14 — Il dopoguerra in Europa
-- [x] Storia contemporanea · 15 — Dal dopoguerra al fascismo
-- [x] Storia contemporanea · 16 — La crisi del 1929
-- [x] Storia contemporanea · 17 — L'Unione Sovietica di Stalin
-- [x] Storia contemporanea · 18 — Il nazismo
-- [x] Storia contemporanea · 19 — La guerra di Spagna e l'espansionismo
-- [x] Storia contemporanea · 20 — L'Italia fascista
-- [x] Storia contemporanea · 21 — La Seconda guerra mondiale
-- [x] Storia contemporanea · 22 — La guerra fredda
-- [x] Storia contemporanea · 23 — La coesistenza pacifica
-- [x] Storia contemporanea · 24 — Il Sessantotto, la distensione e le crisi
-- [x] Storia contemporanea · 25 — La fine della guerra fredda
-- [x] Storia contemporanea · 26 — L'Italia repubblicana
-- [x] Storia contemporanea · 27 — Globalizzazione e nuove crisi
-- [x] Storia contemporanea · 28 — L'Italia della Seconda Repubblica
+- [x] Storia contemporanea · 9 — La belle époque
+- [ ] Storia contemporanea · 10 — Guglielmo II e i blocchi contrapposti
+- [ ] Storia contemporanea · 11 — L'Italia giolittiana
+- [ ] Storia contemporanea · 12 — La Grande Guerra
+- [ ] Storia contemporanea · 13 — La Rivoluzione russa
+- [ ] Storia contemporanea · 14 — Il dopoguerra in Europa
+- [ ] Storia contemporanea · 15 — Dal dopoguerra al fascismo
+- [ ] Storia contemporanea · 16 — La crisi del 1929
+- [ ] Storia contemporanea · 17 — L'Unione Sovietica di Stalin
+- [ ] Storia contemporanea · 18 — Il nazismo
+- [ ] Storia contemporanea · 19 — La guerra di Spagna e l'espansionismo
+- [ ] Storia contemporanea · 20 — L'Italia fascista
+- [ ] Storia contemporanea · 21 — La Seconda guerra mondiale
+- [ ] Storia contemporanea · 22 — La guerra fredda
+- [ ] Storia contemporanea · 23 — La coesistenza pacifica
+- [ ] Storia contemporanea · 24 — Il Sessantotto, la distensione e le crisi
+- [ ] Storia contemporanea · 25 — La fine della guerra fredda
+- [ ] Storia contemporanea · 26 — L'Italia repubblicana
+- [ ] Storia contemporanea · 27 — Globalizzazione e nuove crisi
+- [ ] Storia contemporanea · 28 — L'Italia della Seconda Repubblica
 - [ ] Filosofia contemporanea · 1 — Schopenhauer
 - [ ] Filosofia contemporanea · 2 — Kierkegaard
 - [ ] Filosofia contemporanea · 3 — La Sinistra hegeliana e Feuerbach
@@ -256,6 +259,14 @@ DA RIFARE (forma vecchia):
 - [ ] Filosofia moderna · 13 — Locke
 - [ ] Filosofia moderna · 14 — Berkeley
 - [ ] Filosofia moderna · 15 — Hume
+
+### Attenzione ai `sed` per spuntare la checklist (25 agosto → corretto il 5 settembre 2026)
+
+Spuntare con `sed "s|^- \[ \] Storia contemporanea · 1|- [x] ...|"` spunta
+anche i capitoli 10-19, perché il pattern è un prefisso. È già successo due
+volte: i capitoli 10-28 di Storia contemporanea risultavano fatti e non lo
+erano. **Includere sempre il trattino lungo nel pattern**, cioè
+`· 1 —` e non `· 1`.
 
 ## Nota sui sette da rifare
 

@@ -16230,6 +16230,231 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Storia contemporanea · 9 — La belle époque': {
+  mappa: {
+    n:'La belle époque', d:'1900-1914: un\'epoca che si e data un nome solo dopo esserne uscita, e a spese di chi l\'aveva vissuta',
+    f:[
+      {r:'comincia da', n:'Un nome dato dopo', d:'e questo va detto prima di ogni altra cosa',
+       f:[
+         {r:'l\'espressione si diffonde negli anni', n:'Venti', d:'dopo la guerra: nessuno, nel 1910, sapeva di vivere in una belle epoque'},
+         {r:'nasce per', n:'Contrasto', d:'chi ha attraversato la trincea guarda indietro e vede un mondo in cui era possibile fare progetti'},
+         {r:'e chi la racconta e chi ne e stato', n:'Espulso', d:'la testimonianza piu famosa e scritta in esilio da uno scrittore che si uccidera nel 1942'},
+         {r:'la parola chiave di quel ricordo e', n:'Sicurezza', d:'l\'impressione che le cose sarebbero migliorate per forza, e che si potesse viaggiare senza passaporto'},
+         {r:'ma la memoria e quella di una', n:'Minoranza', d:'chi scrive quei libri e la borghesia colta delle citta: per un bracciante calabrese o un minatore quegli anni non furono belli'},
+         {r:'per cui il nome va usato come un', n:'Documento', d:'non descrive l\'epoca, descrive il modo in cui e stata ricordata da chi ha perso tutto dopo',
+          f:[{piu:true, r:'e vale come esercizio generale sulle', n:'Etichette dei periodi', d:'secoli bui, rinascimento, belle epoque: sono giudizi dati dopo, e ciascuno dice qualcosa di chi lo ha coniato'}]}
+       ]},
+
+      {r:'in quegli anni la vita', n:'Cambia davvero', d:'e questa parte del ricordo e verificabile',
+       f:[
+         {r:'l\'elettricita entra nelle case e cambia la', n:'Giornata', d:'si legge, si lavora e ci si incontra dopo il tramonto senza fatica e senza rischi'},
+         {r:'arrivano automobile,', n:'Aereo e cinema', d:'1903 il primo volo, 1895 le prime proiezioni: oggetti che nel 1890 non esistevano affatto'},
+         {r:'e la medicina fa il salto piu', n:'Grande', d:'si capisce che le malattie infettive hanno cause microbiche, e si comincia a impedirle invece che curarle'},
+         {r:'con asepsi, vaccini, acquedotti e', n:'Fognature', d:'e la mortalita infantile comincia a scendere in modo netto nelle citta europee'},
+         {r:'le grandi citta si dotano di', n:'Metropolitane', d:'Londra, Budapest, Parigi nel 1900, New York nel 1904: la distanza smette di misurarsi in ore di cammino'},
+         {piu:true, r:'e per la prima volta si diffonde il', n:'Tempo libero organizzato', d:'ferie, gite, balneazione: la vacanza smette di essere un privilegio di pochi e diventa un\'industria'},
+         {r:'e nasce l\'idea che il', n:'Futuro sara migliore', d:'non come speranza ma come previsione ragionevole: i propri figli vivranno meglio, ed era vero'}
+       ]},
+
+      {r:'nasce una', n:'Cultura di massa', d:'e per la prima volta milioni di persone consumano le stesse cose',
+       f:[
+         {r:'il', n:'Cinema', d:'in vent\'anni passa da attrazione da fiera a industria: sale, divi, film a episodi'},
+         {r:'lo sport diventa un fatto', n:'Sociale', d:'campionati, stadi, Olimpiadi moderne dal 1896, il Tour dal 1903, la Gazzetta rosa dal 1899'},
+         {r:'i giornali illustrati e le', n:'Cartoline', d:'portano immagini a chi non ne aveva mai viste: e il primo mondo in cui si sa che faccia hanno le cose lontane'},
+         {r:'la pubblicita diventa un', n:'Mestiere', d:'manifesti d\'autore, insegne luminose, marchi che si imparano da bambini'},
+         {r:'e le esposizioni universali sono il', n:'Rito del secolo', d:'Parigi 1900 riceve piu di cinquanta milioni di visitatori in sette mesi'},
+         {r:'con dentro anche gli', n:'Zoo umani', d:'villaggi ricostruiti e persone esibite: la stessa festa del progresso conteneva la sua smentita',
+          f:[{piu:true, r:'e con un pubblico che per la prima volta e', n:'Simultaneo', d:'milioni di persone leggono la stessa notizia lo stesso giorno: e la condizione perche un\'opinione pubblica possa essere mossa in massa'}]}
+       ]},
+
+      {r:'e si diffonde una', n:'Fiducia', d:'che oggi sembra ingenua e allora era fondata su fatti',
+       f:[
+         {r:'la scienza sembra vicina a', n:'Spiegare tutto', d:'la fisica pare completa, restano da chiarire pochi dettagli: lo dicono fisici seri'},
+         {r:'il', n:'Positivismo', d:'estende il metodo delle scienze naturali alla societa: si crede che si possano governare i problemi sociali come problemi tecnici'},
+         {r:'cresce un pacifismo', n:'Organizzato', d:'conferenze dell\'Aia del 1899 e del 1907, arbitrati internazionali, primi trattati sulle regole di guerra'},
+         {r:'e si diffonde la convinzione che la guerra sia diventata', n:'Irrazionale', d:'i paesi sono cosi legati dai commerci che chi vincesse ci perderebbe comunque'},
+         {r:'sostenuta da un libro del 1910 che vende oltre un', n:'Milione di copie', d:'in decine di lingue, con circoli universitari che ne discutono in tutta Europa'},
+         {piu:true, r:'con premi', n:'Nobel per la pace', d:'istituiti nel 1901 dall\'inventore della dinamite: anche i pacifisti piu convinti erano cresciuti dentro l\'industria degli esplosivi'},
+         {r:'e questa fiducia non era', n:'Stupidita', d:'i dati sull\'interdipendenza economica erano esatti: e la conclusione che non seguiva dalle premesse'}
+       ]},
+
+      {r:'sotto c\'e un', n:'Rovescio sociale', d:'che il ricordo di quegli anni ha quasi cancellato',
+       f:[
+         {r:'nelle grandi citta la', n:'Mortalita infantile', d:'nei quartieri operai resta multipla di quella dei quartieri borghesi, nella stessa citta'},
+         {r:'l\'orario di lavoro normale supera le', n:'Dieci ore', d:'sei giorni su sette, e il lavoro minorile e ancora diffuso in molti settori'},
+         {r:'gli scioperi', n:'Aumentano', d:'sono gli anni dei grandi scioperi generali, non un\'epoca di pace sociale'},
+         {r:'l\'emigrazione tocca i massimi', n:'Storici', d:'nel 1913 dall\'Italia partono piu di ottocentomila persone in un anno solo'},
+         {r:'le donne non votano in quasi nessun paese e le', n:'Suffragette', d:'inglesi arrivano a scioperi della fame e alimentazione forzata in carcere'},
+         {piu:true, r:'e nelle campagne europee si muore ancora di', n:'Pellagra e tubercolosi', d:'malattie da alimentazione insufficiente e da abitazioni malsane, in paesi che nelle esposizioni mostrano la radiografia'},
+         {r:'e la belle epoque, per chi la visse, fu una condizione', n:'Riservata a pochi', d:'la stessa citta che ha i caffe letterari ha i quartieri dove si muore di tubercolosi'}
+       ]},
+
+      {r:'e c\'e un', n:'Rovescio culturale', d:'che e la parte piu difficile da tenere insieme con il resto',
+       f:[
+         {r:'si diffonde il razzismo con pretese', n:'Scientifiche', d:'gerarchie di razze, misurazioni, eugenetica insegnata nelle universita di mezza Europa'},
+         {r:'l\'antisemitismo diventa un fenomeno', n:'Politico di massa', d:'partiti che lo mettono nel programma, e in Russia pogrom con centinaia di morti'},
+         {r:'in Francia il caso', n:'Dreyfus', d:'1894-1906: un ufficiale ebreo condannato su prove false, e un paese spaccato in due per dodici anni'},
+         {r:'nel 1903 circola un falso destinato a durare, i', n:'Protocolli', d:'fabbricato dalla polizia zarista e smascherato gia negli anni Venti, e ancora in circolazione'},
+         {r:'in filosofia e in arte cresce una', n:'Sfiducia nella ragione', d:'l\'inconscio, l\'istinto, lo slancio vitale: la cultura mette in dubbio proprio cio in cui la societa confida'},
+         {r:'e nel 1909 un manifesto letterario definisce la guerra', n:'Sola igiene del mondo', d:'e viene accolto come un\'avanguardia brillante, non come una minaccia',
+          f:[{piu:true, r:'con un\'idea che circola in mezza Europa, la guerra come', n:'Prova rigeneratrice', d:'un bagno di sangue che curerebbe una societa giudicata molle: e presente in ambienti colti e rispettabili'}]}
+       ]},
+
+      {r:'sul piano internazionale ci sono continue', n:'Crisi', d:'che si chiudono ogni volta, fino a quella che non si chiude',
+       f:[
+         {r:'due crisi sul', n:'Marocco', d:'1905 e 1911, con Germania e Francia sull\'orlo dello scontro e la Gran Bretagna schierata'},
+         {r:'una crisi nei', n:'Balcani', d:'1908, quando l\'Austria annette la Bosnia e la Serbia protesta senza poter reagire'},
+         {r:'due guerre', n:'Balcaniche', d:'1912 e 1913, combattute davvero, con centinaia di migliaia di morti alle porte dell\'Europa'},
+         {r:'e una gara', n:'Navale', d:'fra Germania e Gran Bretagna, con bilanci militari che crescono ovunque per anni'},
+         {r:'ogni volta si trova un', n:'Accordo', d:'e ogni accordo rafforza la convinzione che si trovera sempre'},
+         {piu:true, r:'con eserciti che passano alla', n:'Coscrizione di massa', d:'milioni di uomini addestrati e richiamabili: un\'organizzazione che, una volta costruita, chiede di essere usata'},
+         {r:'e le spese militari crescono mentre si dichiara che la guerra e', n:'Impossibile', d:'le due cose convivono negli stessi paesi e spesso negli stessi governi'}
+       ]},
+
+      {r:'e resta la domanda su', n:'Che cosa non si vide', d:'che e il vero lascito di questo capitolo',
+       f:[
+         {r:'non si vide che le decisioni non le prende un\'', n:'Economia', d:'ma gruppi ristretti, con paure, calendari e obblighi verso alleati'},
+         {r:'non si vide che i piani militari avevano', n:'Tempi rigidi', d:'una volta avviata la mobilitazione, fermarsi era considerato tecnicamente impossibile'},
+         {r:'non si vide che tutti si aspettavano una guerra', n:'Breve', d:'quindi l\'argomento della rovina economica non spaventava nessuno: si pensava a settimane, non ad anni'},
+         {r:'non si vide quanto fosse diventata', n:'Distruttiva', d:'la tecnica militare: mitragliatrici e artiglieria pesante contro tattiche ancora ottocentesche'},
+         {r:'e non si vide che il consenso alla guerra si sarebbe', n:'Formato in pochi giorni', d:'nel luglio 1914 folle enormi manifestano per la pace, e in agosto quasi tutti i parlamenti votano i crediti di guerra'},
+         {r:'per cui il giudizio giusto non e che fossero', n:'Ciechi', d:'e che vedevano molte cose vere e ne traevano una conseguenza sbagliata',
+          f:[{piu:true, r:'ed e la ragione per cui l\'espressione belle epoque va usata con una', n:'Riserva', d:'chiamare bella un\'epoca perche non sapeva che cosa la aspettava significa lodarla per la propria ignoranza'}]}
+       ]}
+    ],
+    incroci:[
+      {da:'Milione di copie', a:'Impossibile', r:'e cio che diffonde la convinzione che la guerra sia',
+       perche:'Il libro sosteneva che una guerra fra economie interdipendenti sarebbe stata rovinosa anche per il vincitore, e l\'argomento era esatto. Nella ricezione popolare diventa pero una tesi diversa: che la guerra sia percio impossibile. Il passaggio da «non conviene» a «non accadra» non e nel testo, e nessuno degli entusiasti se ne accorge — e la distanza fra i due enunciati e tutto lo spazio in cui si e infilato il 1914.'},
+      {da:'Tempi rigidi', a:'Economia', r:'contano piu delle previsioni di un\'',
+       perche:'I piani di mobilitazione erano costruiti su orari ferroviari calcolati al minuto, e prevedevano che chi mobilitava per secondo perdesse un vantaggio decisivo. Ne segue che nel momento critico i governi non decidevano fra pace e guerra ma fra mobilitare subito e rischiare l\'inferiorita. Un ragionamento economico sui costi a lungo termine non ha nessuna presa su una decisione presa in quelle condizioni.'},
+      {da:'Breve', a:'Distruttiva', r:'e l\'errore che rende non spaventoso il fatto che la guerra fosse diventata',
+       perche:'Se ci si aspetta una campagna di poche settimane, l\'argomento sulla rovina economica perde forza: si puo sopportare qualunque cosa per un mese. La previsione di una guerra breve era condivisa da quasi tutti gli stati maggiori, nonostante l\'esperienza recente — la guerra civile americana e quella russo-giapponese avevano gia mostrato che cosa producessero trincee e artiglieria. Fu un errore tecnico, non un difetto morale, e costo milioni di vite.'},
+      {da:'Accordo', a:'Crisi', r:'insegna la lezione sbagliata dopo ogni serie di',
+       perche:'Marocco 1905, Bosnia 1908, Marocco 1911, Balcani 1912-13: ogni volta si arriva vicino alla guerra e ogni volta si trova una soluzione. L\'effetto e che i decisori imparano che si trova sempre, e che minacciare senza voler combattere e una tattica efficace. Nel luglio 1914 diversi governi giocano proprio quella partita, contando su un\'ennesima trattativa. È il rischio di ogni serie di successi: insegna che il metodo funziona finche non smette.'},
+      {da:'Riservata a pochi', a:'Minoranza', r:'coincide con il fatto che il ricordo sia quello di una',
+       perche:'Chi ha scritto le memorie che hanno fissato l\'immagine di quegli anni apparteneva alla borghesia colta delle grandi citta, l\'unico gruppo che potesse davvero viaggiare senza passaporto e fare progetti a lungo termine. Per un bracciante meridionale o un minatore gallese quegli stessi anni furono di fatica e di emigrazione. Non e falso il ricordo: e parziale, e la parzialita e diventata la definizione di un\'intera epoca.'},
+      {da:'Sfiducia nella ragione', a:'Spiegare tutto', r:'cresce nello stesso momento in cui la scienza sembra',
+       perche:'Nella stessa Vienna in cui si costruiscono acquedotti e si celebra il progresso, si scrive che le nostre azioni dipendono da forze che non conosciamo. È una convivenza che oggi appare come un presagio e che allora era vissuta come vivacita culturale. Vale la pena non trasformarla in profezia: chi avvertiva che la ragione non basta non stava annunciando il 1914, stava discutendo di psicologia e di filosofia.'},
+      {da:'Prova rigeneratrice', a:'Formato in pochi giorni', r:'aiuta a spiegare un consenso che si',
+       perche:'L\'idea che una guerra potesse purificare una societa giudicata mediocre circolava da anni in ambienti colti, riviste, associazioni giovanili e movimenti d\'avanguardia. Non era maggioritaria e forniva un vocabolario pronto. Quando la crisi arriva, quel vocabolario permette di trasformare in slancio quello che poche settimane prima era rifiutato: le folle che a luglio manifestavano per la pace non cambiano idea per calcolo, cambiano linguaggio.'},
+      {da:'Dreyfus', a:'Positivismo', r:'mette in crisi la fiducia del',
+       perche:'Un ufficiale viene condannato su una perizia calligrafica sbagliata e su documenti falsi, in un paese che si considera il piu razionale d\'Europa, e ci vogliono dodici anni per rimediare. Il caso mostra due cose insieme: che le procedure tecniche non garantiscono la verita quando l\'istituzione ha bisogno di un colpevole, e che l\'antisemitismo poteva mobilitare folle in una capitale che si riteneva illuminata.'},
+      {da:'Zoo umani', a:'Rito del secolo', r:'facevano parte del',
+       perche:'I villaggi ricostruiti con persone esibite non erano una degenerazione marginale: erano fra le attrazioni piu visitate delle esposizioni universali, organizzate da istituzioni pubbliche e visitate da milioni di persone comuni. Stavano accanto ai padiglioni dell\'elettricita e della medicina. Tenere insieme le due cose e il modo migliore per capire quell\'epoca senza dividerla in una parte buona e una cattiva.'},
+      {da:'Etichette dei periodi', a:'Ciechi', r:'aiuta a non giudicare i contemporanei come',
+       perche:'Ogni nome di periodo e assegnato da chi viene dopo e serve a chi lo assegna. Chiamare quegli anni belli significa raccontare la propria perdita; chiamare ciechi quegli uomini significa attribuirsi la conoscenza del futuro che loro non avevano. Il criterio piu utile e chiedersi che cosa potevano sapere con le informazioni disponibili — e la risposta, in questo caso, e che potevano sapere molto e hanno ragionato male su un punto solo.'},
+      {da:'Futuro sara migliore', a:'Storici', r:'convive con un\'emigrazione ai massimi',
+       perche:'Le due cose non si contraddicono: la convinzione che il futuro sarebbe stato migliore era diffusa fra chi vedeva la propria condizione migliorare, e nello stesso periodo milioni di persone lasciavano l\'Europa perche in patria non avevano prospettive. La fiducia nel progresso e un fatto sociale localizzato, non un clima uniforme, e chiedersi chi la provasse e il modo piu rapido per rendere concreta un\'epoca.'},
+      {da:'Simultaneo', a:'Politico di massa', r:'e la condizione perche l\'antisemitismo diventi',
+       perche:'Un pubblico che legge le stesse notizie lo stesso giorno puo essere mobilitato in massa e in fretta, e questo vale per qualunque contenuto. Gli stessi giornali popolari che raccontano le imprese sportive diffondono le campagne del caso Dreyfus e i falsi antisemiti. La tecnica non produce l\'odio; ne moltiplica la portata, e questa distinzione conviene tenerla anche per discutere di oggi.'},
+      {da:'Sicurezza', a:'Documento', r:'e la parola che rende quel ricordo un',
+       perche:'Chi ha scritto che quella era l\'eta della sicurezza lo ha fatto da esule, dopo aver perso patria, lingua e lettori. La parola dice che cosa fosse insopportabile nel presente di chi scriveva, piu di quanto descriva il passato di cui parla. Leggere una testimonianza chiedendosi da quale situazione viene scritta e la stessa operazione che facciamo su qualunque fonte, e vale anche per le memorie che ci commuovono.'}
+    ]
+  },
+  provocazione: {
+    titolo:'Non conviene a nessuno',
+    durata:'55 minuti',
+    domandaMadre:'Se una guerra non conviene a nessuno, questo basta a impedirla?',
+    perche:'Nel 1910 un giornalista inglese pubblica un libro in cui dimostra che, fra economie interdipendenti come quelle europee, una guerra sarebbe rovinosa anche per il vincitore. Il libro vende oltre un milione di copie, nascono circoli universitari per discuterlo, uomini politici e industriali lo citano. Quattro anni dopo comincia la guerra piu distruttiva mai combattuta fino ad allora. La lezione non serve a deridere quella fiducia — l\'analisi economica era esatta, e i fatti le diedero ragione — ma a isolare l\'errore preciso: il passaggio da «non conviene» a «non accadra». È un errore che si commette ancora, e la classe puo imparare a riconoscerlo separando la previsione degli esiti dalla ricostruzione di chi decide, con quali paure e con quali vincoli di tempo.',
+    occorrente:'Niente.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'1910.\n\nEsce un libro\nche sostiene questo:\n\nle economie europee\nsono cosi legate\nfra loro\n\nche una guerra\nrovinerebbe\nanche chi vince.\n\nIl vincitore\nnon potrebbe\nprendere niente\ndi utile:\n\ndistruggerebbe\nil proprio mercato,\n\nbrucerebbe\nil credito,\n\ne pagherebbe\npiu di quanto\nincassa.\n\nVende\noltre un milione\ndi copie\n\nin decine di lingue.\n\nNascono circoli\nnelle universita\nper discuterlo.\n\nLo citano\nministri\ne banchieri.\n\nI numeri\nche porta\nsono esatti:\n\nla Germania\ne il secondo partner\ncommerciale\ndella Gran Bretagna,\n\ne viceversa.\n\nAgosto 1914.',
+       parlato:'Presenta il libro e i dati senza ironia, perche l\'ironia rovinerebbe la lezione: quelle erano persone informate e l\'argomento era buono.\n\nInsisti sul fatto che i numeri erano giusti. Germania e Gran Bretagna erano fra i principali partner commerciali l\'una dell\'altra; i capitali erano intrecciati; le materie prime arrivavano da mercati comuni.\n\nPoi da\' la data e fermati.\n\nRaccogli la prima reazione, che e sempre la stessa: erano ingenui.\n\nSmonta subito quella spiegazione, perche e comoda e sbagliata. Fra chi condivideva quella convinzione c\'erano economisti, banchieri, giornalisti e diplomatici, cioe le persone piu informate d\'Europa. Se la spiegazione e l\'ingenuita, bisogna spiegare come mai tutti gli esperti fossero ingenui insieme.\n\nPoi la domanda dell\'ora, e falla precisa: il ragionamento era sbagliato, oppure era giusto e portava a una conclusione che non seguiva?\n\nRaccogli le ipotesi e scrivile alla lavagna.',
+       seDicono:[
+         {loro:'«Erano solo ottimisti.»',
+          tu:'Alcuni sì, e l\'ottimismo non spiega perche gli stessi governi che dichiaravano impossibile la guerra aumentassero ogni anno le spese militari. Le due cose convivevano negli stessi paesi. Un\'epoca puo credere una cosa e prepararne un\'altra senza sentirsi incoerente — e capire come sia possibile e piu utile che chiamarli ottimisti.'},
+         {loro:'«Qualcuno ci guadagnava, per questo l\'hanno fatta.»',
+          tu:'Alcuni ci hanno guadagnato, e la tesi ha un problema: molti fra chi ci guadagno non decisero nulla, e molti fra chi decise ci rimise tutto, comprese le dinastie che sparirono. Se la spiegazione fosse solo l\'interesse, dovremmo trovare i decisori fra i beneficiari — e in gran parte non ci sono.'}
+       ]},
+
+      {minuti:'8–17', et:'La fonte',
+       schermo:'Il libro\nsi intitola\nLa grande illusione.\n\nL\'autore\ne Norman Angell,\ngiornalista.\n\nQuesto sostiene,\ne conviene\nleggerlo\ncon attenzione:\n\nla ricchezza\ndi uno Stato moderno\nnon sta\nnel territorio\nma nel credito,\nnei commerci\ne nel lavoro\ndei suoi abitanti.\n\nQueste cose\nnon si possono\nconquistare:\n\nse le prendi\ncon la forza,\nsi distruggono\nmentre le prendi.\n\nQuindi\nla conquista\ne inutile.\n\nUna guerra\nfra potenze moderne\n\nsarebbe\neconomicamente\nfutile\n\nanche per il vincitore.\n\nAttenzione\nall\'ultima riga.\n\nNon dice\nche non accadra.\n\nDice\nche sarebbe\ninutile.',
+       testo:{fonte:'Norman Angell, «La grande illusione. Studio sul rapporto fra potenza militare e vantaggio nazionale» (1910)',
+              glossa:'Il libro va passato alle tre domande, e la sorpresa è che l\'autore non sostiene ciò per cui è diventato famoso. Chi lo scrive e per risolvere quale problema: un giornalista che vuole confutare un argomento allora dominante — che una nazione debba espandersi militarmente per prosperare — e lo fa dimostrando che la ricchezza moderna, fatta di credito, scambi e lavoro qualificato, non è trasferibile con la conquista, perché si distrugge nel momento in cui la si prende con la forza. Che cosa ammette senza volerlo: la struttura del ragionamento ammette di rivolgersi a persone razionali che calcolino il proprio interesse, cioè presuppone che le decisioni di guerra siano prese così, e questo presupposto non è mai discusso; l\'intero edificio poggia su di esso. Che cosa non dice: non dice che la guerra sia impossibile, e Angell passerà i decenni successivi a ripeterlo, senza successo, a chi gli attribuiva quella tesi. La distanza fra ciò che il libro afferma — la guerra sarebbe futile — e ciò che i lettori capirono — la guerra non ci sarà — è l\'oggetto di questa lezione: un argomento corretto può produrre una convinzione falsa senza che nessuno menta.'},
+       parlato:'Leggi il ragionamento e falla ricostruire alla classe passo per passo, perche regge.\n\nLa ricchezza moderna non e terra: e credito, competenze, scambi. Chiedi che cosa succede se prendi con la forza una fabbrica in un paese occupato. Ci arrivano: gli operai scappano o non collaborano, i clienti spariscono, le banche non prestano. Quello che hai preso vale meno di prima proprio perche lo hai preso.\n\nPoi conduci le tre domande.\n\nChi scrive e quale problema deve risolvere: vuole confutare la tesi che una nazione debba espandersi per prosperare, che era l\'argomento dominante dei nazionalisti.\n\nChe cosa ammette senza volerlo. Qui c\'e la scoperta, e vale la pena aspettare. Il ragionamento si rivolge a persone che calcolano il proprio interesse. Presuppone che le decisioni di guerra vengano prese cosi. E quel presupposto non viene mai discusso.\n\nChe cosa non dice: non dice mai che la guerra sia impossibile.\n\nAdesso il fatto che chiude il tempo: Angell passera trent\'anni a ripeterlo, e nessuno lo ascoltera. Il libro era diventato una tesi che lui non aveva sostenuto.\n\nEnuncia il criterio: fra quello che un testo dice e quello che una societa capisce c\'e sempre uno scarto, e lo scarto non e casuale — va nella direzione che quella societa desidera.',
+       seDicono:[
+         {loro:'«Ma allora la colpa è dei lettori.»',
+          tu:'In parte, e c\'e qualcosa di piu interessante: la semplificazione andava tutta nella stessa direzione. Nessuno capi per sbaglio che la guerra sarebbe stata piu utile del previsto. Quando l\'errore di lettura e sistematico e in un solo senso, sta dicendo qualcosa su che cosa quel pubblico volesse sentirsi dire.'},
+         {loro:'«Il titolo è ambiguo: "la grande illusione" sembra dire che la guerra è un\'illusione.»',
+          tu:'Ottima osservazione, ed e proprio il punto: l\'illusione del titolo e quella di credere che la conquista arricchisca. Molti lo lessero come se dicesse che la guerra stessa fosse un\'illusione, cioe una cosa che non accadra. Un titolo puo fare piu danni di un capitolo, e questo e uno dei casi migliori per farlo vedere.'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'Perche la conclusione\nnon seguiva.\n\nTre ragioni,\ne nessuna\nriguarda\nl\'intelligenza\ndi chi sbaglio.\n\nUno.\n\nLe decisioni\nnon le prende\nun\'economia.\n\nLe prendono\npoche persone,\nin poche stanze,\n\ncon informazioni\nincomplete\n\ne con paure\nche non compaiono\nin nessun bilancio.\n\nDue.\n\nI piani militari\navevano orari.\n\nLa mobilitazione\nera calcolata\nsu tabelle ferroviarie,\nal minuto.\n\nChi mobilitava\nper secondo\nperdeva\nun vantaggio\nritenuto decisivo.\n\nQuindi nel momento\ndella crisi\n\nnon si sceglieva\nfra pace e guerra.\n\nSi sceglieva\nfra muoversi adesso\ne restare indietro.\n\nTre.\n\nTutti si aspettavano\nuna guerra\ndi poche settimane.\n\nE se dura\npoche settimane,\n\nl\'argomento\nsulla rovina economica\n\nnon spaventa\nnessuno.',
+       parlato:'Costruisci le tre ragioni con ordine, perche insieme costituiscono la risposta della lezione.\n\nSulla prima: fai capire la differenza fra un soggetto collettivo e chi decide davvero. Non esiste una cosa chiamata economia che valuti costi e benefici. Esistono persone con un ruolo, che rispondono a qualcuno, che hanno paura di apparire deboli e che hanno impegni verso alleati.\n\nSulla seconda: e la piu tecnica e la piu importante. Spiega le tabelle di mobilitazione. Milioni di uomini, migliaia di treni, orari fissati anni prima. Una volta avviata, fermarsi voleva dire disorganizzare tutto.\n\nEnuncia la conseguenza, e falla ripetere: un vincolo tecnico aveva tolto tempo alla politica. La decisione non era piu fra la guerra e la pace, ma fra muoversi subito e restare indietro.\n\nSulla terza: la guerra breve. Quasi tutti gli stati maggiori la prevedevano. E questo disinnesca completamente l\'argomento economico: si puo sopportare qualunque costo per sei settimane.\n\nAggiungi che era un errore evitabile: la guerra civile americana e quella russo-giapponese avevano gia mostrato che cosa producessero trincee, mitragliatrici e artiglieria. Gli osservatori militari europei c\'erano, avevano scritto rapporti, e furono in gran parte ignorati.\n\nChiudi il tempo con l\'enunciato generale: una previsione sugli esiti non e una previsione sulle decisioni. Sono due cose diverse e richiedono informazioni diverse.',
+       seDicono:[
+         {loro:'«Bastava non fare piani così rigidi.»',
+          tu:'Verissimo con il senno di poi, e nota perche li fecero: un esercito che mobilita in disordine perde, e questo era stato dimostrato piu volte nell\'Ottocento. Ogni stato maggiore ottimizzo la propria parte. Il risultato collettivo fu un sistema in cui nessuno poteva piu aspettare. È il caso classico in cui decisioni singolarmente razionali producono un esito che nessuno voleva.'},
+         {loro:'«Se sapevano che sarebbe stata corta, non è colpa loro.»',
+          tu:'Attento: potevano saperlo. Gli osservatori europei avevano visto le trincee in America e in Manciuria e avevano scritto rapporti dettagliati. Furono letti e considerati casi particolari, perche contraddicevano una dottrina in cui si era investito molto. Non e ignoranza: e il rifiuto di informazioni che avrebbero costretto a rifare tutto.'}
+       ]},
+
+      {minuti:'28–38', et:'La seconda fonte',
+       schermo:'1911.\n\nUn anno dopo\nAngell.\n\nIn Germania\nesce un altro libro,\nscritto\nda un generale\nin servizio.\n\nSostiene\nl\'opposto,\ne con la stessa\nsicurezza.\n\nDice\nche la guerra\ne una necessita\nbiologica.\n\nChe senza guerra\nun popolo\ndegenera.\n\nChe le nazioni\nsi comportano\ncome le specie:\n\ncrescono\noppure muoiono.\n\nE che la Germania\ndeve scegliere\nfra\n\npotenza mondiale\n\ne\n\ndeclino.\n\nAnche questo libro\ne un successo.\n\nVende molto,\nviene tradotto,\nse ne discute.\n\nDue libri.\n\nUn anno\ndi distanza.\n\nLa stessa Europa.',
+       testo:{fonte:'Friedrich von Bernhardi, «La Germania e la prossima guerra» (1911)',
+              glossa:'È la seconda fonte e dice esattamente il contrario della prima, con lo stesso tono di dimostrazione scientifica. Le tre domande. Chi lo scrive e per quale problema: un generale di cavalleria in pensione dal servizio attivo ma dentro l\'establishment militare, che scrive per contrastare proprio il pacifismo economico allora di moda e per premere sul governo a favore di una politica più aggressiva; il problema che affronta è convincere l\'opinione pubblica colta, non i militari, che erano già persuasi. Che cosa ammette senza volerlo: la necessità stessa del libro ammette che le tesi pacifiste stessero vincendo nel dibattito pubblico — non si scrive con quel tono contro una posizione marginale; e l\'uso del linguaggio biologico ammette che gli argomenti politici e giuridici non bastassero più, e occorresse presentare la guerra come una legge di natura per sottrarla alla discussione. Che cosa non dice: non dice nulla su che cosa accadrebbe se anche l\'avversario ragionasse allo stesso modo, cioè non affronta il fatto che la stessa dottrina, adottata da tutti, produca la catastrofe di tutti. Va letto insieme ad Angell: due libri di successo, in due paesi, a un anno di distanza, ciascuno convinto di dimostrare qualcosa — e la storia dà ragione al primo sui fatti e al secondo sulle decisioni.'},
+       parlato:'Presenta il secondo libro e lascia che la classe senta l\'urto: nello stesso momento, nella stessa Europa, due bestseller che dicono l\'opposto.\n\nConduci le tre domande, e falle fare a loro.\n\nChi scrive e perche: un generale che vuole contrastare proprio il pacifismo economico di moda e premere sul governo.\n\nChe cosa ammette senza volerlo. Prima ammissione, e vale la pena farla trovare: il fatto stesso che il libro esista, e con quel tono, ammette che le idee pacifiste stessero vincendo nel dibattito pubblico. Non si scrive cosi contro una posizione marginale.\n\nSeconda ammissione: usa il linguaggio della biologia. Chiedi perche. Guidali: perche una legge di natura non si discute. Presentare la guerra come necessita naturale la sottrae al dibattito politico, dove stava perdendo.\n\nChe cosa non dice: non affronta mai la domanda su che cosa accadrebbe se anche gli altri ragionassero cosi. Fai notare che e la stessa lacuna di ogni dottrina che presenta come necessario cio che ciascuno puo scegliere.\n\nAdesso tieni insieme le due fonti, ed e la conclusione del tempo.\n\nAngell aveva ragione sui fatti: la guerra fu rovinosa per tutti, vincitori compresi, e l\'Europa perse il primato mondiale.\n\nBernhardi aveva ragione sulle decisioni: quella guerra si fece.\n\nEnuncia il punto: avere ragione sulle conseguenze e avere ragione su cio che accadra sono due cose diverse, e in quegli anni si sono separate nel modo piu costoso possibile.',
+       seDicono:[
+         {loro:'«Quindi vince sempre chi è più aggressivo.»',
+          tu:'No, e non e la conclusione. In quel caso ha prevalso la posizione aggressiva, e quattro anni dopo il paese di Bernhardi aveva perso la guerra, la dinastia e le colonie. La sua dottrina non era neppure efficace: era solo quella che ha determinato la decisione. Vincere una discussione e vincere una guerra sono ancora due cose diverse.'},
+         {loro:'«Come faceva un generale a scrivere una cosa del genere pubblicamente?»',
+          tu:'Perche in quella cultura non era considerata scandalosa: il darwinismo sociale era insegnato nelle universita e la guerra come prova di vitalita era un\'idea rispettabile. È il dato piu inquietante del documento — non che qualcuno lo pensasse, ma che lo si potesse pubblicare e vendere senza che nessuno lo trovasse mostruoso.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'Che cosa succede\ndopo.\n\nAngell\naveva ragione.\n\nLa guerra\nrovino tutti.\n\nI vincitori\nuscirono indebitati,\ncon un\'inflazione\nche mangio\ni risparmi\ndi due generazioni,\n\ne l\'Europa\nperse\nil primato mondiale\nche aveva\nda quattro secoli.\n\nEconomicamente\nera stato\nesattamente\ncome aveva scritto.\n\nNel 1933\nriceve\nil premio Nobel\nper la pace.\n\nQuello stesso anno,\nin Germania,\n\nva al potere\nchi preparera\nla guerra successiva.\n\nE lui\npassa il resto\ndella vita\n\na spiegare\n\nche non aveva mai\nscritto\n\nche la guerra\nfosse impossibile.',
+       parlato:'Da\' il bilancio e falla pesare: sui fatti economici Angell aveva ragione su tutta la linea.\n\nPoi il dettaglio del 1933, e lascialo lavorare in silenzio qualche secondo. Il premio per la pace nell\'anno in cui comincia la preparazione della guerra successiva.\n\nAdesso la conclusione della lezione, e va formulata con precisione perche e il lascito.\n\nUn ragionamento puo essere corretto in ogni passaggio e produrre una previsione falsa, se una premessa nascosta non regge. Qui la premessa nascosta era: le decisioni vengono prese da chi calcola i costi complessivi a lungo termine.\n\nFai vedere che la premessa e falsa quasi sempre, e non per cattiveria. Chi decide risponde a un ruolo, teme conseguenze immediate, ha alleati, ha calendari, e spesso non sopravvive politicamente al tempo lungo su cui il calcolo e fatto.\n\nPoi fai l\'esercizio che serve a loro, e falla su casi piccoli e verificabili. Quante volte una cosa che non conviene a nessuno succede lo stesso, in una classe, in una famiglia, in un gruppo? Litigi che tutti vorrebbero evitare, spese che nessuno voleva, decisioni prese perche fermarsi sembrava impossibile.\n\nRaccogli qualche esempio e fai isolare ogni volta il meccanismo: chi decideva, che cosa temeva, e che tempo aveva.\n\nUltima cosa, e va detta come avvertenza. L\'argomento «non conviene a nessuno, quindi non accadra» si sente ancora, applicato a cose molto piu grandi. Non stiamo dicendo che sia sempre sbagliato: stiamo dicendo che non e un argomento sulle decisioni finche non si aggiunge chi decide, che cosa teme e quanto tempo ha.',
+       seDicono:[
+         {loro:'«Allora prevedere non serve a niente.»',
+          tu:'Serve, a condizione di sapere che cosa si sta prevedendo. Angell aveva previsto benissimo le conseguenze, e quella previsione era utile: se qualcuno avesse avuto il potere di fermarsi, gli sarebbe servita. Quello che non aveva previsto era il comportamento dei decisori. Sono due esercizi diversi, e servono dati diversi.'},
+         {loro:'«Se avessero letto meglio il libro, sarebbe cambiato qualcosa?»',
+          tu:'Probabilmente no, ed e la cosa piu scomoda. Chi decise nel luglio 1914 non aveva bisogno di un libro per sapere che la guerra sarebbe costata: lo sapeva. Aveva bisogno di tempo e di un modo per fermarsi senza apparire il piu debole, e nessuna delle due cose gliela dava un libro.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'La domanda era:\n\nse una guerra\nnon conviene a nessuno,\n\nbasta a impedirla?\n\nRisposta:\n\nno.\n\nPerche «non conviene»\n\ne una previsione\nsulle conseguenze.\n\nE le guerre\nnon le decidono\nle conseguenze.\n\nLe decidono\ndelle persone.\n\nDa portarsi via\ntre domande,\n\nda aggiungere\nogni volta\nche sentite dire\nche una cosa\nnon puo succedere\nperche sarebbe\nassurda:\n\nchi decide,\nesattamente?\n\nChe cosa teme\ndi piu\nnei prossimi\nsei mesi?\n\nE quanto tempo\nha\nper decidere?\n\nSe la terza risposta\ne «pochissimo»,\n\nl\'argomento\nsulla convenienza\n\nnon vale piu\nniente.',
+       parlato:'Torna alle ipotesi iniziali e verificale. Non erano ingenui: erano informati e hanno ragionato bene su una cosa e male su un\'altra.\n\nPoi da\' le tre domande e falle usare su casi concreti. Funzionano su qualunque previsione politica, e anche su decisioni piccole.\n\nSulla prima: sostituire i soggetti collettivi con persone. Non l\'Europa, non il mercato, non la scuola: chi firma, chi risponde a chi.\n\nSulla seconda: il tempo delle paure di chi decide e quasi sempre piu corto del tempo dei costi. Un costo che arriva fra dieci anni non pesa quanto un\'accusa di debolezza fra due settimane.\n\nSulla terza, che e la piu trascurata: quanto tempo c\'e. Le decisioni prese in fretta seguono regole diverse da quelle prese con calma, ed e per questo che nelle crisi si fanno cose che nessuno avrebbe scelto a mente fredda.\n\nPoi chiudi il capitolo, e falla senza retorica in nessuna delle due direzioni.\n\nQuegli anni furono davvero pieni di cose nuove e buone: la mortalita infantile cominciava a scendere, le citta avevano acqua e luce, milioni di persone videro il primo film e la prima automobile. Ed erano anche gli anni degli zoo umani nelle esposizioni, dei pogrom, del caso Dreyfus, delle suffragette alimentate a forza in carcere e di un\'emigrazione da record.\n\nLa parola belle epoque tiene insieme solo la prima meta, e la tiene insieme perche e stata coniata da chi, dopo, aveva perso tutto.\n\nUltima riga: chiamare bella un\'epoca perche non sapeva che cosa la aspettava significa lodarla per la propria ignoranza. E la prossima volta vediamo che cosa la aspettava.',
+       seDicono:[
+         {loro:'«Allora non ci si può fidare di nessuna previsione.»',
+          tu:'Ci si puo fidare distinguendo che cosa prevede. Le previsioni sulle conseguenze — se accade questo, ne segue quest\'altro — si possono controllare e spesso sono buone. Le previsioni sulle decisioni richiedono di sapere chi decide e in quali condizioni, e quasi nessuno le fa perche sono piu difficili. Chiedere sempre di quale delle due si tratti e gia meta del lavoro.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'Dodici anni per un errore',
+       corpo:'Nel 1894 un capitano dell\'esercito francese, Alfred Dreyfus, di famiglia ebrea alsaziana, viene condannato per alto tradimento sulla base di una perizia calligrafica e di documenti che si riveleranno falsi. È deportato su un\'isola penale.\n\nQuando emergono prove a favore di un altro ufficiale, lo stato maggiore le insabbia. Nel 1898 uno scrittore pubblica su un giornale una lettera aperta al presidente della Repubblica in cui accusa per nome i responsabili, e viene condannato per diffamazione.\n\nIl paese si spacca per anni, con manifestazioni, duelli, giornali contrapposti e violenze antisemite. La riabilitazione completa arriva solo nel 1906, dodici anni dopo.',
+       chiedi:'Che cosa spinge un\'istituzione a difendere un errore anche quando dispone delle prove che lo dimostrano? E come si riconosce, dall\'esterno, la differenza fra un\'istituzione che si sta correggendo e una che si sta difendendo?'},
+      {titolo:'Cinquanta milioni di visitatori',
+       corpo:'L\'Esposizione universale di Parigi del 1900 dura sette mesi e riceve più di cinquanta milioni di visite, in un\'epoca in cui la Francia ha circa quaranta milioni di abitanti. Si inaugurano la prima linea della metropolitana, il Grand Palais e una scala mobile.\n\nSi celebrano l\'elettricità, il cinema, la radiografia, le comunicazioni. È la messa in scena più imponente della fiducia nel progresso.\n\nFra le attrazioni più visitate ci sono le ricostruzioni di villaggi coloniali, con persone portate dalle colonie ed esibite ai visitatori nella vita quotidiana. Manifestazioni simili si terranno in Europa fino agli anni Trenta del Novecento.',
+       chiedi:'La stessa esposizione che celebra la scienza mette in mostra esseri umani. Come poteva sembrare coerente a chi la visitava? E che cosa, di ciò che oggi ci sembra normale, potrebbe apparire altrettanto incomprensibile fra cent\'anni?'},
+      {titolo:'Le scialuppe',
+       corpo:'Nel 1912 la nave passeggeri più grande mai costruita affonda nella traversata inaugurale dopo l\'urto con un iceberg. Muoiono più di millecinquecento persone.\n\nLe scialuppe a bordo bastavano per circa la metà dei passeggeri. Non era un\'irregolarità: il regolamento in vigore calcolava il numero delle scialuppe in base al tonnellaggio della nave secondo tabelle scritte quando le navi erano molto più piccole, e la compagnia ne aveva imbarcate più del minimo richiesto.\n\nLa norma era stata considerata sufficiente anche perché si riteneva che una nave moderna, divisa in compartimenti stagni, non potesse affondare rapidamente: le scialuppe servivano a trasferire i passeggeri su un\'altra nave, non a contenerli tutti.',
+       chiedi:'Una regola non violata da nessuno produce un disastro perché era stata scritta per un mondo diverso. Quali regole di oggi vi sembrano scritte per una realtà che non esiste più? E di chi è la responsabilità quando tutti hanno rispettato le regole?'}
+    ],
+    testi:[
+      {fonte:'Filippo Tommaso Marinetti, «Manifesto del Futurismo», pubblicato su «Le Figaro» (20 febbraio 1909)',
+       corpo:'Il manifesto dichiara di voler cantare l\'amore del pericolo, l\'abitudine all\'energia e alla temerità; afferma che un\'automobile da corsa è più bella di una statua antica; proclama che non vi è più bellezza se non nella lotta e che nessuna opera che non abbia un carattere aggressivo può essere un capolavoro; e definisce la guerra sola igiene del mondo, insieme al militarismo e al disprezzo della donna.',
+       glossa:'Va letto per intero, compresa l\'ultima parte che nelle antologie scolastiche viene spesso omessa. Fu pubblicato in prima pagina sul principale quotidiano francese e accolto come una provocazione brillante da un ambiente colto che non lo prese alla lettera. L\'errore di valutazione è istruttivo: un\'idea può circolare per anni come esercizio letterario e fornire, quando arriva la crisi, un vocabolario già pronto a chi deve trasformare una guerra in un\'occasione di rigenerazione. Marinetti stesso sosterrà l\'intervento italiano nel 1915.'},
+      {fonte:'Émile Zola, «J\'accuse», lettera aperta al presidente della Repubblica, «L\'Aurore» (13 gennaio 1898)',
+       corpo:'Zola accusa per nome gli ufficiali e i periti che ritiene responsabili della condanna di un innocente e dell\'insabbiamento delle prove; dichiara di non conoscere personalmente nessuno di loro e di non avere altro interesse che la verità e la giustizia; e afferma di esporsi consapevolmente alle pene previste per la diffamazione, perché il proprio atto è solo un mezzo per fare esplodere pubblicamente la questione.',
+       glossa:'Il testo inaugura una figura destinata a durare: lo scrittore che interviene pubblicamente su un caso di giustizia usando la propria notorietà come strumento. La scelta di accusare per nome era deliberata e serviva a provocare un processo, cioè a ottenere in aula la discussione delle prove che le vie ordinarie negavano. Zola fu condannato e dovette fuggire in Inghilterra. È anche il documento che mostra come, in una società alfabetizzata e con giornali a grande tiratura, una singola pagina possa spostare un conflitto dal terreno delle istituzioni a quello dell\'opinione pubblica.'},
+      {fonte:'Stefan Zweig, «Il mondo di ieri. Ricordi di un europeo» (scritto in esilio, pubblicato nel 1942)',
+       corpo:'Zweig descrive l\'Europa della propria giovinezza come l\'età dell\'oro della sicurezza: uno stato in cui tutto sembrava duraturo e garantito, in cui le monarchie, i patrimoni, le assicurazioni e le carriere apparivano stabili, in cui si viaggiava senza passaporti e senza permessi, e in cui si riteneva che il progresso verso condizioni migliori procedesse per legge naturale.',
+       glossa:'È il libro che più di ogni altro ha fissato l\'immagine della belle époque, e va letto sapendo da dove viene: fu scritto in esilio da uno scrittore austriaco di famiglia ebraica che aveva perso patria, lingua e pubblico, e che si tolse la vita poco dopo averlo consegnato. La parola «sicurezza» dice che cosa mancasse a chi scriveva più di quanto descriva il mondo di cui parla, e la memoria è quella di una borghesia colta urbana — l\'unico gruppo che quella libertà di movimento e quella stabilità le avesse davvero. Va usato in classe come esempio di fonte preziosa e parziale insieme.'}
+    ],
+    compito:'Mezza pagina. Trovate un\'affermazione, sentita in questi mesi, del tipo «non può succedere, sarebbe assurdo» o «non conviene a nessuno». Scrivetela nella forma esatta in cui l\'avete sentita. Poi applicatele le tre domande di oggi: chi decide esattamente, che cosa teme nei prossimi mesi, quanto tempo ha per decidere. Alla fine dite se, dopo aver risposto, l\'affermazione vi sembra più solida o meno — e in particolare se riguardava le conseguenze o le decisioni.',
+    fonti:[
+      'E. J. Hobsbawm, L\'età degli imperi 1875-1914',
+      'N. Angell, La grande illusione (1910); F. von Bernhardi, La Germania e la prossima guerra (1911)',
+      'S. Zweig, Il mondo di ieri (1942)',
+      'C. Clark, I sonnambuli. Come l\'Europa arrivò alla Grande Guerra',
+      'G. Mosse, La nazionalizzazione delle masse; Le origini culturali del Terzo Reich',
+      'V. Duclert, L\'affare Dreyfus; sulle esposizioni, P. Blanchard e altri, Zoo umani'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',
