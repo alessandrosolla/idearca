@@ -15778,6 +15778,233 @@ const LEZIONI = {
 },
 
 /* ────────────────────────────────────────────────────────── */
+'Storia contemporanea · 7 — La Sinistra storica e la crisi di fine secolo': {
+  mappa: {
+    n:'La Sinistra storica e la crisi di fine secolo', d:'1876-1900: si allarga il voto, si spara sulla folla, e si perde una guerra in Africa',
+    f:[
+      {r:'comincia nel', n:'1876', d:'con quella che i giornali chiamano la rivoluzione parlamentare',
+       f:[
+         {r:'la Destra cade su una legge', n:'Ferroviaria', d:'e per la prima volta un governo se ne va per un voto della Camera invece che per volonta del re'},
+         {r:'arriva al governo', n:'Depretis', d:'un ex mazziniano, che restera al potere quasi ininterrottamente per undici anni'},
+         {r:'la Sinistra non e un partito ma un insieme di', n:'Gruppi', d:'ex garibaldini, avvocati del Sud, professionisti: uniti da cio che rifiutavano piu che da un programma'},
+         {r:'ha tre promesse: allargare il voto, togliere la tassa sul pane e rendere obbligatoria l\'', n:'Istruzione elementare', d:'sono le tre cose su cui aveva fatto opposizione per quindici anni'},
+         {r:'e le mantiene', n:'Quasi tutte', d:'in sette anni: e uno dei rari casi in cui un programma elettorale italiano viene eseguito'},
+         {r:'ma non cambia la struttura dello', n:'Stato', d:'restano i prefetti, l\'accentramento e un\'amministrazione identica a quella costruita dalla Destra',
+          f:[{piu:true, r:'per cui molti storici parlano di continuita nella', n:'Sostanza', d:'cambia il personale politico e la retorica, non il modo in cui il paese viene governato'}]}
+       ]},
+
+      {r:'realizza alcune', n:'Riforme vere', d:'e vale la pena elencarle, perche di solito si ricorda solo il resto',
+       f:[
+         {r:'nel 1877 la legge', n:'Coppino', d:'rende obbligatori e gratuiti i primi anni di scuola elementare, con sanzioni per chi non manda i figli'},
+         {r:'ma l\'obbligo resta in gran parte sulla', n:'Carta', d:'a pagare i maestri sono i comuni, e i comuni poveri non hanno i soldi: l\'analfabetismo cala lentissimamente'},
+         {r:'nel 1882 la riforma', n:'Elettorale', d:'abbassa l\'eta e i requisiti: gli elettori passano da circa il due a circa il sette per cento della popolazione'},
+         {r:'nel 1883 viene abolita la tassa sul', n:'Macinato', d:'la piu odiata dell\'Italia unita, che aveva provocato rivolte e centinaia di morti'},
+         {r:'nel 1888 la legge sulla', n:'Sanita', d:'ufficiali sanitari nei comuni, obbligo di acquedotti e fognature, controllo sugli alimenti'},
+         {r:'e nel 1889 il codice penale', n:'Zanardelli', d:'primo codice unitario: abolisce la pena di morte e non punisce piu lo sciopero pacifico',
+          f:[{piu:true, r:'un codice piu avanzato di quasi tutti quelli', n:'Europei', d:'ed e utile ricordarlo insieme al resto: lo stesso Stato che scrive quelle norme, nove anni dopo, sparera sulla folla a Milano'}]}
+       ]},
+
+      {r:'governa con il', n:'Trasformismo', d:'un metodo che prende il nome da un discorso e diventa un\'accusa',
+       f:[
+         {r:'Depretis invita a', n:'Trasformarsi', d:'chi vuole accostarsi al programma di governo sara accolto: la formula e del 1882'},
+         {r:'in pratica si costruiscono maggioranze', n:'Mobili', d:'senza partiti organizzati, ogni voto si tratta con singoli deputati o con piccoli gruppi'},
+         {r:'e i deputati portano', n:'Voti locali', d:'sono eletti da poche migliaia di elettori e contrattano opere pubbliche, posti, favori per il collegio'},
+         {r:'chi lo condanna parla di', n:'Corruzione della politica', d:'spariscono le distinzioni fra maggioranza e opposizione, e con esse la possibilita di scegliere'},
+         {r:'chi lo spiega osserva che in un paese senza partiti di massa non esistevano', n:'Alternative praticabili', d:'i cattolici erano fuori per divieto del papa, i socialisti non erano ancora nati'},
+         {r:'e resta il fatto che nessun governo cade piu per una', n:'Sconfitta politica', d:'ma per logoramento delle alleanze: la Camera smette di essere il luogo dove si decide'}
+       ]},
+
+      {r:'cambia la politica economica con la', n:'Svolta protezionista', d:'e la scelta pesa piu di ogni riforma',
+       f:[
+         {r:'nel 1887 una nuova tariffa alza fortemente i', n:'Dazi', d:'sui prodotti industriali e sul grano, in risposta alla crisi dei prezzi mondiali'},
+         {r:'protegge la', n:'Siderurgia e il tessile', d:'del Nord, che senza dazi non reggerebbero la concorrenza inglese e tedesca'},
+         {r:'e protegge i grandi proprietari di', n:'Grano', d:'del Centro e del Sud, minacciati dal grano americano e russo'},
+         {r:'ma provoca una guerra doganale con la', n:'Francia', d:'che era il principale mercato per i vini, gli agrumi e la seta italiani'},
+         {r:'e quei settori', n:'Crollano', d:'l\'agricoltura specializzata meridionale perde il proprio sbocco e non lo recupera'},
+         {r:'da qui una spinta enorme all\'', n:'Emigrazione', d:'gli anni successivi vedono partenze che superano le centinaia di migliaia all\'anno',
+          f:[{piu:true, r:'e nasce un\'alleanza politica fra', n:'Industriali e agrari', d:'i primi ottengono i dazi industriali, i secondi quelli sul grano, e insieme sostengono i governi: durera decenni'}]}
+       ]},
+
+      {r:'poi arriva', n:'Crispi', d:'e porta insieme le riforme piu avanzate e la repressione piu dura',
+       f:[
+         {r:'e un ex garibaldino siciliano, organizzatore della spedizione dei', n:'Mille', d:'e da presidente del Consiglio si comporta come un uomo forte che diffida del parlamento'},
+         {r:'fa approvare la riforma sanitaria, il codice penale e l\'ampliamento delle competenze dei', n:'Comuni', d:'con l\'elettivita dei sindaci nei centri maggiori: e un programma riformatore serio'},
+         {r:'e nel 1893 affronta i', n:'Fasci siciliani', d:'un movimento di contadini e zolfatari che chiede terre, contratti e riduzione dei dazi comunali'},
+         {r:'proclama lo', n:'Stato d\'assedio', d:'invia cinquantamila soldati, scioglie le organizzazioni, istituisce tribunali militari'},
+         {r:'nello stesso periodo reprime i moti della', n:'Lunigiana', d:'e limita per legge la liberta di associazione: il socialismo viene messo fuori legge di fatto'},
+         {r:'e persegue una politica', n:'Coloniale', d:'convinto che un grande Stato debba avere colonie e che una guerra vittoriosa unirebbe il paese'}
+       ]},
+
+      {r:'in Africa arriva a una', n:'Sconfitta che chiude un\'epoca', d:'e comincia molto prima, con una base comprata sul Mar Rosso',
+       f:[
+         {r:'l\'Italia occupa Assab e poi', n:'Massaua', d:'1885, con il consenso inglese: la prima base sul Mar Rosso'},
+         {r:'nel 1887 una colonna italiana viene distrutta a', n:'Dogali', d:'cinquecento morti: e il primo segnale che l\'impresa non e semplice'},
+         {r:'nel 1889 firma con Menelik il trattato di', n:'Uccialli', d:'amicizia e commercio, in due testi: uno in italiano e uno in amarico'},
+         {r:'e l\'articolo diciassette dice cose', n:'Diverse', d:'nel testo italiano l\'Etiopia deve servirsi dell\'Italia per i rapporti con gli altri Stati, in quello amarico puo farlo se vuole'},
+         {r:'l\'Italia notifica alle potenze un', n:'Protettorato', d:'Menelik protesta con lettere ai sovrani europei e denuncia il trattato nel 1893'},
+         {r:'il 1° marzo 1896 l\'esercito italiano viene distrutto ad', n:'Adua', d:'con circa seimila morti: e la piu grave sconfitta di un esercito europeo in Africa',
+          f:[
+            {piu:true, r:'e l\'Etiopia resta l\'unico Stato africano', n:'Indipendente', d:'riconosciuto dalle potenze europee: la vittoria diventa un simbolo per tutto il continente e oltre'},
+            {piu:true, r:'mentre in Italia diventa una ferita da', n:'Vendicare', d:'e quarant\'anni dopo il fascismo usera proprio quel nome per giustificare l\'aggressione del 1935'}
+          ]}
+       ]},
+
+      {r:'segue la', n:'Crisi di fine secolo', d:'i quattro anni in cui lo Stato liberale rischia di rompersi',
+       f:[
+         {r:'nel 1893 esplode lo scandalo della', n:'Banca Romana', d:'emissioni illegali di banconote, finanziamenti a politici e giornalisti: cade un governo e ne travolge un altro'},
+         {r:'nel 1898 il prezzo del pane sale e scoppiano moti in tutta', n:'Italia', d:'iniziati per il pane, non per una parola d\'ordine politica'},
+         {r:'a Milano il generale', n:'Bava Beccaris', d:'proclama lo stato d\'assedio e fa sparare con l\'artiglieria sulla folla'},
+         {r:'i morti ufficiali sono ottanta, secondo altre stime molti di', n:'Piu', d:'vengono arrestati deputati, sacerdoti e giornalisti, e chiusi giornali e camere del lavoro'},
+         {r:'il re gli conferisce una', n:'Onorificenza', d:'la croce di grand\'ufficiale dell\'ordine militare di Savoia, per il servizio reso alle istituzioni'},
+         {piu:true, r:'e il governo prova a far approvare leggi che limitino stampa e', n:'Associazione', d:'l\'ostruzionismo parlamentare e una sentenza della Cassazione le fermano: e uno dei rari casi in cui le istituzioni reggono da sole'},
+         {r:'e nel 1900 Umberto I viene ucciso a Monza da un', n:'Anarchico', d:'che dichiara di aver voluto vendicare i morti di Milano',
+          f:[{piu:true, r:'poi arriva una', n:'Svolta liberale', d:'con Zanardelli e Giolitti lo Stato smette di reprimere gli scioperi e comincia a trattare: e la scelta che salva il sistema'}]}
+       ]},
+
+      {r:'e sotto tutto questo c\'e un', n:'Paese reale', d:'che nei documenti parlamentari compare poco',
+       f:[
+         {r:'l\'analfabetismo passa dal settanta a circa il', n:'Cinquanta per cento', d:'in quarant\'anni, con divari enormi fra Nord e Sud e fra uomini e donne'},
+         {r:'nel 1892 nasce a Genova il partito dei', n:'Lavoratori', d:'che diventera il Partito socialista italiano: fuori dal parlamento prima che dentro'},
+         {r:'e nascono le', n:'Camere del lavoro', d:'e le leghe contadine: e la prima organizzazione stabile di chi non vota'},
+         {r:'i cattolici restano fuori per il', n:'Non expedit', d:'non votano e non si candidano, e intanto costruiscono banche, cooperative e associazioni'},
+         {r:'milioni di persone', n:'Partono', d:'e le rimesse diventano una voce fondamentale dell\'economia di intere regioni'},
+         {piu:true, r:'e le donne restano fuori da tutto, comprese le professioni e l\'', n:'Universita', d:'le prime laureate italiane si contano sulle dita, e il voto arrivera solo mezzo secolo dopo'},
+         {r:'e il risultato e uno Stato con istituzioni', n:'Moderne e strette', d:'leggi avanzate, un corpo elettorale minimo, e la maggioranza del paese fuori dalla politica ufficiale'}
+       ]}
+    ],
+    incroci:[
+      {da:'Diverse', a:'Protettorato', r:'e cio su cui l\'Italia fonda la notifica di un',
+       perche:'La differenza fra i due testi dell\'articolo diciassette non e un dettaglio linguistico: e la base giuridica dell\'intera pretesa italiana. Secondo le regole stabilite a Berlino, un protettorato andava notificato alle altre potenze per essere valido nei loro confronti, e l\'Italia lo notifico. Il punto e che quella comunicazione riguardava i rapporti fra europei: nessuno chiese a Menelik se avesse firmato cio che gli si attribuiva, finche non lo disse lui.'},
+      {da:'Crollano', a:'Partono', r:'e la causa piu diretta del fatto che milioni di persone',
+       perche:'La guerra doganale con la Francia chiude il mercato principale dei vini, degli agrumi e della seta, cioe le produzioni specializzate su cui si reggeva parte dell\'economia meridionale. Quando quei prodotti perdono lo sbocco, il reddito sparisce in poche stagioni. L\'emigrazione di massa italiana non nasce da una miseria immobile, ma da un impoverimento improvviso deciso a Roma per proteggere altri settori.'},
+      {da:'Industriali e agrari', a:'Alternative praticabili', r:'riduce ulteriormente le',
+       perche:'Se i due gruppi economici piu forti sostengono insieme qualunque governo garantisca i dazi, la competizione politica si sposta dai programmi alle persone. Il trasformismo non e solo un vizio di carattere: e la forma che assume un parlamento in cui gli interessi decisivi sono gia d\'accordo fra loro e le forze che li contestano — cattolici e socialisti — sono fuori dalle istituzioni.'},
+      {da:'Europei', a:'Onorificenza', r:'sono difficili da conciliare con l\'',
+       perche:'Nel 1889 l\'Italia si da\' un codice penale che abolisce la pena di morte e depenalizza lo sciopero pacifico, fra i piu avanzati d\'Europa. Nove anni dopo un generale fa sparare con l\'artiglieria su una folla che protesta per il pane, e riceve un\'alta onorificenza dal re. Le due cose appartengono allo stesso Stato e allo stesso decennio: uno Stato puo essere giuridicamente avanzato e insieme trattare una parte dei propri cittadini come un nemico interno.'},
+      {da:'Vendicare', a:'Coloniale', r:'trasforma il significato della politica',
+       perche:'Dopo Adua l\'espansione coloniale italiana smette di essere solo una questione di prestigio internazionale e diventa la riparazione di un\'umiliazione. È un cambiamento di natura: gli obiettivi economici o strategici si possono discutere e ridimensionare, un debito d\'onore no. Su quel materiale lavorera il nazionalismo del primo Novecento e poi il fascismo, che nel 1936 annuncera esplicitamente la cancellazione di Adua.'},
+      {da:'Carta', a:'Cinquanta per cento', r:'spiega perche l\'analfabetismo resti attorno al',
+       perche:'L\'obbligo scolastico esiste dal 1877 e viene affidato ai comuni, che devono pagare i maestri: i comuni ricchi lo applicano, quelli poveri no, e sono proprio quelli dove l\'analfabetismo e piu alto. Una legge che scarica il costo sull\'ente meno capace di sostenerlo produce risultati opposti al proprio scopo, e amplia il divario invece di ridurlo. Lo Stato prendera direttamente in carico i maestri elementari solo nel 1911.'},
+      {da:'Non expedit', a:'Camere del lavoro', r:'lascia il campo delle organizzazioni popolari alle',
+       perche:'Con i cattolici tenuti fuori dal voto per divieto pontificio, l\'unica forza che organizza stabilmente chi non ha proprieta e quella socialista, attraverso leghe, camere del lavoro e cooperative. I cattolici costruiscono nel frattempo una rete parallela di casse rurali e associazioni, che entrera in politica solo dopo il 1904 e in pieno dopo il 1919. Per un quarto di secolo il paese ha due organizzazioni di massa e una sola rappresentanza parlamentare.'},
+      {da:'Fasci siciliani', a:'Grano', r:'chiedono anche la revisione dei patti che proteggono chi produce',
+       perche:'I contadini siciliani chiedevano contratti agrari meno onerosi, riduzione dei dazi comunali sui consumi e accesso alle terre. Le loro rivendicazioni colpivano direttamente i grandi proprietari, cioe uno dei due pilastri sociali che sostenevano i governi dopo la svolta protezionista. Questo spiega perche la risposta fu militare e non negoziale: trattare avrebbe significato rompere l\'alleanza su cui il governo si reggeva.'},
+      {da:'Svolta liberale', a:'Anarchico', r:'nasce anche dallo shock provocato dal gesto dell\'',
+       perche:'Dopo il regicidio del 1900 una parte della classe dirigente conclude che la repressione stia producendo piu conflitto di quanto ne elimini. Il nuovo indirizzo — non intervenire negli scioperi economici, lasciare che le parti trattino — non nasce da una conversione ma da un calcolo: uno Stato che non spara puo essere riconosciuto anche da chi lo contesta. È lo stesso ragionamento che in Germania aveva prodotto le assicurazioni sociali.'},
+      {da:'Sostanza', a:'Sconfitta politica', r:'si vede nel fatto che nessun governo cade piu per una',
+       perche:'La Sinistra mantiene le proprie promesse e lascia intatta la struttura amministrativa costruita dalla Destra: prefetti, accentramento, controllo delle elezioni locali. Con maggioranze costruite deputato per deputato, il parlamento smette di essere il luogo in cui si sceglie fra indirizzi diversi e diventa quello in cui si distribuiscono risorse. Il paese ha elezioni regolari e non ha alternanza.'},
+      {da:'Dogali', a:'Mille', r:'non fa cambiare idea al reduce dei',
+       perche:'La distruzione di una colonna nel 1887 avrebbe potuto chiudere l\'avventura africana, e produce invece un\'ondata di indignazione patriottica che la rafforza. Crispi, che era stato l\'organizzatore della spedizione dei Mille, porta in politica coloniale la stessa convinzione che aveva avuto da rivoluzionario: che un\'impresa audace possa creare una nazione. È la continuita meno evidente e piu importante della sua biografia.'},
+      {da:'Banca Romana', a:'Corruzione della politica', r:'da\' argomenti a chi denuncia la',
+       perche:'Lo scandalo mostra emissioni illegali di banconote, prestiti mai restituiti a parlamentari e giornalisti, e un sistema di protezioni che attraversa i partiti. Arriva mentre il trasformismo e gia sotto accusa, e trasforma una critica al metodo di governo in una convinzione diffusa che l\'intero sistema parlamentare sia marcio — convinzione di cui si nutriranno nel Novecento forze molto diverse fra loro.'},
+      {da:'Indipendente', a:'Italia', r:'e il rovescio di quanto accade in',
+       perche:'La stessa battaglia produce due esiti opposti: l\'Etiopia ottiene il riconoscimento della propria indipendenza e diventa un riferimento per i movimenti anticoloniali, mentre in Italia la sconfitta apre la crisi politica che porta ai moti, allo stato d\'assedio e al regicidio. Vale la pena farlo notare in classe: gli stessi fatti hanno significati diversi a seconda di dove li si guarda, e questo non e relativismo — e la ragione per cui una storia scritta da una parte sola resta incompleta.'}
+    ]
+  },
+  provocazione: {
+    titolo:'Due copie dello stesso foglio',
+    durata:'55 minuti',
+    domandaMadre:'Quando due versioni dello stesso trattato dicono cose diverse, chi ha ragione?',
+    perche:'Il trattato di Uccialli del 1889 esiste in due testi, uno italiano e uno amarico, entrambi firmati e considerati validi. L\'articolo diciassette nel primo stabilisce che l\'Etiopia debba servirsi dell\'Italia per i rapporti con gli altri Stati, e nel secondo che possa farlo se vuole. Su quella differenza l\'Italia costruisce un protettorato, Menelik lo nega, e sette anni dopo un esercito europeo viene distrutto ad Adua. Il capitolo serve a mostrare che un\'ambiguita in un documento non e quasi mai un incidente, e che la domanda su quale versione valga non viene decisa dai filologi. Serve anche a far vedere che, questa volta, la risposta data dai fatti non fu quella che l\'Europa si aspettava.',
+    occorrente:'Niente.',
+    tempi:[
+      {minuti:'0–8', et:'L\'aggancio',
+       schermo:'1° marzo 1896.\n\nAltopiano etiopico,\nvicino ad Adua.\n\nUn esercito italiano\ndi circa\nquindicimila uomini\n\nattacca\nun esercito etiopico\ndi circa\ncentomila.\n\nAvanza di notte,\nsu tre colonne,\ncon carte geografiche\nsbagliate.\n\nLe colonne\nsi perdono\ne si separano.\n\nVengono distrutte\nuna alla volta.\n\nI morti italiani\nsono circa\nseimila.\n\nÈ la piu grave\nsconfitta\nsubita da un esercito\neuropeo\nin Africa\nin tutto il secolo.\n\nAdesso la domanda.\n\nPerche c\'era\nun esercito italiano\nlassu?\n\nRisposta:\n\nper un disaccordo\nsu che cosa dicesse\n\nun articolo\ndi un trattato\n\nfirmato\nsette anni prima.',
+       parlato:'Racconta la battaglia con i numeri e senza aggettivi: bastano.\n\nPoi fai la domanda sul perche, e da\' la risposta in modo asciutto: un disaccordo su un articolo di un trattato.\n\nLascia che reagiscano. Di solito la reazione e che sia assurdo, e quello e il punto di partenza giusto.\n\nAggiungi il dato che rende il fatto piu preciso e piu strano: il trattato esiste in due copie, una in italiano e una in amarico, tutte e due firmate, e le due copie dicono cose diverse in un punto.\n\nNon dire ancora quale sia il punto. Chiedi invece che cosa si dovrebbe fare in un caso del genere.\n\nRaccogli le proposte: vale l\'originale, vale quello firmato prima, si guarda che cosa avevano capito le parti, si chiede a un arbitro. Scrivile alla lavagna, perche alla fine si verifica quale abbia funzionato.\n\nChiudi con la domanda dell\'ora, che e quella scritta: quando due versioni dello stesso testo dicono cose diverse, chi ha ragione?',
+       seDicono:[
+         {loro:'«Basta guardare l\'originale.»',
+          tu:'Ottima idea, e qui non funziona: non c\'e un originale e una traduzione. Sono due testi entrambi firmati, redatti insieme, e il trattato dichiara valide entrambe le versioni. È esattamente il caso in cui la regola piu ovvia non si applica — e la ragione per cui vale la pena studiarlo.'},
+         {loro:'«Avranno sbagliato a tradurre.»',
+          tu:'Puo essere, e tieni la domanda per dopo: un errore casuale conviene a qualcuno? Se scopri che l\'ambiguita favoriva sistematicamente una delle due parti, l\'ipotesi dell\'errore diventa piu debole. Non e ancora una prova di malafede — e un indizio da verificare.'}
+       ]},
+
+      {minuti:'8–17', et:'La fonte',
+       schermo:'2 maggio 1889.\n\nUccialli.\n\nItalia ed Etiopia\nfirmano\nun trattato\ndi amicizia\ne commercio.\n\nVenti articoli.\n\nDue testi:\nitaliano\ne amarico.\n\nArticolo diciassette,\nversione italiana:\n\nSua Maesta il Re\ndei Re d\'Etiopia\n\nconsente\ndi servirsi\ndel Governo\ndi Sua Maesta\nil Re d\'Italia\n\nper tutte\nle trattazioni\ndi affari\nche avesse\ncon altre Potenze\no Governi.\n\nVersione amarica,\nnella traduzione\naccettata:\n\nl\'imperatore\n\npuo servirsi\n\ndel Governo italiano\n\nper i propri rapporti\ncon le altre potenze.\n\nUna parola.\n\nConsente\ndi servirsi.\n\nPuo servirsi.',
+       testo:{fonte:'Trattato di Uccialli fra il Regno d\'Italia e l\'Impero d\'Etiopia, articolo 17 (2 maggio 1889), nelle due redazioni italiana e amarica',
+              glossa:'Il documento va passato alle tre domande, tenendo presente che qui la fonte è doppia. Chi lo scrive e per risolvere quale problema: il testo è negoziato dal conte Antonelli, agente italiano presso Menelik, in un momento in cui l\'imperatore aveva appena conquistato il trono e aveva bisogno di fucili e di riconoscimento internazionale, mentre l\'Italia voleva una posizione sul Mar Rosso senza dover conquistare nulla; il problema da risolvere non è regolare i rapporti fra i due Stati, è ottenere ciascuno la cosa che gli serve dall\'altro senza concedere troppo. Che cosa ammette senza volerlo: il fatto stesso che l\'articolo esista in due formulazioni diverse ammette che le parti non avessero raggiunto un accordo su quel punto e abbiano preferito firmare comunque; e l\'immediata notifica italiana del protettorato alle potenze europee ammette che il vero destinatario di quell\'articolo non fosse l\'Etiopia ma le altre nazioni europee, secondo le regole fissate a Berlino pochi anni prima. Che cosa non dice: non dice che cosa accada in caso di divergenza fra i due testi, che è precisamente la clausola che ogni trattato bilingue contiene oggi. L\'assenza di quella clausola è il dato più eloquente del documento.'},
+       parlato:'Leggi le due formulazioni e falle confrontare parola per parola, perche la differenza e minima e decisiva.\n\nConsente di servirsi: in italiano suona come un impegno. Puo servirsi: e una facolta.\n\nPoi conduci le tre domande.\n\nChi scrive e quale problema deve risolvere. Da\' il contesto: Menelik aveva appena preso il trono e aveva bisogno di armi e di essere riconosciuto; l\'Italia voleva una posizione sul Mar Rosso senza fare una guerra. Nessuno dei due voleva rompere.\n\nChe cosa ammette senza volerlo. Qui c\'e il cuore, e vale la pena aspettare. Il fatto stesso che esistano due formulazioni diverse ammette che su quel punto non ci fosse accordo, e che si sia preferito firmare lo stesso.\n\nAggiungi il secondo elemento, che spiazza: l\'Italia notifica subito il protettorato alle potenze europee. Chiedi perche a loro e non all\'Etiopia.\n\nGuidali: perche le regole fissate a Berlino nel 1885 riguardavano i rapporti fra europei. Un protettorato serviva soprattutto a dire agli altri europei di stare lontani.\n\nChe cosa non dice: non c\'e nessuna clausola su che cosa fare in caso di divergenza fra i due testi. Fai notare che oggi qualunque trattato bilingue ne contiene una. Quell\'assenza e il dato piu eloquente.',
+       seDicono:[
+         {loro:'«Allora è colpa di chi ha tradotto male.»',
+          tu:'Puo darsi, e c\'e un dettaglio da tenere: chi conduceva la trattativa da parte italiana era la stessa persona che curava i rapporti con Menelik e che avrebbe guadagnato dal successo dell\'operazione. Non e una prova di falsificazione, ed e una situazione in cui nessuno aveva interesse a chiarire l\'ambiguita prima della firma.'},
+         {loro:'«Perché firmare qualcosa che non è chiaro?»',
+          tu:'Perche a volte l\'ambiguita e cio che rende possibile firmare. Ciascuno porta a casa il testo che gli serve e rinvia il problema. Succede continuamente, anche in accordi di oggi: quando in un documento trovi una formula che si puo leggere in due modi, spesso non e un\'imprecisione — e la condizione dell\'accordo.'}
+       ]},
+
+      {minuti:'17–28', et:'La complicazione',
+       schermo:'Che cosa succede\ndopo la firma.\n\nL\'Italia\ncomunica\nalle potenze europee\n\nche l\'Etiopia\ne un suo protettorato.\n\nLe potenze\nprendono atto:\n\nsecondo le regole\nfissate a Berlino\nnel 1885,\n\nuna notifica\naccettata dagli altri\neuropei\n\nvale.\n\nMenelik\nlo scopre\nper vie indirette.\n\nScrive\nai sovrani europei\nper dire\nche non ha firmato\nniente del genere.\n\nSpiega\nche nel suo testo\nc\'e una facolta,\nnon un obbligo.\n\nNel 1893\ndenuncia\nil trattato.\n\nIntanto\ncompra armi\n\nda francesi e russi,\n\ne unifica\nsotto di se\nun impero\nche fino a pochi anni prima\nera diviso.\n\nQuando l\'Italia\nsi muove,\nnel 1896,\n\nnon trova\nun re di montagna.\n\nTrova\nuno Stato.',
+       parlato:'Ricostruisci il meccanismo, perche e quello che spiega tutto e che i ragazzi non conoscono.\n\nPrimo punto: che cos\'e un protettorato in quel sistema. Non e un rapporto con il paese protetto: e una dichiarazione rivolta agli altri europei, che significa questa zona e mia, state lontani. La regola di Berlino chiedeva la notifica proprio per evitare guerre fra potenze.\n\nFai notare la conseguenza: l\'opinione dell\'Etiopia non era, per quel sistema, giuridicamente rilevante. Chiedi che cosa ne pensano, e lascia che si arrabbino: e una reazione giusta e va nominata.\n\nSecondo punto: che cosa fa Menelik. Non accetta e non fa una guerra subito. Scrive lettere, denuncia il trattato, guadagna tempo, e nel frattempo compra fucili moderni dai rivali dell\'Italia e unifica il proprio impero.\n\nEnuncia il punto: usa contro le potenze europee esattamente i loro strumenti — la diplomazia, i trattati, il mercato delle armi e la rivalita fra loro.\n\nTerzo punto: l\'errore di valutazione italiano. Si aspettava un capo tribale isolato e trovo uno Stato con un esercito grande, moderno abbastanza e motivato.\n\nChiudi con l\'osservazione che serve alla lezione: la disputa sul significato dell\'articolo diciassette non venne mai risolta con argomenti. Venne rinviata finche qualcuno fu abbastanza forte da imporre la propria lettura.',
+       seDicono:[
+         {loro:'«Ma se le potenze avevano accettato, l\'Italia era nel giusto.»',
+          tu:'Era nel giusto secondo un sistema di regole fatto dagli europei per gli europei, in cui chi veniva protetto non aveva voce. Puoi dire che formalmente aveva ragione e che quel formalismo era costruito su un\'esclusione. Le due cose stanno insieme, ed e il modo piu onesto di descrivere il diritto internazionale di quegli anni.'},
+         {loro:'«Menelik era furbo.»',
+          tu:'Era un politico molto abile, e la parola furbo rischia di ridurlo. Ha fatto tre cose che qualunque manuale di strategia raccomanda: ha guadagnato tempo, ha sfruttato la rivalita fra i suoi avversari, e ha unificato il fronte interno prima dello scontro. Chiamarla furbizia fa sembrare un caso quello che era un calcolo.'}
+       ]},
+
+      {minuti:'28–38', et:'La seconda fonte',
+       schermo:'27 settembre 1890.\n\nMenelik\nscrive\na Umberto I,\nre d\'Italia.\n\nDice\ndi aver saputo\nche l\'Italia\nha annunciato\nalle potenze\n\ndi avere\nil protettorato\nsull\'Etiopia.\n\nRisponde\nche non ha\nfirmato\nun accordo\ndel genere,\n\ne che nel trattato\nsi era stabilito\n\nche potesse\nservirsi\ndel governo italiano\n\nper trattare\ncon gli altri,\n\nnon che\ndovesse.\n\nE aggiunge\nuna frase\nche verra ripetuta\nper un secolo:\n\nl\'Etiopia\n\nnon ha bisogno\ndi nessuno;\n\ntende le mani\n\nsoltanto\na Dio.',
+       testo:{fonte:'Lettera dell\'imperatore Menelik II a Umberto I di Savoia (27 settembre 1890) e circolare ai sovrani europei sulle frontiere etiopiche (1891)',
+              glossa:'È la seconda fonte, e dice altro: viene dalla parte che nel sistema di Berlino non aveva voce, e sceglie di usare gli strumenti di quel sistema. Le tre domande. Chi scrive e per risolvere quale problema: un sovrano che ha appena unificato un impero e deve impedire che una notifica fatta a Roma diventi un fatto compiuto riconosciuto da tutti; il suo problema non è convincere l\'Italia ma raggiungere gli altri destinatari, cioè le altre potenze europee — per questo scrive lettere e circolari e non si limita a respingere gli inviati italiani. Che cosa ammette senza volerlo: ammette di aver firmato quell\'articolo, cioè non nega il trattato ma ne contesta la lettura, e questo lo obbliga a discutere sul terreno del diritto europeo anziché rifiutarlo; ammette inoltre, definendo per iscritto i confini del proprio impero, di stare adottando la forma dello Stato territoriale moderno. Che cosa non dice: non dice come intenda far valere la propria versione se le potenze accettassero quella italiana, e la risposta a quella domanda arriverà nel 1896 sul campo. Il confronto fra i due documenti mostra che nessuno dei due mente: ciascuno legge il testo che ha firmato.'},
+       parlato:'Presenta la lettera e fai notare la scelta strategica prima ancora del contenuto: Menelik non manda un esercito, manda lettere, e le manda anche agli altri sovrani europei.\n\nChiedi perche. Guidali: perche il pericolo non era l\'Italia da sola, era che tutti gli europei considerassero la cosa decisa.\n\nApplica le tre domande, e falle fare a loro.\n\nChi scrive e per che problema: deve impedire che una notifica diventi un fatto compiuto.\n\nChe cosa ammette senza volerlo: ammette di aver firmato quell\'articolo. Non dice che il trattato sia falso: dice che va letto diversamente. Fai notare che questo lo costringe a giocare secondo le regole europee, ed e una scelta consapevole.\n\nSecondo elemento: definendo per iscritto i propri confini, si presenta come uno Stato territoriale moderno. È il linguaggio dell\'avversario usato per difendersi.\n\nChe cosa non dice: non dice che cosa fara se gli europei daranno ragione all\'Italia. La risposta arrivera sul campo.\n\nAdesso tieni insieme le due fonti, ed e la conclusione del tempo. Nessuno dei due sta mentendo: ciascuno legge il testo che ha firmato. Non e un caso di malafede evidente da una parte sola.\n\nEnuncia il criterio: quando due parti in buona fede leggono diversamente lo stesso accordo, il problema non e chi sia sincero. Il problema e che l\'accordo non c\'era, e che qualcuno ha avuto interesse a non accorgersene.',
+       seDicono:[
+         {loro:'«Uno dei due bara di sicuro.»',
+          tu:'È l\'ipotesi piu naturale ed e la meno utile. Prova a tenere l\'altra: due persone leggono in buona fede due testi diversi, entrambi firmati. Chi ha costruito quella situazione ha ottenuto la firma proprio perche nessuno ha voluto chiarire. La malafede, se c\'e stata, sta prima — nel momento in cui si e scelto di non risolvere l\'ambiguita.'},
+         {loro:'«Perché scrivere anche agli altri re?»',
+          tu:'Perche aveva capito come funzionava il sistema meglio di quanto gli europei si aspettassero. Sapeva che un protettorato vale se gli altri lo riconoscono, quindi il campo di battaglia vero erano le cancellerie europee. Ha combattuto per sei anni su quel terreno prima di combattere sul suo — e nel frattempo ha comprato le armi.'}
+       ]},
+
+      {minuti:'38–47', et:'Il colpo di scena',
+       schermo:'1° marzo 1896.\n\nAdua.\n\nLa disputa\nsull\'articolo diciassette\n\nviene risolta.\n\nNon da un giurista.\n\nE la risposta\n\nnon e quella\nche l\'Europa\nsi aspettava.\n\nL\'Etiopia resta\nl\'unico Stato africano\nindipendente,\n\nriconosciuto\ndalle potenze\nche pochi anni prima\nstavano spartendo\nil continente.\n\nMenelik\nfirma trattati\ncon Francia,\nInghilterra\ne Italia\n\nda pari.\n\nAdua diventa\nun nome\nper i movimenti\nanticoloniali\ndi mezzo mondo,\n\ne per decenni\nsara citata\ndagli afroamericani\ncome prova\nche si poteva.\n\nIn Italia\ndiventa\nun\'altra cosa:\n\nuna ferita\nda vendicare.\n\nE quarant\'anni dopo\n\nun altro governo\nattacchera\nlo stesso paese\n\ndicendo\ndi cancellare\nAdua.',
+       parlato:'Da\' l\'esito e poi la conclusione metodologica, che e la parte piu importante.\n\nLa disputa non e stata risolta stabilendo che cosa significasse quel verbo. È stata risolta da una battaglia. Questo va detto senza cinismo e senza consolazioni: in un sistema in cui non esiste un giudice sopra gli Stati, le controversie sui testi le decide chi e piu forte.\n\nPoi la parte che spiazza e che va fatta pesare: questa volta il piu forte non era chi l\'Europa credeva. Il sistema che dava ragione all\'Italia sulla carta non ha retto alla prova.\n\nMostra le conseguenze da entrambi i lati, e usale per la lezione sulla memoria.\n\nDal lato etiopico: indipendenza riconosciuta, trattati firmati da pari, e un nome che diventa simbolo per i movimenti anticoloniali e per gli afroamericani.\n\nDal lato italiano: una crisi politica immediata, la caduta di Crispi, e una ferita che entra nella retorica nazionale.\n\nFai la domanda che tiene: come mai lo stesso fatto ha due significati cosi diversi?\n\nGuidali: perche una battaglia non e solo un evento, e un racconto che qualcuno costruisce dopo. E chi la perde ha bisogno di raccontarla in modo che serva a qualcosa.\n\nDa\' il seguito concreto, perche e verificabile: nel 1935-36 l\'aggressione all\'Etiopia viene presentata come la cancellazione di Adua. Un fatto del 1896 diventa la giustificazione di una guerra quarant\'anni dopo.\n\nEnuncia il criterio: una sconfitta non elaborata non resta ferma. Diventa un debito, e i debiti si riscuotono.',
+       seDicono:[
+         {loro:'«Quindi ha vinto chi era più forte, non chi aveva ragione.»',
+          tu:'In quel caso sì, ed e la ragione per cui esistono i tribunali internazionali — nati proprio nel Novecento, dopo due guerre. Funzionano male e in modo diseguale, e la loro esistenza e comunque il tentativo di rispondere a questo problema. Prima non c\'era nemmeno il tentativo.'},
+         {loro:'«Non è ingiusto che una battaglia decida un problema di traduzione?»',
+          tu:'Lo e, ed e per questo che oggi ogni trattato bilingue contiene una clausola che stabilisce quale versione prevale in caso di divergenza, o indica una terza lingua di riferimento. Quella clausola esiste perche casi come questo sono costati troppo. È uno dei rari punti in cui si vede una regola nata direttamente da un disastro.'}
+       ]},
+
+      {minuti:'47–55', et:'Il ritorno',
+       schermo:'La domanda era:\n\nquando due versioni\ndello stesso testo\ndicono cose diverse,\n\nchi ha ragione?\n\nRisposta storica:\n\nchi riesce\na imporre\nla propria lettura.\n\nRisposta pratica,\ne serve a voi:\n\nnon aspettate\ndi arrivare\na quel punto.\n\nDavanti a un testo\nche vi impegna\n— un regolamento,\nun contratto,\nun accordo\nfra amici —\n\nfate tre domande.\n\nChi ha scritto\nla formula\nambigua?\n\nA chi conviene\nche resti\nambigua?\n\nE che cosa\nsuccede\nse un giorno\nnon siamo\nd\'accordo:\n\nchi decide?\n\nSe alla terza\nnon c\'e risposta,\n\nnon avete\nun accordo.\n\nAvete un rinvio.',
+       parlato:'Torna alle proposte scritte all\'inizio e verificale una per una: guardare l\'originale non funzionava perche non c\'era; chiedere un arbitro non funzionava perche non esisteva; guardare che cosa avevano capito le parti mostra che avevano capito due cose diverse.\n\nPoi da\' lo strumento nelle tre domande, e falle applicare a casi loro. Funziona su un regolamento scolastico, sulle condizioni di un servizio online, su un accordo dentro un gruppo.\n\nInsisti sulla terza, che e la piu utile e la meno frequente: chi decide in caso di disaccordo. Fai notare che quasi tutti gli accordi che firmiamo ogni giorno la contengono, in fondo, in caratteri piccoli.\n\nPoi la parte che evita la lettura cinica. Non stiamo dicendo che conta solo la forza. Stiamo dicendo che dove non esiste un modo condiviso per risolvere le controversie, resta solo la forza — e che quindi costruire quel modo, prima di litigare, e la cosa piu concreta che si possa fare.\n\nUltima cosa, per il quadro del capitolo. Gli stessi anni in cui l\'Italia perde ad Adua sono quelli in cui si da\' un codice penale che abolisce la pena di morte e depenalizza lo sciopero, e sono anche quelli in cui un generale fa sparare con i cannoni su chi protesta per il pane a Milano e riceve una decorazione dal re. Tre facce dello stesso Stato, nello stesso decennio.\n\nDi\' chiaramente che tenerle insieme non e equilibrismo: e la condizione per capire perche, subito dopo, quello Stato cambiera strada.\n\nPer il seguito: nel 1900 il re viene ucciso, e la classe dirigente conclude che sparare produce piu conflitto di quanto ne tolga. La prossima volta guardiamo che cosa succede quando lo Stato prova a fare il contrario, e si chiama eta giolittiana.',
+       seDicono:[
+         {loro:'«Nei contratti che accettiamo online c\'è davvero?»',
+          tu:'Quasi sempre sì, ed e istruttivo andarla a cercare: di solito indica il foro competente e la legge applicabile, cioe chi decide e con quali regole. È scritta in fondo e non la legge nessuno. Provaci una volta: e l\'esercizio piu rapido per capire che una clausola noiosa puo valere piu di tutte le altre messe insieme.'}
+       ]}
+    ],
+    riserve:[
+      {titolo:'La medaglia',
+       corpo:'Nel maggio 1898, dopo un aumento del prezzo del pane, scoppiano disordini in diverse città italiane. A Milano il generale Fiorenzo Bava Beccaris, con i poteri dello stato d\'assedio, fa impiegare l\'artiglieria contro la folla nelle strade.\n\nLe vittime accertate ufficialmente sono circa ottanta, con centinaia di feriti; altre stime le collocano molto più in alto. Vengono arrestati deputati, giornalisti e sacerdoti, chiusi giornali e camere del lavoro.\n\nPochi giorni dopo il re Umberto I gli conferisce la croce di grand\'ufficiale dell\'ordine militare di Savoia, con motivazione che loda il servizio reso alle istituzioni. Due anni più tardi il re viene ucciso da un anarchico che dichiara di aver voluto vendicare quei morti.',
+       chiedi:'Che cosa comunica uno Stato quando decora chi ha sparato sui propri cittadini? E in che modo un gesto simbolico di questo tipo può cambiare il comportamento di chi lo subisce, indipendentemente dalle leggi in vigore?'},
+      {titolo:'Trasformarsi',
+       corpo:'Nel 1882 Depretis, parlando a Stradella, dichiara che se qualcuno vuole accostarsi al programma del governo, trasformandosi e diventando progressista, non può respingerne l\'adesione. Da quella frase nasce la parola trasformismo.\n\nIn pratica le maggioranze parlamentari si costruiscono trattando con singoli deputati, spesso in cambio di opere pubbliche, nomine e favori per i rispettivi collegi. Le distinzioni fra Destra e Sinistra si attenuano fino a sparire.\n\nGli storici si dividono: per alcuni è la corruzione della vita politica italiana all\'origine di molti mali successivi; per altri è l\'adattamento inevitabile di un paese privo di partiti organizzati, in cui i cattolici erano esclusi per divieto ecclesiastico e i socialisti non erano ancora nati.',
+       chiedi:'Un sistema in cui tutti possono mettersi d\'accordo con tutti è più stabile o più fragile? E che cosa perde un elettore quando, qualunque cosa voti, la maggioranza si forma dopo il voto?'},
+      {titolo:'Un codice avanzato',
+       corpo:'Il codice penale del 1889, dal nome del ministro Zanardelli, è il primo codice penale unitario italiano. Abolisce la pena di morte per i reati comuni, in anticipo su quasi tutti i paesi europei. Non punisce più lo sciopero pacifico, riconoscendo di fatto un diritto che altrove sarebbe stato ammesso molto più tardi.\n\nÈ un testo studiato e ammirato all\'estero, e viene considerato una delle prove migliori della modernità dello Stato liberale italiano.\n\nNove anni dopo, lo stesso Stato proclama lo stato d\'assedio in tre regioni, istituisce tribunali militari, scioglie associazioni e organizzazioni cattoliche e socialiste, e decora il generale che ha comandato la repressione di Milano.',
+       chiedi:'Come possono convivere, nello stesso Stato e nello stesso decennio, un codice fra i più avanzati d\'Europa e l\'uso dell\'artiglieria contro i propri cittadini? E che cosa vi dice, questo, sul rapporto fra ciò che una legge dichiara e ciò che uno Stato fa?'}
+    ],
+    testi:[
+      {fonte:'Agostino Depretis, discorso di Stradella (8 ottobre 1882)',
+       corpo:'Depretis dichiara che se qualcuno vuole accostarsi al programma del governo e a esso trasformarsi, diventando progressista, non è possibile respingerne l\'adesione; e sostiene che il compito dell\'ora sia raccogliere le forze disponibili attorno a un\'opera comune, superando divisioni ereditate da questioni ormai risolte.',
+       glossa:'Il discorso va letto senza darlo per scontato come sinonimo di corruzione. Contiene un\'osservazione vera — le divisioni fra Destra e Sinistra nascevano da questioni in gran parte chiuse — e una conseguenza pesante: se ogni deputato può passare da una parte all\'altra, il voto degli elettori non determina più l\'indirizzo del governo. In un paese con un corpo elettorale del sette per cento, senza partiti organizzati e con i cattolici esclusi per divieto pontificio, quel metodo era anche l\'unico praticabile: capirlo non significa approvarlo.'},
+      {fonte:'Codice penale del Regno d\'Italia, promulgato nel 1889, in vigore dal 1890',
+       corpo:'Il codice sostituisce alla pena capitale, per i reati comuni, l\'ergastolo; stabilisce che non costituisca reato l\'astensione concordata dal lavoro quando avvenga senza violenza o minaccia; e riordina in un testo unico il diritto penale delle diverse regioni del Regno, fino ad allora regolate da codici differenti.',
+       glossa:'È il documento che meglio mostra il volto migliore dello Stato liberale italiano: abolisce la pena di morte prima di quasi tutta Europa e riconosce lo sciopero pacifico in anni in cui altrove era ancora perseguito. Va letto accanto ai provvedimenti del 1894 e del 1898, che con stati d\'assedio e tribunali militari sospendono di fatto quelle garanzie per intere regioni. La contraddizione non si risolve scegliendo quale dei due volti sia quello vero: sono entrambi veri, e la loro convivenza è il tratto caratteristico di quel regime.'},
+      {fonte:'Regio decreto di conferimento della croce di grand\'ufficiale dell\'ordine militare di Savoia a Fiorenzo Bava Beccaris (giugno 1898)',
+       corpo:'Il provvedimento conferisce l\'onorificenza al generale per il grande servizio reso alle istituzioni e alla civiltà, in riferimento al comando delle operazioni durante lo stato d\'assedio di Milano.',
+       glossa:'Poche righe che valgono come documento politico più di lunghe dichiarazioni. La motivazione non si limita a riconoscere l\'esecuzione di un ordine: qualifica la repressione come un servizio reso alla civiltà, e in questo modo la Corona prende posizione pubblicamente. In classe è utile far notare la differenza fra tollerare un fatto, giustificarlo e premiarlo: sono tre atti distinti, e il terzo comunica qualcosa che i primi due non comunicano. Due anni dopo, l\'attentatore del re indicò proprio quell\'onorificenza fra le ragioni del proprio gesto.'}
+    ],
+    compito:'Mezza pagina. Cercate un testo che vi riguarda e che contiene una formula ambigua: un regolamento scolastico, le condizioni di un servizio che usate, le regole di un gruppo o di una squadra. Trascrivete la frase ambigua e mostrate le due letture possibili. Poi rispondete alle tre domande di oggi: chi l\'ha scritta, a chi conviene che resti così, e chi decide in caso di disaccordo. Se alla terza domanda non trovate risposta nel testo, scrivetelo — è il risultato più interessante che possiate ottenere.',
+    fonti:[
+      'G. Candeloro, Storia dell\'Italia moderna, volumi VI e VII',
+      'R. Romanelli, L\'Italia liberale; A. Aquarone, L\'Italia giolittiana (per il quadro precedente)',
+      'A. Del Boca, Gli italiani in Africa Orientale, volume I',
+      'N. Labanca, Oltremare. Storia dell\'espansione coloniale italiana; In marcia verso Adua',
+      'Il testo del trattato di Uccialli nelle due redazioni; le lettere di Menelik II in traduzione',
+      'U. Levra, Il colpo di stato della borghesia. La crisi politica di fine secolo in Italia'
+    ]
+  }
+},
+
+/* ────────────────────────────────────────────────────────── */
 'Filosofia moderna · 9 — Cartesio': {
   albero: {
     n:'Cartesio', d:'rifare le fondamenta del sapere',
