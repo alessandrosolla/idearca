@@ -216,7 +216,7 @@ Si va in ordine di programma. Restano:
 - [x] Storia contemporanea · 13 — La Rivoluzione russa
 - [x] Storia contemporanea · 14 — Il dopoguerra in Europa
 - [x] Storia contemporanea · 15 — Dal dopoguerra al fascismo
-- [ ] Storia contemporanea · 16 — La crisi del 1929
+- [x] Storia contemporanea · 16 — La crisi del 1929
 - [ ] Storia contemporanea · 17 — L'Unione Sovietica di Stalin
 - [ ] Storia contemporanea · 18 — Il nazismo
 - [ ] Storia contemporanea · 19 — La guerra di Spagna e l'espansionismo
