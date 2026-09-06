@@ -212,7 +212,7 @@ Si va in ordine di programma. Restano:
 - [x] Storia contemporanea · 9 — La belle époque
 - [x] Storia contemporanea · 10 — Guglielmo II e i blocchi contrapposti
 - [x] Storia contemporanea · 11 — L'Italia giolittiana
-- [ ] Storia contemporanea · 12 — La Grande Guerra
+- [x] Storia contemporanea · 12 — La Grande Guerra
 - [ ] Storia contemporanea · 13 — La Rivoluzione russa
 - [ ] Storia contemporanea · 14 — Il dopoguerra in Europa
 - [ ] Storia contemporanea · 15 — Dal dopoguerra al fascismo
