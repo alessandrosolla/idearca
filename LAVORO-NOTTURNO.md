@@ -218,7 +218,7 @@ Si va in ordine di programma. Restano:
 - [x] Storia contemporanea · 15 — Dal dopoguerra al fascismo
 - [x] Storia contemporanea · 16 — La crisi del 1929
 - [x] Storia contemporanea · 17 — L'Unione Sovietica di Stalin
-- [ ] Storia contemporanea · 18 — Il nazismo
+- [x] Storia contemporanea · 18 — Il nazismo
 - [ ] Storia contemporanea · 19 — La guerra di Spagna e l'espansionismo
 - [ ] Storia contemporanea · 20 — L'Italia fascista
 - [ ] Storia contemporanea · 21 — La Seconda guerra mondiale
